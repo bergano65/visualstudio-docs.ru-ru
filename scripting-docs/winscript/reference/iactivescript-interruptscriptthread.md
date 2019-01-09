@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Документы Microsoft
+title: IActiveScript::InterruptScriptThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad717ee950dda4f0f0d7a14292f0f5f150ab4973
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d20847245e25ec6227bb043df3190a6db5f095d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641854"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088937"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Прерывает выполнение выполняющийся поток скрипта (приемник событий, немедленное выполнение или вызов макроса). Этот метод можно использовать для завершения сценария (например, из бесконечного цикла). Может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) метод.  
+Прерывает выполнение выполняющийся поток скрипта (приемник событий, немедленное выполнение или вызов макроса). Этот метод может использоваться для прерывания сценария (например, из бесконечного цикла). Он может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) метод.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT InterruptScriptThread(  
     SCRIPTTHREADID   stidThread,  // identifier of thread  
     const EXCEPINFO *pexcepinfo,  // receives error information  
@@ -40,24 +40,24 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Параметры  
  `stidThread`  
- [in] Идентификатор потока для прерывания или один из следующих значений идентификаторов специальных потоков:  
+ [in] Идентификатор потока для прерывания или один из следующих значений идентификатора специальный поток:  
   
 |Значение|Значение|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Все потоки. Прерывание применяется ко всем методам скрипт, выполняющиеся в настоящее время. Обратите внимание, что если вызывающий объект запрашивает отключен скрипт, далее сценариев событие вызывает код скрипта для повторного запуска путем вызова [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) метод с SCRIPTSTATE_DISCONNECTED или Установить флаг SCRIPTSTATE_INITIALIZED.|  
-|SCRIPTTHREADID_BASE|Базовый поток; то есть был создан поток, в котором модуль создания скриптов.|  
-|SCRIPTTHREADID_CURRENT|Текущий выполняемый поток.|  
+|SCRIPTTHREADID_ALL|Все потоки. Прерывание применяется ко всем методам скрипта в настоящее время. Обратите внимание, что если вызывающая сторона запросила отключен скрипт, следующего сценария события вызывает код сценария для повторного запуска, вызвав [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) метод с SCRIPTSTATE_DISCONNECTED или Установлен флаг SCRIPTSTATE_INITIALIZED.|  
+|SCRIPTTHREADID_BASE|Базовый поток; то есть был создан поток, в котором обработчик скриптов.|  
+|SCRIPTTHREADID_CURRENT|Текущим выполняемым потоком.|  
   
  `pexcepinfo`  
- [in] Адрес `EXCEPINFO` структуру, содержащую сведения об ошибке, которая должна быть зарегистрирована в скрипте прерванных.  
+ [in] Адрес `EXCEPINFO` структуру, содержащую сведения об ошибке, который должен быть передан в прерванных скрипт.  
   
  `dwFlags`  
- [in] Параметр флаги, связанные с прерывания. Допустимо одно из следующих значений.  
+ [in] Флаги параметров, связанных с прерывания. Допустимо одно из следующих значений.  
   
 |Значение|Значение|  
 |-----------|-------------|  
 |SCRIPTINTERRUPT_DEBUG|Если поддерживается, введите отладчика обработчика скриптов в текущей точке выполнения скрипта.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Если поддерживается языком обработчика скриптов, пусть скрипт обрабатывает исключение. В противном случае метод сценария прерывается и код ошибки возвращается в вызывающий объект; то есть средство событий источника или макрос вызова.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Если поддерживается язык обработчика скриптов, позвольте сценарию обработки исключения. В противном случае метод сценария прерывается и код ошибки возвращается вызывающему объекту; то есть средство событий макроса или источника вызова.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -65,9 +65,9 @@ HRESULT InterruptScriptThread(
 |Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_INVALIDARG`|Недопустимый аргумент.|  
+|`E_INVALIDARG`|Аргумент был недопустимым.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации).|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

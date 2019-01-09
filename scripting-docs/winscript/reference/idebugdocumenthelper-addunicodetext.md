@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddUnicodeText | Документы Microsoft
+title: IDebugDocumentHelper::AddUnicodeText | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f387142675b0def99fb2cc0695bd3f9416d66809
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 190df1f621b450c6d3b34c339d21f947f48636f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726244"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093526"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
-Добавляет строки в Юникоде в конце этого документа.  
+Добавляет строку в Юникоде в конец этого документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT AddUnicodeText(  
    LPCOLESTR  pszText  
 );  
@@ -38,12 +38,12 @@ HRESULT AddUnicodeText(
   
 #### <a name="parameters"></a>Параметры  
  `pszText`  
- [in] Указатель null нулевым байтом строка, содержащая текст.  
+ [in] Указатель на заканчивающуюся нулем строку, содержащую текст.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Метод не удалось добавить символы.|  

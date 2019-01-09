@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName | Документы Microsoft
+title: IScriptEntry::GetItemName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdbb293afc6f58f8d9d9c1fe27bae467fd36792c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729094"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093461"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-Возвращает имя элемента, которое идентифицирует `IScriptEntry` объекта.  
+Возвращает имя элемента, который идентифицирует `IScriptEntry` объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetItemName(  
    BSTR               *pbstr  
 );  
@@ -43,12 +43,12 @@ HRESULT GetItemName(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Для `IScriptScriptlet` объектов задается имя элемента с помощью [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Для других интерфейсов, задайте имя элемента с помощью [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
+ Для `IScriptScriptlet` объектов, можно задать имя элемента с помощью [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Для других интерфейсов, задать имя элемента с помощью [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

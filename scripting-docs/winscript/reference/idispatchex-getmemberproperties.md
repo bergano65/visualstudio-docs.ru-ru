@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Документы Microsoft
+title: IDispatchEx::GetMemberProperties | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d216bb7b21c8895337b9925007637c00d0deb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729664"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088196"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Извлекает свойства члена.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetMemberProperties(  
    DISPID id,  
    DWORD grfdexFetch,  
@@ -40,10 +40,10 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Параметры  
  `id`  
- Идентифицирует член. Использует `GetDispID` или `GetNextDispID` для получения идентификатора диспетчеризации.  
+ Идентифицирует член. Использует `GetDispID` или `GetNextDispID` получить идентификатор диспетчеризации.  
   
  `grfdexFetch`  
- Определяет, какие свойства следует получить. Это может быть сочетанием значений, перечисленных в разделе `pgrfdex` и/или сочетанием следующих значений:  
+ Определяет, какие свойства следует извлечь. Это может представлять собой сочетание значений, перечисленных в разделе `pgrfdex` и/или сочетания из следующих значений:  
   
 |Значение|Значение|  
 |-----------|-------------|  
@@ -53,22 +53,22 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|Объединяет grfdexPropCanAll, grfdexPropCannotAll и grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Адрес `DWORD` , который получает запрошенные свойства. Это может быть сочетанием следующих значений:  
+ Адрес `DWORD` , получающий запрашиваемые свойства. Это может быть сочетанием следующих значений:  
   
 |Значение|Значение|  
 |-----------|-------------|  
-|fdexPropCanGet|Элемент может быть получен с помощью DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|Не удается получить элемент с помощью DISPATCH_PROPERTYGET.|  
+|fdexPropCanGet|Элемент можно получить с помощью DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|Элемент не удается получить с помощью DISPATCH_PROPERTYGET.|  
 |fdexPropCanPut|Элемент может быть задан с помощью DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Элемент не может быть задан DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Если элемент не задан с помощью DISPATCH_PROPERTYPUT.|  
 |fdexPropCanPutRef|Элемент может быть задан с помощью DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Элемент не может быть задан DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Элемент не имеет никаких побочных эффектов. Например, отладчик может безопасно get/set/вызов этот член, не изменяя состояние скрипта, для которого выполняется отладка.|  
-|fdexPropDynamicType|Элемент является динамическим и можно изменить во время существования объекта.|  
+|fdexPropCannotPutRef|Если элемент не задан с помощью DISPATCH_PROPERTYPUTREF.|  
+|fdexPropNoSideEffects|Элемент не имеет никаких побочных эффектов. Например, отладчик может безопасно get/set/вызова этот член, не изменяя состояние сценария, для которого выполняется отладка.|  
+|fdexPropDynamicType|Член является динамическим и можно изменить во время существования объекта.|  
 |fdexPropCanCall|Элемент можно вызывать как метод с помощью DISPATCH_METHOD.|  
 |fdexPropCannotCall|Элемент нельзя вызывать как метод с помощью DISPATCH_METHOD.|  
-|fdexPropCanConstruct|Как с помощью DISPATCH_CONSTRUCT конструктор может вызываться члена.|  
-|fdexPropCannotConstruct|Элемент не может вызываться как конструктор с помощью DISPATCH_CONSTRUCT.|  
+|fdexPropCanConstruct|Член может вызываться как конструктор, с помощью DISPATCH_CONSTRUCT.|  
+|fdexPropCannotConstruct|Элемент не может вызываться как конструктор, с помощью DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Элемент может инициировать события.|  
 |fdexPropCannotSourceEvents|Элемент не может порождать события.|  
   
@@ -82,7 +82,7 @@ HRESULT GetMemberProperties(
   
 ## <a name="example"></a>Пример  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

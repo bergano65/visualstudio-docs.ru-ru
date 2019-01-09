@@ -1,5 +1,5 @@
 ---
-title: Перечисление BREAKPOINT_STATE | Документы Microsoft
+title: Перечисление BREAKPOINT_STATE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640774"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097283"
 ---
 # <a name="breakpointstate-enumeration"></a>Перечисление BREAKPOINT_STATE
 Показывает состояние точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -40,9 +40,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 ## <a name="members"></a>Члены  
   
-|Член|Описание|  
+|Член|Описание:|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Точка останова не существует, но все еще существуют ссылки на него.|  
+|BREAKPOINT_DELETED|Точка останова не существует, но по-прежнему существуют ссылки на него.|  
 |BREAKPOINT_DISABLED|Точка останова существует, но отключен.|  
 |BREAKPOINT_ENABLED|Точка останова существует и включена.|  
   

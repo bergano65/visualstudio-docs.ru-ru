@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::ReadNullTerminatedString | Документы Microsoft
+title: Метод IJsDebugDataTarget::ReadNullTerminatedString | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729504"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093331"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>Метод IJsDebugDataTarget::ReadNullTerminatedString
 Считывает указанное количество символов из целевого объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -39,21 +39,21 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Адрес, из которого выполняется чтение.  
+ [in] Адрес для чтения из.  
   
  `characterSize`  
  [in] размер каждого символа в строке  
   
  `maxCharacters`  
- [in] Максимальное число считываемых символов. maxCharacters должен быть разумным. Любой запрос для более чем 128 МБ памяти завершится ошибкой.  Если строки больше, чем maxCharacters, после maxCharacters усекается в результирующую строку.  
+ [in] Максимальное количество символов для чтения. maxCharacters должно быть разумным. Любой запрос, для более чем 128 МБ памяти завершится ошибкой.  Если строки больше maxCharacters, результирующая строка усекается после maxCharacters.  
   
  `pString`  
- [out] Строки BSTR чтение из целевого объекта.  
+ [out] BSTR чтения из целевого объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает значение S_FALSE, если усечение.  
+ Возвращает значение S_FALSE, если усечено.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

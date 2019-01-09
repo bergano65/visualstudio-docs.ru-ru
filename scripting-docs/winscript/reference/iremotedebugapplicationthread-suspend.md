@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend | Документы Microsoft
+title: IRemoteDebugApplicationThread::Suspend | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995fa9e16fa9e1d712caff578c29b9aa3e14123b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c4b7a1491c9e41cfddd0414c47cdf06d4efd3361
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728654"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096854"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
-Приостанавливает работу потока.  
+Приостанавливает поток.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Suspend(  
    DWORD*  pdwCount  
 );  
@@ -43,12 +43,12 @@ HRESULT Suspend(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод приостанавливает работу потока, увеличивается счетчик приостановок.  
+ Когда этот метод приостанавливает работу потока, он увеличивает счетчик приостановок.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

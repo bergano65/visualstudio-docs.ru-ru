@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Документы Microsoft
+title: IScriptEntry::SetItemName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 483d3cdc1c8b8de9342003a99427fc2c727ad67f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20af0975a4175d10b110ac5e3cef9e0055f4ce1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729304"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097764"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
 Задает имя элемента, который идентифицирует `IScriptEntry` объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetItemName(  
    LPCOLESTR          psz  
 );  
@@ -43,15 +43,15 @@ HRESULT SetItemName(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Метод не удалась.|  
+|`E_FAIL`|Метод завершилась неудачно.|  
   
 ## <a name="remarks"></a>Примечания  
  Для `IScriptEntry` объектов, этот метод возвращает `S_OK`.  
   
- Для `IScriptScriptlet` объектов (который является производным от `IScriptEntry`), этот метод возвращает `E_FAIL`. Для `IScriptScriptlet` объектов задается имя элемента [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) и не может быть изменено.  
+ Для `IScriptScriptlet` объектов (который являются производными от `IScriptEntry`), этот метод возвращает `E_FAIL`. Для `IScriptScriptlet` объектов задается имя элемента [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) и не может быть изменено.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   

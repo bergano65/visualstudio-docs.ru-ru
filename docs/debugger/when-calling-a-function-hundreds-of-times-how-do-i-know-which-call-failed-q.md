@@ -2,7 +2,6 @@
 title: Найти, что сбой вызова при вызове функции много раз | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.functions
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fec492a8cba6ac61cc18a3ff0b68abbe734413d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8f1d7c491b864fb8791a5fbd527859edafbd54b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909142"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Как определить конкретный вызов функции, приведший к сбою, если таких вызовов было порядка ста?
 ## <a name="problem-description"></a>Описание проблемы  
@@ -49,7 +48,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
  Теперь понятно, что функция дала сбой на 101-м вызове. Если теперь задать точку останова с количеством попаданий 101 и запустить программу снова, она остановится именно на том вызове `CnvtV`, который и привел к сбою.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
  [Задание точек останова](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

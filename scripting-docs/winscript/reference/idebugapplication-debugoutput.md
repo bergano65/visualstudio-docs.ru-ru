@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput | Документы Microsoft
+title: IDebugApplication::DebugOutput | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725464"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095411"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-В результате заданной строки, которые должны отображаться в отладчике интегрированной среды разработки (IDE).  
+Вызывает заданную строку для отображения отладчика интегрированной средой разработки (IDE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT DebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -43,12 +43,12 @@ HRESULT DebugOutput(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод позволяет языковая подсистема реализовать поддержку отладки выходных данных для конкретного языка. Строка, как правило, отображается в окне вывода.  
+ Этот метод позволяет модуль языка для реализации поддержки отладки выходные данные для конкретного языка. Строка, как правило, отображается в окне вывода отладчика.  
   
  Этот метод вызывает `IApplicationDebugger::onDebugOutput` для вызова.  
   

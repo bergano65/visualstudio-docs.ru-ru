@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint | Документы Microsoft
+title: IDebugHelper::CreateSimpleConnectionPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727814"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097075"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
 Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -42,17 +42,17 @@ HRESULT CreateSimpleConnectionPoint(
  [in] `IDispatch` Для переноса.  
   
  `ppscp`  
- [out] Интерфейс событий, который создает оболочку для `pdisp`.  
+ [out] Интерфейс событий, который заключает в оболочку `pdisp`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` (см. [интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` (см. в разделе [интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugHelper](../../winscript/reference/idebughelper-interface.md)   

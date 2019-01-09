@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName | Документы Microsoft
+title: IDebugDocumentHost::GetFileName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726134"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097153"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
-Возвращает имя файла без сведений о пути.  
+Возвращает имя документа без сведений о пути.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -38,7 +38,7 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrShortName`  
- [out] Строка, содержащая короткое имя файла.  
+ [out] Строка, содержащая короткое имя документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -48,7 +48,7 @@ HRESULT GetFileName(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает короткое имя файла без сведений о пути. Краткое имя обычно используется в ситуациях, например **Сохранить как...**  диалоговое окно.  
+ Этот метод возвращает краткое имя документа без сведений о пути. Короткое имя обычно используется в ситуациях, например **Сохранить как...**  диалоговое окно.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowserEx | Документы Microsoft
+title: IDebugHelper::CreatePropertyBrowserEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3590fe05ef82f094dd5706f9f527b247d95eda8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727574"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097738"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-Возвращает обозреватель свойств, который создает оболочку для типа VARIANT и обеспечивает пользовательские преобразования значений типа VARIANT или типов VARTYPE в строки.  
+Возвращает браузер свойств, который служит оболочкой VARIANT и позволяет выполнять пользовательские преобразование значениями VARIANT или типами VARTYPE в строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -45,16 +45,16 @@ HRESULT CreatePropertyBrowserEx(
  [in] Корневой тип variant для просмотра.  
   
  `bstrName`  
- [in] Имя корневого.  
+ [in] Имя корневой.  
   
  `pdat`  
- [in] Потока, на котором будет запрашивать свойства. Если этот параметр имеет значение NULL, без упаковки не выполняется.  
+ [in] Поток, выступающей в качестве свойства запроса. Если этот параметр имеет значение NULL, выполняется без упаковки.  
   
  `pdf`  
  [in] Объект, который предоставляет пользовательский формат для вариантов.  
   
  `ppdob`  
- [out] Обозреватель свойств.  
+ [out] Браузер свойств.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -64,7 +64,7 @@ HRESULT CreatePropertyBrowserEx(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает обозреватель свойств, который создает оболочку для типа VARIANT и обеспечивает пользовательские преобразования значений типа VARIANT или типов VARTYPE в строки.  
+ Этот метод возвращает браузер свойств, который служит оболочкой VARIANT и позволяет выполнять пользовательские преобразование значениями VARIANT или типами VARTYPE в строки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   

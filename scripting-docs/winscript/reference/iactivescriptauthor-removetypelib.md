@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
+title: IActiveScriptAuthor::RemoveTypeLib | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 36aac4ef2631dbc82dc64e61021ef6bb3f2ac153
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24645534"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096191"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-Удаляет библиотеку типов из скрипта создания engine пространства имен.  
+Удаляет библиотеку типов из скрипта создания пространства имен модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT RemoveTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  
@@ -40,7 +40,7 @@ HRESULT RemoveTypeLib(
   
 #### <a name="parameters"></a>Параметры  
  `rguidTypeLib`  
- [in] Код CLSID (идентификатор класса) библиотеки типов для удаления.  
+ [in] CLSID (идентификатор класса) библиотеки типов для удаления.  
   
  `dwMajor`  
  [in] Основной номер версии.  
@@ -51,7 +51,7 @@ HRESULT RemoveTypeLib(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Initialize | Документы Microsoft
+title: IActiveScriptProfilerCallback::Initialize | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82e599ae94f422352706a0ec6cd9387bfa6799f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 240df77731b92ebb91cefc3f1a326e7dd77c847a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724414"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094527"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
-Вызывается для инициализации объекта профилировщика при каждом запуске профилирования на обработчик скриптов.  
+Вызывается для инициализации объект профилировщика при каждом запуске профилирования на обработчик скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Initialize(  
     [in] DWORD dwContext);  
 ```  
@@ -45,7 +45,7 @@ HRESULT Initialize(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Если метод не удается инициализировать объект профилировщика, он должен возвращать значение HRESULT для уведомления обработчика скриптов. В этом случае обработчик скриптов должны напрямую вызывать [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), передавая параметр HRESULT, а затем отпустите объекта профилировщика.  
+ Если метод не удается инициализировать объект профилировщика, она должна возвращать значение HRESULT для уведомления обработчика скриптов. В этом случае обработчик скриптов должен напрямую вызывать [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), передав значение HRESULT в параметре, а затем отпустите объект профилировщика.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

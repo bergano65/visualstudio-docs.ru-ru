@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SynchronousCallIntoThread | Документы Microsoft
+title: IDebugApplicationThread::SynchronousCallIntoThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726464"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097062"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
-Предоставляет механизм для вызывающего объекта запустить код в потоке приложения.  
+Предоставляет механизм для вызывающего объекта для выполнения кода в потоке приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SynchronousCallIntoThread(  
    IDebugThreadCall*  pstcb,  
    DWORD_PTR          dwParam1,  
@@ -55,12 +55,12 @@ HRESULT SynchronousCallIntoThread(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод предоставляет механизм для вызывающего объекта, для выполнения кода в поток отладки. Модули языка и узлы обычно используется этот метод для реализации свободнопоточный объекты на основе реализаций одного однопотоковое.  
+ Этот метод предоставляет механизм для запуска кода в отладчике потока вызывающего объекта. Модулям языка и узлам обычно используется этот метод для реализации свободнопоточный объекты на основе реализаций одного потоками.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: Константы SCRIPTTHREADID | Документы Microsoft
+title: Константы SCRIPTTHREADID | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734194"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097816"
 ---
 # <a name="scriptthreadid-constants"></a>Константы SCRIPTTHREADID
-Позволяет указать тип потока.  
+Используется для указания типа потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -38,12 +38,12 @@ typedef DWORD SCRIPTTHREADID;
   
 |Константа|Значение|Значение|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Текущий выполняемый поток.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Базовый поток; то есть был создан поток, в котором модуль создания скриптов.|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Текущим выполняемым потоком.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Базовый поток; то есть был создан поток, в котором обработчик скриптов.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Все потоки.|  
   
 ## <a name="remarks"></a>Примечания  
- `SCRIPTTHREADID` Тип используется `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, и `IActiveScript::InterruptScriptThread`, а констант может использоваться только с `IActiveScript::GetScriptThreadState` и `IActiveScript::InterruptScriptThread`.  
+ `SCRIPTTHREADID` Тип используется `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, и `IActiveScript::InterruptScriptThread`, но констант может использоваться только с `IActiveScript::GetScriptThreadState` и `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

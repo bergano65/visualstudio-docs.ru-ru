@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptState | Документы Microsoft
+title: IActiveScript::SetScriptState | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146cd5e4f2b6137fc6fe6e32e8ca153c3aab8fd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58edef17fec1d94a09b327dff626658c42a273ba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645674"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095034"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Помещает обработчик скриптов в указанном состоянии. Этот метод может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) интерфейса.  
+Помещает обработчик скриптов в заданном состоянии. Этот метод может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) интерфейс.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetScriptState(  
     SCRIPTSTATE ss  // identifier of new state  
 );  
@@ -46,13 +46,13 @@ HRESULT SetScriptState(
 |Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_FAIL`|Обработчик скриптов не поддерживает переход обратно в исходное состояние. Имя узла необходимо отменить этот обработчик скриптов и создать, инициализировать и загрузить новый обработчик сценариев для достижения такого же эффекта.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации) и поэтому не удалось выполнить.|  
-|`OLESCRIPT_S_PENDING`|Метод в очередь и успешно, но состояние еще не изменилась. При изменения состояния, узел получит обратный вызов через [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод.|  
-|`S_FALSE`|Метод успешно выполнен, но скрипт уже был в указанном состоянии.|  
+|`E_FAIL`|Обработчик скриптов не поддерживает переход обратно в исходное состояние. Узел должен отменить этот обработчик скриптов и создание, инициализация и загрузить новый обработчик сценариев для достижения такого же эффекта.|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации) и поэтому не удалось.|  
+|`OLESCRIPT_S_PENDING`|Метод был поставлен в очередь успешно, но состояние еще не изменился. Когда изменения состояния, сайт будет вызван обратно через [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод.|  
+|`S_FALSE`|Метод выполнен успешно, но он уже был в указанном состоянии.|  
   
 ## <a name="remarks"></a>Примечания  
- Дополнительные сведения о сценариях engine состояний см. разделе состояний обработчика сценария [обработчики скриптов Windows](../../winscript/windows-script-engines.md) .  
+ Дополнительные сведения о создании сценариев состояния обработчика см. в разделе состояния обработчика скриптов [обработчики скриптов Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   

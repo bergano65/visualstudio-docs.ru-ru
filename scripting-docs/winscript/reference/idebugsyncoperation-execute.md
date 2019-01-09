@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Документы Microsoft
+title: IDebugSyncOperation::Execute | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726954"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090224"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
 Синхронно выполняет операцию и возвращает.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -43,13 +43,13 @@ HRESULT Execute(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_ABORT`|Операция была прервана, вызвав `IDebugSyncOperation::InProgressAbort` метод.|  
   
 ## <a name="remarks"></a>Примечания  
- Диспетчер отладки процессов в целевом потоке не вызывает `Execute` метод синхронно.  
+ Диспетчер отладки процессов в целевой поток вызывает `Execute` метод синхронно.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Перечисление DOCUMENTNAMETYPE | Документы Microsoft
+title: Перечисление DOCUMENTNAMETYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640584"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094774"
 ---
 # <a name="documentnametype-enumeration"></a>Перечисление DOCUMENTNAMETYPE
 Описывает тип, получаемый для документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -44,10 +44,10 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
 |Член|Описание|  
 |------------|-----------------|  
 |DOCUMENTNAMETYPE_APPNODE|Возвращает имя, как оно отображается в дереве приложения.|  
-|DOCUMENTNAMETYPE_TITLE|Возвращает имя, которое отображается в строке заголовка средства просмотра.|  
+|DOCUMENTNAMETYPE_TITLE|Возвращает имя, как оно отображается в строке заголовка средства просмотра.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Возвращает имя файла без пути.|  
 |DOCUMENTNAMETYPE_URL|Получает URL-адрес документа.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Возвращает название, дополненная перечисления для идентификации.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Получает заголовок, дополненный перечисления для идентификации.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

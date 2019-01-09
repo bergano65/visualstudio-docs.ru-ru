@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Документы Microsoft
+title: IScriptEntry::GetName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729554"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090887"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-Для записей, которые представляют собой один объект (например, функции) возвращает имя объекта.  
+Для записи, представляющие один объект (например, функцию) возвращает имя объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -38,14 +38,14 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstr`  
- [out] Имя объекта, представленного `IScriptEntry` блок сценария. Если запись не представляет один объект, возвращается значение NULL.  
+ [out] Имя объекта, представленного `IScriptEntry` блок скрипта. Если запись не представляет один объект, возвращается значение NULL.  
   
- Дочерние элементы представляют собой объект одной функции.  
+ Дочерние записи представлять объект одной функции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

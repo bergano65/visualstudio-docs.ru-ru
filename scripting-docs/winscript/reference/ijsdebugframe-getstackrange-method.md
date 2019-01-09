@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugFrame::GetStackRange | Документы Microsoft
+title: Метод IJsDebugFrame::GetStackRange | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727874"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090289"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Метод IJsDebugFrame::GetStackRange
-Возвращает диапазон абсолютных адресов кадра стека логических JavaScript.  
+Возвращает диапазон абсолютных адресов логического фрейма стеков JavaScript.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -37,15 +37,15 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Параметры  
  `pStart`  
- [out] Нижняя большинство указатель стека для фрейма.  
+ [out] Bottom большинство указателя стека кадра.  
   
  `pEnd`  
- [out] Первые большинство устройство для раскладки указатель кадра.  
+ [out] Первые самый верхний указатель на кадр.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод полезен для комбинирования трассировок стека с чередованием, собранных из нескольких сред выполнения. Начало, конец указатели стека может охватывать несколько кадров стека физического компьютера (для интерпретируемых кадров среды выполнения JavaScript). Пуск > Завершить при увеличении стека от высокой низкий адрес.  
+ Этот метод полезен для соединения вместе перемежаемых трассировок стека с множественными средами выполнения. Начало, конечные указатели стека может охватывать несколько кадров стека физического компьютера (для интерпретированных кадров среды выполнения JavaScript). Пуск > завершить, так как стек растет от большего к минимальным адресам.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

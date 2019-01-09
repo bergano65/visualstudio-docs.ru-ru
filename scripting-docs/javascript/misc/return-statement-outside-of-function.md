@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802528"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096451"
 ---
 # <a name="return-statement-outside-of-function"></a>Оператор return за пределами функции
 Вы использовали `return` оператор в глобальной области кода. `return` Оператор должен отображаться только в теле функции.  
   
- Вызов функции с помощью `()` оператор — это выражение. Все выражения имеют значения; `return` инструкция используется для указания значения, возвращенного функцией. Выглядит следующим образом:  
+ Вызов функции с помощью `()` оператор — это выражение. Все выражения имеют значения; `return` оператор используется для указания значения, возвращаемого функцией. Выглядит следующим образом:  
   
-```  
+```js
   
 return [ expression ];  
 ```  

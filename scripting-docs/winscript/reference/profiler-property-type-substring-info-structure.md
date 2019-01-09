@@ -1,5 +1,5 @@
 ---
-title: Структура PROFILER_PROPERTY_TYPE_SUBSTRING_INFO | Документы Microsoft
+title: Структура PROFILER_PROPERTY_TYPE_SUBSTRING_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,25 +10,25 @@ ms.assetid: 3845c872-4302-47b6-8912-7b2d7a3b3357
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: ba7c0c865ae875d22fa82e48557eb2ed8b170e65
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734184"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089977"
 ---
 # <a name="profilerpropertytypesubstringinfo-structure"></a>Структура PROFILER_PROPERTY_TYPE_SUBSTRING_INFO
-Представляет сведения о типе подстроки, используемой в связи. Используется в [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+Представляет сведения о типе подстроки, используются в связи. Используется в [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef struct _PROFILER_PROPERTY_TYPE_SUBSTRING_INFO {    UINT length;    LPCWSTR value; } PROFILER_PROPERTY_TYPE_SUBSTRING_INFO;  
 ```  
   
 ## <a name="members"></a>Члены  
   
-|Член|Тип|Описание|  
+|Член|Тип|Описание:|  
 |------------|----------|-----------------|  
-|длина|UINT|Объект является UINT.|  
-|значение|LPCWSTR|Объект является — LPCWSTR.|
+|length|UINT|Объект — целое число без знака.|  
+|value|LPCWSTR|Объект — LPCWSTR.|
