@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::GetTlsValue | Документы Microsoft
+title: Метод IJsDebugDataTarget::GetTlsValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4205adfb24a1a64d4e90f3fdcaf5a5ecbc4028de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f81e9ea6cca9bf54753a496e07903d23bb913fc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727884"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095333"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>Метод IJsDebugDataTarget::GetTlsValue
-Получает значение в области потока локальное хранилище (TLS) с указанным индексом TLS отлаживаемый поток.  
+Для отлаживаемого потока извлекает значение в области потока локальное хранилище (TLS) для указанного индекса TLS.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetTlsValue(  
    DWORD threadId,  
    UINT32 tlsIndex,  
@@ -38,18 +38,18 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Поток, выполняющийся в целевом процессе, из которого выполняется чтение.  
+ [in] Поток, выполняемый в целевом процессе для чтения из.  
   
  `tlsIndex`  
- [in] Индекс TLS, который был выделен вызова функции TlsAlloc целевого процесса.  
+ [in] Индекс TLS, который был выделен, когда целевой процесс вызвал функцию TlsAlloc.  
   
  `pValue`  
- [out] Значение размером указателя, которое было сохранено в слоте TLS потока. Если целевой поток является 32-разрядным, верхние 32-бит это значение будет равно нулю.  
+ [out] Значение размера указателя, которое было сохранено в слоте TLS потока. Если целевой поток 32-разрядный, верхние 32 бита этого значения будут равны нулю.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Каждый поток процесса имеет свой собственный слот для каждого индекса TLS.  
+ Каждый поток процесса имеет собственную ячейку для каждого индекса TLS.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

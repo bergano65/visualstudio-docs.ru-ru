@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Документы Microsoft
+title: IMachineDebugManagerEvents::onAddApplication | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729084"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086649"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Обрабатывает событие, при добавлении приложения с запуском список приложений.  
+Обрабатывает событие при добавлении приложения с запуском список приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -42,17 +42,17 @@ HRESULT onAddApplication(
  [in] Приложения, который был добавлен с запуском список приложений.  
   
  `dwAppCookie`  
- [in] Файл cookie, когда приложение был добавлен в список приложений.  
+ [in] Файл cookie, когда приложение было добавлено в список приложений.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод указывает, что приложение был добавлен с запуском список приложений.  
+ Этот метод указывает, что приложение было добавлено с запуском список приложений.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

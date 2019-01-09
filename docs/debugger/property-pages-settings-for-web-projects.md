@@ -2,7 +2,6 @@
 title: Параметры свойств для веб-проектов | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892667"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Параметры страниц свойств для веб-проектов
 Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
@@ -53,5 +52,5 @@ ms.locfileid: "53064223"
 | **Отладка SQL Server** | Разрешает отладку объектов базы данных SQL Server. |
 | **Отладка Silverlight** | Обеспечивает отладку компонентов Silverlight. |
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

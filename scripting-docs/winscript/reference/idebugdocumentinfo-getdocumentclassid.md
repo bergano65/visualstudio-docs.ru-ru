@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Документы Microsoft
+title: IDebugDocumentInfo::GetDocumentClassId | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3d29cf19752da18b76f31b4d12cecb05592c00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 65f43f3dbf76c9055bc4e521435ab56b1c7c6e40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726904"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086766"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-Возвращает `CLSID` определение типа документа.  
+Возвращает `CLSID` определения типа документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDocumentClassId(  
    CLSID*  pclsidDocument  
 );  
@@ -38,19 +38,19 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Параметры  
  `pclsidDocument`  
- [out] Объект `CLSID` определение типа документа.  
+ [out] Объект `CLSID` определения типа документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод позволяет отладчику интегрированной среды разработки узла пользовательские средства просмотра для этого документа.  
+ Этот метод позволяет отладчику интегрированной среды разработки узла пользовательских средств просмотра для этого документа.  
   
- Если документ не содержит просматриваемые данные, возвращаемое значение `pclsidDocument` — `CLSID_NULL`.  
+ Если документ не содержит просматриваемые данные, возвращаемое значение `pclsidDocument` является `CLSID_NULL`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)

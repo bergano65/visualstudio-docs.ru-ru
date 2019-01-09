@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts | Документы Microsoft
+title: IDebugDocumentContext::EnumCodeContexts | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 300102d75fcfa797e8e073b9a1ce77cc5ee2827a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47bf36a8d013ffbb3c09214d590960c833e53218
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725874"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086272"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-Перечисляет контексты код, связанный с данным контекстом документа.  
+Перечисляет контексты кода, связанный с данным контекстом документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnumCodeContexts(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Параметры  
  `ppescc`  
- [out] Контексты код, связанный с данным контекстом документа.  
+ [out] Контексты кода, связанный с данным контекстом документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Документ является обычно связано с контекстом только один код, если документ не включаемого файла или шаблона.  
+ Документ является обычно связано с контекстом только один код, если документ является включаемого файла или шаблона.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Документы Microsoft
+title: IDispatchEx::DeleteMemberByName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728134"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096438"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Удаляет элемент по имени.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -42,12 +42,12 @@ HRESULT DeleteMemberByName(
  Имя элемента для удаления.  
   
  `grfdex`  
- Определяет, является ли регистр имени члена. Это может быть одно из следующих значений:  
+ Определяет, является ли имя члена с учетом регистра. Это может быть одно из следующих значений:  
   
 |Значение|Значение|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Запросы, которые выполнить поиск имени регистра. Можно игнорировать объектом, который не поддерживает поиск с учетом регистра.|  
-|fdexNameCaseInsensitive|Запросы, которые выполнить поиск имени регистра. Можно игнорировать объектом, который не поддерживает поиск без учета регистра.|  
+|fdexNameCaseInsensitive|Запросы, которые при поиске имени выполняться без учета регистра. Можно игнорировать объектом, который не поддерживает поиск без учета регистра.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -55,16 +55,16 @@ HRESULT DeleteMemberByName(
 |||  
 |-|-|  
 |`S_OK`|Выполнено.|  
-|`S_FALSE`|Элемент существует, но не может быть удалена.|  
+|`S_FALSE`|Элемент существует, но не может быть удален.|  
   
 ## <a name="remarks"></a>Примечания  
- При удалении члена DISPID должен оставаться действительным для `GetNextDispID`.  
+ Если элемент удаляется, идентификатор DISPID должен оставаться допустимым для `GetNextDispID`.  
   
- Если удаляется элемент с заданным именем и в дальнейшем воссоздать член с тем же именем, идентификатор DISPID должны совпадать. (Члены, которые различаются только регистром одинаковы ли «» зависит от объекта.)  
+ Если удаляется элемент с заданным именем и более поздней версии воссоздается член с тем же именем, идентификатор DISPID должны совпадать. (Члены, которые отличаются только регистром, совпадают ли «» зависит от объекта.)  
   
 ## <a name="example"></a>Пример  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 32f8845790168aae784f3659f54c89e000681a15
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1dd9127895a375ae02e6d4f18bae0a09bef494bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942048"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Как выполнить Автоматическое применение ключей продуктов при развертывании Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,5 +61,5 @@ ms.locfileid: "53050231"
 
  Если StorePID.exe успешно применены ключ продукта, возвращается 0. В случае возникновения ошибки возвращается число в диапазоне от 1 до 6.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Установка Visual Studio](../install/install-visual-studio-2015.md)

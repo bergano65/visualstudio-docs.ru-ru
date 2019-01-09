@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::AddApplication | Документы Microsoft
+title: IProcessDebugManager::AddApplication | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a221aa0038b0b3fd5046b9ada08e2de86f33a895
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0b811a23f8c97f1924883a04878f22cabc9b26
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729524"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087533"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-Добавляет приложение в список диспетчера отладки компьютера запущенные приложения.  
+Добавляет приложение диспетчера отладки компьютера список выполняемых приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IDebugApplication*  pda,  
    DWORD*              pdwAppCookie  
@@ -39,10 +39,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Параметры  
  `pda`  
- [in] Приложение отладки, добавьте к списку запущенные приложения.  
+ [in] Приложение отладки, чтобы добавить в список запущенных приложений.  
   
  `pdwAppCookie`  
- [out] Файл cookie, который используется для удаления из диспетчера отладки приложения.  
+ [out] Файл cookie, который используется для удаления существующего приложения с диспетчером отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -52,7 +52,7 @@ HRESULT AddApplication(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод добавляет приложения с запуском список приложений в диспетчера отладки.  
+ Этот метод добавляет приложению выполнения список приложений в диспетчер отладки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   

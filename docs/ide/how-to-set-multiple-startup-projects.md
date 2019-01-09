@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Назначение нескольких запускаемых проектов
+title: Как выполнить Назначение нескольких запускаемых проектов
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed02ad99172809816ebacf2459036253a04c6c6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842197"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Практическое руководство. Назначение нескольких запускаемых проектов
+# <a name="how-to-set-multiple-startup-projects"></a>Как выполнить Назначение нескольких запускаемых проектов
 
 Visual Studio позволяет указать выполнение нескольких проектов при запуске отладчика.
 

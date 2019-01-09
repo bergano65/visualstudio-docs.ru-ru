@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1ea4c51f617d6128018ba23cbf564996cccf1a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95d7f9c542bccfd5f78b0aafef276147e8534257
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847640"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -1164,5 +1163,5 @@ ms.locfileid: "53057260"
 |XsdDesigner.ShowGraphView|CTRL+3|
 |XsdDesigner.ShowStartView|CTRL+1|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Редактор изображений для значков](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [с помощью IntelliSense](../ide/using-intellisense.md)

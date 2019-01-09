@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumThreads | Документы Microsoft
+title: IRemoteDebugApplication::EnumThreads | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42b57e63716804258ba79ed4e4aceae118cb5f54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d813b9d1aa32368abddb6127450dffa8868facc5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729164"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086896"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
-Перечисляет все потоки, известно, связанных с приложением.  
+Перечисляет все потоки, известно, связанного с приложением.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnumThreads(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumThreads(
   
 #### <a name="parameters"></a>Параметры  
  `pperdat`  
- [out] Перечислитель, который перечисляет все потоки, известно, связанных с приложением.  
+ [out] Перечислитель, который перечисляет все потоки, известно, связанного с приложением.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -48,7 +48,7 @@ HRESULT EnumThreads(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод перечисляет все потоки, известно, связанных с приложением. Новые потоки могут быть добавлены в любое время.  
+ Этот метод перечисляет все потоки, известно, связанного с приложением. Новые потоки могут быть добавлены в любое время.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

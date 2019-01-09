@@ -2,7 +2,6 @@
 title: Написание визуализатора на C# | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925226"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C# #
 В данном пошаговом руководстве показано, как написать простой визуализатор, используя C#. Визуализатор, который вы создадите в данном пошаговом руководстве, показывает содержание строки, используя окно сообщений Windows Forms. Этот простой визуализатор строки сам по себе не очень полезен, но он демонстрирует основные действия для создания более полезных визуализаторов других типов данных.

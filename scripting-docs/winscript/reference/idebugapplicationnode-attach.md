@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Документы Microsoft
+title: IDebugApplicationNode::Attach | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725934"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094956"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 Добавляет этот узел приложения в дерево указанный проект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,17 +38,17 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Параметры  
  `pdanParent`  
- [in] Дерево проектов, где для добавления этого узла приложения.  
+ [in] Дерево проекта, где будет добавляться этот узел приложения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод добавляет этот узел приложения в проект дерева, с помощью `pdanParent` как родительский элемент. Если `pdanParent` — `NULL`, этот узел приложения будет узел верхнего уровня.  
+ Этот метод добавляет этот узел приложения в проект дерева, с помощью `pdanParent` как родительский. Если `pdanParent` является `NULL`, этот узел приложение будет размещаться узел верхнего уровня.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

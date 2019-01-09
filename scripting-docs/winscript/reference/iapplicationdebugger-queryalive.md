@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive | Документы Microsoft
+title: IApplicationDebugger::QueryAlive | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,36 +18,36 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48571476407c29b9af949bd6f626d14ea822f2e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00055eaaf79e24a9f59c380318b9c24fa476f1af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725324"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096074"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
-Указывает, является ли отладчик отвечать на запросы.  
+Указывает, является ли гибкий отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод указывает, является ли отладчик отвечать на запросы. Реализации этого метода всегда должны возвращать `S_OK`.  
+ Этот метод указывает, является ли гибкий отладчика. Реализации этого метода всегда должны возвращать `S_OK`.  
   
- Если непредвиденное завершение процесса отладчика COM возвращает ошибку из маршалинга прокси для вызова этого метода.  
+ Если непредвиденное завершение процесса отладчика, COM возвращает ошибку из маршалирования прокси для вызова этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)

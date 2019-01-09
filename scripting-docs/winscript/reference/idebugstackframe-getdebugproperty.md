@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDebugProperty | Документы Microsoft
+title: IDebugStackFrame::GetDebugProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 898c80dc4f5ef9010db6396a78c1b17b50603dc2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8d3f50029be8489d05c204c57f50c3f7f1326400
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726894"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096136"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
-Возвращает обозреватель свойств для текущего кадра.  
+Возвращает браузер свойств для текущего кадра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IDebugProperty**  ppDebugProp  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Параметры  
  `ppDebugProp`  
- [out] Обозреватель свойств для текущего кадра.  
+ [out] Браузер свойств для текущего кадра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает обозреватель свойств для текущего кадра.  
+ Этот метод возвращает браузер свойств для текущего кадра.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

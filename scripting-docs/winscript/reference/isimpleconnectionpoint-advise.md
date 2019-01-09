@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Документы Microsoft
+title: ISimpleConnectionPoint::Advise | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b3c0ea37e6fabb051458a11c4838061126bd98bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733794"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091745"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
-Устанавливает соединение между объектом точки простого подключения и приемником клиента.  
+Устанавливает соединение между объектом точки простого подключения и приемника клиента.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Advise(  
    IDispatch*  pdisp,  
    DWORD*      pdwCookie  
@@ -39,20 +39,20 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Параметры  
  `pdisp`  
- [in] Указатель на `IDispatch` интерфейса на стороне клиента следует рекомендовать приемника. Приемник клиента получает исходящих вызовов от точки простого подключения.  
+ [in] Указатель на `IDispatch` приемнике уведомлений интерфейса на стороне клиента. Приемник клиента принимающий исходящие вызовы от точки простого подключения.  
   
  `pdwCookie`  
- [out] Указатель на возвращаемый маркер, уникально определяющий это соединение. Вызывающий компонент использует этот токен позднее удалить подключение путем ее передачи `ISimpleConnectionPoint::Unadvise` метод. Если соединение не было успешно установлено, это значение равно нулю.  
+ [out] Указатель на возвращенный токен, который уникальным образом определяющий это соединение. Вызывающий объект использует этот токен позже для удаления соединения, передав его в `ISimpleConnectionPoint::Unadvise` метод. Если соединение не было успешно установлено, это значение равно нулю.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод устанавливает соединение между объектом точки простого подключения и приемником клиента.  
+ Этот метод устанавливает соединение между объектом точки простого подключения и приемника клиента.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)   

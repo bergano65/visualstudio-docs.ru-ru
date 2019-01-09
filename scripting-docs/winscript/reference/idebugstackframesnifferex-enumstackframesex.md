@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Документы Microsoft
+title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a96a382c1dce73731fdd4326d8b0d1c35b7aa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c34ce267113ae5576a8b3bdca9ac34d4abc00f7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727584"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086975"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Возвращает перечислитель кадров стека текущего потока.  
+Возвращает перечислитель для кадров стека текущего потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnumStackFramesEx(  
    DWORD_PTR                dwSpMin,  
    IEnumDebugStackFrames**  ppedsf  
@@ -39,20 +39,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Параметры  
  `dwSpMin`  
- [in] Нижняя граница адрес для перечисления кадры стека.  
+ [in] Нижняя граница адрес для перечисления кадров стека.  
   
  `ppedsf`  
- [out] Перечислитель кадров стека текущего потока.  
+ [out] Перечислитель для кадров стека текущего потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает перечислитель кадра стека кадры, начиная с верхней части стека с наиболее недавно отправленных кадра. Перечислитель содержит только кадры стека с адресами больше или равно `dwSpMin`.  
+ Возвращает перечислитель кадра стека кадры, начиная с верхней части стека, с наиболее недавно отправленных кадром. Перечислитель содержит только кадры стека с адресами больше или равно `dwSpMin`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrameSnifferEx](../../winscript/reference/idebugstackframesnifferex-interface.md)

@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictSystemRootAccess | Документы Microsoft
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictSystemRootAccess | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 000d0b5ce21b6b50b1abab76aa8bf4a7bb1cd62a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 340e6a8cffbf681bb9e976664ccbbe15e6b00786
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918738"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 Определяет, разрешено при поиске PDB-файлы в корневом каталоге системы.  
@@ -31,10 +29,10 @@ HRESULT RestrictSystemRootAccess();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Любой код возврата не `S_OK` предотвращает поиска к корневой папке системы PDB-файлов.  
+ Любой код возврата не `S_OK` предотвращает поиск корневую папку системы для PDB-файлы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Документы Microsoft
+title: IEnumDebugApplicationNodes::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61bc2b677f12106c9bd8e6c8bec57ae1f7a09605
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07bdd008887676ef2f4cba7e1a67d96e1344f56a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727834"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091134"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 Возвращает указанное количество сегментов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                    celt,  
    IDebugApplicationNode**  pprddp,  
@@ -40,18 +40,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество сегментов для извлечения.  
+ [in] Количество сегментов для получения.  
   
  `pprddp`  
- [out] Возвращает массив `IDebugApplicationNode` интерфейсы, которые представляет извлекаемых сегменты.  
+ [out] Возвращает массив `IDebugApplicationNode` интерфейсы, которые представляет сегменты, которые требуется получить.  
   
  `pceltFetched`  
- [out] Фактическое число сегментов, выбранных с помощью перечислителя.  
+ [out] Фактическое число сегментов, получены с помощью перечислителя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::InitNew | Документы Microsoft
+title: IActiveScriptParse::InitNew | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e34094bcc25c0316fa670f570d8b2664acc0ba78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0998bea50d7839f93111aa6b116934fae35bfa3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724484"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089990"
 ---
 # <a name="iactivescriptparseinitnew"></a>IActiveScriptParse::InitNew
-Инициализирует обработчик скриптов.  
+Инициализирует обработчика скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT InitNew(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT InitNew(void);
  Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если произошла ошибка во время инициализации.  
   
 ## <a name="remarks"></a>Примечания  
- Перед тем как использовать обработчик скриптов, один из следующих методов необходимо вызвать: `IPersist*::Load`, `IPersist*::InitNew`, или `IActiveScriptParse::InitNew`. Этот метод Семантика идентична `IPersistStreamInit::InitNew`, в том, что этот метод указывает обработчик скриптов для инициализации самой себя. Обратите внимание, что оно является недопустимым для вызова оба `IPersist*::InitNew` или `IActiveScriptParse::InitNew` и `IPersist*::Load`, и не является допустимым для вызова `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, или `IPersist*::Load` более одного раза.  
+ Прежде чем можно будет использовать обработчик скриптов, один из следующих методов необходимо вызвать: `IPersist*::Load`, `IPersist*::InitNew`, или `IActiveScriptParse::InitNew`. Этот метод Семантика идентична `IPersistStreamInit::InitNew`, в том, что этот метод указывает на обработчик скриптов инициализировать самого себя. Обратите внимание, что не допускается вызывать оба `IPersist*::InitNew` или `IActiveScriptParse::InitNew` и `IPersist*::Load`, не является допустимым для вызова `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, или `IPersist*::Load` более одного раза.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

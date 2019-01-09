@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_memorySpaceKind | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_memorySpaceKind | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b1d3bf8419cb2cbaba9a12aef2f7adb52110b8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e9bfb63c05a864d1ee477ec9411cfaded431cc01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920132"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
-Получает тип пространства памяти.  
+Извлекает тип пространства памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +32,7 @@ HRESULT get_memorySpaceKind(
  [out] Указатель на `DWORD` , содержащий тип пространства памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

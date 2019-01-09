@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugBreakPoint::Delete | Документы Microsoft
+title: Метод IJsDebugBreakPoint::Delete | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f61da0754147e0a449663cc9815501dc8d38e6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aa838f928aac6985c5c864853c3abd017f7bcf8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727994"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094176"
 ---
 # <a name="ijsdebugbreakpointdelete-method"></a>Метод IJsDebugBreakPoint::Delete
 Удаляет точку останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Delete(void);  
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает значение S_FALSE, при вызове в удаленных точках останова.  
+ Возвращает значение S_FALSE, если вызван на удаленной точке останова.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

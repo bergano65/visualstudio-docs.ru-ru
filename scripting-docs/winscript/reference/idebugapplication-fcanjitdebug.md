@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Документы Microsoft
+title: IDebugApplication::FCanJitDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725224"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095359"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
 Определяет, зарегистрирован ли отладчик just-in-time (JIT).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если метод выполнен успешно, и регистрируется JIT-отладчик, метод возвращает `TRUE`. В противном случае возвращает значение `FALSE`.  
+ Если метод завершается успешно, и регистрируется JIT-отладчик, метод возвращает `TRUE`. В противном случае возвращает значение `FALSE`.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод определяет, зарегистрирован ли JIT-отладчика.  
+ Этот метод определяет, зарегистрирован ли JIT-отладчик.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

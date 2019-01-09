@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47c0f6a359341d19b99c1ce8c099ebf1c6d6a1ff
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874193"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088989"
 ---
 # <a name="debugpropertyinfo-structure"></a>Структура DebugPropertyInfo
 Описывает объект иерархическую сущность, которая имеет имя, тип и значение. Он используется для описания свойств отладки локальных переменных, параметров, Контрольные значения переменных и выражений и регистрирует.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef struct DebugPropertyInfo{  
    DBGPROP_INFO_FLAGS  dwValidFields;  
    BSTR  bstrName;  
@@ -42,7 +42,7 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  dwValidFields  
  Тип перечислимых данных, можно указать, какие поля инициализируются.  
   

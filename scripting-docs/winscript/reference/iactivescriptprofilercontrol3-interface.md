@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptProfilerControl3 | Документы Microsoft
+title: Интерфейс IActiveScriptProfilerControl3 | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eed00579acfb09217183a1dd1d858a1e99257a2c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724454"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097140"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>Интерфейс IActiveScriptProfilerControl3
-Предоставляет метод, чтобы перечислить объекты кучи GC, связанный с обработчиком скриптов.  
+Предоставляет метод для перечисления над объектами кучи GC, связанный с механизмом скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl3 : IActiveScriptProfilerControl2  
 ```  
   
 ## <a name="methods"></a>Методы  
  [Метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)  
- Возвращает интерфейс ([интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) может использоваться для перебора объектов кучи сборщика Мусора в контексте обработчика связанных сценариев.
+ Возвращает интерфейс ([интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)), можно использовать для итерации объектами кучи GC в контексте связанного обработчика скриптов.

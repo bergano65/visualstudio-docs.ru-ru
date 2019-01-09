@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Документы Microsoft
+title: IActiveScriptAuthor::GetLanguageFlags | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093201"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Возвращает сведения о языке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -40,23 +40,23 @@ HRESULT GetLanguageFlags(
  `pgrfasa`  
  [out] Флаги, которые содержат сведения о языке. Может быть сочетанием следующих значений:  
   
-|Константа|Значение|Описание|  
+|Константа|Значение|Описание:|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Язык является предпочтительным скрипт создания обработчика событий с помощью скрипта создания ядра вместо приложения.|  
-|fasaSupportInternalHandler|0x0002|Язык поддерживает сценарий обработчики событий, создаваемые сценарием разработки ядра.|  
-|fasaCaseSensitive|0x0004|Язык скриптов учитывается регистр символов.|  
+|fasaPreferInternalHandler|0x0001|Язык, является предпочтительным для создания обработчика события скрипта с помощью сценария создания ядра вместо приложения.|  
+|fasaSupportInternalHandler|0x0002|Язык поддерживает сценарий обработчики событий, создаваемых сценарием разработки ядра.|  
+|fasaCaseSensitive|0x0004|Язык скрипта чувствительно к регистру.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Если скрипт создания engine управляет обработчики событий, приложение должно вызывать `CreateChildHandler` из `IScriptEntry` объекта. При этом создается `IScriptScriptlet` объект, соответствующий обработчик событий. Среда также добавляет обработчик событий запись скрипта. Обработчик событий — это пустой функция, которая содержит сведения о указанной подписи.  
+ Если скрипт создания engine управляет обработчики событий, приложение должно вызывать `CreateChildHandler` из `IScriptEntry` объекта. При этом создается `IScriptScriptlet` объект, соответствующий обработчик событий. Модуль также добавляет обработчик событий к записи скрипта. Обработчик событий — пустая функция с информацией, указанной сигнатурой.  
   
- Если приложение управляет обработчики событий, он должен вызывать `CreateChildHandler` из `IScriptNode` , представляющий событие обработчика сценариев. При этом создается `IScriptScriptlet` объекта, связанного с сценариев обработчика событий. Приложение также должен добавить пустую функцию как событие обработчика в новую или существующую `IScriptEntry` объекта.  
+ Если ваше приложение управляет обработчики событий, он должен вызывать `CreateChildHandler` из `IScriptNode` , представляющий обработчик событий скриптлета. При этом создается `IScriptScriptlet` объект, связанный со скриптлетом обработчика событий. Приложение также должно добавить пустую функцию как событие обработчика в новую или существующую `IScriptEntry` объекта.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

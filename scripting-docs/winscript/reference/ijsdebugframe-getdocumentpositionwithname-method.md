@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugFrame::GetDocumentPositionWithName | Документы Microsoft
+title: Метод IJsDebugFrame::GetDocumentPositionWithName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728054"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093838"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>Метод IJsDebugFrame::GetDocumentPositionWithName
-Возвращает текущую позицию этого кадра стека в документе уровня пользователя.  
+Возвращает текущее положение этого кадра стека в пределах пользовательского документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithName(  
    BSTR *pDocumentName,  
    DWORD *pLine,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Параметры  
  `pDocumentName`  
- [out] Для статических сценариев URL-адрес документа. Для динамических сценариев возвращается имя, содержащее тип сценария (например, eval код, код функции и т.д.).  
+ [out] Для статических скриптов URL-адрес документа. Для динамических скриптов возвращается имя, содержащее тип скрипта (например, код eval, код функции и т.д.).  
   
  `pLine`  
- [out] строки на основе 1 позиции в документе.  
+ [out] позиция строки на основе 1 в документе.  
   
  `pColumn`  
- [out] строки на основе 1 позиции в документе.  
+ [out] позиция строки на основе 1 в документе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   

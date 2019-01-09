@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent | Документы Microsoft
+title: IApplicationDebugger::onDebuggerEvent | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725294"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092681"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
 Обрабатывает событие пользовательского приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -47,15 +47,15 @@ HRESULT onDebuggerEvent(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Метод не реализован в настоящее время.|  
+|`E_NOTIMPL`|Метод еще не реализован.|  
   
 ## <a name="remarks"></a>Примечания  
  Семантика `IUnknown` является полностью определенные приложения и отладчика.  
   
- Этот метод позволяет для пользовательских расширений модели отладчика. он еще не реализован.  
+ Этот метод позволяет для пользовательских расширений модели отладчика; он еще не реализован.  
   
  Этот метод вызывается, когда `IDebugApplication::FireDebuggerEvent` вызывается.  
   

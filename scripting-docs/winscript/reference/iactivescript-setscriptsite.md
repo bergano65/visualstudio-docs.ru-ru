@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Документы Microsoft
+title: IActiveScript::SetScriptSite | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645574"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097439"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Уведомляет обработчик скриптов для [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) сайта интерфейс, предоставленный средой размещения. Этот метод перед любыми другими [IActiveScript](../../winscript/reference/iactivescript.md) используется методов интерфейса.  
+Информирует обработчик сценариев из [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) сайта интерфейс, предоставленный средой размещения. Вызовите этот метод перед любыми другими [IActiveScript](../../winscript/reference/iactivescript.md) используется методы интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Параметры  
  `pScriptSite`  
- [in] Адрес узла предоставленный скрипт узла, который будет связан с этим экземпляром обработчика скриптов. Сайт должен однозначно назначаются данного сценария экземпляра ядра; его нельзя использовать совместно с другими обработчиков сценариев.  
+ [in] Адрес сайта узла предоставленный скрипт, связываемое с этим экземпляром обработчика скриптов. Сайт должны назначаться уникально для данного сценария экземпляра ядра; его нельзя использовать совместно с другими обработчиков сценариев.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -47,9 +47,9 @@ HRESULT SetScriptSite(
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_FAIL`|Произошла неизвестная ошибка; Обработчик скриптов не удалось завершить инициализацию на сайте.|  
-|`E_INVALIDARG`|Недопустимый аргумент.|  
+|`E_INVALIDARG`|Аргумент был недопустимым.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, сайт уже было задано).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, сайт уже установлен).|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

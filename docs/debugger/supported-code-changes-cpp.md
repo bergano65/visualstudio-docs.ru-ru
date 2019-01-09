@@ -1,8 +1,6 @@
 ---
 title: Поддерживаемые изменения кода (C++) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 03b5c279e3d6aeee6cf0b5f0d9ad2e05e9d22fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917674"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C++)
 В Visual C+ большинство типов изменений, вносимых в код, обрабатывается в режиме «Изменить и продолжить». Некоторые изменения, однако, не могут быть применены во время выполнения программы. Чтобы применить эти изменения, необходимо остановить выполнение и собрать обновленную версию кода.  
@@ -141,5 +139,5 @@ ms.locfileid: "49854121"
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> Ограничения атрибутов IDL  
  В режиме "Изменить и продолжить" не создаются повторно файлы определения интерфейса (IDL). Как следствие, изменения в атрибутах IDL не отображаются в ходе отладки. Для того чтобы увидеть изменения в атрибутах IDL, необходимо остановить процесс отладки и заново осуществить построение приложения. При режиме "Изменить и продолжить" не выводится сообщение об ошибке или предупреждение при изменении атрибутов IDL. Дополнительные сведения см. в разделе [Атрибуты IDL](/cpp/windows/idl-attributes).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

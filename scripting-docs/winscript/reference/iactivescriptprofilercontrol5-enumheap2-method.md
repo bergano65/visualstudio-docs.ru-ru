@@ -1,5 +1,5 @@
 ---
-title: Метод IActiveScriptProfilerControl5::EnumHeap2 | Документы Microsoft
+title: Метод IActiveScriptProfilerControl5::EnumHeap2 | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,27 +12,27 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c493acdb2843877c506d9d84e145a79ac2d60d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 21661953edbdba2314b88aad5fb55451b06b51a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724664"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097634"
 ---
 # <a name="iactivescriptprofilercontrol5enumheap2-method"></a>Метод IActiveScriptProfilerControl5::EnumHeap2
-Возвращает интерфейс ([интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) может использоваться для перебора объектов кучи сборщика Мусора в контексте обработчика связанных сценариев.  
+Возвращает интерфейс ([интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)), можно использовать для итерации объектами кучи GC в контексте связанного обработчика скриптов.  
   
- Можно вызвать этот метод в любом отладки или в режиме выпуска. Этот метод должен вызываться во время простоя потока пользовательского интерфейса. После вызова метода, необходимо выполнить никакие операции в обработчик сценариев, за исключением [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) до [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)возвращает значение S_FALSE или [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) освобождается указатель на интерфейс.  
+ Можно вызвать этот метод в любом отладки или в режиме выпуска. Этот метод должен вызываться, когда поток пользовательского интерфейса неактивен. После вызова метода для обработчика сценариев, за исключением выполняться никакие операции [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) пока [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)возвращает значение S_FALSE или [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) будет освобожден указатель интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveScriptProfilerHeapEnum** ppEnum);  
 ```  
   
 #### <a name="parameters"></a>Параметры  
  enumFlags  
- Значение, указывающее, предоставляется ли Дополнительные сведения об объекте, на который указывает в отношении объекта. Дополнительных сведений может указывать, является ли объект, на который указывает метод доступа get или Set. Дополнительные сведения см. в разделе [перечисление PROFILER_HEAP_ENUM_FLAGS](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
+ Значение, указывающее, предоставляется ли дополнительная информацию об объект, на который указывает указатель в объектном отношении. Дополнительные сведения могут указывать, является ли объект, на который указывает метод доступа get или Set. Дополнительные сведения см. в разделе [перечисление PROFILER_HEAP_ENUM_FLAGS](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
   
  ppEnum  
  [out] Возвращает [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md).  
@@ -43,5 +43,5 @@ HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveS
 |Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Перечисление кучи успешно завершена.|  
-|`E_OUTOFMEMORY`|Не хватает памяти для выполнения перечисление кучи.|  
+|`E_OUTOFMEMORY`|Недостаточно памяти для выполнения перечисления кучи не существует.|  
 |`E_FAIL`|Произошла внутренняя ошибка.|

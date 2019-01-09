@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Документы Microsoft
+title: IDebugDocumentHost::GetPathName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42fffa160a1f5b55dc9ba0287c2fdf3073e27e0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c33844ade2367ffeb7690306a5febbabde2f016
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726674"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096035"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
 Возвращает полный путь и имя исходного файла документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,12 +42,12 @@ HRESULT GetPathName(
  [out] Строка, содержащая длинное имя.  
   
  `pfIsOriginalFile`  
- [out] Флаг, значение true, если `pbstrLongName` ссылается на исходный файл для документа, значение false в противном случае.  
+ [out] Флаг то есть значение true, если `pbstrLongName` ссылается на исходный файл для документа, значение false в противном случае.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Файл источника не может быть создано или определить.|  

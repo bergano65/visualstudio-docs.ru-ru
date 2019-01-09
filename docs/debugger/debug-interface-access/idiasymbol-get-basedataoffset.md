@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_baseDataOffset | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_baseDataOffset | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 014c90f32a5d46f7d3937953ee0683be7d8c968b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0db92804ac10a011bcb7697da5e8899406295acb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923891"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
 Получает смещение базовых данных.  
@@ -34,7 +32,7 @@ HRESULT get_baseDataOffset(
  [out] Указатель на `DWORD` , содержащий смещение базовых данных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -2,7 +2,6 @@
 title: Команда Set Current Stack Frame
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentstackframe
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f8c762f16eb4a784ccc2cffb5bfa27d215370e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6a4fa39ad3ce07792819544738185164fef8c985
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844529"
 ---
 # <a name="set-current-stack-frame-command"></a>Команда Set Current Stack Frame
 Позволяет задать определенный кадр стека.
@@ -34,7 +33,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>Аргументы
  `index`
 
- Обязательно. Выбирает кадр стека по индексу.
+ Обязательный. Выбирает кадр стека по индексу.
 
 ## <a name="example"></a>Пример
 
@@ -42,9 +41,9 @@ Debug.SetCurrentStackFrame index
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

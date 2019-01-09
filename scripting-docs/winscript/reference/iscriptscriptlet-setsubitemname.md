@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Документы Microsoft
+title: IScriptScriptlet::SetSubItemName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733874"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097725"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Задает идентификатор последнего в полное имя узла объекта сценариев.  
+Задает идентификатор последнего в полное имя узла объекта скриптлета.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,14 +38,14 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Параметры  
  `psz`  
- Если узел для полного имени сценариев имеет более одного уровня `psz` адрес буфера идентификатора на втором уровне.  
+ Если узел для полного имени скриптлета имеет более одного уровня `psz` — это адрес буфера идентификатора на втором уровне.  
   
- Если узел для полного имени сценариев имеет один уровень `psz` адрес буфера идентификатора на первом уровне.  
+ Если узел для полного имени скриптлета имеет один уровень `psz` — это адрес буфера идентификатора на первом уровне.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

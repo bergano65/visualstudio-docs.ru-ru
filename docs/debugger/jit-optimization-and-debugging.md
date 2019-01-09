@@ -1,8 +1,6 @@
 ---
 title: JIT-компилятора отладка и оптимизация | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841269"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-отладка и оптимизация
 **Принципы оптимизации работы в .NET:** Если вы пытаетесь отладить код, проще при что код является **не** оптимизированных для операций. Это обусловлено тем, когда код оптимизирован, компилятор и среда выполнения внесите изменения порожденного кода ЦП, что он выполняется быстрее, но имеет менее прямое сопоставление для исходного кода. Это означает, что отладчики часто не даст значение локальных переменных и пошаговое выполнение кода, и точки останова не может работать должным образом.
@@ -48,7 +46,7 @@ ms.locfileid: "53646578"
 1. В ситуациях, где для присоединения отладчика к уже запущенному процессу этот параметр не повлияет на модули, которые уже были загружены во время отладчик был подключен.
 2. Этот параметр не влияет на библиотеки DLL, которые были предварительно скомпилированы (называемые также технология Ngen) в машинный код. Тем не менее использование предварительно скомпилированного кода можно отключить, запустив процесс со средой, присваиваемого переменной «COMPlus_ZapDisable» "1".
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
  [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)   
  [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

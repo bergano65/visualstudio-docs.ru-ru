@@ -1,8 +1,6 @@
 ---
-title: Прочие диалоговые окна | Документы Microsoft
-ms.custom: ''
+title: Прочие диалоговые окна | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, Spy++
@@ -13,15 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957aa30141a68335e72359cd3ea55b5a59950461
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a50cc84f4bbe7feb266f7e6c412dfcff3f2911ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905128"
 ---
 # <a name="other-dialog-boxes"></a>Прочие диалоговые окна
-Этим диалоговым окнам отображают сведения о программе Spy ++.  
+Этим диалоговым окнам отображения сведений о программе Spy ++.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [О Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
@@ -32,10 +30,10 @@ ms.locfileid: "31480307"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Справочник по Spy++](../debugger/spy-increment-reference.md)  
- Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.  
+ Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.  
   
  [Использование Spy++](../debugger/using-spy-increment.md)  
- Представляет средство Spy ++ и объясняется, как использовать.  
+ Представлены средства Spy ++ и рассказывается, как он может использоваться.  
   
  [Представления Spy++](../debugger/spy-increment-views.md)  
- Описание представления деревьев Spy ++ окон, сообщений, процессов и потоков.
+ Описание представления дерева Spy ++ окон, сообщений, процессов и потоков.

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Документы Microsoft
+title: IDebugApplicationNodeEvents::onRemoveChild | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725994"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092212"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Обрабатывает событие, когда дочерний узел удаляется из объекта узла отладки приложения.  
+Обрабатывает событие, когда дочерний узел удаляется из объект узла отладки приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,7 +48,7 @@ HRESULT onRemoveChild(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие, когда дочерний узел удаляется из объекта узла отладки приложения.  
+ Этот метод обрабатывает событие, когда дочерний узел удаляется из объект узла отладки приложения.  
   
  Объекты, реализующие `IDebugApplicationNode` интерфейс вызова этого события.  
   

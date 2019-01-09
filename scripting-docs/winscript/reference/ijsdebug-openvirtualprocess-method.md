@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebug::OpenVirtualProcess | Документы Microsoft
+title: Метод IJsDebug::OpenVirtualProcess | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727364"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093994"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>Метод IJsDebug::OpenVirtualProcess
 Фабричный метод, используемый для создания нового объекта виртуального процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -39,10 +39,10 @@ ms.locfileid: "24727364"
   
 #### <a name="parameters"></a>Параметры  
  `processId`  
- [in] Идентификатор процесса для присоединения отладчика.  
+ [in] Идентификатор процесса, чтобы присоединить отладчик.  
   
  `runtimeJsBaseAddress`  
- [in] Базовый адрес, по которому загрузки среды выполнения JavaScript в целевом процессе.  
+ [in] Базовый адрес, по которому среда выполнения JavaScript загружена в целевом процессе.  
   
  `pDataTarget`  
  [in] Предоставленный интерфейс для запроса состояния процесса отладчика.  
@@ -53,7 +53,7 @@ ms.locfileid: "24727364"
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает E_JsDEBUG_MISMATCHED_RUNTIME, если Jscript9diag и Jscript9 не совпадают.  
+ Возвращает E_JsDEBUG_MISMATCHED_RUNTIME при Jscript9diag и Jscript9 не совпадают.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

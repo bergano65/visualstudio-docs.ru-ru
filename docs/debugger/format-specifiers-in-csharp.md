@@ -1,8 +1,6 @@
 ---
 title: Описатели в отладчике формата (C#) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899018"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели в формата C# в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата. Можно также использовать описатели формата в **Интерпретация** окне **команда** окно в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и в окнах исходного кода. Если вы приостановите выполнение выражения в этих окон, результат будет отображаться в [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанный формат отображения.  

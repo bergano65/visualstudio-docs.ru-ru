@@ -1,5 +1,5 @@
 ---
-title: 'IScriptScriptlet:: GetSimpleEventName | Документы Microsoft'
+title: 'IScriptScriptlet:: GetSimpleEventName | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec90d2ebdf58f60ba88b90a38830b5df329dead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01d20df26f2f3f1d2e7735fed5292b29da528ace
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733694"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093276"
 ---
-# <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet::GetSimpleEventName
-Возвращает имя простых событий, связанный с пользователи. Это имя одного слова, которое не содержит пробелов.  
+# <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
+Возвращает имя простых событий, который связан с пользователи. Это имя одного слова, которое не содержит пробелов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSimpleEventName(  
    BSTR               *pbstr  
 );  
@@ -38,12 +38,12 @@ HRESULT GetSimpleEventName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstr`  
- [out] Буфер, содержащий имя простого события, связанные с `IScriptScriptlet` объекта.  
+ [out] Буфер, содержащий имя простых событий, связанный с `IScriptScriptlet` объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

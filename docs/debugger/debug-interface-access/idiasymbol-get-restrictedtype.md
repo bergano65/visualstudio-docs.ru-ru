@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_restrictedType | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_restrictedType | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7668f01644f65dd9af47dc4671720119fdc0b628
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9753fa8d500fcd1b38593b5b2f1f985452340dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953174"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Указывает ли `this` указатель будет отмечена как ограниченным доступом.  
+Указывает ли `this` указатель помечается как ограниченным доступом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT get_restrictedType(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли `this` указатель будет отмечена как ограниченные.  
+ [out] Указатель на `BOOL` , указывает ли `this` указатель помечается как ограниченный.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

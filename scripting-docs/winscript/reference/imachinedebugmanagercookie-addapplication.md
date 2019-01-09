@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication | Документы Microsoft
+title: IMachineDebugManagerCookie::AddApplication | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728634"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090666"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Добавляет приложение с запуском список приложений.  
+Добавляет приложению выполнения список приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,23 +40,23 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Параметры  
  `pda`  
- [in] Приложения с запуском список приложений.  
+ [in] Приложению выполнения список приложений.  
   
  `dwDebugAppCookie`  
- [in] Файл cookie, который идентифицирует приложение отладки.  
+ [in] Файл cookie, идентифицирующий приложение отладки.  
   
  `pdwAppCookie`  
- [out] Файл cookie, который используется для удаления из диспетчера отладки приложения.  
+ [out] Файл cookie, который используется для удаления существующего приложения с диспетчером отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается диспетчером процесс отладки всякий раз, когда `IProcessDebugManager::AddApplication` вызывается.  
+ Этот метод вызывается диспетчером отладки процессов каждый раз, когда `IProcessDebugManager::AddApplication` вызывается.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)   

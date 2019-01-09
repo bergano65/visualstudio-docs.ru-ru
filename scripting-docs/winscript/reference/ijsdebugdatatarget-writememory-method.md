@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::WriteMemory | Документы Microsoft
+title: Метод IJsDebugDataTarget::WriteMemory | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727904"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089288"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>Метод IJsDebugDataTarget::WriteMemory
-Считывает память целевого процесса.  
+Читает содержимое памяти целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,18 +38,18 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Базовый адрес для записи в память целевого процесса.  
+ [in] Базовый адрес, по которым следует записывать память целевого процесса.  
   
  `pMemory`  
- [in] Данные будут записываться в адресное пространство указанного процесса.  
+ [in] Данные для записи в адресном пространстве указанного процесса.  
   
  `size`  
- [in] Число байтов для записи в процессе.  
+ [in] Число байтов для записи в текущий процесс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Прежде чем произойдет передача данных, система проверяет, что все данные в базовый адрес и памяти указанного размера будут доступны для записи, и если он недоступен, функция вызывает ошибку E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Прежде чем происходит передача данных, система проверяет, что все данные в базовый адрес и память указанного размера доступны для записи, и если он недоступен, функция вызывает ошибку E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

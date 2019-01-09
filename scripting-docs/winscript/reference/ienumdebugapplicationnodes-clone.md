@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Clone | Документы Microsoft
+title: IEnumDebugApplicationNodes::Clone | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab58a36110c0f0321bbf490a105bff9cddad009
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fb547e1032be03a6b1e79894dafda7442796592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090835"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
-Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.  
+Создает перечислитель с тем же состоянием, что и текущий перечислитель.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -48,7 +48,7 @@ HRESULT Clone(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.  
+ Этот метод создает перечислитель, который с тем же состоянием, что и текущий перечислитель.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

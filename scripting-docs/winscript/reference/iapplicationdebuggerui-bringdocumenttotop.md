@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Документы Microsoft
+title: IApplicationDebuggerUI::BringDocumentToTop | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725314"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096256"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Переводит окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
+Открывает окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Документ не известен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод переводит окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
+ Этот метод открывает окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

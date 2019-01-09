@@ -1,8 +1,6 @@
 ---
 title: Введение в Spy ++ | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: HT
+ms.openlocfilehash: 4126f4fde8109b9d67b3ad6a69c97395ddf1ef40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950794"
 ---
 # <a name="introducing-spy"></a>Введение в Spy++
 Spy++ позволяет выполнять следующие задачи:  
@@ -53,7 +51,7 @@ Spy++ позволяет выполнять следующие задачи:
 > [!NOTE]
 >  Хотя имя файла программы Spy++ (64-разр.) содержит единицу "amd", она выполняется в любой 64-разрядной операционной системе Windows.  
   
-## <a name="see-also"></a>См. также 
+## <a name="see-also"></a>См. также раздел 
  [Практическое руководство. Запуск Spy++](../debugger/how-to-start-spy-increment.md)   
  [Использование Spy++](../debugger/using-spy-increment.md)   
  [Представления Spy++](../debugger/spy-increment-views.md)   

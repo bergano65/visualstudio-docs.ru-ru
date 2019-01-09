@@ -1,5 +1,5 @@
 ---
-title: Метод IActiveScriptTraceInfo::StopScriptTracing | Документы Microsoft
+title: Метод IActiveScriptTraceInfo::StopScriptTracing | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3fb0f77ff84453eaf202d09d05cd926cf0e7c2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74e776d066d99a351d8dfe49a21df929ab10a996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724954"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089015"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>Метод IActiveScriptTraceInfo::StopScriptTracing
-Трассировка останавливается скриптов.  
+Трассировка сценариев останавливается.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT StopScriptTracing(void); }  
 ```  
   
@@ -34,6 +34,6 @@ HRESULT StopScriptTracing(void); }
 ## <a name="return-value"></a>Возвращаемое значение  
  Ниже приведены возможные возвращаемые значения для этого метода.  
   
-1.  Значение S_OK: успех.  
+1.  ЗНАЧЕНИЕ S_OK: Выполнено.  
   
-2.  Значение E_NOTIMPL: Не реализовано.
+2.  E_NOTIMPL: Не реализовано.

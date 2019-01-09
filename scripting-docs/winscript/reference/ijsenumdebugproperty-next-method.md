@@ -1,5 +1,5 @@
 ---
-title: Метод IJsEnumDebugProperty::Next | Документы Microsoft
+title: Метод IJsEnumDebugProperty::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728824"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086779"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>Метод IJsEnumDebugProperty::Next
-Считывает свойства для этого объекта.  
+Считывает свойства для данного объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG count,  
    IJsDebugProperty **ppDebugProperty,  
@@ -41,7 +41,7 @@ HRESULT Next(
  [in] Число свойств для чтения.  
   
  `ppDebugProperty`  
- [out] Объект, представляющий свойства браузера.  
+ [out] Объект, представляющий обозреватель свойств.  
   
  `pActualCount`  
  [out] Фактическое число свойств объекта.  

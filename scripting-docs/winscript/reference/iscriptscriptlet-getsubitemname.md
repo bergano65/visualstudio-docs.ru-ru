@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Документы Microsoft
+title: IScriptScriptlet::GetSubItemName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733704"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096646"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Возвращает последний идентификатор в полное имя узла объекта сценариев.  
+Возвращает последний идентификатор в полное имя узла объекта скриптлета.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -38,14 +38,14 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstr`  
- [out] Если узел для полного имени сценариев имеет более одного уровня `pbstr` возвращает адрес буфера идентификатора на втором уровне.  
+ [out] Если узел для полного имени скриптлета имеет более одного уровня `pbstr` возвращает адрес буфера идентификатора на втором уровне.  
   
- Если узел для полного имени сценариев имеет один уровень `pbstr` возвращает адрес буфера идентификатора на первом уровне.  
+ Если узел для полного имени скриптлета имеет один уровень `pbstr` возвращает адрес буфера идентификатора на первом уровне.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

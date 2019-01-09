@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b0ab4b0d006183f6be3c42626c022d45a2de4ce
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c6b2d0fd5618c0c0f48c05bc5246170f81a800a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962529"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Синхронизированные параметры в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,5 +61,5 @@ ms.locfileid: "53067133"
 > [!WARNING]
 >  Параметры не синхронизируются между Visual Studio 2013 и Visual Studio 2015. При первом открытии Visual Studio 2015 параметры переносятся из Visual Studio 2013, но после этого их нельзя будет перенести обратно в Visual Studio 2013.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)

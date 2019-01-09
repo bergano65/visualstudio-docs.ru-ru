@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Документы Microsoft
+title: ISimpleConnectionPoint::Unadvise | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733904"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089275"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 Завершает вспомогательное соединение, установленное ранее при помощи `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Параметры  
  `dwCookie`  
- [in] Маркер подключения для завершения, возвращенный из `ISimpleConnectionPoint::Advise`.  
+ [in] Маркер подключения для прерывания, возвращенный `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -48,7 +48,7 @@ HRESULT Unadvise(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Если вспомогательное соединение закрывается, вызовы для точки подключения `Release` метод в указателе, сохраненный для подключения во время `ISimpleConnectionPoint::Advise` метод. Которые вызывают обратная `AddRef` , было выполнено в течение `ISimpleConnectionPoint::Advise` когда точка подключения вызывает приемником уведомлений `QueryInterface`.  
+ При завершении вспомогательное соединение, подключение точки вызовы `Release` метод на указатель, который был сохранен для подключения во время `ISimpleConnectionPoint::Advise` метод. Которые вызывают Обращает `AddRef` , было выполнено в течение `ISimpleConnectionPoint::Advise` когда точка подключения вызывает приемнике уведомлений `QueryInterface`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)
