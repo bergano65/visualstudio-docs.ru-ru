@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление схем классов в проекты (конструктор классов)
+title: Как выполнить Добавление диаграмм классов в проекты (конструктор классов)
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901302"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684322"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Практическое руководство. Добавление схем классов в проекты
+# <a name="how-to-add-class-diagrams-to-projects"></a>Как выполнить Добавление диаграмм классов в проекты
 
 Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект C# , Visual Basic или C++ диаграмму классов. Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.
 
@@ -61,7 +61,7 @@ ms.locfileid: "42901302"
 
 В **обозревателе решений** откройте контекстное меню файла класса, щелкнув правой кнопкой мыши, и выберите пункт **Перейти к диаграмме классов**.
 
-- или -
+-или-
 
 В **представлении классов** откройте контекстное меню пространства имен или типа и выберите пункт **Просмотр схемы класса**.
 
@@ -77,7 +77,5 @@ ms.locfileid: "42901302"
 ## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Создание типов с помощью конструктора классов](how-to-create-types.md)
-- [Практическое руководство. Просмотр существующих типов](how-to-view-existing-types.md)
+- [Практическое руководство. Просмотр существующих типов в конструкторе классов](how-to-view-existing-types.md)
 - [Разработка и просмотр классов и типов](designing-and-viewing-classes-and-types.md)
-- [Просмотр типов и отношений](viewing-types-and-relationships.md)
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
