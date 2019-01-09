@@ -2,7 +2,6 @@
 title: -Project (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /project Devenv switch
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c73167c5529eda0f97f414e7c0e2d76083b7bb0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921618"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Указывает отдельный проект в заданной конфигурации решения для сборки, очистки, перестроения или развертывания.
@@ -53,19 +52,19 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  `SolnConfigName`
 
- Обязательно. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.
+ Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.
 
  `SolutionName`
 
- Обязательно. Полный путь и имя для файла решения.
+ Обязательный. Полный путь и имя для файла решения.
 
  /project `ProjName`
 
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+ Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
 
  /projectconfig `ProjConfigName`
 
- Необязательный. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.
+ Необязательный параметр. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.
 
 ## <a name="remarks"></a>Примечания
 
@@ -82,7 +81,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)

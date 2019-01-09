@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850142"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Как выполнить просмотр времени ответа веб-страницы в нагрузочном тесте с помощью анализатора тестовой нагрузки
 
@@ -45,7 +44,7 @@ ms.locfileid: "53068099"
 
 3. Данные для каждой страницы отображаются в таблице. В этой таблице, как правило, содержатся следующие столбцы.
 
-   |Заголовок столбца|Описание:|
+   |Заголовок столбца|Описание|
    |-|-|
    |**Страница**|Имя веб-страницы.|
    |**Сценарий**|Имя сценария. Этот столбец важен, если в веб-тесте производительности есть несколько сценариев.|
@@ -96,5 +95,5 @@ ms.locfileid: "53068099"
 ## <a name="see-also"></a>См. также
 
 - [Анализ результатов и ошибок нагрузочного тестирования в представлении таблиц](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Практическое руководство: обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)
+- [Практическое руководство. обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
