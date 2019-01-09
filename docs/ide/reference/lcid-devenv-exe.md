@@ -2,7 +2,6 @@
 title: -LCID (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - language default
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a97874ae1267677c5055e84650a839068479fc10
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852077"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Задает язык по умолчанию, используемый для текста, валюты и других значений в интегрированной среде разработки (IDE).
@@ -63,7 +62,7 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/international-settings-environment-options-dialog-box.md)
