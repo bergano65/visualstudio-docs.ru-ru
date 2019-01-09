@@ -1,8 +1,6 @@
 ---
 title: Как выполнить Инструментирование службы .NET Framework и сбор данных об использовании памяти с помощью командной строки профилировщика | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 804149e70331c612511baae63dd530fff7f0cabc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904196"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Как выполнить Инструментирование службы .NET Framework и сбор данных об использовании памяти с помощью командной строки профилировщика
 Эта статья описывает использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью инструментирования службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и сбора данных об использовании памяти. Вы можете собирать данные о выделении памяти или данные как о времени существования объекта, так и о выделении памяти.  

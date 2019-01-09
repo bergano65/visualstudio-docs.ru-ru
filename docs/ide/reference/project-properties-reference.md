@@ -2,7 +2,6 @@
 title: Справочник по свойствам проектов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
@@ -13,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f0adad956786f3096174460aabd007e0cb8592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cfbe0c602264da31b89add3e2e6ca1124f62a52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891648"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.
 
 ## <a name="project-properties-pages"></a>Страницы свойств проекта
 
-| Заголовок | Описание: |
+| Заголовок | Описание |
 | - | - |
 | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
@@ -39,6 +38,6 @@ ms.locfileid: "49897866"
 | [Страница "Безопасность" в конструкторе проектов](../../ide/reference/security-page-project-designer.md) | Эта страница позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
 | [Страница "Подписывание" в конструкторе проектов](../../ide/reference/signing-page-project-designer.md) | Эта страница позволяет подписывать манифесты приложения и развертывания, а также подписывать сборки. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)
