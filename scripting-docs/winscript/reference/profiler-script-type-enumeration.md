@@ -1,5 +1,5 @@
 ---
-title: Перечисление PROFILER_SCRIPT_TYPE | Документы Microsoft
+title: Перечисление PROFILER_SCRIPT_TYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 279969ec0b50f705e39d2e29e700adc1e833ead3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac387af4601ff822982c10e61f9813b2db7e8047
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734124"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086914"
 ---
 # <a name="profilerscripttype-enumeration"></a>Перечисление PROFILER_SCRIPT_TYPE
-Указывает тип сценария.  
+Указывает тип скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef enum {  
     PROFILER_SCRIPT_TYPE_USER,  
     PROFILER_SCRIPT_TYPE_DYNAMIC,  
@@ -39,7 +39,7 @@ typedef enum {
   
 ## <a name="members"></a>Члены  
   
-|Член|Описание|  
+|Член|Описание:|  
 |------------|-----------------|  
 |PROFILER_SCRIPT_TYPE_USER|Указывает скрипт, написанный пользователем код.|  
 |PROFILER_SCRIPT_TYPE_DYNAMIC|Указывает код сценария, который создается динамически во время выполнения.|  
@@ -47,7 +47,7 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_DOM|Задает вызов в объектной модели документа (DOM) Internet Explorer, например, вызов `document.getElementById` метод.|  
   
 ## <a name="see-also"></a>См. также  
- [Константы профилировщика активных скриптов, перечисления и структуры](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [Активных скриптов Profiler константы, перечисления и структуры](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
  [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
  [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

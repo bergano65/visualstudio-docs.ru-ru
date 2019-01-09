@@ -1,8 +1,6 @@
 ---
 title: Возможности более отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 793cbfdc1e56a8dfdc986c08d4aaad1c5f208218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822682"
 ---
 # <a name="more-debugging-features"></a>Дополнительные возможности отладки
 В этом разделе содержится описание дополнительных функций, которые можно использовать с отладчиком Visual Studio.  
   
- Список советов и рекомендаций для облегчения отладки быстрее и проще, см. в разделе [упрощению](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/).  
+ Список советов и рекомендаций по упрощению и ускорению отладки см. в соответствующей [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/).  
   
 ## <a name="additional-features"></a>Дополнительные функции  
  [Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)  
@@ -40,7 +38,7 @@ ms.locfileid: "44282707"
  [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Описание JIT–отладки, способной автоматически запускать отладчик при аварийном завершении программы во время выполнения вне Visual Studio.  
   
- [Пошаговое руководство. Отладка во время разработки](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Пошаговое руководство: Debug at design time in Visual Studio (C#, C++, Visual Basic, F#)](../debugger/walkthrough-debugging-at-design-time.md) (Пошаговое руководство. Отладка во время разработки в Visual Studio (C#, C++, Visual Basic, F#)  
  Использование окна интерпретации Visual Studio для выполнения функции или подпрограммы, когда приложение не запущено. 
   
  [Изменить и продолжить](../debugger/edit-and-continue.md)  

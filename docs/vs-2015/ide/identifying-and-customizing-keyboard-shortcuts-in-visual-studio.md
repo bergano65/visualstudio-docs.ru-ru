@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931181"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ ms.locfileid: "53054003"
      Чтобы использовать сочетание в любом контексте, выберите **Глобальная**. Вы можете выбрать любое сочетание клавиш, которое не используется в другом редакторе (например, как глобальное). В противном случае будет использование сочетание клавиш редактора.
 
     > [!NOTE]
-    >  Не удается назначить следующие ключи как часть сочетания клавиш в **Global**: Печать Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, клавишу с логотипом Windows, ключ приложения, клавиши со стрелками или ввод; Num Lock, удаления или очистки на цифровой клавиатуре; или Ctrl + Alt + Delete.
+    >  В **глобальном** контексте невозможно назначать сочетания клавиш, включающие следующие клавиши: Печать Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, клавишу с логотипом Windows, ключ приложения, клавиши со стрелками или ввод; Num Lock, удаления или очистки на цифровой клавиатуре; или Ctrl + Alt + Delete.
 
 6.  В поле **Введите сочетание клавиш** введите требуемое сочетание клавиш.
 
@@ -149,5 +148,5 @@ ms.locfileid: "53054003"
 
      ![Импорт только настроенных сочетаний клавиш](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

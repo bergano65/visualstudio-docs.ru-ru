@@ -2,7 +2,6 @@
 title: Написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938177"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
@@ -123,5 +122,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка проверок во время выполнения машинного кода](../debugger/native-run-time-checks-customization.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6b50bbaaf7e5b018709f3cf0dece3c0ae38410f8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2e21feda11ef4d3405fa1488740fefe7c7238dc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942022"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Как выполнить Устранение неполадок с неудачными обновлениями Visual Studio проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,5 +60,5 @@ ms.locfileid: "53064800"
 
    Если вы хотите, чтобы проект выполнялся в обновленной версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], необходимо обновить ссылки проекта, а также любые операторы `Imports` или `Using`, вызывающие эти ссылки. Если проект загружается в интегрированной среде разработки, можно обновить ссылки с помощью **Обозревателя решений** или **Диспетчера ссылок**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Или обновления (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [преобразование в ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

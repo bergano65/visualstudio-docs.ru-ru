@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Документы Microsoft
+title: IActiveScriptStringCompare::StrComp | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725074"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090107"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Определяет метод сравнения строк для обработчика сценариев.  
+Определяет метод сравнения строк для обработчика скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -58,13 +58,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_INVALIDARG`|Аргумент является недопустимым.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации).|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается каждый раз при выполнении сравнения строк.  
+ Этот метод вызывается каждый раз, выполняемого сравнения строк.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как перегрузки функции сравнения строк. Перегрузка является допустимым при использовании [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) для задания SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ В следующем примере показано, как попытка перегрузки функции сравнения строк. При использовании перегрузки допускается [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) присвоить SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

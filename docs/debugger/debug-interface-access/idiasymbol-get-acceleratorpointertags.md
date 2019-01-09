@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_acceleratorPointerTags | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875463"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Возвращает все значения тега указатель сочетаний клавиш, соответствующие функции C++ AMP заглушки сочетаний клавиш.  
+Возвращает все значения тега указатель сочетаний клавиш, которые соответствуют на функцию C++ AMP accelerator заглушки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,16 +34,16 @@ HRESULT get_acceleratorPointerTags(
  [in] Размер выходного массива `pPointerTags`.  
   
  `pcnt`  
- [out] Счетчик тегов указатель сочетаний клавиш в C++ AMP функции заглушки сочетаний клавиш.  
+ [out] Число тегов указатель сочетаний клавиш в функцию C++ AMP accelerator заглушки.  
   
  `pPointerTags`  
- [out] Объект `DWORD` указатель на массив, который заполняется значениями тег указателей сочетаний клавиш в C++ AMP функции заглушки сочетаний клавиш.  
+ [out] Объект `DWORD` указатель на массив, заполненный со значениями тегов accelerator указателя в функцию C++ AMP accelerator заглушки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается для `IDiaSymbol` интерфейс, который соответствует функции C++ AMP заглушки сочетаний клавиш.  
+ Этот метод вызывается на `IDiaSymbol` интерфейс, который соответствует функции заглушки accelerator C++ AMP.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

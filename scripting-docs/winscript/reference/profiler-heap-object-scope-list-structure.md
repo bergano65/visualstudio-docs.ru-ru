@@ -1,5 +1,5 @@
 ---
-title: Структура PROFILER_HEAP_OBJECT_SCOPE_LIST | Документы Microsoft
+title: Структура PROFILER_HEAP_OBJECT_SCOPE_LIST | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734264"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088573"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Структура PROFILER_HEAP_OBJECT_SCOPE_LIST
-Эта структура не сопоставлено только объекты функций. Область списка представляет нерабочего времени для функции как список областей, где каждая область видимости — кучи объекта со списком связанного свойства, представляющий переменные в каждой заданной области. В некоторых случаях имена объектов в области не становятся доступны и их индекс в списке свойств доступен.  
+Эта структура не сопоставлено только объекты-функции. Область списка представляет замыкание для функции в виде списка областей, где каждая область видимости — מבתוךע heap со списком связанного свойства, представляющий переменные в каждой заданной области. В некоторых случаях доступна имена объектов в том, что область могут быть недоступны и их индекс в список свойств.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   

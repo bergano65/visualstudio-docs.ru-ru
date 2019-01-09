@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1c7a9d0e4df6252e05695ed1dcbced84ae7c0e81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882647"
 ---
 # <a name="visual-studio-template-reference"></a>Справочник по шаблонам Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +36,10 @@ ms.locfileid: "53059925"
  <xref:Microsoft.VisualStudio.TemplateWizard> Описывает интерфейс <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> и связанные с ним типы.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Практическое руководство: создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+ [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 
- [Практическое руководство: создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+ [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
 
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 
- [Практическое руководство: создание начальных наборов](../ide/how-to-create-starter-kits.md)
+ [Практическое руководство. создание начальных наборов](../ide/how-to-create-starter-kits.md)

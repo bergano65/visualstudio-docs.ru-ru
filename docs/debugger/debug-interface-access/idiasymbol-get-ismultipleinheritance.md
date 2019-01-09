@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isMultipleInheritance | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isMultipleInheritance | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7f0d789527f874f3d3b80b44c58347d1cd84f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e1c55ddf07f033971d23c0dd568281a005966400
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951749"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Указывает, является ли `this` указатель указывает на данные-член с множественным наследованием.  
+Указывает, является ли `this` указатель указывает на элемент данных с множественным наследованием.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT get_isMultipleInheritance(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли `this` указатель указывает на данные-член с множественным наследованием.  
+ [out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с множественным наследованием.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_targetOffset | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c044ba749c5fae425fab11cdedecc9eb361fffe3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 17e7ae89bb24fbd2315ba902fa6fd3967f26bb0d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848078"
 ---
 # <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
 Извлекает раздел смещения преобразователь целевого объекта.  
@@ -27,7 +25,7 @@ ms.locfileid: "49904847"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_targetOffset (   
+HRESULT get_targetOffset (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_targetOffset (
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

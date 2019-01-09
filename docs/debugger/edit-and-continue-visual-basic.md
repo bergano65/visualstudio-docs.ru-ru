@@ -1,8 +1,6 @@
 ---
 title: Изменить и продолжить (Visual Basic) | Документация Майкрософт
-ms.custom: ''
 ms.date: 10/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 290216d9baa2692b1cb05741f3b1afc22c74988c
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
-ms.translationtype: HT
+ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838025"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 "Изменить и продолжить" — это режим [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.  

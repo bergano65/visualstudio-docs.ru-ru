@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_types | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 94ff65cd9218ce26964d4dbb0da6fe2c3ffcae36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868015"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 Извлекает массив типов специфичные для компилятора для этого символа.  
@@ -27,7 +25,7 @@ ms.locfileid: "49951318"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_types (   
+HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
    IDiaSymbol* types[]  
@@ -50,5 +48,5 @@ HRESULT get_types (
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

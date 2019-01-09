@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Документы Microsoft
+title: IDebugApplication::Close | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725504"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087416"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-В результате этого приложения освободить все ссылки и введите в неактивном состоянии.  
+Вызывает это приложение освободить все ссылки и введите в неактивном состоянии.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Как правило владелец приложения вызывает этот метод при завершении работы приложения.  
+ Как правило, владелец приложения этот метод вызывается при выходе приложения.  
   
  Этот метод вызывает `IApplicationDebugger::onClose` для вызова.  
   

@@ -1,8 +1,6 @@
 ---
-title: Перечисления и структуры | Документы Microsoft
-ms.custom: ''
+title: Перечисления и структуры | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988087"
 ---
 # <a name="enumerations-and-structures"></a>Перечисления и структуры
-Это перечисления и структуры, используемые пакетом SDK для доступа к интерфейсу отладки.  
+Это перечисления и структуры, используемый пакетом SDK для доступа к интерфейсу отладки.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
@@ -34,10 +32,10 @@ ms.locfileid: "31462056"
  Задает базовый тип символа.  
   
  [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)  
- Указывает область видимости (уровень доступа) для функций-членов и переменных.  
+ Задает область видимости (уровень доступа) для функций-членов и переменных.  
   
  [Перечисление CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)  
- Задает соглашение о вызовах для функции.  
+ Определяет соглашение вызова для функции.  
   
  [Перечисление CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)  
  Задает язык исходного кода приложения или связанном модуле.  
@@ -49,16 +47,16 @@ ms.locfileid: "31462056"
  Указывает целевой регистра.  
   
  [Перечисление DataKind](../../debugger/debug-interface-access/datakind.md)  
- Указывает, определенной областью значение данных.  
+ Указывает область конкретного значения данных.  
   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)  
- Указывает тип расположения сведения, содержащиеся в символе.  
+ Указывает тип данных о географическом положении, содержащихся в символе.  
   
  [Перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)  
- Указывает тип для доступа к памяти.  
+ Указывает тип доступа к памяти.  
   
  [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)  
- Задает параметры поиска для символов и имена файлов.  
+ Указывает параметры поиска для символов и имена файлов.  
   
  [Перечисление StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)  
  Указывает тип кадра стека.  
@@ -70,7 +68,7 @@ ms.locfileid: "31462056"
  Определяет преобразователь типов.  
   
  [Перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md)  
- Описывает различные определяемых пользователем типов (UDT).  
+ Описывает различные определяемого пользователем типа (UDT).  
   
 ## <a name="structures"></a>Структуры  
  [Структура DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)  
@@ -83,5 +81,5 @@ ms.locfileid: "31462056"
  [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  Указывает константы, которые доступны в пакете SDK для доступа к интерфейсу отладки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

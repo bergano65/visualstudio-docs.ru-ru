@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebug | Документы Microsoft
+title: Интерфейс IJsDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727684"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089418"
 ---
 # <a name="ijsdebug-interface"></a>Интерфейс IJsDebug
 Точка входа для отладки JavaScript.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   

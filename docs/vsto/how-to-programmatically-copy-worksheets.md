@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, copying
 - Excel [Office development in Visual Studio], copying worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a123191afe2a6aef18e9a4bc64f5bc966db6c479
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4763565e426560178d697723257c1a22bb50ca0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871308"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087780"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Как выполнить Программное копирование листов Excel
   Можно создать копию листа и вставить данный лист перед существующим листом в книге или после него. Если место вставки листа не указано, Excel создает новую книгу, которая будет содержать новый лист.  

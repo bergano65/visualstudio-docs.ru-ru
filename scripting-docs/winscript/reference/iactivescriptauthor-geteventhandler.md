@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Документы Microsoft
+title: IActiveScriptAuthor::GetEventHandler | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7f6cc265815db4acd847270b28c3e744257fa0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645584"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086688"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Возвращает сценарий, который с указанными атрибутами.  
+Возвращает сценария, с указанными атрибутами.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetEventHandler(  
    IDispatch          *pdisp,  
    LPCOLESTR          pszItem,  
@@ -42,24 +42,24 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Параметры  
  `pdisp`  
- [in] `IDispatch` Объект, соответствующий `NamedItem` к которой подключен сценариев.  
+ [in] `IDispatch` Объект, соответствующий `NamedItem` к которому присоединена сценария.  
   
  `pszItem`  
- [in] Адрес буфера верхнего уровня идентификатор сценариев полное имя в узле.  
+ [in] Адрес буфера идентификатор скриптлета полное доменное имя на узле верхнего уровня.  
   
  `pszSubItem`  
- [in] Адрес буфера идентификатор второго уровня с именем полный сценарий в узле. Значение NULL, если имя содержит только один уровень.  
+ [in] Адрес буфера идентификатор второго уровня скриптлета полное имя в узле. Значение NULL, если имя содержит только один уровень.  
   
  `pszEvent`  
  [in] Адрес буфера, который содержит имя события. Сценарий является обработчиком событий для данного события.  
   
  `ppse`  
- [out] Адрес переменной, которая получает указатель на `IScriptEntry` интерфейс сценариев, с указанными атрибутами.  
+ [out] Адрес переменной, которая получает указатель на `IScriptEntry` интерфейс сценария, с указанными атрибутами.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

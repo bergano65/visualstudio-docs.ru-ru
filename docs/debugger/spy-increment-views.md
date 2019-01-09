@@ -1,8 +1,6 @@
 ---
-title: Представления Spy ++ | Документы Microsoft
-ms.custom: ''
+title: Представления Spy ++ | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - views, Spy++
@@ -13,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e444d839336f16287201b6ec043212f401ed75be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ece3caef0619f580441d8b689ae8a89fbd0b91a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886167"
 ---
 # <a name="spy-views"></a>Представления Spy++
 Spy ++ отображает представления в виде дерева окон, сообщений, процессов и потоков, доступных на компьютере.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Представление окон](../debugger/windows-view.md)  
- Отображение дерева доступных окон и элементов управления.  
+ Показывает дерево доступных окон и элементов управления.  
   
  [Представление сообщений](../debugger/messages-view.md)  
  Отображает поток сообщений, связанных с окном, процесса или потока.  
@@ -38,10 +36,10 @@ Spy ++ отображает представления в виде дерева 
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Средства поиска для представлений Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Диалоговые окна, используемый для поиска узлов в окнах представлений Spy ++.  
+ Диалоговым окнам, используемым для поиска узлов в окнах представлений Spy ++.  
   
  [Использование Spy++](../debugger/using-spy-increment.md)  
- Представляет средство Spy ++ и объясняется, как использовать.  
+ Представлены средства Spy ++ и рассказывается, как он может использоваться.  
   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)  
- Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.
+ Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.

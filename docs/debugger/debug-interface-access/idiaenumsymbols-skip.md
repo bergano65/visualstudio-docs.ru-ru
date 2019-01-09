@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSymbols::Skip | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d30183d01e74bf5e6171d98b5df21c678c8dbd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 492748dc54f68d4f888b8cfb6ad8e27ec44435d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918629"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Пропускает заданное число символов в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49937971"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии дополнительные символы, не нужно пропустить.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

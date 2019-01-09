@@ -1,8 +1,6 @@
 ---
 title: Справочник (программный захват) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0046268ff073949db3e3fc0c0753c9008b262c6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836362"
 ---
 # <a name="reference-programmatic-capture"></a>Справочник (программный захват)
 Диагностика графики поддерживает управление функциями записи через API программного захвата. Этот API можно использовать для переключения и добавления сообщений на головной дисплей, инициализации и создания файлов журнала графики, а также для захвата графических данных.  
@@ -24,7 +22,7 @@ ms.locfileid: "49847192"
 
 ### <a name="classes"></a>Классы  
 
-|Имя|Описание|  
+|name|Описание|  
 |----------|-----------------|  
 |[Класс VsgDbg](vsgdbg-class.md)|Представляет интерфейс для программного управления компонентом диагностики графики в приложении.|  
 
@@ -41,5 +39,4 @@ ms.locfileid: "49847192"
 | Заголовок | Описание |
 | - | - |
 | [Capturing Graphics Information](capturing-graphics-information.md) | Показывает, как захватывать графическую информацию из приложения DirectX для использования инструментов диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], помогающих выявлять проблемы отрисовки. |
-| [Обзор набора средств Visual Studio для Unity](overview-of-visual-studio-graphics-diagnostics.md) | Показывает, каким образом диагностика графики помогает отлаживать ошибки отрисовки в играх и приложениях DirectX. |
-
+| [Обзор](overview-of-visual-studio-graphics-diagnostics.md) | Показывает, каким образом диагностика графики помогает отлаживать ошибки отрисовки в играх и приложениях DirectX. |

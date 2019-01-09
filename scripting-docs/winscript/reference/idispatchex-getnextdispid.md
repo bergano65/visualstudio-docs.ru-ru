@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Документы Microsoft
+title: IDispatchEx::GetNextDispID | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728524"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092993"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Перечисляет элементы объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -44,16 +44,16 @@ HRESULT GetNextDispID(
   
 |Значение|Значение|  
 |-----------|-------------|  
-|fdexEnumDefault|Запросы, что объект перечисляет элементы по умолчанию. Объект может перечислить любого набора элементов.|  
-|fdexEnumAll|Запросы, что объект перечисляет все элементы. Объект может перечислить любого набора элементов.|  
+|fdexEnumDefault|Запросы, что объект перечисляет элементы по умолчанию. Объект может перечислить любой набор элементов.|  
+|fdexEnumAll|Запросы, что объект перечисляет все элементы. Объект может перечислить любой набор элементов.|  
   
  `id`  
- Определяет текущий элемент. Getnextdispid — извлекает элемент из перечисления за первым. Использует getdispid — или предыдущим вызовом getnextdispid — для получения идентификатора. Значение DISPID_STARTENUM используется для получения первого идентификатора первого элемента.  
+ Определяет текущий элемент. Getnextdispid — извлекает элемент после этого перечисления. Использует getdispid — или предыдущего вызова getnextdispid — для получения идентификатора. Использует значение DISPID_STARTENUM, чтобы получить первый идентификатор первого элемента.  
   
  `pid`  
- Адрес переменной DISPID, которая получает идентификатор следующего элемента в перечислении.  
+ Адрес переменной DISPID, получающий идентификатор следующего элемента в перечислении.  
   
- Если удаляется элемент `DeleteMemberByName` или `DeleteMemberByDispID`, `DISPID` должен оставаться действительным для `GetNextDispID`.  
+ Если удаляется элемент `DeleteMemberByName` или `DeleteMemberByDispID`, `DISPID` должен быть допустимым для `GetNextDispID`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -61,11 +61,11 @@ HRESULT GetNextDispID(
 |||  
 |-|-|  
 |`S_OK`|Выполнено.|  
-|`S_FALSE`|Выполняется перечисление.|  
+|`S_FALSE`|Выполнено перечисление.|  
   
 ## <a name="example"></a>Пример  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

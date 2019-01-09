@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Документы Microsoft
+title: IActiveScriptSite::GetDocVersionString | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097218"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Извлекает строкой, определяемой узла, который уникально идентифицирует версию текущего документа. Если связанный документ был изменен за пределами области сценариев Windows (как в случае HTML-страницы, редактируемого в блокноте), обработчик скриптов можно сохранить вместе с его сохраненного состояния, принудительная перекомпиляция очередного загрузки скрипта.  
+Извлекает строку, однозначно определяющее текущую версию документа определяемого узла. Если связанный документ был изменен вне области сценариев Windows (как в случае HTML-страницы, редактируемого в блокноте), обработчик сценариев можно сохранить вместе с его сохраненное состояние, принудительной повторной компиляции в следующий раз загрузки скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDocVersionString(  
     BSTR *pbstrVersionString  // address of document version string  
 );  
@@ -38,13 +38,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Параметры  
  `pstrVersionString`  
- [out] Адрес строки версии определяемого узла документа.  
+ [out] Адрес строки версии документа, определенного узла.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_NOTIMPL` , если этот метод не поддерживается.  
+ Возвращает `S_OK` в случае успешного выполнения или `E_NOTIMPL` Если этот метод не поддерживается.  
   
 ## <a name="remarks"></a>Примечания  
- Если `E_NOTIMPL` возвращается, обработчик сценариев следует предполагать, что сценарий находится синхронизацию с документом.  
+ Если `E_NOTIMPL` возвращается, обработчик скриптов следует полагать, что сценарий является синхронизовано с документом.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

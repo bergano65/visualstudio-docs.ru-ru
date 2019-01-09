@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentContextToTop | Документы Microsoft
+title: IDebugDocumentHelper::BringDocumentContextToTop | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665d194abd2eed02096a2295ec0683a03830fb8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dcdccd2b06059e376941808827a499f7a2d1e45
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087858"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Переводит контексте этого документа в верхней части в пользовательском интерфейсе отладчика.  
+Предоставляет контекст этого документа в начало в пользовательском интерфейсе отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,17 +38,17 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Параметры  
  `pddc`  
- Контекст документа для добавления в начало пользовательского интерфейса отладчика.  
+ Контекст документа, чтобы переместить наверх в пользовательском интерфейсе отладчика.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод переводит контексте этого документа в верхней части в пользовательском интерфейсе отладчика.  
+ Этот метод обеспечивает контекст этого документа в начало в пользовательском интерфейсе отладчика.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

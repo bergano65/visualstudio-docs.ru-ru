@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_offsetInUdt | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 286565200cba61e5c2fd990de8d6ddb19c3e5ff1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985752"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 Получает смещение в начале определяемого пользователем типа (UDT) члена в определяемый пользователем тип.  
@@ -27,7 +25,7 @@ ms.locfileid: "49911425"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_offsetInUdt(   
+HRESULT get_offsetInUdt(   
    DWORD* pRetVal)  
 );  
 ```  
@@ -46,11 +44,11 @@ HRESULT get_offsetInUdt(
  Эта функция используется только в локальном записей при оптимизированном построении.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
  Библиотеки DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

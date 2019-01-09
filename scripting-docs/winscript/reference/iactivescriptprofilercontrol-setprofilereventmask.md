@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Документы Microsoft
+title: IActiveScriptProfilerControl::SetProfilerEventMask | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b20b5410af7e48f1b9dadb937e794c1941e74df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 45ded6caec95f5421328be09e299af535765a9c2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724854"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086792"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Задает битовую маску 4 байта, указывающее типы событий, которые должны вызывать обработчик скриптов.  
+Задает битовую маску 4 байтам, указывающее типы событий, которые должны вызываться обработчиком сценариев.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
-RESULT SetProfilerEventMask(  
+```cpp
+HRESULT SetProfilerEventMask(  
     [in] DWORD dwEventMask);  
 ```  
   
@@ -43,7 +43,7 @@ RESULT SetProfilerEventMask(
 |Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включен.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

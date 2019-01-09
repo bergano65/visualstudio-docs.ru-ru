@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetDeferredText | Документы Microsoft
+title: IDebugDocumentHost::GetDeferredText | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ace3bdbfef143a3307d81455788a1e81788cb50b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f2a39122454ea170177aee9ce7b2bbeb7ea248e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727124"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092564"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-Возвращает диапазон символов, которые были добавлены с помощью `IDebugDocumentHelper::AddDeferredText` метод в исходном документе узла.  
+Возвращает диапазон символов, которые были добавлены с помощью `IDebugDocumentHelper::AddDeferredText` метода в исходном документе узла.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDeferredText(  
    DWORD              dwTextStartCookie,  
    WCHAR*             pcharText,  
@@ -42,33 +42,33 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>Параметры  
  `dwTextStartCookie`  
- [in] Определить на уровне узла куки-файл, представляющий начальное положение текста.  
+ [in] Определяемые узла файл cookie, представляющий начальное положение текста.  
   
  `pcharText`  
- [in, out] Текстовый буфер символов. Этот метод не возвращает символы, если этот параметр является `NULL`.  
+ [in, out] Символ текстового буфера. Этот метод не возвращает символы, если этот параметр имеет `NULL`.  
   
  `pstaTextAttr`  
- [in, out] Атрибут буфер символов. Этот метод не возвращает атрибуты, если этот параметр равен `NULL`.  
+ [in, out] Атрибут символьный буфер. Этот метод не возвращает атрибуты, если этот параметр имеет `NULL`.  
   
  `pcNumChars`  
- [in, out] Указывает фактическое число возвращаемых символов и атрибутов. Этот параметр необходимо устанавливать до нуля перед вызовом этого метода.  
+ [in, out] Указывает фактическое количество возвращаемых символов и атрибуты. Этот параметр должен быть установлено в ноль перед вызовом этого метода.  
   
  `cMaxChars`  
- [in] Максимальное число возвращаемых символов.  
+ [in] Максимальное количество возвращаемых символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_NOTIMPL`|Метод не реализован.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод может возвращать `E_NOTIMPL`, если узел не был вызван `IDebugDocumentHelper::AddDeferredText`.  
+ Этот метод может возвращать `E_NOTIMPL`, если узел не вызывает `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Этот метод возвращает текст из исходного документа. Узел не хранить список изменений или других изменений в документ.  
+>  Этот метод возвращает текст из исходного документа. Узел не хранить список изменений, или другие изменения в документе.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Документы Microsoft
+title: IDebugApplication::StartDebugSession | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725444"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086493"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Начинается по умолчанию отладчик интегрированную среду разработки (IDE) и присоединяет сеанс отладки для этого приложения, если один еще не подключен.  
+Запускается по умолчанию отладчик интегрированную среду разработки (IDE) и присоединяет сеанс отладки данного приложения, если один еще не присоединен.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется для выполнения отладки на времени.  
+ Этот метод используется для выполнения отладки just-in-time.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 117e9bff7bbe84fe5f98ee597987582e7981f25b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dea6a5a0a89a2d5b9616742087d3178fc3ac9e63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877342"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Как выполнить Поиск ключа продукта Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,5 +38,5 @@ ms.locfileid: "53051177"
 
     -   В документации или в других материалах, полученных от поставщика, у которого закуплено программное обеспечение.
 
-## <a name="see-also"></a>См. также
- [Практическое руководство: Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [установки Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio и MSDN, руководство по лицензированию](http://go.microsoft.com/fwlink/?LinkId=191417)
+## <a name="see-also"></a>См. также раздел
+ [Практическое руководство. Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [установки Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio и MSDN, руководство по лицензированию](http://go.microsoft.com/fwlink/?LinkId=191417)

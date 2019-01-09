@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentToTop | Документы Microsoft
+title: IDebugDocumentHelper::BringDocumentToTop | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726474"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086961"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Переводит данный документ отладчик в верхнюю часть пользовательского интерфейса.  
+Привносит в этом документе отладчик в верхнюю часть пользовательского интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод запускает отладчик, если он еще не запущен.  
+ Этот метод запускает отладчик, если она еще не запущена.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

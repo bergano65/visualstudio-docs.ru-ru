@@ -3,7 +3,6 @@ title: Советы и рекомендации в отладчике
 description: Дополнительные сведения о некоторых малоизвестных возможности, поддерживаемые отладчиком Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927159"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
@@ -166,5 +165,5 @@ ms.locfileid: "53055229"
 - [7 менее известные взлома для отладки в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 Скрытые жемчужины в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)

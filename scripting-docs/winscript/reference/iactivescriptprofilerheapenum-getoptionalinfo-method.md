@@ -1,5 +1,5 @@
 ---
-title: Метод IActiveScriptProfilerHeapEnum::GetOptionalInfo | Документы Microsoft
+title: Метод IActiveScriptProfilerHeapEnum::GetOptionalInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724684"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088807"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>Метод IActiveScriptProfilerHeapEnum::GetOptionalInfo
-Получает Дополнительные сведения в указанном объекте (из набора объектов кучи, возвращенных [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Получает Дополнительные сведения в указанном объекте (из набора объектов кучи, возвращенные [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Не должен освободить возвращаемый память, назначенная возвращаемых объектов. Вместо этого следует вызвать метод [метод IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Не следует освободить возвращаемый памяти, назначенной возвращаемых объектов. Вместо этого следует вызывать [метод IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   

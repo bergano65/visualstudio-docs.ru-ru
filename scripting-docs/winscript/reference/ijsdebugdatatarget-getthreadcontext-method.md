@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::GetThreadContext | Документы Microsoft
+title: Метод IJsDebugDataTarget::GetThreadContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728184"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090068"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>Метод IJsDebugDataTarget::GetThreadContext
-Извлекает контекст для заданного потока.  
+Возвращает контекст для данного потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -39,16 +39,16 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Поток, выполняющийся в целевом процессе.  
+ [in] Поток, выполняемый в целевом процессе.  
   
  `contextFlags`  
- [in] Задает флаги для контекста. Это то же, что поле ContextFlags контекста (Подробнее см. в разделе winnt.h, поиск CONTEXT_ALL).  
+ [in] Задает флаги контекста. Это же поле ContextFlags контекста (Подробнее см. в разделе winnt.h, ищите CONTEXT_ALL).  
   
  `contextSize`  
- [in] Размер буфера, определяемое pContext.  
+ [in] Размер буфера, заданного pContext.  
   
  `pContext`  
- [out] Получает от платформы структура КОНТЕКСТА в указанный буфер pContext.  
+ [out] Принимает от платформы структура КОНТЕКСТА в буфер, заданного pContext.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
