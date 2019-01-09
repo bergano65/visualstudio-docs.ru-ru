@@ -1,8 +1,6 @@
 ---
 title: Представления данных в памяти .NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516f9addb9dc5ca5f7cc8eac87ec1ce97b0e8415
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95577c4d346ee635fb44e36c88965d322efee308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820164"
 ---
 # <a name="net-memory-data-views"></a>Представления данных в памяти .NET
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, содержащим данные профилирования памяти .NET.  
