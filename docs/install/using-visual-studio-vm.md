@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159975"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425816"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -32,13 +32,13 @@ ms.locfileid: "53159975"
 
 ## <a name="what-configurations-and-versions-are-available"></a>Доступные конфигурации и версии
 
-Образы большинства последних основных версий (Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace. Для каждой основной версии доступна исходная версия (RTW) и последние обновленные версии. Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community. Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows. Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
+Образы большинства последних основных версий (Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace.  Недавно мы добавили поддержку предварительной версии для новой основной версии Visual Studio 2019.  Для каждой выпущенной основной версии доступна исходная версия (RTW) и последние обновленные версии.  Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community.  Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows.  Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019: Предварительная версия (предварительная версия 1)                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
-| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.0      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.18     |
+|    Visual Studio 2019: предварительная версия 1                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
+| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.4      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.20     |
 |   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
 

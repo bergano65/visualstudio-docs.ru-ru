@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159728"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561909"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 
@@ -56,7 +56,7 @@ ms.locfileid: "53159728"
 | `update` | Обновляет установленный продукт. |
 | `repair` | Восстанавливает установленный продукт. |
 | `uninstall` | Удаляет установленный продукт. |
-| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. |
+| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
 
 | **Параметр установки** | **Описание** |
 | ----------------------- | --------------- |

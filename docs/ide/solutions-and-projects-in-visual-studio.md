@@ -11,7 +11,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159676"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425764"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 
@@ -56,11 +55,11 @@ ms.locfileid: "53159676"
 
 ## <a name="solutions"></a>Решения
 
-Проект находится внутри *решения*. Решение содержит один или несколько связанных проектов вместе с информацией о сборке, параметрами окна Visual Studio и любыми прочими файлами, которые не относятся к какому-либо конкретному проекту. Решение описывается текстовым файлом (*SLN*) в собственном уникальном формате; его обычно не изменяют вручную.
+Проект находится внутри *решения*. Несмотря на название, под решением не подразумевается "решение вопроса". Это просто контейнер для одного или нескольких связанных проектов вместе с информацией о сборке, параметрами окна Visual Studio и любыми прочими файлами, которые не относятся к какому-либо конкретному проекту. Решение описывается текстовым файлом (*SLN*) в собственном уникальном формате; его обычно не изменяют вручную.
 
 В Visual Studio используются два типа файлов (*SLN* и *SUO*) для хранения параметров, связанных с решениями:
 
-|Расширение|name|Описание:|
+|Расширение|name|Описание|
 |---------------|----------|-----------------|
 |.SLN|Решение Visual Studio|Организует проекты, элементы проектов и решений в решении.|
 |SUO|Параметры пользователя решения|Сохраняет настройки и параметры уровня пользователя, например точки останова.|

@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование интерфейсов API профилировщика | Документы Майкрософт
+title: Пошаговое руководство. Использование API-интерфейсов профилировщика | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928065"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592642"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 
@@ -32,9 +32,11 @@ ms.locfileid: "49928065"
   
  Профилировщик Visual Studio позволяет ограничить объем собираемых данных. В этом пошаговом руководстве приведен пример ограничения сбора данных с помощью интерфейсов API профилировщика. Профилировщик Visual Studio предоставляет интерфейс API для управления сбором данных из приложения.  
   
- Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+ Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
   
- Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL расположена в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Profiler>.  
+ Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:  
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.  
   
     > [!NOTE]
-    >  При сборке должна использоваться библиотека *Microsoft.VisualStudio.Profiler.dll*, расположенная в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+    >  При сборке должна использоваться библиотека *Microsoft.VisualStudio.Profiler.dll*, расположенная в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.  
   
 2.  Скопируйте и вставьте в проект следующий код:  
   
@@ -151,17 +153,17 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**.  
   
-3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**.  
+3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**  
   
-4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**.  
+4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**  
   
-5.  Введите следующую команду: **VSPerfCmd /globaloff**.  
+5.  Введите следующую команду: **VSPerfCmd /globaloff**  
   
 6.  Выполните программу.  
   
-7.  Введите следующую команду: **VSPerfCmd /shutdown**.  
+7.  Введите следующую команду: **VSPerfCmd /shutdown**  
   
-8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**.  
+8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**  
   
      В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.  
   

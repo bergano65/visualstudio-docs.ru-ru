@@ -2,23 +2,24 @@
 title: Введение в проекты и решения
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159338"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441747"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Сведения о проектах и решениях
 
-В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Это решение является контейнером, который используется для организации одного или нескольких связанных проектов, например библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
+В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
@@ -29,7 +30,7 @@ ms.locfileid: "53159338"
 
 ## <a name="solutions-and-projects"></a>Проекты и решения
 
-Решения — это контейнеры, используемые Visual Studio для упорядочения одного взаимосвязанного проекта или нескольких. При открытии решения в среде Visual Studio она автоматически загружает все содержащиеся в нем проекты.
+Несмотря на название, под решением не подразумевается "решение вопроса". Решения — это просто контейнеры, используемые Visual Studio для упорядочения одного или нескольких связанных проектов. Когда вы открываете решение в среде Visual Studio, все содержащиеся в нем проекты загружаются автоматически.
 
 ### <a name="create-a-solution"></a>Создание решения
 

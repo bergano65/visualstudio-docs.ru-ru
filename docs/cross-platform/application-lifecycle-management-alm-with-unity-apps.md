@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320895"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802570"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps с приложениями Unity
 
@@ -26,7 +26,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="agile-tools"></a>Средства Agile
 
-Справочная ссылка: [О средствах гибкой разработки и гибком управлении проектами](/azure/devops/boards/backlogs/overview?view=vsts) (с использованием Azure Boards или TFS, включая Team Explorer Everywhere)
+Ссылка для справки: [о средствах гибкой разработки и гибком управлении проектами](/azure/devops/boards/backlogs/overview?view=vsts) (с использованием Azure Boards или TFS, включая Team Explorer Everywhere)
 
 Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.
 
@@ -40,9 +40,9 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="modeling"></a>Моделирование
 
-Ссылка: **[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)**
+Ссылка для справки: **[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)**
 
-Общий комментарий: несмотря на то что эти функции разработки являются независимыми от языка программирования или поддерживают языки .NET, например C#, они работают на основе традиционной парадигмы приложений, предусматривающей иерархии объектов и отношения между классами. Разработка игры в среде Unity предполагает совершенно иную парадигму, основанную в частности на отношениях между графическими объектами, звуковыми дорожками, шейдерами, скриптами и другими объектами. По этой причине инструменты создания схем моделирования Visual Studio в целом мало применимы в отношении проектов Unity. В какой-то степени их можно использовать для управления отношениями внутри скриптов C#, но это лишь частная задача.
+Общий комментарий. Несмотря на то что эти функции разработки являются независимыми от языка программирования или поддерживают языки .NET, например C#, они работают на основе традиционной парадигмы приложений, предусматривающей иерархии объектов и отношения между классами. Разработка игры в среде Unity предполагает совершенно иную парадигму, основанную в частности на отношениях между графическими объектами, звуковыми дорожками, шейдерами, скриптами и другими объектами. По этой причине инструменты создания схем моделирования Visual Studio в целом мало применимы в отношении проектов Unity. В какой-то степени их можно использовать для управления отношениями внутри скриптов C#, но это лишь частная задача.
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
@@ -98,13 +98,13 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="improve-code-quality"></a>Улучшите качество кода
 
-Ссылка: **[Улучшение качества кода](../test/improve-code-quality.md)**
+Ссылка для справки: **[Улучшение качества кода](../test/improve-code-quality.md)**
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
-|[Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
+|[Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/hh205279.aspx)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
-|[Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
+|[Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Обозреватель производительности](../profiling/performance-explorer.md)|Нет|Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (веб-сайт Unity).|
 |[Анализ проблем с памятью .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Нет|Средства Visual Studio не имеют обработчиков в платформе Mono (используемой средой Unity) для профилирования. Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (документация по Unity).|
 
@@ -120,7 +120,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="monitor-with-hockeyapp"></a>Мониторинг с HockeyApp
 
-Ссылка: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**
+Ссылка для справки: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|

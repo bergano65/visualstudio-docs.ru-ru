@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Написание модульных тестов для библиотек DLL на C++
+title: Как выполнить Создание модульных тестов для библиотек DLL на C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877261"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740170"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Практическое руководство. Написание модульных тестов для библиотек DLL на C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Как выполнить Создание модульных тестов для библиотек DLL на C++
 
 В этом пошаговом руководстве описывается разработка библиотеки DLL на неуправляемом C++ с использованием методологии на основе тестирования. Порядок действий таков:
 
@@ -329,8 +329,8 @@ ms.locfileid: "49877261"
 
 ## <a name="see-also"></a>См. также
 
-- [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Отладка машинного кода](../debugger/debugging-native-code.md)
-- [Пошаговое руководство. Создание и использование библиотеки DLL (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Пошаговое руководство: издание и использование библиотеки DLL (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Импорт и экспорт](/cpp/build/importing-and-exporting)
