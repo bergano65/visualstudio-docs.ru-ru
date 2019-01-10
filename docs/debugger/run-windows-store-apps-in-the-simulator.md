@@ -1,8 +1,6 @@
 ---
 title: Запуск приложений UWP в симуляторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e9e023bd560a67323a4a2fcf5e42acec6919d6c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886479"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 Имитатор Visual Studio для приложений универсальной платформы Windows — это классическое приложение, которое имитирует приложение универсальной платформы Windows. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать имитатор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать общие касания и поворота события и свойства сетевых подключений.
@@ -150,5 +148,5 @@ ms.locfileid: "53685722"
 
  Можно завершить работу симулятора, нажав клавишу **CTRL + ALT + F4**.
 
-## <a name="see-also"></a>См. также
- [Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
+## <a name="see-also"></a>См. также раздел
+ [Запуск приложения из Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

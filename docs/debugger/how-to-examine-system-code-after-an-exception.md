@@ -2,7 +2,6 @@
 title: Анализ системного кода после исключения | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2e3de04d07ffe1bf2853113cb003a273fa9e5a7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3ea7f4223a6d61faa852d7985f77f4f672d26d17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878644"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Как выполнить анализ системного кода после исключения
 При возникновении исключения может возникнуть необходимость проанализировать код внутри системного вызова, чтобы определить причину исключения. В следующей процедуре поясняется, как это сделать при отсутствии загруженных символов для системного кода или в режиме "Только мой код".  
@@ -44,5 +43,5 @@ ms.locfileid: "53050996"
   
 4.  Теперь можно рассматривать системный код в окне **Стек вызовов** и других окнах. Например, можно дважды щелкнуть на кадре стека вызовов для просмотра кода в источнике или в окне **Дизассемблированный код**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)

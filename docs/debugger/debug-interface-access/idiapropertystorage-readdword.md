@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadDWORD | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d5c7c63674ac0b1b72f0b2e538e2993552e7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ed37f7f8126f5477fb63304ea6b6248cba190679
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828281"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Считывает `DWORD` значения в наборе свойств.  
@@ -27,7 +25,7 @@ ms.locfileid: "49842694"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT ReadDWORD (   
+HRESULT ReadDWORD (   
    PROPID id,  
    DWORD* pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadDWORD (
 ## <a name="remarks"></a>Примечания  
  Объект `DWORD` определяется Windows как 32-разрядное целое число без знака.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

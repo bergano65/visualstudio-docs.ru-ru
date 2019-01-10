@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea104d08216a4ef7bdb07fc42b5a22eb5352d757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4c252f709875133be7b4106a55cd853fbb309635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880988"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Как выполнить Перемещение по интегрированной среде разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,5 +95,5 @@ ms.locfileid: "53049623"
     > [!TIP]
     >  Чтобы изменить порядок перехода по списку **Активные окна инструментов**, удерживайте нажатыми клавиши SHIFT+ALT и нажмите клавишу F7.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md) [сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md)

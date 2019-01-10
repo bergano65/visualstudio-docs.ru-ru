@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673e510536ab866f3be90da630d3cfa261bb98c6
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 9f1390e0d2d69bb46ffad6f1ac426eabd43aeea2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824929"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создание пользовательского элемента управления Windows Forms с простой привязкой данных
 
@@ -122,7 +121,7 @@ ms.locfileid: "52305407"
 
 ## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных
 
-В этом шаге **Мастер настройки источника данных** используется для создания источника данных на основе таблицы `Customers` в учебной базе данных "Борей". Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
+В этом шаге **Мастер настройки источника данных** используется для создания источника данных на основе таблицы `Customers` в учебной базе данных "Борей". Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: Установка образцов баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Чтобы открыть **источников данных** окна на **данных** меню, щелкните **Показать источники данных**.
 

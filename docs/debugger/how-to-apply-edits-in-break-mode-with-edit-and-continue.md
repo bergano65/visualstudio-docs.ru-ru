@@ -2,7 +2,6 @@
 title: Применение изменений в режиме приостановки выполнения, изменить и продолжить | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: a8b63a93984fc65790bd8fcdadf8294cadf8e04e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821705"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Как выполнить Применение изменений в режиме приостановки выполнения с помощью изменить и продолжить (Visual Basic)
 Можно использовать "Изменить и продолжить" для изменения кода в режиме приостановки и продолжения затем работы без остановки и перезапуска приложения.  
@@ -42,11 +41,11 @@ ms.locfileid: "53684266"
   
     -   установите точку останова в коде, а затем выберите команду **Начать отладку** в меню **Отладка** и ждите, когда приложение попадет на точке останова;  
   
-         -или-  
+         - или -  
   
     -   начните отладку, а затем выберите команду **Прервать все** в меню **Отладка**;  
   
-         -или-  
+         - или -  
   
     -   При возникновении исключения выберите **Разрешить изменение** на **исключениям**.  
   
@@ -61,6 +60,6 @@ ms.locfileid: "53684266"
   
      Код теперь выполняется с учетом примененных к проекту изменений.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Изменить и продолжить (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSourceFiles::Skip | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e517f03a13debfd13dacfe92b4bb08bfddc727
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5710bcd8cd19b861d90dad47855ad91c6129e4bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837307"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Пропускает указанное число исходных файлов в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49849064"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если нет другие исходные файлы, чтобы пропустить.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

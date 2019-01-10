@@ -1,8 +1,6 @@
 ---
 title: Форматирование указателей в отладчике (C++) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -29,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73cd5655a5cb843c29fb628a2ec233860410dc7c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968343"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели формата для C++ в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата.  

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43b262344965091cf7599a9e1b2c43d6bcdb94f2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 585b5b5397ebd259476654dc2cc62f1add262af9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918905"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -244,7 +243,7 @@ ms.locfileid: "52305732"
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [элементы управления WPF, привязка к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>См. также
 

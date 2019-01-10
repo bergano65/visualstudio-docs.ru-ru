@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837294"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,5 +141,5 @@ ms.locfileid: "53058825"
 
  Справа от значения каждого свойства отображается *метка свойства* в виде квадрата. Внешний вид метки свойства указывает, применены ли к свойству привязка данных или ресурс. Например, белый квадрат указывает значение по умолчанию, черный квадрат обычно указывает, что был применен локальный ресурс, а оранжевый квадрат обычно указывает, что была применена привязка данных. Щелкнув метку свойства, можно перейти к определению стиля, открыть построитель привязки данных или открыть средство выбора ресурсов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Работа с элементами в конструкторе XAML](../designers/working-with-elements-in-xaml-designer.md) [Создание и применение ресурса](../designers/how-to-create-and-apply-a-resource.md) [Пошаговое руководство: Привязка к данным в конструкторе XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

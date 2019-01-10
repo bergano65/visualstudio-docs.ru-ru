@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4f98b51be027240cf6acee57ec6f8dc8f149a8e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858835"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,7 +174,7 @@ ms.locfileid: "53056604"
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
 |[Сведения о Unity](http://unity3d.com/) (веб-сайт Unity)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление API Office 365 в проект Visual Studio](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Мобильные службы Azure](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)

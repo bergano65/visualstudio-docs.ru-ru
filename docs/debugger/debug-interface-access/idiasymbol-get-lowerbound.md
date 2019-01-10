@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_lowerBound | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc793f3cc66a822dd661c0e23cf98a3734a5695f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86348cd58b8f5195b39c64dd337deddc65e32089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920236"
 ---
 # <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
 Получает нижнюю границу измерения массива FORTRAN.  
@@ -27,7 +25,7 @@ ms.locfileid: "49912569"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_lowerBound (   
+HRESULT get_lowerBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_lowerBound (
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

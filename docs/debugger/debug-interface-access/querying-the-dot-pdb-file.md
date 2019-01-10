@@ -1,8 +1,6 @@
 ---
 title: Запрос. PDB-файл | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3f909067c704686be4608546cc891df7f131107e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819556"
 ---
 # <a name="querying-the-pdb-file"></a>Запрос PDB-файла
 Файл базы данных программы (с расширением PDB) — это двоичный файл, который содержит тип и символьную отладочную информацию, собранные в ходе компиляции и компоновки проекта. PDB-файл создается при компиляции программы C/C++ с **/ZI** или **/ZI** или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], или [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] программировать **/debug** параметр. Объектные файлы содержат ссылки в PDB-файла для отладочной информации. Дополнительные сведения о PDB-файлы, см. в разделе [PDB-файлы](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Приложения доступа к интерфейсу отладки можно использовать следующие общие действия для получения сведений о различных символов, объекты и элементы данных в исполняемый образ.  
@@ -92,5 +90,5 @@ ms.locfileid: "44282057"
     }  
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
