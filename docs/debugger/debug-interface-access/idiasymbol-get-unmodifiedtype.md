@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_unmodifiedType | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fe76a3155941c9f7a3c6cc02d02291e61c8e4e89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898561"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Извлекает исходный тип для этого символа. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается тип.  
@@ -27,7 +25,7 @@ ms.locfileid: "49935758"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_unmodifiedType(   
+HRESULT get_unmodifiedType(   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -46,11 +44,11 @@ HRESULT get_unmodifiedType(
  Текущий тип является модификацией возвращаемого исходного типа. Исходный тип символа определяется сначала начало тип символа и затем опроса, возвращаемый тип для исходного типа. Обратите внимание, что некоторые символы не могут иметь измененный тип исходного типа.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
  Библиотеки DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

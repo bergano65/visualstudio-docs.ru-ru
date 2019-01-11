@@ -2,7 +2,6 @@
 title: Триггер приостановки, возобновления и фоновых событий во время отладки универсальной платформы Windows | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919681"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
@@ -109,8 +108,8 @@ ms.locfileid: "53054665"
   
 4.  Выберите журнал **Диагностические** .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Тестирование приложений UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Жизненный цикл приложения](/windows/uwp/launch-resume/app-lifecycle)   
  [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

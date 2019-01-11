@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorStubFunction | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956580"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Указывает, соответствует ли символ в символ верхнего уровня функция для шейдера, скомпилированную для ускорителя, соответствующий `parallel_for_each` вызова.  
+Указывает, соответствует ли символ в символ верхнего уровня функции для шейдера, скомпилированные для ускоритель, который соответствует `parallel_for_each` вызова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Указатель на `BOOL` , указывающее, соответствует ли символ в символ верхнего уровня функция для шейдера, скомпилированную для ускорителя, соответствующий `parallel_for_each` вызова.  
+ [out] Указатель на `BOOL` , указывающее, соответствует ли символ в символ функции верхнего уровня для шейдера, скомпилированные для ускоритель, который соответствует `parallel_for_each` вызова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

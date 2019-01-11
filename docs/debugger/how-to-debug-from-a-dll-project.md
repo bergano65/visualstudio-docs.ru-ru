@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отладка из проекта DLL | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отладка из проекта DLL | Документация Майкрософт
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854078"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Практическое: отладка из проекта DLL в Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Как выполнить Отладка из проекта DLL в Visual Studio (C#, C++, Visual Basic, F#)
 
 Для отладки проекта DLL рекомендуется указать вызывающего приложения в свойствах проекта DLL. Затем можно начать отладку из проекта DLL, сам. Для работы этого метода приложение должно вызывать той же библиотеки DLL, в том же расположении, которое можно настроить. Если приложение находит и загружает другую версию библиотеки DLL, эта версия не будет содержать точек останова. Другие способы отладки библиотек DLL, см. в разделе [проектов DLL, отладка](../debugger/debugging-dll-projects.md).
   
-Если управляемый приложение вызывает собственная библиотека DLL или ваше собственное приложение вызывает управляемую библиотеку DLL, можно выполнить отладку вызывающего приложения и библиотеки DLL. Дополнительные сведения см. в разделе [Практическое руководство. Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).   
+Если управляемый приложение вызывает собственная библиотека DLL или ваше собственное приложение вызывает управляемую библиотеку DLL, можно выполнить отладку вызывающего приложения и библиотеки DLL. Дополнительные сведения см. в разделе [Как Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Проекты DLL машинного и управляемого кода имеют разные параметры, чтобы указать вызывающего приложения. 
 

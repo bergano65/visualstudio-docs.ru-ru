@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreams::Skip | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cf0c16019cff61105be3b0de0c6c652de488d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4f461edd20465dd8a03007d57f318838723fbefc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872704"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 Пропускает заданное число потоков отладки в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49933317"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

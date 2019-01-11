@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54aabe4871ee7f40e32d42cefd8d291276f361cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886505"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,5 +82,5 @@ ms.locfileid: "53049804"
 ## <a name="enabling-linq"></a>Включение LINQ
  При нацеливании на .NET Framework 3.5 или более поздней версии ссылка на System.Core и импорт уровня проекта для System.Linq (в Visual Basic) добавляются автоматически. Если вы хотите использовать функции LINQ, нужно также включить параметр "Option Infer on" (только в Visual Basic). Ссылка и импорт удаляются автоматически при изменении целевой версии на более раннюю версию .NET Framework. Дополнительные сведения см. в разделе [Как создать проект LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework многоплатформенного нацеливания для веб-проектов ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [платформы совместимости и системные требования](http://www.microsoft.com/visualstudio/eng/products/compatibility)

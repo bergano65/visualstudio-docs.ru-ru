@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_constructor | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d54e0dce9d792efa93beb35d5e2a215db672031
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd380adab64dbc082fde9346d9e4c7767c9a4e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923774"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 Получает флаг, указывающий, имеет ли тип пользовательских данных, конструктор или деструктор.  
@@ -27,7 +25,7 @@ ms.locfileid: "49908952"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_constructor (   
+HRESULT get_constructor (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_constructor (
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

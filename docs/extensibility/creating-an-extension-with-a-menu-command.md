@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847828"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154425"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 В этом пошаговом руководстве показано, как создать расширение с помощью команды меню, которое запускает приложение Блокнот.  
@@ -121,6 +121,6 @@ ms.locfileid: "53847828"
   
 4. Добавьте существующие редакторы кода IntelliSense, предложения кода и другие возможности: [Расширение редактора и языковой службы](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Добавьте параметры и свойства страниц и пользовательских параметров расширения: [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширить пользовательские настройки и Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Добавьте параметры и свойства страниц и пользовательских параметров расширения: [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширить пользовательские настройки и параметры](../extensibility/extending-user-settings-and-options.md)  
   
    Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширения проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или реализация вашей расширения в изолированной оболочки. [Visual Studio изолированной оболочки](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

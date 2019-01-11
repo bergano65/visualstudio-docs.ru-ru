@@ -2,10 +2,9 @@
 title: Исправление ошибок за счет написания лучшего кода на C#
 description: Узнайте, как создавать более качественный код с меньшим количеством ошибок
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967580"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Исправления ошибок, написав лучше C# кода с помощью Visual Studio
 
-Отладка кода может занимать много времени — и иногда раздражающим--задачи. Требуется время, чтобы узнать, как для эффективной отладки, но это мощная интегрированная среда разработки, как Visual Studio можно сделать вашу работу, гораздо проще. Интегрированная среда разработки может помочь вам в отладке кода быстрее, а не просто, но он может также помочь в написании качественного кода с меньшим количеством ошибок. Нашей целью этой статьи — дать вам целостное представление о процесс отладки, поэтому вы будете знать, когда следует использовать анализатор кода, для использования отладчика и когда следует использовать другие средства.  
+Отладка кода может занимать много времени — и иногда раздражающим--задачи. Требуется время, чтобы узнать, как для эффективной отладки, но это мощная интегрированная среда разработки, как Visual Studio можно сделать вашу работу, гораздо проще. Интегрированная среда разработки может помочь вам в отладке кода быстрее, а не просто, но он может также помочь в написании качественного кода с меньшим количеством ошибок. Нашей целью этой статьи — дать вам целостное представление о процесс отладки, поэтому вы будете знать, когда следует использовать анализатор кода, для использования отладчика и когда следует использовать другие средства.
 
 В этой статье мы говорим о использование интегрированной среды разработки, чтобы повысить эффективность ваших сеансах отладки. Мы коснусь несколько задач, таких как:
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

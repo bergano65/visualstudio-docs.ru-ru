@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828060"
 ---
 # <a name="install-visual-studio-2015"></a>Установка Visual Studio 2015
 
@@ -198,6 +197,6 @@ ms.locfileid: "53055171"
 |[Библиотека изображений Visual Studio](../designers/the-visual-studio-image-library.md)|Сведения об установке графики, которая может использоваться в приложениях Visual Studio.|
 |[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Содержит сведения и ссылки, которые помогут вам более эффективно использовать Visual Studio.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md)

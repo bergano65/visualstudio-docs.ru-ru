@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumLineNumbers::Clone | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e85990b2ef145b9a5969ed6f052b65079ddb96dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1c5f027d3ccc2347e73b1c6e5caa096144b446ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871811"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
@@ -27,7 +25,7 @@ ms.locfileid: "49941312"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumLineNumbers** ppenum  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Clone (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

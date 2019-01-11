@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951934"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Как выполнить Создание и выполнение автоматической установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +63,7 @@ ms.locfileid: "53065523"
 
  Схема файла AdminDeployment содержит следующие элементы:
 
-|Элемент|Атрибут|Значения|Описание:|
+|Элемент|Атрибут|Значения|Описание|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Путь*|Поведение аналогично переопределению пути в интерфейсе пользователя приложения установки. Этот элемент пропускается, если Visual Studio уже установлена.|
 |BundleCustomizations|NoWeb|Да&#124;по умолчанию|Если значение этого элемента — yes (да), приложение установки не будет пытаться выйти в Интернет во время установки.|
@@ -178,7 +177,7 @@ ms.locfileid: "53065523"
 
 2.  Введите ключ продукта.
 
-     (Дополнительные сведения см. в разделе [как: Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [как: Автоматическое применение ключей продуктов при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) разделы.)
+     Дополнительные сведения см. в разделе [Практическое руководство. Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [как: Автоматическое применение ключей продуктов при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) разделы.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Установка Visual Studio](../install/install-visual-studio-2015.md)
