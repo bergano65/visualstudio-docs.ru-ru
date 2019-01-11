@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986574"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154154"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235. Пометьте все несериализуемые поля
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986574"
  Экземпляр поля несериализуемого типа объявлен в сериализуемом типе.
 
 ## <a name="rule-description"></a>Описание правила
- Сериализуемый тип — это приложения, имеющего <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. При сериализации типа <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> исключение вызывается в том случае, если тип содержит поле экземпляра типа, который не может быть сериализован.
+ Сериализуемый тип — это приложения, имеющего <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. При сериализации типа <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> возникает исключение, если тип содержит поле экземпляра типа, который не может быть сериализован.
+ 
+ Исключение — если тип использует пользовательскую сериализацию с помощью <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс. Типов, реализующих этот интерфейс предоставить собственную логику сериализации, и поэтому CA2235 не сработает для поля несериализуемого экземпляров таких типов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, примените <xref:System.NonSerializedAttribute?displayProperty=fullName> атрибут с полем, которое не может быть сериализован.

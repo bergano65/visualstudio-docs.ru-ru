@@ -2,7 +2,6 @@
 title: Управление исключениями с помощью отладчика | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561529"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094822"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -217,7 +216,7 @@ public class GenericException<T> : Exception
 
    ![Дополнительные условия для исключения](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Для каждой строки условию, введите имя модуля и измените список операторов сравнения для **равно** или **не равно**. Можно указать подстановочные знаки (**\\***) в имени, чтобы указать несколько модулей.
+3. Для каждой строки условию, введите имя модуля и измените список операторов сравнения для **равно** или **не равно**. Можно указать подстановочные знаки (**\\\***) в имени, чтобы указать несколько модулей.
 
 4. Если вам нужно удалить условие, выберите **X** в конце строки условия.
 

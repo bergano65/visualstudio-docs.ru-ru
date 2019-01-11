@@ -1,8 +1,6 @@
 ---
-title: Символы и теги символов | Документы Microsoft
-ms.custom: ''
+title: Символы и теги символов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,29 +12,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f4cb4b6ed35e880e1cb26980420f4e951ffc16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b9d7c7d3710d7bca7fa76b30b7b2d0e97a0dfd50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843493"
 ---
 # <a name="symbols-and-symbol-tags"></a>Символы и теги символов
-Отладочной информации о скомпилированная программа хранится в PDB-файл программы, как символы, которые доступны с помощью API пакета SDK для отладки Interface Access (DIA). Все символы имеют [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) и [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) свойство. `symTag` Свойство указывает тип символа, в соответствии с определением [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) перечисления. `symIndexId` Свойство `DWORD` значение, содержащее уникальный идентификатор для каждого вхождения символа.  
+Отладочной информации о скомпилированную программу хранится в PDB-файл программы, как символы, которые доступны с помощью API пакета SDK для отладки Interface Access (DIA). Все символы имеют [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) и [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) свойство. `symTag` Свойство указывает типа символа, в соответствии с определением [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления. `symIndexId` Свойство `DWORD` значение, содержащее уникальный идентификатор для каждого вхождения символа.  
   
- Символы также имеют свойства, которые можно указать дополнительные сведения о символов, а также ссылки на другие символы, чаще всего [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) или [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Возвращается при запросе свойство, которое содержит ссылку на ссылку в виде [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Такие свойства всегда сопоставляются с другим свойством с тем же именем, но с суффиксом «Идентификатор», например, [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) и [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Таблицы в [расположения символов](../../debugger/debug-interface-access/symbol-locations.md), [лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), и [класс иерархия символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) структуры свойства для каждого из различных типов из символы. Эти свойства могут иметь актуальную информацию о или ссылки на другие символы. Поскольку `*Id` свойств являются просто числовые идентификаторы порядковый номер, их связанных свойств, они исключаются из дальнейшего обсуждения. Они называются только в том случае, если для параметра дополнительной информации.  
+ Символы также имеют свойства, которые можно указать дополнительные сведения о символ, а также ссылки на другие символы, чаще всего [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) или [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). При запросе свойство, которое содержит ссылку, возвращается в виде ссылки [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Такие свойства всегда сопоставляются с другим свойством с одинаковыми именами и суффиксом, содержащим «Id», например, [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) и [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Таблицы в [расположения символов](../../debugger/debug-interface-access/symbol-locations.md), [лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), и [класс иерархия символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) структуры свойства для каждого из различных типов объекта символы. Эти свойства могут иметь соответствующие сведения о или ссылки на другие символы. Так как `*Id` свойства — это просто числовые идентификаторы порядковый номер их связанных свойств, они исключаются из дальнейшего обсуждения. Они известны только в том случае, при необходимости для получения параметра.  
   
- При попытке получить доступ к свойству, если ошибка не возникает и свойство символ назначено значение, свойство «получить» возвращает метод `S_OK`. Возвращаемое значение `S_FALSE` указывает, что свойство не является допустимым для текущий символ.  
+ При попытке доступа к свойству, если ошибка не возникает и свойство символ назначено значение, свойство «получить» возвращает метод `S_OK`. Возвращаемое значение `S_FALSE` указывает, что свойство не является допустимым для текущего символа.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)  
- Описывает различные расположения, которые могут иметь символ.  
+ Описывает различные виды расположений, которые могут иметь символ.  
   
  [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
- Описывает типы символов, формирующие лексической иерархии, такие как файлы, модули и функции.  
+ Описывает типы символов, которые образуют лексические иерархии, такие как файлы, модули и функции.  
   
  [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
- Описывает типы символов, которые соответствуют различные языковые элементы, такие как классы, массивы и функции возвращают типы.  
+ Описывает типы символов, которые соответствуют разные языковые элементы, такие как классы, массивы и функции возвращают типы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [SDK для доступа к интерфейсу отладки](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

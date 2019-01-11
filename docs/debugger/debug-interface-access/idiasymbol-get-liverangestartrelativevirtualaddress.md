@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 872547326edb54fc5b843bdd74a8035e1119dca0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2ccc2fb2bb6c998ed73bf2d834c28cb34babbafa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837866"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Возвращает начало диапазона адресов, в котором локальный символ является допустимой.  
@@ -27,7 +25,7 @@ ms.locfileid: "49948074"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
    DWORD* address  
 );  
 ```  
@@ -45,11 +43,11 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
  Библиотеки DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a17f8468eca37b5b977aa6b892e268bda5376ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: addc983ce8490e8c1dc1b84a98223cc1b23a76f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931061"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -253,7 +252,7 @@ ms.locfileid: "53066250"
 
 7.  Установите эти свойства в окне **Свойства** (примечание: для удобства можно отсортировать список в алфавитном порядке с помощью сортировки кнопки на панели инструментов окна "Свойства"):
 
-    |Свойство|Значение|
+    |Свойство.|Значение|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -307,7 +306,7 @@ ms.locfileid: "53066250"
 
 10. Перетащите элемент управления **Number** c **панели элементов** на элемент управления **RelativeLayout** и разместите его под меткой **Zip Code**. Затем установите следующие свойства:
 
-    |Свойство|Значение|
+    |Свойство.|Значение|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -330,7 +329,7 @@ ms.locfileid: "53066250"
 
 11. Перетащите элемент управления **Button** c **панели элементов** на элемент управления **RelativeLayout** и разместите его справа от элемента управления zipCodeEntry. Затем установите следующие свойства:
 
-    |Свойство|Значение|
+    |Свойство.|Значение|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**текст**|**Get Weather**|
@@ -648,5 +647,5 @@ ms.locfileid: "53066250"
 
  Общий код в переносимой библиотеке классов не зависит от платформы, так как эта библиотека компилируется один раз и включается в пакеты приложений для каждой платформы. Если вы хотите писать общий код, который использует условную компиляцию для изоляции кода для конкретных платформ, можете воспользоваться *общим* проектом. Дополнительные сведения см. в разделе [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Сайт разработчика Xamarin](http://developer.xamarin.com/) [Центр разработчиков Windows](https://dev.windows.com/en-us) [Swift и C# Краткое справочное руководство](http://aka.ms/scposter)

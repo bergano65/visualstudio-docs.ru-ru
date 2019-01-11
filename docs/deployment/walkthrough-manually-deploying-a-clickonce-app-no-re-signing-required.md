@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Развертывание вручную приложения ClickOnce, которая не требует повторной подписи и сохраняет фирменную символику | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Развертывание вручную приложения ClickOnce, которая не требует повторной подписи и сохраняет фирменную символику | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898155"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Пошаговое руководство: Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику
 При создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения и присвоить ей клиенту для публикации и развертывания, клиент традиционно должен был обновить манифест развертывания и подписать его заново. Несмотря на то что, по-прежнему рекомендуется в большинстве случаев платформа .NET Framework 3.5 позволяет создавать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, которые могут развертываться клиентами без необходимости повторного создания новый манифест развертывания. Дополнительные сведения см. в разделе [развертывание ClickOnce-приложений для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  При создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения и присвоить ей клиенту для публикации и развертывания, приложение может использовать торговую марку клиента или сохранять фирменной символики. Например если приложение является одиночным фирменным приложением, может потребоваться сохранить фирменной символики. Если приложение сильно измененными для каждого клиента, может потребоваться использовать фирменную символику клиента. .NET Framework 3.5 позволяет сохранять фирменной символики, сведения об издателе и подпись безопасности при передаче приложения для развертывания в организации. Дополнительные сведения см. в разделе [создать ClickOnce-приложений для других пользователей для развертывания](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
->  В этом пошаговом руководстве создаются развертывания вручную с помощью средства командной строки *Mage.exe* или графического средства *MageUI.exe*. Дополнительные сведения о развертывании вручную см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+>  В этом пошаговом руководстве создаются развертывания вручную с помощью средства командной строки *Mage.exe* или графического средства *MageUI.exe*. Дополнительные сведения о развертывании вручную см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения шагов в этом пошаговом руководстве вам потребуется следующее:  

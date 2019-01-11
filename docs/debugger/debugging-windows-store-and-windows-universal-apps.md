@@ -2,7 +2,6 @@
 title: Отладка приложений UWP | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 01/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902205"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка приложений для универсальной Windows (UWP) в Visual Studio
 
@@ -33,5 +32,5 @@ ms.locfileid: "53064025"
 |Анализируйте влияние класса ContentPrefetcher на приложения универсальной платформы Windows.|[Предварительная загрузка контента для приложений универсальной платформы Windows](../debugger/prefetch-content-for-windows-store-apps.md)|
 
   
-## <a name="see-also"></a>См. также  
- [Анализ качества кода помощью метода анализа статического кода](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+## <a name="see-also"></a>См. также раздел  
+ [Анализ качества кода помощью метода анализа статического кода](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

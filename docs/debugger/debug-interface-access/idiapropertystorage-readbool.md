@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadBOOL | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3df4ce44c0cf0b3b09442dc695f73c415035e84a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4fbe3b4654e5ace11069fa90c087ff5498626360
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933169"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Считывает `BOOL` значения в наборе свойств.  
@@ -27,7 +25,7 @@ ms.locfileid: "49904184"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT ReadBOOL (   
+HRESULT ReadBOOL (   
    PROPID id,  
    BOOL*  pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadBOOL (
 ## <a name="remarks"></a>Примечания  
  Согласованные результаты интерпретировать `BOOL` значение таким образом, ненулевыми значениями `TRUE` а нулевое — `FALSE`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

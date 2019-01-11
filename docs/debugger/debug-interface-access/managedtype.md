@@ -1,8 +1,6 @@
 ---
-title: ManagedType | Документы Microsoft
-ms.custom: ''
+title: ManagedType | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,24 +14,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888248"
 ---
 # <a name="managedtype"></a>ManagedType
-Управляемый тип (любой символ определяется метаданных или машинный код для функции управления памяти и ресурсов в таких языках, как C#) определяется `SymTagManagedType` символов.  
+Управляемый тип (любой символ, определенных в метаданных или машинный код к функциям управления памяти и ресурсов из языков, таких как C#) определяется `SymTagManagedType` символов.  
   
 ## <a name="properties"></a>Свойства  
- В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
+ Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
 |Свойство.|Тип данных|Описание|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Имя управляемого символа.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagManagedType` (один из [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) значения).|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagManagedType` (один из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения).|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

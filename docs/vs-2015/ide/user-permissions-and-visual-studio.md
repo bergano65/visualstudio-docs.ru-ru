@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83a45aaebbf621a5ae84a0ae4bdf3379697a47e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34eab1bed0113c3fbe39574c9ef2a4c2822af5c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858374"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +38,7 @@ ms.locfileid: "53062862"
 |Область|Задача|Дополнительные сведения|
 |----------|----------|--------------------------|
 |Установка|Установка Visual Studio.|[Установка Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Обновление с пробного выпуска Visual Studio.|[Практическое руководство: Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Обновление с пробного выпуска Visual Studio.|[Практическое руководство. Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Установка, обновление или удаление локального содержимого справки.|[Установка локального содержимого и управление им](../ide/install-and-manage-local-content.md)|
 |Типы приложений|Разработка решений для SharePoint 2010.|[Требования по разработке решений SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Получение лицензии разработчика (приложения Магазина Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -54,7 +53,7 @@ ms.locfileid: "53062862"
 ||Настройка межсетевого экрана для удаленной отладки.|[Настройка инструментов удаленной отладки в устройстве](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения, используя Visual Studio или Visual Web Developer: Развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Предоставление обратной связи в корпорацию Майкрософт|Изменение режима участия в программе улучшения качества Visual Studio.|[Практическое руководство: отправка отзыва](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Предоставление обратной связи в корпорацию Майкрософт|Изменение режима участия в программе улучшения качества Visual Studio.|[Практическое руководство. отправка отзыва](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.
@@ -75,5 +74,5 @@ ms.locfileid: "53062862"
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [установке Visual Studio 2015](../install/install-visual-studio-2015.md)
