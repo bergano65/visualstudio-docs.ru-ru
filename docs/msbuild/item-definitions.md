@@ -1,8 +1,6 @@
 ---
 title: Определения элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990809"
 ---
 # <a name="item-definitions"></a>Определения элементов
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.  
@@ -40,7 +38,7 @@ ms.locfileid: "39178566"
 > [!NOTE]
 >  Во многих примерах в этом разделе показан элемент ItemDefinitionGroup, но соответствующее определение ItemGroup опущено для ясности.  
   
- Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Пример:  
+ Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Например:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -60,7 +58,7 @@ ms.locfileid: "39178566"
  В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.  
   
 > [!NOTE]
->  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
+>  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и \/свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
   
 ## <a name="value-sources"></a>Источники значений  
  Значения для метаданных, определенных в ItemDefinitionGroup, могут поступать из множества различных источников:  
@@ -91,7 +89,7 @@ ms.locfileid: "39178566"
   
 -   Последняя спецификация имеет приоритет.  
   
-Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Пример:  
+Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Например:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -109,7 +107,7 @@ ms.locfileid: "39178566"
   
 В этом примере метаданные o добавляются к m и n.  
   
-Кроме того, могут быть также добавлены ранее определенные значения метаданных. Пример:  
+Кроме того, могут быть также добавлены ранее определенные значения метаданных. Например:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -145,7 +143,7 @@ ms.locfileid: "39178566"
 ```  
   
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
- Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:  
+ Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Например:  
   
 ```xml  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -160,7 +158,7 @@ ms.locfileid: "39178566"
 > [!NOTE]
 >  В условиях поддерживаются только локальные ссылки на метаданные.  
   
-Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Пример:  
+Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Например:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -191,7 +189,7 @@ ms.locfileid: "39178566"
 В приведенном выше примере m может быть присвоено значение m1, так как Condition содержит ссылку на значение метаданных элемента i для элемента yes. 
   
 ## <a name="override-and-delete-metadata"></a>Переопределение и удаление метаданных  
- Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:  
+ Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Например:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +240,7 @@ ms.locfileid: "39178566"
 </ItemDefinitionGroup>  
 ```  
   
-Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Пример:  
+Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Например:  
   
 ```xml  
 <ItemGroup>  

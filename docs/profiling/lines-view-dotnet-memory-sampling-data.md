@@ -1,8 +1,6 @@
 ---
 title: Представление "Строки" — данные выборки памяти .NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67148180fab5c712ee15551cf60a8874f427dc0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe56df4f2984d5d354924b3e897b01f71b43e76d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925892"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Представление "Строки" — данные выборки памяти .NET
 В представлении "Строки" данных профилирования выделения памяти .NET, собранных методом выборки, перечислены операторы, которые выделяли память в сеансе профилирования. Столбцы также показывают размер и число выделений.  
@@ -42,7 +40,7 @@ ms.locfileid: "49854849"
   
   По определению оператор не вызывает другие функции. Поэтому перечисляются только эксклюзивные значения.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  

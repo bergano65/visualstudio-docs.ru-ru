@@ -3,7 +3,6 @@ title: Создание приложения Node.js и React
 description: В этом учебнике вы создадите приложение с помощью инструментов Node.js для Visual Studio.
 ms.custom: mvc
 ms.date: 11/01/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 27a76ab16da00fe68b6dffbc072b926bf04fa502
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: a89a54999e6db5139178b20a0794d4dc594e0e45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874181"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и React в Visual Studio
 

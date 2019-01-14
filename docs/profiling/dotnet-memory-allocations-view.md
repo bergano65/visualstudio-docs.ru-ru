@@ -1,8 +1,6 @@
 ---
 title: Представление выделения памяти .NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895549"
 ---
 # <a name="net-memory-allocations-view"></a>Представление выделения памяти .NET
 В представлении "Выделение" перечислены типы, созданные в ходе сеанса профилирования. Каждый из типов является корневым узлом дерева вызовов, где отображаются пути выполнения, полученные при выделении памяти для типа.  
@@ -40,7 +38,7 @@ ms.locfileid: "49933681"
   
 -   Чтобы отобразить самый активный путь, щелкните тип или функцию правой кнопкой мыши и выберите команду **Развернуть критический путь**.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Name**|Имя типа или функции, для которых выделяется память.|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  

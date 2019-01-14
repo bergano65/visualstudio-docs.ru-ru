@@ -2,7 +2,6 @@
 title: Как выполнить Добавление диаграмм классов в проекты (конструктор классов)
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866456"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Как выполнить Добавление диаграмм классов в проекты
 
@@ -61,7 +60,7 @@ ms.locfileid: "53684322"
 
 В **обозревателе решений** откройте контекстное меню файла класса, щелкнув правой кнопкой мыши, и выберите пункт **Перейти к диаграмме классов**.
 
--или-
+- или -
 
 В **представлении классов** откройте контекстное меню пространства имен или типа и выберите пункт **Просмотр схемы класса**.
 
