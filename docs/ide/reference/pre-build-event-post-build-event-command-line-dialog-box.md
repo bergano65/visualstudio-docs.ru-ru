@@ -2,7 +2,6 @@
 title: Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877907"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.
@@ -73,7 +72,7 @@ ms.locfileid: "31947977"
 ### <a name="macros"></a>Макросы
  Эти макросы можно использовать для указания расположений файлов или для получения фактического имени входного файла в случае множественного выбора. В этих макросах регистр не учитывается.
 
-|Макрос|Описание:|
+|Макрос|Описание|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Имя текущей конфигурации проекта, например "Debug".|
 |`$(OutDir)`|Путь к выходному каталогу файлов относительно каталога проекта. Путь разрешается в значение для свойства Output Directory. Он включает обратную косую черту "\\" в конце.|
@@ -95,9 +94,9 @@ ms.locfileid: "31947977"
 |`$(TargetFileName)`|Имя основного выходного файла для сборки (определяется базовым именем и расширением файла).|
 |`$(TargetExt)`|Расширение имени основного выходного файла сборки. Включает символ "." перед расширением файла.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Указание настраиваемых событий сборки в Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Страница "Событий построения" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Практическое руководство. Указание событий построения (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Практическое руководство. Назначение событий построения (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Практическое руководство. Указание событий сборки (C#)](../../ide/how-to-specify-build-events-csharp.md)

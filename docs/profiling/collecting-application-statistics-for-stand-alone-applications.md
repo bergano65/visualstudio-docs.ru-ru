@@ -1,8 +1,6 @@
 ---
 title: Сбор статистики по автономным приложениям с помощью командной строки профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 706e591a96cf5bdd1c13fb0775c8a91e3995cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871264"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Сбор статистики по автономным приложениям с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора статистики о производительности клиентского (автономного) приложения с использованием метода выборки в командной строке.  
@@ -54,4 +52,3 @@ ms.locfileid: "39276735"
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Анализ представлений и отчетов данных выборки  
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)
-

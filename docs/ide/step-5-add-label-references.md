@@ -1,9 +1,7 @@
 ---
-title: Шаг 5. Добавление ссылок на метки
-ms.custom: ''
+title: Шаг 5. Добавление ссылок на элементы управления Label
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecea1c6a1baf27247b9b01d28e04b6da827a0e3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2b8360e44109819a5de75e6262efcfb71fc10ade
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830551"
 ---
-# <a name="step-5-add-label-references"></a>Шаг 5. Добавление ссылок на метки
+# <a name="step-5-add-label-references"></a>Шаг 5. Добавление ссылок на элементы управления Label
 Программе нужно отслеживать, какие элементы управления Label выбирает игрок. В настоящий момент программа отображает все метки, выбранные игроком. Однако мы изменим это. После выбора первой метки программа должна показывать ее значок. После выбора второй метки программа должна показать оба значка на короткое время, а затем снова скрыть их. Теперь программа будет отслеживать, какой элемент управления Label выбран первым, а какой — вторым, с помощью *ссылочных переменных*.
 
 ## <a name="to-add-label-references"></a>Добавление ссылок на метки
@@ -48,6 +46,6 @@ ms.locfileid: "34747949"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md).
+-   Следующий раздел руководства: [Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md).
 
--   Предыдущий раздел: [Шаг 4. Добавление к каждой метке обработчика событий Click](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+-   Предыдущий раздел руководства: [Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).

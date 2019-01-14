@@ -1,8 +1,6 @@
 ---
 title: Сбор данных о выделении памяти для объектов .NET и времени их жизни | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2095b06347c577811cdeb91d0a9039a140758c86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898051"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
 

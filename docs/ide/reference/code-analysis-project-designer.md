@@ -2,7 +2,6 @@
 title: "\"Анализ кода\", конструктор проекта"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860141"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
 Содержит средство анализа кода, которое вы можете запустить для своего кода. Это средство предоставляет сведения об управляемых сборках, например о нарушении правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET Framework.
@@ -74,8 +73,8 @@ ms.locfileid: "31944678"
 
  Включает или отключает правила использования. Вы также можете расширить эту запись, чтобы включить или отключить отдельные правила.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ для предупреждений управляемого кода](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Общие сведения об анализе управляемого кода](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Пошаговое руководство: Анализ управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

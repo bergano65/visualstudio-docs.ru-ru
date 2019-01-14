@@ -1,8 +1,6 @@
 ---
 title: Порядок сборки целевых объектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 09/04/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96eb3aacfd83ad60ae6c0e0f1fa95209136307ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881530"
 ---
 # <a name="target-build-order"></a>Порядок сборки целевого объекта
 Целевые объекты необходимо упорядочить, если входные данные для одного целевого объекта зависят от выходных данных другого целевого объекта. Эти атрибуты можно использовать для задания порядка выполнения целевых объектов:  
@@ -45,7 +43,7 @@ ms.locfileid: "49812664"
   
  Импортированные проекты могут иметь собственные атрибуты `InitialTargets`. Все начальные целевые объекты собираются вместе и выполняются по порядку.  
   
- Дополнительные сведения см. в [практическом руководстве по выбору цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Дополнительные сведения см. в разделе [Как Выбор цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Целевые объекты по умолчанию  
  Атрибут `DefaultTargets` элемента [Project](../msbuild/project-element-msbuild.md) указывает, какой целевой объект или целевые объекты создаются, если целевой объект не задан явным образом в командной строке.  
@@ -64,7 +62,7 @@ ms.locfileid: "49812664"
   
  Импортированные проекты могут иметь собственные атрибуты `DefaultTargets`. Первый атрибут `DefaultTargets` определяет, какие целевые объекты по умолчанию будут выполняться.  
   
- Дополнительные сведения см. в [практическом руководстве по выбору цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Дополнительные сведения см. в разделе [Как Выбор цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Первый целевой объект  
  Если начальные целевые объекты, целевые объекты по умолчанию или целевые объекты командной строки отсутствуют, MSBuild сначала выполняет первый обнаруженный целевой объект в файле проекта или любом импортированном файле проекта.  

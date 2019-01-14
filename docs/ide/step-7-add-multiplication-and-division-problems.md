@@ -1,9 +1,7 @@
 ---
-title: Шаг 7. Добавление задач на умножение и деление
-ms.custom: ''
+title: Шаг 7. Добавление задач на умножение и деление
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0186ba637bdb1bc85a7ff60f23c9799972b6a931
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 359f4e5035c564a3f7f4b117994ab4d84d1f6eff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889005"
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
+# <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
 В седьмой части этого учебника вам предстоит добавить задачи на умножение и деление. Сначала, однако, необходимо подумать, как внести это изменение. Рассмотрим начальный шаг, который предполагает сохранение значений.
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Добавление задач на умножение и деление
@@ -54,6 +52,6 @@ ms.locfileid: "34747910"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 8. Настройка головоломки](../ide/step-8-customize-the-quiz.md).
+-   Следующий раздел руководства: [Шаг 8. Настройка теста](../ide/step-8-customize-the-quiz.md).
 
--   Предыдущий раздел: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
+-   Предыдущий раздел руководства: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).

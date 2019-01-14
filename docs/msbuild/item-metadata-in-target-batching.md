@@ -1,8 +1,6 @@
 ---
 title: Метаданные элементов в пакетной обработке целевых объектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486169788ad4533f5d45bf48c979ce3d0f5f7920
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856401"
 ---
 # <a name="item-metadata-in-target-batching"></a>Метаданные элементов в пакетной обработке целевых объектов
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может анализировать зависимости для входных и выходных данных целевого объекта сборки. Если определено, что входные или выходные данные целевого объекта актуальны, он пропускается, а сборка продолжается. Элементы `Target` используют атрибуты `Inputs` и `Outputs`, чтобы задать элементы, обрабатываемые во время анализа зависимостей.  
@@ -68,7 +66,7 @@ ms.locfileid: "39081063"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md)   
+ [Практическое руководство. Последовательная сборка](../msbuild/how-to-build-incrementally.md)   
  [Пакетная обработка](../msbuild/msbuild-batching.md)   
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Метаданные элементов в пакетной обработке задач](../msbuild/item-metadata-in-task-batching.md)

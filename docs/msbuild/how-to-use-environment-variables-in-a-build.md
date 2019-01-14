@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Использование переменных среды в построении | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Использование переменных среды в сборке | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93e77ee2a3ca9a3c4ef3f3ceb7491e1b2ecdf074
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845398"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Практическое руководство. Использование переменных среды в построении
+# <a name="how-to-use-environment-variables-in-a-build"></a>Как выполнить Использование переменных среды в сборке
 При сборке проектов часто бывает необходимо задать параметры сборки, используя сведения не из файла проекта или файлов, входящих в проект. Эти сведения обычно хранятся в переменных среды.  
   
 ## <a name="reference-environment-variables"></a>Ссылки на переменные среды  
@@ -67,4 +65,4 @@ ms.locfileid: "49828376"
 ## <a name="see-also"></a>См. также  
 [MSBuild ](../msbuild/msbuild.md)  
 [Свойства MSBuild](../msbuild/msbuild-properties.md)  
-[Практическое руководство. Построение одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

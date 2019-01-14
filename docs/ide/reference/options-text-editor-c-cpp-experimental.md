@@ -10,15 +10,14 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893332"
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
 
@@ -37,7 +36,7 @@ ms.locfileid: "50672344"
 
 ## <a name="enable-faster-project-load"></a>Ускорение загрузки проекта
 
-**Visual Studio 2017 версии 15.3 и более поздние версии**. Эта функция теперь называется **Включить кэширование проектов** и перемещена на страницу свойств [Параметры проекта VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+**Visual Studio 2017 версии 15.3 и выше**. Эта функция теперь называется **Включить кэширование проектов** и перемещена на страницу свойств [Параметры проекта VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Этот параметр позволяет Visual Studio кэшировать данные проекта, чтобы при открытии проекта он мог загрузить эти данные, а не повторно вычислять их из файлов проекта. Использование кэшированных файлов может значительно ускорить время загрузки проектов.
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Дополнительные функции в Visual Studio Marketplace

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Создание отчета трассировки событий Windows для средств профилирования | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Создание отчета трассировки событий Windows для средств профилирования | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e064d4c3f3199da2b32ca48858ae27801e4cf5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 304cc9b65ed876e2348a6b96dc1f50e9a6934a4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950979"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Практическое руководство. Создание отчета трассировки событий Windows для Средств профилирования
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Как выполнить Создание отчета трассировки событий Windows для средств профилирования
 Отчет трассировки событий для Windows информирует о событиях трассировки событий Windows, которые были сохранены в ходе сеанса анализа производительности для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Данные трассировки событий Windows собираются в двоичном *ETL*-файле. Дополнительные сведения об отчете трассировки событий Windows см. в статье [Отчет трассировки событий Windows](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
