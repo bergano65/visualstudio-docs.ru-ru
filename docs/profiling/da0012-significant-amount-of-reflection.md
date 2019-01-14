@@ -1,8 +1,6 @@
 ---
-title: DA0012. Слишком много вызовов метода Reflection | Документы Майкрософт
-ms.custom: ''
+title: DA0012. Слишком много вызовов метода Reflection | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAReflection
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 191edf9cc6a3dc9ff177b075e2967cb328afc9c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7dc1cbce8b4d676022b7e413d3c1a2c2fe295056
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932672"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012. Слишком много вызовов метода Reflection
 

@@ -2,7 +2,6 @@
 title: Свойства файлов (JavaScript)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9809c48b9226e05b7617c860af524b1ac6daf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910234"
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.
@@ -94,6 +93,6 @@ ms.locfileid: "31947928"
 ### <a name="version"></a>Версия
  Отображает версию, на которую указывает ссылка.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление свойствами проектов и решений](../../ide/managing-project-and-solution-properties.md)

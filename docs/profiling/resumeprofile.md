@@ -1,8 +1,6 @@
 ---
 title: ResumeProfile | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947911"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 Метод `ResumeProfile` уменьшает значение счетчика приостановки и возобновления для указанного уровня профилирования.  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|  

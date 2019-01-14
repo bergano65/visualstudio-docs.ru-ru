@@ -1,8 +1,6 @@
 ---
 title: Сбор подробных данных по времени для служб с использованием метода инструментирования из командной строки профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946348"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора подробных данных по производительности для служб Windows с помощью метода инструментирования из командной строки.  
@@ -47,4 +45,3 @@ ms.locfileid: "34335831"
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
  [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)
-

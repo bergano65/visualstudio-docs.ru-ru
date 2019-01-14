@@ -1,11 +1,4 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915949"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Создание проекта ИИ на основе имеющегося кода
 
@@ -31,7 +24,7 @@ ms.locfileid: "49915949"
 5. Запустите программу, нажав клавиши **CTRL**+**F5** или выбрав пункты **Отладка > Запуск без отладки**.
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+> [Учебник. Работа с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>См. также
 

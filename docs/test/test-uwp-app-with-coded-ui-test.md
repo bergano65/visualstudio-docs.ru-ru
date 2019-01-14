@@ -2,7 +2,6 @@
 title: Тестирование приложения UWP с помощью закодированного теста пользовательского интерфейса
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842048"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Создание закодированного теста пользовательского интерфейса для тестирования приложения UWP
 
@@ -207,17 +206,17 @@ ms.locfileid: "52895968"
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>В. Почему я не вижу параметр для записи закодированного теста пользовательского интерфейса в диалоговом окне "Создать код" или "Закодированный тест пользовательского интерфейса"?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Вопрос: Почему я не вижу параметр для записи закодированного теста пользовательского интерфейса в диалоговом окне "Создать код" или "Закодированный тест пользовательского интерфейса"?
 
-**О**. Параметр записи не поддерживается для приложений универсальной платформы Windows.
+**Ответ**. Параметр записи не поддерживается для приложений универсальной платформы Windows.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Вопрос. Можно ли создать закодированный тест пользовательского интерфейса для приложений универсальной платформы Windows, написанных на WinJS?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Вопрос: Можно ли создать закодированный тест пользовательского интерфейса для приложений универсальной платформы Windows, написанных на WinJS?
 
 **Ответ**. Поддерживаются только приложения на XAML.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Вопрос: Почему не следует изменять файл UIMap.Designer?
 
-**Ответ**. Любые изменения кода, внесенные в файл *UIMapDesigner.cs*, будут перезаписываться каждый раз при создании кода с помощью **построителя кодированных тестов ИП**. Если требуется изменить записанный метод, скопируйте его в файл *UIMap.cs* и переименуйте. Файл *UIMap.cs* можно использовать для переопределения методов и свойств в файле *UIMapDesigner.cs*. Удалите ссылку на исходный метод в файле *CodedUITest.cs* и замените ее именем переименованного метода.
+**Ответ**. Любые изменения кода, внесенные в файл *UIMapDesigner.cs*, будут перезаписываться каждый раз при создании кода с помощью **построителя закодированных тестов пользовательского интерфейса**. Если требуется изменить записанный метод, скопируйте его в файл *UIMap.cs* и переименуйте. Файл *UIMap.cs* можно использовать для переопределения методов и свойств в файле *UIMapDesigner.cs*. Удалите ссылку на исходный метод в файле *CodedUITest.cs* и замените ее именем переименованного метода.
 
 ## <a name="see-also"></a>См. также
 

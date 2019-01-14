@@ -2,7 +2,6 @@
 title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Форматирование\""
 ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +17,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960752"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 
@@ -40,7 +39,7 @@ ms.locfileid: "36235145"
 
 Эта страница содержит параметры для форматирования операторов и блоков при их вводе.
 
-**Visual Studio 2017 версии 15.7 и более поздней**: страница также содержит параметры для настройки поддержки [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) версии 5.0. ClangFormat — это служебная программа, которая упрощает задание стиля и формата кода на основе набора правил, которые можно настроить в файле .clang-format или _clang-format.
+**Visual Studio 2017 версии 15.7 и выше**: страница также содержит параметры для настройки поддержки [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) версии 5.0. ClangFormat — это служебная программа, которая упрощает задание стиля и формата кода на основе набора правил, которые можно настроить в файле .clang-format или _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Настройка параметров ClangFormat
 
@@ -53,7 +52,7 @@ ms.locfileid: "36235145"
 
 Эти страницы позволяют использовать различные настройки форматирования, но игнорируются, если включен ClangFormat.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

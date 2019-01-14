@@ -2,7 +2,6 @@
 title: Страница "Службы" в конструкторе проектов
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952385"
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 
@@ -53,7 +52,7 @@ ms.locfileid: "39177023"
 
  **Использовать проверку подлинности с помощью форм**
 
- Указывает, что поставщик проверки подлинности будет использовать проверку подлинности с помощью форм. Это означает, что приложение должно предоставить пользовательский интерфейс для входа. Дополнительные сведения см. в разделе [Практическое руководство. Реализация входа пользователя с помощью служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Указывает, что поставщик проверки подлинности будет использовать проверку подлинности с помощью форм. Это означает, что приложение должно предоставить пользовательский интерфейс для входа. Дополнительные сведения см. в разделе [Как Реализация входа пользователя с помощью служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Местонахождение службы аутентификации**
 

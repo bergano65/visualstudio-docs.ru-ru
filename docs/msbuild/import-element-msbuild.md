@@ -1,8 +1,6 @@
 ---
 title: Элемент Import (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900877"
 ---
 # <a name="import-element-msbuild"></a>Элемент Import (MSBuild)
 Импортирует содержимое одного файла проекта в другой файл проекта.  
@@ -45,7 +43,7 @@ ms.locfileid: "49839613"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Project`|Обязательный атрибут.<br /><br /> Путь к импортируемому файлу проекта. Этот путь может содержать подстановочные знаки. Совпадающие файлы импортируются в отсортированном порядке. С помощью этой функции можно добавить код в проект, просто добавив файл кода в каталог.|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
@@ -115,4 +113,4 @@ ms.locfileid: "49839613"
 
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
- [Как использовать одинаковый целевой объект в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Практическое руководство. Использование одного целевого объекта в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

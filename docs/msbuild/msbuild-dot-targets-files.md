@@ -1,8 +1,6 @@
 ---
 title: Файлы TARGETS в MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 02/24/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3282495219e92da38fc90c9a98fa115791190d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 170f80cc1abb12570e01dd9f9b2fcd04d7bff139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902819"
 ---
 # <a name="msbuild-targets-files"></a>Файлы TARGETS в MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает в себя несколько *TARGETS*-файлов, содержащих элементы, свойства, целевые объекты и задачи для обычных сценариев. Эти файлы автоматически импортируются в большинство файлов проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для упрощения обслуживания и повышения удобочитаемости.  
@@ -37,7 +35,7 @@ ms.locfileid: "49834569"
 
 ## <a name="common-targets-files"></a>Общие файлы TARGETS  
 
-| Файл *TARGETS* | Описание: |
+| Файл *TARGETS* | Описание |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | Определяет этапы стандартного процесса сборки для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Импортированы с помощью файлов *Microsoft.CSharp.targets* и *Microsoft.VisualBasic.targets*, которые включают в себя следующий оператор: `<Import Project="Microsoft.Common.targets" />` |
 | *Microsoft.CSharp.targets* | Определяет этапы стандартного процесса сборки для проектов Visual C#.<br /><br /> Импортированы с помощью файлов проекта Visual C# (с расширением *CSPROJ*), которые включают в себя следующий оператор: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |

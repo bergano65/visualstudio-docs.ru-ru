@@ -1,8 +1,6 @@
 ---
 title: Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 21cb675136ba5180c8a7d26073ea16e6c6831aac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831684"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора подробных данных о производительности клиентского (автономного) компонента с использованием метода инструментирования в командной строке.  

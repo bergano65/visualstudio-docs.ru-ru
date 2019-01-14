@@ -1,8 +1,6 @@
 ---
 title: Анализ данных средств производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 521be9d9d0d4e6ecd34547219ef0d7aa81b402f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944766"
 ---
 # <a name="analyze-performance-tools-data"></a>Анализ данных из средств оценки производительности
 Отчеты о производительности средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют просматривать и анализировать проблемы производительности приложения. В данном разделе представлены общие сведения о представлениях и отчетах производительности, которые можно использовать для изучения данных о производительности.  

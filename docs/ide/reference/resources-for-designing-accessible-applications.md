@@ -3,7 +3,6 @@ title: Ресурсы для создания приложений со спец
 description: Узнайте, как создавать приложения со специальными возможностями, чтобы их было проще использовать людям с ограниченными возможностями.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959629"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 
@@ -37,7 +36,7 @@ ms.locfileid: "50671720"
 
 ## <a name="windows-applications"></a>приложения Windows
 
-* **[Пошаговое руководство. Создание приложения Windows со специальными возможностями](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**. Эта статья содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
+* **[Пошаговое руководство: Создание приложения Windows со специальными возможностями](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**. Эта статья содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
 
 * **Рекомендации по разработке пользовательского интерфейса клавиатуры**. В этой технической статье описана разработка пользовательского интерфейса приложения Windows, где пользователи могут осуществлять навигацию с клавиатуры. Дополнительные сведения см. в разделе [Рекомендации по проектированию пользовательского интерфейса клавиатуры](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -45,7 +44,7 @@ ms.locfileid: "50671720"
 
 ## <a name="websites"></a>Веб-сайты
 
--   [Пошаговое руководство. Руководства по специальным возможностям использования элементов управления Image, Menu и AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202). В этой статье приведены пошаговые инструкции по включению элементов специальных возможностей в образец веб-страницы. А также некоторые советы по проектированию специальных возможностей в веб-приложениях.
+-   [Пошаговое руководство: Руководства по специальным возможностям использования элементов управления Image, Menu и AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202). В этой статье приведены пошаговые инструкции по включению элементов специальных возможностей в образец веб-страницы. А также некоторые советы по проектированию специальных возможностей в веб-приложениях.
 
 -   **Создание доступных веб-страниц с помощью DHTML**. В этой технической статье перечислены доступные элементы HTML 4.0, а также советы по проектированию специальных возможностей на веб-сайтах. Дополнительные сведения см. в разделе [Создание веб-страниц с поддержкой специальных возможностей с помощью DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 

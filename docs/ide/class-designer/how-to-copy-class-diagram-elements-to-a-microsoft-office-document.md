@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)
+title: Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916297"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office
 
 Можно копировать фигуры из схемы классов .NET (файл *.cd*) в другие документы. В зависимости от типа документа, в который выполняется вставка, при вставке будет получена либо копия фигуры, либо ее базовый код. Сведения о копировании фигур из схем классов UML в проекте моделирования см. в статье [Экспорт схем в виде изображений](../../modeling/export-diagrams-as-images.md).
 
@@ -44,5 +43,5 @@ ms.locfileid: "33956923"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
-- [Практическое руководство. Экспорт диаграмм классов как изображений](how-to-export-class-diagrams-as-images.md)
+- [Практическое руководство. Печать схем классов](how-to-print-class-diagrams.md)
+- [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md)

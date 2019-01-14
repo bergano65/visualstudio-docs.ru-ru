@@ -1,9 +1,7 @@
 ---
-title: Шаг 7. Отображение пар значков
-ms.custom: ''
+title: Шаг 7. Отмена исчезновения пар значков
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881001"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отображение пар значков
+# <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
 Игра работает правильно, пока игрок выбирает только пары значков, которые не совпадают. Но давайте посмотрим, что произойдет, когда игрок выберет совпадающую пару. Вместо того чтобы значки исчезали благодаря включению таймера (с помощью метода <xref:System.Windows.Forms.Timer.Start>), игра должна сбрасываться и больше не отслеживать метки с помощью ссылочных переменных `firstClicked` и `secondClicked`. Но цвета двух меток, которые были выбраны, не должны сбрасываться.
 
 ## <a name="to-keep-pairs-visible"></a>Отмена исчезновения пар значков
@@ -61,6 +59,6 @@ ms.locfileid: "34747858"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 8. Добавление метода проверки выигрыша игрока](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+-   Следующий раздел руководства: [Шаг 8. Добавление метода для проверки того, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
--   Предыдущий раздел: [Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md).
+-   Предыдущий раздел руководства: [Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md).

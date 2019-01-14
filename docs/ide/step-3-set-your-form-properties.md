@@ -1,9 +1,7 @@
 ---
 title: Шаг 3. Настройка свойств формы
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cde54cb95c9e9d9cb237e8241425c70766e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968515"
 ---
 # <a name="step-3-set-your-form-properties"></a>Шаг 3. Настройка свойств формы
 Далее окно **Свойства** используется для изменения внешнего вида формы.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этой статьи см. на следующих страницах: [Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1](http://go.microsoft.com/fwlink/?LinkId=205209) и [Руководство 1. Создание приложения для просмотра рисунков на C# — видео 1](http://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: reate a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Руководство 1. Создание приложения для просмотра рисунков на C# —видео 1). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ## <a name="to-set-your-form-properties"></a>Настройка свойств формы
 
@@ -71,6 +69,6 @@ ms.locfileid: "49821271"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+-   Следующий раздел руководства: [Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Предыдущий раздел [Шаг 2. Запуск программы](../ide/step-2-run-your-program.md).
+-   Предыдущий раздел руководства: [Шаг 2. Запуск программы](../ide/step-2-run-your-program.md).

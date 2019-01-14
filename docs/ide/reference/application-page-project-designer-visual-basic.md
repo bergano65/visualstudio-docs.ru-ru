@@ -2,7 +2,6 @@
 title: Страница приложения в свойствах проекта Visual Basic
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: eafc6822477f709216f1424d9b4704e6b7acb413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859046"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -66,7 +65,7 @@ ms.locfileid: "50670966"
 > [!NOTE]
 > Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта потребуется указать необходимые компоненты вручную, чтобы они соответствовали новой целевой платформе.
 
-Дополнительные сведения см. в разделах [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Дополнительные сведения см. в разделе [Как Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Тип приложения
 
@@ -88,7 +87,7 @@ ms.locfileid: "50670966"
 
 Если выбран параметр **Включить исполняющую среду** (по умолчанию), этот список получает имя **Начальная форма** и содержит только формы, так как исполняющая среда поддерживает только начальные формы, но не объекты.
 
-Если проект является приложением браузера WPF, этот список получает имя **Запуск и универсальный код ресурса (URI)**; страницей по умолчанию является **Page1.xaml**. Список **Запуск и универсальный код ресурса (URI)** позволяет указать ресурс пользовательского интерфейса (элемент XAML), отображаемый приложением при запуске. Дополнительные сведения см. в разделе <xref:System.Windows.Application.StartupUri%2A>.
+Если проект является приложением браузера WPF, этот список получает имя **Запуск и универсальный код ресурса (URI)**; страницей по умолчанию является **Page1.xaml**. Список **Запуск и универсальный код ресурса (URI)** позволяет указать ресурс пользовательского интерфейса (элемент XAML), отображаемый приложением при запуске. Для получения дополнительной информации см. <xref:System.Windows.Application.StartupUri%2A>.
 
 Если флажок **Включить исполняющую среду** снят, этот список принимает имя **Автоматически запускаемый объект** и содержит формы и классы или модули с `Sub Main`.
 

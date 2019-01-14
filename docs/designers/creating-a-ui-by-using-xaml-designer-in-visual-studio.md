@@ -2,7 +2,6 @@
 title: Создание пользовательского интерфейса с помощью конструктора XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880414"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio
 
@@ -127,7 +126,7 @@ ms.locfileid: "51221000"
 
 **Пограничный случай**
 
-Определяет выравнивание приложения по различным краям: **Оба**, **По левому краю**, **По правому краю**или **Нет**.
+Определяет выравнивание приложения по различным краям: **Оба**, **По левому краю**, **По правому краю** или **Нет**.
 
 **Высокая контрастность**
 
@@ -201,4 +200,4 @@ ms.locfileid: "51221000"
 
 - [Работа с элементами в конструкторе XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Практическое руководство. Создание и применение ресурса](../designers/how-to-create-and-apply-a-resource.md)
-- [Пошаговое руководство. Привязка к данным в конструкторе XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Пошаговое руководство: Привязка к данным в конструкторе XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

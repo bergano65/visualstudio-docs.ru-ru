@@ -1,9 +1,7 @@
 ---
-title: Шаг 6. Добавление задачи на вычитание
-ms.custom: ''
+title: Шаг 6. Добавление задачи на вычитание
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f42d2b414e79c1138f699964808ff13a375ec4fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948171"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
+# <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
 В шестой части этого учебника вам предстоит добавить задачу на вычитание и научиться выполнять следующие задачи:
 
 -   Хранение значений, которые участвуют в операции вычитания.
@@ -82,6 +80,6 @@ ms.locfileid: "34747897"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Следующий раздел руководства: [Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Предыдущий раздел: [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+-   Предыдущий раздел руководства: [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

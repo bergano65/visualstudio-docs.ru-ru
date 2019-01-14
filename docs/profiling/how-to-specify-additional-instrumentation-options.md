@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Указание дополнительных параметров инструментирования | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Указание дополнительных параметров инструментирования | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858673"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Практическое руководство. Определение дополнительных параметров инструментирования
+# <a name="how-to-specify-additional-instrumentation-options"></a>Как выполнить Указание дополнительных параметров инструментирования
 
 Инструментирование двоичных файлов можно выполнять в интегрированной среде разработки Visual Studio или с помощью средств командной строки. Если инструментирование двоичных файлов выполняется в интегрированной среде разработки, вы можете управлять объемом данных, собираемых во время инструментирование, указав дополнительные параметры инструментирования для программы [VSInstr](../profiling/vsinstr.md). Эти параметры доступны в сеансе или целевом уровне. Например, для включения или исключения конкретных функций во время процесса инструментирования используется дополнительный параметр инструментирования на целевом уровне.
 

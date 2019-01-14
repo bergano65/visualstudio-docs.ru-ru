@@ -1,9 +1,7 @@
 ---
-title: Шаг 3. Назначение каждой метке случайного значка
-ms.custom: ''
+title: Шаг 3. Назначение каждому элементу управления Label случайного значка
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: efcb151fd7ecba4db5d7b911c22c8fea9b86d16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905154"
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждой метке случайного значка
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждому элементу управления Label случайного значка
 Если значки оказываются в одной и той же ячейке каждую игру, игра становится слишком простой. Чтобы избежать этого, назначайте значки элементам управления Label случайным образом, используя для этого метод `AssignIconsToSquares()`.
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>Назначение каждой метке случайного значка
@@ -81,6 +79,6 @@ ms.locfileid: "50672916"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+-   Следующий раздел руководства: [Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).
 
--   Предыдущий раздел: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Предыдущий раздел руководства: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
