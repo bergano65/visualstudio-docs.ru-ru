@@ -2,7 +2,6 @@
 title: Страница приложения в свойствах проекта C#
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850931"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 
@@ -59,7 +58,7 @@ ms.locfileid: "50672825"
 > [!NOTE]
 > Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта потребуется выбрать необходимые компоненты вручную, чтобы они соответствовали новой целевой платформе.
 
-Дополнительные сведения см. в разделах [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Дополнительные сведения см. в разделе [Как Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Тип выходных данных**
 

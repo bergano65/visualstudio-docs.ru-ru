@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Указание событий сборки (C#)
+title: Как выполнить Указание событий сборки (C#)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964680"
 ---
-# <a name="how-to-specify-build-events-c"></a>Практическое руководство. Указание событий сборки (C#)
+# <a name="how-to-specify-build-events-c"></a>Как выполнить Указание событий сборки (C#)
 
 Используйте события сборки для указания команд, которые выполняются до начала сборки или после ее завершения. События сборки выполняются, только если сборка успешно достигает этих точек в процессе сборки.
 
@@ -61,7 +60,7 @@ ms.locfileid: "49885858"
     > [!NOTE]
     > Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Пример: изменение данных манифеста с помощью события после сборки
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Пример как изменить данные манифеста с помощью события после сборки
 
 В следующей процедуре показано, как задать минимальную версию операционной системы в манифесте приложения с помощью команды *EXE*, вызываемой из события после сборки (файл *exe.manifest* в каталоге проекта). Минимальная версия операционной системы — число из четырех частей, например 4.10.0.0. Чтобы это сделать, команда изменит раздел `<dependentOS>` манифеста:
 
@@ -189,5 +188,5 @@ ms.locfileid: "49885858"
 
 - Сведения о [странице "События сборки" в конструкторе проектов (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - Сведения о [диалоговых окнах "Командная строка события перед сборкой" и "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- Сведения об [указании событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

@@ -2,7 +2,6 @@
 title: Диалоговое окно "События построения" (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -18,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5899c8fc2b9e064ac326106a289d8309421e21f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937027"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Диалоговое окно "События построения" (Visual Basic)
 
-В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в статье [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в разделе [Как Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 **Командная строка события перед сборкой**
 
@@ -53,8 +52,8 @@ ms.locfileid: "50219358"
 |**При удачной сборке**|Событие после сборки будет выполняться в случае успешной сборки. Событие будет выполняться даже для актуального проекта, если его сборка завершилась успешно. Этот параметр используется по умолчанию.|
 |**При обновлении выходных файлов проекта во время сборки**|Событие после сборки будет выполняться только в том случае, если выходной файл компилятора (EXE или DLL) отличается от предыдущего выходного файла компилятора. Событие после сборки не выполняется, если проект актуален.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Практическое руководство. Указание событий построения (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

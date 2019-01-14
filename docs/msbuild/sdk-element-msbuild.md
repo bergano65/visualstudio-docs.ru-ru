@@ -1,8 +1,6 @@
 ---
 title: Элемент SDK (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e42714a44ebaee4d7e72d3997537491195d504f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938981"
 ---
 # <a name="sdk-element-msbuild"></a>Элемент SDK (MSBuild)
 Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -45,7 +43,7 @@ ms.locfileid: "49834181"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Name`|Обязательный атрибут.<br /><br /> Имя пакета SDK для проекта.|  
 |`Version`|Необязательный атрибут.<br /><br /> Версия пакета SDK для проекта.|  
@@ -60,6 +58,6 @@ ms.locfileid: "49834181"
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="see-also"></a>См. также  
- [How to: Use MSBuild Project SDKs](../msbuild/how-to-use-project-sdk.md)  (Практическое руководство. Использование пакета SDK проекта MSBuild)  
+ [Практическое руководство. Ссылка на пакет SDK проекта MSBuild](../msbuild/how-to-use-project-sdk.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

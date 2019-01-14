@@ -2,7 +2,6 @@
 title: «Проекты и решения», «Диалоговое окно параметров»
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926317"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Страница "Проекты и решения", диалоговое окно "Параметры"
 
@@ -89,11 +88,11 @@ ms.locfileid: "52388953"
 
 ### <a name="user-project-templates-location"></a>Размещение пользовательских шаблонов проектов
 
-Задает расположение по умолчанию, которое используется в диалоговом окне **Новый проект** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Задает расположение по умолчанию, которое используется в диалоговом окне **Новый проект** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Размещение пользовательских шаблонов элементов
 
-Задает расположение по умолчанию, которое используется в диалоговом окне **Добавление нового элемента** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Задает расположение по умолчанию, которое используется в диалоговом окне **Добавление нового элемента** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>См. также
 

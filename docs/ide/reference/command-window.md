@@ -2,7 +2,6 @@
 title: Командное окно
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841863"
 ---
 # <a name="command-window"></a>Командное окно
 **Командное** окно используется для выполнения команд или их псевдонимов непосредственно в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Можно выполнять команды меню и команды, которые не отображаются в меню. Для вывода **командного** окна в меню **Вид** выберите **Другие окна**, а затем **Командное окно**.
@@ -110,9 +109,9 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Крышка действует одинаково как внутри кавычек, так и за их пределами. Если крышка является последним символом в строке, она игнорируется. В следующем примере показано, как выполнить поиск шаблона "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Использование кавычек для путей с пробелами
- Например, если вы хотите открыть файл, путь к которому содержит пробелы, необходимо заключить путь или сегмент пути, содержащий пробелы, в двойные кавычки: **C:\\"Program Files"** или **"C:\Program Files"**.
+ Например, если вы хотите открыть файл, путь к которому содержит пробелы, нужно заключить путь или сегмент пути, содержащий пробелы, в двойные кавычки: **C:\\"Program Files"** или **"C:\Program Files"**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

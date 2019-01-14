@@ -2,7 +2,6 @@
 title: Рисование фигур и контуров
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942649"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 
@@ -85,7 +84,7 @@ ms.locfileid: "39513101"
 ##  <a name="Convert"></a> Преобразование фигуры в контур
  Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур.
 
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 ##  <a name="Combine"></a> Объединение контуров
  Контуры и фигуры можно объединить в один контур.
@@ -98,7 +97,7 @@ ms.locfileid: "39513101"
 |![Исключение наложения](../designers/media/b1_2.png)|Объединение|![](../designers/media/b1_5.png)|Исключение перекрытия|
 |![Subtract](../designers/media/b1_3.png)|Divide|![](../designers/media/b1_6.png)|Subtract|
 
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ##  <a name="Compound"></a> Создание составного пути
  При создании составного контура все пересекающиеся части контуров исключаются из результата, и результирующий контур принимает визуальные свойства нижнего контура.
@@ -107,14 +106,14 @@ ms.locfileid: "39513101"
 
  ![Прерывание составного контура](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Создание контура кадрирования
  Контур обрезки — это контур или фигура, применяемая к другому объекту, чтобы скрыть части маскируемого объекта за пределами контура обрезки.
 
  ![Контур кадрирования](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>См. также
 

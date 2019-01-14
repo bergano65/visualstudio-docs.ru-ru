@@ -1,8 +1,6 @@
 ---
 title: Сравнение свойств и элементов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942363"
 ---
 # <a name="compare-properties-and-items"></a>Сравнение свойств и элементов
 Свойства и элементы MSBuild применяются для передачи данных задачам, проверки условий и хранения значений, которые будут использоваться в файле проекта.  

@@ -2,7 +2,6 @@
 title: Продукты и службы, поддерживающие специальные возможности (Blend)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: be4a39747150d0be0e550afddf8048d4e207521d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965860"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Продукты и службы, поддерживающие специальные возможности (Blend)
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В приведенных ниже разделах содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.

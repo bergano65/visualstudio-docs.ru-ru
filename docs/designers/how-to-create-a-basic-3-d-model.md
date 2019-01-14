@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание простейшей трехмерной модели
+title: Как выполнить Создание простейшей трехмерной модели
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929621"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Практическое руководство. Создание простейшей трехмерной модели
+# <a name="how-to-create-a-basic-3d-model"></a>Как выполнить Создание простейшей трехмерной модели
 
 В этой статье показано, как с помощью редактора моделей создать простую трехмерную модель. Рассматриваются следующие действия:
 
@@ -72,7 +71,7 @@ ms.locfileid: "49913453"
 
    ![Полная модель упрощенного дома](../designers/media/gfx_model_demo_house_final.png)
 
-   Следующим шагом может быть применение к этой трехмерной модели шейдера. Дополнительные сведения см. в статье [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Следующим шагом может быть применение к этой трехмерной модели шейдера. Дополнительные сведения см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>См. также
 

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Очистка сборки | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Очистка сборки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ddd4158561b0bac7ea3347738f13f0f9530002ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841136"
 ---
-# <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка сборки
+# <a name="how-to-clean-a-build"></a>Как выполнить Очистка сборки
 При очистке сборки все промежуточные и выходные файлы удаляются, а остаются только файлы проекта и компонентов. Из файлов проекта и компонентов можно собрать новые экземпляры промежуточных и выходных файлов. Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], включает в себя задачу [Exec](../msbuild/exec-task.md), позволяющую запускать системные команды. Дополнительные сведения о библиотеке задач см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="create-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
@@ -34,7 +32,7 @@ ms.locfileid: "48879061"
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:  
+2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
   
      ```xml
      <MakeDir Directories = "$(builtdir)"  
@@ -46,14 +44,14 @@ ms.locfileid: "48879061"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  
   
--   Используйте задачу `RemoveDir`, чтобы удалить каталог. Пример:  
+-   Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже проект с примером кода содержит новый целевой объект `Clean`, который использует задачу `RemoveDir`, чтобы удалить каталог и все содержащиеся в нем файлы и каталоги. Также в этом примере целевой объект `Compile` создает отдельный каталог для выходных файлов, удаляемых при очистке сборки.  
   
- `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **-target**, чтобы указать другой целевой объект. Пример:  
+ `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **-target**, чтобы указать другой целевой объект. Например:  
   
  `msbuild <file name>.proj -target:Clean`  
   

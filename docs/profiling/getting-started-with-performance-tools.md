@@ -1,8 +1,6 @@
 ---
 title: Приступая к работе со средствами оценки производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942857"
 ---
 # <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами оценки производительности
 

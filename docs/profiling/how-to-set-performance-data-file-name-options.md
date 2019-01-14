@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка параметров имени файла с данными о производительности | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6e0027457e099c57423989070e6f30f275d7982e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990572"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными производительности
+# <a name="how-to-set-performance-data-file-name-options"></a>Как выполнить Настройка параметров имени файла с данными о производительности
 
 По умолчанию файл данных профилирования (*VSP*) сохраняется со следующим синтаксисом:
 

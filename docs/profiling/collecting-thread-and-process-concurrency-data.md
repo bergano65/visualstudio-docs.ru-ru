@@ -1,8 +1,6 @@
 ---
 title: Сбор данных о параллелизме потоков и процессов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6ccec0581c3166ec74bc4626ec49aa8eb6b7a68d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905271"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Сбор данных о параллелизме потоков и процессов
 

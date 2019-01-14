@@ -1,8 +1,6 @@
 ---
-title: 'DA0014: исключительно высокая частота подкачки активной памяти на диск | Документы Майкрософт'
-ms.custom: ''
+title: DA0014. Исключительно высокая частота подкачки активной памяти на диск | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30bb9fea29215eb190ab83ea73394b87e4cd15fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67882c56492f8b98daf6f2f1cca1972be8e4f667
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932711"
 ---
-# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: исключительно высокая скорость подкачки активной памяти на диск
+# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014. Исключительно высокая скорость подкачки активной памяти на диск
 
 |||  
 |-|-|  

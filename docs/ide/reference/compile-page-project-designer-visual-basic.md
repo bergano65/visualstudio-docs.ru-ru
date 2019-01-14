@@ -2,7 +2,6 @@
 title: Страница "Компиляция" в конструкторе проектов (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874895"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Страница "Компиляция" в конструкторе проектов (Visual Basic)
 
@@ -44,7 +43,7 @@ ms.locfileid: "38808378"
 
  **Конфигурация**
 
- Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**. Дополнительные сведения см. в описании [конфигураций отладки и выпуска проекта](../../ide/understanding-build-configurations.md) и практическом руководстве по [созданию и изменению конфигураций](../../ide/how-to-create-and-edit-configurations.md).
+ Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**. Дополнительные сведения см. в разделе [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md) и [Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md).
 
  **Платформа**
 
@@ -171,11 +170,11 @@ ms.locfileid: "38808378"
 Нажмите эту кнопку, чтобы открыть диалоговое окно **События сборки**. В нем можно указать инструкции, которые должны выполняться до и после сборки проекта. Это окно применяется только к проектам Visual Basic. Дополнительные сведения см. в разделе [Диалоговое окно "События сборки" (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).  
   
 **Дополнительные параметры компиляции**  
-Нажмите эту кнопку, чтобы открыть диалоговое окно **Дополнительные параметры компиляции**. В нем можно указать дополнительные свойства конфигурации сборки для проекта. Это окно применяется только к проектам Visual Basic. Дополнительные сведения см. в разделе [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
+Нажмите эту кнопку, чтобы открыть диалоговое окно **Дополнительные параметры компиляции**. Используйте диалоговое окно **Дополнительные параметры компилятора**, чтобы указать дополнительные параметры конфигурации сборки проекта. Это окно применяется только к проектам Visual Basic. Дополнительные сведения см. в разделе [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
 
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Указание событий построения (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md)

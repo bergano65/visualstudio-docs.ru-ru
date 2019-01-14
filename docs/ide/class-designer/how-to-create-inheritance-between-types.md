@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание наследования между типами (конструктор классов)
+title: Как выполнить Создание наследования между типами (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925567"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Практическое руководство. Создание наследования между типами в конструкторе классов
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Как выполнить Создание наследования между типами в конструкторе классов
 
 Чтобы создать отношение наследования между двумя типами на диаграмме классов, используя **конструктор классов**, соедините базовый тип с его производными типами. Отношение наследования может существовать между двумя классами, между классом и интерфейсом или между двумя интерфейсами.
 
@@ -30,7 +29,7 @@ ms.locfileid: "33956683"
 
 1.  В **обозревателе решений** выберите проект и откройте файл диаграммы классов (CD-файл).
 
-     Если диаграмма классов не существует, создайте ее. См. раздел [Практическое руководство. Добавление схем классов в проекты](how-to-add-class-diagrams-to-projects.md).
+     Если диаграмма классов не существует, создайте ее. См. практическое руководство по [ добавлению диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md).
 
 2.  На **панели инструментов** в разделе **Конструктор классов** щелкните элемент **Наследование**.
 
@@ -53,5 +52,5 @@ ms.locfileid: "33956683"
 
 - [Наследование](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Основы наследования](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Практическое руководство. Просмотр наследования между типами](how-to-view-inheritance-between-types.md)
+- [Практическое руководство. Просмотр наследования между типами в конструкторе классов](how-to-view-inheritance-between-types.md)
 - [Классы Visual C++ в конструкторе классов](visual-cpp-classes.md)

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Выбор событий выборки | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Выбор событий выборки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7cb4e501985d5a9043d381e02acbe70a45d0ee22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962971"
 ---
-# <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
+# <a name="how-to-choose-sampling-events"></a>Как выполнить Выбор событий выборки
 По умолчанию средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] собирают данные о производительности с интервалом, заданным как число циклов процессора, используемых профилируемым процессом. По умолчанию число циклов в одном интервале — 10 000 000, что приблизительно соответствует 0,01 секунды для процессора 1 ГГц. Вы можете изменить число циклов в интервале и событие выборки. Доступны следующие события выборки:  
   
 -   циклы синхронизации — для проблем, связанных с ЦП;  

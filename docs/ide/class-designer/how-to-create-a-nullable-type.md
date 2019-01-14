@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
+title: Как выполнить Создание типа, допускающего значение NULL (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953043"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL, в конструкторе классов
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Как выполнить Создание типа, допускающего значение NULL, в конструкторе классов
 
 Определенные типы значений не всегда имеют или требуют определенное значение. Это распространенная практика в базах данных, где некоторым полям нельзя назначить любое значение. Например, полю базы данных можно присвоить значение NULL, чтобы указать, что ему еще не было назначено значение.
 
