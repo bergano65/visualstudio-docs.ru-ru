@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Разблокирование Visual Studio
+title: Как выполнить Разблокирование Visual Studio
 ms.date: 07/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -10,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: c2cf3980e92f6e95b058b51667f584492ecf9aea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844958"
 ---
-# <a name="how-to-unlock-visual-studio"></a>Практическое руководство. Разблокирование Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>Как выполнить Разблокирование Visual Studio
 
 Вы можете работать с ознакомительной версией Visual Studio бесплатно в течение 30 дней. Вход в IDE продлевает пробный период до 90 дней. Чтобы продолжить использовать Visual Studio, разблокируйте IDE, выполнив одно из следующих действий:
 

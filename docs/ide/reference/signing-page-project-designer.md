@@ -2,7 +2,6 @@
 title: Страница "Подписывание" в конструкторе проектов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856648"
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).
@@ -40,7 +39,7 @@ ms.locfileid: "49459794"
 ## <a name="application-and-deployment-manifest-signing"></a>Подписание манифестов приложения и развертывания
  Флажок **Подписать манифесты ClickOnce**
 
- Установите этот флажок, чтобы подписать манифесты приложения и развертывания с помощью пары из открытого и закрытого ключей. Дополнительные сведения о том, как это сделать, см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Установите этот флажок, чтобы подписать манифесты приложения и развертывания с помощью пары из открытого и закрытого ключей. Дополнительные сведения об этой операции см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  Кнопка **Выбрать из хранилища**
 

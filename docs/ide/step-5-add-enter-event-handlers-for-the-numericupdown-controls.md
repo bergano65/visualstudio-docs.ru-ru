@@ -1,9 +1,7 @@
 ---
-title: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
-ms.custom: ''
+title: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,18 +9,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846903"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 В пятой части этого руководства вам предстоит добавить обработчики событий <xref:System.Windows.Forms.Control.Enter>, чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления <xref:System.Windows.Forms.NumericUpDown>, как только игрок выберет элемент управления и начнет вводить другое значение.
 
 > [!NOTE]
->  Этот раздел входит в серию учебников, посвященных основам написания кода. См. раздел [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
+>  Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>Проверка поведения по умолчанию
 
@@ -72,6 +70,6 @@ ms.locfileid: "34747923"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
+-   Следующий раздел руководства: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
 
--   Предыдущий раздел: [Шаг 4. Добавление метода CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+-   Предыдущий раздел руководства: [Шаг 4. Добавление метода CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

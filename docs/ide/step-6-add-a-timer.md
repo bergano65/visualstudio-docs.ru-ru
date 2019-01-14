@@ -1,9 +1,7 @@
 ---
-title: Шаг 6. Добавление таймера
-ms.custom: ''
+title: Шаг 6. Добавление таймера
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d02c4d141dd9ec61918600c5fa0b1ca9fadbd9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 36ca514f4bfb5b3c73d2f72b06afdab72a987ed0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885415"
 ---
-# <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
+# <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
 Затем добавьте в игру "Подбери пару" элемент управления <xref:System.Windows.Forms.Timer>. Таймер ожидает заданное число миллисекунд, а затем вызывает событие, называемое *тактом*. Это бывает удобно для запуска действия или повтора действия с определенной периодичностью. В этом случае таймер нужен для того, чтобы игроки могли выбрать два значка, а если они не совпадают, скрыть их через небольшой отрезок времени.
 
 ## <a name="to-add-a-timer"></a>Добавление таймера
@@ -58,6 +56,6 @@ ms.locfileid: "34748105"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 7. Отображение пар значков](../ide/step-7-keep-pairs-visible.md).
+-   Следующий раздел руководства: [Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md).
 
--   Предыдущий раздел: [Шаг 5. Добавление ссылок на метки](../ide/step-5-add-label-references.md).
+-   Предыдущий раздел руководства: [Шаг 5. Добавление ссылок на элементы управления Label](../ide/step-5-add-label-references.md).

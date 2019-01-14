@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Подписание манифестов приложения и развертывания
+title: Как выполнить Подписание манифестов приложения и развертывания
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852918"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание манифестов приложения и развертывания
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Как выполнить Подписание манифестов приложения и развертывания
 
 Если вы хотите опубликовать приложение с помощью развертывания ClickOnce, манифесты приложения и развертывания должны быть подписаны парой из открытого и закрытого ключей с использованием технологии Authenticode. Манифесты можно подписать с помощью сертификата из хранилища сертификатов Windows или файла ключа.
 
@@ -94,7 +93,7 @@ ms.locfileid: "39381951"
 
 2.  На странице **Подписывание** снимите флажок **Подписать манифесты ClickOnce**.
 
-3.  Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в статье [Практическое руководство. Установка версии публикации приложения ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3.  Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в разделе [Как Установка версии публикации ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Опубликуйте приложение.
 

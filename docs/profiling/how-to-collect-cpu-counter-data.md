@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Сбор данных счетчиков производительности ЦП | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Сбор данных счетчиков производительности ЦП | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897239"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков производительности ЦП
+# <a name="how-to-collect-cpu-counter-data"></a>Как выполнить Сбор данных счетчиков производительности ЦП
 
 Счетчик событий ЦП используется для сбора данных о производительности конкретного оборудования. В этой статье демонстрируется сбор данных счетчиков событий при использовании метода профилирования "Инструментирование".
 
@@ -45,7 +43,7 @@ ms.locfileid: "49813913"
 
 - сбор данных из одного или нескольких счетчиков при профилировании путем инструментирования;
 
-- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. в разделе [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md).
+- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. в разделе [Как Выбор событий выборки](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Сбор данных счетчика производительности ЦП при профилировании путем инструментирования
 

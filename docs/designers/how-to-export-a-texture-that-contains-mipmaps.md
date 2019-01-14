@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Экспорт текстуры, содержащей MIP-карты
+title: Как выполнить Экспорт текстуры, содержащей MIP-карты
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bddd2eec1da77ad6f128f6010e485b7efaf1866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836641"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Практическое руководство. Экспорт текстуры, содержащей MIP-карты
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Как выполнить Экспорт текстуры, содержащей MIP-карты
 
 Конвейер содержимого изображения может создавать MIP-карты из исходного изображения как часть этапа сборки вашего проекта. Для достижения некоторых эффектов иногда требуется задавать содержимое изображения каждого уровня MIP вручную. Если делать этого не нужно, создание MIP-карты во время сборки гарантирует, что содержимое MIP-карты будет всегда синхронизировано. Это также позволяет избежать снижения производительности из-за создания MIP-карты во время выполнения.
 

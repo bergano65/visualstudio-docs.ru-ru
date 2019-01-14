@@ -2,7 +2,6 @@
 title: Изменение шрифтов и цветов в редакторе
 ms.date: 11/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ed964723265015d0305fce156cb81bf593123e38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891765"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Практическое руководство. Изменение шрифтов и цветов в редакторе в Visual Studio 2017
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Как выполнить Изменение шрифтов и цветов в редакторе в Visual Studio 2017
 
 Вы можете изменить стандартное начертание, размер шрифта, а также цвет переднего плана и фона для различных текстовых **отображаемых элементов** в редакторе кода. При изменении параметров шрифта учитывайте следующее:
 

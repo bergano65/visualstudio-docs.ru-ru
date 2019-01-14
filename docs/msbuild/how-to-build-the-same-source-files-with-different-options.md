@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Сборка одинаковых исходных файлов с различными параметрами | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a9bbf558558b7eff673d255e525d6b69677e906
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850246"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Как выполнить Сборка одинаковых исходных файлов с различными параметрами
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.  
   
 ## <a name="use-properties-to-modify-projects"></a>Использование свойств для изменения проектов  
@@ -54,7 +52,7 @@ ms.locfileid: "49897177"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
--   Используйте параметр **-property** с указанием свойства и его значения. Пример:  
+-   Используйте параметр **-property** с указанием свойства и его значения. Например:  
   
     ```cmd  
     msbuild file.proj -property:Flavor=Debug  
@@ -68,7 +66,7 @@ ms.locfileid: "49897177"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Задание нескольких свойств проекта в командной строке  
   
-- Используйте параметр **-property** или **-p** с указанием свойств и их значений либо используйте один параметр **-property** или **-p**, указав несколько свойств через точку с запятой (;). Пример:  
+- Используйте параметр **-property** или **-p** с указанием свойств и их значений либо используйте один параметр **-property** или **-p**, указав несколько свойств через точку с запятой (;). Например:  
   
   ```cmd  
   msbuild file.proj -p:Flavor=Debug;Platform=x86  
@@ -80,7 +78,7 @@ ms.locfileid: "49897177"
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
   ```  
   
-  Переменные среды также обрабатываются как свойства и автоматически внедряются [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Дополнительные сведения об использовании переменных среды см. в разделе [Практическое руководство. Использование переменных среды в сборке](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Переменные среды также обрабатываются как свойства и автоматически внедряются [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Дополнительные сведения об использовании переменных среды см. в разделе [Практическое руководство. Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   Значение свойства, которое указано в командной строке, имеет приоритет над любым значением для того же свойства, заданным в файле проекта, а значение в файле проекта имеет приоритет над значением в переменной среды.  
   

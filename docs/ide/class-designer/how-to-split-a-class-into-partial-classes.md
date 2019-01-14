@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Разделение класса в разделяемые классы (конструктор классов)
+title: Как выполнить Разделение класса на разделяемые классы (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 69a0a90315ec906874c94445e904e7dc1274a23e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826249"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы в конструкторе классов
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Как выполнить Разделение класса на разделяемые классы в конструкторе классов
 
 Объявление класса или структуры можно распределить по нескольким объявлениям с помощью ключевого слова `partial` (`Partial` в Visual Basic). Можно использовать неограниченное количество разделяемых объявлений.
 

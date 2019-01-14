@@ -2,19 +2,18 @@
 title: Изменение стиля объектов в Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906791"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 
@@ -22,7 +21,7 @@ ms.locfileid: "31917206"
 
 Если требуется повторно использовать параметры или группы параметров, создайте ресурс многоразового использования. Это может быть *стиль*, *шаблон* или что-то простое, например пользовательский цвет. Вы также можете настроить определенное отображение элемента управления в зависимости от его состояния. Например, при нажатии пользователем кнопка становится зеленой.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Кисти: изменение внешнего вида объекта
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Кисти. Изменение внешнего вида объекта
 
 Примените кисть к объекту, если вы хотите изменить его внешний вид.
 
@@ -94,9 +93,9 @@ ms.locfileid: "31917206"
 
 ![Наведение курсора на состояние](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Ознакомьтесь с коротким видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Ознакомьтесь с коротким видео.** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ресурсы. Создание цветов, стилей и шаблонов и их последующее повторное использование
 
 Практически любой элемент проекта можно преобразовать в ресурс. Ресурс представляет собой объект, который можно многократно использовать в разных местах в приложении . Например, можно создать один раз цвет, преобразовать его в ресурс, а затем использовать этот ресурс для ряда объектов Чтобы изменить цвет всех этих объектов, достаточно изменить ресурс цвета.
 
