@@ -24,7 +24,7 @@ ms.locfileid: "53945591"
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Практическое руководство. Сборка и запуск примера LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Содержит пошаговые инструкции о том, как создавать, заполнять и строить проект Visual Studio для этого примера.|
+|[Практическое руководство. Сборка и выполнение примера LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Содержит пошаговые инструкции о том, как создавать, заполнять и строить проект Visual Studio для этого примера.|
 |[Пошаговое руководство: пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)|Содержит главные исходные файлы для проекта, а также описание того, как LINQ to XML используется для привязки данных внутри этого кода.|
 
 ## <a name="see-also"></a>См. также

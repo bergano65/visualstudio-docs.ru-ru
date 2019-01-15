@@ -1,5 +1,5 @@
 ---
-title: DA0001. Использование StringBuilder для объединений | Документация Майкрософт
+title: DA0001. Использование StringBuilder для объединений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

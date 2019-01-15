@@ -1,5 +1,5 @@
 ---
-title: DA0002. Отсутствует файл VSPerfCorProf.dll | Документация Майкрософт
+title: DA0002. Отсутствует файл VSPerfCorProf.dll | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

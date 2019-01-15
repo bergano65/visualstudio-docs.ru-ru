@@ -35,7 +35,7 @@ HRESULT WINAPI ResumeTracking();
  **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было возобновлено. Если отслеживание нельзя возобновить, так как контекст был недоступен, возвращается **E_FAIL**.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*  
+ **Заголовок.** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [SuspendTracking](../msbuild/suspendtracking.md)
