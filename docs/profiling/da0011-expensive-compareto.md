@@ -1,5 +1,5 @@
 ---
-title: DA0011. Затратный метод CompareTo | Документация Майкрософт
+title: DA0011. Затратный метод CompareTo | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

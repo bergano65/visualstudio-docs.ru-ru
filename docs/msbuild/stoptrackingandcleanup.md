@@ -35,7 +35,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
  Возвращает **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было остановлено.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*  
+ **Заголовок.** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

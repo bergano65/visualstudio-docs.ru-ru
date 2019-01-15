@@ -21,7 +21,7 @@ ms.locfileid: "53831645"
  Несмотря на то, что встроенные в отладчик средства диагностики — это отличный способ оценить производительность приложения во время разработки, работа отладчика может существенно сказаться на показателях программы. Чтобы получить более точные данные о производительности, попробуйте дополнительно проанализировать программу с помощью средств диагностики Visual Studio, не встроенных в отладчик. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком или без него).  
   
 ## <a name="perftips"></a>PerfTips  
- При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в разделе [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
+ При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в разделе [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   

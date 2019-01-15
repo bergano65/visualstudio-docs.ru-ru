@@ -1,5 +1,5 @@
 ---
-title: DA0010. Затратный метод GetHashCode | Документация Майкрософт
+title: DA0010. Затратный метод GetHashCode | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
