@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_hfaFloat | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 06e2ba5bc1059e0e3650329b48681687652ae143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965886"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Получает флаг, указывающий, содержит ли определяемого пользователем типа (UDT) однородных данных с плавающей запятой aggregate (HFA) типа float.  
@@ -27,7 +25,7 @@ ms.locfileid: "49900245"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_hfaFloat(   
+HRESULT get_hfaFloat(   
    BOOL* pRetVal  
 );  
 ```  
@@ -45,12 +43,12 @@ HRESULT get_hfaFloat(
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
  Библиотеки DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

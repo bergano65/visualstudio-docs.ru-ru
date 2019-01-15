@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: включить параметры безопасности ClickOnce-приложений | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Включить параметры безопасности ClickOnce-приложений | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967278"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Практическое: включить параметры безопасности ClickOnce-приложений
+# <a name="how-to-enable-clickonce-security-settings"></a>Как выполнить включение параметров безопасности приложений ClickOnce
 Разграничение доступа для приложений ClickOnce должна быть включена для публикации приложения. Это выполняется автоматически при публикации приложения с помощью мастера публикации.  
   
  В некоторых случаях включение управления доступом для кода может повлиять на производительность при создании или отладке приложения; в этих случаях может потребоваться временно отключить параметры безопасности.  
@@ -60,5 +58,4 @@ ms.locfileid: "39150941"
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- 
+ [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   

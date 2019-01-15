@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отображение свойств сообщения | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отображение свойств сообщения | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message properties in SpyHelp
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54294ec72df4abfd6ba96e334017e58fca3d18c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8ff62a6d88d7a85638029542363722d9e7e7179c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962118"
 ---
-# <a name="how-to-display-message-properties"></a>Практическое руководство. Отображение свойств сообщения
+# <a name="how-to-display-message-properties"></a>Как выполнить отображение свойств сообщения
 Чтобы получить дополнительные сведения о сообщениях, перечисленных в [представления сообщений](../debugger/messages-view.md), использовать [диалоговое окно "Свойства сообщения"](../debugger/message-properties-dialog-box.md).  
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>Чтобы открыть диалоговое окно свойств сообщения  

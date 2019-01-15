@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_thunkOrdinal | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e3893d7c74d92caa708606c336eb2775c538f1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b13669c7a93141f3b54c15a20a5faee43d5a8747
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953213"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Извлекает тип преобразователя значения функции.  
@@ -27,7 +25,7 @@ ms.locfileid: "49918349"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_thunkOrdinal (   
+HRESULT get_thunkOrdinal (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,7 +45,7 @@ HRESULT get_thunkOrdinal (
   
  «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -1,8 +1,6 @@
 ---
 title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955559"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Проблемы конфигурации сервера и клиента в развертываниях ClickOnce
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.  
 
  Кроме того, некоторые веб-серверы и веб-приложения, такие как [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], содержат список файлов и типов файлов, которые не удается загрузить. Например [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] предотвращает загрузку всех *Web.config* файлов. Эти файлы могут содержать конфиденциальные сведения, такие как имена пользователей и пароли.  
@@ -35,7 +33,7 @@ ms.locfileid: "49849447"
 
  Некоторые веб-серверы могут блокировать файлы с расширениями, такие как *.dll*, *.config*, и *.mdf*. Приложения на основе Windows, как правило, содержат файлы с некоторыми из этих расширений. Если пользователь попытается запустить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, обращающееся к заблокированного файла на веб-сервере, будет выдана ошибка. Вместо того, чтобы разблокировать все расширения файлов, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] публикует каждый файл приложения с *.deploy* расширение файла по умолчанию. Таким образом администратор должен только для настройки веб-сервер, чтобы разблокировать следующие три файла расширения:  
 
-- *.Application*  
+- *.application*  
 
 - *.manifest*  
 
@@ -51,7 +49,7 @@ ms.locfileid: "49849447"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce и прокси-сервер проверки подлинности  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для интеграции Windows проверка подлинности прокси, начиная с версии .NET Framework 3.5. Нет определенных Machine.config не требуется. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для других протоколов проверки подлинности как Basic или Digest.  
 
- Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Дополнительные сведения см. в разделе http://go.microsoft.com/fwlink/?LinkId=158730.  
+ Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Для получения дополнительной информации см. http://go.microsoft.com/fwlink/?LinkId=158730.  
 
  Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).  
 
@@ -99,20 +97,20 @@ ms.locfileid: "49849447"
 
 | Тип URL-адреса | Описание |
 |----------| - |
-| FTP: / / | Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
+| ftp:// | Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 | http:// | Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 | https:// | Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 | file:// | Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Брандмауэр Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP с пакетом обновления 2 (SP2): Брандмауэр Windows  
  По умолчанию в Windows XP с пакетом обновления 2 включает брандмауэр Windows. Если вы разрабатываете приложение на компьютере с установленной операционной системой Windows XP, вы по-прежнему публикации и запуску [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с локального сервера, где работают службы IIS. Тем не менее не может получить доступ к этом сервере, где работают службы IIS с другого компьютера, если не открыть брандмауэр Windows. Инструкции по управлению брандмауэром Windows содержатся в справке Windows.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Включить серверные расширения FrontPage  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Включить серверные расширения FrontPage  
  Серверные расширения FrontPage от Майкрософт является обязательным для публикации приложений на сервере Windows, используется протокол HTTP.  
 
  По умолчанию в Windows Server нет установлены серверные расширения FrontPage. Если вы хотите использовать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для публикации на сервере Windows Server Web, который использует протокол HTTP с помощью серверных расширений FrontPage, вам сначала необходимо установить серверные расширения FrontPage. Установку можно выполнить с помощью средства администрирования Управление данным сервером в Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Типы содержимого заблокированное устройство  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Заблокированная типы содержимого  
  Службы IIS на [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] блокируют все типы файлов, за исключением определенных известных типов содержимого (например, *.htm*, *.html*, *.txt*, и так далее). Чтобы включить развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений, использующих этот сервер, необходимо изменить параметры IIS для разрешения загрузки файлов типа *.application*, *.manifest*и любых других настраиваемых типов файлов используемый приложением.  
 
  Если развертывание выполняется с помощью сервера IIS, запустите *inetmgr.exe* и добавить новые типы файлов для веб-страницы по умолчанию:  
@@ -136,6 +134,6 @@ ms.locfileid: "49849447"
  Подробные инструкции для служб IIS см. в разделе [способы указания дополнительных типов документов для сжатия HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).  
 
 ## <a name="see-also"></a>См. также  
- [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
+ [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
