@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadMultiple | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8be22e2a855f19c412725833fa18e182ebff6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b3d51e398da337a12f38a099045bd82222ca3105
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948028"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Чтение указанного свойства из текущего набора свойств.  
@@ -27,7 +25,7 @@ ms.locfileid: "49904058"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT ReadMultiple(   
+HRESULT ReadMultiple(   
    ULONG          cpspec,  
    PROPSPEC const rgpspec,  
    PROPVARIANT    rgvar  
@@ -45,10 +43,10 @@ HRESULT ReadMultiple(
  [in, out] Массив `PROPVARIANT` структуры (в пространстве имен Microsoft.VisualStudio.OLE.Interop), который подлежит заполнению значения для каждого свойства. Размер массива должен быть по крайней мере `cpspec` элементов в размер. Вызывающему объекту не требуется для инициализации значений в массиве.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если один или несколько свойств не найден. В противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если один или несколько свойств не найден. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Если свойство не найдено, соответствующая запись в `rgvar` массив содержит `VARIANT` с типом `VT_EMPTY`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

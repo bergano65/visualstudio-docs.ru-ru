@@ -1,8 +1,6 @@
 ---
 title: Использование атрибута DebuggerTypeProxy | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
-ms.translationtype: MT
+ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889168"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Использование атрибута DebuggerTypeProxy
 
-Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, которая имеет учетную запись-посредник, прокси заменяет исходный тип в **отображения**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
+Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
 
 Данный атрибут может применяться к:
 
@@ -58,13 +56,13 @@ ms.locfileid: "49411070"
 
 Этот синтаксис необходимо использовать при использовании универсального типа в качестве целевого типа в атрибуте `DebuggerTypeProxy`. Атрибут `DebuggerTypeProxy` предположит параметры типа самостоятельно.
 
-Дополнительные сведения об открытых и закрытых типах в C# см. в разделе [спецификации языка C#](/dotnet/csharp/language-reference/language-specification), откройте раздел 20.5.2 и закрытые типы.
+Дополнительные сведения об открытых и закрытых типах в C# см. в разделе [ C# спецификации языка](/dotnet/csharp/language-reference/language-specification), откройте раздел 20.5.2 и закрытые типы.
 
 В Visual Basic синтаксис для открытых типов не поддерживается, поэтому данный способ для Visual Basic не подходит. Вместо этого необходимо использовать строковое представление имени открытого типа.
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Создание настраиваемых представлений собственных объектов](../debugger/create-custom-views-of-dot-managed-objects.md)

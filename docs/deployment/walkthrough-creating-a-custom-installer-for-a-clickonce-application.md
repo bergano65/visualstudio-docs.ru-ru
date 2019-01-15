@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание пользовательского установщика для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 4dcf81d6ddba8fdd4fbdbc3e1ea9ca15b7682498
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991010"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство: Создание пользовательского установщика для приложения ClickOnce
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 Любое приложение на основе *.exe* автоматически устанавливается и обновляется с помощью настраиваемого установщика файл. Пользовательский установщик можно реализовать настраиваемый пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для обслуживания и обеспечения безопасности. Для выполнения операции установки, использует пользовательский установщик <xref:System.Deployment.Application.InPlaceHostingManager> класса. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложения ClickOnce.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -75,7 +73,7 @@ ms.locfileid: "39152247"
     ```  
   
 ## <a name="next-steps"></a>Следующие шаги  
- Приложения ClickOnce можно также добавить настраиваемую логику обновления, включая пользовательский интерфейс для отображения во время обновления. Дополнительные сведения см. в разделе <xref:System.Deployment.Application.UpdateCheckInfo>. ClickOnce-приложения также можно отключить стандартные записи меню "Пуск", ярлыка и добавление или удаление программ с помощью `<customUX>` элемент. Дополнительные сведения см. в разделе [ \<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Приложения ClickOnce можно также добавить настраиваемую логику обновления, включая пользовательский интерфейс для отображения во время обновления. Для получения дополнительной информации см. <xref:System.Deployment.Application.UpdateCheckInfo>. ClickOnce-приложения также можно отключить стандартные записи меню "Пуск", ярлыка и добавление или удаление программ с помощью `<customUX>` элемент. Дополнительные сведения см. в разделе [ \<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
   
 ## <a name="see-also"></a>См. также  
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   

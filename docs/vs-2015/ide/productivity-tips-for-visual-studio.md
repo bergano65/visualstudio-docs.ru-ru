@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
@@ -14,12 +13,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db89bda465d1a4fc4da1b3066858b270ce50c5bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928858"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +83,7 @@ ms.locfileid: "53051034"
 
      Синие прямоугольники предлагают варианты исправления ошибок в коде.
 
-     Рис. 1 Смарт-теги ошибок
+     Рис. 1. Смарт-теги ошибок
 
      ![Предложения по смарт-тегам ошибок](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
@@ -160,7 +159,7 @@ ms.locfileid: "53051034"
 
      Для более эффективного управления файлами можно создать новый экземпляр **обозревателя решений** и переместить его на другой монитор. Чтобы создать еще один экземпляр **обозревателя решений**, откройте контекстное меню в **обозревателе решений** и выберите команду **Создать представление обозревателя решений**.
 
--   **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в разделе [Как Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в разделе [Как менять шрифты и цвета](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Как менять шрифты и цвета в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [как: Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)

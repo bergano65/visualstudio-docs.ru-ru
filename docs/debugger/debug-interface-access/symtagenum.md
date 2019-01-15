@@ -1,8 +1,6 @@
 ---
 title: SymTagEnum | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 35ea533cc9388d16de0c9c8bc632d60ef2c9c228
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942467"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Указывает тип символа.  
@@ -27,7 +25,7 @@ ms.locfileid: "49875221"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-enum SymTagEnum {   
+enum SymTagEnum {   
    SymTagNull,  
    SymTagExe,  
    SymTagCompiland,  
@@ -206,7 +204,7 @@ enum SymTagEnum {
 ## <a name="requirements"></a>Требования  
  Заголовок: cvconst.h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)   

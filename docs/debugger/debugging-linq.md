@@ -1,8 +1,6 @@
 ---
 title: Отладка LINQ | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871009"
 ---
 # <a name="debugging-linq"></a>Отладка LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с некоторыми ограничениями поддерживает отладку кода встроенного языка запросов (LINQ). Большинство возможностей отладки работают с операторами LINQ, включая пошаговое выполнение, установку точек останова и просмотр результатов в окнах отладчика. В этом разделе описаны основные ограничения, связанные с отладкой кода LINQ.  
@@ -106,10 +104,10 @@ End Function
   
  Измененный запрос вызывает функцию `IsEven` при каждом проходе через `items`. Чтобы проверить, выполняется ли для каждого элемента заданное условие, можно использовать окна отладчика или пройти по коду в пошаговом режиме в `IsEven`. Предикат в этом примере достаточно прост. Тем не менее, при отладке более сложных предикатов этот метод может оказаться весьма полезным.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Изменить и продолжить, не поддерживается для LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Операция "Изменить и продолжить" для LINQ не поддерживается  
  Изменить и продолжить поддерживает изменения в запросах LINQ с ограничениями. Дополнительные сведения см. в разделе [EnC поддерживаемые изменения](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)

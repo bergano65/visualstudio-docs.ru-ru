@@ -1,8 +1,6 @@
 ---
-title: Отладка, диалоговое окно параметров | Документы Microsoft
-ms.custom: ''
+title: Отладка, диалоговое окно "Параметры" | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935116"
 ---
 # <a name="debugging-options-dialog-box"></a>Папка "Отладка", диалоговое окно "Параметры"
-**Отладка** папки в **параметры** диалоговое окно в **средства** меню содержит следующие страницы, которые позволяют указать отладчику параметры средств.  
+Папка **Отладка** диалогового окна **Параметры** в меню **Сервис** содержит следующие страницы, которые позволяют задавать параметры средств отладки.  
   
 -   [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -39,9 +37,9 @@ ms.locfileid: "31472896"
   
 -   [Окно "Вывод", узел "Отладка", диалоговое окно "Параметры"](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Символы, отладка, диалоговое окно «Параметры»](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [Страница "Символы", папка "Отладка", диалоговое окно "Параметры"](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md) [отладки в Visual Studio](../debugger/index.md)  
  [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
  [Справочник по пользовательскому интерфейсу отладчика](../debugger/debugging-user-interface-reference.md)

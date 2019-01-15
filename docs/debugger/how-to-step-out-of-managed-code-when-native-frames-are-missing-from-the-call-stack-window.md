@@ -2,7 +2,6 @@
 title: Шаг с выходом C# кода, когда фрагменты машинного кода не стек вызовов | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867440"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Как выполнить Шаг с выходом из управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Как выполнить выход из пошагового выполнения управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов
 
 Если код имеет машинные фреймы, которых нет в окне **Стек вызовов**, шаг с выходом из управляемого кода может привести к непредсказуемым результатам. Чтобы обойти это ограничение, можно вместо команды **Шаг с выходом** использовать точку останова.
 
@@ -48,4 +47,4 @@ ms.locfileid: "53057656"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство: использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)
+- [Практическое руководство. использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)

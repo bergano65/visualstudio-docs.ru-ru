@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928293"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 Можно расширить функциональные возможности адаптера таблицы, создав файл разделяемого класса для TableAdapter и добавления к нему кода (вместо добавления кода к *DatasetName.DataSet.Designer* файла). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -31,7 +30,7 @@ ms.locfileid: "38783094"
 По умолчанию после разделения набора данных и кода адаптера таблицы, получается отдельные файлы классов в каждом проекте. Исходный проект содержит файл с именем *DatasetName.Designer.vb* (или *DatasetName.Designer.cs*), содержащий код адаптера таблицы. Проект, который определен в **проект Dataset** свойство имеет файл с именем *DatasetName.DataSet.Designer.vb* (или *DatasetName.DataSet.Designer.cs*), содержит код набора данных.
 
 > [!NOTE]
->  При разделении наборов данных и адаптеров таблиц (задавая **проект DataSet** свойство), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.
+>  При разделении наборов данных и адаптеров таблиц (посредством установки свойства **Проект DataSet**) существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.
 
 > [!NOTE]
 > Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчики событий, когда требуется проверка. Дополнительные сведения см. в разделе [Добавление проверки в n уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -69,7 +68,7 @@ ms.locfileid: "38783094"
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения о данных в N-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
+- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
 - [Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)
-- [Общие сведения о иерархическое обновление](hierarchical-update.md)
+- [Общие сведения об иерархическом обновлении](hierarchical-update.md)

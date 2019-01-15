@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 9bf1fdf790878097c9d777ba8eae5386593bccb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989715"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Предоставляет доступ к записям в поток данных отладки.  
@@ -33,7 +31,7 @@ IDiaEnumDebugStreamData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumDebugStreamData`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|  
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Возвращает число записей в поток данных отладки.|  
@@ -105,13 +103,13 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
  Библиотеки DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

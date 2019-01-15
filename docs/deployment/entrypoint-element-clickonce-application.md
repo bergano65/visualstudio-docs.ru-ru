@@ -1,8 +1,6 @@
 ---
 title: '&lt;entryPoint&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950268"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; элемент (приложение ClickOnce)
 Идентифицирует сборку, которая должна быть выполнена, когда это [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение запускается на клиентском компьютере.  
@@ -58,44 +56,44 @@ ms.locfileid: "49934630"
 
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Необязательный. Это значение не используется платформой .NET Framework.|  
+|`name`|Необязательный параметр. Это значение не используется платформой .NET Framework.|  
 
  У элемента`entryPoint` имеются перечисленные ниже элементы.  
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Обязательно. Роль `assemblyIdentity` и его атрибуты, определенные в [ \<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Обязательный. Роль `assemblyIdentity` и его атрибуты, определенные в [ \<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md).  
 
  `processorArchitecture` Атрибут этого элемента и `processorArchitecture` атрибутом, определенным в `assemblyIdentity` в другом месте в приложении манифест должен соответствовать.  
 
 ## <a name="commandline"></a>commandLine  
- Обязательно. Должен быть дочерним элементом `entryPoint` элемент. Он не имеет дочерних элементов и имеет следующие атрибуты.  
+ Обязательный. Должен быть дочерним элементом `entryPoint` элемент. Он не имеет дочерних элементов и имеет следующие атрибуты.  
 
 
 | Атрибут | Описание |
 |--------------| - |
-| `file` | Обязательно. Локальную ссылку на сборку для запуска [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Это значение не может содержать косую черту (/) или обратную косую черту (\\) разделители путей. |
-| `parameters` | Обязательно. Описывает действие, выполняемое с точкой входа. Единственным допустимым значением является `run`; Если передается пустая строка, `run` предполагается, что. |
+| `file` | Обязательный. Локальную ссылку на сборку для запуска [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Это значение не может содержать косую черту (/) или обратную косую черту (\\) разделители путей. |
+| `parameters` | Обязательный. Описывает действие, выполняемое с точкой входа. Единственным допустимым значением является `run`; Если передается пустая строка, `run` предполагается, что. |
 
 ## <a name="customhostrequired"></a>customHostRequired  
- Необязательный. Если включен, указывает, что это развертывание содержит компонент, который будет развернут в настраиваемом узле, а не является автономным приложением.  
+ Необязательный параметр. Если включен, указывает, что это развертывание содержит компонент, который будет развернут в настраиваемом узле, а не является автономным приложением.  
 
  Если этот элемент присутствует, `assemblyIdentity` и `commandLine` элементы не также должен присутствовать. Если Да, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] вызовут ошибки проверки во время установки.  
 
  Этот элемент не имеет атрибутов и дочерних элементов.  
 
 ## <a name="customux"></a>customUX  
- Необязательный. Указывает, что приложение устанавливается и обслуживается пользовательский установщик и не создает запись меню Пуск, клавиш или добавить и удалить запись программы.  
+ Необязательный параметр. Указывает, что приложение устанавливается и обслуживается пользовательский установщик и не создает запись меню Пуск, клавиш или добавить и удалить запись программы.  
 
 ```xml  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
 
- Приложения, содержащего элемент customUX необходимо предоставить пользовательский установщик, использующий <xref:System.Deployment.Application.InPlaceHostingManager> классом для выполнения установки операций. Приложения с помощью этого элемента невозможно установить, дважды щелкнув его готовности к установке загрузчика setup.exe или манифеста. Можно создать пользовательский установщик, пункты меню Пуск, ярлыки и записи, Установка и удаление программ. Если пользовательский установщик не выполняет запись Установка и удаление программ, его необходимо сохранить идентификатор подписки, предоставляемый <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> свойство и включите пользователя для удаления приложения позже, вызвав <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> метод. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского установщика для приложения ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Приложения, содержащего элемент customUX необходимо предоставить пользовательский установщик, использующий <xref:System.Deployment.Application.InPlaceHostingManager> классом для выполнения установки операций. Приложения с помощью этого элемента невозможно установить, дважды щелкнув его готовности к установке загрузчика setup.exe или манифеста. Можно создать пользовательский установщик, пункты меню Пуск, ярлыки и записи, Установка и удаление программ. Если пользовательский установщик не выполняет запись Установка и удаление программ, его необходимо сохранить идентификатор подписки, предоставляемый <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> свойство и включите пользователя для удаления приложения позже, вызвав <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> метод. Дополнительные сведения см. в разделе [Пошаговое руководство: создание пользовательского установщика для приложения ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
 
 ## <a name="remarks"></a>Примечания  
  Этот элемент определяет, сборки и точки входа для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  
 
- Нельзя использовать `commandLine` для передачи параметров в приложение во время выполнения. Можно открыть параметры строки запроса для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания из приложения <xref:System.AppDomain>. Дополнительные сведения см. в разделе [как: получить данные строки запроса в интерактивном приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Нельзя использовать `commandLine` для передачи параметров в приложение во время выполнения. Можно открыть параметры строки запроса для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания из приложения <xref:System.AppDomain>. Дополнительные сведения см. в разделе [Как извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
 
 ## <a name="example"></a>Пример  
  В следующем примере кода показано `entryPoint` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера для [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md) раздела.  

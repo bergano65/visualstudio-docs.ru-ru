@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumTables::Next | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c7a038bbc6fecddb69950722f4423ab326c1b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 27d9811fe55a3b942cd020ae8038f07df8bf7a2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949413"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Извлекает указанное число таблиц в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49875805"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG       celt,  
    IDiaTable** rgelt,  
    ULONG*      pceltFetched  
@@ -45,8 +43,8 @@ HRESULT Next (
  [out] Возвращает количество таблиц в выбранных перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные таблицы. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные таблицы. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

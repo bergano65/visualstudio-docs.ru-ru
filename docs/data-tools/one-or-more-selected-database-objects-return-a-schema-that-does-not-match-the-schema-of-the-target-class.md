@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944130"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Один или несколько выбранных объектов базы данных возвращает схему, не соответствующую схеме целевого класса
 
@@ -25,9 +24,9 @@ ms.locfileid: "37089468"
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-1. Нажмите кнопку **ОК** чтобы закрыть диалоговое окно.
+1. Нажмите кнопку **OK**, чтобы закрыть диалоговое окно.
 
-2. Выберите объект базы данных, который возвращает данные, которые соответствуют схеме целевого класса (класс, в который сбрасывается объект базы данных **реляционный конструктор объектов**).
+2. Выберите объект базы данных, который возвращает данные, не соответствующие схеме целевого класса (класс объекта базы данных, который сбрасывается в **реляционный конструктор объектов**).
 
 ## <a name="see-also"></a>См. также
 

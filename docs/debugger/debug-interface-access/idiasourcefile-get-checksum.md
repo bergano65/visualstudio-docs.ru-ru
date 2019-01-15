@@ -1,8 +1,6 @@
 ---
 title: IDiaSourceFile::get_checksum | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 463720503440771dcbdfbef39703a53cdc875e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843350"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Извлекает байты контрольной суммы.  
@@ -27,7 +25,7 @@ ms.locfileid: "49919433"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_checksum (   
+HRESULT get_checksum (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  
@@ -54,6 +52,6 @@ HRESULT get_checksum (
   
  Обычно контрольные суммы не более чем 32 байта, но не следует предполагать, что это максимальный размер контрольной суммы. Задайте `data` параметр `NULL` получить число байтов, необходимых для получения контрольной суммы. Затем выделить буфер соответствующего размера и вызвать этот метод еще раз с помощью нового буфера.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

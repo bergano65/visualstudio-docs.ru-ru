@@ -1,8 +1,6 @@
 ---
 title: IDiaDataSource::openSession | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843116"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Открывает сеанс для выполнения запросов к символы.  
@@ -27,7 +25,7 @@ ms.locfileid: "49933512"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT openSession (
 |Значение|Описание|  
 |-----------|-----------------|  
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с источником символов.|  
-|E_INVALIDARG|Недопустимый `ppSession` параметра.|  
+|E_INVALIDARG|Недопустимый параметр `ppSession`.|  
 |E_OUTOFMEMORY|Недостаточно памяти для открытия сеанса.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -61,7 +59,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

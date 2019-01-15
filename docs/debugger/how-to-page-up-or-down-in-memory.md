@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: Перемещение вверх или вниз по содержимому памяти | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Перемещение вверх или вниз по содержимому памяти | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902231"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. Перемещение вверх или вниз по содержимому памяти
+# <a name="how-to-page-up-or-down-in-memory"></a>Как выполнить перемещение вверх или вниз по содержимому памяти
 
-При просмотре содержимого памяти в **памяти** окна или **Дизассемблированный код** окна, можно использовать вертикальную полосу прокрутки для перемещения вверх или вниз в области памяти.  
+При просмотре содержимого памяти в окне **Память** или **Дизассемблированный код** для перемещения вверх и вниз по области памяти можно использовать вертикальную полосу прокрутки.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Перемещение вверх или вниз в области памяти  
   
@@ -48,7 +46,7 @@ ms.locfileid: "52257129"
   
 -   Щелкните стрелку, расположенную над или под вертикальной полосой прокрутки.  
   
-## <a name="see-also"></a>См. также  
- [Памяти Windows](../debugger/memory-windows.md)   
- [Практическое: использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Окно памяти](../debugger/memory-windows.md)   
+ [Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)   
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

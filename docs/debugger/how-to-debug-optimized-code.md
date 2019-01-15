@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отладка оптимизированного кода | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отладка оптимизированного кода | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843480"
 ---
-# <a name="how-to-debug-optimized-code"></a>Практическое руководство. Отладка оптимизированного кода
+# <a name="how-to-debug-optimized-code"></a>Как выполнить отладку оптимизированного кода
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).

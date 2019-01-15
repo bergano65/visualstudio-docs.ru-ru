@@ -1,8 +1,6 @@
 ---
 title: Отладчик, параметры и подготовка | Документация Майкрософт
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926863"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
   
- Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Дополнительные сведения см. в разделе [Как настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Параметры проекта отладчика](../debugger/debugger-project-settings.md)  
@@ -42,7 +40,7 @@ ms.locfileid: "52257034"
  [Консольные проекты](../debugger/debugging-preparation-console-projects.md)  
  Приводятся инструкции по настройке консольных проектов для отладки.   
   
- [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio.](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Объясняется, как отладить исполняемый объект, который не был создан, как часть проекта Visual Studio.  
   
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)  
@@ -51,7 +49,7 @@ ms.locfileid: "52257034"
  [Практическое руководство. Установка версии платформы .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Описано, как задать раздел реестра для указания версии для использования в отладчике.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)  
  [Отладка в Visual Studio](../debugger/index.md)  
  [Обзор функций отладчика](../debugger/debugger-feature-tour.md)

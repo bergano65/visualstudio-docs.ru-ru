@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отладка ClickOnce-приложения с ограниченными разрешениями | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отладка ClickOnce-приложения с ограниченными разрешениями | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921261"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Практическое: отладка ClickOnce-приложения с ограниченными разрешениями
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Как выполнить Отладка ClickOnce-приложения с ограниченными разрешениями
 Как разработчик вы, скорее всего, работаете на компьютере разработчика с разрешениями полного доверия и поэтому не увидите те исключения безопасности, возникающие при отладке приложения ClickOnce, с которыми может столкнуться конечный пользователь, работающий с ограниченными разрешениями.  
   
  Чтобы перехватывать такие исключения, необходимо выполнять отладку приложения с теми же разрешениями, которые имеет конечный пользователь. Отладку с ограниченными разрешениями можно включить на странице **Безопасность** **конструктора проектов**.  
@@ -60,8 +58,8 @@ ms.locfileid: "39152975"
   
 6.  В текстовом поле **Отладить это приложение как загруженное со следующего URL** введите URL-адрес или сетевой путь.  
   
-## <a name="see-also"></a>См. также  
- [Практическое: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

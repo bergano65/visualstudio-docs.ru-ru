@@ -1,8 +1,6 @@
 ---
-title: Отладка машинного кода часто задаваемые вопросы | Документы Microsoft
-ms.custom: ''
+title: Отладка машинного кода часто задаваемые вопросы | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866937"
 ---
 # <a name="debugging-native-code-faqs"></a>Вопросы и ответы по отладке машинного кода
 Ниже представлены разделы, содержащие ответы на часто задаваемые вопросы:  
@@ -36,11 +34,11 @@ ms.locfileid: "31482065"
   
 -   [Как отладить нарушение доступа?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
--   [Как я могу узнать, если указатели повреждают адрес памяти?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
+-   [Как определить, повреждают ли указатели адрес памяти?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
 -   [Как определить, откуда передается неправильное значение параметра?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
--   [При вызове функции сотен раз, которые вызывают сбой?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
+-   [Как определить конкретный вызов функции, приведший к сбою, если таких вызовов было порядка ста?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 -   [Где можно найти коды ошибок Win32?](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
@@ -48,8 +46,8 @@ ms.locfileid: "31482065"
   
 -   [Как использовать окна отладчика при отладке активной программы?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
--   [При прерывании работы в MFC, как можно вернуться к функции, вызвавшей MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
+-   [Как вернуться к функции, вызвавшей MFC, при прерывании работы в MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

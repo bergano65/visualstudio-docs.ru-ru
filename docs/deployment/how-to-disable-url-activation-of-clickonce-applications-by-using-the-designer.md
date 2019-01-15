@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отключение активации ClickOnce-приложений по URL-адрес с помощью конструктора | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отключение активации ClickOnce-приложений по URL-адрес с помощью конструктора | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97357dd92525be2d36b552c5f3df49080f46d29b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 1f1fddb68737ca316fa3fc580f050cf4bfa04fba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891457"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое: отключение активации ClickOnce-приложений по URL-адрес с помощью конструктора
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Как выполнить отключение активации приложений ClickOnce по URL-адресу при помощи конструктора
 Как правило [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения будет запускаться автоматически сразу после его установки на веб-сервере. По соображениям безопасности можно отключить это поведение и сообщить пользователям, чтобы запустить приложение из **запустить** меню вместо этого. Следующая процедура описывает процесс отключения активации через URL.  
   
  Такой подход можно использовать только для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установленных на компьютере пользователя с веб-сервера. Он не может использоваться для интерактивных приложений, которые могут быть запущены только с помощью URL-адрес. Дополнительные сведения о различиях между только в Интернете и установленными приложениями см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, эту задачу можно решить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [как: отключение активации из URL-АДРЕСУ приложений ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
+ В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, эту задачу можно решить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [Как отключить активацию по URL-адресу приложений ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
   
 ## <a name="procedure"></a>Процедура  
   

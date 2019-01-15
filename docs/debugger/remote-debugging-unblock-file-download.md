@@ -1,8 +1,6 @@
 ---
 title: Разблокировать загрузки инструментов удаленной отладки
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905349"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Практическое: разблокировать загрузки инструментов удаленной отладки на Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Как выполнить Разблокировать загрузки инструментов удаленной отладки на Windows Server
 
 Параметры безопасности по умолчанию в Internet Explorer в Windows Server может быть слишком много времени загрузки компонентов, таких как инструменты удаленной отладки.
 
@@ -34,19 +32,19 @@ ms.locfileid: "39180663"
 
 * Загрузить инструменты удаленной отладки непосредственно на сервере Windows и следуйте указаниям, чтобы добавить надежные сайты. Современные веб-сайты включаются много сторонних ресурсов, чтобы это может привести многочисленные запросы. Кроме того все перенаправленные ссылки может потребоваться добавить вручную. Вы можете добавить некоторые из надежных узлов перед началом загрузки. Перейдите к **свойства обозревателя > Безопасность > Надежные сайты > сайты** и добавьте следующие узлы.
 
-  * VisualStudio.Microsoft.com
+  * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
   * о: пустое
 
   Для более старых версий отладчика на my.visualstudio.com добавьте эти дополнительные сайты, чтобы убедиться в том, что выполнено успешно, это имя входа:
 
-  * Microsoft.com
+  * microsoft.com
   * go.microsoft.com
   * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
+  * my.visualstudio.com
+  * login.microsoftonline.com
   * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
+  * secure.aadcdn.microsoftonline-p.com
   * MSFT.STS.Microsoft.com
   * AUTH.gfx.MS
   * app.vssps.visualstudio.com

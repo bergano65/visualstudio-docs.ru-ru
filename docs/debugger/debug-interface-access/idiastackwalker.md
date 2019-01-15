@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalker | Документы Microsoft
-ms.custom: ''
+title: IDiaStackWalker | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9c4509e56949d739af3e39e04b89f289edfbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935982"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Предоставляет методы, чтобы сделать стек стека, используя сведения в PDB-файл.  
@@ -35,17 +33,17 @@ IDiaStackWalker: IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Извлекает перечислитель кадр стека для x86 платформы.|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Извлекает перечислитель кадр стека для x86 платформ.|  
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Извлекает перечислитель кадр стека для типа конкретную платформу.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот интерфейс используется для получения списка кадров стека для загруженного модуля. Каждый из методов передается [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) object (реализованный в клиентском приложении), который предоставляет сведения, необходимые для создания списка кадров стека.  
+ Этот интерфейс используется для получения списка кадров стека для загруженного модуля. Каждый из методов передается [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) object (реализовано клиентским приложением), который предоставляет сведения, необходимые для создания списка кадров стека.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс можно получить, вызвав `CoCreateInstance` метод с кодом `CLSID_DiaStackWalker` и идентификатор интерфейса `IID_IDiaStackWalker`. В примере показано, как получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс получается путем вызова `CoCreateInstance` метод с идентификатором класса `CLSID_DiaStackWalker` и идентификатор интерфейса `IID_IDiaStackWalker`. В примере показано, как этот интерфейс получается.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaStackWalker` интерфейса.  
+ В этом примере показано, как получить `IDiaStackWalker` интерфейс.  
   
 ```C++  
   
@@ -62,12 +60,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

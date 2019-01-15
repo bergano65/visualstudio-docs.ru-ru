@@ -1,8 +1,6 @@
 ---
 title: Отладка проектов библиотеки DLL | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871642"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Отладка библиотек DLL в Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -123,7 +121,7 @@ ms.locfileid: "53561698"
   
 Прежде чем начать отладку вызывающего приложения, установите точку останова в библиотеке DLL. См. в разделе [использование точек останова](../debugger/using-breakpoints.md). При попадании библиотеки DLL, следует выполнить код, наблюдая действия в каждой строке. Дополнительные сведения см. в разделе [Навигация по коду в отладчике](../debugger/navigating-through-code-with-the-debugger.md).
   
-Во время отладки, можно использовать **модули** окно, чтобы проверить, DLL и *.exe* файлы загрузкой приложения. Чтобы открыть **модули** окне во время отладки, выберите **Отладка** > **Windows** > **модули**. Дополнительные сведения см. в разделе [Как Использование окна модулей](../debugger/how-to-use-the-modules-window.md). 
+Во время отладки, можно использовать **модули** окно, чтобы проверить, DLL и *.exe* файлы загрузкой приложения. Чтобы открыть **модули** окне во время отладки, выберите **Отладка** > **Windows** > **модули**. Дополнительные сведения см. в разделе [Как использовать окно модулей](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Используйте окно "Интерпретация"  
 

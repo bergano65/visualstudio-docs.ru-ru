@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911045"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Извлекает исходного файла и номер строки, указывающие, где определен указанного определяемого пользователем типа.  
+Извлекает исходный файл и номер строки, указывающие, где определен указанного определяемого пользователем типа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,11 +29,11 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Параметры  
  `ppResult`  
- [out] Объект `IDiaLineNumber` , содержащий исходный файл и номер строки, где определяемой пользователем.  
+ [out] Объект `IDiaLineNumber` , содержащий исходный файл и номер строки, где определяются пользователем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

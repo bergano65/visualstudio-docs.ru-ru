@@ -1,8 +1,6 @@
 ---
-title: 'Как: запуск и остановка записи сообщений | Документы Microsoft'
-ms.custom: ''
+title: Как выполнить Запуск и остановка записи сообщений | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -14,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926666"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Практическое руководство. Запуск и остановка записи сообщений
-Когда [представления сообщений](../debugger/messages-view.md) окно не активно, **начать ведение журнала** или **остановить ведение журнала** параметр появляется в Spy ++ **сообщений** меню и соответствующий **начать запись** или **остановить ведение журнала** кнопки панели инструментов становится активным.  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Как выполнить запуск и остановку записи сообщений
+Когда [представления сообщений](../debugger/messages-view.md) окно не активно, **начать ведение журнала** или **остановить ведение журнала** параметр появляется в Spy ++ **сообщений** меню и соответствующий **начать ведение журнала** или **остановить ведение журнала** кнопки на панели инструментов становится активным.  
   
-### <a name="to-start-the-message-log-display"></a>Запуск отображения журнала сообщений  
+### <a name="to-start-the-message-log-display"></a>Чтобы начать отображение журнала сообщений  
   
-1.  Из **сообщений** меню, выберите **начать запись**.  
+1.  Из **сообщений** меню, выберите **начать ведение журнала**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Остановка записи сообщений  
   

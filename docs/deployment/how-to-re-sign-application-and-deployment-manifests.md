@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: повторной подписи манифестов приложения и развертывания | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Повторно подписать манифесты приложения и развертывания | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937992"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое: повторное подписание манифестов приложения и развертывания
-После внесения изменений в свойства развертывания в манифесте приложения для приложений Windows Forms, приложения Windows Presentation Foundation (xbap) или решения Office, необходимо повторно подписать приложение и манифесты развертывания с помощью сертификат. Этот процесс гарантирует, что Подделанные файлы не установлены на компьютерах конечных пользователей.  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Как выполнить повторное подписание манифестов приложения и развертывания
+После внесения изменений в свойства развертывания в манифесте приложения для приложений Windows Forms, приложения Windows Presentation Foundation (xbap) или решения Office, необходимо повторно подписать приложение и манифесты развертывания с помощью сертификат. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.  
   
  Еще один сценарий, где могут заново подписывать манифесты, когда ваши заказчики хотят подписать приложение и манифесты развертывания своим собственным сертификатом.  
   
-## <a name="re-sign-the-application-and-deployment-manifests"></a>Повторно подписать приложение и манифесты развертывания  
- В этой процедуре предполагается, что вы уже внесены изменения в файле манифеста приложения (*.manifest*). Дополнительные сведения см. в разделе [как: изменение свойств развертывания](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
+## <a name="re-sign-the-application-and-deployment-manifests"></a>Повторное подписывание манифестов приложения и развертывания  
+ В этой процедуре предполагается, что вы уже внесены изменения в файле манифеста приложения (*.manifest*). Дополнительные сведения см. в разделе [Как Изменение свойств развертывания](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Для повторного подписания приложения и развертывания, манифестов с помощью Mage.exe  
   
@@ -116,12 +114,12 @@ ms.locfileid: "44280679"
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
- [Практическое: включить параметры безопасности ClickOnce-приложений](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Практическое: Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Практическое: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Практическое: отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Практическое: Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Практическое: Настройка поведения запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [Практическое руководство. Включение параметров безопасности приложений ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое руководство. Установка зоны безопасности для приложения ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Практическое руководство. Отладка приложения ClickOnce с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Практическое руководство. Настройка поведения запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

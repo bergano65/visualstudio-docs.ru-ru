@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c45f600462d1862b9f50e12c5849d9d7175310a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989219"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce
-По умолчанию все сборки включены в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения загружаются при первом запуске приложения. Тем не менее возможно, частей приложения, которые используются с небольшого набора пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. Следующий пример демонстрирует, как пометить определенные сборки в приложении как «необязательные» и как их загрузить с помощью классов в <xref:System.Deployment.Application> пространства имен, если они необходимы для общеязыковой среды выполнения (CLR).  
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce
+По умолчанию все сборки включены в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения загружаются при первом запуске приложения. Тем не менее возможно, частей приложения, которые используются с небольшого набора пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.  
   
 > [!NOTE]
 >  Для выполнения данной процедуры приложение должно выполняться с полным доверием.  
@@ -102,7 +100,7 @@ ms.locfileid: "49887661"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью MageUI.exe  
   
-1.  С помощью *MageUI.exe*, создайте манифест приложения, как описано в [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:  
+1.  С помощью *MageUI.exe*, создайте манифест приложения, как описано в [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:  
   
     -   Имя манифеста приложения `ClickOnceOnDemand`.  
   
@@ -110,7 +108,7 @@ ms.locfileid: "49887661"
   
     -   На **файлы** странице *ClickOnceLibrary.dll* введите `ClickOnceLibrary.dll` в **группы** столбца.  
   
-2.  С помощью *MageUI.exe*, создайте манифест развертывания, как описано в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Для манифеста развертывания используйте следующие параметры:  
+2.  С помощью *MageUI.exe*, создайте манифест развертывания, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Для манифеста развертывания используйте следующие параметры:  
   
     -   Имя манифеста развертывания `ClickOnceOnDemand`.  
   
@@ -126,7 +124,7 @@ ms.locfileid: "49887661"
    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
    ```  
   
-3. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. Вы должны увидеть строку в окне сообщения, который считывает «Hello, World!».  
+3. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!".  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Deployment.Application.ApplicationDeployment>

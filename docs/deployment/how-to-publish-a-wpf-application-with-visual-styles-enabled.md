@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: публикация приложения WPF с включенными визуальными стилями | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Публикация приложения WPF с включенными визуальными стилями | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861505"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Как выполнить Публикация приложения WPF с включенными визуальными стилями
 Визуальные стили включить внешний вид стандартные элементы управления для меняться в зависимости от темы, выбранного пользователем. По умолчанию визуальные стили не включены для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальных стилей для приложения WPF и публикации решения приводит к ошибке. В этом разделе описывается устранение этой ошибки и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview). Дополнительные сведения о сообщении об ошибке, см. в разделе [Устранение ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Чтобы устранить эту ошибку и опубликовать решение, необходимо выполнить следующие задачи:  
@@ -73,7 +71,7 @@ ms.locfileid: "52388112"
   
          Эта кнопка показывает все элементы проекта, включая те, которые были исключены и те, которые обычно скрыты. Файл манифеста отображается как элемент проекта.  
   
-2.  Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
   
 ## <a name="create-a-manifest-file"></a>Создать файл манифеста  
   

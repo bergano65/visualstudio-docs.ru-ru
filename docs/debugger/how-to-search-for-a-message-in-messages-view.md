@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: поиск сообщения в представлении сообщений | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Поиск сообщения в представлении сообщений | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863385"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Практическое руководство. Поиск сообщения в представлении сообщений
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Как выполнить поиск сообщения в представлении сообщений
 Конкретное сообщение в представлении сообщений можно найти с помощью его дескриптор, тип или идентификатор сообщения в качестве критерия поиска. Одним из них — или сочетания — будет иметь допустимые условия поиска. Также можно задать исходное направление поиска. Предопределенные поля в диалоговом окне с атрибутами выбранного сообщения.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Для поиска сообщения в представлении сообщений  

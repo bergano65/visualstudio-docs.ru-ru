@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: создание манифеста пакета | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание манифеста пакета | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943477"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Практическое: создание манифеста пакета
+# <a name="how-to-create-a-package-manifest"></a>Как выполнить Создание манифеста пакета
 Чтобы развернуть необходимые условия для приложения, можно использовать пакет начального загрузчика. Пакет начального загрузчика содержит один файл манифеста продукта манифест пакета для каждого языкового стандарта. Общие функции для различных локализованных версий следует перейти в манифест продукта.  
   
- Дополнительные сведения о манифестах пакетов см. в разделе [как: создание манифеста продукта](../deployment/how-to-create-a-product-manifest.md).  
+ Дополнительные сведения о манифестах пакетов см. в разделе [как: Создание манифеста продукта](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Создание манифеста пакета  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме продукта и пакета](../deployment/product-and-package-schema-reference.md)
+ [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

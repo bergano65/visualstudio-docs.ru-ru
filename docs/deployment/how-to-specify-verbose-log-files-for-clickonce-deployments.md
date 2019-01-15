@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: Указание подробных файлов журнала для развертываний ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Указание подробных файлов журнала для развертываний ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840256"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое: Указание подробных файлов журнала для развертываний ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Как выполнить Указание подробных файлов журнала для развертываний ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся подробные сведения, относящиеся к установке, инициализации, обновление и удаление [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Для более подробной информации, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] операции записи в файлы журнала, используйте редактор реестра (*regedit.exe*) для указания уровня детализации.  
   
 > [!CAUTION]
@@ -40,7 +38,7 @@ ms.locfileid: "39078746"
   
 3.  При необходимости создайте новый строковый параметр с именем `LogVerbosityLevel`.  
   
-4.  Задайте `LogVerbosityLevel` значение `1`.  
+4.  Установите для `LogVerbosityLevel` значение `1`.  
   
 ## <a name="see-also"></a>См. также  
- [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

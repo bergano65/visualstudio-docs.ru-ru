@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_language | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b214e16538ba6447ce97ed6569bfbb580cf222e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d0699510f419a510c004cd2bf7e840a5aa631316
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888222"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 Получает язык источника.  
@@ -27,7 +25,7 @@ ms.locfileid: "49935878"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_language (   
+HRESULT get_language (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,6 +40,6 @@ HRESULT get_language (
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)

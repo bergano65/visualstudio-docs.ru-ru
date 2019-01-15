@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_oemId | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8208d146284926ce7ec3375e8416210eeb5d214c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a09eb9d41a4b5a1034b3b6ab82259c8ce5c0cd38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911415"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Извлекает значение идентификатора символа изготовителя оборудования (OEM).  
@@ -27,7 +25,7 @@ ms.locfileid: "49875259"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,6 +43,6 @@ HRESULT get_oemId (
 ## <a name="remarks"></a>Примечания  
  Это свойство применяется только к символам с [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) тип `SymTagCustomType`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

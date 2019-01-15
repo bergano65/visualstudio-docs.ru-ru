@@ -1,8 +1,6 @@
 ---
 title: Архитектура визуализатора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,46 +13,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822960"
 ---
 # <a name="visualizer-architecture"></a>Архитектура визуализатора
 Архитектура визуализатора отладчика состоит из двух частей:  
   
-- *Сторона отладчика* запускается в отладчике Visual Studio. Код со стороны отладчика создает и отображает пользовательский интерфейс визуализатора.  
+- *Сторона отладчика* — код, который запускается в отладчике Visual Studio. Код со стороны отладчика создает и отображает пользовательский интерфейс визуализатора.  
   
-- *Отлаживаемая* выполняется внутри процесса, отладка Visual Studio ( *отлаживаемая программа*).  
+- *Сторона отлаживаемого кода* — код, который выполняется внутри процесса, отлаживаемого в Visual Studio (*отлаживаемая* программа).  
   
   Визуализатор является компонентом отладчика, который позволяет отладчику отображать (*визуализировать*) содержимое объекта данных в удобочитаемом, понятном виде. Некоторые визуализаторы поддерживают также редактирование объекта данных. Путем написания пользовательских визуализаторов можно расширить возможности отладчика для обработки пользовательских типов данных.  
   
-  Объект данных для визуализации, находится в процессе отладки ( *отлаживаемая программа* процесс). Пользовательский интерфейс, который будет отображать данные, создается в пределах процесса отладчика Visual Studio:  
+  Объект данных, который будет отображен, находится в пределах процесса отладки (*отлаживаемый* процесс). Пользовательский интерфейс, который будет отображать данные, создается в пределах процесса отладчика Visual Studio:  
   
 |Процесс отладчика|Отлаживаемый процесс|  
 |----------------------|----------------------|  
 |Пользовательский интерфейс отладчика (подсказки, окно "Контрольное значение", окно "Быстрая проверка")|Объект данных для отображения|  
   
- Для визуализации объекта данных в пределах интерфейса отладчика требуется код для обмена данными между двумя процессами. Таким образом, архитектура визуализатора состоит из двух частей: *сторона отладчика* кода и *отлаживаемая* кода.  
+ Для визуализации объекта данных в пределах интерфейса отладчика требуется код для обмена данными между двумя процессами. Таким образом, архитектура визуализатора состоит из двух компонентов: кода *стороны отладчика* и кода *стороны отлаживаемого объекта*.  
   
  Код стороны отладчика создает свой собственный интерфейс пользователя, к которому может обращаться интерфейс отладчика, например, окно подсказки, окно контрольного значения или окно быстрой проверки. Интерфейс визуализатора создан с помощью класса <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> и интерфейса <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>. Как все API визуализатора, DialogDebuggerVisualizer и IDialogVisualizerService находятся в пространстве имен <xref:Microsoft.VisualStudio.DebuggerVisualizers>.  
   
-|Сторона отладчика|Сторона отлаживаемого кода|  
+|Сторона отладчика|Сторона отлаживаемого объекта|  
 |-------------------|-------------------|  
 |Класс DialogDebuggerVisualizer<br /><br /> Интерфейс IDialogVisualizerService|Объект данных|  
   
  Пользовательский интерфейс получает данные для отображения от поставщика объектов, который существует на стороне отладчика:  
   
-|Сторона отладчика|Сторона отлаживаемого кода|  
+|Сторона отладчика|Сторона отлаживаемого объекта|  
 |-------------------|-------------------|  
 |Класс DialogDebuggerVisualizer<br /><br /> Интерфейс IDialogVisualizerService|Объект данных|  
 |Поставщик объектов (реализует <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)||  
   
  Существует соответствующий объект на стороне отлаживаемого кода — источник объектов:  
   
-|Сторона отладчика|Сторона отлаживаемого кода|  
+|Сторона отладчика|Сторона отлаживаемого объекта|  
 |-------------------|-------------------|  
 |Класс DialogDebuggerVisualizer<br /><br /> Интерфейс IDialogVisualizerService|Объект данных|  
 |Поставщик объектов (реализует <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)|Источник объектов (производный от <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)|  
@@ -87,9 +85,9 @@ ms.locfileid: "49836610"
 |---------------------|-------------------|  
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —или—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
-## <a name="see-also"></a>См. также  
- [Практическое: Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Пошаговое руководство: Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [Пошаговое руководство: Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [Пошаговое руководство: написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [Пошаговое руководство: написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Вопросы безопасности визуализатора](../debugger/visualizer-security-considerations.md)

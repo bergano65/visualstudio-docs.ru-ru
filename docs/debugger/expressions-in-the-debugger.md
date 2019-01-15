@@ -1,8 +1,6 @@
 ---
 title: Выражения в отладчике | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837242"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в отладчике Visual Studio
 В состав отладчика Visual Studio входят вычислители выражений, которые работают при вводе выражения в диалоговое окно **Быстрая проверка** , окно **Контрольные значения** или окно **Интерпретация** . Вычислители выражений также работают в окне **точки останова** и многих других местах в отладчике.
@@ -206,8 +204,8 @@ int main()
   
 -   Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.  
   
-## <a name="see-also"></a>См. также  
- [Описатели формата в C++](../debugger/format-specifiers-in-cpp.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Определители формата в C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   
  [Псевдопеременные](../debugger/pseudovariables.md)

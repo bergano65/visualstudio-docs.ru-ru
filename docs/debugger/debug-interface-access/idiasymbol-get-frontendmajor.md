@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_frontEndMajor | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6857e0f6a2d5802fcc20949bfbf90a345a3f8ef5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 29d132e39277e0bb9c868fc8d4c2ad3877aa6546
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851515"
 ---
 # <a name="idiasymbolgetfrontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Извлекает внешний интерфейс основной номер версии.  
@@ -27,7 +25,7 @@ ms.locfileid: "49861479"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_frontEndMajor (   
+HRESULT get_frontEndMajor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -54,5 +52,5 @@ HRESULT get_frontEndMajor (
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

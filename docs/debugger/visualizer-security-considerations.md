@@ -1,8 +1,6 @@
 ---
-title: Вопросы безопасности визуализатора | Документы Microsoft
-ms.custom: ''
+title: Вопросы безопасности визуализатора | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819566"
 ---
 # <a name="visualizer-security-considerations"></a>Вопросы безопасности визуализатора
 Создание визуализатора может быть потенциально небезопасным. В настоящее время нет известных примеров использования потенциальных угроз, но разработчикам следует учитывать возможность разработки вредоносного кода в будущем и принимать соответствующие меры безопасности, описанные в данном разделе.  
@@ -39,8 +37,8 @@ ms.locfileid: "31476521"
   
  Чтобы предотвратить эту угрозу, внимательно анализируйте интерфейсы, предоставляемые созданным визуализатором.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Архитектура визуализатора](../debugger/visualizer-architecture.md)   
- [Как: Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
- [Создание пользовательских визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
+ [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

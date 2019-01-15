@@ -7,24 +7,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcd459208529441022669e799e3c59b16b4ef682
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854767"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
 
-Вы хотите сохранить строку подключения к текущему файлу DBML и файлам конфигурации приложения с этой конфиденциальной информацией?  Нажмите кнопку **нет** сохранить строку подключения без конфиденциальной информации.
+Вы хотите сохранить строку подключения к текущему файлу DBML и файлам конфигурации приложения с этой конфиденциальной информацией?  Нажмите кнопку **Нет**, чтобы сохранить строку подключения без конфиденциальной информации.
 
 При работе с подключениями к данным, которые содержат конфиденциальную информацию (пароли, которые включены в строку подключения), предоставляется опция сохранения строки подключения в файл DBML проекта и файл конфигурации приложения с или без конфиденциальной информации.
 
 > [!WARNING]
-> Явная установка **подключения** свойства **параметры приложения** свойства **False** добавит пароль в DBML-файл.
+> При явной установке свойства **Соединение** в окне **Настройки приложения** в значение **False** будет добавлен пароль в DBML-файл.
 
 ## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Для сохранения строки подключения с конфиденциальной информацией в параметрах приложения проекта
 

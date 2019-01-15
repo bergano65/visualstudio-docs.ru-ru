@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отсутствие объектов вследствие заливки вершин | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отсутствие объектов вследствие заливки вершин | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ee92eb8418fce37182b78364d08c2570f32da9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940684"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Пошаговое руководство. Отсутствие объектов вследствие заливки вершин
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исследовать объект, который отсутствует из-за ошибки, возникшей на этапе шейдера вершин.  
@@ -108,7 +106,7 @@ ms.locfileid: "49861570"
    > [!TIP]
    >  При одновременной отладке приложения можно установить точку останова в этом месте, и она будет достигнута при отрисовке следующего кадра. Это позволяет проверить члены `m_marbleConstantBufferData` , чтобы убедиться, что значение члена `projection` равно всем нулям при заполнении буфера констант.  
   
-   Найти расположение, где заполняется буфер констант, и Обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом является где `m_marbleConstantBufferData.projection` член имеет значение все нули. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
+   Найдя расположение, где заполняется буфер констант, и обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом выясните, где значение члена `m_marbleConstantBufferData.projection` равно всем нулям. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Поиск места задания члена проекции в исходном коде приложения  
   

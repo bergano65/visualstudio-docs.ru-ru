@@ -1,8 +1,6 @@
 ---
 title: IDiaFrameData::get_program | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125c809f32b34b077fae0bb661ef9c2f010a4b8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e5552f242e2c53791fd4afc7831a2c5b3cadcdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989926"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Извлекает строку программы, которая используется для вычисления регистра задать перед вызовом текущей функции.  
@@ -27,7 +25,7 @@ ms.locfileid: "49849467"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_program (   
+HRESULT get_program (   
    BSTR* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_program (
  [out] Возвращает строку программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Строка программы — это последовательность макросов, который интерпретируется для того чтобы установить пролога. Например, кадр стека типичный может использовать строку программы `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Формат — обратная польская нотация, где операторы следуют операндов. `T0` Представляет временной переменной в стеке. Этот пример выполняет следующие действия:  
@@ -52,5 +50,5 @@ HRESULT get_program (
   
    Обратите внимание, что строка программы относится к ЦП и соглашение о вызовах для функции, представленной текущим кадром стека.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

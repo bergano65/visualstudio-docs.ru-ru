@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895486"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools для C++
 
@@ -25,11 +24,11 @@ ms.locfileid: "52304930"
 
 Чтобы подключиться к базам данных SQL, приложений C++ неуправляемого кода можно использовать драйверы ODBC и OLE DB и поставщик ADO, входят в состав Windows. Они могут подключиться к любой базе данных, который поддерживает эти интерфейсы. Драйвер ODBC является стандартом. OLE DB предоставляется для обеспечения обратной совместимости. Дополнительные сведения о технологии этих данных, см. в разделе [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Чтобы воспользоваться преимуществами пользовательские функциональные возможности в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложений, использующих API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server. Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [программирования собственного клиента SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Чтобы воспользоваться преимуществами пользовательские функциональные возможности в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложений, использующих API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server. Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [Собственный клиент SQL Server программирования](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Для подключения к localDB через ODBC и собственный клиент SQL из приложения C++
 
-1. Установить SQL Server Data Tools
+1. Установите SQL Server Data Tools.
 
 2. Если вам требуется образец базы данных SQL для подключения к, скачайте базы данных Northwind и распакуйте его в новое расположение.
 
@@ -58,7 +57,7 @@ ms.locfileid: "52304930"
    #include <sqlncli.h>
    ```
 
-    Обратите внимание, что пример не использует любые возможности собственного клиента, поэтому описанные выше шаги не обязательны для того, чтобы скомпилировать и запустить. Но теперь проект настроен для использования этой функции. Подробнее см. в разделе [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client) (Программирование с SQL Server Native Client).
+    Обратите внимание, что пример не использует любые возможности собственного клиента, поэтому описанные выше шаги не обязательны для того, чтобы скомпилировать и запустить. Но теперь проект настроен для использования этой функции. Подробнее см. в разделе [Программирование с SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
 7. Укажите, какой драйвер следует использовать в подсистеме ODBC. Образец передает атрибут строки подключения ДРАЙВЕРА в качестве аргумента командной строки. В **проекта** > **свойства** > **Отладка**, добавьте следующий аргумент команды:
 
@@ -66,7 +65,7 @@ ms.locfileid: "52304930"
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Нажмите клавишу **F5**, чтобы выполнить сборку приложения и запустить его. Вы увидите диалоговое окно, в драйвер, который необходимо ввести базы данных. Введите `(localdb)\MSSQLLocalDB`и проверьте **использовать доверительное соединение**. Нажмите кнопку "ОК": Вы должны увидеть консоли с помощью сообщений, указывающих успешное подключение. Вы также увидите командную строку для ввода в инструкции SQL. На следующем рисунке показано пример запроса и результаты:
+8. Нажмите клавишу **F5**, чтобы выполнить сборку приложения и запустить его. Вы увидите диалоговое окно, в драйвер, который необходимо ввести базы данных. Введите `(localdb)\MSSQLLocalDB`и проверьте **использовать доверительное соединение**. Нажмите кнопку **ОК**. Вы должны увидеть консоли с помощью сообщений, указывающих успешное подключение. Вы также увидите командную строку для ввода в инструкции SQL. На следующем рисунке показано пример запроса и результаты:
 
    ![Выходные данные запроса пример ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 

@@ -1,8 +1,6 @@
 ---
-title: 'Предупреждение: Отладка скриптов отключена | Документы Microsoft'
-ms.custom: ''
+title: Предупреждение. Отладка скриптов отключена | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940444"
 ---
 # <a name="warning-script-debugging-disabled"></a>Предупреждение. Отладка скриптов отключена
 Отладка скриптов в Internet Explorer в настоящий момент отключена  
@@ -31,13 +29,13 @@ ms.locfileid: "31476797"
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Включение отладки скриптов в Internet Explorer  
   
-1.  В Internet Explorer **средства** меню, выберите **обозревателя**.  
+1.  В меню Internet Explorer **Сервис** выберите **Свойства обозревателя**.  
   
 2.  В диалоговом окне **Свойства обозревателя** перейдите на вкладку **Дополнительно** .  
   
-3.  На **Дополнительно** найдите в **параметры** поле **Обзор** категории.  
+3.  На вкладке **Дополнительно** найдите в поле **Параметры** категорию **Обзор**.  
   
-4.  Очистить **отключить отладку сценариев (Internet Explorer)**.  
+4.  Снимите флажок **Отключить отладку скриптов (Internet Explorer)**.  
   
 5.  Нажмите кнопку **ОК**.  
   
@@ -45,5 +43,5 @@ ms.locfileid: "31476797"
   
      Теперь новые параметры вступят в силу.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Присоединение к скрипту](../debugger/how-to-attach-to-script.md)
