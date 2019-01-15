@@ -1,8 +1,6 @@
 ---
 title: IDiaInjectedSource::get_length | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6cd689989cb622e0e2c70c89d26f47238fcc58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dac6a920e45c3b8d008d83185feb2a138f9273d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832704"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Возвращает число байтов кода.  
@@ -27,7 +25,7 @@ ms.locfileid: "49917450"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_length (   
+HRESULT get_length (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,11 +35,11 @@ HRESULT get_length (
  [out] Возвращает число байтов кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Значение, возвращаемое этим методом, длина исходного кода и то же значение, возвращенное [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) метод.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
  [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

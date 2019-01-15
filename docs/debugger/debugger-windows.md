@@ -2,7 +2,6 @@
 title: Окна отладчика | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562351"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875810"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
 
@@ -39,9 +38,9 @@ ms.locfileid: "53562351"
 |Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
 |Потоки GPU|-|[Практическое руководство. использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
-|Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная среда REPL Python](../python/python-interactive-repl-in-visual-studio.md)|
+|Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная оболочка REPL для Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Динамическое визуальное дерево|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Динамический обозреватель свойств|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Процессы|CTRL+ALT+Z|[Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)|
@@ -49,6 +48,6 @@ ms.locfileid: "53562351"
 |Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
 |Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

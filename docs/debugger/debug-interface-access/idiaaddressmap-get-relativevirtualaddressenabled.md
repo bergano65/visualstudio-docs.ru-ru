@@ -1,8 +1,6 @@
 ---
 title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6a9048a3b0d4371d73f98f53645f8580405cd95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939308"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Указывает, включена ли вычисление и использование относительные виртуальные адреса (RVA).  
@@ -27,7 +25,7 @@ ms.locfileid: "49849090"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_relativeVirtualAddressEnabled (   
+HRESULT get_relativeVirtualAddressEnabled (   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_relativeVirtualAddressEnabled (
   
  Кроме того, новые заголовки изображение может быть установлено путем вызова [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) метод, а затем с помощью вызова `put_relativeVirtualAddressEnabled` метод, чтобы включить использование RVA, с помощью новых заголовков образа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

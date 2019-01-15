@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSectionContribs::Next | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 915588402264ac6ba7076f3e9cd95b347b946689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936273"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Извлекает указанное число разделе вклад в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49818956"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Next(   
+HRESULT Next(   
    ULONG                celt,   
    IDiaSectionContrib** rgelt,  
    ULONG*               pceltFetched  
@@ -45,8 +43,8 @@ HRESULT Next(
  [out] Возвращает количество разделе вклад в выборке перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` при публикации не дополнительные раздела. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при публикации не дополнительные раздела. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

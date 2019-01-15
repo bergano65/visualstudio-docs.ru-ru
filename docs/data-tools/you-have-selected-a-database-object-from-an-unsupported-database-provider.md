@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b6eef41ebd3ae6fc08029a618cf276e22001235
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894445"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Выбран объект базы данных из неподдерживаемого поставщика базы данных
 
-**Реляционный конструктор объектов** поддерживает только поставщик данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>). Несмотря на то, что можно щелкнуть **ОК** и продолжить работу с объектами из неподдерживаемых поставщиков базы данных, можно испытать неожиданное поведение во время выполнения.
+**Реляционный конструктор объектов** поддерживает только поставщик данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>). Хотя можно нажать кнопку **OK** и продолжить работу с объектами из неподдерживаемых поставщиков базы данных, можно испытать неожиданное поведение во время выполнения.
 
 > [!NOTE]
 > Поддерживаются только данные о соединениях, которые используют .NET Framework Data Provider for SQL Server.
@@ -32,7 +31,7 @@ ms.locfileid: "37116884"
 
     - или -
 
-- Нажмите кнопку **отменить**.
+- Нажмите кнопку **Отмена**.
 
    Действие отменяется. Создайте или используйте данные о подключении, которое использует .NET Framework Provider for SQL Server.
 

@@ -1,8 +1,6 @@
 ---
-title: DebugBreak и __debugbreak | Документы Microsoft
-ms.custom: ''
+title: DebugBreak и __debugbreak | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933853"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak и __debugbreak
-Можно вызывать функции DebugBreak Win32 или [__debugbreak](/cpp/intrinsics/debugbreak) разместить в любом месте в коде. Вызов `DebugBreak` или `__debugbreak` эквивалентен установке точки останова в этом месте программы.  
+Вызов функции DebugBreak Win32 или встроенной функции [__debugbreak](/cpp/intrinsics/debugbreak) можно разместить в любом месте кода. Вызов `DebugBreak` или `__debugbreak` эквивалентен установке точки останова в этом месте программы.  
   
  Поскольку `DebugBreak` — это системная функция, на компьютере должны быть установлены системные отладочные символы, гарантирующие правильное отображение информации стека вызовов после приостановки выполнения. В противном случае сведения стека вызовов, отображаемые в отладчике, могут выйти за пределы одного кадра. При использовании `__debugbreak` символы не требуются.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Встроенные объекты компилятора](/cpp/intrinsics/compiler-intrinsics)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
- [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

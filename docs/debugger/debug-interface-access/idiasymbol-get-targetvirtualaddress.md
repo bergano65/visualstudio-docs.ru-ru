@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_targetVirtualAddress | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4d4759bb256eea4db9cf00c6c051410c462131
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9f5aa712aed39ecebdb664cf4f8e0dcefa5efae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867557"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 Получает виртуальный адрес (VA) преобразовать конечный.  
@@ -27,7 +25,7 @@ ms.locfileid: "49882382"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_targetVirtualAddress (   
+HRESULT get_targetVirtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -47,6 +45,6 @@ HRESULT get_targetVirtualAddress (
   
  «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

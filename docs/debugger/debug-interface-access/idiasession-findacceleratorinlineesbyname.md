@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByName | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 240315fed330c72a8fe180056642c9aff0fb96aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a13400cab447f4122a88bfbcec1265ae8e7e2fd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828099"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Возвращает перечисление символы для встроенных кадров, соответствующий имени функции задан встроенным.  
@@ -25,7 +23,7 @@ ms.locfileid: "49864053"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
+HRESULT findAcceleratorInlineeLinesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumSymbols**     ppResult  
@@ -48,7 +46,7 @@ HRESULT findAcceleratorInlineeLinesByName (
 ## <a name="remarks"></a>Примечания  
  Эта функция осуществляет поиск inlinees только внутри функции-заглушки сочетаний клавиш. Он игнорирует собственного C++ процедуру записи.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

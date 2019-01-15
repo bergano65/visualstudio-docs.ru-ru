@@ -1,8 +1,6 @@
 ---
 title: Управление версиями, вопросы безопасности и манифестов в развертываниях ClickOnce | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927146"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Управление версиями, вопросы безопасности и манифестов в развертываниях ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce
 
 Существует множество проблем, возникающих при [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] безопасности, управление версиями приложений и манифеста синтаксиса и семантики, которые могут вызвать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] неудачного развертывания.
 
@@ -51,7 +49,7 @@ ms.locfileid: "39081749"
 
 Дополнительные сведения и инструкции о способах изменения квоты интерактивных приложений, см. в разделе [Общие сведения о кэше ClickOnce](../deployment/clickonce-cache-overview.md).
 
-## <a name="versioning-issues"></a>Проблемы с управлением версиями
+## <a name="versioning-issues"></a>Вопросы управления версиями
 
 Если назначить строгое имя сборки и увеличить номер версии сборки для отражения обновления приложения, могут возникнуть проблемы. Любой сборки, скомпилированные со ссылкой на сборку со строгим именем сам перекомпилируется, или сборка будет пытаться ссылаться на более старой версии. Сборки попробуйте это, так как сборка использует старое значение версии в запросе привязки.
 
@@ -98,6 +96,6 @@ ms.locfileid: "39081749"
 
 ## <a name="see-also"></a>См. также
 
-[Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
+[Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
 [Securw ClickOnce-приложений](../deployment/securing-clickonce-applications.md)  
 [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

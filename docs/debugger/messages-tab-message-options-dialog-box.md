@@ -1,8 +1,6 @@
 ---
 title: Вкладка "сообщения", диалоговое окно "Параметры сообщения" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Messages
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55906da398f7f52460523cb74a77945d84037ebc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1f7675039f8e5f5fb5c1d5899b96682ab60a2bc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830602"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Вкладка "Сообщения" диалогового окна "Параметры сообщения"
 Используйте **сообщений** tab, чтобы выбрать список типов сообщений [представления сообщений](../debugger/messages-view.md)и для указания условий поиска сообщений. Для отображения [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), выберите **сообщений журнала** из **Spy** меню.  
@@ -42,5 +40,5 @@ ms.locfileid: "49866770"
   
   Затененный флажок в **группы сообщений** указывает, что **сообщения для просмотра** поле со списком был изменен для сообщений в этой группе; выбираются не все типы сообщений в этой группе.  
   
-  **Сохранить параметры по умолчанию**  
+  **Сохранить в качестве параметров по умолчанию**  
   Сохраните текущие параметры для последующего использования в качестве параметров поиска сообщений. Эти параметры также сохраняются при выходе из Spy ++.

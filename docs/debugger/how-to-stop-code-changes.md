@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: Остановка внесения изменений в код | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Остановка внесения изменений в код | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843259"
 ---
-# <a name="how-to-stop-code-changes"></a>Практическое руководство. Остановка внесения изменений в код
+# <a name="how-to-stop-code-changes"></a>Как выполнить остановку внесения изменений в код
 Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.  
   
 > [!CAUTION]
@@ -34,12 +32,12 @@ ms.locfileid: "49903677"
   
 ### <a name="to-stop-applying-code-changes"></a>Остановка внесения изменений в код  
   
-- Выберите **Остановить применение изменений кода** из **Отладка** меню.  
+- Выберите команду **Остановить применение изменений кода** в меню **Отладка**.  
   
   Этот пункт меню становится видимым только в процессе внесения изменений в код.  
   
   При выборе этого параметра никакие изменения в коде не фиксируются.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Изменить и продолжить](../debugger/edit-and-continue.md)   
  [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)

@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943120"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое: использование ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Как выполнить использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ ms.locfileid: "49842772"
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания  
   
--   Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
+-   Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework  
   
@@ -59,10 +57,10 @@ ms.locfileid: "49842772"
   
     |Версия платформы .NET Framework|XML|  
     |----------------------------|---------|  
-    |4 клиента|\<Framework targetVersion = «4.0» profile = supportedRuntime «Клиент» = «4.0.30319 необходимо» / >|  
-    |4 full|\<Framework targetVersion = «4.0» profile = «Full» supportedRuntime = «4.0.30319 необходимо» / >|  
-    |3.5 клиента|\<Framework targetVersion = «3.5» profile = supportedRuntime «Клиент» = «2.0.50727» / >|  
-    |3.5 полный|\<Framework targetVersion = «3.5» profile = «Full» supportedRuntime = «2.0.50727» / >|  
+    |4 Client|\<Framework targetVersion = «4.0» profile = supportedRuntime «Клиент» = «4.0.30319 необходимо» / >|  
+    |4 Full|\<Framework targetVersion = «4.0» profile = «Full» supportedRuntime = «4.0.30319 необходимо» / >|  
+    |3.5 Client|\<Framework targetVersion = «3.5» profile = supportedRuntime «Клиент» = «2.0.50727» / >|  
+    |3.5 Full|\<Framework targetVersion = «3.5» profile = «Full» supportedRuntime = «2.0.50727» / >|  
     |3.0|\<Framework targetVersion = «3.0» supportedRuntime = «2.0.50727» / >|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework  
@@ -75,10 +73,10 @@ ms.locfileid: "49842772"
   
     |Версия среды выполнения .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 клиента|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0, профиль клиента =» / >|  
-    |4 full|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0» / >|  
-    |3.5 полный|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 клиента|\<версия supportedRuntime = sku «v2.0.50727» = «Client» / >|  
+    |4 Client|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0, профиль клиента =» / >|  
+    |4 Full|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0» / >|  
+    |3.5 Full|\<supportedRuntime version="v2.0.50727"/ >|  
+    |3.5 Client|\<версия supportedRuntime = sku «v2.0.50727» = «Client» / >|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Для изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework  
   
@@ -102,7 +100,7 @@ ms.locfileid: "49842772"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов  
   
--   Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [как: повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   

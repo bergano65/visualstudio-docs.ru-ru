@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5666197598eae96322c79724555b2cd884be70cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824279"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 
@@ -33,9 +32,9 @@ ms.locfileid: "52304601"
 
 ## <a name="to-create-controls-that-display-related-records"></a>Для создания элементов управления, отображающих связанные записи
 
-1. Чтобы открыть окно Источники данных **, щелкните пункт Показать источники данных** в меню Данные **.
+1. Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.
 
-2. Выберите команду Добавить новый источник данных **и выполните Мастер настройки источника данных**.
+2. Выберите команду **Добавить новый источник данных** и выполните **Мастер настройки источника данных**.
 
 3. Откройте конструктор WPF и убедитесь, что он содержит контейнер, который является допустимой целью перетаскивания для элементов в **источников данных** окна.
 

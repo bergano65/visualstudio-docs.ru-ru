@@ -1,8 +1,6 @@
 ---
-title: IDiaFrameData | Документы Microsoft
-ms.custom: ''
+title: IDiaFrameData | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efdc99d45bfc081fafd9b8467937567cca777b68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948450"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Предоставляет сведения о кадре стека.  
@@ -27,7 +25,7 @@ ms.locfileid: "31465503"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaFrameData : IUnknown  
+IDiaFrameData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
@@ -36,32 +34,32 @@ IDiaFrameData : IUnknown
 |Метод|Описание|  
 |------------|-----------------|  
 |[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Получает раздел часть адреса кода для кадра.|  
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Извлекает часть смещения адреса код для кадра.|  
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Извлекает изображение относительного виртуального адреса (RVA) кода для кадра.|  
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Извлекает часть смещения адреса кода для кадра.|  
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Извлекает изображение относительный виртуальный адрес (RVA) код для кадра.|  
 |[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Получает виртуальный адрес (VA) код для кадра.|  
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Получает длину в байтах блока кода, описываемого фрейма.|  
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Возвращает число байтов, локальных переменных в стек.|  
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Получает длину в байтах блока кода, описанного по кадру.|  
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Возвращает число байтов в стек локальных переменных.|  
 |[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Возвращает число байтов параметров в стек.|  
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Возвращает максимальное число байтов, помещаются в стек в кадре.|  
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Извлекает максимальное число байтов, в стек в кадре.|  
 |[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Возвращает число байтов кода пролога в блоке.|  
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Возвращает число байтов, сохраненных регистров в стек.|  
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Извлекает строку программы, которая используется для вычисления перед обращением к текущей функции набор регистров.|  
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Возвращает флаг, указывающий, обработка исключений системы вступает в действие.|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Возвращает флаг, указывающий, что обработка исключений с ++ вступает в действие.|  
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Возвращает флаг, указывающий, что блок содержит точку входа функции.|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Возвращает флаг, указывающий, что базового указателя выделяется для кода в этом диапазоне. Этот метод является устаревшим.|  
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Возвращает тип кадра специфичные для компилятора.|  
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Извлекает кадров данных интерфейс для включающей функции.|  
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Выполняет развертывание стека и возвращает текущее состояние регистров в интерфейсе обход кадра стека.|  
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Извлекает строку программы, которая используется для вычисления регистра задать перед вызовом текущей функции.|  
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Получает флаг, указывающий, обработка исключений системы вступает в действие.|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Получает флаг, указывающий, что обработка исключений с ++ вступает в действие.|  
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Получает флаг, указывающий, что блок содержит точку входа функции.|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Получает флаг, указывающий, что базового указателя выделяется для кода в этот диапазон адресов. Этот метод является нерекомендуемым.|  
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Извлекает тип пакета специфичные для компилятора.|  
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Извлекает кадров данных интерфейс для заключения функции.|  
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Выполняет развертывание стека и возвращает текущее состояние регистров в интерфейсе стека кадра стека.|  
   
 ## <a name="remarks"></a>Примечания  
- Подробные сведения, которые доступны для кадра предназначены для выполнения точки в диапазоне адресов, обозначенном длина адреса и блока.  
+ Сведения, доступных для рамки предназначены для точки выполнения в диапазоне адресов адрес и блок длиной.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Получить этот интерфейс, вызвав [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) или [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) методы. В разделе [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) интерфейса для сведений.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) или [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) методы. См. в разделе [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) интерфейс сведения.  
   
 ## <a name="example"></a>Пример  
- В этом примере выводит свойства `IDiaFrameData` объекта. В разделе [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) интерфейса в качестве примера того, как `IDiaFrameData` получить интерфейс.  
+ В этом примере выводятся на печать свойства `IDiaFrameData` объекта. См. в разделе [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) интерфейс пример того, как `IDiaFrameData` интерфейс получается.  
   
 ```C++  
 void PrintFrameData(IDiaFrameData* pFrameData){  
@@ -115,14 +113,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

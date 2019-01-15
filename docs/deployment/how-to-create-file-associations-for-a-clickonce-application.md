@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: создание ассоциаций файлов для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание ассоциаций файлов для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d8d12b8ad49b40309845def60964c13a3da708
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842836"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Практическое: создание ассоциаций файлов для приложения ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Как выполнить создать ассоциацию файлов для приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связан один или несколько расширений имен файлов, так что приложение будет запускаться автоматически при открытии файла этих типов. Добавление поддержки расширения имени файла для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения прост.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Создание ассоциаций файлов для приложения ClickOnce  
@@ -33,7 +31,7 @@ ms.locfileid: "49919397"
   
 2. Откройте манифест приложения в текстовом редакторе или редакторе XML, например в блокноте.  
   
-3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
+3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 4. Как дочерний `assembly` элемента, добавьте `fileAssociation` элемент. `fileAssociation` Элемент имеет четыре атрибута:  
   
@@ -43,7 +41,7 @@ ms.locfileid: "49919397"
   
    - `progid`: Строка, однозначно определяющая тип файла, чтобы пометить его в реестре.  
   
-   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен как файловый ресурс в манифесте приложения. Для получения дополнительной информации см. [Практическое руководство. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен как файловый ресурс в манифесте приложения. Дополнительные сведения см. в разделе [Как включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Пример `file` и `fileAssociation` элементов, см. в разделе [ \<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md).  
   
@@ -53,7 +51,7 @@ ms.locfileid: "49919397"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и создания)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+    Дополнительные сведения см. в разделе [Mage.exe (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>См. также  
  [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)   

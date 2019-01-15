@@ -1,8 +1,6 @@
 ---
 title: Изменить и продолжить-диалоговое окно ошибки сообщения | Документация Майкрософт
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828674"
 ---
 # <a name="edit-and-continue-error-message"></a>Изменить и продолжить сообщение об ошибке 
 
@@ -37,7 +35,7 @@ ms.locfileid: "52388716"
 -   Попытка изменить оптимизированный код. Может потребоваться переключиться отладочную сборку из конечной сборки.
 -   Попытка изменить код, пока оно выполняется, а не во время приостановки в отладчике. Попробуйте [установить точку останова](../debugger/using-breakpoints.md)и вносить изменения в код, пока выполнение приостановлено.
 -   Попытка изменить управляемый код, если включена только отладка неуправляемого кода. Изменить и продолжить не работает с [Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).
--   Внесение изменения кода не поддерживается в режиме Edit и Continue на языке программирования. Дополнительные сведения см. в разделе статьи [поддерживаемые изменения кода в C# ](supported-code-changes-csharp.md), [неподдерживаемые изменения в Visual Basic, изменить и продолжить](unsupported-edits-in-visual-basic-edit-and-continue.md), и [поддерживаемые изменения кода C++](supported-code-changes-cpp.md).
+-   Внесение изменения кода не поддерживается в режиме Edit и Continue на языке программирования. Дополнительные сведения см. в разделе статьи [поддерживаемые изменения кода в C# ](supported-code-changes-csharp.md), [неподдерживаемые изменения в Visual Basic, изменить и продолжить](/visualstudio/debugger/supported-code-changes-csharp), и [поддерживаемые изменения кода C++](supported-code-changes-cpp.md).
 -   Попытка изменить код в приложении, присоединяются к, вместо запуска отладки из **Отладка** меню.  
 -   Попытка изменить код во время отладки аварийного восстановления. Watson;  
 -   Попытка изменить код после необработанного исключения, а параметр **Очищать стек вызовов от кадров необработанных исключений** не выбран.  

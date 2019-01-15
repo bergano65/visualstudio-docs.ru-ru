@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_hasSecurityChecks | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9679e54b8535168fa4208e6eedc2adf19e60fe9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: af64f9bb77d4e3fc09df827be1d2558dd8736d15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934152"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Получает флаг, указывающий ли в единице компиляции или функцию был скомпилирован с помощью проверок безопасности на переполнение буфера (например, [/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check) переключатель компилятора).  
@@ -49,6 +47,6 @@ HRESULT get_hasSecurityChecks(
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check)

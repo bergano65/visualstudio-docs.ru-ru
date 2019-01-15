@@ -1,8 +1,6 @@
 ---
-title: Методы отладки CRT | Документы Microsoft
-ms.custom: ''
+title: Методы отладки CRT | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889115"
 ---
 # <a name="crt-debugging-techniques"></a>Методы отладки CRT
 Эти методы могут пригодиться при отладке программы с использованием библиотеки времени выполнения языка С (CRT).  
@@ -36,7 +34,7 @@ ms.locfileid: "31458431"
  Поддержка отладки для библиотеки CRT и инструкции по применению ее средств.  
   
  [Макросы для создания отчетов](../debugger/macros-for-reporting.md)  
- Предоставляет сведения о **_RPTn** и **_RPTFn** макросы (определенная в CRTDBG. (H), которая заменяет собой использование `printf` для отладки.  
+ Сведения о макросах **_RPTn** и **_RPTFn** (определенных в CRTDBG.H), заменяющих оператор `printf` для отладки.  
   
  [Версии отладки функций выделения кучи](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Специальные отладочные версии функций выделения кучи, содержащие сведения о том, как CRT отображает вызовы, как избежать преобразования, а также преимущества явных вызовов, отслеживание отдельных типов выделений в клиентских блоках и результаты отсутствия описания _DEBUG.  

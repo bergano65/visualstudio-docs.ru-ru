@@ -1,8 +1,6 @@
 ---
 title: Отладка клиентского скрипта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898736"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Открытие документов скрипта  
-Списки документов на стороне сервера и клиентского скрипта **обозревателе решений** для просмотра. В окне **Обозреватель решений**можно открыть любой документ скрипта. Для получения дополнительной информации см. [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Используйте окно **Обозреватель решений**, чтобы просмотреть списки серверных и клиентских документов скрипта. В окне **Обозреватель решений**можно открыть любой документ скрипта. Дополнительные сведения см. в разделе [Как просмотреть документы скриптов](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Сопоставление точек останова  
  В Visual Studio невозможно непосредственно отлаживать код на стороне сервера, но можно установить точку останова в файле, находящемся на сервере. Visual Studio автоматически сопоставляет точку останова с соответствующим расположением в файле на стороне клиента и создает сопоставленную точку останова в коде на стороне клиента.  
@@ -37,7 +35,7 @@ ms.locfileid: "49894993"
 ## <a name="manually-or-automatically-attaching-to-script"></a>Автоматическое присоединение к скрипту или присоединение к скрипту в ручном режиме  
  Чтобы начать отладку скрипта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], отладчику необходимо выполнить присоединение к скрипту, для которого необходимо выполнить отладку. Присоединение может быть выполнено в ручном режиме или автоматически.  
   
- Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Для получения дополнительной информации см. [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Дополнительные сведения см. в разделе [Как выполнить присоединение к скрипту](../debugger/how-to-attach-to-script.md).  
   
  Отладчик автоматически выполняет присоединение к скрипту при возникновении одного из следующих условий:  
   
@@ -61,9 +59,9 @@ ms.locfileid: "49894993"
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
   
-## <a name="see-also"></a>См. также  
- [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Отладка приложений ASP.NET и AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)   
- [Переменной Windows](../debugger/debugger-windows.md)   
+ [Окна переменных](../debugger/debugger-windows.md)   
  [Окно интерпретации](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

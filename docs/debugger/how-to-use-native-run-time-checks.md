@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: проверок во время выполнения машинного кода | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Проверок во время выполнения машинного кода | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830960"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
+# <a name="how-to-use-native-run-time-checks"></a>Как выполнить Настройка проверок во время выполнения машинного кода
 В Visual C++ можно использовать проверки в машинном коде [runtime_checks](/cpp/preprocessor/runtime-checks) для обнаружения таких распространенных ошибок, возникающих во время выполнения, как:  
   
 - повреждение указателя стека;  
@@ -79,7 +77,7 @@ ms.locfileid: "49860816"
   
 -   Используйте директиву `runtime_checks` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/index.md)  
  [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   

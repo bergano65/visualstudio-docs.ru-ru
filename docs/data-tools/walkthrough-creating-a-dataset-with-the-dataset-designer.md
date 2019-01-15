@@ -12,17 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868525"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство: Создание набора данных с помощью конструктора наборов данных
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктора наборов данных
 
 В этом пошаговом руководстве, создать набор данных с помощью **конструктор наборов данных**. Статьи описан процесс создания нового проекта и добавления нового **набора данных** элемента к нему. Вы узнаете о создании таблиц, основанных на таблицах в базе данных без использования мастера.
 
@@ -44,11 +43,11 @@ ms.locfileid: "37117931"
 
        Через некоторое время завершения выполнения запроса и создания базы данных Northwind.
 
-## <a name="create-a-new-windows-forms-application-project"></a>Создание нового проекта приложения Windows Forms
+## <a name="create-a-new-windows-forms-application-project"></a>Создание проекта приложения Windows Forms
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -58,7 +57,7 @@ ms.locfileid: "37117931"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Добавить новый набор данных в приложение
 
-1.  На **проекта** меню, выберите **Добавление нового элемента**.
+1.  В меню **Проект** выберите пункт **Добавить новый элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -70,7 +69,7 @@ ms.locfileid: "37117931"
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Создание подключения к данным в обозревателе сервера
 
-1.  На **представление** меню, щелкните **обозревателя серверов**.
+1.  В меню **Вид** выберите **Обозреватель сервера**.
 
 2.  В **обозревателя серверов**, нажмите кнопку **подключение к базе данных** кнопки.
 

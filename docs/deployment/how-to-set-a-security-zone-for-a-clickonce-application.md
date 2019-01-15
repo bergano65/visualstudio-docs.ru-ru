@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: Установка зоны безопасности для ClickOnce-приложения | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Установка зоны безопасности для ClickOnce-приложения | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 197a1c7d91c017c51ef5aa5303ffc3a1bb11f7e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946153"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Практическое: Установка зоны безопасности для ClickOnce-приложения
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Как выполнить установку зоны безопасности для приложения ClickOnce
 При установке разрешений управления доступом для кода для приложения ClickOnce необходимо начать с базового набора разрешений на странице **Безопасность** **конструктора проектов**.  
   
- В большинстве случаев вы также можете выбрать зону **Интернет** , содержащую ограниченный набор разрешений, или зону **Локальная интрасеть** , содержащую более обширный набор разрешений. Если приложению требуются настраиваемые разрешения, можно предоставить их, выбрав зону безопасности **Настраиваемая** . Дополнительные сведения о задании настраиваемых разрешений см. в разделе [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ В большинстве случаев вы также можете выбрать зону **Интернет** , содержащую ограниченный набор разрешений, или зону **Локальная интрасеть** , содержащую более обширный набор разрешений. Если приложению требуются настраиваемые разрешения, можно предоставить их, выбрав зону безопасности **Настраиваемая** . Дополнительные сведения о задании настраиваемых разрешений см. в разделе [как: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
   
 ### <a name="to-set-a-security-zone"></a>Задание зоны безопасности  
   
@@ -45,6 +43,6 @@ ms.locfileid: "39077731"
 5.  В раскрывающемся списке **Зона, из которой приложение будет установлено** выберите зону безопасности.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   

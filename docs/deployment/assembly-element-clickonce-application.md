@@ -1,8 +1,6 @@
 ---
 title: '&lt;сборка&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878357"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;сборка&gt; элемент (приложение ClickOnce)
 Элемент верхнего уровня для манифеста приложения.  
@@ -48,11 +46,11 @@ ms.locfileid: "39077094"
   
  Дочерние элементы сборки также необходимо включить в эти пространства имен путем наследования или маркировки.  
   
- `assembly` Элемент имеет следующий атрибут.  
+ Элемент `assembly` имеет перечисленные ниже атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`manifestVersion`|Обязательно. `manifestVersion` Атрибута должно быть присвоено `1.0`.|  
+|`manifestVersion`|Обязательный. `manifestVersion` Атрибута должно быть присвоено `1.0`.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано `assembly` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  

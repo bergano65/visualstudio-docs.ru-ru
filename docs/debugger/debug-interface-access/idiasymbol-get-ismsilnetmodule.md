@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isMSILNetmodule | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919749"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Получает флаг, указывающий, является ли модуль .netmodule (Microsoft Intermediate Language (MSIL) модуль, содержащий только метаданные и не собственных символов).  
@@ -52,6 +50,6 @@ HRESULT get_isMSILNetmodule(
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

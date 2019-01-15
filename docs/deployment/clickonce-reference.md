@@ -1,8 +1,6 @@
 ---
 title: Справочные сведения ClickOnce | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 3353240e5b6d1a1218c4a6afc663c7778867e414
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945461"
 ---
 # <a name="clickonce-reference"></a>Справочные сведения ClickOnce
 Ниже описана Структура XML-файлов, используемых для представления приложений ClickOnce.  
   
 ## <a name="in-this-section"></a>Содержание раздела  
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
  Перечислены и описаны элементы и атрибуты, составляющие манифест приложения.  
   
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)  

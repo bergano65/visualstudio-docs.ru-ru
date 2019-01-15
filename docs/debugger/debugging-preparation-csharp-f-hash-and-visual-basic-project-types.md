@@ -2,7 +2,6 @@
 title: Подготовка к отладке C#, F#и проекты VB | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866885"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: Типы проектов C#, F# и Visual Basic
 В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -54,5 +53,5 @@ ms.locfileid: "53063452"
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)  
  Описывает общие проблемы и методы отладки приложений управляемого кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)

@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880602"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -40,7 +39,7 @@ ms.locfileid: "34845019"
 
 Откроется **добавить подключение** диалоговое окно. Здесь мы ввели имя экземпляра SQL Server LocalDB.
 
-![Добавить новое подключение](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Изменение поставщика
 
@@ -48,7 +47,7 @@ ms.locfileid: "34845019"
 
 ![Поставщик данных AD0.NET изменений](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Проверить подключение
+## <a name="test-the-connection"></a>Проверка подключения
 
 После выбора источника данных, нажмите кнопку **проверить подключение**. Если не удается вызвать, необходимо будет Устранение зависимости в документации поставщика.
 

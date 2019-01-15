@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825650"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 
@@ -85,7 +84,7 @@ ms.locfileid: "52388742"
 
 1. На **данных** меню, выберите **добавить новый источник данных**.
 
-   Появится мастер настройки источника данных.
+   Открывается мастер настройки источника данных.
 
 2. На **Выбор типа источника данных** выберите **базы данных**.
 

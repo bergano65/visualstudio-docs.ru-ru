@@ -1,5 +1,5 @@
 ---
-title: Не удалось создать ассоциацию - не совпадают типы свойств
+title: Невозможно создать ассоциацию — типы свойств не совпадают
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -7,21 +7,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f0ef5829c89a10dcf985d0815ae8144b6cb791b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 1d0ed4ba38f93d57c8f8ab18245155dbd9013a5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880641"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Не удалось создать ассоциацию &lt;имя ассоциации&gt; -не совпадают типы свойств
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Невозможно создать ассоциацию &lt;имя ассоциации&gt; — типа свойств не совпадают
 
-Не удалось создать ассоциацию \<имя ассоциации > — типы свойств не совпадают. Свойства не имеют совпадающих типов: \<имена свойств >.
+Невозможно создать ассоциацию \<имя ассоциации> — типа свойств не совпадают. Типы свойств не совпадают: \<имена свойств>.
 
-Ассоциации определяются выбранными **свойства ассоциации** в **Редактор ассоциаций** диалоговое окно. Свойства на каждой стороне ассоциации должны иметь одинаковый тип данных.
+Ассоциации определяются выбранными **свойствами ассоциации** в диалоговом окне **Редактор ассоциаций**. Свойства на каждой стороне ассоциации должны иметь одинаковый тип данных.
 
 Свойства, перечисленные в сообщении не имеют одинаковых типов данных.
 
@@ -29,9 +28,9 @@ ms.locfileid: "31920182"
 
 1. Проверьте сообщение и отметьте свойства, указанные в сообщении.
 
-2. Нажмите кнопку **ОК** чтобы закрыть диалоговое окно.
+2. Нажмите кнопку **OK**, чтобы закрыть диалоговое окно.
 
-3. Проверить **свойства ассоциации** и выберите свойства с тем же типом данных.
+3. Проверьте **Свойства ассоциации** и выберите свойства с одинаковым типом данных.
 
 4. Нажмите кнопку **ОК**.
 
@@ -39,4 +38,4 @@ ms.locfileid: "31920182"
 
 - [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Как: создать ассоциацию между LINQ to SQL classes (O/R-конструктор)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Практическое руководство. Создание ассоциации между классами LINQ to SQL (реляционный конструктор объектов)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

@@ -1,8 +1,6 @@
 ---
-title: Отладка примера кода HTML и CSS | Документы Microsoft
-ms.custom: ''
+title: Отладка примера кода HTML и CSS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947560"
 ---
-# <a name="debug-html-and-css-sample-code"></a>Отладка примера кода HTML и CSS
+# <a name="debug-html-and-css-sample-code"></a>Пример кода для отладки HTML и CSS
   
- В этом разделе код — это файл примера для [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
+ В этом разделе приведен пример файла для [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
   
 ## <a name="sample-code"></a>Пример кода  
- Следующий код HTML используется в \<текст > тег в кратком руководстве.  
+ Следующий код HTML используется в кратком руководстве в теге \<body>.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -102,5 +100,5 @@ ms.locfileid: "31456797"
 })();  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>См. также раздел  
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,8 +1,6 @@
 ---
 title: Развертывание ClickOnce в Windows Vista | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a73ddb8781276fbd2c56ce58b9fde257e728f86d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850782"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 
@@ -44,11 +42,11 @@ Visual Studio предоставляет следующие возможност
   
    Этот подход также называется *виртуализации*. Используйте этот параметр для совместимости с существующими приложениями из более ранних версиях Visual Studio.  
   
-  Новые свойства доступны на **приложения** страницы в конструкторе проектов (Visual C# только для проектов) и формат файла проекта MSBuild.  
+  Новые свойства доступны на **приложения** страницы в конструкторе проектов (для визуального C# только проекты) и формат файла проекта MSBuild.  
   
-  Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio будет зависеть от типа проекта (Visual C# или Visual Basic).  
+  Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio зависит от типа проекта (Visual C# или Visual Basic).  
   
-  * Сведения о настройке проектов Visual C# для создания манифеста см. в разделе [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Дополнительные сведения о настройке Visual C# проектов для создания манифеста см. в разделе [страницы приложения, конструктор проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
   * Сведения о настройке проектов Visual Basic для создания манифеста, см. в разделе [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   

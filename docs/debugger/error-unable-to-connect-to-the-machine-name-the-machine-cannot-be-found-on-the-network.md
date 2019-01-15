@@ -1,8 +1,6 @@
 ---
-title: 'Ошибка: Не удается подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети. | Документы Майкрософт'
-ms.custom: ''
+title: 'Ошибка: Не удалось подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети. | Документы Майкрософт'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0654148823d40277bdd9c6b6d8ec5b881fdb80
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847377"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Ошибка: Не удается подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Ошибка: Не удалось подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети.
 Такая ошибка возникает, если выполняется одно из следующих условий:  
   
 -   Подключение к удаленному компьютеру разорвано.  
@@ -46,6 +44,6 @@ ms.locfileid: "31480063"
   
 -   Убедитесь в том, что пароль для подключения к удаленному компьютеру правильный, и срок его действия не истек.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Удаленная отладка](../debugger/remote-debugging.md)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

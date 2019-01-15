@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824580"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Проекты баз данных и приложений уровня данных
 
@@ -29,9 +28,9 @@ ms.locfileid: "52281736"
 
 | Высокоуровневые задачи | Справочные материалы |
 | - | - |
-| **Начните разработку приложения уровня данных:** с SQL Server 2008 было введено понятие приложения уровня данных (DAC). Приложения уровня данных содержит определение для базы данных SQL Server и вспомогательные объекты экземпляра, которые используются клиентом и сервером или 3-уровневого приложения. DAC включает объекты базы данных, таких как таблицы и представления, а также экземпляр сущности, такие как имена входа. Можно использовать Visual Studio создайте проект приложения уровня данных, создать файл пакета DAC и отправить файл пакета приложения уровня данных администратор базы данных для развертывания в экземпляре ядра СУБД SQL Server. | - [Приложения уровня данных](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Последовательная разработка базы данных:** разработчики могут извлекать части проекта и обновлять их в изолированной среде разработки. С помощью среды такого типа, не влияя на другие члены команды можно проверить изменения. После завершения изменений, можно проверить файлы обратно в систему управления версиями, где другие члены команды могут получать изменения и создавать и развертывать их на тестовом сервере. | - [Разработка ориентированного проекта базы данных вне сети (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Отладчик Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Создание прототипов, проверка того, проверить результаты и изменение скриптов базы данных и объектов:** в редакторе Transact-SQL можно использовать для выполнения любой из этих стандартных задач. | - [Редакторы запросов и текста (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Начните разработку приложения уровня данных.** С помощью SQL Server 2008 было введено понятие приложения уровня данных (DAC). Приложения уровня данных содержит определение для базы данных SQL Server и вспомогательные объекты экземпляра, которые используются клиентом и сервером или 3-уровневого приложения. DAC включает объекты базы данных, таких как таблицы и представления, а также экземпляр сущности, такие как имена входа. Можно использовать Visual Studio создайте проект приложения уровня данных, создать файл пакета DAC и отправить файл пакета приложения уровня данных администратор базы данных для развертывания в экземпляре ядра СУБД SQL Server. | - [Приложения уровня данных](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Выполнение Последовательная разработка базы данных:** Разработчики могут извлекать части проекта и обновлять их в изолированной среде разработки. С помощью среды такого типа, не влияя на другие члены команды можно проверить изменения. После завершения изменений, можно проверить файлы обратно в систему управления версиями, где другие члены команды могут получать изменения и создавать и развертывать их на тестовом сервере. | - [Разработка ориентированного проекта базы данных вне сети (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Отладчик Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Создание прототипов, проверка результатов тестов и изменение скриптов базы данных и объектов:** В редакторе Transact-SQL можно использовать для выполнения любой из этих стандартных задач. | - [Редакторы запросов и текста (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>См. также
 

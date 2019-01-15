@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: укажите ссылку для получения технической поддержки | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Укажите ссылку для получения технической поддержки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933944"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Практическое: укажите ссылку для получения технической поддержки
+# <a name="how-to-specify-a-link-for-technical-support"></a>Как выполнить задание ссылки на веб-страницу технической поддержки
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, **URL-адрес поддержки** свойство идентифицирует веб-страницы или общей папке, где пользователи могут получить сведения о приложении. Это свойство является необязательным; Если указано, URL-адрес будет отображаться в запись приложения **Установка и удаление программ** диалоговое окно.  
   
  **URL-адрес поддержки** может быть установлено на **публикации** странице **конструктор проектов**.  
@@ -38,7 +36,7 @@ ms.locfileid: "39078830"
   
 1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2.  Перейдите на вкладку **Публикация**.  
   
 3.  Нажмите кнопку **параметры** кнопку, чтобы открыть **параметры публикации** диалоговое окно.  
   
@@ -48,4 +46,4 @@ ms.locfileid: "39078830"
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Практическое: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
