@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946611"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269505"
 ---
 # <a name="pick-activity-designer"></a>Конструктор действия Pick
 
@@ -30,7 +30,7 @@ ms.locfileid: "53946611"
 
 Доступ **выбрать** конструктора действий в **поток управления** категории **элементов**. **Выбрать** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно помещаются конструкторы, например внутри  **Последовательность** конструктора действий. После его перетаскивания в конструкторе рабочих процессов, он создает <xref:System.Activities.Statements.Pick> действие, которое по умолчанию содержит два пустых <xref:System.Activities.Statements.PickBranch> действия как элементы с именами Branch1 и Branch2. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора действий или в **свойства** окна для каждой ветви.
 
-Существует два способа добавления <xref:System.Activities.Statements.PickBranch> действий в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов** или с помощью контекстного меню на в рамках **выбрать** область конструктора. Дополнительные сведения см. в разделе [PickBranch](../workflow-designer/pickbranch-activity-designer.md) раздела. Обратите внимание на то, что единственный элемент, который можно поместить в **выбрать** конструктор операций является **PickBranch** конструктора действий.
+Существует два способа добавления <xref:System.Activities.Statements.PickBranch> действий в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов** или с помощью контекстного меню изнутри **выбрать** область конструктора. Дополнительные сведения см. в разделе [PickBranch](../workflow-designer/pickbranch-activity-designer.md) раздела. Обратите внимание на то, что единственный элемент, который можно поместить в **выбрать** конструктор операций является **PickBranch** конструктора действий.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Свойства действия Pick в конструкторе рабочих процессов
 
