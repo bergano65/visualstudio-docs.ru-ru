@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865522"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270236"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 
@@ -58,7 +58,7 @@ ms.locfileid: "53865522"
 
 Вам придется изменить файл проекта для настройки некоторых функций в MSBuild.
 
-В **обозревателе решений**, выберите **Unload** в контекстном меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
+В **обозревателе решений**, выберите **Unload** из контекстного меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
 
 После завершения редактирования, выберите **перезагрузить**.
 
