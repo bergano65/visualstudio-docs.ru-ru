@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
+title: Как выполнить Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:

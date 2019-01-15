@@ -42,4 +42,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*
+ **Заголовок.** *FileTracker.h*

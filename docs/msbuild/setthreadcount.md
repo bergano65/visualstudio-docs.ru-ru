@@ -39,4 +39,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  **HRESULT** с установленным битом **SUCCEEDED**, если счетчик потоков был обновлен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*
+ **Заголовок.** *FileTracker.h*

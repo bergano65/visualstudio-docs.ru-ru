@@ -35,7 +35,7 @@ HRESULT WINAPI EndTrackingContext();
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был закончен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*  
+ **Заголовок.** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

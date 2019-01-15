@@ -35,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было приостановлено.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*  
+ **Заголовок.** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [ResumeTracking](../msbuild/resumetracking.md)

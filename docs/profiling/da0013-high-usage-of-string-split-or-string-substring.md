@@ -1,5 +1,5 @@
 ---
-title: DA0013. Интенсивное использование String.Split или String.Substring | Документация Майкрософт
+title: DA0013. Интенсивное использование String.Split или String.Substring | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

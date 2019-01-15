@@ -42,7 +42,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** *FileTracker.h*  
+ **Заголовок.** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

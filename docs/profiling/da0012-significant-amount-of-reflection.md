@@ -1,5 +1,5 @@
 ---
-title: DA0012. Слишком много вызовов метода Reflection | Документация Майкрософт
+title: DA0012. Слишком много вызовов метода Reflection | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
