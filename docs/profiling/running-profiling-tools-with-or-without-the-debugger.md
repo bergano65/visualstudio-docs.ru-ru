@@ -124,7 +124,7 @@ Visual Studio предлагает различные средства для и
   
  [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
  [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
