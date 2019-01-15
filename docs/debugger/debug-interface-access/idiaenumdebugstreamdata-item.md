@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData::Item | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ddb54c8084cea8d89b7453fb11547063c338cfee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958375"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Извлекает указанную запись.  
@@ -27,7 +25,7 @@ ms.locfileid: "49936310"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD  index,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -45,13 +43,13 @@ HRESULT Item (
  pcbData  
  [out] Возвращает количество байтов, возвращаемых. Если `data` — `NULL`, затем `pcbData` содержит общее число байтов данных, доступных в указанной записи.  
   
- данные]  
+ data[]  
  [out] Буфер, который заполняется отладки потока данных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` для недопустимые параметры и, если `index` параметр находится вне допустимых границ.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
  [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   

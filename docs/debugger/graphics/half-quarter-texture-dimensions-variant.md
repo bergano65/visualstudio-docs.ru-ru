@@ -1,8 +1,6 @@
 ---
 title: Половина / четверть текстуры измерения Variant | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956222"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Вариант размера текстур: половина/четверть
 Уменьшает размеры текстур, не являющихся целевыми объектами отрисовки.  
@@ -45,6 +43,6 @@ ms.locfileid: "49870202"
 ## <a name="example"></a>Пример  
  Этот вариант изменяет размеры текстур во время выполнения перед вызовом метода `CreateTexture2D`. Мы не рекомендуем такой подход для рабочего кода, так как полноразмерные текстуры занимают больше места на диске, а дополнительное действие может увеличить время загрузки в приложении, особенно для сжатых текстур, на кодирование которых требуется значительное количество вычислительных ресурсов. Вместо этого мы рекомендуем изменять размер текстур с помощью редактора или обработчика изображений, включенного в процесс сборки. Таким образом можно сократить требования к дисковому пространству, устранить дополнительную нагрузку во время выполнения и получить дополнительное время на обработку, чтобы обеспечить максимальное качество изображения при уменьшении размеров или сжатии текстур.  
   
-## <a name="see-also"></a>См. также  
- [Вариант создания MIP карты](mip-map-generation-variant.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Вариант создания MIP-карты](mip-map-generation-variant.md)   
  [Вариант сжатия текстур BC](bc-texture-compression-variant.md)
