@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864722"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315596"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -547,7 +547,7 @@ $selected$ is a great color. I love $selected$.
 |[Элемент Code](../ide/code-snippets-schema-reference.md#code-element)|Обязательный элемент. Задает код, который требуется вставить в файл документации. Элемент `Code` должен содержать ровно один элемент `Snippet`.|
 |[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Необязательный элемент. Задает литералы и объекты, которые составляют части фрагмента кода, доступные для изменения. Элемент `Declarations` может содержать один элемент `Snippet` или ни одного такого элемента.|
 |[Элемент Imports](../ide/code-snippets-schema-reference.md#imports-element)|Необязательный элемент. Группирует отдельные элементы `Import`. Элемент `Imports` может содержать один элемент `Snippet` или ни одного такого элемента.|
-||Необязательный элемент. Группирует отдельные элементы `Reference`. Элемент `References` может содержать один элемент `Snippet` или ни одного такого элемента.|
+|[Элемент References](../ide/code-snippets-schema-reference.md#references-element)|Необязательный элемент. Группирует отдельные элементы `Reference`. Элемент `References` может содержать один элемент `Snippet` или ни одного такого элемента.|
 
 |Родительский элемент|Описание|
 | - |-----------------|

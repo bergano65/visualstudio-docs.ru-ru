@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904186"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154067"
 ---
 # <a name="manage-external-tools"></a>Управление внешними инструментами
 
@@ -65,8 +65,8 @@ ms.locfileid: "53904186"
 |Целевое имя|$(TargetName)|Имя файла элемента для сборки.|
 |Конечное расширение|$(TargetExt)|Расширение имени файла элемента для сборки.|
 |Каталог двоичного файла|$(BinDir)|Конечное расположение двоичного файла, сборка которого выполняется (диск + путь).|
-|Каталог проекта|$(ProjDir)|Каталог текущего проекта (диск + путь).|
-|Имя файла проекта|$(ProjFileName)|Имя файла текущего проекта (диск + путь + имя файла).|
+|Каталог проекта|$(ProjectDir)|Каталог текущего проекта (диск + путь).|
+|Имя файла проекта|$(ProjectFileName)|Имя файла текущего проекта (диск + путь + имя файла).|
 |Каталог решения|$(SolutionDir)|Каталог текущего решения (диск + путь).|
 |Имя файла решения|$(SolutionFileName)|Имя файла текущего решения (диск + путь + имя файла).|
 

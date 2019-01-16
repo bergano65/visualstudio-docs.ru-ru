@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: проверка параметров свойства IIS | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Проверка параметров свойства IIS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926889"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Практическое руководство. Проверка параметров свойства IIS
+# <a name="how-to-verify-iis-property-settings"></a>Как выполнить проверку параметров свойства IIS
 
 Можно задать свойства для веб-приложения с помощью средства администрирования IIS. Чтобы приложение выполнялось, эти свойства должны быть заданы правильно. Поэтому проверка этих параметров часто является необходимым шагом в устранении неполадок.
 
@@ -61,7 +59,7 @@ ms.locfileid: "52389491"
 
    3.  Нажмите кнопку **OK**, чтобы закрыть диалоговое окно **Методы проверки подлинности**.
 
-5. Для приложения сервера ATL необходимо проверить, связана ли команда DEBUG с расширением ISAPI. Дополнительные сведения см. в разделе [как: связать команда DEBUG с расширением](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Для приложения сервера ATL необходимо проверить, связана ли команда DEBUG с расширением ISAPI. Дополнительные сведения см. в разделе [Как Связать команда DEBUG с расширением](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Убедитесь, что виртуальному каталогу для приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] задано имя приложения в компонентах **Диспетчер служб IIS**, **Диспетчер служб Интернета** или **Службы IIS**.
 

@@ -2,7 +2,6 @@
 title: Отладка многопоточных приложений | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907895"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 Поток — это последовательность инструкций, к которым операционная система предоставляет загруженности. Каждый процесс, выполняющийся в операционной системе, состоит по крайней мере из одного потока. Процессы, имеющие более одного потока, называются многопоточными.  
@@ -64,10 +63,10 @@ Visual Studio также предоставляет точки останова 
  [Отладка нескольких процессов](../debugger/debug-multiple-processes.md)  
  Поясняет принципы отладки нескольких процессов.
 
- [Пошаговое руководство: Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).  
+ [Пошаговое руководство: отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).  
  Пошаговое руководство, в котором показано, как использовать **потоков** окна и **место отладки** панели инструментов. 
 
- [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Пошаговое руководство: отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Пошаговое руководство, в котором показано, как использовать **Параллельные стеки** и **задачи** windows.  
   
  [Практическое руководство. Переключение на другой поток при отладке](../debugger/how-to-switch-to-another-thread-while-debugging.md)  

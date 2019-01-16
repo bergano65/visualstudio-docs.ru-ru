@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893556"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий построения в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "53067107"
 
  Конкретные сведения об используемом языке программирования см. в следующих разделах:
 
--   Visual Basic —[как: Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
 -   Visual C# и F#--[как: Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
@@ -60,5 +59,5 @@ ms.locfileid: "53067107"
     > [!NOTE]
     >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
-## <a name="see-also"></a>См. также
- [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: Создание приложения](../ide/walkthrough-building-an-application.md)
+## <a name="see-also"></a>См. также раздел
+ [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
