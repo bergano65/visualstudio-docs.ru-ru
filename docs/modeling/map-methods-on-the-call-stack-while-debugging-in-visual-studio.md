@@ -30,10 +30,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53889245"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
@@ -49,7 +49,7 @@ ms.locfileid: "53889245"
 
   Пример
 
-- [Видео: Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Видео. Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Сопоставьте стек вызовов](#MapStack)
 

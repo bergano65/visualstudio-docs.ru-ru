@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документы Майкрософт
+title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913895"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
@@ -51,7 +51,7 @@ ms.locfileid: "49913895"
   
 - Последовательное построение.  
   
-  В этом пошаговом руководстве показан способ построения проекта в командной строке и проверка результатов. Дополнительные сведения о платформе MSBuild и ее запуске из командной строки см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  В этом пошаговом руководстве показан способ построения проекта в командной строке и проверка результатов. Дополнительные сведения о платформе MSBuild и ее запуске из командной строки см. в статье [Пошаговое руководство. в Visual Studio](../msbuild/walkthrough-using-msbuild.md).  
   
   Для выполнения пошагового руководства необходимо установить платформу .NET Framework версии 2.0, 3.5, 4.0 или 4.5 — она включает MSBuild и компилятор Visual C#.  
   
@@ -146,10 +146,10 @@ ms.locfileid: "49913895"
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ ms.locfileid: "49913895"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ ms.locfileid: "49913895"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -484,9 +484,9 @@ ms.locfileid: "49913895"
 ```  
   
 ## <a name="whats-next"></a>Что дальше?  
- Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. в Visual Studio](../msbuild/walkthrough-using-msbuild.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 

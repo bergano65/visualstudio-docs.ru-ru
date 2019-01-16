@@ -27,10 +27,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53856687"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка: не удается запустить отладку на веб-сервере
@@ -51,7 +51,7 @@ ms.locfileid: "53856687"
 - [Удаленный сервер вернул ошибку](#server_error)
 - [Не удается запустить отладку ASP.NET](#aspnet)
 - [Отладчик не может подключиться к удаленному компьютеру](#cannot_connect)
-- [Сведения об общих ошибках конфигурации см. в справке. Под управлением веб-страницы вне отладчика может предоставить дополнительные сведения.](#see_help)
+- [ Сведения об общих ошибках конфигурации см. в справке. Под управлением веб-страницы вне отладчика может предоставить дополнительные сведения.](#see_help)
 
 ## <a name="IISlist"></a> IIS не содержит веб-сайт, соответствующий запуск URL-адрес
 
@@ -61,7 +61,7 @@ ms.locfileid: "53856687"
 
 ## <a name="web_server_config"></a> Веб-сервер настроен неправильно
 
-- См. в разделе [ошибка: веб-сервер настроен неправильно](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- См. в разделе [ошибка: ](../debugger/error-the-web-server-is-not-configured-correctly.md) Веб-сервер настроен неправильно
 
 ## <a name="unabletoconnect"></a> Не удалось подключиться к веб-сервера
 
