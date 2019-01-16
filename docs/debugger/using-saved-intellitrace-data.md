@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227789"
 ---
-# <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>С помощью сохраненных данных IntelliTrace (C#, Visual Basic, C++)
+
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.
 
  Убедитесь в наличии следующих элементов.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988035"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269492"
 ---
 # <a name="debugging-user-interface-reference"></a>Справочник по пользовательскому отладочному интерфейсу
 Во время выполнения отладки приложения могут отобразиться следующие диалоговые окна.  
@@ -44,5 +44,5 @@ ms.locfileid: "53988035"
   
 ## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)   
  [Командное окно](../ide/reference/command-window.md)

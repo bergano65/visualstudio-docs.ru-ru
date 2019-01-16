@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870772"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269519"
 ---
 # <a name="debugging-native-code"></a>Отладка машинного кода
 В этом разделе освещаются основные проблемы и технологии отладки для приложений, написанных в машинных кодах. В данном разделе описаны методы высшего уровня. Механизм использования отладчика Visual Studio, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md)).  
@@ -67,9 +67,9 @@ ms.locfileid: "53870772"
 
  [Отладка проектов DLL](../debugger/debugging-dll-projects.md) предоставляет сведения о том, как отладка библиотек DLL машинного и управляемого кода.
   
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)  
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)  
  Ссылки на крупные разделы документации об отладке. В этих разделах описываются: новые возможности отладчика, параметры настройки и подготовка, точки останова, обработка исключений, функция "изменить и продолжить", отладка машинного кода, отладка SQL, ссылки на интерфейс пользователя.  
   
 ## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)  
- [Отладка в Visual Studio](../debugger/index.md) [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+ [Отладка в Visual Studio](../debugger/index.md) 

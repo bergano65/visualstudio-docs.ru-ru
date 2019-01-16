@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924792"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269687"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Как выполнить отладку элемента управления ActiveX
 
@@ -62,4 +62,4 @@ ms.locfileid: "53924792"
 - [Тестирование свойств и событий с использованием тестового контейнера](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)
 - [Отладка в Visual Studio](../debugger/index.md)
-- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

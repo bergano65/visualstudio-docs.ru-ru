@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936514"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204473"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Наблюдать за переменными с помощью окна контрольных значений и "Быстрая проверка" 
 
@@ -30,7 +30,7 @@ ms.locfileid: "53936514"
 
 **Контрольные значения** windows может выводиться несколько переменных во время во время отладки. **"Быстрая проверка"** диалоговое окно отображает одну переменную в момент времени и должны быть закрыты перед продолжением отладки.
 
-Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [исправления ошибок, написав лучше C# кода](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
+Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
 
 ## <a name="observe-variables-with-a-watch-window"></a>Наблюдать за переменными в окне контрольных значений
 

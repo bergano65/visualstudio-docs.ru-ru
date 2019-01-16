@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886479"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153958"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 Имитатор Visual Studio для приложений универсальной платформы Windows — это классическое приложение, которое имитирует приложение универсальной платформы Windows. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать имитатор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать общие касания и поворота события и свойства сетевых подключений.
@@ -49,7 +49,7 @@ ms.locfileid: "53886479"
 ## <a name="pinch-and-zoom"></a>Жест сжатия и масштабирования
  Устанавливает режим взаимодействия с помощью жестов сжатия и масштабирования, выполняемых двумя пальцами.
 
--   ![Цель двух пальцев в симуляторе](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+-   ![Цель симулятора два пальца](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
 
      Двойной целевой значок указывает расположение двух пальцев на экране устройства.
 

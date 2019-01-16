@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880602"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154222"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -25,7 +25,7 @@ ms.locfileid: "53880602"
 
 - Cloud Explorer
 
-   Установить это окно вручную как расширение Visual Studio, выбрав **средства** > **расширения и обновления** > **Online**  >  **Markeplace visual Studio**. Предоставляет специализированные функции для просмотра и подключение к службам Azure.
+   Установить это окно вручную как расширение Visual Studio, выбрав **средства** > **расширения и обновления** > **Online**  >  **Visual Studio Marketplace**. Предоставляет специализированные функции для просмотра и подключение к службам Azure.
 
 - Обозреватель объектов SQL Server
 

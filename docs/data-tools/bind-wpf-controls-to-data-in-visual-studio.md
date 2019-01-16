@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932789"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154399"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 
@@ -99,7 +99,7 @@ Visual Studio создает язык XAML, который выполняет с
 При перетаскивании объекта или свойства из **источников данных** окно в конструкторе Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , создает элемент управления с привязкой к данным (либо создает привязку существующего элемента управления к объекту или свойству). Тем не менее Visual Studio не создает код для наполнения объекта данными. Этот код придется написать самостоятельно.
 
 > [!NOTE]
-> Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они can'tbe вложенные классы, которые имеют «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они не могут быть вложенные классы, содержащие «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , делает следующее:
 

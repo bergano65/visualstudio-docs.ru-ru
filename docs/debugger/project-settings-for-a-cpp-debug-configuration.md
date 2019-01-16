@@ -2,7 +2,6 @@
 title: Параметры проекта для конфигурации отладки C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957914"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
-Можно изменить параметры проекта для конфигурации отладки C или Visual C++ в **страницы свойств** диалоговое окно, как описано в [как: настроить отладку и выпуск конфигураций](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
+Можно изменить параметры проекта для конфигурации отладки C или Visual C++ в **страницы свойств** диалоговое окно, как описано в [как: Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
   
 > [!NOTE]
 >  Параметры отладки проекта в **свойства конфигурации/Отладка** категории различаются для приложений универсальной платформы Windows и компонентов, написанных на C++. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
@@ -168,7 +167,7 @@ ms.locfileid: "53066906"
   
 ## <a name="linker-folder-debugging-category"></a>Папка "Компоновщик" (категория "Отладка")  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Создавать отладочную информацию** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Указывает компоновщику включать сведения, формат которых задается ключом [/Z7, /Zd, Zi или /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
 |**Создавать файл базы данных программы** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|Укажите имя файла базы данных (PDB) программы в этом окне. Должен быть выбран формат отладочной информации ZI или /Zi.|  
@@ -178,7 +177,7 @@ ms.locfileid: "53066906"
 |**Сопоставлять экспортируемые функции** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Включение экспортируемых функций в файл сопоставления. По умолчанию выбрано значение "Нет". Дополнительные сведения см. в разделе [/MAPINFO (Включение сведений в файл сопоставления)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|  
 |**Отлаживаемая сборка** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Задает параметры для параметра компоновщика /ASSEMBLYDEBUG. Доступны следующие значения:<br /><br /> -   **Атрибут Debuggable не порождается**.<br />-   **Отслеживание во время выполнения и отключение оптимизации (/ASSEMBLYDEBUG)**. Это значение установлено по умолчанию.<br />-   **Нет отслеживания во время выполнения и отключения оптимизации (/ASSEMBLYDEBUG:DISABLE)**.<br />-   **\<наследовать от родителя или от значений по умолчанию для проекта>**.<br />— Дополнительные сведения см. в разделе [Параметр /ASSEMBLYDEBUG (добавление атрибута DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|  
   
- Эти параметры в папке "Свойства конфигурации" (категория "Отладка") можно изменить программным путем с помощью интерфейса Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
+ Эти параметры в папке "Свойства конфигурации" (категория "Отладка") можно изменить программным путем с помощью интерфейса Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 
 ## <a name="other-project-settings"></a>Другие параметры проекта
 

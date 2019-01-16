@@ -2,7 +2,6 @@
 title: Присоединение к выполняемым процессам с помощью отладчика | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 09/27/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899617"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 Отладчик Visual Studio можно подключить к запущенному процессу на локальном или удаленном компьютере. Запустив процесс, выберите **Отладка** > **присоединение к процессу** или нажмите клавишу **Ctrl**+**Alt** + **P** в Visual Studio и использовать **присоединение к процессу** диалоговое окно, чтобы подключить отладчик к процессу.
@@ -210,4 +209,3 @@ ms.locfileid: "53561646"
  [Отладка нескольких процессов](../debugger/debug-multiple-processes.md)   
  [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Удаленная отладка](../debugger/remote-debugging.md)
- 
