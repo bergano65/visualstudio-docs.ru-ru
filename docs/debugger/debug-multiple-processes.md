@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227386"
 ---
-# <a name="debug-multiple-processes"></a>Отладка нескольких процессов
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Отладка нескольких процессов (C#, Visual Basic, C++)
 
 Visual Studio поддерживает отладку решение, включающее несколько процессов. Можно запустить и переключения между процессами, прервать, по-прежнему и пошаговое выполнение исходного, остановить отладку и end или отсоединение от отдельных процессов.  
 

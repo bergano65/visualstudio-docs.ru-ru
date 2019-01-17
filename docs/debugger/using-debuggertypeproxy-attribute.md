@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227542"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>Использование атрибута DebuggerTypeProxy
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Использование атрибута DebuggerTypeProxy (C#, Visual Basic, C + +/ CLI)
 
 Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
 
@@ -33,6 +33,9 @@ ms.locfileid: "53889168"
 - Структуры
 - Классы
 - Сборки
+
+> [!NOTE]
+> Для машинного кода, этот атрибут поддерживается только в C + +/ CLI кода.
 
 Класс прокси-типа должен иметь конструктор, принимающий аргумент типа, который будет заменен прокси. Отладчик создает новый экземпляр класса прокси-типа всякий раз, когда требуется отобразить переменную конечного типа. Это может сказываться на производительности. Поэтому не следует выполнять в конструкторе больше действий, чем это действительно необходимо.
 

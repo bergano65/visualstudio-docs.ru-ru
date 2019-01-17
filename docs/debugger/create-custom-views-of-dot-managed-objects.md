@@ -1,6 +1,6 @@
 ---
-title: Создание настраиваемых представлений управляемых объектов | Документация Майкрософт
-ms.date: 11/04/2016
+title: Создание настраиваемых представлений объектов | Документация Майкрософт
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,31 +23,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 389deb0b6504ca5c7a3716399429f176e5dc7870
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227646"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>Создание настраиваемых представлений управляемых объектов
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Создание настраиваемых представлений объектов (C#, Visual Basic, C++)
 Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.  
+
+## <a name="native-code"></a>Машинный код
+
+Для кода C++, можно добавить расширения пользовательских типов данных с помощью платформы Natvis, как описано в разделе [создавать пользовательские представления собственного объекта в отладчике](/visualstudio/debugger/create-custom-views-of-native-objects). Для C + +/ CLI кода, также можно использовать атрибуты, описанные здесь, в этой статье.
+
+## <a name="attributes"></a>Атрибуты
+
+В C#, Visual Basic и C++ (C + +/ CLI только в код), можно добавлять расширения для пользовательских данных при помощи <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, и <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
   
-## <a name="attributes"></a>Атрибуты  
- В C# и Visual Basic можно добавлять расширения для пользовательских данных с помощью <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
- Visual Basic не поддерживает атрибут DebuggerBrowsable в случае кода для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это ограничение устранено в более новых версиях платформы .NET Framework.  
-  
-## <a name="visualizers"></a>Визуализаторы  
- Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [Как написать визуализатор](/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
-## <a name="native-code"></a>Машинный код  
- Для машинного кода можно добавлять расширения пользовательских типов данных в файл autoexp.dat, который находится в каталоге "Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger". Инструкции относительно записи в `autoexp` правил автоматического использования, расположены в этом файле.  
-  
-> [!CAUTION]
->  Структура этого файла, а также синтаксис правил автоматического использования могут изменяться от одного выпуска Visual Studio к другому.  
-  
- Отображение машинного типа можно также настроить путем написания надстройки — вычислителя выражений. Дополнительные сведения см. в разделе EEAddIn Sample: Debugging Expression Evaluator Add-In. Дополнительные сведения см. в разделе [пример EEAddIn: Отладка Expression Evaluator Add-In](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+Visual Basic не поддерживает атрибут DebuggerBrowsable в случае кода для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это ограничение устранено в более новых версиях платформы .NET Framework.    
+
+## <a name="visualizers"></a>Визуализаторы
+
+Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [Как написать визуализатор](/visualstudio/debugger/create-custom-visualizers-of-data).
   
 ## <a name="see-also"></a>См. также раздел  
  [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   

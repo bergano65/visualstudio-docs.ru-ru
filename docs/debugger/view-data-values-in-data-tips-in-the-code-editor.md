@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898077"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204405"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках в редакторе кода
 
-Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [исправления ошибок, написав лучше C# кода](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
-
-Если это первый раз отладку, вы можете прочитать [лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) перед чтением этой статьи.
+Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
   
 ## <a name="work-with-datatips"></a>Работа с подсказок по данным
 

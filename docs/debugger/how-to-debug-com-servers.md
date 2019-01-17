@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853935"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268580"
 ---
 # <a name="how-to-debug-com-servers"></a>Как выполнить отладку серверов COM
 Отладка приложений сервера COM создает ряд проблем, которые не всегда легко решить.  
@@ -47,4 +47,4 @@ ms.locfileid: "53853935"
  [Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)   
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

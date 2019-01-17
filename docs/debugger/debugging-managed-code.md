@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867044"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270210"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 
@@ -86,7 +86,7 @@ ms.locfileid: "53867044"
 
 ## <a name="see-also"></a>См. также
 
-[Пошаговое руководство: Отладка пользовательских Windows Forms элементы управления во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[безопасность отладчика](../debugger/debugger-security.md)
-[отладки в Visual Studio](../debugger/index.md) 
- [ Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+[Пошаговое руководство: Отладка пользовательских элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Безопасность отладчика](../debugger/debugger-security.md)  
+[Отладка в Visual Studio](../debugger/index.md)  
+[Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

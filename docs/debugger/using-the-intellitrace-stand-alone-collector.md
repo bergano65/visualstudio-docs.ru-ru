@@ -1,8 +1,6 @@
 ---
 title: Использование автономного сборщика данных IntelliTrace | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684867"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227724"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Использование автономного сборщика данных IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
+
 **Автономный сборщик IntelliTrace** позволяет собирать диагностические данные IntelliTrace для приложений на производственных серверах или в других средах без установки Visual Studio на целевом компьютере и без изменения среды в целевой системе. Автономный сборщик IntelliTrace работает в веб-приложениях, а также приложениях SharePoint, WPF и Windows Forms. По окончании сбора данных просто удалите сборщик.
 
  Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -71,7 +70,7 @@ ms.locfileid: "53684867"
 
 5.  [Сбор данных из веб-приложения или приложения SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -или-
+     - или -
 
      [Сбор данных из управляемого приложения](#BKMK_Collect_Data_from_Executables)
 
@@ -97,7 +96,7 @@ ms.locfileid: "53684867"
 
      1.  Скопируйте файл IntelliTraceCollection.cab из следующей папки:
 
-          **.. 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0 \Microsoft visual Studio**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2.  Поместите IntelliTraceCollection.cab в каталог сборщика, например:  **C:\IntelliTraceCollector**
 
@@ -128,7 +127,7 @@ ms.locfileid: "53684867"
 
          Например:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Домен\идентификатор >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Предоставьте пулу приложений для веб-приложения или приложения SharePoint права на чтение и выполнение для каталога сборщика.
 
@@ -192,7 +191,7 @@ ms.locfileid: "53684867"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -или-
+       - или -
 
    - Чтобы настроить разрешения с помощью проводника Windows:
 
@@ -200,7 +199,7 @@ ms.locfileid: "53684867"
 
      2.  На вкладке **Безопасность** выберите **Изменить**, затем **Добавить**.
 
-     3.  Убедитесь, что в окне **Выберите тип объекта** отображается элемент **Встроенные субъекты безопасности**. Если его там нет, выберите **Типы объектов** для его добавления.
+     3.  Убедитесь, что в окне **Выберите тип объекта** отображаются **Встроенные субъекты безопасности** . Если его там нет, выберите **Типы объектов** для его добавления.
 
      4.  Убедитесь, что локальный компьютер отображается в поле **Из этого расположения** . Если его там нет, выберите **Местоположения**, чтобы его изменить.
 
@@ -214,7 +213,7 @@ ms.locfileid: "53684867"
 
 1.  Для запуска процесса сбора данных откройте окно командной строки PowerShell с правами администратора, а затем выполните следующую команду:
 
-     `Start-IntelliTraceCollection` `"` *\<Пул приложений >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  После выполнения этой команды введите **Y** для подтверждения начала сбора данных.
@@ -256,7 +255,7 @@ ms.locfileid: "53684867"
 
 1.  Для запуска приложения и одновременного сбора данных используйте следующий синтаксис:
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Например, для сбора данных от приложения с именем **MyApp**:
 
@@ -320,7 +319,7 @@ ms.locfileid: "53684867"
 
   2. В `<ModuleList>`задайте атрибуту `isExclusionList` значение `false`.
 
-  3. Используйте элемент `<Name>`, чтобы задать модули с помощью одного из следующих параметров: имя файла, строковое значение для включения любого модуля, имя которого содержит эту строку, или открытый ключ.
+  3. Используйте элемент `<Name>` , чтобы задать модули с помощью одного из следующих параметров: имя файла, строковое значение для включения любого модуля, имя которого содержит эту строку, или открытый ключ.
 
      Например, для сбора данных только от основного веб-модуля веб-приложения Fabrikam Fiber создайте приблизительно следующий список:
 
@@ -366,7 +365,7 @@ ms.locfileid: "53684867"
 
    Да, для уменьшения степени влияния на уровень производительность IntelliTrace при сборе данных учитывает только значения примитивных типов данных, передаваемые и возвращаемые из методов, а также значения примитивных типов данных в полях объектов верхнего уровня, передаваемые и возвращаемые из методов.
 
-   Предположим, имеется сигнатура метода `AlterEmployee`, которая принимает целое число `id` и объект `Employee` с именем `oldemployee`:
+   Предположим, имеется сигнатура метода `AlterEmployee` , которая принимает целое число `id` и объект `Employee` с именем `oldemployee`:
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 
@@ -380,7 +379,7 @@ ms.locfileid: "53684867"
 
 -   Из сеанса отладки в Visual Studio Enterprise IntelliTrace, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
--   В сеансе тестирования в Microsoft Test Manager см. [Практическое руководство. Сбор данных IntelliTrace для отладки сложных проблем](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+-   В сеансе тестирования в Microsoft Test Manager, см. в разделе [как: сбор данных IntelliTrace для отладки сложных проблем
 
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)

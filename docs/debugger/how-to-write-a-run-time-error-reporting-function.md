@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938177"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204168"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения (C++)
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
   
  В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.  

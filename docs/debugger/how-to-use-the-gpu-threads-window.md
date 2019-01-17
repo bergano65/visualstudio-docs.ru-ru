@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227347"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Как выполнить Использование окна потоков GPU
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Как выполнить Использование окна потоков GPU (C++)
 С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в разделе [Обзор C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  В окне "Потоки GPU" имеется таблица, каждая строка которой представляет набор потоков GPU, имеющих одинаковые значения в каждом столбце. Элементы, содержащиеся в столбцах, можно сортировать, переупорядочивать, удалять и группировать. С помощью окна "Потоки GPU" можно помечать потоки и снимать с них пометки, можно замораживать (приостанавливать) и размораживать (возобновлять) потоки. Окно "Потоки GPU" содержит следующие столбцы:  

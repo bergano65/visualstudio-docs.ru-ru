@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892459"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Указание файлов символов (.pdb) и исходных файлов в отладчике Visual Studio (C#, C++, Visual Basic, F#)
@@ -155,7 +155,7 @@ ms.locfileid: "53892459"
   Можно ограничить команды, *srcsrv.dll* могут выполнять в приложении *.pdb* файл, составив список разрешенных команд в файле с именем *srcsrv.ini*. Место *srcsrv.ini* файл в той же папке, что *srcsrv.dll* и *devenv.exe*.  
   
   >[!IMPORTANT]
-  >В приложении могут быть внедрены произвольные команды *PDB-файл* файл, поэтому убедитесь, что только те команды, которые необходимо выполнить в *srcsrv.ini* файл. Любая попытка выполнить команду не из файла *srcsvr.ini* вызовет диалоговое окно подтверждения. Дополнительные сведения см. в разделе [предупреждение системы безопасности: Отладчик должен выполнить команду без доверия](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >В приложении могут быть внедрены произвольные команды *PDB-файл* файл, поэтому убедитесь, что только те команды, которые необходимо выполнить в *srcsrv.ini* файл. Любая попытка выполнить команду не из файла *srcsvr.ini* вызовет диалоговое окно подтверждения. Дополнительные сведения см. в разделе [предупреждение системы безопасности: Отладчик должен выполнить команду без доверия](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Параметры команд не проверяются, поэтому будьте внимательны с доверенными командами. Например, если перечисленных *cmd.exe* в вашей *srcsrv.ini*, пользователь-злоумышленник может указать параметры на *cmd.exe* это делает опасно.  
   

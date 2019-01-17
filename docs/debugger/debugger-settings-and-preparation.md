@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926863"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269778"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
@@ -52,4 +52,4 @@ ms.locfileid: "53926863"
 ## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)  
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

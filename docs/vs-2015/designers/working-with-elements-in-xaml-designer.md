@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896956"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -126,7 +126,7 @@ ms.locfileid: "49896956"
   
 -   В окне "Структура документа" или в области рисования щелкните правой кнопкой мыши элемент и последовательно выберите **Макет**, **Сброс** *имя_свойства*, где *имя_свойства* — это свойство, которое нужно переустановить (или выберите **Макет**, **Сбросить все**, чтобы переустановить все свойства макета элемента).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 

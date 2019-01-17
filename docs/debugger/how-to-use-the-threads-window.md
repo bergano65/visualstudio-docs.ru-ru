@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227672"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Пошаговое руководство. Отладка многопоточных приложений, с помощью окна потоков
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Пошаговое руководство. Отладка многопоточных приложений, с помощью окна потоков (C#, Visual Basic, C++)
 
 Некоторые элементы пользовательского интерфейса Visual Studio помочь в отладке многопоточных приложений. В этой статье рассматриваются многопоточных возможности отладки в окне редактора кода **место отладки** инструментов и **потоков** окна. Сведения о других средствах для отладки многопоточных приложений, см. в разделе [Начало отладки многопоточных приложениях](../debugger/get-started-debugging-multithreaded-apps.md). 
   

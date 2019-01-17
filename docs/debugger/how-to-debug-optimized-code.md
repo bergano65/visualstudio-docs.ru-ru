@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843480"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154328"
 ---
 # <a name="how-to-debug-optimized-code"></a>Как выполнить отладку оптимизированного кода
 
@@ -74,7 +74,7 @@ ms.locfileid: "53843480"
 
 8. Если для свойства `Custom` выбран параметр `Optimization`, это означает, что можно устанавливать параметры для любого из остальных свойств, показанных в списке.
 
-9. Выберите "Свойства конфигурации", "C/C++", узел "Командная строка" страницы свойств проекта и добавьте `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` в текстовое поле **Дополнительные параметры**.
+9. Выберите свойства конфигурации, C/C++, узел командной строки, страницы свойств проекта и добавьте `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` для **Дополнительные параметры** текстовое поле.
 
     > [!WARNING]
     >  Для использования `/Zo` требуется Visual Studio 2013 с обновлением 3 или более поздняя версия.

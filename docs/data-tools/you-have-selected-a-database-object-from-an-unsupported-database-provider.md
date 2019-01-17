@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894445"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204257"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Выбран объект базы данных из неподдерживаемого поставщика базы данных
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894445"
 > [!NOTE]
 > Поддерживаются только данные о соединениях, которые используют .NET Framework Data Provider for SQL Server.
 
-## <a name="to-correct-this-error"></a>Исправление ошибки
+## <a name="options"></a>Параметры
 
-- Нажмите кнопку **ОК**.
+- Нажмите кнопку **OK**, чтобы продолжить построение классов сущностей, сопоставляемым подключению, которое использует неподдерживаемые поставщики базы данных. Можно испытать неожиданное поведение, когда используете неподдерживаемых поставщиков базы данных.
 
-   Вы можете продолжить построение классов сущностей, которые сопоставляются соединение, которое использует неподдерживаемый поставщик базы данных. Можно испытать неожиданное поведение, когда используете неподдерживаемых поставщиков базы данных.
-
-    - или -
-
-- Нажмите кнопку **Отмена**.
-
-   Действие отменяется. Создайте или используйте данные о подключении, которое использует .NET Framework Provider for SQL Server.
+- Нажмите кнопку **отменить** остановить действие. Создайте или используйте другое подключение к данным, использующий поставщик данных .NET Framework для SQL Server.
 
 ## <a name="see-also"></a>См. также
 

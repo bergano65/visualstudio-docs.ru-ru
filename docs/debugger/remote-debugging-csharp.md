@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 699f0c2b3074b1b7bbaea1f1730a2c0d315e0f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f923d145d52ac86ad99c9aecd9875be4f78d4ef
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853415"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270116"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка C# или проект Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
@@ -110,7 +110,7 @@ ms.locfileid: "53853415"
   
 ## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)   
  [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  

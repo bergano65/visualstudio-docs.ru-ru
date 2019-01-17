@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227581"
 ---
-# <a name="using-the-microsoft-monitoring-agent"></a>Использование Microsoft Monitoring Agent
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>С помощью Microsoft Monitoring Agent (C#, Visual Basic)
+
 Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Открыв журнал в Visual Studio Enterprise (но не в выпуске Professional или Community), можно выполнить отладку с помощью любых диагностических средств Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](/azure/application-insights/) и [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.  
   
 > [!NOTE]
@@ -31,7 +32,8 @@ ms.locfileid: "53821052"
   
 3.  [Шаг 3. Сохраните записанные события](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> Шаг 1. Настройте Microsoft Monitoring Agent.  
+##  <a name="SetUpMonitoring"></a> Шаг 1. Настройте Microsoft Monitoring Agent.
+
  Настройте изолированный агент на веб-сервере, чтобы выполнить локальное отслеживание, не изменяя приложение. Если вы пользуетесь System Center 2012, см. раздел [Установка Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Настройка изолированного агента  
@@ -70,7 +72,7 @@ ms.locfileid: "53821052"
   
 2.  Импортируйте модуль PowerShell Microsoft Monitoring Agent из расположения установки по умолчанию:  
   
-     **PS C: > Import-Module «C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll»**  
+     **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
 3.  Актуальные статьи справки вы найдете на[веб-сайте TechNet](http://technet.microsoft.com/systemcenter/default) .  
   
@@ -120,11 +122,11 @@ ms.locfileid: "53821052"
   
      В следующем примере используется только имя веб-приложения и упрощенный режим **Monitor** :  
   
-     **PS C: > Start-WebApplicationMonitoring «FabrikamFabrikamFiber.Web» мониторинг «C:IntelliTraceLogs»**  
+     **PS C:>Start-WebApplicationMonitoring "FabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      В следующем примере используется путь IIS и упрощенный режим **Monitor** :  
   
-     **PS C: > Start-WebApplicationMonitoring «IIS:sitesFabrikamFabrikamFiber.Web» мониторинг «C:IntelliTraceLogs»**  
+     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      Возможно, когда вы приступите к отслеживанию и приложения будут перезапускаться, работа Microsoft Monitoring Agent приостановится.  
   
@@ -135,7 +137,7 @@ ms.locfileid: "53821052"
     |*"\<имя_приложения >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> - или -<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Его можно посмотреть в диспетчере IIS. Например:<br /><br /> ![Путь к веб-сайт IIS и веб-приложение](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode >*|Выберите режим отслеживания.<br /><br /> <ul><li>**Монитор**: запись минимальных сведений о событиях исключения и производительности. В этом режиме используется план сбора данных по умолчанию.</li><li>**Трассировка**: запись сведений на уровне функций и отслеживание приложений SharePoint 2010 и приложений SharePoint 2013 с использованием указанного плана сбора данных. При выборе этого режима работа приложения может замедляться.<br /><br /> <ul><li>[Вопрос. Как настроить разрешения для пула приложений?](#FullPermissionsITLog)</li><li>[Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)</li></ul><br />     В этом примере записываются события приложения SharePoint, размещенного на сайте SharePoint.<br /><br />     **Start-WebApplicationMonitoring «FabrikamSharePointSite\FabrikamSharePointApp» трассировка «C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml» «C:\IntelliTraceLogs»**</li><li>**Пользовательский**: запись пользовательских сведений с помощью заданного пользовательского плана сбора данных. Если после запуска отслеживания изменить план сбора данных, отслеживание необходимо перезапустить.</li></ul>|  
     |*"\<outputPath >»*|Укажите полный путь к каталогу для сохранения журналов IntelliTrace. Каталог необходимо создать перед началом отслеживания.|  
-    |*\<UInt32 >*|Укажите максимальный размер журнала IntelliTrace. По умолчанию максимальный размер журнала IntelliTrace — 250 МБ.<br /><br /> Если размер журнала превосходит это ограничение, агент записывает новые записи вместо наиболее старых. Это ограничение можно изменить с помощью параметра **-MaximumFileSizeInMegabytes** или атрибута `MaximumLogFileSize` в плане сбора данных.|  
+    |*\<UInt32>*|Укажите максимальный размер журнала IntelliTrace. По умолчанию максимальный размер журнала IntelliTrace — 250 МБ.<br /><br /> Если размер журнала превосходит это ограничение, агент записывает новые записи вместо наиболее старых. Это ограничение можно изменить с помощью параметра **-MaximumFileSizeInMegabytes** или атрибута `MaximumLogFileSize` в плане сбора данных.|  
     |*"\<collectionPlanPathAndFileName >»*|Укажите полный или относительный путь и имя файла плана сбора данных. План представляет собой XML-файл, определяющий параметры агента.<br /><br /> Следующие планы поставляются вместе с агентом и поддерживаются веб-приложениями и приложениями SharePoint.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Собирает только события, например исключения, события производительности, вызовы базы данных и запросы веб-сервера.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Собирает вызовы на уровне функций, а также все данные, указанные в плане сбора по умолчанию. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения.<br /><br /> Локализованные версии этих планов находятся во вложенных папках агента. Чтобы предотвратить замедление работы приложения, [настройте имеющиеся планы или создайте собственные](http://go.microsoft.com/fwlink/?LinkId=227871) . Помещайте все пользовательские планы в то же защищенное расположение, где находится агент.<br /><br /> [Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)|  
   
      Чтобы просмотреть дополнительные сведения о полном синтаксисе и другие примеры, выполните команду **get-help Start-WebApplicationMonitoring -detailed** или **get-help Start-WebApplicationMonitoring -examples**.  
@@ -243,11 +245,11 @@ ms.locfileid: "53821052"
   
     Например:  
   
-    **PS C:\\> Checkpoint-WebApplicationMonitoring «Fabrikam\FabrikamFiber.Web»**  
+    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
     - или -  
   
-    **PS C: > Checkpoint-WebApplicationMonitoring «IIS:sitesFabrikamFabrikamFiber.Web»**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     Для получения дополнительных сведений выполните команду **get-help Checkpoint-WebApplicationMonitoring -detailed** или **get-help Checkpoint-WebApplicationMonitoring -examples**.  
   
@@ -281,7 +283,7 @@ ms.locfileid: "53821052"
   
     \- или -  
   
-    **PS C:\\> Stop-WebApplicationMonitoring «IIS:\sites\Fabrikam\FabrikamFiber.Web»**  
+    **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
     Для получения дополнительных сведений выполните команду **get-help Stop-WebApplicationMonitoring -detailed** или **get-help Stop-WebApplicationMonitoring -examples**.  
   

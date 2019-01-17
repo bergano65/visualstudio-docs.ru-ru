@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893556"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий построения в Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "53893556"
 
 -   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# и F#--[как: Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# и F#--[как: Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++ — [Указание событий сборки ](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -60,4 +60,4 @@ ms.locfileid: "53893556"
     >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
 ## <a name="see-also"></a>См. также раздел
- [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
+ [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: сборка приложения.

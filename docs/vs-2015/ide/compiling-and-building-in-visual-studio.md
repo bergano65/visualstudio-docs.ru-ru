@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931068"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Компиляция и сборка в Visual Studio
@@ -57,4 +57,4 @@ Visual Studio можно использовать для построения п
 -   Улучшить производительность построения с помощью параллельных сборок. Дополнительные сведения см. в статье [Параллельное построение нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) или в записи блога [Настройка параллелизма построения C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>См. также раздел
- [Пошаговое руководство: Построение приложения](../ide/walkthrough-building-an-application.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [платформы построения понимание](../ide/understanding-build-platforms.md) [построение (компиляция) проектов веб-сайт](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Инструкции: Создание и удаление зависимостей проекта](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Пошаговое руководство: Построение приложения](../ide/walkthrough-building-an-application.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [платформы построения понимание](../ide/understanding-build-platforms.md) [построение (компиляция) проектов веб-сайт](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Инструкции: Создание и удаление зависимостей проекта.

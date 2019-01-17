@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227984"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Начало отладки многопоточных приложений
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Начало отладки многопоточных приложений (C#, Visual Basic, C++)
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этом руководстве показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и фильтр точки останова. Завершение изучения этого учебника вы ознакомитесь с возможностями Visual Studio для отладки многопоточных приложений.
 
 | | |
@@ -36,7 +36,7 @@ Visual Studio предоставляет несколько средств и э
 
 - Чтобы использовать **место отладки** инструментов и **потоков** окно, см. в разделе [Пошаговое руководство: Отладка многопоточных приложений](../debugger/how-to-use-the-threads-window.md).
 
-- Пример, использующий <xref:System.Threading.Tasks.Task> (управляемый код) и среда выполнения с параллелизмом (C++), см. в разделе [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md). Общие отладки советы, которые применяются к типам наиболее многопоточного приложения приведены в этой теме и данное действие.
+- Пример, использующий <xref:System.Threading.Tasks.Task> (управляемый код) и среда выполнения с параллелизмом (C++), см. в разделе [Пошаговое руководство: отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md) Общие отладки советы, которые применяются к типам наиболее многопоточного приложения приведены в этой теме и данное действие.
   
 Проект многопоточного приложения необходимо сначала. См. пример ниже.  
   

@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854767"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204207"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
 
@@ -25,15 +25,13 @@ ms.locfileid: "53854767"
 > [!WARNING]
 > При явной установке свойства **Соединение** в окне **Настройки приложения** в значение **False** будет добавлен пароль в DBML-файл.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Для сохранения строки подключения с конфиденциальной информацией в параметрах приложения проекта
+## <a name="save-options"></a>Параметры сохранения
 
-- Нажмите кнопку **Да**.
+- Чтобы сохранить строку подключения с конфиденциальной информацией, выберите **Да**.
 
    Строка подключения сохраняется как параметр приложения. Строка подключения включает конфиденциальную информацию в обычный текст. В файле DBML отсутствует конфиденциальная информация.
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Для сохранения строки подключения без конфиденциальной информации в параметрах приложения проекта
-
-- Нажмите кнопку **Нет**.
+- Чтобы сохранить строку подключения без конфиденциальной информации, выберите **нет**.
 
    Строка подключения сохраняется как параметр приложения, но не включает пароль.
 

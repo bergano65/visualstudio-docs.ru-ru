@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53924271"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Пошаговое руководство. Создание N-уровневого приложения для работы с данными
@@ -49,7 +49,7 @@ ms.locfileid: "53924271"
 
 -   Написание кода для заполнения таблиц данных.
 
-![ссылка на видео](../data-tools/media/playvideo.gif) видеоверсию этого раздела, см. в разделе [Video How to: Создание n-уровневого приложения для работы с данными](http://go.microsoft.com/fwlink/?LinkId=115188).
+![ссылка на видео](../data-tools/media/playvideo.gif) видеоверсию этого раздела, см. в разделе [Video How to: создание n-уровневого приложения для работы с данными
 
 ## <a name="prerequisites"></a>Предварительные требования
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.

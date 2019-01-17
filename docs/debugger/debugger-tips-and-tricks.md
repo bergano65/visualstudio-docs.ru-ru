@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927159"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270064"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
-Прочитайте эту статью, чтобы узнать несколько советы по повышению производительности и рекомендации для отладчика Visual Studio. Рассмотрим основные возможности отладчика, см. в разделе [обзором возможностей отладчика](../debugger/debugger-feature-tour.md). В этом разделе мы рассмотрим некоторые области, которые не включены в обзор возможностей.
+Прочитайте эту статью, чтобы узнать несколько советы по повышению производительности и рекомендации для отладчика Visual Studio. Рассмотрим основные возможности отладчика, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md). В этом разделе мы рассмотрим некоторые области, которые не включены в обзор возможностей.
 
 ## <a name="pin-data-tips"></a>Советы по данным ПИН-код
 

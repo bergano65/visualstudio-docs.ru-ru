@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227997"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Просмотр событий с помощью IntelliTrace в Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Просмотр событий с помощью IntelliTrace в Visual Studio Enterprise (C#, Visual Basic)
+
 IntelliTrace можно использовать для сбора сведений о конкретных событиях или категориях событий, а также об отдельных вызовах функций в дополнение к событиям. Процедура приведена ниже.  
   
- IntelliTrace можно использовать в выпуске Visual Studio Enterprise, но не в выпусках Professional или Community.  
+IntelliTrace можно использовать в выпуске Visual Studio Enterprise, но не в выпусках Professional или Community.  
   
-##  <a name="GettingStarted"></a> Настройка Intellitrace  
+##  <a name="GettingStarted"></a> Настройка IntelliTrace  
+
  Вы можете попробовать выполнить отладку только с помощью событий IntelliTrace. События IntelliTrace — это события отладчика, исключения, события .NET Framework и другие системные события. До начала отладки следует включить или отключить определенные события в зависимости от того, должно ли их записывать средство IntelliTrace. Дополнительные сведения см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Включите событие IntelliTrace для доступа к файлам. Перейдите на страницу **Сервис > Параметры > IntelliTrace > События IntelliTrace** и разверните категорию **Файл**. Установите флажок напротив категории событий **Файл** . Будут проверены все события, связанные с файлами (доступ, закрытие, удаление).
