@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966460"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228049"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Как выполнить отладку в высокопроизводительном кластере
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Как выполнить Отладка в высокопроизводительном кластере (C#, Visual Basic, C++)
+
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
   
  При отладке на кластере высокой производительности можно использовать все окна отладки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и методы, которые доступны для удаленной отладки. Однако, так как отладка происходит удаленно, то внешнее окно консоли не доступно.  
@@ -34,7 +35,7 @@ ms.locfileid: "53966460"
   
  При отладке параллельного приложения может потребоваться установить точку останова на определенном потоке, процессе или компьютере. Это можно сделать путем создания обычной точки останова и добавления затем фильтра точки останова.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Открытие диалогового окна фильтра точки останова  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Открытие диалогового окна фильтра точки останова
   
 1.  Щелкните правой кнопкой мыши глиф точки останова в окне исходного кода, окне **Дизассемблированный код**, окне **Стек вызовов** или в окне **точки останова**.  
   
