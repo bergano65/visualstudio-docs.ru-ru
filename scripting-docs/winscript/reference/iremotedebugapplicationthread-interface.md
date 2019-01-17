@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IRemoteDebugApplicationThread | Документы Microsoft
+title: Интерфейс IRemoteDebugApplicationThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,27 +15,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f502749453e1701c8e6e52e69745408fdcd9812d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729744"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349716"
 ---
 # <a name="iremotedebugapplicationthread-interface"></a>Интерфейс IRemoteDebugApplicationThread
-Класс, представляющий поток исполнения в конкретном приложении.  
+Представляет поток исполнения в определенном приложении.  
   
  Помимо методов, наследуемых от `IUnknown`, `IRemoteDebugApplicationThread` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationThread::GetSystemThreadId](../../winscript/reference/iremotedebugapplicationthread-getsystemthreadid.md)|Возвращает идентификатор зависит от операционной системы, связанный с потоком.|  
-|[IRemoteDebugApplicationThread::GetApplication](../../winscript/reference/iremotedebugapplicationthread-getapplication.md)|Возвращает объект приложения, связанный с этим потоком.|  
-|[IRemoteDebugApplicationThread::EnumStackFrames](../../winscript/reference/iremotedebugapplicationthread-enumstackframes.md)|Возвращает перечислитель для кадров стека, связанным с этим потоком.|  
-|[IRemoteDebugApplicationThread::GetDescription](../../winscript/reference/iremotedebugapplicationthread-getdescription.md)|Возвращает описание и состояние для данного потока.|  
-|[IRemoteDebugApplicationThread::SetNextStatement](../../winscript/reference/iremotedebugapplicationthread-setnextstatement.md)|Продолжить как можно ближе к контексту данный код в контексте заданного интервала принудительное выполнение.|  
-|[IRemoteDebugApplicationThread::GetState](../../winscript/reference/iremotedebugapplicationthread-getstate.md)|Возвращает состояние для данного потока.|  
-|[IRemoteDebugApplicationThread::Suspend](../../winscript/reference/iremotedebugapplicationthread-suspend.md)|Приостанавливает работу потока.|  
+|[IRemoteDebugApplicationThread::GetSystemThreadId](../../winscript/reference/iremotedebugapplicationthread-getsystemthreadid.md)|Возвращает идентификатор зависящую от операционной системы, связанный с потоком.|  
+|[IRemoteDebugApplicationThread::GetApplication](../../winscript/reference/iremotedebugapplicationthread-getapplication.md)|Возвращает объект приложения, связанный с данным потоком.|  
+|[IRemoteDebugApplicationThread::EnumStackFrames](../../winscript/reference/iremotedebugapplicationthread-enumstackframes.md)|Возвращает перечислитель для кадров стека, связанные с данным потоком.|  
+|[IRemoteDebugApplicationThread::GetDescription](../../winscript/reference/iremotedebugapplicationthread-getdescription.md)|Возвращает описание и состояние данного потока.|  
+|[IRemoteDebugApplicationThread::SetNextStatement](../../winscript/reference/iremotedebugapplicationthread-setnextstatement.md)|Принудительное выполнение продолжалось максимально близко к контексту данного кода в контексте заданного интервала.|  
+|[IRemoteDebugApplicationThread::GetState](../../winscript/reference/iremotedebugapplicationthread-getstate.md)|Получает состояние данного потока.|  
+|[IRemoteDebugApplicationThread::Suspend](../../winscript/reference/iremotedebugapplicationthread-suspend.md)|Приостанавливает поток.|  
 |[IRemoteDebugApplicationThread::Resume](../../winscript/reference/iremotedebugapplicationthread-resume.md)|Возобновляет выполнение потока.|  
 |[IRemoteDebugApplicationThread::GetSuspendCount](../../winscript/reference/iremotedebugapplicationthread-getsuspendcount.md)|Возвращает счетчик приостановки для потока.|

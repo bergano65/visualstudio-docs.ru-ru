@@ -1,5 +1,5 @@
 ---
-title: Ожидалась константа | Документы Microsoft
+title: Ожидалась константа | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632944"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344321"
 ---
 # <a name="expected-constant"></a>Ожидалась константа
-Предпринята попытка использовать переменную (компиляция без условий) в операторах проверки условной компиляции. Операторы тестирования условной компиляции должны оцениваться как константы.  
+Предпринята попытка использовать переменную (компиляция без условий) в операторе условной компиляции теста. Операторы условной компиляции теста должны оцениваться как константы.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Замените переменную литералом.  
+-   Замените переменную литерала.  
   
 -   Замените переменную переменной условной компиляции.  
   

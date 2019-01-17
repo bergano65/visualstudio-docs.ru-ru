@@ -1,5 +1,5 @@
 ---
-title: Перечисление APPBREAKFLAGS | Документы Microsoft
+title: Перечисление APPBREAKFLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641684"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349027"
 ---
 # <a name="appbreakflags-enumeration"></a>Перечисление APPBREAKFLAGS
 Показывают текущее состояние отладки для приложений и потоков.  
@@ -34,14 +34,14 @@ ms.locfileid: "24641684"
 enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEBUGGER_HALT= 0x00000002,APPBREAKFLAG_STEP= 0x00010000,APPBREAKFLAG_NESTED= 0x00020000,APPBREAKFLAG_STEPTYPE_SOURCE= 0x00000000,APPBREAKFLAG_STEPTYPE_BYTECODE= 0x00100000,APPBREAKFLAG_STEPTYPE_MACHINE= 0x00200000,APPBREAKFLAG_STEPTYPE_MASK= 0x00F00000,APPBREAKFLAG_IN_BREAKPOINT= 0x80000000};  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Член|Значение|Описание|  
+|Член|Значение|Описание:|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Языковая подсистема следует прерывать сразу все потоки с BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Языковая подсистема следует немедленное прерывание с BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Языковая подсистема следует немедленное прерывание в пошагового выполнения потока с BREAKREASON_STEP.|  
-|APPBREAKFLAG_NESTED|0x00020000|Данное приложение находится в вложенное выполнение в точке останова.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Модуль языка должно прерывать работу немедленно во всех потоках с BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Модуль языка должно прерывать работу немедленно с BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|Модуль языка должно прерывать работу немедленно в потоке пошагового выполнения с BREAKREASON_STEP.|  
+|APPBREAKFLAG_NESTED|0x00020000|Приложение находится в вложенное выполнение в точке останова.|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Отладчик является выход на уровне источника.|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Отладчик является выход на уровне кода байтов.|  
 |APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Отладчик является выход на уровне компьютера.|  
@@ -49,7 +49,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Точки останова уже выполняется.|  
   
 ## <a name="remarks"></a>Примечания  
- Некоторые флаги определяют, что модули языка должно быть прервано в первой возможности, пока другие флаги режим пошагового режима отладчика.  
+ Некоторые флаги указать, что модулям языка будет прерываться в осуществляется при первой возможности, хотя другие флаги режим пошагового выполнения отладчика.  
   
 ## <a name="see-also"></a>См. также  
  [Константы отладчика активных скриптов, перечисления и структуры](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   

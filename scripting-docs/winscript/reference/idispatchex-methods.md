@@ -1,5 +1,5 @@
 ---
-title: Методы IDispatchEx | Документы Microsoft
+title: Методы IDispatchEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727644"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347805"
 ---
 # <a name="idispatchex-methods"></a>Методы IDispatchEx
 Ниже приведены методы IDispatchEx.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
  Удаляет элемент по DISPID.  
   
@@ -32,16 +32,16 @@ ms.locfileid: "24727644"
  Удаляет элемент по имени.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Сопоставляет имя одного элемента его соответствующий DISPID, который можно использовать при последующих вызовах IDispatchEx::InvokeEx.  
+ Сопоставляет имя одного элемента с его соответствующий идентификатор DISPID, который затем может использоваться в последующих вызовах IDispatchEx::InvokeEx.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
- Возвращает имя элемента.  
+ Получает имя члена.  
   
  [IDispatchEx::GetMemberProperties](../../winscript/reference/idispatchex-getmemberproperties.md)  
  Извлекает свойства члена.  
   
  [IDispatchEx::GetNameSpaceParent](../../winscript/reference/idispatchex-getnamespaceparent.md)  
- Извлекает интерфейс пространство имен для родительского объекта.  
+ Извлекает интерфейс для пространства имен родительского объекта.  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
  Перечисляет элементы объекта.  

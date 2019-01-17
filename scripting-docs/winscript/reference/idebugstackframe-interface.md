@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugStackFrame | Документы Microsoft
+title: Интерфейс IDebugStackFrame | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727534"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348546"
 ---
 # <a name="idebugstackframe-interface"></a>Интерфейс IDebugStackFrame
-Представляет кадр логического стека в стеке потока. Вызовите `IDebugStackFrame::QueryInterface` метод, чтобы получить `IDebugExpressionContext` интерфейс, который позволяет выражения вычисления» и «Контрольное windows.  
+Представляет логический кадр стека в стеке потоков. Вызовите `IDebugStackFrame::QueryInterface` метод, чтобы получить `IDebugExpressionContext` интерфейс, который разрешает выражение, вычисление и окна контрольных значений.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugStackFrame` интерфейс предоставляет следующие методы.  
   
@@ -31,7 +31,7 @@ ms.locfileid: "24727534"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Возвращает текущий контекст кода, связанный с этим кадром стека.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Возвращает описание короткие и длинные текстовые кадра стека.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Возвращает короткое или долго текстовое описание кадра стека.|  
 |[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Возвращает короткое или долго текстовое описание языка.|  
 |[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Возвращает поток, связанный с данным кадром стека.|  
-|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Возвращает обозреватель свойств для текущего кадра.|
+|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Возвращает браузер свойств для текущего кадра.|

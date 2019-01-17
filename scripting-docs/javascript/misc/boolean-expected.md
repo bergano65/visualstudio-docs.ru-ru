@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb8ec8f7244b98cfa628794b485859dbec611c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868096"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347935"
 ---
 # <a name="boolean-expected"></a>Ожидается логическое значение
 Предпринята попытка вызова **Boolean.prototype.toString** или **Boolean.prototype.valueOf** метод на объект типа, отличных от `Boolean`. Объект этого типа вызова должен иметь тип `Boolean`. Пример:

@@ -20,11 +20,11 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295167"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349482"
 ---
 # <a name="access-is-denied"></a>Отказано в доступе
 Скрипт попытался получить доступ к данным из источника, который не является узлом текущей страницы. Политика одного источника, которой следует Internet Explorer и другие браузеры, позволяет скриптам получать доступ к данным только из тех источников, которые находятся в той же схеме, на том же узле и в том же порте, что и URL-адрес текущей страницы.  

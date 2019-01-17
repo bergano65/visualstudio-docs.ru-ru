@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugDocumentTextAuthor | Документы Microsoft
+title: Интерфейс IDebugDocumentTextAuthor | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726554"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344074"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>Интерфейс IDebugDocumentTextAuthor
-Предоставляемые текстовых документов, поддерживают редактирование.  
+Предоставляемые текстовых документов, поддерживающих правку.  
   
  Помимо методов, наследуемых от `IDebugDocumentText`, `IDebugDocumentTextAuthor` интерфейс предоставляет следующие методы.  
   
@@ -30,6 +30,6 @@ ms.locfileid: "24726554"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Вставка нового текста в документ.|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Вставляет новый текст в документ.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Удаляет текст из документа.|  
 |[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Заменяет текст в документе.|

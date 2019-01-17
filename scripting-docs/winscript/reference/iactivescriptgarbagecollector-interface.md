@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptGarbageCollector | Документы Microsoft
+title: Интерфейс IActiveScriptGarbageCollector | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55fd4bc91ba158ebbfa16df169ec7b39c7176ad5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6809fe089c2cd3f060cb4591b7c4d1ff12b01e97
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645714"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346258"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>Интерфейс IActiveScriptGarbageCollector
-Предоставляет метод для запуска сборки мусора. Этот интерфейс должен быть реализован обработчиков активного скрипта, чтобы очистить свои ресурсы.  
+Предоставляет метод, чтобы запустить сбор мусора. Этот интерфейс должен реализовываться ядрами активных скриптов, которые хотите очистить свои ресурсы.  
   
 ## <a name="methods"></a>Методы  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Запускает сбор мусора.|  
   

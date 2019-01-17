@@ -1,5 +1,5 @@
 ---
-title: Константы отладчика активных скриптов, перечисления и структуры | Документы Microsoft
+title: Константы отладчика активных скриптов, перечисления и структуры | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642074"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345439"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Константы, перечисления и структуры отладчика активных скриптов
 Следующие константы, перечисления и структуры используются активными интерфейсами отладки.  
@@ -31,7 +31,7 @@ ms.locfileid: "24642074"
 |Константы|Описание|  
 |---------------|-----------------|  
 |[Константы APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Показывают текущее состояние отладки для приложений и потоков.|  
-|[Константы DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Параметр флаги, используемые во время [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[Константы DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Флаги параметров, используемых во время [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)|Описывают атрибуты документа.|  
   
 |Перечисления|Описание|  
@@ -48,9 +48,9 @@ ms.locfileid: "24642074"
 |[Перечисление JsDebugReadMemoryFlags](../../winscript/reference/jsdebugreadmemoryflags-enumeration.md)|Флаги для задания поведения при чтении памяти.|  
 |[Перечисление SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md)|Задает набор параметров или возможностей, применяемых к подключенному отладчику.|  
 |[Перечисление SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md)|Задает вид создаваемого исключения.|  
-|[Константы SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)|Описывают атрибуты отдельного символа исходного текста.|  
+|[SOURCE_TEXT_ATTR Constants](../../winscript/reference/source-text-attr-enumeration.md)|Описывают атрибуты отдельного символа исходного текста.|  
   
-|Структуры|Описание|  
+|Структуры|Описание:|  
 |----------------|-----------------|  
 |[Структура DebugStackFrameDescriptor](../../winscript/reference/debugstackframedescriptor-structure.md)|Перечисляет кадры стека и объединяет результаты нескольких перечислителей в одном потоке.|  
 |[Структура JS_NATIVE_FRAME](../../winscript/reference/js-native-frame-structure.md)|Представляет кадр стека.|  

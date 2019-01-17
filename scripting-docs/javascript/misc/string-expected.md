@@ -1,5 +1,5 @@
 ---
-title: Ожидалась строка | Документы Microsoft
+title: Требуется строка | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632804"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346804"
 ---
-# <a name="string-expected"></a>Ожидалась строка
-Предпринята попытка вызвать **String.prototype.toString** или **String.prototype.valueOf** метода объекта типа, отличного от `String`. Объект вызова этого типа должен иметь тип `String`.  
+# <a name="string-expected"></a>Требуется строка
+Предпринята попытка вызова **String.prototype.toString** или **String.prototype.valueOf** метод на объект типа, отличных от `String`. Объект этого типа вызова должен иметь тип `String`.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **String.prototype.toString** или **String.prototype.valueOf** методов для объектов типа `String`.  
+-   Вызывается только **String.prototype.toString** или **String.prototype.valueOf** методов в объектах типа `String`.  
   
 ## <a name="see-also"></a>См. также  
  [Объект String](../../javascript/reference/string-object-javascript.md)   

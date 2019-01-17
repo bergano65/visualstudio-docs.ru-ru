@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348310"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350119"
 ---
 # <a name="expected-"></a>Ожидался символ "}"
 Не включить закрывающая фигурная скобка, обозначающая конец тела функции, цикл, блок кода или инициализатора объекта. Примером этой ошибки может служить **для** цикла с помощью только открывающая фигурная скобка пометки тело цикла.  

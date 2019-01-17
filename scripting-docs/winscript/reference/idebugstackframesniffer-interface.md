@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugStackFrameSniffer | Документы Microsoft
+title: Интерфейс IDebugStackFrameSniffer | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726804"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348884"
 ---
 # <a name="idebugstackframesniffer-interface"></a>Интерфейс IDebugStackFrameSniffer
-Предоставляет способ для перечисления логических стека, известные компонентом. Обработчики скриптов обычно реализуют этот интерфейс. Диспетчер отладки процесса использует этот интерфейс, чтобы найти все кадры стека, связанные с данного потока.  
+Предоставляет способ для перечисления логических кадров стека известные компонентом. Этот интерфейс обычно реализуется обработчиков сценариев. Диспетчер отладки процесса использует этот интерфейс, чтобы найти все кадры стека, связанные с данного потока.  
   
 > [!NOTE]
->  Отладчик вызывает этот интерфейс из потока, представляющие интерес. Обработчик скриптов необходимо указать текущий поток и возвращать соответствующий перечислитель.  
+>  Отладчик вызывает этот интерфейс из потока, представляющие интерес. Обработчик скриптов должна определить текущий поток и возвращать соответствующий перечислитель.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugStackFrameSniffer` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Возвращает перечислитель кадров стека текущего потока.|
+|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Возвращает перечислитель для кадров стека текущего потока.|

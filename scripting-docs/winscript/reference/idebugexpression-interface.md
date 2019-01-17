@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugExpression | Документы Microsoft
+title: Интерфейс IDebugExpression | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727794"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345522"
 ---
 # <a name="idebugexpression-interface"></a>Интерфейс IDebugExpression
-Представляет асинхронно вычисленных выражений. Обработчики скриптов обычно реализуют этот интерфейс. Отладчик интегрированной среды разработки обычно использует этот интерфейс для включения немедленное выполнение окно или окно контрольных значений.  
+Представляет асинхронно вычисляемое выражение. Этот интерфейс обычно реализуется обработчиков сценариев. Интегрированная среда разработки отладчика обычно использует этот интерфейс для включения в окне немедленное выполнение или окно контрольных значений.  
   
 > [!NOTE]
 >  `IDebugExpression` Интерфейс доступен только из кадра стека.  
@@ -31,10 +31,10 @@ ms.locfileid: "24727794"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Начинает вычисления выражения.|  
+|[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Начинается вычисление выражения.|  
 |[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Прерывает выражение.|  
 |[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Определяет, если операция будет завершена.|  
-|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Возвращает результат вычисления выражения, как строка и возвращаемое значение операции.|  
+|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Возвращает результат вычисления выражения в виде строки, а возвращаемое значение операции.|  
 |[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Возвращает результат вычисления выражения, как свойство отладки и возвращаемое значение операции.|

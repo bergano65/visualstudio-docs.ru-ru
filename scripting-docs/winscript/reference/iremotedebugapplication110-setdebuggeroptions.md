@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions | Документы Microsoft
+title: IRemoteDebugApplication110::SetDebuggerOptions | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16782329de6268b309710e60e707d629fd9929a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729384"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346778"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-Вызывается для обновления параметров отладчика. Этот метод следует вызывать после [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) метод автоматически выполняет сброс параметров по умолчанию. Параметры по умолчанию 0 (SDO_NONE).  
+Вызывается для обновления параметров отладчика. Этот метод следует вызывать после [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) метод автоматически восстанавливает параметры по умолчанию. Параметры по умолчанию 0 (SDO_NONE).  
   
 > [!IMPORTANT]
->  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

@@ -1,5 +1,5 @@
 ---
-title: Синтаксическая ошибка (JavaScript) | Документы Microsoft
+title: Синтаксическая ошибка (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632964"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345374"
 ---
 # <a name="syntax-error-javascript"></a>Синтаксическая ошибка (JavaScript)
-Создать оператор, который нарушает одно или несколько грамматических правил [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Вы создали инструкцию, которое нарушает одно или несколько грамматических правил [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Проверьте синтаксис программы по указанному номеру строки.  
+-   Еще раз Проверьте синтаксис этого приложения на указанный номер строки.  
   
--   Найдите несоответствующие круглые или фигурные скобки.  
+-   Ищите несоответствующие круглые или фигурные скобки.  
   
 ## <a name="see-also"></a>См. также  
  [Объект Error](../../javascript/reference/error-object-javascript.md)

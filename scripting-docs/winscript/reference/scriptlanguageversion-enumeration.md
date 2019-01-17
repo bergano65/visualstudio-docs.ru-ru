@@ -1,5 +1,5 @@
 ---
-title: Перечисление SCRIPTLANGUAGEVERSION | Документы Microsoft
+title: Перечисление SCRIPTLANGUAGEVERSION | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cee2966b326ca7b4c258ffdb85b6fa71d90992
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 374025b7564c058ae89064b6a27384c9075a30f9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734074"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350106"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>Перечисление SCRIPTLANGUAGEVERSION
-Указывает возможные сценарии версий.  
+Задает возможные сценарии версии.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,10 +32,10 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
   
 |||  
 |-|-|  
-|SCRIPTLANGUAGEVERSION_DEFAULT|Версия по умолчанию. Целочисленное значение — 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|Скрипты Windows версии 5.7. Целочисленное значение-1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Версия 5.8 сценариев Windows. Целочисленное значение — 2.|  
-|SCRIPTLANGUAGEVERSION_MAX|Максимальная версия. Целочисленное значение — 255.|  
+|SCRIPTLANGUAGEVERSION_DEFAULT|Версия по умолчанию. Целочисленное значение равно 0.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting версии 5.7. Целочисленное значение-1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting версии 5.8. Целочисленное значение равно 2.|  
+|SCRIPTLANGUAGEVERSION_MAX|Максимальная версия. Целочисленное значение равно 255.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

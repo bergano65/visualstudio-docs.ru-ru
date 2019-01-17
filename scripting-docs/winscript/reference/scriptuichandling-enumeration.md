@@ -1,5 +1,5 @@
 ---
-title: Перечисление SCRIPTUICHANDLING | Документы Microsoft
+title: Перечисление SCRIPTUICHANDLING | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40b538c6f28e29dcdef4a8335beae87d1c2b6ddd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b365c1b67bbc905ec43d72cdc2910482d2d23518
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734064"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348065"
 ---
 # <a name="scriptuichandling-enumeration"></a>Перечисление SCRIPTUICHANDLING
-Представляет способ обработки элемент управления пользовательского интерфейса.  
+Представляет способ обработки элемента управления пользовательского интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   

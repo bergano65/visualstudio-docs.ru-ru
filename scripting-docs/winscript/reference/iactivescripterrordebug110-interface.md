@@ -1,5 +1,5 @@
 ---
-title: Iactivescripterrordebug110 — интерфейс | Документы Microsoft
+title: Интерфейс IActiveScriptErrorDebug110 | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645764"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345907"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 — интерфейс
 Расширяет его функциональные возможности [интерфейс IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md). Этот интерфейс реализуется обработчиком JavaScript, чтобы определить, почему произошло событие BREAKREASON_ERROR.  
@@ -30,6 +30,6 @@ ms.locfileid: "24645764"
 ## <a name="methods"></a>Методы  
  Интерфейс `IActiveScriptErrorDebug110` предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md)|Возвращает вид исключения для созданного исключения.|
