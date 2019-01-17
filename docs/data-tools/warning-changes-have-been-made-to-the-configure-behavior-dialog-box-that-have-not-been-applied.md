@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847841"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204061"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Предупреждение. В диалоговом окне «Настройка режима» внесены изменения, которые еще не применены
 
@@ -22,13 +22,11 @@ ms.locfileid: "53847841"
 
 **Конфигурирование поведения** диалоговое окно позволяет настроить `Insert`, `Update`, и `Delete` поведение для всех имеющихся классов. Это сообщение появляется при выборе новой комбинации **Класса** и **Поведения**, когда предыдущее изменение еще не было применено.
 
-## <a name="to-apply-the-change-and-continue"></a>Чтобы применить изменение и продолжить
+## <a name="change-options"></a>Изменение параметров
 
-- Нажмите кнопку **Да**, чтобы применить изменение к выбранному **Классу** и **Поведению**.
+- Чтобы применить изменения и продолжить, нажмите кнопку **Да**. Это изменение применяется к выбранному **класс** и **поведение**.
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>Чтобы отменить предыдущее изменение и продолжить
-
-- Нажмите кнопку **Нет**, чтобы отменить изменение выбранного **Класса** и **Поведения**.
+- Чтобы отменить предыдущее изменение и продолжить, нажмите кнопку **нет**.
 
 ## <a name="see-also"></a>См. также
 
