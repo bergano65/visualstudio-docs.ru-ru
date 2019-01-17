@@ -3,24 +3,24 @@ title: Подписки Visual Studio для партнеров в Microsoft Par
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876773"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739456"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Подписки для партнеров с компетенцией MPN
-Когда партнер получает компетенцию уровня Gold или Silver, он зарабатывает базовое число подписок Visual Studio Enterprise. Это базовое преимущество меняется, когда партнер получает хотя бы одну компетенцию уровня Gold. Подписка на Visual Studio Enterprise — это индивидуальное предложение, которое примерно соответствует [годовой облачной подписке на Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), но без некоторых преимуществ (многие из которых предлагаются партнерам отдельно как общие преимущества MPN, а не в рамках подписки на Visual Studio Enterprise, предлагаемой через MPN).
+Когда партнер получает компетенцию уровня Gold или Silver, он зарабатывает базовое число подписок Visual Studio Enterprise. Это базовое преимущество меняется, когда партнер получает хотя бы одну компетенцию уровня Gold. Подписка на Visual Studio Enterprise — это индивидуальное предложение, которое примерно соответствует [подписке на Visual Studio Enterprise цен. категории "Стандартный"](https://visualstudio.microsoft.com/vs/pricing/), но без некоторых преимуществ (многие из которых предлагаются партнерам отдельно как общие преимущества MPN, а не в рамках подписки на Visual Studio Enterprise, предлагаемой через MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Базовое преимущество Visual Studio за получение одной компетенции любого уровня
 

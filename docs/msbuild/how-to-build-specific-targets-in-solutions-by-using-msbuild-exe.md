@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Построение особых целей в решениях с помощью MSBuild.exe | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 12405ef76955c9200fd5a83a079b7e0155f3dd09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924011"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Построение особых целей в решениях с помощью MSBuild.exe
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Как выполнить Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
 Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.  
   
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении  

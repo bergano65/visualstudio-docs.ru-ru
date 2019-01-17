@@ -1,10 +1,8 @@
 ---
 title: Задача Unzip | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 386e0e76161982a4bedf6bb188381314d47e42e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882751"
 ---
 # <a name="unzip-task"></a>Задача Unzip
 Распаковывает *ZIP-архив* в заданное расположение.
@@ -40,7 +38,7 @@ ms.locfileid: "39151217"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Unzip` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`DestinationFolder`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Указывает папку назначения для распаковки файла.|
 |`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, перезаписывает файлы, доступные только для чтения. По умолчанию — `false`.|

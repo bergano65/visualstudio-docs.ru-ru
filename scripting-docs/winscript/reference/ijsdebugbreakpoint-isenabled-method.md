@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugBreakPoint::IsEnabled | Документы Microsoft
+title: Метод IJsDebugBreakPoint::IsEnabled | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb7ab887b8e3442a0c38ea403ad43bdea10cdd66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 22584acafc92b7acaa09432ec9f6cb04e7bab48c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727894"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089386"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>Метод IJsDebugBreakPoint::IsEnabled
 Определяет, включена ли точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT IsEnabled(  
    BOOL *pIsEnabled  
 );  
@@ -36,12 +36,12 @@ HRESULT IsEnabled(
   
 #### <a name="parameters"></a>Параметры  
  `pIsEnabled`  
- [out] Возвращает значение true, если точка останова включена. в противном случае возвращает значение false.  
+ [out] Возвращает значение true, если точка останова включена; в противном случае возвращает false.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает E_UNEXPECTED при вызове в удаленных точках останова.  
+ Возвращает E_UNEXPECTED, если вызван на удаленной точке останова.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

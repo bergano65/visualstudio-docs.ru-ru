@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
+title: Как выполнить Добавление, обновление или удаление ссылки на службу данных WCF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948252"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое: Добавление, обновление или удаление ссылки на службы данных WCF
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Как выполнить Добавление, обновление или удаление ссылки на службу данных WCF
 Объект *службе Справочник по* позволяет проекту использовать одну или несколько [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Используйте **Add Service Reference** диалоговое окно для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -94,4 +93,4 @@ ms.locfileid: "49819047"
 
 ## <a name="see-also"></a>См. также
 
-- [Службы данных службы Windows Communication Foundation и WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

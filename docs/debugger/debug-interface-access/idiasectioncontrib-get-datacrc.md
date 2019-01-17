@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_dataCrc | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f4cf70d24ce1da1dd5cf193632ffb2f55a320
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a11d36a92c2b2251a2313ba627012904457d354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851840"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
 Извлекает циклическую проверку избыточности (CRC) данных в разделе.  
@@ -27,7 +25,7 @@ ms.locfileid: "49903092"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_dataCrc (   
+HRESULT get_dataCrc (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_dataCrc (
  [out] Возвращает контрольную СУММУ данных в разделе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

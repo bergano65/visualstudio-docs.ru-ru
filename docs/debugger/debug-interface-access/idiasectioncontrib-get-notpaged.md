@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_notPaged | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f494767820c59e7ece714768979b1778b79a8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75ae1f3244e20d4f1fa49ec316f3e1edf85c08c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910809"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
 Получает флаг, указывающий, может ли быть оповещен разделе не хватает памяти.  
@@ -27,7 +25,7 @@ ms.locfileid: "49869643"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_notPaged (   
+HRESULT get_notPaged (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_notPaged (
  [out, retval] Возвращает `TRUE` Если раздел может быть оповещен; в противном случае — значение, возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

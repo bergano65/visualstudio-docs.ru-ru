@@ -2,7 +2,6 @@
 title: Известные проблемы для контейнеров
 description: Сведения об известных проблемах, которые могут возникать при установке Visual Studio Build Tools 2017 в контейнер Windows.
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529d967f34a5c99c8416058acad317cdc47d1053
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 62bbcabe25a4cbefed3e1e928eaac8942e3c8de2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905193"
 ---
 # <a name="known-issues-for-containers"></a>Известные проблемы для контейнеров
 
@@ -27,14 +26,16 @@ ms.locfileid: "53158623"
 
 Указанные ниже известные проблемы возникают при установке Visual Studio Build Tools 2017 в контейнер Windows.
 
-* Вы не можете установить Visual Studio в контейнер, основанный на образе microsoft/windowsservercore:10.0.14393.1593. Образы, для которых указана более старая или новая версия Windows, должны работать.
-* Вы не можете установить пакет Windows SDK версии, предшествующей 10.0.14393. Установка некоторых пакетов завершается со сбоем, а зависящие от них рабочие нагрузки не функционируют.
+* Вы не можете установить Visual Studio в контейнер, основанный на образе microsoft/windowsservercore:10.0.14393.1593. Образы, для которых указана версия, отличная от Windows SDK 10.0.14393, должны работать.
+* Вы не можете установить пакет Windows SDK 10.0.14393 или более ранней версии. Установка некоторых пакетов завершается со сбоем, а зависящие от них рабочие нагрузки не функционируют.
 * Передайте `-m 2GB` (или больше) при сборке образа. Некоторым рабочим нагрузкам требуется больше памяти, чем 1 ГБ, назначаемый по умолчанию при установке.
 * Настройте Docker для использования дисков, размер которых больше стандартных 20 ГБ.
 * Передайте `--norestart` в командной строке. На момент публикации при попытке перезапустить контейнер Windows из контейнера на узел возвращается `ERROR_TOO_MANY_OPEN_FILES`.
 * Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Например, при выполнении сборки с помощью MSBuild может возникнуть такая ошибка:
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): ошибка MSB6003: не удается запустить указанный исполняемый файл задачи csc.exe. Не удалось загрузить файл или сборку "System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" или одну из их зависимостей. Не удается найти указанный файл.
+
+* Вы не можете установить Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) на образ mcr<span></span>.microsoft.com/windows/servercore:1809 или более поздней версии. Дополнительные сведения см. в разделе https://aka.ms/setup/containers/servercore1809.
 
 ## <a name="build-tools-container"></a>Контейнер Build Tools
 

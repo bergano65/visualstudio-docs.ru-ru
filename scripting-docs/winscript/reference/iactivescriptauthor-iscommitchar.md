@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Документы Microsoft
+title: IActiveScriptAuthor::IsCommitChar | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645564"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096178"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Возвращает значение, указывающее, должны ли определенный символ запускать фиксации завершения инструкции для приложения.  
+Возвращает значение, указывающее, следует ли определенный символ активирует фиксацию завершения инструкции для приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,12 +42,12 @@ HRESULT IsCommitChar(
  [in] Проверяемый символ.  
   
  `pfcommit`  
- [out] `True` при фиксации символ знаком; в противном случае — `False`.  
+ [out] `True` Если символ является фиксации знак; в противном случае — `False`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

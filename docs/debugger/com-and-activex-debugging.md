@@ -1,8 +1,6 @@
 ---
-title: Отладка COM и ActiveX | Документы Microsoft
-ms.custom: ''
+title: Отладка COM и ActiveX | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468439"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269614"
 ---
 # <a name="com-and-activex-debugging"></a>Отладка COM и ActiveX
 В этом подразделе представлены советы по отладке приложений COM и элементов управления ActiveX.  
@@ -44,11 +42,11 @@ ms.locfileid: "31468439"
  В подразделе перечислены средства просмотра и примеры приложений, которые можно использовать для отладки приложений COM.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)  
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)  
  Ссылки на крупные разделы документации об отладке. В них содержатся следующие сведения: новые возможности отладчика, сведения о параметрах и подготовке, точках останова, обработке исключений, изменении и продолжении выполнения, отладке управляемого кода, проектов Visual C++, объектов COM и ActiveX, библиотек DLL, SQL, а также ссылки на пользовательский интерфейс.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Знакомство с COM](/cpp/atl/introduction-to-com)   
+ [Введение в модель COM](/cpp/atl/introduction-to-com)   
  [Элементы управления ActiveX](/cpp/mfc/activex-controls)   
  [Приложения сервера SDI](../debugger/sdi-server-applications.md)

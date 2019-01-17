@@ -1,8 +1,6 @@
 ---
 title: Представление "Вызывающий/вызываемый" — данные выборки памяти .NET   Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ef27cae8825fc77f49f5201ef03615227e383e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871347"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
@@ -30,7 +28,7 @@ ms.locfileid: "34548125"
   
  Дважды щелкните строку вызывающей или вызываемой функции, чтобы обозначить эту строку как текущую функцию.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isMatrixRowMajor | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isMatrixRowMajor | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af4d1817de2886ededb019942b55271480176ba8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3c6a149b342c55ea59036edb21a2ea51ba8ebb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847247"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Указывает, является ли матрица основных строк.  
+Указывает, является ли матрица основной строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT get_isMatrixRowMajor(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Указатель на `BOOL` , указывающее, является ли матрица основных строк.  
+ [out] Указатель на `BOOL` , указывающий, является ли матрица основной строки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860261"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269869"
 ---
 # <a name="pickbranch-activity-designer"></a>Конструктор действия PickBranch
 
@@ -32,7 +32,7 @@ ms.locfileid: "53860261"
 
 Два пустых <xref:System.Activities.Statements.PickBranch> объекты с отображаемыми именами **Branch1** и **Branch2** создаются по умолчанию в качестве элементов <xref:System.Activities.Statements.Pick> действия при **выбрать** Конструктор действия изначально сбрасываться в конструкторе рабочих процессов. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора или в **свойства** окна для каждой ветви.
 
-Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов**, или с помощью контекстного меню на в рамках **выбрать** конструктора:
+Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов**, или с помощью контекстного меню из в рамках **выбрать** конструктора:
 
 - **PickBranch** конструктор создает <xref:System.Activities.Statements.PickBranch> при перетаскивании из **элементов** в одну из ветвей **выбрать** конструктора операций в Рабочей области конструктора рабочих процессов. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании **PickBranch** конструктора **выбрать** конструктора с помощью мыши **выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> будет добавлен в данном положении указателя мыши.
 

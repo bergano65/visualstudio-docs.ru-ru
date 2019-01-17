@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Документы Microsoft
+title: IActiveScriptSiteWindow::EnableModeless | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7099fe7d13a1cb3231e67049104722af9373d7a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4cea23890539ca80abf8e3e58b0f8c48b7ca1fc9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724934"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093019"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-В результате узла включить или отключить его главного окна, а также любые безрежимные диалоговые окна.  
+В результате узел для включения или отключения основного окна, а также любой немодальных диалоговых окон.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnableModeless(  
     BOOL fEnable  // enable flag  
 );  
@@ -46,7 +46,7 @@ HRESULT EnableModeless(
 ## <a name="remarks"></a>Примечания  
  Этот метод идентичен методу `IOleInPlaceFrame::EnableModeless` метод.  
   
- Вызов этого метода могут быть вложенными.  
+ Вызовы этого метода могут быть вложенными.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

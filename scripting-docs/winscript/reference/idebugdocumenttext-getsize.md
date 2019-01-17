@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetSize | Документы Microsoft
+title: IDebugDocumentText::GetSize | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727074"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087039"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
 Возвращает число строк и число символов в документе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  

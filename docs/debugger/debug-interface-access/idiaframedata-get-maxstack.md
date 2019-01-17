@@ -1,8 +1,6 @@
 ---
 title: IDiaFrameData::get_maxStack | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb5a7b9365cbcb63e6f260e70c37fe3921e2f61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0f8f258dfa240fe1f0e659eebd6b1f4397956e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951291"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 Извлекает максимальное число байтов, в стек в кадре.  
@@ -27,7 +25,7 @@ ms.locfileid: "49936087"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_maxStack (   
+HRESULT get_maxStack (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,11 +35,11 @@ HRESULT get_maxStack (
  [out] Возвращает максимальное число байтов, в стек.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

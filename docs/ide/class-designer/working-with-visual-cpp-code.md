@@ -2,7 +2,6 @@
 title: Работа с кодом Visual C++ (конструктор классов)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e81a267b1a80036a0e000d7336f6b50b0e5f29d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947521"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Работа с кодом Visual C++ в конструкторе классов
 
@@ -48,7 +47,7 @@ ms.locfileid: "33958455"
 - Typedef
 
 > [!NOTE]
-> Это не аналог схемы классов UML, которую можно создать в проекте моделирования. Дополнительные сведения см. в разделе [UML-схемы классов: справочник](../../modeling/uml-class-diagrams-reference.md).
+> Это не аналог схемы классов UML, которую можно создать в проекте моделирования. Дополнительные сведения см. в статье [Create UML modeling projects and diagrams ](../../modeling/create-uml-modeling-projects-and-diagrams.md) (Создание проектов и схем моделирования UML).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Устранение неполадок при разрешении типов и отображение проблем
 
@@ -112,8 +111,6 @@ ms.locfileid: "33958455"
 
 ## <a name="see-also"></a>См. также
 
-- [Разработка и просмотр классов и типов](designing-and-viewing-classes-and-types.md)
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
 - [Разработка и просмотр классов и типов](designing-and-viewing-classes-and-types.md)
 - [Дополнительные сведения об ошибках конструктора классов](additional-information-about-errors.md)
 - [Классы Visual C++ в конструкторе классов](visual-cpp-classes.md)

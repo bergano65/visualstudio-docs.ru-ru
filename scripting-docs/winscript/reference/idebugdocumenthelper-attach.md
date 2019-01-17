@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach | Документы Microsoft
+title: IDebugDocumentHelper::Attach | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726974"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090146"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
 Добавляет в этом документе в дереве документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugDocumentHelper*  pddhParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Параметры  
  `pddhParent`  
- [in] Дерево документов, куда будут добавлены в этом документе. Может иметь значение NULL.  
+ [in] Дерево документов, куда будет добавлен в этом документе. Может иметь значение NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -48,7 +48,7 @@ HRESULT Attach(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод добавляет в документ в этом документе дерева, с помощью `pddhParent` как родительский элемент. Если `pddhParent` — `NULL`, этот документ будет верхнего уровня документа.  
+ Этот метод добавляет в этом документе к документу дерева, с помощью `pddhParent` как родительский. Если `pddhParent` является `NULL`, этот документ будет документ верхнего уровня.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   

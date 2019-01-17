@@ -1,8 +1,6 @@
 ---
 title: Справочник по WPF MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460ba44e7e8734e294c6da3628b8f142b241c471
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6cecba9106fc08e198d819567c10f3b96ef92fb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819891"
 ---
 # <a name="wpf-msbuild-reference"></a>Справочные сведения о WPF для MSBuild
 Windows Presentation Foundation (WPF) расширяет подсистему Microsoft Build Engine (MSBuild) за счет дополнительной поддержки сборок, которая описана в этом разделе.  

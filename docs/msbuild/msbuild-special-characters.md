@@ -1,8 +1,6 @@
 ---
 title: Специальные знаки MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa1e52e61f4003a9495e1bff5bd64e4edc40a323
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a45aaf7a0361b390158fe5f3fab031fb3d6335a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887689"
 ---
 # <a name="msbuild-special-characters"></a>Специальные символы в MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] резервирует некоторые знаки для специального применения в определенных контекстах. Эти знаки следует экранировать, только если вы хотите использовать их именно в том контексте, для которого они зарезервированы. Например, звездочка имеет специальное значение только в атрибутах `Include` и `Exclude` определения элемента, а также в вызовах `CreateItem`. Если требуется, чтобы звездочка отображалась как звездочка в одном из этих контекстов, нужно экранировать ее. В любом другом контексте просто введите звездочку там, где она нужна.  
   
- Чтобы экранировать специальный символ, используйте синтаксис %\<xx>, где \<xx> представляет шестнадцатеричное ASCII-значение знака. Дополнительные сведения см. в статье [Практическое руководство. Пропуск специальных символов в MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
+ Чтобы экранировать специальный символ, используйте синтаксис %\<xx>, где \<xx> представляет шестнадцатеричное ASCII-значение знака. Дополнительные сведения см. в разделе [Как Пропуск специальных знаков в MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
 ## <a name="special-characters"></a>Специальные символы  
  В следующей таблице перечислены специальные знаки [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]:  

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Сбор данных счетчиков производительности Windows | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Сбор данных счетчиков производительности Windows | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961378"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Практическое руководство. Сбор данных счетчиков производительности Windows
+# <a name="how-to-collect-windows-counter-data"></a>Как выполнить Сбор данных счетчиков производительности Windows
 
 Счетчики Windows являются счетчиками производительности системы. Сбор данных с них можно выполнять через заданные интервалы во время профилирования. В представлении "Метки" отчета средств профилирования строка имеет метку **AutoMark** для каждого интервала сбора данных. Строка содержит столбцы, которые описывают значения счетчиков производительности в этом интервале. Чтобы ограничить период анализа интервалом между двумя определенными метками, выберите метки, щелкните их правой кнопкой мыши и выберите в контекстном меню команду **Фильтрация по** > **Метки**.
 

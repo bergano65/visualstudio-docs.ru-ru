@@ -7,21 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758288"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204272"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Не удалось получить сведения о схеме для объекта базы данных \<имя объекта >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Не удалось получить схему объекта базы данных \<имя объекта>
 
-Это сообщение обычно появляется, когда объект в **обозревателя серверов** или **обозреватель баз данных** скопирован в буфер обмена, удаляется из базы данных и затем вставляется в конструктор. Поскольку объект базы данных больше не существует, появляется это сообщение.
-
-Чтобы исправить эту ошибку, выберите **ОК** чтобы закрыть диалоговое окно.
+Данное сообщение обычно появляется, когда объект в окне **Обозреватель серверов** или **Обозреватель баз данных** копируется в буфер обмена, удаляется из базы данных, а затем вставляется в конструктор. Поскольку объект базы данных больше не существует, появляется это сообщение.
 
 ## <a name="see-also"></a>См. также
 

@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885214"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 Изменение данных в таблицах данных, примерно так же, что изменения данных в таблице в любой базе данных. Процесс может включать Вставка, обновление и удаление записей в таблице. В форме привязкой к данным можно указать, какие поля являются изменяемых пользователем. В этом случае инфраструктура привязки данных обрабатывает все отслеживания изменений, чтобы изменения могли быть отправлены в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным способом внесения изменений в данных, необходимо использовать объекты и методы, выполняющие отслеживание изменений для вас.

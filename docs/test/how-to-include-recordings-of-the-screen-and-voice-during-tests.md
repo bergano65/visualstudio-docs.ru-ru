@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832142"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Практическое руководство. Включение записей экрана и голоса во время тестирования с помощью параметров тестов
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Как выполнить включение записей экрана и голоса во время тестирования с помощью параметров тестов
 
 В редакторе конфигурации в Visual Studio можно настроить адаптер диагностических данных, записывающий происходящее на экране, а также голос пользователя, выполняющего тест. Этот адаптер диагностических данных сохраняет запись экрана и речи сеанса рабочего стола во время теста. Запись сохраняется вместе с результатами теста. Также ее можно вложить в ошибку. Другие члены команды могут использовать запись, чтобы изолировать трудновоспроизводимые дефекты приложения.
 

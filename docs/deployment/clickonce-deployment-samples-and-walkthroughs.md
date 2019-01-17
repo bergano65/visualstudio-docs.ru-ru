@@ -1,8 +1,6 @@
 ---
 title: Примеры развертывания ClickOnce и пошаговые руководства | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
-ms.translationtype: MT
+ms.openlocfilehash: d5fd8376cbadd2cc576e0ef3d86c25c53ad98530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850645"
 ---
-# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры развертывания ClickOnce и пошаговые руководства
+# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.
 
  Пример кода предназначен для использования в целях ознакомления и не следует использовать в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.

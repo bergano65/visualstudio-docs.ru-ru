@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumFrameData::Skip | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4987279f336b549389bd7d338bb12e842a3d87f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b4b12926fb1fb79ee02dc934f808b6e5ba8f742e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834091"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 Пропускает указанное число кадров данных элементов в последовательности перечисления.  
@@ -27,7 +25,7 @@ ms.locfileid: "49818299"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

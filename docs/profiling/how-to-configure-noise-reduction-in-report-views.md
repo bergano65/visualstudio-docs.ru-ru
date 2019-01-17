@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Настройка подавления шума для представлений отчетов | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка подавления шума для представлений отчетов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875249"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Практическое руководство. Настройка подавления шума для представлений отчетов
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Как выполнить Настройка подавления шума для представлений отчетов
 В отчетах о производительности можно настроить снижение шума, ограничив количество данных, выводимых в представлениях дерева вызовов и выделений. При использовании функции подавления шума проблемы производительности становятся более наглядными. Это удобно при анализе отчетов о производительности.  
   
  Параметры конфигурации для снижения шума включают следующие.  

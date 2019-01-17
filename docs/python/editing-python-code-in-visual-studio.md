@@ -3,7 +3,6 @@ title: Редактирование кода Python
 description: Visual Studio предоставляет для Python возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964368"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
@@ -196,7 +195,7 @@ for x in range(1, 100):
 
 Панель навигации отображается в верхней части каждого окна редактора и содержит двухуровневый список определений. Раскрывающийся список слева содержит определения классов и функций верхнего уровня в текущем файле. Раскрывающийся список справа отображает список определений в области, расположенной слева. При перемещении курсора в редакторе эти списки обновляются для отображения текущего контекста, при этом из них можно напрямую перейти к нужной записи.
 
-![Панель навигации] в редакторе Visual Studio (media/code-editing-navigation-bar.png)
+![Панель навигации в редакторе Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Чтобы скрыть панель навигации, выберите **Инструменты** > **Параметры** > **Текстовый редактор** > **Python** > **Общие** и снимите флажок **Параметры** > **Панель навигации**.

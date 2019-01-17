@@ -2,7 +2,6 @@
 title: Команда Find
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.find
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cf891b87de6e4e836aa4a710b3c5638db9e23919
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965698"
 ---
 # <a name="find-command"></a>Команда Find
 Выполняет поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.
@@ -67,9 +66,9 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

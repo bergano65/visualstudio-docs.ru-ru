@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Alive | Документы Microsoft
+title: IScriptNode::Alive | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,29 +18,29 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0631690cbd961273175cf8dfbe35550980d4994d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23f0e804cbbbe6683b89f7b629b9677c7b92c64f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728664"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089561"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
-Указывает, является ли объект все еще активны.  
+Указывает, является ли объект все еще активна.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Alive();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Метод не принимает параметры.  
+ Метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Узел сценария, по-прежнему активна.|  
   

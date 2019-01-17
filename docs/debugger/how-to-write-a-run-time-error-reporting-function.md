@@ -2,7 +2,6 @@
 title: Написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051507"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204168"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения (C++)
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
   
  В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.  
@@ -123,5 +122,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка проверок во время выполнения машинного кода](../debugger/native-run-time-checks-customization.md)

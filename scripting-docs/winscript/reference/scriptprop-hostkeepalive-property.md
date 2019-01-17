@@ -1,5 +1,5 @@
 ---
-title: Свойство SCRIPTPROP_HOSTKEEPALIVE | Документы Microsoft
+title: Свойство SCRIPTPROP_HOSTKEEPALIVE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a39ae7100c5567d2b03b7998077b20b1078810aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734144"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087377"
 ---
 # <a name="scriptprophostkeepalive-property"></a>Свойство SCRIPTPROP_HOSTKEEPALIVE
-Используется для указания ли обработчик скриптов должны храниться полнофункциональными, если нет ожидающих ссылок.  
+Используется для указания ли обработчик скриптов должен сохраняться полнофункциональный, при наличии ссылки на медиафайл.  
   
- Используйте [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) задать это свойство `true`. Если это свойство имеет значение `true`, хранится полнофункциональным обработчика скриптов при условии, что имеется по крайней мере один необработанных ссылка для самого обработчика скриптов или `IDispatch` указатель на объект JavaScript, созданные с помощью скрипта модуль. Если значение этого свойства `true`, следует явно не закрывать или сбросить обработчик сценариев с помощью [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) или [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) методы. В выпуске последняя ссылка на объект скрипта обработчик скриптов завершает работу.  
+ Используйте [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) к этому свойству значение `true`. Если это свойство имеет значение `true`, обработчик сценариев хранится полнофункциональный до тех пор, пока по крайней мере один необработанных ссылки на обработчик скриптов себя или для `IDispatch` указатель на объект JavaScript, созданный с помощью сценариев модуль. Если присвоить этому свойству `true`, следует явно не закрыть или выполнить сброс обработчика сценариев с помощью [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) или [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) методы. В выпуске последняя ссылка на объект скрипта обработчик скриптов завершает работу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 #define SCRIPTPROP_HOSTKEEPALIVE 0x70000004  
 ```  
   
 ## <a name="requirements"></a>Требования  
- Это свойство появляется только в версии activscp.idl, которая устанавливается с [!INCLUDE[win8](../../javascript/includes/win8-md.md)], с 2707082 КБ для Internet Explorer 8 на [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], или с 2722913 КБ для Internet Explorer 9 на [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] или [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].
+ Это свойство появляется только в версии activscp.idl, которая устанавливается вместе с [!INCLUDE[win8](../../javascript/includes/win8-md.md)], с помощью 2707082 КБ для Internet Explorer 8 на [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], или с 2722913 КБ для Internet Explorer 9 на [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] или [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].

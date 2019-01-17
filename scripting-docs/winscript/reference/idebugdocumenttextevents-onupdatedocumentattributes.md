@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Документы Microsoft
+title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef9313f612d539e3068c2dd4bb20eb5d343fc53b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10a423e90733174cbc6feebae138e59145e01df3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727944"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087104"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
 Указывает, что изменить атрибуты документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT onUpdateDocumentAttributes(  
    TEXT_DOC_ATTR  textdocattr  
 );  
@@ -43,7 +43,7 @@ HRESULT onUpdateDocumentAttributes(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

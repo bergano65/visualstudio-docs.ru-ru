@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891064"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Как выполнить Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
@@ -51,7 +50,7 @@ ms.locfileid: "53065951"
 
 2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Контроллер тестирования Visual Studio** и выберите команду **Остановить**.
 
-     -или-
+     - или -
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 
@@ -97,7 +96,7 @@ ms.locfileid: "53065951"
 
 2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Агент тестирования Visual Studio** и выберите команду **Остановить**.
 
-     -или-
+     - или -
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 
@@ -135,5 +134,5 @@ ms.locfileid: "53065951"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство: Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Практическое руководство: Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

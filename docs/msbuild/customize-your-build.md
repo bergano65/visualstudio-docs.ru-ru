@@ -1,8 +1,6 @@
 ---
 title: Настройка сборки | Документы Майкрософт
-ms.custom: ''
 ms.date: 06/14/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919564"
 ---
-# <a name="customize-your-build"></a>Настройка сборки
+# <a name="customize-your-build-c-visual-basic"></a>Настройка сборки (C#, Visual Basic)
 
 Проекты MSBuild, использующие стандартный процесс сборки (импорт *Microsoft.Common.props* и *Microsoft.Common.targets*), имеют несколько обработчиков расширяемости, позволяющих настроить процесс сборки.
 

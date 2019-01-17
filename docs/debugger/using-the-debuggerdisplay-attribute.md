@@ -1,11 +1,9 @@
 ---
 title: Использование атрибута DebuggerDisplay | Документация Майкрософт
-ms.custom: ''
-ms.date: 08/09/2017
-ms.technology: vs-ide-debug
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228062"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Использование атрибута DebuggerDisplay (C#, Visual Basic, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
   
  Атрибут `DebuggerDisplay` имеет один аргумент, определяющий строку, которая должна отображаться в столбце "Значение" для экземпляров типа. Эта строка может содержать фигурные скобки (`{` и `}`). Текст, заключенный в фигурные скобки, вычисляется как поле, свойство или метод.  
@@ -32,10 +30,13 @@ ms.locfileid: "49926206"
   
 > [!IMPORTANT]
 >  Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.  
+
+> [!NOTE]
+> Для машинного кода, этот атрибут поддерживается только в C + +/ CLI кода.
   
  В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.  
   
-|Атрибут|Выходные данные, значение столбца|  
+|Атрибут|Строка, выводимая в столбце "Значение"|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Применение для типа с полями `x` и `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Синтаксис параметра может различаться в зависимости от языка. Будьте внимательны при его использовании.|`String value is [5, 6, 6]`|  
@@ -76,15 +77,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -176,7 +177,7 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   

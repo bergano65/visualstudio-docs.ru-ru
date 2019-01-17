@@ -1,8 +1,6 @@
 ---
 title: Общие, отладка, диалоговое окно "Параметры" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/09/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
-ms.translationtype: HT
+ms.openlocfilehash: 9fa48ff41739752ff37817192b26483a23579419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829477"
 ---
 # <a name="general-debugging-options"></a>Общие параметры отладки
 
@@ -125,10 +123,10 @@ ms.locfileid: "53443942"
 **Отключать JIT-оптимизацию при загрузке модуля (только управляемый код)**  
 Отключение JIT-оптимизации управляемого кода при загрузке модуля (и JIT-компиляции), если присоединен отладчик. Отключение оптимизации позволяет упростить процесс отладки некоторых проблем, однако может отрицательно сказаться на производительности. В режиме "Только мой код" при отключении JIT-оптимизации в коде пользователя ("Мой код") может отображаться посторонний код. Дополнительные сведения см. в разделе [JIT отладка и оптимизация](../debugger/jit-optimization-and-debugging.md).
 
-**Включить отладку JavaScript для ASP.NET (Chrome, Edge и IE)**  
+**Включить отладку JavaScript для ASP.NET (Chrome, Microsoft Edge и IE)**  
 Позволяет отладчику скриптов для приложений ASP.NET. При первом использовании в браузере Chrome необходимо войти в браузере, чтобы включить расширения Chrome, установленных. Отключите этот параметр, чтобы вернуться к поведению предыдущих версий.
 
-**Включить средства разработчика Edge для приложений JavaScript UWP (экспериментальная функция)**  
+**Включить средства разработчика Microsoft Edge для приложений JavaScript UWP (экспериментальная функция)**  
 Включает средства разработки для приложений универсальной платформы Windows JavaScript в Edge.
 
 **Включить устаревший отладчик Chrome JavaScript для ASP.NET**  

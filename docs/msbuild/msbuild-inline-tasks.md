@@ -1,8 +1,6 @@
 ---
 title: Встроенные задачи MSBuild | Документация Майкрософт
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bb0f0b23e58ea6bafdb6eaaaa6af43cd1c7d7fc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880355"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
@@ -194,4 +192,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство. Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Пошаговое руководство: Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

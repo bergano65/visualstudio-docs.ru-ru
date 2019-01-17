@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883150"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Создание пользовательского интерфейса с помощью Blend для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Blend для Visual Studio помогает разрабатывать клас�
 |![](../designers/media/b1-5.png "B1_5")|**Средства "Ресурсы"**. Перейдите на панель **Ресурсы**, чтобы отобразить последние использовавшиеся ресурсы из библиотеки.|![Выноска E](../designers/media/b5-label-e.png "b5_label_E")|**Текстовые элементы управления**|
 |||![Выноска F](../designers/media/b5-label-f.png "b5_label_F")|**Общие элементы управления**|
 
- Ознакомьтесь с коротким видео. ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [панели инструментов](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [панели инструментов](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ##  <a name="Assets"></a> Обзор панели "Ресурсы"
  Все элементы управления можно найти на панели **Ресурсы**, аналогичной **панели элементов** в Visual Studio. Помимо элементов управления на панели **Ресурсы** вы найдете все, что можно добавить в область рисования, включая элементы управления, стили, мультимедиа, поведения и эффекты.
@@ -126,7 +125,7 @@ Blend для Visual Studio помогает разрабатывать клас�
 |                     ![Выноска 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Ползунок градиента**. Появляется только в том случае, если выбрана градиентная кисть.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Показать дополнительные свойства**. Отображение категорий редко используемых свойств.                                                                      |
 
- Ознакомьтесь с коротким видео. ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [панель "Свойства"](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [панель "Свойства"](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Вставка элементов управления и изменение их поведения](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [анимации объектов](../designers/animate-objects-in-xaml-designer.md) [Рисование фигур и контуров](../designers/draw-shapes-and-paths.md) [проектирование XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)

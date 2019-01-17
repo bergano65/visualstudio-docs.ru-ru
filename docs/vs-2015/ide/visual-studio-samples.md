@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27a77e7983515c1cb61987ede03a202a50e9f88a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c604684fea431d29c76098a77218e36a63fc770f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936572"
 ---
 # <a name="visual-studio-samples"></a>Примеры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +32,7 @@ ms.locfileid: "53062778"
 ## <a name="finding-samples"></a>Поиск примеров
  Ниже описаны некоторые места для поиска примеров.
 
-|Область|Описание:|
+|Область|Описание|
 |----------|-----------------|
 |[Примеры из центра разработчиков Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Описание разработки приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
 |[Примеры по платформе .NET Framework](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)|Описание различных аспектов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в C# и Visual Basic.|
@@ -46,5 +45,5 @@ ms.locfileid: "53062778"
 |[Примеры разработки решений Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Примеры VSSDK](http://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

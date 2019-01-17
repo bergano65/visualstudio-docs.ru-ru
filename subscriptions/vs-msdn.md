@@ -3,18 +3,18 @@ title: Преимущество MSDN Magazine в подписках Visual Studi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/13/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Зарегистрируйтесь, чтобы получить подписку MSDN Magazine, входящую в состав вашей подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941273"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739600"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Преимущество MSDN Magazine в подписках Visual Studio
 
@@ -51,18 +51,21 @@ ms.locfileid: "49941273"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> |Печатный выпуск       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Печатный выпуск                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> |Печатный выпуск       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Печатный выпуск                                                            |Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                              | Нет.  Доступно только для новых подписчиков         |
 |Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная)   | Azure |Недоступно      |  Н/Д         |
 |Visual Studio Dev Essentials| Н/Д |Цифровой выпуск       |  Да|
 
-<sup>1</sup> *Печатный выпуск: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
+<sup>1</sup> *Печатный выпуск:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
 *Цифровой выпуск: ПО и службы MCT, Microsoft Valued Professional (Professional), региональный директор (RD).*
 
-*Не включает следующие категории: Imagine (Standard), BizSpark, разработчик ПО и служб MCT*
+*Не включает следующие категории:  Imagine (Standard), BizSpark, разработчик ПО и служб MCT*.
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_upperBound | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc90b0456b2274bc995262244b2432c89a34aba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: aef0ddd34a9ff203c444e5072f834e081427d340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879975"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
 Возвращает символ, представляющий верхнюю границу измерения массива FORTRAN.  
@@ -27,7 +25,7 @@ ms.locfileid: "49849103"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_upperBound (   
+HRESULT get_upperBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_upperBound (
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Документы Microsoft
+title: IDebugExpression::GetResultAsDebugProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727114"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093110"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
 Возвращает результат вычисления выражения, как свойство отладки и возвращаемое значение операции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -42,20 +42,20 @@ HRESULT GetResultAsDebugProperty(
  [out] Возвращаемое значение операции.  
   
  `ppdp`  
- [out] Свойство отладки для выражения.  
+ [out] Свойства отладки для выражения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_PENDING`|Операция по-прежнему ожидание.|  
+|`E_PENDING`|Операция по-прежнему не ожидается.|  
   
 ## <a name="remarks"></a>Примечания  
  Этот метод возвращает результат вычисления выражения как `IDebugProperty` и операции `HRESULT`.  
   
- Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT` Если `Abort` прерывает операцию.  
+ Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT` Если `Abort` прерывает выполнение операции.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   

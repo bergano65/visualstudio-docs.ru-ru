@@ -1,8 +1,7 @@
 ---
 title: Публикация в IIS посредством импорта параметров публикации
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Создание и импорт профиля публикации для развертывания приложения из Visual Studio в IIS
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 13a4210e24fe64db79be897bc159477e9b2f5a3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897390"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
 Вы можете использовать средство **публикации** для импорта параметров публикации, а затем развернуть приложение. В этой статье мы используем параметры публикации для IIS, однако аналогичные действия можно использовать, чтобы импортировать параметры публикации для [Службы приложений Azure](../deployment/tutorial-import-publish-settings-azure.md). В некоторых случаях использование профиля параметров публикации может оказаться быстрее, чем ручная настройка развертывания в IIS для каждой установки Visual Studio.
 
-Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Они соответствуют Visual Studio 2017 версии 15.6.
+Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Эти действия соответствуют Visual Studio 2017 версии 15.6.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -41,7 +40,7 @@ ms.locfileid: "38808469"
 
 * У вас должна быть установлена среда Visual Studio 2017 и иметься рабочая нагрузка **ASP.NET** и **.NET Framework**. Для приложения .NET Core также требуется рабочая нагрузка **.NET Core**.
 
-    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
 
 * Чтобы создать файл параметров публикации из IIS, требуется компьютер под управлением Windows Server 2012 или Windows Server 2016, а также правильно настроенная роль веб-сервера IIS. Также требуется установить ASP.NET 4.5 и ASP.NET Core. Для ASP.NET Core см. раздел [Публикация в IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Для ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 

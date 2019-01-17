@@ -9,17 +9,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925762"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Практическое руководство. Указание времени увеличения шага для пошагового шаблона нагрузки
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Как выполнить Указание времени увеличения шага для пошагового шаблона нагрузки
 
-После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования. Дополнительные сведения см. в статье [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md).
+После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования. Дополнительные сведения см. в разделе [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

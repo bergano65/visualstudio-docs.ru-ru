@@ -2,7 +2,6 @@
 title: Диалоговое окно "Параметры среды"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937352"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
 
@@ -38,7 +37,7 @@ ms.locfileid: "52388771"
 |Указание включения уведомлений.|[Страница "Уведомления", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Задание параметров окна «Быстрый запуск».|[Страница "Быстрый запуск", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Задание параметров начальной страницы.|[Начальная страница, папка "Среда", диалоговое окно "Параметры"](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Указание необходимости перемещения параметров между компьютерами.|[Страница "Синхронизированные параметры", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Указание необходимости перемещения параметров между компьютерами.|[Страница "Синхронизированные параметры", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Сведения о задании параметров задач и списков задач|[Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Изменение используемых по умолчанию домашней страницы и страницы поиска, изменение системного редактора исходного текста, а также настройка параметров обозревателя Internet Explorer.|[Страница "Браузер", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

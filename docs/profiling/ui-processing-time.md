@@ -1,8 +1,6 @@
 ---
 title: Время обработки пользовательского интерфейса | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.uiprocessing
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad48cd912bfdc117496bc9f876a1a2174e76dc04
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 51f34bb5396c1cadeab7c02c72f8ed13412e33b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858942"
 ---
 # <a name="ui-processing-time"></a>Время обработки пользовательского интерфейса
 Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории "Обработка UI". Это означает, что поток переносит сообщения Windows или выполняет другие операции пользовательского интерфейса. В это время поток был заблокирован в интерфейсе API, который визуализатор параллелизма интерпретирует как обработку пользовательского интерфейса. К этой группе относятся такие интерфейсы API, как `GetMessage()` и `MsgWaitForMultipleObjects()`.  

@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878605"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
 По умолчанию все сборки, включенные в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , загружаются при первом его запуске. Однако некоторые части приложения могут быть нужны лишь небольшому числу пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application> , когда среда CLR нуждается в них.
 
 > [!NOTE]
@@ -77,15 +75,15 @@ ms.locfileid: "52389005"
 
 2.  Нажмите кнопку **Файлы приложения** .
 
-3.  Найдите описание для ClickOnceLibrary.dll. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.
+3.  Найдите описание для *ClickOnceLibrary.dll*. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.
 
 4.  Разверните раскрывающийся список **Группа** и выберите **Создать**. Введите имя `ClickOnceLibrary` в качестве имени новой группы.
 
-5.  Продолжите публиковать приложение, как описано в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5.  Продолжите публиковать приложение, как описано в разделе [как: Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Инструмента создания и изменения манифестов с графическим клиентом (MageUI.exe)
 
-1. Создание вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты, как описано в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Создание вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2. Перед закрытием MageUI.exe выберите вкладку, содержащую манифест приложения развертывания и откройте на ней вкладку **Файлы** .
 
@@ -93,7 +91,7 @@ ms.locfileid: "52389005"
 
 ## <a name="test-the-new-assembly"></a>Тестирование новой сборки
 
-Тестирование сборки по запросу
+Тестирование сборки по запросу:
 
 1. Запустите приложение, развернутое с использованием [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 

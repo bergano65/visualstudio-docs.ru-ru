@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ae9e416186764e447065061aad4d0449eefb7b1d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348962"
+---
 # [Ожидался символ "{"](expected-left-curly-brace.md)
 # [Ожидался идентификатор, строка или число](expected-identifier-string-or-number.md)
 # [Ожидалась функция](function-expected.md)

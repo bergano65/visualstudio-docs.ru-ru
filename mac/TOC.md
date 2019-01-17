@@ -1,7 +1,15 @@
-# [Знакомство с Visual Studio для Mac](index.md)
-# [Обзор интегрированной среды разработки](ide-tour.md)
+---
+ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54315479"
+---
+# [Visual Studio для Mac](index.md)
+# [Обзор интегрированной среды разработки](/visualstudio/mac/ide-tour/)
 
-# [Установка](installation.md)
+# [Установка](/visualstudio/mac/installation/)
 ## [Установка и использование в среде, защищенной брандмауэром или прокси-сервером](install-behind-a-firewall-or-proxy-server.md)
 ## [Установка предварительной версии](install-preview.md)
 ## [Обновление](update.md)
@@ -22,7 +30,7 @@
 ## [Управление ссылками в проекте](managing-references-in-a-project.md)
 ### [Пошаговое руководство. Включение пакета NuGet в проект](nuget-walkthrough.md)
 ## [Управление ресурсами приложений](managing-app-resources.md)
-## [Инструкции по открытию нескольких решений или экземпляров](open-multiple-solutions.md)
+## [Практическое руководство. Открытие нескольких решений или экземпляров](open-multiple-solutions.md)
 
 # [Редактор исходного кода](source-editor.md)
 ## [Рефакторинг](refactoring.md)
@@ -58,13 +66,14 @@
 ### [JavaScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Введение в функции Azure](azure-functions.md)
-### [Учебник. Привязка к функциям Azure](azure-functions-lab.md)
+### [Учебник. Функции Azure](azure-functions-lab.md)
 ### [Подключенные службы](connected-services.md)
 ## [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)
 ### [Использование инструментов Unity](using-vsmac-tools-unity.md)
 ### [Использование .NET 4.x в Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Использование мобильных приложений и Xamarin](/xamarin/)
 
 # [Специальные возможности](accessibility.md)
 

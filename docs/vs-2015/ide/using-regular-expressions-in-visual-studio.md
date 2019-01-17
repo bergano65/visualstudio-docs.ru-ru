@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959590"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Использование регулярных выражений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ ms.locfileid: "53059435"
 > В операционных системах Windows большинство строк заканчиваются символами «\r\n» (возврат каретки с новой строкой). Эти символы не отображаются, но имеются в редакторе и передаются в службу регулярных выражений .NET.
 
 > [!TIP]
-> Информацию о регулярных выражениях, используемых в шаблонах замены, см. в разделе [Подстановки](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). При использовании нумерованной группы записи применяется синтаксис `$1` для определения нумерованной группы и `(x)` — для определения данной группы. Например, группированное регулярное выражение `(\d)([a-z])` обнаруживает четыре совпадения в следующей строке: **1a 2b 3С 4d**. Строка замены `z$1` преобразовывает эту строку в **z1 z2 z3 z4**.
+> Информацию о регулярных выражениях, используемых в шаблонах замены, см. в разделе [Подстановки](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). При использовании нумерованной группы записи применяется синтаксис `$1` для определения нумерованной группы и `(x)` — для определения данной группы. Например, группированное регулярное выражение `(\d)([a-z])` обнаруживает четыре совпадения в следующей строке: 1a 2b 3c 4d**. Строка замены `z$1` преобразовывает эту строку в **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Примеры регулярных выражений
 

@@ -2,7 +2,6 @@
 title: Отладчику не удается отобразить исходный код или Дизассемблированный код
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea95a2bb4c29f8a23fd597173a10a838baca051c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063970"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268894"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Отладчику не удается отобразить исходный код или дизассемблированный код
 Текст сообщения об ошибке:  
@@ -37,6 +36,7 @@ ms.locfileid: "53063970"
   
 -   Из соображений безопасности отладчик не был допущен к чтению стека, потока, регистра и другой контекстной информации в отлаживаемой программе. Вероятнее всего, это произошло при отладке веб-приложения, и нет корректного разрешения для доступа к виртуальному каталогу. Задайте для безопасности виртуального каталога значение "Анонимный" и повторите попытку.  
   
-## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](../debugger/index.md) [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>См. также раздел
+ [Отладка в Visual Studio](../debugger/index.md)  
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)  
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

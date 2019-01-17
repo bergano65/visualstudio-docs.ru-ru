@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_sizeInUdt | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_sizeInUdt | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9a3e9e8cf1b1b931164ebb9f089eb69895945b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 52c99386bc319d02b8d2735d3714d9c06312cee0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961287"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 Получает размер элемента в определяемый пользователем тип.  
@@ -34,7 +32,7 @@ HRESULT get_sizeInUdt(
  [out] Указатель на `DWORD` , указывающее размер элемента.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

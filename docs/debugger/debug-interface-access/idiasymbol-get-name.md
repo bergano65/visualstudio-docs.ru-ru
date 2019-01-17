@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_name | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd0a96e88b1466fb7c2e2a6220e638d06a52f19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 98f659bfbe906e1b25a63b3af6485dd7f583d103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966775"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 Извлекает имя символа.  
@@ -27,7 +25,7 @@ ms.locfileid: "49914233"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_name (   
+HRESULT get_name (   
    BSTR* pRetVal  
 );  
 ```  
@@ -50,5 +48,5 @@ BSTR        name;
 pType->get_name( &name );  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

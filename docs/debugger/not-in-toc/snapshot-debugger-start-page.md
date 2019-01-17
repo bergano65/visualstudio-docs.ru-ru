@@ -2,19 +2,18 @@
 title: Начальная страница отладчика моментальных снимков
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853740"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Приступая к работе с помощью отладчика моментальных снимков
 
@@ -68,7 +67,7 @@ ms.locfileid: "39310120"
 
 Дополнительные сведения об отладчике моментальных снимков можно найти на [странице документации](../debug-live-azure-applications.md). Дополнительные сведения о настройке условий для упрощения поиска ошибок.
 
-## <a name="dont-show-me-this-again"></a>Не "Показывать это сообщение
+## <a name="dont-show-me-this-again"></a>Больше не показывать
 
 Чтобы больше не показывать начальная страница отладчика моментальных снимков при подключении отладчика моментальных снимков, измените **отображать страницу «Начало работы», при запуске сеанса** в диалоговом окне **средства**  >   **Параметры** > **отладчик моментальных снимков**. 
 

@@ -3,7 +3,6 @@ title: Шаблон проекта облачной службы Azure для Py
 description: Visual Studio предоставляет шаблоны облачных служб Azure, написанных на языке Python, в том числе развертывание роли, зависимости и устранение неполадок.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879560"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 

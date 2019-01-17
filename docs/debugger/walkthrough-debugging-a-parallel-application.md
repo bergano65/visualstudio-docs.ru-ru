@@ -1,9 +1,7 @@
 ---
 title: Отладка параллельного приложения | Документация Майкрософт
 description: Отладка с помощью окна параллельных задач, параллельных стеков в Visual Studio
-ms.custom: ''
 ms.date: 03/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 87c1aad4374ca41a9ba89eea4eb7f7cc790a1613
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227815"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Пошаговое руководство. Отладка параллельного приложения в Visual Studio
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Пошаговое руководство. Отладка параллельного приложения в Visual Studio (C#, Visual Basic, C++)
+
 В этом пошаговом руководстве описывается использование окон **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотеки параллельных задач (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) или [среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Возможности диалоговых окон **Параллельные задачи** и **Параллельные стеки** показаны после прерывания выполнения программы.  
   
  В этом пошаговом руководстве рассматриваются следующие задачи:  
@@ -296,7 +295,7 @@ ms.locfileid: "53562104"
 ## <a name="summary"></a>Сводка  
  В этом пошаговом руководстве описаны окна **Параллельные задачи** и **Параллельные стеки**. Используйте эти окна в проектах, в которых используется многопоточный код. Можно проверить параллельный код, написанный на языке C++, C# или Visual Basic.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка многопоточных приложений](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Документы Microsoft
+title: IDebugDocumentTextExternalAuthor::GetPathName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727744"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088846"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
-Возвращает полный путь и имя документа.  
+Возвращает полный путь к файлу и имя документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,20 +42,20 @@ HRESULT GetPathName(
  [out] Строка, содержащая полный путь и имя файла.  
   
  `pfIsOriginalFile`  
- [out] Логическое значение, указывающее, если путь и имя файла см. в исходном документе.  
+ [out] Логическое значение, указывающее, если путь и имя файла см. в исходный документ.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Не удается создать или определить исходный файл.|  
+|`E_FAIL`|Невозможно создать или определить исходный файл.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает полный путь и имя документа.  
+ Этот метод возвращает полный путь к файлу и имя документа.  
   
- Если `pfIsOriginalFile` имеет значение FALSE, путь и имя файла в `pbstrLongName` ссылается на вновь созданный временный файл.  
+ Если `pfIsOriginalFile` имеет значение FALSE, путь и имя файла в `pbstrLongName` ссылаться на только что созданный временный файл.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

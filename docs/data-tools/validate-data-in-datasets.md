@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936195"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 Проверка данных представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме набора данных. Процесс проверки также подтверждает, что эти значения приведены ниже правила, которые были определены для вашего приложения. Рекомендуется проверить данные перед отправкой обновлений в основную базу данных. Это уменьшает ошибки, а также потенциальное количество циклов обработки между приложением и базе данных.
@@ -40,9 +39,9 @@ ms.locfileid: "37174726"
 ## <a name="validate-data"></a>Проверка данных
  Проверка в наборе данных выполняется следующим образом:
 
--   Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения. Дополнительные сведения см. в разделе [как: проверка данных в ходе изменения столбцов](validate-data-in-datasets.md).
+-   Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения столбцов](validate-data-in-datasets.md).
 
--   Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [как: проверка данных в ходе изменения строк](validate-data-in-datasets.md).
+-   Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения строк](validate-data-in-datasets.md).
 
 -   Как часть определения действительной схемы набора данных, создав ключи, ограничения уникальности, и т. д.
 
@@ -66,7 +65,7 @@ ms.locfileid: "37174726"
 
 ## <a name="data-update-events"></a>События обновления данных
 
-|событие|Описание:|
+|событие|Описание|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Изменяется значение в столбце. Событие передает строк и столбцов, а также предложенное новое значение.|
 |<xref:System.Data.DataTable.ColumnChanged>|Значение в столбце было изменено. Событие передает строк и столбцов, а также предложенное значение.|
@@ -90,7 +89,7 @@ ms.locfileid: "37174726"
 
 -   Отклонить предложенное значение, задав ошибку столбца (<xref:System.Data.DataRow.SetColumnError%2A>) из обработчика событий изменения столбца.
 
--   При необходимости использовать <xref:System.Windows.Forms.ErrorProvider> управления для отображения сообщения об ошибке для пользователя. Дополнительные сведения см. в разделе [компонент ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+-   При необходимости использовать <xref:System.Windows.Forms.ErrorProvider> управления для отображения сообщения об ошибке для пользователя. Дополнительную информацию см. в разделе [Компонент ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Также можно выполнить проверку во время <xref:System.Data.DataTable.RowChanging> событий.
 
@@ -99,7 +98,7 @@ ms.locfileid: "37174726"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Проверка данных при изменении строки изменяется (Visual Basic)
 
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.
 
@@ -110,7 +109,7 @@ ms.locfileid: "37174726"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Проверка данных при изменении строки (C#)
 
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.
 
@@ -212,5 +211,5 @@ ms.locfileid: "37174726"
 ## <a name="see-also"></a>См. также
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Практическое: проверка данных в элементе управления Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Практическое: отображение значков ошибок для проверки формы с помощью компонента Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Практическое руководство. Проверка данных в элементе управления Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Практическое руководство. Отображение значков ошибок для проверки формы с помощью компонента Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

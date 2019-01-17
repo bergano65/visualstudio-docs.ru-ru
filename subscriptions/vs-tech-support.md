@@ -3,18 +3,18 @@ title: Преимущество технической поддержки
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950074"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740437"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация преимущества технической поддержки в подписках Visual Studio
 
@@ -95,13 +95,18 @@ ms.locfileid: "49950074"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Да|
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Да         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Да|
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Да         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 2 обращения                                             |  Да         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 2 обращения                                               | Да         |
 | Visual Studio Dev Essentials | Н/Д | Недоступно |Н/Д|
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории: Imagine Premium. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории: Imagine Premium. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT.*
 
 <sup>2</sup> *Включает следующие категории: Imagine Standard.*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.

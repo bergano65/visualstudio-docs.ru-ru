@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSegments::get_Count | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e7566694b293bf33db88c31085ef9e54f9a802
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8236090d6520bf62cafb795eed9c3546c0ed2541
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863268"
 ---
 # <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
 Извлекает число сегментов.  
@@ -27,7 +25,7 @@ ms.locfileid: "49818917"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  
@@ -39,6 +37,6 @@ HRESULT get_Count (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
  [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)

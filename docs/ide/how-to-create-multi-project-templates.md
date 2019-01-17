@@ -2,7 +2,6 @@
 title: Создание многопроектных шаблонов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925829"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Как выполнить Создание многопроектных шаблонов
 
@@ -55,7 +54,7 @@ ms.locfileid: "53049669"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Элемент **TemplateContent** содержит элемент **ProjectCollection**, который имеет один или несколько элементов **ProjectTemplateLink**, задающих пути к файлам *vstemplate* включенных проектов. Пример:
+- Элемент **TemplateContent** содержит элемент **ProjectCollection**, который имеет один или несколько элементов **ProjectTemplateLink**, задающих пути к файлам *vstemplate* включенных проектов. Например:
 
     ```xml
     <TemplateContent>
@@ -171,7 +170,7 @@ ms.locfileid: "53049669"
 ## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство: создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

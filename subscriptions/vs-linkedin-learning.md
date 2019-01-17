@@ -3,18 +3,18 @@ title: Преимущество LinkedIn Learning в подписках Visual S
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942248"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739540"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -95,22 +95,25 @@ ms.locfileid: "49942248"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              | Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Dev Essentials | Н/Д  | 3 месяца |Нет.  Доступно только для новых подписчиков |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP).  Не включает следующие категории: Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP).  Не включает следующие категории:  Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
 
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
-### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Вопрос. Продлевается ли преимущество LinkedIn Learning при продлении подписки?
-Ответ. Нет, предложение LinkedIn Learning доступно только новым подписчикам.
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Вопрос: Продлевается ли преимущество LinkedIn Learning при продлении подписки?
+A:  Нет, предложение LinkedIn Learning доступно только новым подписчикам.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с LinkedIn Learning?  Ознакомьтесь со следующими ресурсами:

@@ -1,8 +1,6 @@
 ---
-title: Как использовать один и тот же целевой объект в нескольких файлах проектов | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Использование одного целевого объекта в нескольких файлах проектов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905469"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Как использовать одинаковый целевой объект в нескольких файлах проектов
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Как выполнить Использование одного целевого объекта в нескольких файлах проектов
 Если вы уже создали несколько файлов проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], вы могли заметить, что в разных файлах проекта вы иногда используете одни и те же задачи и целевые объекты. Чтобы не включать полное описание этих задач и целевых объектов в каждый файл проекта, вы можете сохранить целевой объект в отдельный файл проекта и импортировать этот проект во все проекты, которые должны использовать этот же целевой объект.  
   
 ## <a name="use-the-import-element"></a>Использование элемента Import  
@@ -30,7 +28,7 @@ ms.locfileid: "39077524"
   
 1.  Определите в файле проекта, из которого выполняется импорт, все свойства и элементы, которые требуются в качестве параметров для свойств и элементов, указанных в импортируемом проекте.  
   
-2.  Для импорта проекта используйте элемент `Import`. Пример:  
+2.  Для импорта проекта используйте элемент `Import`. Например:  
   
      `<Import Project="MyCommon.targets"/>`  
   

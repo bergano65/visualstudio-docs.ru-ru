@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Документы Microsoft
+title: IDebugFormatter::GetStringForVarType | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06c4833e2d9a88b63a80b2ee9437dc5547579380
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727234"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087547"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Возвращает строку, представляющую указанное значение VARTYPE.  
+Возвращает строку, представляющую данное значение VARTYPE.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetStringForVarType(  
    VARTYPE    vt,  
    TYPEDESC*  ptdescArrayType,  
@@ -51,12 +51,12 @@ HRESULT GetStringForVarType(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Метод возвращает строку, представляющую указанное значение VARTYPE.  
+ Метод возвращает строку, представляющую данное значение VARTYPE.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

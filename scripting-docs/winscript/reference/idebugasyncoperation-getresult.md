@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult | Документы Microsoft
+title: IDebugAsyncOperation::GetResult | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60181904408010f35fa4d99d182216e665583aab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d86e9eb2b934bc6bd4027405d06960cd107f81c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726164"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087481"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Предоставляет параметр возвращаемого объекта из отладки синхронной операции и возвращаемое значение.  
+Предоставляет возвращаемое значение и параметр возвращаемого объекта из синхронной операции отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetResult(  
    HRESULT*    phrResult,  
    IUnknown**  ppunkResult  
@@ -39,15 +39,15 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>Параметры  
  `phrResult`  
- [out] Если операция будет завершена, `phrResult` имеет возвращаемое значение `IDebugSyncOperation::Execute`.  
+ [out] Если операция будет завершена, `phrResult` является возвращаемым значением из `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Если операция будет завершена, `ppunkResult` параметром объекта, возвращенное операцией.  
+ [out] Если операция будет завершена, `ppunkResult` является параметром объект, возвращаемый операцией.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_PENDING`|Операция не завершена.|  

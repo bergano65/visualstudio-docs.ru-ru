@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_offset | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b2fa3ed234532ad3de02a31d4600f10f5375ad3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd455deb96e423c52743ada25085389b0463bc1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880446"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Получает смещение расположения символов. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) — `LocIsRegRel` или `LocIsBitField`.  
@@ -27,7 +25,7 @@ ms.locfileid: "49850078"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_offset (   
+HRESULT get_offset (   
    LONG* pRetVal  
 );  
 ```  
@@ -52,6 +50,6 @@ HRESULT get_offset (
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

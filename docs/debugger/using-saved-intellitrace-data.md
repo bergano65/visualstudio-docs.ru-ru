@@ -1,8 +1,6 @@
 ---
 title: С помощью сохраненных данных IntelliTrace | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
@@ -17,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227789"
 ---
-# <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>С помощью сохраненных данных IntelliTrace (C#, Visual Basic, C++)
+
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.
 
  Убедитесь в наличии следующих элементов.

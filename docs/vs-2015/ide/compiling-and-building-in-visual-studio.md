@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052654"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53931068"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio можно использовать для построения приложений и создания сборок и исполняемых программ через короткие интервалы во время цикла разработки. Частой сборкой кода можно определить ошибки времени компиляции, например неверный синтаксис, неправильно писанные ключевые слова и несоответствия типов, раньше. Кроме того, вы можете найти и исправить ошибки во время выполнения, например логические и семантические ошибки, с помощью частой сборки и запуска отладочных версий кода.
 
- Когда у вас будет полностью доработанный и отлаженный проект или решение, вы сможете скомпилировать его компоненты в сборку выпуска. По умолчанию сборка выпуска оптимизирована и реализована так, чтобы быть меньше и быстрее, чем отладочная версия кода. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание приложения](../ide/walkthrough-building-an-application.md).
+ Когда у вас будет полностью доработанный и отлаженный проект или решение, вы сможете скомпилировать его компоненты в сборку выпуска. По умолчанию сборка выпуска оптимизирована и реализована так, чтобы быть меньше и быстрее, чем отладочная версия кода. Дополнительные сведения см. в разделе [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md).
 
 ## <a name="choosing-a-build-method"></a>Выбор метода построения
  Для создания приложения можно использовать заданные по умолчанию параметры построения в интегрированной среде разработки, командную строку или воспользоваться Team Foundation Build. В каждом их этих вариантов в качестве базовой технологии применяется MSBuild, и каждый подход имеет определенные преимущества, как показано в следующей таблице.
@@ -57,5 +56,5 @@ Visual Studio можно использовать для построения п
 
 -   Улучшить производительность построения с помощью параллельных сборок. Дополнительные сведения см. в статье [Параллельное построение нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) или в записи блога [Настройка параллелизма построения C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
-## <a name="see-also"></a>См. также
- [Пошаговое руководство: Построение приложения](../ide/walkthrough-building-an-application.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [платформы построения понимание](../ide/understanding-build-platforms.md) [построение (компиляция) проектов веб-сайт](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [Как: Создание и удаление зависимостей проекта](../ide/how-to-create-and-remove-project-dependencies.md)
+## <a name="see-also"></a>См. также раздел
+ [Пошаговое руководство: Построение приложения](../ide/walkthrough-building-an-application.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [платформы построения понимание](../ide/understanding-build-platforms.md) [построение (компиляция) проектов веб-сайт](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Инструкции: Создание и удаление зависимостей проекта.

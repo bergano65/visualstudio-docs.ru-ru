@@ -1,8 +1,6 @@
 ---
-title: Команды меню "Справка" | Документы Microsoft
-ms.custom: ''
+title: Команды меню "Справка" | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922446"
 ---
 # <a name="help-menu-commands"></a>Команды меню "Справка"
-**Справки** меню предоставляет команды для открытия файлов справки.  
+**Помочь** меню предоставляет команды, чтобы открыть файлы справки.  
   
- **Индекс**  
- Открывает окно оглавления справки по Spy ++.  
+ **Index**  
+ Открывает экран содержимое справки по Spy ++.  
   
  **Использование справки**  
- Открывает файл справки, в которых описывается использование справки.  
+ Открывает файл справки, в котором описано, как использовать справку.  
   
- **О Spy ++**  
- Показывает сведения версии и авторских правах программного обеспечения Spy ++.
+ **О программе Spy++**  
+ Программное обеспечение версии и авторских правах для отображаются сведения Spy ++.

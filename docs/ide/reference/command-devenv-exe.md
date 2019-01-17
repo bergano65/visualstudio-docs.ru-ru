@@ -2,7 +2,6 @@
 title: -Command (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /command switch
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ee6f1166a543cc3dc85dfb62d19d1c5b194a16
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: d6eff1311ac0ae2232d04d8e3fb5c86d711ba179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838350"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Выполняет заданную команду после запуска интегрированной среды разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,7 +34,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>Примечания
  После завершения запуска интегрированная среда разработки выполняет именованную команду. При использовании этого параметра среда IDE не отображает начальную страницу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] при запуске.
 
- Если надстройка предоставляет команду, этот параметр можно использовать для запуска надстройки из командной строки. Дополнительные сведения см. в разделе [Практическое руководство. Управление надстройками с помощью диспетчера надстроек](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+ Если надстройка предоставляет команду, этот параметр можно использовать для запуска надстройки из командной строки. Дополнительные сведения см. в разделе [Как Управление надстройками с помощью диспетчера надстроек](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
 ## <a name="example"></a>Пример
  В данном примере запускается [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и автоматически выполняется макрос Open Favorite Files.
@@ -44,7 +43,7 @@ devenv /command CommandName
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

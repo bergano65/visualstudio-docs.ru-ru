@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback::RestrictRegistryAccess | Документы Microsoft
-ms.custom: ''
+title: IDiaLoadCallback::RestrictRegistryAccess | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f98a39b96acca7019125e5198a8be729c5fd23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 337656c89148d921544bb55264e1b3d6ed8a72c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844240"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
-Определяет, если реестра запросы могут быть использованы для поиска пути поиска символов.  
+Определяет, если запросы реестра могут использоваться для поиска пути поиска символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT RestrictRegistryAccess();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Любой код возврата не `S_OK` предотвращает запроса из реестра для пути поиска символов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

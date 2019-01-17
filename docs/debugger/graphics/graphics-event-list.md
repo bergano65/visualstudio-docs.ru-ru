@@ -1,8 +1,6 @@
 ---
 title: Список событий графики | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870746"
 ---
 # <a name="graphics-event-list"></a>Список событий графики
 Список событий графики в анализаторе графики Visual Studio служит для изучения событий Direct3D, возникших при отрисовке определенного кадра игры или приложения.  
@@ -118,5 +116,5 @@ Visual Studio 2017 и более содержат **журнала ресурс�
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Отсутствие объектов вследствие состояния устройства](walkthrough-missing-objects-due-to-device-state.md)
+## <a name="see-also"></a>См. также раздел  
+ [Пошаговое руководство: Отсутствие объектов вследствие состояния устройства](walkthrough-missing-objects-due-to-device-state.md)

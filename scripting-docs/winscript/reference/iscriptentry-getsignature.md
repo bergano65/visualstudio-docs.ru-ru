@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetSignature | Документы Microsoft
+title: IScriptEntry::GetSignature | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 062f069bb6a19c24f26a6a0bc6a9f4de2292d88f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245b5806006ad94740e09e23f881e26e071a3bc1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729324"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092733"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
 Возвращает сведения о типе для `IScriptEntry` объект функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSignature(  
    ITypeInfo          **ppti  
    ULONG              *piMethod  
@@ -42,7 +42,7 @@ HRESULT GetSignature(
  [out] Введите сведения, связанные с этим `IScriptEntry` объект функции.  
   
  `piMethod`  
- [out] Метод индекса в `ITypeInfo` объекта.  
+ [out] Метод index в `ITypeInfo` объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -52,7 +52,7 @@ HRESULT GetSignature(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Сведения о типе устанавливается с помощью [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) или [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Сведения о типе также можно создать с помощью операции, в зависимости от представления внутренней функции.  
+ Задать сведения о типе с помощью [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) или [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Сведения о типе также может возникать с помощью операции, в зависимости от представления внутренней функции.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

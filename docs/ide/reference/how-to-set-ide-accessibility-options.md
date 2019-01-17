@@ -1,9 +1,8 @@
 ---
-title: Практическое руководство. Настройка параметров специальных возможностей в интегрированной среде разработки
+title: Как выполнить Настройка специальных возможностей в интегрированной среде разработки
 description: Узнайте, как настроить параметры специальных возможностей в Visual Studio, которые помогут упростить работу с интегрированной средой разработки (IDE) для всех пользователей, включая людей с нарушениями зрения и с ограниченной подвижностью.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906778"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Практическое руководство. Настройка параметров специальных возможностей в интегрированной среде разработки
+# <a name="how-to-set-ide-accessibility-options"></a>Как выполнить Настройка специальных возможностей в интегрированной среде разработки
 
 > [!TIP]
 > Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).

@@ -3,7 +3,6 @@ title: Измерение производительности с помощью
 description: Краткий обзор различных средств диагностики, доступных в Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880316"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Краткое руководство. Первое знакомство со средствами профилирования
 
@@ -168,4 +167,4 @@ Visual Studio предоставляет широкий набор средст�
 |[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|
 
 ## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Отладка в Visual Studio](/visualstudio/debugger/debugger-feature-tour)

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Указание двоичного файла для запуска | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Указание двоичного файла для запуска | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fc4102b3cbd3420f1e5c3b7ea4a067e0d95a0d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c569b9e285e4865b8ef637443acdf6026b0fec9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868473"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Практическое руководство. Определение двоичного файла для запуска
+# <a name="how-to-specify-the-binary-to-start"></a>Как выполнить Определение двоичного файла для запуска
 
 Для профилирования двоичных файлов, таких как библиотеки DLL, необходимо ввести сведения в диалоговом окне **Страницы свойств \<целевой объект>**. Эти сведения указывают расположение проекта DLL для вызывающего приложения.
 

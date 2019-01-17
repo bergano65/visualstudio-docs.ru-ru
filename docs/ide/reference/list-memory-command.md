@@ -2,7 +2,6 @@
 title: Команда List Memory
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmemory
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c0c2512bd6b446c35aa01e9f56711bb39cd85b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846091"
 ---
 # <a name="list-memory-command"></a>Команда List Memory
 Отображает содержимое указанного диапазона памяти.
@@ -36,24 +35,24 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Аргументы
  `expression`
 
- Необязательный. Адрес памяти, с которого начинается отображение памяти.
+ Необязательный параметр. Адрес памяти, с которого начинается отображение памяти.
 
 ## <a name="switches"></a>Переключатели
  /ANSI&#124;Unicode
 
- Необязательный. Отображает память в виде символов, соответствующих байтам памяти, в формате ANSI или Юникод.
+ Необязательный параметр. Отображает память в виде символов, соответствующих байтам памяти, в формате ANSI или Юникод.
 
  /Count:`number`
 
- Необязательный. Определяет, сколько байт памяти нужно отобразить, начиная с `expression`.
+ Необязательный параметр. Определяет, сколько байт памяти нужно отобразить, начиная с `expression`.
 
  /Format:`formattype`
 
- Необязательный. Тип формата для просмотра данных памяти в окне **Память**, может иметь значение OneByte, TwoBytes, FourBytes, EightBytes, Float (32-разрядный) или Double (64-разрядный). При использовании OneByte параметр `/Unicode` недоступен.
+ Необязательный параметр. Тип формата для просмотра данных памяти в окне **Память**, может иметь значение OneByte, TwoBytes, FourBytes, EightBytes, Float (32-разрядный) или Double (64-разрядный). При использовании OneByte параметр `/Unicode` недоступен.
 
  /Hex&#124;Signed&#124;Unsigned
 
- Необязательный. Указывает формат для просмотра чисел: со знаком, без знака или в шестнадцатеричном формате.
+ Необязательный параметр. Указывает формат для просмотра чисел: со знаком, без знака или в шестнадцатеричном формате.
 
 ## <a name="remarks"></a>Примечания
  Вместо записи полной команды **Debug.ListMemory** со всеми параметрами можно вызвать ее, используя стандартные псевдонимы, в которых отдельные параметры уже имеют определенные значения. Например, вместо ввода:
@@ -87,7 +86,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)

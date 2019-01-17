@@ -3,7 +3,6 @@ title: Отладка кода C++
 description: Отладка машинного кода с помощью отладчика Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986483"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка кода C++ с помощью отладчика Visual Studio
 
@@ -103,7 +102,7 @@ ms.locfileid: "39639780"
 
 Выполнение приложения продолжится путем вызова `doWork` и будет приостановлено в той строке, в которой вы нажмете эту кнопку.
 
-В процессе пошагового выполнения кода обычно используются клавиши **F10** и **F11**. Более подробные инструкции см. в [руководстве для начинающих](../debugger/getting-started-with-the-debugger.md).
+В процессе пошагового выполнения кода обычно используются клавиши **F10** и **F11**. Более подробные инструкции см. в статье [Знакомство с отладчиком Visual Studio](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Проверка переменных в подсказке по данным
 

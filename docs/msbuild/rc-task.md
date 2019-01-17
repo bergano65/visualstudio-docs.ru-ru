@@ -1,8 +1,6 @@
 ---
 title: Задача RC | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915592"
 ---
 # <a name="rc-task"></a>RC - задача
 Является оболочкой для средства компиляции ресурсов Microsoft Windows *rc.exe*. Задача **RC** компилирует ресурсы, такие как курсоры, значки, растровые изображения, диалоговые окна и шрифты, в файл ресурсов (*RES*). Дополнительные сведения см. в статье [Resource Compiler](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler) (Компилятор ресурсов).
@@ -37,7 +35,7 @@ ms.locfileid: "50219436"
 ## <a name="parameters"></a>Параметры  
  В представленной ниже таблице приводятся параметры задачи RC. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Необязательный параметр типа **String[]**.<br /><br /> Добавляет каталог к списку каталогов, в которых выполняется поиск включаемых файлов.<br /><br /> Дополнительные сведения см. в описании параметра **/I** в разделе, посвященном [использованию компилятора ресурсов (командной строки RC)](http://go.microsoft.com/fwlink/?LinkId=155730).|  
 |**AdditionalOptions**|Необязательный параметр типа **String**.<br /><br /> Список параметров командной строки, например: /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров командной строки, не представленных другими параметрами задачи **RC**.<br /><br /> Дополнительные сведения см. в описании параметров в разделе, посвященном [использованию компилятора ресурсов (командной строки RC)](http://go.microsoft.com/fwlink/?LinkId=155730).|  

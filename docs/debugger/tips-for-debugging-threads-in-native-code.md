@@ -1,8 +1,6 @@
 ---
-title: Советы по отладке потоков в машинном коде | Документы Microsoft
-ms.custom: ''
+title: Советы по отладке потоков в машинном коде | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c98f6bb1a738111d32b26c5b923abe41367e621e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f8787af757a65a25cdd03240bd3942030120ad48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910078"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Советы по отладке потоков в машинном коде
 Ниже приведены некоторые советы по отладке потоков в машинном коде.  
   
--   Можно просмотреть содержимое блока информации потока, введя `@TIB` в **Контрольные значения** окна или **Быстрая проверка** диалоговое окно.  
+-   Можно просмотреть содержимое блока информации потока, введя `@TIB` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
   
--   Можно просмотреть код последней ошибки текущего потока, введя `@Err` в **Контрольные значения** окна или **Быстрая проверка** диалоговое окно.  
+-   Можно просмотреть код последней ошибки текущего потока, введя `@Err` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
   
 -   Для отладки многопоточного приложения можно использовать функции библиотеки времени выполнения C (CRT). Дополнительные сведения см. в разделе [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

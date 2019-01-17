@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::EnumApplications | Документы Microsoft
+title: IMachineDebugManager::EnumApplications | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fd7ddd263aab6742e5e6a23c86f7c4480c6561a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be79bbd30a5ec7e177cab9fc7c49161a74b20a46
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728034"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089041"
 ---
 # <a name="imachinedebugmanagerenumapplications"></a>IMachineDebugManager::EnumApplications
-Возвращает перечислитель для текущего списка запущенных приложений.  
+Возвращает перечислитель текущего списка выполняющихся приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT EnumApplications(  
    IEnumRemoteDebugApplications**  ppeda  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumApplications(
   
 #### <a name="parameters"></a>Параметры  
  `ppeda`  
- [out] Перечислитель, содержащий текущий список запущенные приложения.  
+ [out] Перечислитель, содержащий текущий список работающих приложений.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -48,7 +48,7 @@ HRESULT EnumApplications(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает перечислитель текущего списка запущенных приложений. Отладчик интегрированной среды разработки использует этот метод для отображения и добавления приложений для целей отладки.  
+ Этот метод возвращает перечислитель текущего списка выполняющихся приложений. Интегрированная среда разработки отладчика использует этот метод для отображения и добавления приложений в целях отладки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)

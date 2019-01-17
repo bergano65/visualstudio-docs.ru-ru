@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 63b1c220edfccdbcd10f6d0380dc37324511507b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833440"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -327,9 +326,9 @@ private MessageEditorControl messageEditorControl
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство: создание подключаемого модуля уровня запроса](../test/how-to-create-a-request-level-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля уровня запроса](../test/how-to-create-a-request-level-plug-in.md)
 - [Кодирование пользовательского правила извлечения для веб-теста производительности](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Практическое руководство: создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Практическое руководство: создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Практическое руководство. создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

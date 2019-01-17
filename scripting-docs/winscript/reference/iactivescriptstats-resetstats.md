@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::ResetStats | Документы Microsoft
+title: IActiveScriptStats::ResetStats | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,29 +18,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b56ca147c4484b00bfac5d1876ac58361901a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dd53cf1b91ae7eb18ccc88763437ecda44a574c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091355"
 ---
 # <a name="iactivescriptstatsresetstats"></a>IActiveScriptStats::ResetStats
 Сбрасывает статистику для этого скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT ResetStats();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

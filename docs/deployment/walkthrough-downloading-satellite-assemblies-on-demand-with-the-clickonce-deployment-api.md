@@ -1,8 +1,6 @@
 ---
-title: 'Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,25 +21,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b6fd91b5aae7df4f29ca91ef6e94e7da1803481a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856271"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce
 Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками. *Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.  
   
  Как уже говорилось в [локализация ClickOnce-приложений](../deployment/localizing-clickonce-applications.md), может включать несколько вспомогательных сборок для нескольких языков и региональных параметров в пределах одного [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.  
   
- Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров. В следующей процедуре используются средства, доступные в [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Эту задачу также можно выполнить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce Конструктор](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
+ Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров. В следующей процедуре используются средства, доступные в [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Эту задачу также можно выполнить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 > [!NOTE]
 >  В целях тестирования в следующем примере кода программным образом задается следующий язык и региональные параметры: `ja-JP`. В подразделе «Дальнейшие действия» далее в этом разделе приводятся сведения о том, как настроить этот код для производственной среды.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
- Составители этого раздела исходили из того, что вы знаете, как добавить локализованные ресурсы в свое приложение с использованием Visual Studio. Подробные инструкции см. в разделе [Пошаговое руководство: локализация Windows forms](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).  
+ Составители этого раздела исходили из того, что вы знаете, как добавить локализованные ресурсы в свое приложение с использованием Visual Studio. Подробные инструкции см. в разделе [Пошаговое руководство: Локализация форм Windows](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Загрузка вспомогательных сборок по требованию  
   
@@ -52,11 +50,11 @@ ms.locfileid: "49883033"
   
 2. Создайте вспомогательные сборки для приложения с помощью [Resgen.exe (генератор файлов ресурсов)](/dotnet/framework/tools/resgen-exe-resource-file-generator) или [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3. Создает манифест приложения или откройте существующий манифест приложения, с помощью *MageUI.exe*. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
+3. Создайте манифест приложения или откройте существующий манифест приложения с помощью *MageUI.exe*. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 4. Щелкните вкладку **Файлы** .  
   
-5. Нажмите кнопку **кнопку с многоточием** кнопки (**...** ) и выберите каталог, содержащий все сборки и файлы, включая вспомогательные сборки, созданные с помощью приложения *Resgen.exe*. (Вспомогательная сборка будет иметь имя в форме  *\<isoCode > \ApplicationName.resources.dll*, где \<isoCode > — это идентификатор языка в формате RFC 1766.)  
+5. Щелкните кнопку **многоточие** (**...**) и выберите каталог, содержащий все сборки и файлы вашего приложения, включая вспомогательные сборки, созданные с помощью инструмента *Resgen.exe*. (Вспомогательная сборка будет иметь имя в формате *\<isoCode>\ApplicationName.resources.dll*, где \<isoCode> — это идентификатор языка в формате RFC 1766.)  
   
 6. Щелкните **Заполнить** , чтобы добавить файлы в ваше развертывание.  
   

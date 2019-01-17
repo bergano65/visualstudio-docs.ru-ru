@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873519"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
 
@@ -43,8 +42,8 @@ ms.locfileid: "49916495"
 4. Для этого краткого руководства выберите образец **MNIST using TensorFlow** и нажмите кнопку **Установить**. Укажите следующие сведения:
 
    - **Группа ресурсов**: группа ресурсов Azure, в которой будут храниться ваши метаданные
-   - **Учетная запись**: учетная запись экспериментирования в машинном обучении Azure
-   - **Рабочая область**: рабочая область машинного обучения Azure
+   - **Учетная запись**: учетная запись экспериментирования в машинном обучении Azure
+   - **Рабочая область**: рабочая область машинного обучения Azure
    - **Тип проекта**: платформа машинного обучения. Для нашего случая выберите **TensorFlow**
    - **Добавить в решение**: определяет, следует ли добавлять образец в текущее решение Visual Studio или нужно создать и открыть новое решение
    - **Путь к проекту**: место, где будет сохранен код

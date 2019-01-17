@@ -2,7 +2,6 @@
 title: Страница "Отладка" в конструкторе проектов
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848263"
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 
@@ -85,7 +84,7 @@ ms.locfileid: "37090027"
 
 ## <a name="see-also"></a>См. также
 
-- [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)
+- [Отладка в Visual Studio](../../debugger/debugger-feature-tour.md)
 - [Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Параметры проекта для конфигурации отладки Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

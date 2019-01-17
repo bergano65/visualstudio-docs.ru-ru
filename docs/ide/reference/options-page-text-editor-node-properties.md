@@ -2,7 +2,6 @@
 title: Страница "Параметры"", свойства узла "Текстовый редактор"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935675"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с категорией **Текстовый редактор** — `DTE.Properties("TextEditor", <Property Page>)`. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции `Properties`, а таблицы содержат списки свойств в коллекции.
@@ -28,7 +27,7 @@ ms.locfileid: "50670823"
 ## <a name="general"></a>Общие
  `DTE.Properties("TextEditor", "General")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Если задано значение `True`, то при нажатии кнопки "escape" во время выделения точка вставки переместится туда, откуда началось выделение. При значении `False` точка вставки переместится в другой конец выделения.|
 |DragNDropTextEditing|Get/Set (Boolean)|Определяет, можно ли перетащить выбранный блок текста из одного места документа в другое для выполнения операций копирования, вставки или вырезания.|
@@ -47,7 +46,7 @@ ms.locfileid: "50670823"
 
  Параметры редактора `PlainText` влияют на настройки редактора при редактировании текстовых файлов. Для каждого языка программирования и пакета [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] доступны определенные параметры **Текстового редактора**. Например, для просмотра или изменения параметров редактора [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] используйте `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Для параметров редактора **Скрипт SQL** используйте `DTE.Properties("TextEditor", "SQL ")`.
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Определяет, должен ли автоматически открываться доступный список членов, когда пользователь вводит точку после ссылки на переменную.|
 |AutoListParams|Get/Set (Boolean)|Определяет, должно ли автоматически отображаться описание списка аргументов, когда пользователь вводит "(" после имени функции.|
@@ -56,7 +55,7 @@ ms.locfileid: "50670823"
 |WordWrap|Get/Set (Boolean)|Определяет, будут ли в представлении отображаться длинные строки с переносом на границах слов. Если этому свойству присвоить значение `true`, то элементу свойства `VirtualSpace` (в этом списке) будет присвоено значение `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Отображает глиф в конце строки; это указывает, что строка переносится на следующую строку.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Определяет, должен ли редактор подчеркивать URL-адреса и позволять переходить по данному URL-адресу посредством щелчка левой кнопкой мыши, сделанного в зарегистрированном системном веб-браузере.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов.: Default, Smart или None.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов: Default, Smart или None.|
 |TabSize|Get/Set (Long)|Представляет величину шага табуляции в знаках. Не допускается использовать целое число вне диапазона от 1 до 60 (включительно).|
 |InsertTabs|Get/Set (Boolean)|`True` означает использование знаков табуляции в отступах.|
 |IndentSize|Get/Set (Long)|Представляет величину одного уровня отступа в знаках. Не допускается использовать целочисленное значение вне диапазона от 1 до 60 (включительно).|
@@ -64,7 +63,7 @@ ms.locfileid: "50670823"
 |ShowNavigationBar|Get/Set (Boolean)|Определяет, появляются ли раскрывающиеся списки и кнопки вверху окон редактора.|
 |CutCopyBlankLines|Get/Set (Boolean)|Вырезает или копирует пустые строки при их выборе.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление параметрами](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

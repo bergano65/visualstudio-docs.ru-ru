@@ -1,8 +1,6 @@
 ---
 title: IntelliTrace | Документация Майкрософт
-ms.custom: ''
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd951231420d2d5d684e4d826c803a7f60176ec9
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227334"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace для Visual Studio Enterprise (C#, Visual Basic, C++)
 
 Сократите затраты времени на отладку приложения, используя IntelliTrace для записи и отслеживания истории выполнения кода. Вы сможете без труда находить ошибки, поскольку IntelliTrace позволяет выполнять следующие задачи.
 
@@ -55,7 +53,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 | | |
 |---------------------| - |
 | **Полная поддержка** | – Приложения Visual Basic и Visual C# на платформе .NET Framework 2.0 и более поздних версий.<br/>Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br/>Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Ограниченная поддержка** | — Собственное приложения, предназначенные для поддержки Windows, Просмотр моментальных снимков, используя шаг назад в IntelliTrace. Поддерживаются только события отладчика и исключения.<br />— .NET core и приложений ASP.NET Core поддерживается для определенных событий только (контроллер MVC, ADO.NET и HTTPClicent) в локальной отладки. Автономный сборщик не поддерживается для приложений .NET Core и ASP.NET Core.<br />– Приложения F# на экспериментальной основе.<br />— Приложения универсальной платформы Windows поддерживается только для событий |
+| **Ограниченная поддержка** | -C++ приложения, предназначенные для поддержки Windows, Просмотр моментальных снимков, используя шаг назад в IntelliTrace. Поддерживаются только события отладчика и исключения.<br />— .NET core и приложений ASP.NET Core поддерживается для определенных событий только (контроллер MVC, ADO.NET и HTTPClient) в локальной отладки. Автономный сборщик не поддерживается для приложений .NET Core и ASP.NET Core.<br />– Приложения F# на экспериментальной основе.<br />— Приложения универсальной платформы Windows поддерживается только для событий |
 | **Не поддерживается** | -Другие языки и скрипт<br />– Службы Windows, Silverlight, Xbox и приложения [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]. |
 
 > [!NOTE]
@@ -150,7 +148,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 Вы можете настроить IntelliTrace для сбора моментальных снимков в каждой точке останова и отладчика шаг события. IntelliTrace записывает состояние полного приложения в каждый моментальный снимок, который позволяет просматривать сложные переменные и вычисления выражений.
 
 > [!NOTE]
-> [Автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) не поддерживает записи snaphots.
+> [Автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) не поддерживает записи моментальных снимков.
 
 См. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md).
 

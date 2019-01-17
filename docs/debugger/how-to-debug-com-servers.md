@@ -1,8 +1,6 @@
 ---
-title: 'Как: отладка серверов COM | Документы Microsoft'
-ms.custom: ''
+title: Как выполнить Отладка серверов COM | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481688"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268580"
 ---
-# <a name="how-to-debug-com-servers"></a>Практическое руководство. Отладка серверов COM
+# <a name="how-to-debug-com-servers"></a>Как выполнить отладку серверов COM
 Отладка приложений сервера COM создает ряд проблем, которые не всегда легко решить.  
   
  Если нет сведений об отладке приложения контейнера или в ней нет надобности, начните отладку приложения сервера — процесс из трех шагов.  
@@ -44,9 +42,9 @@ ms.locfileid: "31481688"
   
 3.  Запустите приложение контейнера.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   
- [Как: отладка COM-клиенты и серверы с помощью отладки RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Отладка COM-сервера и контейнеров](../debugger/com-server-and-container-debugging.md)   
+ [Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)   
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

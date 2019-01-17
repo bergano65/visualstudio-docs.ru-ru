@@ -1,9 +1,7 @@
 ---
-title: Руководство 1. Создание приложения для просмотра рисунков
-ms.custom: ''
+title: Учебник 1. Создание средства просмотра рисунков
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861654"
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Руководство 1. Создание приложения для просмотра рисунков
+# <a name="tutorial-1-create-a-picture-viewer"></a>Учебник 1. Создание средства просмотра рисунков
 
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Вы узнаете, как с помощью **конструктора Windows Forms** добавлять в форму элементы управления, такие как кнопки и поля для изображений, настраивать их свойства и использовать контейнеры для удобного изменения размеров формы. Также начинается создание кода. Вы научитесь:
 
@@ -44,7 +42,7 @@ ms.locfileid: "50672162"
 
 Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
-![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на следующих страницах: [Руководство. Создание приложения для просмотра рисунков на Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) и [Руководство. Создание приложения для просмотра рисунков на C#](http://go.microsoft.com/fwlink/?LinkId=205198).
+![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на странице [How do I: Create a picture viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Как создать средство просмотра рисунков на Visual Basic) или [How do I: Create a picture viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Как создать средство просмотра рисунков на C#).
 
 > [!NOTE]
 > Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
@@ -55,16 +53,16 @@ ms.locfileid: "50672162"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
-|[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|
-|[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|
+|[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).|Начало разработки программы с создания проекта приложения Windows Forms.|
+|[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|
 |[Шаг 3. Настройка свойств формы](../ide/step-3-set-your-form-properties.md)|Изменение внешнего вида формы с помощью окна **Свойства**.|
-|[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Добавьте элемент управления `TableLayoutPanel` в форму.|
-|[Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md)|Добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Добавление в форму кнопок.|
-|[Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md)|Назначение кнопкам понятных имен.|
+|[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Добавьте элемент управления `TableLayoutPanel` в форму.|
+|[Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md)|Добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Добавление в форму кнопок.|
+|[Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md)|Назначение кнопкам понятных имен.|
 |[Шаг 7. Добавление компонентов диалогового окна в форму](../ide/step-7-add-dialog-components-to-your-form.md)|Добавьте в форму компоненты `OpenFileDialog` и `ColorDialog`.|
 |[Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Создание кода с помощью средства IntelliSense.|
 |[Шаг 9. Проверка, комментирование и тестирование кода](../ide/step-9-review-comment-and-test-your-code.md)|Просмотр и тестирование кода. Добавление необходимых комментариев.|
-|[Шаг 10. Написание кода дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Создание кода с помощью IntelliSense для описания поведения кнопок и флажков.|
+|[Шаг 10. Написание кода для дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Создание кода с помощью IntelliSense для описания поведения кнопок и флажков.|
 |[Шаг 11. Запуск программы и изучение других функций](../ide/step-11-run-your-program-and-try-other-features.md)|Запуск программы и настройка цвета фона. Изучение других возможности, например, изменение цветов, шрифтов и границ.|

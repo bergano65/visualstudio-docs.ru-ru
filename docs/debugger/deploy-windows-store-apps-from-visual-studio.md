@@ -2,7 +2,6 @@
 title: Развертывание приложений UWP | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056815"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53821319"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывание приложений UWP из Visual Studio
 
@@ -115,8 +114,8 @@ ms.locfileid: "53056815"
 
 - На странице свойств "Отладка" для JavaScript установите для параметра **Запустить приложение** значение **Да**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Дополнительные параметры удаленного развертывания](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)
-- [Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
+- [Запуск приложения из Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

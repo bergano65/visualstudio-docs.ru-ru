@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID | Документы Microsoft
+title: IActiveScript::GetScriptThreadID | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8850319035b7b5e3a9cbbd4bbe4340e1eefacc96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b1c68d60b827e7540711cdf6ba34260fb8642ed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641614"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094878"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-Извлекает определенный сценариев ядра-идентификатор потока, связанного с данной потоком Win32.  
+Извлекает определенный сценариев ядра-идентификатор для потока, связанного с данного потока Win32.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetScriptThreadID(  
     DWORD dwWin32ThreadID,       // Win32 thread identifier.  
     SCRIPTTHREADID *pstidThread  // Receives scripting thread. identifier  
@@ -39,10 +39,10 @@ HRESULT GetScriptThreadID(
   
 #### <a name="parameters"></a>Параметры  
  `dwWin32ThreadID` ,  
- [in] Идентификатор потока выполняющийся поток Win32 в текущем процессе. Используйте [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) функции, чтобы получить идентификатор текущего потока.  
+ [in] Идентификатор потока, выполняющийся поток Win32 в текущем процессе. Используйте [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) функции для получения идентификатора потока текущим выполняемым потоком.  
   
  `pstidThread` ,  
- [out] Адрес переменной, которая получает идентификатор потока скрипт, связанный с данной потоком Win32. Интерпретация этого идентификатора определяется для обработчика скриптов, но может быть копию идентификатор потока Windows. Обратите внимание, что если завершения потока Win32, этот идентификатор становится неназначенные впоследствии может быть назначен другому потоку.  
+ [out] Адрес переменной, которая получает идентификатор потока сценарий, связанный с данной потоком Win32. Интерпретация этого идентификатора остается на обработчик скриптов, но это может быть просто копию идентификатор потока Windows. Обратите внимание, что, если поток Win32 завершился, этот идентификатор становится неназначенные, а впоследствии может быть назначен другому потоку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -51,12 +51,12 @@ HRESULT GetScriptThreadID(
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации) и поэтому не удалось выполнить.|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации) и поэтому не удалось.|  
   
 ## <a name="remarks"></a>Примечания  
- Полученный идентификатор может использоваться в последующих вызовах методов управления сценария потока выполнения таких как [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) метод.  
+ Полученный идентификатор может использоваться в последующих вызовах методов управления выполнения поток скрипта например [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) метод.  
   
- Этот метод может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) интерфейса.  
+ Этот метод может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

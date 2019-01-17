@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Построение проекта, содержащего ресурсы | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Сборка проекта, содержащего ресурсы | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180351"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934318"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Практическое руководство. Построение проекта, содержащего ресурсы
+# <a name="how-to-build-a-project-that-has-resources"></a>Как выполнить Сборка проекта, содержащего ресурсы
 При создании локализованных версий проекта все элементы пользовательского интерфейса должны разделяться по файлам ресурсов для разных языков. Если в проекте используются только строки, в качестве файлов ресурсов могут выступать текстовые файлы. Кроме того, в этих целях можно использовать *RESX*-файлы.  
   
 ## <a name="compile-resources-with-msbuild"></a>Компиляция ресурсов с помощью MSBuild  

@@ -1,8 +1,6 @@
 ---
 title: Маркеры сообщений | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.message
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b93d497a68ba09237c28fc56159c379b50c9c1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 13cd156263584fb65c2e69df9f86e4610fc5eb3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846507"
 ---
 # <a name="message-markers"></a>Маркеры сообщений
 Маркер сообщения представляет выходные данные журнала. Сообщение — это строка, созданная конкретным потоком в определенное время. Сообщения можно экспортировать в текстовый файл для использования с другими средствами. Наведите указатель на сообщении в визуализаторе параллелизма, чтобы просмотреть строку сообщения. Все маркеры сообщений можно просмотреть в [отчете по маркерам](../profiling/markers-report.md).  На следующем рисунке показан маркер сообщения.  

@@ -2,7 +2,6 @@
 title: Страница “Параметры”, свойства узла “Среда”
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914972"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.
@@ -26,7 +25,7 @@ ms.locfileid: "50672734"
 ## <a name="general"></a>Общие
  `DTE.Properties("Environment", "General")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|Определяет, является ли строка состояния видимой.|
 |WindowMenuContainsNItems|Get/Set (Short)|Определяет, как располагаются окна документов в нижней части меню «Окна».|
@@ -41,7 +40,7 @@ ms.locfileid: "50672734"
 ## <a name="add-inmacros-security"></a>Безопасность надстроек и макросов
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|Разрешает выполнение макросов.|
 |AddinsEnabled|Get/Set (Boolean)|Разрешает загрузку надстроек.|
@@ -50,7 +49,7 @@ ms.locfileid: "50672734"
 ## <a name="documents"></a>Документы
  `DTE.Properties("Environment", "Documents")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Определяет, использовать ли при открытии нового файла текущее окно документа, если текущий документ сохранен. `false` означает, что новый документ всегда следует открывать в новом окне.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Определяет, должна ли среда автоматически перезагружать файлы, открытые в интегрированной среде разработки, если операционная система сообщает ей, что файлы на диске были изменены.|
@@ -67,7 +66,7 @@ ms.locfileid: "50672734"
 ## <a name="extension-manager"></a>диспетчер расширений
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|Загружает расширения пользователей при запуске Visual Studio от имени администратора. После изменения этого значения необходимо перезапустить Visual Studio.|
 |EnableOnline|Get/Set (Boolean)|Предоставляет доступ к расширениям в Visual Studio Marketplace.|
@@ -76,7 +75,7 @@ ms.locfileid: "50672734"
 ## <a name="find-and-replace"></a>Поиск и замена
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |ShowWarningMessages|Get/Set (Boolean)|Отображает предупреждающие сообщения.|
 |InitializeFromEditor|Get/Set (Boolean)|Автоматически заполняет поле **Найти** текстом из редактора.|
@@ -86,7 +85,7 @@ ms.locfileid: "50672734"
 ## <a name="import-and-export-settings"></a>Импорт и экспорт параметров
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |TrackTeamSettings|Get/Set (Boolean)|Использует параметры в файле, заданном свойством TeamSettingsFile.|
 |TeamSettingsFile|Get/Set (String)|Имя файла с параметрами рабочей группы.|
@@ -95,21 +94,21 @@ ms.locfileid: "50672734"
 ## <a name="international-settings"></a>Выбор языка
  `DTE.Properties("Environment", "International")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |Язык|Get/Set (String)|Значение кода языка для текущего языка для Visual Studio.|
 
 ## <a name="keyboard"></a>Клавиатура
  `DTE.Properties("Environment", "Keyboard")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |Схема|Get/Set (String)|Возвращает строку, содержащую встроенную схему, строку, содержащую полный путь к загруженному VSK-файлу или «(Default)», если VSK-файл не загружен.|
 
 ## <a name="projects-and-solution"></a>Проекты и решения
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Определяет, должна ли интегрированная среда разработки сохранять все свои файлы перед просмотром или запуском построенного приложения.|
 |ProjectsLocation|Get/Set (String)|Определяет каталог по умолчанию, в который будут сохраняться новые проекты из диалогового окна **Добавление проекта**.|
@@ -132,9 +131,9 @@ ms.locfileid: "50672734"
 ## <a name="startup"></a>Запуск
  `DTE.Properties("Environment", "Startup")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> 0: открыть домашнюю страницу<br />1: загрузить последнее загружавшееся решение<br />2: показать диалоговое окно **Открытие проекта**<br />3: показать диалоговое окно **Создание проекта**<br />4: показать пустую среду<br />5: показать начальную страницу|
+|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> — 0: открыть домашнюю страницу<br />— 1: загрузить последнее загружавшееся решение<br />— 2: показать диалоговое окно **Открытие проекта**<br />— 3: показать диалоговое окно **Создание проекта**<br />— 4: показать пустую среду<br />— 5: показать начальную страницу|
 |StartPageRSSUrl|Get/Set (String)|URL-адрес RSS-канала, используемый при запуске.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Обновляет начальную страницу каждый раз по истечении интервала, заданного свойством StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Интервал обновления начальной страницы в минутах.|
@@ -142,7 +141,7 @@ ms.locfileid: "50672734"
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|Указывает, запрашивать ли подтверждение при удалении задач из **списка задач**.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Указывает, выводить ли предупреждение при добавлении пользовательской задачи, которая не будет отображаться.|
@@ -152,14 +151,14 @@ ms.locfileid: "50672734"
 ## <a name="web-browser"></a>Веб-браузер
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |HomePage|Get/Set (String)|Представляет URL-адрес домашней страницы.|
 |SearchPage|Get/Set (String)|Представляет URL-адрес страницы поиска.|
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (источник, разработка, внешний).|
 |ViewSourceExternalProgram|Get/Set (String)|Путь к внешнему средству просмотра исходного кода.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление параметрами](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

@@ -2,7 +2,6 @@
 title: Основные сведения о модульных тестах
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740355"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060807"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -26,7 +25,7 @@ ms.locfileid: "53740355"
 
 Можно быстро создавать тестовые проекты и методы теста из кода или создавать тесты вручную при необходимости. При использовании компонента IntelliTest для изучения кода .NET можно создавать тестовые данные и наборы модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Узнайте, как [создавать модульные тесты для своего кода](generate-unit-tests-for-your-code-with-intellitest.md).
 
-Обозреватель тестов также может запускать тесты c платформ модульных тестов стороннего производителя и платформ на основе открытого кода, имеющих дополнительные интерфейсы для Обозревателя тестов. Многие из этих платформ могут быть добавлены при помощи Менеджера расширений Visual Studio и Галереи Visual Studio. См. раздел [Установка платформ модульного тестирования сторонних поставщиков](../test/install-third-party-unit-test-frameworks.md)
+Обозреватель тестов также может запускать тесты c платформ модульных тестов стороннего производителя и платформ на основе открытого кода, имеющих дополнительные интерфейсы для Обозревателя тестов. Многие из этих платформ могут быть добавлены при помощи Менеджера расширений Visual Studio и Галереи Visual Studio. Дополнительные сведения см. в разделе [Установка платформ модульного тестирования сторонних поставщиков](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Начало работы
 
@@ -127,7 +126,7 @@ public void Withdraw(double amount)
 
 -   Класс`AccountInfoTests` содержит методы модульного тестирования для класса `AccountInfo` в проекте `Accounts` .
 
--   Класс `CheckingAccountTests` содержит методы модульного тестирования для класса `CheckingAccount`.
+-   Класс`CheckingAccountTests` содержит методы модульного тестирования для класса `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Написание тестов
 

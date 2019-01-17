@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Документы Microsoft
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089080"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Продолжает работу приложения, которое в данный момент точку останова.  
+По-прежнему приложение, которое в настоящее время находится в точке останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,23 +40,23 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `prptFocus`  
- [in] Для пошагового выполнения режимы, поток, который является нарушается в пошаговом режиме.  
+ [in] Для пошагового выполнения режимы, потока, т. е нарушается в пошаговом режиме.  
   
  `bra`  
  [in] Действие, выполняемое при возобновлении приложения.  
   
  `era`  
- [in] Действие, выполняемое в случае, если приложение остановлено из-за ошибки.  
+ [in] Действие, выполняемое в случае, приложение остановлено из-за ошибки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод продолжает работу приложения, которое в данный момент точку останова.  
+ Этот метод по-прежнему приложение, которое в настоящее время находится в точке останова.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   

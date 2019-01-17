@@ -2,7 +2,6 @@
 title: Параметры, текстовый редактор, все языки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa208805a8d6861082793551dbbc595985fdc55
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 0b8e0322a34d2f846f6db96cad372ebbe329f57b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987918"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 
@@ -103,7 +102,7 @@ ms.locfileid: "52387992"
 > [!TIP]
 > Чтобы отображались индикаторы для пробелов, знаков табуляции и символов конца строки, что позволяет отличать строки, обозначенные отступом, от полностью пустых строк, выберите **Дополнительно** в меню **Правка** и задайте **Показать пустое пространство**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)

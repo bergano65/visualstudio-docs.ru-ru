@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition | Документы Microsoft
+title: IActiveScriptError::GetSourcePosition | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645844"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097374"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Извлекает расположение в исходном коде, где произошла ошибка обработчика скриптов был запущен сценарий.  
+Извлекает расположение в исходном коде, где произошла ошибка во время выполнения сценария обработчик сценариев.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -46,10 +46,10 @@ HRESULT GetSourcePosition(
  [out] Адрес переменной, которая получает номер строки в исходном файле, где произошла ошибка.  
   
  `pichCharPosition`  
- [out] Адрес переменной, которая получает положение символа в строке, в которой произошла ошибка.  
+ [out] Адрес переменной, которая получает положение символа в строке, в котором произошла ошибка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если расположение не был извлечен.  
+ Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если расположение не был получен.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

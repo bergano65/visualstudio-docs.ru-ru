@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange | Документы Microsoft
+title: IActiveScriptSite::OnStateChange | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae7782d713ab226e57e687cda8eb4ccdb54cf20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ee4fd06b00c674c9c50ce253186aeee3165bac66
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724624"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097413"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
 Уведомляет узел об изменении состояния обработчика скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT OnStateChange(  
     SCRIPTSTATE ssScriptState  // new state of engine  
 );  
@@ -38,7 +38,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Параметры  
  `ssScriptState`  
- [in] Значение, указывающее новое состояние скрипта. В разделе [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) метод описание состояния.  
+ [in] Значение, указывающее новое состояние скрипта. См. в разделе [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) метод описание состояния.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение `S_OK` в случае успешного выполнения.  

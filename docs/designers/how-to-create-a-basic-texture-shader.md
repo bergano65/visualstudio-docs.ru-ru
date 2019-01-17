@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера текстуры
+title: Как выполнить Создание простейшего шейдера текстуры
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 85de6bcaa4b3b62c9a3ad03464d9b95cb0134a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946072"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
+# <a name="how-to-create-a-basic-texture-shader"></a>Как выполнить Создание простейшего шейдера текстуры
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера с одной текстурой. Этот шейдер задает окончательный цвет непосредственно в RGB-значениях и альфа-факторах, взятых из текстуры.
 
@@ -55,6 +54,6 @@ ms.locfileid: "37924070"
 ## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Редактор изображений](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [Конструктор шейдеров](../designers/shader-designer.md)
 - [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)

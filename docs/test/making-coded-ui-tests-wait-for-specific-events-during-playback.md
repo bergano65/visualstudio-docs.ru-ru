@@ -2,19 +2,18 @@
 title: Настройка ожидания определенных событий закодированным тестом пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850918"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 
@@ -27,7 +26,7 @@ ms.locfileid: "52894772"
 Visual Studio Enterprise
 
 > [!TIP]
-> Вы также можете добавить задержки перед действиями с помощью редактора закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в статье [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Вы также можете добавить задержки перед действиями с помощью редактора закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Как Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 **Методы UITestControl.WaitForControlXXX()**
 
@@ -37,7 +36,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Ожидание элемента управления должно включаться, когда мастер выполняет определенную асинхронную проверку входных данных с помощью обращений к серверу. Например, метод может ожидать активации кнопки **Далее** мастера. Пример этого метода см. в статье [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Ожидание элемента управления должно включаться, когда мастер выполняет определенную асинхронную проверку входных данных с помощью обращений к серверу. Например, метод может ожидать активации кнопки **Далее** мастера. Пример этого метода см. в разделе [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -111,7 +110,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 - [Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
 - [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)
-- [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Пошаговое руководство: Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)
 - [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

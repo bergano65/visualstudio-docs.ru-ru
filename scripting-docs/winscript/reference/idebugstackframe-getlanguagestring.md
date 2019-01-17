@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Документы Microsoft
+title: IDebugStackFrame::GetLanguageString | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cc20c3ce2f5d198e167b83ffddb65cedc84402d7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727514"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087741"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
 Возвращает короткое или долго текстовое описание языка.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetLanguageString(  
    BOOL   fLong,  
    BSTR*  pbstrLanguage  
@@ -47,12 +47,12 @@ HRESULT GetLanguageString(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Как правило если `fLong` — `FALSE`, этот метод предоставляет только имя языка, связанного с этим кадром стека. Когда `fLong` — `TRUE`, этот метод может предоставить описание полной версии продукта.  
+ Как правило если `fLong` является `FALSE`, этот метод предоставляет только имя языка, связанного с этим кадром стека. Когда `fLong` является `TRUE`, этот метод может предоставить описание полной версии продукта.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

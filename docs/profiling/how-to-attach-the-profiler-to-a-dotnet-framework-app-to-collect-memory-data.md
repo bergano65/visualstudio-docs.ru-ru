@@ -2,26 +2,25 @@
 title: Присоединение профилировщика к приложению .NET для сбора данных об использовании памяти
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5130f6ea19112e5bb629f09ac7cd4171770653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821300"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework для сбора данных об использовании памяти с помощью командной строки
 
 В этой статье описано, как использовать средства профилирования Visual Studio из командной строки для подключения профилировщика к запущенному автономному (клиентскому) приложению .NET Framework и сбора данных об использовании памяти.
 
 > [!NOTE]
-> Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.  
 
 Для подключения к приложению .NET Framework и сбора данных по использованию памяти нужно воспользоваться программой [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md), чтобы инициализировать соответствующие переменные среды перед запуском целевого приложения. Когда профилировщик подключен к приложению, можно использовать программу *VSPerfCmd.exe* для приостановки и возобновления сбора данных.
 
@@ -83,7 +82,7 @@ ms.locfileid: "53051799"
 
 - Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.
 
-    |Параметр|Описание:|
+    |Параметр|Описание|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса, который указан в `PID`.|

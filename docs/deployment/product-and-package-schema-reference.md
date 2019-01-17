@@ -1,8 +1,6 @@
 ---
 title: Продукт и справочник по схемам пакета | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844673"
 ---
-# <a name="product-and-package-schema-reference"></a>Справочник по схеме продукта и пакета
+# <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.  
   
  Файл продукта и пакета состоит из верхнего уровня `Product` или `Package` элемент, каждый из которых содержит следующие элементы.  
   
-|Элемент|Описание:|Атрибуты|  
+|Элемент|Описание|Атрибуты|  
 |-------------|-----------------|----------------|  
 |[\<Продукт > элемент](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|Нет|  
 |[\<Пакет > элемент](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  

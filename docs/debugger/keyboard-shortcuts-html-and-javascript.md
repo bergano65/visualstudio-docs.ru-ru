@@ -1,8 +1,6 @@
 ---
-title: Сочетания клавиш (HTML и JavaScript) | Документы Microsoft
-ms.custom: ''
+title: Сочетания клавиш (HTML и JavaScript) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,26 +13,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949473"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Сочетания клавиш (HTML и JavaScript)
   
- Сочетания клавиш в Visual Studio для отладки приложения UWP, с помощью HTML и JavaScript.  
+ Сочетания клавиш в Visual Studio для отладки приложений универсальной платформы Windows, с помощью HTML и JavaScript.  
   
 ## <a name="general-shortcuts"></a>Общие сочетания клавиш  
- Следующие сочетания клавиш работают во всех инструментах приложений UWP, с помощью HTML и JavaScript.  
+ Следующие сочетания клавиш работают во всех инструментах приложений универсальной платформы Windows, с помощью HTML и JavaScript.  
   
 |Действие|Сочетание клавиш|  
 |------------|--------------|  
 |Обновление приложения Windows|CTRL+SHIFT+R|  
 |Перезапуск приложения Windows|Ctrl+Shift+F5|  
 |Остановка отладки|SHIFT+F5|  
-|Открытие раздела "Производительность и диагностика"|ALT+F2|  
+|Открытие раздела "Производительность и диагностика"|Alt+F2|  
   
 ## <a name="javascript-console-shortcuts"></a>Сочетания клавиш консоли JavaScript  
  Используйте эти сочетания клавиш в окне консоли JavaScript.  
@@ -51,12 +49,12 @@ ms.locfileid: "31475500"
 |Действие|Сочетание клавиш|  
 |------------|--------------|  
 |Выбор элемента|Ctrl+B|  
-|Переключение между отображением и скрытием рамок выделения при использовании **Выбор элемента**|Ctrl+Shift+I|  
-|Подтверждение изменений с помощью **изменить как HTML**|Ctrl+ВВОД|  
-|Отменить изменения с помощью **изменить как HTML**|ESC|  
+|Переключение между отображением и скрытием рамок выделения веб-страницы при использовании кнопки **Выбор элемента**|Ctrl+Shift+I|  
+|Подтверждение изменений с помощью **Изменить как HTML**|Ctrl+ВВОД|  
+|Отмена изменений с помощью **Изменить как HTML**|ESC|  
 |Увеличение выбранного значения CSS на 1|Стрелка вверх|  
 |Уменьшение выбранного значения CSS на 1|Стрелка вниз|  
   
-## <a name="see-also"></a>См. также  
- [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+## <a name="see-also"></a>См. также раздел  
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

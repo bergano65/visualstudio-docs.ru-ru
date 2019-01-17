@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugBreakPoint::Enable | Документы Microsoft
+title: Метод IJsDebugBreakPoint::Enable | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fa66486b479f8bc3e05bad24868392ace121347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a612cc0fb11e8651164dd6b17f945e91659d4bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728044"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093773"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>Метод IJsDebugBreakPoint::Enable
-Включает точки останова.  
+Включает точку останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Enable(void);  
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="remarks"></a>Примечания  
- Возвращает E_UNEXPECTED при вызове в удаленных точках останова.  
+ Возвращает E_UNEXPECTED, если вызван на удаленной точке останова.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  

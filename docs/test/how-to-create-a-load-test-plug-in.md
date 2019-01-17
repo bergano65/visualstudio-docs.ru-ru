@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878566"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Как выполнить Создание подключаемого модуля нагрузочных тестов
 
@@ -174,4 +173,4 @@ namespace LoadTestPluginTest
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство: Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)

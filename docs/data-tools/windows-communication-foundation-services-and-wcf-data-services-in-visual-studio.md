@@ -34,15 +34,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9f2202c96799fcc2e258e79f050d15fb474d0aa
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847932"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 
@@ -93,7 +92,7 @@ Windows Communication Foundation (WCF) — это унифицированный
 
 ## <a name="wcf-tools-in-visual-studio"></a>Средства служб WCF в Visual Studio
 
-Visual Studio предоставляет средства для создания служб WCF и клиентов WCF. Пошаговое руководство, демонстрирующее эти средства, см. в разделе [Пошаговое руководство: создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+Visual Studio предоставляет средства для создания служб WCF и клиентов WCF. Пошаговое руководство, демонстрирующее эти средства, см. в разделе [Пошаговое руководство: Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
 
 ### <a name="create-and-test-wcf-services"></a>Создание и тестирование служб WCF
 
@@ -131,7 +130,7 @@ Visual Studio упрощает задачу создания клиентов WC
 
 **Настройка ссылок на службы** диалоговое окно позволяет настроить конфигурацию для службы. Можно изменить адрес для службы, задать уровень доступа, асинхронное поведение и типы контрактов сообщений и настроить повторное использование типов.
 
-## <a name="how-to-select-a-service-endpoint"></a>Как: выберите конечную точку службы
+## <a name="how-to-select-a-service-endpoint"></a>Как выполнить Выберите конечную точку службы
 
 Некоторые службы Windows Communication Foundation (WCF) предоставить несколько конечных точек, которые клиент может связаться со службой. Например служба может предоставлять одну конечную точку, которая использует привязку HTTP и имя пользователя и пароль безопасности и вторую конечную точку, использующую FTP и проверки подлинности Windows. Первая конечная точка может использоваться приложениями, которые обращаются к службе из внешней стороны брандмауэра, в то время как второй может использоваться в интрасети.
 
@@ -175,7 +174,7 @@ Visual Studio упрощает задачу создания клиентов WC
 
 4.  Внутри `<EndPoint>` тегов, вы найдете `name="` *SomeService* `"` параметра (где *SomeService* представляет имя конечной точки). Это имя для конечной точки, который может быть передан в `endpointConfigurationName As String` перегрузки конструктора для ссылки на службу.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Практическое: асинхронный вызов метода службы
+## <a name="how-to-call-a-service-method-asynchronously"></a>Как выполнить Асинхронный вызов метода службы
 
 Большинство методов в службах Windows Communication Foundation (WCF) может вызываться синхронно или асинхронно. Асинхронный вызов метода позволяет приложению продолжать работать при вызове метода через медленное подключение.
 
@@ -194,7 +193,7 @@ Visual Studio упрощает задачу создания клиентов WC
 
 3.  В **настроить ссылку на службу** выберите **создать асинхронные операции** "флажок".
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Практическое: привязка данных, возвращенных службой,
+## <a name="how-to-bind-data-returned-by-a-service"></a>Как выполнить Привязка данных, возвращенных службой
 
 Можно привязать данные, возвращаемые службой Windows Communication Foundation (WCF) в элемент управления так же, как любой другой источник данных можно привязать к элементу управления. При добавлении ссылки на службу WCF, если служба содержит составные типы, которые возвращают данные, они автоматически добавляются **источников данных** окна.
 
@@ -228,7 +227,7 @@ Visual Studio упрощает задачу создания клиентов WC
 
 5.  Перетащите узел в форме. Элементы управления добавляются в форму, вместе с <xref:System.Windows.Forms.BindingSource> компонента и <xref:System.Windows.Forms.BindingNavigator> компонента.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Практическое: Настройка службы для повторного использования существующих типов
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Как выполнить Настройка службы для повторного использования существующих типов
 
 При добавлении в проект ссылки на службу в локальном проекте создаются все типы, заданные в службе. Во многих случаях это создает повторяющиеся типов, если служба использует общие типы .NET Framework или при определении типов в общей библиотеке.
 
@@ -254,15 +253,15 @@ Visual Studio упрощает задачу создания клиентов WC
 
 ## <a name="related-topics"></a>См. также
 
-| Заголовок | Описание: |
+| Заголовок | Описание |
 | - | - |
-| [Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Предоставляет пошаговую демонстрацию создания и использования служб WCF в Visual Studio. |
-| [Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Предоставляет пошаговую демонстрацию того, как создать и использовать службы данных WCF в Visual Studio. |
+| [Пошаговое руководство: Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Предоставляет пошаговую демонстрацию создания и использования служб WCF в Visual Studio. |
+| [Пошаговое руководство: создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Предоставляет пошаговую демонстрацию того, как создать и использовать службы данных WCF в Visual Studio. |
 | [Использование средств разработки WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Описываются способы создания и тестирования служб WCF в Visual Studio. |
 | | [Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md) | Приведены некоторые распространенные ошибки, которые могут возникнуть с помощью ссылок на службы и способов их устранения. |
 | [Отладка служб WCF](../debugger/debugging-wcf-services.md) | Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF. |
-| [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов. |
+| [Пошаговое руководство: создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов. |
 | [Диалоговое окно "Настроить ссылку на службу"](../data-tools/configure-service-reference-dialog-box.md) | Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно. |
 
 ## <a name="reference"></a>Ссылка

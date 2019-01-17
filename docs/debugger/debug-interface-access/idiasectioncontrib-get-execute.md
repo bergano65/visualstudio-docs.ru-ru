@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_execute | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3f6f26a5ba6442dc9047a2612e032a97a95e04f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1202f5956d0ab32c8be75438077a3277b6ff1029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834010"
 ---
 # <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
 Получает флаг, указывающий, является ли раздел исполняемого файла, как код.  
@@ -27,7 +25,7 @@ ms.locfileid: "49910658"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_excute (   
+HRESULT get_excute (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_excute (
  [out] Возвращает `TRUE` Если раздел может быть выполнена как код; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

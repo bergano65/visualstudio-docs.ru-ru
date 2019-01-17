@@ -2,19 +2,18 @@
 title: Приступая к работе с диагностикой графики | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 05/26/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d92969a52ac7ce97b31ab2e00e16d1d9913cd401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919259"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 В этом разделе вы подготовитесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.  
@@ -88,5 +87,5 @@ ms.locfileid: "53055475"
   
  Дополнительные сведения о том, как совместное использование инструментов анализа графики, см. в разделе [примеры](graphics-diagnostics-examples.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Графика Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

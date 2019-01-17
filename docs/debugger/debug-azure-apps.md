@@ -1,7 +1,6 @@
 ---
-title: Отладка служб Azure | Документы Microsoft
+title: Отладка служб Azure | Документация Майкрософт
 ms.date: 09/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -11,24 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 1d22a8a34a5e49e6e7cde01d048f261956bd9c3b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 29de81a15a042c2033a055749565f76684753425
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932172"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Отладка служб Azure в Visual Studio
 
 Visual Studio можно использовать для отладки служб Azure в различных сценариях:
 
-- Отладке производственного приложения, размещенного в службе приложений Azure см. в разделе [отладки live приложения ASP.NET с помощью отладчика моментального снимка](../debugger/debug-live-azure-applications.md).
+- Чтобы выполнить отладку рабочего приложения, размещенного в службе приложений Azure, см. в разделе [отладки динамических приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md).
 
-- Для отладки рабочего приложения, с помощью Application Insights и размещенных в службе приложений Azure или Service Fabric. в разделе [отладки моментальные снимки на исключения в приложениях .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Для отладки рабочего приложения с помощью Application Insights и размещенного в службе приложений Azure или Service Fabric, см. в разделе [отладочные моментальные снимки для исключений в приложениях .NET](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Для удаленной отладки ASP.NET в IIS (служба приложений Azure или Виртуальной машине Azure). в разделе [удаленной отладки ASP.NET в Azure](remote-debugging-azure.md).
+- Удаленная отладка ASP.NET в IIS (служба приложений Azure или виртуальной Машины Azure), см. в разделе [Remote Debugging ASP.NET on Azure](remote-debugging-azure.md).
 
-- Удаленная отладка ASP.NET на Azure Service Fabric. в разделе [отладки удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Удаленная отладка ASP.NET в Azure Service Fabric, см. в разделе [отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/index.md)

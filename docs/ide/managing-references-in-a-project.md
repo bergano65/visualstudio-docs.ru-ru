@@ -2,7 +2,6 @@
 title: Управление ссылками в проекте
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -23,18 +22,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6209daea293859df16212560255f50d7f7ffff28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822512"
 ---
 # <a name="manage-references-in-a-project"></a>Управление ссылками в проекте
 
 Перед написанием кода для внешних компонентов или подключенных служб необходимо включить в проект ссылки на них. По сути, ссылка — это запись в файле проекта, которая содержит сведения, необходимые Visual Studio для поиска компонента или службы.
 
-Чтобы добавить ссылку, в **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** или **Зависимости** и выберите команду **Добавить ссылку**. Вы также можете щелкнуть узел проекта правой кнопкой мыши и выбрать пункт **Добавить** > **Ссылка**. Дополнительные сведения см. в [практическом руководстве по добавлению и удалению ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Чтобы добавить ссылку, в **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** или **Зависимости** и выберите команду **Добавить ссылку**. Вы также можете щелкнуть узел проекта правой кнопкой мыши и выбрать пункт **Добавить** > **Ссылка**. Дополнительные сведения см. в разделе [Как Добавление и удаление ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Добавление ссылки в Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 

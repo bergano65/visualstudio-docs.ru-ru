@@ -1,8 +1,6 @@
 ---
 title: '&lt;fileAssociation&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866167"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; элемент (приложение ClickOnce)
 Определяет расширение файла, нужно связать с приложением.  
@@ -40,14 +38,14 @@ ms.locfileid: "39080029"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `fileAssociation` является необязательным. Элемент имеет следующие атрибуты.  
+ Элемент `fileAssociation` является необязательным. Элемент имеет перечисленные ниже атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`extension`|Обязательно. Расширение файла, которое требуется связать с приложением.|  
-|`description`|Обязательно. Описание типа файла для использования в оболочке.|  
-|`progid`|Обязательно. Имя, однозначно определяющее тип файла.|  
-|`defaultIcon`|Обязательно. Указывает значок, используемый для файлов с этим расширением. Файл значка должен быть указан с помощью [ \<файл > элемент](../deployment/file-element-clickonce-application.md) в [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md) , содержащий этот элемент.|  
+|`extension`|Обязательный. Расширение файла, которое требуется связать с приложением.|  
+|`description`|Обязательный. Описание типа файла для использования в оболочке.|  
+|`progid`|Обязательный. Имя, однозначно определяющее тип файла.|  
+|`defaultIcon`|Обязательный. Указывает значок, используемый для файлов с этим расширением. Файл значка должен быть указан с помощью [ \<файл > элемент](../deployment/file-element-clickonce-application.md) в [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md) , содержащий этот элемент.|  
   
 ## <a name="remarks"></a>Примечания  
  Этот элемент необходимо включить ссылку на пространство имен XML для «urn: schemas-microsoft-com:clickonce.v1». Если `<fileAssociation>` элемент используется, он должен следовать после `<application>` элемент в его родительском объекте [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md).  

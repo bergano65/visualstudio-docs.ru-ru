@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Документы Microsoft
+title: IDebugApplication::HandleRuntimeError | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725794"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097322"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Приводит к блокировке текущего потока и отправляет уведомление об ошибке в IDE отладчик.  
+Приводит к блокировке текущего потока и отправляет уведомление об ошибке отладчика интегрированной среды разработки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -42,19 +42,19 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Параметры  
  `pErrorDebug`  
- [in] Возникшей ошибки.  
+ [in] Произошла ошибка.  
   
  `pScriptSite`  
- [in] Узел сценария потока.  
+ [in] Сайт скрипта потока.  
   
  `pbra`  
- [out] Действие, выполняемое при отладчик возобновляет работу приложения.  
+ [out] Действие, выполняемое, когда отладчик возобновляет работу приложения.  
   
  `perra`  
- [out] Действие, выполняемое при отладчик возобновляет работу приложения, если имеется ошибка.  
+ [out] Действие, выполняемое, когда отладчик возобновляет работу приложения, если возникает ошибка.  
   
  `pfCallOnScriptError`  
- [out] Флаг, который является `TRUE` Если обработчик должен вызывать `IActiveScriptSite::OnScriptError` метод.  
+ [out] Флаг, который является `TRUE` если следует вызывать обработчик `IActiveScriptSite::OnScriptError` метод.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -64,14 +64,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается обработчик языка в контексте потока, вызвавшего ошибку во время выполнения. Этот метод приводит к блокировке текущего потока и отправляет уведомление об ошибке, отправляемых в IDE отладчик. При возобновлении приложения отладчик интегрированной среды разработки, этот метод возвращает с выполняемое действие.  
+ Модуль языка вызывает этот метод в контексте потока, который приводит к ошибке времени выполнения. Этот метод приводит к блокировке текущего потока и отправляет уведомление об ошибке, который должны отправляться отладчик интегрированной среды разработки. Когда отладчик интегрированной среды разработки возобновляет работу приложения, этот метод возвращает с действие, которое должно быть выполнено.  
   
 > [!NOTE]
->  Во время сбоя во время выполнения, обработчик языка могут быть вызваны потока для выполнения таких задач, как перечислить кадры стека или вычисления выражений.  
+>  Во время и в случае сбоя во время выполнения, модуль языка могут быть вызваны поток может выполнять такие задачи, как перечислить кадры стека или вычислять выражения.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Интерфейс IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [Iactivescriptsite —](../../winscript/reference/iactivescriptsite.md)   
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
  [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
  [Перечисление ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

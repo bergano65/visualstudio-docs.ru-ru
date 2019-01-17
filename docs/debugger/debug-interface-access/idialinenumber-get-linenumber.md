@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_lineNumber | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c745896a4f574514b57f47cff984d2271eaf25bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 348574da112314c7418761137c53e89cbb699651
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838363"
 ---
 # <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
 Получает номер строки в исходном файле.  
@@ -27,7 +25,7 @@ ms.locfileid: "49942521"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_lineNumber (   
+HRESULT get_lineNumber (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lineNumber (
  [out] Возвращает номер строки в исходном файле.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="example"></a>Пример  
   
@@ -47,5 +45,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

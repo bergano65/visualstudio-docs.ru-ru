@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isOptimizedAway | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isOptimizedAway | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0dd37a718a468b43547cf77b8611264f909564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917401"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
 Указывает, оптимизирована ли переменная немедленно.  
@@ -31,10 +29,10 @@ HRESULT get_isOptimizedAway(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Указатель на `BOOL` , указывает, оптимизирована ли переменная немедленно.  
+ [out] Указатель на `BOOL` , указывает ли переменная является отброшено при оптимизации.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

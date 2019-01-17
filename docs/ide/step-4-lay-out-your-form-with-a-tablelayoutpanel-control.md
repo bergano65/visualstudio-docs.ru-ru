@@ -1,9 +1,7 @@
 ---
-title: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
-ms.custom: ''
+title: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821356"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 На этом шаге в форму добавляется элемент управления <xref:System.Windows.Forms.TableLayoutPanel>. TableLayoutPanel помогает должным образом выровнять элементы управления в форме, которая будет добавлена позднее.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этой статьи см. на следующих страницах: [Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2](http://go.microsoft.com/fwlink/?LinkId=205211) и [Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2](http://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Создание макета формы с помощью элемента управления TableLayoutPanel
 
@@ -62,7 +60,7 @@ ms.locfileid: "34748300"
 7.  После того как у элемента управления TableLayoutPanel свойству **Dock** будет присвоено значение **Fill**, панель заполнит всю форму. Если снова изменить размер формы, элемент управления TableLayoutPanel останется закрепленным и сам изменит свой размер для заполнения формы.
 
     > [!NOTE]
-    >  Элемент управления TableLayoutPanel работает как таблица в Microsoft Office Word — он содержит строки и столбцы и отдельная ячейка может занимать несколько строк и столбцов. Каждая ячейка может содержать один элемент управления (например, кнопку, флажок или метку). Этот элемент управления TableLayoutPanel будет содержать элемент управления <xref:System.Windows.Forms.PictureBox>, который займет всю верхнюю строку, элемент управления <xref:System.Windows.Forms.CheckBox> в левой нижней ячейке, и четыре элемента управления <xref:System.Windows.Forms.Button> в правой нижней ячейке.
+    >  Элемент управления TableLayoutPanel работает как таблица в Microsoft Office Word: он содержит строки и столбцы, и отдельная ячейка может занимать несколько строк и столбцов. Каждая ячейка может содержать один элемент управления (например, кнопку, флажок или метку). Этот элемент управления TableLayoutPanel будет содержать элемент управления <xref:System.Windows.Forms.PictureBox>, который займет всю верхнюю строку, элемент управления <xref:System.Windows.Forms.CheckBox> в левой нижней ячейке, и четыре элемента управления <xref:System.Windows.Forms.Button> в правой нижней ячейке.
 
 8.  В данный момент элемент управления TableLayoutPanel содержит две одинаковые по размеру строки и два одинаковых по размеру столбца. Нужно изменить их размер, чтобы верхняя строка и правый столбец были намного больше. В **конструкторе Windows Forms** выберите элемент управления TableLayoutPanel. В правом верхнем углу расположена маленькая кнопка с черным треугольником, как показано на рисунке ниже.
 
@@ -90,6 +88,6 @@ ms.locfileid: "34748300"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md).
+-   Следующий раздел руководства: [Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md).
 
--   Предыдущий раздел: [Шаг 3. Задание свойств формы](../ide/step-3-set-your-form-properties.md).
+-   Предыдущий раздел руководства: [Шаг 3. Настройка свойств формы](../ide/step-3-set-your-form-properties.md).

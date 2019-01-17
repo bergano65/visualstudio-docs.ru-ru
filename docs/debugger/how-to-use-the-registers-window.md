@@ -2,7 +2,6 @@
 title: Представление значения регистров в отладчике | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,16 +24,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058445"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53867583"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Представление значения регистров в окно "Регистры" (C#, C++, Visual Basic, F#)
 
-**Регистрирует** окне отображается содержимое регистров во время отладки Visual Studio. Высокоуровневые введение в принципы использования регистров и **регистрирует** окно, см. в разделе [Общие сведения об отладке: окно регистров](../debugger/debugging-basics-registers-window.md).
+**Регистрирует** окне отображается содержимое регистров во время отладки Visual Studio. Высокоуровневые введение в принципы использования регистров и **регистрирует** окно, см. в разделе [основы отладки: окно регистров
 
 > [!NOTE]
 > Сведения о регистрах не доступно для скриптов и приложений SQL.

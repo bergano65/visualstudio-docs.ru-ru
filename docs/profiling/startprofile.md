@@ -1,8 +1,6 @@
 ---
 title: StartProfile | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StartProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d08c2041d0432bb215b46401521583c921bcbc92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b61f52cda107a05d76c4642ca5775e8800bfb8dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952064"
 ---
 # <a name="startprofile"></a>StartProfile
 Функция `StartProfile` устанавливает для счетчика значение 1 (вкл) для указанного уровня профилирования.  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|  

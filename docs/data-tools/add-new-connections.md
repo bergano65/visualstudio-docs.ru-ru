@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845019"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154222"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -26,7 +25,7 @@ ms.locfileid: "34845019"
 
 - Cloud Explorer
 
-   Установить это окно вручную как расширение Visual Studio, выбрав **средства** > **расширения и обновления** > **Online**  >  **Markeplace visual Studio**. Предоставляет специализированные функции для просмотра и подключение к службам Azure.
+   Установить это окно вручную как расширение Visual Studio, выбрав **средства** > **расширения и обновления** > **Online**  >  **Visual Studio Marketplace**. Предоставляет специализированные функции для просмотра и подключение к службам Azure.
 
 - Обозреватель объектов SQL Server
 
@@ -40,7 +39,7 @@ ms.locfileid: "34845019"
 
 Откроется **добавить подключение** диалоговое окно. Здесь мы ввели имя экземпляра SQL Server LocalDB.
 
-![Добавить новое подключение](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Изменение поставщика
 
@@ -48,7 +47,7 @@ ms.locfileid: "34845019"
 
 ![Поставщик данных AD0.NET изменений](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Проверить подключение
+## <a name="test-the-connection"></a>Проверка подключения
 
 После выбора источника данных, нажмите кнопку **проверить подключение**. Если не удается вызвать, необходимо будет Устранение зависимости в документации поставщика.
 

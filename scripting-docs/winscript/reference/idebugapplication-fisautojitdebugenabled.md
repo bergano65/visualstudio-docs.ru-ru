@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Документы Microsoft
+title: IDebugApplication::FIsAutoJitDebugEnabled | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725184"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090549"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Определяет, зарегистрирован ли отладчик just-in-time (JIT) на узлах ввода-вывода отладки автоматически.  
+Определяет, зарегистрирован ли just-in-time (JIT) отладчик к узлам ввода-вывода auto-debug.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если метод выполнен успешно и зарегистрирована JIT-отладчик ввода-вывода узлы auto-debug, метод возвращает `TRUE`. В противном случае возвращает значение `FALSE`.  
+ Если метод выполнен успешно и JIT-отладчик зарегистрирован в узлы ввода-вывода auto-debug, метод возвращает `TRUE`. В противном случае возвращает значение `FALSE`.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод определяет, если JIT-отладчика был зарегистрирован для узлов ввода-вывода отладки автоматически.  
+ Этот метод определяет, если JIT-отладчик был зарегистрирован для ввода-вывода узлы auto-debug.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

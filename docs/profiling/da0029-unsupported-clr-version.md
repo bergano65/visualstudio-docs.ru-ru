@@ -1,8 +1,6 @@
 ---
-title: 'DA0029: неподдерживаемая версия среды CLR | Документы Майкрософт'
-ms.custom: ''
+title: DA0029. Неподдерживаемая версия среды CLR | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.29
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c52d9ee8ba8488ef8dd3f343aab172689d907532
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948963"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: неподдерживаемая версия среды CLR
+# <a name="da0029-unsupported-clr-version"></a>DA0029. Неподдерживаемая версия среды CLR
 
 |||  
 |-|-|  

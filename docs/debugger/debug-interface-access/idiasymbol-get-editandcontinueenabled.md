@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_editAndContinueEnabled | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae4932652d7ee8cdf33a5928fa5e725cdebbf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e918c13002fc6ae171122a4ebcc642e9cb9c5824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863953"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format) параметр компилятора.  
@@ -27,7 +25,7 @@ ms.locfileid: "49844696"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_editAndContinueEnabled (   
+HRESULT get_editAndContinueEnabled (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,6 +47,6 @@ HRESULT get_editAndContinueEnabled (
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/Z7, /Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062513"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53915365"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Как выполнить Изменение шрифтов и цветов в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "53062513"
 Настройку цвета фреймов и окон инструментов интегрированной среды разработки в Visual Studio можно несколькими способами.
 
 > [!TIP]
->  Сведения об изменении цветов в редакторе кода, см. в разделе [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Сведения об изменении цветов в редакторе кода см. в разделе [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Изменение цветовой схемы интегрированной среды разработки
 
@@ -70,5 +69,5 @@ ms.locfileid: "53062513"
 
 5.  В списке **Размер** выберите размер текста и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
- [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+## <a name="see-also"></a>См. также раздел
+ [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [как: менять шрифты и цвета в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).

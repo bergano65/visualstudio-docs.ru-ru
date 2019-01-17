@@ -1,8 +1,6 @@
 ---
 title: '&lt;Подпись&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: ab91a8dea24c37c58fceddce32eadabca4e11e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858043"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Подпись&gt; элемент (развертывание ClickOnce)
 Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи.  
@@ -30,8 +28,8 @@ ms.locfileid: "39081518"
   
 ```xml  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   

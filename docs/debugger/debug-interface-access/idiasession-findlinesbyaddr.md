@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findLinesByAddr | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29718d355e1b6afb1f85fbb27b5d7b5dc7cfd610
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8b6735d51d993b60c55170af38943986526c5d1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923748"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Извлекает строки в указанной единице компиляции, которые содержат указанный адрес.  
@@ -27,7 +25,7 @@ ms.locfileid: "49819879"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT findLinesByAddr (   
+HRESULT findLinesByAddr (   
    DWORD                 seg,  
    DWORD                 offset,  
    DWORD                 length,  
@@ -73,7 +71,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

@@ -2,9 +2,8 @@
 title: Новые возможности предварительной версии Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях в Visual Studio 2019.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848552"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Новые возможности предварительной версии Visual Studio 2019
 
@@ -50,6 +49,8 @@ ms.locfileid: "53159754"
    ![Новые окна запуска в Visual Studio 2019](../ide/media/start-window.png)
 
 Новое окно запуска дает возможность клонировать или извлечь код, открыть проект или решение, открыть локальную папку или создать новый проект. Эти возможности, представленные в виде простого диалогового окна, помогают как начинающим, так и опытным пользователям Visual Studio быстро перейти к коду.
+
+Дополнительные сведения см. в записи блога [Get to code: How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Приступая к написанию кода. Как мы разработали новое окно запуска Visual Studio).
 
 ### <a name="better-search"></a>Улучшенный поиск
 
@@ -82,6 +83,8 @@ ms.locfileid: "53159754"
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) — это служба для разработчиков, которая позволяет предоставить базу кода и соответствующий контекст коллеге и обеспечить двунаправленное взаимодействие непосредственно из среды Visual Studio. Благодаря Live Share коллега может легко и безопасно просматривать, изменять и отлаживать проект, предоставленный вами для общего доступа.
 
 В предварительной версии Visual Studio 2019 эта служба устанавливается по умолчанию.
+
+Дополнительные сведения см. в записи блога [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share: проверка кода в режиме реального времени и интерактивное обучение).
 
 ## <a name="modern-development-support"></a>Поддержка разработки современных приложений
 
@@ -122,7 +125,7 @@ ms.locfileid: "53159754"
 
 А если вы используете C#, мы также добавили возможность обучения пользовательской модели на основе собственного кода.
 
-Найти дополнительные сведения о расширении и скачать его можно на странице [Visual Studio IntelliCode — предварительная версия](https://go.microsoft.com/fwlink/?linkid=872707) сайта Microsoft DevLabs.
+Дополнительные сведения см. в записи блога [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode поддерживает больше языков и самообучается, анализируя ваш код). Найти дополнительные сведения о расширении и скачать его можно на странице [предварительной версии Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) на сайте Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Обратная связь
 
@@ -135,4 +138,5 @@ ms.locfileid: "53159754"
 ## <a name="see-also"></a>См. также
 
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)
 * [Новые возможности Visual Studio 2017](whats-new-in-visual-studio.md)

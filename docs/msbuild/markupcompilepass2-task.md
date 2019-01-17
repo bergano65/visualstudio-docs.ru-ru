@@ -1,8 +1,6 @@
 ---
 title: Задача MarkupCompilePass2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 360a6c4d3e389583eece1adcc915f26091283653
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a119f3217f8e867dfa4539972cdb2d3d6715b597
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857949"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 - задача
 
@@ -31,7 +29,7 @@ ms.locfileid: "49942391"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
-| Параметр | Описание: |
+| Параметр | Описание |
 | - | - |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Необязательный параметр **Boolean** .<br /><br /> Указывает, следует ли запускать задачу в отдельном <xref:System.AppDomain>. Если этот параметр возвращает **false**, задача выполняется в том же <xref:System.AppDomain>, что и [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]. Это позволяет выполнить задачу быстрее. Если этот параметр возвращает значение **true**, то задача выполняется во втором <xref:System.AppDomain>, который изолирован от [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] и работает медленнее. |
 | `AssembliesGeneratedDuringBuild` | Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые изменяются в процессе сборки. Например, решение Visual Studio может содержать один проект, который ссылается на выходные данные компиляции другого проекта. В этом случае выходные данные компиляции второго проекта можно добавить в **AssembliesGeneratedDuringBuild**.<br /><br /> Примечание. Элемент **AssembliesGeneratedDuringBuild** должен содержать ссылки на полный набор сборок, созданных решением сборки. |

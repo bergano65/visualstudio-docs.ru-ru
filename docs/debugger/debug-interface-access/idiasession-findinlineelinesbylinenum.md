@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByLinenum | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279ccc53176f0e1959ffb3ecd69fcbb39aa59dad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a2a76b80c597024ff4fd4de6b76a7f77092db3e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966159"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в указанный исходный файл и номер строки.  
@@ -25,7 +23,7 @@ ms.locfileid: "49942612"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
@@ -56,7 +54,7 @@ HRESULT findInlineeLinesByVA (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

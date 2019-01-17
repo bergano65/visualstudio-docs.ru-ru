@@ -1,8 +1,6 @@
 ---
-title: Написание задач | Документация Майкрософт
-ms.custom: ''
+title: Написание задач | Документы Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf8c8a05d07d1a75a8794c52a2f89a55f01419e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 471e707b13992a0edf06eb8136d36f3f415b9d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922166"
 ---
 # <a name="task-writing"></a>Написание задач
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], см. в статье [Справочные сведения о задачах MSBuild](../msbuild/msbuild-task-reference.md).  
@@ -161,7 +159,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.  
   
 ### <a name="code"></a>Код  
@@ -185,7 +183,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.  
   
 ### <a name="code"></a>Код  
@@ -243,7 +241,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. В ней задается обязательное строковое свойство и создается событие, отображаемое всеми зарегистрированными средствами ведения журнала.  
   
 ### <a name="code"></a>Код  
@@ -251,7 +249,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В этом примере показан файл проекта, в котором вызывается задача из предыдущего примера (SimpleTask3).  
   
 ### <a name="code"></a>Код  

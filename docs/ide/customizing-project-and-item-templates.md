@@ -2,7 +2,6 @@
 title: Настройка шаблонов проектов и элементов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8f52a948158ec4a48ee3c521c04c65f875156823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864534"
 ---
 # <a name="customize-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
 
@@ -40,8 +39,8 @@ ms.locfileid: "53051760"
 ## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство: устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)
-- [Практическое руководство: Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство: создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

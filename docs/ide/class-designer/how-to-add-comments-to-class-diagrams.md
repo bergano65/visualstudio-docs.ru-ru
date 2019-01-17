@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Добавление комментариев в схему классов (конструктор классов)
+title: Как выполнить Добавление комментариев в диаграммы классов (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916378"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Практическое руководство. Добавление комментариев в схему классов
+# <a name="how-to-add-comments-to-class-diagrams"></a>Как выполнить Добавление комментариев в диаграммы классов
 
 Для добавления примечаний к схемам классов можно использовать фигуры комментария. У фигуры комментария есть свойство **Текст**, в которое можно вводить текст. Фигуры комментария существуют только в области схемы, а не в коде.
 
@@ -39,5 +38,5 @@ ms.locfileid: "33957110"
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
-- [Практическое руководство. Настройка схем классов](how-to-customize-class-diagrams.md)
+- [Работа с диаграммами классов](designing-and-viewing-classes-and-types.md)
+- [Практическое руководство. Настройка диаграмм классов (конструктор классов)](how-to-customize-class-diagrams.md)

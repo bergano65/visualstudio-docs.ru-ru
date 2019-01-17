@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5e6ceefbff4702d509c18b4a555287a1e9f42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 94e052865c94d747bcb36cd81e0b1c023262b0c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875158"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Возвращает число тегов указатель сочетаний клавиш в функции C++ AMP заглушки.  
+Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,13 +29,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Параметры  
  `count`  
- [out] Указатель на `DWORD` , содержащие количество сочетаний клавиш теги указателя в функцию C++ AMP заглушки.  
+ [out] Указатель на `DWORD` , содержащий количество сочетаний клавиш теги указателя в функцию C++ AMP заглушки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается для `IDiaSymbol` интерфейс, который соответствует функции C++ AMP заглушки сочетаний клавиш.  
+ Этот метод вызывается на `IDiaSymbol` интерфейс, который соответствует функции заглушки accelerator C++ AMP.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

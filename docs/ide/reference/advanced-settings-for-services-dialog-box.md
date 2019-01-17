@@ -2,7 +2,6 @@
 title: Диалоговое окно "Дополнительные параметры служб"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cc44d71b1f9cb2f449d4aafdff22271b1c63ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 251a78ebe56a9ba2c88444da879970c590ece029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917229"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Диалоговое окно "Дополнительные параметры служб"
 Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы настраивать службы клиентских приложений. Дополнительные сведения о странице **Службы** см. в разделе [Страница "Службы" в конструкторе проектов](../../ide/reference/services-page-project-designer.md).
@@ -42,7 +41,7 @@ ms.locfileid: "31946602"
 
  Поставщик ролей получает кэшированные значения ролей или службы ролей при вызове метода <xref:System.Web.Security.RolePrincipal.IsInRole%2A>. Для программного сброса кэша и принудительного доступа метода к удаленной службе требуется вызвать метод <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.
 
- **Использовать настраиваемую строку подключения** Указывает, используют ли поставщики клиентских служб настраиваемое хранилище данных для локального кэша. По умолчанию поставщики используют для кэша локальную файловую систему. При выборе этого параметра автоматически заполняется текстовое поле со строкой подключения по умолчанию. Можно сохранить строку подключения по умолчанию для автоматического создания и использования базы данных SQL Server Compact Edition, либо указать строку подключения для существующей базы данных SQL Server. Дополнительные сведения см. в разделе [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). По умолчанию этот флажок снят.
+ **Использовать настраиваемую строку подключения** Указывает, используют ли поставщики клиентских служб настраиваемое хранилище данных для локального кэша. По умолчанию поставщики используют для кэша локальную файловую систему. При выборе этого параметра автоматически заполняется текстовое поле со строкой подключения по умолчанию. Можно сохранить строку подключения по умолчанию для автоматического создания и использования базы данных SQL Server Compact Edition, либо указать строку подключения для существующей базы данных SQL Server. Дополнительные сведения см. в разделе [Как Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). По умолчанию этот флажок снят.
 
 ## <a name="see-also"></a>См. также
 

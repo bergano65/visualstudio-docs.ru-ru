@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Документы Microsoft
+title: ISetNextStatement::CanSetNextStatement | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5288b0cffc3b8bfca0e995e67d4b3e4bf3a6b2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733744"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090133"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Этот метод определяет, можно ли задать точку выполнения, который определяет следующий оператор к выполнению кода, в указанное расположение.  
+Этот метод определяет, можно ли задать точку выполнения, который определяет следующий оператор кода, который будет выполнен, в указанное расположение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,7 +37,7 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Параметры  
  `pStackFrame`  
- [in] Указатель на объект кадра стека.  
+ [in] Указатель на кадр стека.  
   
  `pCodeContext`  
  [in] Указатель на объект контекста кода.  
@@ -47,8 +47,8 @@ HRESULT CanSetNextStatement(
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|`S_OK`|Следующий оператор может обновляться в контексте для указанного кода.|  
-|`S_FALSE`|Не удается обновить следующий оператор в контексте для указанного кода.|  
+|`S_OK`|Следующий оператор могут обновляться в контекст указанного кода.|  
+|`S_FALSE`|Следующий оператор нельзя обновить до контекст указанного кода.|  
   
 ## <a name="remarks"></a>Примечания  
   

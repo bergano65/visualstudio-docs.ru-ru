@@ -2,9 +2,8 @@
 title: Использование параметров командной строки для установки Visual Studio
 titleSuffix: ''
 description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869665"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 
@@ -56,7 +55,7 @@ ms.locfileid: "53159728"
 | `update` | Обновляет установленный продукт. |
 | `repair` | Восстанавливает установленный продукт. |
 | `uninstall` | Удаляет установленный продукт. |
-| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. |
+| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
 
 | **Параметр установки** | **Описание** |
 | ----------------------- | --------------- |

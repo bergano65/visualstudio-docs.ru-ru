@@ -1,8 +1,6 @@
 ---
 title: Визуализация событий EventSource как маркеров | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840703"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 Визуализатор параллелизма может отображать события EventSource в качестве маркеров и предоставляет возможность настройки того, как должны отображаться эти маркеры. Чтобы просмотреть маркеры EventSource, зарегистрируйте GUID поставщика трассировки событий Windows с помощью диалогового окна [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). У визуализатора параллелизма по умолчанию есть соглашения по представлению события EventSource как [маркеров флагов](../profiling/flag-markers.md), [маркеров интервалов](../profiling/span-markers.md) и [маркеров сообщений](../profiling/message-markers.md). Вы можете настраивать то, как отображаются события EventSource, путем добавления пользовательских полей в события. Дополнительные сведения о маркерах см. в разделе [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md). Дополнительные сведения о событиях EventSource см. в разделе <xref:System.Diagnostics.Tracing>.  

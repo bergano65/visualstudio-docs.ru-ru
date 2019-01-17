@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документы Майкрософт
+title: Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,14 +14,14 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860732"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -146,7 +146,7 @@ ms.locfileid: "51807755"
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**значение**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
   
@@ -155,7 +155,7 @@ ms.locfileid: "51807755"
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**значение**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` — это путь к исполняемым файлам профилировщика. Если [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установлен в папку по умолчанию, значением будет **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**.  
   
@@ -226,9 +226,9 @@ ms.locfileid: "51807755"
   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор подробных данных о времени](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор данных об использовании памяти](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор данных об использовании памяти](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
 
 
 

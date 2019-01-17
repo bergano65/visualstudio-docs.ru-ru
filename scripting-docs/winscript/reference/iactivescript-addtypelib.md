@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Документы Microsoft
+title: IActiveScript::AddTypeLib | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640874"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092551"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Добавляет библиотеку типов в пространство имен для скрипта. Это похоже на `#include` директив в C/C++. Он позволяет набор стандартных элементов, таких как определения классов `typedefs`и именованных констант для добавления среды выполнения, которые доступны для скрипта.  
+Добавляет библиотеку типов в пространство имен для скрипта. Это похоже на `#include` директив в C/C++. Он позволяет набор стандартных пунктов, такие как определения классов, `typedefs`и именованные константы, добавляемых к среде выполнения, которые доступны для скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -41,7 +41,7 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Параметры  
  `guidTypeLib`  
- [in] Код CLSID библиотеки типов для добавления.  
+ [in] CLSID библиотеки типов для добавления.  
   
  `dwMaj`  
  [in] Основной номер версии.  
@@ -50,11 +50,11 @@ HRESULT AddTypeLib(
  [in] Дополнительный номер версии.  
   
  `dwFlags`  
- [in] Флаги для параметра. Могут быть следующими:  
+ [in] Флаги параметров. Могут быть следующими:  
   
 |Значение|Значение|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Библиотека типов описывает элемент управления ActiveX, используемого ведущим приложением.|  
+|SCRIPTTYPELIB_ISCONTROL|Библиотека типов описывает элемент управления ActiveX, используемый узлом.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -62,9 +62,9 @@ HRESULT AddTypeLib(
 |Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_INVALIDARG`|Недопустимый аргумент.|  
-|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
-|`TYPE_E_CANTLOADLIBRARY`|Не удалось загрузить библиотеки указанного типа.|  
+|`E_INVALIDARG`|Аргумент был недопустимым.|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации).|  
+|`TYPE_E_CANTLOADLIBRARY`|Не удалось загрузить указанной библиотеки типов.|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

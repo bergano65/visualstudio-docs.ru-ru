@@ -1,8 +1,6 @@
 ---
 title: Справочник по API визуализатора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902218"
 ---
 # <a name="visualizer-api-reference"></a>Справочные сведения о прикладном программном интерфейсе визуализаторов
 
-Прикладные программные интерфейсы визуализаторов предназначены для пользователей, желающих создать визуализатор для отладчика Visual Studio. Визуализатор представляет собой небольшое приложение, расширяющее функциональность пользовательского интерфейса отладчика Visual Studio. Визуализатор можно отображать (и при необходимости редактировать) объект данных определенного типа, для которого предназначен визуализатор.  
+Прикладные программные интерфейсы визуализаторов предназначены для пользователей, желающих создать визуализатор для отладчика Visual Studio. Визуализатор представляет собой небольшое приложение, расширяющее функциональность пользовательского интерфейса отладчика Visual Studio. С помощью визуализаторов можно отображать (а также редактировать) объекты определенного типа, на который рассчитан конкретный визуализатор.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
@@ -42,8 +40,8 @@ ms.locfileid: "39155065"
   
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
  [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Практическое: Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
+ [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

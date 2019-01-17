@@ -1,8 +1,6 @@
 ---
 title: Использование окна задач | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227776"
 ---
-# <a name="using-the-tasks-window"></a>Использование окна задач
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>Использование окна задач (C#, Visual Basic, C++)
 
 Окно **Задачи** выглядит так же, как окно **Потоки**, за тем исключением, что вместо сведений о каждом потоке в нем отображаются сведения об объектах <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class) или [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)). Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке.
 

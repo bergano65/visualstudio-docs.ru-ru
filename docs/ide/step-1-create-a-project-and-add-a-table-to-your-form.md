@@ -1,9 +1,7 @@
 ---
-title: Шаг 1. Создание проекта и добавление таблицы в форму
-ms.custom: ''
+title: Шаг 1. Создание проекта и добавление таблицы в форму
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882780"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Шаг 1. Создание проекта и добавление таблицы в форму
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Шаг 1. Создание проекта и добавление таблицы в форму
 
 Первым шагом создания игры "Подбери пару!" является создание проекта и добавление таблицы в форму. Таблица помогает равномерно распределить значки по сетке 4x4. Можно также задать несколько свойств, чтобы улучшить внешний вид игрового поля.
 
@@ -91,6 +89,6 @@ ms.locfileid: "49857612"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Следующий раздел руководства: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
 -   Предыдущая статья с общими сведениями: [Руководство 3. Создание игры "Подбери пару!"](../ide/tutorial-3-create-a-matching-game.md).

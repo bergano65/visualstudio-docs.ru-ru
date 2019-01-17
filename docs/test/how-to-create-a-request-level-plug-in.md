@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988927"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Как выполнить Создание подключаемого модуля уровня запроса
 
@@ -126,5 +125,5 @@ namespace RequestPluginNamespace
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Кодирование пользовательского правила извлечения для веб-теста производительности](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Практическое руководство: Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)

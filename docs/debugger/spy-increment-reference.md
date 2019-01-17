@@ -1,8 +1,6 @@
 ---
-title: Справочник по Spy ++ | Документы Microsoft
-ms.custom: ''
+title: Справочник по Spy ++ | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - reference, Spy++
@@ -13,28 +11,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc377a2ccfa2663815212857de4a4668dd437870
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a6d2ab8eef8e99dee5d7f533623f64aea1fa2ab9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856375"
 ---
 # <a name="spy-reference"></a>Справочник по Spy++
-См. в разделах, перечисленных ниже для описания всех Spy ++ меню и диалоговых окон полей:  
+См. в разделах, перечисленных ниже описания каждого Spy ++ меню и диалоговое окно:  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Команды меню](../debugger/menu-commands.md)  
- Описывает команды, доступные в каждом меню Spy ++.  
+ Описание команд, доступных в каждом меню Spy ++.  
   
- [Диалоговое окно шрифтов](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Диалоговое окно "Шрифт"](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Используется для настройки шрифта, используемого в окне представлений Spy ++.  
   
  [Средства поиска для представлений Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Диалоговые окна, используемые для поиска конкретного узла в окне представлений Spy ++.  
+ Диалоговым окнам, используемым для поиска конкретного узла в окне представлений Spy ++.  
   
  [Диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md)  
- Используется для отображения свойств окна, выбранного в представлении окон.  
+ Используется для отображения свойств окна, выбранного в представлении Windows.  
   
  [Диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md)  
  Используется для выбора сообщений, отображаемых в представлении сообщений.  
@@ -46,14 +44,14 @@ ms.locfileid: "31481594"
  Используется для отображения свойств процесса, выбранного в представлении процессов.  
   
  [Диалоговое окно "Свойства потока"](../debugger/thread-properties-dialog-box.md)  
- Используется для отображения свойств потока, выбранного в представлении потоков.  
+ Используется для отображения свойств потока, выбранного в представлении "Потоки".  
   
  [Прочие диалоговые окна](../debugger/other-dialog-boxes.md)  
  Используется для отображения сведений о программе Spy ++.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Использование Spy++](../debugger/using-spy-increment.md)  
- Представляет средство Spy ++ и объясняется, как использовать.  
+ Представлены средства Spy ++ и рассказывается, как он может использоваться.  
   
  [Представления Spy++](../debugger/spy-increment-views.md)  
- Описание представления деревьев Spy ++ окон, сообщений, процессов и потоков.
+ Описание представления дерева Spy ++ окон, сообщений, процессов и потоков.

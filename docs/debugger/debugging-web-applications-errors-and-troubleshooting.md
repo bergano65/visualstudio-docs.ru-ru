@@ -2,7 +2,6 @@
 title: Отладка веб-приложения — ошибки и устранение неполадок
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827422"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Отладка веб-приложений: ошибки и устранение неполадок
 При попытке отладки веб-приложений возможны следующие ошибки:  
@@ -56,6 +55,6 @@ ms.locfileid: "53053655"
   
 -   [Ошибка: не удается запустить отладку на веб-сервере](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Отладка веб-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)
+ [Отладка веб-приложений и скриптов](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

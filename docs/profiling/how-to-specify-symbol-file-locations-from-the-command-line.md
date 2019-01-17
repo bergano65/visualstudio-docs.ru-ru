@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Определение расположения файлов символов с помощью командной строки | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Определение расположения файлов символов с помощью командной строки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917151"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Практическое руководство. Определение расположения файлов символов с помощью командной строки
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Как выполнить Определение расположения файлов символов с помощью командной строки
 Для отображения сведений о символах, например имен функций и номеров строк, программе командной строки VSPerfReport необходим доступ к файлам символов (*PDB*) профилируемых компонентов и системным файлам Windows. Файлы символов создаются при компиляции компонента. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport автоматически выполняет поиск следующих расположений файлов символов:  
   
 - пути, указанные в параметре **/SymbolPath** или в переменной среды **_NT_SYMBOL_PATH**;  
@@ -37,7 +35,7 @@ ms.locfileid: "49941936"
   Можно также использовать оба этих метода.  
   
 > [!NOTE]
->  Если [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на локальном компьютере, расположение файлов символов Windows, вероятно, уже указано. Дополнительные сведения см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md). Вам, тем не менее, потребуется настроить в VSPerfReport использование расположения и сервера, как описано далее в этом разделе.  
+>  Если [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на локальном компьютере, расположение файлов символов Windows, вероятно, уже указано. Дополнительные сведения см. в разделе [Как Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md). Вам, тем не менее, потребуется настроить в VSPerfReport использование расположения и сервера, как описано далее в этом разделе.  
   
 ## <a name="specify-windows-symbol-files"></a>Задание файлов символов Windows  
   

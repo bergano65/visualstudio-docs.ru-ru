@@ -1,8 +1,6 @@
 ---
-title: 'Как: Открытие представления сообщений из окна поиска | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Открытие представления сообщений из окна поиска | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847104"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. Открытие представления сообщений из окна поиска
+# <a name="how-to-open-messages-view-from-find-window"></a>Как выполнить открытие представления сообщений из окна поиска
 Может оказаться удобнее использовать **найти окно** диалоговое окно для выбора конечного окна, а затем откройте представление сообщений окна.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Чтобы открыть окно представления сообщений с помощью диалогового окна поиска  
@@ -39,7 +37,7 @@ ms.locfileid: "49839223"
 
 4. В разделе **Показать**выберите **сообщений**.  
 
-5. Нажмите клавишу **ОК**.  
+5. Нажмите кнопку **ОК**.  
 
     Пустое [представления сообщений](../debugger/messages-view.md) откроется окно и **сообщений** меню добавляется на панель инструментов Spy ++.  
 

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Установка текущего сеанса | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка текущего сеанса | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ba98d1d2a4a427632487e2b96663c5c40ad0a052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841811"
 ---
-# <a name="how-to-set-the-current-session"></a>Практическое руководство. Установка текущего сеанса
+# <a name="how-to-set-the-current-session"></a>Как выполнить Настройка текущего сеанса
 
 Можно открыть несколько сеансов анализа производительности в **обозревателе производительности**, а затем выбрать один из отображающихся сеансов в качестве текущего.
 

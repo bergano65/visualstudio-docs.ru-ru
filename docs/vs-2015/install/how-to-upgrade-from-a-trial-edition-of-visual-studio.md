@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 717f11fe-be6c-4d6e-9006-e7e5220c02bb
@@ -14,12 +13,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: eeb70f917d750965fec07f5d3d1174489800ec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 415f60116e3120f9690d20d20dfd37c560d5ad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867791"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Как выполнить Обновление с пробного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +47,5 @@ ms.locfileid: "53055283"
     > [!NOTE]
     >  Для регистрации и разблокировки любого из выпусков Visual Studio требуется подключение к Интернету. После регистрации Visual Studio наличие подключение к Интернету является необязательным.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Установка Visual Studio](../install/install-visual-studio-2015.md) [вход в Visual Studio](../ide/signing-in-to-visual-studio.md) [как: Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [поиск или изменение ключа продукта для Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

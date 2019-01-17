@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание и удаление зависимостей проекта
+title: Как выполнить Создание и удаление зависимостей проекта
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925701"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Практическое руководство. Создание и удаление зависимостей проекта
+# <a name="how-to-create-and-remove-project-dependencies"></a>Как выполнить Создание и удаление зависимостей проекта
 
 При создании решения, содержащего несколько проектов, может потребоваться выполнить сначала сборку отдельных проектов для создания кода, используемого последующими проектами. Когда проект использует исполняемый код, создаваемый другим проектом, последний называется зависимостью первого. Такие отношения зависимости можно определить в диалоговом окне **Зависимости проектов**.
 

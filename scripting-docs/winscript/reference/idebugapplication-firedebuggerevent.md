@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent | Документы Microsoft
+title: IDebugApplication::FireDebuggerEvent | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f78522d885a65ddc8bfb056654aaf559c90d36e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725454"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092187"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Универсальный событие в отладчик `IApplicationDebugger` интерфейса.  
+Срабатывает универсального события отладчика `IApplicationDebugger` интерфейс.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -42,20 +42,20 @@ HRESULT FireDebuggerEvent(
  [in] Идентификатор GUID для объекта.  
   
  `punk`  
- [in] Объект события для передачи в отладчик.  
+ [in] Объект события, передаваемые в отладчик.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Метод не реализован в настоящее время.|  
+|`E_NOTIMPL`|Метод еще не реализован.|  
   
 ## <a name="remarks"></a>Примечания  
  Семантика GUID и `IUnknown` являются полностью определенные приложения и отладчика.  
   
- Этот метод позволяет для пользовательских расширений модели отладчика. он еще не реализован.  
+ Этот метод позволяет для пользовательских расширений модели отладчика; он еще не реализован.  
   
  Этот метод вызывает `IApplicationDebugger::onDebuggerEvent` для вызова.  
   

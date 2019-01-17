@@ -2,7 +2,6 @@
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, \"Проверка кода\""
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06c0a82a70cf3764df4937ed7d42b2c87f8aa46
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c70906430ecc7175e4ceae1bfd55b308b2487be9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905615"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>"Параметры", "Текстовый редактор", JavaScript, "Проверка кода"
 На странице **Проверка кода** диалогового окна **Параметры** можно изменить параметры, которые влияют на обработку ошибок в JavaScript. Чтобы открыть страницу **Проверка кода**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **Проверка кода.**
@@ -37,6 +36,6 @@ ms.locfileid: "50673254"
 
  Если установлено значение **True**, ошибки JavaScript показаны как предупреждения, а не ошибки в **списке ошибок**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IntelliSense для JavaScript](../../ide/javascript-intellisense.md)

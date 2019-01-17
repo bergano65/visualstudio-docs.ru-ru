@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Документы Microsoft
+title: IActiveScriptAuthor::ParseScriptText | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645514"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091810"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Выполняет синтаксический анализ текста сценария, добавляет текст в скрипт создания ядра и создает `IScriptEntry` объект, соответствующий блок сценария.  
+Выполняет синтаксический анализ текста скрипта, добавляет текст в скрипт создания ядра и создает `IScriptEntry` объект, соответствующий блок скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -42,16 +42,16 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in] Анализируемый текст сценария.  
+ [in] Анализируемый текст скрипта.  
   
  `pszItemName`  
- [in] Адрес буфера, который содержит имя элемента, связанного с блоком сценария.  
+ [in] Адрес буфера, который содержит имя элемента, связанного с блоком скрипта.  
   
  `pszDelimiter`  
- [in] Адрес разделитель end из скрипта блока. Когда `pszCode` анализируется из текстового потока, узел обычно использует разделитель (например, две одинарных кавычки), для определения конца блока скрипта. Установите этот параметр значение NULL, если разделитель не для идентификации конца блока скрипта.  
+ [in] Адрес-объекта блок сценариев end разделитель. Когда `pszCode` анализируется из потока текста узел обычно использует разделитель (например, две одинарные кавычки), чтобы обнаружить завершение блока скрипта. Установите этот параметр значение NULL, если разделитель не для обозначения конца блока скрипта.  
   
  `dwCookie`  
- [in] Определяемые приложением значения, связанного с новым `IScriptEntry` объекта.  
+ [in] Определяемое приложением значение, которая связана с новым `IScriptEntry` объекта.  
   
  `dwFlags`  
  [in] Не используется.  
@@ -59,7 +59,7 @@ HRESULT ParseScriptText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

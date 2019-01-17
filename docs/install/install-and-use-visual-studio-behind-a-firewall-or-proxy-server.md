@@ -1,9 +1,8 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.custom: seodec18
 ms.date: 07/10/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 55234231855761e0ad0206bdd96dfffcdb52690a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879521"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -83,7 +82,7 @@ ms.locfileid: "53160170"
 
 Ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить доступ к всем необходимым компонентам при использовании Visual Studio или служб Azure, расположенных за брандмауэром или прокси-сервером.
 
-| Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание: |
+| Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание |
 | - | - | - | - | - |
 | URL-адрес<br>разрешение | go.microsoft.com<br><br>aka.ms | | | Используется для сокращения URL-адресов, которые затем разрешаются в длинные URL-адреса |
 | Начальная страница | vsstartpage.blob.core.windows.net | | 443 | Используется для отображения новостей для разработчиков на начальной странице в Visual Studio |

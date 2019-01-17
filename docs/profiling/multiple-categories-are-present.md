@@ -1,8 +1,6 @@
 ---
 title: Наличие нескольких категорий | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1481d5a6f22606875b0173bf0d3060bb455f022
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858095"
 ---
 # <a name="multiple-categories-are-present"></a>Наличие нескольких категорий
 Выбран раздел, который содержит более одного вида операций за указанный диапазон времени. Обратите внимание на то, что два цвета отображаются вертикально друг над другом. Эти цвета обозначают две наиболее частые операции за указанный диапазон времени. Частота этих двух операций отображается относительно друг друга в виде третей или половин вертикального столбца. Чтобы просмотреть дополнительные сведения, попробуйте увеличить масштаб этого раздела представления потоков.  

@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictReferencePathAccess | Документы Microsoft
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictReferencePathAccess | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c3a6239b41fec44098850973ddcd4839b808a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 121b5a4c74fd017e39314de7afe760a8d6184e25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872139"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
-Определяет, если найти PDB-файл может быть в каталоге, где находится файл .exe.  
+Определяет, разрешено при поиске PDB-файл в каталоге, где находится файл .exe.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Любой код возврата не `S_OK` для предотвращения найти PDB-файл в каталоге, где находится файл .exe.  
+ Любой код возврата не `S_OK` во избежание поиск PDB-файл в путь, где находится файл .exe.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

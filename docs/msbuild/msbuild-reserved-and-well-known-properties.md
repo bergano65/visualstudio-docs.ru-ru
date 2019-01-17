@@ -1,8 +1,6 @@
 ---
 title: Зарезервированные и стандартные свойства MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bb5a21f93368533a6514cdaf19a7b88486eb06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967739"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предусмотрен набор предопределенных свойств для сохранения информации о файле проекта и двоичных файлах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Значения этих свойств вычисляются так же, как и значения других свойств [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, для использования свойства `MSBuildProjectFile` необходимо ввести `$(MSBuildProjectFile)`  
@@ -33,11 +31,11 @@ ms.locfileid: "49894486"
  В следующей таблице приведены предопределенные свойства, предусмотренные в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
 
 
-| Свойство. | Зарезервированное или стандартное | Описание: |
+| Свойство. | Зарезервированное или стандартное | Описание |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Зарезервированное | Абсолютный путь к папке, где находятся используемые в данный момент двоичные файлы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] (например, *C:\Windows\Microsoft.Net\Framework\\\<versionNumber*). Этим свойством удобно пользоваться в случае, когда требуется сослаться на файлы в каталоге [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
 | `MSBuildExtensionsPath` | Стандартное | Введено в .NET Framework 4: разницы между значениями по умолчанию `MSBuildExtensionsPath` и `MSBuildExtensionsPath32` нет. Переменной среды `MSBUILDLEGACYEXTENSIONSPATH` можно присвоить значение, отличное от null, чтобы включить поведение, соответствующее значению по умолчанию `MSBuildExtensionsPath` в предыдущих версиях.<br /><br /> В .NET Framework 3.5 и более ранних версиях значение по умолчанию `MSBuildExtensionsPath` указывает на путь к вложенной папке MSBuild в папке *\Program Files\\* или *\Program Files (x86)*, в зависимости от разрядности текущего процесса. Например, для 32-разрядного процесса на 64-разрядном компьютере это свойство указывает папку на *\Program Files (x86)*. Для 64-разрядного процесса на 64-разрядном компьютере это свойство указывает на папку *\Program Files*.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.<br /><br /> Это расположение хорошо подходит для хранения пользовательских файлов целей. Например, файлы целей можно установить в папку *\Program Files\MSBuild\MyFiles\Northwind.targets*, а затем импортировать в файлы проекта с помощью следующего XML-кода:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
-| `MSBuildExtensionsPath32` | Стандартное | Путь к вложенной папке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в папке *\Program Files\* или *\Program Files (x86)*. Этот путь всегда указывает на папку *\Program Files* на 32-разрядном компьютере и на папку *\Program Files (x86)* на 64-разрядном компьютере. См. также `MSBuildExtensionsPath` и `MSBuildExtensionsPath64`.<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
+| `MSBuildExtensionsPath32` | Стандартное | Путь к вложенной папке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в папке *\Program Files\* или *\Program Files (x86)*. Путь всегда указывает на папку *\Program Files (x86)* на 32-разрядном компьютере и на папку *\Program Files* на 64-разрядном компьютере. См. также `MSBuildExtensionsPath` и `MSBuildExtensionsPath64`.<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
 | `MSBuildExtensionsPath64` | Стандартное | Путь к вложенной папке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в папке *\Program Files*. На 64-разрядном компьютере этот путь всегда указывает на папку *\Program Files*. На 32-разрядном компьютере этот путь будет пустым. См. также `MSBuildExtensionsPath` и `MSBuildExtensionsPath32`.<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
 | `MSBuildLastTaskResult` | Зарезервированное | Значение `true`, если предыдущая задача завершилась без ошибок (даже если были предупреждения), или значение `false`, если в предыдущей задаче были ошибки. Обычно, если в задаче возникает ошибка, эта ошибка — последнее, что происходит в проекте. Следовательно, это свойство никогда не принимает значение `false`, кроме как в следующих сценариях:<br /><br /> — Когда для атрибута `ContinueOnError` [элемента Task (MSBuild)](../msbuild/task-element-msbuild.md) задано значение `WarnAndContinue` (или `true`) или `ErrorAndContinue`.<br /><br /> — Когда `Target` имеет [элемент OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) как дочерний элемент. |
 | `MSBuildNodeCount` | Зарезервированное | Максимальное количество параллельных процессов, используемых при сборке. Это значение, заданное для параметра **-maxcpucount** в командной строке. Если параметр **-maxcpucount** указан без задания значения, `MSBuildNodeCount` определяет количество процессоров в компьютере. Дополнительные сведения см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md) и статье о [параллельном создании нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |

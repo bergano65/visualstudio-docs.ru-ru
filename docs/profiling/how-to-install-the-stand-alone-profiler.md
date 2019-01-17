@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Установка автономного профилировщика | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Установка автономного профилировщика | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -13,27 +11,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f5068ff6b167e9cfda14799f799a397a322ff3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987120"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного профилировщика
+# <a name="how-to-install-the-stand-alone-profiler"></a>Как выполнить Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.  
   
 > [!NOTE]
 >  При использовании автономного профилировщика для сбора данных по производительности веб-сайта ASP.NET программа командной строки [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) предпочтительнее программы [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Установка автономного профилировщика  
-  
-1. Найдите установщик автономного профилировщика (*vs_profiler.exe*) на установочном носителе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в каталоге, включающем путь *\Standalone Profiler*, и запустите его.  
+
+1. Скачайте [средства оценки производительности для Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+
+1. Найдите автономный установщик (*vs_standaloneprofiler.exe*) в папке, в которую были скачаны средства оценки производительности, и запустите его.
   
 2. Добавьте пути к файлам *vsintr.exe* и *msdis150.dll* в системный путь.  
   
    > [!NOTE]
-   >  При установке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] по умолчанию файлы *vsinstr.exe* и *msdis150.dll* находятся в папке *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
+   >  Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду. 
   
 3. В командной строке введите **VSInstr**.  
   
@@ -47,13 +47,13 @@ ms.locfileid: "49942452"
     **start %COMSPEC%**  
   
    > [!NOTE]
-   >  Подробные инструкции по настройке пакета сервера символов см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+   >  Подробные инструкции по настройке пакета сервера символов см. в статье [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
   
 ## <a name="see-also"></a>См. также  
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Пошаговое руководство. Профилирование из командной строки с помощью метода выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Пошаговое руководство: Профилирование из командной строки с помощью метода выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Пошаговое руководство: Профилирование из командной строки с помощью метода инструментирования](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

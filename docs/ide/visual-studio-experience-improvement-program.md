@@ -3,19 +3,18 @@ title: Программа улучшения качества программн
 description: Узнайте, как управлять параметрами конфиденциальности в Visual Studio.
 ms.date: 05/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822775"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
 

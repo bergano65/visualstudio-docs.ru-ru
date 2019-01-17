@@ -2,7 +2,6 @@
 title: Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.InternationalSettings
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86201db5cb71e7595cbfde82f04bcbb74ba149f2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 74a0380cd7d31f0c7a3e8d94a9232efa908ee89f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833144"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"
 
@@ -37,7 +36,7 @@ ms.locfileid: "52389634"
 > [!CAUTION]
 > В системе с несколькими установленными языками средства построения Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe и связанные файлы) не зависят от этого параметра. Эти средства используют версию для последнего установленного языка. Средства для ранее установленных языков перезаписываются, так как средства сборки Visual C++ не используют модель вспомогательных библиотек DLL.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Установка языковых пакетов](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

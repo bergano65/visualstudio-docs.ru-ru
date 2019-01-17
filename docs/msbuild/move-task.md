@@ -1,8 +1,6 @@
 ---
 title: Задача Move | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aaa9d7113d27acd3d5d30292fba2c6564fe3290
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6e2f66ea8b3a2439e3fa5ce481f0af9ec09c8207
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917518"
 ---
 # <a name="move-task"></a>Move - задача
 Перемещает файлы в новое расположение.  
@@ -31,7 +29,7 @@ ms.locfileid: "39077264"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Move`.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`DestinationFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список файлов, в который будут перемещены исходные файлы. Предполагается, что этот список будет взаимно-однозначно сопоставляться со списком, указанным в параметре `SourceFiles`. Для перемещения первого файла из списка `SourceFiles` используется первый путь из списка `DestinationFiles` и т. д.|  
 |`DestinationFolder`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает каталог, в который вы хотите переместить файлы.|  

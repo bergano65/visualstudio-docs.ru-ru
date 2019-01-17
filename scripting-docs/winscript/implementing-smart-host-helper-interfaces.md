@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909826"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088352"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Реализация вспомогательных интерфейсов промежуточных узлов
 [Интерфейс IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) значительно упрощает задачу по созданию промежуточного узла для активной отладки, так как предоставляет реализации многих необходимых для этого интерфейсов.  
@@ -53,7 +53,7 @@ ms.locfileid: "49909826"
   
      Приведенный ниже код описывает этот процесс, однако в нем нет проверки ошибок или других методик робастного программирования.  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ ms.locfileid: "49909826"
 ## <a name="implementing-iactivescriptsitedebug"></a>Реализация IActiveScriptSiteDebug  
  Чтобы реализовать [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), получите вспомогательный объект, соответствующий заданному сайту, а затем начальное смещение документа для заданного контекста источника, как показано ниже:  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  После этого используйте вспомогательный объект, чтобы создать контекст документа для заданного смещения символов:  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   
@@ -105,5 +105,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 -   Укажите путь в файловой системе для этого документа. Некоторые пользовательские интерфейсы отладки используют это, чтобы разрешить пользователям вносить и сохранять изменения в документе. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) вызывается, чтобы уведомить узел после сохранения документа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обзор отладки активных скриптов](../winscript/active-script-debugging-overview.md)

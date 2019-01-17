@@ -2,19 +2,18 @@
 title: Создание закодированного теста пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878238"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса
 

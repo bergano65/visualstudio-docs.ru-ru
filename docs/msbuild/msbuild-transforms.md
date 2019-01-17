@@ -1,8 +1,6 @@
 ---
 title: Преобразования MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942883"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 Преобразование — это однозначное преобразование одного списка элементов в другой. Помимо возможности преобразования списков элементов в проекте, преобразование позволяет целевому объекту определить прямое сопоставление входных и выходных данных. Этот раздел описывает преобразования и то, как [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует их для более эффективной сборки проектов.  
@@ -66,7 +64,7 @@ ms.locfileid: "39151204"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  Следующий пример показывает файл проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], использующий преобразования. В этом примере предполагается, что в каталоге *c:\sub0\sub1\sub2\sub3* есть только один *XSD-файл*, а рабочим каталогом является *c:\sub0*.  
   
 ### <a name="code"></a>Код  

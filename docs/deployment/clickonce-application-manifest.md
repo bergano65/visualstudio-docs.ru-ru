@@ -1,8 +1,6 @@
 ---
 title: Манифест приложения ClickOnce | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929232"
 ---
 # <a name="clickonce-application-manifest"></a>Манифест приложения ClickOnce
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения является XML-файл, описывающий приложение, которое развертывается с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -32,13 +30,13 @@ ms.locfileid: "49872894"
 
 | Элемент | Описание | Атрибуты |
 | - | - | - |
-| [\<сборка > элемент](../deployment/assembly-element-clickonce-application.md) | Обязательно. Это элемент верхнего уровня. | `manifestVersion` |
-| [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md) | Обязательно. Определяет основную сборку из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<сборка > элемент](../deployment/assembly-element-clickonce-application.md) | Обязательный. Это элемент верхнего уровня. | `manifestVersion` |
+| [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md) | Обязательный. Определяет основную сборку из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
 | [\<trustInfo > элемент](../deployment/trustinfo-element-clickonce-application.md) | Определяет требования к безопасности приложения. | Нет |
-| [\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) | Обязательно. Определяет точку входа в код приложения. | `name` |
-| [\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md) | Обязательно. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно. | Нет |
-| [Элемент \<file>](../deployment/file-element-clickonce-application.md) | Необязательный. Идентифицирует каждого файла не являющиеся сборками, который используется приложением. Может включать данные изоляции модели COM, связанные с этим файлом. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md) | Необязательный. Определяет расширение файла, нужно связать с приложением. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) | Обязательный. Определяет точку входа в код приложения. | `name` |
+| [\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md) | Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно. | Нет |
+| [Элемент \<file>](../deployment/file-element-clickonce-application.md) | Необязательный параметр. Идентифицирует каждого файла не являющиеся сборками, который используется приложением. Может включать данные изоляции модели COM, связанные с этим файлом. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md) | Необязательный параметр. Определяет расширение файла, нужно связать с приложением. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>Примечания  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Файл манифеста приложения определяет приложение, развернутое с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Дополнительные сведения о [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] см. в разделе [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md).  
@@ -46,10 +44,10 @@ ms.locfileid: "49872894"
 ## <a name="file-location"></a>Расположение файла  
  Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения относится к отдельной версии развертывания. По этой причине они должны храниться отдельно от манифеста развертывания. Распространенный способ — разместить их в подкаталоге соответствующая версия.  
 
- Манифест приложения всегда должны быть подписаны перед развертыванием. Если вы вручную измените манифест приложения, необходимо использовать *mage.exe* для повторного подписания манифеста приложения, обновить манифест развертывания и затем повторно подписать манифест развертывания. Дополнительные сведения см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Манифест приложения всегда должны быть подписаны перед развертыванием. Если вы вручную измените манифест приложения, необходимо использовать *mage.exe* для повторного подписания манифеста приложения, обновить манифест развертывания и затем повторно подписать манифест развертывания. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
 ## <a name="file-name-syntax"></a>Синтаксис имени файла  
- Имя [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] файла манифеста приложения должно быть полное имя и расширение приложения, как указано в `assemblyIdentity` элемент, с расширением *.manifest*. Например, манифест приложения, который ссылается на *Example.exe* приложение будет использовать следующий синтаксис имени файла.  
+ Имя файла манифеста приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] должно содержать полное имя и расширение приложения, определенные в элементе `assemblyIdentity`, и иметь расширение *MANIFEST*. Например, манифест приложения, который ссылается на *Example.exe* приложение будет использовать следующий синтаксис имени файла.  
 
  `example.exe.manifest`  
 

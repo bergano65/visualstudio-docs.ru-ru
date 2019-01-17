@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadBSTR | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47272cbfc572d85af631edb6d33cf6a0c6f4b20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 52964bd2b8e915d45be46346c18422af18ddd71d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948226"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Считывает `BSTR` значения в наборе свойств.  
@@ -27,7 +25,7 @@ ms.locfileid: "49909072"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT ReadBSTR (   
+HRESULT ReadBSTR (   
    PROPID id,  
    BSTR*  pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadBSTR (
 ## <a name="remarks"></a>Примечания  
  Объект `BSTR` определяется Windows как строку расширенных символов с завершающим нулевым символом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

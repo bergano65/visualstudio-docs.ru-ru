@@ -3,7 +3,6 @@ title: Создание приложения Node.js и React
 description: В этом учебнике вы создадите приложение с помощью инструментов Node.js для Visual Studio.
 ms.custom: mvc
 ms.date: 11/01/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a89a54999e6db5139178b20a0794d4dc594e0e45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874181"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и React в Visual Studio
 
@@ -258,7 +257,7 @@ webpack объединяет файлы JavaScript, чтобы их можно �
     }
     ```
 
-    Код конфигурации webpack предписывает средству Webpack использовать загрузчик TypeScript для транскомпиляции JSX.
+    Код конфигурации webpack предписывает средству webpack использовать загрузчик TypeScript для транскомпиляции JSX.
 
 1. Откройте файл *tsconfig.json* и замените код по умолчанию следующим кодом, который задает параметры компилятора TypeScript:
 

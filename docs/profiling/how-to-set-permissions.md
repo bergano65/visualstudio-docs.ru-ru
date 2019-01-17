@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Установка разрешений | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Установка разрешений | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bfe3773032ff29fce831f675921289ed7a825ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828112"
 ---
-# <a name="how-to-set-permissions"></a>Практическое руководство. Установка разрешений
+# <a name="how-to-set-permissions"></a>Как выполнить Настройка разрешений
 
 В этом разделе описано, как администратор компьютера может предоставить разрешения безопасности, необходимые для профилирования, пользователю или группе без прав администратора на этом компьютере.
 
@@ -84,7 +82,7 @@ ms.locfileid: "49897387"
 2. Измените каталог на:
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. Выполните следующую команду:

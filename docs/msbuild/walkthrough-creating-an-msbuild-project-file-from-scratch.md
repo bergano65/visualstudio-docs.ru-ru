@@ -1,8 +1,6 @@
 ---
-title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2efe3801639fb85e1331fc77cc27cbb42717a12
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828889"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53926113"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.  
@@ -139,10 +137,10 @@ ms.locfileid: "49828889"
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -232,7 +230,7 @@ ms.locfileid: "49828889"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -308,7 +306,7 @@ ms.locfileid: "49828889"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -400,7 +398,7 @@ ms.locfileid: "49828889"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] и записывает сообщение, содержащее имя файла вывода.  
   
 ### <a name="code"></a>Код  
@@ -438,7 +436,7 @@ ms.locfileid: "49828889"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и записывает сообщение, содержащее имя файла вывода.  
   
 ### <a name="code"></a>Код  

@@ -2,7 +2,6 @@
 title: Команда New File
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932120"
 ---
 # <a name="new-file-command"></a>Команда New File
 Создает файл и открывает его. Файл отображается в папке "Прочие файлы".
@@ -34,12 +33,12 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>Аргументы
  `filename`
 
- Необязательный. Имя файла. Если имя не указано, задается имя по умолчанию. Если не указано имя шаблона, создается текстовый файл.
+ Необязательный параметр. Имя файла. Если имя не указано, задается имя по умолчанию. Если не указано имя шаблона, создается текстовый файл.
 
 ## <a name="switches"></a>Переключатели
  /t:`templatename`
 
- Необязательный. Указывает тип создаваемого файла.
+ Необязательный параметр. Указывает тип создаваемого файла.
 
  В синтаксической структуре аргумента /t:`templatename` используются данные из диалогового окна "Создание файла". Введите имя категории, обратную косую черту (`\`) и имя шаблона, а затем заключите всю строку в кавычки.
 
@@ -53,7 +52,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  /e:`editorname`
 
- Необязательный. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
+ Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
 
  В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне "Открыть с помощью", с заключением в кавычки.
 
@@ -70,10 +69,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Окно интерпретации](../../ide/reference/immediate-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

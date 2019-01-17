@@ -1,5 +1,5 @@
 ---
-title: Объектно-реляционного конструктора сообщений
+title: Сообщения реляционного конструктора объектов
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859871"
 ---
 # <a name="or-designer-messages"></a>Сообщения реляционного конструктора объектов
 
@@ -23,13 +22,13 @@ ms.locfileid: "37089058"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
- [Не удалось создать ассоциацию \<имя ассоциации > — то же свойство перечислено дважды](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Не удалось создать ассоциацию \<имя ассоциации> — одно и то же свойство перечислено дважды](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Не удалось создать ассоциацию \<имя ассоциации > — типы свойств не совпадают](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Не удалось создать ассоциацию \<имя ассоциации> — не совпадают типы свойств](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [Операция изменения типа возвращаемого значения метода DataContext не может быть отменена.](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Не удалось получить сведения о схеме для объекта базы данных \<имя объекта >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Не удалось получить схему объекта базы данных \<имя объекта>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Один или несколько объектов базы данных возвратили схему, не совпадающую со схемой целевого класса](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -41,9 +40,9 @@ ms.locfileid: "37089058"
 
  [Подключение к данным, используемое для добавляемого в конструктор объекта, отличается от подключения, используемого конструктором в настоящий момент](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [Свойство \<имя свойства > не может быть удалена](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [Не удается удалить свойство\<<имя свойства>](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [Свойство \<имя свойства > невозможно удалить, так как оно участвует в ассоциации \<имя ассоциации >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Нельзя удалить свойство \<имя свойства>, поскольку оно участвует в ассоциации \<имя ассоциации>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Выбранный класс невозможно удалить, потому что он используется как тип возвращаемого значения одного или нескольких методов DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 

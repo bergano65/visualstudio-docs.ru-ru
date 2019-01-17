@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91c04ad161e17ac2932ca8e75ddadfc1c2879785
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8bfcac20d0facea28734e27cbb60966717cdcdc2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053108"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53869811"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -83,5 +82,5 @@ ms.locfileid: "53053108"
 |[Точка останова](../../ide/reference/toggle-breakpoint-command.md)|Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.|
 |[Команда Watch](../../ide/reference/watch-command.md)|Создает и открывает указанный экземпляр окна **Контрольное значение** .|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Командное окно](../../ide/reference/command-window.md) [поле Найти/Команда](../../ide/find-command-box.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

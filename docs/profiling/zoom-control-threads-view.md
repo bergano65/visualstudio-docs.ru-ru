@@ -1,8 +1,6 @@
 ---
 title: Элемент управления масштабом (представление "Потоки") | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938138"
 ---
 # <a name="zoom-control-threads-view"></a>Элемент управления масштабом (представление "Потоки")
 Элемент управления "Масштаб" — это ползунок, помогающий увеличивать и уменьшать временную шкалу, фокусируясь на интересующих участках. Так как этот элемент управления выполняет масштабирование по центру представления временной шкалы, перед масштабированием следует расположить интересующую область в центре.  

@@ -1,8 +1,6 @@
 ---
 title: Вкладка "Текущий" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964738"
 ---
 # <a name="current-tab"></a>Вкладка "Текущий"
 На вкладке **Текущий** можно просмотреть стек вызова (если он доступен), ближайший к выбранной на данный момент точке на временной шкале, если выбран сегмент потока ЦП.  В данном случае точка выбора обозначена черной стрелкой или "крышкой", расположенной над временной шкалой. При выборе заблокированного сегмента "крышка" не отображается из-за отсутствия выполнения. Однако сегмент по-прежнему выбран и отображается стек вызовов.  

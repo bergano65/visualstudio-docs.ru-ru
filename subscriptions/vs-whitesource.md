@@ -3,18 +3,18 @@ title: Преимущество WhiteSource Bolt | Документация Ма
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения об активации учебной подписки WhiteSource Bolt, входящей в вашу подписку Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935782"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154438"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
@@ -41,20 +41,18 @@ ms.locfileid: "49935782"
    - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Нажмите зеленую кнопку **Установить**, если вы используете Azure DevOps Services, или кнопку **Загрузить** для Team Foundation Server.  В этом примере мы будем использовать Azure DevOps Services.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![Установка расширения для преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- Затем выберите нужную организацию Azure DevOps и нажмите кнопку **Подтвердить**.  (Если вы еще не настроили Azure DevOps Services, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте преимущество Azure DevOps Services.)
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![Учетная запись для подтверждения преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- Вы получите подтверждение о том, что расширение установлено и готово к использованию.  Нажмите кнопку **Начать работу**, чтобы вернуться на страницу WhiteSource Bolt и продолжить работу.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![Установка преимущества WhiteSource завершена](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Откройте панель мониторинга проекта Azure DevOps, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
    > [!div class="mx-imgBorder"]
@@ -79,14 +77,19 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                           |Н/Д         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                           |Н/Д         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              | Н/Д         |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующую категорию: Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
+<sup>1</sup> *Включает следующие категории:  Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
+
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

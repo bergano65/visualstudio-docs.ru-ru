@@ -1,9 +1,9 @@
 ---
 title: Выполните вход в Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840795"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "53159858"
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Почему нужно выполнять вход в Visual Studio?
 
-Выполняя вход, вы можете использовать расширенный спектр возможностей Visual Studio. Например, после входа вы, помимо прочего, можете синхронизировать настройки между устройствами, продлевать срок действия пробной версии и автоматически подключаться к службе Azure.
+Выполняя вход, вы можете использовать расширенный спектр возможностей Visual Studio. Например, после входа вы, помимо прочего, можете [синхронизировать настройки](synchronized-settings-in-visual-studio.md) между устройствами, продлевать срок действия пробной версии и автоматически подключаться к службе Azure.
 
 Ниже приведен полный список возможностей, которые вы получаете после входа:
 
@@ -70,6 +70,6 @@ ms.locfileid: "53159858"
 ## <a name="see-also"></a>См. также
 
 * [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)
+* [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)
 * [Вход в систему (Visual Studio для Mac)](/visualstudio/mac/signing-in)
 * [Активация (Visual Studio для Mac)](/visualstudio/mac/activation)

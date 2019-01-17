@@ -1,8 +1,6 @@
 ---
-title: Интерфейсы (SDK для доступа к интерфейсу отладки) | Документы Microsoft
-ms.custom: ''
+title: Интерфейсы (SDK для доступа к интерфейсу отладки) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,25 +13,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c7337ae50f85f95f063a47787b8a4be37c9fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 102d3456e1daf3c72f5f6c95c629ca2a42e7542f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907713"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Интерфейсы (SDK для доступа к интерфейсу отладки)
-Методы перечислены в алфавитном порядке в списке каждого интерфейса в таблице содержимого и на странице интерфейса в порядке таблицы Vtable.  
+Методы в алфавитном порядке отображаются в категории каждого интерфейса в таблице, содержимого и на странице интерфейс в порядке таблицы Vtable.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
- Предоставляет управление как пакет SDK для рассчитывает виртуального и относительные виртуальные адреса для отладки объектов.  
+ Позволяет контролировать как пакет SDK для доступа к интерфейсу отладки рассчитывает виртуального и относительного виртуального адреса для отладки объектов.  
   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
- Инициирует доступ к источнику из символов отладки.  
+ Инициирует доступ к источнику отладочные символы.  
   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
- Предоставляет доступ для записи в поток данных отладки.  
+ Предоставляет доступ к записям в поток данных отладки.  
   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)  
  Перечисляет различные потоки отладки, содержащихся в источнике данных.  
@@ -42,13 +40,13 @@ ms.locfileid: "31474746"
  Перечисляет различные элементы данных кадров, содержащихся в источнике данных.  
   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
- Перечисление различных источников подставляемого, содержащихся в источнике данных.  
+ Перечисление различных внедренного источников, содержащихся в источнике данных.  
   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
  Перечисляет различные номера строк, содержащихся в источнике данных.  
   
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
- Перечисляет различные раздел материалов, содержащиеся в источнике данных.  
+ Перечисляет различные разделе материалов, содержащихся в источнике данных.  
   
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
  Перечисляет различные сегменты, содержащихся в источнике данных.  
@@ -66,43 +64,43 @@ ms.locfileid: "31474746"
  Перечисляет по адресу различных символов, содержащихся в источнике данных.  
   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
- Перечисление различных таблицах, содержащихся в источнике данных.  
+ Перечисляет различных таблицах, содержащихся в источнике данных.  
   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
  Предоставляет сведения о кадре стека.  
   
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)  
- Предоставляет сведения о базовых расположение и памяти смещения модуля или образа.  
+ Предоставляет сведения о базового смещения расположения и памяти модуля или изображения.  
   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
- Обращается к исходного кода программы хранятся в источнике данных для доступа к интерфейсу отладки.  
+ Обращений к исходного кода программы, которые хранятся в источнике данных для доступа к интерфейсу отладки.  
   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
- Доступ к информации, описание процесса сопоставления из блока байтов текста изображения на номер строки исходного файла.  
+ Доступ к информации, описание процесса сопоставления из блок байтов изображение текста на номер строки исходного файла.  
   
  [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
- Получает обратные вызовы от символа DIA поиск процедур, что позволяет пользовательский интерфейс для отчетов о ходе попытки расположение.  
+ Получает обратные вызовы из символа доступа к интерфейсу отладки, поиск процедуры, что позволяет пользовательский интерфейс для отчета о ходе попытки расположение.  
   
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
- Получает обратные вызовы от символа DIA поиск процедур, что ограничения, налагаемые на процесс поиску.  
+ Получает обратные вызовы из символа доступа к интерфейсу отладки, поиск процедуры, что позволяет ограничения, которые необходимо соблюдать на процесс поиску.  
   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
- Позволяет читать постоянными свойствами DIA набора свойств.  
+ Позволяет считывать свойства постоянный набор свойств для доступа к интерфейсу отладки.  
   
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
- Позволяет клиентскому приложению для предоставления байт исполняемого файла в соответствии с позиции в файле.  
+ Позволяет клиентскому приложению для предоставления байт исполняемого файла, как указано по позиции файла.  
   
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)  
- Позволяет клиентскому приложению для предоставления байт исполняемого файла в соответствии с относительный виртуальный адрес.  
+ Позволяет клиентскому приложению для предоставления байт исполняемого файла, как указано по относительному виртуальному адресу.  
   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
- Извлекает данные, описывающие вклад раздела, то есть непрерывный блок памяти, представленные в образе компилируемого объекта.  
+ Извлекает данные, описывающие вклад раздела, то есть непрерывный блок памяти порожденного к образу единице компиляции.  
   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
  Сопоставляет данные из номер раздела в сегменты адресного пространства.  
   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
- Предоставляет контекст запроса для отладочных символов.  
+ Предоставляет контекст запроса для символов отладки.  
   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
  Представляет исходный файл.  
@@ -114,10 +112,10 @@ ms.locfileid: "31474746"
  Предоставляет методы, чтобы сделать стек стека с помощью PDB-файл.  
   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)  
- Поддерживает стек контекста между вызовами [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md) метод.  
+ Поддерживает контекст стека между вызовами [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md) метод.  
   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)  
- Облегчает прохода по стеку, с помощью файла базы данных (PDB) для отладки программы.  
+ Упрощает анализ стека с помощью файла базы данных (PDB) программы отладки.  
   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
  Описывает свойства экземпляра символа.  
@@ -127,10 +125,10 @@ ms.locfileid: "31474746"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
- Описывает, перечисления и структуры, используемые в различных интерфейсов DIA SDK.  
+ Описывает перечисления и структуры, используемые различными интерфейсами пакета SDK для доступа к интерфейсу отладки.  
   
  [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  Описывает константы, доступные в пакете SDK для доступа к интерфейсу отладки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

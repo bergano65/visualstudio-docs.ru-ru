@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Настройка целевых объектов и задач | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка целевых объектов и задач | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a5df9d2961a802718b3f46315d9c479217d9a41b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854559"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Практическое руководство. Настройка целевых объектов и задач
+# <a name="how-to-configure-targets-and-tasks"></a>Как выполнить Настройка целевых платформ и задач
 Некоторые задачи MSBuild можно настроить так, чтобы они выполнялись в целевой среде, независимо от среды на компьютере разработчика. Например, если вы выполняете на 64-разрядном компьютере сборку приложения, предназначенного для 32-разрядной архитектуры, такие задачи можно выполнять в 32-разрядном процессе.  
   
 > [!NOTE]

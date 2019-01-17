@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962640"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Анализ результатов и ошибок нагрузочного теста в представлении таблиц анализатора тестовой нагрузки
 
@@ -74,7 +73,7 @@ ms.locfileid: "53068569"
 
  В следующей таблице представлены столбцы из таблицы **Запросы**:
 
-|Столбец|Описание:|Отображается по умолчанию|
+|Столбец|Описание|Отображается по умолчанию|
 |-|-|-|
 |**Запрос**|URL-адрес запроса. Например, *home.html* или *orange-arrow.gif*.|Да|
 |**Сценарий**|Имя сценария.|Да|
@@ -96,7 +95,7 @@ ms.locfileid: "53068569"
 
  В следующей таблице представлены столбцы таблицы **Тесты**.
 
-|Столбец|Описание:|Отображается по умолчанию|
+|Столбец|Описание|Отображается по умолчанию|
 |-|-|-|
 |**Тест**|Имя теста.|Да|
 |**Сценарий**|Имя сценария.|Да|
@@ -120,7 +119,7 @@ ms.locfileid: "53068569"
 > [!NOTE]
 > Чтобы увидеть все столбцы, необходимо включить свойство "Хранилище сведений о времени", связанное с параметрами активного запуска. Дополнительные сведения см. в разделе [Как указать свойство хранилища сведений о синхронизации](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Столбец|Описание:|Отображается без сведений о синхронизации|
+|Столбец|Описание|Отображается без сведений о синхронизации|
 |-|-|-|
 |**Транзакция**|Имя транзакции.|Да|
 |**Сценарий**|Имя сценария.|Да|
@@ -244,7 +243,7 @@ ms.locfileid: "53068569"
 ## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство: обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)
+- [Практическое руководство. обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Анализ нарушений правил порогов](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)

@@ -4,7 +4,6 @@ description: В этом кратком руководстве вы создад
 ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -15,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853896"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -41,7 +40,7 @@ ms.locfileid: "53058955"
 
 1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
-1. В диалоговом окне **Создать проект** в разделе **JavaScript** > **Node.js** или **TypeScript** > **Node.js** выберите **Простое веб-приложение Vue.js**, введите имя проекта и нажмите **OK**.
+1. В диалоговом окне **Создать проект** в разделе **JavaScript** > **Node.js** или **TypeScript** > **Node.js** выберите **Простое веб-приложение Vue.js**. Введите имя проекта и нажмите кнопку **ОК**.
 
      ![Шаблон Vue.js](../javascript/media/vuejs-template.png)
 
@@ -75,7 +74,7 @@ ms.locfileid: "53058955"
 
 ## <a name="add-a-vue-file-to-the-project"></a>Добавление VUE-файла в проект
 
-1. В обозревателе решений щелкните правой кнопкой мыши любую папку, например папку *src*, а затем выберите **Добавить** > **Новый элемент**.
+1. В обозревателе решений щелкните правой кнопкой мыши любую папку, например *src/components*, а затем выберите **Добавить** > **Новый элемент**.
 
 1. Выберите **Отдельный VUE-файл JavaScript** или **Отдельный VUE-файл TypeScript** и нажмите кнопку **Добавить**.
 
@@ -85,7 +84,7 @@ ms.locfileid: "53058955"
 
 1. В Visual Studio выберите **Сборка** > **Очистить решение** (только для проектов TypeScript).
 
-1. Затем выберите **Сборка** > **Собрать решение** для сборки проекта. Проверьте результаты сборки в окне **вывода**.
+1. Затем выберите **Сборка** > **Собрать решение** для сборки проекта. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
 
     Шаблон проекта Vue.js использует скрипт npm `build` с помощью настройки события после сборки. Если вы хотите изменить этот параметр, откройте файл проекта (*\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
 
@@ -110,5 +109,5 @@ ms.locfileid: "53058955"
 ## <a name="next-steps"></a>Следующие шаги
 
 - Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
-- Пройдите [учебник по Node.js и React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- Пройдите [учебник по Node.js и React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
 - [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)

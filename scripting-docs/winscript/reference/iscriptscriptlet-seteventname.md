@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Документы Microsoft
+title: IScriptScriptlet::SetEventName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244888d49e1e9a84b8865e9c86a845617af6a5d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10accabb3ca4e070173530cba3c60da9d7e5bb04
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733734"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092057"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-Задает имя события, который связан с сценариев.  
+Задает имя события, связанные со скриптлетом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetEventName(  
    LPCOLESTR          psz  
 );  
@@ -43,7 +43,7 @@ HRESULT SetEventName(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

@@ -1,8 +1,6 @@
 ---
 title: Проверка кадров графики | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891778"
 ---
 # <a name="graphics-frame-validation"></a>Проверка кадра графики
 <!-- VERSIONLESS --> Visual Studio 2017 и расширенную поддержку **проверка кадра** средство.  Проверка кадра окна отображаются ошибки и предупреждения, связанные со списком событий.  Чтобы открыть это окно, выберите **Вид > Проверка кадра** меню.
@@ -35,6 +33,6 @@ ms.locfileid: "49850884"
 | Сообщение | Сообщение, связанное с событием. |
 | событие | Событие, связанное с ошибкой или предупреждением. |
 
-## <a name="see-also"></a>См. также  
-[Диагностика графики (Отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>См. также раздел  
+[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

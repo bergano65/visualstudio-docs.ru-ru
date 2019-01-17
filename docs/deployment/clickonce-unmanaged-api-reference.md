@@ -1,6 +1,5 @@
 ---
 title: ClickOnce Справочник по неуправляемым API | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968145"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>ClickOnce Справочник по неуправляемым API
+# <a name="clickonce-unmanaged-api-reference"></a>Справочник по неуправляемым интерфейсам API ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] неуправляемые открытый API из библиотеки dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -54,10 +52,10 @@ ms.locfileid: "39082150"
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|Тип|  
+|Параметр|Описание|Тип|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|Указатель на `ActivationURL`.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|Указатель на `PathToDeploymentManifest`.|LPCWSTR|  
+|`pcwzActivationUrl`|Указатель на объект `ActivationURL`.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|Указатель на объект `PathToDeploymentManifest`.|LPCWSTR|  
 |`pwzApplicationIdentity`|Указатель на буфер для получения нулем строка, указывающая, возвращаются полную идентификацию приложения.|LPWSTR|  
 |`pdwIdentityBufferLength`|Указатель на значение типа DWORD, который представляет собой длину `pwzApplicationIdentity` буфера в WCHARs. Сюда входит пространство для завершающего нуля.|LPDWORD|  
 |`pwzProcessorArchitecture`|Указатель на буфер для получения ЗАКАНЧИВАЮЩУЮСЯ нулем строку, которая задает архитектуру процессора для развертывания приложения из манифеста.|LPWSTR|  
@@ -82,11 +80,11 @@ ms.locfileid: "39082150"
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|Тип|  
+|Параметр|Описание|Тип|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Указатель на ЗАКАНЧИВАЮЩУЮСЯ нулем строку, которая содержит URL-адрес манифеста развертывания.|LPCWSTR|  
 |`data`|Зарезервировано для будущего использования. Должен иметь значение NULL.|LPVOID|  
-|`flags`|Зарезервировано для будущего использования. Должно быть 0.|DWORD|  
+|`flags`|Зарезервировано для будущего использования. Должен быть равен 0.|DWORD|  
   
 ### <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение HRESULT, представляющее тип сбоя. При возникновении управляемого исключения возвращается значение 0x80020009 (DISP_E_EXCEPTION).  

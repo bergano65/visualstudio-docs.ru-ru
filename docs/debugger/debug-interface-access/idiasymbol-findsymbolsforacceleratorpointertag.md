@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Документы Microsoft
-ms.custom: ''
+title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b96de709ae3ff8e4f8e37e882ca634fb158518a5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2eacbb7f06aa607af0842056870b1bd34b3d66af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912916"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Возвращает число тегов указатель сочетаний клавиш в функции C++ AMP заглушки.  
+Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,8 +36,8 @@ HRESULT findSymbolsForAccleratorPointerTag (
  [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

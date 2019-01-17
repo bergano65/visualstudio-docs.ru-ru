@@ -1,8 +1,6 @@
 ---
 title: Задача Csc | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd360a34c70d3208211b861dae064bd4c5a01595
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838337"
 ---
 # <a name="csc-task"></a>Csc - задача
 Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -34,7 +32,7 @@ ms.locfileid: "49832371"
  В следующей таблице приводятся параметры задачи `Csc` .  
 
 
-| Параметр | Описание: |
+| Параметр | Описание |
 |------------------------------| - |
 | `AdditionalLibPaths` | Необязательный параметр `String[]` .<br /><br /> Задает дополнительные каталоги для поиска ссылок. Дополнительные сведения см. в разделе [-lib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Необязательный параметр `String` .<br /><br /> Задает один или несколько модулей, которые должны быть частью сборки. Дополнительные сведения см. в разделе [-addmodule (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |

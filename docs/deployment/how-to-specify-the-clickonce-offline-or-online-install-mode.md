@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: укажите ClickOnce в автономный режим или режим Интернет-установки | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Укажите ClickOnce в автономный режим или режим Интернет-установки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,25 +18,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1515d9b9b12d92f7189c1dda59659d6ea1c03d5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: bd0b985d7629ec282de4946ab89fef06e97c5921
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889018"
 ---
-# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Практическое: укажите ClickOnce в автономный режим или режим Интернет-установки
+# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Как выполнить задание режима установки ClickOnce: автономного или через Интернет
 `Install Mode` Для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения определяет, будут ли приложения доступны в автономном или интерактивном режиме. При выборе **приложение доступно только из сети**, пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расположение публикации (веб-страницы или общей папки) для запуска приложения. При выборе **приложение будет доступно в автономном режиме**, оно добавляет элементы к **запустить** меню и **Установка и удаление программ** диалоговое окно; пользователь — может запустить приложение, когда они не подключены.  
   
  `Install Mode` Может устанавливаться на **публикации** странице **конструктор проектов**.  
   
- **Примечание** `Install Mode` также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ **Примечание** `Install Mode` также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Чтобы сделать приложение ClickOnce доступным через Интернет только  
   
 1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2.  Перейдите на вкладку **Публикация**.  
   
 3.  В **режим установки и параметры** область, нажмите кнопку **приложение доступно только из сети** переключатель.  
   
@@ -46,7 +44,7 @@ ms.locfileid: "39080177"
   
 1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2.  Перейдите на вкладку **Публикация**.  
   
 3.  В **режим установки и параметры** область, нажмите кнопку **приложение будет доступно в автономном режиме** переключатель.  
   
@@ -54,5 +52,5 @@ ms.locfileid: "39080177"
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Практическое: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

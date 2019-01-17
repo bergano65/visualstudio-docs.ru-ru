@@ -1,8 +1,6 @@
 ---
-title: IDiaInjectedSource | Документы Microsoft
-ms.custom: ''
+title: IDiaInjectedSource | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c0d10820504ab3f3f93f29c0a579a5a26b82c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 31a29c4b3dbf4541f11770c4bc32eb922f120325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990260"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
-Обращается к введенного исходного кода, хранящийся в источнике данных для доступа к интерфейсу отладки.  
+Обращений к вставлен исходного кода, хранящиеся в источнике данных для доступа к интерфейсу отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaInjectedSource : IUnknown  
+IDiaInjectedSource : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
@@ -35,22 +33,22 @@ IDiaInjectedSource : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Извлекает циклическую проверку избыточности (CRC), вычисленный на основе байтов исходного кода.|  
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Извлекает циклическую проверку избыточности (CRC) вычисляется на основе байты исходного кода.|  
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Возвращает число байтов кода.|  
 |[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Получает имя файла для источника.|  
 |[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Извлекает имя объектного файла, к которому был скомпилирован источника.|  
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, подставленный.|  
-|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Возвращает признак источник сжатия, используемый.|  
-|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Извлекает байт исходного кода.|  
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.|  
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Получает индикатор того, источник сжатия, используемый.|  
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Извлекает байты исходного кода.|  
   
 ## <a name="remarks"></a>Примечания  
- Введенный источник — это текст, введенный во время компиляции. Это не означает препроцессор `#include` используется в C++.  
+ Введенный код — текст, вставляемый во время компиляции. Это не значит, препроцессор `#include` используется в C++.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Получить этот интерфейс, вызвав [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) или [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) методы. В разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс пример получения `IDiaInjectedSource` интерфейса.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) или [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) методы. См. в разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс пример получения `IDiaInjectedSource` интерфейс.  
   
 ## <a name="example"></a>Пример  
- Этот пример выводит данные, доступные из `IDiaInjectedSource` интерфейса. Альтернативный подход с помощью [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) интерфейсом, см. пример в [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейса.  
+ В этом примере отображаются данные, доступные из `IDiaInjectedSource` интерфейс. В качестве альтернативы использования [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) интерфейсом, см. пример в [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс.  
   
 ```C++  
 void PrintInjectedSource(IDiaInjectedSource* pSource)  
@@ -115,14 +113,14 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
  [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

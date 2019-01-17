@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Указание событий сборки (Visual Basic)
+title: Как выполнить Указание событий сборки (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828869"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Как выполнить Указание событий сборки (Visual Basic)
 
 События сборки в Visual Basic можно использовать для выполнения скриптов, макросов или других действий в составе процесса компиляции. События перед сборкой происходят до компиляции; события после сборки происходят после компиляции.
 
@@ -50,7 +49,7 @@ ms.locfileid: "49831741"
     > [!NOTE]
     > Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Пример: как изменить данные манифеста с помощью события после сборки
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Пример как изменить данные манифеста с помощью события после сборки
 
 В следующей процедуре демонстрируется, как задать минимальную версию операционной системы в манифесте приложения с помощью команды *EXE*, вызываемой из события после сборки (файл *exe.manifest* в каталоге проекта). Минимальная версия операционной системы — число из четырех частей, например 4.10.0.0. Чтобы это сделать, команда изменит раздел `<dependentOS>` манифеста:
 
@@ -169,4 +168,4 @@ ms.locfileid: "49831741"
 - [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - Сведения о [странице публикации в конструкторе проектов](../ide/reference/publish-page-project-designer.md)
 - Сведения о [диалоговых окнах "Командная строка события перед сборкой" и "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Практическое руководство. Назначение событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md)

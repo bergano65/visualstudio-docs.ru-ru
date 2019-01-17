@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - shapes [Office development in Visual Studio], copying and pasting Visio shapes
 - Visio [Office development in Visual Studio], copying and pasting Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9b4f756c1b553f41f79dbbaaaf8a4c27bdfbc64
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856492"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093955"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Как выполнить Программное копирование и вставка фигур в документ Visio
   Вы можете программными средствами копировать фигуры на одной странице документа и вставлять их в новую страницу того же документа. Можно вставлять их в расположение по умолчанию (центр активного окна) или в то же расположение, в котором они находились на исходной странице.  

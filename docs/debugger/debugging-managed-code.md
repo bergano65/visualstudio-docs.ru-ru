@@ -1,8 +1,6 @@
 ---
 title: Отладка управляемого кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561896"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270210"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 
@@ -77,7 +75,7 @@ ms.locfileid: "53561896"
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)  
 Описание отладки приложений .NET Framework и требований к конфигурации.
 
-[Отладка приложений скриптов и веб-приложений](../debugger/debugging-web-applications-and-script.md)  
+[Отладка приложений скриптов и веб-приложений](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 Описание общих задач и методов отладки скриптов и веб-приложений.
 
 [Новые возможности отладчика в Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
@@ -88,7 +86,7 @@ ms.locfileid: "53561896"
 
 ## <a name="see-also"></a>См. также
 
-[Пошаговое руководство: Отладка пользовательских Windows Forms элементы управления во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[безопасность отладчика](../debugger/debugger-security.md)
-[отладки в Visual Studio](../debugger/index.md) 
- [ Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+[Пошаговое руководство: Отладка пользовательских элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Безопасность отладчика](../debugger/debugger-security.md)  
+[Отладка в Visual Studio](../debugger/index.md)  
+[Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

@@ -2,7 +2,6 @@
 title: Working with elements in XAML Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926947"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53922603"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 Вы можете добавлять элементы (элементы управления, макеты и фигуры) в приложение на языке XAML в коде или с помощью конструктора XAML. В этом разделе описывается работа с элементами в конструкторе XAML в Visual Studio или Blend для Visual Studio.

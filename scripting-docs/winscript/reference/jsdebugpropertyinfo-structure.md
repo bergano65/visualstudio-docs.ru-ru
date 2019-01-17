@@ -1,5 +1,5 @@
 ---
-title: Структура JsDebugPropertyInfo | Документы Microsoft
+title: Структура JsDebugPropertyInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e9d2ae0d93729d4c333509e0178f4c4829ebf13
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 317cf5adc459c1491d037678616c17de2a619d96
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733824"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095476"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>Структура JsDebugPropertyInfo
 Задает сведения о свойстве.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;   BSTR fullName;   JS_PROPERTY_ATTRIBUTES attr;} JsDebugPropertyInfo;  
 ```  
   

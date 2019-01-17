@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumFrameData::frameByRVA | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6806532c6d70048c621e8c079ea4ead317eb0707
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fba9982d26ebde88716e345cd449c488dc2bf8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898690"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Возвращает кадр, относительный виртуальный адрес (RVA).  
@@ -27,7 +25,7 @@ ms.locfileid: "49835895"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT frameByRVA(   
+HRESULT frameByRVA(   
    DWORD           relativeVirtualAddress,  
    IDiaFrameData** frame  
 );  
@@ -41,8 +39,8 @@ HRESULT frameByRVA(
  [out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объект, представляющий рамку, содержащую указанный адрес.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

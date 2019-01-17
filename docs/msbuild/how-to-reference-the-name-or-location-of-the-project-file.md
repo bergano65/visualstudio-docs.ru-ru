@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Использование ссылки на имя или расположение файла проекта | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Использование ссылки на имя или расположение файла проекта | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906037"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Практическое руководство. Использование ссылки на имя или расположение файла проекта
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Как выполнить Использование ссылки на имя или расположение файла проекта
 Имя или расположение проекта в файле проекта можно использовать без создания отдельного свойства. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет зарезервированные свойства, ссылающиеся на имя файла проекта, и другие свойства, связанные с проектом. Дополнительные сведения о зарезервированных свойствах см. в статье [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="use-the-project-properties"></a>Использование свойств проекта
@@ -33,7 +31,7 @@ ms.locfileid: "49911529"
   
 #### <a name="to-use-the-project-properties"></a>Использование свойств проекта
   
-- Укажите ссылка на свойство в файле проекта с помощью нотации $() так же, как и для любого свойства. Пример:  
+- Укажите ссылка на свойство в файле проекта с помощью нотации $() так же, как и для любого свойства. Например:  
   
   ```xml  
   <CSC Sources = "@(CSFile)"   

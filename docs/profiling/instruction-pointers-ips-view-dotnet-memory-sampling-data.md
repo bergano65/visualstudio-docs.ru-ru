@@ -1,8 +1,6 @@
 ---
 title: Представление указателей инструкций — данные выборки памяти .NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 9d3ad0bc9239c0cee9bdb425f2a475391654125a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964167"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Представление указателей инструкций — данные выборки памяти .NET
 В представлении указателей инструкций данных профилирования выделения памяти .NET, собранных методом выборки, перечислены инструкции сборки, которые выделяли память в сеансе профилирования. Столбцы представления также показывают размер и число выделений.  
   
  Перечисляются только эксклюзивные значения.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  

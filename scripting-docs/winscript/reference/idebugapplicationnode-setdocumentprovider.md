@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::SetDocumentProvider | Документы Microsoft
+title: IDebugApplicationNode::SetDocumentProvider | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c80bf04c129b2410b97b2e01861a1007457239
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 135f5603513905fdc00aa7d720b9d8cc6703cb0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725474"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096165"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
 Задает поставщик документа для данного узла приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetDocumentProvider(  
    IDebugDocumentProvider*  pddp  
 );  
@@ -43,7 +43,7 @@ HRESULT SetDocumentProvider(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

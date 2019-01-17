@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Reset | Документы Microsoft
+title: IEnumDebugPropertyInfo::Reset | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,26 +18,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 075e28f8e9293412492a83c6b04ca4473925e8c1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1335fd0fa71e7263dd0b762d13acbc33ce505eda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727154"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090809"
 ---
 # <a name="ienumdebugpropertyinforeset"></a>IEnumDebugPropertyInfo::Reset
-Сбрасывает последовательность перечисления в начало.  
+Сбрасывает последовательность перечислений в начало.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT Reset (  
 void  
 );  
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимую `HRESULT`, обычно `S_OK`.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

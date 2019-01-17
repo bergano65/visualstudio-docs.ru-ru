@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SetName | Документы Microsoft
+title: IDebugApplication::SetName | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad54c1c9ba950c7f1b98d393bec2bf65c385ec60
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 35f2014b25f752145766aaeb166b2ba1a766ca44
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725704"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094410"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Задает имя приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR  pstrName  
 );  
@@ -43,14 +43,14 @@ HRESULT SetName(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
  Имя, указанное для этого метода возвращается в последующих вызовах `IRemoteDebugApplication::GetName` метод.  
   
- Этот метод следует вызывать до вызова метода `IProcessDebugManager::AddApplication` метод.  
+ Этот метод должен вызываться перед вызовом `IProcessDebugManager::AddApplication` метод.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

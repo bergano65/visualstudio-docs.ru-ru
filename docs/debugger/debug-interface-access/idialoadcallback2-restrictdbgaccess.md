@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictDBGAccess | Документы Microsoft
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictDBGAccess | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75db393822dc6c5d65bbbab4c9ccc64eed9f630
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8238469232656d4fa32b71fbfb7704afd6870b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843860"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Определяет, разрешено при поиске отладочной информации из DBG-файлы.  
+Определяет, если может найти отладочную информацию из DBG-файлы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +29,10 @@ HRESULT RestrictDBGAccess();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Любое возвращаемое значение, отличное от `S_OK` для предотвращения отладки сведения из DBG-файлы.  
+ Любое возвращаемое значение, отличное от `S_OK` во избежание найти отладочную информацию из DBG-файлы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

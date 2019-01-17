@@ -2,7 +2,6 @@
 title: Удаленная отладка ASP.NET Core в IIS и Azure | Документация Майкрософт
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101112"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53839100"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core в службах IIS на Azure в Visual Studio 2017
 
@@ -50,7 +49,7 @@ ms.locfileid: "49101112"
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 
 
-1. Создайте новое приложение ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > веб > веб-приложение ASP.NET Core**).
+1. Создайте новое приложение ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET Core**).
 
     В **ASP.NET Core** выберите шаблоны **веб-приложение**.
 
@@ -68,11 +67,11 @@ ms.locfileid: "49101112"
 
 1. В Visual Studio, щелкните правой кнопкой мыши узел проекта и выберите **публикации**.
 
-    Если ранее вы настроили все профили публикации **публикации** откроется панель. Нажмите кнопку **новый профиль**.
+    Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. Нажмите кнопку **новый профиль**.
 
 1. Выберите **службе приложений Azure** из **публикации** выберите **Create New**и следуйте инструкциям на экране для публикации.
 
-    Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Подробные инструкции см. в разделе [Развертывание веб-приложения ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
     ![Публикация в службу приложений Azure](../debugger/media/remotedbg_azure_app_service_profile.png)
 
@@ -104,21 +103,21 @@ ms.locfileid: "49101112"
 
 Если конфигурация усиленной безопасности включен в Internet Explorer (он включен по умолчанию), может потребоваться добавить некоторые домены в список надежных сайтов, чтобы можно было загрузить некоторые компоненты веб-сервера. Добавить надежных сайтов, выбрав **свойства обозревателя > Безопасность > надежных сайтов > сайты**. Добавьте следующие домены.
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 При загрузке программного обеспечения, можно получить запросы, чтобы предоставить разрешение для загрузки различные сценарии веб-сайт и ресурсы. Некоторые из этих ресурсов не являются обязательными, но чтобы упростить процесс, нажмите кнопку **добавить** при появлении запроса.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Установка ASP.NET Core в Windows Server
 
-1. Установка [размещения .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) пакета в размещающей системе. В составе пакета устанавливаются среда выполнения .NET Core, библиотека .NET Core и модуль ASP.NET Core. Более подробные инструкции см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Установите [пакет размещения .NET Core для Windows Server](https://aka.ms/dotnetcore-2-windowshosting) в размещающей системе. В составе пакета устанавливаются среда выполнения .NET Core, библиотека .NET Core и модуль ASP.NET Core. Более подробные инструкции см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Если система не подключена к Интернету, получите и установите *[Visual C++ 2015 распространяемый компонент Microsoft](https://www.microsoft.com/download/details.aspx?id=53840)* перед установкой пакета размещения .NET Core Windows Server.
+    > Если система не подключена к Интернету, перед установкой пакета размещения .NET Core для Windows Server получите и установите *[Распространяемый компонент Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)*.
 
-3. Перезагрузите систему (или выполните **net stop was /y** следуют **net start w3svc** из командной строки, чтобы получить изменения в системную переменную PATH).
+3. Перезапустите систему (или выполните в командной строке команду **net stop was /y**, а затем команду **net start w3svc**, чтобы изменение системной переменной PATH вступило в силу).
 
 ## <a name="choose-a-deployment-option"></a>Выберите вариант развертывания
 
@@ -139,7 +138,7 @@ ms.locfileid: "49101112"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Создайте файл параметров публикации в службах IIS на Windows Server
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Создание файла параметров публикации в IIS в Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
@@ -147,7 +146,7 @@ ms.locfileid: "49101112"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-После успешного развертывания приложения должен запускаться автоматически. Если приложение не запускается из Visual Studio, запустите приложение в IIS. Для ASP.NET Core, необходимо убедиться, что пул приложений поле для **DefaultAppPool** присваивается **без управляемого кода**.
+После успешного развертывания приложение должно запускаться автоматически. Если приложение не запускается из Visual Studio, запустите приложение в IIS. Для ASP.NET Core необходимо убедиться, что в поле "Пул приложений" для **DefaultAppPool** задано значение **Без управляемого кода**.
 
 1. В **параметры** диалоговое окно, включите отладку, последовательно щелкнув **Далее**, выберите **Отладка** конфигурации, а затем выберите **удалять дополнительные файлы в Назначение** под **публикации файлов** параметры.
 
@@ -199,9 +198,9 @@ ms.locfileid: "49101112"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, вы можете снова подключиться с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P). 
+    > В Visual Studio 2017, вы можете снова подключиться с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P 
 
-3. Установите в поле квалификатор  **\<имя удаленного компьютера >: 4022**.
+3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.
     В окне **Доступные процессы** должен появиться ряд процессов.
 
@@ -219,14 +218,14 @@ ms.locfileid: "49101112"
 
 7. Нажмите кнопку **Присоединить**.
 
-8. Откройте веб-сайт удаленного компьютера. В браузере, перейдите к **http://\<имя удаленного компьютера >**.
+8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
     
     Должна открыться веб-страница ASP.NET.
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
     В Visual Studio должна быть достигнута точка останова.
 
-### <a name="bkmk_openports"></a> Устранение неполадок: Откройте необходимые порты на Windows Server
+### <a name="bkmk_openports">Устранение неполадок</a> Откройте необходимые порты на Windows Server
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее при устранении неполадок в развертывании, а приложение размещается за брандмауэром, может потребоваться проверить, что необходимые порты открыты.
 
@@ -240,4 +239,3 @@ ms.locfileid: "49101112"
 
 Кроме того эти порты уже должен быть открыт путем установки ASP.NET:
 - 8172 — (необязательно.) требуется для веб-развертывания для развертывания приложения из Visual Studio
-

@@ -1,8 +1,6 @@
 ---
 title: Представление "Функции" — данные выборки памяти .NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a4380d3367177bec4036aecd819ed6513c0efd6
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: c4c689a39a606c57b6e534390ce98fd92b2e572d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920041"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных с помощью методов выборки, представлены функции, выделявшие память в процессе профилирования, а также указан размер и количество выделенных блоков.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  
@@ -42,6 +40,6 @@ ms.locfileid: "35238151"
 |**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются эксклюзивными байтами для данной функции.|  
   
 ## <a name="see-also"></a>См. также  
- [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)

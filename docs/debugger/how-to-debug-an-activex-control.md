@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: Debug an ActiveX Control | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отладка элемента ActiveX | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389297"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269687"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Практическое руководство. Отладка элемента управления ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Как выполнить отладку элемента управления ActiveX
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
@@ -58,10 +56,10 @@ ms.locfileid: "52389297"
 
      Если не задавать контейнер в диалоговом окне **Страницы свойств проекта**, его можно будет задать при запуске отладки. При выборе команды запуска отладки появится диалоговое окно [Исполняемый файл для сеанса отладки](../debugger/executable-for-debugging-session-dialog-box.md). Задайте в диалоговом окне путь к контейнеру.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Элементы управления ActiveX](/cpp/mfc/activex-controls)
 - [Тестирование свойств и событий с использованием тестового контейнера](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)
 - [Отладка в Visual Studio](../debugger/index.md)
-- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

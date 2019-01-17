@@ -3,7 +3,6 @@ title: Специальные возможности Visual Studio
 description: Дополнительные сведения о специальных возможностях и служебных программ, которые упрощают работу с операционной системой Windows и пакетом разработчика Visual Studio для всех пользователей, включая людей с ограниченными возможностями.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866482"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
 
@@ -46,9 +45,9 @@ ms.locfileid: "51348725"
 
 Дополнительные сведения см. в следующих разделах:
 
--   [Практическое руководство. Настройка параметров специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Практическое руководство. Использование только клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Практическое руководство. Работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 

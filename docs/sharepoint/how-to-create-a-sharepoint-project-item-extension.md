@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: создание расширения элемента проекта SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание расширения элемента проекта SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956196"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Практическое: создание расширения элемента проекта SharePoint
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Как выполнить Создание расширения элемента проекта SharePoint
   Создание расширения элемента проекта, если вы хотите добавить функциональные возможности для элемента проекта SharePoint, который уже установлен в Visual Studio. Дополнительные сведения см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).  
   
 ### <a name="to-create-a-project-item-extension"></a>Создание расширения элемента проекта  
@@ -45,7 +42,7 @@ ms.locfileid: "37119874"
   
     -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. В расширение элемента проекта этот атрибут определяет элемент проекта, который требуется расширить. Идентификатор элемента проекта, передайте конструктору атрибута. Список идентификаторов элементов проекта, которые входят в состав Visual Studio, см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).  
   
-5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метода, используйте членами *параметра* для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> интерфейсов. Для доступа к определенного экземпляра типа элемента проекта, вы расширяете, обработку <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события, такие как <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
+5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метода, используйте членами *projectItemType* параметра для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> интерфейсов. Для доступа к определенного экземпляра типа элемента проекта, вы расширяете, обработку <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события, такие как <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано, как создать простое расширение для элемента проекта приемника событий. Каждый раз пользователь добавляет элемент проекта приемника событий в проект SharePoint, это расширение записывает сообщение **вывода** окна и **список ошибок** окна.  
@@ -68,5 +65,3 @@ ms.locfileid: "37119874"
 ## <a name="see-also"></a>См. также
  [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

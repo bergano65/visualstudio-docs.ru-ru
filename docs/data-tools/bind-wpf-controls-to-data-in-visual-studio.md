@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305342"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154399"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 
@@ -100,7 +99,7 @@ Visual Studio создает язык XAML, который выполняет с
 При перетаскивании объекта или свойства из **источников данных** окно в конструкторе Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , создает элемент управления с привязкой к данным (либо создает привязку существующего элемента управления к объекту или свойству). Тем не менее Visual Studio не создает код для наполнения объекта данными. Этот код придется написать самостоятельно.
 
 > [!NOTE]
-> Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они can'tbe вложенные классы, которые имеют «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они не могут быть вложенные классы, содержащие «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , делает следующее:
 

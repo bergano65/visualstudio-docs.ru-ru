@@ -1,8 +1,6 @@
 ---
-title: Сообщения команды меню | Документы Microsoft
-ms.custom: ''
+title: Сообщения команды меню | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861946"
 ---
 # <a name="messages-menu-commands"></a>Команды меню "Сообщения"
-**Сообщений** меню имеются команды для управления представлениями сообщений.  
+**Сообщений** меню доступны команды для управления представлениями сообщений.  
   
  **Запуск и остановка ведения журнала**  
- Запускает или останавливает представления сообщений.  
+ Запускает или останавливает представлении сообщения.  
   
  **Параметры ведения журнала**  
- Открывает **параметры сообщения** диалоговое окно «», где можно указать условия поиска сообщений.  
+ Открывает **параметры сообщения** диалоговое окно, в котором можно указать условия поиска сообщений.  
   
  **Очистить журнал**  
  Очищает содержимое активного представления сообщений.

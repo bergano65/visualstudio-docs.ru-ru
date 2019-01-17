@@ -2,19 +2,18 @@
 title: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883030"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 
@@ -34,7 +33,7 @@ ms.locfileid: "52896199"
 
 ## <a name="audio-control"></a>Элемент управления звуком
 
-Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.
+**Элемент управления звуком:** действия на элементе управления звуком HTML5 правильно записываются и воспроизводятся.
 
 ![Элемент управления HTML5 Audio](../test/media/codedui_html5_audio.png)
 
@@ -49,16 +48,16 @@ ms.locfileid: "52896199"
 
 Список свойств, для которых можно добавить утверждение, см. в разделе [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement).
 
- **Свойства поиска:** Свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.
+ **Свойства поиска:** свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.
 
- **Свойства фильтра:** Свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition` и `TagInstance`.
+ **Свойства фильтра:** свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition`, и `TagInstance`.
 
 > [!NOTE]
 > Период времени для перехода и приостановки может быть значительным. Во время воспроизведения закодированный тест пользовательского интерфейса ожидает время, указанное в `(TimeSpan)` перед приостановкой аудио. Если при каких-то особых обстоятельствах указанное время истечет до обращения к команде приостановки, будет создано исключение.
 
 
 ## <a name="video-control"></a>Элемент управления видео
- Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.
+ **Элемент управления видео:** действия на элементе управления видео HTML5 правильно записываются и воспроизводятся.
 
  ![Элемент управления HTML5 Video](../test/media/codedui_html5_video.png)
 
@@ -73,15 +72,15 @@ ms.locfileid: "52896199"
 
 Список свойств, для которых можно добавить утверждение, см. в разделе [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video).
 
- **Свойства поиска:** Свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.
+ **Свойства поиска:** свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.
 
- **Свойства фильтра:** Свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.
+ **Свойства фильтра:** свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.
 
 > [!NOTE]
 > Если необходимо перемотать видео вперед или назад, используя метки -30s или +30s, данные будут использоваться для перехода к соответствующему времени.
 
 ## <a name="progressbar"></a>ProgressBar
- **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления. Дополнительные сведения см. в разделе [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **Элемент управления ProgressBar:** с элементом управления ProgressBar невозможно взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления. Дополнительные сведения см. в разделе [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png)
 

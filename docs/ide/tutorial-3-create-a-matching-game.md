@@ -1,9 +1,7 @@
 ---
-title: Руководство 3. Создание соответствующей игры
-ms.custom: ''
+title: Учебник 3. Создание игры "Подбери пару!"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 724d61fcebe85a512afa346e4deed58f16260c46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963833"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Руководство 3. Создание соответствующей игры
+# <a name="tutorial-3-create-a-matching-game"></a>Учебник 3. Создание игры "Подбери пару!"
 
 В этом учебном руководстве вы создадите игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Вы научитесь:
 
@@ -43,18 +41,18 @@ ms.locfileid: "50672019"
 > [!NOTE]
 > В этом учебном руководстве показаны примеры, как на Visual C#, так и на Visual Basic, поэтому обратите внимание на информацию, которая относится к используемому вами языку программирования.
 
-Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [форум по Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) и [форум по Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве по [разработке на Visual Basic для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на Visual C# см. в руководстве по [разработке на Visual C# для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [форум по Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) и [форум по Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве [Основы Visual Basic. Разработка для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке Visual C# см. в разделе [Основы C#. Разработка для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
-|[Шаг 1. Создание проекта и добавление таблицы в форму](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Начните с создания проекта и добавления элемента управления `TableLayoutPanel`, чтобы все элементы управления были правильно выровнены.|
-|[Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Добавление объектов `Random` и `List` для создания списка значков.|
-|[Шаг 3. Назначение каждой метке случайного значка](../ide/step-3-assign-a-random-icon-to-each-label.md)|Случайным образом назначьте значки элементам управления `Label`, чтобы каждая игра отличалась от остальных.|
-|[Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Добавление обработчика события `Click`, изменяющего цвет метки, которую щелкнули.|
-|[Шаг 5. Добавление ссылок на метки](../ide/step-5-add-label-references.md)|Добавление ссылочных переменных для отслеживания меток, которые щелкнули.|
-|[Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md)|Добавьте таймер в форму, чтобы отслеживать время, прошедшее с начала игры.|
-|[Шаг 7. Отображение пар значков](../ide/step-7-keep-pairs-visible.md)|Отмена исчезновения пар значков, если выбрана одинаковая пара.|
-|[Шаг 8. Добавление метода для проверки выигрыша игрока](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Добавление метода `CheckForWinner()` для проверки, выиграл ли игрок.|
+|[Шаг 1. Создание проекта и добавление таблицы в форму](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Начните с создания проекта и добавления элемента управления `TableLayoutPanel`, чтобы все элементы управления были правильно выровнены.|
+|[Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Добавление объектов `Random` и `List` для создания списка значков.|
+|[Шаг 3. Назначение каждому элементу управления Label случайного значка](../ide/step-3-assign-a-random-icon-to-each-label.md)|Случайным образом назначьте значки элементам управления `Label`, чтобы каждая игра отличалась от остальных.|
+|[Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Добавление обработчика события `Click`, изменяющего цвет метки, которую щелкнули.|
+|[Шаг 5. Добавление ссылок на элементы управления Label](../ide/step-5-add-label-references.md)|Добавление ссылочных переменных для отслеживания меток, которые щелкнули.|
+|[Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md)|Добавьте таймер в форму, чтобы отслеживать время, прошедшее с начала игры.|
+|[Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md)|Отмена исчезновения пар значков, если выбрана одинаковая пара.|
+|[Шаг 8. Добавление метода для проверки того, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Добавление метода `CheckForWinner()` для проверки, выиграл ли игрок.|
 |[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)|Изучение других возможностей, таких как изменение значков и цветов, добавление сетки и добавление звуков. Увеличение игрового поля и изменение настроек таймера.|

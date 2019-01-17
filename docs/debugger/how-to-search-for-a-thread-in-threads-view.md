@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: поиск потока в представлении "Потоки" | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Поиск потока в представлении "Потоки" | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e16d0edce411192f7b6e40bd0e5fedb32bfac5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832168"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. Поиск потока в представлении потоков
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Как выполнить поиск потока в представлении потоков
 Конкретным потоком в представление "Потоки" можно найти с помощью его поток идентификатор или строку модуля в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне отобразятся атрибуты потока, выбранного в дереве потоков.  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Поиск потока в представлении потоков  

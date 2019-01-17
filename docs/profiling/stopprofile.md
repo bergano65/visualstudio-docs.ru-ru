@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952239"
 ---
 # <a name="stopprofile"></a>StopProfile
 Функция `StopProfile` устанавливает счетчик в значение 0 (включено) для указанного уровня профилирования.  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание:|  
+|Перечислитель|Описание|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|  

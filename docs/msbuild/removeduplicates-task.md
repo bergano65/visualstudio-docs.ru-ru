@@ -1,8 +1,6 @@
 ---
 title: Задача RemoveDuplicates | Документы Майкрософт
-ms.custom: ''
 ms.date: 03/01/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831879"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates - задача
 Удаляет повторяющиеся элементы из указанной коллекции элементов.  
@@ -33,7 +31,7 @@ ms.locfileid: "39153076"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `RemoveDuplicates` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы. При этом порядок входных элементов остается неизменным и сохраняется первый экземпляр каждого повторяющегося элемента.|  
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|  

@@ -3,7 +3,6 @@ title: Советы и рекомендации в отладчике
 description: Дополнительные сведения о некоторых малоизвестных возможности, поддерживаемые отладчиком Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055229"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270064"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
-Прочитайте эту статью, чтобы узнать несколько советы по повышению производительности и рекомендации для отладчика Visual Studio. Рассмотрим основные возможности отладчика, см. в разделе [обзором возможностей отладчика](../debugger/debugger-feature-tour.md). В этом разделе мы рассмотрим некоторые области, которые не включены в обзор возможностей.
+Прочитайте эту статью, чтобы узнать несколько советы по повышению производительности и рекомендации для отладчика Visual Studio. Рассмотрим основные возможности отладчика, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md). В этом разделе мы рассмотрим некоторые области, которые не включены в обзор возможностей.
 
 ## <a name="pin-data-tips"></a>Советы по данным ПИН-код
 
@@ -166,5 +165,5 @@ ms.locfileid: "53055229"
 - [7 менее известные взлома для отладки в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 Скрытые жемчужины в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)

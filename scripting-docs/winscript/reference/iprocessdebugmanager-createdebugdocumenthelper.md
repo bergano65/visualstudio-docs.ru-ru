@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Документы Microsoft
+title: IProcessDebugManager::CreateDebugDocumentHelper | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b57f941017a0eef7892d43be9ed0414645e55e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62f61f00d2b5f850848efbcf3df65c5a3b10de3c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090487"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
-Создает новый вспомогательный документ отладки для этого приложения.  
+Создает новый документ вспомогательное средство отладки для этого приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentHelper(  
    IUnknown*               punkOuter,  
    IDebugDocumentHelper**  pddh  
@@ -39,7 +39,7 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Параметры  
  `punkOuter`  
- [in] Если возвращаемый объект является статистическим выражением, `punkOuter` является указатель на интерфейс для управления `IUnknown`. В противном случае оно является пустым указателем.  
+ [in] Если возвращаемый объект должен выполнить статистическую обработку, `punkOuter` является указатель интерфейса на управляющий `IUnknown`. В противном случае он является указателем null.  
   
  `pddh`  
  [out] Вспомогательный объект документа отладки для этого приложения.  
@@ -47,12 +47,12 @@ HRESULT CreateDebugDocumentHelper(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод создает новый вспомогательный документ отладки для этого приложения.  
+ Этот метод создает новый документ вспомогательное средство отладки для этого приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

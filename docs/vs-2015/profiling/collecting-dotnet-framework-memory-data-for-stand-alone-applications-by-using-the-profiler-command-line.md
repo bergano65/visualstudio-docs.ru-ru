@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf9277b7ef80997fc4300ca7e96569048231c94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: fc3a109f66a7f761cf31dc6892207a00cc484148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866365"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Сбор данных памяти .NET Framework для автономных приложений с помощью средств командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "51766513"
 |----------|---------------------|  
 |**Запуск приложения и профилирование памяти .NET**|-   [Практическое руководство. Запуск приложения .NET Framework с профилировщиком для сбора данных об использовании памяти](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Присоединение профилировщика к приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к приложению .NET Framework для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Инструментирование приложения для сбора данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор данных об использовании памяти с помощью профилировщика](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)|  
+|**Инструментирование приложения для сбора данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор данных об использовании памяти с помощью профилировщика](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Связанные задачи  
   

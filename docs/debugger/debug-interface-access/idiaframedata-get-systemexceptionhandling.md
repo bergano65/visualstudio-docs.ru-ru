@@ -1,8 +1,6 @@
 ---
 title: IDiaFrameData::get_systemExceptionHandling | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cf18ed2bb25ab2632c471c0da7d19ea54239c70d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939944"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Получает флаг, который указывает, является ли система обработки исключений в силе.  
@@ -27,7 +25,7 @@ ms.locfileid: "49882734"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_systemExceptionHandling (   
+HRESULT get_systemExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,13 +35,13 @@ HRESULT get_systemExceptionHandling (
  [out] Возвращает `TRUE` Если обработка исключений система является по сути, в противном случае — возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Система обработки исключений обычно называется структурированной обработки исключений.  
   
  Чтобы определить, действует ли обработка исключений с ++, вызовите [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) метод.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

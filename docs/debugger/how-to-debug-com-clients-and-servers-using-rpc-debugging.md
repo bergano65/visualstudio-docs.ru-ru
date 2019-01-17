@@ -2,7 +2,6 @@
 title: Отладка COM-клиентов и серверов, с помощью отладки RPC | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -27,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049029"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269270"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Как выполнить Отладка клиентов и серверов COM с помощью отладки RPC
 Для отладки клиент-серверных приложений COM можно использовать отладку удаленного вызова процедур (RPC). Для этого необходимо включить отладку RPC. Если отладка RPC включена, то при заходе в вызов сервера со стороны клиента отладчик подключается к серверу, позволяя выполнить отладку кода. Когда отладчик подключен, все его функции можно использовать для отладки процессов как на стороне сервера, так и на стороне клиента.  
@@ -53,6 +52,7 @@ ms.locfileid: "53049029"
     > [!NOTE]
     >  Выполнение удаленных вызовов процедур с заходом на удаленный сервер под управлением Microsoft Windows Vista будет работать только в том случае, если к удаленному серверу подключен отладчик машинного кода. В противном случае вызов RPC завершится сбоем без сообщения об ошибке. Или же вызов RPC будет выполнен, но пошаговое выполнение вызова RPC не будет работать.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)  
- [Отладка в Visual Studio](../debugger/index.md) [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+ [Отладка в Visual Studio](../debugger/index.md)  
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: отладка оптимизированного кода | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Отладка оптимизированного кода | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387867"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154328"
 ---
-# <a name="how-to-debug-optimized-code"></a>Практическое руководство. Отладка оптимизированного кода
+# <a name="how-to-debug-optimized-code"></a>Как выполнить отладку оптимизированного кода
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
@@ -76,7 +74,7 @@ ms.locfileid: "52387867"
 
 8. Если для свойства `Custom` выбран параметр `Optimization`, это означает, что можно устанавливать параметры для любого из остальных свойств, показанных в списке.
 
-9. Выберите "Свойства конфигурации", "C/C++", узел "Командная строка" страницы свойств проекта и добавьте `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` в текстовое поле **Дополнительные параметры**.
+9. Выберите свойства конфигурации, C/C++, узел командной строки, страницы свойств проекта и добавьте `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` для **Дополнительные параметры** текстовое поле.
 
     > [!WARNING]
     >  Для использования `/Zo` требуется Visual Studio 2013 с обновлением 3 или более поздняя версия.

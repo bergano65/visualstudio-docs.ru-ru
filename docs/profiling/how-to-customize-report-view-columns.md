@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Настройка столбцов представлений отчета | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка столбцов представлений отчета | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861164"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета
+# <a name="how-to-customize-report-view-columns"></a>Как выполнить Настройка столбцов представлений отчета
 Средства производительности в Visual Studio Team System Development Edition являются полностью встроенными в интегрированную среду разработки (IDE), что позволяет легко их использовать при каждой необходимости. Ниже перечислены представления, которые можно настраивать путем добавления, удаления и изменения порядка столбцов.  
   
 -   [Представление "Модули"](../profiling/modules-view.md)  

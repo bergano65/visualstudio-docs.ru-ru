@@ -2,7 +2,6 @@
 title: Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878277"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 
@@ -31,7 +30,7 @@ ms.locfileid: "38783692"
 
 2.  В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
 
-3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в пошаговом руководстве по [настройке конфигураций отладки и выпусков](../../debugger/how-to-set-debug-and-release-configurations.md).
+3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4.  Щелкните **Дополнительные параметры компиляции**.
 

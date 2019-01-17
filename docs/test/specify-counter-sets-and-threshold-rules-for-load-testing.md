@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23c4997f6079a2b5f27a380afb4ef07b84c4fa61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887069"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте
 
@@ -101,5 +100,5 @@ ms.locfileid: "53057422"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство: Добавление правила порога](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
+- [Практическое руководство. Добавление правила порога](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Анализ нарушений правил порогов](../test/analyze-threshold-rule-violations-in-load-tests.md)

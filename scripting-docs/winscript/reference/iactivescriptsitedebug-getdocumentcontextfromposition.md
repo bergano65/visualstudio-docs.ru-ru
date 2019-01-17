@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Документы Microsoft
+title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1bcc7469e02ba380ebd6839e9fe55031e52ecd32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724774"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086988"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
-Использовать обработчик языка для делегирования `IDebugCodeContext::GetSourceContext`.  
+Используемый модуль языка делегировать `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -44,13 +44,13 @@ HRESULT GetDocumentContextFromPosition(
  [in] Исходное содержимое, предоставляемое `ParseScriptText` или `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Знак смещения относительно начала блока сценария или сценариев.  
+ [in] Символ, смещение относительно начала блока скрипта или скриптлета.  
   
  `uNumChars`  
  [in] Число символов в данном контексте.  
   
  `ppsc`  
- [out] Контекст документа, соответствующий диапазону этой позиции символа.  
+ [out] Контекст документа, соответствующий диапазону этого позицию символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
@@ -60,7 +60,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Язык обработчики используют этот метод позволяет делегировать `IDebugCodeContext::GetSourceContext`.  
+ Модулям языка этот метод позволяет делегировать `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)

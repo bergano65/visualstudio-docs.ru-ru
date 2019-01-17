@@ -1,8 +1,6 @@
 ---
-title: Справочник по пользовательскому интерфейсу Отладка | Документы Microsoft
-ms.custom: ''
+title: Справочник по пользовательскому интерфейсу отладчика | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.uiref
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83021f492eeb712f489641e3019fe9c8ecc47bdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472530"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269492"
 ---
 # <a name="debugging-user-interface-reference"></a>Справочник по пользовательскому отладочному интерфейсу
 Во время выполнения отладки приложения могут отобразиться следующие диалоговые окна.  
@@ -44,7 +42,7 @@ ms.locfileid: "31472530"
   
 -   [Диалоговые окна ошибок и предупреждений отладки](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)   
  [Командное окно](../ide/reference/command-window.md)

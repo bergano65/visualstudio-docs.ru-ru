@@ -1,8 +1,6 @@
 ---
 title: ClickOnce и параметры приложения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850970"
 ---
-# <a name="clickonce-and-application-settings"></a>Параметры ClickOnce и приложения
+# <a name="clickonce-and-application-settings"></a>ClickOnce и параметры приложения
 Параметры приложения для Windows Forms позволяет легко создавать, хранить и поддерживать настраиваемые приложения и параметры пользователя на стороне клиента. В следующем документе описано, как файлы параметров приложения работают в приложении ClickOnce, и как ClickOnce переносит параметры при обновлении до следующей версии.  
   
  Приведенные ниже сведения относятся только к поставщику параметров приложения по умолчанию, \<xref:System.Configuration.LocalFileSettingsProvider > класса. При указании пользовательского поставщика, этим поставщиком определяется, как он хранит свои данные и как его обновляет его параметры между версиями. Дополнительные сведения о поставщиках параметров приложений см. в разделе [архитектура параметров приложения](/dotnet/framework/winforms/advanced/application-settings-architecture).  
@@ -56,6 +54,6 @@ ms.locfileid: "39081098"
   
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Общие сведения о параметрах приложения](/dotnet/framework/winforms/advanced/application-settings-overview)   
+ [Общие сведения о параметрах приложений](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [Общие сведения о кэше ClickOnce](../deployment/clickonce-cache-overview.md)   
  [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

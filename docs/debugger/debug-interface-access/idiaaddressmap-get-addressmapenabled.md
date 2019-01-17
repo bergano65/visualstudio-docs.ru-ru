@@ -1,8 +1,6 @@
 ---
 title: IDiaAddressMap::get_addressMapEnabled | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d0b3ac64724881ab72cb9d9d873bc02f3bec9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dc632a0eda039c5f3268d2007f45d7cddd096baa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896660"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 Указывает, установлен ли уже адрес карту для конкретного сеанса.  
@@ -27,7 +25,7 @@ ms.locfileid: "49938842"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_addressMapEnabled (   
+HRESULT get_addressMapEnabled (   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_addressMapEnabled (
   
  Клиентские приложения можно задать адрес карты для конкретного сеанса, получая [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) интерфейс из [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс и вызвав [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод, а затем с помощью вызова [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) метод. `get_addressMapEnabled` Метод возвращает результат вызова метода `put_addressMapEnabled` метод.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   

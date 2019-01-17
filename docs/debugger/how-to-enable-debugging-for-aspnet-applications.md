@@ -2,7 +2,6 @@
 title: Включение отладки для приложений ASP.NET | Документация Майкрософт
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881105"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Отладка приложений ASP.NET или ASP.NET Core в Visual Studio
 
@@ -139,7 +138,7 @@ IIS Express используется по умолчанию и предвари
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] автоматически обнаруживает любые изменения *web.config* файлы и применяются новые параметры конфигурации. Не нужно перезагружать компьютер или сервер IIS, чтобы изменения вступили в силу.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] автоматически обнаруживает изменения в файлах *web.config* и применяет новые параметры конфигурации. Не нужно перезагружать компьютер или сервер IIS, чтобы изменения вступили в силу.  
   
 Веб-сайт может содержать несколько виртуальных каталогов и подкаталогов, *web.config* файлов в каждом из них. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложения наследуют параметры конфигурации из *web.config* файлы на более высоких уровнях URL-пути. Иерархическое *web.config* файл параметры применяются ко всем [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложений под ними в иерархии. Установка на другую конфигурацию в *web.config* более низкого уровня в иерархии файла переопределяют параметры в файле более поздней версии.  
   
@@ -185,10 +184,9 @@ IIS Express используется по умолчанию и предвари
 
 ## <a name="see-also"></a>См. также  
 [Отладка ASP.NET: системные требования](aspnet-debugging-system-requirements.md)   
-[Практическое: выполнение рабочего процесса с учетной записью пользователя](how-to-run-the-worker-process-under-a-user-account.md)   
-[Практическое: поиск имени процесса ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя](how-to-run-the-worker-process-under-a-user-account.md)   
+[Практическое руководство. Поиск имени процесса ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
 [Отладка развернутых веб-приложений](debugging-deployed-web-applications.md)   
 [Пошаговое руководство: Отладка веб-формы](walkthrough-debugging-a-web-form.md)   
-[Практическое: Отладка исключений ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Практическое руководство. Отладка исключений ASP.NET](how-to-debug-aspnet-exceptions.md)   
 [Отладка веб-приложений: ошибки и устранение неполадок](debugging-web-applications-errors-and-troubleshooting.md)
-  

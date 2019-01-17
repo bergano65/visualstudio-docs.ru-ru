@@ -1,9 +1,7 @@
 ---
-title: Шаг 5. Добавление элементов управления в форму
-ms.custom: ''
+title: Шаг 5. Добавление элементов управления в форму
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a0167d4d5af125e706350002ccf8a17e459414
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968434"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
+# <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 На данном шаге производится добавление в форму элемента управления <xref:System.Windows.Forms.PictureBox> и элемента управления <xref:System.Windows.Forms.CheckBox>. Затем вы добавляете в форму элементы управления <xref:System.Windows.Forms.Button>.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этой статьи см. на следующих страницах: [Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2](http://go.microsoft.com/fwlink/?LinkId=205211) и [Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2](http://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ## <a name="to-add-controls-to-your-form"></a>Добавление элементов управления в форму
 
@@ -81,6 +79,6 @@ ms.locfileid: "34748560"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел: [Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md).
+-   Следующий раздел руководства: [Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md).
 
--   Предыдущий раздел: [Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+-   Предыдущий раздел руководства: [Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).

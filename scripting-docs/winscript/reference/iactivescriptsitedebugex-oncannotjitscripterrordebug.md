@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Документы Microsoft
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725114"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095125"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Сообщает о том, что ведущее приложение о ошибку во время выполнения сценария при процесс отладки Manager не удается найти только раз в отладчик сценариев.  
+Информирует приложение о ошибки времени выполнения скрипта при процесс отладки Manager не удается найти в отладчик сценариев Just In Time.  
   
- Чтобы реализовать отладчик на узле, должен обрабатывать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). На основании действий пользователя, узел можно подключить отладчик и вернет, или запуск отладчика в OnScriptErrorDebug `pfEnterDebugger` параметра. Также требуется реализовать этот интерфейс, чтобы получать уведомления об ошибке времени выполнения, даже при наличии не внешних отладчиков, которые могут обрабатываться диспетчером отладки процесса.  
+ Чтобы реализовать отладчика в главном приложении, необходимо обработать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). На основании действий пользователя, узел можно подключить отладчик и возвращаемое, или запуск отладчика в OnScriptErrorDebug `pfEnterDebugger` параметра. Также следует реализовать этот интерфейс, чтобы получать уведомления об ошибке времени выполнения, даже при наличии не внешние отладчики, которые могут обрабатываться диспетчер отладки процессов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -49,12 +49,12 @@ HRESULT OnCanNotJITScriptErrorDebug(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Также требуется реализовать этот интерфейс, чтобы получить уведомление.  
+ Также следует реализовать этот интерфейс, чтобы получать уведомления.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947664"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 
@@ -37,9 +36,9 @@ ms.locfileid: "52305485"
 
     -   Набор данных или модели EDM.
 
-    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [как: подключение к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [Как подключиться к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Объекты Дополнительные сведения см. в разделе [привязку к объектам в Visual Studio](bind-objects-in-visual-studio.md).
+    -   Объекты. Дополнительные сведения см. в разделе [привязку к объектам в Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Перед созданием таблицы подстановки, две связанные таблицы или объекты должны существовать в качестве источника данных для проекта.
@@ -48,7 +47,7 @@ ms.locfileid: "52305485"
 
      Дополнительные сведения о допустимых конечных расположений сброса см. в разделе [элементы управления WPF, привязка к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Чтобы открыть окно Источники данных **, щелкните пункт Показать источники данных** в меню Данные **.
+3.  Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.
 
 4.  Разверните узлы в **источников данных** окно, пока не будут видны в родительской таблицы или объекта и связанной дочерней таблицы или объекта.
 
@@ -94,4 +93,4 @@ ms.locfileid: "52305485"
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Пошаговое руководство: отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md)

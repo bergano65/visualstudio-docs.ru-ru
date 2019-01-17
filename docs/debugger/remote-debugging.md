@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 07/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065510"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269960"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -123,7 +122,7 @@ ms.locfileid: "53065510"
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md)
 - [Удаленная отладка ASP.NET Core на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

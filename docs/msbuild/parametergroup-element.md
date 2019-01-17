@@ -1,8 +1,6 @@
 ---
 title: Элемент ParameterGroup | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a47c77ecb441d2c1277fee1a7e94e1e9a7991b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a531073ba6f2f55272b719a116caad724d29e53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916167"
 ---
 # <a name="parametergroup-element"></a>Элемент ParameterGroup
 Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -46,13 +44,13 @@ ms.locfileid: "49900141"
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Параметр](../msbuild/parameter-element.md)|Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`. Имя элемента — это имя параметра.|  
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-| Элемент | Описание: |
+| Элемент | Описание |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
 

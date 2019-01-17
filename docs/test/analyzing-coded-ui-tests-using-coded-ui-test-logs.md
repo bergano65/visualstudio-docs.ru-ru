@@ -2,19 +2,18 @@
 title: Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944964"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 
@@ -22,7 +21,7 @@ ms.locfileid: "52896683"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Шаг 1. Включение ведения журнала
+## <a name="step-1-enable-logging"></a>Шаг 1. Включение ведения журнала
 
 В зависимости от сценария используйте один из указанных ниже методов, чтобы включить ведение журнала.
 
@@ -58,7 +57,7 @@ ms.locfileid: "52896683"
 
    <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала
 
 При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл *QTAgent32.exe.config* вы увидите выходную ссылку в результатах **обозревателя тестов**. Если выбран подробный уровень трассировки (verbose), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.
 

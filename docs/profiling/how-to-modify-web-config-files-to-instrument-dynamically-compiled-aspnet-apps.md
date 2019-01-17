@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 521da3263d3ea893613bf3b5211763230d07c67f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bec4b99998e2e3c581dd15e0311e23e93779c17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988544"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
 
  В этом разделе описывается внесение изменений в файл конфигурации *web.config* для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -146,7 +144,7 @@ ms.locfileid: "49830994"
    | Имя атрибута | Значение атрибута |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **значение** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 
 4. Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
@@ -156,9 +154,10 @@ ms.locfileid: "49830994"
    |Имя атрибута|Значение атрибута|  
    |--------------------|---------------------|  
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-   |**значение**|`PerformanceToolsFolder`|  
+   |**value**|`PerformanceToolsFolder`|  
 
-    `PerformanceToolsFolder` — это путь к исполняемым файлам профилировщика. Если [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен в папку по умолчанию, значением будет **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**.  
+    `PerformanceToolsFolder` — это путь к исполняемым файлам профилировщика. Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+
 
 ```xml  
     <configuration>  
@@ -171,11 +170,11 @@ ms.locfileid: "49830994"
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
         />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
@@ -216,11 +215,11 @@ ms.locfileid: "49830994"
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
             />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  

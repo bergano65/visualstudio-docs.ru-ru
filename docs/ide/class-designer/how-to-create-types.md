@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Создание типов с помощью конструктора классов
+title: Как выполнить Создание типов с помощью конструктора классов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -19,16 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916472"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
+# <a name="how-to-create-types-by-using-class-designer"></a>Как выполнить Создание типов с помощью конструктора классов
 
-Для создания новых типов проектов C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов](how-to-view-existing-types.md).
+Для создания новых типов проектов C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов в конструкторе классов](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Создание нового типа
 
@@ -91,8 +90,7 @@ ms.locfileid: "49842265"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Создание наследования между типами](how-to-create-inheritance-between-types.md)
-- [Практическое руководство. Создание ассоциаций между типами](how-to-create-associations-between-types.md)
+- [Практическое руководство. Создание наследования между типами в конструкторе классов](how-to-create-inheritance-between-types.md)
+- [Практическое руководство. Создание ассоциаций между типами в конструкторе классов](how-to-create-associations-between-types.md)
 - [Создание и настройка членов типов](creating-and-configuring-type-members.md)
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
 - [Конструирование классов и типов](designing-and-viewing-classes-and-types.md)

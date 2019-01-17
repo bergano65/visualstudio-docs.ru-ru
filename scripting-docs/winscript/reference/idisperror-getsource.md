@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Документы Microsoft
+title: IDispError::GetSource | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727974"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091823"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Возвращает программный идентификатор зависит от языка для класса или приложения, в котором возникла ошибка.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -43,12 +43,12 @@ HRESULT GetSource(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется для определения класса или приложения, где произошло исключение. Программный идентификатор могут быть возвращены в язык, заданный параметром идентификатор языкового стандарта (LCID), предоставляемых в момент вызова.  
+ Этот метод используется для определения класса или приложения, в которой возникло исключение. Программный идентификатор могут быть возвращены в язык, указанный идентификатор языка (LCID), предоставленный во время вызова.  
   
 > [!NOTE]
 >  Этот метод не реализован.  

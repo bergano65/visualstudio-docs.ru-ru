@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::QueryAlive | Документы Microsoft
+title: IRemoteDebugApplication::QueryAlive | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,36 +18,36 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f938ad30562cd1131e8a50077106002d33cea2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 87c1bab34ed9988a1fb20e87a2b54401be2a5381
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729454"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090679"
 ---
 # <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
-Указывает, является ли скорость реагирования приложения.  
+Указывает, является ли отвечает приложение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Этот метод не принимает параметры.  
+ Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод указывает, является ли скорость реагирования приложения. Реализации этого метода всегда должны возвращать `S_OK`.  
+ Этот метод указывает, является ли отвечает приложение. Реализации этого метода всегда должны возвращать `S_OK`.  
   
- Если непредвиденное завершение процесса приложения COM возвращает ошибку из маршалинга прокси для вызова этого метода.  
+ Если процесс приложения завершается неожиданно, COM возвращает ошибку из маршалирования прокси для вызова этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

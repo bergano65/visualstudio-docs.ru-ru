@@ -1,8 +1,6 @@
 ---
-title: Пошаговое руководство. Профилирование из командной строки с помощью выборки | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Профилирование из командной строки с помощью выборки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886813"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью метода выборки
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью выборки
 
 В этом пошаговом руководстве показано, как выполнить профилирование приложения с помощью программ командной строки и выборки для выявления проблем производительности.
 
@@ -35,7 +33,7 @@ ms.locfileid: "34815260"
 
 - Средний уровень знания [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)].
 - Средний уровень навыков работы с программами командной строки.
-- Копия [примера PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).
+- Копия [примера PeopleTrax](/visualstudio/profiling/performance-explorer).
 - Для работы со сведениями, полученными при профилировании, рекомендуется включить отладочные символы.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Профилирование из командной строки с помощью метода выборки
@@ -43,7 +41,7 @@ ms.locfileid: "34815260"
 Выборка — это метод профилирования, при котором конкретный процесс периодически опрашивается с целью определения активной функции. Полученные данные показывают, как часто функция находилась на вершине стека вызовов при выборочном опросе процесса.
 
 > [!NOTE]
-> Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки Visual Studio. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax — это 32-разрядное приложение.
+>  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Профилирование приложения PeopleTrax с помощью метода выборки
 

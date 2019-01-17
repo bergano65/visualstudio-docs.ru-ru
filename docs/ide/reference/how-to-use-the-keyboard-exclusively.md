@@ -1,9 +1,8 @@
 ---
-title: Практическое руководство. Использование только клавиатуры
+title: Как выполнить Работа только с клавиатуры
 description: Узнайте, как использовать стандартные сочетания клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE) Visual Studio.
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874463"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
+# <a name="how-to-use-the-keyboard-exclusively"></a>Как выполнить Работа только с клавиатуры
 
 > [!TIP]
 > Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).

@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Настройка правил производительности | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка правил производительности | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.ruleseditor
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe6e10c42188cab23c75262d947c7deb9c28ea5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 2e3df3b6573bb82303e0412fe50665c86d082481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879615"
 ---
-# <a name="how-to-configure-performance-rules"></a>Практическое руководство. Настройка правил производительности
+# <a name="how-to-configure-performance-rules"></a>Как выполнить Настройка правил производительности
 В предупреждении о производительности средств профилирования Visual Studio указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для сбора более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Некоторые предупреждения могут не соответствовать интересующим вас сценариям, а другие могут быть созданы ошибочно. Можно настроить вывод или блокировку конкретных предупреждений о производительности.  
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Настройка предупреждений о производительности профилировщика  

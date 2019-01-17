@@ -1,8 +1,9 @@
 ---
-title: Введение в редактирование
+title: Общие сведения о редактировании в редакторе кода
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027879"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803337"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> [!TIP]
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
-Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../ide/tutorial-csharp-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../get-started/csharp/tutorial-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Создание файла кода
 
@@ -42,7 +44,7 @@ ms.locfileid: "53027879"
 
 Visual Studio предоставляет удобные *фрагменты кода*, позволяющие быстро и легко создавать часто используемые блоки кода. [Фрагменты кода](../ide/code-snippets.md) доступны для различных языков программирования, включая C#, Visual Basic и C++. Давайте добавим фрагмент `void Main` C# в файл.
 
-1. Поместите курсор над последней закрывающей фигурной скобкой **}** в файле и введите символы `svm` (это расшифровывается как `static void Main`&mdash; не беспокойтесь, если не знаете, что это означает).
+1. Поместите курсор над последней закрывающей фигурной скобкой **}** в файле и введите символы `svm`. (`svm` расшифровывается как `static void Main`. Метод [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) является точкой входа для приложений C#.)
 
    Появится всплывающее диалоговое окно с информацией о фрагменте кода `svm`.
 
@@ -50,7 +52,7 @@ Visual Studio предоставляет удобные *фрагменты ко
 
 1. Два раза нажмите клавишу **TAB**, чтобы вставить фрагмент кода.
 
-   Вы видите, как в файл добавляется сигнатура метода `static void Main()`. Метод [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) является точкой входа для приложений C#.
+   Вы видите, как в файл добавляется сигнатура метода `static void Main()`.
 
 Для разных языков программирования доступны различные фрагменты кода. Вы можете просмотреть фрагменты кода, доступные для используемого языка, выбрав **Изменить** > **IntelliSense** > **Вставить фрагмент** и указав папку вашего языка. Для C# список выглядит следующим образом.
 

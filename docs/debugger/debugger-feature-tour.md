@@ -3,7 +3,6 @@ title: Начало отладки в Visual Studio 2017
 description: Начало отладки приложений с помощью отладчика Visual Studio
 ms.custom: mvc
 ms.date: 06/15/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904973"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -174,7 +173,7 @@ ms.locfileid: "49882670"
 
 Дважды щелкните строку кода, чтобы просмотреть исходный код. При этом также изменится текущая область, проверяемая отладчиком. Это не перемещает отладчик.
 
-Для выполнения других задач можно воспользоваться контекстными меню из окна **Стек вызовов**. Например, можно вставлять точки останова в указанные функции, перезапускать приложение с помощью функции **Выполнение до текущей позиции** и изучать исходный код. См. [Практическое руководство. Просмотр стека вызовов](../debugger/how-to-use-the-call-stack-window.md).
+Для выполнения других задач можно воспользоваться контекстными меню из окна **Стек вызовов**. Например, можно вставлять точки останова в указанные функции, перезапускать приложение с помощью функции **Выполнение до текущей позиции** и изучать исходный код. См. практическое руководство по [ просмотреть стек вызовов](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Изучение исключения
 
@@ -215,7 +214,7 @@ ms.locfileid: "49882670"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве вы кратко познакомились с функциями отладчика. Вы можете изучить их более подробно с помощью примера приложения
+В этом руководстве вы кратко познакомились с функциями отладчика. Отдельные функции, например точки останова, вы можете изучить более подробно.
 
 > [!div class="nextstepaction"]
-> [Сведения об отладке с помощью Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Use breakpoints in the Visual Studio debugger](../debugger/using-breakpoints.md) (Использование точек останова в отладчике Visual Studio)

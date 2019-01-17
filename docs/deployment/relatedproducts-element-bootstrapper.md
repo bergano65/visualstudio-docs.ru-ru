@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt; элемент (загрузчик) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967389"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
 `RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.  
@@ -59,7 +57,7 @@ ms.locfileid: "39077813"
   
  `DependsOnProduct` содержит следующий атрибут.  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
   
@@ -71,7 +69,7 @@ ms.locfileid: "39077813"
   
  `IncludesProduct` содержит следующий атрибут.  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
   

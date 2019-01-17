@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnLeaveScript | Документы Microsoft
+title: IActiveScriptSite::OnLeaveScript | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aba20c13dc5568165641c5c7b8e871e0b5e8f322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7d08d58fc788d2d10ed044808ca40a5f4ea929c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725174"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093162"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
-Уведомляет основное приложение о возврате обработчик скриптов выполнять код скрипта.  
+Информирует узел, что обработчик скриптов возвращаемому при выполнении кода скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT OnLeaveScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnLeaveScript(void);
  Возвращает значение `S_OK` в случае успешного выполнения.  
   
 ## <a name="remarks"></a>Примечания  
- Обработчик скриптов необходимо вызвать этот метод перед возвратом управления вызывающему приложению, введенного обработчика скриптов. Например, если скрипт вызывает объект, который затем инициирует событие обработано обработчиком сценариев, обработчик сценариев необходимо вызвать [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) метод перед выполнением события и необходимо вызвать `IActiveScriptSite::OnLeaveScript`после выполнения события перед возвратом, инициировавший событие. Вызов этого метода могут быть вложенными. Каждый вызов `IActiveScriptSite::OnEnterScript` требуется соответствующий вызов этого метода.  
+ Этот метод необходимо вызвать обработчик сценариев перед возвратом управления вызывающему приложению, которое введено обработчика скриптов. Например, если скрипт вызывает объект, который затем запускает событие обработано обработчиком сценариев, обработчик скриптов должен вызвать [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) метод перед выполнением события и необходимо вызвать `IActiveScriptSite::OnLeaveScript`после выполнения события перед возвратом к объекту, инициировавший событие. Вызовы этого метода могут быть вложенными. При каждом вызове `IActiveScriptSite::OnEnterScript` требует соответствующего вызова этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

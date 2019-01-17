@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: публикация приложения ClickOnce с помощью мастера публикации | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Публикация приложения ClickOnce с помощью мастера публикации | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935051"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Как выполнить публикацию приложения ClickOnce с помощью мастера публикации
 Чтобы сделать приложение ClickOnce доступным для пользователей, необходимо опубликовать его в общей папке, на FTP-сервере или на съемном носителе. Приложение можно опубликовать с помощью мастера публикации. Дополнительные свойства, связанные с публикацией, доступны на странице **Публикация** в **конструкторе проектов**. Дополнительные сведения см. в разделе [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md).
 
 Перед запуском Мастера публикации необходимо правильно настроить свойства публикации. Например, назначить ключ для подписи приложения ClickOnce можно на странице **Подпись** в **конструкторе проектов**. Дополнительные сведения см. в разделе [безопасности ClickOnce-приложений](../deployment/securing-clickonce-applications.md).

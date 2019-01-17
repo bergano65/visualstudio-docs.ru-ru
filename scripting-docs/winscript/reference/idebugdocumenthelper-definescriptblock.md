@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Документы Microsoft
+title: IDebugDocumentHelper::DefineScriptBlock | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727004"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088001"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Указывает помощникам определенного диапазона символов блок сценария, выполняемая подсистемой данного скрипта.  
+Указывает для вспомогательного приложения определенного диапазона символов блок скрипта, который обрабатывается обработчиком данного сценария.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -42,7 +42,7 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Параметры  
  `ulCharOffset`  
- [in] Расположение на начало блока скрипта.  
+ [in] Расположение начала блока скрипта.  
   
  `cChars`  
  [in] Число символов в блоке сценария.  
@@ -51,24 +51,24 @@ HRESULT DefineScriptBlock(
  [in] Обработчик скриптов для этого блока сценария.  
   
  `fScriptlet`  
- [in] Флаг, который указывает, является ли блок сценария пользователи.  
+ [in] Флаг, который указывает, является ли блок скрипта пользователи.  
   
  `pdwSourceContext`  
- [out] Контекст источника для блока скрипта.  
+ [out] Исходный контекст для блока скрипта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод можно использовать промежуточный узел, если документы содержат внедренные блоки скриптов. Этот метод можно использовать подсистему языка при его код содержит внедренные скрипты для других языков.  
+ Этот метод можно использовать промежуточный узел, если документы содержат встроенных блоков скриптов. Этот метод можно использовать модуль языка, если ее код содержит внедренные скрипты для других языков.  
   
- Обработчик сценариев отвечает за все синтаксис Цветовая разметка и код контекст уточняющих запросов в блоке сценария.  
+ Обработчик скриптов отвечает за все синтаксис Цветовая разметка и код контекст уточняющих запросов в блоке сценария.  
   
- `DefineScriptBlock` Метод следует вызывать после добавления текста (например, с помощью `IDebugDocumentHelper::AddDBCSText` метод), но перед скрипт проанализирован блока (например, с помощью `IActiveScriptParse ::ParseScriptText` метода).  
+ `DefineScriptBlock` Метод должен вызываться после добавления текста (например, с помощью `IDebugDocumentHelper::AddDBCSText` метод), но перед сценарием было проанализировано блока (например, с помощью `IActiveScriptParse ::ParseScriptText` метод).  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

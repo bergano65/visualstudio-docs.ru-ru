@@ -3,7 +3,6 @@ title: Отладка управляемого кода | Документаци
 description: Отладка C# или Visual Basic с помощью отладчика Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: d6b4f6fecabe7947e59a235dbb71e9f5e0803b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955481"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка кода C# или Visual Basic с помощью отладчика Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка с использованием C# или Visual Basic с помощью отладчика Visual Studio
 
 Отладчик Visual Studio реализует множество эффективных функций для отладки приложений. В этой статье вы ознакомитесь с некоторыми основными возможностями.
 
@@ -151,7 +150,7 @@ ms.locfileid: "52257190"
 
 Выполнение приложения продолжится путем вызова `doWork` и будет приостановлено в той строке, в которой вы нажмете эту кнопку.
 
-В процессе пошагового выполнения кода обычно используются клавиши **F10** и **F11**. Более подробные инструкции см. в [руководстве для начинающих](../debugger/getting-started-with-the-debugger.md).
+В процессе пошагового выполнения кода обычно используются клавиши **F10** и **F11**. Более подробные инструкции см. в статье [Знакомство с отладчиком Visual Studio](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Проверка переменных в подсказке по данным
 

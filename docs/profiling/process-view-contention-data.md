@@ -1,8 +1,6 @@
 ---
 title: Представление "Процесс" — данные о состязаниях | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943893"
 ---
 # <a name="process-view---contention-data"></a>Представление "Процесс" — данные о состязаниях
 В представлении "Процесс" отображаются данные о состязаниях для процессов и потоков, которые выполнялись во время сеанса профилирования.  
@@ -26,7 +24,7 @@ ms.locfileid: "35257817"
   
  В следующей таблице описаны значения столбцов в представлении "Процесс".  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Время начала**|Количество миллисекунд или циклов процессора от начала профилирования до запуска процесса или потока.|  
 |**Время блокировки**|Общее время, в течение которого выполнение функций процесса или потока заблокировано.|  

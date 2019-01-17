@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_relocationsCrc | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8227f281f8ac002db0ec9bf14430e2c1fc7ac5b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e0080a4502cbcf9c1e3be041fa085ba997eff821
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918880"
 ---
 # <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Извлекает циклическую проверку избыточности (CRC) перемещения сведения для раздела.  
@@ -27,7 +25,7 @@ ms.locfileid: "49923899"
 ## <a name="syntax"></a>Синтаксис  
   
 ```C++  
-HRESULT get_relocationsCrc (   
+HRESULT get_relocationsCrc (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_relocationsCrc (
  [out] Возвращает контрольную СУММУ для области данных перемещение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

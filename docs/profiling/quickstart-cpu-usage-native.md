@@ -1,9 +1,7 @@
 ---
 title: Анализ данных о загрузке ЦП (C++)
 description: Измерение производительности приложения в C++ с помощью средства диагностики "Загрузка ЦП"
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883176"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (C++)
 
@@ -115,7 +113,7 @@ Visual Studio предоставляет множество эффективны
     }
     ```
   
-## <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
+## <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
   
 1.  Сначала установите точку останова в приложении в следующей строке кода в функции `main`:
 
@@ -154,7 +152,7 @@ Visual Studio предоставляет множество эффективны
 
      На этом этапе можно начать анализировать данные.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Шаг 2. Анализ данных о загрузке ЦП
+## <a name="step-2-analyze-cpu-usage-data"></a>Шаг 2. Анализ данных о загрузке ЦП
 
 Мы рекомендуем начать анализ данных с проверки списка функций на вкладке "Загрузка ЦП" и выявления функций, выполняющих основную часть работы, а затем подробно рассмотреть каждую из этих функций.
 

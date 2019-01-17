@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922188"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +37,7 @@ ms.locfileid: "53059143"
 ## <a name="list-of-command-line-parameters"></a>Список параметров командной строки
  В параметрах командной строки для Visual Studio регистр не учитывается.
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Отображение параметров командной строки.|
 |**/ AddRemoveFeatures**|Задание возможностей, которые должны быть добавлены в установленный продукт или удалены из него.|
@@ -65,5 +64,5 @@ ms.locfileid: "53059143"
 |**/u**<br /><br /> **/Uninstall**|Удаляет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |**/ Uninstall/force**<br /><br /> **/ Force /u**|Удаление ПО Visual Studio и всех его компонентов, используемых совместно с другими продуктами. **Предупреждение.**  При использовании этого параметра могут перестать правильно работать другие продукты, установленные на этом компьютере.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)

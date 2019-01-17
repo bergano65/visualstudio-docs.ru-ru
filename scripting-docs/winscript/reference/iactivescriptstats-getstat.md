@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Документы Microsoft
+title: IActiveScriptStats::GetStat | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725234"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095398"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Возвращает стандартный сценарий статистики.  
+Возвращает одно из стандартных внести в скрипт статистику.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -44,23 +44,23 @@ HRESULT GetStat(
   
 |Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Возвращает число инструкций, выполненных с момента запуска скрипта или сброса статистики.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Возвращает число инструкций, поскольку в сценарий, запущенный или сброса статистики.|  
   
  `pluHi`  
- [out] Старшие 32 разряда 64-разрядное целое число без знака, представляющее статистику.  
+ [out] Старшие 32 разряда 64-разрядного целого числа без знака, представляющее статистику.  
   
  `pluLo`  
- [out] Младшие 32 разряда 64-разрядное целое число без знака, представляющее статистику.  
+ [out] Младшие 32 разряда 64-разрядного целого числа без знака, представляющее статистику.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются значениями в таблице ниже.  
+ Метод возвращает `HRESULT`. Возможные значения включают, но не ограничиваются значения в таблице ниже.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает статистики стандартного скрипта.  
+ Этот метод возвращает одно из стандартных внести в скрипт статистику.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   

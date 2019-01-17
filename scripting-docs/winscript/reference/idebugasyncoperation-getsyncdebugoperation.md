@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetSyncDebugOperation | Документы Microsoft
+title: IDebugAsyncOperation::GetSyncDebugOperation | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae53dde2b7e48a4bf67cbd7aa5d70904c57d90f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b66eee068bfffcc726bff60e5e469f9d7254949
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094917"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Возвращает операцию синхронной отладки, связанные с этим объектом.  
+Возвращает операцию синхронной отладки, связанного с данным объектом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT GetSyncDebugOperation(  
    IDebugSyncOperation**  ppsdo  
 );  
@@ -38,17 +38,17 @@ HRESULT GetSyncDebugOperation(
   
 #### <a name="parameters"></a>Параметры  
  `ppsdo`  
- [out] Синхронные отладки операция, связанная с этим объектом.  
+ [out] Операции синхронной отладки, связанного с данным объектом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает синхронной отладки операции, связанной с этим объектом.  
+ Этот метод возвращает синхронной операции отладки связанного с данным объектом.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

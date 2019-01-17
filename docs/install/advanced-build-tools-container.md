@@ -2,8 +2,6 @@
 title: Расширенный пример для контейнеров
 description: ''
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
-ms.custom: ''
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -12,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 48fa07228c0df8e02f5f3a53895c516e9d679d3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916657"
 ---
 # <a name="advanced-example-for-containers"></a>Расширенный пример для контейнеров
 
@@ -91,6 +89,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) не будет правильно установлена на образ mcr<span></span>.microsoft\.com\/windows\/servercore:1809 или более поздней версии. При этом сообщение об ошибке не отображается.
+   >
+   > Дополнительные сведения см. в статье об [известных проблемам с контейнерами](build-tools-container-issues.md).
 
 Выполните следующую команду, чтобы произвести сборку образа в текущем рабочем каталоге:
 

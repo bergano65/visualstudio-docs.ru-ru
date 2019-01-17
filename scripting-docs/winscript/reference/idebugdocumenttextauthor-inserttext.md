@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::InsertText | Документы Microsoft
+title: IDebugDocumentTextAuthor::InsertText | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 248d89f7e1c29633a447bef672877682bfa44def
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fdef51ca1318e3513ca5a4ca49652ed066088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727204"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093058"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-Вставка нового текста в документ.  
+Вставляет новый текст в документ.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT InsertText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToInsert,  

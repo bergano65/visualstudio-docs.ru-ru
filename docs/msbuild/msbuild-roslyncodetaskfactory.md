@@ -1,8 +1,6 @@
 ---
-title: Встроенные задачи MSBuild с RoslynCodeTaskFactory | Документация Майкрософт
-ms.custom: ''
+title: Встроенные задачи MSBuild с RoslynCodeTaskFactory | Документы Майкрософт
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887754"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Встроенные задачи MSBuild с RoslynCodeTaskFactory
 Аналогично [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory использует кроссплатформенные компиляторы Roslyn для создания сборок задач в памяти, используемых в качестве встроенных задач.  Задачи RoslynCodeTaskFactory ориентированы на .NET Standard и могут работать в средах выполнения .NET Framework и .NET Core, а также на других платформах, таких как Linux и Mac OS.
@@ -257,4 +255,4 @@ Log.LogError("Hello, world!");
 
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство. Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Пошаговое руководство: Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

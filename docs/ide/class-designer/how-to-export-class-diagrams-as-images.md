@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Экспорт схем классов как изображений (конструктор классов)
+title: Как выполнить Экспорт диаграмм классов как изображений (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873834"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Практическое руководство. Экспорт схем классов как изображений
+# <a name="how-to-export-class-diagrams-as-images"></a>Как выполнить Экспорт диаграмм классов в виде изображений
 
 Чтобы экспортировать схему классов, созданную на основе кода в проекте, сохраните ее как изображение. Если вместо этого нужно экспортировать схемы класса UML, см. статью [Экспорт схем в виде изображений](../../modeling/export-diagrams-as-images.md).
 
@@ -41,5 +40,5 @@ ms.locfileid: "33956849"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
+- [Практическое руководство. Печать схем классов](how-to-print-class-diagrams.md)
+- [Работа с диаграммами классов](designing-and-viewing-classes-and-types.md)

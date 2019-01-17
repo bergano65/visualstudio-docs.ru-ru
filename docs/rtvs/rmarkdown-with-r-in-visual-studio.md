@@ -3,19 +3,18 @@ title: Разметка R
 description: Практическое руководство по созданию документов R Markdown в Visual Studio и составлению качественных отчетов, презентаций и панелей мониторинга.
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6394dcedc8c29f517d502d1a4e5475667f9b1f9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938476"
 ---
 # <a name="create-r-markdown-documents"></a>Создание документов R Markdown
 
