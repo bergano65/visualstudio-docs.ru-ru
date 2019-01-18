@@ -1,8 +1,6 @@
 ---
 title: Программу командной строки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775561"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960658"
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- Команда в приведенном выше примере захватывает графические данные из классической версии Internet Explorer во время просмотра веб-страницы, расположенный www.fishgl.com которого использует WebGL API для отрисовки трехмерного содержимого.  
+ Команда в приведенном выше примере захватывает графические данные из классической версии браузера Internet Explorer во время просмотра веб-страницы по адресу www.fishgl.com, которая использует API WebGL для отрисовки трехмерного содержимого.  
   
 > [!NOTE]
->  Так как аргументы командной строки, которые отображаются после имени приложения, передаются в него, необходимо указать аргументы, предназначенные для DXCap.exe перед использованием `-c` параметр.  
+>  Так как аргументы командной строки, находящиеся после имени приложения, передаются в него, аргументы, предназначенные для программы DXCap.exe, необходимо указать перед параметром `-c`.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Захват графических данных из приложения универсальной платформы Windows.  
  Вы можете захватывать графические данные из приложения универсальной платформы Windows.  
@@ -162,17 +160,17 @@ DXCap.exe -e map
   
  Приведенная выше команда перечисляет приложений универсальной платформы Windows, которые соответствуют «сопоставить»; Ниже приведен результат.  
   
- **Пакет «Microsoft.BingMaps»:**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
- **Полное имя: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **Пакет "Microsoft.BingMaps":**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Имя: Microsoft.BingMaps**  
- **Издатель: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
+ **ИМЯ Microsoft.BingMaps**  
+ **Издатель CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Версия: 2.1.2914.1734**  
- **Можно будет запустить приложения:**  
- **Идентификатор: AppexMaps**  
- **Exe: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe C:\Program**  
- **IsWWA: нет**  
+ **Запускаемые приложения:**  
+ **Идентификатор AppexMaps**  
+ **Exe C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: Нет**  
  **AppSpec (для запуска): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** в последней строке выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Захват определенных кадров или кадров в течение определенного интервала  
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>Проверка файла журнала графики относительно WARP  
- В режиме проверки файл журнала графики воспроизводится как на оборудовании, так и в WARP, после чего результаты сравниваются. Это может помочь определить ошибки отрисовки, вызванные драйвером. Используйте - v, чтобы проверить правильность работы графического оборудования в сравнении с WARP.  
+ В режиме проверки файл журнала графики воспроизводится как на оборудовании, так и в WARP, после чего результаты сравниваются. Это может помочь определить ошибки отрисовки, вызванные драйвером. Чтобы проверить правильность работы графического оборудования в сравнении с WARP, используйте параметр -v.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Чтобы уменьшить количество сравнений, вы можете указать подмножество команд для сравнения; остальные команды будут игнорироваться. Используйте параметр - проверьте, чтобы указать команды, результаты которых нужно сравнить.  
+ Чтобы уменьшить количество сравнений, вы можете указать подмножество команд для сравнения; остальные команды будут игнорироваться. Чтобы указать команды, результаты которых нужно сравнить, используйте параметр -examine.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  

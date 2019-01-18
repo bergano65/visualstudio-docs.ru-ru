@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880414"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270025"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio
 
@@ -162,7 +162,7 @@ ms.locfileid: "53880414"
 
 - Создавать и изменять шаблоны для элементов управления.
 
-- Использовать контекстное меню для выбранных элементов. То же меню доступно для выбранных элементов в области рисования.
+- Использовать меню, открываемое правой кнопкой мыши, (контекстное меню) для выбранных элементов. То же меню доступно для выбранных элементов в области рисования.
 
 Чтобы открыть окно **Структура документа**, в строке меню выберите **Вид** > **Другие окна** > **Структура документа**.
 
