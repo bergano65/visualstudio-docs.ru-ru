@@ -1,67 +1,75 @@
 ---
 title: -Deploy (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /deploy switch
-- deploy Devenv switch
+- Devenv, /Deploy switch
+- Deploy Devenv switch
 - deploying applications [Visual Studio], after build
-- /deploy Devenv switch
+- /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33738e4986b477024d1992da17078ac1368babf4
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920648"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269466"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
+
 Развертывает решения после сборки или перестроения. Применяется только к проектам с управляемым кодом.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig ProjConfigName] [/out LogFileName]
+```shell
+devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `SolnConfigName`
 
- Обязательный. Имя конфигурации решения, которая будет применяться для сборки решения, указанного в `SolutionName`.
+- *SolutionName*
 
- `SolutionName`
+  Обязательный. Полный путь и имя для файла решения.
 
- Обязательный. Полный путь и имя для файла решения.
+- *SolnConfigName*
 
- /project `ProjName`
+  Необязательный параметр. Имя конфигурации решения (например, `Debug` или `Release`) для использования при сборке решения, указанного в *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот аргумент не определен или является пустой строкой (`""`), используется действующая конфигурация решения.
 
- Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+- `/Project` *ProjName*
 
- /projectconfig `ProjConfigName`
+  Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести отображаемое имя проекта или относительный путь из папки *SolutionName* к файлу проекта. Можно также ввести полный путь и имя файла проекта.
 
- Необязательный параметр. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.
+- `/ProjectConfig` *ProjConfigName*
+
+  Необязательный параметр. Имя конфигурации сборки проекта (например, `Debug` или `Release`) для использования при сборке указанного проекта `/Project`. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот параметр задан, он переопределяет аргумент *SolnConfigName*.
+
+- `/Out` *OutputFilename*
+
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
 ## <a name="remarks"></a>Примечания
- Указанный проект должен быть проектом развертывания. В противном случае при передаче собранного проекта для развертывания возникает ошибка.
 
- Строки с пробелами заключаются в двойные кавычки.
+Указанный проект должен быть проектом развертывания. В противном случае при передаче созданного проекта для развертывания возникает ошибка.
 
- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+Строки с пробелами заключаются в двойные кавычки.
+
+Сводные данные по сборкам, включая ошибки, могут отображаться в окне **Команда** или в любом файле журнала, указанном с помощью параметра [/Out](out-devenv-exe.md).
 
 ## <a name="example"></a>Пример
- Этот пример развертывает проект `CSharpConsoleApp` с использованием конфигурации сборки проекта `Release` в пределах конфигурация решения `Release` для `MySolution`.
 
-```
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
+Этот пример развертывает проект `CSharpWinApp` с использованием конфигурации сборки проекта `Release` в решении `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)

@@ -6,19 +6,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 12/11/2018
+ms.date: 01/09/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: f730655d1bfdab1f7cdf03be99faafeb7f2fcb65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15738554ca658a337f187f554b07786569f95ea3
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989819"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154512"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -28,9 +28,9 @@ ms.locfileid: "53989819"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.5 | выпуска | 8 января 2019 г. | 15.9.28307.280 |
 | 15.9.4 | выпуска | 11 декабря 2018 г. | 15.9.28307.222 |
 | 15.0.20 | выпуска | 11 декабря 2018 г. | 15.0.26228.64 |
-| 15.9.3 | Предварительная версия 1 | 28 ноября 2018 г. | 15.9.28307.145 |
 | 15.9.3 | выпуска | 28 ноября 2018 г. | 15.9.28307.145 |
 | 15.9.2 | выпуска | 19 ноября 2018 г. | 15.9.28307.108 |
 | 15.9.1 | выпуска | 15 ноября 2018 г. | 15.9.28307.105 |

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802804"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154054"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -123,7 +123,7 @@ ms.locfileid: "53802804"
 
  Для запуска готового приложения и оценки его интерфейса воспользуйтесь Android Emulator. Это быстрый, надежный и простой в установке и настройке инструмент.
 
- Вы можете создавать приложения, ориентированные на весь спектр устройств под управлением Windows 10, с помощью C++ и шаблона проекта приложения универсальной платформы Windows (UWP). Дополнительные сведения см. в разделе [Целевые устройства Windows 10](#WindowsHTML) ранее в этой статье.
+ Вы можете создавать приложения, ориентированные на весь спектр устройств под управлением Windows 10, с помощью C++ и шаблона проекта приложения универсальной платформы Windows (UWP). Дополнительные сведения см. в разделе [Целевые устройства Windows 10](#WindowsHTML) ранее в этой статье.
 
  С помощью статической или динамической общей библиотеки вы сможете совместно использовать код С++ между устройствами Android и Windows.
 
@@ -162,7 +162,7 @@ ms.locfileid: "53802804"
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
 |[Сведения о Unity](http://unity3d.com/) (веб-сайт Unity)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление API Office 365 в проект Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [Службы приложений Azure — мобильные приложения](https://azure.microsoft.com/services/app-service/mobile/)

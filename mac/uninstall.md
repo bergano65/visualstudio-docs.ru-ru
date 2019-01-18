@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295674"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204337"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -34,10 +34,11 @@ ms.locfileid: "51295674"
 
 Вы можете удалить компоненты Visual Studio и Xamarin за один раз с помощью [скрипта удаления](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
-Этот скрипт содержит основную часть команд, приведенных в этой статье. Вследствие возможных внешних зависимостей в этом скрипте опущено два аспекта:
+Этот скрипт содержит основную часть команд, приведенных в этой статье. Из-за наличия возможных внешних зависимостей в этом скрипте опущено два аспекта: В таком случае перейдите в соответствующий раздел ниже и удалите их вручную:
 
-- **Удаление Mono**
-- **Удаление Android AVD**
+- **[Удаление Mono](#uninstall-mono-sdk-mdk)**
+- **[Удаление виртуальных устройств Android](#uninstall-android-avd)**
+- **[Удаление пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)**
 
 Чтобы запустить скрипт, выполните следующее.
 
@@ -45,13 +46,13 @@ ms.locfileid: "51295674"
 2. Откройте терминал и измените рабочий каталог на папку, куда был скачан скрипт:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Сделайте скрипт исполняемым и запустите его с помощью **sudo**:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. Наконец, удалите этот скрипт удаления.
 
@@ -65,13 +66,13 @@ ms.locfileid: "51295674"
 2. Откройте терминал и измените рабочий каталог на папку, куда был скачан скрипт:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Сделайте скрипт исполняемым и запустите его с помощью **sudo**:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. Наконец, удалите скрипт удаления .NET Core.
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)**:
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Удаление Mono SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Удаление пакета SDK для Android и пакета SDK для Java
 
 Пакет SDK для Android требуется для разработки приложений Android. Чтобы полностью удалить все части пакета SDK для Android, найдите файл в папке **~/Library/Developer/Xamarin/** и переместите его в **корзину**.
+
+> [!WARNING]
+> Учтите, что ключей подписывания Android, создаваемые с помощью Visual Studio для Mac, находятся в `~/Library/Developer/Xamarin/Keystore`. Выполните их резервное копирование соответствующим образом или не удаляйте этот каталог, чтобы сохранить хранилище ключей.
 
 Пакет SDK для Java (JDK) не требуется удалять, так как он уже входит в состав Mac OS X и macOS.
 
