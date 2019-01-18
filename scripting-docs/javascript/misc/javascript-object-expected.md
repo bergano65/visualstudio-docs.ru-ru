@@ -1,5 +1,5 @@
 ---
-title: Ожидался объект JavaScript | Документы Microsoft
+title: Ожидался объект JavaScript | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28514e4f1691364f68c2f60f3cab3bb0c18b1d12
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633044"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348013"
 ---
 # <a name="javascript-object-expected"></a>Ожидался объект JavaScript
-Предпринята попытка передать значение, отличное от[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект встроенную функцию, ожидающую [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта. Различные встроенные функции требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных на узле или внешних компонентов, как элементы управления).  
+Была предпринята попытка передать отличный от[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект встроенную функцию, ожидающую [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта. Различные встроенные функции требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных внешний компонент как элемент управления или узла).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что объект, который вы передаете как параметр имеет неверный тип.  
+-   Убедитесь, что объект, который вы передаете в как параметра имеет неправильный тип.  
   
 ## <a name="see-also"></a>См. также  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: Недопустимый символ (JavaScript) | Документы Microsoft
+title: Недопустимый символ (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633734"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348481"
 ---
 # <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
-Композицию идентификатора с помощью символ (или символы) не является допустимым путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используются следующие правила:  
+Созданные идентификатор с помощью символа (или символы) не является допустимым значением, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используйте следующие правила:  
   
 -   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
   
--   Последующие символы могут быть ASCII буквы, цифры и знаки подчеркивания.  
+-   Последующие символы могут быть ASCII буквы, цифры и символы подчеркивания.  
   
 -   Имя идентификатора не может быть зарезервированным словом.  
   

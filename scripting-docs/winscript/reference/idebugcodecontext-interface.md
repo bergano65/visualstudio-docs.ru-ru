@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugCodeContext | Документы Microsoft
+title: Интерфейс IDebugCodeContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725764"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349170"
 ---
 # <a name="idebugcodecontext-interface"></a>Интерфейс IDebugCodeContext
-Абстракция, представляющий позицию в исполняемый код.  
+Абстракция, представляющая позицию в исполняемый код.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugCodeContext` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Возвращает контекст документ, связанный с данным контекстом кода.|  
+|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Возвращает контекст документа, связанный с данным контекстом кода.|  
 |[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Устанавливает или снимает точку останова в этом контексте кода.|

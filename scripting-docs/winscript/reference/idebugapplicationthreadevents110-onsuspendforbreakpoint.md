@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint | Документы Microsoft
+title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 435ea678133755d02ab9a3f757f0947a83278e45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3ce1510ad9e7b4560a7aaafb8d65d5b0e6143cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725694"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349641"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-Определяет, полностью приостановил для точки останова и еще не возобновлен обычное выполнение потока.  
+Определяет, полностью приостановил для точки останова и еще не возобновлено обычное выполнение потока.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthreadevents110 — интерфейс](../../winscript/reference/idebugapplicationthreadevents110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

@@ -1,5 +1,5 @@
 ---
-title: Неопределенный идентификатор | Документы Microsoft
+title: Неопределенный идентификатор | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633584"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346141"
 ---
 # <a name="undefined-identifier"></a>Неопределенный идентификатор
-Предпринята попытка использовать идентификатор, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятор не распознает. Неопределенное значение возвращается при использовании:  
+Была предпринята попытка использовать идентификатор, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятор не распознает. Неопределенное значение возвращается при каждом выполнении:  
   
 -   переменную, которая не существует,  
   
--   переменной, которая была объявлена, но не было назначено, значение  
+-   переменную, которая объявлен, но никогда не было присвоено значение,  
   
--   свойство объекта, который не существует.  
+-   свойство объекта, которое не существует.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   

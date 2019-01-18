@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::SetFilterForEventSink | Документы Microsoft
+title: IDebugApplicationNode100::SetFilterForEventSink | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8ea26787427844a92417bf525dba271063cba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b273b770a1d82edbf5bbbe26c0865060234b852
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726014"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346492"
 ---
 # <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
-Задает фильтр на определенном [интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md) реализации. Она позволяет отладчики сценариев для фильтрации компилятором дочерних узлов приложения, чтобы PDM больше не будет отправлять события при их создании или удалены. По умолчанию будут отправляться все узлы.  
+Задает фильтр для конкретного [интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md) реализации. Она позволяет отладчиках скриптов отфильтровать компилятором дочерние узлы приложения таким образом, чтобы PDM больше не будет отправлять события при их создании или удалены. По умолчанию будут отправляться все узлы.  
   
 > [!IMPORTANT]
->  [Idebugapplicationnode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md) — реализованный PDM v10.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) является реализуется PDM v10.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

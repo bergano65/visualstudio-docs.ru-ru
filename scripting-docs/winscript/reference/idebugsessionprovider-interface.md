@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugSessionProvider | Документы Microsoft
+title: Интерфейс IDebugSessionProvider | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6d17546d5461a1ad76b144bf2652672ab4aa675
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727144"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345153"
 ---
 # <a name="idebugsessionprovider-interface"></a>Интерфейс IDebugSessionProvider
-Это основной интерфейс, предоставляемый отладчиком интегрированной среды разработки для узла и языка инициировал отладки. Он устанавливает сеанс отладки для выполняемого приложения. Этот интерфейс реализуется диспетчера отладки.  
+Основной интерфейс, предоставленный с помощью отладчика интегрированной среды разработки для реализации узлов и языка инициировать отладки. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчером отладки.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugSessionProvider` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Инициирует сеанс отладки с указанным приложением.|

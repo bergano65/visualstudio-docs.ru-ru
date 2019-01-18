@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugDocumentInfo | Документы Microsoft
+title: Интерфейс IDebugDocumentInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726384"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349339"
 ---
 # <a name="idebugdocumentinfo-interface"></a>Интерфейс IDebugDocumentInfo
-Содержит сведения о документ, в котором может или не удалось создать экземпляр.  
+Предоставляет сведения о документе, экземпляр которого может как создаваться, так и нет.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugDocumentInfo` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Возвращает имя указанного документа.|  
-|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Возвращает CLSID, идентифицирующий тип документа.|
+|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Возвращает идентификатор CLSID, идентифицирующий тип документа.|

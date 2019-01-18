@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptwinrterrordebug — интерфейс | Документы Microsoft
+title: Интерфейс IActiveScriptWinRTErrorDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34fcc4f1dc3ebc21f9303ba49f1709f2d023a29a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2355b9aa38abbed2ca66964a07bb47082eb76c32
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725434"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346505"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>IActiveScriptWinRTErrorDebug — интерфейс
-Реализуется обработчиком JavaScript для предоставления расширенных сведений ошибки среды выполнения Windows из [перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md) событий. Можно выполнить QueryInterface для получения его из [iactivescripterror —](../../winscript/reference/iactivescripterror.md) объекта.  
+Реализуется обработчиком JavaScript для предоставления расширенных сведений об ошибке среды выполнения Windows из [перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md) событий. Можно выполнить QueryInterface для получения их из [iactivescripterror —](../../winscript/reference/iactivescripterror.md) объекта.  
   
 > [!IMPORTANT]
 >  Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
@@ -30,8 +30,8 @@ ms.locfileid: "24725434"
 ## <a name="methods"></a>Методы  
  Интерфейс `IActiveScriptWinRTErrorDebug` предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IActiveScriptWinRTErrorDebug::GetCapabilitySid](../../winscript/reference/iactivescriptwinrterrordebug-getcapabilitysid.md)|Возвращает возможность SID для ошибки среды выполнения Windows, если он доступен.|  
-|[IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference](../../winscript/reference/iactivescriptwinrterrordebug-getrestrictederrorreference.md)|Возвращает среды выполнения Windows только строка ошибки ссылки, если он доступен.|  
+|[IActiveScriptWinRTErrorDebug::GetCapabilitySid](../../winscript/reference/iactivescriptwinrterrordebug-getcapabilitysid.md)|Возвращает возможности SID для ошибки среды выполнения Windows, если он доступен.|  
+|[IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference](../../winscript/reference/iactivescriptwinrterrordebug-getrestrictederrorreference.md)|Возвращает среды выполнения Windows только ошибки строку ссылки, если он доступен.|  
 |[IActiveScriptWinRTErrorDebug::GetRestrictedErrorString](../../winscript/reference/iactivescriptwinrterrordebug-getrestrictederrorstring.md)|Возвращает среды выполнения Windows только строка ошибки, если он доступен.|

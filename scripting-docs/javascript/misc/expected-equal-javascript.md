@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802268"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348611"
 ---
 # <a name="expected--javascript"></a>Ожидался символ "=" (JavaScript)
 Предпринята попытка создать переменную для использования с операторами условной компиляции, но не поместил знак равенства между переменной и значения, которое вы хотите назначить для него.  

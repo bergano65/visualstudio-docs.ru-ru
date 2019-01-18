@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptProfilerHeapEnum | Документы Microsoft
+title: Интерфейс IActiveScriptProfilerHeapEnum | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4761e8c7d4cc9c3372c7906e1503b8dbd059ca33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14562654e0fd3f3567d6f598f84cf2c966b1b8cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724714"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344893"
 ---
 # <a name="iactivescriptprofilerheapenum-interface"></a>Интерфейс IActiveScriptProfilerHeapEnum
-Итератор над данной кучей объекты, связанные с обработчиком скриптов, собранную [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Итератор, указывающий над данной кучей объектов, связанных с механизмом скриптов, собранные [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,13 +30,13 @@ interface IActiveScriptProfilerHeapEnum : IUnknown
   
 ## <a name="methods"></a>Методы  
  [Метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)  
- Возвращает следующий объект или объекты в наборе объектов кучи, собранную [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+ Получает следующий объект или объекты в наборе объектов кучи, собранные [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
  [Метод IActiveScriptProfilerHeapEnum::GetOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-getoptionalinfo-method.md)  
- Возвращает дополнительные сведения для указанного объекта в наборе объектов кучи, собранную [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+ Получает Дополнительные сведения для заданного объекта в наборе объектов кучи, собранные [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
  [Метод IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md)  
- Освобождает указанный [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) структуры и связанные с ними [структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) элементов.  
+ Освобождает указанный [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) структур и связанные с ними [структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) элементов.  
   
  [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md)  
  Возвращает имена строки, соответствующих [тип PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md) значения...

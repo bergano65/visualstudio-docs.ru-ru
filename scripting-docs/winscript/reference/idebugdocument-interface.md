@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugDocument | Документы Microsoft
+title: Интерфейс IDebugDocument | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 207dc0166cb9d0a59e99c03c511ec9bd75ea4bf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b70ef255b5f1e5eed4d36373274bc05cf92e67
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725754"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344295"
 ---
 # <a name="idebugdocument-interface"></a>Интерфейс IDebugDocument
 Базовый интерфейс для всех документов отладки.  
   
 ## <a name="remarks"></a>Примечания  
- `IDebugDocument` Интерфейс предоставляет методы, унаследованные от [интерфейс IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md). Он не предоставляет никаких дополнительных методов.
+ `IDebugDocument` Интерфейс предоставляет только методы, унаследованные от [интерфейс IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md). Он не предоставляет никаких дополнительных методов.

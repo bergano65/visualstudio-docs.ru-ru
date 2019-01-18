@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugCookie | Документы Microsoft
+title: Интерфейс IDebugCookie | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725984"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344044"
 ---
 # <a name="idebugcookie-interface"></a>Интерфейс IDebugCookie
-Позволяет отладочной куки-файл должен быть задан для использования с `IMachineDebugManagerCookie` интерфейса. Дополнительные сведения см. в разделе [интерфейс IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md). Этот интерфейс реализуется, процесс отладки Manager (PDM) и используемые отладчики сценариев.  
+Разрешает отправлять отладочный файл cookie должен быть задан, для использования с `IMachineDebugManagerCookie` интерфейс. Дополнительные сведения см. в разделе [интерфейс IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md). Этот интерфейс реализуется путем процесс отладки Manager (PDM) и потребляемых отладчиках скриптов.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugCookie` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Задает файл cookie отладки приложения.|  
   

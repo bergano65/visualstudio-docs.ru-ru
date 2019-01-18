@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugExtendedProperty | Документы Microsoft
+title: Интерфейс IDebugExtendedProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11edca1fbce6b7dab755a25dfc3e192225b5f6e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55414b52d104dfc706aa9687b815d3b4d8d0dc78
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727134"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347441"
 ---
 # <a name="idebugextendedproperty-interface"></a>Интерфейс IDebugExtendedProperty
-Расширяет `IDebugProperty` интерфейса.  
+Расширяет `IDebugProperty` интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Помимо методов, наследуемых из `IDebugProperty`, этот интерфейс предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IDebugProperty`, этот интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Возвращает `ExtendedDebugPropertyInfo` , описывающий это`IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Перечисляет члены коллекции расширенное свойство.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Получает `ExtendedDebugPropertyInfo` , описывающий это `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Перечисляет члены коллекции расширенного свойства.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: dbgprop.h  

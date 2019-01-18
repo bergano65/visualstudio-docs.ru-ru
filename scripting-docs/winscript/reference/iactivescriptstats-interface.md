@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptStats | Документы Microsoft
+title: Интерфейс IActiveScriptStats | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725054"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350145"
 ---
 # <a name="iactivescriptstats-interface"></a>Интерфейс IActiveScriptStats
-Позволяет ведущему приложению Статистика выполняемого сценария. Узел может использовать эти сведения для определения, если скрипт было слишком много времени.  
+Позволяет ведущему приложению запросить статистику выполняемого сценария. Узел может использовать эту информацию для определения того, если скрипт занял слишком много времени.  
   
  Помимо методов, наследуемых от `IUnknown`, `IActiveScriptStats` интерфейс предоставляет следующие методы.  
   
@@ -30,6 +30,6 @@ ms.locfileid: "24725054"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Возвращает стандартный сценарий статистики.|  
+|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Возвращает одно из стандартных внести в скрипт статистику.|  
 |[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Возвращает статистику пользовательского скрипта.|  
 |[IActiveScriptStats::ResetStats](../../winscript/reference/iactivescriptstats-resetstats.md)|Сбрасывает статистику для этого скрипта.|

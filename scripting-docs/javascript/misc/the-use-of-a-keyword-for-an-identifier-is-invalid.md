@@ -1,5 +1,5 @@
 ---
-title: Недопустимо использовать ключевое слово для идентификатора | Документы Microsoft
+title: Недопустимо использовать ключевое слово в качестве идентификатора | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 009ac8a71a12b2bf9f6c079480f68a12deab846c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632994"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348507"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>Недопустимо использовать ключевое слово в качестве идентификатора
-1048: Недопустимое использование ключевого слова в качестве идентификатора  
+1048: Недопустимо использовать ключевое слово в качестве идентификатора  
   
- Ключевое слово нельзя использовать как имя переменной, функции или другой идентификатор определяемого пользователем.  
+ Ключевое слово нельзя использовать как имя переменной, функции или другой идентификатор, определяемые пользователем.  
   
- Дополнительные сведения о ключевых словах см. в разделе [зарезервированные слова JavaScript](../../javascript/reference/javascript-reserved-words.md) и [зарезервированные слова JavaScript будущих](../../javascript/reference/javascript-future-reserved-words.md).
+ Дополнительные сведения о ключевых словах см. в разделе [зарезервированные слова JavaScript](../../javascript/reference/javascript-reserved-words.md) и [зарезервированные слова JavaScript будущее](../../javascript/reference/javascript-future-reserved-words.md).

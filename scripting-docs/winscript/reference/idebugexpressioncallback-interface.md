@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugExpressionCallBack | Документы Microsoft
+title: Интерфейс IDebugExpressionCallBack | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8ec9ca99a75b4e439cecab8ecc36193d04997b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e97b5755a8ea9fefb7456d255a2c0b417c3395cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726544"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347584"
 ---
 # <a name="idebugexpressioncallback-interface"></a>Интерфейс IDebugExpressionCallBack
-Предоставляет состояние события, связанные с ход выполнения `IDebugExpression` оценки.  
+Предоставляет состояния события, связанные с ходом `IDebugExpression` оценки.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugExpressionCallBack` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Указывает полный вычисления выражения.|
+|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Указывает, что вычисление выражения завершена.|

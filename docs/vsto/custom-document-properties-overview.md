@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936897"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349508"
 ---
 # <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
 
@@ -38,7 +38,7 @@ ms.locfileid: "53936897"
 
 Это свойство содержит строку, которая предоставляет сведения о манифесте развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Значение свойства The_AssemblyLocation могут иметь различные форматы, в зависимости от способа развертывания решения:
+ \_AssemblyLocation значение свойства могут иметь различные форматы, в зависимости от способа развертывания решения:
 
 - Если решение публикуется устанавливаться с веб-сайта, UNC-путь или компакт-диска или USB-накопитель, свойства _AssemblyLocation имеет формат *DeploymentManifestPath*|*SolutionID*. Следующая строка представляет пример:
 

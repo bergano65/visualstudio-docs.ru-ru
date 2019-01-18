@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugSessionProviderEx | Документы Microsoft
+title: Интерфейс IDebugSessionProviderEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726934"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349222"
 ---
 # <a name="idebugsessionproviderex-interface"></a>Интерфейс IDebugSessionProviderEx
-Это основной интерфейс, предоставляемый отладчиком интегрированной среды разработки для отладки инициировал узла и языка. Он устанавливает сеанс отладки для выполняемого приложения. Этот интерфейс реализуется диспетчера отладки.  
+Основной интерфейс, предоставляемый с помощью отладчика интегрированной среды разработки для отладки узла и инициирован языка. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчера отладки.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugSessionProviderEx` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Определяет, возможна ли отладка только в момент времени с указанным приложением.|  
+|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Определяет, возможна ли отладка Just In Time с указанным приложением.|  
 |[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Инициирует сеанс отладки с указанным приложением.|

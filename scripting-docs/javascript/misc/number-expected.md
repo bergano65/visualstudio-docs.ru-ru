@@ -1,5 +1,5 @@
 ---
-title: Ожидалось число | Документы Microsoft
+title: Ожидалось число | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 46e6525a79ed866b9c714913f11fcbbe13066208
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633054"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346128"
 ---
 # <a name="number-expected"></a>Ожидалось число
-Предпринята попытка вызвать **Number.prototype.toString** или **Number.prototype.valueOf** метода объекта типа, отличного от **номер**. Объект вызова этого типа должен иметь тип **номер**.  
+Предпринята попытка вызова **Number.prototype.toString** или **Number.prototype.valueOf** метод на объект типа, отличных от **номер**. Объект этого типа вызова должен иметь тип **номер**.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **Number.prototype.toString** или **Number.prototype.valueOf** методов для объектов типа **номер**.  
+-   Вызывается только **Number.prototype.toString** или **Number.prototype.valueOf** методов в объектах типа **номер**.  
   
 ## <a name="see-also"></a>См. также  
  [Объект Number](../../javascript/reference/number-object-javascript.md)   

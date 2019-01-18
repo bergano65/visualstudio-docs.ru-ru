@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugProperty | Документы Microsoft
+title: Интерфейс IDebugProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2888a6d781ecd501128545e483971a47859d9cda
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727064"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348364"
 ---
 # <a name="idebugproperty-interface"></a>Интерфейс IDebugProperty
-Используется для описания иерархической свойство сущности, для которого выполняется отладка, имеет имя, тип и значение. Чаще всего `IDebugProperty` используется для описания результат вычисления выражения, вычисление инструкции или evaluation регистра.  
+Используется для описания иерархической свойство сущности, для которого выполняется отладка, имеет имя, тип и значение. Чаще всего `IDebugProperty` используется для описания результата вычисления выражения, инструкции оценки или оценки регистра.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugProperty` интерфейса.  
+ В следующей таблице показаны методы `IDebugProperty` интерфейс.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Получить `DebugPropertyInfo` , описывающий это`IDebugProperty``.`|  
-|[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Возвращает расширенные сведения о свойстве.|  
+|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Получить `DebugPropertyInfo` , описывающий это `IDebugProperty``.`|  
+|[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Получает расширенные сведения по свойству.|  
 |[IDebugProperty::SetValueAsString](../../winscript/reference/idebugproperty-setvalueasstring.md)|Задает значение свойства из строки.|  
-|[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Перечисляет члены свойства.|  
+|[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Перечисляет члены коллекции свойства.|  
 |[IDebugProperty::GetParent](../../winscript/reference/idebugproperty-getparent.md)|Возвращает родительский объект свойства.|  
   
 ## <a name="requirements"></a>Требования  

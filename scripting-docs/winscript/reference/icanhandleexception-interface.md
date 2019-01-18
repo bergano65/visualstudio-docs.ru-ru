@@ -1,5 +1,5 @@
 ---
-title: Интерфейс ICanHandleException | Документы Microsoft
+title: Интерфейсы Icanhandleexception | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725214"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349976"
 ---
 # <a name="icanhandleexception-interface"></a>Интерфейс ICanHandleException
-Вызывающий объект код, вызывающий обработчика сценариев, чтобы указать, какие исключения дескрипторов.  
+Вызывающий объект обработчика сценариев вызывающему объекту указать, какие исключения дескрипторов.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `ICanHandleException` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Определяет, если вызывающий объект обработчика сценариев может обработать указанное исключение.|
+|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Определяет, если вызывающий объект обработчика сценариев может обрабатывать указанное исключение.|

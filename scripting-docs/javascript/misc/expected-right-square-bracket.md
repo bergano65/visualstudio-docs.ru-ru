@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804355"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347389"
 ---
 # <a name="expected-"></a>Ожидался символ "]"
 Ссылка на элемент массива, но отсутствует закрывающая квадратная скобка. Любое выражение, которое ссылается на элемент массива должен включать как открывающие и закрывающие скобки.  

@@ -1,5 +1,5 @@
 ---
-title: 'Idebugapplicationthreadevents110 —:: OnBeginThreadRequest | Документы Microsoft'
+title: 'IDebugApplicationThreadEvents110:: OnBeginThreadRequest | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 239a154a6692db5c93b13be27089d5ecf6663d66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90a9550b43dafb6bd38a68e379d486888d7bbf8d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725584"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345179"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
-Вызов в поток, используя поток PDM было начато переключения.  
+Вызов в потоке, с использованием потока PDM началось переключения.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthreadevents110 — интерфейс](../../winscript/reference/idebugapplicationthreadevents110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

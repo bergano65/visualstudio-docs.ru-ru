@@ -1,5 +1,5 @@
 ---
-title: Ожидается идентификатор (JavaScript) | Документы Microsoft
+title: Ожидается идентификатор (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,16 +21,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632874"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349235"
 ---
 # <a name="expected-identifier-javascript"></a>Ожидался идентификатор (JavaScript)
-Вы использовали нечто, отличное от идентификатора в контексте, где один требовалось. Идентификатор может быть:  
+Вы использовали отличный от идентификатора в контексте, где он требуется. Идентификатор может быть:  
   
--   переменная,  
+-   переменной,  
   
 -   свойство,  
   
@@ -40,7 +40,7 @@ ms.locfileid: "24632874"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Измените выражение, чтобы идентификатор находится слева от знака равенства.  
+-   Измените выражение, чтобы идентификатор отображается слева от знака равенства.  
   
 ## <a name="see-also"></a>См. также  
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)

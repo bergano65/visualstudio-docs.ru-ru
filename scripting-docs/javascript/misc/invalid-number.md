@@ -1,5 +1,5 @@
 ---
-title: Недопустимый номер | Документы Microsoft
+title: Недопустимый номер | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632914"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346817"
 ---
 # <a name="invalid-number"></a>Недопустимое число
 Недопустимый номер (ErrbadNumber 1013)  
   
- Предпринята попытка использования число, которое является недопустимым в JavaScript.  
+ Предпринята попытка использовать число, которое не является допустимым в JavaScript.  
   
- Сведения о допустимых номерах см. в разделе [номер объекта](../../javascript/reference/number-object-javascript.md).
+ Сведения о допустимых номеров, см. в разделе [Number Object](../../javascript/reference/number-object-javascript.md).

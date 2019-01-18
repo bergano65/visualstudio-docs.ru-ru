@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments | Документы Microsoft
+title: IDebugApplicationNode100::GetExcludedDocuments | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ad8e8e2bbe8c643385bb4a989367d58d7c38725
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9de24002733ddd2918e59c908502a7daf4dd8e5a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725614"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346726"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
-Возвращает текстовые документы, которые скрыты с помощью указанного фильтра.  
+Получает текстовые документы, которые скрыты с помощью указанного фильтра.  
   
 > [!IMPORTANT]
->  [Idebugapplicationnode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md) — реализованный PDM v10.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) является реализуется PDM v10.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

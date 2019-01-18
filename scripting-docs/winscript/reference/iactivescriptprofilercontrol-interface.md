@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptProfilerControl | Документы Microsoft
+title: Интерфейс IActiveScriptProfilerControl | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724674"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349495"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>Интерфейс IActiveScriptProfilerControl
-Реализован обработчик скриптов, которая поддерживает профилирования. Как правило, объект, реализующий интерфейс `IActiveScriptProfilerControl` также реализует [IActiveScript](../../winscript/reference/iactivescript.md) интерфейса. В этом случае можно получить дескриптор `IActiveScriptProfilerControl` интерфейса путем вызова `IUnknown::QueryInterface` метод для обработки объекта. Интерфейс предоставляет методы, необходимые для остановки и запуска профилирования на обработчик скриптов.  
+Реализован обработчик скриптов, который поддерживает профилирование. Как правило, объект, реализующий `IActiveScriptProfilerControl` также реализует [IActiveScript](../../winscript/reference/iactivescript.md) интерфейс. В этом случае можно получить дескриптор `IActiveScriptProfilerControl` интерфейс путем вызова `IUnknown::QueryInterface` метода объекта. Интерфейс предоставляет необходимые методы для остановки и запуска профилирования на обработчик скриптов.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Начинает профилирование в обработчик сценариев.|  
+|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Запускает профилирование на обработчик скриптов.|  
 |[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|Задает маску события профилировщика в обработчик сценариев.|  
-|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Останавливает профилирование в обработчик сценариев.|  
+|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Останавливает профилирование на обработчик скриптов.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы профилировщика активных скриптов](../../winscript/reference/active-script-profiler-interfaces.md)

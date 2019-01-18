@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugDocumentTextExternalAuthor | Документы Microsoft
+title: Интерфейс IDebugDocumentTextExternalAuthor | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727034"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344230"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>Интерфейс IDebugDocumentTextExternalAuthor
-Разрешает внешние редакторы для безопасного редактирования документов отладчик на основе файла уведомляя документа при изменении исходного файла.  
+Позволяет безопасно редактировать документы, отладчик на основе файлов, уведомляя документа при изменении исходного файла внешних редакторов.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugDocumentTextExternalAuthor` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Возвращает полный путь и имя документа.|  
-|[IDebugDocumentTextExternalAuthor::GetFileName](../../winscript/reference/idebugdocumenttextexternalauthor-getfilename.md)|Возвращает имя файла без сведений о пути.|  
-|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Уведомляет основное приложение об изменении исходного документа.|
+|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Возвращает полный путь к файлу и имя документа.|  
+|[IDebugDocumentTextExternalAuthor::GetFileName](../../winscript/reference/idebugdocumenttextexternalauthor-getfilename.md)|Возвращает имя документа без сведений о пути.|  
+|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Уведомляет ведущее приложение об изменении исходного документа.|

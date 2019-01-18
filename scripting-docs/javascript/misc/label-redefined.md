@@ -1,5 +1,5 @@
 ---
-title: Метка переопределена | Документы Microsoft
+title: Метка переопределена | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633024"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347818"
 ---
 # <a name="label-redefined"></a>Метка переопределена
-Создать новую метку, но ему было присвоено имя существующей метки. Метки могут использоваться для пометки блоков кода, но в пределах указанной области, должны быть уникальными.  
+Вы создали новую метку, но ему было присвоено имя существующей метки. Метки могут использоваться для обозначения блоки кода, но в пределах указанной области, они должны быть уникальными.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, уникальный в своих областях все метки, которые использовать в программах.  
+-   Убедитесь, что все метки, которые можно использовать в программах уникальны в соответствующих областях.  
   
 ## <a name="see-also"></a>См. также  
  [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   

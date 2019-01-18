@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801987"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344113"
 ---
 # <a name="expected-catch"></a>Ожидалось ключевое слово "catch"
 Вы использовали обработки исключений **попробуйте** block, но не писали связанного **catch** инструкции. Требуется механизм обработки исключений, что код, который может завершиться ошибкой, а также код, который не должен выполняться при возникновении исключения, заключаться в **попробуйте** блока. Исключения изнутри **попробуйте** запретить, используя **throw** инструкции и перехватываются за пределами **попробуйте** блок с одним или несколькими **catch**инструкций.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Документы Microsoft
+title: IDebugApplication110::CallableWaitForHandles | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725354"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350028"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Ожиданий для любого указанного дескрипторов в целях сигнализировать, обеспечив при этом межпоточные вызовы должны быть учтены данного потока. Этот метод должен вызываться из потока отладчика.  
+Ожиданий для любого из указанных маркеров, который должен получить сигнал при этом межпоточные вызовы публикуемый этим потоком. Этот метод должен вызываться из потока отладчика.  
   
 > [!IMPORTANT]
->  [Idebugapplication110 — интерфейс](../../winscript/reference/idebugapplication110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+>  [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
  Набор дескрипторов ожидания.  
   
  `pIndex`  
- Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, которое было указано.  
+ Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, который получил сигнал.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)

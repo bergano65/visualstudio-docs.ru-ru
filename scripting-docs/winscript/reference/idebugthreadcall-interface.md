@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IDebugThreadCall | Документы Microsoft
+title: Интерфейс IDebugThreadCall | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726944"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346271"
 ---
 # <a name="idebugthreadcall-interface"></a>Интерфейс IDebugThreadCall
-`IDebugThreadCall` Интерфейс обычно реализуется компонентом, который выполняет вызовы между потоками с `IDebugThread` маршалинг реализацию, предоставляемую диспетчером процесса отладки (PDM).  
+`IDebugThreadCall` Интерфейс обычно реализуется компонентом, который выполняет вызовы между потоками с `IDebugThread` маршалинга предоставляет диспетчер отладки процессов (PDM).  
   
- Вызовы PDM `IDebugThreadCall` интерфейса в нужный поток и `IDebugThreadCall` интерфейс отправляет вызов необходимого внедрения. `IDebugThreadCall` Интерфейс приводит сведения о параметрах, соответствующее верхней, передаваемый в параметрах.  
+ Вызовы PDM `IDebugThreadCall` интерфейс в нужный поток и `IDebugThreadCall` интерфейс перенаправляет вызов необходимого внедрения. `IDebugThreadCall` Интерфейс приводит сведения о параметрах, переданной в параметрах соответствующего наверх.  
   
- `IDebugThreadCall` Интерфейс представляет собой объект свободных потоков.  
+ `IDebugThreadCall` Интерфейс представляет собой свободнопоточный объект.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugThreadCall` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Обрабатывает вызовы для выполнения кода в другом потоке.|
