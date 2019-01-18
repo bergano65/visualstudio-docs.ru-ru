@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908896"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269830"
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -129,7 +129,7 @@ ms.locfileid: "53908896"
 
 ### <a name="to-permanently-delete-a-solution"></a>Окончательное удаление решения
 
-1. В **обозревателе решений** в контекстном меню решения, которое нужно удалить, выберите пункт **Открыть папку в проводнике**.
+1. В **обозревателе решений** щелкните правой кнопкой мыши проект, который вы хотите удалить, и выберите **Открыть папку в проводнике** в контекстном меню.
 
 1. В проводнике перейдите на один уровень вверх.
 

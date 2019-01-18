@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227282"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Проверка предыдущих состояний приложения с помощью функции возврата на шаг назад IntelliTrace в Visual Studio
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Проверка предыдущих состояний приложения с помощью функции возврата на шаг назад IntelliTrace в Visual Studio (Visual Studio Enterprise)
 
 Функция возврата на шаг назад в IntelliTrace автоматически создает моментальный снимок вашего приложения для каждого события точки останова и шага отладчика. Используя записанные моментальные снимки, вы можете возвращаться к этим точкам останова и шагам, просматривая предыдущее состояние приложения. Возможность возврата на шаг назад в IntelliTrace позволяет сэкономить время в тех случаях, когда вам нужно просмотреть предыдущее состояние приложения, но не требуется перезапускать отладку или воссоздавать необходимое состояние приложения.
 
@@ -26,7 +26,7 @@ ms.locfileid: "53939983"
 В этом руководстве рассмотрены следующие задачи:
 
 > [!div class="checklist"]
-> * Включение событий и моментальных снимков Intellitrace
+> * Включение моментальных снимков и событий IntelliTrace
 > * Навигация между событиями с использованием команд для перехода на шаг назад и вперед
 > * Просмотр моментальных снимков событий
   

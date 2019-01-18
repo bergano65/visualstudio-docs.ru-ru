@@ -1,8 +1,8 @@
 ---
-title: Начало отладки в Visual Studio 2017
+title: Отладка приложений в Visual Studio
 description: Начало отладки приложений с помощью отладчика Visual Studio
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227893"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -185,7 +185,7 @@ ms.locfileid: "53904973"
 
 В этом примере вызов `DirectoryInfo` выдал ошибку на пустой строке, хранящейся в переменной `value`.
 
-Помощник по исправлению ошибок — это отличная функция, которая помогает отлаживать ошибки. Используя помощник по исправлению ошибок, вы также можете, например, просмотреть сведения об ошибке и добавить контрольное значение. При необходимости вы также можете изменить условия для возникновения конкретного исключения.
+Помощник по исправлению ошибок — это отличная функция, которая помогает отлаживать ошибки. Используя помощник по исправлению ошибок, вы также можете, например, просмотреть сведения об ошибке и добавить контрольное значение. При необходимости вы также можете изменить условия для возникновения конкретного исключения. См. дополнительные сведения об [обработке исключений и устранении ошибок путем написания оптимизированного кода C#](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > Помощник по исправлению ошибок заменяет помощник по исключениям в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

@@ -1,58 +1,75 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/16/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
 - /ResetSettings Devenv switch
+- settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160cbf93cee8ff778a4f84ee833c7fac3d7f26b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52c3576b10fdc88563b3689e4b37d71b7f4659cd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227555"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Восстанавливает параметры по умолчанию Visual Studio и автоматически запускает интегрированную среду разработки Visual Studio. При необходимости выполняет сброс параметров в соответствии с указанным файлом *VSSETTINGS*.
+Восстанавливает параметры по умолчанию Visual Studio и автоматически запускает интегрированную среду разработки Visual Studio. При необходимости выполняет сброс параметров в соответствии с указанным файлом параметров.
 
-Параметры по умолчанию определяются по профилю, который был выбран при первом запуске Visual Studio.
+Параметры определяются профилем, который был выбран при первом запуске Visual Studio.
 
 > [!TIP]
 > Дополнительные сведения о сбросе параметров с помощью интегрированной среды разработки (IDE) см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Синтаксис
 
-```cmd
-Devenv /ResetSettings SettingsFile
+```shell
+devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
 ## <a name="arguments"></a>Аргументы
 
-`SettingsFile`
+- *SettingsFile*
 
-Полный путь и имя файла *VSSETTINGS*, применяемого к Visual Studio.
+  Необязательный параметр. Полный путь и имя файла параметров, применяемого к Visual Studio.
 
-Чтобы восстановить профиль "Общие параметры разработки", используйте `General`.
+- *DefaultCollectionSpecifier*
+
+  Необязательный параметр. Описатель, представляющий коллекцию параметров для восстановления по умолчанию. Выберите один из перечисленных в таблице описателей коллекции по умолчанию.
+
+  | Имя коллекции по умолчанию | Описатель коллекции |
+  | --- | --- |
+  | **Общие сведения** | `General` |
+  | **JavaScript** | `JavaScript` |
+  | **Visual Basic** | `VB` |
+  | **Visual C#** | `CSharp` |
+  | **Visual C++** | `VC` |
+  | **Веб-разработка** | `Web` |
+  | **Веб-разработка (только код)** | `WebCode` |
 
 ## <a name="remarks"></a>Примечания
 
-Если файл `SettingsFile` не указан, при следующем запуске Visual Studio вам предлагается выбрать коллекцию параметров по умолчанию.
+Если файл *SettingsFile* не указан, интегрированная среда разработки открывается с использованием существующих параметров.
 
 ## <a name="example"></a>Пример
 
-Следующая команда применяет параметры, сохраненные в файле `MySettings.vssettings`.
+Первый пример применяет параметры, сохраненные в файле `MySettings.vssettings`.
 
-```cmd
-Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
+Второй пример восстанавливает профиль Visual C# по умолчанию.
+
+```shell
+devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /resetsettings CSharp
 ```
 
 ## <a name="see-also"></a>См. также

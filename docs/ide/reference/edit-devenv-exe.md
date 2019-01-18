@@ -1,10 +1,11 @@
 ---
 title: -Edit (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /edit switch
+- Edit Devenv switch
+- Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
@@ -12,43 +13,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ccbd3a693313b870378021e6404424cfb11f199
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227685"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
-Открывает указанный файл в существующем экземпляре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Открывает указанный файл в существующем экземпляре Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
-```cmd
-Devenv /edit [file1[ file2]]
+```shell
+devenv /Edit [File1[ FileN]...]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `file1`
 
- Необязательный параметр. Файл, открываемый в существующем экземпляре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Если экземпляров [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не существует, создается экземпляр с упрощенным макетом окна, где и открывается `file1`.
+- *File1*
 
- `file2`
+  Необязательный параметр. Файл, открываемый в существующем экземпляре Visual Studio. Если экземпляр Visual Studio отсутствует, в упрощенном окне создается новый экземпляр, в котором открывается *File1*.
 
- Необязательный параметр. Один или несколько дополнительных файлов для открытия в существующем экземпляре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- *FileN*
+
+  Необязательный параметр. Один или несколько дополнительных файлов для открытия в существующем экземпляре Visual Studio.
 
 ## <a name="remarks"></a>Примечания
- Если файл не указан и существует экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], этот экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] получает фокус. Если файл не указан и экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отсутствует, создается экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с упрощенным макетом окна.
 
- Если существующий экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] находится в модальном состоянии, например, если открыто [диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md), файл открывается в существующем экземпляре, когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] выходит из модального состояния.
+Если файл не указан, используется существующий экземпляр Visual Studio. Если файл не указан и экземпляр Visual Studio отсутствует, создается новый экземпляр с упрощенным макетом окна.
+
+Если существующий экземпляр Visual Studio находится в модальном состоянии, файл открывается в существующем экземпляре, когда Visual Studio выходит из модального состояния. Например, такая ситуация может возникнуть, когда открыто диалоговое окно [Параметры](../../ide/reference/options-dialog-box-visual-studio.md).
 
 ## <a name="example"></a>Пример
- Этот пример открывает файл `MyFile.cs` в существующем экземпляре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] либо в новом экземпляре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], если он еще не существует.
 
-```cmd
+Первый пример открывает файл `MyFile.cs` в существующем экземпляре Visual Studio. Если экземпляр Visual Studio отсутствует, средство открывает файл в новом экземпляре. Второй пример аналогичным образом открывает три файла вместо одного.
+
+```shell
 devenv /edit MyFile.cs
+
+devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

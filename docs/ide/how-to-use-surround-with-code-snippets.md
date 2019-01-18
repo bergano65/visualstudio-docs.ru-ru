@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908815"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270155"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Как выполнить Использование окружающих фрагментов кода
 
-Способы использования окружающих фрагментов кода описаны в процедурах ниже. Доступ к окружающим фрагментам кода можно получить тремя способами: с помощью сочетаний клавиш, через меню **Правка** и через контекстное меню.
+Способы использования окружающих фрагментов кода описаны в процедурах ниже. Доступ к окружающим фрагментам кода можно получить тремя способами: с помощью сочетаний клавиш, меню **Правка** и контекстного меню.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Использование окружающих фрагментов кода с помощью сочетаний клавиш
 

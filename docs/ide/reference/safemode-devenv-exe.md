@@ -1,6 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,34 +13,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed14c3ec0da75df37c5a006f4e25240ac6630d20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 092cc1fc3267113e862646b7572e9091b8f6ddef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227204"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Запускает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в безопасном режиме, загружая только среду и службы по умолчанию.
+
+Запускает Visual Studio в безопасном режиме, загружая только среду и службы по умолчанию.
 
 ## <a name="syntax"></a>Синтаксис
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Примечания
- Этот параметр запрещает загрузку пакетов VSPackage сторонних производителей при запуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], обеспечивая надежность работы.
 
-## <a name="description"></a>Описание
- В приведенном ниже примере [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запускается в безопасном режиме.
+Этот параметр запрещает загрузку пакетов VSPackage сторонних производителей при запуске Visual Studio, обеспечивая стабильное выполнение.
 
-## <a name="code"></a>Код
+## <a name="example"></a>Пример
 
-```cmd
-Devenv.exe /SafeMode
+В приведенном ниже примере Visual Studio запускается в безопасном режиме.
+
+```shell
+devenv /safemode
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

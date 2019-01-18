@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989180"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269986"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. В проекте **BankTests** добавьте ссылку на проект **Банк**.
 
-   В **обозревателе решений** выберите элемент **Ссылки** в проекте **BankTests**, а затем выберите в контекстном меню пункт **Добавить ссылку**.
+   В **обозревателе решений** щелкните **Ссылки** в проекте **BankTests**, а затем выберите в контекстном меню **Добавить ссылку**.
 
 6. В диалоговом окне **Диспетчер ссылок** разверните **Решение** и проверьте элемент **Банк**.
 

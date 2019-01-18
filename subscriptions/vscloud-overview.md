@@ -9,12 +9,12 @@ description: Вы можете арендовать Visual Studio Professional �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740225"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269752"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 
@@ -37,9 +37,7 @@ ms.locfileid: "53740225"
 
 1.  Войдите в [Visual Studio Marketplace > Подписки](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Выберите подписку, которую хотите купить, например:
-    > [!div class="mx-imgBorder"]
-    > ![Покупка подписки на Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Выберите подписку, которую хотите купить, например Visual Studio Professional (месячная подписка).
 
 3.  Выберите подписку Azure, которая будет использоваться для выставления счетов. Если у вас нет подписки Azure, вы можете ее оформить.
     > [!div class="mx-imgBorder"]
