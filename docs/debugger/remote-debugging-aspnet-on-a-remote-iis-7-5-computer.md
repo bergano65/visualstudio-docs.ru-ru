@@ -12,10 +12,10 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53829200"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
@@ -48,7 +48,7 @@ ms.locfileid: "53829200"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создавать приложения ASP.NET 4.5.2 приложения на компьютере с Visual Studio
   
-1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В разделе шаблонов ASP.NET 4.5.2 выберите шаблон MVC</strong>. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
+1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В **ASP.NET 4.5.2</strong> выберите шаблоны **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
 
 2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
 
@@ -80,7 +80,7 @@ ms.locfileid: "53829200"
     > [!NOTE]
     > Если вы используете Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью следующей команды:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Перезапустите систему (или выполните в командной строке команду **net stop was /y**, а затем команду **net start w3svc**, чтобы изменение системной переменной PATH вступило в силу).
 
