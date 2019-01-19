@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f84c7155fb46e462f899e0037deab925ecbbcda6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 427c4545425f19576da39455bbf659fe64aac549
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562143"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398160"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -527,7 +527,7 @@ Node.js</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="/visualstudio/javascript/">
                                                     <h3>JavaScript</h3>
                                                     <p>Упрощенный кроссплатформенный скриптовый язык, который часто используется для включения в веб-страницы интерактивных возможностей.</p>
                                                 </a>
