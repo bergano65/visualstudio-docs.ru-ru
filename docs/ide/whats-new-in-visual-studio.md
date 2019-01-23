@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881027"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380087"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
 **Обновлено для [выпуска 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Хотите обновить предыдущую версию Visual Studio? Вот что Visual Studio 2017 может предложить вам: Visual Studio 2017 обеспечивает беспрецедентную производительность для любого устройства, приложения или платформы. Используйте Visual Studio 2017 для разработки приложений для Android, iOS, Windows, Linux, а также веб-приложений и облачных приложений. Быстро пишите код, выполняйте отладку и диагностику с легкостью, часто тестируйте и уверенно создавайте выпуски решений. Visual Studio можно расширить и настроить, создав собственные расширения. Система управления версиями в этом выпуске делает разработку гибкой, а совместную работу — эффективной.
+
+>[!div class="button"]
+>[Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Ниже приведен общий обзор изменений, внесенных с момента выпуска предыдущей версии — Visual Studio 2015:
 
@@ -50,11 +53,9 @@ ms.locfileid: "53881027"
 
 ### <a name="a-new-setup-experience"></a>Новые возможности установки
 
-[Скачайте Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) или [ознакомьтесь с требованиями к системе Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017).
+Visual Studio упрощает и ускоряет установку необходимых вам компонентов в любое время. Удаление тоже происходит без ошибок.
 
- Visual Studio упрощает и ускоряет установку необходимых вам компонентов в любое время. Удаление тоже происходит без ошибок.
-
- Самое важное изменение, которое вы заметите при установке Visual Studio, — это новый интерфейс установки. На вкладке **Рабочие нагрузки** вы увидите сгруппированные параметры установки для представления общей инфраструктуры, языков и платформ. Этот интерфейс охватывает все — от разработки классических приложений .NET до разработки приложений C++ для устройств с Windows, Linux и iOS.
+Самое важное изменение, которое вы заметите при установке Visual Studio, — это новый интерфейс установки. На вкладке **Рабочие нагрузки** вы увидите сгруппированные параметры установки для представления общей инфраструктуры, языков и платформ. Этот интерфейс охватывает все — от разработки классических приложений .NET до разработки приложений C++ для устройств с Windows, Linux и iOS.
 
 Выбирайте нужные вам рабочие нагрузки и при необходимости изменяйте их.
 
