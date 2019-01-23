@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960843"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417932"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Создание визуальной карты стека вызовов при отладке 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Создание визуальной карты стека вызовов при отладке (C#, Visual Basic, C++, JavaScript)
 
 Для визуального отслеживания стека вызовов при отладке можно создать карту кода. Вы можете вести заметки на карте, чтобы следить за деятельностью кода и сосредоточиться на поиске ошибок.
 
-Пошаговое руководство просмотрите это видео: Видео: [Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Пошаговое руководство просмотрите это видео: [Видео. Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Сведения о командах и действия, которые можно использовать с помощью карт кода, см. в разделе [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "53960843"
 
 ##  <a name="MapStack"></a> Сопоставление стека вызова
 
-1. В Visual Studio Enterprise C#, Visual Basic, C++, JavaScript или X ++ проекта, начать отладку, выбрав **Отладка** > **начать отладку** или нажав клавиши **F5**.
+1. В Visual Studio Enterprise C#, Visual Basic, C++ или JavaScript проекта, начать отладку, выбрав **Отладка** > **начать отладку** или нажав клавиши **F5**.
    
 1. Когда ваше приложение переходит в режим приостановки выполнения или при входе в функцию, выберите **отладки** > **карта кода**, или нажмите клавишу **Ctrl**+**Shift** +**`**.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898704"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345608"
 ---
 # <a name="msbuild-items"></a>Элементы MSBuild
 Элементы MSBuild — это входные данные для системы сборки. Они, как правило, представляют файлы (файлы указаны в атрибуте `Include`). Элементы группируются в типы, определяемые их именами. Типы элементов — это именованные списки элементов, которые можно использовать в качестве параметров для задач. Задачи используют значения элементов для выполнения этапов процесса сборки.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
+ [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)   
  [Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Практическое руководство. Отображение списка элементов, разделенных запятыми](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Определения элементов](../msbuild/item-definitions.md)   
- [Пакетная обработка](../msbuild/msbuild-batching.md)   
- [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)
