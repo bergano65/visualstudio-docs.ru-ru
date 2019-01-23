@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967431"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398290"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
@@ -26,9 +26,6 @@ ms.locfileid: "53967431"
 > Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
 
 В этой статье предполагается, что вы уже знакомы с основами разработки на JavaScript. Если это не так, мы рекомендуем сначала изучить руководство по [созданию приложения Node.js и Express](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Чтобы выполнять действия, описанные в этой статье, выберите нужные параметры JavaScript для Visual Studio. Сведения о настройке параметров для интегрированной среды разработки (IDE) вы найдете в [этой статье](../ide/environment-settings.md). При импорте параметров включите в импорт параметры **JavaScript**.
 
 ## <a name="add-a-new-project-file"></a>Добавление нового файла проекта
 
@@ -96,7 +93,7 @@ IntelliSense также может отображать сведения о ти
 
    ![Окно "Показать определение"](../javascript/media/write-code-peek-definition.png)
 
-1. Закройте окно просматриваемого определения, щелкнув небольшое поле со знаком "x" в его правом верхнем углу.
+Закройте окно просматриваемого определения, щелкнув небольшое поле со знаком "x" в его правом верхнем углу.
 
 ## <a name="use-code-snippets"></a>Использование фрагментов кода
 
