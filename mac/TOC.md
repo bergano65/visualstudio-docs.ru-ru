@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54315479"
----
 # [Visual Studio для Mac](index.md)
 # [Обзор интегрированной среды разработки](/visualstudio/mac/ide-tour/)
 
