@@ -9,12 +9,12 @@ description: Сведения о преимуществе Concierge Chat, вхо
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740238"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380005"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -49,7 +49,7 @@ ms.locfileid: "53740238"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark.  Не включает следующие категории:  FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark.  Не включает следующие категории:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -59,8 +59,8 @@ ms.locfileid: "53740238"
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Вопрос.  Доступны ли разные языки в службе чата?
-   Ответ. Помощь по проблемам с учетными записями, выставлением счетов и подписками доступна на нескольких языках.  Помощь в поиске сведений о продуктах и технической документации доступна только на английском языке.
+### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Вопрос:  Доступны ли разные языки в службе чата?
+   A: Помощь по проблемам с учетными записями, выставлением счетов и подписками доступна на нескольких языках.  Помощь в поиске сведений о продуктах и технической документации доступна только на английском языке.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

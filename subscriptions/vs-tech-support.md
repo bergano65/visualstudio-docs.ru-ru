@@ -9,12 +9,12 @@ description: Сведения о том, как активировать пре�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315518"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380251"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация преимущества технической поддержки в подписках Visual Studio
 
@@ -99,7 +99,7 @@ ms.locfileid: "54315518"
 | Visual Studio Dev Essentials | Н/Д | Недоступно |Н/Д|
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории: Imagine Premium. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории: Imagine Premium. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine Standard, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT.*
 
 <sup>2</sup> *Включает следующие категории: Imagine Standard.*
 

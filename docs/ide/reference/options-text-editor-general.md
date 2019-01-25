@@ -1,40 +1,22 @@
 ---
 title: Параметры, текстовый редактор, общие
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871334"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417802"
 ---
 # <a name="options-text-editor-general"></a>Параметры, текстовый редактор, общие
 
@@ -77,7 +59,17 @@ ms.locfileid: "53871334"
 
 По умолчанию редактор определяет кодировку путем поиска меток порядка байтов или тегов наборов символов. Если их не удается найти в текущем документе, редактор кода пытается автоматически определить кодировку UTF-8 путем сканирования последовательностей байтов. Чтобы отключить автоматическое определение кодировки, снимите этот флажок.
 
-## <a name="display"></a>Показать
+### <a name="follow-project-coding-conventions"></a>Следовать рекомендациям по написанию кода проекта
+
+Если выбрать этот параметр, соглашения о написании кода, указанные для проекта, переопределяют соглашения о написании кода, используемые вами в личных проектах.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Enable mouse-click to perform Go to Definition (Разрешить выполнение перехода к определению с помощью щелчка мыши)
+
+Если выбран этот параметр, можно нажать клавишу **CTRL**, навести указатель мыши на элемент и щелкнуть его. При этом произойдет переход к определению выбранного элемента. Вы также можете выбрать клавиши **ALT** или **CTRL** + **ALT** в раскрывающемся списке **Use modifier key** (Использовать клавишу-модификатор).
+
+Установите флажок **Открыть определение в быстром редакторе**, чтобы определение выбранного элемента отобразилось в окне без перехода из текущего расположения в редакторе кода. 
+
+## <a name="display"></a>Отображение
 
 ### <a name="selection-margin"></a>Поле выделения
 
@@ -94,6 +86,10 @@ ms.locfileid: "53871334"
 ### <a name="highlight-current-line"></a>Выделение текущей строки
 
 Если этот флажок установлен, вокруг строки кода, в которой находится курсор, отображается серый квадрат.
+
+### <a name="show-structure-guide-lines"></a>Показать направляющие структуры
+
+Если выбрать этот параметр, в редакторе отображаются вертикальные линии в соответствии со структурированными блоками кода. Это позволяет легко определять отдельные блоки кода.
 
 ## <a name="see-also"></a>См. также
 
