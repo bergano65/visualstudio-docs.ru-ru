@@ -1,6 +1,6 @@
 ---
 title: Отключение предупреждений анализа кода
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835062"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Отключение предупреждений анализа кода
 
@@ -66,17 +66,19 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **MessageId** — уникальный идентификатор проблемы для каждого сообщения.
 
-- **Область** -целевой объект, на котором подавляется предупреждение. Если целевой объект не указан, ему присваивается целевой объект атрибута. Ниже приведены поддерживаемые области:
+- **Область** -целевой объект, на котором подавляется предупреждение. Если целевой объект не указан, ему присваивается целевой объект атрибута. Поддерживается [областей](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) включают следующее:
 
-    - Module
+   - `module`
 
-    - Пространство имен
+   - `resource`
 
-    - Ресурс
+   - `type`
 
-    - Тип
+   - `member`
 
-    - Член
+   - `namespace` — Это область подавляет предупреждения от само пространство имен. Он не подавляет предупреждения для типов в пространстве имен.
+
+   - `namespaceanddescendants` -(Новое в Visual Studio 2019 г.) эта область подавляет предупреждения в пространстве имен и всех ее потомков символов. `namespaceanddescendants` Значение допустимо только для анализаторов Roslyn и учитывается на статическом анализе двоичных, основанное на FxCop.
 
 - **Целевой объект** — это идентификатор, который используется для указания целевого объекта, на котором подавляется предупреждение. Он должен содержать имя полного имени элемента.
 
@@ -151,7 +153,7 @@ public class Animal
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> При подавлении предупреждение в области видимости пространства имен, его подавление применяется к самому пространству имен. Он не подавляет предупреждение для типов в пространстве имен.
+> При отключении предупреждения с `namespace` области, он подавление применяется к самому пространству имен. Он не подавляет предупреждение для типов в пространстве имен.
 
 Любое подавление может быть выражен путем указания явного указания области. Такие подавления должны применяться на глобальном уровне. Нельзя указать подавления на уровне элементов, дополняя тип.
 
@@ -168,5 +170,6 @@ public class Animal
 
 ## <a name="see-also"></a>См. также
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Использование анализаторов Roslyn](../code-quality/use-roslyn-analyzers.md)
