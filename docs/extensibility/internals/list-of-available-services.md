@@ -11,24 +11,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800960"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре, необходимо использовать имя языка.  
-  
- Используются идентификаторы GUID службы, перечисленные здесь или получить из другого источника (например, языковой службы) для получения основной интерфейс или интерфейсы, с каждой службы.  
-  
-## <a name="the-services"></a>Службы  
-  
-| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание: |
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре, необходимо использовать имя языка.
+
+Используются идентификаторы GUID службы, перечисленные здесь или получить из другого источника (например, языковой службы) для получения основной интерфейс или интерфейсы, с каждой службы.
+
+## <a name="the-services"></a>Службы
+
+| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Да | Да | Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> КОД C/C++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> C/C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Да | Да | Реализуется для отображения обработчик событий по умолчанию для элемента управления конструктора форм. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Да | Да | Позволяет VSPackage для доступа к интерфейсу автоматизации другом пакете VSPackage или элементом управления. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Да | Да | Позволяет VSPackage добавьте или создайте библиотеку расширенных типов. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964641"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Да | Да | Позволяет VSPackage для добавления URL-адреса в список самых недавно использовавшихся Элементов URL-адреса и для получения списка всех URL-адресов в списке последних выбиравшихся файлов. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Да | Да | Позволяет VSPackage для получения фрейм окна, в котором может расположена пакета или части пакета. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Да | Да | Предоставляет доступ к документации в формате XML-файлы, связанные с файлом метаданных. |
-  
-## <a name="see-also"></a>См. также  
- [COM и управляемые службы](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>См. также
+
+- [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)

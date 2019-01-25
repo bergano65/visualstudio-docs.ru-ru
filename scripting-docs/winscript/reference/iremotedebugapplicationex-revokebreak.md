@@ -18,33 +18,35 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 537fb9cba51b1a13e82ffd2321bb96514dc16337
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: dd014defff65ee4b29566219ea3bc04ce0cc3a4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754563"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
-Отменяет команду break.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
+
+Отменяет команду break.
+
+## <a name="syntax"></a>Синтаксис
+
 ```cpp
-HRESULT RevokeBreak( );  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- Отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
-  
-|Значение|Описание|  
-|-----------|-----------------|  
-|`S_OK`|Метод успешно выполнен.|  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="see-also"></a>См. также  
- [IRemoteDebugApplicationEx Interface](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT RevokeBreak( );
+```
+
+### <a name="parameters"></a>Параметры
+
+Отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+
+Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.
+
+|Значение|Описание|
+|-----------|-----------------|
+|`S_OK`|Метод успешно выполнен.|
+
+## <a name="see-also"></a>См. также
+
+- [IRemoteDebugApplicationEx Interface](iremotedebugapplicationex-interface.md)

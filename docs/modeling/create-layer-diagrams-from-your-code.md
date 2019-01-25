@@ -13,22 +13,22 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761418"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Создание схем зависимостей на основе кода
 
-Для визуализации программного обеспечения системы высокоуровневой логической архитектуры, создайте *схема зависимостей* в Visual Studio. Чтобы удостовериться, что код соответствует этой структуре, проверьте его со схемой зависимостей. Можно создать схемы зависимостей для проектов Visual C# и Visual Basic. Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Для визуализации программного обеспечения системы высокоуровневой логической архитектуры, создайте *схема зависимостей* в Visual Studio. Чтобы удостовериться, что код соответствует этой структуре, проверьте его со схемой зависимостей. Можно создать схемы зависимостей для проектов Visual C# и Visual Basic. Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Создать диаграмму зависимостей](../modeling/media/layerdiagramvisualizecode.png)
 
 Диаграмма зависимостей вы можете упорядочить элементы решения Visual Studio в логические, абстрактные группы, называемые *слои*. Слои можно использовать для описания основных задач, выполняемых этими артефактами, или основных компонентов системы. Каждый слой может содержать другие слои, описывающие более подробные задачи. Можно также указать предполагаемые или существующие *зависимости* между слоями. Эти зависимости, представленные в виде стрелок, указывают, какие слои могут использовать или в настоящее время используют функциональные возможности, представленные другими слоями. Для поддержки архитектурного контроля кода добавьте предполагаемые зависимости в схему, а затем проверьте код по схеме.
 
-[Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[Видео. Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a> Создать диаграмму зависимостей
 
@@ -159,7 +159,8 @@ ms.locfileid: "53846169"
 
 ## <a name="see-also"></a>См. также
 
-- [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Поддержка выпуска для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
+- [Видео. Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
 - [Схемы зависимостей: Рекомендации](../modeling/layer-diagrams-guidelines.md)
 - [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
