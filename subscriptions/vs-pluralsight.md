@@ -9,12 +9,12 @@ description: Сведения об учебной подписке Pluralsight, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740342"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380308"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -79,7 +79,7 @@ ms.locfileid: "53740342"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) |       Azure       | Недоступно |       Н/Д       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Программа      | Недоступно |       Н/Д       |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
 <sup>2</sup>  *Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз.*
 
@@ -91,11 +91,11 @@ ms.locfileid: "53740342"
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Вопрос. Я использую подписку Visual Studio Enterprise, но не могу найти плитку Pluralsight на странице "Преимущества". В чем проблема?
-Ответ. Не все подписки Visual Studio Enterprise включают преимущество Pluralsight.  Просмотрите [таблицу прав на участие](#eligibility), чтобы проверить доступность для вашей подписки.
+### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Вопрос: Я использую подписку Visual Studio Enterprise, но не могу найти плитку Pluralsight на странице "Преимущества". В чем проблема?
+A: Не все подписки Visual Studio Enterprise включают преимущество Pluralsight.  Просмотрите [таблицу прав на участие](#eligibility), чтобы проверить доступность для вашей подписки.
 
-### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Вопрос. У меня есть доступ к настраиваемым спискам воспроизведения или каналам обучения?
-Ответ. Да, как подписчик Visual Studio вы имеете доступ к экспертным каналам в рамках преимущества Pluralsight. Эти каналы курируются специалистами Майкрософт и подходят для обучения в сферах .Net, Azure, DevOps и мобильности. Активируйте преимущество Pluralsight через портал подписки Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), чтобы получить доступ к этим каналам на стартовой странице Pluralsight:
+### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Вопрос: У меня есть доступ к настраиваемым спискам воспроизведения или каналам обучения?
+A: Да, как подписчик Visual Studio вы имеете доступ к экспертным каналам в рамках преимущества Pluralsight. Эти каналы курируются специалистами Майкрософт и подходят для обучения в сферах .Net, Azure, DevOps и мобильности. Активируйте преимущество Pluralsight через портал подписки Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), чтобы получить доступ к этим каналам на стартовой странице Pluralsight:
 
 • Скотт Ханселманн (Scott Hanselmann) (.Net, Azure) — [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
 
@@ -104,10 +104,10 @@ ms.locfileid: "53740342"
 • Джеймс Монтеманьо (James Montemagno) (Мобильность) — [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
 
-### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос. Что произойдет, когда закончится срок действия подписки Pluralsight?
-Ответ.  В конце срока действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
+### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос: Что произойдет, когда закончится срок действия подписки Pluralsight?
+A:  В конце срока действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
 
-### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Вопрос. Моя компания продляет подписку на Visual Studio по соглашению Enterprise. Преимущество Pluralsight можно использовать повторно?
+### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Вопрос: Моя компания продляет подписку на Visual Studio по соглашению Enterprise. Преимущество Pluralsight можно использовать повторно?
 A:  Нет.  Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз.  Это относится ко всем каналам приобретения, включая розничную торговлю, облако и корпоративную лицензию.
 
 ## <a name="support-resources"></a>Ресурсы поддержки

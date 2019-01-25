@@ -1,7 +1,7 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 08/28/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952404"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345257"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
 
@@ -65,6 +65,9 @@ Visual Studio 2017 поддерживает различные конфигур
 
 Откройте командную строку и выполните одну из команд, приведенных в примерах ниже. В этих примерах предполагается, что вы используете выпуск Visual Studio Community. Для других выпусков измените команду соответствующим образом.
 
+> [!TIP]
+> Чтобы предотвратить ошибку, убедитесь, что путь к полной установке содержит менее 80 символов.
+
 - Для разработки веб-приложений .NET или классических приложений .NET выполните следующую команду:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +84,10 @@ Visual Studio 2017 поддерживает различные конфигур
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-Если вы хотите установить язык, отличный от английского, выберите нужный языковой стандарт вместо `en-US` в поле [List of language locales](#list-of-language-locales) (Список языковых стандартов). Если потребуется, используйте [список доступных компонентов и рабочих нагрузок](workload-and-component-ids.md) для дополнительной настройки кэша установки.
+  > [!NOTE]
+  > Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. См. руководство по [использованию параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md), где описано, как создать макет, содержащий только выбранные компоненты для установки.
 
-> [!IMPORTANT]
-> Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. Скачивание этого макета может занять некоторое время. См. статью [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md), где описано, как создать макет, содержащий только выбранные компоненты для установки.
+Если вы хотите установить язык, отличный от английского, выберите нужный языковой стандарт вместо `en-US` в поле [List of language locales](#list-of-language-locales) (Список языковых стандартов). Если потребуется, используйте [список доступных компонентов и рабочих нагрузок](workload-and-component-ids.md) для дополнительной настройки кэша установки.
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Шаг 3. Установка Visual Studio из локального кэша
 

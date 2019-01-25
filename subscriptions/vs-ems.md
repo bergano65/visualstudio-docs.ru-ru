@@ -9,12 +9,12 @@ description: Сведения о преимуществе Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092070"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380060"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) в подписках Visual Studio
 
@@ -62,7 +62,7 @@ ms.locfileid: "54092070"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark.  Не включает следующие категории: Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network (Professional).*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark.  Не включает следующие категории: Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Не включает следующую категорию: Microsoft Partner Network (Professional)*
 

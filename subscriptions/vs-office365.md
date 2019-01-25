@@ -9,12 +9,12 @@ description: Сведения о преимуществе Office 365, входя
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968395"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380147"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
@@ -63,7 +63,7 @@ ms.locfileid: "53968395"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
 
 
 > [!NOTE]

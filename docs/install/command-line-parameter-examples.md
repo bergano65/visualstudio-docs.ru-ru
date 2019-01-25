@@ -1,7 +1,7 @@
 ---
 title: Примеры параметров командной строки для установки
 description: Настройте эти примеры, чтобы произвести собственную установку Visual Studio из командной строки.
-ms.date: 11/14/2018
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989991"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380156"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Примеры параметров командной строки для установки Visual Studio 2017
 
@@ -28,7 +28,9 @@ ms.locfileid: "53989991"
 > Для выполнения всех команд требуются повышенные права администратора. Если запустить процесс с другими правами, появится запрос системы контроля учетных записей пользователей.
 >
 > [!NOTE]
->  Чтобы объединить несколько строк в одну команду, используйте символ `^` в конце командной строки. Кроме того, можно просто поместить эти строки в одну строку. В PowerShell вместо этого используется символ обратного апострофа (`` ` ``).
+> Чтобы объединить несколько строк в одну команду, используйте символ `^` в конце командной строки. Кроме того, можно просто поместить эти строки в одну строку. В PowerShell вместо этого используется символ обратного апострофа (`` ` ``).
+
+Список рабочих нагрузок и компонентов, которые можно установить с помощью командной строки, см. в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="using---installpath"></a>Использование параметра --installPath
 
@@ -83,13 +85,15 @@ ms.locfileid: "53989991"
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Использование параметра --includeRecommended
+## <a name="using---all"></a>Использование параметра --all
 
 * Запустите интерактивную установку всех рабочих нагрузок и компонентов, доступных для выпуска Visual Studio 2017 Enterprise:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Использование параметра --includeRecommended
 
 * Установите второй именованный экземпляр Visual Studio Professional 2017 на компьютер с уже установленным выпуском Visual Studio Community 2017 с поддержкой разработки Node.js:
 
@@ -169,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

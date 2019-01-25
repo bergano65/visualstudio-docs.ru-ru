@@ -9,12 +9,12 @@ description: Сведения об активации подписки Parasoft 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739673"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379946"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -83,7 +83,7 @@ ms.locfileid: "53739673"
 | Visual Studio Dev Essentials | Н/Д  | Недоступно|Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории: Microsoft Partner Network (Enterprise).  Не включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории: Microsoft Partner Network (Enterprise).  Не включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
 
 
 > [!NOTE]

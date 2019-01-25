@@ -9,12 +9,12 @@ description: Сведения о подписке на Power BI Pro, входя
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315505"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380186"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -83,7 +83,7 @@ ms.locfileid: "54315505"
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д|
 | Visual Studio Enterprise (ежемесячная облачная) | Azure                                       | Недоступно                                  |Н/Д|
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Microsoft Valued Professional (MVP), региональный директор (RD).  Не включает следующие категории:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD).  Не включает следующие категории:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

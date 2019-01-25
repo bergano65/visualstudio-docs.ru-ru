@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908284"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345621"
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
 Содержит определяемый пользователем элемент и его метаданные. Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.  
@@ -122,5 +122,5 @@ ms.locfileid: "53908284"
 
 ## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)   
- [Свойства MSBuild](../msbuild/msbuild-properties.md)   
+ [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md) [свойства MSBuild](../msbuild/msbuild-properties.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

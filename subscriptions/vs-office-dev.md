@@ -9,12 +9,12 @@ description: Узнайте о преимуществе для разработ�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739725"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379769"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 
@@ -75,7 +75,7 @@ ms.locfileid: "53739725"
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, разработчик ПО и служб MCT, ПО и службы MCT.  Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, разработчик ПО и служб MCT, ПО и службы MCT.  Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
 
 > [!NOTE]
