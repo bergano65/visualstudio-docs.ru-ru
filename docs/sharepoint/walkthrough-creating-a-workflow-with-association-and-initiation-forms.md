@@ -12,17 +12,17 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9d4fe908e372a478d382a1087a7d7e1363dbef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824740"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864388"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска
   В этом пошаговом руководстве показано, как создать базовый последовательный рабочий процесс, в котором используются формы ассоциации и инициации. Это формы ASPX, которые позволят параметров добавляться в рабочий процесс, когда он сначала связан администратором SharePoint (форма сопоставления) и когда рабочий процесс запускается пользователем (форма запуска).  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2736dbcde8708589b4918979acacfdafa34cc4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890106"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864285"
 ---
 # <a name="projectitem-element"></a>ProjectItem - элемент
   Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из *.spdata* файла.  
@@ -44,7 +44,7 @@ ms.locfileid: "53890106"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |**DefaultFile**|Необязательный **xs: строка** атрибута.<br /><br /> Относительный путь, включая имя файла, файла, который открывается в редакторе Visual Studio при открытии элемента проекта SharePoint в **обозревателе решений**. Путь является относительным из папки, которая содержит *.spdata* файла.|  
 |**FeatureReceiverClass**|Необязательный **xs: String** атрибута.<br /><br /> Полное имя класса-получателя компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. в разделе [сведениями упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a93923525ce1a3c1a3396963f05b2f0335a8f635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c3527070c1934c723b6038c93347f1a78ac948a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909195"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864882"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Расширение документов Word и книг Excel в надстройках VSTO во время выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.  
@@ -41,7 +41,7 @@ ms.locfileid: "53909195"
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Создание расширенных объектов в надстройках VSTO  
  *Расширенные объекты* — это экземпляры типов, предоставляемых средой выполнения Visual Studio Tools для Office, и расширяющие функциональные возможности объектов, существующих в объектных моделях Word или Excel (так называемых *собственных объектов Office*). Чтобы создать расширенный объект для объекта Word или Excel, используйте метод `GetVstoObject`. При первом вызове `GetVstoObject` объект метода для указанного Word или Excel, он возвращает новый объект, расширяющий указанный объект. С каждым последующим вызовом этого метода для одного и того же объекта Word или Excel возвращается один и тот же расширенный объект.  
   
- Тип расширенного объекта имеет такое же имя, как тип собственного объекта Office, но этот тип определен в пространстве имен <xref:Microsoft.Office.Tools.Excel> или <xref:Microsoft.Office.Tools.Word>. Например, если метод `GetVstoObject` вызывается для расширения объекта <xref:Microsoft.Office.Interop.Word.Document>, он возвращает объект <xref:Microsoft.Office.Tools.Word.Document>.  
+ Тип расширенного объекта имеет такое же имя, как тип собственного объекта Office, но этот тип определен в пространстве имен <xref:Microsoft.Office.Tools.Excel> или <xref:Microsoft.Office.Tools.Word> . Например, если метод `GetVstoObject` вызывается для расширения объекта <xref:Microsoft.Office.Interop.Word.Document>, он возвращает объект <xref:Microsoft.Office.Tools.Word.Document>.  
   
  Методы `GetVstoObject` предназначены для использования преимущественно в проектах надстроек VSTO. Кроме того, их можно использовать в проектах уровня документа, но в этом случае они ведут себя иначе и имеют меньшее число применений.  
   

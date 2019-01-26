@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bef002d1d32abf4f97a63f284545cbaa6eee403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebe207bffe16ef7b8dc7af5a79c01b3ee74abe3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853461"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863283"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Развертывание, публикация и обновление пакетов решений SharePoint
   После разработки решения SharePoint в Visual Studio можно либо развернуть его пакетный файл (.wsp) на локальном сервере SharePoint, либо опубликовать его на локальном или удаленном сервере SharePoint. При развертывании файлов можно настроить, как должна выполняться развертка пакетных файлов (.wsp).  

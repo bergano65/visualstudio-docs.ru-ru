@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871061"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869022"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов, см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871061"
 |Местоположение развертывания|Полный путь к файлу на сервере SharePoint. Этот путь состоит из корневого каталога развертывания и вложенных свойств пути развертывания.|  
 |Путь развертывания|Относительный путь к файлу на сервере SharePoint файла, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> Значение *RootFile* для *тип развертывания* изменения свойств *Deployment Root* свойства \<SharePointRoot >\\, полученный в полный путь к \<SharePointRoot > \Workflow1\\. Дополнительные сведения см. в разделе [упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например \<SharePointRoot > \Template\Features\\\<имя_компонента >\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|  
-|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> NoDeployment:  *\<нет значения >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<имя_компонента >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<имя_компонента >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> NoDeployment:  *\<нет значения >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Имя файла|Имя файла или папки для файла элемента.|  
 |Полный путь|Расположение файла для элемента. (только для чтения).|  
   

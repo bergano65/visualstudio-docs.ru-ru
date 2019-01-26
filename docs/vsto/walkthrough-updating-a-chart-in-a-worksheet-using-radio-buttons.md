@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891947"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873877"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей
   В этом пошаговом руководстве описываются основные принципы с помощью переключателей на лист Microsoft Office Excel, чтобы дать пользователю возможность быстро переключаться между вариантами. В этом случае параметры изменение стиля диаграммы.  
@@ -49,7 +49,7 @@ ms.locfileid: "53891947"
 
 ### <a name="to-add-the-data"></a>Для добавления данных  
 
-1. Откройте Microsoft Excel.  
+1. Open Microsoft Excel.  
 
 2. Щелкните правой кнопкой мыши **Sheet3** , а затем щелкните **Переименовать** в контекстном меню.  
 

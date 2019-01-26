@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d44654e223c24d3040997bdbd7b7bb0e193263a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858387"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865168"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Проектирование модели подключения к бизнес-данным
   Можно разработать модель для службы бизнес-данным (BDC), добавив в файл модели сущностей и методы. Сущность описывает коллекцию полей данных. Например сущность может представлять таблицу в базе данных. Метод выполняет задачи, такие как добавление, удаление или обновление данных в виде сущностей. Дополнительные сведения см. в разделе [интегрировать бизнес-данные в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

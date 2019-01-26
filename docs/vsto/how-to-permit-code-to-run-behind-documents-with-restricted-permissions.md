@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949340"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870260"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
   Ограничение разрешений для документа или книги, можно использовать функции управления правами на доступ к данным (IRM) в Microsoft Office. По умолчанию кода программной части защищенный документ Microsoft Office Word или книгу Microsoft Office Excel не поддерживается для запуска. Значение по умолчанию можно изменить, чтобы ваши расширения управляемого кода можно получить доступ к объектной модели, и решение будет работать.  

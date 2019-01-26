@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946845"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863933"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Развертывание решения Office с помощью ClickOnce
   Решение Office можно развернуть быстрее, если использовать ClickOnce. При публикации обновлений решение автоматически обнаруживает и устанавливает их. Однако для использования ClickOnce необходимо устанавливать решение отдельно для каждого пользователя компьютера. Таким образом, следует с помощью установщика Windows (*.msi*) Если несколько пользователей будут запускать решение на одном компьютере.

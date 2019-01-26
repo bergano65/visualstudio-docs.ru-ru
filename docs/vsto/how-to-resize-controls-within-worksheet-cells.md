@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed controls, resizing
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe63ef8be7c17482f0af864c45b29d8e2dd51189
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927354"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863881"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Как выполнить Изменение размера элементов управления внутри ячеек листа Excel
   При изменении размера столбцов или строк на листе, все элементы управления ведущего приложения в ячейках автоматическое изменение размера высоты или ширины ячейки, который был изменен. Элементы управления Windows Forms не меняют размер автоматически по умолчанию.  

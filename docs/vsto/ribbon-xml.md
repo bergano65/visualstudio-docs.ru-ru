@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929579"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869441"
 ---
 # <a name="ribbon-xml"></a>XML-ленты
   Элемент Лента (XML) позволяет настраивать ленту с помощью XML. Использование элемента Лента (XML), если вы хотите настроить ленту способом, который не поддерживается элементом Лента (визуальный конструктор). Сравнение действий, выполняемых с каждым элементом, см. в разделе [Обзор ленты](../vsto/Ribbon-overview.md).  
@@ -113,7 +113,7 @@ ms.locfileid: "53929579"
   
  В следующей таблице указаны элементы по умолчанию в XML-файле ленты.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |**customUI**|Представляет настраиваемую ленту в проекте надстройки VSTO.|  
 |**ribbon**|Представляет ленту.|  

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - packaging [SharePoint development in Visual Studio]
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, packaging and deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a50d7088cdeb868ef4170e3b4b76fbf129151626
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849023"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867641"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Упаковка и развертывание решений SharePoint
   Как правило решения SharePoint развертывается на сервере SharePoint с помощью файла пакета (.wsp) решения. Visual Studio можно использовать для организации элементов проекта SharePoint в функции и создание пакета для развертывания компоненты SharePoint.  

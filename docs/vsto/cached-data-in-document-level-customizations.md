@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868278"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Кэшированные данные в настройках уровня документа
   Основная цель настроек уровня документа является отделение данных из представления в документах Office. Данные относятся к информации, хранящейся в документе, включая числовые и текстовые значения. Представление ссылается на пользовательский интерфейс и объектной модели Microsoft Office Word и Microsoft Office Excel.  

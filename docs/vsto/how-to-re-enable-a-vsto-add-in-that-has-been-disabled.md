@@ -11,17 +11,17 @@ helpviewer_keywords:
 - disabled add-ins
 - add-ins [Office development in Visual Studio], disabled
 - add-ins [Office development in Visual Studio], enabling
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfc5a70e309ffece432a2d9c9adb10011557239d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939402"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869256"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Как выполнить Повторное включение надстройки VSTO, которая была отключена
   Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Если приложение не загружает надстройку VSTO при попытке выполнить отладку, возможно, вы жестко или мягко отключили надстройку VSTO.  

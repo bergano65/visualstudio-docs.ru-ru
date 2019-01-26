@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, application pages
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ed9c17d68e2386b7a5b5077ee4a7d1764ea5aee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 815d48d7e7874ea5bd34d840ceecadcc4edb8dda
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876410"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865077"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Создание страниц приложений для SharePoint
   *Страницы приложения* является веб-страницу ASP.NET, предназначенный для использования в веб-сайта SharePoint. Страницы приложений представляют собой особый тип страницы ASP.NET. Основное различие между страницей приложения и стандартной страницы ASP.NET является то, что приложения содержит содержимое, объединенное с эталонной страницей SharePoint. Главная страница позволяет страницы приложений, совместно использовать одно и то же внешний вид и поведение, как другие страницы на сайте.  
@@ -48,7 +48,7 @@ ms.locfileid: "53876410"
   
  Visual Studio добавляет в проект следующие файлы:  
   
-|Файл|Описание|  
+|Файл|Описание:|  
 |----------|-----------------|  
 |Файл страницы ASP.NET (*.aspx*)|Содержит XML-разметку, определяющего страницу.|  
 |Файл кода страницы приложения|Содержит код страницы приложения. Добавьте код, который обрабатывает события в этот файл.|  

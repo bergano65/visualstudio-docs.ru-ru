@@ -16,15 +16,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898639"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863816"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Привязка данных к элементам управления в решениях Office
   Вы можете привязать элементы управления Windows Forms и *элементы управления ведущего приложения* в документе Microsoft Office Word или листе Microsoft Office Excel к источнику данных, чтобы эти элементы управления автоматически отображали данные. Можно привязывать данные к элементам управления в проектах уровня документа и уровня приложения.  
@@ -50,7 +50,7 @@ ms.locfileid: "53898639"
  Пошаговые руководства с примерами простой привязки данных, см. в разделе [Пошаговое руководство: Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) для проекта уровня документа и [Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) для проекта надстройки VSTO.  
   
 ## <a name="complex-data-binding"></a>Сложная привязка данных  
- Сложная привязка данных присутствует, когда свойство элемента управления привязывается к нескольким элементам данных, например к нескольким столбцам в таблице данных. Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> для Excel — единственный элемент управления ведущего приложения, который поддерживает сложную привязку данных. Существует также множество элементов управления Windows Forms, поддерживающих сложную привязку данных, например элемент управления <xref:System.Windows.Forms.DataGridView>.  
+ Сложная привязка данных присутствует, когда свойство элемента управления привязывается к нескольким элементам данных, например к нескольким столбцам в таблице данных. Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> для Excel — единственный элемент управления ведущего приложения, который поддерживает сложную привязку данных. Существует также множество элементов управления Windows Forms, поддерживающих сложную привязку данных, например элемент управления <xref:System.Windows.Forms.DataGridView> .  
   
  Для выполнения сложной привязки данных задайте в свойстве `DataSource` элемента управления объект источника данных, который поддерживается сложной привязкой данных. Например, свойство <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно привязать к нескольким столбцам в таблице данных. Все данные в таблице данных отображаются в элементе управления <xref:Microsoft.Office.Tools.Excel.ListObject> , и при изменении данных в таблице данных свойство <xref:Microsoft.Office.Tools.Excel.ListObject> также изменяется. Список источников данных, которые можно использовать для сложной привязки данных, см. в разделе [источников данных, поддерживаемые Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - update element
 - <update> element
 - application manifests [Office development in Visual Studio], <update> element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988992"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867394"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)
   `update` Элемент указывает интервал, с которым решение будет проверять наличие обновлений.
@@ -47,7 +47,7 @@ ms.locfileid: "53988992"
 
  Элемент `update` имеет указанные ниже дочерние элементы.
 
-### <a name="expiration"></a>истечение срока действия
+### <a name="expiration"></a>expiration
  Элемент `expiration` является обязательным и находится в пространстве имен `vstav3` . Этот элемент задает интервал, с которой решение проверяет наличие обновлений.
 
  Элемент `expiration` имеет перечисленные ниже атрибуты.
@@ -70,7 +70,7 @@ ms.locfileid: "53988992"
 
 ## <a name="example-of-setting-a-default-update-interval"></a>Пример настройки по умолчанию интервал обновления
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В следующем примере кода показано `update` элемента в манифесте приложения для решений Office. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

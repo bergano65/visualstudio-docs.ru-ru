@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879138"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865894"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
   С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверных элементов управления, выполняемые внутри страницы: они являются стандартными блоками страниц, отображаемых на сайте SharePoint. См. в разделе [стандартный блок: Веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -57,7 +57,7 @@ ms.locfileid: "53879138"
 ## <a name="sharepoint-controls"></a>Элементы управления SharePoint
  Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страницы приложения. Эти элементы управления отображаются в **элементов** под **элементы управления SharePoint**. Функциональные возможности для этих элементов управления является производным от [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) пространство имен, которое содержит серверные элементы управления ASP.NET, которые используются на страницах сайта и списка SharePoint.  
   
-|Имя элемента|Описание:|  
+|Имя элемента|Описание|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет меню ASP. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** элемент в коллекцию *.aspx* странице и применяет один или несколько внешних таблиц стилей определяется **CssRegistration**.|  

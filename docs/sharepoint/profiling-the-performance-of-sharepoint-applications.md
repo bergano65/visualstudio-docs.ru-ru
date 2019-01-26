@@ -13,17 +13,17 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8578a27dc6daceda25667142a3cdccae50a42552
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905693"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864141"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Профилирование производительности приложений SharePoint
 
@@ -59,7 +59,7 @@ ms.locfileid: "53905693"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |[Пошаговое руководство: Профилирование приложения SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|В этом разделе показано выполнение анализа профиля выборки для приложения SharePoint.|
 |[Проверка производительности приложения перед выпуском](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|В этой статье описывается создание нагрузочных тестов, которые помогают нагрузочное тестирование приложений SharePoint.|
