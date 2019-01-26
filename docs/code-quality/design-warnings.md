@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69178039d89d1a20a361045c3c6716cc780b679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06447475e2686bf3f4ec7c79c0e2417d4ee99a8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904326"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011316"
 ---
 # <a name="design-warnings"></a>Предупреждения конструктора
 Предупреждения конструктора поддерживают соблюдение рекомендации по разработке .NET Framework.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание: |
+| Правило | Описание |
 | - | - |
 | [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | При вызове статического элемента универсального типа нужно указать аргумент этого типа. При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа. В этих двух случаях синтаксис для определения аргумента типа различен, и его можно легко спутать. |
 | [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | В классе объявляется и реализуется поле экземпляра, который является типом System.IDisposable и класс не реализует IDisposable. Класс, в котором объявляется поле IDisposable, неявно владеет неуправляемым ресурсом и должен реализовывать интерфейс IDisposable. |
@@ -87,7 +87,7 @@ ms.locfileid: "53904326"
 | [CA1060: Переместите P/Invokes в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Платформа вызова, например методов, отмеченные <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> или методы, определенные с помощью ключевого слова Declare в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], доступ к неуправляемому коду. Эти методы должны относиться к классу NativeMethods, SafeNativeMethods или UnsafeNativeMethods. |
 | [CA1061: Не следует скрывать методы базового класса](../code-quality/ca1061-do-not-hide-base-class-methods.md) | Метод в базовом типе скрыт методом с таким же именем в производном типе. Сигнатура параметра производного метода отличается только типами, которые являются более слабыми, чем соответствующие типы в сигнатуре параметра базового метода. |
 | [CA1062: Проверьте аргументы открытых методов](../code-quality/ca1062-validate-arguments-of-public-methods.md) | Все ссылочные аргументы, передаваемые в видимые для внешнего кода методы, должны проверяться на равенство значению NULL. |
-| [CA1063: СЛЕДУЕТ Правильно реализуйте IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md) | Все типы IDisposable должны правильно реализовывать шаблон "Dispose". |
+| [CA1063: Правильно реализуйте IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md) | Все типы IDisposable должны правильно реализовывать шаблон "Dispose". |
 | [CA1064: Исключения должны быть открытыми](../code-quality/ca1064-exceptions-should-be-public.md) | Внутреннее исключение видно только внутри своей внутренней области. После выхода исключения за пределы внутренней области для перехвата исключения можно использовать только базовое исключение. Если внутренне исключение унаследовано от <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, или <xref:System.ApplicationException?displayProperty=fullName>, внешний код не будет иметь достаточно сведений, чтобы знать, что делать с исключением. |
 | [CA1065: Не вызывайте исключения в непредвиденных местах](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Метод вызывает исключение, хотя не должен этого делать. |
 | [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md) | Строгое имя защищает клиентов от случайной загрузки сборки, которая была подменена. Сборки без строгих имен следует развертывать лишь в крайне небольшом числе случаев. При обмене или распространении сборок без правильной подписи сборки могут быть подменены, среда CLR может не загрузить сборку или пользователь может быть вынужден отключить проверку на своем компьютере. |

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030396"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Как выполнить Создание настраиваемых текстовых маркеров
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:  
@@ -32,7 +32,7 @@ ms.locfileid: "53965224"
   
 1. Создайте запись реестра следующим образом:  
   
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
   
     *\<MarkerGUID >* является `GUID` используется для идентификации добавляемого маркера  
   
