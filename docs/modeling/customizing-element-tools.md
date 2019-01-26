@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ee9f574b1d0db7a90b2d056456ccb29db0604e1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb5a43224ff94e0e5115265383bff578031793bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936311"
 ---
 # <a name="customizing-element-tools"></a>Настройка средств элемента
 В некоторых определениях DSL единую концепцию представляют группу элементов. Например при создании модели, в котором компонент имеет фиксированный набор портов, всегда требуется порты, которые нужно создать в то же время, как их родительского компонента. Таким образом необходимо настроить средство создания элемента, таким образом, чтобы он создает группу элементов, вместо одного. Для этого можно настроить способ инициализации средства создания элемента.

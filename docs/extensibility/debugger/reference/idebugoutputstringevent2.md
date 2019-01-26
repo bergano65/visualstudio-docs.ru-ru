@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5257cea7ffd23a36460bfcab5bba72ff6835402
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e7f13d75090e2b1a8e0fc22bc1640943e32785c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971836"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) для вывода строки.  
@@ -37,7 +37,7 @@ IDebugOutputStringEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugOutputStringEvent2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Получает отображаемое сообщение.|  
   
@@ -49,7 +49,7 @@ IDebugOutputStringEvent2 : IUnknown
  Используйте [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) для отправки сообщения об ошибке, требующее ответа.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

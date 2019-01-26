@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b86ac1ba81a7d203177afdde302e8f32599ea698
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edbd781fbaba285b56afca027aed657ee7585f3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003152"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при создании свойства, связанного с конкретным документом.  
@@ -37,7 +37,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugPropertyCreateEvent2` интерфейс.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Возвращает новое свойство.|  
   
@@ -45,7 +45,7 @@ IDebugPropertyCreateEvent2 : IUnknown
  Если свойство имеет определенному документу или сценарий, связанный с ним, DE отправляют данное событие для обновления SDM **документы скриптов** окно с именем документа. Вызывает SDM [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) с аргументом `guidDocument` извлекаемого `VARIANT` содержащий [IUnknown](/cpp/atl/iunknown) указатель. Вызывает SDM [QueryInterface](/cpp/atl/queryinterface) на этот указатель для получения [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) интерфейс, который используется для обновления **документы скриптов** окна.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
