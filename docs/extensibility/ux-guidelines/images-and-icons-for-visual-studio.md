@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a49445445388a6db0e6dae9c09b50137c04c4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954128"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Использование изображений в Visual Studio  
@@ -23,7 +23,7 @@ ms.locfileid: "53880706"
   
 -   **Значки**. Маленькие изображения, которые отображаются в команды, иерархий, шаблоны и т. д. Размер значка по умолчанию, используемых в Visual Studio — PNG 16 x 16. Значки, автоматически созданные службы образов создания формата XAML для поддержки HDPI.  
   
-     **ПРИМЕЧАНИЕ.** Хотя образы используются в системе меню, не следует создавать значок для каждой команды. Обратитесь к [меню и команд для Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) для см. в разделе ли команда должна появиться значок.  
+     **Примечание.** Хотя образы используются в системе меню, не следует создавать значок для каждой команды. Обратитесь к [меню и команд для Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) для см. в разделе ли команда должна появиться значок.  
   
 -   **Эскизы.** Образы, используемые в области предварительного просмотра диалогового окна, такие как диалоговое окно нового проекта.  
   
@@ -270,8 +270,8 @@ ms.locfileid: "53880706"
   
 |Использование|name|Значение ("светлой" теме)|Палитра|Пример|  
 |-----------|----------|---------------------------|------------|-------------|  
-|Фон/темный|VS BG|424242 / 66,66,66|![Образец 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Пример базовой палитры](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
-|Передний план или легкой|VS FG|F0EFF1 / 240,239,241|![Палитра F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Фон/темный|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Пример базовой палитры](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
+|Передний план или легкой|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
 |Контур|VS Out|F6F6F6 / 246,246,246|![Палитра F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  Помимо основных цветов каждый значок может содержать один дополнительный цвет из палитры расширенные.  
@@ -284,7 +284,7 @@ ms.locfileid: "53880706"
 |Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
 |Положительное число|Зеленый действие VS|388A34 / 56,138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Отрицательное число|Действие Red VS|A1260D / 161,38,13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
+|Отрицательное число|Действие Red VS|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
 |Нейтральный|Синий действие VS|00539C / 0,83,156|![Палитра 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Создание/Создание|Оранжевый действие VS|C27D1A / 194,156,26|![Палитра C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
@@ -348,7 +348,7 @@ ms.locfileid: "53880706"
 |||||||  
 |-|-|-|-|-|-|  
 |![Значок Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; значок](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; значок](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Значок JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Значок Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![Значок HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Значок WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Значок ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Значок CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Значок TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
+|![HTML icon](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Значок WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Значок CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Значок TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Значки IntelliSense использовать эксклюзивные цветовую палитру. Эти цвета используются, чтобы помочь пользователям быстро различать различных элементов в раскрывающемся списке IntelliSense.  
@@ -359,7 +359,7 @@ ms.locfileid: "53880706"
 |Метод расширения, делегат метода, модуль,|Действие фиолетовым VS|652D 90 / 101,45,144|![Палитра 652 d 90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Поле, элемент перечисления, макрос, структуры, объединения значение типа, оператор, интерфейс|Синий действие VS|00539C / 0,83,156|![Палитра 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Object|Зеленый действие VS|388A34 / 56,138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Константа, исключение, элемент перечисления, карты, элемент карты, пространство имен, шаблон, определение типа|Фон (VS BG)|424242 / 66,66,66|![Образец 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
+|Константа, исключение, элемент перечисления, карты, элемент карты, пространство имен, шаблон, определение типа|Фон (VS BG)|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Примеры значков IntelliSense  
   
@@ -373,7 +373,7 @@ ms.locfileid: "53880706"
   
 |Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
-|Состояние: нейтральный|Уведомление Blue (синий VS)|1BA1E2 / 27,161,226|![Палитра 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
+|Состояние: нейтральный|Уведомление Blue (синий VS)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Состояние: положительное|Зеленый уведомлений (VS зеленый)|339933 / 51,153,51|![Образец 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |Состояние: отрицательное|Уведомление Red (красный цвет VS)|E51400 / 229,20,0|![Палитра E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
 |Состояние: предупреждение|Желтый уведомлений (оранжевый VS)|FFCC00 / 255,204,0|![Палитра FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
@@ -398,11 +398,11 @@ ms.locfileid: "53880706"
 |F12|Фон|Белый|FFFFFF / 255, 255, 255|![Палитра FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Норм.|F12 Grey_Primary|555555 / 85, 85, 85|![Образец 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
 |F12|Наведение|F12 Blue_Hover|2279BF / 34,121,191|![Палитра 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|Отключено|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Палитра ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
-|F12|Фона при наведении курсора мыши|При наведении указателя мыши bg|D9EBF7 / 217,235,247|![Палитра D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
+|F12|Отключено|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|Фона при наведении курсора мыши|При наведении указателя мыши bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|Фона нажатого|Нажата bg|B2D7F0 / 178,215,240|![Палитра B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
 |F12|Контур|VS OUT|F6F6F6 / 246,246,246|![Палитра F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
-|F12|Сведения|Сведения|00BCF2 / 0,188,242|![Палитра 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
+|F12|Сведения|Сведения|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
 |F12|Предупреждение|Предупреждение|F28300 / 242,131,0|![Палитра F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
 |F12|Ошибка / отрицательное|Error_Negative|E81123 / 232,17,35|![Палитра E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
 |F12|Запуск / положительное|Start_Positive|009E49 / 0,158,73|![Палитра 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  

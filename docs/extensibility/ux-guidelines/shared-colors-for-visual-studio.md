@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928910"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 При разработке пользовательского интерфейса, который использует общие элементы оболочки Visual Studio, или вы хотите быть согласованы с аналогичными функциями элемента интерфейса, используйте существующие имена токенов в файлах определений пакетов для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.  
@@ -361,7 +361,7 @@ ms.locfileid: "53991247"
 
 > См. в разделе [окна поиска](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) для других токены цветов, связанных с элементом управления поиска.
 
-![Поиск текста элемента управления окна](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Текст элемента управления в поле поиска
+![Search box control text](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Текст элемента управления в поле поиска
 
 | Элемент | Имя токена: Category.Color |
 | --- | --- |
@@ -684,7 +684,7 @@ ms.locfileid: "53991247"
 
 **Поле ввода окна поиска отключено**
 
-![Поле ввода окна поиска отключено](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br />Поле ввода окна поиска отключено
+![Disabled search input field](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />Поле ввода окна поиска отключено
 
 | Элемент | Имя токена: Category.Color |
 | --- | --- |

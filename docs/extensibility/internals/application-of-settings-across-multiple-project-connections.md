@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c49ce750b48372e9233a788b4f98b6ece5e2a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d6810212b10052077ab5adeddbca69dbd5fb339
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976278"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Применение параметров в нескольких подключениях проекта
 Подключаемый модуль системы управления версиями созданные с помощью источника управления Plug-in API версии 1.2, можно использовать пакетную операцию выполнения же операция системы управления версиями для нескольких проектов или несколько контекстов соединений. Чтобы устранить избыточную, диалоговые окна в интерфейсе пользователя для каждого проекта можно использовать пакеты.  

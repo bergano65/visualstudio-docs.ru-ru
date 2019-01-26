@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74eae3272563fb3514bedfd57fb3d94c98d98193
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6cfffe183ebc411b377e9f2145bbd09061b0eeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949367"
 ---
 # <a name="sccproperties-function"></a>Функция SccProperties
 Эта функция отображает свойства системы управления версиями для файла или проекта.  
@@ -45,7 +45,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Отобразить свойства были успешно.|  
 |SCC_I_RELOADFILE|Система управления версиями изменил свойства файла, поэтому интегрированной среды разработки следует перезагрузить этот файл.|  

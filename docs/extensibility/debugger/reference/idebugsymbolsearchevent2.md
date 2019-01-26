@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619092f75ad6c4e030b77729e7e11835d4e4ef9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7af963afab74149da0c1c0bd6394e7de9df6cd36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931145"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Этот интерфейс отправляется ядром отладки (DE), чтобы указать, что были загружены символы отладки, для которого выполняется отладка модуля.  
@@ -47,7 +47,7 @@ IDebugSymbolSearchEvent2 : IUnknown
  Visual Studio обычно использует это событие для обновления состояния загружены символы в **модули** окна.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
