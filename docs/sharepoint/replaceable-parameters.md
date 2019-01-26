@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989169"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871953"
 ---
 # <a name="replaceable-parameters"></a>Подстановочные параметры
   Подстановочные параметры или *маркеры*, можно использовать в файлах проекта для предоставления значений для элементов решения SharePoint, фактические значения не известен во время разработки. Они в функции аналогичны стандарте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] токенам шаблонов. Дополнительные сведения см. в разделе [параметров шаблона](../ide/template-parameters.md).  

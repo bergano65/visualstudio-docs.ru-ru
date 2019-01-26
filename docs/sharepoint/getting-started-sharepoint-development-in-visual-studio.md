@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847422"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873214"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Получить работы (Разработка приложений SharePoint в Visual Studio)
   Этот раздел поможет начать работу с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для разработки решений SharePoint, которые используют преимущества [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -30,13 +30,13 @@ ms.locfileid: "53847422"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Дополнительные сведения об ошибках SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Описывает, где найти справочную информацию по разработке решений SharePoint и устранению неполадок в них.|
 
 ## <a name="related-sections"></a>Связанные разделы
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Описывает разработку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Создание столбцов сайта, типов содержимого и списков для SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Здесь описываются способы создания пользовательских столбцов сайта, типов содержимого и списков для SharePoint с помощью средств Visual Studio для разработки SharePoint.|
