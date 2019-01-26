@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a1313a5d74f973e439d6177234eb11a202b344
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949692"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Руководство по тестированию подключаемых модулей системы управления версиями
 Этот раздел содержит рекомендации для тестирования системы управления версиями подключаемого модуля с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Предоставляется широкий обзор наиболее распространенных областей тестирования, а также некоторые более сложные областей, которые может оказаться проблемой. В этом обзоре не предполагается исчерпывающий список тестовых случаев.  
