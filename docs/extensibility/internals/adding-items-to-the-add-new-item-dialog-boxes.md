@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989956"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Добавление элементов в диалоговом окне Добавление нового элемента
 Процесс добавления элементов к **Добавление нового элемента** запускает диалоговое окно с разделами реестра. Как показано в следующей записи в реестре, **AddItemTemplates** раздел содержит путь и имя папки, в какие элементы доступны в **Добавление нового элемента** помещаются диалоговое окно.  
@@ -27,7 +27,7 @@ ms.locfileid: "53956053"
 
  Первый идентификатор GUID является CLSID для проектов этого типа; второй идентификатор GUID указывает тип зарегистрированного проекта для шаблонов добавить элементы:  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 
@@ -38,7 +38,7 @@ ms.locfileid: "53956053"
 
 | name | Тип | Данные (от *.rgs* файла) | Описание: |
 |------------------|-----------| - | - |
-| @ (По умолчанию) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | Идентификатор ресурса для **Добавление элемента** шаблонов. |
+| @ (По умолчанию) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | Идентификатор ресурса для **Добавление элемента** шаблонов. |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера. |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Определяет порядок сортировки в узле дерева файлов, отображаемых в **Добавление нового элемента** диалоговое окно. |
 

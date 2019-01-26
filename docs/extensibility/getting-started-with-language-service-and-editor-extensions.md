@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831762"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010068"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и служба языка
 Для добавления функций языка, таких как структурирование, парные фигурные скобки, IntelliSense и лампочки, чтобы выбранном языке программирования или к любому типу содержимого можно использовать расширения редактора. Вы также можете настроить внешний вид и поведение редактора в Visual Studio, например текст конструкций, поля, элементы оформления и других визуальных элементов. Также можно определить свой собственный тип содержимого и затем указать внешний вид и поведение представления текста, в которых отображается содержимое.  
@@ -64,7 +64,7 @@ ms.locfileid: "53831762"
 ## <a name="run-extensions-in-the-experimental-instance"></a>Запуска расширений в экспериментальном экземпляре  
  При разработке расширения, развернув ее в папке экспериментальные (в Windows Vista и Windows 7), можно изолировать вашей рабочей версии Visual Studio:  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{компании}\\{ExtensionID}*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  где *% LOCALAPPDATA %* имя вошедшего в систему пользователя *компании* имя компании, которой принадлежит модуль, и *ExtensionID* идентификатор расширения.  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999474"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Справочник по схемам манифеста шаблона Visual Studio
 Эта схема описывает формат манифеста шаблона Visual Studio (*.vstman*) файлов, созданных для шаблонов проекта или элемента Visual Studio. Кроме того, схема описывает расположение и другие важные сведения о шаблоне.  
@@ -51,7 +51,7 @@ ms.locfileid: "53961959"
   
 -   **RelativePathOnDisk**:  Относительный путь файла шаблона на диске. Это расположение также определяет положение шаблона в дереве шаблон, показанный на **новый проект** или **новый элемент** диалоговое окно. Для шаблоны, развертываемые как каталог и отдельных файлов этот путь ссылается на каталог, содержащий файлы шаблонов. Для развернутых шаблонов в качестве *ZIP-файл* файл, этот путь должен быть путь к *ZIP-файл* файл.  
   
--   ** VSTemplateHeader: Объект [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) элемент, описывающий заголовок.  
+-   **VSTemplateHeader: Объект [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) элемент, описывающий заголовок.  
   
 ### <a name="parent-element"></a>Родительский элемент  
  **VSTemplateManifest**  

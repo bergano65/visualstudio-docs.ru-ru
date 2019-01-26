@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4af59a34fe2cb76a0627985ca044d2139543f8f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021240"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Как выполнить Подавлять уведомления об изменении файла
 При изменении физического файла, представляющий текстовый буфер, откроется диалоговое окно с сообщением **вы хотите сохранить изменения следующих элементов?** Это называется уведомления об изменении файла. Если много изменений будут в файл, тем не менее, это диалоговое окно, отображающее снова и снова может быстро стать раздражает.  

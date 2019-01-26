@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 8ab8c4e3ae0a217c7877d1d2e64727e45d14ea87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561818"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069830"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Элемент CreateInPlace (шаблоны Visual Studio)
 Указывает, следует ли создать проект и выполнить замену в указанном расположении, или выполнить замену во временном расположении и сохраните проект в указанное расположение.  
@@ -45,7 +45,7 @@ ms.locfileid: "53561818"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914612"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027715"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -359,7 +359,7 @@ Windows использует несколько тем высокой контр
 
 Добавить в реестр с двумя значениями:
 
-| name | Тип | Данные | Описание: |
+| name | Тип | Данные | Описание |
 | --- | --- | --- | --- |
 | Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для идентификации категории |
 | Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage службы, которая поддерживает категории |
@@ -372,14 +372,14 @@ Windows использует несколько тем высокой контр
 
 Добавить в реестр с двумя значениями:
 
-| name | Тип | Данные | Описание |
+| name | Тип | Данные | Описание: |
 |--- | --- | --- | --- |
 | Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для идентификации категории |
 | Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage службы, которая поддерживает категории |
 
 Служба, указанная в реестр необходимо предоставить реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> для соответствующей группы.
 
-![Реализация IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304 a_FontAndColorGroup")<br />Реализация `IVsFontAndColorGroup`
+![Implementation of IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Реализация `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>Для реализации поддержки интегрированной среды разработки
 

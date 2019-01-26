@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23e1dc26a3f8d1031357715b39ce6e2d2e485d1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e72aecc477901ee7e8a4658c881fb14681362e3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906843"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000117"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 Структура, определяющая пользовательское средство просмотра или введите визуализатора.  
@@ -69,7 +69,7 @@ public struct DEBUG_CUSTOM_VIEWER {
  Возвращает список этой структуры с помощью вызова [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) метод (и, следовательно, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fca410ed773b2a062623465c78942484c692f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a91016c493b722ef6c14a0fe6e45468544f35d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995600"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Зарегистрированные, этот интерфейс позволяет сеанса отладки manager (SDM) для получения сведений о программах, которые были «опубликованы» через [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) интерфейс.  
@@ -36,7 +36,7 @@ IDebugProgramProvider2 : IUnknown
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Получает сведения о программах под управлением, фильтруются в различными способами.|  
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Возвращает узел программы, получив идентификатор определенного процесса.|  
@@ -47,7 +47,7 @@ IDebugProgramProvider2 : IUnknown
  Как правило процесс использует этот интерфейс, чтобы узнать о программ, работающих в этом процессе.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62ead34f06d474875539ebd4e274cfcd51db4e22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe342f8d6de169f25ee432a8295bc08d6a7991ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026213"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Этот интерфейс используется ядром отладки (DE), чтобы отправить сообщение в Visual Studio, которая требует реакции от пользователя.  
@@ -39,7 +39,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugMessageEvent2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Получает сообщение для отображения.|  
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Задает ответ, если таковое имеется, из окна сообщения.|  
@@ -52,7 +52,7 @@ IDebugMessageEvent2 : IUnknown
  Используйте [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) интерфейс для отправки сообщений в Visual Studio, которая не требует реакции от пользователя.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

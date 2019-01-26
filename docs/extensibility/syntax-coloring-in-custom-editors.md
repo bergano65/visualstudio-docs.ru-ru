@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f82902ebcb82ea311617d3a7a767c5dabaedd311
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b96eaa576fbb7016b8c907b19a15be3e9c6dedd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886654"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070543"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Цветовая маркировка синтаксиса в специализированных редакторах
 Редакторы Visual Studio пакет SDK для среды, включая базовый редактор, использование служб языка, для идентификации определенных синтаксических элементов и их отображения с указанными цветами для представления данного документа.

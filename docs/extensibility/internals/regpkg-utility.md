@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979430"
 ---
 # <a name="regpkg-utility"></a>Служебная программа RegPkg
 > [!NOTE]
@@ -37,19 +37,19 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] корневой элемент.  
   
- /regfile:filename  
+ /regfile:FileName  
  Создает REG-файл, а не обновления реестра.  Не может использоваться с /vrgfile или /rgsfile или /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Создает RGS-файл, а не обновления реестра.  Не может использоваться с /vrgfile или/regfile или /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Создает файл .vrg вместо обновления реестра.  Не может использоваться с/regfile или /rgsfile или /wixfile.  
   
  /rgm  
  Создает файл .rgm помимо RGS-файл.  Должны быть объединены с /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Создает набор инструментов Windows Installer XML-совместимый файл, а не обновления реестра.  Не может использоваться с/regfile или /rgsfile или /vrgfile.  
   
  /codebase  

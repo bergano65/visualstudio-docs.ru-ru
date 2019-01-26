@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf7e39f91f6916f4d3ace7a9a303ea1c8e626ee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e63311698a21cdb5fed3d0ab5eee799d94ed109
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954780"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013851"
 ---
 # <a name="file-status-code-enumerator"></a>Перечислитель кода состояния файла
 `SccStatus` Перечислитель содержит именованные константы, определяющие состояние файла в системе управления версиями. Это перечисление используется с [SccQueryInfo](../extensibility/sccqueryinfo-function.md) и `POPLISTFUNC` функцию обратного вызова (см. в разделе [POPLISTFUNC](../extensibility/poplistfunc.md) сведения).  

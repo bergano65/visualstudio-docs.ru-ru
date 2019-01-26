@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5367d12593ae9789ff0529c76cc0494a6f99ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74e65d56701aaa2e9a864d822cb7b44435e2bb09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024257"
 ---
 # <a name="expression-evaluation-interfaces"></a>Интерфейсы вычисления выражений
 > [!IMPORTANT]
@@ -34,7 +34,7 @@ ms.locfileid: "53932276"
   
 -   Visual Studio (VS)  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Представляет числовые псевдоним для переменной.|  
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Представляет числовые псевдоним для переменной и обеспечивает вычислитель выражений (EE), чтобы получить домен приложения для псевдонима.|  

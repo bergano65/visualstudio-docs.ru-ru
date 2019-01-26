@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023919"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Пакет SDK окна справки (Майкрософт)
 
@@ -60,7 +60,7 @@ ms.locfileid: "53987055"
 
 Поддерживаемые строки языка (без учета регистра):
 
--   JavaScript
+-   javascript
 
 -   c# или c#
 
@@ -298,13 +298,13 @@ F1 схема потока:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        «VendorContent» = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
    -   Для 64-разрядных операционных системах:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        «VendorContent» = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
 2. Зарегистрируйте пространство имен партнера в разделе реестра 2.3 справки:
 
@@ -312,13 +312,13 @@ F1 схема потока:
 
       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< пространство имен\></em>
 
-      «расположение «=» вне сети»
+      "location"="offline"
 
    - Для 64-разрядных операционных системах:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< пространство имен\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
-      «расположение «=» вне сети»
+      "location"="offline"
 
 **Синтаксический анализ базового собственного пространства имен**
 
@@ -340,7 +340,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 Добавьте следующий раздел реестра и значение:
 
-Клавиша справки HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Для отображения вывода данных отладки в Розничная стоимость: ДА
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Для отображения вывода данных отладки в Розничная стоимость: ДА
 
 В интегрированной среде разработки, в пункте меню справки выберите «Отладка контекста справки»
 
@@ -358,7 +358,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 | \< name="Microsoft.Help.Id meta» content = «[аргумент TopicID]» / > | Задает идентификатор для этого раздела. Этот тег является обязательным и должен использоваться только один раз в разделе. Идентификатор должен быть уникальным среди всех разделов в каталоге, которые имеют один и тот же параметр языкового стандарта. В другом разделе можно создать ссылку на этот раздел с помощью этого идентификатора. |
 | \< Meta name="Microsoft.Help.F1» content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | Указывает ключевое слово F1 для этого раздела. Можно указать несколько ключевых слов F1 для раздела, или этот тег можно опустить, если не хотите, чтобы в этом разделе, отображаемый, когда пользователь приложения нажимает клавишу F1. Как правило для раздела указывается только одно ключевое слово F1. Ключевые слова «F» из более ранних версиях справки можно преобразовать к этому свойству. |
 | \< Meta name = «Description» content = «[Описание раздела]» / > | Предоставляет краткое описание содержимого в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Это свойство осуществляется непосредственно в библиотеке запроса; не сохраняется в файле индекса. |
-| name="Microsoft.Help.TocParent meta» content = «[parent_Id]» / > | Указывает своим родительским разделом этого раздела в содержании. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение равно Microsoft.Help.Id родительского элемента. Раздел может иметь только в одном месте в таблице содержимое. «-1» считается идентификатор раздела для корневого Оглавления. В [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], эта страница является домашней страницей справки. Это же причине, в частности мы добавим TocParent =-1 на некоторые разделы, чтобы убедиться, что они отображаются в верхнем уровне. Домашняя страница справки является страницей системы и таким образом. Если VSP пытается добавить страницу с Идентификатором -1, он может получить добавлен в набор содержимого, но средство просмотра справки использует только на странице системы: начальная страница окна справки |
+| meta name="Microsoft.Help.TocParent" content="[parent_Id]"/> | Указывает своим родительским разделом этого раздела в содержании. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение равно Microsoft.Help.Id родительского элемента. Раздел может иметь только в одном месте в таблице содержимое. «-1» считается идентификатор раздела для корневого Оглавления. В [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], эта страница является домашней страницей справки. Это же причине, в частности мы добавим TocParent =-1 на некоторые разделы, чтобы убедиться, что они отображаются в верхнем уровне. Домашняя страница справки является страницей системы и таким образом. Если VSP пытается добавить страницу с Идентификатором -1, он может получить добавлен в набор содержимого, но средство просмотра справки использует только на странице системы: начальная страница окна справки |
 | \< name="Microsoft.Help.TocOrder meta» content = «[положительное целое число]» / > | Указывает, где в оглавление в этом разделе отображается относительно его разделов однорангового узла. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение представляет собой целое число. Указывает, является целым числом с меньшим значением в этом разделе отображается над на раздел, который указывает, является целым числом более высокого значения. |
 | \< name="Microsoft.Help.Product meta» content = «[product code]» / > | Указывает продукт, описанной в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Эта информация может также предоставляться как параметр, передаваемый индексатор справки. |
 | \< name="Microsoft.Help.ProductVersion meta» content = «[номер версии]» / > | Указывает версию продукта, описанной в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Эта информация может также предоставляться как параметр, передаваемый индексатор справки. |
@@ -557,22 +557,22 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 |-|-|-|
 |**Файл**|**Используйте**|**Отображаемый источник содержимого**|
 |HomePage.htm|Это страница, на которой отображаются установленные содержимое и все остальные сообщения, подходящие для предоставления пользователю об их содержимое.  Этот файл содержит дополнительное содержимое «Microsoft.Help.Id» данных атрибута meta-«1", который помещает это содержимое в верхней части локального содержимого Оглавление.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, тег \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, тег \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, тег \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Заголовок раздела тега Branding.xml\<HomePageInstalledBooks >, данные, созданные из приложения, \<HomePageNoBooksInstalled > Если никакие книги не установлены.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Заголовок раздела тега Branding.xml \<HomePageHelpSettings >, раздел текста \<HomePageHelpSettingsText >.|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, тег \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, тег \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.XML, тег \<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Заголовок раздела тега Branding.xml\<HomePageInstalledBooks >, данные, созданные из приложения, \<HomePageNoBooksInstalled > Если никакие книги не установлены.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Заголовок раздела тега Branding.xml \<HomePageHelpSettings >, раздел текста \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Если существует раздел в локальном наборе, но для какой-либо причине не могут отображаться (повреждения содержимого).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, тег \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, тег \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.XML, тег \<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, тег \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Если раздел не найден в локальное содержимое задано и недоступна online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, тег \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, тег \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, тег \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.XML, тег \<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, тег \<TopicNotFoundText >|
 |contentnotinstalled.htm|Если нет локального содержимого, установленный для продукта.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, тег \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, тег \<ContentNotInstalledDownloadContentText >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.XML, тег \<ContentNotInstalledText >|
 
 **CSS-файлов**
 
@@ -709,7 +709,7 @@ MSHA, этот учебник, в рамках называется HelpContentS
 
 Создание хранилища содержимого Visual Studio. Сценарии интегрированной оболочки измените Visual Studio12 имя каталога продукта следующим образом:
 
--   Создайте папку C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15.
+-   Create folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15.
 
 -   Создайте файл с именем CatalogType.xml и добавьте его в папку. Файл должен содержать следующие строки кода:
 
@@ -809,7 +809,7 @@ MSHA, этот учебник, в рамках называется HelpContentS
 
 9. Пример интегрированная оболочка командной строки для тестирования хранилище содержимого. Для оболочки ISO измените каталог и launchingApp соответствующие значения в соответствии с продуктом.
 
-     Метод /helpQuery/CatalogName VisualStudio15 «C:\Program файлы (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe» = "Страница & id = ContosoTopic0» /launchingApp Microsoft VisualStudio, 12.0
+     "C:\Program Files (x86)\Microsoft Help Viewer\v2.3\HlpViewer.exe" /catalogName VisualStudio15 /helpQuery method="page&id=ContosoTopic0" /launchingApp Microsoft,VisualStudio,12.0
 
 10. Запустите приложение Contoso (из корня приложения Contoso). В оболочке ISO, выберите **помочь** пункта меню, а также изменение **задать параметры справки** для **использование локальной справки**.
 

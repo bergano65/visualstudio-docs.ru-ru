@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8406d0ca1615ef1f784312827e3a21d0a96b04a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016568"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Предоставить контекст службы языка с помощью предыдущих версий API
 Существует два варианта для языковой службы для предоставления контекста пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базовый редактор: предоставьте текст маркера контекста, или передайте все контекста пользователя. Здесь описаны различия между ними.  

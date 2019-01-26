@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2e212612dd9bf2ede8d41db21a95c9c902f3de0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938326"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990931"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Вычисляемые и пользовательские свойства хранилища
 Все свойства домена в доменный язык (DSL) могут отображаться на диаграмме и в обозревателе языка, а также может осуществляться программным кодом. Однако свойства отличаются способом, что их значения будут храниться.
@@ -23,7 +23,7 @@ ms.locfileid: "53938326"
 ## <a name="kinds-of-domain-properties"></a>Виды свойств домена
  В определении DSL, можно задать **вид** свойства домена, как показано в следующей таблице:
 
-|Тип свойства домена|Описание|
+|Тип свойства домена|Описание:|
 |-|-|
 |**Стандартный** (по умолчанию)|Свойство домена, которое сохраняется в *хранения* и сериализован в файл.|
 |**Вычисляемый**|Свойство домена только для чтения, которое не сохраняется в хранилище, но вычисляется из других значений.<br /><br /> Например `Person.Age` может вычисляться из `Person.BirthDate`.<br /><br /> Вы должны предоставить код, который выполняет вычисление. Как правило значение из других свойств домена можно вычислить. Тем не менее можно также использовать внешние ресурсы.|

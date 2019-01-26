@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d15e6872a418cfc2a3cf5dded5b873429075d276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977191"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Вопросы и ответы Преобразование надстроек в расширения VSPackage
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.  

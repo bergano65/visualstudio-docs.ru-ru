@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a616b459194277c5573a2d7c95f2de0cc4e6bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82d9c559219b47560483e4beab271c262c277573
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996679"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] таким образом, чтобы интегрированной среде разработки (IDE) правильно направляет его команды.  
@@ -51,7 +51,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
  В следующей таблице описаны поля \< *сведения о ресурсах*>.  
 
 
-| Элемент | Описание |
+| Элемент | Описание: |
 |---------------------------| - |
 | \<*Путь к DLL ресурсов*> | Это полный путь к DLL, которая содержит ресурс меню ресурса или указан, означающее, что в пакете VSPackage ресурс библиотеки DLL для использования (как указано в подразделе пакетов, где сам пакет VSPackage зарегистрирован).<br /><br /> Обычно это поле оставить пустым. |
 | \<*Идентификатор ресурса меню*> | Это идентификатор ресурса `CTMENU` ресурс, содержащий все элементы пользовательского интерфейса для VSPackage, скомпилированной на основе [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла. |

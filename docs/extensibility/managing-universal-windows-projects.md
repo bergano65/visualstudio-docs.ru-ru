@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06bfb109ce58ee822a32bc3a92d7e6e45578fb05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005514"
 ---
 # <a name="manage-universal-windows-projects"></a>Управление проектами универсальной Windows
 Универсальные приложения Windows, приложений, предназначенных для Windows 8.1 и Windows Phone 8.1, что позволяет разработчикам использовать код и другие ресурсы на обеих платформах. Общий код и ресурсы хранятся в общем проекте, хотя специфические для платформы код и ресурсы хранятся в разных проектах, один для Windows, а другой — для Windows Phone. Дополнительные сведения об универсальных приложениях Windows, см. в разделе [универсальных Windows-приложений](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Расширения Visual Studio, которые управляют проекты следует иметь в виду, что проекты универсальных приложений для Windows имеют структуру, отличную от одной платформы приложений. В этом пошаговом руководстве показано, как для перемещения общего проекта и общие элементы управления.  

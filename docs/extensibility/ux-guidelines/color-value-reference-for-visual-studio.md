@@ -8,13 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-manager: douge
-ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016243"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Справочник по значениям цвета для Visual Studio
 
@@ -191,7 +191,7 @@ ms.locfileid: "53870064"
 
 ## <a name="codelens-ui"></a>Пользовательский интерфейс CodeLens
 
-![Пользовательский Интерфейс CodeLens](../../extensibility/ux-guidelines/media/codelens.png "пользовательский Интерфейс CodeLens")
+![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens UI")
 
 > [!NOTE] 
 > Пользовательский Интерфейс CodeLens цвета одинаковы для темы свет, Темная и синего.
@@ -461,7 +461,7 @@ ms.locfileid: "53870064"
 | --- | :---: | :---: | :---: | :---: |
 | Вид | ![Отключенные раскрывающийся список/со списком "светлой" темой](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "отключена раскрывающийся список/со списком \"светлой\" темой") | ![Отключенные раскрывающийся список/со списком в "темной" теме](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "отключена раскрывающийся список/со списком в \"темной\" теме") | ![Отключенные раскрывающийся список/со списком "голубой" темой](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "отключена раскрывающийся список/со списком \"голубой\" темой") | ![Отключенные раскрывающийся список/со списком в "высококонтрастной" теме](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "отключена раскрывающийся список/со списком в \"высококонтрастной\" теме") |
 | Фон | ![Образец #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 образца")<br />`#EEEEF2` | ![Образец #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 образца")<br />`#2D2D30` | ![Образец #DFE7F3](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 образца")<br />`#DFE7F3` | ![Образец InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption палитра")<br />`InactiveCaption` |
-| Border | ![Образец #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB палитра")<br />`#CCCEDB` | ![Образец #434346](../../extensibility/ux-guidelines/media/434346.png "#434346 образца")<br />`#434346` | ![Образец #A4ADBA](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA образца")<br />`#A4ADBA` | ![Образец InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder палитра")<br />`InactiveBorder` |
+| Border | ![Образец #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB палитра")<br />`#CCCEDB` | ![Образец #434346](../../extensibility/ux-guidelines/media/434346.png "#434346 образца")<br />`#434346` | ![#A4ADBA swatch](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA swatch")<br />`#A4ADBA` | ![Образец InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder палитра")<br />`InactiveBorder` |
 | Текста | ![Образец #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 образца")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 образца")<br />`#656565` | ![Образец #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 образца")<br />`#A2A4A5` | ![Образец InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText палитра")<br />`InactiveCaptionText` |
 | Separator | ![Образец #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 образца")<br />`#EEEEF2` | ![Образец #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 образца")<br />`#2D2D30` | ![Образец #D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 образца")<br />`#D5DCE8` | ![Образец InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder палитра")<br />`InactiveBorder` | 
 | Глиф | ![Образец #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB палитра")<br />`#CCCEDB` | ![Образец #656565](../../extensibility/ux-guidelines/media/656565.png "#656565 образца")<br />`#656565` | ![Образец #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 образца")<br />`#A2A4A5` | ![Образец InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText палитра")<br />`InactiveCaptionText` |

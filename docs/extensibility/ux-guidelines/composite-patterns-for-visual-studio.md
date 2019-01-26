@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027429"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Составные шаблоны для Visual Studio
 Составные шаблоны объединить взаимодействия и элементов оформления в различных конфигурациях. Ниже перечислены некоторые из наиболее важных составных шаблонов в Visual Studio по отношению к согласованности.  
@@ -78,7 +78,7 @@ ms.locfileid: "53866911"
 |![Палитра FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|  
 |![Палитра 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
 |![Палитра 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|  
-|![Палитра 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
+|![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Палитра B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
 
 ##  <a name="BKMK_OnObjectUI"></a> На объект пользовательского интерфейса и просмотр  

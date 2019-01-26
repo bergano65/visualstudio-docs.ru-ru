@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd536404778b5f61e859da28d9e4fec1df32d3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28f9a2437609109fcdaf85ceb2cfd6fe9dcb6879
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990476"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Указывает критерии для сравнения двух контекстов документа.  
@@ -62,7 +62,7 @@ enum enum_DOCCONTEXT_COMPARE { 
  Эти значения используются для указания критерии сравнения для нахождения первого контекст документа в виде списка. Контекст документа предоставляется список контекстов документа сравнивать себя с помощью `IDebugDocumentContext2::Compare` метод. Первый контекст документа в списке, для которого является оператор сравнения `true` затем возвращается.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

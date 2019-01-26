@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012278"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -92,9 +92,9 @@ ms.locfileid: "53841954"
 ### <a name="visual-studio-registry"></a>Visual Studio реестра
 
 * Ранее установленные Visual Studio много разделов реестра в системы **HKEY_LOCAL_MACHINE** и **HKEY_CURRENT_USER** кустов в Visual Studio конкретного ключа:
-  * **HKLM\Software\Microsoft\VisualStudio\{версии}**: Разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
-  * **HKCU\Software\Microsoft\VisualStudio\{версии}**: Разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
-  * **HKCU\Software\Microsoft\VisualStudio\{версии} _Config**: Копия выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Копия выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
 * Чтобы снизить влияние на реестр, Visual Studio теперь использует [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) функции для хранения разделов реестра в закрытый двоичный файл в разделе *[VSAPPDATA]\privateregistry.bin*. Только очень небольшое количество клавиш для Visual Studio определенного остаются в системном реестре.
 
 * Это не повлияет на существующий код, выполняемый в процесс Visual Studio. Visual Studio будет перенаправлять все операции с реестром в раздел HKCU Visual Studio конкретных частный реестр. Чтение и запись в другие места реестра будет продолжать использовать в системный реестр.
