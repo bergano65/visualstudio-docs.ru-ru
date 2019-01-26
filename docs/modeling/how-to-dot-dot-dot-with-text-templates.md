@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d9a1826e8c06d947e05bf7201f2963a7bac860f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039583"
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 Текстовые шаблоны в Visual Studio предоставляют удобный способ создания текста любого рода. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания этих код проекта. Этот раздел содержит описание наиболее часто задаваемые «Практические советы...?» вопросы.

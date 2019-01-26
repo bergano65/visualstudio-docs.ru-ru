@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Word [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 597d8e415a6d5c72026f0ccf8086b3e01c5f1e61
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856445"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872915"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
   В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Word. Функциональные возможности, создаваемые в таком решении, доступны только в том случае, когда открыт конкретный документ. Для внесения изменений в приложение настройку на уровне документа использовать нельзя (например, для отображения новой вкладки ленты, когда открыт любой документ).  
@@ -34,7 +34,7 @@ ms.locfileid: "53856445"
   
 - Написание кода, использующего объектную модель Word для добавления текста в настраиваемый документ при его открытии.  
   
-- Сборка и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
 - Очистка проекта для удаления ненужных файлов сборки и параметров безопасности на компьютере разработчика.  
   

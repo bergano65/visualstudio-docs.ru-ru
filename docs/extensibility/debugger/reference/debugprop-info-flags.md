@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9046ab771ab4b0c2734c125f2ba17b86f57a09f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa229c88ff62d96ee1e91e503dcbdd7c35c1cfc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987470"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944596"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Указывает, какую информацию нужно извлечь сведения об объекте debug свойство.  
@@ -115,7 +115,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
  Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

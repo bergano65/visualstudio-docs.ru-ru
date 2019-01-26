@@ -16,16 +16,16 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd4e3681ad30dc54d9240fff94e1bf60bf5e88cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033951"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -238,4 +238,4 @@ ms.locfileid: "53907830"
 
 - [Динамическая проверка зависимостей в Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
-- [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Видео. Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

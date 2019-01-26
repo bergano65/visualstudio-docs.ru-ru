@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033288"
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 Решение предметно-ориентированного языка (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в Visual Studio. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.

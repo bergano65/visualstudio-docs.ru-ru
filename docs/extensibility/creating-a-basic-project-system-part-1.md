@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930008"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.  

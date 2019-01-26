@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint project items, associating custom data
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 754f5f92dcaf6d19a226f4d1f69ebcbdd8f7d5aa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951044"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875502"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Связывать пользовательские данные с расширениями средств SharePoint
   Можно добавить пользовательские данные для определенных объектов в расширениях инструментов SharePoint. Это полезно при наличии данных в одной части вашего расширения, вам требуется доступ к более поздней версии из другого кода в модуле. Вместо реализации пользовательских способ хранения и доступа к данным, вы можете связать данные с объектом расширения и затем впоследствии извлекать данные из того же объекта.  

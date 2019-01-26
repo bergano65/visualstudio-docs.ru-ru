@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961602"
 ---
 # <a name="web-site-support-templates"></a>Шаблоны поддержки веб-сайтов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Веб-сайт шаблонов проектов и элементов предоставляют многократно используемых и настраиваемые веб-узел проектов и элементов, позволяющую ускорить процесс разработки, избавляя от необходимости создание новых проектов веб-сайта и элементов с нуля. Дополнительные сведения о [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблонов, см. в разделе [Создание проектов и шаблонов элементов](../../ide/creating-project-and-item-templates.md).

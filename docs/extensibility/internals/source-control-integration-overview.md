@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee148a9455e9d1fc0f5615ecc03d15154bff20a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919321"
 ---
 # <a name="source-control-integration-overview"></a>Общие сведения об интеграции системы управления версиями
 В этом разделе сравниваются два способа интеграции в систему управления версиями Visual Studio; системы управления версиями подключаемого модуля и пакет VSPackage, который предоставляет решение для управления версиями и выделяет новые возможности системы управления версиями. Visual Studio позволяет вручную переключение между системы управления версиями пакетов VSPackage и подключаемых модулей системы управления версиями, а также автоматическое решение на основе переключение.  

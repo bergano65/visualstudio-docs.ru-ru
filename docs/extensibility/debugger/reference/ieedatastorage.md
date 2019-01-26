@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0db1dc01c67c93c5cabfb40af8acf55b34ad660
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bc409f455d93b84b12b9630a5f72f8e82a752d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930976"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Этот интерфейс представляет собой массив байтов.  
@@ -37,7 +37,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  `IEEDataStorage` Интерфейс реализует следующие методы:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Извлекает указанное число байтов данных, предоставленный буфер.|  
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Возвращает число доступных байтов данных.|  
@@ -48,7 +48,7 @@ IEEDataStorage : IUnknown
  Пользовательское средство просмотра можно также использовать этот интерфейс, при необходимости, несмотря на то, что как правило, использовать настраиваемый интерфейс, пользовательское средство просмотра [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) или [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (для данных, ориентированных на строку).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

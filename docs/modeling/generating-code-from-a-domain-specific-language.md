@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: add2458989cc52d38ddefd80ce9f3310f0688f2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883163"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958580"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет эффективный способ создания кода, документов, файлов конфигурации и другие артефакты из данных, представленных в модели. С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], можно создать набор классов, представляющих данные и вы можете использовать текстовые шаблоны в классах, имена и свойства отражают эти данные.

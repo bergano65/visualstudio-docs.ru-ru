@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09ad066f234813ee9109e987de4d189a16e8fe18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827839"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001648"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Установка пакетов VSPackage с помощью установщика Windows
 Интеграция пакета VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] требует не только копирование файлов на компьютере пользователя. Установщик вашего VSPackage необходимо установить VSPackage и его зависимых файлов и зарегистрировать, так и их интеграция в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. VSPackage может воспользоваться преимуществами функций интеграции, такие как отображение значка на [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -заставка экрана и диалогового окна About.  

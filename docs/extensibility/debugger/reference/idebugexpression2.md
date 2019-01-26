@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d493da63aaac406ea1fef0f33abbcef528ead61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19dcf2445ace8c6885afe6a66770827f681f89c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54915718"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 Этот интерфейс представляет проанализированное выражение готовой для привязки и оценки.  
@@ -51,7 +51,7 @@ IDebugExpression2 : IUnknown
  В реализации `IDebugExpressionContext2::ParseText`, DE использует COM `CoCreateInstance` функции для создания экземпляра вычислитель выражений и получить [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) интерфейса (см. пример в `IDebugExpressionEvaluator` интерфейс). Затем вызывает DE [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для получения [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) интерфейс. Этот интерфейс используется в реализации `IDebugExpression2::EvaluateSync` и `IDebugExpression2::EvaluateAsync` для выполнения оценки.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

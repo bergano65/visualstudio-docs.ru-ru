@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Документация Майкрософт
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e6bf29280345e1029a0732d36666ceba78ba2ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70ac576cb246f3da6e38a17cfde2b9a0490ec470
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917293"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 Содержит сведения о пути поиска символов, которые после состоянии.  
@@ -51,7 +51,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
  Если `bstrVerboseSearchInfo` поле не пусто, то он содержит список пути поиска и результаты поиска. Список форматируется с путем, последующим многоточием («...»), а затем результат. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:  
   
- \<путь >... \<результат > \r\n\<путь >... \<результат > \r\n\<путь >... \<результата >  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  Обратите внимание, что последний элемент последовательности \r\n.  
   
@@ -64,7 +64,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

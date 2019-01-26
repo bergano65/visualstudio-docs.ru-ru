@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f371eb040ae2c160582093f07eacb2108bcb7b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88f66fb4c991ea447a358b72fd099b750837a10a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997823"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Этот интерфейс предоставляет несколько методов для работы порта сервера и средства уведомлений.  
@@ -37,7 +37,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, определенных в [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), этот интерфейс реализует следующие методы:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Получает интерфейс уведомлений порт от данного порта.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Получает интерфейс, сервер, содержащий этот порт.|  
@@ -47,7 +47,7 @@ IDebugDefaultPort2 : IDebugPort2
  Имя "`IDebugDefaultPort2`» является немного неверно, так как он не представляет порт по умолчанию. Он может вызываться «IDebugPort3.»  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

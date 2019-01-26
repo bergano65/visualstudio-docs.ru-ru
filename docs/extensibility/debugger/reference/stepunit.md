@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7395b487fdcc789c99113014f4693bc6bb899
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2323ed8f539de465776ee1a9aebc9b3c21860cf9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971183"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Указывает единицу шага для пошагового выполнения.  
@@ -55,7 +55,7 @@ enum enum_STEPUNIT { 
  Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

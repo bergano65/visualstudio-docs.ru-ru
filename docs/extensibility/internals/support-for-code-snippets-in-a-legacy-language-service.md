@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948990"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Фрагмент кода, сам является шаблон на основе XML с помощью набора полей. Эти поля будут выделены после вставки фрагмента кода, а также может иметь разные значения в зависимости от контекста, в которой вставляется фрагмент кода. Сразу после вставки фрагмента, языковой службы можно форматировать фрагмента кода.  

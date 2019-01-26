@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950820"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875723"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Можно выполнять отладку расширения инструментов SharePoint в экспериментальном экземпляре или обычном экземпляре Visual Studio. Если вам необходимо устранить поведение расширения, можно также изменить значения реестра для отображения дополнительных сведений об ошибке и настроить, каким образом Visual Studio выполняет команды SharePoint.

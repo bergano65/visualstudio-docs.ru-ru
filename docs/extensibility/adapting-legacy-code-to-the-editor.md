@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67df621b4eb82529a4b17470e31946476becdfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005934"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Адаптировать устаревшего кода в редакторе
 В редакторе Visual Studio имеет множество функций, которые доступны через существующие компоненты кода. Ниже показано, как адаптировать компонента не MEF, например, пакет VSPackage, использовать функциональные возможности редактора. Инструкции также показано, как использовать адаптеры для получения служб редактора в управляемом и неуправляемом коде.  

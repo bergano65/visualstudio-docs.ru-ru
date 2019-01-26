@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9231b23f00beb71ae8ba27792148c460575dc828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997173"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить Создание или обновление стандартных политик возврата с анализом кода
 
@@ -50,7 +50,7 @@ ms.locfileid: "53890343"
 
 Установите или снимите следующие параметры:
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |------------|-----------------|
 |**Включить возврат файлов, которые являются частью текущего решения.**|Анализ кода можно выполнять только с файлами, указанными в файлах конфигурации решения и проекта. Эта политика гарантирует, что весь код, который является частью решения анализируется.|
 |**Принудительное применение анализа кода C/C++ (/ analyze)**|Требует, что все проекты C или C++ быть построены с / analyze-параметр компилятора, чтобы запустить анализ кода, прежде чем они могут быть возвращены.|

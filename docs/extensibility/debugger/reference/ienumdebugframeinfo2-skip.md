@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Skip | Документация Майкрософт
+title: IEnumDebugFrameInfo2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68cd3948-022a-41ad-bd9f-9ab776cf6248
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3431e719d72e539da761eef5c90d67e7038b90ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7ce9cb872cf342287713c78046dcefd0e775df9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949963"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070582"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 Пропускает заданное число элементов.  
@@ -41,7 +41,7 @@ int Skip(
  [in] Количество пропускаемых элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  

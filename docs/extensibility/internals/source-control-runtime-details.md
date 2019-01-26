@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800d659130354a5dfb7089c3f881c6dd87e48228
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4eae4a8cdea9d98b6c0d8ad173ec4a31fe3ec2f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001268"
 ---
 # <a name="source-control-runtime-details"></a>Сведения о среде выполнения системы управления версиями
 Проект добавляется в систему управления версиями, когда пользователь добавляет файл в проект в систему управления версиями или через контроллеров автоматизации, таких как мастер. Проект не содержит для себя что это в системе управления версиями; он поддерживает системы управления версиями, но необходимо добавить к нему вручную.  

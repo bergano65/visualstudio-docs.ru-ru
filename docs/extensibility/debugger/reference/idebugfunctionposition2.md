@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fd298b1bbbf28f7a7fe514a01dc5707c35e04b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef7d3c4f205791811176a669341b10b0284d2627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043249"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Этот интерфейс представляет позицию по абстрактные функции в исходном документе.  
@@ -37,7 +37,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugFunctionPosition2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Возвращает имя функции, которая задается по отношению к этой позиции.|  
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Получает смещение от начала функции.|  
@@ -46,7 +46,7 @@ IDebugFunctionPosition2 : IUnknown
  Позиция, представленного этим интерфейсом основана на тексте, в частности, [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

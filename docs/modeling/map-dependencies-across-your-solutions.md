@@ -13,16 +13,16 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d7f438b125e492069073675609757dd9d484427
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950485"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Сопоставление зависимостей с помощью карт кода
 
@@ -105,7 +105,7 @@ ms.locfileid: "53861628"
 
    ![Развертывание узла на карте кода](../modeling/media/dependencygraph_containment.png)
 
-   Также можно выбрать нужный элемент с помощью клавиатуры и нажать клавишу**+**. Чтобы изучить более глубокие уровни кода, проделайте то же самое для пространств имен, типов и членов.
+   Также можно выбрать нужный элемент с помощью клавиатуры и нажать клавишу **+**. Чтобы изучить более глубокие уровни кода, проделайте то же самое для пространств имен, типов и членов.
 
    > [!TIP]
    > Дополнительные сведения о работе с кодом сопоставляется с помощью мыши, клавиатуры и жестов см. раздел [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
@@ -239,7 +239,7 @@ ms.locfileid: "53861628"
 
 ## <a name="see-also"></a>См. также
 
-- [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Видео. Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)

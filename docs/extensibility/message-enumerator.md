@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c6d8a59a90b9744d2eb0ad96686db8da4e824b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fb85f727f4059e76bf5b73c71c0514a4c8cfc24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969789"
 ---
 # <a name="message-enumerator"></a>Перечислитель сообщений
 Далее перечислены флаги используются для `TEXTOUTPROC` функцию, которая является функцией обратного вызова, интегрированная среда разработки предоставляет при вызове [SccOpenProject](../extensibility/sccopenproject-function.md) (см. в разделе [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Дополнительные сведения о функции обратного вызова функция).  

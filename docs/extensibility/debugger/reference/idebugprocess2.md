@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2a17c5c9f4121725ebfb9ca5a01f6209408c9a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdb218bb7b982d145d2c296edb68a00dff144349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031230"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Этот интерфейс представляет процесс, работающий с портом. Если порт локального порта, затем `IDebugProcess2` обычно представляет физического процесса на локальном компьютере.  
@@ -41,7 +41,7 @@ IDebugProcess2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProcess2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Возвращает описание процесса.|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Перечисляет программы, которые содержатся в этом процессе.|  

@@ -5,21 +5,21 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec485979eb4c8736260acfa5906b8465b5326f38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca21ba6e1e38e903f70451e9755b380726dee3ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937799"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для смешанных сред"
 
 Microsoft смешанной рекомендуемые правила сосредоточиться на наиболее важными и распространенными проблемами в проектах C++, которые поддерживают среда CLR, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов C++, которые поддерживают среда CLR.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|

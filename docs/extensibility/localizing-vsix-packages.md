@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936649"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -57,7 +57,7 @@ ms.locfileid: "53956937"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
 
 В следующем примере показано нужные части *Extension.vsixmanifest* файла. В этом файле содержится соответствующий *Extension.vsixlangpack* файл для испанского языка. Значения из языкового пакета замените значения из манифеста, если задано значение испанский языковой стандарт Visual Studio для конечного компьютера.
 

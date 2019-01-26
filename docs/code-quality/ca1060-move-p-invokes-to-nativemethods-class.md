@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdea132c68b178f8e5ab8f0129a714364fbe4c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917800"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060. Переместите методы P/Invoke в класс NativeMethods
 
@@ -81,7 +81,7 @@ ms.locfileid: "53874236"
 
 ## <a name="safenativemethods-example"></a>Пример SafeNativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы P/Invoke, можно безопасно предоставить любое приложение, и, не имеющие никаких побочных эффектов, которые должны быть помещены в класс, который называется **SafeNativeMethods**. У вас нет разрешения запросу, и вам не нужно платить за меньше внимания, когда они вызываются из.
 
  В следующем примере показан **Environment.TickCount** свойство, которое создает оболочку **GetTickCount** функции из kernel32.dll.

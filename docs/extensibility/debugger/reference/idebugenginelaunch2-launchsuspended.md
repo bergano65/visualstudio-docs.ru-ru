@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::LaunchSuspended | Документация Майкрософт
+title: IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2c5699c95176074f17d1bc05019ada1796bfd16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d7a3de4a6de71ed1cc291ebec46ca8aac992e4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038673"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Этот метод запускает процесс с помощью модуля отладки (DE).  

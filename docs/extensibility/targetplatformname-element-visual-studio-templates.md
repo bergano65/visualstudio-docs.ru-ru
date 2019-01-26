@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba3a29836595876c5025cc63f8853e705263f9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf69c44f8bd99ddd88799c7ffbf2b31c44e791fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966846"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName - элемент (шаблоны Visual Studio)
 Задает платформу, для которой предназначен шаблон проекта. Этот элемент используется для указания на то, что шаблон проекта служит для создания приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .  

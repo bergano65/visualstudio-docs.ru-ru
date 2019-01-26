@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 708dc22b2b13ac2924c9b6ec039daa1c77379849
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f3b370757516220259c8229b7abffc211bc6405
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985819"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919464"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 Этот интерфейс перечисляет [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры.  
@@ -49,7 +49,7 @@ IEnumDebugReferenceInfo2 : IUnknown
  Ссылка — по существу тип и адрес, а свойство — имя, тип и адрес. Ссылка сохраняется до тех пор, пока объект называется существует в памяти. См. в разделе [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) для получения дополнительных сведений.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

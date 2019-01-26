@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa052b7273b0917e604a525e5e7a5265d8e549c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935168"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068697"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Функция SccGetParentProjectPath
 Эта функция определяет родительский путь проекта для указанного проекта. Эта функция вызывается, когда пользователь добавляет в проект Visual Studio для системы управления версиями.  
@@ -86,7 +86,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Технические примечания с SccCreateSubProject и SccGetParentProjectPath  
  Добавление решений и проектов в систему управления версиями упрощен в Visual Studio, чтобы свести к минимуму количество раз, когда пользователю предлагается выбрать расположения в системе управления версиями. Эти изменения обычно активируются по Visual Studio, если подключаемый модуль системы управления версиями поддерживает обе новые функции, [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) и `SccGetParentProjectPath` функции. Тем не менее чтобы отключить эти изменения и вернуться к предыдущему поведению Visual Studio (исходный элемент управления Plug-in API версии 1.1) можно использовать следующий параметр реестра:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] «DoNotCreateSolutionRootFolderInSourceControl» = DWORD: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  Если этот параметр реестра не существует или имеет значение DWORD: 00000000, Visual Studio пытается использовать новые функции, `SccCreateSubProject`и`SccGetParentProjectPath`.  
   

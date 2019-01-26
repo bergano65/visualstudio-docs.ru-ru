@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfb3d754db6696a213806c9188d34105d127fb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868817"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032961"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 На панели навигации в верхней части редактора представления отображает типы и члены в файле. В левом раскрывающемся списке отображаются типы и члены отображаются в правом раскрывающегося списка. Когда пользователь выбирает тип, курсор помещается в первой строке типа. Когда пользователь выбирает элемент, курсор помещается в определении элемента. Раскрывающиеся списки обновляются для отображения текущего положения курсора.  

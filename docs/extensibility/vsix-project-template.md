@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b54fef4e3662783ee7927eb049058c8245ce91c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13c23ab2292f753174dbcdc62b979b9ac1e338b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964474"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
 Можно использовать шаблон проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайта.  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ce474c0896d5f9a72c3c09253bef8ca1a5c4a4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947053"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Элемент ProjectTemplateLink (шаблоны Visual Studio)
 Указывает путь к *.vstemplate* файлу для одного проекта в многопроектном шаблоне.  
@@ -27,13 +27,13 @@ ms.locfileid: "53885985"
  \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
- \<ProjectTemplateLink >  
+ \<ProjectTemplateLink>  
 - или -  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
  \<SolutionFolder >  
- \<ProjectTemplateLink >  
+ \<ProjectTemplateLink>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,7 +58,7 @@ ms.locfileid: "53885985"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Указывает организацию и содержимое многопроектных шаблонов.|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Группирует проекты в многопроектных шаблонах.|  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034159"
 ---
 # <a name="command-flag-eelement"></a>Флаг команды Eelement
 Изменение родительского элемента.  
@@ -35,7 +35,7 @@ ms.locfileid: "53836992"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |AllowParams|Указывает, что пользователи могут вводить параметры команд в **команда** окно при вводе каноническое имя команды.<br /><br /> Допустимо для: `Button`|  
 |AlwaysCreate|Меню создается, даже если он не имеет групп и кнопок.<br /><br /> Допустимо для: `Menu`|  
@@ -70,7 +70,7 @@ ms.locfileid: "53836992"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группу для [элемент Button](../extensibility/button-element.md) элементов.|  
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  

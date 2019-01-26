@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948405"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 Средство компилятор цветов расширений Visual Studio — консольное приложение, которое принимает XML-файл, представляющий цвета для существующих тем Visual Studio и преобразует его в .pkgdef файл, чтобы эти цвета можно использовать в Visual Studio. Так как это упрощает сравнение различий между XML-файлы, это средство используется для управления настраиваемых цветов в системе управления версиями. Его также можно связать сред построения, чтобы выходные данные сборки является допустимым pkgdef-файл.  
@@ -149,9 +149,9 @@ ms.locfileid: "53990861"
   
  **Примеры**  
   
--   D:\pkgdef\colors.pkgdef VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   / Nologo VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Примечания  
   

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899a8ac07d8e5b578c7619cceff173608b15792a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d2ea57e16876d550694fb378a853b10d8f0af29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947027"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069321"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Элемент VSTemplate (шаблоны Visual Studio)
 Содержит все метаданные шаблона проекта, шаблон элемента или комплект для начала работы.  
@@ -38,14 +38,14 @@ ms.locfileid: "53947027"
   
 ### <a name="attributes"></a>Атрибуты  
   
-| Атрибут | Описание |
+| Атрибут | Описание: |
 |-----------| - |
 | `Type` | Обозначает шаблон как шаблон проекта или шаблона элемента. Этот атрибут может иметь значение `Project` или `Item`. |
 | `Version` | Указывает номер версии для шаблона. Шаблоны в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] имеют `Version` значение атрибута `3.0.0`. |
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, категорию шаблона и определяет, отображается ли он в **новый проект** или **Добавление нового элемента** диалоговое окно.|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|  

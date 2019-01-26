@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b18e3b52105679f9b6a82083d6ffd7fe9268d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969815"
 ---
 # <a name="scccreatesubproject-function"></a>Функция SccCreateSubProject
 Эта функция создает подпроект с заданным именем в существующий родительский проект определяемое `lpParentProjPath` аргумент.  
@@ -85,7 +85,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Технические примечания с SccCreateSubProject и SccGetParentProjectPath  
  Добавление решений и проектов в систему управления версиями упрощен в Visual Studio, чтобы свести к минимуму количество раз, когда пользователю предлагается выбрать расположения в системе управления версиями. Эти изменения обычно активируются по Visual Studio, если подключаемый модуль системы управления версиями поддерживает обе новые функции, `SccCreateSubProject` и `SccGetParentProjectPath`. Тем не менее чтобы отключить эти изменения и вернуться к предыдущему поведению Visual Studio (исходный элемент управления Plug-in API версии 1.1) можно использовать следующий параметр реестра:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] «DoNotCreateSolutionRootFolderInSourceControl» = DWORD: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  Если этот параметр реестра не существует или имеет значение DWORD: 00000000, Visual Studio пытается использовать новые функции, `SccCreateSubProject` и `SccGetParentProjectPath`.  
   

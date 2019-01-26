@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55a6c0098779b96592335c4f74309338e8089e97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04031c2307d5d91a4854678f810f87b5afde0627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822736"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952162"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Расширяемость отладчика Visual Studio
 Visual Studio включает отладчик полностью интерактивные исходного кода, предоставляет мощный и простой в использовании средство для ошибок в программе. Отладчик имеет полную поддержку Visual Basic, C#, C/C++ и JavaScript. Тем не менее, с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], то есть доступны из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=214453), другие языки программирования, которые могут поддерживаться в отладчике с тем же широкими возможностями.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 090f70776ab3323be55d13888f29d4855386a511
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020897"
 ---
 # <a name="solutions-overview"></a>Обзор решений
 Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проект и состояние сведения, относящиеся к решению, хранятся в двух файлах другого решения. Файл решения (SLN) основана на тексте и может быть помещен в систему управления версиями и совместно использоваться пользователями. Файл решения пользовательских параметров (.suo) в двоичные. В результате SUO-файл нельзя поместить в систему управления версиями и содержит сведения о пользователе.  

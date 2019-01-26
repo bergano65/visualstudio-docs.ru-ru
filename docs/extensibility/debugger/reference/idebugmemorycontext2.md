@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acd36140d4624c2002b28f2d7932931817f46f56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 974466977995b866d70ad7e1619a6ae536886f6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870798"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007615"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Этот интерфейс представляет позицию в адресном пространстве машины, работающей в отлаживаемую программу.  
@@ -37,7 +37,7 @@ IDebugMemoryContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugMemoryContext2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Получает имя, отображаемое для пользователя для данного контекста.|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Возвращает сведения, описывающие этот контекст.|  
@@ -49,7 +49,7 @@ IDebugMemoryContext2 : IUnknown
  Visual Studio **памяти** вызовы в окна [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) для получения `IDebugMemoryContext2` интерфейса, который содержит вычисленное выражение, используемое для адреса памяти. Этот контекст передается [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) и [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) для указания адреса для чтения или записи.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
