@@ -7,16 +7,16 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: aec059dab655068d6dffaed6fe9a920cda1b6b7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd0b3ff21b48815ebbf1872f88471910d8a40147
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988302"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 В Visual Studio есть несколько способов организовать совместное использование моделей и схем с коллегами.
@@ -44,7 +44,7 @@ ms.locfileid: "53897986"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-|-|
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Совместно используйте модели в рамках проекта большого или среднего размера.|
 |[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|Вы можете копировать части схем в приложения, например PowerPoint или Word, и печатать схемы в XPS-файлы.|

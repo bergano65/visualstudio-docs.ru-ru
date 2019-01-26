@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9e86b002c212f63076c065d7aca3b7649513b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d88d9e8f5886c74f0c0059066ad240ed725742
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938488"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Участвовать в диалоговом окне Добавление нового элемента
 Подтип проекта может предоставить полный каталог элементов для **Добавление нового элемента** диалоговое окно, зарегистрировав **Добавление элемента** шаблоны в разделе **проекты** подраздел реестра.  
