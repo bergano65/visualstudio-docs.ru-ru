@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd772667223dace8f08fdd5c4a18c4860b50aaa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870155"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000878"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 Решения Visual Studio может содержать большое количество проектов. Visual Studio по умолчанию задается для загрузки всех проектов в решении во время открытия решения и не разрешает пользователю доступ к любой из проектов, пока все они завершения загрузки. Когда процесс загрузки проекта хватит на более чем за две минуты, отображается индикатор хода выполнения, в число проектов, загруженных и общее число проектов. Пользователь может выгрузить проекты при работе в решении с несколькими проектами, но эта процедура имеет определенные недостатки: выгруженные проекты не были собраны как часть команды Перестроить решение и закрытия IntelliSense описания типов и членов проекты не отображаются.  

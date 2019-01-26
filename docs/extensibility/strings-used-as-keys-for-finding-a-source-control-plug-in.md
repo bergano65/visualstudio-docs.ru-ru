@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f245a1657883acb63e9721837063c6a8ef245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977031"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями
 Следующие строки ключи для доступа к реестру для поиска сведений о системы управления версиями подключаемого модуля.  
@@ -30,7 +30,7 @@ ms.locfileid: "53835754"
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
-|`STR_SCCPROVIDERPATH`|Данный параметр|  
+|`STR_SCCPROVIDERPATH`|SCCServerPath|  
 |`STR_SCCPROVIDERNAME`|SCCServerName|  
 |`STR_SCC_INI_SECTION`|Системы управления исходным кодом|  
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 425a98c2198c075f0e621b8371f23190f62be935
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985033"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольную сумму между компонентами.  
@@ -32,7 +32,7 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugDocumentChecksum2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.|  
   
