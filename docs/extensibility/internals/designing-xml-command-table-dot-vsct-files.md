@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923098"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Проектирование table (.vsct) команда XML-файлы
 Таблицы команд XML (*.vsct*) файл описывает макета и внешнего вида элементов команду для VSPackage. Команда элементы включают кнопки, поля со списком, меню, панелей инструментов и группы элементов команды. В этой статье описываются файлы таблицы команд XML, как они влияют на элементы команды и меню и способах их создания.
@@ -117,7 +117,7 @@ ms.locfileid: "53904300"
 
  Во время разработки можно для нескольких проектов VSPackage, будет создан и зарегистрирован в экспериментальном кусте реестра, может привести к путанице помехи в интегрированной среде разработки. Чтобы устранить эту проблему, можно сбросить экспериментальный куст значения по умолчанию для удаления всех зарегистрированных пакетов VSPackage и любые изменения, они могли быть внесены в интегрированной среде разработки. Чтобы сбросить экспериментальный куст, используйте средство CreateExpInstance.exe, входящий в состав Visual Studio SDK. Его можно найти в:
 
- *% PROGRAMFILES (x 86) %\Visual Studio\\\<версии > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  Запустите средство с помощью команды **/Reset CreateExpInstance**. Помните, что данное средство удаляет с экспериментальном кусте все зарегистрированные объекты VSPackage обычно не устанавливается вместе с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
