@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d2e874a414efd546e3d6841cfaaf9fdd70da5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93efb9d03f09be9ce4fc8097b975ddf181a01526
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948769"
 ---
 # <a name="menu-element"></a>Элемент меню
 Определяет один элемент меню. Это шесть видов меню: Контекстное меню, MenuController, MenuControllerLatched, инструментов и ToolWindowToolbar.  
@@ -36,7 +36,7 @@ ms.locfileid: "53951395"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательный. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
 |id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|  
@@ -47,7 +47,7 @@ ms.locfileid: "53951395"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Необязательный параметр. Родительский элемент данного элемента меню.|  
 |CommandFlag|Обязательный. См. в разделе [элемент commandflag](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для меню.<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -этот флаг не влияет на отображение панели инструментов.<br />-   **DontCache**<br />-   **DynamicVisibility** -этот флаг не влияет на отображение панели инструментов.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  

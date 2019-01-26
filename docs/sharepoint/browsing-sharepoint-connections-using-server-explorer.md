@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931363"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875489"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Просмотр подключений SharePoint с помощью обозревателя сервера
   Теперь можно просмотреть локальные подключения SharePoint в **обозревателя серверов**. Используя эту технику вы можете осуществлять переход по компонентам сайта SharePoint, расположенным в системе. Компоненты сайта SharePoint, такие как определения списков и типы содержимого, отображаются в узле с именем **подключения SharePoint** в древовидном представлении окна **обозревателя серверов**. Для отображения **обозревателя серверов**, в строке меню выберите **представление** > **обозревателя серверов**. В древовидном представлении можно не только просматривать компоненты сайта SharePoint, но и использовать контекстное меню для удаления элементов, просмотра их свойств и обновления древовидного представления.  
@@ -35,7 +35,7 @@ ms.locfileid: "53931363"
 ## <a name="node-shortcut-menu-commands"></a>Команды контекстного меню узла
  Каждый узел имеет контекстное меню, который можно открыть, щелкнув правой кнопкой мыши узел или выбрав его, а затем выбрав **Shift**+**F10** ключи. Узел команды могут включать следующее:  
   
-|Имя команды|Описание:|  
+|Имя команды|Описание|  
 |------------------|-----------------|  
 |Обновление|Дерево обновляется, для отражения изменений, произошедших с момента последнего отображения узла.|  
 |Удаление|Удаляет выбранный узел в представлении дерева. **Примечание.**  Эта команда доступна только на подключения SharePoint, перечисленных в разделе **подключения SharePoint** узла.|  
@@ -45,7 +45,7 @@ ms.locfileid: "53931363"
   
 ## <a name="related-topics"></a>См. также
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Практическое руководство. Добавление и удаление подключений SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Описание действий, необходимых для добавления нового сайта SharePoint для **подключения SharePoint** узел в **обозревателя серверов**.|  
   

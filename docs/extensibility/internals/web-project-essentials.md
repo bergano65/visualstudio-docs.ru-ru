@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a18ee19755e79c03bb24104cb444af8168307d17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709a56aa2ece2fbc21076f35181970dd51697b67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939517"
 ---
 # <a name="web-project-essentials"></a>Основные компоненты веб-проекта
 Веб-проекты создания веб-приложений. Веб-проект можно использовать для создания веб-приложение имеет смарт-веб-страницы. Смарт-веб-страницы имеет серверный код, который выполняет визуализацию веб-страницы по запросу.  
