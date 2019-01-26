@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a02bdd92211003388ecd21e370a7a5f64da6227
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949805"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 
@@ -128,7 +128,7 @@ ms.locfileid: "53918642"
 
 8.  Среда вызывает вашу реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> для открытия файла и инициализации объекта проекта, например Project1.
 
-9. Среда вызывает вашу реализацию метода `IVsProjectUpgrade::UpgradeProject`, чтобы определить, необходимо ли обновить файл проекта.
+9. Среда вызывает вашу реализацию метода `IVsProjectUpgrade::UpgradeProject` , чтобы определить, необходимо ли обновить файл проекта.
 
 10. Вы вызываете метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> и передаете значение <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> для параметра `rgfQueryEdit`.
 
@@ -144,7 +144,7 @@ ms.locfileid: "53918642"
 
     1.  Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> для первого объекта проекта (Project1), переводя его таким образом в неактивное состояние.
 
-    2.  Среда вызывает вашу реализацию метода `IVsProjectFactory::CreateProject`, чтобы создать второй экземпляр проекта (Project2).
+    2.  Среда вызывает вашу реализацию метода `IVsProjectFactory::CreateProject` , чтобы создать второй экземпляр проекта (Project2).
 
     3.  Среда вызывает вашу реализацию метода `IPersistFileFormat::Load` для открытия файла и инициализации второго объекта проекта (Project2).
 

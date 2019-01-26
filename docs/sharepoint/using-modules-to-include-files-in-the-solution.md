@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921553"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864193"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Использование модулей для включения файлов в решение
   Могут возникнуть ситуации, когда требуется развернуть файлы на сервер SharePoint, независимо от их типа, такие как главные страницы. Чтобы сделать это, можно использовать *модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модули кода). Модули являются контейнерами для файлов в решении SharePoint. При развертывании решения, файлы в модуле копируются в указанные папки на сервере SharePoint.  
@@ -41,14 +41,14 @@ ms.locfileid: "53921553"
   
  Только что созданный модули содержат следующие файлы по умолчанию:  
   
-|Имя файла|Описание|  
+|Имя файла|Описание:|  
 |---------------|-----------------|  
 |*Elements.XML*|Файл определения модуля.|  
 |*Sample.txt*|Файл-заполнитель, который служит в качестве примера файла в модуле.|  
   
  *Elements.xml* файл содержит следующие элементы:  
   
-|Имя элемента|Описание:|  
+|Имя элемента|Описание|  
 |------------------|-----------------|  
 |Элементы|Содержит все элементы, определенные в модуле.|  
 |Module|Модуль элемент имеет один атрибут, *имя*, который задает имя модуля в формате `<Module Name="Module1">`.<br /><br /> Обратите внимание, что если вы изменяете имя модуля (или его *имя_папки* свойство), необходимо вручную обновить имя в элементе модуля.<br /><br /> Если указать вложенный каталог для файлов в элементе модуля [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) автоматически создаст для них соответствующую структуру каталогов.|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0072e290fe7099c60b8fc0245ba0ef334a15ac9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69f67bcba200d5b2a12544f7405fca04f5106e5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954076"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Этот интерфейс предоставляет методы для просмотра данных для связанного объекта. Этот интерфейс является частью поддержки визуализаторами типов.  
@@ -50,7 +50,7 @@ IPropertyProxyEESide : IUnknown
  Тип визуализатора использует этот интерфейс для доступа к значениям, связанный с объектом, который этот интерфейс является частью. Данных осуществляется через [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) интерфейс, который предоставляет представление только для чтения данных.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

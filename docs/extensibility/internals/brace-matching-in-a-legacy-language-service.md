@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cceac8f2eb6842166f9c73f6374f4f1923cf3831
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920036"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Парные фигурные скобки в языковой службы прежних версий
 Парные фигурные скобки позволяет разработчику отслеживать языковые элементы, которые должны применяться вместе, таких как круглые и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, выделяется открывающей фигурной скобки.  
@@ -40,7 +40,7 @@ ms.locfileid: "53910039"
 ## <a name="enable-support-for-brace-matching"></a>Включить поддержку парные фигурные скобки  
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Можно задать атрибут **MatchBraces**, **MatchBracesAtCaret**, и **ShowMatchingBrace** записи реестра, устанавливает соответствующие свойства из <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтения языка также могут задаваться пользователем.  
   
-|Запись реестра|Свойство.|Описание|  
+|Запись реестра|Свойство.|Описание:|  
 |--------------------|--------------|-----------------|  
 |MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает парные фигурные скобки.|  
 |MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Перемещает включает парные фигурные скобки, где находится курсор.|  

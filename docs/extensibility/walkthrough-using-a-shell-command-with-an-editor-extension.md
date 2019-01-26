@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62ffce08ecf5b6397bdda0b1f9fb6c1b83d7b63
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 1bb57106bfbb1575cfdb13b1fa2d27054dbc7d81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944323"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Пошаговое руководство. Используйте команду оболочки в расширении редактора
 Из VSPackage можно добавить функции, такие как команды меню в редакторе. В этом пошаговом руководстве показано, как добавить элемент оформления для представления текста в редакторе путем вызова команды меню.  
@@ -254,7 +254,7 @@ ms.locfileid: "54154341"
     }  
     ```  
   
-## <a name="add-an-iwpftextviewcreationlistener"></a>Добавить IWpfTextViewCreationListener  
+## <a name="add-an-iwpftextviewcreationlistener"></a>Add an IWpfTextViewCreationListener  
  <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> — Это часть компонентов MEF, можно использовать для ожидания передачи данных, чтобы просмотреть события создания.  
   
 1.  Добавьте файл класса в проект CommentAdornmentTest и назовите его `Connector`.  

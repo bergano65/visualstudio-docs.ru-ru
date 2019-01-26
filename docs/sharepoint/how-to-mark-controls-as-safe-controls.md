@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989378"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875472"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Как выполнить Пометка элементов управления как безопасных
   В целях безопасности SharePoint различает веб-элементы управления, которые были защищены от внедрение скриптов и веб-элементы управления, которые не являются. Защищенные элементы управления, или *безопасные элементы управления*, может осуществляться непроверенных пользователей. Вы можете пометить элементы управления как безопасные в свойстве записи безопасных элементов управления, элемент проекта SharePoint, либо в **конструктора пакетов** при добавлении сборки в пакет. Дополнительные сведения см. в разделе .  
@@ -89,7 +89,7 @@ ms.locfileid: "53989378"
     |-------------------|-----------|  
     |Пространство имен|Полное пространство имен для элемента управления, такие как **BdcModelProject1.VisualWebPart1**.|  
     |Имя типа|Button1|  
-    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Очистить **безопасном** "флажок".|  
     |Безопасен в отношении скриптов|Оставьте **безопасен в отношении скриптов** снимите флажок.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989378"
     |-------------------|-----------|  
     |Пространство имен|Полное пространство имен для элемента управления, такие как **BdcModelProject1.VisualWebPart1**.|  
     |Имя типа|TextBox1|  
-    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Выберите **безопасном** "флажок".|  
     |Безопасен в отношении скриптов|Выберите **безопасен в отношении скриптов** "флажок".|  
   
