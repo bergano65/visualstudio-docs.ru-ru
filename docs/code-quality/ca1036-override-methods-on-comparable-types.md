@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f4bd750f1ec2ad4d336acb1a00b8848de389bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd87e75134494ef928708e64015f413bc85878c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825585"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980691"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036. Переопределите методы в сопоставимых типах
 
@@ -42,7 +42,7 @@ ms.locfileid: "53825585"
 
 Чтобы устранить нарушение этого правила, переопределите <xref:System.Object.Equals%2A>. Если язык программирования поддерживает перегрузку операторов, предоставьте следующие операторы:
 
-- функции op_Equality
+- op_Equality
 
 - op_Inequality
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a351846df9391881d34f53322a852cab7ebbe3b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987925"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды открытия файла
 Следующие шаги описывают, каким образом среда IDE обрабатывает **открыть файл** команды, которая доступна на **файл** меню в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Также описано, как проекты должна отвечать на вызовы, поступающие из этой команды.  

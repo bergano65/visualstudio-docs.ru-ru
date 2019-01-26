@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 241d586e2055b2689dc7586e6212d8aa4cdae1d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922630"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Создание расширения с помощью шаблона элемента редактора
 Можно использовать шаблоны элементов, включенных в Visual Studio SDK, чтобы создать простой редактор расширениями классификаторы, крайние элементы и поля в редактор. Шаблоны элементов редактора доступны для проектов Visual C# или Visual Basic VSIX.  

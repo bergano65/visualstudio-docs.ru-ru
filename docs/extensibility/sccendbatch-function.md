@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7fc5afbc5b1a084f0c5d84f5daf1cb7f257364
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdc86d9b93d25a758e5321832b6bd4d98c171147
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869431"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982381"
 ---
 # <a name="sccendbatch-function"></a>Функция SccEndBatch
 Эта функция завершается пакет операций системы управления версиями. Эти пакеты не могут быть вложенными.  
@@ -34,7 +34,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Пакет успешно завершения операции.|  
 |SCC_E_UNKNOWNERROR|Обнаружена неспецифическая ошибка.|  

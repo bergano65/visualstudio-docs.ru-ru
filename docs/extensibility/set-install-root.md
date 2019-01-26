@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc8d0ccac452d82ed1a2f5fbce7c88fd82efc1d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983109"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Установка за пределами папки расширений
 
@@ -25,7 +25,7 @@ ms.locfileid: "53968502"
 * \Licenses [INSTALLDIR]
 * \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
 * \Common7\IDE\RemoteDebugger [INSTALLDIR]
-* \Common7\IDE\VC\VCTargets [INSTALLDIR]
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets
 
 >**Примечание.** Формат VSIX не позволяют установить за пределами структуры папок установки VS.
 
