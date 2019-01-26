@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6563691022fdd1694af69e872aa0d37803c2191c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956172"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
 
@@ -96,7 +96,7 @@ ms.locfileid: "53911654"
 
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**
 
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6.  Добавьте в проект класс вашего пользовательского процессора директив.
 
@@ -159,7 +159,7 @@ ms.locfileid: "53911654"
  Данный способ установки пользовательского процессора директив рекомендуется использовать в последнюю очередь. Он не предусматривает удобного способа включения и отключения процессора директив и способа передачи процессора директив другим пользователям.
 
 > [!CAUTION]
->  Неправильное изменение реестра может привести к серьезному повреждению системы. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.
+>  Неправильное изменение реестра может серьезно повредить систему. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Регистрация процессора директив путем создания раздела реестра
 
