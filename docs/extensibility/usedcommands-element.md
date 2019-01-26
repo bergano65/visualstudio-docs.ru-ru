@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a85d4480aa9c5a10243e09179c92b4aeb91df235
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8859e9799b500d838e83ee5fb664ed93103cb11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851200"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934985"
 ---
 # <a name="usedcommands-element"></a>Элемент UsedCommands
 Элемент UsedCommands группирует элементы UsedCommand и другими признаками UsedCommands.  
@@ -50,7 +50,7 @@ ms.locfileid: "53851200"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды (например, элементы меню, меню, панелей инструментов и поля со списком), предоставляемых VSPackage интегрированной среды разработки (IDE).|  
   

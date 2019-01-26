@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Next | Документация Майкрософт
+title: IEnumDebugErrorBreakpoints2::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a3dee11-5267-4d77-9e28-6a38413ba70b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf637df851bd4eb654f67e02f2bf00b59fecba6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c48c9196b7ea0db66601bf2e3a3d41b571584f85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935479"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 Возвращает следующий набор элементов из перечисления.  
@@ -51,7 +51,7 @@ int Next(
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   

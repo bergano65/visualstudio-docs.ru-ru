@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73626b9fcd756041d9a14a270644dca4acfcb64e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1887ff23bc6b4c2e3880d8ed1d3e4b2dc98b36f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950459"
 ---
 # <a name="get-project-properties"></a>Получение свойств проекта
 В этом пошаговом руководстве показано, как к свойствам проекта отображается в окне инструментов.  
