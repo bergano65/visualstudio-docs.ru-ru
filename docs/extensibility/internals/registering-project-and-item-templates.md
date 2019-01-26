@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041091"
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
 Типы проектов необходимо регистрировать каталоги, где находятся их шаблонов проектов и элементов проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует сведения о регистрации, связанные с типами вашего проекта, чтобы определить, что нужно показывать в **Добавление нового проекта** и **Добавление нового элемента** диалоговым окнам.  
@@ -37,7 +37,7 @@ ms.locfileid: "53930626"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
 
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Имя по умолчанию для проектов такого рода.|  
 |DisplayName|REG_SZ|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -66,7 +66,7 @@ ms.locfileid: "53930626"
 ### <a name="registering-file-filters"></a>Регистрация фильтры файлов  
  При желании вы можете зарегистрировать фильтры, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует при запросе у имен файлов. Например [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] фильтрации для **открыть файл** используется диалоговое окно:  
 
- **Файлы Visual C# (\*.cs,\*.resx,\*.settings,\*XSD-файл,\*.wsdl);\*. CS,\*.resx,\*.settings,\*XSD-файл,\*.wsdl)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
 
  Для поддержки регистрации несколько фильтров, каждый фильтр регистрируется в свой собственный подраздел в разделе HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*версии*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*подраздел*>. Имя подраздела может быть произвольным. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] игнорирует имя подраздела и использует только его значения.  
 
@@ -83,7 +83,7 @@ ms.locfileid: "53930626"
 "SortPriority"=dword:00000064  
 ```  
 
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
 |CommonOpenFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  

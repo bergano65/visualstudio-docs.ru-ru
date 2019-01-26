@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934209"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 
@@ -26,7 +26,7 @@ ms.locfileid: "54800960"
 
 ## <a name="the-services"></a>Службы
 
-| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
+| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание: |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Да | Да | Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> C/C++ ID: SID_SDTE |

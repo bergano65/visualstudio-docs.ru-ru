@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93fe45a6d286ab2acdf486e31c6d360af82e79ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931506"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974845"
 ---
 # <a name="how-to-implement-error-markers"></a>Как выполнить Реализовать маркеры ошибок
 Маркеры ошибок (или красными волнистыми линиями) являются наиболее сложных настроек текстового редактора для реализации. Однако преимущества, которые они предоставляют пользователям вашего VSPackage значительно перевешивают затраты на обеспечение. Маркеры ошибок может привести к некоторой пометить текст, который ваши средства синтаксического анализа языка считает, что неправильное волнистой или волнистой красной линией. Он помогает программистам визуально отображается неправильный код.  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f654af804ea48089a3a27e154d70c118b22fecb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957758"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021. Не используйте параметры out
 
@@ -86,7 +86,7 @@ Passing by return value:
 
 ## <a name="try-pattern-methods"></a>Попробуйте методы шаблона
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы, которые реализуют **попробуйте\<что-то >** шаблонов, такого как <xref:System.Int32.TryParse%2A?displayProperty=fullName>, не вызывают это нарушение. Следующий пример показывает структуру (тип значения), который реализует <xref:System.Int32.TryParse%2A?displayProperty=fullName> метод.
 
 ### <a name="code"></a>Код

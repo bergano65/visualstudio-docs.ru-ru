@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974257"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
@@ -36,7 +36,7 @@ ms.locfileid: "53885292"
 `compilerOptions="optimize+"`
 
 Допустимые значения:
- 
+
 Любые допустимые параметры компилятора.
 
 Игнорируется для шаблонов времени выполнения (предварительно обработанных).
@@ -46,11 +46,11 @@ ms.locfileid: "53885292"
 ## <a name="culture-attribute"></a>атрибут culture
 
 Пример
- 
+
 `culture="de-CH"`
 
 Допустимые значения:
- 
+
 "", инвариантные язык и региональные параметры, используемые по умолчанию.
 
 Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Допустимые значения:
- 
+
 `true`
- 
+
 `false` (по умолчанию)
- 
+
 Если атрибут `debug` имеет значение `true`, промежуточный файл кода содержит сведения, позволяющие отладчику точнее определить положение прерывания или исключения в шаблоне.
 
 Для шаблонов времени разработки записывается промежуточный файл кода вашей **% TEMP %** каталога.
@@ -88,9 +88,9 @@ hostspecific="true"
 Допустимые значения:
 
 `true`
- 
+
 `false` (по умолчанию)
- 
+
 `trueFromBase`
 
 Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.

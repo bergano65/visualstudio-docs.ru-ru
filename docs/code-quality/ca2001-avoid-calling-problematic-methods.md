@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 19db8edb-31ce-441c-b0de-a0f2746155b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e66a7c535ec83ac176700dbae8ee58fbf04135
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3a20179bb8463d059b5e7d7c82e045b3517f47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957630"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001. Избегайте вызова проблемных методов
 
@@ -39,7 +39,7 @@ ms.locfileid: "53958791"
 
 Избегайте создания ненужных и потенциально опасных вызовов методов. Нарушение этого правила возникает, когда член вызывает один из следующих методов:
 
-|Метод|Описание|
+|Метод|Описание:|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Вызов метода GC. Сбор может существенно повлиять на производительность приложения и требуется редко. Дополнительные сведения см. в разделе [Rico Mariani's Performance Tidbits](http://go.microsoft.com/fwlink/?LinkId=169256) запись в блоге на сайте MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Метод Thread.Suspend и Thread.Resume устарели из-за их к непредсказуемому поведению.  Используйте вместо него другие классы <xref:System.Threading> пространства имен, такие как <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, и <xref:System.Threading.Semaphore>для синхронизации потоков или защиты ресурсов.|

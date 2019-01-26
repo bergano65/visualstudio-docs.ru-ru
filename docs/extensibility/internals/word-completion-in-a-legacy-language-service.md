@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f89027e69c319c74e9c61ceb053edd9c2428548d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040811"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение машинных слов в языковой службе прежних версий
 Завершение слов заполняет недостающие символы на частично введенного слова. Если имеется только один из возможных завершения, слово завершения при вводе знака завершения. Если частичное соответствует более одной возможности, отображается список возможных завершений. Символ завершения может быть любой символ, который не используется для идентификаторов.  

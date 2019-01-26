@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80f86ac24d6e9e214b19a3e8c4564bdf11523b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b21b643c372cb5481868bc28496f273d4b6a5287
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041351"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Этот интерфейс выполняет маршалинг интерфейса, связанных с программой через границы процессов.  
@@ -45,7 +45,7 @@ IDebugProviderProgramNode2 : IUnknown
  Этот интерфейс реализуется в том случае, когда DE работает в отдельное пространство процесса из отлаживаемой программы: например, при выполнении DE в пространстве процесса Visual Studio, а не пространство процесса отлаживаемой программы.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

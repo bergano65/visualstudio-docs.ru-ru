@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: dagriffe
 author: dgriffen
-manager: douge
+manager: jillfra
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 73429f0ec41285dbab995a8a09411e5197bd0892
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f145b1fe8c8209e9b86ec1546f7079ec4317144a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969526"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме 2.0 VSIX языкового пакета
 
@@ -32,7 +32,7 @@ ms.locfileid: "53889180"
 
 В рамках `<PackageLanguagePackManifest>` элемент, должен существовать следующий элемент:
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |`<Metadata>`| Элемент-контейнер для всех метаданных локализованного пакета
 
@@ -67,7 +67,7 @@ ms.locfileid: "53889180"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показан способ предоставления поддержки локализованной установки для пакета VSIX.|
 |[Справочник по схеме 2.0 расширения VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое *.vsix* файл развертывания. Файл развертывания позволяет установить это расширение Visual Studio с помощью **расширения и обновления** диалоговое окно.|

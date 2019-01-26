@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd11440b5b50f41674e9837b88ca15e4c0144d37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf495335fb6522aadb82337e284d299c0fbb8b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901260"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013799"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Этот интерфейс задает сообщение об ошибке возвращаются пользователю.  
@@ -37,7 +37,7 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Этот интерфейс реализует следующий метод:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |`GetErrorMessage`|Возвращает сообщение об ошибке в понятном виде.|  
   
@@ -45,7 +45,7 @@ IDebugErrorEvent2 : IUnknown
  Если отладчик обнаруживает ошибку, этот интерфейс можно использовать чтобы сообщить пользователю сообщение через Visual Studio.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

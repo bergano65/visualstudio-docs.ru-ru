@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62bf7670a40b2cf8094793f833dfa7bcc038cdb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfa7c6852db66635b0a2b9d955a090b98dd1b61e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041572"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Событий текстового буфера, старый API
 Объект текстового буфера выдает несколько различных событий, которые позволяют реагировать на них различных ситуациях.  
@@ -25,7 +25,7 @@ ms.locfileid: "53909818"
 ## <a name="text-buffer-interfaces"></a>Интерфейсы буфера текста  
  Ниже перечислены интерфейсы, реализованные объект текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Разрешает создание составных действий (то есть действия, которые группируются в единое единый отмены и повтора).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение данных документа, управляемых текстовым буфером.|  

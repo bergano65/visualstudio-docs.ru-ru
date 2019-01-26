@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72f273cc08926b79e188f43356466fa00736fa5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988995"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Этот интерфейс позволяет вычислитель выражений (EE) для отображения значения свойства в формате необходим.  
@@ -51,7 +51,7 @@ IDebugCustomViewer : IUknown
  Как правило, пользовательское средство просмотра предоставляет только для чтения представление данных, поскольку [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) предоставленный интерфейс [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) не имеет методов для изменения значения свойства, за исключением как строка. Чтобы обеспечить поддержку изменения блоков произвольных данных, EE реализует пользовательский интерфейс на тот же объект, реализующий `IDebugProperty3` интерфейс. Затем этот пользовательский интерфейс содержит методы, необходимые для изменения произвольный блок данных.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

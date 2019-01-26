@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989756"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974023"
 ---
 # <a name="custom-colorable-items"></a>Настраиваемые цветные элементы
 Список типов можно переопределить для выделения цветом, такие как ключевые слова и комментарии, путем реализации пользовательских цветных элементов как часть службы вашего языка.  
@@ -30,7 +30,7 @@ ms.locfileid: "53989756"
 > [!CAUTION]
 >  Имя языка следует включить в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента. Если изменить имя одного из цветных элементов во время разработки, необходимо сбросить кэш, который был создан в первый раз обращается к вашей цветных элементов. Вы можете Сбросить экспериментальный кэш **CreateExpInstance** средство, которое устанавливается вместе с Visual Studio SDK, обычно в каталоге:  
 >   
->  *C:\Program файлы (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  Чтобы сбросить кэш, введите **/Reset CreateExpInstance**. Дополнительные сведения о **CreateExpInstance**, см. в разделе [служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
