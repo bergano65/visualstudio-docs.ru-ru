@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 000b1780b0124d579ed0b9481c7d18966663ca51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5781676bdcfe4af131926e2d3ed1a49414da4b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987318"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965306"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
 Набор правил расширенные правила определения правильности Майкрософт развертывает ошибок использования логики и платформы, имена которых присутствуют в процессе анализа кода. Дополнительный акцент делается на определенных сценариях, таких как COM-взаимодействие и мобильные приложения. Рекомендуется включить это правило, если один из этих сценариев применяется к вашему проекту или для поиска дополнительных ошибок в проекте.
@@ -23,7 +23,7 @@ ms.locfileid: "53987318"
 
  В следующей таблице описаны все правила в наборе правил расширенные правила определения правильности Майкрософт.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявляйте обработчики событий|
@@ -101,7 +101,7 @@ ms.locfileid: "53987318"
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Не объявляйте изменяющиеся ссылочные типы только для чтения|
 |[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Поля массивов не должны быть доступны только для чтения|
-|[CA2106 ОБЕСПЕЧЬТЕ](../code-quality/ca2106-secure-asserts.md)|Обеспечьте безопасность утверждений|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|Обеспечьте безопасность утверждений|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|Вызывайте GC.KeepAlive при использовании собственных ресурсов|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Запечатайте методы, соответствующие частным интерфейсам|
 |[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Обеспечьте безопасность конструкторов сериализации|
@@ -132,10 +132,10 @@ ms.locfileid: "53987318"
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Пометьте логические аргументы P/Invoke с помощью MarshalAs|
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Не используйте приоритет процесса простоя|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Не используйте таймеры, препятствующие изменению состояния электропитания|
-|[CA1824 СЛЕДУЕТ](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|Помечайте сборки с помощью NeutralResourcesLanguageAttribute|
+|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|Помечайте сборки с помощью NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Избегайте вызова проблемных методов|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Не рассматривайте волокна в качестве потоков|
-|[CA2135 СБОРКИ](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Сборки уровня 2 не должны содержать LinkDemands|
+|[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Сборки уровня 2 не должны содержать LinkDemands|
 |[CA2136](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|Члены не должны иметь противоречащие заметки прозрачности|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|Прозрачные методы могут не использовать атрибут HandleProcessCorruptingExceptions|
 |[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|Прозрачный код не должен быть защищен проверками LinkDemands|

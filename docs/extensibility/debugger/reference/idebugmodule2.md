@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af77d25a0bde9f01e27c4f99dd90aff055607395
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ea20dac16cdffbac24cbca68c1a337a250ea8cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899695"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922773"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Этот интерфейс представляет модуль, то есть исполняемый модуль программы, например библиотеку DLL.  
@@ -50,7 +50,7 @@ IDebugModule2 : IUnknown
  Сведения о модуле, которые могут отображаться в **модули** окно интегрированной среды разработки.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

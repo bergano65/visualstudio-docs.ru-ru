@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967551"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Манифест, чтобы средство кода — это консольное приложение, которое принимает файл .imagemanifest службы образов в Visual Studio и создает файлы для ссылок на значения манифеста изображения в C++ или оболочки C#, VB или .vsct файлы для Visual Studio расширения. Это средство создает файлы программы-оболочки, которые могут использоваться для запрашивающего изображений из службы Visual Studio изображение непосредственно или для передачи значения манифеста через API-интерфейсы, если код не обработать какие-либо собственным пользовательским Интерфейсом и подготовки к просмотру.  
@@ -40,11 +40,11 @@ ms.locfileid: "53895445"
   
  **Примеры**  
   
--   /Manifest:D:\MyManifest.imagemanifest ManifestToCode/Language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Примечания  
   

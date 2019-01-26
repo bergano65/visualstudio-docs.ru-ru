@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877736"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973412"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 Когда VSPackage регистрирует окно инструментов, положения по умолчанию, размер, стиль закрепления и другие сведения о видимости указывается в необязательных значений. Дополнительные сведения о регистрации окна инструментов, см. в разделе [средство Windows в реестре](../extensibility/tool-windows-in-the-registry.md)  
@@ -85,7 +85,7 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
 
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |(Значение по умолчанию)|REG_SZ|Нет|Оставьте пустым.|  
 |*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный параметр. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  

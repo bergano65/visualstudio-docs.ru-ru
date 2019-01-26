@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80013faf174900c4e94bf452f6f19c0ac9bfbeba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956497"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
@@ -37,13 +37,13 @@ ms.locfileid: "53909899"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
 ### <a name="attribute-name-attribute"></a>{Атрибут name} Атрибут  
   
-| Значение | Описание: |
+| Значение | Описание |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | Расположение схемы типов содержимого. |
   
@@ -69,12 +69,12 @@ ms.locfileid: "53909899"
 |txt|text/plain|  
 |pkgdef|text/plain|  
 |xml|text/xml|  
-|VSIXMANIFEST|text/xml|  
+|vsixmanifest|text/xml|  
 |htm или html|text/html|  
 |RTF|приложение или rtf|  
-|PDF-файл|Application/pdf|  
+|pdf|Application/pdf|  
 |GIF|изображение/gif|  
-|JPG или jpeg|изображение или jpg|  
+|JPG или jpeg|image/jpg|  
 |TIFF|изображение/tiff|  
 |vsix|Application/zip|  
 |ZIP|Application/zip|  
@@ -83,7 +83,7 @@ ms.locfileid: "53909899"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий файл [Content_Types] .xml описывает типичные пакета VSIX.  
   
 ### <a name="code"></a>Код  

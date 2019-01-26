@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d828fbf2bce435c067b6bc1cc66ce379f3304988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6a9c2dcbbee307578f837b8472b1026c0aa7a2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969584"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Установка анализаторов .NET Compiler Platform
 
@@ -31,7 +31,7 @@ Visual Studio 2017 включает в себя набор базовых пла
 
    > [!NOTE]
    > Www.nuget.org страницы для каждого пакета анализатора показывает команду, чтобы вставить в **консоль диспетчера пакетов**. Есть даже под рукой кнопку, чтобы скопировать текст в буфер обмена.
-   > 
+   >
    > ![Страница NuGet.org команды консоли диспетчера пакетов](media/nuget-install-command.png)
 
    Сборки анализатора установлены и отображаются в **обозревателе решений** под **ссылки** > **анализаторы**.

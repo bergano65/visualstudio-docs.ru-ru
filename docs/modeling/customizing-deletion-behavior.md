@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e72d5165319eab7062c6a3f4106f232dca23808
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969607"
 ---
 # <a name="customizing-deletion-behavior"></a>Настройка функции удаления
 Удаление элемента обычно приводит также к удалению связанных элементов. Удаляются все подключенные к нему отношения и дочерние элементы. Это поведение называется *распространение удалений*. Распространение удалений можно настраивать, например, для организации удаления дополнительных связанных элементов. Написав код программы, можно сделать распространение удалений зависимым от состояния модели. Также можно в ответ на удаление вызвать другие изменения.

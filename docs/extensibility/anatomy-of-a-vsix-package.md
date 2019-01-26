@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921488"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971242"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является *.vsix* файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными Visual Studio использует для классификации и установить расширения. Эти метаданные содержатся в манифесте VSIX и *[Content_Types] .xml* файл. Пакет VSIX также может содержать один или несколько *Extension.vsixlangpack* файлы для обеспечения локализованный текст программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  
@@ -54,7 +54,7 @@ ms.locfileid: "53921488"
   
  По умолчанию установки применяется только для текущего пользователя, так как *% LocalAppData %* является каталогом конкретного пользователя. Тем не менее если задать [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста для `True`, расширение будет установлено в <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> и будут доступны для всех пользователей компьютера.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types] .xml* файл определяет типы файлов в развернутом представлении *.vsix* файл. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. в разделе [структура файл [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  
   
  Объект *[Content_Types] .xml* файл необходим в стандарте Open Packaging Conventions (OPC). Дополнительные сведения об OPC см. в разделе [OPC: Новый стандарт упаковки данных](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) на сайте MSDN.

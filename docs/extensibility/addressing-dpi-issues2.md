@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d68ef2eb1dfd153cb4d5048901cc824c87585a35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875171"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968652"
 ---
 # <a name="address-dpi-issues"></a>Разрешение проблем
 Все большее число устройств входят в состав экранов «высокого разрешения». Эти экраны обычно имеют более чем 200 пикселей на дюйм (ppi). Для работы с приложением на этих компьютерах потребуется содержимого масштаба для удовлетворения потребностей Просмотр содержимого на расстоянии обычный режим просмотра для устройства. Начиная с 2014 г. основного целевого объекта, для дисплеев с высокой плотностью мобильных вычислительных устройств (планшеты, ноутбуки лотке и телефоны).  
@@ -94,7 +94,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (разрешить функции масштабирования в X и оси Y)  
   
-- int пространства = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
 - int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   

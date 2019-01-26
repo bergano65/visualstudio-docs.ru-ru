@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 243202b116af63a7d14672cd33d30030e8e987b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828528"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959087"
 ---
 # <a name="inside-the-core-editor"></a>В редакторе
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Базовый редактор — это набор из нескольких компонентов, которые позволяют изменять и запрашивать текстовую информацию. Если вы настраивали базовый редактор, используя старый API, могут продолжать использовать эти настройки, которые будут направляться через редактора адаптеров. Рекомендуется, однако адаптации настройки в новый редактор API.  

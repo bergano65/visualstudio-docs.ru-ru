@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b97fb2ff4d0f8babcb3616f48fb04aab67143c91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a418fdcb005965a5a972da05ddbc87a598f0ec64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927019"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Извлекает указанное число настраиваемых атрибутов в последовательности перечисления.  
@@ -51,7 +51,7 @@ int Next(
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

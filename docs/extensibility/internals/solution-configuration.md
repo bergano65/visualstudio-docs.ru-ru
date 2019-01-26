@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831a35fe910a906a29e8b0a6a48377efb3569b11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937890"
 ---
 # <a name="solution-configuration"></a>Конфигурация решения
 Конфигурации решения хранения свойств уровня решения. Они определяют поведение **запустить** ключ (F5) и **построения** команды. По умолчанию эти команды сборку и запустить конфигурацию отладки. Обе команды выполняются в контексте конфигурации решения. Это означает, что пользователю могут ожидать F5 для запуска и сборки, независимо от активного решения настраивается с помощью параметров. Данная среда предназначена для оптимизации для решения, но не в проектах, когда дело доходит до создания и выполнения.  
