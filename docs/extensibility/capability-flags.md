@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfbc456ea42342187b5d1d3039c10b3336714133
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922131"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934196"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
 SCC_CAP_*xxx* флаги имеют битовых флагов, используемый для указания возможности подключаемого модуля системы управления версиями. SCC_EXCAP_*xxx* флаги имеют добавочные флаги, которые указывают расширенные возможности и устранить до целых чисел.  
@@ -63,7 +63,7 @@ SCC_CAP_*xxx* флаги имеют битовых флагов, использ�
 ## <a name="capability-bits-added-in-version-13"></a>Биты возможностей, добавленных в версии 1.3  
  Эти флаги передаются поочередно для [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) функцию, чтобы определить, поддерживается ли функция.  
   
-|Расширенные возможности кода|Значение|Описание:|  
+|Расширенные возможности кода|Значение|Описание|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Поддерживает `SCC_CHECKOUT_LOCALVER` вариант для извлечения.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Поддерживает [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  

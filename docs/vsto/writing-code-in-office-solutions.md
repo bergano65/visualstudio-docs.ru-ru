@@ -28,17 +28,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], writing code
 - Office applications [Office development in Visual Studio], programming model
 - managed code extensions [Office development in Visual Studio], writing code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942977"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864076"
 ---
 # <a name="write-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.
@@ -112,7 +112,7 @@ ms.locfileid: "53942977"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Основные различия между разработкой для Office и управляемым кодом
  В таблице ниже указаны основные различия между разработкой для Office и управляемым кодом, написанным на Visual Basic или Visual C#.
 
-|Функция|Описание|Поддержка Visual Basic и Visual C#|
+|Функция|Описание:|Поддержка Visual Basic и Visual C#|
 |-------------|-----------------|-----------------------------------------|
 |Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [массивы &#40;C&#35; руководство по программированию&#41; ](/dotnet/csharp/programming-guide/arrays/index) и [массивы в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|
 
