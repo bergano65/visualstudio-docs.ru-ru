@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e4920844bee7c242d4c260070a50416621708e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5348b1903c16d8b46c0960bb5812fb78455dfbe9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986531"
 ---
 # <a name="registering-a-legacy-language-service"></a>Регистрация языковой службы прежних версий
 В managed package framework (MPF), языковой службы является предлагаемых VSPackage (см. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md)) и зарегистрирован [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , добавив разделы реестра и записи. Этот процесс регистрации выполняется в частично во время установки и частично во время выполнения.  

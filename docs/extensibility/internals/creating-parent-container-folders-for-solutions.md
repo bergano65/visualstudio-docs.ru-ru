@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 531e1cbf3e8489fd68d2bbd94c9a66af3c817a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889102"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929943"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
 В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
@@ -56,14 +56,14 @@ ms.locfileid: "53889102"
   
 |Решение содержит|На расположения диска|Структура базы данных по умолчанию|  
 |-----------------------|-----------------------|--------------------------------|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> "Web2"|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/ < user_choice > / "web2"|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/D/web1<br /><br /> $/ < user_choice >/sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> "Web2"|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/ < user_choice > / "web2"|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/ < user_choice >/D/web1<br /><br /> $/<user_choice>/sln1/win1|  
   
  SUR папки и вложенные папки создаются независимо от того, является ли операции отмены или сбоя из-за ошибки. Они не удаляются автоматически в Отмена или сообщений об ошибке.  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] по умолчанию к поведению версии 1.1, если подключаемый модуль системы управления версиями не возвращает `SCC_CAP_CREATESUBPROJECT` и `SCC_CAP_GETPARENTPROJECT` флаги возможностей. Кроме того, пользователи [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно вернуться к поведению версии 1.1, задав значение следующего раздела *DWORD: 00000001*:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
 ## <a name="see-also"></a>См. также  
  [Новые возможности в исходный элемент управления Plug-in API версии 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

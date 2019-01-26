@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f05a28ab046c1c0221162bce623a2ccf983f3d43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958151"
 ---
 # <a name="error-codes"></a>Коды ошибок
 Функции API подключаемого модуля управления источника возвращает ошибку, ожидается один из следующих кодов ошибки. Все ошибки имеет отрицательное значение, предупреждения или информационные коды являются положительными, и 0 — успех.  
   
-|Код ошибки|Значение|Описание|  
+|Код ошибки|Значение|Описание:|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Подключаемый модуль поддерживает добавление файлов из системы управления версиями в два этапа. Дополнительные сведения см. в разделе [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Локального файла отличается от файла в базе данных управления версиями (например, [SccDiff](../extensibility/sccdiff-function.md) могут возвращать это значение).|  

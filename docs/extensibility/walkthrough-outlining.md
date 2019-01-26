@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ec5c409e13838c68656a35a92dab3688a5ce326
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827527"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948080"
 ---
 # <a name="walkthrough-outlining"></a>Пошаговое руководство. структуризация
 Настройка компонентов на основе языка, такие как структурирование, определив типы областей текста, которые вы хотите развернуть или свернуть. Можно определения областей в контексте языковую службу, или определить тип имени собственного файла расширения и содержимого и применяются только к этому типу определение области или применить область определения в существующий тип содержимого (например, «text»). В этом пошаговом руководстве показано, как для определения и отображения областей структуры.  
