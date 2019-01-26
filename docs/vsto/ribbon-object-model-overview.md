@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961313"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876035"
 ---
 # <a name="ribbon-object-model-overview"></a>Обзор объектной модели ленты
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Предоставляет строго типизированную объектную модель, можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например можно динамически заполнения элементов управления меню, или отображать и скрывать элементы управления в зависимости от контекста. Можно также добавить вкладок, групп и элементов управления на ленту, но только до загрузки ленты в приложение Office. Сведения см. в разделе [задать свойства, которые становятся доступными только для чтения](#SettingReadOnlyProperties).  
