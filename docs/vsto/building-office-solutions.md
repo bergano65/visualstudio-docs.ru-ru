@@ -24,15 +24,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], debugging
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963247"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866169"
 ---
 # <a name="build-office-solutions"></a>Создание решений Office
   Сборка и отладка проектов Office в принципе не отличается от сборки и отладки других типов проектов в Visual Studio, например Windows Forms. В этом разделе описываются существующие различия. Общие сведения о том, как создавать приложения, см. в разделе [компиляция и сборка в Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

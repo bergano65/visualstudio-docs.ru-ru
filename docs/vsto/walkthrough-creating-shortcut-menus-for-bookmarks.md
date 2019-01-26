@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Bookmark control, events
 - shortcut menus, Word
 - menus, creating in Office applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb09bc2ee3f9278026be2046ff249fb2ca4c558f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940560"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863998"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство. Создать контекстное меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройке уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст в закладку, контекстное меню отображается и параметры для форматирования текста.  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df3efc1bce5cccc88425735e50daba63f31ee922
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869523"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862620"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Пользовательские действия в областях формы Outlook
   Действия отображаться кнопки, которые позволяют ответить на сообщение Microsoft Office Outlook. Например, для ответа на сообщение, пользователь щелкнуть **ответа**, **ответить всем**, или **вперед** кнопки действий. Каждое из этих действий создает нового почтового элемента и заполняет поля элемента с использованием данных из исходного элемента.  
@@ -36,7 +36,7 @@ ms.locfileid: "53869523"
   
  В следующей таблице описаны свойства, доступные в **Custom Actions** диалоговое окно.  
   
-|Свойство.|Описание|  
+|Свойство.|Описание:|  
 |--------------|-----------------|  
 |**AddressLike**|Указывает, каким образом будет направлено целевой формы.|  
 |**Текст**|Указывает, каким образом текст исходного элемента добавляется к целевой формы.|  

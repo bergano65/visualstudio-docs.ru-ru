@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cd7c3654de0ffc9be98420fb0a823de21eef756
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957901"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867706"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширения обозревателя сервера для отображения веб-частей
   В Visual Studio, можно использовать **подключения SharePoint** узел **обозревателя серверов** для просмотра компонентов на сайтах SharePoint. Тем не менее **обозревателя серверов** не отображать некоторые компоненты по умолчанию. В этом пошаговом руководстве, вы расширите **обозревателя серверов** , чтобы он отображал галерею веб-частей на каждый из которых подключен сайта SharePoint.  

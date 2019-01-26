@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 - features [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55b1b3f2f243a6c4d35a4c1effbb4ca759abd9d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58db8ea5affd295ec21ed9e398053c57345dee79
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862135"
 ---
 # <a name="create-sharepoint-features"></a>Создание компонентов SharePoint
   Функции SharePoint можно использовать для группировки связанных элементов проекта SharePoint, для упрощения развертывания. Создание характеристик, задавать их области и отмечать другие компоненты как зависимости с помощью конструктора компонентов SharePoint. Конструктор также создает манифест, который представляет собой файл XML с описанием каждого компонента.  
@@ -38,7 +38,7 @@ ms.locfileid: "53842886"
   
  Следующая таблица описывает свойства функций, которые отображаются в конструкторе компонентов.  
   
-|Свойство.|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
 |Заголовок|Необязательный параметр. Название компонента по умолчанию имеет значение *SolutionName* *FeatureName*.|  
 |Описание:|Необязательный параметр. Описание компонента SharePoint.|  

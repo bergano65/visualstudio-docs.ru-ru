@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958804"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867122"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `postAction` пространства имен `vstav3` содержит элементы `entrypoint` и все элементы `postActionData` , связанные с действиями после развертывания, которые выполняются после установки решений Office.
@@ -50,7 +50,7 @@ ms.locfileid: "53958804"
 
 ## <a name="post-deployment-action-example"></a>Пример действия после развертывания
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В приведенном ниже примере кода показан элемент `postAction` манифеста приложения для решения Office, развертываемого с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

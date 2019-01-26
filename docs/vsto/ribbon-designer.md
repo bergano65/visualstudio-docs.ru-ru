@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928871"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867264"
 ---
 # <a name="ribbon-designer"></a>Конструктор лент
   Конструктор лент — основа для визуальной разработки. Используйте конструктор лент для добавления пользовательских вкладок, групп и элементов управления на ленту приложения Microsoft Office.
@@ -138,7 +138,7 @@ ms.locfileid: "53928871"
 ###  <a name="AddControlsToGroups"></a> Добавление элементов управления в группы
  Добавьте один или несколько элементов управления в группу. В следующей таблице описаны каждого элемента управления.
 
-|Элемент управления|Описание|
+|Элемент управления|Описание:|
 |-------------|-----------------|
 |**Box**|Контейнер, упорядочивающий элементы управления в группе. Любой элемент управления можно добавить в поле, за исключением разделителя, группы или вкладки. Поле может быть горизонтальную или вертикальную.|
 |**Button**|Кнопка, запускающая действие. Кнопки можно добавить в группу, группу кнопок, стрелку раскрывающегося списка, коллекции, меню или разворачивающуюся кнопку.|
@@ -188,7 +188,7 @@ ms.locfileid: "53928871"
 |Копировать выбранные элементы управления.|**CTRL**+**C**|
 |Вырежьте выбранные элементы управления.|**CTRL**+**X**|
 |Вставка элементов управления из буфера обмена.|**CTRL**+**V**|
-|Выберите **элементов**.|**CTRL**+**Alt**+**X**|
+|Выберите **элементов**.|**Ctrl**+**Alt**+**X**|
 |Выделение родительского компонента.|**ESC**|
 
  Сочетания клавиш, применяемые только к меню Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, и <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> показаны в следующей таблице.

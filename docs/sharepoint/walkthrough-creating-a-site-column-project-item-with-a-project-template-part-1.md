@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832155"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864609"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
   Проекты SharePoint являются контейнерами для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве мы определим тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, содержащего элемента проекта столбца сайта.
@@ -179,17 +179,17 @@ ms.locfileid: "53832155"
 
 8. Повторите шаги 5 – 8, чтобы добавить следующие файлы из указанных вложенных папок в каталоге BaseSharePointProject:
 
-   - *\Field1\Elements.XML*
+   - *\Field1\Elements.xml*
 
-   - *\Field1\SharePointProjectItem.SPDATA*
+   - *\Field1\SharePointProjectItem.spdata*
 
-   - *\Features\Feature1\Feature1.Feature*
+   - *\Features\Feature1\Feature1.feature*
 
-   - *\Features\Feature1\Feature1.Template.XML*
+   - *\Features\Feature1\Feature1.Template.xml*
 
    - *\Package\Package.Package*
 
-   - *\Package\Package.Template.XML*
+   - *\Package\Package.Template.xml*
 
      Добавьте эти файлы непосредственно в проект SiteColumnProjectTemplate; не повторно создать вложенные папки Field1, компонентов или пакет в проекте. Дополнительные сведения об этих файлах см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 

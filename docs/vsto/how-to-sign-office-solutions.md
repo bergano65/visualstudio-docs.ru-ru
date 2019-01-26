@@ -9,24 +9,24 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871667"
 ---
 # <a name="how-to-sign-office-solutions"></a>Как выполнить Подписывание решений Office
   Если вы вошли в это решение, можно предоставить доверие, используя сертификат в качестве свидетельства. Тот же сертификат можно использовать для нескольких решений, и все решения будут доверенными без обновлений политики обеспечения дополнительной безопасности.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Если вы вручную изменить приложение и манифесты развертывания с помощью Manifest Generation and Editing Tool (*mage.exe* и *mageui.exe*), необходимо повторно подписать манифесты, прежде чем их можно использовать. Дополнительные сведения см. в разделе [Как Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Если вы вручную изменить приложение и манифесты развертывания с помощью Manifest Generation and Editing Tool (*mage.exe* и *mageui.exe*), необходимо повторно подписать манифесты, прежде чем их можно использовать. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="sign-by-using-a-certificate"></a>Войдите с помощью сертификата
  Сертификат — это файл, который содержит уникальный ключ и идентификатор издателя решения. Можно приобрести сертификаты из центра сертификации, или создать собственный сертификат и подписать его сертификации.

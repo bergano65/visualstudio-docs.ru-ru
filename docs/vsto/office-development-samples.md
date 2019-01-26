@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, samples
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 441137d7da74e6fb9b0b53370e012bbacb859087
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964537"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873292"
 ---
 # <a name="office-development-samples"></a>Примеры разработки решений Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.  
@@ -28,7 +28,7 @@ ms.locfileid: "53964537"
   
 ## <a name="office-development-samples"></a>Примеры разработки решений Office  
   
-|Пример|Описание|  
+|Пример|Описание:|  
 |------------|-----------------|  
 |Пример основных и подробных данных для Excel|Показывает, как извлекать данные из реляционной базы данных или XML-файла и использовать эти данные в Excel.|  
 |Пример приемов защиты документов Excel|Показывает различные методы, которые можно использовать для защиты структурных компонентов листа, чтобы не позволить пользователям случайным образом удалить элементы управления или изменить важные части документа решения.|  

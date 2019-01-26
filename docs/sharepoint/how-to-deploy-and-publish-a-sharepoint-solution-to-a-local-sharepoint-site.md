@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8dd0dd78ca8f6b6f9791a657546cabc0d098b563
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2efdc339500786de87c35b4caeb3c85cef5191b7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864102"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Как выполнить Развертывание и публикация решения SharePoint на локальном сайте SharePoint
   Можно развернуть или публикации решений SharePoint на локальном сервере SharePoint на компьютере разработчика. Копии процесса развертывания *.wsp* файл на сервер SharePoint, устанавливает решение и активация компонентов. Публикация обрабатывать только копии *.wsp* файл на сервер SharePoint и устанавливает его. Необходимо вручную активировать его, чтобы включить эту функцию в SharePoint.  

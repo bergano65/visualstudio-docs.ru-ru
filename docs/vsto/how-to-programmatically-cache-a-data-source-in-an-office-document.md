@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088495"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867329"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Как выполнить Программное кэширование источника данных в документах Office
   Можно программно добавить объект данных в кэш данных в документе путем вызова `StartCaching` метода ведущего элемента, такого как <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Удаляет объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.

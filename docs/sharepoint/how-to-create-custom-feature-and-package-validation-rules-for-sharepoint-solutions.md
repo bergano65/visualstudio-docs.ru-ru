@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939232"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874085"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Как выполнить Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint
   Можно создать пользовательские правила проверки для проверки пакета решения, созданные Visual Studio. Можно выполнить полную проверку на весь компонент или пакет, выбрав **Validate** в контекстном меню, пакета или компонента в **PackagingExplorer**. Частичная проверка выполняется при добавлении нового проекта SharePonit или функции в проект, чтобы определить, пакета или компонента будет находиться в допустимом состоянии.  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad0a482b38d91ae7812e794a56e0eb380cd016a8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827024"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867971"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Как выполнить Добавление области действий в документы Word или книги Excel
   Чтобы добавить панели действий в документ Microsoft Office Word или книге Microsoft Excel, необходимо сначала создайте пользовательский элемент управления Windows Forms. Затем добавьте пользовательский элемент управления <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поле (Word) или `ThisWorkbook.ActionsPane` поле (Excel) в проекте.  

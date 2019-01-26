@@ -10,17 +10,17 @@ helpviewer_keywords:
 - types [Office development in Visual Studio], casting
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 520ad17bf96f4a6c657a8bd48ac0fdd29b52e1b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847260"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873175"
 ---
 # <a name="late-binding-in-office-solutions"></a>Позднее связывание в решениях Office
   Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные через компоненты позднего связывания. Например некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, и некоторые типы могут предоставлять различные методы или свойства в различных контекстах.  

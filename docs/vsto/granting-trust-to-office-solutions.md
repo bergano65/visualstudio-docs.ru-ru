@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890473"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871381"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Предоставление доверия решениям Office
   Предоставление доверия Office решения означает изменение политики безопасности для каждого целевого компьютера на доверие сборке решения, манифест приложения, манифест развертывания и документа. Отношения доверия могут предоставляться для решения Office вы или конечным пользователем.
@@ -43,7 +43,7 @@ ms.locfileid: "53890473"
 ##  <a name="TrustPrompt"></a>Доверие решения с помощью запроса о доверии ClickOnce
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] предлагает пользователю принять решение о доверии, если нет политики во всей организации, которому доверяет сертификату решения. Если конечный пользователь предоставляет доверия решению, создается запись списка включения, содержащий URL-адрес и открытый ключ для хранения решения о доверии. Настройка доверия при выполнении более поздней версии, конечному пользователю не предлагается еще раз.
 
- Администраторы могут отключить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии или требовать, чтобы запросы возникали только для решений, которые подписаны с помощью сертификата Authenticode. Дополнительные сведения о том, как изменить эти настройки для зоны «Мой компьютер», локальная интрасеть, Интернет, TrustedSites и UntrustedSites см. в разделе [как: Настройка поведения запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Администраторы могут отключить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии или требовать, чтобы запросы возникали только для решений, которые подписаны с помощью сертификата Authenticode. Дополнительные сведения о том, как изменить эти настройки для зоны «Мой компьютер», локальная интрасеть, Интернет, TrustedSites и UntrustedSites см. в разделе [как: настроить поведение запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="see-also"></a>См. также
 

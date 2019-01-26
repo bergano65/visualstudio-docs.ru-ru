@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project output references [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, project output references
 - SharePoint development in Visual Studio, advanced packaging tools
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a26f6b2abdf0e24d4179986acc56335fb36d002
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897298"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868788"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Как выполнить Добавить ссылку на выходные данные проекта
   Для развертывания сборки проекта вне SharePoint (или XAP-файлы в проектах Silverlight) в SharePoint, их необходимо добавьте как ссылку на выходные данные проекта.  

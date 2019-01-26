@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 627469dd3227d82ce1cc97af25d2b8a4537541e5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968421"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868451"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Как выполнить Кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения в кэшированные данные не сохраняются автоматически. Можно сохранить изменения в кэшированных данных путем переопределения двух методов в проекте.  

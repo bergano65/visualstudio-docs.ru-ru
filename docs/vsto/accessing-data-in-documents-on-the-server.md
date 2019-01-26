@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d815178e772e391eb19eb43b5870fbcd9dbdaa6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef03779b541e4d6de99caf402793d62eeee68f3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858108"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866231"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Доступ к данным в документах на сервере
   Данные в настройке уровня документа можно программировать без использования объектной модели Microsoft Office Word или Microsoft Office Excel. Это означает, что вы сможете использовать данные, содержащиеся в документе на сервере, где установлен Microsoft Word или Excel. Например, код на сервере (например, в [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] страницы) можно настроить данные в документе и пересылать настроенный документ для конечного пользователя. Когда конечный пользователь открывает документ, код привязки данных в сборке решения привязывает настроенные данные в документ. Это возможно, так как данные в документе, отделен от пользовательского интерфейса. Дополнительные сведения см. в разделе [кэшированных данных в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).

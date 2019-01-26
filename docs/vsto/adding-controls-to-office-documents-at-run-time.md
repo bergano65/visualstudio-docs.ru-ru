@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842792"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869191"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Добавление элементов управления в документы Office во время выполнения
   Элементы управления добавляются в документ Microsoft Office Word и книги Microsoft Office Excel во время выполнения. Кроме того, их можно удалить во время выполнения. Элементы управления, которые можно добавить или удалить во время выполнения, называются *динамическими элементами управления*.  
@@ -75,7 +75,7 @@ ms.locfileid: "53842792"
  Не удается удалить статические элементы управления во время выполнения. При попытке использовать методы `Delete` или `Remove`, чтобы удалить статический элемент управления, будет создано исключение <xref:Microsoft.Office.Tools.CannotRemoveControlException>.  
 
 > [!NOTE]  
->  Не удаляйте программным образом элементы управления в обработчике событий `Shutdown` документа. Когда возникает событие `Shutdown`, элементы пользовательского интерфейса документа недоступны. Если требуется удалить элементы управления перед закрытием документа, добавьте код в обработчик другого типа событий, например <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> или <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> для Word либо <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>или <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> для Excel.  
+>  Не удаляйте программным образом элементы управления в обработчике событий `Shutdown` документа. Когда возникает событие `Shutdown` , элементы пользовательского интерфейса документа недоступны. Если требуется удалить элементы управления перед закрытием документа, добавьте код в обработчик другого типа событий, например <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> или <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> для Word либо <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>или <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> для Excel.  
 
 ##  <a name="HostControls"></a> Добавление элементов управления ведущего приложения в документы  
  Если элементы управления ведущего приложения программно добавляются в документ, необходимо указать имя, которое однозначно определяет элемент управления, и расположение для добавления элемента управления в документе. Дополнительные инструкции см. в следующих разделах:  
@@ -110,7 +110,7 @@ ms.locfileid: "53842792"
 
 - В Excel следует использовать один из методов <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> объекта <xref:Microsoft.Office.Tools.Excel.ControlCollection> .  
 
-- В Word следует использовать один из методов <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> объекта <xref:Microsoft.Office.Tools.Word.ControlCollection>.  
+- В Word следует использовать один из методов <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> объекта <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
 
   Чтобы добавить элемент управления, передайте <xref:System.Windows.Forms.Control>, расположение элемента управления и имя, которое однозначно определяет элемент управления, в метод `AddControl`. Метод `AddControl` возвращает объект, который определяет способ взаимодействия элемента управления с листом или документом. `AddControl` Возвращает <xref:Microsoft.Office.Tools.Excel.ControlSite> (для Excel) или <xref:Microsoft.Office.Tools.Word.ControlSite> (для Word).  
 
@@ -122,7 +122,7 @@ ms.locfileid: "53842792"
 ### <a name="use-members-of-custom-controls"></a>Использование членов пользовательских элементов управления  
  После использования одного из методов `AddControl` для добавления элемента управления в лист или документ есть два разных объекта элемента управления.  
 
-- <xref:System.Windows.Forms.Control>, представляющий пользовательский элемент управления.  
+- <xref:System.Windows.Forms.Control> , представляющий пользовательский элемент управления.  
 
 - Объект `ControlSite`, `OLEObject` или `OLEControl`, представляющий элемент управления после его добавления в лист или документ.  
 
@@ -132,7 +132,7 @@ ms.locfileid: "53842792"
 
 - Для доступа к членам, которые являются общими для элементов управления, используйте объект `ControlSite`, `OLEObject` или `OLEControl`.  
 
-  При доступе к общему члену из <xref:System.Windows.Forms.Control> может возникнуть сбой без предупреждения или уведомления либо может быть получен недопустимый результат. Всегда используйте методы и свойства объекта `ControlSite`, `OLEObject` или `OLEControl`, если требуемые метод или свойство доступны. Только случае их недоступности следует ссылаться на <xref:System.Windows.Forms.Control>.  
+  При доступе к общему члену из <xref:System.Windows.Forms.Control>может возникнуть сбой без предупреждения или уведомления либо может быть получен недопустимый результат. Всегда используйте методы и свойства объекта `ControlSite`, `OLEObject` или `OLEControl`, если требуемые метод или свойство доступны. Только случае их недоступности следует ссылаться на <xref:System.Windows.Forms.Control>.  
 
   Например, классы <xref:Microsoft.Office.Tools.Excel.ControlSite> и <xref:System.Windows.Forms.Control> имеют свойство `Top`. Чтобы получить или задать расстояние между верхней границей элемента управления и верхней частью документа, используйте свойство <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> объекта <xref:Microsoft.Office.Tools.Excel.ControlSite>, а не свойство <xref:System.Windows.Forms.Control.Top%2A> объекта <xref:System.Windows.Forms.Control>.  
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 706c200a1327ed63cc0a37f002f6bb745cbea3ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894065"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876217"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Как выполнить Экспорт лент из конструктора лент в XML-ленты
   **Лента (визуальный конструктор)** элемент не поддерживает все типы настроек ленты. Чтобы расширенные способы настройки ленты можно экспорт ленты из конструктора XML-ленты и непосредственного редактирования XML.  

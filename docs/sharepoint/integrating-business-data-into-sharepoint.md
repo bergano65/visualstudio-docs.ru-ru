@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], data
 - BDC [SharePoint development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d04a3fcfac93ffbb6a2a6c60363e4906898e0c7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865480"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
   Вы можете интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать из внутренних серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или веб-службы. Пользователей можно просмотреть, добавить, обновить или удалить бизнес-данных с помощью внешних списков или деловых данных веб-частей в SharePoint.  Пользователи также могут работать этот данным в автономном режиме в приложении Microsoft Office, например Microsoft Outlook. Дополнительные сведения см. в разделе [где можно указать внешние данные](http://go.microsoft.com/fwlink/?LinkId=169295).  

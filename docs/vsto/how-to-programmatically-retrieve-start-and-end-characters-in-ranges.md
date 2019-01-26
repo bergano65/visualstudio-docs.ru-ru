@@ -10,17 +10,17 @@ helpviewer_keywords:
 - end characters
 - start characters
 - documents [Office development in Visual Studio], retrieving ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88876641d0c6e72385d6f9e514ff8135de9518fa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871204"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863205"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Как выполнить Извлечение знаков начала и завершения в диапазонах программным способом
   В этом примере показано, как получить позиции символов начала и конца диапазона.  
@@ -29,7 +29,7 @@ ms.locfileid: "53871204"
   
 ## <a name="to-retrieve-start-and-end-characters-of-a-range-in-a-document-level-customization"></a>Получение начального и конечного знаков диапазона в настройке уровня документа  
   
-1.  Получите значения свойств <xref:Microsoft.Office.Interop.Word.Range.Start%2A> и <xref:Microsoft.Office.Interop.Word.Range.End%2A> объекта <xref:Microsoft.Office.Interop.Word.Range>. В следующем примере кода возвращается позиция начала и конца второго предложения в документе. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.  
+1.  Получите значения свойств <xref:Microsoft.Office.Interop.Word.Range.Start%2A> и <xref:Microsoft.Office.Interop.Word.Range.End%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> . В следующем примере кода возвращается позиция начала и конца второго предложения в документе. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.  
   
      [!code-vb[Trin_VstcoreWordAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#25)]
      [!code-csharp[Trin_VstcoreWordAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#25)]  

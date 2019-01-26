@@ -10,17 +10,17 @@ helpviewer_keywords:
 - threading [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], threading support
 - object models [Office development in Visual Studio], threading support
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0dae42e2648af1212a676c8956122b4fde072d20
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857897"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866130"
 ---
 # <a name="threading-support-in-office"></a>Поддержка потоков в Office
   В этой статье сведения о поддержке потоков в объектной модели Microsoft Office. Объектная модель Office не является потокобезопасным, но это можно работать с несколькими потоками в решении Office. Приложения Office являются серверами компонент объекта модели (COM). COM позволяет клиентам вызывать COM-серверов с произвольными потоками. Для COM-серверов, которые не являются потокобезопасными предоставляют механизм для сериализации одновременных вызовов, чтобы только один логический поток выполняется на сервере в любое время. Этот механизм известен как модели однопотоковое подразделение (STA). Так как вызовы сериализуются, вызывающие объекты могут быть заблокированы для периодов времени, пока сервер занят или обрабатывает другие вызовы в фоновом потоке.  

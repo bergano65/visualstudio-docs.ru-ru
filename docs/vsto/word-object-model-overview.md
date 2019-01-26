@@ -12,17 +12,17 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], Word
 - objects [Office development in Visual Studio], Office object models
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a946dc469fe03eb5ad8b42ffc68ef13370542d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922281"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875206"
 ---
 # <a name="word-object-model-overview"></a>Обзор объектной модели Word
   При разработке решений Word в Visual Studio выполняется взаимодействие с объектной моделью Word. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Word и определены в пространстве имен <xref:Microsoft.Office.Interop.Word> .  
@@ -40,7 +40,7 @@ ms.locfileid: "53922281"
 -   [Работа с таблицами](../vsto/working-with-tables.md)  
   
 ##  <a name="understanding"></a> Понимание объектной модели Word  
- Word предоставляет сотни различных объектов, с которыми можно взаимодействовать. Эти объекты организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект <xref:Microsoft.Office.Interop.Word.Application> . Этот объект представляет текущий экземпляр Word. Объект <xref:Microsoft.Office.Interop.Word.Application> содержит объекты <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>и <xref:Microsoft.Office.Interop.Word.Range> . Каждый из этих объектов содержит множество методов и свойств, к которым можно обращаться для работы с объектом и взаимодействия с ним.  
+ Word предоставляет сотни различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект <xref:Microsoft.Office.Interop.Word.Application> . Этот объект представляет текущий экземпляр Word. Объект <xref:Microsoft.Office.Interop.Word.Application> содержит объекты <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>и <xref:Microsoft.Office.Interop.Word.Range> . Каждый из этих объектов содержит множество методов и свойств, к которым можно обращаться для работы с объектом и взаимодействия с ним.  
   
  На следующем рисунке показано одно представление этих объектов в иерархии объектной модели Word.  
   

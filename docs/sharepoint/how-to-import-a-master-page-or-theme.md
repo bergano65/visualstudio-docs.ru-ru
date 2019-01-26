@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af0f7ad40c1e06f1c602f17ba6a80cf47b96ed0e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952926"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863374"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Как выполнить Импорт главной страницы или темы
   Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но вы можете создать их в SharePoint Designer и затем импортировать их в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [стандартный блок: Страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095) на веб-сайте Майкрософт.  

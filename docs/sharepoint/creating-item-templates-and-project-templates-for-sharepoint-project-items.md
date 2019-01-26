@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, creating custom project and item templates
 - project items [SharePoint development in Visual Studio], creating custom templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 134d1f02fe8fc05449d75eddc9156b0d96694030
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842847"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869905"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint
   При определении настраиваемого типа элемента проекта SharePoint, можно связать его с помощью шаблона элемента, или шаблон проекта. Такая связь позволяет другим разработчикам использовать элемент проекта в Visual Studio. Можно также создать мастер для шаблона.
@@ -74,7 +74,7 @@ ms.locfileid: "53842847"
 |-------------------|-----------------|
 |элементы проектов SharePoint|Можно включить один или несколько SPDATA-файлы, которые определяют типов элементов проектов SharePoint. Каждый *.spdata* файл должен иметь соответствующий <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализации в сборке расширения, включенный в пакет VSIX с помощью шаблона проекта. Дополнительные сведения см. в разделе [Создание шаблонов элементов](#creatingitemtemplates).<br /><br /> Как правило проекты SharePoint содержат по крайней мере один элемент проекта SharePoint. Тем не менее это не является обязательным.|
 |*\<featureName > .feature*|Этот файл определяет компонент SharePoint, используется для группирования нескольких элементов проекта для развертывания. При использовании конструктора компонентов для настройки компонента в проекте Visual Studio сохраняет данные о функции в этом файле. Если вы хотите сгруппировать элементы проекта в различных функций, может включать несколько *.feature* файлов.<br /><br /> При создании пользовательского шаблона проекта SharePoint, мы рекомендуем добавить минимальное необходимое содержимое в каждом *.feature* файл и настроить компоненты с помощью интерфейсов API в <xref:Microsoft.VisualStudio.SharePoint.Features> пространства имен в расширение, связанное с шаблоном проекта. После этого шаблон проекта защищен от изменений, вносимых в структуре *.feature* файл. Пример, демонстрирующий создание *.feature* с минимально необходимым содержимое файла, см. в разделе [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Если вы хотите изменить *.feature* файл напрямую, вы можете проверить содержимое с помощью схемы на *% Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
-|*\<featureName >. Файл шаблона Template.XML*|Этот файл служит основой для файла манифеста компонента (*Feature.xml*) для каждого компонента, который создается из проекта. Если вы хотите указать определенное поведение, которое не должно изменять в соответствии с типом проекта, можно добавить содержимое к этому файлу. Дополнительные сведения см. в разделе [стандартный блок: Функции](http://go.microsoft.com/fwlink/?LinkId=169183) и [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) файлов.<br /><br /> При построении пакета из проекта решения Visual Studio объединяет содержимое каждой пары  *\<имя_компонента > .feature* файл и  *\<имя_компонента >. Файл шаблона Template.XML* файлов в средство файл манифеста. Дополнительные сведения о построении пакетов решений, см. в разделе [как: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
+|*\<featureName>.Template.xml*|Этот файл служит основой для файла манифеста компонента (*Feature.xml*) для каждого компонента, который создается из проекта. Если вы хотите указать определенное поведение, которое не должно изменять в соответствии с типом проекта, можно добавить содержимое к этому файлу. Дополнительные сведения см. в разделе [стандартный блок: Функции](http://go.microsoft.com/fwlink/?LinkId=169183) и [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) файлов.<br /><br /> При построении пакета из проекта решения Visual Studio объединяет содержимое каждой пары  *\<имя_компонента > .feature* файл и  *\<имя_компонента >. Файл шаблона Template.XML* файлов в средство файл манифеста. Дополнительные сведения о построении пакетов решений, см. в разделе [как: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 
 ## <a name="create-wizards-for-item-templates-and-project-templates"></a>Создание мастеров для шаблонов элементов и шаблоны проектов
  После определения типа элемента проекта SharePoint и свяжите ее с помощью шаблона элемента или проекта, можно также создать мастер. В мастере отображаются, когда разработчик использует шаблон элемента следует добавить элемент проекта SharePoint в проект, или когда разработчик использует шаблон проекта для создания нового проекта, который содержит элемент проекта SharePoint. Мастер можно использовать для сбора сведений от разработчиков, так и для инициализации нового элемента проекта SharePoint.

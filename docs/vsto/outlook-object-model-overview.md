@@ -13,20 +13,20 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b78df3968f23df8685d38d7278ffbf4f331260b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945357"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872369"
 ---
 # <a name="outlook-object-model-overview"></a>Обзор объектной модели Outlook
-  Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.Folder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.  
+  Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.Folder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.  
   
  Этот раздел содержит краткий обзор некоторых основных объектов в объектной модели Outlook. Ресурсы, где Дополнительные сведения об объектной модели Outlook, см. в разделе [использование документации по объектной модели Outlook](#refdoc).  
   
@@ -74,7 +74,7 @@ ms.locfileid: "53945357"
   
 -   Используйте свойство <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application> для доступа ко всем объектам <xref:Microsoft.Office.Interop.Outlook.Explorer> в Outlook.  
   
--   Используйте метод <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application>, чтобы получить <xref:Microsoft.Office.Interop.Outlook.Explorer>, который имеет фокус в данный момент.  
+-   Используйте метод <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application> , чтобы получить <xref:Microsoft.Office.Interop.Outlook.Explorer> , который имеет фокус в данный момент.  
   
 -   Используйте метод `GetExplorer` объекта <xref:Microsoft.Office.Interop.Outlook.Folder>, чтобы получить <xref:Microsoft.Office.Interop.Outlook.Explorer> для текущей папки.  
   
@@ -85,14 +85,14 @@ ms.locfileid: "53945357"
   
 -   Используйте свойство <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application> для доступа ко всем объектам <xref:Microsoft.Office.Interop.Outlook.Inspector> в Outlook.  
   
--   Используйте метод <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application>, чтобы получить <xref:Microsoft.Office.Interop.Outlook.Inspector>, который имеет фокус в данный момент.  
+-   Используйте метод <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> объекта <xref:Microsoft.Office.Interop.Outlook.Application> , чтобы получить <xref:Microsoft.Office.Interop.Outlook.Inspector> , который имеет фокус в данный момент.  
   
 -   Используйте метод `GetInspector` определенного элемента, такого как <xref:Microsoft.Office.Interop.Outlook.MailItem> или <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, для извлечения инспектора, связанного с ним.  
   
 ### <a name="folder-object"></a>Объект папки  
- Объект <xref:Microsoft.Office.Interop.Outlook.Folder> представляет папку, содержащую электронные сообщения, контакты, задачи и другие элементы. Outlook предоставляет 16 объектов <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию.  
+ Объект <xref:Microsoft.Office.Interop.Outlook.Folder> представляет папку, содержащую электронные сообщения, контакты, задачи и другие элементы. Outlook предоставляет 16 объектов <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию.  
   
- Объекты <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders>. Например, примененная к объекту директива  
+ Объекты <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Например, примененная к объекту директива  
   
  Соответствует Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox **папки "Входящие"** папки в Outlook.  
   
@@ -133,7 +133,7 @@ ms.locfileid: "53945357"
   
 ### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Работа с элементами контактов](../vsto/working-with-contact-items.md)|Содержит разделы, в которых описывается выполнение задач с контактами.|  
 |[Работа с элементами почты](../vsto/working-with-mail-items.md)|Содержит разделы, в которых описывается выполнение задач с элементами почты.|  

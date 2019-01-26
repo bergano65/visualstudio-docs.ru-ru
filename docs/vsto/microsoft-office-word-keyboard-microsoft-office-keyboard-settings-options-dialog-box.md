@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd493a1448276dcf151a862771546a31f201c761
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f28825f5b2924a561d5315f2b1478e152e395c5d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909285"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863660"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
   Microsoft Office Word и Visual Studio и обрабатывать сочетания клавиш. Же сочетания клавиш могут соответствовать разным командам в Word и в Visual Studio. При открытом в проекте уровня документа в Visual Studio Word только одно приложение за раз получает сочетания клавиш. По умолчанию Visual Studio получает нажатие сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Word **Инамическая схема клавиатуры**.  

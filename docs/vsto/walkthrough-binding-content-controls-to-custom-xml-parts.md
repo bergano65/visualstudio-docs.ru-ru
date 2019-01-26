@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864739"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям
   В этом пошаговом руководстве показано, как привязать элементы управления содержимым в настройке на уровне документа для Word к XML-данным, хранящимся в документе.  
@@ -269,7 +269,7 @@ ms.locfileid: "53899656"
   
 ### <a name="to-test-the-content-controls"></a>Проверка элементов управления содержимым  
   
-1.  Нажмите клавишу **F5** для запуска проекта.  
+1.  Нажмите клавишу **F5**, чтобы запустить проект.  
   
 2.  Убедитесь, что таблица в документе похожа на следующую таблицу. Каждая строка во втором столбце извлекается из элемента в пользовательской XML-части в документе.  
   
@@ -277,7 +277,7 @@ ms.locfileid: "53899656"
     |-|-|  
     |**Имя сотрудника**|**Карина Leal**|  
     |**Дата найма**|**1 апреля 1999 г.**|  
-    |**Заголовок**|**Диспетчер**|  
+    |**Заголовок**|**Manager**|  
   
 3.  Выберите ячейку справа от **имя сотрудника** ячейку и введите другое имя.  
   

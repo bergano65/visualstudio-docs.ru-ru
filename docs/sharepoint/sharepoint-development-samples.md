@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21cfe0af20b2cb7f1aab413fbc6412975ecc9ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 003e927702766c8d9b2f92dca6fe4cd8c13a50dc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871511"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872694"
 ---
 # <a name="sharepoint-development-samples"></a>Примеры разработки решений SharePoint
   Visual Studio можно использовать, чтобы скачать и установить образцы приложений SharePoint из [коллекции кода MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).  

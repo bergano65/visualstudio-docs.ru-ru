@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e92d200a440b093e6c3be3e143993df230ab9fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829911"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870978"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с помощью шаблона проекта в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона для создания нового проекта, который содержит элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -58,7 +58,7 @@ ms.locfileid: "53829911"
 ## <a name="understand-the-wizard-components"></a>Основные сведения о компонентах мастера
  Мастер, представленный в этом пошаговом руководстве, содержит несколько компонентов. В следующей таблице описаны эти компоненты.  
   
-|Компонент|Описание:|  
+|Компонент|Описание|  
 |---------------|-----------------|  
 |Мастер реализации|Это класс, называемый `SiteColumnProjectWizard`, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс. Этот интерфейс определяет методы, которые Visual Studio вызывает при мастера начинается и завершается в определенное время, а мастер.|  
 |Мастер пользовательского интерфейса|Это окно на основе WPF, с именем `WizardWindow`. Это окно содержит две пользовательские элементы управления, с именем `Page1` и `Page2`. Эти пользовательские элементы управления представляют две страницы мастера.<br /><br /> В этом пошаговом руководстве <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> метод реализации мастер отображает пользовательский Интерфейс мастера.|  

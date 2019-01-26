@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41f0160b173c07859480aa4a6242acae573374e5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891580"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871303"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint, Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.  

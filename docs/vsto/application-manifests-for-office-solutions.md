@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950638"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873708"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Манифесты приложений для решений Office
   Манифест приложения представляет собой XML-файл с описанием сборок, загружаемых в решении Microsoft Office. Средства разработки Microsoft Office в Visual Studio используют [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифестов приложений, определенных в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md) ссылки.
@@ -91,7 +91,7 @@ ms.locfileid: "53950638"
 |[&#60;vstoRuntime&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Обязательный. Указывает конкретную версию среды выполнения средств Visual Studio для Office, поддерживаемую решением Office.|**release**<br /><br /> **version**<br /><br /> **supportUrl**|
 
 ## <a name="remarks"></a>Примечания
- Манифесты приложений и развертывания в решениях Office можно менять вручную. После этого нужно повторно подписать приложение и манифесты развертывания с помощью Manifest Generation and Editing Tool (*mage.exe* и *mageui.exe*). Дополнительные сведения см. в разделе [Как Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Манифесты приложений и развертывания в решениях Office можно менять вручную. После этого нужно повторно подписать приложение и манифесты развертывания с помощью Manifest Generation and Editing Tool (*mage.exe* и *mageui.exe*). Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="file-location"></a>Расположение файла
  Манифест приложения определяется для отдельной версии решения. По этой причине манифест приложения следует хранить отдельно от манифеста развертывания. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] помещает файлы, относящиеся к конкретной версии, в подкаталог, название которого соответствует версии и который находится в подкаталоге *Файлы приложения* каталога публикации.

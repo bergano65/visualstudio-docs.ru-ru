@@ -7,24 +7,24 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b32ebf61d479940fd49c03a3a46f8da690d9a44
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945851"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867123"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке для SharePoint
   В следующем примере демонстрируются способы разработки и развертывания решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ## <a name="general"></a>Общие  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Добавление приемников событий компонентов](../sharepoint/walkthrough-add-feature-event-receivers.md)|Описывает способы добавления приемников событий компонентов, которые представляют собой методы, которые выполняются при функцию установлен, активирован, деактивирован или удален.|  
 |[Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Демонстрируется создание настраиваемого поля, типа содержимого, определения списка из типа содержимого и экземпляр списка.|  
@@ -33,14 +33,14 @@ ms.locfileid: "53945851"
   
 ## <a name="import-wizard"></a>Мастер импорта
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса повторного использования, созданные в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.|  
 |[Пошаговое руководство: Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.|  
   
 ## <a name="web-parts"></a>Веб-частей
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio.|  
 |[Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Показано, как создать веб-часть визуально с помощью SharePoint **визуальной веб-части** шаблона проекта в Visual Studio.|  
@@ -70,13 +70,13 @@ ms.locfileid: "53945851"
   
 ## <a name="packaging-and-deployment"></a>Упаковка и развертывание
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Развертывание определения списка задач проекта](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)|Показано, как использовать Visual Studio для создания, настройки, отладки и развертывания определения списка SharePoint с целью отслеживания задач проекта.|  
   
 ## <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)|Показано, как расширить встроенный **Business Data Connectivity Model** типа элемента проекта.|  
 |[Пошаговое руководство: Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)|Показано, как добавить пользовательское свойство во все проекты SharePoint. Разработчики могут использовать свойство для добавления или удаления связанных папок.|  
@@ -88,7 +88,7 @@ ms.locfileid: "53945851"
   
 ## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова объектной модели SharePoint server.|  
 |[Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895581"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868684"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Как выполнить Настройка безопасности списка включения
   Если у вас есть разрешения администратора, вы можете настроить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления ли конечные пользователи получают возможность установки решений Office, сохранив решение о доверии в списке включения. Сведения о списках включений, см. в разделе [доверия Office решения с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -40,13 +40,13 @@ ms.locfileid: "53895581"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
     2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Если ключ не существует, создайте его.  
   
@@ -99,13 +99,13 @@ ms.locfileid: "53895581"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
     2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Если ключ не существует, создайте его.  
   
@@ -158,13 +158,13 @@ ms.locfileid: "53895581"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
     2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
 2.  Если это еще не существует, создайте следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Добавьте следующие подразделы как **строковое значение**, если они еще не существуют, со связанными значениями.  
   

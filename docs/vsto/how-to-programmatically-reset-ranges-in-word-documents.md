@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], resetting ranges
 - ranges, resetting in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7cb0b4ec52d948b321733a56f14ebc51a9cbb42f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83683b370304ca61e720f4005bcb5b6efbbe1fe6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866000"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Как выполнить Программно сброс диапазонов в документах Word
   Используйте метод <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> для изменения размеров существующего диапазона в документе Microsoft Office Word.  
