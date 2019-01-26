@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe9e98d4a30def296f395b7175e871a71383437
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a83c56adaec939c5244afff44cb5ff6823a6a713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960476"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923286"
 ---
 # <a name="vsix-color-editor"></a>Редактор цветов VSIX
 Средство редактор цветов расширений Visual Studio можно создавать и изменять собственные цвета для Visual Studio. Средство также можно создавать ключи ресурсов темы, чтобы цвета, которые можно использовать в коде. Это средство полезно для создания цвета для расширения Visual Studio, который поддерживает темы. Это средство позволяет открывать .pkgdef и XML-файлы. Тем Visual Studio (.vstheme файлы) можно использовать редактор Visual Studio расширение цвета, изменив расширение на .xml. Кроме того файлы .vstheme можно импортировать в текущий XML-файл.  

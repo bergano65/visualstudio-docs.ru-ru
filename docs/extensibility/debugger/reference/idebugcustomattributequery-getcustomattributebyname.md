@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d82e650a1254635719cc663a6dab14456952084
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1867b2524508a5c786cfe42bea68dc0ff5ea76d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941344"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Извлекает настраиваемый атрибут с заданным именем.  
@@ -50,7 +50,7 @@ int GetCustomAttributeByName(
  [out] Длина в байтах `ppBlob` параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Если настраиваемый атрибут не существует, возвращает `S_FALSE`. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Если настраиваемый атрибут не существует, возвращает `S_FALSE`. В противном случае возвращается код ошибки.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как реализовать этот метод для **CDebugClassFieldSymbol** объекта, который предоставляет [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) интерфейс.  

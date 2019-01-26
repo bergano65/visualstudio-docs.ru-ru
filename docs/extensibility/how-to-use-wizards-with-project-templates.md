@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bcc1485834209133897c776fcb52ed5c600d9ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b37d8d123ff45d563c165a6833151692582ebe6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961563"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Как выполнить Использование мастеров для шаблонов проектов
 
@@ -226,7 +226,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
   
 9. Найти *sn.exe* инструмент подписывания. Например в 64-разрядной операционной системе Windows 10, типичный путь будет иметь следующее:  
   
-     *C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*  
+     *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*  
   
      Если не удается найти средство, попробуйте запустить **где /R.  Sn.exe** в окне командной строки. Запомните или запишите путь.  
   

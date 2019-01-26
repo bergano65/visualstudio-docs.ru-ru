@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b1413acafd4358d4b29435a0cd62edd5a8ce22e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940834"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 При создании нового типа проекта, необходимо создать записи реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для распознавания и работать с типом проекта. Обычно создают эти записи реестра с помощью файла сценария (.rgs) реестра.  
@@ -47,7 +47,7 @@ ms.locfileid: "53826391"
    @="devenv.exe \"%1\""  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Имя и описание типа файлов проекта, которые имеют расширение .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Тип содержимого для файлов проекта.|  
@@ -79,7 +79,7 @@ ms.locfileid: "53826391"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@` (По умолчанию)|REG_SZ|`FigPrj Project VSPackage`|Это локализуемые имя зарегистрировано VSPackage (типа проекта).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Путь к типу проекта библиотеки DLL. Загружает эту библиотеку DLL интегрированной среды разработки и передает VSPackage CLSID для `DllGetClassObject` для получения <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> для создания <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объекта.|  
@@ -130,7 +130,7 @@ ms.locfileid: "53826391"
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Имя по умолчанию для проектов этого типа.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -220,7 +220,7 @@ ms.locfileid: "53826391"
   
   Последнее поле соответствует номеру версии для ресурса CTMENU. Чтобы объединить меню снова, изменение номера версии.  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |% CLSID_Package %|REG_SZ|`,1000,1`|Ресурс, чтобы получить сведения о меню.|  
   
