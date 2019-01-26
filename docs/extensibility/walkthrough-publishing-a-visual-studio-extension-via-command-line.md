@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974153"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Пошаговое руководство. Публикация расширения Visual Studio с помощью командной строки
 
@@ -45,7 +45,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Создает издатель в Marketplace. Также записывает издателя в машину для будущих действий (например, удаление и публикации расширения).
 
-|Параметры команды |Описание |
+|Параметры команды |Описание: |
 |---------|---------|
 |отображаемое имя (обязательно) | Отображаемое имя издателя. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
@@ -61,7 +61,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Удаление издателя в Marketplace.
 
-|Параметры команды |Описание |
+|Параметры команды |Описание: |
 |---------|---------|
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
 |personalAccessToken (обязательно) | Личный маркер доступа, используемый для проверки подлинности издателя. |
@@ -74,7 +74,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Удаление расширения из Marketplace.
 
-|Параметры команды |Описание: |
+|Параметры команды |Описание |
 |---------|---------|
 |extensionName (обязательно) | Имя расширения для удаления. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
@@ -88,9 +88,9 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Издатель вошедший в систему.
 
-|Параметры команды |Описание: |
+|Параметры команды |Описание |
 |---------|---------|
-|(требуется personalAccessToken | Личный маркер доступа, используемый для проверки подлинности издателя. |
+|personalAccessToken (required | Личный маркер доступа, используемый для проверки подлинности издателя. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
 |Перезаписать | Указывает, перезаписи любого существующего издателя с новый личный маркер доступа. |
 
@@ -102,7 +102,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Регистрирует издателя с компьютера.
 
-|Параметры команды |Описание: |
+|Параметры команды |Описание |
 |---------|---------|
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
 |ignoreMissingPublisher | Указывает, что средство должна не ошибка, если указанный издатель не уже вошедшего в систему. |

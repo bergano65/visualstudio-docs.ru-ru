@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f001e053b0c2fdfe892175b00ed3f39dc6f1b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7520e0e7be216278ee968adfac0004ac195883c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000107"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Диалоговое окно «Инициализация корреляции»
 
@@ -24,7 +24,7 @@ ms.locfileid: "53829765"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **инициализация корреляции** диалоговое окно:
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание:|
 |-|-----------------|
 |**Корреляция**|Дескриптор корреляции <xref:System.ServiceModel.Activities.CorrelationHandle> для инициализации.|
 |**Инициализировать на**|По ключу/паре значений, содержащих данные инициализации. Это значение соответствует <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> свойство. Например пары "допустимый ключ значение", раздел с именем «OrderID» связан с переменной с именем OrderID.|

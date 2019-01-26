@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925554"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070803"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Можно создать правило магазина для распространения изменений от одного элемента к другому в визуализации и пакет SDK для моделирования (VMSDK). При внесении изменений к любому элементу в Store, правила планируются для выполнения, обычно в том случае, когда фиксируется в самой внешней транзакции. Существуют различные типы правил для различных видов событий, таких как добавление элемента, или удалить его. Правила можно присоединить к определенным типам элементов, фигур или схем. Многие встроенные функции определяются правилами сбора данных: например, правила гарантируют, что схема обновляется при изменении модели. Доменный язык можно настроить путем добавления собственных правил.

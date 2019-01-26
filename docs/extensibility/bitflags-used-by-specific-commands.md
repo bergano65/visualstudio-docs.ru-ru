@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875424"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003270"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Битовые флаги, используемые конкретными командами
 Поведение некоторых функций в API подключаемых модулей управления источника можно изменить, установив один или несколько битов в одно значение. Эти значения называются битовые флаги. Различные битовые флаги, используемые API подключаемых модулей управления источника здесь можно увидеть, сгруппированные по функция, которая использует их.  
@@ -30,7 +30,7 @@ ms.locfileid: "53875424"
 ## <a name="add-flags"></a>Добавьте флаги  
  Эти флаги используются [SccAdd](../extensibility/sccadd-function.md).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Ожидается, что подключаемый модуль системы управления версиями автоматически определять, является ли файл текстовых или двоичных.|  
 |`SCC_FILETYPE_TEXT`|0x01|Тип файла — текст.|  
@@ -84,7 +84,7 @@ ms.locfileid: "53875424"
 ## <a name="noption-values"></a>значения nOption  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `nOption` параметра.  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Задать состояние очереди событий.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Укажите данные пользователя для `SCC_OPT_NAMECHANGEPFN`.|  

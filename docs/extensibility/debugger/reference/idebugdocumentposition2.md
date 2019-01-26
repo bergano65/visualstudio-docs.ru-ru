@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4327d1350c6d0487f9ee8fb89f03ad24b0e085a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 240d2d5e7cf7c95d4e11dafefb3bd1f9c93b849d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030381"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 Этот интерфейс представляет абстрактный позиция в исходном файле.  
@@ -45,7 +45,7 @@ IDebugDocumentPosition2 : IUnknown
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|Получает диапазон для этой позиции документа.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

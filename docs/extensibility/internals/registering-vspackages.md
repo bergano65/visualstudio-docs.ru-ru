@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b5bedbfdeaab6fa3d7d8efe4479a8b7f3e4de4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc8082d63376abeab2da0e8fa7b999c12195d4e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842610"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006077"
 ---
 # <a name="registering-vspackages"></a>Регистрация пакетов VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] полагается на файлах pkgdef, чтобы описывать и находить VSPackage. Pkgdef-файл содержит все сведения о регистрации, в противном случае будет добавляться в системный реестр. Управляемые пакеты VSPackage регистрируются, добавление атрибутов к исходному коду и затем запустив [программа CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) на результирующую сборку для формирования pkgdef-файл.  

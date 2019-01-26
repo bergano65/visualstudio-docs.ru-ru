@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5704f741883a3d676b0428b358e14debfa7599
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03ae4578f5305b4b11404d588ed65fe73df24469
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917060"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989761"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 Этот метод пропускает указанное число элементов.  
@@ -41,7 +41,7 @@ int Skip(
  [in] Количество пропускаемых элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  

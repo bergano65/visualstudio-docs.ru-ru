@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c58c248650c0ba1e5fdc1fc5c9310b3e4530fbe4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994531"
 ---
 # <a name="project-priority"></a>Приоритет проекта
 Обычно элемент проекта является членом только один проект в решении. Таким образом интегрированной среды разработки можно легко определить какой проект используется для открытия элемента. Тем не менее если элемент входит в несколько проектов, интегрированная среда разработки использует схему приоритет определить лучший проект для открытия.  

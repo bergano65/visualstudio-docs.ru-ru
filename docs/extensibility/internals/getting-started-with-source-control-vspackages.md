@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849730"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017806"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Начало работы с системой управления версиями пакетов VSPackage
 Пакет VSPackage системы управления версиями является альтернативой более сложных для подключаемого модуля системы управления версиями. Дополнительные сведения о подключаемых модулей системы управления версиями, см. в разделе [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md). Пакет VSPackage системы управления версиями обеспечивает полный контроль над модель управления исходным кодом, функций и пользовательский интерфейс (UI), а также интегрируется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среде, что VSPackage.  

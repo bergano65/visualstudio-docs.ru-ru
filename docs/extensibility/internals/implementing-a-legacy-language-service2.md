@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8158a8eaf4b0ee85858cc81e93fbb7e4fa0b9f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8143ab83e2d166ac4d9ad49b27934ff425d371ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005206"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
@@ -193,7 +193,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
@@ -210,7 +210,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>В классе источника  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|  

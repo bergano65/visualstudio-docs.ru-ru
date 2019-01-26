@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893c55f00d2067eb481efdf9482ab4e8f47aaaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fefaa84cb00bdf0ccabe825067cb86f6c231a840
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017426"
 ---
 # <a name="commandtable-element"></a>Элемент CommandTable
 CommandTable является корневым элементом *.vsct* файла. Это файл, который определяет фактическую структуру и тип команды, которые VSPackage предоставляет интегрированную среду разработки. Команды могут включать элементы меню, меню, панелей инструментов и поля со списком. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -44,14 +44,14 @@ CommandTable является корневым элементом *.vsct* фай
   
 ### <a name="attributes"></a>Атрибуты  
   
-| Атрибут | Описание: |
+| Атрибут | Описание |
 |-----------| - |
-| xmlns | Обязательный. Пространства имен XML:<br /><br /> xmlns =»<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs =»<http://www.w3.org/2001/XMLSchema>" |
-| язык | Необязательный параметр. Атрибут языка может использоваться для указания языка по умолчанию всех \<строки > элементы в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-us» |
+| xmlns | Обязательный. Пространства имен XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
+| язык | Необязательный параметр. Атрибут языка может использоваться для указания языка по умолчанию всех \<строки > элементы в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент extern](../extensibility/extern-element.md)|Необязательный параметр. Содержит директивы препроцессора для компилятора.|  
 |[Включить элемент](../extensibility/include-element.md)|Необязательный параметр. Содержит пути к любым файлам, чтобы включить в компиляцию.|  

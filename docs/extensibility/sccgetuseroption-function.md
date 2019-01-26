@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f73eff3f1be51045381c0eaa76d5d3914d8e9ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15af3d1711453c17a9e88c392f451161131d5b3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869272"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017010"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
 Эта функция получает различные параметры конкретного пользователя.  
@@ -45,7 +45,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Параметр был успешно извлечен.|  
 |SCC_E_OPNOTSUPPORTED|Параметр не поддерживается.|  
@@ -54,7 +54,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>Примечания  
  Эта команда поддерживает следующие параметры:  
   
-|Параметр User|Описание|  
+|Параметр User|Описание:|  
 |-----------------|-----------------|  
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю нужно извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948775"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000813"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Пошаговое руководство. Сохранить настройки пользователя на начальной странице
 Вы можете сохранить пользовательские параметры на начальной странице. Перечисленные в этом пошаговом руководстве, можно создать элемент управления, который сохраняет параметр в реестр, когда пользователь нажимает кнопку и затем получает задание каждый раз при загрузке страницы запуска. Шаблон проекта начальной страницы включает настраиваемый пользовательский элемент управления, и запустить страницу XAML по умолчанию вызывает этот элемент управления, у вас нет сам изменение начальной страницы.  

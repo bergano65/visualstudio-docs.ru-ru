@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 879d094051efd6a64af1c43cb96be71fbc67f5ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f85e27b64fb8c50f5d1d3ba06702ee7699f8989b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034770"
 ---
 # <a name="create-options-pages"></a>Создание страниц параметров
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформа managed package framework, классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, добавив **параметры** страницы в разделе **средства** меню.  
@@ -59,7 +59,7 @@ ms.locfileid: "53820641"
 ## <a name="example"></a>Пример  
  Ниже приведен реализацию простых «Hello world» страницы параметров. Добавив следующий код в проект по умолчанию создан с помощью шаблона пакета Visual Studio с **команды меню** выбран параметр будет адекватно продемонстрировать функциональные возможности параметра страницы.  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  Следующий класс определяет страницу Параметры минимальной «Hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.  
   
 ### <a name="code"></a>Код  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ce29a248-81a0-42c0-99a7-1606e8c548ec
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b74b410e64cd6f57b828947d829461bc9d490776
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bfdca9a60061e2e519f0e98db9864ecae06b7c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905495"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021771"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 Этот интерфейс является расширением интерфейса, реализуемого [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) разработчиков. Он позволяет получить сведения о среде отладки процесса.  
@@ -32,7 +32,7 @@ IDebugProcessQueryProperties: IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProcessQueryProperties`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Запросы для значения свойства.|  
 |[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Запросы для получения значений свойств.|  

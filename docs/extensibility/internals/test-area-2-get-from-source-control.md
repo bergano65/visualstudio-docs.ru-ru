@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b58cad8f961b1f3273c31c3a2197fc5a002994
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc75e6efd3f4f30758ab971da078c23433504e80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018622"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Область тестирования 2. Получить из системы управления версиями
 Эта область тестирования охватывает тестовых случаев для извлечения элементов из хранилища версий с помощью команды Get. Эти тестовые случаи могут применяться к локальным и веб-проектов.  

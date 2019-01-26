@@ -28,15 +28,15 @@ helpviewer_keywords:
 - applications, designing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1bb0d17b5fc6767669fd58f666d0505f38961dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986050"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 
@@ -97,7 +97,7 @@ ms.locfileid: "53855053"
 
 **Типичные способы применения:**
 
--   Создание или настройка частей приложения. Разработка нотации и инструментов требует усилий. Результат может лучше соответствовать вашему домену, чем настройка языка UML.
+-   Создание или настройка частей приложения. Требуется разработка нотации и инструментов. Результат может быть лучше соответствовать вашему домену, чем настройка языка UML.
 -   Крупные проекты или линейки продуктов, когда инвестиции в разработку языка DSL и его инструментов окупаются за счет его использования сразу в нескольких проектах.
 
 **См. в разделе:**

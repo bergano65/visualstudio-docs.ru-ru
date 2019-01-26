@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9663478bf084dbcf97cd0bb8c96dbab385b78b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce8ee33d2ee74fc068da4a246c40d9a4cf798676
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990255"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Эта структура предоставляет сведения о процессах, запущенных на компьютере.  
@@ -54,7 +54,7 @@ public struct PROVIDER_PROCESS_DATA {
  Эта структура передается [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод, где он заполняется.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

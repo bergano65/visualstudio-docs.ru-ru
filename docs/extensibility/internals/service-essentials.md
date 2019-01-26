@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a72dfb519e35cb0bec94fb73d112e0bff27b0b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867281"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027962"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Служба представляет собой контракт между двух пакетов VSPackage. Один пакет VSPackage предоставляет ряд интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.  
@@ -89,7 +89,7 @@ ms.locfileid: "53867281"
     End If
     ```  
     
-    Этот код получает службу SVsActivityLog и приводит его к IVsActivityLog интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
+    Этот код получает службу SVsActivityLog и приводит его к IVsActivityLog интерфейс, который может использоваться для записи в журнал действий. Пример см. в статье [Практическое руководство. Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>См. также  
  [Список доступных служб](../../extensibility/internals/list-of-available-services.md)   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c260a8ebfd925b9da1210482b519aacddfa77ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d508c26e27b6a9d9709eff00b2b248ee5feb3466
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986860"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000241"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
 Можно перенести языковой службы прежних версий до более поздней версии Visual Studio путем обновления проекта и добавление в проект файл source.extension.vsixmanifest. Сама служба языка будет продолжать работать по-прежнему, так как в редакторе Visual Studio адаптирует его.  
@@ -81,7 +81,7 @@ ms.locfileid: "53986860"
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]  
     ```  
   
-10. Необходимо добавить в файл source.extension.vsixmanifest.  
+10. You must add a source.extension.vsixmanifest file.  
   
     -   Скопируйте этот файл из существующего расширения в каталог проекта. (Лучший способ получить этот файл является создание проекта VSIX (в разделе **файл**, нажмите кнопку **New**, затем нажмите кнопку **проекта**. В Visual Basic или C#, выберите **расширяемости**, а затем выберите **проект VSIX**.)  
   

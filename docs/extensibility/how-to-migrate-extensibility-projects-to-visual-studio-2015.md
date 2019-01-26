@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021485"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Как выполнить Перенос проектов расширяемости в Visual Studio 2015
 Вот как можно обновить расширение.  
@@ -29,7 +29,7 @@ ms.locfileid: "53915339"
   
 2.  После завершения обновления, измените путь к этой внешней программе на новую версию *devenv.exe*. Щелкните правой кнопкой мыши узел проекта в **обозревателе решений**, затем выберите **свойства**. В **Отладка** вкладке, найдите текстовое поле с **запуск внешней программы** и измените путь к *devenv.exe* в Visual Studio 2015 путь, который должен выглядеть примерно следующим образом:  
   
-     *%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe*  
+     *%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe*  
   
 3.  Добавьте ссылку на *Microsoft.VisualStudio.Shell.14.0.dll*. (Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **добавить** > **ссылку**. Выберите **расширения** вкладку и проверьте **Microsoft.VisualStudio.Shell.14.0**.)  
   

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96131b2847b59632212c26bf5fa77fbe6b88960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ef72695afba37a8a044418ad1dbd49ea6867226
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000345"
 ---
 # <a name="interoperability-warnings"></a>предупреждения взаимодействия
 
@@ -28,10 +28,10 @@ ms.locfileid: "53956602"
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание: |
+| Правило | Описание |
 | - | - |
 | [CA1400: Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Открытый или защищенный метод, помеченный атрибутом System.Runtime.InteropServices.DllImportAttribute. Не удается найти неуправляемую библиотеку либо не удается сопоставить метод функции в библиотеке. |
-| [CA1401: МЕТОДЫ P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Открытый или защищенный метод в открытом типе имеет атрибут System.Runtime.InteropServices.DllImportAttribute (также реализуется с помощью ключевого слова Declare в Visual Basic). Такие методы не следует делать видимыми. |
+| [CA1401: P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Открытый или защищенный метод в открытом типе имеет атрибут System.Runtime.InteropServices.DllImportAttribute (также реализуется с помощью ключевого слова Declare в Visual Basic). Такие методы не следует делать видимыми. |
 | [CA1402: Не используйте перегрузки в интерфейсах, видимых COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Когда перегруженные методы предоставляются клиентам COM, сохраняется имя только первой перегрузки метода. Последующие перегрузки переименовываются уникальным образом путем добавления к имени символа подчеркивания (_) и целого числа, соответствующего порядку объявления перегрузки. |
 | [CA1403: Типы с автомакетом не должны быть видимыми для COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Видимый для модели COM тип значения помечается атрибутом System.Runtime.InteropServices.StructLayoutAttribute, имеющим значение LayoutKind.Auto. Макеты этих типов можно изменить в разных версиях .NET Framework, которая приведет к разрыву COM-клиентам, которые ожидают определенного макета. |
 | [CA1404: Вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Выполняется вызов метода Marshal.GetLastWin32Error или эквивалентной [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] Функция GetLastError, а непосредственно предшествующий вызов не на платформу вызова метода. |

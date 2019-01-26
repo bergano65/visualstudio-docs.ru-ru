@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9682e774533d9aa350d52b777ec783ea2abe9463
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896088"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071076"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Выбор шаблона решения на доменном языке
 Чтобы создать решение предметно ориентированного языка, выберите один из шаблонов решений, которые доступны в мастере конструктора доменного языка. Выбрав шаблон, который больше всего похож на язык, который вы хотите создать, можно свести к минимуму изменения, которые необходимо внести в начальный решение.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa32af593c0762a8ca2926eb7dd38a213fab2ee0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e005b32b86e9f59cb301b14373671ba3a44e850
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027767"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Задает тип сведений о символах для извлечения.  
@@ -56,7 +56,7 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 >  В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения сообщение об ошибке.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

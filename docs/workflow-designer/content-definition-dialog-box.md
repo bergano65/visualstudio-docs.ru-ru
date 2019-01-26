@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae5fc2c8da95a803dba915c3fa4b2a63820ee93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d789e3cbf1a005462e4b23db698bc81c65164a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999942"
 ---
 # <a name="content-definition-dialog-box"></a>Диалоговое окно «Определение содержимого»
 
@@ -24,7 +24,7 @@ ms.locfileid: "53952976"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **инициализация корреляции** диалоговое окно:
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание:|
 |-|-----------------|
 |**Сообщение**|Задает содержимое сообщения при помощи **сообщений данных** текстовом поле выражения и типа с помощью **тип сообщений** поле с раскрывающимся списком. По умолчанию **определение содержимого** использует <xref:System.ServiceModel.Activities.ReceiveMessageContent>, который ожидает <xref:System.ServiceModel.Channels.Message> или тип контракта сообщения в определении службы рабочих процессов.|
 |**Параметры**|Нажмите кнопку **параметры** переключатель, чтобы использовать <xref:System.ServiceModel.Activities.ReceiveParametersContent>, который ожидает контракт данных. Используйте сетку данных для задания универсальной коллекции пар «ключ/значение» <xref:System.Activities.OutArgument>, чьи значения присваиваются параметрам переменных в текущем рабочем процессе.|

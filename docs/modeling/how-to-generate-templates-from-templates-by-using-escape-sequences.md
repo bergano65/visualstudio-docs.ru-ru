@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8aa0d2203db6080260bc702429758fbd7f6b1a4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b286f3ac432da786a0fbdf5f6c03c2e18075e18e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020351"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Как выполнить Создание шаблонов из шаблонов с помощью escape-последовательностей
 Можно создать текстовый шаблон, создающий другой текстовый шаблон, сгенерированный текстовый вывод. Чтобы сделать это, необходимо использовать escape-последовательности для разграничения тегов текстового шаблона. Если вы не используете escape-последовательности, сгенерированный текстовый шаблон будет иметь предопределенное значение. Дополнительные сведения об использовании escape-последовательностей в текстовых шаблонах см. в разделе [с помощью escape-последовательностей в текстовых шаблонах](../modeling/using-escape-sequences-in-text-templates.md).

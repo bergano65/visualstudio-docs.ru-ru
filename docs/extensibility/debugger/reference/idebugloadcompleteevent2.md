@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56f53af23e99988d46c38b77f930da99b7af991f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953917"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029164"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при загрузке программы, но до выполнения любого кода.  
@@ -38,7 +38,7 @@ IDebugLoadCompleteEvent2 : IUnknown
  Это событие является событием остановки и должен иметь `EVENT_STOPPING` флаг атрибуты события.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

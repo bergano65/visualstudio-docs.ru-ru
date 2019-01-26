@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9e8b271f98774e8bda0121b94b37e0266bf028
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982472"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть с VSPackage и советы для решения проблем.  
@@ -66,7 +66,7 @@ ms.locfileid: "53835975"
   
    1.  Найти идентификатор CLSID объекта VSPackage в пакеты разделе реестра:  
   
-        HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \Packages  
+        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
    2.  Проверьте правильность пути, задаваемый подраздел SatelliteDll.  
   
@@ -119,7 +119,7 @@ ms.locfileid: "53835975"
   
 2. Для неуправляемого кода, найдите идентификатор CLSID объекта VSPackage в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] системного реестра CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Убедитесь, что операция InprocServer32 имеет правильный путь к библиотеке dll VSPackage.  
   

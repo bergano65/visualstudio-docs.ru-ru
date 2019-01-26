@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 873fff0e366f424911db2af4dd9c38a766361c2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d517e973ed712e7d3cbbacde482fdf7030ffc81e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006285"
 ---
 # <a name="register-the-program"></a>Регистрация программы
 После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:  

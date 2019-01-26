@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee33cff1ba8ee6ce278a9bb11f8967d4dd377173
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6fedefecdc59c7daf8dd1aa1b2ab015a5071ea25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000223"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 Используется для установки точек останова кода на основе строки, пользователь может ввести в интегрированной среде разработки (IDE).  
@@ -42,7 +42,7 @@ typedef struct _BP_LOCATION_CODE_STRING { 
  Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

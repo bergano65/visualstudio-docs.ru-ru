@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 257cd658d798f620a5dd3faf47edea7b1454e7bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa15f79be09b9663fb8fc98e32e09e20a030a5d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987143"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009600"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Набор правил "Рекомендуемые правила для управляемого кода"
 Можно использовать Microsoft управляемых рекомендуемые правила набора правил в сосредоточиться на наиболее важными проблемами в управляемом коде, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов.
