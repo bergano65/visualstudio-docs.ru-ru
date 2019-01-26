@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, server object model
 - SharePoint commands [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df55347ea08bfcb243f37aaee111066106da49ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd6e8d1bbd2f880a3e3c4c7fab4b292a2c7bd6d0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914531"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875671"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
   При создании расширений для инструментов SharePoint в Visual Studio, возможно, для вызова API-интерфейсы SharePoint для выполнения определенных задач. Например при создании пользовательского шага развертывания для проектов SharePoint, может потребоваться вызвать API-интерфейсы для выполнения некоторых задач для развертывания решений SharePoint.  

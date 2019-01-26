@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845529"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872486"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Как выполнить Программная печать документов Visio
   Можно напечатать полный документ Microsoft Office Visio или только определенную страницу.  
@@ -29,7 +29,7 @@ ms.locfileid: "53845529"
   
 ### <a name="to-print-a-complete-document"></a>Печать всего документа  
   
--   Вызовите метод `Microsoft.Office.Interop.Visio.Document.Print` документа `Microsoft.Office.Interop.Visio.Document`, который требуется напечатать.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Document.Print` документа `Microsoft.Office.Interop.Visio.Document` , который требуется напечатать.  
   
      В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "53845529"
   
 ### <a name="to-print-a-page-of-a-document"></a>Печать страницы документа  
   
--   Вызовите метод `Microsoft.Office.Interop.Visio.Pages.Print` документа `Microsoft.Office.Interop.Visio.Pages`, который требуется напечатать.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Pages.Print` документа `Microsoft.Office.Interop.Visio.Pages` , который требуется напечатать.  
   
      В следующем примере кода печатается первая страница активного документа. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
   

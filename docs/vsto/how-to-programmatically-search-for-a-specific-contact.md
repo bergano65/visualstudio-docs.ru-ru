@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 - searching contacts
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93f3444745f3c7e6fdaf039cda5a8c95bb717eed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84621a8e31750b61ad2fdb06a6923454f6dc1ef7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902754"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873474"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Как выполнить Программный поиск определенного контакта
   В этом примере выполняется поиск определенного контакта в папке контактов Outlook по имени и фамилии. В этом примере предполагается, что в папке контактов есть контакт с именем **John Evans** .  

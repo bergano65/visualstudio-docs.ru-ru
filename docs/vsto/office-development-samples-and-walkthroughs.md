@@ -15,17 +15,17 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], samples
 - sample applications [Office development in Visual Studio]
 - examples [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 392bc1fb36418542d04af3f1e788be981b777237
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909792"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873761"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Примеры разработки решений Office и пошаговые руководства
   Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений Microsoft Office.  
@@ -39,7 +39,7 @@ ms.locfileid: "53909792"
   
 ## <a name="in-this-section"></a>Содержание раздела  
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Примеры разработки решений Office](../vsto/office-development-samples.md)|Ссылки на примеры приложений, которые иллюстрируют использование решений Office и SharePoint в Visual Studio.|  
 |[Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)|Список пошаговых руководств, которые содержат введение в средства разработки Office в Visual Studio и описывает, как можно интегрировать в бизнес-приложения Microsoft Office Word.|  

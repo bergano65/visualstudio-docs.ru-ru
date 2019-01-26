@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947261"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872265"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок с развертыванием решения Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.
@@ -124,5 +124,5 @@ ms.locfileid: "53947261"
 
 ## <a name="see-also"></a>См. также
 
-- [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+- [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)
