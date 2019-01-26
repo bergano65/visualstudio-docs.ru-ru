@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919577"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981354"
 ---
 # <a name="core-interfaces"></a>Базовые интерфейсы
 Следующие интерфейсы являются базовых интерфейсов расширения отладчика с помощью [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -103,7 +103,7 @@ ms.locfileid: "53919577"
 ##  <a name="CoreServer"></a> Core Server  
  Эти интерфейсы являются компьютера, на котором выполняется отладка программы. Они реализованы с [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] , но могут быть вызваны в отладчиков.  
 
-|Интерфейс|Реализуется|Описание|  
+|Интерфейс|Реализуется|Описание:|  
 |---------------|--------------------|-----------------|  
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Предоставляет доступ к портам и поставщикам портов, а также сведения о компьютере.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Представляет [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , поддерживает удаленную отладку.|  
@@ -123,7 +123,7 @@ ms.locfileid: "53919577"
 ##  <a name="Documents"></a> Документы  
  Эти интерфейсы представления документов (исходные файлы) и связанных с ними элементов.  
 
-|Интерфейс|Реализуется|Описание|  
+|Интерфейс|Реализуется|Описание:|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Отправленные DE запрос документа должны быть открыты.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Представляет поток Дизассемблированный инструкции из документа.|  
@@ -139,7 +139,7 @@ ms.locfileid: "53919577"
  Эти интерфейсы являются все события, которые передаются между DE и диспетчер отладки сеансов (SDM).  
 
 
-| Интерфейс | Реализуется | Описание: |
+| Интерфейс | Реализуется | Описание |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Отправленные DE запрос документа должны быть открыты. |
 | [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) | DE | Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM), чтобы задать состояние панели сообщения во время загрузки символов. |
@@ -184,7 +184,7 @@ ms.locfileid: "53919577"
 ##  <a name="Expressions"></a> Выражения  
  Эти интерфейсы являются выражения, вычисляемое в указанном контексте.  
 
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Представляет выражение для оценки. Полученный из [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс.|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Представляет контекст, в котором вычисляется выражение. Полученный из [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс.|  
@@ -193,7 +193,7 @@ ms.locfileid: "53919577"
 ##  <a name="Memory"></a> Память  
  Эти интерфейсы являются последовательности байтов в памяти.  
 
-|Интерфейс|Реализуется|Описание|  
+|Интерфейс|Реализуется|Описание:|  
 |---------------|--------------------|-----------------|  
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Представляет последовательность байтов в памяти, чтения или записи.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Представляет расположение в памяти последовательности байтов.|  
@@ -213,7 +213,7 @@ ms.locfileid: "53919577"
  Эти интерфейсы являются порты и поставщикам портов.  
 
 
-| Интерфейс | Реализуется | Описание |
+| Интерфейс | Реализуется | Описание: |
 | - |----------------| - |
 | [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS, PS | Представляет порт по умолчанию на локальном компьютере. |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | Включает отладчик, который использует DCOM попросить [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса, чтобы убедиться в том, что брандмауэр не блокирует удаленную отладку. |
@@ -233,7 +233,7 @@ ms.locfileid: "53919577"
 ##  <a name="Processes"></a> Процессы  
  Эти интерфейсы представления процессов, один исполняемый файл, который содержит один или несколько программ.  
 
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Представляет процесс, который выполняется на компьютере.|  
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Представляет процесс, который активно поддерживает отладки (используется для замены шаг, продолжить и выполнение методов на [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс).|  
@@ -264,7 +264,7 @@ ms.locfileid: "53919577"
 ##  <a name="Properties"></a> Свойства  
  Эти интерфейсы представляют свойства, значение, связанное с конкретным контекстом, обычно это результат вычисления выражения.  
 
-|Интерфейс|Реализуется|Описание|  
+|Интерфейс|Реализуется|Описание:|  
 |---------------|--------------------|-----------------|  
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Представляет [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , можно отобразить ее значение любым способом.|  
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Представляет значение кадр стека, документа или результат вычисления выражения.|  

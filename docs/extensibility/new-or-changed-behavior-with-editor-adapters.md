@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901614"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987328"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Нового или измененного поведения с помощью редактора адаптеров
 Если при обновлении кода, написанного для более ранних версиях базовый редактор Visual Studio, и вы планируете использовать адаптеры редактора (или оболочки совместимости) вместо того чтобы использовать новый интерфейс API, следует иметь в виду следующие различия в поведении адаптеров редактора по отношению к предыдущей базовым редактором.  

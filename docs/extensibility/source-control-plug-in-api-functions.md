@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d73dd67f0f2d64a2ac02c77b2eb86d21e559c0d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d2e3ef83cf3b68cd7077dc7abd82527908ed34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965644"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
 API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны быть реализованы системы управления версиями, подключаемый модуль, в соответствии с этого API. Подписи каждой функции и семантики, связанные с битовых флагов, и другие параметры, описаны в этой справке.  
@@ -70,7 +70,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версии 1.3 подключаемого модуля API управления источника)  
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Извлекает список файлов из системы управления версиями без пользовательского интерфейса.|  

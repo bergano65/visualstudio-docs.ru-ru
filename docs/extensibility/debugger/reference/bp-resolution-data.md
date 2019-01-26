@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f80c5a0e507b6dd6db4e23b6917c5774816a4672
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03a269dad8b282707bf4087b8f97fb570a8959cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960234"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Описывает результат привязки точки останова по данным.  
@@ -59,7 +59,7 @@ public struct BP_RESOLUTION_DATA { 
  Эта структура является членом [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) структуры, который находится в свою очередь является членом [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структура, возвращенная [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)метод.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
