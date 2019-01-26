@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988133"
 ---
 # <a name="command-handling"></a>Обработка команд
 В редакторе можно определить новые команды. Команды обычно отображаются в меню, на панели инструментов или в контекстном меню.  
@@ -27,9 +27,9 @@ ms.locfileid: "53926324"
 ## <a name="add-commands-to-the-editor-context-menu"></a>Добавление команд в контекстное меню редактора  
  Добавление команды в контекстное меню, необходимо сначала определить набор команд меню, принадлежащих к определенной группе. Следующий пример взят из *.vsct* файл, созданный в ходе этого пошагового руководства [Пошаговое руководство: Добавление компонентов в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Guid меню = «guidCustomEditorCmdSet» id = «IDMX_RTF» priority = «0x0000» type = «Контекст» >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Идентификатор guid родительского = «guidCustomEditorCmdSet» id = «0» / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
  \<Строки >  
   

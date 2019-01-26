@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5313595bd96b2176255822425d11776eedaedbe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2609ca6cdf06117da56572c3574426a6d68c9178
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987951"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Этот интерфейс используется для запроса диспетчер отладки сеансов (SDM), следует ли остановить от текущей позиции кода.  
@@ -39,7 +39,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugCanStopEvent2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Возвращает причину для данного события.|  
 |[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Указывает, следует остановиться на расположение этого события (и отправить событие, описывающее причину остановки) или просто продолжить выполнение отлаживаемой программы.|  
@@ -50,7 +50,7 @@ IDebugCanStopEvent2 : IUknown
  DE отправляет этот интерфейс, если действия пользователя в функцию и DE находит сведения об отладке существует или существует отладочной информации, но также DE не знает, если исходный код можно отображать для этого расположения.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

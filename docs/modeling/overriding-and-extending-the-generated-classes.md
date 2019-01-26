@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d96ad4d297fac21f9efd0b67c40308af9c2ed29d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978247"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Переопределение и расширение созданных классов
 
@@ -91,6 +91,6 @@ public partial class Book
 
 Можно подписаться на события на фигурах. Например можно прослушивать щелчков мыши на фигуре. Вам нужно написать код, который подписывается на событие для каждого объекта. Этот код могут быть написаны на переопределение InitializeInstanceResources().
 
-Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Например, см. в разделе [как: Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Пример см. в статье [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Обычно эти события не происходят внутри транзакции. Следует создать транзакцию, если вы хотите внести изменения в хранилище.

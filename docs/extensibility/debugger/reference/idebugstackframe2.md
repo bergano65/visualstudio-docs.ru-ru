@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdb0c34f873e7f8dce5b771ece2d3620da4deb19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990244"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986947"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Этот интерфейс представляет одним кадром стека в стеке вызова в конкретном потоке.  
@@ -54,7 +54,7 @@ IDebugStackFrame2 : IUnknown
  Этот интерфейс получается, только если отлаживаемая программа остановлена в точке останова (либо из-за заданное пользователем точки останова или исключение). Из этого интерфейса можно получить контексте выражения будут оцениваться выражения, список регистров могут быть возвращены или можно получить и изучить стек вызовов.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
