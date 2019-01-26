@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e68d15c195983a087ed335718b02d0bd95b5ff3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937667"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868723"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Как выполнить Добавить пользовательский узел SharePoint в обозревателе серверов
   Можно добавить пользовательские узлы под **подключения SharePoint** узел в **обозревателя серверов**. Это полезно, если требуется отображать дополнительные компоненты SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
