@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948652"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 Цветовое выделение синтаксиса — это функция, которое вызывает различные элементы языка программирования для отображения в исходном файле в различные цвета и стили. Для поддержки этой возможности, необходимо предоставить синтаксического анализатора или сканера, можно определять типы лексические элементы или токены в файл. Многие языки различать ключевые слова, разделители (например, круглых или фигурных скобок) и комментарии по выделения цветом их по-разному.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbfb014e57f793bb39d696ac311c4f27884500f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949728"
 ---
 # <a name="parent-element"></a>Родительский элемент
 Группу можно только родительский кнопку или поле со списком. Родительского меню или группы, возможно, другие меню или группу. В [элемент CommandPlacement](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, предком `Group_Undefined:0` будет содержится в разрешении.  
@@ -32,7 +32,7 @@ ms.locfileid: "53902441"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательный. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
 |id|Обязательный. Идентификатор команды идентификатор из GUID и идентификатора.|  
@@ -42,7 +42,7 @@ ms.locfileid: "53902441"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды, предоставляемых VSPackage интегрированной среды разработки (IDE). Например пункты меню, меню, панелей инструментов и поля со списком.|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группы [элемент Button](../extensibility/button-element.md) элементов.|  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189f524ff96c8ad353425820e9f3931364951774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e02c7e7ff030d2fd2bb9de86dfd1e7211f8de1f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946715"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Реализация и регистрация поставщика порта
 Для отслеживания и указать порты, которые в свою очередь управления процессами — роль поставщика порта. Если порт должен быть создан, поставщика порта создается экземпляр с помощью CoCreate с идентификатором GUID поставщика порта (диспетчер отладки сеансов [SDM] будет использовать поставщика порта, который выбрал пользователь или поставщика порта указан в системе проекта). Затем вызывает SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) для просмотра, можно ли добавить какие-либо порты. Можно ли добавить порт, путем вызова запрашивается новый порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передавая ему [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт. `AddPort` Возвращает новый порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс.  

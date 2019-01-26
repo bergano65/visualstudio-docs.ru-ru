@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c192128ff4995a551b50df9347981405e321b703
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933234"
 ---
 # <a name="custom-tools"></a>Пользовательские инструменты
 *Пользовательские средства* позволяют связать с элементом в проекте это средство и запускать это средство, при каждом сохранении файла. Некоторые пользовательские инструменты, иногда называют *генераторов одного файла*, часто используются для реализации преобразователей, создающих код на основе данных и наоборот. Например, создать генераторов одного файла [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] исходный код из *.settings* и *.resx* файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в *.settings* и *.resx* файлов. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также может поддерживать пользовательские инструменты.  

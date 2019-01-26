@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4340fe72552f3287a5c6ebec55c9c9d326ac1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938086"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932276"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Как выполнить Задание атрибутов среды CLR для элемента
 Настраиваемые атрибуты являются специальные атрибуты, которые могут быть добавлены элементы домена, фигуры, соединители и схемы. Можно добавить любой атрибут, который наследует от `System.Attribute` класса.

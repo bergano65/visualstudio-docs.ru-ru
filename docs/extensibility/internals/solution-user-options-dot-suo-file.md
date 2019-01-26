@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51833f22a445916d9b76955893e4ff5c567cf4f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bd77c125f6ac7b7efa8d0979658c7933dc1b9ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937000"
 ---
 # <a name="solution-user-options-suo-file"></a>Файл параметров пользователя решения (SUO-файл)
 Решения (SUO-) в файле пользователя содержит параметры пользователя решения. Этот файл не следует проверять систему управления версиями.  
