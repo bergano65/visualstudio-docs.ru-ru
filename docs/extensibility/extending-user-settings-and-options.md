@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983070"
 ---
 # <a name="extend-user-settings-and-options"></a>Расширить пользовательские настройки и параметры
 В Visual Studio существует два основных способа для сохранения настроек пользователей. **Средства** > **параметры** страницы позволяют пользователям задавать свои собственные значения для различных видов параметры, общие и зависящие от языка. Параметры пользователя позволяют пользователям для задания общих свойств конфигурации Visual Studio. Дополнительные сведения о страницах параметры, см. в разделе [параметры и страницы параметров](../extensibility/internals/options-and-options-pages.md). Дополнительные сведения о пользовательских параметрах см. в разделе [Поддержка пользовательских параметров](../extensibility/internals/support-for-user-settings.md).  

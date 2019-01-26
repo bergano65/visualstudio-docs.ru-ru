@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930717"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988770"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбор (пакет VSPackage системы управления версиями)
 Системы управления версиями, необходимо зарегистрировать VSPackage, чтобы предоставлять его для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Если более одной системы управления версиями VSPackage зарегистрирован, пользователь может выбрать какие VSPackage для загрузки в нужное время. См. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md) узнать больше о пакеты VSPackage и их регистрации.  
@@ -41,9 +41,9 @@ ms.locfileid: "53930717"
   
 | Имя раздела | Записи |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (по умолчанию) = rg_sz: {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Служба = rg_sz: {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Пакет = rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (default) = rg_sz:{ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Service = rg_sz:{SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Package = rg_sz:{ID_Package} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Обратите внимание, что имя ключа, `SourceCodeControl`, уже используется [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и недоступно в списках \<имя пакета >.) | (по умолчанию) = rg_sz: {ID_Package} |
   
 ## <a name="selecting-a-source-control-package"></a>Выбор пакета системы управления версиями  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb03186d623c63fd4c3ff950140918244397115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8273a8111eb087202a1b97ec042e8d1bd21f637a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945760"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992832"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Извлекает список путей, для которых выполняется поиск символов, а также результаты поиска каждого пути.  
@@ -56,7 +56,7 @@ int GetSymbolInfo(
 ## <a name="remarks"></a>Примечания  
  Если `bstrVerboseSearchInfo` поле `MODULE_SYMBOL_SEARCH_INFO` структура не является пустым, то он содержит список пути поиска и результаты поиска. Список форматируется с путем, последующим многоточием («...»), а затем результат. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:  
   
- \<путь >... \<результат > \r\n\<путь >... \<результат > \r\n\<путь >... \<результата >  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  Обратите внимание, что последний элемент последовательности \r\n.  
   
@@ -82,9 +82,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }  
 ```  
   
- **c:\symbols\user32.PDB... Файл не найден.**  
-**c:\winnt\symbols\user32.PDB... Версия не совпадает.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.PDB... Символы загружены.**   
+ **c:\symbols\user32.pdb... Файл не найден.**  
+**c:\winnt\symbols\user32.pdb... Версия не совпадает.**  
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**   
 ## <a name="see-also"></a>См. также  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
