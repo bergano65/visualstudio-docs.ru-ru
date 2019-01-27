@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea38b05f48969b80f9f8888f8bbd3c6a1a4e5657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904946"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971823"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Как выполнить Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в коде ошибок правописания, грамматические регистр и другие соглашения об именовании рекомендациям по разработке .NET Framework. Можно создать пользовательский словарь XML-файл, чтобы добавить, удалить или изменить условия, сокращений и акронимов встроенный словарь.
