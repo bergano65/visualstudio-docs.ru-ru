@@ -1,23 +1,25 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c9110582a80de3031ed4d2698a4f1afcf31e3b72
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 6c68bfe6d5216c6730a4b42713c5124b8075e9e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946429"
 documentType: LandingData
-title: Visual Studio | Visual Basic
+title: Руководства по Visual Studio | Visual Basic
 metadata:
   title: Разработка на Visual Basic с помощью Visual Studio | Документация Майкрософт
   description: Руководства и материалы по разработке приложений Visual Basic в Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
   ms.date: 10/30/2018
   ms.author: ghogen
+abstract:
+  description: На этой странице содержатся ссылки на руководства по Visual Studio для начинающих пользователей Visual Basic. Полную документацию по Visual Studio см. в разделе <a href="/visualstudio/ide/">Visual Studio</a>. Документацию по языку Visual Basic см. в разделе <a href=/dotnet/visual-basic>Руководство по Visual Basic</a>.
 sections:
 - title: Начало работы
   items:
