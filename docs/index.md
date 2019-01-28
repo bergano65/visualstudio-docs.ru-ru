@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 titleSuffix: ''
-description: "Узнайте, как с помощью Visual Studio\_2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
+description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032219"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -101,7 +107,7 @@ ms.custom: seodec18
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>Выбор языка</h2>
+                                                <h2>Прохождение руководства</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
