@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860914"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228036"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Диагностика проблем после развертывания, с помощью IntelliTrace
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Диагностика проблем после развертывания, с помощью IntelliTrace (C#, Visual Basic)
 
 Для диагностики проблем в веб-приложении ASP.NET после развертывания с помощью IntelliTrace включите сведения о построении в свою версию, чтобы Visual Studio могла автоматически найти нужные исходные файлы и файлы символов, необходимые для отладки журнала IntelliTrace.
 
@@ -31,7 +31,7 @@ ms.locfileid: "53860914"
 
 -   Visual Studio Enterprise (но не выпуск Professional или Community) для просмотра данных диагностики и отладки кода с помощью IntelliTrace.
 
-##  <a name="SetUpBuild">Шаг 1.</a> Включить сведения о сборке в выпуск
+##  <a name="SetUpBuild"></a> Шаг 1. Включить сведения о сборке в выпуск
  Настройте процесс построения для создания манифеста сборки (файл *BuildInfo.config*) для веб-проекта и включите этот манифест в выпуск. Этот манифест содержит сведения о проекте, систему управления версиями и систему сборки, которые использовались для создания конкретной сборки. Эти сведения позволяют Visual Studio найти соответствующий источник и символы после открытия журнала IntelliTrace для просмотра записанных событий.
 
 ###  <a name="AutomatedBuild"></a> Создание манифеста сборки для автоматизированной сборки с помощью Team Foundation Server
@@ -153,7 +153,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
  **/p:BuildSymbolStorePath=**\<*путь к символам*>
 
-##  <a name="DeployRelease">Шаг 2.</a> Выпуск приложения
+##  <a name="DeployRelease"></a> Шаг 2. Выпуск приложения
  Если вы используете [пакет Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) , который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещается в ту же папку, что и файл Web.config приложения на веб-сервере.
 
  Если для развертывания приложения вы используете другие методы, убедитесь, что манифест сборки переименован из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещен в ту же папку, что и файл Web.config приложения, на веб-сервере.
@@ -298,7 +298,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
     - **GitSourceControl**: Расположение **GitSourceControl** схемы
 
-    - **RepositoryUrl**— URI для Team Foundation Server, коллекции проектов и репозитория Git
+    - RepositoryUrl URI для Team Foundation Server, коллекции проектов и репозитория Git
 
     - **ProjectPath**: Путь к файлу проекта приложения (CSPROJ или VBPROJ)
 
