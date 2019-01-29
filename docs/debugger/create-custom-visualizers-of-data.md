@@ -1,8 +1,6 @@
 ---
 title: Создание пользовательских данных визуализаторов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607826"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204392"
 ---
-# <a name="create-custom-data-visualizers"></a>Создание пользовательских данных визуализаторов 
+# <a name="create-custom-data-visualizers"></a>Создание пользовательских данных визуализаторов
  Объект *визуализатор* является частью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] пользовательский интерфейс отладчика, который отображает переменной или объекта способом, подходящим для этого типа данных. Например HTML-визуализатор интерпретирует строку HTML и отображает результат, отображаемое в окне браузера. Визуализатор точечных рисунков распознает структуру точечного рисунка и отображает представляемой им. Некоторые визуализаторы позволяют изменить, а также просматривать данные.
 
  Отладчик [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] включает шесть стандартных визуализаторов. Текст, HTML, XML и JSON визуализаторы работающие со строковыми объектами. Визуализатор дерева WPF отображает свойства визуального дерева объекта WPF. Средство визуализации наборов данных работает для объектов DataSet, DataView и DataTable. 
@@ -42,13 +40,13 @@ ms.locfileid: "51607826"
  > [!NOTE]
  > Чтобы создать пользовательский визуализатор для машинного кода, см. в разделе [SQLite собственного визуализатор отладчика](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) образца. Пользовательские визуализаторы не поддерживаются для приложений для универсальной платформы Windows и Windows 8.x.
 
-Можно написать пользовательский визуализатор для объекта любого управляемого класса, за исключением <xref:System.Object> и <xref:System.Array>.  
+Пользовательский визуализатор можно создать для объекта любого управляемого класса, за исключением <xref:System.Object> и <xref:System.Array>.  
   
 Архитектура визуализатора отладчика состоит из двух частей:  
   
 - *Сторона отладчика* запускается в отладчике Visual Studio и создает и отображает пользовательский интерфейс визуализатора.  
   
-- *Отлаживаемая* выполняется внутри процесса, отладка Visual Studio ( *отлаживаемая программа*). Объект данных для визуализации (например, строковый объект) существует в отлаживаемом процессе. Отлаживаемый объект передает объект на стороне отладчика, которая отображается в пользовательском интерфейсе, создаваемых.  
+- *Сторона отлаживаемого кода* — код, который выполняется внутри процесса, отлаживаемого в Visual Studio (*отлаживаемая* программа). Объект данных для визуализации (например, строковый объект) существует в отлаживаемом процессе. Отлаживаемый объект передает объект на стороне отладчика, которая отображается в пользовательском интерфейсе, создаваемых.  
 
 Сторона отладчика получает объект данных из *поставщик объектов* , реализующий <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> интерфейс. Отлаживаемый объект передает объекту, используя *источника объекта*, который является производным от <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -84,9 +82,9 @@ ms.locfileid: "51607826"
   
 ## <a name="see-also"></a>См. также
   
- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Пошаговое руководство: создание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Пошаговое руководство. Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Пошаговое руководство: создание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)  
   
