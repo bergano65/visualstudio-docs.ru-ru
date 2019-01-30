@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942191"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834257"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Начало работы с Live Unit Testing в Visual Studio | Документы Майкрософт
 
@@ -25,7 +25,7 @@ Live Unit Testing можно использовать для тестирова�
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 Полноценное решение на C# можно скачать из репозитория [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) на сайте GitHub.
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 Полноценное решение на Visual Basic можно скачать из репозитория [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) на сайте GitHub.
 
 ---
@@ -78,7 +78,7 @@ Live Unit Testing можно использовать для тестирова�
 
 1.  Выберите **Сборка** > **Сборка решения** в меню верхнего уровня Visual Studio. Система Visual Studio должна успешно создать вашу библиотеку.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. В **обозревателе решений** щелкните решение `UtilityLibraries` правой кнопкой мыши и последовательно выберите пункты **Добавить** > **Новый проект**.
 
 1. В диалоговом окне **Добавление нового проекта** выберите узел Visual Basic, а затем **.NET Standard**.
@@ -153,7 +153,7 @@ Live Unit Testing можно использовать для тестирова�
 
 1. Скомпилируйте проект модульного теста, выбрав **Сборка** > **Перестроить решение** в меню верхнего уровня Visual Studio.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. В **обозревателе решений** щелкните решение `UtilityLibraries` правой кнопкой мыши и последовательно выберите пункты **Добавить** > **Новый проект**.
 
@@ -210,7 +210,7 @@ Live Unit Testing можно использовать для тестирова�
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![Обозреватель тестов и окно кода после запуска Live Unit Testing](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![Обозреватель тестов и окно кода после запуска Live Unit Testing](media/lut-start/lut-results-vb.png)
 
 ---
@@ -226,7 +226,7 @@ Live Unit Testing можно использовать для тестирова�
 
    ![Объем протестированного кода для оператора return](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Щелкните зеленую галочку в строке, где `If (String.IsNullOrWhiteSpace(s)) Then` считывается в методе `StartsWithUpper`. Как показано на следующем рисунке, Live Unit Testing указывает, что эту строку кода охватили три теста и все они были выполнены успешно.
 
    ![Объем протестированного кода для условного оператора "If"](media/lut-start/code-coverage-vb1.png)
@@ -262,7 +262,7 @@ Live Unit Testing можно использовать для тестирова�
 
     ![Объем протестированного кода для метода StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Добавьте следующие методы `TestStartsWithLower` и `TestDoesNotStartWithLower` в файл исходного кода теста проекта:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -322,7 +322,7 @@ Live Unit Testing можно использовать для тестирова�
 
 1. Выберите **Отладка** > **Продолжить** нажмите клавишу **F5** или кнопку **Продолжить** на панели инструментов, чтобы продолжить выполнение программы тестирования. Так как возникло необработанное исключение, тест был завершен.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Добавьте следующий метод в файл теста:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -370,7 +370,7 @@ Live Unit Testing можно использовать для тестирова�
 
     ![Успешный тест HasEmbeddedSpaces.](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Посмотрите на сравнение в методе `HasEmbeddedSpaces`. В нем внедренный пробел считается равным U+0020. Однако в стандарте Юникод есть ряд других пробелов. Это дает основания полагать, что код библиотеки был неправильно протестирован на пробелы.
 
 1. Замените сравнение на равенство вызовом метода <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:

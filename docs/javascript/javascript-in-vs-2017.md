@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398438"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013006"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -206,7 +206,8 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Устранение неполадок. Служба языка JavaScript была отключена для следующих проектов:
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Устранение неполадок. Служба языка JavaScript была отключена для следующих проектов:
 При открытии проекта JavaScript с очень большим объемом содержимого может появиться сообщение о том, что служба языка JavaScript отключена для следующих проектов. Наиболее распространенная причина наличия большого объема исходного кода JavaScript связана с включением библиотек с исходным кодом, превышающим ограничение в 20 МБ на проект.
 
 Чтобы оптимизировать проект, добавьте файл `tsconfig.json` в корневой каталог проекта, что позволит службе языка знать, какие файлы можно игнорировать. В следующем примере показано исключение наиболее распространенных каталогов, где хранятся библиотеки:
@@ -231,7 +232,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 }
 ```
 
-По своему усмотрению можно добавить дополнительные каталоги. Некоторые другие примеры включают каталоги "vendor" или "wwwroot/lib". 
+По своему усмотрению можно добавить дополнительные каталоги. Некоторые другие примеры включают каталоги "vendor" или "wwwroot/lib".
 
 > [!NOTE]
 > Для отключения ограничения в 20 МБ можно воспользоваться свойством компилятора `disableSizeLimit`. При использовании этого свойства следует принимать специальные меры предосторожности, поскольку отключение ограничения может привести к сбою языковой службы.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a77c5b1c932785e1363934554789102d8e4bea1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955340"
 ---
 # <a name="item-metadata-in-target-batching"></a>Метаданные элементов в пакетной обработке целевых объектов
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может анализировать зависимости для входных и выходных данных целевого объекта сборки. Если определено, что входные или выходные данные целевого объекта актуальны, он пропускается, а сборка продолжается. Элементы `Target` используют атрибуты `Inputs` и `Outputs`, чтобы задать элементы, обрабатываемые во время анализа зависимостей.  

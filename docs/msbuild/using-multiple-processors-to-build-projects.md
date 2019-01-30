@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 540e2ab57dc7509943bf5d3509f3aed388e77687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1732343d160b5c80363999830a41cdb66618b45c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933405"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 В MSBuild реализована поддержка систем с несколькими процессорами или многоядерными процессорами. Для каждого доступного процессора создается отдельный процесс сборки. Например, если в системе есть четыре процессора, создается четыре процесса сборки. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может обрабатывать эти сборки одновременно, что позволяет сократить продолжительность операции. При этом параллельная сборка несколько изменяет процедуру выполнения процессов сборки. Такие изменения и рассматриваются в этой статье.  

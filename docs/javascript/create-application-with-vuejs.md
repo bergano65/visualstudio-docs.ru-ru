@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857730"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947027"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -176,6 +176,7 @@ Vue.js предоставляет официальный интерфейс ко
 * Выполнение команды `npm run build` как события перед сборкой в свойствах проекта не работает при использовании vue-cli 3.0.
 
 ## <a name="see-also"></a>См. также
-https://vuejs.org/v2/guide — руководство по началу работы с Vue.  
-https://github.com/vuejs/vue-cli — проект интерфейса командной строки Vue.  
-https://webpack.js.org/configuration/ — документация по настройке Webpack.
+
+- https://vuejs.org/v2/guide — руководство по началу работы с Vue.
+- https://github.com/vuejs/vue-cli — проект интерфейса командной строки Vue.
+- https://webpack.js.org/configuration/ — документация по настройке Webpack.

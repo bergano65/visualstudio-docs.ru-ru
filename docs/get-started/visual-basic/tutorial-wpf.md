@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405374"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013305"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
@@ -270,5 +270,5 @@ IsChecked="True"
 
 ## <a name="see-also"></a>См. также
 
-- [Новые возможности Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
+- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Советы по повышению производительности](../../ide/productivity-tips-for-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка проекта для нескольких платформ
+title: Как выполнить Настройка проектов для нацеливания на несколько платформ
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4f5a2346a6ae246f9a7676709e35074d71b1437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930223"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028698"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Практическое руководство. Настройка проекта для нескольких платформ
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Как выполнить Настройка проектов для нацеливания на несколько платформ
 
 Visual Studio позволяет ориентировать решение сразу на несколько архитектур ЦП или платформ. Свойства для подобной настройки находятся в диалоговом окне **Диспетчер конфигураций**.
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b926403efb968a111bd535da75e3a269bb9bb63f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8aa5f9f9ba05972895fd356b4e00287e05403d83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914479"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040155"
 ---
 # <a name="how-to-view-performance-warnings"></a>Как выполнить Просмотр предупреждений о производительности
 В предупреждениях о производительности Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для получения более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

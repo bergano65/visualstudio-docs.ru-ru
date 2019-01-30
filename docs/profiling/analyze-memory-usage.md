@@ -5,15 +5,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcd3467f474d5c2b3e24ed1d1e490a73e7498bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f06685be91926e4168c5e4592514469f94da47d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932614"
 ---
 # <a name="analyze-memory-usage"></a>Анализ данных об использовании памяти
 С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять ее неэффективное использование. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче. Вы можете делать снимки приложений .NET, ASP.NET, а также собственных и смешанных приложений (на основе .NET и машинного кода).  

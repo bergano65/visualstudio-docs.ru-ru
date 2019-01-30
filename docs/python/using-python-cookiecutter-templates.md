@@ -1,22 +1,22 @@
 ---
 title: Использование шаблонов CookieCutter с Python
 description: Благодаря поддержке графического расширения Cookiecutter в Visual Studio можно искать шаблоны кода Python и на их основе создавать проекты.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958239"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231796"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 
@@ -60,7 +60,7 @@ ms.locfileid: "53958239"
 
 ![Страница параметров Cookiecutter](media/cookiecutter-template-options.png)
 
-Для каждого шаблона Cookiecutter определяется свой набор параметров и устанавливается значение по умолчанию (предложенный текст в каждом поле ввода). Значением по умолчанию может быть фрагмент кода, особенно если это динамическое значение, использующее другие параметры. 
+Для каждого шаблона Cookiecutter определяется свой набор параметров и устанавливается значение по умолчанию (предложенный текст в каждом поле ввода). Значением по умолчанию может быть фрагмент кода, особенно если это динамическое значение, использующее другие параметры.
 
 Для определенных параметров можно настроить значения по умолчанию с помощью файла конфигурации пользователя. Когда расширение Cookiecutter обнаруживает файл конфигурации пользователя, значения по умолчанию для шаблона заменяются на значения по умолчанию в этом файле. Дополнительные сведения см. в разделе документации Cookiecutter о [пользовательской конфигурации](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html).
 
