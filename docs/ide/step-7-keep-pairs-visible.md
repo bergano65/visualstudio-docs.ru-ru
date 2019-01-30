@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56d6d63aba5ab437cffd1e7275afa5eb9203a169
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016761"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
 Игра работает правильно, пока игрок выбирает только пары значков, которые не совпадают. Но давайте посмотрим, что произойдет, когда игрок выберет совпадающую пару. Вместо того чтобы значки исчезали благодаря включению таймера (с помощью метода <xref:System.Windows.Forms.Timer.Start>), игра должна сбрасываться и больше не отслеживать метки с помощью ссылочных переменных `firstClicked` и `secondClicked`. Но цвета двух меток, которые были выбраны, не должны сбрасываться.

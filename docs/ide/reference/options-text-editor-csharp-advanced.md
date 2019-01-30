@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959727"
 ---
 # <a name="options-text-editor-c-advanced"></a>"Параметры", "Текстовый редактор", C#, "Дополнительно"
 
@@ -47,7 +47,7 @@ ms.locfileid: "54398303"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    После сортировки:
 
    ```csharp
@@ -58,7 +58,7 @@ ms.locfileid: "54398303"
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Разделять группы директив using
 
    При выборе команды **Удалить и сортировать директивы using** в контекстном меню выполняется отделение `using` путем вставки пустой строки между группами директив, у которых одно и то же корневое пространство имен.
@@ -73,28 +73,28 @@ ms.locfileid: "54398303"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    После сортировки:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Предлагать using для типов в эталонных сборках 
-- Предлагать using для типов в пакетах NuGet 
+
+- Предлагать using для типов в эталонных сборках
+- Предлагать using для типов в пакетах NuGet
 
    При выборе этих параметров доступна команда [Быстрое действие](../quick-actions.md) для установки пакета NuGet и добавления директивы `using` для типов, на которые нет ссылок.
 
    ![Быстрое действие для установки пакета NuGet в Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Выделение
 
 - Выделить ссылки на символ под курсором

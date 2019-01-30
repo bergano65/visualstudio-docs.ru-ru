@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e9787d3f130bc6fb6597b3e8a5a6a8483029d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e98c79edfc3269781aa97250926f4c2587fb61bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923679"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 На этом шаге будет создан набор парных символов для игры. Каждый символ добавляется в две случайные ячейки в TableLayoutPanel в форме. Для этого используются два оператора `new`, создающие два объекта. Первый является объектом <xref:System.Random>. Такой же объект использовался в игре "Математическая головоломка". Он используется в этом коде для случайного выбора ячейки в TableLayoutPanel. Второй объект, который может показаться вам новым, это объект <xref:System.Collections.Generic.List%601>, используемый для хранения случайно выбранных символов.

@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4719d529d3fc9da7367150cd211a598ebf52770a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17552294f4ce0fdfd3e78621217c4495186a365e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042820"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>"Параметры", "Текстовый редактор", JavaScript, "Форматирование"
 Используйте страницу **Форматирование** диалогового окна **Параметры** для задания параметров форматирования для кода в редакторе кода. Чтобы открыть эту страницу, выберите в меню **Сервис** пункт **Параметры**, а затем разверните узел **Текстовый редактор**, **JavaScript** и **Форматирование**.

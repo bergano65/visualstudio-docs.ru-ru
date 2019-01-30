@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928806"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069867"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.

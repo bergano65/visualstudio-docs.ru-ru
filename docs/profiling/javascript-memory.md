@@ -16,15 +16,15 @@ helpviewer_keywords:
 - memory analyzer, JavaScript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 4c5773679cc3d9978d84da350a3aafa8415f2ab7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53962380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967960"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Анализ использования памяти JavaScript в приложениях UPW
 Анализатор памяти JavaScript доступен в Visual Studio и помогает получать информацию об использовании памяти и находить утечки памяти в приложениях универсальной платформы Windows, разработанных для Windows с использованием JavaScript. К поддерживаемым приложениям относятся приложения для универсальных приложений Windows.

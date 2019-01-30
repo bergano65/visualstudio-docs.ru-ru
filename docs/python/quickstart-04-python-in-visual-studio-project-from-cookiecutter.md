@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953189"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта из шаблона Cookiecutter
 
@@ -26,7 +26,7 @@ ms.locfileid: "53863697"
 
 1. Запустите Visual Studio.
 
-1. Выберите **Файл** > **Создать** > **Из Cookiecutter**. При выборе этой команды в Visual Studio открывается окно с шаблонами. 
+1. Выберите **Файл** > **Создать** > **Из Cookiecutter**. При выборе этой команды в Visual Studio открывается окно с шаблонами.
 
     ![Создание проекта на основе шаблона Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "53863697"
 
 1. По завершении процесса появится сообщение **Файлы успешно созданы**. Выберите команду **Открыть в обозревателе решений**, чтобы открыть проект.
 
-1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**. 
+1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**.
 
     ![Выходные данные проекта шаблона python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
