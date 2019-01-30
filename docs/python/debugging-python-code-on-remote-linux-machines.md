@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6681e3e1a1e04468d00c3b2087d5914cf0e71b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015346"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -66,7 +66,7 @@ Visual Studio позволяет локально и удаленно запус
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Установите в своей среде пакет `ptvsd` с помощью команды `pip3 install ptvsd`. 
+1. Установите в своей среде пакет `ptvsd` с помощью команды `pip3 install ptvsd`.
    >[!NOTE]
    >Рекомендуется записать устанавливаемую версию ptvsd на случай необходимости устранения неполадок. Доступные версии также можно найти в [списке ptvsd](https://pypi.python.org/pypi/ptvsd).
 

@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020572"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Django с представлениями и шаблонами страниц
 

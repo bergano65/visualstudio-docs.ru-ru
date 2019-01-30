@@ -2,22 +2,22 @@
 title: Python в Visual Studio. Учебник. Шаг 3. Интерактивное окно REPL
 titleSuffix: ''
 description: Шаг 3 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь рассматривается интерактивное окно REPL в Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986834"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231887"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -74,7 +74,7 @@ ms.locfileid: "53986834"
     ![Изменение предыдущего оператора в интерактивном окне](media/vs-getting-started-python-16-interactive6.png)
 
 1. Повторяйте эту процедуру, пробуя различные значения шага, пока не найдете оптимальное. Можно также сделать так, чтобы волна повторялась, увеличив диапазон, например `range(0, 1800, 12)`.
- 
+
 1. Когда код будет готов, выделите его в **интерактивном** окне, щелкните правой кнопкой мыши и выберите пункт **Копировать код** (или нажмите клавиши **CTRL**+**SHIFT**+**C**), а затем вставьте в редактор. Обратите внимание на то, что при использовании этой возможности в Visual Studio автоматически пропускаются выходные данные, а также символы `>>>` и `...`. Например, на приведенном ниже рисунке показано использование команды **Копировать код** применительно к выделенному фрагменту, включающему приглашения и выходные данные:
 
     ![Выполнение команды "Копировать код" в интерактивном окне для выделенного фрагмента с приглашениями и выходными данными](media/vs-getting-started-python-17-interactive7.png)
