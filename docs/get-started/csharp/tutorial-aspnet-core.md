@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 020d8dee31fbb2b1358ecefceef4859db93ecd3d
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 49177cf534c99d955474abbd9586effd33bf1cb9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943946"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -47,7 +47,7 @@ ms.locfileid: "53442000"
 
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**. 
+2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual C#**, затем разверните узел **Веб** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. Назовите файл *MyCoreApp* и нажмите **ОК**.
 

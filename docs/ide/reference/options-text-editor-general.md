@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989748"
 ---
 # <a name="options-text-editor-general"></a>Параметры, текстовый редактор, общие
 
@@ -67,7 +67,7 @@ ms.locfileid: "54417802"
 
 Если выбран этот параметр, можно нажать клавишу **CTRL**, навести указатель мыши на элемент и щелкнуть его. При этом произойдет переход к определению выбранного элемента. Вы также можете выбрать клавиши **ALT** или **CTRL** + **ALT** в раскрывающемся списке **Use modifier key** (Использовать клавишу-модификатор).
 
-Установите флажок **Открыть определение в быстром редакторе**, чтобы определение выбранного элемента отобразилось в окне без перехода из текущего расположения в редакторе кода. 
+Установите флажок **Открыть определение в быстром редакторе**, чтобы определение выбранного элемента отобразилось в окне без перехода из текущего расположения в редакторе кода.
 
 ## <a name="display"></a>Отображение
 

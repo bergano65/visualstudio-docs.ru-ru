@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865483"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026949"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности средств профилирования в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "53865483"
 
 Дополнительные сведения см. в статье [Заметки о выпуске для [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-В средства добавлена вкладка **Сводка**, которые позволяет сосредоточиться на ключевых областях для анализа производительности. Эта вкладка показывает, сколько событий произошло, и позволяет делать моментальные снимки кучи, а также быстро включать сбор данных по загрузке ЦП. В этом представлении приводятся все события [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) и [анализа пользовательского интерфейса](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis). Кроме того, в Visual Studio Enterprise в этом представлении также приводятся события IntelliTrace.
+В средства добавлена вкладка **Сводка**, которые позволяет сосредоточиться на ключевых областях для анализа производительности. Эта вкладка показывает, сколько событий произошло, и позволяет делать моментальные снимки кучи, а также быстро включать сбор данных по загрузке ЦП. В этом представлении приводятся все события [Application Insights](/azure/azure-monitor/app/visual-studio) и [анализа пользовательского интерфейса](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis). Кроме того, в Visual Studio Enterprise в этом представлении также приводятся события IntelliTrace.
 
 ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

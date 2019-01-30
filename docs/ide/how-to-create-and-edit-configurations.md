@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание и изменение конфигураций
+title: Как выполнить Создание и изменение конфигураций
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 949febb1b6d1aae01ae46b586721e1cf238549de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348530"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002051"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
+# <a name="how-to-create-and-edit-configurations"></a>Как выполнить Создание и изменение конфигураций
 
 Вы можете создать несколько конфигураций сборки для решения. Например, можно настроить отладочную сборку, которую ваши тест-инженеры могут использовать для поиска и устранения неполадок, или настроить разные типы сборок, которые можно передавать разным клиентам.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ed748ab3353dc8f5164c562b3523ee49930931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e9df8057c7360a8e2a79ad7d826ba1fc90c3c5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839379"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015762"
 ---
 # <a name="performance-report-overview"></a>Обзор отчета о производительности
 Данные, собранные во время сеанса анализа производительности, можно просматривать в окне **Отчет о производительности** интегрированной среды разработки Visual Studio Team System Development Edition. Данные профилирования сохраняются в VSP- и VSPS-файлах. Окна представления отчета позволяют просматривать и анализировать данные о проблемах производительности приложения.  

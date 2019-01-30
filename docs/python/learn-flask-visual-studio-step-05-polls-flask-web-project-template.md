@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ecbfb1c9b399327bede2fe479f0518a26e107e7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 2b265224198cff87f808a946d4fa1397ec1db0e7
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060820"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231926"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Шаг 5. Использование шаблона веб-проекта опроса Flask
 
@@ -355,6 +355,6 @@ def results(key):
 
 - Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в "Службе приложений Azure"](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- Добавьте реализацию репозитория, использующую другое хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все они могут размещаться на платформе Azure). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты, а также с Cosmos DB.
+- Добавьте реализацию репозитория, использующую другое хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все они могут размещаться на платформе Azure). Вы можете также использовать [пакет SDK Azure для Python](/python/azure/?view=azure-python), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты, а также с Cosmos DB.
 
 - Настройте конвейер непрерывной интеграции или непрерывного развертывания в таких службах, как Azure DevOps. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), можно настроить проект Azure DevOps для автоматического выполнения модульных тестов в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps интегрируется с решениями мониторинга, такими как App Insights, и закрывает весь цикл гибкими средствами планирования. Дополнительные сведения см. в статье [Создание конвейера CI/CD для Python с помощью проекта Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) и в общей [документации по Azure DevOps](/azure/devops/?view=vsts).

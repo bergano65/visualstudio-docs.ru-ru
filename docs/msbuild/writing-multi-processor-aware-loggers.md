@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005271"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.  

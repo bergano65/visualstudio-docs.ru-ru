@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4437b108aebd63950bce0ea07b9b1e493cf759af
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: e6033ce2329974cc3c2b1f140d02d112e4f87ba9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985842"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
 
@@ -206,7 +206,7 @@ ms.locfileid: "53441952"
 
     ![Задание точки останова](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
-    Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода. 
+    Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода.
 
 2. Нажмите клавишу **F5** или кнопку **Начать отладку** ![Начать отладку](../../debugger/media/dbg-tour-start-debugging.png "Start Debugging"). Будет запущено приложение и отладчик перейдет к строке кода, где задана точка останова.
 
