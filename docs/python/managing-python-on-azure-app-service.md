@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d7cfcb3a288103bd79ff0196073411e81c3bf8b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943121"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Работа с Python в "Службе приложений Azure" (Windows)
 
@@ -126,7 +126,7 @@ FastCGI — это интерфейс, работающий на уровне �
 
 - Значение `PYTHONPATH` можно свободно расширить, однако оно должно включать корень приложения.
 - `WSGI_HANDLER` должен указывать на приложение WSGI, импортируемое из приложения.
-- `WSGI_LOG` является необязательным, но рекомендуется для отладки приложения. 
+- `WSGI_LOG` является необязательным, но рекомендуется для отладки приложения.
 
 Дополнительные сведения о содержимом файла *web.config* для веб-приложений Bottle, Flask и Django см. в руководстве по [публикации в Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

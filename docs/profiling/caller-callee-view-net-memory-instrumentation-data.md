@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ac6322f7264f6a6816b6724f0e477c7daa977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8142899669d998a3d7e51366c482532f1fa415a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948262"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Представление "Вызывающий/вызываемый"— данные инструментирования памяти .NET
 В представлении "Вызывающий/вызываемый" данных профилирования памяти .NET, собранных с помощью метода инструментирования, отображаются сведения о выделении памяти и использовании времени для выбранной функции, а также ее родительской и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  

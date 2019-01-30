@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bdd95b5eb94567c7d05e1cedf7605c4e7688a89
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879560"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231835"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 
@@ -25,7 +25,7 @@ Visual Studio предоставляет шаблоны, которые помо
 
 [Облачная служба](https://docs.microsoft.com/azure/cloud-services/) состоит из произвольного числа *рабочих ролей* и *веб-ролей*, каждая из которых выполняет концептуально независимую задачу и может реплицироваться на несколько виртуальных машин для масштабирования. Веб-роли служат для размещения интерфейсных веб-приложений. При использовании Python для создания такого приложения подходит любая веб-платформа с поддержкой WSGI (поддерживаемая [шаблоном веб-проекта](python-web-application-project-templates.md)). Рабочие роли предназначены для длительных рабочих процессов, которые не взаимодействуют с пользователями напрямую. Они обычно используют пакеты из состава пакета azure, который устанавливается с помощью команды [`pip install azure`](https://pypi.org/project/azure).
 
-Эта статья содержит сведения о шаблоне проекта и других возможностях Visual Studio 2017 (в более ранних версиях эти функции также доступны, но с некоторыми отличиями). Дополнительные сведения о работе с Azure в Python вы найдете в [центре Azure для разработчиков Python](https://docs.microsoft.com/python/azure/?view=azure-python).
+Эта статья содержит сведения о шаблоне проекта и других возможностях Visual Studio 2017 (в более ранних версиях эти функции также доступны, но с некоторыми отличиями). Дополнительные сведения о работе с Azure в Python вы найдете в [центре Azure для разработчиков Python](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
 
 ## <a name="create-a-project"></a>Создание проекта
 

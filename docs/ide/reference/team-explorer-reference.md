@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840756"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918744"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
@@ -80,8 +80,12 @@ ms.locfileid: "53840756"
 - [Отправка списка результатов запроса по электронной почте с помощью Outlook](/azure/devops/boards/queries/share-plans)
 - [Создание отчетов из запроса в Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (только для TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > В Visual Studio 2019 (предварительная версия 1) представлена новая [система управления рабочими элементами](/azure/devops/boards/work-items/set-work-item-experience-vs). Дополнительные сведения о просмотре рабочих элементов в Visual Studio 2019 (предварительная версия 1) см. в статье [Просмотр и добавление рабочих элементов](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Страница "Сборки"
 
