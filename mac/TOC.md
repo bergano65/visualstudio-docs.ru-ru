@@ -52,6 +52,11 @@
 ## [Настройка репозитория Subversion](set-up-subversion-repository.md)
 ## [Работа с Subversion](working-with-subversion.md)
 
+# [Развертывание веб-приложения](web-app-deployment.md)
+## [Публикация в службу приложений Azure](publish-app-svc.md)
+## [Публикация в папку](publish-folder.md)
+
+
 # [Рабочие нагрузки](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
