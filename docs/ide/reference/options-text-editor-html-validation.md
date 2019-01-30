@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad568f43e1064fe264c528d68a39b072bf905db
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 7f629a0b8d9f149ee10f7a35c75e351a6c3abfd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417828"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031777"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>"Параметры", "Текстовый редактор", "HTML (веб-формы)", "Проверка"
 
@@ -27,7 +27,7 @@ ms.locfileid: "54417828"
 - **Использовать тип документа для определения схемы проверки**
 
    Схема позволяет определить, какие элементы, атрибуты и регистр текста допустимы в выбранной схеме. Кроме того, вы можете определить теги и атрибуты, доступные в IntelliSense.
-  
+
    Выберите этот параметр, если в Visual Studio нужно использовать объявление **<!DOCTYPE>** и элемент **html** в содержимом страницы, чтобы определить схему. Например, если вы выбрали этот параметр, а страница содержит объявление `<!DOCTYPE html>`, Visual Studio использует схему HTML5. Но если тег **html** имеет атрибут **xmlns**, такой как `<html xmlns="http://www.w3.org/1999/xhtml">`, в Visual Studio используется схема XHTML5.
 
 - **Target when no doctype found** (Выбрать целевую схему, если тип документа не найден)
@@ -37,7 +37,7 @@ ms.locfileid: "54417828"
   - **Показать ошибки**
 
      Установите этот флажок, чтобы включить проверку. Если флажок снят, редактор не будет выделять ошибки при проверке.
-    
+
      Остальные флажки позволяют выполнить точную настройку проверки, указав отдельные типы ошибок, которые редактор должен отмечать.
 
      > [!NOTE]

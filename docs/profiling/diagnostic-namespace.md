@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984058"
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
 Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.  

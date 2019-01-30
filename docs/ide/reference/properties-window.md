@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b2699c0c7097eca29cd853d68c8a0e2d910a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014995"
 ---
 # <a name="properties-window"></a>Окно свойств
 В этом окне можно просматривать и изменять свойства времени разработки и события выбранных объектов, которые находятся в редакторах и конструкторах. Кроме того, в окне **Свойства** можно редактировать и просматривать свойства файлов, проектов и решений. Окно **Свойства** можно открыть из меню **Вид**. Кроме того, его можно открыть, нажав клавишу F4 или набрав слово **Свойства** в окне **Быстрый запуск**.

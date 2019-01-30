@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3512e67ed7a97c4f8cb4c6aa0be256c32087de40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78ec334667f6bdc789bb5b638ca5ea84156c8900
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950524"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
@@ -38,7 +38,7 @@ Visual Studio предоставляет полную поддержку тех�
 
     ![IntelliSense для JavaScript](media/template-django-intellisense-js.png)
 
-Также Visual Studio предоставляет полную [поддержку отладки](debugging-python-in-visual-studio.md) для проектов Django: 
+Также Visual Studio предоставляет полную [поддержку отладки](debugging-python-in-visual-studio.md) для проектов Django:
 
 ![Точки останова](media/template-django-debugging.png)
 

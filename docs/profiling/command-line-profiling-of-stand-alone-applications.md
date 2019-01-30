@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ef097ca9151b2b318165a7c63ed84c0f85d9322
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935063"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Профилирование автономных приложений из командной строки
 В этом разделе описываются процедуры и параметры сбора данных о производительности для автономных (клиентских) приложений с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из командной строки.  

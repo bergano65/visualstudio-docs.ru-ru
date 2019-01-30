@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "53067065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768836"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -95,7 +95,7 @@ ms.locfileid: "53067065"
 
 В этом контексте, естественно, возникает вопрос, следует ли попытаться обновить проект вручную или перенести его на более новую версию `ToolsVersion`. Такое изменение не является обязательным и, скорее всего, приведет ко множеству ошибок и предупреждений, которые потребуется исправить, чтобы сборка проекта снова стала возможной. Кроме того, если в Visual Studio в будущем перестанет поддерживаться определенная версия `ToolsVersion`, при открытии проекта будет запущен процесс его миграции, так как значение `ToolsVersion` должно быть изменено. В такой ситуации подсистеме, связанной с этим типом проектов, точно известно, что именно нужно изменить, и она может произвести эти изменения автоматически, как было описано ранее в этой статье.
 
-# <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения см. в следующих статьях:
 
