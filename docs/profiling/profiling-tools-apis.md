@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8577cb0c456d3cf3ea295928a9bfd1df59d65c03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040233"
 ---
 # <a name="profiling-tools-apis"></a>Интерфейсы API средств профилирования
 Вы можете вставить управляемые или собственные методы интерфейсов API средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы управлять сбором данных во время выполнения профилирования. В этом разделе описываются методы интерфейсов API и способы их использования.  

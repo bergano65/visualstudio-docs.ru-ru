@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 27c8237b04b2c4c903d971b1035558b77d4bf2d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269804"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937604"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Вы можете добавить фрагмент в папку установки Visual Studio с помощью кнопки **Импорт** в **диспетчере фрагментов кода** (**Сервис** > **Диспетчер фрагментов кода**).

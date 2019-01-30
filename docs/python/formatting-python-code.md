@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49733b4a63ccffef64ca2fca3ba1f969eca2609b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012525"
 ---
 # <a name="format-python-code"></a>Форматирование кода Python
 
@@ -44,8 +44,8 @@ Visual Studio позволяет быстро переформатировать
 В следующих таблицах приведены примеры для различных параметров:
 
 | Параметр определения класса | Помечено | Флажок снят |
-| --- | --- | --- | 
-| **Вставлять пробелы между именем и списком базовых классов в объявлении класса** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Вставлять пробелы между именем и списком базовых классов в объявлении класса** | `class X (object): pass` | `class X(object): pass` |
 | **Вставлять пробелы внутри скобок списка баз** | `class X( object ): pass` | `class X(object): pass` |
 | **Вставлять пробелы внутри скобок пустого списка баз** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +53,7 @@ Visual Studio позволяет быстро переформатировать
 
 | Параметр определения функций | Помечено | Флажок снят |
 | --- | --- | --- |
-| **Вставлять пробелы между именем и списком параметров в объявлении функции** | `def X (): pass` | `def X(): pass` | 
+| **Вставлять пробелы между именем и списком параметров в объявлении функции** | `def X (): pass` | `def X(): pass` |
 | **Вставлять пробелы внутри скобок списка параметров** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Вставлять пробелы внутри скобок пустого списка параметров** | `def X( ): pass` | `def X(): pass` |
 | **Вставлять пробелы вокруг "=" в значениях параметров по умолчанию** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b94c9a78d3541645edf959aedb295d1a2379ce3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978819"
 ---
 # <a name="msbuild-targets"></a>Целевые объекты MSBuild
 Целевые объекты позволяют группировать задачи в определенном порядке, а также разложить процесс сборки на более мелкие этапы. Например, один целевой объект может удалить все файлы в выходном каталоге для подготовки к сборке, пока другой компилирует входные данные для проекта и помещает их в пустой каталог. Дополнительные сведения о задачах см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  

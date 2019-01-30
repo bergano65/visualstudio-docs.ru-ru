@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947066"
 ---
 # <a name="walkthrough-use-msbuild"></a>Пошаговое руководство. Использование MSBuild
 MSBuild является платформой сборки для корпорации Майкрософт и Visual Studio. Это практическое руководство содержит вводную информацию о стандартных блоках MSBuild и описывает способы записи и отладки проектов MSBuild, а также управления ими. Здесь рассматриваются следующие вопросы:

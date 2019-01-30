@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d599cd7acc4402408c1c5852e7aafe73e93b41ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991831"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 Когда вы добавляете ссылку на сборку с помощью вкладки **.NET** или диалога **добавления ссылки**, эта ссылка указывает на промежуточную базовую сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке **.NET** перечислены все базовые сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующие сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  

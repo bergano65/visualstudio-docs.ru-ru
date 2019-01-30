@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dd87a682eb92b510dd22191769e488437e8486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8735c3514ef8232a65f23ec59a5f9dc6f3e21f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940275"
 ---
 # <a name="timer"></a>Таймер
 Параметр **Timer** программы *VSPerfCmd.exe* задает событие профилирования, выборка которого производится в соответствии с циклами тактовой частоты ЦП, и при необходимости изменяет число циклов в интервале выборки (значение по умолчанию — 10 000 000). На процессоре с частотой 1 ГГц 10 000 000 циклов — это приблизительно 100 выборок в секунду. Минимальное число циклов, которое можно указать — 50 000.  

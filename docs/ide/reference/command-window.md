@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d939ca758d8ea398fc0af3f40c38f6459c27b5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026021"
 ---
 # <a name="command-window"></a>Командное окно
 **Командное** окно используется для выполнения команд или их псевдонимов непосредственно в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Можно выполнять команды меню и команды, которые не отображаются в меню. Для вывода **командного** окна в меню **Вид** выберите **Другие окна**, а затем **Командное окно**.

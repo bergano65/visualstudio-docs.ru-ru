@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8dd33ae42a4fd6b1a6cb778f0090e99342e35d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff0b8bb7dcbd695a28a0f7d09aff9223fab13db4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029301"
 ---
 # <a name="configure-targets-and-tasks"></a>Настройка целевых платформ и задач
 Целевые объекты и задачи MSBuild можно настроить для внепроцессного выполнения с помощью MSBuild, чтобы можно было определять целевые контексты, отличные от того, в котором идет выполнение. Например, на компьютере с 64-разрядной операционной системой и .NET Framework 4.5 можно создать приложение .NET Framework 2.0, предназначенное для 32-разрядной платформы. Вы также можете ориентироваться на компьютеры, где запущена платформа .NET Framework 4 или более ранней версии. Сочетание 32- или 64-разрядности и конкретной версии .NET Framework называется *целевым контекстом*.  

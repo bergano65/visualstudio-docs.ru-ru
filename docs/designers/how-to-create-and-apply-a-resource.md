@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042014"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Практическое руководство. Создание и применение ресурса
 Стили и шаблоны элементов в конструкторе XAML хранятся в сущностях, допускающих многократное применение, которые называют ресурсами. Стили позволяют задавать свойства элемента и использовать их повторно для согласованного внешнего вида нескольких элементов. Шаблон [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) определяет внешний вид элемента управления и может также применяться в качестве ресурса. Дополнительные сведения см. в разделе [Краткое руководство. стили элементов управления](http://go.microsoft.com/fwlink/?LinkID=248239) и [Краткое руководство. Шаблоны элементов управления](http://go.microsoft.com/fwlink/?LinkID=247982).

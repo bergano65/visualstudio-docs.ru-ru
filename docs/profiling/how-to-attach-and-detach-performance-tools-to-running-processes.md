@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0d735127be1b8a412395be8d19321deb8d589be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859689"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992494"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Как выполнить Присоединение средств производительности к выполняющемуся процессу и его отсоединение от этого процесса
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
