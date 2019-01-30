@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935467"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069919"
 ---
 # <a name="exploration-bounds"></a>Границы исследования
 
@@ -106,7 +106,7 @@ for (int i=0; i<100; i++) { }
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ void ParameterizedTest(int n)
 
 Эта граница исследования связана с тем, что любой код, содержащий циклы или рекурсию, может иметь неограниченное число путей выполнения, из-за чего появляется потребность ограничивать IntelliTest во время [создания входных данных](input-generation.md).
 
-Параметры **MaxRuns** и **MaxRunsWithUniquePaths** связаны следующим образом: 
+Параметры **MaxRuns** и **MaxRunsWithUniquePaths** связаны следующим образом:
 
 * IntelliTest будет вызывать метод параметризованного теста до **MaxRuns** раз с различными входными параметрами теста.
-* Если выполняемый код является детерминированным, IntelliTest будет каждый раз использовать другой путь выполнения. Однако при некоторых условиях выполняемый код может следовать по уже использованному ранее пути выполнения с новыми входными параметрами. 
+* Если выполняемый код является детерминированным, IntelliTest будет каждый раз использовать другой путь выполнения. Однако при некоторых условиях выполняемый код может следовать по уже использованному ранее пути выполнения с новыми входными параметрами.
 * IntelliTest подсчитывает число обнаруженных уникальных путей выполнения, которое ограничивается параметром **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>
