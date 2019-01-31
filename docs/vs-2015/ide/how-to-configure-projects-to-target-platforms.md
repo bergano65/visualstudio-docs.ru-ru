@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Настройка проекта для конкретной платформы | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка проекта для конкретной платформы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -22,15 +17,15 @@ ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791414"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. Настройка проекта для конкретной платформы
+# <a name="how-to-configure-projects-to-target-platforms"></a>Как выполнить Настройка целевых платформ в проектах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в разделе [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
@@ -68,11 +63,8 @@ ms.locfileid: "49843058"
   
 -   Для проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] см. раздел [/clr (компиляция CLR)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Общие сведения о платформах построения](../ide/understanding-build-platforms.md)   
  [/platform (параметры компилятора C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
-
-
-

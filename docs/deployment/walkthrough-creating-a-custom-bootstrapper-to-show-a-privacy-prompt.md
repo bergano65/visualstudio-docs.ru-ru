@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8719f3dc6d892801135d14d093c265445e90fcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021537"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Пошаговое руководство. Создание пользовательского загрузчика с предупреждением о конфиденциальности
 Можно настроить приложений ClickOnce для автоматического обновления при появлении сборок с более новые версии файла и версии сборки. Чтобы убедиться в том, что пользователи согласны такое поведение, можно отобразить предупреждением о конфиденциальности на них. После этого можно разрешить приложению для автоматического обновления. Если приложение не может быть автоматическое обновление, он не устанавливаются.  

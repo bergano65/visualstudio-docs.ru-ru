@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea7f4223a6d61faa852d7985f77f4f672d26d17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d76cdf699e21286a9ece8053b8463c371bfc13d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008170"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Как выполнить анализ системного кода после исключения
 При возникновении исключения может возникнуть необходимость проанализировать код внутри системного вызова, чтобы определить причину исключения. В следующей процедуре поясняется, как это сделать при отсутствии загруженных символов для системного кода или в режиме "Только мой код".  

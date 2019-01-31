@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 41704ad1f43dadee1efd16102281173215bad4e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966170"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Как выполнить Расширение кода, созданного реляционным конструктором объектов
 Код, сгенерированный **реляционный конструктор объектов** создается заново при внесении изменений в классы сущностей и других объектов в области конструктора. Из-за этой повторной генерации кода, любой код, который добавляется к сгенерированному коду, обычно перезаписывается, когда конструктор заново генерирует код. **Реляционный конструктор объектов** предоставляет возможность генерировать файлы разделяемых классов, в которых можно добавить код, который не перезаписывается. Один пример добавления собственного кода для кода, созданного **реляционный конструктор объектов** Добавление проверки данных в LINQ для классов SQL (сущности). Дополнительные сведения см. в разделе [Как добавить проверку в классы сущностей](../data-tools/how-to-add-validation-to-entity-classes.md).

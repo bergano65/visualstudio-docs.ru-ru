@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941305"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;зависимость&gt; элемент (развертывание ClickOnce)
 Определяет версию приложения для установки и расположение манифеста приложения.  

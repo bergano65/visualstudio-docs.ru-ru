@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"Все языки\", \"Вкладки\" | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
@@ -25,13 +20,13 @@ ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 940cca6b25ffc04fc017ef8def6dbace7ec35ef9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c89154cef2325da8b8073ded264afeb8f765302a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213334"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800808"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>"Параметры", "Текстовый редактор", "Все языки", "Вкладки"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49213334"
  Если для конкретных языков программирования на страницах параметров табуляции выбраны разные параметры, то для разных параметров **отступов** отображается сообщение "Параметры отступов для разных текстовых форматов конфликтуют друг с другом", а для разных параметров **табуляции** — сообщение "Параметры табуляции для разных текстовых форматов конфликтуют друг с другом". Например, это напоминание выводится, если для Visual Basic задан параметр **Интеллектуальные отступы**, а для Visual C++ — параметр **Отступ блока**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="indenting"></a>Отступы  
  Нет  
@@ -72,9 +67,6 @@ ms.locfileid: "49213334"
  Сохранять символы табуляции  
  Если выбран этот параметр, при отступе вставляется максимально возможное число знаков табуляции. Символ табуляции вставляет такое число пробелов, которое указано в поле **Размер интервала табуляции**. Если **размер отступа** не кратен **размеру интервала табуляции**, для заполнения разницы добавляются знаки пробелов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  ["Параметры", "Текстовый редактор", "Все языки"](../../ide/reference/options-text-editor-all-languages.md)   
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

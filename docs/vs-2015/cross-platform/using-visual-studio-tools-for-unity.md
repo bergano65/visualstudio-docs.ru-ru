@@ -1,25 +1,20 @@
 ---
 title: Использование инструментов Visual Studio для Unity | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777385"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Применение набора средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "51771317"
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Работа с обозревателем проектов Unity  
   
-- В Visual Studio в главном меню выберите **Представление** и **Обозреватель проектов Unity**. (Или нажмите клавиши **ALT+SHIFT+E**.)  
+- В Visual Studio в главном меню выберите **Представление** и **Обозреватель проектов Unity**. Клавиатура: **ALT+SHIFT+E**  
   
    ![Изображение окна обозревателя проектов Unity](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51771317"
      PDB-файлы необходимы для отладки, так как они содержат символы отладки библиотеки DLL и сопоставляют код DLL с формой его исходного кода. Набор средств Visual Studio для Unity будет использовать сведения из файлов DLL и PDB для создания файла DLL.MDB, который имеет формат отладочных символов, применяемый модулем работы со скриптами Unity.  
   
 4. Выполните отладку своего кода. Теперь вы можете отлаживать свой исходный код DLL вместе с исходным кодом проекта Unity и использовать все доступные функции, например точки останова и пошаговое выполнение кода.
-

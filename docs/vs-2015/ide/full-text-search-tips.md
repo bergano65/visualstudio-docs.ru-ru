@@ -1,14 +1,9 @@
 ---
 title: Советы по полнотекстовому поиску | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791712"
 ---
 # <a name="full-text-search-tips"></a>Советы по полнотекстовому поиску
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,9 +60,6 @@ ms.locfileid: "49850052"
 ### <a name="words-ignored-in-searches-stop-words"></a>Слова, игнорируемые при поиске (стоп-слова)  
  Часто встречающиеся слова или цифры, которые иногда называются стоп-словами, автоматически игнорируются во время полнотекстового поиска. Например, при поиске фразы "проходить сквозь" результаты поиска будут содержать разделы, которые содержат слово "проходить", но не "сквозь".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Поиск сведений](../ide/locate-information.md)   
  [Логические операторы в выражениях поиска](../ide/logical-operators-in-search-expressions.md)
-
-
-

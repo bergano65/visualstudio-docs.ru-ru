@@ -1,23 +1,19 @@
 ---
 title: Разработка кроссплатформенных мобильных приложений
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789298"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,7 +117,7 @@ ms.locfileid: "53858835"
 |**Дополнительные сведения**|
 |--------------------|
 |[Установка Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Начало работы с Инструментами Visual Studio для Apache Cordova](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
+|[Начало работы с Инструментами Visual Studio для Apache Cordova](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Сборка приложений для устройств Android и Windows (C++)
@@ -167,7 +163,7 @@ ms.locfileid: "53858835"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[Дополнительные сведения о средствах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) (библиотека MSDN)|
 |[Начните работать со средствами Visual Studio Tools для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (библиотека MSDN)|
 |[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (блог Visual Studio)|

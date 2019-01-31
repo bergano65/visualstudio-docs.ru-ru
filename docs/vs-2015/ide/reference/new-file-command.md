@@ -1,14 +1,9 @@
 ---
 title: Команда "Создать файл" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1043dc600d339e2a0989bb71fc7e8a09e712e102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59dbf1a866ce28351a2d6ec597972f70c6cc4917
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761615"
 ---
 # <a name="new-file-command"></a>Команда New File
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
   
 ## <a name="arguments"></a>Аргументы  
  `filename`  
- Необязательный. Имя файла. Если имя не указано, задается имя по умолчанию. Если не указано имя шаблона, создается текстовый файл.  
+ Необязательный параметр. Имя файла. Если имя не указано, задается имя по умолчанию. Если не указано имя шаблона, создается текстовый файл.  
   
 ## <a name="switches"></a>Переключатели  
  /t:`templatename`  
- Необязательный. Указывает тип создаваемого файла.  
+ Необязательный параметр. Указывает тип создаваемого файла.  
   
  В синтаксической структуре аргумента /t:`templatename` используются данные из диалогового окна "Создание файла". Введите имя категории, обратную косую черту (`\`) и имя шаблона, а затем заключите всю строку в кавычки.  
   
@@ -57,7 +52,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  В приведенном выше примере указано, что шаблон файла C++ находится внутри категории Visual C++ в диалоговом окне **Новый файл**.  
   
  /e:`editorname`  
- Необязательный. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
+ Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
   
  В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне "Открыть с помощью", с заключением в кавычки.  
   
@@ -74,12 +69,9 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Окно интерпретации](../../ide/reference/immediate-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

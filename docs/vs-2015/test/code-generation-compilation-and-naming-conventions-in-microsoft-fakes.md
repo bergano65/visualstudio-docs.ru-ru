@@ -1,24 +1,19 @@
 ---
 title: Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783375"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,7 +142,7 @@ ms.locfileid: "49895331"
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
 ```  
   
- Можно указать другой открытый ключ для сборки Fakes, например ключ, созданный для сборки с оболочкой совместимости, указав полный путь к **SNK-файлу**, который содержит альтернативный ключ в виде значения атрибута `KeyFile` в элементе `Fakes`\\`Compilation` **FAKES-файла**. Пример:  
+ Можно указать другой открытый ключ для сборки Fakes, например ключ, созданный для сборки с оболочкой совместимости, указав полный путь к **SNK-файлу**, который содержит альтернативный ключ в виде значения атрибута `KeyFile` в элементе `Fakes`\\`Compilation` **FAKES-файла**. Например:  
   
 ```xml  
 <-- FileSystem.Fakes.fakes -->  
@@ -290,10 +285,7 @@ attribute of the Assembly element in the .fakes:
 ##  <a name="BKMK_External_resources"></a> Внешние ресурсы  
   
 ###  <a name="BKMK_Guidance"></a> Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-
-
-

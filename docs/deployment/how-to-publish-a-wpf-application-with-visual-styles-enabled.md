@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029314"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Как выполнить Публикация приложения WPF с включенными визуальными стилями
 Визуальные стили включить внешний вид стандартные элементы управления для меняться в зависимости от темы, выбранного пользователем. По умолчанию визуальные стили не включены для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальных стилей для приложения WPF и публикации решения приводит к ошибке. В этом разделе описывается устранение этой ошибки и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview). Дополнительные сведения о сообщении об ошибке, см. в разделе [Устранение ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -71,7 +71,7 @@ ms.locfileid: "53861505"
   
          Эта кнопка показывает все элементы проекта, включая те, которые были исключены и те, которые обычно скрыты. Файл манифеста отображается как элемент проекта.  
   
-2.  Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
+2.  Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="create-a-manifest-file"></a>Создать файл манифеста  
   

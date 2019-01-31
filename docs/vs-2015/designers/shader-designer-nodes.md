@@ -1,25 +1,20 @@
 ---
 title: Узлы конструктора шейдеров | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793268"
 ---
 # <a name="shader-designer-nodes"></a>Узлы конструктора шейдеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ ms.locfileid: "49293505"
 |[Математические узлы](../designers/math-nodes.md)|Описывает узлы, которые можно использовать для выполнения алгебраических, логических, тригонометрических и других математических операций, которые напрямую соответствуют инструкциям HLSL.|  
 |[Служебные узлы](../designers/utility-nodes.md)|Описывает узлы, которые можно использовать для выполнения общих расчетов освещения и других распространенных операций, которые не соответствуют инструкциям HLSL напрямую.|  
 |[Фильтрация узлов](../designers/filter-nodes.md)|Описывает узлы, которые можно использовать для фильтрации текстур и цветов.|
-
-
-

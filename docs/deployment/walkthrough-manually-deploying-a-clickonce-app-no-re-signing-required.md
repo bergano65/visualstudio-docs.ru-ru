@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eef3d0732921bdd22b5753db6d7f769371bc335a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898155"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021602"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику
 При создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения и присвоить ей клиенту для публикации и развертывания, клиент традиционно должен был обновить манифест развертывания и подписать его заново. Несмотря на то что, по-прежнему рекомендуется в большинстве случаев платформа .NET Framework 3.5 позволяет создавать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, которые могут развертываться клиентами без необходимости повторного создания новый манифест развертывания. Дополнительные сведения см. в разделе [развертывание ClickOnce-приложений для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

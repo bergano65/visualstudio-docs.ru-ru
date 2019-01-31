@@ -17,15 +17,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89898e5f25c552987ee2d3df1c413c608323c2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83ce7c067f056e6bb22b6476de5696005359d61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001811"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Ошибки удаленной отладки и их устранение
 Во время удаленной отладки возможны следующие ошибки:  

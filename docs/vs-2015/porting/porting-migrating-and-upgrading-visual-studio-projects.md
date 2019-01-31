@@ -1,13 +1,9 @@
 ---
 title: Перенос, миграция и обновление проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -22,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966603"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54805557"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ ms.locfileid: "53966603"
 |Другое|Проекты большинства других типов можно открывать в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1).|
 |Веб-сайты FrontPage|Этот проект невозможно открыть в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , поскольку эта версия не поддерживает данный тип проектов.|
 |Переносимая библиотека классов|Если разрешить автоматическое обновление проекта в Visual Studio, его можно открыть в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]или Visual Studio 2010 с пакетом обновления 1 (SP1).<br /><br /> — Проекты, ориентированные на Silverlight 4, ориентированы и на Silverlight 5.<br />— Проекты для Windows Phone 7.0 или Windows Phone 7.5 ориентированы и на Windows Phone 8.<br />— Проекты, ориентированные на Xbox 360, более не будут ориентированы на Xbox 360.|
-|Проекты Azure, такие как проекты облачных служб (с расширением CCPROJ) и проекты диспетчера ресурсов Azure (проекты облачного развертывания) с расширением DEPLOYPROJ|Для открытия этих типов проектов сначала установите [пакет Azure SDK для .NET](http://azure.microsoft.com/en-us/downloads/), а затем откройте соответствующий проект.|
+|Проекты Azure, такие как проекты облачных служб (с расширением CCPROJ) и проекты диспетчера ресурсов Azure (проекты облачного развертывания) с расширением DEPLOYPROJ|Для открытия этих типов проектов сначала установите [пакет Azure SDK для .NET](http://azure.microsoft.com/downloads/), а затем откройте соответствующий проект.|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Устранение проблем совместимости проектов
  Ниже описаны некоторые меры, которые можно принять, если проект не открывается в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:

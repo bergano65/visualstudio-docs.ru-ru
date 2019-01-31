@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f8281966dba0e7b1a0ad158a870a4a8229724b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0668ff847922934f88f98b20c1ac01e6b119e401
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964816"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980938"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Для процессов IA64 отладка в смешанном режиме не поддерживается.
 Visual Studio не поддерживает отладку управляемого и машинного кода в процессах IA64 в смешанном режиме. Таким образом, при выполнении отладки переход из управляемого кода в неуправляемый невозможен (как и обратный переход).  

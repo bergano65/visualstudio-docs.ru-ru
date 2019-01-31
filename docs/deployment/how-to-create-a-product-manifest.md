@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c24f35ec68fdfda173cf24d8018102a42ea81b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824604"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976554"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Как выполнить Создание манифеста продукта
 Чтобы развернуть необходимые условия для приложения, можно создать пакет начального загрузчика. Пакет начального загрузчика содержит один файл манифеста продукта манифест пакета для каждого языкового стандарта. Манифест пакета содержит локализованные компоненты пакета. Сюда входят строки, условия лицензии и языковые пакеты.  
   
- Дополнительные сведения о манифестах продуктов, см. в разделе [как: Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md)  
+ Дополнительные сведения о манифестах продуктов, см. в разделе [как: создать манифест пакета](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="create-the-product-manifest"></a>Создание манифеста продукта  
   

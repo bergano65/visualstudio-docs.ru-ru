@@ -1,14 +1,9 @@
 ---
 title: Импорт и экспорт параметров — команда | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2556b814059a80f2b93d0220de27cdbd8c051ea9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b6b29179332920197960ebe3be71e5973bdc8fe9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305569"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769455"
 ---
 # <a name="import-and-export-settings-command"></a>Импорт и экспорт параметров - команда
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,16 +35,16 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
   
 ## <a name="switches"></a>Переключатели  
  /export:`filename`  
- Необязательный. Экспортирует текущие параметры в указанный файл  
+ Необязательный параметр. Экспортирует текущие параметры в указанный файл  
   
  /import:`filename`  
- Необязательный. Импортирует текущие параметры в указанный файл  
+ Необязательный параметр. Импортирует текущие параметры в указанный файл  
   
  /reset  
- Необязательный. Сбрасывает текущие параметры  
+ Необязательный параметр. Сбрасывает текущие параметры  
   
 ## <a name="remarks"></a>Примечания  
- Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Практическое руководство. Совместное использование параметров на разных компьютерах или в разных версиях Visual Studio](http://msdn.microsoft.com/en-us/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в разделе [Как Совместное использование параметров между несколькими компьютерами или версии Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Пример  
  Следующая команда экспортирует текущие параметры в файл `MyFile.vssettings`.  
@@ -58,9 +53,6 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+## <a name="see-also"></a>См. также раздел  
+ [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-
-
-

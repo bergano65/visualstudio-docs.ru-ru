@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53d03011b779265f7049bbe50317b31daf064d41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865878"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997667"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
 Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .  

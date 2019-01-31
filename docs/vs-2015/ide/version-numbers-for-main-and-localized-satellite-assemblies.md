@@ -1,14 +1,9 @@
 ---
 title: Номера версий основных и вспомогательных локализованных сборок | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
 - SatelliteContractVersionAttribute
@@ -19,13 +14,13 @@ ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a5c6d5e16a77a8c04964beb38e21ebf82ede7f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb699c7b5ab2aec928bf83ada5dd8824f93f3006
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790143"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Номера версий основных и вспомогательных локализованных сборок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,9 @@ ms.locfileid: "49223045"
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обнаружение сборок в среде выполнения](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)   
  [Настройка атрибутов сборки](http://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e)   
  [Безопасность и локализованные вспомогательные сборки](../ide/security-and-localized-satellite-assemblies.md)   
  [Локализация приложений](../ide/localizing-applications.md)   
  [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
-

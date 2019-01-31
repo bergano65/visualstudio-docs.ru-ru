@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1325d32c3656a45cab41bd174596113a18c5f58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56ed4b317dc9259458ddb9f984c5d086595d7846
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033925"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Сведения о единице компиляции разбивается между символами с `SymTagCompiland` тега (низкий деталей) и `SymTagCompilandDetails` тега (высокий уровень детализации). `SymTagCompilandDetails` требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о единице компиляции, который не входит в состав `SymTagCompiland` символов.  

@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Очистка сборки | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Очистка сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,15 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780751"
 ---
-# <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка построения
+# <a name="how-to-clean-a-build"></a>Как выполнить Очистка сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +36,7 @@ ms.locfileid: "49229675"
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:  
+2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,14 +47,14 @@ ms.locfileid: "49229675"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  
   
--   Используйте задачу `RemoveDir`, чтобы удалить каталог. Пример:  
+-   Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже проект с примером кода содержит новый целевой объект `Clean`, который использует задачу `RemoveDir`, чтобы удалить каталог и все содержащиеся в нем файлы и каталоги. Также в этом примере целевой объект `Compile` создает отдельный каталог для выходных файлов, удаляемых при очистке сборки.  
   
- `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/target**, чтобы указать другой целевой объект. Пример:  
+ `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/target**, чтобы указать другой целевой объект. Например:  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -107,12 +102,9 @@ ms.locfileid: "49229675"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задача Exec](../msbuild/exec-task.md)   
  [Задача MakeDir](../msbuild/makedir-task.md)   
  [Задача RemoveDir](../msbuild/removedir-task.md)   
  [Задача Csc](../msbuild/csc-task.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-

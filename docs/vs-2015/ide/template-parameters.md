@@ -1,14 +1,9 @@
 ---
 title: Параметры шаблона | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787096"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49238905"
 С помощью параметров в шаблонах вы можете заменить значения в ключевых частях шаблона, например имена классов и пространства имен, при создании экземпляра шаблона. Эти параметры заменяются с помощью мастера шаблонов, запускающегося в фоновом режиме, когда пользователь нажимает кнопку **ОК** в диалоговом окне **Новый проект** или **Добавление нового элемента**.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона  
- Параметры шаблона объявляются в формате $*параметр*$. Пример:  
+ Параметры шаблона объявляются в формате $*параметр*$. Например:  
   
 -   $safeprojectname$  
   
@@ -79,7 +74,7 @@ ms.locfileid: "49238905"
 ## <a name="custom-template-parameters"></a>Настраиваемые параметры шаблона  
  Вы можете указать собственные параметры шаблона и значения в дополнение к зарезервированным параметрам шаблона по умолчанию, которые используются во время замены параметров. Дополнительные сведения см. в разделе [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).  
   
-## <a name="example-replacing-files-names"></a>Пример: замена имен файлов  
+## <a name="example-replacing-files-names"></a>Пример Замена имен файлов  
  Вы можете указать переменные имена файлов для элементов проекта с помощью параметра с атрибутом `TargetFileName`. Например, можно указать, что файл EXE использует имя проекта, заданное `$projectname$`, в качестве имени файла.  
   
 ```  
@@ -93,7 +88,7 @@ ms.locfileid: "49238905"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Пример: использование имени проекта в качестве имени пространства имен  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Пример Использование имени проекта в качестве имени пространства имен  
  Чтобы использовать имя проекта для пространства имен в файле класса Visual C# — Class1.cs, используйте следующий синтаксис:  
   
 ```  
@@ -128,8 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
-
-
-

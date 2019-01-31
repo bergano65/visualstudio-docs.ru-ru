@@ -1,14 +1,9 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (C#) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763352"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49811981"
   Указывает, вызывает ли исключение во время выполнения целочисленный арифметический оператор, не относящийся к области ключевых слов [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) или [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e), значение которого лежит вне диапазона типа данных. Дополнительные сведения см. в разделе [/checked (параметры компилятора C#)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).  
   
   **Не ссылаться на mscorlib.dll**  
-  Указывает, будет ли mscorlib.dll импортироваться в вашу программу, определяя все <xref:System> пространства имен. Используйте этот параметр, если хотите определить или создать собственное пространство имен <xref:System> и соответствующие объекты. Дополнительные сведения см. в разделе [/nostdlib (параметры компилятора C#)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
+  Указывает, будет ли библиотека mscorlib.dll импортирована в программу, целиком определяя пространство имен <xref:System>. Используйте этот параметр, если хотите определить или создать собственное пространство имен <xref:System> и соответствующие объекты. Дополнительные сведения см. в разделе [/nostdlib (параметры компилятора C#)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
   
 ## <a name="output"></a>Вывод  
  Описанные ниже параметры позволяют производить расширенную настройку вывода.  
@@ -82,9 +77,6 @@ ms.locfileid: "49811981"
   **Базовый адрес DLL**  
   Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. Дополнительные сведения см. в разделе [/baseaddress (параметры компилятора C#)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры компилятора C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

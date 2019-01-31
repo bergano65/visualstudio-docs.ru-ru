@@ -1,14 +1,9 @@
 ---
 title: Рекомендации по использованию фрагментов кода | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
@@ -16,13 +11,13 @@ ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770328"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Рекомендации по использованию фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49919914"
 Код во фрагменте показывает лишь самый общий способ выполнения некоторой задачи. Для большинства приложений этот код следует изменить в соответствии с конкретными потребностями.  
   
 ## <a name="handling-exceptions"></a>Обработка исключений  
- Обычно блоки Try…Catch фрагмента кода перехватывают и передают все исключения. Это может оказаться ненужным для вашего проекта. Для каждого исключения имеется несколько способов реагирования. Примеры см. в разделах [Практическое руководство. Обработка исключений с помощью блока try-catch (руководство по программированию на C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) и [Оператор Try...Catch...Finally](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Обычно блоки Try…Catch фрагмента кода перехватывают и передают все исключения. Это может оказаться ненужным для вашего проекта. Для каждого исключения имеется несколько способов реагирования. Примеры см. в разделах [Практическое руководство. Обработка исключений с помощью блока try/catch (C# руководство по программированию)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) и [попробуйте... CATCH... Оператор Finally](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Расположения файлов  
  Настраивая расположения файлов под приложения, нужно обдумать следующее:  
@@ -71,10 +66,7 @@ ms.locfileid: "49919914"
   
     -   Фрагмент может содержать ссылки, которые автоматически добавляются в проект и могут быть загружены из любой точки в системе. Эти ссылки могли быть скачаны на ваш компьютер оттуда же, откуда и сам фрагмент кода. Фрагмент может вызвать метод по ссылке, который выполняет вредоносный код. Для защиты от таких атак просмотрите блоки импорта и ссылок в файле фрагмента кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Фрагменты кода IntelliSense в Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Защита приложений](../ide/securing-applications.md)   
  [Фрагменты кода](../ide/code-snippets.md)
-
-
-

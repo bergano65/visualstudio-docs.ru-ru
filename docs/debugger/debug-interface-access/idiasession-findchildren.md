@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2e0db2ec3f1f8f50dce061900ac086deca7777
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3271e1e322b37e474053f22084f8040b8bdedd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930632"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Получает все дочерние элементы идентификатора указанного родительского элемента, которые соответствуют типу имя и символов.  

@@ -1,14 +1,9 @@
 ---
 title: Команда "Добавить новый элемент" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 952419c5dda9a64b0f3fde93fd314ed9b54fd1a7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835049"
 ---
 # <a name="add-new-item-command"></a>Команда Add New Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
   
 ## <a name="arguments"></a>Аргументы  
  `filename`  
- Необязательный. Путь и имя файла элемента, который необходимо добавить в решение.  
+ Необязательный параметр. Путь и имя файла элемента, который необходимо добавить в решение.  
   
 ## <a name="switches"></a>Переключатели  
  /t: `templatename`  
- Необязательный. Указывает тип создаваемого файла. Если имя шаблона не задано, по умолчанию создается текстовый файл.  
+ Необязательный параметр. Указывает тип создаваемого файла. Если имя шаблона не задано, по умолчанию создается текстовый файл.  
   
  В синтаксической структуре аргумента /t:`templatename` используются данные, находящиеся в диалоговом окне **Добавление нового элемента решения**. Вам необходимо ввести полную категорию, затем тип файла, отделив имя категории от типа файла обратной косой чертой (`\`) и заключив всю строку в кавычки.  
   
@@ -55,7 +50,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```  
   
  /e: `editorname`  
- Необязательный. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
+ Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
   
  В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне **Открыть с помощью**, с заключением в кавычки.  
   
@@ -72,11 +67,8 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

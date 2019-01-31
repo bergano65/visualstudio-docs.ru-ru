@@ -1,14 +1,9 @@
 ---
 title: Управление сбором данных | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - advanced tasks for profiling tools
 - profiling tools, advanced tasks
@@ -16,13 +11,13 @@ ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c8022dd8fdd480e4bc545923eeb96d64f16ed9a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e34c4db965cacefabe752774e393a4339042040e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780951"
 ---
 # <a name="controlling-data-collection"></a>Управление сбором данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +28,11 @@ ms.locfileid: "51803426"
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
-|**Запуск и остановка профилирования.** Вы можете начать профилирование приложения, когда запускается приложение, или можно подключить профилировщик к уже выполняемому процессу. Во время выполнения целевого приложения сбор данных можно приостанавливать и возобновлять. Чтобы закончить сеанс профилирования, закройте целевое приложение или отключите профилировщик от выполняемого процесса.|-   [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)<br />-   [Практическое руководство. Присоединение средств производительности к выполняющемуся процессу и его отсоединение от этого процесса](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)<br />-   [Практическое руководство. Приостановка и возобновление сбора данных о производительности](../profiling/how-to-pause-and-resume-performance-data-collection.md)|  
+|**Запуск и остановка профилирования.** Вы можете начать профилирование приложения, когда запускается приложение, или подключить профилировщик к уже выполняемому процессу. Во время выполнения целевого приложения сбор данных можно приостанавливать и возобновлять. Чтобы закончить сеанс профилирования, закройте целевое приложение или отключите профилировщик от выполняемого процесса.|-   [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)<br />-   [Практическое руководство. Присоединение средств производительности к выполняющемуся процессу и его отсоединение от этого процесса](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)<br />-   [Практическое руководство. Приостановка и возобновление сбора данных о производительности](../profiling/how-to-pause-and-resume-performance-data-collection.md)|  
 |**Настройка профилирования инструментирования для ограничения собранных данных.** Вы можете использовать свойства конфигурации сеанса анализа производительности, чтобы ограничить данные, собранные в ходе запусков профилирования, которые используют метод инструментирования. Можно включать или исключать определенные DLL-файлы, пространства имен, классы и функции. Кроме того, можно исключать функции, которые не соответствуют заданному пороговому размеру.|-   [Практическое руководство. Ограничение инструментирования указанными библиотеками DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)<br />-   [Практическое руководство. Ограничение инструментирования указанными функциями](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [Практическое руководство. Исключение и включение малых функций при инструментировании](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)|  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обозреватель производительности](../profiling/performance-explorer.md)
-
-
-

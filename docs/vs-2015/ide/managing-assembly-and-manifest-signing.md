@@ -1,14 +1,9 @@
 ---
 title: Управление сборками и подписывание манифестов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755468"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Управление сборками и подписывание манифестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,15 +61,12 @@ ms.locfileid: "49909683"
 > [!WARNING]
 >  При этом следует защитить файл ключа паролем, чтобы предотвратить его использование другим пользователем. Ключи также можно защитить с помощью поставщиков или хранилищ сертификатов.  
   
- Кроме того, можно указать уже созданный ключ. Дополнительные сведения о создании пары ключей смотрите в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Кроме того, можно указать уже созданный ключ. Дополнительные сведения о создании разделов см. в разделе [как: Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
  При наличии доступа только к открытому ключу можно использовать отложенную подпись, чтобы отложить применение ключа. Для этого можно установить флажок **Только отложенная подпись**. Проект с отложенной подписью не будет работать, и нельзя будет выполнить его отладку. Однако можно пропустить проверку во время разработки с помощью [Sn.exe (средство строгих имен)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) с параметром `-Vr`.  
   
  Дополнительные сведения о подписи манифестов см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Сборки со строгими именами](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Сборки со строгими именами (подписывание сборок) (C++-CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
-
-
-

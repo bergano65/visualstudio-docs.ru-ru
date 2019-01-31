@@ -1,14 +1,9 @@
 ---
 title: Страница "Общие", папка "Среда", диалоговое окно "Параметры" | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,13 +26,13 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752294"
 ---
 # <a name="general-environment-options-dialog-box"></a>Страница "Общие", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49206886"
 Используйте эту страницу для изменения цветовых тем, параметров строки состояния, сопоставлений расширений файлов и т. д. для интегрированной среды разработки (IDE). Чтобы открыть диалоговое окно **Параметры**, щелкните меню **Сервис**, выберите **Параметры**, откройте папку **Среда** и выберите страницу **Общие**. Если этой страницы нет в списке, установите флажок **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Визуальное представление  
  **Цветовая тема**  
@@ -87,9 +82,6 @@ ms.locfileid: "49206886"
   
  Этот параметр может быть полезен, если на одном компьютере установлены две версии Visual Studio, одна из которых позднее удаляется. После удаления значки файлов Visual Studio больше не отображаются в проводнике. Кроме того, Windows больше не распознает Visual Studio как приложение по умолчанию для открытия этих файлов. Этот параметр позволяет восстановить данные сопоставления.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)   
  [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

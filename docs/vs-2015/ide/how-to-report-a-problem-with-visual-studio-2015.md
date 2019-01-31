@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064064"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834443"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Как сообщить о проблеме с Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "53064064"
 
 Если возникли проблемы с Visual Studio 2015, мы хотим узнать об этом, чтобы диагностировать и устранить ее.  С помощью средства **Сообщить о проблеме** можно собрать подробные сведения о проблеме и отправить их в корпорацию Майкрософт, сделав всего несколько щелчков.
 
- Корпорация Майкрософт уважает вашу конфиденциальность. Сведения о том, как мы обращаемся с поступающей от вас информацией, см. в [Заявлении о конфиденциальности для семейства продуктов Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).
+ Корпорация Майкрософт уважает вашу конфиденциальность. Сведения о том, как мы обращаемся с поступающей от вас информацией, см. в [Заявлении о конфиденциальности для семейства продуктов Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Откройте средство "Сообщить о проблеме"
  Щелкните значок "Отзыв пользователя" рядом с элементом **Быстрый запуск** в заголовке окна или щелкните **Справка > Отправить отзыв > Сообщить о проблеме**.
@@ -65,5 +65,5 @@ ms.locfileid: "53064064"
 ## <a name="submit-the-report"></a>Отправьте отчет
  Нажмите кнопку "Отправить" для отправки отчета вместе с изображениями и файлами трассировки или дампа. Если кнопка **Отправить** недоступна, убедитесь, что вы ввели название и описание.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Обращайтесь к нам](../ide/talk-to-us.md)

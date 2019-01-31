@@ -1,14 +1,9 @@
 ---
 title: -ProjectConfig (devenv.exe) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
 - configurations, rebuilding
@@ -25,13 +20,13 @@ ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 669378e02b2a38fa8b94c23543c6cc0136d8e07e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59a3ad19a6e2a51ec865f66721e35548323d20a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785972"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,16 +54,16 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  Указывает, что проект должен быть развернут после сборки или перестроения.  
   
  `SolnConfigName`  
- Обязательно. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.  
+ Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.  
   
  `SolutionName`  
- Обязательно. Полный путь и имя для файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  /project `ProjName`  
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
+ Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
  /projectconfig `ProjConfigName`  
- Необязательный. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.  
+ Необязательный параметр. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -85,7 +80,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
@@ -93,6 +88,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

@@ -2,7 +2,7 @@
 title: Приложения Store анализа статического кода C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
@@ -10,13 +10,13 @@ ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064158"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54805570"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода C++ в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "53064158"
  Анализ кода C++ вызывает следующие предупреждения:
 
 
-|                                      Правило                                      |                                                  Описание:                                                  |
+|                                      Правило                                      |                                                  Описание                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          Использование неинициализированной памяти                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Разыменование пустого (NULL) указателя                                           |

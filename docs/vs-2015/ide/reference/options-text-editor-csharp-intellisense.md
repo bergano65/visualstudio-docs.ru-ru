@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"C#\", IntelliSense | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
@@ -23,13 +18,13 @@ ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7c1bf08c5e97a2504d797a58e96cd12cdcf08cc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793194"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49262175"
 Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для Visual C#. Чтобы получить доступ к странице свойств **IntelliSense**, щелкните **Параметры** в меню **Сервис**, затем щелкните **C#** в папке **Текстовый редактор** и выберите **IntelliSense.**  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Страница **IntelliSense** содержит следующие свойства:  
   
@@ -76,10 +71,7 @@ ms.locfileid: "49262175"
  **Предварительно выделять последний использованный член**  
  Если выбран этот параметр, IntelliSense предварительно выбирает последние элементы, выбранные во всплывающем окне "Список членов" для автоматического завершения имени объекта, в рамках текущего сеанса в среде IDE. Журнал наиболее часто используемых членов списка очищается после завершения каждого сеанса в интегрированной среде разработки. Дополнительные сведения см. в разделе [IntelliSense для недавно использовавшихся членов](../../misc/intellisense-for-most-recently-used-members.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   
  [Комментарии XML-документации](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Использование технологии IntelliSense](../../ide/using-intellisense.md)
-
-
-

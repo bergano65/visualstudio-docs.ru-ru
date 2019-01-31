@@ -1,14 +1,9 @@
 ---
 title: Ведение журнала в многопроцессорной среде | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
@@ -16,13 +11,13 @@ ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc2a75c5aab920d6b2ab93ce53bc7f65263e8657
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1afca269788710b3bf7a3ebf6fceea2f10b49a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788117"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Ведение журнала в многопроцессорной среде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +74,6 @@ Culture=neutral
   
  В параметре `/dl` имена двух средств ведения журнала разделены звездочкой (*).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Средства ведения журнала сборки](../msbuild/build-loggers.md)   
  [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)
-
-
-
-
-

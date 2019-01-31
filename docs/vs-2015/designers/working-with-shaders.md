@@ -1,25 +1,20 @@
 ---
 title: Работа с шейдерами | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795914"
 ---
 # <a name="working-with-shaders"></a>Работа с шейдерами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ ms.locfileid: "49226854"
 |[Конструктор шейдеров](../designers/shader-designer.md)|Описывает способ использования конструктора шейдеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с шейдерами.|  
 |[Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)|Описывает типы узлов в конструкторе шейдеров, которые можно использовать для достижения графических эффектов.|  
 |[Примеры конструктора шейдеров](../designers/shader-designer-examples.md)|Содержит ссылки на разделы, демонстрирующие применение конструктора шейдеров для создания типичных графических эффектов.|
-
-
-

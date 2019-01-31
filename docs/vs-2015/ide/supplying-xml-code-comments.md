@@ -1,14 +1,9 @@
 ---
 title: Создание XML-примечаний к коду | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.viewing.comments
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780502"
 ---
 # <a name="supplying-xml-code-comments"></a>Создание XML-примечаний к коду
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +33,5 @@ ms.locfileid: "49185462"
   
  Дополнительные сведения о документировании кода в C++ см. в разделах [Комментарии](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) и [XML-документация](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование технологии IntelliSense](../ide/using-intellisense.md)
-
-
-

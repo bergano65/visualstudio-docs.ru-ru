@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae34269cd0f15d522233a73e3500ded4f90a3d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852066"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969919"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Константы (SDK для доступа к интерфейсу отладки)
 Эти строковые константы можно использовать для идентификации различные разделы файла базы данных (PDB) программы отладки через пакет SDK для доступа к интерфейсу отладки.  

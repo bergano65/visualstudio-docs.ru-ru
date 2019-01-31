@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11c685f6-cda2-4474-a432-214ecaae4ffa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a184240836904be54f8ccea3d648e403213601e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d645905a98bd512f70583f6bc236730028ab343
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026795"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 Возвращает тип указанного символа, который содержит, или ближайший к указанному виртуальному адресу (VA) и смещение.  
