@@ -1,14 +1,9 @@
 ---
 title: Использование нескольких процессоров при сборке проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
@@ -16,13 +11,13 @@ ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ab8f3896c0a57657966c022f85c7827fedf3d65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792857"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,6 @@ ms.locfileid: "49199918"
   
  Чтобы эта особенность позволяла использовать несколько процессоров для сборки, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] прибегает к изоляции процессов. Изоляция процессов позволяет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] создавать вплоть до `n` процессов, где `n` равно числу процессоров, доступных в системе. Например если [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] собирает решение в системе с двумя процессорами, он создает только два процесса сборки. Эти процессы используются многократно для сборки всех проектов, входящих в решение.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Building Multiple Projects in Parallel](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  (Параллельная сборка нескольких проектов)  
  [Задачи](../msbuild/msbuild-tasks.md)
-
-
-

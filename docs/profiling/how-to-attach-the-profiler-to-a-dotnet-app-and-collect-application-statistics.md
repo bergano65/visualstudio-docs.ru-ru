@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dda6094b02c0172a7440fbfdfa255d07a122eb46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0138a52402638d44616a9048dcb0c1fa22e347ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917544"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993317"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.  

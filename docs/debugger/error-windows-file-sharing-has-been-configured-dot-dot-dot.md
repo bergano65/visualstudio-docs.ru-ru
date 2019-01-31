@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 257d7a0ce597cc8cbbadca975ee3db60d4e3adcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942217"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951850"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Ошибка: Совместное использование файлов Windows настроено...
 Совместное использование файлов Windows настроено, поэтому подключение к компьютеру происходит с помощью другого имени пользователя. Это несовместимо с удаленной отладкой  

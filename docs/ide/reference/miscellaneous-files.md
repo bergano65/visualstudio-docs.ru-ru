@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2e00e836725620c9a3ded6e2df5119a66d1cb54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942288"
 ---
 # <a name="miscellaneous-files"></a>Прочие файлы
 Редакторы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно использовать для работы с отдельными файлами из проекта или решения. Если решение открыто, файлы можно открывать и изменять, не добавляя их к решению или проекту. Файлы, работать с которыми необходимо независимо от контейнеров, называются прочими файлами. Прочие файлы являются внешними по отношению к решениям и проектам; они не включаются в сборки и не могут быть включены в решение, размещенное в системе управления версиями.

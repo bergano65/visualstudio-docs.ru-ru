@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927520"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Flask
 
@@ -163,7 +163,7 @@ def about():
 
 Как уже отмечалось в начале этой статьи, Visual Studio предоставляет шаблон "Веб-проект Flask/Jade", который создает приложение, визуально идентичное результату шаблона "Веб-проект Flask". Основное различие заключается в использовании модуля шаблонов Jade, который является расширением Jinja, реализующим те же принципы с помощью более краткого кода. В частности, Jade использует ключевые слова, а не теги, заключенные в разделители {% %}, и позволяет ссылаться на стили CSS и HTML-элементы с помощью ключевых слов.
 
-Чтобы можно было включить Jade, шаблон проекта должен включать пакет pyjade в файле *requirements.txt*. 
+Чтобы можно было включить Jade, шаблон проекта должен включать пакет pyjade в файле *requirements.txt*.
 
 Файл *\_\_init\_\_.py* приложения содержит строку для
 

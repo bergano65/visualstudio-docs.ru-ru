@@ -1,24 +1,19 @@
 ---
-title: Пример расширения Excel. Класс TechnologyManager | Документы Майкрософт
-ms.custom: ''
+title: Пример расширения Excel. Класс TechnologyManager | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779574"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +60,10 @@ ms.locfileid: "49190584"
 ## <a name="getexcelelement-internal-method"></a>Внутренний метод GetExcelElement  
  Этот внутренний метод принимает дескриптор окна и сведения об элементе Excel и возвращает запрошенный элемент Excel.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>   
  <xref:System.NotSupportedException>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227984"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231978"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Начало отладки многопоточных приложений (C#, Visual Basic, C++)
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этом руководстве показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и фильтр точки останова. Завершение изучения этого учебника вы ознакомитесь с возможностями Visual Studio для отладки многопоточных приложений.
@@ -106,39 +106,37 @@ Visual Studio предоставляет несколько средств и э
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Visual Studio предоставляет несколько средств и э
     ```
   
 7.  В меню **Файл** выберите команду **Сохранить все**.  
+
+8. (Только в Visual Basic) В обозревателе решений (правая панель) щелкните правой кнопкой мыши узел проекта, выберите **свойства**. В разделе **приложения** вкладке **автоматически запускаемый объект** для **простой**.
   
 ## <a name="debug-the-multithreaded-app"></a>Отладка многопоточных приложений  
   
@@ -205,8 +205,8 @@ Visual Studio предоставляет несколько средств и э
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Visual Studio предоставляет несколько средств и э
     Console.WriteLine()
     ```
 
-1. Левой кнопкой мыши щелкните в левом поле `Thread.Sleep` или `this_thread::sleep_for` инструкцию, чтобы добавить новую точку останова.  
+1. Левой кнопкой мыши щелкните в левом поле `Thread.Sleep` или `std::this_thread::sleep_for` инструкцию, чтобы добавить новую точку останова.  
   
     Во внутренней области красный кружок указывает, что установлена точка останова в этом расположении. 
   

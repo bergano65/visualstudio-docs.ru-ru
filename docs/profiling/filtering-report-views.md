@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986379"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927207"
 ---
 # <a name="filter-report-views"></a>Фильтрация представлений отчетов
 Чтобы ограничить данные профилирования, отображаемые в представлениях отчета о производительности и экспортируемые в файлы отчетов, можно применить фильтры к файлам данных профилирования. Отчет можно ограничить данными, полученными между двумя метками времени. Кроме того, можно ограничиться данными определенных процессов или потоков. Фильтры можно сохранить в файле, а затем создать фильтр в другом файле данных профилирования, импортировав в него сохраненный фильтр.  

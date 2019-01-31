@@ -1,26 +1,21 @@
 ---
 title: Выполнение модульных тестов с помощью обозревателя тестов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805112"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Выполнение модульных тестов с помощью обозревателя тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ ms.locfileid: "49846841"
   ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Просмотр исходного кода метода теста  
- Чтобы вывести исходный код для метода теста для просмотра в редакторе Visual Studio, выберите тест, а затем пункт **Открыть тест** контекстного меню (клавиша F12).  
+ Чтобы вывести исходный код для метода теста в редакторе Visual Studio, выберите тест, а затем в контекстном меню выберите пункт **Открыть тест** (клавиша F12).  
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
@@ -135,8 +130,8 @@ ms.locfileid: "49846841"
   
 |Группа|Описание|  
 |-----------|-----------------|  
-|**Длительность**|Группировка тестов по времени выполнения: **Быстро**, **Средне**и **Медленно**.|  
-|**Результат**|Группировка тестов по результатам выполнения: **Неудачные тесты**, **Пропущенные тесты**, **Пройденные тесты**.|  
+|**Длительность**|Группировка тестов по времени выполнения: **Быстро**, **Средне** и **Медленно**.|  
+|**Результат**|Группировка тестов по результатами выполнения: **Неудачные тесты**, **Пропущенные тесты**, **Пройденные тесты**.|  
 |**Признаки**|Группировка тестов по паре "категория — значение", заданной пользователем. Синтаксис для указания категорий и значений признаков определяется платформой модульного тестирования.|  
 |**Проект**|Группировка тестов по именам проектов.|  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Внешние ресурсы  
   
 ###  <a name="BKMK_Guidance"></a> Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Модульное тестирование кода](../test/unit-test-your-code.md)   
  [Выполнение модульного теста как 64-разрядного процесса](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

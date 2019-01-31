@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6e840d64ebe91258104846903ae08a9fd2798b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914005"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015616"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала сборки
 Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке *Microsoft.Build.Framework.dll*.  

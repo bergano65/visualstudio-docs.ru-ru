@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9222a36bd1e03a1f213a0d3ea0e86e269e912d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7e31f1eb259f6633f747f0243a08e09caf4539d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965605"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Оператор контекста в отладчике Visual Studio (C++)
 Оператор контекста в C++ можно использовать для уточнения имени переменной, выражения или расположения точки останова. С помощью оператора контекста можно указать имя из внешней области, чтобы это имя не оказалось перекрыто локальным именем.  
