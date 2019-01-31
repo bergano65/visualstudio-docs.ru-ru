@@ -1,22 +1,22 @@
 ---
 title: Отладка приложения JavaScript или TypeScript
-description: Visual Studio поддерживает отладку приложений JavaScript и TypeScript32
+description: Visual Studio поддерживает отладку приложений JavaScript и TypeScript
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: f3b2e3c5179c5edb390fc494b49ba0051e04108e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995065"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
