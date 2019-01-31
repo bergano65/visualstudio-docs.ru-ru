@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820362"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043600"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 В форме существует только один элемент управления <xref:System.Windows.Forms.PictureBox>. Когда он был добавлен, интегрированная среда разработки автоматически присвоила ему имя **pictureBox1**. Существует только один элемент управления <xref:System.Windows.Forms.CheckBox> с именем **checkBox1**. Скоро будет написан некоторый код. В этом коде будет обращение к элементам управления CheckBox и PictureBox. Так как существуют только по одному экземпляру каждого компонента, то становится ясно, что означает упоминание имен **pictureBox1** или **checkBox1** в коде.
