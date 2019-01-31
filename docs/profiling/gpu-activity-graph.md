@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: d7c769af-95fb-49a3-b5ab-deafecee46fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c274bc5c98a856e5d2f921f2967d8ee474f06274
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0be66a847628cc5968f4cb636066c937e3433c0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974871"
 ---
 # <a name="gpu-activity-graph"></a>Граф активности GPU
 Граф активности GPU в визуализаторе параллелизма отображает уровень активности DirectX в системе, измеренный по числу ядер DirectX, которые используются в динамике по времени.  Граф не показывает, какие конкретные ядра были использованы.  Ядро считается используемым, если оно выполняет какую-либо работу графического процессора.  

@@ -1,14 +1,9 @@
 ---
 title: -Upgrade (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
 - Devenv, /upgrade switch
@@ -17,13 +12,13 @@ ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 79a00da92ac2da6eb37fa1eef90fa112598d23f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779350"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Решения или проекты в системе управления версиями необходимо получать для изменения, прежде чем их можно будет обновить.  
   
- Использование параметра `/upgrade` не приводит к запуску [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Результаты обновления можно просмотреть в отчете об обновлении для языка разработки конкретного решения или проекта. Сведения об ошибках или использовании не возвращаются. Дополнительные сведения об обновлении проектов в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], см. в разделе [как: Устранение неполадок с неудачной Visual Studio проект обновления](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ Использование параметра `/upgrade` не приводит к запуску [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Результаты обновления можно просмотреть в отчете об обновлении для языка разработки конкретного решения или проекта. Сведения об ошибках или использовании не возвращаются. Дополнительные сведения об обновлении проектов в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], см. в разделе [как: Устранение неполадок с неудачными обновлениями Visual Studio проект](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Пример  
  В этом примере выполняется обновление файла решения с именем MyProject.sln в папке по умолчанию для решений [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,9 +53,6 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Практическое: Устранение неполадок с неудачными обновлениями Visual Studio проекта](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Практическое руководство. Устранение неполадок с неудачными обновлениями Visual Studio проекта](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

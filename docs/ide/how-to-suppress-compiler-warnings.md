@@ -6,15 +6,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 353cd36f1a45f1d9d63319b4cc951d3033137ac7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060369"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926492"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Как выполнить Отключение предупреждений компилятора
 
@@ -134,5 +134,5 @@ ms.locfileid: "53060369"
 ## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
-- [Практическое руководство: просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Практическое руководство. просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

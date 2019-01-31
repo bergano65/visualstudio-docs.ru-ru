@@ -1,14 +1,9 @@
 ---
 title: Сбор подробных сведений о времени с помощью инструментирования | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
@@ -16,13 +11,13 @@ ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 53a73bca3e8f868d94a548d9e45416dcd68f0553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794330"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Сбор подробных сведений о времени с помощью инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "51747020"
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |На странице **Общие** добавьте данные по выделению памяти .NET и времени существования и укажите сведения об именовании для создаваемого файла данных профилирования (VSP).|-   [Сбор данных о выделении памяти для объектов .NET и времени их жизни](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|При наличии в решении нескольких проектов исполняемых файлов (EXE) выберите на странице **Запуск** запускаемое приложение и порядок запуска.|-   [Практическое руководство. Указание двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md)|  
+|При наличии в решении нескольких проектов исполняемых файлов (EXE) выберите на странице **Запуск** запускаемое приложение и порядок запуска.|-   [Практическое руководство. Определение двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md)|  
 |На странице **Двоичные файлы** укажите расположение для инструментированных копий модулей. По умолчанию исходные двоичные файлы перемещаются в папку для резервного копирования.|-   [Практическое руководство. Перемещение инструментированных двоичных файлов](../profiling/how-to-relocate-instrumented-binaries.md)|  
 |На странице **Взаимодействие уровней** добавьте данные вызова ADO.NET в сеанс профилировщика.|-   [Сбор данных взаимодействия уровней](../profiling/collecting-tier-interaction-data.md)|  
 |На странице **Инструментирование** исключите профилирование небольших функций, чтобы уменьшить накладные расходы, связанные с профилированием, выполните профилирование кода JavaScript на веб-страницах ASP.NET и задайте команды, которые необходимо выполнить в командной строке перед началом процесса инструментирования и по его завершении.|-   [Практическое руководство. Исключение и включение малых функций при инструментировании](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [Практическое руководство. Профилирование кода JavaScript в веб-страницах](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
@@ -55,6 +50,3 @@ ms.locfileid: "51747020"
 |На странице **События Windows** выберите одно или несколько событий трассировки Windows, которые необходимо собирать с данными выборки.|-   [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |На странице **Счетчики Windows** выберите один или несколько счетчиков производительности операционной системы, значения которых будут добавляться в данные профилирования в качестве меток.|-   [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)|  
 |На странице **Дополнительно** задайте дополнительные параметры, которые необходимо передать в программу инструментирования VSInstr, например параметры для включения или исключения определенных функций.|-   [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Практическое руководство. Ограничение инструментирования указанными функциями](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [VSInstr](../profiling/vsinstr.md)|
-
-
-

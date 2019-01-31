@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373fa21a0ec588768017bcbcd8b0fdc4587bf091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921261"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976528"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Как выполнить Отладка ClickOnce-приложения с ограниченными разрешениями
 Как разработчик вы, скорее всего, работаете на компьютере разработчика с разрешениями полного доверия и поэтому не увидите те исключения безопасности, возникающие при отладке приложения ClickOnce, с которыми может столкнуться конечный пользователь, работающий с ограниченными разрешениями.  

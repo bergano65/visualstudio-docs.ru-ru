@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57fc5075ee375ed73b448e8a90e8bb2c3e22e7bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970816"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Представление "Состязание за ресурсы" — данные по состязаниям
 В представлении "Состязание за ресурсы" приводятся данные по состязаниям за ресурсы, являющиеся источниками событий состязания. Событие состязания возникает, когда функция в потоке вынуждена ожидать доступа к ресурсу из-за того, что функции в другом потоке предоставлен монопольный доступ к ресурсу. Каждый из ресурсов является корневым узлом дерева вызовов, в котором представлены пути выполнения функций, приведшие к созданию событий состязания.  

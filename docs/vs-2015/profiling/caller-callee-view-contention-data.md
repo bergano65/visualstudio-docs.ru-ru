@@ -1,27 +1,22 @@
 ---
 title: Представление "Вызывающий/вызываемый" — данные о конфликтах | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0e226cb5a44923e73d64a9374eb1d170e18d2428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797003"
 ---
 # <a name="caller--callee-view----contention-data"></a>Представление "Вызывающий/вызываемый" — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51797615"
   
  **Функции, которые были вызваны текущей функцией**, отображаются в нижней таблице, в которой указываются данные о конфликтах, связанных с вызываемыми (дочерними) функциями, которые вызывались текущей функцией.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Type**|Контекст функции:<br /><br /> -   **0** — текущая функция;<br />-   **1** — функция, вызывающая текущую функцию;<br />-   **2** — функция, вызываемая текущей функцией.<br /><br /> Только в отчетах командной строки [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Эксклюзивное время блокировки**|Для текущей функции — время блокировки выполнения кода, содержащегося в теле функции. Сюда не включается время блокировки в функциях, которые были вызваны данной функцией.<br />Для вызывающей функции — период эксклюзивной блокировки для текущей функции, которая происходила при вызовах текущей функции из этой функции.<br />Для вызываемой функции — время блокировки выполнения кода в этой функции, которая происходила при вызове этой функции из текущей функции. Сюда не включается время блокировки в дочерних функциях, которые были вызваны вызываемой функцией.|  
@@ -55,13 +50,10 @@ ms.locfileid: "51797615"
 |**Имя корневой функции**|Имя текущей функции. Только в отчетах командной строки [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Вызывающий/вызываемый"](../profiling/caller-callee-view.md)   
  [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки)  
  [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET)  
  [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
  [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-

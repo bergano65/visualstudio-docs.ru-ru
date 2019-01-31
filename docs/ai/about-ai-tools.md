@@ -1,5 +1,6 @@
 ---
 title: Инструменты Visual Studio для сценариев ИИ
+titleSuffix: ''
 description: Общие сведения об инструментах Visual Studio для сценариев ИИ
 keywords: искусственный интеллект, visual studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800935"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
 
@@ -46,5 +47,5 @@ ms.locfileid: "53908557"
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows
 
-# <a name="support"></a>Поддержка
+## <a name="support"></a>Поддержка
 Поддержка расширения оказывается в [средстве отслеживания проблем GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Вы можете отправить сообщение об ошибке, предложить новую функцию или принять участие в обсуждении.

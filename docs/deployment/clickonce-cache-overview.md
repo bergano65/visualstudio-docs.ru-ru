@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 323b179a81f9bdd66858c1ff2f96b8ce86b30b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82a92600c1f8fafff63e8c4f36ed249457651e0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977100"
 ---
 # <a name="clickonce-cache-overview"></a>Общие сведения о кэше ClickOnce
 Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, являются ли они установлены локально или размещенного в сети, хранятся на клиентском компьютере в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения *кэша*. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэша — это семейство скрытых каталогов в каталоге локальные параметры папки Documents and Settings текущего пользователя. Этот кэш содержит файлы приложения, включая сборки, файлы конфигурации, приложения и параметры пользователя и каталог данных. Кэш также отвечает за перенос каталог данных приложения до последней версии. Дополнительные сведения о миграции данных см. в разделе [доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

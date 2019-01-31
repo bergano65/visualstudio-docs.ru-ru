@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 91748bdc-f4cd-4d8b-ab98-0493dab7ed0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7df6a0ebc161d794a39e9e16b3b73abe42c6ec7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf3865d8369b7b3b4a7407f8c54465f93bcc7bd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862413"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920899"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Версии отладки функций выделения кучи
 Библиотека CRT содержит специальные отладочные версии функций выделения кучи. Эти функции называются так же, как и их версии для выпуска с присоединенным к ним _dbg. В этом разделе описываются различия между версией функции CRT для окончательного выпуска и версией _dbg; для примера взяты `malloc`и `_malloc_dbg`.  

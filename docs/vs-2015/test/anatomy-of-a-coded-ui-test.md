@@ -1,26 +1,21 @@
 ---
 title: Составляющие закодированного теста пользовательского интерфейса | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35222fc9e320bafbaafe1bc19e174649142252c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781181"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -272,7 +267,7 @@ public void MyTestCleanup()
   
  Файл `UIMap.uitest` нельзя редактировать непосредственно. Но можно использовать построитель закодированных тестов пользовательского интерфейса, который автоматически изменяет файл `UIMap.uitest` и файл [UIMap.Designer.cs](#UIMapDesignerFile).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
@@ -288,6 +283,3 @@ public void MyTestCleanup()
  [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
  [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

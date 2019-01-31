@@ -1,25 +1,20 @@
 ---
 title: Постоянные узлы | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788461"
 ---
 # <a name="constant-nodes"></a>Постоянные узлы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ ms.locfileid: "49260069"
 |**Направление света в пространстве касательных**|Вектор, определяющий направление, в котором излучается свет из источника света в пространстве касательных текущего пикселя.<br /><br /> Этот перпендикуляр можно использовать для вычисления добавочного освещения и отражений в пространстве касательных.<br /><br /> **Выходные данные:**<br /><br /> `Output`: `float3`<br /> Вектор из текущего пикселя к источнику света.|Нет|  
 |**Нормаль в системе мировых координат**|Нормаль к поверхности, построенная из текущего пикселя в абсолютном пространстве.<br /><br /> Эту нормаль можно использовать для вычисления добавочного освещения и отражений в абсолютном пространстве.<br /><br /> **Выходные данные**<br /><br /> `Output`: `float3`<br /> Нормаль к поверхности, построенная из текущего пикселя.|Нет|  
 |**Положение в мировых координатах**|Позиция текущего пикселя в абсолютном пространстве.<br /><br /> **Выходные данные:**<br /><br /> `Output`: `float4`<br /> Позиция текущего пикселя.|Нет|
-
-
-

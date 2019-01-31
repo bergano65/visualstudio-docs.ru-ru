@@ -1,14 +1,9 @@
 ---
 title: Страница "Приложение" в конструкторе проектов (C#) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778650"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "49867238"
 > [!NOTE]
 >  Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта следует выбрать пакеты необходимых компонентов вручную, чтобы они соответствовали новой целевой платформе.  
   
- Дополнительные сведения см. в разделах [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Дополнительные сведения см. в разделе [Как Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Тип приложения**  
  Тип приложения для сборки. Для приложений [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] можно указать **Приложение для Магазина Windows**, **Библиотека классов** или **Файл WinMD**. Для большинства других типов приложения можно указать **Приложение Windows**, **Консольное приложение**, **Библиотека классов**, **Служба Windows** или **Библиотека веб-элементов управления**.  
@@ -105,9 +100,6 @@ ms.locfileid: "49867238"
   
   Введите путь и имя или воспользуйтесь кнопкой "Обзор" (**...**), чтобы добавить к проекту файл ресурсов Win32.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 [Управление свойствами приложения](../../ide/application-properties.md)  
  [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

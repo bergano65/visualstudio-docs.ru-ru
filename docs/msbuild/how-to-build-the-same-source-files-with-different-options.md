@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9bbf558558b7eff673d255e525d6b69677e906
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70f7fee3f7dc2238dc8e9804cd8d35960c1661a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958243"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Как выполнить Сборка одинаковых исходных файлов с различными параметрами
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.  
