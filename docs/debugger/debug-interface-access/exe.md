@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fdec31314dcce0d5c83adee69de4e4fb2754c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27682e09de494fedaaf446b7cd533bde0715f459
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939209"
 ---
 # <a name="exe"></a>Exe
 Exe — единственный символ отсутствует либо лексические или класса родительского, так как он представляет глобальной области файла .exe или .dll. Имеется только один символ с `SymTagExe` тега каждого файла. [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) метод возвращает символ.  

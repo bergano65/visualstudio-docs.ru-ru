@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa14a9b5a1ce36acc1869cded5e955a78f0a9ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b92ae0ad9d60ac24047b136e67d7659cb680ecc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002462"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Правила производительности использования в .NET Framework
 Правила производительности в категории "Использование .NET Framework" определяют конкретные методы, которые можно оптимизировать, а также более общие шаблоны использования, такие как сборка мусора и конфликты блокировки, которые можно расследовать для решения проблем производительности.  

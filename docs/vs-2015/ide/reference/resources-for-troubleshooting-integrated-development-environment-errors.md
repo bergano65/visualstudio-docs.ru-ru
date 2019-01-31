@@ -1,14 +1,9 @@
 ---
 title: Ресурсы для устранения неполадок интегрированной среды разработки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -98,13 +93,13 @@ ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232665"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783265"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -122,6 +117,3 @@ ms.locfileid: "49232665"
   
 ## <a name="product-support"></a>Поддержка продуктов  
  Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).
-
-
-

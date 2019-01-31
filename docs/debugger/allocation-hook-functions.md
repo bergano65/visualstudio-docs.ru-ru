@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 4813e7d97eae8ed6f5a6e1da5df35702d63dce23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015129"
 ---
 # <a name="allocation-hook-functions"></a>Функции-ловушки выделения
 Функции-ловушки выделения, установленные с помощью [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), вызываются всякий раз при выделении, перераспределить или освобождении памяти. Можно использовать этот тип ловушек для различных целей. Использовать для тестирования, как приложение обрабатывает ситуации недостатка памяти, например, для оценки шаблонов выделения, или регистрации данных о выделении для дальнейшего анализа.  

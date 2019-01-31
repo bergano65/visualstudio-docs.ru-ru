@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024101"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Начало работы с Инструментами R для Visual Studio
 
-После установки инструментов R для Visual Studio (RTVS) (см. раздел [Установка](installing-r-tools-for-visual-studio.md)) можно сразу же приступить к работе с этими инструментами. 
+После установки инструментов R для Visual Studio (RTVS) (см. раздел [Установка](installing-r-tools-for-visual-studio.md)) можно сразу же приступить к работе с этими инструментами.
 
 ## <a name="create-an-r-project"></a>Создание проекта R
 
@@ -93,7 +93,7 @@ ms.locfileid: "53944630"
 
 > [!Tip]
 > Изучите схему внесения изменений и нажатия клавиш **CTRL**+**ВВОД** (или выделения всего содержимого с помощью клавиш **CTRL**+**A** и нажатия клавиш **CTRL**+**ВВОД**) для быстрого выполнения кода. Это намного быстрее, чем использовать мышь для выполнения тех же операций.
-> 
+>
 > Кроме того, можно перетащить и окно построений за пределы Visual Studio и поместить его в любом месте на экране. После этого можно масштабировать окно графиков до желаемых размеров и сохранить его в качестве изображения или PDF-файла.
 
 1. Добавьте несколько дополнительных строк кода, чтобы добавить второй график.

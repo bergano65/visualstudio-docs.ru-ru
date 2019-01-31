@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ff970f12bc31866483642772be742fbf6ac1e74b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7b4741bf7b8644182afb666b8683212ab957c56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941171"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232030"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Шаг 6. Использование шаблона веб-проекта Django для опросов
 
@@ -375,6 +375,6 @@ admin.site.register(Poll, PollAdmin)
 
 - Написание модульных тестов *tests.py*. Шаблоны проектов Visual Studio предоставляют отправные точки для них. Дополнительные сведения можно получить в статьях по [написанию первого приложения Django](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) и [тестированию Django](https://docs.djangoproject.com/en/2.0/topics/testing/) в документации по Django.
 
-- Изменение приложения с SQLite на хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все из них могут размещаться на платформе Azure). Как описано в статье про [использование SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite отлично работает с сайтами с низким и средним уровнем трафика с менее чем 100 тысяч попаданий/день, но использовать большие объемы не рекомендуется. Кроме того, он работает только на одном компьютере, поэтому может использоваться в любом сценарии с несколькими серверами, таком как балансировка нагрузки и георепликация. Сведения о поддержке Django в других базах данных см. в разделе [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Настройка базы данных). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты.
+- Изменение приложения с SQLite на хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все из них могут размещаться на платформе Azure). Как описано в статье про [использование SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite отлично работает с сайтами с низким и средним уровнем трафика с менее чем 100 тысяч попаданий/день, но использовать большие объемы не рекомендуется. Кроме того, он работает только на одном компьютере, поэтому может использоваться в любом сценарии с несколькими серверами, таком как балансировка нагрузки и георепликация. Сведения о поддержке Django в других базах данных см. в разделе [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Настройка базы данных). Вы можете также использовать [пакет SDK Azure для Python](/python/azure/?view=azure-python), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты.
 
 - Настройте конвейер непрерывной интеграции или непрерывного развертывания в таких службах, как Azure DevOps. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), можно настроить проект Azure DevOps для автоматического выполнения модульных тестов в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps интегрируется с решениями мониторинга, такими как App Insights, и закрывает весь цикл гибкими средствами планирования. Дополнительные сведения см. в статье [Создание конвейера CI/CD для Python с помощью проекта Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) и в общей [документации по Azure DevOps](/azure/devops/?view=vsts).

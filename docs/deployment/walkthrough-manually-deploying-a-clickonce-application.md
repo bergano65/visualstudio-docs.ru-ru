@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dac1a48db34f1b3a5a9dbdbac4469344f3e5383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001726"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce
 Если Visual Studio нельзя использовать для развертывания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, или если необходимо использовать дополнительные функции развертывания, например технологии развертывания доверенных приложений следует использовать *Mage.exe* средство командной строки для создания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью командной строки версии (*Mage.exe*) или графической версии (*MageUI.exe*) создания манифеста и Средства изменения.  

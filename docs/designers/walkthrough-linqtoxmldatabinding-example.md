@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17323482bfd300dc226ae21354a3dd11bd0c1753
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011032"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Пошаговое руководство. пример LinqToXmlDataBinding
 В этом пошаговом руководстве описывается пример LinqToXmlDataBinding, а также разъясняются наиболее интересные элементы содержимого его главных исходных файлов *L2DBForm.xaml* и *L2DBForm.xaml.cs*.

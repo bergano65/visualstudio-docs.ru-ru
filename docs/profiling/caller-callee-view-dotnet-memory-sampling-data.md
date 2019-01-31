@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef27cae8825fc77f49f5201ef03615227e383e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb2e2f735ec6c3f280cd0de79844f078ed0727d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027385"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  

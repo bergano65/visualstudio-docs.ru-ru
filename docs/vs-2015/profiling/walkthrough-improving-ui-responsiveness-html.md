@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML) | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758691"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,7 +202,7 @@ ms.locfileid: "51791153"
   
      ![Событие таймера](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Из этих данных можно сделать несколько фактических выводов. Пример:  
+     Из этих данных можно сделать несколько фактических выводов. Например:  
   
     -   Каждое событие `Timer` обозначения цветом в целях идентификации в качестве события скрипта, включает вызов `document.createElement`, за которым следует вычисление стиля и вызов `style.backgroundColor` и `appendChild()`.  
   
@@ -247,8 +242,5 @@ ms.locfileid: "51791153"
   
 2.  Запустите профилировщик отклика пользовательского интерфейса HTML еще раз и проверьте график использования ЦП. Обнаружится, что чрезмерные события удалены и использование ЦП опустилось практически до нуля. Готово!  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md)
-
-
-

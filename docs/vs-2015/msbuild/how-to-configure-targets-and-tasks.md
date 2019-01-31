@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Настройка целевых объектов и задач | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка целевых объектов и задач | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce147a9a393b30111f3f76f605e327b70206ad7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758230"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Практическое руководство. Настройка целевых платформ и задач
+# <a name="how-to-configure-targets-and-tasks"></a>Как выполнить Настройка целевых платформ и задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -116,8 +111,5 @@ ms.locfileid: "49264064"
 > [!NOTE]
 >  Параметры задачи вычисляются в контексте родительского узла, а не в контексте узла задач. Переменные среды, которые зависят от среды выполнения или архитектуры (например, как расположение "Program files"), будут вычисляться в значение, соответствующее родительскому узлу.  Но если та же самая переменная среды считывается непосредственно задачей, она корректно вычисляется в контексте узла задачи.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка целевых платформ и задач](../msbuild/configuring-targets-and-tasks.md)
-
-
-

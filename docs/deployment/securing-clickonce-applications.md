@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932822"
 ---
 # <a name="secure-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.  
@@ -66,7 +66,7 @@ ms.locfileid: "53944276"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- По умолчанию аргументы строки запроса отключены. Чтобы включить их, для приложения должен быть установлен атрибут `trustUrlParameters` в манифесте развертывания. Это значение может быть установлено из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и из MageUI.exe. Подробные инструкции по включению передачи строк запросов, см. в разделе [как: Извлечение сведений строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ По умолчанию аргументы строки запроса отключены. Чтобы включить их, для приложения должен быть установлен атрибут `trustUrlParameters` в манифесте развертывания. Это значение может быть установлено из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и из MageUI.exe. Подробные инструкции по включению передачи строк запросов, см. в разделе [как: извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Никогда не следует передавать аргументы, извлекаемые с помощью строки запроса, в базу данных или командную строку без проверки аргументов с целью убедиться, что они безопасны. Ненадежные аргументы — это аргументы, которые содержат escape-символы базы данных или командной строки, позволяющие злоумышленникам управлять приложением для выполнения произвольных команд.  
   

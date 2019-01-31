@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899760"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043717"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -32,9 +32,9 @@ Visual Studio 2017 представляет возможность [разраб
 
 ## <a name="npm-integration"></a>Интеграция npm
 
-Если открытая папка содержит файл *package.json*, щелкните правой кнопкой мыши *package.json*, чтобы открыть контекстное меню для npm. 
+Если открытая папка содержит файл *package.json*, щелкните правой кнопкой мыши *package.json*, чтобы открыть контекстное меню для npm.
 
-![меню npm в обозревателе решений](../javascript/media/solution-explorer-npm-ctx.png) 
+![меню npm в обозревателе решений](../javascript/media/solution-explorer-npm-ctx.png)
 
 В контекстном меню вы можете управлять пакетами, установленными npm, так же, как вы [управляете пакетами npm](npm-package-management.md) при использовании файла проекта.
 
@@ -43,7 +43,8 @@ Visual Studio 2017 представляет возможность [разраб
 ## <a name="build-and-debug"></a>Сборка и отладка
 
 ### <a name="packagejson"></a>package.json
-Если *package.json* в папке указывает элемент `main`, команда **отладки** будет доступна в контекстном меню для *package.json*. При нажатии этой кнопки запускается *node.exe* с указанным скриптом в качестве аргумента.
+Если *package.json* в папке указывает элемент `main`, команда **отладки** будет доступна в контекстном меню для *package.json*.
+При нажатии этой кнопки запускается *node.exe* с указанным скриптом в качестве аргумента.
 
 ### <a name="javascript-files"></a>Файлы JavaScript
 Вы можете отлаживать файлы JavaScript, щелкнув файл правой кнопкой мыши и выбрав **Отладка** в контекстном меню. Запустится *node.exe* с этим файлом JavaScript в качестве аргумента.

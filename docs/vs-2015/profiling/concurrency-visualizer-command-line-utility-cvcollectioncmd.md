@@ -1,27 +1,22 @@
 ---
 title: Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752917"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ ms.locfileid: "51790996"
 |MarkerProvider|Указывает одного поставщика маркеров.|Должен содержать эти элементы:<br /><br /> Level<br />GUID<br />Name<br /><br /> Может содержать эти элементы:<br /><br /> Categories<br />IsEnabled|  
 |Уровень|Задает уровень важности MarkerProvider.|Низкий<br />Обычный<br />Высокий<br />Критический<br />Все|  
 |Guid|Глобальный уникальный идентификатор поставщика маркеров ETW.|Идентификатор GUID.|  
-|Имя|Задает описание поставщика маркеров.|Строка.|  
+|name|Задает описание поставщика маркеров.|Строка.|  
 |Категории|Задает категории, собираемые для поставщика маркеров.|Строка чисел или диапазонов чисел, разделенных запятой.|  
 |IsEnabled|Задает значение, которое определяет, включен ли поставщик маркеров для сбора данных.|True<br />False|  
 |FilterConfig|Указывает список параметров конфигурации событий ETW, которые фильтруются при сборе.|Может содержать эти элементы:<br /><br /> CollectClrEvents<br />ClrCollectionOptions<br />CollectSampleEvents<br />CollectGpuEvents<br />CollectFileIO|  
@@ -158,6 +153,3 @@ ms.locfileid: "51790996"
 </LocalConfig>  
   
 ```
-
-
-
