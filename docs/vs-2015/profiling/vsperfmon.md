@@ -1,14 +1,9 @@
 ---
 title: VSPerfMon | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPerfMon tool
 - command line, tools
@@ -21,13 +16,13 @@ ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c9abe6af1a775ad995fccbb6b67e1498224925a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a06a6632d62f853eef33cad00ad766e0d1aab87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776057"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  В приведенной ниже таблице описываются параметры средства VSPerfMon.  
   
-|Параметры|Описание:|  
+|Параметры|Описание|  
 |-------------|-----------------|  
 |**U**|Перенаправленный вывод на консоль записывается в кодировке Юникода.  Этот параметр следует указывать первым.|  
 |**OUTPUT:** `<` *имя файла* `>`|Перенаправление выходных данных в файл с указанным именем.|  
@@ -51,14 +46,11 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**USER:** `[` *домен* `\]` *имя_пользователя*|Позволяет клиенту получать доступ к системному монитору с помощью указанной учетной записи.|  
 |**CROSSSESSION**|Включает профилирования в нескольких сеансах.|  
 |**COUNTER** `:cfg`|При использовании метода профилирования с инструментированием (TRACE) указывает счетчик ЦП, значение которого требуется собирать в каждой точке инструментирования. Можно собирать данные от нескольких счетчиков, задав несколько параметров Counter.<br /><br /> Используйте следующий синтаксис для описания данных счетчика (*cfg*):<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** — это имя счетчика, которое возвращается командой VSPerfCmd /QueryCounters.<br />-   **Reload** определяет интервал выборки событий счетчика. Не используйте *Reload* с методом инструментирования.<br />Если указано значение **FriendlyName**, оно заменяет **CounterName** в именах столбцов отчетов средств профилирования.|  
-|**WINCOUNTER** `:path`|Задает счетчик производительности Windows, который следует включить в данные меток. `path` — это строка счетчика производительности Windows в формате пути к счетчику PDH. Пример:<br /><br /> \Processor(0)\\% процессорного времени<br /><br /> \System\Контекстных переключений/с|  
+|**WINCOUNTER** `:path`|Задает счетчик производительности Windows, который следует включить в данные меток. `path` — это строка счетчика производительности Windows в формате пути к счетчику PDH. Например:<br /><br /> \Processor(0)\\% процессорного времени<br /><br /> \System\Контекстных переключений/с|  
 |**AUTOMARK** `:n`|Указывает временной интервал (в миллисекундах) между автоматическими метками при использовании параметра /WINCOUNTER. Округляется до ближайшего значения, кратного 500 мс.<br /><br /> Для отключения автоматических меток используется значение 0 (если значение не указано, используется значение 500 мс).|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Представления отчетов о производительности](../profiling/performance-report-views.md)
-
-
-

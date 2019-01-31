@@ -11,15 +11,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be14c9953fed34e7bdd9507b6224875b1008a22
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: ff2fc32a173f1c05fc200c9acd9b37ad2307a3a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031816"
 ---
 # <a name="options-text-editor-javascript-project"></a>"Параметры", "Текстовый редактор", JavaScript, "Проект"
 
@@ -37,7 +37,7 @@ ms.locfileid: "54350298"
 
 ## <a name="virtual-projects-in-solution-explorer"></a>Виртуальные проекты в обозревателе решений
 
-Эти параметры позволяют выбрать, когда отображать виртуальные проекты — если решение было загружено или не загружено. 
+Эти параметры позволяют выбрать, когда отображать виртуальные проекты — если решение было загружено или не загружено.
 
 ## <a name="compile-on-save"></a>Компилирование при сохранении
 

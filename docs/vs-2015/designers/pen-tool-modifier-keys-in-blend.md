@@ -1,25 +1,20 @@
 ---
 title: Клавиши-модификаторы инструмента "Перо" в Blend | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764188"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Клавиши-модификаторы инструмента «Перо» в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,8 @@ ms.locfileid: "49172111"
 |Создание сглаженного угла при соединении двух контуров|Выберите два контура, щелкните инструмент **Перо**, щелкните конечную точку одного из контуров и перетащите конечную точку другого контура|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> Указатель объединения пера|  
 |Создание нового контура|Удерживая клавишу CTRL, щелкните за пределами предыдущего контура, чтобы к нему больше не добавлялись точки, а затем щелкните или перетащите указатель в место создания нового контура|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> Указатель начала пера|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Сочетания клавиш и клавиши-модификаторы](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)   
  [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)   
  [Рисование фигур и контуров](../designers/draw-shapes-and-paths.md)
-
-
-

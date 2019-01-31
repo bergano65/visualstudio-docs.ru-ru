@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 309487f1686aa4418ac906e45cc0bf92970c231b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947729"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Как выполнить установку параметров отладчика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно задать различные параметры поведения отладчика, включая способ отображения переменных, возможность представления или непредставления некоторых предупреждающих сообщений, размещение точек останова и влияние останова на работу программы. Параметры отладчика задаются в диалоговом окне **Параметры**.  

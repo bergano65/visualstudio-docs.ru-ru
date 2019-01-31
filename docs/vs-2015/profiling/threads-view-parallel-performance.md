@@ -1,14 +1,9 @@
 ---
 title: Представление "Потоки" (параллельная производительность) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39457684ba19ecbb0ad2ef82caa349e67cdaf8a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756808"
 ---
 # <a name="threads-view-parallel-performance"></a>Представление "Потоки" (параллельная производительность)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,8 +149,5 @@ ms.locfileid: "51756338"
 #### <a name="disk-operations"></a>Операции диска  
  На этой вкладке показано, какие процессы и потоки использовались для дискового ввода-вывода от имени текущего процесса, какие файлы они затронули (например, библиотеки DLL, которые были загружены), сколько байт было считано, а также другие сведения. Этот отчет можно использовать для оценки времени, затраченного на доступ к файлам во время выполнения приложения, особенно если процесс связан с операциями ввода-вывода. Дополнительные сведения см. в разделе [Отчет операций диска](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)
-
-
-

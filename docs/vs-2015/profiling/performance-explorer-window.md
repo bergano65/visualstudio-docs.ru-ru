@@ -1,14 +1,9 @@
 ---
 title: Окно "Обозреватель производительности" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
 - vs.performance.explorer
@@ -18,13 +13,13 @@ ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20a68ecb9f45265dd304a9bebf601020c6a300b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780725"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +54,7 @@ ms.locfileid: "51798200"
   
 -   **Отчеты.** Отображаются имена файлов данных профилировщика, которые были созданы в ходе сеанса. Чтобы добавить существующий отчет или сравнить два файла данных профилировщика, щелкните **Отчеты** правой кнопкой мыши. Чтобы открыть, удалить или экспортировать файл данных профилировщика, щелкните имя отчета правой кнопкой мыши.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Управление сбором данных](../profiling/controlling-data-collection.md)
-
-
-

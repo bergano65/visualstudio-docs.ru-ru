@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010159"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Установка отладочных символов для интерпретаторов Python
 
@@ -51,7 +51,7 @@ Visual Studio может вывести запрос на использован
 
 1. Выберите пункт меню **Сервис** > **Параметры**, а затем перейдите к разделу **Отладка** > **Символы**.
 
-1. На панели инструментов нажмите кнопку **Добавить** (выделена ниже), укажите папку, где развернуты скачанные символы (там, где находится файл *python.pdb*, например *c:\python34\Symbols*, как показано ниже), а затем нажмите кнопку **ОК**. 
+1. На панели инструментов нажмите кнопку **Добавить** (выделена ниже), укажите папку, где развернуты скачанные символы (там, где находится файл *python.pdb*, например *c:\python34\Symbols*, как показано ниже), а затем нажмите кнопку **ОК**.
 
     ![Параметры символов в отладчике смешанного режима](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Visual Studio может вывести запрос на использован
 
 ## <a name="official-distributions"></a>Официальные дистрибутивы
 
-| Версия Python | Загрузки | 
-| --- | --- | 
-| 3.5 и более поздние версии | Установите символы с помощью установщика Python. | 
+| Версия Python | Загрузки |
+| --- | --- |
+| 3.5 и более поздние версии | Установите символы с помощью установщика Python. |
 | 3.4.4 | [32-разрядная](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32-разрядная](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32-разрядная](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

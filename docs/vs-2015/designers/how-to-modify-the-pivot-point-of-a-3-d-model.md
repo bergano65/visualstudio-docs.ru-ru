@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Изменение центра вращения трехмерной модели | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Изменение центра вращения трехмерной модели | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774105"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Практическое руководство. Изменение центра вращения трехмерной модели
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Как выполнить Изменение центра вращения трехмерной модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе демонстрируется использование редактора моделей для изменения *центра вращения* трехмерной модели. Центр вращения является точкой в пространство, которая определяет математический центр для вращения и масштабирования объекта.  
@@ -37,7 +32,7 @@ ms.locfileid: "49850533"
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Изменение центра вращения трехмерной модели  
   
-1. Начните с существующей трехмерной модели, как описано в разделе [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md).  
+1. Начните с существующей трехмерной модели, например в каталог, который описан в [как: Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md).  
   
 2. Переключитесь в режим вращения. На панели инструментов **Режим редактора моделей** нажмите кнопку **Режим вращения**, чтобы активировать режим вращения. Вокруг кнопки **Режим вращения** появляется рамка, — это показывает, что редактор моделей теперь находится в режиме вращения. В режиме вращения такие операции, как перенос, влияют на центр вращения объекта, а не на структуру объекта в абсолютном пространстве.  
   
@@ -54,9 +49,6 @@ ms.locfileid: "49850533"
   
    ![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md)   
  [Редактор моделей](../designers/model-editor.md)
-
-
-

@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9e73fe476dbe323289e7ebe90508aec695b6bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc6aa80bf82a52e6dc67fab78349e4f58eadd627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941056"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Как выполнить Добавление проверки в классы сущностей
 *Проверка* классов сущностей представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме объекта, а также правилам, установленным для приложения. Проверка данных перед отправкой обновлений в основную базы данных рекомендуется, это уменьшает количество ошибок. Это также уменьшает потенциальное количество циклов передачи между приложением и базой данных.
