@@ -12,15 +12,15 @@ helpviewer_keywords:
 - XML Web services, timeout while debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0963d1675c3456601aba70bb5291b7cc19d454fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832575"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930762"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Ошибка: время ожидания при отладке веб-служб
 При выполнении шага с заходом в веб-службу XML из вызывающего кода в некоторых случаях может быть превышено время ожидания вызова, что не позволит продолжить отладку. Может отобразиться сообщение наподобие того, что приведено ниже.  

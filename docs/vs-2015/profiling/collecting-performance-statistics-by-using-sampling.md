@@ -1,14 +1,9 @@
 ---
 title: Использование метода выборки для сбора статистики производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling
 - sampling profiling method
@@ -16,13 +11,13 @@ ms.assetid: 8e36361b-bb3d-40c6-b286-0e68c0ecb915
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a67c6542c2b838de7e80ee23588847cc15c15292
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755267"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777109"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ ms.locfileid: "51755267"
 |На странице **События Windows** укажите одно или несколько событий трассировки Windows, которые необходимо собирать с данными выборки.|-   [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |На странице **Счетчики Windows** выберите один или несколько счетчиков производительности операционной системы, значения которых будут добавляться в данные профилирования в качестве меток.|-   [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)|  
 |На странице **Дополнительно** укажите версию среды выполнения .NET Framework для профилирования, если модули приложения используют несколько версий. По умолчанию профилируется первая загруженная версия.|-   [Практическое руководство. Определение среды выполнения .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
-
-
-

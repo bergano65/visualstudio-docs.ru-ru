@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание и изменение конфигураций | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Создание и изменение конфигураций | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,15 +18,15 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767335"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
+# <a name="how-to-create-and-edit-configurations"></a>Как выполнить Создание и изменение конфигураций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете создать несколько конфигураций сборки для решения. Например, можно настроить отладочную сборку, которую ваши тест-инженеры могут использовать для поиска и устранения неполадок, или настроить разные типы сборок, которые можно передавать разным клиентам.  
@@ -58,7 +53,7 @@ ms.locfileid: "49887791"
   
      Откроется окно **Страницы свойств**.  
   
-     Можно задать свойства для конфигураций. Например, для конфигурации выпуска можно задать оптимизацию кода при сборке решения, а для конфигурации отладки — указать, что включен символ условной компиляции `DEBUG`. Дополнительные сведения о параметрах страницы свойств см. в разделе [Знакомство с конструктором проектов](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Можно задать свойства для конфигураций. Например, для конфигурации выпуска можно задать оптимизацию кода при сборке решения, а для конфигурации отладки — указать, что включен символ условной компиляции `DEBUG`. Дополнительные сведения о параметрах страницы свойств см. в разделе [Знакомство с конструктором проектов](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Создание и изменение конфигураций проектов  
   
@@ -128,10 +123,7 @@ ms.locfileid: "49887791"
   
 3.  В области **Конфигурации проектов** для каждого проекта выберите нужную **конфигурацию** и **платформу**, а также выберите, требуется ли выполнять его **сборку** и **развертывание**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
- [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

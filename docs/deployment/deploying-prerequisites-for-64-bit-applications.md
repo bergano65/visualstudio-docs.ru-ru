@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aab5fb7487cc2e79bc2e0e1a7a5dffce96447f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024556"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Предварительные условия для развертывания 64-разрядных приложений
 Развертывание приложений ClickOnce поддерживает установку приложений на 64-разрядные платформы. Целевыми платформами являются **x86** для 32-разрядных платформ, **x64** для машин, поддерживающих наборы инструкций AMD64 и EM64T, а также **Itanium** для 64-разрядного процессора Itanium.  

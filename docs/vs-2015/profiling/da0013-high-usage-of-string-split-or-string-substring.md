@@ -1,14 +1,9 @@
 ---
-title: DA0013. Интенсивное использование String.Split или String.Substring | Документы Майкрософт
-ms.custom: ''
+title: DA0013. Интенсивное использование String.Split или String.Substring | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -21,15 +16,15 @@ ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b469a9931ea48b60e49f9b5210e4e4db05fda362
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773164"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: интенсивное использование String.Split или String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013. Интенсивное использование String.Split или String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0013 |  
@@ -48,6 +43,3 @@ ms.locfileid: "51807478"
   
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения  
  Дважды щелкните сообщение в окне "Список ошибок", чтобы перейти к представлению [Сведения о функциях](../profiling/function-details-view.md) выборки данных профилирования. Проверьте вызовы функций, чтобы найти участки программы, в которых наиболее часто используются методы System.String.Split и System.String.Substr. По возможности старайтесь использовать методы IndexOf и IndexOfAny для поиска нужной подстроки в строке символов без создания нового экземпляра класса String.
-
-
-

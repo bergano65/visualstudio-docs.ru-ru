@@ -1,27 +1,22 @@
 ---
 title: Средства профилирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780848"
 ---
 # <a name="profiling-tools"></a>Средства профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ ms.locfileid: "51782106"
  [IntelliTrace](../debugger/intellitrace.md) позволяет записывать определенные события, проверять данные в окне **Локальные** во время событий отладчика и вызовов функций, а также отлаживать трудновоспроизводимые ошибки.  IntelliTrace является главным образом средством отладки, однако оно также предоставляет сведения, которые можно использовать для анализа производительности. Это средство можно использовать только в Visual Studio Enterprise с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET C#. IntelliTrace можно открыть из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**).  
   
 ## <a name="profiling-in-production"></a>Профилирование в рабочей среде  
- Для сбора сведений о профиле ЦП профилирование в рабочей среде рекомендуется выполнять из [командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) . В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Для сбора сведений о профиле ЦП профилирование в рабочей среде рекомендуется выполнять из [командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) . В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
  Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.  
@@ -101,8 +96,5 @@ ms.locfileid: "51782106"
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
-
-
-

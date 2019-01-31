@@ -1,24 +1,20 @@
 ---
 title: JavaScript
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-javascript
+ms.topic: conceptual
 ms.assetid: f3eee13e-30e4-4bc1-81f5-058d7e379b75
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7944572cda7f5d549355a25f05bcbcf897fe8530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990994"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834076"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ JavaScript — полноправный язык в Visual Studio. При нап
 
 - Для создания кроссплатформенных приложений с помощью Apache Cordova [доступны средства Visual Studio для Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Для создания приложений для платформ [Магазин Windows](http://dev.windows.com/develop) и [Windows Phone](http://dev.windows.com/develop) (а также универсальных приложений с поддержкой двух этих платформ) [доступны эти средства](http://dev.windows.com/en-us/develop/downloads).
+- Для создания приложений для платформ [Магазин Windows](http://dev.windows.com/develop) и [Windows Phone](http://dev.windows.com/develop) (а также универсальных приложений с поддержкой двух этих платформ) [доступны эти средства](http://dev.windows.com/develop/downloads).
 
 - Для создания облачных служб посетите [сайт Microsoft Azure](http://azure.microsoft.com/documentation/).
 

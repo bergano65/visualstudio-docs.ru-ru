@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"Расширение файла\" | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755010"
 ---
 # <a name="options-text-editor-file-extension"></a>"Параметры", "Текстовый редактор", "Расширение файла"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49204130"
  При выборе варианта "с кодировкой" при каждом открытии документа этого типа будет отображаться диалоговое окно, в котором можно выбрать схему кодировки для этого документа. Это может быть удобно при подготовке версий документов проекта, которые будут использоваться для других платформ или других целевых языков.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Расширение**  
@@ -61,8 +56,5 @@ ms.locfileid: "49204130"
  **Параметры файлов без расширений**  
  Предоставляет такой же список, что и **Редактор**. Выберите редактор или конструктор интегрированной среды разработки, в котором будут открываться файлы без расширений.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Управление режимами редактора](../../ide/how-to-manage-editor-modes.md)
-
-
-

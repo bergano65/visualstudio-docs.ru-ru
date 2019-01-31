@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера текстуры | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Создание простейшего шейдера текстуры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793438"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
+# <a name="how-to-create-a-basic-texture-shader"></a>Как выполнить Создание простейшего шейдера текстуры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера с одной текстурой. Этот шейдер задает окончательный цвет непосредственно в RGB-значениях и альфа-факторах, взятых из текстуры.  
@@ -70,11 +65,8 @@ ms.locfileid: "49898542"
   
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Редактор изображений](../designers/image-editor.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

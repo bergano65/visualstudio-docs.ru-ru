@@ -1,14 +1,9 @@
 ---
 title: -Rebuild (devenv.exe) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
 - rebuild Devenv switch (/rebuild)
@@ -19,13 +14,13 @@ ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58cd259f602d1f2364b37d8d6905753b2ce44068
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 027612d7ce4ee2ec933897b05f33f03e8a6df992
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788818"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,16 +36,16 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="arguments"></a>Аргументы  
  `SolnConfigName`  
- Обязательно. Имя конфигурации решения, которая будет применяться для перестроения решения, указанного в `SolutionName`.  
+ Обязательный. Имя конфигурации решения, которая будет применяться для перестроения решения, указанного в `SolutionName`.  
   
  `SolutionName`  
- Обязательно. Полный путь и имя для файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  /project `ProjName`  
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
+ Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
  /projectconfig `ProjConfigName`  
- Необязательный. Имя конфигурации сборки проекта, которая применяется при перестроении указанного `/project`.  
+ Необязательный параметр. Имя конфигурации сборки проекта, которая применяется при перестроении указанного `/project`.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -67,11 +62,8 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

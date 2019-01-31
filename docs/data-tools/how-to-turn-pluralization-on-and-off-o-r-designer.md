@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99dc1c6fefae880d10c1dedd080f9abbceba4d1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3aeddaa1b3589857124e4658c758a52def896acd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983577"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Как выполнить Включение и отключение преобразования во множественную форму (реляционный конструктор объектов)
 По умолчанию, при перетаскивании объектов базы данных, имена которых заканчиваются на s или ies из **обозревателя серверов** или **обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), имена сгенерированных классов сущностей изменяются с множественного числа в единственном числе. Это делается, чтобы более точно представить факт, что иллюстрируемый класс сущностей сопоставляется с единственной записью данных. Например, добавление `Customers` таблицы **реляционный конструктор объектов** приводит класс сущностей с именем `Customer` так, как класс будет содержать данные для одного клиента.

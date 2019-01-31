@@ -1,24 +1,19 @@
 ---
 title: Включение закодированных тестов пользовательского интерфейса для элементов управления | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1e24e9e405dfeab18ca0e55a617857d73ba4234e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766975"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ ms.locfileid: "49848544"
     }  
     ```  
   
-2.  Переопределите свойства, методы и <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> объекта специальных возможностей.  
+2.  Переопределите свойства, методы и <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A><xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> объекта специальных возможностей.  
   
 3.  Реализуйте другой объект специальных возможностей для дочернего элемента управления и переопределите свойство дочернего элемента управления <xref:System.Windows.Forms.Control.AccessibilityObject%2A> для получения этого объекта специальных возможностей.  
   
@@ -541,11 +536,8 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:System.Windows.Forms.AccessibleObject>   
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
-
-
-

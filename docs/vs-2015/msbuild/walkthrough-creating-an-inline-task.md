@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Создание встроенной задачи | Документация Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание встроенной задачи | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,13 +11,13 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800496"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Пошаговое руководство. Создание встроенной задачи
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,10 +254,7 @@ ms.locfileid: "49840722"
   
  `</Code>`  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Встроенные задачи MSBuild](../msbuild/msbuild-inline-tasks.md)   
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-

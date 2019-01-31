@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 724f250e6f41203bc1fe56c88703609e67072783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeb64c445acc0881ce808f9261c42f5205c4d979
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009522"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Отладка приложений ASP.NET, развернутых
 Чтобы использовать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для отладки развернутого приложения, необходимо выполнить присоединение к рабочему процессу [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и убедиться в том, что отладчик имеет доступ к символам для приложения. Кроме того, необходимо найти и открыть исходные файлы для данного приложения. Дополнительные сведения см. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [как: Поиск имени процесса ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), и [требования к системе](../debugger/aspnet-debugging-system-requirements.md).  

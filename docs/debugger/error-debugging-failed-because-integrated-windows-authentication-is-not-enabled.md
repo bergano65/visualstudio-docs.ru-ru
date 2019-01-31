@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7235985db460c4cddf53c8e9d30c33b5b298bf44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018466"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows
 Проверка подлинности пользователя, запросившего отладку, была прервана ошибкой проверки подлинности. Это может произойти при попытке выполнить пошаговую отладку веб-приложения или веб-службы XML. Одна из причин этой ошибки в том, что встроенная проверка подлинности Windows не включена. Чтобы включить ее, следуйте шагам в разделе "Включение встроенной проверки подлинности Windows".  

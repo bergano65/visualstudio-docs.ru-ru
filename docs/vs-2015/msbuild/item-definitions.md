@@ -1,27 +1,22 @@
 ---
 title: Определения элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796678"
 ---
 # <a name="item-definitions"></a>Определения элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49866575"
 > [!NOTE]
 >  Во многих примерах в этом разделе показан элемент ItemDefinitionGroup, но соответствующее определение ItemGroup опущено для ясности.  
   
- Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Пример:  
+ Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Например:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -67,7 +62,7 @@ ms.locfileid: "49866575"
  В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.  
   
 > [!NOTE]
->  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
+>  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и \/свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
   
 ## <a name="value-sources"></a>Источники значений  
  Значения для метаданных, определенных в ItemDefinitionGroup, могут поступать из множества различных источников:  
@@ -98,7 +93,7 @@ ms.locfileid: "49866575"
   
 - Последняя спецификация имеет приоритет.  
   
-  Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Пример:  
+  Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Например:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -116,7 +111,7 @@ ms.locfileid: "49866575"
   
  В этом примере метаданные o добавляются к m и n.  
   
- Кроме того, могут быть также добавлены ранее определенные значения метаданных. Пример:  
+ Кроме того, могут быть также добавлены ранее определенные значения метаданных. Например:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -152,7 +147,7 @@ ms.locfileid: "49866575"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
- Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:  
+ Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Например:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -167,7 +162,7 @@ ms.locfileid: "49866575"
 > [!NOTE]
 >  В условиях поддерживаются только локальные ссылки на метаданные.  
   
- Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Пример:  
+ Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Например:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -183,7 +178,7 @@ ms.locfileid: "49866575"
  В этом примере элемент «i» ссылается на элемент «test» в условии.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Переопределение и удаление метаданных  
- Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:  
+ Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Например:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -234,7 +229,7 @@ ms.locfileid: "49866575"
 </ItemDefinitionGroup>  
 ```  
   
- Начиная с версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Пример:  
+ Начиная с версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Например:  
   
 ```  
 <ItemGroup>  
@@ -245,8 +240,5 @@ ms.locfileid: "49866575"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)
-
-
-

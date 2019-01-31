@@ -1,14 +1,9 @@
 ---
 title: Общие свойства проектов MSBuild | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758474"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ ms.locfileid: "49300057"
 |DisableFastUpToDateCheck|Логическое значение, применимое только к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Диспетчер сборок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] использует процесс FastUpToDateCheck, чтобы определить, требуется ли пересобрать проект для сохранения его актуальности. Это позволяет получить результат быстрее, чем при использовании [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Задание для свойства DisableFastUpToDateCheck значения `true` позволяет обойти диспетчер сборок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и принудить его использовать [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для определения актуальности проекта.|  
 |DocumentationFile|Имя файла, создаваемого в качестве файла XML-документации. Это имя включает только имя файла и не содержит информации о пути.|  
 |ErrorReport|Указывает, как задача компилятора должна сообщать о внутренних ошибках компилятора. Допустимые значения: "prompt", "send" и "none". Это свойство эквивалентно переключателю `/errorreport` компилятора.|  
-|ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание.** ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
+|ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание:**  ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
 |FileAlignment|Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора.|  
 |FrameworkPathOverride|Задает расположение библиотек mscorlib.dll и microsoft.visualbasic.dll. Этот параметр эквивалентен переключателю `/sdkpath` компилятора vbc.exe.|  
 |GenerateDocumentation|Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|  
@@ -94,7 +89,7 @@ ms.locfileid: "49300057"
 |OutputType|Задает формат выходного файла. Этот параметр может принимать одно из следующих значений:<br /><br /> —   Library. Создание библиотеки кода. (Значение по умолчанию.)<br />—   Exe. Создание консольного приложения.<br />—   Module. Создание модуля.<br />—   Winexe. Создание программы для Windows.<br /><br /> Это свойство эквивалентно переключателю `/target` компилятора vbc.exe.|  
 |OverwriteReadOnlyFiles|Логическое значение, указывающее, может ли сборка перезаписывать файлы, доступные только на чтение, или должна выдавать ошибку.|  
 |PdbFile|Имя выдаваемого PDB-файла. Это свойство эквивалентно переключателю `/pdb` компилятора csc.exe.|  
-|Платформа|Операционная система, для которой выполняется сборка. Допустимые значения: "Любой ЦП", "x86" и "x64".|  
+|Platform|Операционная система, для которой выполняется сборка. Допустимые значения: "Любой ЦП", "x86" и "x64".|  
 |RemoveIntegerChecks|Логическое значение, указывающее, включены ли проверки ошибок переполнения для целых чисел. Значение по умолчанию — `false`. Это свойство эквивалентно переключателю `/removeintchecks` компилятора vbc.exe.|  
 |SGenUseProxyTypes|Логическое значение, указывающее, следует ли создавать прокси-типы с помощью SGen.exe.<br /><br /> Цель SGen использует это свойство для установки флага UseProxyTypes. По умолчанию это свойство имеет значение true, и пользовательского интерфейса для изменения этого значения не существует. Чтобы создать сборку сериализации для типов, не относящихся к веб-службам, добавьте это свойство в файл проекта и присвойте ему значение false, прежде чем импортировать Microsoft.Common.Targets или C#/VB.targets.|  
 |SGenToolPath|Необязательный путь, указывающий расположение, откуда можно получить SGen.exe при переопределении текущей версии SGen.exe.|  
@@ -134,8 +129,5 @@ ms.locfileid: "49300057"
 |Win32Manifest|Имя файла манифеста, который необходимо внедрить в окончательную сборку. Этот параметр эквивалентен переключателю компилятора `/win32Manifest`.|  
 |Win32Resource|Имя файла ресурса Win32, который необходимо внедрить в окончательную сборку. Этот параметр эквивалентен переключателю компилятора `/win32resource`.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Профилирование в кластерах высокопроизводительных вычислительных систем (HPC) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802318"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ ms.locfileid: "51809161"
 |||  
 |-|-|  
 |*%HeadNode%*|Имя головного узла кластера.|  
-|*%FxPath%*|Путь к установщику [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. На установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] этот путь — WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Путь к автономной версии установщика средств профилирования. На установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] этот путь — Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Путь к установщику [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. На [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] установочного носителя, путь: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Путь к автономной версии установщика средств профилирования. На [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] установочного носителя, путь: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Профилирование в вычислительном узле HPC  
  Чтобы задать кластер HPC и целевые данные, нужно настроить сеанс профилирования с помощью мастера производительности HPC. На страницах свойств сеанса производительности можно задать дополнительные параметры. Средства профилирования автоматически развертывают необходимые целевые двоичные файлы и запускают профилировщик и приложение HPC.  
@@ -131,7 +126,7 @@ ms.locfileid: "51809161"
   
 ### <a name="hpc-launch-properties"></a>Свойства запуска HPC  
   
-|Свойство.|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
 |**Головной узел**|Задает компьютер, выполняющий функцию головного узла HPC в сеансе профилирования.|  
 |**Число процессов**|Задает число экземпляров приложения, которые необходимо запустить в профилируемом приложении.|  
@@ -142,7 +137,7 @@ ms.locfileid: "51809161"
   
 ### <a name="advanced-properties"></a>Дополнительные свойства  
   
-|Свойство.|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
 |**Имя проекта**|Имя текущего проекта или решения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].|  
 |**Выполнить очистку после остановки профилировщика**|Если этот параметр активен, удаляет двоичные файлы, развернутые в каталоге выполнения. Файлы и каталоги, созданные пользовательской программой, на этом этапе не удаляются. Если каталог выполнения и каталог развертывания были созданы интерфейсом IDE, IDE пытается их удалить, однако если в этих каталогах есть файлы, развернутые не интерфейсом IDE, он этого не делает.|  
@@ -155,6 +150,3 @@ ms.locfileid: "51809161"
 |**Аргументы скрипта предварительного профилирования**|Задает аргументы, передаваемые скрипту предварительного профилирования.|  
 |**Скрипт пост-профилирования**|Задает путь и имя файла скрипта для запуска на локальном компьютере разработки после завершения сеанса профилирования.|  
 |**Аргументы скрипта пост-профилирования**|Задает аргументы, передаваемые скрипту пост-профилирования.|
-
-
-

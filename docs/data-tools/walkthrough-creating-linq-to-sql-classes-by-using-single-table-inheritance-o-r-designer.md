@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be750ec83c10b5b052b7ac378d4e77438e60edbe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042560"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночных таблиц, как именно обычно осуществляется в реляционных системах. Это пошаговое руководство разворачивается после универсальных шагов, описанных в [как: Настройка наследования с помощью реляционного конструктора](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и обеспечивает некоторые реальные данные, чтобы продемонстрировать использование наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].

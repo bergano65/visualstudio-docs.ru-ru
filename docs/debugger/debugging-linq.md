@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a21fb412b5b207dca78c70561b8b25199ae3ac96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976398"
 ---
 # <a name="debugging-linq"></a>Отладка LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с некоторыми ограничениями поддерживает отладку кода встроенного языка запросов (LINQ). Большинство возможностей отладки работают с операторами LINQ, включая пошаговое выполнение, установку точек останова и просмотр результатов в окнах отладчика. В этом разделе описаны основные ограничения, связанные с отладкой кода LINQ.  

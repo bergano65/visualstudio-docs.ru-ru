@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0b985d7629ec282de4946ab89fef06e97c5921
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef19b966bb9d934975eebd00399b401e768922d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889018"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011680"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Как выполнить задание режима установки ClickOnce: автономного или через Интернет
 `Install Mode` Для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения определяет, будут ли приложения доступны в автономном или интерактивном режиме. При выборе **приложение доступно только из сети**, пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расположение публикации (веб-страницы или общей папки) для запуска приложения. При выборе **приложение будет доступно в автономном режиме**, оно добавляет элементы к **запустить** меню и **Установка и удаление программ** диалоговое окно; пользователь — может запустить приложение, когда они не подключены.  

@@ -1,14 +1,9 @@
 ---
 title: Страница "Мои расширения", конструктор проектов (Visual Basic) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc4f9e4eee1b0613906c3cc08227a4f2157fb296
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65925a0ee6b7247ecd85f9db9536ff8519a01a33
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803166"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Страница "Мои расширения" конструктор проектов (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,8 @@ ms.locfileid: "49227057"
  **Удалить расширение**  
  В списке **Расширения пространства имен My** выберите одну или несколько ссылок, после чего нажмите эту кнопку, чтобы удалить соответствующие расширения пространства имен `My` из проекта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Расширение пространства имен My в Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
  [Упаковка и развертывание пользовательских расширений пространства имен My](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
  [Расширение модели приложения Visual Basic](http://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   
  [Настройка доступа к объектам через My](http://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)
-
-
-

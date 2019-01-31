@@ -1,14 +1,9 @@
 ---
 title: -Build (devenv.exe) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], command-line
 - /build Devenv switch
@@ -18,13 +13,13 @@ ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 070dcb383b25315e363b822da87409eb953a9ac7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58e48676cb8719cca5da1989342642669c6565cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778488"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,16 +35,16 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
   
 ## <a name="arguments"></a>Аргументы  
  `SolutionName`  
- Обязательно. Полный путь и имя для файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  `SolnConfigName`  
- Обязательно. Имя конфигурации решения, которая будет применяться для сборки решения, указанного в `SolutionName`.  
+ Обязательный. Имя конфигурации решения, которая будет применяться для сборки решения, указанного в `SolutionName`.  
   
  /project `ProjName`  
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
+ Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
  /projectconfig `ProjConfigName`  
- Необязательный. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.  
+ Необязательный параметр. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.  
   
 ## <a name="remarks"></a>Примечания  
  Этот параметр выполняет те же функции, что и команда меню **Собрать решение** в интегрированной среде разработки (IDE).  
@@ -67,12 +62,9 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Building and Cleaning Projects and Solutions in Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

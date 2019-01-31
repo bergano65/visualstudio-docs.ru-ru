@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948730"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], также известных как веб-формы. Оно содержит описание запуска и остановки выполнения, определения точек останова и проверки значений переменных в окне **Контрольное значение**.

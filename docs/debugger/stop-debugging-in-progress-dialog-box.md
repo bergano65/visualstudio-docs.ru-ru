@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed7ef49d-e25f-4a4d-9396-9bc7b4143117
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3abce02ba1804ff619a7d0f24da35747c2f9ff91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af69cd07087da19205ede3bc6576f87bd24279c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979027"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Остановка отладки - диалоговое окно
 Это диалоговое окно появляется, когда отладчик пытается остановить сеанс отладки, но на остановку требуется некоторое время. Обычно остановка сеанса отладки происходит очень быстро и это диалоговое окно не появляется. Но в ряде случаев требуется дополнительное время на то, чтобы отсоединиться от всех отлаживаемых процессов. Если остановка сеанса отладки длится дольше нескольких секунд (или если возникает ошибка отсоединения), появляется это диалоговое окно. Если это случается часто, это может быть связано с внутренней проблемой и, возможно, следует связаться со службой технической поддержки.  

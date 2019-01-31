@@ -1,27 +1,22 @@
 ---
-title: Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание простого приложения с визуальным C# или Visual Basic | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802620"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с визуальным C# или Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Выполняя данное пошаговое руководство, вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для создания приложений с помощью Visual Studio. Вам предстоит создать простое приложение типа “Hello, World”, разработать пользовательский интерфейс, добавить код и отладить ошибки, одновременно приобретая навыки работы в интегрированной среде разработки (IDE).  
@@ -35,24 +30,24 @@ ms.locfileid: "49851690"
  [Отладка и тестирование приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](http://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](http://www.asp.net/get-started)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](http://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](http://www.asp.net/get-started)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_ConfigureIDE"></a> Настройка интегрированной среды разработки (IDE)  
  При первом запуске Visual Studio будет предложено войти в это приложение с использованием учетной записи Майкрософт: [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Вход в Visual Studio). Необязательно входить сразу, можно сделать это позже.  
   
  После запуска Visual Studio далее необходимо выбрать сочетание предопределенных параметров интегрированной среды разработки. Каждое сочетание параметров было разработано так, чтобы сделать разработку приложений более простой.  
   
- Это пошаговое руководство предполагает, что действуют **Обычные параметры разработки**, что соответствует минимальному объему настройки интегрированной среды разработки. Если вы уже выбрали C# или Visual Basic (подходит любой вариант), нет необходимости изменять свои настройки.  Если вы хотите изменить настройки, можно воспользоваться **Мастером импорта и экспорта параметров**. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Это пошаговое руководство предполагает, что действуют **Обычные параметры разработки**, что соответствует минимальному объему настройки интегрированной среды разработки. Если вы уже выбрали C# или Visual Basic (подходит любой вариант), нет необходимости изменять свои настройки.  Если вы хотите изменить настройки, можно воспользоваться **Мастером импорта и экспорта параметров**. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  После открытия Visual Studio вы увидите окна инструментов, меню и панели инструментов, а также основную область окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в верхней его части. В центре окна приложения находится **Начальная страница**. При загрузке решения или проекта редакторы и конструкторы отображаются в области **Начальной страницы** . При разработке приложения чаще всего используется именно эта область.  
   
- Рисунок 2. Интегрированная среда разработки Visual Studio  
+ Рис. 2. Интегрированная среда разработки Visual Studio  
   
  ![Интегрированная среда разработки, в которой установлены общие параметры](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
  С помощью диалогового окна **Параметры** можно дополнительно настроить Visual Studio, например изменить в редакторе начертание и размер шрифта текста или изменить цветовую тему интегрированной среды разработки. В зависимости от примененного сочетания параметров некоторые элементы в этом диалоговом окне могут не отображаться автоматически. Чтобы отображались все возможные параметры, установите флажок **Показать все параметры** .  
   
- Рисунок 3. Диалоговое окно "Параметры"  
+ Рис. 3. Параметры - диалоговое окно  
   
  ![Диалоговое окно "Параметры" с флажком "Показать все параметры"](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -72,7 +67,7 @@ ms.locfileid: "49851690"
   
    ![Интегрированная среда разработки с примененной темной темой](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   На изображениях в остальной части этого пошагового руководства используется светлая тема. Дополнительные сведения о настройке IDE см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)(Настройка параметров разработки в Visual Studio).  
+   На изображениях в остальной части этого пошагового руководства используется светлая тема. Дополнительные сведения о настройке IDE см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Создание простого приложения  
   
@@ -97,9 +92,9 @@ ms.locfileid: "49851690"
   
     ![Создание проекта WPF Visual C&#35;, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio создает решение и проект HelloWPFApp, и **Обозреватель решений** показывает различные файлы. Конструктор WPF отображает представление конструирования и представление XAML файла MainWindow.xaml в одном разделенном представлении. Сдвигая разделитель, можно делать любое из представлений больше или меньше.  Можно выбрать для просмотра только визуальное представление или только представление XAML. (Дополнительные сведения см. в разделе [Конструктор WPF для разработчиков Windows Forms](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca).) В **Обозревателе решений**отображаются следующие элементы.  
+   Visual Studio создает решение и проект HelloWPFApp, и **Обозреватель решений** показывает различные файлы. Конструктор WPF отображает представление конструирования и представление XAML файла MainWindow.xaml в одном разделенном представлении. Сдвигая разделитель, можно делать любое из представлений больше или меньше.  Можно выбрать для просмотра только визуальное представление или только представление XAML. (Дополнительные сведения см. в разделе [Конструктор WPF для разработчиков Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) В **Обозревателе решений**отображаются следующие элементы.  
   
-   Рисунок 5. Элементы проекта  
+   Рис. 5. Элементы проекта  
   
    ![Обозреватель решений с добавленными файлами HelloWPFApp](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -137,7 +132,7 @@ ms.locfileid: "49851690"
   
    Окно должно выглядеть так, как показано на следующем рисунке:  
   
-   Рисунок 7. Окно Greetings с элементом управления TextBlock  
+   Рис 7. Окно Greetings с элементом управления TextBlock  
   
    ![Элемент управления TextBlock в форме Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -167,7 +162,7 @@ ms.locfileid: "49851690"
   
     Окно должно выглядеть следующим образом:  
   
-    Рисунок 8. элементы управления RadioButton в окне Greetings.  
+    Рис. 8. Элементы управления RadioButton в окне Greetings.  
   
     ![Форма Greetings с блоком текста и двумя переключателями](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -195,7 +190,7 @@ ms.locfileid: "49851690"
   
    Окно должно выглядеть так, как показано на следующем рисунке.  
   
-   Рисунок 9. Окончательный пользовательский интерфейс Greetings  
+   цифра Окончательный пользовательский Интерфейс Greetings  
   
    ![Форма Greetings с метками элементов управления](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -264,7 +259,7 @@ ms.locfileid: "49851690"
   
     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Появится диалоговое окно, показывающее, что произошло исключение IOException "Не удалось обнаружить ресурс ‘mainwindow.xaml’".  
+    Появится диалоговое окно, показывающее, что произошло исключение IOException: "Не удается найти ресурс mainwindow.xaml".  
   
 2. Нажмите кнопку **ОК** , а затем остановите отладчик.  
   
@@ -336,10 +331,7 @@ ms.locfileid: "49851690"
   
    Поздравляем с завершением этого пошагового руководства! Построенный EXE-файл находится в каталоге решения и проекта (... \HelloWPFApp\HelloWPFApp\bin\Release\\). Чтобы изучить больше примеров, см. статью [Примеры Visual Studio](../ide/visual-studio-samples.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Новые возможности Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   
  [Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
  [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)
-
-
-

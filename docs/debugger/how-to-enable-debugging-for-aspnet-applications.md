@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881105"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035254"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Отладка приложений ASP.NET или ASP.NET Core в Visual Studio
 
@@ -116,7 +116,7 @@ IIS Express используется по умолчанию и предвари
 
 1. В Visual Studio откройте проект ASP.NET *web.config* файл.  
   
-2. *Web.config* — это файл XML, поэтому он содержит вложенные разделы, помеченные тегами. Найдите `configuration/system.web/compilation` раздел. (Если `compilation` элемент не существует, создайте его.)
+2. *Web.config* — это файл XML, поэтому он содержит вложенные разделы, помеченные тегами. Найдите раздел `configuration/system.web/compilation`. (Если `compilation` элемент не существует, создайте его.)
   
 3. Убедитесь, что `debug` атрибут в `compilation` элементу присваивается `true`. (Если `compilation` элемент не содержит `debug` атрибута, добавьте его и присвойте ему значение `true`.) 
   

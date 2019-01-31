@@ -1,31 +1,27 @@
 ---
 title: Профилирование нагрузочных тестов ASP.NET | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ec89f50fb809b379f3c1c2f0aaac49bd02ee1b15
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1c422b1bb2e41e3b1a848d3957530f43177d9c29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791809"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Профилирование нагрузочных тестов ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Данные профилирования можно собирать из автоматических веб-тестов [!INCLUDE[TCMext](../includes/tcmext-md.md)], выполняемых для проектов веб-сайтов ASP.NET. Собирать можно данные выборки и данные об уровневом взаимодействии. Дополнительные сведения см. в следующих разделах:
 
- [Практическое руководство. Выполнение сеанса производительности веб-приложения из редактора веб-теста производительности](/previous-versions/ff356203(v=vs.100))
+ [Практическое руководство. Запуск сеанса анализа производительности для веб-приложения из редактора веб-тестов производительности](/previous-versions/ff356203(v=vs.100))
 
  [Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 

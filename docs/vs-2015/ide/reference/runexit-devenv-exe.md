@@ -1,14 +1,9 @@
 ---
 title: -Runexit (devenv.exe) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
 - Devenv, /runexit switch
@@ -17,13 +12,13 @@ ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86a99aed7876454d09e5bb0157f6dcaaa7fb4072
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793156"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +34,10 @@ devenv /runexit {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>Аргументы  
  `SolutionName`  
- Обязательно. Полный путь и имя для файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  `ProjectName`  
- Обязательно. Полный путь и имя для файла проекта.  
+ Обязательный. Полный путь и имя для файла проекта.  
   
 ## <a name="remarks"></a>Примечания  
  Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр свертывает интегрированную среду разработки во время выполнения проекта или решения и закрывает ее их завершения.  
@@ -58,12 +53,9 @@ devenv /runexit {SolutionName|ProjectName}
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

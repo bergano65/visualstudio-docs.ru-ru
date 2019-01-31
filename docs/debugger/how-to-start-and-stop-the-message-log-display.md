@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c0f3d2cda787d751f45ae2da9344b62f89ac50c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025466"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Как выполнить запуск и остановку записи сообщений
 Когда [представления сообщений](../debugger/messages-view.md) окно не активно, **начать ведение журнала** или **остановить ведение журнала** параметр появляется в Spy ++ **сообщений** меню и соответствующий **начать ведение журнала** или **остановить ведение журнала** кнопки на панели инструментов становится активным.  

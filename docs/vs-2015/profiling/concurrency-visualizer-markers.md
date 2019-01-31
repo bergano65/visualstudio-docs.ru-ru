@@ -1,27 +1,22 @@
 ---
 title: Маркеры визуализатора параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4fa2a57d08f2b86fec573f02129a326907e3e3a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795351"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51790452"
   
 - [Среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
-- [Поддержка маркеров сценария](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Поддержка маркеров сценария](http://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
 - [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
@@ -68,11 +63,8 @@ ms.locfileid: "51790452"
 ## <a name="markers-from-eventsource"></a>Маркеры из EventSource  
  Визуализатор параллелизма может также отображать события EventSource.  Дополнительные сведения см. в статье [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Визуализация событий EventSource как маркеров).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Flag Markers](../profiling/flag-markers.md)  (Маркеры флагов)  
  [Message Markers](../profiling/message-markers.md)  (Маркеры сообщений)  
  [Span Markers](../profiling/span-markers.md)  (Маркеры диапазонов)  
  [Визуализация событий EventSource как маркеров](../profiling/visualizing-eventsource-events-as-markers.md)
-
-
-

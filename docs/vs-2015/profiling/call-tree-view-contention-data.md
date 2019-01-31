@@ -1,27 +1,22 @@
 ---
 title: Представление в виде дерева вызовов — данные о конфликтах | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791657"
 ---
 # <a name="call-tree-view---contention-data"></a>Представление в виде дерева вызовов — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51816467"
   
  Когда вы выбираете корневой узел, из представления удаляются все записи, кроме поддерева этого узла. Чтобы восстановить исходное значение корневого узла, щелкните правой кнопкой мыши в окне представления в виде дерева вызовов и выберите **Сбросить корень**.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время, в течение которого экземпляры этой функции в этом пути выполнения были заблокированы при выполнении сеанса профилирования. Сюда не включается время блокировки дочерних функций, которые были вызваны этой функцией.|  
 |**Эксклюзивное время блокировки %**|Доля времени в процентах от общего времени блокировки в сеансе профилирования, в течение которого эта функция была эксклюзивно заблокирована в этом пути выполнения.|  
@@ -60,13 +55,10 @@ ms.locfileid: "51816467"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Call Tree View](../profiling/call-tree-view.md)  (Представление "Дерево вызовов")  
+ [Представление "Дерево вызовов"](../profiling/call-tree-view.md)   
  [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
  [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  (Представление "Дерево вызовов" — выборка)  
  [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-sampling-data.md)
-
-
-

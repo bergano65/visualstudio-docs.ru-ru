@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023266"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Инструменты R для Visual Studio. Примеры проектов
 
@@ -48,7 +48,7 @@ ms.locfileid: "53837463"
 
     ![Пример построения при тестировании производительности](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` создает модель прогнозирования спроса на прокат велосипедов на основе набора исторических данных с помощью Microsoft ML Server. 
+- `Bike_Rental_Estimation_with_MRS` создает модель прогнозирования спроса на прокат велосипедов на основе набора исторических данных с помощью Microsoft ML Server.
 
 - В `Data_Exploration` имеется три скрипта.
 
@@ -59,7 +59,7 @@ ms.locfileid: "53837463"
       ![Выходные данные примера Using ggplot2.R](media/samples-3d-interactive.png)
 
 - В `Datasets` имеется три файла *CSV*, которые используются в других примерах.
-- `Flight_Delays_Prediction_with_R` и `Flight_Delays_Prediction_with_MRS` демонстрируют, как спрогнозировать задержку рейсов с помощью R, машинного обучения, исторических данных о прибытии по графику и данных о погоде. 
+- `Flight_Delays_Prediction_with_R` и `Flight_Delays_Prediction_with_MRS` демонстрируют, как спрогнозировать задержку рейсов с помощью R, машинного обучения, исторических данных о прибытии по графику и данных о погоде.
 - `Machine learning` содержит три примера для обучения прогнозированию задержки рейсов, роста цен на недвижимость и проката велосипедов. Все они демонстрируют применение R и Microsoft ML Server для решения реальных проблем. Они также призваны показать, как использовать несколько популярных моделей машинного обучения и развернуть их в качестве веб-службы Azure с помощью рабочей области [Машинное обучение Azure](https://azure.microsoft.com/services/machine-learning/).
 
 - `R_MRO_MRS_Comparison` — это сравнение сходства и различий R, Microsoft R Open и Microsoft ML Server, состоящее из шести частей (с командами, синтаксисом, конструкциями и данными о производительности).

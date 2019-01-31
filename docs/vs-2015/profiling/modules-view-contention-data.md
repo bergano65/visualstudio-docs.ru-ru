@@ -1,27 +1,22 @@
 ---
 title: Представление "Модули" — данные по состязаниям | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c98689007a9497a4186dc19086ec46588b0a842
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771044"
 ---
 # <a name="modules-view---contention-data"></a>Представление "Модули" — данные по состязаниям
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51759410"
   
  В приведенной ниже таблице описаны значения столбцов в представлении "Модули" данных по состязаниям.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|— Для функции — время блокировки выполнения кода в теле функции. Время блокирования в функциях, которые были вызваны данной функцией, не включается.<br />— Для модуля — сумма исключающего времени блокировки функций в модуле.<br />— Для строки или инструкции — время блокировки выполнения этой строки или инструкции.|  
 |**Эксклюзивное время блокировки %**|— Для функции или модуля — процент общего времени блокировки в ходе сеанса профилирования, которое являлось исключающим временем блокировки этой функции или модуля.<br />— Для строки или инструкции — процент общего времени блокировки во время сеанса профилирования, в течение которого выполнение этой строки или инструкции было заблокировано.|  
@@ -50,13 +45,10 @@ ms.locfileid: "51759410"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Модули"](../profiling/modules-view.md)   
  [Представление "Модули" — инструментирование](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Представление "Модули"](../profiling/modules-view-instrumentation-data.md)   
  [Представление "Модули"](../profiling/modules-view-sampling-data.md)
-
-
-

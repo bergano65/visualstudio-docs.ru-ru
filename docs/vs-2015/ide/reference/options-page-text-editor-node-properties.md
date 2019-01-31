@@ -1,14 +1,9 @@
 ---
 title: Страница "Параметры", свойства узла "Текстовый редактор" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767996"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ ms.locfileid: "49241908"
 |WordWrap|Get/Set (Boolean)|Определяет, будут ли в представлении отображаться длинные строки с переносом на границах слов. Если этому свойству присвоить значение `true`, то элементу свойства `VirtualSpace` (в этом списке) будет присвоено значение `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Отображает глиф в конце строки; это указывает, что строка переносится на следующую строку.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Определяет, должен ли редактор подчеркивать URL-адреса и позволять переходить по данному URL-адресу посредством щелчка левой кнопкой мыши, сделанного в зарегистрированном системном веб-браузере.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов.: Default, Smart или None.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов: Default, Smart или None.|  
 |TabSize|Get/Set (Long)|Представляет величину шага табуляции в знаках. Не допускается использовать целое число вне диапазона от 1 до 60 (включительно).|  
 |InsertTabs|Get/Set (Boolean)|`True` означает использование знаков табуляции в отступах.|  
 |IndentSize|Get/Set (Long)|Представляет величину одного уровня отступа в знаках. Не допускается использовать целочисленное значение вне диапазона от 1 до 60 (включительно).|  
@@ -71,11 +66,8 @@ ms.locfileid: "49241908"
 |ShowNavigationBar|Get/Set (Boolean)|Определяет, появляются ли раскрывающиеся списки и кнопки вверху окон редактора.|  
 |CutCopyBlankLines|Get/Set (Boolean)|Вырезает или копирует пустые строки при их выборе.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Управление параметрами](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [Определение имен элементов свойств на страницах параметров](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Страница "Параметры", свойства узла "Среда"](../../ide/reference/options-page-environment-node-properties.md)   
  [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

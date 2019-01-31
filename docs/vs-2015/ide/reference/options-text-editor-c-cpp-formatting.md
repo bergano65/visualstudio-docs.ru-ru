@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"C/C++\", \"Форматирование\" | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
@@ -20,13 +15,13 @@ ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a8589696e669c83b65951d81d155033d45533710
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770643"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49237007"
  Чтобы открыть эту страницу, в диалоговом окне **Параметры** в левой области разверните **Текстовый редактор**, **C/C++** и щелкните **Форматирование**.  
   
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>Параметры C/C++  
  **Включить автоматические подсказки с краткими сведениями**  
@@ -83,9 +78,6 @@ ms.locfileid: "49237007"
   
 -   [Оператор while (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   
  [Использование технологии IntelliSense](../../ide/using-intellisense.md)
-
-
-

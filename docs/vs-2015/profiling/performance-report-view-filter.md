@@ -1,14 +1,9 @@
 ---
 title: Фильтр представления отчетов о производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
@@ -16,13 +11,13 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 26ab5282ece99700b035c45abe4f3a7c6ffee82a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774637"
 ---
 # <a name="performance-report-view-filter"></a>Фильтр представления отчетов о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51754298"
   
  Для уточнения результатов можно изменить любое из предложений фильтра. Ниже приведены столбцы, доступные для построителя фильтров.  
   
-|Элемент фильтра|Описание:|  
+|Элемент фильтра|Описание|  
 |-----------------|-----------------|  
 |И/ИЛИ|Выберите **и**, если результат должен совпадать с ситуацией, когда данное и следующее предложение являются истинными. Выберите **или**, если результат должен совпадать либо с истинностью данного предложения, либо с истинностью следующего.|  
 |Поле|Выберите поле, которое будет использоваться в предложении фильтра из списка доступных полей данных в текущем файле отчета.|  
@@ -44,9 +39,6 @@ ms.locfileid: "51754298"
   
  Чтобы сохранить фильтр, нажмите кнопку **Экспортировать фильтр** на панели инструментов отчета о производительности и затем укажите расположение и имя VSPF-файла. Чтобы загрузить ранее сохраненный фильтр, нажмите кнопку **Импортировать фильтр** и выберите сохраненный файл фильтра. Файлы фильтра могут также использоваться для фильтрации файлов на компьютере, на котором установлена автономная версия средств профилирования. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Анализ данных средств производительности](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
 title: Создание проекта модульного теста | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92520f2b092d3ef8b3daa3f4ffa41139a18d6641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5adef222f42c3dc2b6035bfa7ab25441051597e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804350"
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49883423"
   **Выполнение модульных тестов**  
   
   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)
-
-
-
