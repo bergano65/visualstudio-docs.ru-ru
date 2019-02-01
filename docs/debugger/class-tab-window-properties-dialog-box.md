@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c02e529740bdfe5e2b0ed9bdfecd077ee05f4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaa02f87a0bb9737112121343226c2dc0e45937a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015476"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Вкладка "Класс" диалогового окна "Свойства окна"
 Используйте **класс** вкладку для отображения сведений о классе выбранное окно. Для отображения [диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление Windows](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  

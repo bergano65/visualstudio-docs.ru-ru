@@ -23,17 +23,17 @@ helpviewer_keywords:
 ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 8a9d649ddf3bb9814f837c132bef7d96574336f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925538"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Как выполнить Отладка клиентов и серверов COM с помощью отладки RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Как выполнить  Отладка клиентов и серверов COM с помощью отладки RPC
 Для отладки клиент-серверных приложений COM можно использовать отладку удаленного вызова процедур (RPC). Для этого необходимо включить отладку RPC. Если отладка RPC включена, то при заходе в вызов сервера со стороны клиента отладчик подключается к серверу, позволяя выполнить отладку кода. Когда отладчик подключен, все его функции можно использовать для отладки процессов как на стороне сервера, так и на стороне клиента.  
   
 ### <a name="to-enable-rpc-debugging"></a>Включение отладки RPC  

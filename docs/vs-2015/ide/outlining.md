@@ -1,14 +1,9 @@
 ---
 title: Структурирование | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - Visual Studio, expand/collapse code
@@ -21,13 +16,13 @@ ms.assetid: d1476758-9d35-4d74-b63c-310661932ecd
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767583"
 ---
 # <a name="outlining"></a>структуризация
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,4 @@ ms.locfileid: "49282520"
 |Свернуть блок:\<логическая граница настроек>|(Visual C++) Сворачивает область в функции, в которой находится точка вставки. Например, если точка вставки находится внутри цикла, цикл скрывается.|  
 |Свернуть все в: \<логические структуры>|(Visual C++) Сворачивает все структуры внутри функции.|  
   
- Для определения областей текста, которые требуется развернуть или свернуть, можно также использовать пакет SDK для Visual Studio. См. статью [Пошаговое руководство. Структурирование](../extensibility/walkthrough-outlining.md).
-
-
-
+ Для определения областей текста, которые требуется развернуть или свернуть, можно также использовать пакет SDK для Visual Studio. См. [Пошаговое руководство: структуризация](../extensibility/walkthrough-outlining.md).

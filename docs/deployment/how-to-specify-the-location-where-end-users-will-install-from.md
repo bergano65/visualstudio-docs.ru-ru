@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a148dd9f0f33805fcf0dae423f6a7e33a00ca22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e21938ed03a7bc8c03b910ce1c9bce7187f31255
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020689"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Как выполнить указание расположения, из которого будет производиться установка пользователями
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Как выполнить  указание расположения, из которого будет производиться установка пользователями
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, расположение, где пользователи могут загрузить и установить приложение не обязательно расположение, где первоначально было опубликовано приложение. Например в некоторых организациях разработчик может опубликовать приложение на промежуточном сервере, и затем администратор перемещает приложение на веб-сервере.  
   
  В этом случае можно использовать `Installation URL` свойство, чтобы указать веб-сервер, где пользователи будут переходить для загрузки приложения. Это необходимо, чтобы манифест приложения знал, где искать обновления.  

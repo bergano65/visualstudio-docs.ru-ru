@@ -1,25 +1,20 @@
 ---
 title: Управление свойствами проекта и решения | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758125"
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,8 +50,5 @@ ms.locfileid: "49290554"
 ## <a name="solution-properties"></a>Свойства решения  
  Для доступа к свойствам решения щелкните правой кнопкой мыши узел решения в **обозревателе решений** и выберите пункт **Свойства**. В открывшемся диалоговом окне можно задать параметры проекта для сборки отладки или выпуска, указать, какие проекты должны запускаться при нажатии клавиши F5, а также задать параметры анализа кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
-
-
-
