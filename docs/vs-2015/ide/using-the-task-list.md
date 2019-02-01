@@ -1,14 +1,9 @@
 ---
 title: Использование списка задач | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172033"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801174"
 ---
 # <a name="using-the-task-list"></a>Использование списка задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49172033"
   
 #### <a name="to-open-the-task-list"></a>Отображение списка задач  
   
--   В меню **Вид** выберите команду **Список задач** (сочетание клавиш: CTRL+\\, T).  
+-   На **представление** меню, выберите **список задач** (клавиатуры: CTRL+\\, T).  
   
      ![Окно "Список задач"](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ ms.locfileid: "49172033"
  Так как `TODO` — это стандартный токен, этот комментарий будет выглядеть как задача `TODO` в списке.  
   
 ###  <a name="customTokens"></a> Пользовательские маркеры  
- По умолчанию Visual Studio включает следующие токены: HACK, TODO, UNDONE, NOTE. В этих токенах регистр не учитывается.  
+ По умолчанию Visual Studio включает следующие токены: HACK, TODO, ОТМЕНЕНО, ПРИМЕЧАНИЕ. В этих токенах регистр не учитывается.  
   
  Можно также создавать пользовательские токены.  
   
@@ -127,12 +122,9 @@ ms.locfileid: "49172033"
   
 #### <a name="to-create-a-shortcut"></a>Создание ярлыка  
   
--   Вставьте указатель в код, в котором необходимо разместить ярлык. Выберите **"Изменить" &#124; "Закладки" &#124; "Добавить ярлык списка задач"** или используйте сочетание клавиш CTRL+K, CTRL+H.  
+-   Вставьте указатель в код, в котором необходимо разместить ярлык. Выберите **изменить &#124; закладки &#124; добавить ярлык списка задач** или нажмите сочетание клавиш (клавиатуры: CTRL+K, CTRL+H  
   
      Для навигации по ярлыкам в коде можно выбрать ярлык в списке, а затем пункт **Следующая задача** или **Предыдущая задача** в контекстном меню.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

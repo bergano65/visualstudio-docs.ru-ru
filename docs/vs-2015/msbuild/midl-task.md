@@ -1,14 +1,9 @@
 ---
 title: Задача MIDL | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -31,13 +26,13 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782479"
 ---
 # <a name="midl-task"></a>Задача MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -426,8 +421,5 @@ ms.locfileid: "49215791"
   
 ## <a name="remarks"></a>Примечания  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

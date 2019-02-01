@@ -1,14 +1,9 @@
 ---
 title: Задача SignFile | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 849c82fe11e4440c4b3394532ceecfe30ef57253
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764896"
 ---
 # <a name="signfile-task"></a>Задача SignFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49206418"
 Подписывает указанный файл с помощью заданного сертификата.  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `SignFile`.  
+ В следующей таблице приводятся параметры задачи `SignFile` .  
   
  Обратите внимание, что сертификаты SHA-256 разрешены только на компьютерах с .NET 4.5 или более поздней версией.  
   
@@ -47,9 +42,9 @@ ms.locfileid: "49206418"
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`CertificateThumbprint`|Обязательный параметр `String`.<br /><br /> Задает сертификат, который будет использоваться для подписи. Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
-|`SigningTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает файлы, который будут подписаны с помощью сертификата.|  
-|`TimestampUrl`|Необязательный параметр `String`.<br /><br /> Задает URL-адрес сервера отметок времени.|  
+|`CertificateThumbprint`|Обязательный параметр `String` .<br /><br /> Задает сертификат, который будет использоваться для подписи. Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
+|`SigningTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает файлы, который будут подписаны с помощью сертификата.|  
+|`TimestampUrl`|Необязательный параметр `String` .<br /><br /> Задает URL-адрес сервера отметок времени.|  
 |`TargetFrameworkVersion`|Версия платформы .NET Framework, используемой для целевого объекта.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -76,7 +71,7 @@ ms.locfileid: "49206418"
 ```  
   
 > [!NOTE]
->  Отпечатком сертификата является хэш SHA-1 сертификата. Дополнительные сведения см. в разделе [Получение хэша SHA-1 сертификата доверенного корневого ЦС](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).  
+>  Отпечатком сертификата является хэш SHA-1 сертификата. Дополнительные сведения см. в разделе [Получение хэша SHA-1 сертификата доверенного корневого ЦС](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Пример  
  В следующем примере используется задача `Exec` для подписания файлов, указанных в коллекции элементов `FilesToSign`, с помощью сертификата, заданного свойством `Certificate`. Этот пример можно использовать для подписи файлов установщика Windows во время процесса построения.  
@@ -99,9 +94,6 @@ ms.locfileid: "49206418"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)
-
-
-

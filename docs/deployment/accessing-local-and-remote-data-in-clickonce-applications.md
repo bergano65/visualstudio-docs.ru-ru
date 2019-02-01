@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f080af10bbac990359f176792f5fab02e5bd285
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973516"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.  
@@ -56,7 +56,7 @@ ms.locfileid: "53874881"
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [как: Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
+ Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [как: включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Можно также получить путь к каталогу данных, используя соответствующие переменные в классе <xref:System.Windows.Forms.Application> , например <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   

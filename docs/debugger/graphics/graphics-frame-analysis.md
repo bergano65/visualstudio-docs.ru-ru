@@ -6,15 +6,15 @@ f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: aaa4a034b6b53397999f9f6d5149742f6fa6e229
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986336"
 ---
 # <a name="graphics-frame-analysis"></a>Анализ кадров графики
 Используйте анализ кадров в анализаторе графики Visual Studio, чтобы анализировать и оптимизировать производительность отрисовки в приложениях или играх, использующих Direct3D.  

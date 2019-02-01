@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e63a85ecbf42d0d4091a7ce9315c91184078ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8aa34553f4fb6d4524357f830dbbeabe3296354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981120"
 ---
 # <a name="error-site-uses-ip-address"></a>Ошибка: веб-узел использует IP-адрес
 Эта ошибка возникает, если в отладчике выполняется попытка автоматического присоединения к веб-приложению, которое использует IP-адрес. Это происходит при изменении в IIS параметра **идентификация веб-узла** на значение **определенный IP-адрес**.  

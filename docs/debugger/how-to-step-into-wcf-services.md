@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d82ee388ff6325a92b8e82a385ace727a754ad2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890739"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017114"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Как выполнить пошаговую отладку служб WCF
+# <a name="how-to-step-into-wcf-services"></a>Как выполнить  пошаговую отладку служб WCF
 В [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] можно выполнить пошаговую отладку службы WFC. Если служба WFC находится в том же решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], что и клиент, можно задавать точки останова внутри службы WCF.  
   
  Для начала работы необходимо включить отладку в файле app.config или Web.config. Сведения о том, как включить отладку и ограничениях на пошаговую отладку в службах WCF, см. в разделе [ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md).  

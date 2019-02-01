@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987548"
 ---
 # <a name="udt"></a>UDT
 Каждый класс, структуру и union определяется `SymTagUDT` символов. Каждый член, функция, данных, или вложенным типом и каждого базового класса отображается как дочерний класс определяемого пользователем типа (UDT).  

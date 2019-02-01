@@ -1,14 +1,9 @@
 ---
 title: Легенда представления "Ядра" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c00b6ccf56eb9e171fbaf9afdaea1828b5a1325
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780586"
 ---
 # <a name="cores-view-legend"></a>Легенда представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,5 @@ ms.locfileid: "51783107"
 |Всего переключений контекста|Общее количество переключений контекста для данного потока во время выборки. При каждом изменении контекста потока (например, с выполнения на синхронизацию) учитывается одно переключение контекста.|  
 |Процент переключений контекста между ядрами|Рассчитывается как процент путем деления количества переключений контекста на количество всех переключений контекста. Чем выше этот процент, тем больше общее влияние служебных данных переключений контекста между ядрами на производительность данного потока.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление "Ядра"](../profiling/cores-view.md)
-
-
-
