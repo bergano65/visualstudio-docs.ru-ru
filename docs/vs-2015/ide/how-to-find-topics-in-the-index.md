@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Поиск разделов в указателе | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Поиск разделов в указателе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer 2.0]
 - Help Viewer 2.0, using the index
@@ -20,15 +15,15 @@ ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758173"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Практическое руководство. Поиск разделов в указателе
+# <a name="how-to-find-topics-in-the-index"></a>Как выполнить  Поиск разделов в указателе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Указатель содержит список ключевых слов, связанных с разделами в установленном содержимом. С каждым разделом могут быть связаны несколько ключевых слов, и каждое ключевое слово может быть связано с несколькими разделами. Используйте этот указатель таким же способом, как используете указатель в книге.  
@@ -48,8 +43,5 @@ ms.locfileid: "49815989"
   
      Если указанное ключевое слово связано только с одним разделом, отображается этот раздел. В противном случае отображается список всех разделов, связанных с этим ключевым словом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Советы по поиску в указателе](../ide/index-search-tips.md)
-
-
-

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25de3d88cb495d869ae76e854eaad476f778bce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986115"
 ---
 # <a name="thread-search-dialog-box"></a>Диалоговое окно "Поиск потока"
 Используйте это диалоговое окно, чтобы найти и выбрать узел для потока, указанного в [представление "Потоки"](../debugger/threads-view.md). Чтобы отобразить это диалоговое окно, перемещение фокуса к **потоков** окно представления. Затем выберите **найти поток** из **поиска** меню.  

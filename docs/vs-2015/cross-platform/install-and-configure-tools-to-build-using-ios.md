@@ -1,27 +1,22 @@
 ---
 title: Установка и настройка средств для разработки с помощью iOS | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792867"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787813"
 Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
   
 > [!NOTE]
->  Информацию об использовании размещенных в облаке служб Mac вместо компьютера Mac см. в статье [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/). Приведенные инструкции предназначены для разработки с помощью инструментов Visual Studio для Apache Cordova. При разработке с помощью Visual C++ для разработки кроссплатформенных мобильных приложений заменяйте vcremote в инструкциях на vs-mda-remote.  
+>  Информацию об использовании размещенных в облаке служб Mac вместо компьютера Mac см. в статье [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Приведенные инструкции предназначены для разработки с помощью инструментов Visual Studio для Apache Cordova. При разработке с помощью Visual C++ для разработки кроссплатформенных мобильных приложений заменяйте vcremote в инструкциях на vs-mda-remote.  
   
  Установив средства для разработки с помощью iOS, обратитесь к этой статье за инструкциями по быстрой настройке и обновлению удаленного агента для разработки приложений iOS в Visual Studio и на компьютере Mac.  
   
@@ -53,7 +48,7 @@ Visual C++ для разработки кроссплатформенных мо
   
 -   Компьютер Mac с операционной системой OS X Mavericks или более поздней версии.  
   
--   [Идентификатор Apple ID](https://appleid.apple.com/).  
+-    [Идентификатор Apple ID](https://appleid.apple.com/).  
   
 -   Действующая учетная запись [разработчика iOS](https://developer.apple.com/programs/ios/) в Apple.  
   
@@ -245,6 +240,5 @@ Visual C++ для разработки кроссплатформенных мо
   
      Здесь *путь_к_файлу_конфигурации* — это путь к файлу конфигурации в формате JSON. Параметры запуска и их значения не должны содержать дефисы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

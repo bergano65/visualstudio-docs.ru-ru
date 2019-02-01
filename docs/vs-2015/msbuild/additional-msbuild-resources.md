@@ -1,14 +1,9 @@
 ---
 title: Дополнительные ресурсы MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.UnregisterAssembly.UnregisterTlbFileNotRegistered
 - MSBuild.DollarSignInTaskOutputPropertyName
@@ -603,13 +598,13 @@ ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 935d73f8dd1a5c1dedb3fb4d1e7a727d19e5d10b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 27dec65ec40db76c643260e26e98375e4a80ec10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764912"
 ---
 # <a name="additional-msbuild-resources"></a>Дополнительные ресурсы MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -628,8 +623,5 @@ ms.locfileid: "49222746"
 ## <a name="product-support"></a>Поддержка продуктов  
  Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [справки и поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../ide/talk-to-us.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-
-
-

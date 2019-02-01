@@ -1,14 +1,9 @@
 ---
 title: Предупреждения, создаваемые средством VSInstr | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
 - warnings
@@ -19,20 +14,20 @@ ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: be30404e4fb9cff6c53bb3afbdedb4ce03ba2d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765139"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834328"
 ---
 # <a name="vsinstr-warnings"></a>Предупреждения средства VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В следующей таблице перечислены предупреждения, создаваемые средством VSInstr.exe. Чтобы отключить эти предупреждения, используйте параметр NOWARN с соответствующим номером предупреждения.  
   
-|Номер предупреждения|Описание:|  
+|Номер предупреждения|Описание|  
 |--------------------|-----------------|  
 |**VSP2000**|Внутренняя ошибка. Не удается получить имя файла модуля для этого исполняемого файла.|  
 |**VSP2001**|\<имя сборки> является сборкой со строгим именем. Перед выполнением ее необходимо будет заново подписать.<br /><br /> Это предупреждение возникает при инструментировании подписанной сборки. В этом случае можно повторно подписать двоичный файл с помощью средства sn.exe или временно отключить требование строгого имени. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (Sn.exe: средство строгих имен).|  
@@ -50,8 +45,5 @@ ms.locfileid: "51765139"
 |**VSP2013**|Инструментирование этого образа требует запуска его в виде 32-разрядного процесса. В соответствии с этим были изменены флаги заголовка CLR.<br /><br /> Профилировщик изменяет двоичный файл так, чтобы 64-разрядные операционные системы могли открывать 32-разрядный процесс в эмуляторе WOW64. Для библиотек (DLL) это может оказаться невозможным, если они загружаются в существующий 64-разрядный процесс. Это предупреждение сообщает пользователю о наличии такой зависимости.|  
 |**VSP2014**|По-видимому, результирующий инструментированный образ недопустим и не может быть выполнен.<br /><br /> Это сообщение появляется, если итоговая инструментированная сборка имеет недопустимый заголовок PE.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [VSInstr](../profiling/vsinstr.md)
-
-
-

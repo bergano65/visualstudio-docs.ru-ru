@@ -1,14 +1,9 @@
 ---
-title: Как использовать один и тот же целевой объект в нескольких файлах проектов | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить  Использование одного целевого объекта в нескольких файлах проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,15 +11,15 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769337"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Как использовать одинаковый целевой объект в нескольких файлах проектов
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Как выполнить  Использование одного целевого объекта в нескольких файлах проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -37,7 +32,7 @@ ms.locfileid: "49223344"
   
 1.  Определите в файле проекта, из которого выполняется импорт, все свойства и элементы, которые требуются в качестве параметров для свойств и элементов, указанных в импортируемом проекте.  
   
-2.  Для импорта проекта используйте элемент `Import`. Пример:  
+2.  Для импорта проекта используйте элемент `Import`. Например:  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -120,9 +115,6 @@ ms.locfileid: "49223344"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-
