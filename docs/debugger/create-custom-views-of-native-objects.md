@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997329"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике
 
@@ -26,10 +26,6 @@ ms.locfileid: "53821196"
 
 Natvis заменяет *autoexp.dat* файл в более ранних версиях Visual Studio с помощью синтаксиса XML, улучшенную диагностику, управление версиями, а несколько поддержки.  
 
-Natvis не работает для:
-
-- Проекты C++ Windows desktop с **тип отладчика** присвоено **Mixed** под **свойства конфигурации** > **Отладка**. 
-- [Отладка в смешанном режиме](how-to-debug-in-mixed-mode.md) для классических приложений Windows в режиме совместимости управляемого кода (**средства** > **параметры** > **отладки**  >  **Общие** > **использовать режим совместимости управляемого кода**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Визуализации Natvis
 

@@ -1,14 +1,9 @@
 ---
 title: Команда "Оболочка" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779312"
 ---
 # <a name="shell-command"></a>Команда Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,20 +40,20 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
   
 ## <a name="arguments"></a>Аргументы  
  `path`  
- Обязательно. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.  
+ Обязательный. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.  
   
  `args`  
- Необязательный. Все аргументы, передаваемые в вызванную программу.  
+ Необязательный параметр. Все аргументы, передаваемые в вызванную программу.  
   
 ## <a name="switches"></a>Переключатели  
  /commandwindow [или] /command [или] /c [или] /cmd  
- Необязательный. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.  
+ Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.  
   
  /dir:`folder` [или] /d: `folder`  
- Необязательный. Указывает рабочий каталог, задаваемый при запуске программы.  
+ Необязательный параметр. Указывает рабочий каталог, задаваемый при запуске программы.  
   
  /outputwindow [или] /output [или] /out [или] /o  
- Необязательный. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.  
+ Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.  
   
 ## <a name="remarks"></a>Примечания  
  Параметры /dir /o /c должны быть указаны сразу после `Tools.Shell`. Все, что указано после имени исполняемого файла, передается в виде аргументов командной строки.  
@@ -88,12 +83,9 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Окно вывода](../../ide/reference/output-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

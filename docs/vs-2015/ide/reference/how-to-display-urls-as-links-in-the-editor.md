@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Отображение URL-адресов как ссылок в редакторе | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Отображение URL-адресов как ссылок в редакторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - URLs, opening
 - Code Editor, displaying URLs
@@ -17,15 +12,15 @@ ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a61794e036ff4ba5b107c085be1779e2ba79f35f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5842f0f931eecd822dcaeba5eb6b3e33bd826c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758845"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Как выполнить  Отображение URL-адресов как ссылок в редакторе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -38,7 +33,7 @@ ms.locfileid: "49292361"
 -   при нажатии клавиш **CTRL** + щелчок левой кнопкой мыши предпринимается попытка открыть указанный веб-сайт. По умолчанию веб-сайт отображается во внутреннем веб-браузере.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Процедура  
   
@@ -56,10 +51,7 @@ ms.locfileid: "49292361"
   
 4.  В разделе **Отображение** выберите **Открывать URL-адреса однократным щелчком**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка редактора](../../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-
