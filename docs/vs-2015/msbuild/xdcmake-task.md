@@ -1,14 +1,9 @@
 ---
 title: Задача XDCMake | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792893"
 ---
 # <a name="xdcmake-task"></a>Задача XDCMake
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +53,5 @@ ms.locfileid: "49204884"
 |**SuppressStartupBanner**|Необязательный параметр **Boolean** .<br /><br /> Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.<br /><br /> Дополнительные сведения см. в описании параметра **/nologo** в разделе [Справочник по XDCMake](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac).|  
 |**TrackerLogDirectory**|Необязательный параметр типа **String**.<br /><br /> Задает каталог для журнала отслеживания.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

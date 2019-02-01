@@ -1,14 +1,9 @@
 ---
 title: Элемент Property (MSBuild) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8b9ebd5207b4fc4a6274090b91e8fa3ab0b20cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 958692d9227017eba0901ddb48a19502af9ec452
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263008"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769205"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +77,6 @@ ms.locfileid: "49263008"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Свойства MSBuild](msbuild-properties1.md)  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

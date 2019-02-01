@@ -1,26 +1,21 @@
 ---
 title: Создание модульных тестов для кода с помощью IntelliTest | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790513"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,10 +87,10 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
 ##  <a name="QandALink"></a> Вопросы и ответы  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос. Можно ли использовать IntelliTest для неуправляемого кода?  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос: Можно ли использовать IntelliTest для неуправляемого кода?  
  **Ответ.** Нет. IntelliTest работает только с управляемым кодом.  
   
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос. Каковы условия выполнения или сбоя созданного теста?  
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос: Каковы условия выполнения или сбоя созданного теста?  
  **Ответ.** Он, как и любой модульный тест, выполняется в случае отсутствия исключений. Сбой происходит при сбое утверждений или если код в тесте вызывает необработанное исключение.  
   
  Если у вас есть тест, который может быть выполнен при возникновении определенных исключений, можно задать один из следующих атрибутов на основе требований в методе тестирования, тестовом классе и уровне сборки:  
@@ -108,22 +103,22 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
 -   **PexAllowedExceptionFromAssemblyAttribute**  
   
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить допущения в параметризованный модульный тест?  
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить допущения в параметризованный модульный тест?  
  **Ответ.** Да, используйте допущения, чтобы указать, какие данные теста не нужны для модульного теста при использовании определенного метода. Используйте класс <xref:Microsoft.Pex.Framework.PexAssume> для добавления допущений. Например, можно добавить допущение, что переменная длин не является NULL в отличие от этой.  
   
  `PexAssume.IsNotNull(lengths);`  
   
  Если добавляется допущение и перезапускается IntelliTest, тестовые данные, которые больше не нужны, будут удалены.  
   
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить утверждения в параметризованный модульный тест?  
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить утверждения в параметризованный модульный тест?  
  **Ответ.** Да, IntelliTest проверит правильность утверждения в операторе при запуске модульных тестов. Для добавления утверждений используйте класс <xref:Microsoft.Pex.Framework.PexAssert> или API утверждения, входящий в состав платформы тестирования. Например, можно добавить утверждение о равенстве двух переменных.  
   
  `PexAssert.AreEqual(a, b);`  
   
  Если добавляется допущение и перезапускается IntelliTest, инструмент проверяет допустимость утверждения. Если утверждение недопустимо, происходит сбой теста.  
   
-###  <a name="NoRun"></a> В. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?  
- **О** . Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.  
+###  <a name="NoRun"></a> Вопрос. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?  
+ **Ответ.** Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.  
   
  ![Щелкните редактор правой кнопкой мыши и выберите пункт "Создать IntelliTest"](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -131,15 +126,12 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
  ![Создание IntelliTest с MSTest по умолчанию](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>В. Можно ли использовать другие платформы модульного тестирования с IntelliTest?  
- **О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:  
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Вопрос: Можно ли использовать другие платформы модульного тестирования с IntelliTest?  
+ **Ответ.** Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:  
   
  ![Выбор другой платформы модульного тестирования для IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
  Затем запустите IntelliTest, чтобы сформировать отдельные модульные тесты в соответствующих файлах G.CS.  
   
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?  
- **О** . Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-
-
-
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос: Можно получить более подробную информацию о создании тестов?  
+ **Ответ.** Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).

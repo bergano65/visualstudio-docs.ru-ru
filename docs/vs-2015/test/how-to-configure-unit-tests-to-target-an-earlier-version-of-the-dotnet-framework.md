@@ -1,26 +1,21 @@
 ---
-title: Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка модульных тестов для более ранней версии платформы .NET Framework | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795864"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Как выполнить  Настройка модульных тестов для более ранней версии .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании тестового проекта в Microsoft Visual Studio последняя версия платформы .NET Framework устанавливается в качестве целевой по умолчанию. Кроме того, при обновлении тестовых проектов, созданных в предыдущих версиях Visual Studio, они обновляются до последней версии платформы .NET Framework. Путем изменения свойств проекта можно явно изменить целевую версию .NET Framework для проекта на более раннюю.  
@@ -130,11 +125,8 @@ ms.locfileid: "49892796"
   
 8.  В обозревателе решений выберите в контекстном меню нового тестового проекта Visual C++ пункт **Перезагрузить проект**.  
   
-## <a name="see-also"></a>См. также  
- [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+## <a name="see-also"></a>См. также раздел  
+ [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Создание решений SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [Построение и отладка решений SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-
