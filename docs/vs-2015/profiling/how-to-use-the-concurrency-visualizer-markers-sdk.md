@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров | Документы Майкрософт
-ms.custom: ''
+title: 'Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 17e18ada321752c1cde780031524fb45d8bd4997
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e589ab9d3dde1e8940f6db28d42a566d021b4d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801717"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.  
@@ -101,7 +96,7 @@ ms.locfileid: "51761120"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Создании <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> объекта путем вызова статического [EnterSpan] (<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) метод. Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> можно создать путем вызова статического метода <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   
@@ -184,8 +179,5 @@ ms.locfileid: "51761120"
   
      ![Визуализатор параллелизма с тремя пользовательскими последовательностями маркеров](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesNative")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)
-
-
-

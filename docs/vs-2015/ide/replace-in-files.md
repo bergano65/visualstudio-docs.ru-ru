@@ -1,14 +1,9 @@
 ---
 title: Замена в файлах | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,21 +15,21 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779246"
 ---
 # <a name="replace-in-files"></a>Заменить в файлах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Заменить в файлах ** позволяет найти код, указанный набор файлов для строки или выражения и измените все или некоторые из найденных совпадений. Найденные совпадения и предпринятые действия перечисляются в окне **Результаты поиска**, выбранном в разделе **Параметры результатов**.  
+Функция Заменить в файлах позволяет осуществлять поиск строки или выражения в заданном наборе файлов и заменять все или некоторые из найденных совпадений. Найденные совпадения и предпринятые действия перечисляются в окне **Результаты поиска**, выбранном в разделе **Параметры результатов**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Для отображения функции **Заменить в файлах** в окне **Поиск и замена** можно использовать любой из следующих методов.  
   
@@ -95,10 +90,7 @@ ms.locfileid: "49228830"
 > [!CAUTION]
 >  Команду **отката** можно использовать только для файлов, которые остаются открытыми для редактирования. Если этот параметр не выбран, файлы, которые не были открыты для редактирования, останутся закрытыми, и для этих файлов не будет доступна команда **Отменить**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Поиск и замена текста](../ide/finding-and-replacing-text.md)   
  [Поиск в файлах](../ide/find-in-files.md)   
  [Команды Visual Studio](../ide/reference/visual-studio-commands.md)
-
-
-

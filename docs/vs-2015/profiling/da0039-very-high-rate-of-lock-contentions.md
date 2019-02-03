@@ -1,14 +1,9 @@
 ---
-title: DA0039. Очень большое число конфликтов при блокировке | Документы Майкрософт
-ms.custom: ''
+title: DA0039. Очень большое число конфликтов при блокировке | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
@@ -17,18 +12,18 @@ ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e226ad010845d6aa2419c9fe497334e93c5323f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752413"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039. Очень большое число конфликтов при блокировке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [DA0039: очень большое из при блокировке](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio 2017, см. в разделе [DA0039: Очень высокая число конфликтов блокировок](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) на сайте docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -61,4 +56,3 @@ ms.locfileid: "51805545"
  Дважды щелкните сообщение, чтобы перейти к представлению [Метки](../profiling/marks-view.md) данных профилирования.  Найдите столбец **Блокировки и потоки CLR .NET\Частота конфликтов/сек**. Определите, есть ли какие-то конкретные этапы выполнения программы, когда число конфликтов блокировки больше, чем на других этапах.  
   
  Это правило срабатывает, только если не используется метод профилирования параллелизма. Метод профилирования параллелизма является лучшим средством для диагностики проблем производительности, связанных с конфликтами блокировки в приложении. Выполните сбор данных профилирования параллелизма, чтобы получить представление о режиме блокировки приложения. Вам потребуется выяснить, какие виды блокировок вызывают самое большое число конфликтов, насколько задерживается выполнение потока в ожидании конфликтующих блокировок и какой код ими затрагивается. Профили параллелизма собирают данные обо всех конфликтах блокировки, включая поведение блокировки собственных средств Windows, классов .NET Framework и любых других сторонних библиотек, на которые ссылается ваше приложение. Дополнительные сведения о профилировании параллелизма из интегрированной среды разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в разделе [Сбор данных о параллелизме потоков и процессов](../profiling/collecting-thread-and-process-concurrency-data.md). Ссылки на сведения о профилировании параллелизма из командной строки см. в разделе **Использование метода параллелизма для сбора данных о конфликтах ресурсов и действиях потока** статьи [Использование методов профилирования из командной строки](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

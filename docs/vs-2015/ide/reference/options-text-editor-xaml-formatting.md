@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XAML, \"Форматирование\" | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -35,13 +30,13 @@ ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c86c7d2913b5fe112181bec2e9dc1bec12273b5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6ee37247cf628c0efe99af3e8a0b06dcab0b196c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800734"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>"Параметры", "Текстовый редактор", XAML, "Форматирование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "49824457"
 Используйте страницу свойств **Форматирование** для настройки форматирования элементов и атрибутов в документах XAML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Форматирование**, разверните узел **Текстовый редактор**, **XAML**, **Форматирование** узла.  
 
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
 
 ## <a name="auto-formatting-events"></a>События автоформатирования  
  Автоматическое форматирование может возникать при обнаружении одного из следующих событий.  
@@ -119,7 +114,7 @@ ms.locfileid: "49824457"
 |**Закрывающие фигурные скобки для расширений MarkupExtension**|Указывает, создается ли закрывающая фигурная скобка (}) расширения разметки автоматически при вводе открывающей фигурной скобки ({).|  
 |**Запятые для разделения параметров MarkupExtension**|Указывает, создаются ли запятые при вводе нескольких параметров в расширении разметки.|  
 
-## <a name="default-view"></a>Представление по умолчанию  
+## <a name="default-view"></a>представление по умолчанию  
  С помощью этого параметра можно указать, должно ли представление конструирования отображаться при загрузке документов XAML.  
 
 |||  
@@ -133,10 +128,7 @@ ms.locfileid: "49824457"
 |-|-|  
 |**Автоматически заполнять элементы панели инструментов**|Указывает, должны ли пользовательские элементы управления, относящиеся к текущему решению, отображаться на панели элементов автоматически.|  
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [XAML в WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [Практическое руководство. Изменение параметров представления XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Пошаговые руководства по XAML и коду](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-
-
-
+ [Практическое руководство. Изменение параметров представления XAML](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
+ [Пошаговые руководства по XAML и коду](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

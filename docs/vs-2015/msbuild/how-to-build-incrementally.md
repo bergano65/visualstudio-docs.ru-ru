@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Инкрементное построение | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Инкрементная сборка | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,15 +12,15 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803914"
 ---
-# <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементное построение
+# <a name="how-to-build-incrementally"></a>Как выполнить Последовательная сборка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -36,7 +31,7 @@ ms.locfileid: "49844627"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Указание входных и выходных данных для целевого объекта  
   
-- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Пример:  
+- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Например:  
   
   ```  
   <Target Name="Build"  
@@ -57,7 +52,7 @@ ms.locfileid: "49844627"
 </Target>  
 ```  
   
- Когда в целевом объекте указаны входные и выходные данные, все выходные данные можно сопоставить только с одними входными данными, либо между выходными и входными данными может отсутствовать прямое сопоставление. В предыдущем [задача Csc](../msbuild/csc-task.md), например, выходные данные, hello.exe, нельзя сопоставить с отдельными выходными — это зависит от их все.  
+ Когда в целевом объекте указаны входные и выходные данные, все выходные данные можно сопоставить только с одними входными данными, либо между выходными и входными данными может отсутствовать прямое сопоставление. В предыдущей [задаче Csc](../msbuild/csc-task.md), например, выходные данные, hello.exe, нельзя сопоставить с отдельными выходными данными — это зависит от всех остальных.  
   
 > [!NOTE]
 >  Для целевого объекта, в котором нет прямого сопоставления между входными и выходными данными, построение всегда будет выполняться чаще, чем для целевого объекта, в котором все выходные данные можно сопоставить только с одними входными данными, поскольку [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] не сможет определить какие выходные данные необходимо перестроить, если изменены некоторые входные данные.  
@@ -69,7 +64,7 @@ ms.locfileid: "49844627"
   
 - `GenerateContentFiles`: преобразует TXT-файлы в CONTENT-файлы.  
   
-- `BuildHelp`: объединяет CONTENT-файлы и XML-файлы метаданных для построения итогового HELP-файла.  
+- `BuildHelp`: объединяет CONTENT-файлы и XML-файлы метаданных для сборки итогового HELP-файла.  
   
   В проекте используются преобразования для создания взаимно однозначного сопоставления между входными и выходными данными в задаче `GenerateContentFiles`. Дополнительные сведения см. в статье [Преобразования](../msbuild/msbuild-transforms.md). Кроме того, элемент `Output` настроен на автоматическое использование выходных данных задачи `GenerateContentFiles` в качестве входных данных для задачи `BuildHelp`.  
   
@@ -110,12 +105,9 @@ ms.locfileid: "49844627"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Целевые объекты](../msbuild/msbuild-targets.md)   
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Преобразования](../msbuild/msbuild-transforms.md)   
  [Задача Csc](../msbuild/csc-task.md)   
  [Задача Vbc](../msbuild/vbc-task.md)
-
-
-

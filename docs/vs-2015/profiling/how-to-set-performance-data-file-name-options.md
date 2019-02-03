@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка параметров имени файла с данными о производительности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06751d510c38f055036865a8f368c4e0c3298a30
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760418"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными о производительности
+# <a name="how-to-set-performance-data-file-name-options"></a>Как выполнить Настройка параметров имени файла с данными о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 По умолчанию файл данных профилирования (VSP) сохраняется со следующим синтаксисом:  
@@ -56,6 +51,3 @@ ms.locfileid: "51801993"
     |**Автоматически добавлять новые отчеты к сеансу**|Установите этот флажок для автоматического добавления файла данных в сеанс анализа производительности.|  
     |**Добавлять номер с приращением к созданным отчетам**|Установите этот флажок, чтобы добавлять возрастающий номер к имени файла, если существует несколько файлов с тем же именем. Снимите флажок, чтобы перезаписывать существующий файл.|  
     |**Использовать отметку времени для номера**|Установите этот флажок для добавления метки даты к имени файла.|
-
-
-

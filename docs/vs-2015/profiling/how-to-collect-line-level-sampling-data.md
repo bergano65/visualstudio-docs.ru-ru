@@ -1,29 +1,24 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Выборка данных на уровне строк | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21ef50736e00bd835b4e1bc88530d2aaef30ee82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779028"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
+# <a name="how-to-collect-line-level-sampling-data"></a>Как выполнить Выборка данных на уровне строк
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Выборка на уровне строк — это возможность профилировщика определить, где в коде функции, потребляющей большой объем ресурсов процессора (например, функции с высокой частотой исключающих выборок), тратится самый большой объем времени процессора.  
@@ -63,9 +58,6 @@ ms.locfileid: "51767546"
   
 -   При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
-
-
-

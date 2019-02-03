@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic) | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Добавление или удаление импортированных пространств имен (Visual Basic) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -19,15 +14,15 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798963"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Как выполнить Добавление или удаление импортированных пространств имен (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Импорт пространства имен позволяет использовать элементы из этого пространства имен в коде без полного определения элемента. Например, если требуется получить доступ к методу `Create` в классе `System.Messaging.MessageQueue`, можно импортировать пространство имен `System.Messaging` и просто обращаться к необходимому элементу в коде в виде `MessageQueue.Create`.  
@@ -43,7 +38,7 @@ ms.locfileid: "49196408"
 3.  В списке **Импортированные пространства имен** установите флажок для пространства имен, которое необходимо добавить.  
   
     > [!NOTE]
-    >  Поддерживается импорт только тех пространств имен, которые содержатся в указанном компоненте. Если пространство имен не отображается в списке, необходимо добавить ссылку на компонент, который его содержит. Дополнительные сведения см. в разделе [NIB. Практическое руководство. Добавление и удаление ссылок в диалоговом окне "Добавление ссылки"](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Поддерживается импорт только тех пространств имен, которые содержатся в указанном компоненте. Если пространство имен не отображается в списке, необходимо добавить ссылку на компонент, который его содержит. Дополнительные сведения см. в разделе [ПРАКТИЧЕСКОЕ руководство: Добавление и удаление ссылок с помощью диалогового окна "Добавление ссылок"](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Удаление импортированного пространства имен  
   
@@ -83,8 +78,5 @@ ms.locfileid: "49196408"
   
 5.  Нажмите кнопку **Обновить пользовательский импорт**, чтобы обновить пространство имен в списке **Импортированные пространства имен**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
-
-
-

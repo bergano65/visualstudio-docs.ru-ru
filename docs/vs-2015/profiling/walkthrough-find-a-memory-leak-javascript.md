@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Поиск утечек памяти (JavaScript) | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Поиск утечек памяти (JavaScript) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744948"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780938"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Пошаговое руководство. Поиск утечек памяти (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Пошаговое руководство. Поиск утечек памяти (JavaScript).
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
@@ -224,7 +219,7 @@ ms.locfileid: "51744948"
   
     - Этот объект остался из снимка №2 и представляет потенциальную утечку памяти.  
   
-      На этом этапе поможет знание приложения. При нажатии кнопки **Утечки памяти** должен быть удален элемент DIV и добавлен какой-либо элемент. Очевидно, что код работает неправильно (т. е. возникает утечка памяти). В следующем разделе показано, как решить эту проблему.  
+      На этом этапе поможет знание приложения: Выбор **утечки памяти** кнопку следует удалить элемент DIV и добавить элемент, что код работает неправильно (т. е. возникает утечка памяти). В следующем разделе показано, как решить эту проблему.  
   
     > [!TIP]
     >  Иногда для идентификации объекта достаточно определить расположение объекта относительно объекта `Global` . Для этого откройте контекстное меню идентификатора и щелкните **Показать в корневом представлении**.  
@@ -291,8 +286,5 @@ ms.locfileid: "51744948"
   
       ![Снимки, иллюстрирующие постоянную утечку памяти](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Память JavaScript](../profiling/javascript-memory.md)
-
-
-
