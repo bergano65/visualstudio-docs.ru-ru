@@ -1,14 +1,9 @@
 ---
 title: Создание проектов и решений | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763118"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893706"
 Проекты — это логические контейнеры для всех объектов, которые необходимы для сборки приложения. Когда вы выбираете **Файл | Создать | Проект** в главном меню для создания проекта, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает решение, которое будет его содержать. После этого в решение при необходимости можно добавить дополнительные новые или существующие проекты. Можно создавать проекты из существующих файлов кода, а также временные проекты (только .NET), которые будут удалены после завершения работы с ними.  
   
 > [!NOTE]
->  Содержимое этого раздела ориентировано на выпуск Visual Studio Community. Отображаемые диалоговые окна и команды меню могут (в зависимости от текущих настроек или выпуска Visual Studio) отличаться от описанных здесь. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Содержимое этого раздела ориентировано на выпуск Visual Studio Community. Отображаемые диалоговые окна и команды меню могут (в зависимости от текущих настроек или выпуска Visual Studio) отличаться от описанных здесь. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Создание проекта из установленного шаблона проекта  
  Выберите **Файл | Создать | Проект** в главном меню, чтобы открыть диалоговое окно "Новый проект". В левой области в разделе **Установлено | Шаблоны** выберите язык программирования и платформу или технологию, а затем один из доступных шаблонов в средней области.  
@@ -98,9 +93,6 @@ ms.locfileid: "49893706"
   
 3.  Выберите каталог, содержащий решение, и нажмите клавишу DELETE.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB Практическое руководство. Создание решений для нескольких проектов](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [(NIB) Практическое руководство. создавать решения на основе нескольких проектов](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).

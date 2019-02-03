@@ -1,32 +1,27 @@
 ---
-title: Практическое руководство. Фильтрация отчетов из командной строки | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Фильтрация отчетов из командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb8df34291d99d093ccf0d053d5dd1fbe2955232
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803005"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Практическое руководство. Фильтрация отчетов из командной строки
+# <a name="how-to-filter-reports-from-the-command-line"></a>Как выполнить Фильтрация отчетов из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 С помощью параметров команды **VSPerfReport** можно фильтровать отчеты за определенный период времени в файле данных профилирования или ограничивать данные одним или несколькими процессами или потоками. Дополнительные сведения об этой команде см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Параметры|Описание:|  
+|Параметры|Описание|  
 |-------------|-----------------|  
 |**StartTime:**[*Значение*]|Отображает только данные, собранные после введенного значения (в миллисекундах).|  
 |**EndTime:**[*Значение*]|Отображает только данные, собранные до введенного значения (в миллисекундах).|  
@@ -35,6 +30,3 @@ ms.locfileid: "51789789"
 |**Process:**[*Pid*]|Отображает только данные из указанного процесса.|  
 |**Thread:**[*ИД_потока*]|Отображает только данные из указанного потока.|  
 |**Thread:**[*ИД_потока,ИД_процесса*]|Отображает только данные из указанного потока, связанного с указанным процессом.|
-
-
-
