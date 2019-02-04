@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012231"
 ---
 # <a name="understand-build-platforms"></a>Общие сведения о платформах сборки
 
@@ -37,6 +37,6 @@ ms.locfileid: "32425365"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
 - [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

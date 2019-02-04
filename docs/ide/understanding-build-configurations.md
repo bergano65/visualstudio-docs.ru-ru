@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927910"
 ---
 # <a name="understand-build-configurations"></a>Общие сведения о конфигурациях сборок
 
@@ -42,9 +42,9 @@ ms.locfileid: "51349053"
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Конфигурации сборки в Visual Studio для Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Дополнительные сведения см. в разделе [Управление конфигурациями сборок с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Дополнительные сведения см. в разделе [Как Управление конфигурациями с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в пошаговом руководстве по [настройке конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
+По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Как создавать и изменять конфигурации](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Конфигурации решения
 
@@ -90,7 +90,7 @@ ms.locfileid: "51349053"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Проекты и решения](../ide/solutions-and-projects-in-visual-studio.md)
 - [Образец построения C/C++](/cpp/build/reference/c-cpp-building-reference)

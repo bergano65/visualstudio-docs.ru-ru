@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942757"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Создание и очистка проектов и решений в Visual Studio
 
-Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).
+Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Создание и очистка проектов и решений в Visual Studio для Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -114,7 +114,7 @@ ms.locfileid: "51349274"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Практическое руководство. просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md)

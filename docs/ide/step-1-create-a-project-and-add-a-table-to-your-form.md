@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9ae3bcb27e86a4646aa345d4cfd010f8d34dd56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882780"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231810"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Шаг 1. Создание проекта и добавление таблицы в форму
 
@@ -69,7 +69,7 @@ ms.locfileid: "53882780"
 
    5.  Выберите свойство **Font**. Должна появиться кнопка с многоточием (**…**).
 
-   6.  Нажмите кнопку с многоточием и установите для параметра **Font** значение **Webdings**, для параметра **Font Style** — значение **Bold**, а для параметра **Size** — значение **72**.
+   6.  Нажмите кнопку с многоточием и установите для параметра **Font** значение **Webdings**, для параметра **Font Style** — значение **Bold**, а для параметра **Size** — значение **48**.
 
    7.  Установите свойство **Text** равным букве **с**.
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926752"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -35,10 +35,10 @@ ms.locfileid: "53836628"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: предварительная версия 1                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
+|    Visual Studio 2019: Предварительная версия (предварительная версия 2)                   |           Предприятие         | Версия 16.0.0, предварительная версия 2 |
 | Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.4      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.20     |
-|   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.20     |
+|   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
 
 > [!NOTE]
@@ -52,8 +52,8 @@ ms.locfileid: "53836628"
 
 * Все доступные рабочие нагрузки, в том числе дополнительные рекомендуемые компоненты каждой рабочей нагрузки.
 * Пакеты SDK .NET 4.6.2 и .NET 4.7, Targeting Pack и средства разработчика.
-* Visual F#
-* Расширение GitHub для Visual Studio
+* Visual F#;
+* расширение GitHub для Visual Studio;
 * Инструменты LINQ to SQL.
 
 Ниже приведен пример командной строки, с помощью которой мы устанавливаем Visual Studio при создании образов.

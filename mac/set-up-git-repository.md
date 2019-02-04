@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796974"
 ---
 # <a name="set-up-a-git-repository"></a>Настройка репозитория Git
 
@@ -68,7 +68,10 @@ Git — это распределенная система управления
 
 6. Нажмите кнопку **ОК**, а затем кнопку **Опубликовать** в диалоговом окне оповещения.
 
-7. Если вы еще не вводили учетные данные Git в настройках Visual Studio для Mac, введите их. Прежде всего, нужно создать токен доступа, используемый вместо пароля. Если маркер доступа еще не создан, выполните действия, описанные в документации Git по созданию [маркера доступа](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+7. В окне **Учетные данные Git** введите имя пользователя GitHub и пароль. 
+
+> [!NOTE]
+> Если в вашей учетной записи включена двухфакторная проверка подлинности (2FA), необходимо будет создать маркер доступа, используемый вместо пароля. Если маркер доступа еще не создан, выполните действия, описанные в документации Git по созданию [маркера доступа](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
 8. Введите имя пользователя и личный маркер доступа и нажмите клавишу **ОК**:
 
