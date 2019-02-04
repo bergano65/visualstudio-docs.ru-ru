@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403971"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089146"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 
@@ -37,7 +37,7 @@ ms.locfileid: "54403971"
 - [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 - [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>Список параметров командной строки
+## <a name="command-line-parameters"></a>Параметры командной строки
 
  В параметрах командной строки для Visual Studio не учитывается регистр символов.
 
@@ -46,7 +46,7 @@ ms.locfileid: "54403971"
 (Замените `vs_enterprise.exe` в соответствии с выпуском продукта, который вы устанавливаете.
 
 >[!TIP]
-> Дополнительные примеры использования командной строки для установки Visual Studio 2017 см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).)
+> Дополнительные примеры использования командной строки для установки Visual Studio 2017 см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).
 
 | **Команда** | **Описание** |
 | ----------------------- | --------------- |
@@ -56,6 +56,8 @@ ms.locfileid: "54403971"
 | `repair` | Восстанавливает установленный продукт. |
 | `uninstall` | Удаляет установленный продукт. |
 | `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
+
+## <a name="install-options"></a>Параметры установки
 
 | **Параметр установки** | **Описание** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ ms.locfileid: "54403971"
 
 > [!IMPORTANT]
 > При указании нескольких рабочих нагрузок и компонентов требуется повторять параметр командной строки `--add` или `--remove` для каждого элемента.
+
+## <a name="layout-options"></a>Параметры макета
 
 | **Параметры макета** | **Описание** |
 | ----------------------- | --------------- |

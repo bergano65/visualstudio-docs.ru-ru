@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание общего выходного каталога
+title: Как выполнить Сборка в общий выходной каталог
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f45890224684ff2e4c411875ab61bdfb698cfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea36368a60fc08d6a818d1ca1e66cfb92d814478
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030773"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Практическое руководство. Создание общего выходного каталога
+# <a name="how-to-build-to-a-common-output-directory"></a>Как выполнить Сборка в общий выходной каталог
 
 По умолчанию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создает каждый проект в отдельной папки внутри решения. Вы можете изменить пути вывода сборки для проекта, чтобы принудительно поместить все выходные данные в одну папку.
 

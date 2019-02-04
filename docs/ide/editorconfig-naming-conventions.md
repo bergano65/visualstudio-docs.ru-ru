@@ -7,16 +7,16 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50fe9249baae6d881c2d67ebc0a65a0c6335cbd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935362"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -85,7 +85,7 @@ ms.locfileid: "53898665"
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Допустимые значения представлены в списке ниже. Вы можете указать несколько значений через запятую.
+Допустимые значения представлены в списке ниже. Вы можете указать несколько значений через запятую. Правило именования будет соответствовать только сигнатурам, которые содержат все модификаторы, указанные в `required_modifiers`. Если опустить это свойство, используется значение по умолчанию пустого списка, то есть для сопоставления не требуются особые модификаторы. Это означает, что модификаторы символов не оказывают влияния на применение этого правила.
 
 - `abstract` или `must_inherit`
 - `async`

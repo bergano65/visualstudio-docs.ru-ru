@@ -1,177 +1,184 @@
+items:
 - name: Разработка пользовательских интерфейсов
   href: designing-user-interfaces.md
   items:
-    - name: "Проектирование XAML в Visual\_Studio"
-      href: designing-xaml-in-visual-studio.md
+  - name: Проектирование XAML в Visual Studio
+    href: designing-xaml-in-visual-studio.md
+    items:
+    - name: Конструктор XAML
+      href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
       items:
-        - name: "Создание пользовательского интерфейса с помощью конструктора\_XAML"
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
-          items:
-            - name: "Работа с элементами в конструкторе\_XAML"
-              href: working-with-elements-in-xaml-designer.md
-            - name: Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
-              href: organize-objects-into-layout-containers-in-xaml-designer.md
-            - name: Создание и применение ресурса
-              href: how-to-create-and-apply-a-resource.md
-            - name: "Пошаговое руководство. Привязка к данным в конструкторе\_XAML"
-              href: walkthrough-binding-to-data-in-xaml-designer.md
-            - name: Сочетания клавиш для конструктора XAML
-              href: keyboard-shortcuts-for-xaml-designer.md
-            - name: "Отладка или отключение кода проекта в конструкторе\_XAML"
-              href: debugging-or-disabling-project-code-in-xaml-designer.md
-            - name: "Ошибки и предупреждения\_XAML"
-              href: xaml-errors-warnings.md
-        - name: "Создание пользовательского интерфейса с помощью Blend для Visual\_Studio"
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
-          items:
-            - name: Вставка элементов управления и изменение их поведения в конструкторе XAML
-              href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-            - name: 'Вставка изображений, видео- и аудиоклипов в конструкторе XAML'
-              href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-            - name: Рисование фигур и контуров
-              href: draw-shapes-and-paths.md
-            - name: Изменение стиля объектов в Blend
-              href: modify-the-style-of-objects-in-blend.md
-            - name: Анимирование объектов в конструкторе XAML
-              href: animate-objects-in-xaml-designer.md
-            - name: Отображение данных
-              href: display-data-in-blend.md
-            - name: Сочетания клавиш и клавиши-модификаторы в Blend
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-              items:
-                - name: Сочетания клавиш
-                  href: keyboard-shortcuts-in-blend.md
-                - name: Клавиши-модификаторы области рисования
-                  href: artboard-modifier-keys-in-blend.md
-                - name: Клавиши-модификаторы инструмента "Перо"
-                  href: pen-tool-modifier-keys-in-blend.md
-                - name: Клавиши-модификаторы инструмента "Непосредственное выделение"
-                  href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: "Продукты и службы для\_Blend со специальными возможностями"
-              href: accessibility-products-and-services-blend.md
-    - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
+      - name: Работа с элементами
+        href: working-with-elements-in-xaml-designer.md
+      - name: Упорядочение объектов в контейнеры макета
+        href: organize-objects-into-layout-containers-in-xaml-designer.md
+      - name: Создание и применение ресурса
+        href: how-to-create-and-apply-a-resource.md
+      - name: Пошаговое руководство. Привязка к данным в конструкторе XAML
+        href: walkthrough-binding-to-data-in-xaml-designer.md
+      - name: Сочетания клавиш для конструктора XAML
+        href: keyboard-shortcuts-for-xaml-designer.md
+      - name: Отладка или отключение кода проекта
+        href: debugging-or-disabling-project-code-in-xaml-designer.md
+      - name: Ошибки и предупреждения XAML
+        href: xaml-errors-warnings.md
+    - name: Blend для Visual Studio
+      href: creating-a-ui-by-using-blend-for-visual-studio.md
       items:
-        - name: Общие сведения о WPF
-          href: introduction-to-wpf.md
-        - name: "Привязка данных WPF с помощью LINQ to\_XML"
-          href: wpf-data-binding-with-linq-to-xml-overview.md
-          items:
-            - name: "Динамические свойства LINQ to\_XML"
-              href: linq-to-xml-dynamic-properties.md
-              items:
-                - name: Динамические свойства класса XAttribute
-                  href: xattribute-class-dynamic-properties.md
-                  items:
-                    - name: Value (динамическое свойство XAttribute)
-                      href: value-xattribute-dynamic-property.md
-                - name: "Динамические свойства класса\_XElement"
-                  href: xelement-class-dynamic-properties.md
-                  items:
-                    - name: Attribute (динамическое свойство XElement)
-                      href: attribute-xelement-dynamic-property.md
-                    - name: Element (динамическое свойство XElement)
-                      href: element-xelement-dynamic-property.md
-                    - name: Elements (динамическое свойство XElement)
-                      href: elements-xelement-dynamic-property.md
-                    - name: Descendants (динамическое свойство XElement)
-                      href: descendants-xelement-dynamic-property.md
-                    - name: Value (динамическое свойство XElement)
-                      href: value-xelement-dynamic-property.md
-                    - name: Xml (динамическое свойство XElement)
-                      href: xml-xelement-dynamic-property.md
-                - name: Пример
-                  href: wpf-data-binding-using-linq-to-xml-example.md
-                  items:
-                    - name: Сборка и запуск примера LinqToXmlDataBinding
-                      href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                    - name: "Пошаговое руководство. Привязка данных LINQ to\_XML"
-                      href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: Исходный код L2DBForm.xaml
-                          href: l2dbform-xaml-source-code.md
-                        - name: Исходный код L2DBForm.xaml.cs
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Работа с трехмерными ресурсами для игр и приложений
-      href: working-with-3-d-assets-for-games-and-apps.md
+      - name: Вставка элементов управления и изменение их поведения
+        href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
+      - name: Вставка изображений, видео- и аудиоклипов
+        href: insert-images-videos-and-audio-clips-in-xaml-designer.md
+      - name: Рисование фигур и контуров
+        href: draw-shapes-and-paths.md
+      - name: Изменение стиля объектов в Blend
+        href: modify-the-style-of-objects-in-blend.md
+      - name: Анимирование объектов
+        href: animate-objects-in-xaml-designer.md
+      - name: Отображение данных
+        href: display-data-in-blend.md
+      - name: Сочетания клавиш и клавиши-модификаторы
+        href: keyboard-shortcuts-and-modifier-keys-in-blend.md
+        items:
+        - name: Сочетания клавиш
+          href: keyboard-shortcuts-in-blend.md
+        - name: Клавиши-модификаторы области рисования
+          href: artboard-modifier-keys-in-blend.md
+        - name: Клавиши-модификаторы инструмента "Перо"
+          href: pen-tool-modifier-keys-in-blend.md
+        - name: Клавиши-модификаторы инструмента "Непосредственное выделение"
+          href: direct-selection-tool-modifier-keys-in-blend.md
+      - name: Продукты и службы для Blend со специальными возможностями
+        href: accessibility-products-and-services-blend.md
+  - name: Windows Presentation Foundation (WPF)
+    href: getting-started-with-wpf.md
+    items:
+    - name: Общие сведения о WPF
+      href: introduction-to-wpf.md
+    - name: Привязка данных WPF с помощью LINQ to XML
+      href: wpf-data-binding-with-linq-to-xml-overview.md
       items:
-        - name: Работа с текстурами и изображениями
-          href: working-with-textures-and-images.md
+      - name: Динамические свойства LINQ to XML
+        href: linq-to-xml-dynamic-properties.md
+        items:
+        - name: Динамические свойства класса XAttribute
+          href: xattribute-class-dynamic-properties.md
           items:
-            - name: редактор изображений
-              href: image-editor.md
-            - name: Примеры редактора изображений
-              href: image-editor-examples.md
-              items:
-                - name: Создание простейшей текстуры
-                  href: how-to-create-a-basic-texture.md
-                - name: Создание и изменение MIP-уровней
-                  href: how-to-create-and-modify-mip-levels.md
-        - name: Работа с трехмерными моделями
-          href: working-with-3-d-models.md
+          - name: Value (динамическое свойство XAttribute)
+            href: value-xattribute-dynamic-property.md
+        - name: Динамические свойства класса XElement
+          href: xelement-class-dynamic-properties.md
           items:
-            - name: Редактор моделей
-              href: model-editor.md
-            - name: Примеры редактора моделей
-              href: model-editor-examples.md
-              items:
-                - name: Создание простейшей трехмерной модели
-                  href: how-to-create-a-basic-3-d-model.md
-                - name: Изменение центра вращения трехмерной модели
-                  href: how-to-modify-the-pivot-point-of-a-3-d-model.md
-                - name: Моделирование трехмерного ландшафта
-                  href: how-to-model-3-d-terrain.md
-                - name: Применение шейдера к трехмерной модели
-                  href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Работа с шейдерами
-          href: working-with-shaders.md
+          - name: Attribute (динамическое свойство XElement)
+            href: attribute-xelement-dynamic-property.md
+          - name: Element (динамическое свойство XElement)
+            href: element-xelement-dynamic-property.md
+          - name: Elements (динамическое свойство XElement)
+            href: elements-xelement-dynamic-property.md
+          - name: Descendants (динамическое свойство XElement)
+            href: descendants-xelement-dynamic-property.md
+          - name: Value (динамическое свойство XElement)
+            href: value-xelement-dynamic-property.md
+          - name: Xml (динамическое свойство XElement)
+            href: xml-xelement-dynamic-property.md
+        - name: Пример
+          href: wpf-data-binding-using-linq-to-xml-example.md
           items:
-            - name: Конструктор шейдеров
-              href: shader-designer.md
-            - name: Узлы конструктора шейдеров
-              href: shader-designer-nodes.md
-              items:
-                - name: Константные узлы
-                  href: constant-nodes.md
-                - name: Узлы параметров
-                  href: parameter-nodes.md
-                - name: Узлы текстур
-                  href: texture-nodes.md
-                - name: Математические узлы
-                  href: math-nodes.md
-                - name: Служебные узлы
-                  href: utility-nodes.md
-                - name: Узлы фильтров
-                  href: filter-nodes.md
-            - name: Примеры конструктора шейдеров
-              href: shader-designer-examples.md
-              items:
-                - name: Создание простейшего шейдера цвета
-                  href: how-to-create-a-basic-color-shader.md
-                - name: Создание простейшего шейдера с моделью освещения Ламберта
-                  href: how-to-create-a-basic-lambert-shader.md
-                - name: Создание простейшего шейдера цвета с моделью освещения Фонга
-                  href: how-to-create-a-basic-phong-shader.md
-                - name: Создание простейшего шейдера текстуры
-                  href: how-to-create-a-basic-texture-shader.md
-                - name: Создание шейдера текстуры с использованием оттенков серого
-                  href: how-to-create-a-grayscale-texture-shader.md
-                - name: Создание основанного на геометрии шейдера градиента
-                  href: how-to-create-a-geometry-based-gradient-shader.md
-                - name: Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
-                  href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
-                - name: Экспорт шейдера
-                  href: how-to-export-a-shader.md
-        - name: Использование трехмерных ресурсов в игре или приложении
-          href: using-3-d-assets-in-your-game-or-app.md
-          items:
-            - name: 'Экспорт текстуры, содержащей MIP-карты'
-              href: how-to-export-a-texture-that-contains-mipmaps.md
-            - name: Экспорт текстуры с предварительным умножением альфа-канала
-              href: how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: "Экспорт текстуры для использования с приложениями Direct2D и\_Javascipt"
-              href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: "Библиотека изображений Visual\_Studio"
-      href: the-visual-studio-image-library.md
+          - name: Сборка и запуск примера LinqToXmlDataBinding
+            href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
+          - name: Пошаговое руководство. Привязка данных LINQ to XML
+            href: walkthrough-linqtoxmldatabinding-example.md
+            items:
+            - name: Исходный код L2DBForm.xaml
+              href: l2dbform-xaml-source-code.md
+            - name: Исходный код L2DBForm.xaml.cs
+              href: l2dbform-xaml-cs-source-code.md
+  - name: Работа с трехмерными ресурсами для игр и приложений
+    href: working-with-3-d-assets-for-games-and-apps.md
+    items:
+    - name: Работа с текстурами и изображениями
+      href: working-with-textures-and-images.md
+      items:
+      - name: редактор изображений
+        href: image-editor.md
+      - name: Примеры редактора изображений
+        href: image-editor-examples.md
+        items:
+        - name: Создание простейшей текстуры
+          href: how-to-create-a-basic-texture.md
+        - name: Создание и изменение MIP-уровней
+          href: how-to-create-and-modify-mip-levels.md
+    - name: Работа с трехмерными моделями
+      href: working-with-3-d-models.md
+      items:
+      - name: Редактор моделей
+        href: model-editor.md
+      - name: Примеры редактора моделей
+        href: model-editor-examples.md
+        items:
+        - name: Создание простейшей трехмерной модели
+          href: how-to-create-a-basic-3-d-model.md
+        - name: Изменение центра вращения трехмерной модели
+          href: how-to-modify-the-pivot-point-of-a-3-d-model.md
+        - name: Моделирование трехмерного ландшафта
+          href: how-to-model-3-d-terrain.md
+        - name: Применение шейдера к трехмерной модели
+          href: how-to-apply-a-shader-to-a-3-d-model.md
+    - name: Работа с шейдерами
+      href: working-with-shaders.md
+      items:
+      - name: Конструктор шейдеров
+        href: shader-designer.md
+      - name: Узлы конструктора шейдеров
+        href: shader-designer-nodes.md
+        items:
+        - name: Константные узлы
+          href: constant-nodes.md
+        - name: Узлы параметров
+          href: parameter-nodes.md
+        - name: Узлы текстур
+          href: texture-nodes.md
+        - name: Математические узлы
+          href: math-nodes.md
+        - name: Служебные узлы
+          href: utility-nodes.md
+        - name: Узлы фильтров
+          href: filter-nodes.md
+      - name: Примеры конструктора шейдеров
+        href: shader-designer-examples.md
+        items:
+        - name: Создание простейшего шейдера цвета
+          href: how-to-create-a-basic-color-shader.md
+        - name: Создание простейшего шейдера с моделью освещения Ламберта
+          href: how-to-create-a-basic-lambert-shader.md
+        - name: Создание простейшего шейдера цвета с моделью освещения Фонга
+          href: how-to-create-a-basic-phong-shader.md
+        - name: Создание простейшего шейдера текстуры
+          href: how-to-create-a-basic-texture-shader.md
+        - name: Создание шейдера текстуры с использованием оттенков серого
+          href: how-to-create-a-grayscale-texture-shader.md
+        - name: Создание основанного на геометрии шейдера градиента
+          href: how-to-create-a-geometry-based-gradient-shader.md
+        - name: Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
+          href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
+        - name: Экспорт шейдера
+          href: how-to-export-a-shader.md
+    - name: Использование трехмерных ресурсов в игре или приложении
+      href: using-3-d-assets-in-your-game-or-app.md
+      items:
+      - name: Экспорт текстуры, содержащей MIP-карты
+        href: how-to-export-a-texture-that-contains-mipmaps.md
+      - name: Экспорт текстуры с предварительным умножением альфа-канала
+        href: how-to-export-a-texture-that-has-premultiplied-alpha.md
+      - name: Экспорт текстуры для использования с приложениями Direct2D и Javascipt
+        href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
+  - name: Библиотека изображений Visual Studio
+    href: the-visual-studio-image-library.md
 - name: Разработка приложений с конструктором рабочих процессов
   href: ../workflow-designer/developing-applications-with-the-workflow-designer.md
+ms.openlocfilehash: c13267e81a27f462a00d0139b55c371024a7d7ab
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484073"
