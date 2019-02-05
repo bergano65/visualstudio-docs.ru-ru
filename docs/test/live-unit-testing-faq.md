@@ -189,7 +189,7 @@ public class Class1
 
 Это известная ошибка прежних версий Visual Studio 2017, которая в сборках Live Unit Testing может повлиять на внедрение следующих данных заголовка Win32 PE:
 
-- версия файла (заданная в коде параметром @System.Reflection.AssemblyFileVersionAttribute);
+- версия файла (заданная в коде параметром @System.Reflection.AssemblyFileVersionAttribute );
 
 - значок Win32 (заданный в командной строке параметром `/win32icon:`);
 
