@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3545c01564a6128612d3c587df767560b59b1a49
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 10acf356ccfc790f9dd6a185c12a6ec5c26cccd3
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943518"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742486"
 ---
 # <a name="extend-the-output-window"></a>Расширения в окне вывода
 **Вывода** окно — это набор панелей текста для чтения и записи. Visual Studio есть этих встроенных панелей: **Построение**, в какие проекты обмена сообщениями о сборках, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения о интегрированной среды разработки. Проекты получить ссылку на **построения** области автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса, а также Visual Studio предлагает прямой доступ к **Общие** области через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Служба. Помимо встроенных панелей можно создать и управлять собственных настраиваемых панелей.  
@@ -115,7 +115,7 @@ void CreatePane(string title)
     catch (ArgumentException)  
     {  
         // Create a new pane and write to it.  
-        return panes.Add(title);  
+        panes.Add(title);  
     }  
 }  
 ```  
