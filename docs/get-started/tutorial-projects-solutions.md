@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f62e963af28a165246ba7e0ec977d7fd2149d622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69b5b7d9d76244be356afa77275e0987db741c4f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033769"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483592"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Сведения о проектах и решениях
 
 В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта различные *шаблоны*, доступные в Visual Studio.
 

@@ -14,16 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 757ec79e2ae1996c6453fd01b20e71e9a6d62594
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089202"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424516"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C#
 
 Выполняя данное пошаговое руководство, вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для создания приложений с помощью Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и выполнить отладку, одновременно приобретая навыки работы в интегрированной среде разработки ([IDE](visual-studio-ide.md)).
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="configure-the-ide"></a>Настройка интегрированной среды разработки (IDE)
 

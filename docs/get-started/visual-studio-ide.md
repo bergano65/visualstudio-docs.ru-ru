@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954778"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483787"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
@@ -98,7 +98,7 @@ ms.locfileid: "54954778"
 
 ## <a name="install-the-visual-studio-ide"></a>Установка интегрированной среды разработки Visual Studio
 
-Эта обзорная статья описывает создание простого проекта и использование некоторых возможностей Visual Studio, таких как изменение цветовой темы, использование [IntelliSense](../ide/using-intellisense.md) в качестве вспомогательного средства написания кода и отладку приложения для просмотра значения переменной во время выполнения программы. Чтобы приступить к работе, [скачайте и установите Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Эта обзорная статья описывает создание простого проекта и использование некоторых возможностей Visual Studio, таких как изменение цветовой темы, использование [IntelliSense](../ide/using-intellisense.md) в качестве вспомогательного средства написания кода и отладку приложения для просмотра значения переменной во время выполнения программы. Чтобы приступить к работе, [скачайте и установите Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 Этот модульный установщик позволяет выбрать и установить *рабочие нагрузки*, которые являются группами функций, необходимыми для предпочитаемого языка программирования или платформы. Выполните следующие инструкции по [созданию программы](#create-a-program) и в процессе установки выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core**.
 

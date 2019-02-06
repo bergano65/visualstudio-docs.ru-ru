@@ -15,12 +15,12 @@ manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b3d41ab51e2f7f7e410e9c8443d864ab46328b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7bd87013245bd1c9a28ea093433687009f9c35e8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979950"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484151"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "54979950"
 
 Для приложений на JavaScript, Python, PHP, Ruby или C++ можно подключаться к данным, как это сделать что-нибудь еще, получение библиотеки и написания кода. Для приложений .NET Visual Studio предоставляет средства, которые можно использовать для исследования источники данных и создавать модели объектов для хранения и обработки данных в памяти и привязка данных к пользовательскому интерфейсу. Microsoft Azure предоставляет пакеты SDK для .NET, Java, Node.js, PHP, Python, Ruby и мобильных приложений и средств в Visual Studio для подключения к службе хранилища Azure.
 
-В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые могут быть использованы из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — это службы данных, которые включают все подготовки и администрирования из базового хранилища данных. **Разработки Azure** рабочей нагрузки в [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
+В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые могут быть использованы из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — это службы данных, которые включают все подготовки и администрирования из базового хранилища данных. **Разработки Azure** рабочей нагрузки в [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
 
 ![Рабочая нагрузка "Разработка для Azure"](media/azure-development-workload.png)
 

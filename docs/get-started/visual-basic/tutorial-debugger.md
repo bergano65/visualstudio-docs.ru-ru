@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6033ce2329974cc3c2b1f140d02d112e4f87ba9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8bcdf55e8e28c479f611d9cea34d57d29249e13b
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985842"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424464"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "54985842"
 
 * У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка **Разработка классических приложений .NET**.
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
 
     Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 

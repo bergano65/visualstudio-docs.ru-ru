@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 3fa12b878a21523e53a3ff78ad838e41eb95888f
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089215"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690441"
 ---
 # <a name="features-of-visual-studio-2017"></a>Возможности Visual Studio 2017
 
@@ -24,7 +24,7 @@ ms.locfileid: "55089215"
 
 Модульный установщик Visual Studio позволяет выбрать и установить *рабочие нагрузки*. Рабочие нагрузки — это группы функций, необходимых для языка программирования или платформы, которую вы предпочитаете. Этот подход обеспечивает меньший объем установки Visual Studio, а также более быструю установку и обновление среды.
 
-Установите Visual Studio 2017 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio 2017 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 Дополнительные сведения о настройке Visual Studio в своей системе см. в статье [Установка версии-кандидата Visual Studio 2017](../install/install-visual-studio.md).
 
