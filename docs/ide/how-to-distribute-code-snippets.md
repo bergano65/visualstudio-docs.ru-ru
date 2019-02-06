@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Распространение фрагментов кода
+title: Как выполнить  Распространение фрагментов кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985712"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690376"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Как выполнить Распространение фрагментов кода
+# <a name="how-to-distribute-code-snippets"></a>Как выполнить  Распространение фрагментов кода
 
 Фрагменты кода можно передать другим пользователям для установки на других компьютерах с помощью **диспетчера фрагментов кода**. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio. Пользователи Visual Studio могут установить это расширение.
 
-Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Настройка расширения
 

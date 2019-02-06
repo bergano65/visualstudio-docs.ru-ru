@@ -12,19 +12,19 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c55f0bf2d36d06cc47e39086236b41d4cc8340c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9de49d9e5c7c1ebbe8fef41ff5efdb65c96d6e9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961615"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483878"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Сведения о проектах и решениях с использованием Visual Basic
 
 В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта различные *шаблоны*, доступные в Visual Studio.
 

@@ -13,19 +13,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14b33d1b9469b817253812ae711eb5c65c74b70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926089"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424568"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 В этой статье предполагается, что вы уже знакомы с C#. Если это не так, мы рекомендуем сначала изучить руководство по [началу работы с C# и ASP.NET Core в Visual Studio](tutorial-aspnet-core.md).
 

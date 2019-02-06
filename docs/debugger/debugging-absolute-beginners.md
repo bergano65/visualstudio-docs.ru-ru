@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918213"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484229"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Принципы отладки для начинающих
 
@@ -78,7 +78,7 @@ ms.locfileid: "54918213"
 
 1. Для этого вам потребуется установленная среда Visual Studio с рабочими нагрузками **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core** (в зависимости от того, приложение какого типа вы создаете).
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
 
     Если у вас уже установлена среда Visual Studio без нужных рабочих нагрузок, щелкните **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем щелкните **Изменить**.
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a8acda9d6edf2aace86079f72e27cda76b5a9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e550bb3ead112ed614bb95c1dc90036a33ef0d09
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001999"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690545"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Учебник. Сведения об отладке кода C++ с помощью Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "55001999"
 
 * У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка **Разработка классических приложений на C++**.
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
 
     Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
 

@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b4cad6d3f033b03f28851fca3c88e9efcc271d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fa182d504fba8a939d44684f1611debec448593
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945103"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690493"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с Visual Studio в качестве IDE для Python создается простое веб-приложение Python на платформе Flask. Вы создадите проект при помощи дискретных действий, которые помогут ознакомиться с базовыми функциями Visual Studio.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В установщике выберите рабочую нагрузку **Разработка на Python**.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого. В установщике выберите рабочую нагрузку **Разработка на Python**.
 
 ## <a name="create-the-project"></a>Создание проекта
 

@@ -12,19 +12,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebc53148e40be1285c554526743c4950465c3a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3cf4a4160ababa6164cbf0148c018554294aa75
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983408"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424542"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Сведения создании проектов и решений на C#
 
 В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта различные *шаблоны*, доступные в Visual Studio.
 
