@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948184"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742434"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Рефакторинг для синхронизации типа с именем файла или имени файла с типом
 
@@ -31,6 +31,9 @@ ms.locfileid: "54948184"
 **Когда?** Вы переименовали файл или тип и еще не обновили их в соответствии с их именами.
 
 **Зачем?** Если поместить тип в файл с другим именем (или наоборот), вам трудно будет найти нужный файл или тип. Если переименовать тип или файл, будет проще читать код и удобнее переходить по нему.
+
+> [!NOTE]
+> Этот рефакторинг пока недоступен для проектов .NET Standard и .NET Core.
 
 ## <a name="how-to"></a>Практические советы
 
@@ -62,8 +65,6 @@ ms.locfileid: "54948184"
    - Visual Basic: В примере ниже файл **Employee.cs** был переименован в **Person.cs**, чтобы его имя совпадало с именем типа.
 
        ![Встроенный результат — Visual Basic](media/synctype-result-vb.png)
-
-> ![ПРИМЕЧАНИЕ] Этот рефакторинг пока не доступен для проектов .NET Standard и .NET Core.
 
 ## <a name="see-also"></a>См. также
 

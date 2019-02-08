@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924604"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484203"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
 1. В меню **Файл** выберите **Добавить** > **Создать проект**.
+
+   > [!TIP]
+   > Существует несколько способов добавить дополнительный проект в существующее решение. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите пункты **Добавить** > **Создать проект**. Или выберите **Файл** > **Создать** > **Проект**, а затем в диалоговом окне **Создать проект** выберите **Добавить решение**:
+   >
+   > ![Добавление параметра решения в диалоговом окне создания проекта](media/add-to-solution.png)
 
 2. В диалоговом окне **Новый проект** разверните узлы **Установленные** и **Visual C#** и выберите **Тест**.
 

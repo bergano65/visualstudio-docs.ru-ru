@@ -1,7 +1,7 @@
 ---
 title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
-ms.date: 10/29/2018
+ms.date: 02/01/2019
 ms.prod: visual-studio-dev15
 ms.custom: mvc,seodec18
 ms.topic: quickstart
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b30580db600b93464a7db377370ad49bd3a935a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 61bfe7dfa42542199f3773d1587d0e10ec315f98
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021092"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571152"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -28,11 +28,7 @@ ms.locfileid: "55021092"
 
 ### <a name="install-visual-studio"></a>Установка Visual Studio
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
-
-### <a name="update-visual-studio"></a>Обновление Visual Studio
-
-Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
 ### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
 
@@ -46,7 +42,7 @@ ms.locfileid: "55021092"
 
 1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
-1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. Затем назовите файл `HelloWorld` и нажмите кнопку **ОК**.
+1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. <br/><br/>Затем назовите файл `HelloWorld` и нажмите кнопку **ОК**.
 
    ![Создание проекта веб-приложения ASP.NET Core для C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -61,24 +57,22 @@ ms.locfileid: "55021092"
    >
    > (Возможно, перед тем как продолжить установку рабочей нагрузки, придется закрыть Visual Studio.)
 
-1. В верхнем раскрывающемся меню диалогового окна **Создание веб-приложения ASP.NET Core** выберите **ASP.NET Core 2.0** или более позднюю версию.
+1. В верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** выберите **ASP.NET Core 2.1**. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
+
+   ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Если **ASP.NET Core 2.0** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
-
-1. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
-
-   ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/quickstart-aspnet-core20.png)
+   > Если **ASP.NET Core 2.1** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
 
 Через некоторое время файл проекта откроется в Visual Studio.
 
-## <a name="create-the-app"></a>Создание приложения
+## <a name="create-and-run-the-app"></a>Создание и запуск приложения
 
 1. В **обозревателе решений** разверните папку **Страницы** и выберите **About.cshtml**.
 
    ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-   Этот файл соответствует странице веб-приложения с именем **О программе**.
+   Этот файл соответствует странице с заголовком **О программе** веб-приложения, которое запускается в веб-браузере.
 
    ![Страница "О программе" в веб-приложении](../ide/media/csharp-aspnet-about-page.png)
 
@@ -90,7 +84,7 @@ ms.locfileid: "55021092"
 
    ![Изменение значения по умолчанию кода HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. В **обозревателе решений** разверните **About.cshtml** и выберите **About.cshtml.cs**. (Файл также соответствует странице веб-приложения **О программе**.)
+1. В **обозревателе решений** разверните **About.cshtml** и выберите **About.cshtml.cs**. (Файл также соответствует странице **О программе** в веб-браузере.)
 
    ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-code-file.png)
 
@@ -102,22 +96,24 @@ ms.locfileid: "55021092"
 
    ![Изменение текста сообщения по умолчанию для области описания приложения в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-app"></a>Запуск приложения
+1. Выберите **IIS Express** или нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
 
-1. Нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
+   ![Нажмите кнопку "IIS Express" в Visual Studio](../ide/media/csharp-aspnet-helloworld-iisbutton.png)
 
    > [!NOTE]
    > Если выводится сообщение об ошибке с текстом **Не удается подключиться к веб-серверу IIS Express** или сообщение об ошибке, где упоминается SSL-сертификат, закройте Visual Studio. После этого откройте Visual Studio с помощью пункта **Запуск от имени администратора** контекстного меню. Затем снова запустите приложение.
 
-1. В верхней части веб-страницы выберите **О программе**.
+1. В веб-браузере убедитесь, что страница **О программе** содержит введенный вами текст.
 
-   ![Выбор пункта "О программе" на веб-странице](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. Просмотрите обновленный текст, который был добавлен на страницу **О программе**.
-
-   ![Просмотр обновленной страницы "О программе", в которую был добавлен текст.](../ide/media/csharp-aspnet-about-page-hello-world.png)
+   ![Обновленная страница About (О программе) с внесенными изменениями](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
 1. Закройте веб-браузер.
+
+### <a name="review-your-work"></a>Проверка работы
+
+Просмотрите следующую анимацию для проверки работы, выполненной в предыдущем разделе.
+
+  ![Просмотрите анимированный GIF-файл, демонстрирующий создание и запуск простого веб-приложения ASP.NET Core в Visual Studio на C#](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio IDE.
 

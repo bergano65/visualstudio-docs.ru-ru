@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951291"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483982"
 ---
 # <a name="msbuild-task-reference"></a>Справочник по задачам MSBuild
 Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. После установки [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. См. дополнительные сведения о [задачах Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ ms.locfileid: "54951291"
  [Задача GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
  Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.  
 
- [Задача GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
+ [Задача GetFileHash](../msbuild/getfilehash-task.md)  
+ Вычисляет контрольные суммы содержимого файла или набора файлов.
+
+[Задача GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
  Извлекает путь к сборкам [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
 
  [Задача GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ ms.locfileid: "54951291"
 
  [Задача Vbc](../msbuild/vbc-task.md)  
  Вызывает компилятор Visual Basic для создания исполняемых файлов, библиотек динамической компоновки или модулей кода.  
+
+ [Задача VerifyFileHash](../msbuild/verifyfilehash-task.md)  
+ Проверяет, что файл соответствует ожидаемому хэшу файла.
 
  [Задача Warning](../msbuild/warning-task.md)  
  Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  

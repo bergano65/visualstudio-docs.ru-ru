@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031764"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424282"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить Замена параметров в шаблоне
+# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить  Замена параметров в шаблоне
 
 Параметры шаблонов позволяют заменять идентификаторы, такие как имена классов и пространства имен, при создании файла на основе шаблона. Параметры шаблона можно добавлять в существующие шаблоны или использовать для создания собственных шаблонов.
 
@@ -25,7 +25,7 @@ ms.locfileid: "55031764"
 
 В следующем разделе показано, как изменить шаблон для замены имени пространства имен на безопасное имя проекта.
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Использование параметра для замены имени пространства имен
+## <a name="example---namespace-name"></a>Пример — имя пространства имен
 
 1. Вставьте параметр в один или несколько файлов кода в шаблоне. Например:
 

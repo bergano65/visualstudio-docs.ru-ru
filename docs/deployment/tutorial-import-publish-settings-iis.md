@@ -1,7 +1,7 @@
 ---
 title: Публикация в IIS посредством импорта параметров публикации
 description: Создание и импорт профиля публикации для развертывания приложения из Visual Studio в IIS
-ms.date: 05/07/2018
+ms.date: 01/31/2019
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 064eb9f57db538df4cae32777e9ac61359ddea4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026884"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690454"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
@@ -38,19 +38,21 @@ ms.locfileid: "55026884"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* У вас должна быть установлена среда Visual Studio 2017 и иметься рабочая нагрузка **ASP.NET** и **.NET Framework**. Для приложения .NET Core также требуется рабочая нагрузка **.NET Core**.
+* На компьютере для разработки должна быть установлена среда Visual Studio 2017 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
 
-* Чтобы создать файл параметров публикации из IIS, требуется компьютер под управлением Windows Server 2012 или Windows Server 2016, а также правильно настроенная роль веб-сервера IIS. Также требуется установить ASP.NET 4.5 и ASP.NET Core. Для ASP.NET Core см. раздел [Публикация в IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Для ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* На сервере должна быть запущена ОС Windows Server 2012 или Windows Server 2016, а [роль веб-сервера IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) должна быть правильно установлена (это необходимо для создания файла параметров публикации (*\*.publishsettings*)). Также требуется установить на сервере ASP.NET 4.5 или ASP.NET Core. Для настройки ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Для настройки ASP.NET Core см. раздел [Размещение ASP.NET Core в Windows со службами IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создание проекта ASP.NET в Visual Studio
 
 1. На компьютере, где выполняется Visual Studio, последовательно выберите **Файл** > **Создать проект**.
 
-1. В разделе **Visual C#** или **Visual Basic** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** или (только C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
+1. В разделе **Visual C#** или **Visual Basic** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
-    Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Ознакомьтесь с предварительными требованиями в этой статье, чтобы определить рабочие нагрузки Visual Studio, которые необходимо установить.
+    Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Установите рабочую нагрузку **ASP.NET и веб-разработка**.
+
+    Выбранный шаблон проекта (ASP.NET или ASP.NET Core) должен соответствовать 
 
 1. Выберите **MVC** (.NET Framework) или **Веб-приложение (модель-представление-контроллер)** (для .NET Core), убедитесь, что выбран параметр **Без проверки подлинности**, а затем нажмите кнопку **ОК**.
 

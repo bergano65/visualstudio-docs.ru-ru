@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999760"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424386"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
-Используйте Visual Studio, чтобы определить и запустить модульные тесты для обеспечения работоспособности кода, нужного объема протестированного кода, а также для обнаружения ошибок и сбоев, прежде чем с ними столкнутся клиенты.
+Используйте Visual Studio, чтобы определить и запустить модульные тесты для обеспечения работоспособности кода, нужного объема протестированного кода, а также для обнаружения ошибок и сбоев, прежде чем с ними столкнутся клиенты. Выполняйте модульные тесты регулярно, чтобы обеспечить правильную работу вашего кода.
 
 ## <a name="create-unit-tests"></a>Создание модульных тестов
 
-Создавайте модульные тесты и выполняйте их регулярно, чтобы обеспечить правильную работу вашего кода.
+В этом разделе в общих чертах описывается создание проекта модульного теста.
+
+> [!TIP]
+> Тестируемый проект HelloWorld является примером проекта, и для него не предусмотрено отображение кода. Если вы хотите создать проект HelloWorld для тестирования, см. раздел [Создание первого консольного приложения на C#](../ide/quickstart-csharp-console.md). Полное пошаговое руководство см. в разделе [Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Создайте проект модульного теста.
 
@@ -150,6 +153,7 @@ ms.locfileid: "54999760"
 
 ## <a name="see-also"></a>См. также
 
+* [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Команда "Создать модульные тесты"](create-unit-tests-menu.md)
 * [Создание тестов с помощью IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Выполнение тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)

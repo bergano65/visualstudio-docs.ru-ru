@@ -1,6 +1,6 @@
 ---
 title: Публикация на веб-сайте
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -10,18 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f26bab92d2004969c5cbd83cd9c7eef36f483c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41b8a6a7c075a72f010de1e3b57d5a47514498dd
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936337"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571059"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Публикация веб-приложения на веб-сайте с помощью Visual Studio
 
 Вы можете использовать средство **публикации** для публикации приложений ASP.NET, ASP.NET Core, .NET Core и Python на веб-сайте из Visual Studio. Для Node.js эти действия поддерживаются, однако отличается пользовательский интерфейс.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Если вам нужно опубликовать классическое приложение Windows в общую сетевую папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Публикация на веб-сайте
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020468"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483722"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
@@ -30,11 +30,11 @@ ms.locfileid: "55020468"
 
 |Функция|Описание|Язык|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|C#|
+|`SimpleTypeName(TypeName)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|C#|
 
-## <a name="example"></a>Пример
+## <a name="generateswitchcases-example"></a>Пример GenerateSwitchCases
 
 В следующем примере показано, как использовать функцию `GenerateSwitchCases`. При вставке данного фрагмента и вводе перечисления в литерал `$switch_on$` литерал `$cases$` создает оператор `case` для каждого значения в перечислении.
 
@@ -76,7 +76,7 @@ ms.locfileid: "55020468"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Пример
+## <a name="classname-example"></a>Пример ClassName
 
 В следующем примере показано, как использовать функцию `ClassName`. При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом месте файла кода.
 
@@ -123,7 +123,7 @@ ms.locfileid: "55020468"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Пример
+## <a name="simpletypename-example"></a>Пример SimpleTypeName
 
 Этот пример показывает, как использовать функцию `SimpleTypeName`. При вставке этого фрагмента в файл кода литерал `$SystemConsole$` заменяется простейшей формой типа <xref:System.Console> в контексте, в котором фрагмент был вызван.
 

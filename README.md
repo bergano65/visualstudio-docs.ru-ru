@@ -1,6 +1,6 @@
-# <a name="visual-studio-2017-documentation"></a>Документация по Visual Studio 2017
+# <a name="visual-studio-documentation"></a>Документация по Visual Studio
 
-Добро пожаловать! Этот репозиторий содержит исходные файлы для технической документации по Visual Studio 2017. Эти разделы опубликованы на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Добро пожаловать! Этот репозиторий содержит исходные файлы для технической документации по Visual Studio. Эти разделы опубликованы на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
 Этот репозиторий был перемещен 23 июня 2017 г. с адреса https://github.com/Microsoft/vsdocs. Трафик на старые URL-адреса перенаправляется сюда.
 
