@@ -102,7 +102,7 @@ webpack объединяет файлы JavaScript, чтобы их можно �
 * react
 * react-dom
 * express
-* путем
+* path
 * ts-loader
 * typescript
 * webpack
