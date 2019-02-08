@@ -1,6 +1,6 @@
 ---
 title: Публикация в службе приложений на Linux
-ms.date: 07/23/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,18 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3e80f96e1af39747a6dfa9fb9737ec11bb5baf00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951941"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483969"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Публикация веб-приложения ASP.NET Core в службе приложений на Linux с помощью Visual Studio
 
-Вы можете использовать средство **Опубликовать** для публикации приложений ASP.NET Core в службе приложений Azure на Linux.
+Начиная с Visual Studio 2017 версии 15.7 вы можете публиковать приложения ASP.NET Core в службе приложений Azure для Linux (с использованием контейнеров) с помощью одного из следующих методов.
 
-Для развертывания в службе приложений на Linux с использованием средства **Опубликовать** требуется среда Visual Studio 2017 версии 15.7.
+* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы публиковать приложения ASP.NET Core в службе приложений для Linux (с помощью контейнеров).
+
+В этой статье описывается использование средства **публикации** для однократного развертывания.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: Публикация в службу приложений Azure
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -10,16 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3bad335fe9781cbd039f17a1a78c51bfa63775d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970647"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483761"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 
-С помощью инструмента **Опубликовать** вы можете публиковать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или службе приложений Azure для Linux (с использованием контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+Приложения ASP.NET, ASP.NET Core, Node.js и .NET Core можно публиковать в службе приложений Azure или службе приложений Azure для Linux (с использованием контейнеров) одним из следующих методов.
+
+* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы развертывать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или службе приложений для Linux (с помощью контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+В этой статье описывается использование средства **публикации** для однократного развертывания.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 

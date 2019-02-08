@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935024"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424451"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
 Вы можете заменить значения в шаблоне при создании его экземпляра. Чтобы настроить эту функцию, используйте *параметры шаблона*. Они позволяют заменить такие значения, как имена классов и пространства имен в шаблоне. Эти параметры заменяет мастер шаблонов, запускающийся в фоновом режиме, когда пользователь добавляет новый элемент или проект.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона
+## <a name="declare-and-enable-template-parameters"></a>Объявление и включение параметров шаблона
 
 Параметры шаблона объявляются в формате $*параметр*$. Например:
 
@@ -32,7 +32,7 @@ ms.locfileid: "54935024"
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах
+### <a name="enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах
 
 1. В *VSTEMPLATE*-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.
 
@@ -46,11 +46,12 @@ ms.locfileid: "54935024"
 
 ## <a name="reserved-template-parameters"></a>Зарезервированные параметры шаблона
 
-В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном.
+В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном:
 
 |Параметр|Описание|
 |---------------|-----------------|
 |clrversion|Текущая версия среды CLR.|
+|ext_*|Добавьте префикс `ext_` к любому параметру, чтобы сослаться на переменные родительского шаблона. Например, `ext_safeprojectname`.|
 |guid[1–10]|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1`).|
 |itemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**.|
 |machinename|Имя текущего компьютера (например, Computer01).|
@@ -118,6 +119,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>См. также
 
+- [Практическое руководство. замена параметров в шаблоне](how-to-substitute-parameters-in-a-template.md)
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964617"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484112"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
@@ -64,7 +64,7 @@ ms.locfileid: "54964617"
    > [!NOTE]
    >  Теперь функция IntelliSense поддерживает два режима завершения инструкций: *режим завершения* и *режим предложений*. Режим предложений следует применять в тех случаях, когда классы и члены используются до их определения. Когда открыто окно **IntelliSense**, для переключения между режимом завершения и режимом предложений можно нажать сочетание клавиш **CTRL**+**ALT**+**ПРОБЕЛ**. Дополнительные сведения см. в статье [Использование IntelliSense](../ide/using-intellisense.md). Режим предложений поможет вам при вводе `Automobile` в следующем шаге.
 
-3. Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано на приведенных ниже снимках экрана. Появится волнистая линия подчеркивания, свидетельствующая об ошибке во время компиляции, а в левом поле (только для C#) или непосредственно под волнистой линией, если навести на нее указатель мыши, появится значок [Быстрые действия](../ide/quick-actions.md) в виде лампочки.
+3. Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано на приведенных ниже снимках экрана. Отобразится волнистая линия, которая указывает на ошибку во время компиляции, и появится лампочка с ошибкой в [Быстрых действиях](../ide/quick-actions.md) на левом поле или прямо под волнистой линией при наведении на нее.
 
     ![Быстрые действия в Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -90,7 +90,7 @@ ms.locfileid: "54964617"
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Так как код ссылается на два неопределенных свойства `Automobile`, под `Model` и `TopSpeed` появляется волнистая линия подчеркивания. Наведите указатель мыши на `Model` и выберите значок **Быстрые действия** в виде лампочки, а затем выберите **Создайте свойство "Automobile.Model"**.
+2. Так как код ссылается на два неопределенных свойства `Automobile`, под `Model` и `TopSpeed` появляется волнистая линия подчеркивания. Наведите указатель мыши на `Model` и выберите значок **Быстрые действия** в виде лампочки с ошибкой, а затем выберите **Создайте свойство "Automobile.Model"**.
 
 3. Аналогичным образом создайте заглушку для свойства `TopSpeed`.
 
@@ -104,12 +104,12 @@ ms.locfileid: "54964617"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Под красной волнистой линией щелкните значок **Быстрые действия** в виде лампочки и выберите пункт **Создайте конструктор в "Automobile"**.
+2.  Под красной волнистой линией щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"**.
 
      В файле класса `Automobile` обратите внимание на то, что новый конструктор проверил имена локальных переменных, используемых в вызове конструктора, обнаружил свойства с одинаковыми именами в классе `Automobile` и создал в теле конструктора код для хранения значений аргументов в свойствах `Model` и `TopSpeed` .
 
 
-3.  После создания нового конструктора под вызовом конструктора по умолчанию в `DefaultAutomobileIsInitializedCorrectly`отображается волнистая линия. Сообщение об ошибке указывает на то, что класс `Automobile` не имеет конструктора, который не принимает ни одного аргумента. Чтобы создать явный конструктор по умолчанию без параметров, щелкните значок **Быстрые действия** в виде лампочки и выберите пункт **Создайте конструктор в "Automobile"**.
+3.  После создания нового конструктора под вызовом конструктора по умолчанию в `DefaultAutomobileIsInitializedCorrectly`отображается волнистая линия. Сообщение об ошибке указывает на то, что класс `Automobile` не имеет конструктора, который не принимает ни одного аргумента. Чтобы создать явный конструктор по умолчанию без параметров, щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Создание заглушки метода
 Предположим, что согласно спецификации новый объект `Automobile` может быть переведен в состояние `IsRunning`, если его свойства `Model` и `TopSpeed` содержат значения, отличные от значений по умолчанию.
@@ -119,7 +119,7 @@ ms.locfileid: "54964617"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Щелкните значок **Быстрые действия** в виде лампочки для вызова метода `myAuto.Start`, а затем выберите пункт **Создайте метод "Automobile.Start"**.
+2.  Щелкните значок **Быстрые действия** в виде лампочки с ошибкой для вызова метода `myAuto.Start`, а затем выберите пункт **Создать метод "Automobile.Start"**.
 
 3.  Щелкните значок **Быстрые действия** в виде лампочки для свойства `IsRunning`, а затем выберите пункт **Создайте свойство "Automobile.IsRunning"**.
 

@@ -2,7 +2,7 @@
 title: Обзор возможностей развертывания
 description: Сведения о вариантах развертывания приложений из среды Visual Studio.
 ms.custom: mvc
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974936"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742460"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство. Знакомство с возможностями развертывания в Visual Studio
+# <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
 Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания. (Многие приложения различных типов поддерживают другие средства развертывания, такие как развертывание из командной строки или NuGet, которые не описываются в этой статье.)
 
@@ -44,24 +44,32 @@ ms.locfileid: "54974936"
 
     ![Выбор команды "Опубликовать"](../deployment/media/quickstart-publish.png)
 
-- **Среда выполнения Visual C++**. Для развертывания среды выполнения Visual C++ можно использовать локальное развертывание или статическое связывание. Дополнительные сведения см. в статье [Развертывание приложений, разработанных специально для настольных систем (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows в папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Публикация в Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** и **Node.js**. С помощью средства публикации вы можете быстро развертывать приложения в Службе приложений Azure или на виртуальной машине Azure. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. (Если ранее вы настроили профили публикации, затем необходимо выбрать команду **Создать новый профиль**.) В диалоговом окне публикации выберите **Служба приложений** или **Виртуальная машина Azure** и выполните инструкции по настройке.
+- **ASP.NET**, **ASP.NET Core**, **Python** и **Node.js**. Публикуйте приложения в службе приложений Azure или службе приложений Azure в Linux (с помощью контейнеров), используя один из следующих методов.
 
-    ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-azure.png "Выбор службы приложений Azure")
+  - Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-    В Visual Studio 2017 версии 15.7 или более поздних приложения ASP.NET Core можно развертывать в **Службе приложений в Linux**.
+  - Для однократного развертывания приложений (или развертывания вручную) используйте средство **публикации** в Visual Studio.
 
-    Информацию о приложениях Python см. в статье [Python. Публикация в службу приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+  Чтобы иметь больше возможностей для настройки конфигурации сервера, также можно использовать средство **публикации** для развертывания приложений на виртуальной машине Azure.
 
-    Краткое ознакомительное руководство приводится в статьях [Публикация в Azure](quickstart-deploy-to-azure.md) и [Публикация в Linux](quickstart-deploy-to-linux.md). Также см. статью [Публикация приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Информацию о развертывании с использованием Git см. в статье [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment).
+  Чтобы использовать средство **публикации**, щелкните правой кнопкой мыши проект в обозревателе решений и выберите **Опубликовать**. (Если ранее вы настроили профили публикации, затем необходимо выбрать команду **Создать новый профиль**.) В диалоговом окне публикации выберите **Служба приложений** или **Виртуальная машина Azure** и выполните инструкции по настройке.
 
-    Дополнительные сведения об импорте профиля публикации из службы приложений Azure в Visual Studio см. в статье [Импорт параметров публикации и развертывание в Azure](../deployment/tutorial-import-publish-settings-azure.md).
+  ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-azure.png "Выбор службы приложений Azure")
 
-    > [!NOTE]
-    > Если у вас нет учетной записи Azure, вы можете [зарегистрироваться здесь](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+  Начиная с Visual Studio 2017 версии 15.7 приложения ASP.NET Core можно развертывать в **Службе приложений для Linux**.
+
+  Информацию о приложениях Python см. в статье [Python. Публикация в службу приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+
+  Краткое ознакомительное руководство приводится в статьях [Публикация в Azure](quickstart-deploy-to-azure.md) и [Публикация в Linux](quickstart-deploy-to-linux.md). Также см. статью [Публикация приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Информацию о развертывании с использованием Git см. в статье [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment).
+
+  Дополнительные сведения об импорте профиля публикации из службы приложений Azure в Visual Studio см. в статье [Импорт параметров публикации и развертывание в Azure](../deployment/tutorial-import-publish-settings-azure.md).
+
+  > [!NOTE]
+  > Если у вас нет учетной записи Azure, вы можете [зарегистрироваться здесь](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Публикация в Интернете или развертывание в сетевую папку
 
@@ -75,9 +83,7 @@ ms.locfileid: "54974936"
 
     Также вы можете развертывать приложения и службы ASP.NET некоторыми другими способами. Дополнительные сведения см. в статье [Развертывание веб-приложений и служб ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Среда выполнения Visual C++**. Для развертывания среды выполнения Visual C++ можно использовать централизованное развертывание. Дополнительные сведения см. в статье [Развертывание приложений, разработанных специально для настольных систем (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
-
-- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows на веб-сервере или в общей сетевой папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статьях [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) и [Развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows на веб-сервере или в общей сетевой папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Публикация в Microsoft Store
 
@@ -95,25 +101,25 @@ ms.locfileid: "54974936"
 
 Если вы развертываете приложение универсальной платформы Windows на устройство в целях тестирования, ознакомьтесь со статьей [Запуск приложений UWP на удаленном компьютере в среде Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-client"></a>Создание пакета установщика (клиент Windows)
+## <a name="create-an-installer-package-windows-desktop"></a>Создание пакета установщика (классическое приложение Windows)
 
-Если возможностей [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) недостаточно для установки вашего классического приложения, вы можете создать пакет установщика, проект установки или собственный начальный загрузчик.
+Если возможностей [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) недостаточно для установки вашего классического приложения, вы можете создать пакет установщика Windows (файл установки MSI или EXE) или собственный начальный загрузчик.
 
-- Установщик WiX на базе MSI можно создать с помощью [расширения с набором инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Пакет установщика на базе MSI можно создать с помощью [расширения с набором инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Это программа командной строки.
 
-- Вместе с Visual Studio 2017 можно использовать компонент [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из состава программного обеспечения Flexera (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017. Информацию о ее дальнейшей доступности см. в [программном обеспечении Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+- Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017. Информацию о ее дальнейшей доступности см. в [программном обеспечении Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
-- Если вы хотите создать проект установки (vdproj), необходимо установить [расширение проектов установщика для среды Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Пакет установщика MSI или EXE можно создать с помощью проекта установки (VDPROJ). Чтобы использовать этот вариант, установите [расширение проектов установщика Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Вы можете установить компоненты, необходимые для классических приложений, путем настройки универсального установщика, также называемого начальным загрузчиком. Дополнительные сведения см. в статье [Предварительные условия для развертывания приложения](../deployment/application-deployment-prerequisites.md).
+- Вы также можете установить компоненты, необходимые для классических приложений, путем настройки универсального установщика, также называемого начальным загрузчиком. Дополнительные сведения см. в статье [Предварительные условия для развертывания приложения](../deployment/application-deployment-prerequisites.md).
 
 ## <a name="deploy-to-test-lab"></a>Развертывание в тестовой лаборатории
 
 Чтобы иметь возможности для реализации более сложных сценариев разработки и тестирования, можно развертывать приложения в виртуальных средах. Дополнительные сведения см. в статье [Тестирование в лабораторной среде](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>Развертывание DevOps
+## <a name="continuous-deployment"></a>Непрерывное развертывание
 
-В командной среде для обеспечения непрерывного развертывания можно использовать Azure Pipelines. Дополнительные сведения см. в статьях [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) и [Развертывание в Azure](/azure/devops/deploy-azure/index?view=vsts).
+Для непрерывного развертывания приложения можно использовать Azure Pipelines. Дополнительные сведения см. в статьях [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) и [Развертывание в Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Развертывания приложений других типов
 
