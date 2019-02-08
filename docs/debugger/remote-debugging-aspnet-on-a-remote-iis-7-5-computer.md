@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53829200"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023958"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -48,7 +48,7 @@ ms.locfileid: "53829200"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создавать приложения ASP.NET 4.5.2 приложения на компьютере с Visual Studio
   
-1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В **ASP.NET 4.5.2</strong> выберите шаблоны **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
+1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В разделе шаблонов ASP.NET 4.5.2</strong> выберите шаблон **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
 
 2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
 
@@ -206,7 +206,7 @@ ms.locfileid: "53829200"
 
     В Visual Studio должна быть достигнута точка останова.
 
-## <a name="bkmk_openports">Устранение неполадок</a> Откройте необходимые порты на Windows Server
+## <a name="bkmk_openports"></a> Устранение неполадок Откройте необходимые порты на Windows Server
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее может потребоваться проверить, что порты открыты.
 
