@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Синхронизация наборов правил проекта кода с политикой возврата командного проекта
+title: Как выполнить  Синхронизация наборов правил проекта кода с политикой возврата командного проекта
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275d4ff2eea093acc226b7e491b5d429a41f7a64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41fb9f60efa439f3a8157059ee4e64af5c25292e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036749"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945447"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как выполнить Синхронизация наборов правил проекта кода с политикой возврата проект Azure DevOps
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как выполнить  Синхронизация наборов правил проекта кода с политикой возврата проект Azure DevOps
 
 Синхронизировать параметры анализа кода для проектов кода для политики возврата для проекта DevOps в Azure, указав набор правил, которая содержит по крайней мере правила, заданные в набор правил для политики возврата. Руководитель группы разработчиков могут информировать вас о имя и расположение набора правил для политики возврата. Чтобы обеспечить использование правильного набора правил анализа кода для проекта можно использовать один из следующих вариантов:
 

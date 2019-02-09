@@ -1,7 +1,6 @@
 ---
-title: Как выполнить вычислить выражение XPath
+title: Как выполнить  вычислить выражение XPath
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab895bb10c9f1b70ba103aebeb0ad83cdb84418
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b43a82d476e4426b1428f072cc980dbc8631cff2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000982"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970404"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Как выполнить вычислить выражение XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Как выполнить  вычислить выражение XPath
 
 Можно оценить выражения XPath **"Быстрая проверка"** диалоговое окно. Выражение XPath должно быть допустимым и соответствовать рекомендация W3C языка XPath версии 1.0. Текущий контекст XSLT — то есть `self::node()` узел в **"Локальные"** окно — предоставляет контекст оценки для выражения XPath.
 

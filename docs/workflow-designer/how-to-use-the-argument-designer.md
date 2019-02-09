@@ -2,7 +2,6 @@
 title: 'Конструктор рабочих процессов - как: использовать конструктор аргументов'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaa9211df2f4b7f734634d5d13b6344c32ba6ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976996"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941183"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Как выполнить использовать конструктор аргументов
+# <a name="how-to-use-the-argument-designer"></a>Как выполнить  использовать конструктор аргументов
 
 По сравнению с предыдущими версиями платформы .NET Framework, конструктор аргументов упрощает передачу данных в действие и из действия. Конструктор нажав **аргументы** кнопку в левом нижнем углу поля визуальной разработки. Конструктор содержит список аргументов, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **значение по умолчанию** столбца. Каждый аргумент содержит имя, направление передачи свойства (IN, OUT или IN/OUT), тип и значение выражения по умолчанию (если такое существует). Имя и значение выражения по умолчанию представляют собой изменяемые текстовые поля, а тип и направление - раскрывающееся меню. Дополнительные сведения см. в разделе [переменные и аргументы (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 

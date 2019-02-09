@@ -7,13 +7,12 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820242"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915001"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 C++ Core Guidelines представляют собой переносимый набор рекомендации, правила и рекомендации о написании кода на C++, созданные экспертами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил как часть его средств анализа кода для C++. Средства проверки рекомендация core устанавливаются по умолчанию в Visual Studio 2017 и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).

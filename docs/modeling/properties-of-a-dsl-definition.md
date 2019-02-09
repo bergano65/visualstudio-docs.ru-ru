@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942247"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911589"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Свойства определения доменного языка
 Определение свойств DslDefinition *доменный язык* определения свойств, таких как нумерация версий. Свойства DslDefinition отображаются в **свойства** окна, щелкнув пустую область схемы в *конструктора доменного языка*.
@@ -45,4 +44,4 @@ ms.locfileid: "54942247"
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

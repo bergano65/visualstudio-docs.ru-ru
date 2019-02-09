@@ -1,7 +1,6 @@
 ---
 title: Аннотация поведения функций
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -21,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835160"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948034"
 ---
 # <a name="annotating-function-behavior"></a>Аннотация поведения функций
 Помимо добавления заметок к [параметры функции и возвращаемые значения](../code-quality/annotating-function-parameters-and-return-values.md), можно добавить заметки к свойствам функции в целом.
@@ -34,7 +33,7 @@ ms.locfileid: "53835160"
 ## <a name="function-annotations"></a>Функция заметок
  Следующие примечания применяются к функции в целом и описывают, как она работает и что должно выполняться.
 
-|Комментарий|Описание:|
+|Комментарий|Описание|
 |----------------|-----------------|
 |`_Called_from_function_class_(name)`|Не является автономной; это предикат, который должен использоваться с примечанием `_When_`. Дополнительные сведения см. в разделе [Указание, когда и где к которому относится заметка](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Параметра является произвольной строкой, которая также отображается в `_Function_class_` заметки в объявлении некоторых функций.  `_Called_from_function_class_` возвращает ненулевое значение, если функция, которая в настоящее время анализируется, аннотирована с помощью `_Function_class_` содержит то же значение, из `name`; в противном случае возвращается ноль.|
 |`_Check_return_`|Добавляет заметки к возвращаемому значению и заявляет, что вызывающий объект должен его проверять. Средство проверки выдает ошибку, если функция вызывается в пустом контексте.|

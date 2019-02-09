@@ -1,7 +1,6 @@
 ---
 title: Набор правил "Базовые нормы и правила разработки" для управляемого кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7461ba8a56276666e79cd5432530d2889f2daef7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069958"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913854"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
 Можно использовать базовые правила и рекомендации по разработке Microsoft набора правил в сосредоточиться на создании кода проще для понимания и использования. Следует включить это правило, если проект содержит библиотечный код или если вы хотите принудительное применение рекомендаций для кода, который легко поддерживать.

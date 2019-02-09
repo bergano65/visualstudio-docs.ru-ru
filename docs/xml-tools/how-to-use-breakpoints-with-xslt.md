@@ -1,21 +1,20 @@
 ---
-title: Как выполнить использовать точки останова в XSLT
+title: Как выполнить  использовать точки останова в XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a569e3bc9d467b1cfce16d3836fdd1bb2a86e1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9676894b75696879b8c8193037822005658f5169
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013695"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913945"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Как выполнить Использование точек останова в XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Как выполнить  Использование точек останова в XSLT
 
 Точки останова можно задать в таблице стилей XSLT или в исходном XML-документе. Если задать точку останова на теге, то при выполнении точка останова переходит к следующему оператору, у которого есть сведения исходной строки.
 
