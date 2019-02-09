@@ -1,7 +1,6 @@
 ---
 title: Манифесты приложений для решений Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 62ad6a8147fc11b8bed34605b6447a1fe8a62a97
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873708"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938024"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Манифесты приложений для решений Office
   Манифест приложения представляет собой XML-файл с описанием сборок, загружаемых в решении Microsoft Office. Средства разработки Microsoft Office в Visual Studio используют [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифестов приложений, определенных в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md) ссылки.
 
  Манифесты приложений для решений Office используют перечисленные ниже элементы и атрибуты [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
-|Элемент|Описание|Атрибуты|
+|Элемент|Описание:|Атрибуты|
 |-------------|-----------------|----------------|
 |[&#60;сборка&#62; элемент &#40;приложения ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Обязательный. Это элемент верхнего уровня.|**manifestVersion**|
 |[&#60;assemblyIdentity&#62; элемент &#40;приложения ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Обязательный. Определяет основную сборку приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> **language**|
@@ -68,7 +67,7 @@ ms.locfileid: "54873708"
 </addIn>
 ```
 
-|Элемент|Описание:|Атрибуты|
+|Элемент|Описание|Атрибуты|
 |-------------|-----------------|----------------|
 |[&#60;customHostSpecified&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|Обязательный. Помечает манифест как решение Office.|Нет|
 |[&#60;ADDIN&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Обязательный. Сохраняет точки входа в одном пространстве имен.|Нет|

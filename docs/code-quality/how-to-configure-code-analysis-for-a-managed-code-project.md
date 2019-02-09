@@ -1,7 +1,6 @@
 ---
 title: Настройка анализа кода
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dcb5e667e92f4dc580a0224c1cc3fce099ed5533
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003361"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916799"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Как выполнить Настройка анализа кода для проекта управляемого кода
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Как выполнить  Настройка анализа кода для проекта управляемого кода
 
 В Visual Studio можно выбрать из списка анализа кода [наборов правил](../code-quality/rule-set-reference.md)) для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
 

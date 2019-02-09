@@ -1,7 +1,6 @@
 ---
 title: Изучить модель содержимого узлов с использованием представления модели содержимого в конструктор XML-схем
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8f1f3a6897e64c58245ac336cb42074db3e262
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930951"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920916"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Как выполнить Изучить модель содержимого узлов с использованием представления модели содержимого
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Как выполнить  Изучить модель содержимого узлов с использованием представления модели содержимого
 
 В этом разделе описывает процесс изучения узлов с использованием [представления модели содержимого](../xml-tools/content-model-view.md).
 

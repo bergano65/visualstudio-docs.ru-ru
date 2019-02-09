@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Включение и отключение полного анализа решения для управляемого кода
+title: Как выполнить  Включение и отключение полного анализа решения для управляемого кода
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
-ms.openlocfilehash: ffda04828789a591c0e6dca35ef391fe6b8556d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035478"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931004"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Как выполнить Включение и отключение полного анализа решения для управляемого кода
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Как выполнить  Включение и отключение полного анализа решения для управляемого кода
 
 *Полный анализ решения* — это компонент Visual Studio, позволяет просматривать проблемы анализа кода только в визуальном элементе откройте C# или файлов Visual Basic в решении или в файлах кода, которые были закрыты. По умолчанию — полный анализ решения *включена* в Visual Basic и *отключена* для визуального C#.
 

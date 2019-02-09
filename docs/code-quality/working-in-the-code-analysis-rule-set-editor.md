@@ -1,7 +1,6 @@
 ---
 title: Использование редактора набора правил анализа кода
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eea18a356eb140e3eecf779d9b5468316b4fc785
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034016"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937223"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Использование редактора набора правил анализа кода
 
@@ -24,7 +23,7 @@ ms.locfileid: "55034016"
 
 В следующей таблице показаны параметры серьезности:
 
-|Действие (уровень серьезности)|Описание:|
+|Действие (уровень серьезности)|Описание|
 |-|-|
 |Предупреждение|Создает предупреждение в **список ошибок** и также во время сборки.|
 |Error|Приводит к ошибке в **список ошибок** и также во время сборки.|
@@ -68,7 +67,7 @@ ms.locfileid: "55034016"
 
 В следующей таблице описаны поля набора правил:
 
-|Поле|Описание:|
+|Поле|Описание|
 |-----------|-----------------|
 |**ID**|Идентификатор правила.|
 |**Категория**|В дополнение к их членства в наборах правил правил анализа кода также группируются по категориям. Дополнительные сведения см. в разделе [предупреждения анализа кода](../code-quality/code-analysis-for-managed-code-warnings.md).|

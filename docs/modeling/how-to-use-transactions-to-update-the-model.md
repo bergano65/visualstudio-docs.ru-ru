@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Обновление модели с помощью транзакций
+title: Как выполнить  Обновление модели с помощью транзакций
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,15 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70ec77254ec4d76e978b685441bb8d6e3df1b802
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921226"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924400"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Как выполнить Обновление модели с помощью транзакций
+# <a name="how-to-use-transactions-to-update-the-model"></a>Как выполнить  Обновление модели с помощью транзакций
 Транзакций убедитесь, что изменения, внесенные в хранилище, рассматриваются как группу. Изменения, которые группируются можно зафиксировать или откатить как единое целое.
 
  Каждый раз, когда код программы изменяет, добавляет или удаляет любой элемент в Store, в Visual Studio Visualization and Modeling SDK, его необходимо делать это внутри транзакции. Необходимо иметь активный экземпляр <xref:Microsoft.VisualStudio.Modeling.Transaction> связанные с Store, когда происходит изменение. Это относится к всех элементов модели, отношения, фигуры, схемы и их свойства.

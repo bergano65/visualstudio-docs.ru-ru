@@ -1,7 +1,6 @@
 ---
-title: Как выполнить начать отладку XSLT
+title: Как выполнить  начать отладку XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,14 +9,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 966bcaa9a2fc2e9a07166f2851c34af9f9574d2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 196e071802c068475da1dea1ba7f2a5b94a86a36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956250"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936344"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Как выполнить Запуск отладки XSLT
+# <a name="how-to-start-debugging-xslt"></a>Как выполнить  Запуск отладки XSLT
 
 Для отладки таблицы стилей XSLT или приложения XSLT можно использовать отладчик XSLT. При отладке можно выполнять код по одной строке, делая шаг с входом, шаг с пропуском или шаг с выходом. Команды для использования возможностей пошагового прохождения кода аналогичны в отладчике XSLT и в других отладчиках Visual Studio. При запуске отладки отладчик XSLT открывает окна, в которых отображается входной документ и выход XSLT.
 

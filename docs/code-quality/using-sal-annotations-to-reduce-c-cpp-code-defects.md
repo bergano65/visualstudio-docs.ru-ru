@@ -1,7 +1,6 @@
 ---
 title: Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: becbf24e8f957925584e9049b38b41cb6c511683
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954336"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919707"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 SAL является языка заметок для исходного кода Microsoft. С помощью заметок исходного кода, можно сделать целью за ваш код явной. Эти заметки также включить средства автоматического статического анализа, чтобы более точно, анализ кода с помощью значительно меньше ложных положительных и ложных отрицательных результатов.
