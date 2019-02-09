@@ -1,7 +1,6 @@
 ---
 title: Общие сведения об анализе кода в C/C++
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896400"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947644"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Анализ кода для C/C++ Обзор
 
@@ -37,7 +36,7 @@ ms.locfileid: "53896400"
 
 Средство анализа кода полностью интегрировано в Visual Studio IDE.
 
-Во время сборки все предупреждения, созданные для исходного кода отображаются в списке ошибок. Можно перейти к исходному коду, которая вызвала предупреждение, можно просмотреть дополнительные сведения о причине и возможные решения проблемы.
+Во время сборки все предупреждения, созданные для исходного кода, отображаются в списке ошибок. Вы можете перейти к исходному коду, который вызвал предупреждение, и просмотреть дополнительные сведения о причине и возможные решения проблемы.
 
 ## <a name="command-line-support"></a>Поддержка командной строки
 
@@ -55,15 +54,15 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="annotation-support"></a>Поддержка заметок
 
-Заметки улучшить точность анализа кода. Заметки содержатся дополнительные сведения об условиях до и после о параметров функции и типы возвращаемых значений. Дополнительные сведения см. в разделе [Как Укажите дополнительный код сведения с помощью __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Заметки повышают точность анализа кода. Заметки содержат дополнительные сведения о предварительных и последующих условиях для параметров функции и типов возвращаемых значений. Дополнительные сведения см. в разделе [Как добавить дополнительные сведения о коде с помощью _analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Запуск средства анализа в рамках политики возврата
 
-Может потребоваться требуют, что все исходного кода возвраты удовлетворять определенные политики. В частности вы хотели бы убедиться, выполнение анализа в рамках самой последней локальной сборки. Дополнительные сведения о включении политику возврата с анализом кода, см. в разделе [Создание и использование анализа кода возврата политик](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+Вы можете предъявлять определенные требования к возвратам исходного кода. В частности, нужно убедиться, что анализ выполнялся в рамках самой последней локальной сборки. Дополнительные сведения о включении политики возврата с анализом кода см. в разделе [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Интеграция командного построения
 
-Можно использовать интегрированные функции системы построения для выполнения анализа кода в рамках [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] процесс сборки. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Вы можете использовать интегрированные возможности системы сборки для запуска средства анализа в рамках процесса сборки [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>См. также
 

@@ -1,7 +1,6 @@
 ---
 title: Создание решений Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -27,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945421"
 ---
 # <a name="build-office-solutions"></a>Создание решений Office
   Сборка и отладка проектов Office в принципе не отличается от сборки и отладки других типов проектов в Visual Studio, например Windows Forms. В этом разделе описываются существующие различия. Общие сведения о том, как создавать приложения, см. в разделе [компиляция и сборка в Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
