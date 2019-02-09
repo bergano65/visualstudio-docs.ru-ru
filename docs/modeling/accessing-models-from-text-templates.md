@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966807"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945681"
 ---
 # <a name="accessing-models-from-text-templates"></a>Обращение к моделям из текстовых шаблонов
 С помощью текстовых шаблонов, можно создать файлы отчетов, файлы исходного кода и другие текстовые файлы, которые основаны на модели доменного языка. Основные сведения о текстовых шаблонах см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Текстовые шаблоны будут работать в экспериментальном режиме, при отладке DSL и также будет работать на компьютере, на котором вы развернули DSL.

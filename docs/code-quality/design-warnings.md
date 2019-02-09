@@ -1,7 +1,6 @@
 ---
 title: Предупреждения конструктора
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06447475e2686bf3f4ec7c79c0e2417d4ee99a8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011316"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908898"
 ---
 # <a name="design-warnings"></a>Предупреждения конструктора
 Предупреждения конструктора поддерживают соблюдение рекомендации по разработке .NET Framework.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание |
+| Правило | Описание: |
 | - | - |
 | [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | При вызове статического элемента универсального типа нужно указать аргумент этого типа. При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа. В этих двух случаях синтаксис для определения аргумента типа различен, и его можно легко спутать. |
 | [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | В классе объявляется и реализуется поле экземпляра, который является типом System.IDisposable и класс не реализует IDisposable. Класс, в котором объявляется поле IDisposable, неявно владеет неуправляемым ресурсом и должен реализовывать интерфейс IDisposable. |
