@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32e699c88060949a7949fc19935137209b44e526
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020627"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918121"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков
 В пакет SDK моделирования и визуализации Visual Studio можно создать неполное определение DSL, можно импортировать в другой DSL. Это позволяет вынести общие компоненты в аналогичные модели.

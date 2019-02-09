@@ -2,21 +2,20 @@
 title: 'Конструктор рабочих процессов - как: выполнить отладку XAML в конструкторе рабочих процессов'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2d7a9932bfb219d818036ec2432c801b4115bae5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4caf96c841b794a76a7aba35f9c8ca302de6e885
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997082"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923334"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Как выполнить выполнить отладку XAML в конструкторе рабочих процессов
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Как выполнить  выполнить отладку XAML в конструкторе рабочих процессов
 
 Рабочие процессы определены в терминах XAML. Представление пользовательского интерфейса рабочего процесса построено на основе дерева XAML, определяющего рабочий процесс. Процесс отладки аналогична отладке рабочих процессов в конструкторе рабочих процессов. Например при отладке XAML, локальные переменные, Контрольные значения и потоков windows работать так же, как в конструкторе рабочих процессов отладки. Помимо этого, представление стека вызовов при отладке XAML является линейным иерархическим представлением потока выполнения для рабочего процесса.
 

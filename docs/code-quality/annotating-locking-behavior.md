@@ -1,7 +1,6 @@
 ---
 title: Аннотация поведения блокировки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
@@ -33,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690322"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920578"
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
 Во избежание ошибок параллелизма в многопоточных программах, всегда выполняйте соответствующую дисциплину блокировок и используйте заметки SAL.
@@ -89,7 +88,7 @@ ms.locfileid: "55690322"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Встроенные SAL для непредоставленных явно объектов блокировки
  Некоторые объекты блокировки не предоставляется реализация связанных функций блокировки.  В следующей таблице перечислены встроенные переменные SAL, которые содержат заметки для функций, действующих на эти защищенные объекты блокировки.
 
-|Комментарий|Описание:|
+|Комментарий|Описание|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Описывает отмену спин-блокировки.|
 |`_Global_critical_region_`|Описывает критическую область.|
@@ -99,7 +98,7 @@ ms.locfileid: "55690322"
 ## <a name="shared-data-access-annotations"></a>Заметки доступа к общим данным
  В следующей таблице перечисляются аннотации для доступа к разделяемым данным.
 
-|Комментарий|Описание:|
+|Комментарий|Описание|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при доступе к данной переменной количество блокировок объекта с именем `expr` не менее единицы.|
 |`_Interlocked_`|Добавляет заметки к переменной и эквивалентно `_Guarded_by_(_Global_interlock_)`.|

@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 56b3d76f0d48b60aabace9de1e262ccea4322a53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040376"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948954"
 ---
 # <a name="model-your-app39s-architecture"></a>Моделирование приложений&#39;архитектуру целевого процесса
 Чтобы гарантировать, что программной системы или приложения потребностям пользователей, можно создавать модели в Visual Studio как часть описания общей структуры и поведения программной системы или приложения. С помощью моделей также можно описывать шаблоны, используемые при разработке. Такие модели помогают понять существующую архитектуру, обсуждать изменения и четко формулировать свои намерения.

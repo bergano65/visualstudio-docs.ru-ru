@@ -2,18 +2,17 @@
 title: Рабочие области в Visual Studio | Документация Майкрософт
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925440"
 ---
 # <a name="workspaces"></a>Рабочие области
 
@@ -180,5 +179,5 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* [Файл контексты](workspace-file-contexts.md) -поставщики контекста файлов перевести код аналитики для рабочих областей, открыть папку. 
+* [Файл контексты](workspace-file-contexts.md) -поставщики контекста файлов перевести код аналитики для рабочих областей, открыть папку.
 * [Индексирование](workspace-indexing.md) -индексирования рабочей области собирает и сохраняет сведения о рабочем пространстве.

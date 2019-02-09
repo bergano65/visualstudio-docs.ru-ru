@@ -1,7 +1,6 @@
 ---
 title: Общие сведения о панели действий
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875957"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924387"
 ---
 # <a name="actions-pane-overview"></a>Общие сведения о панели действий
   Панель действий — это настраиваемая **действия с документами** область задач, который подключен к конкретному документу Microsoft Office Word или книгу Microsoft Office Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, таких как **источник XML** в Excel или **стили и форматирование** области задач в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.

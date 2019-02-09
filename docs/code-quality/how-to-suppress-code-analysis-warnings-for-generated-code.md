@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Отключение предупреждений в ходе анализа созданного кода
+title: Как выполнить  Отключение предупреждений в ходе анализа созданного кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6628692014cd495490384e8a707c23fdcb3bde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012954"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936084"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Как выполнить Отключение предупреждений в ходе анализа созданного кода
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Как выполнить  Отключение предупреждений в ходе анализа созданного кода
 Компиляторы управляемого кода часто создают код, который добавляется в проект для упрощения разработки кода. Кроме того разработчики часто используют сторонние средства для быстрой разработки приложений. Эти средства также создают код, который добавляется в проект.
 
  Может потребоваться нарушения правил, обнаруживаемых при анализе в созданном коде см. в разделе. Тем не менее может не потребоваться увидеть их, если не может просматривать и поддерживать код, который содержит нарушения.

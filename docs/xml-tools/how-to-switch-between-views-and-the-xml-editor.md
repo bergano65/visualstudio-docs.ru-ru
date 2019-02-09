@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Переключение между представлениями и редактором XML
+title: Как выполнить  Переключение между представлениями и редактором XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9ec24aae4f35c45bcb4faf0bbc5a355c57da8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d7d4964aa83e4db03c8f9d21297b88ba90b2078
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920712"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944147"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Как выполнить Переключение между представлениями и редактором XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Как выполнить  Переключение между представлениями и редактором XML
 
 Данный раздел описывает процесс переключения между представлениями конструктора XML-схем (конструктор XSD) и редактором XML. В этом примере используется [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md).
 
