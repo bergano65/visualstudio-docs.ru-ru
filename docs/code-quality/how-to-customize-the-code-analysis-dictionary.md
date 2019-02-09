@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Настройка словаря анализа кода
+title: Как выполнить  Настройка словаря анализа кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971823"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919850"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Как выполнить Настройка словаря анализа кода
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Как выполнить  Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в коде ошибок правописания, грамматические регистр и другие соглашения об именовании рекомендациям по разработке .NET Framework. Можно создать пользовательский словарь XML-файл, чтобы добавить, удалить или изменить условия, сокращений и акронимов встроенный словарь.
 
  Например, предположим, что код содержит класс с именем **DoorKnokker**. Анализ кода будет идентифицировать имя как состоящий из двух слов: **дверь** и **knokker**. Он будет затем вызывать предупреждение, **knokker** написано правильно. Чтобы принудительно запустить анализ кода распознавалось, можно добавить термин **knokker** в пользовательский словарь.

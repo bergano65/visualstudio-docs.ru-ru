@@ -2,7 +2,6 @@
 title: Конструктор рабочих процессов - диалоговое окно «Определение CorrelatesOn»
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af61161009cd9bbd2242db6fc8652b3f29c8f3b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cba12e3e991282dc69ea5747d62db8761d6f8d16
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003297"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942639"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Диалоговое окно «Корреляция по определению»
 
@@ -26,7 +25,7 @@ ms.locfileid: "55003297"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **CorrelatesOn** диалоговое окно.
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание:|
 |-|-----------------|
 |**CorrelatesWith**|Метод <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для перенаправления сообщения в соответствующий экземпляр рабочего процесса.|
 |**Запросы XPath**|Пара «ключ/значение», содержащая запросы, использованные для извлечения данных корреляции из входящих сообщений. Это значение соответствует <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> свойство. Запросы XPath содержатся в объекте <xref:System.ServiceModel.MessageQuerySet>.|

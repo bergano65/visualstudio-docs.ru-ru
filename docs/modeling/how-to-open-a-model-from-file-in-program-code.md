@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Открытие модели из файла в коде программы
+title: Как выполнить  Открытие модели из файла в коде программы
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,15 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 592dd923b3ad65f81f0bc637d77fc1c635043a97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4884aba3deb3a450b373a6d19abd9c7cf5bdbff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921201"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945291"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Как выполнить Открытие модели из файла в коде программы
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Как выполнить  Открытие модели из файла в коде программы
 Модели DSL можно открыть в любом приложении.
 
  Из расширения Visual Studio можно использовать ModelBus для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).

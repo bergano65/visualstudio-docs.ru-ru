@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 25ee3bbe5ba4e3891fcf6454f42f2a5d5ed561fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042456"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940286"
 ---
 # <a name="develop-tests-from-a-model"></a>Разработка тестов на основе модели
 Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований. Если вы используете [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], также поддерживаются ссылки между моделями и тестами.

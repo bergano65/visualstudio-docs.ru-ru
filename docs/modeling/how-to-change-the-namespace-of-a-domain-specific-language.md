@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Изменение пространства имен доменного языка
+title: Как выполнить  Изменение пространства имен доменного языка
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 68566324c77796df8ce952135c0752cbb16033a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984968"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949197"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Как выполнить Изменение пространства имен доменного языка
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Как выполнить  Изменение пространства имен доменного языка
 
 Вы можете изменить пространство имен доменного языка. Внесите изменения в **обозреватель DSL**в свойствах проекта Dsl и в сведениях о сборке.
 

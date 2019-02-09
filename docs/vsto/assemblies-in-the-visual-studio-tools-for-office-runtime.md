@@ -2,7 +2,6 @@
 title: Сборки в Visual Studio Tools для Office runtime
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d636b81c1080c9439f37fe6e53f7cfbff170ad93
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: fa7cb056ade43b01d1c9533354a53c9a735dd88f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864024"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919018"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Сборки в Visual Studio Tools для Office runtime
   При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. В расширениях Office для .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]и [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]используются разные сборки. Дополнительные сведения о расширениях Office см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -50,7 +49,7 @@ ms.locfileid: "54864024"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Сборки в расширениях Office для .NET Framework 3.5  
  В приведенной ниже таблице перечислены сборки, включенные в расширения Office для .NET Framework 3.5. Документацию по пространствам имен и классам в этих сборках, см. в следующем справочном разделе документации по Visual Studio 2008: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
-|Имя сборки|Описание|  
+|Имя сборки|Описание:|  
 |-------------------|-----------------|  
 |Microsoft.Office.Tools.Common.v9.0.dll|Предоставляет следующие типы:<br /><br /> -Microsoft.Office.Tools.AddIn базовый класс для надстроек VSTO.<br />-Классы для создания настроек ленты и смарт-тегов. **Примечание.**      Смарт-теги объявлены нерекомендуемыми в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Классы для создания панелей действий в настройках уровня документа и настраиваемых областей задач в надстройках VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет ведущие элементы и элементы управления ведущего приложения для решений Excel. Дополнительные сведения см. в разделе [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md).|  

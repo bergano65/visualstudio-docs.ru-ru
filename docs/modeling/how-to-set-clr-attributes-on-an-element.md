@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Задание атрибутов среды CLR для элемента
+title: Как выполнить  Задание атрибутов среды CLR для элемента
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 54b4340fe72552f3287a5c6ebec55c9c9d326ac1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932276"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946630"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Как выполнить Задание атрибутов среды CLR для элемента
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Как выполнить  Задание атрибутов среды CLR для элемента
 Настраиваемые атрибуты являются специальные атрибуты, которые могут быть добавлены элементы домена, фигуры, соединители и схемы. Можно добавить любой атрибут, который наследует от `System.Attribute` класса.
 
 ### <a name="to-add-a-custom-attribute"></a>Чтобы добавить настраиваемый атрибут
@@ -44,4 +43,4 @@ ms.locfileid: "54932276"
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
