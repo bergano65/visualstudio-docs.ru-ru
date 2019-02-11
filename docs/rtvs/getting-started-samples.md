@@ -82,7 +82,7 @@ ms.locfileid: "55023266"
 
 ![Сравнение MLS и MRO с MKL и R и MRO без MKL](media/samples-speed-comparison.png)
 
-Сравнение технических R с MRO и MLS см. в [подробном рассмотрении этой темы Ликсуном Чжаном (Lixun Zhang)](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html).
+Сравнение технических R с MRO и MLS см. в [подробном рассмотрении этой темы Ликсуном Чжаном (Lixun Zhang)](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html).
 
 На графике ниже представлено сравнение затраченного времени в секундах, которое потребовалось для создания модели логистической регрессии для прогнозирования того, будет ли задержка авиарейсов составлять более 15 минут.  Время, затраченное при использовании CRAN R, значительно увеличивается при небольшом увеличении числа строк, тогда как при использовании MLS время увеличивается лишь примерно в два раза. Сведения об этом тесте производительности см. в примере *Benchmarks/rxGlm_benchmark.R*.
 
