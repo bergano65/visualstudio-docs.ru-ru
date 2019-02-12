@@ -9,7 +9,7 @@
 
 # [Учетные записи пользователей](user-accounts.md)
 ## [Вход](signing-in.md)
-## [Активация](activation.md)
+## [Активация](enable-subscription.md)
 
 # [Настройка интегрированной среды разработки](customizing-the-ide.md)
 ## [Расширение Visual Studio для Mac](extending-visual-studio-mac.md)
