@@ -10,13 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932731"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956419"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Изменение шаблонов нагрузки для моделирования действий виртуальных пользователей
 
@@ -88,7 +87,7 @@ ms.locfileid: "54932731"
 |Счетчик производительности|Счетчик|% загруженности процессора|
 |Счетчик производительности|Экземпляр|_Total|
 |Целевой диапазон счетчика производительности|Верхний предел|90|
-|Целевой диапазон счетчика производительности|Нижний предел|70|
+|Целевой диапазон счетчика производительности|Нижний предел|17|
 |Пределы числа пользователей|Начальное число пользователей|1|
 |Пределы числа пользователей|Максимальное число пользователей|100|
 |Пределы числа пользователей|Максимальный декремент счетчика пользователей|5|

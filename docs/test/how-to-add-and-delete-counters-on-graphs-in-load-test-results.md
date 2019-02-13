@@ -11,15 +11,14 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6d730bc8dd0ec2f7087bd0ec0a22564ae316e6c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979677"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936086"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Как выполнить Добавление и удаление счетчиков на графиках в результатах нагрузочного теста
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Как выполнить  Добавление и удаление счетчиков на графиках в результатах нагрузочного теста
 
 Панель **Счетчики** можно использовать для добавления счетчиков производительности в граф.
 

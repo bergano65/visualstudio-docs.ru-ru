@@ -1,7 +1,6 @@
 ---
 title: Использование содержания в окне справки
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_contents
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6becee36b4d78d6522e662d3b6bc4879cad7501d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940847"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942106"
 ---
-# Как выполнить Поиск разделов в содержании
+# Как выполнить  Поиск разделов в содержании
 
 Для поиска информации используйте вкладку **Содержание**. Содержание — это расширяемый список, в который входят все разделы в установленных книгах. Сведения о специальных возможностях при навигации по содержанию см. в статье [Сочетания клавиш (средство просмотра справки)](../help-viewer/shortcut-keys.md).
 

@@ -3,7 +3,6 @@ title: Обновление сетевой установки
 description: Сведения об обновлении сетевой установки Visual Studio с помощью команды --layout
 ms.date: 08/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f6e45d900c1401431346abdcd26d1579a70ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021027"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937543"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Обновление сетевой установки Visual Studio 2017
 

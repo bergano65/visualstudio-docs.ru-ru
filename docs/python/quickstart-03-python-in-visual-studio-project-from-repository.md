@@ -2,7 +2,6 @@
 title: Краткое руководство. Клонирование репозитория с кодом Python
 description: С помощью этого краткого руководства вы создадите проект Python в Visual Studio, клонировав репозиторий Python Koans с использованием Visual Studio Team Explorer
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3df8bacc5d026cb915521e3870cd19a5128796e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928456"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 

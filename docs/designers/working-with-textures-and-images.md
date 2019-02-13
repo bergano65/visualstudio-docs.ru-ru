@@ -1,7 +1,6 @@
 ---
 title: Работа с текстурами и изображениями
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd520d6a07722063ce1cc5f3c08e4592dbe08351
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011004"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933470"
 ---
 # <a name="work-with-textures-and-images"></a>Работа с текстурами и изображениями
 

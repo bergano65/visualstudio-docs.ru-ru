@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2bb63fefe98426d63a7dd682c8a66c1d9b594c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070556"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910003"
 ---
 # <a name="itemgroup-element-msbuild"></a>Элемент ItemGroup (MSBuild)
-Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.  
-  
- \<Project>  
- \<ItemGroup>  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<ItemGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemGroup>  
-```  
-  
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
-  
-### <a name="attributes"></a>Атрибуты  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
-  
-### <a name="child-elements"></a>Дочерние элементы  
-  
-|Элемент|Описание|  
-|-------------|-----------------|  
-|[Элемент](../msbuild/item-element-msbuild.md)|Входные данные для процесса сборки. Любое количество элементов `Item` (может быть ни одного) может содержаться в `ItemGroup`.|  
-  
-### <a name="parent-elements"></a>Родительские элементы  
-  
+Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.
+
+\<Project>  
+\<ItemGroup>
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<ItemGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemGroup>
+```
+
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+В следующих разделах описаны атрибуты, дочерние и родительские элементы.
+
+### <a name="attributes"></a>Атрибуты
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
+
+### <a name="child-elements"></a>Дочерние элементы
+
+|Элемент|Описание|
+|-------------|-----------------|
+|[Элемент](../msbuild/item-element-msbuild.md)|Входные данные для процесса сборки. Любое количество элементов `Item` (может быть ни одного) может содержаться в `ItemGroup`.|
+
+### <a name="parent-elements"></a>Родительские элементы
+
 | Элемент | Описание |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 | [Целевой объект](../msbuild/target-element-msbuild.md) | Начиная с версии .NET Framework 3.5, элемент `ItemGroup` может находиться внутри элемента `Target`. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md). |
-  
-## <a name="example"></a>Пример  
- В следующем примере кода показаны определяемые пользователем элементы коллекций `Res` и `CodeFiles`, объявленные внутри элемента `ItemGroup`. Каждый элемент в коллекции `Res` содержит определяемый пользователем дочерний элемент [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md).  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Res Include = "Strings.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-        <Res Include = "Dialogs.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-  
-        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />  
-        <CodeFiles Include="..\..\Resources\Constants.cs" />  
-    </ItemGroup>  
-...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
- [Элементы](../msbuild/msbuild-items.md)   
- [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="example"></a>Пример
+В следующем примере кода показаны определяемые пользователем элементы коллекций `Res` и `CodeFiles`, объявленные внутри элемента `ItemGroup`. Каждый элемент в коллекции `Res` содержит определяемый пользователем дочерний элемент [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md).
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Res Include = "Strings.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+        <Res Include = "Dialogs.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+
+        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />
+        <CodeFiles Include="..\..\Resources\Constants.cs" />
+    </ItemGroup>
+...
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)  
+[Элементы](../msbuild/msbuild-items.md)  
+[Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)

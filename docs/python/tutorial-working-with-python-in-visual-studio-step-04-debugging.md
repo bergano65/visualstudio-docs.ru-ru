@@ -3,7 +3,6 @@ title: Python в Visual Studio. Руководство. Шаг 4 — отлад
 titleSuffix: ''
 description: Шаг 4 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь объясняется, как выполнять код Python в отладчике.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e48619c34774425986888a9210c2c533e4b5d0db
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231900"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948814"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
 

@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031296"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927054"
 ---
 # <a name="troubleshoot-service-references"></a>Диагностика ссылок на службы
 
@@ -83,7 +82,7 @@ ms.locfileid: "55031296"
 
 4.  Загрузите проект службы WCF.
 
-5.  В **Configuration Manager** диалоговом окне set **активная конфигурация решения** для **Отладка**. Дополнительные сведения см. в разделе [Как создавать и изменять конфигурации](../ide/how-to-create-and-edit-configurations.md).
+5.  В **Configuration Manager** диалоговом окне set **активная конфигурация решения** для **Отладка**. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
 
 6.  В **обозревателе решений**, выберите проект службы WCF.
 

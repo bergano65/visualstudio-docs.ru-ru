@@ -1,7 +1,6 @@
 ---
 title: Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"
 ms.date: 10/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.ScrollBars
@@ -33,12 +32,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0121f9048151ae91bd21d9ede1528f6e48f812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925960"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"
 Это диалоговое окно позволяет изменять стандартное поведение полосы прокрутки редактора кода. Чтобы отобразить эти параметры, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните вложенную папку **Все языки**, а затем выберите **Полосы прокрутки**.

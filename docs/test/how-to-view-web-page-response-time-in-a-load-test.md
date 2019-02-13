@@ -10,15 +10,14 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 75f2538c5c07231fa46f70a640784d1b6ac93712
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970530"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970768"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Как выполнить просмотр времени ответа веб-страницы в нагрузочном тесте с помощью анализатора тестовой нагрузки
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Как выполнить  просмотр времени ответа веб-страницы в нагрузочном тесте с помощью анализатора тестовой нагрузки
 
 Время, которое требуется для загрузки каждой веб-страницы, называется *временем отклика*. При создании веб-теста производительности можно установить целевое значение времени отклика для каждого запроса веб-страницы в веб-тесте производительности.
 

@@ -1,8 +1,7 @@
 ---
 title: Интерактивное окно Python (REPL)
 description: Быстрая разработка кода Python в Visual Studio с помощью интерактивного окна (REPL).
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992390"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155660"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
@@ -36,10 +35,6 @@ Visual Studio предоставляет ряд режимов REPL Python.
 В этой статье описаны **стандартный** режим REPL и режим **отладки** REPL. Дополнительные сведения о режимах IPython см. в руководстве по [использованию IPython в интерактивном окне](interactive-repl-ipython.md).
 
 Подробное пошаговое руководство с примерами, включая взаимодействие с редактором, например с помощью клавиш **CTRL**+**ВВОД**, см. в [шаге 3 в руководстве: использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) об **интерактивных** окнах в Microsoft Virtual Academy (длительность — 2 мин 22 с).|
 
 ## <a name="open-an-interactive-window"></a>Открытие интерактивного окна
 

@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание таблицы данных в конструкторе наборов данных
+title: Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 721613b36a14c82c67c4cc187593651a4fd24acd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972382"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926753"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание таблиц данных в конструкторе наборов данных
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство: Создание таблицы данных в конструкторе наборов данных
 
 В этом пошаговом руководстве описывается создание <xref:System.Data.DataTable> (без TableAdapter) с помощью **конструктор наборов данных**. Сведения о создании таблиц данных, использующих адаптеры таблиц, см. в разделе [Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md).
 

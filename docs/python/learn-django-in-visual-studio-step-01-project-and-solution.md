@@ -3,7 +3,6 @@ title: 'Руководство по Django в Visual Studio, шаг 1: осно�
 titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, демонстрирующих поддержку Visual Studio для разработки Django.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a5ed50e90f869e9f40f0132586f61e292f44069
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977204"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955262"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Учебник. Начало работы с веб-платформой Django в Visual Studio
 
