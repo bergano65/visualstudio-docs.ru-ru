@@ -9,15 +9,14 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 30f071297769ed2cc5a9b92f79a27910e6b3108e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946325"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955600"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Как выполнить Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Как выполнить  Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 
 На основе двух и более результатах тестов можно создавать отчеты о нагрузочных тестах в формате Excel.
 

@@ -1,7 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, \"Проверка кода\""
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece72f46500b67325250a6b13d4c79359e0873ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068902"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925934"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>"Параметры", "Текстовый редактор", JavaScript, "Проверка кода"
 На странице **Проверка кода** диалогового окна **Параметры** можно изменить параметры, которые влияют на обработку ошибок в JavaScript. Чтобы открыть страницу **Проверка кода**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **Проверка кода.**
