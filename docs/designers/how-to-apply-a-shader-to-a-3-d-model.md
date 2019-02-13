@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Применение шейдера к трехмерной модели
+title: Как выполнить  Применение шейдера к трехмерной модели
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef5f4f840991d78bc67f1ba32685e49765deaef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 896cc39ae3e9f53d96a30f6485c40afc8259e270
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909093"
 ---
-# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Как выполнить Применение шейдера к трехмерной модели
+# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Как выполнить  Применение шейдера к трехмерной модели
 
 В этой статье показано, как использовать редактор моделей для применения шейдера DGSL к трехмерной модели.
 

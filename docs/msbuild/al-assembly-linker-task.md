@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e00afd9c03200f39100ad885a58ccee79715b4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931756"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854048"
 ---
 # <a name="al-assembly-linker-task"></a>Задача AL (компоновщик сборок)
 Задача AL включает *AL.exe* — инструмент, распространяемый с [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Этот компоновщик сборок используется для создания сборки с манифестом из одного или нескольких файлов, являющихся модулями или файлами ресурсов. Компиляторы и среды разработки обеспечивают указанные возможности, в связи с чем необходимость в непосредственном использовании этого задания возникает достаточно редко. Компоновщик сборок особенно полезен, если нужно создать единую сборку из нескольких файлов компонентов, например при разработке на нескольких языках. Эта задача не объединяет модули в один файл сборки. Отдельные модули должны оставаться распределенными и доступными для правильной загрузки результирующей сборки. Дополнительные сведения об инструменте *AL.exe* см. в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -93,5 +93,6 @@ ms.locfileid: "54931756"
 ```  
 
 ## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+* [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+* [Задачи](../msbuild/msbuild-tasks.md)
+

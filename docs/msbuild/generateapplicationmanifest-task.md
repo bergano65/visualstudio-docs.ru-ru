@@ -19,19 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15f3ae12aec25747629dfb634ad5790405a11c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940665"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854113"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest - задача
-Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.  
+Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры для задачи `GenerateApplicationManifest`.  
-
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры для задачи `GenerateApplicationManifest`.
 
 | Параметр | Описание |
 |---------------------------------| - |
@@ -65,293 +64,293 @@ ms.locfileid: "54940665"
 | `TrustInfoFile` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает XML-документ, указывающий уровень безопасности приложения. Корневой элемент в XML-документе должен быть узлом trustInfo в пространстве имен asmv2. Если задача создает собственный манифест, этот параметр игнорируется. |
 | `UseApplicationTrust` | Необязательный параметр `Boolean` .<br /><br /> Если задано значение true, свойства `Product`, `Publisher` и `SupportUrl` записываются в манифест приложения. |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.GenerateManifestBase>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список параметров класса Task см. в статье [Базовый класс Task](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.GenerateManifestBase>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список параметров класса Task см. в статье [Базовый класс Task](../msbuild/task-base-class.md).
 
- Сведения об использовании задачи `GenerateDeploymentManifest` см. в разделе [Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  
+Сведения об использовании задачи `GenerateDeploymentManifest` см. в разделе [Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).
 
- Входные параметры для зависимостей и файлов можно дополнительно декорировать метаданными элементов, чтобы указать состояние развертывания для каждого из элементов.  
+Входные параметры для зависимостей и файлов можно дополнительно декорировать метаданными элементов, чтобы указать состояние развертывания для каждого из элементов.
 
-## <a name="item-metadata"></a>Метаданные элементов  
+## <a name="item-metadata"></a>Метаданные элементов
 
-|Имя метаданных|Описание|  
-|-------------------|-----------------|  
-|`DependencyType`|Указывает, публикуется и устанавливается ли зависимость с приложением или необходимым условием. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Значение по умолчанию — Install.|  
-|`AssemblyType`|Указывает, является ли зависимость управляемой или машинной сборкой. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Значение `Unspecified` используется по умолчанию и указывает, что манифест определяет тип сборки автоматически.|  
-|`Group`|Указывает группу для скачивания дополнительных файлов по запросу. Имя группы определяется приложением и может быть любой строкой. Пустая строка указывает, что файл не является частью группы скачивания, используемой по умолчанию. Файлы, не входящие в группу, относятся к начальным скачиваемым данным для приложения. Файлы в группе скачиваются при явном запросе приложением с помощью <xref:System.Deployment.Application>.<br /><br /> Эти метаданные допустимы для всех файлов, где `IsDataFile` имеет значение `false`, и всех зависимостей, где `DependencyType` имеет значение `Install`.|  
-|`TargetPath`|Указывает, как требуется определить путь в создаваемом манифесте. Этот атрибут допустим для всех файлов. Если атрибут не задан, используется спецификация элемента. Этот атрибут допустим для всех файлов и зависимостей, для которых `DependencyType` имеет значение `Install`.|  
-|`IsDataFile`|Значение метаданных `Boolean`, указывающее, является ли этот файл файлом данных. Файл данных имеет особенность — он перемещается между обновлениями приложения. Эти метаданные допустимы только для файлов. По умолчанию устанавливается значение `False`.|  
+|Имя метаданных|Описание|
+|-------------------|-----------------|
+|`DependencyType`|Указывает, публикуется и устанавливается ли зависимость с приложением или необходимым условием. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Значение по умолчанию — Install.|
+|`AssemblyType`|Указывает, является ли зависимость управляемой или машинной сборкой. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Значение `Unspecified` используется по умолчанию и указывает, что манифест определяет тип сборки автоматически.|
+|`Group`|Указывает группу для скачивания дополнительных файлов по запросу. Имя группы определяется приложением и может быть любой строкой. Пустая строка указывает, что файл не является частью группы скачивания, используемой по умолчанию. Файлы, не входящие в группу, относятся к начальным скачиваемым данным для приложения. Файлы в группе скачиваются при явном запросе приложением с помощью <xref:System.Deployment.Application>.<br /><br /> Эти метаданные допустимы для всех файлов, где `IsDataFile` имеет значение `false`, и всех зависимостей, где `DependencyType` имеет значение `Install`.|
+|`TargetPath`|Указывает, как требуется определить путь в создаваемом манифесте. Этот атрибут допустим для всех файлов. Если атрибут не задан, используется спецификация элемента. Этот атрибут допустим для всех файлов и зависимостей, для которых `DependencyType` имеет значение `Install`.|
+|`IsDataFile`|Значение метаданных `Boolean`, указывающее, является ли этот файл файлом данных. Файл данных имеет особенность — он перемещается между обновлениями приложения. Эти метаданные допустимы только для файлов. По умолчанию устанавливается значение `False`.|
 
-## <a name="example"></a>Пример  
- Этот пример использует задачу `GenerateApplicationManifest`, чтобы создать манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], и задачу `GenerateDeploymentManifest`, чтобы создать манифест развертывания для приложения с одной сборкой. Затем он использует задачу `SignFile` для подписи манифестов.  
+## <a name="example"></a>Пример
+Этот пример использует задачу `GenerateApplicationManifest`, чтобы создать манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], и задачу `GenerateDeploymentManifest`, чтобы создать манифест развертывания для приложения с одной сборкой. Затем он использует задачу `SignFile` для подписи манифестов.
 
- Это иллюстрирует самый простой сценарий создания манифестов, где манифесты [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создаются для одной программы. Для манифеста удостоверение и имя по умолчанию наследуются от сборки.  
+Это иллюстрирует самый простой сценарий создания манифестов, где манифесты [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создаются для одной программы. Для манифеста удостоверение и имя по умолчанию наследуются от сборки.
 
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 > 
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            EntryPoint="@(EntryPoint)">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            EntryPoint="@(EntryPoint)">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            EntryPoint="@(ApplicationManifest)">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            EntryPoint="@(ApplicationManifest)">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Пример  
- Этот пример использует задачи `GenerateApplicationManifest` и `GenerateDeploymentManifest`, чтобы создать манифесты развертывания и приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для приложения с одной сборкой, задавая при этом имя и удостоверение манифестов.  
+## <a name="example"></a>Пример
+Этот пример использует задачи `GenerateApplicationManifest` и `GenerateDeploymentManifest`, чтобы создать манифесты развертывания и приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для приложения с одной сборкой, задавая при этом имя и удостоверение манифестов.
 
- Этот пример похож на предыдущий, за исключением того, что имя и удостоверение манифестов указываются явно. Кроме того, этот пример настраивается как интерактивное, а не установленное приложение.  
+Этот пример похож на предыдущий, за исключением того, что имя и удостоверение манифестов указываются явно. Кроме того, этот пример настраивается как интерактивное, а не установленное приложение.
 
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 > 
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            EntryPoint="@(EntryPoint)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            EntryPoint="@(EntryPoint)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-                AssemblyName="SimpleWinApp.application"  
-                AssemblyVersion="1.0.0.0"  
-                EntryPoint="@(ApplicationManifest)"  
-                Install="false"  
-                OutputManifest="SimpleWinApp.application">  
-                <Output  
-                    ItemName="DeployManifest"  
-                    TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+                AssemblyName="SimpleWinApp.application"
+                AssemblyVersion="1.0.0.0"
+                EntryPoint="@(ApplicationManifest)"
+                Install="false"
+                OutputManifest="SimpleWinApp.application">
+                <Output
+                    ItemName="DeployManifest"
+                    TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Пример  
- Этот пример использует задачи `GenerateApplicationManifest` и `GenerateDeploymentManifest`, чтобы создать манифесты развертывания и приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для приложения с несколькими сборками.  
+## <a name="example"></a>Пример
+Этот пример использует задачи `GenerateApplicationManifest` и `GenerateDeploymentManifest`, чтобы создать манифесты развертывания и приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для приложения с несколькими сборками.
 
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 > 
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-        <DeployUrl>  
-            <!-- Insert the deployment URL here -->  
-        </DeployUrl>  
-        <SupportUrl>  
-            <!-- Insert the support URL here -->  
-        </SupportUrl>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+        <DeployUrl>
+            <!-- Insert the deployment URL here -->
+        </DeployUrl>
+        <SupportUrl>
+            <!-- Insert the support URL here -->
+        </SupportUrl>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe"/>  
-        <Dependency Include="ClassLibrary1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary2.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <Group>Secondary</Group>  
-        </Dependency>  
-        <Dependency Include="MyAddIn1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <TargetPath>Addins\MyAddIn1.dll</TargetPath>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary3.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Prerequisite</DependencyType>  
-        </Dependency>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe"/>
+        <Dependency Include="ClassLibrary1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <Dependency Include="ClassLibrary2.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <Group>Secondary</Group>
+        </Dependency>
+        <Dependency Include="MyAddIn1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <TargetPath>Addins\MyAddIn1.dll</TargetPath>
+        </Dependency>
+        <Dependency Include="ClassLibrary3.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Prerequisite</DependencyType>
+        </Dependency>
 
-        <File Include="Text1.txt">  
-            <TargetPath>Text\Text1.txt</TargetPath>  
-            <Group>Text</Group>  
-        </File>  
-        <File Include="DataFile1.xml ">  
-            <TargetPath>Data\DataFile1.xml</TargetPath>  
-            <IsDataFile>true</IsDataFile>  
-        </File>  
+        <File Include="Text1.txt">
+            <TargetPath>Text\Text1.txt</TargetPath>
+            <Group>Text</Group>
+        </File>
+        <File Include="DataFile1.xml ">
+            <TargetPath>Data\DataFile1.xml</TargetPath>
+            <IsDataFile>true</IsDataFile>
+        </File>
 
-        <IconFile Include="Heart.ico"/>  
-        <ConfigFile Include="app.config">  
-            <TargetPath>SimpleWinApp.exe.config</TargetPath>  
-        </ConfigFile>  
-        <BaseManifest Include="app.manifest"/>  
-    </ItemGroup>  
+        <IconFile Include="Heart.ico"/>
+        <ConfigFile Include="app.config">
+            <TargetPath>SimpleWinApp.exe.config</TargetPath>
+        </ConfigFile>
+        <BaseManifest Include="app.manifest"/>
+    </ItemGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            ConfigFile="@(ConfigFile)"  
-            Dependencies="@(Dependency)"  
-            Description="TestApp"  
-            EntryPoint="@(EntryPoint)"  
-            Files="@(File)"  
-            IconFile="@(IconFile)"  
-            InputManifest="@(BaseManifest)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            ConfigFile="@(ConfigFile)"
+            Dependencies="@(Dependency)"
+            Description="TestApp"
+            EntryPoint="@(EntryPoint)"
+            Files="@(File)"
+            IconFile="@(IconFile)"
+            InputManifest="@(BaseManifest)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            AssemblyName="SimpleWinApp.application"  
-            AssemblyVersion="1.0.0.0"  
-            DeploymentUrl="$(DeployToUrl)"  
-            Description="TestDeploy"  
-            EntryPoint="@(ApplicationManifest)"  
-            Install="true"  
-            OutputManifest="SimpleWinApp.application"  
-            Product="SimpleWinApp"  
-            Publisher="Microsoft"  
-            SupportUrl="$(SupportUrl)"  
-            UpdateEnabled="true"  
-            UpdateInterval="3"  
-            UpdateMode="Background"  
-            UpdateUnit="weeks">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            AssemblyName="SimpleWinApp.application"
+            AssemblyVersion="1.0.0.0"
+            DeploymentUrl="$(DeployToUrl)"
+            Description="TestDeploy"
+            EntryPoint="@(ApplicationManifest)"
+            Install="true"
+            OutputManifest="SimpleWinApp.application"
+            Product="SimpleWinApp"
+            Publisher="Microsoft"
+            SupportUrl="$(SupportUrl)"
+            UpdateEnabled="true"
+            UpdateInterval="3"
+            UpdateMode="Background"
+            UpdateUnit="weeks">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Пример  
- Этот пример использует задачу `GenerateApplicationManifest`, чтобы создать собственный манифест для приложения *Test.exe*, ссылаясь на собственный компонент *Alpha.dll* и изолированный COM-компонент *Bravo.dll*.  
+## <a name="example"></a>Пример
+Этот пример использует задачу `GenerateApplicationManifest`, чтобы создать собственный манифест для приложения *Test.exe*, ссылаясь на собственный компонент *Alpha.dll* и изолированный COM-компонент *Bravo.dll*.
 
- Этот пример создает *Test.exe.manifest*, делая приложение развертываемым посредством XCOPY с помощью преимущества COM без регистрации.  
+Этот пример создает *Test.exe.manifest*, делая приложение развертываемым посредством XCOPY с помощью преимущества COM без регистрации.
 
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
-```xml  
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <File Include="Test.exe" />  
-        <Dependency Include="Alpha.dll">  
-            <AssemblyType>Native</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <ComComponent Include="Bravo.dll" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <File Include="Test.exe" />
+        <Dependency Include="Alpha.dll">
+            <AssemblyType>Native</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <ComComponent Include="Bravo.dll" />
+    </ItemGroup>
 
-    <Target Name="Build">  
-        <GenerateApplicationManifest  
-            AssemblyName="Test.exe"  
-            AssemblyVersion="1.0.0.0"  
-            Dependencies="@(Dependency)"  
-            Files="@(File)"  
-            IsolatedComReferences="@(ComComponent)"  
-            ManifestType="Native">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+    <Target Name="Build">
+        <GenerateApplicationManifest
+            AssemblyName="Test.exe"
+            AssemblyVersion="1.0.0.0"
+            Dependencies="@(Dependency)"
+            Files="@(File)"
+            IsolatedComReferences="@(ComComponent)"
+            ManifestType="Native">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
- [Задача SignFile](../msbuild/signfile-task.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
+[Задача SignFile](../msbuild/signfile-task.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

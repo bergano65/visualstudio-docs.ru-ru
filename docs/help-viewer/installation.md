@@ -1,7 +1,6 @@
 ---
 title: Установка автономной справки
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005713"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155673"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Установка окна справки (Майкрософт)
 
@@ -43,10 +42,6 @@ ms.locfileid: "55005713"
 1. В открывшемся диалоговом окне нажмите кнопку **Установить**.
 
    ![Кнопка "Установить"](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![Значок кинокамеры для видео](../install/media/video-icon.png) | [Посмотрите видео](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) об установке окна справки (Майкрософт) с помощью Visual Studio Installer. |
 
 ## <a name="see-also"></a>См. также
 

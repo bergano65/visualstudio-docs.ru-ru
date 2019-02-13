@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009691"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854126"
 ---
 # <a name="csc-task"></a>Csc - задача
-Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
+Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `Csc` .  
-
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры задачи `Csc` .
 
 | Параметр | Описание |
 |------------------------------| - |
@@ -81,19 +80,19 @@ ms.locfileid: "55009691"
 | `Win32Manifest` | Необязательный параметр `String` .<br /><br /> Задает манифест Win32, который требуется включить. |
 | `Win32Resource` | Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- В следующем примере задача `Csc` используется для компиляции исполняемого файла из исходных файлов в коллекции элементов `Compile`.  
+## <a name="example"></a>Пример
+В следующем примере задача `Csc` используется для компиляции исполняемого файла из исходных файлов в коллекции элементов `Compile`.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>См. также
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
+[Задачи](../msbuild/msbuild-tasks.md)

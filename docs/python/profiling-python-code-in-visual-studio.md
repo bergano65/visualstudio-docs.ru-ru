@@ -2,7 +2,6 @@
 title: Измерение производительности кода Python
 description: Проверка производительности кода Python при использовании интерпретаторов на основе CPython с помощью профилировщика Visual Studio.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d598ce08942ed159b7e03a282ccf9f378f89c889
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979547"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155140"
 ---
 # <a name="profile-python-code"></a>Профилирование кода Python
 
@@ -31,10 +30,6 @@ ms.locfileid: "54979547"
 Когда вы нажмете кнопку **ОК**, запустится профилировщик, в котором откроется отчет о производительности. Из отчета вы узнаете, сколько времени выполнялось ваше приложение:
 
 ![Отчет профилирования о производительности](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) с примером профилирования Python (3 мин 00 с)|
 
 > [!Note]
 > Сейчас Visual Studio поддерживает только этот уровень профилирования приложений, но мы хотим получить ваши отзывы о других возможностях. Используйте [кнопку обратной связи **Была ли эта страница полезной?**](#feedback) внизу страницы.

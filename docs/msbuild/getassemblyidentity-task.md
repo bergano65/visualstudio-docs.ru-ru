@@ -18,32 +18,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5c716f34ed1603c4f0ed2965c1fd6184f44654
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982108"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853772"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
-Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.  
-  
-## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`Assemblies`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит извлеченные идентификаторы сборок.|  
-|`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|  
-  
-## <a name="remarks"></a>Примечания  
- Элементы, выводимые параметром `Assemblies`, содержат записи метаданных элементов с именем `Version`, `PublicKeyToken` и `Culture`.  
-  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- Следующий пример извлекает идентификатор файлов, указанных в элементе `MyAssemblies`, и выводит их в элемент `MyAssemblyIdentities`.  
-  
+Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.
+
+## <a name="task-parameters"></a>Параметры задачи
+В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`Assemblies`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит извлеченные идентификаторы сборок.|
+|`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|
+
+## <a name="remarks"></a>Примечания
+Элементы, выводимые параметром `Assemblies`, содержат записи метаданных элементов с именем `Version`, `PublicKeyToken` и `Culture`.
+
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+Следующий пример извлекает идентификатор файлов, указанных в элементе `MyAssemblies`, и выводит их в элемент `MyAssemblyIdentities`.
+
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
@@ -53,10 +53,10 @@ ms.locfileid: "54982108"
         <GetAssemblyIdentity AssemblyFiles="@(MyAssemblies)">
             <Output TaskParameter="Assemblies" ItemName="MyAssemblyIdentities" />
         </GetAssemblyIdentity>
-    </Target>  
-</Project>  
+    </Target>
+</Project>
 ```
 
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

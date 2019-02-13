@@ -3,7 +3,6 @@ title: Примеры параметров командной строки дл�
 description: Настройте эти примеры, чтобы произвести собственную установку Visual Studio из командной строки.
 ms.date: 01/16/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: TerryGLee
@@ -11,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f407d1465211962743c51e0241f03cd25f5d5ca5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908599"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Примеры параметров командной строки для установки Visual Studio 2017
 
