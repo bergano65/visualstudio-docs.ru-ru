@@ -1,19 +1,18 @@
 ---
 title: Тестирование библиотеки DLL на Visual C++ для приложений UWP
 ms.date: 02/15/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: b6ab809287bdcaac290328b81b5e9213758f5984
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87cffd39897d0e3122181792409044c6b0aedc99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986544"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924686"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Тестирование библиотеки DLL на Visual C++
 
@@ -23,7 +22,7 @@ ms.locfileid: "54986544"
 
  В этом разделе также создается одно решение Visual Studio и отдельные проекты для модульных тестов и для тестируемой библиотеки DLL. Модульные тесты можно включить непосредственно в проект библиотеки DLL или создать отдельные решения для модульных тестов и для библиотеки DLL. Рекомендации по выбору структуры см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-##  <a name="Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
+##  <a name="Create_the_solution_and_the_unit_test_project">Создание решения и проекта модульного теста</a>
 
 1.  В меню **Файл** последовательно выберите **Создать** > **Новый проект**.
 

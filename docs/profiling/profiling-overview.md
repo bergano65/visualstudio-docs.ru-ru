@@ -8,20 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039817"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155634"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Обзор средств для измерения производительности в Visual Studio
 
 Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные (например, значения переменных, вызовы функций и события) в течение некоторого периода времени, например времени выполнения приложения. Вы можете просматривать состояние приложения в различные моменты времени в процессе выполнения кода или проводить анализ производительности приложения после завершения выполнения.
-
-| | |
-|---------|---------|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Просмотрите [видео об использовании средств диагностики](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), где показано, как можно анализировать загрузку ЦП и использование памяти. |
 
 ## <a name="next-steps"></a>Следующие шаги
 

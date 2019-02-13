@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Исключение проектов из сборки
+title: Как выполнить  Исключение проектов из сборки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d938ead94444edd74bd9afdbc6021211b6ba0b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef85067ca3478bb2387f1f47a35938805f5fe0c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001947"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924595"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Как выполнить Исключение проектов из сборки
+# <a name="how-to-exclude-projects-from-a-build"></a>Как выполнить  Исключение проектов из сборки
 
 Вы можете создать решение без сборки всех проектов, которые оно содержит. Например, можно исключить проект, который прерывает сборку. После исследования и разрешения проблем можно будет построить этот проект.
 

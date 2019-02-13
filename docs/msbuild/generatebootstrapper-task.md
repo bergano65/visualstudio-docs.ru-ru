@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980366"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853785"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper - задача
-Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов. Она служит единым установщиком, объединяющим отдельные установщики для всех компонентов, образующих приложение.  
-  
-## <a name="task-parameters"></a>Параметры задачи  
- Ниже описаны параметры задачи `GenerateBootstrapper`.  
-  
+Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов. Она служит единым установщиком, объединяющим отдельные установщики для всех компонентов, образующих приложение.
+
+## <a name="task-parameters"></a>Параметры задачи
+Ниже описаны параметры задачи `GenerateBootstrapper`.
+
 - `ApplicationFile`  
   
    Необязательный параметр `String` .  
@@ -67,14 +67,14 @@ ms.locfileid: "54980366"
   
    Задает продукты, встраиваемые в загрузчик. Элементы, передаваемые в этот параметр, должны иметь следующий синтаксис:  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    Атрибут `Include` представляет имя необходимого компонента, который должен быть установлен. Метаданные элемента `ProductName` указывать не обязательно. Они будут использоваться обработчиком сборки в качестве понятного имени в случае, если найти пакет не удастся. Эти элементы не являются обязательными входными параметрами [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], кроме случаев, когда не задан параметр `ApplicationFile`. Следует указать по одному элементу на каждый необходимый компонент, который должен быть установлен для приложения.  
   
@@ -146,35 +146,35 @@ ms.locfileid: "54980366"
   
    Необязательный параметр `Boolean` .  
   
-   Если этот параметр равен `true`, загрузчик производит проверку XSD для заданных входных элементов загрузчика. По умолчанию этот параметр имеет значение `false`.  
-  
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- В следующем примере используется задача `GenerateBootstrapper` для установки приложения, требующего установки [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] в качестве необходимого компонента.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+   Если этот параметр равен `true`, загрузчик производит проверку XSD для заданных входных элементов загрузчика. По умолчанию этот параметр имеет значение `false`.
+
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+В следующем примере используется задача `GenerateBootstrapper` для установки приложения, требующего установки [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] в качестве необходимого компонента.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
