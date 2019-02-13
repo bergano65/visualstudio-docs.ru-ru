@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909691"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -79,7 +78,7 @@ ms.locfileid: "54269921"
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Создание модели EDM для службы
 
-Чтобы предоставить данные для приложения с помощью службы данных WCF, необходимо определить модель данных для службы. Служба данных WCF поддерживает два типа моделей данных: Модели EDM и настраиваемые модели данных, определяются с помощью объекта (CLR) среды CLR, которые реализуют <xref:System.Linq.IQueryable%601> интерфейс. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
+Чтобы предоставить данные для приложения с помощью службы данных WCF, необходимо определить модель данных для службы. Служба данных WCF поддерживает два типа моделей данных: модели EDM и настраиваемые модели данных, определяются с помощью объекта (CLR) среды CLR, которые реализуют <xref:System.Linq.IQueryable%601> интерфейс. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
 
 1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 

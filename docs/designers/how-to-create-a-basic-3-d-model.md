@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Создание простейшей трехмерной модели
+title: Как выполнить  Создание простейшей трехмерной модели
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf050a6546c32b99b5f1c701428e69e26f22c80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003426"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970274"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Как выполнить Создание простейшей трехмерной модели
+# <a name="how-to-create-a-basic-3d-model"></a>Как выполнить  Создание простейшей трехмерной модели
 
 В этой статье показано, как с помощью редактора моделей создать простую трехмерную модель. Рассматриваются следующие действия:
 

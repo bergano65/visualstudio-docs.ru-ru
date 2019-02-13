@@ -18,54 +18,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0e4d6cbcceb92485f3427e5e18a8d7e7fc18c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989566"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938934"
 ---
 # <a name="lc-task"></a>LC - задача
-Создает программу-оболочку для файл *LC.exe* для создания *LICENSE*-файла из *LICX*-файла. Дополнительные сведения о *LC.exe* см. в разделе [LC.exe (компилятор лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).  
-  
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры для задачи `LC`.  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|  
-|`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|  
-|`OutputDirectory`|Необязательный параметр `String` .<br /><br /> Определяет каталог для размещения выходных *LICENSES*-файлов.|  
-|`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES*-файла. Если имя не указано, используется имя *LICX*-файла, а создаваемый *LICENSES*-файл помещается в каталог, содержащий *LICX*-файл.|  
-|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Определяет компоненты, на которые имеются ссылки, для загрузки при создании *LICENSES*-файла.|  
-|`SdkToolsPath`|Необязательный параметр `String` .<br /><br /> Указывает путь к средствам пакета SDK, например *resgen.exe*.|  
-|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в *LICENSES*-файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).|  
-  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- В следующем примере задача `LC` компилирует лицензии.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-<!-- Item declarations, etc -->  
-  
-    <Target Name="CompileLicenses">  
-        <LC  
-            Sources="@(LicxFile)"  
-            LicenseTarget="$(TargetFileName)"  
-            OutputDirectory="$(IntermediateOutputPath)"  
-            OutputLicenses="$(IntermediateOutputPath)$(TargetFileName).licenses"  
-            ReferencedAssemblies="@(ReferencePath);@(ReferenceDependencyPaths)">  
-  
-            <Output  
-                TaskParameter="OutputLicenses"  
-                ItemName="CompiledLicenseFile"/>  
-        </LC>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+Создает программу-оболочку для файл *LC.exe* для создания *LICENSE*-файла из *LICX*-файла. Дополнительные сведения о *LC.exe* см. в разделе [LC.exe (компилятор лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).
+
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры для задачи `LC`.
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
+|`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|
+|`OutputDirectory`|Необязательный параметр `String` .<br /><br /> Определяет каталог для размещения выходных *LICENSES*-файлов.|
+|`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES*-файла. Если имя не указано, используется имя *LICX*-файла, а создаваемый *LICENSES*-файл помещается в каталог, содержащий *LICX*-файл.|
+|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Определяет компоненты, на которые имеются ссылки, для загрузки при создании *LICENSES*-файла.|
+|`SdkToolsPath`|Необязательный параметр `String` .<br /><br /> Указывает путь к средствам пакета SDK, например *resgen.exe*.|
+|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в *LICENSES*-файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).|
+
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+
+## <a name="example"></a>Пример
+В следующем примере задача `LC` компилирует лицензии.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!-- Item declarations, etc -->
+
+    <Target Name="CompileLicenses">
+        <LC
+            Sources="@(LicxFile)"
+            LicenseTarget="$(TargetFileName)"
+            OutputDirectory="$(IntermediateOutputPath)"
+            OutputLicenses="$(IntermediateOutputPath)$(TargetFileName).licenses"
+            ReferencedAssemblies="@(ReferencePath);@(ReferenceDependencyPaths)">
+
+            <Output
+                TaskParameter="OutputLicenses"
+                ItemName="CompiledLicenseFile"/>
+        </LC>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

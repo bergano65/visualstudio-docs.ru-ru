@@ -1,7 +1,6 @@
 ---
 title: Шаг 11. Запуск программы и изучение других функций
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042898"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934657"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Шаг 11. Запуск программы и изучение других функций
 Разработка программа завершена и она готова для выполнения. Можно запустить программу и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия, попробуйте улучшить программу с помощью изменения цвета формы, настройки кнопок и флажков, изменения свойств формы.

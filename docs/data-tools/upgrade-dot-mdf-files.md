@@ -11,16 +11,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53863424"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943783"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 
@@ -70,9 +69,9 @@ Visual Studio можно использовать, чтобы открыть п�
 
         -   Чтобы использовать конкретную версию: `(localdb)\ProjectsV12` или `(localdb)\ProjectsV13`, где версии 12 — LocalDB 2014, а V13 — LocalDB 2016.
 
-    -   **Добавить файл базы данных**: Физический путь базы данных-получателя *.mdf* файл.
+    -   **Добавить файл базы данных**: физический путь базы данных-получателя *.mdf* файл.
 
-    -   &Логическое имя: Имя, которое вы хотите использовать с файлом.
+    -   **Логическое имя**: имя, которое вы хотите использовать с файлом.
 
 3.  Нажмите кнопку **OK**.
 

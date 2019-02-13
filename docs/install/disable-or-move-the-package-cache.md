@@ -3,7 +3,6 @@ title: Отключение или перемещение кэша пакето�
 description: Сведения о включении, отключении и перемещении кэша пакетов для развертывания Visual Studio.
 ms.date: 04/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06234ab61bc77f9d52e18b479f05f145e850d0ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970261"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Отключение или перемещение кэша пакетов
 

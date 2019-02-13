@@ -12,15 +12,14 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 92a974d233e2d449148a515f3e7bf39f89a95f20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33927bcebbd4cffbed912d66dd723856af8b11d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967158"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948879"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Как выполнить Создание подключаемого модуля нагрузочных тестов
+# <a name="how-to-create-a-load-test-plug-in"></a>Как выполнить  Создание подключаемого модуля нагрузочных тестов
 
 Существует возможность создания подключаемого модуля нагрузочных тестов для запуска кода в различное время в процессе выполнения нагрузочного теста. Подключаемый модуль создается для расширения или изменения встроенных возможностей нагрузочного теста. Например, можно составить код подключаемого модуля для нагрузочного теста, позволяющий настраивать или изменять шаблон нагрузочного теста во время выполнения нагрузочного теста. Для этого необходимо создать класс, наследующий интерфейс <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. В этом классе должен быть реализован метод <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> данного интерфейса. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 

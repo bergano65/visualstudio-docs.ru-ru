@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Добавление комментариев в диаграммы классов (конструктор классов)
+title: Как выполнить  Добавление комментариев в диаграммы классов (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c485594b4010bab8d4089e8d42504beccf7a92
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991571"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970547"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Как выполнить Добавление комментариев в диаграммы классов
+# <a name="how-to-add-comments-to-class-diagrams"></a>Как выполнить  Добавление комментариев в диаграммы классов
 
 Для добавления примечаний к схемам классов можно использовать фигуры комментария. У фигуры комментария есть свойство **Текст**, в которое можно вводить текст. Фигуры комментария существуют только в области схемы, а не в коде.
 

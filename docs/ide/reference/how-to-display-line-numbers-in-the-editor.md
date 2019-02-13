@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Отображение номеров строк в редакторе
+title: Как выполнить  Отображение номеров строк в редакторе
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64d6069c4f1c1fe8a823a7acae30908c438632d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6986394a63ea495971a8f375c3143b678f29898e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942925"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Как выполнить Отображение номеров строк в редакторе
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Как выполнить  Отображение номеров строк в редакторе
 
 Можно отображать или скрывать нумерацию строк кода.
 

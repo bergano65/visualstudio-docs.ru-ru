@@ -1,7 +1,6 @@
 ---
 title: Перенос по словам
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7493a7aebad8a0372d2150f766caf464ec47af6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935909"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926282"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Как выполнить Управление переносом слов в редакторе
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Как выполнить  Управление переносом слов в редакторе
 
 Флажок **Перенос по словам** можно устанавливать и снимать. Если этот флажок установлен, часть длинной строки, выступающая за пределы текущей ширины окна редактора кода, отображается на следующей строке. Если этот флажок снят, например для упрощения использования нумерации строк, окно можно прокрутить вправо, чтобы увидеть окончание длинной строки.
 

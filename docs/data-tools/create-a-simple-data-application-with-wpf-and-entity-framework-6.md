@@ -7,15 +7,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5c6a5a1e7dab8f52dc098fb14a1f872d14eedcd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0febbf31dcf9f0ae1e7a4e47dae2e9cf3d291dbf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959233"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909171"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простого приложения для обработки данных с помощью WPF и Entity Framework 6
 
@@ -354,7 +353,7 @@ ms.locfileid: "54959233"
 
 В приложениях Windows Forms вы получите объект BindingNavigator с кнопками для просмотра строк в базе данных и выполнение основных операций CRUD. WPF предоставляет BindingNavigator, но это достаточно просто для того создать его. Сделать это с помощью кнопок в StackPanel по горизонтали и связать кнопок с командами, которые привязаны к методам в коде программной части.
 
-Существует части четверки логику команды: (1) команды, (2 привязки, (3) кнопок и (4) обработчиками команд в код программной части.
+Состоит из частей четверки логику команды: (1) команды, (2 привязки, (3) кнопок и (4) обработчиками команд в код программной части.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Добавление команд, привязок и кнопки в XAML
 

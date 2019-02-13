@@ -1,7 +1,6 @@
 ---
 title: Добавление ссылок в диспетчере ссылок
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -22,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc6fc2b414ae7e49cae326ae5ce660e45cc8b47a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943471"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Как выполнить Добавление и удаление ссылок с помощью диспетчера ссылок
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Как выполнить  Добавление и удаление ссылок с помощью диспетчера ссылок
 
 Диалоговое окно **Диспетчер ссылок** позволяет добавлять ссылки на компоненты, которые разработали вы, корпорация Майкрософт или другая организация, а также управлять этими ссылками. При разработке универсального приложения Windows ваш проект автоматически ссылается на все правильные библиотеки DLL пакета SDK Windows. При разработке приложения .NET ваш проект автоматически ссылается на *mscorlib.dll*. Некоторые API .NET представлены в компонентах, которые необходимо добавить вручную. Ссылки на компоненты COM или пользовательские компоненты необходимо добавить вручную.
 

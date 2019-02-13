@@ -2,7 +2,6 @@
 title: Общие сведения о редактировании для разработчиков JavaScript
 description: В этом вводном руководстве по редактору кода Visual Studio мы продемонстрируем несколько методов, которые упрощают написание, понимание кода JavaScript и навигацию по нему в Visual Studio.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -11,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4c272ba3009f3a9e947563cfa8c65843eab57067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957835"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом кратком руководстве по редактору кода Visual Studio мы рассмотрим несколько методов, которые упрощают написание, понимание кода и навигацию по нему в Visual Studio.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
 
 В этой статье предполагается, что вы уже знакомы с основами разработки на JavaScript. Если это не так, мы рекомендуем сначала изучить руководство по [созданию приложения Node.js и Express](../javascript/tutorial-nodejs.md).
 

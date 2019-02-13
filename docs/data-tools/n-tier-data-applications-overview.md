@@ -11,15 +11,14 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 41728d6a2070cfa58a7d94cc8c129720b97ea92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952656"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943694"
 ---
 # <a name="n-tier-data-applications-overview"></a>Общие сведения об n-уровневых приложениях
 *N-уровневых* данных приложения, данные приложения, разделенные на несколько *уровни*. Также называется «распределенные приложения» и «многоуровневыми приложениями», n уровневые приложения разделяют обработку на несколько отдельных уровней, которые распределяются между клиентом и сервером. При разработке приложений, работающих с данными, должен иметь четкое разделение между различными уровнями, составляющих приложение.
@@ -76,13 +75,13 @@ Visual Studio содержит несколько функций, которые
 
 [Разделение наборов данных и адаптеров таблиц на разные проекты](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[Пошаговое руководство: создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [N-уровневые и удаленные приложения с LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

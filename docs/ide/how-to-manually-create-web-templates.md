@@ -1,7 +1,6 @@
 ---
 title: Создание веб-шаблонов
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21c44587d3398313993e0e65bb32b1dbbbb98dc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938220"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Как выполнить Создание веб-шаблонов вручную
+# <a name="how-to-manually-create-web-templates"></a>Как выполнить  Создание веб-шаблонов вручную
 
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл *VSTEMPLATE* должен указывать, что это веб-шаблон, а также задавать язык программирования.
 

@@ -1,7 +1,6 @@
 ---
 title: Переход к файлу, переход к символу, переход к строке
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06bc4e3bc598f57838d633ccf0713338d5f9179
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934761"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923542"
 ---
 # <a name="find-code-using-go-to-commands"></a>Поиск в коде с использованием команд перехода
 
@@ -57,7 +56,7 @@ ms.locfileid: "54934761"
 :-: | - | - | -
 :| ![Значок строки](media/gotoall-line-icon.png) | **CTRL**+**G** | Переход к строке с указанным номером
 f| ![Значок файлов](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Переход к указанному файлу
-r| ![Значок последних файлов](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Переход к указанному, недавно просмотренному файлу
+процедура| ![Значок последних файлов](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Переход к указанному, недавно просмотренному файлу
 t| ![Значок типов](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Переход к указанному типу
 m| ![Значок членов](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**M** | Переход к указанному члену
 \#| ![Значок символов](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **CTRL**+**S** | Переход к указанному символу

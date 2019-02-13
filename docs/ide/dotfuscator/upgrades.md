@@ -2,7 +2,6 @@
 title: Обновление Dotfuscator Community Edition (CE)
 ms.date: 02/08/2017
 ms.devlang: dotnet
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, решения PreEmptive, защита PreEmptive, защита, community edition, обфускация, .NET, бесплатно, Visual Studio 2017, обновление, командная строка
 helpviewer_keywords:
@@ -24,12 +23,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62a9273ef55a84c26714d2ad2ea1ebb7efe94319
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937325"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Обновление Dotfuscator Community Edition (CE)
 

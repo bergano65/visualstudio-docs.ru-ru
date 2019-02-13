@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Изменение центра вращения трехмерной модели
+title: Как выполнить  Изменение центра вращения трехмерной модели
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870c08210ff16b92cd44be580cad57576f7b7628
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ad14241f5247e7ce16e84cfe26675bde45cb0de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008261"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945486"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Как выполнить Изменение центра вращения трехмерной модели
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Как выполнить  Изменение центра вращения трехмерной модели
 
 В этой статье демонстрируется использование редактора моделей для изменения *центра вращения* трехмерной модели. Центр вращения является точкой в пространство, которая определяет математический центр для вращения и масштабирования объекта.
 

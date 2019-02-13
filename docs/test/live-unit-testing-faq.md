@@ -1,7 +1,6 @@
 ---
 title: 'Функция Live Unit Testing: вопросы и ответы'
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947397"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -139,7 +138,7 @@ ms.locfileid: "53935597"
 
 Задайте путь, где вы хотите хранить артефакты сборки Live Unit Testing, в качестве значения переменной среды уровня пользователя `LiveUnitTesting_BuildRoot`. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Выполнение тестов в обозревателе тестов и с помощью Live Unit Testing 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Выполнение тестов в обозревателе тестов и с помощью Live Unit Testing
 **Чем отличается выполнение тестов в окне обозревателя тестов от их выполнения с помощью функции Live Unit Testing?**
 
 Существует несколько различий:
@@ -158,7 +157,7 @@ ms.locfileid: "53935597"
 **Как исключить тесты из выполнения с помощью Live Unit Testing?**
 
 Пользовательские параметры см. в разделе "Добавление и исключение тестовых проектов и методов теста" статьи [Использование Live Unit Testing в Visual Studio 2017 Enterprise Edition](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods). Добавление или исключение тестов полезно, когда необходимо выполнить конкретный набор тестов для определенного сеанса редактирования или сохранить личные настройки.
- 
+
 Для параметров, относящихся к конкретному решению, вы можете программно применить атрибут <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName>, чтобы исключить методы, свойства, классы или структуры из инструментирования с помощью функции Live Unit Testing. Кроме того, чтобы исключить весь проект из инструментирования, в файле проекта для свойства `<ExcludeFromCodeCoverage>` можно задать значение `true`. Функция Live Unit Testing будет по-прежнему выполнять неинструментированные тесты, но их покрытие визуализироваться не будет.
 
 Вы также можете проверить, отправлен ли атрибут `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` в текущий домен приложения, и на основе этого отключить тесты. Например, на тестовой платформе xUnit это можно сделать следующим образом:

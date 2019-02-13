@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
+title: Как выполнить  Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1b105f0e5cc566acb09d999c2341e4edaf0692
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991324"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956692"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Как выполнить  Копирование элементов диаграммы классов в документ Microsoft Office
 
 Можно копировать фигуры из схемы классов .NET (файл *.cd*) в другие документы. В зависимости от типа документа, в который выполняется вставка, при вставке будет получена либо копия фигуры, либо ее базовый код. Сведения о копировании фигур из схем классов UML в проекте моделирования см. в статье [Экспорт схем в виде изображений](../../modeling/export-diagrams-as-images.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Практическое руководство. Использование окружающих фрагментов кода | Документы Майкрософт
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac5cef701ddab84e30ad6e4eb85881da6f51b5e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032691"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952272"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Как выполнить Использование окружающих фрагментов кода
+# <a name="how-to-use-surround-with-code-snippets"></a>Как выполнить  Использование окружающих фрагментов кода
 
 Способы использования окружающих фрагментов кода описаны в процедурах ниже. Доступ к окружающим фрагментам кода можно получить тремя способами: с помощью сочетаний клавиш, меню **Правка** и контекстного меню.
 

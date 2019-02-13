@@ -1,7 +1,6 @@
 ---
 title: Целевая версия .NET Framework.
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f1dfec6eecb92a306a8c3579c6a980b3d3fa8d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031361"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954092"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Как выполнить Определение целевой версии .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Как выполнить  Определение целевой версии .NET Framework
 
 В этом документе описано, как выбрать целевую версию .NET Framework при создании проекта и как изменить целевую версию для существующего проекта Visual Basic, C# или Visual F#.
 
