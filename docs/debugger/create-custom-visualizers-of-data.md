@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204392"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009059"
 ---
 # <a name="create-custom-data-visualizers"></a>Создание пользовательских данных визуализаторов
  Объект *визуализатор* является частью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] пользовательский интерфейс отладчика, который отображает переменной или объекта способом, подходящим для этого типа данных. Например HTML-визуализатор интерпретирует строку HTML и отображает результат, отображаемое в окне браузера. Визуализатор точечных рисунков распознает структуру точечного рисунка и отображает представляемой им. Некоторые визуализаторы позволяют изменить, а также просматривать данные.
@@ -82,9 +82,9 @@ ms.locfileid: "54204392"
   
 ## <a name="see-also"></a>См. также
   
- [Пошаговое руководство: создание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Пошаговое руководство: создание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Пошаговое руководство. Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)  
   
