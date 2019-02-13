@@ -4,18 +4,17 @@ description: Узнайте, как работать с файлами конф�
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 4c4f359051ba98c75778ccc0d8c8b653558097a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140655"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919356"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Управление конфигурациями и профилями службы
 ## <a name="overview"></a>Обзор
