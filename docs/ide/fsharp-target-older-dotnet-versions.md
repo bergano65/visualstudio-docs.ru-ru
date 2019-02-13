@@ -2,19 +2,18 @@
 title: Указание предыдущих версий в качестве целевой платформы .NET Framework для F#
 description: Узнайте об указании более старой версии .NET Framework в качестве целевой платформы при использовании F# в Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88a689461fd5417800c6243950f296fde18fb3a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970946"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942080"
 ---
 # <a name="target-older-versions-of-net-f"></a>Указание предыдущих версий в качестве целевой платформы .NET (F#)
 

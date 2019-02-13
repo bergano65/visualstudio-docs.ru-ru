@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Реализация интерфейса (конструктор классов)
+title: Как выполнить  Реализация интерфейса (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f3ca84dfb7832d15f6d8d8c53bf3770e36a0d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923921"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Как выполнить Реализация интерфейса в конструкторе классов
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Как выполнить  Реализация интерфейса в конструкторе классов
 
 В **конструкторе классов** можно реализовать интерфейс на диаграмме классов путем подключения его к классу, который предоставляет код для методов интерфейса. **Конструктор классов** создает реализацию интерфейса и отображает связь между интерфейсом и классом в виде отношения наследования. Вы можете реализовать интерфейс, нарисовав между интерфейсом и классом линию наследования или перетащив интерфейс из представления классов.
 

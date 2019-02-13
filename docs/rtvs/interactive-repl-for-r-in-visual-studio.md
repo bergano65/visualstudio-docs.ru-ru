@@ -2,19 +2,18 @@
 title: Интерактивная оболочка REPL для R
 description: Использование интерактивной среды REPL для R в Visual Studio, встроенной в окна редактора.
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921187"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948073"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Работа с интерактивным окном R
 

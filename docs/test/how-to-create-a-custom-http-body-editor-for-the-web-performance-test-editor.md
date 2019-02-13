@@ -8,15 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5fb6df972951ae9f648d191665375c0934b9d559
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976094"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936204"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить  Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
 Чтобы изменить содержимое основного текста строки или двоичного основного текста запроса веб-служб, такого как запрос SOAP, REST, asmx, wcf, RIA или запрос веб-служб других типов, можно создать пользовательский редактор содержимого.
 

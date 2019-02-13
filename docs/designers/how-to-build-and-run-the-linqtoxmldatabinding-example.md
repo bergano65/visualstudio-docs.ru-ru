@@ -1,21 +1,20 @@
 ---
-title: Как выполнить построить и запустить пример LinqToXmlDataBinding
+title: Как выполнить  построить и запустить пример LinqToXmlDataBinding
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10d3f93e467d95e11606d8d8e4d27d82abb5dee6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951908"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить Сборка и запуск примера LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить  Сборка и запуск примера LinqToXmlDataBinding
 
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.
 

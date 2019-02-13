@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Создание простейшего шейдера цвета
+title: Как выполнить  Создание простейшего шейдера цвета
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d6e11d7c160537f795a5af188f02ebb2a559c4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 858ea12709b187204cd1662d41b82266c99efc01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012070"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953481"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Как выполнить Создание простейшего шейдера цвета
+# <a name="how-to-create-a-basic-color-shader"></a>Как выполнить  Создание простейшего шейдера цвета
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера с простым цветом. Этот шейдер задает постоянное значение цвета RGB в качестве окончательного цвета.
 

@@ -8,15 +8,14 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7b9e61e7eee3303f39cb0fbb32d6e61eac3bb8e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958528"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935996"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Как выполнить Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Как выполнить  Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
 
 Можно также использовать адаптер диагностических данных профилировщика ASP.NET для сбора данных профилировщика ASP.NET. Этот адаптер диагностических данных собирает данные о производительности приложений ASP.NET.
 
