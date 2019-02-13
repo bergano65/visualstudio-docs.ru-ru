@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f5515be77cfa6ae734b97a2cdba52f6702f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946988"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853382"
 ---
 # <a name="error-task"></a>Error - задача
-Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  
+Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `Error` .  
-
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры задачи `Error` .
 
 | Параметр | Описание |
 |---------------| - |
@@ -39,30 +38,30 @@ ms.locfileid: "54946988"
 | `HelpKeyword` | Необязательный параметр `String` .<br /><br /> Ключевое слово справки, связанное с ошибкой. |
 | `Text` | Необязательный параметр `String` .<br /><br /> Текст ошибки, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`. |
 
-## <a name="remarks"></a>Примечания  
- Задача `Error` позволяет передавать текст ошибок в средства ведения журнала и останавливать выполнение сборки в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+## <a name="remarks"></a>Примечания
+Задача `Error` позволяет передавать текст ошибок в средства ведения журнала и останавливать выполнение сборки в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
- Если результат вычисления параметра `Condition` оказывается равным `true`, сборка останавливается, а ошибка регистрируется в журнале. Если параметр `Condition` не существует, ошибка регистрируется в журнале, а выполнение сборки останавливается. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
+Если результат вычисления параметра `Condition` оказывается равным `true`, сборка останавливается, а ошибка регистрируется в журнале. Если параметр `Condition` не существует, ошибка регистрируется в журнале, а выполнение сборки останавливается. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- В следующем примере кода проверяется, что установлены все обязательные свойства. Если это не так, проект инициирует событие ошибки и регистрирует в журнале значение параметра `Text` задачи `Error`.  
+## <a name="example"></a>Пример
+В следующем примере кода проверяется, что установлены все обязательные свойства. Если это не так, проект инициирует событие ошибки и регистрирует в журнале значение параметра `Text` задачи `Error`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Error  
-            Text=" The 0 property must be set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Error  
-            Text="The FREEBUILD property must be set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Error
+            Text=" The 0 property must be set on the command line."
+            Condition="'$(0)' == ''" />
+        <Error
+            Text="The FREEBUILD property must be set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>См. также
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
+[Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

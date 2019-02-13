@@ -3,18 +3,17 @@ title: Создание кода и управление им
 description: Узнайте, как использовать редактор кода и другие средства Visual Studio для создания, просмотра, развития кода и управления им.
 ms.date: 01/01/2018
 layout: LandingPage
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33c7650efe92ee57bd554d47f9883669a8f50268
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855434"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913097"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Создание кода и управление им с помощью Visual Studio
 

@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Создание типов с помощью конструктора классов
+title: Как выполнить  Создание типов с помощью конструктора классов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -18,14 +17,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f71ea519a8eddfc28fbf8bb0d15bdc228050e56a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960949"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919648"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Как выполнить Создание типов с помощью конструктора классов
+# <a name="how-to-create-types-by-using-class-designer"></a>Как выполнить  Создание типов с помощью конструктора классов
 
 Для создания новых типов проектов C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов в конструкторе классов](how-to-view-existing-types.md).
 

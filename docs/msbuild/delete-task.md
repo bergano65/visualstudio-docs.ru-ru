@@ -18,44 +18,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36b2c2a4a4d59426b8ccdd258a0a879ba50a1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982251"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853806"
 ---
 # <a name="delete-task"></a>Delete - задача
-Удаляет указанные файлы.  
-  
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `Delete` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`DeletedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, которые были успешно удалены.|  
-|`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для удаления.|  
-|`TreatErrorsAsWarnings`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, ошибки регистрируются как предупреждения. Значение по умолчанию — `false`.|  
-  
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- В следующем примере рассматривается удаление файла *MyApp.pdb*.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <PropertyGroup>  
-        <AppName>MyApp</AppName>  
-    </PropertyGroup>  
-  
-    <Target Name="DeleteFiles">  
-        <Delete Files="$(AppName).pdb" />  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+Удаляет указанные файлы.
+
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры задачи `Delete` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`DeletedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, которые были успешно удалены.|
+|`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для удаления.|
+|`TreatErrorsAsWarnings`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, ошибки регистрируются как предупреждения. Значение по умолчанию — `false`.|
+
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+В следующем примере рассматривается удаление файла *MyApp.pdb*.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <AppName>MyApp</AppName>
+    </PropertyGroup>
+
+    <Target Name="DeleteFiles">
+        <Delete Files="$(AppName).pdb" />
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

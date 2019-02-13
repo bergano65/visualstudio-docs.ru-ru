@@ -18,48 +18,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6aa429247d8f27a56d367f821888bdc8caad310
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010406"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853408"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath - задача
-Извлекает путь к сборкам [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `GetFrameworkPath` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`FrameworkVersion11Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 1.1, если они есть. В противном случае возвращает значение `null`.|  
-|`FrameworkVersion20Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 2.0, если они есть. В противном случае возвращает значение `null`.|  
-|`FrameworkVersion30Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 3.0, если они есть. В противном случае возвращает значение `null`.|  
-|`FrameworkVersion35Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 3.5, если они есть. В противном случае возвращает значение `null`.|  
-|`FrameworkVersion40Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 4.0, если они есть. В противном случае возвращает значение `null`.|  
-|`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|  
-  
-## <a name="remarks"></a>Примечания  
- Если установлено несколько версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], эта задача возвращает версию, для которой предназначен [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- Следующий пример использует задачу `GetFrameworkPath` для сохранения пути к [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в свойстве `FrameworkPath`.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="GetPath">  
-        <GetFrameworkPath>  
-            <Output  
-                TaskParameter="Path"  
-                PropertyName="FrameworkPath" />  
-        </GetFrameworkPath>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+Извлекает путь к сборкам [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+## <a name="task-parameters"></a>Параметры задачи
+В следующей таблице приводятся параметры задачи `GetFrameworkPath` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`FrameworkVersion11Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 1.1, если они есть. В противном случае возвращает значение `null`.|
+|`FrameworkVersion20Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 2.0, если они есть. В противном случае возвращает значение `null`.|
+|`FrameworkVersion30Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 3.0, если они есть. В противном случае возвращает значение `null`.|
+|`FrameworkVersion35Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 3.5, если они есть. В противном случае возвращает значение `null`.|
+|`FrameworkVersion40Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 4.0, если они есть. В противном случае возвращает значение `null`.|
+|`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|
+
+## <a name="remarks"></a>Примечания
+Если установлено несколько версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], эта задача возвращает версию, для которой предназначен [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+Следующий пример использует задачу `GetFrameworkPath` для сохранения пути к [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в свойстве `FrameworkPath`.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="GetPath">
+        <GetFrameworkPath>
+            <Output
+                TaskParameter="Path"
+                PropertyName="FrameworkPath" />
+        </GetFrameworkPath>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Задачи](../msbuild/msbuild-tasks.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

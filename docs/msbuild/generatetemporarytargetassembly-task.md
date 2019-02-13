@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3537a3b1a8183acf4a8470147ed747c39a855d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933338"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853876"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Задача GenerateTemporaryTargetAssembly
-Задача <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> создает сборку, если по меньшей мере одна страница [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.  
-  
-## <a name="task-parameters"></a>Параметры задачи  
-  
+Задача <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> создает сборку, если по меньшей мере одна страница [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.
+
+## <a name="task-parameters"></a>Параметры задачи
+
 | Параметр | Описание |
 |--------------------------| - |
 | `AssemblyName` | Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта, и которое также используется для временно создаваемой конечной сборки. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] с именем *WinExeAssembly.exe*, параметр **AssemblyName** имеет значение **WinExeAssembly**. |
@@ -41,39 +41,39 @@ ms.locfileid: "54933338"
 | `MSBuildBinPath` | Обязательный параметр **string**.<br /><br /> Указывает расположение файла *MSBuild.exe*, который необходим для компиляции временной конечной сборки. |
 | `ReferencePath` | Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке. |
 | `ReferencePathTypeName` | Обязательный параметр **string**.<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции (**CompileTargetName**), который задает список ссылок на сборку (**ReferencePath**). Мы рекомендуем использовать значение **ReferencePath**. |
-  
-## <a name="remarks"></a>Примечания  
- При первом проходе компиляции разметки, который выполняет процесс [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] компилируются в двоичный формат. Для этого компилятору требуется список сборок, на которые есть ссылки и которые содержат типы, используемые в файлах [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Но если файл [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] использует тип, который определен в том же проекте, соответствующая сборка для этого проекта не будет создана, пока не будет выполнена сборка проекта. Следовательно, ссылку на сборку во время первого прохода компиляции разметки предоставить невозможно.  
-  
- Вместо этого **MarkupCompilePass1** откладывает преобразование файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)], которые содержат ссылки на типы, определенные в том же проекте, до второй компиляция разметки, которую выполнит процесс [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). До момента выполнения **MarkupCompilePass2** создается временная сборка. Эта сборка содержит типы, используемые файлами [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)], компиляция разметки для которых была отложена. Ссылка на созданную сборку передается в **MarkupCompilePass2** при его запуске, чтобы он мог выполнить отложенное преобразование файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичный формат.  
-  
-## <a name="example"></a>Пример  
- Следующий пример создает временную сборку, так как файл *Page1.xaml* содержит ссылку на тип, определенный в том же проекте.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask  
-    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="GenerateTemporaryTargetAssemblyTask">  
-    <GenerateTemporaryTargetAssembly  
-      AssemblyName="WPFMSBuildSample"  
-      CompileTargetName="CoreCompile"  
-      CompileTypeName="Compile"  
-      CurrentProject="FullBuild.proj"  
-      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"  
-      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"  
-      IntermediateOutputPath=".\obj\debug\"  
-      MSBuildBinPath="$(MSBuildBinPath)"  
-      ReferencePathTypeName="ReferencePath"/>  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+
+## <a name="remarks"></a>Примечания
+При первом проходе компиляции разметки, который выполняет процесс [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] компилируются в двоичный формат. Для этого компилятору требуется список сборок, на которые есть ссылки и которые содержат типы, используемые в файлах [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Но если файл [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] использует тип, который определен в том же проекте, соответствующая сборка для этого проекта не будет создана, пока не будет выполнена сборка проекта. Следовательно, ссылку на сборку во время первого прохода компиляции разметки предоставить невозможно.
+
+Вместо этого **MarkupCompilePass1** откладывает преобразование файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)], которые содержат ссылки на типы, определенные в том же проекте, до второй компиляция разметки, которую выполнит процесс [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). До момента выполнения **MarkupCompilePass2** создается временная сборка. Эта сборка содержит типы, используемые файлами [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)], компиляция разметки для которых была отложена. Ссылка на созданную сборку передается в **MarkupCompilePass2** при его запуске, чтобы он мог выполнить отложенное преобразование файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичный формат.
+
+## <a name="example"></a>Пример
+Следующий пример создает временную сборку, так как файл *Page1.xaml* содержит ссылку на тип, определенный в том же проекте.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="GenerateTemporaryTargetAssemblyTask">
+    <GenerateTemporaryTargetAssembly
+      AssemblyName="WPFMSBuildSample"
+      CompileTargetName="CoreCompile"
+      CompileTypeName="Compile"
+      CurrentProject="FullBuild.proj"
+      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"
+      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"
+      IntermediateOutputPath=".\obj\debug\"
+      MSBuildBinPath="$(MSBuildBinPath)"
+      ReferencePathTypeName="ReferencePath"/>
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+[Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
+[Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)  
+[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
+[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+[Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

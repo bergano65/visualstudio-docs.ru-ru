@@ -2,7 +2,6 @@
 title: Публикация приложения Python в Службе приложений Azure
 description: Параметры для публикации приложения Python в службе приложений Azure, включая Git и контейнеры для Linux, и развертывание в IIS.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b31a19a08473f71404395ac4d1694489253738b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ee96ac416417b8dafca4656732385ee02bfac30
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991740"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920929"
 ---
 # <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 
