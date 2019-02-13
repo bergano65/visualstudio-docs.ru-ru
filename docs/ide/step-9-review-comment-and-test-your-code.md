@@ -1,7 +1,6 @@
 ---
 title: Шаг 9. Проверка, комментирование и тестирование кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92c6356a5d6f382e97abb745412134d22bfa97c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920752"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934319"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Шаг 9. Проверка, комментирование и тестирование кода
 Затем в код добавляется комментарий. Комментарий это заметка, которая не влияет на выполнение программы. Он облегчает понимание назначения кода тем, кто читает этот код. Добавление комментариев в код — хорошая привычка. В Visual C# строка обозначается как комментарий с помощью двух косых черт (//). В Visual Basic строка обозначается как комментарий с помощью одинарной кавычки('). После добавления комментария программа проверяется. Рекомендуется регулярно выполнять и тестировать код при работе над проектами, чтобы можно было на ранних стадиях выявлять и устранять проблемы, прежде чем код станет слишком сложным. Это называется *итеративным тестированием*.
