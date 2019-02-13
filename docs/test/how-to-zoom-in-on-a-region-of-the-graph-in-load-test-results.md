@@ -11,15 +11,14 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49d47a0784c3f3c1ffb40b861da929e74d839abb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948977"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913071"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Как выполнить Увеличение области диаграммы в результатах нагрузочного теста
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Как выполнить  Увеличение области диаграммы в результатах нагрузочного теста
 
 После завершения нагрузочного теста можно использовать ползунки для изменения масштаба и прокрутки областей диаграммы. При увеличении можно более подробно изучить данные, полученные во время нагрузочного теста.
 

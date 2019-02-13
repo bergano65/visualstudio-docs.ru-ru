@@ -3,7 +3,6 @@ title: Поддержки Python в Visual Studio под управлением 
 titleSuffix: ''
 description: Сведения о возможностях Python в Visual Studio, которые делают ее лучшей интегрированной средой разработки на Python в Windows (также называются инструментами Python для Visual Studio, PTVS).
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232069"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155842"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -30,7 +29,7 @@ Visual Studio является мощной интегрированной ср�
 Чтобы приступить к работе, выполните указанные ниже действия.
 
 - Следуйте [инструкциям по установке](installing-python-support-in-visual-studio.md), чтобы настроить рабочую нагрузку Python.
-- Эта статья познакомит вас с возможностями Python в Visual Studio. Вы также можете [просмотреть серию видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) об основах использования Python в Visual Studio (всего 22 мин).
+- Эта статья познакомит вас с возможностями Python в Visual Studio.
 - Выполните одно или несколько кратких руководств, чтобы создать проект. Если вы не уверены, начните с [создания веб-приложения на платформе Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Пройдите руководство [Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md), в котором описана полная процедура.
 
@@ -44,9 +43,8 @@ Visual Studio является мощной интегрированной ср�
 
 Дополнительные сведения:
 
-- Видео (2 мин 35 с): [Управление средами Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Документация: [Управление средами Python](managing-python-environments-in-visual-studio.md)
-- Документация: [Справочник по окружениям Python](python-environments-window-tab-reference.md)
+- [Управление средами Python](managing-python-environments-in-visual-studio.md)
+- [Справочник по окружениям Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Многофункциональное редактирование, IntelliSense и понимание кода
 
@@ -56,7 +54,6 @@ Visual Studio предоставляет первоклассный редакт
 
 Дополнительные сведения:
 
-- Видео (2 мин 30 с): [Редактирование кода Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Документация: [Редактирование кода Python](editing-python-code-in-visual-studio.md)
 - Документация: [Форматирование кода](formatting-python-code.md)
 - Документация: [Рефакторинг кода](refactoring-python-code.md)
@@ -75,9 +72,8 @@ Visual Studio также поддерживает IPython и Jupyter в цикл
 
 Дополнительные сведения:
 
-- Видео (2 мин 22 с): [Интерактивное окно Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Документация: [Интерактивное окно](python-interactive-repl-in-visual-studio.md)
-- Документация: [IPython в Visual Studio](interactive-repl-ipython.md)
+- [Интерактивное окно](python-interactive-repl-in-visual-studio.md)
+- [IPython в Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Система проектов и шаблоны проектов и элементов
 
@@ -106,7 +102,6 @@ Visual Studio позволяет управлять постоянно возр�
 
 Дополнительные сведения:
 
-- Видео: [Отладка Python — 3 мин 32 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - Документация: [Отладка Python](debugging-python-in-visual-studio.md)
 - Документация: [Отладка в смешанном режиме для Python и C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Документация: [Удаленная отладка в Linux](debugging-python-code-on-remote-linux-machines.md)
@@ -120,7 +115,6 @@ Visual Studio позволяет управлять постоянно возр�
 
 Дополнительные сведения:
 
-- Видео: [Профилирование в Python — 3 мин 00 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Документация: [Средства профилирования для Python](profiling-python-code-in-visual-studio.md)
 - Общая документация по функциям Visual Studio: [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md). (Не все функции профилирования Visual Studio доступны для Python.)
 
@@ -132,7 +126,6 @@ Visual Studio позволяет управлять постоянно возр�
 
 Дополнительные сведения:
 
-- Видео: [Тестирование в Python — 2 мин 31 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - Документация: [Инструменты модульного тестирования для Python](unit-testing-python-in-visual-studio.md)
 - Общая документация по функциям Visual Studio: [Модульное тестирование кода](../test/unit-test-your-code.md).
 
@@ -141,12 +134,6 @@ Visual Studio позволяет управлять постоянно возр�
 Рабочая нагрузка Python включает пакет SDK Azure для Python, что упрощает использование служб Azure в приложениях для Windows, Mac OS X и Linux.
 
 Дополнительные сведения см. в статье [Пакет Azure SDK для Python](/python/azure/?view=azure-python).
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Обучение Python в Microsoft Virtual Academy
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | <ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Введение в программирование на языке Python)</li><li>[Python для начинающих: строки и функции](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Основы Python: список и циклы](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Популярные вопросы о Python)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Вопросы и ответы
 
@@ -314,9 +301,3 @@ Visual Studio 2015 и более ранние версии доступны н�
 1. Требуется Windows 8 или более поздняя версия. Команда **присоединения отладчика (Python)** в **обозревателе серверов** требует [пакета Azure SDK для .NET 2.3 — Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) или более поздней версии.
 
 1. Требуется Windows 8 или более поздняя версия.
-
-## <a name="additional-resources"></a>Дополнительные ресурсы
-
-- [Мост WFastCGI между IIS и Python](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Бесплатные курсы Python в Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python questions at Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions) (Самые популярные вопросы о Python в Microsoft Virtual Academy)

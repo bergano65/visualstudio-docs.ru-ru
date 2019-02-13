@@ -2,7 +2,6 @@
 title: Редактирование кода Python
 description: Visual Studio предоставляет для Python возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036060"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155400"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
 Так как при разработке вы много работаете в редакторе кода, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции для повышения продуктивности этой работы. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация.
 
 Редактор также интегрируется с **интерактивным** окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник. Шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) и [Использование интерактивного окна. Команда "Отправить в интерактивное окно"](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) с примером редактирования кода Python (2 мин 30 с).|
 
 Общие сведения о редактировании кода в Visual Studio см. в статье [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода.
 

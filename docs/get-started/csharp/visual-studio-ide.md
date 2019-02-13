@@ -1,7 +1,6 @@
 ---
 title: Общие сведения для разработчиков на C#
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484177"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155998"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio (C#)
 
@@ -305,4 +304,3 @@ ms.locfileid: "55484177"
 - Откройте для себя [другие возможности Visual Studio](../../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Читайте [блог Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Посетите бесплатные курсы по Visual Studio на сайте [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
 ms.date: 05/07/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -19,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e01f51bd94f14b5f78ab26d452be6a100e4fd50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961888"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156141"
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
@@ -55,10 +54,6 @@ ms.locfileid: "54961888"
  > [!div class="button"]
  > [Скачивание Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![значок кинокамеры для видео](media/video-icon.png "Просмотреть видео")  |    [Посмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) о том, как скачать файл начального загрузчика Visual Studio и выбрать подходящий выпуск Visual Studio. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Шаг 3. Установка установщика Visual Studio
 
@@ -95,29 +90,17 @@ ms.locfileid: "54961888"
 > [!TIP]
 > В любой момент после установки можно установить рабочие нагрузки или компоненты, которые не были установлены изначально. Если среда Visual Studio открыта, выберите пункт **Сервис** > **Получить средства и компоненты...**; откроется Visual Studio Installer. **Visual Studio Installer** можно также открыть из меню "Пуск". Здесь можно выбрать рабочие нагрузки или компоненты, которые нужно установить, а затем нажать кнопку **Изменить**.
 
-|         |         |
-|---------|---------|
-|  ![значок кинокамеры для видео](media/video-icon.png "Просмотреть видео")  |    [Посмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) о том, как установить Visual Studio Installer, а затем нужные рабочие нагрузки. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Шаг 5. Выбор отдельных компонентов (необязательно)
 
 Если вы не хотите использовать функцию выбора рабочих нагрузок для настройки установки Visual Studio, можно установить отдельные компоненты. Чтобы выбрать отдельные компоненты, щелкните пункт **Отдельные компоненты** в Visual Studio Installer, выберите нужные компоненты и следуйте инструкциям.
 
   ![Visual Studio 2017 — установка отдельных компонентов](media/vs2017-components.PNG "Установка отдельных компонентов Visual Studio")
 
-  |         |         |
-  |---------|---------|
-  |  ![значок кинокамеры для видео](media/video-icon.png "Просмотреть видео")  |   [Посмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) об установке отдельных компонентов с помощью Visual Studio Installer. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Шаг 6. Установка языковых пакетов (необязательно)
 
 По умолчанию при первом запуске установщик пытается использовать язык операционной системы. Чтобы установить Visual Studio 2017 на нужном языке, выберите в установщике Visual Studio пункт **Языковые пакеты** и следуйте указаниям.
 
   ![Visual Studio 2017 — установка языковых пакетов](media/vs2017-languages.PNG "Установка языковых пакетов Visual Studio")
-
-  |         |         |
-  |---------|---------|
-  |  ![значок кинокамеры для видео](media/video-icon.png "Просмотреть видео")  |   [Посмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) об установке языковых пакетов с помощью Visual Studio Installer. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Изменение языка установщика из командной строки
 

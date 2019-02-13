@@ -3,7 +3,6 @@ title: Python в Visual Studio. Руководство. Шаг 1 — созда
 titleSuffix: ''
 description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231874"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155218"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Учебник. Работа с Python в Visual Studio
 
@@ -79,5 +78,3 @@ Visual Studio обеспечивает первоклассную поддерж
 - [Проекты Python в Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Сведения о языке Python на сайте python.org](https://www.python.org)
 - [Python для начинающих](https://www.python.org/about/gettingstarted/) (python.org)
-- [Бесплатные курсы Python в Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Наиболее популярные вопросы о Python в Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
