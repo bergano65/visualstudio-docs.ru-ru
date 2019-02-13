@@ -17,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227841"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035241"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Возможности IntelliTrace (C#, Visual Basic, C++)
 
 IntelliTrace можно использовать для записи событий и вызовов методов, что позволяет проверять состояние приложения (стек вызовов и значения локальных переменных) на различных этапах выполнения. Просто запустите отладку обычным образом — средство IntelliTrace включено по умолчанию — и просматривайте данные, записываемые IntelliTrace в новом окне **Средства диагностики** на вкладке **События**. Выберите событие и щелкните **Активировать журнал отладки**, чтобы увидеть стек вызовов и локальные переменные, записанные для этого события.
 
-Пошаговое описание см. в разделе [Пошаговое руководство: Использование IntelliTrace
+Пошаговое описание см. в разделе [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 Средство IntelliTrace доступно в выпуске Visual Studio Enterprise, но не в выпусках Visual Studio Professional или Community.
 
@@ -129,4 +129,4 @@ IntelliTrace можно настроить для автоматического
 
 [Работа IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+[Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

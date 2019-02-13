@@ -3,10 +3,7 @@ title: Вас приветствует Visual Studio 2015 | Документа
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805150"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835090"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Вас приветствует Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,17 +50,17 @@ ms.locfileid: "53805150"
 ## <a name="build-apps-for-android-ios-and-windows"></a>Создание приложений для Android, iOS и Windows
  Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows. Дополнительные сведения см. в разделе [Разработка кроссплатформенных мобильных приложений](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
- Сведения об универсальных приложениях для Windows (UWP) см. в разделе [Универсальные приложения для Windows](https://dev.windows.com/en-us/windows-apps).
+ Сведения об универсальных приложениях для Windows (UWP) см. в разделе [Универсальные приложения для Windows](https://dev.windows.com/windows-apps).
 
  Выберите нужные инструменты с учетом требований ваших приложений и языка, который вы хотите использовать.
 
 1.  [Xamarin для Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): общая база кода C# для всех устройств
 
-2.  [Apache Cordova с помощью Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Общая база кода для HTML, CSS и JavaScript или Typescript
+2.  [Apache Cordova с Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): общая база кода для HTML, CSS и JavaScript или Typescript
 
 3.  [Средства Visual Studio Tools для Unity](./cross-platform/visual-studio-tools-for-unity.md): разработка двухмерных и трехмерных игр в C#.
 
-4.  [C++ для кросс платформенной разработки](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Библиотек общего кода и приложения в C++
+4.  [C++ для кросс-платформенной разработки](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): общие библиотеки кода и приложения в C++
 
 5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): эмулятор Visual Studio для Android — отладка и тестирование приложений Android независимо от интегрированной среды разработки
 
@@ -82,7 +79,7 @@ ms.locfileid: "53805150"
 ## <a name="build-test-and-manage-your-code"></a>Создание, тестирование кода и управление им
 
 ### <a name="check-in-your-code"></a>Возврат кода
- При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Дополнительные сведения об управлении какие версиями системы лучше всего подходит для ваших потребностей: [Использование управления версиями](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)
+ При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Узнайте, какая система управления версиями подходит вам больше всего: [Использование системы управления версиями](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Построение приложения
  Можно [разработать приложение локально](./ide/compiling-and-building-in-visual-studio.md) и убедиться, что оно правильно работает. Затем воспользуйтесь [средствами отладки](./debugger/debugging-in-visual-studio.md) , чтобы исправить ошибки в приложении. Кроме того, можно создавать проекты на общих серверах сборки или в облаке. Автоматизируйте процедуру сборки, чтобы обеспечить создание кода, который разработчики вашей рабочей группы смогут вернуть в систему управления версиями. Например, можно создавать один или более проектов каждую ночь или всякий раз при возврате кода.
@@ -99,7 +96,7 @@ ms.locfileid: "53805150"
 
 |||||
 |-|-|-|-|
-|[Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Новые возможности Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Новые возможности .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Новые возможности ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Новые возможности Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Новые возможности .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Новые возможности ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[Новые возможности C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Новые возможности Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Новые возможности JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

@@ -2,18 +2,18 @@
 title: Обновление закодированных тестов пользовательского интерфейса
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 664eeb618b92b7d3181a223a531aac02e046ab0f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803631"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "53055054"
 -   Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio включает несколько типов тестового проекта. Если вы создадите новый закодированный тест пользовательского интерфейса, он будет создан в типе проекта закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+>  Visual Studio включает несколько типов тестового проекта. Если вы создадите новый закодированный тест пользовательского интерфейса, он будет создан в типе проекта закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 >  Тестовые проекты[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , содержащие закодированные тесты пользовательского интерфейса, необходимо перестроить при открытии тестового проекта в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] параллельно с [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -39,7 +39,7 @@ ms.locfileid: "53055054"
 > [!CAUTION]
 >  Известна проблема с ссылками в проектах закодированных тестов пользовательского интерфейса, которые не появляются в обозревателе решений. Дополнительные сведения см. в файле сведений, который включен в установочный носитель [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
 
-|Функции закодированного пользовательского интерфейса|Проблеми|Решение|
+|Функции закодированного пользовательского интерфейса|Проблемы|Решение|
 |----------------------------|-----------|--------------|
 |Тестирование пользовательского интерфейса Silverlight в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для приложений Silverlight, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
 |Тестирование пользовательского интерфейса Firefox в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка будет выполнена успешно, тестовый запуск завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для веб-приложений в Firefox, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
@@ -57,11 +57,11 @@ ms.locfileid: "53055054"
 
   Обновление также содержит исправления для следующих проблем:
 
-- **Объем протестированного кода** Не удается открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] с пакетом обновления 1.
+- **Покрытия кода:** неспособность открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
 
-- **Артефакты жертв теста:** Вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
+- **Затруднительные артефакты теста:** в вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 
-- нагрузочное тестирование При запуске нагрузочного теста вместе с типом сети, отличных от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).
+- **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).
 
-## <a name="see-also"></a>См. также
- [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [обновление тестов из более ранних версиях Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [создания Закодированный тест пользовательского интерфейса из существующей записи действий](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>См. также раздел
+ [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [обновление тестов из более ранних версиях Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [создания Закодированный тест пользовательского интерфейса из существующей записи действий](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
