@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3b2e3c5179c5edb390fc494b49ba0051e04108e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995065"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768422"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
 Visual Studio позволяет выполнять отладку кода JavaScript и TypeScript. Вы можете задавать и использовать точки останова, подключать отладчик, проверять значения переменных, просматривать стек вызовов и применять другие функции отладки.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
 
 ## <a name="debug-server-side-script"></a>Отладка серверного скрипта
 
@@ -55,7 +55,7 @@ Visual Studio поддерживает отладку только для бра
 
     Это действие следует выполнить перед запуском Chrome в режиме отладки.
 
-2. Щелкните правой кнопкой мыши кнопку **Пуск** Windows, выберите команду **Выполнить** и введите следующую команду****:
+2. Щелкните правой кнопкой мыши кнопку **Пуск** Windows, выберите команду **Выполнить** и введите следующую команду:
 
     `chrome.exe --remote-debugging-port=9222`
 
