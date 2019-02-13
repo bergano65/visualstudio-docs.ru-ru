@@ -18,55 +18,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684f55b4b660c48c4186755737b3bc64c6e62788
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042677"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853447"
 ---
 # <a name="createproperty-task"></a>CreateProperty - задача
-Заполняет свойства переданными значениями. Это позволяет копировать значения из одного свойства или строки в другое свойство или строку.  
+Заполняет свойства переданными значениями. Это позволяет копировать значения из одного свойства или строки в другое свойство или строку.
 
-## <a name="attributes"></a>Атрибуты  
- В следующей таблице приводятся параметры задачи `CreateProperty` .  
-
+## <a name="attributes"></a>Атрибуты
+В следующей таблице приводятся параметры задачи `CreateProperty` .
 
 | Параметр | Описание |
 |------------------| - |
 | `Value` | Необязательный выходной параметр `String`.<br /><br /> Указывает значение для копирования в новое свойство. |
 | `ValueSetByTask` | Необязательный выходной параметр `String`.<br /><br /> Содержит то же значение, что и параметр `Value`. Используйте этот параметр только в том случае, если вы не хотите, чтобы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] задавал выходное свойство при пропуске вложенного целевого объекта из-за актуальных выходных данных. |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- Следующий пример использует задачу `CreateProperty`, чтобы создать свойство `NewFile` с помощью сочетания значений свойств `SourceFilename` и `SourceFileExtension`.  
+## <a name="example"></a>Пример
+Следующий пример использует задачу `CreateProperty`, чтобы создать свойство `NewFile` с помощью сочетания значений свойств `SourceFilename` и `SourceFileExtension`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <PropertyGroup>  
-        <SourceFilename>Module1</SourceFilename>  
-        <SourceFileExtension>vb</SourceFileExtension>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <SourceFilename>Module1</SourceFilename>
+        <SourceFileExtension>vb</SourceFileExtension>
+    </PropertyGroup>
 
-    <Target Name="CreateProperties">  
+    <Target Name="CreateProperties">
 
-        <CreateProperty  
-            Value="$(SourceFilename).$(SourceFileExtension)">  
-            <Output  
-                TaskParameter="Value"  
-                PropertyName="NewFile" />  
-        </CreateProperty>  
+        <CreateProperty
+            Value="$(SourceFilename).$(SourceFileExtension)">
+            <Output
+                TaskParameter="Value"
+                PropertyName="NewFile" />
+        </CreateProperty>
 
-    </Target>  
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
- После запуска проекта значение свойства `NewFile` равно *Module1.vb*.  
+После запуска проекта значение свойства `NewFile` равно *Module1.vb*.
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>См. также
+[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
+[Задачи](../msbuild/msbuild-tasks.md)

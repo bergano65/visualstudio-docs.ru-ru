@@ -15,20 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fca037da8a0623d7cebbb7108e4a1028833ffe8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 187fe0e75ffa084f95265adf5ca3061f29f11ca7
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424581"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156115"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Учебник. Сведения об отладке кода C# с помощью Visual Studio
 
 В этом пошаговом руководстве рассматриваются возможности отладчика Visual Studio. Более полное описание функций отладчика см. в статье c [Знакомство с отладчиком Visual Studio](../../debugger/debugger-feature-tour.md). *Отладка приложения* обычно означает запуск и выполнение приложения с подключенным отладчиком. При этом в отладчике доступно множество способов наблюдения за выполнением кода. Вы можете пошагово перемещаться по коду и просматривать значения, хранящиеся в переменных, задавать контрольные значения для переменных, чтобы отслеживать изменение значений, изучать путь выполнения кода, просматривать выполнение ветви кода и т. д. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../../debugger/debugging-absolute-beginners.md).
-
-| | |
-|---------|---------|
-| ![значок кинокамеры для видео](../../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) об отладке, где демонстрируются аналогичные действия. |
 
 Несмотря на то, что демонстрационное приложение написано на C#, большинство функций применимы к C++, Visual Basic, F#, Python, JavaScript и другим языкам, поддерживаемым Visual Studio (F# не поддерживает возможность "Изменить и продолжить"). F# и JavaScript не поддерживают окно **Видимые**). На снимках экрана представлены примеры на C#.
 

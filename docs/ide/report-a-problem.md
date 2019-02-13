@@ -2,7 +2,6 @@
 title: Сообщите о проблеме
 description: Обзор средства "Сообщить о проблеме", включая состояния и определения проблем
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
@@ -10,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958736"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911199"
 ---
 # <a name="overview-report-a-problem"></a>Общие сведения: Сообщение о проблеме
 
