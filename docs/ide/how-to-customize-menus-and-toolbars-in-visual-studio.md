@@ -1,7 +1,6 @@
 ---
 title: Настройка меню и панелей инструментов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -28,14 +27,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0b8d87aa00523dee2cc3d4d89b490e86fc0cae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993953"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955639"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Как выполнить Настройка меню и панелей инструментов в Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Как выполнить  Настройка меню и панелей инструментов в Visual Studio
 
 Visual Studio можно настраивать не только путем добавления и удаления панелей инструментов и меню в строке меню, но также путем добавления и удаления команд для любой панели инструментов или любого меню.
 

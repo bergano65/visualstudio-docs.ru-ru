@@ -1,7 +1,6 @@
 ---
 title: Клавиши-модификаторы монтажной панели в Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5723552a7716e7bfc846e209baa3a6f4001cf49b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb5d461045bd555b87b42c7de8e5c669952392d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930731"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Клавиши-модификаторы монтажной панели в Blend
 Некоторые сочетания клавиш не имеют связанных с ними пунктов меню, то есть обнаружить их в пользовательском интерфейсе [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] нельзя. В следующей таблице приведет список сочетаний клавиш, которые изменяют действие, например действие по изменению размера объекта.
