@@ -2,7 +2,6 @@
 title: Отладка кода Python
 description: В Visual Studio реализованы обширные возможности по отладке кода Python, в том числе задание точек останова, отладка по шагам, проверка значений, просмотр исключений и отладка в интерактивном окне.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036073"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155881"
 ---
 # <a name="debug-your-python-code"></a>Отладка кода Python
 
@@ -27,10 +26,6 @@ Visual Studio предоставляет широкие возможности �
 - [Удаленная отладка в Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Отладка в смешанном режиме для Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Символы для отладки в смешанном режиме](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) с примером отладки Python (3 мин 32 с)|
 
 <a name="debugging-without-a-project"></a>
 

@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Изменение выходного каталога сборки
+title: Как выполнить  Изменение выходного каталога сборки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74dfb3c9a5e5ccd4a1e61e15a12991433032e6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989514"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911537"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Как выполнить Изменение выходного каталога сборки
+# <a name="how-to-change-the-build-output-directory"></a>Как выполнить  Изменение выходного каталога сборки
 
 Вы можете указать расположение выходных данных проекта для каждой конфигурации (для отладки, выпуска или и того и другого).
 

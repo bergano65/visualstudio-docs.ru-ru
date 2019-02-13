@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Визуализация ассоциации коллекции (конструктор классов)
+title: Как выполнить  Визуализация ассоциации коллекции (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b25a409b6e8476d1a1f18965b6796b2384ba98f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961079"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910953"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Как выполнить Визуализация ассоциации коллекции в конструкторе классов
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Как выполнить  Визуализация ассоциации коллекции в конструкторе классов
 
 Свойства и поля, которые являются наборами других типов, могут отображаться в схеме классов как ассоциация набора. В отличие от обычной ассоциации, которая отображает поля или свойства в виде линии, связывающей класс-владелец с типом поля, ассоциация набора отображается как линия, связывающая класс-владелец с собранным типом.
 
