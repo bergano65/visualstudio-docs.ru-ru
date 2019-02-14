@@ -1,9 +1,8 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035527"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954027"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
 
-Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
+Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
 
 Например, у вас может быть ненадежное подключение к Интернету или низкая пропускная способность. В этом случае у вас есть несколько вариантов: вы можете воспользоваться новым компонентом Download all, then install (Скачать все и установить), чтобы загрузить необходимые для установки файлы, или создать локальный кэш файлов с помощью командной строки.
 
@@ -33,10 +32,14 @@ Visual Studio 2017 поддерживает различные конфигур
 
 ## <a name="use-the-download-all-then-install-feature"></a>Использование компонента Download all, then install (Скачать все и установить)
 
-[**Новая возможность в версии 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): загрузив веб-установщик, выберите в установщике Visual Studio Installer новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
+[**Новая возможность в версии 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): загрузив веб-установщик, выберите в установщике Visual Studio Installer новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
 
    ![Параметр Download all, then install (Скачать все и установить)](media/download-all-then-install.png)
+
+Параметр Download all, then install (Скачать все и установить) позволяет скачать Visual Studio в виде отдельного установщика для компьютера, на который он скачивается. Это позволяет безопасно отключится от Интернета перед установкой Visual Studio.
+
+> [!IMPORTANT]
+> Не используйте этот параметр, чтобы создать автономный кэш для передачи на другой компьютер. Он не предназначен для этого. <br><br>Вы можете создать автономный (локальный) кэш для установки Visual Studio на другом компьютере. Сведения о создании локального кэша см. в разделе [Использование командной строки для создания локального кэша](#use-the-command-line-to-create-a-local-cache) этой статьи, а сведения о создании сетевого кэша — в статье [Создание сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md).
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Использование командной строки для создания локального кэша
 

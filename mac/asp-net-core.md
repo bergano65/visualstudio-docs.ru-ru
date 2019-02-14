@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296480"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910991"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -41,7 +42,7 @@ ms.locfileid: "51296480"
 
 ![Новое представление пустого проекта ASP.NET Core](media/asp-net-core-image4.png)
 
-"Пустое веб-приложение ASP.NET Core" создает веб-приложение с двумя файлами по умолчанию: **Program.cs** и **Startup.cs**, которые описаны ниже. Оно также создает папку "Зависимости", содержащую зависимости пакета NuGet для проекта, такие как ASP.NET Core, платформа .NET Core и целевые объекты MSBuild, используемые при сборке проекта:
+Пустое веб-приложение ASP.NET Core создает веб-приложение с двумя файлами по умолчанию: **Program.cs** и **Startup.cs**, которые описаны ниже. Оно также создает папку "Зависимости", содержащую зависимости пакета NuGet для проекта, такие как ASP.NET Core, платформа .NET Core и целевые объекты MSBuild, используемые при сборке проекта:
 
 ![Отображение зависимостей на панели решения](media/asp-net-core-image12.png)
 
@@ -131,7 +132,7 @@ public class Startup
 Приложения ASP.NET Core используют конструктивный шаблон модель-представление-контроллер (MVC), чтобы обеспечить логическое разделение обязанностей для каждой из частей приложения. MVC состоит из следующих частей:
 
 - **Модель**: класс, представляющий данные приложения.
-- **Представление**: отображает пользовательский интерфейс приложения (который часто является данными модели).
+- **Вид**: отображает пользовательский интерфейс приложения (который часто является данными модели).
 - **Контроллер**: класс, который обрабатывает запросы браузера, реагирует на ввод данных пользователем и взаимодействие с ним.
 
 Дополнительные сведения об использовании MVC см. в руководстве с [обзором MVC ASP.NET Core](/aspnet/core/mvc/overview).
@@ -236,3 +237,7 @@ public class Startup
 - Документы по [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend), где описано, как создать службу REST с помощью ASP.NET Core для приложения Xamarin.Forms.
 - [Практическая лабораторная работа ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]
