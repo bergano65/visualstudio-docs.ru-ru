@@ -1,14 +1,9 @@
 ---
 title: Окно выходных данных | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -21,13 +16,13 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784823"
 ---
 # <a name="output-window"></a>Окно выходных данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,12 +67,9 @@ ms.locfileid: "49189908"
 ## <a name="scrolling-behavior"></a>Поведение прокрутки  
  Если в окне вывода используется автоматическая прокрутка и вы выполняете переход с помощью мыши или клавиш со стрелками, автоматическая прокрутка останавливается. Чтобы возобновить автопрокрутку, нажмите клавиши CTRL+END.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [Практическое руководство. Управление окном вывода](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Компилирование и сборка](../../ide/compiling-and-building-in-visual-studio.md)   
  [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md)   
  [Общие сведения о библиотеке классов](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
-
-
-

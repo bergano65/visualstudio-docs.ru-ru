@@ -1,14 +1,9 @@
 ---
 title: Общие сведения о конфигурациях сборок | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799314"
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49304139"
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.  
   
 > [!NOTE]
->  Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Дополнительные сведения см. в разделе [Управление конфигурациями сборок с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+>  Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Дополнительные сведения см. в разделе [Как Управление конфигурациями с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
  По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).  
   
@@ -89,12 +84,9 @@ ms.locfileid: "49304139"
   
 -   Если проект поддерживает несколько платформ, для каждой поддерживаемой платформы будет найдена или добавлена конфигурация решения. Имя каждой конфигурации решения включает как имя конфигурации проекта, так и имя платформы, и имеет формат *\<имя конфигурации проекта> \<имя платформы>*.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md)   
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
  [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)   
  [Справочные сведения о построении C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)
-
-
-

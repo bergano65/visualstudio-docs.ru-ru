@@ -1,32 +1,27 @@
 ---
 title: Модульные тесты для универсальных методов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771469"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Модульные тесты для универсальных методов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Модульные тесты можно создавать для универсальных методов точно так же, как и для других методов, как описано в статье [How to: Create and Run a Unit Test](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48) (Практическое руководство. Создание и запуск модульных тестов). В следующих разделах содержатся сведения о создании модульных тестов для универсальных методов и примеры.  
+Можно создать модульные тесты для универсальных методов точно так, как и для других методов, как описано в разделе [как: Создание и выполнение модульного теста](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). В следующих разделах содержатся сведения о создании модульных тестов для универсальных методов и примеры.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Аргументы типа и ограничения типа  
  Когда [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает модульный тест для универсального класса, например `MyList<T>`, создается два метода: универсальный вспомогательный метод и метод теста. Если `MyList<T>` имеет одно или несколько ограничений типа, аргумент типа должен соответствовать всем этим ограничениям. Чтобы убедиться, что тестируемый универсальный код работает должным образом при всех допустимых входных данных, метод теста вызывает универсальный вспомогательный метод со всеми ограничениями, которые требуется проверить.  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -202,9 +197,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Anatomy of a Unit Test](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
+## <a name="see-also"></a>См. также раздел  
+ [Anatomy of a Unit Test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
  [Модульное тестирование кода](../test/unit-test-your-code.md)
-
-
-

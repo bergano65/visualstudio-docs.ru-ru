@@ -1,27 +1,22 @@
 ---
 title: Пример проекта для создания модульных тестов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791900"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Пример проекта для создания модульных тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49248590"
   
 -   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  
   
--   [Пошаговое руководство. Запуск тестов и просмотр покрытия кода](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
+-   [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
   
 -   [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
   
@@ -134,12 +129,9 @@ namespace BankAccountNS
  /* Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными.  Любые совпадения с реальными именами и названиями случайны. \*/  
   
 ## <a name="working-with-the-code"></a>Работа с кодом  
- Для работы с этим кодом необходимо сначала создать для него проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Следуйте инструкциям из раздела, посвященного подготовке к выполнению [пошагового руководства по созданию и запуску модульных тестов](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
+ Для работы с этим кодом необходимо сначала создать для него проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Выполните действия, описанные в разделе «Подготовка пошагового руководства» [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода)  
- [Пошаговое руководство. Запуск тестов и просмотр покрытия кода](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
-
-
-

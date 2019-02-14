@@ -1,25 +1,20 @@
 ---
 title: Временная шкала приложения | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8d3a8edb0a2bf7809fc125812b5d541ba008547a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792965"
 ---
 # <a name="application-timeline"></a>Временная шкала приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,10 +119,7 @@ ms.locfileid: "51751422"
 |![Фильтрация списка сведений о временной шкале](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Фильтрует список по выбранным категориям и длительности событий.|  
 |![Настройка сведений о временной шкале](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Позволяет указать заметки для событий.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Улучшение производительности приложений WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
-
-
-

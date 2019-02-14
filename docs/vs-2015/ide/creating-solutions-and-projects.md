@@ -95,4 +95,4 @@ ms.locfileid: "54763118"
   
 ## <a name="see-also"></a>См. также раздел  
  [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)   
- [(NIB) Практическое руководство. создавать решения на основе нескольких проектов](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+ [NIB Практическое руководство. Создание решений для нескольких проектов](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

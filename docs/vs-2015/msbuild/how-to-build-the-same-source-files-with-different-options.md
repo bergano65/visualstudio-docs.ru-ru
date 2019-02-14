@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,13 +13,13 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800428"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "49831007"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
--   Используйте параметр **/property** с указанием свойства и его значения. Пример:  
+-   Используйте параметр **/property** с указанием свойства и его значения. Например:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -75,7 +70,7 @@ ms.locfileid: "49831007"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Задание нескольких свойств проекта в командной строке  
   
-- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Пример:  
+- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Например:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
@@ -191,10 +186,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 [MSBuild](msbuild.md)  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Просмотр отношения наследования между типами (конструктор классов) | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Просмотр наследования между типами (конструктор классов) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782240"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,6 @@ ms.locfileid: "49823077"
   
    Вы также можете щелкнуть правой кнопкой тип, производные типы которого необходимо показать, и выбрать команду **Показать производные классы** или **Показать производные интерфейсы**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание ассоциаций между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

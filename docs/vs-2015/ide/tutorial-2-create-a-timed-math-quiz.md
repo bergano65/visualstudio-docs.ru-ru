@@ -1,25 +1,20 @@
 ---
-title: Учебное руководство 2. Создание математической головоломки с ограничением по времени | Документы Майкрософт
-ms.custom: ''
+title: Учебник 2. Создание математической викторины | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23d8eb381b1dc72a8dad148d5827fa0f58b88d03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804982"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание математической головоломки с ограничением по времени
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "49884892"
 |[Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md)|Добавление задачи на вычитание с генерацией случайных чисел, использованием таймера и проверкой правильности ответов.|  
 |[Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md)|Добавление задач на умножение и деление с генерацией случайных чисел, использованием таймера и проверкой правильности ответов.|  
 |[Шаг 8. Настройка головоломки](../ide/step-8-customize-the-quiz.md)|Изучение других возможностей, например, изменение цветов и добавление подсказки.|
-
-
-

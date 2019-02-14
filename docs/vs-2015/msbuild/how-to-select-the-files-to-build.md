@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Выбор файлов для сборки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, including files
@@ -17,13 +12,13 @@ ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798908"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,9 +173,6 @@ ms.locfileid: "49223812"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Элементы](../msbuild/msbuild-items.md)
-
-
-

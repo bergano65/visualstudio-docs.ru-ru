@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание сеансов анализа производительности вручную | Документация Майкрософт
+title: Практическое руководство. Создание сеансов анализа производительности вручную | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,7 +22,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54800834"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Как выполнить Создание сеансов анализа производительности вручную.
+# <a name="how-to-manually-create-performance-sessions"></a>Практическое руководство. Создание сеансов анализа производительности вручную
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Сеанс анализа производительности можно создать вручную. Для этого нет необходимости открывать проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md).  

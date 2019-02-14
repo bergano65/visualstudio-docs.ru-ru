@@ -29,7 +29,7 @@ ms.locfileid: "54773380"
   
 ## <a name="how-do-i-do-this"></a>Инструкции  
   
-### <a name="step-1-enable-logging"></a>Шаг 1. Включение ведения журнала  
+### <a name="step-1-enable-logging"></a>Шаг 1. Включение ведения журнала  
  В зависимости от сценария используйте один из следующих методов, чтобы включить ведение журнала.  
   
 -   Целевая версия .NET Framework 4 без файла App.config присутствует в проекте теста.  
@@ -64,7 +64,7 @@ ms.locfileid: "54773380"
   
     -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала  
  При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл **QTAgent32.exe.config** вы увидите выходную ссылку в результатах обозревателя тестов. Если выбран подробный уровень трассировки ("verbose"), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.  
   
 1.  В меню **Тест** выберите **Окна** и щелкните **Обозреватель тестов**.  
@@ -94,7 +94,7 @@ ms.locfileid: "54773380"
   
 ## <a name="q--a"></a>Вопросы и ответы  
   
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>Вопрос: В. Что произошло с разделом EnableHtmlLogger?  
+### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>В. Что произошло с разделом EnableHtmlLogger?  
  В предыдущих версиях Visual Studio для включения HtmlLogger в закодированном тесте ИП использовались два дополнительных параметра конфигурации:  
   
 ```  

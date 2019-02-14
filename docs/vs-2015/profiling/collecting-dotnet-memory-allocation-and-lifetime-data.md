@@ -1,14 +1,9 @@
 ---
 title: Сбор данных о выделении памяти для объектов .NET и времени их жизни | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794219"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,10 +82,7 @@ ms.locfileid: "51761570"
 |На странице **Счетчики ЦП** выберите один или несколько счетчиков производительности процессора, значения которых будут добавляться в данные профилирования.|-   [Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)|  
 |На странице **Дополнительно** задайте дополнительные необходимые параметры VSInstr.exe, например параметры для включения или исключения определенных функций. Дополнительные сведения о параметрах VSInstr см. в статье [VSInstr](../profiling/vsinstr.md).|-   [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Практическое руководство. Ограничение инструментирования указанными функциями](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [How to: Choose Collection Methods](../profiling/how-to-choose-collection-methods.md)  (Практическое руководство. Выбор методов сбора данных)  
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
-
-
-

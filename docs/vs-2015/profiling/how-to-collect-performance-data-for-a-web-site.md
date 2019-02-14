@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,13 +18,13 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766156"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51783913"
   
 8.  Для приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] создается сеанс производительности, а в браузере запускается веб-сайт. Воспользуйтесь функциями, которые вы хотите профилировать, и закройте браузер.  
   
-     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Профилирование веб-сайта без открытия проекта в Visual Studio  
   
@@ -107,11 +102,8 @@ ms.locfileid: "51783913"
   
      Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   
  [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
-
-
-

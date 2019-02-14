@@ -1,14 +1,9 @@
 ---
 title: Страница "Отладка" в конструкторе проектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776148"
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "49271366"
  Приведенные ниже параметры позволяют выбрать конфигурацию и платформу для просмотра или внесения изменений.  
   
  **Конфигурация**  
- Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Платформа**  
- Указывает параметры платформы для отображения или изменения. Варианты: **Любой ЦП** (по умолчанию), **x64** и **x86**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Указывает параметры платформы для отображения или изменения. Варианты: **Любой ЦП** (по умолчанию), **x64** и **x86**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Запустить действие  
  **Действие при запуске**: указывает, что именно нужно запустить при отладке приложения: проект, пользовательскую программу, URL-адрес или ничего. По умолчанию этот параметр имеет значение **Запуск проекта**. Параметр **Действие при запуске** на странице **Отладка** определяет значение свойства `StartAction`.  
@@ -80,13 +75,10 @@ ms.locfileid: "49271366"
   
  Для выполнения отладки в зоне безопасности нужно включить этот параметр и установить флажок **Отладить это приложение с выбранным набором разрешений** в диалоговом окне [Дополнительные параметры безопасности](../../ide/reference/advanced-security-settings-dialog-box.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Параметры проекта для конфигурации отладки Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Управление свойствами отладки](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Управление свойствами отладки](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

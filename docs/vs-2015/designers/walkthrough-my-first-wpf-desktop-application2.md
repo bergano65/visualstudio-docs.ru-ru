@@ -1,30 +1,25 @@
 ---
-title: Пошаговое руководство. Создание первого классического приложения WPF 2 | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Мой первый Application2 рабочего стола WPF | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795949"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = «введение» ></a> это пошаговое руководство содержит введение в разработку приложений Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
+name = «введение» ></a> это пошаговое руководство содержит введение в разработку приложений Windows Presentation Foundation (WPF). Вы создадите простое приложение, которое включает элементы, которые используются в большинстве классических приложений WPF: Разметки XAML, кода, определения приложения, элементы управления, макет, привязку данных и стили.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Создание проекта приложения  
  В этом разделе вы создадите инфраструктуру приложения, включающую в себя проект и главное окно или форму.  
@@ -980,9 +975,6 @@ name = «введение» ></a> это пошаговое руководств
   
 - [Документы в WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Пошаговое руководство: Создание классического приложения WPF, подключенного к мобильной службе Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

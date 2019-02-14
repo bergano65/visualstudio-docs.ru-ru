@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Настройка проектов для нескольких платформ | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Настройка проекта для нескольких платформ | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,13 +11,13 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785830"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Практическое руководство. Настройка проекта для нескольких платформ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +63,7 @@ ms.locfileid: "49921838"
   
    Можно задать в качестве платформы уровня решения, например [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], при этом не имея в этом решении никаких других проектов, ориентированных на ту же платформу. Можно также иметь в решении несколько проектов, каждый из которых ориентирован на отдельную платформу. В такой ситуации рекомендуется создать конфигурацию с понятным именем, чтобы избежать путаницы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)   
  [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
  [Построение и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

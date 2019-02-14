@@ -19,7 +19,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54780295"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить Замена параметров в шаблоне.
+# <a name="how-to-substitute-parameters-in-a-template"></a>Практическое руководство. Замена параметров в шаблоне
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете заменить параметры шаблона, такие как имена классов и пространства имен, при создании файла на основе шаблона. Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  

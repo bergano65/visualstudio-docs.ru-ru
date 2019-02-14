@@ -24,7 +24,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54785917"
 ---
-# <a name="how-to-create-project-templates"></a>Как выполнить создание шаблонов проектов
+# <a name="how-to-create-project-templates"></a>Практическое руководство. Создание шаблонов проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Эта процедура позволяет создать шаблон с помощью мастера **экспорта шаблонов**, который упаковывает шаблон в ZIP-файл. Вы можете создать шаблоны в формате VSI для более эффективного развертывания с помощью расширения мастера экспорта шаблонов или с помощью шаблонов, включенных в [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]. Кроме того, шаблоны можно создавать вручную.  
@@ -58,4 +58,4 @@ ms.locfileid: "54785917"
   
 ## <a name="see-also"></a>См. также раздел  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+ [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)

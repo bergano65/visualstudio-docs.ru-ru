@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Распространение фрагментов кода | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Распространение фрагментов кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799036"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49185709"
  Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию VSSDK, соответствующую вашей версии Visual Studio [скачивания Visual Studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  
   
 ## <a name="setting-up-the-extension"></a>Настройка расширения  
- В этой процедуре будет использоваться фрагмент кода Hello World, созданный в разделе [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла SNIPPET будет предоставлен, так что вам не придется возвращаться к этому разделу.  
+ В этой процедуре мы будем использовать созданные в одном фрагменте кода Hello World [Пошаговое руководство: Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла SNIPPET будет предоставлен, так что вам не придется возвращаться к этому разделу.  
   
 1.  Создайте проект VSIX с именем **TestSnippet**. (**"Файл" > "Создать" > "Проект" > "Visual C#" (или "Visual Basic" > "Расширение среды"**)  
   
@@ -107,8 +102,5 @@ ms.locfileid: "49185709"
     Console.WriteLine("Hello, World!")  
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Фрагменты кода](../ide/code-snippets.md)
-
-
-

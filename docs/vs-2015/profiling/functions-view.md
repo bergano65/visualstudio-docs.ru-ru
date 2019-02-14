@@ -1,14 +1,9 @@
 ---
 title: Представление "Функции" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functions
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 207daebe03327216095c8e6b45798d3cf3fb43d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08fd68d99841d2877a2b32fe71968ea05e8db427
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774665"
 ---
 # <a name="functions-view"></a>Представление "Функции"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +34,8 @@ ms.locfileid: "51817637"
   
  Столбцы, доступные в представлении "Функции", зависят от метода профилирования (выборка или инструментирование), использованного для сбора данных, а также от того, были ли собраны данные памяти .NET в ходе сеанса профилирования.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)   
  [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)
-
-
-

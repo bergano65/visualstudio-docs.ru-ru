@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Присоединение и отсоединение средства обеспечения производительности к выполняемым процессам | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 931608decb44f0e49cb4ae2984b9cbf724a63d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762439"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,12 +70,9 @@ ms.locfileid: "51778245"
   
 3.  Щелкните **Отсоединить**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
  [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)
-
-
-

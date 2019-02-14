@@ -22,7 +22,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54798963"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Как выполнить Добавление или удаление импортированных пространств имен (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Импорт пространства имен позволяет использовать элементы из этого пространства имен в коде без полного определения элемента. Например, если требуется получить доступ к методу `Create` в классе `System.Messaging.MessageQueue`, можно импортировать пространство имен `System.Messaging` и просто обращаться к необходимому элементу в коде в виде `MessageQueue.Create`.  

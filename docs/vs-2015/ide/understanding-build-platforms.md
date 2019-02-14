@@ -1,14 +1,9 @@
 ---
 title: Общие сведения о платформах построения | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.build.newsolutionplatform
 - vs.build.editprojectplatforms
@@ -21,13 +16,13 @@ ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a25dd219a7fc2f99a75ad7b8a6a1e94cd82e2ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761950"
 ---
 # <a name="understanding-build-platforms"></a>Общие сведения о платформах построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +36,7 @@ ms.locfileid: "49246837"
  [Практическое руководство. Настройка проекта для нескольких платформ](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
  Описание настройки проекта для нескольких платформ.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md)   
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

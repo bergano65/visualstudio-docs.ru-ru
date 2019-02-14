@@ -1,25 +1,20 @@
 ---
 title: Исходный код L2DBForm.xaml | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797357"
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49207692"
   
  Клиентская область располагается в окне <xref:System.Windows.Controls.StackPanel> , имеющем светло-синий фон. Эта панель содержит четыре раздела пользовательского интерфейса <xref:System.Windows.Controls.DockPanel> , разделенные панелями <xref:System.Windows.Controls.Separator> . Назначение этих разделов описывается в подразделе **Примечания** из [предыдущего раздела](../designers/walkthrough-linqtoxmldatabinding-example.md).  
   
- Каждый раздел содержит идентифицирующую его метку. В двух первых разделах данная метка повернута на 90 градусов с помощью <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Остальная часть раздела содержит элементы пользовательского интерфейса, соответствующие назначению данного раздела: текстовые поля, блоки текста, кнопки и т. д. Иногда для выравнивания этих дочерних элементов управления используется дочерний элемент <xref:System.Windows.Controls.StackPanel> .  
+ Каждый раздел содержит идентифицирующую его метку. В двух первых разделах данная метка повернута на 90 градусов с помощью <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Остальная часть раздела содержит элементы пользовательского интерфейса, соответствующие назначению данного раздела: текстовые поля, блоки текста, кнопки и т. д. Иногда для выравнивания этих дочерних элементов управления используется дочерний элемент <xref:System.Windows.Controls.StackPanel> .  
   
 ## <a name="window-resource-section"></a>Раздел оконных ресурсов  
  Открывающий тег `<Window.Resources>` в строке 9 определяет начало раздела оконных ресурсов. Он оканчивается закрывающим тегом в строке 35.  
@@ -246,9 +241,6 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>Комментарии  
  Сведения об исходном коде C# для обработчиков событий, связанных с элементами интерфейса WPF, см. в статье [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md) (Исходный код L2DBForm.xaml.cs).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Walkthrough: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)  (Пошаговое руководство. Пример LinqToXmlDataBinding)  
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
-
-
-

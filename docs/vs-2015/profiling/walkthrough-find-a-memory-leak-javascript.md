@@ -23,7 +23,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54780938"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Пошаговое руководство. Поиск утечек памяти (JavaScript).
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Пошаговое руководство. Поиск утечек памяти (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
