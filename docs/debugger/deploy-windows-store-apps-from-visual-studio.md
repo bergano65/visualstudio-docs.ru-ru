@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53821319"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043769"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывание приложений UWP из Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "53821319"
 
 - Когда целевое устройство является удаленным, Visual Studio копирует требуемые файлы на удаленный компьютер и регистрирует приложение на этом устройстве.
 
-Развертывание осуществляется автоматически при отладке приложения из Visual Studio с помощью параметра Начать отладку** (на клавиатуре нажмите F5) или **Запуск без отладки** параметр (клавиатуры: CTRL+F5 Кроме того, приложение можно развернуть вручную. Это удобно в следующих сценариях:
+Развертывание осуществляется автоматически при отладке приложения из Visual Studio с помощью **начать отладку** параметр (Клавиатура: F5) или **Запуск без отладки** параметр (Клавиатура: CTRL + F5). Кроме того, приложение можно развернуть вручную. Это удобно в следующих сценариях:
 
 - Специализированное тестирование на локальном или удаленном компьютере.
 
