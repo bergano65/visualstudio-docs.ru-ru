@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов) | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Создать тип, допускающий значение NULL (конструктор классов) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -16,13 +11,13 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941949"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834921"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,12 +81,9 @@ ms.locfileid: "49941949"
   
 5.  Щелкните правой кнопкой мыши фигуру класса и выберите пункт **Сведения о классе**. Свойства нового типа можно просмотреть или изменить в окне **Сведения о классе**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:System.Nullable%601>   
  [Типы, допускающие значения NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Использование допускающих значение NULL типов](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
  [Практическое руководство. Идентификация типа, допускающего значение NULL](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Типы значений, допускающие значение NULL](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
-
-
-

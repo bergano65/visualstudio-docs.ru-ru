@@ -1,14 +1,9 @@
 ---
 title: Создание шаблонов проектов и элементов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], projects
 - item templates, about item templates
@@ -22,13 +17,13 @@ ms.assetid: a6ce501a-699b-4e3e-ade8-c81895645c20
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763365"
 ---
 # <a name="creating-project-and-item-templates"></a>Создание шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,12 +49,9 @@ ms.locfileid: "49851664"
 ## <a name="starter-kits"></a>Наборы для начинающих  
  Начальные наборы являются усовершенствованными шаблонами, которые можно использовать совместно с другими членами сообщества. Начальный набор содержит компилируемые образцы кода, документацию и другие ресурсы, помогающие пользователям освоить новые инструменты и методы программирования во время разработки полезных реальных приложений. В начальных наборах используются те же основные процедуры и содержимое, что и в обычных шаблонах. Дополнительные сведения см. в статье [Практическое руководство. Создание начальных наборов](../ide/how-to-create-starter-kits.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)   
  [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)   
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
  [Практическое руководство. Создание начальных наборов](../ide/how-to-create-starter-kits.md)
-
-
-

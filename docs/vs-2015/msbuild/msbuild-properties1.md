@@ -1,27 +1,22 @@
 ---
 title: MSBuild Properties1 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c839cebc63e14490f8793feffd4580798779288
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 104fe082f9e18a7be97f2ab95a022288316cc638
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773239"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +140,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)  
  [Практическое руководство. Использование переменных среды в сборке](../msbuild/how-to-use-environment-variables-in-a-build.md)   
@@ -153,5 +148,3 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
  [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Элемент Property (MSBuild)](../msbuild/property-element-msbuild.md)
-
-

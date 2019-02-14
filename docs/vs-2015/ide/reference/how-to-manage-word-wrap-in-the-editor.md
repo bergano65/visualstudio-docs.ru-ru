@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Управление переносом слов в редакторе | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Управление переносом слов в редакторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - word wrap
 - editors, text viewing
@@ -17,13 +12,13 @@ ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 011bae45760e01d6b3cb8ed55e7d0afdf017e7cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753250"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,10 +26,10 @@ ms.locfileid: "49271808"
   
 Флажок **Перенос по словам** можно устанавливать и снимать. Если этот флажок установлен, часть длинной строки, выступающая за пределы текущей ширины окна редактора кода, отображается на следующей строке. Если этот флажок снят, например для упрощения использования нумерации строк, окно можно прокрутить вправо, чтобы увидеть окончание длинной строки.  
   
- Дополнительные сведения см. в разделе [Практическое руководство. Настройка общих параметров редактора](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Дополнительные сведения см. в разделе [Как Задайте общие параметры редактора](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в **справке** в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в **справке** в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Процедура  
   
@@ -57,10 +52,7 @@ ms.locfileid: "49271808"
     > [!NOTE]
     >  Эти стрелки-напоминания не добавляются в код: они отображаются просто для удобства.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка редактора](../../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "\"Проекты и решения\", диалоговое окно \"Параметры\" | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,13 +11,13 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246198"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758205"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>«Проекты и решения», «Диалоговое окно параметров»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49246198"
 Задает путь по умолчанию для папки проекта [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и определяет поведение по умолчанию окна **вывода**, **списка задач** и **обозревателя решений** при разработке и сборке проектов. Чтобы открыть это диалоговое окно, выберите **Сервис/Параметры**, разверните **Проекты и решения** и выберите **Общие**.  
   
 > [!NOTE]
->  Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. При написании этой страницы справки имелось в виду окно **Обычные параметры среды разработки**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. При написании этой страницы справки имелось в виду окно **Обычные параметры среды разработки**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Параметры  
  **Размещение проектов**  
@@ -69,8 +64,5 @@ ms.locfileid: "49246198"
  **Запрашивать переименование символов при переименовании файлов**  
  Если этот флажок установлен, отображается окно сообщения, запрашивающее подтверждение, необходимо ли [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] переименовать все ссылки в проекте на элемент кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

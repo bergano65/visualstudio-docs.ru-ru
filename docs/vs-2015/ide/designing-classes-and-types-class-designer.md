@@ -1,14 +1,9 @@
 ---
 title: Конструирование классов и типов (конструктор классов) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio], designing
 - classes [Visual Studio], designing
@@ -16,13 +11,13 @@ ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e7fbefeef4a5993daeaf79088da7bd861505421c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795516"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Конструирование классов и типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +53,5 @@ ms.locfileid: "49265750"
   
  [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

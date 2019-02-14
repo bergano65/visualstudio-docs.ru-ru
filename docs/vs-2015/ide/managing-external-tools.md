@@ -1,14 +1,9 @@
 ---
 title: Управление внешними инструментами | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,13 +56,13 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763327"
 ---
 # <a name="managing-external-tools"></a>Управление внешними инструментами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,14 +78,14 @@ ms.locfileid: "49244495"
   
 3.  Инструмент трассировки ATL/MFC: отображает сообщения трассировки отладки в источниках ATL и MFC.  
   
-4.  PreEmptive Dotfuscator and Analytics: защищает программы платформы .NET от реконструирования.  
+4.  PreEmptive Dotfuscator и Analytics: Защищает программы платформы .NET от реконструирования.  
   
-5.  SPY++: отображает процессы, потоки, окна и сообщения окон в графической форме.  
+5.  SPY++ Графически отображает процессы, потоки, windows и окно сообщения.  
   
-6.  Редактор конфигураций службы WCF: позволяет создавать и изменять параметры конфигурации для служб WCF.  
+6.  &Редактор конфигураций службы WCF Позволяет создавать и изменять параметры конфигурации для служб WCF.  
   
 > [!WARNING]
->  Вы можете увидеть другой список внешних инструментов, в зависимости от установленного выпуска Visual Studio и примененных параметров профиля. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Вы можете увидеть другой список внешних инструментов, в зависимости от установленного выпуска Visual Studio и примененных параметров профиля. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Добавление новых инструментов  
  Вы можете добавить внешний инструмент в меню **Сервис**. Откройте диалоговое окно **Внешние инструменты**, нажмите кнопку **Добавить**, а затем введите данные. Например, следующая запись вызывает открытие проводника Windows в каталоге с файлом, который в настоящий момент открыт в Visual Studio:  
@@ -126,13 +121,5 @@ ms.locfileid: "49244495"
 |Каталог решения|$(SolutionDir)|Каталог текущего решения (диск + путь).|  
 |Имя файла решения|$(SolutionFileName)|Имя файла текущего решения (диск + путь + имя файла).|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Средства сборки С/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

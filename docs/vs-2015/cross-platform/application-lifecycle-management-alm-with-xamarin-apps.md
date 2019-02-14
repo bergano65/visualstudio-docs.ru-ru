@@ -1,24 +1,19 @@
 ---
 title: Управление жизненным циклом приложений (ALM) для приложений Xamarin | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793815"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51745207"
  В таблицах ниже указано, какие возможности Visual Studio ALM будут эффективно работать в проекте Xamarin, а какие имеют ограничения. Дополнительные сведения о самих функциях см. в документации по ссылкам.  
   
 ## <a name="agile-tools"></a>Средства Agile  
- Ссылка: **[Поддержка](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (с использованием Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
+ Ссылка для справки: **[Рабочие](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (с помощью Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
   
  Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.  
   
@@ -80,7 +75,7 @@ ms.locfileid: "51745207"
 |-------------|----------------------------|-------------------------|  
 |Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Настройка TFS для Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (веб-сайт Xamarin)|  
 |Локальный сервер сборки, связанный с Visual Studio Team Services|Да|Инструкции см. в разделе [Сервер сборки](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
-|Служба размещенного контроллера Visual Studio Team Services|Да|См. [Сборка приложения Xamarin](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin).|  
+|Служба размещенного контроллера Visual Studio Team Services|Да|См. [Сборка приложения Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Определения сборки с сценариями до и после сборки|Да||  
 |Непрерывная интеграция, включая условный возврат|Да|Условный возврат доступен только для TFVC, так как Git работает с моделью запроса на включение внесенных изменений, а не с возвратом.|  
   
@@ -122,4 +117,3 @@ ms.locfileid: "51745207"
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Анализ сбоев, телеметрия и бета-распределение|Да||
-

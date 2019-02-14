@@ -1,14 +1,9 @@
 ---
 title: Пошаговое руководство. Использование интерфейсов API профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -16,13 +11,13 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769639"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51749084"
   
  Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле VSPerf.dll. Файл заголовка VSPerf.h и библиотека импорта VSPerf.lib расположены в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.  
   
- Для управляемого кода интерфейсы API находятся в файле Microsoft.VisualStudio.Profiler.dll. Эта библиотека DLL расположена в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Profiler>.  
+ Для управляемого кода интерфейсы API находятся в файле Microsoft.VisualStudio.Profiler.dll. Эта библиотека DLL расположена в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:  
@@ -166,11 +161,8 @@ DataCollection.CurrentId);
   
      В текущем каталоге создается CSV-файл, содержащий результирующие данные производительности.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Начало работы](../profiling/getting-started-with-performance-tools.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

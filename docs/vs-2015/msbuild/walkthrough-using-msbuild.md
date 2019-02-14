@@ -1,27 +1,22 @@
 ---
 title: Пошаговое руководство. Использование MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792224"
 ---
 # <a name="walkthrough-using-msbuild"></a>Пошаговое руководство. Использование MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ MSBuild является платформой сборки для корпора
   
 - Задача — это наименьшая единица работы или, другими словами, атом сборки. Задачи являются независимыми исполняемыми компонентами, которые могут иметь входные и выходные данные. Сейчас в проекте отсутствуют определенные задачи или задачи, на которые существуют ссылки. Процедура добавления задач в файл проекта описывается в следующих разделах. Дополнительные сведения см. в статье о [задачах](../msbuild/msbuild-tasks.md).  
   
-- Целевой объект представляет собой именованную последовательность задач. В конце файла проекта существует два целевых объекта, которые в настоящее время заключены в комментарии HTML: BeforeBuild и AfterBuild.  
+- Целевой объект представляет собой именованную последовательность задач. Существует два целевых объекта в конце файла проекта, которые в настоящее время заключены в комментарии HTML: BeforeBuild и AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -584,8 +579,6 @@ $(PropertyName)
 ## <a name="whats-next"></a>Что дальше?  
  Сведения о пошаговом создании файла простого проекта см. в статье [Walkthrough: Creating an MSBuild Project File from Scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) (Пошаговое руководство. Создание файла проекта MSBuild с нуля).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
-
-

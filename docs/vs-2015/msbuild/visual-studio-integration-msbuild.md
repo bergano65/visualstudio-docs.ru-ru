@@ -1,14 +1,9 @@
 ---
 title: Интеграция Visual Studio (MSBuild) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763314"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ ms.locfileid: "49294857"
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  С этой целью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
   
 ## <a name="additional-build-actions"></a>Дополнительные действия при построении  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
   
 ```  
 <ItemGroup>  
@@ -187,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Для обычной сборки в Visual Studio быстрая проверка обновлений не применяется, и сборка проекта будет выполняться, как если бы сборка была вызвана из командной строки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Расширение процесса построения Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Запуск построения из интегрированной среды разработки](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Регистрация расширений платформы .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Задача Csc](../msbuild/csc-task.md)   
  [Задача Vbc](../msbuild/vbc-task.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Справочная информация о символах Windows | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -18,13 +13,13 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c18825a27bfefdd1a6c817951983d85ac459b78b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801704"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +49,6 @@ ms.locfileid: "51763592"
   
      Можно также нажать кнопку с многоточием (**...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Практическое руководство. Сериализация сведений о символах](../profiling/how-to-serialize-symbol-information.md)
-
-
-

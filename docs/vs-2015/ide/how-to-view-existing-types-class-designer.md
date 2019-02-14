@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Просмотр существующих типов (конструктор классов) | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Просмотр существующих типов (конструктор классов) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758147"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Практическое руководство. Просмотр существующих типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49846985"
    Кроме того, чтобы просмотреть типы в проекте, можно перетащить один или более типов из узла проекта в «Окне классов» на схему классов.  
   
 > [!TIP]
->  Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+>  Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Чтобы отобразить типы на схеме в месте по умолчанию, выберите один или несколько типов в представлении классов, щелкните правой кнопкой мыши выбранные типы и выберите команду **Просмотр схемы класса**.  
   
@@ -70,10 +65,7 @@ ms.locfileid: "49846985"
   
      Будет создана автоматически заполняемая схема классов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

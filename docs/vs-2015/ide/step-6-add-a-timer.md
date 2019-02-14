@@ -1,25 +1,20 @@
 ---
-title: Шаг 6. Добавление таймера | Документы Майкрософт
-ms.custom: ''
+title: Шаг 6. Добавление таймера | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31116171a15a7a38b76451777faaed35dc8b1e52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795291"
 ---
 # <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ ms.locfileid: "49293386"
 -   Следующий шаг руководства см. в разделе [Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md).  
   
 -   Предыдущий шаг руководства см. в разделе [Шаг 5. Добавление ссылок на метки](../ide/step-5-add-label-references.md).
-
-
-

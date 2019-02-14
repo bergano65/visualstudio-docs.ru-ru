@@ -1,14 +1,9 @@
 ---
 title: Страница "Службы" в конструкторе проектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 412dc2adaa168cce8d11e4181537a7ccf3908e8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756428"
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,13 +68,10 @@ ms.locfileid: "49243702"
  **Дополнительно**  
  Открывает диалоговое окно [Дополнительные параметры служб](../../ide/reference/advanced-settings-for-services-dialog-box.md), с помощью которого можно переопределить поведение по умолчанию. Например, с его помощью можно задать базу данных для автономного хранилища вместо использования локальной файловой системы. Дополнительные сведения см. в разделе [Расширенные параметры для диалогового окна служб](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Службы клиентских приложений](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Диалоговое окно "Дополнительные параметры служб"](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
  [Практическое руководство. Настройка служб клиентских приложений](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
  [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
- [Знакомство с конструктором проектов](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)
-
-
-
+ [Знакомство с конструктором проектов](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

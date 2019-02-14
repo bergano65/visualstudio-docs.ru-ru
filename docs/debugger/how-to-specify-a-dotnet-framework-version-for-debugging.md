@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17e63c220dcf7677dbc62d9607e21bfbb11b42fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973984"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Как выполнить Указание версии платформы .NET Framework для отладки (C#, Visual Basic, F#)
 
@@ -46,7 +46,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. В **редакторе реестра** откройте папку HKEY_LOCAL_MACHINE.  
   
-4. Перейдите к  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Перейдите в HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     Если раздел не существует, щелкните правой кнопкой мыши HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine и выберите команду **Создать раздел**. Назовите новый раздел `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
@@ -56,7 +56,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 6. Дважды щелкните **CLRVersionForDebugging**.  
   
-7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Например: V1.1.4322  
+7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Например, "V1.1.4322".  
   
 8. Нажмите кнопку **ОК**.  
   

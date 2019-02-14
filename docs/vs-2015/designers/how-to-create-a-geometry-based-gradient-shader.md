@@ -1,25 +1,20 @@
 ---
-title: Практическое руководство. Создание основанного на геометрии шейдера градиента | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Создание основанного на геометрии шейдера градиента | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797541"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Практическое руководство. Создание основанного на геометрии шейдера градиента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,19 +65,16 @@ ms.locfileid: "49911880"
   
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о предварительном просмотре шейдеров в конструкторе шейдеров см. в подразделе **Предварительный просмотр шейдеров** раздела [Конструктор шейдеров](../designers/shader-designer.md).  
   
- На следующем рисунке шейдер, описанный в этом документе, применяется к трехмерной сцене, описанной в разделе [Практическое руководство. Моделирование трехмерного ландшафта](../designers/how-to-model-3-d-terrain.md). Интенсивность цвета увеличивается вместе с высотой точки ландшафта.  
+ Ниже рисунке шейдер, описанный в этом документе, применяется к трехмерной сцене, описанной в [как: Моделирование трехмерного ландшафта](../designers/how-to-model-3-d-terrain.md). Интенсивность цвета увеличивается вместе с высотой точки ландшафта.  
   
  ![Применение эффекта градиента к трехмерной модели поверхности](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- Дополнительные сведения о способах применения шейдера к трехмерной модели см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Дополнительные сведения о способах применения шейдера к трехмерной модели см. в разделе [как: Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)   
- [Практическое руководство. Моделирование трехмерного ландшафта](../designers/how-to-model-3-d-terrain.md)   
+ [Практическое руководство. Модели трехмерного ландшафта](../designers/how-to-model-3-d-terrain.md)   
  [Практическое руководство. Создание шейдера текстуры с использованием оттенков серого](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

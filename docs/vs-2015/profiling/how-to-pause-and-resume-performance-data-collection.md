@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Приостановка и возобновление сбора данных о производительности | Документация Майкрософт
+title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,7 +18,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54790889"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Как выполнить Приостановка и возобновление сбора данных о производительности
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Практическое руководство. Приостановка и возобновление сбора данных о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Окно страницы сеанса профилирования позволяет интерактивно управлять процессом сбора данных профилирования.  
@@ -42,4 +42,4 @@ ms.locfileid: "54790889"
   
 ## <a name="see-also"></a>См. также раздел  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
- [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)

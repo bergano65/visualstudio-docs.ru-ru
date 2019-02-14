@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Управление окнами редактора | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Управление Windows редактор | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
@@ -18,13 +13,13 @@ ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db6df2e7a3e7b0df1859c6a36871758ccf1d30db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761644"
 ---
 # <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,10 +56,7 @@ ms.locfileid: "49225671"
   
      Добавляется новый экземпляр редактора с вкладками.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка редактора](../ide/customizing-the-editor.md)   
  [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

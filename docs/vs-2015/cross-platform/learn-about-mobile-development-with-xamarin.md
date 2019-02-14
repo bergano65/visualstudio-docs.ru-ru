@@ -1,21 +1,17 @@
 ---
 title: Подробности о разработке мобильных приложений с использованием Xamarin | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781702"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Подробности о разработке мобильных приложений с использованием Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +42,17 @@ ms.locfileid: "51733189"
   
   ![Связь между компьютерами для разработки ПО Windows и Mac в среде Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "Изучение CrossPlat Xamarin 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Основы: как структурированы проекты  
+## <a name="essentials-how-projects-are-structured"></a>Основные компоненты Как структурированы проекты  
  *10–30 минут*  
   
-1.  [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Рекомендуется использовать переносимые библиотеки классов, так как они наилучшим образом обеспечивают использование только тех интерфейсов API .NET, которые поддерживаются всеми целевыми платформами. Большая часть кода бизнес-логики будет находиться в PCL, включая доступ к базам данных, вызовы интерфейсов API REST и вызовы портативных компонентов Xamarin (см. [Deeper Dive: Xamarin Components](#components) в конце статьи). Общий код пользовательского интерфейса, написанный с помощью Xamarin.Forms, может также находиться в PCL.  
+1.  [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Рекомендуется использовать переносимые библиотеки классов, так как они наилучшим образом обеспечивают использование только тех интерфейсов API .NET, которые поддерживаются всеми целевыми платформами. Большая часть кода бизнес-логики будет находиться в PCL, включая доступ к базам данных, вызовы интерфейсов API REST и вызовы портативных компонентов Xamarin (см. в разделе [подробное рассмотрение: Компоненты Xamarin](#components) в конце этого раздела). Общий код пользовательского интерфейса, написанный с помощью Xamarin.Forms, может также находиться в PCL.  
   
-2.  (Необязательно.) В статье [Практический пример: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) описаны рекомендации по разработке и структурированию полнофункционального приложения, например структурирование проекта с PCL для общего кода, который разделяет данные, доступ к данным и бизнес-уровни.  
+2.  (Необязательно) [Практический пример: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) описаны рекомендации по разработке и структурированию полнофункционального приложения, например структурирование проекта с PCL для общего кода, который разделяет данные, доступ к данным и бизнес-уровни.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Основы: встроенные слои и слои пользовательского интерфейса Xamarin.Forms  
  *10–40 минут*  
   
- Xamarin предоставляет два способа для создания отличных нативных приложений: Xamarin Native и Xamarin.Forms.  
+ Xamarin предоставляет два способа для создания отличных нативных приложений. Xamarin Native и Xamarin.Forms.  
   
  В Xamarin Native можно написать отдельный код пользовательского интерфейса для каждой целевой платформы: iOS, Android и Windows.  Такой подход дает прямой доступ к интерфейсам API платформы, позволяя настраивать пользовательский интерфейс для каждой платформы.  Также имеется полный доступ к нативному конструктору и элементам управления для каждой платформы, чтобы помочь в создании соответствующего пользовательского интерфейса.  
   
@@ -76,7 +72,7 @@ ms.locfileid: "51733189"
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) предоставляет краткий обзор, а также сравнение Xamarin.Forms и уровней нативного пользовательского интерфейса (то есть Xamarin.iOS и Xamarin.Android).  
   
-2.  Первые три минуты видео Джеймса Монтеманьо [Xamarin.Forms: создание нативных приложений iOS, Android и Windows с помощью C# и XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13 мин 3 с) содержат еще один обзор; остальная часть видео посвящена демонстрациям.  
+2.  Первые три минуты видео Джеймса Монтеманьо [Xamarin.Forms: Собственный приложений iOS, Android и Windows с C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13m3s) содержат еще один Обзор и продолжайте демонстрациям.  
   
 3.  (Необязательно.) [Введение в Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
@@ -84,14 +80,14 @@ ms.locfileid: "51733189"
   
 5.  (Необязательно.) Статья [Кроссплатформенная разработка — общий доступ к коду пользовательского интерфейса на мобильных платформах с помощью Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) , автор Джейсон Смит (Jason Smith) из MSDN Magazine. В статье описаны разные возможности настройки в Xamarin.Forms, подробнее о которых написано в другой статье, [Настройка элементов управления для каждой платформы](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
   
-## <a name="deeper-dive-debugging-with-emulators"></a>Подробное рассмотрение: отладка с помощью эмуляторов  
+## <a name="deeper-dive-debugging-with-emulators"></a>Подробное рассмотрение: Отладка с помощью эмуляторов  
  *10–15 минут*  
   
  Для отладки кроссплатформенных приложений без использования физического устройства необходимо использовать следующие средства.  
   
 1.  **Эмулятор Android.** В зависимости от того, какая версия Windows используется, рекомендуется либо эмулятор Microsoft Visual Studio для Android или Xamarin Player, которые обеспечивают высокую производительность и поддерживает широкий набор возможностей устройства:  
   
-    -   **Компьютеры с Windows 8+.** Настоятельно рекомендуется использовать эмулятор Microsoft [Visual Studio для Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx), который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин. 55 сек.) содержит еще один обзор и демонстрацию.  
+    -   **Компьютеры Windows 8 +.** Мы настоятельно рекомендуем использовать корпорации Майкрософт [Visual Studio Emulator для Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин. 55 сек.) содержит еще один обзор и демонстрацию.  
   
     -   **Windows 7 и более ранние версии или Windows на Mac OS X**. Используйте [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
   
@@ -99,8 +95,7 @@ ms.locfileid: "51733189"
   
 3.  **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="components"></a> Deeper Dive: Xamarin Components  
+##  <a name="components"></a> Подробное рассмотрение: Компоненты Xamarin  
  *10 минут*  
   
  Многие расширенные возможности доступны для приложений Xamarin через компоненты Xamarin. Полный каталог доступен для скачивания на сайте [http://components.xamarin.com/](http://components.xamarin.com/) и включает в себя компоненты для дополнительных элементов управления пользовательского интерфейса, проверки подлинности, разнообразные облачные службы, например Microsoft Azure, и многое другое.
-

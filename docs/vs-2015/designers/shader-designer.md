@@ -1,14 +1,9 @@
 ---
 title: Конструктор шейдеров | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805465"
 ---
 # <a name="shader-designer"></a>Конструктор шейдеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ ms.locfileid: "49942014"
 ### <a name="previewing-shaders"></a>Предварительный просмотр шейдеров  
  Чтобы понять, как шейдер будет выглядеть в приложении, вы можете настроить предварительный просмотр эффектов. Чтобы оценить приложение, вы можете выбрать одну из нескольких фигур для отрисовки, настроить текстуры и другие параметры материала, включить анимацию эффектов, учитывающих время, и осуществить предварительный просмотр с разных углов.  
   
-#### <a name="shapes"></a>Фигур  
+#### <a name="shapes"></a>Фигуры  
  Конструктор шейдеров включает в себя шесть фигур — сферу, куб, цилиндр, конус, чайник и плоскость, которые можно использовать для предварительного просмотра шейдера. В зависимости от конкретного шейдера некоторые фигуры могут лучше других подходить для предварительного просмотра.  
   
 ###### <a name="to-choose-a-preview-shape"></a>Выбор фигуры для предварительного просмотра  
@@ -193,6 +188,3 @@ ms.locfileid: "49942014"
 |[Работа с трехмерными ресурсами для игр и приложений](../designers/working-with-3-d-assets-for-games-and-apps.md)|Обзор средств в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которые можно использовать для работы с текстурами и изображениями, трехмерными моделями и эффектами шейдеров.|  
 |[Редактор изображений](../designers/image-editor.md)|Описывает способ использования редактора изображений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с текстурами и изображениями.|  
 |[Редактор моделей](../designers/model-editor.md)|Рассматривается порядок использования редактора моделей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с трехмерными моделями.|
-
-
-

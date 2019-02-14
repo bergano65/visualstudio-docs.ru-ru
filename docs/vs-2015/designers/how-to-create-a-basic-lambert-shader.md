@@ -1,25 +1,20 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Создайте шейдер Ламберта основные | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792012"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +59,11 @@ ms.locfileid: "49929729"
   
  ![Применение к модели освещения по методу Ламберта.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- Дополнительные сведения о способах применения шейдера к трехмерной модели см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Дополнительные сведения о способах применения шейдера к трехмерной модели см. в разделе [как: Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)   
  [Практическое руководство. Создание простейшего шейдера освещения по методу Фонга](../designers/how-to-create-a-basic-phong-shader.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

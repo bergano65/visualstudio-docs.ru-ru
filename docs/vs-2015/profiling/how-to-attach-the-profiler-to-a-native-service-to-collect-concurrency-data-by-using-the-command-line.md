@@ -1,25 +1,20 @@
 ---
 title: Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных параллелизма при помощи командной строки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6add1c0837e9a1d1308f61112540d00f42617a92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780861"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных параллелизма при помощи командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51731446"
    > [!NOTE]
    >  Большинство служб требует указания параметров **/user** и **/crosssession**.  
 
-   |                               Параметр                               |                                                                     Описание:                                                                      |
+   |                               Параметр                               |                                                                     Описание                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               Включает профилирование процессов в других сеансах входа.                                                |
@@ -74,7 +69,7 @@ ms.locfileid: "51731446"
 
 -   Пары параметров в следующей таблице запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
@@ -92,6 +87,3 @@ ms.locfileid: "51731446"
 2.  Завершите работу профилировщика. Для этого введите следующую команду в командной строке:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
-
-
-

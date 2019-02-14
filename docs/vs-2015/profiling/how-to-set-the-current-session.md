@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Установка текущего сеанса | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -21,13 +16,13 @@ ms.assetid: a593e551-18ec-46fd-bfd5-8a045165a334
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bb3913ce8fe7903f6da19b76bbc1a808372c86d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760396"
 ---
 # <a name="how-to-set-the-current-session"></a>Практическое руководство. Установка текущего сеанса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +41,8 @@ ms.locfileid: "51726416"
   
      Имя сеанса отображается полужирным шрифтом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Окно "Обозреватель производительности"](../profiling/performance-explorer-window.md)   
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)   
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
-
-
-

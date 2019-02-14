@@ -1,14 +1,9 @@
 ---
 title: IntelliSense для Visual C# | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800879"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense для Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49862207"
   Список завершения в C# обладает достаточно широкими возможностями по фильтрации несоответствующих токенов и предварительному выбору токена в зависимости от контекста. Дополнительные сведения см. в разделах [Фильтрованные списки завершения в C#](../misc/filtered-completion-lists-in-csharp.md) и [Заранее выбранные элементы списков завершения в C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Фрагменты кода в списках завершения  
- В Visual C# списки завершения содержат фрагменты кода, позволяющие легко вставлять предварительно определенные тела кода в программу. Фрагменты кода появляются в списке завершения в виде [элемента Shortcut (фрагменты кода Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) фрагмента.  Дополнительные сведения о фрагментах кода, доступных в Visual C# по умолчанию, см. в разделе [Фрагменты кода Visual C#](../ide/visual-csharp-code-snippets.md).  
+ В Visual C# списки завершения содержат фрагменты кода, позволяющие легко вставлять предварительно определенные тела кода в программу. Фрагменты кода появляются в списке завершения в виде [элемента Shortcut (фрагменты кода Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) фрагмента.  Дополнительные сведения о фрагментах кода, доступных в Visual C# по умолчанию, см. в разделе [Фрагменты кода Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ###  <a name="Keywords"></a> Ключевые слова языка в списках завершения  
  Список завершения в Visual C# также содержит ключевые слова языка. Дополнительные сведения о ключевых словах языка C# см. в разделе [Ключевые слова C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
@@ -162,8 +157,5 @@ ms.locfileid: "49862207"
   
  В следующей задаче показано, как IntelliSense автоматически подключает обработчик событий с именем `button1_Click` к полю события с именем `button1.Click`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
-
-
-

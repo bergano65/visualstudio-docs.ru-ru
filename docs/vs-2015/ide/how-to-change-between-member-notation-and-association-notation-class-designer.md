@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Переключение между записью члена и записью ассоциации (конструктор классов) | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -18,13 +13,13 @@ ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ed7ee328e65f0e76426a21db8f2481e590b0546
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23320b93f0cdafc7cd47ed5b04fcdf66754c4b67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777329"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ ms.locfileid: "49173612"
   
      Линия связи исчезнет, и свойство отобразится в соответствующей секции в фигуре типа на схеме.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Практическое руководство. Визуализация ассоциации коллекции в конструкторе класса (конструктор классов)](../ide/how-to-visualize-a-collection-association-class-designer.md)
-
-
-

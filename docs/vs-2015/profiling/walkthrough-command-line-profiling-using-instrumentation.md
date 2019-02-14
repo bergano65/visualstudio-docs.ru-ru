@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,13 +12,13 @@ ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755437"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,12 +123,9 @@ ms.locfileid: "51741467"
   
      Вы можете анализировать созданные отчеты в редакторе электронных таблиц или использовать интегрированную среду разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для анализа данных профилирования в файле Report.vsp. Дополнительные сведения см. в разделе [Анализ данных средств производительности](../profiling/analyzing-performance-tools-data.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)   
  [Представления отчетов о производительности](../profiling/performance-report-views.md)
-
-
-

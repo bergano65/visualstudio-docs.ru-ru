@@ -1,13 +1,8 @@
 ---
 title: Начало работы с Visual C# и Visual Basic | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
@@ -20,13 +15,13 @@ ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788285"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Начало работы с Visual C# и Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ ms.locfileid: "49253777"
   
  [Учебное руководство 3. Создание игры "Подбери пару!"](../ide/tutorial-3-create-a-matching-game.md)  
  Создайте игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Изучите как хранить объекты с помощью объекта `List`; как использовать цикл `foreach`; как отслеживать состояние формы с помощью ссылочных переменных; как создавать обработчики событий, которые могут использовать несколько объектов; как создавать однократное срабатывание таймера при запуске.
-
-
-

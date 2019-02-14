@@ -1,14 +1,9 @@
 ---
 title: Ресурсы для создания приложений со специальными возможностями | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761676"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49178286"
   
 ## <a name="windows-applications"></a>Windows-приложения  
   
--   [Пошаговое руководство. Создание приложения Windows со специальными возможностями](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b). Этот раздел содержит пошаговые инструкции по реализации в образце приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".  
+-   [Пошаговое руководство: Создание приложения с поддержкой Windows доступны](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) этот раздел содержит пошаговые инструкции по включению в образце приложения Windows пяти требований по специальным возможностям для логотипа сертификации для Windows.  
   
 -   **Рекомендации по разработке пользовательского интерфейса клавиатуры**. Эта техническая статья описывает разработку пользовательского интерфейса приложения Windows, где пользователи могут осуществлять навигацию с клавиатуры. Дополнительные сведения см. на веб-сайте [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -62,8 +57,5 @@ ms.locfileid: "49178286"
   
 -   **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

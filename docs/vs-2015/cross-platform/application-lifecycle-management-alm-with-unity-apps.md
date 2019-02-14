@@ -1,25 +1,20 @@
 ---
 title: Управление жизненным циклом приложения (ALM) для приложений Unity | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778595"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Использование управления жизненным циклом приложения (ALM) с приложениями Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51760707"
  В таблицах ниже показано, как применяются возможности управления жизненным циклом приложений Visual Studio при работе с Unity. Дополнительные сведения о самих функциях см. в документации по ссылкам.  
   
 ## <a name="agile-tools"></a>Средства Agile  
- Ссылка: **[Поддержка](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (с использованием Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
+ Ссылка для справки: **[Рабочие](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (с помощью Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
   
  Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.  
   
@@ -127,6 +122,3 @@ ms.locfileid: "51760707"
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|--------------------------|-------------------------|  
 |Анализ сбоев, телеметрия и бета-распределение|Да|HockeyApp в основном используется для обработки бета-распределения и получения отчетов о сбоях.<br /><br /> Для данных телеметрии, полученных от скриптов на языке C#, можно использовать любую платформу аналитики при условии, что она работает на основе версии .NET, которая используется в среде Unity. Однако это позволяет получать аналитику только по игровым скриптам, но не по внутренним подсистемам Unity. В настоящее время подключаемого модуля для Application Insights не существует, но доступны подключаемые модули других решений аналитики, например, [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) и [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Такие службы, как Unity Analytics, учитывающие особенности проектов Unity, безусловно, позволяют получать гораздо более ценные сведения, чем универсальные платформы.|
-
-
-
