@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969672"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768441"
 ---
 # <a name="vbc-task"></a>Vbc - задача
 Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода (*.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ ms.locfileid: "54969672"
 | `Imports` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Импорт пространства имен из указанных коллекций элементов. Этот параметр соответствует параметру [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) компилятора *vbc.exe*. |
 | `KeyContainer` | Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Этот параметр соответствует параметру [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) компилятора *vbc.exe*. |
 | `KeyFile` | Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Задает используемую версию языка ("9" или "10"). |
+| `LangVersion` | Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Задает используемую [версию языка](/dotnet/visual-basic/language-reference/configure-language-version) (например, 15.5). |
 | `LinkResources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Этот параметр соответствует параметру [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) компилятора *vbc.exe*. |
 | `MainEntryPoint` | Необязательный параметр `String` .<br /><br /> Задает класс или модуль, содержащий процедуру `Sub Main`. Этот параметр соответствует параметру [-main](/dotnet/visual-basic/reference/command-line-compiler/main) компилятора *vbc.exe*. |
 | `ModuleAssemblyName` | Необязательный параметр `String` .<br /><br /> Задает сборку, частью которой будет этот модуль. |

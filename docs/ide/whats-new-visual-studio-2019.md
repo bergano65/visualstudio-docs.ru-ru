@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 01/29/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,13 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483709"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987422"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Новые возможности предварительной версии Visual Studio 2019
 
@@ -90,6 +89,8 @@ ms.locfileid: "55483709"
 
 В предварительной версии Visual Studio 2019 эта служба устанавливается по умолчанию.
 
+   ![Анимированный GIF-файл, демонстрирующий возможности службы Live Share в Visual Studio 2019](media/live-share-collaboration.gif)
+
 Дополнительные сведения см. в записи блога [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share: проверка кода в режиме реального времени и интерактивное обучение).
 
 ## <a name="modern-development-support"></a>Поддержка разработки современных приложений
@@ -100,11 +101,16 @@ ms.locfileid: "55483709"
 
 Чтобы приступить к работе, скачайте расширение [Запросы на вытягивание для Visual Studio](https://aka.ms/pr4vs) из Visual Studio Marketplace.
 
-### <a name="develop-with-net-core-3-preview-1"></a>Разработка с помощью .NET Core 3 (предварительная версия 1)
+### <a name="develop-with-net-core-3-preview"></a>Разработка с помощью .NET Core 3 (предварительная версия)
 
-Предварительная версия Visual Studio 2019 поддерживает создание приложений [.NET Core 3](http://aka.ms/netcore3preview1) для любой платформы. Мы продолжим расширять поддержку и совершенствовать возможности кроссплатформенной разработки C++, а также разработки мобильных приложений .NET для iOS и Android с помощью Xamarin.
+Предварительная версия Visual Studio 2019 поддерживает создание приложений [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) для любой платформы. Мы продолжим расширять поддержку и совершенствовать возможности кроссплатформенной разработки C++, а также разработки мобильных приложений .NET для iOS и Android с помощью Xamarin.
 
-   ![Разработка приложений с помощью .NET Core 3 (предварительная версия 1) в Visual Studio 2019](media/dot-net-core-three-dev.png)
+   ![Разработка приложений с помощью .NET Core 3 (предварительная версия) в Visual Studio 2019](media/dot-net-core-three-dev.png)
+
+Дополнительные сведения см. на следующих страницах:
+
+* Заметки о выпуске [.NET Core 3 (предварительная версия 1)](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) и [.NET Core 3 (предварительная версия 2)](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md).
+* Записи блога [Announcing .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) (Объявление о выпуске .NET Core 3, предварительная версия 1) и [Announcing .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) (Объявление о выпуске .NET Core 3, предварительная версия 2).
 
 ## <a name="continuous-innovation"></a>Непрерывные инновации
 
@@ -116,6 +122,8 @@ ms.locfileid: "55483709"
 
    ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
+Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
+
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) — это расширение, которое повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (&mdash;каждый из которых имеет более 100 звезд&mdash;).
@@ -126,6 +134,8 @@ ms.locfileid: "55483709"
 * помогает разработчикам придерживаться шаблонов и стилей написания кода в команде;
 * выполняет поиск трудновыявляемых ошибок в коде;
 * при проверке обращает внимание на те участки кода, которые действительно требуют проверки.
+
+ ![Пример предложения IntelliSense](media/intellicode-intellisense-suggestion.png)
 
 Изначально, в первой предварительной версии расширения IntelliCode для Visual Studio, поддерживался только язык C#. Теперь мы добавили поддержку C++ и XAML в Visual Studio.
 

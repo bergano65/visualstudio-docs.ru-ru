@@ -3,7 +3,6 @@ title: Учебник. Начало работы с Visual Basic
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения на Visual Basic в Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424503"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155699"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
@@ -142,10 +141,10 @@ Visual Studio — это интегрированный набор средст
 Поздравляем с завершением этого учебника! Для получения дополнительных сведений перейдите к следующему руководству.
 
 > [!div class="nextstepaction"]
-> [Видеоучебник. Основы программирования на Visual Basic для начинающих](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Создание библиотеки .NET Standard с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>См. также
 
-* [Новые возможности в Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense для файлов кода Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Пошаговые руководства по Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Справочник по языку Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense для файлов кода Visual Basic](../../ide/visual-basic-specific-intellisense.md)

@@ -2,7 +2,6 @@
 title: Управление проектами приложений Python
 description: Проекты в Visual Studio управляют зависимостями между файлами и сложными связями в приложении.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231939"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155868"
 ---
 # <a name="python-projects-in-visual-studio"></a>Проекты Python в Visual Studio
 
@@ -37,8 +36,7 @@ Visual Studio предоставляет множество шаблонов п�
 
 |   |   |
 |---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) с общими сведениями о проектах Python (2 мин 17 с). |
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Также см. [Подробный обзор. Использование системы управления версиями в проектах Python](https://youtu.be/Aq8eqApnugM) (8 мин 55 с, youtube.com). |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Deep Dive: Use source control with Python projects (Подробный обзор. Использование системы управления версиями в проектах Python)](https://youtu.be/Aq8eqApnugM) (8 мин 55 с, youtube.com). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Добавление файлов, назначение файла запуска и настройка сред
 
