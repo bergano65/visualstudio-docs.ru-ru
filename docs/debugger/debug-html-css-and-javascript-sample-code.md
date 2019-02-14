@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 131fb1cf2db9a22bb6bc6aa4ca313481c3b399aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947560"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991584"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Пример кода для отладки HTML и CSS
   
- В этом разделе приведен пример файла для [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
+ В этом разделе приведен пример файла для [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
   
 ## <a name="sample-code"></a>Пример кода  
  Следующий код HTML используется в кратком руководстве в теге \<body>.  
@@ -101,4 +101,4 @@ ms.locfileid: "53947560"
 ```  
   
 ## <a name="see-also"></a>См. также раздел  
- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
