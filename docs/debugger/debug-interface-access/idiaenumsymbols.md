@@ -9,91 +9,91 @@ helpviewer_keywords:
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b407a8bceca3127bea54470bcab3cc42aa3b81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad74270ab9ed0cba970e133af1a798d9c905eb2a
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964056"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156024"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
-Перечисляет различные символов, содержащихся в источнике данных.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-IDiaEnumSymbols : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaEnumSymbols`.  
-  
-|Метод|Описание|  
-|------------|-----------------|  
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|  
-|[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Возвращает число символов.|  
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Получает символ с помощью индекса.|  
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Извлекает указанное число символов в последовательности перечисления.|  
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Пропускает заданное число символов в последовательности перечисления.|  
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-  
-## <a name="remarks"></a>Примечания  
- Этот интерфейс предоставляет символы, сгруппированные по определенный тип символа, например, `SymTagUDT` (определяемые пользователем типы) или `SymTagBaseClass`. Для работы с символами, сгруппированными по адресам используйте [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) интерфейс.  
-  
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Для получения этого интерфейса вызов следующих методов:  
-  
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-  
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
-  
--   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
-  
-## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaEnumSymbols` интерфейс, а затем использовать это перечисление, чтобы список определяемых пользователем типов (UDT).  
-  
+Перечисляет различные символов, содержащихся в источнике данных.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+IDiaEnumSymbols : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+В следующей таблице показаны методы `IDiaEnumSymbols`.
+
+|Метод|Описание|
+|------------|-----------------|
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|
+|[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Возвращает число символов.|
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Получает символ с помощью индекса.|
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Извлекает указанное число символов в последовательности перечисления.|
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Пропускает заданное число символов в последовательности перечисления.|
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
+
+## <a name="remarks"></a>Примечания
+Этот интерфейс предоставляет символы, сгруппированные по определенный тип символа, например, `SymTagUDT` (определяемые пользователем типы) или `SymTagBaseClass`. Для работы с символами, сгруппированными по адресам используйте [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) интерфейс.
+
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+Для получения этого интерфейса вызов следующих методов:
+
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+
+- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
+
+## <a name="example"></a>Пример
+В этом примере показано, как получить `IDiaEnumSymbols` интерфейс, а затем использовать это перечисление, чтобы список определяемых пользователем типов (UDT).
+
 > [!NOTE]
->  `CDiaBSTR` — Это класс, который заключает в оболочку `BSTR` и автоматически обрабатывает освобождение строки, когда экземпляр выходит из области.  
-  
-```C++  
-void ShowUDTs(IDiaSymbol *pGlobals)  
-{  
-    CComPtr<IDiaEnumSymbols> pEnum;  
-    CComPtr<IDiaSymbol> pSymbol;  
-    HRESULT hr;  
-  
-    hr = pGlobals->findChildren(SymTagUDT,  
-                                NULL,  
-                                nsfCaseInsensitive | nsfUndecoratedName,  
-                                &pEnum);  
-    if (hr == S_OK)  
-    {  
-        while ( SUCCEEDED( hr = pEnum->Next( 1, &pSymbol, &celt ) ) &&  
-                celt == 1 )  
-        {  
-            CDiaBSTR name;  
-            if ( pSymbol->get_name( &name ) != S_OK )  
-                Fatal( "get_name" );  
-            printf( "Found UDT: %ws\n", name );  
-            pSymbol = 0;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
-  
- Библиотека: diaguids.lib  
-  
- Библиотеки DLL: msdia80.dll  
-  
-## <a name="see-also"></a>См. также раздел  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+> `CDiaBSTR` — Это класс, который заключает в оболочку `BSTR` и автоматически обрабатывает освобождение строки, когда экземпляр выходит из области.
+
+```C++
+void ShowUDTs(IDiaSymbol *pGlobals)
+{
+    CComPtr<IDiaEnumSymbols> pEnum;
+    CComPtr<IDiaSymbol> pSymbol;
+    HRESULT hr;
+
+    hr = pGlobals->findChildren(SymTagUDT,
+                                NULL,
+                                nsfCaseInsensitive | nsfUndecoratedName,
+                                &pEnum);
+    if (hr == S_OK)
+    {
+        while ( SUCCEEDED( hr = pEnum->Next( 1, &pSymbol, &celt ) ) &&
+                celt == 1 )
+        {
+            CDiaBSTR name;
+            if ( pSymbol->get_name( &name ) != S_OK )
+                Fatal( "get_name" );
+            printf( "Found UDT: %ws\n", name );
+            pSymbol = 0;
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Требования
+Заголовок: Dia2.h
+
+Библиотека: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>См. также раздел
+[Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
+[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

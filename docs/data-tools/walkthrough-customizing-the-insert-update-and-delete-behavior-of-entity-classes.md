@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Настройка операций вставки, обновления и удаления в классах сущностей
+title: Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,16 @@ ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12b09ee0e0767ad98a27387e7caf79425320598b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009756"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948606"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка операций вставки, обновления и удаления в классах сущностей
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство: Настройка insert, update и delete поведение классов сущностей
 
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную область конструктора для создания и редактирования LINQ к классам SQL (классов сущностей), которые базируются на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), вы можете использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).
 
@@ -103,7 +102,7 @@ ms.locfileid: "55009756"
      Создастся класс сущностей с именем **Customer**. Он имеет свойства, соответствующие столбцам в таблице Customers. Класс сущностей имеет имя **Customer** (не **Customers**), поскольку он представляет одного клиента из таблицы Customers.
 
     > [!NOTE]
-    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить [параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [Как включить и отключить преобразование во множественную форму (реляционный конструктор объектов)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить [параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [как: Включение и отключение (реляционный конструктор объектов) плюрализации](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3.  В меню **Build** щелкните пункт **Build UpdatingwithSProcsWalkthrough** для создания проекта.
 
@@ -233,7 +232,7 @@ ms.locfileid: "55009756"
 19. Нажмите кнопку **ОК**.
 
 > [!NOTE]
-> Несмотря на то, что он не является проблемой для данного пошагового руководства, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для identity (Автоувеличение), rowguidcol (формируемые базой данных идентификаторы GUID) и столбцы отметок времени при выполнении операции вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы возвращать значения, создаваемые базой данных, следует вручную установить свойство <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в значение `true`, а свойство <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> — в одно из следующих значений: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), или [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Несмотря на то, что он не является проблемой для данного пошагового руководства, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для identity (Автоувеличение), rowguidcol (формируемые базой данных идентификаторы GUID) и столбцы отметок времени при выполнении операции вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата значения созданных базой данных, нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> для `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> к одному из следующих: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), или [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Тестирование приложения
 
@@ -274,6 +273,6 @@ ms.locfileid: "55009756"
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)
-- [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Практическое: назначение хранимых процедур для выполнения обновлений, вставок и удалений](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Запросы LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

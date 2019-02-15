@@ -6,17 +6,16 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96db9d95eeeb21ad890e12e2a05d5313cb426796
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949419"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920448"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Как выполнить назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)
 
 Сохраненные процедуры можно добавлять в **реляционный конструктор объектов** и выполнять как обычные методы <xref:System.Data.Linq.DataContext>. Они также могут использоваться для переопределения стандартного LINQ к SQL поведения среды выполнения, которая выполняет вставки, обновления и удаления, когда изменения сохраняются из классов сущностей в базу данных (например, при вызове <xref:System.Data.Linq.DataContext.SubmitChanges%2A> метод).
 
@@ -24,7 +23,7 @@ ms.locfileid: "54949419"
 > Если хранимые процедуры возвращают значения, которые должны отправляться обратно на клиент (например, значения, вычисляемые в хранимой процедуре), создайте в хранимых процедурах выходные параметры. Если использовать выходные параметры невозможно, то вместо применения переопределений, созданных реляционным конструктором объектов, реализуйте разделяемый метод. Элементы, сопоставляемые со значениями, созданными базой данных, должны получать соответствующие значения после успешного завершения операций INSERT или UPDATE. Дополнительные сведения см. в разделе [обязанности разработчика в переопределении поведения по умолчанию](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для identity (Автоувеличение), rowguidcol (формируемые базой данных идентификаторы GUID) и столбцы отметок времени. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата значения созданных базой данных, нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> для **true** и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> к одному из следующих: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), или [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для identity (Автоувеличение), rowguidcol (формируемые базой данных идентификаторы GUID) и столбцы отметок времени. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата значения созданных базой данных, нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> для **true** и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> к одному из следующих: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert ](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), или [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Конфигурировать поведение обновления класса сущностей
 

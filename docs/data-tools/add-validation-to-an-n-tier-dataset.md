@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957511"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940325"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Добавление проверки в n-уровневом наборе данных
 Добавление проверки к набору данных в n уровневого решения по сути является таким же, как добавление проверки к набору данных одного файла (набор данных в одном проекте). Предлагаемое местоположение для выполнения проверки данных — во время <xref:System.Data.DataTable.ColumnChanging> и/или <xref:System.Data.DataTable.RowChanging> события таблицы данных.
 
- Набор данных предоставляет возможность создания разделяемых классов, к которым можно добавить пользовательский код для события изменения столбца и строки таблиц данных в наборе данных. Дополнительные сведения о добавлении кода в набор данных в n уровневого решения, см. в разделе [Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md), и [добавьте код для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Дополнительные сведения о разделяемых классах см. в разделе [как: Разделение класса на разделяемые классы (конструктор классов)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) или [разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Набор данных предоставляет возможность создания разделяемых классов, к которым можно добавить пользовательский код для события изменения столбца и строки таблиц данных в наборе данных. Дополнительные сведения о добавлении кода в набор данных в n уровневого решения, см. в разделе [Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md), и [добавьте код для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Дополнительные сведения о разделяемых классах см. в разделе [как: разделение класса на разделяемые классы (конструктор классов)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) или [разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  При разделении наборов данных из адаптеров таблиц (задавая **проект DataSet** свойство), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.
@@ -168,5 +167,5 @@ End Sub
 ## <a name="see-also"></a>См. также
 
 - [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
-- [Пошаговое руководство: Создание N-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)

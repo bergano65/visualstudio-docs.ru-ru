@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847970"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939844"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
 
@@ -42,14 +41,14 @@ ms.locfileid: "53847970"
 
 |Элемент реестра|Значение по умолчанию|Объяснение|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или символ подчеркивания.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или символ подчеркивания.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** представляет любые символы, сопоставленных в круглые скобки первого выражения и **$2** представляет любые символы, которые соответствуют второй круглые скобки. Замена — первое совпадение, пробел затем второй объект match.|
 |**SmartCaptionSuffix**|**:**|Представляет знак, добавляемый к возвращаемой строки. Например, если заголовок является `Company Name`, суффикс упрощает `Company Name:`|
 
 > [!CAUTION]
 > Вы должны быть очень осторожным при выполнении действий в редакторе реестра. Резервную копию реестра перед его редактирования. Неправильное использование редактора реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы. Корпорация Майкрософт не гарантирует проблем, вызванных неправильное использование редактора реестра. Ответственность за использование редактора реестра лежит на пользователе.
 >
-> В следующей статье базы знаний содержатся инструкции для резервного копирования, редактирование и восстановление реестра. [Описание реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> В следующей статье базы знаний содержит инструкции для резервного копирования, редактирование и восстановление реестра: [описание реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Изменить поведение смарт-субтитров окна "Источники данных"
 
