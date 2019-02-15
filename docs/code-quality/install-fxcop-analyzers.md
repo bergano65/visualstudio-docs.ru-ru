@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4b97779c458fd7cb02ab5c168401f061869ccb1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953455"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270580"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка анализаторы FxCop в Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "55953455"
 
 | Версия Visual Studio | Версия пакета анализатора FxCop |
 | - | - |
-| Visual Studio 2017 версии 15.5 и более поздние версии | 2.6.2, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 версии 15.5 и более поздние версии | 2.6.3, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
 | Visual Studio 2017 версии 15.3 для 15.4 | 2.3.0-Beta1, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
 | Visual Studio 2017 версии 15.0 для 15.2 | 2.0.0-Beta2, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
 | Visual Studio 2015 с обновлением 2 и 3 | 1.2.0-beta2 версии, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
@@ -79,7 +79,7 @@ ms.locfileid: "55953455"
 
 1. Выберите **изменить** чтобы начать установку.
 
-1. После одну-две минуты не завершит установку. Выберите **закрыть**.
+1. После одну-две минуты не завершит установку. Нажмите кнопку **Закрыть**.
 
 1. Снова откройте Visual Studio.
 

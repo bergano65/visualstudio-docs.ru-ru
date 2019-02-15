@@ -14,15 +14,14 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931615"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 
@@ -36,7 +35,7 @@ ms.locfileid: "54988913"
 
     -   Набор данных или модели EDM.
 
-    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [Как подключиться к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [как: подключение к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Объекты. Дополнительные сведения см. в разделе [привязку к объектам в Visual Studio](bind-objects-in-visual-studio.md).
 
@@ -93,4 +92,4 @@ ms.locfileid: "54988913"
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Пошаговое руководство: отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md)

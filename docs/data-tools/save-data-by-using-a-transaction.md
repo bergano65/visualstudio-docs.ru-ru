@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Сохранение данных с помощью транзакции
+title: Практическое руководство. Сохранение данных с помощью транзакции
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,16 @@ ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecf63cc03af13cadb5791e2f0f5a058feedb8418
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934079"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924374"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Как выполнить  Сохранение данных с помощью транзакции
+# <a name="how-to-save-data-by-using-a-transaction"></a>Практическое руководство. Сохранение данных с помощью транзакции
 
 Сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> объекту участвовать в транзакции, которая автоматически осуществляется автоматически.
 
@@ -54,4 +53,4 @@ ms.locfileid: "54934079"
 ## <a name="see-also"></a>См. также
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
-- [Пошаговое руководство: сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)
+- [Пошаговое руководство. Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)

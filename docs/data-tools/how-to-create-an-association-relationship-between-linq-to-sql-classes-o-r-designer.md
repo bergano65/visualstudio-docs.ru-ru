@@ -6,17 +6,16 @@ ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001334"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907793"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как выполнить Создание ассоциации между классами LINQ to SQL (реляционный конструктор объектов)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Практическое: Создание ассоциации между классами LINQ to SQL (реляционный конструктор объектов)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей можно создавать, используя диалоговое окно **Редактор ассоциаций**.
 
 Можно выбирать родительский класс и дочерний класс, когда диалоговое окно **Редактор ассоциаций** используется для создания ассоциации. Родительский класс представляет собой класс сущностей, который содержит первичный ключ; дочерний класс представляет собой класс сущностей, который содержит внешний ключ. Например, если были созданы, сопоставленные с классы сущностей `Northwind Customers` и `Orders` таблиц, `Customer` класс будет родительским классом и `Order` класс будет дочернего класса.

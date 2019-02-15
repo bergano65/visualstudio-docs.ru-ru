@@ -1,22 +1,21 @@
 ---
-title: Как выполнить изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
+title: Практическое руководство. Изменение типа значений, возвращаемых методом DataContext (реляционный конструктор объектов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 297f4df8c34f7289cb39dfaf2b5d1d9c8c88314e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004712"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940598"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Как выполнить изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Практическое руководство. Изменение типа значений, возвращаемых методом DataContext (реляционный конструктор объектов)
 Тип возвращаемого значения <xref:System.Data.Linq.DataContext> метод (созданный на основе хранимой процедуры или функции) зависит от того, где вы переместили сохраненную процедуру или функцию в **реляционный конструктор объектов**. Если вы переместили элемент прямо на существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возвращаемого значения создаваемого класса сущностей (если схема данных, возвращенная сохраненной процедурой или функцией совпадает с формой класса сущностей). Если Вы сбрасываете элемент на пустую область **реляционный конструктор объектов**, <xref:System.Data.Linq.DataContext> создается метод, который возвращает автоматически сгенерированный тип. Можно изменить тип возврата метода <xref:System.Data.Linq.DataContext> после его добавления в область методов. Чтобы проверить или изменить тип возврата метода <xref:System.Data.Linq.DataContext>, выберите его и щелкните по свойству **Тип возврата** в окне **Свойства**.
 
 > [!NOTE]

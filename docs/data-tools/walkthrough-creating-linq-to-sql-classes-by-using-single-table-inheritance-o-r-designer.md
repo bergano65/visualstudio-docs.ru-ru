@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
+title: Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,16 @@ ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: be750ec83c10b5b052b7ac378d4e77438e60edbe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20f4c2b4a876c35868b08378bda4daaf6d13c2e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042560"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945850"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство: Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночных таблиц, как именно обычно осуществляется в реляционных системах. Это пошаговое руководство разворачивается после универсальных шагов, описанных в [как: Настройка наследования с помощью реляционного конструктора](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и обеспечивает некоторые реальные данные, чтобы продемонстрировать использование наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  В этом пошаговом руководстве выполните следующие задачи.
@@ -189,7 +188,7 @@ ms.locfileid: "55042560"
 ## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Пошаговое руководство: создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Практическое руководство. Создание модели объектов на языке Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Практическое руководство. Создание модели объектов в Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
