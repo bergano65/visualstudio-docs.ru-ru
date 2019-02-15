@@ -1,25 +1,20 @@
 ---
 title: Шаг 11. Запуск программы и изучение других возможностей | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a80a962017cc54e6ce7aae6201079f976dee9ab1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0fe2ce712e4322eb9ebe83549ff485f0e2615f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790388"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Шаг 11. Запуск программы и изучение других возможностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "49172280"
 -   Следующее руководство см. на странице [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).  
   
 -   Предыдущий шаг руководства см.в разделе [Step 10: Write Code for Additional Buttons and a Check Box](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md) (Шаг 10. Написание кода дополнительных кнопок и флажка).
-
-
-

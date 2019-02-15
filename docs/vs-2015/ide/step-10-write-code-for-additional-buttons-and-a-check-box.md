@@ -1,25 +1,20 @@
 ---
 title: Шаг 10. Написание кода дополнительных кнопок и флажка | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51063d0c0ae7dc47653786107e691bed74fed699
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58e50e7d70c485a4a49564ec0a57ba03b74e4a85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786029"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Шаг 10. Написание кода дополнительных кнопок и флажка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ ms.locfileid: "49228050"
 -   Следующий шаг руководства см. в разделе [Step 11: Run Your Program and Try Other Features](../ide/step-11-run-your-program-and-try-other-features.md) (Шаг 11. Запуск программы и изучение других возможностей).  
   
 -   Предыдущий шаг руководства см. в разделе [Step 9: Review, Comment, and Test Your Code](../ide/step-9-review-comment-and-test-your-code.md) (Шаг 9. Проверка, комментирование и тестирование кода).
-
-
-

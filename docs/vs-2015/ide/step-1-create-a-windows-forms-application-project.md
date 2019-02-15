@@ -1,32 +1,27 @@
 ---
 title: Шаг 1. Создание проекта приложения Windows Forms | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780473"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Первый шаг в создании программы для просмотра изображений — это создание проекта приложения Windows Forms.  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 1). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205199) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-create-a-windows-forms-application-project"></a>Создание проекта приложения Windows Forms  
   
@@ -78,6 +73,3 @@ ms.locfileid: "49292387"
 -   Следующий шаг руководства см. в разделе [Step 2: Run Your Program](../ide/step-2-run-your-program.md) (Шаг 2. Запуск программы).  
   
 -   Статью с общими сведениями см. на странице [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md) (Учебное руководство 1. Создание приложения для просмотра рисунков).
-
-
-

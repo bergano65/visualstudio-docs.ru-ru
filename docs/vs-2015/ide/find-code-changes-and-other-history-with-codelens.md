@@ -1,25 +1,20 @@
 ---
 title: Поиск изменений кода и других журналов с помощью CodeLens | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753904"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +83,7 @@ ms.locfileid: "49825677"
   
  ![CodeLens: получение журнала изменений для кода в TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Период времени по умолчанию — последние 12 месяцев. Если код хранится в Team Foundation Server, это ограничение можно изменить, выполнив [команду TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) вместе с [командой CodeIndex](../ide/codeindex-command.md) и флагом **/indexHistoryPeriod** .  
+ Период времени по умолчанию — последние 12 месяцев. Если код хранится в Team Foundation Server, это ограничение можно изменить, выполнив [команду TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) вместе с [командой CodeIndex](../ide/codeindex-command.md) и флагом **/indexHistoryPeriod** .  
   
  Чтобы просмотреть подробный журнал всех изменений, включая сделанные более года назад, выберите параметр **Показать все изменения файла**.  
   
@@ -227,9 +222,9 @@ ms.locfileid: "49825677"
   
 -   Включите CodeLens. Откройте меню **Инструменты**и последовательно выберите пункты **Параметры**, **Текстовый редактор**, **Все языки**, **CodeLens**.  
   
--   Если код хранится в TFS, с помощью [команды CodeIndex](../ide/codeindex-command.md) и [команды TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)убедитесь, что индексирование кода включено.  
+-   Если код хранится в TFS, с помощью [команды CodeIndex](../ide/codeindex-command.md) и [команды TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)убедитесь, что индексирование кода включено.  
   
--   Индикаторы, связанные с TFS, отображаются, только когда рабочие элементы связаны с кодом и имеются разрешения на открытие связанных рабочих элементов. [Убедитесь в наличии разрешений члена команды.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   Индикаторы, связанные с TFS, отображаются, только когда рабочие элементы связаны с кодом и имеются разрешения на открытие связанных рабочих элементов. [Убедитесь в наличии разрешений члена команды.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
   
 -   Индикаторы модульных тестов не отображаются, если в коде приложения отсутствуют модульные тесты. Индикаторы состояния теста отображаются автоматически в тестовых проектах. Если известно, что код приложения имеет модульные тесты, но индикаторы тестов не отображаются, попробуйте выполнить сборку решения (**CTRL + SHIFT + B**).  
   
@@ -288,8 +283,4 @@ ms.locfileid: "49825677"
  **О.** Стрелка **Локальная версия** указывает на последний набор изменений в локальной версии этого файла. Если на сервере находятся более новые наборы изменений, они отображаются над или под стрелкой **Локальная версия** в зависимости от порядка сортировки наборов изменений.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Вопрос. Можно ли управлять тем, как CodeLens обрабатывает код для отображения журнала и связанных элементов?  
- **Ответ.** Да, если код находится в TFS, используйте [команду CodeIndex](../ide/codeindex-command.md) с [командой TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
-
-
-
-
+ **Ответ.** Да, если код находится в TFS, используйте [команду CodeIndex](../ide/codeindex-command.md) с [командой TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

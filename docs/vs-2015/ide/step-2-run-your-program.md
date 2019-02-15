@@ -1,32 +1,27 @@
 ---
 title: Шаг 2. Запуск программы | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 689d577f0d8ac626094391be0f3767f441854093
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778569"
 ---
 # <a name="step-2-run-your-program"></a>Шаг 2. Запуск программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании нового решения фактически выполняется построение программы, которая в последующем запускается. Она пока ничего не делает — просто открывает пустое окно, у которого в строке заголовка окна надпись **Form1**. Но, как очевидно, она выполняется.  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 1). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205199) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-run-your-program"></a>Для запуска программы  
   
@@ -67,6 +62,3 @@ ms.locfileid: "49242194"
 -   Следующий шаг руководства см. в разделе [Шаг 3. Задание свойств формы](../ide/step-3-set-your-form-properties.md).  
   
 -   Предыдущий шаг руководства см. в разделе [Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
-
-
-

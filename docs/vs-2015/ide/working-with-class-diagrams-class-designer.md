@@ -1,14 +1,9 @@
 ---
 title: Работа со схемами классов (конструктор классов) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -20,13 +15,13 @@ ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306713"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834104"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Работа со схемами классов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49306713"
   
  Кроме определения того, что именно показывает каждая схема классов, также можно изменить способ представления данных. Дополнительные сведения см. в статье [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md).  
   
- После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в статьях [Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [Практическое руководство. Печать схем классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) и [Практическое руководство. Экспорт схем классов как изображений (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
+ После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в разделе [как: копирование элементов схемы классов в документ Microsoft Office (конструктор классов)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [как: печать схем классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) и [как: экспорт класса Схемы как изображений (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
 >  Конструктор классов не отслеживает расположение исходных файлов, поэтому, изменение структуры проекта или перемещение исходных файлов в проекте может привести к тому, что конструктор классов не будет отслеживать тип, особенно исходный тип для typedef, базовые классы или типы ассоциаций. Может возникнуть ошибка вида **Конструктору классов не удалось отобразить этот тип**. В этом случае перетащите измененный или перемещенный исходный код в схему классов и повторно отобразите ее.  
@@ -71,10 +66,7 @@ ms.locfileid: "49306713"
   
  Описывается, как удалять фигуры из схем классов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [Практическое руководство. Удаление фигур типов из схем классов (конструктор классов)](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
-
-
-
+ [Практическое руководство. Удаление фигур типов из схем классов (конструктор классов)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
