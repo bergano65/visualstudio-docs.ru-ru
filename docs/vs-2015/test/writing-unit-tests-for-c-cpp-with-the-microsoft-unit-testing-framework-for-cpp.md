@@ -1,24 +1,19 @@
 ---
 title: Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++ | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760032"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -397,13 +392,10 @@ ms.locfileid: "49904049"
   
      Можно также требовать минимального уровня покрытия кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Общие сведения о взаимодействии управляемого и неуправляемого кода](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
  [Пошаговое руководство. Создание и использование библиотеки DLL (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Импортирование и экспортирование](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
-
-
-
