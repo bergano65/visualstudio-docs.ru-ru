@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02a27775a84dab7d95571665b7fad96e223ec45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933682"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316006"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "55933682"
 
 Теперь отображается последствия изменения немедленно в результатах анализа ввести текущий код в решении каждый раз при сохранении схемы. У вас нет больше ожидать завершения команды «Проверить зависимости».
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Будут удалены конструкторов UML
 
@@ -59,7 +59,7 @@ ms.locfileid: "55933682"
 
 Если вы являетесь пользователем значительные конструкторов UML, можно продолжать использовать Visual Studio 2015 или более ранних версий, хотя необходимо выбрать средство для ваших потребностей UML.
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

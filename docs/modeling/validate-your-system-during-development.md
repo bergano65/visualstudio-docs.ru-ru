@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970378"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316760"
 ---
 # <a name="validate-your-system-during-development"></a>Проверка системы в ходе разработки
 Visual Studio помогает привести в соответствие программное обеспечение, требования пользователей и архитектуру системы.
@@ -35,7 +35,7 @@ Visual Studio помогает привести в соответствие пр
 |-|-|
 |**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Дуг: Понимание кода и разработка систем в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Создание архитектуры приложения с помощью схемы зависимостей](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN практические руководства: Проверка кода с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|-   [DevOps от Майкрософт](https://blogs.msdn.microsoft.com/devops/)|
+|**Блоги**|-   [DevOps от Майкрософт](https://devblogs.microsoft.com/devops/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>См. также
