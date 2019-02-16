@@ -12,42 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fedefecdc59c7daf8dd1aa1b2ab015a5071ea25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0650c7b3c2961531b64539887a1c4c68ac2bc819
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000223"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316214"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-Используется для установки точек останова кода на основе строки, пользователь может ввести в интегрированной среде разработки (IDE).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_STRING {   
-   BSTR bstrContext;  
-   BSTR bstrCodeExpr;  
-} BP_LOCATION_CODE_STRING;  
-```  
-  
-## <a name="members"></a>Участники  
- `bstrContext`  
- Контекст точки останова в коде, обычно имя метода или функции материал в стеке вызовов.  
-  
- `bstrCodeExpr`  
- Строка, в который пользователь вводит в для описания кода точки останова.  
-  
-## <a name="remarks"></a>Примечания  
- Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+Используется для установки точек останова кода на основе строки, пользователь может ввести в интегрированной среде разработки (IDE).
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef struct _BP_LOCATION_CODE_STRING {
+    BSTR bstrContext;
+    BSTR bstrCodeExpr;
+} BP_LOCATION_CODE_STRING;
+```
+
+## <a name="members"></a>Участники
+`bstrContext`  
+Контекст точки останова в коде, обычно имя метода или функции материал в стеке вызовов.
+
+`bstrCodeExpr`  
+Строка, в который пользователь вводит в для описания кода точки останова.
+
+## <a name="remarks"></a>Примечания
+Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
+
+## <a name="requirements"></a>Требования
+Header: msdbg.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

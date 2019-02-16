@@ -12,45 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4c7d342b82a8c5b047c49bbedfb680541ad997a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90f624bf012354dbd438f0fff079e13da756f079
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025128"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318036"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-Описывает смещения расположение точки останова в функции в коде.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
-   BSTR                     bstrContext;  
-   IDebugFunctionPosition2* pFuncPos;  
-} BP_LOCATION_CODE_FUNC_OFFSET;  
-```  
-  
-## <a name="members"></a>Участники  
- `bstrContext`  
- Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.  
-  
- `pFuncPos`  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) , описывающий имя функции и относительной позиции от начала функции.  
-  
-## <a name="remarks"></a>Примечания  
- Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
-  
- `pFuncPos` Элемент указывает, где можно задать точки останова в функции.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+Описывает смещения расположение точки останова в функции в коде.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
+    BSTR                     bstrContext;
+    IDebugFunctionPosition2* pFuncPos;
+} BP_LOCATION_CODE_FUNC_OFFSET;
+```
+
+## <a name="members"></a>Участники
+`bstrContext`  
+Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
+
+`pFuncPos`  
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) , описывающий имя функции и относительной позиции от начала функции.
+
+## <a name="remarks"></a>Примечания
+Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
+
+`pFuncPos` Элемент указывает, где можно задать точки останова в функции.
+
+## <a name="requirements"></a>Требования
+Header: msdbg.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

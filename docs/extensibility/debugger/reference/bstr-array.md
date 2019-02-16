@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f05949dd275a7f1566b8cec3a49903249e3de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037204"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317462"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-Структура, описывающая массив строк.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef struct tagBSTR_ARRAY {  
-   DWORD dwCount;  
-   BSTR* Members;  
-} BSTR_ARRAY;  
-```  
-  
-```csharp  
-struct BSTR_ARRAY {  
-   DWORD    dwCount;  
-   string[] Members;  
-}  
-```  
-  
-## <a name="terms"></a>Термины  
- dwCount  
- Число строк в `Members` массива.  
-  
- Участники  
- Массив строк.  
-  
-## <a name="remarks"></a>Примечания  
- Эта структура возвращается из [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) метод.  
-  
- [C++] Каждой отдельной строки должны быть высвобождены с помощью `SysFreeString`и `Members` массива должны быть высвобождены с `CoTaskMemFree`.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+Структура, описывающая массив строк.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef struct tagBSTR_ARRAY {
+    DWORD dwCount;
+    BSTR* Members;
+} BSTR_ARRAY;
+```
+
+```csharp
+struct BSTR_ARRAY {
+    DWORD    dwCount;
+    string[] Members;
+}
+```
+
+## <a name="terms"></a>Термины
+dwCount  
+Число строк в `Members` массива.
+
+Участники  
+Массив строк.
+
+## <a name="remarks"></a>Примечания
+Эта структура возвращается из [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) метод.
+
+[C++] Каждой отдельной строки должны быть высвобождены с помощью `SysFreeString`и `Members` массива должны быть высвобождены с `CoTaskMemFree`.
+
+## <a name="requirements"></a>Требования
+Header: msdbg.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
