@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763288"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
@@ -157,7 +157,7 @@ IntelliSense помогает быстрее писать код, допуска
 </asp:ScriptManager>
 ```
 
- IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. Дополнительные сведения о ресурсах внедренных скриптов см. в разделе [Пошаговое руководство: Внедрение файла JavaScript в качестве ресурса в сборку](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. Дополнительные сведения о ресурсах внедренных скриптов см. в разделе [Пошаговое руководство: внедрение файл JavaScript в качестве ресурса в сборку](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 ####  <a name="ReferenceDirectives"></a> Директивы ссылок
  Директивы `reference` позволяют [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] устанавливать отношение между редактируемым скриптом и другими скриптами. Директива `reference` позволяет включить файл скрипта в контекст программирования текущего файла скрипта. Эта дает возможность для IntelliSense ссылаться извне на определенные функции, типы и поля в процессе программирования.

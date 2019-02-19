@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b29179332920197960ebe3be71e5973bdc8fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769455"
 ---
 # <a name="import-and-export-settings-command"></a>Импорт и экспорт параметров - команда
@@ -44,7 +44,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  Необязательный параметр. Сбрасывает текущие параметры  
   
 ## <a name="remarks"></a>Примечания  
- Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в разделе [Как Совместное использование параметров между несколькими компьютерами или версии Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Практическое руководство. Совместное использование параметров на разных компьютерах или в разных версиях Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Пример  
  Следующая команда экспортирует текущие параметры в файл `MyFile.vssettings`.  

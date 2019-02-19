@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776102"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -62,7 +62,7 @@ VSPerfCmd [/U] [/options]
 |Параметр|Описание|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *исполняемый файл*|Запускает заданное приложение и начинает профилирование.|  
-|[Args:](../profiling/args.md) **:** *аргументы*|Задает аргументы командной строки для передачи в запущенное приложение.|  
+|[Args](../profiling/args.md) **:** *аргументы*|Задает аргументы командной строки для передачи в запущенное приложение.|  
 |[Консоль](../profiling/console.md)|Запускает указанную команду в новом окне командной строки.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Начинает профилирование указанных процессов. Процессы можно задавать по идентификатору или имени процесса.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Останавливает профилирование указанных процессов. Процессы можно задавать по идентификатору или имени процесса. Если процесс не указан, профилирование останавливается для всех процессов.|  

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 22dd181a991c4c2c006335df955ba27dd4d27ce6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756415"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Сохранение и экспорт данных средств производительности
@@ -46,7 +46,7 @@ ms.locfileid: "54756415"
   
 5.  Нажмите кнопку **Сохранить**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Как выполнить экспорт отчетов средств профилирования в XML- или CSV-файлы  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Практическое руководство. Экспорт отчетов средств профилирования в XML- или CSV-файлы  
  Одно или несколько представлений отчета, созданных с использованием VSP- или VSPS-файлов, можно сохранить в файл с разделителями-запятыми или XML-файл. Перед экспортом можно выполнить фильтрацию данных в окне представления отчета, также можно выполнить экспорт представлений отчета для всего файла данных из окна **Обозреватель производительности** .  
   
 > [!NOTE]

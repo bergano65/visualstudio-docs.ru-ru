@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787096"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
@@ -74,7 +74,7 @@ ms.locfileid: "54787096"
 ## <a name="custom-template-parameters"></a>Настраиваемые параметры шаблона  
  Вы можете указать собственные параметры шаблона и значения в дополнение к зарезервированным параметрам шаблона по умолчанию, которые используются во время замены параметров. Дополнительные сведения см. в разделе [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).  
   
-## <a name="example-replacing-files-names"></a>Пример Замена имен файлов  
+## <a name="example-replacing-files-names"></a>Пример: замена имен файлов  
  Вы можете указать переменные имена файлов для элементов проекта с помощью параметра с атрибутом `TargetFileName`. Например, можно указать, что файл EXE использует имя проекта, заданное `$projectname$`, в качестве имени файла.  
   
 ```  
@@ -88,7 +88,7 @@ ms.locfileid: "54787096"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Пример Использование имени проекта в качестве имени пространства имен  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Пример: использование имени проекта в качестве имени пространства имен  
  Чтобы использовать имя проекта для пространства имен в файле класса Visual C# — Class1.cs, используйте следующий синтаксис:  
   
 ```  

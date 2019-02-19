@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834833"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
@@ -43,7 +43,7 @@ ms.locfileid: "54834833"
 1.  Найдите файл .exe, Visual Studio (например, найдите «vs_enterprise.exe»).
 
     > [!NOTE]
-    >  Файл должен находиться во вложенной папке «%programdata%\Package Cache», например: Кэш C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
+    >  Файл должен находиться во вложенной папке «%programdata%\Package Cache», например: кэш C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Запустите файл .exe с помощью / uninstall/force параметры командной строки.
 
@@ -73,7 +73,7 @@ ms.locfileid: "54834833"
 
 2. Установите или переустановите более раннюю версию Visual Studio, который вы хотите использовать.
 
-   Даже если вы установите предыдущую версию Visual Studio, программа установки может по-прежнему пытаться использовать более новую версию или выпуск, если таковой доступен. Дополнительные сведения см. в разделе [как: Установка определенного выпуска Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) раздела.
+   Даже если вы установите предыдущую версию Visual Studio, программа установки может по-прежнему пытаться использовать более новую версию или выпуск, если таковой доступен. Дополнительные сведения см. в разделе [как: установка определенного выпуска Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) раздела.
 
 ## <a name="see-also"></a>См. также раздел
  [Установка Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

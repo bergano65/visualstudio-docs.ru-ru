@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778449"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
@@ -36,10 +36,10 @@ ms.locfileid: "54778449"
  Сведения о создании настраиваемой начальной страницы для пользователя и команды см. в статье [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ### <a name="environment-color-themes"></a>Цветовые темы среды
- Чтобы изменить цветовую тему на светлую, темную или синюю, введите "environment" на панели **Быстрый запуск** и выберите **Среда | Общие**. Чтобы изменить параметры раскраски в редакторе, введите `environment` на панели **Быстрый запуск** и выберите **Среда | Шрифты и цвета**. См. также [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Чтобы изменить цветовую тему на светлую, темную или синюю, введите "environment" на панели **Быстрый запуск** и выберите **Среда | Общие**. Чтобы изменить параметры раскраски в редакторе, введите `environment` на панели **Быстрый запуск** и выберите **Среда | Шрифты и цвета**. См. [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Меню и панели инструментов
- Сведения о добавлении или удалении элементов меню или панели инструментов см. в разделе [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Регистр главного меню
  Регистр главного меню можно переключать в режимы **Начинать с прописных** и **ВСЕ ПРОПИСНЫЕ**. Для этого введите `environment` на панели **Быстрый запуск** и выберите **Среда | Общие**.

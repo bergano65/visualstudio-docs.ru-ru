@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800777"
 ---
 # <a name="securing-applications"></a>Защита приложений
@@ -30,7 +30,7 @@ ms.locfileid: "54800777"
  [Рекомендации по безопасности](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Сведения о компонентах безопасности и методах безопасной работы, доступных в Visual C++.  
   
- [НЕ В СБОРКЕ: Безопасность и программирование (C# и Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [NIB. Безопасность и программирование (C# и Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Сведения о трех главных вопросах безопасности для разработчиков Visual Basic и C#: привилегиях, веб-приложениях и установке Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Защита мобильных приложений  

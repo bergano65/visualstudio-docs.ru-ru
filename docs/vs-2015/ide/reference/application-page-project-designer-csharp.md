@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778650"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
@@ -53,7 +53,7 @@ ms.locfileid: "54778650"
 > [!NOTE]
 >  Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта следует выбрать пакеты необходимых компонентов вручную, чтобы они соответствовали новой целевой платформе.  
   
- Дополнительные сведения см. в разделе [Как Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Дополнительные сведения см. в разделах [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Тип приложения**  
  Тип приложения для сборки. Для приложений [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] можно указать **Приложение для Магазина Windows**, **Библиотека классов** или **Файл WinMD**. Для большинства других типов приложения можно указать **Приложение Windows**, **Консольное приложение**, **Библиотека классов**, **Служба Windows** или **Библиотека веб-элементов управления**.  

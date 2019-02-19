@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758474"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
@@ -54,7 +54,7 @@ ms.locfileid: "54758474"
 |CleanFile|Имя файла, который будет использоваться в качестве "средства очистки кэша". Средство очистки кэша — это список созданных файлов, которые необходимо удалить во время выполнения операции очистки. Процесс сборки помещает этот файл в промежуточную выходную папку.<br /><br /> Это свойство указывает только имена файлов, для которых отсутствует информация о пути.|  
 |CodePage|Задает кодовую страницу, используемую для всех файлов исходного кода при компиляции. Это свойство эквивалентно переключателю `/codepage` компилятора.|  
 |CompilerResponseFile|Необязательный файл ответа, который можно передавать задачам компилятора.|  
-|Конфигурация|Конфигурация, для которой выполняется сборка: "Debug" или "Release".|  
+|Параметр Configuration|Конфигурация, для которой выполняется сборка: "Debug" или "Release".|  
 |CscToolPath|Путь к csc.exe — компилятору [!INCLUDE[csprcs](../includes/csprcs-md.md)].|  
 |CustomBeforeMicrosoftCommonTargets|Имя файла проекта или файла целей, автоматически импортируемого перед импортом общих целей.|  
 |DebugSymbols|Логическое значение, указывающее, создает ли сборка символы.<br /><br /> Задание **/p:DebugSymbols=false** в командной строке отключает создание файлов символов базы данных программы (PDB).|  
@@ -67,7 +67,7 @@ ms.locfileid: "54758474"
 |DisableFastUpToDateCheck|Логическое значение, применимое только к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Диспетчер сборок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] использует процесс FastUpToDateCheck, чтобы определить, требуется ли пересобрать проект для сохранения его актуальности. Это позволяет получить результат быстрее, чем при использовании [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Задание для свойства DisableFastUpToDateCheck значения `true` позволяет обойти диспетчер сборок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и принудить его использовать [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для определения актуальности проекта.|  
 |DocumentationFile|Имя файла, создаваемого в качестве файла XML-документации. Это имя включает только имя файла и не содержит информации о пути.|  
 |ErrorReport|Указывает, как задача компилятора должна сообщать о внутренних ошибках компилятора. Допустимые значения: "prompt", "send" и "none". Это свойство эквивалентно переключателю `/errorreport` компилятора.|  
-|ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание:**  ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
+|ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание.** ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
 |FileAlignment|Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора.|  
 |FrameworkPathOverride|Задает расположение библиотек mscorlib.dll и microsoft.visualbasic.dll. Этот параметр эквивалентен переключателю `/sdkpath` компилятора vbc.exe.|  
 |GenerateDocumentation|Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|  

@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753520"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
@@ -136,7 +136,7 @@ ms.locfileid: "54753520"
   
 |Имя элемента свойства|Значение|Описание|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> — 0: открыть домашнюю страницу<br />— 1: загрузить последнее загружавшееся решение<br />— 2: показать диалоговое окно **Открытие проекта**<br />— 3: показать диалоговое окно **Создание проекта**<br />— 4: показать пустую среду<br />— 5: показать начальную страницу|  
+|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> 0: открыть домашнюю страницу<br />1: загрузить последнее загружавшееся решение<br />2: показать диалоговое окно **Открытие проекта**<br />3: показать диалоговое окно **Создание проекта**<br />4: показать пустую среду<br />5: показать начальную страницу|  
 |StartPageRSSUrl|Get/Set (String)|URL-адрес RSS-канала, используемый при запуске.|  
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Обновляет начальную страницу каждый раз по истечении интервала, заданного свойством StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (Short)|Интервал обновления начальной страницы в минутах.|  

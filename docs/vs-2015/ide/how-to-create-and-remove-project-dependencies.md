@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание и удаление зависимостей проекта | Документация Майкрософт
+title: Практическое руководство. Создание и удаление зависимостей проекта | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799776"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Как выполнить Создание и удаление зависимостей проекта
+# <a name="how-to-create-and-remove-project-dependencies"></a>Практическое руководство. Создание и удаление зависимостей проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании решения, содержащего несколько проектов, может потребоваться выполнить сначала сборку отдельных проектов для создания кода, используемого последующими проектами. Когда проект использует исполняемый код, создаваемый другим проектом, последний называется зависимостью первого. Такие отношения зависимости можно определить в диалоговом окне **Зависимости проектов**.  
@@ -66,4 +66,4 @@ ms.locfileid: "54799776"
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
  [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
- [(NIB) Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

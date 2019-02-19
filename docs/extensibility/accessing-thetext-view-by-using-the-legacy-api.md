@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979651"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335508"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Доступ к представлению текста с помощью предыдущих версий API
 Представления текста является текст, который хранится в текстовом буфере. Можно получить доступ к представление текста, используя старый API, как показано в следующем разделе.
@@ -23,7 +23,7 @@ ms.locfileid: "54979651"
 ## <a name="text-view-object"></a>Объект представления текста
  Каждое представление связан с его собственной текстового буфера, а представления — это окно на данные в буфере. На следующей схеме показаны основные интерфейсы объект представления текста, который представляется <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Объект представления текста Visual Studio](../extensibility/media/vstextview.gif "vstextview") объект представления текста
+ ![Объект представления текста Visual Studio](../extensibility/media/vstextview.gif)
 
  Это представление является способа представления текста в буфере. Он включает функции, такие как перенос по словам, а также режим структуры, отображаемые в представлении не точное представление текста в буфере.
 

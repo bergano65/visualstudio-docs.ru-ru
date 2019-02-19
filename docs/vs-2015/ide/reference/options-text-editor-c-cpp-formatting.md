@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770643"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
@@ -62,7 +62,7 @@ ms.locfileid: "54770643"
  **Выделение совпадающих лексем**  
  Когда курсор находится рядом с фигурной скобкой, редактор может выделить парную скобку, что позволяет более удобным образом просматривать содержащийся внутри код.  
   
-## <a name="outlining"></a>структуризация  
+## <a name="outlining"></a>Структуризация  
  **Переходить в режим структурирования после открытия файлов**  
  При помещении файла в текстовый редактор можно включить возможность структурирования. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md). Если выбран этот параметр, возможность структурирования будет включаться при открытии файла.  
   

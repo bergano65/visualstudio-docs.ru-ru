@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798991"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
@@ -91,7 +91,7 @@ ms.locfileid: "54798991"
      Чтобы использовать сочетание в любом контексте, выберите **Глобальная**. Вы можете выбрать любое сочетание клавиш, которое не используется в другом редакторе (например, как глобальное). В противном случае будет использование сочетание клавиш редактора.
 
     > [!NOTE]
-    >  В **глобальном** контексте невозможно назначать сочетания клавиш, включающие следующие клавиши: Печать Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, клавишу с логотипом Windows, ключ приложения, клавиши со стрелками или ввод; Num Lock, удаления или очистки на цифровой клавиатуре; или Ctrl + Alt + Delete.
+    >  В **глобальном** контексте нельзя назначать сочетания клавиш, включающие следующие клавиши: PRINT SCRN/SYS RQ, SCROLL LOCK, PAUSE/BREAK, TAB, CAPS LOCK, INSERT, HOME, END, PAGE UP, PAGE DOWN, клавиша с логотипом Windows, клавиша меню приложения, клавиши со стрелками, ВВОД, NUM LOCK, DELETE или CLEAR на цифровой клавиатуре, а также CTRL+ALT+DELETE.
 
 6.  В поле **Введите сочетание клавиш** введите требуемое сочетание клавиш.
 

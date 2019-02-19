@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775892"
 ---
 # <a name="toolbox-components-tab"></a>Вкладка "Компоненты", панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Отображает компоненты, которые можно добавить в конструкторы [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] и [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. В дополнение к компонентам [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], которые входят в состав [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], таким как <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>, на этой вкладке можно добавить собственные или сторонние компоненты. Дополнительные сведения см. в разделе [Как Управление вкладками панели элементов](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+Отображает компоненты, которые можно добавить в конструкторы [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] и [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. В дополнение к компонентам [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], которые входят в состав [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], таким как <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>, на этой вкладке можно добавить собственные или сторонние компоненты. Для получения дополнительной информации см. раздел [Практическое руководство. Управление вкладками панели элементов](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Чтобы отобразить эту вкладку, в меню **Вид** выберите пункт **Панель элементов**. В **панели элементов** выберите вкладку **Компоненты**.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "54775892"
  Создает экземпляр компонента <xref:System.Diagnostics.EventLog>, который можно использовать для взаимодействия с системой и пользовательскими журналами событий, включая запись событий в журнал и чтения данных журнала. Дополнительные сведения см. в разделе [Знакомство с компонентом EventLog](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Создает экземпляр компонента <xref:System.IO.FileSystemWatcher>, который можно использовать для отслеживания изменений в любом каталоге или файле, к которому имеется доступ. Дополнительные сведения см. в разделе [Как Настройка экземпляров компонента FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
+ Создает экземпляр компонента <xref:System.IO.FileSystemWatcher>, который можно использовать для отслеживания изменений в любом каталоге или файле, к которому имеется доступ. Дополнительные сведения см. в разделе [Практическое руководство. Настройка экземпляров компонента FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
  Создает экземпляр компонента `System.Windows.Forms.HelpProvider`, который обеспечивает для элементов управления всплывающее окно справки или окно оперативной справки.  

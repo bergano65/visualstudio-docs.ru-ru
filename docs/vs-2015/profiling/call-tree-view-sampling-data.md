@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779230"
 ---
 # <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
@@ -57,7 +57,7 @@ ms.locfileid: "54779230"
   
 ## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление в виде дерева вызовов — данные выборки профилировщика](../profiling/call-tree-view-sampling-data.md)   
+ [Call Tree View - Profiler Sampling Data](../profiling/call-tree-view-sampling-data.md)  (Представление "Дерево вызовов" — данные выборки профилировщика)  
  [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  (Представление "Дерево вызовов" — выборка)  
  [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
  [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)
