@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Поиск ключа продукта | Документация Майкрософт
+title: 'Практическое: поиск ключа продукта | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793943"
 ---
-# <a name="how-to-locate-the-visual-studio-product-key"></a>Как выполнить Поиск ключа продукта Visual Studio
+# <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ключ продукта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может понадобиться, если вы обращаетесь в службу поддержки, обновляете пробную версию или обновляете собственные записи.
@@ -35,4 +35,4 @@ ms.locfileid: "54793943"
     -   В документации или в других материалах, полученных от поставщика, у которого закуплено программное обеспечение.
 
 ## <a name="see-also"></a>См. также раздел
- [Практическое руководство. Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [установки Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio и MSDN, руководство по лицензированию](http://go.microsoft.com/fwlink/?LinkId=191417)
+ [Практическое: обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [установки Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio и MSDN, руководство по лицензированию](http://go.microsoft.com/fwlink/?LinkId=191417)
