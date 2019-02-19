@@ -1,14 +1,9 @@
 ---
 title: Визуализатор параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
 - vs.cv.overview
@@ -20,18 +15,18 @@ ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 91fd9e0872529c61ffbfee42d1f3517c106340e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23d07f3ca3585030317a97f941d2b9ca0c36f9e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733823"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779121"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ПРИМЕЧАНИЕ.]
+ПРИМЕЧАНИЕ
 >  Визуализатор параллелизма — это дополнительное расширение Visual Studio. Загрузите визуализатор параллелизма и средства сбора данных визуализатора параллелизма по следующим ссылкам:  
 > 
 > - Скачать расширение              [Визуализатор параллелизма](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  
@@ -46,9 +41,9 @@ ms.locfileid: "51733823"
 > [!NOTE]
 >  Визуализатор параллелизма не поддерживает веб-проекты.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Представление "Использование"](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|  
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|  
@@ -59,8 +54,5 @@ ms.locfileid: "51733823"
 |[Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)|Описывает, как инструментировать исходный код для отображения дополнительных сведений в визуализаторе параллелизма.|  
 |[Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Описывает, как использовать программу командной строки визуализатора параллелизма (CVCollectionCmd.exe) для сбора и обработки трассировки на компьютерах, на которых не установлена Visual Studio.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Средства профилирования](../profiling/profiling-tools.md)
-
-
-

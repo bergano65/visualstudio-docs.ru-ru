@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Устранение неполадок, связанных с шаблонами | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Устранение неполадок с шаблонами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793210"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49296430"
 5.  Убедитесь, что XML-код в файле VSTEMPLATE соответствует схеме шаблона [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Чтобы получить поддержку IntelliSense во время VSTEMPLATE-файл, добавьте `xmlns` атрибут `VSTemplate` элемент и ей присваивается значение http://schemas.microsoft.com/developer/vstemplate/2005.  
+    >  Чтобы обеспечить поддержку IntelliSense во время работы с файлом VSTEMPLATE, добавьте атрибут `xmlns` в элемент `VSTemplate` и присвойте ему значение http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Сохраните VSTEMPLATE-файл и закройте его.  
   
@@ -67,10 +62,7 @@ ms.locfileid: "49296430"
   
 4.  Дважды щелкните событие шаблона, чтобы просмотреть ошибку.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

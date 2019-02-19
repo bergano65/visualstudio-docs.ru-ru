@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780683"
 ---
 # <a name="visual-studio-ide"></a>Интегрированная среда разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +133,7 @@ Visual Studio можно использовать для создания раз
 
 8. Пункт контекстного меню **Перейти к определению** позволяет перейти непосредственно к тому месту, где определена функция или объект. Другие команды навигации также доступны по щелчку правой кнопкой мыши в редакторе.
 
-9. Связанный инструмент, [обозреватель объектов](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), позволяет исследовать сборки .NET или среды выполнения Windows в системе, просматривая содержащиеся в них типы (а также методы и свойства в этих типах).
+9. Связанный инструмент, [обозреватель объектов](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), позволяет исследовать сборки .NET или среды выполнения Windows в системе, просматривая содержащиеся в них типы (а также методы и свойства в этих типах).
 
      ![Обозреватель объектов, демонстрирующий System.Timer](../ide/media/objectbrowser.png "обозреватель_объектов")
 
@@ -157,7 +154,7 @@ Visual Studio можно использовать для создания раз
 
  [Immediate Window](../ide/reference/immediate-window.md) позволяет ввести выражение и сразу увидеть его результат.
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) регистрирует все вызовы методов и другие события в работающей программе .NET и может помочь быстро найти источник проблемы.
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) регистрирует все вызовы методов и другие события в работающей программе .NET и может помочь быстро найти источник проблемы.
 
  Дополнительные сведения см. в разделе [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -196,7 +193,7 @@ Visual Studio можно использовать для создания раз
 |||
 |-|-|
 |[Учетные записи пользователей и обновления](../ide/user-accounts-and-updates.md)|[Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Практическое руководство: Перемещение по интегрированной среде разработки](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[How to: Move Around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Практическое руководство. Перемещение по интегрированной среде разработки)|[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)|[Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Средства профилирования](../profiling/profiling-tools.md)|[Улучшение качества кода](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
@@ -206,7 +203,7 @@ Visual Studio можно использовать для создания раз
 |[Примеры Visual Studio](../ide/visual-studio-samples.md)|[Окно справки (Майкрософт)](../ide/microsoft-help-viewer.md)|
 |[Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)|[Справочник по пользовательскому интерфейсу](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Установка Visual Studio 2015](../install/install-visual-studio-2015.md)
 - [Редактирование своего кода](https://www.visualstudio.com/features/ide-vs)

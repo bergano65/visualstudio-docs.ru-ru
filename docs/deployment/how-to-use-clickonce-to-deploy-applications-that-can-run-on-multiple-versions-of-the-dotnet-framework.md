@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790864b44725287774b4ed3d0eefe2cfa9821179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975443"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Как выполнить использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.  
   
 > [!NOTE]
@@ -58,10 +58,10 @@ ms.locfileid: "53943120"
     |Версия платформы .NET Framework|XML|  
     |----------------------------|---------|  
     |4 Client|\<Framework targetVersion = «4.0» profile = supportedRuntime «Клиент» = «4.0.30319 необходимо» / >|  
-    |4 Full|\<Framework targetVersion = «4.0» profile = «Full» supportedRuntime = «4.0.30319 необходимо» / >|  
+    |4 Full|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|  
     |3.5 Client|\<Framework targetVersion = «3.5» profile = supportedRuntime «Клиент» = «2.0.50727» / >|  
-    |3.5 Full|\<Framework targetVersion = «3.5» profile = «Full» supportedRuntime = «2.0.50727» / >|  
-    |3.0|\<Framework targetVersion = «3.0» supportedRuntime = «2.0.50727» / >|  
+    |3.5 Full|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework  
   
@@ -74,9 +74,9 @@ ms.locfileid: "53943120"
     |Версия среды выполнения .NET framework|XML|  
     |------------------------------------|---------|  
     |4 Client|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0, профиль клиента =» / >|  
-    |4 Full|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0» / >|  
-    |3.5 Full|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 Client|\<версия supportedRuntime = sku «v2.0.50727» = «Client» / >|  
+    |4 Full|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 Full|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Для изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework  
   
@@ -100,7 +100,7 @@ ms.locfileid: "53943120"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов  
   
--   Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Обновление и повторное подписание манифестов приложения и развертывания. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   

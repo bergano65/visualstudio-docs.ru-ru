@@ -1,25 +1,20 @@
 ---
 title: Руководство по окну справки для администраторов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799709"
 ---
 # <a name="help-viewer-administrator-guide"></a>Руководство администратора Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49871294"
 ## <a name="deploying-local-help-content-from-the-internet"></a>Развертывание локального содержимого справки из Интернета  
  Можно использовать службу пакетов содержимого MSDN для локального развертывания содержимого справки из Интернета на клиентских компьютерах. Используется следующий синтаксис:  
   
- \\<*путь к*> \v2.2\HlpCtntmgr.exe /operation \< *имя*>/CatalogName \< *имя каталога*>/locale \<  *языковой стандарт*>  
+ \\<*путь к*>\v2.2\HlpCtntmgr.exe /operation \<*имя*> /catalogname \<*имя каталога*> /locale \<*языковой стандарт*>  
   
  Дополнительные сведения о синтаксисе командной строки HlpCtntMgr.exe см. в разделе [Аргументы командной строки диспетчера содержимого справки](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
@@ -100,13 +95,13 @@ ms.locfileid: "49871294"
   
 1. В средстве просмотра справки выберите вкладку **Управление содержимым**.  
   
-2. В разделе **доступная документация**, перейдите к набору документов Visual Studio.  
+2. В разделе **Доступная документация** перейдите к набору документов по Visual Studio.  
   
 3. Нажмите кнопку **Удалить** рядом с каждым вложенным элементом.  
   
-4. Выберите **запустить** для удаления  
+4. Выберите **Запуск**, чтобы удалить  
   
-5. Перейдите к *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 и убедитесь, что папка содержит только файл catalogType.xml.  
+5. Перейдите в папку *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 и убедитесь, что папка содержит только файл catalogType.xml.  
   
    После удаления всего ранее установленного локального содержимого справки Visual Studio можно загрузить базовый набор содержимого.  
   
@@ -114,7 +109,7 @@ ms.locfileid: "49871294"
   
 1. В средстве просмотра справки выберите вкладку **Управление содержимым**.  
   
-2. В разделе **доступная документация**, перейдите к наборам документации, необходимо загрузить, а затем выберите **добавить**.  
+2. В разделе **Доступная документация** перейдите к наборам документации, которые требуется загрузить, и затем выберите **Добавить**.  
   
 3. Щелкните **Start**.  
   
@@ -132,7 +127,7 @@ ms.locfileid: "49871294"
   
 4.  Введите следующее:  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *foldername*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*имя_папки*>\ /y /e /k /o  
   
      Пример: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
@@ -142,7 +137,7 @@ ms.locfileid: "49871294"
   
 1.  Создайте сетевую папку и скопируйте содержимое справки в это место.  
   
-     Например, скопируйте его содержимое из c:\VS12Help в \\\myserver\VS12Help.  
+     Например, скопируйте содержимое из c:\VS12Help в \\\myserver\VS12Help.  
   
 2.  Создайте BAT-файл, чтобы поместить в него скрипт развертывания для содержимого справки. Поскольку у клиента может быть установлена блокировка чтения на какой-либо из файлов, удаляемых в рамках принудительной установки, необходимо завершить работу клиента, прежде чем принудительно устанавливать обновления.  
   
@@ -206,9 +201,6 @@ ms.locfileid: "49871294"
   
 3.  Запустите BAT-файл на локальных компьютерах, на которых требуется установить содержимое справки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Аргументы командной строки для диспетчера содержимого справки](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Переопределение диспетчера содержимого справки](../ide/help-content-manager-overrides.md)
-
-
-

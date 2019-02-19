@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002537"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Наблюдать за переменными с помощью окна контрольных значений и "Быстрая проверка" 
 
@@ -30,7 +30,7 @@ ms.locfileid: "54204473"
 
 **Контрольные значения** windows может выводиться несколько переменных во время во время отладки. **"Быстрая проверка"** диалоговое окно отображает одну переменную в момент времени и должны быть закрыты перед продолжением отладки.
 
-Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
+Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [отладки для начинающих](../debugger/debugging-absolute-beginners.md) и [методик и средств отладки](../debugger/write-better-code-with-visual-studio.md) прежде чем приступить к этой статье.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Наблюдать за переменными в окне контрольных значений
 
@@ -280,5 +280,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>См. также
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [окна отладчика](../debugger/debugger-windows.md)

@@ -32,7 +32,7 @@ ms.locfileid: "54755238"
   
 -   [\<Рекомендуется использовать >](../ide/deprecated-javascript.md)  
   
--   [\<Field>](../ide/field-javascript.md)  
+-   [\<field>](../ide/field-javascript.md)  
   
 -   [\<Loc >](../ide/loc-javascript.md)  
   

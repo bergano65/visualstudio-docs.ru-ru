@@ -1,14 +1,9 @@
 ---
 title: Переопределение параметров ToolsVersion | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
@@ -16,13 +11,13 @@ ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2a4e3485b09780490a9d589766eeed85e6b84e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770714"
 ---
 # <a name="overriding-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49277723"
 3.  Задав свойство `$(ProjectToolsVersion)` для проекта в решении. Это позволяет собирать проект в решении с версией набора инструментов, отличающейся от используемой в других проектах.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion проектов и решений в сборках из командной строки  
- Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `/ToolsVersion` (или `/tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Пример:  
+ Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `/ToolsVersion` (или `/tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Например:  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
@@ -116,7 +111,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 5.  Если задана переменная среды `MSBUILDLEGACYDEFAULTTOOLSVERSION` или если не задан параметр `ToolsVersion`, используются следующие действия.  
   
-    1.  Атрибут `ToolsVersion` элемента [Project](../msbuild/project-element-msbuild.md) в файле проекта. Если этот атрибут не существует, то предполагается, что оно является текущей версии.  
+    1.  Атрибут `ToolsVersion` элемента [Project](../msbuild/project-element-msbuild.md) в файле проекта. Если этот атрибут не существует, предполагается, что используется текущая версия.  
   
     2.  Версия набора инструментов, заданная по умолчанию в файле MSBuild.exe.config.  
   
@@ -132,11 +127,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4.  В противном случае используйте текущий параметр `ToolsVersion`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)
-
-
-

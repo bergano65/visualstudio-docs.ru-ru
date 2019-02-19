@@ -1,14 +1,9 @@
 ---
 title: Фрагменты кода Visual C# | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787109"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49297418"
 |класс|Создает объявление класса.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |ctor|Создает конструктор для включающего класса.|Внутри класса.|  
 |cw|Создает вызов <xref:System.Console.WriteLine%2A>.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|do|Создает [сделать](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` цикла.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|do|Создает цикл [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |else|Создает [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |перечисление|Создает объявление типа [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |equals|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|  
@@ -80,13 +75,10 @@ ms.locfileid: "49297418"
 |использование|Создает директиву [using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|Внутри пространства имен (включая глобальное пространство имен).|  
 |while|Создает цикл [while](http://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Функции фрагмента кода](../ide/code-snippet-functions.md)   
  [Фрагменты кода](../ide/code-snippets.md)   
- [Практическое руководство. Создание нового фрагмента кода с подстановочными параметрами](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Практическое руководство. Создание нового фрагмента кода с помощью замены](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Параметры шаблона](../ide/template-parameters.md)   
- [Практическое: Использование окружающих фрагментов кода](../ide/how-to-use-surround-with-code-snippets.md)   
- [Практическое руководство. Восстановление фрагментов кода для оптимизации в C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Практическое руководство. Использование окружающих фрагментов кода](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Практическое руководство. Восстановление C# фрагментов кода для оптимизации](../ide/how-to-restore-csharp-refactoring-snippets.md)

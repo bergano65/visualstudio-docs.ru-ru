@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941077"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995691"
 ---
 # <a name="application-deployment-prerequisites"></a>Обязательные требования к развертыванию приложений
 
@@ -45,10 +45,10 @@ ms.locfileid: "53941077"
 
 - Минимальная версия все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC), как указано в декларации зависимости от сборки в манифесте сборки.  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] позволяет определить недостающие необходимые компоненты, после чего вы сможете установить необходимые компоненты с помощью начальной загрузки. Дополнительные сведения см. в разделе [Как устанавливать необходимые компоненты для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] позволяет определить недостающие необходимые компоненты, после чего вы сможете установить необходимые компоненты с помощью начальной загрузки. Дополнительные сведения см. в разделе [как: Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
 
 > [!NOTE]
->  Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и *MageUI.exe*, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и *MageUI.exe*, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
 
  Если для развертывания приложения используются Visual Studio и ClickOnce, то выбираемые по умолчанию пакеты начального загрузчика будут зависеть от версии .NET Framework в решении. В случае изменения целевой версии .NET Framework необходимо будет обновить параметры в диалоговом окне **Необходимые компоненты** вручную.  
 
@@ -76,9 +76,9 @@ ms.locfileid: "53941077"
 | - | - |
 | **-?, -h, -help** | Открывает диалоговое окно "Справка". |
 | **-URL-адрес, - componentsurl** | Показывает сохраненный URL и URL-адреса компонентов для этой установки. |
-| **-URL-адрес =** `location` | Настраивает URL на то место, где *Setup.exe* будет искать приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
+| **-url=** `location` | Настраивает URL на то место, где *Setup.exe* будет искать приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
 | **-componentsurl =** `location` | Настраивает URL на то место, где *Setup.exe* будет искать зависимости, такие как [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Когда `true`, то зависимости загружаются из предпочтительного источника на сайте поставщика. Этот параметр переопределяет **- componentsurl** параметр. Когда `false`, то зависимости загружаются по URL-адрес, определяемое **- componentsurl**. |
+| **-homesite=** `true` **&#124;** `false` | Когда `true`, то зависимости загружаются из предпочтительного источника на сайте поставщика. Этот параметр переопределяет **- componentsurl** параметр. Когда `false`, то зависимости загружаются по URL-адрес, определяемое **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Поддержка операционной системой  
  Начальный загрузчик Visual Studio не поддерживается на основных серверных компонентов Windows Server 2008 или Windows Server 2008 R2 Server Core, поскольку они предоставляют незначительную поддержку серверной среды с ограниченной функциональностью. Например вариант установки Server Core поддерживает только профиль .NET Framework 3.5 Server Core, который не удается запустить средства Visual Studio, которые зависят от полной версии платформы .NET Framework.  

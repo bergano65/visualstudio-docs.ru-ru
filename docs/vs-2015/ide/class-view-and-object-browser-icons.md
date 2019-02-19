@@ -1,14 +1,9 @@
 ---
 title: Значки представления классов и обозревателя объектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785053"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Класс представления ** и **обозреватель объектов** отображать значки, представляющие сущности кода, например, пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.  
+Представление классов** и **обозреватель объектов** отображают значки, представляющие сущности кода, например пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.  
   
 |Значок|Описание|Значок|Описание|  
 |----------|-----------------|----------|-----------------|  
@@ -66,8 +61,5 @@ ms.locfileid: "49279744"
 |![Сигнальный символ "Дружественный&#47;внутренний"](../ide/media/vxsignal-icon-diamond.gif "vxSignal_Icon_Diamond")|Дружественный/внутренний. Доступен только из проекта.|  
 |![Сигнальный символ "Стрелка"](../ide/media/vxsignal-icon-arrow.gif "vxSignal_Icon_Arrow")|Ярлык. Ярлык объекта.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Просмотр структуры кода | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801216"
 ---
 # <a name="viewing-the-structure-of-code"></a>Просмотр структуры кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49901649"
   
  [Окно определения кода (C#, C++)](#BKMK_CodeDefinition)  
   
- Можно также использовать **обозревателе решений** для просмотра типов и элементов в проекте, поиска символов, просматривать иерархию вызовов метода, поиска ссылок на символы и многое другое без переключения между окнами инструментов в списке ранее.  
+ Вы также можете использовать **обозреватель решений** для просмотра типов и элементов в проекте, поиска символов, просмотра иерархии вызовов метода, поиска ссылок на символы и для других действий без переключения между указанными выше окнами инструментов.  
   
  Работая в Visual Studio Enterprise, вы можете использовать карты кода для визуализации структуры кода и его зависимостей по всему решению и детализировать интересующую вас часть кода. Дополнительные сведения см. в разделе [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md).  
   
@@ -227,8 +222,5 @@ ms.locfileid: "49901649"
 ### <a name="document-outline-window"></a>Окно структуры документа  
  Вы можете использовать окно **Структура документа** совместно с представлениями конструктора, такими как конструктор для XAML-страницы или конструктор Windows Form, либо совместно с HTML-страницами. В этом окне элементы отображаются в виде дерева, благодаря чему можно просматривать логическую структуру формы или страницы и отыскивать элементы управления, скрытые или расположенные глубоко в иерархии.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Значки представления классов и обозревателя объектов](../ide/class-view-and-object-browser-icons.md)
-
-
-

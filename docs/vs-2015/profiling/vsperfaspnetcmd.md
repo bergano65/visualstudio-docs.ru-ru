@@ -1,14 +1,9 @@
 ---
 title: VSPerfASPNetCmd | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,13 +11,13 @@ ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 07c460020595d3b951aa7c5737e37499da7daa7f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9cb81f17abd1e7891dc3f78a85d6d1276991f070
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762999"
 ---
 # <a name="vsperfaspnetcmd"></a>Средство VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "52281775"
   
 ## <a name="options"></a>Параметры  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |------------|-----------------|  
 |**/Sample** или **/s**|Профилирует веб-сайт с использованием метода выборки. Метод **/Sample** используется по умолчанию. /Sample не может использоваться в сочетании с **/Trace**.|  
 |**/Trace** или **/t**|Профилирует веб-сайт с использованием метода инструментирования. /Trace не может использоваться в сочетании с **/Sample**.|  
@@ -42,13 +37,10 @@ ms.locfileid: "52281775"
 |**/Tip** или **/i**|Добавляет в данные профилирования подробные данные о запросе ASP.NET и вызове ADO.NET. **/Tip** можно использовать совместно с методами выборки или инструментирования, а также в сочетании с параметром **/Memory**.|  
 |**/Output:** `File` или **/o:**`File`|Указывает имя и расположение для файла данных профилирования (VSP-файла).|  
 |**/NoWait** или **/n**|Немедленно возвращает управление в командную строку, что позволяет выполнять дополнительные команды. В этом случае, чтобы отключить профилирование, выполните команду **VSPerfASPNETCmd/Shutdown** в отдельной строке.|  
-|**/PackSymbols**[:{**on**&#124;**off**} или **/p**[:{**on**&#124;**off**}|Встраивает символы (имена функций и параметров, и т.д.) в файл данных (VSP) профилирования.|  
+|**/PackSymbols**[:{**on**&#124;**off**} или **/p**[:{**on**&#124;**off**}|Встраивает символы (имена функций, параметров и т. д.) в файл данных профилирования (VSP-файл).|  
 |**/Shutdown:** `Website`или **/d:**`Website`|Отключает профилирование. Этот параметр должен быть единственным в командной строке. Он используется, если профилирование запущено с параметром **/nowait** или профилировщик неожиданно завершил работу. Укажите тот же URL-адрес, который использовался в исходной команде **VSPerfASPNETCmd**.|  
 |`Website`|URL-адрес веб-сайта для профилирования.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)  (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd)  
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-
-
-

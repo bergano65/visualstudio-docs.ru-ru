@@ -44,10 +44,10 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  Имя корневой папки для имени файла журнала.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> с установленным битом SUCCEEDED, если контекст отслеживания был создан.  
+ [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с установленным битом [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->), если контекст отслеживания был создан.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок.** FileTracker.h  
+ **Заголовок:** FileTracker.h  
   
 ## <a name="see-also"></a>См. также раздел  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

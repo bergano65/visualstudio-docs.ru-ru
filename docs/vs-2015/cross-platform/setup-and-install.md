@@ -1,21 +1,17 @@
 ---
 title: Настройка и установка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781713"
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +59,7 @@ ms.locfileid: "51730412"
 > [!TIP]
 >  Эти инструкции предназначены для Visual Studio 2015. Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
-1. [Скачать и запустить установщик для любого выпуска Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional или Enterprise). Visual Studio 2015 Community — это бесплатный выпуск; выпуски Professional и Enterprise можно использовать для ознакомления в течение 30 дней, после чего необходимо приобрести лицензию.  
+1. [Скачать и запустить установщик для любого выпуска Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional или Enterprise). Visual Studio 2015 Community — это бесплатный выпуск; выпуски Professional и Enterprise можно использовать для ознакомления в течение 30 дней, после чего необходимо приобрести лицензию.  
   
    1.  Если уже установлено приложение Visual Studio, откройте **"Панель управления" > "Программы и компоненты"**, выберите **Visual Studio 2015** и щелкните **Изменить**. Когда откроется установщик, щелкните **Изменить** и перейдите к шагу 3 ниже.  
   
@@ -77,7 +73,7 @@ ms.locfileid: "51730412"
   
         ![Выбор параметра "Xamarin" в разделе разработки кросс&#45;платформенных мобильных приложений](../cross-platform/media/cross-plat-xamarin-setup-2.png "Кросс-платформенная установка Xamarin 2")  
   
-   2.  Для Windows 8 и более поздних версий: **"Разработка кросс-платформенных мобильных приложений" > "Эмулятор Microsoft Visual Studio для Android"**. Примечание. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, убедитесь, что этот флажок *снят*. После шага 5 см. примечание об эмуляторах на компьютерах Windows. Вы также можете оставить этот флажок снятым, если собираетесь выполнять отладку только на физических устройствах Android.  
+   2.  Для Windows: **Кросс платформенной мобильной разработки > Microsoft Visual Studio Emulator для Android**. Примечание. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, убедитесь, что этот флажок *снят*. После шага 5 см. примечание об эмуляторах на компьютерах Windows. Вы также можете оставить этот флажок снятым, если собираетесь выполнять отладку только на физических устройствах Android.  
   
    3.  (Необязательно.) При разработке ПО для устройств Windows также установите флажок **"Разработка приложений для Windows и веб-приложений" > "Средства разработки универсальных приложений Windows"** и (или) **Средства Windows 8.1 и Windows Phone 8.0/8.1**. При этом будут установлены образы эмуляторов, из-за чего потребуется больше времени для скачивания данных; в установщик Visual Studio всегда можно вернуться, чтобы добавить их позже.  
   
@@ -94,11 +90,11 @@ ms.locfileid: "51730412"
       
 6. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, при отсутствии физических устройств используйте [эмулятор SDK Android](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/). См. примечание ниже.  
   
-   **Примечание об эмуляторах на компьютерах Windows.** Так как процессоры поддерживают только одну технологию виртуализации одновременно, рекомендуется использовать только одну из них на компьютере, на котором ведется разработка. Существует три основных технологии виртуализации: Hyper-V (используется эмулятором Visual Studio для Android и эмулятором Windows Phone), Virtual Box (используется Genymotion) и Intel HAXM (используется эмулятором пакета SDK для Android). Из-за различных проблем между Hyper-V и Virtual Box лучше использовать эмуляторы только одного типа для конкретного компьютера, поэтому выше даются рекомендации использовать Hyper-V на компьютерах под управлением Windows 8 и более поздних версий и эмуляторы Intel HAXM на компьютерах под управлением Windows 7 и более ранних версий, а также при запуске Windows на Mac.  
+   **Примечание об эмуляторах на Windows компьютеров:** Так как процессоры поддерживают только одну технологию виртуализации одновременно, рекомендуется использовать только одну из них на компьютере разработчика. Существует три основных технологии виртуализации: Hyper-V (используется эмулятором Visual Studio для Android и эмулятором Windows Phone), Virtual Box (используется Genymotion) и Intel HAXM (используется эмулятором пакета SDK для Android). Из-за различных проблем между Hyper-V и Virtual Box лучше использовать эмуляторы только одного типа для конкретного компьютера, поэтому выше даются рекомендации использовать Hyper-V на компьютерах под управлением Windows 8 и более поздних версий и эмуляторы Intel HAXM на компьютерах под управлением Windows 7 и более ранних версий, а также при запуске Windows на Mac.  
   
 ##  <a name="mac"></a> Настройка Mac (Apple ID, Xcode и Xamarin)  
   
-1.  Создайте бесплатный идентификатор Apple ID в [ https://appleid.apple.com ](https://appleid.apple.com/) Если вы не сделали. Это необходимо для установки приложения Xcode и входа в него.  
+1.  Создайте бесплатный идентификатор Apple ID в разделе [https://appleid.apple.com](https://appleid.apple.com/), если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.  
   
 2.  Скачайте и установите Xcode на странице [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) и добавьте ваш идентификатор Apple ID, как описано в разделе [Добавление учетной записи для XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  
   
@@ -107,4 +103,3 @@ ms.locfileid: "51730412"
 4.  После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com), чтобы обеспечить возможность работы с iOS и Mac из Visual Studio на компьютере под управлением Windows.  
   
      Обратите внимание, что оба компьютера должны находиться в одной локальной сети.
-

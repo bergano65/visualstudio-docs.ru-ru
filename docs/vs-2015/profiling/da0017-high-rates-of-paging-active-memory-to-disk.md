@@ -1,14 +1,9 @@
 ---
 title: 'DA0017: высокая скорость подкачки активной памяти на диск | Документы Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -17,13 +12,13 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a7fbe924ee3d0f5dbd142d8e7f7020c6eed1ee5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803492"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: высокая скорость подкачки активной памяти на диск
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766594"
 ИД правила | DA0017 |  
 | Категория | Памяти и подкачки |  
 | Метод профилирования | Все |  
-| Сообщение | Высокая частота подкачки активной памяти на диск происходит. Возможно, привязанной к памяти вашего приложения. |  
+| Сообщение | Высокая частота подкачки активной памяти на диск происходит. Возможно, память вашего приложения ограничена.|  
 | Тип правила | Сведения |  
   
  При профилировании с помощью выборки, памяти .NET или методов разрешения конфликтов ресурсов необходимо собрать минимум 10 выборок, чтобы активировать это правило.  
@@ -54,6 +49,3 @@ ms.locfileid: "51766594"
  При сборе данных профилирования для приложения ASP.NET в сценарии нагрузочного тестирования попробуйте снова выполнить нагрузочный тест на компьютере, оснащенном дополнительным объемом физической памяти (ОЗУ).  
   
  Рекомендуется сократить объем выделяемой памяти, изменив алгоритмы и избегая использования ресурсоемких API, таких как String.Concat и String.Substring.
-
-
-

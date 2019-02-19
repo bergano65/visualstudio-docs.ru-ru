@@ -1,14 +1,9 @@
 ---
 title: Устранение неполадок средства просмотра справки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: troubleshooting
 helpviewer_keywords:
 - troubleshooting [Help Viewer 2.0]
 - Help Viewer 2.0, troubleshooting
@@ -16,13 +11,13 @@ ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774605"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Устранение неполадок средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,8 +49,5 @@ ms.locfileid: "49934240"
   
 - Дополнительные сведения см. в разделе [Документация разработчика и справочная система](http://go.microsoft.com/fwlink/?LinkId=232741) форум и [помощник](http://go.microsoft.com/fwlink/?LinkId=232743) блога.  
   
-## <a name="see-also"></a>См. также  
- [Руководство администратора Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
-
-
-
+## <a name="see-also"></a>См. также раздел  
+ [Руководство администратора Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

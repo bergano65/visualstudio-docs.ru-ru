@@ -1,5 +1,5 @@
 ---
-title: 'Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт'
+title: Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,7 +16,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54801717"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.  
@@ -96,7 +96,7 @@ ms.locfileid: "54801717"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> можно создать путем вызова статического метода <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> можно создать путем вызова статического метода [EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->). Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   

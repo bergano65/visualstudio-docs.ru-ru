@@ -56,11 +56,10 @@
 ## [Публикация в службу приложений Azure](publish-app-svc.md)
 ## [Публикация в папку](publish-folder.md)
 
-
 # [Рабочие нагрузки](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [JavaScript](javascript.md)
+### [JavaScript и TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Введение в функции Azure](azure-functions.md)
 ### [Учебник. Функции Azure](azure-functions-lab.md)

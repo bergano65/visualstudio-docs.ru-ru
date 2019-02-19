@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829648"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919556"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Указывает целевой регистра.  
@@ -409,34 +409,34 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Элементы  
- CV_REG_ *  
+ CV_REG_*  
  Регистры, используемые Intel 80 x 86 и ix86 процессоров и p кода.  
   
- CV_R68_ *  
+ CV_R68_*  
  Регистры, процессор 68 КБ.  
   
- CV_M4_ *  
+ CV_M4_*  
  Регистры, процессор серии 4000 MIP-ОБЪЕКТЫ.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Регистры, процессор серии Digital Equipment Corporation Alpha AXP.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Регистры, используется процессором PowerPC Motorola/IBM.  
   
  CV_SH3_ * и CV_SH_\*  
  Регистры, процессор серии Hitachi SH3 и Hitachi SH.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Регистры, используемые процессорами Advanced RISC Machine (ARM).  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Регистры, используемые процессорами серии Intel® IA64.  
   
  CV_TRI_ *  
  Регистры, процессор TriCore Infineon технологий.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Регистры используется Matsushita/Panasonic AM33 и связанные с процессорами.  
   
  CV_M32R_ *  

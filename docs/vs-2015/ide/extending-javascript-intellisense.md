@@ -1,14 +1,9 @@
 ---
 title: Расширение IntelliSense для JavaScript | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797451"
 ---
 # <a name="extending-javascript-intellisense"></a>Расширение IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 |Функция|Описание|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Добавляет обработчик событий для события IntelliSense.<br /><br /> `type` — Это строковое значение. Допустимые значения: `statementcompletion`, `signaturehelp`, и `statementcompletionhint`.<br /><br /> `handler` Представляет функцию обработчика событий, получающий объект события одного из следующих типов:<br /><br /> -   `CompletionEvent`, используемый для `statementcompletion` событий.<br />-   `SignatureHelpEvent`, используемый для `signaturehelp` событий.<br />-   `CompletionHintEvent`, используемый для `statementcompletionhint` событий.<br /><br /> Примеры, использующие эту функцию, см. в разделе [примеры кода](#CodeExamples).|  
+|`addEventListener(type, handler);`|Добавляет обработчик событий для события IntelliSense.<br /><br /> `type` — Это строковое значение. Допустимые значения: `statementcompletion`, `signaturehelp` и `statementcompletionhint`.<br /><br /> `handler` Представляет функцию обработчика событий, получающий объект события одного из следующих типов:<br /><br /> -   `CompletionEvent`, используемый для `statementcompletion` событий.<br />-   `SignatureHelpEvent`, используемый для `signaturehelp` событий.<br />-   `CompletionHintEvent`, используемый для `statementcompletionhint` событий.<br /><br /> Примеры, использующие эту функцию, см. в разделе [примеры кода](#CodeExamples).|  
 |`annotate(obj, doc);`|Указывает документацию для объекта путем копирования комментарии от одного объекта к другому объекту.<br /><br /> `obj` Указывает объект, для которого необходимо скопировать в документации.<br /><br /> `doc` Указывает объект, из которого необходимо скопировать в документации.<br /><br /> Пример, в котором показано, как использовать эту функцию, см. в разделе [Добавление заметок IntelliSense](#Annotations).|  
 |`getFunctionComments(func);`|Возвращает комментарии для указанной функции.<br /><br /> `func` Указывает функцию, для которого возвращаются комментарии.<br /><br /> Можно задать `func` параметра с помощью `completionItem.value`.<br /><br /> Возвращенный `functionComments` объект содержит следующие элементы: `above`, `inside`, и `paramComment`. Дополнительные сведения см. в разделе [functionComments свойство](#FunctionComments) свойство.<br /><br /> `getFunctionComments` можно вызвать только из одного из обработчиков событий, зарегистрированных `addEventListener`.<br /><br /> Пример, в котором показано, как использовать эту функцию, см. в разделе \\ \\ *путь установки Visual Studio*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Отправляет диагностические сообщения в окне вывода.<br /><br /> `msg` — Это строка, содержащая сообщение.<br /><br /> Пример, в котором показано, как использовать эту функцию, см. в разделе [отправка сообщений в окно вывода](#Logging).|  
@@ -550,9 +545,6 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      ![Пример переопределения результатов IntelliSense](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IntelliSense для JavaScript](../ide/javascript-intellisense.md)   
  [Завершение операторов с использованием идентификаторов](../ide/statement-completion-for-identifiers.md)
-
-
-

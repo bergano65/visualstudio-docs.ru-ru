@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Создание фрагмента кода | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание фрагмента кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,18 +15,18 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790117"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Можно добавить фрагмент в папку установки Visual Studio с помощью кнопки импорта на диспетчере фрагментов кода (**инструменты/Диспетчер фрагментов кода**).  
+Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Вы можете добавить фрагмент в папку установки Visual Studio с помощью кнопки "Импорт" в диспетчере фрагментов кода (**Сервис/Диспетчер фрагментов кода**).  
   
 > [!TIP]
 >  Сведения о способах написания фрагментов кода проще, поиск на веб-сайте CodePlex средства сообщества, например [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
@@ -78,7 +73,7 @@ ms.locfileid: "49267752"
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Добавление фрагмента кода в Visual Studio  
   
-1.  Вы можете добавлять собственные фрагменты в установку Visual Studio с помощью диспетчера фрагментов кода. Откройте диспетчер фрагментов кода (**инструменты/Диспетчер фрагментов кода**).  
+1.  Вы можете добавлять собственные фрагменты в установку Visual Studio с помощью диспетчера фрагментов кода. Откройте диспетчер фрагментов кода (**Сервис/Диспетчер фрагментов кода**).  
   
 2.  Нажмите кнопку **Импорт**.  
   
@@ -266,8 +261,5 @@ ms.locfileid: "49267752"
   
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)
-
-
-

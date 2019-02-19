@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание шаблонов элементов | Документы Майкрософт
-ms.custom: ''
+title: Как выполнить Создание шаблонов элементов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788253"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,9 +155,9 @@ ms.locfileid: "49863637"
   
 7.  В проводнике Windows выберите файлы, которые нужно включить в шаблон, щелкните выбранное правой кнопкой мыши, выберите пункт "Отправить" и затем пункт "Сжатая ZIP-папка". Выбранные файлы будут сжаты в ZIP-файл.  
   
-8.  Скопируйте ZIP-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. В Visual Studio 2015 каталогом по умолчанию является... \Users\\< имя пользователя\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе "Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов".  
+8.  Скопируйте ZIP-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. В Visual Studio 2015 каталогом по умолчанию является \Users\\<имя_пользователя\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе "Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

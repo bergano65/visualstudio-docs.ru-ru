@@ -1,14 +1,9 @@
 ---
 title: Задача GenerateResource | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796910"
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +57,11 @@ ms.locfileid: "49212502"
 |`StronglyTypedNamespace`|Необязательный параметр `String` .<br /><br /> Указывает пространство имен, используемое в создаваемом источнике класса для строго типизированного ресурса. Если этот параметр не указан, все строго типизированные ресурсы находятся в глобальном пространстве имен.|  
 |`TLogReadFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания чтения.|  
 |`TLogWriteFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания записи.|  
-|`ToolArchitecture`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
+|`ToolArchitecture`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
 |`TrackerFrameworkPath`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению .NET Framework, содержащему FileTracker.dll.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла FileTracker.dll соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии .NET Framework.|  
 |`TrackerLogDirectory`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает промежуточный каталог, в котором будут размещены журналы отслеживания для выполнения этой задачи.|  
 |`TrackerSdkPath`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению Windows SDK, содержащему Tracker.exe.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла Tracker.exe соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии Windows SDK.|  
-|`TrackFileAccess`|Необязательный [логическое значение] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
+|`TrackFileAccess`|Необязательный [логический] параметр (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
 |`UseSourcePath`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задается каталог входного файла, который должен использоваться для разрешения относительных путей к файлам.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -94,14 +89,11 @@ ms.locfileid: "49212502"
  Предположим, что сборка называется myAssembly, а в следующем коде создается внедренный ресурс с именем someQualifier.someResource.resources:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Без метаданных \<LogicalName> ресурс будет называться myAssembly.myResource.resources.  Этот пример применяется только к процессу сборки Visual Basic и Visual C#.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

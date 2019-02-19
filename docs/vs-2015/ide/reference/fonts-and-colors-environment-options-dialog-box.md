@@ -236,4 +236,4 @@ ms.locfileid: "54761631"
 ## <a name="see-also"></a>См. также раздел  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)   
  [Диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Практическое руководство. изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

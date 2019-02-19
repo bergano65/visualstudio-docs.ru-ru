@@ -1,25 +1,20 @@
 ---
 title: Использование сети | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759913"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51726851"
   
 1. Откройте проект в Visual Studio.  
   
-2. В меню выберите **Отладка, Профилировщик производительности**. Выберите Сеть и нажмите кнопку **Запуск**.  
+2. В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
   
 3. Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
   
@@ -78,10 +73,7 @@ ms.locfileid: "51726851"
   
 3.  Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Запуск средств профилирования без отладки](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Блог о Visual Studio: Знакомство с Visual Studio в инспектор сети](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: Средства диагностики VS — новый профилировщик сети)
-
-
-

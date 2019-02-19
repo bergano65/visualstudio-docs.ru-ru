@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Количество потоков для использования.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> с установленным битом SUCCEEDED, если счетчик потоков был обновлен.  
+ [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с установленным битом [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->), если счетчик потоков был обновлен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок.** FileTracker.h
+ **Заголовок:** FileTracker.h

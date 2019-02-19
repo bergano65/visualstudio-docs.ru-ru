@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e3ec71123cd03c8b5b431d8b8dd6042a610bad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d2d60113e3020e92d44cb45727ac1d422745f03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934561"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943095"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Использование точек останова в отладчике Visual Studio
 Точки останова являются одним из самых важных технологий отладки в панели инструментов для разработчиков. Установите точки останова, везде, где требуется приостановить выполнение отладчика. Например может потребоваться см. в разделе состояние переменных кода или просмотреть стек вызовов в точке останова определенных. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md).
@@ -294,7 +294,7 @@ ms.locfileid: "53934561"
    - **$CALLER** -имя вызывающей функции  
    - **$CALLSTACK** -стек вызовов 
    - **$FUNCTION** -имя текущей функции  
-   - **$PID** -идентификатор процесса  
+   - **$PID** — идентификатор процесса  
    - **$PNAME** -имя процесса  
    - **$TID** -идентификатор потока  
    - **$TNAME** -имя потока  
