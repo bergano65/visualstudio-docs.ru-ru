@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986557"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках в редакторе кода
 
-Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
+Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [отладки для начинающих](../debugger/debugging-absolute-beginners.md) и [методик и средств отладки](../debugger/write-better-code-with-visual-studio.md) прежде чем приступить к этой статье.
   
 ## <a name="work-with-datatips"></a>Работа с подсказок по данным
 
@@ -124,7 +124,7 @@ ms.locfileid: "54204405"
 
 ## <a name="see-also"></a>См. также  
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
  [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
