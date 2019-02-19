@@ -1,25 +1,20 @@
 ---
 title: Приступая к работе с Python | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833947"
 ---
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Python — это популярный язык программирования
   
 - Надежность.
 - Обычно полезно для сценариев быстрого программ, сценариев приложений, классических приложений, веб-серверы, веб-служб и научные вычисления.
-- Прост в изучении и хорошая архитектура написание качественного кода (многие университеты используют его для начальных курсов обучения программированию).
+- Легкий для понимания; хорошая архитектура, упрощающая написание качественного кода (многие университеты используют его для начальных курсов обучения программированию).
 - Гибкая, императивный, функционального и объектно ориентированного программирования стилями.
-- Бесплатные службы и открытым исходным кодом.
+- Бесплатно и с открытым кодом.
 - Хорошо работает во всех основных операционных системах.  
 - Поддерживает многие бесплатные, удобные и хорошо спроектированной библиотеки.  
 - Поддерживается множество документации, образцов и широким сообществом разработчиков.  
@@ -48,10 +43,10 @@ Python — это популярный язык программирования
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Инструменты Python для Visual Studio, которые можно установить из [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), предоставляют следующие возможности:  
+Инструменты Python для Visual Studio, которые можно установить из [visualstudio.com](https://www.visualstudio.com/explore/python-vs), предоставляют следующие возможности:  
   
 - Поддержка нескольких интерпретаторов: различные версии CPython, IronPython и IPython.  
-- Система проектов, которая неявно Получает структуру папок кода Python, а также обеспечивает явное управление и позволяют определить код приложения, тестовый код, веб-страниц, JavaScript, скрипты сборки и т. д.  
+- Система проектов, которая неявно получает структуру папок кода Python и обеспечивает явное управление, позволяя определять код приложения, тестовый код, веб-страницы, JavaScript, скрипты сборки и т. д.  
 - Шаблоны проектов для консольных приложений, веб-приложений, Azure, обработки и анализа данных и других типов проектов.    
 - Azure SDK для Python (см. ниже)    
 - Широкие возможности редактирования и понимания кода, включая раскраску синтаксических конструкций, автозавершение для всего кода и библиотек, справку по сигнатурам, представление классов, переход к определению, поиск всех ссылок, рефакторинг и т. д.    
@@ -96,12 +91,11 @@ Python — это популярный язык программирования
 
 Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 
 [Начало работы с PTVS. Настройка Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Начало работы с PTVS. Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Начало работы с PTVS. Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
-[Начало работы с PTVS. Отладка](../python/getting-started-with-ptvs-debugging.md)
-[Начало работы с PTVS. Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Начало работы с PTVS. Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[начало работы с PTVS: Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[начало работы с PTVS: Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
+[начало работы с PTVS: Отладка](../python/getting-started-with-ptvs-debugging.md)
+[начало работы с PTVS: Интерактивный Python](../python/getting-started-with-ptvs-interactive-python.md)
+[начало работы с PTVS: Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
