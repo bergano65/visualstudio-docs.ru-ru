@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Автоматическое применение ключей продуктов при развертывании Visual Studio 2015 | Документация Майкрософт
+title: 'Практическое: автоматическое применение ключей продуктов при развертывании Visual Studio 2015 | Документация Майкрософт'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,13 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834852"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Как выполнить Автоматическое применение ключей продуктов при развертывании Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>How to: Automatically apply product keys when deploying Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последние версии документации Visual Studio 2017, см. в разделе [автоматическое применение ключей продуктов при развертывании Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
@@ -54,7 +54,7 @@ ms.locfileid: "54834852"
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Дополнительные сведения о получении ключа продукта, см. в разделе [как: Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+ Более подробную информацию о получении ключа продукта см. в разделе [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).
 
  Если StorePID.exe успешно применены ключ продукта, возвращается 0. В случае возникновения ошибки возвращается число в диапазоне от 1 до 6.
 

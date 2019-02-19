@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание простейшего шейдера текстуры | Документация Майкрософт
+title: Практическое руководство. Создание простейшего шейдера текстуры | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793438"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Как выполнить Создание простейшего шейдера текстуры
+# <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера с одной текстурой. Этот шейдер задает окончательный цвет непосредственно в RGB-значениях и альфа-факторах, взятых из текстуры.  

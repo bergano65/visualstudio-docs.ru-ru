@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документация Майкрософт
+title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769436"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
@@ -46,7 +46,7 @@ ms.locfileid: "54769436"
   
 - Последовательное построение.  
   
-  В этом пошаговом руководстве показан способ построения проекта в командной строке и проверка результатов. Дополнительные сведения о платформе MSBuild и ее запуске из командной строки см. в статье [Пошаговое руководство. в Visual Studio](../msbuild/walkthrough-using-msbuild.md).  
+  В этом пошаговом руководстве показан способ построения проекта в командной строке и проверка результатов. Дополнительные сведения о платформе MSBuild и ее запуске из командной строки см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Для выполнения пошагового руководства необходимо установить платформу .NET Framework версии 2.0, 3.5, 4.0 или 4.5 — она включает MSBuild и компилятор Visual C#.  
   
@@ -479,7 +479,7 @@ ms.locfileid: "54769436"
 ```  
   
 ## <a name="whats-next"></a>Что дальше?  
- Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. в Visual Studio](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>См. также раздел  
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)  

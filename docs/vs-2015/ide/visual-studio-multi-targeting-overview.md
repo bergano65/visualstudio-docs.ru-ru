@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768884"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
@@ -60,7 +60,7 @@ ms.locfileid: "54768884"
 >  Нацеливание на платформу не гарантирует правильную работу приложения. Нужно протестировать приложение, чтобы убедиться в том, что оно работает с целевой версией. Нельзя выбрать в качестве целевых версий платформы, предшествующие .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Выбор целевой версии платформы
- При создании проекта выберите целевую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в диалоговом окне **Новый проект**. Список доступных шаблонов проектов фильтруется в зависимости от выбранного значения. Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ При создании проекта выберите целевую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в диалоговом окне **Новый проект**. Список доступных шаблонов проектов фильтруется в зависимости от выбранного значения. Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в разделе [Практическое руководство. Настройка конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  В выпусках Visual Studio Express нельзя задать целевую платформу в диалоговом окне **Новый проект**.
@@ -76,7 +76,7 @@ ms.locfileid: "54768884"
  Дополнительные сведения о ссылках на сборки см. в разделе [Разрешение сборок во время разработки](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Включение LINQ
- При нацеливании на .NET Framework 3.5 или более поздней версии ссылка на System.Core и импорт уровня проекта для System.Linq (в Visual Basic) добавляются автоматически. Если вы хотите использовать функции LINQ, нужно также включить параметр "Option Infer on" (только в Visual Basic). Ссылка и импорт удаляются автоматически при изменении целевой версии на более раннюю версию .NET Framework. Дополнительные сведения см. в разделе [Как создать проект LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ При нацеливании на .NET Framework 3.5 или более поздней версии ссылка на System.Core и импорт уровня проекта для System.Linq (в Visual Basic) добавляются автоматически. Если вы хотите использовать функции LINQ, нужно также включить параметр "Option Infer on" (только в Visual Basic). Ссылка и импорт удаляются автоматически при изменении целевой версии на более раннюю версию .NET Framework. Дополнительные сведения см. в разделе [Практическое руководство. Создание проекта LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>См. также раздел
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework многоплатформенного нацеливания для веб-проектов ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [платформы совместимости и системные требования](http://www.microsoft.com/visualstudio/eng/products/compatibility)

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775876"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "54775876"
 |Область|Задача|Дополнительные сведения|
 |----------|----------|--------------------------|
 |Установка|Установка Visual Studio.|[Установка Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Обновление с пробного выпуска Visual Studio.|[Практическое руководство. Обновление с пробного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Обновление с пробного выпуска Visual Studio.|[Практическое руководство. Переход с ознакомительного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Установка, обновление или удаление локального содержимого справки.|[Установка локального содержимого и управление им](../ide/install-and-manage-local-content.md)|
 |Типы приложений|Разработка решений для SharePoint 2010.|[Требования по разработке решений SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Получение лицензии разработчика (приложения Магазина Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -48,8 +48,8 @@ ms.locfileid: "54775876"
 ||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Настройка межсетевого экрана для удаленной отладки.|[Настройка инструментов удаленной отладки в устройстве](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|
-|Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения, используя Visual Studio или Visual Web Developer: Развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Предоставление обратной связи в корпорацию Майкрософт|Изменение режима участия в программе улучшения качества Visual Studio.|[Практическое руководство. отправка отзыва](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Предоставление обратной связи в корпорацию Майкрософт|Изменение режима участия в программе улучшения качества Visual Studio.|[Практическое руководство. Отправка отзывов](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.

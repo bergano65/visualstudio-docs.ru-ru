@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775921"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Поддержка 64-разрядных сред IDE Visual Studio
@@ -30,21 +30,21 @@ ms.locfileid: "54775921"
 
 -   [Предварительные условия для развертывания 64-разрядных приложений](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Практическое руководство. Создать файл установщика Windows для 64-разрядной платформе](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [Практическое руководство. Создание установщика Windows для 64-разрядной платформы](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Настройка проектов как 64-разрядных приложений
  Настройка проектов для создания 64-разрядных приложений рассматривается в следующих разделах.
 
--   [Практическое руководство. Настройка целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)
+-   [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Отладка 64-разрядного приложения
  Функция "Изменить и продолжить" не работает при использовании [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] в 64-разрядной операционной системе Windows. Отладка 64-разрядных приложений рассматривается в следующих разделах.
 
--   [Практическое руководство. Отладка на 64-разрядных платформ](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+-   [Практическое руководство. Отладка на 64-разрядных платформах](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
 -   [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)
 
 -   [Использование файлов дампа](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>См. также раздел
- [Практическое руководство. Настройка целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)
+ [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782495"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
@@ -54,6 +54,6 @@ ms.locfileid: "54782495"
   
 ## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET)  
+ [Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки)  
  [Caller/Callee View - Instrumentation Data](../profiling/caller-callee-view-instrumentation-data.md) (Представление "Вызывающий/вызываемый" — данные инструментирования)

@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771183"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
@@ -139,7 +139,7 @@ ms.locfileid: "54771183"
 
 ##  <a name="BKMK_ALM"></a>Управление жизненным циклом приложения
 
-См. в разделе [сочетания клавиш: Visual Studio Online, TFS, веб-портала и Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).
 
 ## <a name="see-also"></a>См. также раздел
 

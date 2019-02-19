@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758246"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
@@ -36,7 +36,7 @@ ms.locfileid: "54758246"
 ##  <a name="BKMK_Configure"></a> Вход в Visual Studio
  При первом запуске Visual Studio предоставляется возможность выполнить вход с использованием учетной записи Майкрософт, например Live или Outlook. Вход позволяет обеспечить синхронизацию пользовательских параметров на всех устройствах. Дополнительные сведения см. в разделе [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md).
 
- Рис. 1. Интегрированная среда разработки Visual Studio
+ Рисунок 1. Интегрированная среда разработки Visual Studio
 
  ![Интегрированная среда разработки с примененными параметрами Visual C++](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
 
@@ -61,7 +61,7 @@ ms.locfileid: "54758246"
 
    Проект GreetingsConsoleApp и решение с основными файлами для консольного приложения Win32 создадутся и автоматически загрузятся в **Обозреватель решений**. Файл GreettingsConsoleApp.cpp откроется в редакторе кода. В **Обозревателе решений**отображаются следующие элементы.
 
-   Рис. 4. Элементы проекта
+   Рисунок 4. Элементы проекта
 
    ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 

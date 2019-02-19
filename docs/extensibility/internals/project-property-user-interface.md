@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957058"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335302"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
+
 Подтип проекта можно использовать элементы в проекте **страницы свойств** диалоговое окно, так как они предоставляются по базовому проекту, скрыть или сделать доступным только для чтения элементы управления и целые страницы, передаваемой или добавьте страницы подтипа проекта **Страницы свойств** диалоговое окно.
 
 ## <a name="extending-the-project-property-dialog-box"></a>Расширение диалоговое окно свойств проекта
- Подтипа проекта реализует расширителей автоматизации и Обзор объектов конфигурации проекта. Эти расширения реализуют <xref:EnvDTE.IFilterProperties> интерфейс, чтобы сделать определенным свойствам скрытого или только для чтения. **Страницы свойств** диалоговое окно базового проекта, реализованный в базовый проект, учитывает фильтрации выполняемых расширителей автоматизации.
 
- Процесс расширения **свойство проекта** описывается диалоговое окно ниже:
+Подтипа проекта реализует расширителей автоматизации и Обзор объектов конфигурации проекта. Эти расширения реализуют <xref:EnvDTE.IFilterProperties> интерфейс, чтобы сделать определенным свойствам скрытого или только для чтения. **Страницы свойств** диалоговое окно базового проекта, реализованный в базовый проект, учитывает фильтрации выполняемых расширителей автоматизации.
+
+Процесс расширения **свойство проекта** описывается диалоговое окно ниже:
 
 -   Базовый проект получает расширителей из подтипа проекта путем реализации <xref:EnvDTE80.IInternalExtenderProvider> интерфейс. Обзор автоматизации проектов и объектов обзора конфигурации проекта базового проекта все реализация этого интерфейса.
 
@@ -39,11 +41,11 @@ ms.locfileid: "54957058"
 
 -   Подтип проекта можно определить соответствующие идентификаторы CATID для различных объектов являются расширяемыми базового проекта во время выполнения путем извлечения следующие <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> значения:
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Чтобы определить CATID для проекта области, подтипа проекта извлекает выше свойства [VSITEMID. Корневой](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) из `VSITEMID typedef`. Подтип проекта также может потребоваться указать, какие **страницы свойств** страницах диалогового окна отображаются для проекта, зависящие от конфигурации и конфигурации независимо. Некоторые подтипов проекта может потребоваться удалить встроенные страницы и добавить определенные страницы подтип проекта. Для этого проекта управляемый клиент вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод для следующих свойств:
 

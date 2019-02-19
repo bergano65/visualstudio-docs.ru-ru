@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d90e2fcdd07738aaa9cdda28f8d131767bf7ffe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011733"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335038"
 ---
 # <a name="rdtreadlock-usage"></a>Использование RDT_ReadLock
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> — Это флаг, предоставляющий логику для блокировка документа на в выполняющихся документа таблицы (RDT), который является список всех документов, открытых в настоящий момент в Интегрированной среде разработки Visual Studio. Этот флаг определяет при открытии документов и является ли документ видимым в пользовательском интерфейсе или принудительное незаметно в памяти.
+[_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) флаг, предоставляющий логику для блокировка документа на в выполняющихся документа таблицы (RDT), который является список всех документов, открытых в настоящий момент в Интегрированной среде разработки Visual Studio. Этот флаг определяет при открытии документов и является ли документ видимым в пользовательском интерфейсе или принудительное незаметно в памяти.
 
-Как правило, используется <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> когда верно одно из следующих:
+Как правило, используется [_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) когда верно одно из следующих:
 
-- При необходимости откройте документ незаметно и только для чтения, но он еще не что <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> должны отвечать за его.
+- Требуется открыть документ незаметно и только для чтения, но он еще не установлено, что <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> должны отвечать за его.
 
-- При необходимости пользователь будет предложено сохранить документ, который незаметно был открыт, прежде чем пользователь, он отображается в пользовательском Интерфейсе и затем была предпринята попытка закрыть его.
+- Предоставить пользователю будет предложено сохранить документ, который незаметно был открыт, прежде чем пользователь, он отображается в пользовательском Интерфейсе и затем была предпринята попытка закрыть его.
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Как управлять видимым и невидимым документов
 
-Когда пользователь открывает документ в пользовательском Интерфейсе <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец документа должно быть установлено и <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> должен быть установлен флаг. Если не <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец может быть установлено, а затем документа не будут сохранены, когда пользователь щелкает **сохранить все** или закрытии интегрированной среды разработки. Это означает, что если документ открыт незаметно там, где он изменен в памяти, и пользователю будет предложено сохранить документ при завершении работы или при сохранении Если **сохранить все** выбирается, а затем `RDT_ReadLock` нельзя использовать. Вместо этого необходимо использовать `RDT_EditLock` и зарегистрируйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> при <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> флаг.
+Когда пользователь открывает документ в пользовательском Интерфейсе <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец документа должно быть установлено и [_VSRDTFLAGS. RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) должен быть установлен флаг. Если не <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец может быть установлено, а затем документа не будут сохранены, когда пользователь щелкает **сохранить все** или закрытии интегрированной среды разработки. Это означает, что если документ открыт незаметно там, где он изменен в памяти, и пользователю будет предложено сохранить документ при завершении работы или при сохранении Если **сохранить все** выбирается, а затем `RDT_ReadLock` нельзя использовать. Вместо этого необходимо использовать `RDT_EditLock` и зарегистрируйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> при [__VSREGDOCLOCKHOLDER. RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) флаг.
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock и изменение документа
 

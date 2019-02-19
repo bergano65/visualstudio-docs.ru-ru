@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778517"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
@@ -40,15 +40,15 @@ ms.locfileid: "54778517"
 
  Дополнительные сведения см. в следующих разделах:
 
--   [Практическое руководство. настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Практическое руководство. Настройка параметров доступа в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Практическое руководство. работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Практическое руководство. Использование только клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Практическое руководство. изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>См. также раздел
  [Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

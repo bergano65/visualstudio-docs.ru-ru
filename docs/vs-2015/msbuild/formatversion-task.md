@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755129"
 ---
 # <a name="formatversion-task"></a>Задача FormatVersion
@@ -27,11 +27,11 @@ ms.locfileid: "54755129"
   
 Добавляет номер редакции к номеру версии.  
   
--   Случай 1. Вход: Version=\<не определена>; Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"  
+-   Случай 1. Input: Version=\<не определена>;  Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"  
   
--   Случай 2. Вход: Version="1.0.0.*"  Revision="5"; выходные данные: OutputVersion="1.0.0.5"  
+-   Случай 2. Входные данные: Version="1.0.0.*"  Revision="5"; выходные данные: OutputVersion="1.0.0.5"  
   
--   Случай 3. Вход: Version="1.0.0.0"  Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"  
+-   Случай 3. Входные данные: Version="1.0.0.0"  Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `FormatVersion` .  
