@@ -1,14 +1,9 @@
 ---
 title: Задача Vbc| Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802193"
 ---
 # <a name="vbc-task"></a>Задача Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "52281866"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Vbc` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Необязательный параметр `String[]` .<br /><br /> Задает дополнительные папки, в которых выполняется поиск сборок, указанных в атрибуте References.|  
 |`AddModules`|Необязательный параметр `String[]` .<br /><br /> Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Этот параметр соответствует параметру [/addmodule](http://msdn.microsoft.com/library/fb4b89d4-4926-4f20-868d-427fa28497b2) компилятора vbc.exe.|  
@@ -58,7 +53,7 @@ ms.locfileid: "52281866"
 |`Imports`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Импорт пространства имен из указанных коллекций элементов. Этот параметр соответствует параметру [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) компилятора vbc.exe.|  
 |`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Этот параметр соответствует параметру [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) компилятора vbc.exe.|  
 |`KeyFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Задает используемую версию языка ("9" или "10").|  
+|`LangVersion`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Задает используемую версию языка ("9" или "10").|  
 |`LinkResources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Этот параметр соответствует параметру [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) компилятора vbc.exe.|  
 |`MainEntryPoint`|Необязательный параметр `String` .<br /><br /> Задает класс или модуль, содержащий процедуру `Sub Main`. Этот параметр соответствует параметру [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) компилятора vbc.exe.|  
 |`ModuleAssemblyName`|Необязательный параметр `String` .<br /><br /> Задает сборку, частью которой будет этот модуль.|  
@@ -109,10 +104,7 @@ ms.locfileid: "52281866"
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Компилятор Visual Basic с интерфейсом командной строки](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

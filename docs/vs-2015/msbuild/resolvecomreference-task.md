@@ -1,14 +1,9 @@
 ---
 title: Задача ResolveComReference | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801431"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49179365"
 |`ResolvedAssemblyReferences`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает разрешенные ссылки на сборки.|  
 |`ResolvedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает полные имена файлов на диске, соответствующие физическим расположениям библиотек типов, которые были указаны во входных данных задачи.|  
 |`ResolvedModules`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.|  
-|`SdkToolsPath`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
+|`SdkToolsPath`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
 |`StateFile`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
 |`TargetFrameworkVersion`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
 |`TargetProcessorArchitecture`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
@@ -86,9 +81,6 @@ ms.locfileid: "49179365"
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Task Base Class](../msbuild/task-base-class.md) (Базовый класс Task).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

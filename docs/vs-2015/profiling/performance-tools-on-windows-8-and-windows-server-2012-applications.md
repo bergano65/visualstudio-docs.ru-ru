@@ -1,25 +1,20 @@
 ---
 title: Средства производительности в приложениях Windows 8 и Windows Server 2012 | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e02ce9a9ef06574de999620017b96d470a76e6c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757975"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +66,13 @@ ms.locfileid: "51767533"
   
 - [Время выполнения функций JavaScript на удаленном устройстве](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Анализ данных о выполнении функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Анализ данных о времени выполнения функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на локальном компьютере](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на локальном компьютере](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на удаленном устройстве](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на удаленном устройстве](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Анализ данных о производительности кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Анализ данных о производительности кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Содержание раздела](#BKMK_In_this_topic)  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51767533"
 ##  <a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
  Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.  
   
-|Имя программы|Описание:|  
+|Имя программы|Описание|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений Магазина Windows и сбор примерных данных профилирования из приложений Windows 8 для настольных систем и приложений Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|  
@@ -141,7 +136,7 @@ ms.locfileid: "51767533"
   
    **Сбор данных об уровневом взаимодействии на удаленном компьютере**  
   
-   Чтобы собрать данные об уровневом взаимодействии на удаленном компьютере, необходимо скопировать **vs\_профилировщика\_**_\<платформы >_ **\_**  _\<Языка >_**.exe** файла из _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**папку Visual Studio компьютера на удаленный компьютер и установить его. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .  
   
@@ -149,10 +144,7 @@ ms.locfileid: "51767533"
   
    Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обозреватель производительности](../profiling/performance-explorer.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

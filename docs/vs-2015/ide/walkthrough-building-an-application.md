@@ -1,25 +1,20 @@
 ---
-title: Пошаговое руководство. Сборка приложения | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Построение приложения | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799159"
 ---
 # <a name="walkthrough-building-an-application"></a>Пошаговое руководство. Построение приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "50220213"
 4.  Нажмите кнопку **ОК** .  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Создание настраиваемой конфигурации сборки  
- При создании решения конфигурации отладочной сборки и сборки выпуска и их целевые платформы по умолчанию определяются для решения автоматически. Затем вы можете настроить эти конфигурации или создать собственные. Конфигурации указывают тип сборки. Целевые платформы указывают операционную систему, на которое ориентировано приложение для этой конфигурации. Дополнительные сведения см. в разделах [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md), [Общие сведения о платформах сборки](../ide/understanding-build-platforms.md) и [Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ При создании решения конфигурации отладочной сборки и сборки выпуска и их целевые платформы по умолчанию определяются для решения автоматически. Затем вы можете настроить эти конфигурации или создать собственные. Конфигурации указывают тип сборки. Целевые платформы указывают операционную систему, на которое ориентировано приложение для этой конфигурации. Дополнительные сведения см. в разделах [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md), [Общие сведения о платформах сборки](../ide/understanding-build-platforms.md) и [Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Конфигурации и параметры платформы можно изменять или создавать с помощью диалогового окна **Диспетчер конфигураций**. В этой процедуре вы создадите конфигурацию сборки для тестирования.  
   
@@ -98,7 +93,7 @@ ms.locfileid: "50220213"
   
 4. В списке **Активная платформа решения** выберите **Создать**.  
   
-5. В **Создание платформы решения** диалоговом окне выберите **x64**и не копируйте параметры из x86 платформы.  
+5. В диалоговом окне **Создание платформы решения** выберите **x64** и не копируйте параметры из платформы x86.  
   
     ![Диалоговое окно платформы нового решения](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -121,11 +116,11 @@ ms.locfileid: "50220213"
   
   Окно **Вывод** отображает результат сборки. Построение выполнено успешно, но было создано несколько предупреждений.  
   
-  Рис. 1. Предупреждения Visual Basic  
+  Рис. 1. Предупреждения Visual Basic  
   
   ![Окно выходных данных Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Рис 2. Предупреждения Visual C#  
+  Рис. 2. Visual C# предупреждения  
   
   ![Окно выходных данных Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ ms.locfileid: "50220213"
 ##  <a name="BKMK_releasebuild"></a> Создание сборки выпуска  
  Вы можете создать версию примера приложения, оптимизированную для поставки. Для сборки выпуска вы указываете, что исполняемый файл копируется в общую сетевую папку перед запуском сборки.  
   
- Дополнительные сведения см. в разделах [Практическое руководство. Изменение выходного каталога сборки](../ide/how-to-change-the-build-output-directory.md) и [Сборка и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Дополнительные сведения см. в разделе [Как Изменение выходного каталога построения](../ide/how-to-change-the-build-output-directory.md) и [построение и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Указание сборки выпуска для Visual Basic  
   
@@ -260,10 +255,7 @@ ms.locfileid: "50220213"
   
    Поздравляем! Вы успешно выполнили это пошаговое руководство.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пошаговое руководство. Сборка проекта (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

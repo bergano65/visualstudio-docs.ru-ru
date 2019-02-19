@@ -1,25 +1,20 @@
 ---
 title: 'MSBuild: обзор настройки для различных версий | Документация Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800384"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild: обзор настройки для различных версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49243832"
 С помощью MSBuild можно компилировать приложение для его запуска на любой из нескольких версий платформы .NET Framework, а также на любой из нескольких системных платформ. Например, можно компилировать приложение для запуска в .NET Framework 2.0 на 32-разрядной платформе, а также компилировать то же приложение для запуска в .NET Framework 4.5 на 64-разрядной платформе.  
   
 > [!IMPORTANT]
->  Несмотря на название «Настройка для различных версий» проект можно назначить только одной исполняющей среде и только в одну платформу, одновременно.  
+>  Несмотря на название "Настройка для различных версий" проект можно назначить одновременно только одной исполняющей среде и только одной платформе.  
   
  Ниже перечислены некоторые возможности MSBuild для различных версий.  
   
@@ -56,6 +51,3 @@ ms.locfileid: "49243832"
   
 ## <a name="troubleshooting"></a>Устранение неполадок  
  При попытке сослаться на сборку, которая не является частью целевого контекста, могут возникнуть ошибки. Дополнительные сведения об этих ошибках и способах их устранения см. в разделе [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

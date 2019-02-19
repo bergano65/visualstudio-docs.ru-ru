@@ -1,14 +1,9 @@
 ---
 title: Задача GenerateApplicationManifest | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756588"
 ---
 # <a name="generateapplicationmanifest-task"></a>Задача GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +45,10 @@ ms.locfileid: "49245574"
 |`Dependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список элементов, который определяет набор независимых сборок для созданного манифеста. Каждый элемент может быть дополнительно описан в метаданных, чтобы указать дополнительное состояние развертывания и тип зависимости. Дополнительные сведения см. в разделе "Метаданные элементов" ниже.|  
 |`Description`|Необязательный параметр `String` .<br /><br /> Указывает описание для приложения или компонента.|  
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает отдельный элемент, указывающий точку входа для создаваемой сборки манифеста.<br /><br /> Для манифеста приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] этот параметр указывает сборку, которая выполняется при запуске приложения.|  
-|`ErrorReportUrl`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
+|`ErrorReportUrl`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
 |`FileAssociations`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает список из одного или нескольких типов файлов, сопоставленных с манифестом развертывания ClickOnce.<br /><br /> Сопоставления файлов действительны только при ориентации на платформу .NET Framework 3.5 или более поздней версии.|  
 |`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Включаемые в манифест файлы. Укажите полный путь для каждого файла.|  
-|`HostInBrowser`|Необязательный [логическое значение] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
+|`HostInBrowser`|Необязательный [логический] параметр (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
 |`IconFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файл значка приложения. Значок приложения задается в создаваемом манифесте приложения и используется для меню "Пуск" и диалогового окна "Установка и удаление программ". Если этот входной параметр не указан, используется значок по умолчанию. Если задача создает собственный манифест, этот параметр игнорируется.|  
 |`InputManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входной XML-документ, который служит основой для генератора манифеста. Это позволяет структурированным данным, например определениям безопасности приложений или пользовательским определениям манифестов, отражаться в выходном манифесте. Корневой элемент в XML-документе должен быть узлом сборки в пространстве имен asmv1.|  
 |`IsolatedComReferences`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает COM-компоненты, которые нужно изолировать в создаваемом манифесте. Этот параметр позволяет изолировать COM-компоненты для развертывания "COM без регистрации". Это работает за счет автоматического создания манифеста со стандартными определениями регистрации COM. Однако для правильной работы этой функции COM-компоненты нужно регистрировать на компьютере сборки.|  
@@ -358,11 +353,8 @@ ms.locfileid: "49245574"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
  [Задача SignFile](../msbuild/signfile-task.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

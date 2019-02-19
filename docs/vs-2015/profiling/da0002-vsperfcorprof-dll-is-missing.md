@@ -1,14 +1,9 @@
 ---
 title: 'DA0002: отсутствует файл VSPerfCorProf.dll | Документы Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -18,13 +13,13 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bb1359b525b286dbc88cbd3d8eecaef27060ab23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792927"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: отсутствует файл VSPerfCorProf.dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51809471"
 ИД правила | DA0002 ФАЙЛ |  
 | Категория | Использование средств профилирования |  
 | Методы профилирования | Профилирование с помощью средства командной строки VSPerfCmd и VSPerfASPNETCmd |  
-| Сообщение | Похоже, что для файла был выполнен без должной настройки переменных среды с помощью VSPerfCLREnv.cmd. Символы для управляемых двоичных файлов не может быть выполнено. |  
+| Сообщение | Похоже, что для файла был выполнен без должной настройки переменных среды с помощью VSPerfCLREnv.cmd. Разрешение символов для управляемых двоичных данных может быть невозможно.|  
 | Тип правила | Сведения |  
   
 ## <a name="cause"></a>Причина  
@@ -43,6 +38,3 @@ ms.locfileid: "51809471"
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Когда вы профилируете управляемые приложения с помощью программ командной строки в Средствах профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], запустите программу командной строки [VSPerfCLREnv](../profiling/vsperfclrenv.md), прежде чем начинать сбор данных.
-
-
-

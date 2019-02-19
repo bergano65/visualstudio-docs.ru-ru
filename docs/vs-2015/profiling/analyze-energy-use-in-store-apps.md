@@ -1,14 +1,9 @@
 ---
 title: Анализ энергопотребления приложениями Магазина | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790357"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Анализ энергопотребления приложениями Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51742012"
  При выполнении метода пользовательская отметка добавляется в данные профилирования вместе с сообщением.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel реализует [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) интерфейс (Проецируемый как [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) в C# и VB). Во избежание утечки ресурсов операционной системы, вызовите [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() в C# и VB) при завершении работы с каналом ведения журнала.  
+> - Windows.Foundation.Diagnostics LoggingChannel реализует интерфейс [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (проецируемый как [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) в C# и VB). Чтобы избежать утечки системных ресурсов, вызовите [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) ()(Windows.Foundation.Diagnostics.LoggingChannel.Dispose() в C# и VB) после завершения работы с каналом ведения журнала.  
 >   -   Каждый открытый канал ведения журнала должен иметь уникальное имя. При попытке создать новый канал ведения журнала с тем же именем, что и у существующего канала, вызывается исключение.  
   
  См. пример Windows SDK [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) .  
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> Другие источники  
   
--   В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) и [JavaScript и HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
+-   В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) и [JavaScript и HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
   
      Имитатор Visual Studio для приложений Магазина Windows позволяет имитировать свойства подключений для передачи данных API-интерфейсов, предоставляющих информацию о сети. См. раздел [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
 -   Инструменты **Время выполнения функций JavaScript** и **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. См. дополнительные сведения об [анализе использования ЦП](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
-
-
-

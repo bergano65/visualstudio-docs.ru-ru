@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009899"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели формата для C++ в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата.  
@@ -74,7 +74,7 @@ int main() {
 |su|Строка Юникода (кодировка UTF-16) (с кавычками)|\<расположение > L «hello world»|L"Здравствуй, мир!"<br /><br /> u"Здравствуй, мир!"|  
 |sub|Строка в Юникоде (кодировка UTF-16) (без кавычек)|\<расположение > L «hello world»|Здравствуй, мир!|  
 |bstr|Двоичная строка BSTR (с кавычками)|\<расположение > L «hello world»|L"Здравствуй, мир!"|  
-|env|Блок среды (строка, завершающаяся двумя символами null)|\<расположение > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Блок среды (строка, завершающаяся двумя символами null)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|Строка UTF-32 (с кавычками)|\<расположение > U «hello world»|u"Здравствуй, мир!"|  
 |**s32b**|Строка UTF-32 (без кавычек)|\<расположение > U «hello world»|Здравствуй, мир!|  
 |**en**|перечисление|Суббота(6)|Суббота|  

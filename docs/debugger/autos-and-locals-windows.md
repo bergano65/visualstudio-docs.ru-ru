@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941987"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Проверить значения переменных в окнах "Видимые" и "Локальные"
 
-**"Видимые"** и **"Локальные"** windows отображение значений переменных при отладке. Windows доступны только во время сеанса отладки. **"Видимые"** окне отображаются переменные, используемые вокруг текущей точкой останова. **"Локальные"** окне отображаются переменные, определенные в локальной области, которой обычно является текущей функции или метода. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
+**"Видимые"** и **"Локальные"** windows отображение значений переменных при отладке. Windows доступны только во время сеанса отладки. **"Видимые"** окне отображаются переменные, используемые вокруг текущей точкой останова. **"Локальные"** окне отображаются переменные, определенные в локальной области, которой обычно является текущей функции или метода. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [отладки для начинающих](../debugger/debugging-absolute-beginners.md) и [методик и средств отладки](../debugger/write-better-code-with-visual-studio.md) прежде чем приступить к этой статье.
 
  **"Видимые"** окно доступно для C#, код Visual Basic, C++ и Python, но не для JavaScript или F#.
   
@@ -150,5 +150,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>См. также  
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [окна отладчика](../debugger/debugger-windows.md)

@@ -1,32 +1,27 @@
 ---
 title: Упорядочивание объектов в макеты-контейнеры в конструкторе XAML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753955"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Представьте, как бы вы хотели расположить на странице такие объекты, как изображения, кнопки и видеозаписи. Возможно, необходимо отобразить их в строку или в столбец, в одну линию по вертикали или по горизонтали или в фиксированных позициях.  
   
- После того как вы распланировали структуру страницы, выберите панель макета. Создание любой страницы начинается с одного и того же, поскольку вам необходима база, для которой будут добавляться все объекты. По умолчанию это **сетки** , но его можно изменить.  
+ После того как вы распланировали структуру страницы, выберите панель макета. Создание любой страницы начинается с одного и того же, поскольку вам необходима база, для которой будут добавляться все объекты. По умолчанию это **Сетка**, но этот параметр можно изменить.  
   
  Панели макета помогут упорядочить объекты на странице, а также предоставят дополнительные возможности. Они помогут разработать страницы с учетом различных размеров и разрешений экрана. При запуске приложения размер всех элементов на панели макета изменяется в соответствии с действительными размерами экрана данного устройства. Конечно, если вам не требуется изменения размера, то вы можете переопределить это поведение для части макета или всего макета. Для этого можно использовать свойства высоты и ширины.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49219561"
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование сеток](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [с помощью сетки](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
 ###  <a name="Uniform"></a> UniformGrid  
  Равномерное или однородное упорядочивание объектов в областях сетки. Эта панель отлично подходит для упорядочивания списка изображений.  
@@ -66,21 +61,21 @@ ms.locfileid: "49219561"
   
  (Доступно только для проектов WPF)  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [работа с UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
 ###  <a name="Canvas"></a> Canvas  
  Упорядочивание объектов любым образом При запуске приложения пользователями эти элементы будут иметь фиксированные позиции на экране.  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с холстом](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [работа с холстом](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
 ###  <a name="Stack"></a> StackPanel  
  Расположение объектов в одну линию по вертикали или по горизонтали.  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Wrap"></a> WrapPanel  
  Упорядочивание объектов последовательно в направлении слева направо. Когда место закончится и строка достигнет края справа, то панель *перенесет* содержимое на следующую строку, и так будет повторяться раз за разом слева направо и сверху вниз. Вы также можете задать вертикальную ориентацию панели с переносом, чтобы объекты переносились в другой очередности: сверху вниз и слева направо.  
@@ -89,7 +84,7 @@ ms.locfileid: "49219561"
   
  ![](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Dock"></a> DockPanel  
  Размещение элементов происходит таким образом, чтобы они оставались или были *закрепленными* у одного края панели.  
@@ -120,7 +115,7 @@ ms.locfileid: "49219561"
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементом Border](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [работа с границами](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
 ###  <a name="Popup"></a> Всплывающее окно  
  Отображение информации или параметров для пользователей в окне. Для элемента **Всплывающее окно** можно добавить только один объект. По умолчанию **Всплывающее окно** содержит **Сетку**, но этот параметр можно изменить.  
@@ -137,9 +132,6 @@ ms.locfileid: "49219561"
   
  ![](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

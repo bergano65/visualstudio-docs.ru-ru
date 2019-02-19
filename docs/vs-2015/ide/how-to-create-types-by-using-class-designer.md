@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание типов с помощью конструктора классов | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Создание типов с помощью конструктора классов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772158"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "49175039"
     |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие тип|  
     |перечислениям;|Значения поля, составляющие перечисление|  
     |интерфейсов,|Методы, свойства и события, составляющие интерфейс|  
-    |Делегат|Параметры, определяющие делегат|  
+    |делегат|Параметры, определяющие делегат|  
     |Module|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие модуль|  
   
      См. раздел [Создание членов](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -84,7 +79,7 @@ ms.locfileid: "49175039"
   
 1.  Щелкните фигуру типа на схеме классов.  
   
-2.  В окне «Свойства» рядом с полем **пользовательские атрибуты** свойства для типа, нажмите кнопку с многоточием (...).  
+2.  В окне свойств рядом со свойством **Пользовательские атрибуты** для типа нажмите кнопку с многоточием (…).  
   
 3.  Добавьте один или несколько настраиваемых атрибутов, по одному на строку. Не заключайте их в квадратные скобки.  
   
@@ -100,12 +95,9 @@ ms.locfileid: "49175039"
   
      По завершении пользовательские атрибуты будут применены к типу.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [Практическое руководство. Создание ассоциаций между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)   
  [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'DA0005: частые коллекции GC2 | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -18,13 +13,13 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794107"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: частые коллекции GC2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,6 @@ ms.locfileid: "51745783"
  Это правило применяется в тех случаях, когда доля времени, затраченного на сборку мусора для поколения 2, становится слишком велика. Если слишком большое число относительно краткосрочных объектов остаются после сборки мусора в поколении 1, но их удается полностью собрать с поколением 2, затраты на управление памятью могут с легкостью стать слишком высокими. Дополнительные сведения см. в статье [Кризис среднего возраста](http://go.microsoft.com/fwlink/?LinkId=177835) в Rico Mariani's Performance Tidbits на веб-сайте MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения  
- Для лучшего понимания схемы выделения памяти в приложении просмотрите отчеты [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md). Используйте [представление "время существования объектов"](../profiling/object-lifetime-view.md) чтобы определить, какие из данных программы остаются в поколении 2, а затем из него удаляются объекты. Используйте [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md) для определения путей выполнения, которые приводят к появлению таких выделений памяти.  
+ Для лучшего понимания схемы выделения памяти в приложении просмотрите отчеты [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md). Используйте [представление "Время существования объекта"](../profiling/object-lifetime-view.md), чтобы определить, какие объекты данных программы остаются в поколении 2, а затем из него удаляются. Используйте [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md) для определения путей выполнения, которые приводят к появлению таких выделений памяти.  
   
  Сведения о том, как повысить производительность сборки мусора, см. в статье [Сведения о повышении производительности сборки мусора](http://go.microsoft.com/fwlink/?LinkId=148226) на веб-сайте корпорации Майкрософт. Сведения о дополнительных затратах на автоматическую сборку мусора см. в статье [Представляем кучу для массивных объектов](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

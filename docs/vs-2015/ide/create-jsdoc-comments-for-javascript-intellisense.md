@@ -1,25 +1,20 @@
 ---
 title: Создание комментариев JSDoc для JavaScript IntelliSense | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758517"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Создание комментариев JSDoc для JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +27,14 @@ ms.locfileid: "49908591"
 
 |  Тег JSDoc   |                       Синтаксис                        |                                                     Примечания                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *Описание*              |                                   Указывает устаревшую функцию или метод.                                   |
-| @description |             @description *Описание*              |                              Указывает описание для функции или метода.                               |
+| @deprecated  |              @deprecated *описание*              |                                   Указывает устаревшую функцию или метод.                                   |
+| @description |             @description *описание*              |                              Указывает описание для функции или метода.                               |
 |    @param    | @param {*тип*} *parameterName*<em>описание</em> | Указывает сведения для параметра в функции или методе.<br /><br /> TypeScript также поддерживает @paramTag. |
-|  @property   |          @property {*тип*} *propertyName*          |   Указывает сведения, включая описание, для поля или элемента, который определен в объекте.    |
+|  @property   |          @property {*тип*} *имя_свойства*          |   Указывает сведения, включая описание, для поля или элемента, который определен в объекте.    |
 |   @returns   |                  @returns {*тип*}                  |           Указывает возвращаемое значение.<br /><br /> TypeScript, использовать @returnType вместо @returns.           |
-|   @summary   |               @summary *Описание*                |                   Указывает описание функции или метода (аналогично @description).                   |
+|   @summary   |               @summary *описание*                |                   Указывает описание функции или метода (аналогично @description).                   |
 |    @type     |                   @type {*тип*}                    |                                Указывает тип для константы или переменной.                                |
-|   @typedef   |         @typedef {*тип*} *customTypeName*          |                                            Указывает пользовательский тип.                                            |
+|   @typedef   |         @typedef {*тип*} *пользовательское_имя_свойства*          |                                            Указывает пользовательский тип.                                            |
 
 ### <a name="examples"></a>Примеры  
  В следующем примере показано использование @description, @param, и @return JSDoc теги для функции с именем `getArea`.  
@@ -73,7 +68,7 @@ function getForecast(Weather) {
 var w = new Weather();  
 ```  
 
- В следующем примере показано использование @type тегов JSDoc. Как показано в этом примере единый звездочки (*), выполните начальное звездочками (\*\*) не являются обязательными.  
+ В следующем примере показано использование @type тегов JSDoc. Как показано в этом примере, одиночные звездочки (*), которые следуют за начальными двойными звездочками (\*\*), не являются обязательными.  
 
 ```javascript  
 /**  
@@ -92,6 +87,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Окно справки (Майкрософт) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755042"
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820100"
 Вы можете установить различные продукты и технологии и просмотреть содержимое их справки на локальном компьютере, используя окно справки (Майкрософт).  
   
 > [!WARNING]
->  При установке Visual Studio вы также получаете окно справки. Чтобы просматривать разделы справки в окне справки, а не на сайте загрузки MSDN, перейдите к **помочь** меню в Visual Studio, выберите пункт **задать параметры справки**, а затем выберите **запуска в справке Средство просмотра**. Материалы в автономных разделах справки для Visual Studio доступны только после окончательного выпуска этой версии.  
+>  При установке Visual Studio вы также получаете окно справки. Чтобы просматривать разделы справки в окне справки, а не на сайте загрузки MSDN, перейдите в меню **Справка** в Visual Studio, выберите пункт **Задать параметры справки** и щелкните **Запустить в средстве просмотра справки**. Материалы в автономных разделах справки для Visual Studio доступны только после окончательного выпуска этой версии.  
   
  Можно выполнить одно из следующих действий:  
   
@@ -79,11 +74,8 @@ ms.locfileid: "49820100"
   
   В нижней области окна справки содержится информация об общем размере ожидающих файлов для скачивания, объеме требуемого дискового пространства и объеме свободного дискового пространства. Эта область также содержит сведения об ошибках, которые могли произойти, и ссылку, по которой можно обновить установленное содержимое при наличии обновлений.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Руководство администратора Help Viewer](../ide/help-viewer-administrator-guide.md)   
  [Установка локального содержимого и управление им](../ide/install-and-manage-local-content.md)   
  [Поиск сведений](../ide/locate-information.md)   
  [Устранение неполадок средства просмотра справки](../ide/troubleshooting-the-help-viewer.md)
-
-
-

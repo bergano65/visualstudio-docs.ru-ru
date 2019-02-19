@@ -1,14 +1,9 @@
 ---
 title: DA0003. Много выборок в режиме ядра | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782638"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003. Много выборок в режиме ядра
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741694"
 ИД правила | DA0003 |  
 | Категория | Использование средств профилирования |  
 | Методы профилирования | Выборка |  
-| Сообщение | У вас есть большая доля выборок в режиме ядра. Это может указывать на слишком большое количество операций ввода-вывода или высокую частоту переключения контекста. Рекомендуется воспользоваться для профилирования приложения снова, используя режим инструментария. |  
+| Сообщение | У вас есть большая доля выборок в режиме ядра. Это может указывать на слишком большое количество операций ввода-вывода или высокую частоту переключения контекста. Рекомендуется повторить профилирование приложения в режиме инструментирования.|  
 | Тип правила | Сведения |  
   
 ## <a name="cause"></a>Причина  
@@ -49,6 +44,3 @@ ms.locfileid: "51741694"
 -   Профилирование с помощью метода инструментирования  
   
 -   Увеличение частоты выборки, чтобы и попытаться собрать больше данных в пользовательском режиме.
-
-
-

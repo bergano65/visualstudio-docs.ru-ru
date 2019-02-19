@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Инкрементная сборка | Документация Майкрософт
+title: Практическое руководство. Инкрементное построение | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,7 +20,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54803914"
 ---
-# <a name="how-to-build-incrementally"></a>Как выполнить Последовательная сборка
+# <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементное построение
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -64,7 +64,7 @@ ms.locfileid: "54803914"
   
 - `GenerateContentFiles`: преобразует TXT-файлы в CONTENT-файлы.  
   
-- `BuildHelp`: объединяет CONTENT-файлы и XML-файлы метаданных для сборки итогового HELP-файла.  
+- `BuildHelp`: объединяет CONTENT-файлы и XML-файлы метаданных для построения итогового HELP-файла.  
   
   В проекте используются преобразования для создания взаимно однозначного сопоставления между входными и выходными данными в задаче `GenerateContentFiles`. Дополнительные сведения см. в статье [Преобразования](../msbuild/msbuild-transforms.md). Кроме того, элемент `Output` настроен на автоматическое использование выходных данных задачи `GenerateContentFiles` в качестве входных данных для задачи `BuildHelp`.  
   

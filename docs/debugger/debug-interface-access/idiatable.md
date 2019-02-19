@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df042bc8edcdf8e93ba775797f1d099b24e90343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 50d38204155e12f65856f60e2b9df7f10837b515
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920937"
 ---
 # <a name="idiatable"></a>IDiaTable
 Перечисляет таблицы источника данных доступа к интерфейсу отладки.  
@@ -135,7 +135,7 @@ void UseTable(IDiaSession *pSession)
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также раздел  
  [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

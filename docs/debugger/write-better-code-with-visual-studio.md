@@ -1,49 +1,176 @@
 ---
-title: Исправление ошибок за счет написания лучшего кода на C#
-description: Узнайте, как создавать более качественный код с меньшим количеством ошибок
+title: Методы и инструменты отладки
+description: Запись качественного кода с меньшим количеством ошибок с использованием Visual Studio для устранения исключений, исправления ошибок и улучшения кода
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 11/20/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961719"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Исправления ошибок, написав лучше C# кода с помощью Visual Studio
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Методов отладки и средства, которые помогут вам создавать лучший код
 
-Отладка кода может занимать много времени — и иногда раздражающим--задачи. Требуется время, чтобы узнать, как для эффективной отладки, но это мощная интегрированная среда разработки, как Visual Studio можно сделать вашу работу, гораздо проще. Интегрированная среда разработки может помочь вам в отладке кода быстрее, а не просто, но он может также помочь в написании качественного кода с меньшим количеством ошибок. Нашей целью этой статьи — дать вам целостное представление о процесс отладки, поэтому вы будете знать, когда следует использовать анализатор кода, для использования отладчика и когда следует использовать другие средства.
+Исправления ошибок и ошибок в коде может занимать много времени — и иногда раздражающим--задачи. Требуется время, чтобы узнать, как для эффективной отладки, но это мощная интегрированная среда разработки, как Visual Studio можно сделать вашу работу, гораздо проще. Интегрированная среда разработки может помочь устранить ошибки и отлаживать код быстрее, а не просто, но он может также помочь в написании качественного кода с меньшим количеством ошибок. Нашей целью этой статьи — дать вам целостное представление о процессе «исправление ошибок», поэтому вы будете знать, когда следует использовать анализатор кода, когда следует использовать отладчик, возникновение исключения и как программировать для цели. Если вы уже знаете, необходимо использовать отладчик, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md).
 
-В этой статье мы говорим о использование интегрированной среды разработки, чтобы повысить эффективность ваших сеансах отладки. Мы коснусь несколько задач, таких как:
+В этой статье мы говорим о использование интегрированной среды разработки, чтобы повысить эффективность написания кода сеансов. Мы коснусь несколько задач, таких как:
 
 * Подготовка кода для отладки за счет использования анализатора кода интегрированной среды разработки
 
 * Возникновение исключения (ошибки времени выполнения)
 
-* Как свести к минимуму ошибки путем написания кода для цели
+* Как свести к минимуму ошибки путем написания кода для цели, (используя assert)
 
 * Когда следует использовать отладчик
 
 Чтобы продемонстрировать эти задачи, мы покажем некоторые из наиболее распространенных типов ошибок и ошибок, придется столкнуться при попытке отладки приложения. Несмотря на то, что образец кода находится C#, основные данные обычно относится к C++, Visual Basic, JavaScript и другие языки, поддерживаемые средой Visual Studio (за исключением оговоренных случаев). На снимках экрана представлены примеры на C#.
 
-## <a name="follow-along-using-the-sample-app"></a>Выполнить его с использованием примера приложения
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Создавать пример приложения с некоторыми ошибки и ошибки
 
-При желании можно создать консольное приложение .NET Framework или .NET Core, которое содержит точные ошибки и ошибки, которые здесь, и выполнить инструкции и внести исправления самостоятельно.
+В следующем коде у некоторые ошибки, которые можно исправить с помощью Visual Studio IDE. Здесь приложение представляет собой простое приложение, которое имитирует получение данных JSON с некоторой операции десериализации данных к объекту и обновление простой список с новыми данными.
 
-Чтобы создать приложение, откройте Visual Studio и выберите **файл > Новый проект**. В разделе **Visual C#** , выберите **Windows Desktop** или **.NET Core**, а затем в средней области выберите **консольное приложение**. Введите имя, например **Console_Parse_JSON** и нажмите кнопку **ОК**. Visual Studio создаст проект. Вставить [пример кода](#sample-code) в проект *Program.cs* файл.
+Создание приложения:
 
-> [!NOTE]
-> Если шаблон проекта **Консольное приложение** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создание проекта**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем щелкните **Изменить**.
+1. Откройте Visual Studio и выберите **файл > Новый проект**. В разделе **Visual C#** , выберите **Windows Desktop** или **.NET Core**, а затем в средней области выберите **консольное приложение**.
+
+    > [!NOTE]
+    > Если шаблон проекта **Консольное приложение** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создание проекта**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем щелкните **Изменить**.
+
+2. В **имя** введите **Console_Parse_JSON** и нажмите кнопку **ОК**. Visual Studio создаст проект.
+
+3. Замените код по умолчанию в проекте *Program.cs* файл с примером кода ниже.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>Найти волнистые линии красного и зеленого!
 
@@ -65,9 +192,9 @@ ms.locfileid: "53967580"
 
 Если щелкнуть этот элемент, Visual Studio добавляет `using System.Text` инструкция в верхней части *Program.cs* файл, а красная волнистая линия исчезнет. (Если вы не знаете, что сделает предложенное исправление, выберите **Предварительный просмотр изменений** ссылку справа перед установкой исправления.)
 
-Предыдущую ошибку это общая, обычно устранить, добавив новый `using` в код оператор. Существует несколько распространенных, как и ошибок в этот узел, например ```The type or namespace `Name` cannot be found.``` ошибки такого рода может означать отсутствует ссылка на сборку (щелкните правой кнопкой мыши проект, выберите **добавить** > **ссылку**), имя написано с ошибками или библиотеку отсутствует, необходимо добавить с помощью NuGet (щелкните правой кнопкой мыши проект и выберите **управление пакетами NuGet**).
+Предыдущую ошибку это общая, обычно устранить, добавив новый `using` в код оператор. Существует несколько распространенных, как и ошибок в этот узел, например ```The type or namespace `Name` cannot be found.``` ошибки такого рода может означать отсутствует ссылка на сборку (щелкните правой кнопкой мыши проект, выберите **добавить** > **ссылку**), имя написано с ошибками или библиотеку отсутствует, необходимо добавить (для C#, щелкните правой кнопкой мыши проект и выберите пункт **управление пакетами NuGet**).
 
-## <a name="fix-the-errors-and-warnings"></a>Исправьте ошибки и предупреждения
+## <a name="fix-the-remaining-errors-and-warnings"></a>Исправьте оставшиеся ошибки и предупреждения
 
 Существует несколько дополнительных волнистые линии для просмотра в этом коде. Здесь вы увидите распространенная ошибка преобразования типа. При наведении указателя мыши наведен на волнистую линию, вы видите, что код пытается преобразовать строку в значение типа int, который не поддерживается, пока вы не добавите явного кода, чтобы выполнить преобразование.
 
@@ -128,7 +255,7 @@ item.totalpoints += users[i].points;
 
 * -Это исключение, то, что пользователи могут возникнуть?
 
-Если это первый вариант исправления ошибки. (В примере приложения, это значит, что исправить неверные данные.) Если это последний, может потребоваться обработать исключение в коде с помощью `try/catch` блока (взглянуть на другие возможные исправления в следующем разделе). В примере приложения замените следующий код:
+Если это первый вариант исправления ошибки. (В примере приложения, это значит, что исправить неверные данные.) Если это последний, может потребоваться обработать исключение в коде с помощью `try/catch` блока (взглянуть на другие возможные стратегии в следующем разделе). В примере приложения замените следующий код:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -277,131 +404,6 @@ Debug.Assert(users[0].points > 0);
 ## <a name="fix-performance-issues"></a>Исправление проблем производительности
 
 Ошибки другого типа включают неэффективный код, приложение работает медленно или использовать слишком много памяти. Как правило оптимизация производительности — это можно сделать позже в процессе разработки приложения. Тем не менее, могут возникнуть проблемы с производительностью раньше (например, вы см. что некоторая часть приложение работает медленно), и может потребоваться протестировать приложение с помощью средств профилирования на раннем этапе. Дополнительные сведения о профилировании средства, такие как средство использования ЦП и анализатором памяти, см. в разделе [сначала посмотрим, средства профилирования](../profiling/profiling-feature-tour.md).
-
-## <a name="sample-code"></a> Пример кода
-
-В следующем коде у некоторые ошибки, которые можно исправить с помощью Visual Studio IDE. Здесь приложение представляет собой простое приложение, которое имитирует получение данных JSON с некоторой операции десериализации данных к объекту и обновление простой список с новыми данными.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) {
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>Следующие шаги
 

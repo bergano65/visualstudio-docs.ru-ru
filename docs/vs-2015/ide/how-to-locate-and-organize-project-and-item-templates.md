@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов | Microsoft Docs
-ms.custom: ''
+title: Как выполнить Размещение и упорядочение проектов и шаблонов элементов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778530"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49830981"
   
   Например, следующий каталог содержит настраиваемые шаблоны проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
-  C:\Documents and Settings\UserName\My документов\\< версия Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\\<Visual Studio версия\>\Templates\ProjectTemplates\Visual C#\  
   
   Пользовательские шаблоны не включают подкаталог для локализованных шаблонов. Каталог по умолчанию для пользовательских шаблонов можно изменить в диалоговом окне **Параметры** в области **Среда\Проекты и решения**.  
   
@@ -122,7 +117,7 @@ ms.locfileid: "49830981"
   
 1. Создайте папку в папке языка, находящейся в каталоге пользовательских шаблонов проектов. Например, чтобы создать категорию HelloWorld для шаблонов [!INCLUDE[csprcs](../includes/csprcs-md.md)], необходимо создать следующий каталог:  
   
-    \My documents\\< версия Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio версия\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Поместите все шаблоны для этой категории в новую папку.  
   
@@ -136,7 +131,7 @@ ms.locfileid: "49830981"
   
 1.  Создайте папку в папке языка, находящейся в каталоге пользовательских шаблонов элементов. Например, чтобы создать категорию HelloWorld для шаблонов [!INCLUDE[csprcs](../includes/csprcs-md.md)], необходимо создать следующий каталог:  
   
-     \My documents\\< версия Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio версия\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Поместите все шаблоны для этой категории в новую папку.  
   
@@ -177,12 +172,9 @@ ms.locfileid: "49830981"
   
 8.  Поместите новый ZIP-файл в каталог, где находился удаленный ZIP-файл.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)   
  [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
-
-
-

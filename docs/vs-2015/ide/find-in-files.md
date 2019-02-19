@@ -1,14 +1,9 @@
 ---
 title: Поиск в файлах | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -25,18 +20,18 @@ ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804363"
 ---
 # <a name="find-in-files"></a>Поиск в файлах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Поиск в файлах ** позволяет поиск в указанном наборе файлов. Найденные совпадения и предпринятые действия перечисляются в окне **Результаты поиска**, выбранном в разделе **Параметры результатов**.  
+Функция Поиск в файлах** позволяет выполнять поиск в указанном наборе файлов. Найденные совпадения и предпринятые действия перечисляются в окне **Результаты поиска**, выбранном в разделе **Параметры результатов**.  
   
  Для отображения функции **Поиск в файлах** в окне **Поиск и замена** можно использовать любой из указанных ниже методов.  
   
@@ -98,10 +93,7 @@ ms.locfileid: "49902143"
  Добавить результаты  
  Добавляет результаты поиска в результаты предыдущей операции поиска.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Поиск и замена текста](../ide/finding-and-replacing-text.md)   
  [Заменить в файлах](../ide/replace-in-files.md)   
  [Команды Visual Studio](../ide/reference/visual-studio-commands.md)
-
-
-

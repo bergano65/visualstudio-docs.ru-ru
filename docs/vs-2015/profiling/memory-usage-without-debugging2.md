@@ -1,14 +1,9 @@
 ---
 title: Использование памяти без отладки 2 | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ebd4dd187f2b976ca7861f95609dd6ce8d8d318f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4612325b467e92b40650d591b7d03bc611e66640
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765087"
 ---
 # <a name="memory-usage-without-debugging"></a>Использование памяти без отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,12 +202,9 @@ ms.locfileid: "51808587"
 |**Размер (байт)**|Для экземпляра — это размер объекта в основном снимке без учета размера объектов, содержащихся в этом экземпляре.<br /><br /> Для типа — это общий размер экземпляров типа в основном снимке без учета размера объектов, содержащихся в этом экземпляре.|  
 |**Инклюзивный размер (байт)**|Размер объектов в основном снимке с учетом размера объектов, содержащихся в этих объектах.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Память JavaScript](../profiling/javascript-memory.md)   
  [Анализ производительности приложений](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Использования инструментов диагностики и производительности](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Запуск средств анализа производительности](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Диагностика проблем, связанных с памятью, с помощью нового средства "Использование памяти" в Visual Studio)
-
-
-

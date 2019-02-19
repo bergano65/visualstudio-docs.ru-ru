@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b64b561c5b033a270458c258a418b4483f733b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 29cc861fde8f8ae9690be26b23ea39e5d7434d14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949003"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Перечисляет различные разделе материалов, содержащихся в источнике данных.  
@@ -104,7 +104,7 @@ void ShowSectionContribs(IDiaSession *pSession)
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также раздел  
  [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

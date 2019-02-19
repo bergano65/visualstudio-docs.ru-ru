@@ -1,24 +1,19 @@
 ---
 title: Анализ объема протестированного кода в тестах проверки сборки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b67986e42a914c73dea99f97611967aa6ee24097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7525fe8e01922880199275576a8b12ec29bc029
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905458"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834937"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Анализ покрытия кода в тестах проверки построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49905458"
   
     При наличии нескольких определений исходного кода теста повторите этот шаг для каждого из них.  
   
-   - <em>Но не существует поля с именем **тип файла параметров запуска</em>*. *  
+   - <em>Однако не существует поля с именем **Тип файла параметров запуска</em>*.*  
   
       В разделе **Автоматизированные тесты** щелкните **Тестовая сборка** и нажмите кнопку с многоточием **[...]** в конце строки. В диалоговом окне **Добавление/изменение тестового запуска** в разделе **Средство выполнения тестов** щелкните **Средство выполнения тестов Visual Studio**.  
   
@@ -41,8 +36,5 @@ ms.locfileid: "49905458"
   
    После выполнения сборки результаты анализа объема протестированного кода отображаются в сводке сборки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

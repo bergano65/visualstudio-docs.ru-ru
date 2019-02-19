@@ -1,27 +1,22 @@
 ---
-title: Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара | Документация Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание реалистичного трехмерного Бильярдного шара | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793309"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного Бильярдного шара
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве демонстрируется создание реалистичного трехмерного бильярдного шара с помощью конструктора шейдеров и редактора изображений в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Объемный внешний вид бильярдного шара достигается путем сочетания нескольких шейдерных методик с соответствующими текстурными ресурсами.  
@@ -193,7 +188,7 @@ ms.locfileid: "49829590"
   
    ![Макет кубической карты окружающей среды](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   Изображение сверху — это положительное грани куба Y (+ Y); посередине, слева направо является – X, + Z, + X и – Z сторон; куба внизу — сторону куба – Y.  
+   Изображение сверху — это сторона куба, соответствующая положительной грани куба Y (+Y); посередине, слева направо — стороны –X, +Z, +X и –Z; внизу — грань куба –Y.  
   
    Теперь можно изменить шейдер для смешивания образца кубической карты с остальной частью шейдера.  
   
@@ -219,12 +214,9 @@ ms.locfileid: "49829590"
   
    На этом последнем рисунке обратите внимание, как добавленные эффекты все вместе позволяют создать выглядящий очень реалистично бильярдный шар. Форма, текстура и освещение создают основной внешний вид трехмерного объекта, а отражающие яркие зоны и отражения делают шар более реалистичным и вписывающимся в свое окружение.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)   
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Редактор изображений](../designers/image-editor.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

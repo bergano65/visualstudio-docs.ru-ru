@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204497"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070621"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Навигация по коду с помощью отладчика Visual Studio
 
-Отладчик Visual Studio может помочь переходы по коду, чтобы проверять состояние приложения и показать его поток выполнения. Можно использовать сочетания клавиш, команды отладки, точки останова и другие функции, чтобы быстро найти код, который вы хотите проанализировать. Знакомство с команд навигации отладчика и сочетаний клавиш позволяет быстрее и проще находить и решения проблем в приложениях.  Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
+Отладчик Visual Studio может помочь переходы по коду, чтобы проверять состояние приложения и показать его поток выполнения. Можно использовать сочетания клавиш, команды отладки, точки останова и другие функции, чтобы быстро найти код, который вы хотите проанализировать. Знакомство с команд навигации отладчика и сочетаний клавиш позволяет быстрее и проще находить и решения проблем в приложениях.  Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [отладки для начинающих](../debugger/debugging-absolute-beginners.md) и [методик и средств отладки](../debugger/write-better-code-with-visual-studio.md) прежде чем приступить к этой статье.
   
 ## <a name="basic-debugging"></a>Основы отладки  
 
@@ -186,5 +186,5 @@ ms.locfileid: "54204497"
 
 ## <a name="see-also"></a>См. также
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) 
