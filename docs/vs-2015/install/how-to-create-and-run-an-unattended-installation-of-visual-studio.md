@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание и выполнение автоматической установки | Документация Майкрософт
+title: 'Практическое: Создание и выполнение автоматической установки | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803566"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Как выполнить Создание и выполнение автоматической установки Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Приложение установки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно запустить в режиме автоматической установки (т. е. настроенной тихой установки) через интрасеть вместо выполнения установки с носителя, например DVD-диска. В этом разделе описывается Подготовка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для этого типа установки из общей сетевой папки.
@@ -114,7 +114,7 @@ ms.locfileid: "54803566"
 
 2. Нажмите кнопку **Пуск** и выберите **Выполнить**.
 
-3. Введите следующий текст: \\\\*ServerName*\IDEinstall\vs_*продукта*.exe/adminfile PathToAdmindeployment.xml файла
+3. Введите следующий текст: \\ \\ *ServerName*\IDEinstall\vs_*продукта*.exe/adminfile PathToAdmindeployment.xml файла
 
     ДополнительныеПараметрыПоМереНеобходимости
 
@@ -173,7 +173,7 @@ ms.locfileid: "54803566"
 
 2.  Введите ключ продукта.
 
-     Дополнительные сведения см. в разделе [Практическое руководство. Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [как: Автоматическое применение ключей продуктов при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) разделы.)
+     (Дополнительные сведения см. в разделе [как: найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [как: автоматическое применение ключей продуктов при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) разделы.)
 
 ## <a name="see-also"></a>См. также раздел
  [Установка Visual Studio](../install/install-visual-studio-2015.md)

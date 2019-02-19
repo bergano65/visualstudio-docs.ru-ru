@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767996"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
@@ -58,7 +58,7 @@ ms.locfileid: "54767996"
 |WordWrap|Get/Set (Boolean)|Определяет, будут ли в представлении отображаться длинные строки с переносом на границах слов. Если этому свойству присвоить значение `true`, то элементу свойства `VirtualSpace` (в этом списке) будет присвоено значение `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Отображает глиф в конце строки; это указывает, что строка переносится на следующую строку.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Определяет, должен ли редактор подчеркивать URL-адреса и позволять переходить по данному URL-адресу посредством щелчка левой кнопкой мыши, сделанного в зарегистрированном системном веб-браузере.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов: Default, Smart или None.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов.: Default, Smart или None.|  
 |TabSize|Get/Set (Long)|Представляет величину шага табуляции в знаках. Не допускается использовать целое число вне диапазона от 1 до 60 (включительно).|  
 |InsertTabs|Get/Set (Boolean)|`True` означает использование знаков табуляции в отступах.|  
 |IndentSize|Get/Set (Long)|Представляет величину одного уровня отступа в знаках. Не допускается использовать целочисленное значение вне диапазона от 1 до 60 (включительно).|  
