@@ -12,91 +12,91 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7f4dd7db162c6fc5ae80e179396196abd7938b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038660"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412998"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-enum enum_DEBUGREF_INFO_FLAGS {   
-   DEBUGREF_INFO_NAME             = 0x00000001,  
-   DEBUGREF_INFO_TYPE             = 0x00000002,  
-   DEBUGREF_INFO_VALUE            = 0x00000004,  
-   DEBUGREF_INFO_ATTRIB           = 0x00000008,  
-   DEBUGREF_INFO_REFTYPE          = 0x00000010,  
-   DEBUGREF_INFO_REF              = 0x00000020,  
-   DEBUGREF_INFO_VALUE_AUTOEXPAND = 0x00010000,  
-   DEBUGREF_INFO_NONE             = 0x00000000,  
-   DEBUGREF_INFO_ALL              = 0xffffffff  
-};  
-typedef DWORD DEBUGREF_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_DEBUGREF_INFO_FLAGS {   
-   DEBUGREF_INFO_NAME             = 0x00000001,  
-   DEBUGREF_INFO_TYPE             = 0x00000002,  
-   DEBUGREF_INFO_VALUE            = 0x00000004,  
-   DEBUGREF_INFO_ATTRIB           = 0x00000008,  
-   DEBUGREF_INFO_REFTYPE          = 0x00000010,  
-   DEBUGREF_INFO_REF              = 0x00000020,  
-   DEBUGREF_INFO_VALUE_AUTOEXPAND = 0x00010000,  
-   DEBUGREF_INFO_NONE             = 0x00000000,  
-   DEBUGREF_INFO_ALL              = 0xffffffff  
-};  
-```  
-  
-## <a name="members"></a>Участники  
- DEBUGREF_INFO_NAME  
- Инициализация и использование `bstrName` в структуре.  
-  
- DEBUGREF_INFO_TYPE  
- Инициализация и использование `bstrType` в структуре.  
-  
- DEBUGREF_INFO_VALUE  
- Инициализация и использование `bstrValue` в структуре.  
-  
- DEBUGREF_INFO_ATTRIB  
- Инициализация и использование `dwAttrib` в структуре.  
-  
- DEBUGREF_INFO_REFTYPE  
- Инициализация и использование `dwRefType` в структуре.  
-  
- DEBUGREF_INFO_REF  
- Инициализация и использование `pReference` в структуре.  
-  
- DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.  
-  
- DEBUGREF_INFO_NONE  
- Указывает, что флаги не установлены.  
-  
- DEBUGREF_INFO_ALL  
- Указывает маску флагов.  
-  
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.  
-  
- Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структура указывает, какие поля используются и допустимым при возвращении структуры.  
-  
- Эти значения могут объединяться с побитовым объектом `OR`.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+enum enum_DEBUGREF_INFO_FLAGS {
+    DEBUGREF_INFO_NAME             = 0x00000001,
+    DEBUGREF_INFO_TYPE             = 0x00000002,
+    DEBUGREF_INFO_VALUE            = 0x00000004,
+    DEBUGREF_INFO_ATTRIB           = 0x00000008,
+    DEBUGREF_INFO_REFTYPE          = 0x00000010,
+    DEBUGREF_INFO_REF              = 0x00000020,
+    DEBUGREF_INFO_VALUE_AUTOEXPAND = 0x00010000,
+    DEBUGREF_INFO_NONE             = 0x00000000,
+    DEBUGREF_INFO_ALL              = 0xffffffff
+};
+typedef DWORD DEBUGREF_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_DEBUGREF_INFO_FLAGS {
+    DEBUGREF_INFO_NAME             = 0x00000001,
+    DEBUGREF_INFO_TYPE             = 0x00000002,
+    DEBUGREF_INFO_VALUE            = 0x00000004,
+    DEBUGREF_INFO_ATTRIB           = 0x00000008,
+    DEBUGREF_INFO_REFTYPE          = 0x00000010,
+    DEBUGREF_INFO_REF              = 0x00000020,
+    DEBUGREF_INFO_VALUE_AUTOEXPAND = 0x00010000,
+    DEBUGREF_INFO_NONE             = 0x00000000,
+    DEBUGREF_INFO_ALL              = 0xffffffff
+};
+```
+
+## <a name="members"></a>Участники
+DEBUGREF_INFO_NAME  
+Инициализация и использование `bstrName` в структуре.
+
+DEBUGREF_INFO_TYPE  
+Инициализация и использование `bstrType` в структуре.
+
+DEBUGREF_INFO_VALUE  
+Инициализация и использование `bstrValue` в структуре.
+
+DEBUGREF_INFO_ATTRIB  
+Инициализация и использование `dwAttrib` в структуре.
+
+DEBUGREF_INFO_REFTYPE  
+Инициализация и использование `dwRefType` в структуре.
+
+DEBUGREF_INFO_REF  
+Инициализация и использование `pReference` в структуре.
+
+DEBUGREF_INFO_VALUE_AUTOEXPAND  
+Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+
+DEBUGREF_INFO_NONE  
+Указывает, что флаги не установлены.
+
+DEBUGREF_INFO_ALL  
+Указывает маску флагов.
+
+## <a name="remarks"></a>Примечания
+Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.
+
+Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структура указывает, какие поля используются и допустимым при возвращении структуры.
+
+Эти значения могут объединяться с побитовым объектом `OR`.
+
+## <a name="requirements"></a>Требования
+Header: msdbg.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
+[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
+[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
