@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780502"
 ---
 # <a name="supplying-xml-code-comments"></a>Создание XML-примечаний к коду
@@ -27,7 +27,7 @@ ms.locfileid: "54780502"
 
 Примечания в файлах исходного кода можно сделать доступными в виде IntelliSense. При добавлении параметра /doc в командную строку компилятора Visual Basic, C# или C++ создается XML-файл, который служит основой для документации IntelliSense.  
   
- Дополнительные сведения о документировании кода в Visual Basic, см. в разделе [как: Создание XML-документации](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Дополнительные сведения о документировании кода в Visual Basic см. в разделе [Практическое руководство. Создание XML-документации](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
  Дополнительные сведения о документировании кода в C# см. в разделе [Комментарии XML-документации](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   

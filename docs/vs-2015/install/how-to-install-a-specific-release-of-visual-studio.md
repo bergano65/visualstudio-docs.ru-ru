@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Установка конкретного выпуска | Документация Майкрософт
+title: 'Практическое: Установка конкретного выпуска | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756364"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Как выполнить Установка конкретного выпуска Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Практическое руководство. Установка конкретного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Программа установки Visual Studio часто обновляется, поэтому у вас всегда будет самая актуальная, оптимизированная версия дополнительных функций.  Но, если вы хотите установить более раннюю версию Visual Studio 2015, например выпуск Visual Studio без обновления 1 с поддержкой iOS, при установке Visual Studio необходимо принудительно использовать более раннюю версию файлов манифеста компонентов. В этой статье описывается, как это сделать.
@@ -33,7 +33,7 @@ ms.locfileid: "54756364"
 
 |Выпуск Visual Studio 2015|Что запускать|Использование командной строки|Что делает программа установки|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise (последний общедоступный выпуск)|Visual Studio Enterprise с обновлениями (доступные из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Примечание:**  По умолчанию при установке предлагаются самые последние дополнительные возможности, поэтому параметры командной строки не требуются.|Программа установки Visual Studio будет использовать последнюю версию файла feed.xml и установит последние файлы|
+|Visual Studio Enterprise (последний общедоступный выпуск)|Visual Studio Enterprise с обновлениями (доступные из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Примечание.** По умолчанию эта установка предлагает последние версии дополнительных компонентов, поэтому параметры командной строки для нее не требуются.|Программа установки Visual Studio будет использовать последнюю версию файла feed.xml и установит последние файлы|
 |Обновление 3 для Visual Studio Enterprise (исходное обновление 3 без последующих обновлений)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступна после выпуска с обновлением 3|
 |Visual Studio Enterprise с обновлением 2 (исходное обновление 2, но с обновлениями, до появления обновления 3)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была текущей до выпуска обновления 3|
 |Visual Studio Enterprise (исходное обновление 2 без дальнейших обновлений 2 эры обновления)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступна после выпуска с обновлением 2|
