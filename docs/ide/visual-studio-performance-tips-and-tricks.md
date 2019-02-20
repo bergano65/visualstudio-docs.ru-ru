@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d800336a921d76e3b30580127547081dc8f02967
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930250"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318775"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
@@ -130,4 +130,4 @@ Visual Studio отображает уведомление на желтой па
 ## <a name="see-also"></a>См. также
 
 - [Оптимизация производительности Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Быстрая загрузка решений (блог по Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Быстрая загрузка решений (блог по Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

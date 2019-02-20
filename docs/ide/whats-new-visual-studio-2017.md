@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935099"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318814"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -72,7 +72,7 @@ Visual Studio упрощает и ускоряет установку необх
 
 В **версии 15.3** мы внесли более 1700 целевых исправлений, которые улучшают совместимость Visual Studio и вспомогательных технологий, используемых нашими клиентами. Эта версия содержит множество сценариев, которые лучше совмещаются с средством чтения с экрана, темами с высокой контрастностью и другими специальными возможностями по сравнению со сценариями предыдущих версий. Мы также значительно улучшили отладчик, редактор и оболочку.
 
-Дополнительные сведения см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+Дополнительные сведения см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
 ## <a name="performance-and-productivity"></a>Быстродействие и производительность
 
@@ -80,7 +80,7 @@ Visual Studio упрощает и ускоряет установку необх
 
 В Visual Studio представлена новая служба идентификации, которая позволяет совместно использовать учетные записи пользователей в Team Explorer, инструментах Azure, публикациях для Microsoft Store и т. д.
 
-Вы также можете дольше оставаться в системе. Не требуется выполнять вход через каждые 12 часов. Дополнительные сведения см. в записи блога [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) (Сокращение количества запросов на вход в Visual Studio).
+Вы также можете дольше оставаться в системе. Не требуется выполнять вход через каждые 12 часов. Дополнительные сведения см. в записи блога [Fewer Visual Studio Sign-in Prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) (Сокращение количества запросов на вход в Visual Studio).
 
 ### <a name="start-visual-studio-faster"></a>Быстрый запуск Visual Studio
 
@@ -131,7 +131,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Дополнительные сведения об автоматических тестах см. в записи блога [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Конвейер CI/CD для автоматических тестов в DevOps).
 
-Дополнительные сведения о новых возможностях расширения DevLabs [Инструменты непрерывной поставки для Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) см. в записи блога [Уверенная фиксация: качество кода во время фиксации](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/).
+Дополнительные сведения о новых возможностях расширения DevLabs [Инструменты непрерывной поставки для Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) см. в записи блога [Уверенная фиксация: качество кода во время фиксации](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Усовершенствования интегрированной среды разработки Visual Studio
 
@@ -188,7 +188,7 @@ Visual Studio перемещает свои расширения, а также 
 
   ![Визуализатор структуры Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Дополнительные сведения о новых функциях производительности см. в статье блога о [производительности в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/), опубликованной Марком Уилсоном-Томасом (Mark Wilson-Thomas).
+Дополнительные сведения о новых функциях производительности см. в статье блога о [производительности в Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/), опубликованной Марком Уилсоном-Томасом (Mark Wilson-Thomas).
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Visual Studio перемещает свои расширения, а также 
 
 ![Новое диалоговое окно помощника по исправлению ошибок в Visual Studio](media/vs2017ide-ExceptionHelper.png)
 
-Дополнительные сведения см. в публикации [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Использование нового помощника по исправлению ошибок в Visual Studio).
+Дополнительные сведения см. в публикации [Use the new Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) (Использование нового помощника по исправлению ошибок в Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Моментальные снимки и возможность возврата на шаг назад в IntelliTrace
 
@@ -328,7 +328,7 @@ Visual Studio перемещает свои расширения, а также 
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
 
-Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 
 ### <a name="net-core"></a>.NET Core
 

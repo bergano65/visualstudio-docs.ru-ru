@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979495"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316916"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Запуск средств профилирования с отладчиком или без него
 
@@ -63,7 +63,7 @@ Visual Studio предлагает различные средства для и
 
 ![Поиск диагностических событий](../profiling/media/diagnosticseventsearch.png "Поиск диагностических событий")  
 
-Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
+Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
 
 ## <a name="collect-profiling-data-without-debugging"></a>Сбор данных профилирования без отладки  
 
@@ -118,14 +118,14 @@ Visual Studio предлагает различные средства для и
   
  [Журнал MSDN Magazine. Использование IntelliTrace для ускоренной диагностики проблем](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
  [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [IntelliTrace в Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [IntelliTrace в Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

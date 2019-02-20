@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954053"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318557"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по специальным возможностям для Visual Studio
 
 > [!TIP]
-> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
 Visual Studio имеет встроенные специальные возможности, совместимые со средствами чтения с экрана и другими специальными возможностями. В этом разделе перечислены распространенные сочетания клавиш, позволяющие выполнять задачи с помощью одной клавиатуры, а также приведены сведения об использовании тем с высокой контрастностью для улучшения видимости. В нем также описано, как пользоваться заметками, чтобы получить полезные сведения о коде, и как настроить звуковые подсказки для событий сборки и точек останова.
 
