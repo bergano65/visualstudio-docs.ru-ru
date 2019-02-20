@@ -362,11 +362,14 @@ items:
     items:
     - name: Отладка живого приложения Azure
       href: debug-live-azure-applications.md
-      items:
-      - name: Ответы на часто задаваемые вопросы по отладке моментальных снимков
-        href: debug-live-azure-apps-faq.md
-      - name: Устранение неполадок отладки моментальных снимков
-        href: debug-live-azure-apps-troubleshooting.md
+    - name: Отладка живого приложения виртуальной машины Azure
+      href: debug-live-azure-virtual-machines.md
+    - name: Отладка живого приложения Azure Kubernetes
+      href: debug-live-azure-kubernetes.md
+    - name: Ответы на часто задаваемые вопросы по отладке моментальных снимков
+      href: debug-live-azure-apps-faq.md
+    - name: Устранение неполадок отладки моментальных снимков
+      href: debug-live-azure-apps-troubleshooting.md
   - name: Отладка конкретных типов приложений
     href: debugging-applications.md
     items:
@@ -586,7 +589,7 @@ items:
         - name: Присоединение к скрипту
           href: how-to-attach-to-script.md
           items:
-          - name: Предупреждение. Отладка скриптов отключена
+          - name: 'Предупреждение: Отладка скриптов отключена'
             href: warning-script-debugging-disabled.md
     - name: Отладка служб WCF
       href: debugging-wcf-services.md
@@ -838,9 +841,9 @@ items:
   items:
   - name: Новые возможности отладчика в Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 71d02bd5fba02367da6f28400c4b991784422133
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231665"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335471"

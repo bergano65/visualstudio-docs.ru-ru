@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcb1dbd003dca3139d9370460805b03f03647f43
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923783"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318456"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>С помощью Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -296,7 +296,7 @@ ms.locfileid: "54923783"
 ### <a name="q-where-can-i-get-more-information"></a>В. Где найти дополнительные сведения?  
   
 #### <a name="blogs"></a>Блоги  
- [Введение в Microsoft Monitoring Agent](https://blogs.msdn.microsoft.com/devops/2013/09/20/introducing-microsoft-monitoring-agent/)  
+ [Введение в Microsoft Monitoring Agent](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent/)  
   
  [Оптимизация сбора данных IntelliTrace на рабочих серверах](http://go.microsoft.com/fwlink/?LinkId=255233)  
   

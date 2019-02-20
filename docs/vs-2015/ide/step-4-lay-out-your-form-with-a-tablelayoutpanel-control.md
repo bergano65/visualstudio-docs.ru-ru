@@ -1,25 +1,20 @@
 ---
-title: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel | Microsoft Docs
-ms.custom: ''
+title: Шаг 4. Создание макета формы с элементом управления TableLayoutPanel | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763275"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ ms.locfileid: "49210103"
      ![Окно "Свойства", в котором нажата кнопка "Заполнение"](../ide/media/express-docktable.png "Express_DockTable")  
 Окно "Свойства", в котором нажата кнопка "Заполнение"  
   
-     Под *закреплением* в Visual Studio понимается прикрепление окна к другому окну или области в интегрированной среде разработки. Например, окно свойств можно открепить т.е отсоединить и свободные в Visual Studio — или его можно прикреплять к **обозревателе решений**.  
+     Под *закреплением* в Visual Studio понимается прикрепление окна к другому окну или области в интегрированной среде разработки. Например, окно свойств можно оставить неприкрепленным в пределах окна Visual Studio или же закрепить в области **Обозреватель решений**.  
   
 7.  После того как у элемента управления TableLayoutPanel свойству **Dock** будет присвоено значение **Fill**, панель заполнит всю форму. Если снова изменить размер формы, элемент управления TableLayoutPanel останется закрепленным и сам изменит свой размер для заполнения формы.  
   
@@ -98,6 +93,3 @@ Form1 с измененным размером TableLayoutPanel
 -   Следующий шаг руководства см. в разделе [Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md).  
   
 -   Предыдущий шаг руководства см. в разделе [Шаг 3. Задание свойств формы](../ide/step-3-set-your-form-properties.md).
-
-
-

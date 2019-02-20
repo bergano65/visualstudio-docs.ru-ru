@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016538"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318424"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
@@ -77,9 +77,9 @@ ms.locfileid: "55016538"
 3. Найдите переменную в **"Локальные"** окна (**Отладка > Windows > "Локальные"**), щелкните переменную правой кнопкой мыши и выберите **создать идентификатор объекта**.
 
     ![Создать идентификатор объекта](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  В окне **$** вы должны увидеть символ **Локальные** . Эта переменная содержит идентификатор объекта.
-  
+
 5.  Щелкните правой кнопкой мыши переменную идентификатор объекта и выберите **Добавить контрольное значение**.
 
 Дополнительные сведения см. в разделе [создать идентификатор объекта](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ ms.locfileid: "55016538"
 #### <a name="to-show-threads-in-your-source-code"></a>Чтобы показать потоки в исходном коде
 
 1.  Во время отладки, нажмите кнопку **Показать потоки в исходном коде** кнопку ![Показать потоки в исходном коде](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") в **Отладка** панели инструментов.
-  
+
 2.  Посмотрите на переплет в левой части окна. В этой строке, вы увидите *маркер потока* значок ![маркер потока](../debugger/media/dbg-thread-marker.png "ThreadMarker") , похож на 2 тряпичных нити. маркер потока указывает, что некий поток остановлен в этом месте.
 
     Обратите внимание на то, что маркер потока может быть частично скрыт с помощью точки останова.
-  
+
 3.  Наведите указатель мыши на маркер потока. Появится подсказка. Подсказка сообщает имя и идентификационный номер каждого остановившегося тут потока.
 
     Вы также можете просмотреть расположение потоков в [окна "Параллельные стеки"](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ ms.locfileid: "55016538"
 
 Дополнительные советы и приемы работы и более подробные сведения см. в статье эти сообщения в блогах:
 
-- [7 менее известные взлома для отладки в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 Скрытые жемчужины в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 менее известные взлома для отладки в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 Скрытые жемчужины в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>См. также раздел
 [Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)

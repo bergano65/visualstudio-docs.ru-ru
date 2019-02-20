@@ -23,45 +23,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b440c2e95432dfa543d7e9aacae1256b27929de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020195"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227739"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Использование проверки кода во время выполнения без библиотеки среды выполнения C
-Если при компоновке программы без библиотеки времени выполнения C, с помощью **/NODEFAULTLIB**и необходимо использовать проверки времени выполнения, нужно осуществлять компоновку с RunTmChk.lib.  
-  
- `_RTC_Initialize` инициализирует программу для осуществления проверок во время выполнения. Если компоновка осуществляется без библиотеки времени выполнения языка C, перед вызовом `_RTC_Initialize` необходимо проверить, компилируется ли программа с проверками во время выполнения:  
-  
+Если при компоновке программы без библиотеки времени выполнения C, с помощью **/NODEFAULTLIB**и необходимо использовать проверки времени выполнения, нужно осуществлять компоновку с RunTmChk.lib.
+
+`_RTC_Initialize` инициализирует программу для осуществления проверок во время выполнения. Если компоновка осуществляется без библиотеки времени выполнения языка C, перед вызовом `_RTC_Initialize` необходимо проверить, компилируется ли программа с проверками во время выполнения:
+
 ```cpp
-#ifdef __MSVC_RUNTIME_CHECKS  
-    _RTC_Initialize();  
-#endif  
-```  
-  
- Если не осуществлять компоновку с библиотекой времени выполнения C, то необходимо определить функцию с именем `_CRT_RTC_INITW`. `_CRT_RTC_INITW` устанавливает пользовательскую функцию как используемую по умолчанию функцию сообщений об ошибках, как показано ниже:  
-  
+#ifdef __MSVC_RUNTIME_CHECKS
+    _RTC_Initialize();
+#endif
+```
+
+Если не осуществлять компоновку с библиотекой времени выполнения C, то необходимо определить функцию с именем `_CRT_RTC_INITW`. `_CRT_RTC_INITW` устанавливает пользовательскую функцию как используемую по умолчанию функцию сообщений об ошибках, как показано ниже:
+
 ```cpp
-// C version:  
-_RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-        void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler.  
-    return &MyErrorFunc;   
-}  
-  
-// C++ version:  
-extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-       void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler:  
-    return &MyErrorFunc;  
-}  
-```  
-  
- После установки функции сообщения об ошибках по умолчанию можно установить дополнительные функции, сообщающие об ошибках, с помощью `_RTC_SetErrorFuncW`. Дополнительные сведения см. в разделе [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).  
-  
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)
+// C version:
+_RTC_error_fnW __cdecl _CRT_RTC_INITW(
+        void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler.
+    return &MyErrorFunc;
+}
+
+// C++ version:
+extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
+       void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler:
+    return &MyErrorFunc;
+}
+```
+
+После установки функции сообщения об ошибках по умолчанию можно установить дополнительные функции, сообщающие об ошибках, с помощью `_RTC_SetErrorFuncW`. Дополнительные сведения см. в разделе [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
+
+## <a name="see-also"></a>См. также раздел
+[Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)
