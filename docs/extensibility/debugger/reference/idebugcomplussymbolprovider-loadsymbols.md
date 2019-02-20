@@ -11,77 +11,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ce94b09c700c6274c14b6b7d8ff34e99b314ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007377"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413375"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-Загружает указанный отладочные символы в памяти.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT LoadSymbols(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   BSTR      bstrModuleName,  
-   BSTR      bstrSymSearchPath  
-);  
-```  
-  
-```csharp  
-int LoadSymbols(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   ulong  baseAddress,  
-   object pUnkMetadataImport,  
-   string bstrModuleName,  
-   string bstrSymSearchPath  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
-  
- `guidModule`  
- [in] Уникальный идентификатор mondule.  
-  
- `baseAddress`  
- [in] Базовый адрес памяти.  
-  
- `pUnkMetadataImport`  
- [in] Объект, содержащий метаданные символ.  
-  
- `bstrModuleName`  
- [in] Имя модуля.  
-  
- `bstrSymSearchPath`  
- [in] Путь для поиска файла символов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::LoadSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    ULONGLONG baseOffset,  
-    IUnknown* _pMetadata,  
-    BSTR bstrModule,  
-    BSTR bstrSearchPath)  
-{  
-    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Загружает указанный отладочные символы в памяти.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT LoadSymbols(
+    ULONG32   ulAppDomainID,
+    GUID      guidModule,
+    ULONGLONG baseAddress,
+    IUnknown* pUnkMetadataImport,
+    BSTR      bstrModuleName,
+    BSTR      bstrSymSearchPath
+);
+```
+
+```csharp
+int LoadSymbols(
+    uint   ulAppDomainID,
+    Guid   guidModule,
+    ulong  baseAddress,
+    object pUnkMetadataImport,
+    string bstrModuleName,
+    string bstrSymSearchPath
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`ulAppDomainID`  
+[in] Идентификатор домена приложения.
+
+`guidModule`  
+[in] Уникальный идентификатор mondule.
+
+`baseAddress`  
+[in] Базовый адрес памяти.
+
+`pUnkMetadataImport`  
+[in] Объект, содержащий метаданные символ.
+
+`bstrModuleName`  
+[in] Имя модуля.
+
+`bstrSymSearchPath`  
+[in] Путь для поиска файла символов.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+
+```cpp
+HRESULT CDebugSymbolProvider::LoadSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    ULONGLONG baseOffset,
+    IUnknown* _pMetadata,
+    BSTR bstrModule,
+    BSTR bstrSearchPath)
+{
+    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);
+}
+```
+
+## <a name="see-also"></a>См. также
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

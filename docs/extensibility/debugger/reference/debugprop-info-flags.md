@@ -12,119 +12,119 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa229c88ff62d96ee1e91e503dcbdd7c35c1cfc1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3e26972326d7a80a5fb154bfdf7de93b47af9d0
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944596"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413232"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
-Указывает, какую информацию нужно извлечь сведения об объекте debug свойство.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-enum enum_DEBUGPROP_INFO_FLAGS {   
-   DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
-   DEBUGPROP_INFO_NAME              = 0x00000002,  
-   DEBUGPROP_INFO_TYPE              = 0x00000004,  
-   DEBUGPROP_INFO_VALUE             = 0x00000008,  
-   DEBUGPROP_INFO_ATTRIB            = 0x00000010,  
-   DEBUGPROP_INFO_PROP              = 0x00000020,  
-   DEBUGPROP_INFO_VALUE_AUTOEXPAND  = 0x00010000,  
-   DEBUGPROP_INFO_VALUE_NOFUNCEVAL  = 0x00020000,  
-   DEBUGPROP_INFO_VALUE_RAW         = 0x00040000,  
-   DEBUGPROP_INFO_VALUE_NO_TOSTRING = 0x00080000  
-   DEBUGPROP_INFO_NONE              = 0x00000000,  
-   DEBUGPROP_INFO_STANDARD          = DEBUGPROP_INFO_ATTRIB |  
-                                      DEBUGPROP_INFO_NAME |  
-                                      DEBUGPROP_INFO_TYPE |  
-                                      DEBUGPROP_INFO_VALUE,  
-   DEBUGPROP_INFO_ALL               = 0xffffffff  
-};  
-typedef DWORD DEBUGPROP_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_DEBUGPROP_INFO_FLAGS {   
-   DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
-   DEBUGPROP_INFO_NAME              = 0x00000002,  
-   DEBUGPROP_INFO_TYPE              = 0x00000004,  
-   DEBUGPROP_INFO_VALUE             = 0x00000008,  
-   DEBUGPROP_INFO_ATTRIB            = 0x00000010,  
-   DEBUGPROP_INFO_PROP              = 0x00000020,  
-   DEBUGPROP_INFO_VALUE_AUTOEXPAND  = 0x00010000,  
-   DEBUGPROP_INFO_VALUE_NOFUNCEVAL  = 0x00020000,  
-   DEBUGPROP_INFO_VALUE_RAW         = 0x00040000,  
-   DEBUGPROP_INFO_VALUE_NO_TOSTRING = 0x00080000  
-   DEBUGPROP_INFO_NONE              = 0x00000000,  
-   DEBUGPROP_INFO_STANDARD          = DEBUGPROP_INFO_ATTRIB |  
-                                      DEBUGPROP_INFO_NAME |  
-                                      DEBUGPROP_INFO_TYPE |  
-                                      DEBUGPROP_INFO_VALUE,  
-   DEBUGPROP_INFO_ALL               = 0xffffffff  
-};  
-```  
-  
-## <a name="members"></a>Участники  
- DEBUGPROP_INFO_FULLNAME  
- Инициализация и использование `bstrFullName` поля.  
-  
- DEBUGPROP_INFO_NAME  
- Инициализация и использование `bstrName` поля.  
-  
- DEBUGPROP_INFO_TYPE  
- Инициализация и использование `bstrType` поля.  
-  
- DEBUGPROP_INFO_VALUE  
- Инициализация и использование `bstrValue` поля.  
-  
- DEBUGPROP_INFO_ATTRIB  
- Инициализация и использование `dwAttrib` поля.  
-  
- DEBUGPROP_INFO_PROP,  
- Инициализация и использование `pProperty` поле, содержащее [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.  
-  
- DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- Указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.  
-  
- DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
- Не рекомендуется.  
-  
- DEBUGPROP_INFO_VALUE_RAW  
- Не возвращают значений гибко и членов (то есть не форматировать значения).  
-  
- DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- Не возвращают все особые Синтезированная значения (например, не следует вызывать `ToString()` объекта для получения значения).  
-  
- DEBUGPROP_INFO_NONE  
- Указывает, что флаги не установлены.  
-  
- DEBUGPROP_INFO_STANDARD  
- Инициализация и использование `dwAttrib`, `bstrName`, `bstrType`, и `bstrValue` поля.  
-  
- DEBUGPROP_INFO_All  
- Указывает маску всех флагов.  
-  
-## <a name="remarks"></a>Примечания  
- Эти значения передаются [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), и [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы, чтобы указать, какие поля должны быть инициализированы [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.  
-  
- Эти значения также используются для `dwFields` членом `DEBUG_PROPERTY_INFO` структуры для указания поля структуры, используемые и допустимым при возвращении структуры.  
-  
- Эти значения могут объединяться с побитовым объектом `OR`.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)   
- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+Указывает, какую информацию нужно извлечь сведения об объекте debug свойство.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+enum enum_DEBUGPROP_INFO_FLAGS {
+    DEBUGPROP_INFO_FULLNAME          = 0x00000001,
+    DEBUGPROP_INFO_NAME              = 0x00000002,
+    DEBUGPROP_INFO_TYPE              = 0x00000004,
+    DEBUGPROP_INFO_VALUE             = 0x00000008,
+    DEBUGPROP_INFO_ATTRIB            = 0x00000010,
+    DEBUGPROP_INFO_PROP              = 0x00000020,
+    DEBUGPROP_INFO_VALUE_AUTOEXPAND  = 0x00010000,
+    DEBUGPROP_INFO_VALUE_NOFUNCEVAL  = 0x00020000,
+    DEBUGPROP_INFO_VALUE_RAW         = 0x00040000,
+    DEBUGPROP_INFO_VALUE_NO_TOSTRING = 0x00080000
+    DEBUGPROP_INFO_NONE              = 0x00000000,
+    DEBUGPROP_INFO_STANDARD          = DEBUGPROP_INFO_ATTRIB |
+                                        DEBUGPROP_INFO_NAME |
+                                        DEBUGPROP_INFO_TYPE |
+                                        DEBUGPROP_INFO_VALUE,
+    DEBUGPROP_INFO_ALL               = 0xffffffff
+};
+typedef DWORD DEBUGPROP_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_DEBUGPROP_INFO_FLAGS {
+    DEBUGPROP_INFO_FULLNAME          = 0x00000001,
+    DEBUGPROP_INFO_NAME              = 0x00000002,
+    DEBUGPROP_INFO_TYPE              = 0x00000004,
+    DEBUGPROP_INFO_VALUE             = 0x00000008,
+    DEBUGPROP_INFO_ATTRIB            = 0x00000010,
+    DEBUGPROP_INFO_PROP              = 0x00000020,
+    DEBUGPROP_INFO_VALUE_AUTOEXPAND  = 0x00010000,
+    DEBUGPROP_INFO_VALUE_NOFUNCEVAL  = 0x00020000,
+    DEBUGPROP_INFO_VALUE_RAW         = 0x00040000,
+    DEBUGPROP_INFO_VALUE_NO_TOSTRING = 0x00080000
+    DEBUGPROP_INFO_NONE              = 0x00000000,
+    DEBUGPROP_INFO_STANDARD          = DEBUGPROP_INFO_ATTRIB |
+                                        DEBUGPROP_INFO_NAME |
+                                        DEBUGPROP_INFO_TYPE |
+                                        DEBUGPROP_INFO_VALUE,
+    DEBUGPROP_INFO_ALL               = 0xffffffff
+};
+```
+
+## <a name="members"></a>Участники
+DEBUGPROP_INFO_FULLNAME  
+Инициализация и использование `bstrFullName` поля.
+
+DEBUGPROP_INFO_NAME  
+Инициализация и использование `bstrName` поля.
+
+DEBUGPROP_INFO_TYPE  
+Инициализация и использование `bstrType` поля.
+
+DEBUGPROP_INFO_VALUE  
+Инициализация и использование `bstrValue` поля.
+
+DEBUGPROP_INFO_ATTRIB  
+Инициализация и использование `dwAttrib` поля.
+
+DEBUGPROP_INFO_PROP  
+Инициализация и использование `pProperty` поле, содержащее [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.
+
+DEBUGPROP_INFO_VALUE_AUTOEXPAND  
+Указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+
+DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
+Не рекомендуется.
+
+DEBUGPROP_INFO_VALUE_RAW  
+Не возвращают значений гибко и членов (то есть не форматировать значения).
+
+DEBUGPROP_INFO_VALUE_NO_TOSTRING  
+Не возвращают все особые Синтезированная значения (например, не следует вызывать `ToString()` объекта для получения значения).
+
+DEBUGPROP_INFO_NONE  
+Указывает, что флаги не установлены.
+
+DEBUGPROP_INFO_STANDARD  
+Инициализация и использование `dwAttrib`, `bstrName`, `bstrType`, и `bstrValue` поля.
+
+DEBUGPROP_INFO_All  
+Указывает маску всех флагов.
+
+## <a name="remarks"></a>Примечания
+Эти значения передаются [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), и [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы, чтобы указать, какие поля должны быть инициализированы [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.
+
+Эти значения также используются для `dwFields` членом `DEBUG_PROPERTY_INFO` структуры для указания поля структуры, используемые и допустимым при возвращении структуры.
+
+Эти значения могут объединяться с побитовым объектом `OR`.
+
+## <a name="requirements"></a>Требования
+Header: msdbg.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)  
+[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)  
+[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)  
+[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)  
+[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

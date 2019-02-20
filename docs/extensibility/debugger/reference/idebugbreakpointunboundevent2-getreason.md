@@ -12,61 +12,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc730be1ac49bddb8406a5f3322e800c86dce50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9e258f8a267ab2f8211cc4c6f908c3593a485ee
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041872"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412959"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Получает причину, по которой был отсоединен точки останова.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetReason(   
-   BP_UNBOUND_REASON* pdwUnboundReason  
-);  
-```  
-  
-```csharp  
-int GetReason(   
-   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pdwUnboundReason`  
- [out] Возвращает значение из [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) перечисление, определяющее, причина, точка останова был отсоединен.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Причины: точку останова, лежащему в другое расположение, после определения, что точка останова была привязана в ошибки или изменить и продолжить операции.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CBreakpointUnboundDebugEventBase** объекта, который предоставляет [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) интерфейс.  
-  
-```cpp  
-STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
-    BP_UNBOUND_REASON* pdwUnboundReason)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( EVAL(pdwUnboundReason) )  
-    {  
-        *pdwUnboundReason = m_dwReason;  
-  
-        hRes = S_OK;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+Получает причину, по которой был отсоединен точки останова.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetReason(
+    BP_UNBOUND_REASON* pdwUnboundReason
+);
+```
+
+```csharp
+int GetReason(
+    out enum_ BP_UNBOUND_REASON pdwUnboundReason
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`pdwUnboundReason`  
+[out] Возвращает значение из [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) перечисление, определяющее, причина, точка останова был отсоединен.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+Причины: точку останова, лежащему в другое расположение, после определения, что точка останова была привязана в ошибки или изменить и продолжить операции.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CBreakpointUnboundDebugEventBase** объекта, который предоставляет [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) интерфейс.
+
+```cpp
+STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
+    BP_UNBOUND_REASON* pdwUnboundReason)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( EVAL(pdwUnboundReason) )
+    {
+        *pdwUnboundReason = m_dwReason;
+
+        hRes = S_OK;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>См. также
+[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

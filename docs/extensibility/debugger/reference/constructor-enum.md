@@ -12,54 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b1f22d92780dbd4178a7a0696bac5aa27337ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963714"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412816"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Выбирает различные типы конструкторов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-} CONSTRUCTOR_ENUM;  
-```  
-  
-```csharp  
-public enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-};  
-```  
-  
-## <a name="members"></a>Участники  
- crAll  
- Выбирает все конструкторы.  
-  
- crNonStatic  
- Выбирает конструкторы не статическими.  
-  
- crStatic  
- Выбирает статические конструкторы.  
-  
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) метод.  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+Выбирает различные типы конструкторов.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+} CONSTRUCTOR_ENUM;
+```
+
+```csharp
+public enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+};
+```
+
+## <a name="members"></a>Участники
+crAll  
+Выбирает все конструкторы.
+
+crNonStatic  
+Выбирает конструкторы не статическими.
+
+crStatic  
+Выбирает статические конструкторы.
+
+## <a name="remarks"></a>Примечания
+Передается в качестве аргумента для [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) метод.
+
+## <a name="requirements"></a>Требования
+Заголовок: sh.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
