@@ -12,105 +12,105 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb6000da7ab5d9ff17f78cacf87608432b839e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030942"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318025"
 ---
 # <a name="basictype"></a>BasicType
-Задает базовый тип символа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-enum BasicType {   
-   btNoType   = 0,  
-   btVoid     = 1,  
-   btChar     = 2,  
-   btWChar    = 3,  
-   btInt      = 6,  
-   btUInt     = 7,  
-   btFloat    = 8,  
-   btBCD      = 9,  
-   btBool     = 10,  
-   btLong     = 13,  
-   btULong    = 14,  
-   btCurrency = 25,  
-   btDate     = 26,  
-   btVariant  = 27,  
-   btComplex  = 28,  
-   btBit      = 29,  
-   btBSTR     = 30,  
-   btHresult  = 31,  
-   btChar16   = 32,  // char16_t
-   btChar32   = 33,  // char32_t
-};  
-```  
-  
-## <a name="elements"></a>Элементы  
- btNoType  
- Базовый тип не указан.  
-  
- btVoid  
- Базовый тип является `void`.  
-  
- btChar  
- Базовый тип является `char` (C/C++ тип).  
-  
- btWChar  
- Базовый тип представляет собой расширенный символ (Юникод) (`WCHAR`).  
-  
- btInt  
- Базовый тип является `signed int` (C/C++ тип).  
-  
- btUInt  
- Базовый тип является `unsigned int` (C/C++ тип).  
-  
- btFloat  
- Базовый тип является числом с плавающей запятой (`FLOAT`).  
-  
- btBCD  
- Базовый тип — это десятичное число закодированных двоичный файл (`BCD`).  
-  
- btBool  
- Базовый тип является логическое значение (`BOOL`).  
-  
- btLong  
- Базовый тип является `long int` (C/C++ тип).  
-  
- btULong  
- Базовый тип является `unsigned long int` (C/C++ тип).  
-  
- btCurrency  
- Базовый тип является валюты.  
-  
- btDate  
- Базовый тип является даты и времени (`DATE`).  
-  
- btVariant  
- Базовый тип является структурой типа переменной (`VARIANT`).  
-  
- btComplex  
- Базовый тип — комплексного числа.  
-  
- btBit  
- Базовый тип — несколько.  
-  
- btBSTR  
- Базовый тип — строка базовый или binary (`BSTR`).  
-  
- btHresult  
- Базовый тип является `HRESULT`.  
-  
-## <a name="remarks"></a>Примечания  
- Возвращаемые значения в этом перечислении [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) метод.  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
-  
-## <a name="see-also"></a>См. также раздел  
- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+Задает базовый тип символа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+enum BasicType {
+    btNoType   = 0,
+    btVoid     = 1,
+    btChar     = 2,
+    btWChar    = 3,
+    btInt      = 6,
+    btUInt     = 7,
+    btFloat    = 8,
+    btBCD      = 9,
+    btBool     = 10,
+    btLong     = 13,
+    btULong    = 14,
+    btCurrency = 25,
+    btDate     = 26,
+    btVariant  = 27,
+    btComplex  = 28,
+    btBit      = 29,
+    btBSTR     = 30,
+    btHresult  = 31,
+    btChar16   = 32,  // char16_t
+    btChar32   = 33,  // char32_t
+};
+```
+
+## <a name="elements"></a>Элементы
+btNoType  
+Базовый тип не указан.
+
+btVoid  
+Базовый тип является `void`.
+
+btChar  
+Базовый тип является `char` (C/C++ тип).
+
+btWChar  
+Базовый тип представляет собой расширенный символ (Юникод) (`WCHAR`).
+
+btInt  
+Базовый тип является `signed int` (C/C++ тип).
+
+btUInt  
+Базовый тип является `unsigned int` (C/C++ тип).
+
+btFloat  
+Базовый тип является числом с плавающей запятой (`FLOAT`).
+
+btBCD  
+Базовый тип — это десятичное число закодированных двоичный файл (`BCD`).
+
+btBool  
+Базовый тип является логическое значение (`BOOL`).
+
+btLong  
+Базовый тип является `long int` (C/C++ тип).
+
+btULong  
+Базовый тип является `unsigned long int` (C/C++ тип).
+
+btCurrency  
+Базовый тип является валюты.
+
+btDate  
+Базовый тип является даты и времени (`DATE`).
+
+btVariant  
+Базовый тип является структурой типа переменной (`VARIANT`).
+
+btComplex  
+Базовый тип — комплексного числа.
+
+btBit  
+Базовый тип — несколько.
+
+btBSTR  
+Базовый тип — строка базовый или binary (`BSTR`).
+
+btHresult  
+Базовый тип является `HRESULT`.
+
+## <a name="remarks"></a>Примечания
+Возвращаемые значения в этом перечислении [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) метод.
+
+## <a name="requirements"></a>Требования
+Заголовок: cvconst.h
+
+## <a name="see-also"></a>См. также раздел
+[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
+[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

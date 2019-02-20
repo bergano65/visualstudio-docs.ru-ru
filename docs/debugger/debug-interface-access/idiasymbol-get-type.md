@@ -12,51 +12,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf55138c6260404fca706017131bbe5615d77b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5550ed7551e58140301f6a434d252a534b78228
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043016"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227202"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-Возвращает символ, представляющий тип для этого символа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_type (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип этого символа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Возвращает символ, представляющий тип для этого символа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_type (
+    IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`pRetVal`  
+[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип этого символа.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
- Чтобы определить тип символа, необходимо вызвать этот метод и просмотрите полученный в результате [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Обратите внимание на то, что существует возможность символ, не относится к типу. Например, имя структуры не имеет типа, но он может иметь дочерние символы (использовать [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) метод для проверки этих дочерних действий).  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-IDiaSymbol*         pType;  
-CComPtr<IDiaSymbol> pBaseType;  
-if (SUCCEEDED(pType->get_type( &pBaseType ))) {  
-    BasicType btBaseType;  
-    if (SUCCEEDED(pBaseType->get_baseType((DWORD *)&btBaseType))) {  
-        // Do something with basic type.  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+Чтобы определить тип символа, необходимо вызвать этот метод и просмотрите полученный в результате [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Обратите внимание на то, что существует возможность символ, не относится к типу. Например, имя структуры не имеет типа, но он может иметь дочерние символы (использовать [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) метод для проверки этих дочерних действий).
+
+## <a name="example"></a>Пример
+
+```C++
+IDiaSymbol*         pType;
+CComPtr<IDiaSymbol> pBaseType;
+if (SUCCEEDED(pType->get_type( &pBaseType ))) {
+    BasicType btBaseType;
+    if (SUCCEEDED(pBaseType->get_baseType((DWORD *)&btBaseType))) {
+        // Do something with basic type.
+    }
+}
+```
+
+## <a name="see-also"></a>См. также раздел
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
+[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

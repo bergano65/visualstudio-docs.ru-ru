@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1465d7ee664b1c1d534350be19e4c067a74cb79
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024504"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335107"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Часто задаваемые вопросы по отладке моментальных снимков в Visual Studio
 
@@ -57,4 +57,6 @@ ms.locfileid: "55024504"
 
 [Отладка в Visual Studio](../debugger/index.md)  
 [Отладка работающих приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md)  
+[Отладка динамического ASP.NET Azure Machines\Virtual машин масштабируемые наборы виртуальных машин с помощью отладчика моментальных снимков](../debugger/debug-live-azure-virtual-machines.md)  
+[Отладка с помощью отладчика моментальных снимков Kubernetes динамической ASP.NET в Azure](../debugger/debug-live-azure-kubernetes.md)  
 [Устранение неполадок и известные проблемы для отладки моментальных снимков](../debugger/debug-live-azure-apps-troubleshooting.md)

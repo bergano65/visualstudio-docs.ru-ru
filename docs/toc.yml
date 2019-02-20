@@ -322,6 +322,10 @@ items:
           items:
           - name: Изменение сигнатуры метода
             href: ide/reference/change-method-signature.md
+          - name: Преобразование анонимного типа в класс
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: Преобразование анонимного типа в кортеж
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: Преобразование между циклом for и оператором foreach
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Преобразование между методом Get и свойством
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: Перемещение типа в соответствующий файл
             href: ide/reference/move-type-to-matching-file.md
+          - name: Подъем элемента в иерархии
+            href: ide/reference/pull-members-up.md
           - name: Удаление недостижимого кода
             href: ide/reference/remove-unreachable-code.md
           - name: Переименовать
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Использование явного типа
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: Параметры переноса, отступа и выравнивания
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: Пошаговое руководство. Создание кода в результате использования
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Советы по повышению производительности
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: Работа с файлами XML и XSLT
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: Разработка приложений с поддержкой множества языков
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: Двунаправленные языки
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: Дополнительные руководства
       items:
       - name: Создание приложения WPF на C# или Visual Basic
@@ -696,29 +709,6 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: Ресурсы для создания приложений со специальными возможностями
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: Глобализация и локализация приложений
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: Общие сведения о создании приложений, поддерживающих разные языки, на базе .NET Framework
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: Локализация приложений
-      href: ide/localizing-applications.md
-      items:
-      - name: Иерархическая организация ресурсов для локализации
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: Безопасность и локализованные вспомогательные сборки
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: Номера версий основных и вспомогательных локализованных сборок
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: Языки нейтральных ресурсов для локализации
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: Глобализация приложений
-      href: ide/globalizing-applications.md
-      items:
-      - name: Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: Создание приложений, поддерживающих языки с двунаправленным письмом
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: Ссылка
   items:
   - name: Общие элементы пользовательского интерфейса
@@ -1145,9 +1135,9 @@ items:
   - name: Обращайтесь к нам
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424620"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335588"

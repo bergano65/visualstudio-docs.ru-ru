@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784664"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  Путем анализа тестируемого метода мы определили, что необходимо проверить по меньшей мере три поведения.  
   
-1. Метод создает исключение [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Если сумма по дебету превышает баланс.  
+1. Метод создает исключение [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->), если сумма по дебету превышает остаток на счете.  
   
 2. Он также создает исключение `ArgumentOutOfRangeException` , если сумма по дебету меньше нуля.  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  В заключение скажем, что проведенная работа по улучшению тестируемого кода привела к созданию более надежных и информативных методов тестов. Однако более существенно то, что дополнительный анализ позволил улучшить тестируемый код в данном проекте.
-
-
-

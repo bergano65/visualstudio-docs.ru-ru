@@ -25,460 +25,460 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e39a356b678d498b97f3fbcaca85b713399e83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954063"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316877"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
-Эти методы могут пригодиться при отладке программы MFC.  
+Эти методы могут пригодиться при отладке программы MFC.
 
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
- [Функция AfxDebugBreak](#BKMK_AfxDebugBreak)  
+## <a name="BKMK_In_this_topic"></a> Содержание раздела
+[Функция AfxDebugBreak](#BKMK_AfxDebugBreak)
 
- [Макрос TRACE](#BKMK_The_TRACE_macro)  
+[Макрос TRACE](#BKMK_The_TRACE_macro)
 
- [Обнаружение утечек памяти в MFC](#BKMK_Memory_leak_detection_in_MFC)  
+[Обнаружение утечек памяти в MFC](#BKMK_Memory_leak_detection_in_MFC)
 
-- [Отслеживание операций выделения памяти](#BKMK_Tracking_memory_allocations)  
+- [Отслеживание операций выделения памяти](#BKMK_Tracking_memory_allocations)
 
-- [Включение диагностики памяти](#BKMK_Enabling_memory_diagnostics)  
+- [Включение диагностики памяти](#BKMK_Enabling_memory_diagnostics)
 
-- [Получение снимков памяти](#BKMK_Taking_memory_snapshots)  
+- [Получение снимков памяти](#BKMK_Taking_memory_snapshots)
 
-- [Просмотр статистики памяти](#BKMK_Viewing_memory_statistics)  
+- [Просмотр статистики памяти](#BKMK_Viewing_memory_statistics)
 
-- [Получение дампов объектов](#BKMK_Taking_object_dumps)  
+- [Получение дампов объектов](#BKMK_Taking_object_dumps)
 
-  - [Интерпретация дампов памяти](#BKMK_Interpreting_memory_dumps)  
+  - [Интерпретация дампов памяти](#BKMK_Interpreting_memory_dumps)
 
-  - [Настройка дампов объектов](#BKMK_Customizing_object_dumps)  
+  - [Настройка дампов объектов](#BKMK_Customizing_object_dumps)
 
-    [Сокращение размера отладочной сборки MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+  - [Сокращение размера отладочной сборки MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)
 
-  - [Сборка приложения MFC с отладочной информацией для избранных модулей](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [Сборка приложения MFC с отладочной информацией для избранных модулей](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)
 
-##  <a name="BKMK_AfxDebugBreak"></a> Функция AfxDebugBreak  
- MFC предоставляет особую функцию [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) для жесткого задания точек останова в исходном коде:  
-
-```cpp
-AfxDebugBreak( );  
-```  
-
- На платформах Intel `AfxDebugBreak` создает следующий код, останавливающий выполнение исходного кода, а не кода ядра:  
+## <a name="BKMK_AfxDebugBreak"></a> Функция AfxDebugBreak
+MFC предоставляет особую функцию [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) для жесткого задания точек останова в исходном коде:
 
 ```cpp
-_asm int 3  
-```  
+AfxDebugBreak( );
+```
 
- На других платформах `AfxDebugBreak` просто вызывает `DebugBreak`.  
-
- Не забывайте удалять `AfxDebugBreak` при создании окончательного построения или используйте `#ifdef _DEBUG` до и после этих операторов.  
-
- [Содержание раздела](#BKMK_In_this_topic)  
-
-##  <a name="BKMK_The_TRACE_macro"></a> Макрос TRACE  
- Чтобы сообщения программы отображались в [окне "Вывод"](../ide/reference/output-window.md)отладчика, можно применить макрос [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) или MFC-макрос [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) . Подобно [утверждениям](../debugger/c-cpp-assertions.md), макросы трассировки активны только в отладочной версии программы, а в окончательной версии они исчезают после компиляции.  
-
- Следующие примеры показывают несколько способов применения макроса **TRACE** . Подобно `printf`макрос **TRACE** может обрабатывать несколько аргументов.  
+На платформах Intel `AfxDebugBreak` создает следующий код, останавливающий выполнение исходного кода, а не кода ядра:
 
 ```cpp
-int x = 1;  
-int y = 16;  
-float z = 32.0;  
-TRACE( "This is a TRACE statement\n" );  
+_asm int 3
+```
 
-TRACE( "The value of x is %d\n", x );  
+На других платформах `AfxDebugBreak` просто вызывает `DebugBreak`.
 
-TRACE( "x = %d and y = %d\n", x, y );  
+Не забывайте удалять `AfxDebugBreak` при создании окончательного построения или используйте `#ifdef _DEBUG` до и после этих операторов.
 
-TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
-```  
+[Содержание раздела](#BKMK_In_this_topic)
 
- Макрос TRACE правильно обрабатывает параметры char* и wchar_t\*. Следующие примеры демонстрируют использование макро TRACE вместе с различными типами строковых параметров.  
+## <a name="BKMK_The_TRACE_macro"></a> Макрос TRACE
+Чтобы сообщения программы отображались в [окне "Вывод"](../ide/reference/output-window.md)отладчика, можно применить макрос [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) или MFC-макрос [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) . Подобно [утверждениям](../debugger/c-cpp-assertions.md), макросы трассировки активны только в отладочной версии программы, а в окончательной версии они исчезают после компиляции.
 
-```cpp
-TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
-
-TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
-
-TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n"), _T("The number is:"), 2);  
-```  
-
- Дополнительные сведения о макросе **TRACE** см. в разделе [Службы диагностики](/cpp/mfc/reference/diagnostic-services).  
-
- [Содержание раздела](#BKMK_In_this_topic)  
-
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Обнаружение утечек памяти в MFC  
- MFC предоставляет классы и функции, позволяющие обнаруживать выделенную, но не освобожденную память.  
-
-###  <a name="BKMK_Tracking_memory_allocations"></a> Отслеживание операций выделения памяти  
- В MFC вместо оператора [new](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) для обнаружения утечек памяти можно применять макрос **DEBUG_NEW** . В отладочной версии программы `DEBUG_NEW` отслеживает имя файла и номер строки для каждого объекта, которому выделяется память. При компиляции окончательной версии программы `DEBUG_NEW` становится простой операцией **new** без данных об имени файла и номере строки. Таким образом, окончательная версия программы выполняется с необходимой скоростью.  
-
- Чтобы не переписывать программу, используя `DEBUG_NEW` вместо **new**, можно в исходных файлах определить данный макрос:  
+Следующие примеры показывают несколько способов применения макроса **TRACE** . Подобно `printf`макрос **TRACE** может обрабатывать несколько аргументов.
 
 ```cpp
-#define new DEBUG_NEW  
-```  
+int x = 1;
+int y = 16;
+float z = 32.0;
+TRACE( "This is a TRACE statement\n" );
 
- Если создается [дамп объекта](#BKMK_Taking_object_dumps), каждый объект, память для которого выделяется с помощью `DEBUG_NEW` , показывает файл и номер строки, где было выполнено выделение, позволяя точнее выявить источник утечки памяти.  
+TRACE( "The value of x is %d\n", x );
 
- В отладочной версии структуры MFC макрос `DEBUG_NEW` используется автоматически, но в коде, разумеется, нет. Если же требуется воспользоваться преимуществами `DEBUG_NEW`, то нужно явно указать `DEBUG_NEW` или **#define new** , как показано выше.  
+TRACE( "x = %d and y = %d\n", x, y );
 
- [Содержание раздела](#BKMK_In_this_topic)  
+TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
+```
 
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> Включение диагностики памяти  
- Прежде чем воспользоваться возможностями диагностики памяти, нужно включить диагностическую трассировку.  
-
- **Включение или выключение диагностики памяти**  
-
-- Вызовите глобальную функцию [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) , чтобы включить или выключить выделение памяти с диагностикой. Поскольку диагностика памяти обычно включена по умолчанию в отладочной библиотеке, эта функция будет применяться для ее временного отключения — это позволит увеличить скорость выполнения программы и уменьшит вывод диагностических сообщений.  
-
-  **Выбор функции диагностики памяти с помощью afxMemDF**  
-
-- Если необходимо обеспечить более точное управление функциями диагностики памяти, можно задать значение глобальной переменной MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086), которая позволяет выборочно включать и отключать отдельные функции. Эта переменная может принимать следующие значения, заданные перечисляемым типом **afxMemDF**:  
-
-  |Значение|Описание|  
-  |-----------|-----------------|  
-  |**allocMemDF**|Включает выделение памяти с диагностикой (по умолчанию).|  
-  |**delayFreeMemDF**|Задерживает освобождение памяти до выхода из программы при вызове `delete` или `free` . Это позволяет обеспечить выделение максимального объема памяти.|  
-  |**checkAlwaysMemDF**|Вызывает [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) каждый раз при выделении или освобождении памяти.|  
-
-   Эти значения можно комбинировать с помощью логической операции ИЛИ, как показано ниже:  
-
-  ```C++  
-  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-  ```  
-
-  [Содержание раздела](#BKMK_In_this_topic)  
-
-###  <a name="BKMK_Taking_memory_snapshots"></a> Получение снимков памяти  
-
-1. Создайте объект [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) и вызовите функцию-член [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) . В результате будет создан первый снимок памяти.  
-
-2. После того как программа выполнит операцию по выделению или освобождению памяти, создайте другой объект `CMemoryState` и вызовите функцию `Checkpoint` уже для него. Так получится второй снимок памяти.  
-
-3. Создайте третий объект `CMemoryState` и вызовите его функцию-член [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) , используя в качестве аргументов два предыдущих объекта `CMemoryState` . Если между двумя состояниями памяти есть различия, функция `Difference` вернет отличное от нуля значение. Это значение будет свидетельствовать о наличии неосвобожденных блоков памяти.  
-
-    Пример кода выглядит следующим образом:  
-
-   ```cpp
-   // Declare the variables needed  
-   #ifdef _DEBUG  
-       CMemoryState oldMemState, newMemState, diffMemState;  
-       oldMemState.Checkpoint();  
-   #endif  
-
-       // Do your memory allocations and deallocations.  
-       CString s("This is a frame variable");  
-       // The next object is a heap object.  
-      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
-
-   #ifdef _DEBUG  
-       newMemState.Checkpoint();  
-       if( diffMemState.Difference( oldMemState, newMemState ) )  
-       {  
-           TRACE( "Memory leaked!\n" );  
-       }  
-   #endif  
-   ```  
-
-    Обратите внимание, что операторы проверки памяти заключаются в **#ifdef _DEBUG / #endif** блокирует таким образом, чтобы они компилируются только в отладочных версиях программы.  
-
-    Теперь, когда известно о наличии утечки, можно применить другую функцию-член — [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , по которой можно найти конкретное место утечки.  
-
-   [Содержание раздела](#BKMK_In_this_topic)  
-
-###  <a name="BKMK_Viewing_memory_statistics"></a> Просмотр статистики памяти  
- Функция [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) просматривает два объекта-состояния памяти и определяет, какие объекты не были освобождены из кучи между начальным и конечным состоянием. После того как сделаны снимки памяти и выполнено их сравнение с помощью функции `CMemoryState::Difference`, можно вызвать функцию [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) и получить сведения о неосвобожденных объектах.  
-
- Рассмотрим следующий пример.  
-
-```cpp  
-if( diffMemState.Difference( oldMemState, newMemState ) )  
-{  
-   TRACE( "Memory leaked!\n" );  
-   diffMemState.DumpStatistics();  
-}  
-```  
-
- Образец дампа из примера выглядит следующим образом:  
+Макрос TRACE правильно обрабатывает параметры char* и wchar_t\*. Следующие примеры демонстрируют использование макро TRACE вместе с различными типами строковых параметров.
 
 ```cpp
-0 bytes in 0 Free Blocks  
-22 bytes in 1 Object Blocks  
-45 bytes in 4 Non-Object Blocks  
-Largest number used: 67 bytes  
-Total allocations: 67 bytes  
-```  
+TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
 
- Свободные блоки — это блоки, освобождение которых задерживается, если `afxMemDF` была установлена в `delayFreeMemDF`.  
+TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);
 
- Обычные блоки объектов, показанные во второй строке, остаются выделенными в куче.  
+TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n"), _T("The number is:"), 2);
+```
 
- Блоки без объектов включают в себя массивы и структуры, созданные с помощью `new`. В этом случае четыре блока без объектов были созданы в куче, но не освобождены.  
+Дополнительные сведения о макросе **TRACE** см. в разделе [Службы диагностики](/cpp/mfc/reference/diagnostic-services).
 
- `Largest number used` показывает наибольшее количество памяти, используемой программой в любое время.  
+[Содержание раздела](#BKMK_In_this_topic)
 
- `Total allocations` показывает общее количество памяти, используемой программой.  
+## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Обнаружение утечек памяти в MFC
+MFC предоставляет классы и функции, позволяющие обнаруживать выделенную, но не освобожденную память.
 
- [Содержание раздела](#BKMK_In_this_topic)  
+### <a name="BKMK_Tracking_memory_allocations"></a> Отслеживание операций выделения памяти
+В MFC вместо оператора [new](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) для обнаружения утечек памяти можно применять макрос **DEBUG_NEW** . В отладочной версии программы `DEBUG_NEW` отслеживает имя файла и номер строки для каждого объекта, которому выделяется память. При компиляции окончательной версии программы `DEBUG_NEW` становится простой операцией **new** без данных об имени файла и номере строки. Таким образом, окончательная версия программы выполняется с необходимой скоростью.
 
-###  <a name="BKMK_Taking_object_dumps"></a> Получение дампов объектов  
- В программе MFC можно использовать [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) для помещения в дамп описания всех объектов в куче, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.  
+Чтобы не переписывать программу, используя `DEBUG_NEW` вместо **new**, можно в исходных файлах определить данный макрос:
+
+```cpp
+#define new DEBUG_NEW
+```
+
+Если создается [дамп объекта](#BKMK_Taking_object_dumps), каждый объект, память для которого выделяется с помощью `DEBUG_NEW` , показывает файл и номер строки, где было выполнено выделение, позволяя точнее выявить источник утечки памяти.
+
+В отладочной версии структуры MFC макрос `DEBUG_NEW` используется автоматически, но в коде, разумеется, нет. Если же требуется воспользоваться преимуществами `DEBUG_NEW`, то нужно явно указать `DEBUG_NEW` или **#define new** , как показано выше.
+
+[Содержание раздела](#BKMK_In_this_topic)
+
+### <a name="BKMK_Enabling_memory_diagnostics"></a> Включение диагностики памяти
+Прежде чем воспользоваться возможностями диагностики памяти, нужно включить диагностическую трассировку.
+
+**Включение или выключение диагностики памяти**
+
+- Вызовите глобальную функцию [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) , чтобы включить или выключить выделение памяти с диагностикой. Поскольку диагностика памяти обычно включена по умолчанию в отладочной библиотеке, эта функция будет применяться для ее временного отключения — это позволит увеличить скорость выполнения программы и уменьшит вывод диагностических сообщений.
+
+  **Выбор функции диагностики памяти с помощью afxMemDF**
+
+- Если необходимо обеспечить более точное управление функциями диагностики памяти, можно задать значение глобальной переменной MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086), которая позволяет выборочно включать и отключать отдельные функции. Эта переменная может принимать следующие значения, заданные перечисляемым типом **afxMemDF**:
+
+  |Значение|Описание|
+  |-----------|-----------------|
+  |**allocMemDF**|Включает выделение памяти с диагностикой (по умолчанию).|
+  |**delayFreeMemDF**|Задерживает освобождение памяти до выхода из программы при вызове `delete` или `free` . Это позволяет обеспечить выделение максимального объема памяти.|
+  |**checkAlwaysMemDF**|Вызывает [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) каждый раз при выделении или освобождении памяти.|
+
+  Эти значения можно комбинировать с помощью логической операции ИЛИ, как показано ниже:
+
+  ```C++
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;
+  ```
+
+  [Содержание раздела](#BKMK_In_this_topic)
+
+### <a name="BKMK_Taking_memory_snapshots"></a> Получение снимков памяти
+
+1. Создайте объект [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) и вызовите функцию-член [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) . В результате будет создан первый снимок памяти.
+
+2. После того как программа выполнит операцию по выделению или освобождению памяти, создайте другой объект `CMemoryState` и вызовите функцию `Checkpoint` уже для него. Так получится второй снимок памяти.
+
+3. Создайте третий объект `CMemoryState` и вызовите его функцию-член [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) , используя в качестве аргументов два предыдущих объекта `CMemoryState` . Если между двумя состояниями памяти есть различия, функция `Difference` вернет отличное от нуля значение. Это значение будет свидетельствовать о наличии неосвобожденных блоков памяти.
+
+    Пример кода выглядит следующим образом:
+
+    ```cpp
+    // Declare the variables needed
+    #ifdef _DEBUG
+        CMemoryState oldMemState, newMemState, diffMemState;
+        oldMemState.Checkpoint();
+    #endif
+
+        // Do your memory allocations and deallocations.
+        CString s("This is a frame variable");
+        // The next object is a heap object.
+        CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
+
+    #ifdef _DEBUG
+        newMemState.Checkpoint();
+        if( diffMemState.Difference( oldMemState, newMemState ) )
+        {
+            TRACE( "Memory leaked!\n" );
+        }
+    #endif
+    ```
+
+    Обратите внимание, что операторы проверки памяти заключаются в **#ifdef _DEBUG / #endif** блокирует таким образом, чтобы они компилируются только в отладочных версиях программы.
+
+    Теперь, когда известно о наличии утечки, можно применить другую функцию-член — [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , по которой можно найти конкретное место утечки.
+
+    [Содержание раздела](#BKMK_In_this_topic)
+
+### <a name="BKMK_Viewing_memory_statistics"></a> Просмотр статистики памяти
+Функция [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) просматривает два объекта-состояния памяти и определяет, какие объекты не были освобождены из кучи между начальным и конечным состоянием. После того как сделаны снимки памяти и выполнено их сравнение с помощью функции `CMemoryState::Difference`, можно вызвать функцию [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) и получить сведения о неосвобожденных объектах.
+
+Рассмотрим следующий пример.
+
+```cpp
+if( diffMemState.Difference( oldMemState, newMemState ) )
+{
+    TRACE( "Memory leaked!\n" );
+    diffMemState.DumpStatistics();
+}
+```
+
+Образец дампа из примера выглядит следующим образом:
+
+```cpp
+0 bytes in 0 Free Blocks
+22 bytes in 1 Object Blocks
+45 bytes in 4 Non-Object Blocks
+Largest number used: 67 bytes
+Total allocations: 67 bytes
+```
+
+Свободные блоки — это блоки, освобождение которых задерживается, если `afxMemDF` была установлена в `delayFreeMemDF`.
+
+Обычные блоки объектов, показанные во второй строке, остаются выделенными в куче.
+
+Блоки без объектов включают в себя массивы и структуры, созданные с помощью `new`. В этом случае четыре блока без объектов были созданы в куче, но не освобождены.
+
+`Largest number used` показывает наибольшее количество памяти, используемой программой в любое время.
+
+`Total allocations` показывает общее количество памяти, используемой программой.
+
+[Содержание раздела](#BKMK_In_this_topic)
+
+### <a name="BKMK_Taking_object_dumps"></a> Получение дампов объектов
+В программе MFC можно использовать [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) для помещения в дамп описания всех объектов в куче, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.
 
 > [!NOTE]
->  Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](#BKMK_Enabling_Memory_Diagnostics).  
+> Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](#BKMK_Enabling_Memory_Diagnostics).
 
 > [!NOTE]
->  MFC автоматически отображает все потерянные объекты при выходе из программы, поэтому в точке выхода не нужно создавать для этого дополнительный код.  
+> MFC автоматически отображает все потерянные объекты при выходе из программы, поэтому в точке выхода не нужно создавать для этого дополнительный код.
 
- Следующий код — тест на утечку памяти путем сравнения двух состояний памяти и отображения всех объектов, если таковая обнаружилась.  
+Следующий код — тест на утечку памяти путем сравнения двух состояний памяти и отображения всех объектов, если таковая обнаружилась.
 
 ```cpp
-if( diffMemState.Difference( oldMemState, newMemState ) )  
-{  
-   TRACE( "Memory leaked!\n" );  
-   diffMemState.DumpAllObjectsSince();  
-}  
-```  
+if( diffMemState.Difference( oldMemState, newMemState ) )
+{
+    TRACE( "Memory leaked!\n" );
+    diffMemState.DumpAllObjectsSince();
+}
+```
 
- Содержимое дампа выглядит следующим образом:  
+Содержимое дампа выглядит следующим образом:
 
 ```cmd
-Dumping objects ->  
+Dumping objects ->
 
-{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
-{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
-{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
-{2} a CPerson at $51A4  
+{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long
+{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long
+{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long
+{2} a CPerson at $51A4
 
-Last Name: Smith  
-First Name: Alan  
-Phone #: 581-0215  
+Last Name: Smith
+First Name: Alan
+Phone #: 581-0215
 
-{1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
-```  
+{1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long
+```
 
- Числа в фигурных скобках в начале большинства строк указывают порядок размещения объектов в памяти. Объект, размещенный в последнюю очередь, имеет наибольший номер и появляется вверху дампа.  
+Числа в фигурных скобках в начале большинства строк указывают порядок размещения объектов в памяти. Объект, размещенный в последнюю очередь, имеет наибольший номер и появляется вверху дампа.
 
- Чтобы извлечь из дампа объекта максимальное количество сведений, можно переопределить функцию-член `Dump` любого объекта, производного от `CObject`, чтобы настроить дамп объекта оптимальным образом.  
+Чтобы извлечь из дампа объекта максимальное количество сведений, можно переопределить функцию-член `Dump` любого объекта, производного от `CObject`, чтобы настроить дамп объекта оптимальным образом.
 
- Можно установить точку останова на определенном выделении памяти, задав глобальной переменной `_afxBreakAlloc` значение, показанное в фигурных скобках. При перезапуске программы отладчик остановит выполнение именно там, где происходит это выделение памяти. Теперь можно посмотреть стек вызовов и проанализировать, как программа дошла до этого места.  
+Можно установить точку останова на определенном выделении памяти, задав глобальной переменной `_afxBreakAlloc` значение, показанное в фигурных скобках. При перезапуске программы отладчик остановит выполнение именно там, где происходит это выделение памяти. Теперь можно посмотреть стек вызовов и проанализировать, как программа дошла до этого места.
 
- В библиотеке времени выполнения языка C тоже есть подобная функция, [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc), которая применяется для выделений памяти во время выполнения в языке C.  
+В библиотеке времени выполнения языка C тоже есть подобная функция, [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc), которая применяется для выделений памяти во время выполнения в языке C.
 
- [Содержание раздела](#BKMK_In_this_topic)  
+[Содержание раздела](#BKMK_In_this_topic)
 
-####  <a name="BKMK_Interpreting_memory_dumps"></a> Интерпретация дампов памяти  
- Рассмотрим этот дамп объекта более подробно:  
+#### <a name="BKMK_Interpreting_memory_dumps"></a> Интерпретация дампов памяти
+Рассмотрим этот дамп объекта более подробно:
 
 ```cmd
-{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
-{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
-{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
-{2} a CPerson at $51A4  
+{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long
+{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long
+{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long
+{2} a CPerson at $51A4
 
-Last Name: Smith  
-First Name: Alan  
-Phone #: 581-0215  
+Last Name: Smith
+First Name: Alan
+Phone #: 581-0215
 
-{1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
-```  
+{1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long
+```
 
- Программа, которая создала этот дамп, выделяла память явным образом только дважды — один раз в стеке, а другой раз в куче:  
-
-```cpp
-// Do your memory allocations and deallocations.  
-CString s("This is a frame variable");  
-// The next object is a heap object.  
-CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
-```  
-
- `CPerson` получает три аргумента — указатели на тип `char`, используемые для инициализации переменных-членов `CString` . В дампе памяти объект `CPerson` размещается вместе с тремя не-объектными блоками (3, 4 и 5). Они содержат знаки для переменных-членов `CString` и не будут удалены в случае вызова деструктора объекта `CPerson` .  
-
- Блок номер 2 — собственно объект `CPerson` . `$51A4` представляет собой адрес блока, за которым следует содержимое объекта, выводимое `CPerson`::`Dump` при вызове с помощью [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
-
- Нетрудно догадаться, что блок номер 1 связан с переменной фрейма `CString` , это видно из порядкового номера и размера, соответствующего количеству знаков в переменной фрейма `CString` . Переменные, размещенные во фрейме, автоматически освобождаются, когда фрейм выходит за пределы области действия.  
-
- **Переменные фрейма**  
-
- В основном можно не волноваться по поводу объектов кучи, связанных с переменными фрейма, потому что они автоматически освобождаются, когда эти переменные выходят за пределы области действия. Чтобы избежать беспорядка в диагностическом дампе, следует располагать вызовы `Checkpoint` так, чтобы они находились вне области действия переменных фрейма. Например, поместите фигурные скобки так, чтобы они окружали код предыдущего выделения памяти:  
+Программа, которая создала этот дамп, выделяла память явным образом только дважды — один раз в стеке, а другой раз в куче:
 
 ```cpp
-oldMemState.Checkpoint();  
-{  
-    // Do your memory allocations and deallocations ...  
-    CString s("This is a frame variable");  
-    // The next object is a heap object.  
-    CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
-}  
-newMemState.Checkpoint();  
-```  
+// Do your memory allocations and deallocations.
+CString s("This is a frame variable");
+// The next object is a heap object.
+CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
+```
 
- С квадратными скобками в этих местах дамп памяти для этого примера выглядит следующим образом:  
+`CPerson` получает три аргумента — указатели на тип `char`, используемые для инициализации переменных-членов `CString` . В дампе памяти объект `CPerson` размещается вместе с тремя не-объектными блоками (3, 4 и 5). Они содержат знаки для переменных-членов `CString` и не будут удалены в случае вызова деструктора объекта `CPerson` .
 
-```cmd 
-Dumping objects ->  
+Блок номер 2 — собственно объект `CPerson` . `$51A4` представляет собой адрес блока, за которым следует содержимое объекта, выводимое `CPerson`::`Dump` при вызове с помощью [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).
 
-{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
-{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
-{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
-{2} a CPerson at $51A4  
+Нетрудно догадаться, что блок номер 1 связан с переменной фрейма `CString` , это видно из порядкового номера и размера, соответствующего количеству знаков в переменной фрейма `CString` . Переменные, размещенные во фрейме, автоматически освобождаются, когда фрейм выходит за пределы области действия.
 
-Last Name: Smith  
-First Name: Alan  
-Phone #: 581-0215  
-```  
+**Переменные фрейма**
 
- **Не-объектные выделения**  
+В основном можно не волноваться по поводу объектов кучи, связанных с переменными фрейма, потому что они автоматически освобождаются, когда эти переменные выходят за пределы области действия. Чтобы избежать беспорядка в диагностическом дампе, следует располагать вызовы `Checkpoint` так, чтобы они находились вне области действия переменных фрейма. Например, поместите фигурные скобки так, чтобы они окружали код предыдущего выделения памяти:
 
- Следует отметить, что выделения бывают "объектными" (например, `CPerson`) и "не-объектными". Необъектные выделения — это выделения для объектов, которые не являются производными от `CObject`, а также выделения простых типов языка С, таких как `char`, `int`или `long`. Если класс, производный от **CObject**, выделяет дополнительное пространство, например внутренний буфер, такие объекты отобразят и объектное, и не-объектное выделение.  
+```cpp
+oldMemState.Checkpoint();
+{
+    // Do your memory allocations and deallocations ...
+    CString s("This is a frame variable");
+    // The next object is a heap object.
+    CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
+}
+newMemState.Checkpoint();
+```
 
- **Предотвращение утечек памяти**  
+С квадратными скобками в этих местах дамп памяти для этого примера выглядит следующим образом:
 
- Заметьте: в приведенном выше коде блок памяти, связанный с переменной фрейма `CString` , был освобожден автоматически и не отобразился как утечка. Автоматическое освобождение, обусловленное правилами ограничения области видимости, предотвращает большинство утечек памяти, связанных с переменными фрейма.  
+```cmd
+Dumping objects ->
 
- Однако для объектов, распределенных в куче, во избежание утечки памяти нужно явно удалять объект. Чтобы очистить последнюю утечку памяти в предыдущем примере, удалите объект `CPerson` , размещенный в куче:  
+{5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long
+{4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long
+{3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long
+{2} a CPerson at $51A4
 
-```cpp  
-{  
-    // Do your memory allocations and deallocations.  
-    CString s("This is a frame variable");  
-    // The next object is a heap object.  
-    CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
-    delete p;  
-}  
-```  
+Last Name: Smith
+First Name: Alan
+Phone #: 581-0215
+```
 
- [Содержание раздела](#BKMK_In_this_topic)  
+**Не-объектные выделения**
 
-####  <a name="BKMK_Customizing_object_dumps"></a> Настройка дампов объектов  
- Если класс наследуется от [CObject](/cpp/mfc/reference/cobject-class), можно переопределить функцию-член `Dump` , чтобы получить больше сведений при использовании [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) для вывода объектов в [Окне вывода](../ide/reference/output-window.md).  
+Следует отметить, что выделения бывают "объектными" (например, `CPerson`) и "не-объектными". Необъектные выделения — это выделения для объектов, которые не являются производными от `CObject`, а также выделения простых типов языка С, таких как `char`, `int`или `long`. Если класс, производный от <strong>CObject</strong>, выделяет дополнительное пространство, например внутренний буфер, такие объекты отобразят и объектное, и не-объектное выделение.
 
- Функция `Dump` записывает текстовое представление переменных-членов объекта в контекст дампа ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Контекст дампа подобен потоку ввода-вывода. Для отправки данных в**<<**&lt;&lt; `CDumpContext`.  
+**Предотвращение утечек памяти**
 
- При переопределении функции `Dump` следует вначале вызвать версию `Dump` базового класса для вывода содержимого объектов базового класса. Затем вывести текстовое описание и значение для каждой переменной-члена производного класса.  
+Заметьте: в приведенном выше коде блок памяти, связанный с переменной фрейма `CString` , был освобожден автоматически и не отобразился как утечка. Автоматическое освобождение, обусловленное правилами ограничения области видимости, предотвращает большинство утечек памяти, связанных с переменными фрейма.
 
- Объявление функции `Dump` выглядит следующим образом:  
+Однако для объектов, распределенных в куче, во избежание утечки памяти нужно явно удалять объект. Чтобы очистить последнюю утечку памяти в предыдущем примере, удалите объект `CPerson` , размещенный в куче:
 
-```cpp  
-class CPerson : public CObject  
-{  
-public:  
-#ifdef _DEBUG  
-    virtual void Dump( CDumpContext& dc ) const;  
-#endif  
+```cpp
+{
+    // Do your memory allocations and deallocations.
+    CString s("This is a frame variable");
+    // The next object is a heap object.
+    CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
+    delete p;
+}
+```
 
-    CString m_firstName;  
-    CString m_lastName;  
-    // And so on...  
-};  
-```  
+[Содержание раздела](#BKMK_In_this_topic)
 
- Поскольку формирование дампа объекта имеет смысл только при отладке программы, объявление функции `Dump` заключается в блок **#ifdef _DEBUG / #endif** .  
+#### <a name="BKMK_Customizing_object_dumps"></a> Настройка дампов объектов
+Если класс наследуется от [CObject](/cpp/mfc/reference/cobject-class), можно переопределить функцию-член `Dump` , чтобы получить больше сведений при использовании [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) для вывода объектов в [Окне вывода](../ide/reference/output-window.md).
 
- В следующем примере функция `Dump` сначала вызывает функцию `Dump` для базового класса. Затем пишет короткое описание каждой переменной-члена и вместе со значением этой переменной направляет его в диагностический поток.  
+Функция `Dump` записывает текстовое представление переменных-членов объекта в контекст дампа ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Контекст дампа подобен потоку ввода-вывода. Для отправки данных в**<<**&lt;&lt; `CDumpContext`.
 
-```cpp  
-#ifdef _DEBUG  
-void CPerson::Dump( CDumpContext& dc ) const  
-{  
-    // Call the base class function first.  
-    CObject::Dump( dc );  
+При переопределении функции `Dump` следует вначале вызвать версию `Dump` базового класса для вывода содержимого объектов базового класса. Затем вывести текстовое описание и значение для каждой переменной-члена производного класса.
 
-    // Now do the stuff for our specific class.  
-    dc << "last name: " << m_lastName << "\n"  
-        << "first name: " << m_firstName << "\n";  
-}  
-#endif  
-```  
+Объявление функции `Dump` выглядит следующим образом:
 
- Для указания, куда будут направлены выходные данные дампа, следует применить аргумент `CDumpContext` . Отладочная версия MFC использует предопределенный объект `CDumpContext` с именем `afxDump` , который направляет выходные данные в отладчик.  
+```cpp
+class CPerson : public CObject
+{
+public:
+#ifdef _DEBUG
+    virtual void Dump( CDumpContext& dc ) const;
+#endif
 
-```cpp 
-CPerson* pMyPerson = new CPerson;  
-// Set some fields of the CPerson object.  
-//...  
-// Now dump the contents.  
-#ifdef _DEBUG  
-pMyPerson->Dump( afxDump );  
-#endif  
-```  
+    CString m_firstName;
+    CString m_lastName;
+    // And so on...
+};
+```
 
- [Содержание раздела](#BKMK_In_this_topic)  
+Поскольку формирование дампа объекта имеет смысл только при отладке программы, объявление функции `Dump` заключается в блок **#ifdef _DEBUG / #endif** .
 
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Сокращение размера отладочной сборки MFC  
- Отладочная информация для большого MFC-приложения может занимать значительное дисковое пространство. Для уменьшения размера можно использовать одну из описанных ниже процедур.  
+В следующем примере функция `Dump` сначала вызывает функцию `Dump` для базового класса. Затем пишет короткое описание каждой переменной-члена и вместе со значением этой переменной направляет его в диагностический поток.
 
-1. Перестройте библиотеки MFC с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format) параметр, а не **/Z7**. С помощью этих параметров строится один файл программной базы данных (PDB), содержащий отладочную информацию для всей библиотеки, тем самым сохраняется место на диске.  
+```cpp
+#ifdef _DEBUG
+void CPerson::Dump( CDumpContext& dc ) const
+{
+    // Call the base class function first.
+    CObject::Dump( dc );
 
-2. Перестройте библиотеки MFC без отладочной информации (не [/Z7, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format) параметр). В этом случае из-за отсутствия отладочной информации использовать большинство возможностей отладчика внутри кода библиотеки MFC не удастся, но, так как библиотеки MFC уже отлажены, это не будет проблемой.  
+    // Now do the stuff for our specific class.
+    dc << "last name: " << m_lastName << "\n"
+        << "first name: " << m_firstName << "\n";
+}
+#endif
+```
 
-3. Соберите собственное приложение с отладочной информацией только для избранных модулей, используя описанную ниже процедуру.  
+Для указания, куда будут направлены выходные данные дампа, следует применить аргумент `CDumpContext` . Отладочная версия MFC использует предопределенный объект `CDumpContext` с именем `afxDump` , который направляет выходные данные в отладчик.
 
-   [Содержание раздела](#BKMK_In_this_topic)  
+```cpp
+CPerson* pMyPerson = new CPerson;
+// Set some fields of the CPerson object.
+//...
+// Now dump the contents.
+#ifdef _DEBUG
+pMyPerson->Dump( afxDump );
+#endif
+```
 
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Сборка приложения MFC с отладочной информацией для избранных модулей  
- Построение избранных модулей с отладочными библиотеками MFC позволяет использовать пошаговое выполнение и другие отладочные функции в этих модулях. Эта процедура использует и отладочный, и окончательный режимы сборочного файла проекта Visual C++, таким образом создавая необходимость изменений, описанных ниже (и также вынуждая "перестроить все", когда потребуется построение окончательной версии).  
+[Содержание раздела](#BKMK_In_this_topic)
 
-1. Выберите проект в Обозревателе решений.  
+## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Сокращение размера отладочной сборки MFC
+Отладочная информация для большого MFC-приложения может занимать значительное дисковое пространство. Для уменьшения размера можно использовать одну из описанных ниже процедур.
 
-2. В меню **Вид** выберите **Страницы свойств**.  
+1. Перестройте библиотеки MFC с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format) параметр, а не **/Z7**. С помощью этих параметров строится один файл программной базы данных (PDB), содержащий отладочную информацию для всей библиотеки, тем самым сохраняется место на диске.
 
-3. Сначала создайте новую конфигурацию проекта.  
+2. Перестройте библиотеки MFC без отладочной информации (не [/Z7, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format) параметр). В этом случае из-за отсутствия отладочной информации использовать большинство возможностей отладчика внутри кода библиотеки MFC не удастся, но, так как библиотеки MFC уже отлажены, это не будет проблемой.
 
-   1.  В диалоговом окне **Страницы свойств \<Project>** нажмите кнопку **Диспетчер конфигураций**.  
+3. Соберите собственное приложение с отладочной информацией только для избранных модулей, используя описанную ниже процедуру.
 
-   2.  В диалоговом окне [Диспетчер конфигураций](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))найдите нужный проект в таблице. В столбце **Конфигурация** выберите **\<Создать...>**.  
+    [Содержание раздела](#BKMK_In_this_topic)
 
-   3.  В диалоговом окне [Создание конфигурации проекта](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))введите имя новой конфигурации, например, "Неполная отладка" в поле **Имя конфигурации проекта** .  
+### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Сборка приложения MFC с отладочной информацией для избранных модулей
+Построение избранных модулей с отладочными библиотеками MFC позволяет использовать пошаговое выполнение и другие отладочные функции в этих модулях. Эта процедура использует и отладочный, и окончательный режимы сборочного файла проекта Visual C++, таким образом создавая необходимость изменений, описанных ниже (и также вынуждая "перестроить все", когда потребуется построение окончательной версии).
 
-   4.  В списке **Копировать параметры из** выберите **Выпуск**.  
+1. Выберите проект в Обозревателе решений.
 
-   5.  Нажмите кнопку **ОК** закрыть **Создание конфигурации проекта** диалоговое окно.  
+2. В меню **Вид** выберите **Страницы свойств**.
 
-   6.  Закройте диалоговое окно **Диспетчер конфигураций** .  
+3. Сначала создайте новую конфигурацию проекта.
 
-4. Теперь нужно настроить параметры для всего проекта.  
+   1. В диалоговом окне **Страницы свойств \<Project>** нажмите кнопку **Диспетчер конфигураций**.
 
-   1.  В диалоговом окне **Страницы свойств** в папке **Свойства конфигурации** выберите категорию **Общие** .  
+   2. В диалоговом окне [Диспетчер конфигураций](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))найдите нужный проект в таблице. В столбце **Конфигурация** выберите **\<Создать...>**.
 
-   2.  В таблице параметров проекта разверните **Параметры проекта по умолчанию** (если нужно).  
+   3. В диалоговом окне [Создание конфигурации проекта](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))введите имя новой конфигурации, например, "Неполная отладка" в поле **Имя конфигурации проекта** .
 
-   3.  В **Параметрах проекта по умолчанию**найдите **Использовать MFC**. В правом столбце таблицы появится текущее значение параметра. Измените его на **Использовать MFC в статической библиотеке**.  
+   4. В списке **Копировать параметры из** выберите **Выпуск**.
 
-   4.  В левой области диалогового окна **Страницы свойств** откройте папку **C/C++** и выберите **Препроцессор**. В таблице свойств найдите **Определения препроцессора** и замените NDEBUG на _DEBUG.  
+   5. Нажмите кнопку **ОК** закрыть **Создание конфигурации проекта** диалоговое окно.
 
-   5.  В левой области диалогового окна **Страницы свойств** откройте папку **Компоновщик** и выберите категорию **Ввод** . В таблице свойств найдите **Дополнительные зависимости**. Для свойства **Дополнительные зависимости** введите NAFXCWD.LIB и LIBCMT.  
+   6. Закройте диалоговое окно **Диспетчер конфигураций** .
 
-   6.  Нажмите **OK** , чтобы сохранить новые параметры построения, и закройте диалоговое окно **Страницы свойств** .  
+4. Теперь нужно настроить параметры для всего проекта.
 
-5. Из меню **Построение** выберите подпункт **Перестроить**. Это действие удалит всю отладочную информацию из модулей, но не затронет библиотеку MFC.  
+   1. В диалоговом окне **Страницы свойств** в папке **Свойства конфигурации** выберите категорию **Общие** .
 
-6. Теперь нужно добавить отладочную информацию в избранные модули приложения. Помните, что можно задавать точки останова и выполнять другие отладочные действия только в тех модулях, которые скомпилированы с отладочной информацией. Для каждого файла проекта, в который нужно включить отладочную информацию, проделайте следующие действия:  
+   2. В таблице параметров проекта разверните **Параметры проекта по умолчанию** (если нужно).
 
-   1.  В обозревателе решений откройте папку **Исходные файлы** , расположенную в проекте.  
+   3. В **Параметрах проекта по умолчанию**найдите **Использовать MFC**. В правом столбце таблицы появится текущее значение параметра. Измените его на **Использовать MFC в статической библиотеке**.
 
-   2.  Выберите файл, для которого нужно настроить отладочную информацию.  
+   4. В левой области диалогового окна **Страницы свойств** откройте папку **C/C++** и выберите **Препроцессор**. В таблице свойств найдите **Определения препроцессора** и замените NDEBUG на _DEBUG.
 
-   3.  В меню **Вид** выберите **Страницы свойств**.  
+   5. В левой области диалогового окна **Страницы свойств** откройте папку **Компоновщик** и выберите категорию **Ввод** . В таблице свойств найдите **Дополнительные зависимости**. Для свойства **Дополнительные зависимости** введите NAFXCWD.LIB и LIBCMT.
 
-   4.  В диалоговом окне **Страницы свойств** в папке **Параметры конфигурации** откройте папку **C/C++** и выберите категорию **Общие** .  
+   6. Нажмите **OK** , чтобы сохранить новые параметры построения, и закройте диалоговое окно **Страницы свойств** .
 
-   5.  В таблице свойств найдите **Формат отладочной информации.**  
+5. Из меню **Построение** выберите подпункт **Перестроить**. Это действие удалит всю отладочную информацию из модулей, но не затронет библиотеку MFC.
 
-   6.  Щелкните **Формат отладочной информации** и выберите нужный параметр (обычно **/ZI**.  
+6. Теперь нужно добавить отладочную информацию в избранные модули приложения. Помните, что можно задавать точки останова и выполнять другие отладочные действия только в тех модулях, которые скомпилированы с отладочной информацией. Для каждого файла проекта, в который нужно включить отладочную информацию, проделайте следующие действия:
 
-   7.  Если приложение создано с использованием мастера создания приложений или имеет предкомпилированные заголовки, следует эти заголовки выключить или перекомпилировать их перед компиляцией остальных модулей. Иначе будет получено предупреждение C4650 и сообщение об ошибке C2855. Предкомпилированные заголовки можно отключить, изменив параметр **Создать/Использовать предкомпилированные заголовки** в диалоговом окне **Свойства \<Проект>** (папка **Свойства конфигурации**, вложенная папка **C/C++**, категория **Предкомпилированные заголовки**).  
+   1. В обозревателе решений откройте папку **Исходные файлы** , расположенную в проекте.
 
-7. В меню **Построение** выберите **Построить** для перестройки устаревших файлов проекта.  
+   2. Выберите файл, для которого нужно настроить отладочную информацию.
 
-   Как альтернативу описанному здесь способу для настройки отдельных параметров каждого файла можно использовать внешний сборочный файл проекта. В этом случае помните: чтобы подключить отладочные библиотеки MFC, следует определить флаг [_DEBUG](/cpp/c-runtime-library/debug) для каждого модуля. Если необходимо использовать конечную версию библиотеки MFC, нужно определить NDEBUG. Дополнительные сведения о создании внешних сборочных файлов проекта см. в [Справочнике NMAKE](/cpp/build/running-nmake).  
+   3. В меню **Вид** выберите **Страницы свойств**.
 
-   [Содержание раздела](#BKMK_In_this_topic)  
+   4. В диалоговом окне **Страницы свойств** в папке **Параметры конфигурации** откройте папку **C/C++** и выберите категорию **Общие** .
 
-## <a name="see-also"></a>См. также раздел  
- [Отладка Visual C++](../debugger/debugging-native-code.md)
+   5. В таблице свойств найдите **Формат отладочной информации.**
+
+   6. Щелкните **Формат отладочной информации** и выберите нужный параметр (обычно **/ZI**.
+
+   7. Если приложение создано с использованием мастера создания приложений или имеет предкомпилированные заголовки, следует эти заголовки выключить или перекомпилировать их перед компиляцией остальных модулей. Иначе будет получено предупреждение C4650 и сообщение об ошибке C2855. Предкомпилированные заголовки можно отключить, изменив параметр **Создать/Использовать предкомпилированные заголовки** в диалоговом окне **Свойства \<Проект>** (папка **Свойства конфигурации**, вложенная папка **C/C++**, категория **Предкомпилированные заголовки**).
+
+7. В меню **Построение** выберите **Построить** для перестройки устаревших файлов проекта.
+
+   Как альтернативу описанному здесь способу для настройки отдельных параметров каждого файла можно использовать внешний сборочный файл проекта. В этом случае помните: чтобы подключить отладочные библиотеки MFC, следует определить флаг [_DEBUG](/cpp/c-runtime-library/debug) для каждого модуля. Если необходимо использовать конечную версию библиотеки MFC, нужно определить NDEBUG. Дополнительные сведения о создании внешних сборочных файлов проекта см. в [Справочнике NMAKE](/cpp/build/running-nmake).
+
+   [Содержание раздела](#BKMK_In_this_topic)
+
+## <a name="see-also"></a>См. также раздел
+[Отладка Visual C++](../debugger/debugging-native-code.md)

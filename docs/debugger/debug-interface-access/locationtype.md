@@ -12,82 +12,82 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e844438f5262b6a218a5feb355e78fc8a2cd1da
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 779df14d01950b90a45764ba9d84760a1448d475
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005362"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318658"
 ---
 # <a name="locationtype"></a>LocationType
-Указывает тип данных о географическом положении, содержащихся в символе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-enum LocationType {   
-   LocIsNull,  
-   LocIsStatic,  
-   LocIsTLS,  
-   LocIsRegRel,  
-   LocIsThisRel,  
-   LocIsEnregistered,  
-   LocIsBitField,  
-   LocIsSlot,  
-   LocIsIlRel,  
-   LocInMetaData,  
-   LocIsConstant,  
-   LocTypeMax  
-};  
-```  
-  
-## <a name="elements"></a>Элементы  
- `LocIsNull`  
- Сведения о расположении недоступны.  
-  
- `LocIsStatic`  
- Расположение является статическим.  
-  
- `LocIsTLS`  
- Расположение находится в локальном хранилище потока.  
-  
- `LocIsRegRel`  
- Расположение относительно регистра.  
-  
- `LocIsThisRel`  
- Расположение — `this`— относительный.  
-  
- `LocIsEnregistered`  
- Расположение — в регистре.  
-  
- `LocIsBitField`  
- Расположением является битовым полем.  
-  
- `LocIsSlot`  
- Располагается в слот промежуточного языка MSIL (Microsoft).  
-  
- `LocIsIlRel`  
- Расположение — относительно MSIL.  
-  
- `LocInMetaData`  
- Расположение находится в метаданных.  
-  
- `LocIsConstant`  
- Расположение имеет постоянное значение.  
-  
- `LocTypeMax`  
- Количество типов расположение в этом перечислении.  
-  
-## <a name="remarks"></a>Примечания  
- Свойства, доступные для [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейс зависят от расположения символа в файле образа. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).  
-  
- Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) метод.  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
-  
-## <a name="see-also"></a>См. также раздел  
- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)
+Указывает тип данных о географическом положении, содержащихся в символе.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+enum LocationType {
+    LocIsNull,
+    LocIsStatic,
+    LocIsTLS,
+    LocIsRegRel,
+    LocIsThisRel,
+    LocIsEnregistered,
+    LocIsBitField,
+    LocIsSlot,
+    LocIsIlRel,
+    LocInMetaData,
+    LocIsConstant,
+    LocTypeMax
+};
+```
+
+## <a name="elements"></a>Элементы
+`LocIsNull`  
+Сведения о расположении недоступны.
+
+`LocIsStatic`  
+Расположение является статическим.
+
+`LocIsTLS`  
+Расположение находится в локальном хранилище потока.
+
+`LocIsRegRel`  
+Расположение относительно регистра.
+
+`LocIsThisRel`  
+Расположение — `this`— относительный.
+
+`LocIsEnregistered`  
+Расположение — в регистре.
+
+`LocIsBitField`  
+Расположением является битовым полем.
+
+`LocIsSlot`  
+Располагается в слот промежуточного языка MSIL (Microsoft).
+
+`LocIsIlRel`  
+Расположение — относительно MSIL.
+
+`LocInMetaData`  
+Расположение находится в метаданных.
+
+`LocIsConstant`  
+Расположение имеет постоянное значение.
+
+`LocTypeMax`  
+Количество типов расположение в этом перечислении.
+
+## <a name="remarks"></a>Примечания
+Свойства, доступные для [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейс зависят от расположения символа в файле образа. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).
+
+Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) метод.
+
+## <a name="requirements"></a>Требования
+Заголовок: cvconst.h
+
+## <a name="see-also"></a>См. также раздел
+[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)  
+[Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)

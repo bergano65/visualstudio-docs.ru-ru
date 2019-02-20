@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995223"
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.  
@@ -169,8 +169,8 @@ DXCap.exe -e map
  **Версия: 2.1.2914.1734**  
  **Запускаемые приложения:**  
  **Идентификатор AppexMaps**  
- **Exe C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: Нет**  
+ **"exe": C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: нет**  
  **AppSpec (для запуска): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** в последней строке выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Захват определенных кадров или кадров в течение определенного интервала  
