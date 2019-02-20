@@ -8,12 +8,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e94d48a1a9dc926bc039ba12c64f26616ae68ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912161"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316084"
 ---
 # <a name="overview-suggest-a-feature"></a>Общие сведения: Предложение функции
 
@@ -129,4 +129,4 @@ ms.locfileid: "55912161"
 
 ## <a name="see-also"></a>См. также
 
-- [Вводная информация по механизму "Предложить функцию" в сообществе разработчиков (блог по Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+- [Вводная информация по механизму "Предложить функцию" в сообществе разработчиков (блог по Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

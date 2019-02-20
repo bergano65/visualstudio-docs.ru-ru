@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916171"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316149"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
 
@@ -58,7 +58,7 @@ ms.locfileid: "55916171"
 
 ## <a name="update-to-the-latest-test-adapters"></a>Обновление адаптеров тестов до последней версии
 
-Обновите адаптер теста до последней стабильной версии, чтобы оптимизировать обнаружение и выполнение тестов. Дополнительные сведения об обновлениях адаптеров тестов MSTest, NUnit и xUnit см. в [блоге по Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+Обновите адаптер теста до последней стабильной версии, чтобы оптимизировать обнаружение и выполнение тестов. Дополнительные сведения об обновлениях адаптеров тестов MSTest, NUnit и xUnit см. в [блоге по Visual Studio](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Обновление адаптера теста до последней стабильной версии
 

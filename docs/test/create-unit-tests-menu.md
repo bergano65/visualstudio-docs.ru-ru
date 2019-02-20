@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955145"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315109"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
@@ -60,11 +60,11 @@ ms.locfileid: "55955145"
 
 ## <a name="when-should-i-use-this-feature"></a>Когда следует использовать эту функцию?
 
-Используйте эту функцию, когда нужно создать модульные тесты, в частности, когда вы тестируете существующий код с крайне небольшим или отсутствующим объемом протестированного кода и отсутствующей документацией. Другими словами, в ситуациях, когда спецификация кода отсутствует или ограничена. Она эффективно реализует подход, аналогичный [интеллектуальным модульным тестам](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/), при котором характеризуется наблюдаемое поведение кода.
+Используйте эту функцию, когда нужно создать модульные тесты, в частности, когда вы тестируете существующий код с крайне небольшим или отсутствующим объемом протестированного кода и отсутствующей документацией. Другими словами, в ситуациях, когда спецификация кода отсутствует или ограничена. Она эффективно реализует подход, аналогичный [интеллектуальным модульным тестам](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/), при котором характеризуется наблюдаемое поведение кода.
 
 Однако эта функция также применима и для ситуаций, когда разработчик сначала пишет некоторый код, а затем использует его для начальной загрузки процедуры модульного тестирования. В рамках потока написания кода разработчику может потребоваться быстро создать заглушку для метода модульного тестирования (с подходящим тестовым классом и тестовым проектом) для определенного фрагмента кода.
 
 ## <a name="see-also"></a>См. также
 
-- [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")
-- [Записи блога о функции модульного тестирования](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")
+- [Записи блога о функции модульного тестирования](https://devblogs.microsoft.com/devops/?s=unit+testing)

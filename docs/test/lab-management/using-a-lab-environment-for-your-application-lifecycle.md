@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 35bc798052bac30f76e76983d0a5dc0bdf4f1fa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956133"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318008"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Использование лабораторной среды для DevOps
 
@@ -141,4 +141,4 @@ ms.locfileid: "55956133"
 
 * [Установка и настройка агентов тестирования](../../test/lab-management/install-configure-test-agents.md)
 * [Руководство по Visual Studio Lab Management](https://aka.ms/vsarsolutions)
-* [Блог Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+* [Блог Microsoft DevOps](https://devblogs.microsoft.com/devops/)

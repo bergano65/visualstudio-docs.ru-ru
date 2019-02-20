@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928443"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317189"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Как выполнить  Настройка специальных возможностей в интегрированной среде разработки
 
 > [!TIP]
-> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] содержит функции, которые упрощают работу для людей с нарушениями зрения, а также для пользователей с ограниченной подвижностью. Например, они позволяют изменять размер и цвет текста в редакторах, размер текста и кнопок на панелях инструментов и включать автозавершение для методов и параметров.
 

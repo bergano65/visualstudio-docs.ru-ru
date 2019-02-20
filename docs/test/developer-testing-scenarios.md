@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b133a9ce3aa5773349260249ee80edc02d6b318b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 216cee6181122997ef8cc5937b9b1af76ba71b06
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954963"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316357"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Инструменты, сценарии и возможности тестирования для разработчика
 
@@ -29,7 +29,7 @@ ms.locfileid: "55954963"
 ![IntelliTest в действии](media/devtest-intellitest.png)
 
 * [Знакомство с IntelliTest в Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest — один тест на любой случай](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest — один тест на любой случай](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [Видео по IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Начало работы с IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Справочное руководство по IntelliTest](intellitest-manual/index.md)
@@ -78,7 +78,7 @@ Visual Studio является расширяемой системой и поз
 ## <a name="see-also"></a>См. также
 
 * [Приступая к работе с модульным тестированием](getting-started-with-unit-testing.md)
-* [Ускорение модульных тестов в Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)
-* [Параллельное и контекстное выполнение модульных тестов](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Ускорение модульных тестов в Team Foundation Server](https://devblogs.microsoft.com/devops/speeding-up-unit-test-execution-in-tfs/)
+* [Параллельное и контекстное выполнение модульных тестов](https://devblogs.microsoft.com/devops/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Модульное тестирование, объем протестированного кода и анализ клонов кода с помощью Visual Studio (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)

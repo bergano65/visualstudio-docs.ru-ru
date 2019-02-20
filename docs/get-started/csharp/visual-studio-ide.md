@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155998"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317228"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio (C#)
 
@@ -122,18 +122,6 @@ ms.locfileid: "56155998"
 Дополнительные сведения о других способах персонализации интегрированной среды разработки см. в разделе [Персонализация Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Создание программы
-
-Сначала настроим Visual Studio для использования параметров среды, предназначенных для разработчиков на C#.
-
-1. В строке меню выберите **Сервис** > **Импорт и экспорт параметров**.
-
-2. В **мастере импорта и экспорта параметров** выберите **Сбросить все параметры** на первой странице, а затем нажмите кнопку **Далее**.
-
-3. На странице **Сохранить текущие параметры** укажите, нужно ли сохранить текущие параметры, а затем нажмите кнопку **Далее** (если вы не изменяли параметры, выберите **Нет, только сбросить параметры, перезаписав мои текущие значения**).
-
-4. На странице **Выбор набора параметров, используемого по умолчанию** выберите **Visual C#**, а затем нажмите кнопку **Готово**.
-
-5. На странице **Сброс завершен** нажмите кнопку **Закрыть**.
 
 Давайте создадим простую программу.
 
@@ -303,4 +291,4 @@ ms.locfileid: "56155998"
 
 - Откройте для себя [другие возможности Visual Studio](../../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Читайте [блог Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Читайте [блог Visual Studio](https://devblogs.microsoft.com/visualstudio/)

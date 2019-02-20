@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.custom: video
+ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948626"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335094"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Включение пакета NuGet в проект
 
@@ -113,6 +114,10 @@ using Newtonsoft.Json;
 ![Автоматическое восстановление пакетов](media/nuget-walkthrough-AutoRestore.png)
 
 Сведения о том, как исключить каталог `packages` из отслеживания, см. в документации по используемой системе управления версиями.
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
 ## <a name="see-also"></a>См. также
 

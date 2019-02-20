@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768836"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335546"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -34,7 +35,7 @@ ms.locfileid: "54768836"
 
 В этой статье содержатся только сведения о типах проектов, которые Visual Studio 2017 может переносить. В статье не указаны типы проектов, которые больше не поддерживаются в Visual Studio 2017 и поэтому не могут быть перенесены. Кроме того, в ней не указаны поддерживаемые типы проектов, не имеющие проблем с миграцией. Этот список находится на странице [целевой платформы и совместимости](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Для определенных типов проектов требуется установить соответствующие рабочие нагрузки с помощью установщика Visual Studio. При отсутствии установленной рабочей нагрузки Visual Studio сообщает о неизвестном или несовместимом типе проекта. В этом случае проверьте параметры установки и повторите попытку. Просмотрите статью о [целевой платформе и совместимости](/visualstudio/productinfo/vs2017-compatibility-vs) для получения сведений о поддержке проектов в Visual Studio 2017.
 
 ## <a name="project-types"></a>Типы проектов

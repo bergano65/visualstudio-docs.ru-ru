@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155855"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316617"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Введение в интегрированную среду разработки Visual Studio (Python)
 
@@ -134,4 +134,4 @@ Visual Studio предоставляется для Windows и Mac, но под�
 
 - Откройте для себя [другие возможности Visual Studio](../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Читайте [блог Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Читайте [блог Visual Studio](https://devblogs.microsoft.com/visualstudio/)

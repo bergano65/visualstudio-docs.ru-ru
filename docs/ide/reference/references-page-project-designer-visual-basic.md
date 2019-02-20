@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970755"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335134"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Страница "Ссылки" в конструкторе проектов (Visual Basic)
 
@@ -32,12 +31,6 @@ ms.locfileid: "55970755"
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
 Следующие параметры позволяют выбирать и удалять ссылки и импортированные пространства имен в проекте.
-
-**Неиспользуемые ссылки**
-
-Нажмите эту кнопку, чтобы получить доступ к диалоговому окну **Неиспользуемые ссылки**.
-
-Диалоговое окно **Неиспользуемые ссылки** позволяет удалить ссылки, которые включены в проект, но фактически не используются кодом. Окно содержит таблицу с **именем ссылки**, **путем** и другими сведениями о неиспользуемых ссылках на пространства имен в проекте. Выберите в таблице ссылки на пространства имен, которые требуется удалить из проекта, и нажмите кнопку **Удалить**.
 
 **Пути для ссылок**
 
