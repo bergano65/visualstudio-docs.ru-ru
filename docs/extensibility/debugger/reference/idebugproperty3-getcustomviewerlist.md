@@ -12,81 +12,81 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b10de8e8d184342a8994050afaaeff94f8ca24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8038e1d127a726a12ec37372758b992a1296c1d4
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988380"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449922"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Получает список пользовательских средств просмотра, связанных с данным свойством.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
-);  
-```  
-  
-```csharp  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `celtSkip`  
- [in] Количество представлений, чтобы пропустить.  
-  
- `celtRequested`  
- [in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).  
-  
- `rgViewers`  
- [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.  
-  
- `pceltFetched`  
- [out] Возвращает фактическое количество средств просмотра.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Для поддержки визуализаторов типов, этот метод передает вызов [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод можно добавить в список соответствующих пользовательских средств просмотра.  
-  
- См. в разделе [визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Дополнительные сведения о различиях между визуализаторов типов и пользовательских средств просмотра.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.  
-  
-```cpp  
-STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  
-{  
-    if (NULL == prgViewers)  
-    {  
-        return E_POINTER;  
-    }  
-  
-    if (GetVisualizerService())  
-    {  
-        return m_pIEEVisualizerService->GetCustomViewerList(celtSkip, celtRequested, prgViewers, pceltFetched);  
-    }  
-    else  
-    {  
-        return E_NOTIMPL;  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)   
- [Визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+Получает список пользовательских средств просмотра, связанных с данным свойством.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetCustomViewerList(
+    ULONG                celtSkip,
+    ULONG                celtRequested,
+    DEBUG_CUSTOM_VIEWER* rgViewers,
+    ULONG*               pceltFetched
+);
+```
+
+```csharp
+int GetCustomViewerList(
+    uint                  celtSkip,
+    uint                  celtRequested,
+    DEBUG_CUSTOM_VIEWER[] rgViewers,
+    out uint              pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`celtSkip`  
+[in] Количество представлений, чтобы пропустить.
+
+`celtRequested`  
+[in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).
+
+`rgViewers`  
+[in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
+
+`pceltFetched`  
+[out] Возвращает фактическое количество средств просмотра.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+Для поддержки визуализаторов типов, этот метод передает вызов [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод можно добавить в список соответствующих пользовательских средств просмотра.
+
+См. в разделе [визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Дополнительные сведения о различиях между визуализаторов типов и пользовательских средств просмотра.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.
+
+```cpp
+STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)
+{
+    if (NULL == prgViewers)
+    {
+        return E_POINTER;
+    }
+
+    if (GetVisualizerService())
+    {
+        return m_pIEEVisualizerService->GetCustomViewerList(celtSkip, celtRequested, prgViewers, pceltFetched);
+    }
+    else
+    {
+        return E_NOTIMPL;
+    }
+}
+```
+
+## <a name="see-also"></a>См. также
+[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
+[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
+[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)  
+[Визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

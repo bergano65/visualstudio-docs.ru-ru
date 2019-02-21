@@ -10,66 +10,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72cc81a9c93e35ad972a49d7c8ed14e02c16387e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880f00528b1c2b1f081b6c306e1f94cccc109ec
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003357"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450286"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-Извлекает массив сведения об исходном сервере.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetSourceServerData(  
-   ULONG* pDataByteCount,   
-   BYTE** ppData  
-);  
-```  
-  
-```csharp  
-public int GetSourceServerData(  
-   out uint  pDataByteCount,   
-   out int[] ppData  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pDataByteCount`  
- [out] Число байтов в массиве данных.  
-  
- `ppData`  
- [out] Ссылка на массив данных.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CModule** объекта, который предоставляет [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) интерфейс.  
-  
-```cpp  
-HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<ISymUnmanagedReader> pSymReader;  
-    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;  
-  
-    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );  
-    *pDataByteCount = 0;  
-    *ppData = NULL;  
-  
-    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );  
-    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );  
-  
-    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );  
-  
-Error:  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+Извлекает массив сведения об исходном сервере.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetSourceServerData(
+    ULONG* pDataByteCount,
+    BYTE** ppData
+);
+```
+
+```csharp
+public int GetSourceServerData(
+    out uint  pDataByteCount,
+    out int[] ppData
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`pDataByteCount`  
+[out] Число байтов в массиве данных.
+
+`ppData`  
+[out] Ссылка на массив данных.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CModule** объекта, который предоставляет [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) интерфейс.
+
+```cpp
+HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)
+{
+    HRESULT hr = S_OK;
+    CComPtr<ISymUnmanagedReader> pSymReader;
+    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;
+
+    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );
+    *pDataByteCount = 0;
+    *ppData = NULL;
+
+    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );
+    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );
+
+    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );
+
+Error:
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>См. также
+[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
