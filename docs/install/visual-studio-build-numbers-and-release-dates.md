@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/05/2019
+ms.date: 02/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b33b794bf790d2b68368ee4853c699f6de01300
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939532"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317995"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -27,6 +27,8 @@ ms.locfileid: "55939532"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.7 | Выпуск | 12 февраля 2019 г. | 15.9.28307.423 |
+| 15.0.21 | Выпуск | 12 февраля 2019 г. | 15.0.26228.73 |
 | 15.9.6 | Выпуск | 24 января 2019 г. | 15.9.28307.344 |
 | 15.9.5 | Выпуск | 8 января 2019 г. | 15.9.28307.280 |
 | 15.9.4 | Выпуск | 11 декабря 2018 г. | 15.9.28307.222 |
@@ -175,6 +177,7 @@ ms.locfileid: "55939532"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Предварительная версия 3 | 13 февраля 2019 г. | 16.0.28608.199 |
 | 16.0.0 | Предварительная версия 2.2 | 5 февраля 2019 г. | 16.0.28602.52 |
 | 16.0.0 | Предварительная версия 2.1 | 31 января 2019 г. | 16.0.28529.54 |
 | 16.0.0 | Предварительная версия 2 | 23 января 2019 г. | 16.0.28522.59 |
@@ -185,6 +188,7 @@ ms.locfileid: "55939532"
 
 ## <a name="see-also"></a>См. также
 
+* [График выпуска Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Руководство администратора Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)

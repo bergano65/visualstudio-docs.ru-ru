@@ -19,8 +19,7 @@ ms.locfileid: "55940769"
 ---
 # <a name="state-activity-designer"></a>Конструктор State Activity
 
-
-  <xref:System.Activities.Statements.State> представляет состояние, в котором может находиться конечный автомат.
+<xref:System.Activities.Statements.State> представляет состояние, в котором может находиться конечный автомат.
 
 ## <a name="using-the-state-activity-designer"></a>Использование конструктора действий состояний
 

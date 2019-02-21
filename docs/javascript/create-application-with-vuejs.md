@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155387"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227765"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -178,5 +178,5 @@ Vue.js предоставляет официальный интерфейс ко
 ## <a name="see-also"></a>См. также
 
 - [руководство по началу работы с Vue](https://vuejs.org/v2/guide);
-- [проект интерфейса командной строки Vue](https://github.com/vuejs/vue-cli(;
+- [Проект интерфейса командной строки Vue](https://github.com/vuejs/vue-cli).
 - [документация по настройке Webpack](https://webpack.js.org/configuration/).
