@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690454"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413310"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
@@ -52,7 +52,7 @@ ms.locfileid: "55690454"
 
     Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Установите рабочую нагрузку **ASP.NET и веб-разработка**.
 
-    Выбранный шаблон проекта (ASP.NET или ASP.NET Core) должен соответствовать 
+    Выбранный шаблон проекта (ASP.NET или ASP.NET Core) должен соответствовать версии ASP.NET, установленной на веб-сервере.
 
 1. Выберите **MVC** (.NET Framework) или **Веб-приложение (модель-представление-контроллер)** (для .NET Core), убедитесь, что выбран параметр **Без проверки подлинности**, а затем нажмите кнопку **ОК**.
 

@@ -24,25 +24,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ba6a9407b87640879c3d591f1a6aafad1ee42a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918940"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318461"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] обеспечивает эффективное редактирование JavaScript. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
+Visual Studio 2017 обеспечивает эффективное редактирование JavaScript без дополнительной подготовки. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
 
 > [!NOTE]
-> Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
+> Языковая служба JavaScript в Visual Studio 2017 использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
 
 Дополнительные сведения об общих функциональных возможностях IntelliSense в Visual Studio см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности JavaScript Language Service в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Новые возможности JavaScript Language Service в Visual Studio 2017
 
-Начиная с [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров.
+Начиная с Visual Studio 2017 JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров.
 Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
 Для формирования такой информации TypeScript использует несколько источников.
 

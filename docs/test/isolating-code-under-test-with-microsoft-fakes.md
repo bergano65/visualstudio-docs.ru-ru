@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937725"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316461"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -35,7 +35,8 @@ Fakes предлагает два варианта на выбор:
 -   Проект .NET Framework
 
 > [!NOTE]
-> Проекты .NET Standard не поддерживаются.
+> - Проекты .NET Standard не поддерживаются.
+> - Профилирование с помощью Visual Studio недоступно для тестов, использующих Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Выбор между заглушкой и оболочкой
 Обычно проект Visual Studio считается компонентом, потому что эти классы разрабатываются и обновляются одновременно. Заглушки и оболочки можно использовать для вызовов, осуществляемых проектом в отношении других проектов в решении или других сборок, на которые ссылается проект.

@@ -1,7 +1,7 @@
 ---
-title: Глобализация и локализация приложений
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: Средства локализации
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -15,30 +15,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b8628f61c5fa2bc6eebadad23d5c9133f6fe4c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907352"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335263"
 ---
-# <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
+# <a name="develop-globalized-and-localized-apps"></a>Разработка глобализованных и локализованных приложений
 
-Если вы планируете распространять приложения для международного использования, следует учесть несколько аспектов на этапах проектирования и разработки. Даже если пока у вас нет подобных планов, небольшие заблаговременные приготовления помогут значительно облегчить смену курса в будущих версиях приложения. Службы, встроенные в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], упрощают разработку отдельного приложения, которое можно адаптировать для разных языков и региональных параметров с помощью управляемой разработки в Visual Studio.
+Система Visual Studio упрощает разработку международных версий за счет применения служб, встроенных в [.NET Framework](/dotnet/standard/globalization-localization/).
 
-## <a name="resources"></a>Ресурсы
+Например, система проектов для приложений Windows Forms может создавать файлы ресурсов как для резервных, так и для каждых дополнительных языка и региональных параметров пользовательского интерфейса. При сборке проекта в Visual Studio файлы ресурсов компилируются из формата Visual Studio XML (RESX) в промежуточный двоичный формат (RESOURCES) и затем внедряются во вспомогательные сборки. Дополнительные сведения см. в разделе [Файлы ресурсов в Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) и [Создание вспомогательных сборок для классических приложений](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
- Система Visual Studio изначально ориентирована на упрощение разработки международных версий за счет применения служб, встроенных в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. В следующих статьях описаны доступные в Visual Studio возможности по интернационализации.
-
- В статье [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) описаны основные принципы разработки программного обеспечения для международного рынка с использованием Visual Studio и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-
- В статье о [локализации приложений](../ide/localizing-applications.md) содержатся ссылки на сведения о настройке приложений для заданного языка и заданного набора региональных параметров.
-
- В статье о [глобализации приложений](../ide/globalizing-applications.md) содержатся ссылки на страницы, посвященные созданию приложений, которые поддерживают несколько языков и региональных параметров.
+Сведения о создании приложений для языков с двунаправленным письмом в Visual Studio см. в разделе [Создание приложений для арабского и иврита](creating-applications-in-bi-directional-languages.md).
 
 ## <a name="see-also"></a>См. также
 
-- В статье [Рекомендации по разработке международных приложений](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) содержатся сведения о программировании для международной аудитории, в частности рассматриваются вопросы конструирования и терминологии.
-- В [обзоре библиотек классов](/dotnet/standard/class-library-overview) описаны классы, интерфейсы и типы значений, которые облегчают и оптимизируют процесс разработки, а также обеспечивают доступ к функциям системы.
-- В <xref:System.Globalization> описаны классы в этом пространстве имен, определяющие сведения, которые относятся к языку и региональным параметрам, такие как язык, страна или регион, используемые календари, шаблоны форматирования дат, денежных единиц и чисел, а также порядок сортировки строк.
-- В <xref:System.Resources> описаны классы и интерфейсы в этом пространстве имен, позволяющие разработчикам создавать различные ресурсы для конкретного языка и региональных параметров, используемые в приложениях, сохранять эти ресурсы и управлять ими.
+- [Глобализация и локализация приложений .NET](/dotnet/standard/globalization-localization/)
+- [Ресурсы в приложениях .NET](/dotnet/framework/resources/)

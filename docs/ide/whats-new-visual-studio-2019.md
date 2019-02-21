@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987422"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318398"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Новые возможности предварительной версии Visual Studio 2019
 
-**Обновлено для [выпуска предварительной версии 2](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Обновлено для [выпуска предварительной версии 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 >[!div class="button"]
 >[Скачать предварительную версию](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ ms.locfileid: "55987422"
 * **[Непрерывные инновации](#continuous-innovation)**. Эффективное создание кода с интеллектуальной облачной поддержкой.
 
 > [!NOTE]
-> Полный список новых возможностей и функций предварительной версии Visual Studio 2019 см. в [заметках о выпуске](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Обзор новых возможностей второй предварительной версии см. в записи блога [Среда Visual Studio 2019, предварительная версия 2, уже доступна](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/).
+> Полный список новых возможностей и функций предварительной версии Visual Studio 2019 см. в [заметках о выпуске](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
 
 ## <a name="personal-and-team-productivity"></a>Личная и командная производительность
 
@@ -53,7 +53,7 @@ ms.locfileid: "55987422"
 
 Новое окно запуска дает возможность клонировать или извлечь код, открыть проект или решение, открыть локальную папку или создать новый проект. Эти возможности, представленные в виде простого диалогового окна, помогают как начинающим, так и опытным пользователям Visual Studio быстро перейти к коду.
 
-Дополнительные сведения см. в записи блога [Get to code: How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Приступая к написанию кода. Как мы разработали новое окно запуска Visual Studio).
+Дополнительные сведения см. в записи блога [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Приступая к написанию кода. Как мы разработали новое окно запуска Visual Studio).
 
 ### <a name="better-search"></a>Улучшенный поиск
 
@@ -81,7 +81,7 @@ ms.locfileid: "55987422"
 
    ![Новое окно контрольных значений и функция форматирования значений в Visual Studio 2019](media/search-watch-window.png)
 
-Дополнительные сведения см. в записи блога [Улучшения в Visual Studio 2019: поиск объектов и свойств в окне контрольных значений, "Видимые" и "Локальные"](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Дополнительные сведения см. в записи блога [Улучшения в Visual Studio 2019: поиск объектов и свойств в окне контрольных значений, "Видимые" и "Локальные"](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
@@ -89,9 +89,9 @@ ms.locfileid: "55987422"
 
 В предварительной версии Visual Studio 2019 эта служба устанавливается по умолчанию.
 
-   ![Анимированный GIF-файл, демонстрирующий возможности службы Live Share в Visual Studio 2019](media/live-share-collaboration.gif)
+![Анимированный GIF-файл, демонстрирующий возможности службы Live Share в Visual Studio 2019](media/live-share-collaboration.gif)
 
-Дополнительные сведения см. в записи блога [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share: проверка кода в режиме реального времени и интерактивное обучение).
+Дополнительные сведения см. в записи блога [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share: проверка кода в режиме реального времени и интерактивное обучение).
 
 ## <a name="modern-development-support"></a>Поддержка разработки современных приложений
 
@@ -122,7 +122,7 @@ ms.locfileid: "55987422"
 
    ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
-Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
+Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ ms.locfileid: "55987422"
 
 А если вы используете C#, мы также добавили возможность обучения пользовательской модели на основе собственного кода.
 
-Дополнительные сведения см. в записи блога [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode поддерживает больше языков и самообучается, анализируя ваш код). Найти дополнительные сведения о расширении и скачать его можно на странице [предварительной версии Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) на сайте Microsoft DevLabs.
+Дополнительные сведения см. в записи блога [Visual Studio IntelliCode supports more languages and learns from your code](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode поддерживает больше языков и самообучается, анализируя ваш код). Найти дополнительные сведения о расширении и скачать его можно на странице [предварительной версии Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) на сайте Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Обратная связь
 

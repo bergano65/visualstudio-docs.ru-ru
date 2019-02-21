@@ -1,5 +1,5 @@
 ---
-title: JavaScript
+title: JavaScript и TypeScript
 description: Сведения о поддержке JavaScript в Visual Studio для Mac
 author: conceptdev
 ms.author: crdun
@@ -7,14 +7,14 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: a2f8e73ecd4ca1010dd25fe4031e73aa13727605
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294920"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335211"
 ---
-# <a name="javascript-support"></a>Поддержка JavaScript
+# <a name="javascript-and-typescript-support"></a>Поддержка JavaScript и TypeScript
 
 Visual Studio для Mac обеспечивает поддержку JavaScript и TypeScript посредством подсветки синтаксиса, форматирования кода и технологии IntelliSense.
 
@@ -28,18 +28,18 @@ Visual Studio для Mac обеспечивает поддержку JavaScript 
 
 ![добавление новых файлов в проект](media/javascript-image1.png)
 
-В диалоговом окне создания файла выберите **Интернет > Пустой JS-файл** или **Интернет > Файл TypeScript**. Введите имя файла и нажмите кнопку **Создать**:
+В диалоговом окне **создания файла** выберите **Интернет > Пустой JS-файл** или **Интернет > Файл TypeScript**. Введите имя файла и нажмите кнопку **Создать**:
 
 ![создание нового файла typescript из шаблона](media/javascript-image2.png)
 
 ## <a name="intellisense"></a>IntelliSense
 
-Visual Studio для Mac использует [службу языка JavaScript](/visualstudio/ide/javascript-intellisense) для предоставления возможностей IntelliSense при написании кода, а именно: интеллектуальное завершение кода, сведения о параметрах и списки членов.
+Visual Studio для Mac использует [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) для предоставления возможностей IntelliSense при написании кода, а именно: интеллектуальное завершение кода, сведения о параметрах и списки членов.
 
 IntelliSense для JavaScript в Visual Studio для Mac может опираться на определение типов, JSDoc или объявлений TypeScript.
 
 - **Определение типа** — тип объекта определяется окружающему контексту кода. Дополнительные сведения см. в разделе [IntelliSense на основе определения типа](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) документации по Visual Studio.
-- **JSDoc** — бывают случаи, когда определение типа не предоставляет правильные сведения о типе. В этих случаях сведения о типе предоставляются явно с помощью заметок [JSDoc](http://usejsdoc.org/about-getting-started.html). Дополнительные сведения см. в разделе [IntelliSense на основе JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) документации по Visual Studio.
+- **JSDoc** — бывают случаи, когда определение типа не предоставляет правильные сведения о типе. В этих случаях сведения о типе предоставляются явно с помощью заметок [JSDoc](http://usejsdoc.org/about-getting-started.html). Дополнительные сведения см. в разделе [IntelliSense на основе JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) документации по Visual Studio
 - **Файл объявлений TypeScript** — файлы `.d.ts`, используемые для предоставления значений для IntelliSense для JavaScript. Типы, объявленные в этом файле, могут использоваться как типы в комментариях JSDoc. Дополнительные сведения см. в разделе [IntelliSense на основе файлов объявления TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) документации по Visual Studio.
 
     ![Добавление файла определения TypeScript](media/javascript-image3.png)
