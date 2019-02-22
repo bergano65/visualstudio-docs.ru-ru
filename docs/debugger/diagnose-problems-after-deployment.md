@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008716"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316890"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Диагностика проблем после развертывания, с помощью IntelliTrace (C#, Visual Basic)
 
@@ -31,7 +31,7 @@ ms.locfileid: "55008716"
 
 -   Visual Studio Enterprise (но не выпуск Professional или Community) для просмотра данных диагностики и отладки кода с помощью IntelliTrace.
 
-##  <a name="SetUpBuild"></a> Шаг 1. Включить сведения о сборке в выпуск
+##  <a name="SetUpBuild"></a> Шаг 1. Включение в выпуск сведений о сборке
  Настройте процесс построения для создания манифеста сборки (файл *BuildInfo.config*) для веб-проекта и включите этот манифест в выпуск. Этот манифест содержит сведения о проекте, систему управления версиями и систему сборки, которые использовались для создания конкретной сборки. Эти сведения позволяют Visual Studio найти соответствующий источник и символы после открытия журнала IntelliTrace для просмотра записанных событий.
 
 ###  <a name="AutomatedBuild"></a> Создание манифеста сборки для автоматизированной сборки с помощью Team Foundation Server
@@ -153,15 +153,15 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
  **/p:BuildSymbolStorePath=**\<*путь к символам*>
 
-##  <a name="DeployRelease"></a> Шаг 2. Выпуск приложения
+##  <a name="DeployRelease"></a> Шаг 2. Выпуск приложения
  Если вы используете [пакет Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) , который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещается в ту же папку, что и файл Web.config приложения на веб-сервере.
 
  Если для развертывания приложения вы используете другие методы, убедитесь, что манифест сборки переименован из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещен в ту же папку, что и файл Web.config приложения, на веб-сервере.
 
-## <a name="step-3-monitor-your-app"></a>Шаг 3. Мониторинг приложения
+## <a name="step-3-monitor-your-app"></a>Шаг 3. Отслеживание работы приложения
  Настройте отслеживание производительности приложения на веб-сервере, чтобы отслеживать проблемы приложения, регистрировать события диагностики и сохранять эти события в файл журнала IntelliTrace. См. раздел [Отслеживание проблем развертывания для выпуска](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents">Шаг 4.</a> Поиск проблемы
+##  <a name="InvestigateEvents"></a> Шаг 4. Поиск проблем
  Для просмотра записанных событий и отладки кода с помощью IntelliTrace на компьютере разработки или другом компьютере должна быть установлена среда Visual Studio Enterprise. Кроме того, можно использовать такие средства, как CodeLens, карты отладчика и карты кода, которые помогают диагностировать проблемы.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Открытие журнала IntelliTrace и соответствующего решения
@@ -216,7 +216,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
     - [Что означают остальные события и данные в журнале IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
     - [Что еще можно сделать отсюда?](#WhatElse)
-    - [Требуются дополнительные сведения о событиях производительности?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [Требуются дополнительные сведения о событиях производительности?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Диагностика исключения
 
@@ -276,11 +276,11 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
   - **TFS**
 
-    - **ProjectCollectionUri**: URI для Team Foundation Server и project коллекции
+    - **ProjectCollectionUri**— URI для Team Foundation Server и коллекции проектов
 
-    - **ProjectItemSpec**: Путь к файлу проекта приложения (CSPROJ или VBPROJ)
+    - **ProjectItemSpec**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
 
-    - **ProjectVersionSpec**: Версия проекта
+    - **ProjectVersionSpec**— версия проекта
 
       Например:
 
@@ -296,13 +296,13 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
   - **Git**
 
-    - **GitSourceControl**: Расположение **GitSourceControl** схемы
+    - **GitSourceControl**— расположение схемы **GitSourceControl**
 
     - **RepositoryUrl**— URI для Team Foundation Server, коллекции проектов и репозитория Git
 
-    - **ProjectPath**: Путь к файлу проекта приложения (CSPROJ или VBPROJ)
+    - **ProjectPath**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
 
-    - **CommitId**: Идентификатор фиксации
+    - **CommitId**— идентификатор фиксации
 
       Например:
 
@@ -320,15 +320,15 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
    Сведения о системе сборки, `"TeamBuild"` или `"MSBuild"`, и следующие обязательные свойства:
 
-  - **BuildLabel** (для TeamBuild): Имя и номер сборки. Эта метка также используется в качестве имени события развертывания. Более подробную информацию о номерах сборок см. в разделе [Использование номеров сборок для назначения завершенным сборкам значимых имен](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (для TeamBuild) — имя и номер сборки. Эта метка также используется в качестве имени события развертывания. Более подробную информацию о номерах сборок см. в разделе [Использование номеров сборок для назначения завершенным сборкам значимых имен](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (рекомендуется): Список URI для расположений символов (PDB-файл) разделенных точкой с запятой. Эти URI могут быть URL-адресами или UNC-путями. Это упрощает для Visual Studio поиск соответствующих символов для содействия в отладке.
+  - **SymbolPath** (рекомендуется) — список URI для расположений символов (PDB-файлов), разделяемых точкой с запятой. Эти URI могут быть URL-адресами или UNC-путями. Это упрощает для Visual Studio поиск соответствующих символов для содействия в отладке.
 
-  - **BuildReportUrl** (для TeamBuild): Расположение отчета о сборке в TFS
+  - **BuildReportUrl** (для TeamBuild) — расположение отчета о сборке в TFS
 
-  - **BuildId** (для TeamBuild): URI для сведений о сборке в TFS. Этот URI также используется в качестве идентификатора события развертывания. Если не используется TeamBuild, идентификатор должен быть уникальным.
+  - **BuildId** (для TeamBuild) — URI для сведений о сборке в TFS. Этот URI также используется в качестве идентификатора события развертывания. Если не используется TeamBuild, идентификатор должен быть уникальным.
 
-  - **BuiltSolution**: Путь к файлу решения, который используется для поиска и открытия соответствующего решения Visual Studio. Это содержимое свойства **SolutionPath** MsBuild.
+  - **BuiltSolution**— путь к файлу решения, используемый Visual Studio для поиска и открытия соответствующего решения. Это содержимое свойства **SolutionPath** MsBuild.
 
     Например:
 
@@ -379,7 +379,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      ![Открыть из системы управления версиями &#45; перенесены](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> Вопрос. Что такое рабочая область?
+####  <a name="WhatWorkspace"></a> В. Что такое рабочая область?
  **О.** В [рабочей области хранится копия источника](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) , и ее можно разрабатывать и тестировать отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.
 
 ####  <a name="UntrustedSymbols"></a>В. Почему появляется сообщение о ненадежных символах?
