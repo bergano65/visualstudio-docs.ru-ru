@@ -11,23 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e19289b843dac77c87e4c3d81bc4b74719e742b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 017e1489715b5c1b322f9f5ae04b89de02accac7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965592"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618345"
 ---
 # <a name="solutions"></a>Решения
-Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проекта и состояние сведения, которые относятся к решению, хранятся в двух файлов решения, файл текстовых решения (SLN) и файл пользовательских параметров (.suo) двоичного решения.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Обзор](../../extensibility/internals/solutions-overview.md)  
- Описание типов файлов решения, включенные в решение и процесс, который происходит при открытии решения.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Файл решений (SLN-файл)](../../extensibility/internals/solution-dot-sln-file.md)  
- Описывается структура SLN-файл.  
-  
- [Файл параметров пользователя решения (SUO-файл)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проекта и состояние сведения, которые относятся к решению, хранятся в двух файлов решения, файл текстовых решения (SLN) и файл пользовательских параметров (.suo) двоичного решения.
+
+## <a name="in-this-section"></a>В этом разделе
+- [Обзор](../../extensibility/internals/solutions-overview.md)
+
+ Описание типов файлов решения, включенные в решение и процесс, который происходит при открытии решения.
+
+## <a name="related-sections"></a>Связанные разделы
+- [Файл решений (SLN-файл)](../../extensibility/internals/solution-dot-sln-file.md)
+
+ Описывается структура SLN-файл.
+
+- [Файл параметров пользователя решения (SUO-файл)](../../extensibility/internals/solution-user-options-dot-suo-file.md)
+
  Описание SUO-файл.

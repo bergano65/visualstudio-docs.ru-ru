@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
+title: Практическое руководство. Разрешить выполнения кода программной части документов с ограниченными разрешениями
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637663"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
-  Ограничение разрешений для документа или книги, можно использовать функции управления правами на доступ к данным (IRM) в Microsoft Office. По умолчанию кода программной части защищенный документ Microsoft Office Word или книгу Microsoft Office Excel не поддерживается для запуска. Значение по умолчанию можно изменить, чтобы ваши расширения управляемого кода можно получить доступ к объектной модели, и решение будет работать.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- Необходимо быть автор документа или книги или иметь полный доступ, чтобы иметь возможность изменить параметры разрешений.  
-  
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Для разрешения выполнения кода программной части документов с ограниченными разрешениями  
-  
-1. Откройте документ или книгу в Word или Excel.  
-  
-2. Нажмите кнопку **файл** вкладке, выберите пункт **Подготовка**, пункты **ограничить разрешения**, а затем нажмите кнопку **ограниченный доступ**.  
-  
-   > [!NOTE]  
-   >  При первом использовании вам предлагается установить клиент Windows Rights Management. После установки клиента, может потребоваться повторить шаги.  
-  
-3. В **разрешение** выберите **ограничить разрешения для этого документа**, а затем нажмите кнопку **Дополнительно**.  
-  
-4. В разделе **дополнительные разрешения для пользователей**выберите **программный доступ к содержимому**.  
-  
-   Разрешает программный доступ к объектной модели Word или Excel.  
-  
-## <a name="see-also"></a>См. также  
- [Управление правами и общие сведения о расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)   
- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
- [Безопасные решения Office](../vsto/securing-office-solutions.md)   
- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Практическое руководство. Разрешить выполнения кода программной части документов с ограниченными разрешениями
+  Ограничение разрешений для документа или книги, можно использовать функции управления правами на доступ к данным (IRM) в Microsoft Office. По умолчанию кода программной части защищенный документ Microsoft Office Word или книгу Microsoft Office Excel не поддерживается для запуска. Значение по умолчанию можно изменить, чтобы ваши расширения управляемого кода можно получить доступ к объектной модели, и решение будет работать.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ Необходимо быть автор документа или книги или иметь полный доступ, чтобы иметь возможность изменить параметры разрешений.
+
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Для разрешения выполнения кода программной части документов с ограниченными разрешениями
+
+1. Откройте документ или книгу в Word или Excel.
+
+2. Нажмите кнопку **файл** вкладке, выберите пункт **Подготовка**, пункты **ограничить разрешения**, а затем нажмите кнопку **ограниченный доступ**.
+
+   > [!NOTE]
+   >  При первом использовании вам предлагается установить клиент Windows Rights Management. После установки клиента, может потребоваться повторить шаги.
+
+3. В **разрешение** выберите **ограничить разрешения для этого документа**, а затем нажмите кнопку **Дополнительно**.
+
+4. В разделе **дополнительные разрешения для пользователей**выберите **программный доступ к содержимому**.
+
+   Разрешает программный доступ к объектной модели Word или Excel.
+
+## <a name="see-also"></a>См. также
+- [Управление правами и общие сведения о расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)
+- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)
+- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
+- [Безопасные решения Office](../vsto/securing-office-solutions.md)
+- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

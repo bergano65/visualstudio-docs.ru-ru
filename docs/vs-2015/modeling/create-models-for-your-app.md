@@ -44,7 +44,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745131"
@@ -60,7 +60,7 @@ ms.locfileid: "51745131"
   
 |**Схема**|**Что показывает**|  
 |-----------------|---------------|  
-|[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|Рабочий процесс между действиями и участниками в рамках бизнес-процесса|  
+|[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|Поток работы между действиями и участниками в рамках бизнес-процесса|  
 |[Схемы компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md)|Компоненты системы, их интерфейсы, порты и отношения|  
 |[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|Типы, используемые для хранения данных  и их отношений и обмена ими в системе|  
 |[UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)|Последовательности взаимодействий между объектами, компонентами, системами или субъектами|  

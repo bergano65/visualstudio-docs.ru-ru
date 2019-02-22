@@ -19,7 +19,7 @@ ms.locfileid: "55918407"
 ---
 # <a name="flowdecision-activity-designer"></a>Конструктор действия FlowDecision
 
-Узел <xref:System.Activities.Statements.FlowDecision> - это специализированный узел, который обеспечивает ветвление для передачи управления одной из двух альтернатив в зависимости от указанного условия. Если ветвление требует наличие более двух ветвей, следует вместо этого метода использовать <xref:System.Activities.Statements.FlowSwitch%601>.
+<xref:System.Activities.Statements.FlowDecision> — это специализированный узел, который обеспечивает ветвление для передачи управления одной из двух альтернатив в зависимости от указанного условия. Если поток требует наличие более двух ветвей, следует вместо этого метода использовать <xref:System.Activities.Statements.FlowSwitch%601>.
 
 ## <a name="the-flowdecision-node"></a>Узел The FlowDecision
 
@@ -42,8 +42,8 @@ ms.locfileid: "55918407"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Условие, которое определяет, какой из путей будет использован потоком данных.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Путь, предпринятый при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Путь, предпринятый при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Путь потока управления при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Путь потока управления при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
 
 ## <a name="see-also"></a>См. также
 
