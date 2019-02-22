@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51810472"
@@ -37,7 +37,7 @@ ms.locfileid: "51810472"
   
  Схему деятельности можно использовать для описания процессов нескольких типов, таких как в приведенных ниже примерах.  
   
-- Бизнес-процесс или рабочий процесс, в котором участвуют пользователи и система. Дополнительные сведения см. в разделе [моделирование требований пользователей](../modeling/model-user-requirements.md).  
+- Бизнес-процесс или поток работы, в которых участвуют пользователи и система. Дополнительные сведения см. в разделе [моделирование требований пользователей](../modeling/model-user-requirements.md).  
   
 - Шаги в варианте использования. Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации по](../modeling/uml-use-case-diagrams-guidelines.md).  
   

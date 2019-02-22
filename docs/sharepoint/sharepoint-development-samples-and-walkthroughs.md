@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a62ee1c081399cdbaaa586256a25f859e02acbc
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874020"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599601"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры разработки решений SharePoint и пошаговые руководства
-  Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.  
-  
- Пример кода предназначен для учебных целей и не следует использовать в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.  
-  
+  Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.
+
+ Пример кода предназначен для учебных целей и не следует использовать в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.
+
 ## <a name="in-this-section"></a>Содержание раздела
-  
-|Раздел|Описание:|  
-|-----------|-----------------|  
-|[Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)|Описывает образцы приложений, которые демонстрируют, как использовать средства разработки SharePoint в Visual Studio.|  
-|[Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|  
-  
+
+|Раздел|Описание:|
+|-----------|-----------------|
+|[Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)|Описывает образцы приложений, которые демонстрируют, как использовать средства разработки SharePoint в Visual Studio.|
+|[Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|
+
 ## <a name="see-also"></a>См. также
- [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)  
+- [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)

@@ -15,44 +15,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d64051de8f1c3479030a11b3d8dd8188214f677b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633659"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Архитектура решений Office в Visual Studio
-  В подразделах этого раздела приводятся сведения о том, как работают решения, созданные с помощью средств разработчика Office в Visual Studio.  
-  
-> [!NOTE]  
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)  
- Описание порядка работы настроек уровня документа, а также различий в их восприятии разработчиком и конечным пользователем.  
-  
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)  
- Описание компонентов надстроек VSTO, а также порядка их загрузки в приложения.  
-  
- [Visual Studio Tools для Office Runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
- Описание различных версий среды выполнения, используемых решениями Office.  
-  
- [Записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
- Описание разделов реестра, которые требуются на компьютерах конечных пользователей для обнаружения и загрузки надстроек VSTO.  
-  
- [Общие сведения о свойствах пользовательского документа](../vsto/custom-document-properties-overview.md)  
- Описание порядка использования настраиваемых свойств документа в настройках уровня документа.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
- Общие сведения об использовании пакета приложений Microsoft Office в качестве платформы для разработки бизнес-решений.  
-  
- [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений, а также об изменениях по сравнению с предыдущими версиями средств разработчика Office в Visual Studio.  
-  
- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
- Ссылки на сведения о создании решений Office.  
-  
- [Общий справочник &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- Ссылки на сведения об элементах пользовательского интерфейса в проектах Office, о манифестах приложения и развертывания для проектов Office, а также об API в среде выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+  В подразделах этого раздела приводятся сведения о том, как работают решения, созданные с помощью средств разработчика Office в Visual Studio.
+
+> [!NOTE]
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+
+## <a name="in-this-section"></a>Содержание раздела
+
+[Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
+
+Описание порядка работы настроек уровня документа, а также различий в их восприятии разработчиком и конечным пользователем.
+
+[Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
+
+Описание компонентов надстроек VSTO, а также порядка их загрузки в приложения.
+
+[Visual Studio Tools для Office Runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+
+Описание различных версий среды выполнения, используемых решениями Office.
+
+[Записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
+
+Описание разделов реестра, которые требуются на компьютерах конечных пользователей для обнаружения и загрузки надстроек VSTO.
+
+[Общие сведения о свойствах пользовательского документа](../vsto/custom-document-properties-overview.md)
+
+Описание порядка использования настраиваемых свойств документа в настройках уровня документа.
+
+## <a name="related-sections"></a>Связанные разделы
+
+[Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+
+Общие сведения об использовании пакета приложений Microsoft Office в качестве платформы для разработки бизнес-решений.
+
+[Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+
+Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений, а также об изменениях по сравнению с предыдущими версиями средств разработчика Office в Visual Studio.
+
+[Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
+
+Ссылки на сведения о создании решений Office.
+
+[Общий справочник &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+
+Ссылки на сведения об элементах пользовательского интерфейса в проектах Office, о манифестах приложения и развертывания для проектов Office, а также об API в среде выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

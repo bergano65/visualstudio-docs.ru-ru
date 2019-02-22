@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программное извлечение папки по имени
+title: Практическое руководство. Программное извлечение папки по имени
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,28 +12,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e31a5016ae4dadbf14a80cce891bee0b8e5a0b4
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872421"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620893"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Как выполнить Программное извлечение папки по имени
-  Этот пример возвращает ссылку на папку с именем пользователя и затем отображает содержимое папки.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Пример  
- [!code-csharp[Trin_OL_GetFolderName#1](../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs#1)]  
-  
-## <a name="compile-the-code"></a>Компиляция кода  
- Для этого примера требуются:  
-  
--   Папка с именем TestFolder.  
-  
-## <a name="see-also"></a>См. также  
- [Работа с папками](../vsto/working-with-folders.md)   
- [Практическое руководство. Программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Практическое руководство. Программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Практическое руководство. Программное извлечение папки по имени
+  Этот пример возвращает ссылку на папку с именем пользователя и затем отображает содержимое папки.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Пример
+ [!code-csharp[Trin_OL_GetFolderName#1](../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs#1)]
+
+## <a name="compile-the-code"></a>Компиляция кода
+ Для этого примера требуются:
+
+-   Папка с именем TestFolder.
+
+## <a name="see-also"></a>См. также
+- [Работа с папками](../vsto/working-with-folders.md)
+- [Практическое руководство. Программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Практическое руководство. Программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)
