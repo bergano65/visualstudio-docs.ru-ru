@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004517"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602420"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Важные команды для фильтров языковой службы
-Если вы хотите создать фильтр службы полнофункциональный язык, рассмотрите возможность обработки команды. Полный список идентификаторов команд определяется в <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления для управляемого кода и заголовка Stdidcmd.h-файле для неуправляемого [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] кода. Чтобы найти файл Stdidcmd.h в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  
-  
-## <a name="commands-to-handle"></a>Команды для дескриптора  
-  
+Если вы хотите создать фильтр службы полнофункциональный язык, рассмотрите возможность обработки команды. Полный список идентификаторов команд определяется в <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления для управляемого кода и заголовка Stdidcmd.h-файле для неуправляемого [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] кода. Чтобы найти файл Stdidcmd.h в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
+
+## <a name="commands-to-handle"></a>Команды для дескриптора
+
 > [!NOTE]
->  Это не обязательно для фильтрации для каждой команды в следующей таблице.  
-  
-|Команда|Описание|  
-|-------------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь щелкает правой кнопкой мыши. Эта команда указывает, что это время создать контекстное меню. Если эта команда не обрабатывают, текстовый редактор предоставляет контекстное меню по умолчанию без любых команд для конкретного языка. Чтобы включить собственные команды этого меню, необходимо обработать команду и самостоятельного отображения контекстного меню.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Обычно отправляются, когда пользователь вводит CTRL + J. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для отображения поля завершения инструкции.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит символ. Отслеживайте эту команду, чтобы определить, когда триггер символа и для предоставления инструкция завершения, метод советы и текстовых маркеров, таких как Цветовая разметка синтаксиса, парные фигурные скобки и маркеры ошибок. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для завершения операторов и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> для подсказок метода. Чтобы обеспечить поддержку меток текста, отслеживайте эту команду, чтобы определить, требуется ли обновить ваш маркеры, вводимый символ.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит клавишу ВВОД. Отслеживать эту команду, чтобы определить, когда нужно закрыть окно подсказки метода путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. По умолчанию представление текста обрабатывает эту команду.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит клавишу Backspace. Монитор, чтобы определить, когда нужно закрыть окно подсказки метода путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. По умолчанию представление текста обрабатывает эту команду.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Отправлено из меню или сочетания клавиш. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для обновления окна подсказки данных параметра.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь наводит переменной или помещает курсор на переменную и выбирает **краткие сведения** из **IntelliSense** в **изменить** меню. Тип возвращаемого значения переменной в подсказке по путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Если отладка будет активна, совет также должно отображаться значение переменной.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Обычно отправляются, когда пользователь вводит CTRL + ПРОБЕЛ. Эта команда определяет языковой службы для вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Отправленное через меню, обычно **выделенный фрагмент в комментарий** или **Раскомментировать выделенный фрагмент** из **Дополнительно** в **изменить** меню. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Указывает, что пользователь хочет закомментировать выделенный текст; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> указывает, что пользователь хочет Раскомментировать выделенный текст. Эти команды можно реализовать только языковой службой.|  
-  
-## <a name="see-also"></a>См. также  
- [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)
+>  Это не обязательно для фильтрации для каждой команды в следующей таблице.
+
+|Команда|Описание|
+|-------------|-----------------|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь щелкает правой кнопкой мыши. Эта команда указывает, что это время создать контекстное меню. Если эта команда не обрабатывают, текстовый редактор предоставляет контекстное меню по умолчанию без любых команд для конкретного языка. Чтобы включить собственные команды этого меню, необходимо обработать команду и самостоятельного отображения контекстного меню.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Обычно отправляются, когда пользователь вводит CTRL + J. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для отображения поля завершения инструкции.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит символ. Отслеживайте эту команду, чтобы определить, когда триггер символа и для предоставления инструкция завершения, метод советы и текстовых маркеров, таких как Цветовая разметка синтаксиса, парные фигурные скобки и маркеры ошибок. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для завершения операторов и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> для подсказок метода. Чтобы обеспечить поддержку меток текста, отслеживайте эту команду, чтобы определить, требуется ли обновить ваш маркеры, вводимый символ.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит клавишу ВВОД. Отслеживать эту команду, чтобы определить, когда нужно закрыть окно подсказки метода путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. По умолчанию представление текста обрабатывает эту команду.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь вводит клавишу Backspace. Монитор, чтобы определить, когда нужно закрыть окно подсказки метода путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. По умолчанию представление текста обрабатывает эту команду.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Отправлено из меню или сочетания клавиш. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для обновления окна подсказки данных параметра.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь наводит переменной или помещает курсор на переменную и выбирает **краткие сведения** из **IntelliSense** в **изменить** меню. Тип возвращаемого значения переменной в подсказке по путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Если отладка будет активна, совет также должно отображаться значение переменной.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Обычно отправляются, когда пользователь вводит CTRL + ПРОБЕЛ. Эта команда определяет языковой службы для вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Отправленное через меню, обычно **выделенный фрагмент в комментарий** или **Раскомментировать выделенный фрагмент** из **Дополнительно** в **изменить** меню. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Указывает, что пользователь хочет закомментировать выделенный текст; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> указывает, что пользователь хочет Раскомментировать выделенный текст. Эти команды можно реализовать только языковой службой.|
+
+## <a name="see-also"></a>См. также
+- [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)
