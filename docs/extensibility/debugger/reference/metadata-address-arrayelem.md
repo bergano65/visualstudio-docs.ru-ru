@@ -12,52 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 900ac5f6dec739574af27601e2b3a26d6041da55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7cfd9204dfbcc2254da6a4539e6b18d90c156c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917215"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632801"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
-Эта структура представляет элемент массива в массив.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_ARRAYELEM {  
-   _mdToken tokMethod;  
-   DWORD    dwIndex;  
-} METADATA_ADDRESS_ARRAYELEM;  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_ARRAYELEM {  
-   public int  tokMethod;  
-   public uint dwIndex;  
-}  
-```  
-  
-## <a name="terms"></a>Термины  
- tokMethod  
- Идентификатор массива, этот элемент является частью.  
-  
- [C++] `_mdToken` — `typedef` для 32-разрядных `int`.  
-  
- dwIndex  
- Индекс этого элемента в массиве.  
-  
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_ARRAYELEM` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+Эта структура представляет элемент массива в массив.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_ARRAYELEM {
+    _mdToken tokMethod;
+    DWORD    dwIndex;
+} METADATA_ADDRESS_ARRAYELEM;
+```
+
+```csharp
+public struct METADATA_ADDRESS_ARRAYELEM {
+    public int  tokMethod;
+    public uint dwIndex;
+}
+```
+
+## <a name="terms"></a>Термины
+tokMethod  
+Идентификатор массива, этот элемент является частью.
+
+[C++] `_mdToken` — `typedef` для 32-разрядных `int`.
+
+dwIndex  
+Индекс этого элемента в массиве.
+
+## <a name="remarks"></a>Примечания
+Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_ARRAYELEM` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).
+
+## <a name="requirements"></a>Требования
+Заголовок: sh.h
+
+Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
+[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
