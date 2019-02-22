@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4df7ec753f1d636a74dfce74b451ecaf5557c53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021680"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643591"
 ---
 # <a name="detect-system-requirements"></a>Определить требования к системе
-Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.  
-  
-## <a name="detect-visual-studio-editions"></a>Обнаружить выпуски Visual Studio  
- Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение **установить** реестра *(REG_DWORD) 1* в соответствующую папку, перечисленных в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:  
-  
-1.  Предприятие  
-  
-2.  Professional  
-  
-3.  Сообщество  
-      
-При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.  
-  
+Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.
+
+## <a name="detect-visual-studio-editions"></a>Обнаружить выпуски Visual Studio
+ Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение **установить** реестра *(REG_DWORD) 1* в соответствующую папку, перечисленных в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:
+
+1.  Предприятие
+
+2.  Professional
+
+3.  Сообщество
+
+При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.
+
 > [!NOTE]
->  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.  
-  
-|Продукт|Ключ|  
-|-------------|---------|  
-|Visual Studio Enterprise|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
-|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
-  
-## <a name="detect-when-visual-studio-is-running"></a>Обнаружить, когда выполняется Visual Studio  
- Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: Используйте `EnumProcesses` функции для обнаружения *devenv.exe* обработки, а затем либо установите свойство установщика, который используется в условии запуска или условию отображать диалоговое окно, которое предлагает пользователю закрыть Visual Studio.  
-  
-## <a name="see-also"></a>См. также  
- [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+>  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+
+|Продукт|Ключ|
+|-------------|---------|
+|Visual Studio Enterprise|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
+|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+
+## <a name="detect-when-visual-studio-is-running"></a>Обнаружить, когда выполняется Visual Studio
+ Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: Используйте `EnumProcesses` функции для обнаружения *devenv.exe* обработки, а затем либо установите свойство установщика, который используется в условии запуска или условию отображать диалоговое окно, которое предлагает пользователю закрыть Visual Studio.
+
+## <a name="see-also"></a>См. также
+- [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
