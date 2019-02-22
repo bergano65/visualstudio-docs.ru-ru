@@ -12,49 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b7e0a2e2754361899a65e66ecac8a75be55722
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c77e2d5de5105b964beea0ad880358b59e10fab7
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949445"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450118"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Получает идентификатор потока системы.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetThreadId (   
-   DWORD* pdwThreadId  
-);  
-```  
-  
-```csharp  
-int GetThreadId (   
-   out uint pdwThreadId  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pdwThreadId`  
- [out] Возвращает идентификатор потока системы.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Идентификатор потока используется для идентификации потока используется всеми потоками процесса.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейс.  
-  
-```cpp  
-HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
-   *pdwThreadId = GetCurrentThreadId();    
-   return NOERROR;    
-}    
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+Получает идентификатор потока системы.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetThreadId (
+    DWORD* pdwThreadId
+);
+```
+
+```csharp
+int GetThreadId (
+    out uint pdwThreadId
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`pdwThreadId` [out] Возвращает идентификатор потока системы.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+Идентификатор потока используется для идентификации потока используется всеми потоками процесса.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейс.
+
+```cpp
+HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
+    *pdwThreadId = GetCurrentThreadId();
+    return NOERROR;
+}
+```
+
+## <a name="see-also"></a>См. также
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -22,7 +22,7 @@ ms.locfileid: "49949114"
 
 Дополнительные сведения см. в разделе [Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)](program-mpn.md).
 
-## <a name="high-level-assignment-and-access-flow"></a>Обобщенная процедура назначения и доступа
+## <a name="high-level-assignment-and-access-flow"></a>Обобщенный поток назначения и доступа
 
 ### <a name="microsoft-action-pack-subscribers"></a>Подписчики Microsoft Action Pack
 Подписчик Microsoft Action Pack и подписки Visual Studio
