@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetMetric | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2:::SetMetric
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50732b6e271ac3bf51eb2cde4549cd7396fb4b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 325cd30a49fb636c56eebd9e6301b3999e851363
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998200"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713611"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Этот метод задает значение реестра, известный как метрики.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT SetMetric(  
-   LPCOLESTR pszMetric,  
-   VARIANT   varValue  
-);  
-```  
-  
-```csharp  
-int SetMetric(  
-   string pszMetric,  
-   object varValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pszMetric`  
- [in] Имя метрики.  
-  
- `varValue`  
- [in] Указывает значение метрики.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Метрика — это значение реестра, чтобы изменить поведение модуля отладки или для объявления поддерживаемые функции. Этот метод можно пересылать подходящей формой [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetMetric`.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+Этот метод задает значение реестра, известный как метрики.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT SetMetric(
+   LPCOLESTR pszMetric,
+   VARIANT   varValue
+);
+```
+
+```csharp
+int SetMetric(
+   string pszMetric,
+   object varValue
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pszMetric`
+
+ [in] Имя метрики.
+
+ `varValue`
+
+ [in] Указывает значение метрики.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Метрика — это значение реестра, чтобы изменить поведение модуля отладки или для объявления поддерживаемые функции. Этот метод можно пересылать подходящей формой [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetMetric`.
+
+## <a name="see-also"></a>См. также
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

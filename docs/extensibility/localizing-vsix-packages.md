@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936649"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687085"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -27,7 +27,7 @@ ms.locfileid: "54936649"
 
 ## <a name="directory-structure"></a>Структура каталогов
 
- Когда пользователь устанавливает расширение, **расширения и обновления** проверяет верхний уровень пакета VSIX для папки, имя которого соответствует языку Visual Studio конечного компьютера. Если **расширения и обновления** находит *.vsixlangpack* файл в папке, он подставляет локализованные значения в соответствующие значения в этом файле *.vsixmanifest*файл. Эти значения отображаются при установке расширения. В следующем примере структуру каталогов для пакета VSIX, который локализован на испанский (es-ES) и французского (fr-FR).  
+ Когда пользователь устанавливает расширение, **расширения и обновления** проверяет верхний уровень пакета VSIX для папки, имя которого соответствует языку Visual Studio конечного компьютера. Если **расширения и обновления** находит *.vsixlangpack* файл в папке, он подставляет локализованные значения в соответствующие значения в этом файле *.vsixmanifest*файл. Эти значения отображаются при установке расширения. В следующем примере структуру каталогов для пакета VSIX, который локализован на испанский (es-ES) и французского (fr-FR).
 
 ```text
 .
@@ -63,7 +63,7 @@ ms.locfileid: "54936649"
 
 ### <a name="code"></a>Код
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ ms.locfileid: "54936649"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,7 +101,7 @@ ms.locfileid: "54936649"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |[Справочник по схеме 2.0 языкового пакета VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Языковой пакет VSIX описывает информацию локализации VSIX-файл развертывания.|
 |[Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Описывает структуру и содержимое пакета vsix.|

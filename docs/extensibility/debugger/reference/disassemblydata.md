@@ -1,7 +1,7 @@
 ---
 title: DisassemblyData | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DisassemblyData
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbc61236156cdcbfacdf73101752ea6811470c0
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317449"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712480"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Описывает одну инструкцию Дизассемблированный код для интегрированной среде разработки (IDE) для отображения.
@@ -61,45 +61,33 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Участники
-`dwFields`  
-[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.
+`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.
 
-`bstrAddress`  
-Адрес как смещение от некоторых отправной точки (обычно начало соответствующего функции).
+`bstrAddress` Адрес как смещение от некоторых отправной точки (обычно начало соответствующего функции).
 
-`bstrCodeBytes`  
-Байты кода для данной инструкции.
+`bstrCodeBytes` Байты кода для данной инструкции.
 
-`bstrOpcode`  
-Код операции для данной инструкции.
+`bstrOpcode` Код операции для данной инструкции.
 
-`bstrOperands`  
-Операнды для данной инструкции.
+`bstrOperands` Операнды для данной инструкции.
 
-`bstrSymbol`  
-Имя символа, если таковое имеется, связанный с адресом (открытых символов, метки и т. д.).
+`bstrSymbol` Имя символа, если таковое имеется, связанный с адресом (открытых символов, метки и т. д.).
 
-`uCodeLocationId`  
-Идентификатор расположения кода это дисассемблированный строки. Если адрес контекста кода из одной строки больше, чем адрес контекста кода другого идентификатора расположения Дизассемблированный код первого также будет больше, чем второй идентификатор расположение кода.
+`uCodeLocationId` Идентификатор расположения кода это дисассемблированный строки. Если адрес контекста кода из одной строки больше, чем адрес контекста кода другого идентификатора расположения Дизассемблированный код первого также будет больше, чем второй идентификатор расположение кода.
 
-`posBeg`  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, в котором начинаются данные Дизассемблированный код.
+`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, в котором начинаются данные Дизассемблированный код.
 
-`posEnd`  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, где заканчивается данных Дизассемблированный код.
+`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, где заканчивается данных Дизассемблированный код.
 
-`bstrDocumentUrl`  
-Для текстовых документов, которые могут быть представлены как имена файлов `bstrDocumentUrl` вводится имя файла, где можно найти источник, используя формат `file://file name`.
+`bstrDocumentUrl` Для текстовых документов, которые могут быть представлены как имена файлов `bstrDocumentUrl` вводится имя файла, где можно найти источник, используя формат `file://file name`.
 
 Для текстовых документов, которые невозможно представить как имена файлов `bstrDocumentUrl` — это уникальный идентификатор для документа, и отладчик должен реализовывать [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) метод.
 
 Это поле также может содержать дополнительные сведения о контрольных суммах. Дополнительные сведения см. примечания.
 
-`dwByteOffset`  
-Число байтов, которое считается инструкции от начала строки кода.
+`dwByteOffset` Число байтов, которое считается инструкции от начала строки кода.
 
-`dwFlags`  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) константа, указывающая, какие флаги активны.
+`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) константа, указывающая, какие флаги активны.
 
 ## <a name="remarks"></a>Примечания
 Каждый `DisassemblyData` структура описывает одну инструкцию дизассемблированного кода. Возвращаемый массив этих структур [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод.
@@ -224,10 +212,10 @@ namespace MyNamespace
 ```
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)  
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)  
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

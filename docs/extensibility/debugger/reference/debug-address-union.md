@@ -1,7 +1,7 @@
 ---
 title: DEBUG_ADDRESS_UNION | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS_UNION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 367be9427c54ab539e37fa927fc4b445aa701883
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9f3efd78d5e3c84f9d23068be62efdf751767dd1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715077"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Описываются различные типы адресов.
@@ -50,49 +50,61 @@ public struct DEBUG_ADDRESS_UNION {
 ```
 
 ## <a name="terms"></a>Термины
-dwKind  
-Значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, указывающее способ интерпретации объединение.
+значение dwKind объект из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, указывающее способ интерпретации объединение.
 
-addr.addrNative  
-[C++] Содержит [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) структуры, если `dwKind` = ADDRESS_KIND_NATIVE.
+addr.addrNative
 
-addr.addrThisRel  
-[C++] Содержит[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) структуры, если `dwKind` = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
+ [C++] Содержит [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) структуры, если `dwKind` = ADDRESS_KIND_NATIVE.
 
-addr.addUPhysical  
-[C++] Содержит[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) структуры, если `dwKind` = ADDRESS_KIND_UNMANAGED_PHYSICAL.
+addr.addrThisRel
 
-addr.addrMethod  
-[C++] Содержит[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структуры, если `dwKind` = ADDRESS_KIND_METHOD.
+ [C++] Содержит[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) структуры, если `dwKind` = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
 
-addr.addrField  
-[C++] Содержит[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) структуры, если `dwKind` = ADDRESS_KIND_FIELD.
+addr.addUPhysical
 
-addr.addrLocal  
-[C++] Содержит[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) структуры, если `dwKind` = ADDRESS_KIND_LOCAL.
+ [C++] Содержит[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) структуры, если `dwKind` = ADDRESS_KIND_UNMANAGED_PHYSICAL.
 
-addr.addrParam  
-[C++] Содержит[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структуры, если `dwKind` = ADDRESS_KIND_PARAM.
+addr.addrMethod
 
-addr.addrArrayElem  
-[C++] Содержит[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структуры, если `dwKind` = ADDRESS_KIND_ARRAYELEM.
+ [C++] Содержит[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структуры, если `dwKind` = ADDRESS_KIND_METHOD.
 
-addr.addrRetVal  
-[C++] Содержит[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) структуры, если `dwKind` = ADDRESS_KIND_RETVAL.
+addr.addrField
 
-addr.unused  
-Заполнение [C++].
+ [C++] Содержит[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) структуры, если `dwKind` = ADDRESS_KIND_FIELD.
 
-Addr  
-[C++] Имя объединения.
+addr.addrLocal
 
-unionmember  
-[C# только] Это значение необходимо выполнить маршалинг в подходящей структурой тип на основе `dwKind`. См. в разделе "Примечания" для ассоциации между `dwKind` и интерпретацию объединения.
+ [C++] Содержит[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) структуры, если `dwKind` = ADDRESS_KIND_LOCAL.
+
+addr.addrParam
+
+ [C++] Содержит[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структуры, если `dwKind` = ADDRESS_KIND_PARAM.
+
+addr.addrArrayElem
+
+ [C++] Содержит[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структуры, если `dwKind` = ADDRESS_KIND_ARRAYELEM.
+
+addr.addrRetVal
+
+ [C++] Содержит[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) структуры, если `dwKind` = ADDRESS_KIND_RETVAL.
+
+addr.unused
+
+ Заполнение [C++].
+
+Addr
+
+ [C++] Имя объединения.
+
+unionmember
+
+ [C# только] Это значение необходимо выполнить маршалинг в подходящей структурой тип на основе `dwKind`. См. в разделе "Примечания" для ассоциации между `dwKind` и интерпретацию объединения.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является частью [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структурировать и представляет собой одну из нескольких различных видов адресов ( `DEBUG_ADDRESS` структура заполняется с помощью вызова [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) метод).
 
-[C# только] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа адреса. В примере показано, как это можно сделать для одного типа адреса.
+
+ [C# только] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа адреса. В примере показано, как это можно сделать для одного типа адреса.
 
 |`dwKind`|`unionmember` интерпретируется как|
 |--------------|----------------------------------|
@@ -139,7 +151,7 @@ namespace MyPackage
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)  
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)

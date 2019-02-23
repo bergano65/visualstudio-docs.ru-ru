@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Delete | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Delete
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b47e1fdeb2da653be010aa1874023a75f214ae
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 7ae9b35ba47b08acd2623a3d28c9e634b1ffaa76
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449502"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694131"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Удаляет этот ожидающая точка останова и все точки останова, привязанный из него.
@@ -82,4 +82,4 @@ HRESULT CPendingBreakpoint::Delete(void)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

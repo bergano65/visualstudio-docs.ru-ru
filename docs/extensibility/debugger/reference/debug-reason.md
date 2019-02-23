@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318606"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707267"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Указывает, почему был запущен процесс для отладки.
@@ -46,20 +46,15 @@ public enum enum_DEBUG_REASON {
 ```
 
 #### <a name="parameters"></a>Параметры
-DEBUG_REASON_ERROR  
-Произошла общая ошибка (используется как условие по умолчанию при ни с одним другим причинам, по размеру).
+Произошла общая ошибка DEBUG_REASON_ERROR A (используется как условие по умолчанию при ни с одним другим причинам, по размеру).
 
-DEBUG_REASON_USER_LAUNCHED  
-Процесс был запущен по запросу пользователя.
+DEBUG_REASON_USER_LAUNCHED процесс был запущен по запросу пользователя.
 
-DEBUG_REASON_USER_ATTACHED  
-Уже выполняемым процессам был подключен к этим пользователем.
+DEBUG_REASON_USER_ATTACHED уже выполняемым процессам был подключен к этим пользователем.
 
-DEBUG_REASON_AUTO_ATTACHED  
-Процесс автоматически присоединяется к, если оно было запущено.
+DEBUG_REASON_AUTO_ATTACHED процесс был автоматически присоединяется к при запуске.
 
-DEBUG_REASON_CAUSALITY  
-Процесс был запущен из-за *Just-In-Time* событие отладки (JIT).
+Процесс был запущен из-за DEBUG_REASON_CAUSALITY *Just-In-Time* событие отладки (JIT).
 
 ## <a name="remarks"></a>Примечания
 Возвращаемые [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.
@@ -72,5 +67,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b34624672b64d88ca9b080094c5d661494c089cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315902"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694235"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Локальная переменная, параметр или другому полю, описанном структурой.
@@ -45,20 +45,15 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Участники
-dwFields  
-Сочетание флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисление, указывающее, какие члены будут заполнены.
+dwFields объект сочетание флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисление, указывающее, какие члены будут заполнены.
 
-bstrFullName  
-Полное имя поля.
+bstrFullName полное имя поля.
 
-bstrName  
-Короткое имя поля.
+bstrName короткое имя поля.
 
-bstrType  
-Тип поля.
+bstrType тип поля.
 
-dwModifiers  
-Сочетание флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисление, описывающее поле.
+dwModifiers объект сочетание флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисление, описывающее поле.
 
 ## <a name="remarks"></a>Примечания
 Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод, где он заполняется.
@@ -71,7 +66,7 @@ dwModifiers
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

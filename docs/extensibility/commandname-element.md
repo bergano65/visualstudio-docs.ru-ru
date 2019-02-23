@@ -11,36 +11,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4590d8586667421c7d97e3010166e8b496ed7c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc67cc9e50c73e5ab3c8579be8833648a01079c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997797"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681131"
 ---
 # <a name="commandname-element"></a>Элемент CommandName
-`CommandName` Элемент указывает текст, отображаемый в категории «клавиатура» **параметры** диалоговое окно и в **команды** в списке **Настройка** диалоговое окно поле.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-<CommandName>MyCommand</CommandName>  
-```  
-  
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
-  
-### <a name="attributes"></a>Атрибуты  
- Отсутствует.  
-  
-### <a name="child-elements"></a>Дочерние элементы  
- Отсутствует.  
-  
-### <a name="parent-elements"></a>Родительские элементы  
-  
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Элемент strings](../extensibility/strings-element.md)|Группирует элементы текста, таких как `ButtonText` и `CommandName`.|  
-  
-## <a name="see-also"></a>См. также  
- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+`CommandName` Элемент указывает текст, отображаемый в категории «клавиатура» **параметры** диалоговое окно и в **команды** в списке **Настройка** диалоговое окно поле.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+<CommandName>MyCommand</CommandName>
+```
+
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
+
+### <a name="attributes"></a>Атрибуты
+ Отсутствует.
+
+### <a name="child-elements"></a>Дочерние элементы
+ Отсутствует.
+
+### <a name="parent-elements"></a>Родительские элементы
+
+|Элемент|Описание:|
+|-------------|-----------------|
+|[Элемент strings](../extensibility/strings-element.md)|Группирует элементы текста, таких как `ButtonText` и `CommandName`.|
+
+## <a name="see-also"></a>См. также
+- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

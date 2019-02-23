@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412998"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686305"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.
@@ -54,32 +54,23 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Участники
-DEBUGREF_INFO_NAME  
-Инициализация и использование `bstrName` в структуре.
+DEBUGREF_INFO_NAME Initialize и использование `bstrName` в структуре.
 
-DEBUGREF_INFO_TYPE  
-Инициализация и использование `bstrType` в структуре.
+DEBUGREF_INFO_TYPE Initialize и использование `bstrType` в структуре.
 
-DEBUGREF_INFO_VALUE  
-Инициализация и использование `bstrValue` в структуре.
+DEBUGREF_INFO_VALUE Initialize и использование `bstrValue` в структуре.
 
-DEBUGREF_INFO_ATTRIB  
-Инициализация и использование `dwAttrib` в структуре.
+DEBUGREF_INFO_ATTRIB Initialize и использование `dwAttrib` в структуре.
 
-DEBUGREF_INFO_REFTYPE  
-Инициализация и использование `dwRefType` в структуре.
+DEBUGREF_INFO_REFTYPE Initialize и использование `dwRefType` в структуре.
 
-DEBUGREF_INFO_REF  
-Инициализация и использование `pReference` в структуре.
+DEBUGREF_INFO_REF Initialize и использование `pReference` в структуре.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND  
-Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+DEBUGREF_INFO_VALUE_AUTOEXPAND поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
 
-DEBUGREF_INFO_NONE  
-Указывает, что флаги не установлены.
+DEBUGREF_INFO_NONE указывает, что флаги не установлены.
 
-DEBUGREF_INFO_ALL  
-Указывает маску флагов.
+DEBUGREF_INFO_ALL указывает маска флагов.
 
 ## <a name="remarks"></a>Примечания
 Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.
@@ -96,7 +87,7 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

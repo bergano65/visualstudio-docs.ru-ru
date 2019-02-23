@@ -1,7 +1,7 @@
 ---
 title: DUMPTYPE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DUMPTYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81d9c9f3f5dc6b0a849e405133b7ecef1e4e59b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412972"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697135"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Указывает, какая часть состояния программы (например, запущенные потоки, кадров стека и текущий адрес инструкции) для помещения в дамп.
@@ -40,11 +40,9 @@ public enum enum_DUMPTYPE {
 ```
 
 ## <a name="members"></a>Участники
-DUMP_MINIDUMP  
-Указывает Мелкая "," compact дампа.
+DUMP_MINIDUMP указывает Мелкая "," compact дампа.
 
-DUMP_FULLDUMP  
-Указывает больших, полный дамп.
+DUMP_FULLDUMP указывает больших, полный дамп.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) метод.
@@ -57,5 +55,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

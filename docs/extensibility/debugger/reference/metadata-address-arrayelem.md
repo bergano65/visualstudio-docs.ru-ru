@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_ARRAYELEM | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_ARRAYELEM
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cfd9204dfbcc2254da6a4539e6b18d90c156c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632801"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707904"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+
 Эта структура представляет элемент массива в массив.
 
 ## <a name="syntax"></a>Синтаксис
@@ -39,12 +40,15 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ```
 
 ## <a name="terms"></a>Термины
-tokMethod  
+
+tokMethod
+
 Идентификатор массива, этот элемент является частью.
 
 [C++] `_mdToken` — `typedef` для 32-разрядных `int`.
 
-dwIndex  
+dwIndex
+
 Индекс этого элемента в массиве.
 
 ## <a name="remarks"></a>Примечания
@@ -58,6 +62,7 @@ dwIndex
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

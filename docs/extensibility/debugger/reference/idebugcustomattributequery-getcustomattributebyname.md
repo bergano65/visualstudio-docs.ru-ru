@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413427"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725025"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Извлекает настраиваемый атрибут с заданным именем.
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pszCustomAttributeName`  
-[in] Имя настраиваемого атрибута.
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in] Имя настраиваемого атрибута.
+
+`ppBlob`
+
 [in, out] Массив байтов, которые содержат данные настраиваемого атрибута.
 
-`pdwLen`  
-[out] Длина в байтах `ppBlob` параметра.
+`pdwLen`
+
+ [out] Длина в байтах `ppBlob` параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успеха возвращает `S_OK`. Если настраиваемый атрибут не существует, возвращает `S_FALSE`. В противном случае возвращается код ошибки.
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

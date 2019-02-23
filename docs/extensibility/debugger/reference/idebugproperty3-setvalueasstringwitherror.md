@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450312"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709282"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Задает значение этого свойства и возвращает сообщение об ошибке, при необходимости.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pszValue`  
-[in] Задаваемое значение.
+`pszValue`
 
-`dwRadix`  
-[in] Основание системы счисления задаваемое значение.
+ [in] Задаваемое значение.
 
-`dwTimeout`  
-[in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).
+`dwRadix`
 
-`errorString`  
-[out] Если произошла ошибка при установке значения, содержит причину сбоя.
+ [in] Основание системы счисления задаваемое значение.
+
+`dwTimeout`
+
+ [in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).
+
+`errorString`
+
+ [out] Если произошла ошибка при установке значения, содержит причину сбоя.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
