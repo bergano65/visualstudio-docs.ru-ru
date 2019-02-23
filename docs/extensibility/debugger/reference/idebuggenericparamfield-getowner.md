@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetOwner | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e400e0b2f8da168becb5bc84ab833138c7750e
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449586"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694703"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Возвращает имя типа или метода владельца этого универсального параметра.
@@ -35,8 +35,9 @@ int GetOwner(
 ```
 
 #### <a name="parameters"></a>Параметры
-`ppOwner`  
-[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта, которому принадлежит этот универсальный параметр.
+`ppOwner`
+
+ [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта, которому принадлежит этот универсальный параметр.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -93,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

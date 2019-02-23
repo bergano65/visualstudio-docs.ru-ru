@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318242"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705642"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Добавить контроллер меню в панели инструментов
 Это пошаговое руководство построено [добавить панель инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) Пошаговое руководство и показано, как добавить контроллер меню в панели инструментов окна инструментов. Показанные здесь шаги также может применяться к панели инструментов, которая создается в [добавить панель инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.
@@ -223,5 +223,5 @@ ms.locfileid: "56318242"
     Появится диалоговое окно с сообщением **выбранного контроллера меню элемента 3**. Обратите внимание на то, что сообщение соответствует текст на кнопке меню контроллера. Кнопка контроллера меню теперь отображает **MC элемента 3**.
 
 ## <a name="see-also"></a>См. также
-[Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[Добавление панели инструментов](../extensibility/adding-a-toolbar.md)
+- [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Добавление панели инструментов](../extensibility/adding-a-toolbar.md)

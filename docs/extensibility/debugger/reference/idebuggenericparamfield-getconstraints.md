@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450078"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700878"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Получает ограничения, связанные с этим универсальным параметром.
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>Параметры
-`cConstraints`  
-[in] Количество ограничений.
+`cConstraints`
 
-`ppConstraints`  
-[out] Возвращает массив, содержащий ограничения, связанные с этим полем.
+ [in] Количество ограничений.
 
-`pcConstraints`  
-[in, out] Количество ограничений в `ppConstraints` массива.
+`ppConstraints`
+
+ [out] Возвращает массив, содержащий ограничения, связанные с этим полем.
+
+`pcConstraints`
+
+ [in, out] Количество ограничений в `ppConstraints` массива.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

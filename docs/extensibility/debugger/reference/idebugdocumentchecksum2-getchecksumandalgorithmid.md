@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da313d42ac8e50e7f1a3788b3d40242d1ddffb0c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412907"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704622"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.
@@ -42,17 +42,21 @@ public int GetChecksumAndAlgorithmId(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pRetVal`  
-[out] Уникальный идентификатор алгоритма подсчета контрольной суммы.
+`pRetVal`
 
-`cMaxBytes`  
-[in] Максимальное число байтов, которое должно использоваться для контрольной суммы.
+ [out] Уникальный идентификатор алгоритма подсчета контрольной суммы.
 
-`pChecksum`  
-[out] Значение контрольной суммы.
+`cMaxBytes`
 
-`pcNumBytes`  
-[out] Фактическое число байтов, используемых для контрольной суммы.
+ [in] Максимальное число байтов, которое должно использоваться для контрольной суммы.
+
+`pChecksum`
+
+ [out] Значение контрольной суммы.
+
+`pcNumBytes`
+
+ [out] Фактическое число байтов, используемых для контрольной суммы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -124,4 +128,4 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
+- [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
