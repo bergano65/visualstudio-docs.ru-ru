@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FUNC_OFFSET | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_FUNC_OFFSET
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90f624bf012354dbd438f0fff079e13da756f079
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1c0fdc8739c9df321391cdcb43e915b5036ea7f4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318036"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682405"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Описывает смещения расположение точки останова в функции в коде.
@@ -32,11 +32,9 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 ```
 
 ## <a name="members"></a>Участники
-`bstrContext`  
-Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
+`bstrContext` Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
 
-`pFuncPos`  
-[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) , описывающий имя функции и относительной позиции от начала функции.
+`pFuncPos` [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) , описывающий имя функции и относительной позиции от начала функции.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
@@ -51,6 +49,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

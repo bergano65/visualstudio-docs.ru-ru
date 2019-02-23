@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::SetObjectForVisualizer | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer
 helpviewer_keywords:
@@ -12,50 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9ae1d22afc5d2faa54e623c76ba686624aaad1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069425"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711548"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
-Этот метод изменяет объект, представляющий визуализатор.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT SetObjectForVisualizer(  
-   IDebugObject*  pNewObject,  
-   BSTR*          error,  
-   IDebugObject** pException  
-);  
-```  
-  
-```csharp  
-int SetObjectForVisualizer(  
-   IDebugObject     pNewObject,  
-   out string       error,  
-   out IDebugObject pException  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pNewObject`  
- [in] Задаваемый объект.  
-  
- `error`  
- [out] Если произошла ошибка при установке объекта, эта строка содержит сообщение об ошибке.  
-  
- `pException`  
- [out] Если произошла ошибка, этот объект содержит сведения об исключении.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Это зависит от разработчика, чтобы определить, каким образом возвращаются сведения об ошибке. Тем не менее существует возможность, что некоторые вызывающим объектам может только внешний вид, чтобы узнать, был ли объект исключения возвращены знать, существует ошибка, поэтому этот метод всегда должен возвращать объект исключения, если произошла ошибка. Строка ошибки также должен быть предоставлен, в случае, если вызывающий объект хочет, чтобы его использовать.  
-  
-## <a name="see-also"></a>См. также  
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Этот метод изменяет объект, представляющий визуализатор.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
+);
+```
+
+```csharp
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pNewObject`
+
+ [in] Задаваемый объект.
+
+ `error`
+
+ [out] Если произошла ошибка при установке объекта, эта строка содержит сообщение об ошибке.
+
+ `pException`
+
+ [out] Если произошла ошибка, этот объект содержит сведения об исключении.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Это зависит от разработчика, чтобы определить, каким образом возвращаются сведения об ошибке. Тем не менее существует возможность, что некоторые вызывающим объектам может только внешний вид, чтобы узнать, был ли объект исключения возвращены знать, существует ошибка, поэтому этот метод всегда должен возвращать объект исключения, если произошла ошибка. Строка ошибки также должен быть предоставлен, в случае, если вызывающий объект хочет, чтобы его использовать.
+
+## <a name="see-also"></a>См. также
+- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
