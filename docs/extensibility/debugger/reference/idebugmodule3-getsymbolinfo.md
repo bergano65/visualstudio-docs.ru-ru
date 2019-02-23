@@ -1,7 +1,7 @@
 ---
 title: IDebugModule3::GetSymbolInfo | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugModule3::GetSymbolInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adffeb018bfaa597d399042ef9651965674f92bb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450150"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717446"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Извлекает список путей, для которых выполняется поиск символов, а также результаты поиска каждого пути.
@@ -40,11 +40,13 @@ int GetSymbolInfo(
 ```
 
 #### <a name="parameters"></a>Параметры
-`dwFields`  
-[in] Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисление, определяющее, какие поля `pInfo` должны быть заполнены.
+`dwFields`
 
-`pInfo`  
-[out] Объект [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) структуры, члены которого должны быть заполнены с использованием указанных сведений об. Если это значение null, этот метод возвращает `E_INVALIDARG`.
+ [in] Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисление, определяющее, какие поля `pInfo` должны быть заполнены.
+
+`pInfo`
+
+ [out] Объект [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) структуры, члены которого должны быть заполнены с использованием указанных сведений об. Если это значение null, этот метод возвращает `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если метод завершается успешно, возвращается `S_OK`; в противном случае он возвращает код ошибки.
@@ -81,12 +83,12 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Файл не найден.**  
-**c:\winnt\symbols\user32.pdb... Версия не совпадает.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
+**c:\symbols\user32.pdb... Файл не найден. ** 
+ **c:\winnt\symbols\user32.pdb... Версия не совпадает. ** 
+ ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
 
 ## <a name="see-also"></a>См. также
 
-[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
-[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
-[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
+- [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
+- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)
+- [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

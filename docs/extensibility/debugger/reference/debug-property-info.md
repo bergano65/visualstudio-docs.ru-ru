@@ -1,7 +1,7 @@
 ---
 title: DEBUG_PROPERTY_INFO | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_PROPERTY_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c17dd03a3e037023fc307eecf33714acbeaab3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413011"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710062"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Содержит сведения о свойстве отладки.
@@ -49,26 +49,19 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>Участники
-dwValidFields  
-Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисление, указывающее, какие поля заполнены.
+dwValidFields объект сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисление, указывающее, какие поля заполнены.
 
-bstrFullName  
-Полное имя свойства.
+bstrFullName полное имя свойства.
 
-bstrName  
-Имя свойства в контексте.
+bstrName имя свойства в контексте.
 
-bstrType  
-Тип свойства как отформатированную строку.
+bstrType свойство типа как отформатированную строку.
 
-bstrValue  
-Значение свойства как отформатированную строку.
+bstrValue значение свойства как отформатированную строку.
 
-pProperty  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объекта, описанного этой структурой.
+pProperty [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объекта, описанного этой структурой.
 
-dwAttrib  
-Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.
+dwAttrib объект сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.
 
 ## <a name="remarks"></a>Примечания
 Свойство является объектом иерархическую сущность, которая имеет имя, тип и значение. Например свойство можно описать, локальные переменные, параметры, переменные контрольных значений и выражений и регистров.
@@ -83,11 +76,11 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)  
-[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)  
-[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)  
-[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)  
-[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
+- [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugPortNotify2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortNotify2
 helpviewer_keywords:
@@ -12,46 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13b96fd88bee0bff70352606325917cb1dd4229a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2427bfbc70c992cfcd41217aec56aa94d825faae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021732"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713429"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-Этот интерфейс регистрирует или отменяет регистрацию программы, которые можно отлаживать с портом, в котором он выполняется на.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-IDebugPortNotify2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщик настраиваемого порта реализует этот интерфейс для поддержки добавления и удаления программ из порта. Обычно он реализован в тот же объект, реализующий [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс.  
-  
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызов [QueryInterface](/cpp/atl/queryinterface) на `IDebugPort2` интерфейс возвращает этот интерфейс. Кроме того, вызов [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) возвращает этот интерфейс. Модуль отладки можно увидеть этот интерфейс в качестве параметра [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugPortNotify2`.  
-  
-|Метод|Описание:|  
-|------------|-----------------|  
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Регистрирует порт, на котором он выполняется на программы, которые можно отлаживать.|  
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Отменяет регистрацию программы, можно отлаживать из порт, к которому он работает под управлением.|  
-  
-## <a name="remarks"></a>Примечания  
- Не узнать, при загрузке или выгрузке программ отладки, пользовательский порт поставщик должен реализовывать этот интерфейс. Все программы, которые загружаются для отладки через определенный порт, отслеживаются с помощью этого интерфейса.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+Этот интерфейс регистрирует или отменяет регистрацию программы, которые можно отлаживать с портом, в котором он выполняется на.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+IDebugPortNotify2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Поставщик настраиваемого порта реализует этот интерфейс для поддержки добавления и удаления программ из порта. Обычно он реализован в тот же объект, реализующий [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс.
+
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+ Вызов [QueryInterface](/cpp/atl/queryinterface) на `IDebugPort2` интерфейс возвращает этот интерфейс. Кроме того, вызов [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) возвращает этот интерфейс. Модуль отладки можно увидеть этот интерфейс в качестве параметра [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+ В следующей таблице показаны методы `IDebugPortNotify2`.
+
+|Метод|Описание:|
+|------------|-----------------|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Регистрирует порт, на котором он выполняется на программы, которые можно отлаживать.|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Отменяет регистрацию программы, можно отлаживать из порт, к которому он работает под управлением.|
+
+## <a name="remarks"></a>Примечания
+ Не узнать, при загрузке или выгрузке программ отладки, пользовательский порт поставщик должен реализовывать этот интерфейс. Все программы, которые загружаются для отладки через определенный порт, отслеживаются с помощью этого интерфейса.
+
+## <a name="requirements"></a>Требования
+ Header: msdbg.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+- [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

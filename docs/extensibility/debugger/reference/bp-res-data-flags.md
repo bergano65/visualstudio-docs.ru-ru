@@ -1,7 +1,7 @@
 ---
 title: BP_RES_DATA_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RES_DATA_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b111e98edb1d364a466157a6db4c0089617f18de
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413024"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714066"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Указывает эмулируется ли точки останова в данных или реализованного в оборудования.
@@ -38,8 +38,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 ```
 
 ## <a name="members"></a>Участники
-BP_RES_DATA_EMULATED  
-Указывает, что ее эмулирует точки останова в данных.
+BP_RES_DATA_EMULATED указывает, что ее эмулирует точки останова в данных.
 
 ## <a name="remarks"></a>Примечания
 Используется для `dwFlags` членом [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры.
@@ -52,5 +51,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

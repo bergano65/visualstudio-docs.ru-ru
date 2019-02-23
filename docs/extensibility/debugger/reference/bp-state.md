@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315421"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709257"
 ---
 # <a name="bpstate"></a>BP_STATE
 Задает существование связанная точка останова, а также указывает, включена ли.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Участники
-BPS_NONE  
-Указывает, что точка останова не существует.
+BPS_NONE указывает, что точка останова не существует.
 
-BPS_DELETED  
-Указывает, что точка останова была удалена.
+BPS_DELETED указывает, что точка останова была удалена.
 
-BPS_DISABLED  
-Указывает, что точка останова отключен.
+BPS_DISABLED указывает, что точка останова отключена.
 
-BPS_ENABLED  
-Указывает, что точка останова включена.
+BPS_ENABLED указывает, что точка останова включена.
 
 ## <a name="remarks"></a>Примечания
 Возвращаемые [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.
@@ -67,5 +63,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

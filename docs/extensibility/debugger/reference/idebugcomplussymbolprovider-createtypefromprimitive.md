@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aa6a1c6c97090da451c2d9bdd08891d0f6cb0f3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412894"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718096"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Создает тип из указанного примитивного типа.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-[C++]
+```cpp
 HRESULT CreateTypeFromPrimitive(
     DWORD          dwPrimType,
     IDebugAddress* pAddress,
@@ -32,8 +31,7 @@ HRESULT CreateTypeFromPrimitive(
 );
 ```
 
-```
-[C#]
+```csharp
 int CreateTypeFromPrimitive(
     uint          dwPrimType,
     IDebugAddress pAddress,
@@ -42,14 +40,17 @@ int CreateTypeFromPrimitive(
 ```
 
 #### <a name="parameters"></a>Параметры
-`dwPrimType`  
-[in] Значение из [перечисление CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.
+`dwPrimType`
 
-`pAddress`  
-[in] Адрес объекта, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+ [in] Значение из [перечисление CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.
 
-`ppType`  
-[in] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип.
+`pAddress`
+
+ [in] Адрес объекта, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+
+`ppType`
+
+ [in] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -95,4 +96,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
