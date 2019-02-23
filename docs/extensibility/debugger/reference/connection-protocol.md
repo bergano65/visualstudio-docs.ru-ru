@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcf3d271d331664d6d2ef210868245b50c264d6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316488"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705837"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).
@@ -49,26 +49,19 @@ public enum CONNECTION_PROTOCOL {
 ```
 
 #### <a name="parameters"></a>Параметры
-CONNECTION_NONE  
-Нет подключение к серверу.
+Нет CONNECTION_NONE соединения на сервере.
 
-CONNECTION_UNKNOWN  
-Подключение установлено, но это неизвестного типа.
+CONNECTION_UNKNOWN объект соединения, но это неизвестного типа.
 
-CONNECTION_LOCAL  
-Соединение предназначено для локального сервера.
+Соединение CONNECTION_LOCAL предназначено для локального сервера.
 
-CONNECTION_PIPE  
-Подключение осуществляется через именованный канал.
+CONNECTION_PIPE подключение осуществляется через именованный канал.
 
-CONNECTION_TCPIP  
-Соединение использует протокол TCP/IP.
+CONNECTION_TCPIP соединение использует протокол TCP/IP.
 
-CONNECTION_HTTP  
-Соединение использует протокол HTTP (с помощью веб-сервера).
+CONNECTION_HTTP подключения используется протокол HTTP (через веб-сервер).
 
-CONNECTION_OTHER  
-Было установлено какое-либо иное подключения (это значение не используется в настоящее время).
+Было установлено какое-либо иное подключения CONNECTION_OTHER (это значение не используется в настоящее время).
 
 ## <a name="remarks"></a>Примечания
 Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.
@@ -81,5 +74,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

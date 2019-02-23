@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934209"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695795"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 
@@ -26,7 +26,7 @@ ms.locfileid: "54934209"
 
 ## <a name="the-services"></a>Службы
 
-| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание: |
+| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Да | Да | Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> C/C++ ID: SID_SDTE |
@@ -129,7 +129,7 @@ ms.locfileid: "54934209"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Да | Да | Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> вместо службы. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Да | Да | Позволяет VSPackage хранить и получать сведения из текущего решения SLN-файл. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Нет | Да | Предоставляет возможность добавлять и обновлять ссылки на сборки с управляемым кодом. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Нет | Да | Предоставляет доступ к службе загрузки начальной страницы для запуска и остановки службы загрузки в фоновом потоке. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Нет | Да | Предоставляет доступ к службе загрузки Visual Studio 2017 запуск страницы для запуска и остановки службы загрузки в фоновом потоке. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Да | Да | Предоставляет доступ к строке состояния интегрированной среды разработки. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Нет | Да | Предоставляет доступ к методам для создания строгих имен ключей и файлы ключа с паролями, которые используются в подписи сборки с управляемым кодом. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Да | Да | Позволяет VSPackage для предоставления поддержки для сохранения данных в нескольких форматах. |
