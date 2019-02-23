@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28a880af0a5d691a57e32b22f9f7823cca45827d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317787"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700027"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Перечисляет дополнительные типы полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.
@@ -42,14 +42,11 @@ public enum enum_FIELD_KIND_EX
 ```
 
 ## <a name="members"></a>Участники
-FIELD_KIND_EX_NONE  
-Поле не содержит расширенного типа.
+FIELD_KIND_EX_NONE поле не содержит расширенного типа.
 
-FIELD_TYPE_EX_METHODVAR  
-Поле содержит переменную в метод.
+Поле FIELD_TYPE_EX_METHODVAR содержит переменную в метод.
 
-FIELD_TYPE_EX_CLASSVAR  
-Поле содержит переменной класса.
+Поле FIELD_TYPE_EX_CLASSVAR содержит переменной класса.
 
 ## <a name="requirements"></a>Требования
 Заголовок: Sh.h
@@ -59,5 +56,5 @@ FIELD_TYPE_EX_CLASSVAR
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
