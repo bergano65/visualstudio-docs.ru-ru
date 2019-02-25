@@ -41,6 +41,7 @@
 # [Компилирование и сборка](compiling-and-building.md)
 ## [Сборка и очистка проектов и решений](building-and-cleaning-projects-and-solutions.md)
 ## [Операции сборки](build-actions.md)
+## [Практическое руководство. Назначение нескольких запускаемых проектов](set-startup-projects.md)
 ## [Настройка системы сборки](customizing-build-system.md)
 ## [Конфигурации](configurations.md)
 ### [Создание и изменение конфигураций](create-and-edit-configurations.md)
