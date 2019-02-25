@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316331"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681482"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окне инструментов
 В этом пошаговом руководстве помещает контекстное меню в окне инструментов. Контекстное меню является меню, которое открывается при щелчке кнопки, текстовое поле или фона окна. Команды контекстного меню ведут себя так же, как команды на другие меню или панели инструментов. Для поддержки контекстное меню, укажите его в *.vsct* файла и отображения его в ответ на правой кнопки мыши.
@@ -277,5 +277,5 @@ ms.locfileid: "56316331"
 4. Выберите в контекстном меню. Цвет фона окна инструментов должны изменяться для выбранного цвета.
 
 ## <a name="see-also"></a>См. также
-[Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Использование и предоставление служб](../extensibility/using-and-providing-services.md)
+- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Использование и предоставление служб](../extensibility/using-and-providing-services.md)

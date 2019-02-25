@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FLAGS
 helpviewer_keywords:
@@ -12,45 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec59f745a0de459bb2b8b73337f13f5e03573975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946221"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688879"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-Указывает состояние символы для модуля.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-typedef DWORD MODULE_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>Участники  
- MIF_SYMBOLS_LOADED  
- По крайней мере один набор символов был загружен в модуле (в противном случае не были загружены символы).  
-  
-## <a name="remarks"></a>Примечания  
- Это значение возвращается по [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) метод.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
+Указывает состояние символы для модуля.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+typedef DWORD MODULE_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+```
+
+## <a name="members"></a>Участники
+ MIF_SYMBOLS_LOADED на как минимум один набор символов был загружен в модуле (в противном случае не были загружены символы).
+
+## <a name="remarks"></a>Примечания
+ Это значение возвращается по [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) метод.
+
+## <a name="requirements"></a>Требования
+ Header: msdbg.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

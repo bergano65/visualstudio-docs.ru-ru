@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetName | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa6957f2eb34d2b125d189c87d4ca9a58126209
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2c770c339399aaf01fee9598318c94266a391c55
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449987"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705733"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Возвращает отображаемое имя документа, который содержит контекст этого документа.
@@ -39,11 +39,13 @@ int GetName(
 ```
 
 #### <a name="parameters"></a>Параметры
-`gnType`  
-[in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, указывающее тип имени для возврата.
+`gnType`
 
-`pbstrFileName`  
-[out] Возвращает имя файла.
+ [in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, указывающее тип имени для возврата.
+
+`pbstrFileName`
+
+ [out] Возвращает имя файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -92,5 +94,5 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

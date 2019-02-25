@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_PARAM | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_PARAM
 helpviewer_keywords:
@@ -12,55 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f91e8ddf00b191bd2574c3a360328fb00cb50960
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938072"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700293"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
-Эта структура представляет параметр метода или функции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_PARAM {  
-   _mdToken tokMethod;  
-   _mdToken tokParam;  
-   DWORD    dwIndex;  
-} METADATA_ADDRESS_PARAM;  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_PARAM {  
-   public int  tokMethod;  
-   public int  tokParam;  
-   public uint dwIndex;  
-}  
-```  
-  
-## <a name="terms"></a>Термины  
- tokMethod  
- Идентификатор метода параметра является частью.  
-  
- tokParam  
- Идентификатор параметра.  
-  
- dwIndex  
- Индекс параметра в списке параметров.  
-  
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_PARAM` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+Эта структура представляет параметр метода или функции.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_PARAM {
+   _mdToken tokMethod;
+   _mdToken tokParam;
+   DWORD    dwIndex;
+} METADATA_ADDRESS_PARAM;
+```
+
+```csharp
+public struct METADATA_ADDRESS_PARAM {
+   public int  tokMethod;
+   public int  tokParam;
+   public uint dwIndex;
+}
+```
+
+## <a name="terms"></a>Термины
+ tokMethod идентификатор параметра метода является частью.
+
+ tokParam идентификатор параметра.
+
+ dwIndex индекс параметра в списке параметров.
+
+## <a name="remarks"></a>Примечания
+ Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_PARAM` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).
+
+## <a name="requirements"></a>Требования
+ Заголовок: sh.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

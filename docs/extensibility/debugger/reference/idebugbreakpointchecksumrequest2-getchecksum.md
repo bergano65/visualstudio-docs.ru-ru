@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointChecksumRequest2::GetChecksum | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3d10fc129edfa5ac159bcf394cdbe734d65dba
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317644"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685668"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 Извлекает контрольная сумма документа для запроса точки останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.
@@ -37,11 +37,13 @@ public int GetChecksum(
 ```
 
 #### <a name="parameters"></a>Параметры
-`guidAlgorithm`  
-[in] Уникальный идентификатор алгоритма подсчета контрольной суммы.
+`guidAlgorithm`
 
-`pChecksumData`  
-[out] Контрольная сумма документа для запроса точки останова.
+ [in] Уникальный идентификатор алгоритма подсчета контрольной суммы.
+
+`pChecksumData`
+
+ [out] Контрольная сумма документа для запроса точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -102,4 +104,4 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
+- [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

@@ -1,7 +1,7 @@
 ---
 title: COMPUTER_INFO | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183c079206dd4c16a9301e370abec2f9351b1f61
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 980527de1681d773edcf1586f209ed25e2699502
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316838"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680351"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 Описание компьютера, на котором выполняется отладчик.
@@ -41,14 +41,11 @@ public struct COMPUTER_INFO
 ```
 
 ## <a name="terms"></a>Термины
-wProcessorArchitecture  
-Указывает архитектуру процессора.
+wProcessorArchitecture определяет архитектуру процессора.
 
-wSuiteMask  
-Определяет набор маски.
+wSuiteMask определяет набор маски.
 
-dwOperatingSystemVersion  
-Номер версии операционной системы.
+dwOperatingSystemVersion номер версии операционной системы.
 
 ## <a name="remarks"></a>Примечания
 Эта структура возвращается [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) метод.
@@ -61,5 +58,5 @@ dwOperatingSystemVersion
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugBoundBreakpoints2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugBoundBreakpoints2
 helpviewer_keywords:
@@ -12,57 +12,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abd73824a1e57673af533a8196f497412cc7b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40097fab8a45a08ce11c9f58fa22f4464174ef32
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953501"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680208"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
-Этот интерфейс перечисляет связанных точек останова, связанные с ожидающая точка останова или точка останова привязки событий.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-IEnumDebugBoundBreakpoints2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс как часть поддержки точек останова. Этот интерфейс должен быть реализован, если поддерживаются точки останова.  
-  
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Visual Studio вызывает:  
-  
--   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, которые были активированы.  
-  
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, которые были привязаны.  
-  
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, привязанного к этой ожидающая точка останова.  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IEnumDebugBoundBreakpoints2`.  
-  
-|Метод|Описание:|  
-|------------|-----------------|  
-|[Вперед](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Извлекает указанное число связанных точек останова в последовательности перечисления.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Пропускает заданное число связанных точек останова в последовательности перечисления.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Возвращает количество связанных точек останова в перечислителе.|  
-  
-## <a name="remarks"></a>Примечания  
- Visual Studio использует связанных точек останова, представленного этим интерфейсом, чтобы обновить список точек останова в интегрированной среде разработки.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)   
- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)   
- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
+Этот интерфейс перечисляет связанных точек останова, связанные с ожидающая точка останова или точка останова привязки событий.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+IEnumDebugBoundBreakpoints2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс как часть поддержки точек останова. Этот интерфейс должен быть реализован, если поддерживаются точки останова.
+
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+ Visual Studio вызывает:
+
+-   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, которые были активированы.
+
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, которые были привязаны.
+
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) для получения этого интерфейса, представляющий список всех точек останова, привязанного к этой ожидающая точка останова.
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+ В следующей таблице показаны методы `IEnumDebugBoundBreakpoints2`.
+
+|Метод|Описание|
+|------------|-----------------|
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Извлекает указанное число связанных точек останова в последовательности перечисления.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Пропускает заданное число связанных точек останова в последовательности перечисления.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Возвращает количество связанных точек останова в перечислителе.|
+
+## <a name="remarks"></a>Примечания
+ Visual Studio использует связанных точек останова, представленного этим интерфейсом, чтобы обновить список точек останова в интегрированной среде разработки.
+
+## <a name="requirements"></a>Требования
+ Header: msdbg.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+- [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)

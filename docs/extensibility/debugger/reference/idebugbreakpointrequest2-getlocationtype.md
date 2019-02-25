@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afddb4f27eaae9ae9960ae07127d88d0d4588d1f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315683"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684693"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Возвращает тип местоположения точки останова этого запроса точки останова.
@@ -37,7 +37,9 @@ int GetLocationType(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pBPLocationType` [out] Возвращает значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, которое описывает расположение этого запроса точки останова.
+`pBPLocationType`
+
+ [out] Возвращает значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, которое описывает расположение этого запроса точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_FAIL` Если `bpLocation` в соответствующем поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структура не является допустимой.
@@ -77,7 +79,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
-[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
-[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+- [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
+- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318749"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680481"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -103,6 +103,6 @@ ms.locfileid: "56318749"
 ### <a name="reacting-to-this-breaking-change"></a>Реагирование на это критическое изменение
 
 * Внешний код должен преобразовать для использования активации без регистрации для COM-компонентов также.
-* Внешние компоненты можно найти в расположении Visual Studio [, следуя указаниям ниже](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Внешние компоненты можно найти в расположении Visual Studio [, следуя указаниям ниже](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Мы рекомендуем использовать внешние компоненты [внешних менеджер по параметрам](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) вместо чтения/записи, непосредственно к разделам реестра Visual Studio.
 * Проверьте, может ли реализовывать другой метод для регистрации компонентов, которые использует ваше расширение. Например, можно попытаться воспользоваться преимуществами нового расширения отладчика [msvsmon регистрация JSON-файл COM](migrate-debugger-COM-registration.md).

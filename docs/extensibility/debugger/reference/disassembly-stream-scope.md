@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_SCOPE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_SCOPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8773a37e8762ad88513a2636b9c692b45be2c4ae
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413089"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684498"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Задает область потока Дизассемблированный код.
@@ -44,17 +44,13 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 ```
 
 ## <a name="members"></a>Участники
-DSS_HUGE  
-Указывает, что Дизассемблирование контекст кода будет создавать дополнительные выходные данные, чем клиент обычно необходимо получить в одном вызове.
+DSS_HUGE указывает, что Дизассемблирование контекст кода создаст несколько выходных данных, чем клиент обычно необходимо получить в одном вызове.
 
-DSS_FUNCTION  
-Указывает, что функции, содержащиеся в контексте кода должны быть дизассемблирован. Указывает, что поток Дизассемблированный код представляет функцию, при возврате [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.
+Должен быть дизассемблирован DSS_FUNCTION указывает, что функция содержится в контексте кода. Указывает, что поток Дизассемблированный код представляет функцию, при возврате [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.
 
-DSS_MODULE  
-При возврате `IDebugDisassemblyStream2::GetScope` методом, указывает, что поток Дизассемблированный код представляет модуль.
+Возвращенный DSS_MODULE при `IDebugDisassemblyStream2::GetScope` методом, указывает, что поток Дизассемблированный код представляет модуль.
 
-DSS_ALL  
-Указывает Дизассемблированный код для во всем адресном пространстве.
+Указывает DSS_ALL Дизассемблированный код для во всем адресном пространстве.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) метод и возвращенный [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.
@@ -69,6 +65,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)  
-[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
+- [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

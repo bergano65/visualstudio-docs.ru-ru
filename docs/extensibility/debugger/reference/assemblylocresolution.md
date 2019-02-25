@@ -1,7 +1,7 @@
 ---
 title: ASSEMBLYLOCRESOLUTION | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ASSEMBLYLOCRESOLUTION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: befa1c67aa8d095288d13cb6f309f31b5c2916e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316435"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710257"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Определяет расположение сборки.
@@ -44,17 +44,13 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 ```
 
 ## <a name="members"></a>Участники
-ALR_NAME  
-Сборка расположена в текущем пространстве имен.
+ALR_NAME сборка расположена в текущем пространстве имен.
 
-ALR_USERDIR  
-Сборка расположена в каталоге пользователя.
+ALR_USERDIR сборка расположена в каталоге пользователя.
 
-ALR_SHAREDDIR  
-Сборка расположена в общий каталог.
+ALR_SHAREDDIR сборка расположена в общий каталог.
 
-ALR_REMOTEDIR  
-Сборка расположена в удаленном каталоге.
+ALR_REMOTEDIR сборка расположена в удаленном каталоге.
 
 ## <a name="remarks"></a>Примечания
 Эти значения возвращаются [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) методы.
@@ -69,6 +65,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)  
-[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
+- [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

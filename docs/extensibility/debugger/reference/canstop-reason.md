@@ -1,7 +1,7 @@
 ---
 title: CANSTOP_REASON | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98621fbea4fc114616ccf23ada9b372c88461970
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413050"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711622"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Используется для определения того, если программы можно остановить выполнение после достижения определенной точке выполнения.
@@ -40,11 +40,9 @@ public enum enum_CANSTOP_REASON {
 ```
 
 ## <a name="members"></a>Участники
-CANSTOP_ENTRYPOINT  
-Определяет точку входа данной программы.
+CANSTOP_ENTRYPOINT указывает точку входа данной программы.
 
-CANSTOP_STEPIN  
-Указывает, шаг с заходом в функцию.
+CANSTOP_STEPIN указывает шаг с заходом в функцию.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод подтверждения с сеанса отладки Manager (SDM), если необходимо остановить после достижения точки входа программы или шаг с заходом в функции или метода.
@@ -57,5 +55,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

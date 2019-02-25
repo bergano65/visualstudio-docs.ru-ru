@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317085"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691349"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
 Пользователю можно предоставить отзыв, изменение внешнего вида команды. Например вы можете команду, чтобы выглядеть иначе, когда она недоступна. Можно сделать команды доступными или недоступными, скрыть или отобразить их, или проверить или снять их флажки в меню.
@@ -85,7 +85,7 @@ ms.locfileid: "56317085"
 8. На **средства** меню, теперь вы увидите **новый текст**. Нажмите кнопку **новый текст**. Теперь нужно запретить команду.
 
 ## <a name="see-also"></a>См. также
-[Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Расширение меню и команд](../extensibility/extending-menus-and-commands.md)  
-[Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
+- [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

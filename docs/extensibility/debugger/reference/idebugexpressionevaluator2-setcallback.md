@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::SetCallback | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef36b663a95f2c6eaca31c9091898cbe70db435
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450390"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686799"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Включает средство оценки выражений (EE) для указания интерфейс обратного вызова, отладчик ядра (DE) будет использовать для чтения настроек метрик.
@@ -36,8 +36,9 @@ int SetCallback (
 ```
 
 #### <a name="parameters"></a>Параметры
-`pCallback`  
-[in] Интерфейс для использования для параметров обратного вызова.
+`pCallback`
+
+ [in] Интерфейс для использования для параметров обратного вызова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -74,4 +75,4 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

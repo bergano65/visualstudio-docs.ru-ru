@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetException | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::SetException
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e423f7817d47473111ac6eb1c5293127826c2b99
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034327"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698915"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Указывает, как модуль отладки (DE) должен обрабатывать данного исключения.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT SetException(   
-   EXCEPTION_INFO* pException  
-);  
-```  
-  
-```csharp  
-int SetException(   
-   EXCEPTION_INFO[] pException  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pException`  
- [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как выполнить его отладку.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Чтобы остановить программу, генерации исключения в первый шанс обработки, второй вероятность того, можно было передать инструкцию DE или вообще не.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
+Указывает, как модуль отладки (DE) должен обрабатывать данного исключения.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT SetException( 
+   EXCEPTION_INFO* pException
+);
+```
+
+```csharp
+int SetException( 
+   EXCEPTION_INFO[] pException
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pException`
+
+ [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как выполнить его отладку.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Чтобы остановить программу, генерации исключения в первый шанс обработки, второй вероятность того, можно было передать инструкцию DE или вообще не.
+
+## <a name="see-also"></a>См. также
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

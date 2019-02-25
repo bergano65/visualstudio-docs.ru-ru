@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961602"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618202"
 ---
 # <a name="web-site-support-templates"></a>Шаблоны поддержки веб-сайтов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Веб-сайт шаблонов проектов и элементов предоставляют многократно используемых и настраиваемые веб-узел проектов и элементов, позволяющую ускорить процесс разработки, избавляя от необходимости создание новых проектов веб-сайта и элементов с нуля. Дополнительные сведения о [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблонов, см. в разделе [Создание проектов и шаблонов элементов](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961602"
      Файл шаблона, который определяет содержимое главной страницы Обновить и ее зависимый файл, если таковые имеются.
 
 ## <a name="see-also"></a>См. также
- [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)
+- [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)

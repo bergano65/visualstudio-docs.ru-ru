@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программный вывод списка недавно использовавшихся файлов книг
+title: Практическое руководство. Программный вывод списка недавно использовавшихся файлов книг
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8246f42064a668959ea180c3a97cba643afbb57c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645281"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Как выполнить Программный вывод списка недавно использовавшихся файлов книг
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Свойство возвращает коллекцию, содержащую имена всех файлов, которые отображаются в списке недавно использовавшихся файлов Microsoft Office Excel. Длина списка зависит от числа файлов, которые пользователь выбрал для сохранения. Можно отобразить результаты в диапазон.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Чтобы вывести список недавно использовавшихся книг объекта range  
-  
-1.  Циклический перебор списка последних файлов и отображения названий в ячейки <xref:Microsoft.Office.Interop.Excel.Range> объекта.  
-  
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Практическое руководство. Программный вывод списка недавно использовавшихся файлов книг
+  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Свойство возвращает коллекцию, содержащую имена всех файлов, которые отображаются в списке недавно использовавшихся файлов Microsoft Office Excel. Длина списка зависит от числа файлов, которые пользователь выбрал для сохранения. Можно отобразить результаты в диапазон.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Чтобы вывести список недавно использовавшихся книг объекта range
+
+1.  Циклический перебор списка последних файлов и отображения названий в ячейки <xref:Microsoft.Office.Interop.Excel.Range> объекта.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  
-  
-## <a name="see-also"></a>См. также  
- [Работа с книгами](../vsto/working-with-workbooks.md)   
- [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
+
+## <a name="see-also"></a>См. также
+- [Работа с книгами](../vsto/working-with-workbooks.md)
+- [Элемент управления NamedRange](../vsto/namedrange-control.md)
+- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

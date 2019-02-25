@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316194"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710088"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление недавно использовавшийся списка в подменю
 Это пошаговое руководство построено на демонстрации в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить в подменю динамический список. Список динамического формирует основу для создания списка наиболее недавно использовавшихся Элементов.
@@ -202,4 +202,4 @@ ms.locfileid: "56316194"
 4. Снова откройте подменю. Обратите внимание, что **элемента 3** теперь находится в верхней части списка и других элементов, отправленных на одну позицию вниз. Нажмите кнопку **3 элемента** снова и обратите внимание, что в окне сообщения по-прежнему отображаются **выбранного элемента 3**, что означает, что текст правильно были перемещены в новое место вместе с команду метки.
 
 ## <a name="see-also"></a>См. также
-[Динамическое добавление элементов меню](../extensibility/dynamically-adding-menu-items.md)
+- [Динамическое добавление элементов меню](../extensibility/dynamically-adding-menu-items.md)

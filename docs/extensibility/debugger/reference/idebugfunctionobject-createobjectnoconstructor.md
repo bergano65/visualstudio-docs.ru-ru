@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreateObjectNoConstructor | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor
 helpviewer_keywords:
@@ -12,48 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8117b737ba33c59a3768f2a0ea19f483ff4e711e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6a5ecd42b0ddf0138e98e2159fae1236ca02b473
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934491"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707397"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-Создает объект с помощью отсутствует конструктор.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT CreateObjectNoConstructor(   
-   IDebugField*   pClassObject,  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int CreateObjectNoConstructor(  
-   IDebugField      pClassField,   
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pClassObject`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип создаваемого объекта.  
-  
- `ppObject`  
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Вызовите этот метод, чтобы создать объект, представляющий экземпляр структуры или сложного типа (который не требуется конструктор), являющийся параметром функции представленный [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
-  
- Если параметр объекта требуется конструктор, вызвать [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) метод.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
- [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
+Создает объект с помощью отсутствует конструктор.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT CreateObjectNoConstructor( 
+   IDebugField*   pClassObject,
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int CreateObjectNoConstructor(
+   IDebugField      pClassField,
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pClassObject`
+
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип создаваемого объекта.
+
+ `ppObject`
+
+ [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Вызовите этот метод, чтобы создать объект, представляющий экземпляр структуры или сложного типа (который не требуется конструктор), являющийся параметром функции представленный [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.
+
+ Если параметр объекта требуется конструктор, вызвать [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) метод.
+
+## <a name="see-also"></a>См. также
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+- [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

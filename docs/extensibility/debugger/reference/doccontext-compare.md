@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413037"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686253"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Указывает критерии для сравнения двух контекстов документа.
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Участники
-DOCCONTEXT_EQUAL  
-Найти первый контекст документа в списке, который равен целевой контекст документа.
+DOCCONTEXT_EQUAL найти первый контекст документа в списке, который равен целевой контекст документа.
 
-DOCCONTEXT_LESS_THAN  
-Найти первый контекст документа в списке, который меньше, чем целевой контекст документа.
+DOCCONTEXT_LESS_THAN найти первый контекст документа в списке, который меньше, чем целевой контекст документа.
 
-DOCCONTEXT_GREATER_THAN  
-Найти первый контекст документа в списке, который больше, чем целевой контекст документа.
+DOCCONTEXT_GREATER_THAN найти первый контекст документа в списке, который больше, чем целевой контекст документа.
 
-DOCCONTEXT_SAME_DOCUMENT  
-Найти первый контекст документа в списке, который находится в том же документе целевой контекст документа.
+DOCCONTEXT_SAME_DOCUMENT найти первый контекст документа в списке, который находится в том же документе целевой контекст документа.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) метод.
@@ -69,5 +65,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

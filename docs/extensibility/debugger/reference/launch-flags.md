@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450000"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680192"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Задает флаги запуска отладки.
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>Участники
-LAUNCH_DEBUG  
-Запускает процесс для отладки.
+LAUNCH_DEBUG запускает процесс для отладки.
 
-LAUNCH_NODEBUG  
-Запускает процесс без его отладки.
+LAUNCH_NODEBUG запускает процесс без его отладки.
 
-LAUNCH_ENABLE_ENC  
-РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ, НЕ ИСПОЛЬЗУЙТЕ.
+LAUNCH_ENABLE_ENC DEPRECATED, DO NOT USE.
 
-LAUNCH_MERGE_ENV  
-Запускает процесс и выполняет слияние среды с помощью запуска сервера.
+LAUNCH_MERGE_ENV запускает процесс и объединяет среды с помощью запуска сервера.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются в качестве аргумента [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) метод.
@@ -69,5 +65,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

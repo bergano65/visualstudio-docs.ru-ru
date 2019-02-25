@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49f71edcdb2f5fb13be5465292ed7d9f7a3e1632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016280"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702971"
 ---
 # <a name="objects"></a>Объекты
-Следующая справочная информация описание объектов, которые используются для создания экземпляра базовый текстовый редактор.  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Объект VSCodeWindow](../extensibility/vscodewindow-object.md)  
- Описание объекта окно кода, окна специализированного документа, может включать в себя один или несколько представлений текста.  
-  
- [Объект VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md)  
- Описание объекта диспетчера окно кода, который реализуется языковая служба и отвечает за управление элементы оформления.  
-  
- [Объект VSTextBuffer](../extensibility/vstextbuffer-object.md)  
- Описывает объект текстового буфера, который представляет поток текста в формате Юникод, данные для файла.  
-  
- [Объект VSTextView](../extensibility/vstextview-object.md)  
- Описание представления текста, окно, которое позволяет пользователям просматривать и редактировать текст в Юникоде текстового буфера.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
- Представляет список справочных разделов.
+Следующая справочная информация описание объектов, которые используются для создания экземпляра базовый текстовый редактор.
+
+## <a name="in-this-section"></a>Содержание раздела
+- [Объект VSCodeWindow](../extensibility/vscodewindow-object.md) описание объекта окно кода, окна специализированного документа, может включать в себя один или несколько представлений текста.
+
+- [Объект VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) описание объекта диспетчера окно кода, который реализуется языковая служба и отвечает за управление элементы оформления.
+
+- [Объект VSTextBuffer](../extensibility/vstextbuffer-object.md) описывает объект текстового буфера, который представляет поток текста в формате Юникод, данные для файла.
+
+- [Объект VSTextView](../extensibility/vstextview-object.md) описание представления текста, окно, которое позволяет пользователям просматривать и редактировать текст в Юникоде текстового буфера.
+
+## <a name="related-sections"></a>Связанные разделы
+- [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) представляет список справочных разделов.

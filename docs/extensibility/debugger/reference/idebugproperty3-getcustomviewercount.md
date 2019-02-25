@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetCustomViewerCount | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetCustomViewerCount
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc55c65aa94d4f84d541de9f20e5f5886142ad
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450091"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709152"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Возвращает количество пользовательских средств просмотра, которые могут быть доступны для этого свойства.
@@ -37,8 +37,9 @@ int GetCustomViewerCount(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pcelt`  
-[out] Число пользовательских средств просмотра, доступные для этого свойства.
+`pcelt`
+
+ [out] Число пользовательских средств просмотра, доступные для этого свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -71,6 +72,6 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
-[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
-[тип визуализатора и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
+- [Визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

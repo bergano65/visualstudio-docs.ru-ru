@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97b856b0c22631b3e4f9b8860f9aaba728e6944d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ddb2e88db15d60731bc17fcc60cb69772779f14e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315497"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718422"
 ---
 # <a name="command-code-enumerator"></a>Перечислитель кода команды
 Этот перечислитель используется в параметрах [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md)для указания команды, для которого задаются параметры.
@@ -40,40 +40,29 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>Участники
-SCC_COMMAND_GET  
-Соответствует [SccGet](../extensibility/sccget-function.md).
+Соответствует SCC_COMMAND_GET [SccGet](../extensibility/sccget-function.md).
 
-SCC_COMMAND_CHECKOUT  
-Соответствует [SccCheckout](../extensibility/scccheckout-function.md).
+Соответствует SCC_COMMAND_CHECKOUT [SccCheckout](../extensibility/scccheckout-function.md).
 
-SCC_COMMAND_CHECKIN  
-Соответствует [SccCheckin](../extensibility/scccheckin-function.md).
+Соответствует SCC_COMMAND_CHECKIN [SccCheckin](../extensibility/scccheckin-function.md).
 
-SCC_COMMAND_UNCHECKOUT  
-Соответствует [SccUncheckout](../extensibility/sccuncheckout-function.md).
+Соответствует SCC_COMMAND_UNCHECKOUT [SccUncheckout](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD  
-Соответствует [SccAdd](../extensibility/sccadd-function.md).
+Соответствует SCC_COMMAND_ADD [SccAdd](../extensibility/sccadd-function.md).
 
-SCC_COMMAND_REMOVE  
-Соответствует [SccRemove](../extensibility/sccremove-function.md).
+Соответствует SCC_COMMAND_REMOVE [SccRemove](../extensibility/sccremove-function.md).
 
-SCC_COMMAND_DIFF  
-Соответствует [SccDiff](../extensibility/sccdiff-function.md).
+Соответствует SCC_COMMAND_DIFF [SccDiff](../extensibility/sccdiff-function.md).
 
-SCC_COMMAND_HISTORY  
-Соответствует [SccHistory](../extensibility/scchistory-function.md).
+Соответствует SCC_COMMAND_HISTORY [SccHistory](../extensibility/scchistory-function.md).
 
-SCC_COMMAND_RENAME  
-Соответствует [SccRename](../extensibility/sccrename-function.md).
+Соответствует SCC_COMMAND_RENAME [SccRename](../extensibility/sccrename-function.md).
 
-SCC_COMMAND_PROPERTIES  
-Соответствует [SccProperties](../extensibility/sccproperties-function.md).
+Соответствует SCC_COMMAND_PROPERTIES [SccProperties](../extensibility/sccproperties-function.md).
 
-SCC_COMMAND_OPTIONS  
-Соответствует [SccSetOption](../extensibility/sccsetoption-function.md).
+Соответствует SCC_COMMAND_OPTIONS [SccSetOption](../extensibility/sccsetoption-function.md).
 
 ## <a name="see-also"></a>См. также
-[Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)  
-[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
-[SccPopulateList](../extensibility/sccpopulatelist-function.md)
+- [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md)

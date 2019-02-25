@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringChars | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringChars
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce59e1fcbc9b219f1436bd09d4d947cd6995c0f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450429"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698148"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Извлекает строку, связанную с этим свойством и сохраняет его в буфер, предоставленный пользователем.
@@ -41,16 +41,20 @@ int GetStringChars(
 ```
 
 #### <a name="parameters"></a>Параметры
-`buflen`  
-[in] Максимальное количество символов, которые может содержать буфер предоставленное пользователем.
+`buflen`
 
-`rgString`  
-[out] Возвращает строку.
+ [in] Максимальное количество символов, которые может содержать буфер предоставленное пользователем.
 
-[Только в C++], `rgString` — это указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов) в размер.
+`rgString`
 
-`pceltFetched`  
-[out] Где возвращается число символов, фактически хранятся в буфере. (Может быть `NULL` в C++.)
+ [out] Возвращает строку.
+
+
+ [Только в C++], `rgString` — это указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов) в размер.
+
+`pceltFetched`
+
+ [out] Где возвращается число символов, фактически хранятся в буфере. (Может быть `NULL` в C++.)
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -85,6 +89,6 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 ```
 
 ## <a name="see-also"></a>См. также
-[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

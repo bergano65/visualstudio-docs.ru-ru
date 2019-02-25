@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::SetValue | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::SetValue
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9b3983f3d6cab2525c391153457d362d2ad05
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038400"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692661"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Задает значение объекта из последовательных последовательность байтов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT SetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
-);  
-```  
-  
-```csharp  
-int SetValue(  
-   byte[] pValue,   
-   uint   nSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pValue`  
- [in] Массив байтов, представляющий новое значение.  
-  
- `nSize`  
- [in] Размер значения в байтах.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Значения в массиве копируются в это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта, заменив существующие значения. Размер нового значения может быть больше или меньше, чем существующее. Это `IDebugObject` не может быть пустой ссылкой.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)
+Задает значение объекта из последовательных последовательность байтов.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT SetValue( 
+   BYTE* pValue,
+   UINT  nSize
+);
+```
+
+```csharp
+int SetValue(
+   byte[] pValue,
+   uint   nSize
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pValue`
+
+ [in] Массив байтов, представляющий новое значение.
+
+ `nSize`
+
+ [in] Размер значения в байтах.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Значения в массиве копируются в это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта, заменив существующие значения. Размер нового значения может быть больше или меньше, чем существующее. Это `IDebugObject` не может быть пустой ссылкой.
+
+## <a name="see-also"></a>См. также
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

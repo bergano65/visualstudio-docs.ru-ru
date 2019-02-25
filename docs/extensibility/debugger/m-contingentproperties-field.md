@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a73afb353a418d55d741421a2f28333db9b57281
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bfbcfcbca544694fa1a8db95d23a006e45f89bbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976265"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679558"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties field
-Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.  
-  
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Сборка:** mscorlib (в *mscorlib.dll*)  
-  
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```csharp  
-.field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties  
-```  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="see-also"></a>См. также  
- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
+Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.
+
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Сборка:** mscorlib (в *mscorlib.dll*)
+
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+
+## <a name="syntax"></a>Синтаксис
+
+```csharp
+.field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties
+```
+
+## <a name="remarks"></a>Примечания
+
+## <a name="see-also"></a>См. также
+- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

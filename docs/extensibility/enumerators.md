@@ -10,41 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e57f11f61a1bcb2372a07e34167ecacd324067c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37f469ecc0ae097592a128b30a6a6f189d58d94b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037802"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689750"
 ---
-# <a name="enumerators"></a>Перечислители
-В этом разделе перечислены типы данных перечислителя в API подключаемого модуля управления источник, подключаемый модуль системы управления версиями необходимо знать.  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Код команды](../extensibility/command-code-enumerator.md)  
- Перечисляет параметры для [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md) функции.  
-  
- [Сообщение](../extensibility/message-enumerator.md)  
- Перечисляет флаги, используемые для печати обратного вызова, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
-  
- [Код состояния файла](../extensibility/file-status-code-enumerator.md)  
- Содержит именованные константы, определяющие состояние файла в системе управления версиями.  
-  
- [Код состояния каталога](../extensibility/directory-status-code-enumerator.md)  
- Содержит именованные константы, определяющие состояние каталога в системе управления версиями.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Определяет пакет SDK подключаемого модуля управления источника и описывает включаемые ресурсы.  
-  
- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Запрашивает у пользователя Дополнительные параметры для данной команды.  
-  
- [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.  
-  
- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.  
-  
- [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)  
- Предоставляет полный список всех элементов в API подключаемых модулей управления источника.
+# <a name="enumerators"></a>Перечислители.
+В этом разделе перечислены типы данных перечислителя в API подключаемого модуля управления источник, подключаемый модуль системы управления версиями необходимо знать.
+
+## <a name="in-this-section"></a>Содержание раздела
+- [Команда кода](../extensibility/command-code-enumerator.md) перечисляет параметры для [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md) функции.
+
+- [Сообщение](../extensibility/message-enumerator.md) перечисляет флаги, используемые для печати обратного вызова, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+
+- [Файл состояния код](../extensibility/file-status-code-enumerator.md) Contains, именованных констант, определяющих состояние файла в системе управления версиями.
+
+- [Код состояния Directory](../extensibility/directory-status-code-enumerator.md) Contains, с именем константы, определяющие состояние каталога в системе управления версиями.
+
+## <a name="related-sections"></a>Связанные разделы
+- [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md) SDK подключаемого модуля управления источника определяет и описывает включаемые ресурсы.
+
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) запрашивает у пользователя Дополнительные параметры для данной команды.
+
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.
+
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.
+
+- [Подключаемые модули управления источника](../extensibility/source-control-plug-ins.md) полный список всех элементов в API подключаемых модулей управления источника.

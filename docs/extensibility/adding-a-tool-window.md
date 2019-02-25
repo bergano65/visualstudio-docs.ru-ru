@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317137"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709945"
 ---
 # <a name="add-a-tool-window"></a>Добавление окна инструментов
 В этом пошаговом руководстве вы узнаете, как создать окно инструментов и интегрировать его в Visual Studio одним из следующих способов:
@@ -277,4 +277,4 @@ public System.Windows.Controls.MediaElement MediaPlayer
     Вы должны услышать звук колокольчика.
 
 ## <a name="see-also"></a>См. также
-[Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

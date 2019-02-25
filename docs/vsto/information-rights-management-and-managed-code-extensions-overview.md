@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbe61b1b9ca43b9c3e4e6d5bcdf82dd2b5e1438a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 109f6b85653a842f7c6fc9ce2d2c09b74113bbc7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876048"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641251"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Управление правами и общие сведения о расширениях управляемого кода
-  Microsoft Office Word и Microsoft Office Excel предоставляют управления правами (IRM), это функция, которая может помочь предотвратить несанкционированного просмотра и изменения конфиденциальной информации. Дополнительные сведения о том, как работает управление правами см.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>Выполните код программной части документов с ограниченными разрешениями  
- Если решение содержит документ или книгу, IRM, по умолчанию, Word и Excel не допускают выполнение кода. Если вы являетесь автором документа или иметь полный доступ, можно изменить значение по умолчанию, что решение. Дополнительные сведения см. в разделе [Как Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
-  
- IRM не позволяет <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> для извлечения или управления данными, которые кэшируются в документе.  
-  
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Конечным пользователям отменять разрешения для документов с помощью расширений управляемого кода  
- Любой пользователь, у кого есть полный доступ к документу или книге в решении можно использовать IRM для ограничения разрешений. Например если конечный пользователь в бухгалтерии использует решение, которое автоматически заполняет лист с данными из базы данных, этот пользователь может потребоваться разрешить изменить доступ только к сотрудникам своего отдела и другим пользователям доступ на чтение. Когда пользователь добавляет ограниченные разрешения, по умолчанию не может выполняться кода программной части листа и листа не заполняется данными.  
-  
- Чтобы исправить эту проблему, кто-то доступа к документу или книге необходимо изменить настройки разрешений по умолчанию, обеспечивающие программный доступ к объектной модели. Дополнительные сведения см. в разделе [Как Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
-  
-## <a name="see-also"></a>См. также  
- [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)   
- [Безопасные решения Office](../vsto/securing-office-solutions.md)   
- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
+  Microsoft Office Word и Microsoft Office Excel предоставляют управления правами (IRM), это функция, которая может помочь предотвратить несанкционированного просмотра и изменения конфиденциальной информации. Дополнительные сведения о том, как работает управление правами см.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>Выполните код программной части документов с ограниченными разрешениями
+ Если решение содержит документ или книгу, IRM, по умолчанию, Word и Excel не допускают выполнение кода. Если вы являетесь автором документа или иметь полный доступ, можно изменить значение по умолчанию, что решение. Дополнительные сведения см. в разделе [Как Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+
+ IRM не позволяет <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> для извлечения или управления данными, которые кэшируются в документе.
+
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Конечным пользователям отменять разрешения для документов с помощью расширений управляемого кода
+ Любой пользователь, у кого есть полный доступ к документу или книге в решении можно использовать IRM для ограничения разрешений. Например если конечный пользователь в бухгалтерии использует решение, которое автоматически заполняет лист с данными из базы данных, этот пользователь может потребоваться разрешить изменить доступ только к сотрудникам своего отдела и другим пользователям доступ на чтение. Когда пользователь добавляет ограниченные разрешения, по умолчанию не может выполняться кода программной части листа и листа не заполняется данными.
+
+ Чтобы исправить эту проблему, кто-то доступа к документу или книге необходимо изменить настройки разрешений по умолчанию, обеспечивающие программный доступ к объектной модели. Дополнительные сведения см. в разделе [Как Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+
+## <a name="see-also"></a>См. также
+- [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)
+- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)
+- [Безопасные решения Office](../vsto/securing-office-solutions.md)
+- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)
+- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)

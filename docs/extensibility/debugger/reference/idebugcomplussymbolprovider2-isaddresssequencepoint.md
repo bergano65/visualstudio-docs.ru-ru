@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41d33f95e6839e8def5915388972a66284f632a2
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412777"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717979"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Определяет, является ли адрес отладки с указанной точкой следования.
@@ -36,8 +36,9 @@ int IsAddressSequencePoint(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pAddress`  
-[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+`pAddress`
+
+ [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если адрес отладки является точкой следования, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.
@@ -84,4 +85,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

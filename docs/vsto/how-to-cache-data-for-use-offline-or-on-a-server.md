@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Кэшировать данные для использования в автономном режиме или на сервере
+title: Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873748"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636519"
 ---
-# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Как выполнить Кэшировать данные для использования в автономном режиме или на сервере
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных должен кэшироваться в документе, чтобы он был доступен вне сети. Это также позволяет для данных в документе, чтобы управляться другой код, когда документ хранится на сервере.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -60,4 +60,8 @@ ms.locfileid: "54873748"
 4.  В **свойства** окне **модификаторы** свойства **открытый** (по умолчанию, это **внутренний**).
 
 ## <a name="see-also"></a>См. также
- [Кэширование данных](../vsto/caching-data.md) [как: Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [как: Кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md) [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md) [сохранения данных](../data-tools/saving-data.md)
+- [Кэширование данных](../vsto/caching-data.md)
+- [Практическое руководство. Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Практическое руководство. Кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Доступ к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Сохранение данных](../data-tools/saving-data.md)

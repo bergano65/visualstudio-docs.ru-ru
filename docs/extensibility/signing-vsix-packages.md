@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2805c2ecaff3704d96e9ebac176d96a4d820551
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 952195ab33b9a7e35265f5ecf40a8de3cf958fb3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959805"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720592"
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
-Расширения сборки не обязательно должны быть подписаны, прежде чем они могут работать в Visual Studio, но рекомендуется сделать это.  
-  
- Если вы хотите защитить ваше расширение и убедитесь, что оно не было изменено, можно добавить цифровую подпись в пакет VSIX. При подписании VSIX, установщик VSIX отобразит сообщение о том, что он подписан, а также дополнительные сведения о сама подпись. Если содержимое VSIX были изменены, а VSIX снова не подписана, установщик VSIX покажет, что подпись не является допустимым. Установка не прекращается, но пользователь получает предупреждение.  
-  
+Расширения сборки не обязательно должны быть подписаны, прежде чем они могут работать в Visual Studio, но рекомендуется сделать это.
+
+ Если вы хотите защитить ваше расширение и убедитесь, что оно не было изменено, можно добавить цифровую подпись в пакет VSIX. При подписании VSIX, установщик VSIX отобразит сообщение о том, что он подписан, а также дополнительные сведения о сама подпись. Если содержимое VSIX были изменены, а VSIX снова не подписана, установщик VSIX покажет, что подпись не является допустимым. Установка не прекращается, но пользователь получает предупреждение.
+
 > [!IMPORTANT]
->  Начиная с Visual Studio 2015, подписываются с использованием ничего, кроме SHA256 шифрование пакетов VSIX будет определяться как имеющий недопустимую подпись. Установка VSIX не блокируется, но пользователь отображается предупреждение.  
-  
-## <a name="signing-a-vsix-with-vsixsigntool"></a>Подписи VSIX с VSIXSignTool  
- SHA256 шифрование, подписи средство, доступное из [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) на сайте nuget.org в [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).  
-  
-#### <a name="to-use-the-vsixsigntool"></a>Чтобы использовать VSIXSignTool  
-  
-1. Добавление в проект VSIX.  
-  
-2. Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **добавить &#124; управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении NuGet пакетов см. в разделе [документации по NuGet](/NuGet) и [пользовательский Интерфейс диспетчера пакетов](/NuGet/Tools/Package-Manager-UI) разделы.  
-  
-3. Поиск VSIXSignTool из VisualStudioExtensibility и установите пакет NuGet.  
-  
-4. Теперь можно запустить VSIXSignTool из расположения локальные пакеты проекта. См. справку командной строки средства для подписывания сценария (VSIXSignTool.exe /?).  
-  
-   Например подписать с помощью сертификата, защищенный файл пароля:  
-  
-   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
-  
-## <a name="see-also"></a>См. также  
- [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+>  Начиная с Visual Studio 2015, подписываются с использованием ничего, кроме SHA256 шифрование пакетов VSIX будет определяться как имеющий недопустимую подпись. Установка VSIX не блокируется, но пользователь отображается предупреждение.
+
+## <a name="signing-a-vsix-with-vsixsigntool"></a>Подписи VSIX с VSIXSignTool
+ SHA256 шифрование, подписи средство, доступное из [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) на сайте nuget.org в [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+
+#### <a name="to-use-the-vsixsigntool"></a>Чтобы использовать VSIXSignTool
+
+1. Добавление в проект VSIX.
+
+2. Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **добавить &#124; управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении NuGet пакетов см. в разделе [документации по NuGet](/NuGet) и [пользовательский Интерфейс диспетчера пакетов](/NuGet/Tools/Package-Manager-UI) разделы.
+
+3. Поиск VSIXSignTool из VisualStudioExtensibility и установите пакет NuGet.
+
+4. Теперь можно запустить VSIXSignTool из расположения локальные пакеты проекта. См. справку командной строки средства для подписывания сценария (VSIXSignTool.exe /?).
+
+   Например подписать с помощью сертификата, защищенный файл пароля:
+
+   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>
+
+## <a name="see-also"></a>См. также
+- [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

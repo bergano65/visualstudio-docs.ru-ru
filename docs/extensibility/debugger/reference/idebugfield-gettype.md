@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetType | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetType
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47ae50baf0ea906815a0a95b8eccb3668ec7c40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8887be18d59d331913a1978d915b91f9c996b8f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007568"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692168"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
-Этот метод возвращает тип поля.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetType(   
-   IDebugField** ppType  
-);  
-```  
-  
-```csharp  
-int GetType(  
-   out IDebugField ppType  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppType`  
- [out] Возвращает тип поля, что и другой [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Этот метод возвращает тип поля.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetType( 
+   IDebugField** ppType
+);
+```
+
+```csharp
+int GetType(
+   out IDebugField ppType
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppType`
+
+ [out] Возвращает тип поля, что и другой [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

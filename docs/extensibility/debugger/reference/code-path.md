@@ -1,7 +1,7 @@
 ---
 title: CODE_PATH | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CODE_PATH
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9de8784f568965c1502565971af67be084f95a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4e09cd77308f83c2b9fb1b9cba70076ad797eb2e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317397"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714952"
 ---
 # <a name="codepath"></a>CODE_PATH
 Описывает вызов метода или функции.
@@ -39,11 +39,9 @@ public struct CODE_PATH {
 ```
 
 ## <a name="members"></a>Участники
-bstrName  
-Имя пути кода.
+bstrName имя пути кода.
 
-pCode  
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий, где в код, чтобы шаг с заходом в функцию.
+pCode [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий, где в код, чтобы шаг с заходом в функцию.
 
 ## <a name="remarks"></a>Примечания
 Эта структура используется для реализации, шаг с заходом в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущего расположения в отлаживаемой программы. Эта структура представляет один такой вызов.
@@ -56,6 +54,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)  
-[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

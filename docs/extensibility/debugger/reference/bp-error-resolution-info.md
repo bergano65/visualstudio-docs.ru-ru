@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_RESOLUTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03742dc00f0d42066eb80adfef6946904cae1d77
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317111"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691206"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Описание разрешения ошибки точки останова, включая расположение, программы и потока.
@@ -47,23 +47,17 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>Участники
-`dwFields`  
-Сочетание значений из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определяющее, вы заполните все поля этой структуры.
+`dwFields` Сочетание значений из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определяющее, вы заполните все поля этой структуры.
 
-`bpResLocation`  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, указывающий положение точки останова разрешения.
+`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, указывающий положение точки останова разрешения.
 
-`pProgram`  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором произошла ошибка точки останова.
+`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором произошла ошибка точки останова.
 
-`pThread`  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, на котором выполняется приложение, вызвавшего ошибку точки останова.
+`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, на котором выполняется приложение, вызвавшего ошибку точки останова.
 
-`bstrMessage`  
-Строка, содержащая предупреждения или ошибки сообщения, полученные в результате Устранение этой ошибки.
+`bstrMessage` Строка, содержащая предупреждения или ошибки сообщения, полученные в результате Устранение этой ошибки.
 
-`dwType`  
-Значение из [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) перечисление, указывающее тип ошибки точки останова.
+`dwType` Значение из [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) перечисление, указывающее тип ошибки точки останова.
 
 ## <a name="remarks"></a>Примечания
 Эта структура возвращается из [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод.
@@ -76,10 +70,10 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)  
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)

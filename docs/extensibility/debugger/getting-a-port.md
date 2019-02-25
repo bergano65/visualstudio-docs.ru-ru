@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315720"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695990"
 ---
 # <a name="get-a-port"></a>Назначить порт
 Порт представляет подключение к компьютеру, на которой выполняются процессы. Машины может быть на локальном компьютере или удаленном компьютере (который может возможно использоваться операционную систему не под управлением Windows, см. в разделе [порты](../../extensibility/debugger/ports.md) Дополнительные сведения).
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>См. также
-[Регистрация программы](../../extensibility/debugger/registering-the-program.md)  
-[Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[Поставщики портов](../../extensibility/debugger/port-suppliers.md)  
-[Порты](../../extensibility/debugger/ports.md)
+- [Регистрация программы](../../extensibility/debugger/registering-the-program.md)
+- [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Поставщики портов](../../extensibility/debugger/port-suppliers.md)
+- [Порты](../../extensibility/debugger/ports.md)

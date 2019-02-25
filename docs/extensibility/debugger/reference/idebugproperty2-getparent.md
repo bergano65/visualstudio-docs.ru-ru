@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetParent | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetParent
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1db6acb0f60dac726717ebaccae0837e620dd9ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30fa28ba52d40698447c6607be4b694466bb6127
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991467"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680156"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
-Возвращает свойство родительского свойства.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetParent (   
-   IDebugProperty2** ppParent  
-);  
-```  
-  
-```csharp  
-int GetParent (   
-   out IDebugProperty2 ppParent  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppParent`  
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий родительский объект свойства.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `S_GETPARENT_NO_PARENT` Если родительский элемент отсутствует.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Возвращает свойство родительского свойства.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetParent ( 
+   IDebugProperty2** ppParent
+);
+```
+
+```csharp
+int GetParent ( 
+   out IDebugProperty2 ppParent
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppParent`
+
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий родительский объект свойства.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `S_GETPARENT_NO_PARENT` Если родительский элемент отсутствует.
+
+## <a name="see-also"></a>См. также
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

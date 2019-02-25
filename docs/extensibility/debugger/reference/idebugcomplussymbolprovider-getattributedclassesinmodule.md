@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d6491560eecdae58fa5e62b13847f2cc390a47
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413401"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719027"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Извлекает классы, с помощью указанного атрибута в указанный модуль.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesinModule (
     ULONG32            ulAppDomainID,
     GUID               guidModule,
@@ -33,8 +32,7 @@ HRESULT GetAttributedClassesinModule (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesinModule (
     uint                 ulAppDomainID,
     Guid                 guidModule,
@@ -44,17 +42,21 @@ int GetAttributedClassesinModule (
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
 
-`pstrAttribute`  
-[in] Строка атрибута.
+`guidModule`
 
-`ppEnum`  
-[out] Возвращает перечисление классов с атрибутами.
+ [in] Уникальный идентификатор модуля.
+
+`pstrAttribute`
+
+ [in] Строка атрибута.
+
+`ppEnum`
+
+ [out] Возвращает перечисление классов с атрибутами.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -151,4 +153,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

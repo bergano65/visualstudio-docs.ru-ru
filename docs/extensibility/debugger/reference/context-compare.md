@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412842"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689178"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Указывает критерии для сравнения двух контекстах памяти.
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Участники
-CONTEXT_EQUAL  
-Найдите первый контекст памяти в списке, равный целевой контекст памяти.
+CONTEXT_EQUAL найти первый контекст памяти в списке, равный целевой контекст памяти.
 
-CONTEXT_LESS_THAN  
-Найти первый контекст памяти в списке, который меньше, чем целевой контекст памяти.
+CONTEXT_LESS_THAN найти первый контекст памяти в списке, который меньше, чем целевой контекст памяти.
 
-CONTEXT_GREATER_THAN  
-Найти первый контекст памяти в списке, который больше, чем целевой контекст памяти.
+CONTEXT_GREATER_THAN найти первый контекст памяти в списке, который больше, чем целевой контекст памяти.
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-Найти первый контекст памяти в списке, которое меньше или равно целевой контекст памяти.
+CONTEXT_LESS_THAN_OR_EQUAL найти первый контекст памяти в списке, который меньше или равен целевой контекст памяти.
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-Найти первый контекст памяти в списке, который больше или равна целевой контекст памяти.
+CONTEXT_GREATER_THAN_OR_EQUAL найти первый контекст памяти в списке, который больше или равна целевой контекст памяти.
 
-CONTEXT_SAME_SCOPE  
-Найти первый контекст памяти в списке, который находится в той же области, что целевой контекст памяти.
+CONTEXT_SAME_SCOPE найти первый контекст памяти в списке, который находится в той же области, что целевой контекст памяти.
 
-CONTEXT_SAME_FUNCTION  
-Найти первый контекст памяти в списке, который находится в ту же функцию, что целевой области памяти.
+CONTEXT_SAME_FUNCTION найти первый контекст памяти в списке, который находится в ту же функцию, что целевой области памяти.
 
-CONTEXT_SAME_MODULE  
-Найти первый контекст памяти в списке, который находится в одном модуле с целевой контекст памяти.
+CONTEXT_SAME_MODULE найти первый контекст памяти в списке, который находится в одном модуле с целевой контекст памяти.
 
-CONTEXT_SAME_PROCESS  
-Найдите первый контекст памяти в списке, в том же процессе, что целевой контекст памяти.
+CONTEXT_SAME_PROCESS найти первый контекст памяти в списке, в том же процессе, что целевой контекст памяти.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) метод.
@@ -94,5 +85,5 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

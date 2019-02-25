@@ -1,7 +1,7 @@
 ---
 title: ATTACH_REASON | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ATTACH_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7acd5b87288365cde43b2eb8f460b52048dcf36f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318712"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688268"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Указывает причину для обработчика отладки (DE) для присоединения к программе узла.
@@ -42,14 +42,11 @@ public enum enum_ATTACH_REASON {
 ```
 
 ## <a name="members"></a>Участники
-ATTACH_REASON_AUTO  
-Подключите, так как процесс, в настоящее время находится в режиме отладки.
+ATTACH_REASON_AUTO присоединить, так как процесс, в настоящее время находится в режиме отладки.
 
-ATTACH_REASON_LAUNCH  
-Подключите, так как процесс был запущен.
+ATTACH_REASON_LAUNCH присоединить, так как процесс был запущен.
 
-ATTACH_REASON_USER  
-Подключите из-за запроса пользователя.
+ATTACH_REASON_USER подключить из-за запроса пользователя.
 
 ## <a name="remarks"></a>Примечания
 Эти значения используются в качестве параметра [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) и [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) методы.
@@ -62,6 +59,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
-[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

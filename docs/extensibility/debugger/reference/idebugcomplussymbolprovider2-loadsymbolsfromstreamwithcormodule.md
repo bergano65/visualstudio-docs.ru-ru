@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412803"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722841"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Загрузить отладочные символы из заданного потока данных **ICorDebugModule** объекта.
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
 
-`baseAddress`  
-[in] Базовый адрес памяти.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Объект, содержащий метаданные символ.
+ [in] Уникальный идентификатор модуля.
 
-`pUnkCorDebugModule`  
-[in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`pStream`  
-[in] Поток данных, который содержит отладочные символы для загрузки.
+ [in] Базовый адрес памяти.
+
+`pUnkMetadataImport`
+
+ [in] Объект, содержащий метаданные символ.
+
+`pUnkCorDebugModule`
+
+ [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`
+
+ [in] Поток данных, который содержит отладочные символы для загрузки.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

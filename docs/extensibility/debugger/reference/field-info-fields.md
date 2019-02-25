@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cab1d06c868f0236d1d24c186af705e9adab717e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317475"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710010"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Указывает, какую информацию нужно извлечь о [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
@@ -48,17 +48,13 @@ public enum enum_FIELD_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>Участники
-FIF_FULLNAME  
-Инициализация и использование `bstrFullName` в [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры.
+FIF_FULLNAME Initialize и использование `bstrFullName` в [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры.
 
-FIF_NAME  
-Инициализация и использование `bstrName` в `FIELD_INFO` структуры.
+FIF_NAME Initialize и использование `bstrName` в `FIELD_INFO` структуры.
 
-FIF_TYPE  
-Инициализация и использование `bstrType` в `FIELD_INFO` структуры.
+FIF_TYPE Initialize и использование `bstrType` в `FIELD_INFO` структуры.
 
-FIF_MODIFIERS  
-Инициализация и использование `bstrModifiers` в `FIELD_INFO` структуры.
+FIF_MODIFIERS Initialize и использование `bstrModifiers` в `FIELD_INFO` структуры.
 
 ## <a name="remarks"></a>Примечания
 Эти значения также передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод, чтобы указать, какие поля из [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры должны быть инициализированы.
@@ -75,7 +71,7 @@ FIF_MODIFIERS
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

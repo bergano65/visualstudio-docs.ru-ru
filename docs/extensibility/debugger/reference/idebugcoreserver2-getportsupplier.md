@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::GetPortSupplier | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::GetPortSupplier
 helpviewer_keywords:
@@ -12,42 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c99e93a9a94011c6799c2ccc7bad2219a28c02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4c7219f3940eb101c652725b5d7a180206108b85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997992"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686149"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
-Получает поставщика конкретного порта.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetPortSupplier(   
-   REFGUID               guidPortSupplier,  
-   IDebugPortSupplier2** ppPortSupplier  
-);  
-```  
-  
-```csharp  
-int GetPortSupplier(   
-   ref Guid                guidPortSupplier,  
-   out IDebugPortSupplier2 ppPortSupplier  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `guidPortSupplier`  
- [in] Идентификатор GUID поставщика порта, который требуется получить.  
-  
- `ppPortSupplier`  
- [out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) объект, представляющий поставщик нужный порт.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+Получает поставщика конкретного порта.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetPortSupplier( 
+   REFGUID               guidPortSupplier,
+   IDebugPortSupplier2** ppPortSupplier
+);
+```
+
+```csharp
+int GetPortSupplier( 
+   ref Guid                guidPortSupplier,
+   out IDebugPortSupplier2 ppPortSupplier
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `guidPortSupplier`
+
+ [in] Идентификатор GUID поставщика порта, который требуется получить.
+
+ `ppPortSupplier`
+
+ [out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) объект, представляющий поставщик нужный порт.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

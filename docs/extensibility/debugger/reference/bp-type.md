@@ -1,7 +1,7 @@
 ---
 title: BP_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f18d21485084351e639405dad946dff8be4c767a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315980"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711479"
 ---
 # <a name="bptype"></a>BP_TYPE
 Определяет точку останова в месте кода, — это расположение данных или — еще один тип точки останова.
@@ -44,17 +44,13 @@ public enum enum_BP_TYPE {
 ```
 
 ## <a name="members"></a>Участники
-BPT_NONE  
-Указывает тип точки останова не.
+BPT_NONE указывает не тип точки останова.
 
-BPT_CODE  
-Задает точку останова кода.
+BPT_CODE задает точку останова кода.
 
-BPT_DATA  
-Задает точку останова по данным.
+BPT_DATA задает точки останова по данным.
 
-BPT_SPECIAL  
-Задает точку останова, которая не является ни код, ни тип данных. Этот тип является устаревшим и не должны использоваться.
+Указывает BPT_SPECIAL введите точку останова, которая не является ни код, ни данных. Этот тип является устаревшим и не должны использоваться.
 
 ## <a name="remarks"></a>Примечания
 Переданный в качестве параметра для [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) и [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) методы.
@@ -67,6 +63,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

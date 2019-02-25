@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostMachineName_V7 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostMachineName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0228d718377f6bd43ae44b44fb44900e4526d3b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7b40d3350fb348afb654ae09785eb0956fb950bb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990710"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689075"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -40,8 +40,9 @@ int GetHostMachineName_V7 (
 
 #### <a name="parameters"></a>Параметры
 
-`pbstrHostMachineName`  
-[out] Возвращает имя компьютера, в котором выполняется программа.
+`pbstrHostMachineName`
+
+ [out] Возвращает имя компьютера, в котором выполняется программа.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
@@ -54,4 +55,4 @@ int GetHostMachineName_V7 (
 
 ## <a name="see-also"></a>См. также
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

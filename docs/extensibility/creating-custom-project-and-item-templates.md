@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb08af2edeea8650303b8e954bc7d3b42ef2641
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 733ffa76fdc24639d0e379b7e00a4a8c72a5f40e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012252"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714326"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Создание пользовательских шаблонов проектов и элементов
 
@@ -84,5 +84,5 @@ ms.locfileid: "55012252"
 
 ## <a name="see-also"></a>См. также
 
-[Справочник по Visual Studio шаблон](../ide/creating-project-and-item-templates.md)
-[пакеты NuGet в шаблонах Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Справочник по шаблонов Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Пакеты NuGet в шаблонах Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

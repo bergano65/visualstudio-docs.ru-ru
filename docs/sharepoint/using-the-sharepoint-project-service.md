@@ -13,38 +13,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90df435e2c6c20b43d12169b32780eefc22c1d70
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871550"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619983"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Использование службы проектов SharePoint
-  Система проектов SharePoint включает службу Project, которую можно использовать для выполнения задач, относящихся к системе проектов. Служба Project — это объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.  
-  
- Доступ к службе Project SharePoint можно получить из любого расширения инструментов SharePoint. Доступ к ней также можно получить из других типов расширений Visual Studio, например из надстроек и пакетов VSPackages. Дополнительные сведения см. в разделе [Как Службе project SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
-  
+  Система проектов SharePoint включает службу Project, которую можно использовать для выполнения задач, относящихся к системе проектов. Служба Project — это объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.
+
+ Доступ к службе Project SharePoint можно получить из любого расширения инструментов SharePoint. Доступ к ней также можно получить из других типов расширений Visual Studio, например из надстроек и пакетов VSPackages. Дополнительные сведения см. в разделе [Как Службе project SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
+
 ## <a name="project-service-features"></a>Возможности службы Project
- В следующей таблице перечислены задачи, которые можно выполнять с помощью службы Project SharePoint и используемый метод или свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> для выполнения каждой из задач.  
-  
-|Задача|Используемый член|  
-|----------|-------------------|  
-|Доступ к любому проекту SharePoint, открытому в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A>.|  
-|Доступ ко всем доступным типам элементов проектов SharePoint (включая встроенные и пользовательские типы элементов проекта).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A>.|  
-|Доступ ко всем шагам развертывания, которые доступны для проектов SharePoint (включая встроенные и пользовательские шаги развертывания).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A>.|  
-|Доступ к событиям, возникающим, когда разработчик выполняет рефакторинг кода в проекте SharePoint.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A>.|  
-|Выполнение пользовательской *команды SharePoint* , обращающейся к объектной модели сервера SharePoint. Дополнительные сведения о командах SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>.|  
-|Преобразование типа из системы проектов SharePoint в тип из объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. Дополнительные сведения см. в разделе [преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|Метод <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>.|  
-|Записывать сообщения в **вывода** окна или **список ошибок** окно в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A>.|  
-|Доступ к другим службам, доступным в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A>.|  
-|Получение пути к папке установки локального сайта SharePoint, который используется для отладки решения.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A>.|  
-|Определение того, что именно установлено на компьютере: [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] или [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)].|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A>.|  
-|Проверка компонента или пакета решения SharePoint.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A>.|  
-  
+ В следующей таблице перечислены задачи, которые можно выполнять с помощью службы Project SharePoint и используемый метод или свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> для выполнения каждой из задач.
+
+|Задача|Используемый член|
+|----------|-------------------|
+|Доступ к любому проекту SharePoint, открытому в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A>.|
+|Доступ ко всем доступным типам элементов проектов SharePoint (включая встроенные и пользовательские типы элементов проекта).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A>.|
+|Доступ ко всем шагам развертывания, которые доступны для проектов SharePoint (включая встроенные и пользовательские шаги развертывания).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A>.|
+|Доступ к событиям, возникающим, когда разработчик выполняет рефакторинг кода в проекте SharePoint.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A>.|
+|Выполнение пользовательской *команды SharePoint* , обращающейся к объектной модели сервера SharePoint. Дополнительные сведения о командах SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>.|
+|Преобразование типа из системы проектов SharePoint в тип из объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. Дополнительные сведения см. в разделе [преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|Метод <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>.|
+|Записывать сообщения в **вывода** окна или **список ошибок** окно в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A>.|
+|Доступ к другим службам, доступным в Visual Studio.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A>.|
+|Получение пути к папке установки локального сайта SharePoint, который используется для отладки решения.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A>.|
+|Определение того, что именно установлено на компьютере: [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] или [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)].|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A>.|
+|Проверка компонента или пакета решения SharePoint.|Свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A>.|
+
 ## <a name="see-also"></a>См. также
- [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Практическое руководство. Получить службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
- [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Практическое руководство. Доступ к службе из объекта DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
+- [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+- [Практическое руководство. Получить службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Практическое руководство. Доступ к службе из объекта DTE](https://msdn.microsoft.com/library/bb166401.aspx)

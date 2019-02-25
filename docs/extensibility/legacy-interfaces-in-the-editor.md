@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982550"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694417"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Устаревшие интерфейсы в редакторе
-В редакторе Visual Studio доступны из устаревшие интерфейсы. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочек*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Ваш код будет демонстрировать лучшие показатели и использовании новых технологий, таких как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).  
+В редакторе Visual Studio доступны из устаревшие интерфейсы. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочек*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Ваш код будет демонстрировать лучшие показатели и использовании новых технологий, таких как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).
 
-## <a name="related-topics"></a>См. также  
+## <a name="related-topics"></a>См. также
 
-| Заголовок | Описание |
+| Заголовок | Описание: |
 | - | - |
 | [Адаптировать устаревшего кода в редакторе](../extensibility/adapting-legacy-code-to-the-editor.md) | Объясняется, как адаптировать код в новый редактор. |
 | [Нового или измененного поведения с помощью редактора адаптеров](../extensibility/new-or-changed-behavior-with-editor-adapters.md) | Объясняет, как поведение редактора адаптеров отличается от более ранних версий редактора. |

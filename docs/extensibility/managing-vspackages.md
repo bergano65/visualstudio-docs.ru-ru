@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c44b31eb8f160695589dda79f19e10389490c38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944024"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694716"
 ---
 # <a name="manage-vspackages"></a>Управление пакетов VSPackage
-В большинстве случаев не нужно беспокоиться об управлении пакеты VSPackage, так как шаблоны проектов и элементов, зарегистрировать и автоматически загрузить пакет. Однако в некоторых случаях может потребоваться узнать чуть подробнее для пакета управления.  
-  
-## <a name="use-the-experimental-instance"></a>Использовать экспериментальный экземпляр  
- Чтобы узнать больше о экспериментальный экземпляр, см. в разделе [экспериментальный экземпляр](../extensibility/the-experimental-instance.md).  
-  
-## <a name="register-and-unregister-vspackages"></a>Регистрация и Отмена регистрации пакетов VSPackage  
- Чтобы узнать о регистрации и отмены регистрации пакетов VSPackage и других типах расширения, см. в разделе [регистрации и отмены регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
-  
-## <a name="load-a-vspackage"></a>Загрузка VSPackage  
- Пакеты VSPackage может быть присвоено автозагрузки, когда определенный CMDUICONTEXT GUID включен. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).  
-  
-## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме  
- `AsyncPackage` Класс обеспечивает загрузку пакета в фоновом потоке для повышения скорости отклика пользовательского интерфейса в Visual Studio. Дополнительные сведения см. в разделе [Как Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
-  
-## <a name="rule-based-ui-context-for-extensions"></a>Контекст пользовательского интерфейса на основе правил для расширений  
- Контексты пользовательского интерфейса на основе правил позволяет разработчикам расширений определить точные условия, при которых активируется контекст пользовательского интерфейса и загружаются связанные пакеты VSPackage. Дополнительные сведения см. в разделе [Как Использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
-  
-## <a name="diagnose-extension-performance"></a>Диагностика производительности расширения  
-Расширения могут повлиять на производительность загрузки для загрузки и решение. Узнайте, как вычисляется влияние расширения Visual Studio и как их можно проанализировать локально для тестирования, если расширение может отображаться как производительности, влияющие на расширение. Дополнительные сведения см. в разделе [Как Диагностика производительности расширения](how-to-diagnose-extension-performance.md). 
-  
-## <a name="troubleshoot-vspackages"></a>Устранение неполадок пакетов VSPackage  
- Найти методы устранения неполадок пакетов VSPackage, не загружаются или при возникновении ошибки: [Устранение неполадок пакетов VSPackage](../extensibility/troubleshooting-vspackages.md)  
-  
-## <a name="see-also"></a>См. также  
- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+В большинстве случаев не нужно беспокоиться об управлении пакеты VSPackage, так как шаблоны проектов и элементов, зарегистрировать и автоматически загрузить пакет. Однако в некоторых случаях может потребоваться узнать чуть подробнее для пакета управления.
+
+## <a name="use-the-experimental-instance"></a>Использовать экспериментальный экземпляр
+ Чтобы узнать больше о экспериментальный экземпляр, см. в разделе [экспериментальный экземпляр](../extensibility/the-experimental-instance.md).
+
+## <a name="register-and-unregister-vspackages"></a>Регистрация и Отмена регистрации пакетов VSPackage
+ Чтобы узнать о регистрации и отмены регистрации пакетов VSPackage и других типах расширения, см. в разделе [регистрации и отмены регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).
+
+## <a name="load-a-vspackage"></a>Загрузка VSPackage
+ Пакеты VSPackage может быть присвоено автозагрузки, когда определенный CMDUICONTEXT GUID включен. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).
+
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
+ `AsyncPackage` Класс обеспечивает загрузку пакета в фоновом потоке для повышения скорости отклика пользовательского интерфейса в Visual Studio. Дополнительные сведения см. в разделе [Как Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).
+
+## <a name="rule-based-ui-context-for-extensions"></a>Контекст пользовательского интерфейса на основе правил для расширений
+ Контексты пользовательского интерфейса на основе правил позволяет разработчикам расширений определить точные условия, при которых активируется контекст пользовательского интерфейса и загружаются связанные пакеты VSPackage. Дополнительные сведения см. в разделе [Как Использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).
+
+## <a name="diagnose-extension-performance"></a>Диагностика производительности расширения
+Расширения могут повлиять на производительность загрузки для загрузки и решение. Узнайте, как вычисляется влияние расширения Visual Studio и как их можно проанализировать локально для тестирования, если расширение может отображаться как производительности, влияющие на расширение. Дополнительные сведения см. в разделе [Как Диагностика производительности расширения](how-to-diagnose-extension-performance.md).
+
+## <a name="troubleshoot-vspackages"></a>Устранение неполадок пакетов VSPackage
+ Найти методы устранения неполадок пакетов VSPackage, не загружаются или при возникновении ошибки: [Устранение неполадок пакетов VSPackage](../extensibility/troubleshooting-vspackages.md)
+
+## <a name="see-also"></a>См. также
+- [Пакеты VSPackage](../extensibility/internals/vspackages.md)

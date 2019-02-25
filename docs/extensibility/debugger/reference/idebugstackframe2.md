@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce4112addee78c4df293bf49e1cb191e4bbcd18b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986947"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703946"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-Этот интерфейс представляет одним кадром стека в стеке вызова в конкретном потоке.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-IDebugStackFrame2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс для представления кадр стека.  
-  
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) извлекаемого [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) интерфейс. Вызовите [Далее](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) извлекаемого [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуру, содержащую `IDebugStackFrame2` интерфейс.  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugStackFrame2`.  
-  
-|Метод|Описание|  
-|------------|-----------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Возвращает контекст кода для этого кадра стека.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Получает контекст документа для этого кадра стека.|  
-|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Возвращает имя кадра стека.|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Возвращает описание кадра стека.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Получает представление зависит от компьютера диапазона физических адресов, связанных с кадром стека.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Получает контекст вычисления для выполнения вычисления выражения в контексте текущего кадра стека и потока.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Возвращает язык, связанный с кадром стека.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Возвращает описание свойства, связанные с кадром стека.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Создает перечислитель для стека свойства рамки.|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Получает поток, связанный с кадром стека.|  
-  
-## <a name="remarks"></a>Примечания  
- Этот интерфейс получается, только если отлаживаемая программа остановлена в точке останова (либо из-за заданное пользователем точки останова или исключение). Из этого интерфейса можно получить контексте выражения будут оцениваться выражения, список регистров могут быть возвращены или можно получить и изучить стек вызовов.  
-  
-## <a name="requirements"></a>Требования  
- Header: msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>См. также  
- [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
+Этот интерфейс представляет одним кадром стека в стеке вызова в конкретном потоке.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+IDebugStackFrame2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс для представления кадр стека.
+
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+ Вызовите [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) извлекаемого [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) интерфейс. Вызовите [Далее](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) извлекаемого [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуру, содержащую `IDebugStackFrame2` интерфейс.
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+ В следующей таблице показаны методы `IDebugStackFrame2`.
+
+|Метод|Описание|
+|------------|-----------------|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Возвращает контекст кода для этого кадра стека.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Получает контекст документа для этого кадра стека.|
+|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Возвращает имя кадра стека.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Возвращает описание кадра стека.|
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Получает представление зависит от компьютера диапазона физических адресов, связанных с кадром стека.|
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Получает контекст вычисления для выполнения вычисления выражения в контексте текущего кадра стека и потока.|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Возвращает язык, связанный с кадром стека.|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Возвращает описание свойства, связанные с кадром стека.|
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Создает перечислитель для стека свойства рамки.|
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Получает поток, связанный с кадром стека.|
+
+## <a name="remarks"></a>Примечания
+ Этот интерфейс получается, только если отлаживаемая программа остановлена в точке останова (либо из-за заданное пользователем точки останова или исключение). Из этого интерфейса можно получить контексте выражения будут оцениваться выражения, список регистров могут быть возвращены или можно получить и изучить стек вызовов.
+
+## <a name="requirements"></a>Требования
+ Header: msdbg.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>См. также
+- [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)

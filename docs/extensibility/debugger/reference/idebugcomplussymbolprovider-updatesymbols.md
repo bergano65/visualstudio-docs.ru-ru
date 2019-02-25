@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413297"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678297"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Обновляет отладочные символы в память из указанного потока данных.
@@ -40,14 +40,17 @@ int UpdateSymbols (
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
 
-`pUpdateStream`  
-[in] Поток данных, содержащий обновленные отладочные символы.
+`guidModule`
+
+ [in] Уникальный идентификатор модуля.
+
+`pUpdateStream`
+
+ [in] Поток данных, содержащий обновленные отладочные символы.
 
 ## <a name="example"></a>Пример
 В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
@@ -92,4 +95,4 @@ Error:
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

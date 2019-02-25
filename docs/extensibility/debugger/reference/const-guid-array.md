@@ -1,7 +1,7 @@
 ---
 title: CONST_GUID_ARRAY | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONST_GUID_ARRAY
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40511cac0a6d731d451d1fb2e0e4c02d214297f7
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318541"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696068"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Структура, содержащая список `GUID`s.
@@ -39,11 +39,9 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>Участники
-dwCount  
-Число `GUID`s в `Members` массива.
+dwCount номер из `GUID`s в `Members` массива.
 
-Участники  
-Массив `GUID`s.
+Массив элементов `GUID`s.
 
 ## <a name="remarks"></a>Примечания
 Эта структура передается [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и возвращается из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) методы.
@@ -58,7 +56,7 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)  
-[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
-[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

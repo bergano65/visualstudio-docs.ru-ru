@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be0e07721e0f38db68bae2ff8a99aaf50b649b6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317852"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713871"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Преобразует адрес объекта или адрес памяти 64-разрядной памяти контекста.
@@ -40,14 +40,17 @@ int GetMemoryContext64 (
 ```
 
 #### <a name="parameters"></a>Параметры
-`pField`  
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.
+`pField`
 
-`uConstant`  
-[in] Адрес памяти 64-разрядной, например 0x50000000.
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.
 
-`ppMemCxt`  
-[out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.
+`uConstant`
+
+ [in] Адрес памяти 64-разрядной, например 0x50000000.
+
+`ppMemCxt`
+
+ [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -127,4 +130,4 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

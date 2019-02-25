@@ -1,7 +1,7 @@
 ---
 title: BP_PASSCOUNT_STYLE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_PASSCOUNT_STYLE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 373478bfcdac1ea8c34bc96c873df003e490dac1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315240"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686058"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Задает условие, связанное с числом pass точки останова, которая приводит к срабатыванию точки останова.
@@ -44,17 +44,13 @@ public enum enum_BP_PASSCOUNT_STYLE {
 ```
 
 ## <a name="members"></a>Участники
-BP_PASSCOUNT_NONE  
-Указывает стиль счетчика pass не точки останова.
+BP_PASSCOUNT_NONE указывает стиль счетчика pass не точки останова.
 
-BP_PASSCOUNT_EQUAL  
-Задает стиль счетчика pass точки останова равными. Точка останова срабатывает, когда число раз, когда достигается точка останова равно счетчик pass.
+BP_PASSCOUNT_EQUAL задает стиль счетчика pass точки останова равными. Точка останова срабатывает, когда число раз, когда достигается точка останова равно счетчик pass.
 
-BP_PASSCOUNT_EQUAL_OR_GREATER  
-Устанавливает стиль счетчика pass точку останова равно или больше. Точка останова срабатывает, если количество раз, когда достигается точка останова, равно или больше, чем число pass.
+BP_PASSCOUNT_EQUAL_OR_GREATER устанавливает стиль счетчика pass точку останова равно или больше. Точка останова срабатывает, если количество раз, когда достигается точка останова, равно или больше, чем число pass.
 
-BP_PASSCOUNT_MOD  
-Указывает число проходов остаток от деления. Например, если количество pass типа `BP_PASSCOUNT_MOD` и передайте значение счетчика равно 4, точка останова активируется каждый раз, когда число попаданий кратно 4.
+Указывает BP_PASSCOUNT_MOD остаток от деления число проходов. Например, если количество pass типа `BP_PASSCOUNT_MOD` и передайте значение счетчика равно 4, точка останова активируется каждый раз, когда число попаданий кратно 4.
 
 ## <a name="remarks"></a>Примечания
 Используется для `stylePassCount` членом [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, которая в свою очередь является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.
@@ -67,7 +63,7 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

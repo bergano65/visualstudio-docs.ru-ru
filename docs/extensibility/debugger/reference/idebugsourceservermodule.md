@@ -1,7 +1,7 @@
 ---
 title: IDebugSourceServerModule | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule interface
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
@@ -10,35 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2032620653b1e7733664ca40113dcb0cffd418f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c40a2da886b4e999649349d4af306295c87863ff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922109"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703803"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Представляет сведения об исходном сервере, содержащийся в PDB-файл.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-IDebugSourceServerModule : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется подсистемы отладчика и используемые пользовательским Интерфейсом отладчика.  
-  
-## <a name="methods"></a>Методы  
- В следующей таблице показаны методы `IDebugSourceServerModule`.  
-  
-|Метод|Описание|  
-|------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведения об исходном сервере.|  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
-  
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
-  
+Представляет сведения об исходном сервере, содержащийся в PDB-файл.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+IDebugSourceServerModule : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется подсистемы отладчика и используемые пользовательским Интерфейсом отладчика.
+
+## <a name="methods"></a>Методы
+ В следующей таблице показаны методы `IDebugSourceServerModule`.
+
+|Метод|Описание:|
+|------------|-----------------|
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведения об исходном сервере.|
+
+## <a name="requirements"></a>Требования
+ Заголовок: Msdbg.h
+
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

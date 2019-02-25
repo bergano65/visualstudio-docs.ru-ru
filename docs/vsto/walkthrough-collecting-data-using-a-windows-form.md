@@ -15,131 +15,131 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791c0221381696cfd587cfb65d8214bd50590729
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867199"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629967"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство. Сбор данных с помощью формы Windows
-  В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
- Хотя в этом пошаговом руководстве используется проект уровня документа для Excel, рассмотренная процедура также применима и к другим проектам Office.  
-  
-## <a name="prerequisites"></a>Предварительные требования  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
-  
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
-  
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
-  
-> [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="create-a-new-project"></a>Создание нового проекта  
- Первым шагом является создание проекта книги Excel.  
-  
-### <a name="to-create-a-new-project"></a>Создание нового проекта  
-  
-1.  Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
-  
-     Visual Studio открывает новую книгу Excel в конструкторе и добавляет проект **WinFormInput** в **обозреватель решений**.  
-  
-## <a name="add-a-namedrange-control-to-the-worksheet"></a>Добавление элемента управления NamedRange в лист  
-  
-### <a name="to-add-a-named-range-to-sheet1"></a>Добавление именованного диапазона в Sheet1  
-  
-1.  Выберите ячейку **A1** в `Sheet1`.  
-  
-2.  В поле **Имя** введите **formInput**.  
-  
-     Поле **Имя** находится слева от строки формул над столбцом **A** листа.  
-  
-3.  Нажмите клавишу **ВВОД**.  
-  
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> добавляется в ячейку **A1**. Видимые изменения на листе отсутствуют, но значение **formInput** появляется в поле **Имя** (над листом слева) и в окне **Свойства** при выборе ячейки **A1** .  
-  
-## <a name="add-a-windows-form-to-the-project"></a>Добавьте в проект форму Windows  
- Создайте форму Windows Form, чтобы запрашивать сведения у пользователя.  
-  
-### <a name="to-add-a-windows-form"></a>Добавление формы Windows Forms  
-  
-1. Выберите проект **WinFormInput** в **обозревателе решений**.  
-  
-2. В меню **Проект** выберите пункт **Добавить форму Windows**.  
-  
-3. Дайте этой форме имя **GetInputString.vb** или **GetInputString.cs**, а затем нажмите кнопку **Добавить**.  
-  
-    Новая форма откроется в конструкторе.  
-  
-4. Добавьте в форму <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> .  
-  
-5. Выберите кнопку, найдите свойство **Текст** в окне **Свойства** и измените текст на **ОК**.  
-  
-   Затем добавьте в `ThisWorkbook.vb` или `ThisWorkbook.cs` код для сбора информации от пользователя.  
-  
-## <a name="display-the-windows-form-and-collecting-information"></a>Отображение формы Windows и сбора информации  
- Создайте экземпляр формы Windows `GetInputString` и отобразите его, а затем запишите информацию от пользователя в ячейку листа.  
-  
-#### <a name="to-display-the-form-and-collect-information"></a>Отображение формы и сбор информации  
-  
-1. Щелкните правой кнопкой мыши файл **ThisWorkbook.vb** или **ThisWorkbook.cs** в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода**.  
-  
-2. В обработчике событий <xref:Microsoft.Office.Tools.Excel.Workbook.Open> `ThisWorkbook`добавьте следующий код для объявления переменной формы `GetInputString` , а затем отобразите эту форму.  
-  
-   > [!NOTE]  
-   >  В C# необходимо добавить обработчик событий, как показано в событии <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
-  
+  В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+ Хотя в этом пошаговом руководстве используется проект уровня документа для Excel, рассмотренная процедура также применима и к другим проектам Office.
+
+## <a name="prerequisites"></a>Предварительные требования
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+
+-   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+
+> [!NOTE]
+>  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="create-a-new-project"></a>Создание нового проекта
+ Первым шагом является создание проекта книги Excel.
+
+### <a name="to-create-a-new-project"></a>Создание нового проекта
+
+1.  Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+
+     Visual Studio открывает новую книгу Excel в конструкторе и добавляет проект **WinFormInput** в **обозреватель решений**.
+
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>Добавление элемента управления NamedRange в лист
+
+### <a name="to-add-a-named-range-to-sheet1"></a>Добавление именованного диапазона в Sheet1
+
+1.  Выберите ячейку **A1** в `Sheet1`.
+
+2.  В поле **Имя** введите **formInput**.
+
+     Поле **Имя** находится слева от строки формул над столбцом **A** листа.
+
+3.  Нажмите клавишу **ВВОД**.
+
+     Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> добавляется в ячейку **A1**. Видимые изменения на листе отсутствуют, но значение **formInput** появляется в поле **Имя** (над листом слева) и в окне **Свойства** при выборе ячейки **A1** .
+
+## <a name="add-a-windows-form-to-the-project"></a>Добавьте в проект форму Windows
+ Создайте форму Windows Form, чтобы запрашивать сведения у пользователя.
+
+### <a name="to-add-a-windows-form"></a>Добавление формы Windows Forms
+
+1. Выберите проект **WinFormInput** в **обозревателе решений**.
+
+2. В меню **Проект** выберите пункт **Добавить форму Windows**.
+
+3. Дайте этой форме имя **GetInputString.vb** или **GetInputString.cs**, а затем нажмите кнопку **Добавить**.
+
+    Новая форма откроется в конструкторе.
+
+4. Добавьте в форму <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> .
+
+5. Выберите кнопку, найдите свойство **Текст** в окне **Свойства** и измените текст на **ОК**.
+
+   Затем добавьте в `ThisWorkbook.vb` или `ThisWorkbook.cs` код для сбора информации от пользователя.
+
+## <a name="display-the-windows-form-and-collecting-information"></a>Отображение формы Windows и сбора информации
+ Создайте экземпляр формы Windows `GetInputString` и отобразите его, а затем запишите информацию от пользователя в ячейку листа.
+
+#### <a name="to-display-the-form-and-collect-information"></a>Отображение формы и сбор информации
+
+1. Щелкните правой кнопкой мыши файл **ThisWorkbook.vb** или **ThisWorkbook.cs** в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода**.
+
+2. В обработчике событий <xref:Microsoft.Office.Tools.Excel.Workbook.Open> `ThisWorkbook`добавьте следующий код для объявления переменной формы `GetInputString` , а затем отобразите эту форму.
+
+   > [!NOTE]
+   >  В C# необходимо добавить обработчик событий, как показано в событии <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
-  
-3. Создайте метод с именем `WriteStringToCell` , который записывает текст в именованный диапазон. Этот метод вызывается из формы, и ввод пользователя передается в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, в ячейку **A1**.  
-  
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
+
+3. Создайте метод с именем `WriteStringToCell` , который записывает текст в именованный диапазон. Этот метод вызывается из формы, и ввод пользователя передается в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, в ячейку **A1**.
+
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
-  
-   Далее добавьте в форму код для обработки события нажатия кнопки.  
-  
-## <a name="send-information-to-the-worksheet"></a>Отправлять сведения в журнале  
-  
-### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист  
-  
-1.  Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.  
-  
-2.  Дважды щелкните кнопку, чтобы открыть файл кода с добавленным обработчиком событий <xref:System.Windows.Forms.Control.Click> кнопки.  
-  
-3.  Добавьте код в обработчик событий для приема входных данных из текстового поля, передачи их в функцию `WriteStringToCell`, а затем закрытия формы.  
-  
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]
+
+   Далее добавьте в форму код для обработки события нажатия кнопки.
+
+## <a name="send-information-to-the-worksheet"></a>Отправлять сведения в журнале
+
+### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист
+
+1.  Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.
+
+2.  Дважды щелкните кнопку, чтобы открыть файл кода с добавленным обработчиком событий <xref:System.Windows.Forms.Control.Click> кнопки.
+
+3.  Добавьте код в обработчик событий для приема входных данных из текстового поля, передачи их в функцию `WriteStringToCell`, а затем закрытия формы.
+
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
-  
-## <a name="test"></a>Проверка  
- Теперь можно запустить проект. Появляется форма Windows Forms, и введенные данные отображаются в листе.  
-  
-### <a name="to-test-your-workbook"></a>Проверка книги  
-  
-1.  Нажмите клавишу **F5** для запуска проекта.  
-  
-2.  Убедитесь, что форма Windows Forms появилась.  
-  
-3.  Введите **Hello World** в текстовом поле и нажмите кнопку **ОК**.  
-  
-4.  Убедитесь, что сообщение **Hello World** появилось в ячейке **A1** листа.  
-  
-## <a name="next-steps"></a>Следующие шаги  
- В этом пошаговом руководстве описываются основные принципы отображения формы Windows Forms и передачи данных в лист. Вам может потребоваться выполнить другие задачи, приведенные ниже.  
-  
--   Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
-  
--   Изменения пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
-  
-## <a name="see-also"></a>См. также  
- [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
- [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
- [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
- [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)  
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
+
+## <a name="test"></a>Тест
+ Теперь можно запустить проект. Появляется форма Windows Forms, и введенные данные отображаются в листе.
+
+### <a name="to-test-your-workbook"></a>Проверка книги
+
+1.  Нажмите клавишу **F5** для запуска проекта.
+
+2.  Убедитесь, что форма Windows Forms появилась.
+
+3.  Введите **Hello World** в текстовом поле и нажмите кнопку **ОК**.
+
+4.  Убедитесь, что сообщение **Hello World** появилось в ячейке **A1** листа.
+
+## <a name="next-steps"></a>Следующие шаги
+ В этом пошаговом руководстве описываются основные принципы отображения формы Windows Forms и передачи данных в лист. Вам может потребоваться выполнить другие задачи, приведенные ниже.
+
+-   Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+
+-   Изменения пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).
+
+## <a name="see-also"></a>См. также
+- [Разработка решений Office](../vsto/developing-office-solutions.md)
+- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
+- [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
+- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)
+- [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)
