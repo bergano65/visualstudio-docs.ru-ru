@@ -11,37 +11,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc265778fcc159a860bda9aa2d7ddafc5342dbd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 48196badc0d10435760a8af7ac5029e83d9de232
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927312"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630981"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Файлы таблицы команд Visual Studio (VSCT-файлы)
-Файл конфигурации таблицы команды — это текстовый файл, описывающий набор команд, которые содержит пакет VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Команда компилятора таблицы (VSCT) компилирует файлы конфигурации на основе XML (vsct-файлов) в файлы вывода (.cto) таблицы команда binary. Итоговый .cto файлы, которые создаются с помощью компилятора команды (CTC) таблицы для компиляции файлов конфигурации .ctc одинаковы. Тем не менее файлы vstc на основе XML имеет некоторые преимущества, такие как редактор XML и XML IntelliSense.  
-  
- Дополнительные сведения о синтаксисе и семантике vsct-файлы, см. в разделе [проектирование таблицы команд XML (. Файлы Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Разработка файлов таблицы команд XML (VSCT-файлы)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
- Содержит инструкции по определению vsct-файлы.  
-  
- [Практическое руководство. Создать. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Сравнение методов для создания vsct-файл. Описание процесса создания нового vsct-файл вручную.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
- Подробное описание каждого раздела файла конфигурации XML таблицы команд.  
-  
- [Конфигурации таблицы команды (. Файлах ctc)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c)  
- Представляет обзор устаревшие .ctc формата файла.  
-  
- [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Описывает спецификации формата таблицы команд.  
-  
- [Ресурсы в пакетах VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
- В этой статье описывается использование управляемых и неуправляемых ресурсов в управляемые пакеты VSPackage.  
-  
- [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)  
+Файл конфигурации таблицы команды — это текстовый файл, описывающий набор команд, которые содержит пакет VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Команда компилятора таблицы (VSCT) компилирует файлы конфигурации на основе XML (vsct-файлов) в файлы вывода (.cto) таблицы команда binary. Итоговый .cto файлы, которые создаются с помощью компилятора команды (CTC) таблицы для компиляции файлов конфигурации .ctc одинаковы. Тем не менее файлы vstc на основе XML имеет некоторые преимущества, такие как редактор XML и XML IntelliSense.
+
+ Дополнительные сведения о синтаксисе и семантике vsct-файлы, см. в разделе [проектирование таблицы команд XML (. Файлы Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+
+## <a name="in-this-section"></a>В этом разделе
+ [Разработка файлов таблицы команд XML (VSCT-файлы)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+
+ Содержит инструкции по определению vsct-файлы.
+
+ [Практическое руководство. Создать. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+
+ Сравнение методов для создания vsct-файл. Описание процесса создания нового vsct-файл вручную.
+
+## <a name="related-sections"></a>Связанные разделы
+ [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+
+ Подробное описание каждого раздела файла конфигурации XML таблицы команд.
+
+ [Конфигурации таблицы команды (. Файлах ctc)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) представляет обзор устаревшие .ctc формата файла.
+
+ [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+
+ Описывает спецификации формата таблицы команд.
+
+ [Ресурсы в пакетах VSPackage](../../extensibility/internals/resources-in-vspackages.md)
+
+ В этой статье описывается использование управляемых и неуправляемых ресурсов в управляемые пакеты VSPackage.
+
+ [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Объясняется, как создать пользовательский интерфейс, включающий меню, панели инструментов и поля со списком команд.

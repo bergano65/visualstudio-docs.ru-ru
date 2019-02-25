@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316591"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687891"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание элемента управления панели элементов Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (VS SDK) позволяет создать элемент управления, который автоматически добавляется **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления с простой счетчик, который можно передавать другим пользователям.
@@ -209,7 +209,7 @@ ms.locfileid: "56316591"
 При построении **элементов** элемент управления, Visual Studio создает файл с именем *ProjectName.vsix* в папке \bin\debug\ проекта. Можно развернуть элемент управления, отправив *.vsix* файла в сети или на веб-сайт. Когда пользователь открывает *.vsix* файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, вы можете отправить *.vsix* файл [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) , чтобы пользователи могли его найти, перейдя в **средства**  >   **Расширения и обновления** диалоговое окно.
 
 ## <a name="see-also"></a>См. также
-[Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Основы разработки элементов управления Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Основы разработки элементов управления Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

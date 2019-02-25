@@ -1,7 +1,7 @@
 ---
 title: BPRESI_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPRESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784d26f4d5ae6bd8edd9b6565644a6cd513db78
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413063"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680572"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Указывает сведения, которые требуется получить о успешного разрешения точки останова.
@@ -44,17 +44,13 @@ public enum enum_BPRESI_FIELDS {
 ```
 
 ## <a name="members"></a>Участники
-BPRESI_BPRESLOCATION  
-Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
+BPRESI_BPRESLOCATION Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
 
-BPRESI_PROGRAM  
-Инициализация и использование `pProgram` поле `BP_RESOLUTION_INFO` структуры.
+BPRESI_PROGRAM Initialize и использование `pProgram` поле `BP_RESOLUTION_INFO` структуры.
 
-BPRESI_THREAD  
-Инициализация и использование `pThread` поле `BP_RESOLUTION_INFO` структуры.
+BPRESI_THREAD Initialize и использование `pThread` поле `BP_RESOLUTION_INFO` структуры.
 
-BPRESI_ALLFIELDS  
-Указывает все поля.
+BPRESI_ALLFIELDS указывает все поля.
 
 ## <a name="remarks"></a>Примечания
 Передаваемый [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) метод, чтобы указать, какие поля [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры должны быть инициализированы.
@@ -71,6 +67,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

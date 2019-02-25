@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866326"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718374"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Пошаговое руководство. Создание пакета расширения
 
 Пакет расширения — это набор расширений, которые могут быть установлены вместе. Пакеты расширения позволяют легко поделиться избранные расширения с другими пользователями или объединить набор расширений для конкретного сценария.
-  
+
 ## <a name="prerequisites"></a>Предварительные требования
 
-Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 Функция Extension Pack доступен, начиная с Visual Studio 15.8 предварительной версии 2.
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Создание расширения с помощью шаблона элемента Extension Pack
 
 Шаблон элемента Extension Pack создает пакет расширения с помощью набора расширений, которые могут быть установлены вместе.
-  
-1. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** и нажмите кнопку **расширяемости**. В **шаблоны** области выберите **проект VSIX**. В поле **Имя файла** введите `Test Extension Pack`. Нажмите кнопку **ОК**.  
-  
-2. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. Перейдите в Visual C# **расширяемости** узел и выберите **пакет расширений**. Оставьте имя файла по умолчанию (ExtensionPack1.cs).  
-  
+
+1. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** и нажмите кнопку **расширяемости**. В **шаблоны** области выберите **проект VSIX**. В поле **Имя файла** введите `Test Extension Pack`. Нажмите кнопку **ОК**.
+
+2. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. Перейдите в Visual C# **расширяемости** узел и выберите **пакет расширений**. Оставьте имя файла по умолчанию (ExtensionPack1.cs).
+
 3. Добавляется файл ExtensionPack1.vsext, который содержит следующий код
 
    ```json
@@ -53,18 +53,18 @@ ms.locfileid: "53866326"
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. Vsixid расширения для включения в пакет расширений можно найти на [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Найдите нужное расширение и нажмите кнопку на **идентификатор копирования**. Вы можете обновить существующий **vsixId** выше файл или добавить другое расширение в список.
 
     ![Скопируйте VsixId из Marketplace](media/vsixid-marketplace.png)
 
-5. Постройте проект и отправки расширения в Marketplace. См. в разделе [публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). 
-    
+5. Постройте проект и отправки расширения в Marketplace. См. в разделе [публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+
 > [!NOTE]
 > Пакет расширения можно установить только расширения, доступные на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или [частной коллекции](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Установить пакет расширений в Visual Studio Marketplace
 
 Теперь, когда публикуется расширения, установите его в Visual Studio и протестируйте его.

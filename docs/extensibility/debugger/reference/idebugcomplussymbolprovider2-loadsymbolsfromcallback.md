@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c40fb096eed1c6da83213cbae65e2f2c750a84
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413141"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720748"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Загружает отладочные символы, используя указанный метод обратного вызова.
@@ -48,26 +48,33 @@ int LoadSymbolsFromCallback(
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
 
-`pUnkMetadataImport`  
-[in] Объект, содержащий метаданные символ.
+`guidModule`
 
-`pUnkCorDebugModule`  
-[in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+ [in] Уникальный идентификатор модуля.
 
-`bstrModuleName`  
-[in] Имя модуля.
+`pUnkMetadataImport`
 
-`bstrSymSearchPath`  
-[in] Путь для поиска файла символов.
+ [in] Объект, содержащий метаданные символ.
 
-`pCallback`  
-[in] Объект, представляющий метод обратного вызова.
+`pUnkCorDebugModule`
+
+ [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Имя модуля.
+
+`bstrSymSearchPath`
+
+ [in] Путь для поиска файла символов.
+
+`pCallback`
+
+ [in] Объект, представляющий метод обратного вызова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -167,4 +174,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

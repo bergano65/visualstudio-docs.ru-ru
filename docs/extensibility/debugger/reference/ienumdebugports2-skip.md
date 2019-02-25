@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2::Skip | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPorts2::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3586e3aefa38b7c8a49b693df86c3241a39d194
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56d941a826287f119fefdd11d305359dba02078d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916108"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681781"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
-Пропускает заданное число элементов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT Skip(  
-   ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `celt`  
- [in] Количество пропускаемых элементов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+Пропускает заданное число элементов.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT Skip(
+   ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   uint celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `celt`
+
+ [in] Количество пропускаемых элементов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

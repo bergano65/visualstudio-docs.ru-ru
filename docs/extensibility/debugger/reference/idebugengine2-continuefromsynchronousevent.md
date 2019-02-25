@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::ContinueFromSynchronousEvent | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450468"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711843"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Вызывается диспетчером сеанса отладки (SDM), чтобы указать, что событие синхронной отладки, ранее отправленные модуль отладки (DE) SDM, были получены и обработаны.
@@ -37,8 +37,9 @@ HRESULT ContinueFromSynchronousEvent(
 ```
 
 #### <a name="parameters"></a>Параметры
-`pEvent`  
-[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , представляющий ранее отправленные синхронных событий, из которого должна продолжаться отладчика.
+`pEvent`
+
+ [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , представляющий ранее отправленные синхронных событий, из которого должна продолжаться отладчика.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -86,5 +87,5 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
-[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9f1fd7587eb99115751790fdca2995c9ab019
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450131"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689659"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Переключает виртуализированных состояние это ожидающих точек останова. При виртуализируется ожидающая точка останова, отладчик попытается привязать его каждый раз загружает новый код в программу.
@@ -38,8 +38,9 @@ int Virtualize(
 ```
 
 #### <a name="parameters"></a>Параметры
-`fVirtualize`  
-[in] Задайте ненулевое значение (`TRUE`) для виртуализации ожидающая точка останова или до нуля (`FALSE`) чтобы отключить виртуализации.
+`fVirtualize`
+
+ [in] Задайте ненулевое значение (`TRUE`) для виртуализации ожидающая точка останова или до нуля (`FALSE`) чтобы отключить виртуализации.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781aa55f26fbd332b901dacdb3b4ac12d85579cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318515"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715665"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Указывает тип местоположения точки останова для запроса точки останова.
@@ -66,50 +66,35 @@ public enum enum_BP_LOCATION_TYPE {
 ```
 
 ## <a name="members"></a>Участники
-BPLT_NONE  
-Указывает расположение не точки останова.
+BPLT_NONE указывает нет точки останова.
 
-BPLT_FILE_LINE  
-Указывает тип местоположения точки останова в строке файла.
+BPLT_FILE_LINE указывает тип местоположения точки останова в строке файла.
 
-BPLT_FUNC_OFFSET  
-Указывает тип местоположения точки останова, как функция смещение.
+BPLT_FUNC_OFFSET указывает тип местоположения точки останова, как функция смещение.
 
-BPLT_CONTEXT  
-Указывает тип местоположения точки останова в качестве контекста.
+BPLT_CONTEXT указывает тип местоположения точки останова в качестве контекста.
 
-BPLT_STRING  
-Указывает тип местоположения точки останова в виде строки.
+BPLT_STRING указывает тип местоположения точки останова в виде строки.
 
-BPLT_ADDRESS  
-Указывает тип местоположения точки останова, как адрес.
+BPLT_ADDRESS указывает тип местоположения точки останова, как адрес.
 
-BPLT_RESOLUTION  
-Указывает тип местоположения точки останова, как разрешение.
+BPLT_RESOLUTION указывает тип местоположения точки останова, как разрешение.
 
-BPLT_CODE_FILE_LINE  
-Указывает тип местоположения точки останова в строке исходного кода.
+BPLT_CODE_FILE_LINE указывает тип местоположения точки останова в строке исходного кода.
 
-BPLT_CODE_FUNC_OFFSET  
-Указывает тип местоположения точки останова, как функция смещение кода.
+BPLT_CODE_FUNC_OFFSET указывает тип местоположения точки останова, как функция смещение кода.
 
-BPLT_CODE_CONTEXT  
-Указывает тип местоположения точки останова, как контекст кода.
+BPLT_CODE_CONTEXT указывает тип местоположения точки останова, как контекст кода.
 
-BPLT_CODE_STRING  
-Указывает тип местоположения точки останова в виде строки кода.
+BPLT_CODE_STRING указывает тип местоположения точки останова в виде строки кода.
 
-BPLT_CODE_ADDRESS  
-Указывает тип местоположения точки останова, как адрес кода.
+BPLT_CODE_ADDRESS указывает тип местоположения точки останова, как адрес кода.
 
-BPLT_DATA_STRING  
-Указывает тип местоположения точки останова в виде строки данных.
+BPLT_DATA_STRING указывает тип местоположения точки останова в виде строки данных.
 
-BPLT_TYPE_MASK  
-Указывает битовую маску, чтобы тип точки останова могут быть извлечены из значения.
+Указывает BPLT_TYPE_MASK немного маску, таким образом, чтобы тип точки останова могут быть извлечены из значения.
 
-BPLT_LOCATION_TYPE_MASK  
-Указывает битовую маску, чтобы тип местоположения точки останова могут быть извлечены из значения.
+Указывает BPLT_LOCATION_TYPE_MASK немного маску, таким образом, чтобы тип местоположения точки останова могут быть извлечены из значения.
 
 ## <a name="remarks"></a>Примечания
 Переданный в качестве параметра для [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) метод.
@@ -126,6 +111,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetBreakpointResolution | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetBreakpointResolution
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee855b76f214f5fe1c230464a1ab4420f46240
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317939"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712169"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Получает разрешение точек останова, который описывает эту точку останова.
@@ -38,8 +38,9 @@ int GetBreakpointResolution( 
 ```
 
 #### <a name="parameters"></a>Параметры
-`ppBPResolution`  
-[out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих:
+`ppBPResolution`
+
+ [out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих:
 
 - Объект разрешения точки останова, описывающий расположение в коде, где был привязан точку останова кода.
 
@@ -86,6 +87,6 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

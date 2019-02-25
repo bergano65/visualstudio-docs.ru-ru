@@ -10,29 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff8cc5e25355758312227687f4319bfa95eb1c7d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929761"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600315"
 ---
 # <a name="source-control-vspackage-features"></a>Функции пакета VSPackage системы управления версиями
-В этом разделе описываются различные функции из пакета VSPackage системы управления версиями. Здесь указаны регистрации и выбора, подробные данные об таких VSPackage, а также рассматриваются три функций управления, связанных с основным источником: обработка событий запроса сохранить изменения запроса (QEQS), замену глифов и настраиваемый пользовательский интерфейс (UI) для системы управления версиями функции.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Регистрация и выбор](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
- Описываются механизмы регистрации и выбора пакета.  
-  
- [Изменение запроса / сохранение запроса](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)  
- Поясняется в запрос изменения запроса сохранения событий и как они обрабатываются элементом управления источником VSPackage.  
-  
- [Управление глифами](../../extensibility/internals/glyph-control-source-control-vspackage.md)  
- Описание уровней управления глифа и способы их реализации.  
-  
- [Настраиваемый пользовательский](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)  
- Описываются элементы пользовательского интерфейса, которые можно указать пакет VSPackage системы управления версиями.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+В этом разделе описываются различные функции из пакета VSPackage системы управления версиями. Здесь указаны регистрации и выбора, подробные данные об таких VSPackage, а также рассматриваются три функций управления, связанных с основным источником: обработка событий запроса сохранить изменения запроса (QEQS), замену глифов и настраиваемый пользовательский интерфейс (UI) для системы управления версиями функции.
+
+## <a name="in-this-section"></a>В этом разделе
+- [Регистрация и выбор](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
+
+ Описываются механизмы регистрации и выбора пакета.
+
+- [Изменение запроса / сохранение запроса](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
+
+ Поясняется в запрос изменения запроса сохранения событий и как они обрабатываются элементом управления источником VSPackage.
+
+- [Управление глифами](../../extensibility/internals/glyph-control-source-control-vspackage.md)
+
+ Описание уровней управления глифа и способы их реализации.
+
+- [Настраиваемый пользовательский](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
+
+ Описываются элементы пользовательского интерфейса, которые можно указать пакет VSPackage системы управления версиями.
+
+## <a name="related-sections"></a>Связанные разделы
+- [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
+
  Описывает, как создать пакет VSPackage, который не только предоставляет функции системы управления версиями, но можно использовать для настройки системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] система управления версиями пользовательского интерфейса.

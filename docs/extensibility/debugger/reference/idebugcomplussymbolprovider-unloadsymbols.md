@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UnloadSymbols | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UnloadSymbols
 - IDebugComPlusSymbolProvider::UnloadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9374220e8cc9433d8420820d87e685175061a2b0
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: a4b5d47f16126b49a3e3d8f01977a0c757011c34
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413076"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686337"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 Выгружает отладочные символы для указанного модуля из памяти.
@@ -38,11 +38,13 @@ int UnloadSymbols(
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
+
+`guidModule`
+
+ [in] Уникальный идентификатор модуля.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -90,4 +92,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

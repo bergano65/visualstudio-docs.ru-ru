@@ -12,58 +12,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73578d564714ff6e596dca62942f12e24589d235
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 76da5221d8f5bbdeb40f22559c6fabba727986b4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645359"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile - элемент
-  Представляет файл SharePoint, такие как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<ProjectItemFile Source = "Name of the file"  
-    Target = "Deployment path of the file"  
-    Type = "Type of deployment for the file" />  
-```  
-  
-## <a name="type"></a>Тип  
- **ProjectItemFileType**  
-  
+  Представляет файл SharePoint, такие как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<ProjectItemFile Source = "Name of the file"
+    Target = "Deployment path of the file"
+    Type = "Type of deployment for the file" />
+```
+
+## <a name="type"></a>Тип
+ **ProjectItemFileType**
+
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
-  
-### <a name="attributes"></a>Атрибуты  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|**Источник**|Требуется **xs: String** атрибута.<br /><br /> Имя файла, который развертывается с элементом проекта.|  
-|**Целевой объект**|Необязательный **xs: String** атрибута.<br /><br /> Путь, где этот файл будет развернут на сайте SharePoint, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута. Если **целевой** атрибут не указан, файл будет развернут в папку с именем, указанным в **источника** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **Deployment Root** свойства SharePoint элементами проекта в среде [решения разработки SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Требуется **xs: String** атрибута.<br /><br /> Тип развертывания файла. Дополнительные сведения о возможных значениях см. в описании для **тип развертывания** свойства элементов проекта SharePoint в [решения разработки SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
+
+### <a name="attributes"></a>Атрибуты
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|**Источник**|Требуется **xs: String** атрибута.<br /><br /> Имя файла, который развертывается с элементом проекта.|
+|**Целевой объект**|Необязательный **xs: String** атрибута.<br /><br /> Путь, где этот файл будет развернут на сайте SharePoint, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута. Если **целевой** атрибут не указан, файл будет развернут в папку с именем, указанным в **источника** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **Deployment Root** свойства SharePoint элементами проекта в среде [решения разработки SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Type**|Требуется **xs: String** атрибута.<br /><br /> Тип развертывания файла. Дополнительные сведения о возможных значениях см. в описании для **тип развертывания** свойства элементов проекта SharePoint в [решения разработки SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.  
-  
+ Отсутствует.
+
 ### <a name="parent-elements"></a>Родительские элементы
-  
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые с элементом проекта SharePoint при развертывании в SharePoint.|  
-  
-## <a name="remarks"></a>Примечания  
- Файлы SharePoint, которые обычно указывается в **ProjectItemFile** элементы включают элемент файлы компонентов (*Elements.xml*), файлы схемы для определения списков (*Schema.xml*) и файлов определения веб-части для веб-частей (*.webpart*).  
-  
+
+|Элемент|Описание:|
+|-------------|-----------------|
+|[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые с элементом проекта SharePoint при развертывании в SharePoint.|
+
+## <a name="remarks"></a>Примечания
+ Файлы SharePoint, которые обычно указывается в **ProjectItemFile** элементы включают элемент файлы компонентов (*Elements.xml*), файлы схемы для определения списков (*Schema.xml*) и файлов определения веб-части для веб-частей (*.webpart*).
+
 ## <a name="element-information"></a>Сведения об элементе
-  
-|||  
-|-|-|  
-|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Имя схемы**|Схема элемента проекта SharePoint|  
-|**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым**|Нет|  
-  
+
+|||
+|-|-|
+|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Имя схемы**|Схема элемента проекта SharePoint|
+|**Файл проверки**|ProjectItemModelSchema.xsd|
+|**Может быть пустым**|Нет|
+
 ## <a name="see-also"></a>См. также
- [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+- [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

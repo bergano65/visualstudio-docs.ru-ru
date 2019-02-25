@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Использование журнала действий | Документация Майкрософт
+title: Практическое руководство. Использование журнала действий | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b23dd6ffa0e856ef5d5fb14227953cb22dce65e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929356"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719279"
 ---
-# <a name="how-to-use-the-activity-log"></a>Как выполнить Использование журнала действий
-Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.  
-  
+# <a name="how-to-use-the-activity-log"></a>Практическое руководство. Использование журнала действий
+Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.
+
 > [!TIP]
->  Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также первые 10 записей, которые имеют общие сведения о настройке.  
-  
-## <a name="to-write-an-entry-to-the-activity-log"></a>Для записи в журнал действий  
-  
-1.  Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метода или в любой другой метод, кроме VSPackage конструктора:  
-  
-    ```csharp  
-    IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
-    if (log == null) return;  
-  
-    int hr = log.LogEntry((UInt32)__ACTIVITYLOG_ENTRYTYPE.ALE_INFORMATION,  
-        this.ToString(),  
-        string.Format(CultureInfo.CurrentCulture,  
-        "Called for: {0}", this.ToString()));  
-    ```  
-  
-     Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службы и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Записывает информационную запись в журнал действий с использованием текущего контекста культуры.  
-  
-2.  После загрузки VSPackage (как правило, при вызове команды или открытии окна) текст записывается в журнал действий.  
-  
-## <a name="to-examine-the-activity-log"></a>Для просмотра журнала действий  
-  
+>  Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также первые 10 записей, которые имеют общие сведения о настройке.
+
+## <a name="to-write-an-entry-to-the-activity-log"></a>Для записи в журнал действий
+
+1.  Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метода или в любой другой метод, кроме VSPackage конструктора:
+
+    ```csharp
+    IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
+    if (log == null) return;
+
+    int hr = log.LogEntry((UInt32)__ACTIVITYLOG_ENTRYTYPE.ALE_INFORMATION,
+        this.ToString(),
+        string.Format(CultureInfo.CurrentCulture,
+        "Called for: {0}", this.ToString()));
+    ```
+
+     Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службы и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Записывает информационную запись в журнал действий с использованием текущего контекста культуры.
+
+2.  После загрузки VSPackage (как правило, при вызове команды или открытии окна) текст записывается в журнал действий.
+
+## <a name="to-examine-the-activity-log"></a>Для просмотра журнала действий
+
 1. Запустите Visual Studio с [/Log](../ide/reference/log-devenv-exe.md) параметр командной строки для записи ActivityLog.xml на диск во время сеанса.
 
-2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
-  
-3. Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:  
-  
-   ```  
-   Called for: Company.MyApp.MyAppPackage ...  
-   ```  
-  
-## <a name="robust-programming"></a>Отказоустойчивость  
- Так как журнал действий — это служба, журнал действий недоступна в конструкторе пакета VSPackage.  
-  
- Журнал действий должен быть получен только перед записью в него. Не кэшировать и журнала действий для использования в будущем.  
-  
+2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+
+3. Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:
+
+   ```
+   Called for: Company.MyApp.MyAppPackage ...
+   ```
+
+## <a name="robust-programming"></a>Отказоустойчивость
+ Так как журнал действий — это служба, журнал действий недоступна в конструкторе пакета VSPackage.
+
+ Журнал действий должен быть получен только перед записью в него. Не кэшировать и журнала действий для использования в будущем.
+
 ## <a name="see-also"></a>См. также
- [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
- <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
- [Устранение неполадок пакетов VSPackage](../extensibility/troubleshooting-vspackages.md)   
- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
+- <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
+- [Устранение неполадок, связанных с пакетами VSPackage](../extensibility/troubleshooting-vspackages.md)
+- [Пакеты VSPackage](../extensibility/internals/vspackages.md)

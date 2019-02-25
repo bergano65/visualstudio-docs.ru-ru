@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450546"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678609"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Преобразует строку выражения проанализированное выражение с учетом поставщик символов и адрес оценке кадра.
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>Параметры
-`upstrExpression`  
-[in] Строка выражения, который необходимо проанализировать.
+`upstrExpression`
 
-`dwFlags`  
-[in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
+ [in] Строка выражения, который необходимо проанализировать.
 
-`nRadix`  
-[in] Основание системы счисления для использования для интерпретации все числовые данные.
+`dwFlags`
 
-`pSymbolProvider`  
-[in] Интерфейс поставщика символов.
+ [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
 
-`pAddress`  
-[in] Адрес оценке кадра.
+`nRadix`
 
-`pbstrError`  
-[out] Возвращает ошибку в виде удобочитаемого текста.
+ [in] Основание системы счисления для использования для интерпретации все числовые данные.
 
-`pichError`  
-[out] Возвращает позицию символа начинается ошибка в строке выражения.
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
+ [in] Интерфейс поставщика символов.
+
+`pAddress`
+
+ [in] Адрес оценке кадра.
+
+`pbstrError`
+
+ [out] Возвращает ошибку в виде удобочитаемого текста.
+
+`pichError`
+
+ [out] Возвращает позицию символа начинается ошибка в строке выражения.
+
+`ppParsedExpression`
+
+ [out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

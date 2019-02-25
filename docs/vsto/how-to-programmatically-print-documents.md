@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программная печать документов
+title: Практическое руководство. Программная печать документов
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,49 +13,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6242d30236a00749688995ed3edae7707c6ee028
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 252891f603f974b43fa9a609bd9bbde9dde2f7f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56654078"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Как выполнить Программная печать документов
-  Вы можете распечатать весь документ Microsoft Office Word или часть документа, на принтере по умолчанию.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Печать документа, который является частью настройки уровня документа  
-  
-### <a name="to-print-the-entire-document"></a>Печать всего документа  
-  
-1.  Чтобы напечатать весь документ, вызовите в своем проекте метод <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> класса `ThisDocument` . Чтобы использовать этот пример, запустите код из класса `ThisDocument` .  
-  
+# <a name="how-to-programmatically-print-documents"></a>Практическое руководство. Программная печать документов
+  Вы можете распечатать весь документ Microsoft Office Word или часть документа, на принтере по умолчанию.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Печать документа, который является частью настройки уровня документа
+
+### <a name="to-print-the-entire-document"></a>Печать всего документа
+
+1.  Чтобы напечатать весь документ, вызовите в своем проекте метод <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> класса `ThisDocument` . Чтобы использовать этот пример, запустите код из класса `ThisDocument` .
+
      [!code-vb[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#11)]
-     [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]  
-  
-### <a name="to-print-the-current-page-of-the-document"></a>Печать текущей страницы документа  
-  
-1.  Вызовите метод <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> класса `ThisDocument` в своем проекте и укажите, что необходимо напечатать одну копию текущей страницы. Чтобы использовать этот пример, запустите код из класса `ThisDocument` .  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]
+
+### <a name="to-print-the-current-page-of-the-document"></a>Печать текущей страницы документа
+
+1.  Вызовите метод <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> класса `ThisDocument` в своем проекте и укажите, что необходимо напечатать одну копию текущей страницы. Чтобы использовать этот пример, запустите код из класса `ThisDocument` .
+
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
-     [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]  
-  
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>Печать документа с помощью надстройки VSTO  
-  
-### <a name="to-print-an-entire-document"></a>Печать всего документа  
-  
-1.  Вызовите метод <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> документа <xref:Microsoft.Office.Interop.Word.Document> , который требуется напечатать. В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
+
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>Печать документа с помощью надстройки VSTO
+
+### <a name="to-print-an-entire-document"></a>Печать всего документа
+
+1.  Вызовите метод <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> документа <xref:Microsoft.Office.Interop.Word.Document> , который требуется напечатать. В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#11)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#11)]  
-  
-### <a name="to-print-the-current-page-of-a-document"></a>Печать текущей страницы документа  
-  
-1.  Вызовите метод <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> класса <xref:Microsoft.Office.Interop.Word.Document> объекта, который требуется напечатать, и укажите, что необходимо напечатать одну копию текущей страницы. В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#11)]
+
+### <a name="to-print-the-current-page-of-a-document"></a>Печать текущей страницы документа
+
+1.  Вызовите метод <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> класса <xref:Microsoft.Office.Interop.Word.Document> объекта, который требуется напечатать, и укажите, что необходимо напечатать одну копию текущей страницы. В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]  
-  
-## <a name="see-also"></a>См. также  
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
+
+## <a name="see-also"></a>См. также
+- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

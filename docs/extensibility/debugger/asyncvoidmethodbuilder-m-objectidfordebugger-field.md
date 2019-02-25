@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d689e2038563c0192a3f904b604a9a8d67256d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038764"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706136"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Поле AsyncVoidMethodBuilder.m_objectIdForDebugger
-Представляет неактивно инициализированный объект, используемый отладчиком для уникальной идентификации этого построителя.  
-  
- **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Сборка:** mscorlib (в mscorlib.dll)  
-  
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```csharp  
-.field private object m_objectIdForDebugger  
-```  
-  
-## <a name="see-also"></a>См. также  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Представляет неактивно инициализированный объект, используемый отладчиком для уникальной идентификации этого построителя.
+
+ **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Сборка:** mscorlib (в mscorlib.dll)
+
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+
+## <a name="syntax"></a>Синтаксис
+
+```csharp
+.field private object m_objectIdForDebugger
+```
+
+## <a name="see-also"></a>См. также
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

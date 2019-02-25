@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Управление закрытой галереей с помощью параметров реестра | Документация Майкрософт
+title: Практическое руководство. Управление закрытой галереей с помощью параметров реестра | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,61 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35a5c80785aa5d7f3e38dfb52b503c42d788e557
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021524"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723153"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Как выполнить Управление частной галереей с помощью параметров реестра
-Если вы являетесь администратором или разработчиком расширение изолированной оболочки, вы можете управлять доступом к элементам управления, шаблонов и средств в коллекции Visual Studio, коллекции примеров или закрытые коллекции. Чтобы сделать коллекции доступен или недоступен, создать *.pkgdef* файл, описывающий ключи реестра и их значения.  
-  
-## <a name="manage-private-galleries"></a>Управление закрытые коллекции  
- Можно создать *.pkgdef* для управления доступом к коллекциям на нескольких компьютерах. Этот файл должен иметь следующий формат.  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
-Disabled=0 | 1 (DWORD)  
-Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
-Protocol=Atom Feed|Sharepoint (REG_SZ)  
-DisplayName={DisplayName} (REG_SZ)  
-DisplayNameResourceID={ID} (REG_SZ)  
-DisplayNamePackageGuid={GUID} (REG_SZ)  
-  
-```  
-  
- `Repositories` Ключ ссылается на коллекции, чтобы включить или отключить. В коллекции Visual Studio и галереи примеров используют следующий репозиторий идентификаторы GUID:  
-  
-- Коллекции Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
-  
-- Коллекция примеров: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
-  
-  `Disabled` Значение является необязательным. По умолчанию включен коллекции.  
-  
-  `Priority` Значение определяет порядок, в котором перечислены галереях в **параметры** диалоговое окно. Коллекции Visual Studio имеет приоритет 10 и в коллекции примеров имеет приоритет 20. Закрытые коллекции начинаются с приоритетом 100. Если несколько коллекций имеют одинаковое значение приоритета, порядок, в котором они появляются определяется по значениям их локализованные `DisplayName` атрибуты.  
-  
-  `Protocol` Значение является обязательным для коллекции на основе SharePoint или веб-каналов Atom.  
-  
-  Либо `DisplayName`, или оба `DisplayNameResourceID` и `DisplayNamePackageGuid`, должен быть указан. Если все заданы, то `DisplayNameResourceID` и `DisplayNamePackageGuid` используется пара.  
-  
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Отключение коллекции Visual Studio, с помощью файла .pkgdef  
- Вы можете отключить коллекции в *.pkgdef* файл. Следующая запись будет отключено в коллекции Visual Studio.  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
-"Disabled"=dword:00000001  
-  
-```  
-  
- Следующая запись будет отключено в коллекции примеров.  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
-"Disabled"=dword:00000001  
-  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Закрытые коллекции](../extensibility/private-galleries.md)
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Практическое руководство. Управление частной галереей с помощью параметров реестра
+Если вы являетесь администратором или разработчиком расширение изолированной оболочки, вы можете управлять доступом к элементам управления, шаблонов и средств в коллекции Visual Studio, коллекции примеров или закрытые коллекции. Чтобы сделать коллекции доступен или недоступен, создать *.pkgdef* файл, описывающий ключи реестра и их значения.
+
+## <a name="manage-private-galleries"></a>Управление закрытые коллекции
+ Можно создать *.pkgdef* для управления доступом к коллекциям на нескольких компьютерах. Этот файл должен иметь следующий формат.
+
+```
+[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
+@={URI}  (REG_SZ)
+Disabled=0 | 1 (DWORD)
+Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
+Protocol=Atom Feed|Sharepoint (REG_SZ)
+DisplayName={DisplayName} (REG_SZ)
+DisplayNameResourceID={ID} (REG_SZ)
+DisplayNamePackageGuid={GUID} (REG_SZ)
+
+```
+
+ `Repositories` Ключ ссылается на коллекции, чтобы включить или отключить. В коллекции Visual Studio и галереи примеров используют следующий репозиторий идентификаторы GUID:
+
+- Коллекции Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9
+
+- Коллекция примеров: AEB9CB40-D8E6-4615-B52C-27E307F8506C
+
+  `Disabled` Значение является необязательным. По умолчанию включен коллекции.
+
+  `Priority` Значение определяет порядок, в котором перечислены галереях в **параметры** диалоговое окно. Коллекции Visual Studio имеет приоритет 10 и в коллекции примеров имеет приоритет 20. Закрытые коллекции начинаются с приоритетом 100. Если несколько коллекций имеют одинаковое значение приоритета, порядок, в котором они появляются определяется по значениям их локализованные `DisplayName` атрибуты.
+
+  `Protocol` Значение является обязательным для коллекции на основе SharePoint или веб-каналов Atom.
+
+  Либо `DisplayName`, или оба `DisplayNameResourceID` и `DisplayNamePackageGuid`, должен быть указан. Если все заданы, то `DisplayNameResourceID` и `DisplayNamePackageGuid` используется пара.
+
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Отключение коллекции Visual Studio, с помощью файла .pkgdef
+ Вы можете отключить коллекции в *.pkgdef* файл. Следующая запись будет отключено в коллекции Visual Studio.
+
+```
+[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
+"Disabled"=dword:00000001
+
+```
+
+ Следующая запись будет отключено в коллекции примеров.
+
+```
+[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
+"Disabled"=dword:00000001
+
+```
+
+## <a name="see-also"></a>См. также
+- [Закрытые коллекции](../extensibility/private-galleries.md)

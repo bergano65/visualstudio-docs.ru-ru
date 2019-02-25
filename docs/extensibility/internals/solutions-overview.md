@@ -10,42 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090f70776ab3323be55d13888f29d4855386a511
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2df03e73d963b7b1b6166b1376d31b517f515dcd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020897"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645463"
 ---
 # <a name="solutions-overview"></a>Обзор решений
-Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проект и состояние сведения, относящиеся к решению, хранятся в двух файлах другого решения. Файл решения (SLN) основана на тексте и может быть помещен в систему управления версиями и совместно использоваться пользователями. Файл решения пользовательских параметров (.suo) в двоичные. В результате SUO-файл нельзя поместить в систему управления версиями и содержит сведения о пользователе.  
-  
- Любой пакет VSPackage можно написать для любого типа файла решения. Из-за природы файлы существует два разных интерфейсов, реализованных для записи к ним. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Интерфейс записывает текстовые данные в SLN-файл и <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> интерфейс записывает двоичные потоки SUO-файл.  
-  
+Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проект и состояние сведения, относящиеся к решению, хранятся в двух файлах другого решения. Файл решения (SLN) основана на тексте и может быть помещен в систему управления версиями и совместно использоваться пользователями. Файл решения пользовательских параметров (.suo) в двоичные. В результате SUO-файл нельзя поместить в систему управления версиями и содержит сведения о пользователе.
+
+ Любой пакет VSPackage можно написать для любого типа файла решения. Из-за природы файлы существует два разных интерфейсов, реализованных для записи к ним. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Интерфейс записывает текстовые данные в SLN-файл и <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> интерфейс записывает двоичные потоки SUO-файл.
+
 > [!NOTE]
->  Проект не нужно явно добавить запись для себя в файл решения; Эти задачи выполняет среда, для проекта. Таким образом только если вы хотите добавить дополнительное содержимое в частности к файлу решения, вы не обязательно должны зарегистрировать VSPackage таким образом.  
-  
- Каждый пакет VSPackage, поддержка сохраняемости решения использует три интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> интерфейс, который реализуется средой и вызвана VSPackage, и `IVsPersistSolutionProps` и `IVsPersistSolutionOpts`, осуществляют такие попытки при оба реализованы по VSPackage. `IVsPersistSolutionOpts` Интерфейс только должна быть реализована при конфиденциальную информацию для записи с VSPackage SUO-файл.  
-  
- При открытии решения, процесс выполняется.  
-  
-1. Среде считывает решения.  
-  
-2. Обнаружив среде `CLSID`, он загружает соответствующий пакет VSPackage.  
-  
-3. Если VSPackage загружается, среда вызывает метод `QueryInterface` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> интерфейса для интерфейса, который требует VSPackage.  
-  
-   1.  При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.  
-  
-   2.  При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.  
-  
-   Определенные сведения, относящиеся к использованию этих файлов можно найти в [решение (. Файл SLN)](../../extensibility/internals/solution-dot-sln-file.md) и [пользовательских параметров решения (. SUO-) файл](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
-  
+>  Проект не нужно явно добавить запись для себя в файл решения; Эти задачи выполняет среда, для проекта. Таким образом только если вы хотите добавить дополнительное содержимое в частности к файлу решения, вы не обязательно должны зарегистрировать VSPackage таким образом.
+
+ Каждый пакет VSPackage, поддержка сохраняемости решения использует три интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> интерфейс, который реализуется средой и вызвана VSPackage, и `IVsPersistSolutionProps` и `IVsPersistSolutionOpts`, осуществляют такие попытки при оба реализованы по VSPackage. `IVsPersistSolutionOpts` Интерфейс только должна быть реализована при конфиденциальную информацию для записи с VSPackage SUO-файл.
+
+ При открытии решения, процесс выполняется.
+
+1. Среде считывает решения.
+
+2. Обнаружив среде `CLSID`, он загружает соответствующий пакет VSPackage.
+
+3. Если VSPackage загружается, среда вызывает метод `QueryInterface` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> интерфейса для интерфейса, который требует VSPackage.
+
+   1.  При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.
+
+   2.  При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.
+
+   Определенные сведения, относящиеся к использованию этих файлов можно найти в [решение (. Файл SLN)](../../extensibility/internals/solution-dot-sln-file.md) и [пользовательских параметров решения (. SUO-) файл](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+
 > [!NOTE]
->  Если вы хотите создать новую конфигурацию решения, состоящий из двух проектов конфигураций и исключение в третьем из сборки, необходимо использовать пользовательский Интерфейс страницы свойств или автоматизации. Нельзя изменить диспетчер конфигураций построения решения и их свойств напрямую, но можно управлять с помощью диспетчер построения решения `SolutionBuild` от DTE класса в модели автоматизации. Дополнительные сведения о настройке решения, см. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md).  
-  
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
+>  Если вы хотите создать новую конфигурацию решения, состоящий из двух проектов конфигураций и исключение в третьем из сборки, необходимо использовать пользовательский Интерфейс страницы свойств или автоматизации. Нельзя изменить диспетчер конфигураций построения решения и их свойств напрямую, но можно управлять с помощью диспетчер построения решения `SolutionBuild` от DTE класса в модели автоматизации. Дополнительные сведения о настройке решения, см. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md).
+
+## <a name="see-also"></a>См. также
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>

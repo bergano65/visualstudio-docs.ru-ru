@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d014dad98e442f0cd1d93f157c6c38fc8677377
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: df5db60d81d6cb814764e935d5ead909c4c7c476
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317722"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695262"
 ---
 # <a name="enumerate-locals"></a>Перечислить "Локальные"
 > [!IMPORTANT]
@@ -246,6 +246,6 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ```
 
 ## <a name="see-also"></a>См. также
-[Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)  
-[Реализация GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
-[Контекст оценки](../../extensibility/debugger/evaluation-context.md)
+- [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Реализация GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)
+- [Контекст оценки](../../extensibility/debugger/evaluation-context.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 119ccbc7a14f2879d27c9c8c8e20cf978593366a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918814"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710049"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Платформа компиляторов .NET (&quot;Roslyn&quot;) расширяемости
 Основная миссия платформы компилятора .NET («Roslyn») открывая компиляторы C# и Visual Basic и позволяя средствам и разработчикам совместно использовать в компиляторах ценные сведения о программах. Средства анализа кода повышение качества кода и кода генераторы шаблона можно найти в построение приложения. Как средства получать аналитическую, им требуется доступ к больше и больше из кода глубокого знания, обладают исключительно компиляторами. А не непрозрачные преобразователи (исходный код в и объектный код out), компиляторы Roslyn предоставляют API, которые можно использовать для задач, связанных с кодом, в средствах и приложениях.
@@ -21,4 +21,4 @@ ms.locfileid: "54918814"
  Лучше всего то, что компиляторы Roslyn, их интерфейсы API, примеры и пошаговые руководства и реальные средства, созданная на основе этих API являются полностью открытым исходным кодом в [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn). Перейдите на сайт OSS, Дополнительные сведения и приступить к работе с Roslyn. Вы найдете ссылки на последние сведения C# и возможности Visual Basic, которые можно использовать как конечного пользователя, а также ссылки, чтобы приступить к работе, как построитель средство, используя API Roslyn.
 
 ## <a name="see-also"></a>См. также
- [Начало работы с анализаторами Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [Начало работы с анализаторами Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)

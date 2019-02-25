@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e31e34c634965dc00a5d8c806759ec82cf78d014
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604578"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
 
@@ -216,7 +216,7 @@ ms.locfileid: "54863985"
 
 ## <a name="see-also"></a>См. также
 
-[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 [Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

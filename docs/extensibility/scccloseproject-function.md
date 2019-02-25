@@ -12,42 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67f0a7ee44f948c46a77f17234b139b271b66d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0420aa4d7148e6409dd6edab903ffbc3e7644f35
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947846"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683854"
 ---
 # <a name="scccloseproject-function"></a>Функция SccCloseProject
-Эта функция закрывает проект, отмечающую конец конкретного сеанса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-SCCRTN SccCloseProject (  
-   LPVOID pvContext  
-);  
-```  
-  
-### <a name="parameters"></a>Параметры  
- pvContext  
- Структура подключаемого модуля контекста исходного элемента управления.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
-  
-|Значение|Описание:|  
-|-----------|-----------------|  
-|SCC_OK|Проект был успешно закрыт.|  
-|SCC_E_PROJNOTOPEN|Проект не открыт.|  
-|SCC_E_NOTAUTHORIZED|Пользователю запрещено для этой операции.|  
-|SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|  
-  
-## <a name="remarks"></a>Примечания  
- [SccOpenProject](../extensibility/sccopenproject-function.md) всегда вызывается перед этой функцией. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), для завершения подключения к системе управления версиями, полностью.  
-  
-## <a name="see-also"></a>См. также  
- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
- [SccOpenProject](../extensibility/sccopenproject-function.md)   
- [SccInitialize](../extensibility/sccinitialize-function.md)
+Эта функция закрывает проект, отмечающую конец конкретного сеанса.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+SCCRTN SccCloseProject (
+   LPVOID pvContext
+);
+```
+
+### <a name="parameters"></a>Параметры
+ pvContext структура подключаемого модуля контекста исходного элемента управления.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
+
+|Значение|Описание:|
+|-----------|-----------------|
+|SCC_OK|Проект был успешно закрыт.|
+|SCC_E_PROJNOTOPEN|Проект не открыт.|
+|SCC_E_NOTAUTHORIZED|Пользователю запрещено для этой операции.|
+|SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|
+
+## <a name="remarks"></a>Примечания
+ [SccOpenProject](../extensibility/sccopenproject-function.md) всегда вызывается перед этой функцией. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), для завершения подключения к системе управления версиями, полностью.
+
+## <a name="see-also"></a>См. также
+- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)
+- [SccOpenProject](../extensibility/sccopenproject-function.md)
+- [SccInitialize](../extensibility/sccinitialize-function.md)

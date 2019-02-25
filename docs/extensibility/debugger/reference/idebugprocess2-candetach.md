@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::CanDetach | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::CanDetach
 helpviewer_keywords:
@@ -12,31 +12,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fc550482021397e219e685074a9cc9c6e6c837
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad1a127a390b27a08a89ac939d9dcce60e60a64e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015580"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695782"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-Определяет, если диспетчер отладки сеансов (SDM) можно отсоединить процесс.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT CanDetach(  
-   void  
-);  
-```  
-  
-```csharp  
-int CanDetach();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK.` возвращает `S_FALSE` Если отладчику не удается отсоединиться от процесса. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+Определяет, если диспетчер отладки сеансов (SDM) можно отсоединить процесс.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT CanDetach(
+   void
+);
+```
+
+```csharp
+int CanDetach();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK.` возвращает `S_FALSE` Если отладчику не удается отсоединиться от процесса. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33b0eba41b2faa7070452444779b14b85bf72f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315915"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711232"
 ---
 # <a name="evaluate-a-watch-expression"></a>Оценка выражения контрольных значений
 > [!IMPORTANT]
@@ -83,7 +83,6 @@ namespace EEMC
 Это реализация `IDebugParsedExpression::EvaluateSync` в неуправляемом коде. Вспомогательная функция `Evaluate` анализирует и вычисляет выражение, возвращая `VARIANT` удерживает результирующее значение. Вспомогательная функция `VariantValueToProperty` пакеты `VARIANT` в `CValueProperty` объекта.
 
 ```cpp
-[C++]
 STDMETHODIMP CParsedExpression::EvaluateSync(
     in  DWORD                 evalFlags,
     in  DWORD                 dwTimeout,
@@ -173,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>См. также
-[Оценка выражения окна контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
-[Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [Оценка выражения окна контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

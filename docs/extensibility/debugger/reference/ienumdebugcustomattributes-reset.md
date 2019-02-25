@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::Reset | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::Reset
 helpviewer_keywords:
@@ -12,32 +12,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1df26b5bf287337c305ad1e514852fda2a74f02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c25d2dc63002d41d49e6bdac8a106217ff49e277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977973"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719669"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
-Сбрасывает последовательность перечисления в начало.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT Reset(void);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- После вызова этого метода, следующий вызов [Далее](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) метод возвращает первый элемент перечисления.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
- [Вперед](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)
+Сбрасывает последовательность перечисления в начало.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT Reset(void);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ После вызова этого метода, следующий вызов [Далее](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) метод возвращает первый элемент перечисления.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+- [Вперед](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

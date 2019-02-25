@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3541355da9ea144129e730efe9876b4e6d642f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009574"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696523"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -45,17 +45,13 @@ enum enum_PROCESS_INFO_FLAGS { 
 
 ## <a name="members"></a>Участники
 
-PIFLAG_SYSTEM_PROCESS  
-Указывает, что процесс — это системный процесс.
+PIFLAG_SYSTEM_PROCESS указывает, что процесс — это системный процесс.
 
-PIFLAG_DEBUGGER_ATTACHED  
-Указывает, что отладка процесса с помощью отладчика. Возможно, она [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика, или он может быть некоторые другие отладчика, например, WinDbg.
+PIFLAG_DEBUGGER_ATTACHED указывает, что отладка процесса с помощью отладчика. Возможно, она [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика, или он может быть некоторые другие отладчика, например, WinDbg.
 
-PIFLAG_PROCESS_STOPPED  
-Указывает, что процесс будет остановлен. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+PIFLAG_PROCESS_STOPPED указывает, процесс будет остановлен. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
 
-PIFLAG_PROCESS_RUNNING  
-Указывает, что процесс выполняется. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+PIFLAG_PROCESS_RUNNING указывает, выполняется процесс. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
 
 ## <a name="remarks"></a>Примечания
 
@@ -73,5 +69,5 @@ Header: msdbg.h
 
 ## <a name="see-also"></a>См. также
 
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

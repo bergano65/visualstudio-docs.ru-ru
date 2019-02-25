@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025648"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629577"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 
@@ -63,11 +63,17 @@ Visual Studio использует службу выделение цветом 
 >  Помимо использования палитру языковой службы, пакет VSPackage можно также использовать универсальный механизм цветовой подсветки текста Visual Studio. Дополнительные сведения о механизме см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>В этом разделе
- [Реализация подсветку синтаксических конструкций](../../extensibility/internals/implementing-syntax-coloring.md) описание, как редактор получает доступ к языковой службы выделения синтаксиса цветом и языковой службы необходимо реализовать для поддержки выделения синтаксиса цветом.
+- [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md) показано, как использовать встроенные цветные элементы от языковой службы.
+ Описывает, как редактор получает доступ к языковой службы выделения синтаксиса цветом и его языковой службы необходимо реализовать поддержку синтаксиса выделение цветом.
 
- [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md) обсуждается реализация пользовательских цветных элементов.
+- [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ В этой статье демонстрируется использование встроенных цветных элементов от языковой службы.
+
+- [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)
+
+ В этой статье описывается использование пользовательских цветных элементов.
 
 ## <a name="see-also"></a>См. также
 

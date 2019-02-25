@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73214385e3bc2b8ac6dbe2dff8705377d6f14e12
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413596"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715678"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Указывает, какую информацию нужно извлечь по полю Дизассемблированный код.
@@ -62,44 +62,31 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 ```
 
 ## <a name="members"></a>Участники
-DSF_ADDRESS  
-Инициализация и использование `bstrAddress` поля.
+DSF_ADDRESS Initialize и использование `bstrAddress` поля.
 
-DSF_ADDRESSOFFSET  
-Инициализация и использование `bstrAddressOffset` поля.
+DSF_ADDRESSOFFSET Initialize и использование `bstrAddressOffset` поля.
 
-DSF_CODEBYTES  
-Инициализация и использование `bstrCodeBytes` поля.
+DSF_CODEBYTES Initialize и использование `bstrCodeBytes` поля.
 
-DSF_OPCODE  
-Инициализация и использование `bstrOpCode` поля.
+DSF_OPCODE Initialize и использование `bstrOpCode` поля.
 
-DSF_OPERANDS  
-Инициализация и использование `bstrOperands` поля.
+DSF_OPERANDS Initialize и использование `bstrOperands` поля.
 
-DSF_SYMBOL  
-Инициализация и использование `bstrSymbol` поля.
+DSF_SYMBOL Initialize и использование `bstrSymbol` поля.
 
-DSF_CODELOCATIONID  
-Инициализация и использование `uCodeLocationId` поля.
+DSF_CODELOCATIONID Initialize и использование `uCodeLocationId` поля.
 
-DSF_POSITION  
-Инициализация и использование `posBeg` и `posEnd` поля.
+DSF_POSITION Initialize и использование `posBeg` и `posEnd` поля.
 
-DSF_DOCUMENTURL  
-Инициализация и использование `bstrDocumentUrl` поля.
+DSF_DOCUMENTURL Initialize и использование `bstrDocumentUrl` поля.
 
-DSF_BYTEOFFSET  
-Инициализация и использование `dwByteOffset` поля.
+DSF_BYTEOFFSET Initialize и использование `dwByteOffset` поля.
 
-DSF_FLAGS  
-Инициализация и использование `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) поля.
+DSF_FLAGS Initialize и использование `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) поля.
 
-DSF_OPERANDS_SYMBOLS  
-Включить имена символов в `bstrOperands` поля.
+Имена включают DSF_OPERANDS_SYMBOLS символ в `bstrOperands` поля.
 
-DSF_ALL  
-Указывает все поля для потока Дизассемблированный код.
+DSF_ALL указывает все поля для потока Дизассемблированный код.
 
 ## <a name="remarks"></a>Примечания
 Переданный в качестве параметра для [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод, чтобы указать, какие поля [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры должны быть инициализированы.
@@ -116,7 +103,7 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
-[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

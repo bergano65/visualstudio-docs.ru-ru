@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Сопоставление схем и листов внутри Visual Studio
+title: Практическое руководство. Сопоставление схем и листов внутри Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,54 +17,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d01d68404314b366e968f0c2551352d8501ed9ae
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637377"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Как выполнить Сопоставление схем и листов внутри Visual Studio
-  На лист можно сопоставить схему XML, когда лист открыт в среде Visual Studio. Можно использовать те же средства Microsoft Office Excel, которые используются, если книга открыта вне Visual Studio. Проект Office создает те же объекты ли сопоставления схемы с листом до или после создания решения Excel.  
-  
- [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
-  
-> [!NOTE]  
->  Составные XML-схемы нельзя использовать в решениях Excel.  
-  
-## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Для сопоставления схемы XML в лист Excel в Visual Studio  
-  
-1.  Откройте книгу или шаблон проекта Excel в Visual Studio.  
-  
-2.  Выберите лист, чтобы переместить фокус в конструктор.  
-  
-3.  На ленте перейдите на вкладку **Разработчик** .  
-  
-    > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
-  
-4.  В **XML** щелкните **источника**.  
-  
-     **Источник XML** откроется окно.  
-  
-5.  В **источник XML** окно, нажмите кнопку **карт XML**.  
-  
-     **Карт XML** откроется диалоговое окно.  
-  
-6.  В **карт XML** диалоговом окне щелкните **добавить**.  
-  
-7.  Перейдите к нужному файлу схемы, выберите его и нажмите кнопку **откройте**.  
-  
-8.  Нажмите кнопку **ОК**.  
-  
-     Схема представлена в **источник XML** окна. В проекте, типизированный <xref:System.Data.DataSet> создается на основе схемы и <xref:System.Windows.Forms.BindingSource> создается.  
-  
-9. Перетащите элементы с **источник XML** окно до запятой на листе, в которой будут создаваться соответствующие элементы управления.  
-  
-     Если перетащить элемент схемы неповторяющихся Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемент управления, который автоматически привязывается к <xref:System.Windows.Forms.BindingSource>.  
-  
-     При перетаскивании повторяющегося элемента схемы Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.ListObject> элемент управления, который автоматически не привязан к источнику данных. Дополнительные сведения см. в разделе [XML-схем и данных в настройки уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
-  
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Практическое руководство. Сопоставление схем и листов внутри Visual Studio
+  На лист можно сопоставить схему XML, когда лист открыт в среде Visual Studio. Можно использовать те же средства Microsoft Office Excel, которые используются, если книга открыта вне Visual Studio. Проект Office создает те же объекты ли сопоставления схемы с листом до или после создания решения Excel.
+
+ [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
+
+> [!NOTE]
+>  Составные XML-схемы нельзя использовать в решениях Excel.
+
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Для сопоставления схемы XML в лист Excel в Visual Studio
+
+1.  Откройте книгу или шаблон проекта Excel в Visual Studio.
+
+2.  Выберите лист, чтобы переместить фокус в конструктор.
+
+3.  На ленте перейдите на вкладку **Разработчик** .
+
+    > [!NOTE]
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+
+4.  В **XML** щелкните **источника**.
+
+     **Источник XML** откроется окно.
+
+5.  В **источник XML** окно, нажмите кнопку **карт XML**.
+
+     **Карт XML** откроется диалоговое окно.
+
+6.  В **карт XML** диалоговом окне щелкните **добавить**.
+
+7.  Перейдите к нужному файлу схемы, выберите его и нажмите кнопку **откройте**.
+
+8.  Нажмите кнопку **ОК**.
+
+     Схема представлена в **источник XML** окна. В проекте, типизированный <xref:System.Data.DataSet> создается на основе схемы и <xref:System.Windows.Forms.BindingSource> создается.
+
+9. Перетащите элементы с **источник XML** окно до запятой на листе, в которой будут создаваться соответствующие элементы управления.
+
+     Если перетащить элемент схемы неповторяющихся Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемент управления, который автоматически привязывается к <xref:System.Windows.Forms.BindingSource>.
+
+     При перетаскивании повторяющегося элемента схемы Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.ListObject> элемент управления, который автоматически не привязан к источнику данных. Дополнительные сведения см. в разделе [XML-схем и данных в настройки уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
+
+## <a name="see-also"></a>См. также
+- [Практическое руководство. Сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
+- [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

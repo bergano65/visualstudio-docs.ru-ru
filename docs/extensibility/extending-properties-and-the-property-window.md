@@ -14,21 +14,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e72bbc19fef3f75bbd99d2d61902fd881c09bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068710"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723543"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Расширение свойств и окна свойств
-**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.  
-  
- При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md)  
- Объясняет, как может иметь пользовательских свойств в окне свойств.  
-  
- [Получение свойств проекта](../extensibility/getting-project-properties.md)  
- В этой статье описывается получение свойств проекта.
+**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.
+
+ При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).
+
+## <a name="in-this-section"></a>Содержание раздела
+- [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md) объясняет, как может иметь пользовательских свойств в окне свойств.
+
+- [Получение свойств проекта](../extensibility/getting-project-properties.md) объясняется, как получить свойства проекта.

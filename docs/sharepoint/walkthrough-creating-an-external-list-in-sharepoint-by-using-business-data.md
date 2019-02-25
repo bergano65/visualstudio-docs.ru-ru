@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600302"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -186,7 +186,7 @@ ms.locfileid: "54874189"
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Номер телефона|System.String|
+    |Телефон|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -276,7 +276,7 @@ ms.locfileid: "54874189"
 
 ## <a name="see-also"></a>См. также
 
-[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)  
-[Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
+[Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
+[Обзор средства конструирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

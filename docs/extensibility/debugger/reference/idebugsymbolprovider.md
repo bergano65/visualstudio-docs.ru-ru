@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 280494149225cb90ff60d4e3ac893061278f9641
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450559"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693442"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Этот интерфейс представляет поставщик символов, который предоставляет типы, возвращая их в виде полей и символы.
@@ -37,7 +37,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
 В следующей таблице показаны методы `IDebugSymbolProvider`.
 
-|Метод|Описание|
+|Метод|Описание:|
 |------------|-----------------|
 |`Initialize`|Не рекомендуется. Не используется.|
 |`Uninitialize`|Не рекомендуется. Не используется.|
@@ -104,4 +104,4 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 ```
 
 ## <a name="see-also"></a>См. также
-[Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

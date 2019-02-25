@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413362"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701229"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Извлекает отладочные символы с атрибутом заданный родительский объект для указанного модуля.
@@ -48,26 +48,33 @@ int GetSymAttribute (
 ```
 
 #### <a name="parameters"></a>Параметры
-`ulAppDomainID`  
-[in] Идентификатор домена приложения.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Уникальный идентификатор модуля.
+ [in] Идентификатор домена приложения.
 
-`tokParent`  
-[in] Токен для родительского атрибута.
+`guidModule`
 
-`pstrName`  
-[in] Имя модуля.
+ [in] Уникальный идентификатор модуля.
 
-`cBuffer`  
-[in] Число байтов, необходимых для выходных данных `buffer`.
+`tokParent`
 
-`pcBuffer`  
-[out] Длина выходного `buffer`.
+ [in] Токен для родительского атрибута.
 
-`buffer`  
-[out] Массив, содержащий символы.
+`pstrName`
+
+ [in] Имя модуля.
+
+`cBuffer`
+
+ [in] Число байтов, необходимых для выходных данных `buffer`.
+
+`pcBuffer`
+
+ [out] Длина выходного `buffer`.
+
+`buffer`
+
+ [out] Массив, содержащий символы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -104,4 +111,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

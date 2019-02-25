@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e90801f17690b48ba82e9fa80fba345e206c50b2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315928"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698005"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Описывает расположение точки останова по адресу в коде.
@@ -34,17 +34,13 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>Участники
-`bstrContext`  
-Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
+`bstrContext` Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
 
-`bstrModuleUrl`  
-URL-адрес модуля, содержащего точку останова.
+`bstrModuleUrl` URL-адрес модуля, содержащего точку останова.
 
-`bstrFunction`  
-Имя функции, содержащей точку останова.
+`bstrFunction` Имя функции, содержащей точку останова.
 
-`bstrAddress`  
-Адрес точки останова, который анализируется с вычислитель выражений, чтобы привязать его к [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
+`bstrAddress` Адрес точки останова, который анализируется с вычислитель выражений, чтобы привязать его к [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
@@ -57,6 +53,6 @@ Header: msdbg.h
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-[Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

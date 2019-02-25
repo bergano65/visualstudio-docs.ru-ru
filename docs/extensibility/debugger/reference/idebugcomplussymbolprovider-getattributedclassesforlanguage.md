@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6b8d23db5f1be603f71794426aff8d4a8283ffb
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412946"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706240"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Извлекает классы с помощью указанного атрибута, которые реализуются на указанном языке программирования.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesForLanguage (
     GUID               guidLanguage,
     LPOLESTR           pstrAttribute,
@@ -32,8 +31,7 @@ HRESULT GetAttributedClassesForLanguage (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesForLanguage (
     Guid                 guidLanguage,
     string               pstrAttribute,
@@ -42,14 +40,17 @@ int GetAttributedClassesForLanguage (
 ```
 
 #### <a name="parameters"></a>Параметры
-`guidLanguage`  
-[in] Уникальный идентификатор для языка.
+`guidLanguage`
 
-`pstrAttribute`  
-[in] Строка атрибута.
+ [in] Уникальный идентификатор для языка.
 
-`ppEnum`  
-[out] Возвращает перечисление классов атрибутов.
+`pstrAttribute`
+
+ [in] Строка атрибута.
+
+`ppEnum`
+
+ [out] Возвращает перечисление классов атрибутов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
@@ -186,4 +187,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>См. также
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

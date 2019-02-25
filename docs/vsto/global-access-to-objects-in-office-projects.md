@@ -30,57 +30,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f937acf163d3a9a1fed2e1dc83fa944c89c4b71a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864466"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600393"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Глобальный доступ к объектам в проектах Office
-  При создании проекта Office Visual Studio автоматически создает в проекте класс с именем `Globals` . Класс `Globals` можно использовать для доступа к различным элементам проекта из любого кода проекта в среде выполнения.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
-## <a name="how-to-use-the-globals-class"></a>Способы использования класса Globals  
- `Globals` является статическим классом, содержащим ссылки на определенные элементы проекта. С помощью класса `Globals` разработчик может обращаться к следующим элементам из любого кода проекта в среде выполнения:  
-  
-- Классы `ThisWorkbook` и `Sheet`*n* в книге Excel или проекте шаблона. Доступ к этим объектам осуществляется с помощью свойств `Globals.ThisWorkbook` и `Sheet`*n* .  
-  
-- Класс `ThisDocument` в документе Word или проекте шаблона. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisDocument` .  
-  
-- `ThisAddIn` Класса в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn` .  
-  
-- Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons` . Дополнительные сведения см. в разделе [доступа к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md).  
-  
-- Все области формы Outlook в проекте надстройки VSTO для Outlook. Доступ к областям формы осуществляется с помощью свойства `Globals.FormRegions` . Дополнительные сведения см. в разделе [доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md).  
-  
-- Объект фабрики, позволяющий создавать элементы управления ленты и ведущие элементы в среде выполнения в проектах, предназначенных для платформы [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Доступ к этому объекту осуществляется с помощью свойства `Globals.Factory` . Этот объект представляет собой экземпляр класса, который реализует один из следующих интерфейсов:  
-  
-  -   <xref:Microsoft.Office.Tools.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Word.Factory>  
-  
-  Например, свойство `Globals.Sheet1` позволяет вставлять текст в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на листе `Sheet1` , когда пользователь нажимает кнопку на панели действий в проекте уровня документа для Excel.  
-  
+  При создании проекта Office Visual Studio автоматически создает в проекте класс с именем `Globals` . Класс `Globals` можно использовать для доступа к различным элементам проекта из любого кода проекта в среде выполнения.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+## <a name="how-to-use-the-globals-class"></a>Способы использования класса Globals
+ `Globals` является статическим классом, содержащим ссылки на определенные элементы проекта. С помощью класса `Globals` разработчик может обращаться к следующим элементам из любого кода проекта в среде выполнения:
+
+- Классы `ThisWorkbook` и `Sheet`*n* в книге Excel или проекте шаблона. Доступ к этим объектам осуществляется с помощью свойств `Globals.ThisWorkbook` и `Sheet`*n* .
+
+- Класс `ThisDocument` в документе Word или проекте шаблона. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisDocument` .
+
+- `ThisAddIn` Класса в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn` .
+
+- Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons` . Дополнительные сведения см. в разделе [доступа к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md).
+
+- Все области формы Outlook в проекте надстройки VSTO для Outlook. Доступ к областям формы осуществляется с помощью свойства `Globals.FormRegions` . Дополнительные сведения см. в разделе [доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md).
+
+- Объект фабрики, позволяющий создавать элементы управления ленты и ведущие элементы в среде выполнения в проектах, предназначенных для платформы [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Доступ к этому объекту осуществляется с помощью свойства `Globals.Factory` . Этот объект представляет собой экземпляр класса, который реализует один из следующих интерфейсов:
+
+  -   <xref:Microsoft.Office.Tools.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Word.Factory>
+
+  Например, свойство `Globals.Sheet1` позволяет вставлять текст в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на листе `Sheet1` , когда пользователь нажимает кнопку на панели действий в проекте уровня документа для Excel.
+
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
-  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
-  
-## <a name="initialize-the-globals-class"></a>Инициализация класса Globals  
- Код, который пытается использовать `Globals` класс до инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.  
-  
-> [!NOTE]  
->  Класс `Globals` никогда не инициализируется во время разработки, но экземпляры элементов управления создаются разработчиком. Это означает, что, если создается пользовательский элемент управления, в котором свойство класса `Globals` используется в пользовательском классе элементов управления, нужно проверять, возвращает ли свойство значение **null** , прежде чем пытаться использовать возвращенный объект.  
-  
-## <a name="see-also"></a>См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
- [Ведущий элемент документа](../vsto/document-host-item.md)   
- [Ведущий элемент книги](../vsto/workbook-host-item.md)   
- [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
+
+## <a name="initialize-the-globals-class"></a>Инициализация класса Globals
+ Код, который пытается использовать `Globals` класс до инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.
+
+> [!NOTE]
+>  Класс `Globals` никогда не инициализируется во время разработки, но экземпляры элементов управления создаются разработчиком. Это означает, что, если создается пользовательский элемент управления, в котором свойство класса `Globals` используется в пользовательском классе элементов управления, нужно проверять, возвращает ли свойство значение **null** , прежде чем пытаться использовать возвращенный объект.
+
+## <a name="see-also"></a>См. также
+- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
+- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Ведущий элемент документа](../vsto/document-host-item.md)
+- [Ведущий элемент книги](../vsto/workbook-host-item.md)
+- [Ведущий элемент листа](../vsto/worksheet-host-item.md)
+- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
