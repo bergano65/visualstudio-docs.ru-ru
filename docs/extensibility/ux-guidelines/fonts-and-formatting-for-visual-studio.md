@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721827"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796755"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Шрифт среды разработки
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Шрифта среды 375% + светлый
- **Отображается следующим образом:** 34 pt Segoe UI Light **использования:** (такие случаи редки) уникальный типизированной пользовательского интерфейса, как и в Visual Studio 2017 начальной страницы
 
- **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:
+**Отображается следующим образом:** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Использование:** (такие случаи редки) уникальный типизированной пользовательского интерфейса, например на начальной странице
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Использование:** пользовательского интерфейса (такие случаи редки) уникальный фирменной символикой
+
+::: moniker-end
+
+**Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Задайте стиль TextBlock или метки, как показано.
+**XAML:** Задайте стиль TextBlock или метки, как показано.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Шрифта среды 310% + светлый
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Использование:**<br /><br /> -Большего размера заголовка в диалоговых окнах подписи<br />-Заголовок основного отчета<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса, такие как начальная страница<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 28 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 310% &#43; света заголовок](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Использование:**<br /><br /> -Большего размера заголовка в диалоговых окнах подписи<br />-Заголовок основного отчета<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 28 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 310% &#43; света заголовок](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Шрифта среды 200% + Полусветлый
 
