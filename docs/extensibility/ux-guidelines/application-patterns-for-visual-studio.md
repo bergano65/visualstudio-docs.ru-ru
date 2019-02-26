@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690465"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796885"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Шаблоны приложений для Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Окно взаимодействия
@@ -128,10 +128,22 @@ ms.locfileid: "56690465"
 
 **Другие окна инструментов**
 
+::: moniker range="vs-2017"
+
 | Окно инструментов | Функция |
 | --- | --- |
 | Панель элементов | Окна инструментов, используемый для хранения элементов, которые будут удалены на поверхности разработки, предоставляя согласованный источник перетаскивания для всех конструкторов. |
-| Начальная страница | Пользовательский портал для Visual Studio 2017, доступ к веб-каналы новостей для разработчиков, справки Visual Studio и последних проектов. Пользователи также могут создавать настраиваемые начальные страницы, скопировав файл StartPage.xaml из «Common7\IDE\StartPages\" каталог файлов программы Visual Studio для папки StartPages в Visual Studio Документирует каталог и затем либо изменив XAML вручную или открыв его в Visual Studio или другой редактор кода. |
+| Начальная страница | Пользовательский портал для Visual Studio с доступом к веб-каналы новостей для разработчиков, справки Visual Studio и последних проектов. Пользователи также могут создавать настраиваемые начальные страницы, скопировав файл StartPage.xaml из «Common7\IDE\StartPages\" каталог файлов программы Visual Studio для папки StartPages в Visual Studio Документирует каталог и затем либо изменив XAML вручную или открыв его в Visual Studio или другой редактор кода. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Окно инструментов | Функция |
+| --- | --- |
+| Панель элементов | Окна инструментов, используемый для хранения элементов, которые будут удалены на поверхности разработки, предоставляя согласованный источник перетаскивания для всех конструкторов. |
+
+::: moniker-end
 
 **Окна отладчика**
 

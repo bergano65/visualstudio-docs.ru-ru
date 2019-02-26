@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949477"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796820"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Ссылка проверки C++ Core Guidelines
 
@@ -201,7 +201,7 @@ ms.locfileid: "55949477"
 
 [C26446 USE_GSL_AT](c26446.md) предпочитают использовать `gsl::at()` вместо непроверенного оператора. См. в разделе [C++ Core Guidelines:  Bounds.4: Не используйте функции стандартной библиотеки и типы, которые не являются контролем границ](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) рекомендуется использовать `gsl::finally` Если предполагается финальное действие. См. в разделе [C++ Core Guidelines:  GSL.util: Служебные программы](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) рекомендуется использовать `gsl::finally` Если предполагается финальное действие. См. в разделе [C++ Core Guidelines:  GSL.util: Служебные программы](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` или `std::string_view` созданное на будут недействительными при временных становится недействительным. См. в разделе [C++ Core Guidelines: GSL.view: Представления](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
