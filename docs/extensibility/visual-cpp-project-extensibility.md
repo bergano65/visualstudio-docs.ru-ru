@@ -10,16 +10,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692064"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
-*Системы проектов Visual C++* используется для файлов с расширением VCXPROJ. Он основан на [Visual Studio распространенных система проектов (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) и предоставляет дополнительные идентификаторы, расширяемость для конкретного C++ указывает для облегчения интеграции новые наборы инструментов, архитектур сборки и целевых платформ. 
+*Системы проектов Visual C++* используется для файлов с расширением VCXPROJ. Он основан на [Visual Studio распространенных система проектов (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) и предоставляет дополнительные идентификаторы, расширяемость для конкретного C++ указывает для облегчения интеграции новые наборы инструментов, архитектур сборки и целевых платформ.
 
 ## <a name="c-msbuild-targets-structure"></a>Структура целевые объекты MSBuild для C++
 
@@ -47,7 +47,7 @@ ms.locfileid: "55232056"
 
    В архитектуре сборки с именем «Платформа» по историческим причинам.
 
-   Примеры Win32, x86, x64, ARM   
+   Примеры Win32, x86, x64, ARM
 
 - `$(PlatformToolset)`
 
@@ -55,18 +55,7 @@ ms.locfileid: "55232056"
 
 Эти значения свойства определяют имена папок в разделе `$(VCTargetsPath)` корневую папку:
 
-> `$(VCTargetsPath)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;*Тип приложения*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Платформы*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
-> &nbsp;&nbsp;&nbsp;&nbsp;Платформы\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(используется, когда `$(ApplicationType)` пуст, для проектов рабочего стола Windows)  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
+> `$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Тип приложения* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 настроек &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Платформ* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158настроек<spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252настроекплатформ</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Добавить новый набор инструментов платформы
 
@@ -97,27 +86,17 @@ ms.locfileid: "55232056"
 
 Упрощенное дерево операций импорта для файлов свойств и целевых объектов в Microsoft C++ выглядит так:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*по умолчанию*\\\*. *PROPS*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Тип приложения*\\`$(ApplicationType)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Тип приложения*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Тип приложения*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*платформ* \\ `$(Platform)` \\  *Platform.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*по умолчанию*\\\*. *PROPS*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*по умолчанию* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *тип приложения* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *тип приложения* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Тип приложения*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*платформ* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*по умолчанию*\\\*. *PROPS*
 
 Не задавать значение проектов рабочего стола Windows `$(ApplicationType)`, поэтому они импортировать только
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*по умолчанию*\\\*. *PROPS*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Платформы*\\`$(Platform)`\\*Platform.default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*по умолчанию*\\\*. *PROPS*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*по умолчанию* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *платформ* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *По умолчанию*\\\*. *PROPS*
 
-Мы будем использовать `$(_PlatformFolder)` свойство для хранения `$(Platform)` папки платформы. Это свойство является 
+Мы будем использовать `$(_PlatformFolder)` свойство для хранения `$(Platform)` папки платформы. Это свойство является
 
 > `$(VCTargetsPath)`\\*Платформы*\\`$(Platform)`
 
-для классических приложений Windows и 
+для классических приложений Windows и
 
 > `$(VCTargetsPath)`\\*Тип приложения*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*платформ*\\`$(Platform)`
 
@@ -125,22 +104,11 @@ ms.locfileid: "55232056"
 
 Файлы свойств импортируются в следующем порядке:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *PROPS*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *PROPS*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *PROPS* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152настроекImportAfter<spanclass="notranslate">*\\\*. *PROPS</span>*
 
 Файлы целевых объектов импортируются в следующем порядке:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *целевые объекты*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *целевые объекты*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102настроек<spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *целевые объекты* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *целевые объекты</span>*
 
 Если вам нужно определить некоторые свойства по умолчанию для вашего набора инструментов, можно добавить файлы в соответствующие папки и ImportAfter.
 
@@ -168,7 +136,7 @@ ms.locfileid: "55232056"
 
    Этот файл определяет расположение пакета SDK для Windows, а также определяет некоторые важные свойства, для приложения, предназначенные для Windows.
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Интеграция целей набор инструментов имеет значения по умолчанию, процесс сборки C++ 
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Интеграция целей набор инструментов имеет значения по умолчанию, процесс сборки C++
 
 По умолчанию, процесс сборки C++ определяется в *Microsoft.CppCommon.targets*. Существует целевые объекты не вызывайте любые средства для определенной сборки; они определяют действия, их зависимости и порядок сборки основной.
 
@@ -190,7 +158,7 @@ ms.locfileid: "55232056"
 
 - `$(BeforeBuildLinkTargets)`
 
-У каждого действия также есть до и после свойства. 
+У каждого действия также есть до и после свойства.
 
 ```xml
 <Target
@@ -232,7 +200,7 @@ ms.locfileid: "55232056"
 <Target Name="ClCompile"/>
 ```
 
-Так как `ClCompile` целевого пуст, если только он переопределяется атрибутом набор инструментов, не выполняет никаких действий реальные сборки. Можно переопределить целевые объекты набора инструментов `ClCompile` целевой, то есть они могут содержать другую `ClCompile` определения после импорта *Microsoft.CppBuild.targets*: 
+Так как `ClCompile` целевого пуст, если только он переопределяется атрибутом набор инструментов, не выполняет никаких действий реальные сборки. Можно переопределить целевые объекты набора инструментов `ClCompile` целевой, то есть они могут содержать другую `ClCompile` определения после импорта *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"
