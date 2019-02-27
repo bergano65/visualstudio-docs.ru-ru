@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925453"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638750"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Ведение журнала в многопроцессорной среде
 Поддержка нескольких процессоров в MSBuild позволяет существенно сократить время сборки проекта, но усложняет ведение журнала. В среде с одним процессором средство ведения журнала может обрабатывать входящие события, сообщения, предупреждения и ошибки последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Система MSBuild предоставляет новое средство ведения журнала с поддержкой многопроцессорных сред, а также позволяет создавать пользовательские средства ведения журнала с переадресацией.
@@ -71,5 +71,5 @@ Culture=neutral
 В параметре `-dl` имена двух средств ведения журнала разделены звездочкой (*).
 
 ## <a name="see-also"></a>См. также
-[Средства ведения журнала сборки](../msbuild/build-loggers.md)  
-[Создание средства ведения журнала с перенаправлением](../msbuild/creating-forwarding-loggers.md)
+- [Средства ведения журнала сборки](../msbuild/build-loggers.md)
+- [Создание средства ведения журнала с перенаправлением](../msbuild/creating-forwarding-loggers.md)

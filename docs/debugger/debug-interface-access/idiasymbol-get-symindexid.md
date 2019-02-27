@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 356daf5c0deaccbf9f93aaf62cb0aa983f942fcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2a7fcaa6a40e1a38b795ca858f4e2b3a419da71
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996172"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622492"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
-Извлекает идентификатор уникальный символ.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_symIndexId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает идентификатор символа для символа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает идентификатор уникальный символ.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_symIndexId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает идентификатор символа для символа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+ Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

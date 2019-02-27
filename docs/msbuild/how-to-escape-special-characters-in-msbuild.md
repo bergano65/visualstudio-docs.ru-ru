@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Пропуск специальных знаков в MSBuild | Документация Майкрософт
+title: Как выполнить Пропуск специальных знаков в MSBuild | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853944"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634634"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Как выполнить  Пропуск специальных знаков в MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Как выполнить Пропуск специальных знаков в MSBuild
 
 Некоторые символы имеют особое значение в файлах проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. К ним относятся точка с запятой (`;`) и звездочка (`*`). Полный список таких специальных знаков см. в разделе [Специальные символы в MSBuild](../msbuild/msbuild-special-characters.md).
 
@@ -51,6 +51,6 @@ ms.locfileid: "55853944"
 Вместо специального знака используйте нотацию `%<xx>`, где `<xx>` представляет собой шестнадцатеричное значение символа ASCII. Например, чтобы использовать символ звездочки (`*`) как буквенный символ, примените значение `%2A`.
 
 ## <a name="see-also"></a>См. также
-[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[Элементы](../msbuild/msbuild-items.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Элементы](../msbuild/msbuild-items.md)

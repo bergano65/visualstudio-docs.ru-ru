@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626691"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke - задача
 
@@ -30,7 +30,7 @@ ms.locfileid: "54963792"
 ## <a name="parameters"></a>Параметры
 
  В следующей таблице приводятся параметры задачи `XmlPoke` .
-  
+
 |Параметр|Описание|
 |---------------|-----------------|
 |`Namespaces`|Необязательный параметр `String` .<br /><br /> Задает пространства имен для префиксов запроса XPath. `Namespaces` — это фрагмент кода XML, состоящий из элементов `Namespace` с атрибутами `Prefix` и `Uri`. Атрибут `Prefix` указывает префикс для привязки к пространству имен, указанному в атрибуте `Uri`. Не используйте пустой `Prefix`.|
@@ -81,5 +81,5 @@ ms.locfileid: "54963792"
 
 ## <a name="see-also"></a>См. также
 
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

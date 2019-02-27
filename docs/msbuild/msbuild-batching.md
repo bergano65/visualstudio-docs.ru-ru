@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928404"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603473"
 ---
 # <a name="msbuild-batching"></a>Пакетная обработка MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять целевой объект или задачу с использованием каждого пакета.
@@ -100,7 +100,7 @@ ms.locfileid: "55928404"
 Дополнительные сведения о функциях свойств см. в разделе [Функции свойств](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>См. также
-[Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)
+- [Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)

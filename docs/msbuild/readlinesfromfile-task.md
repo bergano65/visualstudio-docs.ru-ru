@@ -18,50 +18,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c304f4c3f0a3bda805e8e32dc06c9ab0f370690
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c3b08ab26b30abe767674d51795dd4f3a4cfac01
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021157"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645437"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile - задача
-Считывает список элементов из текстового файла.  
-  
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `ReadLinesFromFile` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|  
-|`Lines`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит строки, считываемые из файла.|  
-  
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- Следующий пример использует задачу `ReadLinesFromFile` для создания элементов из списка в текстовом файле. Считанные из файла элементы хранятся в коллекции элементов `ItemsFromFile`.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-    </ItemGroup>  
-  
-    <Target Name="ReadFromFile">  
-        <ReadLinesFromFile  
-            File="@(MyTextFile)" >  
-            <Output  
-                TaskParameter="Lines"  
-                ItemName="ItemsFromFile"/>  
-        </ReadLinesFromFile>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+Считывает список элементов из текстового файла.
+
+## <a name="parameters"></a>Параметры
+ В следующей таблице приводятся параметры задачи `ReadLinesFromFile` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|
+|`Lines`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит строки, считываемые из файла.|
+
+## <a name="remarks"></a>Примечания
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+ Следующий пример использует задачу `ReadLinesFromFile` для создания элементов из списка в текстовом файле. Считанные из файла элементы хранятся в коллекции элементов `ItemsFromFile`.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+    </ItemGroup>
+
+    <Target Name="ReadFromFile">
+        <ReadLinesFromFile
+            File="@(MyTextFile)" >
+            <Output
+                TaskParameter="Lines"
+                ItemName="ItemsFromFile"/>
+        </ReadLinesFromFile>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [Задачи](../msbuild/msbuild-tasks.md)

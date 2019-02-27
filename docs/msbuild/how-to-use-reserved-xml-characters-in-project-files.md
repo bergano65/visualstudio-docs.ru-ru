@@ -11,65 +11,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc679aea2d5f2877233b62482cb241b7bf12565
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603878"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Как выполнить Использование резервных символов XML в файлах проектов
-При создании файлов проекта вам может потребоваться использовать зарезервированные символы XML, например, в значениях свойств или параметров задачи. Однако некоторые зарезервированные символы необходимо заменить именованными сущностями, чтобы файл проекта можно было проанализировать.  
-  
-## <a name="use-reserved-characters"></a>Использование зарезервированных знаков  
- В следующей таблице описаны зарезервированные символы XML, которые требуется заменить именованными сущностями, чтобы файл проекта можно было проанализировать.  
-  
-|Зарезервированный символ|Именованная сущность|  
-|------------------------|------------------|  
-|\<|&amp;lt;|  
-|>|&amp;gt;|  
-|&|&amp;amp;|  
-|"|&amp;quot;|  
-|'|&amp;apos;|  
-  
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Использование двойных кавычек в файле проекта  
-  
--   Замените двойные кавычки соответствующей именованной сущностью &amp;quot;. Например, чтобы заключить в двойные кавычки список элементов `EXEFile`, введите:  
-  
-    ```xml  
-    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    ```  
-  
-## <a name="example"></a>Пример  
- В следующем примере кода двойные кавычки используются для выделения имени файла в сообщении, выводимом файлом проекта.  
-  
-```xml  
-<Project DefaultTargets="Compile"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <!-- Set the application name as a property -->  
-    <PropertyGroup>  
-        <appname>"HelloWorldCS"</appname>  
-    </PropertyGroup>  
-    <!-- Specify the inputs -->  
-    <ItemGroup>  
-        <CSFile Include = "consolehwcs1.cs" />  
-    </ItemGroup>  
-    <Target Name = "Compile">  
-        <!-- Run the Visual C# compilation using input  
-        files of type CSFile -->  
-        <Csc Sources = "@(CSFile)">  
-            <!-- Set the OutputAssembly attribute of the CSC task  
-            to the name of the executable file that is created -->  
-            <Output  
-                TaskParameter = "OutputAssembly"  
-                ItemName = "EXEFile"/>  
-        </Csc>  
-        <!-- Log the file name of the output file -->  
-        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)    
- [MSBuild](../msbuild/msbuild.md)    
+При создании файлов проекта вам может потребоваться использовать зарезервированные символы XML, например, в значениях свойств или параметров задачи. Однако некоторые зарезервированные символы необходимо заменить именованными сущностями, чтобы файл проекта можно было проанализировать.
+
+## <a name="use-reserved-characters"></a>Использование зарезервированных знаков
+ В следующей таблице описаны зарезервированные символы XML, которые требуется заменить именованными сущностями, чтобы файл проекта можно было проанализировать.
+
+|Зарезервированный символ|Именованная сущность|
+|------------------------|------------------|
+|\<|&amp;lt;|
+|>|&amp;gt;|
+|&|&amp;amp;|
+|"|&amp;quot;|
+|'|&amp;apos;|
+
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Использование двойных кавычек в файле проекта
+
+-   Замените двойные кавычки соответствующей именованной сущностью &amp;quot;. Например, чтобы заключить в двойные кавычки список элементов `EXEFile`, введите:
+
+    ```xml
+    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    ```
+
+## <a name="example"></a>Пример
+ В следующем примере кода двойные кавычки используются для выделения имени файла в сообщении, выводимом файлом проекта.
+
+```xml
+<Project DefaultTargets="Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <!-- Set the application name as a property -->
+    <PropertyGroup>
+        <appname>"HelloWorldCS"</appname>
+    </PropertyGroup>
+    <!-- Specify the inputs -->
+    <ItemGroup>
+        <CSFile Include = "consolehwcs1.cs" />
+    </ItemGroup>
+    <Target Name = "Compile">
+        <!-- Run the Visual C# compilation using input
+        files of type CSFile -->
+        <Csc Sources = "@(CSFile)">
+            <!-- Set the OutputAssembly attribute of the CSC task
+            to the name of the executable file that is created -->
+            <Output
+                TaskParameter = "OutputAssembly"
+                ItemName = "EXEFile"/>
+        </Csc>
+        <!-- Log the file name of the output file -->
+        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

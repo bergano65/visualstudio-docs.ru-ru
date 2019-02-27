@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485057"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622024"
 ---
 # <a name="getfilehash-task"></a>Задача GetFileHash
 
@@ -65,6 +65,6 @@ ms.locfileid: "55485057"
 
 ## <a name="see-also"></a>См. также
 
-[Задачи](../msbuild/msbuild-tasks.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
 
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

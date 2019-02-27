@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922125"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645489"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 
@@ -42,7 +42,7 @@ ms.locfileid: "55922125"
 
 ### <a name="configuring-clangformat-options"></a>Настройка параметров ClangFormat
 
-В Visual Studio 2017 версии 15.7 и более поздних версий поддержка ClangFormat включена по умолчанию. Вы можете выбрать, какие из этих общих соглашений о форматировании должны применяться ко всем вашим проектам: LLVM, Google, Chromium, Mozilla или WebKit. Можно также создать файл .clang-format или _clang-format для настраиваемого определения формата. Такой файл уже присутствует в папке проекта, Visual Studio использует его для форматирования всех файлов исходного кода в этой папке и вложенных в нее папках. 
+В Visual Studio 2017 версии 15.7 и более поздних версий поддержка ClangFormat включена по умолчанию. Вы можете выбрать, какие из этих общих соглашений о форматировании должны применяться ко всем вашим проектам: LLVM, Google, Chromium, Mozilla или WebKit. Можно также создать файл .clang-format или _clang-format для настраиваемого определения формата. Такой файл уже присутствует в папке проекта, Visual Studio использует его для форматирования всех файлов исходного кода в этой папке и вложенных в нее папках.
 
 По умолчанию Visual Studio выполняет clangformat.exe в фоновом режиме, применяя форматирование по мере ввода. Можно также указать, чтобы эта программа запускалась только для вызываемых вручную команд форматирования **Форматировать документ (CTRL+K, CTRL+D)** или **Форматировать выбранный фрагмент (CTRL+K, CTRL+F)**.
 

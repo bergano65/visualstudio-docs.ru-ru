@@ -16,28 +16,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d7dd3a6ecfbaf86c607a5dd42dde1b9fe10e2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b73ddd4715d3abd29f87d7ef38a269d821733ba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610293"
 ---
 # <a name="combinepath-task"></a>CombinePath - задача
-Объединяет указанные пути в единый путь.  
-  
-## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры [задачи CombinePath](../msbuild/combinepath-task.md).  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`BasePath`|Обязательный параметр `String` .<br /><br /> Базовый путь для объединения с другими путями. Может представлять собой относительный, абсолютный путь или быть пустым.|  
-|`Paths`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Список отдельных путей, объединяемых с BasePath для получения объединенного пути. Пути могут быть как относительными, так и абсолютными.|  
-|`CombinedPaths`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Объединенный путь, созданный этой задачей.|  
-  
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+Объединяет указанные пути в единый путь.
+
+## <a name="task-parameters"></a>Параметры задачи
+ В следующей таблице приводятся параметры [задачи CombinePath](../msbuild/combinepath-task.md).
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`BasePath`|Обязательный параметр `String` .<br /><br /> Базовый путь для объединения с другими путями. Может представлять собой относительный, абсолютный путь или быть пустым.|
+|`Paths`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Список отдельных путей, объединяемых с BasePath для получения объединенного пути. Пути могут быть как относительными, так и абсолютными.|
+|`CombinedPaths`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Объединенный путь, созданный этой задачей.|
+
+## <a name="remarks"></a>Примечания
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>См. также
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e59bf79355b4e610091ac8662b8d2a01af322
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318684"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608504"
 ---
 # <a name="datakind"></a>DataKind
 Указывает область конкретного значения данных.
@@ -40,35 +40,25 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Элементы
-DataIsUnknown  
-Не удается определить символ данных.
+Не удается определить символ DataIsUnknown данных.
 
-DataIsLocal  
-Элемент данных — это локальная переменная.
+Элемент данных DataIsLocal является локальной переменной.
 
-DataIsStaticLocal  
-Элемент данных является статической локальной переменной.
+Элемент данных DataIsStaticLocal является статической локальной переменной.
 
-DataIsParam  
-Элемент данных является формальным параметром.
+Элемент данных DataIsParam является формальным параметром.
 
-DataIsObjectPtr  
-Элемент данных является указателем объекта (`this`).
+Элемент данных DataIsObjectPtr является указателем объекта (`this`).
 
-DataIsFileStatic  
-Элемент данных — это переменная уровня файла.
+Элемент данных DataIsFileStatic — это переменная уровня файла.
 
-DataIsGlobal  
-Элемент данных является глобальной переменной.
+Элемент данных DataIsGlobal является глобальной переменной.
 
-DataIsMember  
-Элемент данных является переменной члена объекта.
+Элемент данных DataIsMember является переменной члена объекта.
 
-DataIsStaticMember  
-Элемент данных является статической переменной класса.
+Элемент данных DataIsStaticMember является статической переменной класса.
 
-DataIsConstant  
-Элемент данных — это постоянное значение.
+Элемент данных DataIsConstant является константа.
 
 ## <a name="remarks"></a>Примечания
 Возвращаемые значения в этом перечислении [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.
@@ -77,5 +67,5 @@ DataIsConstant
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

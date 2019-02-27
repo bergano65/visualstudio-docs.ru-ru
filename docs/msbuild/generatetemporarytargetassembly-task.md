@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853876"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610038"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Задача GenerateTemporaryTargetAssembly
 Задача <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> создает сборку, если по меньшей мере одна страница [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.
@@ -71,9 +71,9 @@ ms.locfileid: "55853876"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
-[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

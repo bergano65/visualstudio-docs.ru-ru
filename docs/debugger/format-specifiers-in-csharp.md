@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227687"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698993"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели в формата C# в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата. Можно также использовать описатели формата в **Интерпретация** окне **команда** окно в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и в окнах исходного кода. Если вы приостановите выполнение выражения в этих окон, результат будет отображаться в [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанный формат отображения.
@@ -68,5 +68,5 @@ ms.locfileid: "56227687"
 |results|Используется с переменной типа, реализующего интерфейс IEnumerable или IEnumerable\<T >, обычно это результат выражения запроса. Отображает только члены, которые содержат результат запроса.|Отображение всех членов.|Отображение членов, соответствующих условиям запроса.|
 
 ## <a name="see-also"></a>См. также
-[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)  
-[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)
+- [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)
+- [Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)

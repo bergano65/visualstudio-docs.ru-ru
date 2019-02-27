@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e450ef87733ffed88436114458d804c125fc20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643838"
 ---
 # <a name="item-definitions"></a>Определения элементов
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.
@@ -252,4 +252,4 @@ ms.locfileid: "55956978"
 ```
 
 ## <a name="see-also"></a>См. также
-[Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)
+- [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)

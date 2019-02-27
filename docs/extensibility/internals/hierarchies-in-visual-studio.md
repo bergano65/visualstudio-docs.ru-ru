@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616889"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841783"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Иерархии в Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) выводит проект как *иерархии*. В интегрированной среде разработки иерархия представляет собой дерево узлов, где каждый узел имеет набор связанных свойств. Объект *проекта иерархии* — это контейнер, в которой хранятся элементы проекта, связей элементов и связанных свойств элементов и команд.
@@ -35,4 +35,4 @@ ms.locfileid: "56616889"
 ## <a name="see-also"></a>См. также
 - [Типы проектов](../../extensibility/internals/project-types.md)
 - [Выбор и актуальность в интегрированной среде разработки](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Примеры VSSDK](http://aka.ms/vs2015sdksamples)
+- [Примеры VSSDK](https://aka.ms/vs2015sdksamples)

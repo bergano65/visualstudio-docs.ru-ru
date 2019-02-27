@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996211"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634062"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Visual Studio предоставляет множество эффективны
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Visual Studio предоставляет множество эффективны
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
-  
+##  <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования
+
 1.  Сначала установите точку останова в приложении в следующей строке кода в конструкторе `Simple`:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Visual Studio предоставляет множество эффективны
 
     > [!TIP]
     > С помощью двух точек останова можно ограничить сбор данных частями кода, которые требуется проанализировать.
-  
+
 1.  Окно **Средства диагностики** должно отображаться, если вы не отключали эту функцию. Чтобы снова открыть окно, щелкните **Отладка** > **Окна** > **Показать средства диагностики**.
 
 1.  Щелкните **Отладка** > **Начать отладку** (**Запустить** на панели инструментов или **F5**).
@@ -189,7 +189,7 @@ Visual Studio предоставляет множество эффективны
      Теперь у вас есть данные о производительности приложения именно для той области кода, которая выполняется между двумя точками останова.
 
      Профилировщик начинает подготавливать данные потока. Дождитесь завершения этой операции.
-  
+
      Средство "Загрузка ЦП" выведет отчет на вкладке **Загрузка ЦП**.
 
      На этом этапе можно начать анализировать данные.
@@ -207,7 +207,7 @@ Visual Studio предоставляет множество эффективны
 
 2. В списке функций дважды щелкните функцию `MyProfilingApp_MVC.Models.ServerClass::GetNumber`.
 
-    В левой области откроется представление **Вызывающий/вызываемый**. 
+    В левой области откроется представление **Вызывающий/вызываемый**.
 
     ![Представление "Вызывающий/вызываемый" в средствах диагностики](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Visual Studio предоставляет множество эффективны
 - [Анализируйте загрузку ЦП](../profiling/cpu-usage.md) для получения более подробных сведений о загрузке ЦП.
 - Анализируйте загрузку ЦП без подключения отладчика или путем указания выполняющегося приложения. Дополнительные сведения см. в разделе [Сбор данных профилирования без отладки](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) и в статье [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
 
- [Профилирование в Visual Studio](../profiling/index.md)  
- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
+- [Профилирование в Visual Studio](../profiling/index.md)
+- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

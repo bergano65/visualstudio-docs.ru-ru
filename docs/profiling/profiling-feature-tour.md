@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611924"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Краткое руководство. Первое знакомство со средствами профилирования
 
@@ -149,22 +149,22 @@ Visual Studio предоставляет широкий набор средст�
 
 ![Средство "Обозреватель производительности"](../profiling/media/prof-tour-performance-explorer.png "Обозреватель производительности")
 
-## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
+## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?
 
 Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.
-  
-|Средство производительности|Классические приложения Windows|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Средство производительности|Классические приложения Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[Использование ЦП](../profiling/cpu-usage.md)|да|да|да|
-|[Использование памяти](../profiling/memory-usage.md)|да|да|да| 
-|[Использование GPU](../debugger/gpu-usage.md)|да|да|нет| 
+|[Использование памяти](../profiling/memory-usage.md)|да|да|да|
+|[Использование GPU](../debugger/gpu-usage.md)|да|да|нет|
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|Нет|
 |[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|
 |[Обозреватель производительности](../profiling/performance-explorer.md)|да|Нет|да|
 |[IntelliTrace](../debugger/intellitrace.md)|Только .NET с Visual Studio Enterprise|Только .NET с Visual Studio Enterprise|Только .NET с Visual Studio Enterprise|
 |[Использование сети](../profiling/network-usage.md)|Нет|да|Нет|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет|
 |[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|
 
-## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>См. также
+- [Отладка в Visual Studio](/visualstudio/debugger/debugger-feature-tour)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854113"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626626"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest - задача
 Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.
@@ -88,7 +88,7 @@ ms.locfileid: "55854113"
 
 > [!NOTE]
 > В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
-> 
+>
 > [!NOTE]
 > Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ ms.locfileid: "55854113"
 
 > [!NOTE]
 > В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
-> 
+>
 > [!NOTE]
 > Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ ms.locfileid: "55854113"
 
 > [!NOTE]
 > В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
-> 
+>
 > [!NOTE]
 > Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ ms.locfileid: "55854113"
 ```
 
 ## <a name="see-also"></a>См. также
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
-[Задача SignFile](../msbuild/signfile-task.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
+- [Задача SignFile](../msbuild/signfile-task.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621621"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011. Затратный метод CompareTo
 
-|||  
-|-|-|  
-|Идентификатор правила|DA0011|  
-|Категория|Использование .NET Framework|  
-|Методы профилирования|Дискретизация<br /><br /> Память .NET|  
-|Сообщение|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|  
-|Тип правила|Предупреждение|  
+|||
+|-|-|
+|Идентификатор правила|DA0011|
+|Категория|Использование .NET Framework|
+|Методы профилирования|Дискретизация<br /><br /> Память .NET|
+|Сообщение|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|
+|Тип правила|Предупреждение|
 
-## <a name="cause"></a>Причина  
- Метод CompareTo типа является затратным или выделяет память.  
+## <a name="cause"></a>Причина
+ Метод CompareTo типа является затратным или выделяет память.
 
-## <a name="rule-description"></a>Описание правила  
- Методы CompareTo должны быть эффективными и не выделять память.  
+## <a name="rule-description"></a>Описание правила
+ Методы CompareTo должны быть эффективными и не выделять память.
 
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
+## <a name="how-to-fix-violations"></a>Устранение нарушений
  Упростите метод CompareTo.

@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 561527f24da6d46236b6484ac081f43864431650
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d60fa2ebefb7e1e4eefccce866a1059fdbc78a1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623805"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
-Получает значение регистра.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_registerValue (   
-   DWORD      index,  
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `index`  
- [in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) перечисление, определяющее, зарегистрируйтесь, чтобы получить значение.  
-  
- `pRetVal`  
- [out] Возвращает текущее значение регистра.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [Перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)
+Получает значение регистра.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_registerValue ( 
+   DWORD      index,
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `index`
+
+[in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) перечисление, определяющее, зарегистрируйтесь, чтобы получить значение.
+
+ `pRetVal`
+
+[out] Возвращает текущее значение регистра.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [Перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

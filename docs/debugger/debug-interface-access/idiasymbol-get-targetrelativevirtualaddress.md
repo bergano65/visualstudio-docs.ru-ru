@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f38b983945b7182f0e0822133f6542922dc1f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 13c0d42dbfdbe5016e4072bc3473da31f20b0752
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016293"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611702"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
-Возвращает относительный виртуальный адрес (RVA) преобразовать конечный.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_targetRelativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает относительный виртуальный адрес преобразовать конечный.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Возвращает относительный виртуальный адрес (RVA) преобразовать конечный.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_targetRelativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает относительный виртуальный адрес преобразовать конечный.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
- Данное свойство допустимо только если символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.  
-  
- «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+ Данное свойство допустимо только если символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.
+
+ «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

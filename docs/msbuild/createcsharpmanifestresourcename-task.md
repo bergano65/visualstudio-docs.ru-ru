@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80935ade646d9687a5ec7b0e1fe7f83e9c99e89c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7ddede6870a982520b87cf8ec497788b4731244
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031751"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640549"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName - задача
-Создает имя манифеста в стиле [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] на основе заданного имени *RESX*-файла или другого ресурса.  
+Создает имя манифеста в стиле [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] на основе заданного имени *RESX*-файла или другого ресурса.
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице описаны параметры [задачи CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).  
+## <a name="parameters"></a>Параметры
+ В следующей таблице описаны параметры [задачи CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).
 
 
 | Параметр | Описание |
@@ -38,11 +38,11 @@ ms.locfileid: "55031751"
 | `PrependCultureAsDirectory` | Необязательный параметр `Boolean` .<br /><br /> Если `true`, имя языка и региональных параметров добавляется в имя папки перед именем ресурса манифеста. Значение по умолчанию — `true`. |
 | `ResourceFilesWithManifestResourceNames` | Необязательный параметр вывода `String`, доступный только для чтения.<br /><br /> Возвращает имя файла ресурса, содержащее имя ресурса манифеста. |
 
-## <a name="remarks"></a>Примечания  
- [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному *RESX*-файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.  
+## <a name="remarks"></a>Примечания
+ [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному *RESX*-файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.
 
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

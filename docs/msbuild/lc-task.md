@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938934"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638705"
 ---
 # <a name="lc-task"></a>LC - задача
 Создает программу-оболочку для файл *LC.exe* для создания *LICENSE*-файла из *LICX*-файла. Дополнительные сведения о *LC.exe* см. в разделе [LC.exe (компилятор лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).
@@ -67,5 +67,5 @@ ms.locfileid: "55938934"
 ```
 
 ## <a name="see-also"></a>См. также
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

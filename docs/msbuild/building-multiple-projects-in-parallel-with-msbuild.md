@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853070"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600967"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Параллельное построение нескольких проектов с помощью MSBuild
 С помощью MSBuild вы можете ускорить сборку нескольких проектов, выполняя ее параллельно. Для параллельного выполнения сборки используйте следующие параметры на компьютере с несколькими процессорами или многоядерным процессором:
@@ -70,6 +70,6 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="see-also"></a>См. также
-[Использование нескольких процессоров при сборке проектов](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Запись средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Блог о настройке параллелизма сборки в C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Использование нескольких процессоров при сборке проектов](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Запись средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Блог о настройке параллелизма сборки в C++](http://go.microsoft.com/fwlink/?LinkId=251457)

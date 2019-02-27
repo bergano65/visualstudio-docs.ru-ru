@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949805"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841754"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 
@@ -64,7 +64,7 @@ ms.locfileid: "54949805"
 
 Старый механизм, предполагающий использование интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, по-прежнему поддерживается, но по сути обновляет систему проекта в процессе открытия проекта. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Интерфейса таким образом вызывается среды Visual Studio, даже если <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> вызывается или реализуется интерфейс. Такой подход позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> для реализации обновления с копированием только для частей проекта, а остальную работу выполнять на месте (возможно, в новом расположении) с помощью интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
-Для реализации примера <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, см. в разделе [примеры VSSDK](http://aka.ms/vs2015sdksamples).
+Для реализации примера <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, см. в разделе [примеры VSSDK](https://aka.ms/vs2015sdksamples).
 
 При обновлении проектов возникают описанные ниже ситуации.
 

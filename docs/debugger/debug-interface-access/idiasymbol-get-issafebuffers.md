@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623163353f0e1c95c073eeef91518617ba68c658
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30a2f26a1488500f256b6ba9a0ec96eca9b952f8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922643"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626403"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Получает флаг, указывающий, следует ли использовать директиву препроцессора для безопасном буфере. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` если указатель использует директивы препроцессора для безопасном буфере; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, следует ли использовать директиву препроцессора для безопасном буфере. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isSafeBuffers( 
+   BOOL* pRetVal)
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` если указатель использует директивы препроцессора для безопасном буфере; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
-  
- Библиотека: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict_gs_check](/cpp/preprocessor/strict-gs-check)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+
+## <a name="requirements"></a>Требования
+ Заголовок: Dia2.h
+
+ Библиотека: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [strict_gs_check](/cpp/preprocessor/strict-gs-check)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853772"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643799"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
 Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.
@@ -58,5 +58,5 @@ ms.locfileid: "55853772"
 ```
 
 ## <a name="see-also"></a>См. также
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -15,31 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2a7dd34e0080dbf84a1ab13cd7e8901f601b38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955301"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690517"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
-Запускает контекст отслеживания.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
+Запускает контекст отслеживания.
+
+## <a name="syntax"></a>Синтаксис
+
 ```cpp
-HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- [in] `intermediateDirectory`  
- Каталог, в котором хранится журнал отслеживания.  
-  
- [in] `taskName`  
- Определяет контекст отслеживания. Это имя используется для создания имени файла журнала.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.  
-  
-## <a name="requirements"></a>Требования  
+HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
+```
+
+#### <a name="parameters"></a>Параметры
+[in] `intermediateDirectory`
+
+ Каталог, в котором хранится журнал отслеживания.
+
+[in] `taskName`
+
+ Определяет контекст отслеживания. Это имя используется для создания имени файла журнала.
+
+## <a name="return-value"></a>Возвращаемое значение
+ **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.
+
+## <a name="requirements"></a>Требования
  **Заголовок.** *FileTracker.h*
