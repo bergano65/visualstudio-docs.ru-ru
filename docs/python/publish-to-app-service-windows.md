@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d6ff3f4d13e2182c5187bc80489115b8c351c194
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935333"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713546"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Публикация в службу приложений Azure на платформе Windows
 
@@ -28,7 +28,7 @@ Visual Studio предоставляет возможность опублико
 В Visual Studio 2017 и Visual Studio 2015 процесс публикации различается. В частности, в Visual Studio 2015 автоматизирован ряд действий, включая создание файла `web.config`, однако в долгосрочной перспективе эта автоматизация ограничивает гибкость и возможности управления. В Visual Studio 2017 необходимо выполнять больше действий вручную, но обеспечивается более точный контроль над средой Python. В этой статье описываются оба варианта.
 
 > [!Note]
-> Общие сведения об изменениях, произошедших в Visual Studio 2017 по сравнению с Visual Studio 2015, см. в записи блога [Публикация в Azure в Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+> Общие сведения об изменениях, произошедших в Visual Studio 2017 по сравнению с Visual Studio 2015, см. в записи блога [Публикация в Azure в Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019571"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614601"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
-Представление профиля содержит отчеты, основанные на текущем видимом временном диапазоне и каналах. Для просмотра подробных сведений для разных подмножеств данных щелкните элементы в условных обозначениях.  
-  
- Здесь можно найти дополнительные сведения о данных в таблицах.  
-  
-## <a name="see-also"></a>См. также  
- [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Отчет о профиле выполнения](../profiling/execution-profile-report.md)   
- [Время синхронизации](../profiling/synchronization-time.md)   
- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)   
- [Время ожидания](../profiling/sleep-time.md)   
- [Время управления памятью](../profiling/memory-management-time.md)   
- [Время вытеснения](../profiling/preemption-time.md)   
- [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)   
- [Отчет операций диска](../profiling/disk-operations-report-threads-view.md)   
- [Сводный отчет по каждому потоку](../profiling/per-thread-summary-report.md)   
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+Представление профиля содержит отчеты, основанные на текущем видимом временном диапазоне и каналах. Для просмотра подробных сведений для разных подмножеств данных щелкните элементы в условных обозначениях.
+
+ Здесь можно найти дополнительные сведения о данных в таблицах.
+
+## <a name="see-also"></a>См. также
+- [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Отчет "Профиль выполнения"](../profiling/execution-profile-report.md)
+- [Время синхронизации](../profiling/synchronization-time.md)
+- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)
+- [Время ожидания](../profiling/sleep-time.md)
+- [Время управления памятью](../profiling/memory-management-time.md)
+- [Время вытеснения](../profiling/preemption-time.md)
+- [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)
+- [Отчет операций диска](../profiling/disk-operations-report-threads-view.md)
+- [Сводный отчет по каждому потоку](../profiling/per-thread-summary-report.md)
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)

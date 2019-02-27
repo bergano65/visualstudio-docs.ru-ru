@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602758"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Определяет соглашение вызова для функции.
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Элементы
-CV_CALL_NEAR_C  
-Определяет соглашение о вызове функций, с помощью практически извещающей справа налево. Вызываемая функция очищает стек.
+CV_CALL_NEAR_C указывает соглашение вызова функций, с помощью практически извещающей справа налево. Вызываемая функция очищает стек.
 
-CV_CALL_NEAR_FAST  
-Определяет соглашение о вызове функций, с помощью практически извещающей слева направо с помощью регистров. Эта функция использует количеству байтов, параметр для очистки стека.
+Указывает CV_CALL_NEAR_FAST соглашение о вызове функции с помощью Push-уведомлений почти слева направо с регистрирует. Эта функция использует количеству байтов, параметр для очистки стека.
 
-CV_CALL_NEAR_STD  
-Определяет соглашение о вызове функций, с помощью практически стандартный вызов (отправка справа налево).
+CV_CALL_NEAR_STD указывает соглашение вызова функций, с помощью практически стандартный вызов (отправка справа налево).
 
-CV_CALL_NEAR_SYS  
-Определяет соглашение о вызове функций, с помощью практически системного вызова.
+Указывает CV_CALL_NEAR_SYS вызовите соглашение вызова функций, с помощью практически системы.
 
-CV_CALL_THISCALL  
-Задает соглашение о вызове функций с помощью `this` вызова (`this` указатель передан в регистре).
+CV_CALL_THISCALL указывает соглашение о вызове функции с помощью `this` вызова (`this` указатель передан в регистре).
 
-CV_CALL_CLRCALL  
-Определяет соглашение о вызове функций, используемые с Common Language Runtime (CLR) (также известный как управляемый код соглашение о вызовах).
+Указывает CV_CALL_CLRCALL вызова функций правилом, используемым с Common Language Runtime (CLR) (также известный как управляемый код соглашение о вызовах).
 
 ## <a name="remarks"></a>Примечания
 Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) метод.
@@ -64,5 +58,5 @@ CV_CALL_CLRCALL
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

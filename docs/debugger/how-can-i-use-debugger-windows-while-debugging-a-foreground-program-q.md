@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca749d28b7931b6301d591f0bca513877f3060d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069685"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698031"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Как использовать окна отладчика при отладке активной программы?
-## <a name="problem-description"></a>Описание проблемы  
- Выполняются попытки отладить проблему отображения на экране. Для этого приходится держать программу активной, а это означает, что отсутствует доступ к окнам отладчика. Что можно сделать?  
-  
-## <a name="solution"></a>Решение  
- Если есть второй компьютер, используйте удаленную отладку. С двумя компьютерами можно посмотреть отображение на экране на удаленном компьютере, работая в отладчике на основном узле. Дополнительные сведения об удаленной отладке см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>См. также раздел  
- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Отладка машинного кода](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Описание проблемы
+ Выполняются попытки отладить проблему отображения на экране. Для этого приходится держать программу активной, а это означает, что отсутствует доступ к окнам отладчика. Что можно сделать?
+
+## <a name="solution"></a>Решение
+ Если есть второй компьютер, используйте удаленную отладку. С двумя компьютерами можно посмотреть отображение на экране на удаленном компьютере, работая в отладчике на основном хосте. Дополнительные сведения об удаленной отладке см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>См. также раздел
+- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
+- [Отладка машинного кода](../debugger/debugging-native-code.md)

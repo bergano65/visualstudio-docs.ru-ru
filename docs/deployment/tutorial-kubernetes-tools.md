@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965463"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843243"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы с Visual Studio Tools для Kubernetes
 
 В Visual Studio Tools Kubernetes помощи в упрощении разработки контейнерных приложений, предназначенных для Kubernetes. Visual Studio может автоматически создавать код конфигурации как файлы, необходимые для поддержки развертывания Kubernetes, такие как файлы Dockerfile и Helm диаграммы. Отладку кода в службе Azure Kubernetes (AKS) кластеру в оперативном режиме с помощью пространств разработки Azure или публиковать непосредственно в кластер AKS в Visual Studio.
 
-В этом учебнике с помощью Visual Studio, чтобы добавить поддержку Kubernetes в проект и опубликовать в AKS. Если вы заинтересованы в основном [пробелы разработки Azure](http://aka.ms/get-azds) для отладки и тестирования проекта, запущенного в AKS, то можете перейти к [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) вместо этого.
+В этом учебнике с помощью Visual Studio, чтобы добавить поддержку Kubernetes в проект и опубликовать в AKS. Если вы заинтересованы в основном [пробелы разработки Azure](https://aka.ms/get-azds) для отладки и тестирования проекта, запущенного в AKS, то можете перейти к [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) вместо этого.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -78,7 +78,7 @@ ms.locfileid: "54965463"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Публикация в службу Azure Kubernetes (AKS)
 
-Все эти файлы в месте можно использовать Visual Studio IDE также создавать и отлаживать код приложения, так же, как у вас всегда есть. Можно также использовать [пробелы разработки Azure](http://aka.ms/get-azds) для быстрого запуска и отладки кода в кластере AKS в реальном времени. Дополнительные сведения см. на [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Все эти файлы в месте можно использовать Visual Studio IDE также создавать и отлаживать код приложения, так же, как у вас всегда есть. Можно также использовать [пробелы разработки Azure](https://aka.ms/get-azds) для быстрого запуска и отладки кода в кластере AKS в реальном времени. Дополнительные сведения см. на [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Получив ваш код, запущенный нужным образом, можно опубликовать непосредственно из Visual Studio в кластер AKS.
 
@@ -120,4 +120,4 @@ ms.locfileid: "54965463"
 
 Узнайте больше о разработке Kubernetes в Azure, считывая [документацией по AKS](/azure/aks).
 
-Дополнительные сведения о пространствах разработки Azure можно найти [документации пробелы разработки Azure](http://aka.ms/get-azds)
+Дополнительные сведения о пространствах разработки Azure можно найти [документации пробелы разработки Azure](https://aka.ms/get-azds)

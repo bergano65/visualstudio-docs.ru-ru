@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 444e26aa0f4ec4cb7270f6632b6d5f7e56a34853
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600289"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840329"
 ---
 # <a name="handle-specialized-deployment"></a>Обработка специализированного развертывания
 Развертывание выполняется на необязательно для проектов. Например, веб-проекта поддерживает развертывания для проекта обновление веб-сервера. Аналогичным образом **смарт-устройств** проект поддерживает развертывание, чтобы скопировать созданное приложение на целевое устройство. Подтипов проекта можно указать поведение специализированного развертывания путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейс. Этот интерфейс определяет полный набор операций развертывания:
@@ -288,7 +288,7 @@ ms.locfileid: "56600289"
     ```
 
 > [!NOTE]
->  Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](http://aka.ms/vs2015sdksamples).
+>  Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>См. также
 - [Подтипов проекта](../../extensibility/internals/project-subtypes.md)

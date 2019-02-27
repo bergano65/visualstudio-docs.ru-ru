@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984058"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600677"
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
-Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>Участники  
-  
-### <a name="classes"></a>Классы  
-  
-|name|Описание|  
-|----------|-----------------|  
-|[Класс marker_series](../profiling/marker-series-class.md)|Представляет последовательный канал событий, созданных одним поставщиком.|  
-|[Класс span](../profiling/span-class.md)|Определяет этапы приложения.|  
-  
-### <a name="enumerations"></a>Перечисления  
-  
-|name|Описание|  
-|----------|-----------------|  
-|[Перечисление marker_importance](../profiling/marker-importance-enumeration.md)|Представляет уровень важности маркера визуализатора параллелизма.|  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkersobj.h*  
-  
- **Пространство имен:** параллелизм  
-  
-## <a name="see-also"></a>См. также  
- [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>Участники
+
+### <a name="classes"></a>Классы
+
+|name|Описание|
+|----------|-----------------|
+|[Класс marker_series](../profiling/marker-series-class.md)|Представляет последовательный канал событий, созданных одним поставщиком.|
+|[Класс span](../profiling/span-class.md)|Определяет этапы приложения.|
+
+### <a name="enumerations"></a>Перечисления
+
+|name|Описание|
+|----------|-----------------|
+|[Перечисление marker_importance](../profiling/marker-importance-enumeration.md)|Представляет уровень важности маркера визуализатора параллелизма.|
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkersobj.h*
+
+ **Пространство имен:** параллелизм
+
+## <a name="see-also"></a>См. также
+- [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)

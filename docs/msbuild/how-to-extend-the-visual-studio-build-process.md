@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908495"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603265"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Как выполнить  Расширение процесса сборки Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Как выполнить Расширение процесса сборки Visual Studio
 Процесс сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] определяется рядом *TARGETS*-файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — *Microsoft.Common.targets* — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. В этой статье описаны два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
 
 - Переопределение конкретных предварительно заданных целевых объектов, определенных в *Microsoft.Common.targets*.
@@ -35,8 +35,8 @@ ms.locfileid: "55908495"
 
 1. Выберите в *Microsoft.Common.targets* предварительно заданный целевой объект, который требуется переопределить. Приведенная ниже таблица содержит полный список целевых объектов, которые можно безопасно переопределить.
 
-2. Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Например:  
-  
+2. Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Например:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ ms.locfileid: "55908495"
         </Target>
     </Project>
     ```
-  
+
 3. Выполните сборку файла проекта.
 
 Следующая таблица показывает все целевые объекты в *Microsoft.Common.targets*, которые можно безопасно переопределить.
@@ -124,6 +124,6 @@ ms.locfileid: "55908495"
 |`CompileDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские процессы до или после этапа компиляции.|
 
 ## <a name="see-also"></a>См. также
-[интеграция Visual Studio](../msbuild/visual-studio-integration-msbuild.md);  
-[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
-[TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)
+- [интеграция Visual Studio](../msbuild/visual-studio-integration-msbuild.md);
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)

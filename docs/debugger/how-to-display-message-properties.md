@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отображение свойств сообщения | Документация Майкрософт
+title: 'Практическое: отображение свойств сообщения | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985569"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720163"
 ---
-# <a name="how-to-display-message-properties"></a>Как выполнить отображение свойств сообщения
-Чтобы получить дополнительные сведения о сообщениях, перечисленных в [представления сообщений](../debugger/messages-view.md), использовать [диалоговое окно "Свойства сообщения"](../debugger/message-properties-dialog-box.md).  
-  
-### <a name="to-open-a-message-properties-dialog-box"></a>Чтобы открыть диалоговое окно свойств сообщения  
-  
-1. Выберите сообщение дерево, отображаемое в представлении сообщений.  
-  
-2. Из **представление** меню, выберите **свойства**.  
-  
+# <a name="how-to-display-message-properties"></a>Практическое руководство. Отображение свойств сообщения
+Чтобы получить дополнительные сведения о сообщениях, перечисленных в [представления сообщений](../debugger/messages-view.md), использовать [диалоговое окно "Свойства сообщения"](../debugger/message-properties-dialog-box.md).
+
+### <a name="to-open-a-message-properties-dialog-box"></a>Чтобы открыть диалоговое окно свойств сообщения
+
+1. Выберите сообщение дерево, отображаемое в представлении сообщений.
+
+2. Из **представление** меню, выберите **свойства**.
+
    Диалоговые окна свойств не модальным, поэтому вы можете щелкнуть другой элемент в окне представления и диалоговом окне будут отображены сведения о выбранного элемента.

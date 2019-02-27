@@ -12,46 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb7fff92007160abdba64970d652ee73042661b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938137"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642759"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-Извлекает перечислитель кадр стека для типа конкретную платформу.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-  
-      HRESULT getEnumFrames2(   
-   enum  CV_CPU_TYPE_e    cpuid,  
-   IDiaStackWalkHelper*   pHelper,  
-   IDiaEnumStackFrames**  ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `cpuid`  
- [in] Значение из [перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) перечисления, указывающее тип платформы.  
-  
- `pHelper`  
- [in] Вспомогательный метод [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) объекта.  
-  
- `ppEnum`  
- [out] Возвращает [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) объект, содержащий список [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) объектов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Для получения списка кадр стека для только что x86 платформы, вызов [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) метод.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
- [Перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)
+Извлекает перечислитель кадр стека для типа конкретную платформу.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+
+      HRESULT getEnumFrames2( 
+   enum  CV_CPU_TYPE_e    cpuid,
+   IDiaStackWalkHelper*   pHelper,
+   IDiaEnumStackFrames**  ppEnum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `cpuid`
+
+[in] Значение из [перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) перечисления, указывающее тип платформы.
+
+ `pHelper`
+
+[in] Вспомогательный метод [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) объекта.
+
+ `ppEnum`
+
+[out] Возвращает [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) объект, содержащий список [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) объектов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Для получения списка кадр стека для только что x86 платформы, вызов [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) метод.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
+- [Перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

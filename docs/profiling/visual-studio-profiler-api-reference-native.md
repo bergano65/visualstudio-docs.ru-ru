@@ -13,38 +13,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 062f39644ee69ac03169ab2e59b49ab446654c6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042495"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615225"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
-API-интерфейсы профилировщика Visual Studio позволяют программно управлять объемом собранных данных и вставлять метки времени и профиля во время профилирования. Чтобы использовать собственный API, включите файл заголовка *VSPerf.h* и добавьте файл *VSPerf.lib* в свой проект.  
-  
+API-интерфейсы профилировщика Visual Studio позволяют программно управлять объемом собранных данных и вставлять метки времени и профиля во время профилирования. Чтобы использовать собственный API, включите файл заголовка *VSPerf.h* и добавьте файл *VSPerf.lib* в свой проект.
+
 > [!NOTE]
 > Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
-  
- [CommentMarkProfile](../profiling/commentmarkprofile.md)  
-  
- [MarkProfile](../profiling/markprofile.md)  
-  
- [NameProfile](../profiling/nameprofile.md)  
-  
- [ResumeProfile](../profiling/resumeprofile.md)  
-  
- [StartProfile](../profiling/startprofile.md)  
-  
- [StopProfile](../profiling/stopprofile.md)  
-  
- [SuspendProfile](../profiling/suspendprofile.md)  
-  
- [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
-  
-## <a name="see-also"></a>См. также  
- [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)   
- [Пошаговое руководство: использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)
+
+## <a name="in-this-section"></a>Содержание раздела
+[CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
+
+[CommentMarkProfile](../profiling/commentmarkprofile.md)
+
+[MarkProfile](../profiling/markprofile.md)
+
+[NameProfile](../profiling/nameprofile.md)
+
+[ResumeProfile](../profiling/resumeprofile.md)
+
+[StartProfile](../profiling/startprofile.md)
+
+[StopProfile](../profiling/stopprofile.md)
+
+[SuspendProfile](../profiling/suspendprofile.md)
+
+[PROFILE_CURRENTID](../profiling/profile-currentid.md)
+
+## <a name="see-also"></a>См. также
+
+- [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)
+- [Пошаговое руководство: использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)

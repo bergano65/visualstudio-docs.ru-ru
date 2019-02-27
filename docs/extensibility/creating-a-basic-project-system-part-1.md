@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692701"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843965"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.
@@ -35,7 +35,7 @@ ms.locfileid: "56692701"
  В этом пошаговом руководстве показано, как создать тип проекта, который имеет расширение имени файла проекта *.myproj*. В этом пошаговом руководстве использует существующие системы проекта Visual C#.
 
 > [!NOTE]
->  Дополнительные примеры проектов расширения, см. в разделе [примеры VSSDK](http://aka.ms/vs2015sdksamples).
+>  Дополнительные примеры проектов расширения, см. в разделе [примеры VSSDK](https://aka.ms/vs2015sdksamples).
 
  В этом пошаговом руководстве объясняется, как выполнять эти задачи:
 

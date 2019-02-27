@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069867"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618241"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
@@ -183,6 +183,6 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Содержит список ресурсов сообщества и службы поддержки с дополнительной информацией о MSBuild. |
 
 ## <a name="reference"></a>Ссылка
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md). Содержит ссылки на разделы, содержащие справочную информацию.
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md). Содержит ссылки на разделы, содержащие справочную информацию.
 
- [Глоссарий](msbuild-glossary.md) Содержит определения общих терминов MSBuild.
+- [Глоссарий](msbuild-glossary.md) Содержит определения общих терминов MSBuild.

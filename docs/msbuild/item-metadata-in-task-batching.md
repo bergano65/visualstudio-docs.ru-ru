@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946555"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623714"
 ---
 # <a name="item-metadata-in-task-batching"></a>Метаданные элементов в пакетной обработке задач
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять задачи с использованием каждого пакета. Не так просто понять, какие именно элементы передаются с каким пакетом. В этом разделе рассматриваются наиболее распространенные сценарии, в которых используется пакетная обработка.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>См. также
-[Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)  
-[Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)  
-[Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)  
-[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)
+- [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
