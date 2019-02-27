@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739456"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843172"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.

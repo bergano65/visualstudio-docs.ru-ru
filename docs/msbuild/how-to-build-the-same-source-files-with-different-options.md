@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Сборка одинаковых исходных файлов с различными параметрами | Документация Майкрософт
+title: Как выполнить Сборка одинаковых исходных файлов с различными параметрами | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854074"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610129"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Как выполнить  Сборка одинаковых исходных файлов с различными параметрами
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Как выполнить Сборка одинаковых исходных файлов с различными параметрами
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.
 
 ## <a name="use-properties-to-modify-projects"></a>Использование свойств для изменения проектов
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>См. также
-[MSBuild](../msbuild/msbuild.md)  
-[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md)

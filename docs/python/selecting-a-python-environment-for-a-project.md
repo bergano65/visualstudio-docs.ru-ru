@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ec1ed469a4384c2ba826f8677a0d4fb4c8fef20
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b505a350cdb66cafb975585cb7ed0209104dabac
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987461"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721814"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Выбор окружения Python для проекта
 
@@ -113,7 +113,7 @@ ms.locfileid: "55987461"
 Обратите внимание, что сейчас Visual Studio не позволяет использовать `conda` для установки пакетов в окружении Conda. Вместо этого используйте `conda` из командной строки.
 
 > [!Tip]
-> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается сообщение об ошибке: **Ошибка: не удалось найти vcvarsall.bat**. Как правило, диспетчер `easy_install` может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
+> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается сообщение об ошибке: **Ошибка: не удалось найти vcvarsall.bat**. Как правило, диспетчер `easy_install` может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
 
 ## <a name="see-also"></a>См. также
 

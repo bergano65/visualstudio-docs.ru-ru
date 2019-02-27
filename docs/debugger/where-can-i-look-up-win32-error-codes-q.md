@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e819759494efdee16cdf3a5dd41dcc65aa4590d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ebd2b4dd65fbcb957e13207cc5550a10b7870219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005388"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699240"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Где можно найти коды ошибок Win32?
-WINERROR.H в папке INCLUDE стандартного дистрибутива содержит определения кодов ошибок для функций Win32 API.  
-  
- Кроме того, код ошибки можно посмотреть, введя код в окно **Контрольные значения** или в диалоговом окне **Быстрая проверка**. Например:  
-  
-`0x80000004,hr` 
+WINERROR.H в папке INCLUDE стандартного дистрибутива содержит определения кодов ошибок для функций Win32 API.
 
-  
-## <a name="see-also"></a>См. также раздел  
- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Отладка машинного кода](../debugger/debugging-native-code.md)
+ Кроме того, код ошибки можно посмотреть, введя код в окно **Контрольные значения** или в диалоговом окне **Быстрая проверка**. Например:
+
+`0x80000004,hr`
+
+
+## <a name="see-also"></a>См. также раздел
+- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
+- [Отладка машинного кода](../debugger/debugging-native-code.md)

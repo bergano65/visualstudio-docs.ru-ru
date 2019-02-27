@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316969"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843827"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "56316969"
 |[Документация для разработки мобильных приложений Xamarin](/xamarin/) |
 |[DevOps с приложениями Xamarin](/xamarin/tools/ci/devops/) |
 |[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Сведения о сходстве между Swift и C#](http://aka.ms/scposter) (download.microsoft.com)|
+|[Сведения о сходстве между Swift и C#](https://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
 

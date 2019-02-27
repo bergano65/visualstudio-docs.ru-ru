@@ -19,21 +19,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c3bb5779af3fd53dddb8e5397a7913b353a4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024270"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690049"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Как отладить нарушения доступа при запуске программы без отладчика?
 
-## <a name="problem-description"></a>Описание проблемы  
- Программа прекрасно работает в среде Visual Studio, но при автономном запуске под операционной системой Windows возникает нарушение доступа. Как это отладить?  
-  
-## <a name="solution"></a>Решение  
- Активируйте параметр [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в диалоговом окне **Нарушение доступа** можно нажать **Отмена** и запустить отладчик.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Отладка машинного кода](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Описание проблемы
+ Программа прекрасно работает в среде Visual Studio, но при автономном запуске под операционной системой Windows возникает нарушение доступа. Как это отладить?
+
+## <a name="solution"></a>Решение
+ Активируйте параметр [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в диалоговом окне **Нарушение доступа** можно нажать **Отмена** и запустить отладчик.
+
+## <a name="see-also"></a>См. также раздел
+- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
+- [Отладка машинного кода](../debugger/debugging-native-code.md)

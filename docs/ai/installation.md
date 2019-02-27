@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231952"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842480"
 ---
 # <a name="installation"></a>Установка
 
@@ -26,7 +25,7 @@ ms.locfileid: "55231952"
 
 Это расширение работает с Visual Studio 2015 и Visual Studio 2017 выпуска Community или более высокого уровня.
 
-Скачать эти средства можно с сайта [Visual Studio Marketplace](http://aka.ms/vstoolsforai) или из Visual Studio.
+Скачать эти средства можно с сайта [Visual Studio Marketplace](https://aka.ms/vstoolsforai) или из Visual Studio.
 
 1. Выберите **Сервис** > **Расширения и обновления**.
 

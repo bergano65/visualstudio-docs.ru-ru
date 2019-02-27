@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Выбор файлов для сборки | Документация Майкрософт
+title: Как выполнить Выбор файлов для сборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942818"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610545"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Как выполнить  Выбор файлов для сборки
+# <a name="how-to-select-the-files-to-build"></a>Как выполнить Выбор файлов для сборки
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.
 
 ## <a name="specify-inputs"></a>Указание входных данных
@@ -29,25 +29,25 @@ ms.locfileid: "55942818"
 
 #### <a name="to-declare-items-individually"></a>Объявление отдельных элементов
 
-- Используйте атрибуты `Include`, аналогичные следующим.  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    или  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Используйте атрибуты `Include`, аналогичные следующим.
+
+    `<CSFile Include="form1.cs"/>`
+
+    или
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Если элементы в коллекции элементов не находятся в том же каталоге, что и файл проекта, необходимо указать полный или относительный путь к элементу. Например, `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Объявление нескольких элементов
 
--   Используйте атрибуты `Include`, аналогичные следующим.  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    или  
-  
+-   Используйте атрибуты `Include`, аналогичные следующим.
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    или
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Указание входных данных с помощью подстановочных знаков
@@ -63,24 +63,24 @@ ms.locfileid: "55942818"
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG*-файлов в каталоге *Images* и подкаталогах
 
-- Используйте следующий атрибут `Include`.  
-  
+- Используйте следующий атрибут `Include`.
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG*-файлов, начинающихся со слога *img*
 
-- Используйте следующий атрибут `Include`.  
-  
+- Используйте следующий атрибут `Include`.
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Включение всех файлов в каталогах с именами, которые оканчиваются слогом *jpgs*
 
-- Используйте один из следующих атрибутов `Include`.  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    или  
-  
+- Используйте один из следующих атрибутов `Include`.
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    или
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Передача элементов в задачу
@@ -88,17 +88,17 @@ ms.locfileid: "55942818"
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Использование всех файлов Visual C# или Visual Basic в качестве входных данных
 
-- Используйте атрибуты `Include`, аналогичные следующим.  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    или  
-  
+- Используйте атрибуты `Include`, аналогичные следующим.
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    или
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Чтобы указать входные данные для сборки, нужно использовать подстановочные знаки в элементах; невозможно указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Пример
@@ -170,5 +170,5 @@ ms.locfileid: "55942818"
 ```
 
 ## <a name="see-also"></a>См. также
-[Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Элементы](../msbuild/msbuild-items.md)
+- [Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Элементы](../msbuild/msbuild-items.md)

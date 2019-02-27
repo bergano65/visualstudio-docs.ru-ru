@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0bc04dfa06672e7764676be87584c2a757a50b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596403"
 ---
 # <a name="resumetracking"></a>ResumeTracking
-Возобновляет отслеживание в текущем контексте.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT WINAPI ResumeTracking();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было возобновлено. Если отслеживание нельзя возобновить, так как контекст был недоступен, возвращается **E_FAIL**.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок.** *FileTracker.h*  
-  
-## <a name="see-also"></a>См. также  
- [SuspendTracking](../msbuild/suspendtracking.md)
+Возобновляет отслеживание в текущем контексте.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT WINAPI ResumeTracking();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было возобновлено. Если отслеживание нельзя возобновить, так как контекст был недоступен, возвращается **E_FAIL**.
+
+## <a name="requirements"></a>Требования
+ **Заголовок.** *FileTracker.h*
+
+## <a name="see-also"></a>См. также
+- [SuspendTracking](../msbuild/suspendtracking.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949809"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710543"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 Имитатор Visual Studio для приложений универсальной платформы Windows — это классическое приложение, которое имитирует приложение универсальной платформы Windows. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать имитатор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать общие касания и поворота события и свойства сетевых подключений.
@@ -107,7 +107,7 @@ ms.locfileid: "54949809"
      ![Контекстное меню параметров снимка экрана](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений
- Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) позволяют реагировать на события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , на которые имеется подписка. (Если вы еще не знакомы с этой процедурой, см. инструкции в статье [Краткое руководство. Управление ограничениями расходов на лимитных сетевых](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+ Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) позволяют реагировать на события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , на которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
  Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых подключений, имитатор может имитировать свойства сети, представляемые с помощью объекта [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile), который возвращается методом [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -131,7 +131,7 @@ ms.locfileid: "54949809"
 
    **Дополнительные сведения об управлении сетевыми подключениями**
 
-   [Краткое руководство. Управление ограничениями лимитным расходов](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ ms.locfileid: "54949809"
  Можно завершить работу симулятора, нажав клавишу **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>См. также раздел
- [Запуск приложения из Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Запуск приложения из Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

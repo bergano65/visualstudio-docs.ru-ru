@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbaff7778b06eeb08c9e92174ccd531d9dd2dbf
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605280"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Перечисление различных внедренного источников, содержащихся в источнике данных.
@@ -113,8 +113,8 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>См. также раздел
-[Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
-[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

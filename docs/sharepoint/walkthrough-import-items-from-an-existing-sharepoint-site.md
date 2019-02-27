@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605995"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841755"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство. Импорт элементов из существующего сайта SharePoint
   В этом пошаговом руководстве показано, как импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.
@@ -43,7 +43,7 @@ ms.locfileid: "56605995"
 ## <a name="customize-a-sharepoint-site"></a>Настройка сайта SharePoint
  В этом примере вы создадите и настройка дочернего сайта SharePoint путем добавления в него новый столбец сайта и создания нового дочернего сайта для последующего использования. Позже будет экспортировать дочерний сайт в WSP-файл и затем импортировать настраиваемый столбец в второго дочернего сайта с помощью проект импорта WSP-файла.
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Для создания и настройки сайта SharePoint
+### <a name="to-create-and-customize-a-sharepoint-site"></a>Для создания и настройки сайта SharePoint
 
 1. Откройте сайт SharePoint, в веб-браузере, например http://<em>системное имя</em>/SitePages/Home.aspx.
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605995"
 > [!IMPORTANT]
 >  Если появляется ошибка среды выполнения в следующей процедуре, необходимо выполнить процедуры в системе, которая имеет доступ к сайту SharePoint.
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>Чтобы экспортировать существующий сайт SharePoint
+### <a name="to-export-an-existing-sharepoint-site"></a>Чтобы экспортировать существующий сайт SharePoint
 
 1.  На сайте SharePoint выберите **параметры сайта** на **действия сайта** tab, чтобы вывести страницу параметров сайта.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605995"
 ## <a name="import-the-wsp-file"></a>Импорт WSP-файла
  Теперь, когда у вас есть *.wsp* файл, содержащий элемент, который вы хотите использовать повторно (настраиваемый столбец Тестовый столбец), импортируйте *.wsp* файл для доступа к нему.
 
-#### <a name="to-import-a-wsp-file"></a>Импорт WSP-файла
+### <a name="to-import-a-wsp-file"></a>Импорт WSP-файла
 
 1. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], в строке меню выберите **файл** > **New** > **проекта** для отображения **новый проект**диалоговое окно. Если интерфейс IDE настроен на использование параметров разработки Visual Basic, в строке меню, выберите **файл** > **новый проект**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605995"
 ## <a name="deploy-the-project"></a>Развертывание проекта
  Наконец, развернуть **WspImportProject1** в SharePoint второго дочернего сайта, созданную ранее, чтобы просмотреть настраиваемый столбец.
 
-#### <a name="to-deploy-the-project"></a>Развертывание проекта
+### <a name="to-deploy-the-project"></a>Развертывание проекта
 
 1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], выберите **F5** ключ для развертывания и запуска *.wsp* Импорт проекта.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: SQL можно&#39;t обнаружить компонент SSDEBUGPS | Документация Майкрософт'
+title: 'Ошибка: SQL может&#39;t обнаружить компонент SSDEBUGPS | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4bd8ed846ab4f3d461a29f152db0b83232ec8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 854105ea5d94f6d3b09ce73a23ec45ccab9e797c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972255"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694170"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Ошибка: SQL можно&#39;t обнаружить компонент SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>Ошибка: SQL может&#39;t обнаружить компонент SSDEBUGPS
 
 Файл SSDEBUGPS.dll — компонент узла отладки SQL Server.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95e8989524c8e4df707fca364bc068b9151ba8bb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605085"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843169"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Практическое руководство. Определение дескриптора типа параметра
   Дескриптор типа содержит свойства, описывающие тип данных параметра. Дескриптор типа может определить поле, сущность или коллекцию сущностей. Дополнительные сведения см. в разделе [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -95,7 +95,7 @@ ms.locfileid: "56605085"
 
       В следующем примере значение **TypeName** свойство в коллекцию классов в проекте.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1] "
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]`
 
    - Для типа, расположенного в сборке решения, полное имя включает в себя имя типа, имя сборки, номер версии, язык и региональные параметры, а также токен открытого ключа.
 

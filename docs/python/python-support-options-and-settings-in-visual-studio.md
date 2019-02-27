@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987396"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702022"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Параметры для Python в Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "55987396"
 Доступны и дополнительные параметры Python на вкладках **Текстовый редактор** > **Python** > **Дополнительно** и **Среда** > **Шрифты и цвета** в группе **Текстовый редактор**.
 
 > [!Note]
-> В группе **Экспериментальные** содержатся параметры для компонентов, которые все еще находятся в режиме разработки и здесь не рассматриваются. Они часто обсуждаются в записях [блога Майкрософт по разработке на Python](https://blogs.msdn.microsoft.com/pythonengineering/).
+> В группе **Экспериментальные** содержатся параметры для компонентов, которые все еще находятся в режиме разработки и здесь не рассматриваются. Они часто обсуждаются в записях [блога Майкрософт по разработке на Python](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Общие параметры
 
