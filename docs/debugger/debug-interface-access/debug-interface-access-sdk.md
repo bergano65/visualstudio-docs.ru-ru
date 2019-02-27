@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932302"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608088"
 ---
 # <a name="debug-interface-access-sdk"></a>SDK для доступа к интерфейсу отладки
 
@@ -27,17 +27,22 @@ ms.locfileid: "54932302"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-[Начало работы](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Начало работы](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Обзор пакета SDK для доступа к интерфейсу отладки функции и указывает, где установлен пакет SDK доступа к интерфейсу отладки, а также необходимых файлов заголовков и библиотек.
 
-[Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Инструкции о том, как использовать API доступа к интерфейсу отладки для запроса PDB-файл.
 
-[Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Описывает, как символы и теги символов используются в интерфейсе API для доступа к интерфейсу отладки.
 
-[Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Содержит интерфейсы, методы, перечисления и структуры интерфейса API доступа к интерфейсу отладки.
 
-[Пример файла Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Пример файла Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 В этой статье описывается использование API доступа к интерфейсу отладки, чтобы искать и просматривать сведения об отладке.

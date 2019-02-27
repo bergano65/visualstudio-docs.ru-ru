@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5c7eef010de75165ac6d28e0690fe2e906d00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 46392d87b918a2359d7bf4d9eee14c61b4464006
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999162"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616521"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Clone(   
-   IDiaEnumSectionContrib** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- ppenum  
- [out] Возвращает [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) , содержащий копию перечислителя. Раздел, который публикации не дублируются, только перечислитель.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Clone( 
+   IDiaEnumSectionContrib** ppenum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ ppenum
+
+[out] Возвращает [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) , содержащий копию перечислителя. Раздел, который публикации не дублируются, только перечислитель.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Инкрементная сборка | Документация Майкрософт
+title: Как выполнить Инкрементная сборка | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853905"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621335"
 ---
-# <a name="how-to-build-incrementally"></a>Как выполнить  Последовательная сборка
+# <a name="how-to-build-incrementally"></a>Как выполнить Последовательная сборка
 При сборке большого проекта важно, чтобы созданные ранее компоненты, которые все еще актуальны, не перестраивались. Если каждый раз создаются все целевые объекты, каждая сборка будет занимать много времени. Для выполнения инкрементных построений (сборки, в которых перестраиваются только те целевые объекты, которые не были построены ранее, или устаревшие целевые объекты) [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. Однако должно быть однозначное сопоставление между входными и выходными данными. Чтобы целевые объекты могли идентифицировать это прямое сопоставление, можно использовать преобразования. Дополнительные сведения о преобразованиях см. в статье [Преобразования](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Указание входных и выходных данных
@@ -38,12 +38,12 @@ ms.locfileid: "55853905"
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. В следующем примере, если какой-либо файл в списке элементов `@(CSFile)` новее, чем файл *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] запустит целевой объект; в противном случае он будет пропущен.
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ ms.locfileid: "55853905"
 ```
 
 ## <a name="see-also"></a>См. также
-[Целевые объекты](../msbuild/msbuild-targets.md)  
-[Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Преобразования](../msbuild/msbuild-transforms.md)  
-[Задача Csc](../msbuild/csc-task.md)  
-[Задача Vbc](../msbuild/vbc-task.md)
+- [Целевые объекты](../msbuild/msbuild-targets.md)
+- [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Преобразования](../msbuild/msbuild-transforms.md)
+- [Задача Csc](../msbuild/csc-task.md)
+- [Задача Vbc](../msbuild/vbc-task.md)

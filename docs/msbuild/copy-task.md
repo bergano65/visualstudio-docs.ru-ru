@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853551"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596299"
 ---
 # <a name="copy-task"></a>Copy - задача
 Копирование файлов в новое расположение в файловой системе.
@@ -111,5 +111,5 @@ ms.locfileid: "55853551"
 ```
 
 ## <a name="see-also"></a>См. также
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

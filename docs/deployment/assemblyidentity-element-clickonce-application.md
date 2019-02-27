@@ -16,57 +16,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e70852f0e720f5c7c67fbce82608929ac13728f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635674"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; элемент (приложение ClickOnce)
-Идентифицирует приложение, развернутое в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
+Идентифицирует приложение, развернутое в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания.
+
+## <a name="syntax"></a>Синтаксис
+
 ```xml
-  
-      <assemblyIdentity   
-   name  
-   version  
-   publicKeyToken  
-   processorArchitecture  
-   language  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `assemblyIdentity` Элемент является обязательным. Он не содержит дочерних элементов и имеет следующие атрибуты.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Name`|Обязательный. Определяет имя приложения.<br /><br /> Если `Name` содержит специальные символы, такие как одинарные или двойные кавычки, приложение может вызвать сбой активации.|  
-|`Version`|Обязательный. Указывает номер версии приложения в следующем формате: `major.minor.build.revision`|  
-|`publicKeyToken`|Необязательный параметр. Указывает, 16-знаковая шестнадцатеричную строку, которая представляет собой последние 8 байт `SHA-1` хэш-значение открытого ключа, которым подписаны приложение или сборка. Открытый ключ, используемый для подписи каталога должен быть 2048 бит или более поздней версии.<br /><br /> Несмотря на то, что подпись сборки, рекомендуется, но необязательно, этот атрибут является обязательным. Если сборка не подписана, следует скопировать значение из собственной подписью сборки или использовать значение «пустого» все нули.|  
-|`processorArchitecture`|Обязательный. Указывает процессор. Допустимые значения: `msil` для всех процессоров `x86` для 32-разрядной Windows, `IA64` для 64-разрядной Windows, и `Itanium` для Intel 64-разрядных процессоров Itanium.|  
-|`language`|Обязательный. Определяет две части кодов языка (например, `en-US`) сборки. Этот элемент имеет `asmv2` пространства имен. Если этот атрибут не задан, по умолчанию используется `neutral`.|  
-  
-## <a name="examples"></a>Примеры  
-  
-### <a name="description"></a>Описание  
- В следующем примере кода показано `assemblyIdentity` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<asmv1:assemblyIdentity   
-  name="My Application Deployment.exe"   
-  version="1.0.0.0"   
-  publicKeyToken="43cb1e8e7a352766"   
-  language="neutral"   
-  processorArchitecture="x86"   
-  type="win32" />  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)
+
+      <assemblyIdentity
+   name
+   version
+   publicKeyToken
+   processorArchitecture
+   language
+/>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ `assemblyIdentity` Элемент является обязательным. Он не содержит дочерних элементов и имеет следующие атрибуты.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Name`|Обязательный. Определяет имя приложения.<br /><br /> Если `Name` содержит специальные символы, такие как одинарные или двойные кавычки, приложение может вызвать сбой активации.|
+|`Version`|Обязательный. Указывает номер версии приложения в следующем формате: `major.minor.build.revision`|
+|`publicKeyToken`|Необязательный параметр. Указывает, 16-знаковая шестнадцатеричную строку, которая представляет собой последние 8 байт `SHA-1` хэш-значение открытого ключа, которым подписаны приложение или сборка. Открытый ключ, используемый для подписи каталога должен быть 2048 бит или более поздней версии.<br /><br /> Несмотря на то, что подпись сборки, рекомендуется, но необязательно, этот атрибут является обязательным. Если сборка не подписана, следует скопировать значение из собственной подписью сборки или использовать значение «пустого» все нули.|
+|`processorArchitecture`|Обязательный. Указывает процессор. Допустимые значения: `msil` для всех процессоров `x86` для 32-разрядной Windows, `IA64` для 64-разрядной Windows, и `Itanium` для Intel 64-разрядных процессоров Itanium.|
+|`language`|Обязательный. Определяет две части кодов языка (например, `en-US`) сборки. Этот элемент имеет `asmv2` пространства имен. Если этот атрибут не задан, по умолчанию используется `neutral`.|
+
+## <a name="examples"></a>Примеры
+
+### <a name="description"></a>Описание
+ В следующем примере кода показано `assemblyIdentity` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).
+
+### <a name="code"></a>Код
+
+```xml
+<asmv1:assemblyIdentity
+  name="My Application Deployment.exe"
+  version="1.0.0.0"
+  publicKeyToken="43cb1e8e7a352766"
+  language="neutral"
+  processorArchitecture="x86"
+  type="win32" />
+```
+
+## <a name="see-also"></a>См. также
+- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
+- [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)

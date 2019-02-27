@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd751f36ce3a5f74bea78fd0d57920a5145c0fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646933"
 ---
 # <a name="getwinfxpath-task"></a>Задача GetWinFXPath
 Задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> возвращает каталог текущей среды выполнения [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)].
@@ -57,8 +57,8 @@ ms.locfileid: "55853681"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
-[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

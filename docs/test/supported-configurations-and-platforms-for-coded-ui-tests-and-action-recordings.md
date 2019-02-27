@@ -1,6 +1,6 @@
 ---
 title: Конфигурации и платформы для закодированных тестов пользовательского интерфейса
-ms.date: 2015-10-04
+ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65e16a52816630242c31584731572e828fa4a346
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922333"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796573"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -31,7 +31,7 @@ ms.locfileid: "55922333"
 
 ## <a name="supported-configurations"></a>Поддерживаемые конфигурации
 
-| Конфигурация | Поддерживается |
+| Параметр Configuration | Поддерживается |
 |-| - |
 | Операционные системы | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Поддержка 32–разрядной и 64–разрядной архитектур | 32-разрядные приложения можно тестировать в 32-разрядных ОС Windows с установленным приложением [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .<br /><br /> В 64-разрядной ОС Windows, в которой выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 32-разрядные приложения WOW с синхронизацией пользовательского интерфейса.<br /><br /> В 64-разрядных ОС Windows, в которых выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 64-разрядные приложения Windows Forms и WPF без синхронизации пользовательского интерфейса. |

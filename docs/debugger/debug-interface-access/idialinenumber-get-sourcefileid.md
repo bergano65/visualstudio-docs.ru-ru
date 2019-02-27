@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7efaa94c24c6f814de5058865664cf7b1b106ba3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be0fffc1c52c6e15e4ac564cb3e53c60a3670c22
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003322"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610688"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
-Извлекает уникальный исходный файл идентификатор для исходного файла, который участвует в этой строке.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_sourceFileId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает идентификатор файла уникальный источника для исходного файла, который участвует в этой строке.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Извлекает уникальный исходный файл идентификатор для исходного файла, который участвует в этой строке.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_sourceFileId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает идентификатор файла уникальный источника для исходного файла, который участвует в этой строке.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

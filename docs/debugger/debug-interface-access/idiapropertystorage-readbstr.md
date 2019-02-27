@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 697c934793ce683e79e453e327a955431338fea8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610961"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
-Считывает `BSTR` значения в наборе свойств.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT ReadBSTR (   
-   PROPID id,  
-   BSTR*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `id`  
- [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
-  
- `pValue`  
- [out] Возвращает значение свойства.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BSTR`.  
-  
-## <a name="remarks"></a>Примечания  
- Объект `BSTR` определяется Windows как строку расширенных символов с завершающим нулевым символом.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Считывает `BSTR` значения в наборе свойств.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT ReadBSTR ( 
+   PROPID id,
+   BSTR*  pValue
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `id`
+
+[in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).
+
+ `pValue`
+
+[out] Возвращает значение свойства.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BSTR`.
+
+## <a name="remarks"></a>Примечания
+ Объект `BSTR` определяется Windows как строку расширенных символов с завершающим нулевым символом.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

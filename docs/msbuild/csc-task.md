@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854126"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643942"
 ---
 # <a name="csc-task"></a>Csc - задача
 Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -94,5 +94,5 @@ ms.locfileid: "55854126"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
-[Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)

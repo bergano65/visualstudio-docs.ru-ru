@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000709"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633711"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (C++)
 
@@ -57,64 +57,64 @@ Visual Studio предоставляет множество эффективны
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования
+
 1.  Сначала установите точку останова в приложении в следующей строке кода в функции `main`:
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Visual Studio предоставляет множество эффективны
 
     > [!TIP]
     > С помощью двух точек останова можно ограничить сбор данных частями кода, которые требуется проанализировать.
-  
+
 3.  Окно **Средства диагностики** должно отображаться, если вы не отключали эту функцию. Чтобы снова открыть окно, щелкните **Отладка** > **Окна** > **Показать средства диагностики**.
 
 4.  Щелкните **Отладка** > **Начать отладку** (**Запустить** на панели инструментов или **F5**).
@@ -147,7 +147,7 @@ Visual Studio предоставляет множество эффективны
      Теперь у вас есть данные о производительности приложения именно для той области кода, которая выполняется между двумя точками останова.
 
      Профилировщик начинает подготавливать данные потока. Дождитесь завершения этой операции.
-  
+
      Средство "Загрузка ЦП" выведет отчет на вкладке **Загрузка ЦП**.
 
      На этом этапе можно начать анализировать данные.
@@ -165,7 +165,7 @@ Visual Studio предоставляет множество эффективны
 
 2. В списке функций дважды щелкните функцию `getNumber`.
 
-    В левой области откроется представление **Вызывающий/вызываемый**. 
+    В левой области откроется представление **Вызывающий/вызываемый**.
 
     ![Средства диагностики, представление "Вызывающий/вызываемый"](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Visual Studio предоставляет множество эффективны
 - [Анализируйте загрузку ЦП](../profiling/cpu-usage.md) для получения более подробных сведений о загрузке ЦП.
 - Анализируйте загрузку ЦП без подключения отладчика или путем указания выполняющегося приложения. Дополнительные сведения см. в разделе [Сбор данных профилирования без отладки](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) и в статье [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
 
- [Профилирование в Visual Studio](../profiling/index.md)  
- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
+- [Профилирование в Visual Studio](../profiling/index.md)
+- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

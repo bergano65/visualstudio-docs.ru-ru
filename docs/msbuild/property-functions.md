@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e4c96d0b6f4f441d862ba76bf5fa1199a704d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997043"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623064"
 ---
 # <a name="property-functions"></a>Функции свойств
 
@@ -338,6 +338,6 @@ Output:
 
 ## <a name="see-also"></a>См. также
 
-[Свойства MSBuild](../msbuild/msbuild-properties.md)
+- [Свойства MSBuild](../msbuild/msbuild-properties.md)
 
-[Общие сведения о MSBuild](../msbuild/msbuild.md)
+- [Общие сведения о MSBuild](../msbuild/msbuild.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853983"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615925"
 ---
 # <a name="generateresource-task"></a>GenerateResource - задача
 Преобразовывает файлы формата *TXT* и *RESX* (файлы ресурсов на основе XML) и двоичные *RESOURCES*-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата *TXT* и *RESX* в *RESOURCES*-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -95,5 +95,5 @@ ms.locfileid: "55853983"
 Без метаданных \<LogicalName> ресурс будет называться *myAssembly.myResource.resources*.  Этот пример применяется только к процессу сборки Visual Basic и Visual C#.
 
 ## <a name="see-also"></a>См. также
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6aabe66359c1f400eb06d6738615c1a81b679e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07d97707034946f4711ac7df92c6a0f0743d13fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069900"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612664"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Новые возможности в MSBuild 15
 
@@ -51,4 +51,4 @@ MSBuild теперь предоставляется в составе [осно�
 - `GetPathOfFileAbove` возвращает путь к файлу, непосредственно предшествующему данному. Она функционально эквивалентна вызову такой инструкции: `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
 ## <a name="see-also"></a>См. также
-[MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

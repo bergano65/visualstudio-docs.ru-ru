@@ -10,48 +10,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d963763f341430c92810fe811144212d2cc522e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999721"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611156"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Возвращает перечисление символы для встроенных кадров, которые соответствуют указанным исходным расположением.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `parent`  
- [in] `IDiaSymbol` , Соответствующий функции заглушки сочетаний клавиш, для которой необходимо выполнить поиск.  
-  
- `file`  
- [in] `IDiaSourceFile` Исходного расположения.  
-  
- `linenum`  
- [in] Номер строки исходного расположения.  
-  
- `colnum`  
- [in] Номер столбца исходного расположения.  
-  
- `ppResult`  
- [out] Указатель на `IDiaEnumLineNumbers` указатель интерфейса, который инициализируется с результатом.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Возвращает перечисление символы для встроенных кадров, которые соответствуют указанным исходным расположением.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT findAcceleratorInlineeLinesByName ( 
+   IDiaSymbol*           parent,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 colnum,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `parent`
+
+[in] `IDiaSymbol` , Соответствующий функции заглушки сочетаний клавиш, для которой необходимо выполнить поиск.
+
+ `file`
+
+[in] `IDiaSourceFile` Исходного расположения.
+
+ `linenum`
+
+[in] Номер строки исходного расположения.
+
+ `colnum`
+
+[in] Номер столбца исходного расположения.
+
+ `ppResult`
+
+[out] Указатель на `IDiaEnumLineNumbers` указатель интерфейса, который инициализируется с результатом.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

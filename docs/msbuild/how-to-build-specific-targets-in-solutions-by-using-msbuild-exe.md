@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937370"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610454"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Как выполнить Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
-Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении  
-  
-1.  В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.  
-  
+Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении
+
+1.  В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.
+
 2. Укажите целевой объект после параметра `-target:` в формате \<имя_проекта>:\<имя_целевого_объекта>. Если в имени проекта содержатся символы `%`, `$`, `@`, `;`, `.`, `(`, `)` или `'`, замените их на `_` в указанном имени целевого объекта.
-  
-## <a name="example"></a>Пример  
- В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.  
-  
+
+## <a name="example"></a>Пример
+ В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 Не выполняйте сборку с этой заданной переменной среды, пока вам не потребуется этом внутреннее представление. Этот параметр может вызвать проблемы сборки в решении.
 
-## <a name="see-also"></a>См. также  
- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>См. также
+- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

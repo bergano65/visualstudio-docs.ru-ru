@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743bd6914920c561e0e03c7b6ce4ba7f1b918d46
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b4e44cb63129e79e993d57f3dbd49b2b63f8913
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950771"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644631"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
-Получает флаг, указывающий, вложен ли определяемый пользователем тип.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_nested (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип является вложенным; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, вложен ли определяемый пользователем тип.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_nested ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если определяемый пользователем тип является вложенным; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

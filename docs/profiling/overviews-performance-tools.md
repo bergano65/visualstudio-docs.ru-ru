@@ -8,44 +8,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ac619a77dbe8f12b3436f2b1b087478c19473b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001034"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628951"
 ---
 # <a name="overviews-performance-tools"></a>Обзоры (средства оценки производительности)
-В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)  
- Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)  
- Описание свойств, используемых для настройки сеанса анализа производительности.  
-  
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)  
- Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с выборкой.  
-  
- [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)  
- Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с инструментированием.  
-  
- [Общие сведения о выделении памяти и значениях данных о времени существования объекта](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
- Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с использованием памяти, выделяемой под объекты .NET.  
-  
- [Общие сведения о значениях данных по конфликтам ресурсов](../profiling/understanding-resource-contention-data-values.md)  
- Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с параллелизмом.  
-  
- [Окно "Обозреватель производительности"](../profiling/performance-explorer-window.md)  
- Описание окна, используемого для настройки и запуска сеансов анализа производительности.  
-  
- [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)  
- Сведения о счетчиках производительности ЦП и Windows, предоставляющих дополнительную информацию о производительности в ходе сеанса анализа производительности.  
-  
- [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
- Сведения о проблемах сбора данных выборки и профилирования приложений в нескольких сеансах в [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].  
-  
-## <a name="see-also"></a>См. также  
- [Приступая к работе со средствами профилирования](../profiling/getting-started-with-performance-tools.md)   
- [Обозреватель производительности](../profiling/performance-explorer.md)
+В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.
+
+## <a name="in-this-section"></a>Содержание раздела
+- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
+
+ Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+- [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
+
+ Описание свойств, используемых для настройки сеанса анализа производительности.
+
+- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
+
+ Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с выборкой.
+
+- [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)
+
+ Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с инструментированием.
+
+- [Общие сведения о выделении памяти и значениях данных о времени существования объекта](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+
+ Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с использованием памяти, выделяемой под объекты .NET.
+
+- [Общие сведения о значениях данных по конфликтам ресурсов](../profiling/understanding-resource-contention-data-values.md)
+
+ Сведения о значениях данных, которые включаются в отчеты при использовании метода профилирования с параллелизмом.
+
+- [Окно "Обозреватель производительности"](../profiling/performance-explorer-window.md)
+
+ Описание окна, используемого для настройки и запуска сеансов анализа производительности.
+
+- [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)
+
+ Сведения о счетчиках производительности ЦП и Windows, предоставляющих дополнительную информацию о производительности в ходе сеанса анализа производительности.
+
+- [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+
+ Сведения о проблемах сбора данных выборки и профилирования приложений в нескольких сеансах в [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
+
+## <a name="see-also"></a>См. также
+
+- [Начало работы](../profiling/getting-started-with-performance-tools.md)
+- [Обозреватель производительности](../profiling/performance-explorer.md)

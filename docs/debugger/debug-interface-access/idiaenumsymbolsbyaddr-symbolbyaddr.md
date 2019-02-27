@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2305c155e0f9790e43514ac4ef68a8e23113e94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008352"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598810"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Помещает перечислитель, выполняя поиск образа номер раздела и смещение.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT symbolByAddr (   
-   DWORD**      isect,  
-   DWORD**      offsect,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- isect  
- [in] Изображение номер раздела.  
-  
- offsect  
- [in] Смещение в разделе.  
-  
- ppsymbol  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Помещает перечислитель, выполняя поиск образа номер раздела и смещение.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT symbolByAddr ( 
+   DWORD**      isect,
+   DWORD**      offsect,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ isect
+
+[in] Изображение номер раздела.
+
+ offsect
+
+[in] Смещение в разделе.
+
+ ppsymbol
+
+[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
