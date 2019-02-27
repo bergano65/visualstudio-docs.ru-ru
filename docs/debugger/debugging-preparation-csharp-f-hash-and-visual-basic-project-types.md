@@ -21,37 +21,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a07bfcba0550392c01d7e67abe96ff88bc397805
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686890"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: Типы проектов C#, F# и Visual Basic
-В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Рекомендуемые значения свойств](../debugger/managed-debugging-recommended-property-settings.md)  
- В данном разделе описываются рекомендуемые параметры свойств отладчика для проектов C#, F# и Visual Basic.  
-  
- [Приложения Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
- Описывает проект приложения Windows и содержит инструкции по отладке, изменению стандартной отладочной конфигурации и запуску приложения не из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с последующим подсоединением к нему.  
-  
- [Консольные проекты](../debugger/debugging-preparation-console-projects.md)  
- Содержит дополнительные соображения по отладке консольных приложений C# или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В рассмотрение включено задание аргументов для командной строки, запуск приложения из командной строки, запись в окно вывода и исправление неполадок в окне консоли.  
-  
- [Службы Windows](../debugger/debugging-preparation-windows-services.md)  
- Описывает службы Windows и содержит ссылки на раздел, посвященный отладке служб Windows.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)  
- Описывает процедуры настройки и подготовки, которые необходимо провести, чтобы отлаживать программу, используя отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Отладка управляемого кода](../debugger/debugging-managed-code.md)  
- Описывает общие проблемы и методы отладки приложений управляемого кода.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Безопасность отладчика](../debugger/debugger-security.md)
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: типы проектов C#, F# и Visual Basic
+В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+ Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.
+
+## <a name="in-this-section"></a>В этом разделе
+ [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md) в этом разделе описываются параметры рекомендуемые свойств отладчика для C#, F#и проекты Visual Basic.
+
+ [Приложения Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) описывает проект приложения Windows и приведены инструкции по отладке, изменению конфигурации отладки по умолчанию и запуск приложения вне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] последующим подсоединением к нему.
+
+ [Консольные проекты](../debugger/debugging-preparation-console-projects.md) предоставляет дополнительные соображения по отладке C# или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] консольных приложений. В рассмотрение включено задание аргументов для командной строки, запуск приложения из командной строки, запись в окно вывода и исправление неполадок в окне консоли.
+
+ [Службы Windows](../debugger/debugging-preparation-windows-services.md) описывает службу Windows и ссылка на отладка служб Windows.
+
+## <a name="related-sections"></a>Связанные разделы
+ [Отладчик, параметры и Подготовка](../debugger/debugger-settings-and-preparation.md) процедуры настройки и подготовки, необходимо выполнить перед отладкой программы с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отладчика.
+
+ [Отладка управляемого кода](../debugger/debugging-managed-code.md) описание общих проблем отладки и методов для приложения, написанные в управляемом коде.
+
+## <a name="see-also"></a>См. также раздел
+- [Безопасность отладчика](../debugger/debugger-security.md)

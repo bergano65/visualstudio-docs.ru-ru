@@ -12,55 +12,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f269df947227f36e0c87a7efeddda8d8ef1248
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0143945a266b9c76fefa10e1823a7c3ce01f85e7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622375"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
-Упрощает анализ стека с помощью PDB-файла программы отладки.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-  
-IDiaStackWalkHelper: IUnknown  
-  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaStackWalkHelper`:  
-  
-|Метод|Описание|  
-|------------|-----------------|  
-|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|Получает значение регистра.|  
-|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Задает значение регистра.|  
-|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Считывает блок данных из исполняемого файла изображения в памяти.|  
-|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Выполняет поиск указанного кадра стека для ближайшего обратный адрес функции.|  
-|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Выполняет поиск указанного кадра стека для возврата адреса сравнялось или почти адрес указанного стека.|  
-|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Извлекает кадру стека, который содержит указанный виртуальный адрес.|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Получает символ, который содержит указанный виртуальный адрес. **Примечание.**  Символ должен иметь тип `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).|  
-|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Возвращает блок данных PDATA, связанный с указанным адресом виртуальной.|  
-|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Извлекает Начальный виртуальный адрес исполняемого файла, указанного виртуального адреса где-то в область памяти.|  
-  
-## <a name="remarks"></a>Примечания  
- Этот интерфейс называется кодом доступа к интерфейсу отладки, для получения сведений о исполняемый файл для создания списка из кадров стека во время выполнения программы.  
-  
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Клиентское приложение реализует этот интерфейс для поддержки прохода по стеку во время выполнения программы. Экземпляр этого интерфейса передается [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) или [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) методы.  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
-  
- Библиотека: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>См. также раздел  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
+Упрощает анализ стека с помощью PDB-файла программы отладки.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+
+IDiaStackWalkHelper: IUnknown
+
+```
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+ В следующей таблице показаны методы `IDiaStackWalkHelper`:
+
+|Метод|Описание|
+|------------|-----------------|
+|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|Получает значение регистра.|
+|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Задает значение регистра.|
+|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Считывает блок данных из исполняемого файла изображения в памяти.|
+|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Выполняет поиск указанного кадра стека для ближайшего обратный адрес функции.|
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Выполняет поиск указанного кадра стека для возврата адреса сравнялось или почти адрес указанного стека.|
+|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Извлекает кадру стека, который содержит указанный виртуальный адрес.|
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Получает символ, который содержит указанный виртуальный адрес. **Примечание:** символ должен иметь тип `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).|
+|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Возвращает блок данных PDATA, связанный с указанным адресом виртуальной.|
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Извлекает Начальный виртуальный адрес исполняемого файла, указанного виртуального адреса где-то в область памяти.|
+
+## <a name="remarks"></a>Примечания
+ Этот интерфейс называется кодом доступа к интерфейсу отладки, для получения сведений о исполняемый файл для создания списка из кадров стека во время выполнения программы.
+
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+ Клиентское приложение реализует этот интерфейс для поддержки прохода по стеку во время выполнения программы. Экземпляр этого интерфейса передается [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) или [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) методы.
+
+## <a name="requirements"></a>Требования
+ Заголовок: Dia2.h
+
+ Библиотека: diaguids.lib
+
+ DLL: msdia80.dll
+
+## <a name="see-also"></a>См. также раздел
+- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)
+- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

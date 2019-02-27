@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Узнайте о преимуществах, предусмотренных подпиской Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282226"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839712"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Преимущества, предусмотренные подпиской Visual Studio
 
@@ -45,4 +43,3 @@ ms.locfileid: "44282226"
 > Вместе с подпиской может также предоставляться доступ к загрузкам.  Дополнительные сведения о загрузках, включая сведения о включенных в подписку загрузках, см. на странице [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
 Дополнительные сведения о том, какие преимущества включены в вашу подписку, можно просмотреть на [странице цен на Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).  Сведения о конкретных преимуществах и о том, в какие подписки они включены, см. в разделе об **использовании преимуществ для подписчиков** ниже.
-

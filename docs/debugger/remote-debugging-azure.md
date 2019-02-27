@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981276"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710829"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core в службах IIS на Azure в Visual Studio 2017
 
@@ -47,7 +47,7 @@ ms.locfileid: "54981276"
 
 Отладка между двумя компьютерами, подключенными через прокси-сервер не поддерживается. Отладка в различных странах высокой задержкой или низкой пропускной способностью, таких как удаленный доступ к Интернету, или через Интернет не рекомендуется и может произойти сбой или неприемлемо медленно. Полный список требований см. в разделе [требования](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017
 
 1. Создайте новое приложение ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET Core**).
 
@@ -61,7 +61,7 @@ ms.locfileid: "54981276"
 
 ## <a name="remote_debug_azure_app_service"></a> Удаленная отладка ASP.NET Core в службу приложений Azure
 
-Из Visual Studio можно быстро публиковать и отладка приложения в полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS, и его нельзя настроить. Более подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если вам нужна возможность настройки IIS, попробовать выполнить отладку [виртуальной Машины Azure](#remote_debug_azure_vm).) 
+Из Visual Studio можно быстро публиковать и отладка приложения в полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS, и его нельзя настроить. Более подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если вам нужна возможность настройки IIS, попробовать выполнить отладку [виртуальной Машины Azure](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Для развертывания приложения и удаленная отладка с помощью обозревателя серверов
 
@@ -184,7 +184,7 @@ ms.locfileid: "54981276"
 В этом руководстве мы используем Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ ms.locfileid: "54981276"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, вы можете снова подключиться с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P 
+    > В Visual Studio 2017, вы можете снова подключиться с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P
 
 3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.
@@ -211,7 +211,7 @@ ms.locfileid: "54981276"
 5. Установите флажок  **Показать процессы, запущенные всеми пользователями**.
 
 6. Введите первую букву имени процесса, чтобы быстро найти *dotnet.exe* (для ASP.NET Core).
-   
+
    Для приложения ASP.NET Core с именем предыдущего процесса был *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ ms.locfileid: "54981276"
 7. Нажмите кнопку **Присоединить**.
 
 8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
-    
+
     Должна открыться веб-страница ASP.NET.
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
@@ -229,7 +229,7 @@ ms.locfileid: "54981276"
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее при устранении неполадок в развертывании, а приложение размещается за брандмауэром, может потребоваться проверить, что необходимые порты открыты.
 
-На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Требуемые порты:
 

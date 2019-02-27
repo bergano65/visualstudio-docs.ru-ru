@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d734b03741bc6b794c925daa0c02084173c088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24232878452082dd1769c9bc9f1cd22d081968f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596559"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
-Пропускает указанное число таблиц в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `celt`  
- [in] Количество таблиц в последовательности перечисления для пропуска.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные таблицы, чтобы пропустить.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+Пропускает указанное число таблиц в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `celt`
+
+[in] Количество таблиц в последовательности перечисления для пропуска.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные таблицы, чтобы пропустить.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

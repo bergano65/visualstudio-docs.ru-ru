@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о том, как получить ключи продукта в подписках Visual Studio и управлять ими.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803828"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843728"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Использование ключей продукта в подписках Visual Studio
 
@@ -47,9 +45,9 @@ ms.locfileid: "53803828"
 
 ## <a name="locating-and-claiming-product-keys"></a>Определение расположения ключей продуктов и запрос ключей
 Для просмотра ключей продуктов нужно войти в свою подписку Visual Studio. Отдельные ключи продуктов можно найти, щелкнув ссылку **Получить ключ** для конкретного продукта на странице [Скачивания](https://my.visualstudio.com/downloads), как показано ниже.  Все ключи продуктов в совокупности можно найти на странице [Ключи продуктов](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Если у одного продукта существует несколько ключей, в столбце "Примечания" для этого скачиваемого файла отображаются примечания, облегчающие выбор подходящего ключа.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Получение ключа на странице загрузок](_img/product-keys/download-get-key.png)
-    
+
 Некоторые продукты состоят из нескольких выпусков продукта в одной загрузке. В этом случае устанавливаемый продукт определяется по введенному ключу продукта.
 Некоторые ключи предоставляются автоматически, например "статические" ключи, которые можно использовать неограниченное число раз, так как активация не требуется. Другие ключи нужно запросить, щелкнув ссылку **Получить ключ** для продукта.
 

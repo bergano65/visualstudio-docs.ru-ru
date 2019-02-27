@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Установка визуализатора | Документация Майкрософт
+title: 'Практическое: Установка визуализатора | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,33 +17,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e2ff65e5d410295e9ce7fa0512588b68ca25e55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965540"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691427"
 ---
-# <a name="how-to-install-a-visualizer"></a>Как выполнить установку визуализатора
-После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.  
-  
+# <a name="how-to-install-a-visualizer"></a>Практическое руководство. Установка визуализатора
+После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
+
 > [!NOTE]
->  В приложениях UWP только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
-  
-### <a name="to-install-a-visualizer"></a>Установка визуализатора  
-  
-1.  Найдите библиотеку DLL, содержащую построенный визуализатор.  
-  
-2.  Скопируйте библиотеку DLL в одно из следующих мест:  
-  
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
-  
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
-  
-3.  Если нужно использовать визуализатор управляемого кода для удаленной отладки, скопируйте DLL по тому же пути на удаленном компьютере.  
-  
-4.  Перезапустите сеанс отладки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)
+>  В приложениях UWP только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.
+
+### <a name="to-install-a-visualizer"></a>Установка визуализатора
+
+1.  Найдите библиотеку DLL, содержащую построенный визуализатор.
+
+2.  Скопируйте библиотеку DLL в одно из следующих мест:
+
+    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+
+    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+
+3.  Если нужно использовать визуализатор управляемого кода для удаленной отладки, скопируйте DLL по тому же пути на удаленном компьютере.
+
+4.  Перезапустите сеанс отладки.
+
+## <a name="see-also"></a>См. также раздел
+- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
+- [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)

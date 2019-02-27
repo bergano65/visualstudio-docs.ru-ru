@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947625"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605189"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл *microsoft.common.tasks*, файл *microsoft.common.targets* и такие компиляторы, как *csc.exe* и *vbc.exe*. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.
@@ -116,4 +116,5 @@ MSBuild обеспечивает перезагрузку для методов 
 Поднаборы инструментов впервые появились на платформе .NET Framework 4.5.
 
 ## <a name="see-also"></a>См. также
- [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md), [MSBuild: обзор настройки для различных версий](../msbuild/msbuild-multitargeting-overview.md).
+- [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

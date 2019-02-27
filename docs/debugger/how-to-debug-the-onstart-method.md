@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227065"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714976"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. Отладка метода OnStart
 Службу Windows можно отлаживать, запустив ее и подключив отладчик к процессу службы. Дополнительные сведения см. в разделе [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Тем не менее, для отладки метода <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> службы Windows необходимо запустить отладчик внутри метода.
@@ -53,5 +53,5 @@ ms.locfileid: "56227065"
 5. Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()` .
 
 ## <a name="see-also"></a>См. также раздел
-[Безопасность отладчика](../debugger/debugger-security.md)  
-[Отладка управляемого кода](../debugger/debugging-managed-code.md)
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Отладка управляемого кода](../debugger/debugging-managed-code.md)

@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43890273a1343de380f7b9b289f8836725d2016a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967356"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626327"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Средство визуализации наборов данных - диалоговое окно
-Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.  
-  
- В этом визуализаторе можно внести изменения в объекты. Изменения сохраняются сразу при фиксации строки.  
-  
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
- Таблица  
- Используйте этот раскрывающийся список для выбора таблицы в наборе данных, которую необходимо визуализировать.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Безопасность отладчика](../debugger/debugger-security.md)   
- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Окна отладчика](../debugger/debugger-windows.md)   
- [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.
+
+ В этом визуализаторе можно внести изменения в объекты. Изменения сохраняются сразу при фиксации строки.
+
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+ Таблицы используйте этот раскрывающийся список для выбора таблицы в наборе данных, которую требуется визуализировать.
+
+## <a name="see-also"></a>См. также раздел
+
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
+- [Окна отладчика](../debugger/debugger-windows.md)
+- [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

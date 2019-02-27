@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918113"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700917"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -222,8 +222,8 @@ public class GenericException<T> : Exception
 
 ## <a name="see-also"></a>См. также
 
-[Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Практическое руководство. Проверки времени выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
+- [Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

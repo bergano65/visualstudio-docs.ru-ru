@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c97d56b5ff47652ae04d2cb2e37105b08a00612
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92266de7c372fc6bcf7d0775ebb5ab01ea2e0308
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996003"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633295"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-Извлекает все разнообразие определяемого пользователем типа (UDT).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_udtKind (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает значение из [перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md) перечисление, указывающее тип определяемого пользователем типа: структуры, класса или объединения.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает все разнообразие определяемого пользователем типа (UDT).
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_udtKind ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает значение из [перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md) перечисление, указывающее тип определяемого пользователем типа: структуры, класса или объединения.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae0be22b8699bd240ed78714dd340ed14ea38e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20f9dac750f9ff9723e4f3669f9e9a124d728a9a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992104"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56654130"
 ---
 # <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
-Извлекает интерфейс кадр данных для внешней функции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_functionParent (   
-   IDiaFrameData** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объект для внешней функции.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Извлекает интерфейс кадр данных для внешней функции.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_functionParent ( 
+   IDiaFrameData** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объект для внешней функции.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927751"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627224"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Задача MergeLocalizationDirectives
 Задача <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> выполняет слияние атрибутов локализации и заметок одного или нескольких файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в один файл для всей сборки.
@@ -55,8 +55,8 @@ ms.locfileid: "55927751"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Справочные сведения о задачах WPF для MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md)  
-[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Справочные сведения о задачах WPF для MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md)
+- [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
