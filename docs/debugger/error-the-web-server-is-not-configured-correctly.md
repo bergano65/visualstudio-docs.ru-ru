@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019196"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711609"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Ошибка: Веб-сервер настроен неправильно
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Ошибка: неправильно настроен веб-сервер
 
 После выполнения действия, описанные здесь, чтобы устранить проблему и перед повторной попыткой для отладки также может потребоваться сброс IIS. Это можно сделать, открыв командную строку администратора и введя `iisreset`.
 
@@ -44,9 +44,9 @@ ms.locfileid: "55019196"
 4. (IIS) Убедитесь, что на сервере установлена необходимая версия ASP.NET.
 
     Несовпадение версий ASP.NET в IIS и в своем проекте Visual Studio может вызвать эту проблему. Может потребоваться задать версию платформы в файле web.config. Чтобы установить ASP.NET на IIS, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Кроме того, см. в разделе [IIS 8.0 с ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или для ASP.NET Core, [узла в Windows со службами IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Если `maxConnection` ограничение в службах IIS, слишком низкое и у вас слишком много подключений, может потребоваться [увеличить лимит подключений](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>См. также раздел  
- [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>См. также раздел
+- [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

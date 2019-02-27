@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae09b91574c835a4d3a30a81239e001271b063
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79cad67993107bd9643df628b05b30a27dc72085
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933176"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645411"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
-Получает модификатор доступа члена класса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_access (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает значение из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) перечисление, указывающее модификатор доступа члена класса.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает модификатор доступа члена класса.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_access ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает значение из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) перечисление, указывающее модификатор доступа члена класса.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 7.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 7.0|
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

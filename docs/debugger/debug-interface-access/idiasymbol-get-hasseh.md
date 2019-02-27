@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ced9377d017bfbbcb4a200c004f8223a5636f39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925588"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643734"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Получает флаг, указывающий, содержит ли функция любой [структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (например, __try /\__except блоков).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_hasSEH(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pFlag`  
- [out] Возвращает `TRUE` Если функция имеет любой блоков структурной обработки исключений; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, содержит ли функция любой [структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (например, __try /\__except блоков).
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_hasSEH(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pFlag`
+
+[out] Возвращает `TRUE` Если функция имеет любой блоков структурной обработки исключений; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 8.0|
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

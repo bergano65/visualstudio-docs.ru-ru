@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b16fa64ec77b32ab6c2634c85535658e94cb1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cd7b349cd3b048d68adf21aa11f89c33e7a05f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955964"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646881"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
-Возвращает число байтов в разделе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_length (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает число байтов в разделе.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Возвращает число байтов в разделе.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_length ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает число байтов в разделе.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

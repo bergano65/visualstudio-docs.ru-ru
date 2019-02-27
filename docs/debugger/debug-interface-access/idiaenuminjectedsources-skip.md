@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c08266ab4307b382acc5cff3210744a97e79fc02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640146"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Пропускает заданное число источников, внедренного в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Число источников, внедренного в последовательности перечисления, чтобы пропустить.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если существует больше нет внедренного источника для пропуска.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Пропускает заданное число источников, внедренного в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Число источников, внедренного в последовательности перечисления, чтобы пропустить.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если существует больше нет внедренного источника для пропуска.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
