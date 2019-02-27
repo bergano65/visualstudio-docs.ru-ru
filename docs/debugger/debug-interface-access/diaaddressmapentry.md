@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318645"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637091"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Описывает запись в сопоставлении адрес.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Элементы
-`rva`  
-Относительный виртуальный адрес (RVA) в образ A.
+`rva` Относительный виртуальный адрес (RVA) в образ A.
 
-`rvaTo`  
-Относительный виртуальный адрес `rva` сопоставляется в образе б.
+`rvaTo` Относительный виртуальный адрес `rva` сопоставляется в образе б.
 
 ## <a name="remarks"></a>Примечания
 Сопоставление адреса предоставляет перевод из одного образа макета (A) в другую (Б). Массив `DiaAddressMapEntry` структур, отсортированных по `rva` определяет сопоставление адресов.
@@ -55,5 +53,5 @@ struct DiaAddressMapEntry {
 Заголовок: dia2.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

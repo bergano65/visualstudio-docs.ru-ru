@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e62fb21f33658c07a5c7b60885c0cc83310e15f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609109"
 ---
 # <a name="clickonce-deployment-manifest"></a>Манифест развертывания ClickOnce
-Манифест развертывания — это XML-файл, который описывает развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая идентификацию текущей версии приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для развертывания.  
+Манифест развертывания — это XML-файл, который описывает развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая идентификацию текущей версии приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для развертывания.
 
- Манифесты развертывания имеют следующие элементы и атрибуты.  
+ Манифесты развертывания имеют следующие элементы и атрибуты.
 
 
 | Элемент | Описание | Атрибуты |
@@ -40,83 +40,83 @@ ms.locfileid: "54927799"
 | [\<Подпись > элемент](../deployment/signature-element-clickonce-deployment.md) | Необязательный параметр. Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи. | Нет |
 | [\<customErrorReporting > элемент](../deployment/customerrorreporting-element-clickonce-deployment.md) | Необязательный параметр. Задает отображаемый в случае ошибки URI. | URI |
 
-## <a name="remarks"></a>Примечания  
- Файл манифеста развертывания определяет развертывание приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая текущую версию и другие настройки развертывания. Он ссылается на манифест приложения, описывающий текущую версию приложения и все файлы, задействованные в развертывании.  
+## <a name="remarks"></a>Примечания
+ Файл манифеста развертывания определяет развертывание приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая текущую версию и другие настройки развертывания. Он ссылается на манифест приложения, описывающий текущую версию приложения и все файлы, задействованные в развертывании.
 
- Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+ Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
-## <a name="file-location"></a>Расположение файла  
- Файл манифеста развертывания ссылается на правильный манифест приложения для текущей версии приложения. Когда новая версия развертывания приложения становится доступной, необходимо обновить манифест развертывания, чтобы он ссылался на новый манифест приложения.  
+## <a name="file-location"></a>Расположение файла
+ Файл манифеста развертывания ссылается на правильный манифест приложения для текущей версии приложения. Когда новая версия развертывания приложения становится доступной, необходимо обновить манифест развертывания, чтобы он ссылался на новый манифест приложения.
 
- Файл манифеста развертывания должен иметь строгое имя и может также содержать сертификаты для проверки издателя.  
+ Файл манифеста развертывания должен иметь строгое имя и может также содержать сертификаты для проверки издателя.
 
-## <a name="file-name-syntax"></a>Синтаксис имени файла  
- Имя файла манифеста развертывания должно оканчиваться расширением *.application*.  
+## <a name="file-name-syntax"></a>Синтаксис имени файла
+ Имя файла манифеста развертывания должно оканчиваться расширением *.application*.
 
-## <a name="examples"></a>Примеры  
- Манифест развертывания показан в следующем примере кода.  
+## <a name="examples"></a>Примеры
+ Манифест развертывания показан в следующем примере кода.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
-  manifestVersion="1.0"  
-  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"  
-  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#  
-  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"  
-  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"  
-  xmlns="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"  
-  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"  
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-  <assemblyIdentity   
-    name="My Application Deployment.app"  
-    version="1.0.0.0"  
-    publicKeyToken="43cb1e8e7a352766"  
-    language="neutral"  
-    processorArchitecture="x86"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <description  
-    asmv2:publisher="My Company Name"  
-    asmv2:product="My Application"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <deployment install="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="0" unit="days" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />  
-  </deployment>  
-  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
-    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />  
-    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />  
-  </compatibleFrameworks>  
-  <dependency>  
-    <dependentAssembly  
-      dependencyType="install"  
-      codebase="1.0.0.0\My Application Deployment.exe.manifest"  
-      size="6756">  
-      <assemblyIdentity  
-        name="My Application Deployment.exe"  
-        version="1.0.0.0"  
-        publicKeyToken="43cb1e8e7a352766"  
-        language="neutral"  
-        processorArchitecture="x86"  
-        type="win32" />  
-      <hash>  
-        <dsig:Transforms>  
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-        </dsig:Transforms>  
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>  
-      </hash>  
-    </dependentAssembly>  
-  </dependency>  
-<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">  
-...  
-</Signature></asmv1:assembly>  
-```  
+<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"
+  manifestVersion="1.0"
+  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"
+  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#
+  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"
+  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"
+  xmlns="urn:schemas-microsoft-com:asm.v2"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity
+    name="My Application Deployment.app"
+    version="1.0.0.0"
+    publicKeyToken="43cb1e8e7a352766"
+    language="neutral"
+    processorArchitecture="x86"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description
+    asmv2:publisher="My Company Name"
+    asmv2:product="My Application"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="0" unit="days" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly
+      dependencyType="install"
+      codebase="1.0.0.0\My Application Deployment.exe.manifest"
+      size="6756">
+      <assemblyIdentity
+        name="My Application Deployment.exe"
+        version="1.0.0.0"
+        publicKeyToken="43cb1e8e7a352766"
+        language="neutral"
+        processorArchitecture="x86"
+        type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">
+...
+</Signature></asmv1:assembly>
+```
 
-## <a name="see-also"></a>См. также  
- [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>См. также
+- [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

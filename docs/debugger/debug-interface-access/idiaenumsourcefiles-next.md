@@ -12,40 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973347"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631787"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Извлекает указанное число исходных файлов в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaSourceFile** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Количество исходных файлов в перечислителе требуется получить.  
-  
- rgelt  
- [out] Массив, который должен быть заполнен с помощью [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объекты, представляющие нужные исходные файлы.  
-  
- pceltFetched  
- [out] Возвращает количество исходных файлов в выбранной перечислитель.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет другие исходные файлы. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Извлекает указанное число исходных файлов в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Next ( 
+   ULONG            celt,
+   IDiaSourceFile** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Количество исходных файлов в перечислителе требуется получить.
+
+ rgelt
+
+[out] Массив, который должен быть заполнен с помощью [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объекты, представляющие нужные исходные файлы.
+
+ pceltFetched
+
+[out] Возвращает количество исходных файлов в выбранной перечислитель.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет другие исходные файлы. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

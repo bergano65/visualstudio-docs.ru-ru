@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1147635a3558f1743578acbedb59738dec7d9ca6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ead0db08427d6116671637f943059904555b4480
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608062"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
-Извлекает интерфейс символ типа виртуальную таблицу для определяемого пользователем типа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_virtualTableShape (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий виртуальную таблицу для определяемого пользователем типа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает интерфейс символ типа виртуальную таблицу для определяемого пользователем типа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_virtualTableShape ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий виртуальную таблицу для определяемого пользователем типа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

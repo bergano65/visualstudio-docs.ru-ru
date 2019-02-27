@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fa91423a5c0ddf6b276095b53ae4461d7057c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005531"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628446"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; элемент (развертывание ClickOnce)
-Содержит сведения об издателе, подписавшем этот манифест развертывания.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<publisherIdentity  
-   name  
-   issuerKeyHash  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `publisherIdentity` Элемент является обязательным для манифестов с подписью. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживает элемент.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`name`|Обязательный. Описывает удостоверение стороны, публикации этого приложения.|  
-|`issuerKeyHash`|Обязательный. Содержит хэш SHA-1 открытого ключа издателя сертификата.|  
-  
-#### <a name="parameters"></a>Параметры  
-  
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
-  
-## <a name="exceptions"></a>Исключения  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="requirements"></a>Требования  
-  
+Содержит сведения об издателе, подписавшем этот манифест развертывания.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<publisherIdentity
+   name
+   issuerKeyHash
+/>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ `publisherIdentity` Элемент является обязательным для манифестов с подписью. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживает элемент.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`name`|Обязательный. Описывает удостоверение стороны, публикации этого приложения.|
+|`issuerKeyHash`|Обязательный. Содержит хэш SHA-1 открытого ключа издателя сертификата.|
+
+#### <a name="parameters"></a>Параметры
+
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+
+## <a name="exceptions"></a>Исключения
+
+## <a name="remarks"></a>Примечания
+
+## <a name="requirements"></a>Требования
+
 ## <a name="subhead"></a>Подзаголовок
