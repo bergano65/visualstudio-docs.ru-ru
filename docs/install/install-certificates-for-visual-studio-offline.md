@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936646"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645723"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Установка сертификатов, необходимых для установки Visual Studio в автономном режиме
 
@@ -61,6 +61,7 @@ Visual Studio рассчитана в основном на установку �
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Обновление**. Для Visual Studio 2017 версии 15.8 Preview 2 или более поздней версии создайте пакетный файл, выполнив следующие команды:
 
    ```cmd
@@ -123,7 +124,7 @@ Visual Studio рассчитана в основном на установку �
 
 ## <a name="install-visual-studio"></a>Установка Visual Studio
 
-После установки сертификатов развертывание Visual Studio можно продолжить с помощью инструкций из раздела [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) на странице "Создание сетевой установки Visual Studio".
+После установки сертификатов развертывание Visual Studio можно продолжить с помощью инструкций из раздела [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) на странице "Создание сетевой установки Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

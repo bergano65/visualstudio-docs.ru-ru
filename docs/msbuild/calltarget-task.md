@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001635"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617240"
 ---
 # <a name="calltarget-task"></a>CallTarget - задача
-Вызывает указанные целевые объекты в файле проекта.  
+Вызывает указанные целевые объекты в файле проекта.
 
-## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `CallTarget` .  
+## <a name="task-parameters"></a>Параметры задачи
+ В следующей таблице приводятся параметры задачи `CallTarget` .
 
 
 | Параметр | Описание |
@@ -37,31 +37,31 @@ ms.locfileid: "55001635"
 | `Targets` | Необязательный параметр `String[]` .<br /><br /> Указывает один или несколько целевых объектов для сборки. |
 | `UseResultsCache` | Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание**. При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки. |
 
-## <a name="remarks"></a>Примечания  
- Если заданный в `Targets` целевой объект завершается сбоем, а `RunEachTargetSeparately` имеет значение `true`, задача продолжает сборку оставшихся целевых объектов.  
+## <a name="remarks"></a>Примечания
+ Если заданный в `Targets` целевой объект завершается сбоем, а `RunEachTargetSeparately` имеет значение `true`, задача продолжает сборку оставшихся целевых объектов.
 
- Если вы хотите выполнить сборку целевых объектов по умолчанию, используйте [задачу MSBuild](../msbuild/msbuild-task.md) и задайте для параметра `Projects` значение `$(MSBuildProjectFile)`.  
+ Если вы хотите выполнить сборку целевых объектов по умолчанию, используйте [задачу MSBuild](../msbuild/msbuild-task.md) и задайте для параметра `Projects` значение `$(MSBuildProjectFile)`.
 
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- Приведенный ниже пример вызывается `TargetA` из `CallOtherTargets`.  
+## <a name="example"></a>Пример
+ Приведенный ниже пример вызывается `TargetA` из `CallOtherTargets`.
 
-```xml  
-<Project DefaultTargets="CallOtherTargets"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="CallOtherTargets"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="CallOtherTargets">  
-        <CallTarget Targets="TargetA"/>  
-    </Target>  
+    <Target Name="CallOtherTargets">
+        <CallTarget Targets="TargetA"/>
+    </Target>
 
-    <Target Name="TargetA">  
-        <Message Text="Building TargetA..." />  
-    </Target>  
+    <Target Name="TargetA">
+        <Message Text="Building TargetA..." />
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Целевые объекты](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>См. также
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Целевые объекты](../msbuild/msbuild-targets.md)

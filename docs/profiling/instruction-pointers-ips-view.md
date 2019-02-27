@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c673a362cfa48e41c82518da50f489422ea480fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620165"
 ---
 # <a name="instruction-pointers-ips-view"></a>Представление указателей инструкций
-Представление "Указатели инструкций" позволяет просматривать отдельные инструкции, выполняемые во время выборочного профилирования.  
-  
- Это представление недоступно при профилировании с инструментированием.  
-  
- Для данных выборочного профиля представление "Указатели инструкций" определяет инструкции в функции, которая непосредственно выполнялась в момент получения выборки.  
-  
- Для данных памяти .NET представление "Строки" определяет инструкции, выделяющие память.  
-  
-## <a name="see-also"></a>См. также  
- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)
+Представление "Указатели инструкций" позволяет просматривать отдельные инструкции, выполняемые во время выборочного профилирования.
+
+ Это представление недоступно при профилировании с инструментированием.
+
+ Для данных выборочного профиля представление "Указатели инструкций" определяет инструкции в функции, которая непосредственно выполнялась в момент получения выборки.
+
+ Для данных памяти .NET представление "Строки" определяет инструкции, выделяющие память.
+
+## <a name="see-also"></a>См. также
+- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)

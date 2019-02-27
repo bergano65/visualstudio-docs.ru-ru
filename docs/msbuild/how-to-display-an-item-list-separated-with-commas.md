@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Отображение списка элементов, разделенных запятыми | Документация Майкрософт
+title: Как выполнить Отображение списка элементов, разделенных запятыми | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853434"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610467"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Как выполнить  Отображение списка элементов, разделенных запятыми
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Как выполнить Отображение списка элементов, разделенных запятыми
 При работе со списками элементов в [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) иногда бывает полезно отобразить содержимое этих списков в удобном для чтения виде. Либо у вас может быть задача, принимающая список элементов, разделенных специальной строкой. В обоих случаях вы можете указать строку разделителя для списка элементов.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Разделение элементов в списке запятыми
@@ -67,5 +67,5 @@ ms.locfileid: "55853434"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Элементы](../msbuild/msbuild-items.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Элементы](../msbuild/msbuild-items.md)

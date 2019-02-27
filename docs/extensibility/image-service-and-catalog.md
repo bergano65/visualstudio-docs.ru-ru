@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679493"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844065"
 ---
 # <a name="image-service-and-catalog"></a>Каталог и служба образов
 Это руководство содержит инструкции и рекомендации по внедрению служба изображений Visual Studio и каталог образа, появившихся в Visual Studio 2015.
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Обновите код, чтобы использовать службы образов для запроса специальных имен с помощью обновленного сопоставления. (Это может означать обновление для **CrispImages** для управляемого кода, или запрос HBITMAP или объектами HICON из службы образов и передавая их вокруг для машинного кода.)
 
 ## <a name="testing-your-images"></a>Тестирование изображения
- Средство просмотра библиотеки изображений можно использовать для тестирования манифесты изображение, чтобы убедиться в том, что все, что создан правильно. Можно найти средство в [пакет SDK для Visual Studio 2015](visual-studio-sdk.md). Можно найти документацию по этой и других [здесь](http://aka.ms/VSImageThemeTools).
+ Средство просмотра библиотеки изображений можно использовать для тестирования манифесты изображение, чтобы убедиться в том, что все, что создан правильно. Можно найти средство в [пакет SDK для Visual Studio 2015](visual-studio-sdk.md). Можно найти документацию по этой и других [здесь](https://aka.ms/VSImageThemeTools).
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

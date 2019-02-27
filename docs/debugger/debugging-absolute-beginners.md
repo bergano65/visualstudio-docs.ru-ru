@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484229"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713156"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Принципы отладки для начинающих
 
@@ -101,7 +101,7 @@ ms.locfileid: "55484229"
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ ms.locfileid: "55484229"
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ ms.locfileid: "55484229"
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ ms.locfileid: "55484229"
     По результатам запуска приложения отладчик не демонстрирует никаких исключений. Тем не менее данные, выводимые в окно консоли, не соответствуют ожиданиям. Вот, что мы должны были увидеть.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ ms.locfileid: "55484229"
     Вместо этого выводятся следующие данные.
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ ms.locfileid: "55484229"
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     В месте установки точки останова в левом поле появится красный круг.
@@ -247,13 +247,13 @@ ms.locfileid: "55484229"
 1. Анализируя код, в котором задается тип галактики, вы можете увидеть, что свойство `GalaxyType` класса `Galaxy` задается как `object` вместо `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Измените предшествующий код на следующий.
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезапустить приложение") на панели инструментов отладки (**CTRL** + **SHIFT** + **F5**), чтобы выполнить повторную компиляцию кода и снова запустить его.
@@ -265,8 +265,8 @@ ms.locfileid: "55484229"
     Приложение запускается и отображает выходные данные. Теперь все работает правильно, однако вы можете заметить еще одну неточность. Для галактики Small Magellanic Cloud, которая имеет тип Irregular, в консоли не выводится никакой тип.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ ms.locfileid: "55484229"
 
 1. Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезапустить приложение") на панели инструментов отладки (**CTRL** + **SHIFT** + **F5**), чтобы запустить приложение снова.
 
-    Отладчик приостановит работу в строке кода, где вы задали точку останова.  
+    Отладчик приостановит работу в строке кода, где вы задали точку останова.
 
 1. Наведите указатель мыши на переменную `type`. Отображается значение `S` (после кода символа). Вас интересует значение `I`, поскольку эта галактика должна иметь тип Irregular.
 
@@ -323,7 +323,7 @@ ms.locfileid: "55484229"
 * Проверьте, выполняет ли ваше приложение код, который вы ожидаете. (Так, в примере приложения должна была выполняться инструкция switch, устанавливающая тип галактики Irregular, однако нужный код был пропущен из-за опечатки.)
 
 > [!TIP]
-> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md). 
+> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 

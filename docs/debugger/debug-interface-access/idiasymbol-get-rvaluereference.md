@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206abebe13a6295a387208bb50461ffed4f30b25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd75cad2fb40961c829c1fd76c603aa88d072199
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926038"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622180"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-Получает флаг, указывающий, является ли тип указателя, ссылки rvalue. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается тип указателя.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_RValueReference (  
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` если указатель является ссылкой rvalue; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, является ли тип указателя, ссылки rvalue. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается тип указателя.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_RValueReference (
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` если указатель является ссылкой rvalue; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
-  
- Библиотека: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+
+## <a name="requirements"></a>Требования
+ Заголовок: Dia2.h
+
+ Библиотека: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

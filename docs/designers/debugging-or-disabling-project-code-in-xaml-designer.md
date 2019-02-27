@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919278"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596742"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Отладка или отключение кода проекта в конструкторе XAML
 
@@ -88,7 +88,7 @@ ms.locfileid: "55919278"
 ## <a name="control-display-options"></a>Параметры отображения элементов управления
 
 > [!NOTE]
-> Функция **Control Display Options** (Параметры отображения элементов управления) доступна только для приложений универсальной платформы Windows, предназначенных для Windows 10 Fall Creators Update (сборка 16299) или более поздней версии. Функция **Control Display Options** (Параметры отображения элементов управления) доступна в Visual Studio 2017 версии 15.9 или более поздней. 
+> Функция **Control Display Options** (Параметры отображения элементов управления) доступна только для приложений универсальной платформы Windows, предназначенных для Windows 10 Fall Creators Update (сборка 16299) или более поздней версии. Функция **Control Display Options** (Параметры отображения элементов управления) доступна в Visual Studio 2017 версии 15.9 или более поздней.
 
 В конструкторе XAML можно изменить параметры отображения элементов управления, чтобы отображать только элементы управления платформы из пакета Windows SDK. Это может повысить надежность конструктора XAML.
 

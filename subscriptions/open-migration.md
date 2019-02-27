@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Дополнительные сведения о миграции Open и Open License на портал администрирования подписок Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995846"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843199"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Миграция Open и Open License на новый портал администрирования подписок Visual Studio
 
@@ -28,22 +26,22 @@ ms.locfileid: "43995846"
 
 - Выполнив вход, они получат доступ к подпискам своей организации.
 
-После наступления назначенной даты миграции клиенты и партнеры будут подпадать под один из указанных ниже сценариев. 
+После наступления назначенной даты миграции клиенты и партнеры будут подпадать под один из указанных ниже сценариев.
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>Управление Open и Open License для новых заказов
 
-Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) партнерам и клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом. 
+Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) партнерам и клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
 
 - Партнеры размещают новый заказ от имени клиента, указав его рабочий адрес электронной почты.
 
 - Клиент получает уведомление с предложением назначить администраторов и получить доступ к его подпискам на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com).
 
-- Чтобы партнеры могли управлять подписками от имени клиентов, их необходимо зарегистрировать на портале администрирования. Ниже перечислены различные варианты (по аналогии с процессом add-open). 
+- Чтобы партнеры могли управлять подписками от имени клиентов, их необходимо зарегистрировать на портале администрирования. Ниже перечислены различные варианты (по аналогии с процессом add-open).
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>Существующие партнеры добавляют новую лицензию
 
-Сценарий относится к партнерам, которые уже имеют доступ к [порталу администрирования подписок Visual Studio](https://manage.visualstudio.com), но разместили заказ на Open License с подписками Visual Studio, необходимыми для управления. 
+Сценарий относится к партнерам, которые уже имеют доступ к [порталу администрирования подписок Visual Studio](https://manage.visualstudio.com), но разместили заказ на Open License с подписками Visual Studio, необходимыми для управления.
 
 - Партнер переходит непосредственно на сайт https://manage.visualstudio.com и входит в систему.
 
@@ -57,9 +55,9 @@ ms.locfileid: "43995846"
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Новые партнеры, зарегистрировавшиеся в Сервисном центре корпоративного лицензирования (VLSC)
 
-Сценарий относится к новым партнерам, которые размещают новые заказы на Open License, но не зарегистрировались в [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) с помощью процедуры add-open, прежде чем заходить на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com). 
+Сценарий относится к новым партнерам, которые размещают новые заказы на Open License, но не зарегистрировались в [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) с помощью процедуры add-open, прежде чем заходить на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com).
 
-- Партнер заходит на VLSC и открывает раздел "Сводная таблица". 
+- Партнер заходит на VLSC и открывает раздел "Сводная таблица".
 
 - Затем он выбирает программу Open License, которой собирается управлять.
 
@@ -75,9 +73,9 @@ ms.locfileid: "43995846"
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Новые партнеры, которые заходят на портал администрирования подписок Visual Studio напрямую
 
-Этот сценарий относится к новым партнерам, которые уже размещали новые заказы на Open License, но еще не зарегистрировались на портале [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и зашли на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com) напрямую. 
+Этот сценарий относится к новым партнерам, которые уже размещали новые заказы на Open License, но еще не зарегистрировались на портале [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и зашли на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com) напрямую.
 
-- Партнер заходит на сайт https://manage.visualstudio.com напрямую. 
+- Партнер заходит на сайт https://manage.visualstudio.com напрямую.
 
 - Отображается сообщение о том, что пользователь не распознан.
 

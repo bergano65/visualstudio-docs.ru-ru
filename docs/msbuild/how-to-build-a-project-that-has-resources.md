@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Сборка проекта, содержащего ресурсы | Документация Майкрософт
+title: Как выполнить Сборка проекта, содержащего ресурсы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852844"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610415"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Как выполнить  Сборка проекта, содержащего ресурсы
+# <a name="how-to-build-a-project-that-has-resources"></a>Как выполнить Сборка проекта, содержащего ресурсы
 При создании локализованных версий проекта все элементы пользовательского интерфейса должны разделяться по файлам ресурсов для разных языков. Если в проекте используются только строки, в качестве файлов ресурсов могут выступать текстовые файлы. Кроме того, в этих целях можно использовать *RESX*-файлы.
 
 ## <a name="compile-resources-with-msbuild"></a>Компиляция ресурсов с помощью MSBuild
@@ -77,7 +77,7 @@ ms.locfileid: "55852844"
 ```
 
 ## <a name="see-also"></a>См. также
-[MSBuild](../msbuild/msbuild.md)  
-[Задача GenerateResource](../msbuild/generateresource-task.md)  
-[Задача Csc](../msbuild/csc-task.md)  
-[Resgen.exe (генератор файлов ресурсов)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Задача GenerateResource](../msbuild/generateresource-task.md)
+- [Задача Csc](../msbuild/csc-task.md)
+- [Resgen.exe (генератор файлов ресурсов)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015099"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597430"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Создание настраиваемых представлений объектов (C#, Visual Basic, C++)
-Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.  
+Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.
 
 ## <a name="native-code"></a>Машинный код
 
@@ -39,16 +39,17 @@ ms.locfileid: "55015099"
 
 ## <a name="attributes"></a>Атрибуты
 
-В C#, Visual Basic и C++ (C + +/ CLI только в код), можно добавлять расширения для пользовательских данных при помощи <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, и <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-Visual Basic не поддерживает атрибут DebuggerBrowsable в случае кода для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это ограничение устранено в более новых версиях платформы .NET Framework.    
+В C#, Visual Basic и C++ (C + +/ CLI только в код), можно добавлять расширения для пользовательских данных при помощи <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, и <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+
+Visual Basic не поддерживает атрибут DebuggerBrowsable в случае кода для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это ограничение устранено в более новых версиях платформы .NET Framework.
 
 ## <a name="visualizers"></a>Визуализаторы
 
-Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [Как написать визуализатор](/visualstudio/debugger/create-custom-visualizers-of-data).
-  
-## <a name="see-also"></a>См. также раздел  
- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
- [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [как: Написание визуализатора на](/visualstudio/debugger/create-custom-visualizers-of-data).
+
+## <a name="see-also"></a>См. также раздел
+
+- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)
+- [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -12,42 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81700f73b7a1730a4f74f5340d5928b3662db3b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933495"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619424"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-Извлекает предыдущий символы в порядке по адресу.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Prev (   
-   ULONG        celt,   
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Количество символов в перечислителе требуется получить.  
-  
- rgelt  
- [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.  
-  
- pceltFetched  
- [out] Возвращает количество символов в выбираемых перечислитель.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символов нет предыдущего. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Этот метод обновляет позицию перечислителя, количество выбранных элементов.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Извлекает предыдущий символы в порядке по адресу.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Prev ( 
+   ULONG        celt,
+   IDiaSymbol** rgelt,
+   ULONG*       pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Количество символов в перечислителе требуется получить.
+
+ rgelt
+
+[out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.
+
+ pceltFetched
+
+[out] Возвращает количество символов в выбираемых перечислитель.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символов нет предыдущего. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Этот метод обновляет позицию перечислителя, количество выбранных элементов.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
