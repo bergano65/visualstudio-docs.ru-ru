@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957943"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954313"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 
@@ -161,27 +161,28 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 Иногда может быть полезно для анализа кода с фокусом ввода и по-прежнему использовать Visual Studio IDE. Ниже приведен пример сценария, который может использоваться для крупных проектов для экономии времени сборки и облегчают фильтра результатов.
 
-1.  В командной строке задайте `esp.extension` и `esp.annotationbuildlevel` переменные среды.
-2.  Запустите Visual Studio из командной оболочки для наследования эти переменные.
-3.  Загрузить проект и откройте ее свойства.
-4.  Включить анализ кода, выбрать наборы соответствующее правило, но не включайте расширения анализа кода.
-5.  Перейдите к файлу, который вы хотите проанализировать с помощью правила C++ Core Checker и откройте ее свойства.
-6.  Выберите **C / C++ \Command параметры строки** и добавьте `/analyze:plugin EspXEngine.dll`
-7.  Отключить использование файла предкомпилированного заголовка (**C / C++ \Precompiled заголовки**). Это необходимо, так как подсистема расширений может попытаться прочитать внутренние сведения из файла предкомпилированного заголовка и если последний был скомпилирован с параметрами по умолчанию проекта, он не будут совместимы.
-8.  Перестройте проект. Распространенные PREFast проверки должны работать на всех файлов. Так как правила C++ Core Checker не включена по умолчанию, он должен выполняться только на файл, который настроен для использования его.
+1. В командной строке задайте `esp.extension` и `esp.annotationbuildlevel` переменные среды.
+2. Запустите Visual Studio из командной оболочки для наследования эти переменные.
+3. Загрузить проект и откройте ее свойства.
+4. Включить анализ кода, выбрать наборы соответствующее правило, но не включайте расширения анализа кода.
+5. Перейдите к файлу, который вы хотите проанализировать с помощью правила C++ Core Checker и откройте ее свойства.
+6. Выберите **C / C++ \Command параметры строки** и добавьте `/analyze:plugin EspXEngine.dll`
+7. Отключить использование файла предкомпилированного заголовка (**C / C++ \Precompiled заголовки**). Это необходимо, так как подсистема расширений может попытаться прочитать внутренние сведения из файла предкомпилированного заголовка и если последний был скомпилирован с параметрами по умолчанию проекта, он не будут совместимы.
+8. Перестройте проект. Распространенные PREFast проверки должны работать на всех файлов. Так как правила C++ Core Checker не включена по умолчанию, он должен выполняться только на файл, который настроен для использования его.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Как использовать правила C++ Core Checker вне Visual Studio
 Можно использовать проверки C++ Core Guidelines в автоматических построениях.
 
 ### <a name="msbuild"></a>MSBuild
- Средство проверки анализ машинного кода (PREfast) интегрируется в среду MSBuild файлами пользовательских целевых объектов. Можно использовать свойства проекта, чтобы включить его и добавить C++ Core Checker рекомендации (который основан на PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+Средство проверки анализ машинного кода (PREfast) интегрируется в среду MSBuild файлами пользовательских целевых объектов. Можно использовать свойства проекта, чтобы включить его и добавить C++ Core Checker рекомендации (который основан на PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Убедитесь, что можно добавить эти свойства перед импортом файла Microsoft.Cpp.targets. Можно выбрать наборы конкретное правило или создать настраиваемый набор правил или использовать набор правил по умолчанию, который включает в себя другие PREfast проверки.
@@ -221,14 +222,16 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
    - `/analyze:plugin EspXEngine.dll` Этот параметр, загружает модуль расширения анализа кода в PREfast. Этот модуль, в свою очередь, загружает правила C++ Core Checker.
 
 ## <a name="use-the-guideline-support-library"></a>Использование библиотеки поддержки рекомендации
- Библиотека поддержки рекомендация призвана обеспечить следование основных рекомендаций. GSL содержит определения, которые позволяют заменять ошибкам конструкции с более безопасные альтернативы. Например, можно заменить `T*, length` пары параметров с `span<T>` типа. Найти по адресу GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Библиотека является открытым исходным кодом, чтобы просмотреть источники, добавлять комментарии или участие. Проект можно найти в [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Использовать правила C++ Core Check в проектах Visual Studio 2015
-  Если вы используете Visual Studio 2015, C++ Core Check наборов правил анализа кода не устанавливаются по умолчанию. Необходимо выполнить некоторые дополнительные действия, чтобы можно было включить средства анализа кода C++ Core Check, в Visual Studio 2015. Корпорация Майкрософт предоставляет поддержку для проектов Visual Studio 2015 с помощью пакета Nuget. Пакет называется Microsoft.CppCoreCheck, и оно доступно в [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Этот пакет требует, что у вас есть по крайней мере установлена среда Visual Studio 2015 с обновлением 1.
+Библиотека поддержки рекомендация призвана обеспечить следование основных рекомендаций. GSL содержит определения, которые позволяют заменять ошибкам конструкции с более безопасные альтернативы. Например, можно заменить `T*, length` пары параметров с `span<T>` типа. Найти по адресу GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Библиотека является открытым исходным кодом, чтобы просмотреть источники, добавлять комментарии или участие. Проект можно найти в [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- Пакет также устанавливает другой пакет как зависимость только заголовки рекомендация поддержки библиотеки (GSL). GSL также доступна на сайте GitHub в [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Использовать правила C++ Core Check в проектах Visual Studio 2015
 
- Из-за того, в который загружаются правил анализа кода необходимо установить пакет Microsoft.CppCoreCheck NuGet в каждый проект C++, который вы хотите проверить в Visual Studio 2015.
+Если вы используете Visual Studio 2015, C++ Core Check наборов правил анализа кода не устанавливаются по умолчанию. Необходимо выполнить некоторые дополнительные действия, чтобы можно было включить средства анализа кода C++ Core Check, в Visual Studio 2015. Корпорация Майкрософт предоставляет поддержку для проектов Visual Studio 2015 с помощью пакета Nuget. Пакет называется Microsoft.CppCoreCheck, и оно доступно в [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Этот пакет требует, что у вас есть по крайней мере установлена среда Visual Studio 2015 с обновлением 1.
+
+Пакет также устанавливает другой пакет как зависимость только заголовки рекомендация поддержки библиотеки (GSL). GSL также доступна на сайте GitHub в [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Из-за того, в который загружаются правил анализа кода необходимо установить пакет Microsoft.CppCoreCheck NuGet в каждый проект C++, который вы хотите проверить в Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Добавление пакета Microsoft.CppCoreCheck в проект в Visual Studio 2015
 
