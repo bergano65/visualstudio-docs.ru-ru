@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620919"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954054"
 ---
 # <a name="author-vsct-files"></a>Автор vsct-файлы
 В этом документе показано, как создавать *.vsct* файл для добавления элементов меню, панелей инструментов и других элементов пользовательского интерфейса (UI) в среде разработки Visual Studio (IDE). Выполните следующие действия, при добавлении элементов пользовательского интерфейса для пакета Visual Studio (пакет VSPackage), который еще не содержит *.vsct* файла.
