@@ -21,66 +21,66 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04cc8a351ed99ec0b477b2db5052ac94b56054
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621634"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
-`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<RelatedProducts>  
-    <DependsOnProduct  
-        Code  
-    />  
-    <EitherProducts>  
-        <DependsOnProduct  
-            Code  
-        />  
-    </EitherProducts>  
-    <IncludesProduct  
-        Code  
-    />  
-</RelatedProducts>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.  
-  
-## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.  
-  
- `DependsOnProduct` содержит следующий атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
-  
-## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.  
-  
-## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.  
-  
- `IncludesProduct` содержит следующий атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
-  
-## <a name="example"></a>Пример  
- В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]и поэтому не требует отдельной установки.  
-  
-```xml  
-<RelatedProducts>  
-    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
-</RelatedProducts>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)
+`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<RelatedProducts>
+    <DependsOnProduct
+        Code
+    />
+    <EitherProducts>
+        <DependsOnProduct
+            Code
+        />
+    </EitherProducts>
+    <IncludesProduct
+        Code
+    />
+</RelatedProducts>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.
+
+## <a name="dependsonproduct"></a>DependsOnProduct
+ `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.
+
+ `DependsOnProduct` содержит следующий атрибут.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|
+
+## <a name="eitherproducts"></a>EitherProducts
+ `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.
+
+## <a name="includesproduct"></a>IncludesProduct
+ `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.
+
+ `IncludesProduct` содержит следующий атрибут.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|
+
+## <a name="example"></a>Пример
+ В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]и поэтому не требует отдельной установки.
+
+```xml
+<RelatedProducts>
+    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />
+</RelatedProducts>
+```
+
+## <a name="see-also"></a>См. также
+- [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)

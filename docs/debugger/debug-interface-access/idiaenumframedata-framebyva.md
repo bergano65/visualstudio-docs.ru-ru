@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c6f6252c23069ffce01b9b790a44b24efbd80a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 62999d8b8dc0313e9ca5086dc4737d7a41db1c87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949380"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623415"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-Возвращает кадр, виртуальный адрес (VA).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT frameByVA(   
-   ULONGLONG       virtualAddress,  
-   IDiaFrameData** frame  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- virtualAddress  
- [in] VA кадра интерес.  
-  
- фрейм  
- [out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий рамку, содержащую указанный адрес.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Возвращает кадр, виртуальный адрес (VA).
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT frameByVA( 
+   ULONGLONG       virtualAddress,
+   IDiaFrameData** frame
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ virtualAddress
+
+[in] VA кадра интерес.
+
+ фрейм
+
+[out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий рамку, содержащую указанный адрес.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4af16c9a0f2e254a0e63e95fb8c1f7881785a4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315148"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646347"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Задает язык исходного кода приложения или связанном модуле.
@@ -47,56 +47,39 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>Элементы
-CV_CFL_C  
-Язык — C.
+Язык приложения CV_CFL_C — C.
 
-CV_CFL_CXX  
-Язык приложения — C++.
+Язык приложения CV_CFL_CXX — C++.
 
-CV_CFL_FORTRAN  
-Язык приложения — FORTRAN.
+Язык приложения CV_CFL_FORTRAN — FORTRAN.
 
-CV_CFL_MASM  
-Язык приложения — Microsoft Macro Assembler.
+Язык CV_CFL_MASM приложения — Microsoft Macro Assembler.
 
-CV_CFL_PASCAL  
-Язык приложения — Pascal.
+Язык приложения CV_CFL_PASCAL — Pascal.
 
-CV_CFL_BASIC  
-Язык — BASIC.
+Язык приложения CV_CFL_BASIC — BASIC.
 
-CV_CFL_COBOL  
-Язык приложения — COBOL.
+Язык приложения CV_CFL_COBOL — COBOL.
 
-CV_CFL_LINK  
-Приложения — это модуль компоновщиком.
+CV_CFL_LINK приложения — это модуль компоновщиком.
 
-CV_CFL_CVTRES  
-Приложение — преобразовать с помощью средства CVTRES модуля ресурсов.
+Приложение CV_CFL_CVTRES — преобразовать с помощью средства CVTRES модуля ресурсов.
 
-CV_CFL_CVTPGD  
-Приложения — это модуль POGO оптимизированных для операций, созданных с помощью средства CVTPGD.
+CV_CFL_CVTPGD приложения — это модуль POGO оптимизированных для операций, созданных с помощью средства CVTPGD.
 
-CV_CFL_CSHARP  
-Язык приложения — C#.
+Язык приложения CV_CFL_CSHARP C#.
 
-CV_CFL_VB  
-Язык приложения — Visual Basic.
+Приложение CV_CFL_VB языком является Visual Basic.
 
-CV_CFL_ILASM  
-Язык приложения — сборке на промежуточном языке (то есть сборка Common Language Runtime (CLR)).
+Язык приложения CV_CFL_ILASM — сборке на промежуточном языке (то есть сборка Common Language Runtime (CLR)).
 
-CV_CFL_JAVA  
-Язык приложения — Java.
+Язык CV_CFL_JAVA приложения — Java.
 
-CV_CFL_JSCRIPT  
-Язык приложения является Jscript.
+Язык CV_CFL_JSCRIPT приложения является Jscript.
 
-CV_CFL_MSIL  
-Язык приложения — Неизвестный язык MSIL (Microsoft Intermediate), возможно, результат применения [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключения.
+Язык приложения CV_CFL_MSIL — Неизвестный язык MSIL (Microsoft Intermediate), возможно, результат применения [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключения.
 
-CV_CFL_HLSL  
-High Level Shader Language — язык приложения
+Язык приложения CV_CFL_HLSL — High Level Shader Language.
 
 ## <a name="remarks"></a>Примечания
 Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) метод.
@@ -105,5 +88,5 @@ High Level Shader Language — язык приложения
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

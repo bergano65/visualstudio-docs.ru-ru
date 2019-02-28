@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 120b5b6818900b8f177a7358d9ef0cee7bb88482
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27221a4ae47b9fb06130b550ceb6d3cc1f00dce0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992624"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680962"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Поиск имени процесса ASP.NET
 
@@ -29,22 +29,22 @@ ms.locfileid: "54992624"
 
 **Чтобы узнать, какой процесс выполняется в приложении ASP.NET:**
 
-1. С помощью приложения, выполняемого в Visual Studio, выберите **Отладка** > **присоединение к процессу**. 
-   
-1. В **присоединение к процессу** диалоговое окно, введите первые буквы процесса имена из следующего списка, или в поле поиска введите. Тот, который выполняется та же выполнение приложения ASP.NET. Присоедините к процессу отладки приложения. 
-   
-    - *w3wp.exe* — IIS 6.0 и более поздних версий. 
+1. С помощью приложения, выполняемого в Visual Studio, выберите **Отладка** > **присоединение к процессу**.
+
+1. В **присоединение к процессу** диалоговое окно, введите первые буквы процесса имена из следующего списка, или в поле поиска введите. Тот, который выполняется та же выполнение приложения ASP.NET. Присоедините к процессу отладки приложения.
+
+    - *w3wp.exe* — IIS 6.0 и более поздних версий.
     - *aspnet_wp.exe* является более ранних версий IIS.
     - *iisexpress.exe* — IISExpress.
     - *DotNet.exe* — ASP.NET Core.
-    - *Inetinfo.exe* является внутренним старые приложения ASP. 
+    - *Inetinfo.exe* является внутренним старые приложения ASP.
 
 >[!NOTE]
->Visual Studio 2012 и ранее [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] кода можно в файловой системе и выполните на тестовом сервере *WebDev.WebServer.exe* или *WebDev.WebServer40.exe*. В этом случае для локальной отладки, присоединить к *WebDev.WebServer.exe* или *WebDev.WebServer40.exe* вместо [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] процесса. 
+>Visual Studio 2012 и ранее [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] кода можно в файловой системе и выполните на тестовом сервере *WebDev.WebServer.exe* или *WebDev.WebServer40.exe*. В этом случае для локальной отладки, присоединить к *WebDev.WebServer.exe* или *WebDev.WebServer40.exe* вместо [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] процесса.
 
 **См. также:**
 
- [Присоединение к выполняемому процессу](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Необходимые условия для удаленной отладки веб-приложений](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
- [Требования к системе](../debugger/aspnet-debugging-system-requirements.md)   
- [Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Присоединение к выполняемому процессу](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Необходимые условия для удаленной отладки веб-приложений](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)
+- [Требования к системе](../debugger/aspnet-debugging-system-requirements.md)
+- [Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

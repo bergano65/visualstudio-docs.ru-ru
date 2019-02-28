@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1013d026e2943560ceeb9c0146469b754b2faa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611312"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Извлекает имя символа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает имя символа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает имя символа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает имя символа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-IDiaSymbol* pType;  
-BSTR        name;  
-pType->get_name( &name );  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="example"></a>Пример
+
+```C++
+IDiaSymbol* pType;
+BSTR        name;
+pType->get_name( &name );
+```
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

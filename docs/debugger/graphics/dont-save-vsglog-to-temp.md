@@ -8,40 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967ff50991efbbd7b598605abd992b298367d01c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 501a054ddb1d3ab20a10f99bb30a0c3439004eb3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006181"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705590"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
-Определяет своим наличием, нужно ли сохранять файл журнала графики в каталог временных файлов пользователя.  
+Определяет своим наличием, нужно ли сохранять файл журнала графики в каталог временных файлов пользователя.
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```C++  
-#define DONT_SAVE_VSGLOG_TO_TEMP  
-```  
+```C++
+#define DONT_SAVE_VSGLOG_TO_TEMP
+```
 
-## <a name="value"></a>Значение  
- Символ препроцессора, определяет, является ли файл журнала графики, его наличие или отсутствие сохраняется в каталоге временных файлов пользователя. Если этот символ определен, то имя файла определяется `VSG_DEFAULT_RUN_FILENAME` относительно текущего каталога захватываемого приложения или не является абсолютным; в противном случае имя файла определяется `VSG_DEFAULT_RUN_FILENAME` задается относительно каталога временных файлов пользователя и не может быть Абсолютный путь.  
+## <a name="value"></a>Значение
+ Символ препроцессора, определяет, является ли файл журнала графики, его наличие или отсутствие сохраняется в каталоге временных файлов пользователя. Если этот символ определен, то имя файла определяется `VSG_DEFAULT_RUN_FILENAME` относительно текущего каталога захватываемого приложения или не является абсолютным; в противном случае имя файла определяется `VSG_DEFAULT_RUN_FILENAME` задается относительно каталога временных файлов пользователя и не может быть Абсолютный путь.
 
-## <a name="remarks"></a>Примечания  
- В зависимости от привилегий пользователя файл журнала графики может оказаться невозможно сохранить в произвольное расположение. Рекомендуется, вы хотите сохранить журналы графики в каталоге временных файлов пользователя, или в другом расположении работоспособной, если вы не уверены ли расположение, необходимо выбрать могут записываться для пользователя.  
+## <a name="remarks"></a>Примечания
+ В зависимости от привилегий пользователя файл журнала графики может оказаться невозможно сохранить в произвольное расположение. Рекомендуется, вы хотите сохранить журналы графики в каталоге временных файлов пользователя, или в другом расположении работоспособной, если вы не уверены ли расположение, необходимо выбрать могут записываться для пользователя.
 
- Чтобы предотвратить файла журнала графики, данные не будут сохранены в каталог временных файлов, определенных `DONT_SAVE_VSGLOG_TO_TEMP` перед включением `vsgcapture.h`.  
+ Чтобы предотвратить файла журнала графики, данные не будут сохранены в каталог временных файлов, определенных `DONT_SAVE_VSGLOG_TO_TEMP` перед включением `vsgcapture.h`.
 
-## <a name="example"></a>Пример  
- В этом примере показано, как сохранить файл журнала графики в абсолютный путь на хост-компьютере.  
+## <a name="example"></a>Пример
+ В этом примере показано, как сохранить файл журнала графики в абсолютный путь на хост-компьютере.
 
 ```cpp
-// Define DONT_SAVE_VSGLOG_TO_TEMP and VSG_DEFAULT_RUN_FILENAME before including vsgcapture.h  
-#define DONT_SAVE_VSGLOG_TO_TEMP  
-#define VSG_DEFAULT_RUN_FILENAME L"C:\\Graphics Diagnostics Captures\\default.vsglog"  
+// Define DONT_SAVE_VSGLOG_TO_TEMP and VSG_DEFAULT_RUN_FILENAME before including vsgcapture.h
+#define DONT_SAVE_VSGLOG_TO_TEMP
+#define VSG_DEFAULT_RUN_FILENAME L"C:\\Graphics Diagnostics Captures\\default.vsglog"
 
-#include <vsgcapture.h>  
-```  
+#include <vsgcapture.h>
+```
 
-## <a name="see-also"></a>См. также раздел  
- [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)
+## <a name="see-also"></a>См. также раздел
+- [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

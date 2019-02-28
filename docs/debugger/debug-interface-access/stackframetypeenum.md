@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab674576655df3b4a695d97fdfdb42df2ffa449
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602459"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Указывает тип кадра стека.
@@ -36,23 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Элементы
-`FrameTypeFPO`  
-Указатель на фреймы опустить; FPO сведения недоступны.
+`FrameTypeFPO` Указатель на фреймы опустить; FPO сведения недоступны.
 
-`FrameTypeTrap`  
-Кадр перехвата ядра.
+`FrameTypeTrap` Кадр перехвата ядра.
 
-`FrameTypeTSS`  
-Кадр перехвата ядра.
+`FrameTypeTSS` Кадр перехвата ядра.
 
-`FrameTypeStandard`  
-Стандартный кадр стека EBP.
+`FrameTypeStandard` Стандартный кадр стека EBP.
 
-`FrameTypeFrameData`  
-Указатель на фреймы опустить; Кадр данных сведения о доступных.
+`FrameTypeFrameData` Указатель на фреймы опустить; Кадр данных сведения о доступных.
 
-`FrameTypeUnknown`  
-Кадр, который не поддерживает любой отладочной информации.
+`FrameTypeUnknown` Кадр, который не поддерживает любой отладочной информации.
 
 ## <a name="remarks"></a>Примечания
 Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.
@@ -61,5 +55,5 @@ enum StackFrameTypeEnum {
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

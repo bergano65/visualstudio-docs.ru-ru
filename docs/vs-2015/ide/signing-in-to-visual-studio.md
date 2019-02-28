@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8504ebcbcea9906148f9c3a671f185375d269d83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766398"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842298"
 ---
 # <a name="signing-in-to-visual-studio"></a>Вход в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54766398"
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Почему нужно выполнять вход в Visual Studio?
  При входе в Visual Studio можно получить следующие преимущества.
 
--   **Предоставляет доступ в обширному ряду преимуществ** из программы Visual Studio Dev Essentials, включая бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
+-   **Предоставляет доступ в обширному ряду преимуществ** из программы Visual Studio Dev Essentials, включая бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
 -   **Синхронизация параметров Visual Studio** . Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу сразу после входа в Visual Studio на любом другом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

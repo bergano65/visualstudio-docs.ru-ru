@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f83ebca4d7d03afb8eae7a9b885334ccc1cb71
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff4c5d26d875dc098775d0d379e7d12b062801cd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924313"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621530"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
-Пропускает заданное число сегментов в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Количество сегментов в последовательности перечисления для пропуска.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии не больше сегментов, чтобы пропустить.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+Пропускает заданное число сегментов в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Количество сегментов в последовательности перечисления для пропуска.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии не больше сегментов, чтобы пропустить.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

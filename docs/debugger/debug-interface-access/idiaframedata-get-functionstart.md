@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f532b55ffd401b88471921cb41d47410604dfa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939378"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614731"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Получает флаг, указывающий, содержит ли блок точку входа функции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если блок содержит точку входа; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Это возможно для кадра стека, не будут включены начала функции, так как кадр представляет встроенный метод или функция, вставить в функцию.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Получает флаг, указывающий, содержит ли блок точку входа функции.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если блок содержит точку входа; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Это возможно для кадра стека, не будут включены начала функции, так как кадр представляет встроенный метод или функция, вставить в функцию.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

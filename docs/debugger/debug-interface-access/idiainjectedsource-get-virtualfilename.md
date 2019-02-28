@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb0d0b163830b488c44f1c5e3143e1a87e69d55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618657"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_virtualFilename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает имя, присвоенное внедренного не являющимся файлами исходного кода.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_virtualFilename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает имя, присвоенное внедренного не являющимся файлами исходного кода.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2844003bf7ec81b256537fe06520dfdff473faa
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640172"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Возвращает базовый тип для этого символа<em>.</em>
@@ -31,7 +31,8 @@ HRESULT get_baseType (
 ```
 
 #### <a name="parameters"></a>Параметры
-`pRetVal`  
+`pRetVal`
+
 [out] Возвращает значение из [перечисление BasicType](../../debugger/debug-interface-access/basictype.md) перечисление, определяющее, базовый тип символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -66,6 +67,6 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Версия:|ПАКЕТ SDK для версии 7.0|
 
 ## <a name="see-also"></a>См. также раздел
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[Перечисление BasicType](../../debugger/debug-interface-access/basictype.md)  
-[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление BasicType](../../debugger/debug-interface-access/basictype.md)
+- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

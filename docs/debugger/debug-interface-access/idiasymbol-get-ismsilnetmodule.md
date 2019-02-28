@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a04709615d14d7b5bd5d017bce378333d24b2b7d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df52c7a6a82bd24d3be51971b1d288b97d0b491a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965163"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627705"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-Получает флаг, указывающий, является ли модуль .netmodule (Microsoft Intermediate Language (MSIL) модуль, содержащий только метаданные и не собственных символов).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isMSILNetmodule(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pFlag`  
- [out] Возвращает `TRUE` Если модуль MSIL; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, является ли модуль .netmodule (Microsoft Intermediate Language (MSIL) модуль, содержащий только метаданные и не собственных символов).
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isMSILNetmodule(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pFlag`
+
+[out] Возвращает `TRUE` Если модуль MSIL; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="remarks"></a>Примечания
+ Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 8.0|
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

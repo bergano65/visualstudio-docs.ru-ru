@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227136"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700449"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Практическое руководство. Тестирование и отладка визуализатора
 После написания визуализатора необходимо выполнить отладку и протестировать его.
@@ -54,6 +54,6 @@ ms.locfileid: "56227136"
     Более полный пример, см. в разделе [Пошаговое руководство: Написание визуализатора на C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>См. также раздел
-[Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)  
-[Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
+- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)
+- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

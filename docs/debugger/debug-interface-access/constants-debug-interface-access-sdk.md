@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608582"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Константы (SDK для доступа к интерфейсу отладки)
 Эти строковые константы можно использовать для идентификации различные разделы файла базы данных (PDB) программы отладки через пакет SDK для доступа к интерфейсу отладки.
@@ -56,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 Заголовок: dia2.h
 
 ## <a name="see-also"></a>См. также раздел
-[Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

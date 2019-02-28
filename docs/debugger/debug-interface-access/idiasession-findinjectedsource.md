@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e49d7332fee2b6e5e3c919e595e891fe8511edca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939274"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642213"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Извлекает список источников, размещенных в хранилище символов поставщиками атрибут или другие компоненты в процессе компиляции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT findInjectedSource (   
-   LPCOLESTR                 srcFile,  
-   IDiaEnumInjectedSources** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- srcFile  
- [in] Имя исходного файла, который требуется найти.  
-  
- ppResult  
- [out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренного источников.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+Извлекает список источников, размещенных в хранилище символов поставщиками атрибут или другие компоненты в процессе компиляции.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT findInjectedSource ( 
+   LPCOLESTR                 srcFile,
+   IDiaEnumInjectedSources** ppResult
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ srcFile
+
+[in] Имя исходного файла, который требуется найти.
+
+ ppResult
+
+[out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренного источников.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

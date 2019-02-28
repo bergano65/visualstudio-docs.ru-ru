@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318528"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613275"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Определяет преобразователь типов.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Элементы
-THUNK_ORDINAL_NOTYPE  
-Стандартный преобразователь.
+Стандартный THUNK_ORDINAL_NOTYPE преобразователь.
 
-THUNK_ORDINAL_ADJUSTOR  
-Объект `this` корректором преобразователь.
+Объект THUNK_ORDINAL_ADJUSTOR `this` корректором преобразователь.
 
-THUNK_ORDINAL_VCALL  
-Преобразователь виртуального вызова.
+Преобразователь THUNK_ORDINAL_VCALL виртуального вызова.
 
-THUNK_ORDINAL_PCODE  
-Преобразователь P-кода.
+Преобразователь THUNK_ORDINAL_PCODE P-code.
 
-THUNK_ORDINAL_LOAD  
-Преобразователь задержки загрузки.
+Преобразователь THUNK_ORDINAL_LOAD задержки загрузки.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Добавочные trampoline преобразователь (trampoline преобразователь используется для переброса вызовы из пространства памяти в другой).
+Добавочные THUNK_ORDINAL_TRAMP_INCREMENTAL trampoline преобразователь (trampoline преобразователь используется для переброса вызовы из пространства памяти в другой).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Преобразователь trampoline точки ветви.
+Преобразователь trampoline точки THUNK_ORDINAL_TRAMP_BRANCHISLAND ветви.
 
 ## <a name="remarks"></a>Примечания
 Значения в этом перечислении возвращаются из вызова [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) метод.
@@ -67,5 +60,5 @@ THUNK_ORDINAL_TRAMP_BRANCHISLAND
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

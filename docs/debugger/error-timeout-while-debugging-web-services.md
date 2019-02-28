@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0963d1675c3456601aba70bb5291b7cc19d454fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683549"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Ошибка: время ожидания при отладке веб-служб
-При выполнении шага с заходом в веб-службу XML из вызывающего кода в некоторых случаях может быть превышено время ожидания вызова, что не позволит продолжить отладку. Может отобразиться сообщение наподобие того, что приведено ниже.  
-  
+При выполнении шага с заходом в веб-службу XML из вызывающего кода в некоторых случаях может быть превышено время ожидания вызова, что не позволит продолжить отладку. Может отобразиться сообщение наподобие того, что приведено ниже.
+
 ```cmd
-An unhandled exception of type 'System.Net.WebException' occurred in   
-system.Web.services.dll  
-Additional information: The operation has timed-out.  
-```  
-  
-## <a name="solution"></a>Решение  
- Во избежание этой проблемы задайте бесконечное время ожидания вызова веб-службы XML, как показано в следующем примере.  
-  
+An unhandled exception of type 'System.Net.WebException' occurred in
+system.Web.services.dll
+Additional information: The operation has timed-out.
+```
+
+## <a name="solution"></a>Решение
+ Во избежание этой проблемы задайте бесконечное время ожидания вызова веб-службы XML, как показано в следующем примере.
+
 ```csharp
-Service1 obj = new Service1();  
-obj.TimeOut = -1; // infinite time out.  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+Service1 obj = new Service1();
+obj.TimeOut = -1; // infinite time out.
+```
+
+## <a name="see-also"></a>См. также раздел
+- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

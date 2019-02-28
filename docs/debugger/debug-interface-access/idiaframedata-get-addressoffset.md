@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ba0a925f74bec1c4bd14d20bda13260f2083d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4460f5102fbb5fd62f332f41a2901d1759731e7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596897"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-Извлекает часть смещения адреса кода для кадра.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает часть смещения адреса кода для кадра.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Извлекает часть смещения адреса кода для кадра.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает часть смещения адреса кода для кадра.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

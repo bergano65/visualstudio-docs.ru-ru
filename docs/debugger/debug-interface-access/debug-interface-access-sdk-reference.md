@@ -14,29 +14,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a4dbcd8de6aeb339fd742b906db890128024b16
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042872"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637300"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Справочник по SDK для доступа к интерфейсу отладки
-Полный справочник для всех интерфейсов и вспомогательные перечисления и структуры в пакете SDK для доступа к интерфейсу отладки.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Полный справочник на все интерфейсы, предоставляемые пакетом SDK для доступа к интерфейсу отладки.  
-  
- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
- Полный справочник ко всем перечисления и структуры, необходимые интерфейсы.  
-  
- [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Описывает ряд строк и их метки, которые могут использоваться с интерфейсами.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- Описание символов и как они идентифицируются по типу.  
-  
-## <a name="see-also"></a>См. также раздел  
- [SDK для доступа к интерфейсу отладки](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+
+Полный справочник для всех интерфейсов и вспомогательные перечисления и структуры в пакете SDK для доступа к интерфейсу отладки.
+
+## <a name="in-this-section"></a>В этом разделе
+
+[Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+
+Полный справочник на все интерфейсы, предоставляемые пакетом SDK для доступа к интерфейсу отладки.
+
+[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+
+Полный справочник ко всем перечисления и структуры, необходимые интерфейсы.
+
+[Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+
+Описывает ряд строк и их метки, которые могут использоваться с интерфейсами.
+
+## <a name="related-sections"></a>Связанные разделы
+
+[Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
+Описание символов и как они идентифицируются по типу.
+
+## <a name="see-also"></a>См. также раздел
+
+- [SDK для доступа к интерфейсу отладки](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

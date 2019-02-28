@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a859fc41252fc6f6d8e99ecbaa881cd07ffd6134
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026766"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638820"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-Получает символ, который содержит указанный виртуальный адрес.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT symbolForVA(   
-   ULONGLONG     va,  
-   IDiaSymbol**  ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `va`  
- [in] Виртуальный адрес, содержащийся в запрошенный символа. Символ должен быть `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).  
-  
- `ppSymbol`  
- [out] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий символ по указанному адресу.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Получает символ, который содержит указанный виртуальный адрес.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT symbolForVA( 
+   ULONGLONG     va,
+   IDiaSymbol**  ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `va`
+
+[in] Виртуальный адрес, содержащийся в запрошенный символа. Символ должен быть `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).
+
+ `ppSymbol`
+
+[out] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий символ по указанному адресу.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,42 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96851912abb6593ce1fe72bd3eebdd67c120c26b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992793"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624026"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Этот метод получает значение указанной локальной переменной в виде необработанных байт.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pInstance`  
- [in] `IDiaLVarInstance` Объект, представляющий экземпляр локальной переменной, чтобы получить значение.  
-  
- `cbDataMax`  
- [in] Максимальное число байтов в буфере, на которые указывают `pbData`. Это может быть более 8 байт (`sizeof(ULONGLONG)`).  
-  
- `pcbData`  
- [out] Возвращает фактическое число байтов, сохраненных в буфере.  
-  
- `pbData`  
- [out] Буфер для заполниться данными. Не может иметь значение `NULL`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Этот метод получает значение указанной локальной переменной в виде необработанных байт.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pInstance`
+
+[in] `IDiaLVarInstance` Объект, представляющий экземпляр локальной переменной, чтобы получить значение.
+
+ `cbDataMax`
+
+[in] Максимальное число байтов в буфере, на которые указывают `pbData`. Это может быть более 8 байт (`sizeof(ULONGLONG)`).
+
+ `pcbData`
+
+[out] Возвращает фактическое число байтов, сохраненных в буфере.
+
+ `pbData`
+
+[out] Буфер для заполниться данными. Не может иметь значение `NULL`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

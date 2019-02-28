@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9e1632fa9031dc502cce6467e60e76d30bf874
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87751dcca1e2109db53c9d6dd4594bc969ffc684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999045"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616506"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
-Возвращает сегмент с помощью индекса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Item (   
-   DWORD         index,  
-   IDiaSegment** segment  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) метод.  
-  
- сегмент  
- [out] Возвращает [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объект, представляющий нужного сегмента.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Возвращает сегмент с помощью индекса.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Item ( 
+   DWORD         index,
+   IDiaSegment** segment
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ индекс
+
+[in] Индекс [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) метод.
+
+ сегмент
+
+[out] Возвращает [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объект, представляющий нужного сегмента.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

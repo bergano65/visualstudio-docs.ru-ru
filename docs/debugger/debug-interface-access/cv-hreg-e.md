@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316110"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623428"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Указывает целевой регистра.
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Элементы
-CV_REG_*  
-Регистры, используемые Intel 80 x 86 и ix86 процессоров и p кода.
+CV_REG_ * регистрирует используемые Intel 80 x 86 и ix86 процессоров и p кода.
 
-CV_R68_*  
-Регистры, процессор 68 КБ.
+CV_R68_ * регистрирует, процессор 68 КБ.
 
-CV_M4_*  
-Регистры, процессор серии 4000 MIP-ОБЪЕКТЫ.
+CV_M4_ * регистрирует, процессор серии 4000 MIP-ОБЪЕКТЫ.
 
-CV_ALPHA_*  
-Регистры, процессор серии Digital Equipment Corporation Alpha AXP.
+CV_ALPHA_ * регистрирует, процессор серии Digital Equipment Corporation Alpha AXP.
 
-CV_PPC_*  
-Регистры, используется процессором PowerPC Motorola/IBM.
+CV_PPC_ * регистрирует, используется процессором PowerPC Motorola/IBM.
 
-CV_SH3_ * и CV_SH_\*  
-Регистры, процессор серии Hitachi SH3 и Hitachi SH.
+CV_SH3_ * и CV_SH_\* регистры, процессор серии Hitachi SH3 и Hitachi SH.
 
-CV_ARM_*  
-Регистры, используемые процессорами Advanced RISC Machine (ARM).
+CV_ARM_ * регистрирует использоваться процессорами Advanced RISC Machine (ARM).
 
-CV_IA64_*  
-Регистры, используемые процессорами серии Intel® IA64.
+CV_IA64_ * регистрирует использоваться процессорами серии Intel® IA64.
 
-CV_TRI_ *  
-Регистры, процессор TriCore Infineon технологий.
+CV_TRI_ * регистрирует, процессор TriCore Infineon технологий.
 
-CV_AM33_*  
-Регистры используется Matsushita/Panasonic AM33 и связанные с процессорами.
+CV_AM33_ * регистрирует используемые AM33 Matsushita/Panasonic и связанных процессоров.
 
-CV_M32R_ *  
-Регистры, Mitsubishi M32R процессор.
+CV_M32R_ * регистрирует, Mitsubishi M32R процессор.
 
 ## <a name="remarks"></a>Примечания
 Каждый тип процессора использует собственный уникальный набор регистров.
@@ -461,9 +450,9 @@ CV_M32R_ *
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

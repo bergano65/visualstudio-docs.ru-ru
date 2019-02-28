@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21990c772d03c7ef1657b01c64c393c8d77c79af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27aa2b48e56d38c779c6687001d80ae60f3ad1e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609154"
 ---
 # <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
-Получает флаг, указывающий, содержит ли далеко возвращаемого значения функции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_farReturn(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pFlag`  
- [in] Возвращает `TRUE` Если эта функция использует гораздо возвращаемого значения, в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, содержит ли далеко возвращаемого значения функции.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_farReturn(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pFlag`
+
+[in] Возвращает `TRUE` Если эта функция использует гораздо возвращаемого значения, в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 8.0|
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
