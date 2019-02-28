@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227398"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692273"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в отладчике Visual Studio
 В состав отладчика Visual Studio входят вычислители выражений, которые работают при вводе выражения в диалоговое окно **Быстрая проверка** , окно **Контрольные значения** или окно **Интерпретация** . Вычислители выражений также работают в окне **точки останова** и многих других местах в отладчике.
@@ -205,7 +205,7 @@ int main()
 - Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.
 
 ## <a name="see-also"></a>См. также раздел
-[Определители формата в C++](../debugger/format-specifiers-in-cpp.md)  
-[Оператор Context (C++)](../debugger/context-operator-cpp.md)  
-[Определители формата в C#](../debugger/format-specifiers-in-csharp.md)  
-[Псевдопеременные](../debugger/pseudovariables.md)
+- [Определители формата в C++](../debugger/format-specifiers-in-cpp.md)
+- [Оператор Context (C++)](../debugger/context-operator-cpp.md)
+- [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)
+- [Псевдопеременные](../debugger/pseudovariables.md)

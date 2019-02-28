@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a528201d7f3ba817da9e903abf4bc7570351711a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617422"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_columnNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_columnNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

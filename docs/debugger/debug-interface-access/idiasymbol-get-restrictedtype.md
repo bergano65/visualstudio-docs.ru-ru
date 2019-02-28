@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6caefce977779f7749e1860c1f1304a19c619b0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598197"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Указывает ли `this` указатель помечается как ограниченным доступом.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_restrictedType(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли `this` указатель помечается как ограниченный.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Указывает ли `this` указатель помечается как ограниченным доступом.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_restrictedType(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `BOOL` , указывает ли `this` указатель помечается как ограниченный.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

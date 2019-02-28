@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924552"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596351"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Считывает `BOOL` значения в наборе свойств.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `id`  
- [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
-  
- `pValue`  
- [out] Возвращает значение свойства.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.  
-  
-## <a name="remarks"></a>Примечания  
- Согласованные результаты интерпретировать `BOOL` значение таким образом, ненулевыми значениями `TRUE` а нулевое — `FALSE`.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Считывает `BOOL` значения в наборе свойств.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `id`
+
+[in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).
+
+ `pValue`
+
+[out] Возвращает значение свойства.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.
+
+## <a name="remarks"></a>Примечания
+ Согласованные результаты интерпретировать `BOOL` значение таким образом, ненулевыми значениями `TRUE` а нулевое — `FALSE`.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

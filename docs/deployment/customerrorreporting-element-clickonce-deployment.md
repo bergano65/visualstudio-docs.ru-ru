@@ -14,38 +14,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7254f5735be3efa45b7ba3be0541996cb6c2cc69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629460"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; элемент (развертывание ClickOnce)
-Задает отображаемый в случае ошибки URI.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<customErrorReporting  
-   uri  
-/>  
-```  
-  
-## <a name="remarks"></a>Примечания  
- Этот элемент является необязательным. Без него [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает диалоговое окно ошибки, отображение стека исключений. Если `customErrorReporting` элемент присутствует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] вместо отобразит этот URI, обозначается `uri` параметра. Универсальный код ресурса будет включить внешнее исключение класса, класс внутреннее исключение и сообщение внутреннего исключения в качестве параметров.  
-  
- Этот элемент используется для добавления функций создания отчетов в приложение. Поскольку сформированный URI включает сведения о типе ошибки, веб-сайт можно проанализировать эти сведения и отображения, например, об устранении.  
-  
-## <a name="example"></a>Пример  
- В следующем фрагменте представлен `customErrorReporting` элемента, сформированный URI может привести к его.  
-  
+Задает отображаемый в случае ошибки URI.
+
+## <a name="syntax"></a>Синтаксис
+
 ```xml
-<customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
-  
-Example Generated Error:  
-http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
+<customErrorReporting
+   uri
+/>
+```
+
+## <a name="remarks"></a>Примечания
+ Этот элемент является необязательным. Без него [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает диалоговое окно ошибки, отображение стека исключений. Если `customErrorReporting` элемент присутствует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] вместо отобразит этот URI, обозначается `uri` параметра. Универсальный код ресурса будет включить внешнее исключение класса, класс внутреннее исключение и сообщение внутреннего исключения в качестве параметров.
+
+ Этот элемент используется для добавления функций создания отчетов в приложение. Поскольку сформированный URI включает сведения о типе ошибки, веб-сайт можно проанализировать эти сведения и отображения, например, об устранении.
+
+## <a name="example"></a>Пример
+ В следующем фрагменте представлен `customErrorReporting` элемента, сформированный URI может привести к его.
+
+```xml
+<customErrorReporting uri=http://www.contoso.com/applications/error.asp />
+
+Example Generated Error:
+http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.
+```
+
+## <a name="see-also"></a>См. также
+- [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

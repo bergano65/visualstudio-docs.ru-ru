@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26293210bfc0dc18ded747ef44c5cc8699b3c5c8
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642820"
 ---
 # <a name="idiasession"></a>IDiaSession
 Предоставляет контекст запроса для символов отладки.
@@ -117,11 +117,11 @@ void InitializeDIA(const char *szFilename)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>См. также раздел
-[Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[Exe](../../debugger/debug-interface-access/exe.md)  
-[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
-[Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)
+- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

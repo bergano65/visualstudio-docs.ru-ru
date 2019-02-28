@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023958"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720037"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -47,7 +47,7 @@ ms.locfileid: "55023958"
 * Если вам требуется помощь, чтобы убедиться в том, что приложение настройки, развертывания и неправильной работе в IIS, чтобы выполнять отладку, выполните действия, описанные в этом разделе.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создавать приложения ASP.NET 4.5.2 приложения на компьютере с Visual Studio
-  
+
 1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В разделе шаблонов ASP.NET 4.5.2</strong> выберите шаблон **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
 
 2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
@@ -147,7 +147,7 @@ ms.locfileid: "55023958"
 Также можно опубликовать и развернуть приложение с помощью файловой системы или других средств.
 
 1. (ASP.NET 4.5.2) Убедитесь, что в файле web.config указана правильная версия .NET Framework.  Например если вы используете ASP.NET 4.5.2, убедитесь, что это версия, указанная в файле web.config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ ms.locfileid: "55023958"
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Например версия должна быть 4.0 при установке ASP.NET 4 вместо 4.5.2.
@@ -168,7 +168,7 @@ ms.locfileid: "55023958"
 В этом руководстве мы используем Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ ms.locfileid: "55023958"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P 
+    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P
 
 3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.
@@ -200,7 +200,7 @@ ms.locfileid: "55023958"
 7. Нажмите кнопку **Присоединить**
 
 8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
-    
+
     Должна открыться веб-страница ASP.NET.
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
@@ -211,7 +211,7 @@ ms.locfileid: "55023958"
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее может потребоваться проверить, что порты открыты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Требуемые порты:
 

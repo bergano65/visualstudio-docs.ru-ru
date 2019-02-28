@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c30c3b91bb601d22df8193602d6a4ddbddf024c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49482c99f3d735618cb9caab02a04fea1e81ebc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622323"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
-Возвращает число столбцов в матрице.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_numberOfColumns(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `DWORD` , содержащий число столбцов в матрице.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Возвращает число столбцов в матрице.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_numberOfColumns(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `DWORD` , содержащий число столбцов в матрице.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

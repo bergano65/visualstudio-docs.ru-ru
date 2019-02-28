@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4c1c12409d89d88e683cd0e5b39a8d5a5459df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969776"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715431"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Настройка конфигураций отладки и выпуска в Visual Studio
 
@@ -118,10 +118,10 @@ ms.locfileid: "54969776"
    Компилятор создает файлы символов в той же папке, как исполняемый файл или основного выходного файла.
 
 ## <a name="see-also"></a> См. также
- 
-[Указание файлов символов (.pdb) и исходных файлов в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)<br/>
-[Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[Параметры проекта для конфигурации отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)
+
+- [Указание файлов символов (.pdb) и исходных файлов в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Параметры проекта для конфигурации отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)

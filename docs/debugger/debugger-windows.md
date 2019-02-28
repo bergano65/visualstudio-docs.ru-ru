@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916624"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701710"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
 
@@ -30,13 +30,13 @@ ms.locfileid: "54916624"
 |Контрольное значение|SHIFT+F9|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|
 |Автоматические|CTRL+ALT+V, A|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
 |Локальные|CTRL+ALT+V, L|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
-|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)|
+|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md)|
 |Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|
 |Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|
 |Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|
 |Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
-|Потоки GPU|-|[Практическое руководство. использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
 |Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная оболочка REPL для Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|

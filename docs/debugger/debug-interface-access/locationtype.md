@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 779df14d01950b90a45764ba9d84760a1448d475
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318658"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627939"
 ---
 # <a name="locationtype"></a>LocationType
 Указывает тип данных о географическом положении, содержащихся в символе.
@@ -42,41 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Элементы
-`LocIsNull`  
-Сведения о расположении недоступны.
+`LocIsNull` Сведения о расположении недоступны.
 
-`LocIsStatic`  
-Расположение является статическим.
+`LocIsStatic` Расположение является статическим.
 
-`LocIsTLS`  
-Расположение находится в локальном хранилище потока.
+`LocIsTLS` Расположение находится в локальном хранилище потока.
 
-`LocIsRegRel`  
-Расположение относительно регистра.
+`LocIsRegRel` Расположение относительно регистра.
 
-`LocIsThisRel`  
-Расположение — `this`— относительный.
+`LocIsThisRel` Расположение — `this`— относительный.
 
-`LocIsEnregistered`  
-Расположение — в регистре.
+`LocIsEnregistered` Расположение — в регистре.
 
-`LocIsBitField`  
-Расположением является битовым полем.
+`LocIsBitField` Расположением является битовым полем.
 
-`LocIsSlot`  
-Располагается в слот промежуточного языка MSIL (Microsoft).
+`LocIsSlot` Располагается в слот промежуточного языка MSIL (Microsoft).
 
-`LocIsIlRel`  
-Расположение — относительно MSIL.
+`LocIsIlRel` Расположение — относительно MSIL.
 
-`LocInMetaData`  
-Расположение находится в метаданных.
+`LocInMetaData` Расположение находится в метаданных.
 
-`LocIsConstant`  
-Расположение имеет постоянное значение.
+`LocIsConstant` Расположение имеет постоянное значение.
 
-`LocTypeMax`  
-Количество типов расположение в этом перечислении.
+`LocTypeMax` Количество типов расположение в этом перечислении.
 
 ## <a name="remarks"></a>Примечания
 Свойства, доступные для [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейс зависят от расположения символа в файле образа. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).
@@ -87,7 +75,7 @@ enum LocationType {
 Заголовок: cvconst.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)  
-[Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)
+- [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)

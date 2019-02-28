@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0244aca54ffe7b68ea4cfd82be465c28524758ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973490"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616109"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Получает перечислитель для свойств в этом наборе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Enum (   
-   IEnumSTATPROPSTG** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppenum`  
- [out] Возвращает `IEnumSTATPROPSTG` объект (в пространстве имен Microsoft.VisualStudio.OLE.Interop), представляющий перечисление свойств.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Получает перечислитель для свойств в этом наборе.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Enum ( 
+   IEnumSTATPROPSTG** ppenum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppenum`
+
+[out] Возвращает `IEnumSTATPROPSTG` объект (в пространстве имен Microsoft.VisualStudio.OLE.Interop), представляющий перечисление свойств.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

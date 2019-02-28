@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97329075f0e6a8403563964fafb040ee3ff73f4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bde3de3d4098edb85a14dda8cd573327549a9deb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613405"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
-Получает флаг, указывающий, ссылается ли общедоступных символов для функции.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_function (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если символ относится к функции; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, ссылается ли общедоступных символов для функции.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_function ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если символ относится к функции; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 7.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 7.0|
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

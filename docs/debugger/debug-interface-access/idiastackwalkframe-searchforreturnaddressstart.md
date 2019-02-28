@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c1e28c458ad863248235166df03cb2ae4f8a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931236"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640757"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Выполняет поиск указанного кадра стека для возврата адреса близка к указанному адресу.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT searchForReturnAddressStart (   
-   IDiaFrameData* frame,  
-   ULONGLONG      startAddress,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `frame`  
- [in] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий текущий кадр стека.  
-  
- `startAddress`  
- [in] Адрес виртуальной памяти, с которого начинается поиск.  
-  
- `returnAddress`  
- [out] Возвращает функцию ближайшего обратный адрес `startAddress`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Выполняет поиск указанного кадра стека для возврата адреса близка к указанному адресу.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT searchForReturnAddressStart ( 
+   IDiaFrameData* frame,
+   ULONGLONG      startAddress,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `frame`
+
+[in] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий текущий кадр стека.
+
+ `startAddress`
+
+[in] Адрес виртуальной памяти, с которого начинается поиск.
+
+ `returnAddress`
+
+[out] Возвращает функцию ближайшего обратный адрес `startAddress`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

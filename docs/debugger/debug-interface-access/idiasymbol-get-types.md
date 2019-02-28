@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfde6e7824fa0df315cb843eedb92e4d249b618
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f99530e790594e6966611b97a3d9a2c0a0cc04d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965150"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602706"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Извлекает массив типов специфичные для компилятора для этого символа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_types (   
-   DWORD       cTypes,  
-   DWORD*      pcTypes,  
-   IDiaSymbol* types[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `cTypes`  
- [in] Размер буфера для хранения данных.  
-  
- `pcTypes`  
- [out] Возвращает количество типов, созданных, или, если `types` параметр `NULL`, то общее число доступных типов.  
-  
- `types[]`  
- [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает массив типов специфичные для компилятора для этого символа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_types ( 
+   DWORD       cTypes,
+   DWORD*      pcTypes,
+   IDiaSymbol* types[]
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `cTypes`
+
+[in] Размер буфера для хранения данных.
+
+ `pcTypes`
+
+[out] Возвращает количество типов, созданных, или, если `types` параметр `NULL`, то общее число доступных типов.
+
+ `types[]`
+
+[out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

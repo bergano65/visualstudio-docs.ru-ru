@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b541a21afb997e2864f4b43fd6074f760c8e6dd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920582"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641641"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Получает номер строки источника от единицы, которой заканчивается оператор или выражение.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер строки, в которой заканчивается оператор или выражение. Если значение равно нулю, информация окончания отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер строки источника от единицы, которой заканчивается оператор или выражение.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_lineNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер строки, в которой заканчивается оператор или выражение. Если значение равно нулю, информация окончания отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

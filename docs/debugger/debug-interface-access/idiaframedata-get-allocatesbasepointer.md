@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3aa3150efe4dffb1df2090e8381d471c720c690
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9efd6500f979436027a160357c881ae6d1de426
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596253"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
-Получает флаг, указывающий тип базового указателя, выделяемые для кода в этот диапазон адресов. Этот метод является нерекомендуемым.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_allocatesBasePointer (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если базового указателя выделяется; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Это свойство следует использовать только в коде, которые ранее доступны FPO_DATA или когда строка программы, возвращенные [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод `NULL`. В противном случае программа строка содержит все сведения, необходимые для вычисления предыдущих значений регистров.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+Получает флаг, указывающий тип базового указателя, выделяемые для кода в этот диапазон адресов. Этот метод является нерекомендуемым.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_allocatesBasePointer ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если базового указателя выделяется; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Это свойство следует использовать только в коде, которые ранее доступны FPO_DATA или когда строка программы, возвращенные [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод `NULL`. В противном случае программа строка содержит все сведения, необходимые для вычисления предыдущих значений регистров.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

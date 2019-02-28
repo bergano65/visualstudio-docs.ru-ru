@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941371"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596468"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Указывает, является ли `this` указатель указывает на элемент данных с множественным наследованием.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с множественным наследованием.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Указывает, является ли `this` указатель указывает на элемент данных с множественным наследованием.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с множественным наследованием.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

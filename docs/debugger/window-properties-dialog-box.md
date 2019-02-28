@@ -10,50 +10,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f49164149e642544a4a814378e7aa0bc95caf5c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979209"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699162"
 ---
 # <a name="window-properties-dialog-box"></a>Диалоговое окно "Свойства окна"
-Используйте это диалоговое окно, чтобы получить дополнительные сведения о конкретном окне. Чтобы отобразить это диалоговое окно, перемещение фокуса к [представление Windows](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Вкладка "Общие". Диалоговое окно "Свойства окна"](../debugger/general-tab-window-properties-dialog-box.md)  
- Сведения о выбранном окне.  
-  
- [Вкладка "Стили". Диалоговое окно "Свойства окна"](../debugger/styles-tab-window-properties-dialog-box.md)  
- Отображает стили, примененные к выбранному окну.  
-  
- [Вкладка "Окна". Диалоговое окно "Свойства окна"](../debugger/windows-tab-window-properties-dialog-box.md)  
- Сведения об окнах, связанных с выбранным окном.  
-  
- [Вкладка "Класс". Диалоговое окно "Свойства окна"](../debugger/class-tab-window-properties-dialog-box.md)  
- Показывает сведения о классе выбранного окна.  
-  
- [Вкладка "Процесс". Диалоговое окно "Свойства окна"](../debugger/process-tab-window-properties-dialog-box.md)  
- Определяет процесс выбранного окна.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Диалоговое окно "Поиск окна"](../debugger/window-search-dialog-box.md)  
- Используется для поиска узла для отдельного окна в представлении Windows.  
-  
- [Справочник по Spy++](../debugger/spy-increment-reference.md)  
- Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.  
-  
- [Использование инструмента поиска](../debugger/how-to-use-the-finder-tool.md)  
- Показывает, как это средство проверки окон для свойства или сообщения.  
-  
- [Поиск окна в представлении Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Описание способов поиска отдельного окна в представлении Windows.  
-  
- [Представление окон](../debugger/windows-view.md)  
- Показывает дерево доступных окон и элементов управления.  
-  
- [Представления Spy++](../debugger/spy-increment-views.md)  
- Описание представления дерева Spy ++ окон, сообщений, процессов и потоков.  
-  
- [Использование Spy++](../debugger/using-spy-increment.md)  
- Представлены средства Spy ++ и рассказывается, как он может использоваться.
+Используйте это диалоговое окно, чтобы получить дополнительные сведения о конкретном окне. Чтобы отобразить это диалоговое окно, перемещение фокуса к [представление Windows](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.
+
+## <a name="in-this-section"></a>В этом разделе
+ [Вкладка "Общие". Диалоговое окно "Свойства окна"](../debugger/general-tab-window-properties-dialog-box.md) отображаются сведения о выбранном окне.
+
+ [Вкладка "Стили". Диалоговое окно "Свойства окна"](../debugger/styles-tab-window-properties-dialog-box.md) отображает стили, примененные к выбранному окну.
+
+ [Вкладка "Окна". Диалоговое окно "Свойства окна"](../debugger/windows-tab-window-properties-dialog-box.md) отображаются сведения об окнах, связанных с выбранным окном.
+
+ [Вкладка "Класс". Диалоговое окно "Свойства окна"](../debugger/class-tab-window-properties-dialog-box.md) показывает сведения о классе выбранного окна.
+
+ [Вкладка "Процесс". Диалоговое окно "Свойства окна"](../debugger/process-tab-window-properties-dialog-box.md) определяет процесс выбранного окна.
+
+## <a name="related-sections"></a>Связанные разделы
+ [Диалоговое окно "Поиск окна"](../debugger/window-search-dialog-box.md) используется для поиска узла для отдельного окна в представлении Windows.
+
+ [Справочник по Spy ++](../debugger/spy-increment-reference.md) включает разделы с описанием каждого Spy ++ меню и диалоговое окно.
+
+ [Использование инструмента поиска](../debugger/how-to-use-the-finder-tool.md) показано, как это средство проверки окон для свойства или сообщения.
+
+ [Поиск окна в представлении Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) объясняется, как найти отдельного окна в представлении Windows.
+
+ [Представление Windows](../debugger/windows-view.md) показывает дерево доступных окон и элементов управления.
+
+ [Представления Spy ++](../debugger/spy-increment-views.md) описываются представления дерева Spy ++ окон, сообщений, процессов и потоков.
+
+ [Использование Spy ++](../debugger/using-spy-increment.md) представлены средства Spy ++ и рассказывается, как он может использоваться.

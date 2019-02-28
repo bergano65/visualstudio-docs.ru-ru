@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6a899de205fc22940aa0d48f897ea4ecd6f49ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752342"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842878"
 ---
 # <a name="visual-studio-samples"></a>Примеры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54752342"
 |[Примеры C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Показывает, как использовать различные функции в C++.|
 |[Примеры DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Показывает способы использования DirectX.|
 |[Примеры разработки решений Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](http://go.microsoft.com/fwlink/?LinkID=248199).|
-|[Примеры VSSDK](http://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
+|[Примеры VSSDK](https://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
 
 ## <a name="see-also"></a>См. также раздел
  [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

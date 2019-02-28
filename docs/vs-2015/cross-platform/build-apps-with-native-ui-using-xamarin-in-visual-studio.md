@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764582"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841809"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ ms.locfileid: "54764582"
 
 2.  Выберите подходящее устройство или эмулятор, а затем запустите приложение, нажав клавишу F5.
 
-3.  На устройстве или в эмуляторе введите действительный почтовый индекс США в поле ввода (например: 60601) и нажмите клавишу **узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
+3.  На устройстве или в эмуляторе введите действительный почтовый индекс США в поле ввода (например, 60601), а затем нажмите кнопку **Узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
 
      ![Приложение погоды для Android и Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ ms.locfileid: "54764582"
 
 2.  Запустите приложение, нажав клавишу F5.
 
-3.  В эмуляторе Windows Phone введите действительный почтовый индекс США в поле ввода (например: 60601) и нажмите клавишу **узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
+3.  В эмуляторе Windows Phone введите действительный почтовый индекс США в поле ввода (например, 60601), а затем нажмите кнопку **Узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
 
      ![Версия запущенного приложения для Windows](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ ms.locfileid: "54764582"
  Общий код в переносимой библиотеке классов не зависит от платформы, так как эта библиотека компилируется один раз и включается в пакеты приложений для каждой платформы. Если вы хотите писать общий код, который использует условную компиляцию для изоляции кода для конкретных платформ, можете воспользоваться *общим* проектом. Дополнительные сведения см. в разделе [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>См. также раздел
- [Сайт разработчика Xamarin](http://developer.xamarin.com/) [Центр разработчиков Windows](https://dev.windows.com/en-us) [Swift и C# Краткое справочное руководство](http://aka.ms/scposter)
+ [Сайт разработчика Xamarin](http://developer.xamarin.com/) [Центр разработчиков Windows](https://dev.windows.com/en-us) [Swift и C# Краткое справочное руководство](https://aka.ms/scposter)

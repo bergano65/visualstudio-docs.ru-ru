@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0e12be0f6dbec2febc55a9fae6a010c8b61d4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe768bc356f5e3284218d973c31fa41db0bc51ad
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596494"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
-Получает смещение в сегменты, где начинается разделе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_offset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает смещение, в сегментах, где начинается разделе.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Получает смещение в сегменты, где начинается разделе.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_offset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает смещение, в сегментах, где начинается разделе.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также раздел
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947482"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702178"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio 2017
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -40,7 +40,7 @@ ms.locfileid: "54947482"
 
 * Если вам требуется помощь, чтобы убедиться в том, что приложение настройки, развертывания и неправильной работе в IIS, чтобы выполнять отладку, выполните действия, описанные в этом разделе.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017
 
 1. Создайте новое приложение ASP.NET Core. (**Файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET Core**).
 
@@ -147,7 +147,7 @@ ms.locfileid: "54947482"
 В этом руководстве мы используем Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ ms.locfileid: "54947482"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P). 
+    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P).
 
 3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.
@@ -181,7 +181,7 @@ ms.locfileid: "54947482"
 7. Нажмите кнопку **Присоединить**.
 
 8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
-    
+
     Должна открыться веб-страница ASP.NET.
 
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
