@@ -21,50 +21,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce573c5304e6e785f18dfab4140c6e0382034c53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930736"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700202"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
-Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Диалоговое окно "Ошибка в утверждении"](../debugger/assertion-failed-dialog-box.md)  
-  
- [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)  
-  
- [Отладчику не удается отобразить исходный код или дизассемблированный код](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
-  
- [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)  
-  
- [Диалоговое окно "Сбой при применении изменений кода"](../debugger/edit-and-continue-dialog-box-cpp.md)  
-  
- [Диалоговое окно отладчика Microsoft Visual Studio (создание исключения)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
-  
- [Диалоговое окно "Нет исходного кода для текущего расположения"](../debugger/no-source-available.md)  
-  
- [Диалоговое окно "Нет символьных данных"](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
-  
- [Диалоговое окно "Разрешение неоднозначности"](../debugger/resolve-ambiguity-dialog-box.md)  
-  
- [Диалоговое окно "Предупреждение о необходимости обновления кода"](../debugger/stale-code-warning-dialog-box.md)  
-  
- [Не удалось подключиться к компьютеру](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
-  
- [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Отладка скрипта и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
-  
- [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)  
-  
- [Ошибки присоединения](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
-  
- [Устранение неполадок настройки отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
-  
- [Часто задаваемые вопросы по отладке в Visual C++](../debugger/debugging-native-code-faqs.md)  
-  
+Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.
+
+## <a name="in-this-section"></a>В этом разделе
+ [Диалоговое окно "Ошибка в утверждении"](../debugger/assertion-failed-dialog-box.md)
+
+ [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)
+
+ [Отладчику не удается отобразить исходный код или дизассемблированный код](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+
+ [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)
+
+ [Диалоговое окно "Сбой при применении изменений кода"](../debugger/edit-and-continue-dialog-box-cpp.md)
+
+ [Диалоговое окно отладчика Microsoft Visual Studio (создание исключения)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+
+ [Диалоговое окно "Нет исходного кода для текущего расположения"](../debugger/no-source-available.md)
+
+ [Диалоговое окно "Нет символьных данных"](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+
+ [Диалоговое окно "Разрешение неоднозначности"](../debugger/resolve-ambiguity-dialog-box.md)
+
+ [Диалоговое окно "Предупреждение о необходимости обновления кода"](../debugger/stale-code-warning-dialog-box.md)
+
+ [Не удалось подключиться к компьютеру](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+
+ [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+
+## <a name="related-sections"></a>Связанные разделы
+ [Отладка скриптов и веб-отладка: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+ [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)
+
+ [Ошибки присоединения](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+
+ [Устранение неполадок настройки отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+
+ [Часто задаваемые вопросы по отладке в Visual C++](../debugger/debugging-native-code-faqs.md)
+
  [Безопасность отладчика](../debugger/debugger-security.md)

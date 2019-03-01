@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001973"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690530"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Параметры страниц свойств для веб-проектов
-Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
-  
+Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.
+
 ### <a name="start-options-category"></a>Категория параметров запуска
-  
+
 | **Параметр** | **Описание** |
 | - | - |
 | **Действие при запуске** | Заголовок, группирующий параметры запуска приложения. |
@@ -51,6 +51,6 @@ ms.locfileid: "55001973"
 | **Отладка машинного кода** | Разрешает отлаживать вызовы машинного (неуправляемого) кода Win32 из управляемого приложения. |
 | **Отладка SQL Server** | Разрешает отладку объектов базы данных SQL Server. |
 | **Отладка Silverlight** | Обеспечивает отладку компонентов Silverlight. |
-  
-## <a name="see-also"></a>См. также раздел  
- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>См. также раздел
+- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

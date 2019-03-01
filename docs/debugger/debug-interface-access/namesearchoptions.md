@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318619"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639691"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Указывает параметры поиска для символов и имена файлов.
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Элементы
-`nsNone`  
-Параметры не указаны.
+`nsNone` Параметры не указаны.
 
-`nsfCaseSensitive`  
-Применяет совпадения имени, с учетом регистра.
+`nsfCaseSensitive` Применяет совпадения имени, с учетом регистра.
 
-`nsfCaseInsensitive`  
-Применяет совпадение имя без учета регистра.
+`nsfCaseInsensitive` Применяет совпадение имя без учета регистра.
 
-`nsfFNameExt`  
-Обрабатывает имена как пути и применяет имяфайла.расширение совпадения имени.
+`nsfFNameExt` Обрабатывает имена как пути и применяет имяфайла.расширение совпадения имени.
 
-`nsfRegularExpression`  
-Применяется на совпадение имени с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.
+`nsfRegularExpression` Применяется на совпадение имени с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.
 
-`nsfUndecoratedName`  
-Применяется только к символам, которые внешних и внутренних имен.
+`nsfUndecoratedName` Применяется только к символам, которые внешних и внутренних имен.
 
 ## <a name="remarks"></a>Примечания
 Значения из этого перечисления передаются следующие методы:
@@ -74,7 +68,7 @@ enum NameSearchOptions {
 Заголовок: dia2.h
 
 ## <a name="see-also"></a>См. также раздел
-[Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

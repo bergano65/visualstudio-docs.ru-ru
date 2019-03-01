@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991532"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694820"
 ---
 # <a name="graphics-frame-validation"></a>Проверка кадра графики
 <!-- VERSIONLESS --> Visual Studio 2017 и расширенную поддержку **проверка кадра** средство.  Проверка кадра окна отображаются ошибки и предупреждения, связанные со списком событий.  Чтобы открыть это окно, выберите **Вид > Проверка кадра** меню.
@@ -33,6 +33,6 @@ ms.locfileid: "54991532"
 | Сообщение | Сообщение, связанное с событием. |
 | событие | Событие, связанное с ошибкой или предупреждением. |
 
-## <a name="see-also"></a>См. также раздел  
-[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>См. также раздел
+[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->
