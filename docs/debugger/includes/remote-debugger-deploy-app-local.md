@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809473"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723881"
 ---
 1. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **публикации** (для веб-форм, **публикации веб-приложение**).
 
-    Если ранее вы настроили все профили публикации **публикации** откроется панель. Нажмите кнопку **новый профиль**.
+    Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. Нажмите кнопку **новый профиль**.
 
 1. В **публикации** выберите **папку**, нажмите кнопку **Обзор**и создайте новую папку, **C:\Publish**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809473"
 1. Нажмите кнопку **Опубликовать**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     Публикует приложение **Отладка** конфигурации проекта в локальную папку. Ход выполнения указывает в окне вывода.
 
 1. Скопируйте каталог проекта ASP.NET с компьютера Visual Studio в локальный каталог, настроенный для приложения ASP.NET (в этом примере **C:\Publish**) на компьютере с Windows Server. В этом руководстве мы предполагаем, при копировании вручную, но можно использовать другие средства, такие как PowerShell, Xcopy или Robocopy.

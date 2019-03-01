@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание ассоциаций файлов для приложения ClickOnce | Документация Майкрософт
+title: 'Практическое: создание ассоциаций файлов для приложения ClickOnce | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,45 +15,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f311705a6cb898ee9bff81a3bbad3890aea92c7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947313"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633048"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Как выполнить создать ассоциацию файлов для приложения ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связан один или несколько расширений имен файлов, так что приложение будет запускаться автоматически при открытии файла этих типов. Добавление поддержки расширения имени файла для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения прост.  
-  
-### <a name="to-create-file-associations-for-a-clickonce-application"></a>Создание ассоциаций файлов для приложения ClickOnce  
-  
-1. Создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения обычно или использовать имеющуюся [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  
-  
-2. Откройте манифест приложения в текстовом редакторе или редакторе XML, например в блокноте.  
-  
-3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
-  
-4. Как дочерний `assembly` элемента, добавьте `fileAssociation` элемент. `fileAssociation` Элемент имеет четыре атрибута:  
-  
-   - `extension`: Расширение имени файла, который вы хотите связать с приложением.  
-  
-   - `description`: Описание типа файла, который будет отображаться в оболочке Windows.  
-  
-   - `progid`: Строка, однозначно определяющая тип файла, чтобы пометить его в реестре.  
-  
-   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен как файловый ресурс в манифесте приложения. Дополнительные сведения см. в разделе [Как включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
-  
-     Пример `file` и `fileAssociation` элементов, см. в разделе [ \<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md).  
-  
-5. Если вы хотите связать с приложением более чем один тип файлов, добавьте дополнительные `fileAssociation` элементов. Обратите внимание, что `progid` атрибут должен быть уникальным для каждого.  
-  
-6. После завершения работы в манифесте приложения, повторно подпишите манифест. Можно сделать это из командной строки с помощью *Mage.exe*.  
-  
-    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
-  
-    Дополнительные сведения см. в разделе [Mage.exe (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
-  
-## <a name="see-also"></a>См. также  
- [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)   
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Практическое руководство. Создание ассоциаций файлов для приложения ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связан один или несколько расширений имен файлов, так что приложение будет запускаться автоматически при открытии файла этих типов. Добавление поддержки расширения имени файла для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения прост.
+
+### <a name="to-create-file-associations-for-a-clickonce-application"></a>Создание ассоциаций файлов для приложения ClickOnce
+
+1. Создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения обычно или использовать имеющуюся [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.
+
+2. Откройте манифест приложения в текстовом редакторе или редакторе XML, например в блокноте.
+
+3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).
+
+4. Как дочерний `assembly` элемента, добавьте `fileAssociation` элемент. `fileAssociation` Элемент имеет четыре атрибута:
+
+   - `extension`: Расширение имени файла, который вы хотите связать с приложением.
+
+   - `description`: Описание типа файла, который будет отображаться в оболочке Windows.
+
+   - `progid`: Строка, однозначно определяющая тип файла, чтобы пометить его в реестре.
+
+   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен как файловый ресурс в манифесте приложения. Для получения дополнительной информации см. [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+
+     Пример `file` и `fileAssociation` элементов, см. в разделе [ \<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md).
+
+5. Если вы хотите связать с приложением более чем один тип файлов, добавьте дополнительные `fileAssociation` элементов. Обратите внимание, что `progid` атрибут должен быть уникальным для каждого.
+
+6. После завершения работы в манифесте приложения, повторно подпишите манифест. Можно сделать это из командной строки с помощью *Mage.exe*.
+
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
+
+    Дополнительные сведения см. в разделе [Mage.exe (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+
+## <a name="see-also"></a>См. также
+- [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)
+- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

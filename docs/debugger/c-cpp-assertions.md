@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628329"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не выполняется, утверждение признается ложным, выполнение программы прерывается и появляется [диалоговое окно "Сбой утверждения"](../debugger/assertion-failed-dialog-box.md).
@@ -46,7 +46,7 @@ ms.locfileid: "55987474"
 
 - Утверждения CRT для программ, использующих библиотеку времени выполнения C.
 
-- [Функция assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) ANSI для других программ C/C++.  
+- [Функция assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) ANSI для других программ C/C++.
 
   Можно использовать утверждения для перехвата логических ошибок, проверки результатов операции и условий ошибки теста, которые должны были быть обработаны.
 
@@ -63,7 +63,7 @@ ms.locfileid: "55987474"
 
 - [MFC ASSERT_VALID и CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Ограничения AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Ограничения AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Использование утверждений](#BKMK_Using_assertions)
 
@@ -251,7 +251,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` использует механизм `AssertValid` для проверки допустимости объектов, хранящихся в его членах данных. Метод переопределения `AssertValid` из `CMyData` вызывает макрос `ASSERT_VALID` для собственной переменной-члена m_pDataList.
+`CMyData` использует механизм `AssertValid` для проверки действительности объектов, хранящихся в его элементе данных. Метод переопределения `AssertValid` из `CMyData` вызывает макрос `ASSERT_VALID` для собственной переменной-члена m_pDataList.
 
 Проверка допустимости на этом уровне не останавливается, поскольку класс `CObList` тоже переопределяет `AssertValid`. Это переопределение выполняет добавочную проверку допустимости внутреннего состояния списка. Таким образом, тест допустимости для объекта `CMyData` вызывает дополнительную проверку внутреннего состояния сохраненного объекта списка `CObList`.
 
@@ -339,6 +339,7 @@ _ASSERT(!myErr); // Don't do this, either!
 [Содержание раздела](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>См. также раздел
-[Безопасность отладчика](../debugger/debugger-security.md)  
-[Отладка машинного кода](../debugger/debugging-native-code.md)  
-[Утверждения в управляемом коде](../debugger/assertions-in-managed-code.md)
+
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Отладка машинного кода](../debugger/debugging-native-code.md)
+- [Утверждения в управляемом коде](../debugger/assertions-in-managed-code.md)

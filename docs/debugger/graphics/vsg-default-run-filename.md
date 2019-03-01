@@ -8,47 +8,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af34aed1ed99e1d8e51e594a514286caa7adf748
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979924"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711830"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
-Определяет имя файла журнала графики по умолчанию.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-#define VSG_DEFAULT_FILENAME filename  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `filename`  
- Имя файла журнала графики, присваиваемое по умолчанию файлу журнала графики при захвате данных графики программными средствами.  
-  
-## <a name="value"></a>Значение  
- Строковый литерал, который представляет имя файла журнала графики. По умолчанию это "default.vsglog".  
-  
-```C++  
-#define VSG_DEFAULT_FILENAME L"default.vsglog"  
-```  
-  
-## <a name="remarks"></a>Примечания  
- Если определен символ препроцессора `DONT_SAVE_VSGLOG_TO_TEMP`, имя файла является относительным для текущего каталога захватываемого приложения или представляет собой абсолютный путь; в противном случае это имя относительно каталога временных файлов пользователя, которое не может быть абсолютным путем.  
-  
- Чтобы изменить определенное имя файла, необходимо переопределить его до включения `vsgcapture.h` в программе.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как изменить имя файла захвата по умолчанию:  
-  
-```C++  
-// Redefine the default capture filename before including vsgcapture.h  
-#define VSG_DEFAULT_FILENAME L"capture.vsglog"  
-  
-#include <vsgcapture.h>  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)
+Определяет имя файла журнала графики по умолчанию.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+#define VSG_DEFAULT_FILENAME filename
+```
+
+#### <a name="parameters"></a>Параметры
+ `filename` Имя файла журнала графики, присваиваемое по умолчанию файлу журнала графики при захвате данных графики программными средствами.
+
+## <a name="value"></a>Значение
+ Строковый литерал, который представляет имя файла журнала графики. По умолчанию это "default.vsglog".
+
+```C++
+#define VSG_DEFAULT_FILENAME L"default.vsglog"
+```
+
+## <a name="remarks"></a>Примечания
+ Если определен символ препроцессора `DONT_SAVE_VSGLOG_TO_TEMP`, имя файла является относительным для текущего каталога захватываемого приложения или представляет собой абсолютный путь; в противном случае это имя относительно каталога временных файлов пользователя, которое не может быть абсолютным путем.
+
+ Чтобы изменить определенное имя файла, необходимо переопределить его до включения `vsgcapture.h` в программе.
+
+## <a name="example"></a>Пример
+ В следующем примере показано, как изменить имя файла захвата по умолчанию:
+
+```C++
+// Redefine the default capture filename before including vsgcapture.h
+#define VSG_DEFAULT_FILENAME L"capture.vsglog"
+
+#include <vsgcapture.h>
+```
+
+## <a name="see-also"></a>См. также раздел
+- [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)
