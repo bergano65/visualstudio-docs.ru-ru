@@ -8,14 +8,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914780"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222887"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как выполнить  Определение и использование делегатов действий в конструкторе рабочих процессов
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Практическое руководство. Определение и использование делегатов действий в конструкторе рабочих процессов
 
 .NET framework 4.5 предоставляет конструктора out-of-box для <xref:System.Activities.Statements.InvokeDelegate> действия. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
 
@@ -26,7 +26,7 @@ ms.locfileid: "55914780"
 2. В **новый проект** выберите **рабочего процесса** категории с левой стороны экрана, а затем выберите **консольное приложение рабочего процесса** шаблона проекта. Имя проекта (при необходимости) и нажмите кнопку **ОК**.
 
    > [!NOTE]
-   > Если вы не видите **рабочего процесса** категории, сначала установить **Windows Workflow Foundation** компонент Visual Studio 2017. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Если вы не видите **рабочего процесса** категории, сначала установить **Windows Workflow Foundation** компонент Visual Studio. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите **добавить** > **новый элемент**. Выберите **рабочего процесса** категории, а затем выберите **действия** шаблона элемента. Назовите новое действие **MyForEach.xaml** , а затем выберите **ОК**.
 

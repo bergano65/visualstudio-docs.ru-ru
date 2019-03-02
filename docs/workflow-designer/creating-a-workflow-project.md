@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923425"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222458"
 ---
 # <a name="workflow-project-templates"></a>Шаблоны проекта workflow
 
@@ -34,7 +34,7 @@ Visual Studio предоставляет четыре различных шаб�
 
 - Библиотека конструктора действий
 
-Чтобы получить эти шаблоны, сначала установите **Windows Workflow Foundation** компонент Visual Studio 2017. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Чтобы получить эти шаблоны, сначала установите **Windows Workflow Foundation** компонент Visual Studio. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. После установки **Windows Workflow Foundation** компонента, откройте **новый проект** диалоговое окно, выбрав **файл** > **New**  >  **Проекта**.
 
