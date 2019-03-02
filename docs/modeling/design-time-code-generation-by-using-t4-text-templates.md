@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318049"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223090"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проект Visual Studio. Как правило, шаблоны создаются таким образом, чтобы они различаются в код, который они создают в соответствии с данными из *модели*. Модель — это файл или базу данных, которая содержит основные сведения о требованиях приложения.
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Если вы установили Visual Studio пакет SDK моделирования, может иметь все шаблоны, преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
 
 > [!NOTE]
-> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

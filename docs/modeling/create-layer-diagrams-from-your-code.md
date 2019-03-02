@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913019"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223238"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Создание схем зависимостей на основе кода
 
@@ -41,7 +41,7 @@ ms.locfileid: "55913019"
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Добавьте новую схему зависимостей в проект моделирования
 
 > [!NOTE]
-> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio 2017.
+> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio.
 
 1.  На **архитектура** меню, выберите **создать диаграмму зависимостей**.
 

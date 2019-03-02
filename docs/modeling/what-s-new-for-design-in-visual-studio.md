@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316006"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223381"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
 
@@ -65,7 +65,7 @@ ms.locfileid: "56316006"
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Поддержка выпуска для инструментов моделирования и архитектуры
 
-Visual Studio 2017 доступны в предыдущих версиях. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
+Visual Studio доступны в предыдущих версиях. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
 
 |**Возможность**|**Выпуск Enterprise edition**|**Профессиональный выпуск**|**Community edition**|
 |-|-|-|-|

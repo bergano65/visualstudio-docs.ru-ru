@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957917"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223017"
 ---
 # <a name="dependency-diagrams-reference"></a>Схемы зависимостей: ссылка
 
@@ -34,7 +34,7 @@ ms.locfileid: "55957917"
 Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio 2017.
+> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio.
 
 Между слоями можно установить предполагаемые или существующие зависимости. Эти зависимости, представленные в виде стрелок, показывают, какие слои могут использовать или в настоящее время используют функциональные возможности, представленные другими слоями. Упорядочивая системы в слои, описывающие различные роли и функции, диаграмма зависимостей может помочь упростить понять, повторное использование и обслуживание кода.
 
