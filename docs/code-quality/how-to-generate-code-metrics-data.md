@@ -11,20 +11,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909210"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007362"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Как выполнить  Создание данных для метрик кода
+# <a name="how-to-generate-code-metrics-data"></a>Практическое руководство. Создание данных для метрик кода
 
 Вы можете создать Результаты метрик кода для одного или нескольких проектов или всего решения. Метрики кода доступен в среде разработки Visual Studio (IDE), а также для C# и проекты Visual Basic, в командной строке.
 
 Кроме того, можно установить [пакет NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , включает в себя четыре метрики кода [анализатор](roslyn-analyzers-overview.md) правила: CA1501, CA1502, CA1505 и CA1506. Эти правила отключены по умолчанию, но вы можете включить их из **обозревателе решений** или в [набор правил](using-rule-sets-to-group-code-analysis-rules.md) файл.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Метрики кода для Visual Studio IDE
+
+Создание метрики кода для один или все открытые проекты в интегрированной среде разработки с помощью **анализ** > **Рассчитать метрики кода** меню.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Создание результатов метрики кода для всего решения
 
@@ -45,6 +47,16 @@ ms.locfileid: "55909210"
 1. В строке меню выберите **анализ** > **Рассчитать метрики кода** > **для выбранных проектов**.
 
 Результаты создаются и **результатов метрики кода** откроется диалоговое окно. Чтобы просмотреть подробные результаты, раскройте дерево на **иерархии**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **Рассчитать метрики кода** команда не работает для проектов .NET Core и .NET Standard. Чтобы рассчитать метрики кода для проекта .NET Core или .NET Standard, вы можете:
+>
+> - Рассчитать метрики кода из [командной строки](#command-line-code-metrics) вместо
+> - обновление до Visual Studio 2019 г.
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Метрики кода командной строки
 
