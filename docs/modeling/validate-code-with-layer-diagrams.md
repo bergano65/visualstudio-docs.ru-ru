@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317371"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223199"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -49,7 +49,7 @@ ms.locfileid: "56317371"
 - Решение, включающее проект моделирования со схемой зависимостей. На этой схеме зависимости должны быть связаны с артефактами в проектах C# или Visual Basic, которые вы хотите проверить. См. в разделе [Создание схем зависимостей из кода](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio 2017.
+> Схемы зависимостей не поддерживаются для проектов .NET Core в Visual Studio.
 
 Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -235,6 +235,6 @@ ms.locfileid: "56317371"
 
 ## <a name="see-also"></a>См. также
 
-- [Динамическая проверка зависимостей в Visual Studio 2017](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Динамическая проверка зависимостей в Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 - [Видео. Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

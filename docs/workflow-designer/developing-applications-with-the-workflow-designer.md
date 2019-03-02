@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909249"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223290"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Разработка приложений с конструктором рабочих процессов
 
@@ -29,7 +29,7 @@ ms.locfileid: "55909249"
 
 ## <a name="install-windows-workflow-foundation"></a>Установка Windows Workflow Foundation
 
-Чтобы использовать шаблоны проектов рабочих процессов в Visual Studio 2017, сначала нужно установить **Windows Workflow Foundation** компонента.
+Чтобы использовать шаблоны проектов рабочих процессов в Visual Studio, сначала нужно установить **Windows Workflow Foundation** компонента.
 
 1. Откройте установщик Visual Studio. Быстро открыть его, выбрав **средства** > **получить средства и компоненты** в Visual Studio.
 
@@ -37,7 +37,7 @@ ms.locfileid: "55909249"
 
 1. Прокрутите вниз до раздела **действия разработки** категории, а затем выберите **Windows Workflow Foundation** компонента.
 
-   ![Компонент Windows Workflow Foundation для Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Компонент Windows Workflow Foundation для Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Нажмите кнопку **Изменить**.
 

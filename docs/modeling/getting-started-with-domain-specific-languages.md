@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316799"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223511"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Начало работы с предметно-ориентированными языками
 
 В этом разделе приводятся основные концепции в определении и использовании доменный язык (DSL), созданных с помощью пакета SDK моделирования для Visual Studio.
 
 > [!NOTE]
-> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [Пакет SDK пакет и моделирование](http://go.microsoft.com/fwlink/?LinkID=186128)
 

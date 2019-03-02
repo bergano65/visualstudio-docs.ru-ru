@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950231"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223706"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Сопоставление зависимостей с помощью карт кода
 
@@ -47,7 +47,7 @@ ms.locfileid: "55950231"
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Схема установки кода и Динамическая проверка зависимостей
 
-Чтобы создать карту кода в Visual Studio 2017, сначала нужно установить **карта кода** и **динамическую проверку зависимостей** компоненты:
+Чтобы создать карту кода в Visual Studio, сначала нужно установить **карта кода** и **динамическую проверку зависимостей** компоненты:
 
 1. Откройте **установщик Visual Studio**. Его можно открыть из меню Windows Пуск или в среде Visual Studio, выбрав **средства** > **получить средства и компоненты**.
 
