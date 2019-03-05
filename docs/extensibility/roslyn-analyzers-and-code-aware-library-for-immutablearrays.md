@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843316"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323644"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и кода-библиотека для immutablearrays с
 
@@ -298,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 Теперь можно нажать клавиши **F5** для выполнения вашей анализатора во втором экземпляре Visual Studio. Откройте проект, который мы использовали раньше. Теперь вы должны увидеть лампочки отображаются, где в выражение создания нового объекта для `ImmutableArray<int>`. Если нажать клавишу **Ctrl**+**.** (период) вы увидите исправить код, и вы увидите автоматически созданный код-различие предварительной версии, в «лампочку» пользовательского интерфейса. Roslyn создает это для вас.
 
-**Совет по PRO.** Если запустить второй экземпляр Visual Studio, и вы не видите лампочку с исправления кода, может потребоваться очистить кэш компонента Visual Studio. Очистка кэша вынуждает Visual Studio, чтобы вы пересмотрели компоненты, поэтому Visual Studio должен затем получить последнюю компонента. Во-первых завершение работы второй экземпляр Visual Studio. Затем в **Windows Explorer**, перейдите к *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. («15.0» меняется от версии к версии с помощью Visual Studio). Удалить этот подкаталог *ComponentModelCache*.
+**Совет по PRO.** Если запустить второй экземпляр Visual Studio, и вы не видите лампочку с исправления кода, может потребоваться очистить кэш компонента Visual Studio. Очистка кэша вынуждает Visual Studio, чтобы вы пересмотрели компоненты, поэтому Visual Studio должен затем получить последнюю компонента. Во-первых завершение работы второй экземпляр Visual Studio. Затем в **Windows Explorer**, перейдите к *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. («16.0» меняется от версии к версии с помощью Visual Studio.) Удалить этот подкаталог *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Обсуждение видео и завершить проект кода
 

@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925440"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324238"
 ---
 # <a name="workspaces"></a>Рабочие области
 
@@ -175,7 +175,19 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage пакет не был правильно загружен
 
-Расширяемость рабочей области во многом на основе MEF, и ошибок композиции приведет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio. Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+Расширяемость рабочей области во многом на основе MEF, и ошибок композиции приведет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio.
+
+::: moniker range="vs-2017"
+
+Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
