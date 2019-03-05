@@ -1,6 +1,6 @@
 ---
 title: Справочник по схеме фрагментов кода
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203236c454b2047872bc9f71242e4992a1c1294f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929639"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841861"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -117,6 +117,7 @@ $selected$ is a great color. I love $selected$.
    |`CPP`|Определяет фрагмент кода C++.|
    |`XML`|Определяет фрагмент кода XML.|
    |`JavaScript`|Определяет фрагмент кода JavaScript.|
+   |`TypeScript`|Определяет фрагмент кода TypeScript.|
    |`SQL`|Определяет фрагмент кода SQL.|
    |`HTML`|Определяет фрагмент кода HTML.|
 

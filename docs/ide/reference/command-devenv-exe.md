@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932499"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717524"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Аргументы
 
-- *CommandName*
+*CommandName*
 
-  Обязательный. Полное имя команды Visual Studio или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).
+Обязательный. Полное имя команды Visual Studio или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Примечания
 
-После завершения запуска интегрированная среда разработки выполняет именованную команду. При использовании этого параметра интегрированная среда разработки не отображает начальную страницу Visual Studio при запуске.
+После завершения запуска интегрированная среда разработки выполняет именованную команду.
+
+::: moniker range="vs-2017"
+
+При использовании этого параметра среда IDE не отображает начальную страницу при запуске.
+
+::: moniker-end
 
 Если надстройка предоставляет команду, этот параметр можно использовать для запуска надстройки из командной строки. Дополнительные сведения см. в разделе [Как Управление надстройками с помощью диспетчера надстроек](/previous-versions/xwdatdwh(v=vs.140)).
 

@@ -8,41 +8,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9787f839333f4969d4b8ed0e72cb9e863e5370e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 78d5b39908bc0ffa39533c22ea4effcbe97397b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020520"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613808"
 ---
 # <a name="output"></a>Вывод
-Параметр **Output** задает имя файла данных профилирования для сеанса профилирования. Параметр **Output** должен использоваться с параметром **Start**.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `FileName`  
- Имя файла данных. Допускаются полные или частичные пути. Если путь не указан, файл создается в текущем каталоге.  
-  
-## <a name="required-options"></a>Обязательные параметры  
- Параметр **Output** используется с параметром **Start**.  
-  
- **Start:** `Method`  
- Задает имя выходного файла.  
-  
-## <a name="example"></a>Пример  
- В этом примере файл данных профилирования создается в текущем каталоге.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-```  
-  
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Профилирование служб](../profiling/command-line-profiling-of-services.md)
+Параметр **Output** задает имя файла данных профилирования для сеанса профилирования. Параметр **Output** должен использоваться с параметром **Start**.
+
+## <a name="syntax"></a>Синтаксис
+
+```cmd
+VSPerfCmd.exe /Start:Method /Output:FileName [Options]
+```
+
+#### <a name="parameters"></a>Параметры
+ `FileName` Имя файла данных. Допускаются полные или частичные пути. Если путь не указан, файл создается в текущем каталоге.
+
+## <a name="required-options"></a>Обязательные параметры
+ Параметр **Output** используется с параметром **Start**.
+
+ **Start:** `Method` Задает имя выходного файла.
+
+## <a name="example"></a>Пример
+ В этом примере файл данных профилирования создается в текущем каталоге.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+```
+
+## <a name="see-also"></a>См. также
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Профилирование служб](../profiling/command-line-profiling-of-services.md)

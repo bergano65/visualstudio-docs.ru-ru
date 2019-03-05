@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768422"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843808"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio позволяет выполнять отладку кода Java
 
 1. Открыв проект в Visual Studio, откройте файл JavaScript с серверным скриптом (например, *server.js*) и щелкните в области слева, чтобы задать точку останова:
 
-    ![Задание точки останова](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Установка точки останова](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода.
 
@@ -63,7 +63,7 @@ Visual Studio поддерживает отладку только для бра
 
 3. Переключитесь в Visual Studio и установите точку останова в исходном коде. (Выберите для точки останова такую строку кода, в которой допустимы точки останова, например в инструкции `return` или объявлении `var`).
 
-    ![Задание точки останова](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Установка точки останова](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Если вам потребуется найти определенную строку кода в большом файле автоматически созданного года, используйте клавиши **CTRL**+**F** или пункты меню **Изменить** > **Поиск и замена**  >  **Быстрый поиск**).
 
@@ -168,7 +168,7 @@ Visual Studio поддерживает отладку только для бра
    Для Chrome откройте пункты меню **Обозреватель решений > Документы скриптов > [Имя_нужной_страницы]**.
 
     > [!NOTE]
-    > В браузере Chrome вы можете получить сообщение `no source is available between `.<script>` tags.` This is OK, just continue debugging.
+    > Если вы используете Chrome, может появиться сообщение: **Источник недоступен между тегами \<script>**. Это нормально, просто продолжайте отладку.
 
    Для Internet Explorer откройте пункты меню **Обозреватель решений > Документы скриптов > Windows Internet Explorer > [Имя_нужной_страницы]**.
 

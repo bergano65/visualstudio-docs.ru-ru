@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380401"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841433"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -33,7 +31,7 @@ ms.locfileid: "54380401"
 3. На странице DataCamp можно создать учетную запись.  Вы можете ввести адрес электронной почты и пароль либо выбрать вход с помощью существующей учетной записи Facebook, LinkedIn или Google.  Указав данные для входа, нажмите кнопку **Начать работу**.
    > [!div class="mx-imgBorder"]
    > ![Создание учетной записи DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "Ой!  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
 
@@ -62,7 +60,7 @@ ms.locfileid: "54380401"
 
 Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [http://www.datacamp.com](http://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**.
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Продолжение обучения в DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Право на участие

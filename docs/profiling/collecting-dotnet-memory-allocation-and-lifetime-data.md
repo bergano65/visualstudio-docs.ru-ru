@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635102"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
 
@@ -79,6 +79,6 @@ ms.locfileid: "55006090"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
 [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)

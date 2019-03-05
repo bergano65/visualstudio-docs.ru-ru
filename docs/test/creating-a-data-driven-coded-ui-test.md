@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970924"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796664"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 
@@ -50,7 +50,7 @@ ms.locfileid: "55970924"
 
 4. Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.
 
-    ![Создание метода тестирования](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Создание метода теста](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Закройте построитель теста. Метод добавляется в тест.
 

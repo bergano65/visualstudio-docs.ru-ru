@@ -1,7 +1,7 @@
 ---
 title: Устранение неполадок сети или ошибок прокси-сервера
 description: Ознакомьтесь с решениями распространенных ошибок сети или прокси-сервера, которые могут возникать при установке или использовании Visual Studio за брандмауэром или прокси-сервером.
-ms.date: 02/12/2018
+ms.date: 02/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928339"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796488"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "55928339"
 
 - В противном случае из списка разрешенных можно удалить адрес http:&#47;&#47;go.microsoft.com, чтобы при перезапуске Visual Studio диалоговое окно проверки подлинности прокси-сервера открывалось для адреса http:&#47;&#47;go.microsoft.com и конечных точек сервера.
 
-    OR
+  -ИЛИ-
 
 - Если вы хотите использовать учетные данные по умолчанию для прокси-сервера, сделайте следующее:
 
@@ -58,13 +58,16 @@ ms.locfileid: "55928339"
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       В `proxyaddress="<http://<yourproxy:port#>` необходимо вставить правильный адрес прокси-сервера в сети.
 
-     OR
+     > [!NOTE]
+     > Дополнительные сведения см. на страницах [Элемент &lt;defaultProxy&gt; (сетевые параметры)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) и [Элемент &lt;proxy&gt; (сетевые параметры)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+  -ИЛИ-
 
 - Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
 

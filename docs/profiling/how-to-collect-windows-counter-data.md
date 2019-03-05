@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9554740cc576fc90ed232e64dbc4f73b619a8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022473"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640939"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Как выполнить Сбор данных счетчиков производительности Windows
 
@@ -48,6 +48,6 @@ ms.locfileid: "55022473"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
 [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)

@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: Сведения о том, как анонимизируются данные подписчика при потере доступа к подпискам.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811254"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842550"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Анонимизация данных подписчика Visual Studio
 
@@ -36,11 +34,11 @@ ms.locfileid: "51811254"
 
 ## <a name="faq"></a>часто задаваемые вопросы
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Вопрос. Теряет ли подписчик доступ к своей подписке при анонимизации его персональных данных?
-Ответ. Нет.  Анонимизация является реакцией на событие, приводящее к потере доступа к подписке, но не ограничивает такой доступ.
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Вопрос:  Теряет ли подписчик доступ к своей подписке при анонимизации его персональных данных?
+Ответ.  Нет.  Анонимизация является реакцией на событие, приводящее к потере доступа к подписке, но не ограничивает такой доступ.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Вопрос. Я являюсь администратором по подпискам организации.  Если данные одного из моих подписчиков анонимизированы, можно ли переназначить эту подписку другому пользователю?
-Ответ. Да, если срок действия подписки не истек, ее можно переназначить другому подписчику.
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Вопрос:  Я являюсь администратором по подпискам организации.  Если данные одного из моих подписчиков анонимизированы, можно ли переназначить эту подписку другому пользователю?
+Ответ.  Да, если срок действия подписки не истек, ее можно переназначить другому подписчику.
 
 ## <a name="next-steps"></a>Следующие шаги
 

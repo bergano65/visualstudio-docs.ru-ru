@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380049"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841022"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -57,7 +55,7 @@ ms.locfileid: "54380049"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Вопрос:  Какова разница между чатом с Помощником по Azure и Помощником по Azure?
--  A:  Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
+-  Ответ.  Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

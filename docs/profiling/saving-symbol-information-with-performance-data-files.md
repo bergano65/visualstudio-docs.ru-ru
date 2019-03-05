@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1785be784b48a0130fd09c616d09900cb4c2656c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975898"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646373"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 
@@ -61,6 +61,6 @@ VsPerfReport -packsymbols -summary:all имя_файла.vsp
 
 ## <a name="see-also"></a>См. также
 
-[Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)  
-[Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+[Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)
+[Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
 [VSPerfReport](../profiling/vsperfreport.md)

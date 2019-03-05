@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Узнайте, как администраторы подписки могут получить доступ к порталу администрирования и управлять подписками, приобретенными по программе корпоративного лицензирования (VL)
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379544"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843148"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Доступ к порталу и управления администраторами — для подписок, приобретенных по программе корпоративного лицензирования (VL)
 
@@ -22,7 +20,7 @@ ms.locfileid: "39379544"
 
 С 1 марта 2017 г. клиенты, не завершившие процесс перехода на портал, должны будут управлять подписками через центр поддержки корпоративных лицензий (VLSC).
 
-Дополнительные сведения об управлении подписками в центре поддержки корпоративных лицензий см. в руководствах: [Основные сведения о подписках Visual Studio для VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Дополнительные сведения об управлении подписками на сайте VLSC см. в следующих руководствах: [Основные сведения о подписках Visual Studio для VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 [Управление подписками Visual Studio для VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Портал администрирования подписок Visual Studio**. Если ваша организация провела миграцию, но вы еще не настроили новый портал, для завершения процедуры подключения вашей организации и вашего назначения в качестве администратора необходимо указать основной контакт или контакт для уведомлений в контракте корпоративного лицензирования вашей организации.

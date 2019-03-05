@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950836"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625690"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -129,7 +129,7 @@ ms.locfileid: "54950836"
 
 ## <a name="see-also"></a>См. также
 
-[Разделы общих сведений](../profiling/overviews-performance-tools.md)  
-[Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)  
-[Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)  
+[Обзоры](../profiling/overviews-performance-tools.md)
+[Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)
+[Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)
 [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
