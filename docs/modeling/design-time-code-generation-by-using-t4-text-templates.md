@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223090"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323434"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проект Visual Studio. Как правило, шаблоны создаются таким образом, чтобы они различаются в код, который они создают в соответствии с данными из *модели*. Модель — это файл или базу данных, которая содержит основные сведения о требованиях приложения.
@@ -284,17 +284,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  Текстовый шаблон выполняется в собственном домене приложений; доступ к службам предоставляется путем маршалинга. В этих обстоятельствах метод GetCOMService() надежнее, чем GetService().
+> Текстовый шаблон выполняется в собственном домене приложений; доступ к службам предоставляется путем маршалинга. В этих обстоятельствах метод GetCOMService() надежнее, чем GetService().
 
 ## <a name="Regenerating"></a> Автоматическое повторное создание кода
- Как правило несколько файлов в решении Visual Studio создаются с помощью одной модели ввода. Каждый файл создается на основе своего собственного шаблона, но все шаблоны относятся к одной модели.
 
- Если изменяется исходная модель, необходимо перезапустить все шаблоны в решении. Чтобы сделать это вручную, выберите **преобразовать все шаблоны** на **построения** меню.
+Как правило несколько файлов в решении Visual Studio создаются с помощью одной модели ввода. Каждый файл создается на основе своего собственного шаблона, но все шаблоны относятся к одной модели.
 
- Если вы установили Visual Studio пакет SDK моделирования, может иметь все шаблоны, преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
+Если изменяется исходная модель, необходимо перезапустить все шаблоны в решении. Чтобы сделать это вручную, выберите **преобразовать все шаблоны** на **построения** меню.
+
+Если вы установили Visual Studio пакет SDK моделирования, может иметь все шаблоны, преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
 
 > [!NOTE]
 > Пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -304,10 +307,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- Дополнительные сведения см. в разделе [создание кода в процессе построения](../modeling/code-generation-in-a-build-process.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+Дополнительные сведения см. в разделе [создание кода в процессе построения](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Создание отчетов об ошибке
- Чтобы поместить ошибки и предупреждения в окне ошибок Visual Studio, можно использовать эти методы:
+
+Чтобы поместить ошибки и предупреждения в окне ошибок Visual Studio, можно использовать эти методы:
 
 ```
 Error("An error message");

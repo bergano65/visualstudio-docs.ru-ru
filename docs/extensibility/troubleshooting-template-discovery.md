@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689842"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324004"
 ---
 # <a name="troubleshooting-template-installation"></a>Устранение неполадок установки шаблона
 
 Если возникли проблемы при развертывании шаблонов проекта или элемента, вы можете включить ведение журналов диагностики.
 
-1. Создайте файл pkgdef в папке Common7\IDE\CommonExtensions для установки (например, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) со следующим содержимым:
+::: moniker range="vs-2017"
+
+1. Создайте файл pkgdef в *Common7\IDE\CommonExtensions* папку для установки. Например *\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Создайте файл pkgdef в *Common7\IDE\CommonExtensions* папку для установки. Например *\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)*.
+
+::: moniker-end
+
+2. Добавьте файл pkgdef следующее:
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Откройте «командную строку разработчика» для установки, выполнив поиск в службе поиска Windows и выполните `devenv /updateConfiguration`.
+3. Откройте [Командная строка разработчика](/dotnet/framework/tools/developer-command-prompt-for-vs) для установки и запуска `devenv /updateConfiguration`.
 
-1. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона. В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid соответствует Идентификатору установки экземпляра Visual Studio). Каждый шаблон дерева инициализации добавляет записи в этот журнал.
+::: moniker range="vs-2017"
+
+4. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона.
+
+   В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid соответствует Идентификатору установки экземпляра Visual Studio). Каждый шаблон дерева инициализации добавляет записи в этот журнал.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона.
+
+   В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid соответствует Идентификатору установки экземпляра Visual Studio). Каждый шаблон дерева инициализации добавляет записи в этот журнал.
+
+::: moniker-end
 
 Файл журнала содержит следующие столбцы:
 

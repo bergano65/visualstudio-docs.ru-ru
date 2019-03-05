@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3d149a7cec711e59909ff21944ed52e3c074113
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710179"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323923"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2017
 
@@ -31,7 +31,7 @@ ms.locfileid: "56710179"
 
 Дополнительные сведения об этих изменениях, см. в разделах:
 
-* [Изменения в расширяемости для 2017 г.](breaking-changes-2017.md)
+* [Изменения в расширяемости для Visual Studio 2017](breaking-changes-2017.md)
 * [Поддержка NGen в VSIX v3](ngen-support.md)
 * [Установка за пределами папки расширений](set-install-root.md)
 * [Часто задаваемые вопросы по расширяемости Visual Studio 2017](faq-2017.md)

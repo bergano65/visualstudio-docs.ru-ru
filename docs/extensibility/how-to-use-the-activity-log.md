@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719279"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324017"
 ---
 # <a name="how-to-use-the-activity-log"></a>Практическое руководство. Использование журнала действий
 Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.
@@ -46,7 +46,9 @@ ms.locfileid: "56719279"
 
 1. Запустите Visual Studio с [/Log](../ide/reference/log-devenv-exe.md) параметр командной строки для записи ActivityLog.xml на диск во время сеанса.
 
-2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:
 
@@ -55,11 +57,13 @@ ms.locfileid: "56719279"
    ```
 
 ## <a name="robust-programming"></a>Отказоустойчивость
- Так как журнал действий — это служба, журнал действий недоступна в конструкторе пакета VSPackage.
 
- Журнал действий должен быть получен только перед записью в него. Не кэшировать и журнала действий для использования в будущем.
+Так как журнал действий — это служба, журнал действий недоступна в конструкторе пакета VSPackage.
+
+Журнал действий должен быть получен только перед записью в него. Не кэшировать и журнала действий для использования в будущем.
 
 ## <a name="see-also"></a>См. также
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
