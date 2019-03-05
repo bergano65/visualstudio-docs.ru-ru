@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание проекта Python с помощью Cookiecutter
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python с помощью шаблона Cookiecutter.
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920162"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843108"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта из шаблона Cookiecutter
 
@@ -29,13 +29,13 @@ ms.locfileid: "55920162"
 
     ![Создание проекта на основе шаблона Cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Выберите шаблон **Microsoft/python-sklearn-classifier-cookiecutter** и щелкните **Далее**. (При первом использовании Cookiecutter процесс может занять несколько минут.)
+1. Выберите шаблон **Microsoft/python-sklearn-classifier-cookiecutter** и щелкните **Далее**. (Этот процесс может занять несколько минут при первом использовании конкретного шаблона, так как Visual Studio устанавливает необходимые пакеты Python.)
 
-1. В следующим шаге укажите расположение для нового проекта в поле **Создать в** и нажмите кнопку **Создать**.
+1. В следующим шаге укажите расположение для нового проекта в поле **Создать в** и нажмите **Создать и открыть проект**.
 
     ![Второй этап работы с Cookiecutter, настройка свойств проекта](media/projects-from-cookiecutter2.png)
 
-1. По завершении процесса появится сообщение **Файлы успешно созданы**. Выберите команду **Открыть в обозревателе решений**, чтобы открыть проект.
+1. По завершении процесса появится сообщение **Файлы успешно созданы с помощью шаблона...**. Проект автоматически открывается в обозревателе решений.
 
 1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**.
 

@@ -2,7 +2,7 @@
 title: Учебник. Создание простого консольного приложения C#
 description: Ознакомьтесь с пошаговыми инструкциями по созданию консольного приложения на C# в Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156076"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841186"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -39,7 +39,7 @@ ms.locfileid: "56156076"
 
    ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Добавление рабочей нагрузки (необязательно)
+### <a name="add-a-workload-optional"></a>Добавление рабочей нагрузки (необязательно)
 
 Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, его можно получить, добавив рабочую нагрузку **Кроссплатформенная разработка .NET Core**. Ниже описывается порядок действий.
 
@@ -80,6 +80,7 @@ ms.locfileid: "56156076"
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Выберите **Calculator**, чтобы запустить программу, или нажмите клавишу **F5**.
 
    ![Нажмите кнопку Calculator, чтобы запустить приложение с панели инструментов](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ ms.locfileid: "56156076"
         }
     }
     ```
+
 1. Выберите **Calculator**, чтобы запустить программу, или нажмите клавишу **F5**.
 
    ![Нажмите кнопку Calculator, чтобы запустить приложение с панели инструментов](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ ms.locfileid: "56156076"
         }
     }
     ```
+
 1. Выберите **Calculator**, чтобы запустить программу, или нажмите клавишу **F5**.
 
 1. Разделите число **42** на число **119**, следуя подсказкам на экране. Теперь приложение будет выглядеть следующим образом:
@@ -404,7 +407,7 @@ ms.locfileid: "56156076"
 
 ## <a name="code-complete"></a>Полный код
 
-Во этом руководстве мы внесли много изменений в приложение "Калькулятор". Теперь оно более эффективно использует вычислительные ресурсы и обрабатывает большинство ошибок во входных данных.
+В этом руководстве мы внесли много изменений в приложение "Калькулятор". Теперь оно более эффективно использует вычислительные ресурсы и обрабатывает большинство ошибок во входных данных.
 
 Ниже мы собрали в один блок весь код:
 

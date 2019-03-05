@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db8230c393ad18d72ff4d4d186d916c0e938996d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641082"
 ---
 # <a name="understand-sampling-data-values"></a>Общие сведения о выборке значений данных
 
@@ -51,5 +51,5 @@ ms.locfileid: "54978585"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)  
-[Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
+[Практическое руководство. Выбор методов сбора](../profiling/how-to-choose-collection-methods.md)
+[Анализ данных из средств оценки производительности](../profiling/analyzing-performance-tools-data.md)

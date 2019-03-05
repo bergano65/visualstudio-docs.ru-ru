@@ -14,49 +14,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c0371992bde7b7ac58551457fa81e2b18a8f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630305"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Функция CvCreateMarkerSeries
-Создает набор маркеров для данного поставщика.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C  
-_Check_return_ HRESULT CvCreateMarkerSeriesW(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCWSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-  
-_Check_return_ HRESULT CvCreateMarkerSeriesA(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pProvider`  
- Объект поставщика, уже инициализированный функцией CvInitProvider. Не может принимать значение NULL.  
-  
- `pSeriesName`  
- Имя набора маркеров. Не может принимать значение NULL, но пустая строка разрешена.  
-  
- `ppMarkerSeries`  
- Адрес выходной переменной, в которой будет храниться контекст набора маркеров. Не может принимать значение NULL.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Значение S_OK, если набор маркеров успешно создан, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkers.h*  
-  
- **Юникод:** CvCreateMarkerSeriesW  
-  
- **ANSI:** CvCreateMarkerSeriesA  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)
+Создает набор маркеров для данного поставщика.
+
+## <a name="syntax"></a>Синтаксис
+
+```C
+_Check_return_ HRESULT CvCreateMarkerSeriesW(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCWSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+
+_Check_return_ HRESULT CvCreateMarkerSeriesA(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pProvider` Объект поставщика, уже инициализированный функцией CvInitProvider. Не может принимать значение NULL.
+
+ `pSeriesName` Имя набора маркеров. Не может принимать значение NULL, но пустая строка разрешена.
+
+ `ppMarkerSeries` Адрес выходной переменной, в которой будет храниться контекст набора маркеров. Не может принимать значение NULL.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Значение S_OK, если набор маркеров успешно создан, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkers.h*
+
+ **Юникод:** CvCreateMarkerSeriesW
+
+ **ANSI:** CvCreateMarkerSeriesA
+
+## <a name="see-also"></a>См. также
+- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

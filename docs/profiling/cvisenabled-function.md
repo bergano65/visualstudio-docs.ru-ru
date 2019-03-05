@@ -14,44 +14,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8af4da802ef0ad87831f2f67f47e8ffb66a969e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613665"
 ---
 # <a name="cvisenabled-function"></a>Функция CvIsEnabled
-Определяет, любому ли сеансу доступен указанный поставщик ETW.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C  
-HRESULT CvIsEnabled(  
-   _In_ PCV_PROVIDER pProvider  
-);  
-HRESULT CvIsEnabledEx(  
-   _In_ PCV_PROVIDER pProvider,  
-   _In_ CV_IMPORTANCE level,  
-   _In_ int category  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `category`  
- Категория.  
-  
- `level`  
- Уровень важности.  
-  
- `pProvider`  
- Допустимый объект поставщика. Не может принимать значение NULL.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Значение S_OK, если в данный момент поставщик доступен. Значение S_OK, если в данный момент поставщик недоступен. Код ошибки в том случае, если были какие-либо ошибки. Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S_ОК/S_FALSE.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)
+Определяет, любому ли сеансу доступен указанный поставщик ETW.
+
+## <a name="syntax"></a>Синтаксис
+
+```C
+HRESULT CvIsEnabled(
+   _In_ PCV_PROVIDER pProvider
+);
+HRESULT CvIsEnabledEx(
+   _In_ PCV_PROVIDER pProvider,
+   _In_ CV_IMPORTANCE level,
+   _In_ int category
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `category` Категория.
+
+ `level` Уровень важности.
+
+ `pProvider` Допустимый объект поставщика. Не может принимать значение NULL.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Значение S_OK, если в данный момент поставщик доступен. Значение S_OK, если в данный момент поставщик недоступен. Код ошибки в том случае, если были какие-либо ошибки. Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S_ОК/S_FALSE.
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkers.h*
+
+## <a name="see-also"></a>См. также
+- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

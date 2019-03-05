@@ -16,60 +16,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78be9b906efd9720d9bc7ccdbe09614899ef6818
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989592"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644319"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Элемент ItemMetadata (MSBuild)
-Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может иметь любое число пар метаданных "ключ — значение".  
+Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может иметь любое число пар метаданных "ключ — значение".
 
- \<Project>  
- \<ItemGroup>  
- \<Item>  
+ \<Project> \<ItemGroup> \<Item>
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
-<ItemMetadataName> Item Metadata value</ItemMetadataName>  
-```  
+```xml
+<ItemMetadataName> Item Metadata value</ItemMetadataName>
+```
 
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
-### <a name="attributes"></a>Атрибуты  
+### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Дочерние элементы  
- Отсутствует.  
+### <a name="child-elements"></a>Дочерние элементы
+ Отсутствует.
 
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|  
-|-------------|-----------------|  
-|[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|  
+|Элемент|Описание|
+|-------------|-----------------|
+|[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|
 
-## <a name="text-value"></a>Текстовое значение  
- Текстовое значение является необязательным.  
+## <a name="text-value"></a>Текстовое значение
+ Текстовое значение является необязательным.
 
- Этот текст задает для элемента значение метаданных, которое может быть текстом или XML-документом.  
+ Этот текст задает для элемента значение метаданных, которое может быть текстом или XML-документом.
 
-## <a name="example"></a>Пример  
- Следующий пример кода демонстрирует добавление метаданных `Culture` со значением `fr` к элементу `CSFile`.  
+## <a name="example"></a>Пример
+ Следующий пример кода демонстрирует добавление метаданных `Culture` со значением `fr` к элементу `CSFile`.
 
-```xml  
-<ItemGroup>  
-    <CSFile Include="main.cs" >  
-        <Culture>fr</Culture>  
-    </CSFile>  
-</ItemGroup>  
-```  
+```xml
+<ItemGroup>
+    <CSFile Include="main.cs" >
+        <Culture>fr</Culture>
+    </CSFile>
+</ItemGroup>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
- [Элементы](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>См. также
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+- [Элементы](../msbuild/msbuild-items.md)

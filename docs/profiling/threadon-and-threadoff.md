@@ -8,68 +8,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd0ee2d1149e2f2fa231b407c8ce2717beb3953
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967499"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632723"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
-Подкоманды **ThreadOff** и **ThreadOn** программы *VSPerfCmd.exe* доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.  
-  
- В большинстве случаев **ThreadOn** или **ThreadOff** указывается как единственный параметр команды *VSPerfCmd.exe*, но их также можно сочетать с подкомандами **GlobalOn**, **GlobalOff**, **ProcessOn** и **ProcessOff**.  
-  
- Подкоманды **ThreadOn** и **ThreadOff** взаимодействуют с подкомандами **GlobalOn** и **GlobalOff**, которые управляют сбором данных для всех процессов сеанса профилирования с использованием командной строки, и с подкомандами **ProcessOn** и **ProcessOff**, которые позволяют управлять сбором данных для указанного процесса.  
-  
- Подкоманды **ThreadOff** и **ThreadOn** также влияют на количество запусков и остановок потока, которое задается функциями интерфейса API профилирования.  
-  
-- **ThreadOff** немедленно устанавливает значение 0 для счетчика запусков и остановок потока, вследствие чего профилирование приостанавливается.  
-  
-- **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.  
-  
-  Дополнительные сведения см. в статье [Интерфейсы API для средств профилирования](../profiling/profiling-tools-apis.md).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cmd  
-VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]  
-  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `TID`  
- Целочисленный идентификатор запускаемого или останавливаемого потока.  
-  
-## <a name="valid-options"></a>Допустимые параметры  
- Подкоманды **ThreadOnn** и **ThreadOff** можно задать в командной строке, содержащей указанные ниже подкоманды.  
-  
- **Start:** `Method`  
- Инициализирует сеанс профилирования из командной строки и задает указанный метод профилирования.  
-  
- **GlobalOff**&#124;**GlobalOn**  
- Начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.  
-  
- {**ProcessOff** | **ProcessOn**}**:**`TID`  
- Останавливает или запускает профилирование указанного процесса.  
-  
-## <a name="example"></a>Пример  
- В этом примере подкоманда **ThreadOff** используется для остановки сбора данных профилирования, в результате чего выполняется только сбор данных по запуску приложения.  
-  
-```cmd  
-; Initialize the profiler.  
-VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp   
-; Start the instrumented application.  
-; Stop profiling the thread after startup.  
-VSPerfCmd.exe /ThreadOff:12345  
-; Shut down the target application.  
-; Close the profiler.  
-VSPerfCmd /Shutdown  
-  
-```  
-  
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Профилирование служб](../profiling/command-line-profiling-of-services.md)
+Подкоманды **ThreadOff** и **ThreadOn** программы *VSPerfCmd.exe* доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.
+
+ В большинстве случаев **ThreadOn** или **ThreadOff** указывается как единственный параметр команды *VSPerfCmd.exe*, но их также можно сочетать с подкомандами **GlobalOn**, **GlobalOff**, **ProcessOn** и **ProcessOff**.
+
+ Подкоманды **ThreadOn** и **ThreadOff** взаимодействуют с подкомандами **GlobalOn** и **GlobalOff**, которые управляют сбором данных для всех процессов сеанса профилирования с использованием командной строки, и с подкомандами **ProcessOn** и **ProcessOff**, которые позволяют управлять сбором данных для указанного процесса.
+
+ Подкоманды **ThreadOff** и **ThreadOn** также влияют на количество запусков и остановок потока, которое задается функциями интерфейса API профилирования.
+
+- **ThreadOff** немедленно устанавливает значение 0 для счетчика запусков и остановок потока, вследствие чего профилирование приостанавливается.
+
+- **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.
+
+  Дополнительные сведения см. в статье [Интерфейсы API для средств профилирования](../profiling/profiling-tools-apis.md).
+
+## <a name="syntax"></a>Синтаксис
+
+```cmd
+VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
+
+```
+
+#### <a name="parameters"></a>Параметры
+ `TID` Целочисленный идентификатор запускаемого или останавливаемого потока.
+
+## <a name="valid-options"></a>Допустимые параметры
+ Подкоманды **ThreadOnn** и **ThreadOff** можно задать в командной строке, содержащей указанные ниже подкоманды.
+
+ **Start:** `Method` Инициализирует сеанс профилирования из командной строки и задает указанный метод профилирования.
+
+ **GlobalOff**&#124;**GlobalOn** начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.
+
+ {**ProcessOff** | **ProcessOn**}**:**`TID` Останавливает или запускает профилирование указанного процесса.
+
+## <a name="example"></a>Пример
+ В этом примере подкоманда **ThreadOff** используется для остановки сбора данных профилирования, в результате чего выполняется только сбор данных по запуску приложения.
+
+```cmd
+; Initialize the profiler.
+VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp
+; Start the instrumented application.
+; Stop profiling the thread after startup.
+VSPerfCmd.exe /ThreadOff:12345
+; Shut down the target application.
+; Close the profiler.
+VSPerfCmd /Shutdown
+
+```
+
+## <a name="see-also"></a>См. также
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Профилирование служб](../profiling/command-line-profiling-of-services.md)

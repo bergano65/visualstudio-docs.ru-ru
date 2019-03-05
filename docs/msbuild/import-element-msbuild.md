@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629915"
 ---
 # <a name="import-element-msbuild"></a>Элемент Import (MSBuild)
 Импортирует содержимое одного файла проекта в другой файл проекта.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -108,5 +107,5 @@ ms.locfileid: "55924439"
 ```
 
 ## <a name="see-also"></a>См. также
-[Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)  
-[Практическое руководство. Использование одного целевого объекта в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+- [Практическое руководство. Использование одного целевого объекта в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

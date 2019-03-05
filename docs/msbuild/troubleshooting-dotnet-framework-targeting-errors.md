@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620295"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework
 В этом разделе описаны ошибки MSBuild, которые могут возникнуть из-за проблем со ссылками, и методы устранения этих ошибок.
@@ -54,4 +54,7 @@ ms.locfileid: "55004494"
 >  После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.
 
 ## <a name="see-also"></a>См. также
- [Практическое руководство. Как выполнить Определение целевой версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md), [.NET Framework (клиентский профиль)](/dotnet/framework/deployment/client-profile), [Обзор настройки для различных версий в Visual Studio](../ide/visual-studio-multi-targeting-overview.md), [MSBuild: обзор настройки для различных версий](../msbuild/msbuild-multitargeting-overview.md).
+- [Практическое руководство. Определение целевой версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET Framework (клиентский профиль)](/dotnet/framework/deployment/client-profile)
+- [Настройка конкретной целевой версии платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

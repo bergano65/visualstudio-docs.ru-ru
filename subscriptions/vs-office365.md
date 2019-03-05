@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380147"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841082"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
@@ -23,9 +21,9 @@ ms.locfileid: "54380147"
 ## <a name="getting-started-with-office-365-pro-plus"></a>Начало работы с Office 365 профессиональный плюс
 
 Чтобы скачать и активировать Office 365 профессиональный плюс, сделайте следующее:
-1. Войдите в подписку Visual Studio Enterprise.  
+1. Войдите в подписку Visual Studio Enterprise.
 2. Щелкните вкладку **Загрузки**.
-3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**. 
+3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Скачиваемые файлы для Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Для установки Office 365 вам потребуется ключ продукта.  Щелкните ссылку **Получить ключ** под продуктом Office 365.
@@ -36,7 +34,7 @@ ms.locfileid: "54380147"
    > ![Запрос ключа продукта Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Запишите ключ, который вы только что запросили. (Вы всегда можете вернуться к этому списку и просмотреть ключ.)
 0. Закройте всплывающее окно.
-0. Нажмите кнопку **Скачать**. 
+0. Нажмите кнопку **Скачать**.
    > [!div class="mx-imgBorder"]
    > ![Начало скачивания Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Выполните вход со своей учетной записью Майкрософт. (Если вы уже выполнили вход, нажмите кнопку **Далее**.)
@@ -44,7 +42,7 @@ ms.locfileid: "54380147"
    > [!div class="mx-imgBorder"]
    > ![Ввод ключа продукта Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Нажмите кнопку **Далее** еще раз.
-0. Нажмите кнопку **Установить**, чтобы установить приложения Office. 
+0. Нажмите кнопку **Установить**, чтобы установить приложения Office.
 
 ## <a name="next-steps"></a>Следующие шаги
 

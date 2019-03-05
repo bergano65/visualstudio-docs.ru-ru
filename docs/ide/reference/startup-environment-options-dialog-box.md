@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942288"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696498"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Начальная страница, папка «Среда», диалоговое окно «Параметры»
-Эта страница служит для настройки начальной страницы Visual Studio или для задания другого действия по умолчанию, выполняющегося при запуске Visual Studio. Дополнительные сведения см. в разделе [Настройка начальной страницы](../../ide/customizing-the-start-page-for-visual-studio.md).
+# <a name="startup-environment-options-dialog-box"></a>Начальная страница, "Среда", диалоговое окно "Параметры"
 
-## <a name="see-also"></a>См. также раздел
+::: moniker range="vs-2017"
+
+Эта страница служит для настройки начальной страницы Visual Studio или для задания другого действия по умолчанию, выполняющегося при запуске Visual Studio. Дополнительные сведения см. в статье [Настройка запуска](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+На этой странице можно задать другое действие по умолчанию, выполняющееся при запуске Visual Studio. В списке **При запуске открыть** вы можете выбрать **окно запуска** (в котором можно открыть новый или существующий проект), **последние решения** или **пустую среду**.
+
+::: moniker-end
+
+## <a name="see-also"></a>См. также
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

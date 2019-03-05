@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d8843fe7e23293b0e95ce6b076d8548362fb50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934842"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597573"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Как выполнить Ограничение инструментирования указанными библиотеками DLL
 
@@ -69,5 +69,5 @@ ms.locfileid: "54934842"
 
 ## <a name="see-also"></a>См. также
 
-[Управление сбором данных](../profiling/controlling-data-collection.md)  
+[Управление сбором данных](../profiling/controlling-data-collection.md)
 [Практическое руководство. Ограничение инструментирования указанными функциями](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

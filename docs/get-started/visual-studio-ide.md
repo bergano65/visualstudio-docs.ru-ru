@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о Visual Studio 2017
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316825"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705509"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
@@ -62,6 +62,8 @@ ms.locfileid: "56316825"
 - [Быстрый запуск](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Среда Visual Studio может показаться сложной, ведь там столько разных меню, параметров и свойств. Поле поиска **быстрого запуска** позволяет быстро найти нужное содержимое в Visual Studio. Когда вы начнете вводить в поле то, что вы ищете, Visual Studio представит результаты, один из которых точно вам подойдет. Если вам нужно добавить функциональные возможности в Visual Studio, например добавить поддержку дополнительных языков программирования, **быстрый запуск** предоставляет результаты, которые открывают Visual Studio Installer для установки рабочей нагрузки или отдельного компонента.
+
+   Поле поиска **быстрого запуска** находится в верхнем правом углу интегрированной среды разработки. (Или нажмите **CTRL**+**Q**, чтобы получить доступ.)
 
    ![Поле поиска в быстром запуске в Visual Studio](media/quick-launch-nuget.png)
 

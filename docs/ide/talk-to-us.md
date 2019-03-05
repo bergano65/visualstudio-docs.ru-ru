@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609440"
 ---
 # <a name="visual-studio-product-feedback"></a>Отзыв о продукте Visual Studio
 
@@ -38,12 +38,12 @@ ms.locfileid: "55946084"
 
 Дополнительные сведения о поддержке Visual Studio см. в описании [жизненного цикла поддержки и обслуживания](/visualstudio/productinfo/vs-servicing-vs).
 
-Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=99019).
+Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://go.microsoft.com/fwlink/?LinkID=99019).
 
 > [!NOTE]
-> Объем услуг поддержки за пределами США и Канады может отличаться. Список контактов по регионам см. на странице [международных сайтов Майкрософт](http://www.microsoft.com/worldwide/).
+> Объем услуг поддержки за пределами США и Канады может отличаться. Список контактов по регионам см. на странице [международных сайтов Майкрософт](https://www.microsoft.com/worldwide/).
 
-Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны в рамках предложений Enterprise Support. См. дополнительные сведения о. [решениях Microsoft Enterprise Support](http://go.microsoft.com/fwlink/?LinkId=258223).
+Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны в рамках предложений Enterprise Support. См. дополнительные сведения о. [решениях Microsoft Enterprise Support](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Если продукт поставляется установленным на новые компьютер или устройство, техническую поддержку для этого программного обеспечения обеспечивает производитель оборудования. Для получения поддержки обратитесь непосредственно к производителю.
 
@@ -51,7 +51,7 @@ ms.locfileid: "55946084"
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Я хочу принять участие в работе сообщества разработчиков
 
-Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [сайтом сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com), [форумами MSDN](https://social.msdn.microsoft.com/Forums/home) или [Stack Overflow](http://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на сайте с [примерами кода от разработчиков](https://code.msdn.microsoft.com/).
+Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [сайтом сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com), [форумами MSDN](https://social.msdn.microsoft.com/Forums/home) или [Stack Overflow](https://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на сайте с [примерами кода от разработчиков](https://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Я хочу помочь улучшить качество документации по Visual Studio
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380005"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843624"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -60,12 +58,8 @@ ms.locfileid: "54380005"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Вопрос:  Доступны ли разные языки в службе чата?
-   A: Помощь по проблемам с учетными записями, выставлением счетов и подписками доступна на нескольких языках.  Помощь в поиске сведений о продуктах и технической документации доступна только на английском языке.
+   Ответ. Помощь по проблемам с учетными записями, выставлением счетов и подписками доступна на нескольких языках.  Помощь в поиске сведений о продуктах и технической документации доступна только на английском языке.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
-
-
-
-

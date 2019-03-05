@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,25 +12,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335237"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450325"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Создание приложений для языков с двунаправленным письмом
+# <a name="create-applications-in-bidirectional-languages"></a>Создание приложений для языков с двунаправленным письмом
 
 Visual Studio можно использовать для создания приложений, которые правильно отображают текст на языках, где письмо осуществляется справа налево, в том числе арабском и иврите. Для некоторых функций можно просто задать свойства. В других случаях требуется реализовать функции в коде.
 
 > [!NOTE]
 > Для ввода и отображения языков с двунаправленным письмом следует использовать версию Windows, в которой настроен соответствующий язык. Это может быть английская версия Windows, где установлен подходящий языковой пакет, либо соответствующая локализованная версия Windows.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Типы приложений, поддерживающие языки с двунаправленным письмом
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Типы приложений, поддерживающие языки с двунаправленным письмом
 
 -  Приложения Windows
 
-   Можно создать полностью двунаправленные приложения, включающие поддержку двунаправленного текста, порядок чтения справа налево и зеркальное отображение (отражение интерфейса Windows, меню, диалоговых окон и т. д.). За исключением зеркального отображения, эти функции доступны по умолчанию либо в виде параметров свойств. Зеркальное отображение по определению поддерживается для некоторых функций, таких как окна сообщений. В других случаях требуется реализовать его в коде. Дополнительные сведения см. в разделе [Поддержка двунаправленного письма для приложений Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Вы можете создавать полностью двунаправленные приложения, включающие поддержку двунаправленного текста, порядок чтения справа налево и зеркальное отображение (отражение интерфейса Windows, меню, диалоговых окон и т. д.). За исключением зеркального отображения, эти функции доступны по умолчанию либо в виде параметров свойств. Зеркальное отображение по определению поддерживается для некоторых функций, таких как окна сообщений. В других случаях требуется реализовать его в коде. Дополнительные сведения см. в разделе [Поддержка двунаправленного письма для приложений Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Веб-приложения
 

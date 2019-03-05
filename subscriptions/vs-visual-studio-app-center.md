@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380110"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843569"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -63,7 +61,7 @@ ms.locfileid: "54380110"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Вопрос:  Происходит ошибка с сообщением о том, что браузер не поддерживается.  В чем проблема?
-A:  Центр приложений использует современные возможности, которые доступны не во всех старых браузерах.  Если ваш браузер не поддерживается, выполните следующие действия.
+Ответ.  Центр приложений использует современные возможности, которые доступны не во всех старых браузерах.  Если ваш браузер не поддерживается, выполните следующие действия.
 1.  Откройте другой браузер, например Microsoft Edge или последние версии Google Chrome, Firefox или Safari.
 2.  Подключитесь к Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и выполните вход.
 3.  Теперь щелкните ссылку **Начать работу** на плитке Центра приложений Visual Studio.

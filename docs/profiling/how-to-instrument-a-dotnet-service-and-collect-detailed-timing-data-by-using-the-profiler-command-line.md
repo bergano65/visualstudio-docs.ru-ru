@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933287"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638989"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Как выполнить Инструментирование службы .NET и сбор подробных данных об использовании времени с помощью командной строки профилировщика
 
@@ -20,7 +20,7 @@ ms.locfileid: "54933287"
 
 > [!NOTE]
 > Вы не можете профилировать службу с помощью метода инструментирования, если ее невозможно перезапустить после запуска компьютера, например, если она запускается только при запуске операционной системы.
-> 
+>
 > Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 >
 > Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -108,5 +108,5 @@ ms.locfileid: "54933287"
 
 ## <a name="see-also"></a>См. также
 
-[Профилирование служб](../profiling/command-line-profiling-of-services.md)  
+[Профилирование служб](../profiling/command-line-profiling-of-services.md)
 [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)

@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 435141ce8b01c2c486dd9b856c173895237a4906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954817"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637949"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework для сбора данных об использовании памяти с помощью командной строки
 
 В этой статье описано, как использовать средства профилирования Visual Studio из командной строки для подключения профилировщика к запущенному автономному (клиентскому) приложению .NET Framework и сбора данных об использовании памяти.
 
 > [!NOTE]
->  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.  
+>  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 
 Для подключения к приложению .NET Framework и сбора данных по использованию памяти нужно воспользоваться программой [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md), чтобы инициализировать соответствующие переменные среды перед запуском целевого приложения. Когда профилировщик подключен к приложению, можно использовать программу *VSPerfCmd.exe* для приостановки и возобновления сбора данных.
 
@@ -112,5 +112,5 @@ ms.locfileid: "54954817"
 
 ## <a name="see-also"></a>См. также
 
-[Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
 [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918619"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635089"
 ---
 # <a name="understand-performance-collection-methods"></a>Общие сведения о методах сбора данных о производительности
 
@@ -131,5 +131,5 @@ ms.locfileid: "54918619"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое руководство. Сбор данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Практическое руководство. Сбор данных производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)

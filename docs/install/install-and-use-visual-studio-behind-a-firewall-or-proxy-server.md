@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954651"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796625"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -84,7 +84,7 @@ ms.locfileid: "55954651"
 | Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание |
 | - | - | - | - | - |
 | URL-адрес<br>разрешение | go.microsoft.com<br><br>aka.ms | | | Используется для сокращения URL-адресов, которые затем разрешаются в длинные URL-адреса |
-| Начальная страница | vsstartpage.blob.core.windows.net | | 443 | Используется для отображения новостей для разработчиков на начальной странице в Visual Studio |
+| Начальная страница | vsstartpage.blob.core.windows.net | | 443 | Используется для отображения новостей для разработчиков на начальной странице (только Visual Studio 2017) |
 | Целевая<br> Уведомление <br>Служба | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Используется для фильтрации глобального списка уведомлений, чтобы сделать его применимым только к определенным типам компьютеров и сценариев использования |
 | Расширение <br>для расширения | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Используется для уведомления о доступном обновлении для установленного расширения <br><br> Используется как расположение для входа |
 | Интеграция <br>Интеграция | az861674.vo.msecnd.net | | 443<br> | Используется для настройки новых проектов и отправки данных об использовании в зарегистрированную учетную запись Application Insights |

@@ -1,19 +1,19 @@
 ---
 title: Обзор интегрированной среды разработки (IDE) в Visual Studio
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955834"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712532"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -78,6 +78,8 @@ ms.locfileid: "55955834"
 ## <a name="quick-launch"></a>Быстрый запуск
 
 Поле **Быстрый запуск** — это быстрый и простой способ для выполнения разных операций в Visual Studio. Сюда можно вводить текст, связанный с тем, что вы планируете делать, чтобы получить список соответствующих возможностей. Предположим, нам нужно детализировать выходные данные о сборке, чтобы отобразить дополнительные сведения о функциях нашей сборки. Вот как это можно сделать:
+
+1. Поле **быстрого запуска** находится в верхнем правом углу интегрированной среды разработки. (Или нажмите **CTRL**+**Q**, чтобы получить доступ.)
 
 1. Введите **детализация** в поле **быстрого запуска**. В списке результатов выберите **Проекты и решения --> Сборка и запуск** в категории **Параметры**.
 

@@ -1,5 +1,5 @@
 ---
-title: Установка настраиваемой начальной страницы или изменение автозапускаемого элемента
+title: Изменение процесса запуска
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948294"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685135"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Настройка начальной страницы в Visual Studio
+# <a name="customize-startup"></a>Настройка запуска
 
-Настроить начальную страницу Visual Studio можно, например, с помощью диалогового окна **Открытие проекта** или решения, загруженного последним. Также можно отобразить настраиваемую начальную страницу, т. е. страницу XAML Windows Presentation Foundation (WPF), которая открывается в окне инструментов и может использоваться для выполнения внутренних команд Visual Studio.
+Вы можете настроить процесс запуска для Visual Studio несколькими способами, например, открыв последнее решение или просто пустую среду разработки.
+
+::: moniker range="vs-2017"
+
+Также можно отобразить настраиваемую начальную страницу, т. е. страницу XAML Windows Presentation Foundation (WPF), которая открывается в окне инструментов и может использоваться для выполнения внутренних команд Visual Studio.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>Изменение автозапускаемого элемента
 
@@ -30,7 +36,19 @@ ms.locfileid: "55948294"
 
 1. Разверните меню **Среда** и выберите **Запуск**.
 
+::: moniker range="vs-2017"
+
 1. В списке **При запуске** выберите элемент, который будет отображаться после запуска Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В списке **При запуске открыть** выберите, что должно произойти после запуска Visual Studio. Вы можете выбрать **окно запуска** (в котором можно открыть новый или существующий проект), **последние решения** или **пустую среду**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>Отображение настраиваемой начальной страницы
 
@@ -46,9 +64,11 @@ ms.locfileid: "55948294"
 
 1. В списке **Настроить начальную страницу** выберите нужную страницу.
 
-> [!NOTE]
+> [!TIP]
 > Если ошибка в настраиваемой начальной странице вызывает сбой Visual Studio, можно запустить Visual Studio в безопасном режиме, а затем настроить использование начальной страницы по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

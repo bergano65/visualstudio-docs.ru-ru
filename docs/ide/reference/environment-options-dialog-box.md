@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952831"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703257"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
 
@@ -35,7 +35,7 @@ ms.locfileid: "55952831"
 |Задание параметров назначения клавиш клавиатуры.|[Страница "Клавиатура", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Указание включения уведомлений.|[Страница "Уведомления", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Задание параметров окна «Быстрый запуск».|[Страница "Быстрый запуск", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Задание параметров начальной страницы.|[Начальная страница, папка "Среда", диалоговое окно "Параметры"](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Задание параметров запуска.|[Начальная страница, папка "Среда", диалоговое окно "Параметры"](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Указание необходимости перемещения параметров между компьютерами.|[Страница "Синхронизированные параметры", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Сведения о задании параметров задач и списков задач|[Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Изменение используемых по умолчанию домашней страницы и страницы поиска, изменение системного редактора исходного текста, а также настройка параметров обозревателя Internet Explorer.|[Страница "Браузер", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/web-browser-environment-options-dialog-box.md)|

@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955756"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708333"
 ---
-# <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
-В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.
+# <a name="options-page-environment-node-properties"></a>Страница "Параметры", свойства узла "Среда"
+
+В этой статье описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категория **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.
 
 ## <a name="general"></a>Общие
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ ms.locfileid: "55955756"
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|Определяет, применяется ли действие кнопки **Автоматически скрывать** только к активной вкладке.|
 
 ## <a name="add-inmacros-security"></a>Безопасность надстроек и макросов
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ ms.locfileid: "55955756"
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|Разрешает загрузку надстроек по URL-адресу в Интернете.|
 
 ## <a name="documents"></a>Документы
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ ms.locfileid: "55955756"
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Положение в списке вкладок, в которое вставляется открытый документ.|
 
 ## <a name="extension-manager"></a>диспетчер расширений
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ ms.locfileid: "55955756"
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Автоматически проверяет наличие обновлений для установленных расширений.|
 
 ## <a name="find-and-replace"></a>Поиск и замена
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ ms.locfileid: "55955756"
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (Boolean)|Скрывает окно **Поиск и замена** после нахождения соответствия с помощью функции **Быстрый поиск** или **Быстрая замена**.|
 
 ## <a name="import-and-export-settings"></a>Импорт и экспорт параметров
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ ms.locfileid: "55955756"
 |AutoSaveFile|Get/Set (String)|Имя файла, в котором автоматически сохраняются параметры пользователя.|
 
 ## <a name="international-settings"></a>Выбор языка
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |Язык|Get/Set (String)|Значение кода языка для текущего языка для Visual Studio.|
 
 ## <a name="keyboard"></a>Клавиатура
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |Схема|Get/Set (String)|Возвращает строку, содержащую встроенную схему, строку, содержащую полный путь к загруженному VSK-файлу или «(Default)», если VSK-файл не загружен.|
 
 ## <a name="projects-and-solution"></a>Проекты и решения
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ ms.locfileid: "55955756"
 |MSBuildOutputVerbosity|Get/Set (String)|Задает уровень детализации выходных данных построения.|
 
 ## <a name="startup"></a>Запуск
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ ms.locfileid: "55955756"
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Обновляет начальную страницу каждый раз по истечении интервала, заданного свойством StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Интервал обновления начальной страницы в минутах.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Имя элемента свойства|Значение|Описание|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ ms.locfileid: "55955756"
 |CommentTokens|SafeArray|Возвращает SafeArray значений маркера комментариев. Каждое имеет поля,`Name`(string) и`Priority` (<xref:EnvDTE.vsTaskPriority>, высокий, средний или низкий).|
 
 ## <a name="web-browser"></a>Веб-браузер
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
@@ -157,7 +182,7 @@ ms.locfileid: "55955756"
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (источник, разработка, внешний).|
 |ViewSourceExternalProgram|Get/Set (String)|Путь к внешнему средству просмотра исходного кода.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление параметрами](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

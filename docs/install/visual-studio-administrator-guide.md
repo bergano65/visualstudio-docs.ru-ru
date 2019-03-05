@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970417"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710114"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Руководство администратора Visual Studio 2017
 
@@ -54,7 +54,7 @@ ms.locfileid: "55970417"
 Мы предлагаем несколько средств, предназначенных для [обнаружения установленных экземпляров Visual Studio](tools-for-managing-visual-studio-instances.md) на клиентских компьютерах и управления ими.
 
 > [!TIP]
-> В дополнение к документации в руководстве администратора, хорошим источником информации по установке Visual Studio 2017 будет [блог Хита Стюарта (Heath Stewart)](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+> В дополнение к документации в руководстве администратора хорошим источником информации по установке Visual Studio 2017 будет [архив по установке Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Определение настроек отзыва пользователя
 
