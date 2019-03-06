@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923542"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222495"
 ---
 # <a name="find-code-using-go-to-commands"></a>Поиск в коде с использованием команд перехода
 
-Команда **Перейти** в Visual Studio используется для направленного поиска кода и помогает быстро находить указанные элементы. Используя простой унифицированный интерфейс, вы можете перейти к конкретной строке, типу, символу, файлу и члену. Эта функция доступна в Visual Studio 2017 и более поздних версиях.
+Команда **Перейти** в Visual Studio используется для направленного поиска кода и помогает быстро находить указанные элементы. Используя простой унифицированный интерфейс, вы можете перейти к конкретной строке, типу, символу, файлу и члену.
 
 ## <a name="how-to-use-it"></a>Использование
 

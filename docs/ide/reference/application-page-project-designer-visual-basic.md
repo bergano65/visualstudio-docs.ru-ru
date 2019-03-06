@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913175"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223277"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -76,7 +76,7 @@ ms.locfileid: "55913175"
 
 ### <a name="auto-generate-binding-redirects"></a>Автоматически создавать перенаправления привязок
 
-Перенаправления привязок добавляются в проект, если приложение (или его компоненты) ссылается на несколько версий одной сборки. Если вы хотите определить перенаправления привязок вручную в файле проекта, отмените выбор **Автоматически создавать перенаправления привязок**. Этот параметр появился в Visual Studio 2017 версии 15.7.
+Перенаправления привязок добавляются в проект, если приложение (или его компоненты) ссылается на несколько версий одной сборки. Если вы хотите определить перенаправления привязок вручную в файле проекта, отмените выбор **Автоматически создавать перенаправления привязок**.
 
 Дополнительные сведения о перенаправлении см. в разделе [Перенаправление версий сборки](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

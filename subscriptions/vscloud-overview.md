@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842225"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953425"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 
@@ -26,28 +26,28 @@ ms.locfileid: "56842225"
 
 ## <a name="before-you-start"></a>Перед началом работы
 
-*   Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
+* Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Кто может приобрести облачные подписки на Visual Studio?
 Облачные подписки может приобрести любое лицо с доступом к подписке Azure уровня [владельца или участника](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0).
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Как купить облачные подписки
 
-1.  Войдите в [Visual Studio Marketplace > Подписки](https://marketplace.visualstudio.com/subscriptions).
+1. Войдите в [Visual Studio Marketplace > Подписки](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Выберите подписку, которую хотите купить, например Visual Studio Professional (месячная подписка).
+2. Выберите подписку, которую хотите купить, например Visual Studio Professional (месячная подписка).
 
-3.  Выберите подписку Azure, которая будет использоваться для выставления счетов. Если у вас нет подписки Azure, вы можете ее оформить.
+3. Выберите подписку Azure, которая будет использоваться для выставления счетов. Если у вас нет подписки Azure, вы можете ее оформить.
     > [!div class="mx-imgBorder"]
     > ![Выберите желаемую подписку Azure](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  Выберите число приобретаемых подписок.
+4. Выберите число приобретаемых подписок.
     > [!div class="mx-imgBorder"]
     > ![Укажите число подписок](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Если вы не хотите назначать подписки себе, снимите флажок **Назначить эту подписку на меня**.
 
-5.  Подтвердите и завершите покупку. Если вы назначили подписку себе, зайдите на [портал подписчиков Visual Studio](https://my.visualstudio.com), чтобы начать загрузку программного обеспечения и использовать другие преимущества для подписчиков.
+5. Подтвердите и завершите покупку. Если вы назначили подписку себе, зайдите на [портал подписчиков Visual Studio](https://my.visualstudio.com), чтобы начать загрузку программного обеспечения и использовать другие преимущества для подписчиков.
 
 > [!div class="mx-imgBorder"]
 > ![Завершите покупку](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

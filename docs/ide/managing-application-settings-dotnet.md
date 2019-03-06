@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954248"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323579"
 ---
 # <a name="manage-application-settings-net"></a>Управление параметрами приложения (.NET)
 
@@ -84,7 +84,9 @@ ms.locfileid: "55954248"
 
 Настоятельно рекомендуется использовать для доступа к параметрам объект `My.Settings` и файл *SETTINGS* по умолчанию. Это связано с тем, что можно использовать **конструктор параметров** для задания свойств параметрам и, кроме того, настройки пользователей автоматически сохраняются перед завершением работы приложения. Однако приложение Visual Basic может получить доступ к настройкам напрямую. В этом случае необходим доступ к классу `MySettings` и использование настраиваемого файла *SETTINGS* в корневой папке проекта. Нужно сохранить пользовательские параметры до завершения работы приложения, как это было бы сделано для приложения C#. Это описано в следующем разделе.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Доступ или изменение параметров приложения во время выполнения в C# #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Доступ или изменение параметров приложения во время выполнения в C#
+<!-- markdownlint-enable MD003 -->
 
 В языках, отличных от Visual Basic, например C#, доступ к классу `Settings` необходимо осуществлять напрямую, как показано в приведенном ниже примере [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
