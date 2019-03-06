@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703712"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428652"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Приступая к работе с помощью отладчика моментальных снимков
 
@@ -69,6 +69,6 @@ ms.locfileid: "56703712"
 
 ## <a name="dont-show-me-this-again"></a>Больше не показывать
 
-Чтобы больше не показывать начальная страница отладчика моментальных снимков при подключении отладчика моментальных снимков, измените **отображать страницу «Начало работы», при запуске сеанса** в диалоговом окне **средства**  >   **Параметры** > **отладчик моментальных снимков**.
+Чтобы больше не показывать страницу запуска отладчика моментальных снимков при подключении отладчика моментальных снимков, измените **отображать страницу «Начало работы», при запуске сеанса** в диалоговом окне **средства**  >   **Параметры** > **отладчик моментальных снимков**.
 
 ![Страницы параметров отладчика моментальных снимков](../media/snapshot-startpage-tools-options.png)

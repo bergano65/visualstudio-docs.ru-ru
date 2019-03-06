@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599172"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954497"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 Существует возможность отладки 64-разрядного приложения, которое выполняется на локальном или удаленном компьютере.
@@ -50,7 +50,7 @@ ms.locfileid: "56599172"
 
 -   На компьютере установлено программное обеспечение для защиты сети, из-за чего сетевой стек стал ненадежным и стал терять пакеты, идущие через localhost. Попробуйте отключить все программное обеспечение для защиты сети. Если проблема устранена, сообщите поставщику программного обеспечения для защиты сети о том, что его программа мешает трафику localhost.
 
--   Программа не отвечает на запросы, или возникла проблема с производительностью Visual Studio. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. Сведения о том, как сообщить о проблеме, см. в статье [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Программа не отвечает на запросы, или возникла проблема с производительностью Visual Studio. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. Сведения о том, как сообщить о проблеме, см. в статье [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>См. также раздел
 

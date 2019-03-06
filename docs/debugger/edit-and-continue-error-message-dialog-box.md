@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694989"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222361"
 ---
 # <a name="edit-and-continue-error-message"></a>Изменить и продолжить сообщение об ошибке
 
@@ -46,6 +46,6 @@ ms.locfileid: "56694989"
 -   Запуск отладки старую версию приложения, так как последняя версия включает ошибки сборки.
 
 Дополнительные сведения:
-- [C++ изменить и продолжить блог блога](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++ изменить и продолжить блог блога](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md)
 - [Изменить и продолжить](../debugger/edit-and-continue.md)

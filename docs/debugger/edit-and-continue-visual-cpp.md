@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695002"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222367"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. См. в разделе [поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md) сведения об ограничениях, изменить и продолжить.
 
-Дополнительные сведения об улучшениях Visual Studio 2015 с обновлением 3 см. в разделе [C++ изменить и продолжить в Visual Studio 2015 с обновлением 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Дополнительные сведения об улучшениях Visual Studio 2015 с обновлением 3 см. в разделе [C++ изменить и продолжить в Visual Studio 2015 с обновлением 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  Параметр компилятора [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB-файлы символов для двоичных файлов, скомпилированных без параметра [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).
 
@@ -37,7 +37,7 @@ ms.locfileid: "56695002"
  Можно отключить автоматический вызов возможности "Изменить и продолжить" при внесении изменений в код, которые не следует применять в текущем сеансе отладки. Можно также повторно включить автоматическую возможность "Изменить и продолжить".
 
 > [!IMPORTANT]
-> Параметры необходимые сборки и другие сведения о компоненте совместимости, см. в разделе [C++ Edit and Continue в Visual Studio 2015 с обновлением 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Параметры необходимые сборки и другие сведения о компоненте совместимости, см. в разделе [C++ изменить и продолжить в Visual Studio 2015 с обновлением 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Если вы находитесь в сеанс отладки, Остановите отладку (**Shift + F5**).
 
