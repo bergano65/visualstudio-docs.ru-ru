@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692870"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953670"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 Это сообщение возникает, так как монитор удаленной отладки не настроен должным образом на удаленном компьютере или удаленном компьютере недоступен из-за проблем с сетью или наличия межсетевого экрана.
 
 > [!IMPORTANT]
->  Если вы считаете, что вы получили это сообщение из-за ошибки продукта, [сообщить об этой проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) для Visual Studio. Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
+>  Если вы считаете, что вы получили это сообщение из-за ошибки продукта, [сообщить об этой проблеме](../ide/how-to-report-a-problem-with-visual-studio.md) для Visual Studio. Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
 
 ## <a name="specificerrors"></a>Что такое подробное сообщение об ошибке?
 

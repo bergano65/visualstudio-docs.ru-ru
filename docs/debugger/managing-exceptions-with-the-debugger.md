@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700917"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428704"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 Используйте **параметры исключений** окно, чтобы задать условия для исключения. В настоящее время поддерживаются такие условия включают имена модулей для включения или исключения для исключения. Установив имена модулей в качестве условий, можно прерывать выполнение для исключения только в определенных модулей кода. Вы также можете во избежание прерывания из-за конкретных модулей.
 
 > [!NOTE]
-> Добавление условий в исключение возможности [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Добавление условия к исключению поддерживается начиная с версии [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Добавление условного исключения:
 

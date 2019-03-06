@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637859"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428808"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике
 
@@ -99,11 +99,21 @@ Visual Studio предоставляет некоторые *.natvis* файлы
 
 1. Любой *.natvis* файлы, которые внедряются в *.pdb* отладке, если файл с тем же именем существует в загруженный проект.
 
-1. Любой *.natvis* файлов, находящихся в загруженный проект C++ или решения верхнего уровня. Сюда входят все загруженные проекты C++, включая библиотеки классов, но не проекты на других языках.
+2. Любой *.natvis* файлов, находящихся в загруженный проект C++ или решения верхнего уровня. Сюда входят все загруженные проекты C++, включая библиотеки классов, но не проекты на других языках.
 
-1.  Каталог Natvis конкретного пользователя (например, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+::: moniker range="vs-2017"
 
-1.  Каталог Natvis всей системы (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). В этом каталоге есть *.natvis* файлы, которые устанавливаются вместе с Visual Studio. Если у вас есть разрешения администратора, можно добавить файлы в этот каталог.
+3.  Каталог Natvis конкретного пользователя (например, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  Каталог Natvis конкретного пользователя (например, *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+
+::: moniker-end
+
+4.  Каталог Natvis всей системы (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). В этом каталоге есть *.natvis* файлы, которые устанавливаются вместе с Visual Studio. Если у вас есть разрешения администратора, можно добавить файлы в этот каталог.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Изменение natvis-файлы во время отладки
 
