@@ -580,7 +580,7 @@ JavaScript</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Расширяемый язык программирования, который обычно используется для работы со статистическими вычислениями и графикой.</p>
+                                                    <p>(Только Visual Studio 2017) Расширяемый язык программирования, который обычно используется для работы со статистическими вычислениями и графикой.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ JavaScript</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ JavaScript</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Приложения для обработки и анализа данных и аналитические приложения</h3>
-                                            <p>Языки и средства для создания приложений для обработки и анализа данных, включая Python, R и F#.</p>
+                                            <p>Языки и средства для создания приложений для обработки и анализа данных, включая Python и F# (а также R только в Visual Studio 2017).</p>
                                         </div>
                                       </div>
                                     </div>
