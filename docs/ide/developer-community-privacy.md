@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3db48578d2b316ddd203316a15536b144cb28cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910458"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954339"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 
@@ -85,5 +85,5 @@ ms.locfileid: "55910458"
 
 ## <a name="see-also"></a>См. также
 
-- [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md)
 - [Конфиденциальность данных отчета о проблемах C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

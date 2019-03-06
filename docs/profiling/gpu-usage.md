@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948912"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223472"
 ---
 # <a name="gpu-usage"></a>Использование GPU
 
@@ -155,7 +155,7 @@ ms.locfileid: "54948912"
 
 - [Решения сложных проблем с графикой в игре с помощью инструментов DirectX (видео)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Средство использования GPU в Visual Studio (видео)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)
-- [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](https://blogs.msdn.microsoft.com/vcblog/2014/09/04/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
+- [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
 - [Использование GPU для DirectX в Visual Studio (блог)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)
 - [GPUView](/windows-hardware/drivers/display/using-gpuview)
 - [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: b6a79982159c20d1d9634cd04117c859f8c69275
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294231"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953879"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "51294231"
 
     Для входа в Visual Studio для Mac вы не можете использовать учетные данные Xamarin.
 
-3.  После входа вы увидите свой тип лицензии. В этом диалоговом окне можно добавить дополнительные учетные записи Майкрософт, которые требуется использовать:
+3. После входа вы увидите свой тип лицензии. В этом диалоговом окне можно добавить дополнительные учетные записи Майкрософт, которые требуется использовать:
 
     ![Вход успешно выполнен](media/signing-in-image14.png)
 

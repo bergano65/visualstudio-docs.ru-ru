@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b019081e2f81a803b745bda0991c655ef84d11c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606361"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953785"
 ---
 # <a name="spanspan-destructor"></a>Деструктор span::~span
+
 Уничтожает объект `span` и высвобождает его ресурсы.
 
 ## <a name="syntax"></a>Синтаксис
@@ -29,9 +30,11 @@ ms.locfileid: "56606361"
 ```
 
 ## <a name="requirements"></a>Требования
- **Заголовок:** *cvmarkersobj.h*
 
- **Пространство имен:** Concurrency::diagnostic
+**Заголовок:** *cvmarkersobj.h*
 
- ## <a name="see-also"></a>См. также
+**Пространство имен:** Concurrency::diagnostic
+
+## <a name="see-also"></a>См. также
+
 - [Класс span](../profiling/span-class.md)

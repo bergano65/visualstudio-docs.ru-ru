@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 919eb350f655dda2b96527b1e37f0ec027dd922d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937413"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323806"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Управление ресурсами, связанными с учетными записями Azure, с помощью Visual Studio Cloud Explorer
 
@@ -24,7 +24,7 @@ Cloud Explorer позволяет просматривать ресурсы и �
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Visual Studio 2017](https://www.visualstudio.com/downloads/) с выбранной **рабочей нагрузкой Azure** или более ранняя версия Visual Studio с пакетом [Microsoft Azure SDK для .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657).
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) с выбранной **рабочей нагрузкой Azure** или более ранняя версия Visual Studio с пакетом [Microsoft Azure SDK для .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Учетная запись Azure. Если у вас ее нет, [зарегистрируйтесь для работы с бесплатной пробной версией](http://go.microsoft.com/fwlink/?LinkId=623901) или [активируйте преимущества для подписчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
