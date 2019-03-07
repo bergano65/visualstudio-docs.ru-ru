@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  изменять XML-файлы
+title: Практическое руководство. изменять XML-файлы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931758"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525457"
 ---
-# <a name="how-to-edit-xml-files"></a>Как выполнить  Изменять XML-файлы
+# <a name="how-to-edit-xml-files"></a>Практическое руководство. Изменять XML-файлы
 
-Редактор XML - это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, и *.vssettings*. Для редактора XML также зарегистрированы файлы всех типов с содержимым в формате XML или DTD, для которых не зарегистрирован специальный редактор.
+Редактор XML — это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, и *.vssettings*. Редактор XML также связан с других файлов любого типа, имеет не зарегистрирован специальный редактор, и содержит содержимое XML или DTD.
 
 > [!NOTE]
 > Документы XHTML обрабатываются редактором HTML.
@@ -64,10 +64,10 @@ ms.locfileid: "55931758"
 
 3.  Добавьте XML-файлы в проект.
 
-     Редактор XML найдет добавленные в этот проект схемы и применит их для проверки правильности документа и поддержки технологии IntelliSense в любых XML-файлах, схемах или XSLT-файлах, редактируемых во время того, как открыт этот проект.
+     Редактор XML найдет, добавляемые в этот проект и использует их для проверки и IntelliSense в XML, схем или XSLT-файлы, которые изменяются во время открыт этот проект.
 
 ## <a name="see-also"></a>См. также
 
-- [XML-редактор](../xml-tools/xml-editor.md)
+- [Редактор XML](../xml-tools/xml-editor.md)
 - [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)
 - [Практическое руководство. Создание схемы XML из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

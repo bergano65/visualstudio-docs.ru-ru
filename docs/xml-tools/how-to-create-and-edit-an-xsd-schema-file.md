@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937920"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525362"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как выполнить  Создание и изменение файла схемы XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Практическое руководство. Создание и изменение файла схемы XSD
 
 Данный раздел описывает процесс создания нового файла XML-схемы (XSD) и добавления содержимого в XSD-файл.
 
@@ -29,14 +29,10 @@ ms.locfileid: "55937920"
 
 ## <a name="to-edit-a-file"></a>Редактирование файла
 
-1. Выберите **использование редактора XML для просмотра и изменения базового файла XML-схемы** ссылку в начальном представлении.
+1. Выберите **редактор XML используется для просмотра и изменения базового файла XML-схемы** ссылку в начальном представлении.
 
-   Откроется редактор XML с новым файлом.
+   Откроется редактор XML новому открытому файлу.
 
 2. Скопируйте образец кода XML-схемы из [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.
 
    **Обозреватель XML-схем** обновляется с новым набором схем.
-
-## <a name="see-also"></a>См. также
-
-- [Работа с XML-данных](../xml-tools/working-with-xml-data.md)

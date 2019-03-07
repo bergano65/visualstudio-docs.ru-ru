@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920916"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526003"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Как выполнить  Изучить модель содержимого узлов с использованием представления модели содержимого
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Практическое руководство. Изучить модель содержимого узлов с использованием представления модели содержимого
 
 В этом разделе описывает процесс изучения узлов с использованием [представления модели содержимого](../xml-tools/content-model-view.md).
 
@@ -23,7 +23,7 @@ ms.locfileid: "55920916"
 
 1.  Создайте новый файл XML-схемы.
 
-2.  Нажмите кнопку **использование редактора XML для просмотра и изменения базового файла XML-схемы** в начальном представлении.
+2.  Нажмите кнопку **редактор XML используется для просмотра и изменения базового файла XML-схемы** в начальном представлении.
 
 3.  Скопируйте образец кода XML-схемы из [образец XML-схема: схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.
 

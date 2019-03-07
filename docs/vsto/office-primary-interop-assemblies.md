@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602290"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525911"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -57,15 +57,15 @@ Visual Studio использует разные наборы основных с
 
 Эти копии основных сборок взаимодействия помогают Visual Studio избегать различных проблем разработки, которые могут возникать при регистрации разных основных сборок взаимодействия в глобальном кэше сборок.
 
-Visual Studio устанавливает эти копии сборок взаимодействия в следующие расположения на компьютере разработки.
+Начиная с Visual Studio 2017, эти копии основных сборок взаимодействия устанавливаются в следующих общих папках на компьютере разработчика:
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-  (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* в 64-разрядных операционных системах)
+- (или * % ProgramFiles (x86) %\Microsoft Visual Studio Tools Studio\Shared\Visual для Office\PIA\* в 64-разрядных операционных системах)
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15*
-
-  (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* в 64-разрядных операционных системах)
+> [!NOTE]
+> Для более старых версий Visual Studio, эти PIA будет установлен для Visual Studio Tools для Office\PIA папке в папке * папку % ProgramFiles %, для этой версии Visual Studio.  
+> Например: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Основные сборки взаимодействия в глобальном кэше сборок
 
@@ -79,7 +79,7 @@ Visual Studio устанавливает эти копии сборок взаи
 
 Каждый шаблон проекта Office в Visual Studio предназначен для работы с одним приложением Microsoft Office. Чтобы использовать компоненты в нескольких приложениях Microsoft Office (или в приложении или компоненте, для которого нет проекта в Visual Studio) необходимо добавить ссылку на нужные основные сборки взаимодействия.
 
-В большинстве случаев следует добавить ссылки на сборки, которые устанавливаются с Visual Studio в разделе `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` каталога. Эти версии сборок отображаются на **Framework** вкладке **диспетчер ссылок** диалоговое окно. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+В большинстве случаев следует добавить ссылки на сборки, которые устанавливаются с Visual Studio в разделе `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` каталога. Эти версии сборок отображаются на **Framework** вкладке **диспетчер ссылок** диалоговое окно. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Если вы установили и зарегистрировали основные сборки взаимодействия в глобальном кэше сборок, эти версии сборок отображаются на вкладке **COM** диалогового окна **Диспетчер ссылок** . Следует избегать добавления ссылок на эти версии сборок, так как имеются несколько проблем разработки, которые могут возникать при их использовании. Например, если вы зарегистрировали разные версии основных сборок взаимодействия в глобальном кэше сборок, проект будет автоматически привязан к версии сборки, которая была зарегистрирована последней, даже если вы укажете другую версию сборки на вкладке **COM** диалогового окна **Диспетчер ссылок** .
 
@@ -90,7 +90,7 @@ Visual Studio устанавливает эти копии сборок взаи
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Основные сборки взаимодействия для приложений Microsoft Office
 
-В следующей таблице перечисляются основные сборки взаимодействия, доступные для [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+В следующей таблице перечислены основные сборки взаимодействия, доступные для [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

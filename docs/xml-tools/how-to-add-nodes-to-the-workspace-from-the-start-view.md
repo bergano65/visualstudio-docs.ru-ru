@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f2fac4ce1266dc9df59ada54631306664bd6f42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913841"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526403"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Как выполнить  Добавление узлов в рабочую область из начального представления
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Практическое руководство. Добавление узлов в рабочую область из начального представления
 
 В этом разделе описывается добавление глобальных узлов [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) из [начальное представление](../xml-tools/start-view.md).
 
