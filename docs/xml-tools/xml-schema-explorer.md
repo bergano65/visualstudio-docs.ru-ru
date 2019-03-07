@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915990"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525714"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 
@@ -31,7 +31,7 @@ ms.locfileid: "55915990"
 
 -   Сортировать дерево по порядку документа, типу или имени. Дополнительные сведения см. в разделе [сортировку, фильтрацию и группировку](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Открыть XML Editor и перейти к местоположению кода в XSD-файле. Дополнительные сведения см. в разделе [интеграции с помощью редактора XML](../xml-tools/integration-with-xml-editor.md).
+-   Открыть XML editor и перейти к местоположению кода в XSD-файле. Дополнительные сведения см. в разделе [интеграция с редактором XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Создать XML-образцы для глобальных элементов.
 

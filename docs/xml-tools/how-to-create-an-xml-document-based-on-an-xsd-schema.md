@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание XML-документа на основе схемы XSD
+title: Практическое руководство. Создание XML-документа на основе схемы XSD
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912889"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525122"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как выполнить  Создание XML-документа на основе схемы XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 
 **Создание образца XML** функция создает пример XML-файла, на базе файла схемы XML (XSD).
 
@@ -27,7 +27,7 @@ ms.locfileid: "55912889"
 
 **Создание образца XML** компонент доступен только для глобальных элементов и требует допустимый набор схем XML.
 
-С помощью этой возможности обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.
+С помощью этой функции обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.
 
 -   Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.
 
@@ -45,7 +45,7 @@ ms.locfileid: "55912889"
 
 2.  В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.
 
-     Если выбран этот параметр, PurchaseOrder. *xml* файл со следующим содержимым образец XML будет создан и открыт в редакторе XML:
+     Если выбран этот параметр, PurchaseOrder. *xml* файл со следующим содержимым XML пример будет сгенерирован и открыт в редакторе XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ ms.locfileid: "55912889"
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>См. также
-
-- [Работа с XML-данных](../xml-tools/working-with-xml-data.md)
