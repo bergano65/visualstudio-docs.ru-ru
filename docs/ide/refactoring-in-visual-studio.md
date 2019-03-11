@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927117"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428613"
 ---
 # <a name="refactor-code"></a>Рефакторинг кода
 
@@ -22,7 +22,11 @@ ms.locfileid: "55927117"
 
 ## <a name="programming-languages"></a>Языки программирования
 
-Для различных языков программирования в Visual Studio доступны различные операции рефакторинга. Статьи в этом разделе посвящены операциям рефакторинга, которые доступны для C# и Visual Basic. Сведения о рефакторинге кода C++ см. в статье [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp). Поддержка рефакторинга для F# предоставляется [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), расширением стороннего производителя для Visual Studio.
+Для различных языков программирования в Visual Studio доступны различные операции рефакторинга:
+
+- Статьи в этом разделе содержания посвящены операциям рефакторинга, которые доступны для C# и Visual Basic. Например: [Рефакторинг для извлечения метода](reference/extract-method.md) и [Рефакторинг для перемещения типа в соответствующий файл](reference/move-type-to-matching-file.md).
+- Сведения о рефакторинге кода C++ см. в статье [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Поддержка рефакторинга для F# предоставляется [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), расширением стороннего производителя для Visual Studio.
 
 ## <a name="see-also"></a>См. также
 

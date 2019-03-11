@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927533"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323122"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
 
@@ -31,8 +31,7 @@ ms.locfileid: "55927533"
 
    Откроется диалоговое окно **Программа улучшения Visual Studio**.
 
-1. Чтобы отказаться от участия, выберите **Я не хочу участвовать** и нажмите **ОК**.
-   Чтобы согласиться на участие, выберите **Я хочу участвовать** и нажмите **ОК**.
+1. Чтобы отказаться от участия, выберите **Я не хочу участвовать** и нажмите **ОК**. Чтобы согласиться на участие, выберите **Я хочу участвовать** и нажмите **ОК**.
 
    ![Диалоговое окно "Программа улучшения Visual Studio"](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ ms.locfileid: "55927533"
 
 Ниже приведены соответствующие разделы и параметры реестра:
 
-В 64-разрядной операционной системе Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** В 32-разрядной операционной системе Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Когда включена групповая политика, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
 
-Entry = **OptIn**
+- В 64-разрядной операционной системе: ключ = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- В 32-разрядной операционной системе: ключ = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Если включена групповая политика: ключ = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- В 64-разрядной операционной системе: ключ = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- В 32-разрядной операционной системе: ключ = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Если включена групповая политика: ключ = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+Запись = **OptIn**
 
 Значение = (DWORD)
+
 - **0** — отказаться (отключить VSCEIP)
 - **1** — согласиться (включить VSCEIP)
 
@@ -59,6 +73,6 @@ Entry = **OptIn**
 
 * [Диагностическая информация, собираемая Visual Studio](diagnostic-data-collection.md)
 * [Обратная связь](../ide/talk-to-us.md)
-* [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)
 * [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)

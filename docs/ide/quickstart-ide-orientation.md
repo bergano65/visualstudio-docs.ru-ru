@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712532"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223634"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -114,5 +114,5 @@ ms.locfileid: "56712532"
 ## <a name="see-also"></a>См. также
 
 - [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../get-started/visual-studio-ide.md)
-- [Дополнительные возможности Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Дополнительные возможности Visual Studio](../ide/advanced-feature-overview.md)
 - [Изменение цвета шрифта и темы](../ide/quickstart-personalize-the-ide.md)

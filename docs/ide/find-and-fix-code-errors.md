@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928313"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223615"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Работа с кодом в Visual Studio
 
@@ -74,7 +74,7 @@ Visual Studio включает эффективный интегрированн
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Анализ кода C# и Visual Basic
 
-Visual Studio 2017 содержит встроенный набор [анализаторов платформы компиляторов .NET](../code-quality/roslyn-analyzers-overview.md), которые проверяют код на C# и Visual Basic при его наборе. Можно установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet. Если обнаруживаются нарушения правил, они помечаются как в редакторе кода (волнистая линия под соответствующим кодом), так и в **списке ошибок**.
+Visual Studio содержит встроенный набор [анализаторов платформы компиляторов .NET](../code-quality/roslyn-analyzers-overview.md), которые проверяют код на C# и Visual Basic при его наборе. Можно установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet. Если обнаруживаются нарушения правил, они помечаются как в редакторе кода (волнистая линия под соответствующим кодом), так и в **списке ошибок**.
 
 ### <a name="c-code-analysis"></a>Анализ кода C++
 

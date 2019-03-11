@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796651"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222523"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 
@@ -26,7 +26,17 @@ ms.locfileid: "56796651"
 
 Для прохождения этого краткого руководства вам не нужны навыки работы с C++, но требуется знакомство с некоторыми общими концепциями программирования и отладки. Эта документация по Visual Studio не учит вас программировать на C++. Хорошим источником учебных ресурсов по C++ является страница о [начале работы](https://isocpp.org/get-started) на веб-сайте ISO C++.
 
-Для дальнейшей работы вам потребуется копия Visual Studio 2017 версии 15.3 или более поздней с установленной рабочей нагрузкой **Разработка классических приложений на C++**. Краткое руководство по установке см. в разделе [Установка поддержки C++ в Visual Studio](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+Для дальнейшей работы вам потребуется копия Visual Studio 2017 с установленной рабочей нагрузкой **Разработка классических приложений на C++**. Краткое руководство по установке см. в разделе [Установка поддержки C++ в Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Для дальнейшей работы вам потребуется копия Visual Studio 2019 с установленной рабочей нагрузкой **Разработка классических приложений на C++**. Краткое руководство по установке см. в разделе [Установка поддержки C++ в Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Создание консольного приложения
 

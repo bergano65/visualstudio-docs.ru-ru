@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934072"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223043"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "55934072"
 
 ## <a name="set-the-color-theme"></a>Настройка цветовой темы
 
-По умолчанию в пользовательском интерфейсе Visual Studio 2017 установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
+По умолчанию в пользовательском интерфейсе Visual Studio установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
 
 1. В строке меню, где расположены разделы **Файл** и **Изменить**, выберите **Средства** > **Параметры**.
 

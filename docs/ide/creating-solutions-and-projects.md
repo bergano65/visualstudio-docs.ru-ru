@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937530"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223251"
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -53,7 +53,7 @@ ms.locfileid: "55937530"
    ![Диалоговое окно "Новый проект"](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > Список доступных языков и шаблонов проектов зависит от используемой версии Visual Studio и установленных рабочих нагрузок. Сведения об установке дополнительных рабочих нагрузок см. в статье [Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов](../install/modify-visual-studio.md).
+   > Список доступных языков и шаблонов проектов зависит от используемой версии Visual Studio и установленных рабочих нагрузок. Сведения об установке дополнительных рабочих нагрузок см. в статье [Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов](../install/modify-visual-studio.md).
 
 2. Чтобы открыть список шаблонов для требуемого языка программирования, щелкните треугольник рядом с названием языка, а затем выберите тип проекта.
 

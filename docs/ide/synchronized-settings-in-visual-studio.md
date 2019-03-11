@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926051"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221883"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Синхронизация параметров Visual Studio на нескольких компьютерах
 
@@ -60,20 +60,30 @@ ms.locfileid: "55926051"
 
 ## <a name="side-by-side-synchronized-settings"></a>Параллельно синхронизированные параметры
 
-В Visual Studio 2017 версии 15.3 и более поздних версий мы отключили общий доступ к некоторым параметрам, таким как макет окна инструментов, между разными параллельными установками Visual Studio 2017. Файл *CurrentSettings.vssettings* в *%userprofile%\Documents\Visual Studio 2017\Settings* находится в папке для установки, аналогичной папке *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Некоторые параметры, например макет окна инструментов, не используются совместно в разных параллельных установках Visual Studio. Файл *CurrentSettings.vssettings* в *%userprofile%\Documents\Visual Studio 2017\Settings* находится в папке для установки, аналогичной папке *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Вы можете использовать новые индивидуальные параметры для новой установки. При обновлении уже установленной системы Visual Studio 2017 до последней версии будет использоваться предыдущее общее расположение.
+> Вы можете использовать новые индивидуальные параметры для новой установки. При обновлении существующей установки Visual Studio используется существующая общая папка.
 
-Если у вас есть параллельно установленные версии Visual Studio 2017 и вы хотите использовать новое расположение файла параметров, сделайте следующее:
+Если у вас есть параллельно установленные версии Visual Studio и вы хотите использовать новое расположение файла параметров, сделайте следующее:
 
 1. Выполните обновление до Visual Studio 2017 версии 15.3 или более поздней.
 
-1. Используйте мастер **импорта и экспорта**, чтобы экспортировать все существующие параметры в папку за пределами папки *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Используйте мастер **импорта и экспорта**, чтобы экспортировать все существующие параметры в папку за пределами папки *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
-1. Откройте **командную строку разработчика для VS2017** в обновленной версии Visual Studio и выполните команду `devenv /resetuserdata`.
+3. Откройте **командную строку разработчика для VS 2017** и выполните `devenv /resetuserdata`.
 
 1. Запустите Visual Studio и импортируйте сохраненные параметры из экспортированного файла параметров.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Некоторые параметры, например макет окна инструментов, не используются совместно в разных параллельных установках Visual Studio. Файл *CurrentSettings.vssettings* в *%userprofile%\Documents\Visual Studio 2019\Settings* находится в папке для установки, аналогичной папке *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 

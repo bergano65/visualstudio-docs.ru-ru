@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913136"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323978"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Как выполнить  Отключение предупреждений компилятора
+# <a name="how-to-suppress-compiler-warnings"></a>Как выполнить Отключение предупреждений компилятора
 
 Отфильтровав предупреждения компилятора одного или нескольких видов, вы сможете убрать лишнюю информацию из журнала сборки. Например, вы можете регулировать объем выходных данных, изменяя уровень детализации журнала сборки: **обычный**, **подробный** или **диагностический**. Дополнительные сведения о детализации см. в разделе [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Отключение некоторых предупреждений для Visual C# и F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Отключение некоторых предупреждений для Visual C# и F\#
 
 Используйте страницу свойств **Сборка**, чтобы отключить конкретные предупреждения для проектов C# и F#.
 

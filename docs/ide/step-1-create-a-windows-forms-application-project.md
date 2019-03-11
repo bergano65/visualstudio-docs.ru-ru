@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796534"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223004"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 
@@ -33,7 +33,7 @@ ms.locfileid: "56796534"
 3. В списке шаблонов выберите **Приложение Windows Forms (.NET Framework)**. Назовите новую форму **PictureViewer** и нажмите кнопку **ОК**.
 
     >[!NOTE]
-    >Если вы не видите шаблон **Приложение Windows Forms (.NET Framework)**, используйте Visual Studio Installer, чтобы установить рабочую нагрузку **Разработка классических приложений .NET**.<br/><br/>![Рабочая нагрузка разработки классических приложений .NET в Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Дополнительные сведения см. в разделе [Установка Visual Studio 2017](../install/install-visual-studio.md).
+    >Если вы не видите шаблон **Приложение Windows Forms (.NET Framework)**, используйте Visual Studio Installer, чтобы установить рабочую нагрузку **Разработка классических приложений .NET**.<br/><br/>![Рабочая нагрузка разработки классических приложений .NET в Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Дополнительные сведения см. в разделе [Установка Visual Studio](../install/install-visual-studio.md).
 
      Visual Studio создает решение для программы. Решение играет роль контейнера для всех проектов и файлов, необходимых программе. Более подробно эти термины поясняются далее в этом учебнике.
 

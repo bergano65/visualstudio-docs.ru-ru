@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 69c39404f82f1d0ae56996ff931fa011b5fca308
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317228"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323910"
 ---
-# <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio (C#)
+# <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio | C\#
 
 *Интегрированная среда разработки* Visual Studio — это оригинальная среда запуска, которая позволяет редактировать, отлаживать и создавать код, а затем публиковать приложения. Интегрированная среда разработки (IDE) — это многофункциональная программа, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые существуют в большинстве сред IDE, Visual Studio включает в себя компиляторы, средства выполнения кода, графические конструкторы и многие другие функции для упрощения процесса разработки программного обеспечения.
 

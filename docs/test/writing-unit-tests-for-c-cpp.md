@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926792"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223064"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -30,11 +30,11 @@ ms.locfileid: "55926792"
 
 Помимо установленных платформ, вы можете создавать собственные адаптеры тестов для платформ, которые вы хотели бы использовать в Visual Studio. Адаптер теста позволяет интегрировать модульные тесты с окном **Обозреватель тестов**. В [Visual Studio Marketplace](https://marketplace.visualstudio.com) доступно несколько адаптеров сторонних поставщиков. Дополнительные сведения см. в разделе [Установка платформ модульного тестирования сторонних поставщиков](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 версии 15.7 (Professional и Enterprise)**
+**Visual Studio 2017 версии 15.7 и более поздних версий (Professional и Enterprise)**
 
 Проекты модульных тестов для C++ поддерживают [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 версии 15.5**
+**Visual Studio 2017 версии 15.5 и более поздних версий**
 
 - **Адаптер Google Test** включен по умолчанию в рабочую нагрузку **Разработка классических приложений на C++**. Он содержит шаблон проекта, который можно добавить в решение с помощью команды **Добавить новый проект** в контекстном меню узла решения в **обозревателе решений**, а также параметры, которые можно настроить в окне **Инструменты** > **Параметры**. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>Использование CodeLens
 
-**Visual Studio 2017 версии 15.7 (только Professional и Enterprise)** [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) позволяет быстро просмотреть состояние модульного теста, не выходя из кода редактора. Инициализировать CodeLens для проекта модульного теста C++ можно любым из перечисленных ниже способов.
+**Visual Studio 2017 версии 15.7 и более поздних версий (только Professional и Enterprise)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) позволяет быстро просмотреть состояние модульного теста, не выходя из кода редактора. Инициализировать CodeLens для проекта модульного теста C++ можно любым из перечисленных ниже способов.
 
 - Отредактировать и собрать тестовый проект или решение.
 - Перестроить проект или решение.
@@ -127,10 +129,10 @@ TEST_METHOD(TestClassInit)
 
 ![Значки CodeLens для C++](media/cpp-test-codelens-icons.png)
 
- Щелкните значок для получения дополнительных сведений либо для запуска или отладки модульного теста:
+Щелкните значок для получения дополнительных сведений либо для запуска или отладки модульного теста:
 
 ![Запуск и отладка CodeLens для C++](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>См. также
 
-[Модульное тестирование кода](unit-test-your-code.md)
+- [Модульное тестирование кода](unit-test-your-code.md)

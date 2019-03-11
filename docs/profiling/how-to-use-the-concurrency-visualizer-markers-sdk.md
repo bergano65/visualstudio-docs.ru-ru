@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626132"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323540"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.
@@ -78,7 +78,7 @@ ms.locfileid: "56626132"
 
      ![Визуализатор параллелизма с тремя пользовательскими последовательностями маркеров](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C# #
+### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C\#
 
 1.  Добавьте поддержку пакета SDK визуализатора параллелизма в ваше приложение. Дополнительные сведения см. в статье [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md) (Пакет SDK визуализатора параллелизма).
 
