@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864878"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222900"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
@@ -74,7 +74,7 @@ ms.locfileid: "53864878"
 
 Чтобы устранить подобные проблемы, создайте файл с именем **cpp.hint** в корневом каталоге решения. Дополнительные сведения см. в статье [Файлы подсказок](/cpp/ide/hint-files).
 
-**Visual Studio 2017 версии 15.7.** Ошибки анализатора тегов отображаются в окне "Список ошибок".
+Ошибки анализатора тегов отображаются в окне **Список ошибок**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Проверка параметров проекта с помощью журнала ведения диагностики
 
@@ -107,7 +107,7 @@ Visual Studio использует выделенный компилятор C++
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Устранение ошибок компиляции IntelliSense
 
-При компиляции IntelliSense не создаются двоичные файлы, но она также может завершиться с ошибкой. Одна из возможных причин ошибки — использование пользовательских файлов с расширениями .props или .targets. В Visual Studio 2017 версии 15.6 ошибки компиляции только для IntelliSense отображаются в окне вывода. Чтобы их увидеть, в раскрывающемся списке **Показать выходные данные из** выберите **Решение**:
+При компиляции IntelliSense не создаются двоичные файлы, но она также может завершиться с ошибкой. Одна из возможных причин ошибки — использование пользовательских файлов с расширениями .props или .targets. В Visual Studio 2017 версии 15.6 и более поздней ошибки сборки только для IntelliSense отображаются в окне вывода. Чтобы их увидеть, в раскрывающемся списке **Показать выходные данные из** выберите **Решение**:
 
 ![Окно вывода для ошибок решения](media/vcpp-intellisense-output-window.png)
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318008"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223459"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Использование лабораторной среды для DevOps
 
@@ -55,7 +55,7 @@ ms.locfileid: "56318008"
 
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Использование функций Visual Studio Lab Management в Microsoft Test Manager
 
-Вы можете создавать лабораторные среды и управлять ими с помощью функций Visual Studio Lab Management в Microsoft Test Manager при работе с выпуском Visual Studio Enterprise 2017.
+Вы можете создавать лабораторные среды и управлять ими с помощью функций Visual Studio Lab Management в Microsoft Test Manager при работе с выпуском Visual Studio Enterprise.
 
 Компонент Lab Management автоматически устанавливает агенты тестирования на всех компьютерах в окружении.
 

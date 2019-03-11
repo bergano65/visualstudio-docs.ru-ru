@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450260"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223550"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Новые возможности предварительной версии Visual Studio 2019
+# <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска предварительной версии 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Обновлено для [Релиз-кандидата (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Скачать предварительную версию](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[Скачать RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-Предварительная версия Visual Studio 2019 включает ряд общих улучшений, а также новые функции для оптимизации производительности труда разработчиков и совместной работы. Разработчики, которые впервые работают с Visual Studio, и те, кто использует эту среду годами, смогут воспользоваться ее преимуществами для всех аспектов жизненного цикла разработки&mdash;: от упрощенного создания проектов и управления работоспособностью кода до рабочих процессов совместной работы при участии в командной разработке и разработке открытого кода.<br/><br/>
+Visual Studio 2019 включает ряд общих улучшений, а также новые функции для оптимизации производительности труда разработчиков и совместной работы. Разработчики, которые впервые работают с Visual Studio, и те, кто использует эту среду годами, смогут воспользоваться ее преимуществами для всех аспектов жизненного цикла разработки&mdash;: от упрощенного создания проектов и управления работоспособностью кода до рабочих процессов совместной работы при участии в командной разработке и разработке открытого кода.<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ ms.locfileid: "56450260"
 * **[Непрерывные инновации](#continuous-innovation)**. Эффективное создание кода с интеллектуальной облачной поддержкой.
 
 > [!NOTE]
-> Полный список новых возможностей и функций предварительной версии Visual Studio 2019 см. в [заметках о выпуске](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Полный список новых возможностей и функций Visual Studio 2019 см. в статьях [Заметки о выпуске для релиз-кандидата](/visualstudio/releases/2019/release-notes/) и [Заметки о выпуске для предварительной версии 4](/visualstudio/releases/2019/release-notes-preview/). Дополнительные сведения об обоих последних выпусках см. в записи блога [Доступен релиз-кандидат Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/).
 
 ## <a name="personal-and-team-productivity"></a>Личная и командная производительность
 
@@ -75,7 +75,7 @@ ms.locfileid: "56450260"
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>Поиск в окне контрольных значений и форматирование контрольных значений
 
-Наверное, вам приходилось искать одну строку из набора значений в окне контрольных значений. В предварительной версии Visual Studio 2019 мы добавили поиск в окнах "Контрольные значения", "Локальные" и "Видимые", чтобы помочь вам быстрее находить нужные объекты и значения.
+Наверное, вам приходилось искать одну строку из набора значений в окне контрольных значений. В Visual Studio 2019 мы добавили поиск в окнах "Контрольные значения", "Локальные" и "Видимые", чтобы помочь вам быстрее находить нужные объекты и значения.
 
 Также можно выбрать формат отображения значения в окнах "Контрольные значения", "Локальные" и "Видимые".  Дважды щелкните один из элементов в любом окне и добавьте запятую (",") для доступа к раскрывающемуся списку спецификаторов формата, каждый из которых включает описание предполагаемого результата.
 
@@ -87,7 +87,7 @@ ms.locfileid: "56450260"
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) — это служба для разработчиков, которая позволяет предоставить базу кода и соответствующий контекст коллеге и обеспечить двунаправленное взаимодействие непосредственно из среды Visual Studio. Благодаря Live Share коллега может легко и безопасно просматривать, изменять и отлаживать проект, предоставленный вами для общего доступа.
 
-В предварительной версии Visual Studio 2019 эта служба устанавливается по умолчанию.
+В Visual Studio 2019 эта служба устанавливается по умолчанию.
 
 ![Анимированный GIF-файл, демонстрирующий возможности службы Live Share в Visual Studio 2019](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ ms.locfileid: "56450260"
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Управление запросами на вытягивание в интегрированной среде разработки
 
-Мы представляем новое расширение, которое можно скачать для использования в предварительной версии Visual Studio 2019. С помощью этого нового расширения можно просматривать, запускать и даже выполнять отладку запросов на вытягивание, не выходя из интегрированной среды разработки Visual Studio [(IDE)](../get-started/visual-studio-ide.md). На данный момент поддерживается код в репозиториях Azure, однако мы намерены реализовать поддержку GitHub и повысить общую эффективность.
+Мы представляем новое расширение, которое можно скачать для использования в Visual Studio 2019. С помощью этого нового расширения можно просматривать, запускать и даже выполнять отладку запросов на вытягивание, не выходя из интегрированной среды разработки Visual Studio [(IDE)](../get-started/visual-studio-ide.md). На данный момент поддерживается код в репозиториях Azure, однако мы намерены реализовать поддержку GitHub и повысить общую эффективность.
 
 Чтобы приступить к работе, скачайте расширение [Запросы на вытягивание для Visual Studio](https://aka.ms/pr4vs) из Visual Studio Marketplace.
 
@@ -110,7 +110,7 @@ ms.locfileid: "56450260"
 Дополнительные сведения см. на следующих страницах:
 
 * Заметки о выпуске [.NET Core 3 (предварительная версия 1)](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) и [.NET Core 3 (предварительная версия 2)](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md).
-* Записи блога [Announcing .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) (Объявление о выпуске .NET Core 3, предварительная версия 1) и [Announcing .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) (Объявление о выпуске .NET Core 3, предварительная версия 2).
+* Записи блога [Announcing .NET Core 3 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) (Объявление о выпуске .NET Core 3, предварительная версия 1) и [Announcing .NET Core 3 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) (Объявление о выпуске .NET Core 3, предварительная версия 2).
 
 ## <a name="continuous-innovation"></a>Непрерывные инновации
 
@@ -118,7 +118,7 @@ ms.locfileid: "56450260"
 
 Если вы используете мониторы, на которых настроены разные коэффициенты масштабирования отображения, или удаленно подключаетесь к компьютеру, коэффициенты масштабирования отображения которого отличаются от основного устройства, вы можете заметить, что изображение Visual Studio выглядит размытым или отображается с некорректным масштабом.
 
-В выпуске Visual Studio 2019 (предварительная версия) мы делаем первые шаги к реализации в Visual Studio отрисовки, учитывающей параметры монитора (PMA). Мы заложили основу, которая позволит Visual Studio правильно выполнять отрисовку, независимо от используемых коэффициентов масштабирования отображения.
+В выпуске Visual Studio 2019 мы делаем первые шаги к реализации в Visual Studio отрисовки, учитывающей параметры монитора (PMA). Мы заложили основу, которая позволит Visual Studio правильно выполнять отрисовку, независимо от используемых коэффициентов масштабирования отображения.
 
    ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ ms.locfileid: "56450260"
 
 ## <a name="see-also"></a>См. также
 
-* [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
+* [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)
 * [Новые возможности Visual Studio 2017](whats-new-visual-studio-2017.md)

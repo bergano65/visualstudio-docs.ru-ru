@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942080"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221961"
 ---
 # <a name="target-older-versions-of-net-f"></a>Указание предыдущих версий в качестве целевой платформы .NET (F#)
 
@@ -53,7 +53,7 @@ ms.locfileid: "55942080"
 
 ### <a name="to-install-the-f-20-runtime"></a>Установка среды выполнения F# 2.0
 
-Выполните [действия для восстановления Visual Studio 2017](../install/repair-visual-studio.md).
+Выполните [действия для восстановления Visual Studio](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>См. также
 

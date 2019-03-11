@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934670"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323281"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F# с помощью Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F\# с помощью Visual Studio
 
 В этом кратком руководстве по F# в Visual Studio рассматривается создание веб-приложения ASP.NET Core на F#.
 
@@ -28,7 +28,7 @@ ms.locfileid: "55934670"
 
 Сначала вы создадите проект веб-API ASP.NET Core. Для этого типа проекта имеются файлы шаблонов, составляющие рабочую веб-службу, — пока вам даже не пришлось ничего делать!
 
-1. Откройте Visual Studio 2017.
+1. Запустите Visual Studio.
 
 2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 

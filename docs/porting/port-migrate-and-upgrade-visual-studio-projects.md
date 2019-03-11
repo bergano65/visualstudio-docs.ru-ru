@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1873cc68c33fca8912415a00e7c7dda9ded49695
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335546"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223667"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -69,7 +69,7 @@ ms.locfileid: "56335546"
 | Расширяемость Visual Studio/VSIX | Проекты с минимальной версией 14.0 или меньше обновляются до минимальной версии 15.0, что не позволяет открывать проекты в более ранних версиях Visual Studio. Чтобы открыть проект в более ранних версиях, задайте `$(VisualStudioVersion)` в качестве значения минимальной версии. См. также [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Microsoft Test Manager или Visual Studio 2010 с пакетом обновления 1 (SP1) можно использовать для открытия сред, которые были созданы в какой-либо из этих версий. Но версия Microsoft Test Manager должна соответствовать версии Visual Studio 2010 с пакетом обновления 1 (SP1), чтобы можно было создавать среды. |
 | Средства Visual Studio для Apache Cordova | Проекты можно открывать в Visual Studio 2017, но они не являются обратно совместимыми. После открытия проекта в Visual Studio 2015 предлагается разрешить внесение изменений в проект. Это позволит обновить проект, чтобы вместо файла `taco.json` использовать набор инструментов для управления версиями библиотеки Cordova, платформами и подключаемыми модулями, а также зависимостями узлов или npm. Дополнительные сведения см. в [руководстве по миграции](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
-| Веб-развертывание (WDPROJ) | Поддержка проектов веб-развертывания прекращена, начиная с Visual Studio 2012, а вместо нее добавлена поддержка профиля публикации. Так как в Visual Studio 2017 нет эквивалентной функции, для таких проектов отсутствует путь автоматического переноса. Вместо этого откройте в текстовом редакторе файл WDPROJ, скопируйте любые настройки и вставьте их в файл PUBXML (профиль публикации), как описано на сайте [StackOverflow](https://stackoverflow.com/a/12061065/1203388). См. также статью [Планы в отношении веб-сайта и проектов веб-развертывания](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Веб-развертывание (WDPROJ) | Поддержка проектов веб-развертывания прекращена, начиная с Visual Studio 2012, а вместо нее добавлена поддержка профиля публикации. Так как в Visual Studio 2017 нет эквивалентной функции, для таких проектов отсутствует путь автоматического переноса. Вместо этого откройте в текстовом редакторе файл WDPROJ, скопируйте любые настройки и вставьте их в файл PUBXML (профиль публикации), как описано на сайте [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Этот проект можно открыть в Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. |
 | Windows Presentation Foundation | Этот проект можно открыть в Visual Studio 2013, Visual Studio 2012 и Visual Studio 2010 с пакетом обновления 1 (SP1). |
 | Приложения для Магазина Windows и Windows Phone | В Visual Studio 2017 не поддерживаются проекты для Магазина Windows 8.1 и Магазина Windows 8.0 и для Windows Phone 8.1 и Windows Phone 8.0. Для поддержки этих приложений продолжайте использовать Visual Studio 2015. Для поддержки проектов Windows Phone 7.x используйте Visual Studio 2012. |
@@ -105,4 +105,4 @@ ms.locfileid: "56335546"
 
 ## <a name="see-also"></a>См. также
 
-[Справка по миграции и обновлению проекта Visual Studio 2019 (предварительная версия)](port-migrate-upgrade-visual-studio-projects-2019.md)
+[Ссылка на сведения о миграции и обновлении проекта Visual Studio 2019](port-migrate-upgrade-visual-studio-projects-2019.md)

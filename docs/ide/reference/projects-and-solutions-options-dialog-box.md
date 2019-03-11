@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922216"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223446"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Страница "Проекты и решения", диалоговое окно "Параметры"
 
@@ -71,7 +71,7 @@ ms.locfileid: "55922216"
 
 ### <a name="reopen-documents-on-solution-load"></a>Открывать документы заново при загрузке решения
 
-**Новая возможность в Visual Studio 2017 версии 15.8 (предварительная версия 2) и более поздних версий**
+**Новая возможность в Visual Studio 2017 версии 15.8**
 
 При выборе параметра документы, оставленные открытыми при прошлом закрытии этого решения, автоматически открываются при его запуске.
 

@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952311"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221658"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Как выполнить  Размещение и упорядочение шаблонов проектов и элементов
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Как выполнить Размещение и упорядочение шаблонов проектов и элементов
 
 Чтобы шаблоны отображались в диалоговых окнах **Новый проект** и **Добавление нового элемента**, файлы шаблонов следует помещать в расположение, которое Visual Studio распознает. Можно также создать пользовательские подкатегории в расположении с пользовательскими шаблонами. Категории будут отображаться в диалоговых окнах **Новый проект** и **Добавление нового элемента**.
 
@@ -30,13 +30,29 @@ ms.locfileid: "55952311"
 
 Если добавить сжатый файл (*ZIP*-файл), содержащий *VSTEMPLATE*-файл, в каталог с пользовательскими шаблонами, шаблон будет отображаться в диалоговом окне **Новый проект** или **Добавление нового элемента**. По умолчанию пользовательские шаблоны находятся в следующих расположениях:
 
-- *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates*
+::: moniker range="vs-2017"
 
-- *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 Например, следующий каталог содержит шаблоны проектов пользователя на C#:
 
 - *C:\Users\Имя_пользователя\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+Например, следующий каталог содержит шаблоны проектов пользователя на C#:
+
+- *C:\Users\Имя_пользователя\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
 
 > [!TIP]
 > Расположение пользовательских шаблонов можно задать, последовательно выбрав **Сервис** > **Параметры** > **Проекты и решения**  >   **Расположения**.

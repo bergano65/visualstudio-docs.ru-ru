@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949048"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222494"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Часто задаваемые вопросы, посвященные FxCop и анализаторам FxCop
 
@@ -31,7 +31,7 @@ ms.locfileid: "55949048"
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Запускаются ли анализаторы FxCop с помощью команды "Запустить анализ кода"?
 
-Нет. Если выбрать команду **Анализ** > **Запустить анализ кода** в среде Visual Studio 2017, будет выполнен статический анализ кода (устаревшие функции FxCop). Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
+Нет. Если выбрать команду **Анализ** > **Запустить анализ кода**, будет выполнен статический анализ кода или устаревшие функции FxCop. Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Запускаются ли анализаторы с помощью свойства проекта msbuild RunCodeAnalysis?
 

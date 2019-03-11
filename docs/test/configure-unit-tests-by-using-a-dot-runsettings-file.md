@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52085e5ac2471c73d512252f85bd3db3e3cc0234
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919824"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223407"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -36,7 +36,17 @@ ms.locfileid: "55919824"
 
 1. Запустите командную строку разработчика Visual Studio.
 
-   В меню **Пуск** Windows выберите **Visual Studio 2017** > **Командная строка разработчика VS 2017**.
+   ::: moniker range="vs-2017"
+
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2017** > **Командная строка разработчика для VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2019** > **Командная строка разработчика для VS 2019**.
+
+   ::: moniker-end
 
 2. Введите команду, подобную следующей:
 
@@ -85,7 +95,7 @@ ms.locfileid: "55919824"
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -113,7 +123,7 @@ ms.locfileid: "55919824"
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>
@@ -238,7 +248,7 @@ public void HomePageTest()
 
 Эти параметры относятся к адаптеру тестов, выполняющему методы теста, которые имеют атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
-|Конфигурация|Значение по умолчанию|Значения|
+|Параметр Configuration|Значение по умолчанию|Значения|
 |-|-|-|
 |**ForcedLegacyMode**|False|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
 |**IgnoreTestImpact**|False|Функция влияния на тесты определяет приоритет тестов, на которые повлияли последние изменения, при выполнении в MSTest или из Microsoft Test Manager. Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|

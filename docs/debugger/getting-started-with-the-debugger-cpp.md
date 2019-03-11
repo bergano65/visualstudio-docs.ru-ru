@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679129"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428782"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Учебник. Сведения об отладке кода C++ с помощью Visual Studio
 
@@ -35,11 +35,20 @@ ms.locfileid: "56679129"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
+::: moniker range=">=vs-2019"
+
+* У вас должна быть установлена среда Visual Studio 2019 и должна иметься рабочая нагрузка **Разработка классических приложений на C++**.
+
+::: moniker-end
+::: moniker range="vs-2017"
+
 * У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка **Разработка классических приложений на C++**.
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
+::: moniker-end
 
-    Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
+Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
+
+Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -218,7 +227,7 @@ ms.locfileid: "56679129"
      ![Использование функции "Выполнение до щелкнутого"](../debugger/media/get-started-run-to-click-cpp.png "Выполнение до щелкнутого")
 
    > [!NOTE]
-   > Кнопка **Выполнение до щелкнутого** впервые появилась в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Если кнопка с зеленой стрелкой отсутствует, воспользуйтесь клавишей **F11**, чтобы переместить отладчик в нужное место.
+   > Кнопка **Выполнение до щелкнутого** доступна начиная с версии [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Если кнопка с зеленой стрелкой отсутствует, воспользуйтесь клавишей **F11**, чтобы переместить отладчик в нужное место.
 
 2. Нажмите кнопку **Выполнение до щелкнутого** ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png "Выполнение до щелкнутого").
 

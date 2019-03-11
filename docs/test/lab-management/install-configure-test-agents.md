@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912746"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223030"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -24,7 +24,7 @@ ms.locfileid: "55912746"
 
 ## <a name="system-requirements"></a>Требования к системе
 
-В следующей таблице указаны требования к системе для установки агента тестирования или контроллера тестирования для Visual Studio 2017:
+В следующей таблице указаны требования к системе для установки агента тестирования или контроллера тестирования для Visual Studio:
 
 | Элемент | Требования |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ ms.locfileid: "55912746"
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования
 
-Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Найдите пункт *Agents для Visual Studio 2017*, выберите *Agent* или *Controller*, а затем нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
+Вы можете скачать агенты для Visual Studio по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Найдите пункт *Agents для Visual Studio 2017*, выберите *Agent* или *Controller*, а затем нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
 
 Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://visualstudio.microsoft.com/vs/older-downloads/).
 

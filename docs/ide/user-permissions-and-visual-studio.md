@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946079"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222863"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -50,11 +50,25 @@ ms.locfileid: "55946079"
 > [!NOTE]
 > Эти инструкции предназначены для Windows 10. Для других версий Windows они аналогичны.
 
+::: moniker range="vs-2017"
+
 1. Откройте меню **Пуск** и перейдите к Visual Studio 2017.
 
-1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **More (Дополнительно)** > **Запуск от имени администратора**.
+1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **Дополнительно** > **Запуск от имени администратора**.
 
    После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Откройте меню **Пуск** и перейдите к Visual Studio 2019.
+
+1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2019** выберите **Дополнительно** > **Запуск от имени администратора**.
+
+   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
+
+::: moniker-end
 
 Можно также изменить ярлык приложения, чтобы всегда запускать его с правами администратора.
 

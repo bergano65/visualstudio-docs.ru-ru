@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935723"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222065"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
 
@@ -106,11 +106,21 @@ ms.locfileid: "55935723"
 
 4. Установите флажок **Клавиатура** и нажмите кнопку **Далее**.
 
-    ![Экспортировать только настроенные сочетания клавиш](../ide/media/exportshortcuts.png)
+   ![Экспортировать только настроенные сочетания клавиш](../ide/media/exportshortcuts.png)
 
 5. В полях **Выберите имя для файла параметров** и **Сохранить файл параметров в этом каталоге** оставьте значения по умолчанию или укажите другие значения, а затем нажмите кнопку **Готово**.
 
-    По умолчанию сочетания клавиш сохраняются в файле в папке *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Имя файла содержит дату экспорта параметров и имеет расширение *VSSETTINGS*.
+::: moniker range="vs-2017"
+
+По умолчанию сочетания клавиш сохраняются в файле в папке *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Имя файла содержит дату экспорта параметров и имеет расширение *VSSETTINGS*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+По умолчанию сочетания клавиш сохраняются в файле в папке *%USERPROFILE%\Documents\Visual Studio 2019\Settings*. Имя файла содержит дату экспорта параметров и имеет расширение *VSSETTINGS*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Импорт сочетаний клавиш
 

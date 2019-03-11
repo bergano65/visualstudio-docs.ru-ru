@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946279"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222978"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
@@ -33,7 +33,7 @@ ms.locfileid: "55946279"
 
 | **Домашняя** страница при подключении к Git | **Домашняя** страница при подключении к TFVC |
 | - | - |
-| ![Домашняя страница Team Explorer при подключении к Git в Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Домашняя страница Team Explorer при подключении к TFVC в Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Домашняя страница Team Explorer при подключении к Git в Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Домашняя страница Team Explorer при подключении к TFVC в Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Страница "Изменения" (Git)
 
@@ -82,7 +82,7 @@ ms.locfileid: "55946279"
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> В Visual Studio 2019 (предварительная версия 1) представлена новая [система управления рабочими элементами](/azure/devops/boards/work-items/set-work-item-experience-vs). Дополнительные сведения о просмотре рабочих элементов в Visual Studio 2019 (предварительная версия 1) см. в статье [Просмотр и добавление рабочих элементов](/azure/devops/boards/work-items/view-add-work-items).
+> В Visual Studio 2019 представлена новая [система управления рабочими элементами](/azure/devops/boards/work-items/set-work-item-experience-vs). Дополнительные сведения о просмотре рабочих элементов в Visual Studio 2019 см. в статье [Просмотр и добавление рабочих элементов](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

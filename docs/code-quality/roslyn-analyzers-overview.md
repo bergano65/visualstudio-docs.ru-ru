@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948281"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221948"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Обзор анализаторов на платформе .NET Compiler Platform
 
-Visual Studio 2017 содержит встроенный набор анализаторов .NET Compiler Platform, которые анализируют код на C# или Visual Basic при его наборе. Анализаторы проверяют стиль кода, качество и удобство поддержки кода, структуру кода и другие аспекты. Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet для отдельных проектов.
+Visual Studio содержит встроенный набор анализаторов .NET Compiler Platform, которые анализируют код на C# или Visual Basic при его наборе. Анализаторы проверяют стиль кода, качество и удобство поддержки кода, структуру кода и другие аспекты. Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet для отдельных проектов.
 
 Если анализатор обнаруживает нарушения правил, они помечаются как в редакторе кода (*волнистая линия* под соответствующим кодом), так и в **списке ошибок**.
 
