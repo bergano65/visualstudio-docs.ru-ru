@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c93f193a17c8581694079ce0c9d7add0341bd1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925986"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324225"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -43,7 +43,7 @@ ms.locfileid: "55925986"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Visual Studio с установленной рабочей нагрузкой **Разработка классических приложений .NET**.
+Visual Studio с установленной рабочей нагрузкой **Разработка классических приложений .NET**.
 
 ## <a name="install-software-on-the-computers"></a>Установка программного обеспечения на компьютеры
 
@@ -59,13 +59,13 @@ ms.locfileid: "55925986"
 
 В этом разделе описывается копирование необходимых файлов, компиляторов, средств построения, ресурсов MSBuild и параметров реестра с главного компьютера на компьютер построения. При разработке этих инструкций подразумевалось, что решение Visual Studio установлено на главном компьютере в каталоге по умолчанию. Если установка выполнена в другом месте, внесите соответствующие изменения.
 
-- На компьютере с архитектурой x86 установка по умолчанию производится в папку *C:\Program Files\Microsoft Visual Studio 11.0*
-- На компьютере с архитектурой x64 установка по умолчанию производится в папку *C:\Program Files (x86)\Microsoft Visual Studio 11.0*
+- На компьютере с архитектурой x86 установка по умолчанию производится в папку *C:\Program Files\Microsoft Visual Studio*
+- На компьютере с архитектурой x64 установка по умолчанию производится в папку *C:\Program Files (x86)\Microsoft Visual Studio*
 
 Обратите внимание, что имя папки *Program Files* зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется *Program Files*. На компьютере с архитектурой x64 эта папка называется *Program Files (x86)*. Независимо от архитектуры системы в этом пошаговом руководстве папка *Program Files* обозначается как *%ProgramFiles%*.
 
 > [!NOTE]
-> На компьютере построения все соответствующие файлы должны находиться на том же диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.
+> На компьютере сборки все соответствующие файлы должны быть на одном диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Копирования файлов пакета SDK для Windows на компьютер построения
 
@@ -85,7 +85,7 @@ ms.locfileid: "55925986"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     Если у вас также установлены другие комплекты для Windows 8...
+   Если у вас также установлены другие комплекты для Windows 8...
 
    - Комплект средств для развертывания и оценки Microsoft Windows
 
@@ -93,7 +93,7 @@ ms.locfileid: "55925986"
 
    - Комплект сертификации оборудования для Microsoft Windows
 
-     ...в папках *%ProgramFiles%\Windows Kits\8.0* могут присутствовать установленные файлы, которые перечислены на предыдущем шаге, причем их условиями лицензирования могут быть запрещены права на использование этих файлов на сервере построения. Проверьте условия лицензионного соглашения для каждого установленного комплекта для Windows и убедитесь, что соответствующие файлы можно копировать на компьютер построения. Если условия лицензии не разрешают использовать их на сервере построения, удалите эти файлы с компьютера построения.
+   ...в папках *%ProgramFiles%\Windows Kits\8.0* могут присутствовать установленные файлы, которые перечислены на предыдущем шаге, причем их условиями лицензирования могут быть запрещены права на использование этих файлов на сервере построения. Проверьте условия лицензионного соглашения для каждого установленного комплекта для Windows и убедитесь, что соответствующие файлы можно копировать на компьютер построения. Если условия лицензии не разрешают использовать их на сервере построения, удалите эти файлы с компьютера построения.
 
 2. Скопируйте рекурсивно следующие папки с главного компьютера на компьютер построения:
 
@@ -101,11 +101,11 @@ ms.locfileid: "55925986"
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\ProjectComponents\
 
-    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
@@ -113,23 +113,23 @@ ms.locfileid: "55925986"
 
 3. Скопируйте следующие файлы с главного компьютера на компьютер построения:
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Следующие библиотеки среды выполнения Visual C++ необходимы только в том случае, если вы запускаете сборку на компьютере построения, например в рамках автоматизированного тестирования. Эти файлы, как правило, находятся во вложенных папках *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* или *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64*, в зависимости от архитектуры системы. В системах с архитектурой x86 скопируйте двоичные файлы x86 в папку *Windows\System32*. В системах x64 скопируйте двоичные файлы x86 в папку *Windows\SysWOW64*, а двоичные файлы x64 в папку *Windows\System32*.
+4. Следующие библиотеки среды выполнения Visual C++ необходимы только в том случае, если вы запускаете сборку на компьютере построения, например в рамках автоматизированного тестирования. Эти файлы, как правило, находятся во вложенных папках *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* или *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*, в зависимости от архитектуры системы. В системах с архитектурой x86 скопируйте двоичные файлы x86 в папку *Windows\System32*. В системах x64 скопируйте двоичные файлы x86 в папку *Windows\SysWOW64*, а двоичные файлы x64 в папку *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -254,7 +254,7 @@ ms.locfileid: "55925986"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Использование файла vcvarsall.bat для установки переменных среды
 
-Откройте окно **командной строки** на компьютере построения и запустите файл *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. С помощью аргумента командной строки укажите набор средств, который вы хотите использовать — x86, собственный x64 или кроссплатформенный компилятор x64. Если аргумент командной строки не указан, используется набор средств x86.
+Откройте окно **командной строки** на компьютере сборки и запустите файл *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat*. С помощью аргумента командной строки укажите набор средств, который вы хотите использовать — x86, собственный x64 или кроссплатформенный компилятор x64. Если аргумент командной строки не указан, используется набор средств x86.
 
 В этой таблице описываются поддерживаемые аргументы для файла *vcvarsall.bat*:
 
@@ -270,7 +270,7 @@ ms.locfileid: "55925986"
 
 1. Чтобы вручную настроить среду командной строки, необходимо добавить следующий путь к переменной среды PATH:
 
-    - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
 
 2. При необходимости можно также добавить следующие пути в переменную PATH, чтобы упростить использование MSBuild для построения решений.
 
@@ -294,9 +294,9 @@ ms.locfileid: "55925986"
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. Чтобы установить сборки в глобальный кэш сборок, найдите файл *gacutil.exe* на компьютере построения, как правило, он находится в папке %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Если вы не можете найти эту папку, повторите действия, описываемые в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства.
 
@@ -364,7 +364,7 @@ ms.locfileid: "55925986"
     <VCTargetsPath11>$(DepotRoot)MSBuild\Microsoft.Cpp\v4.0\v110\</VCTargetsPath11>
     <MSBuildExtensionsPath>$(DepotRoot)MSBuild</MSBuildExtensionsPath>
     <MSBuildExtensionsPath32>$(DepotRoot)MSBuild</MSBuildExtensionsPath32>
-    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio 11.0\VC\</VCInstallDir_110>
+    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio\2017\Enterprise\VC\</VCInstallDir_110>
     <VCInstallDir>$(VCInstallDir_110)</VCInstallDir>
     <WindowsKitRoot>$(DepotRoot)Windows Kits\</WindowsKitRoot>
     <WindowsSDK80Path>$(WindowsKitRoot)</WindowsSDK80Path>
@@ -381,13 +381,29 @@ ms.locfileid: "55925986"
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
+::: moniker range="vs-2017"
+
 6. Измените среду командной строки следующим образом:
 
     - Set Depot=*расположение каталога Depot, созданного на шаге 1*
 
     - Set path=%path%;*расположение MSBuild на компьютере*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-       Для собственной 64-разрядной архитектуры построения задайте ссылку на 64-разрядную версию MSBuild.
+       Для собственной 64-разрядной архитектуры сборки задайте ссылку на 64-разрядную версию MSBuild.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. Измените среду командной строки следующим образом:
+
+    - Set Depot=*расположение каталога Depot, созданного на шаге 1*
+
+    - Set path=%path%;*расположение MSBuild на компьютере*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+
+       Для собственной 64-разрядной архитектуры сборки задайте ссылку на 64-разрядную версию MSBuild.
+
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 
