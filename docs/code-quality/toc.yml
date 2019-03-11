@@ -155,7 +155,7 @@ items:
     items:
     - name: Предупреждения при анализе управляемого кода по идентификатору CheckId
       href: code-analysis-warnings-for-managed-code-by-checkid.md
-    - name: Предупреждения криптографии
+    - name: Предупреждения, связанные с шифрованием
       href: cryptography-warnings.md
       items:
       - name: CA5350. Не используйте ненадежные алгоритмы шифрования
@@ -289,7 +289,7 @@ items:
         href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
       - name: CA2210. Сборки должны иметь допустимые строгие имена
         href: ca2210-assemblies-should-have-valid-strong-names.md
-    - name: Предупреждения глобализации
+    - name: Предупреждения, связанные с глобализацией
       href: globalization-warnings.md
       items:
       - name: CA1300. Укажите MessageBoxOptions
@@ -314,7 +314,7 @@ items:
         href: ca1309-use-ordinal-stringcomparison.md
       - name: CA2101. Укажите тип маршалинга для строковых аргументов P/Invoke
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: предупреждения взаимодействия
+    - name: Предупреждения, связанные с взаимодействием
       href: interoperability-warnings.md
       items:
       - name: CA1400. Для методов P/Invoke должны существовать точки входа
@@ -349,7 +349,7 @@ items:
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
       - name: CA1415. Правильно объявляйте методы P/Invoke
         href: ca1415-declare-p-invokes-correctly.md
-    - name: предупреждения удобства обслуживания
+    - name: Предупреждения, связанные с удобством обслуживания
       href: maintainability-warnings.md
       items:
       - name: CA1500. Имена переменных не должны совпадать с именами полей
@@ -364,14 +364,14 @@ items:
         href: ca1505-avoid-unmaintainable-code.md
       - name: CA1506. Избегайте чрезмерной взаимозависимости классов
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: предупреждения мобильности
+    - name: Предупреждения, связанные с мобильностью
       href: mobility-warnings.md
       items:
       - name: CA1600. Не используйте приоритет процесса простоя
         href: ca1600-do-not-use-idle-process-priority.md
       - name: CA1601. Не используйте таймеры, препятствующие изменению состояния электропитания
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: предупреждения именования
+    - name: Предупреждения, связанные с именованием
       href: naming-warnings.md
       items:
       - name: CA1700. Не присваивайте перечисляемым значениям имя Reserved
@@ -420,7 +420,7 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: CA1726. Используйте предпочтительные термины
         href: ca1726-use-preferred-terms.md
-    - name: предупреждения производительности
+    - name: Предупреждения, связанные с производительностью
       href: performance-warnings.md
       items:
       - name: CA1800. Не делайте лишних приведений
@@ -455,7 +455,7 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: предупреждения переносимости
+    - name: Предупреждения, связанные с переносимостью
       href: portability-warnings.md
       items:
       - name: CA1900. Поля типов значений должны быть переносимыми
@@ -464,7 +464,7 @@ items:
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: CA1903. Используйте API только из целевой рабочей среды
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: предупреждения надежности
+    - name: Предупреждения, связанные с надежностью
       href: reliability-warnings.md
       items:
       - name: CA2000. Ликвидируйте объекты перед потерей области
@@ -479,7 +479,9 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: CA2006. Используйте SafeHandle для инкапсуляции собственных ресурсов
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-    - name: Предупреждения безопасности
+      - name: CA2007. Не следует напрямую ожидать Task
+        href: ca2007-do-not-directly-await-task.md
+    - name: Предупреждения, связанные с безопасностью
       href: security-warnings.md
       items:
       - name: CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
@@ -580,7 +582,7 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: CA3147. Присвоение метки ValidateAntiForgeryToken обработчикам команд
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: предупреждения использования
+    - name: Предупреждения, связанные с использованием
       href: usage-warnings.md
       items:
       - name: CA1801. Проверьте неиспользуемые параметры
@@ -671,7 +673,7 @@ items:
         href: ca2243-attribute-string-literals-should-parse-correctly.md
     - name: Ошибки политики анализа кода
       href: code-analysis-policy-errors.md
-  - name: Предупреждения средства проверки C++ Core Guidelines
+  - name: Предупреждения, связанные со средствами проверки C++ Core Guidelines
     href: code-analysis-for-cpp-corecheck.md
     items:
     - name: C26400
@@ -828,7 +830,7 @@ items:
       href: C26497.md
     - name: C26498
       href: C26498.md
-  - name: Анализ кода для предупреждений C/C++
+  - name: Предупреждения, связанные с анализом кода C/C++
     href: code-analysis-for-c-cpp-warnings.md
     items:
     - name: C1250
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd - ошибки
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835154"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699672"

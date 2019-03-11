@@ -1,6 +1,6 @@
 ---
-title: Команда Evaluate Statement
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,51 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911745"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953059"
 ---
 # <a name="evaluate-statement-command"></a>Команда Evaluate Statement
+
 Вычисляет и отображает заданный оператор.
 
 ## <a name="syntax"></a>Синтаксис
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Аргументы
- `text` Обязательный. Вычисляемый оператор.
 
-## <a name="remarks"></a>Примечания
- Окно, используемое для ввода команды **EvaluateStatement**, определяет, интерпретируется ли знак равенства (=) как оператор сравнения или оператор присваивания.
+`text`
 
- В **командном окне** знак равенства (=) интерпретируется как оператор сравнения. Например, если значения переменных `a` и `b` различаются, то команда
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- возвращает значение `false`.
-
- В окне **интерпретации**, напротив, знак равенства (=) интерпретируется как оператор присваивания. Таким образом, команда
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- присвоит переменной `a` значение переменной `b`.
+Обязательный. Вычисляемый оператор.
 
 ## <a name="example"></a>Пример
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команда "Печать"](../../ide/reference/print-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

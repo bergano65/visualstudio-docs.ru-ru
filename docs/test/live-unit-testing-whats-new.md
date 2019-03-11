@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796586"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221545"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Новые возможности в Live Unit Testing
 
-В этом разделе перечислены новые возможности Live Unit Testing, добавленные в каждой версии Visual Studio начиная с Visual Studio 2017 версии 15.3. Общие сведения об использовании Live Unit Testing см. в статье [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md).
+В этом разделе перечислены новые возможности Live Unit Testing, добавленные в каждой версии Visual Studio начиная с Visual Studio 2017 версии 15.3. Общие сведения об использовании Live Unit Testing см. в статье [Функция Live Unit Testing в Visual Studio](live-unit-testing.md).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Новые возможности Live Unit Testing в Visual Studio 2017 версии 15.4
 
@@ -45,7 +45,7 @@ ms.locfileid: "56796586"
 
 - Поддержка .NET Core и .NET Standard. Функцию Live Unit Testing можно использовать в решениях .NET Core и .NET Standard, написанных на C# или Visual Basic.
 
--  повышение производительности; Выполнив первую полную сборку и ряд тестов с помощью функции Live Unit Testing, вы заметите значительное повышение производительности. Вы также заметите рост производительности в последующих запусках функции Live Unit Testing в том же решении. Теперь данные, создаваемые Live Unit Testing, сохраняются и многократно используются с проверками наличия обновлений.
+- повышение производительности; Выполнив первую полную сборку и ряд тестов с помощью функции Live Unit Testing, вы заметите значительное повышение производительности. Вы также заметите рост производительности в последующих запусках функции Live Unit Testing в том же решении. Теперь данные, создаваемые Live Unit Testing, сохраняются и многократно используются с проверками наличия обновлений.
 
 Помимо этих крупных дополнений, Live Unit Testing также обеспечивает указанные ниже улучшения.
 
@@ -58,10 +58,12 @@ ms.locfileid: "56796586"
 - В строку меню "Тест" > "Live Unit Testing" добавлены несколько дополнительных пунктов меню. Параметр **Сброс очистки** удаляет сохраненные данные и создает их еще раз. **Параметр** переходит к меню "Сервис" > "Параметры" > "Live Unit Testing" > "Общие".
 
 - Теперь с помощью следующих атрибутов можно определить в исходном коде необходимость исключения целевых методов теста из Live Unit Testing.
+
    - Для xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - Для NUnit: `[Category("SkipWhenLiveUnitTesting")]`
    - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>См. также
+
 - [Знакомство с Live Unit Testing](live-unit-testing-intro.md)
-- [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md)
+- [Динамическое модульное тестирование с помощью Visual Studio](live-unit-testing.md)
