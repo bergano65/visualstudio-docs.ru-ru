@@ -1,7 +1,7 @@
 ---
 title: Удаленная отладка проекта Visual C++ | Документация Майкрософт
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca380bae4ae4fcca5f280eb00533ad8ed7763f9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709295"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526067"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Удаленная отладка проекта Visual C++ в Visual Studio
 Для отладки приложения Visual Studio на другом компьютере, установите и запустите инструменты удаленной отладки на компьютере, где приложение будет развернуто, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем развернуть и запустить приложение.

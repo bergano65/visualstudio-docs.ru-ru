@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715184"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526234"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имен потока в машинном коде
 Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков используется для идентификации потоков в **потоков** окно при отладке к выполняющемуся процессу. Задавать именованных потоков можно также полезно при выполнении последующего отладки с помощью проверки аварийных дампов, а также при анализе производительности собирает с помощью различных средств.
@@ -40,7 +40,7 @@ ms.locfileid: "56715184"
 * Имена потоков доступны при использовании других средств, таких как [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) отладчика и [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) анализатор производительности.
 
 Предупреждения:
-* Имена потоков только отображаются в Visual Studio 2017 версии 15.6 и более поздних версий.
+* Имена потоков отображаются только в Visual Studio 2017 версии 15.6 и более поздних версий.
 * Когда файл дампа после неустранимого сбоя отладка сбоя, имена потоков, только если уведомление о сбое был создан в Windows 10 версии 1607, Windows Server 2016 или более поздних версиях Windows.
 
 *Пример:*

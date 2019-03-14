@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317059"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526767"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace для Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -69,7 +69,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 Можно сохранять данные IntelliTrace из следующих источников:
 
-- Сеанс IntelliTrace в Visual Studio 2017 Enterprise, Visual Studio 2015 Enterprise или предыдущих версий Visual Studio Ultimate.
+- Сеанс IntelliTrace в Visual Studio 2015 Enterprise или более поздних версий или более ранних версий Visual Studio Ultimate.
 
 - Сеанс тестирования в Microsoft Test Manager.
 
@@ -131,7 +131,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 - **События приложений SharePoint 2010 и SharePoint 2013**
 
-     Можно записать события профиля пользователя и подмножество событий унифицированной системы ведения журнала (ULS) для приложений SharePoint 2010 и 2013, выполняемых вне Visual Studio. Можно сохранить эти события в ITRACE-файле. Требуется Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, предыдущей версии Visual Studio Ultimate или [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) в **трассировки** режим.
+     Можно записать события профиля пользователя и подмножество событий унифицированной системы ведения журнала (ULS) для приложений SharePoint 2010 и 2013, выполняемых вне Visual Studio. Можно сохранить эти события в ITRACE-файле. Требуется Visual Studio Enterprise 2015 или более поздних версий, предыдущую версию Visual Studio Ultimate или [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) в **трассировки** режим.
 
      При открытии ITRACE-файла введите идентификатор корреляции SharePoint для поиска соответствующего веб-запроса, просмотра записанных событий и запуска отладки из указанного события. Если файл содержит необработанные исключения, можно выбрать идентификатор корреляции для запуска отладки исключения.
 
