@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696887"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525379"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка с использованием C# или Visual Basic с помощью отладчика Visual Studio
 
@@ -142,7 +142,7 @@ ms.locfileid: "56696887"
 
 ## <a name="navigate-code"></a>Навигация по коду
 
-Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, которые появились в Visual Studio 2017.
+Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, доступные с версии Visual Studio 2017.
 
 Если выполнение приостановлено в точке останова, наведите указатель мыши на инструкцию `c1.AddLast(20)` и дождитесь, пока появится зеленая кнопка **Выполнение до щелкнутого** ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png "RunToClick"), после чего нажмите кнопку **Выполнение до щелкнутого**.
 

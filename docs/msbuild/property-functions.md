@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623064"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737031"
 ---
 # <a name="property-functions"></a>Функции свойств
 
@@ -166,7 +166,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |Целое значение BitwiseXor(первое целое значение, второе целое значение)|Примените побитовый параметр `XOR` к первому и второму значению (первое ^ второе).|
 |Целое значение BitwiseNot(первое целое значение)|Примените побитовый параметр `NOT` (~первое значение).|
 |bool IsOsPlatform(строка platformString)|Указание того, является ли текущая платформа ОС `platformString`. `platformString` должен быть элементом <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|Значение true, если текущая операционная система — это система Unix.|
+|bool IsOSUnixLike()|Значение true, если текущая операционная система — это система Unix.|
 |Строка NormalizePath(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного пути и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе.|
 |Строка NormalizeDirectory(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного каталога и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе, а также наличие косой черты в конце.|
 |Строка EnsureTrailingSlash(строка путь)|Если в конце заданного пути нет косой черты, она добавляется. Если путь является пустой строкой, он не изменяется.|

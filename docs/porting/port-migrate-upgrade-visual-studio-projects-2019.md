@@ -2,7 +2,7 @@
 title: Перенос, миграция и обновление проектов Visual Studio 2019
 titleSuffix: ''
 description: Ссылка на сведения о поддержке в Visual Studio 2019 проектов, созданных в предыдущих версиях Visual Studio, и том, как Visual Studio определяет потребность в миграции проекта.
-ms.date: 12/06/2018
+ms.date: 02/26/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c5bf46f3626f5929f615437781495cd766f6ff4
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428795"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683363"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Ссылка на сведения о миграции и обновлении проекта для Visual Studio 2019
 
@@ -71,7 +71,7 @@ ms.locfileid: "57428795"
 | Silverlight | Проекты Silverlight не поддерживаются в Visual Studio 2019 (предварительная версия). Для поддержки приложений Silverlight продолжайте использовать Visual Studio 2015. |
 | SQL — Redgate | Компоненты Redgate SQL Change Automation Core (прежнее название ReadyRoll Core), SQL Prompt Core и SQL Search более не поставляются вместе с установщиком Visual Studio.<br/><br/>Вы можете по-прежнему использовать Visual Studio 2017, где эти возможности доступны. В Visual Studio 2019 (предварительная версия) вы можете выполнить обновление до платных продуктов SQL Change Automation и SQL Prompt, которые доступны в составе решения Redgate SQL Toolbelt.|
 | Службы SQL Server Reporting Services и службы SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | Поддержка этих типов проектов обеспечивается двумя расширениями из коллекции Visual Studio:  [Проекты моделирования Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) и [проекты служб Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Поддержка SSDT также включена в рабочую нагрузку хранения и обработки данных в Visual Studio 2019 (предварительная версия). |
-| Службы интеграции SQL Server (SSIS) | Поддержка Visual Studio 2019 (предварительная версия) доступна в рамках SQL Server Data Tools (SSDT). Дополнительные сведения см. в [блоге SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
+| Службы интеграции SQL Server (SSIS) | Вскоре ожидается поддержка предварительной версии Visual Studio 2019. Узнайте последние новости из [официального блога SSIS](https://blogs.msdn.microsoft.com/ssis/). |
 | Расширение окна теста | В Visual Studio 2019 были удалены некоторые API окон тестирования, которые были ранее помечены как общедоступные, но не были задокументированы официально. Эти API были помечены как "нерекомендуемые" в Visual Studio 2017, чтобы заранее предупредить группы обслуживания расширений. Насколько нам известно, с этими API была связана лишь незначительная часть расширений. Дополнительные сведения и обновления см. в [полном списке устаревших API для тестирования](https://github.com/Microsoft/vstest/issues/1830). Если это затрагивает вас, сообщите нам об этом в [сообществе разработчиков](https://developercommunity.visualstudio.com). |
 | Visual C++ | Visual Studio 2019 (предварительная версия) можно использовать для работы в проектах, которые созданы в более ранних версиях Visual Studio (до Visual Studio 2010). При первом открытии проекта вы можете выполнить обновление до последней версии компилятора и набора инструментов или продолжить использование исходную версию. В этом случае Visual Studio 2019 (предварительная версия) не будет вносить изменения в файл проекта и использует набор инструментов из более ранней установки Visual Studio для сборки проекта. Сохранение исходных параметров означает, что при необходимости вы по-прежнему можете открывать проект в исходной версии Visual Studio. Дополнительные сведения см. в разделе [Использование собственного многоплатформенного нацеливания в Visual Studio для сборки старых проектов](/cpp/porting/use-native-multi-targeting). |
 | Расширяемость Visual Studio/VSIX | Проекты с минимальной версией 14.0 или меньше обновляются до минимальной версии 15.0, что не позволяет открывать проекты в более ранних версиях Visual Studio. Чтобы открыть проект в более ранних версиях, задайте `$(VisualStudioVersion)` в качестве значения минимальной версии. См. также [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |

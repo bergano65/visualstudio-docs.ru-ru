@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716523"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526520"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка кода C++ с помощью отладчика Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "56716523"
 
 ## <a name="navigate-code"></a>Навигация по коду
 
-Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, которые появились в Visual Studio 2017.
+Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, доступные с версии Visual Studio 2017.
 
 Если выполнение приостановлено в точке останова, наведите указатель мыши на инструкцию `c1.push_back(20)` и дождитесь, пока появится зеленая кнопка **Выполнение до щелкнутого** ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png "RunToClick"), после чего нажмите кнопку **Выполнение до щелкнутого**.
 

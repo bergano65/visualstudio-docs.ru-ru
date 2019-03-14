@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930289"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525086"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>"Параметры", "Текстовый редактор", XML, "Прочее"
 
-Используйте страницу свойств **Прочее**, чтобы изменить параметры автозаполнения и схемы для редактора XML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Прочее**, разверните узел **Текстовый редактор**  >  **XML**  >  **Прочее**.
+Используйте страницу параметров **Прочее**, чтобы изменить параметры автозаполнения и схемы для редактора XML. Чтобы получить доступ к прочим параметрам XML, выберите **Сервис** > **Параметры** > **Текстовый редактор** > **XML**, а затем выберите **Прочее**.
 
 ## <a name="auto-insert"></a>Автоматическая вставка
 
@@ -53,9 +53,9 @@ ms.locfileid: "55930289"
 
 **Схемы**
 
-Определяет местоположение кэша схемы. Кнопка обзора (...) открывает текущее расположение кэша схем в новом окне. Расположение по умолчанию — *\<каталог установки Management Studio >* \Xml\Schemas.
+Определяет местоположение кэша схемы. Кнопка **обзора** открывает текущее расположение кэша схем в новом окне. Расположение по умолчанию — *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Создание кода](../code-generation-in-visual-studio.md)
+- [Параметры XML — форматирование](options-text-editor-xml-formatting.md)
+- [Средства XML в Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

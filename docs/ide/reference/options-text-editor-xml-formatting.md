@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943549"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525073"
 ---
 # <a name="options-text-editor-xml-formatting"></a>"Параметры", "Текстовый редактор", XML, "Форматирование"
 
-Используйте страницу свойств **Форматирование** для настройки форматирования элементов и атрибутов в документах XML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Форматирование**, разверните узел **Текстовый редактор**  >  **XML**  >  **Форматирование**.
+Используйте страницу параметров **Форматирование** для настройки форматирования элементов и атрибутов в документах XML. Чтобы получить доступ к параметрам форматирования XML, выберите **Сервис** > **Параметры** > **Текстовый редактор** > **XML**, а затем выберите **Форматирование**.
 
 ## <a name="attributes"></a>Атрибуты
 
@@ -30,7 +30,7 @@ ms.locfileid: "55943549"
 
 **Выравнивать атрибуты, чтобы каждый был на отдельной строке**
 
-Выравнивает второй и последующий атрибуты по вертикали в соответствии с отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты.
+Выравнивает второй и последующий атрибуты по вертикали в соответствии с отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ ms.locfileid: "55943549"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Создание кода](../code-generation-in-visual-studio.md)
+- [Параметры HTML — прочее](options-text-editor-xml-miscellaneous.md)
+- [Средства XML в Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
