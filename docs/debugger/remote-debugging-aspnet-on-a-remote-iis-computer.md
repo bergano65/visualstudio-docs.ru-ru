@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b97808da917fcbeefcd849dae601fe7410d84b7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702178"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526607"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio 2017
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -163,7 +163,7 @@ ms.locfileid: "56702178"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P).
+    > В Visual Studio 2017 и более поздних версий, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P).
 
 3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.

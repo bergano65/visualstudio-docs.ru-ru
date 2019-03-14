@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603265"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737060"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Как выполнить Расширение процесса сборки Visual Studio
 Процесс сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] определяется рядом *TARGETS*-файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — *Microsoft.Common.targets* — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. В этой статье описаны два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -60,7 +60,7 @@ ms.locfileid: "56603265"
 |`BeforeRebuild`, `AfterRebuild`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции перестроения. В *Microsoft.Common.targets* действует следующий порядок выполнения целевых объектов: `BeforeRebuild`, `Clean`, `Build`, а затем `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции очистки.|
 |`BeforePublish`, `AfterPublish`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции публикация.|
-|`BeforeResolveReference`, `AfterResolveReferences`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после разрешения ссылок на сборки.|
+|`BeforeResolveReferences`, `AfterResolveReferences`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после разрешения ссылок на сборки.|
 |`BeforeResGen`, `AfterResGen`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после создания ресурсов.|
 
 ## <a name="override-dependson-properties"></a>Переопределение свойств DependsOn

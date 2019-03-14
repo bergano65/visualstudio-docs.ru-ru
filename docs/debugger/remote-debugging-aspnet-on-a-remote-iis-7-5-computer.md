@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720037"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526714"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -184,7 +184,7 @@ ms.locfileid: "56720037"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P
+    > В Visual Studio 2017 и более поздних версий, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P
 
 3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
 4. Нажмите кнопку **Обновить**.

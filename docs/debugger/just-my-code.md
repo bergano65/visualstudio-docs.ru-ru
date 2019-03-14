@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223680"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526780"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Отладка пользовательского кода только мой код
 
@@ -115,7 +115,7 @@ ms.locfileid: "57223680"
 Для проектов C++, можно указать модули, исходные файлы и функции **стек вызовов** непользовательский код интерпретируется в окне, указав их в  *\*.natjmc* файлов. Эта настройка применима и к пошаговое выполнение, если вы используете последнюю версию компилятора кода (см. в разделе [C++ Just My Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Чтобы указать непользовательский код для всех пользователей компьютера с Visual Studio, добавьте файл *.natjmc* в папку *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
-- Чтобы указать непользовательский код для отдельного пользователя, добавьте файл *.natjmc* в папку *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
+- Чтобы указать код, не написанный пользователем для отдельного пользователя, добавьте *.natjmc* файл *документов %USERPROFILE%\My\\<Visual Studio version>\Visualizers* папки.
 
 Объект *.natjmc* файл является XML-файл со следующим синтаксисом:
 
@@ -165,7 +165,7 @@ ms.locfileid: "57223680"
 В проектах C++, можно указать функции, которые будут проходиться внесения их как встроенный код в  *\*.natstepfilter* файлов. Функции, перечисленные в  *\*.natstepfilter* файлы не зависят от параметров только мой код.
 
 - Чтобы указать встроенный код для всех локальных пользователей Visual Studio, добавьте *.natstepfilter* файл *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* папки.
-- Чтобы указать непользовательский код для отдельного пользователя, добавьте файл *.natstepfilter* в папку *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
+- Чтобы указать код, не написанный пользователем для отдельного пользователя, добавьте *.natstepfilter* файл *документов %USERPROFILE%\My\\<Visual Studio version>\Visualizers* папки.
 
 Объект *.natstepfilter* файл является XML-файл со следующим синтаксисом:
 
