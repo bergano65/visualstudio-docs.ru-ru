@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634270"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737016"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
 
@@ -30,7 +30,7 @@ ms.locfileid: "56634270"
 
 Как показано на следующем рисунке, визуализатор параллелизма может также обнаруживать подобные признаки в представлении использования ЦП, когда, несмотря на наличие нескольких потоков, приложение использует только одно логическое ядро.
 
-Дополнительные сведения см. в публикации "Performance Pattern 1: Identifying Lock Contention" (Шаблон производительности 1. Введение в конфликт блокировок) в блоге Хазима Шафи (Hazim Shafi) [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Средства параллельной производительности для Windows) на веб-сайте блогов MSDN.
+Дополнительные сведения см. в разделе "Запуск с помощью раздела проблем" в статье журнала MSDN Magazine [Производительность потоков — профилирование параллелизма на предмет состязания за ресурсы в Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Конфликты блокировок](../profiling/media/lockcontention_2.png "LockContention_2")
 

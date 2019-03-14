@@ -5,16 +5,16 @@ description: Идентификаторы рабочих нагрузок и к�
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c8341f268e0e238b7dcdc13d3d79810e1f52f0d7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324405"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57554616"
 ---
 ## <a name="azure-development-build-tools"></a>Средства сборки и разработки Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "57324405"
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Обязательно
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 15.7.27617.1 | Обязательно
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
@@ -226,7 +226,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты 
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.8.27825.0 | Обязательно
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Обязательно
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 15.8.27705.0 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.8.27924.0 | Рекомендованное
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
@@ -237,6 +237,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 
@@ -256,8 +257,8 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространя�
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Обязательно
 Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательно
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 15.7.27625.0 | Рекомендованное
-Microsoft.VisualStudio.Component.VC.CMake.Project | Инструменты Visual C++ для CMake | 15.8.27906.1 | Рекомендованное
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.8.27924.0 | Рекомендованное
+Microsoft.VisualStudio.Component.VC.CMake.Project | Инструменты Visual C++ для CMake | 15.9.28307.102 | Рекомендованное
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Рекомендованное
 Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
@@ -278,6 +279,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP для C++ | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Optional

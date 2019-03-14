@@ -2,34 +2,37 @@
 title: Обновление Visual Studio
 titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 04/23/2018
+ms.date: 03/09/2019
 ms.custom: seodec18
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 helpviewer_keywords:
-- update Visual Studio
-- change visual studio
-- changing Visual Studio
+- update [Visual Studio]
+- change [Visual Studio]
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e972c86f4a3dfecdcd36d2aec768e0ea3b0065
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953962"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737009"
 ---
-# <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
+# <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
-Рекомендуем выполнить обновление до [последней версии](/visualstudio/releasenotes/vs2017-relnotes) Visual Studio 2017, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+::: moniker range="vs-2017"
 
-И если вы хотите попробовать компонент до его выпуска, вы можете скачать [предварительную версию](/visualstudio/releasenotes/vs2017-preview-relnotes).
+Рекомендуем выполнить обновление до [последней версии](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+
+И если вы хотите опробовать следующую версию, вы можете также скачать [релиз-кандидат](//visualstudio/releases/2019/release-notes/) Visual Studio 2019.
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
-
+>
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Обновление Visual Studio для Mac](/visualstudio/mac/update).
 
@@ -43,11 +46,11 @@ ms.locfileid: "55953962"
 
 1. Сохраните все изменения.
 
-2. Выберите флаг уведомления, чтобы открыть центр **уведомлений**, а затем выберите уведомление, которое вы хотите установить.
+1. Выберите флаг уведомления, чтобы открыть центр **уведомлений**, а затем выберите уведомление, которое вы хотите установить.
 
    ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/vs-install-notifications-hub-15dot6.png "Центр уведомлений в Visual Studio 2017")
 
-3. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
+1. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
     ![Обновление Visual Studio 2017 с помощью диалогового окна "Обновление" в центре уведомлений](media/vs-update-now-from-notifications-hub.png "Диалоговое окно \"Обновление\" в центре уведомлений в Visual Studio")
 
@@ -66,11 +69,11 @@ ms.locfileid: "55953962"
 
 1. Сохраните все изменения.
 
-2. Выберите **Справка** > **Проверка обновлений**.
+1. Выберите **Справка** > **Проверка обновлений**.
 
      ![Новое меню "Справка" в Visual Studio версии 15.6](media/vs-help-menu-check-for-updates.png "Новое меню \"Справка\" в Visual Studio версии 15.6")
 
-3. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
+1. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
    Как описано в предыдущем разделе, Visual Studio перезагружается после успешного завершения обновления.
 
@@ -83,14 +86,14 @@ ms.locfileid: "55953962"
 
 1. Сохраните все изменения.
 
-2. Запустите установщик. Прежде чем продолжить, может потребоваться обновить Visual Studio Installer.
+1. Запустите установщик. Прежде чем продолжить, может потребоваться обновить Visual Studio Installer.
 
    > [!NOTE]
    > На компьютере под управлением Windows 10 установщик можно найти в списке по букве **V** (**Установщик Visual Studio**) или по букве **M** (**Установщик Microsoft Visual Studio**).
 
-3. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
+1. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
 
-4. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
+1. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
 
    Чтобы установить обновления, нажмите кнопку **Обновить**.
 
@@ -110,11 +113,11 @@ ms.locfileid: "55953962"
 
    ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-hub.png "Центр уведомлений в Visual Studio")
 
-2. Выберите уведомление **Доступно обновление Visual Studio**, чтобы открыть диалоговое окно **Расширения и обновления**.
+1. Выберите уведомление **Доступно обновление Visual Studio**, чтобы открыть диалоговое окно **Расширения и обновления**.
 
    ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-hub-select.png "Центр уведомлений в Visual Studio")
 
-3. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
+1. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
 
    ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно \"Расширения и обновления\" в Visual Studio")
 
@@ -141,9 +144,9 @@ ms.locfileid: "55953962"
    > [!NOTE]
    > На компьютере под управлением Windows 10 установщик можно найти в списке по букве **V** (**Установщик Visual Studio**) или по букве **M** (**Установщик Microsoft Visual Studio**).
 
-2. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
+1. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
 
-3. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
+1. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
 
    Чтобы установить обновления, нажмите кнопку **Обновить**.
 
@@ -156,3 +159,47 @@ ms.locfileid: "55953962"
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
 * [Обновление Visual Studio для Mac](/visualstudio/mac/update)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Рекомендуем выполнить обновление до [последней версии](/visualstudio/releases/2019/release-notes/) Visual Studio 2019, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+
+> [!IMPORTANT]
+> Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Обновление Visual Studio для Mac](/visualstudio/mac/update).
+
+## <a name="update-visual-studio-2019"></a>Обновление Visual Studio 2019
+
+Вот как можно использовать Visual Studio Installer для обновления Visual&nbsp;Studio&nbsp;2019&nbsp; предварительной версии или Visual&nbsp;Studio&nbsp;2019&nbsp;, релиз-кандидат.
+
+1. Запустите установщик.
+
+     ![Откройте Visual Studio Installer](media/vs2019-visual-studio-installer.png "Откройте Visual Studio Installer")
+
+   Для продолжения работы может потребоваться обновление самого установщика. Если это так, следуйте инструкциям на экране.
+
+1. В установщике найдите установленный у вас выпуск Visual Studio.
+
+   Например, если вы ранее установили Visual&nbsp;Studio Community&nbsp;2019&nbsp;, релиз-кандидат, и для него есть обновление, в установщике будет отображаться сообщение **Доступно обновление**.
+
+     ![Выберите выпуск Visual Studio 2019, который вы хотите обновить](media/vs2019-update-visual-studio-community-rc.png "Выберите выпуск Visual Studio 2019, который вы хотите обновить")
+
+1. Чтобы установить обновления, нажмите кнопку **Обновить**.
+
+    ![Нажмите кнопку "Обновить", чтобы установить обновления](media/vs2019-choose-update-visual-studio-community-rc.png "Нажмите кнопку \"Обновить\", чтобы установить обновления")
+
+1. После завершения обновления выберите **Запуск** для запуска Visual Studio.
+
+    ![Выберите "Запуск", чтобы запустить Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Выберите \"Запуск\", чтобы запустить Visual Studio")
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+## <a name="see-also"></a>См. также
+
+* [Обновление Visual Studio для Mac](/visualstudio/mac/update)
+
+::: moniker-end

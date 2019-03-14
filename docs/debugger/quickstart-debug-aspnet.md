@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683601"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525405"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Краткое руководство. Отладка в ASP.NET с помощью отладчика Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "56683601"
 
 ## <a name="navigate-code"></a>Навигация по коду
 
-Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, которые появились в Visual Studio 2017.
+Чтобы продолжить работу отладчика, можно использовать различные команды. Здесь описываются полезные новые команды для навигации по коду, доступные с версии Visual Studio 2017.
 
 Если выполнение приостановлено в точке останова, наведите указатель мыши на инструкцию `return c2` и дождитесь, пока появится зеленая кнопка **Выполнение до щелкнутого** ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png), после чего нажмите кнопку **Выполнение до щелкнутого**.
 
