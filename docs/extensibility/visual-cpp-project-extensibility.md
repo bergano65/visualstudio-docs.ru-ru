@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323592"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868147"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
@@ -55,7 +55,7 @@ ms.locfileid: "57323592"
 
 Эти значения свойства определяют имена папок в разделе `$(VCTargetsPath)` корневую папку:
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Тип приложения* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 настроек &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Платформ* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158настроек<spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252настроекплатформ</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Тип приложения* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Платформ* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;настроекплатформ\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Используется, когда `$(ApplicationType)` пусто, для проектов Windows Desktop) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Добавить новый набор инструментов платформы
 
@@ -215,7 +215,7 @@ ms.locfileid: "57323592"
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Задачи MSBuild для использования в целевых объектов набора инструментов
 
-Чтобы вызвать средство собственно сборку, целевой объект должен вызвать задачу MSBuild. Что представляет собой простую [задача Exec](../msbuild/exec-task.md) , позволяющий указать командную строку для запуска. Тем не менее средства сборки, обычно имеют множество параметров, входных данных. и выходные данные для отслеживания добавочных сборок, поэтому более разумно иметь специальные задачи для них. Например `CL` задач преобразует свойства MSBuild в CL.exe коммутаторов, записывает их в файл ответов и вызывает CL.exe. Он также отслеживает все входные и выходные файлы для более поздней версии инкрементные сборки. Дополнительные сведения см. в разделе [инкрементное построение и проверка наличия обновлений](#incremental-build-and-up-to-date-check).
+Чтобы вызвать средство собственно сборку, целевой объект должен вызвать задачу MSBuild. Что представляет собой простую [задача Exec](../msbuild/exec-task.md) , позволяющий указать командную строку для запуска. Тем не менее средства сборки, обычно имеют множество параметров, входных данных. и выходные данные для отслеживания добавочных сборок, поэтому более разумно иметь специальные задачи для них. Например `CL` задач преобразует свойства MSBuild в CL.exe коммутаторов, записывает их в файл ответов и вызывает CL.exe. Он также отслеживает все входные и выходные файлы для более поздней версии инкрементные сборки. Дополнительные сведения см. в разделе [инкрементные сборки и проверки наличия обновлений](#incremental-builds-and-up-to-date-checks).
 
 Microsoft.Cpp.Common.Tasks.dll реализует эти задачи:
 
@@ -460,7 +460,7 @@ CPS поддерживает другие значения для типа ко�
 
 `PageTemplate` Атрибут определяет, как правило, отображается в **страницы свойств** диалоговое окно. Атрибут может иметь одно из следующих значений:
 
-| Атрибут | Описание |
+| Атрибут | Описание: |
 |------------| - |
 | `generic` | Все свойства отображаются на одной странице под заголовками по категориям<br/>Правила могут быть отображены для `Project` и `PropertySheet` контекстов, но не `File`.<br/><br/> Пример `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Категории отображаются в виде вложенных.<br/>Правила могут быть отображены во всех контекстах: `Project`, `PropertySheet` и `File`.<br/>Правило является видимым в свойствах проекта, только в том случае, если проект не содержит элемента с `ItemType` определенные в `Rule.DataSource`, если имя правила не включена в `ProjectTools` группу элементов.<br/><br/>Пример `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
