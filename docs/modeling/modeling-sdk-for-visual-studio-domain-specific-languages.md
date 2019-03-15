@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942782"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867452"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 
@@ -40,7 +40,7 @@ MSDK позволяет быстро разработать модель в ви
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Связанные записи в блогах](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Связанные записи в блогах](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 Руководство по передовым технологиям и устранению неполадок, см. в статье [форум по Visual Studio DSL и расширяемость средств моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).
 
@@ -69,10 +69,10 @@ MSDK позволяет быстро разработать модель в ви
 
  [Создание доменного языка на основе WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Практическое руководство. Расширение конструктора доменного языка](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Практическое руководство. Расширение конструктора предметно-ориентированных языков](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Выпуски Visual Studio, поддерживаемые пакетом SDK визуализации и моделирования](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Практическое руководство. Перенос доменного языка в новой версии](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Практическое руководство. Перенос предметно-ориентированного языка в новую версию](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Справка по API SDK моделирования для Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

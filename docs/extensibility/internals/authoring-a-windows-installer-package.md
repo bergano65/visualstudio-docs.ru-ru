@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635206"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871608"
 ---
 # <a name="author-a-windows-installer-package"></a>Создать пакет установщика Windows
 Диски с данными модели установщика Windows. Вместо того чтобы писать процедурный сценарий для копирования файлов и записи реестра, например, создаваемых строк и столбцов в таблицах базы данных, которые содержат данные файлов и реестра.
@@ -47,7 +47,7 @@ ms.locfileid: "56635206"
 
    Набор инструментов Windows Installer XML (WiX) создает пакеты установщика Windows из исходных файлов XML. Набор средств WiX является проектом открытым кодом Майкрософт. Вы можете скачать исходный код и исполняемые файлы из [набора средств Wix](http://sourceforge.net/projects/wix).
 
-   Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], см. в разделе [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], см. в разделе [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>См. также
 - [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

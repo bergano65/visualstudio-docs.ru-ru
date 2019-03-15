@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223498"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872438"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 
@@ -187,7 +187,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 Убедитесь, что можно добавить эти свойства перед импортом файла Microsoft.Cpp.targets. Можно выбрать наборы конкретное правило или создать настраиваемый набор правил или использовать набор правил по умолчанию, который включает в себя другие PREfast проверки.
 
-C++ Core Checker можно запустить только на указанные файлы, используя тот же подход, как [описанные ранее](#coreckeck_per_file), но с помощью файлов MSBuild. Переменные среды можно задать с помощью `BuildMacro` элемента:
+C++ Core Checker можно запустить только на указанные файлы, используя тот же подход, как [описанные ранее](#corecheck_per_file), но с помощью файлов MSBuild. Переменные среды можно задать с помощью `BuildMacro` элемента:
 
 ```xml
 <ItemGroup>

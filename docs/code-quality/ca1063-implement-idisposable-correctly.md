@@ -1,6 +1,6 @@
 ---
 title: CA1063. Правильно реализуйте IDisposable
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945759"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868318"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063. Правильно реализуйте IDisposable
 
@@ -52,7 +52,9 @@ ms.locfileid: "55945759"
 
 Нарушение любого из этих шаблонов активирует предупреждение ca1063 следует.
 
-Каждый незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dipose(true) и метод завершения должны вызывать Dispose(false). При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged) и [удаляемости](/dotnet/standard/design-guidelines/dispose-pattern).
+Каждый незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс необходимо предоставить собственный `protected virtual void Dispose(bool)` метод. `Dispose()` необходимо вызвать `Dipose(true)`, а также вызывать метод завершения `Dispose(false)`. При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс, необходимо определить `Dispose(bool)` и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged) и [удаляемости](/dotnet/standard/design-guidelines/dispose-pattern).
+
+По умолчанию это правило считывает только типы, видимые извне, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -83,6 +85,16 @@ ms.locfileid: "55945759"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
 Для этого правила отключать вывод предупреждений не следует.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Пример псевдокода
 

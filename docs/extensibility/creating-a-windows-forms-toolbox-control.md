@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687891"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873014"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание элемента управления панели элементов Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (VS SDK) позволяет создать элемент управления, который автоматически добавляется **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления с простой счетчик, который можно передавать другим пользователям.
@@ -206,7 +206,7 @@ ms.locfileid: "56687891"
     Сбрасывает счетчик **0**.
 
 ## <a name="next-steps"></a>Следующие шаги
-При построении **элементов** элемент управления, Visual Studio создает файл с именем *ProjectName.vsix* в папке \bin\debug\ проекта. Можно развернуть элемент управления, отправив *.vsix* файла в сети или на веб-сайт. Когда пользователь открывает *.vsix* файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, вы можете отправить *.vsix* файл [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) , чтобы пользователи могли его найти, перейдя в **средства**  >   **Расширения и обновления** диалоговое окно.
+При построении **элементов** элемент управления, Visual Studio создает файл с именем *ProjectName.vsix* в папке \bin\debug\ проекта. Можно развернуть элемент управления, отправив *.vsix* файла в сети или на веб-сайт. Когда пользователь открывает *.vsix* файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, вы можете отправить *.vsix* файл [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , чтобы пользователи могли его найти, перейдя в **средства**  >   **Расширения и обновления** диалоговое окно.
 
 ## <a name="see-also"></a>См. также
 - [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

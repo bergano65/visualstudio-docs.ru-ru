@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913188"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872392"
 ---
 # <a name="improve-performance-for-code-maps"></a>Повысить производительность для карты кода
 
 При создании карты кода в первый раз Visual Studio индексирует все найденные зависимости. Этот процесс может занять некоторое время, особенно для больших решений, но улучшает производительность более поздней версии. При изменении кода Visual Studio повторно индексирует только обновленный код. Чтобы свести к минимуму время, необходимое для отрисовки карты, рассмотрите следующие рекомендации:
 
-- [Включайте в карту только те зависимости, которые вас интересуют.](#create-a-code-map-to-see-specific-dependencies)
+- Включайте в карту только те зависимости, которые вас интересуют.
 
 - Прежде чем создавать карту для всего решения, сократите область решения.
 

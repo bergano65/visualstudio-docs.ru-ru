@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8555067dc86c610c370568ce9e0c7fd13cc5ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709750"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873445"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 Несколько вариантов поддержки доступны для пользователей с вопросами о том, как расширения Visual Studio интегрированной среды разработки (IDE).
@@ -36,7 +36,7 @@ ms.locfileid: "56709750"
  [Форумы MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) предоставляют еще один способ общаться с коллегами и экспертами. Графический интерфейс (UI) из форумов позволяет сделать их проще в использовании, чем группы новостей. [Форум расширяемости Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) хорошо подходит для запуска для поиска ответов на вопросы расширяемости. Всегда поиска, прежде чем задать вопрос, так как кто-то другой могут уже ли такой вопрос.
 
 ### <a name="visual-studio-gallery"></a>Галерея Visual Studio
- [Коллекции Visual Studio](https://marketplace.visualstudio.com/) — место для расширения и примеры кода. Можно найти средства, улучшить производительность и пользователя опыт работы с Visual Studio, примеры приложений, которые показывают, как использовать пакеты VSPackage и Managed Extensibility Framework (MEF) и другие виды примеры.
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — место для расширения и примеры кода. Можно найти средства, улучшить производительность и пользователя опыт работы с Visual Studio, примеры приложений, которые показывают, как использовать пакеты VSPackage и Managed Extensibility Framework (MEF) и другие виды примеры.
 
 ### <a name="visual-studio-sdk-samples"></a>Примеры Visual Studio SDK
 
@@ -53,16 +53,18 @@ ms.locfileid: "56709750"
 ## <a name="paid-support"></a>Платной поддержки
 
 ### <a name="developer-tools-support"></a>Поддержка средств разработчика
- Также можно приобрести поддержку. Широкий набор предложений поддержки доступны в категории средств разработчика в [справки (Майкрософт) и центры поддержки](http://go.microsoft.com/fwlink/?LinkID=82383).
 
- Клиенты, желающие использовать [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] для разработки сложных пакетов можно купить услугу договор на техническую поддержку уровня Premier с корпорацией Майкрософт. Дополнительные сведения см. в разделе [поддержка Microsoft Premier](http://go.microsoft.com/fwlink/?LinkID=76660). Для небольших компаний [преимущества поддержки партнеров](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) может быть Заманчивой альтернативой традиционных предложение поддержки уровня Premier.
+Также можно приобрести поддержку. Широкий набор предложений поддержки доступны в категории средств разработчика в [справки (Майкрософт) и центры поддержки](http://go.microsoft.com/fwlink/?LinkID=82383).
+
+Клиенты, желающие использовать [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] для разработки сложных пакетов можно купить услугу договор на техническую поддержку уровня Premier с корпорацией Майкрософт. Дополнительные сведения см. в разделе [поддержка Microsoft Premier](https://support.microsoft.com/premier). Для небольших компаний [преимущества поддержки партнеров](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) может быть Заманчивой альтернативой традиционных предложение поддержки уровня Premier.
 
 > [!NOTE]
->  План поддержки Standard не может использоваться для консультации или для получения рекомендаций.
+> План поддержки Standard не может использоваться для консультации или для получения рекомендаций.
 
- Можно отправить вопросы о предложениях поддержки Premier в сочетании с программе VSIP [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Можно отправить вопросы о новой программе Partner Advantage [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
+Можно отправить вопросы о предложениях поддержки Premier в сочетании с программе VSIP [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Можно отправить вопросы о новой программе Partner Advantage [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
 
- Сведения о поддержки отдельных запросов можно найти на [отдельных запросов поддержки](http://go.microsoft.com/fwlink/?LinkID=82385).
+Сведения о поддержки отдельных запросов можно найти на [отдельных запросов поддержки](http://go.microsoft.com/fwlink/?LinkID=82385).
 
 ## <a name="see-also"></a>См. также
+
 - [Обращайтесь к нам](../ide/talk-to-us.md)

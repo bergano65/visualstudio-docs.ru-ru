@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618150"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870432"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов, см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.
 
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Элементы проекта SharePoint
  Узлы в проекте SharePoint называются *элементами SharePoint*. Элементы SharePoint также могут содержать один или несколько вложенных файлов, называемых *файлами элементов SharePoint*, например файлы конфигурации [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , формы ASPX и другие.

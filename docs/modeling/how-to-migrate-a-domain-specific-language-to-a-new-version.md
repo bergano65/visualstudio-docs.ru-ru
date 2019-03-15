@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Перенос предметно-ориентированного языка в новую версию
+title: Практическое руководство. Перенос предметно-ориентированного языка в новую версию
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc7694ca7e2b000392aa18dcd45284560ed84ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924426"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869248"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Как выполнить  Перенос предметно-ориентированного языка в новую версию
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос предметно-ориентированного языка в новую версию
 Вы можете перенести проекты, определение и использование предметно ориентированного языка для [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] из версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Средство миграции предоставляется как часть [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Средство преобразует проекты и решения, использующих или определите средства доменного языка Visual Studio.
@@ -87,4 +87,4 @@ ms.locfileid: "55924426"
 
 ## <a name="see-also"></a>См. также
 
-- [Связанные записи в блогах](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [Связанные записи в блогах](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
