@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924475"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873672"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 
@@ -88,7 +88,7 @@ ms.locfileid: "55924475"
 **См. в разделе:**
 
 -   [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)
--   [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
+-   [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)
 -   [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Предметно-ориентированный язык
@@ -97,7 +97,7 @@ ms.locfileid: "55924475"
 **Типичные способы применения:**
 
 -   Создание или настройка частей приложения. Требуется разработка нотации и инструментов. Результат может быть лучше соответствовать вашему домену, чем настройка языка UML.
--   Крупные проекты или линейки продуктов, когда инвестиции в разработку языка DSL и его инструментов окупаются за счет его использования сразу в нескольких проектах.
+-   Крупные проекты или линейки продуктов, когда инвестиции в разработку предметно-ориентированного языка и его инструментов окупаются за счет его использования сразу в нескольких проектах.
 
 **См. в разделе:**
 
@@ -109,5 +109,5 @@ ms.locfileid: "55924475"
 
 ## <a name="see-also"></a>См. также
 
-- [Новые возможности](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Новые возможности моделирования в Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps и управление жизненным циклом приложений](/azure/devops/user-guide/devops-alm-overview)

@@ -1,6 +1,6 @@
 ---
 title: CA1036. Переопределите методы в сопоставимых типах
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab36be0233ad83c5f1ec23b3511937eda07940c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12b00c202373310b04021a46e74af2af7e10d535
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953000"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868882"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036. Переопределите методы в сопоставимых типах
 
@@ -31,7 +31,10 @@ ms.locfileid: "55953000"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип реализует <xref:System.IComparable?displayProperty=fullName> интерфейс и не переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> или не перегружает языковой оператор равенства, неравенства, менее- или больше — чем. Правило сообщает о нарушениях, если тип наследует только реализацию интерфейса.
+
+Тип реализует <xref:System.IComparable?displayProperty=fullName> интерфейс и не переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> или не перегружает языковой оператор равенства, неравенства, менее- или больше — чем. Правило сообщает о нарушениях, если тип наследует только реализацию интерфейса.
+
+По умолчанию это правило считывает только открытые и защищенные типы, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -42,11 +45,8 @@ ms.locfileid: "55953000"
 Чтобы устранить нарушение этого правила, переопределите <xref:System.Object.Equals%2A>. Если язык программирования поддерживает перегрузку операторов, предоставьте следующие операторы:
 
 - op_Equality
-
 - op_Inequality
-
 - op_LessThan
-
 - op_GreaterThan
 
 В C# токены, которые используются для представления этих операторов используются следующие:
@@ -59,17 +59,28 @@ ms.locfileid: "55953000"
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из правила CA1036 при нарушение причиной является отсутствие операторов и язык программирования не поддерживает перегрузку операторов, как в случае с Visual Basic. Это также можно отключить предупреждение из этого правила, при его срабатывании на операторы равенства, отличные от функции op_Equality, если выяснится, что реализация операторов не имеет смысла в контексте приложения. Тем не менее, следует всегда через функции op_Equality и оператора ==, если переопределяет Object.Equals.
 
-## <a name="example"></a>Пример
- Следующий пример содержит тип, который правильно реализует <xref:System.IComparable>. Комментарии к коду определить методы, которые удовлетворяют различные правила, которые связаны с <xref:System.Object.Equals%2A> и <xref:System.IComparable> интерфейс.
+Его можно безопасно подавить предупреждение из правила CA1036 при нарушение причиной является отсутствие операторов и язык программирования не поддерживает перегрузку операторов, как в случае с Visual Basic. Если выяснилось, что реализация операторов не имеет смысла в контексте приложения, его можно безопасно подавить предупреждение из этого правила, при его срабатывании на равенство операторов, отличных от функции op_Equality. Тем не менее, всегда следует переопределить функции op_Equality и оператора ==, если переопределить <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
- [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+## <a name="configurability"></a>Возможность настройки
 
-## <a name="example"></a>Пример
- Следующее приложение проверяет поведение <xref:System.IComparable> реализацию, которая была показана ранее.
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
- [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
+```
+dotnet_code_quality.ca1036.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Примеры
+
+Следующий код содержит тип, который правильно реализует <xref:System.IComparable>. Комментарии к коду определить методы, которые удовлетворяют различные правила, которые связаны с <xref:System.Object.Equals%2A> и <xref:System.IComparable> интерфейс.
+
+[!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+
+Следующий код приложения проверяет поведение <xref:System.IComparable> реализацию, которая была показана ранее.
+
+[!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>См. также
 

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634829"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869322"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Включение доступа к коду VBA, чтобы создать или открыть Visual Studio Tools для системы Microsoft Office проекта
 
@@ -40,8 +40,6 @@ ms.locfileid: "56634829"
  Важно отметить, что отключение доступа к системе проектов Visual Basic для приложений само по себе не защитит вас от вирусов, оно просто помогает предотвратить распространение некоторых вирусов в другие документы в случае заражения компьютера макровирусом. Эта возможность отключена по умолчанию, что обеспечивает дополнительный уровень защиты компьютера. Однако ее включение не делает ваш компьютер более подверженным атакам, если вы выполняете рекомендации по обеспечению безопасности.
 
  Лучший способ защиты от макровирусов Office — выполнение приложений Office с высоким или очень высоким уровнем безопасности, доверять макросам только из проверенных и известных источников и будьте в курсе обновлений и антивирусных программ.
-
- Дополнительные сведения о защите компьютера от вирусов и другого вредоносного кода, см. в разделе [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Можно включить или отключить параметр **Доверять доступ к Visual Basic Project** вручную.
 

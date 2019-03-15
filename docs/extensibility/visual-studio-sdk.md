@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be0d7246af3b43d76ee4531a426dab0af63e2aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711726"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867356"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio поможет вам расширить возможности Visual Studio или интегрировать новые возможности в Visual Studio. Вы можете предоставлять свои расширения другим пользователям, а также в Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -54,7 +54,7 @@ ms.locfileid: "56711726"
  Воспользоваться преимуществами [изображения каталог и служба](../extensibility/image-service-and-catalog.md) управления отличный образами и поддержку высокое разрешение и темы.
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>Найти и установить существующие расширения Visual Studio
- Вы найдете расширений Visual Studio в **расширения и обновления** диалоговое окно на **средства** меню. Дополнительные сведения см. в разделе [поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Также можно найти расширения в [Visual Studio marketplace](https://marketplace.visualstudio.com/)
+ Вы найдете расширений Visual Studio в **расширения и обновления** диалоговое окно на **средства** меню. Дополнительные сведения см. в разделе [поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Также можно найти расширения в [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
 ## <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
  Вы найдете ссылку на API пакета SDK для Visual Studio по [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316773"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867986"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Создание элемента управления панели элементов WPF
 Шаблон элемента управления панели элементов WPF (Windows Presentation Framework) позволяет создавать элементы управления WPF, которые автоматически добавляются в **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания **элементов** элемента управления, который можно передавать другим пользователям.
@@ -97,4 +97,4 @@ ms.locfileid: "56316773"
 
 3. Отправка *.vsix* файла в сети или на веб-сайт.
 
-    Если вы отправите файл [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, другие пользователи могли использовать **средства** > **расширения и обновления** в Visual Studio для поиска элемента управления Online и установите его.
+    Если вы отправите файл [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, другие пользователи могли использовать **средства** > **расширения и обновления** в Visual Studio для поиска Управление через Интернет и установите его.

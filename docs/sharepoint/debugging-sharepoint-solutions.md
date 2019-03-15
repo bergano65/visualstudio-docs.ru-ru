@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640237"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873114"
 ---
 # <a name="debug-sharepoint-solutions"></a>Отладка решений SharePoint
   Можно отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. Ниже описаны способы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Включение отладки](#EnableDebug)
+-   [Включить отладку](#enable-debugging)
 
--   [Отладку по клавише F5 и процесс развертывания](#Deployment)
+-   [Процесс отладки и развертывания F5](#f5-debug-and-deployment-process)
 
--   [Функции проекта SharePoint](#Features)
+-   [Функции проекта SharePoint](#sharepoint-project-features)
 
--   [Отладка рабочих процессов](#Workflow)
+-   [Отладка рабочих процессов](#debug-workflows)
 
--   [Отладка приемников событий компонентов](#FeatureEvents)
+-   [Отладка приемников событий компонентов](#debug-feature-event-receivers)
 
--   [Включение расширенные сведения об отладке](#EnhancedDebug)
+-   [Включить ehanced отладочную информацию](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Включить отладку
  При первом отладке решения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], диалоговое окно предупреждения, что файл web.config настроен для включения отладки. (Файл web.config создается при установке сервера SharePoint. Дополнительные сведения см. в разделе [работа с файлами Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Диалоговое окно предоставляет возможность либо запустить проект без отладки или изменения файла web.config для включения отладки. Если выбрать первый вариант, проект выполняется обычным образом. Если выбрать второй вариант, параметры в файле web.config изменяются следующим образом:
@@ -137,7 +137,7 @@ ms.locfileid: "56640237"
 
  Чтобы отключить автоматическую активацию компонента в SharePoint и выполнять отладку из приемников событий компонентов, установите для параметра проекта **активная конфигурация развертывания** свойства **без активации** перед отладкой. Затем, после начала отладки вашего приложения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], вручную активируйте компонент в SharePoint. Чтобы активировать функцию, откройте **действия сайта** в SharePoint, в меню выберите **параметры сайта**, выберите **управление функциями сайта** связать, а затем щелкните **Активировать** кнопку рядом с компонентом, чтобы продолжить отладку в обычном режиме.
 
-## <a name="enable-enhanced-debug-information"></a>Включение расширенного отладочной информации
+## <a name="enable-enhanced-debugging-information"></a>Включить расширенные сведения об отладке
  Из-за сложных взаимодействий между [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процесса (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] хост-процессе SharePoint (*vssphost4.exe*), SharePoint и на уровне WCF, диагностировать ошибки, возникающие во время построение, развертывание и так далее может быть сложной задачей. Чтобы облегчить эту задачу, вы можете включить расширенные сведения об отладке. Чтобы сделать это, перейдите к следующему разделу реестра в реестре Windows:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

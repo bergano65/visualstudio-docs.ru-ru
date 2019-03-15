@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92db48197791bab4b5f364ee6d2cd0e948e2a5f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c56f44f6898c7a99a7024906b5c38f521a169c0f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684589"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871302"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
-Можно использовать шаблон проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайта.
+Можно использовать шаблон проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайта.
 
  Развертывание VSIX поддерживает пакеты VSPackage, сборок, MEF компоненты, шаблоны проектов, шаблоны элементов, элементов управления и настраиваемые типы расширений.
 

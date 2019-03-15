@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642837"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867568"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Упаковка и развертывание решений SharePoint
   Как правило решения SharePoint развертывается на сервере SharePoint с помощью файла пакета (.wsp) решения. Visual Studio можно использовать для организации элементов проекта SharePoint в функции и создание пакета для развертывания компоненты SharePoint.
 
  В данном разделе содержатся следующие сведения:
 
--   [Создание компонентов и пакетов](#Creating)
+-   [Создание компонентов и пакетов](#create-features-and-packages)
 
--   [Компонентов и пакетов средство поддержки](#Tools)
+-   [Функции и средства поддержки упаковки](#feature-and-packaging-tool-support)
 
--   [Развертывание решений SharePoint](#Deploying)
+-   [Развертывание решений SharePoint](#deploy-sharepoint-solutions)
 
--   [Развертывание файлов в решениях SharePoint](#DeployingFiles)
+-   [Развертывание файлов решения SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Создание компонентов и пакетов
  Visual Studio можно использовать для группировки связанных элементов SharePoint в *функция*. Например это функция для определения списка контактов может включать экземпляр списка и определение списка. Эти два элемента можно объединить в один компонент для целей развертывания. Дополнительные сведения о функциях см. в разделе [стандартный блок: Функции](http://go.microsoft.com/fwlink/?LinkID=169183).

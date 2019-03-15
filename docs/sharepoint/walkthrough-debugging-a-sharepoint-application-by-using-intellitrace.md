@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875375"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868263"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
 
@@ -33,15 +33,15 @@ ms.locfileid: "54875375"
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
-- [Создание приемника компонента](#BKMK_CreateReceiver)
+- [Создание приемника компонента](#create-a-feature-receiver)
 
-- [Добавление кода в приемник компонента](#BKMK_AddCode)
+- [Добавление кода в приемник компонента](#add-code-to-the-feature-receiver)
 
-- [Тестирование проекта](#BKMK_Test1)
+- [Тестирование проекта](#test-the-project)
 
-- [Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Отладка и исправление решения SharePoint](#BKMK_DebugSolution)
+- [Отладка и исправление решения SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

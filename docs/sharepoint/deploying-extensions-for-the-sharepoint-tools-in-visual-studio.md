@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876269"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868063"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
 Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX является сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакетов VSIX *.vsix* расширения.
 
-После создания пакета VSIX, другие пользователи могут запускать VSIX-файл, чтобы установить расширение. Когда пользователь устанавливает расширение, все файлы устанавливаются в папку %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Чтобы развернуть расширение, можно отправить пакет VSIX для [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, или можно распространить пакет с заказчиками каким-либо образом, как размещение пакета в общую сетевую папку или другие веб-сайта.
+После создания пакета VSIX, другие пользователи могут запускать VSIX-файл, чтобы установить расширение. Когда пользователь устанавливает расширение, все файлы устанавливаются в папку %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Чтобы развернуть расширение, можно отправить пакет VSIX для [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, или можно распространить пакет с заказчиками каким-либо образом, как размещение пакета в общую сетевую папку или других веб- веб-узел.
 
-Дополнительные сведения о создании пакетов VSIX и их развертывания в [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847), см. в разделе [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+Дополнительные сведения о создании пакетов VSIX и их развертывания в [Visual Studio Marketplace](https://marketplace.visualstudio.com/), см. в разделе [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Пакет VSIX можно создать с помощью **проект VSIX** шаблона в Visual Studio, или можно создать пакет VSIX вручную.
 

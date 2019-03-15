@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700150"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870584"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .
@@ -45,7 +45,7 @@ ms.locfileid: "56700150"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-| Элемент | Описание |
+| Элемент | Описание: |
 | - | - |
 | [Name](../extensibility/name-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Указывает имя шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно. |
 | [Описание](../extensibility/description-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Указывает описание шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно. |
@@ -58,7 +58,7 @@ ms.locfileid: "56700150"
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, создан ли содержащей папки при создании экземпляра проекта. |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Задает имя, система проектов Visual Studio создаст для проекта или элемента при его создании. |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, будет ли в системе проектов Visual Studio создавать имя по умолчанию для проекта или элемента при его создании. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, могут ли быть созданы как временный проект. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, могут ли быть созданы как временный проект (Visual Studio 2017 только) проекта. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговом окне, чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен проект. |
 | [Скрытые](../extensibility/hidden-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно. |
 | [Элемент NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно. |
@@ -72,7 +72,7 @@ ms.locfileid: "56700150"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблон элемента или комплект для начала работы.|
 

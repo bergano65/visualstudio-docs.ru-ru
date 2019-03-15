@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873214"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869022"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Получить работы (Разработка приложений SharePoint в Visual Studio)
   Этот раздел поможет начать работу с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для разработки решений SharePoint, которые используют преимущества [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint предоставляет платформу для совместной работы в Интернете. В[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется множество шаблонов проектов для создания сайтов SharePoint и содержимого для них, включая определения списков, рабочие процессы, модели подключения к бизнес-данным и определения сайтов. Кроме того можно создавать расширения для проектов и инструментов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
@@ -36,7 +36,7 @@ ms.locfileid: "54873214"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-|Раздел|Описание|
+|Раздел|Описание:|
 |-----------|-----------------|
 |[Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Описывает разработку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Создание столбцов сайта, типов содержимого и списков для SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Здесь описываются способы создания пользовательских столбцов сайта, типов содержимого и списков для SharePoint с помощью средств Visual Studio для разработки SharePoint.|

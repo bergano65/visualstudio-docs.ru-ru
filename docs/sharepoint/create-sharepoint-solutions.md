@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599854"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869919"
 ---
 # <a name="create-sharepoint-solutions"></a>Создание решений SharePoint
   Приложения SharePoint можно создавать не только в SharePoint Designer, но и в Visual Studio. Visual Studio обеспечивает быструю разработку решений SharePoint с помощью таких компонентов, как средства расширенной отладки, IntelliSense, завершение операторов и шаблоны проектов. В Visual Studio также используются преимущества дополнительных средств и языков платформы .NET Framework. Проекты SharePoint можно разрабатывать с помощью Visual Basic или Visual C#, а приложения для проектов SharePoint можно разрабатывать с помощью JavaScript.
 
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) и [Создание приложений для SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) и [Создание приложений для SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Узнайте, как использовать новую [модель надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) для расширения возможностей пользователей SharePoint. Эти надстройки требуют очень мало ресурсов по сравнению с традиционными решениями SharePoint, и их можно создавать с помощью почти любой технологии веб-программирования, такой как HTML5, JavaScript, CSS3 и XML.

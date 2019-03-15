@@ -1,6 +1,6 @@
 ---
 title: CA1819. Свойства не должны возвращать массивы
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919213"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872747"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819. Свойства не должны возвращать массивы
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919213"
 
 ## <a name="cause"></a>Причина
 
-Открытый или защищенный свойство в открытом типе возвращает массив.
+Свойство возвращает массив.
+
+По умолчанию это правило считывает только видимое извне свойств и типов, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -52,6 +54,16 @@ ms.locfileid: "55919213"
 Можно отключить предупреждение, если свойство является частью [объект передачи данных (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) класса.
 
 В противном случае не отключайте предупреждение из этого правила.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+В этой категории (производительность), можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Пример нарушения
 

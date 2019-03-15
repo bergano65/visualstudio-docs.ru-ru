@@ -1,6 +1,6 @@
 ---
 title: CA1010. Коллекции должны реализовать универсальный интерфейс
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1010
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9998f54298107ce7a6fb31cf6eb8481998ddfbae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c71912fdd70226e1b4be3c14be7c4e0bac26259d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955873"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871906"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010. Коллекции должны реализовать универсальный интерфейс
 
@@ -31,73 +31,76 @@ ms.locfileid: "55955873"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Видимый извне тип реализует <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейса, но не реализует <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> интерфейс и включенная сборка предназначена [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это правило не учитывает типы, реализующие <xref:System.Collections.IDictionary?displayProperty=fullName>.
+
+Тип реализует <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейса, но не реализует <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> интерфейс и содержащего .NET целевые объекты сборки. Это правило не учитывает типы, реализующие <xref:System.Collections.IDictionary?displayProperty=fullName>.
+
+По умолчанию это правило считывает только типы, видимые извне, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
- Чтобы расширить возможности использования коллекции, реализуйте один из универсальных интерфейсов коллекции. Вы можете использовать коллекцию для заполнения типы универсальных коллекций, таких как следующие:
+
+Чтобы расширить возможности использования коллекции, реализуйте один из универсальных интерфейсов коллекции. Вы можете использовать коллекцию для заполнения типы универсальных коллекций, таких как следующие:
 
 - <xref:System.Collections.Generic.List%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, реализуйте один из следующих универсальных интерфейсов:
+
+Чтобы устранить нарушение этого правила, реализуйте один из следующих универсальных интерфейсов:
 
 - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила; Тем не менее коллекция будет иметь более ограниченное использование.
+
+Его можно безопасно подавить предупреждение из этого правила; Тем не менее использование коллекции будет более ограничены.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```
+dotnet_code_quality.ca1010.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Пример нарушения
 
-### <a name="description"></a>Описание:
- В примере показан класс (ссылочный тип), является производным от неуниверсального `CollectionBase` класс, который нарушает это правило.
+В примере показан класс (ссылочный тип), является производным от неуниверсального `CollectionBase` класс, который нарушает это правило.
 
-### <a name="code"></a>Код
- [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
-### <a name="comments"></a>Комментарии
- Чтобы устранить нарушение этого нарушения, должны реализовывать универсальные интерфейсы или измените базовый класс для типа, который уже реализует обеих универсальных и неуниверсальных интерфейсов, таких как `Collection<T>` класса.
+Чтобы устранить нарушение этого правила, выполните одно из следующих действий.
+
+- Реализуйте универсальные интерфейсы.
+- Измените базовый класс для типа, который уже реализует обеих универсальных и неуниверсальных интерфейсов, таких как `Collection<T>` класса.
 
 ## <a name="fix-by-base-class-change"></a>Исправить путем замены базового класса
 
-### <a name="description"></a>Описание
- В следующем примере нарушение устраняется путем изменения базового класса коллекции с неуниверсального `CollectionBase` класса к общим `Collection<T>` (`Collection(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) класса.
+В следующем примере нарушение устраняется путем изменения базового класса коллекции с неуниверсального `CollectionBase` класса к общим `Collection<T>` (`Collection(Of T)` в Visual Basic) класса.
 
-### <a name="code"></a>Код
- [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
-### <a name="comments"></a>Комментарии
- Изменение базового класса уже выпущенного класса считается критическим изменением для существующих потребителей.
+Изменение базового класса уже выпущенного класса считается критическим изменением для существующих потребителей.
 
 ## <a name="fix-by-interface-implementation"></a>Исправление посредством реализации интерфейсов
 
-### <a name="description"></a>Описание:
- В следующем примере устраняется нарушение путем реализации этих универсальных интерфейсов: `IEnumerable<T>`, `ICollection<T>`, и `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, и `IList(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+В следующем примере устраняется нарушение путем реализации этих универсальных интерфейсов: `IEnumerable<T>`, `ICollection<T>`, и `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, и `IList(Of T)` в Visual Basic).
 
-### <a name="code"></a>Код
- [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1005: Избегайте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-
- [CA1002: Не следует раскрывать универсальные списки](../code-quality/ca1002-do-not-expose-generic-lists.md)
-
- [CA1006: Не вкладывайте универсальные типы в сигнатурах членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-
- [CA1004: Универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-
- [CA1003: Используйте экземпляры обработчика универсальных событий](../code-quality/ca1003-use-generic-event-handler-instances.md)
-
- [CA1007: Используйте универсальные типы в том случае, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005: Избегайте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002: Не следует раскрывать универсальные списки](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006: Не вкладывайте универсальные типы в сигнатурах членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: Универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003: Используйте экземпляры обработчика универсальных событий](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007: Используйте универсальные типы в том случае, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>См. также
- [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)
+
+- [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)

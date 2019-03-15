@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796677"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870277"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 В этом разделе содержатся подробные сведения о расширениях Visual Studio, включая архитектуры Visual Studio, компоненты, службы, схемы, служебные программы и т. п.
@@ -90,7 +90,7 @@ ms.locfileid: "56796677"
  Дополнительные сведения см. в разделе [проекты](../../extensibility/internals/projects.md) и [решения](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Шаблоны проектов и элементов
- Visual Studio включает предопределенных шаблонов проектов и шаблонов элементов проекта. Можно также создать собственные шаблоны или получить шаблоны от сообщества и последующее интегрирование их в Visual Studio. [Коллекции кода MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) — место, можно искать шаблоны и расширения.
+ Visual Studio включает предопределенных шаблонов проектов и шаблонов элементов проекта. Можно также создать собственные шаблоны или получить шаблоны от сообщества и последующее интегрирование их в Visual Studio. [Коллекции кода MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) — место, можно искать шаблоны и расширения.
 
  Шаблоны содержат структуры проекта и основные файлы, необходимые для создания определенного типа приложений, управления, библиотеки или класса. Для разработки программного обеспечения, похожий на один из шаблонов следует создать проект, основанный на шаблоне, а затем измените файлы в этом проекте.
 

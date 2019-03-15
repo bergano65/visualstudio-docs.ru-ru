@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604874"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868109"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с помощью шаблона проекта в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона для создания нового проекта, который содержит элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.
@@ -195,7 +195,7 @@ ms.locfileid: "56604874"
 
 - Подписи руководителем проекта.
 
-  Дополнительные сведения об этих компонентах см. в разделе [основные сведения о компонентах мастера](#wizardcomponents).
+  Дополнительные сведения об этих компонентах см. в разделе [основные сведения о компонентах мастера](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>Для определения идентификаторов команд SharePoint
 

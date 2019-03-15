@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932018"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867001"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Наборы правил для анализаторов Roslyn
 
-Заранее заданные наборы правил входят в состав некоторых анализатора пакетов NuGet. Например, наборы правил, которые входят в состав [пакет Microsoft.CodeAnalysis.FxCopAnalyzers NuGet анализатор](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (начиная с версии 2.6.2) включить или отключить правила на основе их категории, такие как безопасность, именования, или производительность. Использование наборов правил позволяет быстро увидеть, только эти нарушения правил, которые относятся к определенной категории правила.
+Заранее заданные наборы правил входят в состав некоторых анализатора пакетов NuGet. Например, наборы правил, которые входят в состав [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) пакет с анализаторами NuGet (начиная с версии 2.6.2) включить или отключить правила на основе их категории, такие как безопасность, именования, или производительность. Использование наборов правил позволяет быстро увидеть, только эти нарушения правил, которые относятся к определенной категории правила.
 
 При миграции из прежних версий «FxCop» статического анализа кода для анализаторов Roslyn, эти наборы правил можно продолжать использовать же конфигурации правил, который использовался ранее.
 
@@ -41,7 +41,7 @@ ms.locfileid: "55932018"
 
 Кроме того существует два набора правил для каждой категории правил в пакете, таких как производительность или безопасность. Один набор правил включает все правила для категории, и один набор правил учитывает параметры серьезности и помощь по умолчанию для каждого правила в категории.
 
- [Пакет Microsoft.CodeAnalysis.FxCopAnalyzers NuGet анализатор](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) наборов правил для следующих категорий, в соответствии с наборов правил для анализа статического кода прежних версий «FxCop» включает в себя:
+[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) пакет NuGet анализатора включает наборы правил для следующих категорий, которые соответствует правило задает для анализа статического кода прежних версий «FxCop»:
 
 - разработка
 - документация
@@ -54,7 +54,8 @@ ms.locfileid: "55932018"
 
 ## <a name="see-also"></a>См. также
 
+- [Анализаторы часто задаваемые вопросы](analyzers-faq.md)
 - [Обзор анализаторов на платформе .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Установка анализаторов .NET Compiler Platform](install-roslyn-analyzers.md)
-- [Настройка и использование правил анализатора Roslyn](use-roslyn-analyzers.md)
+- [Установка анализаторов](install-roslyn-analyzers.md)
+- [Использовать анализаторы](use-roslyn-analyzers.md)
 - [Использование наборов правил для группировки правил анализа кода](using-rule-sets-to-group-code-analysis-rules.md)
