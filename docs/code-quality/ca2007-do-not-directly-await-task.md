@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Не следует напрямую ожидать задачу'
+title: CA2007. Не следует напрямую ожидать Task
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699683"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869293"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Не следует напрямую ожидать задачу
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007. Не следует напрямую ожидать Task
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Возможность настройки
+
+Вы можете настроить ли вы хотите исключить асинхронные методы, которые не возвращают значение из этого правила. Чтобы исключить эти типы методов, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Можно также настроить, какие выходные данные типов сборки для применения данного правила. Например для этого правила применяются только к коду, формирующий консольного приложения или библиотеки динамической компоновки (то есть не, пользовательского интерфейса приложения), добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>См. также
 
