@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695379"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983381"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Пошаговое руководство. Публикация расширения Visual Studio с помощью командной строки
 
@@ -45,7 +45,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Создает издатель в Marketplace. Также записывает издателя в машину для будущих действий (например, удаление и публикации расширения).
 
-|Параметры команды |Описание |
+|Параметры команды |Описание: |
 |---------|---------|
 |отображаемое имя (обязательно) | Отображаемое имя издателя. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
@@ -74,7 +74,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Удаление расширения из Marketplace.
 
-|Параметры команды |Описание: |
+|Параметры команды |Описание |
 |---------|---------|
 |extensionName (обязательно) | Имя расширения для удаления. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
@@ -88,7 +88,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Издатель вошедший в систему.
 
-|Параметры команды |Описание |
+|Параметры команды |Описание: |
 |---------|---------|
 |personalAccessToken (required | Личный маркер доступа, используемый для проверки подлинности издателя. |
 |значение свойства publisherName (обязательно) | Имя издателя (например, идентификатор). |
@@ -290,7 +290,7 @@ This is test extension.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Чтобы удалить расширение с компьютера
 
-1. В Visual Studio на **средства** меню, щелкните **расширения и обновления...** .
+1. В Visual Studio на **средства** меню, щелкните **расширения и обновления**.
 
 2. Выберите «MyVsixExtension» и нажмите кнопку **удаления**. Расширения будут запланированы к удалению.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270580"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983459"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка анализаторы FxCop в Visual Studio
 
@@ -54,12 +54,27 @@ ms.locfileid: "56270580"
 
 В Visual Studio 2017 версии 15.5 и более поздних версий, можно установить [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) расширение, которое содержит все анализаторы FxCop для управляемых проектов.
 
+::: moniker range="vs-2017"
+
 1. В Visual Studio выберите **средства** > **расширения и обновления**.
 
    Появится диалоговое окно **Расширения и обновления**.
 
    > [!NOTE]
    > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В Visual Studio выберите **расширения** > **Управление расширениями**.
+
+   **Управление расширениями** откроется диалоговое окно.
+
+   > [!NOTE]
+   > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ ms.locfileid: "56270580"
 
 1. Снова откройте Visual Studio.
 
+::: moniker range="vs-2017"
+
 Если вы хотите проверить, является ли расширение установлена, выберите **средства** > **расширения и обновления**. В **расширения и обновления** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Если вы хотите проверить, является ли расширение установлена, выберите **расширения** > **Управление расширениями**. В **Управление расширениями** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 
