@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718374"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983017"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Пошаговое руководство. Создание пакета расширения
 
@@ -85,7 +85,7 @@ ms.locfileid: "56718374"
 
 Чтобы удалить расширение с компьютера:
 
-1. В Visual Studio на **средства** меню, щелкните **расширения и обновления...** .
+1. В Visual Studio на **средства** меню, щелкните **расширения и обновления**.
 
 2. Выберите `Test Extension Pack` и нажмите кнопку **удаления**. Расширение и свой список расширений, входящих в пакет расширений будет затем запланировано для удаления.
 

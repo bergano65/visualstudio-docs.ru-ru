@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915626"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983108"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 
@@ -37,9 +37,19 @@ ms.locfileid: "55915626"
 
 ### <a name="to-uninstall-the-extension"></a>Удаление расширения
 
-1.  В Visual Studio на **средства** меню, щелкните **расширения и обновления**.
+::: moniker range="vs-2017"
 
-2.  Щелкните имя расширения и нажмите кнопку **удаления**.
+1. В Visual Studio, выберите **средства** > **расширения и обновления**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В Visual Studio, выберите **расширения** > **Управление расширениями**.
+
+::: moniker-end
+
+2. Щелкните имя расширения и нажмите кнопку **удаления**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Установить расширение на сервере Team Foundation Server
 
