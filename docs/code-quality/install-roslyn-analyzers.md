@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222939"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982939"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Установка анализаторов .NET Compiler Platform
 
@@ -37,12 +37,27 @@ Visual Studio включает набор базовых платформы ко
 
 ## <a name="to-install-vsix-analyzers"></a>Чтобы установить VSIX анализаторы
 
+::: moniker range="vs-2017"
+
 1. В Visual Studio выберите **средства** > **расширения и обновления**.
 
    Появится диалоговое окно **Расширения и обновления**.
 
    > [!NOTE]
    > Кроме того, можно найти и загрузить анализатор расширения непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В Visual Studio выберите **расширения** > **Управление расширениями**.
+
+   **Управление расширениями** откроется диалоговое окно.
+
+   > [!NOTE]
+   > Кроме того, можно найти и загрузить анализатор расширения непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ Visual Studio включает набор базовых платформы ко
 
 8. Снова откройте Visual Studio.
 
+::: moniker range="vs-2017"
+
 Если вы хотите проверить, является ли расширение установлена, выберите **средства** > **расширения и обновления**. В **расширения и обновления** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Если вы хотите проверить, является ли расширение установлена, выберите **расширения** > **Управление расширениями**. В **Управление расширениями** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
