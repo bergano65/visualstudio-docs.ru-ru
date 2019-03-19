@@ -2,7 +2,6 @@
 title: Интерфейс ISimpleConnectionPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a756fa3f933f4adff56c41a86aee19a0a2a93aa
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346414"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146933"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>Интерфейс ISimpleConnectionPoint
 Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения. Этот интерфейс также позволяет легко подключить `IDispatch` объекта на эти события. Этот интерфейс реализуется путем процесс отладки Manager (PDM) и потребляемых обработчиков сценариев.  

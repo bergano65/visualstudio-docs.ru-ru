@@ -1,21 +1,20 @@
 ---
-title: Словарь визуального языка для Visual Studio | Документация Майкрософт
+title: Справочник по языку
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-ms.author: v-brickg
+ms.author: brgeorge
 manager: jillfra
-ms.workload:
-- v-brickg
-ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698486"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158085"
 ---
-# <a name="visual-language-dictionary-for-visual-studio"></a>Словарь визуального языка для Visual Studio
+# <a name="visual-language-dictionary"></a>Словарь визуального языка
+
 Visual Studio использует общий язык visual, чтобы продемонстрировать основные понятия, которые являются составными частями его иллюстрациях и других визуальных представлений. При разработке новых значков, позволяет определить основные понятия, которые вы хотите передать в свой собственный образ данного словаря.
 
 ## <a name="general-guidelines"></a>Общие рекомендации
@@ -143,7 +142,7 @@ Visual Studio использует общий язык visual, чтобы про
 
 | Понятие | Главный значок | Другие примеры | Примечания |
 | --- | --- | --- | --- |
-| **Правка** | ![Значок "Изменить"](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![Значок редактора адреса](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />Редактор адреса<br />![Изменить значок запроса](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />Изменить запрос<br />![Изменить значок отношения](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />Изменить отношение | **Изменить** заметки сталкивается влево или вправо, в зависимости от того, как выглядит базовый значок. Выбор наилучшего Общая структура значок ориентации. |
+| **Правка** | ![Значок "Изменить"](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![Значок редактора адреса](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />Редактор адреса<br />![Изменить значок запроса](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />Изменение запроса<br />![Изменить значок отношения](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />Изменить отношение | **Изменить** заметки сталкивается влево или вправо, в зависимости от того, как выглядит базовый значок. Выбор наилучшего Общая структура значок ориентации. |
 | **Эффекты**<br />*Так же, как «Function», «Variable (используется глобально)»* | ![Значок эффекта](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
 | **пустой** | ![Значок «Очистить»](../../extensibility/ux-guidelines/media/vld_c_empty.png "VLD_C_Empty") | ![Значок пустой страницы](../../extensibility/ux-guidelines/media/vld_c_empty_blankpage.png "VLD_C_Empty_BlankPage")<br />Пустая страница<br />![C&#43; &#43; значок пустого проекта](../../extensibility/ux-guidelines/media/vld_c_empty_cppemptyproject.png "VLD_C_Empty_CPPEmptyProject")<br />Пустой проект C++<br />![F&#35; значок пустой веб-сайт проекта](../../extensibility/ux-guidelines/media/vld_c_empty_fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject")<br />F#пустой веб-сайт проекта ||
 | **Перечислитель** | ![Значок перечислителя](../../extensibility/ux-guidelines/media/vld_c_enumerator.png "VLD_C_Enumerator") | ![Создать значок перечислителя](../../extensibility/ux-guidelines/media/vld_c_enumerator_createenumerator.png "VLD_C_Enumerator_CreateEnumerator")<br />Создать перечислитель ||
@@ -282,7 +281,7 @@ Visual Studio использует общий язык visual, чтобы про
 
 | Понятие | Главный значок | Другие примеры | Примечания |
 | --- | --- | --- | --- |
-| **Запрос** | ![Значок запроса](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Изменить значок запроса](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Изменить запрос<br />![Значок расширителя запросов](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Расширителя запросов<br />![Значок быстрого запроса](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Быстрый запрос ||
+| **Запрос** | ![Значок запроса](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Изменить значок запроса](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Изменение запроса<br />![Значок расширителя запросов](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Расширителя запросов<br />![Значок быстрого запроса](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Быстрый запрос ||
 
 ###  <a name="BKMK_VLDConceptsR"></a> R
 
@@ -321,7 +320,7 @@ Visual Studio использует общий язык visual, чтобы про
 | **Действия**<br />Этап, этап | ![Значок действия](../../extensibility/ux-guidelines/media/vld_c_steps.png "VLD_C_Steps") | ![Значок создания общих действий](../../extensibility/ux-guidelines/media/vld_c_steps_createsharedsteps.png "VLD_C_Steps_CreateSharedSteps")<br />Создание общих шагов<br />![Значок вставки общих действий](../../extensibility/ux-guidelines/media/vld_c_steps_insertsharedsteps.png "VLD_C_Steps_InsertSharedSteps")<br />Вставить общие шаги<br />![Значок воспроизведения всех этапов](../../extensibility/ux-guidelines/media/vld_c_steps_playallsteps.png "VLD_C_Steps_PlayAllSteps")<br />Воспроизвести все шаги ||
 | **Структура**<br />Структура | ![Структура &#40;структуры&#41; значок](../../extensibility/ux-guidelines/media/vld_c_structure.png "VLD_C_Structure") |||
 | **Таблица стилей** | ![Значок листа стиля](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![Значок создания таблицы стилей](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />Новая таблица стилей<br />![Attach style sheet icon](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />Присоединить таблицу стилей ||
-| **Синхронизировать**<br />Обновление | ![Значок синхронизации](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![Обновленный значок JavaScript](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />Обновленные JavaScript<br />![База данных обновлена значок элементов](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />База данных обновлена элементов<br />![Значок синхронизации](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />Синхронизация ||
+| **Синхронизировать**<br />Обновление | ![Значок синхронизации](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![Обновленный значок JavaScript](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />Обновленные JavaScript<br />![База данных обновлена значок элементов](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />База данных обновлена элементов<br />![Значок синхронизации](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />Синхронизировать ||
 
 ###  <a name="BKMK_VLDConceptsT"></a> T
 
@@ -455,7 +454,7 @@ Visual Studio использует общий язык visual, чтобы про
 | **Точка останова: сопоставление включено** | ![Точки останова: сопоставленные поддержкой значок](../../extensibility/ux-guidelines/media/vld_s_breakpointmappedenabled.png "VLD_S_BreakpointMappedEnabled") ||
 | **Выполнено и ОК** | ![Значок выполнено и OK](../../extensibility/ux-guidelines/media/vld_s_completeandok.png "VLD_S_CompleteAndOK") | ![Значок завершения задачи](../../extensibility/ux-guidelines/media/vld_s_completeandok_taskcomplete.png "VLD_S_CompleteAndOK_TaskComplete")<br />Завершение задачи<br />![Значок завершения процесса](../../extensibility/ux-guidelines/media/vld_s_completeandok_processdone.png "VLD_S_CompleteAndOK_ProcessDone")<br />Осуществляемой<br />![Значок ОК облачной службы](../../extensibility/ux-guidelines/media/vld_s_completeandok_cloudserviceok.png "VLD_S_CompleteAndOK_CloudServiceOK")<br />Облачная служба ОК |
 | **Ошибка** | ![Значок ошибки](../../extensibility/ux-guidelines/media/vld_s_error.png "VLD_S_Error") | ![Значок ошибки точки останова](../../extensibility/ux-guidelines/media/vld_s_error_breakpointerror.png "VLD_S_Error_BreakpointError")<br />Ошибка точки останова<br />![Значок ошибки сертификата](../../extensibility/ux-guidelines/media/vld_s_error_certificateerror.png "VLD_S_Error_CertificateError")<br />Ошибка сертификата<br />![Ошибки проверочного ограничения](../../extensibility/ux-guidelines/media/vld_s_error_checkconstrainterror.png "VLD_S_Error_CheckConstraintError")<br />проверочное ограничение |
-| **Справка**<br />- результат не определен | ![Справка&#47;с неопределенным результатом значок](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive.png "VLD_S_HelpInconclusive") | ![Значок файла справки скомпилированного MS](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive_compiledmshelpfile.png "VLD_S_HelpInconclusive_CompiledMSHelpFile")<br />Скомпилированном файле справки MS<br />![Файл индекса справки MS](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive_mshelpindexfile.png "VLD_S_HelpInconclusive_MSHelpIndexFile")<br />Файл индекса справки MS |
+| **Справка**<br />С неопределенным результатом | ![Справка&#47;с неопределенным результатом значок](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive.png "VLD_S_HelpInconclusive") | ![Значок файла справки скомпилированного MS](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive_compiledmshelpfile.png "VLD_S_HelpInconclusive_CompiledMSHelpFile")<br />Скомпилированном файле справки MS<br />![Файл индекса справки MS](../../extensibility/ux-guidelines/media/vld_s_helpinconclusive_mshelpindexfile.png "VLD_S_HelpInconclusive_MSHelpIndexFile")<br />Файл индекса справки MS |
 | **Информация** | ![Значок сведений](../../extensibility/ux-guidelines/media/vld_s_information.png "VLD_S_Information") | ![Значок сведений о жесткой связи](../../extensibility/ux-guidelines/media/vld_s_information_rigidinforelationship.png "VLD_S_Information_RigidInfoRelationship")<br />Сведений о жесткой связи<br />![Значок сведений о системе](../../extensibility/ux-guidelines/media/vld_s_information_systeminfo.png "VLD_S_Information_SystemInfo")<br />Сведения о системе |
 | **Сведения всплывающей подсказки** | ![Значок "подсказка"](../../extensibility/ux-guidelines/media/vld_s_informationtooltip.png "VLD_S_InformationTooltip") ||
 | **Недопустимый** | ![Недопустимый значок](../../extensibility/ux-guidelines/media/vld_s_invalid.png "VLD_S_Invalid") ||

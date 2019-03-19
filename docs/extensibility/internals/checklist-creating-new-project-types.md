@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621010"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146348"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: Создание новых типов проектов
 Необходимо выполнить несколько задач, чтобы создать новый тип проекта. Следующий контрольный список содержит указания для этих задач:
@@ -37,7 +37,7 @@ ms.locfileid: "56621010"
 
     -   Элементы управления проектами, включая добавление проекта к **новый проект** диалоговое окно. Дополнительные сведения см. в разделе [добавить проект и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Длительное хранение состояния проекта и отдельных элементов. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md). Для сохранения информации о решении, см. в разделе [решения](../../extensibility/internals/solutions.md).
+    -   Длительное хранение состояния проекта и отдельных элементов. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md). Для сохранения информации о решении, см. в разделе [решения](../../extensibility/internals/solutions-overview.md).
 
     -   Свойства конфигурациями для отображения в окне «Свойства». Дополнительные сведения см. в разделе [расширять свойства](../../extensibility/internals/extending-properties.md).
 

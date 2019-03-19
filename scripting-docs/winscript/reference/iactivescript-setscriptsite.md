@@ -2,7 +2,6 @@
 title: IActiveScript::SetScriptSite | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097439"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157072"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
 Информирует обработчик сценариев из [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) сайта интерфейс, предоставленный средой размещения. Вызовите этот метод перед любыми другими [IActiveScript](../../winscript/reference/iactivescript.md) используется методы интерфейса.  
