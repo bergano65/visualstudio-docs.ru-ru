@@ -33,7 +33,7 @@
 ## [Выбор блоков](block-selection.md)
 ## [Темы редактора](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Распространенные сочетания клавиш](keyboard-shortcuts.md)
+## [Сочетания клавиш по умолчанию](keyboard-shortcuts.md)
 
 # [Отладка](debugging.md)
 ## [Визуализация данных](data-visualizations.md)
