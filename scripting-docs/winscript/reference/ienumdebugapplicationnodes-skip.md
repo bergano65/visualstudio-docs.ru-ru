@@ -2,7 +2,6 @@
 title: IEnumDebugApplicationNodes::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d13f65a33b40d1c1c3d6ed644865b993469fc6d0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 97880e6a40efefa5f3643b474ba5d731f8dc3630
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092135"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157000"
 ---
 # <a name="ienumdebugapplicationnodesskip"></a>IEnumDebugApplicationNodes::Skip
 Пропускает заданное число сегментов в последовательности перечисления.  
@@ -43,7 +42,7 @@ HRESULT Skip(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

@@ -2,7 +2,6 @@
 title: Перечисление BREAKPOINT_STATE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348637"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154677"
 ---
 # <a name="breakpointstate-enumeration"></a>Перечисление BREAKPOINT_STATE
 Показывает состояние точки останова.  
@@ -40,7 +39,7 @@ typedef enum tagBREAKPOINT_STATE {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание|  
+|Член|Описание:|  
 |------------|-----------------|  
 |BREAKPOINT_DELETED|Точка останова не существует, но по-прежнему существуют ссылки на него.|  
 |BREAKPOINT_DISABLED|Точка останова существует, но отключен.|  

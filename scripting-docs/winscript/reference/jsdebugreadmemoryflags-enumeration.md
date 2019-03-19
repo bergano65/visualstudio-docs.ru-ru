@@ -2,7 +2,6 @@
 title: Перечисление JsDebugReadMemoryFlags | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094033"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156415"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Перечисление JsDebugReadMemoryFlags
 Флаги для задания поведения при чтении памяти.  
@@ -32,11 +31,11 @@ ms.locfileid: "54094033"
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 ### <a name="values"></a>Значения  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |`JsDebugAllowPartialRead`|Указывает, что вызывающий объект хочет, чтобы операции чтения для успешного выполнения, если только на часть памяти чтение успешно выполнена. Если задано значение, ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS будет возникать только если «Address» является недопустимым. Если этот флаг снят, ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS возникнет, если любая часть запрашиваемой памяти не удается прочитать.|  
 |`None`|Указывает, что вызывающий объект хочет, чтобы поведение по умолчанию для ReadMemory.|  

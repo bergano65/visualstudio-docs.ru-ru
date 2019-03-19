@@ -2,7 +2,6 @@
 title: Интерфейс IDebugApplicationThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347792"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158793"
 ---
 # <a name="idebugapplicationthread-interface"></a>Интерфейс IDebugApplicationThread
 Позволяет модулям языка и узлам обеспечивать синхронизацию потоков и поддерживать сведения о состоянии конкретного потока отладки. Этот интерфейс расширяет `IRemoteDebugApplicationThread` интерфейс для предоставления без удаленного доступа к потоку.  
@@ -28,7 +27,7 @@ ms.locfileid: "54347792"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Предоставляет механизм для вызывающего объекта для выполнения кода в потоке приложения.|  
 |[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Определяет, является ли этот поток текущим выполняемым потоком.|  

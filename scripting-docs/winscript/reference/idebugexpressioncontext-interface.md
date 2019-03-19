@@ -2,7 +2,6 @@
 title: Интерфейс IDebugExpressionContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12b997d5edab866f77dcb71f4d5ea0273786c577
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 5920d644922b15f193ee396ea0c6bddb8a574698
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345985"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156675"
 ---
 # <a name="idebugexpressioncontext-interface"></a>Интерфейс IDebugExpressionContext
 Представляет контекст, где выражения можно вычислить. Объект кадра стека реализует этот интерфейс.  
@@ -32,7 +31,7 @@ ms.locfileid: "54345985"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)|Создает выражение отладки для указанного текста.|  
 |[IDebugExpressionContext::GetLanguageInfo](../../winscript/reference/idebugexpressioncontext-getlanguageinfo.md)|Возвращает имя и идентификатор GUID для языка, которому принадлежит этот контекст.|

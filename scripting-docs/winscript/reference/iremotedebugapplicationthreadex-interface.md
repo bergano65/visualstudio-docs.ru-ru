@@ -2,7 +2,6 @@
 title: Интерфейс IRemoteDebugApplicationThreadEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 071a34b16ce9b3cbe7e73f44a01de889d113b7e4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b7496b79569d25a747527965f97d61544c8a7c3d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344243"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154638"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>IRemoteDebugApplicationThreadEx — интерфейс
 Представляет поток исполнения в определенном приложении.  
@@ -28,6 +27,6 @@ ms.locfileid: "54344243"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Перечисляет контексты глобальное выражение для всех языков, работающих в этом потоке.|
