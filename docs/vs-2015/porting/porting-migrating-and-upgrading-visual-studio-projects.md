@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805557"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194928"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "54805557"
 |Office 2007 VSTO|При обновлении проекта, чтобы он был предназначен для Office 2013 и .NET Framework 4, можно открыть этот проект в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]или Visual Studio 2010 с пактом обновления 1 (SP1).|
 |Office 2010 VSTO|Если проект предназначен для .NET Framework 4, можно открыть его в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1). Все остальные проекты требуют одностороннего обновления.|
 |Полнофункциональные интернет-приложения|При обновлении проекта можно открыть его в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1).|
-|SharePoint 2007|Невозможно открыть этот проект в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Однако если необходимо вручную обновить проект до SharePoint 2010, можно открыть его в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1). Дополнительные сведения об обновлении SharePoint 2007 см. в статьях [Миграция с SharePoint 2007 на SharePoint 2010 для ИТ-специалистов](http://go.microsoft.com/fwlink/?LinkId=238224), [Преобразование рабочего процесса версии 2007 в рабочий процесс SharePoint 2010 в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=238225) и [Средство миграции поиска в корпоративной среде SharePoint для SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Невозможно открыть этот проект в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Однако если необходимо вручную обновить проект до SharePoint 2010, можно открыть его в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1). Дополнительные сведения об обновлении SharePoint 2007 см. в разделе [переход с SharePoint 2007 до SharePoint 2010 для ИТ-специалистов](http://go.microsoft.com/fwlink/?LinkId=238224) и [SharePoint Enterprise Search Migration Tool для SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Проект можно открыть в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1).|
 |SketchFlow|Если разрешить Visual Studio обновить проект до WPF 4.5/Silverlight 5, его можно будет открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |База данных [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Проект можно открыть в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]и Visual Studio 2010 с пакетом обновления 1 (SP1). Если имеется файл базы данных, (MDF), созданный в более ранней версии SQL Server, необходимо обновить ее в [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] , прежде чем его можно будет использовать с базой данных LocalDB SQL Server Express, но база данных больше не будет совместима с предыдущими версиями SQL Server. Если не выполнить обновление, можно продолжать работать с базой данных в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , установив на том же компьютере [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] . Дополнительные сведения см. в разделе [обновление MDF-файлов](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ ms.locfileid: "54805557"
 
 - При попытке открыть проект для классического приложения в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]возникает ошибка и отображается одно из следующих сообщений: "Этот выпуск Visual Studio поддерживает только приложения [!INCLUDE[win81](../includes/win81-md.md)] " или "Этот проект несовместим с текущим выпуском Visual Studio". Версия [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] предназначена для разработки, тестирования и развертывания приложений Магазина Windows, созданных для Windows 8.1. Чтобы открыть проект классического приложения, необходимо использовать выпуск Visual Studio, поддерживающий этот тип проекта.
 
-   Дополнительные сведения о выпусках Visual Studio см. в описании [продуктов Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332).
+   Дополнительные сведения о выпусках Visual Studio см. в описании [продуктов Microsoft Visual Studio](https://visualstudio.microsoft.com/products/).
 
 - При попытке открыть проект приложения для Магазина Windows в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, возникает ошибка. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop нельзя использовать для создания приложений для Магазина Windows. Если требуется создавать приложения для Магазина Windows, можно также установить [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. А для разработки приложений для всех платформ Microsoft и Интернета попробуйте Visual Studio Professional 2013.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752886"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872833"
 ---
 # <a name="maintaining-security"></a>Обеспечение безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ ms.locfileid: "54752886"
  [Безопасность, конфиденциальность и учетные записи](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Помощь по вопросам безопасности, конфиденциальности и учетных записей пользователей, включая сведения о вирусах, паролях, родительском контроле, межсетевых экранах и шифровании диска.  
   
- [Поиск по бюллетеням по безопасности корпорации Майкрософт](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Поиск по бюллетеням по безопасности корпорации Майкрософт](/security-updates/)  
  На данной странице можно легко найти предыдущие выпуски бюллетеней. Информационные бюллетени предназначены для специалистов в области информационных технологий и содержат подробные сведения о последних обновлениях системы безопасности.  
   
- [Руководство по безопасности Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Руководство, позволяющее специалистам в области информационных технологий обеспечить безопасную работу в среде Windows Server 2003, предоставляя уполномоченным пользователям нужный им уровень доступа к необходимым данным.  
+ [Windows Server 2003 Security Guide] (/previous-versions/tn-archive/cc163140(v=technet.10) руководство для ИТ-специалистам обеспечить безопасную работу в среде Windows Server 2003 при предоставлении доступа к нужному содержимому нужным людям.  
   
- [Рекомендации по безопасности в корпоративной среде](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Рекомендации по безопасности в корпоративной среде](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Набор технических описаний, посвященных различным аспектам обеспечения безопасности в локальных сетях предприятий.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) — это инструмент, который может использоваться домашними или корпоративными пользователями, а также администраторами для проверки одного или нескольких компьютеров с ОС Windows на наличие типичных ошибок настройки системы безопасности.

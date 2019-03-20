@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763314"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194513"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54763314"
   
  В данном разделе рассматриваются специфические аспекты размещения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] продуктом [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], которые необходимо учитывать при настройке проектов и файлов в формате .targets, которые требуется загрузить и создать построение в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это поможет вам обеспечить наличие в настраиваемом проекте таких функций [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], как IntelliSense и отладка.  
   
- Дополнительные сведения о проектах C++ см. в разделе [Файлы проекта](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Дополнительные сведения о проектах C++ см. в разделе [Файлы проекта](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Расширения имени файла проекта  
  Файл MSBuild.exe распознает любое расширение имени файла проекта, если оно соответствует шаблону .*proj. Однако [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] распознает только подмножество расширений этих имен файлов проекта, определяющее языковую систему проекта, которая будет загружать проект. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не имеет не зависящей от языка системы проекта, основанной на использовании [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783265"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869874"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "54783265"
 ## <a name="the-developer-community"></a>Сообщество разработчиков  
  Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме.  
   
- На веб-сайте [Microsoft Technical Communities](http://go.microsoft.com/fwlink/?LinkID=144922) вы можете найти форумы, блоги, чаты и другие ресурсы.  
+ На веб-сайте [Microsoft Technical Communities](https://techcommunity.microsoft.com/) вы можете найти форумы, блоги, чаты и другие ресурсы.  
   
 ## <a name="product-support"></a>Поддержка продуктов  
  Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).

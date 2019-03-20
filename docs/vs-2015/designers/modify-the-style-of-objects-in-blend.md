@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781379"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869306"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54781379"
 ##  <a name="Brushes"></a>Кисти: изменение внешнего вида объекта  
  Примените кисть к объекту, если вы хотите изменить его внешний вид.  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Нанесение повторяющегося изображения или рисунка на объект  
  Нанесите повторяющееся изображение или шаблон на объект с помощью *мозаичной кисти*.  
@@ -55,7 +55,7 @@ ms.locfileid: "54781379"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
 ##  <a name="Styles"></a>Стили и шаблоны: создание согласованного внешнего вида и поведения элемента управления  
  Можно всего один раз разработать внешний вид и поведение элемента управления и затем применить эти параметры к другим элементам управления, чтобы вам не нужно было поддерживать их по отдельности.  
@@ -92,9 +92,7 @@ ms.locfileid: "54781379"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [создать стиль](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
-  
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание шаблона элемента управления в Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание стиля](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления  
  Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.  
@@ -109,14 +107,14 @@ ms.locfileid: "54781379"
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование  
  Практически любой элемент проекта можно преобразовать в ресурс. Ресурс представляет собой объект, который можно многократно использовать в разных местах в приложении . Например, можно создать один раз цвет, преобразовать его в ресурс, а затем использовать этот ресурс для ряда объектов Чтобы изменить цвет всех этих объектов, достаточно изменить ресурс цвета.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>См. также раздел  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

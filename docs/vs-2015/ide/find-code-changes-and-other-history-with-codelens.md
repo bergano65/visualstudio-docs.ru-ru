@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753904"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195116"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +224,7 @@ ms.locfileid: "54753904"
   
 -   Если код хранится в TFS, с помощью [команды CodeIndex](../ide/codeindex-command.md) и [команды TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)убедитесь, что индексирование кода включено.  
   
--   Индикаторы, связанные с TFS, отображаются, только когда рабочие элементы связаны с кодом и имеются разрешения на открытие связанных рабочих элементов. [Убедитесь в наличии разрешений члена команды.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   Индикаторы, связанные с TFS, отображаются, только когда рабочие элементы связаны с кодом и имеются разрешения на открытие связанных рабочих элементов. [Убедитесь в наличии разрешений члена команды.](/azure/devops/organizations/security/view-permissions)  
   
 -   Индикаторы модульных тестов не отображаются, если в коде приложения отсутствуют модульные тесты. Индикаторы состояния теста отображаются автоматически в тестовых проектах. Если известно, что код приложения имеет модульные тесты, но индикаторы тестов не отображаются, попробуйте выполнить сборку решения (**CTRL + SHIFT + B**).  
   

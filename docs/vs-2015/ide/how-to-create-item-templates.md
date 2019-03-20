@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание шаблонов элементов | Документация Майкрософт
+title: Практическое руководство. Создание шаблонов элементов | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788253"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867936"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Шаги [первой процедуры](../ide/how-to-create-item-templates.md#export_template) этого раздела показывают, как создать шаблон элемента с помощью мастера **экспорта шаблона**. Если шаблон будет состоять из нескольких файлов, см. раздел [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md).  
+Шаги [первой процедуры](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) этого раздела показывают, как создать шаблон элемента с помощью мастера **экспорта шаблона**. Если шаблон будет состоять из нескольких файлов, см. раздел [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md).  
   
- Мастер выполняет за вас большой объем работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить VSTEMPLATE-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для проекта приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], необходимо выполнить ряд дополнительных действий. [Вторая процедура](../ide/how-to-create-item-templates.md#modify_template) этого раздела помогает выполнить данную задачу.  
+ Мастер выполняет за вас большой объем работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить VSTEMPLATE-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для проекта приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], необходимо выполнить ряд дополнительных действий. [Вторая процедура](#to-enable-the-item-template-to-be-used-in-a-store-project) этого раздела помогает выполнить данную задачу.  
  
- В некоторых случаях может потребоваться вручную создать шаблон элемента с нуля. В [третьей процедуре](../ide/how-to-create-item-templates.md#create_template) показано, как это сделать.  
+ В некоторых случаях может потребоваться вручную создать шаблон элемента с нуля. В [третьей процедуре](#to-enable-templates-for-specific-project-sub-types) показано, как это сделать.  
   
  Сведения об элементах, которые можно использовать в VSTEMPLATE-файле, см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   

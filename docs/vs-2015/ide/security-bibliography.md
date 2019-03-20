@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6440dabdc1252440e68e424e94aa6534d63173e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784210"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193680"
 ---
 # <a name="security-bibliography"></a>Библиография по вопросам безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "54784210"
 Ниже представлены избранные электронные и печатные ресурсы, посвященные вопросам разработки безопасных приложений и настройки безопасных сред.  
   
 ## <a name="microsoft-web-sites"></a>Веб-узлы корпорации Microsoft  
- [Центр безопасности Майкрософт](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Центр безопасности Майкрософт](https://www.microsoft.com/security)  
  Описание деятельности Microsoft в сфере защиты приложений и систем разных уровней (от настольных до сетевых), а также ссылки на ресурсы по вопросам безопасности для специалистов в области информационных технологий, разработчиков и домашних пользователей.  
   
- [Источники информации по безопасности на сайте MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
+ [Источники информации по безопасности на сайте MSDN](https://www.microsoft.com/msrc?rtc=1)  
  Ссылки на документацию для разработчиков, примеры кода, технические статьи и другие ресурсы, посвященные разработке безопасных приложений.  
   
- [Центр безопасности Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
+ [Центр безопасности Microsoft TechNet](https://www.microsoft.com/securityengineering)  
  Ссылки на важную техническую информацию о безопасности для специалистов в области информационных технологий и опытных пользователей.

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526714"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194209"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -211,7 +211,7 @@ ms.locfileid: "57526714"
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее может потребоваться проверить, что порты открыты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Требуемые порты:
 

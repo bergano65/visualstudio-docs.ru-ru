@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b9b104fe6f246592f4716ad18ab4a9e6f122fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803249"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145165"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,37 +32,7 @@ ms.locfileid: "54803249"
   
  **Требования**  
   
--   Visual Studio Enterprise  
-  
-## <a name="in-this-topic"></a>Содержание раздела  
-  
--   [Использование заглушек](#how)  
-  
-    -   [Разработка для внедрения зависимости](#Dependency)  
-  
-    -   [Создание заглушек](#GeneratingStubs)  
-  
-    -   [Создание теста с заглушками](#WriteTest)  
-  
-    -   [Проверка значений параметров](#mocks)  
-  
--   [Заглушки для различных видов членов типа](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
-  
-    -   [Методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
-  
-    -   [Свойства](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
-  
-    -   [События](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
-  
-    -   [Универсальные методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
-  
-    -   [Заглушки виртуальных классов](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
-  
--   [Отладка заглушек](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
-  
--   [Ограничения заглушки](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
-  
--   [Изменение поведения заглушек по умолчанию](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
+-   Visual Studio Enterprise
   
 ##  <a name="How"></a> Использование заглушек  
   
@@ -502,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>См. также раздел  
  [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

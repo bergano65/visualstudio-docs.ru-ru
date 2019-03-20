@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526468"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194941"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core в службах IIS на Azure в Visual Studio 2017
 
@@ -229,7 +229,7 @@ ms.locfileid: "57526468"
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее при устранении неполадок в развертывании, а приложение размещается за брандмауэром, может потребоваться проверить, что необходимые порты открыты.
 
-На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Требуемые порты:
 

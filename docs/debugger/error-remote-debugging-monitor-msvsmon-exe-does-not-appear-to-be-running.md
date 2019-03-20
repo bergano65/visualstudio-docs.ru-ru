@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82ad49dcd6369f0ef71068ed0238b45914072c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 40210832f06a328ec2fc785a2543eb3bbce9f6ba
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867998"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере
 Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Сведения о загрузке и настройке удаленного отладчика, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
->  Если вы считаете, что вы получили это сообщение из-за ошибки продукта, [о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
+> Если вы считаете, что получили это сообщение из-за ошибки продукта, [о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Это сообщение было получено во время отладки в Visual Studio 2010 или более ранней версии
  Если вы используете версию Visual Studio 2010 или более раннюю, эта ошибка может также возникать, если не включен общий доступ к файлам и принтерам. Чтобы узнать больше об этой проблеме, обратитесь к документации для версии Visual Studio 2010: [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере — Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))

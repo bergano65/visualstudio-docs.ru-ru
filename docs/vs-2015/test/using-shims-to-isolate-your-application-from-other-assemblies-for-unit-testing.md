@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784145"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155947"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,50 +28,7 @@ ms.locfileid: "54784145"
   
 - Visual Studio Enterprise  
   
-  См. в разделе [видео (1: 16): Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
-  
-## <a name="in-this-topic"></a>Содержание раздела  
- Ниже перечислены темы, рассматриваемые в этом разделе.  
-  
- [Пример. Ошибка 2000 года](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Использование оболочек](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Добавление сборки Fakes](#AddFakes)  
-  
-- [Использование ShimsContext](#ShimsContext)  
-  
-- [Создание тестов с оболочками](#WriteTests)  
-  
-  [Оболочки для методов различных типов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [Статические методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [Методы экземпляра (для всех экземпляров)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [Методы экземпляра (для одного экземпляра)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [Конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [Базовые члены](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [Статические конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [Методы завершения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [Закрытые методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [Привязка интерфейсов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [Изменение поведения по умолчанию](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [Обнаружение событий доступа к среде](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [Параллелизм](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [Вызов исходного метода из метода оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [Ограничения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  См. видео (1 ч. 16 мин.): [Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Пример. Ошибка 2000 года  
  Рассмотрим метод, который создает исключение 1 января 2000 г.  
@@ -82,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  
@@ -547,9 +504,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>См. также раздел  
  [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Видео (1 ч. 16 мин): Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Видео (1 ч. 16 мин.): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
