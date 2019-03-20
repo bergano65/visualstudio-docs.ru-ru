@@ -1,6 +1,6 @@
 ---
 title: CA3075. Обработка небезопасных DTD
-ms.date: 11/04/2016
+ms.date: 03/18/2019
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4ea49b9b5563382786b5cf83f577e0b8e96386
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921410"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194623"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075. Обработка небезопасных DTD
 
@@ -30,7 +30,7 @@ ms.locfileid: "55921410"
 
 ## <a name="rule-description"></a>Описание правила
 
-*DTD* — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Это правило активируется, если:
+*DTD* — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных [раскрытие информации](/dotnet/framework/wcf/feature-details/information-disclosure) угроз или [отказ в обслуживании (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) атак. Это правило активируется, если:
 
 - обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
 
@@ -38,27 +38,27 @@ ms.locfileid: "55921410"
 
 - <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> свойству присваивается синтаксического анализа.
 
-- недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
+- Недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver>.
 
-- The XmlReader.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляра или без экземпляра.
+- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> Метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляра или без экземпляра.
 
 - <xref:System.Xml.XmlReader> создается с небезопасные параметры или значения.
 
-В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
+В каждом из этих случаев результат будет одинаковым: злоумышленнику будет предоставляться содержимое из любой системы или сети общих папок на компьютере, где обрабатывается XML, или обработка DTD может использоваться как отказ в обслуживании.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
 - Перехватывайте и обрабатывайте все исключения XmlTextReader Exception соответствующим образом, чтобы не допустить раскрытия информации.
 
-- Используйте <xref:System.Xml.XmlSecureResolver> , чтобы ограничить набор ресурсов, к которым может получить доступ XmlTextReader.
+- Используйте <xref:System.Xml.XmlSecureResolver> для ограничения ресурсов, которые может получить доступ XmlTextReader.
 
 - Не разрешайте <xref:System.Xml.XmlReader> открывать какие-либо внешние ресурсы, установив для свойства <xref:System.Xml.XmlResolver> значение **NULL**.
 
-- Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> назначено из доверенного источника.
+- Убедитесь, что <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> свойство назначено из доверенного источника.
 
 **.NET 3.5 и более ранних версий**
 
-- Отключите обработку DTD при работе с недоверенными источниками, задав для свойства <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> значение **true** .
+- Отключите обработку DTD при работе с недоверенными источниками, задав <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> свойства **true**.
 
 - Класс XmlTextReader содержит полное требование наследования доверия.
 
@@ -204,7 +204,7 @@ public static void TestMethod(string xml)
 {
     XmlDocument doc = new XmlDocument() { XmlResolver = null };
     System.IO.StringReader sreader = new System.IO.StringReader(xml);
-    XmlTextReader reader = new XmlTextReader(sreader) { DtdProcessing = DtdProcessing.Prohibit };
+    XmlReader reader = XmlReader.Create(sreader, new XmlReaderSettings() { XmlResolver = null });
     doc.Load(reader);
 }
 ```
@@ -243,7 +243,7 @@ namespace TestNamespace
         public void TestMethod(Stream stream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(UseXmlReaderForDeserialize));
-            XmlTextReader reader = new XmlTextReader(stream) { DtdProcessing = DtdProcessing.Prohibit } ;
+            XmlReader reader = XmlReader.Create(stream, new XmlReaderSettings() { XmlResolver = null });
             serializer.Deserialize(reader );
         }
     }
@@ -280,7 +280,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlTextReader reader = new XmlTextReader(path) { DtdProcessing = DtdProcessing.Prohibit };
+            XmlReader reader = XmlReader.Create(path, new XmlReaderSettings() { XmlResolver = null });
             XPathDocument doc = new XPathDocument(reader);
         }
     }
@@ -316,22 +316,6 @@ namespace TestNamespace
 ```
 
 ### <a name="violations"></a>Нарушения
-
-```csharp
-using System.Xml;
-
-namespace TestNamespace
-{
-    public class TestClass
-    {
-        public void TestMethod(string path)
-        {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Parse };
-            XmlReader reader = XmlReader.Create(path, settings); // warn
-        }
-    }
-}
-```
 
 ```csharp
 using System.Xml;
@@ -378,7 +362,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Prohibit };
+            XmlReaderSettings settings = new XmlReaderSettings() { XmlResolver = null };
             XmlReader reader = XmlReader.Create(path, settings);
         }
     }

@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910432"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195129"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского процессора директив
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 
 *Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.
 
@@ -34,7 +34,7 @@ ms.locfileid: "55910432"
 
 - Тестирование процессора директив
 
-## <a name="create-a-custom-directive-processor"></a>Создание пользовательского процессора директив
+## <a name="create-a-custom-directive-processor"></a>Создание пользовательского обработчика директив
 
 В данном пошаговом руководстве вы создадите пользовательский процессор директив. Вы добавите пользовательскую директиву, которая считывает XML-файл, сохраняет его в переменной <xref:System.Xml.XmlDocument> и предоставляет доступ к нему через свойство. В разделе "Тестирование процессора директив" вы используете это свойство в текстовом шаблоне для доступа к XML-файлу.
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)

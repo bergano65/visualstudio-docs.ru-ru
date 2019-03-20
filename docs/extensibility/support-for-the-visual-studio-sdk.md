@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873445"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193900"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 Несколько вариантов поддержки доступны для пользователей с вопросами о том, как расширения Visual Studio интегрированной среды разработки (IDE).
@@ -54,9 +54,9 @@ ms.locfileid: "57873445"
 
 ### <a name="developer-tools-support"></a>Поддержка средств разработчика
 
-Также можно приобрести поддержку. Широкий набор предложений поддержки доступны в категории средств разработчика в [справки (Майкрософт) и центры поддержки](http://go.microsoft.com/fwlink/?LinkID=82383).
+Также можно приобрести поддержку. Широкий набор предложений поддержки доступны в категории средств разработчика в [справки (Майкрософт) и центры поддержки](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Клиенты, желающие использовать [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] для разработки сложных пакетов можно купить услугу договор на техническую поддержку уровня Premier с корпорацией Майкрософт. Дополнительные сведения см. в разделе [поддержка Microsoft Premier](https://support.microsoft.com/premier). Для небольших компаний [преимущества поддержки партнеров](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) может быть Заманчивой альтернативой традиционных предложение поддержки уровня Premier.
+Клиенты, желающие использовать [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] для разработки сложных пакетов можно купить услугу договор на техническую поддержку уровня Premier с корпорацией Майкрософт. Дополнительные сведения см. в разделе [поддержка Microsoft Premier](https://support.microsoft.com/premier). Для небольших компаний [расширенной поддержки для партнеров](https://partner.microsoft.com/support/advanced-cloud-support) может быть Заманчивой альтернативой традиционных предложение поддержки уровня Premier.
 
 > [!NOTE]
 > План поддержки Standard не может использоваться для консультации или для получения рекомендаций.
