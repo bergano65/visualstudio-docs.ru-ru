@@ -1,5 +1,4 @@
 # [Отладка в Visual Studio](debugging-in-visual-studio.md)
-# [Новые возможности отладчика в Visual Studio 2015](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [Основы отладки](debugger-basics.md)
 ## [Начало работы с отладчиком](getting-started-with-the-debugger.md)
 ## [Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md)

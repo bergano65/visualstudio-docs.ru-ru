@@ -1,6 +1,6 @@
 ---
 title: Получение свойств проекта | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
@@ -11,22 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7344c94f12962d34b2f4c38b86e83b0cb6a5e588
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684953"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194999"
 ---
 # <a name="get-project-properties"></a>Получение свойств проекта
+
 В этом пошаговом руководстве показано, как к свойствам проекта отображается в окне инструментов.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+
+Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Создайте проект VSIX и добавить окно инструментов
 
-1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `ProjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.
+1. Все расширения Visual Studio начинается с развертывания проект VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `ProjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, выполняя поиск «vsix».
 
 2. Добавление окна инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `ProjectPropertiesToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **окно инструментов Custom**. В **имя** в нижней части диалогового окна, измените имя файла для `ProjectPropertiesToolWindow.cs`. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
 
@@ -34,7 +36,7 @@ ms.locfileid: "56684953"
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Для отображения свойств проекта в окне инструментов
 
-1.  В файле ProjectPropertiesToolWindowCommand.cs добавьте следующие операторы using.
+1. В файле ProjectPropertiesToolWindowCommand.cs, добавьте следующие операторы using.
 
     ```csharp
     using EnvDTE;
@@ -42,9 +44,9 @@ ms.locfileid: "56684953"
 
     ```
 
-2.  В *ProjectPropertiesToolWindowControl.xaml*, удалить существующую кнопку и добавление элемента управления TreeView из области элементов. Можно также удалить обработчик событий click из *ProjectPropertiesToolWindowControl.xaml.cs* файла.
+2. В *ProjectPropertiesToolWindowControl.xaml*, удалить существующую кнопку и добавление элемента управления TreeView из области элементов. Можно также удалить обработчик событий click из *ProjectPropertiesToolWindowControl.xaml.cs* файла.
 
-3.  В *ProjectPropertiesToolWindowCommand.cs*, используйте `ShowToolWindow()` метод, чтобы открыть проект и прочитать его свойства, затем добавьте свойства в виде дерева. Код для ShowToolWindow должен выглядеть следующим образом:
+3. В *ProjectPropertiesToolWindowCommand.cs*, используйте `ShowToolWindow()` метод, чтобы открыть проект и прочитать его свойства, затем добавьте свойства в виде дерева. Код для ShowToolWindow должен выглядеть следующим образом:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -91,10 +93,10 @@ ms.locfileid: "56684953"
     }
     ```
 
-4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.
+4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.
 
-5.  В экспериментальном экземпляре откройте проект.
+5. Откройте проект в экспериментальном экземпляре.
 
-6.  В **представление** > **Other Windows** щелкните **ProjectPropertiesToolWindow**.
+6. В **представление** > **Other Windows** щелкните **ProjectPropertiesToolWindow**.
 
-     Вы увидите дерево в окне инструментов вместе с именем первого проекта и всех его свойств проекта.
+  Вы увидите дерево в окне инструментов вместе с именем первого проекта и всех его свойств проекта.
