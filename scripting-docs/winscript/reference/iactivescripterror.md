@@ -2,7 +2,6 @@
 title: Iactivescripterror — | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a4a338ae8ebfcacae66b1890075c20bdee086
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347103"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144424"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 Объект, реализующий этот интерфейс передается [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) метод всякий раз, когда обработчик скриптов сталкивается с необработанной ошибкой. Затем узел вызывает методы этого объекта для получения сведений о возникшей ошибке.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Извлекает сведения об ошибке.|  
 |[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Извлекает расположение в исходном коде, где произошла ошибка.|  

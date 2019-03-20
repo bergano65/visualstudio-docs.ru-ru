@@ -2,7 +2,6 @@
 title: Интерфейс IScriptScriptlet | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b7c4af7769a1a2851e9be4e2639a324a3c06fb
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: c11aada6b8c39c7dd5f0b2a6b30cdd837aa0edda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345920"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151262"
 ---
 # <a name="iscriptscriptlet-interface"></a>Интерфейс IScriptScriptlet
 Объект, реализующий `IScriptScriptlet` интерфейс представляет сценарий обработчика событий.  
@@ -28,7 +27,7 @@ ms.locfileid: "54345920"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Возвращает имя события, который связан со скриптлетом.|  
 |[IScriptScriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Возвращает имя простых событий, который связан с пользователи. Это имя одного слова, которое не содержит пробелов.|  

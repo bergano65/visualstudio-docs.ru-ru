@@ -2,7 +2,6 @@
 title: Активных скриптов Profiler константы, перечисления и структуры | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d367374e4402da2d30cd8a855a509299363f882
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1d39e6feb2cddd0c573368db9bf50b1e77f2e48d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349131"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154729"
 ---
 # <a name="active-script-profiler-constants-enumerations-and-structures"></a>Константы, перечисления и структуры профилировщика активных скриптов
 Следующие перечисления используются интерфейсы Profiler активных скриптов.  
@@ -39,7 +38,7 @@ ms.locfileid: "54349131"
 |[Перечисление PROFILER_RELATIONSHIP_INFO](../../winscript/reference/profiler-relationship-info-enumeration.md)|Представляет сведения об объекте в связи. Используется в [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).|  
 |[Перечисление PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md)|Указывает тип скрипта.|  
   
-|Структуры|Описание|  
+|Структуры|Описание:|  
 |----------------|-----------------|  
 |[Структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md)|Представляет объекты кучи для сбора [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
 |[Структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md)|Представляет Дополнительные сведения об объектах в куче.|  
