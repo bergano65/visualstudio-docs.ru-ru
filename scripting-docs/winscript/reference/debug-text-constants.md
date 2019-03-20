@@ -2,7 +2,6 @@
 title: Константы DEBUG_TEXT | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64cd178dc997f30f7afbf80279dda42d3c1b7be4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 2342555c4ee92b403aa01cc0ca15bb805f2b002e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089353"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152802"
 ---
 # <a name="debugtext-constants"></a>Константы DEBUG_TEXT
 Используется во время [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).  
@@ -30,7 +29,7 @@ typedef DWORD DEBUG_TEXT;
   
 ## <a name="constants"></a>Константы  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |DWORD DEBUG_TEXT_ISEXPRESSION|0x00000001|Указывает, что текст представляет собой выражение, в отличие от инструкции. Этот флаг может влиять на анализе текста в некоторых языках.|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|Если возвращаемое значение, он будет использоваться в вызывающем объекте.|  

@@ -2,7 +2,6 @@
 title: Интерфейс IDebugSessionProviderEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: c9bf341adeaeb17c8986b1b30b12f58113aef562
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349222"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146777"
 ---
 # <a name="idebugsessionproviderex-interface"></a>Интерфейс IDebugSessionProviderEx
 Основной интерфейс, предоставляемый с помощью отладчика интегрированной среды разработки для отладки узла и инициирован языка. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчера отладки.  

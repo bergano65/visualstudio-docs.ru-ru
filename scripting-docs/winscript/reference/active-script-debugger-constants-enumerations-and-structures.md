@@ -2,7 +2,6 @@
 title: Константы отладчика активных скриптов, перечисления и структуры | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,25 +15,25 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b287001371b80612a2b09a9672e59aff51309cc9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345439"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153101"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Константы, перечисления и структуры отладчика активных скриптов
 Следующие константы, перечисления и структуры используются активными интерфейсами отладки.  
   
 ## <a name="constants-enumerations-and-structures"></a>Константы, перечисления и структуры  
   
-|Константы|Описание|  
+|Константы|Описание:|  
 |---------------|-----------------|  
 |[Константы APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Показывают текущее состояние отладки для приложений и потоков.|  
 |[Константы DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Флаги параметров, используемых во время [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)|Описывают атрибуты документа.|  
   
-|Перечисления|Описание|  
+|Перечисления|Описание:|  
 |------------------|-----------------|  
 |[Константы APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Показывают текущее состояние отладки для приложений и потоков.|  
 |[Перечисление APPLICATION_NODE_EVENT_FILTER](../../winscript/reference/application-node-event-filter-enumeration.md)|Показывает узлы, которые должны быть исключены с помощью фильтра.|  

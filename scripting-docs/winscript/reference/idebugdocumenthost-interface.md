@@ -2,7 +2,6 @@
 title: Интерфейс IDebugDocumentHost | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46684bf2264813a8daaa466b98119496ba85d4b9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 226e2700b471cd34496682d233e57946e124ff3b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346544"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155671"
 ---
 # <a name="idebugdocumenthost-interface"></a>Интерфейс IDebugDocumentHost
 Предоставляет функциональные возможности среды размещения, например раскраски синтаксиса, отладчику. `IDebugDocumentHelper::SetDebugDocumentHost` Метод принимает этот интерфейс в качестве аргумента.  
@@ -28,7 +27,7 @@ ms.locfileid: "54346544"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugDocumentHost::GetDeferredText](../../winscript/reference/idebugdocumenthost-getdeferredtext.md)|Возвращает диапазон символов, которые были добавлены с помощью `IDebugDocumentHelper::AddDeferredText`, в исходном документе узла.|  
 |[IDebugDocumentHost::GetScriptTextAttributes](../../winscript/reference/idebugdocumenthost-getscripttextattributes.md)|Возвращает атрибуты текста для блока текста документа.|  
