@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983733"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069701"
 ---
 # <a name="create-an-android-native-activity-app"></a>Создание приложения Android Native Activity
 
@@ -31,9 +31,7 @@ ms.locfileid: "54983733"
 
 В этом учебном руководстве вы сначала создадите проект Android Native Activity, а затем выполните сборку и запуск приложения по умолчанию в эмуляторе Visual Studio для Android.
 
-### <a name="to-create-a-new-project"></a>Создание проекта
-
-1. Запустите Visual Studio. В строке меню выберите **Файл** > **Создать** > **Проект**.
+1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
 
 2. В диалоговом окне **Новый проект** в меню **Шаблоны** последовательно выберите **Visual C++** > **Кроссплатформенное приложение**, а затем выберите шаблон **Приложение Native-Activity (Android)**.
 

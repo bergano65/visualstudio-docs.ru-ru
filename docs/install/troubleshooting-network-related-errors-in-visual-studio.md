@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 94fcaab3c02524584df5349d481e59067a7253aa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796488"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982666"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -118,4 +118,4 @@ Visual Studio использует протокол TLS 1.2 для подклю�
 
 * [Установка и использование Visual Studio в среде, защищенной брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-* [Установка Visual Studio 2017](install-visual-studio.md)
+* [Установка Visual Studio](install-visual-studio.md)

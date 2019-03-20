@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718561"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194954"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 
@@ -103,7 +103,7 @@ ms.locfileid: "56718561"
 
 ### <a name="codebases-that-contain-c-code"></a>Базы кода с кодом C++
 
-Сведения о том, как открыть код C++ в Visual Studio без создания решений или проектов, вы найдете в статье [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Проекты "Открыть папку" для C++).
+Сведения о том, как открыть код C++ в Visual Studio без создания решений или проектов, вы найдете в статье [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Базы кода, содержащие проект Visual Studio
 
@@ -118,6 +118,6 @@ ms.locfileid: "56718561"
 ## <a name="see-also"></a>См. также
 
 - [Настройка задач сборки и отладки для режима разработки "Открытая папка"](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Проекты "Открыть папку" для C++)
-- [CMake projects in C++](/cpp/ide/cmake-tools-for-visual-cpp) (Проекты CMake в C++)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)
+- [CMake projects in C++](/cpp/build/cmake-projects-in-visual-studio) (Проекты CMake в C++)
 - [Написание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md)

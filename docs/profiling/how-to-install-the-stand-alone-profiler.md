@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612781"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867260"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Как выполнить Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.
@@ -26,7 +26,7 @@ ms.locfileid: "56612781"
 
 ### <a name="to-install-the-stand-alone-profiler"></a>Установка автономного профилировщика
 
-1. Скачайте [средства оценки производительности для Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+1. Скачайте [средства оценки производительности для Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio).
 
 1. Найдите автономный установщик (*vs_standaloneprofiler.exe*) в папке, в которую были скачаны средства оценки производительности, и запустите его.
 

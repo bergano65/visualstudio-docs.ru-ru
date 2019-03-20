@@ -1,7 +1,7 @@
 ---
 title: Как используются пути поиска Python
 description: В Visual Studio реализованы более конкретные способы указания путей поиска для сред и проектов, позволяющие избежать использования переменных уровня системы.
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929912"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147739"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Как пути поиска Python используются в Visual Studio
 
@@ -31,7 +31,12 @@ ms.locfileid: "55929912"
 
 Чтобы добавить путь поиска, в **обозревателе решений** разверните узел проекта, щелкните правой кнопкой мыши элемент **Пути поиска** и выберите **Добавить папку для пути поиска**.
 
+::: moniker range="vs-2017"
 ![Команда "Добавить папку в путь поиска" для параметра "Пути поиска" в обозревателе решений](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Команда "Добавить папку в путь поиска" для параметра "Пути поиска" в обозревателе решений](media/search-paths-command-2019.png)
+::: moniker-end
 
 Эта команда отображает браузер, в котором можно выбрать включаемую папку.
 

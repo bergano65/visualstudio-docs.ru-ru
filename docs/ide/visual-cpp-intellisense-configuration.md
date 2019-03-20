@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222900"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194062"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
@@ -52,7 +52,7 @@ ms.locfileid: "57222900"
 
 ### <a name="open-folder-projects"></a>Проекты в виде папок
 
-При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
+При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
 
 Если в файле CppProperties.json есть синтаксическая ошибка, функция IntelliSense для затронутых файлов будет работать неправильно. В окне вывода Visual Studio будет отображаться ошибка.
 
@@ -72,7 +72,7 @@ ms.locfileid: "57222900"
 
    ![Анализатор тегов предлагает определить существующую функцию](media/vcpp-intellisense-tag-parser-function.png)
 
-Чтобы устранить подобные проблемы, создайте файл с именем **cpp.hint** в корневом каталоге решения. Дополнительные сведения см. в статье [Файлы подсказок](/cpp/ide/hint-files).
+Чтобы устранить подобные проблемы, создайте файл с именем **cpp.hint** в корневом каталоге решения. Дополнительные сведения см. в статье [Файлы подсказок](/cpp/build/reference/hint-files).
 
 Ошибки анализатора тегов отображаются в окне **Список ошибок**.
 

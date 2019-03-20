@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921241"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868024"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Редактирование кода R в Visual Studio
 
@@ -97,7 +97,7 @@ f <- function(a) { return(a + 1) }
 
 ## <a name="inserting-roxygen-comments"></a>Вставка примечаний Roxygen
 
-RTVS имеет ярлык для создания примечаний [Roxygen](http://roxygen.org/) с помощью имен параметров функции. Просто введите `###` в пустой строке над определением функции.
+RTVS имеет ярлык для создания примечаний [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) с помощью имен параметров функции. Просто введите `###` в пустой строке над определением функции.
 
 ![Анимация вставки примечания Roxygen](media/editing-roxygen-comments.gif)
 

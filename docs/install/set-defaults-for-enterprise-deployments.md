@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910822"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984148"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio
 
 Вы можете задать политики реестра, влияющие на развертывание Visual Studio. Эти политики являются глобальными для нового установщика и изменяют следующие параметры:
 
@@ -62,6 +62,6 @@ ms.locfileid: "55910822"
 
 ## <a name="see-also"></a>См. также
 
- * [Установка Visual Studio](install-visual-studio.md)
- * [Отключение или перемещение кэша пакетов](disable-or-move-the-package-cache.md)
- * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Установка Visual Studio](install-visual-studio.md)
+- [Отключение или перемещение кэша пакетов](disable-or-move-the-package-cache.md)
+- [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914088"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869280"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
 
@@ -29,7 +29,7 @@ ms.locfileid: "55914088"
 
 ## <a name="generate-a-coded-web-performance-test"></a>Создание закодированного веб-теста производительности
 
-1.  Если веб-тест производительности еще не создан, см. раздел [Запись веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Если веб-тест производительности еще не создан, см. раздел [Запись веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Создайте закодированный тест.
 

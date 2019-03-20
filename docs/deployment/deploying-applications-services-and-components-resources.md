@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628992"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870296"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "56628992"
 - [служба приложений Azure](#azure-app-service);
 - [виртуальные машины Azure](#azure-virtual-machines);
 - [файловая система](#file-system);
-- [пользовательские целевые объекты (IIS, FTP и т. д.)](#custom-targets), к которым относятся все произвольные веб-серверы.
+- [пользовательские целевые объекты (IIS, FTP и т. д.)](#custom-targets-iis-ftp), к которым относятся все произвольные веб-серверы.
 
 На вкладке **Публикация** можно выбрать существующий профиль публикации, импортировать существующий или создать новый с помощью параметров, описанных здесь. См. [общие сведения о развертывании и параметрах публикации в IDE для разных типов приложений](../deployment/deploying-applications-services-and-components.md).
 

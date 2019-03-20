@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318736"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869087"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 
@@ -25,7 +25,7 @@ ms.locfileid: "56318736"
 > В большинстве случаев мы рекомендуем использовать эмулятор Google Android вместо эмулятора Android для Visual Studio:
 > - Эмулятор Android для Visual Studio не поддерживается в версиях старше Visual Studio 2015.
 > - Образы эмулятора версии, старше Android 6.0, не доступны для эмулятора Android для Visual Studio.
-> - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
 >
 > Дополнительные сведения о настройке и использовании Google Android Emulator см. в [этой статье](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).

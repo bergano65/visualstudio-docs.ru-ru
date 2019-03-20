@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796638"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983836"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Обновление сетевой установки Visual Studio 2017
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Обновление сетевой установки Visual Studio
 
 Вы можете обновлять макет сетевой установки Visual Studio до последних обновлений продуктов, что позволяет использовать его не только в качестве точки установки обновлений Visual Studio, но и для поддержки уже развернутых установок на клиентских рабочих станциях.
 
