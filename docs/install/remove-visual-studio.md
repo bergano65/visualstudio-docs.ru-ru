@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909653"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982874"
 ---
-# <a name="remove-visual-studio-2017"></a>Удаление Visual Studio 2017
+# <a name="remove-visual-studio"></a>Удаление Visual Studio
 
 Если произошла неустранимая ошибка, из-за которой невозможно восстановить или удалить Visual Studio, вы можете запустить средство `InstallCleanup.exe`, чтобы удалить файлы установки и сведения о продукте для всех установленных экземпляров Visual Studio 2017 и более поздних версий. Запуск этого средства следует рассматривать как крайнюю меру в случае, если не удается восстановить или удалить среду, так как оно может удалить компоненты из других установок Visual Studio или других продуктов, которые нужно восстановить.
 
@@ -54,7 +54,7 @@ ms.locfileid: "55909653"
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio 2017](install-visual-studio.md)
-* [Обновление Visual Studio 2017](update-visual-studio.md)
-* [Изменение Visual Studio 2017](modify-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
+* [Установка Visual Studio](install-visual-studio.md)
+* [Обновление Visual Studio](update-visual-studio.md)
+* [Изменение Visual Studio](modify-visual-studio.md)
+* [Удаление Visual Studio](uninstall-visual-studio.md)

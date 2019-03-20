@@ -1,7 +1,7 @@
 ---
 title: Использование PyLint для кода Python
 description: Запуск PyLint в Visual Studio для проверки проблем в коде Python, включая параметры командной строки для настройки анализа кода.
-ms.date: 01/28/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a658035d24a7a92dee2f26ae9a65535ef14d029d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d18c7cb5f27695478e296d308347aaaf1b20f94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939702"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153738"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Проверка кода Python с помощью PyLint
 

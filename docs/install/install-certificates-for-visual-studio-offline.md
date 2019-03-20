@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737044"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983004"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Установка сертификатов, необходимых для установки Visual Studio в автономном режиме
 
@@ -113,6 +113,7 @@ Visual Studio рассчитана в основном на установку �
 ## <a name="checking-if-certificates-are-already-installed"></a>Проверка наличия необходимых сертификатов
 
 Чтобы проверить установку системы, можно выполнить следующие действия.
+
 1. Запустите **mmc.exe**.<br/>
   1. В меню "Файл" выберите **Добавить или удалить оснастку**.<br/>
   2. Дважды щелкните **Сертификаты**, выберите **Учетная запись компьютера** и нажмите кнопку **Далее**.<br/>

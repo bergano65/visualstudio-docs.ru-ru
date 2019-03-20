@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Вход может завершиться ошибкой, если используются дополнительные имена (псевдонимы)
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841631"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195155"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Вход в подписки Visual Studio может быть неудачным при использовании псевдонимов
 
@@ -28,7 +28,7 @@ ms.locfileid: "56841631"
 
 У администратора такой системы есть два способа обеспечить подписчикам успешный вход в систему [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - Первый вариант — применять в качестве адреса назначения в Volume Licensing Service Center (VLSC) исключительно учетную запись каталога. Рекомендуем использовать именно этот метод. Подробности вы найдете в разделе этой статьи [Назначение подписчиков учетной записи каталога](#assigning-subscribers-to-a-directory-account).
-- Второй вариант (менее безопасный) — предоставить подписчикам право связать рабочий или учебный адрес электронной почты с личной учетной записью (учетной записью Майкрософт, MSA). Подробности вы найдете в разделе этой статьи [Определение рабочей или учебной учетной записи как личной учетной записи](#defining-a-work-or-school-account-as-a-personal-account ).
+- Второй вариант (менее безопасный) — предоставить подписчикам право связать рабочий или учебный адрес электронной почты с личной учетной записью (учетной записью Майкрософт, MSA). Дополнительные сведения см. в разделе [Определение рабочей или учебной учетной записи как личной учетной записи](#defining-a-work-or-school-account-as-a-personal-account) этой статьи.
 
 > [!NOTE]
 > Когда компания выполнит миграцию на новый [портал управления](https://manage.visualstudio.com) подписками Visual Studio, вы сможете воспользоваться преимуществами нового интерфейса администрирования, который позволяет указать в профиле подписчика одновременно и адрес электронной почты, и адрес каталога. Подробнее о миграции см. [здесь](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).

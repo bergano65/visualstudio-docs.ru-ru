@@ -1,6 +1,6 @@
 ---
 title: Анализ использования памяти без отладки | Документация Майкрософт
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615924"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873458"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Анализ использования памяти без отладчика
 
@@ -72,7 +72,7 @@ ms.locfileid: "56615924"
 
 Числа на панелях **Моментальный снимок** показывают байты и объекты в памяти при создании каждого моментального снимка, а также разницу между данным и предыдущим снимками.
 
-Эти числа являются ссылками, открывающими подробные представления отчетов **Использование памяти** в новых окнах Visual Studio. [Подробный отчет о снимках](#snapshot-details-report) отображает типы и экземпляры в одном моментальном снимке. [Разностный отчет по снимкам (diff)](#snapshot-difference-diff-reports) показывает сравнение типов и экземпляров на двух моментальных снимках.
+Эти числа являются ссылками, открывающими подробные представления отчетов **Использование памяти** в новых окнах Visual Studio. [Подробный отчет о снимках](#snapshot-details-reports) отображает типы и экземпляры в одном моментальном снимке. [Разностный отчет по снимкам (diff)](#snapshot-difference-diff-reports) показывает сравнение типов и экземпляров на двух моментальных снимках.
 
   ![Ссылки для просмотра снимков](../profiling/media/memuse__snapshotview_numbered.png "Ссылки для просмотра снимков")
 

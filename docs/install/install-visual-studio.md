@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607035"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983550"
 ---
-# <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
+# <a name="install-visual-studio"></a>Установка Visual Studio
 
 Предлагаем ознакомиться с новым способом установки Visual Studio. В этой версии стало проще выбирать и устанавливать только нужные компоненты. Мы также сократили минимальные требования к месту на диске, поэтому установка Visual Studio выполняется еще быстрее и с меньшим влиянием на функционирование системы.
 
@@ -130,9 +130,9 @@ ms.locfileid: "56607035"
 
 ## <a name="see-also"></a>См. также
 
-* [Обновление Visual Studio 2017](update-visual-studio.md)
-* [Изменение Visual Studio 2017](modify-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Обновление Visual Studio](update-visual-studio.md)
+* [Изменение Visual Studio](modify-visual-studio.md)
+* [Удаление Visual Studio](uninstall-visual-studio.md)
+* [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Установка Visual Studio для Mac](/visualstudio/mac/installation)
