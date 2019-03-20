@@ -14,14 +14,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa92e5cf08114b2e5e7f993a70dbc228e16c6c64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8984f37709f0f24722ae65a04972f940e955ff9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760048"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867581"
 ---
 # <a name="peopletrax-sample-profiling-tools"></a>Пример PeopleTrax (средства профилирования)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Пример приложения PeopleTrax используется в ряде пошаговых руководств по Средствам профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Вы можете скачать ZIP-файл, содержащий код приложения People Trax, из [Галереи кода MSDN](http://go.microsoft.com/fwlink/?LinkId=160299).
+Пример приложения PeopleTrax используется в ряде пошаговых руководств по Средствам профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Вы можете скачать ZIP-файл, содержащий код приложения People Trax, из [Галереи кода MSDN](https://code.msdn.microsoft.com/).

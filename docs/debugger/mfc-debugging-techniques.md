@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316877"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154810"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 Эти методы могут пригодиться при отладке программы MFC.
@@ -230,7 +230,7 @@ Total allocations: 67 bytes
 В программе MFC можно использовать [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) для помещения в дамп описания всех объектов в куче, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.
 
 > [!NOTE]
-> Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](#BKMK_Enabling_Memory_Diagnostics).
+> Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC автоматически отображает все потерянные объекты при выходе из программы, поэтому в точке выхода не нужно создавать для этого дополнительный код.

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844143"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195168"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Новые возможности Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ ms.locfileid: "56844143"
 
      В разделах[Отладка](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) и [Отладка на устройстве](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/)  [руководств для разработчиков Xamarin](http://developer.xamarin.com/guides) описываются практические принципы отладки.
 
--   **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
+-   **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
 
 ## <a name="debugging-and-diagnostics"></a>Отладка и диагностика
- Сведения о новых возможностях отладки см. в разделе [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Сведения о новинках в системе диагностики см. в разделе [новые возможности средств профилирования](./profiling/what-s-new-in-profiling-tools.md).
+Сведения о новинках в системе диагностики см. в разделе [новые возможности средств профилирования](./profiling/what-s-new-in-profiling-tools.md).
 
- Ниже перечислены новые и улучшенные инструменты, выполняющие различные виды диагностики и анализа кода:
+Ниже перечислены новые и улучшенные инструменты, выполняющие различные виды диагностики и анализа кода:
 
 ### <a name="perftips"></a>PerfTips
  PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Описание начала работы см. в записи блога [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).

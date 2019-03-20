@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802318"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867932"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Профилирование вычислительных узлов кластеров Microsoft Windows HPC можно выполнять методом выборки средств профилирования [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] или [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Дополнительные сведения о HPC см. в разделе [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) на странице веб-сайта корпорации Майкрософт.  
+Профилирование вычислительных узлов кластеров Microsoft Windows HPC можно выполнять методом выборки средств профилирования [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] или [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Дополнительные сведения о HPC см. в разделе [больших вычислений: HPC и пакетная служба](https://azure.microsoft.com/solutions/big-compute/) на веб-сайте Майкрософт.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для профилирования на вычислительном узле HPC нужно выполнить следующие действия.  
@@ -55,8 +55,8 @@ ms.locfileid: "54802318"
 |||  
 |-|-|  
 |*%HeadNode%*|Имя головного узла кластера.|  
-|*%FxPath%*|Путь к установщику [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. На [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] установочного носителя, путь: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Путь к автономной версии установщика средств профилирования. На [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] установочного носителя, путь: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Путь к установщику [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. На установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] этот путь — WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Путь к автономной версии установщика средств профилирования. На установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] этот путь — Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Профилирование в вычислительном узле HPC  
  Чтобы задать кластер HPC и целевые данные, нужно настроить сеанс профилирования с помощью мастера производительности HPC. На страницах свойств сеанса производительности можно задать дополнительные параметры. Средства профилирования автоматически развертывают необходимые целевые двоичные файлы и запускают профилировщик и приложение HPC.  

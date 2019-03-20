@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698993"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870524"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели в формата C# в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата. Можно также использовать описатели формата в **Интерпретация** окне **команда** окно в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и в окнах исходного кода. Если вы приостановите выполнение выражения в этих окон, результат будет отображаться в [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанный формат отображения.
@@ -51,6 +51,14 @@ ms.locfileid: "56698993"
 Добавить `my_var1` переменной **Watch** окна во время отладки, **Отладка** > **Windows** > **смотреть**  >  **Контрольное значение 1**. Далее щелкните переменную правой кнопкой мыши и выберите **Шестнадцатеричный вывод**. Теперь **Watch** окно показано значение 0x0065. Чтобы увидеть это значение как десятичное целое число, а не шестнадцатеричного целого числа, добавьте спецификатор десятичного формата **, d** в **имя** столбцов после имени переменной. **Значение** столбец, отображающий **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Можно просмотреть и выбрать из списка доступных спецификаторов формата, добавив запятую (,) к значению в **Watch** окна. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Описатели формата
 В следующей таблице описаны C# описателях для отладчика Visual Studio.

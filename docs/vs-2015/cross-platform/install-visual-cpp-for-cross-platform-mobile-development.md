@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762863"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869126"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Visual C++ для разработки кросс-платформенных м�
   
    По умолчанию установщик помещает Apache Ant в каталог C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps.  
   
-- [Эмулятор Microsoft Visual Studio для Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Эмулятор Microsoft Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    Установить и обновить эмулятор Microsoft Visual Studio для Android можно из галереи Visual Studio.  
   

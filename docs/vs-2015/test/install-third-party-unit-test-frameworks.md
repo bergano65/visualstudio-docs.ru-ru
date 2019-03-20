@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787885"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868718"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Установка платформ модульного тестирования сторонних поставщиков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "54787885"
 ### <a name="installing-from-the-web"></a>Установка из Интернета  
  Если вы знаете интересующую вас платформу:  
   
-1. Откройте [галерею Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) на веб-сайте MSDN.  
+1. Откройте [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 2. Введите имя платформы в поле **Найти**.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "54787885"
   
    Чтобы открыть список платформ с другими средствами тестирования:  
   
-4. Откройте [галерею Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) на веб-сайте MSDN.  
+4. Откройте [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 5. Щелкните **Обзор**.  
   

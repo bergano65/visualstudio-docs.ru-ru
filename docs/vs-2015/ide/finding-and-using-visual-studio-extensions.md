@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798484"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867765"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Поиск и использование расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54798484"
 >  Начиная с Visual Studio 2015, расширения, размещенные в коллекции Visual Studio, будут обновляться автоматически.  Этот параметр можно изменить с помощью диалогового окна **Расширения и обновления** .  Дополнительные сведения см. в разделе **Автоматическое обновление расширений** .
 
 ## <a name="finding-visual-studio-extensions"></a>Поиск расширений Visual Studio
- Расширения можно установить из [галереи Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) или из [галереи примеров](http://go.microsoft.com/fwlink/?LinkId=245175) на веб-сайте Майкрософт. К числу расширений относятся элементы управления, примеры, шаблоны, инструменты или другие компоненты, расширяющие возможности Visual Studio. Visual Studio поддерживает расширения в формате VSIX: шаблоны проектов, шаблоны элементов, элементы для **панели элементов** , компоненты MEF и пакеты VSPackage. Кроме того, можно загрузить и установить расширения на основе MSI, однако их будет невозможно включить или отключить в диалоговом окне **Расширения и обновления** . Коллекция Visual Studio содержит расширения VSIX и MSI.
+ Можно установить расширения из [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или [коллекции примеров](https://code.msdn.microsoft.com/vstudio) на веб-сайте Майкрософт. К числу расширений относятся элементы управления, примеры, шаблоны, инструменты или другие компоненты, расширяющие возможности Visual Studio. Visual Studio поддерживает расширения в формате VSIX: шаблоны проектов, шаблоны элементов, элементы для **панели элементов** , компоненты MEF и пакеты VSPackage. Кроме того, можно загрузить и установить расширения на основе MSI, однако их будет невозможно включить или отключить в диалоговом окне **Расширения и обновления** . Коллекция Visual Studio содержит расширения VSIX и MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Установка и удаление расширений Visual Studio
  В разделе **Расширения и обновления**найдите нужное расширение для установки. (Если известно имя или часть имени расширения, можно выполнить поиск в окне **Поиск в коллекции Visual Studio**.) Щелкните **Скачать**, а затем — **Установить**. Для загрузки расширения необходимо перезапустить Visual Studio.

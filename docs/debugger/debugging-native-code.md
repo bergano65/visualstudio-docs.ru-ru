@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685499"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870419"
 ---
 # <a name="debugging-native-code"></a>Отладка машинного кода
 В этом разделе освещаются основные проблемы и технологии отладки для приложений, написанных в машинных кодах. В данном разделе описаны методы высшего уровня. Механизм использования отладчика Visual Studio, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ ms.locfileid: "56685499"
  [Сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md) ссылки на крупные разделы документации об отладке. В этих разделах описываются: новые возможности отладчика, параметры настройки и подготовка, точки останова, обработка исключений, функция "изменить и продолжить", отладка машинного кода, отладка SQL, ссылки на интерфейс пользователя.
 
 ## <a name="see-also"></a>См. также раздел
- [Безопасность отладчика](../debugger/debugger-security.md) [отладки в Visual Studio](../debugger/index.md)
+
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Отладка в Visual Studio](../debugger/index.md)

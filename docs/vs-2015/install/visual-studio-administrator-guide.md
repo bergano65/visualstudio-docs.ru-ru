@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834881"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868889"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последние версии документации Visual Studio 2017, см. в разделе [руководство администратора Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Visual Studio 2015 можно развернуть в сети до тех пор, пока каждый конечный компьютер отвечает [минимальным требованиям к установке](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Вы можете создать общую сетевую папку, запустив файл установки с параметром /layout, как описано в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), а затем скопировав его с локального компьютера в общую сетевую папку. При использовании ISO-ОБРАЗА, можно подключить ISO-образ и передать его или скопируйте его в общую сетевую папку.  
+Visual Studio 2015 можно развернуть в сети до тех пор, пока каждый конечный компьютер отвечает [минимальным требованиям к установке](https://visualstudio.microsoft.com/vs/older-downloads/). Вы можете создать общую сетевую папку, запустив файл установки с параметром /layout, как описано в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), а затем скопировав его с локального компьютера в общую сетевую папку. При использовании ISO-ОБРАЗА, можно подключить ISO-образ и передать его или скопируйте его в общую сетевую папку.  
   
  Обратите внимание, что установки из общей сетевой папки "запоминают" исходное расположение, из которого они выполнялись. Это означает, что при восстановлении клиентского компьютера может потребоваться вернуться к сетевой папке, из которой клиент был установлен изначально. В связи с этим необходимо внимательно отнестись к выбору сетевых расположений, которые должны соответствовать времени существования клиентов Visual Studio 2015 в вашей организации.  
   

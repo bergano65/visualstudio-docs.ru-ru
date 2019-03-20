@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure | Документация Майкрософт
+title: Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803735"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195077"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ ms.locfileid: "54803735"
     > [!NOTE]
     >  Может потребоваться изменить число в URL-адресе. Для каждой мобильной службы в Microsoft Azure требуется уникальный URL-адрес.  
   
-     Этот параметр задает URL-адрес для службы *https://wpfquickstart01.azure-mobile.net/*.  
+     Этот параметр задает URL-адрес для службы `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  В списке **База данных** выберите один из вариантов. Так как это приложение, вероятно, будет использоваться не очень интенсивно, можно выбрать вариант **Создать бесплатную базу данных 20 МБ SQL** или бесплатную базу данных, уже связанную с вашей подпиской.  
   
