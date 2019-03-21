@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868147"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195181"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
@@ -418,7 +418,7 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 
 Общие сведения, см. в разделе [расширяемость платформы — часть 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) и [расширяемость платформы — часть 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-Проще говоря, на страницах свойств вы увидите в **свойства проекта** диалоговое окно для проекта C++ определяются *правило* файлов. Файл правил задает набор свойств для отображения на странице свойств и как и их сохранения в проекте файл. Файлы правил — это файлы XML, использующих формат Xaml. Описываются типы, используемые для сериализации их в [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Дополнительные сведения об использовании файлов правил в проектах см. в разделе [файлы правил XML страницы свойство](/cpp/ide/property-page-xml-files).
+Проще говоря, на страницах свойств вы увидите в **свойства проекта** диалоговое окно для проекта C++ определяются *правило* файлов. Файл правил задает набор свойств для отображения на странице свойств и как и их сохранения в проекте файл. Файлы правил — это файлы XML, использующих формат Xaml. Описываются типы, используемые для сериализации их в [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Дополнительные сведения об использовании файлов правил в проектах см. в разделе [файлы правил XML страницы свойство](/cpp/build/reference/property-page-xml-files).
 
 Необходимо добавить файлы правил `PropertyPageSchema` группы элементов:
 
@@ -636,8 +636,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) предоставляет обработчик построения и расширяемый формат на основе XML для файлов проекта. Вы должны быть знакомы с basic [основные возможности MSBuild](../msbuild/msbuild-concepts.md) и с тем, как [MSBuild для Visual C++](/cpp/build/msbuild-visual-cpp-overview) система проектов works для расширения Visual C++.
+Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) предоставляет обработчик построения и расширяемый формат на основе XML для файлов проекта. Вы должны быть знакомы с basic [основные возможности MSBuild](../msbuild/msbuild-concepts.md) и с тем, как [MSBuild для Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) система проектов works для расширения Visual C++.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) предоставляет расширение API-интерфейсы, используемые CPS и система проектов Visual C++. Обзор использования MEF, CPS, см. в разделе [CPS и MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) в [VSProjectSystem Обзор MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Можно настроить существующие системы сборки для добавления этапов построения или новых типов файлов. Дополнительные сведения см. в разделе [Общие сведения о MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) и [работа со свойствами проекта](/cpp/ide/working-with-project-properties).
+Можно настроить существующие системы сборки для добавления этапов построения или новых типов файлов. Дополнительные сведения см. в разделе [Общие сведения о MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) и [работа со свойствами проекта](/cpp/build/working-with-project-properties).
