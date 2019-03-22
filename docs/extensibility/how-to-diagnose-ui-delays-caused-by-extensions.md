@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719487"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324348"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Практическое руководство. Диагностика задержек в пользовательском интерфейсе, связанных с расширениями
 
@@ -43,7 +43,7 @@ ms.locfileid: "56719487"
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Перезапустите VS с действием, вход в систему
 
-Visual Studio можно создавать «журнал действий», предоставляющий сведения, полезные при отладке проблемы. Чтобы включить действия, ведение журнала в Visual Studio, запустите Visual Studio с `/log` параметр командной строки. После запуска Visual Studio, журнал действий хранятся в следующем расположении:
+Visual Studio можно создавать «журнал действий», предоставляющий сведения, полезные при отладке проблемы. Чтобы включить действия, ведение журнала в Visual Studio, откройте Visual Studio с `/log` параметр командной строки. После запуска Visual Studio, журнал действий хранятся в следующем расположении:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

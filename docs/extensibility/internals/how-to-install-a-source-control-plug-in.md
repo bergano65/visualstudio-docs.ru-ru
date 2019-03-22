@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635193"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323390"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Практическое руководство. Установка подключаемого модуля системы управления версиями
 Создание подключаемого модуля системы управления версиями состоит из трех этапов:
@@ -78,7 +78,7 @@ ms.locfileid: "56635193"
 
 4. Создайте подраздел с именем **InstalledSCCProviders** под **SourceCodeControlProvider** подраздел, а затем поместите одну запись в этом подразделе.
 
-    Имя этой записи понятное пользователю имя поставщика (то же как значение, указанное для операции SCCServerName), и значение, опять же, подраздел, созданное на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *программного обеспечения\\< название_организации\> \\< название продукта\>*.
+    Имя этой записи понятное пользователю имя поставщика (то же как значение, указанное для операции SCCServerName), и значение, опять же, подраздел, созданное на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< отображаемое имя\>** = *программного обеспечения\\< компании имя\>\\< название продукта\>*.
 
     Пример:
 

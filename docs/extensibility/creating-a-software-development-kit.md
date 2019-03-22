@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722269"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324072"
 ---
 # <a name="create-a-software-development-kit"></a>Создание пакета средств разработки программного обеспечения
 Пакет средств разработки программного обеспечения (SDK) — это коллекция интерфейсов API, который можно ссылаться как одного элемента в Visual Studio. **Диспетчер ссылок** диалоговом окне приводится список всех пакетов SDK, относящихся к проекту. При добавлении пакета SDK в проект, интерфейсы API доступны в Visual Studio.
@@ -65,17 +65,17 @@ ms.locfileid: "56722269"
 ### <a name="installation"></a>Установка
  Пакеты SDK расширений можно установить для конкретного пользователя или для всех пользователей без указания ключа реестра. Чтобы установить пакет SDK для всех пользователей, используйте следующий путь:
 
- *% Program Files%\Microsoft SDK\<целевую платформу > \v<platform version number>\ExtensionSDKs*
+ *% Program Files%\Microsoft SDK\<целевую платформу\>\v < номер версии платформы\>\ExtensionSDKs*
 
  Для установки конкретного пользователя используйте следующий путь:
 
- *Пакеты SDK %USERPROFILE%\AppData\Local\Microsoft\<целевую платформу > \v<platform version number>\ExtensionSDKs*
+ *Пакеты SDK %USERPROFILE%\AppData\Local\Microsoft\<целевую платформу\>\v < номер версии платформы\>\ExtensionSDKs*
 
  Если вы хотите использовать другое расположение, необходимо выполнить одно из следующих действий:
 
 1.  Укажите его в раздел реестра:
 
-     **Пакеты SDK HKLM\Software\Microsoft\Microsoft\<целевую платформу > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **Пакеты SDK HKLM\Software\Microsoft\Microsoft\<целевую платформу > \v < номер версии платформы\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      и добавьте раздел (по умолчанию), который имеет значение `<path to SDK><SDKName><SDKVersion>`.
 

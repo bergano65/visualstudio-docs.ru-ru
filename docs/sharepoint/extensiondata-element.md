@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbbd291888c9df1875afed64de034ab070ce8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 192b745580ab676dab476b4dcf31c15b9095be2a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608322"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324018"
 ---
 # <a name="extensiondata-element"></a>ExtensionData - элемент
   Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.
@@ -38,13 +38,13 @@ ms.locfileid: "56608322"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание|
+|Элемент|Описание:|
 |-------------|-----------------|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Необязательный элемент.<br /><br /> Представляет пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ/значение. Ключ и значение должны быть строками.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Описание:|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из `.spdata` файла.|
 
@@ -55,7 +55,7 @@ ms.locfileid: "56608322"
 
 |||
 |-|-|
-|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|ProjectItemModelSchema.xsd|
 |**Может быть пустым**|Нет|
