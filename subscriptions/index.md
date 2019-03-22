@@ -19,6 +19,7 @@ Searchscope: VS Subscription
 Администраторам нужно войти в систему на сайте [https://manage.visualstudio.com](https://manage.visualstudio.com), чтобы назначить подписки команде.<br>
 Подписчикам нужно войти в систему на сайте [https://my.visualstudio.com](https://my.visualstudio.com), чтобы получить доступ к преимуществам подписок.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

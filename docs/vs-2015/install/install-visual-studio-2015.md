@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799181"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873698"
 ---
 # <a name="install-visual-studio-2015"></a>Установка Visual Studio 2015
 
@@ -38,11 +38,11 @@ ms.locfileid: "54799181"
 
 |||
 |------------------|----------------|
-|![Скачайте Visual Studio](../install/media/downloads.png "файлы для загрузки") |**Скачиваемые файлы** Чтобы установить Visual Studio 2015, можно загрузить исполняемый файл продукта из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) странице (необходима подписка), или воспользуйтесь установочным носителем из коробочного продукта. [Дополнительные сведения о том, как загрузить текущие или предыдущие версии Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Дополнительные сведения о возможностях](../install/media/features.png "функции") |**Функции** Дополнительные сведения о функциях в Visual Studio 2015, см. заметки о выпуске [RTM](https://www.visualstudio.com/news/vs2015-vs), [с обновлением 1](https://www.visualstudio.com/news/vs2015-update1-vs), [с обновлением 2](https://www.visualstudio.com/news/vs2015-update2-vs), и [с обновлением 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Скачайте Visual Studio](../install/media/downloads.png "файлы для загрузки") |**Загружает**: чтобы установить Visual Studio 2015, можно загрузить исполняемый файл продукта из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) странице (необходима подписка), или воспользуйтесь установочным носителем из коробочного продукта. [Дополнительные сведения о том, как загрузить текущие или предыдущие версии Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
+|![Дополнительные сведения о возможностях](../install/media/features.png "функции") |**Функции**: Дополнительные сведения о функциях в Visual Studio 2015, см. заметки о выпуске [RTM](https://www.visualstudio.com/news/vs2015-vs), [с обновлением 1](https://www.visualstudio.com/news/vs2015-update1-vs), [с обновлением 2](https://www.visualstudio.com/news/vs2015-update2-vs), и [ Обновление 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
 |![Новые возможности в каждый номер SKU](../install/media/sku.png "номера SKU") |**Номера SKU**: чтобы узнать, какие компоненты и функции доступны в каждом выпуске Visual Studio 2015, посетите страницу [Сравнение предложений Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142).|
 |![Просмотреть требования к системе](../install/media/system-requirements.png "требования к системе") |**Требования к системе**: требования к системе для установки каждого выпуска Visual Studio 2015, см. в разделе [совместимость Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) страницы.|
-|![Найдите ключ продукта](../install/media/product-keys.png "ключи продуктов") |**Ключи продуктов** Чтобы найти ключ продукта, см. в разделе [как: Найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) раздела.|
+|![Найдите ключ продукта](../install/media/product-keys.png "ключи продуктов") |**Ключи продуктов**: чтобы найти ключ продукта, см. в разделе [как: найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) раздела.|
 |![Узнайте о лицензировании](../install/media/licensing.png "лицензирования") |**Лицензирование**: чтобы узнать о параметрах для частных лиц и клиентов корпоративного лицензирования, см. в разделе [Лицензирование Visual Studio и MSDN](https://www.microsoft.com/download/details.aspx?id=13350) Технический документ.|
 
 ##  <a name="custom"></a> Установка по умолчанию и Выборочная установка
@@ -108,7 +108,7 @@ ms.locfileid: "54799181"
 
  В случае использования Windows Server 2008 R2 с Hyper-V и графическим ускорителем, система может работать медленнее, чем обычно.
 
- Дополнительные сведения см. в указанной ниже статье на веб-сайте корпорации Microsoft. [Видео может привести к снижению производительности с Windows Server 2008 и Windows Server 2008 R2 на основе включенной ролью Hyper-V и установленным ускорителем адаптера дисплея](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Более подробную информацию см. на следующей странице веб-сайта Майкрософт: [Видео может снизить производительность на компьютерах с Windows Server 2008 и Windows Server 2008 R2 с включенной ролью Hyper-V и установленным ускорителем адаптера дисплея](http://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Эмуляция устройств с помощью Hyper-V**
 
@@ -143,7 +143,7 @@ ms.locfileid: "54799181"
    Дополнительные сведения о том, как установить или развернуть автономную справку, см. в разделе [руководство администратора средства просмотра справки](../ide/help-viewer-administrator-guide.md).
 
 ##  <a name="serviceReleases"></a> Проверка наличия исправлений и обновлений
- Visual Studio не обновляет расширения автоматически при обновлении с предыдущих версий, так как не все расширения совместимы. Необходимо переустановить расширения из [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) или от издателя программного обеспечения.
+ Visual Studio не обновляет расширения автоматически при обновлении с предыдущих версий, так как не все расширения совместимы. Необходимо переустановить расширения из [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или от издателя программного обеспечения.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Автоматическая проверка наличия наборов исправлений
 

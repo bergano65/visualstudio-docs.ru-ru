@@ -3,18 +3,12 @@ title: Справочное руководство по IntelliTest | Инстр
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948957"
 ---
 # <a name="intellitest-reference-manual"></a>Справочное руководство по IntelliTest
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948957"
     * [Язык](introduction.md#language)
     * [Символьная аналитика](introduction.md#symbolic-reasoning)
     * [Неправильные трассировки стека](introduction.md#incorrect-stack-traces)
-  - [Дополнительные сведения](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Дополнительные сведения](introduction.md#further-reading)
 
 * **[Начало работы с IntelliTest](getting-started.md)**
   - [Важные атрибуты](getting-started.md#important-attributes)
-  - [Важные статические вспомогательные классы](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Важные статические вспомогательные классы](getting-started.md#helper-classes)
 
 * **[Создание теста](test-generation.md)**
   - [Генераторы тестов](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948957"
   - [Постусловие](test-generation.md#postcondition)
   - [Сбои при тестировании](test-generation.md#test-failures)
   - [Подготовка и демонтаж](test-generation.md#setup-teardown)
-  - [Дополнительные сведения](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Дополнительные сведения](test-generation.md#further-reading)
 
 * **[Создание входных данных](input-generation.md)**
   - [Поиск решения для ограничений](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948957"
   - [Структуры](input-generation.md#structs)
   - [Массивы и строки](input-generation.md#arrays-and-strings)
   - [Получение дополнительных входных данных](input-generation.md#additional-inputs)
-  - [Дополнительные сведения](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Дополнительные сведения](input-generation.md#further-reading)
 
 * **[Границы исследования](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948957"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Attribute Glossary](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948957"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Каскад параметров](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948957"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Предупреждения и ошибки](warnings-and-errors.md)**
   - [Превышение значения MaxBranches](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948957"
   - [Проблема тестирования](warnings-and-errors.md#testability-issue)
   - [Ограничение](warnings-and-errors.md#limitation)
   - [Обнаружено несовпадение вызовов](warnings-and-errors.md#observed-call-mismatch)
-  - [Значение хранилось в статическом поле](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Значение хранилось в статическом поле](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 

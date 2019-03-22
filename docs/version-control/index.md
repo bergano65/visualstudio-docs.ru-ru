@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Управление версиями
 description: Руководство по управлению версиями в Visual Studio
-keywords: VSTS, TFS, Version Control
+keywords: 'VSTS, TFS, Version Control'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998928"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Управление версиями в Visual Studio
 
@@ -27,6 +21,7 @@ ms.locfileid: "54998928"
 
 Git — наиболее часто используемая система управления версиями на сегодняшний день, которая стремительно становится стандартом в мире систем управления версиями. Это распределенная система управления версиями. Это значит, что репозиторий представляет собой полную локальную копию кода. Полнофункциональные локальные репозитории упрощают работу как в автономном, так и в удаленном режиме. Вы работаете в локальной среде, а затем синхронизируете свою копию репозитория с копией на сервере. Эта парадигма отличается от централизованных систем управления версиями, где клиенты должны синхронизировать код с сервером перед созданием новой версии кода.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

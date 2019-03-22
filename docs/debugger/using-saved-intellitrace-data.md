@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969724"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873480"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>С помощью сохраненных данных IntelliTrace (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ ms.locfileid: "54969724"
     |----------------|-------------|
     |Сеанс IntelliTrace в Visual Studio Enterprise (но не в выпусках Professional или Community)|[Возможности IntelliTrace](../debugger/intellitrace-features.md)|
     |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> Выберите действие
 
@@ -109,7 +109,7 @@ ms.locfileid: "54969724"
 
 3.  Разверните этот вызов, чтобы просмотреть все вложенные вызовы и значения параметров, которые были записаны в тот момент времени.
 
-     (Клавиатура: Для отображения или сворачивания вложенного вызова нажмите клавиши **Стрелка вправо** или **стрелка влево** соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)
+     (Клавиатура: для отображения и сворачивания вложенного вызова нажмите клавишу **Стрелка вправо** или **Стрелка влево** , соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)
 
      Запустите отладку из этого вызова.
 
@@ -206,7 +206,7 @@ ms.locfileid: "54969724"
 
     ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Пошаговое руководство, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
+   Пошаговое руководство, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Список потоков
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.
@@ -272,4 +272,4 @@ ms.locfileid: "54969724"
  [Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: Набор инструментов тестирования](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Тестирование при непрерывной доставке с использованием Visual Studio 2012, глава 6, "Средства тестирования"](http://go.microsoft.com/fwlink/?LinkID=255203)

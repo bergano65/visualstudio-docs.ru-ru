@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939168"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069870"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -56,15 +56,29 @@ ms.locfileid: "55939168"
 
 Создайте новый проект WPF, чтобы отображать записи продуктов.
 
+::: moniker range="vs-2017"
+
 1. Запустите Visual Studio.
 
-2. В меню **Файл** выберите пункт **Создать** > **Проект**.
+2. В меню **Файл** выберите **Создать** > **Проект**.
 
 3. Разверните **Visual Basic** или **Visual C#** и выберите **Windows**.
 
-4. Выберите шаблон проекта **Приложение WPF**.
+4. Выберите **приложение WPF** шаблона проекта.
 
 5. В **имя** введите **AdventureWorksProductsEditor** , а затем выберите **ОК**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio.
+
+2. В окне «Пуск» выберите **создайте новый проект**.
+
+3. Поиск C# **приложение WPF** шаблон проекта и выполните действия, чтобы создать проект, именование проекта **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio создает проект AdventureWorksProductsEditor.
 
