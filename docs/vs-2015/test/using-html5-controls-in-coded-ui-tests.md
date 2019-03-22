@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805080"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867904"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +33,18 @@ ms.locfileid: "54805080"
 ## <a name="supported-html5-controls"></a>Поддерживаемые элементы управления HTML5  
  Закодированный тест пользовательского интерфейса предоставляют поддержку для записи, воспроизведения и проверки следующих элементов управления HTML5:  
   
--   [Элемент управления звуком](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [Элемент управления звуком](#audio-control)  
   
--   [Элемент управления видео](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [Элемент управления видео](#video-control)  
   
--   [Slider](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [Slider](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Элемент управления звуком  
+### <a name="audio-control"></a>Элемент управления звуком  
  Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления звуком HTML5](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![Элемент управления HTML5 Audio](../test/media/codedui-html5-audio.png)  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Свойства поиска:** Свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  Период времени для перехода и приостановки может быть значительным. Во время воспроизведения закодированный тест пользовательского интерфейса ожидает время, указанное в `(TimeSpan)` перед приостановкой аудио. Если при каких-то особых обстоятельствах указанное время истечет до обращения к команде приостановки, будет создано исключение.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Элемент управления видео  
+### <a name="video-control"></a>Элемент управления видео  
  Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления видео HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![Элемент управления HTML5 Video](../test/media/codedui-html5-video.png)  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Если необходимо перемотать видео вперед или назад, используя метки -30s или +30s, данные будут использоваться для перехода к соответствующему времени.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
+### <a name="slider"></a>Slider  
  Действия **элемента управления Slider** на элементе управления Slider HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления Slider HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![Элемент управления HTML5 Slider](../test/media/codedui-html5-slider.png)  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
+### <a name="progressbar"></a>ProgressBar  
  **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
   
- ![Элемент управления HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Элемент управления HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>См. также раздел  
- [Элементы HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Настройка закодированного теста пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>См. также
+
+- [Элементы HTML](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
+- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Настройка закодированного теста пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

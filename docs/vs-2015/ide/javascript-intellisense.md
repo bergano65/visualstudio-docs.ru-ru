@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763288"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194461"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense помогает быстрее писать код, допуска
 
 -   Функции, определенные во всех блоках скриптов в активном документе. Встроенные блоки скрипта поддерживаются в файлах с расширениями .aspx., .ascx, .master, .html и .htm.
 
--   Элементы `script` с атрибутами `src`, указывающими на другой файл скрипта. Разрешение конечного файла скрипта должно быть .js.
+-   Элементы `script` с атрибутами `src`, указывающими на другой файл скрипта. Расширение конечного файла скрипта должно быть .js.
 
 -   Файлы JavaScript, ссылающиеся на другие файлы JavaScript при помощи директивы `reference`.
 
@@ -122,7 +122,7 @@ IntelliSense помогает быстрее писать код, допуска
  IntelliSense для JavaScript предоставляет справочники по программированию для элементов Dynamic HTML (DHTML) DOM, таких как `body`, `form` и `div`. IntelliSense выводит только элементы, включенные в текущий документ и главную страницу. IntelliSense для JavaScript также поддерживает объекты `window` и `document` с их членами.
 
 ###  <a name="IntrinsicObjects"></a> Встроенные объекты
- IntelliSense для JavaScript предоставляет справочники по программированию для встроенных объектов, например `Array`, `String`, `Math`, `Date` и `Number`. Дополнительные сведения о встроенных объектах см. в [этой статье](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ IntelliSense для JavaScript предоставляет справочники по программированию для встроенных объектов, например `Array`, `String`, `Math`, `Date` и `Number`. Дополнительные сведения о встроенных объектах см. в разделе [стандартные встроенные объекты](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Пользовательские переменные, функции и объекты
  При изменении файла JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] сканирует открытые и связанные документы для определения всех доступных ресурсов кода. В их число входят созданные пользователем переменные, функции и объекты. Потом эти ресурсы становятся доступны IntelliSense для JavaScript.
@@ -137,7 +137,7 @@ IntelliSense помогает быстрее писать код, допуска
 
  Если страница ASP.NET с поддержкой AJAX не используется, можно создать ссылку на внешний файл скрипта при помощи атрибута `src` в открывающем теге элемента `script`. Атрибут `src` указывает URL-адрес внешнего файла с исходным кодом или данными.
 
- В следующем примере показана разметка, где атрибут `src` используется в теге <`script`> для создания ссылки на файл скрипта.
+ В следующем примере показана разметка `src` атрибут <`script`> тег для ссылки на файл скрипта.
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
@@ -236,10 +236,10 @@ IntelliSense помогает быстрее писать код, допуска
 >  Ссылки IntelliSense обычно используются для обеспечения поддержки IntelliSense для глобальных объектов и [расширений](#Extensibility) IntelliSense. Также можно использовать эту возможность для скриптов, которые необходимо загрузить во время выполнения с помощью загрузчика скрипта.
 
 ### <a name="remote-file-references"></a>Ссылки на удаленные файлы
- В Visual Studio можно настроить загрузку удаленных файлов JavaScript, ссылки на которые приведены в файле JavaScript, чтобы обеспечить поддержку IntelliSense для удаленного файла или библиотеки. При использовании этой функции файлы будут загружены, когда вы включите их в файл JavaScript в качестве ссылки.
+ В Visual Studio можно настроить загрузку удаленных файлов JavaScript, ссылки на которые приведены в файле JavaScript, чтобы обеспечить поддержку IntelliSense для удаленного файла или библиотеки. При использовании этой возможности файлы будут загружены, когда вы включите их в файл JavaScript в качестве ссылки.
 
 > [!NOTE]
->  За исключением веб-проектов, эта возможность применима только к файлам JavaScript, открытым вне контекста проекта. Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.
+>  За исключением веб-проектов, эта функция применима только к файлам JavaScript, открытым вне контекста проекта. Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.
 
  Инструкции по использованию этой возможности см. в статье [Options, Text Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md) (Параметры, текстовый редактор, JavaScript, IntelliSense).
 
@@ -266,7 +266,7 @@ IntelliSense помогает быстрее писать код, допуска
 >  Закрытые члены IntelliSense для JavaScript не отображаются. Закрытые члены в ASP.NET AJAX можно определить по знаку подчеркивания (_) в начале.
 
 ##  <a name="Extensibility"></a> Расширяемость IntelliSense для JavaScript
- Служба JavaScript Language Service предоставляет объекты и функции, которые позволяют изменить возможности IntelliSense для разработчиков, применяющих сторонние библиотеки. Эти возможности особенно эффективны, если служба языка по умолчанию не может предоставить все данные, которые необходимо обеспечить заказчикам. Дополнительные сведения см. в статье [Extending JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) (Расширение IntelliSense для JavaScript).
+ Языковая служба JavaScript предоставляет объекты и функции, которые позволяют изменить возможности IntelliSense для разработчиков, применяющих сторонние библиотеки. Эти функции особенно эффективны, если служба языка по умолчанию не может предоставить все данные, которые необходимо обеспечить заказчикам. Дополнительные сведения см. в статье [Extending JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) (Расширение IntelliSense для JavaScript).
 
 ##  <a name="Validation"></a> Проверка JavaScript
  Проверка скриптов JavaScript выполняется непрерывно в фоновом режиме. Если [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] обнаруживает синтаксические ошибки в коде JavaScript, отзывы предоставляется следующими способами:

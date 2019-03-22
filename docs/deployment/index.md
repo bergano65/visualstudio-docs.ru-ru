@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio предоставляет несколько различных средств для развертывания приложений.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Пятиминутные руководства по развертыванию в Visual Studio</h2>
 
 <ul class="panelContent cardsFTitle">

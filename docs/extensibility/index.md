@@ -13,6 +13,8 @@ ms.workload:
 
 В Visual Studio предусмотрено множество возможностей расширяемости. Можно расширять среду Visual Studio, добавлять анализаторы исходного кода для компилятора Roslyn и даже создавать собственные пакеты SDK.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

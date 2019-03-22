@@ -6,6 +6,7 @@ description: "Узнайте, как с помощью Visual Studio\_2017 ра�
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Документация для продуктов Visual Studio</h1>
