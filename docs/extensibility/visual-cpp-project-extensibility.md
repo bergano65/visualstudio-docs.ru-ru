@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: HT
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195181"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268729"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
@@ -416,7 +416,7 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 
 ### <a name="project-property-pages"></a>Страницы свойств проекта
 
-Общие сведения, см. в разделе [расширяемость платформы — часть 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) и [расширяемость платформы — часть 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Общие сведения, см. в разделе [Framework многоплатформенного нацеливания для проектов VC ++](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 Проще говоря, на страницах свойств вы увидите в **свойства проекта** диалоговое окно для проекта C++ определяются *правило* файлов. Файл правил задает набор свойств для отображения на странице свойств и как и их сохранения в проекте файл. Файлы правил — это файлы XML, использующих формат Xaml. Описываются типы, используемые для сериализации их в [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Дополнительные сведения об использовании файлов правил в проектах см. в разделе [файлы правил XML страницы свойство](/cpp/build/reference/property-page-xml-files).
 
