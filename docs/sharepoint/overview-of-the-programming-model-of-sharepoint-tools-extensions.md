@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639340"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325244"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования SharePoint средств расширения
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понять назначение каждого из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.
@@ -29,7 +29,7 @@ ms.locfileid: "56639340"
 
  Для расширения инструментов SharePoint реализуйте один или несколько интерфейсов расширения, предоставляемых Visual Studio. К реализации интерфейса необходимо также применить <xref:System.ComponentModel.Composition.ExportAttribute> и, по мере необходимости, дополнительные атрибуты, определяемые инструментами SharePoint. В таблице ниже перечислены интерфейсы, которые можно реализовать для расширения инструментов SharePoint.
 
-|Интерфейс|Описание:|
+|Интерфейс|Описание|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Реализация этого интерфейса позволяет определить новый тип элемента проекта SharePoint. Пример см. в статье [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Реализация этого интерфейса позволяет расширить тип элемента проекта SharePoint, который уже установлен в Visual Studio. Пример см. в статье [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|
@@ -59,7 +59,7 @@ ms.locfileid: "56639340"
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 
-|Пространство имен|Описание|
+|Пространство имен|Описание:|
 |-|-|
 |<xref:Microsoft.VisualStudio.SharePoint>|Содержит типы, используемые для расширения и автоматизации системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Содержит типы, используемые для расширения процесса развертывания для проектов SharePoint, например создание шагов и конфигураций развертывания. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
@@ -70,20 +70,20 @@ ms.locfileid: "56639340"
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
-|Пространство имен|Описание|
+|Пространство имен|Описание:|
 |-|-|
 |<xref:Microsoft.VisualStudio.SharePoint.Commands>|Содержит типы, которые можно использовать для создания пользовательских *команд SharePoint*. Команда SharePoint — это метод, который вызывает объектную модель сервера SharePoint из расширения инструментов SharePoint. Дополнительные сведения см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
-|Пространство имен|Описание:|
+|Пространство имен|Описание|
 |-|-|
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Содержит типы, которые можно использовать для получения сведений о встроенных **обозревателя серверов** узлов, представляющих отдельные компоненты на сайте SharePoint, например узел, представляющий список, поле или тип содержимого. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 
 ### <a name="visual-studio-automation-object-model"></a>Объектная модель автоматизации Visual Studio
  Объектная модель автоматизации Visual Studio предоставляет API-интерфейсы, которые можно использовать для автоматизации проектов Visual Studio и интегрированной среды разработки. Объектная модель Visual Studio используется для выполнения задач, связанных с проектами, которые не относятся к конкретному проекту SharePoint, или для выполнения других общих задач автоматизации в Visual Studio. Традиционно эта объектная модель часто используется в надстройках и макросах Visual Studio, однако ее также можно использовать в расширениях инструментов SharePoint.
 
- Основная часть объектной модели автоматизации Visual Studio определяется в *EnvDTE.dll* сборки. *EnvDTE\\<version>.dll* обеспечивают дополнительные функциональные возможности, которая была введена в определенных версиях Visual Studio. Эти сборки входят в состав Visual Studio.
+ Основная часть объектной модели автоматизации Visual Studio определяется в *EnvDTE.dll* сборки. *EnvDTE\\\<версия > .dll* обеспечивают дополнительные функциональные возможности, которая была введена в определенных версиях Visual Studio. Эти сборки входят в состав Visual Studio.
 
  Дополнительные сведения об объектной модели автоматизации см. в разделе [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
@@ -101,7 +101,7 @@ ms.locfileid: "56639340"
 
  В любой из объектных моделей в расширении инструментов SharePoint можно использовать API-интерфейсы, однако каждая объектная модель имеет свои преимущества и недостатки в контексте расширений инструментов SharePoint. Дополнительные сведения см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
-|Объектная модель|Описание|
+|Объектная модель|Описание:|
 |------------------|-----------------|
 |Объектная модель сервера|Объектная модель сервера предоставляет доступ ко всем возможностям, предоставляемым [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программно. Эта объектная модель предназначена для использования решениями SharePoint, которые выполняются на сервере SharePoint. Большая часть этой объектной модели определяется в *Microsoft.SharePoint.dll* сборки. Дополнительные сведения об объектной модели сервера см. в разделе [использование объектной модели SharePoint Foundation на сервере](http://go.microsoft.com/fwlink/?LinkId=177796).|
 |Объектная модель клиента|Объектная модель клиента — это подмножество объектной модели сервера, которое можно использовать для взаимодействия с данными SharePoint с удаленного клиента или сервера. Она предназначена для сведения к минимуму числа циклов для выполнения типичных задач. Большая часть клиентской объектной модели определяется в *: на Microsoft.SharePoint.Client.dll* и *Microsoft.SharePoint.Client.Runtime.dll* сборки. Дополнительные сведения о клиентской объектной модели, см. в разделе [управляемая клиентская объектная модель](http://go.microsoft.com/fwlink/?LinkId=177797).|

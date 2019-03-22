@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf3cbb84c32fdb3f5eba7ba8706c1035b1d9019
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633477"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322774"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty - элемент
   Представляет настраиваемое свойство, которое входит в состав компонентом при его развертывании в SharePoint. После развертывания функции можно использовать свойство в коде.
@@ -34,7 +34,7 @@ ms.locfileid: "56633477"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**Key**|Требуется **xs: String** атрибута.<br /><br /> Ключ, используемый для хранения и извлечения значения свойства. Каждое свойство должно иметь ключ, который является уникальным в пределах компонента.|
 |**Значение**|Требуется **xs: String** атрибута.<br /><br /> Значение свойства.|
@@ -44,7 +44,7 @@ ms.locfileid: "56633477"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Описание:|
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Представляет коллекцию значений свойств, которые входят в состав компонентом при его развертывании в SharePoint.|
 
@@ -55,7 +55,7 @@ ms.locfileid: "56633477"
 
 |||
 |-|-|
-|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|ProjectItemModelSchema.xsd|
 |**Может быть пустым**|Нет|

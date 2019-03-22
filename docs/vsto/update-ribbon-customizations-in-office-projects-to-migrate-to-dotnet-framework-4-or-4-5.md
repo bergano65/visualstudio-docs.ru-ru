@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634933"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324686"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если проект содержит настройку ленты, который был создан с помощью **Лента (визуальный конструктор)** элемента проекта, необходимо внести следующие изменения в код проекта, при изменении требуемой версии .NET framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или позже.
@@ -103,9 +103,9 @@ ms.locfileid: "56634933"
 
      Например, предположим, что файл содержит следующую строку кода, которая обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> в проекте, ориентированном на .NET Framework 3.5.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, вместо этого необходимо использовать следующий код.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, вместо этого необходимо использовать следующий код.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> полный список делегатов ленты см. в разделе [события обработки ленты](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> полный список делегатов ленты см. в разделе [события обработки ленты](#ribbonevents).
 
 5.  В проектах Visual Basic найдите класс `ThisRibbonCollection` в конце файла. Измените объявление этого класса так, чтобы он больше не наследовал от `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634933"
 
   В следующем примере кода показано, как создать <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> в классе ленты в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> в следующей таблице перечислены элементы управления, можно создавать программно и метод, используемый для создания элементов управления в проектах, ориентированных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> в следующей таблице перечислены элементы управления, можно создавать программно и метод, используемый для создания элементов управления в проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
 |Элемент управления|Метод RibbonFactory, используемый в проектах для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий|
 |-------------| - |

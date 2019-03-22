@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e179cd742d2fbf2f1fbff59610c4dda50f3f996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598970"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322834"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder - элемент
   Представляет сопоставленную папку.
@@ -47,7 +47,7 @@ ms.locfileid: "56598970"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом *.spdata* файла.|
 
@@ -58,7 +58,7 @@ ms.locfileid: "56598970"
 
 |||
 |-|-|
-|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|ProjectItemModelSchema.xsd|
 |**Может быть пустым**|Нет|

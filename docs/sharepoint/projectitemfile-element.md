@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76da5221d8f5bbdeb40f22559c6fabba727986b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645359"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322916"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile - элемент
   Представляет файл SharePoint, такие как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.
@@ -38,7 +38,7 @@ ms.locfileid: "56645359"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|Атрибут|Описание:|
 |---------------|-----------------|
 |**Источник**|Требуется **xs: String** атрибута.<br /><br /> Имя файла, который развертывается с элементом проекта.|
 |**Целевой объект**|Необязательный **xs: String** атрибута.<br /><br /> Путь, где этот файл будет развернут на сайте SharePoint, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута. Если **целевой** атрибут не указан, файл будет развернут в папку с именем, указанным в **источника** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **Deployment Root** свойства SharePoint элементами проекта в среде [решения разработки SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
@@ -49,7 +49,7 @@ ms.locfileid: "56645359"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые с элементом проекта SharePoint при развертывании в SharePoint.|
 
@@ -60,7 +60,7 @@ ms.locfileid: "56645359"
 
 |||
 |-|-|
-|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|ProjectItemModelSchema.xsd|
 |**Может быть пустым**|Нет|

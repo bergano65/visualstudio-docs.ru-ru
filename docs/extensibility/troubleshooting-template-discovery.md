@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324004"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323111"
 ---
 # <a name="troubleshooting-template-installation"></a>Устранение неполадок установки шаблона
 
@@ -41,7 +41,7 @@ ms.locfileid: "57324004"
 
 ::: moniker range="vs-2017"
 
-4. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона.
+4. Откройте Visual Studio и запустите диалоговые окна нового проекта и новый элемент для инициализации обоих деревьях шаблона.
 
    В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid соответствует Идентификатору установки экземпляра Visual Studio). Каждый шаблон дерева инициализации добавляет записи в этот журнал.
 
@@ -49,7 +49,7 @@ ms.locfileid: "57324004"
 
 ::: moniker range=">=vs-2019"
 
-4. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона.
+4. Откройте Visual Studio и запустите диалоговые окна нового проекта и новый элемент для инициализации обоих деревьях шаблона.
 
    В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid соответствует Идентификатору установки экземпляра Visual Studio). Каждый шаблон дерева инициализации добавляет записи в этот журнал.
 

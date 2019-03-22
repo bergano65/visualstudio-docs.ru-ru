@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920193"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323715"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Инициализация последовательности подтипов проекта
 Среды создает проект путем вызова реализации базового проекта фабрики <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Конструирование подтипом проекта запускается, когда среда определяет, что список GUID типа проекта для расширения файл проекта не пуста. Расширение файла проекта и идентификатор GUID проекта укажите информацию о том, будет ли проект [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] тип проекта. Например, расширение .vbproj и определить {F184B08F-C81C-45F6-A57F-5ABD9991F28F} [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проекта.
@@ -31,7 +31,7 @@ ms.locfileid: "54920193"
 
     1.  Реализация среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> вызовы методов `HrCreateInnerProj` метод со следующим объявлением функции:
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          Когда эта функция вызывается в первый раз, то есть для подтипа внешний проект, параметры `pOuter` и `pOwner` передаются в качестве `null` и функция задает подтип внешний проект `IUnknown` для `pOuter`.
 
