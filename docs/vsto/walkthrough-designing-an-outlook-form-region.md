@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633867"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355582"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Пошаговое руководство. Разработка области формы Outlook
   Пользовательские области формы расширяют стандартные или настраиваемые формы Microsoft Office Outlook. В этом пошаговом руководстве показано, как проектировать пользовательскую область формы, которая отображается в виде новой страницы в окне инспектора элемента контактов. В этой области формы отображается карта каждого адреса, указанного для контакта, путем отправки информации об адресе на веб-сайт локального поиска Windows Live. Сведения об областях форм см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633867"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] или более поздней версии.
 
   ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") видеоверсию этого раздела, см. в разделе [видео как: Разработка области формы Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633867"
 4.  Сохраните и закройте элемент контактов.
 
 5.  Снова откройте **Ann Beebe** элемент контактов.
+
+    В Outlook, это можно сделать **найти** группу с открытием адресной книги для контактов, либо введя Ann Beebe в **поиск пользователей**.
 
 6.  В **Показать** группы ленты элемента щелкните **Map It** чтобы открыть область формы Map It.
 
