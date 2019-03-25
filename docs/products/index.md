@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Документация по Visual Studio | Документация Майкрософт
-description: "Узнайте, как с помощью Visual Studio\_2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
+title: "Продукты Visual Studio\_|\_Документация Майкрософт"
+description: Изучите семейство продуктов Visual Studio.
 ms.topic: landing-page
 searchScope: []
 ---
