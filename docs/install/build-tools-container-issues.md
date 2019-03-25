@@ -1,6 +1,6 @@
 ---
 title: Известные проблемы для контейнеров
-description: Сведения об известных проблемах, которые могут возникать при установке Visual Studio Build Tools 2017 в контейнер Windows.
+description: В этой статье описаны известные проблемы, которые могут возникать при установке Visual Studio Build Tools в контейнере Windows.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935021"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983706"
 ---
 # <a name="known-issues-for-containers"></a>Известные проблемы для контейнеров
 
 Существует несколько проблем, возникающих при установке Visual Studio в контейнер Docker.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Контейнер Windows
 
@@ -36,6 +38,8 @@ ms.locfileid: "55935021"
 
 * Вы не можете установить Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) на образ mcr<span></span>.microsoft.com/windows/servercore:1809 или более поздней версии. Дополнительные сведения см. в разделе https://aka.ms/setup/containers/servercore1809.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Контейнер Build Tools
 
 При использовании контейнера Build Tools могут возникнуть указанные ниже известные проблемы. Чтобы узнать, устранены ли эти проблемы и имеются ли другие известные проблемы, посетите сайт https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ ms.locfileid: "55935021"
 
 * [Установка средств сборки в контейнер](build-tools-container.md)
 * [Расширенный пример для контейнеров](advanced-build-tools-container.md)
-* [Идентификаторы рабочих нагрузок и компонентов для Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [Идентификаторы рабочих нагрузок и компонентов для Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951349"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869367"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Установка отладочных символов для интерпретаторов Python
 
@@ -54,7 +54,7 @@ Visual Studio может вывести запрос на использован
 
     ![Параметры символов в отладчике смешанного режима](media/mixed-mode-debugging-symbols.png)
 
-1. Во время сеанса отладки Visual Studio может также запросить расположение исходного файла для интерпретатора Python. Если вы скачали исходные файлы (например, на сайте [python.org/downloads](https://www.python.org/downloads)), их также можно указать.
+1. Во время сеанса отладки Visual Studio может также запросить расположение исходного файла для интерпретатора Python. Если вы скачали исходные файлы (например, на сайте [python.org/downloads/](https://www.python.org/downloads/)), их также можно указать.
 
 > [!Note]
 > Функции кэширования символов, отображаемые в диалоговом окне, используются для создания локального кэша символов, полученных из источника в Интернете. Эти функции не нужны для символов интерпретатора Python, так как они уже присутствуют локально. В любом случае см. раздел [Указание символов и исходных файлов в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

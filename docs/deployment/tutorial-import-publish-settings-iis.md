@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605410"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983914"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
 Вы можете использовать средство **публикации** для импорта параметров публикации, а затем развернуть приложение. В этой статье мы используем параметры публикации для IIS, однако аналогичные действия можно использовать, чтобы импортировать параметры публикации для [Службы приложений Azure](../deployment/tutorial-import-publish-settings-azure.md). В некоторых случаях использование профиля параметров публикации может оказаться быстрее, чем ручная настройка развертывания в IIS для каждой установки Visual Studio.
 
-Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Эти действия соответствуют Visual Studio 2017 версии 15.6.
+Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -38,9 +38,19 @@ ms.locfileid: "56605410"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* На компьютере для разработки должна быть установлена среда Visual Studio 2017 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+::: moniker range=">=vs-2019"
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
+* У вас должны быть установлены решение Visual Studio 2019 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* У вас должна быть установлена среда Visual Studio 2017 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
 
 * На сервере должна быть запущена ОС Windows Server 2012 или Windows Server 2016, а [роль веб-сервера IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) должна быть правильно установлена (это необходимо для создания файла параметров публикации (*\*.publishsettings*)). Также требуется установить на сервере ASP.NET 4.5 или ASP.NET Core. Для настройки ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Для настройки ASP.NET Core см. раздел [Размещение ASP.NET Core в Windows со службами IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 

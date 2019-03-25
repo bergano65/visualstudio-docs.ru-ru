@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223316"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195064"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -131,7 +131,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Дополнительные сведения об автоматических тестах см. в записи блога [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Конвейер CI/CD для автоматических тестов в DevOps).
 
-Дополнительные сведения о новых возможностях расширения DevLabs [Инструменты непрерывной поставки для Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) см. в записи блога [Уверенная фиксация: качество кода во время фиксации](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/).
+Дополнительные сведения о новых возможностях расширения DevLabs [Инструменты непрерывной поставки для Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) см. в записи блога [Уверенная фиксация: качество кода во время фиксации](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Усовершенствования интегрированной среды разработки Visual Studio
 
@@ -188,7 +188,7 @@ Visual Studio перемещает свои расширения, а также 
 
   ![Визуализатор структуры Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Дополнительные сведения о новых функциях производительности см. в статье блога о [производительности в Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/), опубликованной Марком Уилсоном-Томасом (Mark Wilson-Thomas).
+Дополнительные сведения об этих новых возможностях повышения производительности см. в записи блога [Visual Studio 2017: Productivity, Performance, and Partners](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) (Visual Studio 2017: продуктивность, производительность и партнеры).
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -381,8 +381,8 @@ Visual Studio перемещает свои расширения, а также 
 
 ## <a name="see-also"></a>См. также
 
-* [Заметки о выпуске Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Новые возможности пакета SDK для Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Заметки о выпуске Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Новые возможности пакета SDK для Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Новые возможности C#](/dotnet/csharp/whats-new)
 * [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)

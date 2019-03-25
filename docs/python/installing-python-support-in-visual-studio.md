@@ -1,7 +1,7 @@
 ---
 title: Установка средств поддержки Python
 description: Инструкции по установке средств Python для Visual Studio (PTVS) в Visual Studio 2017, 2015, 2013, 2012 и 2010, включая параметры и расположения установки.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323255"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983316"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
 Чтобы установить поддержку Python для Visual Studio (Инструменты Python для Visual Studio или PTVS), выполните инструкции из раздела, который соответствует вашей версии Visual Studio:
 
-- [Visual Studio 2017](#visual-studio-2017)
+- [Visual Studio 2017 и Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
@@ -33,30 +33,27 @@ ms.locfileid: "57323255"
 > [!Note]
 > Сейчас Python не поддерживается в Visual Studio для Mac, однако доступен в Mac и Linux посредством Visual Studio Code. См. [вопросы и ответы](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+<a name="visual-studio-2017-and-2019"></a>
+## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 и Visual Studio 2017
 
-1. Загрузите и запустите последнюю версию установщика Visual Studio 2017. Если вы уже установили Visual Studio, запустите Visual Studio Installer, выберите вариант **Изменить** (см. раздел [Изменение Visual Studio](../install/modify-visual-studio.md)) и перейдите к шагу 2.
+1. Скачайте и запустите последнюю версию Visual Studio Installer. Если вы уже установили Visual Studio, запустите Visual Studio Installer, выберите вариант **Изменить** (см. раздел [Изменение Visual Studio](../install/modify-visual-studio.md)) и перейдите к шагу 2.
 
     > [!div class="nextstepaction"]
-    > [Установить Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Установка Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Выпуск Community предназначен для индивидуальных разработчиков, использования при аудиторном обучении и в научных исследованиях, а также разработки решений с открытым кодом. В других целях установите [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) или [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Выпуск Community предназначен для индивидуальных разработчиков, использования при аудиторном обучении и в научных исследованиях, а также разработки решений с открытым кодом. Если программу планируется использовать в других целях, установите [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) или [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. В установщике предлагается список рабочих нагрузок, то есть групп связанных параметров для определенных целей разработки. Для Python выберите рабочую нагрузку **Разработка на Python**.
 
     ![Рабочая нагрузка разработки Python в установщике Visual Studio](media/installation-python-workload.png)
 
-   ::: moniker range="vs-2017"
-
+    ::: moniker range="vs-2017"
     Необязательно: если вы занимаетесь обработкой и анализом данных, также рекомендуется установить рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**. Эта рабочая нагрузка включает в себя поддержку Python, R и F#. Дополнительные сведения см. в разделе [Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
-    
-   ::: moniker range=">=vs-2019"
 
+    ::: moniker range=">=vs-2019"
     Необязательно: если вы занимаетесь обработкой и анализом данных, также рекомендуется установить рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**. Эта рабочая нагрузка включает в себя поддержку Python и F#. Дополнительные сведения см. в разделе [Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
 
     > [!Note]
@@ -64,11 +61,17 @@ ms.locfileid: "57323255"
 
 1. В правой области установщика при необходимости выберите дополнительные параметры. Чтобы принять параметры по умолчанию, пропустите этот шаг.
 
+    ::: moniker range="vs-2017"
     ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    ![Параметры разработки Python в установщике Visual Studio 2019](media/installation-python-options-2019.png)
+    ::: moniker-end
 
     | Параметр | Описание |
     | --- | --- |
-    | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. [Окно "Окружения Python"](managing-python-environments-in-visual-studio.md#the-python-environments-window). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
+    | Дистрибутивы Python | Выберите любое сочетание доступных дистрибутивов 32- и 64-разрядных версий Python 2, Python 3, Miniconda, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. [Окно "Окружения Python"](managing-python-environments-in-visual-studio.md#the-python-environments-window). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
     | **Поддержка шаблонов Cookiecutter** | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Поддержка веб-приложений Python** | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
     | **Поддержка Интернета вещей для Python** | Поддерживает разработку для Windows IoT Core с помощью Python. |
@@ -115,7 +118,7 @@ ms.locfileid: "57323255"
 
 По умолчанию поддержка Python устанавливается для всех пользователей на компьютере.
 
-В Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<выпуск_Visual_Studio>Common7\IDE\Extensions\Microsoft\Python*, где &lt;выпуск_Visual_Studio&gt; может иметь значение Community, Professional или Enterprise.
+В Visual Studio 2019 и Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог *%ProgramFiles(x86)%\Microsoft Visual Studio\\<версия_Visual_Studio>\\<выпуск_Visual_Studio>Common7\IDE\Extensions\Microsoft\Python*, где &lt;версия_Visual_Studio&gt; — это 2019 или 2017, а &lt;выпуск_Visual_Studio&gt; — Community, Professional или Enterprise.
 
 В Visual Studio 2015 и более ранних версиях используются такие пути установки:
 

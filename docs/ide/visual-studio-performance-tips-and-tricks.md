@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222991"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868234"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "57222991"
 
 При переходе с 32-разрядной на 64-разрядную версию Windows вы увеличиваете объем виртуальной памяти, доступной Visual Studio, с 2 до 4 ГБ. Это позволяет Visual Studio обрабатывать значительно большие рабочие нагрузки даже несмотря на то, что это 32-разрядный процесс.
 
-Дополнительные сведения см. в разделах [Ограничения памяти](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) и [Использование /LARGEADDRESSAWARE в 64-разрядной версии Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Дополнительные сведения см. в разделах [Ограничения памяти](/windows/desktop/Memory/memory-limits-for-windows-releases) и [Использование /LARGEADDRESSAWARE в 64-разрядной версии Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Отключение автоматического восстановления файлов
 
@@ -105,7 +105,17 @@ Visual Studio отображает уведомление на желтой па
 
     Расширения — это дополнительные программные компоненты в Visual Studio, которые предоставляют новые или расширяют имеющиеся функциональные возможности. Расширения часто могут выступать источником проблем с памятью. При возникновении подобных проблем попробуйте отключать расширения по одному за раз, чтобы оценить, как это влияет на сценарий или рабочий процесс.
 
-    Чтобы отключить расширения, перейдите в раздел **Сервис** > **Расширения и обновления** и отключите нужное расширение.
+   ::: moniker range="vs-2017"
+
+    Чтобы отключить расширения, перейдите в меню **Инструменты** > **Расширения и обновления** и отключите нужное расширение.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Чтобы отключить расширения, перейдите в меню **Расширение** > **Управление расширениями** и отключите нужное расширение.
+
+   ::: moniker-end
 
 - **Отключение конструктора XAML**
 

@@ -1,7 +1,22 @@
+---
+ms.openlocfilehash: 447dd56d27c29136b7eb72f30564156ca56f2a74
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58052064"
+---
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) устанавливается с соответствующими рабочими нагрузками:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/), установленная с соответствующими рабочими нагрузками для выбранного языка:
   * ASP.NET: **ASP.NET и веб-разработка**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/), установленная с соответствующими рабочими нагрузками для выбранного языка:
+  * ASP.NET: **ASP.NET и веб-разработка**
+::: moniker-end
 
 * Подписка Azure. Если у вас еще нет подписки, [подпишитесь на бесплатную версию](https://azure.microsoft.com/free/dotnet/), которая включает кредит в размере 200 USD на 30 дней и 12 месяцев доступа к популярным бесплатным службам.
 

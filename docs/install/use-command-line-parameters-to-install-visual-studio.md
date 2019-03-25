@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796846"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983079"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 
-При установке Visual Studio 2017 из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
+При установке Visual Studio из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
 
 - запустить установку с заранее выбранными параметрами;
 - автоматизировать процесс установки;
@@ -45,7 +45,7 @@ ms.locfileid: "56796846"
 (Замените `vs_enterprise.exe` в соответствии с выпуском продукта, который вы устанавливаете.
 
 >[!TIP]
-> Дополнительные примеры использования командной строки для установки Visual Studio 2017 см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).
+> Дополнительные примеры использования командной строки для установки Visual Studio см. в статье [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md).
 
 | **Команда** | **Описание** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ ms.locfileid: "56796846"
 | `update` | Обновляет установленный продукт. |
 | `repair` | Восстанавливает установленный продукт. |
 | `uninstall` | Удаляет установленный продукт. |
-| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
+| `export` | **Новые возможности в версии 15.9**: экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
 
 ## <a name="install-options"></a>Параметры установки
 
@@ -115,7 +115,7 @@ ms.locfileid: "56796846"
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Список идентификаторов рабочих нагрузок и компонентов
 
-Список идентификаторов рабочих нагрузок и компонентов, отсортированный по продуктам Visual Studio, см. на странице [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
+Список идентификаторов рабочих нагрузок и компонентов, отсортированный по продуктам Visual Studio, см. на странице [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Список языковых стандартов
 
@@ -155,7 +155,7 @@ ms.locfileid: "56796846"
 
 ## <a name="see-also"></a>См. также
 
-- [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
-- [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
+- [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
-- [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md)
+- [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

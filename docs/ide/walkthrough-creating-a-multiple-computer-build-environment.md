@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324225"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870511"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -264,7 +264,7 @@ Visual Studio с установленной рабочей нагрузкой **
 |x86_amd64|Кроссплатформенный компилятор x64|x86, x64|X64|
 |amd64|Собственная x64|X64|X64|
 
-В случае успешного выполнения файла *vcvarsall.bat* и отсутствия сообщений об ошибках вы можете пропустить следующий шаг и перейти к разделу [Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) этого документа.
+В случае успешного выполнения файла *vcvarsall.bat* и отсутствия сообщений об ошибках вы можете пропустить следующий шаг и перейти к разделу [Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения](#install-msbuild-to-gac) этого документа.
 
 ### <a name="manually-set-environment-variables"></a>Установка переменных среды вручную
 
@@ -286,7 +286,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере, используемом для сборки
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере, используемом для сборки
 
 Для работы MSBuild на компьютере построения необходимо установить дополнительные сборки в глобальный кэш сборок.
 
@@ -298,7 +298,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Чтобы установить сборки в глобальный кэш сборок, найдите файл *gacutil.exe* на компьютере построения, как правило, он находится в папке %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Если вы не можете найти эту папку, повторите действия, описываемые в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства.
+2. Чтобы установить сборки в глобальный кэш сборок, найдите файл *gacutil.exe* на компьютере построения, как правило, он находится в папке %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Если вы не можете найти эту папку, повторите действия, описываемые в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства.
 
      Откройте окно **командной строки** с правами администратора и выполните следующую команду для каждого файла:
 
@@ -330,7 +330,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
      В рамках этой процедуры этот каталог называется %Depot%.
 
-2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%*. Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
+2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%*. Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
 
 3. После вставки файлов в каталог *%Depot%* внесите следующие изменения:
 

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413570"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983927"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в Службу приложений Azure посредством импорта параметров публикации в Visual Studio
 
 Вы можете использовать средство **публикации** для импорта параметров публикации, а затем развернуть приложение. В этой статье мы используем параметры публикации для Службы приложений Azure, однако аналогичные действия можно использовать, чтобы импортировать параметры публикации из [IIS](../deployment/tutorial-import-publish-settings-iis.md). В некоторых случаях использование профиля параметров публикации может оказаться быстрее, чем ручная настройка развертывания в службу для каждой установки Visual Studio.
 
-Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Вы также можете импортировать параметры публикации для приложений [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md). Эти действия соответствуют Visual Studio 2017 версии 15.6.
+Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Вы также можете импортировать параметры публикации для приложений [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -37,9 +37,19 @@ ms.locfileid: "56413570"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
+::: moniker range=">=vs-2019"
+
+* У вас должны быть установлены решение Visual Studio 2019 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * У вас должна быть установлена среда Visual Studio 2017 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
 
 * Создайте Службу приложений Azure. Подробные инструкции см. в разделе [Развертывание веб-приложения ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

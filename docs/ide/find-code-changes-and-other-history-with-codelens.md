@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941053"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867859"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 
 CodeLens позволяет вам получать дополнительные сведения о коде, не отрываясь от работы и не выходя из редактора. Вы можете найти ссылки на фрагмент кода, изменения кода, связанные ошибки, рабочие элементы, проверки кода и модульные тесты.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > Средство CodeLens доступно только в выпусках Visual Studio Enterprise и Visual Studio Professional. Оно не доступно в выпуске Visual Studio Community.
+
+::: moniker-end
 
 Посмотрите, где и как отдельные части вашего кода используются в решении.
 
@@ -62,7 +66,7 @@ CodeLens позволяет вам получать дополнительные
 
 Вам понадобится:
 
-- Visual Studio Enterprise или Visual Studio Professional
+- Visual Studio 2019 (или выпуск Visual Studio 2017 Enterprise/Professional)
 
 - Team Foundation Server 2013 и более поздние версии, Azure DevOps Services или Git.
 

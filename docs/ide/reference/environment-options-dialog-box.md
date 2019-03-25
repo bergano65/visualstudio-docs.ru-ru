@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703257"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983719"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
 
@@ -27,7 +27,7 @@ ms.locfileid: "56703257"
 |Настройка отображения и поведения окон, меню и других элементов интегрированной среды разработки.|[Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)|
 |Изменение параметров автоматического сохранения и восстановления файлов.|[Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Настройка отображения документа и задание значений управляющих параметров, включая работу функции "Прочие файлы"|[Страница "Документы", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Настройка способа выполнения обновлений и управления расширениями.|[Страница "Расширения и обновления", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Настройка способа выполнения обновлений и управления расширениями.|[Страница "Расширения", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Настройка вывода сообщений и работы окна **Найти и заменить** при быстром поиске и быстрой замене, а также автоматического заполнения поля поиска.|["Поиск и замена", "Среда", диалоговое окно "Параметры"](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Установка шрифта и цветов редакторов, диалоговых окон и окон инструментов, а также для других элементов пользовательского интерфейса.|[Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Настройка расположение файлов vssettings, хранящих сведения о параметрах пользователя.|[Страница "Параметры импорта и экспорта", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

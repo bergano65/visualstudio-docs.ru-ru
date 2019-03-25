@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637793"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868218"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 
@@ -30,7 +30,12 @@ ms.locfileid: "56637793"
 
  Профилировщик Visual Studio позволяет ограничить объем собираемых данных. В этом пошаговом руководстве приведен пример ограничения сбора данных с помощью интерфейсов API профилировщика. Профилировщик Visual Studio предоставляет интерфейс API для управления сбором данных из приложения.
 
+ ::: moniker range=">=vs-2019"
+ Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*.
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
+ ::: moniker-end
 
  Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Profiler>.
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737009"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983979"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -82,7 +82,7 @@ ms.locfileid: "57737009"
 
 ### <a name="use-the-visual-studio-installer"></a>Использование Visual Studio Installer
 
-Как и в предыдущих версиях Visual Studio 2017, для установки обновлений можно использовать Visual Studio Installer.
+Как и в предыдущих версиях Visual Studio, для установки обновлений можно использовать Visual Studio Installer.
 
 1. Сохраните все изменения.
 
@@ -150,14 +150,14 @@ ms.locfileid: "57737009"
 
    Чтобы установить обновления, нажмите кнопку **Обновить**.
 
-     ![Обновление Visual Studio 2017 с помощью установщика Visual Studio](media/update-visual-studio.png "Обновление Visual Studio 2017 с помощью установщика Visual Studio")
+     ![Обновление Visual Studio 2017 с помощью Visual Studio Installer](media/update-visual-studio.png "Обновление Visual Studio с помощью Visual Studio Installer")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
-* [Изменение Visual Studio 2017](modify-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
+* [Изменение Visual Studio](modify-visual-studio.md)
+* [Удаление Visual Studio](uninstall-visual-studio.md)
 * [Обновление Visual Studio для Mac](/visualstudio/mac/update)
 
 ::: moniker-end

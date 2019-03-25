@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7f2a09d7f3eb0df05ae1ba3c05706746cb9d7eb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8929a0b3bec64bbf2fc12bd84f6938463393a32c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013643"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070273"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Создание приложения OpenGL ES в Android и iOS
 
@@ -31,11 +31,9 @@ ms.locfileid: "55013643"
 
 В этом учебном руководстве вы сначала создадите проект приложения OpenGL ES, а затем выполните сборку и запуск приложения по умолчанию в эмуляторе Visual Studio для Android. После этого вы выполните сборку приложения для iOS и запустите его в эмуляторе iOS.
 
-### <a name="to-create-a-new-project"></a>Создание нового проекта
+1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
 
-1. Запустите Visual Studio. В строке меню выберите **Файл**, **Создать**, **Проект**.
-
-2. В диалоговом окне **Новый проект** в разделе **Шаблоны**щелкните пункт **Visual C++**, **Кроссплатформенный**, а затем выберите шаблон **Приложение OpenGLES (Android, iOS)** .
+2. В диалоговом окне **Новый проект** в разделе **Шаблоны** выберите **Visual C++**,  > **Кроссплатформенный**, а затем выберите шаблон **Приложение OpenGLES (Android, iOS)**.
 
 3. Назначьте приложению имя, например `MyOpenGLESApp`, а затем нажмите кнопку **ОК**.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907806"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983797"
 ---
 # <a name="manage-external-tools"></a>Управление внешними инструментами
 
@@ -24,13 +24,24 @@ ms.locfileid: "55907806"
 
 ## <a name="tools-available-on-the-tools-menu"></a>Инструменты, доступные в меню "Сервис"
 
-В меню **Сервис** содержится несколько встроенных команд:
+В меню **Инструменты** содержится несколько встроенных команд, в том числе следующие:
+
+::: moniker range="vs-2017"
 
 * **Расширения и обновления** для [управления расширениями Visual Studio](finding-and-using-visual-studio-extensions.md).
 * **Диспетчер фрагментов кода** для [организации фрагментов кода](code-snippets.md).
-* **PreEmptive Protection — Dotfuscator** для запуска [Dotfuscator Community Edition (CE)](dotfuscator/index.md) (если эта программа [установлена](dotfuscator/install.md)).
 * **Настройка** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
 * **Параметры** для [задания различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Диспетчер фрагментов кода** для [организации фрагментов кода](code-snippets.md).
+* **Настройка** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
+* **Параметры** для [задания различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Добавление новых инструментов в меню "Сервис"
 

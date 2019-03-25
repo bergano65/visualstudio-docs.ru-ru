@@ -1,7 +1,7 @@
 ---
 title: Управление зависимостями пакета с помощью файла requirements.txt
 description: Файл requirements.txt описывает зависимости проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924348"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194844"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
@@ -25,11 +25,13 @@ ms.locfileid: "55924348"
 
 - Если вы загрузили проект, содержащий файл *requirements.txt*, и хотите установить все указанные в нем пакеты, разверните узел **Среды Python** в **обозревателе решений**, щелкните правой кнопкой мыши узел среды и выберите **Установить из файла requirements.txt**:
 
-    ![Установка из файла requirements.txt](media/environments-requirements-txt-install.png)
+    ![Установка из файла requirements.txt](media/environments/environments-requirements-txt-install.png)
+
+- Если вы хотите установить зависимости в виртуальном окружении, сначала создайте и активируйте окружение, а затем воспользуйтесь командой **Установка из файла requirements.txt**. Дополнительные сведения о создании виртуального окружения см. в статье [Выбор окружения Python для проекта](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Если в среде установлены все необходимые пакеты, можно щелкнуть среду правой кнопкой мыши в **обозревателе решений** и выбрать **Создать файл requirements.txt**, чтобы создать необходимый файл. Если файл уже существует, отображается запрос с вариантами обновления:
 
-    ![Параметры обновления файла requirements.txt](media/environments-requirements-txt-replace.png)
+    ![Параметры обновления файла requirements.txt](media/environments/environments-requirements-txt-replace.png)
 
   - **Replace entire file** (Заменить весь файл) удаляет все существующие элементы, комментарии и параметры.
   - **Обновить существующие записи** определяет требования к пакету и обновляет описатели версии в соответствии с установленной версией.

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953386"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070117"
 ---
 # <a name="customize-startup"></a>Настройка запуска
 
@@ -65,7 +65,7 @@ ms.locfileid: "56953386"
 1. В списке **Настроить начальную страницу** выберите нужную страницу.
 
 > [!TIP]
-> Если ошибка в настраиваемой начальной странице вызывает сбой Visual Studio, можно запустить Visual Studio в безопасном режиме, а затем настроить использование начальной страницы по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Если ошибка на настраиваемой странице запуска вызывает сбой Visual Studio, вы можете запустить Visual Studio в безопасном режиме, а затем настроить использование страницы запуска по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>См. также
 

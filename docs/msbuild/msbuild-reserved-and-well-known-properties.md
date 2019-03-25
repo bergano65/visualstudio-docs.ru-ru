@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632398"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070143"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предусмотрен набор предопределенных свойств для сохранения информации о файле проекта и двоичных файлах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Значения этих свойств вычисляются так же, как и значения других свойств [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, для использования свойства `MSBuildProjectFile` необходимо ввести `$(MSBuildProjectFile)`
@@ -57,6 +57,7 @@ ms.locfileid: "56632398"
 | `MSBuildThisFileName` | Зарезервированное | Часть `MSBuildThisFileFullPath`, представляющая собой имя файла без расширения. |
 | `MSBuildToolsPath` | Зарезервированное | Путь установки версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], связанной со значением `MSBuildToolsVersion`.<br /><br /> Не включайте в путь завершающую обратную косую черту.<br /><br /> Это свойство нельзя переопределить. |
 | `MSBuildToolsVersion` | Зарезервированное | Версия набора инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], используемая для сборки проекта.<br /><br /> Примечание. Набор инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] состоит из задач, целей и средств, используемых для сборки приложения. Средства включают компиляторы *csc.exe* и *vbc.exe*. Дополнительные сведения см. в статьях [Набор инструментов MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) и [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Зарезервированное | Версия [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], используемая для сборки проекта. <br /><br/> Это свойство нельзя переопределить. При попытке сделать это будет возвращено сообщение об ошибке `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Имена, которые конфликтуют с элементами MSBuild
 

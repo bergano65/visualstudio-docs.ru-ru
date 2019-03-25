@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525379"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152932"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка с использованием C# или Visual Basic с помощью отладчика Visual Studio
 
@@ -25,17 +25,20 @@ ms.locfileid: "57525379"
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
-1. В Visual Studio последовательно выберите **Файл > Создать проект**.
+1. В Visual Studio последовательно выберите **Файл > Создать > Проект**.
 
-2. В разделе **Visual C#** или **Visual Basic** выберите **.NET Core**, а затем в средней области выберите **Консольное приложение (.NET Core)**.
+    ::: moniker range=">=vs-2019"
+    Откроется диалоговое окно **Создание нового проекта**. В поле поиска введите **.net** для фильтрации результатов, выберите **Консольное приложение (.NET Core)** и нажмите **Далее**. Введите имя, например **MyDbgApp**, и нажмите **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Откроется диалоговое окно **Новый проект**. В разделе **Visual C#** выберите **.NET Core**, а в средней области — **Консольное приложение (.NET Core)**. Введите имя, например **MyDbgApp**, и нажмите **ОК**.
+    ::: moniker-end
 
-     Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** и **.NET Core** и щелкните **Изменить**.
-
-3. Введите имя, например **MyDbgApp**, и нажмите кнопку **ОК**.
+     Если шаблона проекта **Консольное приложение (.NET Core)** отсутствует, перейдите в меню **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** и **.NET Core** и щелкните **Изменить**.
 
     Visual Studio создаст проект.
 
-4. В *Program.cs* или *Module1.vb* замените код
+1. В *Program.cs* или *Module1.vb* замените код
 
     ```csharp
     class Program

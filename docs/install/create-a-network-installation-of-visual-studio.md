@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954025"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871331"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Создание сетевой установки Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
 Обычно администратор предприятия создает точку сетевой установки для развертывания на клиентских рабочих станциях. Среда Visual Studio 2017 разработана таким образом, чтобы вы могли кэшировать файлы для первоначальной установки вместе со всеми обновлениями продуктов в одну папку. (Этот процесс также известен как _создание макета_.) 
 
@@ -48,7 +48,7 @@ ms.locfileid: "56954025"
 Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, приведенных в следующих примерах.
 
    > [!IMPORTANT]
-   > Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. Скачивание этого макета может занять некоторое время.  Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customizing-the-network-layout).
+   > Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. Скачивание этого макета может занять некоторое время.  Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customize-the-network-layout).
    >
    > [!TIP]
    > Эти команды необходимо выполнять из каталога загрузки. На компьютере с ОС Windows 10 это обычно каталог `C:\Users\<username>\Downloads`.
@@ -127,7 +127,7 @@ xcopy /e c:\vs2017offline \\server\products\VS2017
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Новые возможности версии 15.3
+### <a name="new-in-version-153"></a>Новые возможности в версии 15.3
 
 При выполнении команды макета указанные параметры (например, рабочие нагрузки и языки) будут сохранены. Все предыдущие параметры будут включены в последующие команды макета.  Ниже приведен пример макета с одной рабочей нагрузкой только для английского языка.
 
@@ -209,7 +209,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 
 ## <a name="see-also"></a>См. также
 
-* [Обновление сетевой установки Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

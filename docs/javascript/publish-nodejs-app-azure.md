@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021875"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070312"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Публикация приложения Node.js в Azure (служба приложений Linux)
 
@@ -36,15 +36,44 @@ ms.locfileid: "55021875"
 > * Создание службы приложений Linux в Azure
 > * Развертывание в Linux
 
+## <a name="prerequisites"></a>Предварительные требования
+
+* У вас должна быть установлена среда Visual Studio и должна иметься рабочая нагрузка "Разработка Node.js". 
+
+    ::: moniker range=">=vs-2019"
+    Установите Visual Studio 2019 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+    ::: moniker-end
+
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
+
+    ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)
+
+* У вас должна быть установлена среда выполнения Node.js.
+
+    Если она не установлена, установите версию LTS с веб-сайта [Node.js](https://nodejs.org/en/download/). Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. Если установленная среда выполнения не обнаружена, вы можете настроить проект так, чтобы он ссылался на установленную среду выполнения, на странице свойств (после создания проекта щелкните его узел правой кнопкой мыши и выберите пункт **Свойства**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Создание проекта Node.js для запуска в Azure
 
-1. Создайте новое приложение TypeScript Express в диалоговом окне **Файл** > **Создать проект**.
+1. Запустите Visual Studio.
 
-1. В разделе **TypeScript** выберите **Базовое приложение Node.js Express 4**.
+1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+
+1. Создайте приложение TypeScript Express.
+
+    ::: moniker range=">=vs-2019"
+    В диалоговом окне **Создание нового проекта** введите **javascript** в поле поиска, чтобы отфильтровать результаты, а затем выберите **Базовое приложение Azure Node.js Express 4** и нажмите **Далее**. Затем нажмите **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Базовое приложение Azure Node.js Express 4** и нажмите кнопку **ОК**.
 
     ![Создание приложения TypeScript Express](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Если шаблон проекта **Базовое приложение Azure Node.js Express 4** отсутствует, необходимо добавить рабочую нагрузку **Разработка Node.js**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 
-1. Нажмите кнопку **ОК**, чтобы создать проект в Visual Studio.
+    Visual Studio создаст проект и откроет его в обозревателе решений (правая панель).
 
 1. Нажмите клавишу **F5**, чтобы скомпилировать и запустить приложение, и убедитесь, что все работает должным образом.
 
@@ -82,7 +111,7 @@ ms.locfileid: "55021875"
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Создание службы приложений Linux в Azure
 
-1. Войдите на [портал Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 
 2. Выберите **Службы приложений** в списке служб слева и нажмите **Добавить**.
 

@@ -6,20 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567413"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194986"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -27,6 +29,8 @@ ms.locfileid: "57567413"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | Выпуск | 12 марта 2019 г. | 15.9.28307.518 |
+| 15.0.21 | Выпуск | 12 марта 2019 г. | 15.0.26228.76 |
 | 15.9.8 | Выпуск | 5 марта 2019 г. | 15.9.28307.481 |
 | 15.9.7 | Выпуск | 12 февраля 2019 г. | 15.9.28307.423 |
 | 15.0.21 | Выпуск | 12 февраля 2019 г. | 15.0.26228.73 |
@@ -172,12 +176,21 @@ ms.locfileid: "57567413"
 | 15.1 (предварительная версия 1) | Предварительный просмотр | 7 марта 2017 г. | 15.0.26304.0 |
 | 15.0.0 | Выпуск | 7 марта 2017 г. | 15.0.26228.4 |
 
+> [!NOTE]
+> Дополнительные сведения о номерах сборки и датах выпуска следующей версии Visual Studio см. на странице [Номера сборки и даты выпуска Visual Studio](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 В следующей таблице представлен актуальный список дат выпуска и номеров сборки Visual Studio 2019.
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Релиз-кандидат 2 (RC.2) | 12 марта 2019 г. | 16.0.28711.60 |
+| 16.0.0 | Предварительная версия 4.2 | 12 марта 2019 г. | 16.0.28711.60 |
 | 16.0.0 | Релиз-кандидат 1 Svc1 (RC.1 Svc1) | 6 марта 2019 г. | 16.0.28705.295 |
 | 16.0.0 | Предварительная версия 4.1 Svc1 | 6 марта 2019 г. | 16.0.28705.295 |
 | 16.0.0 | Релиз-кандидат 1 (RC.1) | 5 марта 2019 г. | 16.0.28701.123 |
@@ -191,11 +204,13 @@ ms.locfileid: "57567413"
 | 16.0.0 | Предварительная версия 1.1 | 10 декабря 2018 г. | 16.0.28408.50 |
 | 16.0.0 | Предварительная версия 1 | 4 декабря 2018 г. | 16.0.28329.73 |
 
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
-* [График выпуска Visual Studio](/visualstudio/productinfo/release-rhythm)
-* [Руководство администратора Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [График выпуска Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)

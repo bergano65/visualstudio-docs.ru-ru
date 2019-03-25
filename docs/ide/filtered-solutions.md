@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007180"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983888"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Фильтрация решений в Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "57007180"
 
 1. В строке меню выберите **Файл** > **Открыть** > **Решение или проект**.
 
-2. В диалоговом окне **Новый проект** выберите решение, а затем выберите **Не загружать проекты**.
+2. В диалоговом окне **Открыть проект** выберите решение, а затем выберите **Не загружать проекты**.
 
    ![Диалоговое окно открытия проекта Visual Studio с установленным флажком "Не загружать проекты"](media/filtered-solutions/do-not-load-projects.png)
 

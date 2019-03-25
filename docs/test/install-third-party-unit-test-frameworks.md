@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316149"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982926"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
 
@@ -26,9 +26,19 @@ ms.locfileid: "56316149"
 
 ### <a name="install-from-visual-studio"></a>Установка из Visual Studio
 
-1. Выберите **Сервис** в стандартном меню, а затем **Расширения и обновления**.
+::: moniker range="vs-2017"
 
-2. Разверните узел **Интернет** > **Visual Studio Marketplace** > **Средства**. Выберите **Тестирование**.
+1. Выберите **Инструменты** > **Расширения и обновления**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Выберите **Расширения** > **Управление расширениями**.
+
+::: moniker-end
+
+2. Разверните узлы **Интернет** > **Visual Studio Marketplace** > **Средства** и выберите элемент **Тестирование**.
 
 3. Откройте список, чтобы найти платформу.
 

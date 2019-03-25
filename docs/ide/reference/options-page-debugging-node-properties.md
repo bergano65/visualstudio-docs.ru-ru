@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946558"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983082"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.
@@ -84,5 +84,5 @@ ms.locfileid: "55946558"
 - [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Страница "Параметры", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../../debugger/general-debugging-options-dialog-box.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Режим отладки "Изменить и продолжить"](../../debugger/edit-and-continue.md)
 - [Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155140"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149631"
 ---
 # <a name="profile-python-code"></a>Профилирование кода Python
 
@@ -32,7 +32,7 @@ ms.locfileid: "56155140"
 ![Отчет профилирования о производительности](media/profiling-results.png)
 
 > [!Note]
-> Сейчас Visual Studio поддерживает только этот уровень профилирования приложений, но мы хотим получить ваши отзывы о других возможностях. Используйте [кнопку обратной связи **Была ли эта страница полезной?**](#feedback) внизу страницы.
+> Сейчас Visual Studio поддерживает только этот уровень профилирования приложений, но мы хотим получить ваши отзывы о других возможностях. Используйте кнопку **Отзыв о продукте** внизу страницы.
 
 ## <a name="profiling-for-ironpython"></a>Профилирование для IronPython
 

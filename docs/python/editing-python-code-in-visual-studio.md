@@ -1,7 +1,7 @@
 ---
 title: Редактирование кода Python
 description: Visual Studio предоставляет для Python возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155400"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155528"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
@@ -109,10 +109,20 @@ commas_to_colons(1)
 
 ![Пример результата проверки подсказок по типам mypy](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Для версий Python до 3.5 Visual Studio также отображает подсказки по типам, которые вы предоставляете через *файлы-заглушки* (*.pyi*). Файлы заглушки можно использовать всякий раз, когда вы не хотите включать подсказки по типам в код напрямую или необходимо создать подсказки по типам для библиотеки, которая не использует их напрямую. Дополнительные сведения см. в разделе [Создание заглушек для модулей Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) на вики-сайте проекта mypy.
+> В версиях Python, предшествующих 3.5, в Visual Studio также отображаются подсказки по типам, которые вы предоставляете через *файлы-заглушки* (*.pyi*). Файлы заглушки можно использовать всякий раз, когда вы не хотите включать подсказки по типам в код напрямую или необходимо создать подсказки по типам для библиотеки, которая не использует их напрямую. Дополнительные сведения см. в разделе [Создание заглушек для модулей Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) на вики-сайте проекта mypy.
 >
 > В настоящее время Visual Studio не поддерживает подсказки по типам в комментариях.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> В версиях Python, предшествующих 3.5, в Visual Studio также отображаются подсказки по типам, которые вы предоставляете через *файлы-заглушки* (*.pyi*). Файлы заглушки можно использовать всякий раз, когда вы не хотите включать подсказки по типам в код напрямую или необходимо создать подсказки по типам для библиотеки, которая не использует их напрямую. Дополнительные сведения см. в разделе [Создание заглушек для модулей Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) на вики-сайте проекта mypy.
+>
+> Visual Studio содержит набор пакетов файлов Typeshed для Python 2 и 3, поэтому нет необходимости скачивать их отдельно. Но если вы хотите использовать другой набор файлов, можно указать путь в меню **Средства** > **Параметры** > **Python**  >  **Языковой сервер**. См. статью [Параметры для Python в Visual Studio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> В настоящее время Visual Studio не поддерживает подсказки по типам в комментариях.
+::: moniker-end
 
 ### <a name="signature-help"></a>Справка по сигнатурам
 
