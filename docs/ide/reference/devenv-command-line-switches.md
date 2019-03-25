@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908469"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868915"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для Devenv
 
@@ -67,6 +67,7 @@ Devenv позволяет устанавливать различные пара
 |[/Command](command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Загружает исполняемый файл C++ под управлением отладчика. Этот параметр недоступен для исполняемых файлов Visual Basic или C#. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Сравнение двух файлов. Принимает четыре параметра: *SourceFile*, *TargetFile*, *SourceDisplayName* (не обязательный) и *TargetDisplayName* (не обязательный).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Открывает указанное решение без загрузки каких-либо проектов.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Открывает указанные файлы в запущенном экземпляре этого приложения. Если нет запущенных экземпляров, то запускается новый экземпляр с упрощенной структурой окна.<br /><br /> `devenv /edit File1 File2`|
 |[/LCID или /L](lcid-devenv-exe.md)|Задает язык по умолчанию для среды IDE. Если указанный язык не включен в пакет установки Visual Studio, этот параметр игнорируется.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Запускает Visual Studio и записывает все действия в файл журнала.<br /><br /> `devenv /log mylogfile.xml`|

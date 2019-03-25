@@ -2,7 +2,6 @@
 title: Интерфейсы сценариев Windows | Документы Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905367"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154430"
 ---
 # <a name="windows-script-interfaces"></a>Интерфейсы скриптов Windows
 
@@ -37,7 +36,7 @@ ms.locfileid: "49905367"
 
 ## <a name="windows-script-background"></a>Общие сведения о сценариях Windows
 
-Интерфейсы сценариев Windows делятся на две категории: серверы сценариев Windows и обработчики сценариев Windows. Сервер создает обработчик сценариев и вызывает его для выполнения сценариев. Примеры серверов сценариев Windows:
+Интерфейсы Windows Script разделяются на две категории: узлы Windows Script и модули Windows Script. Сервер создает обработчик сценариев и вызывает его для выполнения сценариев. Примеры серверов сценариев Windows:
 
 - Microsoft Internet Explorer
 
@@ -87,7 +86,7 @@ ms.locfileid: "49905367"
 |----------|----------------|
 |Объект кода|Создаваемый обработчиком сценариев экземпляр, который связан с именованным элементом, например модуль, связанный с формой, в Visual Basic, или класс C++, связанный с именованным элементом. Желательно, чтобы это был COM-объект OLE, который поддерживает автоматизацию OLE. Это позволит серверу или другой сущности, не связанной со сценариями, работать с объектом кода.|
 |Именованный элемент|COM-объект OLE (желательно поддерживающий автоматизацию OLE), который расценивается сервером как представляющий интерес для сценария. Примерами могут служить HTML-страница в веб-браузере и документ и диалоговые окна в Microsoft Word.|
-|Скрипт|Данные, составляющие программу, которая выполняется обработчиком сценариев. Сценарием могут быть любые непрерывные выполняемые данные, включая фрагменты текста, блоки `pcode` или даже машинно-зависимый исполняемый байтовый код. Сервер загружает сценарий в обработчик сценариев посредством одного из интерфейсов `IPersist*` или интерфейса [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|
+|Сценарий|Данные, составляющие программу, которая выполняется обработчиком сценариев. Сценарием могут быть любые непрерывные выполняемые данные, включая фрагменты текста, блоки `pcode` или даже машинно-зависимый исполняемый байтовый код. Сервер загружает сценарий в обработчик сценариев посредством одного из интерфейсов `IPersist*` или интерфейса [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|
 |Обработчик сценариев|Объект OLE, который обрабатывает сценарии. Обработчик сценариев реализует интерфейс [IActiveScript](../winscript/reference/iactivescript.md), а также (необязательно) интерфейс [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|
 |Сервер сценариев|Приложение или программа, которой принадлежит обработчик сценариев Windows. Сервер реализует интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) и (необязательно) интерфейс [IActiveScriptSiteWindow](../winscript/reference/iactivescriptsitewindow.md).|
 |Компонент сценария|Часть сценария, присоединяемая к объекту посредством интерфейса [IActiveScriptParse](../winscript/reference/iactivescriptparse.md). Совокупность компонентов сценария образует сценарий.|

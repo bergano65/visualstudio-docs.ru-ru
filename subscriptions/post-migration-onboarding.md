@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Узнайте, как успешно зарегистрировать подписки Visual Studio для вашей организации после миграции на портал администрирования.
 searchscope: VS Subscription
-ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954232"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154183"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Подключение к порталу администрирования подписок Visual Studio после миграции организации
 
@@ -24,9 +24,9 @@ ms.locfileid: "56954232"
 
 Вы можете столкнуться с одним из нескольких сценариев:
 
-1. [Основному контактному лицу не удалось завершить процесс подключения.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
-2. [Основному контактному лицу удалось завершить подключение, но не удалось добавить вас в качестве администратора. Учетные данные были перечислены в VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
-3. [Основному контактному лицу удалось завершить подключение, но не удалось добавить вас в качестве администратора. Учетные данные не были указаны в VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+1. [Основному контактному лицу не удалось завершить процесс подключения.](#onboarding-not-completed-by-primary-contact)
+2. [Основному контактному лицу удалось завершить подключение, но не удалось добавить вас в качестве администратора. Учетные данные были перечислены в VLSC.](#primary-contact-did-not-provide-you-administrator-access)
+3. [Основному контактному лицу удалось завершить подключение, но не удалось добавить вас в качестве администратора. Учетные данные не были указаны в VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
 
 <sup>1</sup> Если пользователь является основным контактным лицом или контактным лицом для отправки уведомлений и не завершил процесс подключения, то, чтобы настроить портал для вашей организации, необходимо выполнить действия, указанные в первом сценарии.
 

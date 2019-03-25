@@ -8,14 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936204"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069896"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить  Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
 Чтобы изменить содержимое основного текста строки или двоичного основного текста запроса веб-служб, такого как запрос SOAP, REST, asmx, wcf, RIA или запрос веб-служб других типов, можно создать пользовательский редактор содержимого.
 
@@ -31,9 +31,7 @@ ms.locfileid: "55936204"
 
 ## <a name="create-a-windows-control-library-project"></a>Создание проекта библиотеки элементов управления Windows
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Создание пользовательского элемента управления с использованием проекта библиотеки элементов управления Windows
-
-1. В меню **Файл** Visual Studio последовательно выберите пункты **Создать** и **Проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
     Откроется диалоговое окно **Новый проект**.
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  После того как пользователь завершит изменение основного текста строки и нажмет кнопку **ОК** в диалоговом окне подключаемого модуля, вызывается метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> для получения измененного текста в виде строки и обновления **текста строки** запроса в редакторе веб-тестов производительности.
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Создание класса и реализация кода интерфейса IStringHttpBodyEditorPlugin
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Создание класса и реализация интерфейса IStringHttpBodyEditorPlugin
 
-1.  В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
+1. В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
 
-2.  Откроется диалоговое окно **Добавление нового элемента**.
+   Откроется диалоговое окно **Добавление нового элемента**.
 
-3.  Выберите **Класс**.
+2. Выберите **Класс**.
 
-4.  В текстовом поле **Имя** введите значащее имя класса, например `MessageEditorPlugins`.
+3. В текстовом поле **Имя** введите значащее имя класса, например `MessageEditorPlugins`.
 
-5.  Выберите **Добавить**.
+4. Выберите **Добавить**.
 
-     В проект добавляется класс Class1, который отображается в редакторе кода.
+   В проект добавляется класс Class1, который отображается в редакторе кода.
 
-6.  В редакторе кода добавьте следующий оператор using:
+5. В редакторе кода добавьте следующий оператор `using`:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  Напишите или скопируйте следующий код, чтобы создать экземпляр класса XmlMessageEditor из интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> и реализовать требуемые методы:
+6. Вставьте следующий код для реализации этого интерфейса:
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ private MessageEditorControl messageEditorControl
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ private MessageEditorControl messageEditorControl
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Сборка и развертывание подключаемых модулей
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Построение и развертывание результирующей библиотеки DLL для интерфейсов IStringHttpBodyEditorPlugin и IBinaryHttpBodyEditorPlugin
+1. В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>**.
 
-1.  В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>**.
+2. Закройте все экземпляры Visual Studio.
 
-2.  Закройте все экземпляры Visual Studio.
+   > [!NOTE]
+   > Закрытие Visual Studio гарантирует, что файл *DLL* не будет заблокирован, когда вы попытаетесь его скопировать.
 
-    > [!NOTE]
-    > Закрытие Visual Studio гарантирует, что файл *DLL* не будет заблокирован, когда вы попытаетесь его скопировать.
+3. Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-3.  Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+4. Запустите Visual Studio.
 
-4.  Запустите Visual Studio.
-
-     Теперь файл *DLL* регистрируется в Visual Studio.
+   Теперь файл *DLL* регистрируется в Visual Studio.
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Проверка подключаемых модулей с помощью веб-теста производительности
 
-### <a name="to-test-your-plug-ins"></a>Тестирование подключаемых модулей
+1. Создайте тестовый проект.
 
-1.  Создайте тестовый проект.
+2. Создайте веб-тест производительности и введите в браузере URL-адрес для веб-службы.
 
-2.  Создайте веб-тест производительности и введите в браузере URL-адрес для веб-службы.
+3. По завершении записи в редакторе веб-тестов производительности разверните запрос веб-службы и выберите узел **Текст строки** или **Двоичный основной текст**.
 
-3.  По завершении записи в редакторе веб-тестов производительности разверните запрос веб-службы и выберите узел **Текст строки** или **Двоичный основной текст**.
+4. В окне **Свойства** выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием **(…)**.
 
-4.  В окне "Свойства" выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием **(…)**.
+   Откроется диалоговое окно **Изменение данных основного текста HTTP**.
 
-     Откроется диалоговое окно **Изменение данных основного текста HTTP**.
-
-5.  Теперь можно изменить данные и нажать кнопку **ОК**. При этом вызывается метод GetNewValue для обновления содержимого в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5. Теперь можно изменить данные и нажать кнопку **ОК**. При этом вызывается метод GetNewValue для обновления содержимого в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Компиляция кода
 

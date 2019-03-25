@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939480"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069636"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
@@ -35,9 +35,21 @@ ms.locfileid: "55939480"
 
 Для начала создайте файл и добавьте в него код.
 
-1. Откройте Visual Studio, а затем в меню **Файл** в строке меню выберите пункт **Создать файл**.
+::: moniker range="vs-2017"
 
-1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual Basic** и щелкните **Открыть**.
+1. Запустите Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio. Нажмите клавишу **ESC** или нажмите **Продолжить без кода** в окне запуска, чтобы открыть среду разработки.
+
+::: moniker-end
+
+2. В меню **Файл** в строке меню выберите **Создать файл**.
+
+3. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual Basic** и щелкните **Открыть**.
 
    Новый файл открывается в редакторе с каркасом класса Visual Basic. (Возможно, вы уже заметили, что нам не нужно создавать полный проект Visual Studio, чтобы использовать такие преимущества редактора кода, как выделение синтаксиса. Нам нужен только файл кода.)
 

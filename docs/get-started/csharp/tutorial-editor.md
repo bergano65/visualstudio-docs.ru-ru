@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722503"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069675"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
@@ -35,9 +35,21 @@ ms.locfileid: "56722503"
 
 Для начала создайте файл и добавьте в него код.
 
-1. Откройте Visual Studio, а затем в меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+::: moniker range="vs-2017"
 
-1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
+1. Запустите Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio. Нажмите клавишу **ESC** или нажмите **Продолжить без кода** в окне запуска, чтобы открыть среду разработки.
+
+::: moniker-end
+
+2. В меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+
+3. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
 
    Новый файл открывается в редакторе с каркасом класса C#. (Обратите внимание, что нам не нужно создавать полный проект Visual Studio, чтобы получить некоторые преимущества редактора кода. Вам нужен только файл кода!)
 

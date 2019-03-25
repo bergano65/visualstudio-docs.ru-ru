@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  построить и запустить пример LinqToXmlDataBinding
+title: Как выполнить построить и запустить пример LinqToXmlDataBinding
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,24 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951908"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069922"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить  Сборка и запуск примера LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить Сборка и запуск примера LinqToXmlDataBinding
 
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.
 
 Дополнительные сведения о настройке интегрированной среды разработки см. в [обзоре Visual Studio IDE](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Создание и заполнение проекта
+## <a name="create-the-project"></a>Создание проекта
 
-### <a name="to-create-the-starting-project"></a>Создание начального проекта
-
-1. Запустите среду Visual Studio и создайте приложение C# WPF с именем LinqToXmlDataBinding. В проекте должна использоваться инфраструктура .NET Framework 3.5 (или более поздняя версия).
+1. Запустите Visual Studio и создайте **приложение WPF** на C# с именем **LinqToXmlDataBinding**. В проекте необходимо использовать .NET Framework 3.5 (или более поздней версии).
 
 1. Добавьте в проект ссылки для следующих сборок .NET, если они еще не заданы:
 
@@ -38,9 +36,9 @@ ms.locfileid: "55951908"
 
 1. Выполните сборку решения, нажав **Ctrl**+**Shift**+**B**, а затем запустите его с помощью клавиши **F5**. Проект должен быть скомпилирован без ошибок и выполнен как обычное приложение WPF.
 
-### <a name="to-add-custom-code-to-the-project"></a>Добавление в проект пользовательского кода
+## <a name="add-code-to-the-project"></a>Добавление кода в проект
 
-1. В обозревателе решений переименуйте исходный файл **Window1.xaml** в **L2XDBForm.xaml**. Зависимый исходный файл **Window1.xaml.cs** должен быть автоматически переименован в **L2XDBForm.xaml.cs**.
+1. В **обозревателе решений** переименуйте исходный файл **Window1.xaml** в **L2XDBForm.xaml**. Зависимый исходный файл **Window1.xaml.cs** должен быть автоматически переименован в **L2XDBForm.xaml.cs**.
 
 1. Замените исходный код в файле **L2XDBForm.xaml** фрагментом кода из статьи [Исходный код L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). Для работы с этим файлом используйте представление источника данных XAML.
 
@@ -56,9 +54,7 @@ ms.locfileid: "55951908"
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Выполнение программы и просмотр списка книг
 
-- Запустите программу LinqToXmlDataBinding, нажав клавишу **F5** (**Начать отладку**) или клавиши **Ctrl**+**F5** (**Запуск без отладки**).
-
-   Откроется окно программы с заголовком **Привязка данных WPF с помощью LINQ to XML**.
+Запустите программу LinqToXmlDataBinding, нажав клавишу **F5** (**Начать отладку**) или клавиши **Ctrl**+**F5** (**Запуск без отладки**). Откроется окно программы с заголовком **Привязка данных WPF с помощью LINQ to XML**.
 
 - Обратите внимание на верхнюю часть пользовательского интерфейса, в котором отображается необработанный код **XML**, представляющий список книг. Он выводится с помощью элемента управления WPF <xref:System.Windows.Controls.TextBlock>, не включающего взаимодействие с мышью или клавиатурой.
 

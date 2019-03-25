@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223251"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867891"
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -113,11 +113,17 @@ ms.locfileid: "57223251"
 
 Как было сказано ранее, вы также можете открывать файлы кода без использования проекта или решения. Сведения о разработке кода таким образом см. в статье [Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Создание временного проекта (C# и Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Создание временного проекта
+
+(только для C# и Visual Basic)
 
 Если при создании проекта на основе .NET не указать расположение на диске, проект будет временным. Таким образом можно экспериментировать с проектами .NET. При работе с временным проектом его можно сохранить или удалить в любое время.
 
 Чтобы создать временный проект, сначала выберите **Сервис** > **Параметры** > **Проекты и решения** > **Общие**, а затем снимите флажок **Сохранять новые проекты в момент создания**. После этого откройте диалоговое окно **Новый проект**, как обычно.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Удаление решения, проекта или элемента
 

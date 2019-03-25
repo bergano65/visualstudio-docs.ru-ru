@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526520"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151249"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка кода C++ с помощью отладчика Visual Studio
 
@@ -25,17 +25,20 @@ ms.locfileid: "57526520"
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
-1. В Visual Studio последовательно выберите **Файл > Создать проект**.
+1. В Visual Studio последовательно выберите **Файл > Создать > Проект**.
 
-2. В разделе **Visual C++** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение Windows**.
+    ::: moniker range=">=vs-2019"
+    Откроется диалоговое окно **Создание нового проекта**. В поле поиска введите **asp.net** для фильтрации результатов, выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**. Введите имя, например **MyDbgApp**, и нажмите **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Откроется диалоговое окно **Новый проект**. В разделе **Visual C++** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение Windows**. Введите имя, например **MyDbgApp**, и нажмите **ОК**.
+    ::: moniker-end
 
-    Если шаблон проекта **Приложение консоли Windows** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
-
-3. Введите имя, например **MyDbgApp**, и нажмите кнопку **ОК**.
+    Если шаблон проекта **Консольное приложение Windows** отсутствует, перейдите в меню **Инструменты** > **Получить инструменты и компоненты...**, после чего запустится Visual Studio Installer. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
 
     Visual Studio создаст проект.
 
-4. В файле MyDbgApp.cpp замените код
+1. В файле MyDbgApp.cpp замените код
 
     ```c++
     int main()

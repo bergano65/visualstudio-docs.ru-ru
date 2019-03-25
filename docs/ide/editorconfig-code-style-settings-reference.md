@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911875"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868382"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
-В Visual Studio 2017 вы можете определить и поддерживать согласованный стиль кода в своей базе кода с помощью файла [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig содержит несколько ключевых свойств форматирования, таких как `indent_style` и `indent_size`. В Visual Studio параметры соглашений о написании кода .NET можно настроить в файле EditorConfig. Файлы EditorConfig позволяют включить или отключить отдельные соглашения о написании кода .NET и настроить строгость применения этих соглашений через уровень серьезности. Дополнительные сведения об использовании EditorConfig для обеспечения согласованности базы кода см. в статье [Создание портативных настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md).
+Вы можете описать и поддерживать согласованный стиль кода в своей базе кода с помощью файла [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig содержит несколько ключевых свойств форматирования, таких как `indent_style` и `indent_size`. В Visual Studio параметры соглашений о написании кода .NET можно настроить в файле EditorConfig. Вы можете включить или отключить отдельные соглашения о написании кода .NET и настроить строгость применения каждого правила с помощью уровней серьезности.
 
-См. [пример файла .editorconfig](#example-editorconfig-file) в конце этой статьи.
+> [!TIP]
+> - При определении соглашения о написании кода в файле .editorconfig вы можете настроить способ анализа вашего кода [анализаторами стиля кода](../code-quality/roslyn-analyzers-overview.md), которые встроены в Visual Studio. Файл .editorconfig — это файл конфигурации для таких анализаторов.
+> - Предпочтения по стилю кода для Visual Studio также можно задать в диалоговом окне [Параметры текстового редактора](code-styles-and-quick-actions.md). Но при этом параметры в файле .editorconfig имеют приоритет, и предпочтения, заданные вами в меню **Параметры** не связываются с определенным проектом.
+
+В конце этой статьи приведен [пример файла .editorconfig](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Категории соглашений
 

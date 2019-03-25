@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843827"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069688"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -96,7 +96,7 @@ ms.locfileid: "56843827"
 
  ![Гибридные приложения для нескольких устройств с использованием Javascript](../cross-platform/media/multidevicehybridapps.png "Гибридные приложения для нескольких устройств с использованием Javascript")
 
- Чтобы приступить к работе, установите Visual Studio 2017 и выберите **Разработка мобильных приложений на JavaScript** во время установки. Инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания приложения для нескольких платформ.
+ Чтобы приступить к работе, установите Visual Studio и выберите **Разработка мобильных приложений на JavaScript** во время установки. Инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания приложения для нескольких платформ.
 
  После установки расширения откройте Visual Studio и создайте проект **пустого приложения (Apache Cordova)**. Затем можно разработать приложение с помощью JavaScript или TypeScript. Кроме того, можно добавлять подключаемые модули для расширения функциональности приложения, и API-интерфейсы из подключаемых модулей будут появляться в IntelliSense в ходе написания кода.
 

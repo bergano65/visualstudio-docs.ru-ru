@@ -1,7 +1,7 @@
 ---
 title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921007"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194182"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
-По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3, Anaconda 2 и Anaconda 3, как описано в руководстве по [установке](installing-python-support-in-visual-studio.md).
+По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 и более поздних версий также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3 вместе с Miniconda (Visual Studio 2019) или Anaconda 2/Anaconda 3 (Visual Studio 2017), как описано в руководстве по [установке](installing-python-support-in-visual-studio.md).
+
+::: moniker range=">=vs-2019"
+Кроме того, вы можете установить стандартные интерпретаторы из диалогового окна **Add Environment** (Добавление среды). Выберите команду **Add Environment** (Добавление среды) в окне **Python Environments** (Среды Python) или в панели инструментов Python, выберите вкладку **Python installation** (Установка Python), укажите интерпретаторы для установки и нажмите **Install** (Установить).
+::: moniker-end
 
 Кроме того, любой интерпретатор из приведенной ниже таблицы можно установить вручную, не используя Visual Studio Installer. Например, если вы установили Anaconda 3 еще до установки Visual Studio, нет необходимости снова устанавливать этот дистрибутив с помощью Visual Studio Installer. Вы также можете установить интерпретатор вручную, если, например, доступна новая версия, которая пока что не отображается в установщике Visual Studio.
 

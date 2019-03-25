@@ -120,7 +120,7 @@
 ## [Структура AsyncTaskMethodBuilder](asynctaskmethodbuilder-structure-internal-members.md)
 ### [Свойство ObjectIdForDebugger](asynctaskmethodbuilder-objectidfordebugger-property.md)
 ### [Поле m_builder](asynctaskmethodbuilder-m-builder-field.md)
-## Структура [AsyncTaskMethodBuilder<TResult>](asynctaskmethodbuilder-tresult-structure-internal-members.md)
+## [Структура AsyncTaskMethodBuilder\<TResult>](asynctaskmethodbuilder-tresult-structure-internal-members.md)
 ### [Свойство ObjectIdForDebugger](asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)
 ### [Поле m_task](asynctaskmethodbuilder-tresult-m-task-field.md)
 ## [Структура AsyncVoidMethodBuilder](asyncvoidmethodbuilder-structure-internal-members.md)

@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842839"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155593"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
 
@@ -30,7 +29,7 @@ ms.locfileid: "56842839"
 ![интегрированная среда разработки для глубинного обучения](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Быстрое начало работы с помощью коллекции образцов Машинного обучения Azure
-Благодаря интеграции инструментов Visual Studio для сценариев ИИ со службой Машинного обучения Azure вы можете легко просматривать коллекцию образцов экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ.
+Расширение Visual Studio Tools for AI интегрировано со службой Машинного обучения Azure, что упрощает просмотр коллекций примеров экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ.
 
 ![обозреватель образцов](media/about/gallery.png)
 
@@ -44,7 +43,7 @@ ms.locfileid: "56842839"
 [Дополнительные сведения об обучении моделей в облаке](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
-В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows
+В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows.
 
 ## <a name="support"></a>Поддержка
-Поддержка расширения оказывается в [средстве отслеживания проблем GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Вы можете отправить сообщение об ошибке, предложить новую функцию или принять участие в обсуждении.
+Поддержка расширения оказывается в [средстве отслеживания проблем GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Вы можете отправить сообщение об ошибке, предложить новую возможность или принять участие в обсуждении.

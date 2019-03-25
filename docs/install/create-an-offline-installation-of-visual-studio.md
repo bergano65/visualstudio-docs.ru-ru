@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796547"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983056"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 
 Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
 
@@ -32,7 +32,7 @@ Visual Studio 2017 поддерживает различные конфигур
 
 ## <a name="use-the-download-all-then-install-feature"></a>Использование компонента Download all, then install (Скачать все и установить)
 
-[**Новая возможность в версии 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): загрузив веб-установщик, выберите в установщике Visual Studio Installer новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
+[**Новые возможности в версии 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): загрузив веб-установщик, выберите в установщике Visual Studio Installer новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
 
    ![Параметр Download all, then install (Скачать все и установить)](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>См. также
 
-- [Создание сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Создание сетевой установки Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Установка сертификатов, необходимых для установки Visual Studio в автономном режиме](../install/install-certificates-for-visual-studio-offline.md)
 - [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md)
+- [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

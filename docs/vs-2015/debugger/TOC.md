@@ -112,7 +112,7 @@
 ### [Ошибка: отсутствуют разрешения на изучение удостоверения процесса](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Ошибка: службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Ошибка: рабочий процесс веб-узла был завершен службами IIS](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Ошибка: Не удалось подключиться к компьютеру <name>. Не удается найти компьютер в сети.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Ошибка: не удается подключиться к компьютеру \<имя>. Не удается найти компьютер в сети.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Ошибка: смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework 2.0 или выше](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Ошибка: для процессов IA64 отладка в смешанном режиме не поддерживается](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Ошибка: отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)

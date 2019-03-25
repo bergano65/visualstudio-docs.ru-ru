@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957303"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984005"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов
 
 Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Для этого запустите установщик Visual Studio и внесите нужные изменения.
 
@@ -69,6 +69,6 @@ ms.locfileid: "55957303"
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio 2017](install-visual-studio.md)
-* [Обновление Visual Studio 2017](update-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
+* [Установка Visual Studio](install-visual-studio.md)
+* [Обновление Visual Studio](update-visual-studio.md)
+* [Удаление Visual Studio](uninstall-visual-studio.md)

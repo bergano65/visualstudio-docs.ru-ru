@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907861"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982887"
 ---
-# <a name="uninstall-visual-studio-2017"></a>Удаление Visual Studio 2017
+# <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
 На этой странице приведены пошаговые инструкции по удалению Visual Studio, интегрированного набора средств для эффективной работы разработчиков.
 
@@ -39,7 +39,7 @@ ms.locfileid: "55907861"
 
 2. Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.
 
-     ![Изменение Visual Studio 2017: изменение, запуск, восстановление или удаление](media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")
+     ![Изменение Visual Studio: изменение, запуск, восстановление или удаление](media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")
 
 3. Нажмите кнопку **ОК**, чтобы подтвердить действие.
 
@@ -59,6 +59,6 @@ ms.locfileid: "55907861"
 
 ## <a name="see-also"></a>См. также
 
-* [Изменение Visual Studio 2017](modify-visual-studio.md)
+* [Изменение Visual Studio](modify-visual-studio.md)
 * [Обновление Visual Studio](update-visual-studio.md)
 * [Удаление Visual Studio для Mac](/visualstudio/mac/uninstall)

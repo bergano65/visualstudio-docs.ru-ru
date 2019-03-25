@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316734"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070039"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Общие сведения о Visual Studio для Mac 2017 (предварительная версия)
+# <a name="visual-studio-2017-for-mac-tour"></a>Общие сведения о Visual Studio 2017 для Mac
 
 > [!NOTE]
-> Visual Studio 2019 для Mac (предварительная версия) [теперь доступна](installation.md) для тестирования.
+> Visual Studio 2019 для Mac (предварительная версия) [теперь доступна](installation.md?view=vsmac-2019) для тестирования.
 
 Visual Studio для Mac — это _интегрированная среда разработки_ .NET на Mac, которая позволяет редактировать, отлаживать и создавать код, а затем публиковать приложения. Помимо ожидаемых возможностей, таких как стандартный редактор и отладчик, Visual Studio для Mac включает в себя компиляторы, средства выполнения кода, графические конструкторы и систему управления версиями для упрощения процесса разработки программного обеспечения.
 

@@ -1,27 +1,28 @@
 ---
-title: Новые возможности в Live Unit Testing
+title: Новые возможности Live Unit Testing в Visual Studio 2017
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221545"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872422"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Новые возможности в Live Unit Testing
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Новые возможности Live Unit Testing для Visual Studio 2017
 
 В этом разделе перечислены новые возможности Live Unit Testing, добавленные в каждой версии Visual Studio начиная с Visual Studio 2017 версии 15.3. Общие сведения об использовании Live Unit Testing см. в статье [Функция Live Unit Testing в Visual Studio](live-unit-testing.md).
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Новые возможности Live Unit Testing в Visual Studio 2017 версии 15.4
+## <a name="version-154"></a>Версия 15.4
 
 Начиная с версии 15.4 среды Visual Studio 2017 в функции Live Unit Testing реализованы улучшения в ряде областей.
 
@@ -39,7 +40,7 @@ ms.locfileid: "57221545"
 
 - **Различные улучшения в пользовательском интерфейсе**.  Параметр **Динамический набор тестов — включить/исключить** в списке жестов щелчка правой кнопки мыши, который мог вводить в заблуждение, был переименован во **Включить/исключить Live Unit Testing**. Параметр **Чистый сброс** был удален из меню **Тест** > **Live Unit Testing**. Чтобы получить к нему доступ, теперь нужно выбрать **Сервис** > **Параметры** > **Live Unit Testing**, а затем выбрать пункт **Удалить сохраняемые данные**.
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Новые возможности Live Unit Testing в Visual Studio 2017 версии 15.3
+## <a name="version-153"></a>Версия 15.3
 
 Начиная с версии 15.3 среды Visual Studio 2017 в функции Live Unit Testing реализованы улучшения в двух основных областях.
 
