@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949425"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415686"
 ---
 # <a name="writing-user-commands-and-actions"></a>Написание пользовательских команд и действий
 Настроить доменный язык можно путем добавления в схему команд, а также реакций на такие жесты, как события перетаскивания, щелчок и двойной щелчок.
@@ -27,9 +27,7 @@ ms.locfileid: "55949425"
 
 -   [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) — Разрешите пользователям перемещаться из элемента в другой элемент, который он ссылается.
 
--   [Практическое руководство. И текущее выделение ограничение доступа к](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Настройка средств элемента](../modeling/customizing-element-tools.md)
+-   [Практическое руководство. Предоставление и ограничение доступа к текущему выделению](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>См. также
 

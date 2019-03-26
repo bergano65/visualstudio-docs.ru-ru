@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919876"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416215"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Можно создать правило магазина для распространения изменений от одного элемента к другому в визуализации и пакет SDK для моделирования (VMSDK). При внесении изменений к любому элементу в Store, правила планируются для выполнения, обычно в том случае, когда фиксируется в самой внешней транзакции. Существуют различные типы правил для различных видов событий, таких как добавление элемента, или удалить его. Правила можно присоединить к определенным типам элементов, фигур или схем. Многие встроенные функции определяются правилами сбора данных: например, правила гарантируют, что схема обновляется при изменении модели. Доменный язык можно настроить путем добавления собственных правил.
@@ -212,4 +212,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>См. также
 
 - [Обработчики событий распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-- [Класс BoundsRules ограничивает расположение и размеры фигур](../modeling/boundsrules-constrain-shape-location-and-size.md)

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание решения на доменном языке
+title: Практическое руководство. Создание решения на доменном языке
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936945"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416196"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Как выполнить  Создание решения на доменном языке
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 Доменный язык (DSL) создается с помощью специализированного решения Visual Studio.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Перед началом этой процедуры необходимо сначала установить эти компоненты:
 
+Перед началом этой процедуры необходимо установите эти компоненты:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Пакет SDK для визуализации и моделирования в Visual Studio | |
+- Visual Studio
+- Пакет SDK для Visual Studio (устанавливается как часть **разработка расширений Visual Studio** рабочей нагрузки)
+- Моделирование SDK (устанавливается как компонент Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Чтобы создать решение предметно ориентированного языка
+1. Запустить мастер DSL путем создания нового **конструктора доменного языка** проекта.
 
-1. Запустите мастер DSL.
+   > [!NOTE]
+   > Желательно, выбранный для проекта имя должно быть допустимым Visual C# идентификатор, так как он может использоваться для создания кода.
 
-   1. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+   ::: moniker range="vs-2017"
 
-   2. Откроется диалоговое окно **Новый проект** .
+   ![Создание диалогового окна DSL](../modeling/media/create_dsldialog.png)
 
-   3. В разделе **типы проектов**, разверните **другие типы проектов** и щелкните **расширяемости**.
-
-   4. Нажмите кнопку **конструктора доменного языка**.
-
-   5. В **имя** введите имя для решения. Нажмите кнопку **ОК**.
-
-       **Мастер конструктора предметно-ориентированного языка** отображается.
-
-      > [!NOTE]
-      >  Предпочтительно, вводимое имя должно быть допустимым идентификатором Visual C#, так как он может использоваться для создания кода.
-
-      ![Создание диалогового окна DSL](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Выберите шаблон DSL.
 

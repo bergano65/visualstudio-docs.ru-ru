@@ -7,31 +7,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d048dc82d76cb8eb3e7cf00edb84126ba4cf15f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b34d02bcb70ede4605fedd3efbea49870a406100
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951258"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416241"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
+
 При написании текстовые шаблоны, считывающие модель, которая содержит ссылки на Visual Studio ModelBus, может потребоваться разрешения ссылок для доступа к целевой модели. В этом случае необходимо адаптировать текстовые шаблоны и на которую указывает ссылка предметно ориентированных языков (DSL):
 
--   DSL, который является целевым объектом ссылки должен иметь адаптер ModelBus, настроенный для доступа на основе текстовых шаблонов. Если вы также получить доступ к DSL из другого кода, изменена конфигурация адаптера не требуется в дополнение к стандартный адаптер ModelBus.
+- DSL, который является целевым объектом ссылки должен иметь адаптер ModelBus, настроенный для доступа на основе текстовых шаблонов. Если вы также получить доступ к DSL из другого кода, изменена конфигурация адаптера не требуется в дополнение к стандартный адаптер ModelBus.
 
      Диспетчер адаптера должен наследовать от <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> и должен иметь атрибут `[HostSpecific(HostName)]`.
 
--   Шаблон должен наследовать от <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Шаблон должен наследовать от <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
 
 > [!NOTE]
->  Если вы хотите прочитать модели DSL, которые не содержат ссылок ModelBus, можно использовать процессоры директив, которые создаются в проекте DSL. Дополнительные сведения см. в разделе [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md).
+> Если вы хотите прочитать модели DSL, которые не содержат ссылок ModelBus, можно использовать процессоры директив, которые создаются в проекте DSL. Дополнительные сведения см. в разделе [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md).
 
- Дополнительные сведения о текстовых шаблонах см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Дополнительные сведения о текстовых шаблонах см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>Создание адаптера шины модели для доступа на основе текстовых шаблонов
- Чтобы разрешить ссылку ModelBus в текстовом шаблоне, целевого DSL должен иметь совместимый адаптера. Выполнение текстовых шаблонов в отдельном домене приложения из документа редакторы Visual Studio и, следовательно, адаптер для загрузки модели вместо обращения к ним через DTE.
+## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Создание адаптера шины модели для доступа на основе текстовых шаблонов
 
-#### <a name="to-create-a-modelbus-adapter-that-is-compatible-with-text-templates"></a>Чтобы создать адаптер ModelBus, которая совместима с помощью текстовых шаблонов
+Чтобы разрешить ссылку ModelBus в текстовом шаблоне, целевого DSL должен иметь совместимый адаптера. Выполнение текстовых шаблонов в отдельном домене приложения из документа редакторы Visual Studio и, следовательно, адаптер для загрузки модели вместо обращения к ним через DTE.
 
 1.  Если целевой объект в решение DSL не содержит **ModelBusAdapter** проект, создайте его с помощью мастера расширение Modelbus:
 
@@ -57,7 +57,7 @@ ms.locfileid: "55951258"
 
     4.  В каждом `*.tt` файл нового проекта, изменение пространства имен.
 
-    5.  Щелкните правой кнопкой мыши новый проект в обозревателе решений и выберите пункт Свойства. В редакторе свойств измените имена созданную сборку и пространство имен по умолчанию.
+    5.  Щелкните правой кнопкой мыши новый проект в **обозревателе решений** и нажмите кнопку **свойства**. В редакторе свойств измените имена созданную сборку и пространство имен по умолчанию.
 
     6.  В проекте DslPackage добавьте ссылку на проект адаптера, чтобы она содержала ссылки на обоих адаптеров.
 
@@ -71,9 +71,8 @@ ms.locfileid: "55951258"
 
 3.  В новом проекте адаптера добавьте ссылки на следующие сборки:
 
-    -   Microsoft.VisualStudio.TextTemplating.11.0
-
-         Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
 4.  В файл AdapterManager.tt:
 
@@ -95,8 +94,9 @@ ms.locfileid: "55951258"
 
 5.  **Преобразовать все шаблоны** и перестройте решение. Ошибки сборки не должно выполняться.
 
-## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>Написание текстового шаблона, который может разрешать ссылки ModelBus
- Как правило начните с шаблона, который считывает и создает файлы из DSL «источника». Этот шаблон используется директива, созданный в исходный проект доменного языка для чтения исходных файлов модели так, как описано в [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md). Тем не менее к исходному DSL содержит ссылки ModelBus на «target» DSL. Таким образом, необходимо включить код шаблона для разрешения ссылок и доступа к целевой DSL. Поэтому необходимо адаптировать шаблон, выполнив следующие действия:
+## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>Запись текстового шаблона, который может разрешать ссылки ModelBus
+
+Как правило начните с шаблона, который считывает и создает файлы из DSL «источника». Этот шаблон используется директива, созданный в исходный проект доменного языка для чтения исходных файлов модели так, как описано в [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md). Тем не менее к исходному DSL содержит ссылки ModelBus на «target» DSL. Таким образом, необходимо включить код шаблона для разрешения ссылок и доступа к целевой DSL. Поэтому необходимо адаптировать шаблон, выполнив следующие действия:
 
 -   Измените базовый класс шаблона, <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
 
@@ -173,27 +173,27 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 6.  Напишете текстовый шаблон, можно загрузить первой модели, выполните ссылку на другой моделью и чтение другие модели.
 
-#### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>Конструкция DSL, который доступен ModelBus
+### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>Конструкция DSL, который доступен ModelBus
 
 1. Создание нового решения DSL. Например Выбор шаблона решения потока задачи. Задайте имя языка `MBProvider` и расширение имени файла для «.provide».
 
 2. В схеме определения DSL, щелкните правой кнопкой мыши пустую часть схемы, не расположено в верхней части и нажмите кнопку **включить Modelbus**.
 
-   -   Если вы не видите **включить Modelbus**, необходимо загрузить и установить расширение VMSDK ModelBus. Найти его на сайте VMSDK: [Визуализации и моделирования SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+   Если вы не видите **включить Modelbus**, скачайте и установите расширение VMSDK ModelBus.
 
 3. В **включить Modelbus** выберите **предложить этот DSL для ModelBus**, а затем нажмите кнопку **ОК**.
 
     Новый проект, `ModelBusAdapter`, добавляется в решение.
 
-   Теперь у вас есть DSL, который может осуществляться из текстовых шаблонов с помощью ModelBus. Ссылки на него можно разрешить в коде команд, обработчиков событий или правила, работающих в домене приложения редактора файла модели. Тем не менее текстовых шаблонов выполняются в отдельном домене приложения и нет доступа к модели, когда она редактируется. Если вы хотите получить доступ к ссылок ModelBus на этот DSL из текстового шаблона, необходимо иметь отдельный ModelBusAdapter.
+Теперь у вас есть DSL, который может осуществляться из текстовых шаблонов с помощью ModelBus. Ссылки на него можно разрешить в коде команд, обработчиков событий или правила, работающих в домене приложения редактора файла модели. Тем не менее текстовых шаблонов выполняются в отдельном домене приложения и нет доступа к модели, когда она редактируется. Если вы хотите получить доступ к ссылок ModelBus на этот DSL из текстового шаблона, необходимо иметь отдельный ModelBusAdapter.
 
-#### <a name="to-create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Для создания адаптера ModelBus, настроенный для текстовых шаблонов
+### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Создание адаптера ModelBus, настроенный для текстовых шаблонов
 
-1. В обозревателе Windows скопируйте и вставьте в папку, содержащую ModelBusAdapter.csproj.
+1. В проводнике, скопируйте и вставьте в папку, содержащую *ModelBusAdapter.csproj*.
 
-    Назовите папку T4ModelBusAdapter.
+    Назовите папку **T4ModelBusAdapter**.
 
-    Переименуйте файл проекта T4ModelBusAdapter.csproj.
+    Переименуйте файл проекта *T4ModelBusAdapter.csproj*.
 
 2. В обозревателе решений добавьте T4ModelBusAdapter MBProvider решение. Щелкните правой кнопкой мыши узел решения, выберите пункт **добавить**, а затем нажмите кнопку **существующий проект**.
 
@@ -224,7 +224,6 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
            public partial class <#= dslName #>AdapterManagerBase
            : Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager
            {
-
        ```
 
    2.  В конце файла вставьте перед классом AdapterManager следующий дополнительный атрибут.
@@ -244,18 +243,17 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
        public partial class <#= dslName #>AdapterManager : <#= dslName #>AdapterManagerBase
        {
        }
-
        ```
 
 9. Нажмите кнопку **преобразовать все шаблоны** в заголовок обозревателя решений.
 
-10. Выполните повторную сборку решения. Нажмите кнопку F5.
+10. Нажмите клавишу **F5**.
 
-11. Проверьте работоспособность DSL, нажав клавишу F5. В экспериментальном проекте откройте `Sample.provider`. Закройте экспериментальный экземпляр Visual Studio.
+11. Проверьте работоспособность DSL. В экспериментальном проекте откройте `Sample.provider`. Закройте экспериментальный экземпляр Visual Studio.
 
     Теперь ModelBus ссылки на этот DSL можно разрешить в текстовых шаблонах, а также в обычный код.
 
-#### <a name="construct-a-dsl-with-a-modelbus-reference-domain-property"></a>Создать DSL со свойством домена ссылка ModelBus
+### <a name="construct-a-dsl-with-a-modelbus-reference-domain-property"></a>Создать DSL со свойством домена ссылка ModelBus
 
 1. Создайте новый доменный язык, с помощью шаблона решения минимальный язык. Имя языка MBConsumer и задать расширение имени файла для «.consume».
 
@@ -281,7 +279,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
    Вы создали DSL, который может содержать ссылки на элементы в другой DSL.
 
-#### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>Создать ссылку ModelBus в другой файл в решении
+### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>Создать ссылку ModelBus в другой файл в решении
 
 1. В решении MBConsumer нажмите клавиши CTRL + F5. Откроется экспериментальный экземпляр Visual Studio в **MBConsumer\Debugging** проекта.
 
@@ -297,13 +295,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 4. Щелкните одной пример формы и в окне «Свойства» щелкните **[...]**  в свойстве MBR. В диалоговом окне щелкните **Обзор** и выберите `Sample.provide`. В окне «элементы» разверните узел типа "Задача" и выберите один из элементов.
 
-5. Сохраните файл.
-
-    (Еще не закрывайте экспериментальном экземпляре Visual Studio.)
+5. Сохраните файл. (Еще не закрывайте экспериментальном экземпляре Visual Studio.)
 
    Вы создали модель, которая содержит ссылку ModelBus на элемент в другой модели.
 
-#### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Разрешить ссылку ModelBus в текстовом шаблоне
+### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Разрешить ссылку ModelBus в текстовом шаблоне
 
 1.  В экспериментальном экземпляре Visual Studio откройте пример текстового файла шаблона. Вставьте в него следующим образом.
 
@@ -341,32 +337,29 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
      Обратите внимание на следующие моменты.
 
-    1.  `hostSpecific` И `inherits` атрибуты `template` директива должно иметь значение.
+    - `hostSpecific` И `inherits` атрибуты `template` директива должно иметь значение.
 
-    2.  Потребитель модели осуществляется обычным образом через процессор директив, который был создан в этом DSL.
+    - Потребитель модели осуществляется обычным образом через процессор директив, который был создан в этом DSL.
 
-    3.  Директивы сборки и импорта должен иметь возможность доступа к ModelBus и типы поставщика DSL.
+    - Директивы сборки и импорта должен иметь возможность доступа к ModelBus и типы поставщика DSL.
 
-    4.  Если вы знаете, что многие MBR связаны с той же модели, лучше вызывать CreateAdapter только один раз.
+    - Если вы знаете, что многие MBR связаны с той же модели, лучше вызывать CreateAdapter только один раз.
 
 2.  при сохранении шаблона; Убедитесь, что следующего вида в полученный текстовый файл.
 
     ```
-
     ExampleElement1
     ExampleElement2
          ExampleElement2 is linked to Task: Task2
-
     ```
 
-#### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>Разрешить ссылку ModelBus в обработчика жестов
+### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>Разрешить ссылку ModelBus в обработчика жестов
 
 1.  Закройте экспериментальный экземпляр Visual Studio, если она запущена.
 
-2.  Добавьте файл с именем MBConsumer\Dsl\Custom.cs и вставьте в него следующее.
+2.  Добавьте в файл с именем *MBConsumer\Dsl\Custom.cs* и указать его содержимое следующим:
 
-    ```
-
+    ```csharp
     namespace Company.MB2Consume
     {
       using Microsoft.VisualStudio.Modeling.Integration;
@@ -393,16 +386,15 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
         }
       }
     }
-
     ```
 
-3.  Нажмите клавиши CTRL+F5.
+3.  Нажмите клавишу **Ctrl**+**F5**.
 
 4.  В экспериментальном экземпляре Visual Studio, откройте `Debugging\Sample.consume`.
 
 5.  Дважды щелкните одну фигуру.
 
-     Если для этого элемента установлен MBR, указанная модель открывается и ссылочного элемента.
+    Если для этого элемента установлен MBR, указанная модель открывается и ссылочного элемента.
 
 ## <a name="see-also"></a>См. также
 

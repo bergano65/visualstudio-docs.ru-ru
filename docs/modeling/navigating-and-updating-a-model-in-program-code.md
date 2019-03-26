@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950153"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416248"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
@@ -226,27 +226,28 @@ using (Transaction t =
   При создании элемента, таким образом, соединитель на схеме автоматически создается, но оно содержит фигуры по умолчанию, цвета и другие функции. Чтобы контролировать, как создается связанный соединителя, см. в разделе [Создание элемента и его фигура](#merge).
 
 ##  <a name="deleteelements"></a> Удаление элементов
- Удаление элемента, вызвав `Delete()`:
 
- `henry.Delete();`
+Удаление элемента, вызвав `Delete()`:
 
- Эта операция также удалит:
+`henry.Delete();`
+
+Эта операция также удалит:
 
 - Отношение ссылки и из элемента. Например `edward.Parents` больше не будет содержать `henry`.
 
 - Элементы в роли, для которого `PropagatesDelete` флаг имеет значение true. Например фигура, которую отображает элемент удаляется.
 
-  По умолчанию имеет каждого отношения внедрения `PropagatesDelete` значение true, если в целевой роли. Удаление `henry` не приводит к удалению `familyTree`, но `familyTree.Delete()` удалит все `Persons`. Дополнительные сведения см. в разделе [Настройка функции удаления](../modeling/customizing-deletion-behavior.md).
+По умолчанию имеет каждого отношения внедрения `PropagatesDelete` значение true, если в целевой роли. Удаление `henry` не приводит к удалению `familyTree`, но `familyTree.Delete()` удалит все `Persons`.
 
-  По умолчанию `PropagatesDelete` не относится к роли ссылочные отношения.
+По умолчанию `PropagatesDelete` не относится к роли ссылочные отношения.
 
-  Может привести к правила удаления для пропуска определенной распространения при удалении объекта. Это полезно, если один элемент Подстановка для другого. Необходимо указать идентификатор GUID для одной или нескольких ролей, для которых удаление не распространяется. Идентификатор GUID можно получить из класса отношения:
+Может привести к правила удаления для пропуска определенной распространения при удалении объекта. Это полезно, если один элемент Подстановка для другого. Необходимо указать идентификатор GUID для одной или нескольких ролей, для которых удаление не распространяется. Идентификатор GUID можно получить из класса отношения:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Этом конкретном примере не окажет никакого влияния, так как `PropagatesDelete` — `false` для ролей в `ParentsHaveChildren` связь.)
+(Этом конкретном примере не окажет никакого влияния, так как `PropagatesDelete` — `false` для ролей в `ParentsHaveChildren` связь.)
 
-  В некоторых случаях удаление запрещена существование блокировку, в элементе или в элементе, который может удалить распространения. Можно использовать `element.CanDelete()` для проверки, может ли быть удален элемент.
+В некоторых случаях удаление запрещена существование блокировку, в элементе или в элементе, который может удалить распространения. Можно использовать `element.CanDelete()` для проверки, может ли быть удален элемент.
 
 ##  <a name="deletelinks"></a> Удаление ссылок связи
  Вы можете удалить ссылки связи путем удаления элемента из свойства роли:
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)
 - [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Практическое руководство. Обновление модели с помощью транзакций](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
