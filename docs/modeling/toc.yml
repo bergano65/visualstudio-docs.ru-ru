@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: Добавление пользовательских свойств в схемы зависимостей
       href: add-custom-properties-to-layer-diagrams.md
-    - name: Перемещение по моделям зависимостей в коде программы и их обновление
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: Развертывание расширения модели зависимостей
-      href: deploy-a-layer-model-extension.md
-    - name: Устранение неполадок, связанных с расширениями для схем зависимостей
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: SDK моделирования для Visual Studio — доменные языки
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: Настройка функции копирования
         href: customizing-copy-behavior.md
-      - name: Настройка функции удаления
-        href: customizing-deletion-behavior.md
       - name: Настройка окна свойств
         href: customizing-the-properties-window.md
       - name: Настройка обозревателя моделей
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: Добавление свойства отслеживания в определение предметно-ориентированного языка
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: Отладка с использованием средства просмотра хранилища
-        href: debugging-by-using-the-store-viewer.md
       - name: Файл DslDefinition.dsl
         href: the-dsldefinition-dsl-file.md
       - name: Общие сведения о коде предметно-ориентированных языков
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: Предоставление и ограничение доступа к текущему выделению
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: Настройка средств элемента
-        href: customizing-element-tools.md
     - name: Обработка и распространение изменений
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: Обработчики событий распространяют изменения за пределы модели
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: Класс BoundsRules ограничивает расположение и размеры фигур
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: Изменение фигур и соединителей в соответствии с моделью
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Формирование кода на базе предметно-ориентированного языка
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: Справочник API по текстовым шаблонам T4
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872069"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415713"
