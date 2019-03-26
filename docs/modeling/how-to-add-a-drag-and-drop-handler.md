@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867752"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415672"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 
@@ -128,7 +128,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
     -   diagramEventArgs.Data.GetDataFormats() — список форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
 
-    -   `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:
+    -   `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Пример:
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -158,13 +158,13 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Подготовка проекта доменного языка для шины модели
 
-1.  Доступа к исходному DSL с шины модели Visual Studio:
+Доступа к исходному DSL с шины модели Visual Studio:
 
-    1.  Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
+2. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
 
-    3.  Нажмите кнопку **преобразовать все шаблоны** и перестройте решение.
+3. Нажмите кнопку **преобразовать все шаблоны** и перестройте решение.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Отправка объекта из исходного DSL
 
