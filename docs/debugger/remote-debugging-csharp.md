@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526741"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355167"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка C# или проект Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
@@ -71,7 +71,15 @@ ms.locfileid: "57526741"
 
 5. Убедитесь, что текстовое поле **Рабочий каталог** пустое.
 
-6. Выберите **использовать удаленный компьютер**и тип **MJO-DL:4022** в текстовом поле. (4022 — номер порта, отображаются в окне удаленного отладчика. Номер порта увеличивает значение 2 в каждой версии Visual Studio).
+6. Выберите **использовать удаленный компьютер**и тип **yourmachinename:port** в текстовом поле. (Номер порта отображается в окне удаленного отладчика. Номер порта увеличивает значение 2 в каждой версии Visual Studio).
+
+    В этом примере используйте следующую команду:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** на 2019 г. Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** на Visual Studio 2017
+    ::: moniker-end
 
 7. Убедитесь в том, что параметр **Разрешить отладку машинного кода** не выбран.
 

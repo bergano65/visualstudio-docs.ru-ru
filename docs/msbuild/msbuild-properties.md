@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a42396236c88bdc574a10a7557963dfc39922a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631137"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355621"
 ---
 # <a name="msbuild-properties"></a>свойства MSBuild
 Свойства представляют собой пары "имя-значение", с помощью которых выполняется настройка сборок. Свойства используются для передачи значений задачам, проверки условий и хранения значений, на которые можно давать ссылки в файле проекта.
@@ -118,7 +118,6 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  Свойства могут содержать произвольный XML-код, предназначенный для передачи значений задачам или отображения сведений из журналов. В следующем примере показано свойство `ConfigTemplate`, которое имеет значение, содержащее XML-код и ссылки на другие свойства. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] заменяет ссылки на свойства соответствующими значениями свойств. Значения свойств присваиваются в том порядке, в каком они появляются. Таким образом, в этом примере `$(MySupportedVersion)`, `$(MyRequiredVersion)` и `$(MySafeMode)` должны быть уже определены.
 
 ```xml
-
 <PropertyGroup>
     <ConfigTemplate>
         <Configuration>

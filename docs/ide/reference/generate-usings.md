@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160645"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355193"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Создание директив using в Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "58160645"
 
 - C#
 
-**Что?** **Что?** Позволяет немедленно добавить необходимые импортированные элементы или [операторы using](/dotnet/csharp/language-reference/keywords/using-statement) скопированного и вставленного кода.
+**Что?** Позволяет немедленно добавить необходимые импортированные элементы или [операторы using](/dotnet/csharp/language-reference/keywords/using-statement) скопированного и вставленного кода.
 
 **Когда?** Часто приходится копировать и вставлять код из разных мест проекта или других источников. Это быстрое действие анализирует отсутствующие импортируемые элементы для скопированного и вставленного кода и запрашивает их добавление.
 

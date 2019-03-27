@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983901"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324978"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Выбор расположения установки в Visual Studio
 
+::: moniker range="vs-2017"
+
 **Новые возможности в версии 15.7**: Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске, изменив расположение ее файлов. В частности, можно использовать другое расположение для кэша загрузки, общих компонентов, пакетов SDK и файлов средств.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске, изменив расположение ее файлов. В частности, можно использовать другое расположение для кэша загрузки, общих компонентов, пакетов SDK и файлов средств.
+
+::: moniker-end
 
    > [!NOTE]
    > Некоторые средства и пакеты SDK имеют другие правила расположения установки. Эти средства и пакеты SDK устанавливаются на системном диске, даже если вы выбрали другое расположение.
