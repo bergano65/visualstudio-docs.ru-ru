@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952363"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325283"
 ---
 # <a name="exploration-bounds"></a>Границы исследования
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Границы поиска решения для ограничений**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) — период в секундах, в течение которого функция [поиска решения для ограничений](input-generation.md#constraint-solver) должна обнаружить входные данные, позволяющие проследовать по новому и другому пути выполнения.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — объем памяти в мегабайтах, доступный функции [поиска решения для ограничений](input-generation.md#constraint-solver) при обнаружении входных данных.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — объем памяти в мегабайтах, доступный функции [поиска решения для ограничений](input-generation.md#constraint-solver) при обнаружении входных данных.
 * **Границы исследования путей**
   * [MaxBranches](#maxbranches) — максимальное число ветвей, которые могут быть использованы вдоль одного пути выполнения.
   * [MaxCalls](#maxcalls) — максимальное число вызовов, которые могут быть выполнены вдоль одного пути выполнения.
   * [MaxStack](#maxstack) — максимальный размер стека в любой точке одного пути выполнения, измеряемый количеством кадров активного вызова.
-  * [MaxConditions](#maxconditions) — максимальное количество условий для входных данных, которые можно проверить в рамках одного пути выполнения.<p />
+  * [MaxConditions](#maxconditions) — максимальное количество условий для входных данных, которые можно проверить в рамках одного пути выполнения.
 * **Границы исследования**
   * [MaxRuns](#maxruns) — максимальное количество попыток запуска во время просмотра.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) —максимальное количество последовательных выполнений без выдачи нового теста.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) — максимальное количество попыток запуска с уникальными путями выполнения во время просмотра.
-  * [MaxExceptions](#maxexceptions) — максимальное число исключений, которые можно найти для всех обнаруженных путей выполнения.<p />
+  * [MaxExceptions](#maxexceptions) — максимальное число исключений, которые можно найти для всех обнаруженных путей выполнения.
 * **Параметры создания кода для набора тестов**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) — когда задано значение true, пути выполнения, выходящие за любые границы путей ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)), игнорируются.
   * [TestEmissionFilter](#testemissionfilter) — указывает, при каких обстоятельствах IntelliTest должен выдавать тесты.

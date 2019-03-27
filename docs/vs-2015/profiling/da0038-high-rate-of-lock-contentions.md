@@ -13,17 +13,17 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bdd325974a67075599df722bf994cc110f9dd69
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766206"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355125"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038. Большое число конфликтов при блокировке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [DA0038: Высокий уровень число конфликтов блокировок](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [DA0038: большое из при блокировке](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) на сайте docs.microsoft.com.  
   
 |||  
 |-|-|  

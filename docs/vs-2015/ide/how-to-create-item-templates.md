@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867936"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324764"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "57867936"
   
     Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить элементы <ProjectTpe> и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> для указания других языков и типов проектов.  
+    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Вы можете изменить \<ProjectType > и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> элементы для указания других языков и типов проектов.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

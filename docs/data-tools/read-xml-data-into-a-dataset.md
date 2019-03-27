@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934150"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268538"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 
@@ -33,17 +33,7 @@ ADO.NET предоставляет простые методы для работ
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
-На этом шаге вы создадите Visual Basic или Visual C# проекта.
-
-1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
-
-2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
-
-3. В средней области выберите **приложения Windows Forms** тип проекта.
-
-4. Назовите проект **ReadingXML**, а затем выберите **ОК**.
-
-   **ReadingXML** проекта создается и добавляется к **обозревателе решений**.
+Создайте новый **приложения Windows Forms** проекта либо C# или Visual Basic. Назовите проект **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Создать XML-файл для чтения в набор данных
 
@@ -123,15 +113,15 @@ ADO.NET предоставляет простые методы для работ
 
 Пользовательский интерфейс для данного приложения состоит из следующих:
 
--   Объект <xref:System.Windows.Forms.DataGridView> элемент управления, отображающий содержимое XML-файла данных.
+- Объект <xref:System.Windows.Forms.DataGridView> элемент управления, отображающий содержимое XML-файла данных.
 
--   Объект <xref:System.Windows.Forms.TextBox> элемент управления, который отображает схему XML для XML-файле.
+- Объект <xref:System.Windows.Forms.TextBox> элемент управления, который отображает схему XML для XML-файле.
 
--   Два <xref:System.Windows.Forms.Button> элементов управления.
+- Два <xref:System.Windows.Forms.Button> элементов управления.
 
-    -   Одна кнопка считывает XML-файл в набор данных и отображает его в <xref:System.Windows.Forms.DataGridView> элемента управления.
+    - Одна кнопка считывает XML-файл в набор данных и отображает его в <xref:System.Windows.Forms.DataGridView> элемента управления.
 
-    -   Вторая кнопка извлекает схему из набора данных, а также через <xref:System.IO.StringWriter> отображает его в <xref:System.Windows.Forms.TextBox> элемента управления.
+    - Вторая кнопка извлекает схему из набора данных, а также через <xref:System.IO.StringWriter> отображает его в <xref:System.Windows.Forms.TextBox> элемента управления.
 
 ### <a name="to-add-controls-to-the-form"></a>Для добавления элементов управления в форму
 
@@ -139,11 +129,11 @@ ADO.NET предоставляет простые методы для работ
 
 2.  Из **элементов**, перетащите в форму следующие элементы управления:
 
-    -   Один <xref:System.Windows.Forms.DataGridView> элемента управления
+    - Один <xref:System.Windows.Forms.DataGridView> элемента управления
 
-    -   Один <xref:System.Windows.Forms.TextBox> элемента управления
+    - Один <xref:System.Windows.Forms.TextBox> элемента управления
 
-    -   Два <xref:System.Windows.Forms.Button> элементов управления
+    - Два <xref:System.Windows.Forms.Button> элементов управления
 
 3.  Задайте следующие свойства:
 
@@ -220,9 +210,9 @@ ADO.NET предоставляет простые методы для работ
 
 В этом пошаговом руководстве вы научитесь основам считывание XML-файл в набор данных, а также для создания схемы на основе содержимого XML-файла. Ниже приведены некоторые задачи, которые могут делать дальше.
 
--   Изменение данных в наборе данных и сохранение их в виде XML. Для получения дополнительной информации см. <xref:System.Data.DataSet.WriteXml%2A>.
+- Изменение данных в наборе данных и сохранение их в виде XML. Для получения дополнительной информации см. <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Измените данные в наборе данных и записать его в базу данных.
+- Измените данные в наборе данных и записать его в базу данных.
 
 ## <a name="see-also"></a>См. также
 

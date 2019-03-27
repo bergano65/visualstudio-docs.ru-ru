@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223719"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325137"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing в Visual Studio
 
@@ -28,28 +28,12 @@ ms.locfileid: "57223719"
 ## <a name="supported-test-frameworks"></a>Поддерживаемые тестовые платформы
 Функция Live Unit Testing работает на трех известных платформах модульного тестирования, приведенных в таблице ниже. В этой таблице также приведены сведения о минимальной поддерживаемой версии адаптеров и платформ. Платформы модульного тестирования доступны на сайте NuGet.org.
 
-<table>
-<tr>
-   <th>Тестовая платформа</th>
-   <th>Минимальная версия адаптера Visual Studio</th>
-   <th>Минимальная версия платформы</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio версии 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter версии 3.5.1</td>
-   <td>NUnit версии 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+
+|Тестовая платформа  |Минимальная версия адаптера Visual Studio  |Минимальная версия платформы  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio версии 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter версии 3.5.1 |NUnit версии 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4 или более поздней.
 

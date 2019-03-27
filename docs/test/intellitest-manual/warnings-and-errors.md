@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925414"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324738"
 ---
 # <a name="warnings-and-errors"></a>Предупреждения и ошибки
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925414"
   * [Превышение значения MaxCalls](#maxcalls-exceeded)
   * [Превышение значения MaxStack](#maxstack-exceeded)
   * [Превышение значения MaxRuns](#maxruns-exceeded)
-  * [Превышение значения MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)<p />
+  * [Превышение значения MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
 
 * **Поиск решения для ограничений**
-  * [Не удается конкретизировать решение](#cannot-concretize-solution)<p />
+  * [Не удается конкретизировать решение](#cannot-concretize-solution)
 
 * **Домены**
   * [Требуется помощь по созданию объекта](#help-construct)
   * [Требуется помощь по поиску типов](#help-types)
-  * [Предложение подходящих типов](#usable-type-guessed)<p />
+  * [Предложение подходящих типов](#usable-type-guessed)
 
 * **Выполнение**
   * [Непредвиденная ошибка во время изучения](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Инструментирование**
   * [Вызов неинструментированного метода](#uninstrumented-method-called)
   * [Вызов внешнего метода](#external-method-called)
   * [Вызов неинструментируемого метода](#uninstrumentable-method-called)
   * [Проблема тестирования](#testability-issue)
-  * [Ограничение](#limitation)<p />
+  * [Ограничение](#limitation)
 
 * **Интерпретатор**
   * [Обнаружено несовпадение вызовов](#observed-call-mismatch)

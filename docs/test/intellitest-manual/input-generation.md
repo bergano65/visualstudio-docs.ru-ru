@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316903"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323546"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Создание входных данных с помощью динамического символического выполнения
 
@@ -96,11 +96,11 @@ IntelliTest отслеживает выполняемые инструкции, 
 
 * **Видимость внутренних элементов**
   * IntelliTest предполагает, что созданные тесты получат доступ к внутренним элементам, которые были видны заключающему [PexClass](attribute-glossary.md#pexclass).
-  .NET располагает **InternalsVisibleToAttribute**, позволяющим расширить видимость внутренних элементов на другие сборки.<p />
+  .NET располагает **InternalsVisibleToAttribute**, позволяющим расширить видимость внутренних элементов на другие сборки.
 
 * **Видимость закрытых и семейных (защищенных в C#) элементов класса [PexClass](attribute-glossary.md#pexclass)**
   * IntelliTest всегда помещает созданные тесты непосредственно в [PexClass](attribute-glossary.md#pexclass) либо в подкласс. Таким образом, IntelliTest предполагает, что может использовать все видимые семейные элементы (**защищенные** в C#).
-  * Если созданные тесты помещаются непосредственно в [PexClass](attribute-glossary.md#pexclass) (обычно с использованием разделяемых классов), IntelliTest предполагает, что они также могут использовать все закрытые элементы [PexClass](attribute-glossary.md#pexclass).<p />
+  * Если созданные тесты помещаются непосредственно в [PexClass](attribute-glossary.md#pexclass) (обычно с использованием разделяемых классов), IntelliTest предполагает, что они также могут использовать все закрытые элементы [PexClass](attribute-glossary.md#pexclass).
 
 * **Видимость открытых элементов**
   * IntelliTest предполагает, что может использовать все экспортированные элементы, видимые в контексте [PexClass](attribute-glossary.md#pexclass).

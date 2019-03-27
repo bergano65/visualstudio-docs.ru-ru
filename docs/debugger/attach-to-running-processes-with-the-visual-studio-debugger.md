@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428769"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323098"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 Отладчик Visual Studio можно подключить к запущенному процессу на локальном или удаленном компьютере. Запустив процесс, выберите **Отладка** > **присоединение к процессу** или нажмите клавишу **Ctrl**+**Alt** + **P** в Visual Studio и использовать **присоединение к процессу** диалоговое окно, чтобы подключить отладчик к процессу.
@@ -102,7 +102,7 @@ ms.locfileid: "57428769"
      > Если не удается подключиться, используя имя удаленного компьютера, попробуйте использовать IP-адрес и порт адрес (например, `123.45.678.9:4022`). 4022 является портом по умолчанию для удаленного отладчика Visual Studio 2017 x64. Другие назначения портов удаленного отладчика, см. в разделе [назначение портов удаленного отладчика](remote-debugger-port-assignments.md).
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

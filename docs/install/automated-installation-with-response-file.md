@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982978"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415642"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Как определить параметры в файле ответов
 
@@ -48,6 +50,8 @@ vs_enterprise.exe --in customInstall.json
 
 Базовый файл `response.json` в макете должен выглядеть примерно так, как представлено ниже, но значения продукта и канала будут соответствовать условиям вашей установки.
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ vs_enterprise.exe --in customInstall.json
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 При создании или обновлении макета также создается файл response.template.json.  Этот файл содержит все идентификаторы всех рабочих нагрузок, компонентов и языков, которые могут использоваться.  Этот файл предоставляется в виде шаблона для всего содержимого, которое может быть включено в настраиваемую установку.  Администраторы могут использовать этот файл в качестве отправной точки для пользовательского файла ответов.  Просто удалите идентификаторы тех компонентов, которые не нужно устанавливать, и сохраните их в собственном файле ответов.  Не настраивайте файл response.template.json файла, или изменения будут потеряны при каждом обновлении макета.
 
 ## <a name="example-layout-response-file-content"></a>Пример содержимого файла ответов в макете
 
 В следующем примере показана установка Visual Studio Enterprise с шестью популярными рабочими нагрузками и компонентами и пользовательским интерфейсом на английском и французском языках. Вы можете использовать этот пример как шаблон, просто изменив список рабочих нагрузок и компонентов на те, которые вы хотите установить.
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -94,6 +116,43 @@ vs_enterprise.exe --in customInstall.json
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
