@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227583"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323442"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Просмотр событий с помощью IntelliTrace в Visual Studio Enterprise (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Начните отладку и просматривать события IntelliTrace
 
-1. Запустите отладку обычным образом. (Нажмите клавишу **F5** или щелкните **Отладка > Начать отладку**.
+1. Запустите отладку обычным образом. (Нажмите клавишу **F5** или щелкните **Отладка | Начать отладку**.)
 
     > [!TIP]
     > Не закрывайте окна **Локальные** и **Видимые** при отладке, чтобы просматривать и записывать отображаемые в них значения.
