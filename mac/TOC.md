@@ -1,7 +1,7 @@
 # [Visual Studio для Mac](index.yml)
-# [Обзор интегрированной среды разработки](/visualstudio/mac/ide-tour/)
+# [Обзор интегрированной среды разработки](ide-tour.md)
 
-# [Установка](/visualstudio/mac/installation/)
+# [Установка](installation.md)
 ## [Установка и использование в среде, защищенной брандмауэром или прокси-сервером](install-behind-a-firewall-or-proxy-server.md)
 ## [Установка предварительной версии](install-preview.md)
 ## [Обновление](update.md)

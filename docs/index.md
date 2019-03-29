@@ -864,7 +864,7 @@ JavaScript</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Разработка мобильных приложений на языке JavaScript</h3>
-                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью платформы Apache Cordova.</p>
+                                                    <p>(Только Visual Studio 2015 и 2017.) Создание кроссплатформенных приложений для iOS, Android или Windows на платформе Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>
