@@ -68,6 +68,7 @@
 #### [Поиск подписки](search-license.md)
 #### [Экспорт подписок](exporting-subscriptions.md)
 #### [Превышение доступности](handle-overclaimed-license.md)
+#### [Использование максимума](maximum-usage.md)
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
 ## Приобретение подписок на Visual Studio
