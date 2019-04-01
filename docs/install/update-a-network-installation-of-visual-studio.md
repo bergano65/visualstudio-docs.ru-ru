@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983836"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475985"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Обновление сетевой установки Visual Studio
 
@@ -100,6 +102,9 @@ vs_enterprise.exe можно вызвать внутри layoutDir.
 > В автономном кэше макета должны находиться некоторые важные файлы метаданных, которые требуются параметру `--verify`. Если эти файлы метаданных отсутствуют, команду "--verify" выполнить невозможно, и программа установки сообщит об ошибке. При возникновении этой ошибки повторно создайте автономный макет в другой папке (или в той же папке автономного кэша). Для этого выполните ту же команду макета, которая использовалась для создания первоначального автономного макета. Например, `Vs_enterprise.exe --layout <layoutDir>`.
 
 Корпорация Майкрософт периодически предоставляет обновления для Visual Studio, поэтому версия нового создаваемого макета может отличаться от версии первоначального макета.
+
+> [!NOTE]
+> Проверка работает только для последней версии определенного дополнительного номера версии Visual Studio. Сразу после выпуска новой версии проверка не будет работать для более ранних выпусков уровня исправлений того же дополнительного номера версии.
 
 ## <a name="how-to-fix-a-layout"></a>Исправление ошибок макета
 

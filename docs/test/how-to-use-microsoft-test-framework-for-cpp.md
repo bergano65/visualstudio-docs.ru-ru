@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955080"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324913"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Использование платформы модульного тестирования Майкрософт для C++ в Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "55955080"
 
    1. В **обозревателе решений** щелкните правой кнопкой мыши узел проекта тестируемой программы, а затем выберите пункты **Свойства** > **Свойства конфигурации** > **Каталоги VC++**.
 
-   2. Щелкните стрелку вниз в следующих строках и выберите **<Edit>**:
+   2. Щелкните стрелку вниз в следующих строках и выберите **\<Изменить>** :
 
 
       | Каталог | Свойство. |

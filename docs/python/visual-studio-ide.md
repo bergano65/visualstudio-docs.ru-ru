@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983511"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354782"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Введение в интегрированную среду разработки Visual Studio (Python)
 
@@ -44,7 +44,7 @@ ms.locfileid: "57983511"
 
 Visual Studio предоставляется для Windows и Mac, но поддержка Python доступна только в Visual Studio для Windows.
 
-Существует три выпуска Visual Studio 2017 для Windows: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+Существует три выпуска Visual Studio для Windows: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. в [сравнительном анализе интегрированных сред разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="popular-productivity-features"></a>Популярные средства повышения производительности
 

@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873263"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324085"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
@@ -107,7 +107,7 @@ ms.locfileid: "57873263"
    Среда Visual Studio может показаться сложной, ведь там столько разных меню, параметров и свойств. Поле поиска **быстрого запуска** позволяет быстро найти нужное содержимое в Visual Studio. Когда вы начнете вводить в поле то, что вы ищете, Visual Studio представит результаты, один из которых точно вам подойдет. Если вам нужно добавить функциональные возможности в Visual Studio, например добавить поддержку дополнительных языков программирования, **быстрый запуск** предоставляет результаты, которые открывают Visual Studio Installer для установки рабочей нагрузки или отдельного компонента.
 
    > [!TIP]
-   > Нажмите клавиши **Ctrl**+**Q**, чтобы открыть поле поиска **Быстрый запуск**.
+   > Нажмите клавиши **CTRL**+**Q**, чтобы открыть поле поиска **Быстрый запуск**.
 
    ::: moniker range="vs-2017"
 
@@ -225,9 +225,9 @@ ms.locfileid: "57873263"
 
 ::: moniker range=">=vs-2019"
 
-1. Запустите Visual Studio. На начальном экране выберите **Продолжить без кода**.
+1. Запустите Visual Studio. В начальном окне выберите **Продолжить без кода**.
 
-   ![Окно запуска в Visual Studio 2019](media/vs-2019/continue-without-code.png)
+   ![Начальное окно в Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
    Откроется интегрированная среда разработки.
 

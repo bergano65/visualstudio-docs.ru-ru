@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681755"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415218"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Средства для обнаружения экземпляров Visual Studio и управления ими
 
@@ -37,25 +39,31 @@ ms.locfileid: "56681755"
 
 ## <a name="using-vswhereexe"></a>С помощью vswhere.exe
 
-`vswhere.exe` по умолчанию входит в состав Visual Studio 2017 начиная с версии 15.2. Также его можно скачать отдельно на [странице выпусков](https://github.com/Microsoft/vswhere/releases). Используйте `vswhere -?`, чтобы получить информацию об этом средстве. Следующий пример команды выводит в формате JSON полный список выпусков Visual Studio, включая устаревшие версии продукта и предварительные версии:
+`vswhere.exe` автоматически включается в состав Visual Studio (начиная с Visual Studio 2017 версии 15.2 и более поздних), либо его можно скачать на [странице выпусков VSWhere](https://github.com/Microsoft/vswhere/releases). Используйте `vswhere -?`, чтобы получить информацию об этом средстве. Следующий пример команды выводит в формате JSON полный список выпусков Visual Studio, включая предыдущие и предварительные версии продукта:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Дополнительные сведения об установке Visual Studio 2017 см. в [архивах по установке Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Дополнительные сведения об установке Visual Studio 2017 см. в [архивах по установке Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Редактирование реестра для экземпляра Visual Studio
 
-Параметры реестра для Visual Studio 2017 сохраняются в частном хранилище, что позволяет устанавливать параллельно несколько экземпляров одной версии Visual Studio на одном компьютере.
+Параметры реестра для Visual Studio сохраняются в частном расположении, что позволяет устанавливать параллельно несколько экземпляров одной версии Visual Studio на одном компьютере.
 
 Поскольку эти записи не хранятся в глобальном реестре, для изменения этих параметров с помощью редактора реестра используется отдельная процедура.
 
-1. Если открыт любой экземпляр Visual Studio 2017, закройте его.
-2. Запустите `regedit.exe`.
-3. Выберите узел `HKEY_LOCAL_MACHINE`.
-4. В главном меню редактора реестра выберите пункты **Файл -> Загрузить куст...** и выберите файл частного реестра из папки **AppData\Local**. Например:
+1. Если открыт любой экземпляр Visual Studio, закройте его.
+
+1. Запустите `regedit.exe`.
+
+1. Выберите узел `HKEY_LOCAL_MACHINE`.
+
+1. В главном меню редактора реестра выберите пункты **Файл** > **Загрузить куст...** и файл частного реестра из папки **AppData\Local**. Например:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 Вам будет предложено предоставить имя используемого изолированного куста. После этого вы сможете просматривать параметры реестра, хранящиеся в созданном изолированном кусте.
 
 > [!IMPORTANT]
-> Прежде чем возвращаться к работе в Visual Studio, необходимо выгрузить созданный вами изолированный куст. Для этого выберите команду "Файл" -> "Выгрузить куст" в главном меню редактора реестра. (Если этого не сделать, файл останется заблокированным и Visual Studio не сможет запуститься.)
+> Прежде чем возвращаться к работе в Visual Studio, необходимо выгрузить созданный вами изолированный куст. Для этого выберите **Файл** > **Выгрузить куст** в главном меню редактора реестра. (Если этого не сделать, файл останется заблокированным и Visual Studio не сможет запуститься.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

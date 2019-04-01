@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155532"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355517"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
 
@@ -36,25 +36,37 @@ ms.locfileid: "56155532"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка **Разработка классических приложений .NET**.
+::: moniker range=">=vs-2019"
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) , если вы еще не сделали этого.
+У вас должна быть установлена среда Visual Studio 2019 и рабочая нагрузка **Разработка классических приложений .NET**.
 
-    Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка **Разработка классических приложений .NET**.
+
+::: moniker-end
+
+Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+
+Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
 ## <a name="create-a-project"></a>Создание проекта
 
-1. В Visual Studio последовательно выберите **Файл > Создать проект**.
+1. Запустите Visual Studio.
 
-2. В разделе **Visual Basic** выберите **Классическое приложение Windows**, а затем в средней области выберите **Консольное приложение**.
+    ::: moniker range=">=vs-2019"
+    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **visual basic**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework). В появившемся диалоговом окне введите такое имя, как **get-started-debugging**, а затем выберите **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)**. Введите имя, например **get-started-debugging**, и нажмите кнопку **ОК**.
+    ::: moniker-end
 
-    Если шаблон проекта **Консольное приложение** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создание проекта**. Запускается Visual Studio Installer. Выберите рабочую нагрузку *Разработка классических приложений .NET** и нажмите **Изменить**.
-
-3. Введите имя, например **get-started-debugging**, и нажмите кнопку **ОК**.
+    Если шаблон проекта **Консольное приложение (.NET Framework)** отсутствует, перейдите в меню **Сервис** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
     Visual Studio создаст проект.
 
-4. В файле *Program.cs* замените код
+1. В *Module1.vb* замените код
 
     ```vb
     Module Module1
@@ -200,7 +212,7 @@ ms.locfileid: "56155532"
 
     В месте установки точки останова появится красный круг.
 
-    ![Задание точки останова](../visual-basic/media/get-started-set-breakpoint-vb.png)
+    ![Установка точки останова](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
     Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода.
 

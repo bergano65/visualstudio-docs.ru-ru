@@ -2,7 +2,7 @@
 title: Использование Visual Studio на виртуальной машине Azure
 titleSuffix: ''
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 02/19/2019
+ms.date: 03/25/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450403"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476024"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -34,9 +36,9 @@ ms.locfileid: "56450403"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Предварительная версия (предварительная версия 3)                   |           Предприятие         | Версия 16.0.0, предварительная версия 3 |
-| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.7      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.20     |
+|       Visual Studio 2019: Предварительная версия (версия-кандидат 3)                      |           Предприятие         |    Версия 16.0.0, версия-кандидат 3    |
+| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.9      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.22     |
 |   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
 
@@ -101,7 +103,9 @@ Azure предлагает разные размеры виртуальных м
 
 Краткое описание: запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет `.vhd`-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*</center>
+![Запись образа через пользовательский интерфейс портала Azure](media/capture-vm.png)
+
+*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*
 
 Дополнительные сведения см. в статье [Создание управляемого образа универсальной виртуальной машины в Azure](/azure/virtual-machines/windows/capture-image-resource).
 

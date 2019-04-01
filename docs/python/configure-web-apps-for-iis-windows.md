@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323575"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355465"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Настройка веб-приложений Python для IIS
 
@@ -37,7 +37,7 @@ ms.locfileid: "57323575"
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Указание интерпретатора Python в файле web.config
 
-Файл *web.config* вашего приложения содержит сведения для веб-сервера IIS (версии 7 и более поздней версии), работающего в ОС Windows, о том, как обрабатывать запросы для приложения Python с помощью обработчика FastCGI или HttpPlatform (рекомендуется). Visual Studio 2015 и более ранних версий вносит эти изменения автоматически. При использовании Visual Studio 2017 необходимо изменить файл *web.config* вручную.
+Файл *web.config* вашего приложения содержит сведения для веб-сервера IIS (версии 7 и более поздней версии), работающего в ОС Windows, о том, как обрабатывать запросы для приложения Python с помощью обработчика FastCGI или HttpPlatform (рекомендуется). Visual Studio 2015 и более ранних версий вносит эти изменения автоматически. При использовании Visual Studio 2017 и более поздних версий нужно изменить файл *web.config* вручную.
 
 ### <a name="configure-the-httpplatform-handler"></a>Настройка обработчика HttpPlatform
 

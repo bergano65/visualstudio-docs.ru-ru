@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936191"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324790"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Создание проектов R в Visual Studio
 
@@ -24,8 +24,8 @@ ms.locfileid: "55936191"
 ## <a name="creating-a-new-r-project"></a>Создание проекта R
 
 1. Запустите Visual Studio.
-1. Выберите **Файл > Создать > Проект...** (**CTRL**+**SHIFT**+**N**)
-1. В разделе **Шаблоны > R** выберите "Проект R" и присвойте имя проекту, укажите его расположение, а затем нажмите **ОК**.
+1. Выберите **Файл > Создать > Проект** (**CTRL**+**SHIFT**+**N**)
+1. В разделе **Шаблоны** > **R** выберите "Проект R", присвойте ему имя и расположение, а затем нажмите кнопку **ОК**.
 
     ![Диалоговое окно создания проекта R в Visual Studio (RTVS в VS2017)](media/getting-started-01-new-project.png)
 

@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222091"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416407"
 ---
-# <a name="how-to-create-item-templates"></a>Как выполнить Создание шаблонов элементов
+# <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 
 В этой статье показано, как создать шаблон элемента с помощью **мастера экспорта шаблонов**. Если шаблон будет состоять из нескольких файлов, см. статью [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Добавление пользовательского шаблона элемента в диалоговое окно "Добавление нового элемента"
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Добавление шаблона элемента в диалоговое окно "Добавление нового элемента"
 
 1. Создайте или откройте проект в Visual Studio.
 
@@ -46,7 +46,7 @@ ms.locfileid: "57222091"
 
    Шаблон элемента появится в диалоговом окне **Добавление нового элемента**. Если вы добавили описание в **мастере экспорта шаблонов**, оно будет отображаться в правой части диалогового окна.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Включение шаблона элемента для использования в проекте универсального приложения Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Включение шаблона элемента для использования в проекте универсального приложения для Windows
 
 Мастер выполняет за вас основную часть работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить *VSTEMPLATE*-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для проекта универсального приложения Windows, необходимо выполнить ряд дополнительных действий.
 
@@ -68,7 +68,7 @@ ms.locfileid: "57222091"
 
 Теперь можно добавить основанный на этом шаблоне элемент в проект универсальной платформы Windows из диалогового окна **Добавление нового элемента**.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Включение шаблонов для конкретных подтипов проектов
+## <a name="enable-templates-for-specific-project-subtypes"></a>Включение шаблонов для конкретных подтипов проектов
 
 Можно указать, что шаблон должен отображаться только для определенных подтипов проекта, например Windows, Office, базы данных или веб-сайта.
 
@@ -103,7 +103,7 @@ ms.locfileid: "57222091"
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Создание шаблона элемента вручную без использования мастера экспорта шаблона
+## <a name="manually-create-an-item-template"></a>Создание шаблона элемента вручную
 
 В некоторых случаях может потребоваться вручную создать шаблон элемента с нуля.
 

@@ -2,7 +2,7 @@
 title: Обновление Visual Studio
 titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 03/09/2019
+ms.date: 03/21/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983979"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323598"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -172,9 +172,9 @@ ms.locfileid: "57983979"
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Обновление Visual Studio для Mac](/visualstudio/mac/update).
 
-## <a name="update-visual-studio-2019"></a>Обновление Visual Studio 2019
+Ниже описано, как можно обновить предварительную версию Visual&nbsp;Studio&nbsp;2019&nbsp; или версию-кандидат Visual&nbsp;Studio&nbsp;2019&nbsp;.
 
-Вот как можно использовать Visual Studio Installer для обновления Visual&nbsp;Studio&nbsp;2019&nbsp; предварительной версии или Visual&nbsp;Studio&nbsp;2019&nbsp;, релиз-кандидат.
+## <a name="use-the-visual-studio-installer"></a>Использование Visual Studio Installer
 
 1. Запустите установщик.
 
@@ -195,6 +195,30 @@ ms.locfileid: "57983979"
 1. После завершения обновления выберите **Запуск** для запуска Visual Studio.
 
     ![Выберите "Запуск", чтобы запустить Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Выберите \"Запуск\", чтобы запустить Visual Studio")
+
+## <a name="use-the-ide"></a>Использование интегрированной среды разработки
+
+1. Запустите Visual Studio. 
+ 
+    ![Открытие версии-кандидата Visual Studio 2019](media/vs2019-visual-studio-rc.png "Открытие Visual Studio 2019 из Windows")
+
+1. В разделе **Приступая к работу** выберите любой параметр, чтобы открыть интегрированную среду разработки.
+
+    ![Откройте Visual Studio Installer](media/vs2019-choose-option-from-get-started.png "Откройте Visual Studio Installer")
+
+    Открывается Visual Studio. В интегрированной среде разработки отображается сообщение **Обновление Visual Studio 2019**.
+
+    ![Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки](media/vs2019-update-visual-studio-ide-message.png "Сообщение \"Обновление Visual Studio 2019\" в интегрированной среде разработки")
+ 
+1. В сообщении **Обновление Visual Studio 2019** выберите **Просмотреть подробности**.
+
+   ![Нажатие кнопки "Просмотреть подробности" в сообщении "Обновление Visual Studio 2019"](media/vs2019-update-visual-studio-ide-view-details.png "Нажатие кнопки \"Просмотреть подробности\" в сообщении \"Обновление Visual Studio 2019\"")
+
+1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
+
+     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
+
+   Visual Studio закрывается и снова открывается.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

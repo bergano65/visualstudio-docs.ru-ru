@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867817"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355478"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Страница "Проекты и решения", диалоговое окно "Параметры"
 
@@ -91,11 +91,11 @@ ms.locfileid: "57867817"
 
 ### <a name="user-project-templates-location"></a>Размещение пользовательских шаблонов проектов
 
-Задает расположение по умолчанию, которое используется в диалоговом окне **Новый проект** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Задает расположение по умолчанию, используемое для поиска созданных пользователями шаблонов проектов. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Размещение пользовательских шаблонов элементов
 
-Задает расположение по умолчанию, которое используется в диалоговом окне **Добавление нового элемента** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Задает расположение по умолчанию, используемое для поиска созданных пользователями шаблонов элементов. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>См. также
 

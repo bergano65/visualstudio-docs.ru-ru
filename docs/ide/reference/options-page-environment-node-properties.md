@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708333"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355608"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница "Параметры", свойства узла "Среда"
 
@@ -120,7 +120,7 @@ ms.locfileid: "56708333"
 |Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Определяет, должна ли интегрированная среда разработки сохранять все свои файлы перед просмотром или запуском построенного приложения.|
-|ProjectsLocation|Get/Set (String)|Определяет каталог по умолчанию, в который будут сохраняться новые проекты из диалогового окна **Добавление проекта**.|
+|ProjectsLocation|Get/Set (String)|Определяет каталог по умолчанию, где сохраняются новые проекты.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|Определяет, отображать ли окно **Вывод** при начале сборки.|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|Определяет, должна ли неудавшаяся операция построения отображать **Список задач** по окончании сборки.|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|Определяет, отслеживается ли текущий элемент в **обозревателе решений**.|

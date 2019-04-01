@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907689"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355676"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -54,11 +54,11 @@ ms.locfileid: "55907689"
 |guid[1–10]|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1`).|
 |itemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**.|
 |machinename|Имя текущего компьютера (например, Computer01).|
-|projectname|Имя, указанное пользователем в диалоговом окне **Новый проект**.|
+|projectname|Имя, указанное пользователем при создании проекта.|
 |registeredorganization|Значение раздела реестра из HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Корневое пространство имен для текущего проекта. Этот параметр применяется только к шаблонам элементов.|
 |safeitemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**, с удаленными небезопасными символами и пробелами.|
-|safeprojectname|Имя, указанное пользователем в диалоговом окне **Новый проект**, с удаленными небезопасными символами и пробелами.|
+|safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
 |SpecificSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `SpecificSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `SpecificSolutionName` пусто.|
 |userdomain|Домен текущего пользователя.|

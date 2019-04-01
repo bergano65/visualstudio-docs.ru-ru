@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956861"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324244"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Создание и настройка членов типа в конструкторе классов
 
@@ -205,7 +205,7 @@ ms.locfileid: "55956861"
 
 - **\<добавить параметр>**
 
-     Строка последнего параметра члена содержит текст **<add parameter>** в ячейке **Имя**. Щелчок на данной ячейке позволяет создать новый параметр. Дополнительные сведения см. в разделе [Добавление параметра в метод](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Строка последнего параметра члена содержит текст **<добавить параметр\>** в ячейке **Имя**. Щелчок на данной ячейке позволяет создать новый параметр. Дополнительные сведения см. в разделе [Добавление параметра в метод](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 В окне **Свойства** отображаются те же свойства параметров, которые отображаются в окне **Сведения о классах**: **Имя**, **Тип**, **модификатор**, **Сводка**, а также свойство **Дополнительное значение по умолчанию**. Изменение свойства в одном месте обновляет значение свойства глобально, включая отображение его значения в других местах.
 

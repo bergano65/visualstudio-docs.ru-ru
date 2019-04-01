@@ -3,8 +3,9 @@ title: Учебник. Начало работы с C# и ASP.NET Core
 titleSuffix: ''
 description: Пошаговые инструкции по созданию веб-приложения ASP.NET Core в Visual Studio на C#.
 ms.custom: seodec18, get-started
-ms.date: 10/29/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7f123646ce3b702d6e76e92009eba2ef12da7626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb45386795077289e14e19ec9ad7e0071521db22
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929002"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475907"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -30,11 +31,21 @@ ms.locfileid: "55929002"
 
 ### <a name="install-visual-studio"></a>Установка Visual Studio
 
+::: moniker range="vs-2017"
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+
+::: moniker-end
 
 ### <a name="update-visual-studio"></a>Обновление Visual Studio
 
-Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../../install/update-visual-studio.md).
+Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../../install/update-visual-studio.md).
 
 ### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
 
@@ -44,9 +55,11 @@ ms.locfileid: "55929002"
 
 Сначала создадим проект ASP.NET Core. Проект этого типа содержит все файлы шаблонов, необходимые для полнофункционального веб-сайта, что избавляет вас от лишней работы.
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual C#**, затем разверните узел **Веб** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. Назовите файл *MyCoreApp* и нажмите **ОК**.
 
@@ -85,7 +98,44 @@ ms.locfileid: "55929002"
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Если **ASP.NET Core 2.0** или более поздняя версия не отображается в верхнем раскрывающемся меню, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../../install/update-visual-studio.md).
+   > Если **ASP.NET Core 2.1** или более поздняя версия не отображается в верхнем раскрывающемся меню, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../../install/update-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. На начальном экране выберите **Создать проект**.
+
+   ![Просмотр окна "Создание проекта"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. В поле поиска окна **Создание проекта** введите *ASP.NET*. Затем выберите **C#** в списке языков и **Windows** в списке платформ. 
+
+   Применив фильтры языка и платформы, выберите шаблон **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**.
+
+   ![Выбор шаблона C# для веб-приложения ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Если шаблон **Веб-приложение ASP.NET Core** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
+   >
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > После этого в Visual Studio Installer выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**.
+   >
+   > ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
+
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *MyCoreApp*. Затем нажмите **Создать**.
+
+   ![В окне "Настроить новый проект" назовите проект "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+
+1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Create a new ASP.NET Core Web Application** (Создание веб-приложения ASP.NET Core) отображается **ASP.NET Core 2.1** или более поздней версии. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+
+   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Новый проект открывается в Visual Studio.
+
+::: moniker-end
 
 ### <a name="about-your-solution"></a>Сведения о решении
 
@@ -131,10 +181,15 @@ ms.locfileid: "55929002"
 
      > [!NOTE]
      > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"**, закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
+     >
+     > Может также появиться запрос о том, хотите ли вы принять сертификат IIS SSL Express. Чтобы просмотреть код в веб-браузере, выберите **Да**, а затем снова **Да**, если появится предупреждение системы безопасности о дальнейшей обработке. 
 
 1. Visual Studio откроет окно браузера. В строке меню вы должны увидеть названия страниц **Home** (Главная), **About** (О программе) и **Contact** (Контакты). (Если названия страниц не отображаются, нажмите кнопку меню, напоминающую гамбургер, чтобы их увидеть.)
 
     ![Кнопка меню, напоминающая гамбургер, в строке меню веб-приложения](media/csharp-aspnet-razor-browser-page.png)
+
+     > [!TIP]
+     > Вы не можете изменить код в редакторе кода Visual Studio, когда проект открыт в окне браузера. 
 
 1. Выберите в строке меню страницу **About** (О программе).
 

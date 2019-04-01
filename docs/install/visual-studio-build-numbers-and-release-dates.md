@@ -1,23 +1,25 @@
 ---
 title: Номера сборки и даты выпуска Visual Studio
 titleSuffix: ''
-description: Актуальный список выпущенных версий и номера сборки Visual Studio 2017 и более поздней версии, отсортированные по дате.
+description: Список выпущенных версий и номеров сборки Visual Studio, отсортированных по дате.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194986"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476089"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,6 +31,7 @@ ms.locfileid: "58194986"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.10 | Выпуск | 25 марта 2019 г. | 15.9.28307.557 |
 | 15.9.9 | Выпуск | 12 марта 2019 г. | 15.9.28307.518 |
 | 15.0.21 | Выпуск | 12 марта 2019 г. | 15.0.26228.76 |
 | 15.9.8 | Выпуск | 5 марта 2019 г. | 15.9.28307.481 |
@@ -189,6 +192,8 @@ ms.locfileid: "58194986"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Версия-кандидат 3 (RC.3) | 19 марта 2019 г. | 16.0.28714.193 |
+| 16.0.0 | Предварительная версия 4.3 | 19 марта 2019 г. | 16.0.28714.193 |
 | 16.0.0 | Релиз-кандидат 2 (RC.2) | 12 марта 2019 г. | 16.0.28711.60 |
 | 16.0.0 | Предварительная версия 4.2 | 12 марта 2019 г. | 16.0.28711.60 |
 | 16.0.0 | Релиз-кандидат 1 Svc1 (RC.1 Svc1) | 6 марта 2019 г. | 16.0.28705.295 |

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949646"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355277"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 
@@ -35,13 +35,13 @@ ms.locfileid: "55949646"
 
 - При открытии проекта, который ориентирован на более раннюю версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio может автоматически обновить его или оставить имеющуюся настройку.
 
-- При создании проекта можно указать версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], на которую требуется ориентироваться.
+- При создании проекта можно указать версию платформы .NET Framework, на которую требуется ориентироваться.
 
-- Можно изменить версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], на которую ориентирован существующий проект.
+- Можно изменить версию платформы .NET Framework, на которую ориентирован существующий проект.
 
-- В каждом из нескольких проектов в одном решении можно ориентироваться на разные версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+- В каждом из нескольких проектов в одном решении можно ориентироваться на разные версии платформы .NET Framework.
 
-- При изменении версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], на которую сориентирован проект, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] вносит все необходимые изменения в ссылки и файлы конфигурации.
+- При изменении версии платформы .NET Framework, на которую сориентирован проект, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] вносит все необходимые изменения в ссылки и файлы конфигурации.
 
 При работе над проектом, нацеленным на более раннюю версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio динамически изменяет среду разработки, как показано ниже:
 
@@ -62,17 +62,27 @@ ms.locfileid: "55949646"
 
 ## <a name="select-a-target-framework-version"></a>Выбор целевой версии платформы
 
-При создании проекта выберите целевую версию .NET Framework в диалоговом окне **Новый проект**. Список доступных платформ включает их установленные версии, соответствующие типу выбранного шаблона. Для типов шаблонов, которые не требуют .NET Framework, например шаблонов .NET Core, раскрывающийся список **Framework** скрыт.
+При создании проекта выберите целевую версию платформ .NET Framework после выбора шаблона проекта. Список доступных платформ включает их установленные версии, соответствующие типу выбранного шаблона. Для типов шаблонов, которые не требуют .NET Framework, например шаблонов .NET Core, раскрывающийся список **Framework** скрыт.
 
-![Раскрывающийся список Framework в диалоговом окне "Новый проект"](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Раскрывающийся список платформ в Visual Studio 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Раскрывающийся список платформ в Visual Studio 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+Для существующего проекта можно изменить целевую версию платформы .NET Framework в диалоговом окне свойств проекта. Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Разрешение системных ссылок и пользовательских ссылок на сборки
 
 Чтобы нацелиться на определенную версию .NET Framework, нужно сначала установить подходящие ссылки на сборки. Вы можете скачать пакеты разработчика для разных версий .NET Framework на странице [файлов для загрузки .NET](https://www.microsoft.com/net/download/windows).
 
-Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], чтобы их нельзя было добавить в проект случайно. (Системные сборки — это файлы *.dll*, включенные в версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии платформы .NET Framework, чтобы их невозможно было добавить в проект случайно. (Системные сборки — это файлы *DLL*, включенные в версию платформы .NET Framework.) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию платформы .NET Framework для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Дополнительные сведения о ссылках на сборки см. в разделе [Разрешение сборок во время разработки](../msbuild/resolving-assemblies-at-design-time.md).
 
