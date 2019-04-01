@@ -2,8 +2,9 @@
 title: Учебник. Начало работы с Visual Basic
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения на Visual Basic в Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 08/10/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,26 +14,38 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840423"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416174"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
 В этом руководстве по Visual Basic вы будете работать со средой Visual Studio для создания и запуска нескольких разных консольных приложений. Вы также ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE) Visual Studio](visual-studio-ide.md).
 
+::: moniker range="vs-2017"
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
 
 Сначала мы создадим проект приложения Visual Basic. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *HelloWorld*.
 
@@ -58,9 +71,49 @@ ms.locfileid: "56840423"
 
 1. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> На некоторых снимках экрана в этом учебнике используется темная тема. Если вы не используете темную тему, но хотите переключиться на нее, см. страницу [Персонализация интегрированной среды разработки и редактора Visual Studio](../../ide/quickstart-personalize-the-ide.md).
+
+1. Запустите Visual Studio 2019.
+
+1. На начальном экране выберите **Создать проект**.
+
+   ![Просмотр окна "Создание проекта"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. В поле поиска окна **Создание проекта** введите *консоль*. Затем выберите **Visual Basic** в списке языков и **Windows** в списке платформ. 
+
+   Применив фильтры языка и платформы, выберите шаблон **Консольное приложение (.NET Core)** и нажмите кнопку **Далее**.
+
+   ![Выбор шаблона Visual Basic для консольного приложения (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Если шаблон **Консольное приложение (.NET Core)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
+   >
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > После этого в Visual Studio Installer выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core**.
+   >
+   > ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
+
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *WhatIsYourName*. Затем нажмите **Создать**.
+
+   ![В окне "Настроить новый проект" назовите проект "WhatIsYourName"](./media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Новый проект открывается в Visual Studio.
+
+::: moniker-end
+
 ## <a name="create-a-what-is-your-name-application"></a>Создание приложения для запроса имени
 
 Давайте создадим приложение, которое запрашивает имя пользователя, а затем выводит его вместе с датой и временем. Это делается так.
+
+ ::: moniker range="vs-2017"
 
 1. Откройте проект *WhatIsYourName*, если он еще не открыт.
 
@@ -77,7 +130,7 @@ ms.locfileid: "56840423"
 
     Этот код заменяет существующие операторы <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> и <xref:System.Console.ReadKey%2A>.
 
-   ![Окно кода с кодом приложения](media/vb-codewindow-what-name.png)
+   ![Окно кода с кодом приложения](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. Когда откроется окно консоли, введите свое имя. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
 
@@ -85,7 +138,36 @@ ms.locfileid: "56840423"
 
 1. Для закрытия консольного окна нажмите любую клавишу.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. В проекте *WhatIsYourName* введите следующий код Visual Basic между первой открывающей скобкой после строки `Sub Main(args As String())` и строкой `End Sub`:
+
+     ```vb
+     Console.WriteLine(vbCrLf + "What is your name? ")
+     Dim name = Console.ReadLine()
+     Dim currentDate = DateTime.Now
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.Write(vbCrLf + "Press any key to exit... ")
+     Console.ReadKey(True)
+    ```
+
+    Этот код заменяет существующие операторы <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> и <xref:System.Console.ReadKey%2A>.
+
+   ![Окно кода с кодом приложения](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Когда откроется окно консоли, введите свое имя. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
+
+   ![Окно консоли с вопросом "What Is Your Name" (Как вас зовут), временем и датой, а также сообщением "Press any key to continue" (Чтобы продолжить, нажмите любую клавишу)](media/vb-console-what-name.png)
+
+1. Для закрытия консольного окна нажмите любую клавишу.
+
+ ::: moniker-end
+
 ## <a name="create-a-calculate-this-application"></a>Создание приложения "Калькулятор"
+
+::: moniker range="vs-2017"
 
 1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -110,11 +192,50 @@ ms.locfileid: "56840423"
 
    Окно кода должно выглядеть так, как показано на следующем снимке экрана:
 
-   ![Окно кода с кодом приложения "Калькулятор"](media/vb-codewindow-calculate-this.png)
+   ![Окно кода с кодом приложения "CalculateThis"](media/vb-codewindow-calculate-this.png)
 
 1. Щелкните **CalculateThis**, чтобы запустить программу. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
 
-    ![Окно консоли с приложением CaluculateThis, включая предложения выполнить действия.](media/vb-console-calculate-this.png)
+    ![Окно консоли с приложением CalculateThis, включая запросы на выполнение действий.](media/vb-console-calculate-this.png)
+
+::: moniker-end 
+
+::: moniker range="vs-2019"
+
+1. На начальном экране выберите **Создать проект**. 
+
+1. В поле поиска окна **Создание проекта** введите *консоль*. Затем выберите **Visual Basic** в списке языков и **Windows** в списке платформ. 
+
+1. Применив фильтры языка и платформы, выберите шаблон **Консольное приложение (.NET Core)** и нажмите кнопку **Далее**.
+
+   В поле **Имя проекта** окна **Настроить новый проект** введите *WhatIsYourName*. Затем выберите **Создать**.
+
+1. Введите следующий код между строками `Module Program` и `End Module`:
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   Окно кода должно выглядеть так, как показано на следующем снимке экрана:
+
+   ![Окно кода с кодом приложения "CalculateThis"](media/vb-codewindow-calculate-this.png)
+
+1. Щелкните **CalculateThis**, чтобы запустить программу. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
+
+    ![Окно консоли с приложением CalculateThis, включая запросы на выполнение действий.](media/vb-console-calculate-this.png)
+
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Быстрые ответы на часто задаваемые вопросы
 

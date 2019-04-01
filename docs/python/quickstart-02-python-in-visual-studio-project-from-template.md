@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927035"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355413"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
-[Установив поддержку Python в Visual Studio 2017](installing-python-support-in-visual-studio.md), можно легко создать проект Python с помощью различных шаблонов. При помощи этого краткого руководства вы создадите простое приложение Flask на основе шаблона. Полученный проект похож на созданный вручную при помощи [краткого руководства по созданию веб-приложения с использованием Flask](../ide/quickstart-python.md).
+[Установив поддержку Python в Visual Studio](installing-python-support-in-visual-studio.md), можно легко создать проект Python с помощью различных шаблонов. При помощи этого краткого руководства вы создадите простое приложение Flask на основе шаблона. Полученный проект похож на созданный вручную при помощи [краткого руководства по созданию веб-приложения с использованием Flask](../ide/quickstart-python.md).
 
-1. Запустите Visual Studio 2017.
+1. Запустите Visual Studio.
 
 1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**, а затем в диалоговом окне **Новый проект** выполните поиск по фразе "пустой веб-проект flask", выберите шаблон **Пустой веб-проект Flask** в списке по центру, укажите имя проекта и щелкните **ОК**:
 

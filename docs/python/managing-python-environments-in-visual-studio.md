@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195142"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355689"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Как создавать окружения Python в Visual Studio и управлять ими
 
@@ -123,7 +123,7 @@ Visual Studio предоставляет прямую поддержку для 
 
 #### <a name="conda-environments"></a>Окружения Conda
 
-Окружение conda создается с помощью средства `conda` или интегрированного управления conda в Visual Studio 2017 версии 15.7 и более поздних версий. (Требуется Anaconda или Miniconda. Anaconda можно установить через установщик Visual Studio, подробнее см. руководство по [установке](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
+Окружение conda создается с помощью средства `conda` или интегрированного управления conda в Visual Studio 2017 версии 15.7 и более поздних версий. (Требуется Anaconda или Miniconda, которые можно установить через Visual Studio Installer, подробнее см. в разделе [Установка](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
 
 ::: moniker range="vs-2017"
 

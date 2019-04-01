@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223277"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355206"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -59,7 +59,7 @@ ms.locfileid: "57223277"
 
 Определяет версию платформы .NET Framework, для которой предназначено приложение. Этот параметр может иметь разные значения в зависимости от того, какие версии .NET Framework установлены на компьютере.
 
-Значение по умолчанию соответствует требуемой версии .NET Framework, заданной в диалоговом окне **Создание проекта**.
+Значение по умолчанию соответствует требуемой версии .NET Framework, заданной при создании проекта.
 
 > [!NOTE]
 > Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта потребуется указать необходимые компоненты вручную, чтобы они соответствовали новой целевой платформе.

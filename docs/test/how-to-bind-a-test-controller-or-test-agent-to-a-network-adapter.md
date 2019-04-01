@@ -11,14 +11,14 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946669"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414974"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Как выполнить  Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
 Если компьютер, на котором установлено программное обеспечение контроллера или агента тестирования, оснащен несколькими сетевыми адаптерами, то чтобы определить этот контроллер или агент тестирования, необходимо указать не имя компьютера, а IP-адрес.
 
@@ -55,7 +55,7 @@ ms.locfileid: "55946669"
 
      `net stop vsttcontroller`
 
-3.  Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<выпуск>\Common7\IDE*.
 
 4.  Найдите тег `<appSettings>`.
 
@@ -101,7 +101,7 @@ ms.locfileid: "55946669"
 
      **net stop vsttagent**
 
-3.  Откройте XML-файл конфигурации *QTAgentService.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Откройте XML-файл конфигурации *QTAgentService.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<выпуск>\Common7\IDE*.
 
 4.  Найдите тег `<appSettings>`.
 
@@ -133,5 +133,4 @@ ms.locfileid: "55946669"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

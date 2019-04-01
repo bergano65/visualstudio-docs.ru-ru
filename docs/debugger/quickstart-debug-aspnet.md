@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153019"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354847"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Краткое руководство. Отладка в ASP.NET с помощью отладчика Visual Studio
 
@@ -25,13 +25,13 @@ ms.locfileid: "58153019"
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
-1. В Visual Studio последовательно выберите **Файл > Создать > Проект**.
+1. Запустите Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Откроется диалоговое окно **Создание нового проекта**. В поле поиска введите **asp.net** для фильтрации результатов, выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**. Введите имя, например **MyDbgApp**, и нажмите **Создать**.
+    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net**, выберите **Шаблоны** и затем **Create new ASP.NET Core Web Application** (Создание проекта веб-приложения ASP.NET Core). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Откроется диалоговое окно **Новый проект**. В разделе **Visual C#** выберите **Веб**, а затем в средней области выберите **Веб-приложение ASP.NET Core**. Введите имя, например **MyDbgApp**, и нажмите кнопку **ОК**.
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C#** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET Core**. Введите имя, например **MyDbgApp**, и нажмите кнопку **ОК**.
 
     В открывшемся диалоговом окне выберите в средней области **Веб-приложение**, а затем нажмите кнопку **ОК**.
 

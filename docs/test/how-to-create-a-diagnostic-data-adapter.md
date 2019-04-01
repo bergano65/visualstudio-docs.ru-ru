@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание адаптера диагностических данных
+title: Практическое руководство. Создание адаптера диагностических данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914023"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416336"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Как выполнить  Создание адаптера диагностических данных
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
 
 Чтобы создать *адаптер диагностических данных*, нужно создать библиотеку классов с помощью Visual Studio и добавить в нее интерфейсы API адаптера диагностических данных, входящие в Visual Studio Enterprise. Любые необходимые данные можно отправить в <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> инфраструктуры в виде потока или файла при обработке событий, возникших во время тестового запуска. Потоки или файлы, отправляемые в объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>, при окончании теста сохраняются в виде вложений в результатах теста. При создании ошибки на основе этих результатов теста и при использовании [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] эти файлы также связываются с ошибкой.
 
@@ -48,21 +48,9 @@ ms.locfileid: "55914023"
 
 Полный пример проекта адаптера диагностических данных, включая специализированный редактор конфигурации, см. в статье [Пример проекта для создания адаптера диагностических данных](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Создание и установка адаптера диагностических данных
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Создание и установка адаптера диагностических данных
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Создание и установка адаптера диагностических данных
-
-1. Создайте новую библиотеку классов.
-
-   1.  В меню **Файл** последовательно выберите команды **Создать** и **Создать проект**.
-
-   2.  В разделе **Типы проектов** выберите используемый язык.
-
-   3.  В разделе **Установленные шаблоны Visual Studio** выберите **Библиотека классов**.
-
-   4.  Введите имя адаптера диагностических данных.
-
-   5.  Нажмите кнопку **ОК**.
+1. Создайте проект **Библиотека классов**.
 
 2. Добавьте сборку **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

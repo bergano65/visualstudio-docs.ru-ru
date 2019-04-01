@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943042"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355634"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
@@ -34,15 +34,19 @@ ms.locfileid: "55943042"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Создание проекта библиотеки классов Windows и проекта тестирования
 
-1. В [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] создайте проект **Библиотека классов Windows**. Назовите его `GFUDemo_VB` или `GFUDemo_CS`в зависимости от используемого языка.
+1. Создайте проект **Библиотека классов Windows** в C# или Visual Basic. Назовите его `GFUDemo_VB` или `GFUDemo_CS`в зависимости от используемого языка.
 
-2. В **обозревателе решений** щелкните правой кнопкой мыши значок решения в верхней части окна, выберите команду **Добавить**, а затем — **Новый проект**. В левой области диалогового окна **Создание проекта** выберите **Тест**.
+2. В **обозревателе решений** щелкните правой кнопкой мыши значок решения в верхней части окна и выберите команду **Добавить** > **Новый проект**.
 
-3. В центральной области выберите элемент **Проект модульного теста** и примите имя по умолчанию `UnitTestProject1`. На рисунке ниже показано диалоговое окно, отображаемое в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Диалоговое окно в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выглядит похоже.
+3. Создайте проект **Проект модульного теста (.NET Framework)**.
 
-    ![Диалоговое окно «Новый тестовый проект»](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Создание проекта**.
+   На рисунке ниже показано диалоговое окно **Создание проекта** для шаблонов C#.
+
+   ![Шаблон проекта модульного теста](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Добавление ссылки на проект библиотеки классов
 
@@ -154,7 +158,7 @@ ms.locfileid: "55943042"
 
      Результат на этот раз положительный. Окно **Результаты теста** показано на рисунке ниже.
 
-     ![Результаты теста, пройденного успешно](../ide/media/testspassed.png)
+     ![Переданные результаты теста](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>См. также
 

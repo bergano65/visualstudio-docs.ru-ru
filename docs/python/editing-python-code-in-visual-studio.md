@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155528"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355556"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
@@ -31,9 +31,9 @@ ms.locfileid: "58155528"
 
 Технология IntelliSense предоставляет следующие возможности: [автозавершения](#completions), [справка по сигнатурам](#signature-help), [вывод кратких сведений](#quick-info) и [цветовая маркировка синтаксиса](#code-coloring). Visual Studio 2017 версии 15.7 и более поздней также поддерживает [подсказки по типам](#type-hints).
 
-Для улучшения производительности функция IntelliSense в **Visual Studio 2017 версии 15.5** и более ранних версиях учитывает базу данных завершения, которая создается для каждого окружения Python в проекте. После добавления, удаления или обновления пакетов может потребоваться обновить базы данных. Их состояние отображается в окне **Окружения Python** (элемент того же уровня, что и **обозреватель решений**) на вкладке **IntelliSense** (см. [дополнительные сведения об окне "Окружения"](python-environments-window-tab-reference.md#intellisense-tab)).
+Для улучшения производительности функция IntelliSense в Visual Studio 2017 версии 15.5 и более ранних учитывает базу данных завершения, которая создается для каждого окружения Python в проекте. После добавления, удаления или обновления пакетов может потребоваться обновить базы данных. Их состояние отображается в окне **Окружения Python** (элемент того же уровня, что и **обозреватель решений**) на вкладке **IntelliSense** (см. [дополнительные сведения об окне "Окружения"](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 версии 15.6** и более поздних версий разными способами предоставляет функцию завершения IntelliSense, которая не зависит от базы данных.
+Visual Studio 2017 версии 15.6 и более поздних разными способами предоставляет функцию завершения IntelliSense, которая не зависит от базы данных.
 
 ### <a name="completions"></a>Автозавершения
 

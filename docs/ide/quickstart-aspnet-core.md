@@ -1,8 +1,10 @@
 ---
 title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957783"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475855"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -27,7 +29,17 @@ ms.locfileid: "55957783"
 
 ### <a name="install-visual-studio"></a>Установка Visual Studio
 
+::: moniker range="vs-2017"
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
 
@@ -37,9 +49,11 @@ ms.locfileid: "55957783"
 
 Сначала вы создадите проект веб-приложения ASP.NET Core. Для этого типа проекта уже имеются все нужные файлы шаблонов, необходимые для создания веб-приложения, что избавляет вас от лишней работы.
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. <br/><br/>Затем назовите файл `HelloWorld` и нажмите кнопку **ОК**.
 
@@ -61,9 +75,46 @@ ms.locfileid: "55957783"
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Если **ASP.NET Core 2.1** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
+   > Если **ASP.NET Core 2.1** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../install/update-visual-studio.md).
 
 Через некоторое время файл проекта откроется в Visual Studio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. На начальном экране выберите **Создать проект**.
+
+   ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. В поле поиска окна **Создание проекта** введите *ASP.NET*. Затем выберите **C#** в списке языков и **Windows** в списке платформ. 
+
+   Применив фильтры языка и платформы, выберите шаблон **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**.
+
+   ![Выбор шаблона C# для веб-приложения ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Если шаблон **Веб-приложение ASP.NET Core** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
+   >
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > После этого в Visual Studio Installer выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**.
+   >
+   > ![Рабочая нагрузка "Веб-приложение ASP.NET Core" в Visual Studio Installer](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
+
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *HelloWorld*. Затем нажмите **Создать**.
+
+   ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Create a new ASP.NET Core Web Application** (Создание веб-приложения ASP.NET Core) отображается **ASP.NET Core 2.1** или более поздней версии. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+
+   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Новый проект открывается в Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>Создание и запуск приложения
 

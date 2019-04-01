@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957982"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354777"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 этот компонент уже встроен. В ранних версиях Visual Studio этот компонент нужно устанавливать отдельно.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 и более поздних версий этот компонент уже встроен. В более ранних версиях Visual Studio его нужно устанавливать отдельно.
 
 Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку **Home** (Домой), чтобы обнаружить установленный интерпретатор. (Дополнительные общие сведения о средах см. в разделе [Среды Python](managing-python-environments-in-visual-studio.md).)
 

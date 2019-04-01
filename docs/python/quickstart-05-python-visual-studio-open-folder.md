@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987152"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354912"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Краткое руководство. Открытие и выполнение кода Python в папке
 
 [Установив поддержку Python в Visual Studio 2019](installing-python-support-in-visual-studio.md), вы сможете легко перенести существующий код Python в Visual Studio 2019 без необходимости создавать проект Visual Studio.
 
 > [!Note]
-> В Visual Studio 2017 и более ранних версиях для выполнения кода Python нужно всегда создавать проект Visual Studio, что можно легко сделать с помощью встроенного шаблона проекта. Подробнее см. в [кратком руководстве по созданию проекта Python на основе существующего кода](quickstart-01-python-in-visual-studio-project-from-existing-code.md).
+> В Visual Studio 2017 и более ранних версиях для выполнения кода Python нужно всегда создавать проект Visual Studio, что можно легко сделать с помощью встроенного шаблона проекта. Подробнее см. в [кратком руководстве по созданию проекта Python на основе существующего кода](quickstart-01-python-in-visual-studio-project-from-existing-code.md).
 
 1. В этом пошаговом руководстве описано, как использовать любую папку с кодом Python. Чтобы в точности повторить все действия из описанного ниже примера, клонируйте репозиторий GitHub gregmalcolm/python_koans на локальный компьютер, выполнив команду `git clone https://github.com/gregmalcolm/python_koans` в соответствующей папке.
 
-1. Запустите Visual Studio 2019 и на экране запуска выберите **Открыть** в нижней части столбца **Приступить к работе**. Если вы уже запустили Visual Studio, просто выберите **Файл** > **Открыть** > **Папка**.
+1. Запустите Visual Studio 2019 и в начальном окне выберите **Открыть** в нижней части столбца **Приступить к работе**. Если вы уже запустили Visual Studio, просто выберите **Файл** > **Открыть** > **Папка**.
 
     ![Экран запуска Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

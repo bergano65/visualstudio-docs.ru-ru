@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868905"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324400"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
@@ -53,6 +53,7 @@ Visual Studio обеспечивает эффективное редактиро
 - [Автоматическое получение определений типов](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense на основе определения типа
 
 В большинстве случаев явные сведения о типах в JavaScript недоступны. Но тип обычно довольно легко вывести из контекста кода.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense на основе JSDoc
 
 Когда определение типа не предоставляет нужные сведения о типе (или требуется вести документацию), их можно предоставить явно с помощью заметок JSDoc.  Например, чтобы назначить определенный тип частично объявленному объекту, можно использовать тег `@type`, как показано ниже:
@@ -123,7 +125,7 @@ function Foo(param1) {
 
 Ниже показан простой пример файла определения TypeScript, предоставляющий подробные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Файл определения TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Автоматическое получение определений типов

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070325"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355569"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 
@@ -75,15 +75,13 @@ Visual Studio управляет файлами для отдельного пр
 
 1. Запустите Visual Studio.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
-
 1. Создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    В диалоговом окне **Создание нового проекта** введите **javascript** в поле поиска, чтобы отфильтровать результаты, а затем выберите **Базовое приложение Azure Node.js Express 4** и нажмите **Далее**. Затем нажмите **Создать**.
+    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **Node.js** и выберите **Create a new Basic Azure Node.js Express 4 application** (Создать простое приложение Node.js Express 4 в Azure) (JavaScript). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Базовое приложение Azure Node.js Express 4** и нажмите кнопку **ОК**.
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Базовое приложение Azure Node.js Express 4** и нажмите кнопку **ОК**.
     ::: moniker-end
     Если шаблон проекта **Базовое приложение Azure Node.js Express 4** отсутствует, необходимо добавить рабочую нагрузку **Разработка Node.js**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 

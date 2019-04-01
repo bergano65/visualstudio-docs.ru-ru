@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Указание событий сборки (Visual Basic)
+title: Практическое руководство. Указание событий сборки (Visual Basic)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938739"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324725"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Как выполнить  Указание событий сборки (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 
 События сборки в Visual Basic можно использовать для выполнения скриптов, макросов или других действий в составе процесса компиляции. События перед сборкой происходят до компиляции; события после сборки происходят после компиляции.
 
@@ -115,7 +115,7 @@ ms.locfileid: "55938739"
    End Sub
    ```
 
-   Команда принимает два аргумента. Первый аргумент — это путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно *<Projectname>.publish*). Вторым аргументом является новая версия операционной системы.
+   Команда принимает два аргумента. Первый аргумент — это путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно *\<имя_проекта>.publish*). Вторым аргументом является новая версия операционной системы.
 
 5. В меню **Сборка** выберите **Собрать решение**.
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840835"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325111"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "56840835"
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Вход в Visual Studio
 
-При первом запуске Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. Необходимо выбрать учетную запись Майкрософт или рабочую либо школьную учетную запись, которую вам будет удобнее использовать. Если у вас нет таких учетных записей, можно создать учетную запись Майкрософт бесплатно. См. раздел [Регистрация учетной записи Майкрософт](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+При первом открытии Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. Необходимо выбрать учетную запись Майкрософт или рабочую либо школьную учетную запись, которую вам будет удобнее использовать. Если у вас нет таких учетных записей, можно создать учетную запись Майкрософт бесплатно. См. раздел [Регистрация учетной записи Майкрософт](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Затем выберите параметры пользовательского интерфейса и цветовую тему, которые должны использоваться в Visual Studio. Visual Studio запоминает эти параметры и синхронизирует их во всех средах Visual Studio, в которых вы выполняли вход. Список синхронизируемых параметров см. в разделе [Синхронизированные параметры](../ide/synchronized-settings-in-visual-studio.md). Параметры можно изменить позже в меню **Сервис** > **Параметры** Visual Studio.
 

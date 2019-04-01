@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221896"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323572"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -120,7 +120,7 @@ ms.locfileid: "57221896"
 
 Последние тестовые проекты UWP указывают свойство сборки платформы тестирования, что позволяет повысить производительность при обнаружении тестовых приложений. Если у вас есть тестовый проект UWP, который был инициализирован в версии Visual Studio ниже 15.7, в разделе **Вывод** > **Тесты** вы можете увидеть следующую ошибку.
 
-**System.AggregateException: произошла одна или несколько ошибок. ---> System.InvalidOperationException: не удалось найти следующий объект TestContainer {} в Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: произошла одна или несколько ошибок. ---> System.InvalidOperationException: не удалось найти следующий объект TestContainer {} в Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
 Чтобы исправить эту ошибку, сделайте следующее:
 
