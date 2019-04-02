@@ -1,6 +1,6 @@
 ---
 title: Изображение каталог и служба | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844065"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857857"
 ---
 # <a name="image-service-and-catalog"></a>Каталог и служба образов
 Это руководство содержит инструкции и рекомендации по внедрению служба изображений Visual Studio и каталог образа, появившихся в Visual Studio 2015.
@@ -146,12 +146,12 @@ ms.locfileid: "56844065"
 
 |||
 |-|-|
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Атрибут**|**Определение**|
 |Guid|[Обязательный параметр] Часть GUID моникер изображений|
 |ID|[Обязательный параметр] Идентификатор часть моникер изображений|
 |AllowColorInversion|[Необязательно, по умолчанию-true] Указывает, может ли изображение иметь цвета программно обращена при использовании на темном фоне.|
 
- **Источник**
+ **Исходный код**
 
  \<Источника > элемент определяет один исходный ресурс изображения (XAML и PNG).
 
@@ -163,7 +163,7 @@ ms.locfileid: "56844065"
 
 |||
 |-|-|
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Атрибут**|**Определение**|
 |URI|[Обязательный параметр] URI, который определяет, где можно загрузить изображение из. Он может принимать одно из следующих:<br /><br /> -A [пакет URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) в приложении: / / / центра<br />Ссылку на ресурс абсолютный компонента<br />— Путь к файлу, содержащему машинный ресурс|
 |Фон|[Необязательно] Указывает, что на тип фона источник предназначен для использования.<br /><br /> Он может принимать одно из следующих:<br /><br /> *Индикатор:* Источник может использоваться на светлым фоном.<br /><br /> *Темно:* Источник может использоваться на темном фоне.<br /><br /> *Высокая контрастность:* Источник можно использовать на любой фоне в режиме высокой контрастности.<br /><br /> *HighContrastLight:* Источник может использоваться на светло-фоне в режиме высокой контрастности.<br /><br /> *HighContrastDark:* Источник может использоваться на темном фоне в режиме высокой контрастности.<br /><br /> Если опустить атрибут фона, источник можно использовать на любой фоне.<br /><br /> Если фон должен *свет*, *темно-*, *HighContrastLight*, или *HighContrastDark*, никогда не инвертирования цветов источника. Если опущен или установлен фоновом режиме *высокой контрастности*, управляет инверсии цветов источника изображения **AllowColorInversion** атрибута.|
 
@@ -187,7 +187,7 @@ ms.locfileid: "56844065"
 
 |||
 |-|-|
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Атрибут**|**Определение**|
 |Тип|[Обязательный параметр] Тип собственного ресурса, XAML или PNG|
 |ID|[Обязательный параметр] Идентификатор целой части машинный ресурс|
 
@@ -204,7 +204,7 @@ ms.locfileid: "56844065"
 
 |||
 |-|-|
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Атрибут**|**Определение**|
 |Guid|[Обязательный параметр] Часть GUID моникер изображений|
 |ID|[Обязательный параметр] Идентификатор часть моникер изображений|
 |Внешняя|[Необязательно, по умолчанию: false] Указывает, ссылается ли моникер изображений на изображение в текущий манифест.|
@@ -275,9 +275,19 @@ ms.locfileid: "56844065"
 
     -   Не используйте этот заголовок, если служба образов может обрабатывать ваши тема образа.
 
+::: moniker range="vs-2017"
 -   **VSUIDPIHelper.h**
 
     -   Требуется, при использовании модулей поддержки DPI для получения текущего значения DPI.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+-   **VsDpiAwareness.h**  
+
+    -   Требуется, при использовании вспомогательных методов распознавания DPI для получения текущего значения DPI.  
+
+::: moniker-end
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Как написать новый пользовательский Интерфейс WPF?
 
@@ -339,24 +349,49 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
 
  **Запрос образа**
 
-```cpp
-ImageAttributes attr = { 0 };
-attr.StructSize      = sizeof(attributes);
-attr.Format          = DF_Win32;
-// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST
-attr.ImageType       = IT_Bitmap;
-attr.LogicalWidth    = 16;
-attr.LogicalHeight   = 16;
-attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();
-attr.Background      = 0xFFFFFFFF;
-// Desired RGBA color, if you don't use this, don't set IAF_Background below
-attr.Flags           = IAF_RequiredFlags | IAF_Background;
+::: moniker range="vs-2017"
+```cpp  
+ImageAttributes attr = { 0 };  
+attr.StructSize      = sizeof(attributes);  
+attr.Format          = DF_Win32;  
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
+attr.ImageType       = IT_Bitmap;  
+attr.LogicalWidth    = 16;  
+attr.LogicalHeight   = 16;  
+attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();  
+// Desired RGBA color, if you don't use this, don't set IAF_Background below  
+attr.Background      = 0xFFFFFFFF;  
+attr.Flags           = IAF_RequiredFlags | IAF_Background;  
 
-CComPtr<IVsUIObject> spImg;
-// Replace this KnownMoniker with your desired ImageMoniker
-spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
+CComPtr<IVsUIObject> spImg;  
+// Replace this KnownMoniker with your desired ImageMoniker  
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
+```  
+::: moniker-end
 
-```
+::: moniker range=">=vs-2019"
+```cpp 
+UINT dpiX, dpiY;
+HWND hwnd = // get the HWND where the image will be displayed
+VsUI::CDpiAwareness::GetDpiForWindow(hwnd, &dpiX, &dpiY);
+ 
+ImageAttributes attr = { 0 };  
+attr.StructSize      = sizeof(attributes);  
+attr.Format          = DF_Win32;  
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
+attr.ImageType       = IT_Bitmap;  
+attr.LogicalWidth    = 16;  
+attr.LogicalHeight   = 16;  
+attr.Dpi             = dpiX;
+// Desired RGBA color, if you don't use this, don't set IAF_Background below  
+attr.Background      = 0xFFFFFFFF;  
+attr.Flags           = IAF_RequiredFlags | IAF_Background;  
+
+CComPtr<IVsUIObject> spImg;  
+// Replace this KnownMoniker with your desired ImageMoniker  
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
+```  
+::: moniker-end
 
 ## <a name="how-do-i-update-winforms-ui"></a>Обновление пользовательского интерфейса WinForms
  Добавьте следующее в код, где это необходимо для замены необработанные загрузку образов. Переключение значений для возвращения точечные рисунки и значки, при необходимости.
@@ -377,27 +412,55 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
  **Запрос образа**
 
-```csharp
-ImageAttributes attributes = new ImageAttributes
-{
-    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),
-    // IT_Bitmap for Bitmap, IT_Icon for Icon
-    ImageType     = (uint)_UIImageType.IT_Bitmap,
-    Format        = (uint)_UIDataFormat.DF_WinForms,
-    LogicalWidth  = 16,
-    LogicalHeight = 16,
-    // Desired RGBA color, if you don't use this, don't set IAF_Background below
-    Background    = 0xFFFFFFFF,
-    Flags = (uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background,
-};
+::: moniker range="vs-2017"
+```csharp  
+ImageAttributes attributes = new ImageAttributes  
+{  
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
+    ImageType     = (uint)_UIImageType.IT_Bitmap,  
+    Format        = (uint)_UIDataFormat.DF_WinForms,  
+    LogicalWidth  = 16,  
+    LogicalHeight = 16,  
+    Dpi           = (int)DpiHelper.DeviceDpiX;  
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
+    Background    = 0xFFFFFFFF,  
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background), 
+};  
 
-// Replace this KnownMoniker with your desired ImageMoniker
-IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
+// Replace this KnownMoniker with your desired ImageMoniker  
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
 
-Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap
-// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj); // Use this if you need an icon
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
+```  
+::: moniker-end
 
-```
+::: moniker range=">=vs-2019"
+```csharp  
+Control control = // get the control where the image will be displayed
+
+ImageAttributes attributes = new ImageAttributes  
+{  
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
+    ImageType     = (uint)_UIImageType.IT_Bitmap,  
+    Format        = (uint)_UIDataFormat.DF_WinForms,  
+    LogicalWidth  = 16,  
+    LogicalHeight = 16,  
+    Dpi           = (int)DpiAwareness.GetWindowDpi(control.Handle);  
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
+    Background    = 0xFFFFFFFF,  
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background),  
+};  
+
+// Replace this KnownMoniker with your desired ImageMoniker  
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
+
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
+```  
+::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Как использовать моникеры изображения в новом окне средства?
  Шаблон проекта пакета VSIX был обновлен для Visual Studio 2015. Чтобы создать новое окно инструмента, правой кнопкой мыши проект VSIX и выберите **добавить** > **новый элемент** (**Ctrl**+**Shift** + **Объект**). В узле расширяемости для языка проекта выберите **пользовательского окна инструментов**, предоставить окно инструментов, имя и нажмите клавишу **добавить** кнопки.
@@ -767,12 +830,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupClass|GlyphItemProtected|ClassProtected|
         |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|
         |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|
-        |GlyphGroupConstant|GlyphItemPublic|ClassPublic|
-        |GlyphGroupConstant|GlyphItemInternal|ClassInternal|
-        |GlyphGroupConstant|GlyphItemFriend|ClassInternal|
-        |GlyphGroupConstant|GlyphItemProtected|ClassProtected|
-        |GlyphGroupConstant|GlyphItemPrivate|ClassPrivate|
-        |GlyphGroupConstant|GlyphItemShortcut|ClassShortcut|
+        |GlyphGroupConstant|GlyphItemPublic|ConstantPublic|  
+        |GlyphGroupConstant|GlyphItemInternal|ConstantInternal|  
+        |GlyphGroupConstant|GlyphItemFriend|ConstantInternal|  
+        |GlyphGroupConstant|GlyphItemProtected|ConstantProtected|  
+        |GlyphGroupConstant|GlyphItemPrivate|ConstantPrivate|  
+        |GlyphGroupConstant|GlyphItemShortcut|ConstantShortcut|  
         |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|
         |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|
         |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|
@@ -785,12 +848,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|
         |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|
         |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|
-        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationMemberPublic|
-        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationMemberInternal|
-        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationMemberInternal|
-        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationMemberProtected|
-        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationMemberPrivate|
-        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationMemberShortcut|
+        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationItemPublic|  
+        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationItemInternal|  
+        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationItemInternal|  
+        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationItemProtected|  
+        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationItemPrivate|  
+        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationItemShortcut|  
         |GlyphGroupEvent|GlyphItemPublic|EventPublic|
         |GlyphGroupEvent|GlyphItemInternal|EventInternal|
         |GlyphGroupEvent|GlyphItemFriend|EventInternal|
