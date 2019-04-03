@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636961"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567845"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Построение приложений ClickOnce из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно построить проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле, можно перестроить проект, созданный с помощью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Благодаря этому можно воспроизвести с помощью автоматизированного процесса сборки, например, при построении центра лабораторий или с помощью расширенные методы написания сценариев вне области построения самого проекта.
@@ -41,21 +41,21 @@ ms.locfileid: "56636961"
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Чтобы создать и опубликовать проект ClickOnce
 
-1. Нажмите кнопку **новый проект** из **файл** меню. Откроется диалоговое окно **Новый проект** .
+1. Откройте Visual Studio и создайте новый проект.
 
-2. Выберите **приложения Windows** и назовите его `CmdLineDemo`.
+    Выберите **классическое приложение Windows** шаблон проекта и назовите проект `CmdLineDemo`.
 
-3. Из **построения** меню, щелкните **публикации** команды.
+1. Из **построения** меню, щелкните **публикации** команды.
 
     Этот шаг гарантирует, что проект правильно настроен для составления [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания приложения.
 
     Откроется Мастер публикации.
 
-4. В мастере публикации, нажмите кнопку **Готово**.
+1. В мастере публикации, нажмите кнопку **Готово**.
 
     Visual Studio создает и отображает веб-страницы по умолчанию, именем *Publish.htm*.
 
-5. Сохраните проект и запишите расположение папки, в которой будет храниться.
+1. Сохраните проект и запишите расположение папки, в которой будет храниться.
 
    Выше описаны действия по созданию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] проекта, опубликованный в первый раз. Теперь можно воспроизвести построение вне интегрированной среды разработки.
 

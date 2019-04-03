@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957835"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856636"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом кратком руководстве по редактору кода Visual Studio мы рассмотрим несколько методов, которые упрощают написание, понимание кода и навигацию по нему в Visual Studio.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
 
 В этой статье предполагается, что вы уже знакомы с основами разработки на JavaScript. Если это не так, мы рекомендуем сначала изучить руководство по [созданию приложения Node.js и Express](../javascript/tutorial-nodejs.md).
 
@@ -120,7 +120,7 @@ for (var i = 0; i < length; i++) {
 
 - [Фрагменты кода](../ide/code-snippets.md)
 - [Навигация по коду](../ide/navigating-code.md)
-- [Структура](../ide/outlining.md)
+- [Структуризация](../ide/outlining.md)
 - [Функции "Перейти к определению" и "Показать определение"](../ide/go-to-and-peek-definition.md)
 - [Рефакторинг](../ide/refactoring-in-visual-studio.md)
 - [Использование IntelliSense](../ide/using-intellisense.md)
