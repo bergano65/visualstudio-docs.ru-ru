@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844078"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789891"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Использование преимущества Visual Studio 2017
 
@@ -53,9 +53,12 @@ ms.locfileid: "56844078"
 
 13. Выберите предпочитаемую тему и щелкните **Запустить Visual Studio**.
 
-14. Открывается начальная страница.  Теперь вы готовы начать работу с Visual Studio.
+14. Открывается Visual Studio. Теперь вы готовы начать работу с Visual Studio.
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Право на участие
 
