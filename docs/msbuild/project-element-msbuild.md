@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635141"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567897"
 ---
 # <a name="project-element-msbuild"></a>Элемент Project (MSBuild)
 Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
@@ -61,7 +61,7 @@ ms.locfileid: "56635141"
 | `Sdk` | Необязательный атрибут. <br /><br /> Имя и (необязательно) версия пакета SDK для создания неявных операторов import, которые добавляются в PROJ-файл. Если версия не указана, MSBuild будет пытаться использовать версию по умолчанию.  Например, `<Project Sdk="Microsoft.NET.Sdk" />` или `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Необязательный атрибут.<br /><br /> Версия набора инструментов MSBuild используется для определения значений $(MSBuildBinPath) и $(MSBuildToolsPath). |
 | `TreatAsLocalProperty` | Необязательный атрибут.<br /><br /> Имена свойств, которые не будут относиться к глобальным. Этот атрибут запрещает определенным свойствам командной строки переопределять значения свойств, заданные в файле проекта или целевых объектов и всех последующих операциях импорта. Несколько свойств разделяются точкой с запятой (;).<br /><br /> Как правило, глобальные свойства переопределяют значения свойств, заданных в файле проекта или целевых объектов. Если свойство указано в значении `TreatAsLocalProperty`, значение глобального свойства не переопределяет значения свойств, заданные в этом файле и всех последующих операциях импорта. Дополнительные сведения см. в разделе [Как Построение одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Примечание.**  Чтобы задать глобальные свойства из командной строки, используйте параметр **-property** (или **-p**). Кроме того, вы можете задать или изменить глобальные свойства для дочерних проектов в сборках нескольких проектов, используя атрибут `Properties` задачи MSBuild. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md). |
-| `Xmlns` | Необязательный атрибут.<br /><br /> Если он указан, атрибут `xmlns` должен иметь значение `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| `xmlns` | Необязательный атрибут.<br /><br /> Если он указан, атрибут `xmlns` должен иметь значение `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Дочерние элементы
 
