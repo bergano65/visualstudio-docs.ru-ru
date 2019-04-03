@@ -2,7 +2,7 @@
 title: Руководство администратора Visual Studio
 titleSuffix: ''
 description: Дополнительные сведения о способах развертывания Visual Studio в корпоративной среде.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324939"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790099"
 ---
 # <a name="visual-studio-administrator-guide"></a>Руководство администратора Visual Studio
 
@@ -30,7 +30,17 @@ ms.locfileid: "58324939"
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Развертывание Visual Studio в корпоративной среде
 
-Вы можете развернуть Visual Studio на клиентских компьютерах, если каждый из этих компьютеров отвечает [минимальным требованиям к установке](/visualstudio/productinfo/vs2017-system-requirements-vs). Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
+::: moniker range="vs-2017"
+
+Вы можете развернуть Visual Studio на клиентских компьютерах, если каждый из этих компьютеров отвечает [минимальным требованиям к установке](/visualstudio/productinfo/vs2017-system-requirements-vs/). Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Вы можете развернуть Visual Studio на клиентских компьютерах, если каждый из этих компьютеров отвечает [минимальным требованиям к установке](/visualstudio/releases/2019/system-requirements/). Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
+
+::: moniker-end
 
 1. [Создайте сетевую папку, содержащую файлы продукта Visual Studio](create-a-network-installation-of-visual-studio.md) в сетевом расположении.
 

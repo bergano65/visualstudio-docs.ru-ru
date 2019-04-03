@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355621"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515211"
 ---
 # <a name="msbuild-properties"></a>свойства MSBuild
 Свойства представляют собой пары "имя-значение", с помощью которых выполняется настройка сборок. Свойства используются для передачи значений задачам, проверки условий и хранения значений, на которые можно давать ссылки в файле проекта.
@@ -59,7 +59,7 @@ ms.locfileid: "58355621"
  Дополнительные сведения см. в разделе [Как Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Свойство реестра
- Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE**), `Key` — имя раздела, `SubKey` — имя подраздела, `Value` — значение подраздела.
+ Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE**), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
