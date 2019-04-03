@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708866"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790359"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.
@@ -72,7 +72,7 @@ ms.locfileid: "56708866"
 
 2.  Откройте страницу свойств отладки для запускаемого проекта. Выберите проект в Обозревателе решений. В меню **Отладка** выберите пункт **Свойства**.
 
-     Для проектов C++ и JavaScript разверните **свойства конфигурации** и выберите **Отладка**.
+     Для проектов C++, разверните **свойства конфигурации** и выберите **Отладка**.
 
 3.  Выполните одно из следующих действий.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56708866"
 
          ![C&#35;&#47;VB свойство отладки запуска приложения](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Для проектов JavaScript и Visual C++ выберите **Нет** из списка **Запустить приложение** .
+    -   Для проектов Visual C++ выберите **нет** из **запуск приложения** списка.
 
          ![C&#43;&#43;&#47;свойство отладки запуска VB приложения](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

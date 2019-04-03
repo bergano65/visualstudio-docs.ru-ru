@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961719"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790333"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Методов отладки и средства, которые помогут вам создавать лучший код
 
@@ -42,7 +42,7 @@ ms.locfileid: "54961719"
 
 Создание приложения:
 
-1. Откройте Visual Studio и выберите **файл > Новый проект**. В разделе **Visual C#** , выберите **Windows Desktop** или **.NET Core**, а затем в средней области выберите **консольное приложение**.
+1. Откройте Visual Studio и выберите **файл** > **New** > **проекта**. В разделе **Visual C#** , выберите **Windows Desktop** или **.NET Core**, а затем в средней области выберите **консольное приложение**.
 
     > [!NOTE]
     > Если шаблон проекта **Консольное приложение** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создание проекта**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем щелкните **Изменить**.
