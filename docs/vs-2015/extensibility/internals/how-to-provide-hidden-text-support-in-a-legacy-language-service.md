@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: поддержка скрытого текста в языковой службе прежних версий | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Поддержка скрытого текста в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991380"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Практическое: поддержка скрытого текста в языковой службе прежних версий
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Практическое руководство. Поддержка скрытого текста в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Можно создавать области скрытого текста в дополнение к структурные области. Области скрытого текста может быть, управляемое клиентом или редактором и используются для полностью скрыть область текста. Редактор отображает скрытой области в виде горизонтальных линий. Примером этого является представлением только скрипт в редакторе HTML.  
@@ -54,4 +49,3 @@ ms.locfileid: "51727239"
         >  Если скрытые области скрыты, редактор автоматически отображает линии вокруг скрытых областей для обозначения их наличия.  
   
     2.  Укажите, является ли область, управляемая клиентом или редактором в `dwBehavior` членами <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Смарт-реализация структуры могут содержать как редактор и управляемая клиентом структуры и области скрытого текста.
-

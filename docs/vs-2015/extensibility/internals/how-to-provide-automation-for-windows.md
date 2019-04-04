@@ -1,29 +1,24 @@
 ---
-title: 'Практическое: Автоматизация для Windows | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Автоматизация для Windows | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d1c16b0688cd5fa07fee8be0296958b23aa8c0ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e15c19ad5f9b0596240f473e078ebb6452c22b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990183"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Практическое: Автоматизация для Windows
+# <a name="how-to-provide-automation-for-windows"></a>Практическое руководство. Автоматизация для окон
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Вы можете предоставить автоматизация для окон документов и средств. Предоставление автоматизации рекомендуется всякий раз, когда вы хотите сделать объекты автоматизации доступными в окне и среде уже не предоставить объект готовые службы автоматизации, как в случае со списком задач.  
@@ -48,4 +43,3 @@ ms.locfileid: "51742340"
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>
-

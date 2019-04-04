@@ -1,14 +1,9 @@
 ---
-title: 'CA2100: Проверьте SQL-запросы для уязвимости системы безопасности | Документация Майкрософт'
-ms.custom: ''
+title: CA2100. Проверка запросов SQL на предмет наличия уязвимостей | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Review SQL queries for security vulnerabilities
 - ReviewSqlQueriesForSecurityVulnerabilities
@@ -21,14 +16,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 167d9be908cef7e597e568a1fa60b4285960ad80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990807"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: проанализируйте SQL-запросы с целью выявления уязвимостей безопасности
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -93,6 +88,3 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="see-also"></a>См. также
  [Общие сведения о безопасности](http://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
-
-
-
