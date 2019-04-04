@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: получить общие сведения о наборе схем с использованием представления графика | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Получить общие сведения о наборе схем с использованием представления графика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3722af4aef2f56d6da1c2a79840c05edd2a87b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 61284d0b94d621c788a4d39fc2672d0778dd5c0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181367"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989537"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Как получить общие сведения о наборе схем с использованием представления графика
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Практическое руководство. Получение общих сведений о наборе схем с использованием представления графика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -33,7 +28,7 @@ ms.locfileid: "49181367"
   
 2.  Нажмите кнопку **использование редактора XML для просмотра и изменения базового файла XML-схемы** ссылку в начальном представлении.  
   
-3.  Скопируйте образец кода XML-схемы из [образец XML-схемы: связи](../xml-tools/sample-xsd-file-relationships.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.  
+3.  Скопируйте образец кода XML-схемы из [образец XML-схемы: Связи](../xml-tools/sample-xsd-file-relationships.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.  
   
 4.  Щелкните правой кнопкой мыши в редакторе XML и выберите **конструктор представлений**.  
   
@@ -46,6 +41,3 @@ ms.locfileid: "49181367"
 7.  Щелкните любой узел в области конструктора, и строка навигатора отобразит расположение выбранного узла в наборе схем.  
   
 8.  Щелкните правой кнопкой любой узел элемента по любому и выберите пункт **Создание образца XML** Чтобы просмотреть документ экземпляра XML.
-
-
-

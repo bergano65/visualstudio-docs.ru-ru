@@ -1,22 +1,20 @@
 ---
 title: Запрашивайте наборы данных | Документация Майкрософт
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989903"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ ms.locfileid: "49890573"
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated записей  
+## <a name="access-related-records"></a>Записей, связанных с доступом к  
  Если таблицы в наборе данных связаны, <xref:System.Data.DataRelation> объект можно сделать связанные записи, доступные в другой таблице. Например, набор данных, содержащий `Customers` и `Orders` таблицы могут быть сделаны доступными.  
   
  Можно использовать <xref:System.Data.DataRelation> объект для поиска связанных записей путем вызова <xref:System.Data.DataRow.GetChildRows%2A> метод <xref:System.Data.DataRow> в родительской таблице. Этот метод возвращает массив связанных дочерних записей. Или можно вызвать <xref:System.Data.DataRow.GetParentRow%2A> метод <xref:System.Data.DataRow> в дочерней таблице. Этот метод возвращает одиночный <xref:System.Data.DataRow> из родительской таблицы.  
@@ -71,7 +69,7 @@ ms.locfileid: "49890573"
  Эта страница содержит примеры использования типизированных наборов данных. Сведения о навигации по связям в нетипизированные наборы данных, см. в разделе [переходы отношений DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Если вы работаете в приложении Windows Forms и используя возможности привязки данных для отображения данных, автоматически созданный конструктором формы может обеспечить достаточную функциональность для вашего приложения. Дополнительные сведения см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). В частности, см. в разделе[как: отображение связанных данные в приложении Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) и [Пошаговое руководство: отображение связанных данных в Windows Forms](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Если вы работаете в приложении Windows Forms и используя возможности привязки данных для отображения данных, автоматически созданный конструктором формы может обеспечить достаточную функциональность для вашего приложения. Дополнительные сведения см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  В следующих примерах кода показано, как для перемещения вверх и вниз по связи в типизированных наборах данных. Использование примеров кода типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданные `FindBy` *PrimaryKey* (`FindByCustomerID`) методы для поиска нужной строки и возврата связанных записей. Примеры компилируются и работают только в том случае, если у вас есть:  
   
@@ -81,7 +79,7 @@ ms.locfileid: "49890573"
   
 - Отношение с именем `FK_Orders_Customers`по две таблицы, доступные в области кода  
   
-  Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.  
+Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Чтобы вернуть дочерние записи, выбранной родительской записи  
   
@@ -96,4 +94,3 @@ ms.locfileid: "49890573"
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

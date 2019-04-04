@@ -1,14 +1,9 @@
 ---
 title: Не удалось подключиться к Microsoft Visual Studio монитора удаленной отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990752"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51733020"
   
 -   Вы можете остановить работу удаленного отладчика и перезапустить его с учетной записью, используемой на локальном компьютере.  
   
--   Удаленный отладчик можно запустить из командной строки с **/ allow \<имя пользователя >** параметр: `msvsmon /allow <username@computer>`  
+-   Удаленный отладчик можно запустить из командной строки с параметром **/allow \<имя_пользователя>** параметр: `msvsmon /allow <username@computer>`  
   
 -   Добавить пользователя в список разрешений удаленного отладчика можно, выбрав пункт **Сервис/Разрешения**.  
   
@@ -90,6 +85,3 @@ ms.locfileid: "51733020"
   
 ## <a name="see-also"></a>См. также  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

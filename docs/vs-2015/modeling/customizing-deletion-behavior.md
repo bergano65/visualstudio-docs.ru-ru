@@ -1,12 +1,9 @@
 ---
 title: Настройка функции удаления | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989261"
 ---
 # <a name="customizing-deletion-behavior"></a>Настройка функции удаления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +143,7 @@ partial class MusicLibDeleteClosure
   
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> вызывается, когда элемент был удален. Он остается в куче CLR, чтобы при необходимости можно было выполнить отмену. При это он теряет связи от другими элементами и удаляется из `store.ElementDirectory`. Для связи роли по-прежнему ссылаются на старых исполнителей роли.`IsDeleted` имеет значение true.  
   
-3. Методы OnDeleting и OnDeleted вызываются, когда пользователь запускает операцию отмены после создания элемента, а также когда предыдущее удаление повторяется в операции повтора. В таких случаях во избежание обновления элементов хранилища используйте метод `this.Store.InUndoRedoOrRollback`. Дополнительные сведения см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Методы OnDeleting и OnDeleted вызываются, когда пользователь запускает операцию отмены после создания элемента, а также когда предыдущее удаление повторяется в операции повтора. В таких случаях во избежание обновления элементов хранилища используйте метод `this.Store.InUndoRedoOrRollback`. Дополнительные сведения см. в разделе [Как Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
    Например, следующий код удаляет альбом, когда удаляется его последняя дочерняя песня:  
   
@@ -303,6 +300,3 @@ partial class NestedShapesSampleDocData
  [Настройка функции копирования](../modeling/customizing-copy-behavior.md)   
  [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)   
  [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

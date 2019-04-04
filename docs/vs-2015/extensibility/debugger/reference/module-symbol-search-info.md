@@ -1,14 +1,9 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Документация Майкрософт
-ms.custom: ''
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - MODULE_SYMBOL_SEARCH_INFO
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e10d7717fe49f3f27c25477b905bf729be923b7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e2cfbaf8c3756bf758956d1f1e5964d8e9f8f0c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989599"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
  Если `bstrVerboseSearchInfo` поле не пусто, то он содержит список пути поиска и результаты поиска. Путь, а затем кнопку с многоточием («...»), а затем результат имеет формат списка. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:  
   
- \<путь >... \<результат > \r\n\<путь >... \<результат > \r\n\<путь >... \<результата >  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  Обратите внимание, что последний элемент последовательности \r\n.  
   
@@ -71,7 +66,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -80,4 +75,3 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="see-also"></a>См. также  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)
-

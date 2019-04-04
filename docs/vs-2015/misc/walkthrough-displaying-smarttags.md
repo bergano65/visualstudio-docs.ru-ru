@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Отображение смарт-тегов | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение смарт-тегов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991672"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Пошаговое руководство. Отображение смарт-тегов
-Смарт-теги устарели и были заменены меню лампочки. См. раздел [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Смарт-теги устарели и были заменены меню лампочки. См. [Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Смарт-теги — это теги в тексте, которые можно развернуть, чтобы отобразить набор действий. Например, при переименовании идентификатора, такого как имя переменной, в проекте Visual Basic или Visual C# под словом появляется красная линия. Если навести на нее указатель, рядом с ним появляется кнопка. Если нажать кнопку, то появляется предлагаемое действие, например **Переименовать IsRead в IsReady**. Если выбрать действие, все упоминания **IsRead** в проекте будут изменены на **IsReady**.  
   
@@ -31,7 +26,7 @@ ms.locfileid: "49939102"
 > [!NOTE]
 >  Аналогичным образом можно реализовать другие виды тегов.  
   
- В этом пошаговом руководстве показано, как создать смарт-тег, который отображается в текущем слове и имеет два предлагаемых действия: **Преобразовать в верхний регистр** и **Преобразовать в нижний регистр**.  
+ Приведенное ниже Пошаговое руководство показывает, как создать смарт-тег, который отображается в текущем слове и имеет два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
@@ -90,7 +85,7 @@ ms.locfileid: "49939102"
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> для создания тега для текущего слова. (Этот метод также вызывает закрытый метод `GetSmartTagActions`, о котором рассказывается ниже.)  
+8.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> для создания тега для текущего слова. (Этот метод также вызывает закрытый метод `GetSmartTagActions` , о котором рассказывается ниже.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,7 +95,7 @@ ms.locfileid: "49939102"
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Объявите событие `SmartTagsChanged`.  
+10. Объявите событие `SmartTagsChanged` .  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -185,7 +180,7 @@ ms.locfileid: "49939102"
   
      Рядом с указателем должна появиться кнопка.  
   
-5.  Если нажать кнопку, должны отобразиться два предлагаемых действия: **Преобразовать в верхний регистр** и **Преобразовать в нижний регистр**. Если выбрать первое действие, все символы текущего слова должны преобразоваться в верхний регистр. Если выбрать второе действие, все символы должны преобразоваться в нижний регистр.  
+5.  При нажатии кнопки должно отображаться два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**. Если выбрать первое действие, все символы текущего слова должны преобразоваться в верхний регистр. Если выбрать второе действие, все символы должны преобразоваться в нижний регистр.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

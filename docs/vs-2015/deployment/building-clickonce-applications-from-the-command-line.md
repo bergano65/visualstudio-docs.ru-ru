@@ -1,14 +1,9 @@
 ---
 title: Построение ClickOnce-приложений из командной строки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990948"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "50220021"
   
  `/target:publish` Команда сообщает MSBuild о необходимости вызова место назначения публикации. Целевой объект публикации зависит от целевой сборки. Это означает, что операция публикации является надмножеством операции построения. Например если вы внесли изменения в один из исходных файлов Visual Basic или C#, соответствующей сборке будет автоматически перестроить с операции публикации.  
   
- Сведения о создании полной [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания, используя средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Сведения о создании полной [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания, используя средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>Создание и построение основные ClickOnce-приложения с помощью MSBuild  
   
@@ -86,7 +81,7 @@ ms.locfileid: "50220021"
 ## <a name="publishing-properties"></a>Свойства публикации  
  При публикации приложения в приведенных выше процедурах, следующие свойства будут вставлены в файле проекта с помощью мастера публикации. Эти свойства непосредственно влияют на способ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] создается приложение.  
   
- В CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -168,16 +163,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Параметр URL-адрес|Описание|  
 |----------------|-----------------|  
 |`PublishURL`|Требуется, если при публикации приложения ClickOnce на веб-сайт.|  
-|`InstallURL`|Необязательный. Задайте этот параметр URL-адрес, если сайта установки отличается от `PublishURL`. Например, можно задать `PublishURL` путь FTP и набор `InstallURL` для URL-адрес.|  
-|`SupportURL`|Необязательный. Задайте этот параметр URL-адрес, если на сайт службы поддержки отличается от `PublishURL`. Например, можно задать `SupportURL` для веб-сайта поддержки пользователей компании.|  
-|`UpdateURL`|Необязательный. Задайте этот параметр URL-адрес, если расположение обновлений отличается от `InstallURL`. Например, можно задать `PublishURL` путь FTP и набор `UpdateURL` для URL-адрес.|  
+|`InstallURL`|Необязательный параметр. Задайте этот параметр URL-адрес, если сайта установки отличается от `PublishURL`. Например, можно задать `PublishURL` путь FTP и набор `InstallURL` для URL-адрес.|  
+|`SupportURL`|Необязательный параметр. Задайте этот параметр URL-адрес, если на сайт службы поддержки отличается от `PublishURL`. Например, можно задать `SupportURL` для веб-сайта поддержки пользователей компании.|  
+|`UpdateURL`|Необязательный параметр. Задайте этот параметр URL-адрес, если расположение обновлений отличается от `InstallURL`. Например, можно задать `PublishURL` путь FTP и набор `UpdateURL` для URL-адрес.|  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Разбор примера: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-
+ [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

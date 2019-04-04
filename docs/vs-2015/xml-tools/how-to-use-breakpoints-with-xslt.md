@@ -1,32 +1,27 @@
 ---
-title: 'Практическое: использование точек останова в XSLT | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование точек останова в XSLT | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990181"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Практическое руководство. Использование точек останова в XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Практическое руководство. использовать точки останова в XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Точки останова можно задать в таблице стилей XSLT или в исходном XML-документе. Если задать точку останова на теге, то при выполнении точка останова переходит к следующему оператору, у которого есть сведения исходной строки.  
   
- Дополнительные сведения см. в разделе [основы отладки: точки останова](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Дополнительные сведения см. в разделе [основы отладки: Точки останова](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Задание точки останова в таблице стилей  
  Точки останова можно задать на открывающих тегах, закрывающих тегах и текстовых узлах таблицы стилей XSLT. Точки останова можно также задать в коде блока скрипта.  
@@ -63,5 +58,4 @@ ms.locfileid: "49233458"
 5.  Нажмите кнопку **Отладка XSL** кнопки на панели инструментов редактора XML.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-
+ [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

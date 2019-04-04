@@ -1,23 +1,20 @@
 ---
 title: Создание доменного языка Windows на основе форм | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 452318ff-8ecf-46d0-8ca0-4013d0cdafaf
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a79ffda3a044424cc863472c32d62228e90cc6fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991114"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +121,9 @@ Windows Forms можно использовать для отображения 
 
 1.  На **данных** меню, выберите **Показать источники данных**.  
 
-     **Источников данных** откроется окно.  
+     Открывается окно **Источники данных**.  
 
-     Выберите **добавить новый источник данных**. **Мастер настройки источника данных** открывает.  
+     Выберите **добавить новый источник данных**. Открывается **мастер настройки источника данных**.  
 
 2.  Выберите **объект**, **Далее**.  
 
@@ -336,6 +333,3 @@ private void NewSheepButton_Click(object sender, EventArgs e)
  [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
  [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

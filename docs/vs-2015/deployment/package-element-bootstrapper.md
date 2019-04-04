@@ -1,14 +1,9 @@
 ---
 title: '&lt;Пакет&gt; элемент (загрузчик) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991368"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Пакет&gt; элемент (установщик)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,9 +148,9 @@ ms.locfileid: "49298679"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Culture`|Обязательно. Определяет язык и региональные параметры для этого пакета, который определяет язык, который будет использоваться. Этот атрибут является ключом к `Strings` элемент, который содержит строки, зависящие от языка и региональных параметров для названия продуктов и сообщений об ошибках во время установки.|  
-|`Name`|Обязательно. Имя пакета, который отображается для разработчика в средстве, например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Этот атрибут является ключом к `Strings` элемент, который должен содержать `String` элемент с `Name` и `Culture` свойства заданы в соответствии с `Name` и `Culture` свойства `Package`.|  
-|`LicenseAgreement`|Необязательный. Задает имя файла в распространяемом пакете, который содержит лицензионное соглашение (EULA).  Этот файл может быть обычный текст (txt) или в формате RTF. (.rtf)|  
+|`Culture`|Обязательный. Определяет язык и региональные параметры для этого пакета, который определяет язык, который будет использоваться. Этот атрибут является ключом к `Strings` элемент, который содержит строки, зависящие от языка и региональных параметров для названия продуктов и сообщений об ошибках во время установки.|  
+|`Name`|Обязательный. Имя пакета, который отображается для разработчика в средстве, например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Этот атрибут является ключом к `Strings` элемент, который должен содержать `String` элемент с `Name` и `Culture` свойства заданы в соответствии с `Name` и `Culture` свойства `Package`.|  
+|`LicenseAgreement`|Необязательный параметр. Задает имя файла в распространяемом пакете, который содержит лицензионное соглашение (EULA).  Этот файл может быть обычный текст (txt) или в формате RTF. (.rtf)|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показан файл полного пакета для распространения [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  
@@ -197,6 +192,3 @@ ms.locfileid: "49298679"
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)
-
-
-

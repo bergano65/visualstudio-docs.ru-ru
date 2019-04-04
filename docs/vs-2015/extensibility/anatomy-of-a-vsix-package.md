@@ -1,14 +1,9 @@
 ---
 title: Составляющие пакета VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991333"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51806988"
 >  Имена файлов, включенных в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Манифест VSIX  
- Манифест VSIX содержит сведения о расширения должны быть установлены и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX, см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ Манифест VSIX содержит сведения о расширения должны быть установлены и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX, см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  Должен иметь имя манифеста VSIX `extension.vsixmanifest` когда он включен в VSIX-файл.  
   
@@ -50,7 +45,7 @@ ms.locfileid: "51806988"
   
  Если пользователь пытается установить расширение, которое имеет зависимости, то установщик проверяет, что необходимые сборки установлены в системе пользователя. Если необходимые сборки не найдены, **расширения и обновления** отображает список сборок, отсутствует.  
   
- Если манифест расширения включает один или несколько [ссылку](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) элементов, **расширения и обновления** сравнивает манифесте каждой ссылки в расширения, установленные в системе и устанавливает ссылки на расширения, если они еще не установлены. Если установлена более ранняя версия модуля, на который указывает ссылка, новая версия заменяет его.  
+ Если манифест расширения включает один или несколько [ссылку](http://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) элементов, **расширения и обновления** сравнивает манифесте каждой ссылки в расширения, установленные в системе и устанавливает ссылки на расширения, если они еще не установлены. Если установлена более ранняя версия модуля, на который указывает ссылка, новая версия заменяет его.  
   
  Если проект в решении нескольких проектов содержит ссылку на другой проект в том же решении, пакет VSIX содержит зависящие от этого проекта. Это поведение можно переопределить, выбрав ссылку для внутреннего проекта, а затем в **свойства** окно, задание **выходной группы включены в VSIX** свойства `BuiltProjectOutputGroup`.  
   
@@ -59,10 +54,9 @@ ms.locfileid: "51806988"
 ## <a name="installation-location"></a>Расположение установки  
  Во время установки **расширения и обновления** ищет содержимое пакета VSIX в папке % LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- По умолчанию установки применяется только к текущему пользователю, так как % LocalAppData % является каталогом конкретного пользователя. Тем не менее если задать [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста для `True`, расширение будет установлено в... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions и будут доступны для всех пользователей компьютера.  
+ По умолчанию установки применяется только к текущему пользователю, так как % LocalAppData % является каталогом конкретного пользователя. Тем не менее если задать [AllUsers](http://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста для `True`, расширение будет установлено в... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions и будут доступны для всех пользователей компьютера.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Файл [Content_Types] .xml определяет типы файлов в развернутом VSIX-файл. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. в разделе [структура Content_types\].xml файл](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Файл [Content_Types] .xml требуется по Open Packaging Conventions (OPC) standard. Дополнительные сведения об OPC см. в разделе [OPC: новый стандартный для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.
-
+ Файл [Content_Types] .xml требуется по Open Packaging Conventions (OPC) standard. Дополнительные сведения об OPC см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.

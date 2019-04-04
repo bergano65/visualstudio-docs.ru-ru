@@ -1,14 +1,9 @@
 ---
 title: Структурирование в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751535"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989520"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Структурирование в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Структурирование позволяет свернуть сложную программу в обзор или структуры. Например в C# можно свернуть все методы в одну строку, содержащую только сигнатуру метода. Кроме того структуры и классы можно свернуть, чтобы отобразить только имена структур и классов. Из единственного метода сложную логику можно свернуть, чтобы показать Общая последовательность действий, отображая только первая часть инструкции, такие как `foreach`, `if`, и `while`.  
   
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: структурирование](../../extensibility/walkthrough-outlining.md).  
+ Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: структуризация](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
 >  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
@@ -127,4 +122,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>См. также  
  [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

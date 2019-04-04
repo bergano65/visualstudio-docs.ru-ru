@@ -1,26 +1,21 @@
 ---
 title: Подключаемые модули управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745460"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991285"
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51745460"
  Описывает, как отключить предупреждения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Образец подключаемого модуля управления источника](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Образец подключаемого модуля управления источника](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Предоставляет пример функции подключаемого модуля системы управления версиями.  
   
  [Руководство по тестированию подключаемых модулей системы управления версиями](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ ms.locfileid: "51745460"
   
  [Справочник по пакету SDK для Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
  Представляет список справочных разделов.
-
