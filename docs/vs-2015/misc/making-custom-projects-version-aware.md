@@ -1,23 +1,18 @@
 ---
 title: Обеспечение поддержки версий в пользовательских проектах | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989262"
 ---
 # <a name="making-custom-projects-version-aware"></a>Обеспечение поддержки версий в пользовательских проектах
 В своей системе пользовательских проектов вы можете разрешить проектам данного типа загружаться в нескольких версиях Visual Studio. Вы также можете запретить проектам этого типа загружаться в более ранней версии Visual Studio. Кроме того, можно обеспечить идентификацию проекта для более поздней версии, если этот проекта необходимо восстановить, преобразовать или включить в список устаревших.  
@@ -29,17 +24,17 @@ ms.locfileid: "49833009"
   
  Как автор системы проектов реализуйте метод `UpgradeProject_CheckOnly` (при помощи интерфейса `IVsProjectUpgradeViaFactory4` ), чтобы обеспечить проверку возможности обновления для пользователей этой системы. Когда пользователь открывает проект, вызывается этот метод, чтобы определить, нуждается ли проект в исправлении перед его загрузкой. Требования возможного обновления перечислены в разделе `VSPUVF_REPAIRFLAGS`, и они включают следующие возможности.  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: исправление не требуется.  
+1.  `SPUVF_PROJECT_NOREPAIR`: Исправление не требуется.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: делает проект совместимым с более ранней версией без проблем, с которыми вы могли сталкиваться в предыдущих версиях продукта.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Делает проект совместимым с более ранней версией без проблем, с которыми вы может сталкиваться в предыдущих версиях продукта.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: обеспечивает обратную совместимость проекта, но с некоторым риском возникновения проблем, с которыми вы могли сталкиваться в предыдущих версиях продукта. Например, проект не будет совместимым, если он зависит от разных версий пакета SDK.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Делает проект обратную совместимость, но с некоторым риском возникновения проблем, которые вы могли сталкиваться в предыдущих версиях продукта. Например, проект не будет совместимым, если он зависит от разных версий пакета SDK.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: делает проект несовместимым с более ранней версией.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Делает проект несовместимым с более ранней версии.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: указывает, что текущая версия не поддерживает этот проект.  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Указывает, что текущая версия не поддерживает этот проект.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: указывает, что этот проект больше не поддерживается.  
+6.  `VSPUVF_PROJECT_DEPRECATED`: Указывает, что этот проект больше не поддерживается.  
   
 > [!NOTE]
 >  Чтобы избежать путаницы, не сочетайте флаги обновления при их установке. Например, не следует создавать неоднозначное состояние обновления, такое как `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -65,7 +60,7 @@ ms.locfileid: "49833009"
   
      Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Вызовите в этом компоненте метод `IVsAppCompat.AskForUserConsentToBreakAssetCompat` и передайте в него массив интерфейсов `IVsHierarchy`, представляющих интересующие проекты.  
+2.  Вызовите в этом компоненте метод `IVsAppCompat.AskForUserConsentToBreakAssetCompat`и передайте в него массив интерфейсов `IVsHierarchy` , представляющих интересующие проекты.  
   
      Этот метод имеет следующую сигнатуру:  
   
@@ -98,12 +93,12 @@ ms.locfileid: "49833009"
     HRESULT GetCurrentDesignTimeCompatVersion([out] BSTR * pbstrCurrentDesignTimeCompatVersion)  
     ```  
   
-     Затем метод BreakAssetCompatibility вызывает метод `IVsHierarchy.SetProperty`, чтобы задать в качестве значения корневого свойства `VSHPROPID_MinimumDesignTimeCompatVersion` строку версии, полученную на предыдущем шаге.  
+     Затем метод BreakAssetCompatibility вызывает метод `IVsHierarchy.SetProperty` , чтобы задать в качестве значения корневого свойства `VSHPROPID_MinimumDesignTimeCompatVersion` строку версии, полученную на предыдущем шаге.  
   
      Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Вы должны реализовать свойство `VSHPROPID_MinimumDesignTimeCompatVersion`, чтобы пометить проект как совместимый или несовместимый. Например, если система проектов использует файл проекта MSBuild, добавьте в этот файл проекта свойство сборки `<MinimumVisualStudioVersion>` , имеющее значение, равное значению соответствующего свойства `VSHPROPID_MinimumDesignTimeCompatVersion` .  
+>  Вы должны реализовать свойство `VSHPROPID_MinimumDesignTimeCompatVersion` , чтобы пометить проект как совместимый или несовместимый. Например, если система проектов использует файл проекта MSBuild, добавьте в этот файл проекта свойство сборки `<MinimumVisualStudioVersion>` , имеющее значение, равное значению соответствующего свойства `VSHPROPID_MinimumDesignTimeCompatVersion` .  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Определение несовместимости проекта  
  Загрузка проекта, который несовместим с текущей версией Visual Studio, должна быть запрещена. Более того, несовместимый проект не может быть обновлен или исправлен. Таким образом, проект необходимо проверять на совместимость дважды: в первый раз, когда он рассматривается для обновления или исправления, и во второй раз перед его загрузкой.  

@@ -1,8 +1,8 @@
 ---
-title: Доступ к частным облакам Azure с помощью Visual Studio | Документация Майкрософт
+title: Доступ к частным облакам Azure
 description: Узнайте, как получить доступ к ресурсам частного облака с помощью Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,38 +11,37 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 216b85e0ebf42b79c388ce217d548f2dce3c86b6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab0b6167a91f6cf6f5aecdcbcfb03bab62b96b6b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002964"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989879"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Доступ к частным облакам Azure с помощью Visual Studio
 
-По умолчанию Visual Studio поддерживает конечные точки REST облаков Azure. В этой статье вы узнаете, как использовать сертификат частного облака для обращения и взаимодействия с частным облаком из Visual Studio.
+По умолчанию Visual Studio поддерживает конечные точки REST облаков Azure. В этой статье вы узнаете, как использовать сертификат частного облака для доступа к частному облаку и взаимодействия с ним через Visual Studio.
 
-1. На портале Azure для частного облака скачайте файл параметров публикации или обратитесь к администратору для файла параметров публикации. (Файл с расширением `.publishsettings`.)
+1. Скачайте файл параметров публикации с портала Azure для частного облака или запросите этот файл у администратора. (Файл с расширением `.publishsettings`.)
 
-1. В Visual Studio **обозревателя серверов**, щелкните правой кнопкой мыши **Azure** узел и выберите **управление подписками и их фильтрация**.
+1. В **обозревателе сервера** Visual Studio щелкните правой кнопкой мыши узел **Azure**, а затем выберите **Manage and Filter Subscriptions** (Управление подписками и их фильтрация).
 
-    ![Управление подписками команды](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
+    ![Команда "Управление подписками"](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. В **управление подписками Microsoft Azure** диалоговом окне выберите **сертификаты** , а затем установите **импорта**.
+1. В диалоговом окне **Управление подписками Microsoft Azure** выберите вкладку **Сертификаты**, затем нажмите кнопку **Импорт**.
 
     ![Импорт сертификатов Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. В **Импорт подписок Microsoft Azure** диалоговом окне выберите **Обзор**.
+1. В диалоговом окне **Импорт подписок Microsoft Azure** нажмите кнопку **Обзор**.
 
-    ![Кнопка в диалоговом окне Импорт подписок Microsoft Azure "Обзор"](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
+    ![Кнопка "Обзор" в диалоговом окне "Импорт подписок Microsoft Azure"](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. В **откройте** диалоговое окно, перейдите в каталог, где был сохранен файл параметров публикации, выберите файл, а затем выберите **откройте**.
+1. В диалоговом окне **Открытие** найдите каталог, в котором вы сохранили PUBLISHSETTINGS-файл, выберите его, а затем нажмите кнопку **Открыть**.
 
-    ![Выберите файл параметров публикации](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
+    ![Выбор PUBLISHSETTINGS-файла](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. Вернувшись в **Импорт подписок Microsoft Azure** диалоговом окне выберите **импорта**.
+1. Вернувшись в диалоговое окно **Импорт подписок Microsoft Azure** нажмите кнопку **Импорт**.
 
-    ![Импортировать файл параметров публикации](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
+    ![Импорт PUBLISHSETTINGS-файла](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 
-    Сертификаты импортируются из PUBLISHSETTINGS файла в Visual Studio, и теперь вы можете работать с ресурсами частного облака.
-
+    Сертификаты импортируются из PUBLISHSETTINGS-файла в Visual Studio, и теперь вы можете работать с ресурсами частного облака.

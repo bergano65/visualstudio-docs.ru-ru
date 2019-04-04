@@ -1,26 +1,21 @@
 ---
 title: IDebugGenericFieldDefinition | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 942bca219de30cb39d818519f29010d4a79b1380
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224b9a5c0e2412b9ae89c1767348b8fbd1a528be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991223"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugGenericFieldDefinition : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Создает экземпляр поля задан массив аргументов типа.|  
 |[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Получает параметры типа, учитывая количество параметров.|  
@@ -48,4 +43,3 @@ IDebugGenericFieldDefinition : IUnknown
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
-

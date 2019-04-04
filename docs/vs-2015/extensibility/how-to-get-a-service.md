@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: доступ к службе | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Доступ к службе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991182"
 ---
-# <a name="how-to-get-a-service"></a>Практическое: Получение службы
+# <a name="how-to-get-a-service"></a>Практическое руководство. Получение службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Часто требуется получить службы Visual Studio для доступа к другой функции. Как правило службы Visual Studio предоставляет один или несколько интерфейсов, которые можно использовать. Большинство служб можно получить из VSPackage.  
@@ -46,7 +41,7 @@ ms.locfileid: "51785070"
   
     ```  
   
-     Этот код получает службу SVsActivityLog и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+     Этот код получает службу SVsActivityLog и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Пример см. в статье [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
 4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51785070"
   
  Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод полагается на поставщик кэшированных служб, который инициализируется первый раз, любой пакет VSPackage на основе <xref:Microsoft.VisualStudio.Shell.Package> помещен в узел.  
   
- Поскольку VSPackage конструктор вызывается в том случае, прежде чем поместить VSPackage, глобальных служб обычно недоступен из конструктора VSPackage. См. в разделе [как: Устранение неполадок служб](../extensibility/how-to-troubleshoot-services.md) решение этой проблемы.  
+ Поскольку VSPackage конструктор вызывается в том случае, прежде чем поместить VSPackage, глобальных служб обычно недоступен из конструктора VSPackage. См. практическое руководство по [ Устранение неполадок в службах](../extensibility/how-to-troubleshoot-services.md) решение этой проблемы.  
   
  Ниже приведен пример способа для получения службы в окно инструментов или другого элемента не VSPackage.  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: предоставить службу](../extensibility/how-to-provide-a-service.md)   
+ [Практическое руководство. Предоставляет службу](../extensibility/how-to-provide-a-service.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)
-

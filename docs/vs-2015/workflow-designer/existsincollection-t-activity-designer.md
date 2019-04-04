@@ -1,11 +1,8 @@
 ---
 title: ExistsInCollection&lt;T&gt; конструктора действий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fa4de7e599e2707e1b949536c1d94e32e3eb33e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 263bbf16c72bab5a42dc0ba1465d4c7062333071
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989767"
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; конструктора действий
 **ExistsInCollection\<T >** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.ExistsInCollection%601> действия.  
@@ -38,13 +35,13 @@ ms.locfileid: "49177727"
 |Имя свойства|Обязательно|Использование|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ExistsInCollection%601>. Значение по умолчанию — ExistsInCollection\<Int32 >. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Да|Элемент для добавления в коллекцию\<T >. Этот элемент имеет тип *T* имеет тип *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|  
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Элемент для добавления в коллекцию\<T >. Этот элемент имеет тип *T* имеет тип *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|  
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Коллекция, в которую следует добавить элемент. Эта коллекция имеет тип **ICollection\<TypeArgument >.** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|  
-|*TypeArgument*|Да|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию это *TypeArgument* установлен тип **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|  
+|*TypeArgument*|True|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию это *TypeArgument* установлен тип **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|  
 |<xref:System.Activities.Activity%601.Result%2A>|False|Значение, которое указывает, содержится ли в коллекции указанный объект. Чтобы указать переменную, к которой необходимо привязать результат, введите переменную Visual Basic в таблице свойств.|  
   
 ## <a name="see-also"></a>См. также  
  [Коллекции](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
  [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
- [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)
+ [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

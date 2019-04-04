@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: отладка исполняемого файла, не в состав решения Visual Studio | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Отладка исполняемого файла, не в состав решения Visual Studio | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990746"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio.
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Практическое руководство. Отладка исполняемого файла, не в состав решения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Иногда требуется отладка исполняемого файла, не являющегося частью проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это может быть исполняемый файл, созданный вами без использования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или полученный от кого–нибудь еще.  
@@ -73,7 +68,4 @@ ms.locfileid: "51798668"
 ## <a name="see-also"></a>См. также  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [DBG-файлы](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG-файлы](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

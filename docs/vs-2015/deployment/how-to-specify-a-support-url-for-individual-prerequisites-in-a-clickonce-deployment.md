@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990108"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Объект [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания можно проверить ряд необходимых условий, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] для запуска приложения. К ним относятся требуемая Минимальная версия [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], тем не менее, не может выполнить любые из этих предварительных требований; Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее, почему произошел сбой установки.  
@@ -67,13 +62,13 @@ ms.locfileid: "49831579"
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
     ```  
   
-5.  Необязательный. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application файл) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
+5.  Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application файл) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
   
 6.  .NET Framework 4 перед началом добавления `supportUrl` атрибут `compatibleFrameworks` элемента:  
   
@@ -84,17 +79,14 @@ ms.locfileid: "49831579"
     </compatibleFrameworks>  
     ```  
   
-7.  Как только вы вручную изменить манифест приложения, необходимо повторно подписать манифест приложения с помощью сертификата, а затем обновить и повторно подписать манифест развертывания. Необходимо использовать Mage.exe или MageUI.exe из набора SDK средств для выполнения этой задачи, как при создании этих файлов с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] стирает внесенные вручную. Дополнительные сведения об использовании Mage.exe для повторной подписи манифестов см. в разделе [как: RE-Sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Как только вы вручную изменить манифест приложения, необходимо повторно подписать манифест приложения с помощью сертификата, а затем обновить и повторно подписать манифест развертывания. Необходимо использовать Mage.exe или MageUI.exe из набора SDK средств для выполнения этой задачи, как при создании этих файлов с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] стирает внесенные вручную. Дополнительные сведения об использовании Mage.exe для повторной подписи манифестов см. в разделе [как: Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
  URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для запуска в режиме частичного доверия.  
   
 ## <a name="see-also"></a>См. также  
  [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [Пошаговое руководство. Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > элемент](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
-
-
-
