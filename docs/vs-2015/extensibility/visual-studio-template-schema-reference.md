@@ -1,14 +1,9 @@
 ---
 title: Справочник по схеме шаблонов Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980232"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Справочник по схеме шаблонов Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,4 +83,4 @@ ms.locfileid: "51817429"
   
 ## <a name="see-also"></a>См. также  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое руководство. Создание начальных наборов](../ide/how-to-create-starter-kits.md)
+ [Практическое руководство. создание начальных наборов](../ide/how-to-create-starter-kits.md)
