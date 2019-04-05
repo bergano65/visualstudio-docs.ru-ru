@@ -1,27 +1,22 @@
 ---
 title: Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e40d52b4b5f194c04b9b46326a7d4d302c871cb5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce312d7951f4c1be720604c006f9afcd63f364d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980725"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51755743"
   
  \<VSTemplate >  
  \<TemplateData >  
- \<RequiredFrameworkVersion >  
+ \<RequiredFrameworkVersion>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51755743"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
   
@@ -65,4 +60,3 @@ ms.locfileid: "51755743"
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
-

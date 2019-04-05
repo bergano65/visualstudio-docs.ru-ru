@@ -1,24 +1,19 @@
 ---
 title: Создание пакета средств разработки программного обеспечения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993749"
 ---
 # <a name="creating-a-software-development-kit"></a>Создание пакета средств разработки для программного обеспечения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +52,13 @@ ms.locfileid: "51723673"
                         \[arch]  
 ```  
   
-|Узел|Описание:|  
+|Узел|Описание|  
 |----------|-----------------|  
 |Папка "Ссылки"|Содержит двоичные файлы, содержащие интерфейсы API, которые можно было кодировать с. Могут включать файлы метаданных Windows (WinMD) или сборки.|  
 |DesignTime папки|Содержит файлы, которые необходимы только во время предварительного-run и отладки. Могут включать документы XML, библиотеки, заголовки, двоичные файлы времени разработки для элементов, MSBuild артефакты и т. д<br /><br /> Документы XML в идеальном случае помещается в папке \DesignTime, однако документация XML для ссылок будет размещаться вместе с файлом ссылку в Visual Studio. Например, XML-документации для \References ссылку\\[конфигурации]\\[arch]\sample.dll будет \References\\[конфигурации]\\[arch]\sample.xml и локализованная версия этого документа будут \References\\[конфигурации]\\[атрибут arch]\\[locale]\sample.xml.|  
 |Папка конфигурации|Может существовать только три папки: отладка, розничной торговли и CommonConfiguration. Авторы пакета SDK можно поместить свои файлы в CommonConfiguration, если следует использовать тот же набор файлов пакета SDK, независимо от конфигурации, на которой будет работать потребителя пакета SDK.|  
-|Архитектура папки|Может существовать папка любой поддерживаемой архитектуры. Visual Studio поддерживает следующие варианты архитектуры: x86, x64, ARM и neutral. Примечание: Win32 сопоставляется x86, а для нейтрального AnyCPU.<br /><br /> MSBuild выполняет только при выполнении \CommonConfiguration\neutral поиск пакетов SDK платформы.|  
-|SDKManifest.xml|Этот файл описывает, как Visual Studio следует использовать пакет SDK. Просмотрите манифест, пакет SDK для [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Отображаемое имя:** значение, которое обозревателя объектов отображаются в списке просмотра.<br /><br /> **PlatformIdentity:** наличие этого атрибута сообщает Visual Studio и MSBuild, пакет SDK пакет SDK платформы и не должны копироваться ссылки, добавленные из его локально.<br /><br /> **TargetFramework:** этот атрибут используется в Visual Studio, чтобы убедиться, что только проекты, предназначенные же платформы, как указано в значении этого атрибута можно использовать пакет SDK.<br /><br /> **MinVSVersion:** этот атрибут используется в Visual Studio для использования только пакеты SDK, которые применяются к нему.<br /><br /> **Ссылка:** этого атрибута должно быть указано для только эти ссылки, которые содержат элементы управления. Сведения о том, как указать, содержит ли ссылка элементы управления см. в разделе ниже.|  
+|Архитектура папки|Может существовать папка любой поддерживаемой архитектуры. Visual Studio поддерживает следующие варианты архитектуры: x86, x64, ARM и neutral. Примечание. Win32 сопоставляется x86, а AnyCPU для нейтрального.<br /><br /> MSBuild выполняет только при выполнении \CommonConfiguration\neutral поиск пакетов SDK платформы.|  
+|SDKManifest.xml|Этот файл описывает, как Visual Studio следует использовать пакет SDK. Просмотрите манифест, пакет SDK для [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Отображаемое имя:** Значение, в обозревателе объектов отображаются в списке просмотра.<br /><br /> **PlatformIdentity:** Наличие этого атрибута сообщает Visual Studio и MSBuild, что пакет SDK платформы SDK и что ссылки, добавленные из его не следует скопировать локально.<br /><br /> **TargetFramework:** Этот атрибут используется в Visual Studio, чтобы убедиться, что только проекты, предназначенные же платформы, как указано в значении этого атрибута можно использовать пакет SDK.<br /><br /> **MinVSVersion:** Этот атрибут используется в Visual Studio для использования только пакеты SDK, которые применяются к нему.<br /><br /> **Справочные материалы.** Этот атрибут должен быть указано для только эти ссылки, которые содержат элементы управления. Сведения о том, как указать, содержит ли ссылка элементы управления см. в разделе ниже.|  
   
 ##  <a name="ExtensionSDKs"></a> Пакеты SDK расширений  
  В следующих разделах, что необходимо сделать, чтобы развернуть пакет SDK расширения.  
@@ -133,7 +128,7 @@ ms.locfileid: "51723673"
   
      Справочник по XML-документов размещаются в каталоге файла ссылки. Например, справочный документ XML для **\References\\< config\>\\< arch\>\sample.dll** сборка является **\References\\ < config\>\\< arch\>\sample.xml**, и локализованная версия этого документа является **\References\\< config\>\\< arch\>\\< языкового стандарта\>\sample.xml**.  
   
-5.  Папка конфигурации: три вложенные папки: отладка, розничной торговли и CommonConfiguration. Авторы пакета SDK можно поместить свои файлы в CommonConfiguration, когда следует использовать тот же набор файлов пакета SDK, независимо от конфигурации мишенью для потребителя пакета SDK.  
+5.  Папка конфигурации: три вложенные папки: Отладка, розничной торговли и CommonConfiguration. Авторы пакета SDK можно поместить свои файлы в CommonConfiguration, когда следует использовать тот же набор файлов пакета SDK, независимо от конфигурации мишенью для потребителя пакета SDK.  
   
 6.  Архитектура папку: поддерживаются следующие варианты архитектуры: x86, x64, ARM, нейтральную. Win32 сопоставляется x86, а AnyCPU для нейтрального.  
   
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  Отображаемое имя: значение, которое появляется в диспетчере ссылок, обозреватель решений, обозреватель объектов и других местах в пользовательском интерфейсе для Visual Studio.  
   
-2.  ProductFamilyName: Общий пакет SDK имя продукта. Например [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK называется «Microsoft.WinJS.1.0» и «Microsoft.WinJS.2.0», которые относятся к одному семейству семейства продуктов пакета SDK, «Microsoft.WinJS». Этот атрибут позволяет Visual Studio и MSBuild установить нужное соединение. Если этот атрибут не существует, имя пакета SDK используется как имя семейства продуктов.  
+2.  ProductFamilyName: Общее имя продукта SDK. Например [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK называется «Microsoft.WinJS.1.0» и «Microsoft.WinJS.2.0», которые относятся к одному семейству семейства продуктов пакета SDK, «Microsoft.WinJS». Этот атрибут позволяет Visual Studio и MSBuild установить нужное соединение. Если этот атрибут не существует, имя пакета SDK используется как имя семейства продуктов.  
   
 3.  FrameworkIdentity: указана зависимость от одного или нескольких библиотек компонентов Windows, значение этого атрибута помещается в манифест принимающего приложения. Этот атрибут применяется только к библиотеки компонентов Windows.  
   
@@ -174,9 +169,9 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 5.  MinVSVersion: минимальная версия Visual Studio.  
   
-6.  MaxPlatformVerson: Максимальная целевая версия платформы следует использовать для указания версии платформы, на которых ваш пакет SDK расширений не будет работать. Например пакет среды выполнения Microsoft Visual C++ v11.0 должны ссылаться только проекты Windows 8. Таким образом MaxPlatformVersion проекта Windows 8 — 8.0. Это означает, что диспетчер ссылок отфильтровывает пакета среды выполнения Microsoft Visual C++ для проекта Windows 8.1 и MSBuild вызывает ошибку при [!INCLUDE[win81](../includes/win81-md.md)] проект ссылается на нее. Примечание: этот элемент поддерживается начиная с версии [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
+6.  MaxPlatformVerson: Максимальная целевая версия платформы должен использоваться для указания версии платформы, на которых ваш пакет SDK расширений не будет работать. Например пакет среды выполнения Microsoft Visual C++ v11.0 должны ссылаться только проекты Windows 8. Таким образом MaxPlatformVersion проекта Windows 8 — 8.0. Это означает, что диспетчер ссылок отфильтровывает пакета среды выполнения Microsoft Visual C++ для проекта Windows 8.1 и MSBuild вызывает ошибку при [!INCLUDE[win81](../includes/win81-md.md)] проект ссылается на нее. Примечание: этот элемент поддерживается начиная с версии [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
-7.  AppliesTo: указывает пакеты SDK, доступные в диспетчере ссылок, указав применимые типы проектов Visual Studio. Распознаются девять значений: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, управляемый и машинный код. Автор пакета SDK можно использовать и ("+"), или («&#124;»), а не (»!») Операторы выбора точно области типов проектов, которые применяются к пакету SDK.  
+7.  AppliesTo: указывает пакеты SDK, доступные в диспетчере ссылок, указав применимые типы проектов Visual Studio. Распознаются девять значений: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, управляемым и машинный код. Автор пакета SDK можно использовать и ("+"), или («&#124;»), а не (»!») Операторы выбора точно области типов проектов, которые применяются к пакету SDK.  
   
      WindowsAppContainer идентифицирует проекты для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений.  
   
@@ -273,4 +268,3 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
  [Пошаговое руководство: Создание пакета SDK с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
-

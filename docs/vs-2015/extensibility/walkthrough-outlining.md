@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Структурирование | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Структурирование | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993906"
 ---
-# <a name="walkthrough-outlining"></a>Пошаговое руководство. Структурирование
+# <a name="walkthrough-outlining"></a>Пошаговое руководство. Структуризация
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете реализовать функции на основе языка, такие как структурирование, определив типы областей текста, которые вы хотите развернуть или свернуть. Можно определить регионы в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и применить определение области только этот тип или определения области можно применить в существующий тип содержимого (например, «text»). В этом пошаговом руководстве показано, как для определения и отображения областей структуры.  
@@ -139,5 +134,4 @@ ms.locfileid: "51805272"
 4.  Должна существовать область структуры, включающий как фигурные скобки. Можно щелкнуть знак «минус» слева от открывающую фигурную скобку, чтобы свернуть область структуры. Если область свернута, символ многоточия (...) должен находиться слева от свернутой области, а всплывающее окно, содержащее текст **текст при наведении** должно появляться при перемещении указателя мыши на многоточие.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
