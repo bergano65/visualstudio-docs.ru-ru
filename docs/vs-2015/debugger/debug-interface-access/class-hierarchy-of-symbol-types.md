@@ -1,14 +1,9 @@
 ---
 title: Класс иерархия символьных типов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c400479f761cb7d1bbe02c1aedade916da5596a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ece5c23a04901eaf0c17e7dfbf59f1ce7c5ccfa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979436"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Иерархия классов символьных типов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51793039"
   
 ## <a name="symbol-types"></a>Типы символов  
   
-|Тип символа|Описание:|  
+|Тип символа|Описание|  
 |-----------------|-----------------|  
 |[UDT](../../debugger/debug-interface-access/udt.md)|Символ, используемый для представления каждого класса, структуры и объединения.|  
 |[Enum (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Символ для перечислимых типов.|  
@@ -57,6 +52,3 @@ ms.locfileid: "51793039"
  [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)   
  [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
-
-
-

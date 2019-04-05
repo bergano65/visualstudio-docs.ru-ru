@@ -1,12 +1,9 @@
 ---
 title: 'UML-схемы компонентов: Рекомендации | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992367"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>UML-схемы компонентов: правила работы
+# <a name="uml-component-diagrams-guidelines"></a>UML-схемы компонентов: Рекомендации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio можно нарисовать *схема компонентов* чтобы показать структуру программной системы. Демонстрационные видеоматериалы см. в разделе [разработке физической структуры с помощью схем компонентов](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -49,13 +46,13 @@ ms.locfileid: "51801481"
   
 |Другая схема|Помогает обсуждать следующие аспекты конструкции и передавать сведения о них|  
 |-------------------|--------------------------------------------------------------------|  
-|Схема последовательностей UML|-Взаимодействие между компонентами системы<br />-Взаимодействий между частями внутри компонента.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|UML-схема классов|-Интерфейсы компонента. Схема классов позволяет детализировать методы интерфейса.<br />-Данные, отправляемые в параметрах по интерфейсам компонентов.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы классов: правила](../modeling/uml-class-diagrams-guidelines.md).|  
-|Схемы активности|-Внутренние обработки, выполняемые компонентом в ответ на входящие сообщения.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации по](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Схемы слоев|— Логические архитектурные уровни компонентов.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев: ссылка](../modeling/layer-diagrams-reference.md).|  
+|Схема последовательностей UML|-Взаимодействие между компонентами системы<br />-Взаимодействий между частями внутри компонента.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы последовательностей: Рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|UML-схема классов|-Интерфейсы компонента. Схема классов позволяет детализировать методы интерфейса.<br />-Данные, отправляемые в параметрах по интерфейсам компонентов.<br /><br /> Дополнительные сведения см. в статье [Create UML modeling projects and diagrams Рекомендации по](../modeling/uml-class-diagrams-guidelines.md).|  
+|Схемы активности|-Внутренние обработки, выполняемые компонентом в ответ на входящие сообщения.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы деятельности: Рекомендации по](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Схемы слоев|— Логические архитектурные уровни компонентов.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев: ](../modeling/layer-diagrams-reference.md) (Создание проектов и схем моделирования UML).|  
   
 ##  <a name="Basics"></a> Основные этапы создания схем компонентов  
- Справочные сведения об элементах на схемах компонентов см. в разделе [схемы компонентов UML: Справочник по](../modeling/uml-component-diagrams-reference.md).  
+ Справочные сведения об элементах на схемах компонентов см. в разделе [UML-схемы компонентов: ](../modeling/uml-component-diagrams-reference.md) (Создание проектов и схем моделирования UML).  
   
  Дополнительные сведения об использовании схем компонентов в процессе разработки см. в разделе [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).  
   
@@ -279,7 +276,7 @@ ms.locfileid: "51801481"
   
 1.  Создайте новую схему последовательностей.  
   
-     Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Дополнительные сведения см. в разделе [UML-схемы последовательностей: Рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Создайте линию жизни для внешнего компонента, пользователя, устройства или другого субъекта (1), отправляющего сообщения этому компоненту.  
   
@@ -301,7 +298,7 @@ ms.locfileid: "51801481"
  Вы можете указать в модели, задав **является неявно создаваемым экземпляром** свойства компонента. В этом случае все интерфейсы компонента должны находиться в портах и иметь делегирования во внутренние части.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Описание процесса внутри каждой части  
- Чтобы показать, как компонент обрабатывает каждое входящее сообщение, можно использовать схемы активности. Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации по](../modeling/uml-activity-diagrams-guidelines.md).  
+ Чтобы показать, как компонент обрабатывает каждое входящее сообщение, можно использовать схемы активности. Дополнительные сведения см. в разделе [UML-схемы деятельности: Рекомендации по](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Схема деятельности с буфером данных](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -340,9 +337,6 @@ ms.locfileid: "51801481"
  [Схемы компонентов UML: Справочник по](../modeling/uml-component-diagrams-reference.md)   
  [Схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md)   
  [Схемы вариантов использования UML: Справочник по](../modeling/uml-use-case-diagrams-reference.md)   
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
  [Схемы компонентов UML: Справочник по](../modeling/uml-component-diagrams-reference.md)   
- [Видеоролик О разработке физической структуры с помощью схем компонентов](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-
+ [Видео. Проектирование физической структуры с помощью схем компонентов](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)

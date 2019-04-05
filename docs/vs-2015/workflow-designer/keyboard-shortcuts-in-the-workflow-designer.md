@@ -1,11 +1,8 @@
 ---
 title: Сочетания клавиш в конструкторе рабочих процессов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994433"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Сочетания клавиш конструктора рабочих процессов
 Все ключевые возможности [!INCLUDE[wfd1](../includes/wfd1-md.md)] доступны с помощью клавиатуры.  
@@ -30,7 +27,7 @@ ms.locfileid: "49895344"
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Сочетания клавиш конструктора рабочих процессов  
  В следующей таблице приведены сочетания клавиш по умолчанию, присвоенные командам [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
-|Сочетание клавиш|Назначение|  
+|Сочетание клавиш|Цель|  
 |--------------|-------------|  
 |CTRL+E, A|Отображает или скрывает конструктор аргументов.|  
 |CTRL+E, C|Свертывает выделенное действие на месте.|  
@@ -43,7 +40,7 @@ ms.locfileid: "49895344"
 |CTRL+E, P|Переходит к родителю выбранного действия. Переходит на один уровень выше в строке навигатора и изменяет корневое действие в области конструктора.|  
 |CTRL+E, S|Добавляет элемент с фокусом ввода к текущему выделению.|  
 |CTRL+E, V|Отображает или скрывает конструктор переменных.|  
-|CTRL+E, X|Раскрывает все действия в рабочем процессе.|  
+|CTRL+E, X|Развертывает все действия в рабочем процессе.|  
 |CTRL+ALT+F6|Перемещает фокус ввода от текущей области пользовательского интерфейса к следующей области в последовательности. Порядок выглядит следующим образом:<br /><br /> 1.  Строка навигатора.<br />2.  Область конструктора<br />3.  Конструктор аргументов, переменных или импорта (если открыт)<br />4.  Оболочка|  
   
 ### <a name="flowchart"></a>Блок-схема  

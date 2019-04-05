@@ -1,14 +1,9 @@
 ---
-title: 'CA2107: Проверьте использование deny и разрешить использование только | Документация Майкрософт'
-ms.custom: ''
+title: CA2107. Просмотрите deny и permit only | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2107
 - ReviewDenyAndPermitOnlyUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7a82e6b1acdb8eee1d97dcf6f264ebf66343b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990082"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: проверьте использование deny и permit only
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107. Проверьте использование Deny и Permit Only
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49851118"
  Метод содержит проверку безопасности, которая задает действие безопасности PermitOnly или Deny.
 
 ## <a name="rule-description"></a>Описание правила
- [Использование метода PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) и <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> действия по обеспечению безопасности должен использоваться только те, кто имеет специальными знаниями в области из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.
+ [Использование метода PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) и <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> действия по обеспечению безопасности должен использоваться только те, кто имеет специальными знаниями в области из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.
 
  Запретить изменяет поведение по умолчанию стека, которая происходит в ответ на требование безопасности. Он позволяет задать разрешения, которые не должны предоставляться в течение метода отказа, независимо от того, фактические разрешения вызывающих методов в стеке вызовов. Если обход стека обнаруживается метод, который будет защищен Deny, и если затребованное разрешение включается в запрещенные разрешения, обход стека не выполняется. PermitOnly также изменяет поведение по умолчанию стека. Оно позволяет коду указывать только те разрешения, которые могут предоставляться независимо от разрешений от вызывающих объектов. Если обход стека определяет метод, который будет защищен PermitOnly и если затребованное разрешение не включается в разрешения, которые определяются PermitOnly, обход стека не выполняется.
 
@@ -78,14 +73,11 @@ ms.locfileid: "49851118"
  В этом примере формируются следующие данные:
 
  **Запросу: Запретить вызывающей стороны не оказывает влияния по запросу с помощью утвержденного разрешения. ** 
- **LinkDemand: запретить вызывающей стороны не оказывает влияния на LinkDemand с утвержденного разрешения.** 
- **LinkDemand: запретить вызывающей стороны не оказывает влияния с помощью кода, защищенного с помощью LinkDemand.** 
- **LinkDemand: запретить это не оказывает влияния с помощью кода, защищенного с помощью LinkDemand.**
+ **LinkDemand: Запретить вызывающей стороны не влияет на LinkDemand с утвержденного разрешения. ** 
+ **LinkDemand: Запретить вызывающей стороны не оказывает влияния с помощью кода, защищенного с помощью LinkDemand. ** 
+ **LinkDemand: Этот запрет не оказывает влияния с помощью кода, защищенного с помощью LinkDemand.**
 ## <a name="see-also"></a>См. также
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Правила написания безопасного кода](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [переопределения проверок безопасности](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28) [использование метода PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
-
-
-
+ [Правила написания безопасного кода](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [переопределения проверок безопасности](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [использование метода PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

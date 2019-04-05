@@ -1,11 +1,8 @@
 ---
 title: Создание проекта рабочего процесса | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
@@ -15,13 +12,13 @@ ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236721"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58993855"
 ---
 # <a name="creating-a-workflow-project"></a>Создание проекта рабочего процесса
 Рабочие процессы, службы рабочего процесса [!INCLUDE[indigo1](../includes/indigo1-md.md)], настраиваемые действия и настраиваемые конструкторы действий можно создавать с помощью шаблонов проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В этом разделе описано создание библиотек и приложений с помощью шаблонов проектов, доступных в среде [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -31,16 +28,16 @@ ms.locfileid: "49236721"
  В последнем разделе описывается, как добавлять действия рабочего процесса, конструкторы, службы и другие элементы [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в существующий проект рабочего процесса или другой проект.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Как создать консольное приложение рабочего процесса](../workflow-designer/how-to-create-a-workflow-console-application.md)  
+ [Практическое руководство. Создание консольного приложения рабочего процесса](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Описывает создание консольного приложения рабочего процесса.  
   
- [Как создать приложение службы рабочего процесса WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
+ [Практическое руководство. Создание приложения службы рабочего процесса WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
  Описывает действия, необходимые для создания приложения службы рабочего процесса [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
- [Как создать библиотеку действий](../workflow-designer/how-to-create-an-activity-library.md)  
+ [Практическое руководство. Создание библиотеки действий](../workflow-designer/how-to-create-an-activity-library.md)  
  Описывает действия по настройке библиотеки действий в [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
- [Как создать библиотеку конструкторов действий](../workflow-designer/how-to-create-an-activity-designer-library.md)  
+ [Практическое руководство. Создание библиотеки конструктора действий](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Описывает создание конструкторов, предназначенных для разнообразной аудитории.  
   
  [Практическое руководство. Добавление нового элемента в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  

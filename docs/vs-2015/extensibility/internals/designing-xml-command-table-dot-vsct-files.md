@@ -1,26 +1,21 @@
 ---
 title: Проектирование таблицы команд XML (. Файлы Vsct) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980289"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Проектирование таблицы команд XML (. Файлы Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51762804"
   
  При создании нового пакета VSPackage, выполнив [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] пакет шаблона, шаблон создает vsct-файл с необходимые элементы для команды меню, окна инструментов или пользовательского редактора, в зависимости от сделанного выбора. Затем этот vsct-файл можно изменить в соответствии с требованиями конкретного пакета VSPackage. Как изменить vsct-файл, см. Примеры в [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
   
- Чтобы создать новый, пустой vsct-файл, см. в разделе [как: создание. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). После создания, добавить элементы XML, атрибуты и значения в файл для описания макета элемента команды. Подробную схему XML, см. в разделе [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Чтобы создать новый, пустой vsct-файл, см. в разделе [как: Создать. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). После создания, добавить элементы XML, атрибуты и значения в файл для описания макета элемента команды. Подробную схему XML, см. в разделе [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Различия между файлами .ctc и .vsct  
  Хотя назначение тегов XML в vsct-файл такие же, как в настоящем рекомендуется использовать формат файла .ctc, их реализации немного отличается.  
@@ -71,7 +66,7 @@ ms.locfileid: "51762804"
   
   Новый компилятор, vsct.exe, компилирует файлы .ctc и .vsct. Старый ctc.exe компилятор, тем не менее, будет распознавать ни компиляции vsct-файлы.  
   
-  Компилятор vsct.exe можно использовать для преобразования существующего файла cto в vsct-файл. Дополнительные сведения об этом см. в разделе [как: создание. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Компилятор vsct.exe можно использовать для преобразования существующего файла cto в vsct-файл. Дополнительные сведения об этом см. в разделе [как: Создать. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Элементы файла .vsct  
  Таблицы команд имеет следующие иерархии и элементов:  
@@ -124,10 +119,9 @@ ms.locfileid: "51762804"
   
  Во время разработки можно для нескольких проектов VSPackage, будет создан и зарегистрирован в экспериментальном кусте реестра, может привести к путанице помехи в интегрированной среде разработки. Чтобы устранить эту проблему, можно сбросить экспериментальный куст значения по умолчанию для удаления всех зарегистрированных пакетов VSPackage и любые изменения, они могли быть внесены в интегрированной среде разработки. Чтобы сбросить экспериментальный куст, используйте средство CreateExpInstance.exe, входящий в состав Visual Studio SDK. Его можно найти в  
   
- **% PROGRAMFILES (x 86) %\Visual Studio \<версии > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Запустите инструмент с помощью командной строки **/Reset CreateExpInstance**. Помните, что данное средство удаляет с экспериментальном кусте все зарегистрированные объекты VSPackage обычно не устанавливается вместе с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md)
-

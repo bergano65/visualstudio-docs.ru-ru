@@ -1,14 +1,9 @@
 ---
 title: Запуск приложений Windows Phone в эмуляторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980023"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Запуск приложений Windows Phone в эмуляторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Эмулятор Windows Phone предоставляет виртуализированную среду, в которой можно производить отладку и тестирование приложений Windows Phone на компьютере, не имея физического устройства. Вы можете имитировать распространенные события касания и поворота и выбрать физический размер и разрешение экрана, которые требуется эмулировать. Вы также можете протестировать множество распространенных возможностей, таких как местоположение, работа в сети, уведомления, датчики, акселерометр и дополнительная SD-карта.  
   
- Дополнительные сведения о функциях, которые можно протестировать в эмуляторе, см. в разделе [тестирование возможностей приложения в эмуляторе Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Дополнительные сведения о функциях, которые можно протестировать в эмуляторе, см. в разделе [тестирование возможностей приложения в эмуляторе Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Вместе с Visual Studio эмулятор предоставляет готовую среду, в которой можно проектировать, разрабатывать, отлаживать и тестировать приложения Windows Phone.  
   
@@ -225,6 +220,3 @@ ms.locfileid: "51739982"
 -   Укажите сборку выпуска в Visual Studio. После указания сборки выпуска запустите свое приложение, выбрав **развернуть _[имя приложения]_**  ссылку на **построения** меню.  
   
 -   Кроме того, вы можете закомментировать строку кода в файле app.xaml.cs или app.xaml.vb, где для `EnableFrameRateCounter` устанавливается значение `true`.
-
-
-

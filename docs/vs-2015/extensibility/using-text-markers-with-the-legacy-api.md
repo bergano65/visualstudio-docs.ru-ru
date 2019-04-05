@@ -1,26 +1,21 @@
 ---
 title: С помощью меток текста с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979953"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>С помощью меток текста с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ ms.locfileid: "51745911"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
-|[Практическое руководство. Добавление стандартных текстовых маркеров](../extensibility/how-to-add-standard-text-markers.md)|Описывает способы добавления стандартного текста тип маркера, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором для представления текста.|  
-|[Практическое руководство. Реализация маркеров ошибок](../extensibility/how-to-implement-error-markers.md)|Описывается реализация экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  
-|[Практическое руководство. Создание пользовательских текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский текстовый тип маркера для текстового представления.|  
-|[Практическое руководство. Использование текстовых маркеров](../extensibility/how-to-use-text-markers.md)|Описание способов добавления меток текста.|  
+|[Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)|Описывает способы добавления стандартного текста тип маркера, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором для представления текста.|  
+|[Практическое руководство. Реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)|Описывается реализация экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  
+|[Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский текстовый тип маркера для текстового представления.|  
+|[Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)|Описание способов добавления меток текста.|  
 |[Компоненты основного редактора](../extensibility/inside-the-core-editor.md)|Описание возможностей базовым редактором и подробные сведения о том, как настроить базовый редактор.|  
-|[Возможности редактора](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
+|[Возможности редактора](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ ms.locfileid: "51745911"
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Предоставляет доступ к и корректирует положение текстового маркера в текстовом буфере, с помощью одноразмерных координат. Если это возможно, не используйте этот интерфейс.
-

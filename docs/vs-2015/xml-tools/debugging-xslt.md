@@ -1,34 +1,27 @@
 ---
 title: Отладка XSLT | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4d33096e1c76172622fc080dc23bc80d3a01d3cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198748"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002862"
 ---
-# <a name="debugging-xslt"></a>Отладка XSLT
+# <a name="debug-xslt"></a>Отладка XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Для отладки XSLT можно использовать отладчик среды Visual Studio. Отладчик поддерживает задание точек останова, просмотр состояний выполнения XSLT и т. д. Отладка XSLT доступна в Visual Studio Team System и в выпуске Professional Edition.  
+Для отладки XSLT можно использовать отладчик среды Visual Studio. Отладчик поддерживает задание точек останова, просмотр состояний выполнения XSLT и т. д. Отладка XSLT доступна в Visual Studio Professional edition.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Новые возможности отладчика XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Описывает новые возможности данной версии отладчика XSLT.  
+## <a name="in-this-section"></a>В этом разделе
   
  [Практическое руководство. Запуск отладки XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
  Описывает, как запустить отладчик XSLT.  
@@ -36,10 +29,10 @@ ms.locfileid: "49198748"
  [Практическое руководство. Использование точек останова в XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
  Описывает, как использовать точки останова внутри таблицы стилей.  
   
- [Практическое руководство. Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
+ [Практическое руководство. Вычисление выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
  Описывает, как для оценки выражения XPath с помощью **"Быстрая проверка"** диалоговое окно.  
   
- [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
+ [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
  Демонстрирует, как отладить таблицу стилей XSLT.  
   
  [XSLT-шаблоны по умолчанию](../xml-tools/xslt-default-templates.md)  
@@ -61,6 +54,5 @@ ms.locfileid: "49198748"
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Представляет отладчик Visual Studio.  
   
- [Справочник по XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Справочник по XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Предоставляет справочные материалы по элементам и функциям XSLT.
-

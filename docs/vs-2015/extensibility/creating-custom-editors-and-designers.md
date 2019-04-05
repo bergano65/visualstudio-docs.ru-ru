@@ -1,27 +1,22 @@
 ---
 title: Создание специализированных редакторов и конструкторов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990892"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Создание специализированных редакторов и конструкторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +72,10 @@ ms.locfileid: "51753256"
      Если может быть внедрен, следует создать главное окно для внешнего редактора и затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и набор <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> значение перечисления для `DP_External`. Если редактор не может быть внедрен, интегрированной среды разработки автоматически создаст в отдельном окне для него.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Пошаговое руководство. Создание специализированного редактора](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Пошаговое руководство: Создание специализированного редактора](../extensibility/walkthrough-creating-a-custom-editor.md)  
  В этой статье описывается создание пользовательского редактора.  
   
- [Пошаговое руководство. Добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Пошаговое руководство: Добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  В этой статье описывается добавление компонентов в специализированный редактор.  
   
  [Инициализация конструктора и конфигурация метаданных](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ ms.locfileid: "51753256"
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

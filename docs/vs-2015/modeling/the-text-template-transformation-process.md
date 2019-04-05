@@ -1,25 +1,22 @@
 ---
 title: Процесс преобразования текстового шаблона | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993677"
 ---
 # <a name="the-text-template-transformation-process"></a>Процесс преобразования текстового шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "49203779"
 |Компонент|Описание|Настраиваемый (Да/Нет)|  
 |---------------|-----------------|------------------------------|  
 |ядра|Компонент ядра контролирует процесс преобразования текстового шаблона|Нет.|  
-|Ведущее приложение|Узел — это интерфейс между модулем и пользовательской среды. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] представляет собой узел процесса преобразования текста.|Да. Вы можете написать пользовательское ведущее приложение.|  
+|Узел|Узел — это интерфейс между модулем и пользовательской среды. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] представляет собой узел процесса преобразования текста.|Да. Вы можете написать пользовательское ведущее приложение.|  
 |Процессоры директив|Процессоры директив являются классы, которые обрабатывают директив текстовых шаблонов. Директивы можно использовать для предоставления данных в текстовый шаблон из источника входных данных.|Да. Можно написать пользовательские процессоры директив|  
   
 ## <a name="the-engine"></a>Ядро  
@@ -68,6 +65,3 @@ ms.locfileid: "49203779"
  `<#@ import namespace="System.Text" #>`  
   
  Стандартный процессор директив преобразует его `using` инструкции в созданный класс преобразования. Затем можно использовать `StringBuilder` класс в остальной части кода шаблона без указания его как `System.Text.StringBuilder`.
-
-
-

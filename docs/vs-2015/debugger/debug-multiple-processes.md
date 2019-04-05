@@ -1,14 +1,9 @@
 ---
 title: Отладка нескольких процессов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978587"
 ---
 # <a name="debug-multiple-processes"></a>Отладка нескольких процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ ms.locfileid: "51793052"
   
    ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Поиск источника и файлов символов (PDB) файлы  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Поиск исходных файлов и файлов символов (PDB)  
  Для отображения и пошагового выполнения исходного кода процесса отладчику требуется доступ к исходным файлам и файлам символов процесса. См. статью [Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Если не удается получить доступ к файлам процесса, для перемещения по коду можно воспользоваться окном "Дизассемблирование". См. в разделе [как: использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)  
+ Если не удается получить доступ к файлам процесса, для перемещения по коду можно воспользоваться окном "Дизассемблирование". См. практическое руководство по [ Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
@@ -168,7 +163,7 @@ ms.locfileid: "51793052"
   
   ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Прервать, пошагового выполнения и продолжения команды  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Команды прерывания, пошагового выполнения и продолжения выполнения  
   
 > [!NOTE]
 >  По умолчанию предусмотренные в отладчике команды прерывания, продолжения и пошагового выполнения влияют на все отлаживаемые в данный момент процессы. Чтобы изменить это поведение, см. в разделе [Настройка поведения выполнения нескольких процессов](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -218,18 +213,15 @@ ms.locfileid: "51793052"
 |**Отладка** меню:<br /><br /> -   **Отсоединить все**|Отладчик отсоединяется от всех процессов.|  
 |**Процессы** контекстное меню окна:<br /><br /> -   **Отсоединение процесса**|Отладчик отсоединяется от выбранного процесса.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
 |**Процессы** контекстное меню окна:<br /><br /> -   **Завершение процесса**|Выбранный процесс завершается.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
-|**Процессы** контекстное меню окна:<br /><br /> -   **Отсоединиться при остановке отладки**|Переключает поведение **Отладка**, **остановить отладку** для выбранного процесса:<br /><br /> -Checked: Отладчик отсоединяется от процесса.<br />-Флажок снят: Процесс завершается.|  
+|**Процессы** контекстное меню окна:<br /><br /> -   **Отсоединиться при остановке отладки**|Переключает поведение **Отладка**, **остановить отладку** для выбранного процесса:<br /><br /> -Checked: Отладчик отсоединяется от процесса.<br />-Флажок снят: Процесс завершен.|  
   
  ![К началу страницы](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [остановка отладки, окончание или отсоединение от процессов](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
 ## <a name="see-also"></a>См. также  
- [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Указание файлов символов (PDB) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)   
  [Отладка Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

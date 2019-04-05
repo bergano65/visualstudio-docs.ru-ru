@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Создание локализованного пакета загрузчика | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание локализованного пакета загрузчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,13 +12,13 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992897"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49304763"
 3.  Создайте манифест пакета с именем package.xml, обновите строки и культуру и сохраните файл в новую папку. Если вы уже создали начальный загрузчик для Visual Studio с целевым зыком, на этом этапе можно просто скопировать файл Visual Studio package.xml и внести в него необходимые изменения.  
   
 > [!NOTE]
->  Если вы используете проект установки для развертывания приложений, приложение можно локализовать, изменив **локализации** свойство.  
+>  Если для развертывания приложений используется проект установки, приложение можно локализовать, изменив свойство **Локализация**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -55,8 +50,8 @@ ms.locfileid: "49304763"
   
     |Языковой стандарт|Имя папки|  
     |------------|-----------------|  
-    |Китайский (упрощенный)|zh-Hans|  
-    |Китайский (традиционный)|zh-Hant|  
+    |Китайский (упрощенное письмо)|zh-Hans|  
+    |Китайский (традиционное письмо)|zh-Hant|  
     |Чешский|cs|  
     |Немецкий|de|  
     |Английский|en|  
@@ -72,7 +67,7 @@ ms.locfileid: "49304763"
   
 2.  Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.  
   
-3.  Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. в разделе [как: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md).  
+3.  Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. в разделе [Как Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Обновите раздел `<Strings>` манифеста пакета, так чтобы язык строк соответствовал языковому стандарту.  
   
@@ -102,6 +97,3 @@ ms.locfileid: "49304763"
  [Создание пакетов загрузчика](../deployment/creating-bootstrapper-packages.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)   
  [Практическое руководство. Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Обновление MDF-файлов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980374"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +79,9 @@ ms.locfileid: "49812638"
   
        -   Чтобы использовать конкретную версию: `(localdb)\ProjectsV12` или `(localdb)\ProjectsV13`, где версии 12 — LocalDB 2014, а V13 — LocalDB 2016.  
   
-   -   **Добавить файл базы данных**: физический путь первичного MDF-файла.  
+   -   **Добавить файл базы данных**: Физический путь первичного MDF-файла.  
   
-   -   **Логическое имя**: имя, которое вы хотите использовать с файлом.  
+   -   **Логическое имя**: Имя, которое вы хотите использовать с файлом.  
   
 3. Нажмите кнопку **OK**.  
   
@@ -123,8 +120,3 @@ ms.locfileid: "49812638"
 4. Нажмите кнопку **OK**.  
   
    SQL Server Express будет СУБД по умолчанию для ваших приложений.  
-  
-## <a name="see-also"></a>См. также  
- [Общие сведения о локальных данных](../data-tools/local-data-overview.md)   
- [Пошаговое руководство. Подключение к данным в локальном файле базе данных (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

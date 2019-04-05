@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: использовать конструктор импорта | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использовать конструктор импорта | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979637"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Как использовать конструктор импорта
+# <a name="how-to-use-the-imports-designer"></a>Практическое руководство. использовать конструктор импорта
 Конструктор импорта позволяет вводить пространства имен для типов, используемых в выражениях. Подобно тому как **импортирует** или **с помощью** ключевые слова в Visual Basic .NET и C#, указание пространств имен в конструктор импорта позволяют просто укажите имя типа в выражении, а не полное имя Имя типа версии.  
   
  Конструктор импорта реагирует на изменения в пользовательском интерфейсе и изменения, выполняемые при сохранении рабочего процесса. Во время сохранения рабочего процесса, пространства имен автоматически добавляются в конструктор импорта. В число этих требований входят следующие:  

@@ -1,36 +1,33 @@
 ---
 title: Несколько доменных языков в одном решении | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8bf5e3d69b67cf51c1e70ec8ffe9e91d87a1dcbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979753"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Несколько доменных языков можно упаковать как часть единого решения, чтобы устанавливать их вместе.  
   
- Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка поведения копирования](../modeling/customizing-copy-behavior.md).  
+ Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка функции копирования](../modeling/customizing-copy-behavior.md).  
   
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Построение нескольких доменных языков в одном решении  
   
 1. Создайте два или несколько доменных языков и проект VSIX, а затем добавьте все проекты в одно решение.  
   
-   -   Для создания нового проекта VSIX: В **новый проект** диалоговом окне выберите **Visual C#**, **расширяемости**, **проект VSIX**.  
+   -   Создание нового проекта VSIX В **новый проект** диалоговом окне выберите **Visual C#** , **расширяемости**, **проект VSIX**.  
   
    -   Создайте одно или несколько решений доменного языка в каталоге решений VSIX.  
   
@@ -50,7 +47,7 @@ ms.locfileid: "49820178"
   
 2. Объедините манифесты VSIX доменных языков:  
   
-   1.  Откройте _YourVsixProject_**\source.extension.manifest**.  
+   1.  Open _YourVsixProject_**\source.extension.manifest**.  
   
    2.  Для каждого доменного языка выберите **добавить содержимое** и добавьте:  
   
@@ -66,8 +63,5 @@ ms.locfileid: "49820178"
   
 ## <a name="see-also"></a>См. также  
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Настройка функции копирования](../modeling/customizing-copy-behavior.md)
-
-
-

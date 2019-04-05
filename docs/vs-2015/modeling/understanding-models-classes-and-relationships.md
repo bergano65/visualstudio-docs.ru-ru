@@ -1,25 +1,22 @@
 ---
 title: Общие сведения о моделях, классах и отношениях | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994596"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Сведения о моделях, классах и отношениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ ms.locfileid: "49271795"
 ## <a name="the-dsl-definition"></a>Определение DSL  
  При открытии `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] окно похож на следующем рисунке.  
   
- ![Конструктор DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")  
   
  Наиболее важные сведения в определении DSL отображается в схеме определения DSL. Дополнительные сведения, которые также является частью DslDefinition.dsl, отображается в обозревателе DSL, который обычно отображается в части схемы. Работа с диаграммой для наиболее частых задач и с обозревателем доменного языка для дополнительной настройки.  
   
  Схема определения DSL показаны классы домена, которые определяют элементы модели и связей, которые определяют связи между элементами модели. Также показано, фигур и соединителей, которые используются для отображения элементы модели для пользователя.  
   
- ![Конструктор DSL с полосой задач](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![dsl designer with swimlane](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  При выборе элемента в определении DSL, на схеме или в обозревателе DSL, сведения о нем отображаются в окне «Свойства». Дополнительные сведения могут отображаться в окне сведения о DSL.  
   
@@ -59,9 +56,9 @@ ms.locfileid: "49271795"
   
  ![Внедрение и ссылочных связей](../modeling/media/music-classes.png "Music_Classes")  
   
- На рисунке показаны четыре класса домена: музыка, альбома, исполнитель и Song (песня). Доменные классы определяют свойства домена, такие как имя, заголовок и т. д. Экземпляр модели значения некоторых из этих свойств отображаются на диаграмме.  
+ На рисунке показаны четыре класса домена. Музыка, альбома, исполнитель и Song (песня). Доменные классы определяют свойства домена, такие как имя, заголовок и т. д. Экземпляр модели значения некоторых из этих свойств отображаются на диаграмме.  
   
- Между классами являются доменных связей: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs и ArtistAppearedOnAlbums. Связи имеет количество элементов, таких как 1..1, 0.. *. Например каждый Song (песня) должен быть связан с ровно один альбома через отношение AlbumHasSongs. Каждый альбом может иметь любое количество песен.  
+ Между классами приведены доменных связей. MusicHasAlbums, MusicHasArtists, AlbumbHasSongs, and ArtistAppearedOnAlbums. Связи имеет количество элементов, таких как 1..1, 0.. *. Например каждый Song (песня) должен быть связан с ровно один альбома через отношение AlbumHasSongs. Каждый альбом может иметь любое количество песен.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Изменение расположения в схему определения DSL  
  Обратите внимание на то, что доменный класс может отображаться несколько раз в схеме определения DSL, как на этом рисунке альбома. Всегда имеется один основное представление и могут быть некоторые *ссылку* представления.  
@@ -147,7 +144,7 @@ ms.locfileid: "49271795"
 |1.. * (один ко многим)|Каждый экземпляр класса на роль, у этого кратность может иметь несколько экземпляров связи, и каждый экземпляр должен иметь по крайней мере один экземпляр отношения. Если проверка включена, при любой экземпляр класса роли имеет экземпляр связи не появится ошибка проверки.|  
   
 ## <a name="domain-relationships-as-classes"></a>Доменные связи как классы  
- Ссылка представляется в Store в качестве экземпляра LinkElement, который является производным от класса ModelElement. Эти свойства можно определить в схеме модели домена для доменных связей.  
+ Ссылка представляется в Store в качестве экземпляра LinkElement, который является производным от класса ModelElement. You can define these properties in the domain model diagram on domain relationships.  
   
  Вы также можете отношение источником или назначением другие связи. В схеме модели домена, щелкните правой кнопкой мыши доменной связи и нажмите кнопку **Показать как класс**. Дополнительный класс поле, которое будет отображаться. Отношения затем можно подключиться к нему.  
   
@@ -157,7 +154,4 @@ ms.locfileid: "49271795"
   
 ## <a name="see-also"></a>См. также  
  [Доменная связь в сгенерированном API](../misc/domain-relationships-in-the-generated-api.md)   
- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
