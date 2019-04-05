@@ -1,37 +1,32 @@
 ---
-title: Что&#39;s разработки в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Что&#39;s разработки
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771285"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002883"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Новые возможности разработки в Visual Studio в Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Этот выпуск Visual Studio включает следующие усовершенствования для лучшего понимания и проектирования кода.
 
  **Карты кода и графы зависимостей**
 
- В Visual Studio Enterprise для понимания конкретных зависимостей в коде следует визуализировать их путем создания карт кода. Затем можно перейти в эти отношения с помощью карты, которая появляется рядом с кодом. Карты кодов также помогают отслеживать местоположение в коде во время работы с кодом или его отладки, чтобы вам пришлось читать меньший объем кода при получении дополнительных сведений о разработке кода.
+ В Visual Studio Enterprise для понимания конкретных зависимостей в коде следует визуализировать их путем создания карт кода. Затем можно перейти в эти отношения с помощью карты, которая появляется рядом с кодом. Карты кода также помогают отслеживать местоположение в коде во время работы с кодом или его отладки, чтобы вам пришлось читать меньший объем кода для получения дополнительных сведения о структуре кода.
 
  В окончательной версии (RTM) работа с контекстными меню для элементов кода и ссылками стала значительно проще за счет объединения команд в разделы, связанные с выбором, изменением, управлением группами и изменения макета содержимого групп. Следует также обратить внимание, что стиль отображения тестовых проектов отличается от отображения других проектов. Кроме того, обновлены значки для элементов на карте.
 
@@ -61,7 +56,7 @@ ms.locfileid: "51771285"
 
   См. раздел [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Другие изменения проектирования и моделирования в этом выпуске:**
+  **В этом выпуске представлены следующие изменения проектирования и моделирования:**
 
 - **Схемы слоев**. Обновляйте эти схемы с помощью представления классов и обозревателя объектов. Чтобы обеспечить соответствие требованиям к разработке программного обеспечения, следует использовать схемы слоев для описания нужных зависимостей для программного обеспечения. Обеспечьте соответствие кода данным принципам проектирования, выявляя код, который не удовлетворяет таким ограничениям, и проверяя будущий код на соответствие этому базовому плану.
 

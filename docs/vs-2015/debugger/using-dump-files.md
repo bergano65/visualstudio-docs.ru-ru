@@ -1,14 +1,9 @@
 ---
 title: Использование файлов дампа | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761136"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002563"
 ---
 # <a name="using-dump-files"></a>Использование файлов дампа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,9 +78,9 @@ ms.locfileid: "51761136"
   
 - Для отладки [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) файлы в Visual Studio 2013 дампа, загрузите [Windows 8.1 версии для отладки средства для Windows](http://msdn.microsoft.com/windows/hardware/gg463009). См. в разделе [Kernel Debugging in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio не поддерживает отладку файлов дампа, сохраненных в старом формате, известном как [дампа пользовательского режима полного](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.  
+- Visual Studio не поддерживает отладку файлов дампа, сохраненных в старом формате, известном как [дампа пользовательского режима полного](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.  
   
-- Для отладки с помощью [SOS.dll (расширение отладки SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) в Visual Studio, необходимо установить отладки средства для Windows, входящего в набор драйверов Windows (WDK). См. в разделе [предварительной версии Windows 8.1: загрузка комплекты, материалы и средства](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Для отладки с помощью [SOS.dll (расширение отладки SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) в Visual Studio, необходимо установить отладки средства для Windows, входящего в набор драйверов Windows (WDK). См. в разделе [Предварительная версия Windows 8.1: Скачайте комплекты, материалы и средства](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51761136"
   
 1.  В Visual Studio, выберите **файл**, **откройте**, **файл**.  
   
-2.  В **открыть файл** диалогового окна найдите и выберите файл дампа. Обычно они имеют расширение DMP. Затем выберите **ОК**.  
+2.  В диалоговом окне **Открытие файла** найдите и выберите файл дампа. Обычно они имеют расширение DMP. Затем выберите **ОК**.  
   
 3.  **Сводка файла дампа** появится окно. В этом окне можно просмотреть сведения об отладке для файла дампа, установить путь символов, запустить отладку и скопировать сводку в буфер.  
   
@@ -145,6 +140,5 @@ ms.locfileid: "51761136"
   
 ## <a name="see-also"></a>См. также  
  [Отладка Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Указание файлов символов (PDB) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

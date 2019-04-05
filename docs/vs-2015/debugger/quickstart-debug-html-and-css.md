@@ -1,14 +1,9 @@
 ---
-title: 'Краткое руководство: Отладка HTML и CSS | Документация Майкрософт'
-ms.custom: ''
+title: Краткое руководство. Отладка HTML и CSS | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729980"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002667"
 ---
-# <a name="quickstart-debug-html-and-css"></a>Краткое руководство по отладке HTML и CSS
+# <a name="quickstart-debug-html-and-css"></a>Краткое руководство. Отладка HTML и CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
@@ -76,7 +71,7 @@ ms.locfileid: "51729980"
   
 - Проверка применения стилей CSS к элементам страницы и трассировка примененных правил.  
   
-  В процессе отладки приложений часто требуется выбрать те или иные элементы в проводнике DOM. При выборе элемента значения, отображаемые на вкладках с правой стороны проводника DOM, автоматически обновляются, отражая текущее состояние выбранного элемента в проводнике DOM. Вкладки следующие: **Стили**, **Вычисленные**, **Макет**. Приложения Магазина Windows также поддерживают вкладки **События** и **Изменения** . Дополнительные сведения о выборе элементов см. в разделе [Selecting elements](#SelectingElements).  
+  В процессе отладки приложений часто требуется выбрать те или иные элементы в проводнике DOM. При выборе элемента значения, отображаемые на вкладках с правой стороны проводника DOM, автоматически обновляются, отражая текущее состояние выбранного элемента в проводнике DOM. Ниже перечислены вкладки. **Стили**, **вычисляемые**, **макета**. Приложения Магазина Windows также поддерживают вкладки **События** и **Изменения** . Дополнительные сведения о выборе элементов см. в разделе [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Если окно проводника DOM закрыто, выберите **Отладка**>**Окна** > **Проводник DOM** , чтобы повторно открыть его. Окно отображается только во время сеанса отладки скрипта.  
@@ -234,7 +229,7 @@ ms.locfileid: "51729980"
   
      На вкладке **Макет** можно увидеть следующие значения.  
   
-    - Для имитатора: 320 пикс. (смещение) и 320 пикс. (поле).  
+    - Для симулятора: 320 пикс (смещение) и 320 пикс (поля).  
   
     - Для эмулятора телефона: 100 пикс. (смещение) и 100 пикс. (поле).  
   
@@ -258,7 +253,7 @@ ms.locfileid: "51729980"
   
 2.  Откройте файл default.html и внесите исправления в исходный код, изменив высоту и ширину элемента DIV `"fView"` на 100 %.  
   
-3.  Нажмите кнопку **Обновить приложение Windows** на панели инструментов "Отладка" (или нажмите F4). Кнопка выглядит следующим образом: ![кнопкой "Обновить Windows-приложение"](../debugger/media/js-refresh.png "JS_Refresh").  
+3.  Нажмите кнопку **Обновить приложение Windows** на панели инструментов "Отладка" (или нажмите F4). Кнопка выглядит следующим образом: ![Кнопка приложения Windows "Обновить"](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Страницы приложения перезагружаются, имитатор или эмулятор телефона снова отображается на переднем плане.  
   
@@ -299,7 +294,7 @@ ms.locfileid: "51729980"
   
 - Internet Explorer 10 на платформе [!INCLUDE[win8](../includes/win8-md.md)]  
   
-  Перейдите [сюда](http://go.microsoft.com/fwlink/?LinkID=232448) , чтобы скачать [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
+  Перейдите [сюда](https://developer.microsoft.com/windows/downloads/sdk-archive) , чтобы скачать [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -312,6 +307,3 @@ ms.locfileid: "51729980"
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Поддержка и специальные возможности продукта](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-
