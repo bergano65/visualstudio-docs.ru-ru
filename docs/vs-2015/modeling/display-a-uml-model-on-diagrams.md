@@ -1,25 +1,22 @@
 ---
 title: Отображение модели UML на схемах | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989747"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +41,11 @@ ms.locfileid: "51757316"
   
 |Тип элемента|Пример|Чтобы отобразить это, ваш код должен соответствовать следующим требованиям|  
 |---------------------|-----------------|-------------------------------------|  
-|Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Примечание:** Если вы выполняете отображение Display внутри **ILinkedUndo** транзакций, иногда метод не возвращает `IShape`. Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|  
+|Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Примечание:**  Если вы выполняете отображение Display внутри **ILinkedUndo** транзакций, иногда метод не возвращает `IShape`. Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|  
 |Дочерний элемент классификатора|Атрибут, операция,<br /><br /> Часть, порт|Выполняется автоматически — код не требуется.<br /><br /> Он отображается в качестве части родительского элемента.|  
 |Поведение|Взаимодействие (последовательность),<br /><br /> Действие|Привяжите поведение к соответствующей схеме.<br /><br /> Каждое поведение одновременно можно привязать только к одной.<br /><br /> Пример:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Дочерний элемент поведения|Жизненные циклы, сообщения, действия, узлы объектов|Выполняется автоматически — код не требуется.<br /><br /> Отображается, если родительский объект привязан к схеме.|  
-|Отношение|Ассоциация, обобщение, поток, зависимость|Выполняется автоматически — код не требуется.<br /><br /> Он отображается на каждой схеме, на которой показаны оба конца.|  
+|Relationship|Ассоциация, обобщение, поток, зависимость|Выполняется автоматически — код не требуется.<br /><br /> Он отображается на каждой схеме, на которой показаны оба конца.|  
   
 ##  <a name="GetShapes"></a> Доступ к фигурам, представляющим элемент  
  Фигура, представляющая элемент, принадлежит к следующим типам:  
@@ -384,8 +381,5 @@ namespace AlignCommand
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Навигация по модели UML](../modeling/navigate-the-uml-model.md)   
- [Пример: Выравнивание фигур на схеме команды меню](http://go.microsoft.com/fwlink/?LinkId=213809)   
- [Пример: Создание элементов, фигур и стереотипов](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-
+ [Пример. Выравнивание фигур на схеме команды меню](http://go.microsoft.com/fwlink/?LinkId=213809)   
+ [Пример. Создание элементов, фигур и стереотипов](http://go.microsoft.com/fwlink/?LinkId=213811)

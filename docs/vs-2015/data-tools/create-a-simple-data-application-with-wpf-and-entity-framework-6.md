@@ -1,25 +1,22 @@
 ---
 title: Создание простых данных приложения с помощью WPF и Entity Framework 6 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922202"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002699"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простых данных приложения с помощью WPF и Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простого приложения для обработки данных с помощью WPF и Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ ms.locfileid: "49922202"
 ## <a name="install-and-connect-to-northwind"></a>Установка и подключение к "Борей"  
  В этом примере используется SQL Server Express LocalDB и базе данных Northwind. Он должен работать с другими продуктами баз данных SQL так же хорошо, если платформа Entity Framework поддерживает поставщик данных ADO.NET для этого продукта.  
   
-1.  Если это еще не сделано, установите SQL Server 2014 LocalDB Express 32-разрядный из [странице скачивания выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Если это еще не сделано, установите SQL Server 2014 LocalDB Express 32-разрядный из [странице скачивания выпуски SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Установка образца базы данных "Борей", следуя приведенным ниже указаниям: [Установка SQL Server образцы баз данных](../data-tools/install-sql-server-sample-databases.md).  
+2.  Установка образца базы данных "Борей", следуя приведенным ниже указаниям: [Установка образцов баз данных SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Добавление новых подключений](../data-tools/add-new-connections.md) для Northwind.  
   
@@ -393,7 +390,7 @@ ms.locfileid: "49922202"
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Добавление кнопок для перехода, добавление, обновление и удаление  
  В приложениях Windows Forms вы получите объект BindingNavigator с кнопками для просмотра строк в базе данных и выполнение основных операций CRUD. WPF предоставляет BindingNavigator, но они являются довольно легко сделать. Это необходимо сделать с помощью кнопок в StackPanel по горизонтали в нижней строке сетки на страницы, и мы свяжем кнопок с командами, которые привязаны к методам в коде программной части.  
   
- Состоит из частей четверки логику команды: (1) команды, (2 привязки, (3) кнопок и (4) обработчиками команд в код программной части.  
+ Существует части четверки логику команды: (1) команды, (2 привязки, (3) кнопок и (4) обработчиками команд в код программной части.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Добавление команд, привязок и кнопок в XAML  
   
@@ -709,4 +706,3 @@ ms.locfileid: "49922202"
   
 ## <a name="see-also"></a>См. также  
  [Visual Studio data tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [документация по Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

@@ -1,15 +1,20 @@
 ---
 title: Средства R для Visual Studio
-description: "Инструменты R для Visual Studio 2017 (RTVS)\_— это бесплатное расширение с открытым исходным кодом, предоставляющее множество языковых функций, включая IntelliSense, отладку и удаленные рабочие области."
+description: Инструменты R для Visual Studio 2017 (RTVS) — это бесплатное расширение с открытым исходным кодом, предоставляющее множество языковых функций, включая IntelliSense, отладку и удаленные рабочие области.
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-  - data-science
+- data-science
+ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324173"
 ---
-
 # <a name="work-with-r-in-visual-studio"></a>Работа с R в Visual Studio
 
 R — это расширяемый язык и среда для статистических вычислений и работы с графикой. Распространяется бесплатно на условиях лицензии GNU General Public License, пользуется поддержкой сообщества и известен возможностью создавать графику типографского качества, в том числе математические символы и формулы. Дополнительные сведения см. в на сайте [r-project.org](https://www.r-project.org/about.html) и во [введении в R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
