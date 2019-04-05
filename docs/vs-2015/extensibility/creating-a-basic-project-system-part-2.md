@@ -1,14 +1,9 @@
 ---
 title: Создание системы базового проекта, часть 2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979047"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание системы базового проекта. Часть 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +188,7 @@ ZipProjects:
   
     На [!INCLUDE[win7](../includes/win7-md.md)]: В меню "Пуск", найти **средств Microsoft Visual Studio или Microsoft Visual Studio SDK/** папку, а затем выберите **Сброс Microsoft Visual Studio экспериментального экземпляра**.  
   
-    В более поздних версиях Windows: на начальном экране, введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
+    В более поздних версиях Windows: На начальном экране введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
   
 2. Появится окно командной строки. Когда появится слова `Press any key to continue`, нажмите клавишу ВВОД. После закрытия окна, откройте Visual Studio.  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ — это имя, указанное пользователем в **новый проект** диалоговое окно, изменить, чтобы удалить все небезопасные символы и пробелы.  
   
-  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое: передать пользовательских параметров в шаблоны](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое руководство. Передать пользовательские параметры для шаблонов](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Для замены параметров шаблона проекта  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Закройте экспериментальный экземпляр Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

@@ -1,12 +1,9 @@
 ---
 title: Диагностика ссылок на службы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994501"
 ---
 # <a name="troubleshooting-service-references"></a>Диагностика ссылок на службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,9 +76,9 @@ ms.locfileid: "49223968"
 
 3.  Убедитесь, что **Показывать дополнительные конфигурации построения** флажок выбран и нажмите кнопку **ОК**.
 
-4.  Загрузите проект службы WCF. Дополнительные сведения см. в разделе [ПРАКТИЧЕСКОЕ руководство: создание решений для нескольких проектов](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Загрузите проект службы WCF. Дополнительные сведения см. в разделе [ПРАКТИЧЕСКОЕ руководство: Создание решений для нескольких проектов](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  В **Configuration Manager** диалоговом окне set **активная конфигурация решения** для **Отладка**. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
+5.  В **Configuration Manager** диалоговом окне set **активная конфигурация решения** для **Отладка**. Дополнительные сведения см. в разделе [Как Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
 
 6.  В **обозревателе решений**, выберите проект службы WCF.
 
@@ -92,13 +89,13 @@ ms.locfileid: "49223968"
 
  Чтобы устранить эту ошибку, отключите RSS-каналы:
 
-1.  В Internet Explorer на **средства** меню, щелкните **обозревателя**.
+1.  Откройте Internet Explorer и в меню **Сервис** выберите пункт **Свойства обозревателя**.
 
 2.  На **содержимого** на вкладке **веб-каналов** щелкните **параметры**.
 
 3.  В **параметры веб-канала** снимите флажок **включите чтения веб-канала** флажок и нажмите кнопку **ОК**.
 
-4.  Нажмите кнопку **ОК** закрыть **обозревателя** диалоговое окно.
+4.  Нажмите кнопку **ОК** для закрытия диалогового окна **Свойства обозревателя**.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,31 +1,26 @@
 ---
-title: 'Практическое: добавлять узлы в рабочую область в обозревателе схем XML | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавление узлов в рабочую область в обозревателе схем XML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 84a99426cf32477e0661872c09f41ec50aeb2842
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978553"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Как добавлять узлы в рабочую область в обозревателе XML-схем
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Практическое руководство. Добавление узлов в рабочую область в обозревателе схем XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-В этом разделе объясняется, как добавить узлы в [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) обозревателе XML-схем. Цель может быть достигнута посредством перетаскивания узлов из обозревателя XML-схемы на представление конструктора XSD, или использованием контекстного меню обозревателя XML-схем. Можно также добавить узлы, выделенные в результате поиска, выполненного в обозревателе XML-схем. Дополнительные сведения см. в разделе [как: Добавление схемы задать поиска результат узлов в рабочую область](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
+В этом разделе объясняется, как добавить узлы в [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) обозревателе XML-схем. Цель может быть достигнута посредством перетаскивания узлов из обозревателя XML-схемы на представление конструктора XSD, или использованием контекстного меню обозревателя XML-схем. Можно также добавить узлы, выделенные в результате поиска, выполненного в обозревателе XML-схем. Дополнительные сведения см. в разделе [Как Добавить в рабочую область узлы результат поиска набора схем](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
 >  Только глобальные узлы, которые могут добавляться к [рабочей области конструктора схем XML](../xml-tools/xml-schema-designer-workspace.md).  
@@ -68,6 +63,3 @@ ms.locfileid: "49220107"
   
 ## <a name="see-also"></a>См. также  
  [Обозреватель схемы XML](../xml-tools/xml-schema-explorer.md)
-
-
-

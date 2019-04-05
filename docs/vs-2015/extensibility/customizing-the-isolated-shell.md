@@ -1,26 +1,21 @@
 ---
 title: Настройка изолированной оболочки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992267"
 ---
 # <a name="customizing-the-isolated-shell"></a>Настройка изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ ms.locfileid: "51733785"
  Включает в себя шаблон решения изолированной оболочки *SolutionName*. Application.pkgdef файл, который позволяет изменять следующие функции:  
   
 ##### <a name="the-application-title"></a>Заголовок приложения  
- Вы можете настроить заголовок приложения, которое является именем, отображаемый в заголовке окна приложения, изменив значение строки «AppName» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Вы можете настроить заголовок приложения, которое является именем, отображаемый в заголовке окна приложения, изменив значение строки «AppName» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
  Если вы не хотите, чтобы заголовок приложения для отображения проекта, который в данный момент загружается, измените значение в строке «ShowHierarchyRootInTitle» *SolutionName*. Файл Application.pkgdef из DWORD: 00000001 DWORD: 00000000.  
   
 ##### <a name="the-application-icon"></a>Значок приложения  
- Вы можете настроить значок приложения, в которой значок, отображаемый по имени приложения в заголовке окна приложения. Скопируйте в каталог значок другой значок. В **обозревателе решений**, добавить значок для папки с файлами ресурсов. Затем откройте файл VSShellStub.rc и замените значение IDI_STUBPROGRAM именем значок "Создать". Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Вы можете настроить значок приложения, в которой значок, отображаемый по имени приложения в заголовке окна приложения. Скопируйте в каталог значок другой значок. В **обозревателе решений**, добавить значок для папки с файлами ресурсов. Затем откройте файл VSShellStub.rc и замените значение IDI_STUBPROGRAM именем значок "Создать". Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Логотип командной строки  
- Можно настроить логотип командной строки, который является текст, отображаемый, когда приложение запускается из командной строки, изменив значение строки «CommandLineLogo» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Можно настроить логотип командной строки, который является текст, отображаемый, когда приложение запускается из командной строки, изменив значение строки «CommandLineLogo» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Имя вложенной папки файлов пользователя  
  Можно изменить имя папки, приложение сохраняет пользовательских файлов, изменив значение строки «UserFilesSubFolderName» в *SolutionName*. Файл Application.pkgdef.  
@@ -63,7 +58,7 @@ ms.locfileid: "51733785"
  Можно настроить веб-страницы браузера, который является страницей, которое отображается при открытии окна веб-обозревателя, изменив значение строки «DefaultSearchPage» в *SolutionName*. Файл Application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>Домашняя страница по умолчанию  
- На домашней странице можно настраивать, изменяя значение в строке «DefaultHomePage» *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ На домашней странице можно настраивать, изменяя значение в строке «DefaultHomePage» *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Следует ли скрыть основные принципы решения  
  Можно указать необходимость скрыть решения в приложении, изменив значение строки «HideSolutionConcept» в *SolutionName*. Файл Application.pkgdef. Чтобы скрыть решения, задайте значение `dword:00000001`и чтобы отобразить решения, задайте значение `dword:00000000`.  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Удаляет из набора шаблонов проектов, в проект прочих файлов **новый проект** диалоговое окно. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Удаляет из набора шаблонов проектов, в проект прочих файлов **новый проект** диалоговое окно. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="enabledisable-menu-commands"></a>Включение и отключение команд меню  
- *SolutionName*UI.vsct файл включает закомментированных список всех команд меню, доступных для изолированной оболочки. Чтобы отключить определенной команды, раскомментируйте соответствующей строки. Например, чтобы отключить комментарий Window/Split, раскомментируйте `<Define name="No_SplitCommand"/>` строки. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ *SolutionName*UI.vsct файл включает закомментированных список всех команд меню, доступных для изолированной оболочки. Чтобы отключить определенной команды, раскомментируйте соответствующей строки. Например, чтобы отключить комментарий Window/Split, раскомментируйте `<Define name="No_SplitCommand"/>` строки. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>Битовая карта, используемая на экран-заставка  
- Вы можете настроить растровое изображение, используемое на заставки, которая является окном, которое отображается при запуске приложения, изменив значение строки «SplashScreenBitmap» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Вы можете настроить растровое изображение, используемое на заставки, которая является окном, которое отображается при запуске приложения, изменив значение строки «SplashScreenBitmap» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-helpabout-window"></a>Справка/о окна  
- В шаблоне изолированной оболочки имеется отдельный проект, можно использовать для настройки справки / "о программе" для вашего приложения. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-
+ В шаблоне изолированной оболочки имеется отдельный проект, можно использовать для настройки справки / "о программе" для вашего приложения. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

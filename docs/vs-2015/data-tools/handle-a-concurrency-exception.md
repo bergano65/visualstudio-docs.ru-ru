@@ -1,12 +1,9 @@
 ---
 title: Обработка исключения параллельности | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979433"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ ms.locfileid: "50220421"
   
 4.  Заполнить данными из набора данных `Customers` таблицы в базе данных "Борей".  
   
-5.  Используйте [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) в Visual Studio для прямого доступа к `Customers` данных таблицу и изменить запись.  
+5.  Используйте [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) в Visual Studio для прямого доступа к `Customers` данных таблицу и изменить запись.  
   
 6.  Измените той же записи на другое значение, обновление набора данных и пытаются выполнить запись изменений в базе данных, что приводит к возникновению ошибки параллелизма.  
   
@@ -56,10 +53,10 @@ ms.locfileid: "50220421"
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения данного пошагового руководства требуется:  
   
--   Доступ к базе данных Northwind с разрешением для выполнения обновлений. Дополнительные сведения см. в разделе [как: установить образцы баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Доступ к базе данных Northwind с разрешением для выполнения обновлений.
   
 > [!NOTE]
->  Диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от ваших текущих параметров или выпуск, который вы используете. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от ваших текущих параметров или выпуск, который вы используете. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Создание нового проекта  
  Пошаговое руководство начинается с создания нового приложения Windows.  
@@ -83,7 +80,7 @@ ms.locfileid: "50220421"
   
 1.  На **данных** меню, выберите **добавить новый источник данных**.  
   
-     [Мастер настройки источника данных](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) открывает.  
+     Открывается [мастер настройки источника данных](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 2.  На **Выбор типа источника данных**выберите **базы данных**.  
   
@@ -211,7 +208,7 @@ ms.locfileid: "50220421"
   
 8.  В первой записи в форме (`ALFKI`), измените`ContactName` для `Maria Anders1`.  
   
-9. Выберите **Сохранить** кнопки.  
+9. Нажмите кнопку **Сохранить**.  
   
      Возникает ошибка параллелизма, и появится окно сообщения.  
   

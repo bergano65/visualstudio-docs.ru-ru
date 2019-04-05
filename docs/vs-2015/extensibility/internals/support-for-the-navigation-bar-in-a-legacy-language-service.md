@@ -1,27 +1,22 @@
 ---
 title: Поддержка панели навигации в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81d2217be730803c1daedc37c3bac1a8d4154eea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991346"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,4 +91,3 @@ namespace TestLanguagePackage
      Поиск объявлений, которые были получены на шаге 1 элемента, который содержит текущее положение курсора, а затем найдите в списке членов для этого элемента определить его индекс в списке членов.  
   
 6.  Вернуть `true` Если внесены изменения в списки или выбранные элементы в любом из списков.
-

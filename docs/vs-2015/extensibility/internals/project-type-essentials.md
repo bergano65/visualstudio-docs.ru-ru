@@ -1,26 +1,21 @@
 ---
 title: Основные компоненты типа проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993309"
 ---
 # <a name="project-type-essentials"></a>Основные компоненты типа проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51746454"
   
 - Типы проектов, представляют собой объекты VSPackage, реализовать набор интерфейсов [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ожидает. При использовании C# для разработки тип проекта, проект классы Managed Package Framework реализуют интерфейсы, необходимые для вас и позволяют наследовать эту реализацию. Дополнительные сведения см. в разделе [с помощью Managed Package Framework для реализации типа проекта (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Для разработчиков C++ классы в библиотеке HierUtil работать аналогичным образом. Дополнительные сведения см. в разделе [не в сборке: использование HierUtil7 проект классов для реализации типа проекта (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Для разработчиков C++ классы в библиотеке HierUtil работать аналогичным образом. Дополнительные сведения см. в разделе [не в сборке: Использование HierUtil7 проект классов для реализации типа проекта (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Типы проектов могут поддерживать использование данных, отличных от файлов обычно исходного кода, встраиваемый в сборку .exe или .dll. Например [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] проекты баз данных содержат ссылки на файлы скриптов и запросов, хранящихся на диске и добавлять команды для **обозревателе решений** для выполнения скриптов и запросов к базе данных, но проекты не поддерживают реализовать поведение. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md).  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51746454"
   
 ## <a name="see-also"></a>См. также  
  [Развертывание типов проектов](../../extensibility/internals/deploying-project-types.md)
-
