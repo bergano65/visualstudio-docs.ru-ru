@@ -1,14 +1,9 @@
 ---
 title: Создание Windows Forms элемента управления панели элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781716"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002467"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Создание элемента управления на панели инструментов Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "51781716"
   
 5.  В **свойства** окна, задайте следующие значения для элементов управления в рабочей области конструирования.  
   
-    |Элемент управления|Свойство|Значение|  
+    |Элемент управления|Свойство.|Значение|  
     |-------------|--------------|-----------|  
     |`Label1`|**Text**|""|  
     |`Button1`|**Name**|btnReset|  
@@ -213,11 +208,10 @@ ms.locfileid: "51781716"
      Сбрасывает счетчик **0**.  
   
 ## <a name="next-steps"></a>Следующие шаги  
- При создании элемента управления **панели элементов** Visual Studio создает файл с именем *Имя_проекта*.vsix в папке \bin\debug\ проекта. Чтобы развернуть элемент управления, можно отправить VSIX-файл в сеть или на веб-сайт. Когда пользователь открывает VSIX-файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, можно отправить VSIX-файл на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, чтобы пользователи могли его найти, перейдя в **средства / расширения и обновления** диалоговое окно.  
+ При создании элемента управления **панели элементов** Visual Studio создает файл с именем *Имя_проекта*.vsix в папке \bin\debug\ проекта. Чтобы развернуть элемент управления, можно отправить VSIX-файл в сеть или на веб-сайт. Когда пользователь открывает VSIX-файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, можно отправить VSIX-файл на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, чтобы пользователи могли его найти, перейдя в **средства / расширения и обновления** диалоговое окно.  
   
 ## <a name="see-also"></a>См. также  
  [Расширение панели элементов](../misc/extending-the-toolbox.md)   
  [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Основы разработки элементов управления форм Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-
