@@ -1,25 +1,20 @@
 ---
 title: Обозреватель XML-схем | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994395"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,11 +92,4 @@ ms.locfileid: "49845879"
 -   [Интеграция XML-литералов с обозревателем XML-схем](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>См. также  
- [Как добавлять узлы в рабочую область в обозревателе XML-схем](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-
+ [Практическое руководство. Добавление узлов в рабочую область из обозревателя схем XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

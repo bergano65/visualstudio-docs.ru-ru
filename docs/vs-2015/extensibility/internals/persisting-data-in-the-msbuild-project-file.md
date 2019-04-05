@@ -1,33 +1,28 @@
 ---
 title: Сохранение данных в файле проекта MSBuild | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6c4318ff23fecdaf312533c7b92712db291fee8
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749637"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59002071"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Сохранение данных в файле проекта MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Подтип проекта может возникнуть потребность сохранять подтипа данных в файл проекта для последующего использования. Подтип проекта использует сохраняемость файлов в проект для отвечать следующим требованиям:  
   
-1.  Сохранять данные, используемые в рамках создания проекта. (Дополнительные сведения о Microsoft Build Engine, см. в разделе [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Сведения, связанные с построением можете сделать следующее.  
+1.  Сохранять данные, используемые в рамках создания проекта. (Дополнительные сведения о Microsoft Build Engine, см. в разделе [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Сведения, связанные с построением можете сделать следующее.  
   
     1.  Данные, зависящие от конфигурации. То есть данные, хранящиеся в элементы MSBuild с пустым или отсутствующим условия.  
   
@@ -85,4 +80,3 @@ ms.locfileid: "51749637"
   
 ## <a name="see-also"></a>См. также  
  [Подтипы проектов](../../extensibility/internals/project-subtypes.md)
-

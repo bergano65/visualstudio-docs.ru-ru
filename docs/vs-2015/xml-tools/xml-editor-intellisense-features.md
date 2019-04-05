@@ -1,27 +1,22 @@
 ---
 title: Возможности IntelliSense редактора XML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994389"
 ---
-# <a name="xml-editor-intellisense-features"></a>Возможности IntelliSense редактора XML
+# <a name="xml-editor-intellisense-features"></a>Функции IntelliSense редактора XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +46,7 @@ ms.locfileid: "49830749"
   
 - имен параметров для данного именованного шаблона.  
   
-  Дополнительные сведения см. в разделе [Пошаговое руководство: использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) раздела.  
+  Дополнительные сведения см. в разделе [Пошаговое руководство: Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) раздела.  
   
 ## <a name="auto-completion"></a>Автоматическое завершение  
  Редактор XML облегчает также редактирование XML-документов, автоматически вставляя необходимые элементы синтаксиса. Например, если ввести следующий открывающий тег:  
@@ -106,7 +101,7 @@ ms.locfileid: "49830749"
 -   Открывающие и закрывающие кавычки атрибутов.  
   
 ## <a name="modifying-the-intellisense-options"></a>Изменение параметров IntelliSense  
- Функции IntelliSense и автоматического завершения по умолчанию включены. Однако их можно выключить, изменив настройки «Сервис» и «Параметры».  
+ Возможности IntelliSense и автоматического завершения по умолчанию включены. Однако их можно выключить, изменив настройки «Сервис» и «Параметры».  
   
  **Автоматическая вставка** раздел **Разное** страницы управляет следующими действиями:  
   
@@ -127,7 +122,4 @@ ms.locfileid: "49830749"
 ## <a name="see-also"></a>См. также  
  [Редактор XML](../xml-tools/xml-editor.md)   
  [Использование IntelliSense](../ide/using-intellisense.md)   
- [Пошаговое руководство. Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-
+ [Пошаговое руководство: Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
