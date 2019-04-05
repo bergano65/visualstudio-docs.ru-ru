@@ -1,14 +1,9 @@
 ---
 title: Выбор между общих и с контролем версий пакетов VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978808"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Выбор между общими пакетами VSPackage и пакетами с контролем версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51756831"
   
     -   Программирование VSPackage для адаптации к версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в котором он выполняется. При сбое запросов для новых служб VSPackage может предложить другие службы, которые поддерживаются в более старых версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+-   Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 -   Регистрация расширений файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
@@ -71,4 +66,3 @@ ms.locfileid: "51756831"
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [Управление компонентами](../extensibility/internals/component-management.md)
-

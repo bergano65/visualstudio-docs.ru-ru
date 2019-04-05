@@ -1,12 +1,9 @@
 ---
 title: Отношения в наборах данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979036"
 ---
 # <a name="relationships-in-datasets"></a>Отношения в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ ms.locfileid: "49935410"
 |Правило ограничения внешнего ключа|Действие|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|Изменение (update или delete), внесенные в запись родительского также вносится в связанных записей в дочерней таблице.|  
-|<xref:System.Data.Rule>|Дочерние записи не удаляются, но внешний ключ в дочерних записях присваивается <xref:System.DBNull>. Этот параметр, можно оставить дочерние записи, как «потерянные» — то есть не иметь отношений на родительские записи. **Примечание:** с помощью этого правила может привести к недопустимые данные в дочерней таблице.|  
+|<xref:System.Data.Rule>|Дочерние записи не удаляются, но внешний ключ в дочерних записях присваивается <xref:System.DBNull>. Этот параметр, можно оставить дочерние записи, как «потерянные» — то есть не иметь отношений на родительские записи. **Примечание.**  С помощью этого правила может привести недопустимые данные в дочерней таблице.|  
 |<xref:System.Data.Rule>|Внешний ключ в связанные дочерние записи устанавливается значение по умолчанию (в соответствии с параметром столбца <xref:System.Data.DataColumn.DefaultValue%2A> свойство).|  
 |<xref:System.Data.Rule>|Связанные дочерние записи не изменяется. Этот параметр, дочерние записи могут содержать ссылки на недопустимые родительские записи.|  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49935410"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Чтобы создать связи между таблицами данных  
   
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Перетащите **отношения** объекта из **набора данных** панели инструментов в дочернюю таблицу данных в отношении.  
   
@@ -112,7 +109,6 @@ ms.locfileid: "49935410"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Чтобы отобразить имя отношения в конструкторе наборов данных  
   
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Из **данных** меню, выберите **Показать подписи отношений** команду, чтобы отобразить имя отношения. Снимите этой команды, чтобы скрыть имя отношения.
-

@@ -1,25 +1,22 @@
 ---
 title: Синтаксис пути домена | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
 ms.assetid: 945994f9-72b9-42e0-81b2-e5fb3d0e282d
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d4e98715bae8869619e8d9f2852c810153984777
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2c115e8fff6cddbc1b08c697b72c7bda3a970ed4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994321"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ ms.locfileid: "49254778"
   
  Путь домена имеет следующий вид:  
   
- *RelationshipName.PropertyName/! Роли*  
+ *RelationshipName.PropertyName/!Role*  
   
  ![Отношение ссылки CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")  
   
@@ -44,6 +41,3 @@ ms.locfileid: "49254778"
   
 ## <a name="see-also"></a>См. также  
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

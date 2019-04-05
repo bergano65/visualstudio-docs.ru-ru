@@ -1,29 +1,24 @@
 ---
-title: 'Создание нового проекта: Взгляд изнутри, часть 1 | Документация Майкрософт'
-ms.custom: ''
+title: 'Создание проекта: За кулисами, часть 1 | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990910"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта. Как это работает, часть 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Когда-нибудь думали о том, как создать собственный тип проекта? Интересно, что произойдет при создании нового проекта? Давайте взглянуть изнутри и что происходит в действительности.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  При наличии этого подраздела положение корневого узла управляется диалоговом окне параметров разработчика. Например, примененная к объекту директива  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZVC#  
   
  Показывает, что Visual C# корневой узел Если Visual Studio для [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] разработки. В противном случае он будет дочерним для узла **другие языки**.  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   Можно изменить порядок сортировки.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Поиск корневой узел для типа проекта  
- Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: под капот, второй части](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: За кулисами, часть вторая](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > тег определяет тип проекта для приложения. Например файл \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip содержит файл EmptyProject.vstemplate с этим тегом:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** отображается как дочерний узел Visual C# просто узле Windows.  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. Как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Создание нового проекта. Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -1,14 +1,9 @@
 ---
 title: Приложения Windows Store выполнения на удаленном компьютере | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979289"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Запуск приложений Магазина Windows на удаленном компьютере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -173,11 +168,8 @@ ms.locfileid: "51784550"
 ##  <a name="BKMK_RunRemoteDebug"></a> Выполнение сеанса удаленной отладки  
  Запуск, остановка и навигация по сеансу удаленной отладки осуществляется так же, как в локальном сеансе. Перед запуском отладки убедитесь, что монитор удаленной отладки запущен на удаленном устройстве.  
   
- После этого в меню **Отладка** выберите **Начать отладку** (клавиша F5). Проект перекомпилируется, развертывается и запускается на удаленном устройстве. Отладчик приостанавливает выполнение в точках останова, что позволяет выполнить шаги с заходом, шаги с обходом и шаги с выходом в коде. Выберите **Остановить отладку** , чтобы завершить сеанс отладки и закрыть удаленное приложение. Дополнительные сведения см. в разделе [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Затем выберите **начать отладку** на **Отладка** меню (клавиатуры: F5). Проект перекомпилируется, развертывается и запускается на удаленном устройстве. Отладчик приостанавливает выполнение в точках останова, что позволяет выполнить шаги с заходом, шаги с обходом и шаги с выходом в коде. Выберите **Остановить отладку** , чтобы завершить сеанс отладки и закрыть удаленное приложение. Дополнительные сведения см. в разделе [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также  
  [Тестирование приложений Магазина с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

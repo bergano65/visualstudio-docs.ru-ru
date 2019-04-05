@@ -1,14 +1,9 @@
 ---
 title: Подготовка к отладке ASP.NET | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: d65d7299-51dd-4337-b334-aa1cbb37b77e
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 70cf3eacea28a0612ac4b97acfd84758163ea88f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990947"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Подготовка к отладке ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51793518"
  [Условия для удаленной отладки веб-приложений](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Список предварительных условий для отладки веб-приложения на удаленном сервере.  
   
- [Практическое: Настройка служб IIS в Windows Server 2003](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Практическое руководство. Настроить службы IIS в Windows Server 2003](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Описаны специальные шаги настройки, необходимые для системных требований для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] в операционной системе [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -62,6 +57,3 @@ ms.locfileid: "51793518"
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Конфигурация ASP.NET и IIS](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
-
-
-

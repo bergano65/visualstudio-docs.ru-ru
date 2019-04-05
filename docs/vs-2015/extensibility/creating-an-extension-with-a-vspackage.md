@@ -1,24 +1,19 @@
 ---
 title: Создание расширения с помощью VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990364"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Создание расширения с помощью VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51773305"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем метод Initialize() VSPackage для этого, так как службы Visual Studio можно получить только после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: доступ к службе](../extensibility/how-to-get-a-service.md).) Замените код, который возвращает метод Initialize() FirstPackage <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
+2.  Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем метод Initialize() VSPackage для этого, так как службы Visual Studio можно получить только после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: Доступ к службе](../extensibility/how-to-get-a-service.md).) Замените код, который возвращает метод Initialize() FirstPackage <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ ms.locfileid: "51773305"
 3.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
 4.  Откройте решение в экспериментальном экземпляре. Вы должны увидеть окно сообщения с текстом **первого пакета внутри Initialize()**.
-

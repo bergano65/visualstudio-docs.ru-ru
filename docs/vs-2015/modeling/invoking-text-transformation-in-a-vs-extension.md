@@ -1,23 +1,20 @@
 ---
 title: Вызов преобразования текста в расширении VS | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992352"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +139,7 @@ Sample text.
 ## <a name="reference-parameters"></a>Параметры ссылок  
  Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
  Создание текста из предварительно обработанного текстового шаблона  
  Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -151,6 +148,3 @@ Sample text.
   
  Создание исходного кода с возможностью последующей компиляции и выполнения  
  Вызовите метод `t4.PreprocessTemplate()` типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
-
-
-

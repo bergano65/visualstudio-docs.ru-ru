@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: Устранение неполадок в службах | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Устранение неполадок в службах | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8df01dcc2c8e15144f6049148286012bda6ac3f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980938"
 ---
-# <a name="how-to-troubleshoot-services"></a>Практическое: Устранение неполадок в службах
+# <a name="how-to-troubleshoot-services"></a>Практическое руководство. Устранение неполадок, связанных со службами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы.  
@@ -77,4 +72,3 @@ if (log == null) return;
  [Список доступных служб](../extensibility/internals/list-of-available-services.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)
-

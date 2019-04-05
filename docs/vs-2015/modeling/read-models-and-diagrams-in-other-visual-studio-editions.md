@@ -1,25 +1,22 @@
 ---
 title: Чтение моделей и схем в других выпусках Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980874"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,17 +57,14 @@ ms.locfileid: "51757359"
   
 ##  <a name="RelatedTopics"></a> Связанные разделы  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
-|[Схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)|На схеме слоев показана структура существующей или предложенной архитектуры. При создании кода его можно автоматически проверить относительно схемы слоев.|  
-|[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|На схеме деятельности показан поток работ в бизнес-процессе или программе.|  
-|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|Схема классов показывает типы и отношения, используемые во многих контекстах, например в коде, схемах баз данных, протоколах связи или глоссарии терминов, используемых для описания области бизнеса.|  
-|[Схемы компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md)|На схеме компонентов показаны отделимые части в структуре программы и их интерфейсы.|  
-|[UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)|На схеме последовательностей показаны взаимодействия между элементами в структуре программы.|  
-|[UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)|На схеме вариантов использования показаны пользователи системы и действия, которые они могут выполнять для достижения определенных целей.|  
+|[Схемы слоев: справочник](../modeling/layer-diagrams-reference.md)|На схеме слоев показана структура существующей или предложенной архитектуры. При создании кода его можно автоматически проверить относительно схемы слоев.|  
+|[Схемы активности UML: справочник](../modeling/uml-activity-diagrams-reference.md)|На схеме деятельности показан поток работ в бизнес-процессе или программе.|  
+|[Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)|Схема классов показывает типы и отношения, используемые во многих контекстах, например в коде, схемах баз данных, протоколах связи или глоссарии терминов, используемых для описания области бизнеса.|  
+|[Схемы компонентов UML: справочник](../modeling/uml-component-diagrams-reference.md)|На схеме компонентов показаны отделимые части в структуре программы и их интерфейсы.|  
+|[Схемы последовательностей UML: справочник](../modeling/uml-sequence-diagrams-reference.md)|На схеме последовательностей показаны взаимодействия между элементами в структуре программы.|  
+|[Схемы вариантов использования UML: справочник](../modeling/uml-use-case-diagrams-reference.md)|На схеме вариантов использования показаны пользователи системы и действия, которые они могут выполнять для достижения определенных целей.|  
   
 ## <a name="see-also"></a>См. также  
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)
-
-
-

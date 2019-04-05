@@ -1,14 +1,9 @@
 ---
-title: 'CA1309: Используйте порядковый параметр StringComparison | Документация Майкрософт'
-ms.custom: ''
+title: CA1309. Используйте порядковый параметр StringComparison | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
 - CA1309
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a239d8c40a07e92ee46c2d27bf3276e9b8bba2ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b491cf06528b67c96f90f314210e61800e0cab1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885033"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980114"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: используйте порядковый параметр StringComparison
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309. Используйте порядковый параметр StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,4 @@ ms.locfileid: "49885033"
  Его можно безопасно подавить предупреждение из этого правила, если библиотека или приложение предназначено для ограниченной локальной аудитории или в случаях, когда следует использовать семантику текущего языка и региональных параметров.
 
 ## <a name="see-also"></a>См. также
- [Предупреждения глобализации](../code-quality/globalization-warnings.md) [CA1307: укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
-
-
-
+ [Предупреждения глобализации](../code-quality/globalization-warnings.md) [CA1307: Укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
