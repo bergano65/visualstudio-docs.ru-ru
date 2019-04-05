@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: создать библиотеку действий рабочих процессов (для прежних версий) | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создать библиотеку действий рабочих процессов (для прежних версий) | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activity library projects
@@ -15,15 +12,15 @@ ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 622b4376ef90863697e13ae32005a9ad890ce2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989117"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Как создать библиотеку действий рабочих процессов (для прежних версий)
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Практическое руководство. Создание библиотеки действий рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта библиотеки действий рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>Создание проекта библиотеки действий рабочих процессов  
@@ -55,5 +52,5 @@ ms.locfileid: "49211472"
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Использование конструктора действия для прежних версий](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Действия рабочего процесса прежних версий](../workflow-designer/legacy-workflow-activities.md)   
- [Разработка действий рабочих процессов](http://msdn.microsoft.com/en-us/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Действия Windows Workflow Foundation](http://msdn.microsoft.com/en-us/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Разработка действий рабочих процессов](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Действия Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
