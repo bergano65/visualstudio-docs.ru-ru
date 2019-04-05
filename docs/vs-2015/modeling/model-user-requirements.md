@@ -1,12 +1,9 @@
 ---
 title: Моделирование требований пользователей | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776490"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002726"
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio помогает понимать и обсуждать потребности пользователей, а также информировать о них других. Для этого можно составлять схемы о деятельности пользователей и о том, как система помогает им в достижении целей. Модель требований — это набор этих схем, каждая из которых иллюстрирует отдельный аспект потребностей пользователей. Демонстрационные видеоматериалы см. в разделе [Моделирование бизнес-среды](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
+Visual Studio помогает понимать и обсуждать потребности пользователей, а также информировать о них других. Для этого можно составлять схемы о деятельности пользователей и о том, как система помогает им в достижении целей. Модель требований — это набор этих схем, каждая из которых иллюстрирует отдельный аспект потребностей пользователей. Демонстрационные видеоматериалы см. в разделе: [Моделирование бизнес-](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -92,8 +89,8 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Более подробные сведения о создании вариантов использования|[UML-схемы вариантов использования: правила работы](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Элементы схемы вариантов использования|[UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)|  
+|Более подробные сведения о создании вариантов использования|[Схемы вариантов использования UML: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Элементы схемы вариантов использования|[Схемы вариантов использования UML: справочник](../modeling/uml-use-case-diagrams-reference.md)|  
 |Разработка кода из вариантов использования|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Определение терминов для описания требований  
@@ -137,11 +134,11 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Более подробные сведения о нахождении классов требований|[UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)|  
-|Элементы концептуальной схемы классов|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|  
+|Более подробные сведения о нахождении классов требований|[Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|  
+|Элементы концептуальной схемы классов|[Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)|  
 |Разработка кода на основе концептуальных классов|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
- В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира. Следующее расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] делает ненаправленные стрелки стрелками по умолчанию: [Образец: возможности моделирования домена UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира. Следующие [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширение делает Ненаправленные стрелки стрелками по умолчанию: [Пример. Возможности моделирования домена UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.  
@@ -160,8 +157,8 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Более подробные сведения о нахождении и записи статических бизнес-правил|[UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)|  
-|Элементы концептуальной схемы классов|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|  
+|Более подробные сведения о нахождении и записи статических бизнес-правил|[Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|  
+|Элементы концептуальной схемы классов|[Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)|  
 |Разработка кода в соответствии с бизнес-правилами|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
@@ -185,7 +182,6 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Более подробные сведения о записи требований к качеству обслуживания|[Рекомендации по определению требований к качеству обслуживания](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Прикрепление дополнительных документов к вариантам использования|[Связывание варианта использования с документами и схемами](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Разработка кода в соответствии с требованиями к качеству обслуживания|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
@@ -206,8 +202,8 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Дополнительные сведения о способах определения рабочих бизнес-процессов|[UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Элементы схемы деятельности|[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|  
+|Дополнительные сведения о способах определения рабочих бизнес-процессов|[Схемы активности UML: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Элементы схемы деятельности|[Схемы активности UML: справочник](../modeling/uml-activity-diagrams-reference.md)|  
 |Разработка кода на основе схем деятельности|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Отображение взаимодействий между пользователями и системой  
@@ -223,8 +219,8 @@ Visual Studio помогает понимать и обсуждать потре
   
 |Сведения|Чтение|  
 |--------------------|----------|  
-|Дополнительные сведения о способах определения взаимодействий|[UML-схемы последовательностей: правила работы](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Элементы схемы последовательностей|[UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)|  
+|Дополнительные сведения о способах определения взаимодействий|[Схемы последовательностей UML: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Элементы схемы последовательностей|[Схемы последовательностей UML: справочник](../modeling/uml-sequence-diagrams-reference.md)|  
 |Разработка кода на основе схем последовательностей|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Использование модели для уменьшения числа несоответствий  
@@ -251,7 +247,4 @@ Visual Studio помогает понимать и обсуждать потре
  [Пример расширения VS: Раскраска UML-элементов по стереотипу](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Пример расширения VS: Связывание элементов UML со схемы, файлы и другие элементы](http://go.microsoft.com/fwlink/?LinkID=213813)   
  [Пример расширения VS: Выравнивание фигур на схеме UML](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [Видео: Моделирование бизнес-](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-
+ [Видео. Моделирование бизнес-](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
