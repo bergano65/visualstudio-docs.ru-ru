@@ -1,26 +1,21 @@
 ---
 title: Создание экземпляра базового редактора с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989541"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Создание экземпляра базового редактора с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +64,9 @@ ms.locfileid: "51765793"
   
  Если <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод возвращает ту же команду GUID как текстовый редактор, экземпляр базового редактора автоматически получает значение по умолчанию сочетания клавиш.  
   
- Общие сведения см. в разделе [Пошаговое руководство: создание базовым редактором и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Общие сведения см. в разделе [Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Пошаговое руководство. Создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
-
+ [Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

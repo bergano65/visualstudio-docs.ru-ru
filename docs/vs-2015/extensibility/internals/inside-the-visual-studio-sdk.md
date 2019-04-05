@@ -1,14 +1,9 @@
 ---
 title: Внутри Visual Studio SDK | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795834"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002867"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51795834"
  Оболочка Visual Studio предоставляет основные функциональные возможности и поддержки взаимодействия между его компонент пакетов VSPackage и расширения MEF. Дополнительные сведения см. в разделе [оболочки Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
 ## <a name="user-experience-guidelines"></a>Руководство по работе пользователей  
- Если вы планируете проектировать новые функции для Visual Studio, вы должны взгляните на эти рекомендации для разработки и удобства использования советы: [по работе пользователей Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Если вы планируете проектировать новые функции для Visual Studio, вы должны взгляните на эти рекомендации для разработки и удобства использования советы: [Рекомендации по пользовательскому интерфейсу Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Команды  
  Команды — это функции, которые выполняют задачи, например печать документа, обновление представления или создание нового файла.  
@@ -95,10 +90,10 @@ ms.locfileid: "51795834"
   
  Проекты могут также можно собирать в решении, — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проект и состояние сведения, относящиеся к решению хранится в двух файлов решения, файл текстовых решения (SLN) и решение двоичный файл пользовательских параметров (.suo). Эти файлы похожи на группы (.vbg) файлы, которые использовались в более ранних версиях [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], и рабочей области (DSW) и пользователем "Параметры" (.opt) файлов, которые использовались в более ранних версиях [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Дополнительные сведения см. в разделе [проекты](../../extensibility/internals/projects.md) и [решения](../../extensibility/internals/solutions.md).  
+ Дополнительные сведения см. в разделе [проекты](../../extensibility/internals/projects.md) и [решения](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Шаблоны проектов и элементов  
- Visual Studio включает предопределенных шаблонов проектов и шаблонов элементов проекта. Можно также создать собственные шаблоны или получить шаблоны от сообщества и последующее интегрирование их в Visual Studio. [Коллекции кода MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) — место, можно искать шаблоны и расширения.  
+ Visual Studio включает предопределенных шаблонов проектов и шаблонов элементов проекта. Можно также создать собственные шаблоны или получить шаблоны от сообщества и последующее интегрирование их в Visual Studio. [Коллекции кода MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) — место, можно искать шаблоны и расширения.  
   
  Шаблоны содержат структуры проекта и основные файлы, необходимые для создания определенного типа приложений, управления, библиотеки или класса. Для разработки программного обеспечения, похожий на один из шаблонов следует создать проект, основанный на шаблоне, а затем измените файлы в этом проекте.  
   
@@ -108,7 +103,7 @@ ms.locfileid: "51795834"
  Дополнительные сведения см. в разделе [добавление проектов и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Свойства и параметры  
- **Свойства** окне отображаются свойства одного или нескольких элементов: [расширение свойства](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборы параметров, которые относятся к конкретный компонент, например Программирование языка или VSPackage: [параметры и страницы параметров](../../extensibility/internals/options-and-options-pages.md). Функции, обычно связанные с пользовательского интерфейса, которые можно импортировать и экспортировать следующие значения: [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).  
+ **Свойства** окне отображаются свойства одного или нескольких элементов: [Расширение свойств](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборы параметров, которые относятся к конкретный компонент, например на языке программирования или VSPackage: [Параметры и страницы параметров](../../extensibility/internals/options-and-options-pages.md). Ниже перечислены функции, обычно связанные с пользовательского интерфейса, которые можно импортировать и экспортировать параметры. [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Службы Visual Studio  
  Служба предоставляет ряд интерфейсов для компонентов для использования. Visual Studio предоставляет набор служб, которые могут использоваться все компоненты, включая расширения. Например службы Visual Studio позволяют окна инструментов, чтобы быть показано или скрыто динамически, включить доступ к справке, строка состояния или события пользовательского интерфейса. В редакторе Visual Studio также предоставляет службы, которые можно импортировать, расширения редактора. Дополнительные сведения см. в разделе [использование и предоставление службы](../../extensibility/using-and-providing-services.md).  
@@ -133,4 +128,3 @@ ms.locfileid: "51795834"
   
 ## <a name="help-viewer"></a>Help Viewer  
  Вы можете интегрировать свои собственные справки и F1 страниц в окне справки. Дополнительные сведения см. в разделе [средстве просмотра справки Microsoft SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

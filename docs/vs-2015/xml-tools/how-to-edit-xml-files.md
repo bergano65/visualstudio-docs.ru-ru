@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: изменять XML-файлы | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изменять XML-файлы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991150"
 ---
-# <a name="how-to-edit-xml-files"></a>Как изменять XML-файлы
+# <a name="how-to-edit-xml-files"></a>Практическое руководство. изменять XML-файлы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -60,7 +55,7 @@ ms.locfileid: "49245301"
   
 2.  Выберите **XML-файл** создать новый XML-файл; или выберите **XSLT-файл** для создания новой таблицы стилей XSLT.  
   
-3.  Нажмите кнопку **откройте**.  
+3.  Нажмите кнопку **Открыть**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Создание проекта для XML-файлов  
   
@@ -77,7 +72,4 @@ ms.locfileid: "49245301"
 ## <a name="see-also"></a>См. также  
  [Редактор XML](../xml-tools/xml-editor.md)   
  [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)   
- [Как создать XML-схему из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-
+ [Практическое руководство. Создание схемы XML из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

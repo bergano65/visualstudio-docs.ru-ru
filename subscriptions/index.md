@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Добро пожаловать в подписки Visual Studio
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322602"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.

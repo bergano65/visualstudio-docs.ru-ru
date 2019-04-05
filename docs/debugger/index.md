@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Отладка приложений | Документация Майкрософт
-description: 'Узнайте, как с помощью Visual Studio отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке.'
+description: Узнайте, как с помощью Visual Studio отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322081"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 

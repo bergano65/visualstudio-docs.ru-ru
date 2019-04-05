@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 99bf3def61b46bd89bd63df56b4ee4897bd0cac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 499eeefc4b5328d1ffe021cdf28483208d162471
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739803"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001942"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,14 +46,11 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

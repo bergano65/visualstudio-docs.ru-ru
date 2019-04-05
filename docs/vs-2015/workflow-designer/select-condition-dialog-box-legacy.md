@@ -1,11 +1,8 @@
 ---
 title: Выберите диалоговое окно «условие» (для прежних версий) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992767"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Диалоговое окно «Выбор условия» (для прежних версий)
 Здесь описывается, как использовать **выбрать условие** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +33,7 @@ ms.locfileid: "49897775"
   
 - [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  Сведения о доступе к **выбрать условие** диалоговом окне см. в разделе [как: создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Сведения о доступе к **выбрать условие** диалоговом окне см. в разделе [как: Создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
   В следующей таблице описаны элементы пользовательского интерфейса (UI) **выбрать условие** диалоговое окно.  
   
@@ -55,7 +52,7 @@ ms.locfileid: "49897775"
   
 ## <a name="see-also"></a>См. также  
  [Диалоговое окно «Редактор условий для правил» (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Практическое: создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [Практическое руководство. Создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [Использование условий в рабочих процессах](http://go.microsoft.com/fwlink?LinkID=65009)   
  [Использование действия ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
  [Использование действия IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   

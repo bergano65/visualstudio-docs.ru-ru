@@ -1,25 +1,20 @@
 ---
 title: XML-фрагменты | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992147"
 ---
 # <a name="xml-snippets"></a>XML-фрагменты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,20 +41,17 @@ XML Editor содержит возможность, называемую *XML-ф
   
  Существует два способа вставки фрагментов. **Вставить фрагмент** команда вставляет фрагмент кода XML в позиции курсора. **Окружить** команда создает оболочку для XML-фрагмент вокруг выбранного текста. Обе команды доступны либо из **IntelliSense** подменю **изменить** меню или в контекстном меню редактора.  
   
- Дополнительные сведения см. в разделе [как: использование XML-фрагменты](../xml-tools/how-to-use-xml-snippets.md).  
+ Дополнительные сведения см. в разделе [Как Использовать XML-фрагменты](../xml-tools/how-to-use-xml-snippets.md).  
   
 ## <a name="schema-generated-xml-snippets"></a>XML-фрагменты, сформированные схемой  
- XML Editor также может создавать XML-фрагменты из XML-схем. Эта возможность позволяет заполнять элементы XML-элементами, созданными из информации схемы для этого элемента.  
+ XML Editor также может создавать XML-фрагменты из XML-схем. Эта функция позволяет заполнять элементы XML-элементами, созданными из информации схемы для этого элемента.  
   
- Дополнительные сведения см. в разделе [как: создания XML фрагмент из схемы XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
+ Дополнительные сведения см. в разделе [Как Создание XML-фрагмент из схемы XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
   
 ## <a name="create-new-xml-snippets"></a>Создание новых XML-фрагментов  
  Кроме фрагментов, которые входят в состав [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio по умолчанию, можно также создать и использовать собственные XML-фрагменты.  
   
- Дополнительные сведения см. в разделе [как: Создание XML-фрагменты](../xml-tools/how-to-create-xml-snippets.md).  
+ Дополнительные сведения см. в разделе [Как Создание XML-фрагментов](../xml-tools/how-to-create-xml-snippets.md).  
   
 ## <a name="see-also"></a>См. также  
  [XML-редактор](../xml-tools/xml-editor.md)
-
-
-

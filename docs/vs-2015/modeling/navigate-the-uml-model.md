@@ -1,25 +1,22 @@
 ---
 title: Навигация по модели UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990425"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51727775"
   
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.  
   
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Больше 1 означает, что свойство .NET имеет тип максимальная кратность: `IEnumerable<` *тип*`>`.  
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Максимальное значение кратности больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*Тип*`>`.  
   
  Дополнительные сведения о просмотре связей см. в разделе [переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727775"
   
  Каждый элемент модели создается с владельцем. Дополнительные сведения см. в разделе [создание элементов и отношений в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Схема классов: модель, схема, фигура и элемент](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Схема классов: Модель, схема, фигура и элемент](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Фигуры и схемы  
  В модели UML элементы можно отобразить на схемах. На разных типах схем могут отображаться различные подтипы IElement.  
@@ -123,7 +120,7 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам  
- Можно выполнить следующие действия.  
+ Можно выполнить следующие действия:   
   
 -   Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)
-
-
-

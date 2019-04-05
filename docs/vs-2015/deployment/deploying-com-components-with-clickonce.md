@@ -1,14 +1,9 @@
 ---
 title: Развертывание компонентов COM с помощью ClickOnce | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820295"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002758"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820295"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] обеспечивает простой и безопасный механизм для развертывания приложений .NET. Тем не менее если приложения используют старыми COM-компонентами, необходимо будет выполнить дополнительные действия для его развертывания. В этом разделе описывается, как развертывать изолированные компоненты COM и ссылаться на собственные компоненты (например, из Visual Basic 6.0 или Visual C++).  
   
- Дополнительные сведения о развертывании изолированные компоненты COM, см. в статье «Упрощение развертывания приложений с [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] и COM без регистрации» в [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Дополнительные сведения о развертывании изолированные компоненты COM, см. в статье «Упрощение развертывания приложений с [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] и COM без регистрации» в [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>COM без регистрации  
  Без регистрации COM — это новая технология развертывания и активации изолированных COM-компонентов. Технологии библиотеки типов компонента и сведения о регистрации, обычно устанавливается в системном реестре в XML-файл, называемый манифестом, хранящихся в той же папке, что и приложение.  
@@ -145,7 +140,7 @@ ms.locfileid: "49820295"
   
 2. В мастере публикации укажите расположение на диске локального компьютера, где можно получить доступ к и проверить опубликованные файлы.  
   
-3. Нажмите кнопку **Готово** для публикации приложения.  
+3. Нажмите кнопку **Готово**, чтобы опубликовать приложение.  
   
    Если посмотреть на опубликованные файлы, можно заметить, что файл sysmon.ocx включен. Элемент управления полностью изолирован данного приложения, это означает, что если на компьютере конечного пользователя установлено другое приложение, с помощью другой версии элемента управления, он не влияет на это приложение.  
   
@@ -171,7 +166,7 @@ ms.locfileid: "49820295"
   
 - Физические или виртуальные устройства для системы, например, драйвер устройства для диспетчера очереди печати управляет компонент.  
   
-- Компонент — распространяемый компонент доступа к данным. Данные приложения обычно требуется отдельный доступ к данным распространяемый должны быть установлены до их выполнения. Не следует пытаться изолировать компоненты, такие как элемент управления данными Microsoft ADO, OLE DB для Microsoft или Microsoft Data Access Components (MDAC). Вместо этого Если приложение использует компоненты MDAC или SQL Server Express, необходимо устанавливать их как необходимые компоненты; см. в разделе [как: Установка необходимых компонентов в дистрибутив приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Компонент — распространяемый компонент доступа к данным. Данные приложения обычно требуется отдельный доступ к данным распространяемый должны быть установлены до их выполнения. Не следует пытаться изолировать компоненты, такие как элемент управления данными Microsoft ADO, OLE DB для Microsoft или Microsoft Data Access Components (MDAC). Вместо этого Если приложение использует компоненты MDAC или SQL Server Express, необходимо устанавливать их как необходимые компоненты; см. в разделе [как: Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   В некоторых случаях возможно для разработчика компонента, изменить его для объектов COM без регистрации Если это невозможно, можно по-прежнему создавать и публиковать приложения, зависящие от них через стандартную схему регистрации с помощью загрузчика. Дополнительные сведения см. в разделе [создание пакетов загрузчика](../deployment/creating-bootstrapper-packages.md).  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820295"
   
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: Добавление проверки в классы сущностей | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавление проверки в классы сущностей | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990052"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Практическое: Добавление проверки в классы сущностей
+# <a name="how-to-add-validation-to-entity-classes"></a>Практическое руководство. Добавление проверки в классы сущностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -37,7 +34,7 @@ ms.locfileid: "49812764"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Для проверки данных при изменении значений столбца  
   
-1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
+1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните по файлу **.dbml** в **Обозревателе решений**.)  
   
 2. В конструкторе O/R, щелкните правой кнопкой мыши класс, для которого вы хотите добавить проверку, а затем нажмите кнопку **Просмотр кода**.  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49812764"
   
 4. Для проектов Visual Basic:  
   
-   1. Разверните **имя метода** списка.  
+   1. Разверните список **Имя метода**.  
   
    2. Найдите **на**_COLUMNNAME_**Changing** метод для столбца, который вы хотите добавить проверку.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49812764"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Для добавления проверки во время обновления в классе сущностей  
   
-1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
+1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните по файлу **.dbml** в **Обозревателе решений**.)  
   
 2. Щелкните правой кнопкой мыши пустую область в конструкторе O/R и нажмите кнопку **Просмотр кода**.  
   
@@ -96,7 +93,7 @@ ms.locfileid: "49812764"
   
 4. Для проектов Visual Basic:  
   
-   1. Разверните **имя метода** списка.  
+   1. Разверните список **Имя метода**.  
   
    2. Нажмите кнопку **обновление**_ENTITYCLASSNAME_.  
   
@@ -132,4 +129,3 @@ ms.locfileid: "49812764"
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Проверка данных](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
-

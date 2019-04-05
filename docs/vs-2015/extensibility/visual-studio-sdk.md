@@ -1,14 +1,9 @@
 ---
 title: Пакет SDK для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758973"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002638"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51758973"
   
 - Добавление пользовательского типа проекта  
   
-- Миллионы разработчиков с помощью коллекции Visual Studio  
+- Миллионы разработчиков с помощью Visual Studio Marketplace  
   
   Если вы не написали ни расширение Visual Studio, прежде чем, вы увидите Дополнительные сведения об этих функциях, а также в [начинается разработка расширений Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -61,7 +56,7 @@ ms.locfileid: "51758973"
  Воспользоваться преимуществами [каталог и служба образов](../extensibility/image-service-and-catalog.md) управления отличный образами и поддержку высокое разрешение и темы.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Поиск и установку существующие расширения Visual Studio  
- Вы найдете расширений Visual Studio в **расширения и обновления** диалоговое окно на **средства** меню. Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Также можно найти расширения в [коллекции Visual Studio](https://visualstudiogallery.msdn.microsoft.com/)  
+ Вы найдете расширений Visual Studio в **расширения и обновления** диалоговое окно на **средства** меню. Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Также можно найти расширения в [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Справочник по пакету SDK для Visual Studio  
  Вы найдете ссылку на API пакета SDK для Visual Studio по [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
@@ -82,8 +77,8 @@ ms.locfileid: "51758973"
   
 ## <a name="see-also"></a>См. также  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Практическое: перенос проектов расширяемости в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [ВОПРОСЫ И ОТВЕТЫ: Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
  [Добавление команд на панели инструментов](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ ms.locfileid: "51758973"
  [Поддержка пакета SDK для Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Архив](../extensibility/archive.md)   
  [Справочник по пакету SDK для Visual Studio](../extensibility/visual-studio-sdk-reference.md)
-

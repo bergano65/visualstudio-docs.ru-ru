@@ -1,12 +1,9 @@
 ---
 title: Чтение XML-данных в набор данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978998"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET предоставляет простые методы для работ
 5.  Добавление кода для отображения XML-схемы на основе XML файла в <xref:System.Windows.Forms.TextBox> элемента управления  
   
 > [!NOTE]
->  Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Создание нового проекта  
  На этом шаге создайте проект Visual Basic или Visual C#, содержащий в этом пошаговом руководстве.  
@@ -172,7 +169,7 @@ ADO.NET предоставляет простые методы для работ
     |Элемент управления|Свойство.|Параметр|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
-    ||**Полосы прокрутки**|**По вертикали**|  
+    ||**ScrollBars**|**По вертикали**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET предоставляет простые методы для работ
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Проверить форму  
- Теперь можно проверить форму, чтобы убедиться, что она правильно работает.  
-  
-#### <a name="to-test-the-form"></a>Чтобы проверить форму  
+
+Теперь можно проверить форму, чтобы убедиться, что она правильно работает.
   
 1.  Выберите **F5** для запуска приложения.  
   
@@ -243,15 +239,15 @@ ADO.NET предоставляет простые методы для работ
      Текстовое поле отображает схему XML для XML-файле.  
   
 ## <a name="next-steps"></a>Следующие шаги  
- В этом пошаговом руководстве вы научитесь основам считывание XML-файл в набор данных, а также для создания схемы на основе содержимого XML-файла. Ниже приведены некоторые задачи, которые могут делать дальше.  
+
+В этом пошаговом руководстве вы научитесь основам считывание XML-файл в набор данных, а также для создания схемы на основе содержимого XML-файла. Ниже приведены некоторые задачи, которые могут делать дальше.  
   
 -   Изменение данных в наборе данных и сохранение их в виде XML. Дополнительные сведения см. в разделе <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Измените данные в наборе данных и записать его в базу данных. Дополнительные сведения см. в разделе [сохранение данных](../data-tools/saving-data.md).  
+-   Измените данные в наборе данных и записать его в базу данных.
   
 ## <a name="see-also"></a>См. также  
- [Примеры работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Пошаговые руководства работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Подготовка приложения для получения данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

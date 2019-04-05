@@ -1,14 +1,9 @@
 ---
-title: 'CA1031: Не перехватывайте типы общих исключений | Документация Майкрософт'
-ms.custom: ''
+title: CA1031. Не перехватывайте типы общих исключений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1031
 - DoNotCatchGeneralExceptionTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2548fe0e54e57e4374f8ae92e9d43302df419aa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3133ea902717f4fea15cfb66b8d0050f7a538940
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991278"
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: не перехватывайте типы общих исключений
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031. Не перехватывайте типы общих исключений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,7 +55,4 @@ ms.locfileid: "49940194"
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/vb/FxCop.Design.ExceptionAndSystemException.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2200: следует повторно вызывать исключение для сохранения сведений о стеке](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
-
-
-
+ [CA2200: Исключение для сохранения сведений о стеке](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

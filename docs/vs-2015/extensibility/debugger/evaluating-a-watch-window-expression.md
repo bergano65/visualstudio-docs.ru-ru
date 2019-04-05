@@ -1,14 +1,9 @@
 ---
 title: Вычисление выражения окна контрольных значений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4dc9a56927ebe1e7b962ab815eb34028ba75350c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991772"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Вычисление выражения окна контрольных значений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51801480"
 7.  Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для получения значения выражения, которое отображается в списке отслеживания.  
   
 ## <a name="parse-then-evaluate"></a>Синтаксический анализ, а затем оценить  
- Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два этапа: (1) синтаксический анализ выражения и (2) оценить проанализированное выражение. Таким образом, вычисление может выполняться много раз, но выражение необходимо выполнить синтаксический анализ только один раз. Промежуточные проанализированное выражение возвращается из EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь инкапсулированы и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объект откладывает все оценку для `IDebugParsedExpression` объекта.  
+ Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два этапа: (1) синтаксический анализ выражения и 2) оценить проанализированное выражение. Таким образом, вычисление может выполняться много раз, но выражение необходимо выполнить синтаксический анализ только один раз. Промежуточные проанализированное выражение возвращается из EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь инкапсулированы и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объект откладывает все оценку для `IDebugParsedExpression` объекта.  
   
 > [!NOTE]
 >  Это необходимо для EE придерживаться Этот двухэтапный процесс, несмотря на то, что Visual Studio предполагается, что это; EE позволяет анализировать и оценивать в одном шаге при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это как работает этот пример MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, когда многие просмотреть выражений появляются.  
@@ -67,4 +62,3 @@ ms.locfileid: "51801480"
   
 ## <a name="see-also"></a>См. также  
  [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

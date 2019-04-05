@@ -1,14 +1,9 @@
 ---
 title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b0b766c9064f8a6f6f09036d602365d37a9174dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990043"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51769709"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -96,4 +91,3 @@ ms.locfileid: "51769709"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-

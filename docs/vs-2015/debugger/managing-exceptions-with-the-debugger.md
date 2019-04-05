@@ -1,14 +1,9 @@
 ---
 title: Управление исключениями с помощью отладчика | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992884"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Управление исключениями с помощью отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +98,7 @@ ms.locfileid: "51769999"
    goodbye  
    ```  
   
-    Но в ней не отображается строка `here`.  
+    Но в ней не отображается строка `here` .  
   
 2. Консольное приложение C# ссылается на библиотеку классов с классом, который имеет два метода — метод, создающий исключение и обрабатывающий его, и второй метод, создающий то же исключение и не обрабатывающий его.  
   
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>См. также  
  [Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)   
- [Практическое: анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Практическое: проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)   
+ [Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)   
  [Использование среды выполнения проверки без библиотеки времени выполнения C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Помощник по исключениям](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Основы отладки](../debugger/debugger-basics.md)
-
-
-
-
-

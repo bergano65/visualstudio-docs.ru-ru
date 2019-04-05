@@ -1,14 +1,9 @@
 ---
 title: IDiaPropertyStorage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f59e0a2ee5c0ae82cfcf4ea56cc7095b21b8719e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de0ab486d74e0e8ad3774a65a0b430523c0ac491
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989916"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDiaPropertyStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaPropertyStorage`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Получает указатель на перечислитель для свойств в этом наборе.|  
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Считывает `BOOL` значения в наборе свойств.|  
@@ -128,14 +123,14 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
@@ -145,6 +140,3 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

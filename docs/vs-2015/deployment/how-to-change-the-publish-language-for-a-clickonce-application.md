@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: изменение языка публикации для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изменение языка публикации для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2330f234b5b00fdde99376fbe5664bd5dbd99551
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 34f86760fdede4efa84bc069c0ed9c92bf6740bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992785"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Практическое руководство. Изменение языка публикации для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ ms.locfileid: "49239661"
  `Publish language` Может быть установлено **параметры публикации** окне доступен из **публикации** странице **конструктор проектов**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-publish-language"></a>Чтобы изменить язык публикации  
   
 1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2.  Перейдите на вкладку **Публикация**.  
   
 3.  Нажмите кнопку **параметры** кнопку, чтобы открыть **параметры публикации** диалоговое окно.  
   
@@ -54,6 +49,3 @@ ms.locfileid: "49239661"
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

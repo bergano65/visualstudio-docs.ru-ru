@@ -1,27 +1,22 @@
 ---
 title: Средство синтаксического анализа устаревший языковой службы и сканер | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990714"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Типы средств синтаксического анализа  
  Средства синтаксического анализа языка службы не является таким же, как средство синтаксического анализа, используемые в рамках одного компилятора. Тем не менее такого рода средство синтаксического анализа необходимо использовать средство синтаксического анализа и сканер в так же, как средство синтаксического анализа компилятора.  
   
-- Сканер используется для определения типов токенов. Эта информация используется для выделения синтаксиса, а также для быстрого определения типов токенов, вызывать другие операции, например, парные фигурные скобки. После этого средство проверки представленного <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс.  
+- Сканер используется для определения типов токенов. Эти данные используется для выделения синтаксиса и для быстрого определения типов токенов, способных вызывать другие операции, например, проверку соответствия фигурных скобок. После этого средство проверки представленного <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс.  
   
 - Средство синтаксического анализа используется для описания функций и области токенов. Эта информация используется в операции IntelliSense для идентификации элементов языка, таких как методы, переменные, параметры и объявления и приведены списки элементов и подписи методов, на основе контекста. Это средство синтаксического анализа также используется для поиска соответствия пар элементов языка, таких как фигурные скобки и круглые скобки. Это средство синтаксического анализа осуществляется через <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса.  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Договорились.  
   
 ### <a name="summary"></a>Сводка  
- Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(…)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, следующим образом: сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
+ Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(…)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, как показано ниже: Сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
   
  Дополнительные сведения см. в разделе [парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Общие сведения о службе устаревшего языка](../../extensibility/internals/legacy-language-service-overview.md)   
  [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

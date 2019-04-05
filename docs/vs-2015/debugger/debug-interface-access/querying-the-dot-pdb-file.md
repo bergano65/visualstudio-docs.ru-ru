@@ -1,14 +1,9 @@
 ---
 title: Запрос. PDB-файл | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f82180427155a364ad4240eeede0503e99857f80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e0f08256d8852e707c3f6acf37ed6addc2ef831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793267"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989918"
 ---
 # <a name="querying-the-pdb-file"></a>Запрос PDB-файла
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Файл базы данных программы (с расширением PDB) — это двоичный файл, который содержит тип и символьную отладочную информацию, собранные в ходе компиляции и компоновки проекта. PDB-файл создается при компиляции программы C/C++ с **/ZI** или **/ZI** или [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], или [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] программировать **/debug** параметр. Объектные файлы содержат ссылки в PDB-файла для отладочной информации. Дополнительные сведения о PDB-файлы, см. в разделе [PDB-файлы](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Приложения доступа к интерфейсу отладки можно использовать следующие общие действия для получения сведений о различных символов, объекты и элементы данных в исполняемый образ.  
+Файл базы данных программы (с расширением PDB) — это двоичный файл, который содержит тип и символьную отладочную информацию, собранные в ходе компиляции и компоновки проекта. PDB-файл создается при компиляции программы C/C++ с **/ZI** или **/ZI** или [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], или [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] программировать **/debug** параметр. Объектные файлы содержат ссылки в PDB-файла для отладочной информации. Дополнительные сведения о PDB-файлы, см. в разделе [PDB-файлы](http://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f). Приложения доступа к интерфейсу отладки можно использовать следующие общие действия для получения сведений о различных символов, объекты и элементы данных в исполняемый образ.  
   
 ### <a name="to-query-the-pdb-file"></a>Запрос PDB-файла  
   
@@ -100,6 +95,3 @@ ms.locfileid: "51793267"
   
 ## <a name="see-also"></a>См. также  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Создание текста во время выполнения с помощью текстовых шаблонов T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920135"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002446"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Наследование между текстовыми шаблонами времени выполнения  
  Вы можете делиться содержимым между шаблонами времени выполнения путем написания шаблон базового класса, который может быть абстрактным. Используйте `inherits` параметр `<@#template#>` директиву, чтобы ссылаться на другой класс шаблона среды выполнения.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Шаблон наследования: фрагменты в базовых методах  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Шаблон наследования: Фрагменты в базовых методов  
  В шаблон, используемый в приведенный ниже пример Обратите внимание на следующее:  
   
 - Базовый класс `SharedFragments` определяет методы в блоки возможностей класса `<#+ ... #>`.  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>См. также  
- Шаблоны времени разработки: Если вы хотите использовать шаблон для создания кода, становится частью приложения, см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+ Шаблоны времени разработки: Если вы хотите использовать шаблон для создания кода, который становится частью приложения, см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
  Шаблоны среды выполнения может использоваться в любом приложении, где шаблоны и их содержимое определяются во время компиляции. Но если вы хотите написать [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширение, которое создает текст из шаблонов, изменять во время выполнения, см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
 ## <a name="see-also"></a>См. также  
  [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)   
- [Основные сведения о T4: Предварительно обработанные текстовые шаблоны, Олег Сыч](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Основные сведения о T4: Предварительно обработанные текстовые шаблоны, Олег Сыч](https://github.com/olegsych/T4Toolbox)
