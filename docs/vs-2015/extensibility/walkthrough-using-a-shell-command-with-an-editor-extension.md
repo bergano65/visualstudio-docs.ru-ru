@@ -1,26 +1,21 @@
 ---
-title: 'Пошаговое руководство: Использование командной оболочки в расширении редактора | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Использование командной оболочки в расширении редактора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978852"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Пошаговое руководство. Использование командной оболочки в расширении редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -261,7 +256,7 @@ ms.locfileid: "51773045"
     }  
     ```  
   
-## <a name="adding-an-iwpftextviewcreationlistener"></a>Добавление IWpfTextViewCreationListener  
+## <a name="adding-an-iwpftextviewcreationlistener"></a>Adding an IWpfTextViewCreationListener  
  <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> — Это часть компонентов MEF, можно использовать для ожидания передачи данных, чтобы просмотреть события создания.  
   
 1.  Добавьте файл класса в проект CommentAdornmentTest и назовите его `Connector`.  
@@ -729,5 +724,4 @@ ms.locfileid: "51773045"
      Fourscore...  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

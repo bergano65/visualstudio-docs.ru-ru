@@ -1,34 +1,29 @@
 ---
 title: Проект сохраняемости | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ff836f56601adeba7b3df675207701f6e2d6e7fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729562"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002931"
 ---
 # <a name="project-persistence"></a>Сохранение проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Основные проектные сохраняемости важно для вашего проекта. Большинство проектов использовать элементы проектов, которые представляют файлы; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] также поддерживает проекты, данные, не являющиеся файловыми. Должны сохраняться файлы, принадлежащие проекта и файл проекта. Интегрированная среда разработки указывает, что проект, чтобы сохранить само себя или элемента проекта.  
   
- Шаблоны для проектов, передаются на фабрику проектов. Шаблоны должен поддерживать инициализацию всех элементов проекта в соответствии с требованиями проекта определенного типа. Позже эти шаблоны можно сохранить с файлами проекта и управляет интегрированной среды разработки через решение. Дополнительные сведения см. в разделе [создание экземпляров с помощью проекта фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) и [решения](../../extensibility/internals/solutions.md).  
+ Шаблоны для проектов, передаются на фабрику проектов. Шаблоны должен поддерживать инициализацию всех элементов проекта в соответствии с требованиями проекта определенного типа. Позже эти шаблоны можно сохранить с файлами проекта и управляет интегрированной среды разработки через решение. Дополнительные сведения см. в разделе [создание экземпляров с помощью проекта фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) и [решения](../../extensibility/internals/solutions-overview.md).  
   
  Элементы проекта может быть копирование файла или не являющиеся файловыми:  
   
@@ -52,4 +47,3 @@ ms.locfileid: "51729562"
 ## <a name="see-also"></a>См. также  
  [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

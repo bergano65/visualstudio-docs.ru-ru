@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: Включение и отключение (реляционный конструктор объектов) плюрализации | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Включение и отключение (реляционный конструктор объектов) плюрализации | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979182"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Практическое: Включение и отключение (реляционный конструктор объектов) плюрализации
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Практическое руководство. Включение и отключение преобразования во множественную форму (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,12 +31,12 @@ ms.locfileid: "49279114"
   
 1.  В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  В **параметры** диалоговом окне разверните **инструменты для баз данных**.  
+2.  В диалоговом окне **Параметры** разверните пункт **Инструменты базы данных**.  
   
 > [!NOTE]
->  Выберите **Показать все параметры** Если **инструменты для баз данных** узла не отображается.  
+>  Выберите команду **Показать все настройки**, если узел **Средства базы данных** не виден.  
   
-1.  Нажмите кнопку **реляционный конструктор объектов**.  
+1.  Щелкните **Реляционный конструктор объектов**.  
   
 2.  Задайте **Плюрализация имен** для **включено** = **False** присвоить [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] таким образом, чтобы имена классов не изменялись.  
   
@@ -49,4 +46,3 @@ ms.locfileid: "49279114"
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Функция SccGet | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980220"
 ---
 # <a name="sccget-function"></a>Функция SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Успешное выполнение операции get.|  
 |SCC_E_FILENOTCONTROLLED|Файл не существует в системе управления версиями.|  
@@ -110,4 +105,3 @@ SCCRTN SccGet(
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [Битовые флаги, используемые конкретными командами](../extensibility/bitflags-used-by-specific-commands.md)
-

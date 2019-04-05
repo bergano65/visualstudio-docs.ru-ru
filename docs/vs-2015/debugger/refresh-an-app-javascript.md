@@ -1,14 +1,9 @@
 ---
 title: Обновление приложения (JavaScript) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990219"
 ---
 # <a name="refresh-an-app-javascript"></a>Обновление приложения (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "51722896"
   
 2.  Открыв шаблон в Visual Studio, выберите целевой объект отладки.  
   
-     Если вашим текущим запускаемым проектом является проект Windows Phone, выберите эмулятор Windows Phone для целевого объекта отладки. В противном случае выберите **симулятор** или **локальный компьютер**.  
+     Если вашим текущим запускаемым проектом является проект Windows Phone, выберите эмулятор Windows Phone для цели отладки. В противном случае выберите **симулятор** или **локальный компьютер**.  
   
      ![Список целевых объектов отладки выберите](../debugger/media/js-select-target.png "JS_Select_Target")  
   
@@ -83,12 +78,9 @@ ms.locfileid: "51722896"
     Hello!  
     ```  
   
-7.  Нажмите кнопку **обновить Windows приложение** кнопку, которая выглядит следующим образом: ![кнопкой "Обновить Windows-приложение"](../debugger/media/js-refresh.png "JS_Refresh"). (Или нажмите клавишу F4.)  
+7.  Нажмите кнопку **обновить Windows приложение** кнопку, которая выглядит следующим образом: ![Кнопка приложения Windows "Обновить"](../debugger/media/js-refresh.png "JS_Refresh"). (Или нажмите клавишу F4.)  
   
 8.  Перейдите в приложение. Приложение перезапускается без перезапуска отладчика, и отображается новый заголовок.  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

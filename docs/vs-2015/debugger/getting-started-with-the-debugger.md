@@ -1,13 +1,8 @@
 ---
 title: Приступая к работе с отладчиком | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,13 +13,13 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771606"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980263"
 ---
 # <a name="getting-started-with-the-debugger"></a>Начало работы с отладчиком
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51771606"
 Отладчик Visual Studio можно легко использовать на любом языке. Здесь будет показано, как выполнить отладку простой программы C#, но вы можете применить те же действия к коду на других языках, например к C++ и JavaScript.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
- Давайте начнем с простого консольного приложения C# (**файл / создать / проект**, а затем выберите **Visual C#** , а затем выберите **консольное приложение**). Если вы никогда не работали с Visual Studio, см. в разделе [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
+ Давайте начнем с простого консольного приложения C# (**файл / создать / проект**, а затем выберите **Visual C#** , а затем выберите **консольное приложение**). Если вы никогда не работали с Visual Studio, см. в разделе [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -98,8 +93,3 @@ private static void Method1()
  Остановить отладку и снова запустите и когда выполнение остановится в точке останова, щелкните **Отладка | Шаг Over** (или **шаг с обходом** на панели инструментов или **F10**). Выполнение снова остановится в строке `Console.WriteLine("end");`.  
   
  Если вы хотите узнать больше о перемещение по коду с помощью отладчика, см. в разделе [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).
-
-
-
-
-

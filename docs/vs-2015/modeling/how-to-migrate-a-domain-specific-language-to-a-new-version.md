@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: перенос доменного языка в новой версии | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Перенос доменного языка в новой версии | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991857"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос предметно-ориентированного языка в новую версию
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете перенести проекты, определение и использование предметно ориентированного языка для [!INCLUDE[vs2010](../includes/vs2010-md.md)] из версии [!INCLUDE[dsl](../includes/dsl-md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -28,7 +25,7 @@ ms.locfileid: "49844475"
   
  Необходимо запустить средство миграции явным образом: она не запускается автоматически при открытии решения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Средства и подробные руководства можно найти по этому пути:  
   
- **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Перед переносом проекты DSL  
  Средство миграции изменяет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файлы проекта (**.csproj**) и файлы решений (**.sln**).  
@@ -47,7 +44,7 @@ ms.locfileid: "49844475"
   
    -   Дважды щелкните средство в проводнике Windows (или проводника) или запустите средство из командной строки. Средство находится в этом расположении:  
   
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2. Выберите папку, содержащую решения и проекты, которые требуется преобразовать.  
   
@@ -81,7 +78,7 @@ ms.locfileid: "49844475"
    2.  Нажмите кнопку **преобразовать все шаблоны** кнопку в заголовке обозревателя решений.  
   
        > [!NOTE]
-       >  Это можно сделать ненужные. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Это можно сделать ненужные. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Обновите пользовательский код в преобразованные проекты.  
   
@@ -91,6 +88,3 @@ ms.locfileid: "49844475"
   
 ## <a name="see-also"></a>См. также  
  [Новые возможности пакета SDK визуализации и моделирования](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

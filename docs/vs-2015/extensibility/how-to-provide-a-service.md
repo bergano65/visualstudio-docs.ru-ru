@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: предоставить службу | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Предоставляет службу | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980514"
 ---
-# <a name="how-to-provide-a-service"></a>Практическое: предоставить службу
+# <a name="how-to-provide-a-service"></a>Практическое руководство. Предоставление службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 VSPackage может предоставлять службы, которые можно использовать в других пакетов VSPackage. Для предоставления службы, VSPackage должен зарегистрировать службу с помощью Visual Studio и добавить службу.  
@@ -146,7 +141,6 @@ VSPackage может предоставлять службы, которые м�
      Значение `helloString` должно быть «Hello».  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Получение службы](../extensibility/how-to-get-a-service.md)   
+ [Практическое руководство. Получение службы](../extensibility/how-to-get-a-service.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)
-

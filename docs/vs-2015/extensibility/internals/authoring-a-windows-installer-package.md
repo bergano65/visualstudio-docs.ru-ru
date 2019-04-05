@@ -1,27 +1,22 @@
 ---
 title: Создание пакета установщика Windows | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742644"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002811"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,8 +49,7 @@ ms.locfileid: "51742644"
   
    Набор инструментов построения пакетов установщика Windows из исходных файлов XML. Набор инструментов — это проект открытым кодом Майкрософт. Вы можете скачать исходный код и исполняемые файлы из [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], см. в разделе [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], см. в разделе [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

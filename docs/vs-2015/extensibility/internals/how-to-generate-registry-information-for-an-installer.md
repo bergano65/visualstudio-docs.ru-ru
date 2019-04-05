@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: создание сведений реестра для установщика | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание сведений реестра для установщика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612b8eda676b7e27b226a99e04e7298df8c8fab7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782639"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002659"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое: создание сведений реестра для установщика
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое руководство. Создание сведений реестра для установщика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Служебную программу RegPkg.exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест могут быть включены в установочный пакет установщика Windows. RegPkg также можно создать файл, которое может быть включено в исходном файле установки на основе [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -188,6 +183,5 @@ ms.locfileid: "51782639"
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Регистрация пакетов VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Регистрация пакетов VSPackage](registering-vspackages.md)   
  [Пакеты VSPackage](../../extensibility/internals/vspackages.md)
-

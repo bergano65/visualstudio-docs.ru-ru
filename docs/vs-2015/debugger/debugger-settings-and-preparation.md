@@ -1,14 +1,9 @@
 ---
 title: Отладчик, параметры и подготовка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,20 +18,20 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980958"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Если программа создается в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
   
- Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Дополнительные сведения см. в разделе [Как настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Параметры проекта отладчика](../debugger/debugger-project-settings.md)  
@@ -51,7 +46,7 @@ ms.locfileid: "51766281"
  [Веб-приложения ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Содержит инструкции по способам настройки веб-приложений ASP.NET.  
   
- [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio.](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Объясняется, как отладить исполняемый объект, который не был создан, как часть проекта Visual Studio.  
   
  [Практическое руководство. Отладка исходного кода Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -69,6 +64,3 @@ ms.locfileid: "51766281"
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

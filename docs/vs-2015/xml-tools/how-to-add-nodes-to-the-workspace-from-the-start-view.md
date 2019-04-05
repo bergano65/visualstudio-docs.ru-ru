@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: добавлять узлы в рабочую область из начального представления | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавление узлов в рабочую область из начального представления | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2ee6b3112fdc7f11c53aad1a9cc45b2dd9d2193
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0bef136cef69715fdb27a426c4aab5baa1db18dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990102"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Как добавлять узлы в рабочую область из начального представления
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Практическое руководство. Добавление узлов в рабочую область из начального представления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -40,6 +35,3 @@ ms.locfileid: "49306297"
 3.  Щелкните **добавить** ссылку справа от **глобальные сложные типы** заголовок.  
   
      Узел `USAddress` и узлы сложного типа `PurchaseOrderType` будут отображены в области конструктора в представлении графиков.
-
-
-

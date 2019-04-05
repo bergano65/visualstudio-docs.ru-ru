@@ -1,14 +1,9 @@
 ---
 title: Создание настраиваемых визуализаторов данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792864"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979704"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Создание настраиваемых визуализаторов данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "51792864"
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Написание визуализатора](../debugger/how-to-write-a-visualizer.md)  
   
- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
  [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)  
   
@@ -65,6 +60,3 @@ ms.locfileid: "51792864"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
-
-
-

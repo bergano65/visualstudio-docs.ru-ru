@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978776"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое: доступ к встроенной шрифтов и цветовой схемы
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.  
@@ -62,7 +57,7 @@ ms.locfileid: "51752929"
   
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:  
   
-    |name|Тип|Данные|Описание:|  
+    |name|Тип|Данные|Описание|  
     |----------|----------|----------|-----------------|  
     |Категория|REG_SZ|Идентификатор GUID|Произвольный GUID, определяющий категорию, которая содержит акций шрифт и цветовую схему.|  
     |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Этот GUID используется всех пакетов VSPackage, использующих настройки шрифта и цвета по умолчанию.|  
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [Начало шрифт и цвет шрифта для цветовое выделение текста](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Доступ к хранимой шрифтов и цветов](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Общие сведения о шрифтах и цветах](../extensibility/font-and-color-overview.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Сохранение данных из объекта в базе данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980391"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Можно сохранить данные в объекты в базе данных путем передачи значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`). Для получения дополнительной информации см. [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Можно сохранить данные в объекты в базе данных путем передачи значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`).
   
  Для сохранения данных из коллекции объектов, циклический перебор коллекции объектов (например, для следующего цикла) и отправки значений для каждого объекта в базу данных с помощью одного из методов DBDirect адаптера таблицы.  
   
@@ -41,7 +38,7 @@ ms.locfileid: "49207458"
 > [!NOTE]
 >  При настройке адаптера таблицы, основного запроса должен содержать достаточно информации для создания с помощью методов DBDirect. Например если он настроен для запроса данных из таблицы, не является первичным ключевым столбцом, не создает DBDirect-методы.  
   
-|Метод DBDirect адаптера таблицы|Описание|  
+|Метод TableAdapter DBDirect|Описание|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|Добавляет новые записи в базу данных и позволяет передавать значения отдельных столбцов в качестве параметров метода.|  
 |`TableAdapter.Update`|Обновляет существующие записи в базе данных. `Update` Метод принимает исходные и новые значения столбцов как параметры метода. Исходные значения используются для обнаружения исходной записи, а новые значения используются для обновления этой записи.<br /><br /> `TableAdapter.Update` Метод также используется для согласования изменений в наборе данных в базе данных, используя <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, или массив <xref:System.Data.DataRow>s как параметры метода.|  
@@ -85,4 +82,3 @@ ms.locfileid: "49207458"
   
 ## <a name="see-also"></a>См. также  
  [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
-

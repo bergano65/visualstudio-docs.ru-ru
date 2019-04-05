@@ -1,25 +1,22 @@
 ---
 title: Управляющие блоки текстовых шаблонов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991864"
 ---
 # <a name="text-template-control-blocks"></a>Управляющие блоки текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +122,7 @@ Some text.
 > [!NOTE]
 >  За блоком управления возможностями класса не должны следовать стандартные управляющие блоки в одном файле шаблона. Однако это ограничение не применяется к результату использования директив `<#@include#>`. Каждый включенный файл может иметь стандартные блоки, за которыми следуют блоки возможностей класса.  
   
- Можно создать функцию, которая создает выходные данные путем внедрения текста и блоков выражений в блок управления возможностями класса. Пример:  
+ Можно создать возможность, которая создает выходные данные путем внедрения текста и блоков выражений в блок управления возможностями класса. Пример:  
   
 ```  
 <#+  
@@ -138,7 +135,7 @@ Some text.
 #>  
 ```  
   
- Эту функцию можно вызвать из стандартного блока или из другого блока возможностей класса.  
+ Эту возможность можно вызвать из стандартного блока или из другого блока возможностей класса.  
   
 ```  
 <# foreach (Attribute attribute in item.Attributes)  
@@ -176,6 +173,3 @@ Some text.
     ```  
   
 -   **Рефакторинг.** Чтобы сделать текстовые шаблоны краткими и удобными для восприятия, настоятельно рекомендуется избегать повторяющихся участков кода, разлагая повторно используемый код на вспомогательные возможности в блоках возможностей класса или создав собственный класс текстового шаблона, который наследует от класса Microsoft.VisualStudio.TextTemplating.TextTransformation.
-
-
-
