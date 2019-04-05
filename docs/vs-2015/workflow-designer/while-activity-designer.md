@@ -1,11 +1,8 @@
 ---
 title: Конструктор действия While | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.While.UI
@@ -13,13 +10,13 @@ ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 529978a9303892aed74a5d490a19b542357303f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 36752df3d8ffbf33b8ea95570d6a4efe8c8cd3be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989772"
 ---
 # <a name="while-activity-designer"></a>Конструктор действия While
 
@@ -33,7 +30,7 @@ ms.locfileid: "49263163"
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке. Значение по умолчанию - While. Можно изменить значение в **свойства** окна или напрямую в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
 |<xref:System.Activities.Statements.While.Body%2A>|False|Содержит действие, выполняемое при <xref:System.Activities.Statements.While.Condition%2A> принимает значение **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Да|Содержит выражение [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], значение которого определяет, будет ли выполнено действие в <xref:System.Activities.Statements.While.Body%2A>.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Содержит выражение [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], значение которого определяет, будет ли выполнено действие в <xref:System.Activities.Statements.While.Body%2A>.|
 
 ## <a name="see-also"></a>См. также
 

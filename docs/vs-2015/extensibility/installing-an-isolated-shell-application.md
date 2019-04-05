@@ -1,27 +1,22 @@
 ---
 title: Установка приложений изолированной оболочки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990710"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ ms.locfileid: "51796315"
         ```  
   
     > [!NOTE]
-    >  Необходимые зависимости для приложений, оболочка (изолированная): DebuggerProxy MasterPkgDef, ресурсы (особенно .winprf-файл), приложения и PkgDefs.  
+    >  Ниже приведены необходимые зависимости для приложений, оболочка (изолированная). DebuggerProxy MasterPkgDef, ресурсы (особенно .winprf-файл), приложения и PkgDefs.  
   
 ### <a name="registry-entries"></a>Записи реестра  
  Шаблон проекта оболочка (изолированная) включает в себя *имя_проекта*REG-файл для разделов реестра для слияния при установке. Эти записи реестра должны быть частью MSI-ФАЙЛ для установки и очистки в целях. Также необходимо создать соответствующие блоки реестра в ApplicationRegistry.wxs.  
@@ -183,8 +178,8 @@ ms.locfileid: "51796315"
   
     |*Имя_проекта*файл с расширением REG|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= «Объект PhotoStudio DTE»|\<RegistryKey Id = «DteClsidRegKey» корневой = «HKCR» ключ = "$(var. DteClsidRegKey) "Action = «createAndRemoveOnUninstall» ><br /><br /> \<Тип RegistryValue = 'строка' имя = "@" значение = "$(var. Объект ShortProductName) DTE "/ ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\\LocalServer32 {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= «$RootFolder$\PhotoStudio.exe»|\<RegistryKey Id = «DteLocSrv32RegKey» корневой = «HKCR» ключ = "$(var. \LocalServer32 DteClsidRegKey) "Action = «createAndRemoveOnUninstall» ><br /><br /> \<Тип RegistryValue = 'строка' имя = "@" значение = "[INSTALLDIR] $(var. ShortProductName) .exe "/ ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id = «DteClsidRegKey» корневой = «HKCR» ключ = "$(var. DteClsidRegKey) "Action = «createAndRemoveOnUninstall» ><br /><br /> \<Тип RegistryValue = 'строка' имя = "@" значение = "$(var. Объект ShortProductName) DTE "/ ><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id = «DteLocSrv32RegKey» корневой = «HKCR» ключ = "$(var. \LocalServer32 DteClsidRegKey) "Action = «createAndRemoveOnUninstall» ><br /><br /> \<Тип RegistryValue = 'строка' имя = "@" значение = "[INSTALLDIR] $(var. ShortProductName) .exe "/ ><br /><br /> \</RegistryKey>|  
   
      В этом примере Var.DteClsidRegKey разрешается в раздел реестра, в верхней строке. Разрешается Var.ShortProductName `PhotoStudio`.  
   
@@ -242,7 +237,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Знакомство с протоколами возвращаемые значения  
  В некоторых операционных системах установки Visual Studio Shell (изолированная), может потребоваться перезагрузка. Это условие можно определить с помощью код возврата вызова `ExecCmd`.  
   
-|Возвращаемое значение|Описание:|  
+|Возвращаемое значение|Описание|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Установка завершена. Теперь можно установить приложение.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Установка завершена. Приложения можно установить после перезагрузки компьютера.|  
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

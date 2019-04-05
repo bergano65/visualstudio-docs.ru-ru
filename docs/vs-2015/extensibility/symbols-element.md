@@ -1,34 +1,29 @@
 ---
 title: Элемент Symbols | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991875"
 ---
 # <a name="symbols-element"></a>Элемент Symbols
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Определяет идентификаторы GUID и идентификаторы, которые используются другими элементами VSCT. Для неуправляемого кода, эти сведения обычно берутся из файлов заголовков, которые определяются [элемент Extern](../extensibility/extern-element.md). Управляемый код использует дочерние элементы элемента символы для определения этой информации.  
   
- При создании vsct-файл из существующего файла cto, символы будут создаваться как дочерние элементы элемента символы. Дополнительные сведения см. в разделе [как: создание. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ При создании vsct-файл из существующего файла cto, символы будут создаваться как дочерние элементы элемента символы. Дополнительные сведения см. в разделе [Как Создать. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
  Элемент Symbols не следует путать с [определить элемент](../extensibility/define-element.md), который определяет пары имя значение для использования препроцессором.  
   
@@ -46,20 +41,20 @@ ms.locfileid: "51783250"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |Нет||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |GuidSymbol|Определяет символ GUID. GuidSymbol имеет два обязательных атрибута: имя и значение. Имя является именем символа, а значение является значением идентификатора GUID как строка.<br /><br /> Например:\<GuidSymbol имя = значение «guidVsPackage1Pkg» = «{c5f54698-101a-4846-84d3-dc748f9cd848}» / >|  
 |IDSymbol|Определяет символ. IDSymbol имеет два обязательных атрибута: имя и значение. Имя является именем символа, а значение является значением символа как строка.<br /><br /> Например:\<IDSymbol имя = значение «MyMenuGroup» = «0x1020» / >|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Корневой элемент файла .vsct.|  
   
@@ -78,4 +73,3 @@ ms.locfileid: "51783250"
   
 ## <a name="see-also"></a>См. также  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

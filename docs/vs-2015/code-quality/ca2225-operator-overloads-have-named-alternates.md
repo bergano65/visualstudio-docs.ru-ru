@@ -1,14 +1,9 @@
 ---
-title: 'CA2225: Перегрузки операторов с именами | Документация Майкрософт'
-ms.custom: ''
+title: CA2225. Оператор дополнения с именами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992233"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: для перезагрузок оператора существуют дополнения с именами
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225. Для перегрузок операторов существуют варианты с именами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,7 +44,7 @@ ms.locfileid: "49860257"
 |---------|------------------|-----------|--------------------|
 |+ (двоичный)|+|+ (двоичный)|Add|
 |+=|+=|+=|Add|
-|&|И|&|BitwiseAnd|
+|&|и|&|BitwiseAnd|
 |&=|И =|&=|BitwiseAnd|
 |&#124;|Или|&#124;|BitwiseOr|
 |&#124;=|Или =|&#124;=|BitwiseOr|
@@ -74,14 +69,14 @@ ms.locfileid: "49860257"
 |%=|Н/Д|%=|Mod|
 |* (двоичный)|*|*|Multiply|
 |*=|Н/Д|*=|Multiply|
-|~|не|~|OnesComplement|
+|~|not|~|OnesComplement|
 |>>|>>|>>|Правая клавиша SHIFT|
 =|Н/Д|>>=|Правая клавиша SHIFT|
 |-(двоичный)|-(двоичный)|-(двоичный)|Subtract|
 |-=|Н/Д|-=|Subtract|
 |true|IsTrue|Н/Д|IsTrue (свойство)|
 |— (унарные)|Н/Д|-|Инверсия|
-|+ (унарный)|Н/Д|+|плюс|
+|+ (унарный)|Н/Д|+|Plus|
 |False|IsFalse|False|IsTrue (свойство)|
 
  Н/д == не могут быть перегружены на выбранном языке.
@@ -102,15 +97,12 @@ ms.locfileid: "49860257"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1046: не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: перегрузки операторов должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Операторы должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-
+ [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -1,14 +1,9 @@
 ---
 title: Отладка 64-разрядных приложений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992725"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ ms.locfileid: "51758832"
   
 1.  Создайте решение Visual Studio, например консольное приложение C#.  
   
-2.  С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Для получения дополнительной информации см. [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Дополнительные сведения см. в разделе [Как настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  На этом этапе запускается 64-разрядная версия удаленного отладчика (msvsmon.exe). Он работает до тех пор, пока открыто решение с 64-разрядной конфигурацией.  
   
 4.  Приступите к отладке. Результат должен быть таким же, как и в случае с 32-разрядной конфигурацией. Если возникли ошибки, обратитесь к разделу "Устранение проблем", расположенному ниже.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Устранение проблем при 64-разрядной отладке  
- Может появиться ошибка: "Операции 64-разрядной отладки занимают больше времени, чем ожидалось". В этом случае из Visual Studio отправлен запрос к 64-разрядной версии msvsmon.exe, и потребовалось много времени на возвращение результата этого запроса.  
+ Появится сообщение об ошибке: «64-разрядная операция отладки занимает больше времени, чем ожидалось.» В этом случае из Visual Studio отправлен запрос к 64-разрядной версии msvsmon.exe, и потребовалось много времени на возвращение результата этого запроса.  
   
  Есть две основных причины этой ошибки.  
   
@@ -68,9 +63,3 @@ ms.locfileid: "51758832"
  [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Использование файлов дампа](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
-
-
-
