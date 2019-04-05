@@ -1,27 +1,22 @@
 ---
-title: 'Пошаговое руководство: Отладка таблицы стилей XSLT | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отладка таблицы стилей XSLT | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978727"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Пошаговое руководство: отладка таблицы стилей XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Пошаговое руководство. Отладка таблицы стилей XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Шаги в данном пошаговом руководстве демонстрируют, как использовать XSLT-отладчик. Шаги включают просмотр переменных, задание точек останова и пошаговое прохождение кода. Таблица стилей находит все книги, которые стоят меньше средней цены книги.  
@@ -76,7 +71,7 @@ ms.locfileid: "49887703"
   
      `self::node()` является выражением XPath, которое вычисляется до текущего узла контекста. Значение `self::node()` выражения XPath является первым узлом книги. Оно меняется по мере прохождения преобразования.  
   
-4.  Раскройте узел `self::node()`, а затем узел `price`.  
+4.  Разверните узел `self::node()`, а затем узел `price`.  
   
      Это позволяет увидеть значение цены книги, и его можно легко сравнить со значением `$bookAverage`. Так как цена книги ниже средней, условие `xsl:if` должно выполняться.  
   
@@ -161,4 +156,3 @@ ms.locfileid: "49887703"
   
 ## <a name="see-also"></a>См. также  
  [Отладка XSLT](../xml-tools/debugging-xslt.md)
-

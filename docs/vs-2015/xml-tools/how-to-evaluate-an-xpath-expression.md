@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: Оценка выражения XPath | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Оценка выражения XPath | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994473"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Практическое руководство. Оценка выражения XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Практическое руководство. вычислить выражение XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно оценить выражения XPath **"Быстрая проверка"** диалоговое окно. Выражение XPath должно быть допустимым и соответствовать рекомендация W3C языка XPath версии 1.0. Текущий контекст XSLT — то есть `self::node()` узел в **"Локальные"** окно — предоставляет контекст оценки для выражения XPath.  
@@ -35,7 +30,7 @@ ms.locfileid: "49210435"
 -   Не поддерживаются определяемые пользователем функции.  
   
 > [!NOTE]
->  В следующей процедуре используются файлы Avg.XSL и books.xml из [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) раздела.  
+>  В следующей процедуре используются файлы Avg.XSL и books.xml из [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) раздела.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Оценка выражения XPath  
   
@@ -59,4 +54,3 @@ ms.locfileid: "49210435"
   
 ## <a name="see-also"></a>См. также  
  [Отладка XSLT](../xml-tools/debugging-xslt.md)
-

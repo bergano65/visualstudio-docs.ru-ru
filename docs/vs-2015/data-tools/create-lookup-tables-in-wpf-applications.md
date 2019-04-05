@@ -1,12 +1,9 @@
 ---
 title: Создание таблиц подстановки в приложениях WPF | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303346"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58993827"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +41,11 @@ ms.locfileid: "49303346"
   
 1.  Добавьте один из следующих типов источников данных с помощью связанных данных в проект:  
   
-    -   Набор данных или модели EDM. Дополнительные сведения см. в разделе [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Набор данных или модели EDM.
+
+    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [Как подключиться к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [как: подключение к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   Объекты. Дополнительные сведения см. в разделе [как: подключение к данным в объектах](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Объекты. Дополнительные сведения см. в разделе [Как Подключение к данным в объектах](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Перед созданием таблицы подстановки, две связанные таблицы или объекты должны существовать в качестве источника данных для проекта.  
@@ -57,7 +54,7 @@ ms.locfileid: "49303346"
   
      Дополнительные сведения о допустимых конечных расположений сброса см. в разделе [элементы управления WPF, привязка к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-3.  На **данных** меню, щелкните **Показать источники данных** открыть **источников данных** окна.  
+3.  Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.  
   
 4.  Разверните узлы в **источников данных** окно, пока не будут видны в родительской таблицы или объекта и связанной дочерней таблицы или объекта.  
   
@@ -103,5 +100,4 @@ ms.locfileid: "49303346"
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)   
- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Пошаговое руководство: Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

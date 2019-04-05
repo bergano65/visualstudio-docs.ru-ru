@@ -1,14 +1,9 @@
 ---
 title: Поддержка фрагментов кода в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979617"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51795769"
   
  В режиме с специальные изменение поля этого фрагмента, чтобы перейти с помощью клавиши TAB будет вставлен фрагмент кода. Поля может поддерживать стиле IntelliSense раскрывающихся меню. Пользователь фиксирует фрагмент в исходный файл, введя ввод или клавиши ESC. Дополнительные сведения о фрагментах см. в разделе [фрагменты кода](../../ide/code-snippets.md).  
   
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: реализация фрагментов кода](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: Реализация фрагментов кода](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
@@ -55,7 +50,7 @@ ms.locfileid: "51795769"
 ### <a name="installing-the-snippet-files"></a>Установка файлы фрагментов кода  
  Все фрагменты кода для языка, хранятся как шаблоны в XML-файлов, обычно один шаблон фрагмента каждого файла. Дополнительные сведения о схеме XML, используемый для шаблоны фрагментов кода, см. в разделе [Справочник по схеме фрагментов кода](../../ide/code-snippets-schema-reference.md). Каждый шаблон фрагмента идентифицируется с идентификатором языка. Этот язык, идентификатор, указанный в реестре и помещается в `Language` атрибут \<кода > тега в шаблоне.  
   
- Обычно есть два места, где хранятся файлы фрагментов шаблона: 1) там, где был установлен язык и (2) в папки. Эти расположения добавляются в реестр таким образом, Visual Studio **Диспетчер фрагментов кода** можно найти фрагменты кода. Папки является местом хранения фрагментов, созданных пользователем.  
+ Обычно, есть два места, где хранятся файлы фрагментов шаблона: (1) ваш язык установки и 2) в папки. Эти расположения добавляются в реестр таким образом, Visual Studio **Диспетчер фрагментов кода** можно найти фрагменты кода. Папки является местом хранения фрагментов, созданных пользователем.  
   
  Макет типичная папка для файлов шаблонов установленных фрагмент кода выглядит следующим образом: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[кодязыка]* \Snippets.  
   
@@ -90,7 +85,7 @@ ms.locfileid: "51795769"
   
  Следующие элементы подстановки может быть помещен в пути, сохраненному в \<DirPath > тег в файл индекса.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |% LCID %|Идентификатор языка.|  
 |% InstallRoot %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|  
@@ -122,7 +117,7 @@ ms.locfileid: "51795769"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Вставка фрагмента кода с помощью команды меню  
  Чтобы использовать команды меню для отображения обозревателя на фрагмент кода, добавьте команду меню, а затем вызвать <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> интерфейс в ответ для этой команды меню.  
   
-1.  Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [Пошаговое руководство: Создание меню команды с использованием шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1.  Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.  
   
@@ -227,7 +222,7 @@ ms.locfileid: "51795769"
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Вставка фрагмента кода с помощью ярлыка  
  Ярлык в списке завершения реализуется гораздо больше усилий, чем реализация команды меню. Ярлыков фрагментов кода необходимо сначала добавить в список завершения слов IntelliSense. Затем необходимо обнаружить, когда в результате завершения была введена имя ярлыка фрагмента. Наконец, необходимо получить название фрагмента и пути, используя имя ярлыка и передать эту информацию <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод <xref:Microsoft.VisualStudio.Package.ExpansionProvider> метод.  
   
- Чтобы добавить ярлыков фрагментов кода в список завершения слова, добавьте их в <xref:Microsoft.VisualStudio.Package.Declarations> объект в вашей <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Необходимо убедиться в том, можно указать, ярлык имени фрагмента кода. Например, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Чтобы добавить ярлыков фрагментов кода в список завершения слова, добавьте их в <xref:Microsoft.VisualStudio.Package.Declarations> объект в вашей <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Необходимо убедиться в том, можно указать, ярлык имени фрагмента кода. Пример см. в разделе [Пошаговое руководство. Получение списка установлены фрагменты кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  Можно обнаружить вставку ярлык фрагмента кода в <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> метод <xref:Microsoft.VisualStudio.Package.Declarations> класса. Так как уже был вставлен имени фрагмента в файл исходного кода, его необходимо удалить при вставке расширения. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Метод принимает область, которая описывает точку вставки для фрагмента; Если диапазон включает в себя имя весь фрагмент кода в исходном файле, это имя заменяется фрагмента кода.  
   
@@ -343,7 +338,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Дополнительные сведения о получении списка фрагментов кода для языковой службы, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Дополнительные сведения о получении списка фрагментов кода для языковой службы, см. в разделе [Пошаговое руководство: Получение списка установлены фрагменты кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Реализация класса ExpansionFunction  
  Функции расширения является именованную функцию, который внедряется в шаблон фрагмента и возвращает одно или несколько значений, которые следует поместить в поле. Чтобы обеспечить поддержку функций расширений в службе языка, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса и реализуйте <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> метод. Необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса для возвращения нового экземпляра версии <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класс для каждой функции расширения, вы поддерживаете. Если вы поддерживаете список возможных значений из функции расширения, необходимо также переопределить <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса для возвращения списка этих значений.  
@@ -400,5 +395,4 @@ namespace TestLanguagePackage
  [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Фрагменты кода](../../ide/code-snippets.md)   
- [Пошаговое руководство. Получение списка фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-
+ [Пошаговое руководство: Получение списка фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

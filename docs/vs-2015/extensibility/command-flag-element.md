@@ -1,27 +1,22 @@
 ---
 title: Команда флаг элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993601"
 ---
 # <a name="command-flag-element"></a>Элемент CommandFlag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51809926"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |AllowParams|Указывает, что пользователи могут вводить параметры команд в **команда** окно при вводе каноническое имя команды.<br /><br /> Допустимо для: `Button`|  
 |AlwaysCreate|Меню создается, даже если он не имеет групп и кнопок.<br /><br /> Допустимо для: `Menu`|  
@@ -77,11 +72,10 @@ ms.locfileid: "51809926"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группу для [элемент Button](../extensibility/button-element.md) элементов.|  
 |[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
   
 ## <a name="see-also"></a>См. также  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,25 +1,22 @@
 ---
 title: Обращение к моделям из текстовых шаблонов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993667"
 ---
 # <a name="accessing-models-from-text-templates"></a>Обращение к моделям из текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  Чтобы загрузить файл, наиболее эффективным методом является использование [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus. В типичном сценарии текстовый шаблон будет использовать директиву определенного DSL для загрузки в первой модели обычным способом. Эта модель будет содержать ссылки ModelBus к другой модели. ModelBus можно использовать для открытия соответствующей моделью и получить доступ к конкретному элементу. Дополнительные сведения см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- В менее обычные сценарии может потребоваться открыть файл модели, для которого у вас есть только имя файла, который может оказаться в текущем [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекта. В этом случае можно открыть файл с помощью метода, описанного в [как: открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+ В менее обычные сценарии может потребоваться открыть файл модели, для которого у вас есть только имя файла, который может оказаться в текущем [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекта. В этом случае можно открыть файл с помощью метода, описанного в [как: Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
 ## <a name="generating-multiple-files-from-a-template"></a>Создание нескольких файлов из шаблона  
  Если вы хотите создавать несколько файлов – к примеру, создать отдельный файл для каждого элемента в модели, существует несколько возможных подходов. По умолчанию будет создан только один файл из каждого файла шаблона.  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-

@@ -1,24 +1,19 @@
 ---
-title: 'Пошаговое руководство: Создание пакета SDK с помощью C++ | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пакета SDK с помощью C++ | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 85af1b15fe6f2b87fbe1f7668fd1610c8595b90c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993280"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Пошаговое руководство. Создание пакета SDK с помощью C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,13 +109,13 @@ ms.locfileid: "51773474"
   
      Скопируйте DebugNativeMathWRTNativeMathWRT.winmd и вставьте его в папке ReferencesCommonConfigurationNeutral.  
   
-     Скопируйте DebugNativeMathWRTNativeMathWRT.pri и вставьте его в папке ReferencesCommonConfigurationNeutral.  
+     Copy DebugNativeMathWRTNativeMathWRT.pri and paste it in the ReferencesCommonConfigurationNeutral folder.  
   
 12. В папке \DesignTime\Debug\x86\ создайте текстовый файл с именем NativeMathSDK.props и вставьте в него следующее содержимое:  
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-13. В строке меню выберите **представление**, **Other Windows**, **окно "Свойства"** (клавиатуры: нажмите клавишу F4).  
+13. В строке меню выберите **представление**, **Other Windows**, **окно "Свойства"** (клавиатуры: Нажмите клавишу F4).  
   
 14. В **обозревателе решений**выберите **NativeMathWRT.winmd** файла. В **свойства** измените **действие при построении** свойства **содержимого**, а затем измените **включить в VSIX** свойства  **Значение true,**.  
   
@@ -187,4 +182,3 @@ ms.locfileid: "51773474"
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Создание пакета средств разработки для программного обеспечения](../extensibility/creating-a-software-development-kit.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: Создание XML-документа на основе схемы XSD | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание XML-документа на основе схемы XSD | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884229"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994049"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе XSD-схемы
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -35,7 +30,7 @@ ms.locfileid: "49884229"
   
   **Создание образца XML** компонент доступен только для глобальных элементов и требует допустимый набор схем XML.  
   
-  С помощью этой возможности обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.  
+  С помощью этой функции обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.  
   
 - Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.  
   
@@ -84,6 +79,3 @@ ms.locfileid: "49884229"
   
 ## <a name="see-also"></a>См. также  
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md)
-
-
-

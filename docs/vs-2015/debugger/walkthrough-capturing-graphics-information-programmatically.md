@@ -1,25 +1,20 @@
 ---
-title: 'Пошаговое руководство: Запись графических сведений программными средствами | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Запись графических сведений программными средствами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991219"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,7 +142,7 @@ ms.locfileid: "51747680"
   
 -   использование API `CaptureCurrentFrame` .  
   
-### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Подготовка компьютера к использованию программного захвата  
+### <a name="preparing-your-computer-to-use-programmatic-capture"></a>подготовка компьютера к использованию программного захвата;  
  API программного захвата использует Инструменты удаленной отладки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для предоставления функциональности захвата. На компьютере, на котором будет выполняться приложение, должны быть установлены Инструменты удаленной отладки, даже если программный захват используется на локальном компьютере. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не следует запускать при выполнении программного захвата на локальном компьютере.  
   
  Для использования API удаленного захвата в приложении, которое работает на компьютере, необходимо сначала установить Инструменты удаленной отладки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на этом компьютере. Разные версии Инструментов удаленной отладки поддерживают различные аппаратные платформы. Сведения о способах установки средств удаленной отладки см. на [странице скачивания средств удаленной отладки](http://go.microsoft.com/fwlink/p/?LinkId=246691) веб-сайта для скачивания файлов Майкрософт.  
@@ -204,9 +199,6 @@ ms.locfileid: "51747680"
 -   Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Запись графических сведений](../debugger/walkthrough-capturing-graphics-information.md)   
+ [Пошаговое руководство: запись графических сведений](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Программа командной строки для захвата](../debugger/command-line-capture-tool.md)
-
-
-

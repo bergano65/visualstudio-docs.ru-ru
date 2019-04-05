@@ -1,12 +1,9 @@
 ---
-title: 'Схемы слоев: Ссылаться | Документация Майкрософт'
-ms.custom: ''
+title: 'Схемы слоев: Справочник по | Документация Майкрософт'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783224"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994460"
 ---
-# <a name="layer-diagrams-reference"></a>Схемы слоев: справочные материалы
+# <a name="layer-diagrams-reference"></a>Схемы слоев: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio, можно использовать *схему слоев* для визуализации высокоуровневой логической архитектуры системы. Схема слоев упорядочивает физические артефакты системы в логические, абстрактные группы, называемые *слои*. Слои описывают основные компоненты системы или задачи, выполняемые этими артефактами. Каждый слой может также содержать вложенные слои, описывающие более подробные задачи.  
@@ -51,7 +48,7 @@ ms.locfileid: "51783224"
   
 - дополнительно контролировать предполагаемую архитектуру в процессе разработки и обслуживания кода за счет добавления проверки операций возврата и построения.  
   
-  В этом разделе описаны элементы, которые можно использовать на схемах слоев. Более подробные сведения о том, как создать и схем слоев, см. в разделе [схемы слоев: рекомендации по](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев посетите [сайте Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  В этом разделе описаны элементы, которые можно использовать на схемах слоев. Более подробные сведения о том, как создать и схем слоев, см. в разделе [схемы слоев: Рекомендации по](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев посетите [сайте Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Чтение схем слоев  
  ![Элементы на схемах слоев](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -94,11 +91,8 @@ ms.locfileid: "51783224"
     |----------------------------------|---------------------|  
     |**Категории**|Вид артефакта, например класс, пространство имен, исходный файл и т. д.|  
     |**Слой**|Связанный с артефактом слой|  
-    |**Поддержка проверки**|Если **True**, то процесс проверки слоев убедитесь, что проект соответствует зависимости или из этого элемента.<br /><br /> Если **False**, то связь не участвует в процессе проверки слоя.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев: рекомендации по](../modeling/layer-diagrams-guidelines.md).|  
+    |**Поддержка проверки**|Если **True**, то процесс проверки слоев убедитесь, что проект соответствует зависимости или из этого элемента.<br /><br /> Если **False**, то связь не участвует в процессе проверки слоя.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев: Рекомендации по](../modeling/layer-diagrams-guidelines.md).|  
     |**Идентификатор**|Ссылка на связанный артефакт|  
   
 ## <a name="see-also"></a>См. также  
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)
-
-
-

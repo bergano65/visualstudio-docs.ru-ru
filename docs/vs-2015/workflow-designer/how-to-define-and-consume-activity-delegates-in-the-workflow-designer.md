@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: определение и использование делегатов действий в конструкторе рабочих процессов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Определение и использование делегатов действий в конструкторе рабочих процессов | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994426"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как определить и использовать делегатов действий в конструкторе рабочих процессов
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Практическое руководство. Определение и использование делегатов действий в конструкторе рабочих процессов
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] содержит новый готовый конструктор для действия <xref:System.Activities.Statements.InvokeDelegate>. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Укажите делегат действия  
@@ -60,7 +57,7 @@ ms.locfileid: "49865496"
   
 18. В **значение** столбец с именем аргумента **аргумент**, введите **Items [Index]**. Нажмите кнопку **ОК** закрыть **DelegateArguments** диалоговое окно.  
   
-19. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign> Действия будет создан и <xref:System.Activities.Statements.Sequence> действия будут создаваться автоматически для размещения двух действий в **текст** раздел **MyForEach** действия. Требуется последовательность, так как **текст** раздел может содержать только одно действие. Автоматическое создание нового действия <xref:System.Activities.Statements.Sequence> - это новая возможность [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
+19. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign> Действия будет создан и <xref:System.Activities.Statements.Sequence> действия будут создаваться автоматически для размещения двух действий в **текст** раздел **MyForEach** действия. Требуется последовательность, так как **текст** раздел может содержать только одно действие. Автоматическое создание нового действия <xref:System.Activities.Statements.Sequence> - это новая функция [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
 20. Задайте **для** свойство <xref:System.Activities.Statements.Assign> действие **индекс**. Задайте **значение** свойство **назначить** действие **индекс + 1**.  
   

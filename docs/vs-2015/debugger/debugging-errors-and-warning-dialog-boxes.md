@@ -1,14 +1,9 @@
 ---
 title: Отладка ошибок и предупреждений диалоговым окнам | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980957"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +43,13 @@ ms.locfileid: "51743283"
   
  [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Не удалось применить изменения кода-диалоговое окно](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Диалоговое окно "Сбой при применении изменений кода"](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Диалоговое окно отладчика Microsoft Visual Studio (создание исключения)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [Исходный код недоступен текущего диалогового окна "Расположение"](../debugger/no-source-available.md)  
+ [Диалоговое окно "Нет исходного кода для текущего расположения"](../debugger/no-source-available.md)  
   
- [Диалоговое окно не символьная информация](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Диалоговое окно "Нет символьных данных"](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Диалоговое окно "Разрешение неоднозначности"](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -65,17 +60,14 @@ ms.locfileid: "51743283"
  [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Отладка скрипта и веб-: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Отладка скрипта и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Ошибки присоединения](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Ошибки присоединения](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Устранение неполадок настройки отладки SQL](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Устранение неполадок настройки отладки SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
- [Часто задаваемые вопросы отладки Visual C++](../debugger/debugging-native-code-faqs.md)  
+ [Часто задаваемые вопросы по отладке в Visual C++](../debugger/debugging-native-code-faqs.md)  
   
  [Безопасность отладчика](../debugger/debugger-security.md)
-
-
-

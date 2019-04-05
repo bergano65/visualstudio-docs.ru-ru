@@ -1,14 +1,9 @@
 ---
-title: 'CA1038: Перечислители должны быть строго типизированы | Документация Майкрософт'
-ms.custom: ''
+title: CA1038. Перечислители должны быть строго типизированы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aafd89a068a57ef1eb89584441195e1ece8b8f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be143ecb57a952c45e518eef0d83d52274075614
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978957"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: перечислители должны быть строго типизированы
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038. Перечислители должны иметь строгие типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,14 +56,11 @@ ms.locfileid: "49899075"
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1035: в составе реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: Реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: списки обладают строгой типизацией](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: Списки обладают строгой типизацией](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>См. также
  <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName>
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

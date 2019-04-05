@@ -1,23 +1,20 @@
 ---
 title: Расширение доменного языка с помощью MEF | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979455"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>Обработчики жестов  
  Обработчик жестов умеет работать с объектами при перетаскивании на схему, в любом месте внутри или за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.  
   
- Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [Как Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ```  
   
@@ -380,8 +377,5 @@ namespace MefExtension
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

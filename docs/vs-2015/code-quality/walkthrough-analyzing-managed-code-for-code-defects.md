@@ -1,14 +1,9 @@
 ---
-title: 'Пошаговое руководство: Проверка управляемого кода на наличие дефектов кода | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Проверка управляемого кода на наличие дефектов кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992932"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство. Проверка управляемого кода на наличие дефектов
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство. Анализ управляемого кода на наличие дефектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве вы анализировать управляемого проекта для дефектов кода с помощью средства анализа кода.  
@@ -98,7 +93,7 @@ ms.locfileid: "49912894"
   
 4.  Используйте следующие параметры для устранения предупреждения.  
   
-- [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должны быть помечены CLSCompliantAttribute, и его значение должно быть true.  
+- [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должен быть помечен атрибутом CLSCompliantAttribute и его значение должно быть true.  
   
   -   Добавьте код `using``System;` в файл AssemblyInfo.cs.  
   
@@ -106,15 +101,15 @@ ms.locfileid: "49912894"
   
        Перестройте проект.  
   
-- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo(String)  
+- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo(String)  
   
   -   Добавьте конструктор `public demo (String s) : base(s) { }` к классу `demo`.  
   
-- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo (String, исключений)  
+- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo (String, исключений)  
   
   -   Добавьте конструктор `public demo (String s, Exception e) : base(s, e) { }` к классу `demo`.  
   
-- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: защищенные demo (SerializationInfo, StreamingContext)  
+- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: защищенные demo (SerializationInfo, StreamingContext)  
   
   -   Добавьте код `using System.Runtime.Serialization;` в начало файла Class1.cs.  
   
@@ -122,29 +117,29 @@ ms.locfileid: "49912894"
   
        Перестройте проект.  
   
-- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo()  
+- [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo()  
   
   -   Добавьте конструктор `public demo () : base() { }` к классу `demo` **.**  
   
        Перестройте проект.  
   
-- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени пространства имен «testCode», изменив ее на «TestCode».  
+- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени пространства имен «testCode», изменив ее на «TestCode».  
   
   -   Регистр пространства имен `testCode` для `TestCode`.  
   
-- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени типа «demo», изменив ее на «Demo».  
+- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени типа «demo», изменив ее на «Demo».  
   
   -   Измените имя элемента, на который `Demo`.  
   
-- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени член «item», изменив ее на «Item».  
+- [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени член «item», изменив ее на «Item».  
   
   -   Измените имя элемента, на который `Item`.  
   
-- [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: переименование «testCode.demo», чтобы в конце стояло «Exception».  
+- [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Переименуйте «testCode.demo» конец «Исключение».  
   
   -   Измените имя класса и его конструкторов для `DemoException`.  
   
-- [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): подпись «ManagedDemo» с ключом строгого имени.  
+- [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Подпись «ManagedDemo» с ключом строгого имени.  
   
   -   На **проекта** меню, щелкните **ManagedDemo свойства**.  
   
@@ -166,7 +161,7 @@ ms.locfileid: "49912894"
   
        Перестройте проект.  
   
-- [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: добавить атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.  
+- [CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Добавьте атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.  
   
   -   Добавить `[Serializable ()]` классу атрибут `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Выберите **действия**, нажмите кнопку **подавить сообщение**, а затем выберите **в файле проекта для блокируемых предупреждений**.  
   
-      Дополнительные сведения см. в разделе [как: отключение предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Дополнительные сведения см. в разделе [Как Подавление предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Перестройте проект.  
   
     Сборка проекта выполняется без предупреждения или ошибки.
-
-
-

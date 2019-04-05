@@ -1,14 +1,9 @@
 ---
 title: "\"Поиск окна\" диалогового окна | Документация Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, finding windows
 - finding windows with Spy++
@@ -16,13 +11,13 @@ ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7d55a52b0b892f739dd542301b5665339baeae41
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34d6a847f96f548cdf68ed912d23f6a7ee112d54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768535"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994519"
 ---
 # <a name="find-window-dialog-box"></a>Диалоговое окно "Поиск окна"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51768535"
  **Стиль**  
  Стиль окна.  
   
- **Rect**  
+ **Прямоугольник**  
  Ограничивающий прямоугольник для окна.  
   
  **Показать свойства или сообщения**  
@@ -76,6 +71,3 @@ ms.locfileid: "51768535"
   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)  
  Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.
-
-
-

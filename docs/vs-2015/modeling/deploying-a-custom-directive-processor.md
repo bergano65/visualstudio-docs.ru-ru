@@ -1,25 +1,22 @@
 ---
 title: Развертывание пользовательского обработчика директив | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993476"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,16 +25,16 @@ ms.locfileid: "49836402"
   
  Альтернативные методы таковы:  
   
-- [Расширение Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие возможности в тот же VSIX.  
+- [Расширение Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие функции в тот же VSIX.  
   
-- [VSPackage](../extensibility/internals/vspackages.md). Вы определяете VSPackage, содержащий помимо процессора директив и другие возможности; это удобный метод регистрации процессора директив.  
+- [VSPackage](../extensibility/internals/vspackages.md). Вы определяете VSPackage, содержащий помимо процессора директив и другие функции; это удобный метод регистрации процессора директив.  
   
 - Определить раздел реестра. При использовании данного метода вы добавляете для процессора директив раздел реестра.  
   
-  Эти методы необходимо использовать только в том случае, если требуется преобразовать текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Если используется в вашем собственном приложении, это пользовательское ведущее приложение отвечает за поиск процессора директив для каждой директивы.  
+  Эти методы необходимо использовать только в том случае, если требуется преобразовать текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Если используется в вашем собственном приложении, это пользовательское основное приложение отвечает за поиск процессора директив для каждой директивы.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Развертывание процессора директив в VSIX  
- Можно добавить пользовательский процессор директив [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Можно добавить пользовательский процессор директив [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Необходимо убедиться, что следующие два элемента содержатся в файле с расширением vsix:  
   
@@ -100,7 +97,7 @@ ms.locfileid: "49836402"
   
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Добавьте в проект класс вашего пользовательского процессора директив.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49836402"
  Данный способ установки пользовательского процессора директив рекомендуется использовать в последнюю очередь. Он не предусматривает удобного способа включения и отключения процессора директив и способа передачи процессора директив другим пользователям.  
   
 > [!CAUTION]
->  Неправильное изменение реестра может привести к серьезному повреждению системы. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.  
+>  Неправильное изменение реестра может серьезно повредить систему. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Регистрация процессора директив путем создания раздела реестра  
   
@@ -205,6 +202,3 @@ ms.locfileid: "49836402"
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательских обработчиков директив для текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

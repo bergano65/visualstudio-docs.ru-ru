@@ -1,14 +1,9 @@
 ---
 title: Приложения Windows Store выполнения на локальном компьютере | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978793"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Запуск приложений для Магазина Windows на локальном компьютере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ ms.locfileid: "51766844"
  **Для переключения из работающего экземпляра приложения Windows Store в Visual Studio**  
   
  Если вы запускаете приложение Магазина Windows на локальном компьютере и используете один монитор, вам может потребоваться вернуться в Visual Studio, оставив приложение выполняющимся. Например, приложение может находиться в состоянии, которого нельзя добиться с помощью точки останова, например, ожидать события или выполняться в длительном или бесконечном цикле. Чтобы вернуться в Visual Studio, нажмите ALT+TAB.
-
-
-
