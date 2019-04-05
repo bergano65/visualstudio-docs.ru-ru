@@ -1,14 +1,9 @@
 ---
-title: 'CA1059: Члены не должны предоставлять определенные устойчивые типы | Документация Майкрософт'
-ms.custom: ''
+title: CA1059. Члены не должны предоставлять определенные устойчивые типы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1059
 - MembersShouldNotExposeCertainConcreteTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 894b4c22aaab2b0cce81053e6466b791a50b089a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46e3941e1aab0e2f6f532a7a394437a0613b8d8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990120"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: члены не должны предоставлять определенные устойчивые типы
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059. Члены не должны предоставлять определенные конкретные типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,7 +53,4 @@ ms.locfileid: "49816889"
  Это безопасно подавить сообщение из этого правила, если конкретные функции, обеспечиваемые конкретный тип является обязательным.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1011: попробуйте передать базовые типы в качестве параметров](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
-
-
-
+ [CA1011: Попробуйте передать базовые типы в качестве параметров](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

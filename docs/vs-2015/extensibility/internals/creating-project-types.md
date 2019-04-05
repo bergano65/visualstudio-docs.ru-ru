@@ -1,27 +1,22 @@
 ---
 title: Создание типов проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994299"
 ---
 # <a name="creating-project-types"></a>Создание типов проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51756211"
  [Проектные решения для проекта решений](../../extensibility/internals/project-type-design-decisions.md)  
  Описание элемента, сохранение файла проекта и обязательства механику проектные решения, которые необходимо принять, прежде чем создавать новый тип проекта.  
   
- [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Обзор шагов, которые необходимо выполнить, чтобы создать новый тип проекта, который поддерживает задачи программирования, как редактирование кода и компиляция, построения, отладки и развертывания приложений в вашем проекте.  
   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
@@ -65,4 +60,3 @@ ms.locfileid: "51756211"
   
  [Типы проектов](../../extensibility/internals/project-types.md)  
  Описывает, как использовать проекты для изменения кода, компиляции и сборки кода и выполнять и отлаживать код и ссылки на подробные разделы о создании типов проектов.
-

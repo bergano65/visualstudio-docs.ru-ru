@@ -1,14 +1,9 @@
 ---
 title: Отладка элемента управления WebView | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69c7aa5e83da4ec829b439940d4affcd536bc128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979699"
 ---
 # <a name="debug-a-webview-control"></a>Отладка элемента управления WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +28,17 @@ ms.locfileid: "51729053"
   
  Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения. Начиная с обновления 2 для Visual Studio 2013, у вас появилось два способа взаимодействия с элементами управления `WebView` с помощью отладчика.  
   
--   Откройте [проводника DOM](../debugger/quickstart-debug-html-and-css.md) для `WebView` экземпляра и проверьте элементы DOM, исследовать проблемы со стилями CSS и протестируйте динамические отрисовываемые изменения в стили.  
+-   Откройте [Проводник DOM](../debugger/quickstart-debug-html-and-css.md) для экземпляра `WebView`, а затем проверьте элементы DOM, изучите проблемы со стилями CSS и протестируйте динамические отрисовываемые изменения в стилях.  
   
--   Выберите веб-страницу или `iFrame` в `WebView` экземпляр в качестве назначения [консоли JavaScript](../debugger/javascript-console-commands.md) окно и для взаимодействия с веб-страницы, с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.  
+-   Выберите веб-страницу или `iFrame`, отображаемые в экземпляре `WebView`, в качестве цели в окне [Консоль JavaScript](../debugger/javascript-console-commands.md), а затем осуществите взаимодействие с веб-страницей с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.  
   
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Добавление делений в код C#, Visual Basic, C++  
   
 1.  В Visual Studio добавьте элемент управления `WebView` в свое приложение среды выполнения Windows.  
   
-2.  В обозревателе решений откройте свойства проекта, выбрав **свойства** в контекстном меню для проекта.  
+2.  В обозревателе решений откройте свойства для проекта, выбрав пункт **Свойства** в контекстном меню для проекта.  
   
-3.  Выберите **Отладка**. В **процесс приложения** выберите **скрипт**.  
+3.  Выберите **Отладка**. В списке **Процесс приложения** выберите **Скрипт**.  
   
      ![Подключение отладчика сценариев](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
@@ -62,7 +57,7 @@ ms.locfileid: "51729053"
   
 3.  Перейдите на страницу, содержащую элементы управления `Webview`.  
   
-4.  Откройте окно проводника DOM для `WebView` элемента управления, выбрав **Отладка**, **Windows**, **проводника DOM**, а затем выберите URL-адрес `WebView` , хотите просмотреть.  
+4.  Откройте окно проводника DOM для элемента управления `WebView`, выбрав **Отладка**, **Окна**, **Проводник DOM**, а затем выберите URL-адрес `WebView`, который хотите проверить.  
   
      ![Открытие проводника DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
   
@@ -76,13 +71,13 @@ ms.locfileid: "51729053"
   
 2.  Если вы еще этого не сделали, добавьте элемент управления `WebView` в свое приложение и нажмите клавишу F5 для запуска отладки.  
   
-3.  Откройте окно консоли JavaScript для `WebView` управления, выбрав **Отладка**, **Windows**, **консоли JavaScript**.  
+3.  Откройте окно консоли JavaScript для элемента управления `WebView`, выбрав **Отладка**, **Окна**, **Консоль JavaScript**.  
   
      Отображается окно консоли JavaScript.  
   
 4.  Перейдите на страницу, содержащую элементы управления `Webview`.  
   
-5.  В окне консоли выберите веб-страницу или `iFrame` показываемому `WebView` контролировать **целевой** списка.  
+5.  В окне консоли выберите веб-страницу или `iFrame`, отображаемый элементом управления `WebView` в списке **Цель**.  
   
      ![Предназначенных для выбора в окне консоли JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
@@ -92,7 +87,4 @@ ms.locfileid: "51729053"
 6.  Просмотреть и изменить переменные в приложении или используйте команды консоли, как описано в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [команды консоли JavaScript](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

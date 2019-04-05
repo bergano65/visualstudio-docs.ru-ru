@@ -1,14 +1,9 @@
 ---
-title: 'CA1801: Проверьте неиспользуемые параметры | Документация Майкрософт'
-ms.custom: ''
+title: CA1801. Проверьте неиспользуемые параметры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269689"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003070"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: проверьте неиспользуемые параметры
+# <a name="ca1801-review-unused-parameters"></a>CA1801. Проверьте неиспользуемые параметры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [CA1801: Проверьте неиспользуемые параметры](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1801: Проверьте неиспользуемые параметры](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) на сайте docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -72,9 +67,8 @@ ms.locfileid: "49269689"
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>Связанные правила  
- [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: не создавайте внутренние классы без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)

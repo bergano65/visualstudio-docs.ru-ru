@@ -1,12 +1,9 @@
 ---
 title: Создание кода из UML-схемах классов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994324"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Создание кода на основе схем классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "51764770"
 
  Подробнее о схемах классов UML в Visual Studio читайте в следующих разделах:  
 
-- [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)  
+- [Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)  
 
-- [UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)  
+- [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)  
 
   Чтобы узнать, какие версии Visual Studio поддерживают схемы классов UML, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -94,7 +91,7 @@ ms.locfileid: "51764770"
 |Класс|Класс|\<None > или<br /><br /> класс C#|  
 |Интерфейс|Интерфейс|\<None > или<br /><br /> интерфейс C#|  
 |Перечисление|Перечисление|\<None > или<br /><br /> C# enum|  
-|Делегат|Класс|делегат C#|  
+|делегат|Класс|делегат C#|  
 |Структура|Класс|C# struct|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Задание стереотипа в типе или другом элементе  
@@ -223,11 +220,11 @@ ms.locfileid: "51764770"
 
 - Шаблон автоматически ссылается на некоторые сборки. Эти сборки включают, к примеру, System.dll и Microsoft.VisualStudio.Uml.Interfaces.dll.  
 
-   Для использования других сборок в создаваемом программном коде необходимо использовать директиву `Assembly`. Например:  
+   Для использования других сборок в создаваемом программном коде необходимо использовать директиву `Assembly`. Пример:  
 
    `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
 
-- Некоторые пространства имен, такие как `System`, автоматически импортируются в программный код. Для других пространств имен можно использовать директиву `Import` так же, как использовалась бы инструкция `using`. Например:  
+- Некоторые пространства имен, такие как `System`, автоматически импортируются в программный код. Для других пространств имен можно использовать директиву `Import` так же, как использовалась бы инструкция `using`. Пример:  
 
    `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
 
@@ -240,9 +237,6 @@ ms.locfileid: "51764770"
 - Выражения `<#= Expressions #>` оцениваются и преобразуются в строки.  
 
 ## <a name="see-also"></a>См. также  
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
- [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы классов UML: Рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
  [Создание файлов на основе модели UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

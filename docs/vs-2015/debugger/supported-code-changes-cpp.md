@@ -1,14 +1,9 @@
 ---
 title: Поддерживаемые изменения кода (C++) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797979"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002795"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,8 @@ ms.locfileid: "51797979"
  Сведения о работе с компонентом "Изменить и продолжить" для C++ в Visual Studio см. в разделе [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Неподдерживаемые изменения  
- Следующие изменения в коде C/C++ не могут быть применены во время сеанса отладки.  
+
+Следующие изменения в коде C/C++ не могут быть применены во время сеанса отладки.  
   
 - Большинство изменений в глобальных или статических данных.  
   
@@ -68,7 +64,7 @@ ms.locfileid: "51797979"
   
 - Изменения в коде, для которого отсутствует объектный файл.  
   
-  Если сделать одно из таких изменений и попытаться применить его, в окне **Вывод** отобразится сообщение об ошибке или предупреждение.  
+Если сделать одно из таких изменений и попытаться применить его, в окне **Вывод** отобразится сообщение об ошибке или предупреждение.  
   
 - Операция "Изменить и продолжить" не обновляет статические библиотеки. При внесении изменения в статическую библиотеку выполнение будет продолжено со старой версией без выдачи предупреждения.  
   
@@ -149,6 +145,3 @@ ms.locfileid: "51797979"
   
 ## <a name="see-also"></a>См. также  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

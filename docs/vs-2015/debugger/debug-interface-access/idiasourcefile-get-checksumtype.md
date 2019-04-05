@@ -1,14 +1,9 @@
 ---
 title: IDiaSourceFile::get_checksumType | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 374528b1e48077ba7cd4c1bc25a5cb6d1e87c661
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724820"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991899"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,9 +43,9 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>Примечания  
  Тип контрольной суммы — значение, которое может быть сопоставлен алгоритма подсчета контрольной суммы. Например стандартные PDB-файлов можно обычно имеют один из следующих значений:  
   
-|Тип контрольной суммы|Метка CryptoAPI|Описание:|  
+|Тип контрольной суммы|Метка CryptoAPI|Описание|  
 |-------------------|---------------------|-----------------|  
-|0|\<None >|Контрольная сумма не существует.|  
+|0|\<none>|Контрольная сумма не существует.|  
 |1|`CALG_MD5`|контрольная сумма, созданных с использованием алгоритма хэширования MD5.|  
 |2|`CALG_SHA1`|контрольная сумма, созданных с использованием алгоритма хэширования SHA1.|  
   
@@ -61,6 +56,3 @@ HRESULT get_checksumType ( 
 ## <a name="see-also"></a>См. также  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
-
-
-

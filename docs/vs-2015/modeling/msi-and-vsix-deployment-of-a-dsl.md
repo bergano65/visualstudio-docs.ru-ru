@@ -1,23 +1,20 @@
 ---
 title: Развертывание MSI и VSIX доменного языка с | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990418"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49922046"
   
 |Метод|Преимущества|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширения)|Значительно облегчает развертывание: копирования и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширения)|Значительно облегчает развертывание: Скопируйте и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|  
 |MSI (файл установщика)|— Позволяет пользователю открыть [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на целевом компьютере.<br />— Связывает XSD (XML schema) с типом файла DSL. Это позволяет избежать предупреждения при загрузке файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Проект установки необходимо добавить в решение для создания файла MSI.<br /><br /> Дополнительные сведения см. в разделе [развертывание доменного языка с помощью MSI-файл](#msi).|  
   
 ##  <a name="Installing"></a> Установка и удаление доменного языка с помощью VSX  
@@ -80,7 +77,7 @@ ms.locfileid: "49922046"
   
 1. Задайте `InstalledByMsi` в манифесте расширения. Это предотвращает VSX, установить и удалить за исключением, MSI-ФАЙЛ. Это важно, если другие компоненты будут включены в MSI-ФАЙЛ.  
   
-   1.  Откройте DslPackage\source.extension.tt  
+   1.  Open DslPackage\source.extension.tt  
   
    2.  Вставьте следующую строку перед `<SupportedProducts>`:  
   
@@ -141,6 +138,3 @@ ms.locfileid: "49922046"
 2.  Удалите DSL.  
   
 3.  Перезапустите Visual Studio.
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Вычисляемые и пользовательские свойства хранилища | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852860"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980894"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Вычисляемые и пользовательские свойства хранилища
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ ms.locfileid: "49852860"
   
 4.  В меню **Сборка** выберите **Собрать решение**.  
   
-     Вы получите следующее сообщение об ошибке: "*Вашкласс* содержит определения для Get*YourProperty*.»  
+     Выводится следующее сообщение об ошибке: "*Вашкласс* содержит определения для Get*YourProperty*.»  
   
 5.  Дважды щелкните сообщение об ошибке.  
   
@@ -118,6 +115,3 @@ void SetAgeValue(int value)
  [Переход и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Свойства доменных свойств](../modeling/properties-of-domain-properties.md)   
  [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

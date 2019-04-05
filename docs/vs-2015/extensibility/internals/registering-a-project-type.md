@@ -1,14 +1,9 @@
 ---
 title: Регистрация типа проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785330"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990377"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51785330"
    @="devenv.exe \"%1\""  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Имя и описание типа файлов проекта, которые имеют расширение .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Тип содержимого для файлов проекта.|  
@@ -86,7 +81,7 @@ ms.locfileid: "51785330"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@` (По умолчанию)|REG_SZ|`FigPrj Project VSPackage`|Это локализуемые имя зарегистрировано VSPackage (типа проекта).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Путь к типу проекта библиотеки DLL. Загружает эту библиотеку DLL интегрированной среды разработки и передает VSPackage CLSID для `DllGetClassObject` для получения <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> для создания <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объекта.|  
@@ -137,7 +132,7 @@ ms.locfileid: "51785330"
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Имя по умолчанию для проектов этого типа.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -154,7 +149,7 @@ ms.locfileid: "51785330"
   
  Ниже приведены параметры фильтры, доступные в предыдущем фрагменте кода.  
   
-|Параметр фильтра|Описание:|  
+|Параметр фильтра|Описание|  
 |-------------------|-----------------|  
 |`CommonFindFilesFilter`|Указывает, что фильтр является одним из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
 |`CommonOpenFilesFilter`|Указывает, что фильтр является одним из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
@@ -177,7 +172,7 @@ ms.locfileid: "51785330"
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Идентификатор ресурса для шаблоны новых проектов.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Путь для проектов типа зарегистрированных проекта по умолчанию.|  
@@ -198,7 +193,7 @@ ms.locfileid: "51785330"
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|Нет|Значение по умолчанию, который указывает, что следующие записи в операциях, прочие файлы проектов.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для файлов шаблонов Добавление новых элементов.|  
@@ -227,7 +222,7 @@ ms.locfileid: "51785330"
   
   Последнее поле соответствует номеру версии для ресурса CTMENU. Чтобы объединить меню снова, изменение номера версии.  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |% CLSID_Package %|REG_SZ|`,1000,1`|Ресурс, чтобы получить сведения о меню.|  
   
@@ -241,7 +236,7 @@ ms.locfileid: "51785330"
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для шаблонов фигур проект новый проект.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь к каталогу новых проектов. Элементы в этом каталоге будут отображены в **мастера создания проекта** диалоговое окно.|  
@@ -256,7 +251,7 @@ ms.locfileid: "51785330"
    "UseInterface"=dword:00000001  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Идентификатор класса зарегистрированного пакета VSPackage.|  
 |`UseInterface`|REG_DWORD|`1`|1 указывает, что пользовательский Интерфейс будет использоваться для взаимодействия с этим проектом. 0 указывает, что не существует пользовательского интерфейса.|  
@@ -275,4 +270,3 @@ ms.locfileid: "51785330"
  [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

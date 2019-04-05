@@ -1,14 +1,9 @@
 ---
 title: Использование RDT_ReadLock | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 337fa34bce713f743b8962f41a6889335b54b722
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980726"
 ---
 # <a name="rdtreadlock-usage"></a>Использование RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,8 @@ ms.locfileid: "51817468"
  Когда пользователь открывает документ в пользовательском Интерфейсе <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец документа должно быть установлено и <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> должен быть установлен флаг. Если не <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> владелец может быть установлено, а затем документа не будут сохранены, когда пользователь щелкает **сохранить все** или закрытии интегрированной среды разработки. Это означает, что если документ открыт незаметно там, где он изменен в памяти, и пользователю будет предложено сохранить документ при завершении работы или при сохранении Если **сохранить все** выбирается, а затем `RDT_ReadLock` нельзя использовать. Вместо этого необходимо использовать `RDT_EditLock` и зарегистрируйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> при <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> флаг.  
   
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock и изменение документа  
-<<<<<<< HEAD, упомянутые предыдущих флаг указывает, что даст невидимым Открытие документа его `RDT_EditLock` при открытии документа пользователем в видимом **DocumentWindow**. В таких случаях пользователю предоставляется **Сохранить** приглашение по видимых **DocumentWindow** закрыт. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` реализаций, использующих <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> служба изначально работать, только если `RDT_ReadLock` берется (т. е. когда документ открыт незаметно для анализа информации о). Позже, если необходимо изменить его, затем блокировки будет обновлена до слабую **RDT_EditLock**. Если пользователь затем открывает документ в видимом **DocumentWindow**, `CodeModel`на слабый `RDT_EditLock` освобождается.  
-==== Предыдущих флаг упоминалось указывает что даст невидимым открытии документа его `RDT_EditLock` при открытии документа пользователем в видимом **DocumentWindow**. В таких случаях пользователю предоставляется **Сохранить** приглашение по видимых **DocumentWindow** закрыт. Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel реализаций, использующих <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> служба изначально работать, только если `RDT_ReadLock` берется (т. е. когда документ открыт незаметно для анализа информации о). Позже, если необходимо изменить его, затем блокировки будет обновлена до слабую **RDT_EditLock**. Если пользователь затем открывает документ в видимом **DocumentWindow**, `CodeModel`на слабый `RDT_EditLock` освобождается.  
->>>>>>> 9c8493a8dd... Попробуйте новый диапазон моникера для поддержки версий объединения
+ Предыдущие упоминалось флаг указывает, что даст невидимым Открытие документа его `RDT_EditLock` при открытии документа пользователем в видимом **DocumentWindow**. В таких случаях пользователю предоставляется **Сохранить** приглашение по видимых **DocumentWindow** закрыт. Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel реализаций, использующих <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> служба изначально работать, только если `RDT_ReadLock` берется (т. е. когда документ открыт незаметно для анализа информации о). Позже, если необходимо изменить его, затем блокировки будет обновлена до слабую **RDT_EditLock**. Если пользователь затем открывает документ в видимом **DocumentWindow**, `CodeModel`на слабый `RDT_EditLock` освобождается.  
   
  Если пользователь закрывает **DocumentWindow** и выбирает **нет** когда будет предложено сохранить открытый документ, то `CodeModel` реализация удаляет всю информацию в документе и заново не откроет документ с диска незаметно в следующий раз дополнительные информация необходима для документа. Тонкость такое поведение является экземпляром, где пользователь открывает **DocumentWindow** невидимым открытого документа, его изменение, закрывает его и затем выбирает **нет** когда будет предложено сохранить документ. В данном случае, если документ имеет `RDT_ReadLock`, затем документ фактически не закрывается, и измененный документ остается открытым незаметно в памяти, несмотря на то, что пользователь выбрал не сохранять документ.  
   
  Если невидимым Открытие документа использует слабую `RDT_EditLock`, то он возвращает его блокировки, когда пользователь открывает документ, визуально и нет других блокировки удерживаются. Когда пользователь закрывает **DocumentWindow** и выбирает **нет** при появлении запроса на сохранение документа, затем документ должен быть закрыт из памяти. Это означает, что невидимый клиента должны прослушивать события RDT для отслеживания этого экземпляра. В следующий раз документа является обязательным, его нужно открыть заново.
-

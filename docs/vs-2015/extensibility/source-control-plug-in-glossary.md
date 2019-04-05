@@ -1,27 +1,22 @@
 ---
 title: Глоссарий подключаемого модуля управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9535987cc729c78c7d72ee9f51529aeb91b59450
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5120a5c6678cac32ef65e08ef7dc34649364cf9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990737"
 ---
 # <a name="source-control-plug-in-glossary"></a>Глоссарий подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51732290"
  Подключаемый модуль  
  Библиотеку DLL, которая предоставляет функции системы управления версиями, реализовав API подключаемых модулей управления источника.  
   
- Репозиторий  
+ WMI  
  Мастер-копия которой система управления версиями хранит журнал полной версии проекта. Каждый проект имеет ровно один репозиторий.  
   
  Номер редакции  
@@ -73,4 +68,3 @@ ms.locfileid: "51732290"
   
 ## <a name="see-also"></a>См. также  
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
-

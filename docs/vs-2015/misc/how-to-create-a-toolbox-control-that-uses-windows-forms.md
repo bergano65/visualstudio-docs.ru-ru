@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: Создание элемента управления панели элементов, использующего Windows Forms | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263722"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002534"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] , позволяет создавать элементы управления Windows Forms, которые автоматически добавляются в **панель элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления **панели элементов** , который можно передавать другим пользователям.  
@@ -92,7 +87,7 @@ ms.locfileid: "49263722"
   
 2.  Отправьте VSIX-файл в сеть или на веб-сайт.  
   
-     Если вы отправите файл на веб-сайт [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , другие пользователи с помощью **диспетчера расширений** в Visual Studio смогут найти и установить этот элемент управления.  
+     Если вы отправите файл [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, другие пользователи могут использовать **Диспетчер расширений** в Visual Studio для поиска элемента управления и установить его.  
   
 ## <a name="see-also"></a>См. также  
  [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
