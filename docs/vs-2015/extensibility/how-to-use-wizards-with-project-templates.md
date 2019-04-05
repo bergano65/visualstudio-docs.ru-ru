@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: использование мастеров для шаблонов проектов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование мастеров для шаблонов проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783764"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59003043"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Практическое руководство. Использование мастеров для шаблонов проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +223,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
   
 9. Найти **sn.exe** инструмент подписывания. Например в 64-разрядной операционной системе Windows 10, типичный путь будет иметь следующее:  
   
-     **C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      Если не удается найти средство, попробуйте запустить **где /R.  Sn.exe** в окне командной строки. Запомните или запишите путь.  
   
@@ -244,7 +239,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
   
      Не забывайте кавычек. Вы должны увидеть строку в выходные данные следующего вида  
   
-     **Токен открытого ключа <token>**  
+     **Токен открытого ключа \<token >**  
   
      Запомните или запишите это значение.  
   

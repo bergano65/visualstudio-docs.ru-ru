@@ -1,27 +1,22 @@
 ---
 title: Список доступных служб | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730696"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002582"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,10 +27,10 @@ ms.locfileid: "51730696"
   
 ## <a name="the-services"></a>Службы  
   
-|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание:|  
+|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Да|Да|Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> ИДЕНТИФИКАТОР C/C++: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> C/C++ ID: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Да|Да|Реализуется для отображения обработчик событий по умолчанию для элемента управления конструктора форм.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Да|Да|Позволяет VSPackage для доступа к интерфейсу автоматизации другом пакете VSPackage или элементом управления.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Да|Да|Позволяет VSPackage добавьте или создайте библиотеку расширенных типов.|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730696"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Да|Да|Предоставляет доступ к документации в формате XML-файлы, связанные с файлом метаданных.|  
   
 ## <a name="see-also"></a>См. также  
- [COM и управляемые службы](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM и управляемые службы](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)
-

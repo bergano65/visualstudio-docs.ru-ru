@@ -1,14 +1,9 @@
 ---
 title: '&lt;compatibleFrameworks&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af927086261f5472e0a71182b8c03b7d750827ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990337"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,12 @@ ms.locfileid: "49176597"
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -55,16 +50,16 @@ ms.locfileid: "49176597"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`S` `upportUrl`|Необязательный. Указывает URL-адрес, где можно скачать предпочтительные совместимой версии .NET Framework.|  
+|`S` `upportUrl`|Необязательный параметр. Указывает URL-адрес, где можно скачать предпочтительные совместимой версии .NET Framework.|  
   
 ## <a name="framework"></a>платформа  
- Обязательно. В следующей таблице перечислены атрибуты, `framework` поддерживает элемент.  
+ Обязательный. В следующей таблице перечислены атрибуты, `framework` поддерживает элемент.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`targetVersion`|Обязательно. Указывает номер версии целевой платформы .NET Framework.|  
-|`profile`|Обязательно. Задает профиль целевой платформы .NET Framework.|  
-|`supportedRuntime`|Обязательно. Указывает номер версии среды выполнения, связанной с платформы .NET Framework.|  
+|`targetVersion`|Обязательный. Указывает номер версии целевой платформы .NET Framework.|  
+|`profile`|Обязательный. Задает профиль целевой платформы .NET Framework.|  
+|`supportedRuntime`|Обязательный. Указывает номер версии среды выполнения, связанной с платформы .NET Framework.|  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -82,6 +77,3 @@ ms.locfileid: "49176597"
   
 ## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Написание кода для настройки доменного языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989746"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Написание кода для настройки доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49866328"
   
  Существует несколько контекстов, в которых можно написать код, который работает с DSL.  
   
-- **Пользовательские команды.** Можно создавать команды, что пользователи смогут вызвать щелчком правой кнопкой мыши на диаграмме и которой можно изменить модель. Дополнительные сведения см. в разделе [как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+- **Пользовательские команды.** Можно создавать команды, что пользователи смогут вызвать щелчком правой кнопкой мыши на диаграмме и которой можно изменить модель. Дополнительные сведения см. в разделе [Как Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 - **Проверка.** Можно написать код, который проверяет, что модель находится в правильном состоянии. Дополнительные сведения см. в разделе [проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md).  
   
@@ -36,7 +33,7 @@ ms.locfileid: "49866328"
   
 - **Преобразование текста.** Можно создать текстовые шаблоны, содержащие код, который обращается к модели и создает текстовый файл, например, для которого создается код программы. Дополнительные сведения см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Другие расширения Visual Studio.** Можно написать отдельный расширения VSIX, чтения и изменения моделей. Дополнительные сведения см. в разделе [как: открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Другие расширения Visual Studio.** Можно написать отдельный расширения VSIX, чтения и изменения моделей. Дополнительные сведения см. в разделе [Как Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Экземпляры классов, определенных вами в файле DslDefinition.dsl, хранятся в структуру данных, называемую *Store In-Memory* (IMS) или *Store*. Классы, которые вы определяете в DSL, всегда принимает Store в качестве аргумента в конструктор. Например, если доменный язык определяется класс с именем примера:  
   
@@ -80,6 +77,3 @@ ms.locfileid: "49866328"
   
 ## <a name="see-also"></a>См. также  
  [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-
