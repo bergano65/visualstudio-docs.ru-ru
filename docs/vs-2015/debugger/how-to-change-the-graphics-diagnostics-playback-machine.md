@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: изменение машины воспроизведения диагностики графики | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изменение машины воспроизведения диагностики графики | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989646"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Практическое руководство. Изменение машины воспроизведения диагностики графики
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Практическое руководство. изменение компьютера воспроизведения диагностики графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете воспроизведения графической информации с помощью локального компьютера или с помощью удаленного компьютера или устройства.  
@@ -37,7 +32,7 @@ ms.locfileid: "51737608"
   
 3.  Задайте **режим проверки подлинности** свойства **None**.  
   
-4.  Выберите **выберите** кнопки.  
+4.  Нажмите кнопку **Выбрать**.  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Использование удаленного компьютера для воспроизведения графической информации  
   
@@ -51,13 +46,10 @@ ms.locfileid: "51737608"
   
     -   Без проверки подлинности, задайте **режим проверки подлинности** свойства **None**.  
   
-4.  Выберите **выберите** кнопки.  
+4.  Нажмите кнопку **Выбрать**.  
   
 > [!NOTE]
 >  **Подключения к удаленному отладчику** диалоговое окно может также отображаться удаленные целевые объекты отладки, которые напрямую подключены к компьютеру разработки или находятся в той же подсети. Один из этих удаленных целевых объектов отладки можно использовать как компьютер воспроизведения диагностики графики без настройки вручную. В **подключения к удаленному отладчику** диалоговом окне выберите целевой объект и затем задайте **выберите** кнопку.  
   
 ## <a name="see-also"></a>См. также  
  [Документ журнала графики](../debugger/graphics-log-document.md)
-
-
-
