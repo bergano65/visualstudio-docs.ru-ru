@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell (интегрированной) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765283"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "59003147"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (интегрированной)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "51765283"
   
 -   Конструктор классов  
   
--   Упреждающее DotFuscator  
+-   PreEmptive Protection — Dotfuscator  
   
 -   Возможности языка  
   

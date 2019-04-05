@@ -1,37 +1,32 @@
 ---
-title: 'Создание нового проекта: Взгляд изнутри, часть 2 | Документация Майкрософт'
-ms.custom: ''
+title: 'Создание проекта: Это работает, часть 2 | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980359"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Создание нового проекта. Как это работает, часть 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Создание проекта: как это работает, часть 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-В [Создание нового проекта: под капот, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, каким образом **новый проект** диалоговое окно, окно заполняется. Предположим, что вы выбрали **приложение Windows Visual C#**, заполненный **имя** и **расположение** текстовые поля и щелчка OK.  
+В [Создание нового проекта: За кулисами, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, каким образом **новый проект** диалоговое окно, окно заполняется. Предположим, что вы выбрали **приложение Windows Visual C#**, заполненный **имя** и **расположение** текстовые поля и щелчка OK.  
   
 ## <a name="generating-the-solution-files"></a>Создание файлов решения  
  Выбрав шаблон приложения направляет [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] распаковка и открытие соответствующих VSTEMPLATE-файл и запустить шаблон для интерпретации команд XML в этом файле. Эти команды создают проектов и элементов проектов в новом или существующем решении.  
   
- Шаблон распаковывает источника файлы, называемые шаблоны элементов, из той же папки ZIP-файл, содержащий VSTEMPLATE-файл. Этот шаблон копирует эти файлы в новый проект, настройка их соответствующим образом. Обзор шаблонов проектов и элементов, см. в разделе [NIB: шаблоны Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Шаблон распаковывает источника файлы, называемые шаблоны элементов, из той же папки ZIP-файл, содержащий VSTEMPLATE-файл. Этот шаблон копирует эти файлы в новый проект, настройка их соответствующим образом. Обзор шаблонов проектов и элементов, см. в разделе [NIB: Шаблоны Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Замена параметров шаблона  
  Когда шаблон копирует шаблон элемента в новый проект, он заменяет любые параметры шаблона строк в файле. Параметр шаблона — это специальный маркер, и после идти знак доллара, например, $date$.  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Мы рассмотрели \<TemplateData > статьи [Создание нового проекта: под капот, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Теги в этом разделе используются для управления внешним видом **новый проект** диалоговое окно.  
+ Мы рассмотрели \<TemplateData > статьи [Создание нового проекта: Это работает, часть один](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Теги в этом разделе используются для управления внешним видом **новый проект** диалоговое окно.  
   
  Теги в \<TemplateContent > раздел элемента управления, создание новых проектов и элементов проекта. Вот \<TemplateContent > раздел cswindowsapplication.vstemplate-файла в папке 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip \Program Files\Microsoft Visual Studio.  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. Как это работает, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Создание нового проекта. За кулисами часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

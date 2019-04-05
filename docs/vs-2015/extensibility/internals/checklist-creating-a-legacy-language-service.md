@@ -1,27 +1,22 @@
 ---
-title: 'Контрольный список: Создание языковой службы прежних версий | Документация Майкрософт'
-ms.custom: ''
+title: Контрольный список. Создание языковой службы прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979326"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,9 +109,9 @@ ms.locfileid: "51782990"
   
    Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> интерфейс для прослушивания изменений в список лексем.  
   
-- структуризация  
+- Структуризация  
   
-   Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [как: укажите расширен структурирование поддержки в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [Как Расширенная поддержка структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Регистрация языковой службы  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51782990"
 ## <a name="see-also"></a>См. также  
  [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

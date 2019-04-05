@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: просмотр дефектов управляемого кода | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Просмотр дефектов управляемого кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, analyzing
 - code analysis, viewing managed code defects
@@ -18,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4f0dff4744e3c77ed94afe78396008a3de7646c3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ef9b5f8da2cf38566c6cedbf10eae3fa5921362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979113"
 ---
 # <a name="how-to-view-managed-code-defects"></a>Практическое руководство. Просмотр дефектов управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49239425"
 -   **Выберите идентификатор предупреждения.** Предупреждение идентификаторы имеют префикс в виде **ЦС** и включать номер из четырех цифр. Например, CA1234.  
   
      Отображается раздела справки библиотеки MSDN для предупреждения. Раздел справки содержит подробные сведения о причине предупреждения и включает примеры, демонстрирующие, как предупреждение ошибка происходит и разрешается.
-
-
-

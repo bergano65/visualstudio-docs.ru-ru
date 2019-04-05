@@ -1,30 +1,27 @@
 ---
 title: Приступая к работе с доменными языками | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877775"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002470"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе приводятся основные концепции в определении и использовании доменный язык (DSL), созданных с помощью пакета SDK моделирования для Visual Studio.  
   
- Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [пакет и пакет SDK моделирования](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [Пакет SDK пакет и моделирование](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Что можно сделать с помощью предметно-ориентированного языка?  
  Доменный язык представляет собой нотацию, обычно графическом, предназначены для использования для определенной цели. Напротив языки, такие как UML, общего назначения. В DSL можно определить типы элементов модели и их отношений и, как они будут представлены на экране.  
@@ -46,7 +43,7 @@ ms.locfileid: "49877775"
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Пакет SDK моделирования для Visual Studio|[Скачайте MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Пакет SDK моделирования для Visual Studio|[Скачайте MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>Создание решения DSL  
  Чтобы создать новый доменный язык, создайте новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решения с помощью шаблона проекта доменного языка.  
@@ -86,7 +83,7 @@ ms.locfileid: "49877775"
   
    После этого пользовательский интерфейс примет следующий вид:  
   
-   ![Конструктор DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")  
   
    Данное решение определяет доменный язык. Дополнительные сведения см. в разделе [Обзор пользовательского интерфейса средства доменного языка](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -107,7 +104,7 @@ ms.locfileid: "49877775"
 1. Нажмите кнопку **преобразовать все шаблоны** в панели инструментов обозревателя решений. Будет повторно создан большую часть исходного кода из DslDefinition.dsl.  
   
    > [!NOTE]
-   >  При каждом изменении DslDefinition.dsl, необходимо нажать кнопку **преобразовать все шаблоны** перед перестроением решения. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  При каждом изменении DslDefinition.dsl, необходимо нажать кнопку **преобразовать все шаблоны** перед перестроением решения. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Нажмите клавишу F5, или на **Отладка** меню, щелкните **начать отладку**.  
   
@@ -377,7 +374,7 @@ ms.locfileid: "49877775"
 ## <a name="validation-and-commands"></a>Проверка и команды  
  Можно разработать дальнейшей этот DSL путем добавления ограничения проверки. Эти ограничения являются методами, которые вы можете определить, убедитесь, что модель находится в правильном состоянии. Например можно определить ограничение, чтобы убедиться в том, Дата рождения дочернего более поздняя, чем из его родительских объектов. Функция проверки отображает предупреждение, если пользователь DSL пытается сохранить модель, которая разбивает никакие ограничения. Дополнительные сведения см. в разделе [проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md).  
   
- Можно также определить команды меню, которые пользователь может вызывать. Команды можно изменить модель. Они также могут взаимодействовать с другими моделями в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и с внешними ресурсами. Дополнительные сведения см. в разделе [как: изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Можно также определить команды меню, которые пользователь может вызывать. Команды можно изменить модель. Они также могут взаимодействовать с другими моделями в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и с внешними ресурсами. Дополнительные сведения см. в разделе [Как Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Развертывание DSL  
  Чтобы разрешить другим пользователям использовать доменный язык, распространении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файл расширения (VSIX). Это будет создано при построении решения DSL.  
@@ -386,7 +383,7 @@ ms.locfileid: "49877775"
   
  Можно использовать ту же процедуру для установки DSL на своем компьютере, таким образом, нет необходимости использовать экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Дополнительные сведения см. в разделе [развертывание решений предметно-ориентированного языка](../modeling/deploying-domain-specific-language-solutions.md).  
+ Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a> Удалить старые экспериментальные доменных языков  
  Если вы создали экспериментальный доменных языков, вы больше не требуется, можно удалить с компьютера, сбросив [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] экспериментальный экземпляр.  
@@ -405,6 +402,3 @@ ms.locfileid: "49877775"
  [Общие сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)   
  [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
  [Пакет SDK пакет и моделирование](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-
