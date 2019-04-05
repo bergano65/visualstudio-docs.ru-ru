@@ -1,14 +1,9 @@
 ---
 title: Отладка макета с использованием проводника DOM | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980255"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Отладка макета с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51787762"
 > [!TIP]
 >  Изменения, вносимые на вкладке **Макет** , не являются постоянными. Вы можете внести постоянные изменения в исходный код, а затем обновить приложение, нажав кнопку **Обновить приложение Windows** (только для приложений Магазина Windows и Магазина Windows Phone) на панели инструментов «Отладка». Это позволит избежать перезапуска отладчика.  
   
- С помощью проводника DOM изменять аспекты макета, не отображаемые в рамочной модели, см. в разделе [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [стилей CSS, отладка с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ С помощью проводника DOM изменять аспекты макета, не отображаемые в рамочной модели, см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [стилей CSS, отладка с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Пример устранения проблемы с макетом  
  В этом примере показано, как выбрать элемент списка в шаблоне Hub/Pivot, интерпретировать значения рамочной модели на вкладке **Макет** , а затем изменить одно из значений свойств, чтобы устранить проблему с макетом.  
@@ -88,7 +83,7 @@ ms.locfileid: "51787762"
 8.  Переключитесь на Visual Studio и щелкните **Выбор элемента** в проводнике DOM (или нажмите CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком.  
   
     > [!TIP]
-    >  Кроме того, выбрать HTML-элементы можно непосредственно в проводнике DOM с помощью клавиш со стрелками или иных методов. Дополнительные сведения о выборе элементов см. в разделе [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Кроме того, выбрать HTML-элементы можно непосредственно в проводнике DOM с помощью клавиш со стрелками или иных методов. Дополнительные сведения о выборе элементов см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. В эмуляторе телефона или имитаторе выберите серую правую половину одного из изображений, разрезанных напополам. Вокруг выбранного элемента появляется рамка, как показано здесь в эмуляторе Windows Phone:  
   
@@ -132,9 +127,6 @@ ms.locfileid: "51787762"
 15. Перейдите в эмулятор телефона или в имитатор. Обновленные значения margin-left применяются к изображениям раздела 4. Эти значения также обновляются на вкладке **Вычисленные** в правиле margin-left.  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Отладка стилей CSS с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)
-
-
-

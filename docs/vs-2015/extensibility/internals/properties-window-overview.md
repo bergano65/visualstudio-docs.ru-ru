@@ -1,26 +1,21 @@
 ---
 title: Общие сведения об окне свойств | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752098"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58980012"
 ---
 # <a name="properties-window-overview"></a>Общие сведения об окне свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ ms.locfileid: "51752098"
   
  В следующей таблице перечислены основные интерфейсы, используемые **свойства** окна.  
   
-|Имя интерфейса|Описание:|  
+|Имя интерфейса|Описание|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Предоставляет список категорий для **свойства** окна и сопоставляет каждое свойство к категории.|  
-|[Интерфейс IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Предоставляет методы и свойства для программирования средств и других приложений, поддерживающих автоматизацию объекта.|  
+|[Интерфейс IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Предоставляет методы и свойства для программирования средств и других приложений, поддерживающих автоматизацию объекта.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Расположены кнопки с многоточием (...), вызывается *построители* , откройте windows модальное диалоговое окно, реализуемый самого объекта. Используется, если значение не является типизированным легко пользователем в текстовое поле. Например он может использоваться для откройте средство выбора цвета, определяющее значение RGB для вас.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Предоставляет доступ к объектам, используемую для обновления сведений, отображаемых в **свойства** окна. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> реализуется VSPackages для каждого окна, содержащий выбираемых объектов с помощью связанных свойств для отображения.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Предоставляет сведения о типе объекта, например методы интерфейса и полей структуры.|  
@@ -58,4 +53,3 @@ ms.locfileid: "51752098"
 ## <a name="see-also"></a>См. также  
  [Расширение свойств](../../extensibility/internals/extending-properties.md)   
  [Поля окна свойств и интерфейсы](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

@@ -1,27 +1,22 @@
 ---
 title: Параметров сборки взаимодействия Visual Studio маршалинг | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979015"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Маршалинг параметров сборки взаимодействия Visual Studio
 Пакеты VSPackage, написаны в управляемом коде может возникнуть необходимость вызвать либо вызываться неуправляемым кодом COM. Как правило аргументы метода преобразования или маршалинга, автоматически, упаковщик взаимодействия. Тем не менее иногда аргументы нельзя преобразовать простым способом. В таких случаях параметры прототип метода сборки взаимодействия, используются для сопоставления параметров функции COM как можно точнее. Дополнительные сведения см. в разделе [маршалинг взаимодействия](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Управляемые методы, которые вызывают интерфейсы этого типа следует извлечь первый элемент из массива [out]. Этот элемент может рассматриваться как будто `retval` возвращаемое значение из соответствующего COM-интерфейса.  
   
 ## <a name="see-also"></a>См. также  
- [Маршалинг взаимодействия](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Маршалинг взаимодействия](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Маршалинг взаимодействия](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Устранение неполадок взаимодействия](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Управляемые пакеты VSPackage](../misc/managed-vspackages.md)

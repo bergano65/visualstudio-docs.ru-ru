@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: переключение между представлениями и редактором XML | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Переключение между представлениями и редактором XML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978542"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Как переключаться между представлениями и редактором XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Практическое руководство. Переключение между представлениями и редактором XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -44,6 +39,3 @@ ms.locfileid: "49218456"
 6.  Для переключения между представлениями с использованием сочетания клавиш, нажмите CTRL+1 для начального представления, CTRL+2 для представления графика и CTRL+3 для представления модели содержимого.  
   
 7.  Чтобы перейти к редактору XML из представления модели содержимого, щелкните правой кнопкой мыши узел и выберите **просмотреть код** в контекстном меню.
-
-
-
