@@ -1,14 +1,9 @@
 ---
 title: 'Подготовка к отладке: Веб-приложений ASP.NET | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991325"
 ---
-# <a name="debugging-preparation-aspnet-web-applications"></a>Подготовка к отладке: веб-приложения ASP.NET
+# <a name="debugging-preparation-aspnet-web-applications"></a>Подготовка к отладке: Веб-приложения ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Веб-сайт шаблон создает приложение веб-форму. При создании веб-узла с помощью этого шаблона [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] задает отладочные настройки по умолчанию. В **свойства проекта** диалоговом окне можно указать, следует ли веб-страницу стартовой. При запуске отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]веб-сайта с этими параметрами по умолчанию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускает Internet Explorer и присоединит отладчик к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] рабочий процесс (aspnet_wp.exe или w3wp.exe). Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
@@ -48,14 +43,14 @@ ms.locfileid: "51730687"
   
 1.  Разместите точки останова в функциях и обработчиках событий.  
   
-     Для получения дополнительной информации см. [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Для получения дополнительной информации см. [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Когда будет достигнута точка останова, выполните шаг с заходом внутрь этой функции. Наблюдайте за выполнением кода, пока не изолируете проблему.  
   
-     Дополнительные сведения см. в разделе [пошаговое выполнение](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) и [отладки веб-приложений](../debugger/debugging-web-applications-and-script.md).  
+     Дополнительные сведения см. в разделе [пошаговое выполнение](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) и [отладки веб-приложений](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Изменение настроек по умолчанию  
- При желании можно изменить стандартные параметры конфигурации для отладки и конфигурации для выпуска, созданные [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md).  
+ При желании можно изменить стандартные параметры конфигурации для отладки и конфигурации для выпуска, созданные [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Как настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 #### <a name="to-change-the-default-debug-configuration"></a>Изменение используемых по умолчанию параметров конфигурации отладки  
   
@@ -74,6 +69,3 @@ ms.locfileid: "51730687"
  [Основы отладки](../debugger/debugger-basics.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)
-
-
-

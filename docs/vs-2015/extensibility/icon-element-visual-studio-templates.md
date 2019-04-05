@@ -1,14 +1,9 @@
 ---
 title: Элемент Icon (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Icon
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4a08efd526c12c60be1bdf8e015fd5028f57e50b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991938"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Элемент Icon (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51772584"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, указывающий пакет Visual Studio.|  
 |`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Указывает идентификатор ресурса Visual Studio.|  
@@ -60,7 +55,7 @@ ms.locfileid: "51772584"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -102,4 +97,3 @@ ms.locfileid: "51772584"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-

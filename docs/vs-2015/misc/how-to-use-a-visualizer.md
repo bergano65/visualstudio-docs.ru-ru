@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: использование визуализатора | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование визуализатора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990244"
 ---
 # <a name="how-to-use-a-visualizer"></a>Практическое руководство. Использование визуализатора
 С помощью визуализатора можно отобразить содержимое переменной или объекта способом, отвечающим типу данных. Можно использовать визуализаторам из **подсказок по данным**, **Watch** окне **"Видимые"** окна, или **"Локальные"** окно.  
@@ -65,6 +60,6 @@ ms.locfileid: "51721925"
   
 ## <a name="see-also"></a>См. также  
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Практическое: Установка визуализатора](../debugger/how-to-install-a-visualizer.md)   
- [Практическое: Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
+ [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)   
+ [Практическое руководство. Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
  [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

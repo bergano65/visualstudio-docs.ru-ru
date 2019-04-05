@@ -1,23 +1,20 @@
 ---
-title: 'Как: открытие модели из файла в коде программы | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Открытие модели из файла в коде программы | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994456"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ ms.locfileid: "49940870"
   
     -   Если вы не видите этого в разделе **.NET** вкладке **Add References** диалоговом окне щелкните **Обзор** вкладку и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Сборки DSL, который находится в папке bin проекта доменного языка. Его имя обычно имеет форму: *YourCompany*. *Ваш_проект*`.Dsl.dll`.  
+-   Сборки DSL, который находится в папке bin проекта доменного языка. Обычно имя имеет вид: *YourCompany*. *Ваш_проект*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Важные классы в доменном ЯЗЫКЕ  
  Прежде чем можно написать код, считывающий DSL, следует знать имена некоторых классов, созданных с DSL. В решение DSL откройте **Dsl** проекта и папка **GeneratedCode** папки. Можно дважды щелкнуть в проекте сборки DSL **ссылки**и откройте пространство имен DSL в **обозреватель объектов**.  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

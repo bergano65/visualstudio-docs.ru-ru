@@ -1,25 +1,20 @@
 ---
-title: 'Пошаговое руководство: Отладка ошибок из-за заливки отрисовки | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отладка ошибок из-за заливки отрисовки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733196"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990540"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Пошаговое руководство. Отладка ошибок отрисовки, возникающих из-за заливки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51733196"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Анализ кадра в журнале графики  
   
-1. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]загрузите журнал графики, содержащий кадр, на котором видно, что модель отсутствует. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откроется новое окно документа журнала графики. В верхней части этого окна находится вывод целевого объекта отрисовки для выбранного кадра. В нижней части находится **Список кадров**, в котором каждый захваченный кадр отображается как эскиз.  
+1. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]загрузите журнал графики, содержащий кадр, на котором видно, что модель отсутствует. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откроется новое окно документа журнала графики. В верхней части этого окна находится вывод целевого объекта отрисовки для выбранного кадра. В нижней части находится **Список кадров**, в котором каждый захваченный кадр отображается как эскиз.  
   
 2. В **списке кадров**выберите кадр, на котором объект имеет неправильный внешний вид. Однобуферная прорисовка обновляется, и в ней отображается выбранный кадр. В этом сценарии окно документа журнала графики выглядит следующим образом:  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.  
   
  ![Объект выводится с правильными цветами. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

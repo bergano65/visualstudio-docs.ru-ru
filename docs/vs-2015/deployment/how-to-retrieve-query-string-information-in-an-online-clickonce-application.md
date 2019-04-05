@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993895"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49278932"
 > [!NOTE]
 >  Прежде чем принять решение о включении этой функции, ознакомьтесь с подразделом "Безопасность" ниже.  
   
- Сведения о создании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью Mage.exe или MageUI.exe см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Сведения о создании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью Mage.exe или MageUI.exe см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), аргументы командной строки можно передать автономному приложению [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Если требуется передать аргументы в приложение, можно передать параметры в файл ярлыка с помощью расширения .APPREF-MS.  
@@ -88,6 +83,3 @@ ms.locfileid: "49278932"
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
-
-
-

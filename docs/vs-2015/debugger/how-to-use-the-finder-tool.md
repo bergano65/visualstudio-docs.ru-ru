@@ -1,29 +1,24 @@
 ---
-title: 'Практическое: использование инструмента поиска | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование инструмента поиска | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989921"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Практическое руководство. Использование инструмента поиска
+# <a name="how-to-use-the-finder-tool"></a>Практическое руководство. использование инструмента поиска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно использовать инструмент поиска в **найти окно** диалогового окна свойств или окна сообщений. Инструмент поиска можно находить отключенные дочерние окна и понять, какое окно, чтобы выделить, если отключены дочерние окна перекрываются.  
@@ -54,14 +49,11 @@ ms.locfileid: "51747083"
   
 4.  В разделе **Показать**, выберите пункт **свойства** или **сообщений**.  
   
-5.  Нажмите клавишу **ОК**.  
+5.  Нажмите кнопку **ОК**.  
   
      Если вы выбрали **свойства**, [диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md) открывает. Если вы выбрали **сообщений**, [представления сообщений](../debugger/messages-view.md) откроется окно.  
   
 ## <a name="see-also"></a>См. также  
- [Представления Spy ++](../debugger/spy-increment-views.md)   
- [Использование Spy ++](../debugger/using-spy-increment.md)   
+ [Представления Spy++](../debugger/spy-increment-views.md)   
+ [Использование Spy++](../debugger/using-spy-increment.md)   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)
-
-
-

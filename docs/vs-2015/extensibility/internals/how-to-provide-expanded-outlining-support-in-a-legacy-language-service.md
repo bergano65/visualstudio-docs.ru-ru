@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Расширенная поддержка структурирования в языковой службе прежних версий | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Расширенная поддержка структурирования в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 56d125cdfc3cbdbbc880e1e8a98136eb20e07df1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff387bb2cd029e80641e8c13b198b8f22ccabd1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993284"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Практическое: Расширенная поддержка структурирования в языковой службе прежних версий
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Практическое руководство. Расширенная поддержка структурирования в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Существует два варианта для расширения структуры поддержки для вашего языка, чем поддержка **свернуть в определения** команды. Вы можете добавить редактором структурные области, а также добавить управляемая клиентом структурные области.  
@@ -60,5 +55,4 @@ ms.locfileid: "51774215"
     > [!NOTE]
     >  При вызове <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, можно указать клиент скрытого текста (т. е <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> объекта). Этот клиент уведомляет вас, когда скрытый текст или область структуры развернута или свернута пользователем.  
   
-4.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> структуры) параметра: укажите значение <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> в `iType` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры, чтобы указать, что вы создаете область структуры, а не скрытую область. Укажите, является ли область, управляемая клиентом или редактором в `dwBehavior` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Смарт-реализация структуры может содержать смесь структурные области редактора и управляемая клиентом. Укажите текст заголовка, отображаемый, когда ваш структурная область свернута, такие как «...» в `pszBanner` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Текст баннера по умолчанию редактора для скрытой области — «...».
-
+4.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> структуры) параметра: Укажите значение <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> в `iType` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры, чтобы указать, что вы создаете область структуры, а не скрытую область. Укажите, является ли область, управляемая клиентом или редактором в `dwBehavior` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Смарт-реализация структуры может содержать смесь структурные области редактора и управляемая клиентом. Укажите текст заголовка, отображаемый, когда ваш структурная область свернута, такие как «...» в `pszBanner` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Текст баннера по умолчанию редактора для скрытой области — «...».

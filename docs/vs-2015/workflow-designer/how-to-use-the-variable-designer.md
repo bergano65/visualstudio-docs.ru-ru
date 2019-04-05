@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: использовать конструктор переменных | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использовать конструктор переменных | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
@@ -13,15 +10,15 @@ ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2348fbe0ed51f72ee1218f7ed1ed2006a48a124d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba555be7b5de38fa0fba5bc7cc899661e47333cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994188"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Как использовать конструктор переменных
+# <a name="how-to-use-the-variable-designer"></a>Практическое руководство. использовать конструктор переменных
 Конструктор переменных используется для создания переменных для использования в сценариях привязки данных и условных инструкциях. Конструктор нажав **переменных** кнопку в левом нижнем углу поля визуальной разработки. Конструктор содержит список переменных, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **по умолчанию** столбца. Каждая переменная содержит имя, тип переменной, область действий и значение по умолчанию (если такое существует). Имя и значение по умолчанию представляют собой изменяемые текстовые поля, а тип и область действий представляют собой раскрывающееся меню. Область действий - это действие, которое было выбрано при вызове конструктора переменных. Если переменную невозможно создать в пределах возможных вариантов, то область действий по умолчанию примет значение действия ближайшего предка среди вариантов, предполагающих создание переменных в его пределах. [!INCLUDE[crabout](../includes/crabout-md.md)] переменные, см. в разделе [переменных и аргументов](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
  Порядок сортировки не применяется до тех пор, пока пользователь явно не использует одно из средств управления, закроет и заново откроет конструктор переменных или создаст другую переменную.  
@@ -42,4 +39,4 @@ ms.locfileid: "49265160"
 ## <a name="see-also"></a>См. также  
  [В конструкторе рабочих процессов](../workflow-designer/using-the-workflow-designer.md)   
  [Переменные и аргументы](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
- [Как использовать конструктор аргументов](../workflow-designer/how-to-use-the-argument-designer.md)
+ [Практическое руководство. Использование конструктора аргументов](../workflow-designer/how-to-use-the-argument-designer.md)

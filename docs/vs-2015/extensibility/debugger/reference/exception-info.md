@@ -1,14 +1,9 @@
 ---
 title: EXCEPTION_INFO | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - EXCEPTION_INFO
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a6feebb3be6f6f6f50a7d1a2ed3ff8525dacf6c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993189"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ public struct EXCEPTION_INFO { 
  Эта структура передается в качестве параметра [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) и [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) методы. Эта структура также передается [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) метод для заполнения.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -89,4 +84,3 @@ public struct EXCEPTION_INFO { 
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)   
  [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Определение того, какой редактор открывает файл в проекте | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993885"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Определение редактора, с помощью которого откроется файл в проекте
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51741605"
   
  Проект прочих файлов утверждений все файлы, которые не полученное в других проектах. Таким образом, пользовательских редакторов можно открывать документы, прежде чем стандартные редакторы открыть их. Если проект прочих файлов утверждений файл, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы открыть файл с помощью стандартного редактора. Среда проверяет свой внутренний список зарегистрированных редакторы для, обрабатывающий RTF-файлы. Этот список находится в реестре по адресу следующий раздел:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  Среда также проверяет идентификаторы класса в ключе HKEY_CLASSES_ROOT\CLSID для объектов, имеющих подпараметр DocObject. Если обнаруживается расширение файла, встроенную версию приложения, например Microsoft Word создается на месте в Visual Studio. Эти объекты документа должен быть составные файлы, которые реализуют <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> необходимо реализовать интерфейс, либо этого объекта <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> интерфейс.  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51741605"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

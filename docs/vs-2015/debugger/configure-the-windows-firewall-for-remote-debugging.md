@@ -1,25 +1,20 @@
 ---
 title: Настройка брандмауэра Windows для удаленной отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978666"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Настройка брандмауэра Windows для удаленной отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51734582"
   
 - Windows 7  
   
-- Windows 8 или 8.1  
+- Windows 8 или 8.1  
   
 - Windows 10  
   
@@ -85,16 +80,16 @@ ms.locfileid: "51734582"
 |-|-|-|-|  
 |**Порты**|**Входящий или исходящий**|**Протокол**|**Описание**|  
 |3702|Исходящий|UDP|Требуется для обнаружения удаленного отладчика.|  
-|4020||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
-|4021||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
+|4020||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
+|4021||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Порты на удаленном компьютере, обеспечивающие удаленную отладку в режиме совместимости управляемого или машинного кода  
   
 |||||  
 |-|-|-|-|  
 |**Порты**|**Входящий или исходящий**|**Протокол**|**Описание**|  
-|135, 139, 445|Исходящий|TCP|Обязательно.|  
-|137, 138|Исходящий|UDP|Обязательно.|  
+|135, 139, 445|Исходящий|TCP|Обязательный.|  
+|137, 138|Исходящий|UDP|Обязательный.|  
 |500, 4500|Исходящий|UDP|Требуется, если в соответствии с политикой домена обмен данными по сети должен осуществляться по протоколу IPSec.|  
 |80|Исходящий|TCP|Требуется для отладки веб-сервера.|  
   
@@ -118,6 +113,3 @@ ms.locfileid: "51734582"
   
 ## <a name="see-also"></a>См. также  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

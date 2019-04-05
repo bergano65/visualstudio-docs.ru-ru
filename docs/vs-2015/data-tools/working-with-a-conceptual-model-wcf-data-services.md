@@ -1,12 +1,9 @@
 ---
 title: Работа с концептуальной модели (службы данных WCF) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +17,15 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6da3289d0283640cd0b39b44a3a923eb48f517
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47950ea00f8ea7a6ec55476157a54dcd0aa9c75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994056"
 ---
-# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной модели (службы данных WCF)
+# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной моделью(службы данных WCF)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -39,7 +36,7 @@ ms.locfileid: "49233598"
 |Раздел|Описание|  
 |-----------|-----------------|  
 |[Практическое руководство. Выполнение запросов к службе данных](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Показано, как выполнять запросы к службе данных из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] приложения.|  
-|[Практическое руководство. Проекция результатов запроса](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Показано, как уменьшить объем данных, возвращаемых по запросу службы данных.|  
+|[Практическое руководство. Спроецировать результаты запроса](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Показано, как уменьшить объем данных, возвращаемых по запросу службы данных.|  
   
  При использовании концептуальной модели, можно определить, какие данные является допустимым на языке, который совпадает с доменом. Можно определить допустимые данные в модели, или можно добавить проверку для операций, выполняемых в службе сущности или данных.  
   
@@ -59,4 +56,3 @@ ms.locfileid: "49233598"
 ## <a name="see-also"></a>См. также  
  [Службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
  [Выполнение запросов к службе данных](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
-

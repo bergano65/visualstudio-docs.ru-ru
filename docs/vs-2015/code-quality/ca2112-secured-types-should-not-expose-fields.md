@@ -1,14 +1,9 @@
 ---
-title: 'CA2112: Защищенные типы не должны предоставлять поля | Документация Майкрософт'
-ms.custom: ''
+title: CA2112. Защищенные типы не должны предоставлять поля | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2112
 - SecuredTypesShouldNotExposeFields
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a09093d05758d58828b9d7ca73223243252cb23c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992206"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: защищенные типы не должны предоставлять поля
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112. Защищенные типы не должны предоставлять поля
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -71,12 +66,9 @@ ms.locfileid: "49871463"
  **Создание экземпляра SecuredTypeWithFields. ** 
  **Безопасный тип поля: 22, 33**
 **изменение защищенного типа поля... ** 
- **Поля объекта кэшируются: 99, 33**
+ **Поля кэширования объекта: 99, 33**
 ## <a name="related-rules"></a>Связанные правила
- [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>См. также
  [Требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [данные и моделирование](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

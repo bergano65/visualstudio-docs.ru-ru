@@ -1,14 +1,9 @@
 ---
 title: Методы отладки CRT | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992029"
 ---
 # <a name="crt-debugging-techniques"></a>Методы отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51801034"
  Поддержка отладки для библиотеки CRT и инструкции по применению ее средств.  
   
  [Макросы для создания отчетов](../debugger/macros-for-reporting.md)  
- Предоставляет сведения о **_RPTn** и **_RPTFn** макросы (определенная в CRTDBG. H), который заменяет собой `printf` для отладки.  
+ Сведения о макросах **_RPTn** и **_RPTFn** (определенных в CRTDBG.H), заменяющих оператор `printf` для отладки.  
   
  [Версии отладки функций выделения кучи](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Специальные отладочные версии функций выделения кучи, содержащие сведения о том, как CRT отображает вызовы, как избежать преобразования, а также преимущества явных вызовов, отслеживание отдельных типов выделений в клиентских блоках и результаты отсутствия описания _DEBUG.  
@@ -63,6 +58,3 @@ ms.locfileid: "51801034"
   
  [Безопасность отладчика](../debugger/debugger-security.md)  
  Рекомендации по безопасной отладке.
-
-
-

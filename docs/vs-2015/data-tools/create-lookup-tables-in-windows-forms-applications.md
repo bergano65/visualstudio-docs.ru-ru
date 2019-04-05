@@ -1,12 +1,9 @@
 ---
 title: Создание таблиц подстановки в приложениях Windows Forms | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990319"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Создание таблиц подстановки в приложениях Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +36,10 @@ ms.locfileid: "49223900"
   
 ## <a name="to-databind-a-lookup-control"></a>Привязки элемента управления  
   
-1.  Откройте **источников данных** окна.  
+1.  Откройте окно **Источники данных**.  
   
     > [!NOTE]
-    >  Таблицы подстановки требуют, что две связанные таблицы или объекты доступны в **источников данных** окна. Дополнительные сведения см. в разделе [Практическое руководство. Отображение связанных данные в приложении Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+    > Таблицы подстановки требуют, что две связанные таблицы или объекты доступны в **источников данных** окна.
   
 2.  Разверните узлы в **источников данных** окно, пока не будут видны в родительской таблице и все ее столбцы и связанной дочерней таблицы и все ее столбцы.  
   
@@ -55,7 +52,7 @@ ms.locfileid: "49223900"
   
 5.  Перетащите главный узел дочерней таблицы из **источников данных** окна на форму.  
   
-     Элементы управления с привязкой к данным (с метками описания) и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) отображаются в форме. Объект [набора данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.  
+     Элементы управления с привязкой к данным (с метками описания) и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) отображаются в форме. Объект [набора данных](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.  
   
 6.  Теперь перетащите главный узел родительской таблицы из **источников данных** окна непосредственно в элемент управления поиском ( <xref:System.Windows.Forms.ComboBox>).  
   
@@ -63,11 +60,10 @@ ms.locfileid: "49223900"
   
     |Свойство.|Пояснение к параметру|  
     |--------------|----------------------------|  
-    |**Источник данных**|Visual Studio задает для этого свойства <xref:System.Windows.Forms.BindingSource>, созданный для перетаскиваемой на элемент управления таблицы (сравните с созданием <xref:System.Windows.Forms.BindingSource> при создании элемента управления).<br /><br /> Если вы хотите внести корректировку, установите это значение <xref:System.Windows.Forms.BindingSource> таблицы со столбцом, который вы хотите отобразить.|  
+    |**DataSource**|Visual Studio задает для этого свойства <xref:System.Windows.Forms.BindingSource>, созданный для перетаскиваемой на элемент управления таблицы (сравните с созданием <xref:System.Windows.Forms.BindingSource> при создании элемента управления).<br /><br /> Если вы хотите внести корректировку, установите это значение <xref:System.Windows.Forms.BindingSource> таблицы со столбцом, который вы хотите отобразить.|  
     |**DisplayMember**|Visual Studio задает для данного свойства первый столбец после первичного ключа, содержащий тип строковых данных для таблицы, которую вы перетаскиваете на элемент управления.<br /><br /> Если вы хотите внести корректировку, установите это имя столбца, которое вы хотите отобразить.|  
     |**ValueMember**|Visual Studio задает для данного свойства первый столбец, участвующий в первичном ключе, или первый столбец в таблице, если ключ не задан.<br /><br /> Если вы хотите внести корректировку, установите это значение первичного ключа в таблице со столбцом, который вы хотите отобразить.|  
     |**SelectedValue**|Visual Studio задает это свойство в исходный столбец, удалены из **источников данных** окна.<br /><br /> Если вы хотите внести корректировку, установите это значение столбца внешнего ключа в связанной таблице.|  
   
 ## <a name="see-also"></a>См. также  
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-
