@@ -1,25 +1,23 @@
 ---
 title: Visual Studio data tools для C++ | Документация Майкрософт
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994333"
 ---
-# <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools для C++
+# <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -27,11 +25,11 @@ ms.locfileid: "49849649"
   
  Чтобы подключиться к базам данных SQL, приложений C++ неуправляемого кода можно использовать драйверы ODBC и OLE DB и поставщик ADO, входят в состав Windows.     Они могут подключиться к любой базе данных, который поддерживает эти интерфейсы. Драйвер ODBC является стандартом. OLE DB предоставляется для обеспечения обратной совместимости. Дополнительные сведения о технологии этих данных, см. в разделе [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  
   
- Чтобы воспользоваться преимуществами пользовательские функциональные возможности в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](https://msdn.microsoft.com/sqlserver/aa937733). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложений, использующих API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server.  Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [программирование SQL Server Native Client](https://msdn.microsoft.com/library/ms130892.aspx).  
+ Чтобы воспользоваться преимуществами пользовательские функциональные возможности в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](https://msdn.microsoft.com/sqlserver/aa937733). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложений, использующих API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server.  Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [Программирование собственного клиента SQL Server](https://msdn.microsoft.com/library/ms130892.aspx).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Для подключения к localDB через ODBC и собственный клиент SQL из приложения C++  
   
-1. Установка SQL Server Data Tools.  
+1. Установите SQL Server Data Tools.  
   
 2. Если вам требуется образец базы данных SQL для подключения к, скачайте базы данных Northwind и распакуйте его в новое расположение.  
   
@@ -66,11 +64,9 @@ ms.locfileid: "49849649"
    DRIVER="SQL Server Native Client 11.0"  
    ```  
   
-8. Нажмите клавишу F5, чтобы выполнить сборку приложения и запустить его. Вы увидите диалоговое окно, в драйвер, который необходимо ввести базы данных. Введите `(localdb)\MSSQLLocalDB`и проверьте **использовать доверительное соединение**. Нажмите клавишу **ОК**. Вы должны увидеть консоли с помощью сообщений, указывающих успешное подключение. Вы также увидите командную строку для ввода в инструкции SQL. На следующем рисунке показано пример запроса и результаты:  
+8. Нажмите клавишу F5, чтобы выполнить сборку приложения и запустить его. Вы увидите диалоговое окно, в драйвер, который необходимо ввести базы данных. Введите `(localdb)\MSSQLLocalDB`и проверьте **использовать доверительное соединение**. Нажмите кнопку **ОК**. Вы должны увидеть консоли с помощью сообщений, указывающих успешное подключение. Вы также увидите командную строку для ввода в инструкции SQL. На следующем рисунке показано пример запроса и результаты:  
   
     ![Образец ODBC выходных данных запроса](../data-tools/media/raddata-odbc-sample-query-output.png "raddata выходных данных запроса образец ODBC")  
   
 ## <a name="see-also"></a>См. также  
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-

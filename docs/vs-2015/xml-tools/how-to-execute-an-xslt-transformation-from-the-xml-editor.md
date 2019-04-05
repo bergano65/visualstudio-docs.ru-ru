@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: выполнение преобразования XSLT в редакторе XML | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Выполнение преобразования XSLT в редакторе XML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 358c799c0ef6cd6ab90f64e5025376141ff534c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245288"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58993862"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Как выполнять XSLT-преобразования в редакторе XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Практическое руководство. Выполнение XSLT-преобразования в редакторе XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -73,6 +68,3 @@ ms.locfileid: "49245288"
   
 ## <a name="see-also"></a>См. также  
  [XML-редактор](../xml-tools/xml-editor.md)
-
-
-
