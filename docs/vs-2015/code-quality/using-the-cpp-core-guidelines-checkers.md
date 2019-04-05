@@ -1,24 +1,22 @@
 ---
 title: С помощью средства проверки C++ Core Guidelines | Документация Майкрософт
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992928"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>С помощью средства проверки C++ Core Guidelines
+# <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C++ Core Guidelines представляют собой переносимый набор рекомендации, правила и рекомендации о написании кода на C++, созданные экспертами C++ и конструкторы.  Visual Studio теперь поддерживает пакеты надстроек, которые создают дополнительные правила для кода, средства анализа, чтобы проверить код на соответствие C++ Core Guidelines и предложить улучшения.  
@@ -81,15 +79,15 @@ int main()
   
  В этом примере показаны некоторые из предупреждений, которые можно найти правила C++ Core Check:  
   
-- C26494 — правило Type.5: всегда Инициализируйте объект.  
+- C26494 — правило Type.5. Всегда Инициализируйте объект.  
   
-- C26485 — правило Bounds.3: нет decay массива в указатель.  
+- C26485 — правило Bounds.3. Нет отхода массива в указатель.  
   
-- C26481 — правило Bounds.1: не используйте арифметику указателей. Взамен рекомендуется использовать `span`.  
+- C26481 — правило Bounds.1. Не используйте арифметику указателей. Взамен рекомендуется использовать `span`.  
   
   Если установлены и включены при компиляции кода C++ Core Check наборы правил анализа кода, первые два предупреждения выводятся, но третий подавляется. Ниже приведен результат сборки из образца кода.  
   
-  **1 >---сборка начата: проект: CoreCheckExample, конфигурация: Debug Win32--**  
+  **1 >---сборка начата: Проект: CoreCheckExample конфигурации: Отладка Win32--**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P, "->"**  
@@ -97,16 +95,13 @@ int main()
 **1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P, "->"**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (полный PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): предупреждение C26494: переменная «arr» является uninitializ**  
+**ckexample\corecheckexample.cpp(6): предупреждение C26494: Переменная «arr» является uninitializ**  
 **конференции всегда Инициализируйте объект. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ИДЕНТИФИКАТОР = 620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): предупреждение C26485: выражение «arr»: ни один массив для**  
+**ckexample\corecheckexample.cpp(7): предупреждение C26485: Выражение «arr»: Ни один массив для**  
  **decay указатель. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**==== Сборки: 1 — успешно, 0, с ошибками, 0 пропущено ====** The C++ Core Guidelines должны помогать вам в написании кода лучше и безопаснее. Тем не менее если у вас есть экземпляр, где не должно применяться правило или профиля, можно легко отключить его непосредственно в коде. Можно использовать `gsl::suppress` атрибут для предотвращения C++ Core Check обнаружения и создания отчетов любое нарушение правила в нем следующий блок кода. Можно пометить отдельные инструкции, чтобы отключить определенные правила. Можно даже отключить весь профиль границы, написав `[[gsl::suppress(bounds)]]` без включения номер конкретного правила.  
+**==== Сборке. 1 — успешно, 0, с ошибками, 0 пропущено ====** The C++ Core Guidelines должны помогать вам в написании кода лучше и безопаснее. Тем не менее если у вас есть экземпляр, где не должно применяться правило или профиля, можно легко отключить его непосредственно в коде. Можно использовать `gsl::suppress` атрибут для предотвращения C++ Core Check обнаружения и создания отчетов любое нарушение правила в нем следующий блок кода. Можно пометить отдельные инструкции, чтобы отключить определенные правила. Можно даже отключить весь профиль границы, написав `[[gsl::suppress(bounds)]]` без включения номер конкретного правила.  
   
 ## <a name="use-the-guideline-support-library"></a>Использование библиотеки поддержки рекомендации  
  Пакет Microsoft.CppCoreCheck NuGet также устанавливается пакет, содержащий реализованный корпорацией Майкрософт библиотеки поддержки рекомендации (GSL). GSL также доступна в виде автономного в [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Эта библиотека является полезным, если вы хотите изучить основных рекомендаций. GSL содержит определения, которые позволяют заменять ошибкам конструкции с более безопасные альтернативы. Например, можно заменить `T*, length` пары параметров с `span<T>` типа. GSL является открытым исходным кодом, поэтому если вы хотите, взгляните на источников библиотеки, комментарий или участия в разработке документов проекта можно найти в [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

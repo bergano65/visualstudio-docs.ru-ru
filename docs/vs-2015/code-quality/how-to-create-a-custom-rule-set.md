@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Создание настраиваемого набора правил | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание настраиваемого набора правил | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992310"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Практическое руководство. Создание настраиваемого набора правил
+# <a name="how-to-create-a-custom-rule-set"></a>Практическое руководство. Создание набора настраиваемых правил
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], и [!INCLUDE[vsPro](../includes/vspro-md.md)], можно создавать и изменять пользовательский *набор правил* в соответствии с потребностями конкретного проекта, связанные с анализом кода. Создание набора настраиваемых правил, открыть один или несколько стандартных наборов правил в редакторе набора правил. Затем можно добавить или удалить определенные правила, и действие, которое происходит, когда анализа кода определяет, нарушено правило можно изменить.  
@@ -117,8 +112,5 @@ ms.locfileid: "49812469"
 -   Чтобы добавить или удалить наборы правил по умолчанию для текущего набора правил Майкрософт, нажмите кнопку **добавить или удалить дочерние наборы правил**.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Практическое руководство. Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Справочник по набору правил анализа кода](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

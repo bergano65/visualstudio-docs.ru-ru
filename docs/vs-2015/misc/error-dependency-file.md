@@ -1,27 +1,22 @@
 ---
 title: 'Ошибка: зависимость &#39;файл&#39; в проекте &#39;проекта&#39; не может быть скопирован в каталог выполнения из-за конфликта с зависимостью &#39;файл&#39; | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.tasklisterror.copy_version_conflict
 ms.assetid: cd7de1eb-7d58-4e2c-9811-a7201f7817be
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4edf474cd67d21833743891eeeb75ce09decb87e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993698"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Ошибка: зависимость &#39;файл&#39; в проекте &#39;проекта&#39; не может быть скопирован в каталог выполнения из-за конфликта с зависимостью &#39;файла&#39;
 Существует конфликт между ссылками. Чтобы запустить приложение, необходимо скопировать несколько разных файлов сборки с одинаковым именем файла в каталог bin. Каталог запуска не может разрешить конфликт, так как ни одна из зависимостей не является первичной ссылкой.  

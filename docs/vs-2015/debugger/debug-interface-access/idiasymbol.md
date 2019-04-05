@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bd52443d4150b371bbaa1865978db9a72c5c616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4118c9c3e69cbc14481c0057562fdca16414f520
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993536"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ IDiaSymbol : IUnknown
 > [!NOTE]
 >  Символы будут возвращены значимых данных для только некоторые из этих методов, в зависимости от типа символов. Если метод возвращает `S_OK`, а затем этот метод возвратил значимых данных.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Получает все дочерние элементы символа.|  
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Получает дочерние узлы, символа. Этот метод является расширенной версией [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|  
@@ -348,16 +343,13 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Compiland](../../debugger/debug-interface-access/compiland.md)
-
-
-

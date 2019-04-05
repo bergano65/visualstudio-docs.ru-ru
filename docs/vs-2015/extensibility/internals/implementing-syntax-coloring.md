@@ -1,14 +1,9 @@
 ---
 title: Реализация цветовой маркировки синтаксиса | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980521"
 ---
 # <a name="implementing-syntax-coloring"></a>Реализация цветовой маркировки синтаксиса
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51775034"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Указывает интерфейс средства синтаксического анализа, и средство синтаксического анализа реализации полностью зависит от вас. Тем не менее средство синтаксического анализа реализацию по умолчанию предоставляется в проекте языковой пакет Visual Studio. Для управляемого кода managed package framework (MPF) обеспечивает полную поддержку для выделения текста цветом.  
   
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать раскраску синтаксических конструкций, см. в разделе [Пошаговое руководство: выделение текста](../../extensibility/walkthrough-highlighting-text.md).  
+ Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать раскраску синтаксических конструкций, см. в разделе [Пошаговое руководство: Выделение текста](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
 >  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
@@ -70,8 +65,7 @@ ms.locfileid: "51775034"
  Managed package framework (MPF) предоставляет все классы, которые необходимы для реализации палитры. Класс службы языка должен наследовать <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать требуемые методы. Необходимо ввести сканера и средство синтаксического анализа путем реализации <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс и возвратить экземпляр этого интерфейса из <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метод (один из методов, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Package.LanguageService> класса). Дополнительные сведения см. в разделе [цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)   
  [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

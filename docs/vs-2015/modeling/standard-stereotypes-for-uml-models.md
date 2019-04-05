@@ -1,12 +1,9 @@
 ---
 title: Стандартные стереотипы для моделей UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989751"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Стандартные стереотипы для моделей UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,12 +103,12 @@ ms.locfileid: "51763244"
 |обязательство|Зависимость|Комментарий на конце поставщика в зависимости определяет обязанности класса клиента или компонента.|  
 |скрипт|Артефакт|Интерпретируемый "файл".|  
 |отправка|Зависимость|Исходная операция отправляет целевой сигнал.|  
-|service|Компонент|Компонент без состояния.|  
-|source|Артефакт|Компилируемый "файл".|  
+|служба|Компонент|Компонент без состояния.|  
+|источник|Артефакт|Компилируемый "файл".|  
 |specification|Класс, интерфейс, компонент|Определяет поведение компонента или объекта без определения его внутренней работы.|  
 |подсистема|Компонент|Часть большой системы. Подсистема на схеме вариантов использования — это компонент со стереотипом подсистемы.|  
 |трассировка|Зависимость|Элемент клиента является конструкцией, реализующей поставщика. Два конца данной зависимости обычно находятся в разных моделях. Одна из этих моделей является реализацией другой.|  
-|тип|Класс|Задает поведение объекта без указания его реализации. Объект является членом типа, если он соответствует спецификации.|  
+|type|Класс|Задает поведение объекта без указания его реализации. Объект является членом типа, если он соответствует спецификации.|  
 |utility|Класс|Коллекция статических функций. Класс не имеет экземпляров.|  
   
 ###  <a name="L3"></a> Стандартный профиль L3 UML  
@@ -145,6 +142,3 @@ ms.locfileid: "51763244"
  [Добавление стереотипов к элементам модели UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

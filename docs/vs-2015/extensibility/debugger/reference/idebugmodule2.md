@@ -1,14 +1,9 @@
 ---
 title: IDebugModule2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugModule2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 92e11532019caf5aa7af3c84f7222fdfabcfa45d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9fc229a353655aeae06460c32b5233888f22dd6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768541"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992634"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ IDebugModule2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugModule2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Получает [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) , описывающий этот модуль.|  
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|УСТАРЕВШИЕ. НЕ ИСПОЛЬЗУЙТЕ. Повторно загружает символы для этого модуля.|  
@@ -57,7 +52,7 @@ IDebugModule2 : IUnknown
  Сведения о модуле, которые могут отображаться в **модули** окно интегрированной среды разработки.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -69,4 +64,3 @@ IDebugModule2 : IUnknown
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
-

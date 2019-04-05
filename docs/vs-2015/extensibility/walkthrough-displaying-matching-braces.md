@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Отображение парных скобок | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение парных скобок | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993488"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Пошаговое руководство. Отображение парных фигурных скобок
+# <a name="walkthrough-displaying-matching-braces"></a>Пошаговое руководство. Отображение парных скобок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете реализовать на базе языка функции, такие как парные фигурные скобки путем определения фигурные скобки, которые вы хотите обеспечить поиск и затем добавление тег текстовой метки в парные фигурные скобки, когда курсор находится на одном фигурных скобок. Фигурные скобки можно определить в контексте языка, можно определить тип имени собственного файла расширения и содержимого и применить теги к только этого типа или можно применить теги к существующий тип контента (например, «text»). Следующие пошаговом руководстве показано, как применить парные фигурные скобки теги к типу содержимого «text».  
@@ -130,5 +125,4 @@ ms.locfileid: "51745890"
 4.  Если поместить курсор перед открывающую фигурную скобку, должны быть выделены, фигурную скобку и сопоставления закрывающей фигурной скобки. Если поместить курсор сразу после закрывающей фигурной скобки, должны быть выделены, фигурную скобку и сопоставления открывающую фигурную скобку.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

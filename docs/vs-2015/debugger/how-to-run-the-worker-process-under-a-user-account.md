@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: выполнение рабочего процесса с учетной записью пользователя | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734463"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58980006"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51734463"
   
 1.  Откройте файл machine.config в папке CONFIG данного компьютера, согласно пути, указанному при установке среды выполнения.  
   
-2.  Найти &lt;processModel&gt; раздел и измените атрибуты пользователя и пароль для имени и пароля учетной записи пользователя, необходимо выполнить aspnet_wp.exe.  
+2.  Перейдите к разделу &lt;processModel&gt; и замените значения атрибутов "user" и "password" значениями имени и пароля пользователя, от имени учетной записи которого необходимо выполнить aspnet_wp.exe.  
   
 3.  Сохраните файл machine.config.  
   
@@ -81,7 +76,7 @@ ms.locfileid: "51734463"
   
     Появится диалоговое окно **Выбор: пользователи, компьютеры или группы** .  
   
-10. Введите имя пользователя в поле **Введите имена выбираемых объектов** , затем нажмите кнопку **OK**. Имя пользователя должно быть в формате ИмяДомена\ИмяПользователя.  
+10. Введите имя пользователя в поле **Введите имена выбираемых объектов** , затем нажмите кнопку **OK**. Имя пользователя должно иметь следующий формат: Имя_домена\имя_пользователя.  
   
 11. В диалоговом окне **Элемент разрешения для Temporary ASP.NET Files** предоставьте пользователю полный доступ с помощью пункта **Полный доступ**, затем нажмите кнопку **OK** , чтобы закрыть диалоговое окно **Запись для Temporary ASP.NET Files** .  
   
@@ -91,8 +86,3 @@ ms.locfileid: "51734463"
   
 ## <a name="see-also"></a>См. также  
 [Отладка ASP.NET: системные требования](../debugger/aspnet-debugging-system-requirements.md)  
-  
-
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Добавление проверки в n уровневом наборе данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,21 +17,20 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992929"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Добавление проверки в n-уровневом наборе данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Добавление проверки к набору данных в n уровневого решения по сути является таким же, как добавление проверки к набору данных одного файла (набор данных в одном проекте). Предлагаемое местоположение для выполнения проверки данных — во время <xref:System.Data.DataTable.ColumnChanging> и/или <xref:System.Data.DataTable.RowChanging> события таблицы данных.  
   
- [Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md) предоставляет возможность создания разделяемых классов, к которым можно добавить пользовательский код для столбца - и строк — изменение событий таблиц данных в наборе данных. Дополнительные сведения о добавлении кода в набор данных в n уровневого решения, см. в разделе [Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md), и [добавьте код для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Дополнительные сведения о разделяемых классах см. в разделе [как: разделение класса на разделяемые классы (конструктор классов)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) или [разделяемые классы и методы](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+Конструктор наборов данных предоставляет возможность создания разделяемых классов, к которым можно добавить пользовательский код для столбца и строки таблиц данных в набор данных событий изменения. Дополнительные сведения о добавлении кода в набор данных в n уровневого решения, см. в разделе [Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md), и [добавьте код для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Дополнительные сведения о разделяемых классах см. в разделе [как: Разделение класса на разделяемые классы (конструктор классов)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) или [разделяемые классы и методы](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  При разделении наборов данных из адаптеров таблиц (задавая **проект DataSet** свойство), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.  
@@ -43,7 +39,7 @@ ms.locfileid: "50220538"
 >  Конструктор наборов данных не создает автоматически обработчики событий в C# для <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> события. Вам нужно вручную создать обработчик событий и подключить обработчик событий, соответствующем событии. Следующие процедуры описывают создание обработчиков событий в Visual Basic и C#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges к отдельным столбцам  
- Проверка значений в отдельных столбцах при обработке <xref:System.Data.DataTable.ColumnChanging> событий. <xref:System.Data.DataTable.ColumnChanging> Событие возникает при изменении значения в столбце. Создайте обработчик событий для <xref:System.Data.DataTable.ColumnChanging> событий, дважды щелкнув требуемый столбец [Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md).  
+ Проверка значений в отдельных столбцах при обработке <xref:System.Data.DataTable.ColumnChanging> событий. <xref:System.Data.DataTable.ColumnChanging> Событие возникает при изменении значения в столбце. Создайте обработчик событий для <xref:System.Data.DataTable.ColumnChanging> событий, дважды щелкнув требуемый столбец в наборе данных.  
   
  Первый раз, дважды щелкните столбец, конструктор создает обработчик событий для <xref:System.Data.DataTable.ColumnChanging> событий. `If…Then` Также создается инструкция, тесты для определенного столбца. Например при двойном щелчке в столбец RequiredDate таблицы Northwind Orders, создается следующий код:  
   
@@ -62,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Чтобы добавить проверку во время изменения к отдельным значениям в столбце  
   
-1.  Откройте набор данных в [Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md) , дважды щелкнув **.xsd** файл **обозревателе решений**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте набор данных в конструкторе, дважды щелкнув **.xsd** файл **обозревателе решений**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Дважды щелкните столбец, который требуется проверить. Это действие создает <xref:System.Data.DataTable.ColumnChanging> обработчик событий.  
   
@@ -117,11 +113,11 @@ End Sub
   
  После ввода заказов проверки гарантирует, что заказ не введен с RequiredDate, который во время или до OrderDate. В этом примере значения для столбцов OrderDate и RequiredDate необходимо сравнить, поэтому проверка изменения отдельных столбцов не имеет смысла.  
   
- Создайте обработчик событий для <xref:System.Data.DataTable.RowChanging> событий, дважды щелкнув имя таблицы в строке заголовка таблицы [Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md).  
+ Создайте обработчик событий для <xref:System.Data.DataTable.RowChanging> событий, дважды щелкнув имя таблицы в строке заголовка таблицы.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Чтобы добавить проверку во время изменения для всех строк  
   
-1.  Откройте набор данных в [Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md) , дважды щелкнув **.xsd** файл **обозревателе решений**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте набор данных в конструкторе, дважды щелкнув **.xsd** файл **обозревателе решений**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Дважды щелкните заголовок таблицы данных в конструкторе.  
   
@@ -183,4 +179,3 @@ End Sub
  [Общие сведения о данных в N-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)   
  [Пошаговое руководство: Создание данных N-уровневого приложения](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
-

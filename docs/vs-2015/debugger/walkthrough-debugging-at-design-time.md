@@ -1,14 +1,9 @@
 ---
-title: 'Пошаговое руководство: Отладка во время разработки | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отладка во время разработки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993450"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Пример. Отладка во время разработки
+# <a name="walkthrough-debugging-at-design-time"></a>Пошаговое руководство. Отладка во время разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно использовать Visual Studio **Интерпретация** окне, чтобы выполнить функцию или подпрограмму, когда приложение не запущено. Если в функции или подпрограмме есть точка останова, Visual Studio прервет выполнение на соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Эта возможность называется отладкой времени разработки.  
@@ -89,6 +84,3 @@ ms.locfileid: "51737767"
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Основы отладки](../debugger/debugger-basics.md)
-
-
-

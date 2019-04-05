@@ -1,12 +1,9 @@
 ---
 title: Работа со схемой определений доменных ЯЗЫКОВ | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993031"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +68,11 @@ ms.locfileid: "49208589"
 ### <a name="bring-tree-here"></a>Bring Tree Here  
  Схему можно консолидировать, щелкнув класс домена заполнителя правой кнопкой мыши и выбрав **перенести дерево сюда**. Класс домена заполнителя станет элементом определения и отобразит деревья наследования и отношений. Если прежний элемент определения является целевым объектом отношения или дочерним элементом в отношении наследования, он станет элементом заполнителя. В противном случае он исчезает.  
   
-### <a name="split-tree"></a>Split Tree  
+### <a name="split-tree"></a>Разделить дерево  
  Деревья наследования или отношений можно разделить, щелкнув правой кнопкой мыши определение класса домена, который отображает их и выбрав **разделить дерево**. Элемент определения станет элементом заполнителя, а класс домена из определения вместе со своими деревьями наследования и отношений появится в нижней части раздела.  
   
 ### <a name="show-as-class"></a>Show As Class  
  Если доменная связь включает производные отношения, или если у него есть внедрения или ссылочных отношений с другими доменными связями, можно отобразить связь как класс, щелкнув правой кнопкой мыши связь и нажмите кнопку **Показать как класс** . Связь будет отображаться с **свойства домена** секции и покажет деревьями наследования и отношений.  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

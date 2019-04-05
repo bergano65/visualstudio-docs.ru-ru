@@ -1,26 +1,21 @@
 ---
-title: 'CA5350: Не используйте ненадежные алгоритмы шифрования | Документация Майкрософт'
-ms.custom: ''
+title: CA5350. Не используйте ненадежные алгоритмы шифрования | Документация Майкрософт
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2997abd9a112b60e9ef692bfe87b740976007656
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992218"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: не используйте ненадежные алгоритмы шифрования
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350. Не используйте ненадежные алгоритмы шифрования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -44,11 +39,11 @@ ms.locfileid: "49234231"
  Правило срабатывает при обнаружении алгоритмов 3DES, SHA1 или RIPEMD160 в коде и выдает предупреждение для пользователя.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Используйте более криптографически надежные варианты.  
+ Используйте более надежные варианты шифрования.  
   
 -   Для шифрования TripleDES используйте шифрование <xref:System.Security.Cryptography.Aes> .  
   
--   Для функций хэширования SHA1 или RIPEMD160 используйте функции в семействе [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Для функций хэширования SHA1 или RIPEMD160 используйте функции в семействе [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Отключайте предупреждение из этого правила, когда для необходимого уровня защиты данных не требуется гарантия безопасности.  

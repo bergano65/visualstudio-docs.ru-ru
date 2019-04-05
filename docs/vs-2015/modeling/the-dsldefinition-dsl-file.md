@@ -1,25 +1,22 @@
 ---
 title: Файл DslDefinition.dsl | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994187"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +62,7 @@ ms.locfileid: "49937657"
  Designer  
  В этом разделе определяется конструктор (редактор), который объединяет в себе **элементов**, параметры проверки, схему и схему сериализации. Раздел конструктора также определяет корневой класс модели, который обычно является корневым классом схемы.  
   
- исходным кодом  
+ Explorer  
  В этом разделе описаны **обозреватель DSL** поведение (определенное в разделе XmlSerializationBehavior).  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Моникеры в файле DslDefinition.dsl  
@@ -90,7 +87,7 @@ ms.locfileid: "49937657"
   
  Система моникеров требует, чтобы одноуровневые элементы в дереве XML имели разные имена. В связи с этим при попытке сохранить определение доменного языка, содержащее, например, два класса с одинаковым именем, возникнут ошибки проверки. Обязательно исправьте такие ошибки с дублирующими именами, прежде чем сохранить файл DslDefinition.dsl, чтобы потом его можно было правильно перезагрузить.  
   
- Каждый тип имеет свой собственный тип моникера: DomainClassMoniker, DomainRelationshipMoniker, и т. д.  
+ У каждого типа есть свой тип моникера: DomainClassMoniker, DomainRelationshipMoniker и т. д.  
   
 ## <a name="types"></a>Типы  
  В разделе "Типы" определяются все типы, которые файл DslDefinition.dsl содержит в качестве типов и свойств. Эти типы делятся на две категории: внешние типы, такие как System.String, и типы перечисления.  
@@ -214,7 +211,7 @@ ms.locfileid: "49937657"
 ### <a name="source-and-target-roles"></a>Роли источника и цели.  
  Каждое отношение содержит роли источника и цели со следующими атрибутами.  
   
--   `RolePlayer` Атрибут ссылается на класс домена из связанных экземпляров: OutPort для источника, InPort для цели.  
+-   Атрибут `RolePlayer` создает ссылки на класс домена из связанных экземпляров: OutPort для источника, InPort для цели.  
   
 -   У атрибута `Multiplicity` может быть четыре значения (ZeroMany, ZeroOne, One и OneMany). Он указывает количество связей данного отношения, которые могут быть связаны с одним исполнителем роли.  
   
@@ -281,7 +278,7 @@ ms.locfileid: "49937657"
  При написании C# для данной модели, можно перепрыгивать через связь за один шаг, с помощью свойства, которое генерируется отношением на каждый из классов, которым они относятся:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  При этом необходимо явно включить оба прыжка в синтаксис пути. Из-за этого требования получение доступа к промежуточной связи можно упростить. Следующий код завершает прыжок из связи в свойство Component.  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Карты соединителей могут также содержать карты декораторов.  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

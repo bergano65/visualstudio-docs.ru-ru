@@ -1,29 +1,24 @@
 ---
-title: 'Практическое: поиск потока в представлении "Потоки" | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Поиск потока в представлении "Потоки" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb1c3979b0505305fd4f6a600e3352c0d08955de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990667"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. Поиск потока в представлении потоков
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. поиск потока в представлении потоков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Конкретным потоком в представление "Потоки" можно найти с помощью его поток идентификатор или строку модуля в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне отобразятся атрибуты потока, выбранного в дереве потоков.  
@@ -48,6 +43,3 @@ ms.locfileid: "51766905"
 6. Нажмите кнопку **ОК**.  
   
    Если найден соответствующий поток, то он выделяется в окне представления потоков.
-
-
-

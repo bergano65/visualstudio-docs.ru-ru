@@ -1,14 +1,9 @@
 ---
 title: Как сделать команды доступными | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993395"
 ---
 # <a name="making-commands-available"></a>Как сделать команды доступными
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "51783042"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отслеживает изменения, возникающие в результате действия пользователя, такие как загрузки проекта или собираетесь редактировать стандартных. По мере изменений автоматически изменяется внешний вид интегрированной среды разработки. В следующей таблице показаны четыре основных контекстов интегрированной среды разработки измените, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] мониторов.  
   
-|Тип контекста|Описание:|  
+|Тип контекста|Описание|  
 |---------------------|-----------------|  
 |Тип активного проекта|Для большинства типов проектов это `GUID` значение совпадает со значением GUID VSPackage, который реализует проект. Тем не менее [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] проектов используется тип проекта `GUID` как значение.|  
 |Активное окно|Как правило это последнего активного документа окна, которое устанавливает текущий контекст пользовательского интерфейса для сочетания клавиш. Тем не менее это может быть окно инструментов, которая содержит таблицу привязки ключей, похожий на внутренний веб-браузер. Для окон документов, с несколькими вкладками, такие как редактор HTML, каждая вкладка имеет другую команду контекст `GUID`.|  
@@ -156,4 +151,3 @@ ms.locfileid: "51783042"
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Маршрутизация команд в пакеты VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Динамическое добавление элементов меню](../../extensibility/dynamically-adding-menu-items.md)
-

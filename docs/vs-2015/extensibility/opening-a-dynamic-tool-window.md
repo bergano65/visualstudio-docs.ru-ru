@@ -1,26 +1,21 @@
 ---
 title: Открытие динамического окна инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 073e8a2e7ff13dad0e413aa47b7875260f612cd2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773799"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994126"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Открытие динамического окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ ms.locfileid: "51773799"
 3.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр. Вы не увидите окна инструментов.  
   
 4.  Откройте проект в экспериментальном экземпляре. Появится окно инструментов.
-

@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: создание. Файл Vsct | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создать. Файл Vsct | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bbfdcf605a1c4346874ec222937a458225788151
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802640"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993291"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Практическое: создание. Файл Vsct
+# <a name="how-to-create-a-vsct-file"></a>Практическое руководство. Создание VSCT-файла
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Существует несколько способов создания файла конфигурации (.vsct) на базе XML Visual Studio Command Table.  
@@ -102,7 +97,6 @@ ms.locfileid: "51802640"
 ## <a name="see-also"></a>См. также  
  [Разработка. Файлы Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Visual Studio Command Table (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Практическое: создание. Vsct-файл из существующего. Файла ctc](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Практическое: создание. Vsct-файл из существующего. Файл Технический директор](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Практическое руководство. Создать. Vsct-файл из существующего. Файла ctc](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Практическое руководство. Создать. Vsct-файл из существующего. Файл Технический директор](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
-

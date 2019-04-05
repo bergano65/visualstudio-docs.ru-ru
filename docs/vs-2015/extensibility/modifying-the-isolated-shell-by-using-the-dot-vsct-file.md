@@ -1,26 +1,21 @@
 ---
 title: Изменение изолированной оболочки с помощью. Файл Vsct | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .vsct file
 ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993073"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Изменение изолированной оболочки с помощью. Файл Vsct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ ms.locfileid: "51817611"
   
 ```  
   
- Более подробный пример эти настройки, см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Более подробный пример эти настройки, см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="referenced-files"></a>Файлы, на которую указывает ссылка  
  Vsct-файл по умолчанию, для приложения ссылается на следующие файлы. Эти файлы расположены в подкаталоге \VisualStudioIntegration\Common\Inc\ каталога установки Visual Studio SDK.  
   
-|Файл|Описание:|  
+|Файл|Описание|  
 |----------|-----------------|  
 |wbids.h|Удостоверения пользовательского интерфейса для пакета Обзор Web.|  
 |AppIDCmdUsed.vsct|Таблицы команд для основных элементов пользовательского интерфейса Visual Studio.|  
@@ -63,4 +58,3 @@ ms.locfileid: "51817611"
   
 ## <a name="see-also"></a>См. также  
  [Изолированная оболочка Visual Studio](../extensibility/visual-studio-isolated-shell.md)
-

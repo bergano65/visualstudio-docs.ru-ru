@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: Запуск Spy ++ | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Запуск Spy ++ | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b5cd20a51d251e23cceb4ee86b3ce0a555f3d34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993739"
 ---
 # <a name="how-to-start-spy"></a>Практическое руководство. Запуск Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +44,6 @@ ms.locfileid: "51797485"
 2.  Тип **spyxx.exe** и нажмите клавишу ВВОД.  
   
 ## <a name="see-also"></a>См. также  
- [Использование Spy ++](../debugger/using-spy-increment.md)   
- [Представления Spy ++](../debugger/spy-increment-views.md)   
+ [Использование Spy++](../debugger/using-spy-increment.md)   
+ [Представления Spy++](../debugger/spy-increment-views.md)   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)
-
-
-
