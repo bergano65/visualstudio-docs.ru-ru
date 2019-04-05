@@ -1,14 +1,9 @@
 ---
 title: IDebugEvent2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e3d4b1022d8eda4cfb992e9bfcc997193a84ee37
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b4ffb4a9d8a0a7a63e895e1f47fc41139b7ba16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991696"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEvent2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Получает атрибуты для этого события отладки.|  
   
@@ -52,7 +47,7 @@ IDebugEvent2 : IUnknown
  Интерфейсы более конкретные события, такие как [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), не являющихся производными от интерфейса IDebugEvent2, но вместо этого реализуются как отдельный интерфейс на один и тот же объект как `IDebugEvent2`.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -62,4 +57,3 @@ IDebugEvent2 : IUnknown
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [Событие](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA1036: Переопределяйте методы в сравнимых типах | Документация Майкрософт'
-ms.custom: ''
+title: CA1036. Переопределите методы в сравнимых типах | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1036
 - OverrideMethodsOnComparableTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991192"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: переопределяйте методы в сравнимых типах
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036. Переопределите методы в сопоставимых типах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,7 +41,7 @@ ms.locfileid: "49948791"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, переопределите <xref:System.Object.Equals%2A>. Если язык программирования поддерживает перегрузку операторов, предоставьте следующие операторы:
 
-- функции op_Equality
+- op_Equality
 
 - op_Inequality
 
@@ -72,6 +67,3 @@ ms.locfileid: "49948791"
 ## <a name="see-also"></a>См. также
  <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName>
  [Операторы равенства](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

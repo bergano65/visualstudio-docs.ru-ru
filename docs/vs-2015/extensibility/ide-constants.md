@@ -1,14 +1,9 @@
 ---
 title: Константы среды IDE | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992684"
 ---
 # <a name="ide-constants"></a>Константы среды IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51743306"
   
 ## <a name="logical-and-physical-views"></a>Логические и физические представления.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики должны передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в данном случае с возможными представлениями кода.|  
 |[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в данном случае заполненного возможными <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> отладки представления, которые сопоставляются с тем же самым представлением как <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|  
@@ -46,7 +41,7 @@ ms.locfileid: "51743306"
   
 ## <a name="editor-factory-flags"></a>Флаги фабрики редактора  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |[CEF. CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Устаревший флаг побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|  
 |[CEF. CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрика редактора должна внести необходимые исправления.|  
@@ -55,7 +50,7 @@ ms.locfileid: "51743306"
   
 ## <a name="visual-studio-errors"></a>Ошибки Visual Studio  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа возвращена интерфейсами для асинхронного поведения при рассматриваемый объект в уже занят|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ошибка HRESULT, относящиеся к Visual Studio для «несовместимые данные документа».|  
@@ -71,7 +66,7 @@ ms.locfileid: "51743306"
   
 ## <a name="visual-studio-constants"></a>Константы Visual Studio  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ошибка HRESULT для Visual Studio и, означающая «Проект перенаправлен».|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к Visual Studio для панели элементов «маркером».|  
@@ -124,4 +119,3 @@ ms.locfileid: "51743306"
   
 ## <a name="see-also"></a>См. также  
  [Команды, определенные в интегрированной среде разработки, для расширения систем проектов](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

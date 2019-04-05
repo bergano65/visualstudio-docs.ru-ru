@@ -1,31 +1,26 @@
 ---
 title: Управление панелью элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990012"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] позволяет пакету VSPackage, например редактору или конструктору, управлять членством и внешним видом **панели элементов**.  
   
- Кроме того, с помощью средств автоматизации можно управлять самой **панелью элементов** . Дополнительные сведения об управлении панелью элементов посредством автоматизации см. в разделе [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Кроме того, с помощью средств автоматизации можно управлять самой **панелью элементов** . Дополнительные сведения об управлении панелью элементов посредством автоматизации см. в разделе [как: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Автоматический выбор вкладок панели элементов  
  Определенная вкладка или категория **панели элементов** может активироваться автоматически в соответствии с активным в настоящий момент редактором или конструктором. Например, при активации конструктора форм может быть необходимо, чтобы была выбрана вкладка **Все формы Windows Forms** .  

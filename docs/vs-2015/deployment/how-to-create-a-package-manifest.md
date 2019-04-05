@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: создание манифеста пакета | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание манифеста пакета | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994149"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Практическое руководство. Создание манифеста пакета
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы развернуть необходимые условия для приложения, можно использовать пакет начального загрузчика. Пакет начального загрузчика содержит один файл манифеста продукта манифест пакета для каждого языкового стандарта. Общие функции для различных локализованных версий следует перейти в манифест продукта.  
   
- Дополнительные сведения о манифестах пакетов см. в разделе [как: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md).  
+ Дополнительные сведения о манифестах пакетов см. в разделе [как: Создание манифеста продукта](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Создание манифеста пакета  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)
-
-
-

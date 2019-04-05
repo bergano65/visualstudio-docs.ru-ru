@@ -1,26 +1,21 @@
 ---
 title: Описания событий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9ed1f59624c8fa334c99be7ec44672746902a3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5aff88047d6b1f79544af927751d7a053eeda218
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979037"
 ---
 # <a name="event-descriptions"></a>Описания событий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51769923"
   
 ## <a name="events-and-the-reasons-for-their-use"></a>События и причины их использования  
   
-|событие|Описание:|  
+|событие|Описание|  
 |-----------|-----------------|  
 |Активировать события документа|Возникает, когда модуль отладки (DE), требуется интегрированная среда разработки для открытия или выводит документ на передний план.|  
 |Точки останова, которые привязаны или события ошибок точки останова|Посылается, когда привязана точка останова, либо когда не удается привязать точку останова и будет возвращена ошибка.|  
@@ -53,4 +48,3 @@ ms.locfileid: "51769923"
   
 ## <a name="see-also"></a>См. также  
  [Отправка событий](../../extensibility/debugger/sending-events.md)
-

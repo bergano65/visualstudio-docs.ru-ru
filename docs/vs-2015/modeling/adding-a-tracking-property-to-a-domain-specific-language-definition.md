@@ -1,12 +1,9 @@
 ---
 title: Добавление свойства отслеживания в определение доменного языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993143"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "49894382"
   
  К примеру в средства доменного языка (DSL Tools), отображаемое имя свойства класса домена имеет значение по умолчанию, которая рассчитывается, используя имя доменного класса, но пользователь может изменить значение во время разработки или выполнить его сброс до вычисленное значение.  
   
- В этом пошаговом руководстве создается доменный язык (DSL), с пространством имен, отслеживания свойство, которое имеет значение по умолчанию, на основе пространства имен по умолчанию свойства модели. Дополнительные сведения об отслеживании свойств см. в разделе [определение свойства отслеживания](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ В этом пошаговом руководстве создается доменный язык (DSL), с пространством имен, отслеживания свойство, которое имеет значение по умолчанию, на основе пространства имен по умолчанию свойства модели. Дополнительные сведения об отслеживании свойств см. в разделе [определение свойства отслеживания](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Поддержка средств DSL, отслеживания дескрипторов свойств. Однако конструктор DSL не может использоваться для добавления свойства отслеживания в язык. Таким образом необходимо добавить пользовательский код для определения и реализации свойства отслеживания.  
   
@@ -725,7 +722,7 @@ ms.locfileid: "49894382"
   
 #### <a name="to-exercise-the-language"></a>Для использования языка  
   
-1.  На **построения** меню, щелкните **Перестроить решение**.  
+1.  В меню **Построить** выберите пункт **Перестроить решение**.  
   
 2.  В меню **Отладка** щелкните **Начать отладку**.  
   
@@ -766,8 +763,5 @@ ms.locfileid: "49894382"
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
- [Практическое: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [Пошаговые руководства. Настройка определения доменного языка](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [Практическое руководство. Создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [Пошаговое руководство: Настройка определения доменного языка](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

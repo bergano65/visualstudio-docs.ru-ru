@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: синхронизация наборов правил проекта кода с политикой возврата командного проекта | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Синхронизация наборов правил проекта кода с политикой возврата командного проекта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989966"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Практическое руководство. Синхронизация наборов правил проекта кода с политикой возврата командного проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49263124"
   
 1.  Выполните одну из процедур выше в этом разделе, чтобы выбрать политики возврата командного проекта на странице "Анализ кода" диалогового окна параметров проекта.  
   
-2.  Нажмите кнопку **откройте**.  
+2.  Нажмите кнопку **Открыть**.  
   
 3.  Добавление или удаление правила с помощью редактора набора правил.  
   
@@ -73,6 +68,3 @@ ms.locfileid: "49263124"
 6.  В **выполнить этот набор правил** выберите  **\<Обзор... >**.  
   
 7.  В **откройте** диалоговом окне укажите файл набора правил.
-
-
-

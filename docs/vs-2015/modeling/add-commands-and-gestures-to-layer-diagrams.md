@@ -1,12 +1,9 @@
 ---
 title: Добавление команд и жестов в схемы слоев | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993663"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Добавление команд и жестов в схемы слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +33,7 @@ ms.locfileid: "51733379"
  См. раздел [Требования](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Определение команды или жеста в новом расширении VSIX  
- Самый быстрый способ создания расширения заключается в использовании шаблона проекта. Он помещает код и манифест VSIX в один проект.  
+ Самый быстрый способ создания расширения заключается в использовании шаблона проекта. В этом случае код и манифест VSIX размещаются в одном и том же проекте.  
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Определение расширения с использованием шаблона проекта  
   
@@ -107,7 +104,7 @@ ms.locfileid: "51733379"
   
      См. также [Navigate и обновления уровня модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Чтобы проверить функцию, нажмите клавиши CTRL+F5 или F5. Открывается экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В этом экземпляре создайте или откройте схему слоев.  
+2.  Чтобы проверить функцию, нажмите клавиши CTRL+F5 или F5. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . В этом экземпляре создайте или откройте схему слоев.  
   
 3.  Чтобы установить расширение в основной экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]или на другом компьютере, найдите файл **.vsix** в каталоге **bin** проекта VSIX. Скопируйте его на компьютер, где требуется выполнить установку VSIX. Дважды щелкните файл VSIX в проводнике Windows (или проводнике в Windows 8).  
   
@@ -250,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
    **OnDragDrop** — вызывается, когда пользователь перетаскивает элемент на схему.  
   
-- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Например:  
+- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Пример:  
   
   ```  
   public void OnDragDrop(IShape target, IDataObject data)  
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [Перейдите и обновлять модели слоя в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [Добавление пользовательской проверки архитектуры в схемы слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Определение и установка расширения моделирования](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

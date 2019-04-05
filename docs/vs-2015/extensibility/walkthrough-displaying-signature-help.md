@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Отображение справки сигнатуры | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение справки сигнатуры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991319"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>Пошаговое руководство. Отображение справки сигнатуры
+# <a name="walkthrough-displaying-signature-help"></a>Пошаговое руководство. Отображение справки по цифровым подписям
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Справка по сигнатурам (также известный как *сведения о параметрах*) отображается подпись метода во всплывающей подсказке, когда пользователь вводит символ начала списка параметра (обычно открывающая скобка). Как параметр и параметр разделитель (обычно запятой) типизированы, подсказка обновляется для отображения следующего параметра полужирным шрифтом. Справка по сигнатурам можно определить в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и отображения справки сигнатуры для только этого типа или для существующих типов (например, «text») можно отобразить Справка по сигнатурам. В этом пошаговом руководстве показано, как для отображения справки сигнатуры для типа содержимого «text».  
@@ -252,5 +247,4 @@ ms.locfileid: "51734643"
 4.  После открывающей скобки, вы увидите подсказку, которая отображает список две подписи для `add()` метод.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

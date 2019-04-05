@@ -1,14 +1,9 @@
 ---
 title: Функция SccRunScc | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67d2ad2ee783d23e3bd8c960ad5a94eac3fbd908
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989529"
 ---
 # <a name="sccrunscc-function"></a>Функция SccRunScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Инструментом администрирования системы управления версиями успешно вызвана.|  
 |SCC_I_OPERATIONCANCELED|Операция была отменена.|  
@@ -71,11 +66,10 @@ SCCRTN SccRunScc(
   
  Эта функция вызывается с числом и массив имен файлов для выбранных файлов. Если ее поддерживает средство администрирования, список файлов, можно использовать для предварительного выбора файлов в интерфейсе администрирования; в противном случае можно игнорировать списка.  
   
- Эта функция обычно вызывается, когда пользователь выбирает **запуска \<сервера системы управления версиями >** из **файл** -> **системы управления версиями** меню. Это **запуска** пункт меню можно всегда отключен или даже скрыть, установив параметр реестра. См. в разделе [как: установить подключаемый модуль системы управления источника](../extensibility/internals/how-to-install-a-source-control-plug-in.md) подробные сведения. Эта функция вызывается только в том случае, если [SccInitialize](../extensibility/sccinitialize-function.md) возвращает `SCC_CAP_RUNSCC` бит функции (см. в разделе [флаги возможностей](../extensibility/capability-flags.md) Дополнительные сведения об этом и других биты возможностей).  
+ Эта функция обычно вызывается, когда пользователь выбирает **запуска \<сервера системы управления версиями >** из **файл** -> **системы управления версиями** меню. Это **запуска** пункт меню можно всегда отключен или даже скрыть, установив параметр реестра. См. практическое руководство по [ Установите подключаемый модуль системы управления источника](../extensibility/internals/how-to-install-a-source-control-plug-in.md) подробные сведения. Эта функция вызывается только в том случае, если [SccInitialize](../extensibility/sccinitialize-function.md) возвращает `SCC_CAP_RUNSCC` бит функции (см. в разделе [флаги возможностей](../extensibility/capability-flags.md) Дополнительные сведения об этом и других биты возможностей).  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
- [Как: установить подключаемый модуль системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Практическое руководство. Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Флаги возможностей](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)
-

@@ -1,23 +1,20 @@
 ---
 title: Обновление фигур и соединителей в соответствии с моделью | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993992"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Установить свойства карты фигур, чтобы управлять видимостью декоратора  
  Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление между фигурой и доменный класс в определении DSL. Дополнительные сведения см. в следующих разделах:  
   
--   [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+-   [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 -   [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)  
   
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` должен вызываться один раз для каждого свойства домена, который вы хотите зарегистрировать. После его вызова, любые изменения к указанному свойству будет вызывать `OnAssociatedPropertyChanged()` в любые фигуры, которые представляют свойства элемента модели.  
   
  Нет необходимости вызывать `AssociateValueWith()` для каждого экземпляра. Несмотря на то, что InitializeResources является методом экземпляра, он вызывается только один раз для каждого класса фигуры.
-
-
-

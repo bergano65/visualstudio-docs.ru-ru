@@ -1,12 +1,9 @@
 ---
-title: 'Практическое: изменение стандартной команды меню в доменном языке | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изменение стандартной команды меню в доменном языке | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990633"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в предметно-ориентированном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы она исключала конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -83,7 +80,7 @@ ms.locfileid: "49837573"
      **Примечание** Если для создания нового файла использовался шаблон файла класса, необходимо откорректировать пространство имен и имя класса.  
   
 ##  <a name="override"></a> Переопределение методов команд  
- Большинство команд имеют два связанных метода: метод с именем, например `ProcessOnStatus`... определяет, должна ли команда быть видимы и включены. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`… вызывается, когда пользователь щелкает команду и должна выполнять функцию команды. Возможно, потребуется переопределение одного или двух этих методов.  
+ Большинство команд имеют два связанных метода. Метод с именем, например `ProcessOnStatus`... определяет, должна ли команда быть видимы и включены. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`… вызывается, когда пользователь щелкает команду и должна выполнять функцию команды. Возможно, потребуется переопределение одного или двух этих методов.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Изменение условий отображения команды в меню  
  Переопределите метод ProcessOnStatus... метод. Он должен задавать свойства Visible и Enabled своего параметра MenuCommand. Обычно команда проверяет this.CurrentSelection, чтобы определить, применяется ли команда к выбранным элементам, а также может проверить их свойства, чтобы определить возможность применения команды в их текущем состоянии.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>См. также  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Практическое: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Пошаговое руководство: Получение данных по выбранной ссылке](../misc/walkthrough-getting-information-from-a-selected-link.md)   
+ [Практическое руководство. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Пошаговое руководство: Получение сведений о выбранной ссылке](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio Command Table (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Справочник по схемам VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK — принципиальной схемы. Настройки обширной DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Пример кода: пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Пример кода: Пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,30 +1,25 @@
 ---
 title: Регистрация служб | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990564"
 ---
 # <a name="registering-services"></a>Регистрация служб
 Для поддержки загрузки по запросу поставщик служб должен зарегистрировать глобальные службы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Во время разработки поставщики управляемых служб регистрируют службы и переопределения служб путем добавления атрибутов в исходный код для пакетов, а затем выполняют сборку пакетов в IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Это запускает служебную программу RegPkg.exe в результирующей сборке, регистрируя пакет и подготавливая его к развертыванию. Дополнительные сведения см. в разделе [как: зарегистрировать службу](../misc/how-to-register-a-service.md).  
+ Во время разработки поставщики управляемых служб регистрируют службы и переопределения служб путем добавления атрибутов в исходный код для пакетов, а затем выполняют сборку пакетов в IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Это запускает служебную программу RegPkg.exe в результирующей сборке, регистрируя пакет и подготавливая его к развертыванию. Дополнительные сведения см. в разделе [Как Регистрация службы](../misc/how-to-register-a-service.md).  
   
  Поставщики неуправляемых служб должны регистрировать предоставляемые службы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , в разделе "Службы" или "Переопределения служб" системного реестра. В следующем фрагменте REG-файла показано, как служба SVsTextManager может быть зарегистрирована:  
   

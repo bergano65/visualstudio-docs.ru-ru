@@ -1,12 +1,9 @@
 ---
-title: 'Пошаговое руководство: Создание пользовательского процессора директив | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пользовательского процессора директив | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993995"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского процессора директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Директивы процессоров * работы путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.  
@@ -611,7 +608,7 @@ End Property
 
 4.  Для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] только, откройте **проекта** меню и выберите пункт **Свойства CustomDP**. На **приложения** на вкладке **корневое пространство имен**, удалите значение по умолчанию `CustomDP`.  
 
-5.  На **файл** меню, щелкните **сохранить все**.  
+5.  В меню **Файл** выберите команду **Сохранить все**.  
 
 6.  В меню **Сборка** выберите **Собрать решение**.  
 
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  В этом примере значением параметра `Processor` является `CustomDirectiveProcessor`. Значение параметра `Processor` должно соответствовать имени раздела реестра процессора.  
 
-5.  На **файл** меню, щелкните **сохранить все**.  
+5.  В меню **Файл** выберите команду **Сохранить все**.  
 
 #### <a name="to-test-the-directive-processor"></a>Тестирование процессора директив  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Чтобы просмотреть выходные данные в браузере, в **обозревателе решений**, щелкните файл TestDP.htm правой кнопкой мыши и выберите **просмотреть в браузере**.  
 
      Вывод должен быть таким же, как исходный текст, но с применением формата HTML. Имя каждого элемента должно отображаться полужирным шрифтом.
-
-
-

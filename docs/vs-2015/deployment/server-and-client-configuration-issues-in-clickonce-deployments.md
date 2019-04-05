@@ -1,14 +1,9 @@
 ---
 title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990694"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49948945"
   
 - .deploy  
   
-  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
+  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
   
   Вы должны будете настроить .manifest .application и .deploy, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], или если вы используете другой веб-сервер (например, Apache).  
   
@@ -97,19 +92,19 @@ ms.locfileid: "49948945"
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce и подключенные диски  
- Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:  
   
 |Тип URL-адреса|Описание|  
 |--------------|-----------------|  
-|FTP: / /|Вы можете опубликовать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
+|ftp://|Вы можете опубликовать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |http://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |https://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |file://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Брандмауэр Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP с пакетом обновления 2 (SP2): Брандмауэр Windows  
  По умолчанию в Windows XP с пакетом обновления 2 включает брандмауэр Windows. Если вы разрабатываете приложение на компьютере с установленной операционной системой Windows XP, вы по-прежнему публикации и запуску [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с локального сервера, где работают службы IIS. Тем не менее не может получить доступ к этом сервере, где работают службы IIS с другого компьютера, если не открыть брандмауэр Windows. Инструкции по управлению брандмауэром Windows содержатся в справке Windows.  
   
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Включить серверные расширения FrontPage  
@@ -117,7 +112,7 @@ ms.locfileid: "49948945"
   
  По умолчанию в Windows Server нет установлены серверные расширения FrontPage. Если вы хотите использовать [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для публикации на сервере Windows Server Web, который использует протокол HTTP с помощью серверных расширений FrontPage, вам сначала необходимо установить серверные расширения FrontPage. Установку можно выполнить с помощью средства администрирования Управление данным сервером в Windows Server.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Типы содержимого заблокированное устройство  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Заблокированная типы содержимого  
  Службы IIS на [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] блокируют все типы файлов, за исключением определенных известных типов содержимого (например, .htm, .html, .txt и т. д.). Чтобы включить развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений, использующих этот сервер, необходимо изменить параметры служб IIS для разрешения загрузки файлов типа .application .manifest и любых других типов пользовательских файлов, используемых приложением.  
   
  Если развертывание выполняется с помощью сервера IIS, запустите inetmgr.exe и добавить новые типы файлов для веб-страницы по умолчанию:  
@@ -144,6 +139,3 @@ ms.locfileid: "49948945"
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
-
-
-

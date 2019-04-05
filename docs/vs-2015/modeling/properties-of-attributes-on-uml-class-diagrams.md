@@ -1,12 +1,9 @@
 ---
 title: Свойства атрибутов на UML схемах классов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980146"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Свойства атрибутов на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ ms.locfileid: "51817364"
  Чтобы просмотреть свойства атрибута, щелкните его правой кнопкой мыши и выберите пункт **Свойства**.  
 
 
-|   **Property**    | **Default**  |                                                                                                                                                                                                         Описание:                                                                                                                                                                                                          |
+|   **Property**    | **Default**  |                                                                                                                                                                                                         Описание                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Значение по умолчанию** |   (пусто)    |                                                                                                                                                                               Значение атрибута, если создается экземпляр классификатора.                                                                                                                                                                                |
 | **Доступно только для чтения**  |    False     |                                                                                                                                                                                    Если значение true, значение атрибута нельзя изменить.                                                                                                                                                                                    |
@@ -72,11 +69,8 @@ ms.locfileid: "51817364"
 |   **Является уникальным**   |    False     |                                                                                                                                                                Если значение true, в коллекции нет повторяющихся значений. При этом значение параметра **Кратность** должно быть больше 1.                                                                                                                                                                |
 
 ## <a name="see-also"></a>См. также  
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
  [Свойства типов на UML-схемах классов](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Свойства операций на UML-схемах классов](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
- [UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Схемы классов UML: Рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
+ [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)

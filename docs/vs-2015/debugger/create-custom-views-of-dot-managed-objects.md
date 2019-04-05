@@ -1,14 +1,9 @@
 ---
 title: Создание настраиваемых представлений управляемых объектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 607844200ad2ccc7f50cea834c24da3adea14413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990338"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Создание настраиваемых представлений управляемых объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "51808470"
  Visual Basic не поддерживает атрибут DebuggerBrowsable в случае кода для [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]. Это ограничение устранено в более новых версиях платформы .NET Framework.  
   
 ## <a name="visualizers"></a>Визуализаторы  
- Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [как: Написание визуализатора на](../debugger/how-to-write-a-visualizer.md).  
+ Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. в разделе [Как написать визуализатор](../debugger/how-to-write-a-visualizer.md).  
   
 ## <a name="native-code"></a>Машинный код  
  Для машинного кода можно добавлять расширения пользовательских типов данных в файл autoexp.dat, который находится в каталоге "Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger". Инструкции относительно записи в `autoexp` правил автоматического использования, расположены в этом файле.  
@@ -55,13 +50,10 @@ ms.locfileid: "51808470"
 > [!CAUTION]
 >  Структура этого файла, а также синтаксис правил автоматического использования могут изменяться от одного выпуска Visual Studio к другому.  
   
- Отображение машинного типа можно также настроить путем написания надстройки — вычислителя выражений. Дополнительные сведения см. в разделе EEAddIn Sample: Debugging Expression Evaluator Add-In. Дополнительные сведения см. в разделе [пример EEAddIn: отладка выражение вычислителя надстройки](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Отображение машинного типа можно также настроить путем написания надстройки — вычислителя выражений. Дополнительные сведения см. в разделе EEAddIn Sample: Debugging Expression Evaluator Add-In. Дополнительные сведения см. в разделе [пример EEAddIn: Отладка Expression Evaluator Add-In](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>См. также  
  [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Посмотрите, как и Windows "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
+ [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
  [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

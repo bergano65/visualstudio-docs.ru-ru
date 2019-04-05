@@ -1,14 +1,9 @@
 ---
 title: Включение отладки в Visual C++ (-D_DEBUG) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -29,30 +24,27 @@ ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf560bcde09b9d2e3c2bee689c92c9900c6e2af5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4cbaa01cfde69db639f354f3d68bd6bbee82efc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989377"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Включение параметров отладки в Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], возможности отладки, такие как утверждения, доступны при компиляции программы с символом **_DEBUG** определен. Вы можете определить **_DEBUG** одним из двух способов:  
+В [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] такие возможности отладки, как утверждения, доступны при компиляции программы с заданным символом **_DEBUG**. **_DEBUG** можно задать одним из двух способов:  
   
-- Укажите **#define _DEBUG** в исходном коде, или  
+- Указать **# define _DEBUG** в исходном коде.  
   
-- Укажите **/D_DEBUG** параметр компилятора. (При создании проекта в Visual Studio с использованием мастеров **/D_DEBUG** автоматически определяется в конфигурации отладки.)  
+- Указать параметр компилятора **/D_DEBUG**. (При создании проекта в Visual Studio с использованием мастеров **/D_DEBUG** задается автоматически в конфигурации отладчика.)  
   
-  Когда **_DEBUG** будет определена, компилятор компилирует разделы кода, заключив его в **#ifdef _DEBUG** и `#endif`.  
+  Когда задан параметр **_DEBUG**, компилятор компилирует разделы кода, заключенные между операторами **#ifdef _DEBUG** и `#endif`.  
   
-  Конфигурация отладчика программы MFC должна компоноваться с версией отладчика библиотеки MFC. Файлы заголовков MFC определить правильную версию для компоновки библиотеки MFC на основе символов, которые вы определили, такие как **_DEBUG** и **_UNICODE**. Дополнительные сведения см. в разделе [версии библиотек MFC](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e).  
+  Конфигурация отладчика программы MFC должна компоноваться с версией отладчика библиотеки MFC. Файлы заголовков MFC определяют точную версию используемой для компоновки библиотеки MFC на основе заданных символов, таких как **_DEBUG** и **_UNICODE**. Дополнительные сведения см. в разделе [Версии библиотеки MFC](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

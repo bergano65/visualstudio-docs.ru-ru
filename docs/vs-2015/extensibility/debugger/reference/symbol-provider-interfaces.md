@@ -1,14 +1,9 @@
 ---
 title: Интерфейсы поставщика символов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - interfaces, symbol handler
 - symbol handler, interfaces
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a37e27f6d7d1a9435f9519d3cecf359eb65fe204
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989968"
 ---
 # <a name="symbol-provider-interfaces"></a>Интерфейсы поставщика символов
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51790777"
 ## <a name="discussion"></a>Обсуждение  
  Эти интерфейсы используются для оценки переменных в стеке вызовов в режиме приостановки выполнения. Они реализуются только для общих поставщиков символ среды выполнения языка (SP).  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Представляет адрес элемента.|  
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Представляет собой адрес элемента, предоставление доступа к идентификатор процесса.|  
@@ -67,4 +62,3 @@ ms.locfileid: "51790777"
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-
