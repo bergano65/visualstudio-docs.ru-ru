@@ -1,12 +1,9 @@
 ---
 title: Правила распространяют изменения в пределах модели | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994182"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             Базовый класс                              |                                                                                                                                                                                                                                                                                                                                                                              Триггер                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Добавляется элемент, ссылку или фигуры.<br /><br /> Позволяет обнаруживать новые связи, а также новые элементы.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Значение свойства домена изменяется. Аргумент метода предоставляет старое и новое значения.<br /><br /> Для фигур, это правило срабатывает при встроенной `AbsoluteBounds` изменения свойств, при перемещении фигуры.<br /><br /> Во многих случаях более удобно для переопределения `OnValueChanged` или `OnValueChanging` в обработчике свойств. Эти методы вызываются непосредственно перед и после изменения. В отличие от этого правила обычно выполняется в конце транзакции. Дополнительные сведения см. в разделе [обработчики изменений значений свойств доменов](../modeling/domain-property-value-change-handlers.md). **Примечание:** это правило не срабатывает при создании или удалении ссылки. Вместо этого запись `AddRule` и `DeleteRule` для доменной связи. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Значение свойства домена изменяется. Аргумент метода предоставляет старое и новое значения.<br /><br /> Для фигур, это правило срабатывает при встроенной `AbsoluteBounds` изменения свойств, при перемещении фигуры.<br /><br /> Во многих случаях более удобно для переопределения `OnValueChanged` или `OnValueChanging` в обработчике свойств. Эти методы вызываются непосредственно перед и после изменения. В отличие от этого правила обычно выполняется в конце транзакции. Дополнительные сведения см. в разделе [обработчики изменений значений свойств доменов](../modeling/domain-property-value-change-handlers.md). **Примечание.**  Это правило не срабатывает при создании или удалении ссылки. Вместо этого запись `AddRule` и `DeleteRule` для доменной связи. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Запускается при элемента или ссылки для удаления. Свойство ModelElement.IsDeleting имеет значение true, до конца транзакции.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Выполнить удаление элемента или ссылки. Это правило выполняется после создания всех остальных правил, включая DeletingRules. ModelElement.IsDeleting значение false, а ModelElement.IsDeleted имеет значение true. Чтобы разрешить последующие отмены, элемент фактически не удаляется из памяти, но он удаляется из Store.ElementDirectory.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Элемент перемещается из одного хранилища секции в другую.<br /><br /> (Обратите внимание на то, что это не связано с графический положения фигуры).                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>См. также  
  [Обработчики событий распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [Класс BoundsRules ограничивает расположение и размеры фигур](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

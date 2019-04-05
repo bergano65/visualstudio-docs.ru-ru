@@ -1,11 +1,8 @@
 ---
 title: Используя конструктор рабочих процессов конечных автоматов для прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978579"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Использование конструктора рабочих процессов конечного автомата для прежних версий
-При создании нового проекта рабочего процесса компьютера в [!INCLUDE[vs2010](../includes/vs2010-md.md)] , ориентированного [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], вы можете использовать любой **консольное приложение рабочего процесса компьютера состояние** или  **Состояние рабочего процесса библиотека машинного** шаблонов проекта прежних версий. Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Сведения о предыдущих версий шаблонах проектов конечного автомата, см. в разделе [как: создать состояние машины консольные приложения рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как: Создание библиотеки рабочего процесса автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+При создании нового проекта рабочего процесса компьютера в [!INCLUDE[vs2010](../includes/vs2010-md.md)] , ориентированного [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], вы можете использовать любой **консольное приложение рабочего процесса компьютера состояние** или  **Состояние рабочего процесса библиотека машинного** шаблонов проекта прежних версий. Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Сведения о предыдущих версий шаблонах проектов конечного автомата, см. в разделе [как: Создать консольные приложения рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как: Создать библиотеку рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Рабочий процесс конечного автомата состоит из набора состояний. Одно состояние обозначается как начальное состояние. Каждое состояние может получить определенный набор событий. В зависимости от события, может быть сделан переход в другое состояние. Рабочий процесс конечного автомата может иметь конечное состояние. При переходе в конечное состояние рабочий процесс завершается.  
   
@@ -61,8 +58,8 @@ ms.locfileid: "49231690"
 >  Чтобы открыть **Структура документа** окно на **представление** последовательно выберите пункты **Other Windows**, а затем выберите **Структура документа**.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: создать консольные приложения рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Практическое: создать библиотеку рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Практическое руководство. Создать консольные приложения рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Практическое руководство. Создать библиотеку рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Рабочие процессы конечного автомата](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Использование действия StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Использование действия StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   

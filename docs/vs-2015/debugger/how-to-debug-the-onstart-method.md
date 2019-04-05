@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: отладка метода OnStart | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Отладка метода OnStart | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,18 +19,18 @@ ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37ea2118c11eaebd0619a3845fc0177741cf34de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990753"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. Отладка метода OnStart
+# <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. отладку метода OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Службу Windows можно отлаживать, запустив ее и подключив отладчик к процессу службы. Дополнительные сведения см. в разделе [How to: Debug Windows Service Applications](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Тем не менее, для отладки метода <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> службы Windows необходимо запустить отладчик внутри метода.  
+Службу Windows можно отлаживать, запустив ее и подключив отладчик к процессу службы. Дополнительные сведения см. в разделе [Как Отладка приложений служб Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Тем не менее, для отладки метода <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> службы Windows необходимо запустить отладчик внутри метода.  
   
 1.  Добавьте вызов <xref:System.Diagnostics.Debugger.Launch%2A> в начале метода `OnStart()`.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51744156"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Выберите **Да, отладить \<имя_службы >.**  
+3.  Выберите **Да, отладить \<имя_службы>.**  
   
 4.  В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.  
   
@@ -63,6 +58,3 @@ ms.locfileid: "51744156"
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)
-
-
-

@@ -1,33 +1,28 @@
 ---
 title: Флаги возможностей | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fd526abb5580b6eb3899df9ee76baacd91e56d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994363"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SCC_CAP_*xxx* флаги имеют битовых флагов, используемый для указания возможности подключаемого модуля системы управления версиями. SCC_EXCAP_*xxx* флаги имеют добавочные флаги, которые указывают расширенные возможности и устранить до целых чисел.  
   
-|Возможность кода|Значение|Описание:|  
+|Возможность кода|Значение|Описание|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Поддерживает [SccRemove](../extensibility/sccremove-function.md) и команду.|  
 |`SCC_CAP_RENAME`|0x00000002L|Поддерживает [SccRename](../extensibility/sccrename-function.md) и команду.|  
@@ -57,7 +52,7 @@ SCC_CAP_*xxx* флаги имеют битовых флагов, использ�
   
 ## <a name="capability-bits-added-in-version-12"></a>Биты возможностей, добавленные в версии 1.2  
   
-|Возможность кода|Значение|Описание:|  
+|Возможность кода|Значение|Описание|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Поддерживает [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Поддерживает [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -70,7 +65,7 @@ SCC_CAP_*xxx* флаги имеют битовых флагов, использ�
 ## <a name="capability-bits-added-in-version-13"></a>Биты возможностей, добавленных в версии 1.3  
  Эти флаги передаются поочередно для [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) функцию, чтобы определить, поддерживается ли функция.  
   
-|Расширенные возможности кода|Значение|Описание:|  
+|Расширенные возможности кода|Значение|Описание|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Поддерживает `SCC_CHECKOUT_LOCALVER` вариант для извлечения.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Поддерживает [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
@@ -86,4 +81,3 @@ SCC_CAP_*xxx* флаги имеют битовых флагов, использ�
   
 ## <a name="see-also"></a>См. также  
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
-

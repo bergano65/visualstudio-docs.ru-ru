@@ -1,27 +1,22 @@
 ---
 title: Средство конфигурации отображения окна | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994513"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |name|REG_SZ|«Короткое имя место»|Краткое имя, описывающее окна инструментов. Используется только для справки в реестре.|  
 |Float|REG_SZ|«X1, Y1, X2, Y2»|Четыре значения с разделителями-запятыми. X1, Y1, — это координата верхнего левого угла окна инструментов. X2, Y2, — это координата нижний правый угол. Все значения являются в экранных координатах.|  
@@ -91,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |(Значение по умолчанию)|REG_SZ|Нет|Оставьте пустым.|  
-|*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  
+|*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный параметр. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  
   
 ### <a name="example"></a>Пример  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>См. также  
  [Основные сведения о пакетах VSPackage](../misc/vspackage-essentials.md)
-

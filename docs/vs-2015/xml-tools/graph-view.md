@@ -1,25 +1,20 @@
 ---
 title: Графическое представление | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980457"
 ---
 # <a name="graph-view"></a>Представление диаграммы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49813626"
   
  ![Конструктор XSD; Графическое представление](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Если набор схем содержит ошибки, в конце списка появится следующий текст: «Воспользуйтесь списком ошибок для просмотра и устранения ошибок в наборе».  
+ Если набор схем содержит ошибки, в конец списка отображается следующий текст: «Использование списка ошибок для просмотра и исправления ошибок в наборе.»  
   
 ## <a name="breadcrumb-bar"></a>Строка навигатора  
  Строка навигатора внизу представления графика показывает месторасположение выбранного узла в наборе схем. Если выбрано несколько элементов, строка навигатора будет пустой.  
@@ -145,6 +140,3 @@ ms.locfileid: "49813626"
   
 ## <a name="see-also"></a>См. также  
  [Область конструктора](../xml-tools/xml-schema-designer-workspace.md)
-
-
-
