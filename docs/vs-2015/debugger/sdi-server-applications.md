@@ -1,14 +1,9 @@
 ---
 title: Приложения сервера SDI | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,27 +16,24 @@ ms.assetid: 09713718-1376-4753-b119-26f36639693e
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea0497c7d20c0102aff3bc77cdecf87d1525a82c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990933"
 ---
 # <a name="sdi-server-applications"></a>Приложения сервера SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При отладке приложения SDI-сервера, необходимо указать `/Embedding` или `/Automation` в **аргументы командной строки** свойство в *проекта* диалоговое окно "страницы свойств" для C/C++, C# или Проекты Visual Basic.  
+В случае проектов C/C++, C# или Visual Basic при отладке приложения SDI-сервера необходимо указать значение `/Embedding` или `/Automation` в свойстве **Аргументы командной строки** диалогового окна "Страницы свойств *Проект*".  
   
  Данные аргументы командной строки позволяют отладчику запустить приложение сервера так, как если бы оно было запущено из контейнера. Если в этот момент запустить контейнер из диспетчера программ или диспетчера файлов, то он будет использовать экземпляр сервера, запущенный в отладчике.  
   
 ## <a name="finding-the-command-line-arguments-property"></a>Поиск свойства "Аргументы командной строки"  
- Чтобы получить доступ к *проекта* диалоговое окно страниц свойств, щелкните правой кнопкой мыши проект в обозревателе решений и выберите в контекстном меню пункт Свойства. Чтобы найти свойство "Аргументы командной строки", разверните категорию "Свойства конфигурации" и щелкните страницу "Отладка".  
+ Чтобы открыть диалоговое окно "Страницы свойств *Проект*", щелкните правой кнопкой мыши проект в обозревателе решений, а затем выберите пункт "Свойства" в контекстном меню. Чтобы найти свойство "Аргументы командной строки", разверните категорию "Свойства конфигурации" и щелкните страницу "Отладка".  
   
 ## <a name="see-also"></a>См. также  
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   
- [Практическое руководство. Отладка COM-серверов](../debugger/how-to-debug-com-servers.md)
-
-
-
+ [Практическое руководство. Отладка серверов COM](../debugger/how-to-debug-com-servers.md)

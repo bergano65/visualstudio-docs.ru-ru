@@ -1,12 +1,9 @@
 ---
 title: Создание кода во время разработки с помощью текстовых шаблонов T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990882"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +61,7 @@ ms.locfileid: "49859282"
   
      Если вы добавили шаблон в проект [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], для атрибута языка будет задано значение `VB`.  
   
-4.  Добавьте любой текст в конец файла. Например:  
+4.  Добавьте любой текст в конец файла. Пример:  
   
     ```  
     Hello, world!  
@@ -133,7 +130,7 @@ ms.locfileid: "49859282"
 ## <a name="debugging-a-design-time-t4-text-template"></a>Отладка текстового шаблона времени разработки T4  
  Отладка текстового шаблона  
   
-- Вставьте строку `debug="true"` в директиву `template`. Например:  
+- Вставьте строку `debug="true"` в директиву `template`. Пример:  
   
    `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
@@ -280,7 +277,7 @@ ms.locfileid: "49859282"
  Тип `this.Host` (в VB, `Me.Host`) — `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
 ### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>Получение данных из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], задайте атрибут `hostSpecific` и загрузите сборку `EnvDTE`. Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Например:  
+ Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], задайте атрибут `hostSpecific` и загрузите сборку `EnvDTE`. Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Пример:  
   
 ```scr  
 <#@ template hostspecific="true" language="C#" #>  
@@ -328,7 +325,7 @@ Warning("A warning message");
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Преобразование существующего файла в шаблон времени разработки  
   
-1.  Добавьте в проект [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файл того типа, который требуется создать, например `.cs` `.vb` или `.resx`.  
+1.  Добавьте в проект [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файл того типа, который требуется создать, например `.cs``.vb` или `.resx`.  
   
 2.  Проверьте созданный файл, чтобы убедиться, что он работает.  
   
@@ -350,7 +347,7 @@ Warning("A warning message");
   
      Чтобы написать создающий код шаблона в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], задайте для атрибута `language` значение `"VB"` вместо `"C#"`.  
   
-     Задайте для атрибута `extension` значение расширения файла того типа, который требуется создать, например `.cs` `.resx` или `.xml`.  
+     Задайте для атрибута `extension` значение расширения файла того типа, который требуется создать, например `.cs``.resx` или `.xml`.  
   
 6.  Сохраните файл.  
   
@@ -365,7 +362,7 @@ Warning("A warning message");
   
 ## <a name="next-steps"></a>Следующие шаги  
   
-|Следующий шаг|Раздел|  
+|Дальнейшие действия|Раздел|  
 |---------------|-----------|  
 |Написание и отладка расширенного текстового шаблона с помощью кода, который использует вспомогательные функции, включенные файлы и внешние данные.|[Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)|  
 |Создание документов на основе шаблонов во время выполнения.|[Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>См. также  
  [Рекомендации по написанию текстовых шаблонов T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

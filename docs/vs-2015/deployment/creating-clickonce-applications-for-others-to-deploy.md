@@ -1,14 +1,9 @@
 ---
 title: Создание приложений ClickOnce для других пользователей для развертывания | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,13 +24,13 @@ ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990881"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Создание приложений ClickOnce для развертывания другими
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "49862090"
   
  С помощью самозаверяющего сертификата для манифеста развертывания представляет несколько преимуществ. Устраняя необходимость для клиента получить или создать свой собственный сертификат Authenticode `<useManifestForTrust>` упрощает развертывание для клиента, что позволяет разработчику сохранять свой фирменный в приложении. Результат — это набор подписанных развертываний, которые являются более безопасными и имеют уникальные удостоверения приложений. Это устраняет потенциальный конфликт, который может возникнуть при развертывании одного приложения для нескольких клиентов.  
   
- Пошаговые инструкции по созданию развертывания ClickOnce с `<useManifestForTrust>` включен, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce, Does не требуют Re-Signing и что сохраняет сведения об](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Пошаговые инструкции по созданию развертывания ClickOnce с `<useManifestForTrust>` включен, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce, которая не требует повторной подписи и сохраняет фирменную символику](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Манифеста приложения для управления безопасностью работает во время выполнения  
  Чтобы лучше понять, как с помощью манифеста приложения для управления безопасностью работает во время выполнения, рассмотрим следующий пример. Приложения ClickOnce, ориентированном на .NET Framework 3.5 разрабатывается корпорацией Майкрософт. Манифест приложения использует `<useManifestForTrust>` элемент и подписано корпорацией Майкрософт. Adventure Works подписывает манифест развертывания с помощью самозаверяющего сертификата. Adventure Works, клиенты настроены на доверие любое приложение, подписанное корпорацией Майкрософт.  
@@ -107,8 +102,5 @@ ms.locfileid: "49862090"
   
 ## <a name="see-also"></a>См. также  
  [Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
- [Пошаговое руководство. Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
-
-
-
+ [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Пошаговое руководство: Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и которое сохраняет фирменную символику](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)

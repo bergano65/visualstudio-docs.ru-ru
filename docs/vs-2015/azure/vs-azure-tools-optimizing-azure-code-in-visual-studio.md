@@ -1,8 +1,8 @@
 ---
-title: Оптимизация кода Azure в Visual Studio | Документация Майкрософт
-description: Узнайте о том, как Azure кода средства оптимизации в Visual Studio помогут сделать код более надежным и производительным.
+title: Оптимизация кода Azure
+description: Узнайте, каким образом средства оптимизации кода Azure в Visual Studio помогут сделать код более надежным и производительным.
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
 ms.custom: vs-azure
@@ -11,54 +11,54 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: d1d0f5a69015a6c6596e1a2b7ee85b12f4116d6b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab9a645ac5bb656336ff38114987ff3838c416f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990398"
 ---
 # <a name="optimizing-your-azure-code"></a>Оптимизация кода Azure
-При программировании приложений, использующих Microsoft Azure, существуют определенные принципы программирования, следует придерживаться, чтобы избежать проблем с масштабированием, поведение и производительность в облачной среде. Корпорация Майкрософт предоставляет средство анализа кода Azure, который распознает и идентифицирует эти часто встречающиеся проблемы, а также помогает их решить. Можно загрузить средство в Visual Studio с помощью NuGet.
+Существуют определенные принципы программирования, позволяющие избежать проблем с масштабированием, поведением и производительностью приложений, использующих Microsoft Azure, в облачной среде. Майкрософт предлагает инструмент анализа кода Azure, который распознает и идентифицирует часто встречающиеся проблемы, а также помогает их решить. Его можно загрузить в Visual Studio на платформе NuGet.
 
 ## <a name="azure-code-analysis-rules"></a>Правила анализа кода Azure
-Средство анализа кода Azure использует следующие правила для автоматически помечает соответствующий код Azure, когда обнаруживает известные проблемы, влияющие на производительность. Обнаруженные проблемы отображаются в виде предупреждений или ошибок компилятора. Средства исправления кода или предложения, чтобы устранить предупреждения или ошибки часто предоставляются через значок лампочки.
+Выявляя известные проблемы, влияющие на производительность, инструмент анализа кода Azure автоматически помечает соответствующий код Azure в соответствии с описанными ниже правилами. Обнаруженные проблемы отображаются в виде предупреждений или ошибок компилятора. Для отображения рекомендаций по устранению ошибок и предупреждений используется значок лампочки.
 
-## <a name="avoid-using-default-in-process-session-state-mode"></a>Старайтесь не использовать режим состояния сеанса (в процессе) по умолчанию
+## <a name="avoid-using-default-in-process-session-state-mode"></a>Старайтесь не использовать режим состояния сеанса по умолчанию (внутрипроцессорный)
 ### <a name="id"></a>ID
 AP0000
 
-### <a name="description"></a>Описание
-Если вы используете режим состояния сеанса (в процессе) по умолчанию для облачных приложений, вы можете потерять состояние сеанса.
+### <a name="description"></a>ОПИСАНИЕ
+При использовании режима состояния сеанса по умолчанию (внутрипроцессный) для облачных приложений можно потерять состояние сеанса.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-По умолчанию указанные в файле web.config режима состояния сеанса в процессе. Кроме того Если нет соответствующей записи в файле конфигурации, режимом состояния сеанса по умолчанию в процессе. Внутрипроцессный режим хранит состояние сеанса в памяти на веб-сервере. При перезапуске экземпляра или экземпляра используется для балансировки нагрузки и отработки отказа, не сохраняется состояние сеанса, хранимое в памяти на веб-сервере. Такая ситуация не позволяет приложению быть масштабируемым в облаке.
+По умолчанию режимом состояния сеанса, указанным в файле web.config, является внутрипроцессный. Кроме того, если в файле конфигурации нет соответствующей записи, режимом состояния сеанса по умолчанию становится внутрипроцессный. Внутрипроцессный режим хранит состояние сеанса в памяти на веб-сервере. При перезапуске экземпляра или при использовании нового экземпляра для балансировки нагрузки и отработки отказа не сохраняется состояние сеанса, хранимое в памяти на веб-сервере. Такая ситуация не позволяет приложению быть масштабируемым в облаке.
 
-Состояние сеанса ASP.NET поддерживает несколько различных параметров хранения данных о состоянии сеанса: InProc, StateServer, SQLServer, Custom и Off. Рекомендуется использовать пользовательский режим для размещения данных на внешнем хранилище состояния сеанса, таких как [поставщик состояния сеанса Azure для Redis](http://go.microsoft.com/fwlink/?LinkId=401521).
+Состояние сеанса ASP.NET поддерживает несколько различных параметров хранения данных о состоянии сеанса: InProc, StateServer, SQLServer, Custom и Off. Рекомендуется использовать пользовательский режим для размещения данных на внешнем хранилище состояния сеанса, таком как [поставщик состояния сеанса Azure для Redis](http://go.microsoft.com/fwlink/?LinkId=401521).
 
 ### <a name="solution"></a>Решение
-Одно из рекомендуемых решений — хранение состояния сеанса на управляемая служба кэша. Сведения об использовании [поставщик состояния сеанса Azure для Redis](http://go.microsoft.com/fwlink/?LinkId=401521) для хранения состояния сеанса. Можно также хранить состояние сеанса в других местах, чтобы убедиться, что приложение является масштабируемой в облаке. Дополнительные сведения об альтернативных решениях см. в статье [режимы состояний сеанса](https://msdn.microsoft.com/library/ms178586).
+Одно из рекомендуемых решений — хранение состояния сеанса в управляемой службе кэша. Узнайте, как сохранять состояния сеанса, используя [поставщик состояний сеанса Azure для Redis](http://go.microsoft.com/fwlink/?LinkId=401521). Чтобы обеспечить масштабируемость приложения в облаке, состояния сеансов можно хранить и в других местах. Чтобы больше узнать об альтернативных решениях, ознакомьтесь со статьей [Режимы состояний сеанса](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>Метод Run не должен быть асинхронным
 ### <a name="id"></a>ID
 AP1000
 
-### <a name="description"></a>Описание
-Создайте асинхронные методы (такие как [await](https://msdn.microsoft.com/library/hh156528.aspx)) за пределами [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метода и затем вызывать эти методы из [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). Объявление [ [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) ](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод асинхронным приводит рабочей роли в цикл перезагрузки.
+### <a name="description"></a>ОПИСАНИЕ
+Создайте асинхронные методы (такие как [await](https://msdn.microsoft.com/library/hh156528.aspx)) вне метода [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx), а затем вызовите эти методы из [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). Объявление метода [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) асинхронным приводит к тому, что рабочая роль входит в цикл перезагрузки.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Вызов асинхронных методов в [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод вызывает среду выполнения облачной службы к перезапуску рабочей роли. При запуске рабочей роли все выполнение программы происходит в [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод. Выход из [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод приводит к перезапуску рабочей роли. Когда среда выполнения рабочей роли сталкивается с асинхронным методом, она производит диспетчеризацию всех операций после асинхронного метода и возвращает. Это приводит к рабочей роли для выхода из [ [ [ [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) ](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) ](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) ](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод и перезапуска. В следующей итерации выполнения рабочая роль снова попадает на асинхронный метод и перезапускается, приводит к ее снова, а также перезапуск.
+Вызов асинхронных методов в методе [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) заставляет среду выполнения облачной службы обновить рабочую роль. При запуске рабочей роли все выполнение программы происходит в методе [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Выход из метода [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) приводит к перезапуску рабочей роли. В случаях, когда среда выполнения рабочей роли сталкивается с асинхронным методом, она производит диспетчеризацию всех операций после асинхронного метода, а затем возвращается. Это приводит к тому, что рабочая роль выходит из метода [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) и перезапускается. В следующей итерации выполнения рабочая роль снова попадает на асинхронный метод и перезапускается, что опять приводит к ее обновлению.
 
 ### <a name="solution"></a>Решение
-Разместите все асинхронные операции вне [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метод. Затем вызовите рефакторизованный асинхронный метод из [ [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) ](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) метода, например RunAsync () .wait. Средство анализа кода Azure может помочь устранить эту проблему.
+Разместите все асинхронные операции вне метода [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Затем вызовите рефакторизованный асинхронный метод из метода [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , например RunAsync().wait. Инструмент анализа кода Azure может помочь решить эту проблему.
 
-В следующем фрагменте кода демонстрируется код исправления этой проблемы:
+В следующем фрагменте кода продемонстрировано исправление кода для устранения этой проблемы:
 
-```
+```csharp
 public override void Run()
 {
     RunAsync().Wait();
@@ -86,57 +86,57 @@ public async Task RunAsync()
 }
 ```
 
-## <a name="use-service-bus-shared-access-signature-authentication"></a>Использовать проверку подлинности подписи общего доступа Service Bus
+## <a name="use-service-bus-shared-access-signature-authentication"></a>Использование проверки подлинности подписанного URL-адреса с помощью служебной шины
 ### <a name="id"></a>ID
 AP2000
 
-### <a name="description"></a>Описание
-Использование подписи общего доступа (SAS) для проверки подлинности. Не будет использоваться служба контроля доступа (ACS) для проверки подлинности служебной шины.
+### <a name="description"></a>ОПИСАНИЕ
+Используйте для проверки подлинности подписанный URL-адрес (SAS). Служба управления доступом (ACS) больше не используется для проверки подлинности служебной шины.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Для повышения уровня безопасности Azure Active Directory заменяет проверку подлинности ACS с помощью проверки подлинности SAS. См. в разделе [Azure Active Directory — это будущее ACS](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) сведения о плане перехода.
+Для повышения уровня безопасности Azure Active Directory заменяет проверку подлинности с помощью ACS на проверку подлинности с использованием SAS. Информацию о плане перехода см. в статье [Azure Active Directory is the future of ACS](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) (Azure Active Directory — будущее для ACS).
 
 ### <a name="solution"></a>Решение
-Использование проверки подлинности SAS в приложениях. Приведенный ниже показано, как использовать существующий маркер SAS для доступа к пространству имен служебной шины или сущности.
+В приложениях используйте проверку подлинности SAS. В приведенном ниже примере показано использование существующего токена SAS для доступа к пространству имен или сущности служебной шины.
 
-```
+```csharp
 MessagingFactory listenMF = MessagingFactory.Create(endpoints, new StaticSASTokenProvider(subscriptionToken));
 SubscriptionClient sc = listenMF.CreateSubscriptionClient(topicPath, subscriptionName);
 BrokeredMessage receivedMessage = sc.Receive();
 ```
 
-Дополнительные сведения см.
+Дополнительные сведения см. в следующих статьях.
 
-* Дополнительные сведения см. в разделе [общего доступа подпись проверки подлинности с помощью служебной шины](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Как использовать проверка подлинности подписи общего доступа с помощью служебной шины](https://msdn.microsoft.com/library/dn205161.aspx)
-* Пример проекта, см. в разделе [проверки подлинности с помощью общих подписи доступа (SAS) с подписками Service Bus](http://code.msdn.microsoft.com/windowsazure/Using-Shared-Access-e605b37c)
+* Общие сведения см. в статье [Shared Access Signature Authentication with Service Bus](https://msdn.microsoft.com/library/dn170477.aspx) (Аутентификация на основе подписанного URL-адреса с помощью служебной шины).
+* [Использование проверки подлинности подписанного URL-адреса с помощью служебной шины](https://msdn.microsoft.com/library/dn205161.aspx)
+* Пример проекта см. на странице [Примеры кода Azure](http://code.msdn.microsoft.com/windowsazure/Using-Shared-Access-e605b37c).
 
-## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Рекомендуется использовать метод OnMessage, чтобы избежать «цикла получения»
+## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Рекомендуется использовать метод OnMessage, чтобы избежать "цикла получения"
 ### <a name="id"></a>ID
 AP2002
 
-### <a name="description"></a>Описание
-Чтобы избежать вхождения в «цикл получения,» вызова **OnMessage** является лучшим решением для получения сообщений, чем вызов в метод **Receive** метод. Тем не менее если необходимо использовать **Receive** метод и задать время ожидания сервера не по умолчанию, убедитесь, что время ожидания сервера превышает одну минуту.
+### <a name="description"></a>ОПИСАНИЕ
+Чтобы избежать вхождения в "цикл получения", для получения сообщений лучше использовать вызов метода **OnMessage**, чем вызов метода **Receive**. Но если необходимо использовать метод **Receive** и задать время ожидания сервера, отличное от значения по умолчанию, убедитесь, что время ожидания сервера превышает одну минуту.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-При вызове **OnMessage**, клиент начинает процесс обработки внутренних сообщений, который постоянно опрашивает очередь или подписку. Этот процесс обработки сообщений содержит бесконечный цикл, который отправляет вызов для получения сообщений. Если время ожидания вызова истекает, она выдает новый вызов. Интервал времени ожидания определяется по значению [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) свойство [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx), который используется.
+При вызове метода **OnMessage**клиент начинает процесс обработки внутренних сообщений, который постоянно опрашивает очередь или подписку. Этот процесс обработки сообщений содержит бесконечный цикл, который отправляет вызов для получения сообщений. Если время ожидания вызова истекает, выдается новый вызов. Интервал времени ожидания определяется по значению свойства [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) используемого [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx).
 
-Преимущество использования **OnMessage** по сравнению с **Receive** пользователей не требуется вручную извлекать сообщения, обрабатывать исключения, обрабатывать несколько сообщений в параллельном режиме и завершать сообщения.
+Преимущество метода **OnMessage** по сравнению с методом **Receive** заключается в том, что пользователям не требуется вручную извлекать сообщения, обрабатывать исключения, параллельно обрабатывать несколько сообщений и завершать сообщения.
 
-При вызове метода **Receive** без использования значения по умолчанию, убедитесь, что *ServerWaitTime* значение — более одной минуты. Установка *ServerWaitTime* более одной минуты предотвращает сервером истекает время ожидания до полного получения сообщения.
+При вызове метода **Receive** без использования значения по умолчанию убедитесь, что значение *ServerWaitTime* превышает одну минуту. Установка для *ServerWaitTime* значения больше одной минуты позволяет предотвратить истечение времени ожидания сервера до полного получения сообщения.
 
 ### <a name="solution"></a>Решение
-См. в следующих примерах кода, рекомендованного использования. Дополнительные сведения см. в разделе [метод QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx)и [метод QueueClient.Receive (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+См. примеры рекомендованного использования кода ниже. Дополнительные сведения см. в статьях [Метод QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) и [Метод QueueClient.Receive (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
 
-Для повышения производительности инфраструктуры обмена сообщениями Azure ознакомьтесь с конструктивным шаблоном [асинхронному обмену сообщениями](https://msdn.microsoft.com/library/dn589781.aspx).
+Для повышения производительности инфраструктуры обмена сообщениями Azure ознакомьтесь с шаблоном проекта в разделе [Учебник по асинхронному обмену сообщениями](https://msdn.microsoft.com/library/dn589781.aspx).
 
-Ниже приведен пример использования **OnMessage** для получения сообщений.
+Ниже приведен пример использования метода **OnMessage** для получения сообщений.
 
-```
+```csharp
 void ReceiveMessages()
 {
     // Initialize message pump options.
@@ -147,7 +147,7 @@ void ReceiveMessages()
 
     // Start receiving messages.
     QueueClient client = QueueClient.Create("myQueue");
-    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is recieved, calling close on the client will stop the pump.
+    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is received, calling close on the client will stop the pump.
     {
         // Process the message.
     }, options);
@@ -155,25 +155,25 @@ void ReceiveMessages()
     Console.ReadKey();
 ```
 
-Ниже приведен пример использования **Receive** с временем ожидания сервера по умолчанию.
+Ниже приведен пример использования метода **Receive** с временем ожидания сервера по умолчанию.
 
-```
-string connectionString =  
+```csharp
+string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
-QueueClient Client =  
+QueueClient Client =
     QueueClient.CreateFromConnectionString(connectionString, "TestQueue");
 
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive();
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -188,20 +188,20 @@ while (true)
    }
 ```
 
-Ниже приведен пример использования **Receive** с временем ожидания сервера не по умолчанию.
+Ниже приведен пример использования метода **Receive** с временем ожидания сервера не по умолчанию.
 
-```
-while (true)  
-{   
+```csharp
+while (true)
+{
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
 
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -220,35 +220,35 @@ while (true)
 ### <a name="id"></a>ID
 AP2003
 
-### <a name="description"></a>Описание
+### <a name="description"></a>ОПИСАНИЕ
 Используйте асинхронные методы служебной шины для повышения производительности обмена сообщениями через посредника.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Использование асинхронных методов обеспечивает программный параллелизм приложений, так как выполнение каждого вызова не блокирует основной поток. При использовании служебной шины методов обмена сообщениями, выполняя операцию (отправки, получения, удаления, и т.д.) занимает время. Это время входит обработка операции службой Service Bus, а также задержка запроса и ответа. Чтобы увеличить количество операций в единицу времени, необходимо выполнять их параллельно. Дополнительные сведения см. в [советы и рекомендации по производительности улучшения с помощью обмене сообщениями служебной шины](https://msdn.microsoft.com/library/azure/hh528527.aspx).
+Использование асинхронных методов обеспечивает программный параллелизм приложений, так как выполнение каждого вызова не блокирует основной поток. При использовании методов обмена сообщениями служебной шины требуется время на выполнение операции (отправки, получения, удаления и т. д.). В это время входит обработка операции службой Service Bus, а также задержка запроса и ответа. Чтобы увеличить количество операций в единицу времени, необходимо выполнять их параллельно. Дополнительные сведения см. в статье [Советы и рекомендации по повышению производительности с помощью обмена сообщениями через посредника служебной шины](https://msdn.microsoft.com/library/azure/hh528527.aspx).
 
 ### <a name="solution"></a>Решение
-См. в разделе [класс QueueClient (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) сведения о способах использования рекомендованного асинхронного метода.
+Сведения о способах использования рекомендованного асинхронного метода см. в статье [Класс QueueClient (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx).
 
-Для повышения производительности инфраструктуры обмена сообщениями Azure ознакомьтесь с конструктивным шаблоном [асинхронному обмену сообщениями](https://msdn.microsoft.com/library/dn589781.aspx).
+Для повышения производительности инфраструктуры обмена сообщениями Azure ознакомьтесь с шаблоном проекта в разделе [Учебник по асинхронному обмену сообщениями](https://msdn.microsoft.com/library/dn589781.aspx).
 
-## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Рассмотрите возможность секционирования очереди служебной шины и разделы
+## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Попробуйте секционировать очереди и разделы служебной шины
 ### <a name="id"></a>ID
 AP2004
 
-### <a name="description"></a>Описание
-Раздел служебной шины очереди и разделы для повышения производительности обмена сообщениями служебной шины.
+### <a name="description"></a>ОПИСАНИЕ
+Секционирование очередей и разделов служебной шины для повышения производительности обмена сообщениями служебной шины.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Секционирование очередей и разделов шины службы повышает доступность пропускной способности и службе производительности, поскольку общая пропускная способность секционированной очереди или раздела больше не ограничивается производительностью одного брокера сообщений или хранилища сообщений. Кроме того при возникновении временного сбоя хранилища сообщений не делает в секционированную очередь или раздел недоступен. Дополнительные сведения см. в разделе [секционирование сущностей обмена сообщениями](https://msdn.microsoft.com/library/azure/dn520246.aspx).
+Секционирование очередей и разделов служебной шины повышает производительность, пропускную способность и доступность службы, поскольку общая пропускная способность секционированной очереди или раздела не ограничивается производительностью одного брокера сообщений или хранилища сообщений. Кроме того, из-за временного сбоя хранилища сообщений секционированная очередь или раздел не становятся недоступными. Дополнительную информацию см. в разделе [Разделение сущностей обмена сообщениями](https://msdn.microsoft.com/library/azure/dn520246.aspx).
 
 ### <a name="solution"></a>Решение
-В следующем фрагменте кода показано, как секционирование сущностей обмена сообщениями.
+В следующем фрагменте кода показано, как выполнить секционирование сущностей обмена сообщениями.
 
-```
+```csharp
 // Create partitioned topic.
 NamespaceManager ns = NamespaceManager.CreateFromConnectionString(myConnectionString);
 TopicDescription td = new TopicDescription(TopicName);
@@ -256,29 +256,29 @@ td.EnablePartitioning = true;
 ns.CreateTopic(td);
 ```
 
-Дополнительные сведения см. в разделе [секционированных очередей служебной шины и разделы | Блог Microsoft Azure](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) и извлечь [Microsoft Azure Service Bus секционированной очереди](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) образца.
+Чтобы узнать больше, ознакомьтесь с записью [блога Microsoft Azure, посвященной секционированным очередям и разделам служебной шины](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/), и примером [секционированной очереди служебной шины Microsoft Azure](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>Не задавайте значение SharedAccessStartTime
 ### <a name="id"></a>ID
 AP3001
 
-### <a name="description"></a>Описание
-Следует избегать, для параметра sharedaccessstarttime текущее время немедленно запустить политику общего доступа. Необходимо задать это свойство, если вы хотите запустить политику общего доступа в дальнейшем.
+### <a name="description"></a>ОПИСАНИЕ
+Не задавайте значение текущего времени для параметра SharedAccessStartTime, чтобы немедленно запустить политику общего доступа. Это свойство следует задавать только в тех случаях, если политику общего доступа планируется запустить позднее.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Синхронизация часов вызывает небольшую разницу во времени между центрами обработки данных. Например можно логически было бы подумать, указать время запуска политики SAS хранилища на текущее время с помощью DateTime.Now или аналогичного метода приведет к политики SAS вступают в силу немедленно. Однако небольшая разница во времени между центрами обработки данных может вызвать проблемы с этим, так как иногда центра обработки данных будут немного отставать от времени запуска, а другие — опережать. Таким образом, истекает политики SAS может быстро (или даже немедленно) Если слишком короткое время жизни политики.
+Синхронизация часов вызывает небольшую разницу во времени между центрами обработки данных. Например, может показаться логичным, что если указать время запуска политики SAS хранилища на текущее время с помощью метода DateTime.Now или аналогичного метода, то это вызовет немедленное применение политики SAS. Однако небольшая разница во времени между центрами обработки данных может вызывать проблемы, так как одни центры обработки данных будут немного отставать от времени запуска, а другие — опережать. В результате срок действия политики SAS может быстро (или даже немедленно) закончиться, если установлено слишком короткое время жизни политики.
 
-Дополнительные рекомендации по использованию подписи общего доступа в службе хранилища Azure, см. в разделе [Знакомство с SAS таблиц (подпись общего доступа), SAS очередей и обновления в SAS BLOB-объектов — блог группы хранилища Microsoft Azure — сайта Главная — блоги MSDN](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx).
+Дополнительные рекомендации по использованию подписанного URL-адреса в службе хранилища Azure см. в записи блога MSDN [Introducing Table SAS (Shared Access Signature), Queue SAS and update to Blob SAS](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx) (Знакомство с SAS (подписанный URL-адрес) таблиц, SAS очередей и изменениями SAS больших двоичных объектов).
 
 ### <a name="solution"></a>Решение
-Удалите оператор, который задает время запуска политики общего доступа. Средство анализа кода Azure предоставляет исправление этой проблемы. Дополнительные сведения об управлении безопасностью см. в шаблоне разработки [шаблон ключа Камердинера](https://msdn.microsoft.com/library/dn568102.aspx).
+Удалите инструкцию, которая задает время запуска политики общего доступа. Средство анализа кода Azure может помочь решить эту проблему. Чтобы узнать больше об управлении безопасностью, ознакомьтесь с конструктивным шаблоном [Ключ камердинера](https://msdn.microsoft.com/library/dn568102.aspx).
 
-В следующем фрагменте кода демонстрируется код исправления этой проблемы.
+В следующем фрагменте кода продемонстрировано исправление кода для устранения этой проблемы:
 
-```
-// The shared access policy provides  
+```csharp
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -290,27 +290,27 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>Общей политики доступа, время окончания срока действия должно быть более чем за пять минут
+## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>Время окончания срока действия общей политики доступа должно быть больше пяти минут
 ### <a name="id"></a>ID
 AP3002
 
-### <a name="description"></a>Описание
-Может быть настолько, насколько до пяти минут разница в часах между центрами обработки данных в разных местах, из-за условия, известного как «разницы в показаниях часов.» Во избежание SAS маркер политики не истекает раньше, чем планировалось, установите время быть более чем за пять минут.
+### <a name="description"></a>ОПИСАНИЕ
+Разница во времени между центрами обработки данных в разных расположениях может составлять до пяти минут в силу условия, известного как расфазировка синхронизирующих импульсов. Чтобы маркер политики SAS не устарел раньше, чем планировалось, установите срок действия больше пяти минут.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Центры обработки данных в разных местах по всему миру синхронизировать по сигналу часов. Поскольку занять некоторое время передача в разные расположения сигнала, несмотря на то, что теоретически все синхронизировано может быть разница во времени между центрами обработки данных в разных географических местоположениях. Разница во времени может повлиять на общего доступа интервал времени и истечения срока действия в запуска политики. Таким образом чтобы убедиться, что политику общего доступа вступает в силу немедленно, не указывайте время начала. Кроме того убедитесь, что срок действия составляет более 5 минут, чтобы предотвратить раннее истечение времени ожидания.
+Центры обработки данных в разных местах по всему миру синхронизируются по сигналу часов. Поскольку передача сигнала в разные расположения требует времени, возможна разница во времени между центрами обработки в разных географических местоположениях, хотя теоретически все синхронизировано. Разница во времени может повлиять на время запуска и интервал истечения срока действия политики общего доступа. Таким образом, чтобы убедиться, что политика общего доступа вступает в силу немедленно, не указывайте время начала. Кроме того, убедитесь, что срок действия составляет более 5 минут, чтобы предотвратить раннее истечение времени ожидания.
 
-Дополнительные сведения об использовании подписи общего доступа в службе хранилища Azure см. в разделе [Знакомство с SAS таблиц (подпись общего доступа), SAS очередей и обновления в SAS BLOB-объектов — блог группы хранилища Microsoft Azure — сайта Главная — блоги MSDN](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx).
+Дополнительную информацию по использованию подписанного URL-адреса в службе хранилища Azure см. в записи блога MSDN [Introducing Table SAS (Shared Access Signature), Queue SAS and update to Blob SAS](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx) (Знакомство с SAS (подписанный URL-адрес) таблиц, SAS очередей и изменениями SAS больших двоичных объектов).
 
 ### <a name="solution"></a>Решение
-Дополнительные сведения об управлении безопасностью см. в шаблоне разработки [шаблон ключа Камердинера](https://msdn.microsoft.com/library/dn568102.aspx).
+Чтобы узнать больше об управлении безопасностью, ознакомьтесь с конструктивным шаблоном [Ключ камердинера](https://msdn.microsoft.com/library/dn568102.aspx).
 
-Ниже приведен пример не указано время запуска политики общего доступа.
+Ниже приведен пример, в котором не указано время запуска политики общего доступа.
 
-```
-// The shared access policy provides  
+```csharp
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -322,42 +322,42 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-Ниже приведен пример указано время запуска политики общего доступа со сроком действия больше пяти минут.
+Ниже приведен пример, в котором указано время запуска политики общего доступа со сроком действия больше пяти минут.
 
-```
-// The shared access policy provides  
+```csharp
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
    // To ensure SAS is valid immediately, don’t set start time.
    // This way, you can avoid failures caused by small clock differences.
-  SharedAccessStartTime = new DateTime(2014,1,20),   
+  SharedAccessStartTime = new DateTime(2014,1,20),
  SharedAccessExpiryTime = new DateTime(2014, 1, 21),
    Permissions = SharedAccessBlobPermissions.Write |
       SharedAccessBlobPermissions.Read
 });
 ```
 
-Дополнительные сведения см. в разделе [Создание и использование подписи общего доступа](https://msdn.microsoft.com/library/azure/jj721951.aspx).
+Дополнительную информацию см. в статье [Создание и использование подписанного URL-адреса](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Используйте CloudConfigurationManager
 ### <a name="id"></a>ID
 AP4000
 
-### <a name="description"></a>Описание
-С помощью [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) класса для проектов, таких как веб-сайта Azure и мобильные службы Azure, не вызовет проблем времени выполнения. Рекомендуется, однако его рекомендуется использовать Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) как единый способ управления конфигурациями всех облачных приложений Azure.
+### <a name="description"></a>ОПИСАНИЕ
+Использование класса [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) для таких проектов, как веб-сайт Azure и мобильные службы Azure, не вызовет проблем времени выполнения. Рекомендуется использовать Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) как единый способ управления конфигурациями всех облачных приложений Azure.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-CloudConfigurationManager выполняет считывание файла конфигурации, подходит для среды приложения.
+CloudConfigurationManager выполняет считывание файла конфигурации, который подходит для среды приложения.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
 ### <a name="solution"></a>Решение
-Переработайте свой код для использования [класса CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Исправление кода для этой проблемы предоставляется с помощью средства анализа кода Azure.
+Переработайте свой код для использования [класса CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Инструмент анализа кода Azure позволяет исправить код и устранить эту проблему.
 
-В следующем фрагменте кода демонстрируется код исправления этой проблемы. Заменить
+В следующем фрагменте кода продемонстрировано исправление кода для устранения этой проблемы: Замените
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -365,85 +365,85 @@ CloudConfigurationManager выполняет считывание файла к�
 
 `var settings = CloudConfigurationManager.GetSetting("mySettings");`
 
-Вот пример того, как сохранить параметры конфигурации в файле App.config или Web.config. Добавьте параметры в раздел appSettings файла конфигурации. Ниже приведен файл Web.config для предыдущего примера кода.
+Ниже приведен пример того, как сохранить параметры конфигурации в файл App.config или Web.config. Добавьте параметры в раздел appSettings файла конфигурации. Ниже приведен файл Web.config для предыдущего примера кода.
 
-```
+```xml
 <appSettings>
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="mySettings" value="[put_your_setting_here]"/>
-  </appSettings>  
+  </appSettings>
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Избегайте использования жестко запрограммированных строк подключения
 ### <a name="id"></a>ID
 AP4001
 
-### <a name="description"></a>Описание
-Если вы используете жестко запрограммированные строки подключения, и вам нужно обновить их позже, необходимо внести изменения в исходный код и перекомпилировать приложение. Тем не менее если вы храните строки подключения в файле конфигурации, можно изменить их позже, просто обновив файл конфигурации.
+### <a name="description"></a>ОПИСАНИЕ
+Если используются жестко запрограммированные строки подключения, которые вам потребуется обновить позднее, необходимо внести изменения в исходный код и перекомпилировать приложение. Но если хранить строки подключения в файле конфигурации, вы сможете изменить их позже, просто обновив файл конфигурации.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Жесткое программирование строки подключения не рекомендуется делать, так как она порождает проблемы, когда нужно быстро изменить строки подключения. Кроме того Если проект должен быть помещен систему управления версиями, жестко запрограммированные строки подключения появления уязвимостей, так как строки можно увидеть в исходном коде.
+Не рекомендуется использовать жестко запрограммированные строки подключения, так как из-за этого возникают проблемы при необходимости быстро изменить строки подключения. Кроме того, если проект должен быть помещен в систему управления версиями, жестко запрограммированные строки подключения делают систему безопасности уязвимой, так как строки можно увидеть в исходном коде.
 
 ### <a name="solution"></a>Решение
-Store строки подключения в файлах конфигурации или средах Azure.
+Храните строки подключения в файлах конфигурации или в средах Azure.
 
-* Для автономных приложений используйте файл app.config для хранения параметров строки подключения.
-* Для размещенных в IIS веб-приложений используйте файл web.config для хранения строки подключения.
-* Для приложений ASP.NET vNext используйте файл configuration.json для хранения строки подключения.
+* Для автономных приложений используйте для хранения параметров строки подключения файл app.config.
+* Для веб-приложений, размещенных в IIS, используйте для хранения параметров строки подключения файл web.config.
+* Для приложений ASP.NET vNext используйте для хранения параметров строки подключения файл configuration.json.
 
-Сведения об использовании файлов конфигурации, например web.config или app.config, см. в разделе [правила веб-конфигурации ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Сведения о том, как Azure работы переменных среды, см. в разделе [веб-сайтов Azure: How Application Strings and работы строками подключения](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Сведения о хранении строки подключения в системе управления версиями, см. в разделе [не указывать конфиденциальную информацию, например строки подключения в файлах, которые хранятся в репозитории исходного кода](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Сведения об использовании файлов конфигурации, таких как web.config или app.config, см. в разделе [Правила веб-конфигурации ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Сведения о том, как работают переменные среды Azure, см. в разделе [Веб-сайты Azure: How Application Strings and Connection Strings Work](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/) (Веб-сайты Microsoft Azure: как работают строки приложения и строки подключения). Чтобы узнать о хранении строки подключения в системе управления версиями см. в разделе [Source Control (Building Real-World Cloud Apps with Azure)](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) (Система управления версиями (создание реальных облачных приложений в Azure)).
 
 ## <a name="use-diagnostics-configuration-file"></a>Использование файла конфигурации диагностики
 ### <a name="id"></a>ID
 AP5000
 
-### <a name="description"></a>Описание
-Вместо настройки параметров диагностики в коде, например, с помощью API программирования Microsoft.WindowsAzure.Diagnostics, следует настроить параметры диагностики в файле diagnostics.wadcfg. (Или diagnostics.wadcfgx, если вы используете Azure SDK 2.5). Таким образом, можно изменить параметры диагностики без повторной компиляции кода.
+### <a name="description"></a>ОПИСАНИЕ
+Вместо настройки параметров диагностики в коде, например с помощью API программирования Microsoft.WindowsAzure.Diagnostics, следует настроить параметры диагностики в файле diagnostics.wadcfg (или в файле diagnostics.wadcfgx, если используется пакет Azure SDK 2.5). Это позволит изменить параметры диагностики без повторной компиляции кода.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Прежде чем Azure SDK 2.5 (с использованием диагностики Azure 1.3), Azure Diagnostics (WAD) можно было настраивать с помощью нескольких различных методов: путем ее добавления в большой двоичный объект конфигурации в хранилище, с использованием императивного кода, декларативной конфигурации или значение по умолчанию Конфигурация. Тем не менее предпочтительным способом настройки диагностики является использование XML-файл конфигурации (diagnostics.wadcfg или diagnositcs.wadcfgx для пакета SDK 2.5 и более поздних версий) в проекте приложения. При таком подходе файл diagnostics.wadcfg полностью определяет конфигурацию и может обновляться и повторно развертываться по желанию. Совместное использование файла конфигурации diagnostics.wadcfg с программными методами настройки конфигураций при применении [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)или [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)классы могут привести к путанице. См. в разделе [инициализация или изменение конфигурации службы диагностики Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Дополнительные сведения.
+До появления пакета Azure SDK 2.5 (с использованием диагностики Azure 1.3) диагностику Microsoft Azure (WAD) можно было настраивать с помощью нескольких различных методов: путем ее добавления в BLOB-объект конфигурации в хранилище, с использованием императивного кода, декларативной конфигурации или конфигурации по умолчанию. Однако предпочтительным способом настройки диагностики является использование XML-файла конфигурации (diagnostics.wadcfg или diagnostics.wadcfgx для пакета SDK 2.5 и более поздних версий) в проекте приложения. При таком подходе файл diagnostics.wadcfg полностью определяет конфигурацию, может обновляться и повторно развертываться по желанию. Совместное использование файла конфигурации diagnostics.wadcfg с программными методами настройки конфигураций при применении [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)или [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) классы могут привести к путанице. Дополнительную информацию см. в статье [Инициализация или изменение конфигурации службы диагностики Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx).
 
-Начиная с версии 1.3 службы WAD (входит в состав пакета Azure SDK 2.5), его больше нельзя использовать код для настройки диагностики. Таким образом вы может предоставить конфигурацию только при применении или обновлении расширения системы диагностики.
+Начиная с версии 1.3 службы WAD (входит в состав пакета SDK для Azure 2.5) нельзя использовать код для настройки диагностики. В результате вы можете предоставить конфигурацию только при применении или обновлении расширения диагностики.
 
 ### <a name="solution"></a>Решение
-Используйте конструктор конфигурации диагностики для перемещения параметров диагностики в файл конфигурации диагностики (diagnositcs.wadcfg или diagnositcs.wadcfgx для пакета SDK 2.5 и более поздних версий). Кроме того, рекомендуется установить [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) и использовать последние функции диагностики.
+Используйте конструктор конфигурации диагностики для перемещения диагностических параметров в файл конфигурации диагностики (diagnositcs.wadcfg или diagnostics.wadcfgx для пакета SDK 2.5 и более поздних версий). Кроме того, рекомендуется установить пакет [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) и использовать последние функции диагностики.
 
-1. В контекстном меню для роли, которой вы хотите настроить выберите свойства и затем перейдите на вкладку конфигурации.
-2. В **диагностики** разделе, убедитесь, что **включить диагностику** установлен флажок.
-3. Выберите **Настройка** кнопки.
+1. В контекстном меню интересующей вас роли выберите пункт "Свойства", а затем перейдите на вкладку "Конфигурация".
+2. В разделе **Диагностика** установите флажок **Включить диагностику**.
+3. Нажмите кнопку **Настроить** .
 
    ![Доступ к параметру "Включить диагностику"](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
-   См. в разделе [Настройка системы диагностики для облачных служб Azure и виртуальных машин](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) Дополнительные сведения.
+   Дополнительную информацию см. в статье [Настройка системы диагностики для облачных служб и виртуальных машин Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Не объявляйте объекты DbContext статическими
 ### <a name="id"></a>ID
 AP6000
 
-### <a name="description"></a>Описание
+### <a name="description"></a>ОПИСАНИЕ
 Для экономии памяти не объявляйте объекты DBContext статическими.
 
-Поделитесь своими идеями и предложениями на [отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
+Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Причина
-Объекты DBContext содержат результаты запроса из каждого вызова. Статические объекты DBContext не удаляются, пока не будет выгружен домен приложения. Таким образом статический объект DBContext может использовать большой объем памяти.
+Объекты DBContext содержат результаты запроса из каждого вызова. Статические объекты DBContext не удаляются, пока не будет выгружен домен приложения. В связи с этим статический объект DBContext может использовать большой объем памяти.
 
 ### <a name="solution"></a>Решение
-Объявите DBContext как локальную переменную или поле нестатического экземпляра, используйте его для задачи и подождите, пока он будет удален после использования.
+Объявите DBContext как локальную переменную или поле нестатического экземпляра, используйте его для задачи, а после использования он будет удален.
 
 Приведенный пример класса контроллера MVC показывает, как использовать объект DBContext.
 
-```
+```csharp
 public class BlogsController : Controller
     {
-        //BloggingContext is a subclass to DbContext        
+        //BloggingContext is a subclass to DbContext
         private BloggingContext db = new BloggingContext();
         // GET: Blogs
         public ActionResult Index()
@@ -463,4 +463,4 @@ public class BlogsController : Controller
 ```
 
 ## <a name="next-steps"></a>Следующие шаги
-Для получения дополнительных сведений об оптимизации и устранении неполадок приложений Azure, см. в разделе [Устранение неполадок веб-приложения в службе приложений Azure с помощью Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio).
+Дополнительные сведения об оптимизации и устранении неполадок приложений Azure см. в статье [Устранение неполадок веб-приложения в службе приложений Azure с помощью Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio).

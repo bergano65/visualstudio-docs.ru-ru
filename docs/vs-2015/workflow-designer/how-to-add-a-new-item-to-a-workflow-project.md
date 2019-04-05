@@ -1,33 +1,30 @@
 ---
-title: 'Практическое: добавьте новый элемент в проект рабочего процесса | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавить новый элемент в проект рабочего процесса | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f9dd186c4f9b319b5c4c60fa48d3a32e16c673f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990662"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Практическое руководство. Добавление нового элемента в проект рабочего процесса
 После создания проекта рабочего процесса в него можно добавлять действия рабочих процессов, конструкторы и другие привычные элементы [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  В следующей таблице перечислены элементы [!INCLUDE[wf](../includes/wf-md.md)], которые можно добавлять в проект рабочего процесса.  
   
-|Имя|Описание|  
+|name|Описание|  
 |----------|-----------------|  
-|Действие|Действие, которое составляется из других действий. При выборе этого элемента добавляет один и тот же файл XAML в проект, которые получаются при выборе **библиотеки действий** шаблона для нового проекта. [!INCLUDE[crabout](../includes/crabout-md.md)] в этой процедуре см. в разделе [как: создать библиотеку действий](../workflow-designer/how-to-create-an-activity-library.md).|  
-|конструктор действий|Конструктор для настройки поведения действия во время разработки. При выборе этого элемента добавляются те же файлы в проект, которые получаются при выборе **библиотека конструктора действий** шаблона для нового проекта. [!INCLUDE[crabout](../includes/crabout-md.md)] в этой процедуре см. в разделе [как: Создание библиотеки конструктора рабочих процессов](../workflow-designer/how-to-create-an-activity-designer-library.md).|  
+|Действие|Действие, которое составляется из других действий. При выборе этого элемента добавляет один и тот же файл XAML в проект, которые получаются при выборе **библиотеки действий** шаблона для нового проекта. [!INCLUDE[crabout](../includes/crabout-md.md)] в этой процедуре см. в разделе [как: Создать библиотеку действий](../workflow-designer/how-to-create-an-activity-library.md).|  
+|конструктор действий|Конструктор для настройки поведения действия во время разработки. При выборе этого элемента добавляются те же файлы в проект, которые получаются при выборе **библиотека конструктора действий** шаблона для нового проекта. [!INCLUDE[crabout](../includes/crabout-md.md)] в этой процедуре см. в разделе [как: Создать библиотеку конструкторов действий](../workflow-designer/how-to-create-an-activity-designer-library.md).|  
 |CodeActivity|Действие с логикой выполнения, записанное в код. Файл с исходным кодом с переопределением метода <xref:System.Activities.CodeActivity.Execute%2A> уже сформирован.|  
 |Служба рабочего процесса WCF|Служба [!INCLUDE[indigo2](../includes/indigo2-md.md)], построенная с использованием действий рабочего процесса. При выборе этого элемента добавляются те же файлы в проект, которые получаются при выборе **приложение службы рабочего процесса WCF** шаблона для нового проекта. [!INCLUDE[crabout](../includes/crabout-md.md)] в этой процедуре см. в разделе [как: Создание приложения службы рабочего процесса WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|  
   
