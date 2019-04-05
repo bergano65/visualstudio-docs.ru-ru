@@ -1,12 +1,9 @@
 ---
 title: Разделение наборов данных и адаптеров таблиц на разные проекты | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979035"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "49824332"
   
 Типизированные наборы данных были усовершенствованы, чтобы [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и классы наборов данных могут быть созданы в отдельные проекты. Это дает возможность быстро разделять слои приложения и создавать многоуровневые приложения.  
   
- Следующая процедура описывает процесс использования[Создание и изменение типизированных наборов DataSet](../data-tools/creating-and-editing-typed-datasets.md) для создания кода набора данных в проект, который отличается от проекта, который содержит созданный `TableAdapter` кода.  
+ Следующая процедура описывает процесс использования конструктора наборов данных для создания кода набора данных в проект, который отличается от проекта, который содержит созданный `TableAdapter` кода.  
   
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets и адаптеров таблиц  
  При разделении набора данных код из `TableAdapter` кода, содержащего код набора данных должен быть расположен в текущем решении. Если этот проект не находится в текущем решении, оно действует в **проект DataSet** в списке **свойства** окна.  
@@ -75,4 +72,3 @@ ms.locfileid: "49824332"
  [Иерархическое обновление](../data-tools/hierarchical-update.md)   
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
-

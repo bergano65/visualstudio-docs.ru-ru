@@ -1,12 +1,9 @@
 ---
 title: Отображение связанных данных в приложениях WPF | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980082"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +39,9 @@ ms.locfileid: "49174153"
   
 ## <a name="to-create-controls-that-display-related-records"></a>Для создания элементов управления, отображающих связанные записи  
   
-1.  На **данных** меню, щелкните **Показать источники данных** открыть **источников данных** окна.  
+1.  Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.  
   
-2.  Нажмите кнопку **добавить новый источник данных**и завершите **конфигурации источника данных** мастера.  
+2.  Выберите команду **Добавить новый источник данных** и выполните **Мастер настройки источника данных**.  
   
 3.  Откройте конструктор WPF и убедитесь, что он содержит контейнер, который является допустимой целью перетаскивания для элементов в **источников данных** окна.  
   
@@ -70,5 +67,4 @@ ms.locfileid: "49174153"
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Пошаговое руководство: Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
