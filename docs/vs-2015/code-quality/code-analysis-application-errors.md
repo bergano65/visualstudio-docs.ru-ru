@@ -1,14 +1,9 @@
 ---
-title: Код ошибки анализа приложений | Документация Майкрософт
-ms.custom: ''
+title: Ошибки, возникающие при анализе кода
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992219"
 ---
 # <a name="code-analysis-application-errors"></a>Ошибки, возникающие при анализе кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49225021"
 |[CA0062](ca0062.md)|Правило "*RuleId*«на который ссылается набор правил»*RuleSetName*" не найден.|
 |[CA0063](ca0063.md)|Не удалось загрузить файл набора правил или один из его зависимых файлов наборов правил.|
 |[CA0064](ca0064.md)|Анализ не был выполнен, поскольку указанный набор правил не содержит какие-либо правила FxCop.|
-|[CA0065](ca0065.md)|Неподдерживаемая конструкция метаданных: тип "*TypeName*«содержит свойство и поле с тем же именем»*PropertyFieldName*"|
+|[CA0065](ca0065.md)|Неподдерживаемая конструкция метаданных: Тип "*TypeName*«содержит свойство и поле с тем же именем»*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Значение "*VersionID*" для **/targetframeworkversion** не является распознаваемым версией.|
 |[CA0067](ca0067.md)|Каталог не найден.|
 |[CA0068](ca0068.md)|Отладка не удалось найти сведения для целевой сборки *«Имя_сборки»*.|
@@ -57,14 +52,13 @@ ms.locfileid: "49225021"
 |[CA0070](ca0070.md)|Не удается загрузить сборку или тип, из-за разрешений безопасности.|
 |[CA0501](ca0501.md)|Не удалось прочитать отчет о результатах.|
 |[CA0502](ca0502.md)|Язык не поддерживается.|
-|[CA0503](ca0503.md))|Свойство не рекомендуется использовать. Используйте более приоритетное свойство|
+|[CA0503](ca0503.md)|Свойство является устаревшим. Используйте более приоритетное свойство|
 |[CA0504](ca0504.md)|Каталог правила было пропущено, так как он не существует|
-|[CA0505](ca0505.md)|Свойство не рекомендуется использовать. Используйте более приоритетное свойство|
+|[CA0505](ca0505.md)|Свойство является устаревшим. Используйте более приоритетное свойство|
 |[Ошибки FxCopCmd](fxcopcmd-errors.md)|Ошибки при анализе управляемого кода.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Код возврата анализа ошибки политики.|
 
 ## <a name="related-sections"></a>Связанные разделы
 
-- [Рекомендации по написанию безопасного кода](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Рекомендации по написанию безопасного кода](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [Ресурсы для устранения неполадок в средствах управления жизненным циклом приложения](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

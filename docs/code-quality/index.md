@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Анализ кода
-description: "Научитесь анализировать качество кода в Visual\_Studio."
+description: Научитесь анализировать качество кода в Visual Studio.
 ms.date: 12/03/2018
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
+ms.openlocfilehash: 9cc40bdd7b0e120e3a8e3e5be28f4d399afb9210
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323322"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Анализ кода в Visual Studio
 

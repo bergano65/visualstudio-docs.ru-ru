@@ -1,13 +1,19 @@
 ---
 layout: LandingPage
-title: "Создание приложений JavaScript в Visual Studio\_| Документация Майкрософт"
-description: "Узнайте, как использовать Visual Studio\_2017 для создания приложений."
+title: Создание приложений JavaScript в Visual Studio | Документация Майкрософт
+description: Узнайте, как использовать Visual Studio 2017 для создания приложений.
 ms.topic: landing-page
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: 4ba823e113167bbd78eaf6ac6fe71110866715f5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325046"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 

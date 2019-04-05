@@ -1,14 +1,9 @@
 ---
 title: Инкапсулировать поле рефакторинг (C#) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: bf714a04-ab1e-49ce-99ce-dda1ebb1a17f
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 35d7e03e30aa5301ee65f15a8591fbccd1de3fcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988946"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Рефакторинг для инкапсуляции поля (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ ms.locfileid: "49223552"
   
  Для объявления относятся несколько полей **инкапсулировать поле** использует запятую в качестве границ между полями и инициирует рефакторинг в ближайшем к курсору поле и в той же строке, что курсор. Чтобы указать, какое поле нужно инкапсулировать, можно также выбрать имя этого поля в объявлении.  
   
- Код, который создается этой операцией рефакторинга, моделируется функцией фрагментов кода инкапсуляции поля. Фрагменты кода можно изменять. Дополнительные сведения см. в статье [Фрагменты кода](../ide/code-snippets.md).  
+ Код, который создается этой операцией рефакторинга, моделируется возможностью фрагментов кода инкапсуляции поля. Фрагменты кода можно изменять. Дополнительные сведения см. в статье [Фрагменты кода](../ide/code-snippets.md).  
   
 ## <a name="see-also"></a>См. также  
  [Рефакторинг (C#)](../csharp-ide/refactoring-csharp.md)   

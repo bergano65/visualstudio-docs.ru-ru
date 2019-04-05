@@ -1,14 +1,9 @@
 ---
-title: 'Способ: добавить файл конфигурации приложения в проект C# | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавьте файл конфигурации приложения для C# проекта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 9caf6bb0-c2fc-4ab6-ba69-bed3b880fbf8
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 43245704a2393b298f0f1d948d8a8829a4ef9bc4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990519"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Практическое руководство. Добавление файла конфигурации приложения в проект C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Практическое руководство. Добавьте файл конфигурации приложения для C# проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Добавив файл конфигурации приложения (файл app.config) в проект C#, вы можете настроить способ, которым общеязыковая среда выполнения будет находить и загружать файлы сборки. Дополнительные сведения о файлах конфигурации см. в разделе [Обнаружение сборок в среде выполнения](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
@@ -51,5 +46,5 @@ ms.locfileid: "49204793"
  [Управление параметрами приложения (.NET)](../ide/managing-application-settings-dotnet.md)   
  [Схема файлов конфигурации для .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Настройка приложений](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Практическое: Настройка приложения для целевой версии .NET Framework](http://msdn.microsoft.com/en-us/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Практическое руководство. Настройка приложения для целевой версии .NET Framework](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Использование среды разработки Visual Studio для C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

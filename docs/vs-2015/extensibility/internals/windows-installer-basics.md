@@ -1,34 +1,29 @@
 ---
 title: Основные сведения об установщике Windows | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747647"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002590"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Установщик Windows устанавливает и удаляет приложения или программных продуктов на компьютере пользователя, выполнения этих задач в блоках, именуемых компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки с помощью установщика Windows.  
   
- Полную документацию по установщика Windows, см. в разделе Platform SDK [установщика Windows](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Полную документацию по установщика Windows, см. в разделе Platform SDK [установщика Windows](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Разработка пакетов VSPackage  
  Установщик Windows использует пакеты установки, которые содержат сведения, установщика Windows необходимо, чтобы установка, удаление или восстановление продукта и для выполнения установки пользовательский интерфейс (UI). Каждый пакет установки включает MSI-файл, который содержит базу данных установки, общие сведения и потоки данных для различных этапов установки. Чтобы использовать установщик, необходимо создать экземпляр. Так как установщик организует установок с концепцией компонентов и сохраняет сведения об установке в реляционной базе данных, процесс создания пакета установки широко влечет за собой следующее:  
@@ -80,4 +75,3 @@ ms.locfileid: "51747647"
   
 ## <a name="see-also"></a>См. также  
  [Что произойдет, если правила компонентов не работают?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

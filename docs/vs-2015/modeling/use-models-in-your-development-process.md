@@ -1,13 +1,8 @@
 ---
 title: Использование моделей в процессе разработки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757707"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002227"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. См. в разделе [видео Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  
+В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. См. в разделе [видео на Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51757707"
   
 -   Варианты использования. Вариант использования можно связать с задачами разработки, которые будут его реализовывать.  
   
--   Расширения вариантов использования. Если в ходе итерации будет реализован только один аспект варианта использования, можно разделить его на основной вариант использования и одно или несколько расширений. Расширения — это варианты использования, связанные с основным вариантом отношением "расширение". Дополнительные сведения о расширении варианта использования, см. в разделе [схем вариантов использования UML: Справочник по](../modeling/uml-use-case-diagrams-reference.md).  
+-   Расширения вариантов использования. Если в ходе итерации будет реализован только один аспект варианта использования, можно разделить его на основной вариант использования и одно или несколько расширений. Расширения — это варианты использования, связанные с основным вариантом отношением "расширение". Дополнительные сведения о расширении варианта использования, см. в разделе [UML-схемы вариантов использования: ](../modeling/uml-use-case-diagrams-reference.md) (Создание проектов и схем моделирования UML).  
   
 -   Комментарии, описывающие бизнес-правила или требования к качеству обслуживания. Дополнительные сведения см. в разделе [моделирование требований пользователей](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ ms.locfileid: "51757707"
   
 |**Категория**|**Ссылки**|  
 |------------------|---------------|  
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN видеоматериалов: как создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Использование UML в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN практические руководства: средства UML и расширяемость (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN видеоролики: Создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Использование UML в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN практические руководства: Средства UML и расширяемость (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>См. также  
- [Использование моделей в гибкой разработке](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Моделирование требований пользователей](../modeling/model-user-requirements.md)   
  [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)   
  [Разработка тестов из модели](../modeling/develop-tests-from-a-model.md)   
  [Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)
-
-
-

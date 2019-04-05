@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Настройка поведения запроса о доверии ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Настройка поведения запроса о доверии ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f8fdb17bc724cc9cbf7385451a773a68ecf3df4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235668"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "59002179"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49235668"
   
  В следующей таблице показаны поведение по умолчанию для каждой зоны. Столбец приложений относится к приложений Windows Forms, приложения Windows Presentation Foundation, приложения браузера WPF и консольных приложений.  
   
-|Зоны|Приложения|решения Office|  
+|Зона|Приложения|решения Office|  
 |----------|------------------|----------------------|  
 |`MyComputer`|`Enabled`|`Enabled`|  
 |`LocalIntranet`|`Enabled`|`Enabled`|  
@@ -63,13 +58,13 @@ ms.locfileid: "49235668"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
-    2.  В **откройте** введите `regedit32`, а затем нажмите кнопку **ОК**.  
+    2.  В **откройте** введите `regedit` (или `regedit32` на 32-разрядной Windows), а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Если ключ не существует, создайте его.  
   
@@ -122,13 +117,13 @@ ms.locfileid: "49235668"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
-    2.  В **откройте** введите `regedit`, а затем нажмите кнопку **ОК**.  
+    2.  В **откройте** введите `regedit` (или `regedit32` на 32-разрядной Windows), а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Если ключ не существует, создайте его.  
   
@@ -179,13 +174,13 @@ ms.locfileid: "49235668"
   
 1.  Откройте редактор реестра:  
   
-    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
+    1.  Щелкните **Пуск**, а затем **Выполнить**.  
   
-    2.  В **откройте** введите `regedit`, а затем нажмите кнопку **ОК**.  
+    2.  В **откройте** введите `regedit` (или `regedit32` на 32-разрядной Windows), а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Если ключ не существует, создайте его.  
   
@@ -235,12 +230,9 @@ ms.locfileid: "49235668"
  [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
- [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое руководство. Включить параметры безопасности ClickOnce-приложений](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Инструкции: добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: отладка из проекта DLL | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Отладка из проекта DLL | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991614"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>How to: Debug from a DLL Project
+# <a name="how-to-debug-from-a-dll-project"></a>Практическое руководство. Отладка из проекта DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы начать отладку проекта DLL, необходимо указать вызывающее приложение в свойствах проекта. Страницы свойств C++ отличаются по структуре и содержимому от страниц свойств C# и Visual Basic.  
   
- Если управляемая библиотека DLL вызывается машинным кодом и вы хотите отладить и то, и другое, это можно указать в свойствах проекта. Дополнительные сведения см. в разделе [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
+ Если управляемая библиотека DLL вызывается машинным кодом и вы хотите отладить и то, и другое, это можно указать в свойствах проекта. Дополнительные сведения см. в разделе [Как Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 >  Вы не можете указать внешнее вызывающее приложение в выпусках Express для Visual Studio. Вместо этого необходимо добавить проект исполняемого файла в решение, задать его в качестве запускаемого проекта и вызвать методы в библиотеке DLL из проекта исполняемого файла.  
@@ -46,7 +41,7 @@ ms.locfileid: "51796263"
   
 1.  Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **свойства**. Перейдите к **Отладка** вкладки.  
   
-2.  Убедитесь, что **конфигурации** поля в верхней части окна задается **Отладка**.  
+2.  Убедитесь, что в поле **Настройка** в верхней части окна задано значение **Отладка**.  
   
 3.  Перейдите к **свойства конфигурации / Отладка**.  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51796263"
   
 5.  В **команда** или **удаленной команды** , добавьте полный путь приложения.  
   
-6.  Добавьте необходимые аргументы для **аргументы команды** поле.  
+6.  Добавьте необходимые аргументы программы в поле **Аргументы команды**.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Чтобы задать вызывающее приложение в проекте C# или Visual Basic  
   
@@ -79,6 +74,3 @@ ms.locfileid: "51796263"
  [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

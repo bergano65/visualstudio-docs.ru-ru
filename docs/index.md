@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 titleSuffix: ''
-description: 'Узнайте, как с помощью Visual Studio разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.'
+description: Узнайте, как с помощью Visual Studio разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515328"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

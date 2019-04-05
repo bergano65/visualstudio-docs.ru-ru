@@ -1,26 +1,21 @@
 ---
 title: Разработка. Файлы Vsct | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772174"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59002318"
 ---
 # <a name="authoring-vsct-files"></a>Разработка. Файлы Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ ms.locfileid: "51772174"
  Для новых проектов рекомендуется использовать шаблон пакета Visual Studio, так как он создает vsct-файл, в зависимости от сделанного выбора, уже имеет необходимые элементы для команды меню, окна инструментов или специализированный редактор. Можно изменить этот vsct-файл в соответствии с требованиями вашего VSPackage. Дополнительные сведения об изменении файла vsct, см. в примерах в [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Создание файла  
- Создание файла vsct на этих этапах: созданию структуры для файлов и ресурсов, объявлять элементы пользовательского интерфейса, поместите элементы пользовательского интерфейса в интегрированной среде разработки и добавить все специальные поведения.  
+ Создание файла vsct на этих этапах: Создать структуру файлов и ресурсов, объявлять элементы пользовательского интерфейса, поместите элементы пользовательского интерфейса в интегрированной среде разработки и добавить все специальные поведения.  
   
 ### <a name="file-structure"></a>Структура файла  
  Базовая структура vsct-файл — это [CommandTable](../../extensibility/commandtable-element.md) корневой элемент, содержащий [команды](../../extensibility/commands-element.md) элемент и [символы](../../extensibility/symbols-element.md) элемент.  
   
 ##### <a name="to-create-the-file-structure"></a>Для создания структуры файлов  
   
-1.  Добавьте vsct-файл в проект, выполнив действия, описанные в [как: создание. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Добавьте vsct-файл в проект, выполнив действия, описанные в [как: Создать. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2.  Добавьте необходимые пространства имен для `CommandTable` элемента, как показано в следующем примере.  
   
@@ -244,4 +239,3 @@ ms.locfileid: "51772174"
  [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio Command Table (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
-

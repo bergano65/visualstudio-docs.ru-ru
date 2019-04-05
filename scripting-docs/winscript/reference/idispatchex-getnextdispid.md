@@ -17,77 +17,80 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51a47a7d777d4abc54e8acc2ad0b1d4ef4b7a20b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159430"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897677"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
-Перечисляет элементы объекта.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
+
+Перечисляет элементы объекта.
+
+## <a name="syntax"></a>Синтаксис
+
 ```cpp
-HRESULT GetNextDispID(  
-   DWORD grfdex,  
-   DISPID id,  
-   DISPID *pid  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `grfdex`  
- Определяет, какой набор элементов для перечисления. Это может быть сочетанием следующих значений:  
-  
-|Значение|Значение|  
-|-----------|-------------|  
-|fdexEnumDefault|Запросы, что объект перечисляет элементы по умолчанию. Объект может перечислить любой набор элементов.|  
-|fdexEnumAll|Запросы, что объект перечисляет все элементы. Объект может перечислить любой набор элементов.|  
-  
- `id`  
- Определяет текущий элемент. Getnextdispid — извлекает элемент после этого перечисления. Использует getdispid — или предыдущего вызова getnextdispid — для получения идентификатора. Использует значение DISPID_STARTENUM, чтобы получить первый идентификатор первого элемента.  
-  
- `pid`  
- Адрес переменной DISPID, получающий идентификатор следующего элемента в перечислении.  
-  
- Если удаляется элемент `DeleteMemberByName` или `DeleteMemberByDispID`, `DISPID` должен быть допустимым для `GetNextDispID`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Возвращает одно из следующих значений:  
-  
-|||  
-|-|-|  
-|`S_OK`|Выполнено.|  
-|`S_FALSE`|Выполнено перечисление.|  
-  
-## <a name="example"></a>Пример  
-  
+HRESULT GetNextDispID(
+   DWORD grfdex,
+   DISPID id,
+   DISPID *pid
+);
+```
+
+## <a name="parameters"></a>Параметры
+
+`grfdex`\
+Определяет, какой набор элементов для перечисления. Это может быть сочетанием следующих значений:
+
+|Значение|Значение|
+|-----------|-------------|
+|fdexEnumDefault|Запросы, что объект перечисляет элементы по умолчанию. Объект может перечислить любой набор элементов.|
+|fdexEnumAll|Запросы, что объект перечисляет все элементы. Объект может перечислить любой набор элементов.|
+
+`id`\
+Определяет текущий элемент. Getnextdispid — извлекает элемент после этого перечисления. Использует getdispid — или предыдущего вызова getnextdispid — для получения идентификатора. Использует значение DISPID_STARTENUM, чтобы получить первый идентификатор первого элемента.
+
+`pid`\
+Адрес переменной DISPID, получающий идентификатор следующего элемента в перечислении.
+
+Если удаляется элемент `DeleteMemberByName` или `DeleteMemberByDispID`, `DISPID` должен быть допустимым для `GetNextDispID`.
+
+## <a name="return-value"></a>Возвращаемое значение
+
+Возвращает одно из следующих значений:
+
+|||
+|-|-|
+|`S_OK`|Выполнено.|
+|`S_FALSE`|Выполнено перечисление.|
+
+## <a name="example"></a>Пример
+
 ```cpp
-HRESULT hr;  
-   BSTR bstrName;  
-   DISPID dispid;  
-   IDispatchEx *pdex;  
-  
-   // Assign to pdex  
-   hr = pdex->GetNextDispID(fdexEnumAll, DISPID_STARTENUM, &dispid);  
-   while (hr == NOERROR)  
-   {  
-      hr = pdex->GetMemberName(dispid, &bstrName);  
-      if (!wcscmp(bstrName, OLESTR("Bar")))  
-      {  
-         SysFreeString(bstrName);  
-         return TRUE;  
-      }  
-      SysFreeString(bstrName);  
-      hr = pdex->GetNextDispID(fdexEnumAll, dispid, &dispid);  
-   }  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
- [IDispatchEx::GetNextDispID](#lrfidispatchexgetnextdispid)   
- [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)   
- [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)
+   HRESULT hr;
+   BSTR bstrName;
+   DISPID dispid;
+   IDispatchEx *pdex;
+
+   // Assign to pdex
+   hr = pdex->GetNextDispID(fdexEnumAll, DISPID_STARTENUM, &dispid);
+   while (hr == NOERROR)
+   {
+      hr = pdex->GetMemberName(dispid, &bstrName);
+      if (!wcscmp(bstrName, OLESTR("Bar")))
+      {
+         SysFreeString(bstrName);
+         return TRUE;
+      }
+      SysFreeString(bstrName);
+      hr = pdex->GetNextDispID(fdexEnumAll, dispid, &dispid);
+   }
+```
+
+## <a name="see-also"></a>См. также
+
+- [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)
+- [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)
+- [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)

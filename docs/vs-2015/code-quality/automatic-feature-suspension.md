@@ -1,12 +1,8 @@
 ---
 title: Автоматическая приостановка функции | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -16,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992713"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ ms.locfileid: "49178182"
  Советы и рекомендации по повышению производительности Visual Studio при работе с большими решениями или условия нехватки памяти, см. в разделе [особенности производительности для крупных решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Полный анализ решения приостановлено
- По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [как: Включение и отключение анализа всего решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [Как Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>Сборщик Мусора низкой задержкой отключена
  Чтобы снова включить режим сборки Мусора малым временем задержки, перезапустите Visual Studio.  По умолчанию Visual Studio включает режим сборки Мусора низкой задержкой при каждом вводе убедитесь, что текст не блокируют все операции сборки Мусора. Тем не менее если условие нехватки памяти приводит к Visual Studio, чтобы отображать предупреждение автоматической приостановки, режим сборки Мусора малым временем задержки отключен для данного сеанса. Перезапуск Visual Studio будет повторно включить сборщик Мусора по умолчанию. Дополнительные сведения см. в разделе <xref:System.Runtime.GCLatencyMode>.

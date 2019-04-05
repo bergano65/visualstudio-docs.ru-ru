@@ -1,27 +1,22 @@
 ---
 title: Устранение неполадок пакетов VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764011"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002614"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764011"
   
 3.  Проверьте значения реестра VSPackage.  
   
-     Дополнительные сведения см. в разделе [регистрации пакетов VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) и [пакеты VSPackage, управление](../extensibility/managing-vspackages.md).  
+     Дополнительные сведения см. в разделе [регистрации пакетов VSPackage](internals/registering-vspackages.md) и [пакеты VSPackage, управление](../extensibility/managing-vspackages.md).  
   
 4.  Откройте **вывода** окно экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , не смог загрузить VSPackage. В этом окне могут отображаться сведения о причину сбоя загрузки VSPackage.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51764011"
   
 5.  В журнале действий.  
   
-     Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+     Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  Дополнительные сведения об исключениях, создаваемых интегрированной среды разработки **исключения** на **Отладка** меню, чтобы включить исключения. В **исключения** диалоговом выберите типы исключений, о которых нужно получить дополнительные сведения.  
   
@@ -73,7 +68,7 @@ ms.locfileid: "51764011"
   
     1.  Найти идентификатор CLSID объекта VSPackage в пакеты разделе реестра:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  Проверьте правильность пути, задаваемый подраздел SatelliteDll.  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51764011"
   
 2.  Использование журнала действий.  
   
-     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Используйте открытые символы.  
   
@@ -126,10 +121,9 @@ ms.locfileid: "51764011"
   
 2. Для неуправляемого кода, найдите идентификатор CLSID объекта VSPackage в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] системного реестра CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Убедитесь, что операция InprocServer32 имеет правильный путь к библиотеке dll VSPackage.  
   
 ## <a name="see-also"></a>См. также  
  [Пакеты VSPackage](../extensibility/internals/vspackages.md)
-

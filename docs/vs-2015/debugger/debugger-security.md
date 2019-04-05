@@ -1,14 +1,9 @@
 ---
 title: Безопасность отладчика | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f8166c7aea86b0decad84631f8c98054ee69253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992867"
 ---
 # <a name="debugger-security"></a>Безопасность отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51765355"
 ### <a name="managed-debugging-security"></a>Безопасность при отладке управляемого кода  
  Вот некоторые общие рекомендации, применимые к отладке любого управляемого кода.  
   
-- Будьте бдительны, присоединяясь к пользовательскому процессу, не заслуживающему доверия: присоединение означает, что вы ему доверяете. При попытке присоединения к такому процессу появится диалоговое окно предупреждения безопасности с запросом о том, действительно ли вы хотите его присоединить. К числу "доверенных пользователей" относится ваша учетная запись, а также ряд стандартных учетных записей пользователей, которые обычно определены на компьютерах с установленной платформой .NET Framework, например **aspnet**, **localsystem**, **networkservice**и **localservice**. Дополнительные сведения см. в разделе [предупреждение системы безопасности: присоединение к процессу, принадлежит недоверенному пользователю не может быть опасно. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Будьте бдительны, присоединяясь к пользовательскому процессу, не заслуживающему доверия: присоединение означает, что вы ему доверяете. При попытке присоединения к такому процессу появится диалоговое окно предупреждения безопасности с запросом о том, действительно ли вы хотите его присоединить. К числу "доверенных пользователей" относится ваша учетная запись, а также ряд стандартных учетных записей пользователей, которые обычно определены на компьютерах с установленной платформой .NET Framework, например **aspnet**, **localsystem**, **networkservice**и **localservice**. Дополнительные сведения см. в разделе [предупреждение системы безопасности: Подключение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если вы не уверены, ниже сведения, не присоединяться к процессу](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
   
 - Будьте внимательны при загрузке проектов из Интернета и их открытии в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это рискованно даже без всякой отладки. Этим вы предполагаете, что проект и содержащийся в нем код заслуживают доверия.  
   
@@ -65,7 +60,7 @@ ms.locfileid: "51765355"
  Дополнительные сведения см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Безопасность при отладке веб-служб  
- Локальная отладка безопаснее, но поскольку на веб-сервере скорее всего нет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], локальная отладка может быть нецелесообразной. Как правило, отладка веб-служб, за исключением отладки во время разработки, выполняется удаленно, поэтому рекомендации по безопасности удаленной отладки также применимы к отладке веб-служб. Ниже приведены дополнительные практические рекомендации. Для получения дополнительной информации см. [Debugging XML Web Services](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Локальная отладка безопаснее, но поскольку на веб-сервере скорее всего нет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , локальная отладка может быть нецелесообразной. Как правило, отладка веб-служб, за исключением отладки во время разработки, выполняется удаленно, поэтому рекомендации по безопасности удаленной отладки также применимы к отладке веб-служб. Ниже приведены дополнительные практические рекомендации. Для получения дополнительной информации см. [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   Не запускайте отладку на веб-сервере, который подвергался угрозе.  
   
@@ -77,21 +72,16 @@ ms.locfileid: "51765355"
  Следите за статусом доверия для внешних компонентов, с которыми взаимодействует ваша программа, особенно если автором кода являетесь не вы. Кроме того, принимайте во внимание компоненты, которые могут использоваться [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или отладчиком.  
   
 ### <a name="symbols-and-source-code"></a>Символы и исходный код  
- Два средства [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], для которых необходим анализ безопасности:  
+ Два средства [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , для которых необходим анализ безопасности:  
   
-- Сервер исходного кода, который предоставляет версии исходного кода из репозитория исходного кода. Он полезен, если у вас нет текущей версии исходного кода программы. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Сервер исходного кода, который предоставляет версии исходного кода из репозитория исходного кода. Он полезен, если у вас нет текущей версии исходного кода программы. [Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - Сервер символов, который служит для передачи символов, необходимых при отладке после сбоя системного вызова.  
   
-  См. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  См. статью [Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>См. также  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
- [Предупреждение безопасности. Присоединение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
-
-
-
-
-
+ [Предупреждение системы безопасности. Подключение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
+ [Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

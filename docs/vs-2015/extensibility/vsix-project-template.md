@@ -1,32 +1,27 @@
 ---
 title: Шаблон проекта VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002814"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно использовать шаблон проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайта.  
+Можно использовать шаблон проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайта.  
   
  Развертывание VSIX поддерживает пакеты VSPackage, сборок, MEF компоненты, шаблоны проектов, шаблоны элементов, элементов управления и настраиваемые типы расширений.  
   
@@ -90,4 +85,3 @@ ms.locfileid: "51733864"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме 2.0 расширения VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
-

@@ -1,29 +1,24 @@
 ---
-title: 'Как: открытие стандартных редакторов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Открытие стандартных редакторов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f75a64929074be45645de529ccb05f52f9d04ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991472"
 ---
-# <a name="how-to-open-standard-editors"></a>Как: открытие стандартных редакторов
+# <a name="how-to-open-standard-editors"></a>Практическое руководство. Открытие стандартных редакторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При открытии стандартного редактора, позволить определить стандартный редактор для назначенного типа файлов, вместо указания проектного редактора для файла интегрированной среды разработки.  
@@ -59,7 +54,6 @@ ms.locfileid: "51742503"
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Как: открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
- [Как: открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Практическое руководство. Открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
+ [Практическое руководство. Открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Отображение файлов с помощью команды "Открыть файл"](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-

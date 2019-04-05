@@ -1,14 +1,9 @@
 ---
-title: 'Пошаговое руководство: Создание базового приложения Isolated Shell | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание базового приложения Isolated Shell | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990649"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Пошаговое руководство: Создание базового приложения изолированной оболочки
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Пошаговое руководство. Создание базового приложения изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве показано, как создать решение изолированной оболочки, Настройка окна инструментов Справка — о программе и создать программу установки, который устанавливает изолированной оболочки.  
@@ -55,7 +50,7 @@ ms.locfileid: "51777322"
   
 4.  Выполните сборку решения и начните отладку приложения изолированной оболочки.  
   
-     Изолированная оболочка Visual Studio отображается. Считывает заголовок **MyVSShellStub**. Значок для строки заголовка, созданный \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
+     Изолированная оболочка Visual Studio отображается. Считывает заголовок **MyVSShellStub**. The title bar icon is generated from \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
   
 ## <a name="customizing-the-application-name-and-icon"></a>Настройка приложения имя и значок  
  Может потребоваться добавление фирменной символики приложения, используя имя вашей компании и логотипа в заголовке окна. Ниже показано, как изменить имя и значок, которые отображаются в строке заголовка пользовательского приложения, изменив файл определения пакета, MyVSShellStub.Application.pkgdef.  
@@ -120,7 +115,7 @@ ms.locfileid: "51777322"
   
 2.  Раскомментируйте следующую строку:  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  Перестройте решение и запустите отладку изолированной оболочки. Откройте XML-файл, например, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Убедитесь, что ключевые слова XML в файле не выделяются цветом и что нажатие «<» в строке не активизирует подсказки XML.  
   
@@ -265,4 +260,3 @@ ms.locfileid: "51777322"
   
 ## <a name="testing-the-installation-program"></a>Тестирование программы установки  
  Для проверки установки, скопируйте файл setup.exe на другой компьютер и запустите исполняемый файл программы установки. Вы сможете запустить приложение изолированной оболочки.
-

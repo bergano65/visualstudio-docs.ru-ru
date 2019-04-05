@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: изменить вариант пошаговой отладки (для прежних версий) | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изменить вариант пошаговой отладки (для прежних версий) | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - branch stepping
@@ -17,15 +14,15 @@ ms.assetid: aedc06af-d58a-44d6-aee4-f397f1f923a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b89ad55fec7b15884acefd5607cfd863a45564b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992988"
 ---
-# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Как изменить вариант пошаговой отладки (для прежних версий)
+# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Практическое руководство. Изменение варианта пошаговой отладки (для прежних версий)
 В этом разделе описывается изменение варианта пошаговой отладки для приложений [!INCLUDE[wf](../includes/wf-md.md)] прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)] с параллельными действиями. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  При отладке действия прежних версий, которые выполняются одновременно, таких как **ParallelActivity** или **ConditionedActivityGroup**, можно использовать один из двух вариантов для пошаговой проверки кода.  

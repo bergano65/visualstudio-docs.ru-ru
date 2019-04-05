@@ -3,12 +3,18 @@ title: Справочное руководство по IntelliTest | Инстр
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-  - 'IntelliTest Reference Manual, IntelliTest'
+- IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-  - multiple
+- multiple
 author: gewarren
+ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324803"
 ---
 # <a name="intellitest-reference-manual"></a>Справочное руководство по IntelliTest
 
