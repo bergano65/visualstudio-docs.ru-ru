@@ -1,14 +1,9 @@
 ---
-title: 'CA2136: Элементы не должны иметь конфликтующие пометки прозрачности | Документация Майкрософт'
-ms.custom: ''
+title: CA2136. Элементы не должны иметь конфликтующие пометки прозрачности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2127
 - SecurityTransparentAssembliesShouldNotContainSecurityCriticalCode
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f524197fe647e148283e351924701ce7b11c4722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b18ee5c048b0214779cdbe2635f5b7a14db8c28e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979894"
 ---
-# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: элементы не должны иметь конфликтующие пометки прозрачности
+# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136. Члены не должны иметь противоречащие заметки прозрачности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,6 +49,3 @@ ms.locfileid: "49894889"
  В следующем примере метод, помеченный атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> атрибут и он является членом класса, который помечен атрибутом <xref:System.Security.SecurityCriticalAttribute> атрибута. Безопасный атрибут должны быть удалены.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]
-
-
-

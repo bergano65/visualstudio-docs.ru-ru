@@ -1,14 +1,9 @@
 ---
-title: 'CA1821: Удаляйте пустые методы завершения | Документация Майкрософт'
-ms.custom: ''
+title: CA1821. Удалите пустые завершающие методы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
@@ -19,14 +14,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0ea2ca64009071538848c71f5bf9a825250cb82e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a6175871e74bf3cb99610dce0926f0982f331d4
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58980031"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: удаляйте пустые методы завершения
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821. Удалите пустые методы завершения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,6 +47,3 @@ ms.locfileid: "49900089"
  В следующем примере показано пустой метод завершения, который должен быть удален, метод завершения, который должен быть заключен в `#if DEBUG / #endif` директивы и метод завершения, который использует `#if DEBUG / #endif` директивы правильно.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Ошибка: Не отвечает служба IIS Admin сбоя проверки безопасности | Документация Майкрософт'
-ms.custom: ''
+title: 'Ошибка: Не удалось выполнить проверку безопасности, поскольку служба IIS Admin не отвечает | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -22,22 +17,22 @@ ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979965"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Ошибка: не удается выполнить проверку безопасности — служба IIS Admin не отвечает
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Ошибка: проверка безопасности не прошла, так как не был получен ответ от службы администрирования IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Эта ошибка возникает, если не отвечает служба IIS Admin. Обычно это означает, что при установке IIS произошла ошибка. Во-первых, убедитесь, что служба выполняется с помощью **служб** средство из **Администрирование**.  
+Эта ошибка возникает, если не отвечает служба IIS Admin. Обычно это означает, что при установке IIS произошла ошибка. Сначала проверьте, что служба выполняется с помощью инструмента **Службы** в окне **Администрирование**.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Переустановите IIS с помощью **Установка и удаление программ** панели управления.  
+-   Переустановите IIS с помощью элемента панели управления **Установка и удаление программ**.  
   
 -   - или -  
   
@@ -57,6 +52,3 @@ ms.locfileid: "51769023"
   
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-
