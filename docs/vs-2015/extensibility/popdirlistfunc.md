@@ -1,14 +1,9 @@
 ---
 title: POPDIRLISTFUNC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7b1361350b5a0c349ec8bd95a877c4fbaf75eafc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979090"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|  
@@ -67,4 +62,3 @@ typedef BOOL (*POPDIRLISTFUNC)(
  [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [Коды ошибок](../extensibility/error-codes.md)
-

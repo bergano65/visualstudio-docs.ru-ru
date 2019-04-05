@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Используйте предпочтительные термины | Документация Майкрософт'
-ms.custom: ''
+title: CA1726. Используйте предпочитаемые термины | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220523"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003078"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: используйте предпочтительные термины
+# <a name="ca1726-use-preferred-terms"></a>CA1726. Используйте предпочтительные термины
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [CA1726: используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1726: Используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) на сайте docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -58,7 +53,7 @@ ms.locfileid: "49220523"
 |не|HadNot|  
 |Не|HasNot|  
 |еще не|HaveNot|  
-|Индексы|Indexes|  
+|Индексы|Индексы|  
 |не|IsNot|  
 |Имя входа|Вход в систему|  
 |Выход из системы|Выход из системы|  
@@ -79,4 +74,3 @@ ms.locfileid: "49220523"
   
 ## <a name="related-rules"></a>Связанные правила  
  [Предупреждения именования](../code-quality/naming-warnings.md)
-

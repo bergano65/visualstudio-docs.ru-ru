@@ -1,12 +1,9 @@
 ---
-title: 'UML-схемы последовательностей: Ссылаться | Документация Майкрософт'
-ms.custom: ''
+title: 'UML-схемы последовательностей: Справочник по | Документация Майкрософт'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979022"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>UML-схемы последовательностей: справочные материалы
+# <a name="uml-sequence-diagrams-reference"></a>UML-схемы последовательностей: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio *схема последовательностей* показывает взаимодействие, которое представляет последовательность сообщений между экземплярами классов, компонентов, подсистем или субъектов. Время увеличивается вниз по диаграмме, на которой показывается переход управления от одного участника к другому. Схемы последовательностей служат для визуализации экземпляров и событий, а не классов и методов. На схеме может быть несколько экземпляров одного типа. Также может быть несколько вхождений одного сообщения.  
@@ -61,15 +58,12 @@ ms.locfileid: "51797030"
 |14|**Условие фрагмента**|Может использоваться для установки условия, зависящего от того, будет ли найден фрагмент.<br /><br /> Чтобы задать условие, выберите фрагмент, выберите условие и введите значение.|  
 |**X**|**Событие уничтожения**|Представляет точку, в которой объект удален или более не доступен. Отображается в нижней части каждой линии жизни.|  
 ||**Взаимодействие**|Коллекция сообщений и линий жизни, которая отображается на схеме последовательностей. Чтобы просмотреть свойства взаимодействия, необходимо выбрать его в **Обозреватель моделей UML**.|  
-||**Схема последовательностей**|На этой схеме показано взаимодействие. Чтобы просмотреть его свойства, щелкните в пустой области схемы. **Примечание:** имена схемы последовательностей, взаимодействие, отображает и файла, содержащего эту схему могут различаться.|  
+||**Схема последовательностей**|На этой схеме показано взаимодействие. Чтобы просмотреть его свойства, щелкните в пустой области схемы. **Примечание.**  Имена схемы последовательностей, отображаемого взаимодействия и файла, который содержит схему, могут различаться.|  
   
 ## <a name="see-also"></a>См. также  
- [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Схемы последовательностей UML: Рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Схемы вариантов использования UML: Справочник по](../modeling/uml-use-case-diagrams-reference.md)   
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
  [Схемы компонентов UML: Справочник по](../modeling/uml-component-diagrams-reference.md)   
- [Схемы компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Схемы компонентов UML: справочник](../modeling/uml-component-diagrams-reference.md)

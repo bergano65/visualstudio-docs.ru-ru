@@ -1,14 +1,9 @@
 ---
 title: Функция SccSetOption | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b4a6c746ca1c824738c0c8cf7df23e78b0d94d7d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980489"
 ---
 # <a name="sccsetoption-function"></a>Функция SccSetOption
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Параметр был успешно установлен.|  
 |SCC_I_SHARESUBPROJOK|Возвращается, если `nOption` был `SCC_OPT_SHARESUBPROJ` и подключаемый модуль системы управления версиями позволяет интегрированной среды разработки указать папку назначения.|  
@@ -63,7 +58,7 @@ SCCRTN SccSetOption(
   
  Сводка параметров и их значения.  
   
-|`nOption`|`dwValue`|Описание:|  
+|`nOption`|`dwValue`|Описание|  
 |---------------|---------------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Включает или отключает фоновую очереди событий.|  
 |`SCC_OPT_USERDATA`|Произвольное значение|Указывает значение пользователя должны быть переданы [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) функцию обратного вызова.|  
@@ -94,4 +89,3 @@ SCCRTN SccSetOption(
  [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)
-

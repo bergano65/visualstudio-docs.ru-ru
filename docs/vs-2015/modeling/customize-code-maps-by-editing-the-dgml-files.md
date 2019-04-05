@@ -1,12 +1,9 @@
 ---
 title: Настройка карт кода путем редактирования DGML-файлов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817463"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59003027"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +50,7 @@ ms.locfileid: "51817463"
   
     Чтобы добавить новую группу, найдите раздел `<Nodes>`. Добавьте новый элемент `<Node/>`.  
   
-3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Например:  
+3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Пример:  
   
    ```xml  
    <Nodes>  
@@ -207,7 +204,7 @@ ms.locfileid: "51817463"
     Shape="ShapeFilePathLocation"  
     ```  
   
-     Например:  
+     Пример:  
   
     ```xml  
     <Nodes>  
@@ -242,7 +239,7 @@ ms.locfileid: "51817463"
     StrokeDashArray="StrokeArrayValues"  
     ```  
   
-     Например:  
+     Пример:  
   
     ```xml  
     <Links>  
@@ -292,35 +289,35 @@ ms.locfileid: "51817463"
   
     Это выражение использует следующий синтаксис "Формы Бэкуса-Наура" (BNF):  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>  
   
-    <Operator> :: = «<» &#124; "\<=» &#124; «=» &#124; «> =» &#124; «>» &#124; «! =» &#124; «или» &#124; «и» &#124; «+» &#124; «*» &#124; «/» &#124; «-»  
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding >  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"  
   
-    <PropertyGet> ::= Identifier  
+    \<PropertyGet> ::= Identifier  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>  
   
-    <Identifier> ::= [^. ]*  
+    \<Identifier> ::= [^. ]*  
   
-    <Literal> :: = одинарные или двойные кавычки строковый литерал  
+    \<Литерал >:: = одинарные или двойные кавычки строковый литерал  
   
-    <Number> :: = строка цифр с дополнительной десятичной запятой  
+    \<Номер >:: = строка цифр с дополнительной десятичной запятой  
   
     Можно указать несколько `<Condition/>` элементы, которые должны быть значение true, чтобы применить стиль.  
   
 3. В следующей строке после элемента `<Condition/>` добавьте один или несколько элементов `<Setter/>`, чтобы указать атрибут `Property` и фиксированный атрибут `Value` или вычисляемый атрибут `Expression`, чтобы применить к карте, кодовым точкам или связям, удовлетворяющим условию.  
   
-    Например:  
+    Пример:  
   
    ```xml  
    <Setter Property="BackGround" Value="Green"/>  
@@ -379,9 +376,9 @@ ms.locfileid: "51817463"
   
  В этом примере:  
   
-1.  Если `Coverage` имеет значение >80, установите для свойства `Background` зеленый цвет.  
+1.  Если `Coverage` > 80, установите `Background` свойство зеленый цвет.  
   
-2.  Если `Coverage` имеет значение >50, установите для свойства `Background` оранжевый оттенок на основании значения свойства `Coverage`.  
+2.  Иначе если `Coverage` > 50, установите `Background` свойства оранжевый оттенок на основании значения `Coverage` свойство.  
   
 3.  В противном случае установите для свойства `Background` оттенок красного на основании значения свойства `Coverage`.  
   
@@ -448,7 +445,7 @@ ms.locfileid: "51817463"
   
 1.  Откройте DGML-файл в текстовом редакторе или редакторе XML.  
   
-2.  Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Например:  
+2.  Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Пример:  
   
     ```xml  
     <Nodes>  
@@ -470,7 +467,7 @@ ms.locfileid: "51817463"
   
 2.  Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.  
   
-3.  В элементе `<Node/>` укажите имя свойства и его значение. Например:  
+3.  В элементе `<Node/>` укажите имя свойства и его значение. Пример:  
   
     ```xml  
     <Links>  
@@ -495,7 +492,7 @@ ms.locfileid: "51817463"
   
 -   Найдите элемент `<Node/>` для нужной кодовой точки.  
   
--   В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:  
+-   В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:  
   
     ```xml  
     <Nodes>  
@@ -517,7 +514,7 @@ ms.locfileid: "51817463"
   
 2.  Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.  
   
-3.  В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:  
+3.  В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:  
   
     ```xml  
     <Links>  
@@ -539,7 +536,7 @@ ms.locfileid: "51817463"
   
 2.  Добавьте элемент `<Category/>` для родительской категории, затем добавьте атрибут `BasedOn` к элементу дочерней категории `<Category/>`.  
   
-     Например:  
+     Пример:  
   
     ```xml  
     <Nodes>  
@@ -588,7 +585,7 @@ ms.locfileid: "51817463"
      > [!NOTE]
      >  У элемента может быть только один атрибут `Reference`.  
   
-     Например:  
+     Пример:  
   
    ```xml  
    <Nodes>  

@@ -1,14 +1,9 @@
 ---
 title: Изолированная оболочка Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991884"
 ---
 # <a name="visual-studio-isolated-shell"></a>Изолированная оболочка Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51740656"
 >  Чтобы можно было открыть распространяемого пакета изолированной оболочки, вам будет предложено заполнить краткую анкету клиента.  После заполнения анкеты вы будете перенаправлены на страницу со ссылками на распространяемые пакеты Visual Studio Connect.  Вы найдете ссылки для загрузки при последующих посещениях сайта Visual Studio Connect согласно **программы &#124; 2015 ИНТЕГРИРОВАННАЯ ОБОЛОЧКА VISUAL STUDIO и ИЗОЛИРОВАННОЙ** вкладки.  
   
 > [!NOTE]
->  Дополнительные сведения о том, как развернуть изолированное приложение командной строки см. в разделе [Пошаговое руководство: создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Дополнительные сведения о том, как развернуть изолированное приложение командной строки см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Работа с изолированной оболочки  
  Приложение Visual Studio, в изолированной оболочки имеет полный доступ к службам Visual Studio и поддерживает специальные настройки и фирменной символики. Существует несколько способов, вы можете настроить приложения isolated shell:  
@@ -70,4 +65,3 @@ ms.locfileid: "51740656"
   
 ## <a name="see-also"></a>См. также  
  [Оболочка (изолированная или интегрированная)](../extensibility/shell-isolated-or-integrated.md)
-

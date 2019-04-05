@@ -1,25 +1,22 @@
 ---
 title: Реагирование на изменения и их распространение | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
 ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b1b98875bbc7ea4fc33c342ab625be385593aab8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980148"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Реагирование на изменения и их распространение
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +49,10 @@ ms.locfileid: "49280388"
   
 -   **Подписка на события** перед подпиской на событие, создайте обработчик события и делегата. Затем с помощью <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>свойство подписаться на событие. Дополнительные сведения см. в разделе [обработчики распространения изменений за пределами модели событий](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **Отмена изменений** отмены транзакции, событий, однако не применяются. Если правило изменяет значение и отменить это изменение, то значение сбрасывается к исходному значению во время выполнения действия отмены. При возникновении события, необходимо вручную изменить значение обратно в исходное значение. Дополнительные сведения о transactons и отмены, см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
+-   **Отмена изменений** отмены транзакции, событий, однако не применяются. Если правило изменяет значение и отменить это изменение, то значение сбрасывается к исходному значению во время выполнения действия отмены. При возникновении события, необходимо вручную изменить значение обратно в исходное значение. Дополнительные сведения о transactons и отмены, см. в разделе [как: Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 -   **Передача аргументов событий для правила и события** обоих событий и передаются правила `EventArgs` параметр, который содержит сведения о том, как модель изменена.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
+ [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: предоставлять список символов, предоставляемые библиотекой в диспетчер объектов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32adc26be31ebb090916f5f0f4b038bd20ab2ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994207"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое: предоставлять список символов, предоставляемые библиотекой в диспетчер объектов
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое руководство. Предоставление списка символов, переданных из библиотеки в диспетчер объектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Средства просмотра символов, **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, передавать запросы для новых данных [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] диспетчера объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки отвечает, предоставляя запрошенные данные для [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Диспетчера объектов вызывает методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения или обновите представления из средств просмотра символов.  
@@ -475,7 +470,6 @@ ms.locfileid: "51722167"
   
 ## <a name="see-also"></a>См. также  
  [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое: зарегистрировать библиотеку с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Практическое: определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Практическое руководство. Зарегистрировать библиотеку с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Практическое руководство. Определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Расширяемость языковой службы прежних версий](../../extensibility/internals/legacy-language-service-extensibility.md)
-

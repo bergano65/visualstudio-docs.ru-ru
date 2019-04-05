@@ -1,27 +1,22 @@
 ---
 title: Справочник по пакету SDK для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727141"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002662"
 ---
 # <a name="visual-studio-sdk-reference"></a>Справочник по пакету SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "51727141"
   
 ## <a name="in-this-section"></a>В этом разделе
 
- [Настройка установки](http://msdn.microsoft.com/en-us/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Настройка установки](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  API конфигурации установки для обнаружения экземпляров Visual Studio 2017.
 
- [Открыть папку расширяемости](http://msdn.microsoft.com/en-us/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [Открыть папку расширяемости](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Рабочая область API для открытой папки в Visual Studio 2017.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
@@ -314,4 +309,3 @@ ms.locfileid: "51727141"
 ## <a name="related-sections"></a>Связанные разделы  
  [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
  Включает в себя документацию, примеры и код, чтобы помочь вам в разработке продуктов, которые интегрируются с Visual Studio.
-

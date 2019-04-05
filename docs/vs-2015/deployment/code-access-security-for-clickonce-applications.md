@@ -1,14 +1,9 @@
 ---
 title: Управление доступом для кода для приложений ClickOnce | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
 - vb.XBAProjectPropertiesSecurity.HowTo
@@ -28,13 +23,13 @@ ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990270"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Управление доступом для кода для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +53,13 @@ ms.locfileid: "49816070"
 ## <a name="configuring-security-permissions"></a>Настройка разрешений безопасности  
  Всегда следует настраивать приложение ClickOnce на запрос подходящей зоны, чтобы ограничить разрешения управления доступом для кода. Разрешения безопасности можно настроить на странице **Безопасность** **конструктора проектов**.  
   
- Страница **Безопасность** в **конструкторе проектов** содержит флажок **Включить параметры безопасности ClickOnce-приложений** . Если этот флажок установлен, в манифест развертывания для вашего приложения добавляются запросы разрешений безопасности. Во время установки пользователю будет предложено предоставить разрешения, если запрошенные разрешения превышают разрешения по умолчанию для той зоны, из которой выполняется развертывание приложения. Для получения дополнительной информации см. [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md).  
+ Страница **Безопасность** в **конструкторе проектов** содержит флажок **Включить параметры безопасности ClickOnce-приложений** . Если этот флажок установлен, в манифест развертывания для вашего приложения добавляются запросы разрешений безопасности. Во время установки пользователю будет предложено предоставить разрешения, если запрошенные разрешения превышают разрешения по умолчанию для той зоны, из которой выполняется развертывание приложения. Дополнительные сведения см. в разделе [Как Включить параметры безопасности ClickOnce-приложений](../deployment/how-to-enable-clickonce-security-settings.md).  
   
  Приложениям, развернутым из разных расположений, без запроса предоставляются различные уровни разрешений. Например, если приложение развертывается из Интернета, оно получает очень ограниченный набор разрешений. При установке из локальной интрасети оно получает больше разрешений, а при установке с компакт-диска оно получает разрешения полного доверия.  
   
- В качестве отправной точки для настройки разрешений можно выбрать зону безопасности в списке **Зоны** на странице **Безопасность** . Если приложение может развертываться из нескольких зон, выберите зону с наименьшими разрешениями. Для получения дополнительной информации см. [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ В качестве отправной точки для настройки разрешений можно выбрать зону безопасности в списке **Зоны** на странице **Безопасность** . Если приложение может развертываться из нескольких зон, выберите зону с наименьшими разрешениями. Дополнительные сведения см. в разделе [Как Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Свойства, которые можно установить, зависят от набора разрешений; не все наборы разрешений имеют настраиваемые свойства. Дополнительные сведения о полном списке разрешений, которые может запрашивать ваше приложение, см. в разделе <xref:System.Security.Permissions>. Дополнительные сведения о том, как задать разрешения для настраиваемой зоны, см. в разделе [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Свойства, которые можно установить, зависят от набора разрешений; не все наборы разрешений имеют настраиваемые свойства. Дополнительные сведения о полном списке разрешений, которые может запрашивать ваше приложение, см. в разделе <xref:System.Security.Permissions>. Дополнительные сведения о методах настройки разрешений для пользовательской зоны см. в разделе [как: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>Отладка приложения, обладающего ограниченными разрешениями  
  Как разработчик, вы, скорее всего, используете компьютер разработчика с разрешениями полного доверия. Таким образом, при отладке приложения вы не видите те исключения безопасности, которые могут видеть пользователи при запуске этого приложения с ограниченными разрешениями.  
@@ -75,7 +70,7 @@ ms.locfileid: "49816070"
   
  Кроме того, при написании кода компонент IntelliSense в редакторе кода отключает все члены, не включенные в настроенные разрешения безопасности.  
   
- Для получения дополнительной информации см. [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Дополнительные сведения см. в разделе [Как отладить приложение ClickOnce с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Разрешения безопасности для приложений веб-браузера  
  Visual Studio предоставляет следующие типы проектов для приложений Windows Presentation Foundation (WPF).  
@@ -100,12 +95,9 @@ ms.locfileid: "49816070"
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое руководство. Включить параметры безопасности ClickOnce-приложений](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
  [Страница "Безопасность" в конструкторе проектов](../ide/reference/security-page-project-designer.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA2131: Типы критической безопасности могут не участвовать в эквивалентности типов | Документация Майкрософт'
-ms.custom: ''
+title: CA2131. Типы критической безопасности могут не участвовать в эквивалентности типов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
@@ -16,14 +11,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03299f9d1616986b2a9862b5a23c077e46d5282d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 447e642303196a06c0a3abf3aa78650069f43566
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991070"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: типы критической безопасности могут не участвовать в эквивалентности типа
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131. Критические для безопасности типы не могут участвовать в эквивалентности типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,6 +47,3 @@ ms.locfileid: "49913362"
 
 ## <a name="see-also"></a>См. также
  [Прозрачный с точки зрения безопасности код, уровень 2](http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
-
-
-

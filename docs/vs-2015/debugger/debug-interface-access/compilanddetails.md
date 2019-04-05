@@ -1,14 +1,9 @@
 ---
 title: CompilandDetails | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e94993440a8fba4b215cb7a7b32f55f98475fb51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c91fbd8a4fc3775272e578df43025bd7052c72ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991630"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51769051"
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.  
   
-|Свойство.|Тип данных|Описание:|  
+|Свойство.|Тип данных|Описание|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Номер сборки серверной части компилятора.|  
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Серверной части основной номер версии компилятора.|  
@@ -62,8 +57,5 @@ ms.locfileid: "51769051"
  Компиляторы часто возвращаются в виде, называемая компилятором двухэтапный; в некоторых версиях компилятора для каждого обрабатывается отдельной программы. Они известны как компиляторы интерфейсной и серверной части, соответственно, поэтому свойства символа для внутреннего и внешнего интерфейса номера версии.  
   
 ## <a name="see-also"></a>См. также  
- [Компилируемого объекта](../../debugger/debug-interface-access/compiland.md)   
+ [Compiland](../../debugger/debug-interface-access/compiland.md)   
  [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

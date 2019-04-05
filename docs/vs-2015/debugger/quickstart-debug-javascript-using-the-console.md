@@ -1,14 +1,9 @@
 ---
-title: 'Краткое руководство: Отладка JavaScript с помощью консоли | Документация Майкрософт'
-ms.custom: ''
+title: Краткое руководство. Отладка JavaScript с помощью консоли | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993918"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Краткое руководство. Отладка JavaScript с помощью консоли
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "51802607"
 > [!TIP]
 >  Если окно консоли JavaScript закрыто, выберите **Отладка**>**Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.  
   
- С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других возможностях отладки JavaScript, например с использованием проводника DOM и задание точек останова, см. в разделе [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других возможностях отладки JavaScript, например с использованием проводника DOM и задание точек останова, см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Отладка с использованием окна консоли JavaScript  
  Далее приведена процедура создания приложения `FlipView` и инструкции по интерактивной отладке ошибки кодирования JavaScript.  
@@ -166,9 +161,9 @@ ms.locfileid: "51802607"
   
      Приложение выполняется, но изображения отсутствуют. Ошибки APPHOST в окне консоли JavaScript указывают на отсутствие изображений.  
   
-9. Приложение `FlipView` должно выполняться в симуляторе или эмуляторе телефона; введите `Data.items` в строке ввода окна консоли (рядом с символом ">>") и нажмите клавишу ВВОД.  
+9. С помощью `FlipView` приложение, работающее в симуляторе или эмуляторе телефона введите `Data.items` в строке ввода окна консоли (рядом с полем «>>» символ) и нажмите клавишу ВВОД.  
   
-     В окне консоли отображается визуализатор для объекта `items`. Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.  
+     В окне консоли отображается визуализатор для объекта `items` . Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.  
   
      ![Окно консоли JavaScript](../debugger/media/js-console-window.png "JS_Console_Window")  
   
@@ -212,7 +207,7 @@ ms.locfileid: "51802607"
   
 18. Остановите отладку, выбрав **Отладка** > **Остановить отладку** или нажав клавиши SHIFT+F5, а затем исправьте исходный код.  
   
-     Полный файл default.html страницы исправленным примером кода, см. в разделе [отладка HTML, CSS и JavaScript пример кода](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Полную страницу default.html с исправленным примером кода см. в разделе [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Интерактивная отладка и режим приостановки выполнения  
  Можно использовать точки останова и пошаговое выполнение кода при использовании таких средств отладки JavaScript, как окно консоли JavaScript. Если программа, которая выполняется в отладчике, оказывается в точке останова, отладчик временно приостанавливает выполнение программы. Если выполнение приостановлено, программа переключается из режима выполнения в режим приостановки выполнения. Выполнение можно возобновить в любой момент.  
@@ -286,9 +281,6 @@ ms.locfileid: "51802607"
  [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)   
  [Поддержка и специальные возможности продукта](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-
