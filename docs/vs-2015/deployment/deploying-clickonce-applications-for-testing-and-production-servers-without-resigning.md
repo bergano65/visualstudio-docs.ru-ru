@@ -1,14 +1,9 @@
 ---
 title: Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +19,13 @@ ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979771"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +62,8 @@ ms.locfileid: "49840042"
   Во втором примере, публикации приложения ClickOnce, указывающее `deploymentProvider`, а затем решили удалить ее. Один раз в новую версию без `deploymentProvider` загрузки на клиентах, не можно перенаправлять путь, используемый для обновления, пока не будет выпущена версия вашего приложения, которое имеет `deploymentProvider` восстановлена. Как и в первом примере `deploymentProvider` изначально должен указывать на местоположение текущего обновления, а не на новое местоположение. В данном случае, если попытаться вставить `deploymentProvider` , ссылающийся на http://subdomain.adatum.com/MyApplication/, то произойдет сбой следующего обновления.  
   
 ## <a name="creating-a-deployment"></a>Создание развертывания  
- Пошаговое руководство по созданию развертываний, которые могут быть развернуты из разных мест сети, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce, Does не требуют Re-Signing и что сохраняет сведения об](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Пошаговое руководство по созданию развертываний, которые могут быть развернуты из разных мест сети, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce, которая не требует повторной подписи и сохраняет фирменную символику](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>См. также  
  [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
-
-
-

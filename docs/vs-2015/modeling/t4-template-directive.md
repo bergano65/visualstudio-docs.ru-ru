@@ -1,23 +1,20 @@
 ---
 title: T4 Директива Template | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990877"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,11 +77,11 @@ hostspecific="true"
  Допустимые значения:  
  `true, false, trueFromBase`. Значение по умолчанию — false.  
   
- Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.  
+ Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.  
   
- Поскольку тип данного свойства зависит от типа ведущего приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным ведущим приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к возможностям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:  
+ Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -241,6 +238,3 @@ This is the common footer.
  `internal`  
   
  В текстовом шаблоне времени выполнения задает атрибут видимости созданного класса. По умолчанию класс является частью открытого API кода, но если задать значение `visibility="internal"`, только ваш код сможет использовать класс, создающий текст.
-
-
-

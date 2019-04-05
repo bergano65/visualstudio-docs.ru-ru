@@ -1,14 +1,9 @@
 ---
 title: Отладка машинного кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990251"
 ---
 # <a name="debugging-native-code"></a>Отладка машинного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,8 +65,8 @@ ms.locfileid: "51730556"
  [Практическое руководство. Отладка внедренного кода](../debugger/how-to-debug-injected-code.md)  
  Руководство по отладке кода, использующего атрибуты. Инструкции: как включить комментирование исходного кода, как просмотреть введенный код, а также как просмотреть дизассемблированный код в текущей точке выполнения.  
   
- [Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Описывает использование **параллельных задач** и **Параллельные стеки** средство windows для отладки параллельного приложения.  
+ [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -83,6 +78,3 @@ ms.locfileid: "51730556"
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

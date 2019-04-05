@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Измерение производительности приложений с помощью профилирования | Документация Майкрософт
-description: "Узнайте, как с помощью Visual Studio\_профилировать производительность приложений, служб и инструментов на выбранном вами языке."
+description: Узнайте, как с помощью Visual Studio профилировать производительность приложений, служб и инструментов на выбранном вами языке.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323012"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Измерение производительности приложений в Visual Studio
 

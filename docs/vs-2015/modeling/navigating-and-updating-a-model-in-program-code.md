@@ -1,25 +1,22 @@
 ---
 title: Переход и обновление модели в программный код | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979243"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Перемещение по модели и обновление модели в коде программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49863169"
   
  [DocView и DocData](#docdata)  
   
- Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [как: перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [Как Перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ##  <a name="example"></a> Примере рассмотрено определение DSL  
  Это основная часть DslDefinition.dsl в примерах этого раздела:  
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - Задайте свойства нового элемента, особенно свойства, для которого `IsName` имеет значение true, если в DslDefinition. Этот флаг помечает свойство, которое служит для идентификации элемента уникально в пределах его владельцем. В этом случае свойство Name имеет флага.  
   
-- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [как: открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [Как Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   При создании элемента, таким образом, фигуры создается автоматически (если DSL со схемой). Он отображается в расположении, автоматически назначаемый, выполнив стандартную форму, цвет и другие функции. Если вы хотите управлять, где и как связанные фигуры отображается, см. в разделе [Создание элемента и его фигура](#merge).  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  Можно также задать цвет и другие свойства, предоставляемого соединителей с помощью этого метода.  
   
 ### <a name="use-transactions"></a>Использование транзакций  
- Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [Как Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ##  <a name="docdata"></a> Просмотр документа и документа данных  
  ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)   
  [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Практическое: использования транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
-
-
-

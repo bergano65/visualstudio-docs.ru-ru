@@ -1,14 +1,9 @@
 ---
 title: Отладка LINQ | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d15d56edec544ac68f21026758ced6292ee7de8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989555"
 ---
 # <a name="debugging-linq"></a>Отладка LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ End Function
   
  Измененный запрос вызывает функцию `IsEven` при каждом проходе через `items`. Чтобы проверить, выполняется ли для каждого элемента заданное условие, можно использовать окна отладчика или пройти по коду в пошаговом режиме в `IsEven`. Предикат в этом примере достаточно прост. Тем не менее, при отладке более сложных предикатов этот метод может оказаться весьма полезным.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Изменить и продолжить, не поддерживается для LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Операция "Изменить и продолжить" для LINQ не поддерживается  
  Режим "Изменить и продолжить" не поддерживает изменения в запросах LINQ. Если добавить, удалить или изменить оператор LINQ во время сеанса отладки, появится диалоговое окно, указывающее, что изменение не поддерживается режимом "Изменить и продолжить". На этом этапе можно либо отменить изменения, либо остановить сеанс отладки и запустить новый сеанс с отредактированным кодом.  
   
  Кроме того режим "Изменить и продолжить" не поддерживает изменение типа или значения переменной, которая используется в операторе LINQ. Снова можно либо отменить изменения либо остановить и перезапустить сеанс отладки.  
@@ -122,11 +117,8 @@ End Function
  В Visual Basic можно использовать режим "Изменить и продолжить" в коде, не использующем непосредственно LINQ, даже в методе, содержащем запрос LINQ. Можно добавить или удалить код перед оператором LINQ даже в том случае, если изменения влияют на номер строки запроса LINQ. Отладка кода Visual Basic, непосредственно не использующего LINQ, остается такой же, как раньше. Однако нельзя изменять, добавлять или удалять запрос LINQ, если вы не хотите останавливать отладку для применения изменений.  
   
 ## <a name="see-also"></a>См. также  
- [Отладка SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Отладка SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
  [Побочные эффекты и выражения](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)   
  [Введение в запросы LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
  [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984) (Знакомство с LINQ в Visual Basic)
-
-
-

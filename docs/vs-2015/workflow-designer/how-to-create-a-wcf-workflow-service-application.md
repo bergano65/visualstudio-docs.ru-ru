@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: Создание приложения службы рабочего процесса WCF | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание приложения службы рабочего процесса WCF | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0e7bf54f527a82bb59a8dc9248d3d9294a07aa59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979273"
 ---
-# <a name="how-to-create-a-wcf-workflow-service-application"></a>Как создать приложение службы рабочего процесса WCF
+# <a name="how-to-create-a-wcf-workflow-service-application"></a>Практическое руководство. создать служебное приложение рабочего процесса WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] служебные приложения рабочего потока представляют собой распределенные службы коммуникаций, которые передают сообщения клиентам и обратно, из одного процесса в другой. В [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] реализация контракта службы на стороне службы выполняется декларативно с помощью действий рабочего процесса способом, аналогичным тому, который реализован в службах рабочих процессов .NET Framework 3.5.  
   
 ### <a name="to-create-a-wcf-workflow-service-application"></a>Создание сервисного приложения рабочего процесса WCF  
@@ -43,8 +40,8 @@ ms.locfileid: "49228440"
     > [!NOTE]
     >  Если вы хотите добавить консольное приложение рабочего процесса в существующее решение, откройте это решение в [!INCLUDE[vs2010](../includes/vs2010-md.md)], щелкните правой кнопкой мыши решение в **обозревателе решений**и выберите **добавить**, затем  **Создать проект...** Чтобы открыть **новый проект** диалоговое окно. Продолжайте действия, описанные ранее в этой процедуре.  
   
-8.  Шаблон проекта создает определение службы как XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] открывает режим конструктора с действием <xref:System.Activities.Statements.Sequence>, которое содержит набор действий <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply>.  
+8.  Шаблон проекта создает определение службы как XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] открывает конструктор с действием <xref:System.Activities.Statements.Sequence>, которое содержит набор действий <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply>.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Практическое руководство. Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Создание проекта рабочего процесса](../workflow-designer/creating-a-workflow-project.md)

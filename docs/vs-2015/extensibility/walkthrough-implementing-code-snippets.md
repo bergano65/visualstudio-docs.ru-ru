@@ -1,24 +1,19 @@
 ---
-title: 'Пошаговое руководство: Реализация фрагментов кода | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Реализация фрагментов кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980153"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Пошаговое руководство. Реализация фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51752064"
   
 3. Реализуйте расширение фрагмента кода.  
   
-   Это пошаговое руководство основано на [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Это пошаговое руководство основано на [Пошаговое руководство: Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,7 +44,7 @@ ms.locfileid: "51752064"
   
 1. Создайте следующую структуру каталогов:  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     где *% InstallDir %* — папка установки Visual Studio. (Несмотря на то, что этот путь обычно используется для установки фрагментов кода, можно указать любой путь.)  
   
@@ -116,7 +111,7 @@ ms.locfileid: "51752064"
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Чтобы зарегистрировать фрагменты кода для определенного идентификатора GUID  
   
-1.  Откройте **CompletionTest** проекта. Сведения о создании этого проекта, см. в разделе [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Откройте **CompletionTest** проекта. Сведения о создании этого проекта, см. в разделе [Пошаговое руководство: Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  В проекте добавьте ссылки на следующие сборки:  
   
@@ -124,7 +119,7 @@ ms.locfileid: "51752064"
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  В проекте откройте файл source.extension.vsixmanifest.  
   
@@ -254,4 +249,3 @@ ms.locfileid: "51752064"
 7.  В другой части текста введите «test» и нажмите клавишу TAB. Так как «test» ярлык фрагмента кода, следует снова вставить фрагмент кода.  
   
 ## <a name="next-steps"></a>Следующие шаги
-

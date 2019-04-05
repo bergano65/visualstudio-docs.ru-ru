@@ -1,14 +1,9 @@
 ---
 title: Предоставление типов конструкторам визуальных элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58981082"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Предоставление типов конструкторам визуальных элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,8 +46,7 @@ ms.locfileid: "51791557"
      При компиляции временного PE только исходный файл, предоставленный компилятору является выходные данные пользовательского инструмента. Таким образом пользовательское средство, которое использует временный PE необходимо создать выходные файлы, которые могут быть скомпилированы независимо от других файлов в проекте.  
   
 ## <a name="see-also"></a>См. также  
- [Знакомство с объектом BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Знакомство с объектом BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
  [Определение пространства имен по умолчанию проекта](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md)
-

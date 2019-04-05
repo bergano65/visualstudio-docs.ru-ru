@@ -1,25 +1,20 @@
 ---
 title: Перенос приложений на платформу универсальной Windows (UWP) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980913"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Перенос приложений на универсальную платформу Windows (UWP)
 Вручную внесите необходимые изменения в существующие файлы проектов для приложений Магазина Windows 8.1, Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, чтобы их можно было использовать в окончательной первоначальной версии Visual Studio 2015. (Если у вас есть универсальное приложение Windows 8.1 с проектом приложения Windows и проектом Windows Phone, инструкции по миграции нужно будет выполнить для каждого проекта.)  
@@ -273,7 +268,7 @@ ms.locfileid: "51791752"
   
     2.  Обновите значение элемента ApplicationTypeRevision с 8.1 до 10.0.  
   
-    3.  Измените значение свойства \<MinimumVisualStudioVersion > элемента: 14.  
+    3.  Измените значение свойства \<MinimumVisualStudioVersion > элемента: 14,  
   
     4.  Добавить \<EnableDotNetNativeCompatibleProfile > элемент и присвойте ему значение: true.  
   
@@ -337,7 +332,7 @@ ms.locfileid: "51791752"
   
 2. Необходимо обновить \<пакета > элемент, используя новые схемы в соответствии с типом существующего проекта. Сначала удалите указанные ниже схемы в соответствии с типом проекта (приложение Магазина Windows или приложение для Windows Phone).  
   
-    **ПРЕЖНИЙ вариант для проекта Windows Store:** вашей \<пакета > элемент будет выглядеть примерно следующий.  
+    **СТАРЫЙ для проекта Windows Store:** Ваш \<пакета > элемент будет выглядеть примерно следующий.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ ms.locfileid: "51791752"
   
    ```  
   
-    **ПРЕЖНИЙ вариант для проекта Windows Phone:** вашей \<пакета > элемент будет выглядеть примерно следующий.  
+    **СТАРЫЙ для проекта Windows Phone:** Ваш \<пакета > элемент будет выглядеть примерно следующий.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ ms.locfileid: "51791752"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **НОВЫЕ возможности для универсальной платформы Windows:** добавьте приведенные ниже схемы для вашего \<пакета > элемента. Удалите из элементов префиксы идентификаторов пространств имен, связанные со схемами, которые вы удалили. Обновите свойство IgnorableNamespaces, присвоив ему значение uap mp. Новый \<пакета > элемент должен выглядеть примерно следующий.  
+    **НОВОЕ в Windows универсальной платформа:** Добавьте приведенные ниже схемы для вашего \<пакета > элемента. Удалите из элементов префиксы идентификаторов пространств имен, связанные со схемами, которые вы удалили. Обновите свойство IgnorableNamespaces, присвоив ему значение uap mp. Новый \<пакета > элемент должен выглядеть примерно следующий.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ ms.locfileid: "51791752"
   
    ```  
   
-3. Добавить \<зависимости > дочернего элемента \<пакета > элемента. Затем добавьте \<TargetDeviceFamily > дочерний элемент этого \<зависимости > элемента с атрибутами Name, MinVersion и MaxVersionTested. Присвойте атрибуту Name следующее значение: Windows.Universal. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Этот элемент должен выглядеть следующим образом:  
+3. Добавить \<зависимости > дочернего элемента \<пакета > элемента. Затем добавьте \<TargetDeviceFamily > дочерний элемент этого \<зависимости > элемента с атрибутами Name, MinVersion и MaxVersionTested. Присвойте атрибуту Name значение: Windows.Universal. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Этот элемент должен выглядеть следующим образом:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ ms.locfileid: "51791752"
    </Dependencies>  
    ```  
   
-4. **Для Windows Store только:** необходимо добавить \<MP: phoneidentity > дочернего элемента \<пакета > элемента. Добавьте атрибуты PhoneProductId и PhonePublisherId. Присвойте атрибуту имеют одинаковое значение атрибута Name в PhoneProductId \<удостоверений > элемента. Присвойте атрибуту PhonePublishedId значение 00000000-0000-0000-0000-000000000000. Пример:  
+4. **Для Windows Store:** Необходимо добавить \<MP: phoneidentity > дочернего элемента \<пакета > элемента. Добавьте атрибуты PhoneProductId и PhonePublisherId. Присвойте атрибуту имеют одинаковое значение атрибута Name в PhoneProductId \<удостоверений > элемента. Значение PhonePublishedId значение: 00000000-0000-0000-0000-000000000000. Пример:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -419,7 +414,7 @@ ms.locfileid: "51791752"
   
    ```  
   
-    **Только для проектов Магазина Windows.** Названия размеров плитки изменились. Измените атрибуты в \<VisualElements > элемент, чтобы отобразить новую специализирующимся размеров плитки. Размер 70x70 изменен на 71x71, а 30x30 — на 44x44.  
+    **Применяется только к Windows Store:** Названия размеров плитки изменились. Измените атрибуты в \<VisualElements > элемент, чтобы отобразить новую специализирующимся размеров плитки. Размер 70x70 изменен на 71x71, а 30x30 — на 44x44.  
   
     **Прежний вариант** названий размеров плитки:  
   
@@ -496,7 +491,7 @@ ms.locfileid: "51791752"
   
     ```  
   
-     **НОВОЕ:** \<PackageDependency > элемент  
+     **НОВЫЕ ФУНКЦИИ:** \<PackageDependency > элемент  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ ms.locfileid: "51791752"
     </Extension>  
     ```  
   
-     **Новый вариант** с задачей типа Bluetooth:  
+     **НОВЫЕ ФУНКЦИИ:** С задачей типа Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ ms.locfileid: "51791752"
     </Capabilities>  
     ```  
   
-     **Новый вариант** с универсальной возможностью Bluetooth:  
+     **НОВЫЕ ФУНКЦИИ:** Заменить универсальной возможностью Bluetooth.  
   
     ```xml  
     <Capabilities>  
@@ -565,7 +560,7 @@ ms.locfileid: "51791752"
   
     1. Эти атрибуты для \<VisualElements > являются устаревшими. они должны быть удалены:  
   
-       - \<VisualElements > атрибуты: ForegroundText, toastcapable;  
+       - \<VisualElements > атрибуты: ForegroundText, toastcapable  
   
        - \<DefaultTile > атрибут DefaultSize  
   

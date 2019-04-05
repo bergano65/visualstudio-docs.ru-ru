@@ -1,14 +1,9 @@
 ---
 title: IDebugBreakpointUnboundEvent2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointUnboundEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 434885635997cce3568b4077e2dd77f2dc480b8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ee5f57618bbcb5a0cd841000b41aa51008907d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979476"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugBreakpointUnboundEvent2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Возвращает точку останова, которые стали свободной.|  
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Получает причину, по которой был отсоединен точки останова.|  
@@ -53,7 +48,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
  При выгрузке модуля отладки библиотеки DLL или класс, все точки останова, которые были привязаны к код этого модуля должен быть отсоединен от отлаживаемой программы. `IDebugBreakpointUnboundEvent2` Отправляется для каждого несвязанного точки останова.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -63,4 +58,3 @@ IDebugBreakpointUnboundEvent2 : IUnknown
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-
