@@ -1,14 +1,9 @@
 ---
 title: Оболочка (изолированная или интегрированная) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755885"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993077"
 ---
 # <a name="shell-isolated-or-integrated"></a>Оболочка (изолированная или интегрированная)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51755885"
  Для распространения приложения интегрированной или изолированной оболочки, необходимо включить в приложение, специальные встроенной или изолированной оболочки распространяемый пакет и программу установки. Дополнительные сведения об установке и распространения см. в разделе [распространение приложений изолированной оболочки](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  [Лицензионного соглашения конечного пользователя (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) для Visual Studio интегрированная и изолированная оболочки содержит раздел сбора данных (**раздел 3. Данные**).  Она описывает данные об использовании клиента, собираемые корпорацией Майкрософт от пользователей либо встроенной или изолированной оболочки программное обеспечение, встроенное в приложении. Дополнительные сведения см. в разделе [Visual Studio продукта семейства заявление о конфиденциальности Microsoft](https://www.visualstudio.com/en-us/dn948229).  
+>  [Лицензионного соглашения конечного пользователя (EULA)](https://www.visualstudio.com/support/legal/mt171552) для Visual Studio интегрированная и изолированная оболочки содержит раздел сбора данных (**раздел 3. Данные**).  Она описывает данные об использовании клиента, собираемые корпорацией Майкрософт от пользователей либо встроенной или изолированной оболочки программное обеспечение, встроенное в приложении. Дополнительные сведения см. в разделе [Visual Studio продукта семейства заявление о конфиденциальности Microsoft](https://www.visualstudio.com/dn948229).  
 > 
 >  Если ведется сбор данных об использовании отдельных от своих клиентов в приложении, необходимо предоставить соответствующие Обратите внимание, что пользователям вашего приложения можно собирать.  При распространении по встроенной или изолированной оболочки как часть вашего приложения, в соответствии с лицензией на Visual Studio средств разработки, необходимо включить одно из следующих:  
 > 
@@ -64,4 +59,3 @@ ms.locfileid: "51755885"
   
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

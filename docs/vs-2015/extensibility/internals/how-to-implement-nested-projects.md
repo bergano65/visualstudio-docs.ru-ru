@@ -1,29 +1,24 @@
 ---
-title: 'Практическое: реализация вложенных проектов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Реализация вложенных проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993032"
 ---
-# <a name="how-to-implement-nested-projects"></a>Практическое: реализация вложенных проектов
+# <a name="how-to-implement-nested-projects"></a>Практическое руководство. Реализация вложенных проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 При создании типа проекта, вложенного в существует, несколько дополнительных шагов, которые должны быть реализованы. На некоторых те же обязанности, решение содержит его проектов вложенные (дочерние) принимает родительского проекта. Родительский проект — это контейнер, аналогичную решения проектов. В частности есть несколько событий, которые должны вызываться в решении и родительские проекты для построения иерархии вложенных проектов. Эти события описаны в процесс для создания вложенных проектов.  
@@ -99,4 +94,3 @@ ms.locfileid: "51810134"
  [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Параметры контекста](../../extensibility/internals/context-parameters.md)   
  [Файл мастера (VSZ-файл)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

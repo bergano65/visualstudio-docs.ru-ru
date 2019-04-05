@@ -1,14 +1,9 @@
 ---
 title: Создание системы базового проекта. часть 1 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992916"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Создание системы базового проекта. Часть 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "51792558"
   
 #### <a name="to-create-a-basic-project-template"></a>Создание базового проекта шаблона  
   
-1. Добавьте в проект, друг под другом три папки: **Templates\Projects\SimpleProject**. (В **обозревателе решений**, щелкните правой кнопкой мыши **SimpleProject** узел проекта, выберите пункт **добавить**, а затем нажмите кнопку **новую папку**. Назовите папку `Templates`. В **шаблоны** папки, добавьте папку с именем `Projects`. В **проекты** папки, добавьте папку с именем `SimpleProject`.)  
+1. Добавьте три папки в проект, в другой: **Templates\Projects\SimpleProject**. (В **обозревателе решений**, щелкните правой кнопкой мыши **SimpleProject** узел проекта, выберите пункт **добавить**, а затем нажмите кнопку **новую папку**. Назовите папку `Templates`. В **шаблоны** папки, добавьте папку с именем `Projects`. В **проекты** папки, добавьте папку с именем `SimpleProject`.)  
   
 2. В **Projects\SimpleProject** папке добавьте файл значка с именем `SimpleProject.ico`. При нажатии кнопки **добавить**, откроется редактор значков.  
   
@@ -577,7 +572,7 @@ ms.locfileid: "51792558"
      Обратите внимание на то, что параметры шаблона $nameSpace$ и $className$ нет новых значений. Вы узнаете, как реализовать замена параметров шаблона в следующем разделе.  
   
 ## <a name="substituting-template-parameters"></a>Замена параметров шаблона  
- В предыдущем разделе, можно зарегистрировать шаблона проекта в Visual Studio с помощью `ProvideProjectFactory` атрибута. Регистрация путь к папке шаблона таким образом позволяет включить подстановку параметров базового шаблона, переопределение и расширение `ProjectNode.AddFileFromTemplate` класса. Дополнительные сведения см. в разделе [Создание нового проекта: под капот, второй части](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ В предыдущем разделе, можно зарегистрировать шаблона проекта в Visual Studio с помощью `ProvideProjectFactory` атрибута. Регистрация путь к папке шаблона таким образом позволяет включить подстановку параметров базового шаблона, переопределение и расширение `ProjectNode.AddFileFromTemplate` класса. Дополнительные сведения см. в разделе [Создание нового проекта: За кулисами, часть вторая](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Теперь добавьте код замены `AddFileFromTemplate` класса.  
   
@@ -658,4 +653,3 @@ ms.locfileid: "51792558"
     ![Команда Simple Project](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    Поздравляем! Реализации системы базового управляемого проекта.
-

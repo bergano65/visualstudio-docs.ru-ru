@@ -1,30 +1,27 @@
 ---
-title: 'Практическое: Добавление действий на панель элементов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавление действий на панель элементов | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994143"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Практическое руководство. Добавление действий на панель инструментов
 Действия, которые могут добавляться к **элементов** в решении несколькими различными способами. Это можно сделать из текущего проекта, ссылкой из другого проекта либо ссылкой из другой сборки.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Добавление действия из текущего проекта  
   
-1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. [!INCLUDE[crabout](../includes/crabout-md.md)] добавив новое пользовательское действие в проект, см. в разделе [как: добавьте новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. [!INCLUDE[crabout](../includes/crabout-md.md)] добавив новое пользовательское действие в проект, см. в разделе [как: Добавить новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
 2.  Добавьте к действию пользовательскую логику.  
   

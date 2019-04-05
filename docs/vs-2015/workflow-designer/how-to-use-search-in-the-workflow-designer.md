@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: использовать поиск в конструкторе рабочих процессов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование службы поиска в конструкторе рабочих процессов | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff90f9e7916b598a1bf921f6de1e752afdb8b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 427e854c19e65463abcd8780cfe95d38f3ea66f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992501"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Как использовать поиск в конструкторе рабочих процессов
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Практическое руководство. Как использовать поиск в конструкторе рабочих процессов
 Чтобы упростить создание более сложных рабочих процессов большего размера, в конструкторе рабочих процессов можно использовать функцию поиска для поиска элементов по ключевым словам. Обратите внимание, что конструктор не поддерживает замену. Поиск может найти следующее в конструкторе:  
   
 ## <a name="quick-find"></a>Быстрый поиск  

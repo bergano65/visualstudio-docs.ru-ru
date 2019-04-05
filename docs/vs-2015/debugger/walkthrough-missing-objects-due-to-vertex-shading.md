@@ -1,25 +1,20 @@
 ---
-title: 'Пошаговое руководство: Отсутствие объектов вследствие заливки вершин | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отсутствие объектов вследствие заливки вершин | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993463"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Пошаговое руководство. Отсутствие объектов вследствие заливки вершин
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ ms.locfileid: "51745940"
    > [!TIP]
    >  При одновременной отладке приложения можно установить точку останова в этом месте, и она будет достигнута при отрисовке следующего кадра. Это позволяет проверить члены `m_marbleConstantBufferData` , чтобы убедиться, что значение члена `projection` равно всем нулям при заполнении буфера констант.  
   
-   Найти расположение, где заполняется буфер констант, и Обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом является где `m_marbleConstantBufferData.projection` член имеет значение все нули. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
+   Найдя расположение, где заполняется буфер констант, и обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом выясните, где значение члена `m_marbleConstantBufferData.projection` равно всем нулям. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Поиск места задания члена проекции в исходном коде приложения  
   
@@ -133,6 +128,3 @@ ms.locfileid: "51745940"
    Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.  
   
    ![Объект появился. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-

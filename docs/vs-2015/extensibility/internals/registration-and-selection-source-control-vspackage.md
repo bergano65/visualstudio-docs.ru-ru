@@ -1,27 +1,22 @@
 ---
 title: Регистрация и выбор (пакет VSPackage управления версиями) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764460"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992827"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбор (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +35,17 @@ ms.locfileid: "51764460"
   
 - Идентификатор GUID пакета: Это основной идентификатор GUID для пакета, который содержит реализацию элемента управления источника (называется ID_Package в этом разделе).  
   
-- Системы управления версиями GUID: Это представляет собой идентификатор GUID для пакета VSPackage, используемой для регистрации Visual заглушкой системы управления версиями Studio системы управления версиями и используется в качестве GUID контекста пользовательского интерфейса команды. Службы управления версиями GUID регистрируется в системе управления версиями GUID. В приведенном примере GUID исходного элемента управления называется ID_SccProvider.  
+- Система управления версиями GUID: Представляет собой идентификатор GUID для пакета VSPackage, используемой для регистрации Visual заглушкой системы управления версиями Studio системы управления версиями, а также используется в качестве GUID контекста пользовательского интерфейса команды. Службы управления версиями GUID регистрируется в системе управления версиями GUID. В приведенном примере GUID исходного элемента управления называется ID_SccProvider.  
   
-- Исходный идентификатор GUID службы управления: это закрытой службой GUID, используемый в Visual Studio (называемый SID_SccPkgService в этом разделе). Кроме того пакет системы управления версиями необходимо определить другие идентификаторы GUID для пакетов VSPackage, окна инструментов и т. д.  
+- Службы управления версиями GUID: Это закрытой службой GUID, используемый в Visual Studio (называемый SID_SccPkgService в этом разделе). Кроме того пакет системы управления версиями необходимо определить другие идентификаторы GUID для пакетов VSPackage, окна инструментов и т. д.  
   
   Пакет VSPackage системы управления версиями должны быть сделаны следующие записи реестра:  
   
 |Имя раздела|Записи|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(по умолчанию) = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Служба = rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Пакет = rg_sz: {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Package = rg_sz:{ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Обратите внимание, что имя ключа, `SourceCodeControl`, уже используется [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и недоступно в списках \<имя пакета >.)|(по умолчанию) = rg_sz: {ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Выбор пакета системы управления версиями  
@@ -91,4 +86,3 @@ ms.locfileid: "51764460"
  [Функции](../../extensibility/internals/source-control-vspackage-features.md)   
  [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Пакеты VSPackage](../../extensibility/internals/vspackages.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA2000: Удалите объекты до потери области действия | Документация Майкрософт'
-ms.custom: ''
+title: CA2000. Ликвидировать объекты перед потерей области | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857865"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980119"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: удалите объекты до того, как будет потеряна область действия
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000. Ликвидируйте объекты перед потерей области
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -72,7 +67,7 @@ ms.locfileid: "49857865"
 ## <a name="related-rules"></a>Связанные правила  
  [CA2213: следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: не удаляйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Не удаляйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>Пример  
  При реализации метода, который возвращает удаляемый объект, используйте блок try/finally без блока catch, чтобы убедиться в том, что объект удален. С помощью блока try/finally, разрешить исключения вызывается в момент сбоя, и убедитесь, что удаление объекта.  

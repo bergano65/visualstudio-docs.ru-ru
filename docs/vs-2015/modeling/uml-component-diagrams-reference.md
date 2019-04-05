@@ -1,12 +1,9 @@
 ---
-title: 'UML-схемы компонентов: Ссылаться | Документация Майкрософт'
-ms.custom: ''
+title: 'UML-схемы компонентов: Справочник по | Документация Майкрософт'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993989"
 ---
-# <a name="uml-component-diagrams-reference"></a>Схемы компонентов UML: справочные материалы
+# <a name="uml-component-diagrams-reference"></a>UML-схемы компонентов: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio *схема компонентов* показаны части структуры программной системы. Схема компонентов помогает визуализировать высокоуровневую структуру системы и поведение служб, предоставляемых и используемых ее элементами через интерфейсы. Чтобы создать схему компонентов UML на **архитектура** меню, щелкните **создать схему UML или схему слоев**.  
@@ -41,7 +38,7 @@ ms.locfileid: "51728124"
  Дополнительные сведения об использовании схем компонентов в процессе разработки см. в разделе [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  В этом разделе описаны элементы, которые можно использовать на схемах компонентов. Более подробную информацию о рисовании схем компонентов см. в разделе [UML-схемы компонентов: рекомендации по](../modeling/uml-component-diagrams-guidelines.md). Дополнительные сведения о том, как в целом схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+>  В этом разделе описаны элементы, которые можно использовать на схемах компонентов. Более подробную информацию о рисовании схем компонентов см. в разделе [UML-схемы компонентов: Рекомендации по](../modeling/uml-component-diagrams-guidelines.md). Дополнительные сведения о том, как в целом схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Чтение схем компонентов  
  В таблице ниже описаны элементы, которые можно использовать на схеме компонентов, и их основные свойства. Полный список свойств элементов, см. в разделе [свойства элементов на UML-схемы компонентов](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
@@ -64,12 +61,9 @@ ms.locfileid: "51728124"
 
 ## <a name="see-also"></a>См. также  
  [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)   
- [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)   
+ [Схемы компонентов UML: Рекомендации](../modeling/uml-component-diagrams-guidelines.md)   
  [Проверка системы во время разработки](../modeling/validate-your-system-during-development.md)   
  [Схемы вариантов использования UML: Справочник по](../modeling/uml-use-case-diagrams-reference.md)   
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
- [UML-схемы деятельности: ссылка](../modeling/uml-activity-diagrams-reference.md)   
- [UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)
-
-
-
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы активности UML: Справочник по](../modeling/uml-activity-diagrams-reference.md)   
+ [Схемы последовательностей UML: справочник](../modeling/uml-sequence-diagrams-reference.md)

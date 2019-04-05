@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: изучить модель содержимого узлов с использованием представления модели содержимого | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Изучить модель содержимого узлов с использованием представления модели содержимого | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994141"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Как изучить модель содержимого узлов с использованием представления модели содержимого
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Практическое руководство. Изучение модели содержимого узлов с использованием представления модели содержимого
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -33,7 +28,7 @@ ms.locfileid: "49245951"
   
 2.  Нажмите кнопку **использование редактора XML для просмотра и изменения базового файла XML-схемы** в начальном представлении.  
   
-3.  Скопируйте образец кода XML-схемы из [образец XML-схемы: схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.  
+3.  Скопируйте образец кода XML-схемы из [образец XML-схемы: Схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.  
   
 4.  Выберите `purchaseOrder` элемент в обозревателе схем щелкните правой кнопкой мыши `purchaseOrder` элемент в XML-редакторе и выбрав **Показать в обозревателе XML-**.  
   
@@ -50,6 +45,3 @@ ms.locfileid: "49245951"
 8.  Нажмите кнопку **Показать документацию** кнопки на панели инструментов XSD, чтобы включить или отключить документацию. Включение и отключение документации можно также осуществлять щелчком правой кнопкой мыши области конструктора.  
   
 9. Щелкните правой кнопкой `purchaseOrder` узел и выберите **Создание образца XML** Чтобы просмотреть документ экземпляра XML.
-
-
-

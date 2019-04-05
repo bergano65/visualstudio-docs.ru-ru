@@ -1,23 +1,20 @@
 ---
 title: T4 Директива Include | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994383"
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "49835947"
   
    С другой стороны, нужно помнить, что в некоторых случаях расширение файла влияет на то, в каких дополнительных папках будет выполнен поиск файлов включения. Это может оказаться важным при наличии включенного файла, содержащего другие файлы.  
   
-- Включенное содержимое обрабатывается почти так же, как если бы оно было частью включающего текстового шаблона. Однако можно включить файл, содержащий блок функций класса `<#+...#>`, даже если за директивой `include` следуют обычный текст и стандартные управляющие блоки.  
+- Включенное содержимое обрабатывается почти так же, как если бы оно было частью включающего текстового шаблона. Однако можно включить файл, содержащий блок возможностей класса `<#+...#>`, даже если за директивой `include` следуют обычный текст и стандартные управляющие блоки.  
   
 - Используйте `once="true"`, чтобы убедиться, что шаблон включен только один раз, даже если он вызывался из нескольких других файлов include.  
   
@@ -140,6 +137,3 @@ Output message 5 (from top template).
 ```  
 <#@ include file="$(myIncludeFolder)\defs.tt" #>  
 ```
-
-
-

@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: использовать конструктор аргументов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использовать конструктор аргументов | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
@@ -14,15 +11,15 @@ ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9844745951be9c29bc9dd624db47991ab2437692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992769"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
+# <a name="how-to-use-the-argument-designer"></a>Практическое руководство. использовать конструктор аргументов
 По сравнению с предыдущими версиями [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], конструктор аргументов упрощает передачу данных в действие и из действия. Конструктор нажав **аргументы** кнопку в левом нижнем углу поля визуальной разработки. Конструктор содержит список аргументов, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **значение по умолчанию** столбца. Каждый аргумент содержит имя, направление передачи свойства (IN, OUT или IN/OUT), тип и значение выражения по умолчанию (если такое существует). Имя и значение выражения по умолчанию представляют собой изменяемые текстовые поля, а тип и направление - раскрывающееся меню. [!INCLUDE[crabout](../includes/crabout-md.md)] аргументы, см. в разделе [переменных и аргументов](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
 ### <a name="to-create-a-new-argument"></a>Создание нового аргумента  

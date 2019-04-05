@@ -1,14 +1,9 @@
 ---
 title: Изменить и продолжить (Visual Basic) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993439"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ ms.locfileid: "51750632"
   
  Операция "Изменить и продолжить" поддерживается для 64-разрядных проектов, предназначенных для платформы .NET Framework 4.5.1.  
   
- Изменить и продолжить не поддерживается при запуске отладки с помощью **присоединение к процессу**. Режим "Изменить и продолжить" не поддерживается при отладке оптимизированного кода, смешанного управляемого и машинного кода, а также проектов Compact Framework (интеллектуальное устройство).  
+ Режим "Изменить и продолжить" не поддерживается при отладке с использованием функции **Присоединение к процессу**. Режим "Изменить и продолжить" не поддерживается при отладке оптимизированного кода, смешанного управляемого и машинного кода, а также проектов Compact Framework (интеллектуальное устройство).  
   
  Подразделы данного раздела предоставляют дополнительные сведения об использовании этого режима и о том, какие виды изменений запрещены.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Применение изменений в режиме приостановки выполнения с помощью режима "Изменить и продолжить"](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Практическое руководство. "Изменить и продолжить" в режиме приостановки выполнения](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Объясняется, как применять изменения кода в режиме приостановки.  
   
  [Изменения, не поддерживаемые в режиме "Изменить и продолжить" Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51750632"
 ## <a name="related-sections"></a>Связанные разделы  
  [Изменить и продолжить](../debugger/edit-and-continue.md)  
  Предоставляет список разделов по режиму "Изменить и продолжить".
-
-
-

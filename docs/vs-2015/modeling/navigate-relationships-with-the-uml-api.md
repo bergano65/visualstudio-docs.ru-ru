@@ -1,25 +1,22 @@
 ---
 title: Переход по отношениям с помощью UML API | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991306"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Переход по отношениям с помощью UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>Перечисление отношений  
- Все свойства модели UML, которые возвращают несколько значений, соответствующих интерфейсу IEnumerable<>. Это означает, что можно использовать [выражения запросов Linq](http://go.microsoft.com/fwlink/?LinkId=168834) и методы расширения, определенные в **System.Linq** пространства имен.  
+ Все свойства модели UML, которые возвращают несколько значений соответствует <> интерфейс IEnumerable. Это означает, что можно использовать [выражения запросов Linq](http://go.microsoft.com/fwlink/?LinkId=168834) и методы расширения, определенные в **System.Linq** пространства имен.  
   
  Пример:  
   
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Навигация по модели UML](../modeling/navigate-the-uml-model.md)
-
-
-

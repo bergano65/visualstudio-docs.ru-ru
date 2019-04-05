@@ -1,26 +1,21 @@
 ---
 title: Информация HRESULT в управляемом коде | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, HRESULT information
 - HRESULT, managed VSPackages
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
-manager: douge
-ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2cbb93c5ecb3caf38b686a958d6daed845bdaec7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993130"
 ---
 # <a name="hresult-information-in-managed-code"></a>Информация HRESULT в управляемом коде
 В процессе взаимодействия между управляемым кодом и моделью COM могут возникать проблемы, если возвращаются значения HRESULT.  
@@ -70,6 +65,6 @@ ms.locfileid: "49911854"
 ## <a name="see-also"></a>См. также  
  [Управляемые пакеты VSPackage](../misc/managed-vspackages.md)   
  [Взаимодействие с неуправляемым кодом](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
- [Практическое: сопоставление значений HRESULT и исключений](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [Построение компонентов COM для взаимодействия](http://msdn.microsoft.com/en-us/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [Практическое руководство. MAP HRESULTs and Exceptions](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
+ [Построение компонентов COM для взаимодействия](http://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [Управляемые пакеты VSPackage](../misc/managed-vspackages.md)

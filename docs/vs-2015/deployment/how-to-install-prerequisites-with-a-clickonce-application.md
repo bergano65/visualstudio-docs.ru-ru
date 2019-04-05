@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Установка необходимых компонентов для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Установка необходимых компонентов для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991904"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов при помощи ClickOnce-приложения
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Все [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения требуют, что правильная версия .NET Framework установлен на компьютере, прежде чем они могут выполняться; многие приложения имеют другие предварительные требования. При публикации [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, можно выбрать набор необходимых компонентов для упаковки вместе с приложением. Во время установки проверка будет выполняться для каждого необходимого предварительного условия для определения того, если он уже существует; Если не будет устанавливаться перед установкой [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения.  
@@ -37,7 +32,7 @@ ms.locfileid: "49196291"
  Вместо упаковка и публикация предварительные требования, можно также указать расположение загрузки для компонентов. Например, вместо того чтобы, включая необходимые компоненты для каждого приложения, публикации, можно использовать централизованную общую папку или расположение в Интернете, содержащие установщики для всех необходимых компонентов — во время установки, будут загружены компоненты и установить из этого расположения.  
   
 > [!IMPORTANT]
->  Следует добавить пакеты установщика необходимых компонентов на компьютере разработчика, прежде чем публиковать ваше [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения. Дополнительные сведения см. в разделе [как: включить необходимые компоненты, приложения ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Следует добавить пакеты установщика необходимых компонентов на компьютере разработчика, прежде чем публиковать ваше [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения. Дополнительные сведения см. в разделе [Как включить требуемые компоненты в дистрибутив приложения ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Необходимые компоненты управляются в **предварительные требования** окне доступен из **публикации** области **конструктор проектов**.  
   
@@ -78,6 +73,3 @@ ms.locfileid: "49196291"
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

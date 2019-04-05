@@ -1,23 +1,20 @@
 ---
-title: 'Пошаговое руководство: Отладка текстового шаблона, который обращается к модели | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отладка текстового шаблона, который обращается к модели | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993027"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,20 +22,20 @@ ms.locfileid: "49924893"
 При изменении или добавлении текстовых шаблонов в решении доменного языка, могут возникнуть ошибки, когда обработчик преобразует шаблон к исходному коду, или при компиляции созданного кода. Следующий пример демонстрирует некоторые из вещей, которые можно сделать, чтобы отладка текстового шаблона.  
   
 > [!NOTE]
->  Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: отладка текстового шаблона](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: Отладка текстового шаблона](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка  
  В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:  
   
-- Имя: DebuggingTestLanguage  
+- Имя. DebuggingTestLanguage  
   
-- Шаблон решения: минимальный язык  
+- Шаблон решения: Минимальный язык  
   
 - Расширение файла: .ddd  
   
-- Название компании: Fabrikam  
+- Название организации: Fabrikam  
   
-  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создать решение на предметно-ориентированном языке](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Создание текстового шаблона  
  Добавьте текстовый шаблон в решение.  
@@ -164,7 +161,7 @@ ms.locfileid: "49924893"
   
      (C#)  
   
-     **Компиляция преобразования: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "содержит определение для «ExampleModel»**  
+     **Компиляция преобразования: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "содержит определение для «ExampleModel»**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ ms.locfileid: "49924893"
 5.  В **обозревателе решений**, щелкните правой кнопкой мыши файл DebugTest.tt и нажмите кнопку **пользовательское средство**.  
   
      Теперь система преобразует текстовый шаблон и создает соответствующий файл выходных данных. Вы не увидите все ошибки в **список ошибок** окна.
-
-
-
