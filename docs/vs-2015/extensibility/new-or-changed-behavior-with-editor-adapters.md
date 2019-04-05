@@ -1,33 +1,28 @@
 ---
 title: Нового или измененного поведения с помощью редактора адаптеров | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979507"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Нового или измененного поведения с помощью редактора адаптеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Если при обновлении кода, написанного для более ранних версиях базовый редактор Visual Studio, и вы планируете использовать адаптеры редактора (или оболочки совместимости) вместо того чтобы использовать новый интерфейс API, следует иметь в виду следующие различия в поведении адаптеров редактора по отношению к предыдущей базовым редактором.  
   
-## <a name="features"></a>Функции  
+## <a name="features"></a>Компоненты  
   
 #### <a name="using-setsite"></a>С помощью SetSite()  
  Необходимо вызвать <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> при выполнить текстовых буферов, представлений текста и кода windows, прежде чем выполнять другие операции с ними. Тем не менее, это не является обязательным при использовании <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> для их создания, так как сами методы этой службы Create() вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
@@ -114,7 +109,7 @@ ms.locfileid: "51817403"
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
-#### <a name="outlining"></a>структуризация  
+#### <a name="outlining"></a>Структуризация  
  Клиенты <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> будут видеть только те области структуры, которые были добавлены с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Он не увидит нерегламентированных регионов, так как они не добавляются с помощью редактора адаптеров. Аналогичным образом эти клиенты не увидят добавленные языки, (включая C# и C++), при использовании нового редактора кода, а не адаптеров редактора областей структуры.  
   
 #### <a name="line-heights"></a>Значения высоты строки  
@@ -150,4 +145,3 @@ ms.locfileid: "51817403"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> реализуется сетевые адаптеры, но игнорируется интерфейсом структуры пользовательского интерфейса.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> реализуется сетевые адаптеры, но игнорируется интерфейсом структуры пользовательского интерфейса.|
-

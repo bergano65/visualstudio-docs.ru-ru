@@ -1,34 +1,29 @@
 ---
 title: Частные коллекции | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980180"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно совместно использовать элементы управления, шаблонов и средств, разработанных, публикуя их *частной коллекции* в интрасети для вашей организации, как показано ниже:  
   
--   Создание Atom RSS-канал в подходящим образом настроенный центральное расположение (репозитория), в интрасети. Дополнительные сведения см. в разделе [как: Создание веб-канал Atom для частной коллекции](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+-   Создание Atom RSS-канал в подходящим образом настроенный центральное расположение (репозитория), в интрасети. Дополнительные сведения см. в разделе [Как Создание Atom веб-канала для закрытой коллекции](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
 -   Распространение pkgdef-файл, описывающий частной коллекции. Рекомендуется, чтобы эта конфигурация для администраторов, которым требуется подключиться частной коллекции на нескольких компьютерах, в то же время.  
   
@@ -68,7 +63,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Дополнительные сведения см. в разделе [как: управление частной коллекции, с помощью параметров реестра](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Дополнительные сведения см. в разделе [Как Управление закрытой галереей с помощью параметров реестра](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
 ## <a name="installing-extensions-from-a-private-gallery"></a>Установка расширений из закрытой коллекции  
  Можно найти и установить расширения Visual Studio в частной коллекции в **расширения и обновления**. В следующих действиях используется частной коллекции с именем `My Gallery`.  
@@ -99,4 +94,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## <a name="see-also"></a>См. также  
  [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)   
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

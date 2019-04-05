@@ -1,12 +1,9 @@
 ---
-title: 'Практическое: Включение и отключение полного анализа решения для управляемого кода | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Включение и отключение полного анализа решения для управляемого кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,17 +11,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979119"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Практическое: Включение и отключение полного анализа решения для управляемого кода
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Практическое руководство. Включение и отключение полного анализа решения для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ПРИМЕЧАНИЕ.]
+ПРИМЕЧАНИЕ
 >  Этот раздел относится только к Visual Studio 2015 с обновлением 3 RC и более поздних версий.  
   
  *Полный анализ решения* — это компонент Visual Studio, можно выбрать, вы увидите проблемы анализа кода только в открытых файлов Visual C# или Visual Basic, в решении или в открытых и закрытых файлов решения Visual C# или Visual Basic.  
@@ -59,6 +56,3 @@ ms.locfileid: "49221875"
  По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#.  
   
  Visual Studio с обновлением 3 RC включает в себя улучшенные код модуля диагностики v2 анализатора, значительно сокращает использование памяти и уменьшает время ЦП простоя, даже если включен полный анализ решения.
-
-
-

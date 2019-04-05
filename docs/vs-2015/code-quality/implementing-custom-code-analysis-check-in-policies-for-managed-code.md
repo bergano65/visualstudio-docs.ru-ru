@@ -1,14 +1,9 @@
 ---
 title: Реализация пользовательских политик анализом кода возврата для управляемого кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978583"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Реализация пользовательских политик возврата с анализом кода для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49268974"
  Чтобы создать настраиваемый набор правил для командного проекта, сначала создать особую папку для политики возврата набору правил в **обозреватель управления исходным кодом**. Создать файл набора правил и добавьте его в систему управления версиями. Наконец вы указываете политика анализа кода возврата для командного проекта, наборы правил.  
   
 > [!NOTE]
->  Чтобы создать папку в командном проекте, сначала необходимо сопоставить корневой каталог командного проекта в папку на локальном компьютере. Дополнительные сведения см. в разделе [Создание и работа с рабочими областями (старая версия)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Чтобы создать папку в командном проекте, сначала необходимо сопоставить корневой каталог командного проекта в папку на локальном компьютере. Дополнительные сведения см. в разделе [Создание и работа с рабочими областями (старая версия)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Чтобы создать папку системы управления версиями для набора правил политики возврата  
   
@@ -124,6 +119,3 @@ ms.locfileid: "49268974"
 7.  В **выполнить этот набор правил** выберите  **\<Обзор... >**.  
   
 8.  Укажите локальную версию файла набора правил политики возврата.
-
-
-
