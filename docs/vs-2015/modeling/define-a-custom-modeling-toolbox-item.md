@@ -1,25 +1,22 @@
 ---
 title: Определение настраиваемого элемента панели элементов моделирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989754"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Определение пользовательского элемента для панели элементов моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ ms.locfileid: "51778414"
   
 4.  Добавьте в проект определения панели элементов. Включить **.tbxinfo** файла, файлы схемы, файлы растровых изображений и любые файлы ресурсов и убедитесь, что они включены в VSIX.  
   
-    -   В обозревателе решений в контекстном меню проекта VSIX, выберите **добавить**, **существующий элемент**. В диалоговом окне задайте **объекты типа: все файлы**. Найдите файлы, выделите их все и затем выберите **добавить**.  
+    -   В обозревателе решений в контекстном меню проекта VSIX, выберите **добавить**, **существующий элемент**. В диалоговом окне задайте **объекты типа: Все файлы**. Найдите файлы, выделите их все и затем выберите **добавить**.  
   
         > [!NOTE]
         >  В этом проекте нельзя открыть файлы схемы в редакторе моделей.  
@@ -188,7 +185,7 @@ ms.locfileid: "51778414"
     -   Тип = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Этот параметр отсутствует в раскрывающемся списке. Его необходимо ввести с помощью клавиатуры.  
+        >  Это значение не указано в раскрывающемся списке. Его необходимо ввести с помощью клавиатуры.  
   
     -   **Источник** = **файл в файловой системе**.  
   
@@ -200,7 +197,7 @@ ms.locfileid: "51778414"
   
      В экспериментальном экземпляре создайте или откройте схему UML соответствующего типа. Убедитесь, что новый инструмент отображается на панели элементов и что он правильно создает элементы.  
   
-10. **Чтобы получить файл VSIX для развертывания:** в проводнике Windows откройте папку **.\bin\Debug** или **.\bin\Release** найти **.vsix** файл. Это файл расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Его можно установить на своем компьютере и отправить другим пользователям Visual Studio.  
+10. **Чтобы получить файл VSIX для развертывания:** В проводнике Windows откройте папку **.\bin\Debug** или **.\bin\Release** найти **.vsix** файл. Это файл расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Его можно установить на своем компьютере и отправить другим пользователям Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Установка пользовательских инструментов из расширения Visual Studio  
   
@@ -241,6 +238,3 @@ ms.locfileid: "51778414"
  [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

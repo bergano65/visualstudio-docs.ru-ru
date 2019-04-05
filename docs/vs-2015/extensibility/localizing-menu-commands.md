@@ -1,14 +1,9 @@
 ---
 title: Локализация команд меню | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27be664fb035af2c97f0536026b590c468b68b9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989843"
 ---
 # <a name="localizing-menu-commands"></a>Локализация команд меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,4 +159,3 @@ ms.locfileid: "51753897"
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
  [Команды MenuCommand и OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [Глобализация и локализация](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-

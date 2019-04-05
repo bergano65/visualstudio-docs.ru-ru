@@ -1,12 +1,9 @@
 ---
 title: Создание кода в процессе построения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281814"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002451"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "52281814"
 
 ##  <a name="buildserver"></a> Настройка компьютеров
 
-Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Если [сервер сборки](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) работает на компьютере, на котором не установлена Visual Studio, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените символ "*" номером последней версии.
 
@@ -58,7 +55,7 @@ ms.locfileid: "52281814"
 
 ## <a name="to-edit-the-project-file"></a>Изменение файла проекта
 
-Необходимо изменить файл проекта для настройки некоторых возможностей в MSBuild.
+Необходимо изменить файл проекта для настройки некоторых функций в MSBuild.
 
 В обозревателе решений выберите **Unload** в контекстном меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
 
@@ -288,4 +285,4 @@ The project folder is: <#= ProjectFolder #>
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
 - [Визуализации и моделирования пакета SDK для Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Олег Сыч: Основные сведения об интеграции T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Олег Сыч: Основные сведения об интеграции T4:MSBuild](https://github.com/olegsych/T4Toolbox)

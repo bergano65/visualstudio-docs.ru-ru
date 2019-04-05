@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: проверок во время выполнения машинного кода | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Проверок во время выполнения машинного кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,13 +40,13 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993321"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,8 +87,3 @@ ms.locfileid: "51798759"
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Проверка ошибок во время выполнения](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-

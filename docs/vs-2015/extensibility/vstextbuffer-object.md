@@ -1,14 +1,9 @@
 ---
 title: Объект VSTextBuffer | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950f9c50ccaf137b21d775ceaf1bff196b1b8ac7
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728784"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59002107"
 ---
 # <a name="vstextbuffer-object"></a>Объект VSTextBuffer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ ms.locfileid: "51728784"
   
  В следующей таблице показаны интерфейсы `VSTextBuffer`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Стандартный OLE-интерфейс. Главным образом используется для обработки в буфере отмены и повтора.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Стандартный OLE-интерфейс.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Стандартный OLE-интерфейс.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Стандартный OLE-интерфейс. Главным образом используется для обработки в буфере отмены и повтора.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Стандартный OLE-интерфейс.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Стандартный OLE-интерфейс.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Позволяет создавать действия соединения (то есть действия, сгруппированные в блок одной отмены и повтора).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение данных документа, управляемых текстовым буфером.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Предоставляет базовые службы; Многие клиенты используют.|  
@@ -53,5 +48,4 @@ ms.locfileid: "51728784"
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Изменение фигур](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [Изменение фигур](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

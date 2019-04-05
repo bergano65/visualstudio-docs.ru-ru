@@ -1,26 +1,21 @@
 ---
 title: Анализ проблем с памятью .NET Framework | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989512"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Анализ проблем с памятью .NET Framework
 С помощью анализатора управляемой памяти Visual Studio вы можете найти утечки памяти и определить неэффективное использование памяти в коде .NET Framework. Минимальная версия .NET Framework целевого кода — .NET Framework 4.5.  
@@ -47,7 +42,7 @@ ms.locfileid: "51810485"
   
  .NET *управляемой кучи* — это область виртуальной памяти, где хранятся ссылаться на объекты, созданные приложением. Жизненный цикл объектов контролирует сборщик мусора (GC). Сборщик мусора использует ссылки для отслеживания объектов, занимающих блоки памяти. Ссылка создается, когда объект создается и назначается переменной. У одного объекта может быть несколько ссылок. Например, дополнительные ссылки на объект можно создать, добавив его в класс, коллекцию или другую структуру данных или назначив объект второй переменной. Менее очевидный способ создания ссылки — добавление обработчика в событие другого объекта. В этом случае второй объект содержит ссылку на первый объект, пока не будет явно удален обработчик или второй объект.  
   
- Для каждого приложения сборщик мусора хранит дерево ссылок, отслеживающие объекты, на которые ссылается приложение. *Дерево ссылок* имеет набор корней, включая глобальные и статические объекты, а также связанные стеки потоков и динамически инициализируемые объекты. Объект становится корневым, если у него есть по крайней мере один родительский объект с ссылкой на него. Сборщик мусора может освободить память, занимаемую объектом, только если другие объекты или переменные в приложении не ссылаются на него.  
+ Для каждого приложения сборщик мусора хранит три ссылки, отслеживающие объекты, на которые ссылается приложение. *Дерево ссылок* имеет набор корней, включая глобальные и статические объекты, а также связанные стеки потоков и динамически инициализируемые объекты. Объект становится корневым, если у него есть по крайней мере один родительский объект с ссылкой на него. Сборщик мусора может освободить память, занимаемую объектом, только если другие объекты или переменные в приложении не ссылаются на него.  
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
@@ -160,7 +155,7 @@ ms.locfileid: "51810485"
   
   Анализатор памяти добавляет к корневым объектам комментарии с описанием ссылки, которые содержатся в объектах:  
   
-|Комментарий|Описание:|  
+|Комментарий|Описание|  
 |----------------|-----------------|  
 |**Статическая переменная** `VariableName`|Статическая переменная. `VariableName` — имя переменной.|  
 |**Дескриптор завершения**|Ссылка из очереди метода завершения|  
@@ -189,6 +184,6 @@ ms.locfileid: "51810485"
    ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
 ## <a name="see-also"></a>См. также  
- [Блог VS ALM TFS: Использование Visual Studio 2013 для диагностики проблем с памятью .NET в рабочей среде](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
+ [Блог VS ALM TFS: С помощью Visual Studio 2013 для диагностики проблем с памятью .NET в рабочей среде](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
  [Channel 9 &#124; Visual Studio TV &#124; анализ управляемой памяти](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
  [Channel 9 &#124; элементов Visual Studio &#124; анализ управляемой памяти в Visual Studio 2013](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

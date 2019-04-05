@@ -1,26 +1,21 @@
 ---
 title: Когда следует создавать типы проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979092"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,10 +49,10 @@ ms.locfileid: "51801671"
 ## <a name="use-an-existing-project-type"></a>Использовать существующий тип проекта  
  Создание нового проекта иногда не является обязательным. Ниже приведены задачи, которые необходимо создать тип для проекта.  
   
-|Задача|Описание:|  
+|Задача|Описание|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
-|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Владеющий windows|Окна инструментов и документов можно создать без добавления нового типа проекта.|  
 |Предоставление доступа к свойствам в окне «Свойства»|Все объекты могут предоставлять свойства.|  
   
@@ -65,7 +60,6 @@ ms.locfileid: "51801671"
  Подтипов проекта можно использовать для расширения тип управляемого проекта без необходимости создавать новый тип проекта. Подтипов проекта используйте агрегирование COM для расширения возможностей управляемых проектов, написанных на Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. С помощью агрегирование COM можно повторно использовать большую часть реализации проекта под управлением системы и настраивать для конкретного сценария через агрегирование и использование поддержка интерфейсов. Дополнительные сведения о подтипов проекта, см. в разделе [подтипов проекта](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>См. также  
- [Редакторы и документов Windows](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Редакторы и документов Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

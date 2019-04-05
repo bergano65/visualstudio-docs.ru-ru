@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: Добавление действий на панель инструментов (для прежних версий) | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Добавление действий на панель инструментов (для прежних версий) | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, adding activities
@@ -14,15 +11,15 @@ ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 51c9d43a1dee05d1b1cb77e50aa2d54d4f4e7f2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991694"
 ---
-# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Как добавить действия в область элементов (для прежних версий)
+# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Практическое руководство. Добавление действий в область элементов (для прежних версий)
 При построении решения рабочего процесса с помощью прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)] излюбленного [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], пользовательские действия можно добавить в проект рабочего процесса и размещать их конструкторы в **элементов** для простой доступ. Вы можете также добавить действия непосредственно к **элементов** из библиотеки динамической компоновки (DLL).  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Добавление действия на панель элементов из библиотеки DLL  

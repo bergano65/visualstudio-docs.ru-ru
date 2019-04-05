@@ -1,14 +1,9 @@
 ---
-title: Средства XML в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Средства XML
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -37,64 +32,49 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 56c4fe7671751b7a7cd16c7065205978728f8f99
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2812e45460778a3527f55522c6d3fc98285a548d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992151"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Расширяемый язык разметки (XML) * — это язык разметки, позволяющий описывать данные. Он упрощает точное объявление контента и помогает получать более значимые результаты поиска на различных платформах. Кроме того, XML позволяет разделять представление от данных. Например, в HTML теги используются, чтобы сообщить браузеру, что данные должны быть выделены полужирным шрифтом или курсивом. В XML теги применяются только для описания данных, например названия города, температуры и атмосферного давления. В XML для представления данных в браузере используются таблицы стилей, например таблицы XSL и каскадные таблицы стилей (CSS). XML отделяет данные от представления и обработки. Это позволяет отображать и обрабатывать данные необходимым способом, применяя различные таблицы стилей и приложения.  
-  
- XML — это подмножество языка SGML, оптимизированное для доставки через Интернет. Его спецификация определяется консорциумом World Wide Web (W3C). Такая стандартизация гарантирует, что структурированные данные будут согласованными и независимыми от приложений или поставщиков.  
-  
- XML лежит в основе многих возможностей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. В следующем разделе перечислены средства и возможности, связанныe с XML, которые доступны в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
-  
- Дополнительные сведения см. в разделе [Центр разработчиков XML](http://go.microsoft.com/fwlink/?LinkID=100176), который предоставляет последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Работа с XML-данными](../xml-tools/working-with-xml-data.md)  
- Описание роли XML в обработке данных в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
-  
- [Отладка XSLT](../xml-tools/debugging-xslt.md)  
- Ссылки на разделы об использовании отладчика Visual для отладки XSLT.  
-  
-## <a name="reference"></a>Ссылка  
- [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)  
- Предоставляет [редактор XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксического анализа дерева через [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.  
-  
- [Справочник по XML-стандартам](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Сведения о технологиях XML, в том числе XML, определении типа документа (DTD), языке определения схемы XML (XSD) и XSLT.  
-  
- <xref:System.Xml?displayProperty=fullName>  
- Описание классов и других элементов, из которых состоит пространство имен <xref:System.Xml>, а также ссылки на более подробное описание каждого элемента.  
-  
- <xref:System.Xml.Serialization?displayProperty=fullName>  
- Описание классов и других элементов, из которых состоит пространство имен <xref:System.Xml.Serialization>, а также ссылки на более подробное описание каждого элемента.  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Модель объектов документов XML (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)  
- Описание соответствия <xref:System.Xml.XmlDocument> и связанных классов спецификации пространству имен объектной модели документов W3C (базовой) уровня 1 и 2.  
-  
- [Чтение XML с помощью XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182)  
- Описание предоставления однонаправленного доступа только для чтения без кэша к данным XML по потоку XML с помощью <xref:System.Xml.XmlReader>.  
-  
- [Запись XML с помощью XmlWriter](http://msdn.microsoft.com/en-us/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)  
- Описание того, как <xref:System.Xml.XmlWriter> позволяет создавать XML-потоки без кэша и помогает создавать XML-документы, соответствующие стандарту W3C.  
-  
- [Преобразования XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)  
- Описание реализации рекомендации XSLT 1.0 в классе <xref:System.Xml.Xsl.XslCompiledTransform>.  
-  
- [Обработка XML-данных с использованием модели данных XPath](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)  
- Описание того, как класс <xref:System.Xml.XPath.XPathNavigator> может обрабатывать данные XML, которые хранятся в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument>. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.  
-  
- [Модель объектов схемы XML (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)  
- Описание классов, используемых для создания и обработки схем XML с применением класса <xref:System.Xml.Schema.XmlSchema> для загрузки и редактирования схемы.
 
+Расширяемый язык разметки (XML) * — это язык разметки, позволяющий описывать данные. Он упрощает точное объявление контента и помогает получать более значимые результаты поиска на различных платформах. Кроме того, XML позволяет разделять представление от данных. Например, в HTML теги используются, чтобы сообщить браузеру, что данные должны быть выделены полужирным шрифтом или курсивом. В XML теги применяются только для описания данных, например названия города, температуры и атмосферного давления. В XML для представления данных в браузере используются таблицы стилей, например таблицы XSL и каскадные таблицы стилей (CSS). XML отделяет данные от представления и обработки. Это позволяет отображать и обрабатывать данные необходимым способом, применяя различные таблицы стилей и приложения.
 
+ XML — это подмножество языка SGML, оптимизированное для доставки через Интернет. Его спецификация определяется консорциумом World Wide Web (W3C). Такая стандартизация гарантирует, что структурированные данные будут согласованными и независимыми от приложений или поставщиков.
 
+ XML лежит в основе многих возможностей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. В следующем разделе перечислены средства и возможности, связанныe с XML, которые доступны в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+
+ Дополнительные сведения см. в разделе [Центр разработчиков XML](http://go.microsoft.com/fwlink/?LinkID=100176), который предоставляет последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.
+
+## <a name="in-this-section"></a>В этом разделе
+ [Работа с XML-данными](../xml-tools/working-with-xml-data.md) описание роли XML в данных обрабатывается в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+
+ [Отладка XSLT](../xml-tools/debugging-xslt.md) ссылки на разделы об использовании отладчика Visual Studio для отладки XSLT.
+
+## <a name="reference"></a>Ссылка
+ [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) предоставляет [редактор XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксического анализа дерева через [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
+
+ [Справочник по стандартам XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
+
+ <xref:System.Xml?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml> пространства имен и ссылки на более подробные сведения для каждого элемента.
+
+ <xref:System.Xml.Serialization?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml.Serialization> пространства имен и ссылки на более подробные сведения о каждом элементе.
+
+## <a name="related-sections"></a>Связанные разделы
+ [XML объекта модели (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы соответствуют объектной модели документов W3C (Core) уровня 1 и спецификации пространству имен уровня 2.
+
+ [Чтение XML с XmlReader](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) описывает как <xref:System.Xml.XmlReader> предоставляет однонаправленное только для чтения к данным XML в XML-потоке.
+
+ [Запись XML-кода с помощью XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) описывает как <xref:System.Xml.XmlWriter> Однонаправленная пересылать только способ формирования XML-потоки и помогает создавать XML-документов, соответствующих стандарту W3C.
+
+ [Преобразования XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) описывает как <xref:System.Xml.Xsl.XslCompiledTransform> класс реализует рекомендации XSLT 1.0.
+
+ [Обработка XML-данных с помощью модели данных XPath](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) описывает как <xref:System.Xml.XPath.XPathNavigator> класс может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> объекта. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
+
+ [Объектной модели схемы XML (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) описаны классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класс для загрузки и изменения схемы.

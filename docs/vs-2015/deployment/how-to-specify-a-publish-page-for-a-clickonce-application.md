@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: задание страницы публикации для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Задание страницы публикации для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,20 +17,20 @@ ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992168"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Практическое руководство. Задание страницы публикации для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При публикации [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, веб-страницы по умолчанию (publish.htm) создается и публикуется вместе с приложением. Эта страница содержит имя приложения, со ссылкой для установки приложения и/или все необходимые компоненты и ссылку на раздел справки с описанием [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. **Страницы публикации** свойство проекта можно указать имя для веб-страницы для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения.  
   
- После указания страница публикации в следующий раз вы публикуете, он будет копироваться в место публикации; он не будут перезаписаны при повторной публикации. Если вы хотите настроить внешний вид страницы, это можно сделать, не беспокоясь о потере изменений. Дополнительные сведения см. в разделе [как: Настройка веб-страницы ClickOnce по умолчанию](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ После указания страница публикации в следующий раз вы публикуете, он будет копироваться в место публикации; он не будут перезаписаны при повторной публикации. Если вы хотите настроить внешний вид страницы, это можно сделать, не беспокоясь о потере изменений. Дополнительные сведения см. в разделе [Как Настройка веб-страницы по умолчанию ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
  **Страницы публикации** может быть установлено **параметры публикации** окне доступен из **публикации** области **конструктор проектов**.  
   
@@ -69,6 +64,3 @@ ms.locfileid: "49196694"
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
-
-
-
