@@ -1,12 +1,9 @@
 ---
 title: Проверка данных в наборах данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataTable.ColumnChanging
 - System.Data.DataTable.ColumnChanging
@@ -26,13 +23,13 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992864"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +39,14 @@ ms.locfileid: "49891132"
   
  Можно подтвердить правильность данных, записываемых в набор данных, создав проверки допустимости в сам набор данных. Набор данных может проверить данные независимо от того, как выполняется обновление — как непосредственно по элементам управления в форме, в пределах компонента, или иным способом. Так как набор данных является частью приложения (в отличие от серверной части базы данных), это логичным местом для построения приложения проверок.  
   
- Лучшее место для добавления проверки в приложение находится в разделяемом классе файла набора данных. В [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)]откройте **конструктор наборов данных** и дважды щелкните столбец или таблица, для которого вы хотите создать проверку. Это действие автоматически создает <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> обработчик событий. Дополнительные сведения см. в разделе [как: проверка данных во время изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) или [как: проверка данных во время изменений строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Полный пример см. в разделе [Пошаговое руководство: Добавление проверки к набору данных](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
+ Лучшее место для добавления проверки в приложение находится в разделяемом классе файла набора данных. В [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)]откройте **конструктор наборов данных** и дважды щелкните столбец или таблица, для которого вы хотите создать проверку. Это действие автоматически создает <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> обработчик событий. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) или [как: Проверка данных в ходе изменения строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Полный пример см. в разделе [Пошаговое руководство: Добавление проверки к набору данных](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
   
 ## <a name="validate-data"></a>Проверка данных  
  Проверки в объекте dataset, можно выполнить одним из следующих способов:  
   
-- Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения.  Дополнительные сведения см. в разделе [как: проверка данных во время изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения.  Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [как: проверка данных во время изменений строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 - Как часть определения действительной схемы набора данных, создав ключи, ограничения уникальности, и т. д. Дополнительные сведения о включении проверки в определение схемы, см. в разделе [ограничение DataColumn, чтобы содержать уникальные значения](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
@@ -57,9 +54,9 @@ ms.locfileid: "49891132"
   
   Несколько событий, вызываемых <xref:System.Data.DataTable> объекта при внесении изменений в записи:  
   
-- <xref:System.Data.DataTable.ColumnChanging> И <xref:System.Data.DataTable.ColumnChanged> события вызываются во время и после каждого изменения отдельных столбцов. <xref:System.Data.DataTable.ColumnChanging> Событие полезно, если вы хотите проверить изменения в отдельных столбцах. Сведения о предлагаемом изменении передается как аргумент с событием. Дополнительные сведения см. в разделе [как: проверка данных во время изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- <xref:System.Data.DataTable.ColumnChanging> И <xref:System.Data.DataTable.ColumnChanged> события вызываются во время и после каждого изменения отдельных столбцов. <xref:System.Data.DataTable.ColumnChanging> Событие полезно, если вы хотите проверить изменения в отдельных столбцах. Сведения о предлагаемом изменении передается как аргумент с событием. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения столбцов](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- <xref:System.Data.DataTable.RowChanging> И <xref:System.Data.DataTable.RowChanged> события вызываются во время и после любых изменений в строке. <xref:System.Data.DataTable.RowChanging> Событие является более общим. Он указывает, где происходит изменение в строке, что вы не знаете, какой столбец был изменен. Дополнительные сведения см. в разделе [как: проверка данных во время изменений строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- <xref:System.Data.DataTable.RowChanging> И <xref:System.Data.DataTable.RowChanged> события вызываются во время и после любых изменений в строке. <xref:System.Data.DataTable.RowChanging> Событие является более общим. Он указывает, где происходит изменение в строке, что вы не знаете, какой столбец был изменен. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
   По умолчанию каждое изменение столбцом инициирует четыре события. Во-первых, <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> события для конкретного столбца, которое необходимо изменить. Далее идут <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> события. Если несколько изменения вносятся в строку, событий возникает для каждого изменения.  
   
@@ -100,14 +97,14 @@ ms.locfileid: "49891132"
   
 - При необходимости использовать <xref:System.Windows.Forms.ErrorProvider> управления для отображения сообщения об ошибке для пользователя. Дополнительные сведения см. в разделе [компонент ErrorProvider](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
-  Также можно выполнить проверку во время <xref:System.Data.DataTable.RowChanging> событий. Дополнительные сведения см. в разделе [как: проверка данных во время изменений строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Также можно выполнить проверку во время <xref:System.Data.DataTable.RowChanging> событий. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения строк](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Проверка данных в ходе изменения строк  
  Можно написать код, чтобы убедиться, что каждый столбец, который вы хотите проверить содержит данные, которые удовлетворяют требованиям приложения. Для этого путем присвоения столбцу, чтобы указать, что он содержит ошибку, если предложенное значение является недопустимым. В следующем примере задается ошибка столбца при `Quantity` столбца меньше или равно 0. Обработчики событий изменения строки должно выглядеть как в приведенных ниже примерах.  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Проверка данных при изменении строки изменяется (Visual Basic)  
   
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.  
   
@@ -118,7 +115,7 @@ ms.locfileid: "49891132"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Проверка данных при изменении строки (C#)  
   
-1.  Откройте набор данных в **конструктор наборов данных**. Дополнительные сведения см. в разделе [как: Открытие набора данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.  
   
@@ -148,7 +145,7 @@ ms.locfileid: "49891132"
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>Для получения измененных строк  
- Каждая строка в таблице данных имеет <xref:System.Data.DataRow.RowState%2A> свойство, которое отслеживает текущее состояние этой строки, используя значения в <xref:System.Data.DataRowState> перечисления. Может возвращать измененных строк из таблицы набора данных или данных, вызвав `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable>. Убедитесь, что существуют изменения, перед вызовом метода `GetChanges` путем вызова <xref:System.Data.DataSet.HasChanges%2A> метод набора данных. Дополнительные сведения о <xref:System.Data.DataSet.HasChanges%2A>, см. в разделе [как: поиск изменено строк](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
+ Каждая строка в таблице данных имеет <xref:System.Data.DataRow.RowState%2A> свойство, которое отслеживает текущее состояние этой строки, используя значения в <xref:System.Data.DataRowState> перечисления. Может возвращать измененных строк из таблицы набора данных или данных, вызвав `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable>. Убедитесь, что существуют изменения, перед вызовом метода `GetChanges` путем вызова <xref:System.Data.DataSet.HasChanges%2A> метод набора данных. Дополнительные сведения об использовании <xref:System.Data.DataSet.HasChanges%2A> см. в разделе [Практическое руководство. Проверка измененных строк](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
 >  После фиксации изменений в таблицу данных или набора данных (путем вызова <xref:System.Data.DataSet.AcceptChanges%2A> метод), `GetChanges` метод не возвращает никаких данных. Если приложению для обработки измененных строк, необходимо обработать изменения перед вызовом `AcceptChanges` метод.  
@@ -217,9 +214,7 @@ ms.locfileid: "49891132"
      [!code-csharp[VbRaddataEditing#22](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#22)]
      [!code-vb[VbRaddataEditing#22](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#22)]  
   
-## <a name="see-also"></a>См. также  
- [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
- [Практическое руководство. Подключение к данным в базе данных](../data-tools/how-to-connect-to-data-in-a-database.md)   
- [Практическое: проверка данных в элементе управления DataGridView Windows Forms](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
- [Практическое руководство. Отображение значков ошибок при проверке введенных в форму данных с помощью компонента ErrorProvider в Windows Forms](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+## <a name="see-also"></a>См. также
 
+- [Практическое руководство. Проверка данных в элементе управления DataGridView Windows Forms](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [Практическое руководство. Отображение значков ошибок для проверки формы с помощью компонента ErrorProvider в Windows Forms](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

@@ -1,21 +1,17 @@
 ---
 title: Компилятор цветов VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993301"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,7 +110,7 @@ ms.locfileid: "51788437"
 |||  
 |-|-|  
 |**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|Тип|[Обязательный параметр] Тип цвета. Он может принимать одно из следующих:<br /><br /> *CT_INVALID:* цвет является недопустимым или не заданным.<br /><br /> *CT_RAW:* необработанное значение ARGB.<br /><br /> *CT_COLORINDEX:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_SYSCOLOR:* из SysColor системный цвет Windows.<br /><br /> *CT_VSCOLOR:* цвета Visual Studio из __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* автоматическому цвету.<br /><br /> *CT_TRACK_FOREGROUND:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_TRACK_BACKGROUND:* НЕ ИСПОЛЬЗУЙТЕ.|  
+|Тип|[Обязательный параметр] Тип цвета. Он может принимать одно из следующих:<br /><br /> *CT_INVALID:* Цвет является недопустимым или не заданным.<br /><br /> *CT_RAW:* Необработанное значение ARGB.<br /><br /> *CT_COLORINDEX:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_SYSCOLOR:* Системный цвет Windows, от SysColor.<br /><br /> *CT_VSCOLOR:* Цвета Visual Studio из __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Автоматическое цвет.<br /><br /> *CT_TRACK_FOREGROUND:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_TRACK_BACKGROUND:* НЕ ИСПОЛЬЗУЙТЕ.|  
 |Исходный код|[Обязательный параметр] Значение цвета, представлены в шестнадцатеричном формате|  
   
  Все значения, поддерживаемые в перечислении __VSCOLORTYPE поддерживаются со схемой в атрибуте типа. Тем не менее мы рекомендуем использовать только CT_RAW и CT_SYSCOLOR.  
@@ -146,16 +142,16 @@ ms.locfileid: "51788437"
 |-|-|-|  
 |**Имя коммутатора**|**Примечания**|**Обязательный или необязательный**|  
 |Неименованные (XML-файл)|Это является первым параметром неименованные и путь к XML-файл для преобразования.|Обязательно|  
-|Неименованные (pkgdef-файл)|Это — второй параметр без имени и выходной путь для созданного pkgdef-файл.<br /><br /> Значение по умолчанию — \<имя XML-файла > .pkgdef|Optional|  
+|Неименованные (pkgdef-файл)|Это — второй параметр без имени и выходной путь для созданного pkgdef-файл.<br /><br /> По умолчанию: \<Имя XML-файла > .pkgdef|Optional|  
 |/nologo|Этот параметр останавливает продукта и авторских правах, возвращенными печати.|Optional|  
 |/?|Выводит справочные сведения.|Optional|  
 |/help|Выводит справочные сведения.|Optional|  
   
  **Примеры**  
   
--   D:\pkgdef\colors.pkgdef VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   / Nologo VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Примечания  
   
@@ -173,4 +169,3 @@ ms.locfileid: "51788437"
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

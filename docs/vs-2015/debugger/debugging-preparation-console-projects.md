@@ -1,14 +1,9 @@
 ---
 title: 'Подготовка к отладке: Консольные проекты | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993165"
 ---
-# <a name="debugging-preparation-console-projects"></a>Подготовка к отладке: консольные проекты
+# <a name="debugging-preparation-console-projects"></a>Подготовка к отладке: Консольные проекты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Подготовка к отладке консольного проекта аналогична подготовке к отладке проекта Windows, с некоторыми дополнительными соображениями. Дополнительные сведения см. в разделе [приложений Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), и [Подготовка к отладке: приложения Windows Forms (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Из-за схожести всех консольных приложений в этом разделе описываются следующие типы проектов:  
+Подготовка к отладке консольного проекта аналогична подготовке к отладке проекта Windows, с некоторыми дополнительными соображениями. Дополнительные сведения см. в разделе [приложений Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), и [Подготовка к отладке: Windows Forms в приложения (.NET)](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Из-за схожести всех консольных приложений в этом разделе описываются следующие типы проектов:  
   
 - консольное приложение C#;  
   
@@ -45,9 +40,9 @@ ms.locfileid: "51722918"
   
   Может потребоваться задание аргументов командной строки для консольного приложения. Дополнительные сведения см. в разделе [параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), или [параметры проекта для конфигурации отладки C# ](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
-  Подобно всем свойствам проекта, эти аргументы сохраняются в интервале между сеансами (как отладки, так и Visual Studio). Таким образом, если консольное приложение — это приложения, ранее отладку, помните, что может быть аргументы из предыдущих сеансов, введенные в  **\<проект > страницы свойств** диалоговое окно.  
+  Подобно всем свойствам проекта, эти аргументы сохраняются в интервале между сеансами (как отладки, так и Visual Studio). Поэтому необходимо учитывать, что если предыдущий сеанс был посвящен отладке консольного приложения, в диалоговом окне **Страницы свойств \<проект>** могут присутствовать аргументы, сохранившиеся от предыдущих сеансов отладки.  
   
-  Консольное приложение использует **консоли** окно для ввода и отображения выходных сообщений. Записываемый **консоли** окне приложение должно использовать **консоли** объекта вместо объекта Debug. Записываемый **вывода Visual Studio** окна, использовать объект отладки, как обычно. Необходимо убедиться в какое место приложение записывает данные, иначе может оказаться, что поиск сообщений ведется не в том месте. Дополнительные сведения см. в разделе [класса Console](https://msdn.microsoft.com/library/system.console.aspx), [класс Debug](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx), и [окно вывода](../ide/reference/output-window.md).  
+  Консольное приложение использует окно **Консоль** для получения входных данных и отображения выходных сообщений. Записываемый **консоли** окне приложение должно использовать **консоли** объекта вместо объекта Debug. Для записи в окно **Вывод Visual Studio** используется, как обычно, объект Debug. Необходимо убедиться в какое место приложение записывает данные, иначе может оказаться, что поиск сообщений ведется не в том месте. Дополнительные сведения см. в разделах [Класс Console](https://msdn.microsoft.com/library/system.console.aspx), [Класс Debug](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx) и [Окно вывода](../ide/reference/output-window.md).  
   
 ## <a name="starting-the-application"></a>Запуск приложения  
  Некоторые консольные приложения после запуска выполняются до полного завершения, после чего сразу закрываются. Если это происходит быстро, то можно не успеть прервать выполнение приложения и выполнить отладку. Чтобы можно было выполнить отладку такого приложения, необходимо использовать один из следующих приемов для запуска приложения.  
@@ -62,7 +57,7 @@ ms.locfileid: "51722918"
   
   При отладке консольного приложения может потребоваться запуск приложения из командной строки, а не из Visual Studio. В этом случае можно запустить приложение из командной строки и присоединить к нему отладчик Visual Studio. Дополнительные сведения см. в разделе [подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-  При запуске консольного приложения из Visual Studio **консоли** окно иногда отображается позади окна Visual Studio. Если при попытке запустить консольное приложение из Visual Studio кажется, что ничего не происходит, попробуйте переместить окно Visual Studio.  
+  При запуске консольного приложения из Visual Studio окно **Консоль** иногда отображается позади окна Visual Studio. Если при попытке запустить консольное приложение из Visual Studio кажется, что ничего не происходит, попробуйте переместить окно Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
@@ -71,6 +66,3 @@ ms.locfileid: "51722918"
  [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)
-
-
-

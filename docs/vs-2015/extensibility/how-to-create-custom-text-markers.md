@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: Создание настраиваемых текстовых маркеров | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание настраиваемых текстовых маркеров | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994040"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Практическое: Создание настраиваемых текстовых маркеров
+# <a name="how-to-create-custom-text-markers"></a>Практическое руководство. Создание настраиваемых текстовых маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:  
@@ -33,13 +28,13 @@ ms.locfileid: "51783094"
   
 - Создание службы, который может использоваться другими процессами, чтобы сделать использование текстового маркера  
   
-  Сведения о способах применения текстового маркера в область кода, см. в разделе [как: используйте текстовые метки](../extensibility/how-to-use-text-markers.md).  
+  Сведения о способах применения текстового маркера в область кода, см. в разделе [как: Использовать текстовые метки](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Чтобы зарегистрировать пользовательский маркер  
   
 1. Создайте запись реестра следующим образом:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* маркеры \Text Editor\External\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>является `GUID` используется для идентификации добавляемого маркера  
   
@@ -96,7 +91,6 @@ ms.locfileid: "51783094"
   
 ## <a name="see-also"></a>См. также  
  [С помощью меток текста с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Практическое: Добавление стандартные текстовые метки](../extensibility/how-to-add-standard-text-markers.md)   
- [Практическое: реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)   
- [Практическое руководство. Использование текстовых маркеров](../extensibility/how-to-use-text-markers.md)
-
+ [Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)   
+ [Практическое руководство. Реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)   
+ [Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)

@@ -1,26 +1,21 @@
 ---
 title: Источник функции API подключаемого модуля управления | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5dcb07c3c49b132cdf12c1a4973af3ebf04dfa74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02e2c7ee92ab138de7bee0d58835898f3bd0a58b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993508"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ API подключаемых модулей исходный элемент уп
   
 ## <a name="initialization-and-housekeeping-functions"></a>Инициализация и функций по обслуживанию  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Закрывает проект.|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает у пользователя Дополнительные параметры для данной команды.|  
@@ -41,7 +36,7 @@ API подключаемых модулей исходный элемент уп
   
 ## <a name="core-source-control-functions"></a>Основные функции элемента управления источника  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|Добавляет массив файлов, указанных по именам полный путь к системе управления версиями.|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfromscc-function.md)|Позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями, а затем сделайте этих файлов, входящих в текущий проект.|  
@@ -63,7 +58,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Функции, которые поддерживают дополнительные возможности (версия 1.2 API подключаемого модуля управления источника)  
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.2 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Начинает пакетную операцию.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Создает подпроект с заданным именем в существующий родительский проект.|  
@@ -77,7 +72,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версии 1.3 подключаемого модуля API управления источника)  
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Извлекает список файлов из системы управления версиями без пользовательского интерфейса.|  
@@ -95,4 +90,3 @@ API подключаемых модулей исходный элемент уп
 ## <a name="see-also"></a>См. также  
  [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
  [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md)
-

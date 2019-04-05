@@ -1,27 +1,22 @@
 ---
 title: Определение требований к системе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993971"
 ---
 # <a name="detecting-system-requirements"></a>Определение требований к системе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,8 +45,7 @@ ms.locfileid: "51763403"
 |Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detecting-when-visual-studio-is-running"></a>Обнаружение при запуске Visual Studio  
- Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: используйте `EnumProcesses` функция для обнаружения процесса devenv.exe и затем либо задать свойство установщика, используемый в условие запуска или по условию отображать диалоговое окно, которое предлагает пользователю закрыть Visual Studio.  
+ Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: Используйте `EnumProcesses` функция для обнаружения процесса devenv.exe и затем либо задать свойство установщика, используемый в условие запуска или по условию отображать диалоговое окно, которое предлагает пользователю закрыть Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

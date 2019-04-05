@@ -1,14 +1,9 @@
 ---
 title: Работа с данными метрик кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd746ca463808ddc3ab70d795af88f6dff53f860
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978670"
 ---
 # <a name="working-with-code-metrics-data"></a>Работа с данными метрик кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51775892"
 ##  <a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window  
  **Результатов метрики кода** окно имеет панель инструментов в верхней и столбцов для отображения вычисленные результаты.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**иерархии**|**Иерархии** столбец содержит древовидное представление иерархии кода, который можно разворачивать и сворачивать на уровень детализации. В остальных столбцах показана вычисленные результаты. Можно скрывать или Упорядочьте столбцов результатов, как требуется.|  
 |**удобства обслуживания**|**Удобства поддержки** столбец содержит значок помимо числового результата. Зеленый значок указывает на относительно высокая степень удобства поддержки. Желтый значок указывает среднюю степень удобства поддержки. Красный значок указывает на низкий поддерживаемость и потенциально проблемный участок. Эти индикаторы цвета соответствуют категориям серьезности, которые используются правилом FxCop под названием AvoidUnmaintainableCode. Это правило срабатывает ошибку, если индекс удобства поддержки меньше 10, предупреждение, если индекс находится между 10 и 20 и ошибка ни предупреждение, если индекс больше 20. Индекс удобства поддержки вычисляется на основе трех метрик: цикломатической сложности, строк кода и сложность вычислений. Его значения не выражаются в единицах измерения.|  
@@ -129,7 +124,7 @@ ms.locfileid: "51775892"
 ##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Создание рабочего элемента, в зависимости от результатов метрики кода  
  Можно создать [!INCLUDE[esprfound](../includes/esprfound-md.md)] приводит рабочий элемент, основанный на **Результаты метрик кода** окна. Когда создается рабочий элемент, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически вводит название в **Title** поля и данные метрик кода в разделе **журнал** вкладки.  
   
- Дополнительные сведения о создании рабочих элементов см. в разделе [создать рабочий элемент &#91;перенаправлено&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ Дополнительные сведения о создании рабочих элементов см. в разделе [создать рабочий элемент &#91;перенаправлено&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Чтобы создать рабочий элемент, на основе результата  
   
@@ -154,6 +149,3 @@ ms.locfileid: "51775892"
 ## <a name="see-also"></a>См. также  
  [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
  [Практическое руководство. Создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
-
-
-

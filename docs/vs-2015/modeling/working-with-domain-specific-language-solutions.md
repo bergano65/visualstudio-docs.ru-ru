@@ -1,23 +1,20 @@
 ---
 title: Работа с решениями на предметно ориентированного языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980869"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Работа с решениями на доменных языках
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "49190298"
  [Выбор шаблона решения на доменном языке](../modeling/choosing-a-domain-specific-language-solution-template.md)  
  В этой статье описывается выберите шаблон, чтобы запустить проект DSL.  
   
- [Практическое руководство. Создание решения на доменном языке](../modeling/how-to-create-a-domain-specific-language-solution.md)  
+ [Практическое руководство. Создание решения на предметно-ориентированном языке](../modeling/how-to-create-a-domain-specific-language-solution.md).  
  Описаны шаги для настройки доменного языка.  
   
  [Работа со схемой определений доменных языков](../modeling/working-with-the-dsl-definition-diagram.md)  
@@ -46,14 +43,11 @@ ms.locfileid: "49190298"
  [Работа с обозревателем доменного языка](../modeling/working-with-the-domain-specific-language-explorer.md)  
  Объясняет содержимое обозревателя  
   
- [Практическое руководство. Изменение пространства имен доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
+ [Практическое руководство. Изменение пространства имен предметно-ориентированного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
  Код, который создается из DSL имеет пространство имен, заданное при запуске решения, но его можно изменить позже.  
   
- [Практическое руководство. Расширение конструктора доменного языка](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Практическое руководство. Расширение конструктора предметно-ориентированных языков](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Вы можете настроить конструктор DSL с помощью команд меню.  
   
- [Автоматизация преобразования все шаблоны](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Автоматизация преобразования все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Чтобы избежать, щелкнув преобразовать все шаблоны, его можно сделать автоматически в процессе построения.
-
-
-

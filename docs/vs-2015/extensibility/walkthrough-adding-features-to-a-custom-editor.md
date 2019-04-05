@@ -1,26 +1,21 @@
 ---
-title: 'Пошаговое руководство: Добавление функций в специализированный редактор | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Добавление функций в специализированный редактор | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994580"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление функций в специализированный редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ ms.locfileid: "51737043"
   
 12. Реализация поддержки контекстной справки.  
   
-     Это позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения об этом см. в разделе [как: предоставляют контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
+     Это позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения об этом см. в разделе [как: Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Предоставляют объектную модель автоматизации из редактора, реализовав `IDispatch` интерфейс.  
   
@@ -161,5 +156,4 @@ ms.locfileid: "51737043"
   
 ## <a name="see-also"></a>См. также  
  [Дополнение к модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Практическое руководство. Предоставление контекста для редакторов](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Практическое руководство. Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)

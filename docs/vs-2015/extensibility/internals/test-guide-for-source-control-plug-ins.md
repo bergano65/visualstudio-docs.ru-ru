@@ -1,14 +1,9 @@
 ---
 title: Руководство для подключаемых модулей системы управления версиями тестирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eea089da8c8e0b7e626f58660a57cd499a93fb7c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990723"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Руководство по тестированию подключаемых модулей системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ ms.locfileid: "51778915"
  Клиентский проект  
  Какой-либо проект типов, доступных в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с поддержкой интеграции системы управления версиями (например, [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], или [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]).  
   
- Веб-проекта  
- Существует четыре типа веб-проектов: файловой системы, локальный сервер IIS, удаленных сайтов и FTP.  
+ веб-проект  
+ Существует четыре типа веб-проектов: Файловая система, локальный сервер IIS, удаленных сайтов и FTP.  
   
 - Файл системы проекты создаются в локальный путь, но они не требуют Internet Information Services (IIS) для установки как внутренне доступен по UNC-пути и могут быть помещены в систему управления версиями из интегрированной среды разработки, как клиентские проекты.  
   
@@ -62,56 +57,55 @@ ms.locfileid: "51778915"
   
 ## <a name="test-areas-covered-in-this-section"></a>Тест, описываемые в этом разделе  
   
--   [Область тестирования 1. Добавление и открытие элементов в системе управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Область тестирования 1. Добавление и открытие из системы управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case 1a: добавить решение в систему управления версиями  
+    -   Case 1a. Добавить решение в систему управления версиями  
   
-    -   Case 1b: Откройте решение из системы управления версиями  
+    -   Case 1b: Открытие решения из системы управления версиями  
   
-    -   Case 1c: Добавление решения из системы управления версиями  
+    -   Вариант 1c: Добавьте решение из системы управления версиями  
   
--   [Область тестирования 2. Получение элемента из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Область тестирования 2. Получить из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Область тестирования 3. Извлечение и отмена извлечения](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Область тестирования 3. Ознакомьтесь с / отменить извлечение](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Вариант 3: Извлечение / отменить извлечение  
+    -   Вариант 3. Ознакомьтесь с / отменить извлечение  
   
-    -   Case 3a: Ознакомьтесь с  
+    -   Case 3a: Извлечение  
   
-    -   Case 3b: отключен извлечения  
+    -   Case 3b. Отключенный извлечения  
   
-    -   Case 3c: запрос редактирования/запроса сохранить (QEQS)  
+    -   Вариант 3c. Запрос редактирования/запроса сохранить (QEQS)  
   
     -   Case 3d: Автоматическая извлечения  
   
-    -   Case 3e: отменить извлечение  
+    -   Case 3Д. Отменить извлечение  
   
--   [Область тестирования 4. Возврат](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Область тестирования 4. Зарегистрируйся](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Case 4a: элементы изменены  
+    -   Case 4а. Элементы, измененные  
   
-    -   Case 4b: Добавление файлов  
+    -   Case 4б. Добавление файлов  
   
-    -   Case 4c: добавление проектов  
+    -   Вариант 4c. Добавление проектов  
   
--   [Область тестирования 5. Изменение системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Область тестирования 5. Смена системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case 5а: привязка  
+    -   Case 5а. Привязка  
   
-    -   Case 5b: отменить привязку  
+    -   Case 5б. отменить привязку  
   
-    -   Case 5c: повторная привязка  
+    -   Вариант 5c. повторную привязку  
   
 -   [Область тестирования 6. Удаление](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Область тестирования 7. Предоставление общего доступа](../../extensibility/internals/test-area-7-share.md)  
+-   [Область тестирования 7. Предоставить общий доступ](../../extensibility/internals/test-area-7-share.md)  
   
 -   [Области тестирования 8. Переключение подключаемых модулей](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case 8a: автоматическое изменение  
+    -   Case 8a: Автоматическое изменение  
   
-    -   Case 8b: изменение на основе решений  
+    -   Case 8b: Изменение на основе решений  
   
 ## <a name="see-also"></a>См. также  
  [Подключаемые модули системы управления версиями](../../extensibility/source-control-plug-ins.md)
-

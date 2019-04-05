@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: создать библиотеку конструкторов действий | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создать библиотеку конструкторов действий | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993495"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>Как создать библиотеку конструкторов действий
+# <a name="how-to-create-an-activity-designer-library"></a>Практическое руководство. создать библиотеку конструктора действий
 Конструкторы пользовательских действий позволяют создать пользовательский интерфейс для стандартного или пользовательского действия. Вы управляете сложностью пользовательского интерфейса и можете создать более одного конструктора операций для конкретного действия. Этот сценарий позволяет создать конструкторы, специально созданные для нескольких аудиторий.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Создание Библиотеки конструктора рабочих процессов  
