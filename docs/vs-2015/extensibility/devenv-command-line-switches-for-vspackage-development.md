@@ -1,14 +1,9 @@
 ---
 title: Параметры командной строки devenv для разработки VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -21,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97900d5d23fae8f097ce5f2951f9fb13866f2a1e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992913"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Параметры командной строки для команды devenv для разработки VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51749139"
 ## <a name="guidelines-for-switches"></a>Рекомендации для коммутаторов  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] документация описывает параметры командной строки devenv уровня пользователя. Дополнительные сведения см. в разделе [командной строки devenv](../ide/reference/devenv-command-line-switches.md). Devenv также поддерживает дополнительные параметры командной строки, которые можно использовать с VSPackage разработки, развертывания и отладки.  
   
-|Параметр командной строки|Описание:|  
+|Параметр командной строки|Описание|  
 |--------------------------|-----------------|  
 |/SafeMode|Запускает [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в безопасном режиме, загружая только по умолчанию интегрированная среда разработки и служб. /Safemode предотвращает всех пакетов VSPackage сторонних при загрузке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускается, обеспечивая надежность работы.<br /><br /> У этого параметра нет аргументов.|  
 |/ resetskippkgs|Очищает все пропустить параметры загрузки, добавленные пользователями, желающими исключить загрузку проблемных пакетов VSPackage, затем запускает [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Наличие тега SkipLoading отключает загрузку пакета VSPackage. Удаление этого тега снова включает загрузку пакета VSPackage.<br /><br /> У этого параметра нет аргументов.|  
@@ -55,4 +50,3 @@ ms.locfileid: "51749139"
 ## <a name="see-also"></a>См. также  
  [Добавление параметров командной строки](../extensibility/adding-command-line-switches.md)   
  [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)
-

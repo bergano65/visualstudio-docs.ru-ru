@@ -1,14 +1,9 @@
 ---
 title: Отладка в смешанном режиме поддерживается только при использовании Microsoft.NET Framework 2.0 или 3.0 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1248ab59841ccd2861507bbf075fcbeb93959ae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 760763855064cabb096fca0b8012ede9ea9dbde1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58991324"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Отладка в смешанном режиме поддерживается только при использовании платформы Microsoft .NET Framework 2.0 или 3.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,26 +38,23 @@ ms.locfileid: "51753042"
   
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>Изменение операционной системы на 32-разрядную версию (Visual Basic или C#)  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства** в контекстном меню.  
+1.  Правой кнопкой мыши щелкните проект в **обозревателе решений**, а затем выберите в контекстном меню пункт **Свойства**.  
   
-2.  На страницах свойств нажмите кнопку **компиляции** или **Отладка** вкладки.  
+2.  На страницах свойств выберите вкладку **Компиляция** или **Отладка**.  
   
-3.  Нажмите кнопку **платформы**, а затем выберите **x86** из списка платформ.  
+3.  Выберите пункт **Платформа**, а затем в списке платформ выберите пункт **x86**.  
   
-     По умолчанию компиляторы Visual Basic и С# создают код, который можно использовать на любом ЦП. На 64-разрядном компьютере такие двоичные файлы работают как 64-разрядные процессы. Чтобы запустить в 32-разрядном процессе, необходимо выбрать **Win32**, а не **AnyCPU**.  
+     По умолчанию компиляторы Visual Basic и С# создают код, который можно использовать на любом ЦП. На 64-разрядном компьютере такие двоичные файлы работают как 64-разрядные процессы. Чтобы использовать 32-разрядный процесс, необходимо выбрать **Win32**, а не **AnyCPU**.  
   
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>Изменение операционной системы на 32-разрядную версию (C или C++)  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства** в контекстном меню.  
+1.  Правой кнопкой мыши щелкните проект в **обозревателе решений**, а затем выберите в контекстном меню пункт **Свойства**.  
   
-     На страницах свойств нажмите кнопку **платформы**, а затем выберите **Win32** из списка платформ.  
+     На страницах свойств нажмите кнопку **Платформа**, а затем в списке платформ выберите **Win32**.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   См. в разделе [настройки отладки SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   См. в разделе [настройки отладки SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Настройка элементов и элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992774"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Настройка элементов и панели элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  Задайте **значок панели элементов** свойство для ссылки точечного рисунка 16 x 16.  
   
-     Если вы хотите определить новый значок, создайте файл точечного рисунка в обозревателе решений в **Dsl\Resources** папки. Файл должен содержать следующие значения свойств: **действие при построении** = **содержимого**; **Копировать в выходной каталог** = **не Копировать**.  
+     Если вы хотите определить новый значок, создайте файл точечного рисунка в обозревателе решений в **Dsl\Resources** папки. Файл должен содержать следующие значения свойств: **Действие при сборке** = **содержимого**; **Копировать в выходной каталог** = **не Копировать**.  
   
-4.  **Для средства элемента:** задать **класс** средства для ссылки на конкретный класс домена, сопоставляемого с фигурой.  
+4.  **Для средства элемента:** Задайте **класс** средства для ссылки на конкретный класс домена, сопоставляемого с фигурой.  
   
-     **Для средства подключения:** задать **построитель подключения** свойство средства на один из элементов, предлагаемых в раскрывающемся списке. Построители подключений автоматически создаются при сопоставлении соединителя с доменной связью. Сразу после создания соединителя, как правило, выбирается соответствующий построитель подключений.  
+     **Для средства подключения:** Задайте **построитель подключения** свойство средства на один из элементов, предлагаемых в раскрывающемся списке. Построители подключений автоматически создаются при сопоставлении соединителя с доменной связью. Сразу после создания соединителя, как правило, выбирается соответствующий построитель подключений.  
   
 5.  Чтобы проверить DSL, нажмите клавишу F5 или сочетание клавиш CTRL + F5 и откройте в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] пример файла модели. На панели элементов должно появиться новое средство. Перетащите его на схему, чтобы проверить, создает ли оно новый элемент.  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>См. также  
  [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)   
  [Настройка функции копирования](../modeling/customizing-copy-behavior.md)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Переход и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Пример схемы канала DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

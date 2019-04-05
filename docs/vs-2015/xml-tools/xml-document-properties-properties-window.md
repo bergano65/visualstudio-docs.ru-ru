@@ -1,25 +1,20 @@
 ---
 title: Свойства XML-документа, окно "Свойства" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957abb04b6da602b711bef55b8ff8e62edaecaac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994265"
 ---
 # <a name="xml-document-properties-properties-window"></a>Свойства XML-документа, окно «Свойства»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "49236565"
 ## <a name="see-also"></a>См. также  
  [Редактор XML](../xml-tools/xml-editor.md)   
  [Компоненты редактора XML](../xml-tools/xml-editor-components.md)
-
-
-

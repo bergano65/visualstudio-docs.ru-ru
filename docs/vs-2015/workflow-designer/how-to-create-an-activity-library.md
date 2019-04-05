@@ -1,25 +1,22 @@
 ---
-title: 'Практическое: создать библиотеку действий | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создать библиотеку действий | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341e87459cbaae204baba66108a5944eb1f7f97f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58990659"
 ---
-# <a name="how-to-create-an-activity-library"></a>Как создать библиотеку действий
+# <a name="how-to-create-an-activity-library"></a>Практическое руководство. создать библиотеку действий
 Пользовательские действия используются для определенных бизнес-процессов в рабочем процессе. В [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеется шаблон библиотеки действий, который позволяет визуально создавать такие пользовательские действия при помощи средства [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Создание библиотеки действий рабочих процессов  
@@ -51,5 +48,5 @@ ms.locfileid: "49271836"
     >  В теле настраиваемого действия допускается включать только одно дочернее действие; однако это дочернее действие может состоять из нескольких компонентов, например, действия <xref:System.Activities.Statements.Sequence> или <xref:System.Activities.Statements.Flowchart> activity.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Практическое руководство. Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Создание проекта рабочего процесса](../workflow-designer/creating-a-workflow-project.md)

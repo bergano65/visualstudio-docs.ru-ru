@@ -1,26 +1,21 @@
 ---
 title: Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 693f4560d181aa765946bdd971f835ee651daed1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993795"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51759954"
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
-|`STR_SCCPROVIDERPATH`|Данный параметр|  
+|`STR_SCCPROVIDERPATH`|SCCServerPath|  
 |`STR_SCCPROVIDERNAME`|SCCServerName|  
 |`STR_SCC_INI_SECTION`|Системы управления исходным кодом|  
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
@@ -55,6 +50,5 @@ ms.locfileid: "51759954"
   
 ## <a name="see-also"></a>См. также  
  [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
- [Как: установить подключаемый модуль системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Практическое руководство. Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Файл MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)
-

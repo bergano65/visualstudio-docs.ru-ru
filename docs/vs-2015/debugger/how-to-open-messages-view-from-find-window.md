@@ -1,14 +1,9 @@
 ---
-title: 'Как: Открытие представления сообщений из окна поиска | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Открытие представления сообщений из окна поиска | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -16,15 +11,15 @@ ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64d32064ef20b1f7e188624a5a91ffd231b82b66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989526"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. Открытие представления сообщений из окна поиска
+# <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. открытие представления сообщений из окна поиска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Может оказаться удобнее использовать **найти окно** диалоговое окно для выбора конечного окна, а затем откройте представление сообщений окна.  
@@ -45,7 +40,7 @@ ms.locfileid: "51801255"
   
 4.  В разделе **Показать**выберите **сообщений**.  
   
-5.  Нажмите клавишу **ОК**.  
+5.  Нажмите кнопку **ОК**.  
   
      Пустое [представления сообщений](../debugger/messages-view.md) откроется окно и **сообщений** меню добавляется на панель инструментов Spy ++.  
   
@@ -60,6 +55,3 @@ ms.locfileid: "51801255"
      В зависимости от выбранных параметров сообщения начнут передаваться потоком в активное окно представления сообщений.  
   
 9. При наличии достаточного количества сообщений, выберите **остановить ведение журнала** из **сообщений** меню.
-
-
-

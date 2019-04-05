@@ -1,26 +1,21 @@
 ---
-title: 'Пошаговое руководство: Связывание типа контента с расширением имени файла | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Связывание типа контента с расширением имени файла | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992573"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа контента с расширением имени файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +92,7 @@ ms.locfileid: "51739876"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Добавление типа содержимого к экспорту редактора  
   
-1.  Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Добавьте в класс, определенный в этой процедуре.  
   
@@ -110,4 +105,3 @@ ms.locfileid: "51739876"
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
-

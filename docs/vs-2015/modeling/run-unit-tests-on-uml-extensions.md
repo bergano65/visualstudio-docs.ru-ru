@@ -1,23 +1,20 @@
 ---
 title: Выполнение модульных тестов для расширений UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58992753"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Выполнение модульных тестов для расширений UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -290,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}  
 ```  
   
- Если требуется протестировать метод, который принимает импортированное свойство в качестве параметра, свойство необходимо импортировать в класс теста и применить `SatisfyImportsOnce` к экземпляру теста. Например:  
+ Если требуется протестировать метод, который принимает импортированное свойство в качестве параметра, свойство необходимо импортировать в класс теста и применить `SatisfyImportsOnce` к экземпляру теста. Пример:  
   
 ```  
   
@@ -343,7 +340,7 @@ using System.ComponentModel.Composition;
 ```  
   
  Определение интерфейса теста  
- Определите интерфейс, который включает открытые члены тестируемого класса и дополнительные свойства и методы для закрытых членов, которые будут использоваться тестами. Добавьте этот интерфейс в тестируемый проект. Например:  
+ Определите интерфейс, который включает открытые члены тестируемого класса и дополнительные свойства и методы для закрытых членов, которые будут использоваться тестами. Добавьте этот интерфейс в тестируемый проект. Пример:  
   
 ```csharp  
 internal interface MyClassTestInterface {  
@@ -354,7 +351,7 @@ internal interface MyClassTestInterface {
  }  
 ```  
   
- Добавьте методы в тестируемый класс, чтобы явно реализовать методы доступа. Отделите эти дополнительные методы от основного класса, записав их в определение разделяемого класса в отдельном файле. Например:  
+ Добавьте методы в тестируемый класс, чтобы явно реализовать методы доступа. Отделите эти дополнительные методы от основного класса, записав их в определение разделяемого класса в отдельном файле. Пример:  
   
 ```csharp  
 partial public class MyClass  
@@ -373,7 +370,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
 ```  
   
- В методах модульного теста используйте интерфейс теста. Например:  
+ В методах модульного теста используйте интерфейс теста. Пример:  
   
 ```csharp  
 MyClassTestInterface testInstance = new MyClass();  
@@ -385,9 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Это наименее рекомендуемый способ. Старые версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] включали служебную программу, которая автоматически создавала метод доступа для каждого открытого метода. Опыт показывает, что хотя это и удобно, но приводит к тому, что модульные тесты становятся сильно привязанными к внутренней структуре приложения, для тестирования которого они используются. В результате приходится делать лишнюю работу в случае изменения требований или архитектуры, так как тесты нужно изменять вместе с реализацией. Кроме того, любые ошибочные допущения в проекте реализации также встраиваются в тесты, что не позволяет им находить ошибки.  
   
 ## <a name="see-also"></a>См. также  
- [Anatomy of a Unit Test](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
+ [Anatomy of a Unit Test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML — быстрый ввод текста](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Подготовка к отладке: Windows Forms приложений | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,20 +22,20 @@ ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4997aa5f184fb5d6f0e9a3ccd08a9d829c26a0cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993951"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: приложения Windows Forms
+# <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: Приложения Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не вызывает никаких затруднений. Дополнительные сведения см. в разделе [Создание проекта приложения Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не вызывает никаких затруднений. Дополнительные сведения см. в разделе [Создание проекта приложения Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
- При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры можно изменить в  **\<имя проекта > страницы свойств** диалоговое окно (**Мой проект** в Visual Basic).  
+ При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры могут быть изменены в диалоговом окне **Страницы свойств \<имя проекта>** (**Мой проект** в Visual Basic).  
   
  Дополнительные сведения см. в разделе [рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).  
   
@@ -50,7 +45,7 @@ ms.locfileid: "51765626"
   
 |**Имя свойства**|**Параметр**|  
 |-----------------------|-----------------|  
-|**Действие при запуске**|— Организует **Открытие проекта** большую часть времени. Значение **запуск внешней программы** Если требуется запускать другой исполняемый файл при запуске отладки (обычно для отладки DLL).|  
+|**Действие при запуске**|— Установите **Запуск проекта** в большинстве случаев. Установите **Запуск внешней программы**, если требуется запускать другой исполняемый файл при запуске отладки (обычно для отладки DLL).|  
   
  Можно выполнять отладку приложений Windows Forms из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или путем присоединения к уже запущенному приложению. Дополнительные сведения о присоединении см. в разделе [подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -70,18 +65,15 @@ ms.locfileid: "51765626"
   
       Подробнее см. в разделе [Создание обработчиков событий в Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3. На **Отладка** меню, щелкните **запустить**.  
+3. В меню **Отладка** выберите команду **Запуск**.  
   
 4. Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
  [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Практическое: Настройка отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Практическое руководство. Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
-
-
-

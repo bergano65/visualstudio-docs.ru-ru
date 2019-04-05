@@ -1,27 +1,22 @@
 ---
 title: Идентификаторы GUID среды IDE | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c427caf79ebbd6c63753b28139814ade148b88e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6131e27dbe4018fa1db415ba1690870c4bffa10c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58980949"
 ---
 # <a name="ide-guids"></a>Идентификаторы GUID среды IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51801840"
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|  
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|  
   
-## <a name="ui-contexts"></a>Контексты пользовательского интерфейса  
+## <a name="ui-contexts"></a>UI Contexts  
   
 |Константа|Идентификатор GUID|  
 |--------------|----------|  
@@ -135,4 +130,3 @@ ms.locfileid: "51801840"
  [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md)   
  [Константы среды IDE](../extensibility/ide-constants.md)   
  [Команды, определенные в интегрированной среде разработки, для расширения систем проектов](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Практическое: отключение предупреждений анализа созданного кода | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Отключение предупреждений анализа созданного кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 07858183af427e2b67e1e0f63d1f8889caf72fbe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979611"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Практическое руководство. Отключение предупреждений анализа созданного кода
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Практическое руководство. Отключение предупреждений в ходе анализа созданного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Компиляторы управляемого кода часто создают код, который добавляется в проект для упрощения разработки кода. Кроме того разработчики часто используют сторонние средства для быстрой разработки приложений. Эти средства также создают код, который добавляется в проект.  
@@ -40,6 +35,3 @@ ms.locfileid: "49293752"
 2.  Нажмите кнопку **анализ кода**.  
   
 3.  Выберите **подавлять результаты из созданного кода** "флажок".
-
-
-
