@@ -1,26 +1,21 @@
 ---
-title: 'Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage | Документация Майкрософт'
-ms.custom: ''
+title: Вопросы и ответы Преобразование надстроек в расширения VSPackage | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993579"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Часто задаваемые вопросы. Преобразование надстроек в расширения VSPackage
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Вопросы и ответы Преобразование надстроек в расширения VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.  
@@ -57,7 +52,7 @@ ms.locfileid: "51817351"
   
      Откроется второй экземпляр Visual Studio. Он называется экспериментальным экземпляром и может содержать не такие настройки, как экземпляр Visual Studio, используемый для написания кода. При первом запуске экспериментального экземпляра будет выдано предложение зайти в VS Online и определить тему и профиль.  
   
-     На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **мое имя команды**. При нажатии этой кнопки должно появиться сообщение: **внутри TestVSPackagePackage.MenuItemCallback()**.  
+     На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **мое имя команды**. При нажатии этой кнопки появляется сообщение: **В TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?  
  Код надстройки можно запустить одним из двух способов.  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

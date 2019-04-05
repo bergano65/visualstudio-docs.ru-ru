@@ -1,14 +1,9 @@
 ---
 title: Памяти Windows | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724245"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58993835"
 ---
 # <a name="memory-windows"></a>Окно памяти
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ ms.locfileid: "51724245"
 2.  Введите или вставьте адрес, см. в разделе, а затем нажмите клавишу **ввод**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Изменение способа отображения информации в окне памяти  
- Можно настроить способ **памяти** окне отображается содержимое памяти. По умолчанию содержимое памяти отображается в виде шестнадцатеричных однобайтовых целых чисел, а количество столбцов определяется автоматически исходя из текущей ширины окна.  
+ Можно настроить способ отображения содержимого памяти в окне **Память**. По умолчанию содержимое памяти отображается в виде шестнадцатеричных однобайтовых целых чисел, а количество столбцов определяется автоматически исходя из текущей ширины окна.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Изменение формата содержимого памяти  
   
@@ -105,7 +100,7 @@ ms.locfileid: "51724245"
   
     Если вычисление в режиме реального времени включено, параметр будет помеченным, и щелчок мышью по этому параметру выключит вычисление. Если вычисление в режиме реального времени выключено, параметр будет непомеченным, и щелчок мышью по этому параметру включит вычисление.  
   
-   Можно скрывать или отображать панель инструментов в верхней части **памяти** окна. Если панель инструментов скрыта, поле "Адрес" и другие средства недоступны.  
+   Можно скрывать или отображать панель инструментов в верхней части окна **Память**. Если панель инструментов скрыта, поле "Адрес" и другие средства недоступны.  
   
 #### <a name="to-toggle-the-toolbar"></a>Включение или отключение панели инструментов  
   
@@ -128,8 +123,3 @@ ms.locfileid: "51724245"
   
 ## <a name="see-also"></a>См. также  
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-
