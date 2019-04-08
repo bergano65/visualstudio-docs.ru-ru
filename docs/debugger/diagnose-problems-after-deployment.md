@@ -1,5 +1,5 @@
 ---
-title: Диагностика проблем после развертывания | Документация Майкрософт
+title: Диагностика проблем после развертывания | Документация Майкрософт
 ms.date: 04/10/2018
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,61 +8,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316890"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857779"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Диагностика проблем после развертывания, с помощью IntelliTrace (C#, Visual Basic)
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Диагностика проблем после развертывания с помощью IntelliTrace (C#, Visual Basic)
 
 Для диагностики проблем в веб-приложении ASP.NET после развертывания с помощью IntelliTrace включите сведения о построении в свою версию, чтобы Visual Studio могла автоматически найти нужные исходные файлы и файлы символов, необходимые для отладки журнала IntelliTrace.
 
  Если для управления IntelliTrace используется Microsoft Monitoring Agent, то также необходимо настроить параметры наблюдения за производительностью приложения на веб-сервере. При этом будет выполняться регистрация событий диагностики во время выполнения приложения и сохранение событий в файл журнала IntelliTrace. События можно будет просматривать в Visual Studio Enterprise (но не в выпусках Professional и Community), переходить к коду, в котором возникло событие, просматривать записанные значения на этот момент времени и переходить вперед и назад по выполнявшемуся коду. После того как вы найдете и исправите проблему, повторите цикл, включая сборку, выпуск и отслеживание выпуска, что позволит раньше выявлять и быстрее решать возможные проблемы в будущем.
 
- ![Кода, сборки, выпуска, мониторинг, диагностика и исправление](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![Написание кода, сборка, выпуск, мониторинг, диагностика, исправление](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Требуется:**
 
--   Visual Studio, Azure DevOps или Team Foundation Server 2017, 2015, 2013, 2012 или 2010 для настройки сборки
+-   Visual Studio, Azure DevOps или Team Foundation Server 2017, 2015, 2013, 2012 или 2010 для настройки сборки
 
 -   Microsoft Monitoring Agent для отслеживания приложения и регистрации данных диагностики;
 
 -   Visual Studio Enterprise (но не выпуск Professional или Community) для просмотра данных диагностики и отладки кода с помощью IntelliTrace.
 
-##  <a name="SetUpBuild"></a> Шаг 1. Включение в выпуск сведений о сборке
+##  <a name="SetUpBuild"></a> Шаг 1. Включение в выпуск сведений о сборке
  Настройте процесс построения для создания манифеста сборки (файл *BuildInfo.config*) для веб-проекта и включите этот манифест в выпуск. Этот манифест содержит сведения о проекте, систему управления версиями и систему сборки, которые использовались для создания конкретной сборки. Эти сведения позволяют Visual Studio найти соответствующий источник и символы после открытия журнала IntelliTrace для просмотра записанных событий.
 
 ###  <a name="AutomatedBuild"></a> Создание манифеста сборки для автоматизированной сборки с помощью Team Foundation Server
 
  Выполните эту процедуру, если вы используете систему управления версиями Team Foundation или Git.
 
-####  <a name="TFS2017"></a> Azure DevOps и Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps и Team Foundation Server 2017
 
-Visual Studio 2017 не включает *BuildInfo.config* файл, который был устаревшей, а затем удалены. Чтобы выполнить отладку веб-приложений ASP.NET после развертывания, используйте один из следующих методов.
+Visual Studio 2017 и более поздние версии не включают в себя файл *BuildInfo.config*, который устарел, а затем был удален. Чтобы выполнить отладку веб-приложений ASP.NET после развертывания, используйте один из следующих методов.
 
-* Для развертывания в Azure, используйте [Application Insights](https://docs.microsoft.com/azure/application-insights/).
+* Для развертывания в Azure используйте [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
-* Если необходимо использовать IntelliTrace, откройте проект в Visual Studio и загружать файлы символов из соответствующего построения. Вы можете загрузить файлы символов из **модули** окна или путем настройки символов в **средства** > **параметры** > **Отладка**   >  **Символы**.
+* Если необходимо использовать IntelliTrace, откройте проект в Visual Studio и загрузите файлы символов из соответствующей сборки. Вы можете загрузить файлы символов из окна **Модули** или путем настройки символов, выбрав **Средства** > **Параметры** > **Отладка** > **Символы**.
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- Настройте процесс сборки, чтобы добавить расположение источника, сборки и символов в манифест сборки (файл BuildInfo.config). Team Foundation Build автоматически создает этот файл и помещает его в выходную папку проекта.
+ Настройте конвейер сборки, чтобы добавить расположения исходного кода, сборки и символов в манифест сборки (файл BuildInfo.config). Team Foundation Build автоматически создает этот файл и помещает его в выходную папку проекта.
 
-1.  [Изменить процесс сборки или создайте конвейер сборки.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1.  [Измените конвейер сборки или создайте новый конвейер сборки.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
-     ![Просмотр сборки в TFS 2013 конвейер](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Просмотр конвейера сборки в TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2.  Выберите шаблон по умолчанию (TfvcTemplate.12.xaml) или свой собственный пользовательский шаблон.
 
-     ![Выбор шаблона процесса сборки &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![Выбор шаблона процесса сборки &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3.  Укажите место сохранения файла символов (PDB-файла), чтобы исходный код индексировался автоматически.
 
      Если используется пользовательский шаблон, убедитесь, что в нем есть действие для индексации исходного кода. Позднее вы добавите аргумент MSBuild, чтобы указать расположение для сохранения файлов символов.
 
-     ![Настройка пути к символам в конвейер сборки TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![Настройка пути к символам в конвейере сборки TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      Дополнительные сведения о символах см. в разделе [Публикация символьных данных](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
 
@@ -76,7 +76,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      **/p:BuildSymbolStorePath=**\<*путь к символам*>
 
-     ![Включить сведений о сервере сборки в определение сборки-TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
+     ![Включение сведений о сервере сборки в определение сборки TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
      Кроме того, добавьте следующие строки в файл веб-проекта (CSPROJ-файл, VBPROJ-файл).
 
@@ -97,11 +97,11 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
 1.  Установите любой выпуск Visual Studio 2013 на сервер сборки Team Foundation Build.
 
-2.  В процесс сборки укажите место сохранения символов, чтобы источник индексируется автоматически.
+2.  В конвейере сборки укажите место сохранения символов, чтобы исходный код индексировался автоматически.
 
      Если используется пользовательский шаблон, убедитесь, что в нем есть действие для индексации исходного кода.
 
-3.  Добавьте следующие аргументы MSBuild в ваш конвейер сборки:
+3.  Добавьте следующие аргументы MSBuild в конвейер сборки.
 
     -   **/p:VisualStudioVersion=12.0**
 
@@ -147,13 +147,13 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 ###  <a name="MSBuild"></a> Создание манифеста сборки для ручной сборки с помощью MSBuild.exe
  Добавьте следующие аргументы сборки при выполнении сборки:
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
  **/p:IncludeServerNameInBuildInfo=True**
 
  **/p:BuildSymbolStorePath=**\<*путь к символам*>
 
-##  <a name="DeployRelease"></a> Шаг 2. Выпуск приложения
+##  <a name="DeployRelease"></a> Шаг 2. Выпуск приложения
  Если вы используете [пакет Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) , который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещается в ту же папку, что и файл Web.config приложения на веб-сервере.
 
  Если для развертывания приложения вы используете другие методы, убедитесь, что манифест сборки переименован из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещен в ту же папку, что и файл Web.config приложения, на веб-сервере.
@@ -161,7 +161,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 ## <a name="step-3-monitor-your-app"></a>Шаг 3. Отслеживание работы приложения
  Настройте отслеживание производительности приложения на веб-сервере, чтобы отслеживать проблемы приложения, регистрировать события диагностики и сохранять эти события в файл журнала IntelliTrace. См. раздел [Отслеживание проблем развертывания для выпуска](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents"></a> Шаг 4. Поиск проблем
+##  <a name="InvestigateEvents"></a> Шаг 4. Поиск проблем
  Для просмотра записанных событий и отладки кода с помощью IntelliTrace на компьютере разработки или другом компьютере должна быть установлена среда Visual Studio Enterprise. Кроме того, можно использовать такие средства, как CodeLens, карты отладчика и карты кода, которые помогают диагностировать проблемы.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Открытие журнала IntelliTrace и соответствующего решения
@@ -174,15 +174,15 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      Перед внесением любых изменений убедитесь в наличии правильного источника. Если используется ветвление, вы можете работать в ветви, которая отличается от той, в которой Visual Studio находит соответствующий исходный код, например в ветви выпуска.
 
-     ![Откройте решение из журнала IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
+     ![Открытие решения из журнала IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
      При наличии рабочей области, сопоставленной с этим решением или проектом, Visual Studio выбирает эту рабочую область для размещения найденного исходного кода.
 
-     ![Открыть из системы управления версиями в сопоставленной рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![Открытие из системы управления версиями в сопоставленной рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      В противном случае выберите другую рабочую область или создайте новую рабочую область. Visual Studio сопоставит всю ветвь с этой рабочей областью.
 
-     ![Открыть из системы управления версиями &#45; создать новую рабочую область](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![Открытие из системы управления версиями &#45; создание новой рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      Для создания рабочей области с конкретными сопоставлениями или с именем, отличным от имени вашего компьютера, щелкните **Управление**.
 
@@ -210,25 +210,25 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      Если метод находится в коде приложения, Visual Studio перейдет к этому методу.
 
-     ![Перейдите к коду приложения из события производительности](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Переход к коду приложения из события производительности](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      Теперь можно просмотреть другие записанные значения, стек вызова, выполнить пошаговый обход кода или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между другими методами](../debugger/intellitrace.md) , которые вызывались в ходе этого события производительности.
 
     - [Что означают остальные события и данные в журнале IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
-    - [Что еще можно сделать отсюда?](#WhatElse)
+    - [What else can I do from here?](#WhatElse)
     - [Требуются дополнительные сведения о событиях производительности?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Диагностика исключения
 
 1.  В области **Данные исключения**просмотрите записанные события исключения, их типы, сообщения и время возникновения исключений. Чтобы глубже изучить код, начните отладку из последнего события в группе исключений.
 
-     ![Запуск отладки из события исключения](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![Начало отладки с события исключения](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      Можно также просто открыть событие двойным щелчком.
 
      Если исключение возникло в коде приложения, Visual Studio переходит туда, где произошло исключение.
 
-     ![Перейдите к коду приложения из события исключения](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![Переход к коду приложения из события исключения](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
      Теперь можно просмотреть другие записанные значения, стек вызова или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между различными записанными событиями](../debugger/intellitrace.md), по связанному с ними коду и значениям, записанным в эти моменты времени.
 
@@ -238,13 +238,13 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
 -   [Дополнительные сведения о данном коде](../ide/find-code-changes-and-other-history-with-codelens.md). Чтобы найти ссылки на этот код, журнал изменений, связанные ошибки, рабочие элементы, проверки кода или модульные тесты, не выходя из окна редактора, используйте индикаторы CodeLens.
 
-     ![CodeLens &#45; просмотреть ссылки на этот код](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; просмотр ссылки на этот код](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens &#45; Просмотр журнала изменений для этого кода](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; просмотр журнала изменений для этого кода](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 -   [Сопоставьте текущую позицию в коде во время отладки.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Чтобы визуально отслеживать методы, которые были вызваны во время сеанса отладки, сопоставьте стек вызовов.
 
-     ![Сопоставление стека вызовов при отладке](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
+     ![Сопоставление стека вызова при отладке](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ###  <a name="FAQ"></a> Вопросы и ответы
 
@@ -262,7 +262,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
 3.  Убедитесь, что файл содержит необходимые сведения:
 
-- **ProjectName**
+- **ИмяПроекта**
 
    Имя проекта в Visual Studio. Например:
 
@@ -360,14 +360,14 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 ####  <a name="IneligibleWorkspace"></a>В. Почему Visual Studio сообщает, что выбранная рабочая область недопустима?
  **О.** Выбранная рабочая область не имеет сопоставлений между папкой системы управления версиями и локальной папкой. Чтобы создать сопоставление для данной рабочей области, щелкните **Управление**. В противном случае выберите уже сопоставленную рабочую область или создайте новую рабочую область.
 
- ![Открыть из системы управления версиями без сопоставленной рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
+ ![Открытие из системы управления исходным кодом без сопоставленной рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a>В. Почему невозможно продолжать работу до тех пор, пока не будет выбрана командная или другая коллекция?
  **О.** Это может произойти по любой из следующих причин.
 
 -   Программа Visual Studio не подключена к TFS.
 
-     ![Открыть из системы управления версиями &#45; не подключен](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![Открытие из системы управления исходным кодом &#45; нет подключения](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 -   Программа Visual Studio не нашла решение или проект в текущей командной коллекции.
 
@@ -377,12 +377,12 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      Указанный сервер TFS может больше не содержать соответствующий источник или вовсе не существовать в результате перехода на новый TFS. Если указанный TFS не существует, по прошествии приблизительно минуты время ожидания Visual Studio завершится, и вам будет предложено подключиться к другой коллекции. Для продолжения подключитесь к правильному серверу TFS.
 
-     ![Открыть из системы управления версиями &#45; перенесены](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Открытие из системы управления исходным кодом &#45; перенесено](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> В. Что такое рабочая область?
  **О.** В [рабочей области хранится копия источника](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) , и ее можно разрабатывать и тестировать отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.
 
 ####  <a name="UntrustedSymbols"></a>В. Почему появляется сообщение о ненадежных символах?
- ![Отладка с путем ненадежных символах? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![Начать отладку с путем к ненадежным символам?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **О.** Это сообщение появляется, когда путь к символам в файле манифеста сборки (\<*имя_проекта*>.BuildInfo.config) не включен в список доверенных путей к символам. Добавить путь к списку путей к символам можно в параметрах отладчика.

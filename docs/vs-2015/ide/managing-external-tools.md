@@ -1,5 +1,5 @@
 ---
-title: Управление внешними инструментами | Документация Майкрософт
+title: Управление внешними инструментами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763327"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866770"
 ---
 # <a name="managing-external-tools"></a>Управление внешними инструментами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ ms.locfileid: "54763327"
   
 3.  Инструмент трассировки ATL/MFC: отображает сообщения трассировки отладки в источниках ATL и MFC.  
   
-4.  PreEmptive Dotfuscator и Analytics: Защищает программы платформы .NET от реконструирования.  
+4.  PreEmptive Protection — Dotfuscator. Защищает программы платформы .NET от реконструирования.  
   
-5.  SPY++ Графически отображает процессы, потоки, windows и окно сообщения.  
+5.  SPY++: отображает процессы, потоки, окна и сообщения окон в графической форме.  
   
-6.  &Редактор конфигураций службы WCF Позволяет создавать и изменять параметры конфигурации для служб WCF.  
+6.  Редактор конфигураций службы WCF: позволяет создавать и изменять параметры конфигурации для служб WCF.  
   
 > [!WARNING]
 >  Вы можете увидеть другой список внешних инструментов, в зависимости от установленного выпуска Visual Studio и примененных параметров профиля. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -122,4 +122,4 @@ ms.locfileid: "54763327"
 |Имя файла решения|$(SolutionFileName)|Имя файла текущего решения (диск + путь + имя файла).|  
   
 ## <a name="see-also"></a>См. также раздел  
- [Средства сборки С/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Средства построения С/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
