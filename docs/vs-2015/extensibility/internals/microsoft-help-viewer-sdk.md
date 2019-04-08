@@ -63,7 +63,7 @@ ms.locfileid: "58980418"
 
 - javascript
 
-- c# или c#
+- C# или C#
 
 - cplusplus или visualc ++ или c ++
 

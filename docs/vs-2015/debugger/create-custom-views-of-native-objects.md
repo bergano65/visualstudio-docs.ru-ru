@@ -1,14 +1,9 @@
 ---
 title: Создание настраиваемых представлений собственных объектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58979231"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Создание настраиваемых представлений собственных объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -323,7 +318,7 @@ ms.locfileid: "51732499"
 
  Объект `CStringT` выглядит следующим образом:  
 
- ![Элемент CStringT DisplayString](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
+ ![CStringT DisplayString element](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
 
  Визуализация отображает объект `CStringT` в окне переменной следующим образом:  
 
@@ -353,7 +348,7 @@ ms.locfileid: "51732499"
 -   Если узел `Expand` указан без дочерних узлов в нем, тип нельзя будет развернуть в окнах отладчика.  
 
 ####  <a name="BKMK_Item_expansion"></a> Расширение элемента  
- Элемент `Item` — самый простой и самый распространенный элемент для использования в узле `Expand` . `Item` определяет один дочерний элемент. Например, предположим, что имеется класс `CRect` с `top`, `left`, `right` и `bottom` в качестве его полей и следующая запись визуализации:  
+ Элемент `Item` — самый простой и самый распространенный элемент для использования в узле `Expand` . `Item` определяет один дочерний элемент. Например, предположим, что имеется класс `CRect` с `top`, `left`, `right`и `bottom` в качестве его полей и следующая запись визуализации:  
 
 ```xml  
 <Type Name="CRect">  
@@ -432,7 +427,7 @@ ms.locfileid: "51732499"
  ![Двумерный массив с расширением ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> Расширение IndexListItems  
- Можно использовать расширение `ArrayItems` только в том случае, если элементы массива располагаются в памяти непрерывно. Отладчик переходит к следующему элементу, просто увеличивая свой указатель на текущий элемент. В случаях, когда необходимо манипулировать индексом узла значения, можно использовать узлы `IndexListItems`. Здесь приводится визуализация, использующая узел `IndexListItems` .  
+ Можно использовать расширение `ArrayItems` только в том случае, если элементы массива располагаются в памяти непрерывно. Отладчик переходит к следующему элементу, просто увеличивая свой указатель на текущий элемент. В случаях, когда необходимо манипулировать индексом узла значения, можно использовать узлы `IndexListItems` . Здесь приводится визуализация, использующая узел `IndexListItems` .  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -478,7 +473,7 @@ ms.locfileid: "51732499"
 -   Можно оставить поле `ValueNode` пустым или использовать `this` для ссылки на сам узел связанного списка.  
 
 #### <a name="customlistitems-expansion"></a>Расширение LinkedListItems  
- Расширение `CustomListItems` позволяет записывать настраиваемую логику для обхода структуры данных, например хэш-таблицы. `CustomListItems` следует использовать для визуализации структур данных, в которых все, что нужно вычислить, можно выразить через выражения C++, но не вполне подходит под определение `ArrayItems`, `TreeItems`или `LinkedListItems.`.  
+ Расширение `CustomListItems` позволяет записывать настраиваемую логику для обхода структуры данных, например хэш-таблицы.  `CustomListItems` следует использовать для визуализации структур данных, в которых все, что нужно вычислить, можно выразить через выражения C++, но не вполне подходит под определение `ArrayItems`, `TreeItems`или `LinkedListItems.`.  
 
  Визуализатор для CAtlMap является отличным примером подходящих ситуаций для использования `CustomListItems` .  
 
@@ -532,7 +527,7 @@ ms.locfileid: "51732499"
 
 ```  
 
- Синтаксис очень похож на узел `LinkedListItems`. `LeftPointer`, `RightPointer`и `ValueNode` вычисляются в контексте класса узла дерева, и поле `ValueNode` может оставаться пустым или иметь значение `this` , чтобы ссылаться на сам узел дерева.  
+ Синтаксис очень похож на узел `LinkedListItems` . `LeftPointer`, `RightPointer`и `ValueNode` вычисляются в контексте класса узла дерева, и поле `ValueNode` может оставаться пустым или иметь значение `this` , чтобы ссылаться на сам узел дерева.  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Расширение ExpandedItem  
  Элемент `ExpandedItem` может использоваться для создания агрегированного дочернего представления путем отображения свойств базовых классов или данных-членов так, как будто они являются дочерними элементами визуализируемого типа. Указанное выражение вычисляется, и дочерние узлы результата добавляются в список дочерних элементов визуализируемого типа. Например, предположим, что у нас есть интеллектуальный указатель типа `auto_ptr<vector<int>>` , который обычно будет отображаться следующим образом:  
@@ -632,12 +627,9 @@ ms.locfileid: "51732499"
 </Type>  
 ```  
 
- Пример UIVisualizer см. в расширении, используемом для просмотра находящихся в памяти растровых изображений: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Вы увидите пример UIVisualizer в расширении Image Watch можно просматривать в памяти растровых изображений: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>Элемент CustomVisualizer  
  `CustomVisualizer` — это точка расширяемости, указывающая расширение VSIX, которое можно написать для управления визуализацией в коде, который выполняется в Visual Studio. Дополнительные сведения о создании расширений VSIX см. в разделе [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Написание настраиваемого визуализатора гораздо сложнее, чем написание XML-определения Natvis, но с ним не связаны ограничения поддержки Natvis. Настраиваемые визуализаторы имеют доступ к полному набору API-интерфейсов расширения отладчика, которые можно использовать для запроса и изменения отлаживаемого процесса или взаимодействия с другими частями Visual Studio.  
 
  Для элементов CustomVisualizer можно использовать атрибуты `Condition`, `IncludeView`и `ExcludeView` .
-
-
-

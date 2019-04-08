@@ -1,10 +1,16 @@
 ---
 layout: HubPage
 hide_bc: true
-title: "Продукты Visual Studio\_|\_Документация Майкрософт"
+title: Продукты Visual Studio | Документация Майкрософт
 description: Изучите семейство продуктов Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017996"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -24,7 +30,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio для Mac</h3>
-                                                    <p>Создавайте приложения и игры при помощи компьютера Mac, облака, iOS, Android, macOS и носимых устройств.</p>
+                                                    <p>Разработка приложений и игр для iOS, Android, настольных компьютеров и браузера с помощью .NET.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +100,7 @@ searchScope: []
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/subscriptions/" title="Подписки на Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Подписки Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
