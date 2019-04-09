@@ -1,6 +1,6 @@
 ---
 title: Обращайтесь к нам
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953527"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857142"
 ---
 # <a name="visual-studio-product-feedback"></a>Отзыв о продукте Visual Studio
 
@@ -24,11 +26,11 @@ ms.locfileid: "56953527"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Я хочу сообщить о проблеме с Visual Studio
 
-При возникновении проблем с Visual Studio &mdash; сбоев, снижения производительности или непредвиденного поведения &mdash; свяжитесь с нами с помощью средства **Report a Problem** (Сообщить о проблеме). В Visual Studio выберите значок отзыва рядом с кнопкой **быстрого запуска** или последовательно выберите в строке меню пункты **Справка** > **Отправить отзыв** > **Report a Problem (Сообщить о проблеме)**. После этого Visual Studio откроет в браузере страницу [сообщества разработчиков](https://developercommunity.visualstudio.com), где можно выполнить вход, чтобы сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
+При возникновении проблем с Visual Studio &mdash; сбоев, снижения производительности или непредвиденного поведения &mdash; свяжитесь с нами с помощью средства **Report a Problem** (Сообщить о проблеме). В Visual Studio выберите значок отзыва рядом с полем поиска или выберите в строке меню пункты **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. После этого Visual Studio откроет в браузере страницу [сообщества разработчиков](https://developercommunity.visualstudio.com), где можно выполнить вход, чтобы сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Я хочу внести предложение по поводу возможностей Visual Studio
 
-Если мы можем что-то сделать лучше, сообщите нам об этом! В Visual Studio выберите **Справка** > **Отправить отзыв** > **Provide a Suggestion (Отправить предложение)** в строке меню. После этого Visual Studio откроет в браузере страницу [сообщества разработчиков](https://developercommunity.visualstudio.com), где можно выполнить вход, чтобы поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio 2017](suggest-a-feature.md).
+Если мы можем что-то сделать лучше, сообщите нам об этом! В Visual Studio выберите **Справка** > **Отправить отзыв** > **Provide a Suggestion (Отправить предложение)** в строке меню. После этого Visual Studio откроет в браузере страницу [сообщества разработчиков](https://developercommunity.visualstudio.com), где можно выполнить вход, чтобы поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Оценить этот продукт
 
@@ -36,7 +38,7 @@ ms.locfileid: "56953527"
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Я хочу обратиться в службу поддержки Майкрософт
 
-Дополнительные сведения о поддержке Visual Studio см. в описании [жизненного цикла поддержки и обслуживания](/visualstudio/productinfo/vs-servicing-vs).
+Дополнительные сведения о поддержке Visual Studio см. на странице с описанием [жизненного цикла продукта и обслуживания](/visualstudio/productinfo/vs-servicing-vs).
 
 Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://go.microsoft.com/fwlink/?LinkID=99019).
 
@@ -55,10 +57,10 @@ ms.locfileid: "56953527"
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Я хочу помочь улучшить качество документации по Visual Studio
 
-Используйте кнопку обратной связи **Была ли эта страница полезной?** внизу страницы. Эта кнопка имеется на всех страницах документации. Кроме того, можно добавить отзыв на любую страницу Visual Studio на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) в разделе "Примечания", используя кнопку **входа для предоставления отзыва о документации** (также внизу страницы).
+Используйте кнопку обратной связи **Была ли эта страница полезной?** внизу страницы. Эта кнопка имеется на всех страницах документации. Кроме того, можно добавить отзыв на любую страницу Visual Studio на [сайте docs.microsoft.com](https://docs.microsoft.com/visualstudio/) с использованием вашей учетной записи GitHub. Нажмите кнопку **входа для предоставления отзыва о документации** (также внизу страницы).
 
 ## <a name="see-also"></a>См. также
 
-* [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md)
+* [Как сообщить о проблеме с Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Сообщество разработчиков](https://developercommunity.visualstudio.com)
-* [Конфиденциальность данных в сообществе разработчиков](developer-community-privacy.md)
+* [Конфиденциальность данных сообщества разработчиков](developer-community-privacy.md)
