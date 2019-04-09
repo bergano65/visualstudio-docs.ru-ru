@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223732"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232753"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Практическое руководство. Создание данных для метрик кода
 
-Вы можете создать Результаты метрик кода для одного или нескольких проектов или всего решения. Метрики кода доступен в среде разработки Visual Studio (IDE), а также для C# и проекты Visual Basic, в командной строке.
+Данные метрик кода можно создать тремя способами:
 
-Кроме того, можно установить [пакет NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , включает в себя четыре метрики кода [анализатор](roslyn-analyzers-overview.md) правила: CA1501, CA1502, CA1505 и CA1506. Эти правила отключены по умолчанию, но вы можете включить их из **обозревателе решений** или в [набор правил](using-rule-sets-to-group-code-analysis-rules.md) файл.
+- Установив [анализаторы FxCop](#fxcop-analyzers-code-metrics-rules) и включение правил четыре кода метрики (удобства поддержки), он содержит.
 
-## <a name="visual-studio-ide-code-metrics"></a>Метрики кода для Visual Studio IDE
+- Выбрав [ **анализ** > **Рассчитать метрики кода** ](#calculate-code-metrics-menu-command) команды меню в Visual Studio.
+
+- Из [командной строки](#command-line-code-metrics) для C# и проекты Visual Basic.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Анализаторы FxCop правила метрик кода
+
+[Пакет FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) включает в себя несколько метрик кода [анализатор](roslyn-analyzers-overview.md) правила:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Эти правила отключены по умолчанию, но вы можете включить их из [ **обозревателе решений** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) или в [набор правил](using-rule-sets-to-group-code-analysis-rules.md) файл. Например чтобы включить правило CA1502 как предупреждение, RULESET-файл будет содержать следующую запись:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Параметр Configuration
+
+Вы можете настроить пороговые значения, по которым правила метрик кода в анализаторы FxCop упаковать пожара.
+
+1. Создание текстового файла. В качестве примера можно назвать его *CodeMetricsConfig.txt*.
+
+2. Добавьте необходимые пороги текстового файла в следующем формате:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   В этом примере правило [CA1502](ca1502-avoid-excessive-complexity.md) настраивается на срабатывание при метода Цикломатическая сложность превышает 10.
+
+3. В **свойства** окно Visual Studio, или в файле проекта, пометить действие построения о файле конфигурации как [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Пример:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Рассчитать метрики кода команды меню
 
 Создание метрики кода для один или все открытые проекты в интегрированной среде разработки с помощью **анализ** > **Рассчитать метрики кода** меню.
 
@@ -54,7 +100,8 @@ ms.locfileid: "57223732"
 > **Рассчитать метрики кода** команда не работает для проектов .NET Core и .NET Standard. Чтобы рассчитать метрики кода для проекта .NET Core или .NET Standard, вы можете:
 >
 > - Рассчитать метрики кода из [командной строки](#command-line-code-metrics) вместо
-> - обновление до Visual Studio 2019 г.
+>
+> - Обновление до [2019 г. Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 

@@ -1,15 +1,9 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 3ded7e5593f40f469ad93dd64e27c24be37b3ed4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868970"
 documentType: LandingData
 title: Перенос из анализа кода FxCop анализаторы платформы компилятора .NET
 metadata:
   title: Документация по переносу FxCop
-  description: Узнайте, как для миграции из прежних версий FxCop анализаторы для анализа кода.
+  description: 'Узнайте, как для миграции из прежних версий FxCop анализаторы для анализа кода.'
   ms.date: 07/18/2018
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -18,86 +12,86 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: Узнайте об анализе кода в первый раз, а также способы перехода с FxCop для анализа управляемого кода, с помощью анализаторов новым образом.
+  description: 'Узнайте об анализе кода в первый раз, а также способы перехода с FxCop для анализа управляемого кода, с помощью анализаторов новым образом.'
   aside:
     image:
       alt: Распространенные логотип задачи управления
       height: 133
       width: 48
-      src: https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg
-    title: 
+      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
+    title: null
 sections:
-- title: Вопросы и ответы
-  items:
-  - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">ответы на вопросы о</a> о различиях между FxCop и анализаторы.
-- title: Если вы еще не работали с анализом кода...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - title: Вопросы и ответы
     items:
-    - href: roslyn-analyzers-overview.md
-      html: <p>Узнайте, что такое анализаторы.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: Обзор анализаторов
-    - href: install-roslyn-analyzers.md
-      html: <p>Сведения об установке анализаторы как пакет NuGet или расширения Visual Studio.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Установка анализаторов
-    - href: use-roslyn-analyzers.md
-      html: <p>Узнайте, как использовать анализаторы и запретить для нарушений C# или Visual Basic.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      title: Задайте уровень серьезности правила и и отключить ошибки
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>Сведения об использовании анализаторов из командной строки.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: Использование командной строки
-- title: Если вы являетесь пользователем FxCop...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">ответы на вопросы о</a> о различиях между FxCop и анализаторы.
+  - title: Если вы еще не работали с анализом кода...
     items:
-    - href: roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis
-      html: <p>Ознакомьтесь с различиями анализа кода пакета анализатора и статические (FxCop).</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: Чем отличается?
-    - href: install-fxcop-analyzers.md
-      html: <p>Узнайте, как установить пакет анализатора FxCop.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Установка анализаторов FxCop
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>Если обычно выполняется анализ кода из командной строки, сведения об использовании анализаторов из командной строки.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: Использование командной строки
-    - href: analyzer-rule-sets.md
-      html: <p>Дополнительные сведения о наборах правил анализатора пакетов.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: Наборы правил
-- title: Связанные статьи
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: roslyn-analyzers-overview.md
+            html: '<p>Узнайте, что такое анализаторы.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: Обзор анализаторов
+          - href: install-roslyn-analyzers.md
+            html: <p>Сведения об установке анализаторы как пакет NuGet или расширения Visual Studio.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Установка анализаторов
+          - href: use-roslyn-analyzers.md
+            html: '<p>Узнайте, как использовать анализаторы и запретить для нарушений C# или Visual Basic.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
+            title: Задайте уровень серьезности правила и отключить ошибки
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: <p>Сведения об использовании анализаторов из командной строки.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: Использование командной строки
+  - title: Если вы являетесь пользователем FxCop...
     items:
-    - href: code-analysis-for-c-cpp-overview.md
-      html: <p>Узнайте, как запустить анализ кода для машинного кода C++. Анализа управляемого кода C++ является устаревшим.</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-      title: Анализ кода C++
-    - href: code-metrics-values.md
-      html: <p>Узнайте, как получить метрики кода. Взаимодействие с пользователем для метрик кода остается неизменной.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_data-collection.svg
-      title: Метрики кода
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
+            html: <p>Ознакомьтесь с различиями анализа кода пакета анализатора и статические (FxCop).</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: Чем отличается?
+          - href: install-fxcop-analyzers.md
+            html: '<p>Узнайте, как установить пакет анализатора FxCop.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: "Установка анализаторов\_FxCop"
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: '<p>Если обычно выполняется анализ кода из командной строки, сведения об использовании анализаторов из командной строки.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: Использование командной строки
+          - href: analyzer-rule-sets.md
+            html: <p>Дополнительные сведения о наборах правил анализатора пакетов.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: Наборы правил
+  - title: Связанные статьи
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: code-analysis-for-c-cpp-overview.md
+            html: '<p>Узнайте, как запустить анализ кода для машинного кода C++. Анализа управляемого кода C++ является устаревшим.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+            title: Анализ кода C++
+          - href: code-metrics-values.md
+            html: '<p>Узнайте, как получить метрики кода. Взаимодействие с пользователем для метрик кода остается неизменной.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
+            title: Метрики кода

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916769"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232321"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502. Избегайте чрезмерной сложности
 
@@ -44,11 +44,11 @@ ms.locfileid: "55916769"
 
 сложность организации циклов = количеству краев - количество узлов + 1
 
-где узел представляет логическую точку ветвления и ребро представляет линию между узлами.
+Объект *узел* представляет логическую точку ветвления и *edge* представляет линию между узлами.
 
 Правило сообщает о нарушение при более чем 25 цикломатической сложности.
 
-Дополнительные сведения о метриках кода в [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md),
+Дополнительные сведения о метриках кода в [измерения сложность управляемого кода](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
@@ -102,7 +102,7 @@ ms.locfileid: "55916769"
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1501: Избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501. Избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>См. также
 
