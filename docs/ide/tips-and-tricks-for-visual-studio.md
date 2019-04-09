@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223368"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790372"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Сочетания клавиш в Visual Studio
 
@@ -51,8 +51,8 @@ ms.locfileid: "57223368"
 |-|-|
 |Искать в обозревателе решений|**CTRL**+**;**|
 |Поместить фокус в поле поиска в любом окне инструментов|**ALT**+**`**, когда окно инструментов в фокусе|
-|Быстрый запуск|**CTRL**+**Q**|
-|Быстрый запуск — задание области результатов|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|
+|Поле поиска|**CTRL**+**Q**|
+|Область результатов поиска|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|
 |Искать в "Инструменты" > "Параметры"|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Поиск в редакторе

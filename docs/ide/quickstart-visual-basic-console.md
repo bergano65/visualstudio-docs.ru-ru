@@ -2,6 +2,7 @@
 title: Создание первого консольного приложения на Visual Basic
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения "Hello World" на Visual Basic в Visual Studio.
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d0ccaf648d4109679b7d1343df462ae4e8da3822
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415841"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856247"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
 
@@ -32,7 +33,7 @@ ms.locfileid: "58415841"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -90,7 +91,7 @@ ms.locfileid: "58415841"
 
 1. В поле **Имя проекта** окна **Настроить новый проект** введите *WhatIsYourName*. Затем нажмите **Создать**.
 
-   ![В окне "Настроить новый проект" назовите проект "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   ![В окне "Настроить новый проект" назовите проект "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    Новый проект открывается в Visual Studio.
 

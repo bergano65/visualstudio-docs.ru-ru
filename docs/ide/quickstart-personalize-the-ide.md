@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869335"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646703"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
 
-В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
+В этом кратком (на 5 –10 минут) учебнике мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 
@@ -30,7 +30,17 @@ ms.locfileid: "57869335"
 
    Цветовая тема для всей среды разработки (IDE) Visual Studio изменяется на **Темная**.
 
-   ![VS с темной темой](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 в темной теме](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 в темной теме](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке **Цветовая тема** появятся дополнительные темы.

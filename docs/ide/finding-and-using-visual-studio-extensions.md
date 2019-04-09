@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268548"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790762"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Поиск и использование расширений Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "58268548"
 
 ::: moniker range=">=vs-2019"
 
-Используйте диалоговое окно **Управление расширениями** для установки расширений Visual Studio и управления ими. Чтобы открыть диалоговое окно **Управление расширениями**, выберите **Расширения** > **Управление расширениями**. Или введите строку **Расширения** в поле поиска **Быстрый запуск**, а затем выберите **Управление расширениями**.
+Используйте диалоговое окно **Управление расширениями** для установки расширений Visual Studio и управления ими. Чтобы открыть диалоговое окно **Управление расширениями**, выберите **Расширения** > **Управление расширениями**. Или введите строку **Расширения** в поле поиска, а затем выберите **Управление расширениями**.
 
 ::: moniker-end
 

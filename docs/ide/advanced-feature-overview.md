@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268605"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790541"
 ---
 # <a name="features-of-visual-studio"></a>Возможности Visual Studio
 
@@ -118,7 +118,7 @@ Visual Studio предлагает набор инструментов, позв
 
 Team Foundation Server (TFS) — это центр управления жизненным циклом приложений для Visual Studio. Он позволяет всем лицам, участвующим в процессе разработки, использовать единое решение. TFS также полезен для управления разнородными командами и проектами.
 
-При наличии организации Azure DevOps или Team Foundation Server в сети к ним можно подключиться из окна **Team Explorer** в Visual Studio. В этом окне можно извлекать и возвращать код в систему управления версиями, управлять рабочими элементами, запускать сборки и получать доступ к комнатам команд и рабочим областям. **Team Explorer** можно открыть с помощью панели **быстрого запуска** или из главного меню: **Вид** > **Team Explorer** или **Команда** > **Управление подключениями**.
+При наличии организации Azure DevOps или Team Foundation Server в сети к ним можно подключиться из окна **Team Explorer** в Visual Studio. В этом окне можно извлекать и возвращать код в систему управления версиями, управлять рабочими элементами, запускать сборки и получать доступ к комнатам команд и рабочим областям. Team Explorer **можно открыть** с помощью поля поиска или из главного меню **Вид** > **Team Explorer** или **Команда** > **Управление подключениями**.
 
 На изображении ниже показано окно **Team Explorer** для решения, размещенного в Azure DevOps Services.
 

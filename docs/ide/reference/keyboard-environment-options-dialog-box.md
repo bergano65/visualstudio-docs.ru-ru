@@ -10,16 +10,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934644"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647119"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Страница «Клавиатура», папка «Среда», диалоговое окно «Параметры»
+# <a name="options-dialog-box-environment--keyboard"></a>Диалоговое окно "Параметры": Страница "Клавиатура" \> папка "Среда"
+
 Эта страница служит для назначения клавиш клавиатуры. Дополнительные сведения о назначении клавиш см. в разделе [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

@@ -1,6 +1,6 @@
 ---
 title: Страница "Расширения", папка "Среда", диалоговое окно "Параметры"
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983940"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646716"
 ---
-# <a name="extensions-environment-options-dialog-box"></a>Страница "Расширения", папка "Среда", диалоговое окно "Параметры"
+# <a name="options-dialog-box-environment--extensions"></a>Диалоговое окно "Параметры": Страница "Расширения" \> папка "Среда"
 
 Эта страница служит для указания параметров выполнения обновлений в Visual Studio и параметров обновления и обнаружения расширений.
 
@@ -29,7 +29,7 @@ ms.locfileid: "57983940"
 
 Если флажок установлен, обновления расширений выполняются без вывода запроса. Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Загружать пользовательские расширения при запуске от имени администратора
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Загружать пользовательские расширения при запуске от имени администратора
 
 Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
@@ -37,6 +37,6 @@ ms.locfileid: "57983940"
 
 Функция выпуска Enterprise, которая обеспечивает поддержку галерей собственных расширений. Дополнительные сведения см. в статье [Закрытые коллекции](../../extensibility/private-galleries.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)
