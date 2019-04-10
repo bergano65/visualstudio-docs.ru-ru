@@ -12,17 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476076"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857818"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -31,7 +32,7 @@ ms.locfileid: "58476076"
 Хотите обновить предыдущую версию Visual Studio? Вот что Visual Studio 2017 может предложить вам: Visual Studio 2017 обеспечивает беспрецедентную производительность для любого устройства, приложения или платформы. Используйте Visual Studio 2017 для разработки приложений для Android, iOS, Windows, Linux, а также веб-приложений и облачных приложений. Быстро пишите код, выполняйте отладку и диагностику с легкостью, часто тестируйте и уверенно создавайте выпуски решений. Visual Studio можно расширить и настроить, создав собственные расширения. Система управления версиями в этом выпуске делает разработку гибкой, а совместную работу — эффективной.
 
 >[!div class="button"]
->[Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Скачивание Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Ниже приведен общий обзор изменений, внесенных с момента выпуска предыдущей версии — Visual Studio 2015:
 
@@ -109,9 +110,9 @@ Visual Studio перемещает свои расширения, а также 
 
 * ![Значок перемещаемого расширения](media/vs2017ide-roamedicon.png) **_Перемещено_**. Расширение включено в список перемещаемых, но еще не установлено на этом компьютере.
   (Такие расширения можно установить с помощью кнопки **Скачать**.)
-* ![Значок перемещаемого и установленного расширения](media/vs2017ide-roamedinstalledicon.png) **_Перемещено и установлено_**: Все расширения из списка перемещаемых, установленные в среде разработки.
+* ![Значок перемещаемого и установленного расширения](media/vs2017ide-roamedinstalledicon.png) **_Перемещено и установлено_**. Все расширения из списка перемещаемых, установленные в среде разработки.
   (Если вы решите, что перемещать расширение не нужно, его можно удалить с помощью кнопки **Остановить перемещение**.)
-* ![Значок установленного расширения](media/vs2017ide-installedicon.png) **_Установлено_**: Все расширения установлены в среде, но не включены в список перемещаемых.
+* ![Значок установленного расширения](media/vs2017ide-installedicon.png) **_Установлено_**. Все расширения установлены в среде, но не включены в список перемещаемых.
   (Расширения можно добавить в список перемещаемых с помощью кнопки **Начать перемещение**.)
 
 Любое расширение, скачанное после того, как вы выполнили вход в систему, будет добавлено в список перемещаемых как **перемещаемое и установленное**. Это расширение включается в ваш список перемещения, а значит, будет доступно на любом компьютере.
@@ -386,6 +387,6 @@ Visual Studio перемещает свои расширения, а также 
 * [Новые возможности пакета SDK для Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Новые возможности C#](/dotnet/csharp/whats-new)
-* [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)
+* [Новые возможности Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Новые возможности Visual Studio для Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Новые возможности Visual Studio 2019](whats-new-visual-studio-2019.md)
+* [Новые возможности Visual Studio 2019](whats-new-visual-studio-2019.md)

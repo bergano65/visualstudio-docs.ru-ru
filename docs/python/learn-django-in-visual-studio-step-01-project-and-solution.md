@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, демонстрирующих поддержку Visual Studio для разработки Django.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355741"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366423"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Учебник. Начало работы с веб-платформой Django в Visual Studio
 
@@ -205,7 +205,7 @@ ms.locfileid: "58355741"
 На данный момент основной проект Django не содержит приложений. Вы создаете приложение на следующем шаге. Так как вы обычно больше работаете с приложениями Django, чем с проектом Django, нет необходимости подробнее изучать стереотипные файлы.
 
 > [!div class="nextstepaction"]
-> [Tutorial step 2: Create a Django app with views and page templates](learn-django-in-visual-studio-step-02-create-an-app.md) (Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц)
+> [Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 
