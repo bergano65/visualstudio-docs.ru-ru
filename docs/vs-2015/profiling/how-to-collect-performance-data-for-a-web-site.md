@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
+title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766156"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366735"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных производительности для веб-сайта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Для сбора данных о производительности веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] можно использовать **Мастер производительности**. Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], или веб-сайт [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+В целях сбора данных о производительности для веб-приложения **можно использовать** Мастер производительности [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], или веб-сайт [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 >  **Мастер производительности** позволяет добавлять данные об уровневом взаимодействии (TIP) и/или данные о производительности JScript в собранные данные профилирования. TIP собирает данные из процессов на стороне сервера. Профилирование JScript собирает данные из скриптов, выполняющихся на локальном или удаленном веб-сайте. В большинстве случаев следует выбрать только один из этих параметров.  
@@ -84,7 +84,7 @@ ms.locfileid: "54766156"
   
    - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.  
   
-   - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.  
+   - Для внешних сайтов, который вы хотите собирать данные JavaScript, введите URL-адрес, например http:\//www.contoso.com.  
   
      Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -102,7 +102,7 @@ ms.locfileid: "54766156"
   
      Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   

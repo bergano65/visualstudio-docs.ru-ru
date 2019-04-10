@@ -1,25 +1,22 @@
 ---
 title: Определение команды меню на схеме моделирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978728"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ ms.locfileid: "51809107"
 2. Добавьте в проект указанные ниже ссылки.  
 
 
-   |                                                                                                    Ссылки                                                                                                    |                                                                                                  Это она позволяет сделать                                                                                                  |
+   |                                                                                                    Ссылка                                                                                                    |                                                                                                  Возможности                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Определение компонентов с помощью [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Чтение и изменение свойств элементов модели.                                                                                         |
@@ -189,7 +186,7 @@ ms.locfileid: "51809107"
 
  ...  
 
- Объявление `IDiagramContext` позволяет создавать в методах код, осуществляющий доступ к схеме, выбранному элементу и модели:  
+ Объявление `IDiagramContext` позволяет создавать код в методах, осуществляющих доступ к схеме, текущему выделению и модели:  
 
 ```  
 IDiagram diagram = this.DiagramContext.CurrentDiagram;  
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
 
-     **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
+     **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
 
     -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Откройте контекстное меню в любом месте схемы. Команда должна появиться в меню.  
 
-     **Устранение неполадок**. Если команда не отображается в меню, убедитесь в следующем:  
+     **Устранение неполадок**: Если команда не отображается в меню, убедитесь, что:  
 
     -   Проект команды меню указан в качестве компонента MEF на вкладке **Активы** в **source.extensions.manifest** проекта VSIX.  
 
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Редактирование схем последовательностей UML с помощью UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)   
- [Образец: Команда для выравнивания фигур на схеме UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [Пример. Команда для выравнивания фигур на схеме UML](http://go.microsoft.com/fwlink/?LinkID=213809)
