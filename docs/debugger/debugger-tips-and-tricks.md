@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526364"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366306"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
@@ -106,7 +106,7 @@ ms.locfileid: "57526364"
 
 ![Визуализатор строки JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Несколько других типов таких как WPF-объектов, которые отображаются в окнах отладчика можно также открыть визуализаторы.
+Для нескольких других типов например объектами DataSet и DataTable, которые отображаются в окнах отладчика также можно открыть встроенные визуализатора.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Приостановка выполнения кода на обработанные исключения
 
@@ -165,5 +165,5 @@ ms.locfileid: "57526364"
 - [7 менее известные взлома для отладки в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 Скрытые жемчужины в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)

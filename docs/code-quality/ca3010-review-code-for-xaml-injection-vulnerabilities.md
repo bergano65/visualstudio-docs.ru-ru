@@ -1,5 +1,5 @@
 ---
-title: 'CA3010: Просмотр кода для уязвимости к внедрению XAML'
+title: CA3010. Проверьте код на наличие уязвимостей к внедрению кода XAML
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018674"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365020"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Просмотр кода для уязвимости к внедрению XAML
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010. Проверьте код на наличие уязвимостей к внедрению кода XAML
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018674"
 
 ## <a name="cause"></a>Причина
 
-HTTP-запрос, потенциально небезопасных входных данных достигает <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> метод Load.
+HTTP-запрос, потенциально небезопасных входных данных достигает <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> метод Load.
 
 ## <a name="rule-description"></a>Описание правила
 

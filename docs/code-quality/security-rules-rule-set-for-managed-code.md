@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018393"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366046"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
 Следует включить правила безопасности корпорации Майкрософт набора правил в максимально увеличить количество потенциальных проблем безопасности, включенные в отчет.
@@ -63,15 +63,18 @@ ms.locfileid: "59018393"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Сборки должны иметь допустимые строгие имена|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Просмотр кода для уязвимости введения SQL|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Просмотр кода для уязвимости к XSS|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению путь файла|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Просмотр кода для уязвимости раскрытия информации|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению LDAP|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению команда процесса|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Просмотр кода для уязвимости открытого перенаправления|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению XPath|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению XML|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению XAML|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению библиотеки DLL|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Просмотр кода для уязвимости к внедрению регулярных выражений|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Не используйте небезопасных десериализатор BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Не вызывайте BinaryFormatter.Deserialize предварительно задать BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Убедитесь, что перед вызовом BinaryFormatter.Deserialize задается BinaryFormatter.Binder|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Проверьте код на наличие уязвимостей к раскрытию информации|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению LDAP|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению команд процесса|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Проверьте код на наличие уязвимостей к открытому перенаправлению|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XPath|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XML|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению DLL|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
