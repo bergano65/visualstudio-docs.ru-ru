@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868095"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504150"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 
@@ -38,7 +38,7 @@ ms.locfileid: "57868095"
 [Оператор Stop в Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Описывает оператор `Stop`, который представляет собой альтернативу указанию точки останова. Кроме того, раздел содержит пример кода и сравнение оператора `Stop` с оператором `End`, а также оператора `Stop` с оператором `Assert`.
 
-[Пошаговое руководство. Отладка в Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Пошаговое руководство. Отладка формы Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 Пошаговые инструкции по созданию формы Windows Form и ее отладке. Форма Windows Forms - стандартный компонент приложения Windows, — один из наиболее распространенных вариантов управляемых приложений. В данном пошаговом руководстве используются языки Visual C# и Visual Basic, но методика создания форм Windows Forms с помощью C++ во многом аналогична.
 
 [Отладка метода OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,10 +47,10 @@ ms.locfileid: "57868095"
 [Отладка в смешанном режиме](../debugger/debugging-mixed-mode-applications.md)\
 Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.
 
-[Ошибка. Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Ошибка: Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на компьютере, загруженном в режиме отладки под управлением операционной системы [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] или Windows NT.
 
-[JIT-оптимизация и отладка](../debugger/jit-optimization-and-debugging.md)\
+[JIT-отладка и оптимизация](../debugger/jit-optimization-and-debugging.md)\
 Описывает эффекты по оптимизации по отладке JIT.
 
 [Отладка LINQ и DLINQ](../debugger/debugging-linq.md)\
@@ -64,13 +64,13 @@ ms.locfileid: "57868095"
 [IntelliTrace](../debugger/intellitrace.md)\
 Используйте IntelliTrace для ведения журнала выполнения приложений, чтобы сделать поиск ошибок более быстрым и удобным. Перемещайтесь вперед или назад между различными записанными событиями и вызовами для определения состояния приложения в соответствующие моменты времени. Производите отладку приложения, не устанавливая множество точек останова и не перезапуская приложение слишком часто. Требуется Visual Studio Enterprise.
 
-[Трассировка и инструментирование приложений](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
+[Трассировка и оборудование приложений](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
 Описание трассировки приложений, позволяющей отследить ход выполнения приложения, и инструментирования приложений, размещающего операторы трассировки в стратегически важных местах кода. Кроме того, в данном разделе представлены ссылки на руководство по оборудованию и трассировке, а также по переключателям трассировки, слушателям трассировки, коду трассировки в приложении, добавлению оператора трассировки в код приложения и условной компиляции с использованием атрибутов <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>.
 
 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
 Описание параметра компоновщика, который добавляет <xref:System.Diagnostics.DebuggableAttribute> в код, написанный на языке C++. Этот атрибут необходим для использования таких функций отладчика, как, например, "присоединить с C++".
 
-[Отладка служебных приложений Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
+[Отладка приложений служб Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
 Рекомендации по отладке служебных приложений Windows, включая настройку, подключение к процессу, отладку кода в методе `OnStart` службы и кода в методе Main, задание точек останова и использование диспетчера управления службами для запуска, остановки, приостановки и продолжения выполнения службы пользователя.
 
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)\
@@ -79,12 +79,9 @@ ms.locfileid: "57868095"
 [Отладка приложений скриптов и веб-приложений](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Описание общих задач и методов отладки скриптов и веб-приложений.
 
-[Домашняя страница отладки](../debugger/debugger-feature-tour.md)\
-Ссылки на крупные разделы документации об отладке. В них содержатся следующие сведения: новые возможности отладчика, сведения о параметрах и подготовке, точках останова, обработке исключений, изменении и продолжении выполнения, отладке управляемого кода, проектов Visual C++, объектов COM и ActiveX, библиотек DLL, SQL, а также ссылки на пользовательский интерфейс.
-
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Отладка элементов управления пользовательского Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Пошаговое руководство. Отладка элементов управления пользовательского Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
