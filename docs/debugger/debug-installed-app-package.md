@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428717"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504345"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Отладка установленного пакета приложения UWP в Visual Studio
 
@@ -97,7 +97,7 @@ Visual Studio поддерживает отладку установленные
 ## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)
-- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Удаленная отладка](../debugger/remote-debugging.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md)

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870403"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504267"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство. Создание столбца сайта, тип содержимого и списка для SharePoint
   Следующие процедуры демонстрируют способы создания пользовательских столбцов сайта SharePoint, или *поля*, а также тип содержимого, который используют столбцы сайтов. Ниже также показан способ создания списка, использующего новый тип содержимого.
@@ -46,7 +46,7 @@ ms.locfileid: "57870403"
 
 -   Поддерживаемые версии Windows и SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Создайте пользовательские столбцы сайтов
  В этом примере создается список для управления пациентами в больнице. Во-первых, необходимо создать новый проект SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и добавить столбцы сайтов в него следующим образом.
@@ -67,7 +67,7 @@ ms.locfileid: "57870403"
 
      Дополнительные сведения об изолированных и решениями фермы, см. в разделе [замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Выберите **Готово** кнопки. Проект теперь должна быть указана в **обозревателе решений**.
+6.  Выберите **Готово** кнопки. Проект будет добавлен в **обозревателе решений**.
 
 #### <a name="to-add-site-columns"></a>Добавление столбцов сайта
 
