@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710491"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537495"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Создание пользовательских представлений данных в отладчике Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "56710491"
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Создание пользовательских представлений данных в окнах переменных и подсказки по данным
 
- Многие из [окна отладчика](../debugger/debugger-windows.md), такие как **"Видимые"** и **Watch** windows, позволяют проверять значения переменных. Вы можете настроить как собственные типы управляемых объектов и собственных типов отображаются в окнах переменных отладчика, а также в [подсказок по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Дополнительные сведения см. в разделе [Создание настраиваемых представлений собственных объектов](../debugger/create-custom-views-of-native-objects.md) и [Создание настраиваемых представлений объектов](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Многие из [окна отладчика](../debugger/debugger-windows.md), такие как **"Видимые"** и **Watch** windows, позволяют проверять значения переменных. Можно настроить как C++ типов управляемых объектов и собственных типов отображаются в окнах переменных отладчика, а также в [подсказок по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Дополнительные сведения см. в разделе [Создание пользовательских представлений C++ объектов](../debugger/create-custom-views-of-native-objects.md) и [Создание настраиваемых представлений объектов](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Создание настраиваемых визуализаторов
 
