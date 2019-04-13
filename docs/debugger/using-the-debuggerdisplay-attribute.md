@@ -1,5 +1,5 @@
 ---
-title: Использование атрибута DebuggerDisplay | Документация Майкрософт
+title: Отобразить пользовательские сведения, с помощью DebuggerDisplay | Документация Майкрософт
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680195"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537641"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Использование атрибута DebuggerDisplay (C#, Visual Basic, F#, C + +/ CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Указать отладчику, что нужно показывать использование атрибута DebuggerDisplay (C#, Visual Basic, F#, C++выполняет)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.
 
 Атрибут `DebuggerDisplay` имеет один аргумент, определяющий строку, которая должна отображаться в столбце "Значение" для экземпляров типа. Эта строка может содержать фигурные скобки (`{` и `}`). Текст, заключенный в фигурные скобки, вычисляется как поле, свойство или метод.
@@ -32,7 +32,7 @@ ms.locfileid: "56680195"
 > Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.
 
 > [!NOTE]
-> Для машинного кода, этот атрибут поддерживается только в C + +/ CLI кода.
+> Для машинного кода, этот атрибут поддерживается только в C++выполняет код.
 
 В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.
 
@@ -177,7 +177,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-dot-managed-objects.md)

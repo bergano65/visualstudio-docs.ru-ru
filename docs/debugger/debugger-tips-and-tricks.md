@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366306"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537563"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
@@ -52,6 +52,10 @@ ms.locfileid: "59366306"
     ![Условную точку останова](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Если вы заинтересованы в другом типе условия, выберите **Фильтр** вместо **Условное выражение** в диалоговом окне **Параметры точки останова**, а затем следуйте советам для фильтра.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Настройка данных для отображения в отладчике
+
+Для C#, Visual Basic и C++ (C++только выполняет код), можно указать отладчику, какую информацию для демонстрации использования [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) атрибута. Для C++ кода, можно сделать же using [визуализации Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Изменение потока выполнения
 
