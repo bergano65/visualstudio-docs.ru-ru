@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355264"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897599"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -59,14 +59,16 @@ ms.locfileid: "58355264"
 1. Создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **Vue.js** и выберите **Простое веб-приложение Vue.js** (JavaScript или TypeScript). В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL + Q**, чтобы открыть поле поиска, введите **Basic Vue.js** и выберите **Простое веб-приложение Vue.js** (JavaScript или TypeScript). В появившемся диалоговом окне выберите **Создать**.
+
+    ![Шаблон Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** или **TypeScript** и выберите **Node.js**. В средней области выберите **Простое веб-приложение Vue.js** и нажмите кнопку **ОК**.
-    ::: moniker-end
-    Если шаблон проекта **Простое веб-приложение Vue.js** отсутствует, нужно добавить рабочую нагрузку **Разработка Node.js**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 
     ![Шаблон Vue.js](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Если шаблон проекта **Простое веб-приложение Vue.js** отсутствует, нужно добавить рабочую нагрузку **Разработка Node.js**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 
     Visual Studio создаст новый проект. Новый проект откроется в обозревателе решений (в правой области).
 
@@ -128,4 +130,4 @@ ms.locfileid: "58355264"
 
 - Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
 - Пройдите [учебник по Node.js и React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
-- [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)
+- [Развертывание приложения в Службу приложений Linux](../javascript/publish-nodejs-app-azure.md)

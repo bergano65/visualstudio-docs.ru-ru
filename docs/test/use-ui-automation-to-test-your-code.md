@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416270"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897729"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Использование автоматизации пользовательского интерфейса для тестирования кода
 
@@ -144,7 +144,7 @@ ms.locfileid: "58416270"
 
 8. Запустите тест.
 
-   Откройте обозреватель тестов или контекстное меню в методе теста и выберите пункт **Выполнить тесты**. Дополнительные сведения о запуске тестов см. в подразделах [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md) и *Дополнительные параметры для запуска закодированных тестов пользовательского интерфейса* раздела [Дальнейшие действия](#whats-next?) в конце этой статьи.
+   Откройте обозреватель тестов или контекстное меню в методе теста и выберите пункт **Выполнить тесты**. Дополнительные сведения о запуске тестов см. в подразделах [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md) и *Дополнительные параметры для запуска закодированных тестов пользовательского интерфейса* раздела [Дальнейшие действия](#whats-next) в конце этой статьи.
 
 Эта процедура более подробно описывается в следующих разделах.
 
@@ -461,7 +461,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Пошаговое руководство: Создание, изменение и поддержка закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Создание закодированного теста пользовательского интерфейса для тестирования приложения UWP](test-uwp-app-with-coded-ui-test.md)
 - [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)
 - [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)

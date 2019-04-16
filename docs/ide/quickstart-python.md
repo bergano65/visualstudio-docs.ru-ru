@@ -4,18 +4,18 @@ description: В рамках этого краткого руководства 
 ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683389"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366702"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
@@ -193,7 +193,7 @@ ms.locfileid: "57683389"
 Поздравляем с запуском вашего первого приложения Python из Visual Studio, в процессе которого вы немного ознакомились с особенностями использования Visual Studio в качестве среды IDE для Python!
 
 > [!div class="nextstepaction"]
-> [Развертывание приложения в Службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Развертывание приложения в Службе приложений Azure.](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 Так как приведенные в этом руководстве инструкции довольно общие, вы, вероятно, догадались, что их можно и нужно автоматизировать. Такая автоматизация выполняется при помощи шаблонов проектов Visual Studio. Изучите [краткое руководство по созданию проекта Python на основе шаблона](../python/quickstart-02-python-in-visual-studio-project-from-template.md), чтобы узнать, как создается веб-приложение, похожее на созданное вами в рамках этой статьи, но с меньшим количеством шагов.
 

@@ -3,19 +3,19 @@ title: Создание расширений C++ для Python
 description: Пошаговое руководство по созданию расширения C++ для Python с помощью Visual Studio, CPython и PyBind11, включая отладку в смешанном режиме.
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416049"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366904"
 ---
 # <a name="create-a-c-extension-for-python"></a>Создание расширения C++ для Python
 
@@ -122,7 +122,7 @@ ms.locfileid: "58416049"
 
     | Tab | Свойство. | Значение |
     | --- | --- | --- |
-    | **Общие сведения** | **Общие** > **Целевое имя** | Укажите имя модуля, которое будет использоваться из Python в инструкциях `from...import`. Это же имя используется в C++ при определении модуля для Python. Если вы хотите применять имя проекта в качестве имени модуля, сохраните значение по умолчанию **$(ProjectName)**. |
+    | **Общие** | **Общие** > **Целевое имя** | Укажите имя модуля, которое будет использоваться из Python в инструкциях `from...import`. Это же имя используется в C++ при определении модуля для Python. Если вы хотите применять имя проекта в качестве имени модуля, сохраните значение по умолчанию **$(ProjectName)**. |
     | | **Общие** > **Целевое расширение** | **.pyd** |
     | | **Проект по умолчанию** > **Тип конфигурации** | **Динамическая библиотека (.dll)** |
     | **C/C++** > **Общие** | **Дополнительные каталоги включаемых файлов** | Добавьте подходящую для вашей установки папку *include* Python, например `c:\Python36\include`.  |
@@ -288,7 +288,7 @@ ms.locfileid: "58416049"
 
 1. Создайте в проекте C++ файл с именем *setup.py*, щелкнув проект правой кнопкой мыши и выбрав пункт **Добавить** > **Новый элемент**. Выберите тип файла **Файл C++ (.cpp)**, присвойте файлу имя `setup.py` и щелкните **ОК**. (Присвоение файлу расширения *.py* позволяет Visual Studio распознавать его как файл Python несмотря на использование шаблона файла C++.) Когда файл откроется в редакторе, вставьте в него следующий код в зависимости от метода расширения:
 
-    **Расширения CPython (проект superfastcode):**
+    **Расширения CPython (проект superfastcode).**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -303,7 +303,7 @@ ms.locfileid: "58416049"
 
     Документация к этому скрипту приведена в статье о [создании расширений на C и C++](https://docs.python.org/3/extending/building.html) (python.org).
 
-    **PyBind11 (проект superfastcode2):**
+    **PyBind11 (проект superfastcode2).**
 
     ```python
     import os, sys

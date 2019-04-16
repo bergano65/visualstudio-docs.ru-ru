@@ -202,7 +202,7 @@ items:
     - name: Создание пользовательских представлений данных
       href: viewing-data-in-the-debugger.md
       items:
-      - name: Создание настраиваемых представлений собственных объектов
+      - name: Создание пользовательских представлений для объектов C++
         href: create-custom-views-of-native-objects.md
         items:
         - name: Совместимость пользовательского визуализатора Visual C++
@@ -210,10 +210,10 @@ items:
       - name: Создание настраиваемых представлений управляемых объектов
         href: create-custom-views-of-dot-managed-objects.md
         items:
-        - name: Использование атрибута DebuggerTypeProxy
-          href: using-debuggertypeproxy-attribute.md
-        - name: Использование атрибута DebuggerDisplay
+        - name: Указание отображаемых сведений для отладчика
           href: using-the-debuggerdisplay-attribute.md
+        - name: Указание отображаемого типа для отладчика
+          href: using-debuggertypeproxy-attribute.md
       - name: Создание пользовательских визуализаторов данных
         href: create-custom-visualizers-of-data.md
         items:
@@ -844,9 +844,9 @@ items:
   items:
   - name: Новые возможности отладчика в Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 6e0d832e0adace66495a1edfd19fd7b5a9f9c866
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: ae2dc7baa536b03c6507cb4f7064e74126d1d93e
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366073"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537719"

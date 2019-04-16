@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027293"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897703"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 
@@ -62,7 +62,7 @@ ms.locfileid: "53027293"
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Дополнительные перезагрузки или закрытие всех открытых окон в Visual Studio
 
-Никогда не работайте с файлами проектов непосредственно из обработчика ресурсов или иного средства. Если вам действительно необходимо совершить операции с файлом проекта, мы предоставляем для этого интерфейс API. См. раздел [Проблемы со ссылками на сборку](#Assembly-reference-issues).
+Никогда не работайте с файлами проектов непосредственно из обработчика ресурсов или иного средства. Если вам действительно необходимо совершить операции с файлом проекта, мы предоставляем для этого интерфейс API. См. раздел [Проблемы со ссылками на сборку](#assembly-reference-issues).
 
 Если происходят лишние перезагрузки или если при перезагрузке в Visual Studio закрываются все открытые окна, убедитесь в том, что установлены все необходимые целевые пакеты .NET. Дополнительные сведения см. ниже в разделе, посвященном платформам.
 
@@ -124,7 +124,7 @@ ms.locfileid: "53027293"
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Создание отчета о зависании Visual Studio во время отладки с помощью набора средств Visual Studio для Unity
 
-*В Windows:*
+*В Windows выполните следующие действия.*
 
 1. Откройте новый экземпляр Visual Studio.
 
@@ -142,7 +142,7 @@ ms.locfileid: "53027293"
 
     Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.
 
-*На Mac:*
+*На Mac выполните следующие действия.*
 
 1. Откройте терминал и получите идентификатор процесса Visual Studio для Mac:
 

@@ -3,19 +3,19 @@ title: Краткое руководство. Клонирование репо�
 description: С помощью этого краткого руководства вы создадите проект Python в Visual Studio, клонировав репозиторий Python Koans с использованием Visual Studio Team Explorer
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355290"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367008"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 
@@ -83,5 +83,5 @@ ms.locfileid: "58355290"
 ## <a name="see-also"></a>См. также
 
 - [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
+- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations)

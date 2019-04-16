@@ -3,18 +3,18 @@ title: Управление окружениями и интерпретатор
 description: Окно окружений Python позволяет управлять глобальными и виртуальными окружениями, а также окружениями conda, установкой интерпретаторов и пакетов Python, а также назначением окружений для проектов Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355689"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366571"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Как создавать окружения Python в Visual Studio и управлять ими
 
@@ -270,4 +270,4 @@ Visual Studio 2017 версии 15.7 и более поздних версий �
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
 - [Пути поиска](search-paths.md)
-- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)

@@ -3,19 +3,19 @@ title: Краткое руководство. Создание проекта Py
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python с помощью шаблона Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355135"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365301"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта из шаблона Cookiecutter
 
@@ -50,5 +50,5 @@ ms.locfileid: "58355135"
 
 - [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md)
 - [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
+- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations)

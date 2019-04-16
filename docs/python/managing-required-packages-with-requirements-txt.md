@@ -3,19 +3,19 @@ title: Управление зависимостями пакета с помо�
 description: Файл requirements.txt описывает зависимости проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194844"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365240"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
@@ -71,4 +71,4 @@ Cleaning up...
 - [Управление окружениями Python в Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Пути поиска](search-paths.md)
-- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)

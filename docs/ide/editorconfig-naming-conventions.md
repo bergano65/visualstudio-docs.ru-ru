@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983278"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232597"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -76,8 +76,21 @@ ms.locfileid: "57983278"
 - private\_protected
 - локальные
 
-> [!NOTE]
-> Не указывайте уровень доступа как часть вашего соглашения об именовании, если такой доступ не предусмотрен для целевого типа символа. Например, для параметров уровни доступа не предусмотрены. Если указать уровень доступа для соглашения об именовании параметров, правило именования будет работать неправильно.
+   Уровень специальных возможностей `local` применяется к символам, определенным в методе. Это полезно при определении соглашений об именовании для символов, специальные возможности которых не могут быть указаны в коде. Например, если вы укажете `applicable_accessibilities = local` в соглашении об именовании констант (`required_modifiers = const`), правило будет применятся только к константам, определенным в методе, а не к константам, определенным в типе.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Модификаторы символов (необязательно)
 
@@ -156,7 +169,7 @@ ms.locfileid: "57983278"
 ------------ | -------------
 none или silent | Если стиль не соблюдается, пользователь не будет уведомляться об этом, однако автоматически создаваемый код следует этому стилю.
 suggestion | Если этот стиль не соблюдается, он будет показан пользователю как предложение, в виде точек под первыми двумя символами. Это никак не проявляется во время компиляции.
-предупреждение | Если этот стиль не соблюдается, выводится предупреждение компилятора в **списке ошибок**.
+warning | Если этот стиль не соблюдается, выводится предупреждение компилятора в **списке ошибок**.
 error | Если этот стиль не соблюдается, компилятор выводит ошибку в **списке ошибок**.
 
 > [!NOTE]
@@ -196,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>См. также
 
-- [Соглашения по оформлению и написанию кода на .NET](../ide/editorconfig-code-style-settings-reference.md)
-- [Создание переносимых, настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)
-- [Файл EDITORCONFIG для платформы компиляторов .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig).
+- [Соглашения по оформлению и написанию кода на .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Создание портативных настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)
+- [Файл EDITORCONFIG для .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

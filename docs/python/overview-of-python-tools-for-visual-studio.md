@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Сведения о возможностях Python в Visual Studio, которые делают ее лучшей интегрированной средой разработки на Python в Windows (также называются инструментами Python для Visual Studio, PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195012"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366880"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -54,7 +54,7 @@ Visual Studio является мощной интегрированной ср�
 Дополнительные сведения:
 
 - [Управление средами Python](managing-python-environments-in-visual-studio.md)
-- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по средам Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Многофункциональное редактирование, IntelliSense и понимание кода
 
@@ -98,7 +98,7 @@ Visual Studio позволяет управлять постоянно возр�
 
 Шаблоны проектов и элементов автоматизируют процесс настройки различных типов проектов и файлов, экономя драгоценное время и освобождая разработчика от сложных рутинных операций, в ходе которых легко допустить ошибку. Visual Studio предоставляет шаблоны для веб-проектов, Azure, обработки и анализа данных, консольных и других типов проектов, наряду с шаблонами для файлов, таких как классы Python, модульные тесты, веб-конфигурации Azure, HTML и даже приложения Django.
 
-[![Проект Python и шаблоны элементов в Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PПроект Python и шаблоны элементов в Visual Studio(media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Дополнительные сведения:
 
@@ -130,7 +130,7 @@ Visual Studio позволяет управлять постоянно возр�
 
 Профилирование позволяет узнать, как расходуется время в приложении. Visual Studio поддерживает профилирование с помощью интерпретаторов на основе CPython и включает сравнение производительности при различных запусках профилирования.
 
-[![Результаты профилирования проекта Python в Visual Studio](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VРезультаты профилирования проекта Python в Visual Studio(media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Дополнительные сведения:
 
@@ -174,7 +174,7 @@ Visual Studio позволяет управлять постоянно возр�
 
 Функции Python можно установить в следующих выпусках Visual Studio, как описано в [руководстве по установке](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2019 (все выпуски)](https://visualstudio.microsoft.com/vs/);
+- [Visual Studio 2019 (все выпуски);](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2017 (все выпуски);
 - Visual Studio 2015 (все выпуски)
 - Visual Studio 2013 Community

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070647"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897586"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Установка и настройка средств для разработки с помощью iOS
 
@@ -70,7 +70,7 @@ Visual C++ для разработки кроссплатформенных мо
 
 Если вы установили Visual C++ для разработки кроссплатформенных мобильных приложений, среда Visual Studio может взаимодействовать с [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), удаленным агентом, работающим на компьютере Mac, для передачи файлов, выполнения сборки и запуска приложения iOS, а также отправки команд отладки.
 
-Перед установкой удаленного агента убедитесь в том, что вы выполнили требования, приведенные в разделе [Необходимые компоненты](#Prerequisites), и установили [Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Перед установкой удаленного агента убедитесь в том, что вы выполнили требования, приведенные в разделе [Необходимые компоненты](#prerequisites), и установили [Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Скачивание и установка удаленного агента
 
@@ -83,7 +83,7 @@ Visual C++ для разработки кроссплатформенных мо
    В ходе установки будет установлен агент vcremote, и на компьютере Mac будет активирован режим разработчика. Также устанавливаются[Homebrew](https://brew.sh/) и два пакета npm: vcremote-lib и vcremote-utils. После завершения установки можно игнорировать любые предупреждения о пропущенных необязательных зависимостях.
 
    > [!NOTE]
-   > Для установки Homebrew требуется доступ sudo (права администратора). Если требуется установить агент vcremote без прав sudo, можно установить Homebrew вручную в расположение "usr/local" и добавить его папку bin по нужному пути. Дополнительную информацию см. в [документации по Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Чтобы включить режим разработчика вручную, введите в приложении "Терминал" следующую команду: `DevToolsSecurity -enable`
+   > Для установки Homebrew требуется доступ sudo (права администратора). Если требуется установить агент vcremote без прав sudo, можно установить Homebrew вручную в расположение "usr/local" и добавить его папку bin по нужному пути. Дополнительную информацию см. в [документации по Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Чтобы включить режим разработчика вручную, введите в приложении "Терминал" следующую команду. `DevToolsSecurity -enable`
 
 Если Visual Studio обновляется до новой версии, то также необходимо обновить удаленный агент до текущей версии. Чтобы обновить удаленный агент, еще раз выполните инструкции по его скачиванию и установке.
 
