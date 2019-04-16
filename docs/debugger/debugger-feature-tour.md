@@ -1,8 +1,8 @@
 ---
-title: Отладка приложений в Visual Studio
+title: Первое знакомство с отладчиком
 description: Начало отладки приложений с помощью отладчика Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366774"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -188,7 +188,7 @@ ms.locfileid: "57428691"
 Помощник по исправлению ошибок — это отличная функция, которая помогает отлаживать ошибки. Используя помощник по исправлению ошибок, вы также можете, например, просмотреть сведения об ошибке и добавить контрольное значение. При необходимости вы также можете изменить условия для возникновения конкретного исключения. См. дополнительные сведения об обработке исключений в коде в разделе [Приемы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Помощник по исправлению ошибок заменил помощник по исключениям в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Помощник по исправлению ошибок заменил помощник по исключениям, который запускается в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Разверните узел **Параметры исключений**, чтобы просмотреть дополнительные параметры для обработки исключения этого типа, однако в рамках этого тура ничего менять не требуется.
 
@@ -217,4 +217,4 @@ ms.locfileid: "57428691"
 В этом руководстве вы кратко познакомились с функциями отладчика. Отдельные функции, например точки останова, вы можете изучить более подробно.
 
 > [!div class="nextstepaction"]
-> [Use breakpoints in the Visual Studio debugger](../debugger/using-breakpoints.md) (Использование точек останова в отладчике Visual Studio)
+> [Использование точек останова в отладчике Visual Studio](../debugger/using-breakpoints.md)

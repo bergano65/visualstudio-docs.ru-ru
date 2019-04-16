@@ -3,19 +3,19 @@ title: Определение пользовательских команд ме
 description: Редактируя проекты и целевые файлы, вы можете добавлять настраиваемые команды в контекстное меню проекта Python в Visual Studio, чтобы вызывать исполняемые программы, скрипты, модули, встроенные фрагменты кода и команды pip.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943094"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366722"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Определение пользовательских команд для проектов Python
 
@@ -306,7 +306,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
 
 ### <a name="generate-windows-installer"></a>Создание установщика Windows
 
@@ -325,7 +325,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
 
 ### <a name="generate-wheel-package"></a>Создание пакета wheel
 
@@ -345,7 +345,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 

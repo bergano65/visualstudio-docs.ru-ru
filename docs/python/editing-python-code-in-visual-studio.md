@@ -3,19 +3,19 @@ title: Редактирование кода Python
 description: Visual Studio предоставляет для Python возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355556"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366280"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
@@ -76,7 +76,7 @@ Visual Studio 2017 версии 15.6 и более поздних разными
 
 ### <a name="type-hints"></a>Подсказки по типам
 
-*Visual Studio 2017 версии 15.7 и более поздней.*
+*Visual Studio 2017 версии 15.7 и более поздних.*
 
 Подсказки по типам в Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) — это синтаксис аннотаций для функций и классов, который указывает на типы аргументов, возвращаемых значений и атрибутов класса. IntelliSense отображает подсказки по типам при наведении курсора на вызовы функций, аргументы и переменные с этими аннотациями.
 

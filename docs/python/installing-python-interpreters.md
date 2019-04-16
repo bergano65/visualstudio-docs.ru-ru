@@ -3,19 +3,19 @@ title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194182"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365227"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -66,4 +66,4 @@ Visual Studio отображает все известные окружения 
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
 - [Пути поиска](search-paths.md)
-- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)

@@ -1,20 +1,20 @@
 ---
 title: Преимущество Studio IDE в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789891"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018146"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Использование преимущества Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
 Как подписчик Visual Studio вы получаете доступ к интегрированной среде разработки Visual Studio.  Версия будет зависеть от уровня подписки.  Преимущество будет отображаться в виде плитки в категории "Сервис" на странице [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) портала подписчика.
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789891"
    > [!div class="mx-imgBorder"]
    > ![Плитка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Вы будете перенаправлены на страницу "Загрузить результаты" для Visual Studio Enterprise, где сможете загрузить интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
+3. Вы будете перенаправлены на страницу Visual Studio "Скачать результаты", где сможете скачать интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
 4. На вкладке "Сведения" на странице "Скачать результаты" сделайте следующее:
    - Выберите нужную архитектуру (x86, x64).
    - Выберите предпочитаемый язык.

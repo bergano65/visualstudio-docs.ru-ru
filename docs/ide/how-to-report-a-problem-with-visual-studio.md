@@ -1,50 +1,41 @@
 ---
 title: Как сообщить о проблеме с Visual Studio
-titleSuffix: ''
-description: Узнайте, как сообщить корпорации Майкрософт о проблеме с Visual Studio, чтобы диагностировать и устранить ее.
+description: Узнайте, как сообщить о проблеме с Visual Studio
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953671"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232545"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Как сообщить о проблеме с Visual Studio
-
-Если во время работы с Visual Studio возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://developercommunity.visualstudio.com/), чтобы мы могли диагностировать и устранить ее.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Как сообщить о проблеме с Visual Studio или Visual Studio Installer
 
 > [!NOTE]
-> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Как сообщить о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem).
+> Информацию о Visual Studio для Mac см. в статье [Как сообщить о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Сообщение о проблеме с помощью Visual Studio
+Вы можете сообщить о проблеме из Visual Studio или его установщика, используя средство обратной связи, которое включено в них. Средство обратной связи позволяет вам легко включать диагностическую информацию в отзывы и помогает командам Visual Studio гораздо более эффективно диагностировать и устранять проблемы. Последовательность сообщения о проблеме.
 
-Чтобы сообщить о проблеме с Visual Studio, необходимо инициировать отчет из Visual Studio или Visual Studio Installer. Это невозможно сделать напрямую на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/). Отчеты, созданные в Visual Studio, содержат диагностические сведения.
+1. **В Visual Studio** выберите значок обратной связи в правом верхнем углу и выберите "Сообщить о проблеме". Вы также можете получить доступ к средству обратной связи из меню **Help** > **Обратная связь** > **Сообщить о проблеме**.
+![Сообщите о проблеме во всплывающем окне сообщества разработчиков Visual Studio](media/vsfeedbackentry.png). Или же сообщите о проблеме в **Visual Studio Installer**, если вы не можете установить Visual Studio или не можете получить доступ к средству обратной связи в Visual Studio.  В установщике выберите значок обратной связи в правом верхнем углу и выберите "Сообщить о проблеме".
+![Всплывающее окно "Сообщить о проблеме" в сообществе разработчиков Visual Studio](media/installer.png)
 
-![Всплывающее окно "Сообщить о проблеме" в сообществе разработчиков Visual Studio](media/report-an-issue.png)
-
-1. В Visual Studio последовательно выберите **Справка** > **Отправить отзыв** > **Сообщить о проблеме**.
-
-   > [!TIP]
-   > Если вам не удается завершить установку Visual Studio или воспользоваться средством обратной связи в среде Visual Studio, сообщить о проблеме можно с помощью **Visual Studio Installer**. Для этого щелкните значок обратной связи ссылку в правом верхнем углу **Visual Studio Installer**.
-
-1. При необходимости нажмите кнопку **Вход** в правой части средства, как показано на снимке экрана ниже. Следуйте инструкциям на экране, чтобы выполнить вход.
+1. Если вы не вошли в систему, выберите **Войти**, как показано на следующем снимке экрана. Следуйте инструкциям на экране, чтобы выполнить вход.
 
    ![Войти и сообщить о проблеме](../ide/media/sign-in-new-ux.png)
 
-   Войдя, вы можете сообщить о возникшей проблеме. Вы также можете голосовать и оставлять комментарии к другим опубликованным проблемам.
+   Войдя в систему, вы можете не только сообщить о проблеме, но и голосовать и комментировать любые существующие отзывы.
 
-1. После входа в систему вы можете просмотреть свои **проблемы** и **действия** на экране **Мои подписки**
+1. После входа в систему вы можете просмотреть свои **Проблемы** и **Действия** на экране **Мои подписки**.
 
-    ![Мои подписки](../ide/media/items-i-follow.png)
+   ![Мои подписки](../ide/media/items-i-follow.png)
 
 1. Visual Studio предоставляет интерфейс, где вы можете попытаться найти свою проблему и узнать, сообщали ли о ней другие. Если о ней уже кто-то сообщил, проголосуйте за нее, чтобы дать нам знать.
    > [!NOTE]
@@ -125,14 +116,14 @@ ms.locfileid: "56953671"
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Поиск решений или предоставление отзыва
 
-Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio, есть вероятность, что о ней уже сообщили, и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
 
 Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>См. также
 
-* [Обратная связь](../ide/talk-to-us.md)
-* [Сообщение о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem)
-* [Сообщение о проблеме в C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
+* [Обращайтесь к нам](../ide/talk-to-us.md)
+* [Сообщение о проблеме с Visual Studio для Mac](/visualstudio/mac/report-a-problem)
+* [Сообщение о проблеме с C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)
-* [Конфиденциальность данных в сообществе разработчиков](developer-community-privacy.md)
+* [Конфиденциальность данных сообщества разработчиков](developer-community-privacy.md)

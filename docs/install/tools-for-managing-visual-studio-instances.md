@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415218"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018224"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Средства для обнаружения экземпляров Visual Studio и управления ими
 
@@ -31,7 +31,7 @@ ms.locfileid: "58415218"
 
 Мы предлагаем несколько средств, предназначенных для обнаружения установленных экземпляров Visual Studio на клиентских компьютерах и управления ими:
 
-* [VSWhere](https://github.com/microsoft/vswhere). Исполняемый файл, входящий в состав Visual Studio и доступный для отдельного распространения, который поможет вам найти расположение всех экземпляров Visual Studio на конкретном компьютере.
+* [vswhere](https://github.com/microsoft/vswhere). Исполняемый файл, входящий в состав Visual Studio и доступный для отдельного распространения, который поможет вам найти расположение всех экземпляров Visual Studio на конкретном компьютере.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): скрипты PowerShell, которые позволяют определить установленные экземпляры Visual Studio с помощью API конфигурации установки.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): примеры на языках C# и C++, демонстрирующие применение API конфигурации установки для запроса существующей установки.
 
@@ -39,7 +39,7 @@ ms.locfileid: "58415218"
 
 ## <a name="using-vswhereexe"></a>С помощью vswhere.exe
 
-`vswhere.exe` автоматически включается в состав Visual Studio (начиная с Visual Studio 2017 версии 15.2 и более поздних), либо его можно скачать на [странице выпусков VSWhere](https://github.com/Microsoft/vswhere/releases). Используйте `vswhere -?`, чтобы получить информацию об этом средстве. Следующий пример команды выводит в формате JSON полный список выпусков Visual Studio, включая предыдущие и предварительные версии продукта:
+`vswhere.exe` автоматически включается в состав Visual Studio (начиная с Visual Studio 2017 версии 15.2 и более поздних), либо его можно скачать на [странице выпусков vswhere](https://github.com/Microsoft/vswhere/releases). Используйте `vswhere -?`, чтобы получить информацию об этом средстве. Следующий пример команды выводит в формате JSON полный список выпусков Visual Studio, включая предыдущие и предварительные версии продукта:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

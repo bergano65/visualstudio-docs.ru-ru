@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155218"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366293"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Учебник. Работа с Python в Visual Studio
 
@@ -24,12 +24,12 @@ Python — это популярный язык программировани�
 
 Visual Studio обеспечивает первоклассную поддержку языка Python. В этом учебнике рассматриваются перечисленные ниже действия.
 
-- [Шаг 0: установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Шаг 0. Установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Шаг 1. Создание проекта Python (эта статья)](#step-1-create-a-new-python-project)
 - [Шаг 2. Написание и выполнение кода для ознакомления с функцией IntelliSense в Visual Studio на практике](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Шаг 3. Создание дополнительного кода в интерактивном окне REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Шаг 4. Выполнение готовой программы в отладчике Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Шаг 5. устанавливать пакеты и управлять средами Python;](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]

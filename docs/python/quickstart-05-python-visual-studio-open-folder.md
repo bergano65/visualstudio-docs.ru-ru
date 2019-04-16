@@ -3,20 +3,20 @@ title: Краткое руководство. Открытие папки с к�
 description: В этом кратком руководстве описано, как открыть и выполнить папку с кодом Python без использования проекта Visual Studio (только для Visual Studio 2019).
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354912"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366124"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Краткое руководство. Открытие и выполнение кода Python в папке
 
@@ -111,6 +111,6 @@ ms.locfileid: "58354912"
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Создание проекта Python на основе существующего кода](quickstart-01-python-in-visual-studio-project-from-existing-code.md).
-- [Краткое руководство. Создание проекта Python из репозитория](quickstart-03-python-in-visual-studio-project-from-repository.md).
+- [Краткое руководство. Создание проекта Python на основе существующего кода](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [Краткое руководство. Создание проекта Python из репозитория](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

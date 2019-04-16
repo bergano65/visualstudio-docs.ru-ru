@@ -3,18 +3,18 @@ title: Рабочая нагрузка "Приложения для обрабо
 description: Эта рабочая нагрузка Visual Studio объединяет в себе языки Python, F# и их соответствующие дистрибутивы среды выполнения, в том числе Anaconda. (R включен только в Visual Studio 2017.)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324929"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366332"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Установка поддержки для обработки и анализа данных в Visual Studio
 
@@ -98,7 +98,7 @@ SQL Server поддерживает использование Python для у�
 
 ::: moniker range="vs-2017"
 - [Работа с SQL Server и R](../rtvs/integrating-sql-server-with-r.md)
-- [Углубленная аналитика в базе данных с R в SQL Server 2016 (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [Углубленная аналитика в базе данных с R в SQL Server 2016 (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 ::: moniker-end
 - [Python в SQL Server 2017: расширенное машинное обучение в базе данных (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -111,4 +111,4 @@ SQL Server поддерживает использование Python для у�
 Azure Notebooks (сейчас находится на этапе предварительной версии) предоставляет свободный доступ по сети к записным книжкам Jupyter, работающими в облаке на платформе Microsoft Azure. Эта служба содержит примеры записных книжек на языках Python, R и F#, с которых можно начать работу. Посетите [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Снимки экрана: записные книжки Microsoft Azure с вводным примером R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![Снимки экрана: записные книжки Microsoft Azure с вводным примером R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

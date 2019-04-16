@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868994"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232779"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Измерение использования памяти в Visual Studio
 
@@ -54,13 +54,13 @@ ms.locfileid: "57868994"
 
 4.  На панели инструментов выберите **Использование памяти**, применяя параметр **Выбор средств**.
 
-     ![Вывод средств диагностики](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Вывод средств диагностики](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Щелкните **Отладка | Начать отладку** (**Запустить** на панели инструментов или **F5**).
 
      По завершении загрузки приложения отображается представление "Сводка" средств диагностики.
 
-     ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Вкладка "Сводка" средств диагностики](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Поскольку сбор данных об использовании памяти может повлиять на производительность отладки приложений, основанных на машинном коде, а также смешанных программ, по умолчанию снимки памяти выключены. Чтобы включить моментальные снимки для приложений на базе машинного кода или для смешанных программ, начните сеанс отладки (клавиша: **F5**). Когда отобразится окно **Средства диагностики**, перейдите на вкладку **Использование памяти** и выберите **Профилирование кучи**.
@@ -150,7 +150,7 @@ ms.locfileid: "57868994"
 
 - В окне **Средства диагностики** щелкните в необходимой ячейке сводной таблицы **Использование памяти** разницу в значениях.
 
-   ![Выбор отчета изменений (Diff)](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Выбор отчета изменений &#40;diff&#41;](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Выберите моментальный снимок в списке **Сравнить с** , в котором отображаются управляемые или собственные отчеты.
 
@@ -158,7 +158,7 @@ ms.locfileid: "57868994"
 
 С помощью отчета об изменениях в основной отчет можно добавить столбцы, помеченные надписью **(Разн.)**, в которых будет отображаться разница между двумя выбранными снимками. Отчет об изменениях собственных типов может выглядеть следующим образом.
 
-![Представление собственных типов Diff](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Представление собственных типов инструмента сравнения](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Блоги и видео
 

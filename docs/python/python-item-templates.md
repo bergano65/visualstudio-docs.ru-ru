@@ -3,19 +3,19 @@ title: Шаблоны элементов для проектов Python
 description: Список ссылок на шаблоны элементов для проектов Python доступны при выборе пунктов Добавить > Новый элемент в Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924699"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366462"
 ---
 # <a name="python-item-templates"></a>Шаблоны элементов Python
 
@@ -37,17 +37,17 @@ ms.locfileid: "55924699"
 | **JavaScript** | Пустой файл *.js*. |
 | **Таблица стилей** | Файл *.css* с пустым стилем для `body`. |
 | **Текстовый файл** | Пустой файл *.txt*. |
-| **Приложение Django 1.9**<br/>**Приложение Django 1.4** | Папка с именем приложения, которая содержит основные файлы приложения, как описано в [шаге 2.2 руководства по изучению Django в Visual Studio](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) (для Django 1.9). Для Django 1.4 не включаются папка *migration*, файлы *admin.py* и *apps.py*. |
+| **Приложение Django 1.9**<br/>**Приложение Django 1.4** | Папка с именем приложения, которая содержит основные файлы приложения, как описано в [шаге 2.2 руководства по изучению Django в Visual Studio](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) (для Django 1.9). Для Django 1.4 не включаются папка *migration*, файлы *admin.py* и *apps.py*. |
 | **Окно WPF IronPython** | Окно WPF содержит два расположенных рядом файла: *.xaml*, который определяет `<Window>` с пустым элементом `<Grid>`, и связанного с ним файла *.py*, который загружает файл XAML с помощью библиотеки `wpf`. Обычно используется в проекте, созданном с помощью одного из шаблонов проектов IronPython. См. статью [о шаблонах проектов](managing-python-projects-in-visual-studio.md#project-templates) в руководстве по управлению проектами Python. |
 | **Вспомогательные файлы веб-роли** | Папка *bin* в корневом каталоге проекта (независимо от выбранной папки в проекте). Эта папка содержит скрипт развертывания по умолчанию и файл *web.config* для веб-ролей облачной службы Azure. Кроме того, шаблон включает файл *readme.html* с дополнительной информацией. |
-| **Вспомогательные файлы рабочей роли** | Папка *bin* в корневом каталоге проекта (независимо от выбранной папки в проекте). Эта папка содержит скрипт развертывания и запуска по умолчанию, а также файл *web.config* для рабочих ролей облачной службы Azure. Кроме того, шаблон включает файл *readme.html* с дополнительной информацией. |
-| **Файл web.config для Azure (FastCGI)** | Файл *web.config* с записями для приложений, использующих объект [WSGI](https://wsgi.readthedocs.io/en/latest/) для обработки входящих подключений. Этот файл обычно развертывается в корневом каталоге веб-сервера под управлением служб IIS. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
-| **Файл web.config для Azure (HttpPlatformHandler)** | Файл *web.config* с записями для приложений, которые ожидают передачи данных по входящим подключениям в сокете. Этот файл обычно развертывается в корневом каталоге веб-сервера под управлением служб IIS, таких как служба приложений Azure. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
-| **Файл web.config для статических файлов Azure** | Файл *web.config*, который обычно добавляется в папку *static* (или другую папку со статическими элементами) для отключения обработки этой папки в Python. Этот файл конфигурации используется совместно с одним из файлов конфигурации FastCGI или HttpPlatformHandle, указанных выше. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
-| **Файл web.config для удаленной отладки Azure** | Нерекомендуемый (использовался для удаленной отладки в "Службе приложений Azure" для Windows, которая больше не поддерживается). |
+| **Файлы поддержки рабочей роли** | Папка *bin* в корневом каталоге проекта (независимо от выбранной папки в проекте). Эта папка содержит скрипт развертывания и запуска по умолчанию, а также файл *web.config* для рабочих ролей облачной службы Azure. Кроме того, шаблон включает файл *readme.html* с дополнительной информацией. |
+| **Azure web.config (FastCGI)** | Файл *web.config* с записями для приложений, использующих объект [WSGI](https://wsgi.readthedocs.io/en/latest/) для обработки входящих подключений. Этот файл обычно развертывается в корневом каталоге веб-сервера под управлением служб IIS. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
+| **Azure web.config (HttpPlatformHandler)** | Файл *web.config* с записями для приложений, которые ожидают передачи данных по входящим подключениям в сокете. Этот файл обычно развертывается в корневом каталоге веб-сервера под управлением служб IIS, таких как служба приложений Azure. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
+| **Файл web.config статических файлов Azure** | Файл *web.config*, который обычно добавляется в папку *static* (или другую папку со статическими элементами) для отключения обработки этой папки в Python. Этот файл конфигурации используется совместно с одним из файлов конфигурации FastCGI или HttpPlatformHandle, указанных выше. Дополнительные сведения см. в статье [Настройка веб-приложений Python для IIS](configure-web-apps-for-iis-windows.md). |
+| **Файл web.config удаленной отладки Azure** | Нерекомендуемый (использовался для удаленной отладки в "Службе приложений Azure" для Windows, которая больше не поддерживается). |
 
 ## <a name="see-also"></a>См. также
 
 - [Руководство по управлению проектами Python. Шаблоны проектов](managing-python-projects-in-visual-studio.md#project-templates)
-- [Шаблоны проекта веб-приложений Python](python-web-application-project-templates.md)
+- [Шаблоны веб-проектов Python](python-web-application-project-templates.md)
 - [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
