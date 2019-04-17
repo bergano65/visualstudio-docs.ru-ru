@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475959"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504215"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка кода C++ с помощью отладчика Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "58475959"
 1. Откройте Visual Studio и создайте проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **c++**, выберите **Шаблоны** и затем **Create new Console App project** (Создание проекта консольного приложения). В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **c++**, выберите **Шаблоны** и затем **Create new Console App project** (Создание проекта консольного приложения). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C++** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение Windows**. Введите имя, например **MyDbgApp**, и нажмите **ОК**.
@@ -138,4 +138,4 @@ ms.locfileid: "58475959"
 В этом руководстве вы узнали, как запускать отладчик, осуществлять пошаговое выполнение кода и проверять переменные. Возможно, вы захотите получить более полное представление о функциях отладчика, а также воспользоваться ссылками на дополнительные сведения.
 
 > [!div class="nextstepaction"]
-> [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+> [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

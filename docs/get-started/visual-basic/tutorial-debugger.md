@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: fa9547aad720567e2f62d3fde1248504c4849e11
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355517"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790645"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
 
@@ -56,7 +56,7 @@ ms.locfileid: "58355517"
 1. Запустите Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **visual basic**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework). В появившемся диалоговом окне введите такое имя, как **get-started-debugging**, а затем выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **visual basic**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework). В появившемся диалоговом окне введите такое имя, как **get-started-debugging**, а затем выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)**. Введите имя, например **get-started-debugging**, и нажмите кнопку **ОК**.
