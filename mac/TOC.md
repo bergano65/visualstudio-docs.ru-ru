@@ -77,3 +77,5 @@
 # [Устранение неполадок](troubleshooting.md)
 ## [Программа улучшения качества программного обеспечения Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Сообщить о проблеме](report-a-problem.md)
+## [Устранение неполадок. Почему не отображаются все шаблоны?](troubleshooting-no-templates.md)
+## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)

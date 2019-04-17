@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354847"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504228"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Краткое руководство. Отладка в ASP.NET с помощью отладчика Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "58354847"
 1. Запустите Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net**, выберите **Шаблоны** и затем **Create new ASP.NET Core Web Application** (Создание проекта веб-приложения ASP.NET Core). В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net**, выберите **Шаблоны** и затем **Create new ASP.NET Core Web Application** (Создание проекта веб-приложения ASP.NET Core). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C#** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET Core**. Введите имя, например **MyDbgApp**, и нажмите кнопку **ОК**.
@@ -138,4 +138,4 @@ ms.locfileid: "58354847"
 В этом руководстве вы узнали, как запускать отладчик, осуществлять пошаговое выполнение кода и проверять переменные. Возможно, вы захотите получить более полное представление о функциях отладчика, а также воспользоваться ссылками на дополнительные сведения.
 
 > [!div class="nextstepaction"]
-> [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+> [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

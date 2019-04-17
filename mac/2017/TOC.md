@@ -77,3 +77,4 @@
 # [Устранение неполадок](/visualstudio/mac/troubleshooting)
 ## [Программа улучшения качества программного обеспечения Visual Studio](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Сообщить о проблеме](/visualstudio/mac/report-a-problem)
+## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)

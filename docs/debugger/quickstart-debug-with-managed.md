@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475972"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504085"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Краткое руководство. Отладка с использованием C# или Visual Basic с помощью отладчика Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "58475972"
 1. Откройте Visual Studio и создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **консоль**, выберите **Шаблоны** и затем **Create new Console App (.NET Core) project** (Создание проекта консольного приложения — .NET Core). В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **консоль**, выберите **Шаблоны** и затем **Create new Console App (.NET Core) project** (Создание проекта консольного приложения — .NET Core). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C#** выберите **.NET Core**, а затем в средней области выберите **Консольное приложение (.NET Core)**. Введите имя, например **MyDbgApp**, и нажмите **ОК**.
@@ -186,4 +186,4 @@ ms.locfileid: "58475972"
 В этом руководстве вы узнали, как запускать отладчик, осуществлять пошаговое выполнение кода и проверять переменные. Возможно, вы захотите получить более полное представление о функциях отладчика, а также воспользоваться ссылками на дополнительные сведения.
 
 > [!div class="nextstepaction"]
-> [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+> [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
