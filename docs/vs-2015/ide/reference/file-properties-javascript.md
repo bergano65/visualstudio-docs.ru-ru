@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780373"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656492"
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.  
   
  Можно выбрать любой файл в обозревателе решений, а затем просмотреть его свойства в окне "Свойства". Файлы JavaScript имеют четыре свойства: **Копировать в выходной каталог**, **Действие пакета**, **Имя файла** и **Путь к файлу**.  
@@ -96,5 +95,5 @@ ms.locfileid: "54780373"
 ### <a name="version"></a>Версия  
  Отображает версию, на которую указывает ссылка.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [NIB: Свойства проекта (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

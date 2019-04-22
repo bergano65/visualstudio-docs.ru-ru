@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980653"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654507"
 ---
 # <a name="install-sql-server-sample-databases"></a>Установка образцов баз данных SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Образцы баз данных полезны для экспериментов с запросы SQL и LINQ, привязка данных, моделирование Entity Framework и т. д.  Каждый продукт базы данных имеет свои собственные образцы баз данных. Northwind и AdventureWorks являются две популярные SQL Server образцы баз данных.  
   
  **AdventureWorks** является текущей базе данных для продуктов SQL Server. Его можно загрузить в виде MDF-файла из [страницы AdventureWorks в Codeplex](http://msftdbprodsamples.codeplex.com/). Доступны регулярные и простой (LT) версии базы данных здесь. В большинстве случаев LT версии является предпочтительным, так как он был менее сложным.  

@@ -15,17 +15,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c1c463e95ab81c0331b12aaea692afe7005eff9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778650"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653702"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **Приложение** в **конструкторе проектов** служит для задания параметров и свойств приложения проекта.  
   
  Чтобы получить доступ к странице **Приложение**, выберите узел проекта (не узел **Решение**) в **обозревателе решений**. Затем в строке меню выберите **Проект** > **Свойства**. После того как откроется конструктор проектов, перейдите на вкладку **Приложение**.  

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980082"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657263"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В некоторых приложениях может потребоваться работать с данными, которые поступают из нескольких таблиц или сущностей, которые связаны друг с другом в родительско дочернее отношение. Например, может потребоваться отобразить сетку, которая отображает клиентов из `Customers` таблицы. Когда пользователь выберет конкретного клиента, другой сетке отображаются заказы этого клиента из связанной `Orders` таблицы.  
   
  Можно создать элементы управления с привязкой к данным для отображения связанных данных путем перетаскивания элементов из **источников данных** окно в конструктор WPF.  

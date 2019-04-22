@@ -15,17 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cc4ae6704f59f33de091fe528c7e05898361115
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990203"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656769"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **Настроить ссылку на службу** диалоговое окно позволяет настроить поведение [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] служб.  
   
 > [!NOTE]

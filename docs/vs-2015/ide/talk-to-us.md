@@ -11,19 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02320e4e47f98212d49d81e302510bce4573e685
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354860"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657609"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [обращайтесь к нам](https://docs.microsoft.com/visualstudio/ide/talk-to-us) на сайте docs.microsoft.com.  
-
-  
+Самая актуальная документация по Visual Studio, см. в разделе [обращайтесь к нам](https://docs.microsoft.com/visualstudio/ide/talk-to-us).  
 
 Нас интересуют ваши идеи по улучшению нашей документации. Мы не можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту.  
   
@@ -55,5 +53,5 @@ ms.locfileid: "58354860"
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Я хочу принять участие в работе сообщества разработчиков  
  Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [форумами MSDN](http://social.msdn.microsoft.com/Forums/home) или сайтом [StackOverflow](http://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на веб-сайтах [Developer code samples](http://code.msdn.microsoft.com/) и [CodePlex](http://www.codeplex.com/) .  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Как сообщить о проблеме с Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

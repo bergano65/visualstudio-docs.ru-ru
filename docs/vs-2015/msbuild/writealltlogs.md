@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5e51a674a075b265aa6ec2550f4e8cf4207c5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 371357249bb9674a636859c995ad076eb41c2a08
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804758"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656431"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Записывает журналы отслеживания для всех потоков и контекстов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -44,10 +43,10 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  Имя корневой папки для имени файла журнала.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с установленным битом [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->), если контекст отслеживания был создан.  
+ ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с помощью ([успешно]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) задан бит, если контекст отслеживания был создан.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h  
+ **Заголовок.** FileTracker.h  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

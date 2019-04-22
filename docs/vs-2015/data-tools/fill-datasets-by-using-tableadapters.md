@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992750"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656782"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнение наборов данных с помощью адаптеров таблицы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Компонент адаптера таблицы заполняет набор данных данными из базы данных, на основе один или несколько запросов или хранимых процедур, которые можно указать. Адаптеры таблиц можно также выполнить добавляет, обновления и удаления в базе данных, чтобы сохранить изменения, внесенные в набор данных. Можно также выполнять глобальные команды, которые не связаны с любой конкретной таблицы.  
   
 > [!NOTE]

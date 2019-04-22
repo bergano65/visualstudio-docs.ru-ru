@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Исключение файлов из сборки | Документы Майкрософт
+title: Практическое руководство. Исключение файлов из сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,21 +13,20 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796728"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656458"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из построения
+# <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В файле проекта можно использовать подстановочные знаки, чтобы включить все файлы из одного каталога или набора вложенных каталогов в качестве входных данных для сборки. Однако может присутствовать один файл в каталоге или один каталог в наборе вложенных каталогов, который не требуется включать в качестве входных данных для сборки. Этот файл или каталог можно явным образом исключить из списка входных данных. Кроме того, в проекте может быть файл, который требуется включить только при определенных условиях. Можно явно объявить условия, при которых файл включается в сборку.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Исключение файла или каталога из входных данных для сборки  
- Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Например:  
+ Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Пример:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -126,6 +125,6 @@ ms.locfileid: "54796728"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [как: Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)

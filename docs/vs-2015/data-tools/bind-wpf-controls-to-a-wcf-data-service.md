@@ -18,17 +18,16 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86c4358179b86031652cf933823c00a68526e9c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33928df6dd1151dc79dd07c966985666d2e7fd19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990399"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655794"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям клиентов, инкапсулированным в [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]. Вы также добавите кнопки, позволяющие клиентам просматривать и обновлять записи.  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  

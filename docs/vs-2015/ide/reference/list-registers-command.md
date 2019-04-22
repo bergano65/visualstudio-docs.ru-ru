@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763043"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658543"
 ---
 # <a name="list-registers-command"></a>Команда List Registers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>Переключатели  
  /Display [{`register`&#124;`registerGroup`}...]  
- Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Например:  
+ Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -65,7 +64,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)   
+ [Общие сведения об отладке: Окно "Регистры"](../../debugger/debugging-basics-registers-window.md)   
  [Практическое руководство. Использование окна регистров](../../debugger/how-to-use-the-registers-window.md)

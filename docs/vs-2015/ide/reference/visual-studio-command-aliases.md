@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763413"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654377"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Псевдонимы предоставляют средства для ввода команд в **Найти** или в окне **Команда**, сокращая текст, необходимый для набора выполняемых команд. Например, чтобы не вводить `>File.OpenFile` для отображения диалогового окна **Открытие файла**, можно использовать стандартный псевдоним `>of`.
 
@@ -72,7 +71,7 @@ ms.locfileid: "54763413"
 |[Команда Start](../../ide/reference/start-command.md)|н|Debug.Start|
 |[Команда "Перейти"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Перейти к скобке|GotoBrace|Edit.GotoBrace|
-|F1Help|Справка|Help.F1Help|
+|F1Help|Help|Help.F1Help|
 |Режим интерпретации|immed|Tools.ImmediateMode|
 |Вставить файл как текст|InsertFile|Edit.InsertFileAsText|
 |[Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -128,5 +127,5 @@ ms.locfileid: "54763413"
 |Вывести процессы|&#124;|Debug.ListProcesses|
 |[Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md) [командное окно](../../ide/reference/command-window.md) [найти/команда-окно](../../ide/find-command-box.md)

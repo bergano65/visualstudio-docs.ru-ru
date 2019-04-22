@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dca0197ee25bc56f3ab017530baeb842572fc16
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657107"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Когда вы добавляете ссылку на сборку с помощью вкладки .NET или диалога добавления ссылки, эта ссылка указывает на промежуточную ссылочную сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке .NET перечислены все ссылочные сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующих сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  
   
 ## <a name="multi-targeting"></a>Нацеливание на несколько версий  

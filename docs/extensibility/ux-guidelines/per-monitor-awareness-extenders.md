@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504254"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660701"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Для каждого монитора Awareness support для средств расширения Visual Studio
 Версий, предшествующих Visual Studio 2019 было контексте awareness точек на ДЮЙМ, установить система поддерживает функции, а не учитывать точек на ДЮЙМ (PMA) для каждого монитора. Выполнение в системе awareness привело к снижению visual возможности (например нечетким шрифты или значков) каждый раз, когда Visual Studio пришлось визуализации на мониторах с отличающимися масштабами факторов или удаленный компьютер в машин с помощью разных конфигурациях например (различных Windows масштабирование).
@@ -40,10 +40,13 @@ ms.locfileid: "59504254"
 ## <a name="enabling-pma"></a>Включение PMA
 Чтобы включить PMA в Visual Studio, следует соблюдать следующие требования:
 1)  Windows 10 апреля 2018 г. обновление (v1803 RS4) или более поздней версии
-2)  .NET framework 4.8 RTM или более поздней версии (в настоящее время поставляется как автономный Предварительный просмотр или пакета с последнего Windows Insider сборок)
+2)  .NET framework 4.8 RTM или более поздней версии
 3)  Visual Studio 2019 с [«Оптимизация отрисовки для экранов с различным плотности»](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) параметр включен
 
 Если эти требования выполняются, Visual Studio автоматически включает режим PMA всех этапах процесса.
+
+> [!NOTE]
+> Содержимое Windows Forms в Visual STUDIO (например, браузер свойств) будет поддерживать PMA только в том случае, если у вас есть Visual Studio 2019 обновлением #1.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Тестирование расширений для PMA проблемы
 
@@ -106,12 +109,18 @@ IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 #### <a name="out-of-process-ui"></a>Out-of-process пользовательского интерфейса
 Пользовательский Интерфейс создается вне процесса и при создании внешнего процесса в другой режим awareness точек на ДЮЙМ, чем в Visual Studio, это может вызвать любой из предыдущих проблемы отрисовки.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Элементы управления Windows Forms, изображения или windows, которые не отображаются
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Элементы управления Windows Forms, изображения или макеты, неправильной отрисовки
+Не все содержимое Windows Forms поддерживают режим PMA. В результате может появиться отображением проблемы с макетами неправильные или масштабирование. Возможным решением в данном случае является явным образом отображать содержимое форм Windows в «System виду» DpiAwarenessContext (см. [перезагрузки элемента управления в определенных DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Элементы управления Windows Forms или windows, которые не отображаются
 Одной из причин этой проблемы является разработчиков, пытающихся изменение родительского объекта элемента управления или окно с одной DpiAwarenessContext в окно с разных DpiAwarenessContext.
 
-На следующих рисунках показаны текущими ограничениями операционной системы Windows в родительские связи windows:
+На следующих рисунках показаны текущего **по умолчанию** ограничения операционной системы Windows в родительские связи windows:
 
 ![Снимок экрана поведение правильный родительские связи](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> Это поведение можно изменить, задав в среде размещения потока (см. [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Таким образом Если родительско дочернее отношение между неподдерживаемые режимы, его не удастся, и элемент управления или окно может не отображаться должным образом.
 

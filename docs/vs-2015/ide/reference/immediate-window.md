@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802678"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660298"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.  
   
  Это окно можно использовать для выполнения отдельных команд [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. В число доступных команд входит команда `EvaluateStatement`, которую можно использовать для присвоения значений переменным. Окно **Интерпретация** также поддерживает технологию Intellisense.  
@@ -75,7 +74,7 @@ ms.locfileid: "54802678"
   
     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.  
   
-   Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в статье об [ отладке во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Вычисление выражений во время разработки нельзя использовать в типах проектов, требующих запуска среды выполнения, таких как проекты [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], веб-проекты, проекты для интеллектуальных устройств и проекты SQL.  
   
@@ -123,11 +122,11 @@ ms.locfileid: "54802678"
   
 2.  Щелкните правой кнопкой мыши в текстовой области окна **Вывод** и выберите пункт **Сообщения об исключениях** или отмените его выбор.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Навигация по коду с помощью отладчика](../../debugger/navigating-through-code-with-the-debugger.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Основы отладки](../../debugger/debugger-basics.md)   
- [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Пошаговое руководство: Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

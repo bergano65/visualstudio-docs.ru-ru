@@ -18,17 +18,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778608"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658218"
 ---
 # <a name="publish-page-project-designer"></a>Страница публикации в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **Публикация** **конструктора проектов** используется для настройки свойств развертывания ClickOnce.  
   
  Чтобы открыть страницу **Опубликовать** , выберите узел проекта в **обозревателе решений**и затем в меню **Проект** щелкните команду **Свойства**. После того как откроется окно **Конструктор проектов** , перейдите на вкладку **Публикация** .  
@@ -76,20 +75,20 @@ ms.locfileid: "54778608"
  **Опубликовать сейчас**  
  Приложение публикуется с использованием текущих параметров. Этот параметр эквивалентен кнопке **Готово** в **мастере публикаций**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Практическое руководство. Указание расположения, в которое средой Visual Studio копируются файлы](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [Практическое руководство. Указание расположения, из которого будет производиться установка пользователями](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
- [Практическое руководство. Задание ссылки на веб-страницу технической поддержки](../../deployment/how-to-specify-a-link-for-technical-support.md)   
- [Практическое руководство. Задание режима установки ClickOnce: автономного или через Интернет](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
+ [Практическое руководство. Укажите, где Visual Studio копирует файлы](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Практическое руководство. Укажите расположение, где будет производиться Установка пользователями из](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
+ [Практическое руководство. Укажите ссылку для получения технической поддержки](../../deployment/how-to-specify-a-link-for-technical-support.md)   
+ [Практическое руководство. Укажите ClickOnce в автономный режим или режим Интернет-установки](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
  [Практическое руководство. Включение автозапуска при установке с компакт-диска](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
- [Практическое руководство. Установка версии публикации приложения ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)   
- [Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
- [Практическое руководство. Задание файлов, публикуемых с помощью ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
+ [Практическое руководство. Установка ClickOnce версии публикации](../../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [Практическое руководство. Автоматически ClickOnce увеличение номера версии публикации](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Практическое руководство. Укажите, какие файлы публикуются с помощью ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Практическое руководство. Управление обновлениями для ClickOnce-приложения](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
  [Практическое руководство. Изменение языка публикации для приложения ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
- [Практическое руководство. Задание имени в меню "Пуск" для приложения ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
+ [Практическое руководство. Задание имени в меню Пуск для приложения ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [Практическое руководство. Задание страницы публикации для приложения ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [Развертывание и безопасность технологии ClickOnce](../../deployment/clickonce-security-and-deployment.md)

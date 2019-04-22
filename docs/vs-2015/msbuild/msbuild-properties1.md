@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 104fe082f9e18a7be97f2ab95a022288316cc638
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773239"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660753"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Свойства представляют собой пары "имя-значение", с помощью которых выполняется настройка сборок. Свойства используются для передачи значений задачам, проверки условий и хранения значений, на которые можно давать ссылки в файле проекта.  
   
 ## <a name="defining-and-referencing-properties-in-a-project-file"></a>Определение свойств и указание ссылок на них в файле проекта  
@@ -48,7 +47,7 @@ ms.locfileid: "54773239"
 ## <a name="reserved-properties"></a>Зарезервированные свойства  
  MSBuild резервирует некоторые имена свойств для хранения сведений о файле проекта и двоичных файлах MSBuild. Обращение к этим свойствам, так же как и к другим свойствам, осуществляется с помощью символа $. Например, оператор $(MSBuildProjectFile) возвращает полное имя файла проекта, включая расширение.  
   
- Дополнительные сведения см. в разделах [Практическое руководство. Использование ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) и [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Дополнительные сведения см. в разделе [Как Ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) и [MSBuild зарезервированные и стандартные свойства](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Свойства среды  
  Обращаться к переменным среды в файлах проектов можно так же как к зарезервированным свойствам. Например, чтобы использовать переменную среды `PATH` в файле проекта, укажите оператор $(Path). Если проект содержит определение свойства с тем же именем, что и у свойства среды, свойство в проекте переопределит значение переменной среды.  
@@ -60,7 +59,7 @@ ms.locfileid: "54773239"
 > [!TIP]
 >  Не все переменные среды считываются в качестве исходных свойств. Все переменные среды, имена которых не являются допустимыми именами свойств MSBuild, например "386", игнорируются.  
   
- Дополнительные сведения см. в разделе [Практическое руководство. Использование переменных среды в сборке](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Дополнительные сведения см. в разделе [Как Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="registry-properties"></a>Свойство реестра  
  Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, HKEY_LOCAL_MACHINE), `Key` — имя раздела, `SubKey` — имя подраздела, `Value` — значение подраздела.  
@@ -96,7 +95,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
  Кроме того, глобальные свойства можно задавать или изменять для дочерних проектов в сборках из нескольких проектов, используя атрибут `Properties` задачи MSBuild. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md).  
   
- Если свойство задается с помощью атрибута `TreatAsLocalProperty` в теге проекта, это значение глобального свойства не переопределяет значение свойства, заданное в файле проекта. Дополнительные сведения см. в разделах [Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md) и [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
+ Если свойство задается с помощью атрибута `TreatAsLocalProperty` в теге проекта, это значение глобального свойства не переопределяет значение свойства, заданное в файле проекта. Дополнительные сведения см. в разделе [элемент Project (MSBuild)](../msbuild/project-element-msbuild.md) и [как: Построение одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
 ## <a name="property-functions"></a>Функции свойств  
  Начиная с .NET Framework версии 4, для оценки сценариев MSBuild можно использовать функции свойств. Получить системное время, сравнить строки, проверить регулярные выражения и выполнить другие действия можно в сценарии сборки без использования задач MSBuild.  
@@ -140,11 +139,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)  
- [Практическое руководство. Использование переменных среды в сборке](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [Практическое руководство. Использование ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [Практическое руководство. Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [Практическое руководство. Ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [Практическое руководство. Построение одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Элемент Property (MSBuild)](../msbuild/property-element-msbuild.md)

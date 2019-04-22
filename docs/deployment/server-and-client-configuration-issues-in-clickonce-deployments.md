@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597802"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654091"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.
@@ -49,7 +49,7 @@ ms.locfileid: "56597802"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce и прокси-сервер проверки подлинности
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для интеграции Windows проверка подлинности прокси, начиная с версии .NET Framework 3.5. Нет определенных Machine.config не требуется. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для других протоколов проверки подлинности как Basic или Digest.
 
- Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Для получения дополнительной информации см. http://go.microsoft.com/fwlink/?LinkId=158730.
+ Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Дополнительные сведения см. в разделе http://go.microsoft.com/fwlink/?LinkId=158730.
 
  Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -94,7 +94,6 @@ ms.locfileid: "56597802"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP, не поддерживается для установки приложений
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:
 
-
 | Тип URL-адреса | Описание |
 |----------| - |
 | ftp:// | Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
@@ -102,7 +101,7 @@ ms.locfileid: "56597802"
 | https:// | Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 | file:// | Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Брандмауэр Windows
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP с пакетом обновления 2 (SP2): Брандмауэр Windows
  По умолчанию в Windows XP с пакетом обновления 2 включает брандмауэр Windows. Если вы разрабатываете приложение на компьютере с установленной операционной системой Windows XP, вы по-прежнему публикации и запуску [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с локального сервера, где работают службы IIS. Тем не менее не может получить доступ к этом сервере, где работают службы IIS с другого компьютера, если не открыть брандмауэр Windows. Инструкции по управлению брандмауэром Windows содержатся в справке Windows.
 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Включить серверные расширения FrontPage
@@ -110,7 +109,7 @@ ms.locfileid: "56597802"
 
  По умолчанию в Windows Server нет установлены серверные расширения FrontPage. Если вы хотите использовать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для публикации на сервере Windows Server Web, который использует протокол HTTP с помощью серверных расширений FrontPage, вам сначала необходимо установить серверные расширения FrontPage. Установку можно выполнить с помощью средства администрирования Управление данным сервером в Windows Server.
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Типы содержимого заблокированное устройство
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Заблокированная типы содержимого
  Службы IIS на [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] блокируют все типы файлов, за исключением определенных известных типов содержимого (например, *.htm*, *.html*, *.txt*, и так далее). Чтобы включить развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений, использующих этот сервер, необходимо изменить параметры IIS для разрешения загрузки файлов типа *.application*, *.manifest*и любых других настраиваемых типов файлов используемый приложением.
 
  Если развертывание выполняется с помощью сервера IIS, запустите *inetmgr.exe* и добавить новые типы файлов для веб-страницы по умолчанию:

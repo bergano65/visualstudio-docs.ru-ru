@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627978"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654325"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 В этой статье перечислены следующие распространенные ошибки, которые могут возникнуть при развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, а также шаги по устранению каждой проблемы.
@@ -56,7 +56,7 @@ ms.locfileid: "56627978"
 
  Также необходимо задать типы содержимого (также известные как типы MIME) соответствующим образом .application ",".manifest "и".deploy файлы. Дополнительные сведения см. документацию сервера.
 
- Дополнительные сведения см. в разделе «Windows Server 2003: заблокированной типы содержимого» в [проблемы конфигурации сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
+ Дополнительные сведения см. в разделе «Windows Server 2003: Заблокированная типы содержимого» [проблемы конфигурации сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Сообщение об ошибке: «Приложение неправильно отформатировано»; Файл журнала содержит «Недопустимая подпись XML»
  Убедитесь, что файла манифеста обновлен и подпишите его еще раз. Повторно опубликуйте приложение с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или используйте Mage, чтобы подписать приложение еще раз.
@@ -70,13 +70,13 @@ ms.locfileid: "56627978"
 
 - Попробуйте еще раз запустить приложение в меню "Пуск". [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Возможно, обнаружен обновления в фоновом режиме, но предложит установить при следующей активации.
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Во время обновления возникнет ошибка, имеющий следующий записи журнала: «ссылка в развертывании не соответствует удостоверению, определенному в манифесте приложения»
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Во время обновления появляется ошибка с уровнем ниже запись журнала: «Ссылка в развертывании не соответствует удостоверению, определенному в манифесте приложения»
  Эта ошибка может возникать изменено вручную манифестов развертывания и приложения и привели описание удостоверения сборки в один манифест для перестанут синхронизироваться с другими. Удостоверение сборки состоит из его имя, версию, язык и региональные параметры и маркер открытого ключа. Проверьте описания удостоверений в манифестах и устраните все различия.
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Успешной активации с локального диска или компакт-диска первый раз, но последующие активации из меню "Пуск" завершилась с ошибками
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] использует URL-адрес поставщика развертывания для получения обновлений для приложения. Проверьте правильность расположения, который указывает URL-адрес.
 
-#### <a name="error-cannot-start-the-application"></a>Ошибка: «не удается запустить приложение»
+#### <a name="error-cannot-start-the-application"></a>Ошибка: «Не удается запустить приложение»
  Это сообщение об ошибке обычно указывает на наличие проблемы с установкой нашему приложению легкий привкус [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] хранения. Произошла ошибка в приложении, либо повреждено хранилище. Файл журнала может сообщать, где произошла ошибка.
 
  Вы должны сделайте следующее:
@@ -101,11 +101,11 @@ ms.locfileid: "56627978"
 
  При публикации с URL-адрес, убедитесь, что конечный компьютер имеет включены серверные расширения FrontPage.
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт "\<сайта >". Компоненты взаимодействия с серверными расширениями FrontPage не установлены.
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: Не удалось создать веб-сайт "\<сайта >". Компоненты взаимодействия с серверными расширениями FrontPage не установлены.
  Убедитесь, что у вас есть Microsoft Visual Studio Web Authoring компонента, установленного на компьютере, на котором выполняется публикация из. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft.Windows.Common-элементы управления, Version = 6.0.0.0, язык и региональные параметры = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, тип = win32"
- Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными визуальными стилями. Чтобы устранить эту проблему, см. в разделе [как: публикация приложения WPF с поддержкой Visual стили](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: Не удалось найти файл "Microsoft.Windows.Common-элементы управления, Version = 6.0.0.0, язык и региональные параметры = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, тип = win32"
+ Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными визуальными стилями. Чтобы устранить эту проблему, см. в разделе [как: Публикация приложения WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
 
 ## <a name="using-mage"></a>С помощью Mage
 
@@ -121,7 +121,6 @@ ms.locfileid: "56627978"
 
 ## <a name="additional-errors"></a>Дополнительные сведения об ошибках
  В следующей таблице приведены некоторые распространенные сообщения об ошибках, которые пользователь клиентского компьютера может появиться, когда пользователь устанавливает [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Каждое сообщение об ошибке отображается рядом с описание наиболее вероятная причина ошибки.
-
 
 | Сообщение об ошибке | Описание |
 | - | - |

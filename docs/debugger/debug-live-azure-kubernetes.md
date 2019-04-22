@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856694"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654715"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Отладка работающих приложений ASP.NET службы Azure Kubernetes с использованием Snapshot Debugger
 
@@ -35,9 +35,9 @@ ms.locfileid: "58856694"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Средство Snapshot Debugger для служб Azure Kubernetes доступно только для предварительной версии Visual Studio 2019 Enterprise или более поздней версии с **рабочей нагрузкой разработки Azure**. (На вкладке **Отдельные компоненты** его можно найти в разделе **Отладка и тестирование** > **Отладчик моментальных снимков**.)
+* Отладчик моментальных снимков для службы Azure Kubernetes — только для Visual Studio Enterprise 2019 г. или более поздней версии с **рабочую нагрузку разработки Azure**. (На вкладке **Отдельные компоненты** его можно найти в разделе **Отладка и тестирование** > **Отладчик моментальных снимков**.)
 
-    Если он еще не установлен, установите [предварительную версию Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/preview/).
+    Если он еще не установлен, установите [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Коллекция моментальных снимков доступна для следующих веб-приложений службы Azure Kubernetes.
   * Приложения ASP.NET Core, выполняющиеся на платформе .NET Core 2.2 или более поздней версии под управлением Debian 9.

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602024"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661065"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
 В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).
@@ -42,7 +42,6 @@ ms.locfileid: "56602024"
 -   Существуют другие общие папки для проекта и файл решения.
 
 -   Проекты были добавлены отдельно (в решения, контролируемого системой управления версиями).
-
 
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], предполагается, что имя папки SUR совпадать с именем решения без расширения. В следующей таблице перечислены поведение в обеих версиях.
 

@@ -34,17 +34,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753382"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658037"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.  
   
 > [!NOTE]
@@ -91,8 +90,8 @@ ms.locfileid: "54753382"
 |`$(TargetFileName)`|Имя основного выходного файла для сборки (определяется базовым именем и расширением файла).|  
 |`$(TargetExt)`|Расширение имени основного выходного файла сборки. Включает символ "." перед расширением файла.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Указание настраиваемых событий сборки в Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Страница "События построения" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Практическое руководство. Назначение событий построения (C#)](../../ide/how-to-specify-build-events-csharp.md)
+ [Практическое руководство. Указание событий сборки (C#)](../../ide/how-to-specify-build-events-csharp.md)

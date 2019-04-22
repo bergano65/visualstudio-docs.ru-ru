@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802293"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655352"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.  
   
 ## <a name="multi-processor-logging-challenges"></a>Проблемы ведения журналов в многопроцессорной среде  

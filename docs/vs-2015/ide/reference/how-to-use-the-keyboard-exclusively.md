@@ -16,17 +16,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4cb5e4eadafb4ce3ea7600a2a179689945b9f16
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782625"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655365"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. на странице [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]

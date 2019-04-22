@@ -19,17 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14803b84e8695839b05726b3cadd3f2150079946
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991971"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657458"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Созданием элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окно конструктора WPF или Windows Forms. Каждый элемент в **источников данных** окно имеет элемент управления по умолчанию, который создается при перетаскивании в конструктор. Тем не менее вы можете создать другой элемент управления.  
   
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Задать элементы управления, которые будут созданы для таблиц или объектов данных  

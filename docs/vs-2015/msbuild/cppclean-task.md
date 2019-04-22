@@ -20,22 +20,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791443"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655001"
 ---
 # <a name="cppclean-task"></a>Задача CPPClean
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Удаляет временные файлы, которые MSBuild создает при сборке проекта Visual C++. Процесс удаления файлов сборки называется *очисткой*.  
 
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи **CPPClean**.  
-
 
 |            Параметр            |                                                                                                Описание                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,5 +45,5 @@ ms.locfileid: "54791443"
 
 ## <a name="remarks"></a>Примечания  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935593"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655716"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Подключение основного приложения с генерируемым обработчиком директив
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Подключение основного приложения к созданному обработчику директив
 
 Вы можете написать собственный узел, который обрабатывает текстовые шаблоны. Демонстрируется базовый пользовательского ведущего приложения в [Пошаговое руководство: Создание шаблона узла пользовательского текста](../modeling/walkthrough-creating-a-custom-text-template-host.md). Можно расширить для добавления функций, таких как создание нескольких выходных файлов, на которых размещены.
 
@@ -40,7 +40,6 @@ ms.locfileid: "55935593"
 ## <a name="prerequisites"></a>Предварительные требования
 
 Для определения доменного языка необходимо установить следующие компоненты.
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ ms.locfileid: "55935593"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Создание пользовательского хост текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Пошаговое руководство: Создание пользовательского основного приложения для текстовых шаблонов.](../modeling/walkthrough-creating-a-custom-text-template-host.md)

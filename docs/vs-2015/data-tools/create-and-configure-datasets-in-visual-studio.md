@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979558"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656258"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Создание и настройка наборов данных в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Объект *набора данных* представляет собой набор объектов для хранения данных из базы данных в памяти и поддерживает отслеживание изменений для включения создания, чтения, обновления и удаления (CRUD) с этими данными без необходимости всегда необходимо подключение к базе данных. Наборы данных были разработаны для простых *формы поверх данных* бизнес-приложений. Для новых приложений рассмотрите возможность использования Entity Framework для хранения и моделирования данных в памяти. Для работы с наборами данных, должны иметь базовые знания о основными понятиями баз данных.
 

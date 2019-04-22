@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796881"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655820"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] имеют по несколько общих элементов. Эти элементы определены в файле в microsoft.build.commontypes.xsd.  
   
 ## <a name="common-items"></a>Общие элементы  

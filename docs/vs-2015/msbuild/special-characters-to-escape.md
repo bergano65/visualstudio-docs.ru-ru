@@ -17,17 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2701c698d795f1af1f888e677362bb2cf248111
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782466"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659687"
 ---
 # <a name="special-characters-to-escape"></a>Знаки, требующие отключения их специального значения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Специальные знаки необходимо экранировать только в том случае, если они имеют особое значение в контексте, в котором используются. Например, звездочка (*) является специальным символом только в атрибутах "Включить" и "Исключить" определения элемента или при вызове <xref:Microsoft.Build.Tasks.CreateItem>. Во всех остальных случаях звездочка считается символом звездочки. Если не требуется экранировать звездочки в файлах проекта, использование их в таком виде не приносит никакого вреда.  
   
  Вместо специального знака используйте нотацию %*xx*, где *xx* представляет собой шестнадцатеричное значение символа ASCII. Например, чтобы использовать символ звездочки (*) как буквенный символ, используйте значение `%2A`.  
@@ -46,6 +45,6 @@ ms.locfileid: "54782466"
 |?|Вопросительный знак — подстановочный знак, используемый при описании файловой спецификации в разделе включение/исключение элемента.|  
 |*|Звездочка — подстановочный знак, используемый при описании файловой спецификации в разделе включение/исключение элемента.|  
   
-## <a name="see-also"></a>См. также раздел  
- [How to: Escape Special Characters in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)  (Как обеспечить пропуск специальных знаков в MSBuild)  
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Пропуск специальных знаков в MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7686c4db4984188a4f8c4a52343f1386e9edd909
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8ad1ab33de1aa0d25f7beff0dac43ebedbf0f6b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797841"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658075"
 ---
 # <a name="add-existing-item-command"></a>Команда Add Existing Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Добавляет существующий файл в текущее решение и открывает его.  
   
 ## <a name="syntax"></a>Синтаксис  

@@ -11,17 +11,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5afc245bd16954ba348b4ec581238bf17e5d994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656821"
 ---
 # <a name="file-tracking"></a>Отслеживание файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Журналы отслеживания файлов отправляют в файловую систему Windows вызов процесса и его дочерних процессов. Вызывая указанные ниже функции, программы управляют включением и отключением ведения журнала, а также задают нужный файл журнала.  
   
 ## <a name="in-this-section"></a>В этом разделе  
