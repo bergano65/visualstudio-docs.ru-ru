@@ -13,20 +13,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a96831650e09b1018c6cffc8149a9a0020edc90b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650802"
 ---
 # <a name="msbuild-special-characters"></a>Специальные символы в MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] резервирует некоторые знаки для специального применения в определенных контекстах. Эти знаки следует экранировать, только если вы хотите использовать их именно в том контексте, для которого они зарезервированы. Например, звездочка имеет специальное значение только в атрибутах `Include` и `Exclude` определения элемента, а также в вызовах `CreateItem`. Если требуется, чтобы звездочка отображалась как звездочка в одном из этих контекстов, нужно экранировать ее. В любом другом контексте просто введите звездочку там, где она нужна.  
   
- Чтобы экранировать специальный знак, используйте синтаксис %*xx*, где *xx* представляет шестнадцатеричное ASCII-значение знака. Дополнительные сведения см. в статье [How to: Escape Special Characters in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md) (Как обеспечить пропуск специальных знаков в MSBuild).  
+ Чтобы экранировать специальный знак, используйте синтаксис %*xx*, где *xx* представляет шестнадцатеричное ASCII-значение знака. Дополнительные сведения см. в разделе [Как Пропуск специальных знаков в MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
 ## <a name="special-characters"></a>Специальные символы  
  В следующей таблице перечислены специальные знаки [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]:  
@@ -41,6 +40,6 @@ ms.locfileid: "54793104"
 |?|%3F|Подстановочный знак для имен файлов в атрибутах `Include` и `Exclude`|  
 |*|%2A|Подстановочный знак для использования в именах файлов в атрибутах `Include` и `Exclude`|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)   
  [Элементы](../msbuild/msbuild-items.md)

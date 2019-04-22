@@ -8,19 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222338"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649593"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Практическое руководство. Добавить новый элемент в проект рабочего процесса
 
 После создания проекта рабочего процесса, можно добавить действия рабочего процесса, конструкторы и другие знакомые элементы Visual Studio в проект.
 
 В следующей таблице перечислены элементы Windows Workflow Foundation (WF), которые можно добавить в проект рабочего процесса:
-
 
 | name | Описание |
 |-| - |

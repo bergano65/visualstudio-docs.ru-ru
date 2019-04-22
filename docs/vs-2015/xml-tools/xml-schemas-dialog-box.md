@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989544"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647450"
 ---
 # <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схемы»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **XML-схем** диалоговое окно используется для выбора какие схем XML схеме определения языка XSD для связывания с XML-документа. Можно выбрать схему из кэша схем или указать схему, которая не находится в кэше. Выбранные схемы считаются частью набора схем. Наборы схем применяются в технологии IntelliSense, а также служат для проверки правильности XML-документов.  
   
  Вы можете получить доступ к **XML-схем** диалоговое окно, либо нажав **схемы** кнопки в окне свойств документа или выбрав **схемы** из **XML** меню.  

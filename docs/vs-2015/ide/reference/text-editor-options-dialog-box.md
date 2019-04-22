@@ -21,17 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649073"
 ---
 # <a name="text-editor-options-dialog-box"></a>Диалоговое окно "Параметры текстового редактора"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Параметры редактора в диалоговом окне **Параметры** позволяют настраивать внешний вид и поведение редактора.  
   
 ## <a name="in-this-section"></a>В этом разделе  

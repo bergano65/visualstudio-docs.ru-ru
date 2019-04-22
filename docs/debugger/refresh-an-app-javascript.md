@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790294"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Обновление приложения UWP в Visual Studio
@@ -57,9 +57,9 @@ ms.locfileid: "58790294"
 
 5.  На домашней странице приложения UWP измените некоторые HTML.
 
-7.  Нажмите кнопку **обновить Windows приложение** кнопку, которая выглядит следующим образом: ![кнопкой "Обновить Windows-приложение"](../debugger/media/js_refresh.png "JS_Refresh"). (Или нажмите клавишу F4.)
+7.  Нажмите кнопку **обновить Windows приложение** кнопку, которая выглядит следующим образом: ![Кнопка приложения Windows "Обновить"](../debugger/media/js_refresh.png "JS_Refresh"). (Или нажмите клавишу F4.)
 
 8.  Перейдите в приложение. Приложение перезапускается и обновленный HTML-код используется для отображения приложения.
 
-## <a name="see-also"></a>См. также раздел
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>См. также
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

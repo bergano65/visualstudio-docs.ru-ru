@@ -14,7 +14,6 @@
 # [Настройка интегрированной среды разработки](customizing-the-ide.md)
 ## [Расширение Visual Studio для Mac](extending-visual-studio-mac.md)
 
-
 # [Проекты и решения](projects-and-solutions.md)
 ## [Создание новых проектов](create-new-projects.md)
 ## [Добавление и удаление элементов проекта](add-and-remove-project-items.md)

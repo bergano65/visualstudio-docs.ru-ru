@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366046"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
@@ -63,9 +63,9 @@ ms.locfileid: "59366046"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Сборки должны иметь допустимые строгие имена|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Не используйте небезопасных десериализатор BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Не вызывайте BinaryFormatter.Deserialize предварительно задать BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Убедитесь, что перед вызовом BinaryFormatter.Deserialize задается BinaryFormatter.Binder|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Не используйте небезопасный десериализатор BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|

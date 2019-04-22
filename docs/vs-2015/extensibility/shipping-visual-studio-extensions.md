@@ -12,18 +12,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647205"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Примечание**. В коллекции Visual Studio заменяется в Visual Studio Marketplace. См. в разделе последнюю версию этого раздела за сведениями.
-
 
 После завершения разработки расширения, можно установить его на других компьютерах, поделиться с друзьями и коллегами или опубликовать его в коллекции Visual Studio. В этом разделе мы расскажем, все, что необходимо сделать, чтобы публикуйте и обслуживайте расширения: работа с VSIX-файлы, публикации, локализация и обновления.
 

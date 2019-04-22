@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840329"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650815"
 ---
 # <a name="handle-specialized-deployment"></a>Обработка специализированного развертывания
 Развертывание выполняется на необязательно для проектов. Например, веб-проекта поддерживает развертывания для проекта обновление веб-сервера. Аналогичным образом **смарт-устройств** проект поддерживает развертывание, чтобы скопировать созданное приложение на целевое устройство. Подтипов проекта можно указать поведение специализированного развертывания путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейс. Этот интерфейс определяет полный набор операций развертывания:
@@ -40,7 +40,6 @@ ms.locfileid: "56840329"
   Эта операция фактического развертывания должны выполняться в отдельном потоке, чтобы сделать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] даже быстрее реагировать на взаимодействие с пользователем. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> вызываются асинхронно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и работать в фоновом режиме, позволяя среде запросить состояние операции развертывания в любое время или чтобы прервать операцию, при необходимости. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Операции развертывания интерфейса называются средой, когда пользователь выбирает команду deploy.
 
   Чтобы уведомить среду, что операция развертывания имеет начала или окончания, подтип проекта должен вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> методы.
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Обработка специализированного развертывания с подтип проекта
 

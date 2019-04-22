@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804631"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648225"
 ---
 # <a name="creating-forwarding-loggers"></a>Создание средства ведения журнала переадресации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Средства ведения журнала переадресации повышают эффективность ведения журналов, позволяя выбрать события, которые требуется отслеживать при сборке проектов в многопроцессорной системе. Включив эти средства ведения журнала переадресации, можно предотвратить переполнение центрального средства ведения журнала нежелательными событиями, замедление сборки и загромождение журнала.  
   
  Чтобы создать средство ведения журнала переадресации, можно либо реализовать интерфейс <xref:Microsoft.Build.Framework.IForwardingLogger> и вручную реализовать его методы либо использовать класс <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> и его предварительно настроенные методы. (Последний вариант подойдет для большинства приложений.)  

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857078"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Вопросы и ответы по отладке моментальных снимков в Visual Studio
@@ -60,7 +60,7 @@ ms.locfileid: "58857078"
 ## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)
-- [Отладка работающих приложений ASP.NET Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Отладка работающих приложений ASP.NET на Виртуальных машинах Azure и Масштабируемых наборах виртуальных машин Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Отладка работающей службы Azure Kubernetes ASP.NET с помощью Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
-- [Устранение неполадок и известные проблемы отладки моментальных снимков](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Отладка работающих приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md)
+- [Отладка динамического ASP.NET Azure Machines\Virtual машин масштабируемые наборы виртуальных машин с помощью отладчика моментальных снимков](../debugger/debug-live-azure-virtual-machines.md)
+- [Отладка с помощью отладчика моментальных снимков Kubernetes динамической ASP.NET в Azure](../debugger/debug-live-azure-kubernetes.md)
+- [Устранение неполадок и известные проблемы для отладки моментальных снимков](../debugger/debug-live-azure-apps-troubleshooting.md)

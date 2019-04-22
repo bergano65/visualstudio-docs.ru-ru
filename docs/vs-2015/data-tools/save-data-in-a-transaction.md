@@ -20,17 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48c8732f75f23a0d0b0929eeef8865044f19d27b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978656"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647679"
 ---
 # <a name="save-data-in-a-transaction"></a>Сохранение данных в транзакции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -64,7 +63,7 @@ ms.locfileid: "58978656"
   
     -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-         - или -  
+         -или-  
   
     -   Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение** и создайте подключение к базе данных "Борей".  
   

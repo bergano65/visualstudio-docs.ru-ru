@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e14d968496c895f24038ca2db1e7f62846b75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950205"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648761"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Конструктор шаблона ReceiveAndSendReply
 
@@ -42,11 +42,10 @@ ms.locfileid: "55950205"
 
 В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.SendReply> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые ― в области конструктора рабочих процессов.
 
-
 | Имя свойства | Обязательно | Использование |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Необязательное понятное имя действия <xref:System.ServiceModel.Activities.SendReply>. По умолчанию используется SendReplyToReceive.<br /><br /> Несмотря на то что использование нестандартное значение для понятного имени <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется использовать такое значение. |
-| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | Да | Ссылка на действие <xref:System.ServiceModel.Activities.Receive>, связанное с этим действием <xref:System.ServiceModel.Activities.SendReply>. Это свойство не должно быть **null**. Действия <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> используются на сервере вместе для моделирования обмена сообщениями по шаблону «запрос–ответ». Это свойство указывает сопоставленное действие <xref:System.ServiceModel.Activities.Send>. В конструкторе, это свойство нельзя изменить, так как оно автоматически привязывается к <xref:System.ServiceModel.Activities.Send> действия, из которого был создан <xref:System.ServiceModel.Activities.SendReply> действия. |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | Ссылка на действие <xref:System.ServiceModel.Activities.Receive>, связанное с этим действием <xref:System.ServiceModel.Activities.SendReply>. Это свойство не должно быть **null**. Действия <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> используются на сервере вместе для моделирования обмена сообщениями по шаблону «запрос–ответ». Это свойство указывает сопоставленное действие <xref:System.ServiceModel.Activities.Send>. В конструкторе, это свойство нельзя изменить, так как оно автоматически привязывается к <xref:System.ServiceModel.Activities.Send> действия, из которого был создан <xref:System.ServiceModel.Activities.SendReply> действия. |
 | <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | Указывает получаемое содержимое сообщения или параметра. Это может быть либо действие <xref:System.ServiceModel.Activities.ReceiveMessageContent>, либо действие <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Измените это свойство, нажав кнопку с многоточием рядом с полем **содержимого** поле в таблице свойств или нажав **определить** рядом с пунктом **содержимого** метка на  **Получать** рабочей области конструктора действий. Как отобразить **определение содержимого** диалоговое окно. Дополнительные сведения о том, как использовать это окно, см. в разделе [содержимого диалогового окна определения](../workflow-designer/content-definition-dialog-box.md) раздела. |
 | <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | Указывает коллекцию объектов <xref:System.ServiceModel.Activities.CorrelationInitializer>, инициализирующих несколько объектов <xref:System.ServiceModel.Activities.CorrelationHandle>, которые настраивают это действие <xref:System.ServiceModel.Activities.Receive> в рамках рабочего процесса. Нажмите кнопку с многоточием рядом с полем <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> свойства в сетке свойств, чтобы открыть **Добавление инициализаторов корреляции** диалоговое окно. Дополнительные сведения об использовании это окно, см. в разделе [CorrelationInitializers диалоговое окно Добавление](../workflow-designer/add-correlationinitializers-dialog-box.md) раздела. |
 | <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | Указывает заголовок действия сообщения. Если явно не задано его значение по умолчанию:<br /><br /> <strong>https://tempuri.org/{service контракта пространство имен} / {имя контракта службы} / {имя операции}</strong> |

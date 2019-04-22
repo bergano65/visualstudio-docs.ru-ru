@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790632"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Пример кода для отладки HTML и CSS
 
-В этом разделе приведен пример файла для [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.
+В этом разделе приведен пример файла для [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.
 
 ## <a name="sample-code"></a>Пример кода
 Следующий код HTML используется в кратком руководстве в теге \<body>.
@@ -101,5 +101,5 @@ ms.locfileid: "58790632"
 })();
 ```
 
-## <a name="see-also"></a>См. также раздел
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>См. также
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

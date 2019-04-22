@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617747"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584341"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
 Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. В этой статье описаны причины этого требования, а также соответствующая процедура.
 
 ## <a name="parallel-builds-and-threads"></a>Параллельные сборки и потоки
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, однако такие системы не должны вызывать функции сборки из обратных вызовов, предоставляемых диспетчеру сборок.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, но такие системы не должны вызывать функции сборки из обратных вызовов.
 
  Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это требование означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.
 

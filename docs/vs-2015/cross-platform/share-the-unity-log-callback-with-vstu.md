@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5e4fcfdc35e9329429421fd03a941e611e6b5b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b58d693980ffc55ccfe613d52e868bccca9908b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789173"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649905"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Совместное использование обратного вызова журнала Unity с VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Набор средств Visual Studio для Unity регистрирует обратный вызов журнала для потоковой передачи данных консоли Unity в Visual Studio. Если скрипты редактора также регистрируют обратный вызов журнала с Unity, обратный вызов VSTU может повлиять на работу вашего обратного вызова. Во избежание такой ситуации используйте событие `VisualStudioIntegration.LogCallback` для взаимодействия с VSTU.  
   
 ## <a name="demonstrates"></a>Демонстрации  
@@ -48,5 +47,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Настройка файлов проекта, созданных в VSTU](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>См. также  
+ [Пример: Создание файла проекта](../cross-platform/customize-project-files-created-by-vstu.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897742"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584406"
 ---
 # <a name="walkthrough-use-msbuild"></a>Пошаговое руководство. Использование MSBuild
 
@@ -261,7 +261,7 @@ $(PropertyName)
 
  Свойства можно определить в командной строке с помощью параметра -property или -p. Значения свойств, полученные из командной строки, переопределяют значения свойств, заданные в файле проекта и переменных среды.
 
-**Задание значения свойства из командной строки**
+**Настройка значения свойства из командной строки**
 
 1.  В **командном окне** введите и выполните следующую строку:
 
@@ -416,7 +416,7 @@ MSBuild создает свойство Configuration и присваивает 
  добавляет все файлы с расширением файла *.jpeg* в папке *изображений* к типу элемента Photos, тогда как
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  добавляет все файлы с расширением файла *.jpeg* в папке *изображений* и всех ее вложенных папках к типу элемента Photos. Дополнительные примеры см. в статье [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).
@@ -600,5 +600,5 @@ MSBuild создает свойство Configuration и присваивает 
 
 ## <a name="see-also"></a>См. также
 
-- [MSBuild - обзор](../msbuild/msbuild.md)
+- [Общие сведения о MSBuild](../msbuild/msbuild.md)
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

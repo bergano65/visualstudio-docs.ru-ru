@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648969"
 ---
 # <a name="schema-cache"></a>Кэш схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 XML Editor предоставляет кэш схем, расположенный в каталоге %InstallRoot%\Xml\Schemas. Кэш схем - общий для всех пользователей компьютера и включает стандартные XML-схемы, используемые для поддержки технологии IntelliSense и проверки правильности XML-документа.  
 
  Редактор XML может также находить схемы, расположенные в решении, схемы, указанные в **схемы** поле документа **свойства** окна и схем, идентифицируемый `xsi:schemaLocation` и `xsi:noNamespaceSchemaLocation`атрибуты.  
 
  В следующей таблице приведены схемы, установленные редактором XML Editor.  
-
 
 |     имя_файла      |                                                      Описание                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

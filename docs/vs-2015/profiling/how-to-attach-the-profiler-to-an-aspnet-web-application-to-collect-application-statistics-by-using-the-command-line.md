@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Присоединение Profiler к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки | Документация Майкрософт
+title: Практическое руководство. Присоединение Profiler к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648659"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения при помощи командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описывается, как с помощью Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], выполняемых из командной строки, подключить профилировщик к приложению ASP.NET и собрать статистические данные по производительности с использованием метода выборки.  
@@ -69,7 +69,6 @@ ms.locfileid: "54781105"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                                          |
 
-
 5. Запустите веб-приложение ASP.NET обычным образом.  
 
 6. Подключите профилировщик к рабочему процессу ASP.NET. Введите: **VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
@@ -114,7 +113,7 @@ ms.locfileid: "54781105"
 
     -   Введите команду **VSPerfCmd /detach**.  
 
-         - или -  
+         -или-  
 
     -   Завершите рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
 
@@ -126,6 +125,6 @@ ms.locfileid: "54781105"
 
 4.  Перезагрузите компьютер.  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)

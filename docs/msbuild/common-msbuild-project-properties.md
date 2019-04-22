@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610610"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584562"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.
@@ -54,7 +54,7 @@ ms.locfileid: "56610610"
 | CscToolPath | Путь к *csc.exe*, компилятор [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Имя файла проекта или файла целей, автоматически импортируемого перед импортом общих целей. |
 | DebugSymbols | Логическое значение, указывающее, создает ли сборка символы.<br /><br /> При запуске команды **-p:DebugSymbols=false** в командной строке отключается создание файлов с символами для базы данных программы (*PDB*). |
-| DebugType | Задает уровень создаваемой отладочной информации. Допустимые значения: "full", "pdbonly" и "none". |
+| DebugType | Задает уровень создаваемой отладочной информации. Допустимые значения: full, pdbonly, portable, embedded и none. |
 | DefineConstants | Задает константы условной компиляции. Пары "символ-значение" разделяются точками с запятой и задаются с использованием следующего синтаксиса:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Это свойство эквивалентно переключателю `/define` компилятора. |
 | DefineDebug | Логическое значение, указывающее, требуется ли определять константу DEBUG. |
 | DefineTrace | Логическое значение, указывающее, требуется ли определять константу TRACE. |

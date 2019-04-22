@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790593"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Отладка JavaScript с помощью консоли в Visual Studio
@@ -44,7 +44,7 @@ ms.locfileid: "58790593"
 > [!TIP]
 > Если окно консоли JavaScript закрыто, выберите **Отладка**> **Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.
 
-С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других возможностях отладки JavaScript, например с использованием проводника DOM и задание точек останова, см. в разделе [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других возможностях отладки JavaScript, например с использованием проводника DOM и задание точек останова, см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Отладка с использованием окна консоли JavaScript
 Далее приведена процедура создания приложения `FlipView` и инструкции по интерактивной отладке ошибки кодирования JavaScript.
@@ -249,12 +249,12 @@ ms.locfileid: "58790593"
 
 Вы также можете переключить контекст выполнения с помощью команды `cd` , однако вы должны знать имя другого контекста выполнения, а используемая вами ссылка должна находиться в области. Список **Целевой объект** предоставляет более удобный доступ к другим контекстам выполнения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Команды консоли JavaScript](../debugger/javascript-console-commands.md)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md)
 - [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)
 - [Поддержка и специальные возможности продукта](https://visualstudio.microsoft.com/vs/support/)

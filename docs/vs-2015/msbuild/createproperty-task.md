@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804457"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649762"
 ---
 # <a name="createproperty-task"></a>Задача CreateProperty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Заполняет свойства переданными значениями. Это позволяет копировать значения из одного свойства или строки в другое свойство или строку.  
   
 ## <a name="attributes"></a>Атрибуты  

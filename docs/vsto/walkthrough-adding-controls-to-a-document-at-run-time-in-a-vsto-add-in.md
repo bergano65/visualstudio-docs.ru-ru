@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645879"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648554"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Можно добавить элементы управления в любой открытый документ Microsoft Office Word с помощью надстройки VSTO. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Word.Controls.Button> или <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ.
@@ -78,21 +78,17 @@ ms.locfileid: "56645879"
 
 8. В окне **Свойства** измените следующие свойства.
 
-
-   | Свойство. | Значение |
+   | Свойство | Значение |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Метка** | **Кнопка “Добавить”** |
 
-
 9. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
-
-   | Свойство. | Значение |
+   | Свойство | Значение |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Label** | **Добавление элемента управления форматированием текста** |
-
 
 10. В конструкторе лент дважды щелкните элемент **Добавить кнопку**.
 

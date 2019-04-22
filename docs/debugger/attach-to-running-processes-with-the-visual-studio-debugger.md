@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366410"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
@@ -197,7 +197,7 @@ ms.locfileid: "59366410"
 
  Дополнительные сведения о почему отладчику не удалось присоединиться к некоторому типу кода, попробуйте повторно подключиться к только к этому типу кода.
 
- **Чтобы получить подробные сведения о причине сбоя типа кода для присоединения:**
+ **Чтобы получить подробные сведения о том, почему не удалось присоединиться к типу кода:**
 
 1.  Отключитесь от процесса. На **Отладка** меню, выберите **отсоединить все**.
 

@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 487e61a98117c8c64b993af5b9300face99478f8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 972f749d03ec81c40ed91a2fb40161ebdb8cd791
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002683"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650277"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для машинного кода"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Минимальные правила Microsoft для машинного кода связаны с наиболее важными проблемами в машинном коде, включая возможные уязвимости безопасности и случаи аварийного завершения работы приложений. Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  
-
 
 |                                      Правило                                      |                                                  Описание                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

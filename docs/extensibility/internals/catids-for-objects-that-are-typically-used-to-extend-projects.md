@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734751492a1024507684922b760c647e91f5df15
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643630"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649437"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID для объектов, которые обычно используются для расширения проектов
 В следующей таблице перечислены идентификаторы CATID, которые используются для расширения `Project` и `ProjectItem` объектов автоматизации для [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] проектов. Эти идентификаторы CATID определяются в *VSLangProj.olb*.
@@ -87,7 +87,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 ```
 
  Идентификаторы GUID для [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] в следующей таблице показаны типы проектов.
-
 
 | Тип проекта | Идентификатор GUID |
 | - | - |

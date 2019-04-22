@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649225"
 ---
 # <a name="receive-activity-designer"></a>Конструктор действия Receive
 
@@ -36,7 +36,6 @@ ms.locfileid: "55948255"
 ### <a name="the-receive-activity-properties"></a>Свойства действия Receive
 
 В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Receive> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в рабочей области конструктора рабочих процессов. Свойство <xref:System.ServiceModel.Activities.Receive.OperationName%2A> является единственным обязательным свойством.
-
 
 | Имя свойства | Обязательно | Использование |
 |-|----------|-|

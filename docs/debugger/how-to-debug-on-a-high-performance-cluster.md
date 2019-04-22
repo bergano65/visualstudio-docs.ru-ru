@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: отладка в высокопроизводительном кластере | Документация Майкрософт'
+title: Практическое руководство. Отладка в высокопроизводительном кластере | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eedc9c469e4ceb4ac4b5be018f2ebdd227ffcf2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681794"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649424"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Практическое: отладка в высокопроизводительном кластере (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Практическое руководство. Отладка в высокопроизводительном кластере (C#, Visual Basic, C++)
 
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
 
@@ -96,11 +96,10 @@ ms.locfileid: "56681794"
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [Практическое: использование окна процессов](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Практическое руководство. Использование окна процессов](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Потоков и процессов](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [Использование точек останова](../debugger/using-breakpoints.md)
