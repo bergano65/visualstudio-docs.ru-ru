@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 41fbfb4a19c4c730c046f4c44fc9d88fd9882c45
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790268"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651115"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка приложений для универсальной Windows (UWP) в Visual Studio
 
@@ -30,6 +30,5 @@ ms.locfileid: "58790268"
 |Отладка развернутых приложений, локальные и удаленные.|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|
 |Анализируйте влияние класса ContentPrefetcher на приложения универсальной платформы Windows.|[Предварительная загрузка контента для приложений универсальной платформы Windows](../debugger/prefetch-content-for-windows-store-apps.md)|
 
-
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Анализ качества кода помощью метода анализа статического кода](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 307722b668a71dd97e6b05364226d8c5ea62af66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980822"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651569"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка операций вставки, обновления и удаления в классах сущностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную область конструктора для создания и редактирования [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), вы можете использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
  По умолчанию логику для выполнения обновлений обеспечивает среда выполнения [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Среда выполнения по умолчанию создает инструкции Вставить, Обновить и Удалить, основываясь на схеме таблицы (определения столбцов и информация о первичных ключах). Если вы не хотите использовать поведение по умолчанию, то можно конфигурировать поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд Вставить, Обновить и Удалить, необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций за счет хранимых процедур](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  

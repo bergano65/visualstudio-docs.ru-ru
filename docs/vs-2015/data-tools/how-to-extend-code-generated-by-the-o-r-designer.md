@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aedac18548112335da49012d471fb98eef2ef2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992337"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651738"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Практическое руководство. расширить код, созданный реляционным конструктором объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Код, сгенерированный конструктором [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], генерируется заново, когда выполняются изменения в классах сущностей и в других объектах на области конструктора. Из-за этой повторной генерации кода, любой код, который добавляется к сгенерированному коду, обычно перезаписывается, когда конструктор заново генерирует код. Конструктор [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] обеспечивает способность генерировать файлы разделяемых классов, в которые можно добавлять код, который не будет перезаписываться. Один пример добавления собственного кода к коду, сгенерированному конструктором [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] состоит в добавлении проверки данных в классы сущностей LINQ to SQL. Дополнительные сведения см. в разделе [Практическое руководство. добавить проверку в классы сущностей](../data-tools/how-to-add-validation-to-entity-classes.md).  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

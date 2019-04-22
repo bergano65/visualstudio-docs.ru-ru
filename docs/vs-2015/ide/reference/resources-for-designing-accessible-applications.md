@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761676"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651936"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте следующие ссылки для поиска сведений о технологиях, поддерживающих разработку со специальными возможностями, а также советов и примеров по разработке приложений Windows и веб-сайтов со специальными возможностями. Общие сведения о специальных возможностях можно найти на веб-странице [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   
 ## <a name="technologies"></a>Технологии  
@@ -45,7 +44,7 @@ ms.locfileid: "54761676"
   
 ## <a name="web-sites"></a>Веб-сайты  
   
--   [Пошаговое руководство. Руководства по специальным возможностям использования элементов управления Image, Menu и AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202). В этом разделе приведены пошаговые инструкции по включению элементов специальных возможностей в образец веб-страницы, а также некоторые советы по проектированию специальных возможностей для веб-сайтов.  
+-   [Пошаговое руководство: Специальные возможности, касающиеся использования элементов управления Image, Menu и AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) этот раздел содержит пошаговые инструкции по включению элементов специальных в образец веб-страницы, а также некоторые советы по проектированию специальных возможностей веб-приложений.  
   
 -   **Повышение уровня доступности веб-страниц**. В этой технической статье перечислены доступные элементы HTML 3.2, а также элементы, которые можно сделать доступными для использования при разработке веб-сайта. Дополнительные сведения см. на веб-сайте [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
@@ -57,5 +56,5 @@ ms.locfileid: "54761676"
   
 -   **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

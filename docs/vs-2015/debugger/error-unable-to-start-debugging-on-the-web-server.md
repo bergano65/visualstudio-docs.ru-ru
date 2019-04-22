@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980966"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652063"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка: не удается запустить отладку на веб-сервере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,6 @@ ms.locfileid: "58980966"
     Ошибка в более старых версий (исправлены позже) требуется привилегий в некоторых ASP.NET, в сценариях отладки.
     
 - Если запущены несколько экземпляров Visual Studio, повторно откройте проект в одном экземпляре Visual Studio и повторите попытку.
-   
-  
+
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

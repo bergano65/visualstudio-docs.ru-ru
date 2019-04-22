@@ -33,17 +33,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3ba05030a0f842d6905be384739a9d797634092f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778582"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652635"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Страница "Документы", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте эту страницу диалогового окна **Параметры** для управления отображением документов в интегрированной среде разработки (IDE), а также внешними изменениями, вносимыми в документы и файлы. Чтобы перейти к этому диалоговому окну, щелкните пункт **Параметры** в меню **Сервис**, а затем разверните узел **Среда** и выберите пункт **Документы**. Если страница **Документы** отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]

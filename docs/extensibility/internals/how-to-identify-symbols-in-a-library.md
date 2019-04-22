@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651974"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Практическое руководство. Определение символов в библиотеке
 Средства просмотра символов отображения иерархических представлений символов. Символы представляют пространств имен, объекты, классы, члены класса и остальных элементов языка.
@@ -49,7 +49,6 @@ N1
  Канонический путь к классу C2, в этом примере используется N1 + C2. Путь к презентации C2 включает в себя узлы C1 и «Базовых классов и интерфейсов»: N1 + C1 + «базы и интерфейсы» + C2.
 
  Для получения информации из формы представления, диспетчер объектов вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> метод.
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Для получения канонические и презентации forms сведения
 
