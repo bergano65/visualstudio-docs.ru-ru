@@ -7,14 +7,12 @@
 ## [Обновление](/visualstudio/mac/update)
 ## [Удаление](/visualstudio/mac/uninstall)
 
-
 # [Учетные записи пользователей](/visualstudio/mac/user-accounts)
 ## [Вход](/visualstudio/mac/signing-in)
 ## [Активация](/visualstudio/mac/enable-subscription)
 
 # [Настройка интегрированной среды разработки](/visualstudio/mac/customizing-the-ide)
 ## [Расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Проекты и решения](/visualstudio/mac/projects-and-solutions)
 ## [Создание новых проектов](/visualstudio/mac/create-new-projects)

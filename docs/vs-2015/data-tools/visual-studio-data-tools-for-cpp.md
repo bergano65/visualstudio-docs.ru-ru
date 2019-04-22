@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653064"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Часто, когда вы обращаетесь к источникам данных для машинного кода C++ можно обеспечивают наибольшую производительность. Тем не менее данные, инструментарий для приложений на C++ в Visual Studio не полна, как и для приложений .NET. Например windows источников данных не может использоваться для перетаскивания источников данных в область конструктора C++. Если вам нужна объектно реляционного слоя, имеется возможность использовать сторонние продукты или написать собственный.  То же самое касается функциональность привязки к данным, несмотря на то, что приложения, использующие библиотеку классов Microsoft Foundation можно использовать некоторые классы баз данных вместе с документами и представлениями, для хранения данных в памяти и отображения ее пользователю. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Чтобы подключиться к базам данных SQL, приложений C++ неуправляемого кода можно использовать драйверы ODBC и OLE DB и поставщик ADO, входят в состав Windows.     Они могут подключиться к любой базе данных, который поддерживает эти интерфейсы. Драйвер ODBC является стандартом. OLE DB предоставляется для обеспечения обратной совместимости. Дополнительные сведения о технологии этих данных, см. в разделе [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

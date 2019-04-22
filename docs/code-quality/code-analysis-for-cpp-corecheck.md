@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796820"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652115"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Ссылка проверки C++ Core Guidelines
 
@@ -107,12 +107,9 @@ ms.locfileid: "56796820"
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) функции «% символа %» следует указать только один из «virtual», «override» или «final». См. в разделе [C.128: Виртуальные функции следует указать только один виртуальный, переопределение или окончательный](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) тип «% % символ» с виртуальной функцией должен либо открытый виртуальный или защищенный невиртуальный деструктор. См. в разделе [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) подмена деструктор не следует использовать явные указатели «override» или «virtual» описателей. См. в разделе [C.128: Виртуальные функции следует указать только один виртуальный, переопределение или окончательный](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>Тип группы
 
@@ -205,7 +202,6 @@ ms.locfileid: "56796820"
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` или `std::string_view` созданное на будут недействительными при временных становится недействительным. См. в разделе [C++ Core Guidelines: GSL.view: Представления](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Устаревшие предупреждения
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620997"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651309"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Добавление элементов в диалоговом окне Добавление нового элемента
 Процесс добавления элементов к **Добавление нового элемента** запускает диалоговое окно с разделами реестра. Как показано в следующей записи в реестре, **AddItemTemplates** раздел содержит путь и имя папки, в какие элементы доступны в **Добавление нового элемента** помещаются диалоговое окно.
@@ -35,8 +35,7 @@ ms.locfileid: "56620997"
 
  **SortPriority** = dword:00000064
 
-
-| name | Тип | Данные (от *.rgs* файла) | Описание: |
+| name | Тип | Данные (от *.rgs* файла) | Описание |
 |------------------|-----------| - | - |
 | @ (По умолчанию) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | Идентификатор ресурса для **Добавление элемента** шаблонов. |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера. |

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651049"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Создание комментариев JSDoc для JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,6 @@ ms.locfileid: "54758517"
 
 ## <a name="jsdoc-comment-tags"></a>Теги для комментариев JSDoc  
  В технологии IntelliSense для отображения сведений о коде используются следующие стандартные теги для комментариев JSDoc.  
-
 
 |  Тег JSDoc   |                       Синтаксис                        |                                                     Примечания                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

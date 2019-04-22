@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980614"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651923"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Вы можете расширить функциональные возможности `TableAdapter` , создав файл разделяемого класса для `TableAdapter` и добавления к нему кода (вместо добавления кода к *DatasetName*. Файл DataSet.Designer). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) или [partial (тип)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Код, который определяет `TableAdapter` создается каждый раз при внесении изменений `TableAdapter`. Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию `TableAdapter`. Чтобы предотвратить удаление во время повторного формирования кода `TableAdapter`, добавьте код в файл разделяемого класса `TableAdapter`.  

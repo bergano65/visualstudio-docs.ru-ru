@@ -11,18 +11,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2da8c83f679c4d2dc5e08ec5bf23b5517da37d2f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a06dc77f3515b3791f1cf71cf4ccbf19691c6e4a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761790"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651647"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Страница "Параметры импорта и экспорта", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Эта страница служит для задания места сохранения файла параметров пользователя и указания необходимости использования файла параметров команды. Дополнительные сведения о параметрах см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

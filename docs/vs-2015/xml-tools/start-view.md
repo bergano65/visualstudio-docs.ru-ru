@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651257"
 ---
 # <a name="start-view"></a>Начальное представление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Начальное представление является точкой запуска конструктора XML-схем (XSD). При создании нового XSD файла перед вами откроется начальное представление.  
   
  Начальное представление имеет два основных раздела *водяного знака* и **сведения о наборе схем** области. Оно также содержит панель инструментов, доступную во всех представлениях конструктора XSD.  
