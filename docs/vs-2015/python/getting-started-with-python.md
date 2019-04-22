@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678869"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648459"
 ---
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Python — это популярный язык программирования
 Дополнительные сведения о языке, начинаться с [Python для начинающих](https://www.python.org/about/gettingstarted/) на сайте python.org.
 
 Для установки Python, сам посетите [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 Инструменты Python для Visual Studio, которые можно установить из [visualstudio.com](https://www.visualstudio.com/explore/python-vs), предоставляют следующие возможности:  
@@ -63,7 +62,6 @@ Python — это популярный язык программирования
 - [Короткие видеоролики по началу работы и углубленному рассмотрению](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - Демонстрация установки и возможностей (27 минут)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Документация](https://github.com/Microsoft/PTVS/wiki)  
-
 
 Обратите внимание, что Visual Studio в настоящее время предоставляет средства для создания отдельный исполняемый файл с помощью Python, который по сути означает, что программа с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
   
@@ -91,11 +89,11 @@ Python — это популярный язык программирования
 
 Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
 
 [Начало работы с PTVS. Настройка Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Начало работы с PTVS. Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Начало работы с PTVS. Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
-[Начало работы с PTVS. Отладка](../python/getting-started-with-ptvs-debugging.md)
-[Начало работы с PTVS. Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Начало работы с PTVS. Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[начало работы с PTVS: Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[начало работы с PTVS: Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
+[начало работы с PTVS: Отладка](../python/getting-started-with-ptvs-debugging.md)
+[начало работы с PTVS: Интерактивный Python](../python/getting-started-with-ptvs-interactive-python.md)
+[начало работы с PTVS: Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

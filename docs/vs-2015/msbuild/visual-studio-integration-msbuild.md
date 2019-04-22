@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649268"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.  
   
  В данном разделе рассматриваются специфические аспекты размещения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] продуктом [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], которые необходимо учитывать при настройке проектов и файлов в формате .targets, которые требуется загрузить и создать построение в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это поможет вам обеспечить наличие в настраиваемом проекте таких функций [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], как IntelliSense и отладка.  
@@ -182,7 +181,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Для обычной сборки в Visual Studio быстрая проверка обновлений не применяется, и сборка проекта будет выполняться, как если бы сборка была вызвана из командной строки.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Расширение процесса построения Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Запуск построения из интегрированной среды разработки](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Регистрация расширений платформы .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   

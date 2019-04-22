@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650636"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 В файле vsshell80.IDL, раздел перечисления файле `__VSSYSCOLOREX` имеет константы цвета оболочки. Чтобы использовать его, передайте в качестве значения индекса можно одним из значений из `enum __VSSYSCOLOREX` документированных в MSDN или обычного индекса номер, который система Windows API, `GetSysColor`, принимает. Это снова возвращает RGB-значение цвета, который должен использоваться в качестве второго параметра.
 
 Если хранить пера или кисти с новый цвет, сначала необходимо `AdviseBroadcastMessages` (за пределами оболочки Visual Studio) и прослушивать `WM_SYSCOLORCHANGE` и `WM_THEMECHANGED` сообщений.
-
 
 Для доступа к службе цвет в машинном коде, сделаю вызов, который выглядит следующим образом:
 
@@ -372,7 +371,7 @@ Windows использует несколько тем высокой контр
 
 Добавить в реестр с двумя значениями:
 
-| name | Тип | Данные | Описание: |
+| name | Тип | Данные | Описание |
 |--- | --- | --- | --- |
 | Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для идентификации категории |
 | Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage службы, которая поддерживает категории |

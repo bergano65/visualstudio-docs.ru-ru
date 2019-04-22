@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790528"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504462"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Работа с кодом в Visual Studio
 
@@ -156,6 +156,6 @@ Visual Studio содержит встроенный набор [анализат
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
-- [Дополнительные сведения об использовании отладчика](../debugger/debugger-feature-tour.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
+- [Дополнительные сведения об использовании отладчика](../debugger/index.md)
 - [Создание и исправление кода](../ide/code-generation-in-visual-studio.md)

@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979036"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649671"
 ---
 # <a name="relationships-in-datasets"></a>Отношения в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Наборы данных, которые содержат связанные данные таблицы использует <xref:System.Data.DataRelation> объектов для представления иерархическое отношение между таблицами и возврата связанных записей друг у друга. Добавление связанных таблиц к наборам данных с помощью **мастер настройки источника данных**, или **конструктор наборов данных**, создает и настраивает <xref:System.Data.DataRelation> объект.  
   
  <xref:System.Data.DataRelation> Объект выполняет две функции:  

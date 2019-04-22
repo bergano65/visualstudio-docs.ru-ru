@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994579"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648178"
 ---
 # <a name="editing-xslt-style-sheets"></a>Редактирование таблиц стилей XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Редактор XML может также использоваться для редактирования таблиц стилей XSLT. Можно воспользоваться преимуществами стандартных возможностей редактора, таких как технология IntelliSense, структурирование, XML-фрагменты и др. Кроме того, имеются новые возможности, облегчающие разработку на языке XSLT.  
   
 ## <a name="xslt-features"></a>Возможности XSLT  

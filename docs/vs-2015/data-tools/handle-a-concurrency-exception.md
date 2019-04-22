@@ -21,17 +21,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650178"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Исключения параллелизма (<xref:System.Data.DBConcurrencyException>) вызываются, когда два пользователя пытаются изменить те же данные в базе данных, в то же время. В этом пошаговом руководстве создается приложение Windows, описывается перехват <xref:System.Data.DBConcurrencyException>, найдите строку, которая вызвала ошибку и Узнайте стратегии для его обработки.  
   
  В этом пошаговом руководстве описывается процесс:  

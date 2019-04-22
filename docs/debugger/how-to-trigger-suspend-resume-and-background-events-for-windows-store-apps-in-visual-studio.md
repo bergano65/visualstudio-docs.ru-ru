@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790359"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
@@ -72,7 +72,7 @@ ms.locfileid: "58790359"
 
 2.  Откройте страницу свойств отладки для запускаемого проекта. Выберите проект в Обозревателе решений. В меню **Отладка** выберите пункт **Свойства**.
 
-     Для проектов C++, разверните **свойства конфигурации** и выберите **Отладка**.
+     Для C++ проектов, разверните **свойства конфигурации** и выберите **Отладка**.
 
 3.  Выполните одно из следующих действий.
 
@@ -80,7 +80,7 @@ ms.locfileid: "58790359"
 
          ![C&#35;&#47;VB свойство отладки запуска приложения](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Для проектов Visual C++ выберите **нет** из **запуск приложения** списка.
+    -   Для визуального C++ проектов, выберите **нет** из **запуск приложения** списка.
 
          ![C&#43;&#43;&#47;свойство отладки запуска VB приложения](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
@@ -108,7 +108,7 @@ ms.locfileid: "58790359"
 
 4.  Выберите журнал **Диагностические** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Тестирование приложений UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)
 - [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Жизненный цикл приложения](/windows/uwp/launch-resume/app-lifecycle)

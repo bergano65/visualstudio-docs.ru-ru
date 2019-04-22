@@ -19,17 +19,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649060"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Страница "Компиляция" в конструкторе проектов (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **Компиляция** в конструкторе проектов служит для указания инструкций компиляции. На ней можно настроить дополнительные параметры компилятора, а также события, которые будут происходить до и после сборки.  
   
  Чтобы открыть страницу **Компиляция**, выберите в **обозревателе решений** узел проекта (не узел **Решение**). Затем в строке меню выберите **Проект** > **Свойства**. После того как откроется конструктор проектов, перейдите на вкладку **Компиляция**.  
@@ -169,7 +168,7 @@ ms.locfileid: "54778916"
   **Дополнительные параметры компиляции**  
   Нажмите эту кнопку, чтобы открыть диалоговое окно **Дополнительные параметры компиляции**. Используйте диалоговое окно **Дополнительные параметры компилятора**, чтобы указать дополнительные параметры конфигурации сборки проекта. Это окно применяется только к проектам Visual Basic. Дополнительные сведения см. в разделе [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
  [Управление свойствами компиляции](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   

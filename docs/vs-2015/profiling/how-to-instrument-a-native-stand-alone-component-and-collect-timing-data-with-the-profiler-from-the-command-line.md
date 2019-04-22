@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Инструментирование собственного автономного компонента и сбор данных по времени с помощью профилировщика из командной строки | Документы Майкрософт
+title: Практическое руководство. Инструментирование собственного автономного компонента и сбор данных по времени с помощью профилировщика из командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757112"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649776"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с помощью профилировщика из командной строки
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с Profiler из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования таких собственных компонентов, как EXE- или DLL-файлы C++, а также для сбора подробных данных по использованию времени.  
@@ -56,7 +56,6 @@ ms.locfileid: "54757112"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                                   |
 
-
 4. Запустите целевое приложение обычным образом.  
 
 ## <a name="controlling-data-collection"></a>Управление сбором данных  
@@ -83,6 +82,6 @@ ms.locfileid: "54757112"
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)

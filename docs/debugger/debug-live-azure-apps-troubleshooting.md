@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857766"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы отладки моментальных снимков в Visual Studio
 
 Если выполнение действий, описанных в этой статье, не помогло решить проблему, обратитесь в службу snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Проблема: точка моментальных снимков не включается
+## <a name="issue-snappoint-does-not-turn-on"></a>Проблема. Точка прикрепления к включению
 
 Если со своей точкой моментальных снимков вместо обычного значка точки моментальных снимков отображается значок предупреждения ![значок предупреждения точки моментальных снимков](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "значок предупреждения точки моментальных снимков"), в таком случае точка моментальных снимков не включается.
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857766"
 
 1. Убедитесь, что у вас та же версия исходного кода, которая использовалась для сборки и развертывания app.isua1. Убедитесь, что вы загружаете правильные символы для развертывания. Для выполнения этого действия во время отладки моментальных снимков откройте окно **Модули** и убедитесь, что в столбце "Файл символов" отображается PDB-файл, загруженный для модуля, который вы отлаживаете. Snapshot Debugger попытается загрузить и использовать символы для вашего развертывания автоматически.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема: при открытии моментального снимка не загружаются символы
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема. При открытии моментального снимка не загружать символы
 
 Если отображается следующее окно, это означает, что символы не загрузились.
 
@@ -48,7 +48,7 @@ ms.locfileid: "58857766"
 
 - В качестве альтернативы, если организация использует сервер символов или удаляет символы в другом пути, используйте параметры символов, чтобы загрузить правильные символы для своего развертывания.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема: параметр "Подключить Snapshot Debugger" не отображается в Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема. Я не вижу параметр «Присоединить отладчик моментальных снимков» в Cloud Explorer
 
 Выполните следующие шаги.
 
@@ -67,7 +67,7 @@ ms.locfileid: "58857766"
   - Служба Azure Kubernetes. Приложения ASP.NET Core, выполняющиеся на платформе .NET Core 2.2 или более поздней версии под управлением Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема: в Средствах диагностики отображаются только регулируемые моментальные снимки
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема. Я вижу только регулирование моментальные снимки в окне средств диагностики
 
 ![Регулируемый моментальный снимок](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Регулируемый моментальный снимок")
 
@@ -75,7 +75,7 @@ ms.locfileid: "58857766"
 
 - Моментальные снимки занимают мало памяти, но для них выделяется фиксированное количество памяти. Если Snapshot Debugger обнаружит, что ваш сервер находится под большой нагрузкой памяти, он не будет делать снимки. Вы можете удалить уже полученные снимки, остановив сеанс Snapshot Debugger и повторив попытку.
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Проблема: отладка моментальных снимков в нескольких версиях Visual Studio выдает ошибки
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Проблема. Отладка моментальных снимков с несколькими версиями Visual Studio дает мне ошибки
 
 Для VS 2019 необходима более новая версия расширения сайта Snapshot Debugger в Службе приложений Azure.  Эта версия несовместима с более старой версией расширения сайта Snapshot Debugger, используемого VS 2017.  Попытка подключить Snapshot Debugger в VS 2019 к Службе приложений Azure, которая ранее была отлажена Snapshot Debugger в VS 2017, приведет к следующей ошибке.
 
@@ -90,7 +90,7 @@ ms.locfileid: "58857766"
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Проблема: у меня возникают проблемы с отладкой снимков, и мне нужно включить ведение журнала
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Проблема. У меня возникли проблемы при отладке моментальных снимков и необходимо включить дополнительные ведения журнала
 
 ### <a name="enable-agent-logs"></a>Включение журналов агента
 
@@ -100,9 +100,9 @@ ms.locfileid: "58857766"
 
 - Службы приложений.
   - Перейдите на сайт Kudu Службы приложений (то есть yourappservice.**scm**.azurewebsites.net), а затем на консоль отладки.
-  - Журналы агентов хранятся в следующем каталоге: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Журналы агента хранятся в следующем каталоге:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
-  - Войдите на виртуальную машину. Журналы агентов хранятся в следующем каталоге: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Войдите на виртуальную Машину, агент, который журналы хранятся следующим образом:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Перейдите к следующему каталогу: /tmp/diag/AgentLogs/*
 
@@ -114,7 +114,7 @@ ms.locfileid: "58857766"
   - Ведение журнала ошибок будет автоматически отправляться на D:\Home\LogFiles\eventlog.xml, события будут отмечены таким образом: <<Provider Name="Instrumentation Engine" //>> или "Production Breakpoints".
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
   - Войдите на виртуальную машину и откройте "Просмотр событий".
-  - Откройте следующее представление: *Журналы Windows > Приложение*.
+  - Откройте следующее представление: *Журналы Windows > приложение*.
   - *Отфильтруйте текущий журнал* по *источнику события*, используя *производственные точки останова* или *ядро инструментирования*.
 - AKS
   - Ведение журнала ядра инструментария происходит на /tmp/diag/log.txt (задается MicrosoftInstrumentationEngine_FileLogPath в DockerFile)
@@ -142,7 +142,7 @@ ms.locfileid: "58857766"
 ## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)
-- [Отладка работающих приложений ASP.NET Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Отладка работающих приложений ASP.NET на Виртуальных машинах Azure и Масштабируемых наборах виртуальных машин Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Отладка работающей службы Azure Kubernetes ASP.NET с помощью Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Отладка работающих приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md)
+- [Отладка динамического ASP.NET Azure Machines\Virtual машин масштабируемые наборы виртуальных машин с помощью отладчика моментальных снимков](../debugger/debug-live-azure-virtual-machines.md)
+- [Отладка с помощью отладчика моментальных снимков Kubernetes динамической ASP.NET в Azure](../debugger/debug-live-azure-kubernetes.md)
 - [Ответы на часто задаваемые вопросы по отладке моментальных снимков](../debugger/debug-live-azure-apps-faq.md)

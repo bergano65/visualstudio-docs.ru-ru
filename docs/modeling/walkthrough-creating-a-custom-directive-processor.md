@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195129"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649112"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 
@@ -654,7 +654,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      Ваш раздел реестра должен содержать следующие значения:
 
-
    | name | Тип | Данные |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
@@ -663,13 +662,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      Если вы поместили сборку в глобальный кэш сборок, эти значения должны выглядеть так:
 
-
    | name | Тип | Данные |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
    | Класс | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Перезапустите Visual Studio.
 

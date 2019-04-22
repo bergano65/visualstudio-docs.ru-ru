@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58993862"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649528"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Практическое руководство. Выполнение XSLT-преобразования в редакторе XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Редактор XML позволяет связать таблицу стилей XSLT с XML-документом, выполнить преобразование и просмотреть вывод. Результат XSLT-преобразования отображается в новом окне документа.  
   
  **Вывода** свойство определяет имя файла для выходных данных. Если **вывода** свойство остается пустым, имя файла формируется во временном каталоге. Расширение файла определяется на основе элемента `xsl:output` в таблице стилей и может представлять собой XML, TXT или HTM.  
@@ -34,7 +33,7 @@ ms.locfileid: "58993862"
   
     -   Добавьте в XML-документ инструкцию по обработке `xml-stylesheet`. Например, добавьте в пролог документа строку `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`.  
   
-         - или -  
+         -или-  
   
     -   Добавление таблицы стилей XSLT с помощью **свойства** окна. В документе **окно "Свойства"**, нажмите кнопку **Обзор** кнопку для **таблицы стилей** выберите таблицу стилей XSLT и нажмите кнопку **откройте**.  
   

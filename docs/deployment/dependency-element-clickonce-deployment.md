@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648238"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;зависимость&gt; элемент (развертывание ClickOnce)
 Определяет версию приложения для установки и расположение манифеста приложения.
@@ -78,7 +78,6 @@ ms.locfileid: "56600724"
 ## <a name="dependentassembly"></a>dependentAssembly
  Обязательный. Этот элемент содержит `assemblyIdentity` элемент. В следующей таблице показаны атрибуты `dependentAssembly` поддерживает.
 
-
 | Атрибут | Описание |
 |------------------| - |
 | `preRequisite` | Необязательный параметр. Указывает, что эта сборка должна уже существовать в глобальном кэше СБОРОК. Допустимые значения: `true` и `false`. Если `true`и указанная сборка не существует в глобальном кэше СБОРОК, приложение не запускается. |
@@ -110,14 +109,12 @@ ms.locfileid: "56600724"
 ## <a name="dsigtransform"></a>DSIG:Transform
  `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемент. В следующей таблице показаны атрибуты `dsig:Transform` элемент.
 
-
 | Атрибут | Описание |
 |-------------| - |
 | `Algorithm` | Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственное значение, используемое [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] является `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>DSIG:DigestMethod
  `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемент. В следующей таблице показаны атрибуты `dsig:DigestMethod` элемент.
-
 
 | Атрибут | Описание |
 |-------------| - |

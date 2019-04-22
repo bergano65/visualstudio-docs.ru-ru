@@ -12,17 +12,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753317"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650035"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 На страницах папки **Среда** в окне **Параметры** можно указать параметры отображения и работы определенных элементов среды разработки. Для доступа к этим страницам выберите пункт **Параметры** в меню **Сервис**, а затем выберите **Среда**.  
   
 > [!NOTE]
@@ -47,5 +46,5 @@ ms.locfileid: "54753317"
 |Сведения о задании параметров задач и списков задач|[Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/task-list-environment-options-dialog-box.md)|  
 |Изменение используемых по умолчанию домашней страницы и страницы поиска, изменение системного редактора исходного текста, а также настройка параметров обозревателя Internet Explorer.|[Страница "Браузер", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/web-browser-environment-options-dialog-box.md)|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md)
