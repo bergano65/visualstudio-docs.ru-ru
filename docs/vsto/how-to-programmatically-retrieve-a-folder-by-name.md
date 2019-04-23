@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088630"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Практическое руководство. Программное извлечение папки по имени
   Этот пример возвращает ссылку на папку с именем пользователя и затем отображает содержимое папки.
@@ -30,7 +30,7 @@ ms.locfileid: "56620893"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Папка с именем TestFolder.
+- Папка с именем TestFolder.
 
 ## <a name="see-also"></a>См. также
 - [Работа с папками](../vsto/working-with-folders.md)

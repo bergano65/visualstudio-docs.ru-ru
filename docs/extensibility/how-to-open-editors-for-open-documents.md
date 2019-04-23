@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085588"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Практическое руководство. Открытие редакторов для открытых документов
 Еще до открытия проекта окно документа проекта сначала следует определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или воспользоваться одним из стандартных редакторов зарегистрировано [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ ms.locfileid: "56702490"
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Чтобы открыть стандартный редактор для открытого файла
 
-1.  Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
      Этот метод сначала проверяет, что документ не открыт, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Если документ уже открыт, а затем передается его окно редактора.
 
-2.  Если документ не открыт, выполните действия, описанные в [как: Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).
+2. Если документ не открыт, выполните действия, описанные в [как: Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>См. также
 - [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)

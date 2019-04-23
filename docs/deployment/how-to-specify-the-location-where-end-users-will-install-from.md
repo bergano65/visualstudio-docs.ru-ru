@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: укажите расположение, где конечные пользователи будут устанавливать с | Документация Майкрософт'
+title: Практическое руководство. Укажите расположение, где конечные пользователи будут устанавливать с | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,31 +17,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2470c6ff8603bc100ee515b046efcf2436cb0b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bd447f0d68eb729c0bd25a65e99e871d7927c49b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629135"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087681"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. указание расположения, из которого будет производиться установка пользователями
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, расположение, где пользователи могут загрузить и установить приложение не обязательно расположение, где первоначально было опубликовано приложение. Например в некоторых организациях разработчик может опубликовать приложение на промежуточном сервере, и затем администратор перемещает приложение на веб-сервере.
 
  В этом случае можно использовать `Installation URL` свойство, чтобы указать веб-сервер, где пользователи будут переходить для загрузки приложения. Это необходимо, чтобы манифест приложения знал, где искать обновления.
 
  `Installation URL` Может быть установлено на **публикации** странице **конструктор проектов**.
 
- **Примечание** `Installation URL` свойства можно также задать с помощью **мастере публикаций**. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ **Примечание** `Installation URL` свойства можно также задать с помощью **мастере публикаций**. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>Чтобы указать URL-адрес установки
 
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
-2.  Перейдите на вкладку **Публикация**.
+2. Перейдите на вкладку **Публикация**.
 
-3.  В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName*, или UNC-путь в формате  *\\\Server\ApplicationName*.
+3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName*, или UNC-путь в формате  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Указание расположения, в которое среда Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a137f5ee777785fe3709ace14b5af3385cdaa19
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086537"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Пошаговое руководство. Отображать парные фигурные скобки
 Внедрение возможностей языка, например парные фигурные скобки, определение фигурные скобки, которые вы хотите обеспечить поиск и добавив тег текстовой метки парные фигурные скобки, когда курсор находится на одном фигурных скобок. Можно определить фигурные скобки в контексте языка, определите расширение имени файла и тип содержимого и применить теги к только что, введите или применить теги к существующему типу содержимого (например, «text»). Следующие пошаговом руководстве показано, как применить парные фигурные скобки теги к типу содержимого «text».
@@ -27,50 +27,50 @@ ms.locfileid: "56682548"
 
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF
 
-1.  Создайте проект классификатора редактора. Назовите решение `BraceMatchingTest`.
+1. Создайте проект классификатора редактора. Назовите решение `BraceMatchingTest`.
 
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Удалите файлы существующих классов.
+3. Удалите файлы существующих классов.
 
 ## <a name="implement-a-brace-matching-tagger"></a>Реализовать парные средство создания тегов
  Чтобы получить Выделение скобок подсветкой эффект, похожий на тот, который используется в Visual Studio, можно реализовать средство создания тегов типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Ниже показано, как определить средство создания тегов для наглядной на любом уровне вложенности. В этом примере пары скобок [] и {} определяются в конструкторе средство создания тегов, а также в полной реализацией языка, соответствующего фигурную скобку, пары "должны быть определены в спецификации языка.
 
 ### <a name="to-implement-a-brace-matching-tagger"></a>Для реализации парные средство создания тегов
 
-1.  Добавьте файл класса и назовите его цветность, соответствие скобок.
+1. Добавьте файл класса и назовите его цветность, соответствие скобок.
 
-2.  Импортируйте следующие пространства имен.
+2. Импортируйте следующие пространства имен.
 
      [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
      [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]
 
-3.  Определите класс `BraceMatchingTagger` , наследуемый от <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+3. Определите класс `BraceMatchingTagger` , наследуемый от <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
 
      [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
      [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]
 
-4.  Добавьте свойства для представления текста, исходного буфера, текущей точки моментальных снимков, а также набор пар скобок.
+4. Добавьте свойства для представления текста, исходного буфера, текущей точки моментальных снимков, а также набор пар скобок.
 
      [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
      [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]
 
-5.  В конструкторе средство создания тегов, задайте свойства и подписываться на события изменения представления <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. В этом примере для иллюстрации, совпадающие пары также определены в конструкторе.
+5. В конструкторе средство создания тегов, задайте свойства и подписываться на события изменения представления <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. В этом примере для иллюстрации, совпадающие пары также определены в конструкторе.
 
      [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
      [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]
 
-6.  Как часть <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> реализации, объявить событие TagsChanged.
+6. Как часть <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> реализации, объявить событие TagsChanged.
 
      [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
      [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]
 
-7.  Обработчики событий обновить текущую позицию курсора `CurrentChar` свойство и порождения событий TagsChanged.
+7. Обработчики событий обновить текущую позицию курсора `CurrentChar` свойство и порождения событий TagsChanged.
 
      [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
      [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]
 
-8.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> метода в соответствии фигурные скобки, либо когда текущий символ является открывающую фигурную скобку, или когда предыдущий символ — это закрывающей фигурной скобки, как в Visual Studio. Если совпадение найдено, этот метод создает два тега, один для открывающую фигурную скобку, а другой для закрывающей фигурной скобки.
+8. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> метода в соответствии фигурные скобки, либо когда текущий символ является открывающую фигурную скобку, или когда предыдущий символ — это закрывающей фигурной скобки, как в Visual Studio. Если совпадение найдено, этот метод создает два тега, один для открывающую фигурную скобку, а другой для закрывающей фигурной скобки.
 
      [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
      [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]
@@ -90,12 +90,12 @@ ms.locfileid: "56682548"
 
 ### <a name="to-implement-a-brace-matching-tagger-provider"></a>Для реализации поставщика сопоставления средство создания тегов фигурная скобка
 
-1.  Объявите поставщика, средство создания тегов, который наследует от <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, назовите его BraceMatchingTaggerProvider и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> из <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+1. Объявите поставщика, средство создания тегов, который наследует от <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, назовите его BraceMatchingTaggerProvider и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> из <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
 
      [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
      [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]
 
-2.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> метод для создания экземпляра BraceMatchingTagger.
+2. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> метод для создания экземпляра BraceMatchingTagger.
 
      [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
      [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]
@@ -105,11 +105,11 @@ ms.locfileid: "56682548"
 
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Построение и тестирование решения BraceMatchingTest
 
-1.  Постройте решение.
+1. Постройте решение.
 
-2.  При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
+2. При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
 
-3.  Создайте текстовый файл и введите текст, который включает в себя парные фигурные скобки.
+3. Создайте текстовый файл и введите текст, который включает в себя парные фигурные скобки.
 
     ```
     hello {
@@ -120,7 +120,7 @@ ms.locfileid: "56682548"
     {hello}
     ```
 
-4.  Если поместить курсор перед открывающую фигурную скобку, должны быть выделены, фигурную скобку и сопоставления закрывающей фигурной скобки. Если поместить курсор сразу после закрывающей фигурной скобки, должны быть выделены, фигурную скобку и сопоставления открывающую фигурную скобку.
+4. Если поместить курсор перед открывающую фигурную скобку, должны быть выделены, фигурную скобку и сопоставления закрывающей фигурной скобки. Если поместить курсор сразу после закрывающей фигурной скобки, должны быть выделены, фигурную скобку и сопоставления открывающую фигурную скобку.
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

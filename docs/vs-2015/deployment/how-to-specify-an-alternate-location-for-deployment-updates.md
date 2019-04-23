@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087946"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58979770"
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Задание альтернативного местоположения для обновлений с помощью MageUI.exe (служебная программа на базе Windows Forms)  
   
-1.  Откройте командную строку .NET Framework и введите:  
+1. Откройте командную строку .NET Framework и введите:  
   
      **mageui.exe**  
   
-2.  На **файл** меню, выберите **откройте** открыть манифест развертывания для приложения.  
+2. На **файл** меню, выберите **откройте** открыть манифест развертывания для приложения.  
   
-3.  Перейдите на вкладку **Параметры развертывания**.  
+3. Перейдите на вкладку **Параметры развертывания**.  
   
-4.  В текстовом поле с именем **место запуска**, введите URL-адрес в каталог, который будет содержать манифест развертывания для обновлений приложения.  
+4. В текстовом поле с именем **место запуска**, введите URL-адрес в каталог, который будет содержать манифест развертывания для обновлений приложения.  
   
-5.  Сохраните манифест развертывания.  
+5. Сохраните манифест развертывания.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Задание альтернативного местоположения для обновлений с помощью Mage.exe  
   
-1.  Откройте командную строку .NET Framework.  
+1. Откройте командную строку .NET Framework.  
   
-2.  Задайте расположение обновления, используя следующую команду. В этом примере **HelloWorld.exe.application** — это путь к вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифеста приложения, который всегда имеет расширение .application, и **http://adatum.com/Update/Path** является URL-адрес этого [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] будет проверять наличие обновлений приложения.  
+2. Задайте расположение обновления, используя следующую команду. В этом примере **HelloWorld.exe.application** — это путь к вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифеста приложения, который всегда имеет расширение .application, и **http://adatum.com/Update/Path** является URL-адрес этого [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] будет проверять наличие обновлений приложения.  
   
      **Mage-обновление HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Сохраните файл.  
+3. Сохраните файл.  
   
     > [!NOTE]
     >  Теперь вам нужно повторно подписать файла с помощью Mage.exe. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087928"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 
@@ -84,17 +84,17 @@ C++ Core Guidelines должны помогать вам в написании �
 
 Правила проверки C++ Core добавляются новые правила, может увеличить число предупреждений, которые создаются для существующего кода. Заранее заданные наборы правил можно использовать для фильтрации какие типы правил для поддержки. Начиная с Visual Studio 2017 версии 15.3 являются наборы поддерживаемых правил:
 
-  - **Правила для указателей владельцев** применять [управления ресурсами проверяет, связанные с owner\<T > из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Правила для указателей владельцев** применять [управления ресурсами проверяет, связанные с owner\<T > из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Правила для констант** применять [проверки, связанные с const, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Правила для констант** применять [проверки, связанные с const, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Правила для необработанных указателей** применять [управления ресурсами проверяет связанные с необработанных указателей, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Правила для необработанных указателей** применять [управления ресурсами проверяет связанные с необработанных указателей, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Правила для уникальных указателей** применять [управления ресурсами проверяет, связанные с типами с семантикой уникальных указателей, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Правила для уникальных указателей** применять [управления ресурсами проверяет, связанные с типами с семантикой уникальных указателей, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Правила проверки границ** применять [ограничивающий профиль из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Правила проверки границ** применять [ограничивающий профиль из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Правила типов** применять [введите профиля, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Правила типов** применять [введите профиля, из C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 Вы можете ограничить предупреждения, чтобы только один или несколько групп. **Собственного минимум** и **собственного рекомендуется** правило, включают правила C++ Core Check в дополнение к другим PREfast проверок. Для просмотра доступных наборов правил, откройте диалоговое окно свойств проекта выберите **Analysis\General кода**, откройте раскрывающийся список в **наборы правил** поле со списком и выбора **выбрать несколько наборов правил** . Дополнительные сведения об использовании наборов правил в Visual Studio, см. в разделе [использование наборов правил для группировки правил анализа кода](using-rule-sets-to-group-code-analysis-rules.md).
 

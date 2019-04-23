@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093466"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild
   Сборки, очистки и проверки пакета SharePoint (*.wsp*) с помощью командной строки задачи MSBuild на компьютере разработчика. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.
@@ -26,11 +26,11 @@ ms.locfileid: "56624403"
 
 #### <a name="to-build-a-sharepoint-package"></a>Чтобы выполнить сборку пакета SharePoint
 
-1.  В Windows **запустить** меню, выберите **все программы** > **стандартные** > **командной**.
+1. В Windows **запустить** меню, выберите **все программы** > **стандартные** > **командной**.
 
-2.  Перейдите в каталог, где находится проект SharePoint.
+2. Перейдите в каталог, где находится проект SharePoint.
 
-3.  Введите следующую команду, чтобы создать пакет для проекта. Замените *ProjectFileName* с именем проекта.
+3. Введите следующую команду, чтобы создать пакет для проекта. Замените *ProjectFileName* с именем проекта.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624403"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Чтобы очистить пакет SharePoint
 
-1.  Откройте окно командной строки.
+1. Откройте окно командной строки.
 
-2.  Перейдите в каталог, где находится проект SharePoint.
+2. Перейдите в каталог, где находится проект SharePoint.
 
-3.  Введите следующую команду, чтобы очистить пакет для проекта. Замените *ProjectFileName* с именем проекта.
+3. Введите следующую команду, чтобы очистить пакет для проекта. Замените *ProjectFileName* с именем проекта.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624403"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Чтобы проверить пакет SharePoint
 
-1.  Откройте окно командной строки.
+1. Откройте окно командной строки.
 
-2.  Перейдите в каталог, где находится проект SharePoint.
+2. Перейдите в каталог, где находится проект SharePoint.
 
-3.  Введите следующую команду, чтобы проверить пакет для проекта. Замените *ProjectFileName* с именем проекта.
+3. Введите следующую команду, чтобы проверить пакет для проекта. Замените *ProjectFileName* с именем проекта.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624403"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Чтобы задать свойство в пакете SharePoint
 
-1.  Откройте окно командной строки.
+1. Откройте окно командной строки.
 
-2.  Перейдите в каталог, где находится проект SharePoint.
+2. Перейдите в каталог, где находится проект SharePoint.
 
-3.  Введите следующую команду, чтобы задать свойство пакета для проекта. Замените *PropertyName* со свойством, которое вы хотите установить.
+3. Введите следующую команду, чтобы задать свойство пакета для проекта. Замените *PropertyName* со свойством, которое вы хотите установить.
 
     ```cmd
     msbuild /property:PropertyName=Value

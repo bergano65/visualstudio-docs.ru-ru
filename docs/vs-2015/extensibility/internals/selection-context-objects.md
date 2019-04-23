@@ -11,12 +11,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092192"
 ---
 # <a name="selection-context-objects"></a>Объекты контекста выбора
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58993281"
   
   Следующая последовательность действий показывает типичный ход отслеживание выделения.  
   
-1.  Интегрированная среда разработки получает контекст выбора из только что открытого окна и помещает его в контексте глобального выделения. Если контекст выбора с HIERARCHY_DONTPROPAGATE или SELCONTAINER_DONTPROPAGATE, эти сведения не распространяется на глобальном контексте. Дополнительные сведения см. в разделе [обратной связи с пользователем](../../extensibility/internals/feedback-to-the-user.md).  
+1. Интегрированная среда разработки получает контекст выбора из только что открытого окна и помещает его в контексте глобального выделения. Если контекст выбора с HIERARCHY_DONTPROPAGATE или SELCONTAINER_DONTPROPAGATE, эти сведения не распространяется на глобальном контексте. Дополнительные сведения см. в разделе [обратной связи с пользователем](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  События уведомления отправляются любой пакет VSPackage, который их запросил.  
+2. События уведомления отправляются любой пакет VSPackage, который их запросил.  
   
-3.  Пакет VSPackage, выступает на события, которые оно получает, выполняя действия, такие как обновление иерархии, повторная активация средство или других подобных целей.  
+3. Пакет VSPackage, выступает на события, которые оно получает, выполняя действия, такие как обновление иерархии, повторная активация средство или других подобных целей.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

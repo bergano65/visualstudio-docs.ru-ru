@@ -10,12 +10,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088955"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Практическое руководство. Подавлять уведомления об изменении файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "58979736"
   
 ### <a name="to-suppress-file-change-notification"></a>Чтобы отключить уведомления об изменении файла  
   
-1.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод, чтобы определить, какой объект текстового буфера связан с открытым файлом.  
+1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод, чтобы определить, какой объект текстового буфера связан с открытым файлом.  
   
-2.  Прямой <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект, который в памяти, чтобы игнорировать отслеживает изменения в файлах, получая <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> интерфейс из <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект (document data), а затем реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод с `fIgnore` параметр значение `true`.  
+2. Прямой <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект, который в памяти, чтобы игнорировать отслеживает изменения в файлах, получая <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> интерфейс из <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект (document data), а затем реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод с `fIgnore` параметр значение `true`.  
   
-3.  Вызывать методы в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейсы для обновления в памяти <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект с изменения файла (например, когда поле добавляется в компонент).  
+3. Вызывать методы в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейсы для обновления в памяти <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект с изменения файла (например, когда поле добавляется в компонент).  
   
-4.  Обновите файл на диске с учетом изменений, без учета все ожидающие изменения, которые пользователь может иметь в процессе выполнения.  
+4. Обновите файл на диске с учетом изменений, без учета все ожидающие изменения, которые пользователь может иметь в процессе выполнения.  
   
      Таким образом, когда <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> уведомления об изменении объекта для возобновления наблюдения за файл, текстовый буфер в памяти отражает изменения, которые вы создали, а также все незафиксированные изменения. Файл на диске отражают последние код, созданный вами и любые сохраненные изменения пользователем в коде изменить пользователя.  
   
-5.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод для уведомления <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта для возобновления наблюдения за уведомления об изменении файла, задав `fIgnore` параметр `false`.  
+5. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод для уведомления <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта для возобновления наблюдения за уведомления об изменении файла, задав `fIgnore` параметр `false`.  
   
-6.  Если вы планируете внести несколько изменений в файл, как в случае управления исходным кодом (SCC), необходимо сообщить службе изменение глобальных файлов временно остановить уведомления об изменении файла.  
+6. Если вы планируете внести несколько изменений в файл, как в случае управления исходным кодом (SCC), необходимо сообщить службе изменение глобальных файлов временно остановить уведомления об изменении файла.  
   
      Например если переписать файл и затем измените метку времени, необходимо приостановить уведомления об изменении файла, как операции перезаписи и timestample каждого учитываются, так как события изменения в отдельном файле. Для включения уведомлений об изменении глобального файла, следует вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> метод.  
   

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094857"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.
@@ -52,34 +52,34 @@ ms.locfileid: "56627744"
 
  При создании проекта на уровне документа Visual Studio создает обработчики событий для события **Startup** в созданных файлах кода:
 
--   Для проектов Microsoft Office Word обработчик событий имеет имя `ThisDocument_Startup`.
+- Для проектов Microsoft Office Word обработчик событий имеет имя `ThisDocument_Startup`.
 
--   Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
+- Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown - событие
  Событие **Shutdown** возникает для каждого ведущего элемента (документа или листа), когда домен приложения, в который загружен ваш код, готов к выгрузке. Это самая последняя операция, которая должна быть вызвана в классе при выгрузке.
 
  При создании проекта на уровне документа Visual Studio создает обработчики событий для события **Shutdown** в созданных файлах кода:
 
--   Для проектов Microsoft Office Word обработчик событий имеет имя `ThisDocument_Shutdown`.
+- Для проектов Microsoft Office Word обработчик событий имеет имя `ThisDocument_Shutdown`.
 
--   Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
+- Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  Не удаляйте программным образом элементы управления во время работы обработчика событий **Shutdown** документа. Если возникает событие **Shutdown** , элементы пользовательского интерфейса документа становятся недоступными. Если элементы управления необходимо удалить до закрытия приложения, добавьте свой код в другой обработчик событий, например, **BeforeClose** или **BeforeSave**.
@@ -145,9 +145,9 @@ ms.locfileid: "56627744"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Событие завершения работы в надстройках VSTO для Outlook
  Событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> возникает только в том случае, когда пользователь отключает надстройку VSTO с помощью диалогового окна надстроек COM в Outlook. Оно не возникает при завершении работы Outlook. Если у вас есть код, который должен выполняться при завершении работы Outlook, обработайте одно из следующих событий:
 
--   Событие <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> объекта <xref:Microsoft.Office.Interop.Outlook.Application> .
+- Событие <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> объекта <xref:Microsoft.Office.Interop.Outlook.Application> .
 
--   Событие <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Explorer> .
+- Событие <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
 >  Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменяет завершения работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).

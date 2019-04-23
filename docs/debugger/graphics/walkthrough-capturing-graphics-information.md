@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Запись графических сведений | Документация Майкрософт'
+title: Пошаговое руководство. Запись графических сведений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092257"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Запись графических сведений
+# <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Захват графической информации
 В этом пошаговом руководстве показано, как с помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] вручную захватывать графические данные из приложения Direct3D.
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
--   Перенаправление диагностики графики в приложение
+- Перенаправление диагностики графики в приложение
 
--   Захват графической информации
+- Захват графической информации
 
 ## <a name="capturing-graphics-information"></a>Захват графической информации
  Чтобы использовать средства диагностики графики, сначала нужно захватить графические данные для него. Чтобы включить захват, используйте команду **Начать диагностику** для перенаправления диагностики графики в приложение при его запуске.
@@ -47,7 +47,7 @@ ms.locfileid: "56711778"
 
 - На панели инструментов "Диагностика графики" нажмите кнопку **Захват** . ![Значок кнопки захвата графики](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   - или -
+   -или-
 
    Поместив фокус на приложение, нажмите клавишу **PRINT SCREEN**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "56711778"
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве было продемонстрировано, как захватывать графические данные вручную. Далее можно перейти к рассмотрению следующего этапа.
 
--   Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
+- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Capturing Graphics Information](capturing-graphics-information.md)

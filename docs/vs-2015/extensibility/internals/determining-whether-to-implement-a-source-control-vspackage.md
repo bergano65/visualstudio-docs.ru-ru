@@ -10,12 +10,12 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b47cfde4bbc228aa31d911a9499b74e12b78250c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff53700dcd6a80f841108d5a2b486dcb0ba7a11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090846"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Определение порядка реализации пакета VSPackage системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58990498"
   
  Если вы хотите реализовать решение для управления версиями, который обеспечивает гибкость и больше возможностей управления пользовательского интерфейса и логика элемента управления источника, вы можете предпочесть маршрут интеграции пакета управления. Можно выполнить следующие действия:   
   
-1.  Зарегистрировать собственный пакет VSPackage системы управления версиями (см. в разделе [регистрации и выбора](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1. Зарегистрировать собственный пакет VSPackage системы управления версиями (см. в разделе [регистрации и выбора](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Замените настраиваемого пользовательского интерфейса системы управления версиями по умолчанию пользовательского интерфейса (см. в разделе [собственный пользовательский интерфейс](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
+2. Замените настраиваемого пользовательского интерфейса системы управления версиями по умолчанию пользовательского интерфейса (см. в разделе [собственный пользовательский интерфейс](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Укажите глифов для использования и обработки событий глифа в обозревателе решений (см. в разделе [элемент управления глифа](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3. Укажите глифов для использования и обработки событий глифа в обозревателе решений (см. в разделе [элемент управления глифа](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Обработка событий запроса измените и сохраните запрос (см. в разделе [запроса изменить запрос Сохранить](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4. Обработка событий запроса измените и сохраните запрос (см. в разделе [запроса изменить запрос Сохранить](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>См. также  
  [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090723"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Практическое руководство. Изменение размера элементов управления Bookmark
   Размер элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> задается при его добавлении в документ Microsoft Office Word. Его также можно изменить позднее.
@@ -47,15 +47,15 @@ ms.locfileid: "56644956"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Изменение размера закладки в проекте уровня документа во время разработки
 
-1.  Выберите закладку в окне **Свойства** .
+1. Выберите закладку в окне **Свойства** .
 
-2.  Увеличьте или уменьшите значение свойства <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
+2. Увеличьте или уменьшите значение свойства <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
 
-3.  Увеличьте или уменьшите значение свойства <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
+3. Увеличьте или уменьшите значение свойства <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Изменение размера закладки в проекте уровня документа во время выполнения
 
-1.  Изменить <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> свойства <xref:Microsoft.Office.Tools.Word.Bookmark> созданного во время выполнения или во время разработки.
+1. Изменить <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> свойства <xref:Microsoft.Office.Tools.Word.Bookmark> созданного во время выполнения или во время разработки.
 
      В следующем примере кода добавляется пять символов к началу закладки с именем `SampleBookmark`. В этом коде предполагается, что имеется по крайней мере пять символов текста до закладки.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644956"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Изменение размера закладки в проекте надстройки VSTO во время выполнения
 
-1.  Изменить <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> свойства <xref:Microsoft.Office.Tools.Word.Bookmark> создан во время выполнения.
+1. Изменить <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> свойства <xref:Microsoft.Office.Tools.Word.Bookmark> создан во время выполнения.
 
      В следующем примере кода создается объект <xref:Microsoft.Office.Tools.Word.Bookmark> , содержащий текст в первом абзаце активного документа, а затем удаляется по пять символов в начале и в конце <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644956"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Повторное создание закладки в проекте уровня документа во время разработки
 
-1.  Выделите текст для включения в новый элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. Выделите текст для включения в новый элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
-2.  В меню **Вставить** выберите пункт **Закладка**.
+2. В меню **Вставить** выберите пункт **Закладка**.
 
-3.  В диалоговом окне **Закладка** выберите имя закладки, размер которой требуется изменить, и нажмите кнопку **Добавить**.
+3. В диалоговом окне **Закладка** выберите имя закладки, размер которой требуется изменить, и нажмите кнопку **Добавить**.
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

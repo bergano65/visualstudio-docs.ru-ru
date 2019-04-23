@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7e0b86bc5058195733c49f5d804a38a5421737
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088487"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Пошаговое руководство. Используйте команду оболочки в расширении редактора
 Из VSPackage можно добавить функции, такие как команды меню в редакторе. В этом пошаговом руководстве показано, как добавить элемент оформления для представления текста в редакторе путем вызова команды меню.
@@ -28,25 +28,25 @@ ms.locfileid: "56685161"
 ## <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
  Создать пакет VSPackage, который помещает команды меню с именем **добавьте оформления** на **средства** меню.
 
-1.  Создайте проект VSIX C# с именем `MenuCommandTest`и добавьте имя шаблона элемента настраиваемой команды **AddAdornment**. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Создайте проект VSIX C# с именем `MenuCommandTest`и добавьте имя шаблона элемента настраиваемой команды **AddAdornment**. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Открывает решение с именем MenuCommandTest. Файл MenuCommandTestPackage содержит код, который создает команду меню и помещает его в **средства** меню. На этом этапе команда приводит только к окно сообщения. Позднее будет показано, как изменить этот параметр для отображения оформления комментариев.
+2. Открывает решение с именем MenuCommandTest. Файл MenuCommandTestPackage содержит код, который создает команду меню и помещает его в **средства** меню. На этом этапе команда приводит только к окно сообщения. Позднее будет показано, как изменить этот параметр для отображения оформления комментариев.
 
-3.  Откройте *source.extension.vsixmanifest* файл в редакторе манифестов VSIX. `Assets` Вкладке должна отображаться строка для Microsoft.VisualStudio.VsPackage именованные MenuCommandTest.
+3. Откройте *source.extension.vsixmanifest* файл в редакторе манифестов VSIX. `Assets` Вкладке должна отображаться строка для Microsoft.VisualStudio.VsPackage именованные MenuCommandTest.
 
-4.  Сохраните и закройте *source.extension.vsixmanifest* файл.
+4. Сохраните и закройте *source.extension.vsixmanifest* файл.
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Добавление расширения MEF для расширения команды
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши узел решения, нажмите кнопку **добавить**, а затем нажмите кнопку **новый проект**. В **Добавление нового проекта** диалоговом окне щелкните **расширяемости** под **Visual C#**, затем **проект VSIX**. Задайте для проекта имя `CommentAdornmentTest`.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши узел решения, нажмите кнопку **добавить**, а затем нажмите кнопку **новый проект**. В **Добавление нового проекта** диалоговом окне щелкните **расширяемости** под **Visual C#**, затем **проект VSIX**. Задайте для проекта имя `CommentAdornmentTest`.
 
-2.  Поскольку этот проект будет взаимодействовать со сборкой со строгим именем VSPackage, должен подписать сборку. Можно повторно использовать файл ключа, который уже создан для сборки пакета VSPackage.
+2. Поскольку этот проект будет взаимодействовать со сборкой со строгим именем VSPackage, должен подписать сборку. Можно повторно использовать файл ключа, который уже создан для сборки пакета VSPackage.
 
-    1.  Откройте свойства проекта и выберите **подписывание** вкладки.
+    1. Откройте свойства проекта и выберите **подписывание** вкладки.
 
-    2.  Выберите **подписать сборку**.
+    2. Выберите **подписать сборку**.
 
-    3.  В разделе **выберите файл ключа строгого имени**выберите *Key.snk* файла, созданный для сборки MenuCommandTest.
+    3. В разделе **выберите файл ключа строгого имени**выберите *Key.snk* файла, созданный для сборки MenuCommandTest.
 
 ## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Обращения к расширению MEF в проект VSPackage
  Так как вы добавляете компонент MEF объекту VSPackage, необходимо указать оба вида ресурсов в манифесте.
@@ -56,62 +56,62 @@ ms.locfileid: "56685161"
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Для ссылки на компонент MEF в проект VSPackage
 
-1.  В проекте MenuCommandTest, откройте *source.extension.vsixmanifest* файл в редакторе манифестов VSIX.
+1. В проекте MenuCommandTest, откройте *source.extension.vsixmanifest* файл в редакторе манифестов VSIX.
 
-2.  На **активы** щелкните **New**.
+2. На **активы** щелкните **New**.
 
-3.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.
+3. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
-4.  В **источника** выберите **проект в текущем решении**.
+4. В **источника** выберите **проект в текущем решении**.
 
-5.  В **проекта** выберите **CommentAdornmentTest**.
+5. В **проекта** выберите **CommentAdornmentTest**.
 
-6.  Сохраните и закройте *source.extension.vsixmanifest* файл.
+6. Сохраните и закройте *source.extension.vsixmanifest* файл.
 
-7.  Убедитесь, что проект MenuCommandTest имеет ссылку на проект CommentAdornmentTest.
+7. Убедитесь, что проект MenuCommandTest имеет ссылку на проект CommentAdornmentTest.
 
-8.  В проекте CommentAdornmentTest установите проект для создания сборки. В **обозревателе решений**, выберите проект и искать в **свойства** окно для **копирования выходных данных сборки для OutputDirectory** свойство и присвойте ему значение **true**.
+8. В проекте CommentAdornmentTest установите проект для создания сборки. В **обозревателе решений**, выберите проект и искать в **свойства** окно для **копирования выходных данных сборки для OutputDirectory** свойство и присвойте ему значение **true**.
 
 ## <a name="define-a-comment-adornment"></a>Определите оформления комментариев
  Сам оформления комментариев состоит из <xref:Microsoft.VisualStudio.Text.ITrackingSpan> выделенный текст и некоторые строки, представляющие автор и описание текста, который отслеживает.
 
 #### <a name="to-define-a-comment-adornment"></a>Для определения оформления комментариев
 
-1.  В проекте CommentAdornmentTest, добавьте новый файл класса и назовите его `CommentAdornment`.
+1. В проекте CommentAdornmentTest, добавьте новый файл класса и назовите его `CommentAdornment`.
 
-2.  Добавьте следующие ссылки:
+2. Добавьте следующие ссылки:
 
-    1.  Microsoft.VisualStudio.CoreUtility
+    1. Microsoft.VisualStudio.CoreUtility
 
-    2.  Microsoft.VisualStudio.Text.Data
+    2. Microsoft.VisualStudio.Text.Data
 
-    3.  Microsoft.VisualStudio.Text.Logic
+    3. Microsoft.VisualStudio.Text.Logic
 
-    4.  Microsoft.VisualStudio.Text.UI
+    4. Microsoft.VisualStudio.Text.UI
 
-    5.  Microsoft.VisualStudio.Text.UI.Wpf
+    5. Microsoft.VisualStudio.Text.UI.Wpf
 
-    6.  System.ComponentModel.Composition
+    6. System.ComponentModel.Composition
 
-    7.  PresentationCore
+    7. PresentationCore
 
-    8.  PresentationFramework
+    8. PresentationFramework
 
     9. WindowsBase
 
-3.  Добавьте следующий `using` инструкции.
+3. Добавьте следующий `using` инструкции.
 
     ```csharp
     using Microsoft.VisualStudio.Text;
     ```
 
-4.  Этот файл должен содержать класс с именем `CommentAdornment`.
+4. Этот файл должен содержать класс с именем `CommentAdornment`.
 
     ```csharp
     internal class CommentAdornment
     ```
 
-5.  Добавьте три поля в `CommentAdornment` класса для <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, автор и описание.
+5. Добавьте три поля в `CommentAdornment` класса для <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, автор и описание.
 
     ```csharp
     public readonly ITrackingSpan Span;
@@ -119,7 +119,7 @@ ms.locfileid: "56685161"
     public readonly string Text;
     ```
 
-6.  Добавьте конструктор, который инициализирует поля.
+6. Добавьте конструктор, который инициализирует поля.
 
     ```csharp
     public CommentAdornment(SnapshotSpan span, string author, string text)
@@ -133,9 +133,9 @@ ms.locfileid: "56685161"
 ## <a name="create-a-visual-element-for-the-adornment"></a>Создать визуальный элемент для оформления
  Определите визуальный элемент для вашего элемента оформления. В этом пошаговом руководстве определения элемента управления, который наследует от класса Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas>.
 
-1.  Создайте класс в проекте CommentAdornmentTest и назовите его `CommentBlock`.
+1. Создайте класс в проекте CommentAdornmentTest и назовите его `CommentBlock`.
 
-2.  Добавьте следующие инструкции `using`.
+2. Добавьте следующие инструкции `using`.
 
     ```csharp
     using Microsoft.VisualStudio.Text;
@@ -149,14 +149,14 @@ ms.locfileid: "56685161"
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3.  Сделать `CommentBlock` наследовать класс от <xref:System.Windows.Controls.Canvas>.
+3. Сделать `CommentBlock` наследовать класс от <xref:System.Windows.Controls.Canvas>.
 
     ```csharp
     internal class CommentBlock : Canvas
     { }
     ```
 
-4.  Добавьте несколько закрытых полей для определения визуальных характеристик элемента оформления.
+4. Добавьте несколько закрытых полей для определения визуальных характеристик элемента оформления.
 
     ```csharp
     private Geometry textGeometry;
@@ -166,7 +166,7 @@ ms.locfileid: "56685161"
     private static Pen dashPen;
     ```
 
-5.  Добавьте конструктор, который определяет оформления комментариев и добавляет соответствующий текст.
+5. Добавьте конструктор, который определяет оформления комментариев и добавляет соответствующий текст.
 
     ```csharp
     public CommentBlock(double textRightEdge, double viewRightEdge,
@@ -235,7 +235,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-6.  Кроме того, реализовать <xref:System.Windows.Controls.Panel.OnRender%2A> обработчик событий, который рисует оформления.
+6. Кроме того, реализовать <xref:System.Windows.Controls.Panel.OnRender%2A> обработчик событий, который рисует оформления.
 
     ```csharp
     protected override void OnRender(DrawingContext dc)
@@ -257,9 +257,9 @@ ms.locfileid: "56685161"
 ## <a name="add-an-iwpftextviewcreationlistener"></a>Add an IWpfTextViewCreationListener
  <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> — Это часть компонентов MEF, можно использовать для ожидания передачи данных, чтобы просмотреть события создания.
 
-1.  Добавьте файл класса в проект CommentAdornmentTest и назовите его `Connector`.
+1. Добавьте файл класса в проект CommentAdornmentTest и назовите его `Connector`.
 
-2.  Добавьте следующие инструкции `using`.
+2. Добавьте следующие инструкции `using`.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -267,12 +267,12 @@ ms.locfileid: "56685161"
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3.  Объявите класс, реализующий <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. Атрибут типа содержимого задает тип содержимого, к которому применяется компонента. Тип текста является базовым типом для всех типов файлов не являлись двоичными. Таким образом почти все представления текста, который создается будет этого типа. Атрибут роли представления текста указывает тип представления текста, к которому применяется компонента. Роли представления текста документа обычно Показать текст, который состоит из строк и хранится в файле.
+3. Объявите класс, реализующий <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. Атрибут типа содержимого задает тип содержимого, к которому применяется компонента. Тип текста является базовым типом для всех типов файлов не являлись двоичными. Таким образом почти все представления текста, который создается будет этого типа. Атрибут роли представления текста указывает тип представления текста, к которому применяется компонента. Роли представления текста документа обычно Показать текст, который состоит из строк и хранится в файле.
 
      [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
      [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]
 
-4.  Реализуйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> он вызывает статический метод `Create()` событие `CommentAdornmentManager`.
+4. Реализуйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> он вызывает статический метод `Create()` событие `CommentAdornmentManager`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -281,7 +281,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-5.  Добавьте метод, который можно использовать для выполнения команды.
+5. Добавьте метод, который можно использовать для выполнения команды.
 
     ```csharp
     static public void Execute(IWpfTextViewHost host)
@@ -308,7 +308,7 @@ ms.locfileid: "56685161"
 
 ### <a name="to-define-an-adornment-layer"></a>Для определения слое оформлений
 
-1.  В `Connector` определите открытое поле типа <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , задающий уникальное имя для слое оформлений и <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , определяющий отношение Z-порядок этом слое оформлений весь прочий текст Просмотр уровней (текст, курсор и выделение).
+1. В `Connector` определите открытое поле типа <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , задающий уникальное имя для слое оформлений и <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , определяющий отношение Z-порядок этом слое оформлений весь прочий текст Просмотр уровней (текст, курсор и выделение).
 
     ```csharp
     [Export(typeof(AdornmentLayerDefinition))]
@@ -321,9 +321,9 @@ ms.locfileid: "56685161"
 ## <a name="provide-comment-adornments"></a>Укажите элементы оформления комментариев
  При определении элемент оформления, также реализуйте поставщик элемента оформления комментариев и диспетчер оформления комментариев. Поставщик элемента оформления комментариев хранит список элементов оформления комментариев, прослушивает <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> события в базовом текстовом буфере и удаляет элементы оформления комментарий при удалении основной текст.
 
-1.  Добавьте новый файл класса в проект CommentAdornmentTest и назовите его `CommentAdornmentProvider`.
+1. Добавьте новый файл класса в проект CommentAdornmentTest и назовите его `CommentAdornmentProvider`.
 
-2.  Добавьте следующие инструкции `using`.
+2. Добавьте следующие инструкции `using`.
 
     ```csharp
     using System;
@@ -333,7 +333,7 @@ ms.locfileid: "56685161"
     using Microsoft.VisualStudio.Text.Editor;
     ```
 
-3.  Добавьте класс с именем `CommentAdornmentProvider`.
+3. Добавьте класс с именем `CommentAdornmentProvider`.
 
     ```csharp
     internal class CommentAdornmentProvider
@@ -341,7 +341,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-4.  Добавьте закрытые поля для текстового буфера и список элементов оформления комментариев, связанных в буфер.
+4. Добавьте закрытые поля для текстового буфера и список элементов оформления комментариев, связанных в буфер.
 
     ```csharp
     private ITextBuffer buffer;
@@ -349,7 +349,7 @@ ms.locfileid: "56685161"
 
     ```
 
-5.  Добавьте конструктор для `CommentAdornmentProvider`. Этот конструктор следует имеют закрытый доступ, так как экземпляр поставщика создается путем `Create()` метод. Конструктор добавляет `OnBufferChanged` в обработчике событий <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> событий.
+5. Добавьте конструктор для `CommentAdornmentProvider`. Этот конструктор следует имеют закрытый доступ, так как экземпляр поставщика создается путем `Create()` метод. Конструктор добавляет `OnBufferChanged` в обработчике событий <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> событий.
 
     ```csharp
     private CommentAdornmentProvider(ITextBuffer buffer)
@@ -361,7 +361,7 @@ ms.locfileid: "56685161"
 
     ```
 
-6.  Добавьте метод `Create()`.
+6. Добавьте метод `Create()`.
 
     ```csharp
     public static CommentAdornmentProvider Create(IWpfTextView view)
@@ -371,7 +371,7 @@ ms.locfileid: "56685161"
 
     ```
 
-7.  Добавьте метод `Detach()`.
+7. Добавьте метод `Detach()`.
 
     ```csharp
     public void Detach()
@@ -385,7 +385,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-8.  Добавление `OnBufferChanged` обработчик событий.
+8. Добавление `OnBufferChanged` обработчик событий.
 
      [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
      [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]
@@ -485,9 +485,9 @@ ms.locfileid: "56685161"
 ## <a name="manage-comment-adornments"></a>Управление элементы оформления комментариев
  Диспетчер оформления комментариев создает оформления и добавляет его в слое оформлений. Он прослушивает <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> события, поэтому ее можно переместить или удалить оформления. Он также прослушивает `CommentsChanged` событие, инициируемое поставщиком оформления комментариев при комментарии добавляются или удаляются.
 
-1.  Добавьте файл класса в проект CommentAdornmentTest и назовите его `CommentAdornmentManager`.
+1. Добавьте файл класса в проект CommentAdornmentTest и назовите его `CommentAdornmentManager`.
 
-2.  Добавьте следующие инструкции `using`.
+2. Добавьте следующие инструкции `using`.
 
     ```csharp
     using System;
@@ -498,7 +498,7 @@ ms.locfileid: "56685161"
     using Microsoft.VisualStudio.Text.Formatting;
     ```
 
-3.  Добавьте класс с именем `CommentAdornmentManager`.
+3. Добавьте класс с именем `CommentAdornmentManager`.
 
     ```csharp
     internal class CommentAdornmentManager
@@ -506,7 +506,7 @@ ms.locfileid: "56685161"
         }
     ```
 
-4.  Добавьте несколько закрытых полей.
+4. Добавьте несколько закрытых полей.
 
     ```csharp
     private readonly IWpfTextView view;
@@ -514,7 +514,7 @@ ms.locfileid: "56685161"
     private readonly CommentAdornmentProvider provider;
     ```
 
-5.  Добавьте конструктор, который создает подписку, чтобы диспетчер мог <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> события, а также с `CommentsChanged` событий. Конструктор является закрытым, поскольку диспетчер создается статическим `Create()` метод.
+5. Добавьте конструктор, который создает подписку, чтобы диспетчер мог <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> события, а также с `CommentsChanged` событий. Конструктор является закрытым, поскольку диспетчер создается статическим `Create()` метод.
 
     ```csharp
     private CommentAdornmentManager(IWpfTextView view)
@@ -530,7 +530,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-6.  Добавление `Create()` метод, который возвращает поставщик или при необходимости создает ее.
+6. Добавление `Create()` метод, который возвращает поставщик или при необходимости создает ее.
 
     ```csharp
     public static CommentAdornmentManager Create(IWpfTextView view)
@@ -539,7 +539,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-7.  Добавление `CommentsChanged` обработчика.
+7. Добавление `CommentsChanged` обработчика.
 
     ```csharp
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
@@ -554,7 +554,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-8.  Добавление <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> обработчика.
+8. Добавление <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> обработчика.
 
     ```csharp
     private void OnClosed(object sender, EventArgs e)
@@ -604,15 +604,15 @@ ms.locfileid: "56685161"
 ## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Используйте команду меню, чтобы добавить комментарий оформления
  Команды меню можно использовать для создания оформления комментариев, реализовав `MenuItemCallback` методе VSPackage.
 
-1.  Добавьте следующие ссылки в проект MenuCommandTest:
+1. Добавьте следующие ссылки в проект MenuCommandTest:
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.Editor
+    - Microsoft.VisualStudio.Editor
 
-    -   Microsoft.VisualStudio.Text.UI.Wpf
+    - Microsoft.VisualStudio.Text.UI.Wpf
 
-2.  Откройте *AddAdornment.cs* файл и добавьте следующие `using` инструкций.
+2. Откройте *AddAdornment.cs* файл и добавьте следующие `using` инструкций.
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;
@@ -621,7 +621,7 @@ ms.locfileid: "56685161"
     using CommentAdornmentTest;
     ```
 
-3.  Удалить `Execute()` метод и добавьте следующий обработчик команд.
+3. Удалить `Execute()` метод и добавьте следующий обработчик команд.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -629,7 +629,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-4.  Добавьте код для получения активное представление. Необходимо получить `SVsTextManager` оболочки Visual Studio для получения активной `IVsTextView`.
+4. Добавьте код для получения активное представление. Необходимо получить `SVsTextManager` оболочки Visual Studio для получения активной `IVsTextView`.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -641,7 +641,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-5.  Если данного представления текста — это экземпляр представление текстового редактора, их можно привести к <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> интерфейс, а затем получите <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> и связанный с ним <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Используйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> для вызова `Connector.Execute()` метод, который получает поставщик элемента оформления комментариев и добавляет оформления. Обработчик команд теперь должен выглядеть так этот код:
+5. Если данного представления текста — это экземпляр представление текстового редактора, их можно привести к <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> интерфейс, а затем получите <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> и связанный с ним <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Используйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> для вызова `Connector.Execute()` метод, который получает поставщик элемента оформления комментариев и добавляет оформления. Обработчик команд теперь должен выглядеть так этот код:
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -665,7 +665,7 @@ ms.locfileid: "56685161"
     }
     ```
 
-6.  Задайте метод AddAdornmentHandler в качестве обработчика команды AddAdornment в конструкторе AddAdornment.
+6. Задайте метод AddAdornmentHandler в качестве обработчика команды AddAdornment в конструкторе AddAdornment.
 
     ```csharp
     private AddAdornment(AsyncPackage package, OleMenuCommandService commandService)
@@ -681,11 +681,11 @@ ms.locfileid: "56685161"
 
 ## <a name="build-and-test-the-code"></a>Построение и тестирование кода
 
-1.  Постройте решение и запустите отладку. Откроется экспериментальный экземпляр.
+1. Постройте решение и запустите отладку. Откроется экспериментальный экземпляр.
 
-2.  Создание текстового файла. Введите текст, а затем выберите его.
+2. Создание текстового файла. Введите текст, а затем выберите его.
 
-3.  На **средства** меню, щелкните **вызова добавьте оформления**. Всплывающую должны отображаться в правой части текстового окна и должно содержать текст, похожий на следующий текст.
+3. На **средства** меню, щелкните **вызова добавьте оформления**. Всплывающую должны отображаться в правой части текстового окна и должно содержать текст, похожий на следующий текст.
 
      Имя_пользователя
 
