@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003070"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662612"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801. Проверьте неиспользуемые параметры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1801: Проверьте неиспользуемые параметры](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1801: Проверьте неиспользуемые параметры](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое, если член не видимый за пределами сборки, независимо от того, сделанные изменения.<br /><br /> Не критическое — при изменении элемента для использования параметра в своем теле.<br /><br /> Критическое, если параметр будет удален, и отображается за пределами сборки.|  
+|Критическое изменение|Non критическое, если член не видимый за пределами сборки, независимо от того, изменения вносятся.<br /><br /> Не критическое - при изменении элемента для использования параметра в своем теле.<br /><br /> Критическое, если параметр будет удален, и отображается за пределами сборки.|  
   
 ## <a name="cause"></a>Причина  
  Сигнатура метода включает параметр, не использующийся в основной части метода. Это правило не проверяет следующие методы:  

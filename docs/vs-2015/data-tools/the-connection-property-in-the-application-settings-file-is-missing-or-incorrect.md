@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978654"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669475"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Свойство подключения в файле параметров приложения отсутствует или неверно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Свойства соединения в файле настройки приложения пропущены или неверны. Строка подключения из DBML-файла использовалась на его месте.  
   
  DBML-файл содержит ссылку на строку подключения в файле параметров приложения, который не может быть найден. Это сообщение является информационным; установка строки подключения будет создана при нажатии кнопки **OK**.  

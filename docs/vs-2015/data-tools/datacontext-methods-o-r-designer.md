@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992743"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661598"
 ---
 # <a name="datacontext-methods-or-designer"></a>Методы DataContext (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) методов (в контексте [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) являются методами <xref:System.Data.Linq.DataContext> класс, запустите хранимую процедуры и функции в базе данных.  
   
  Класс <xref:System.Data.Linq.DataContext> представляет собой класс [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)], который действует как канал между базой данных SQL Server и классами сущностей [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)], сопоставленных этой базе данных. <xref:System.Data.Linq.DataContext> Класс содержит строку подключения и методы для соединения с базой данных и работы с данными в базе данных. По умолчанию <xref:System.Data.Linq.DataContext> класс содержит несколько методов, которые можно вызывать, например <xref:System.Data.Linq.DataContext.SubmitChanges%2A> метода, который отправляет обновленные данные из [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] классы в базу данных. Можно также создать дополнительные методы <xref:System.Data.Linq.DataContext>, которые сопоставляются сохраненным процедурам и функциям. Другими словами, вызов этих пользовательских методов запустит сохраненную процедуру или функцию в базе данных, которой метод <xref:System.Data.Linq.DataContext> сопоставлен. Можно добавить новые методы в класс <xref:System.Data.Linq.DataContext> точно так, как добавлялись бы методы, чтобы расширить любой класс. Тем не менее, в обсуждениях <xref:System.Data.Linq.DataContext> методы в контексте [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], это <xref:System.Data.Linq.DataContext> методы, которые сопоставляются с хранимыми процедурами и функциями, которые обсуждаются.  

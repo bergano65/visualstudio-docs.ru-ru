@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696315"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662911"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Задает структуру разрешения расположения точки останова.
@@ -50,15 +50,15 @@ public struct BP_RESOLUTION_LOCATION {
 
 `bpResLocation.bpresCode`
 
- [C++] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.
+ [C++ только] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.
 
 `bpResLocation.bpresData`
 
- [C++] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.
+ [C++ только] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.
 
 `bpResLocation.unused`
 
- [C++] Заполнитель.
+ [C++ только] Заполнитель.
 
 `unionmember1`
 
@@ -78,7 +78,6 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
-
 
  [C# только] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` поперек затем значение с целью определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации этой структуры в C#.
 

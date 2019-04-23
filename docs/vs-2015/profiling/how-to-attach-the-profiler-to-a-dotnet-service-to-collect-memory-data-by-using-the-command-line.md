@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Присоединение Profiler к службе .NET для сбора данных памяти с помощью командной строки | Документация Майкрософт
+title: Практическое руководство. Присоединение Profiler к службе .NET для сбора данных памяти с помощью командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802382"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663483"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к службе .NET для сбора данных памяти с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описывается использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью подключения профилировщика к службе [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и сбора данных по использованию памяти. С помощью этих программ можно собирать сведения о количестве выделений памяти и объемах выделяемой памяти, а также сведения о времени существования объектов памяти.  
@@ -84,7 +84,6 @@ ms.locfileid: "54802382"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                                     |
 
-
 8. Подключите профилировщик к службе. Тип:  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
@@ -115,7 +114,7 @@ ms.locfileid: "54802382"
 
     -   Остановите службу.  
 
-         - или -  
+         -или-  
 
     -   Введите команду **VSPerfCmd /detach**.  
 
@@ -129,6 +128,6 @@ ms.locfileid: "54802382"
 
 4.  Перезагрузите компьютер.  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Службы профилирования](../profiling/command-line-profiling-of-services.md)   
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)

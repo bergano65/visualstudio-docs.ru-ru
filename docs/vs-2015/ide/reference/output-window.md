@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784823"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668916"
 ---
 # <a name="output-window"></a>Окно выходных данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Окно **Вывод** может отображать сообщения о состоянии для различных функций в интегрированной среде разработки (IDE). Чтобы открыть окно **Вывод**, в строке меню выберите **Представление/Вывод** (или нажмите клавиши CTRL+ALT+O).  
   
 > [!WARNING]
@@ -67,7 +66,7 @@ ms.locfileid: "54784823"
 ## <a name="scrolling-behavior"></a>Поведение прокрутки  
  Если в окне вывода используется автоматическая прокрутка и вы выполняете переход с помощью мыши или клавиш со стрелками, автоматическая прокрутка останавливается. Чтобы возобновить автопрокрутку, нажмите клавиши CTRL+END.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [Практическое руководство. Управление окном вывода](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Компилирование и сборка](../../ide/compiling-and-building-in-visual-studio.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602797"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664470"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] таким образом, чтобы интегрированной среде разработки (IDE) правильно направляет его команды.
@@ -50,8 +50,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  В следующей таблице описаны поля \< *сведения о ресурсах*>.
 
-
-| Элемент | Описание: |
+| Элемент | Описание |
 |---------------------------| - |
 | \<*Путь к DLL ресурсов*> | Это полный путь к DLL, которая содержит ресурс меню ресурса или указан, означающее, что в пакете VSPackage ресурс библиотеки DLL для использования (как указано в подразделе пакетов, где сам пакет VSPackage зарегистрирован).<br /><br /> Обычно это поле оставить пустым. |
 | \<*Идентификатор ресурса меню*> | Это идентификатор ресурса `CTMENU` ресурс, содержащий все элементы пользовательского интерфейса для VSPackage, скомпилированной на основе [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла. |

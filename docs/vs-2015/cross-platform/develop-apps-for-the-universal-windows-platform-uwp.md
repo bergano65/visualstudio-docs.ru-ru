@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787022"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666771"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Благодаря универсальной платформе Windows и единому ядру Windows одно и то же приложение можно запускать на любом устройстве Windows 10 — от телефонов и до настольных компьютеров. Используйте Visual Studio 2015 с универсальными средствами разработки приложений Windows для создания этих приложений.  
   
  ![Универсальная платформа Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -49,7 +48,7 @@ ms.locfileid: "54787022"
   
   Разработка универсальных приложений Windows с помощью Visual Studio 2015 на платформе, отличной от Windows 10, связана со следующими ограничениями.  
   
-- Windows 8.1 Не удается запустить приложение локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
+- Windows 8.1: Не удается запустить приложение локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
   
 - Windows 7: Не удается запустить приложение локально (только на удаленном устройстве Windows 10). В Visual Studio нельзя использовать ни эмуляторы, ни имитаторы.  
   

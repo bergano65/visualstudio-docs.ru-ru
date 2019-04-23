@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366618"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665754"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Создание кода в редакторе кода и текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ ms.locfileid: "59366618"
     По мере ввода результаты будут отображаться в раскрывающемся списке под текстовым полем.
 1. Чтобы перейти к элементу, выберите его в списке.
 
-
 ### <a name="filter-your-search"></a>Фильтрация поиска
 
 Чтобы ограничить область поиска только символами кода, запросом перейти к "\@" символов. Например, при поиске `@application` команда "Перейти к" отображает, скажем, только классы, которые содержат слово "application".
@@ -197,23 +196,23 @@ ms.locfileid: "59366618"
 
 ## <a name="in-this-section"></a>Содержание раздела  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [Поиск и замена текста](../ide/finding-and-replacing-text.md)  
 
 -   [Кодировки и разрывы строк](../ide/encodings-and-line-breaks.md)  
 
--   [Структуризация](../ide/outlining.md)  
+-   [Структура](../ide/outlining.md)  
 
 -   [Рефакторинг](../ide/refactoring-in-visual-studio.md)  
 
 -   [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [Использование технологии IntelliSense](../ide/using-intellisense.md)  
 
 -   [Настройка редактора](../ide/customizing-the-editor.md)  
 
--   [Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Практическое руководство. Отслеживание кода путем настройки полосы прокрутки](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Практическое руководство. Просмотр и изменение кода с помощью "Показать определение" (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Выполнение быстрых действий с лампочками](../ide/perform-quick-actions-with-light-bulbs.md)  
 

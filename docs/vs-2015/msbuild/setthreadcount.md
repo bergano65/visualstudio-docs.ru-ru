@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a57ac0b3412c6668dea1669d14b72fe399b6ab2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758634"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666683"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задает глобальный счетчик потоков и назначает его текущему потоку.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -41,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Количество потоков для использования.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с установленным битом [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->), если счетчик потоков был обновлен.  
+ ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с помощью ([успешно]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) задан бит, если счетчик потоков был обновлен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h
+ **Заголовок.** FileTracker.h

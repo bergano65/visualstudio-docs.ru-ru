@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990153"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666511"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Инструменты для работы с наборами данных в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 ПРИМЕЧАНИЕ
 >  Наборы данных и связанные классы являются устаревших технологий .NET из спам, позволяют приложениям работать с данными в памяти, а приложения отключаются от базы данных. Они особенно полезны для приложений, которые позволяют пользователям изменять данные и сохранять изменения в базе данных. Несмотря на то, что наборы данных оказались очень успешной технологии, рекомендуется новых приложений .NET использовать Entity Framework. Entity Framework предоставляет более естественный способ работы с табличными данными как объектные модели, и он имеет более простой интерфейс программирования.

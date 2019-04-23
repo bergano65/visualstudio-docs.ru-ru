@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991098"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663301"
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Иерархическое обновление * — это процесс сохранения обновленных данных (из набора данных двух или более связанных таблиц) обратно в базу данных, сохраняя ограничения ссылочной целостности. *Ссылочная целостность* ссылается на правила целостности, заданные с помощью ограничений в базе данных, которые управляют поведением вставки, обновления и удаления связанных записей. Например это целостность данных обеспечивает создание записи клиента перед предоставлением заказы, должен быть создан для этого клиента.  Дополнительные сведения о связях в наборах данных см. в разделе [отношения в наборах данных](../data-tools/relationships-in-datasets.md)  
   
  Использует функцию иерархическое обновление `TableAdapterManager` для управления `TableAdapter`s в типизированный набор данных. `TableAdapterManager` Компонент является [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-создается класс, так что не является частью [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. При перетаскивании таблицы из окна источников данных в форму Windows или WPF страницы Visual Studio добавляет переменную типа TableAdapterManager формы или страницы и см. в конструкторе в области компонентов. Подробные сведения о `TableAdapterManager` класса см. в разделе справочной TableAdapterManager [Общие сведения о компоненте TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9913d2762b5ebfff98ddb9296637f3e8847ee2f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 47fba490edd07c61490760114ca8df91b3e35eb1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769206"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668227"
 ---
 # <a name="registerassembly-task"></a>Задача RegisterAssembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cчитывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), но не идентично ему.  
   
 ## <a name="parameters"></a>Параметры  

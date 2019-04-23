@@ -15,17 +15,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758186"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661768"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>"Поиск и замена", "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте эту страницу диалогового окна **Параметры** для управления текстовыми полями сообщений и другими аспектами операций поиска и замены. Перейти к этому диалоговому окну можно из меню **Сервис**, щелкнув **Параметры**, развернув узел **Среда** и выбрав пункт **Поиск и замена**. Если эта страница отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]

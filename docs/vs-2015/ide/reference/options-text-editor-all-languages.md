@@ -20,17 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e7271b9cb45e2a8bf53e5f5aedc10eefc05830e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802562"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661455"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Это диалоговое окно позволяет изменять стандартное поведение редактора кода. Эти параметры также применяются к другим редакторам, основанным на редакторе кода, таким как представление исходного кода в конструкторе HTML. Чтобы открыть это диалоговое окно, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните подпапку **Все языки**, а затем выберите **Общие**.  
   
 > [!CAUTION]

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665627"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 Это сообщение возникает, так как монитор удаленной отладки не настроен должным образом на удаленном компьютере или удаленном компьютере недоступен из-за проблем с сетью или наличия межсетевого экрана.
@@ -81,7 +81,6 @@ Visual Studio не удалось подключиться к удаленном
 
 - Версия удаленного отладчика не соответствует Visual Studio. Чтобы получить правильную версию удаленного отладчика, см. в разделе [удаленной отладки](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> Запрашиваемое имя является допустимым, но данные запрошенного типа не найдены
 
 Существует на удаленном компьютере, но Visual Studio не удалось подключиться к удаленному отладчику. Это сообщение может возникнуть по следующим причинам:
@@ -118,7 +117,7 @@ Visual Studio не удалось подключиться к удаленном
 
 ### <a name="server_incorrect"></a> Указано неверное имя сервера или программное обеспечение независимых производителей мешает удаленного отладчика
 
-В Visual Studio изучите свойства проекта и убедитесь, что имя сервера указано правильно. См. в статьях [ C# и Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) и [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). ASP.NET, откройте **свойства / Web / серверы** или **свойства / Debug** в зависимости от типа проекта.
+В Visual Studio изучите свойства проекта и убедитесь, что имя сервера указано правильно. См. в статьях [C# и Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) и [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). ASP.NET, откройте **свойства / Web / серверы** или **свойства / Debug** в зависимости от типа проекта.
 
 > [!NOTE]
 > Для присоединения к процессу, не используются параметры удаленного в свойствах проекта.
@@ -165,5 +164,5 @@ Visual Studio не удалось подключиться к удаленном
 ## <a name="more-help"></a>Дополнительная справка
  Чтобы получить справку более удаленного отладчика, открыть страницу справки удаленный отладчик (**Справка > использование** в удаленный отладчик).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Remote Debugging](../debugger/remote-debugging.md)

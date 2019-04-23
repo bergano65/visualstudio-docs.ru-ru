@@ -10,17 +10,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 20a42d614278413e4e6ee09ecacdf842ccee878d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662251"
 ---
 # <a name="contained-languages"></a>Содержащихся языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-  
 *Содержащихся языков* языков, которые содержатся в других языках. Например, HTML в [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] страницы могут содержать [!INCLUDE[csprcs](../includes/csprcs-md.md)] или [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] сценариев. Архитектура двумя языка является обязательным для редактора файла .aspx для обеспечения IntelliSense, выделение цветом и других функций редактирования HTML и язык сценариев.  
   
 ## <a name="implementation"></a>Реализация  

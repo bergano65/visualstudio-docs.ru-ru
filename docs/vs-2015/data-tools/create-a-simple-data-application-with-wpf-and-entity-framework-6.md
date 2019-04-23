@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002699"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664804"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простого приложения для обработки данных с помощью WPF и Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Этом пошаговом руководстве показано, как создать приложение основные «формы поверх данных» в Visual Studio с помощью SQL Server LocalDB, базы данных "Борей", Entity Framework 6 и Windows Presentation Foundation. Показано, как выполнять основные привязку данных с основного / подробного представления, и она также содержит настраиваемые «привязка навигатора» с помощью кнопок «Переместить вперед», «Переместить назад,» «Перейти к началу,» «переместить в конец,» «Обновить» и «Удалить».  
   
  В этой статье рассматривается использование средства данных в Visual Studio и не будет пытаться объяснить базовых технологий в любой глубины. Предполагается, что у вас есть базовые знания о XAML, Entity Framework и SQL. В этом примере также показано архитектуре MVVM, которые являются стандартными для приложений WPF. Тем не менее можно скопировать этот код в приложение MVVM с очень небольшими изменениями.  

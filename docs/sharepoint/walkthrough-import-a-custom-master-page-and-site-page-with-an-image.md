@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602212"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665998"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт пользовательской главной страницы и страницы сайта с изображением
   В этом пошаговом руководстве показано, как импортировать настраиваемую эталонную страницу и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.
@@ -150,13 +150,11 @@ ms.locfileid: "56602212"
 
 2. На **выберите элементы для импорта** раздела **модуль** в **тип** столбца, установите флажки для файлов в следующей таблице для импорта.
 
-
    | Имя файла | Описание |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Пользовательскую главную страницу. |
    | images_ | Файл изображения в файловой системе SharePoint. |
    | SitePages_ | На странице сайта. |
-
 
 3. Выберите **Готово** кнопку, чтобы импортировать выбранные элементы.
 

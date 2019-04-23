@@ -13,16 +13,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17cfc810bbe8cfa303620b19c49941ba9085a849
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779363"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662569"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.
 
@@ -78,5 +77,5 @@ ms.locfileid: "54779363"
 |[Точка останова](../../ide/reference/toggle-breakpoint-command.md)|Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.|
 |[Команда Watch](../../ide/reference/watch-command.md)|Создает и открывает указанный экземпляр окна **Контрольное значение** .|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Командное окно](../../ide/reference/command-window.md) [поле Найти/Команда](../../ide/find-command-box.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

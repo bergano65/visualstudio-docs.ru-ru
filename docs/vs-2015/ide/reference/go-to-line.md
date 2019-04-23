@@ -14,17 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 324af42596017ebe474994e590ff48a19b8f0aaf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d047980a6d0b33dbe74182eec23b55aa4487799e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664574"
 ---
 # <a name="go-to-line"></a>Переход к строке
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Этого диалоговое окно позволяет перейти к определенной строке в активном документе. Чтобы перейти в это окно, откройте документ для редактирования, а затем выберите **Перейти** в меню **Правка**.  
   
  Номер строки (1–`n`)  

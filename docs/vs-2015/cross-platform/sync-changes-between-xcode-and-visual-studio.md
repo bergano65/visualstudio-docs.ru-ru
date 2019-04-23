@@ -8,16 +8,15 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: bb7b5ebe398b66a8ae28d7734d64ce67c8735a73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754918"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665536"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Изменения в синхронизации между XCode и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Компонент Microsoft Visual C++ для разработки мобильных приложений включает в себя функции удаленного взаимодействия для синхронизации работы между ПК и Mac. Когда компьютеры с Visual Studio и Mac связаны, для проектов приложений iOS в Visual Studio доступны новые возможности, позволяющие открыть проект в XCode, перемещать код между XCode и Visual Studio и очистить временный каталог проекта XCode.
 

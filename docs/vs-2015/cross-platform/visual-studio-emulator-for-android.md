@@ -8,17 +8,16 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ec7e6d3ee6d27c444d0904e750293a3d82c3ab4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b14283127aa4a3488c258f1101a43a4d6208df5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789860"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664267"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Эмулятор Visual Studio для Android — это приложение для настольного компьютера, которое эмулирует устройство Android. Он предоставляет виртуализированную среду, в которой доступны возможности отладки и тестирования приложений для Android без использования физического устройства. Он также предлагает изолированную среду для прототипов ваших приложений.  
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
@@ -111,6 +110,6 @@ ms.locfileid: "54789860"
   
 -   сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

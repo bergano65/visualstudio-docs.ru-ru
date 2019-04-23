@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792946"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665848"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Задача GenerateDeploymentManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Создает манифест развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Манифест развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] описывает развертывание приложения, определяя уникальный идентификатор для развертывания, признаки развертывания, такие как режим установки и оперативный режим, задавая параметры обновления приложения и расположения обновления, а также указывая соответствующий манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 ## <a name="parameters"></a>Параметры  
@@ -43,8 +42,8 @@ ms.locfileid: "54792946"
 |`DeploymentUrl`|Необязательный параметр `String` .<br /><br /> Указывает расположение обновлений для приложения. Если этот параметр не указан, то не определяется расположение обновления для приложения. Однако если параметр `UpdateEnabled` имеет значение `true`, то расположение обновления должно быть указано. Указанное значение должно быть полным URL-адресом или UNC-путем.|  
 |`Description`|Необязательный параметр `String` .<br /><br /> Указывает необязательное описание приложения.|  
 |`DisallowUrlActivation`|Необязательный параметр `Boolean` .<br /><br /> Указывает, нужно ли автоматически запускать приложение, когда оно открывается по URL-адресу. Если этот параметр имеет значение `true`, приложение можно запустить только из меню "Пуск". По умолчанию этот параметр имеет значение `false`. Этот входной параметр применяется, только если параметр `Install` имеет значение `true`.|  
-|`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает точку входа для создаваемой сборки манифеста. Для манифеста развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] этот входной параметр указывает манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> Для создания манифеста приложения в [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] [задаче GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) необходимо иметь `EntryPoint`. (Для сборки или собственного манифеста не требуется `EntryPoint`). Это требование было предписано ошибкой сборки: MSB3185 Не указана точка входа для манифеста.»<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] не выдает эту ошибку, если не задан параметр задачи `EntryPoint`. Вместо этого тег \<customHostSpecified> вставляется в качестве дочернего элемента для тега \<entryPoint>, например:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> В манифест приложения можно добавить зависимости DLL следующим образом:<br /><br /> 1.  Разрешите ссылки на сборки с помощью вызова <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Передайте выходные данные предыдущей задачи и самой сборки в <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Передайте зависимости с помощью параметра `Dependencies` в <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах во время установки ClickOnce.|  
+|`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает точку входа для создаваемой сборки манифеста. Для манифеста развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] этот входной параметр указывает манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> Для создания манифеста приложения в [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] [задаче GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) необходимо иметь `EntryPoint`. (Для сборки или собственного манифеста не требуется `EntryPoint`). Это требование было предписано ошибкой сборки: «MSB3185: Не указана точка входа для манифеста.»<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] не выдает эту ошибку, если не задан параметр задачи `EntryPoint`. Вместо этого тег \<customHostSpecified> вставляется в качестве дочернего элемента для тега \<entryPoint>, например:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> В манифест приложения можно добавить зависимости DLL следующим образом:<br /><br /> 1.  Разрешите ссылки на сборки с помощью вызова <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Передайте выходные данные предыдущей задачи и самой сборки в <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Передайте зависимости с помощью параметра `Dependencies` в <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`ErrorReportUrl`|(Необязательно [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах во время установки ClickOnce.|  
 |`InputManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входной XML-документ, который служит основой для генератора манифеста. Это позволяет структурированным данным, например пользовательским определениям манифеста, отражаться в выходном файле манифеста. Корневой элемент в XML-документе должен быть узлом сборки в пространстве имен asmv1.|  
 |`Install`|Необязательный параметр `Boolean` .<br /><br /> Определяет, является ли приложение установленным или предназначенным только для использования через Интернет. Если этот параметр имеет значение `true`, приложение будет установлено в пользовательском меню "Пуск" и его можно удалить, используя диалоговое окно "Установка и удаление программ". Если этот параметр имеет значение `false`, то приложение предназначено для использования онлайн на веб-странице. По умолчанию этот параметр имеет значение `true`.|  
 |`MapFileExtensions`|Необязательный параметр `Boolean` .<br /><br /> Определяет, используется ли сопоставление расширения имени DEPLOY-файла. Если этот параметр имеет значение `true`, то каждый файл программы публикуется с расширением имени DEPLOY-файла. Этот параметр полезен для защиты веб-сервера, чтобы ограничить количество расширений имен файлов, которые должны быть разблокированы, чтобы разрешить развертывание приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. По умолчанию этот параметр имеет значение `false`.|  
@@ -66,7 +65,7 @@ ms.locfileid: "54792946"
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.GenerateManifestBase>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список параметров класса Task см. в статье [Базовый класс Task](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)   
  [Задача SignFile](../msbuild/signfile-task.md)   
