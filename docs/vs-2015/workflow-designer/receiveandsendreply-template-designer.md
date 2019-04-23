@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74b3559849fe69da998f59c3caa6e38ff23b238b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9de3e8446250829d431dcbf33b14effd607ab545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075776"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Конструктор шаблона ReceiveAndSendReply
 **ReceiveAndSendReply** шаблон используется для создания пары предварительно настроенных <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> действий в <xref:System.Activities.Statements.Sequence> действия, которые соотносятся как часть обмен сообщениями запрос ответ шаблон на сервере.  
@@ -25,11 +25,11 @@ ms.locfileid: "59657523"
 ## <a name="the-receiveandsendreply-template"></a>Шаблон ReceiveAndSendReply  
  Добавление **ReceiveAndSendReply** шаблон выполнит все три операции Помимо создания <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> действий с <xref:System.Activities.Statements.Sequence> действия:  
 
-1.  Настраивает свойства <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> действия <xref:System.ServiceModel.Activities.Receive>.  
+1. Настраивает свойства <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> действия <xref:System.ServiceModel.Activities.Receive>.  
 
-2.  Привязывает свойство <xref:System.ServiceModel.Activities.SendReply.Request%2A> действия <xref:System.ServiceModel.Activities.Receive> к действию <xref:System.ServiceModel.Activities.Send>.  
+2. Привязывает свойство <xref:System.ServiceModel.Activities.SendReply.Request%2A> действия <xref:System.ServiceModel.Activities.Receive> к действию <xref:System.ServiceModel.Activities.Send>.  
 
-3.  Создает <xref:System.ServiceModel.Activities.CorrelationHandle> в качестве переменной в родительском действии.  
+3. Создает <xref:System.ServiceModel.Activities.CorrelationHandle> в качестве переменной в родительском действии.  
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Использование конструктора шаблонов ReceiveAndSendReply  
  **ReceiveAndSendReply** конструктора действий можно найти в **Messaging** категории **элементов**, который нажав **панели элементов**  вкладке [!INCLUDE[wfd2](../includes/wfd2-md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)  

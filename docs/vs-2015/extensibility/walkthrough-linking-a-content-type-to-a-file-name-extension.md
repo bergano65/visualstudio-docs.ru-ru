@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076619"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа контента с расширением имени файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ ms.locfileid: "58992573"
   
 ## <a name="creating-a-mef-project"></a>Создание проекта MEF  
   
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `ContentTypeTest`.  
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `ContentTypeTest`.  
   
-2.  В **source.extension.vsixmanifest** файл, перейдите к **активы** и задайте **тип** поле **Microsoft.VisualStudio.MefComponent**, **источника** поле **проект в текущем решении**и **проекта** на имя проекта.  
+2. В **source.extension.vsixmanifest** файл, перейдите к **активы** и задайте **тип** поле **Microsoft.VisualStudio.MefComponent**, **источника** поле **проект в текущем решении**и **проекта** на имя проекта.  
   
 ## <a name="defining-the-content-type"></a>Определение типа содержимого  
   
-1.  Добавьте файл класса с именем `FileAndContentTypes`.  
+1. Добавьте файл класса с именем `FileAndContentTypes`.  
   
-2.  Добавьте ссылки на следующие сборки:  
+2. Добавьте ссылки на следующие сборки:  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  Добавьте следующий `using` директивы.  
+3. Добавьте следующий `using` директивы.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ ms.locfileid: "58992573"
   
     ```  
   
-4.  Объявите статический класс, который содержит определения.  
+4. Объявите статический класс, который содержит определения.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  В этом классе Экспорт <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> с именем «hid» и объявить его базового определения, чтобы быть «text».  
+5. В этом классе Экспорт <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> с именем «hid» и объявить его базового определения, чтобы быть «text».  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ ms.locfileid: "58992573"
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>Связывание расширение имени файла с типом содержимого  
   
--   Чтобы сопоставить расширение имени файла данного типа содержимого, экспортировать <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , имеет расширение «.hid» и тип содержимого «скрыто».  
+- Чтобы сопоставить расширение имени файла данного типа содержимого, экспортировать <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , имеет расширение «.hid» и тип содержимого «скрыто».  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ ms.locfileid: "58992573"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Добавление типа содержимого к экспорту редактора  
   
-1.  Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1. Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Добавьте в класс, определенный в этой процедуре.  
+2. Добавьте в класс, определенный в этой процедуре.  
   
-3.  При экспорте класс расширения, добавление <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> типа «hid», к нему.  
+3. При экспорте класс расширения, добавление <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> типа «hid», к нему.  
   
     ```csharp  
     [Export]  

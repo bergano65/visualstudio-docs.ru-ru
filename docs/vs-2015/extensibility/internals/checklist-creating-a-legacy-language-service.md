@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077528"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "58979326"
   
 ## <a name="steps-for-creating-a-language-service"></a>Инструкции по созданию языковой службы  
   
-1.  Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
+1. Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
-    -   В пакете VSPackage, реализовывать <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс, чтобы предоставить службе языка.  
+    - В пакете VSPackage, реализовывать <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс, чтобы предоставить службе языка.  
   
-    -   Опубликовать службу языка в интегрированной среде разработки (IDE) в вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации.  
+    - Опубликовать службу языка в интегрированной среде разработки (IDE) в вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации.  
   
-2.  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса в классе службы основного языка.  
+2. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса в классе службы основного языка.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Интерфейс является начальной точкой взаимодействия между базовым редактором и языковой службы.  
   
@@ -121,7 +121,7 @@ ms.locfileid: "58979326"
   
    Предоставить контекст в редактор в одном из следующих способов:  
   
-  -   Задать контекст для меток текста, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс.  
+  - Задать контекст для меток текста, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс.  
   
   Задать все контекста пользователя, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс.  
   

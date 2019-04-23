@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075628"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Пошаговое руководство. Использование XSLT иерархии
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "59669449"
   
 ### <a name="procedure-title"></a>Заголовок процедуры  
   
-1.  Откройте XML-документ в редакторе Visual Studio. В этом примере используется следующий документ `collection.xml`.  
+1. Откройте XML-документ в редакторе Visual Studio. В этом примере используется следующий документ `collection.xml`.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ ms.locfileid: "59669449"
     </COLLECTION>  
     ```  
   
-2.  Добавьте следующий метод `xslincludefile.xsl`:  
+2. Добавьте следующий метод `xslincludefile.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ ms.locfileid: "59669449"
     </xsl:stylesheet>  
     ```  
   
-3.  Добавьте следующий файл `xslinclude.xsl`:  
+3. Добавьте следующий файл `xslinclude.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ ms.locfileid: "59669449"
     </xsl:stylesheet>  
     ```  
   
-4.  Добавьте точку останова в инструкцию: `<xsl:include href="xslincludefile.xsl" />`.  
+4. Добавьте точку останова в инструкцию: `<xsl:include href="xslincludefile.xsl" />`.  
   
-5.  Приступите к отладке.  
+5. Приступите к отладке.  
   
-6.  При остановке отладчика на инструкции `<xsl:include href="xslincludefile.xsl" />`, нажмите кнопку «Шаг с заходом». Заметьте, что отладка может быть продолжена в таблице стилей, на которую имеется ссылка. Иерархия видима, а конструктор отображает верный путь.  
+6. При остановке отладчика на инструкции `<xsl:include href="xslincludefile.xsl" />`, нажмите кнопку «Шаг с заходом». Заметьте, что отладка может быть продолжена в таблице стилей, на которую имеется ссылка. Иерархия видима, а конструктор отображает верный путь.  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)

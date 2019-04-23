@@ -20,19 +20,19 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a527a103b72d0026a7732a53b45d03793769058
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078711"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. отладку метода OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Службу Windows можно отлаживать, запустив ее и подключив отладчик к процессу службы. Дополнительные сведения см. в разделе [Как Отладка приложений служб Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Тем не менее, для отладки метода <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> службы Windows необходимо запустить отладчик внутри метода.  
   
-1.  Добавьте вызов <xref:System.Diagnostics.Debugger.Launch%2A> в начале метода `OnStart()`.  
+1. Добавьте вызов <xref:System.Diagnostics.Debugger.Launch%2A> в начале метода `OnStart()`.  
   
     ```csharp  
     protected override void OnStart(string[] args)  
@@ -41,19 +41,19 @@ ms.locfileid: "58990753"
      }  
     ```  
   
-2.  Запустите службу (можно использовать `net start`или запустить ее в окне **Службы** ).  
+2. Запустите службу (можно использовать `net start`или запустить ее в окне **Службы** ).  
   
      Должно появиться диалоговое окно такого вида.  
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Выберите **Да, отладить \<имя_службы>.**  
+3. Выберите **Да, отладить \<имя_службы>.**  
   
-4.  В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.  
+4. В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.  
   
      ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
-5.  Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()` .  
+5. Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()` .  
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   

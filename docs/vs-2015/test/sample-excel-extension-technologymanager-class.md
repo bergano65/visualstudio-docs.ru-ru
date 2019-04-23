@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078074"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "54779574"
 ## <a name="methods-to-get-an-element"></a>Методы получения элемента  
  Платформа закодированных тестов пользовательского интерфейса использует несколько важных методов для получения относящегося к технологии элемента путем указания дескриптора, точки на экране или элемента из другой технологии. Код этих методов понятен без объяснений. Базовые методы перечислены ниже.  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>Метод ParseQueryId  
  При создании закодированного теста пользовательского интерфейса можно указать значения свойств для некоторых или всех элементов управления в тесте. Эти значения используются средой тестирования для создания пар "имя-значение", которые называются свойствами поиска и применяются для поиска определенных элементов управления пользовательского интерфейса в процессе выполнения теста. Это переопределение метода <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> возвращает число, обозначающее уровень поддержки, который диспетчер технологий обеспечивает для элемента управления, представленного указанным дескриптором. Так как поиск элемента управления может выполняться несколько раз в течение теста, этот метод предоставляет диспетчеру технологий способ оптимизации синтаксического анализа свойств поиска для данного элемента управления. Этот метод также возвращает файл cookie, который может использоваться платформой для последующих поисков элемента управления. В этой реализации метода для синтаксического анализа свойств поиска используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
@@ -60,7 +60,7 @@ ms.locfileid: "54779574"
 ## <a name="getexcelelement-internal-method"></a>Внутренний метод GetExcelElement  
  Этот внутренний метод принимает дескриптор окна и сведения об элементе Excel и возвращает запрошенный элемент Excel.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>   
  <xref:System.NotSupportedException>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   

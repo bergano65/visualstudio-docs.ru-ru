@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание простейшей текстуры | Документация Майкрософт
+title: Практическое руководство. Создание простейшей текстуры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076803"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Практическое руководство. Создание простейшей текстуры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54767103"
   
  В этом документе описаны следующие действия.  
   
--   Задание размера текстуры  
+- Задание размера текстуры  
   
--   Задание цветов переднего плана и фона  
+- Задание цветов переднего плана и фона  
   
--   Использование альфа-канала (прозрачности)  
+- Использование альфа-канала (прозрачности)  
   
--   Использование инструментов **Заливка** и **Эллипс**  
+- Использование инструментов **Заливка** и **Эллипс**  
   
--   Задание свойств инструмента  
+- Задание свойств инструмента  
   
 ## <a name="creating-a-basic-texture"></a>Создание простейшей текстуры  
  С помощью редактора изображений можно создавать и изменять изображения и текстуры для игр и приложений.  
@@ -90,5 +90,5 @@ ms.locfileid: "54767103"
   
     В качестве следующего шага можно создать уровни MIP для этой текстуры. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение MIP-уровней](../designers/how-to-create-and-modify-mip-levels.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Image Editor](../designers/image-editor.md)

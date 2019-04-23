@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb2ffcb7d3cb14f4551f85b1bec702d56e94f92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075224"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Ошибка: не удается подключиться к SQL Server на удаленном компьютере
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Ошибка: Не удалось подключиться к SQL Server на удаленном компьютере
 Не удалось подключиться к SQL Server на удаленном компьютере *имя*. Доступ запрещен. Проверьте, что на удаленном компьютере установлен удаленный отладчик. Если удаленный компьютер не входит в домен, или если Visual Studio выполняется с локальной учетной записью, удаленный компьютер должен иметь учетную запись с тем же именем и паролем, что и локальная учетная запись.
 
 ### <a name="to-correct-this-error"></a>Исправление ошибки
 
--   См. статью об [удаленной отладке](../debugger/remote-debugging.md).
+- См. статью об [удаленной отладке](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

@@ -6,12 +6,12 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076710"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "58992432"
   
  **Примеры**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен  
+- / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Примечания  
   
--   Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.  
+- Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.  
   
--   Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.  
+- Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.  
   
 ## <a name="sample-output"></a>Пример полученных результатов  
  **Оболочки C#**  

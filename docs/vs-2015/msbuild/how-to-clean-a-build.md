@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075367"
 ---
 # <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "59661338"
   
 #### <a name="to-create-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
   
-1.  Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем `BuiltApp` в каталоге, содержащем файлы проекта и исходные файлы:  
+1. Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем `BuiltApp` в каталоге, содержащем файлы проекта и исходные файлы:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
+2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ ms.locfileid: "59661338"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  
   
--   Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
+- Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

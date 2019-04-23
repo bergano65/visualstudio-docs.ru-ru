@@ -1,5 +1,5 @@
 ---
-title: 'Способ: обновите представление | Документация Майкрософт'
+title: Практическое руководство. Обновите представление | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6a1b70326e2eca32c1be2c27382e55c51bc5f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075055"
 ---
-# <a name="how-to-refresh-the-view"></a>Практическое руководство. Обновление представления
+# <a name="how-to-refresh-the-view"></a>Практическое руководство. обновление представления
 Spy ++ создает «моментальный снимок» системных таблиц и обновляет представление, на основании этой информации. Очень важно периодически обновлять системные представления. При наличии представления Spy ++ откройте и не обновлялось представление, вы не увидите, этих процессов, потоков и windows, которые впоследствии создаются. Кроме того вы можете увидеть элементы, которые больше не существуют. **Обновить** команда доступна для всех представлений, за исключением представления сообщений.
 
 ### <a name="to-refresh-the-currently-active-view"></a>Для обновления активного представления
 
--   Выберите **обновить** из **окно** меню или нажмите кнопку **обновить** кнопку на панели инструментов.
+- Выберите **обновить** из **окно** меню или нажмите кнопку **обновить** кнопку на панели инструментов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Использование Spy++](../debugger/using-spy-increment.md)
 - [Представления SSpy ++](../debugger/spy-increment-views.md)
 - [Справочник по Spy++](../debugger/spy-increment-reference.md)

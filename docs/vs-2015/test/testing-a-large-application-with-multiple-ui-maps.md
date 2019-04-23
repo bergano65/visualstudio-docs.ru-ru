@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073895"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Тестирование крупного приложения с несколькими картами пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54775090"
 ## <a name="do-you-need-multiple-ui-maps"></a>Требуется ли вам несколько карт ИП?  
  Создайте несколько карт ИП в следующих ситуациях:  
   
--   Несколько комплексных наборов составных элементов управления ИП, которые вместе выполняют логическую операцию, например страница регистрации веб-сайта или страница покупки корзины для покупок.  
+- Несколько комплексных наборов составных элементов управления ИП, которые вместе выполняют логическую операцию, например страница регистрации веб-сайта или страница покупки корзины для покупок.  
   
--   Независимый набор элементов управления, доступ к которым обращается из различных точек приложения, например мастер с несколькими страницами операций. Если в мастере каждая страница сложная, можно создать отдельные карты ИП для каждой страницы.  
+- Независимый набор элементов управления, доступ к которым обращается из различных точек приложения, например мастер с несколькими страницами операций. Если в мастере каждая страница сложная, можно создать отдельные карты ИП для каждой страницы.  
   
 ## <a name="adding-multiple-ui-maps"></a>Добавление нескольких карт ИП  
   
@@ -138,7 +138,7 @@ namespace ContosoProject
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   

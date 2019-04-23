@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073206"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Практическое руководство. Создание расширения проекта SharePoint
   Создание расширения проекта, если вы хотите добавить функциональность в любой проект SharePoint, который открыт в Visual Studio. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ### <a name="to-create-a-project-extension"></a>Создание проекта расширения
 
-1.  Создайте проект библиотеки классов.
+1. Создайте проект библиотеки классов.
 
-2.  Добавьте ссылки на следующие сборки:
+2. Добавьте ссылки на следующие сборки:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Создайте класс, реализующий интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.
+3. Создайте класс, реализующий интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.
 
-4.  Добавить <xref:System.ComponentModel.Composition.ExportAttribute> к классу. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> тип конструктору атрибута.
+4. Добавить <xref:System.ComponentModel.Composition.ExportAttribute> к классу. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> тип конструктору атрибута.
 
-5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метода, используйте членами *projectService* параметра для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейс.
+5. В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метода, используйте членами *projectService* параметра для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейс.
 
 ## <a name="example"></a>Пример
  В следующем примере кода показано, как создать модуль простой проект, который обрабатывает большую часть событий проекта SharePoint, которые определяются <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейс. Чтобы протестировать код, создайте проект SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и затем добавить несколько проектов в решение, измените значения свойства проекта, удаления или исключения или проекта. Расширение уведомляет о событиях, написав сообщения **вывода** окна и **список ошибок** окна.
@@ -192,9 +192,9 @@ ms.locfileid: "56619385"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуются ссылки на следующие сборки:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [средства развертывания расширений для SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

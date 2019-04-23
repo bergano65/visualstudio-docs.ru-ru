@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c438514263d9934f70927b46c8d1c9130746a06f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77b50f5511f76cceda1827d2a36db7514daa6bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076020"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002. Не предоставляйте универсальные списки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58978848"
 ## <a name="rule-description"></a>Описание правила
  <xref:System.Collections.Generic.List%601?displayProperty=fullName> является универсальной коллекцией, предназначенный для повышения производительности и не для наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName> не содержит виртуальных членов, которые упрощают процесс изменить поведение унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны предоставляться вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа к одному из универсальных коллекций, которые разработаны для наследования.

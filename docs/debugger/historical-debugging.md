@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075328"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Отладка с ведением журнала (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ ms.locfileid: "56689269"
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Как приступить к использованию отладки с ведением журнала?
 
- Инструмент IntelliTrace включен по умолчанию. Все, что нужно сделать — решить, какие события и вызовы функций представляют интерес для вас, и нужно ли просмотреть моментальные снимки состояния всего приложения. Дополнительные сведения об определении нужных компонентов см. в разделе [Возможности IntelliTrace](../debugger/intellitrace-features.md). Поддержка функций зависит от языка и приложения типа.
+Инструмент IntelliTrace включен по умолчанию. Все, что нужно сделать — решить, какие события и вызовы функций представляют интерес для вас, и нужно ли просмотреть моментальные снимки состояния всего приложения. Дополнительные сведения об определении нужных компонентов см. в разделе [Возможности IntelliTrace](../debugger/intellitrace-features.md). Поддержка функций зависит от языка и приложения типа.
 
- - Чтобы просмотреть моментальные снимки отладки с ведением журнала, см. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md)
- - Узнайте, как проверять значения переменных и навигации по коду, см. в разделе [проверить свое приложение с помощью отладки с ведением журнала](../debugger/historical-debugging-inspect-app.md)
- - Дополнительные сведения об отладке с помощью событий IntelliTrace, см. в разделе [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Чтобы просмотреть моментальные снимки отладки с ведением журнала, см. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md)
+- Узнайте, как проверять значения переменных и навигации по коду, см. в разделе [проверить свое приложение с помощью отладки с ведением журнала](../debugger/historical-debugging-inspect-app.md)
+- Дополнительные сведения об отладке с помощью событий IntelliTrace, см. в разделе [Пошаговое руководство: С помощью IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

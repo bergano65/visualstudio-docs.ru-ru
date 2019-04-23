@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074012"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Практическое руководство. Кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения в кэшированные данные не сохраняются автоматически. Можно сохранить изменения в кэшированных данных путем переопределения двух методов в проекте.
@@ -30,13 +30,13 @@ ms.locfileid: "56644527"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Кэширование данных в документ Word, защищенным паролем
 
-1.  В `ThisDocument` класса, пометьте открытое поле или свойство, должен быть помещен в кэш. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).
+1. В `ThisDocument` класса, пометьте открытое поле или свойство, должен быть помещен в кэш. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).
 
-2.  Переопределить <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> метод в `ThisDocument` класса и снять защиту с документа.
+2. Переопределить <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> метод в `ThisDocument` класса и снять защиту с документа.
 
      При сохранении документа, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает этот метод, чтобы предоставить возможность снять защиту документа. В результате изменения кэшированных данных для сохранения.
 
-3.  Переопределить <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> метод в `ThisDocument` класса и повторно применить защиту к документу.
+3. Переопределить <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> метод в `ThisDocument` класса и повторно применить защиту к документу.
 
      После сохранения документа [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает этот метод, чтобы предоставить возможность повторно применить защиту к документу.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644527"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Для кэширования данных в книге Excel, который защищен с помощью пароля
 
-1.  В `ThisWorkbook` класс или один из `Sheet` *n* классы, пометьте открытое поле или свойство, должен быть помещен в кэш. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).
+1. В `ThisWorkbook` класс или один из `Sheet` *n* классы, пометьте открытое поле или свойство, должен быть помещен в кэш. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).
 
-2.  Переопределить <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> метод в `ThisWorkbook` класса и снять защиту с книги.
+2. Переопределить <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> метод в `ThisWorkbook` класса и снять защиту с книги.
 
      При сохранении книги [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает этот метод, чтобы предоставить возможность снять защиту книги. В результате изменения кэшированных данных для сохранения.
 
-3.  Переопределить <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> метод в `ThisWorkbook` класса и повторно применить защиту к документу.
+3. Переопределить <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> метод в `ThisWorkbook` класса и повторно применить защиту к документу.
 
      После сохранения книги [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает этот метод, чтобы предоставить возможность повторно применить защиту к книге.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078881"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58993451"
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Чтобы создать пользовательский установщик приложений ClickOnce  
   
-1.  В приложении ClickOnce добавьте ссылки на System.Deployment и System.Windows.Forms.  
+1. В приложении ClickOnce добавьте ссылки на System.Deployment и System.Windows.Forms.  
   
-2.  Добавьте новый класс в приложение и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.  
+2. Добавьте новый класс в приложение и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.  
   
-3.  Добавьте следующий `Imports` или `using` инструкции в начало нового класса.  
+3. Добавьте следующий `Imports` или `using` инструкции в начало нового класса.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -51,7 +51,7 @@ ms.locfileid: "58993451"
     using System.Windows.Forms;  
     ```  
   
-4.  Добавьте следующие методы в класс.  
+4. Добавьте следующие методы в класс.  
   
      Эти методы вызывают <xref:System.Deployment.Application.InPlaceHostingManager> способы загрузки манифеста развертывания, обеспечения соответствующих разрешений, попросите пользователя для разрешения установить, а затем загрузите и установите приложения в кэш ClickOnce. Пользовательский установщик можно указать, что ClickOnce-приложения является предварительно доверенным или отложить решение о доверии <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> вызова метода. Этот код предварительно доверяет приложение.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58993451"
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  Попытка установки из кода, вызовите `InstallApplication` метод. Например, если класс назван `MyInstaller`, можно назвать `InstallApplication` следующим образом.  
+5. Попытка установки из кода, вызовите `InstallApplication` метод. Например, если класс назван `MyInstaller`, можно назвать `InstallApplication` следующим образом.  
   
     ```vb  
     Dim installer As New MyInstaller()  
