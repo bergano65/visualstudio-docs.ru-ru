@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Применение шейдера к трехмерной модели | Документация Майкрософт
+title: Практическое руководство. Применение шейдера к трехмерной модели | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,21 +9,21 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094781"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Как выполнить Применение шейдера к трехмерной модели
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Практическое руководство. Применение шейдера к трехмерной модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе показано, как использовать редактор моделей для применения шейдера DGSL к трехмерной модели.  
   
  В этом документе описана следующая операция:  
   
--   Применение шейдера к трехмерной модели  
+- Применение шейдера к трехмерной модели  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Применение шейдера к трехмерной модели  
  К трехмерной модели можно применить эффект шейдера для придания ей интересного внешнего вида.  
@@ -42,7 +42,7 @@ ms.locfileid: "54793469"
   
    После применения шейдера к модели его можно открыть в конструкторе шейдеров, выбрав модель, и нажав кнопку с многоточием (**...** ) в окне **Свойства** для свойства **(Дополнительно)** из группы свойств **Эффект**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md)   
  [Практическое руководство. Создание простейшего шейдера цвета](../designers/how-to-create-a-basic-color-shader.md)   
  [Редактор моделей](../designers/model-editor.md)   

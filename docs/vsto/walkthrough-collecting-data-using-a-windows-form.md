@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116138"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство. Сбор данных с помощью формы Windows
   В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.
@@ -32,9 +32,9 @@ ms.locfileid: "56629967"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56629967"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет проект **WinFormInput** в **обозреватель решений**.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629967"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Добавление именованного диапазона в Sheet1
 
-1.  Выберите ячейку **A1** в `Sheet1`.
+1. Выберите ячейку **A1** в `Sheet1`.
 
-2.  В поле **Имя** введите **formInput**.
+2. В поле **Имя** введите **formInput**.
 
      Поле **Имя** находится слева от строки формул над столбцом **A** листа.
 
-3.  Нажмите клавишу **ВВОД**.
+3. Нажмите клавишу **ВВОД**.
 
      Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> добавляется в ячейку **A1**. Видимые изменения на листе отсутствуют, но значение **formInput** появляется в поле **Имя** (над листом слева) и в окне **Свойства** при выборе ячейки **A1** .
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629967"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист
 
-1.  Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.
+1. Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.
 
-2.  Дважды щелкните кнопку, чтобы открыть файл кода с добавленным обработчиком событий <xref:System.Windows.Forms.Control.Click> кнопки.
+2. Дважды щелкните кнопку, чтобы открыть файл кода с добавленным обработчиком событий <xref:System.Windows.Forms.Control.Click> кнопки.
 
-3.  Добавьте код в обработчик событий для приема входных данных из текстового поля, передачи их в функцию `WriteStringToCell`, а затем закрытия формы.
+3. Добавьте код в обработчик событий для приема входных данных из текстового поля, передачи их в функцию `WriteStringToCell`, а затем закрытия формы.
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629967"
 
 ### <a name="to-test-your-workbook"></a>Проверка книги
 
-1.  Нажмите клавишу **F5** для запуска проекта.
+1. Нажмите клавишу **F5** для запуска проекта.
 
-2.  Убедитесь, что форма Windows Forms появилась.
+2. Убедитесь, что форма Windows Forms появилась.
 
-3.  Введите **Hello World** в текстовом поле и нажмите кнопку **ОК**.
+3. Введите **Hello World** в текстовом поле и нажмите кнопку **ОК**.
 
-4.  Убедитесь, что сообщение **Hello World** появилось в ячейке **A1** листа.
+4. Убедитесь, что сообщение **Hello World** появилось в ячейке **A1** листа.
 
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве описываются основные принципы отображения формы Windows Forms и передачи данных в лист. Вам может потребоваться выполнить другие задачи, приведенные ниже.
 
--   Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
--   Изменения пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).
+- Изменения пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>См. также
 - [Разработка решений Office](../vsto/developing-office-solutions.md)

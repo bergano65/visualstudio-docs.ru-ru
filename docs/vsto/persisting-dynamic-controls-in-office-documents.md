@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117984"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Сохранение динамических элементов управления в документах Office
 
@@ -76,11 +76,11 @@ ms.locfileid: "54863517"
 
 Удаленные элементы управления Windows Forms можно повторно создать при повторном открытии документа. Для этого в решении следует выполнять следующие задачи.
 
-1.  Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке уровня документа можно сохранить данные в кэш данных в документе. В надстройке VSTO можно сохранить данные пользовательской XML-части в документе.
+1. Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке уровня документа можно сохранить данные в кэш данных в документе. В надстройке VSTO можно сохранить данные пользовательской XML-части в документе.
 
-2.  Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проекте уровня документа это можно сделать в обработчиках `Sheet`*n*`_Startup` или `ThisDocument_Startup` . В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проекте уровня документа это можно сделать в обработчиках `Sheet`*n*`_Startup` или `ThisDocument_Startup` . В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-###  <a name="removingActiveX"></a> Удаление оболочек ActiveX в надстройке
+### <a name="removingActiveX"></a> Удаление оболочек ActiveX в надстройке
 
 При добавлении динамических элементов управления Windows Forms в документы с помощью надстройки VSTO, оболочки ActiveX для элементов управления можно не появлялись в документе при следующем открытии одним из следующих способов.
 

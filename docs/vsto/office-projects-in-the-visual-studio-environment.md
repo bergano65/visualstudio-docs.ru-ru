@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091022"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Проекты Office в среде Visual Studio
   Разработка проектов Microsoft Office аналогична разработке в Visual Studio проектов других типов, таких как проекты Windows Forms. При создании или открытии проекта Office элементы проекта отображаются в **обозревателе решений**. Для проектов уровня документа документ (документ Word или книга Excel) открывается в среде Visual Studio и используется в качестве визуального конструктора.
@@ -73,7 +73,7 @@ ms.locfileid: "54865987"
 ### <a name="temporary-certificates"></a>Временные сертификаты
  Проекты Office также содержат временный сертификат с именем *имя_проекта*_TemporaryKey.pfx. Этот сертификат служит для подписи манифестов приложения и развертывания проекта во время разработки. Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md) и [решений Office, защита](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Скрытые файлы проекта
+### <a name="hiddenfiles"></a> Скрытые файлы проекта
  По умолчанию несколько файлов проекта скрыты. Эти файлы создаются средой Visual Studio и зависят от типа проекта. Для отображения скрытых файлов нажмите кнопку **Показать все файлы** в **обозревателе решений**.
 
  Не вносите изменения в скрытые файлы проекта. Изменение этих файлов не поддерживается и может привести к повреждению проекта. Скрытые файлы проекта заново создаются при внесении определенных изменений в документ. Если в скрытый файл проекта внести изменения вручную, эти изменения будут потеряны при следующем создании файла.

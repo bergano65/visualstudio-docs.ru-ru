@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089267"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Отслеживание выделения в окне свойств
 Если вы хотите работать с **свойства** окна или **свойство** страниц, например, формы, текст или выделения, для которого требуется просмотреть свойства, то необходимо иметь полное представление о том, как вы Координируйте выбора. Например необходимо знать, есть ли у вас выбрать один элемент или множественный выбор. Затем необходимо объявлять тип выделения (одному или нескольким) в интегрированной среде разработки с помощью <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> интерфейс. Этот интерфейс предоставляет сведения, необходимые **свойства** окна.  
   
 ### <a name="to-announce-selection-to-the-environment"></a>Рады сообщить о выбора в среде  
   
-1.  Вызовите `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
+1. Вызовите `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
   
-    1.  Чтобы сделать это, используйте указатель сайта передал в представление при его создании.  
+    1. Чтобы сделать это, используйте указатель сайта передал в представление при его создании.  
   
-    2.  Вызовите `QueryService` из представления для `SID_STrackSelection` службы.  
+    2. Вызовите `QueryService` из представления для `SID_STrackSelection` службы.  
   
          Возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> метод каждый раз при изменении выбранные параметры и передать указатель на объект, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> метод каждый раз при изменении выбранные параметры и передать указатель на объект, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
      Объект-контейнер выделения можно использовать один или несколько выбранных элементов и содержит сведения о выборе в `IDispatch` объекта. Вызов <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> метод уведомляет **свойства** окна, который был выделен. **Свойства** окно будет использовать объекты при <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> для определения ли место один или несколько выбранных элементов, и каковы выбранных элементов для фактического объекта.  
   

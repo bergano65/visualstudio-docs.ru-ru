@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116788"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Отладка приложений ASP.NET и AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Отладка веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] подобна отладке приложений Windows Form или отладке любого другого приложения Windows, поскольку оба типа приложений содержат элементы управления и события. Однако существуют основные различия между двумя типами приложений:  
   
--   Выполнять отслеживание состояния более сложно, чем в веб-приложении.  
+- Выполнять отслеживание состояния более сложно, чем в веб-приложении.  
   
--   В приложениях Windows код для отладки в большинстве случаев расположен в одном месте. В веб-приложениях код может быть расположен на клиенте или на сервере. Если код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] полностью расположен на сервере, то код JavaScript или [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] может быть расположен на клиенте.  
+- В приложениях Windows код для отладки в большинстве случаев расположен в одном месте. В веб-приложениях код может быть расположен на клиенте или на сервере. Если код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] полностью расположен на сервере, то код JavaScript или [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] может быть расположен на клиенте.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Подготовка к отладке ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
