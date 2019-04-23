@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1235c8b1bb7b815b5f26e0ffb744c31a3575ba81
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064002"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Циклическая ссылка в аргументе значения не поддерживается
 Предпринята попытка вызвать `JSON.stringify` со значением, которое является недопустимым. `value` Аргументов, массив или объект, содержит циклическую ссылку.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Удалите циклическую ссылку из аргумента.  
+- Удалите циклическую ссылку из аргумента.  
   
 ## <a name="example"></a>Пример  
  В данном примере кода приводит к ошибке времени выполнения, поскольку `john` содержит ссылку на `mary` и `mary` содержит ссылку на `john`. Чтобы удалить циклическую ссылку, либо удалите или свойство `brother` из `mary` объекта или `sister` свойства из `john` объекта.  

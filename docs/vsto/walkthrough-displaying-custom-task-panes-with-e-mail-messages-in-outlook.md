@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69c68397c8695fd0d9c3c1ef48a38e316c537641
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062561"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Пошаговое руководство. Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
   В этом пошаговом руководстве показано, как отобразить уникальный экземпляр настраиваемой области задач для каждого созданного или открытого сообщения электронной почты сообщения. Пользователи могут отображать или скрывать настраиваемую область задач с помощью кнопки на ленте каждого сообщения электронной почты.
@@ -35,17 +35,17 @@ ms.locfileid: "56606450"
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
--   Конструирование пользовательского интерфейса настраиваемой области задач.
+- Конструирование пользовательского интерфейса настраиваемой области задач.
 
--   Создание пользовательского интерфейса настраиваемой ленты.
+- Создание пользовательского интерфейса настраиваемой ленты.
 
--   Отображение пользовательского интерфейса настраиваемой ленты с сообщениями электронной почты.
+- Отображение пользовательского интерфейса настраиваемой ленты с сообщениями электронной почты.
 
--   Создание класса для управления окнами инспектора и настраиваемыми областями задач.
+- Создание класса для управления окнами инспектора и настраиваемыми областями задач.
 
--   Инициализация и освобождение ресурсов, используемых надстройкой VSTO.
+- Инициализация и освобождение ресурсов, используемых надстройкой VSTO.
 
--   Синхронизация выключателя на ленте с настраиваемой областью задач.
+- Синхронизация выключателя на ленте с настраиваемой областью задач.
 
 > [!NOTE]
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -64,7 +64,7 @@ ms.locfileid: "56606450"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект **надстройки Outlook** с именем **OutlookMailItemTaskPane**. Используйте шаблон проекта **Надстройка Outlook** . Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект **надстройки Outlook** с именем **OutlookMailItemTaskPane**. Используйте шаблон проекта **Надстройка Outlook** . Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода *ThisAddIn.cs* или *ThisAddIn.vb* и добавляет проект **OutlookMailItemTaskPane** в **обозреватель решений**.
 
@@ -73,47 +73,47 @@ ms.locfileid: "56606450"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Проектирование пользовательского интерфейса настраиваемой области задач
 
-1.  В **обозревателе решений**, щелкните проект **OutlookMailItemTaskPane** .
+1. В **обозревателе решений**, щелкните проект **OutlookMailItemTaskPane** .
 
-2.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.
+2. В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.
 
-3.  В диалоговом окне **Добавление нового элемента** измените имя нового пользовательского элемента управления на **TaskPaneControl**, а затем нажмите кнопку **Добавить**.
+3. В диалоговом окне **Добавление нового элемента** измените имя нового пользовательского элемента управления на **TaskPaneControl**, а затем нажмите кнопку **Добавить**.
 
      Пользовательский элемент управления откроется в конструкторе.
 
-4.  Перетащите элемент управления **TextBox** со вкладки **Стандартные элементы управления**на **панели элементов** в пользовательский элемент управления.
+4. Перетащите элемент управления **TextBox** со вкладки **Стандартные элементы управления**на **панели элементов** в пользовательский элемент управления.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Проектирование пользовательского интерфейса ленты
  Одна из целей для данной надстройки VSTO — предоставить пользователям способ скрывать и отображать настраиваемую область задач с ленты каждого сообщения электронной почты. Чтобы обеспечить пользовательский интерфейс, создайте пользовательский интерфейс настраиваемой ленты, отображающий выключатель, который пользователь может щелкнуть, чтобы отобразить или скрыть настраиваемую область задач.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Создание пользовательского интерфейса настраиваемой ленты
 
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
+2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
 
-3.  Измените имя новой ленты на **ManageTaskPaneRibbon**и нажмите кнопку **Добавить**.
+3. Измените имя новой ленты на **ManageTaskPaneRibbon**и нажмите кнопку **Добавить**.
 
      В конструкторе ленты откроется файл *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* и отобразятся вкладка и группа, используемые по умолчанию.
 
-4.  В конструкторе ленты щелкните группу **group1**.
+4. В конструкторе ленты щелкните группу **group1**.
 
-5.  В окне **Свойства** задайте для свойства **Label** значение **Диспетчер области задач**.
+5. В окне **Свойства** задайте для свойства **Label** значение **Диспетчер области задач**.
 
-6.  Перетащите элемент управления ToggleButton со вкладки **Элементы управления ленты Office** на **панели элементов**в группу **Диспетчер области задач** .
+6. Перетащите элемент управления ToggleButton со вкладки **Элементы управления ленты Office** на **панели элементов**в группу **Диспетчер области задач** .
 
-7.  Нажмите **toggleButton1**.
+7. Нажмите **toggleButton1**.
 
-8.  В окне **Свойства** задайте в свойстве **Label** значение **Показать область задач**.
+8. В окне **Свойства** задайте в свойстве **Label** значение **Показать область задач**.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Отображать пользовательский интерфейс ленты с сообщениями электронной почты
  Настраиваемая область задач, которую вы создаете в этом пошаговом руководстве, должна появляться только с окнами инспектора, содержащими сообщения электронной почты. Поэтому задайте свойства таким образом, чтобы ваш пользовательский интерфейс настраиваемой ленты отображался только с этими окнами.
 
 ### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Для отображения пользовательского интерфейса настраиваемой ленты с сообщениями электронной почты
 
-1.  В конструкторе лент щелкните ленту **ManageTaskPaneRibbon** .
+1. В конструкторе лент щелкните ленту **ManageTaskPaneRibbon** .
 
-2.  В окне **Свойства** щелкните раскрывающийся список рядом со свойством **RibbonType**, и выберите **Microsoft.Outlook.Mail.Compose** и **Microsoft.Outlook.Mail.Read**.
+2. В окне **Свойства** щелкните раскрывающийся список рядом со свойством **RibbonType**, и выберите **Microsoft.Outlook.Mail.Compose** и **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Создание класса для управления окнами инспектора и настраиваемыми областями задач
  Существует несколько случаев, в которых надстройка VSTO должна определить какая настраиваемая область задач связан с указанном сообщении электронной почты. Это следующие случаи.
@@ -128,34 +128,34 @@ ms.locfileid: "56606450"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Создание класса для управления окнами инспектора и настраиваемыми областями задач
 
-1.  В **обозревателе решений**щелкните правой кнопкой мыши файл *ThisAddIn.cs* или *ThisAddIn.vb* и выберите в контекстном меню команду **Просмотреть код**.
+1. В **обозревателе решений**щелкните правой кнопкой мыши файл *ThisAddIn.cs* или *ThisAddIn.vb* и выберите в контекстном меню команду **Просмотреть код**.
 
-2.  Добавьте следующие инструкции в начало файла.
+2. Добавьте следующие инструкции в начало файла.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3.  Добавьте следующий код в файл *ThisAddIn.cs* или *ThisAddIn.vb* за пределами класса `ThisAddIn` (для Visual C# добавьте этот код в пространство имен `OutlookMailItemTaskPane` ). Класс `InspectorWrapper` управляет парой объектов <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> . Вы завершите определение этого класса в следующих шагах.
+3. Добавьте следующий код в файл *ThisAddIn.cs* или *ThisAddIn.vb* за пределами класса `ThisAddIn` (для Visual C# добавьте этот код в пространство имен `OutlookMailItemTaskPane` ). Класс `InspectorWrapper` управляет парой объектов <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> . Вы завершите определение этого класса в следующих шагах.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4.  Добавьте следующий конструктор после кода, добавленного на предыдущем шаге. Этот конструктор создает и инициализирует новую настраиваемую область задач, связанную с переданным объектом <xref:Microsoft.Office.Interop.Outlook.Inspector> . В C# этот конструктор также присоединяет обработчики событий к событию <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Inspector> и к событию <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> объекта <xref:Microsoft.Office.Tools.CustomTaskPane> .
+4. Добавьте следующий конструктор после кода, добавленного на предыдущем шаге. Этот конструктор создает и инициализирует новую настраиваемую область задач, связанную с переданным объектом <xref:Microsoft.Office.Interop.Outlook.Inspector> . В C# этот конструктор также присоединяет обработчики событий к событию <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Inspector> и к событию <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> объекта <xref:Microsoft.Office.Tools.CustomTaskPane> .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5.  Добавьте следующий метод после кода, добавленного на предыдущем шаге. Этот метод является обработчиком событий для события <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> объекта <xref:Microsoft.Office.Tools.CustomTaskPane> , содержащегося в классе `InspectorWrapper` . Этот код обновляет состояние выключателя всякий раз, когда пользователь открывает или закрывает настраиваемую область задач.
+5. Добавьте следующий метод после кода, добавленного на предыдущем шаге. Этот метод является обработчиком событий для события <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> объекта <xref:Microsoft.Office.Tools.CustomTaskPane> , содержащегося в классе `InspectorWrapper` . Этот код обновляет состояние выключателя всякий раз, когда пользователь открывает или закрывает настраиваемую область задач.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6.  Добавьте следующий метод после кода, добавленного на предыдущем шаге. Этот метод является обработчиком событий для <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> событие <xref:Microsoft.Office.Interop.Outlook.Inspector> , содержащий текущее сообщение электронной почты. Обработчик событий освобождает ресурсы при закрытии сообщения электронной почты. Он также удаляет текущую область задач из коллекции `CustomTaskPanes` . Это помогает предотвратить появление нескольких экземпляров настраиваемой области задач при открытии следующего сообщения электронной почты.
+6. Добавьте следующий метод после кода, добавленного на предыдущем шаге. Этот метод является обработчиком событий для <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> событие <xref:Microsoft.Office.Interop.Outlook.Inspector> , содержащий текущее сообщение электронной почты. Обработчик событий освобождает ресурсы при закрытии сообщения электронной почты. Он также удаляет текущую область задач из коллекции `CustomTaskPanes` . Это помогает предотвратить появление нескольких экземпляров настраиваемой области задач при открытии следующего сообщения электронной почты.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
 
-7.  Добавьте следующий код после кода, добавленного на предыдущем шаге. Далее в этом пошаговом руководстве вы будете вызывать это свойство из метода в пользовательском интерфейсе настраиваемой ленты, чтобы отобразить или скрыть настраиваемую область задач.
+7. Добавьте следующий код после кода, добавленного на предыдущем шаге. Далее в этом пошаговом руководстве вы будете вызывать это свойство из метода в пользовательском интерфейсе настраиваемой ленты, чтобы отобразить или скрыть настраиваемую область задач.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
@@ -201,23 +201,23 @@ ms.locfileid: "56606450"
 
 ### <a name="to-build-your-project"></a>Построение проекта
 
-1.  В **обозревателе решений**щелкните проект **OutlookMailItemTaskPane** правой кнопкой мыши и выберите пункт **Сборка**. Убедитесь, что проект компилируется без ошибок.
+1. В **обозревателе решений**щелкните проект **OutlookMailItemTaskPane** правой кнопкой мыши и выберите пункт **Сборка**. Убедитесь, что проект компилируется без ошибок.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Синхронизация выключателя на ленте с настраиваемой области задач
  Выключатель будет выглядеть как нажатый, когда область задач отображена, и как не нажатый, когда область задач скрыта. Чтобы синхронизировать состояние этой кнопки с настраиваемой областью задач, измените обработчик событий <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> этого выключателя.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Синхронизация настраиваемой области задач с выключателем
 
-1.  В конструкторе ленты дважды щелкните выключатель **Показать область задач** .
+1. В конструкторе ленты дважды щелкните выключатель **Показать область задач** .
 
      Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает файл *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* в редакторе кода.
 
-2.  Добавьте следующие инструкции в начале файла *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* .
+2. Добавьте следующие инструкции в начале файла *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3.  Замените обработчик событий `toggleButton1_Click` следующим кодом. Когда пользователь нажимает выключатель, этот метод отображает или скрывает настраиваемую область задач, связанную с текущим окном инспектора.
+3. Замените обработчик событий `toggleButton1_Click` следующим кодом. Когда пользователь нажимает выключатель, этот метод отображает или скрывает настраиваемую область задач, связанную с текущим окном инспектора.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -262,11 +262,11 @@ ms.locfileid: "56606450"
 ## <a name="next-steps"></a>Следующие шаги
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:
 
--   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).
+- Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).
 
--   Автоматизация приложения Microsoft Office с помощью настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Автоматизация приложения Microsoft Office с помощью настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
--   Создание в Excel кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Создание в Excel кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
 ## <a name="see-also"></a>См. также
 - [Настраиваемые области задач](../vsto/custom-task-panes.md)

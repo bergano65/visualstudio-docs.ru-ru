@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065445"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58989782"
 ## <a name="project-loading-priorities"></a>Загрузка приоритетов проектов  
  Visual Studio определяет приоритеты загрузки четыре различных проекта:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (по умолчанию): при открытии решения, проекты загружаются асинхронно. Если этот приоритет имеет значение на незагруженный проект после решение уже открыто, проект будет загружен в следующей точке простоя.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (по умолчанию): при открытии решения, проекты загружаются асинхронно. Если этот приоритет имеет значение на незагруженный проект после решение уже открыто, проект будет загружен в следующей точке простоя.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: при открытии решения, проекты загружаются в фоновом режиме, позволяя пользователю доступа к проектам, так как они загружаются без необходимости ждать, пока все проекты загружены.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: при открытии решения, проекты загружаются в фоновом режиме, позволяя пользователю доступа к проектам, так как они загружаются без необходимости ждать, пока все проекты загружены.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: проекты загружаются в том случае, когда они доступны. Проект осуществляется в том случае, когда пользователь разворачивает узел проекта в обозревателе решений при открытии файла, относящихся к проекту при открытии решения, так как он находится в список открытых документов (находящегося в файле пользовательских параметров решения) или другой проект то есть загрузки имеет зависимость от проекта. Этот тип проекта не загружается автоматически перед запуском процесса построения; Диспетчер загрузки решения несет ответственность за то, что все необходимые проекты были загружены. Эти проекты также должны загружаться перед началом поиска и замены в файлах по всему решению.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: проекты загружаются в том случае, когда они доступны. Проект осуществляется в том случае, когда пользователь разворачивает узел проекта в обозревателе решений при открытии файла, относящихся к проекту при открытии решения, так как он находится в список открытых документов (находящегося в файле пользовательских параметров решения) или другой проект то есть загрузки имеет зависимость от проекта. Этот тип проекта не загружается автоматически перед запуском процесса построения; Диспетчер загрузки решения несет ответственность за то, что все необходимые проекты были загружены. Эти проекты также должны загружаться перед началом поиска и замены в файлах по всему решению.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: проекты могут не быть загружены, если пользователь явно запрашивает такое. Это происходит, когда проекты находятся выгружен явным образом.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: проекты могут не быть загружены, если пользователь явно запрашивает такое. Это происходит, когда проекты находятся выгружен явным образом.  
   
 ## <a name="creating-a-solution-load-manager"></a>Создание диспетчера загрузки решения  
  Разработчики могут создавать загрузки решения диспетчера путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> встречалась Visual Studio, что диспетчер загрузки решения активен.  
@@ -80,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>Обработка событий загрузки решения  
  Чтобы подписаться на события при загрузке решения, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> после активации ваш диспетчер загрузки решения. Если вы реализуете <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, может отвечать на события, относящиеся к другому проекту, загрузка приоритеты.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Этот код выполняется до открытия решения. Его можно использовать для изменения проекта, загрузка приоритет для проектов в решении.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Этот код выполняется до открытия решения. Его можно использовать для изменения проекта, загрузка приоритет для проектов в решении.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Этот код выполняется после полной загрузки решения, но перед фоновой загрузка проектов начинается снова. Например пользователь возможно входил в проекте с приоритетом нагрузки, LoadIfNeeded или диспетчер загрузки решения может измениться приоритет загрузки проекта, чтобы BackgroundLoad, который бы запуск фоновой загрузки этого проекта.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Этот код выполняется после полной загрузки решения, но перед фоновой загрузка проектов начинается снова. Например пользователь возможно входил в проекте с приоритетом нагрузки, LoadIfNeeded или диспетчер загрузки решения может измениться приоритет загрузки проекта, чтобы BackgroundLoad, который бы запуск фоновой загрузки этого проекта.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Этот код выполняется после изначально полностью загружено решение, ли имеется диспетчер загрузки решения. Она также возникает после загрузки фона или запросу загрузки всякий раз, когда оно становится полностью загружен. В то же время <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> повторной активации.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Этот код выполняется после изначально полностью загружено решение, ли имеется диспетчер загрузки решения. Она также возникает после загрузки фона или запросу загрузки всякий раз, когда оно становится полностью загружен. В то же время <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> повторной активации.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Этот код выполняется перед загрузкой проекта (или проектов). Чтобы убедиться, что другие фоновые процессы завершены перед загрузкой проектов, задайте `pfShouldDelayLoadToNextIdle` для **true**.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Этот код выполняется перед загрузкой проекта (или проектов). Чтобы убедиться, что другие фоновые процессы завершены перед загрузкой проектов, задайте `pfShouldDelayLoadToNextIdle` для **true**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Это возникает, когда данный пакет проекты будут загружены. Если `fIsBackgroundIdleBatch` имеет значение true, проекты должны быть загружены в фоновом режиме; Если `fIsBackgroundIdleBatch` имеет значение false, проекты должны быть загружены синхронно, в результате запроса пользователя, например при развертывании проекта в обозревателе решений. Это можно реализовать для выполнения ресурсоемких работы, в противном случае будет необходимо выполнить <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Это возникает, когда данный пакет проекты будут загружены. Если `fIsBackgroundIdleBatch` имеет значение true, проекты должны быть загружены в фоновом режиме; Если `fIsBackgroundIdleBatch` имеет значение false, проекты должны быть загружены синхронно, в результате запроса пользователя, например при развертывании проекта в обозревателе решений. Это можно реализовать для выполнения ресурсоемких работы, в противном случае будет необходимо выполнить <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Этот код выполняется после загрузки пакета проектов.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Этот код выполняется после загрузки пакета проектов.  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Обнаружение и управление решением и загрузкой проекта  
  Чтобы обнаружить состояние загрузки проектов и решений, вызывается <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> со следующими значениями:  

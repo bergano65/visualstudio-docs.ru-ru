@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e0bc21f328823ccf8c956d85d921de3f3ae75b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f083e97427b44256ac565e2fc6822586825aef4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061948"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Использование сборок взаимодействия Visual Studio
 Visual Studio взаимодействия сборки позволяют управляемые приложения для доступа к COM-интерфейсы, позволяющие расширять Visual Studio. Существуют некоторые различия между прямой COM-интерфейсы и их взаимодействия версий. Например сопоставление значений HRESULT, обычно представлены в виде значений типа int и необходимо обрабатывать в так же, как исключения и параметры (особенно выходных параметров) обрабатываются по-разному.
@@ -87,17 +87,17 @@ else
 > [!NOTE]
 >  Следующие методы известны для передачи `IUnknown` объекта указатели как тип <xref:System.IntPtr>. Их необходимо обработайте, как описано в этом разделе.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>Необязательные [параметры out]
  Найдите параметры, которые определяются как [out] тип данных (`int`, `object`, и так далее) в модели COM интерфейс, но, определяются как массивы одного типа данных в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] прототип метода сборки взаимодействия.

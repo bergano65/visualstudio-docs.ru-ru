@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063872"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Практическое руководство. Программное добавление текста и форматирования в ячейки таблиц Word
   Каждая таблица представляет собой набор ячеек. Каждый отдельный объект <xref:Microsoft.Office.Interop.Word.Cell> представляет одну ячейку в таблице. Обращайтесь к каждой ячейке по ее расположению в таблице. Этот пример ссылается на ячейку, расположенную в первой строке и первом столбце таблицы, добавляет в ячейку текст и применяет форматирование.
@@ -29,7 +29,7 @@ ms.locfileid: "56614653"
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>Добавление текста и форматирования в ячейки
 
-1.  Обратитесь к ячейке по ее расположению в таблице, добавьте текст в ячейку и примените форматирование.
+1. Обратитесь к ячейке по ее расположению в таблице, добавьте текст в ячейку и примените форматирование.
 
      Следующий пример кода можно использовать в настройке на уровне документа. Чтобы использовать этот пример, запустите код из класса `ThisDocument` в своем проекте.
 

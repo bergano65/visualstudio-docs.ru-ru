@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066394"
 ---
 # <a name="hlsl-shader-debugger"></a>Отладчик HLSL шейдера
 Отладчик HLSL в анализаторе графики Visual Studio помогает понять, как работает код шейдера HLSL в реальных условиях использования приложения.
@@ -50,9 +50,9 @@ ms.locfileid: "56702685"
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Запуск отладчика HLSL из окна "Этапы графического конвейера"
 
-1.  В окне **Этапы графического конвейера** найдите этап конвейера, связанный с шейдером, который требуется отладить.
+1. В окне **Этапы графического конвейера** найдите этап конвейера, связанный с шейдером, который требуется отладить.
 
-2.  Под заголовком этапа конвейера выберите команду **Начать отладку**, обозначенную небольшой зеленой стрелкой.
+2. Под заголовком этапа конвейера выберите команду **Начать отладку**, обозначенную небольшой зеленой стрелкой.
 
     > [!NOTE]
     >  Эта точка входа в отладчик HLSL отлаживает только первый поток шейдера для соответствующего этапа, то есть первую обрабатываемую вершину или пиксель. Для доступа к другим потокам этих этапов шейдера можно использовать "Журнал пикселей".
@@ -72,7 +72,7 @@ ms.locfileid: "56702685"
 
    О том, как использовать отладчик HLSL для устранения ошибок шейдеров см. в разделе [примеры](graphics-diagnostics-examples.md) или в пошаговых руководствах в разделе см. в разделе.
 
-## <a name="see-also"></a>См. также раздел
-- [Пошаговое руководство. Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Пошаговое руководство. Отладка ошибок отрисовки, возникающих из-за заливки](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+## <a name="see-also"></a>См. также
+- [Пошаговое руководство: Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Пошаговое руководство: Отладка ошибок отрисовки, возникающих из-за заливки](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Пошаговое руководство: Использование диагностики графики для отладки вычислительного шейдера](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

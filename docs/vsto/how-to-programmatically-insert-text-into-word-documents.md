@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060637"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое руководство. Программная Вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:
 
--   вставка текста в диапазон;
+- вставка текста в диапазон;
 
--   замена текста в диапазоне на новый текст;
+- замена текста в диапазоне на новый текст;
 
--   использование метода <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> объекта <xref:Microsoft.Office.Interop.Word.Selection> для вставки текста в позиции курсора или выделения.
+- использование метода <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> объекта <xref:Microsoft.Office.Interop.Word.Selection> для вставки текста в позиции курсора или выделения.
 
 > [!NOTE]
 >  Вы также можете вставить текст в элементы управления содержимым и закладки. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md) и [элемент управления Bookmark](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654026"
 
 ### <a name="to-insert-text-in-a-range"></a>Вставка текста в диапазон
 
-1.  Укажите диапазон в начале документа и вставьте текст **New Text**.
+1. Укажите диапазон в начале документа и вставьте текст **New Text**.
 
      Следующий пример кода можно использовать в настройке на уровне документа.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654026"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Выберите объект <xref:Microsoft.Office.Interop.Word.Range> , который был расширен от одного символа до длины вставленного текста.
+2. Выберите объект <xref:Microsoft.Office.Interop.Word.Range> , который был расширен от одного символа до длины вставленного текста.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654026"
 
 ### <a name="to-replace-text-in-a-range"></a>Замена текста в диапазоне
 
-1.  Создайте объект <xref:Microsoft.Office.Interop.Word.Range> , состоящий из первых 12 символов в документе.
+1. Создайте объект <xref:Microsoft.Office.Interop.Word.Range> , состоящий из первых 12 символов в документе.
 
      Следующий пример кода можно использовать в настройке на уровне документа.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654026"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Замените эти символы строкой **New Text**.
+2. Замените эти символы строкой **New Text**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Выберите диапазон.
+3. Выберите диапазон.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

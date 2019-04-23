@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a35630000c92e88c77039114313799b000d5ebbd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062642"
 ---
 # <a name="namedrange-control"></a>NamedRange - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> представляет собой диапазон с уникальным именем, который предоставляет события и может быть привязан к данным. Дополнительные сведения см. в разделе [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).
@@ -55,21 +55,21 @@ ms.locfileid: "56604123"
 ## <a name="events"></a>События
  Для элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> доступны следующие события:
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
 ## <a name="see-also"></a>См. также
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)

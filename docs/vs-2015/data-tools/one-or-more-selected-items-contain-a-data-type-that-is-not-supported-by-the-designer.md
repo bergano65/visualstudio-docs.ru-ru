@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065712"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Один или несколько выбранных элементов содержат тип данных, не поддерживаемый конструктором
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "59668825"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1.  Создайте представление, которое основано на нужной таблице и которое не включает неподдерживаемый тип данных.  
+1. Создайте представление, которое основано на нужной таблице и которое не включает неподдерживаемый тип данных.  
   
-2.  Перетащите представление из **обозревателя серверов**/**обозреватель баз данных** в конструктор.  
+2. Перетащите представление из **обозревателя серверов**/**обозреватель баз данных** в конструктор.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065549"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "58989677"
   
 - Выбор отслеживания всей оболочки, контекст и валюты. Оболочка отслеживает следующие элементы:  
   
-  -   Текущий проект  
+  - Текущий проект  
   
-  -   Текущий элемент проекта или ItemID текущего <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Текущий элемент проекта или ItemID текущего <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Текущее выделение для **свойства** окна или `SelectionContainer`  
+  - Текущее выделение для **свойства** окна или `SelectionContainer`  
   
-  -   Контекст пользовательского интерфейса, идентификаторы или CmdUIGuids, управлять видимостью этих команд, меню и панелей инструментов  
+  - Контекст пользовательского интерфейса, идентификаторы или CmdUIGuids, управлять видимостью этих команд, меню и панелей инструментов  
   
-  -   В настоящее время активных элементов, например активного окна, документа и диспетчер отмены  
+  - В настоящее время активных элементов, например активного окна, документа и диспетчер отмены  
   
-  -   Атрибуты контекста пользователя, которые управляют Динамическая справка  
+  - Атрибуты контекста пользователя, которые управляют Динамическая справка  
   
   Оболочка также включается в процесс взаимодействия между установленных пакетов VSPackage и текущей службы. Он поддерживает все базовые функции оболочки и делает их доступными для всех пакетов VSPackage, интегрированных в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Эти основные возможности включают следующее:  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064847"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59659821"
   
 #### <a name="to-declare-items-individually"></a>Объявление отдельных элементов  
   
--   Используйте атрибуты `Include`, аналогичные следующим.  
+- Используйте атрибуты `Include`, аналогичные следующим.  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ ms.locfileid: "59659821"
   
 #### <a name="to-declare-multiple-items"></a>Объявление нескольких элементов  
   
--   Используйте атрибуты `Include`, аналогичные следующим.  
+- Используйте атрибуты `Include`, аналогичные следующим.  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ ms.locfileid: "59659821"
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех JPG-файлов в каталоге Images и подкаталогах  
   
--   Используйте следующий атрибут `Include`.  
+- Используйте следующий атрибут `Include`.  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех JPG-файлов, начинающихся со слога img  
   
--   Используйте следующий атрибут `Include`.  
+- Используйте следующий атрибут `Include`.  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Включение всех файлов в каталогах с именами, которые оканчиваются слогом jpgs  
   
--   Используйте один из следующих атрибутов `Include`.  
+- Используйте один из следующих атрибутов `Include`.  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ ms.locfileid: "59659821"
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Использование всех файлов Visual C# или Visual Basic в качестве входных данных  
   
--   Используйте атрибуты `Include`, аналогичные следующим.  
+- Используйте атрибуты `Include`, аналогичные следующим.  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
