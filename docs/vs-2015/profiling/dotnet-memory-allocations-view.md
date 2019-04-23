@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082390"
 ---
 # <a name="net-memory-allocations-view"></a>Представление выделения памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54798811"
 ## <a name="highlighting-the-execution-hot-path"></a>Выделение критического пути выполнения  
  Для дерева вызовов можно найти путь выполнения, который создал наибольшее число объектов родительского типа.  
   
--   Чтобы отобразить самый активный путь, щелкните тип или функцию правой кнопкой мыши и выберите команду **Развернуть критический путь**.  
+- Чтобы отобразить самый активный путь, щелкните тип или функцию правой кнопкой мыши и выберите команду **Развернуть критический путь**.  
   
 |Столбец|Описание|  
 |------------|-----------------|  
