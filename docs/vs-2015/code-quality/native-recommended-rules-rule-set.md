@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658855"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Фокус собственного рекомендуемые правила с наиболее распространенными и важными проблемами в машинном коде, включая возможные уязвимости безопасности и сбои приложения.  Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  Этот набор правил предназначен для работы с Visual Studio Professional edition и более поздних версий.  
-
 
 |                                      Правило                                      |                                                             Описание                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

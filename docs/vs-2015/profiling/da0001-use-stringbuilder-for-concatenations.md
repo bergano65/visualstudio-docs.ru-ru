@@ -1,5 +1,5 @@
 ---
-title: DA0001. Использование StringBuilder для объединений | Документы Майкрософт
+title: DA0001. Использование StringBuilder для объединений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a374e867283e4dad614d8bebce88a9bababa7d5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355189"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659154"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001. Использование StringBuilder для объединений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [DA0001: использование StringBuilder для объединений](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [DA0001: Для объединений используйте StringBuilder](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  

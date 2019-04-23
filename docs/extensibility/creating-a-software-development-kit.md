@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324072"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661224"
 ---
 # <a name="create-a-software-development-kit"></a>Создание пакета средств разработки программного обеспечения
 Пакет средств разработки программного обеспечения (SDK) — это коллекция интерфейсов API, который можно ссылаться как одного элемента в Visual Studio. **Диспетчер ссылок** диалоговом окне приводится список всех пакетов SDK, относящихся к проекту. При добавлении пакета SDK в проект, интерфейсы API доступны в Visual Studio.
@@ -49,7 +49,6 @@ ms.locfileid: "58324072"
                   \[config]
                         \[arch]
 ```
-
 
 | Узел | Описание |
 |------------------------| - |

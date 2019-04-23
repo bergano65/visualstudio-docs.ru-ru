@@ -26,17 +26,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372985c0878abbcfd42eab795cf8e2372bf65dd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980810"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654104"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В дополнение к `InsertCommand`, `UpdateCommand`, и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update`, и `TableAdapter.Delete`) можно вызывать для управления данными непосредственно в базе данных.  
   
  Если вы не хотите создавать эти прямые методы, задайте `GenerateDbDirectMethods` свойства `false` в **свойства** окна. Если все запросы будут добавлены в дополнение к основной запрос адаптера таблицы TableAdapter, они являются отдельными запросами, которые не создают эти методы DbDirect.  

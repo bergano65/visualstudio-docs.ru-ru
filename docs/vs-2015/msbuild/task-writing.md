@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794286"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656496"
 ---
 # <a name="task-writing"></a>Написание задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], см. в разделе [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Задачи  

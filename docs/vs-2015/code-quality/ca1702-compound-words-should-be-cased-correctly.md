@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9f4844431215d952f03ab9acc3f11ab57644abde
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d62053381e4d42c50a5d15a85afaef3ed816491d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003083"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658335"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702. Для сложных слов следует использовать правильный регистр
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1702: Составные слова должны иметь правильный регистр](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1702: Составные слова должны иметь правильный регистр](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).  
   
 |||  
 |-|-|  

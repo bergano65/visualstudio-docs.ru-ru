@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628329"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653727"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не выполняется, утверждение признается ложным, выполнение программы прерывается и появляется [диалоговое окно "Сбой утверждения"](../debugger/assertion-failed-dialog-box.md).
@@ -105,7 +105,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> Утверждения CRT
 Для проверки утверждения файл заголовка CRTDBG.H определяет [макросы _ASSERT и _ASSERTE](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros).
-
 
 | Макрос | Результат |
 |------------| - |
@@ -338,7 +337,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
 [Содержание раздела](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка машинного кода](../debugger/debugging-native-code.md)

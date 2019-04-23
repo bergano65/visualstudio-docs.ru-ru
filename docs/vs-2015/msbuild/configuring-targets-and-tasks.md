@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 304ebde1c30a78ab000a1fae4a16b5082b0aeecf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769270"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660597"
 ---
 # <a name="configuring-targets-and-tasks"></a>Настройка целевых платформ и задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Целевые объекты и задачи MSBuild можно настроить для внепроцессного выполнения с помощью MSBuild, чтобы можно было определять целевые контексты, отличные от того, в котором идет выполнение. Например, на компьютере с 64-разрядной операционной системой и .NET Framework 4.5 можно создать приложение .NET Framework 2.0, предназначенное для 32-разрядной платформы. Вы также можете ориентироваться на компьютеры, где запущена платформа .NET Framework 4 или более ранней версии. Сочетание 32- или 64-разрядности и конкретной версии .NET Framework называется *целевым контекстом*.  
   
 ## <a name="installation"></a>Установка  
@@ -32,5 +31,5 @@ ms.locfileid: "54769270"
   
  Если вы хотите создать собственные целевой контекст, нужно задать эти аргументы и параметры соответствующим образом. Примеры см. в файлах Microsoft.Common.targets и Microsoft.Common.Tasks платформы .NET Framework 4.5.  Сведения о том, как создать настраиваемую задачу, способную работать с несколькими целевыми контекстами, или изменить существующие задачи, см. в разделе [Практическое руководство. Настройка целевых платформ и задач](../msbuild/how-to-configure-targets-and-tasks.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

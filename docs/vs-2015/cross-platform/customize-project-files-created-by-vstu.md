@@ -9,17 +9,16 @@ caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660513"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Настройка файлов проекта, созданных в VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Набор средств Visual Studio для Unity обеспечивает обратный вызов в стиле Unity во время создания файла проекта. Выполните регистрацию с помощью события `VisualStudioIntegration.ProjectFileGeneration`, чтобы изменять файл проекта при каждом его повторном создании.  
   
 ## <a name="demonstrates"></a>Демонстрации  
@@ -69,5 +68,5 @@ public class ProjectFileHook
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Share the Unity Log Callback with VSTU](../cross-platform/share-the-unity-log-callback-with-vstu.md) (Совместное использование обратного вызова журнала Unity с VSTU)
+## <a name="see-also"></a>См. также  
+ [Пример: Обратный вызов журнала](../cross-platform/share-the-unity-log-callback-with-vstu.md)

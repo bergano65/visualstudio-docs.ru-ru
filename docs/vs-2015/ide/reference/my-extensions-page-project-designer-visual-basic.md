@@ -14,17 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65925a0ee6b7247ecd85f9db9536ff8519a01a33
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803166"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661000"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Страница "Мои расширения" конструктор проектов (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **Мои расширения** **конструктора проектов** используется для управления расширениями пространства имен `My` в проекте. Расширения пространства имен `My` позволяют настраивать пространство имен `My`, чтобы добавить собственные настраиваемые члены. Дополнительные сведения о создании настраиваемых расширений пространства имен `My` см. в разделе [Расширение пространства имен My в Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Чтобы получить доступ к странице **Мои расширения**, дважды щелкните узел **Мой проект** своего проекта в **обозревателе решений**. После того как откроется **конструктор проектов**, перейдите на вкладку **Мои расширения**.  

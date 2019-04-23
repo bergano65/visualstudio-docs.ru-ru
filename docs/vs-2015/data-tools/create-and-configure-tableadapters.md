@@ -20,17 +20,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979003"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660865"
 ---
 # <a name="create-and-configure-tableadapters"></a>Создание и настройка адаптеров таблиц TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Адаптеры таблиц обеспечивают взаимодействие между приложением и базы данных. Они подключаются к базе данных, выполнения запросов или хранимых процедур, и возвращает новые данные таблицы или заполнения существующего <xref:System.Data.DataTable> с возвращенными данными. Адаптеры таблиц можно также отправлять обновленные данные из приложения в базе данных.  
   
  Адаптеры таблиц создаются автоматически при выполнении одного из следующих действий:  

@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857480"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656444"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger
 
@@ -34,9 +34,14 @@ ms.locfileid: "58857480"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Snapshot Debugger доступен только для Visual Studio 2017 Enterprise версии 15.5 или более поздней с **рабочей нагрузкой разработки Azure**. (На вкладке **Отдельные компоненты** его можно найти в разделе **Отладка и тестирование** > **Отладчик моментальных снимков**.)
+* Отладчик моментальных снимков доступна только начиная с Visual Studio Enterprise 2017 версии 15.5 или более поздней версии с **рабочую нагрузку разработки Azure**. (На вкладке **Отдельные компоненты** его можно найти в разделе **Отладка и тестирование** > **Отладчик моментальных снимков**.)
 
-    Если он еще не установлен, установите [Visual Studio 2017 Enterprise версии 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) или более поздней. Если вы выполняете обновление предыдущей установки Visual Studio 2017, запустите установщик Visual Studio и проверьте компонент Snapshot Debugger в **ASP.NET и рабочей нагрузке веб-разработки**.
+    ::: moniker range=">=vs-2019"
+    Если он еще не установлен, установите [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Если при обновлении с предыдущей установки Visual Studio, запустите установщик Visual Studio и проверьте компонент отладчика моментальных снимков **рабочую нагрузку ASP.NET и веб-разработки**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Если он еще не установлен, установите [Visual Studio 2017 Enterprise версии 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) или более поздней. Если вы выполняете обновление предыдущей установки Visual Studio 2017, запустите установщик Visual Studio и проверьте компонент Snapshot Debugger в **ASP.NET и рабочей нагрузке веб-разработки**.
+    ::: moniker-end
 
 * План Службы приложений Azure "Базовый" или выше.
 

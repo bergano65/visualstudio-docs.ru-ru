@@ -11,17 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797112"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660147"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Задает веб-сервер, который будут использовать веб-проекты для разработки в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Чтобы получить доступ к этому диалоговому окну, выберите **Сервис > Параметры**. Разверните узел **Проекты и решения** и выберите **Веб-проекты**.  
   
  По умолчанию при запуске веб-проекта в Visual Studio (например, с помощью F5 или CTRL + F5) система Visual Studio использует Visual Studio Development Server. Дополнительные сведения см. в разделе [Веб-серверы в Visual Studio для веб-проектов ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  

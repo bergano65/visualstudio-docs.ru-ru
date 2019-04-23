@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773089"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653493"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Преобразование — это однозначное преобразование одного списка элементов в другой. Помимо возможности преобразования списков элементов в проекте, преобразование позволяет целевому объекту определить прямое сопоставление входных и выходных данных. Этот раздел описывает преобразования и то, как [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] использует их для более эффективной сборки проектов.  
   
 ## <a name="transform-modifiers"></a>Модификаторы преобразования  
@@ -55,7 +54,7 @@ ms.locfileid: "54773089"
 ## <a name="dependency-analysis"></a>Анализ зависимостей  
  Преобразование обеспечивает однозначное сопоставление между преобразованным и исходным списками элементов. Таким образом, если целевой объект создает выходные данные, полученные путем преобразования входных файлов, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может проанализировать метки времени входных и выходных данных и решить, следует ли пропустить целевой объект, выполнить его сборку или частично перестроить.  
   
- В [задаче Copy](../msbuild/copy-task.md) в следующем примере каждый файл в списке элементов `BuiltAssemblies` сопоставляется с файлом в папке назначения задачи, указанной с помощью преобразования в атрибуте `Outputs`. Если изменяется файл в списке элементов `BuiltAssemblies`, задача `Copy` будет выполняться только для измененного файла, а все остальные файлы будут пропущены. Дополнительные сведения об анализе зависимостей и использовании преобразований см. в разделе [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md).  
+ В [задаче Copy](../msbuild/copy-task.md) в следующем примере каждый файл в списке элементов `BuiltAssemblies` сопоставляется с файлом в папке назначения задачи, указанной с помощью преобразования в атрибуте `Outputs`. Если изменяется файл в списке элементов `BuiltAssemblies`, задача `Copy` будет выполняться только для измененного файла, а все остальные файлы будут пропущены. Дополнительные сведения об анализе зависимостей и использовании преобразований см. в статье [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -109,7 +108,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md)

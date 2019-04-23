@@ -19,17 +19,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2d69d19e43ae2e94382e32ba6579f55cecb2efca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659492"
 ---
 # <a name="csc-task"></a>Задача Csc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Использует программу-оболочку для файла CSC.exe и создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения о программе CSC.EXE см. в разделе [Параметры компилятора C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).  
   
 ## <a name="parameters"></a>Параметры  

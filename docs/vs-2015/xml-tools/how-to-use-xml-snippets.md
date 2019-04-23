@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993917"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659973"
 ---
 # <a name="how-to-use-xml-snippets"></a>Практическое руководство. использовать XML-фрагменты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Можно вызывать XML-фрагменты с помощью следующих двух команд из контекстного меню XML Editor. **Вставить фрагмент** команда вставляет фрагмент кода XML в позиции курсора. **Окружить** команда создает оболочку для XML-фрагмент вокруг выбранного текста. Для каждого XML-фрагмента имеются назначенные типы фрагментов. Типы фрагментов определяют ли фрагмент доступен с **вставить фрагмент** команде **окружить** или для обеих команд.  
   
  После добавления XML-фрагмента в редактор все редактируемые поля во фрагменте выделяются желтым цветом, а курсор помещается в первое редактируемое поле.  

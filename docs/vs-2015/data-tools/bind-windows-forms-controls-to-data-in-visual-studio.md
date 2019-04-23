@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992316"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654013"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Можно отобразить данные пользователям приложения путем привязки данных в формы Windows Forms. Чтобы создать эти элементы управления с привязкой к данным, можно перетаскивать элементы из **источников данных** на окно конструктора Windows Forms в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, инструменты и классы, связанные с созданием приложений Windows Forms с привязкой к данным.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39c8a88a3c0e798734a55aac66136e15d86d7e17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74b3559849fe69da998f59c3caa6e38ff23b238b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657523"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Конструктор шаблона ReceiveAndSendReply
 **ReceiveAndSendReply** шаблон используется для создания пары предварительно настроенных <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> действий в <xref:System.Activities.Statements.Sequence> действия, которые соотносятся как часть обмен сообщениями запрос ответ шаблон на сервере.  
@@ -42,7 +42,6 @@ ms.locfileid: "58979470"
 
 ### <a name="properties-of-sendreply"></a>Свойства SendReply  
  В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.SendReply> и описано их использование в конструкторе. These properties can be edited in properties grid and some can be edited on [!INCLUDE[wfd2](../includes/wfd2-md.md)]designer surface.  
-
 
 |                               Имя свойства                                | Обязательно |                                                                                                                                                                                                                                                                                                                                                      Использование                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

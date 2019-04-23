@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Присоединение Profiler к веб-приложению ASP.NET для сбора данных памяти с помощью командной строки | Документация Майкрософт
+title: Практическое руководство. Присоединение Profiler к веб-приложению ASP.NET для сбора данных памяти с помощью командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783476"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653285"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к веб-приложению ASP.NET для сбора данных памяти с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описан порядок использования программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.  
@@ -77,7 +77,6 @@ ms.locfileid: "54783476"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                                          |
 
-
 6. Запустите приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] обычным образом.  
 
 7. Подключите профилировщик к рабочему процессу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Тип:  
@@ -110,7 +109,7 @@ ms.locfileid: "54783476"
 
    - Введите команду **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      - или -  
+      -или-  
 
    - Завершите рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Тип:  
 
@@ -128,6 +127,6 @@ ms.locfileid: "54783476"
 
     **IISReset /start**  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)

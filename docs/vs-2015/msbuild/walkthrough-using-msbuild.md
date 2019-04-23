@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование MSBuild | Документы Майкрософт
+title: Пошаговое руководство. Использование MSBuild | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792224"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655014"
 ---
 # <a name="walkthrough-using-msbuild"></a>Пошаговое руководство. Использование MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild является платформой сборки для корпорации Майкрософт и Visual Studio. Это практическое руководство содержит вводную информацию о стандартных блоках MSBuild и описывает способы записи и отладки проектов MSBuild, а также управления ими. Здесь рассматриваются следующие вопросы:  
   
 - создание файла проекта и работа с ним;  
@@ -242,10 +241,10 @@ $(PropertyName)
  Атрибут Condition может быть почти у всех элементов MSBuild. Дополнительные сведения об использовании атрибута Condition см. в статье об [условиях](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Зарезервированные свойства  
- MSBuild резервирует некоторые имена свойств для хранения сведений о файле проекта и двоичных файлах MSBuild. Примером зарезервированного свойства является MSBuildToolsPath. Зарезервированные свойства указываются с символом $, как и любое другое свойство. Дополнительные сведения см. в статьях [How to: Reference the Name or Location of the Project File](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) (Практическое руководство. Использование ссылки на имя или расположение файла проекта) и [MSBuild Reserved and Well-Known Properties](../msbuild/msbuild-reserved-and-well-known-properties.md) (Зарезервированные и стандартные свойства MSBuild).  
+ MSBuild резервирует некоторые имена свойств для хранения сведений о файле проекта и двоичных файлах MSBuild. Примером зарезервированного свойства является MSBuildToolsPath. Зарезервированные свойства указываются с символом $, как и любое другое свойство. Дополнительные сведения см. в разделе [Как Ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) и [MSBuild зарезервированные и стандартные свойства](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Переменные среды  
- Ссылаться на переменные среды в файлах проектов можно так же, как на свойства сборки. Например, чтобы использовать переменную среды PATH в файле проекта, примените $(Path). Если проект содержит определение свойства с тем же именем, что и у переменной среды, свойство в проекте переопределит значение переменной среды. Дополнительные сведения см. в статье [How to: Use Environment Variables in a Build](../msbuild/how-to-use-environment-variables-in-a-build.md) (Практическое руководство. Использование переменных среды в сборке).  
+ Ссылаться на переменные среды в файлах проектов можно так же, как на свойства сборки. Например, чтобы использовать переменную среды PATH в файле проекта, примените $(Path). Если проект содержит определение свойства с тем же именем, что и у переменной среды, свойство в проекте переопределит значение переменной среды. Дополнительные сведения см. в разделе [Как Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Задание свойств из командной строки  
  Свойства можно определить в командной строке с помощью параметра /property или /p. Значения свойств, полученные из командной строки, переопределяют значения свойств, заданные в файле проекта и переменных среды.  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- определяет группу элементов, содержащую два элемента. Тип элемента Compile имеет два значения: Program.cs и Properties\AssemblyInfo.cs.  
+ определяет группу элементов, содержащую два элемента. Тип элемента Compile имеет два значения: «Program.cs» и «Properties\AssemblyInfo.cs».  
   
  Следующий код создает тот же тип элементов посредством объявления обоих файлов в одном атрибуте Include, разделенных точкой с запятой.  
   
@@ -403,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- добавляет все файлы с расширением файла .jpeg в папке изображений и всех ее вложенных папках к типу элемента Photos. Дополнительные примеры см. в статье [How to: Select the Files to Build](../msbuild/how-to-select-the-files-to-build.md) (Практическое руководство. Выбор файлов для сборки).  
+ добавляет все файлы с расширением файла .jpeg в папке изображений и всех ее вложенных папках к типу элемента Photos. Дополнительные примеры см. в статье [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).  
   
  Обратите внимание, что, так как элементы объявлены, они добавляются к типу элемента. Например, примененная к объекту директива  
   
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- добавляет все файлы с расширением .cs в тип элемента Compile типа, за исключением файлов, имена которых содержат строку Designer. Дополнительные сведения см. в статье [How to: Exclude Files from the Build](../msbuild/how-to-exclude-files-from-the-build.md) (Практическое руководство. Исключение файлов из сборки).  
+ добавляет все файлы с расширением .cs в тип элемента Compile типа, за исключением файлов, имена которых содержат строку Designer. Дополнительные примеры см. в статье [Практическое руководство. Исключить файлы из сборки](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  Атрибут Exclude применяется только к элементам, добавленным с помощью атрибута Include в элемент, содержащий их оба. Например, примененная к объекту директива  
   
@@ -577,8 +576,8 @@ $(PropertyName)
    Обратите внимание, что выраженные в этом синтаксисе метаданные не приводят к пакетной обработке.  
   
 ## <a name="whats-next"></a>Что дальше?  
- Сведения о пошаговом создании файла простого проекта см. в статье [Walkthrough: Creating an MSBuild Project File from Scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) (Пошаговое руководство. Создание файла проекта MSBuild с нуля).  
+ Пошаговые инструкции по созданию файла простого проекта см. в статье [Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

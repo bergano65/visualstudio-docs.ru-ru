@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор файлов для сборки | Документация Майкрософт
+title: Практическое руководство. Выбор файлов для сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659821"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для построения
+# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.  
   
 ## <a name="specifying-inputs"></a>Указание входных данных  
@@ -173,6 +172,6 @@ ms.locfileid: "54798908"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Исключить файлы из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Элементы](../msbuild/msbuild-items.md)

@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756339"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655106"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Страница «Расширения и обновления», папка «Среда», диалоговое окно «Параметры»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Эта страница служит для указания параметров выполнения обновлений в Visual Studio и параметров обновления и обнаружения расширений.  
   
 ### <a name="automatically-check-for-updates"></a>Автоматически проверять наличие обновлений  
@@ -34,7 +33,7 @@ ms.locfileid: "54756339"
  Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
   
 ### <a name="additional-extension-galleries"></a>Дополнительные галереи расширений  
- Возможность выпуска Enterprise, которая обеспечивает поддержку галерей собственных расширений. Дополнительные сведения см. в разделе [Закрытые коллекции](../../extensibility/private-galleries.md).  
+ Функция выпуска Enterprise, которая обеспечивает поддержку галерей собственных расширений. Дополнительные сведения см. в разделе [Закрытые коллекции](../../extensibility/private-galleries.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

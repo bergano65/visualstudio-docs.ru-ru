@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612677"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658062"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;зависимость&gt; элемент (приложение ClickOnce)
 Определяет зависимость платформы или сборки, необходимые для приложения.
@@ -122,12 +122,11 @@ ms.locfileid: "56612677"
 
  `dependentAssembly` имеет следующие атрибуты.
 
-
 | Атрибут | Описание |
 |-----------------------| - |
 | `dependencyType` | Обязательный. Указывает тип зависимости. Допустимые значения: `preprequisite` и `install`. `install` Сборка устанавливается как часть [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Объект `prerequisite` сборки должен присутствовать в глобальный кэш сборок (GAC) перед [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение разрешено устанавливать. |
 | `allowDelayedBinding` | Обязательный. Указывает, можно ли загрузить программными средствами во время выполнения сборки. |
-| `group` | Необязательный параметр. Если `dependencyType` атрибут имеет значение `install`, назначает это именованная группа сборки устанавливаются, только по запросу. Подробнее см. в разделе [Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Если значение `framework` и `dependencyType` атрибут имеет значение `prerequisite`, определяет сборку как часть платформы .NET Framework. Глобальный кэш (GAC) не проверяется для этой сборки, при установке на [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и более поздних версий. |
+| `group` | Необязательный параметр. Если `dependencyType` атрибут имеет значение `install`, назначает это именованная группа сборки устанавливаются, только по запросу. Дополнительные сведения см. в разделе [Пошаговое руководство: загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Если значение `framework` и `dependencyType` атрибут имеет значение `prerequisite`, определяет сборку как часть платформы .NET Framework. Глобальный кэш (GAC) не проверяется для этой сборки, при установке на [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и более поздних версий. |
 | `codeBase` | Требуется, если `dependencyType` атрибут имеет значение `install`. Путь к зависимой сборки. Может быть абсолютный путь или путь относительно кода манифеста базовым. Этот путь должен быть допустимым URI в порядке для манифеста сборки был допустимым. |
 | `size` | Требуется, если `dependencyType` атрибут имеет значение `install`. Размер зависимой сборки, в байтах. |
 
@@ -153,14 +152,12 @@ ms.locfileid: "56612677"
 ### <a name="dsigtransform"></a>DSIG:Transform
  `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемент. Элемент `dsig:Transform` имеет перечисленные ниже атрибуты.
 
-
 | Атрибут | Описание |
 |-------------| - |
 | `Algorithm` | Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственное значение, используемое [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] является `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ### <a name="dsigdigestmethod"></a>DSIG:DigestMethod
  `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемент. Элемент `dsig:DigestMethod` имеет перечисленные ниже атрибуты.
-
 
 | Атрибут | Описание |
 |-------------| - |

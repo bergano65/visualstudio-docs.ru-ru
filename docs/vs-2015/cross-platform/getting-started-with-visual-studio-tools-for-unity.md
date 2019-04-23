@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764613"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655179"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.  
   
 > [!IMPORTANT]
@@ -112,5 +111,5 @@ ms.locfileid: "54764613"
 ## <a name="next-steps"></a>Следующие шаги  
  Сведения о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Использование инструментов Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Главная страница Unity](http://unity3d.com)

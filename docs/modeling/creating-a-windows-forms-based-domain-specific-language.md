@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951518"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658713"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования на схеме DSL. В этом разделе рассматривается привязка формы Windows к DSL, используя пакет SDK моделирования и визуализации Visual Studio.
@@ -28,12 +28,10 @@ Windows Forms можно использовать для отображения 
 
     В этом пошаговом руководстве рассматриваются следующие имена:
 
-
    | | |
    |-|-|
    | Имя решения и DSL | FarmApp |
    | Пространство имен | Company.FarmApp |
-
 
 2. Поэкспериментируйте с начальной пример, в котором шаблон предоставляет:
 

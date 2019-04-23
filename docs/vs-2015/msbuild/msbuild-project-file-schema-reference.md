@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660532"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Справочные сведения о схеме файлов проектов MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Представлена таблица, содержащая все элементы XML-схемы [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], доступные атрибуты элементов и дочерние элементы.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] использует файлы проекта для указания механизму сборки, что собирать и как делать это. Файлы проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] представляют собой XML-файлы, которые подчиняются XML-схеме [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. В данном разделе описывается содержимое файла определений XML-схемы (XSD) для [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

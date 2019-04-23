@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 315e97b83e2b221258bfacebf0e6bc5f3ef92919
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980389"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659650"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Отключение ограничений при заполнении набора данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Если набор данных содержит ограничения (например, ограничения внешнего ключа), theycan вызывать ошибки, связанные с порядку операции, выполняемые над набором данных. Например загрузка дочерних записей перед loadingrelated родительские записи можно нарушают ограничение и привести к ошибке. Как только вы загружаете дочерней записи, ограничение проверяет связанной родительской записи и вызывает ошибку.  
   
  Если нет механизм, позволяющий временное отключение ограничения, возникает ошибка, каждый раз при попытке загрузить запись в дочерней таблице ниже. Другой способ приостановить все ограничения в наборе данных — с помощью <xref:System.Data.DataRow.BeginEdit%2A>, и <xref:System.Data.DataRow.EndEdit%2A> свойства.  

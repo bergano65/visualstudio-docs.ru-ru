@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653896"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
   В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.
@@ -67,7 +67,7 @@ ms.locfileid: "56621517"
 
 3.  В окне **Свойства** измените следующие свойства.
 
-    |Свойство.|Значение|
+    |Свойство|Значение|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**Text**|**Полужирный**|
@@ -76,7 +76,7 @@ ms.locfileid: "56621517"
 
 5.  Добавьте второй флажок в приведенном ниже документе `ApplyBoldFont` и измените следующие свойства.
 
-    |Свойство.|Значение|
+    |Свойство|Значение|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**Text**|**Курсив**|
@@ -85,7 +85,7 @@ ms.locfileid: "56621517"
 
 7.  Добавьте третий флажок в приведенном ниже документе `ApplyItalicFont` и измените следующие свойства.
 
-    |Свойство.|Значение|
+    |Свойство|Значение|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
     |**Text**|**Подчеркивание**|
@@ -155,7 +155,6 @@ ms.locfileid: "56621517"
 -   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
 -   Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
-
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)

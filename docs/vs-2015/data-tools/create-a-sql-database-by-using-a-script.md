@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990330"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653636"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Создание базы данных SQL с помощью скрипта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом пошаговом руководстве используется Visual Studio для создания небольших баз данных, который содержит образец кода для [Создание простых данных приложения с помощью ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
  **Содержание раздела**  

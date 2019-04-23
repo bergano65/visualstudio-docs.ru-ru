@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994351"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654026"
 ---
 # <a name="integration-with-xml-editor"></a>Интеграция с редактором XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Конструктор XML-схем объединен с редактором XML. Если изменить XSD-файл в редакторе XML, изменения будут отражены в [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md). Если у вас есть [представление графика](../xml-tools/graph-view.md) или [представления модели содержимого](../xml-tools/content-model-view.md) open, изменения будут также отражены существует. Можно перемещаться между конструктором XML-схем и редактором XML, используя любой из следующих методов.  
   
 - В редакторе XML щелкните правой кнопкой мыши узел и выберите **Показать в обозревателе XML-схем**.  

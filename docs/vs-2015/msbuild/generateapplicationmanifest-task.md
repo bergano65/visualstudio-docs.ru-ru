@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756588"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660987"
 ---
 # <a name="generateapplicationmanifest-task"></a>Задача GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Создает манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.  
   
 ## <a name="parameters"></a>Параметры  
@@ -45,10 +44,10 @@ ms.locfileid: "54756588"
 |`Dependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список элементов, который определяет набор независимых сборок для созданного манифеста. Каждый элемент может быть дополнительно описан в метаданных, чтобы указать дополнительное состояние развертывания и тип зависимости. Дополнительные сведения см. в разделе "Метаданные элементов" ниже.|  
 |`Description`|Необязательный параметр `String` .<br /><br /> Указывает описание для приложения или компонента.|  
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает отдельный элемент, указывающий точку входа для создаваемой сборки манифеста.<br /><br /> Для манифеста приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] этот параметр указывает сборку, которая выполняется при запуске приложения.|  
-|`ErrorReportUrl`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
+|`ErrorReportUrl`|(Необязательно [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
 |`FileAssociations`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает список из одного или нескольких типов файлов, сопоставленных с манифестом развертывания ClickOnce.<br /><br /> Сопоставления файлов действительны только при ориентации на платформу .NET Framework 3.5 или более поздней версии.|  
 |`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Включаемые в манифест файлы. Укажите полный путь для каждого файла.|  
-|`HostInBrowser`|Необязательный [логический] параметр (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
+|`HostInBrowser`|Необязательно () [логическое]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
 |`IconFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файл значка приложения. Значок приложения задается в создаваемом манифесте приложения и используется для меню "Пуск" и диалогового окна "Установка и удаление программ". Если этот входной параметр не указан, используется значок по умолчанию. Если задача создает собственный манифест, этот параметр игнорируется.|  
 |`InputManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входной XML-документ, который служит основой для генератора манифеста. Это позволяет структурированным данным, например определениям безопасности приложений или пользовательским определениям манифестов, отражаться в выходном манифесте. Корневой элемент в XML-документе должен быть узлом сборки в пространстве имен asmv1.|  
 |`IsolatedComReferences`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает COM-компоненты, которые нужно изолировать в создаваемом манифесте. Этот параметр позволяет изолировать COM-компоненты для развертывания "COM без регистрации". Это работает за счет автоматического создания манифеста со стандартными определениями регистрации COM. Однако для правильной работы этой функции COM-компоненты нужно регистрировать на компьютере сборки.|  
@@ -61,12 +60,12 @@ ms.locfileid: "54756588"
 |`Publisher`|Необязательный параметр `String` .<br /><br /> Указывает имя издателя приложения. Если этот параметр не задан, имя выводится из имени зарегистрированного пользователя или из идентификатора создаваемого манифеста. Это имя используется для имени папки в меню "Пуск" и является частью имени, которое отображается в диалоговом окне "Установка и удаление программ".|  
 |`RequiresMinimumFramework35SP1`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение true, приложению требуется платформа .NET Framework 3.5 с пакетом обновления 1 (SP1) или более поздней версии.|  
 |`TargetCulture`|Необязательный параметр `String` .<br /><br /> Идентифицирует язык и региональные параметры приложения и указывает поле `Language` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, то предполагается, что в приложении не изменяются язык и региональные параметры.|  
-|`TargetFrameworkMoniker`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает моникер целевой платформы.|  
-|`TargetFrameworkProfile`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает профиль целевой платформы.|  
-|`TargetFrameworkSubset`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает имя целевого подмножества платформы .NET Framework.|  
-|`TargetFrameworkVersion`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает целевую платформу .NET Framework проекта.|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает моникер целевой платформы.|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает профиль целевой платформы.|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает имя целевого подмножества платформы .NET Framework.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает целевую платформу .NET Framework проекта.|  
 |`TrustInfoFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает XML-документ, указывающий уровень безопасности приложения. Корневой элемент в XML-документе должен быть узлом trustInfo в пространстве имен asmv2. Если задача создает собственный манифест, этот параметр игнорируется.|  
-|`UseApplicationTrust`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Если задано значение true, свойства `Product`, `Publisher` и `SupportUrl` записываются в манифест приложения.|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Если задано значение true, свойства `Product`, `Publisher` и `SupportUrl` записываются в манифест приложения.|  
   
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.GenerateManifestBase>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список параметров класса Task см. в статье [Базовый класс Task](../msbuild/task-base-class.md).  
@@ -353,7 +352,7 @@ ms.locfileid: "54756588"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
  [Задача SignFile](../msbuild/signfile-task.md)   

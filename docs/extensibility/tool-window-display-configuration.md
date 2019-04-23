@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707046"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653779"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 Когда VSPackage регистрирует окно инструментов, положения по умолчанию, размер, стиль закрепления и другие сведения о видимости указывается в необязательных значений. Дополнительные сведения о регистрации окна инструментов, см. в разделе [средство Windows в реестре](../extensibility/tool-windows-in-the-registry.md)
@@ -35,8 +35,7 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
 
-
-| name | Тип | Данные | Описание: |
+| name | Тип | Данные | Описание |
 |-----------------|-----------| - | - |
 | name | REG_SZ | «Короткое имя место» | Краткое имя, описывающее окна инструментов. Используется только для справки в реестре. |
 | Float | REG_SZ | «X1, Y1, X2, Y2» | Четыре значения с разделителями-запятыми. X1, Y1, — это координата верхнего левого угла окна инструментов. X2, Y2, — это координата нижний правый угол. Все значения являются в экранных координатах. |
@@ -85,7 +84,7 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:
 ```
 
-|name|Тип|Данные|Описание:|
+|name|Тип|Данные|Описание|
 |----------|----------|----------|-----------------|
 |(Значение по умолчанию)|REG_SZ|Нет|Оставьте пустым.|
 |*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный параметр. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944537"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657393"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение предметно-ориентированного языка
 
@@ -45,7 +45,6 @@ ms.locfileid: "55944537"
 ## <a name="prerequisites"></a>Предварительные требования
 
 Перед запуском этого пошагового руководства, необходимо сначала установить эти компоненты:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ ms.locfileid: "55944537"
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
-- [Практическое руководство. Создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Практическое руководство. Создание решения на предметно-ориентированном языке](../modeling/how-to-create-a-domain-specific-language-solution.md).

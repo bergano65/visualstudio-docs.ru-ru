@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653210"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET предоставляет простые методы для работы с XML-данных. В этом пошаговом руководстве создается приложение Windows, которое загружает XML-данные в набор данных. Набор данных отображается в <xref:System.Windows.Forms.DataGridView> элемента управления. Наконец схема XML, на основе содержимого XML-файла отображается в текстовом поле.  
   
  Данное пошаговое руководство состоит из пяти основных этапов:  
@@ -166,7 +165,7 @@ ADO.NET предоставляет простые методы для работ
   
 3.  Задайте следующие свойства:  
   
-    |Элемент управления|Свойство.|Параметр|  
+    |Элемент управления|Свойство|Параметр|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**ScrollBars**|**По вертикали**|  

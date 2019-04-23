@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659700"
 ---
 # <a name="vbc-task"></a>Задача Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Использует программу-оболочку для файла vbc.exe, который создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (.netmodule). Дополнительные сведения о файле vbc.exe. см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Параметры  
@@ -53,7 +52,7 @@ ms.locfileid: "54802193"
 |`Imports`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Импорт пространства имен из указанных коллекций элементов. Этот параметр соответствует параметру [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) компилятора vbc.exe.|  
 |`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Этот параметр соответствует параметру [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) компилятора vbc.exe.|  
 |`KeyFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Задает используемую версию языка ("9" или "10").|  
+|`LangVersion`|(Необязательно [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Задает используемую версию языка ("9" или "10").|  
 |`LinkResources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Этот параметр соответствует параметру [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) компилятора vbc.exe.|  
 |`MainEntryPoint`|Необязательный параметр `String` .<br /><br /> Задает класс или модуль, содержащий процедуру `Sub Main`. Этот параметр соответствует параметру [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) компилятора vbc.exe.|  
 |`ModuleAssemblyName`|Необязательный параметр `String` .<br /><br /> Задает сборку, частью которой будет этот модуль.|  
@@ -104,7 +103,7 @@ ms.locfileid: "54802193"
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Компилятор Visual Basic с интерфейсом командной строки](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

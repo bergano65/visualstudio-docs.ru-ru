@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование переменных среды в построении | Документы Майкрософт
+title: Практическое руководство. Использование переменных среды в сборке | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780977"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655888"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Практическое руководство. Использование переменных среды в построении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При сборке проектов часто бывает необходимо задать параметры сборки, используя сведения не из файла проекта или файлов, входящих в проект. Эти сведения обычно хранятся в переменных среды.  
   
 ## <a name="referencing-environment-variables"></a>Ссылки на переменные среды  
@@ -66,7 +65,7 @@ ms.locfileid: "54780977"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
 
 [MSBuild](msbuild.md)
 

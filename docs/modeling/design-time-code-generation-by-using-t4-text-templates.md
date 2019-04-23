@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657471"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проект Visual Studio. Как правило, шаблоны создаются таким образом, чтобы они различаются в код, который они создают в соответствии с данными из *модели*. Модель — это файл или базу данных, которая содержит основные сведения о требованиях приложения.
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. Проверьте следующие свойства **.tt** файла:
 
-
    | | |
    |-|-|
    | **Пользовательский инструмент =** | **TextTemplatingFileGenerator** |
    | **Действие построения =** | **None** |
-
 
 5. Вставьте следующие строки в начало файла:
 

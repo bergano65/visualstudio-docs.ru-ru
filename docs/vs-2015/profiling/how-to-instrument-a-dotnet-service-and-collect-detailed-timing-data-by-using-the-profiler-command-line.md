@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Инструментирование службы .NET и сбор подробных данных об использовании времени с помощью командной строки профилировщика | Документы Майкрософт
+title: Практическое руководство. Инструментирование службы .NET и сбор подробных данных об использовании времени с помощью командной строки профилировщика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766436"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659362"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование службы .NET и сбор подробных данных об использовании времени с помощью командной строки профилировщика
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование службы .NET и Сбор подробных данных о времени с помощью командной строки Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Эта статья описывает использование программ командной строки для Средств профилирования [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] с целью инструментирования службы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], а также для сбора подробных данных по использованию времени.  
@@ -76,7 +76,6 @@ ms.locfileid: "54766436"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                              |
 
-
 8. Запустите службу из диспетчера служб Windows.  
 
 ## <a name="controlling-data-collection"></a>Управление сбором данных  
@@ -113,6 +112,6 @@ ms.locfileid: "54766436"
 
 5.  Перезагрузите компьютер.  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Службы профилирования](../profiling/command-line-profiling-of-services.md)   
  [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)

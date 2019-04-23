@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990387"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660974"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Не удалось создать ассоциацию &lt;имя ассоциации&gt; — одно и то же свойство перечислено дважды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Не удалось создать ассоциацию \<имя ассоциации>. Одно и то же свойство присутствует в списке несколько раз: \<имя свойства>.  
   
  Ассоциации определяются выбранными **свойствами ассоциации** в диалоговом окне **Редактор ассоциаций**. Свойства могут быть перечислены только один раз для каждого класса в ассоциации.  

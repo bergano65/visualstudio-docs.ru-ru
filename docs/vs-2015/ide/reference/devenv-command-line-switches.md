@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754975"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653870"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Команда Devenv позволяет задавать из командной строки различные параметры для интегрированной среды разработки (IDE), а также для сборки, отладки и развертывания проектов. Используйте эти параметры для запуска IDE из файла скрипта или из BAT-файла, например скрипта сборки программы в ночное время, либо для запуска IDE в особой конфигурации.  
   
 > [!NOTE]
