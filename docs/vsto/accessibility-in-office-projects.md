@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070047"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
 
@@ -40,21 +40,21 @@ Microsoft Visual Studio и Microsoft Office включают множество 
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Чтобы просмотреть сочетания клавиш для вкладок и элементов ленты в конструкторе
 
-1.  В Visual Studio на **средства** меню, щелкните **параметры**.
+1. В Visual Studio на **средства** меню, щелкните **параметры**.
 
-2.  Разверните **средств Office** узел и выберите **Microsoft Office Excel клавиатуры** или **Microsoft Office Word клавиатуры**, соответствующим образом.
+2. Разверните **средств Office** узел и выберите **Microsoft Office Excel клавиатуры** или **Microsoft Office Word клавиатуры**, соответствующим образом.
 
-3.  Выберите **Инамическая схема клавиатуры**.
+3. Выберите **Инамическая схема клавиатуры**.
 
      Появится сообщение о том, что необходимо перезапустить Visual Studio, чтобы изменения вступили в силу.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
-5.  Перезапустите Visual Studio и повторно откройте проект.
+5. Перезапустите Visual Studio и повторно откройте проект.
 
-6.  Откройте конструктор документ или книгу для вашего проекта.
+6. Откройте конструктор документ или книгу для вашего проекта.
 
-7.  Нажмите клавишу **F6** для отображения сочетания клавиш для ленты.
+7. Нажмите клавишу **F6** для отображения сочетания клавиш для ленты.
 
 ## <a name="accessibility-at-runtime"></a>Специальные возможности во время выполнения
 

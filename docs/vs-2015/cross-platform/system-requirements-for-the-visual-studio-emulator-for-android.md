@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103297"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "59653197"
 
  В этом разделе содержатся следующие подразделы.
 
--   [Краткий контрольный список](#Checklist)
+- [Краткий контрольный список](#Checklist)
 
--   [Требования к системе](#System)
+- [Требования к системе](#System)
 
--   [Требования к сети](#Network)
+- [Требования к сети](#Network)
 
--   [Требования к Hyper-V](#HyperV)
+- [Требования к Hyper-V](#HyperV)
 
--   [Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается](#BootableVHD)
+- [Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается](#BootableVHD)
 
--   [Для Hyper-V требуются несжатые и и незашифрованные файлы](#Files)
+- [Для Hyper-V требуются несжатые и и незашифрованные файлы](#Files)
 
-##  <a name="Checklist"></a> Краткий контрольный список
+## <a name="Checklist"></a> Краткий контрольный список
  Ниже приведен краткий контрольный список требований для запуска эмулятора Visual Studio для Android. Более подробные сведения см. в последующих подразделах данного раздела.
 
  Требования к системе
@@ -62,17 +62,17 @@ ms.locfileid: "59653197"
 
 - В BIOS должны поддерживаться следующие функции.
 
-  -   Виртуализация оборудования
+  - Виртуализация оборудования
 
-  -   Преобразование адресов второго уровня (SLAT)
+  - Преобразование адресов второго уровня (SLAT)
 
-  -   Предотвращение исполнения данных на основе оборудования (DEP)
+  - Предотвращение исполнения данных на основе оборудования (DEP)
 
 - В Windows технология Hyper-V должна быть включена и запущена.
 
 - Необходимо быть членом локальной группы администраторов Hyper-V.
 
-##  <a name="System"></a> Требования к системе
+## <a name="System"></a> Требования к системе
  Компьютер должен удовлетворять следующим требованиям.
 
 - Поддержка Hyper-V (см. раздел [Требования к Hyper-V](#HyperV))
@@ -85,7 +85,7 @@ ms.locfileid: "59653197"
 
   ![Проверьте требования к системе](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> Требования к сети
+## <a name="Network"></a> Требования к сети
  Сеть должна удовлетворять следующим требованиям.
 
 - DHCP
@@ -100,7 +100,7 @@ ms.locfileid: "59653197"
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Требования к Hyper-V
+## <a name="HyperV"></a> Требования к Hyper-V
  Требования к Hyper-V в BIOS
 
  BIOS компьютера должна поддерживать следующие функции, которые должны быть включены.
@@ -133,12 +133,12 @@ ms.locfileid: "59653197"
 
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы".
 
-##  <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается
+## <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается
  При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: Произошел сбой при развертывании приложения. Повторите попытку.
 
  Такая конфигурация не поддерживается. Информацию о связанных проблемах см. в разделе [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Files"></a> Для Hyper-V требуются несжатые и и незашифрованные файлы
+## <a name="Files"></a> Для Hyper-V требуются несжатые и и незашифрованные файлы
  На жестком диске, настроенном с файловой системой NTFS, файлы виртуальных жестких дисков, используемых Hyper-V, не должны быть сжаты или зашифрованы. Убедитесь, что следующие каталоги не сжаты и не зашифрованы.
 
 - %LocalAppData%\Microsoft\XDE

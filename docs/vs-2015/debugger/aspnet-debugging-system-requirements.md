@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097132"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Отладка ASP.NET: Требования к системе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описаны требования к программному обеспечению и безопасности для сценариев локальной и удаленной отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
--   При локальной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и веб-приложение выполняются на одном и том же компьютере. Существуют две версии этого сценария:  
+- При локальной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и веб-приложение выполняются на одном и том же компьютере. Существуют две версии этого сценария:  
   
-    -   код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается в файловой системе;  
+    - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается в файловой системе;  
   
-    -   код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается на веб-сайте служб IIS.  
+    - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается на веб-сайте служб IIS.  
   
--   При удаленной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выполняется на клиентском компьютере и используется для отладки веб-приложения, работающего на удаленном (серверном) компьютере.  
+- При удаленной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выполняется на клиентском компьютере и используется для отладки веб-приложения, работающего на удаленном (серверном) компьютере.  
   
 ## <a name="security-requirements"></a>Требования безопасности  
  Для удаленной отладки локальный и удаленный компьютеры должны входить в домен или рабочую группу.  

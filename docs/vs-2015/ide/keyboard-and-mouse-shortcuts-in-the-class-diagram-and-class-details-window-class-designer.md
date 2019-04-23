@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113018"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классе" (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "54775831"
   
  **Содержание раздела**  
   
--   [Использование мыши в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Использование мыши в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Использование мыши в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Использование мыши в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Использование клавиатуры в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Использование клавиатуры в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Использование клавиатуры в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Использование клавиатуры в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Использование мыши в конструкторе классов  
+## <a name="MouseClassDesigner"></a> Использование мыши в конструкторе классов  
  В схемах классов поддерживаются следующие действия мыши.  
   
 |Комбинации мыши|Контекст|Описание|  
@@ -49,20 +49,20 @@ ms.locfileid: "54775831"
 |CTRL + колесико мыши|Схема классов|Изменение масштаба.|  
 |CTRL + SHIFT + щелчок|Схема классов|Изменение масштаба.|  
   
-##  <a name="MouseClassDetails"></a> Использование мыши в окне "Сведения о классах"  
+## <a name="MouseClassDetails"></a> Использование мыши в окне "Сведения о классах"  
  С помощью мыши можно изменить внешний вид окна сведений о классе и данные, которые в нем отображаются, следующими способами.  
   
--   Если щелкнуть любую изменяемую ячейку, можно изменить ее содержимое. Изменения будут отражены во всех местах, где данные хранятся или отображаются, в том числе в окне свойств и в исходном коде.  
+- Если щелкнуть любую изменяемую ячейку, можно изменить ее содержимое. Изменения будут отражены во всех местах, где данные хранятся или отображаются, в том числе в окне свойств и в исходном коде.  
   
--   Если щелкнуть любую ячейку строки, в окне свойств появятся свойства элемента, представленного этой строкой.  
+- Если щелкнуть любую ячейку строки, в окне свойств появятся свойства элемента, представленного этой строкой.  
   
--   Чтобы изменить ширину столбца, перетащите границу справа от заголовка столбца до требуемой ширины столбца.  
+- Чтобы изменить ширину столбца, перетащите границу справа от заголовка столбца до требуемой ширины столбца.  
   
--   Можно развернуть или свернуть узлы секции или свойств, щелкнув символы со стрелками слева от строки.  
+- Можно развернуть или свернуть узлы секции или свойств, щелкнув символы со стрелками слева от строки.  
   
--   В окне сведений о классе есть несколько кнопок для создания членов в текущем классе и для перехода между секциями членов в таблице окна сведений о классе. Дополнительные сведения см. в разделе «Кнопки окна сведений о классе».  
+- В окне сведений о классе есть несколько кнопок для создания членов в текущем классе и для перехода между секциями членов в таблице окна сведений о классе. Дополнительные сведения см. в разделе «Кнопки окна сведений о классе».  
   
-##  <a name="KeyboardClassDesigner"></a>Использование клавиатуры в конструкторе классов  
+## <a name="KeyboardClassDesigner"></a>Использование клавиатуры в конструкторе классов  
  В схемах классов поддерживаются следующие действия клавиатуры.  
   
 |Ключ|Контекст|Описание|  
@@ -89,7 +89,7 @@ ms.locfileid: "54775831"
 |SHIFT+TAB|Все контексты|Переход к предыдущему дочернему элементу того же родительского элемента (поддерживает обтекание).|  
 |ПРОБЕЛ|Все контексты|Переключает выбор в текущем элементе.|  
   
-##  <a name="KeyboardClassDetails"></a> Использование клавиатуры в окне "Сведения о классах"  
+## <a name="KeyboardClassDetails"></a> Использование клавиатуры в окне "Сведения о классах"  
   
 > [!NOTE]
 >  Следующие настраиваемые сочетания клавиш были выбраны специально для имитации ввода кода.  

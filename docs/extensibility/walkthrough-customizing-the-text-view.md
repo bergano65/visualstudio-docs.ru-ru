@@ -10,38 +10,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e831136014a47052d8d16b5127765cafbf13b785
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083742"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Пошаговое руководство. Настройка представления текста
 Текстовое представление можно настроить путем изменения любого из следующих свойств в его формат редактор карты:
 
--   Поле индикаторов
+- Поле индикаторов
 
--   Каретка вставки
+- Каретка вставки
 
--   Перезаписать курсора
+- Перезаписать курсора
 
--   Выделенный текст
+- Выделенный текст
 
--   Неактивный выделенный текст (то есть выбранный текст, который потерял фокус)
+- Неактивный выделенный текст (то есть выбранный текст, который потерял фокус)
 
--   Видимый пробел
+- Видимый пробел
 
 ## <a name="prerequisites"></a>Предварительные требования
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `ViewPropertyTest`.
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `ViewPropertyTest`.
 
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Удалите файлы существующих классов.
+3. Удалите файлы существующих классов.
 
 ## <a name="define-the-content-type"></a>Определить тип содержимого
 
@@ -68,28 +68,28 @@ ms.locfileid: "56697472"
 
 ## <a name="change-the-view-properties"></a>Изменение свойств представления
 
-1.  Настройка <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метод таким образом, чтобы просмотреть свойства изменяются при открытии представления. Чтобы внести необходимые изменения, сначала найдите <xref:System.Windows.ResourceDictionary> , соответствующий аспектом представление, необходимо найти. Затем измените соответствующие свойства в словаре ресурсов и настройте свойства. Пакетная вызовы <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> , вызывая <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> метод, прежде чем указывать свойства и затем <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> после задания свойства.
+1. Настройка <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метод таким образом, чтобы просмотреть свойства изменяются при открытии представления. Чтобы внести необходимые изменения, сначала найдите <xref:System.Windows.ResourceDictionary> , соответствующий аспектом представление, необходимо найти. Затем измените соответствующие свойства в словаре ресурсов и настройте свойства. Пакетная вызовы <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> , вызывая <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> метод, прежде чем указывать свойства и затем <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> после задания свойства.
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
 
 ## <a name="build-and-test-the-code"></a>Построение и тестирование кода
 
-1.  Постройте решение.
+1. Постройте решение.
 
      При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
 
-2.  Создайте текстовый файл и введите любой текст.
+2. Создайте текстовый файл и введите любой текст.
 
-    -   Курсор вставки должен быть пурпурный и перезаписать курсор должен быть бирюзовый.
+    - Курсор вставки должен быть пурпурный и перезаписать курсор должен быть бирюзовый.
 
-    -   Поле индикаторов (слева от представления текста) должен быть индикатор зеленый.
+    - Поле индикаторов (слева от представления текста) должен быть индикатор зеленый.
 
-3.  Выделите текст, который вы ввели. Цвет выделенного текста должно быть свет розовый.
+3. Выделите текст, который вы ввели. Цвет выделенного текста должно быть свет розовый.
 
-4.  Когда текст выбран, щелкните за пределами текстового окна. Цвет выделенного текста должно быть темно-розовый.
+4. Когда текст выбран, щелкните за пределами текстового окна. Цвет выделенного текста должно быть темно-розовый.
 
-5.  Включите видимый пробел. (На **изменить** последовательно выберите пункты **Дополнительно** и нажмите кнопку **Показать пустое пространство**). Введите некоторые вкладки в тексте. Красные стрелки, представляющие вкладки должны отображаться.
+5. Включите видимый пробел. (На **изменить** последовательно выберите пункты **Дополнительно** и нажмите кнопку **Показать пустое пространство**). Введите некоторые вкладки в тексте. Красные стрелки, представляющие вкладки должны отображаться.
 
 ## <a name="see-also"></a>См. также
 - [Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)

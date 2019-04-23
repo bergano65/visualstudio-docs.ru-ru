@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a442ed4a81cac312c675d9dd6d83a8901e939f15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093986"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Варианты 0x/2x/4x MSAA
 Переопределяет параметры многовыборочного сглаживания (MSAA) для всех целевых объектов отрисовки и цепочек буферов.
@@ -33,13 +33,13 @@ ms.locfileid: "56699227"
 
 - Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает целевой объект отрисовки, то есть:
 
-  -   Для члена BindFlags установлен флаг D3D11_BIND_TARGET или D3D11_BIND_DEPTH_STENCIL.
+  - Для члена BindFlags установлен флаг D3D11_BIND_TARGET или D3D11_BIND_DEPTH_STENCIL.
 
-  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.
+  - Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.
 
-  -   Член CPUAccessFlags имеет значение 0.
+  - Член CPUAccessFlags имеет значение 0.
 
-  -   Член MipLevels имеет значение 1.
+  - Член MipLevels имеет значение 1.
 
 - Устройство поддерживает запрошенное число образцов (0, 2 или 4) и качество образцов (0) для запрошенного формата целевого объекта отрисовки (член D3D11_TEXTURE2D_DESC::Format), что определяется флагом `ID3D11Device::CheckMultisampleQualityLevels`.
 

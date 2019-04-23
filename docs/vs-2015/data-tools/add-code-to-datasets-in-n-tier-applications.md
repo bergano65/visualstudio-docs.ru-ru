@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106674"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "58980072"
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 
-1.  Найдите проект, содержащий XSD-файл (набор данных).
+1. Найдите проект, содержащий XSD-файл (набор данных).
 
-2.  Выберите **.xsd** файл, чтобы открыть набор данных.
+2. Выберите **.xsd** файл, чтобы открыть набор данных.
 
-3.  Щелкните правой кнопкой мыши таблицу данных, к которому требуется добавить код (имя таблицы в строке заголовка), а затем выберите **Просмотр кода**.
+3. Щелкните правой кнопкой мыши таблицу данных, к которому требуется добавить код (имя таблицы в строке заголовка), а затем выберите **Просмотр кода**.
 
      Разделяемый класс создается и открывается в редакторе кода.
 
-4.  Добавьте код в объявление разделяемого класса.
+4. Добавьте код в объявление разделяемого класса.
 
      В следующем примере показано место добавления кода к CustomersDataTable в NorthwindDataSet:
 

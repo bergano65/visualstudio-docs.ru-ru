@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105842"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "58994542"
   
   Для того чтобы воспользоваться развертыванием надежных приложений, выполните следующие действия.  
   
-1.  Получите сертификат для издателя.  
+1. Получите сертификат для издателя.  
   
-2.  Добавьте издателя в хранилище надежных издателей на всех клиентах.  
+2. Добавьте издателя в хранилище надежных издателей на всех клиентах.  
   
-3.  Создайте приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
+3. Создайте приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
-4.  Подпишите манифест развертывания с использованием сертификата издателя.  
+4. Подпишите манифест развертывания с использованием сертификата издателя.  
   
-5.  Опубликуйте развертывание приложения на клиентских компьютерах.  
+5. Опубликуйте развертывание приложения на клиентских компьютерах.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Получение сертификата для издателя  
  Цифровые сертификаты являются основными компонентами системы аутентификации Microsoft Authenticode и системы безопасности. Authenticode является стандартной частью ОС Windows. Все приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] должны быть подписаны цифровым сертификатом независимо от того, участвуют они в развертывании надежных приложений или нет. Полное описание функционирования Authenticode c [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], см. в разделе [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ ms.locfileid: "58994542"
   
  Если развертывание приложения выполняется не в управляемой среде настольных компьютеров, имеются следующие варианты добавления сертификата в хранилище надежных издателей.  
   
--   Пространство имен <xref:System.Security.Cryptography?displayProperty=fullName> .  
+- Пространство имен <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   Компонент Internet Explorer CertMgr.exe, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- Компонент Internet Explorer CertMgr.exe, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Создание приложения ClickOnce  
  Приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это клиентское приложение [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , объединенное с файлами манифеста, которые описывают это приложение и поставляют параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

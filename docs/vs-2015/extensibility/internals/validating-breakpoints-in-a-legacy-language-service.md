@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093310"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Проверка точек останова в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58993299"
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Реализация поддержки для проверки точек останова  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Метод получает позицию точки останова. Реализация необходимо решить, ли расположение является допустимым и указать это, возвращая диапазон текста, который определяет код, связанный с позицию в строке точку останова.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Метод получает позицию точки останова. Реализация необходимо решить, ли расположение является допустимым и указать это, возвращая диапазон текста, который определяет код, связанный с позицию в строке точку останова.  
   
--   Вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> Если расположение является допустимым, или <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> если оно является недопустимым.  
+- Вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> Если расположение является допустимым, или <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> если оно является недопустимым.  
   
--   Если точка останова задана в допустимый диапазон текста выделяются точки останова.  
+- Если точка останова задана в допустимый диапазон текста выделяются точки останова.  
   
--   Если точка останова является недопустимым, появится сообщение об ошибке в строке состояния.  
+- Если точка останова является недопустимым, появится сообщение об ошибке в строке состояния.  
   
 ### <a name="example"></a>Пример  
  В этом примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> метод, который вызывает средство синтаксического анализа, чтобы получить диапазон кода (если таковые имеются) в указанном расположении.  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: 2681b407bd7fd742e4085bb71b22025f533e2210
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089150"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
 Вы можете создавать команды меню на основе объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализовывать соответствующие обработчики событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -64,9 +64,9 @@ ms.locfileid: "58993142"
    </Button>
    ``` 
      
-   1.  Задайте поля `guid` и `id` , чтобы они соответствовали GUID:ID новой команды.  
+   1. Задайте поля `guid` и `id` , чтобы они соответствовали GUID:ID новой команды.  
   
-   2.  Задайте атрибут `priority` .  
+   2. Задайте атрибут `priority` .  
   
         Атрибут `priority` используется VSCT-файлом для определения расположения кнопки среди других объектов в родительской группе.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58993142"
   
         Если атрибут `priority` пропустить, он получает значение 0.  
   
-   3.  Задайте атрибут `type` . В большинстве случаев его значение будет равно `"Button"`. Описание других допустимых типов кнопки см. в разделе [Button Element](../extensibility/button-element.md).  
+   3. Задайте атрибут `type` . В большинстве случаев его значение будет равно `"Button"`. Описание других допустимых типов кнопки см. в разделе [Button Element](../extensibility/button-element.md).  
   
 5. В определении кнопки создайте элемент [Strings](../extensibility/strings-element.md) , включающий элемент [ButtonText](../extensibility/buttontext-element.md) , который содержит имя меню, отображаемое в IDE, и элемент [CommandName](../extensibility/commandname-element.md) , который содержит имя команды, используемой для доступа к этому меню в окне **Команда** .  
   
@@ -90,7 +90,7 @@ ms.locfileid: "58993142"
   
     В зависимости от проекта это можно сделать одним из двух способов.  
   
-   -   В элементе `Button` создайте элемент [Parent](../extensibility/parent-element.md) и укажите в его полях `guid` и `id` Guid и ID (идентификатор) группы, где будет размещаться команда, которая также называется *основной родительской группой*.  
+   - В элементе `Button` создайте элемент [Parent](../extensibility/parent-element.md) и укажите в его полях `guid` и `id` Guid и ID (идентификатор) группы, где будет размещаться команда, которая также называется *основной родительской группой*.  
   
         В следующем примере задается команда, которая будет отображаться в определяемом пользователем меню.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "58993142"
        </Button>
        ```
       
-   -   Вы можете опустить элемент `Parent` , если команду предполагается размещать с помощью функции размещения команд. Создайте элемент [CommandPlacements](../extensibility/commandplacements-element.md) перед разделом `Symbols` и добавьте элемент [CommandPlacement](../extensibility/commandplacement-element.md) , имеющий `guid` и `id` команды, `priority`и родительский объект, как показано в следующем примере.  
+   - Вы можете опустить элемент `Parent` , если команду предполагается размещать с помощью функции размещения команд. Создайте элемент [CommandPlacements](../extensibility/commandplacements-element.md) перед разделом `Symbols` и добавьте элемент [CommandPlacement](../extensibility/commandplacement-element.md) , имеющий `guid` и `id` команды, `priority`и родительский объект, как показано в следующем примере.  
   
    ```xml
    <CommandPlacements>
@@ -126,11 +126,11 @@ ms.locfileid: "58993142"
   
  Для кода, использующего интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> непосредственно для обработки команд, вы должны реализовать интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> и его методы. Два наиболее важных метода — <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
   
-1.  Получите экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , как показано в следующем примере.  
+1. Получите экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , как показано в следующем примере.  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  Создайте объект <xref:System.ComponentModel.Design.CommandID> , имеющий в качестве параметров GUID и ID (идентификатор) команды для обработки, как показано в следующем примере.  
+2. Создайте объект <xref:System.ComponentModel.Design.CommandID> , имеющий в качестве параметров GUID и ID (идентификатор) команды для обработки, как показано в следующем примере.  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -138,7 +138,7 @@ ms.locfileid: "58993142"
   
      Кроме того, вы можете заполнить объект <xref:System.ComponentModel.Design.CommandID> , используя исходное строковое значение GUID и целочисленное значение ID.  
   
-3.  Создайте экземпляр объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , определяющий метод, который обрабатывает команду вместе с <xref:System.ComponentModel.Design.CommandID>, как показано в следующем примере.  
+3. Создайте экземпляр объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , определяющий метод, который обрабатывает команду вместе с <xref:System.ComponentModel.Design.CommandID>, как показано в следующем примере.  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
@@ -146,7 +146,7 @@ ms.locfileid: "58993142"
   
      Команды, созданные шаблоном проекта, по умолчанию передаются в объект <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> метода `Initialize()` класса пакета.  
   
-4.  Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand> . Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+4. Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand> . Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Команды, созданные шаблоном проекта, по умолчанию передаются в объект <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> метода `Initialize()` класса пакета. Мастер Visual Studio реализует метод `Initialize` с помощью `MenuCommand`. Для динамического отображения пункта меню вы должны изменить это на `OleMenuCommand`, как показано на следующем шаге. Кроме того, чтобы изменить текст пункта меню, необходимо добавить флаг команды TextChanges на кнопку команды меню в VSCT-файле, как показано в приведенном ниже примере.  
   
@@ -162,11 +162,11 @@ ms.locfileid: "58993142"
     </Button>
     ```
       
-5.  Передайте новую команду меню в метод <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> интерфейса <xref:System.ComponentModel.Design.IMenuCommandService> . Для команд, создаваемых шаблоном проекта, это выполняется по умолчанию, как показано в следующем примере.  
+5. Передайте новую команду меню в метод <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> интерфейса <xref:System.ComponentModel.Design.IMenuCommandService> . Для команд, создаваемых шаблоном проекта, это выполняется по умолчанию, как показано в следующем примере.  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  Реализуйте метод, который обрабатывает команду.  
+6. Реализуйте метод, который обрабатывает команду.  
   
 #### <a name="to-implement-querystatus"></a>Реализация QueryStatus  
   
@@ -245,11 +245,11 @@ ms.locfileid: "58993142"
   
 ##### <a name="to-implement-the-exec-method"></a>Реализация метода Exec  
   
--   Если `GUID` команды неизвестен, должно возвращаться значение `OLECMDERR_E_UNKNOWNGROUP`.  
+- Если `GUID` команды неизвестен, должно возвращаться значение `OLECMDERR_E_UNKNOWNGROUP`.  
   
--   Если `GUID` известен, но ID команды неизвестен, должно возвращаться значение `OLECMDERR_E_NOTSUPPORTED`.  
+- Если `GUID` известен, но ID команды неизвестен, должно возвращаться значение `OLECMDERR_E_NOTSUPPORTED`.  
   
--   Если `GUID` и ID команды соответствуют паре GUID:ID, которая используется командой в VSCT-файле, выполните код, связанный с командой, и верните значение <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
+- Если `GUID` и ID команды соответствуют паре GUID:ID, которая используется командой в VSCT-файле, выполните код, связанный с командой, и верните значение <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по схемам VSCT XML](../extensibility/vsct-xml-schema-reference.md)   

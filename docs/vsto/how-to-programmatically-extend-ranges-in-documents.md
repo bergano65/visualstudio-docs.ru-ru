@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13aca5195a965fb6078be80e5fe681a49e7d4a09
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26213477e7cec69da9171c5197371772973be5d3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114019"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Практическое руководство. Программное расширение диапазонов в документах
   После определения объекта <xref:Microsoft.Office.Interop.Word.Range> в документе Microsoft Office Word вы изменяете его начальную и конечную точки с помощью методов <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> и <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . Методы <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> и <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> принимают те же два аргумента, *Unit* и *Count*. Методы *Count* — это количество единиц для перемещения, и аргумент *Unit* может иметь одно из следующих <xref:Microsoft.Office.Interop.Word.WdUnits> значений:
@@ -49,7 +49,7 @@ ms.locfileid: "56639272"
 
 ## <a name="to-extend-a-range"></a>Расширение диапазона
 
-1.  Определите диапазон символов. Дополнительные сведения см. в разделе [Как Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).
+1. Определите диапазон символов. Дополнительные сведения см. в разделе [Как Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).
 
      Следующий пример кода можно использовать в настройке на уровне документа.
 
@@ -61,12 +61,12 @@ ms.locfileid: "56639272"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#39)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#39)]
 
-2.  Используйте метод <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> , чтобы переместить начальную позицию диапазона.
+2. Используйте метод <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> , чтобы переместить начальную позицию диапазона.
 
      [!code-vb[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#40)]
      [!code-csharp[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#40)]
 
-3.  Используйте метод <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> , чтобы переместить конечную позицию диапазона.
+3. Используйте метод <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> , чтобы переместить конечную позицию диапазона.
 
      [!code-vb[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#41)]
      [!code-csharp[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#41)]
@@ -75,7 +75,7 @@ ms.locfileid: "56639272"
 
 ### <a name="to-extend-a-range-in-a-document-level-customization"></a>Расширение диапазона в настройке на уровне документа
 
-1.  В следующем примере показан полный код для настройки на уровне документа. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.
+1. В следующем примере показан полный код для настройки на уровне документа. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#38)]
      [!code-csharp[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#38)]
@@ -84,7 +84,7 @@ ms.locfileid: "56639272"
 
 ### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>Расширение диапазона в надстройке VSTO уровня приложения
 
-1.  В следующем примере показан полный код для надстройки VSTO. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
+1. В следующем примере показан полный код для надстройки VSTO. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#38)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]

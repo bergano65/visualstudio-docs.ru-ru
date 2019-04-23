@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd0238f2eec878ef3cb22c5b75746c302daa36a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096658"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. Привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.
@@ -39,16 +39,16 @@ ms.locfileid: "56626821"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
  Первым шагом является создание проекта надстройки Word VSTO.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS**в Visual Basic или C#.
+1. Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS**в Visual Basic или C#.
 
      Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -59,46 +59,46 @@ ms.locfileid: "56626821"
 
 ### <a name="to-add-the-mtps-content-service-to-the-project"></a>Добавление службы содержимого MTPS в проект
 
-1.  В меню **Данные** выберите команду **Добавить новый источник данных**.
+1. В меню **Данные** выберите команду **Добавить новый источник данных**.
 
-2.  В **мастере настройки источника данных**щелкните элемент **Служба**и нажмите кнопку **Далее**.
+2. В **мастере настройки источника данных**щелкните элемент **Служба**и нажмите кнопку **Далее**.
 
-3.  В поле **Адрес** введите следующий URL-адрес:
+3. В поле **Адрес** введите следующий URL-адрес:
 
      **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**
 
-4.  Нажмите **Перейти**.
+4. Нажмите **Перейти**.
 
-5.  В поле **Пространство имен** введите **ContentService**и нажмите кнопку **ОК**.
+5. В поле **Пространство имен** введите **ContentService**и нажмите кнопку **ОК**.
 
-6.  В диалоговом окне **Мастер добавления ссылок** нажмите кнопку **Готово**.
+6. В диалоговом окне **Мастер добавления ссылок** нажмите кнопку **Готово**.
 
 ## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Добавьте элемент управления содержимым и привязка к данным во время выполнения
  В проектах надстройки VSTO можно добавлять и привязывать элементы управления во время выполнения. Для этого пошагового руководства настройте элемент управления содержимым для получения данных из веб-службы, когда пользователь щелкает внутри элемента управления.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Добавление элемента управления содержимым и привязка к данным
 
-1.  В классе `ThisAddIn` объявите переменные для службы содержимого MTPS, элемента управления содержимым и привязки данных.
+1. В классе `ThisAddIn` объявите переменные для службы содержимого MTPS, элемента управления содержимым и привязки данных.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2.  Добавьте следующий метод в класс `ThisAddIn` . Этот метод создает элемент управления содержимым в начале активного документа.
+2. Добавьте следующий метод в класс `ThisAddIn` . Этот метод создает элемент управления содержимым в начале активного документа.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3.  Добавьте следующий метод в класс `ThisAddIn` . Этот метод инициализирует объекты, необходимые для создания и отправки запроса в веб-службу.
+3. Добавьте следующий метод в класс `ThisAddIn` . Этот метод инициализирует объекты, необходимые для создания и отправки запроса в веб-службу.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
 
-4.  Создайте обработчик событий, чтобы извлечь документ библиотеки MSDN об элементах управления содержимым, когда пользователь щелкает внутри элемента управления, и привяжите данные к элементу управления содержимым.
+4. Создайте обработчик событий, чтобы извлечь документ библиотеки MSDN об элементах управления содержимым, когда пользователь щелкает внутри элемента управления, и привяжите данные к элементу управления содержимым.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]
 
-5.  Вызовите методы `AddRichTextControlAtRange` и `InitializeServiceObjects` из метода `ThisAddIn_Startup` . Программисты C# должны добавить обработчик событий.
+5. Вызовите методы `AddRichTextControlAtRange` и `InitializeServiceObjects` из метода `ThisAddIn_Startup` . Программисты C# должны добавить обработчик событий.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
@@ -108,9 +108,9 @@ ms.locfileid: "56626821"
 
 ### <a name="to-test-the-vsto-add-in"></a>Тестирование надстройки VSTO
 
-1.  Нажмите клавишу **F5**.
+1. Нажмите клавишу **F5**.
 
-2.  Щелкните внутри элемента управления содержимым.
+2. Щелкните внутри элемента управления содержимым.
 
      Информация загружается из службы содержимого MTPS и отображается внутри элемента управления содержимым.
 

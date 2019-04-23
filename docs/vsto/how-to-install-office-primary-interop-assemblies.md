@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109508"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Практическое руководство. Установка основных сборок взаимодействия Office
   При установке Office установите основные сборки взаимодействия Microsoft Office.
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Установка основных сборок взаимодействия при установке Office
 
-1.  Убедитесь в наличии версии .NET Framework не старше 2.0.
+1. Убедитесь в наличии версии .NET Framework не старше 2.0.
 
-2.  Установите Microsoft Office и убедитесь, что **программируемости .NET** выбран для приложений, которые вы хотите расширить (эта функция включена в установку по умолчанию).
+2. Установите Microsoft Office и убедитесь, что **программируемости .NET** выбран для приложений, которые вы хотите расширить (эта функция включена в установку по умолчанию).
 
     > [!WARNING]
     >  По умолчанию ВЗАИМОДЕЙСТВИЯ встраиваются в решение при его создании, поэтому вам не нужно разослать пользователям сборки PIA как необходимый компонент для использования надстройки VSTO или настройки.

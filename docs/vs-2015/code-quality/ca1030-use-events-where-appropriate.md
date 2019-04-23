@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58991624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072101"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030. По возможности используйте события
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58991624"
 ## <a name="cause"></a>Причина
  Открытый, защищенный или закрытый метод имя начинается с одним из следующих:
 
--   Дополнительный компонент
+- Дополнительный компонент
 
--   RemoveOn
+- RemoveOn
 
--   Fire
+- Fire
 
--   Raise
+- Raise
 
 ## <a name="rule-description"></a>Описание правила
  Данное правило отслеживает методы с именами, которые, как правило, используются для событий. События следуют шаблоне разработки наблюдателя или публикации-подписки; они используются при изменении состояния в один объект необходимо передать другим объектам. Если метод вызывается в ответ на четко определенное изменение состояния, метод должен вызываться с помощью обработчика событий. Объекты, вызывающие методы, должны создавать события, а не вызывать методы напрямую.

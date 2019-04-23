@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074887"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59659024"
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Для сохранения новых записей из объекта в базе данных  
   
--   Создайте записи путем передачи значения `TableAdapter.Insert` метод.  
+- Создайте записи путем передачи значения `TableAdapter.Insert` метод.  
   
      В следующем примере создается новая запись клиента в `Customers` таблицы, передав значения в `currentCustomer` объект `TableAdapter.Insert` метод.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59659024"
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Чтобы обновить существующие записи из объекта в базе данных  
   
--   Изменить записи путем вызова `TableAdapter.Update` метод, передав новые значения для обновления записи и передачи в исходные значения для поиска записи.  
+- Изменить записи путем вызова `TableAdapter.Update` метод, передав новые значения для обновления записи и передачи в исходные значения для поиска записи.  
   
     > [!NOTE]
     >  Необходимо, чтобы сохранить исходные значения для передачи их в объект `Update` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.  
@@ -66,7 +66,7 @@ ms.locfileid: "59659024"
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Для удаления существующих записей из базы данных  
   
--   Удалить записи путем вызова `TableAdapter.Delete` и передав исходные значения для поиска записи.  
+- Удалить записи путем вызова `TableAdapter.Delete` и передав исходные значения для поиска записи.  
   
     > [!NOTE]
     >  Необходимо, чтобы сохранить исходные значения для передачи их в объект `Delete` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.  

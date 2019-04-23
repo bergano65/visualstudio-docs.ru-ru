@@ -9,14 +9,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e205ff8e6659ee1f0200e1e2ddc4363d10539
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102657"
 ---
-# <a name="step-9-try-other-features"></a>Шаг 9. Изучение других возможностей
+# <a name="step-9-try-other-features"></a>Шаг 9. Изучение других возможностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Для изучения других функций попробуйте изменить значки и цвета, добавить в игру таймер или звуки. Чтобы сделать игру интереснее, увеличьте игровое поле или измените настройки таймера.  
@@ -25,32 +25,32 @@ ms.locfileid: "54760006"
   
 ### <a name="to-try-other-features"></a>Изучение других возможностей  
   
--   Замените значки и цвета на другие.  
+- Замените значки и цвета на другие.  
   
     > [!TIP]
     >  Попробуйте проверить свойство [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) метки.  
   
--   Добавьте таймер игры, который отслеживает время, необходимое игроку для победы.  
+- Добавьте таймер игры, который отслеживает время, необходимое игроку для победы.  
   
     > [!TIP]
     >  Для этого можно добавить метку для отображения истекшего времени в форму над TableLayoutPanel и добавить в форму еще один таймер для отслеживания времени. Следующий код служит для запуска таймера, когда игрок начинает игру, и остановки таймера после сопоставления последних двух значков.  
   
--   Добавьте звуки, которые будут воспроизводиться при нахождении игроком пары, отображении двух несовпадающих значков и повторном сокрытии значков программой.  
+- Добавьте звуки, которые будут воспроизводиться при нахождении игроком пары, отображении двух несовпадающих значков и повторном сокрытии значков программой.  
   
     > [!TIP]
     >  Для воспроизведения звуков можно использовать пространство имен System.media. Дополнительные сведения см. в разделе [Воспроизведение звуков в приложении Windows Forms (C# .NET)](http://youtu.be/qOh4ooHg1UU) или [Воспроизведение звука в Visual Basic](http://youtu.be/-4oPDeQrtMs).  
   
--   Сделайте игру труднее, увеличив игровое поле.  
+- Сделайте игру труднее, увеличив игровое поле.  
   
     > [!TIP]
     >  Необходимо не только добавить строки и столбцы в TableLayoutPanel, но и учесть количество создаваемых значков.  
   
--   Сделайте игру интереснее, скрывая первый значок, если игрок действует медленно и не щелкает второй значок в течение определенного времени.  
+- Сделайте игру интереснее, скрывая первый значок, если игрок действует медленно и не щелкает второй значок в течение определенного времени.  
   
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [Форум Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) и [Форум Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
+- Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [Форум Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) и [Форум Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
   
--   Также вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на языке Visual Basic см. в разделе [Основы Visual Basic: разработка для начинающих](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке Visual C# см. в разделе [Основы Visual C#: разработка для начинающих](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
+- Также вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на языке Visual Basic, см. в разделе [основы Visual Basic: Разработка для начинающих](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке Visual C#, см. в разделе [ C# основы: Разработка для начинающих](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
   
--   Предыдущий шаг руководства: [Шаг 8. Добавление метода для проверки, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Предыдущий раздел руководства: [Шаг 8. Добавление метода для проверки, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

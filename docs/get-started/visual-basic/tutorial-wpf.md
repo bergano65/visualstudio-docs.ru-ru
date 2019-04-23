@@ -4,6 +4,7 @@ description: Создание простого приложения Windows Desk
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324257"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857409"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
 При изучении этого руководства вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для разработки приложений в Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и выполнить отладку, одновременно приобретая навыки работы в интегрированной среде разработки ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Настройка интегрированной среды разработки (IDE)
@@ -47,7 +53,7 @@ ms.locfileid: "58324257"
 
 ::: moniker range=">=vs-2019"
 
-При запуске Visual Studio сначала открывается начальное окно. Выберите **Продолжить без кода**, чтобы открыть среду разработки. Вы увидите окна инструментов, меню и панели инструментов, а также основную область окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в верхней его части. При загрузке решения или проекта редакторы и конструкторы отображаются в центральной области окна приложения. При разработке приложения чаще всего используется именно эта область.
+При запуске Visual Studio сначала открывается начальное окно. Выберите **Продолжить без кода**, чтобы открыть среду разработки. Вы увидите окна инструментов, меню и панели инструментов, а также основную область окна. Окна инструментов закреплены в левой и правой частях окна приложения, а поле поиска, строка меню и стандартная панель инструментов закреплены в верхней его части. При загрузке решения или проекта редакторы и конструкторы отображаются в центральной области окна приложения. При разработке приложения чаще всего используется именно эта область.
 
 ::: moniker-end
 
@@ -55,35 +61,36 @@ ms.locfileid: "58324257"
 
 При создании приложения в Visual Studio необходимо сначала создать проект и решение. Этот пример демонстрирует создание проекта Windows Presentation Foundation (WPF).
 
+::: moniker range="vs-2017"
+
 1. Создайте новый проект. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
-     ::: moniker range="vs-2017"
      ![В строке меню выберите "Файл", "Создать", "Проект"](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![В строке меню выберите "Файл", "Создать", "Проект"](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. В диалоговом окне **Новый проект** выберите **Установленные** > **Visual Basic** >  категорию **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)**. Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newproject-vb.png)
+
+Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. **Конструктор WPF** отображает представление кода и представление XAML *MainWindow.xaml* в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше. Можно выбрать для просмотра только визуальное представление или только представление XAML. В **Обозревателе решений**отображаются следующие элементы.
+
+![Обозреватель решений с добавленными файлами HelloWPFApp](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. Запустите Visual Studio 2019.
+
 2. На экране **Создание нового проекта** задайте в поиске WPF, в результатах выберите **Приложение WPF (.NET Framework)** и щелкните **Далее**.
 
    ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. На следующем экране присвойте проекту имя **HelloWPFApp** и щелкните **Создать**.
-::: moniker-end
 
 Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. **Конструктор WPF** отображает представление кода и представление XAML *MainWindow.xaml* в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше. Можно выбрать для просмотра только визуальное представление или только представление XAML. В **Обозревателе решений**отображаются следующие элементы.
 
-::: moniker range="vs-2017"
-![Обозреватель решений с добавленными файлами HelloWPFApp](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![Обозреватель решений с добавленными файлами HelloWPFApp](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]
@@ -109,7 +116,7 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 
 ### <a name="add-a-textblock-control"></a>Добавление элемента управления TextBlock
 
-1.  Нажмите клавиши **CTRL**+**Q**, чтобы вызвать панель **быстрого запуска** и введите **Панель элементов**. Выберите в списке результатов **Представление > Панель элементов**.
+1.  Нажмите **CTRL**+**Q** для активации поля поиска и введите **Панель элементов**. Выберите в списке результатов **Представление > Панель элементов**.
 
 2. В окне **Панель элементов** разверните узел **Типовые элементы управления WPF**, чтобы увидеть элемент управления TextBlock.
 
@@ -249,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>Добавление точек останова
 
-1. Откройте файл *Greetings.xaml.vb* и выделите строку `MessageBox.Show("Hello.")`.
+1. Откройте файл *Greetings.xaml.vb* и выделите следующую строку: `MessageBox.Show("Hello.")`
 
 2. Добавьте точку останова, нажав клавишу **F9** или выбрав меню **Отладка**, а затем — **Точка останова**.
 
@@ -295,5 +302,5 @@ IsChecked="True"
 
 ## <a name="see-also"></a>См. также
 
-- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Советы по повышению производительности](../../ide/productivity-tips-for-visual-studio.md)

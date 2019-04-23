@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077346"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54787096"
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона  
  Параметры шаблона объявляются в формате $*параметр*$. Например:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах  
   
-1.  В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.  
+1. В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.  
   
-2.  Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.  
+2. Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.  
   
-3.  В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта следует использовать для пространства имен в файле:  
+3. В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта следует использовать для пространства имен в файле:  
   
     ```  
     namespace $safeprojectname$  

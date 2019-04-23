@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076215"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59649450"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Чтобы скачать и установить инструменты удаленной отладки
   
-1.  На устройство или сервер компьютера, необходимо выполнить отладку (а не компьютер под управлением Visual Studio) получите правильную версию инструментов удаленной отладки.
+1. На устройство или сервер компьютера, необходимо выполнить отладку (а не компьютер под управлением Visual Studio) получите правильную версию инструментов удаленной отладки.
 
     |Версия|Ссылка|Примечания|
     |-|-|-|
@@ -47,14 +47,14 @@ ms.locfileid: "59649450"
     |Visual Studio 2013|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2013|
     |Visual Studio 2012|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2012|
   
-2.  На странице загрузки выберите версию инструментов, которая соответствует операционной системе (x 86, x64 или версию ARM) и загрузить инструменты удаленной отладки.
+2. На странице загрузки выберите версию инструментов, которая соответствует операционной системе (x 86, x64 или версию ARM) и загрузить инструменты удаленной отладки.
   
     > [!IMPORTANT]
     >  Мы рекомендуем установить последнюю версию инструментов удаленной отладки, соответствующую используемой версии Visual Studio. Несовпадение версий не рекомендуется.  
     >   
     >  Кроме того необходимо установить инструменты удаленной отладки, которые имеют ту же архитектуру, что операционной системы, на котором вы хотите установить его. Другими словами Если вы хотите выполнить отладку 32-разрядное приложение на удаленном компьютере под управлением 64-разрядной ОС, необходимо установить 64-разрядной версии инструментов удаленной отладки на удаленном компьютере.  
   
-3.  Скачав исполняемый файл, следуйте инструкциям по установке приложения на удаленном компьютере. См. в разделе [инструкции по установке](#bkmk_setup)
+3. Скачав исполняемый файл, следуйте инструкциям по установке приложения на удаленном компьютере. См. в разделе [инструкции по установке](#bkmk_setup)
 
 Если попытаться скопировать удаленный отладчик (msvsmon.exe) на удаленный компьютер и запустите его, имейте в виду, **мастер настройки удаленного отладчика** (**rdbgwiz.exe**) устанавливается только в том случае, при загрузке инструменты и вам может потребоваться использовать мастер для настройки позднее, особенно в том случае, если требуется, чтобы удаленный отладчик для запуска в качестве службы. Дополнительные сведения см. в разделе [(необязательно) Настройка удаленного отладчика как службы](#bkmk_configureService) ниже.
 
@@ -78,27 +78,27 @@ ms.locfileid: "59649450"
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Удаленный компьютер должен работать под управлением одной из следующих операционных систем:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 или 8.1  
+- Windows 8 или 8.1  
   
--   Windows 7 с пакетом обновления 1 (SP1)  
+- Windows 7 с пакетом обновления 1 (SP1)  
   
--   Windows Server 2012 или Windows Server 2012 R2  
+- Windows Server 2012 или Windows Server 2012 R2  
   
--   Windows Server 2008 с пакетом обновления 2 (SP2), Windows Server 2008 R2 с пакетом обновления 1 (SP1)  
+- Windows Server 2008 с пакетом обновления 2 (SP2), Windows Server 2008 R2 с пакетом обновления 1 (SP1)  
   
 ## <a name="supported-hardware-configurations"></a>Поддерживаемые конфигурации оборудования  
   
--   Процессор с тактовой частотой 1,6 ГГц или большей  
+- Процессор с тактовой частотой 1,6 ГГц или большей  
   
--   1 ГБ ОЗУ (1,5 ГБ при выполнении в виртуальной машине)  
+- 1 ГБ ОЗУ (1,5 ГБ при выполнении в виртуальной машине)  
   
--   1 ГБ доступного пространства на жестком диске  
+- 1 ГБ доступного пространства на жестком диске  
   
--   Жесткий диск 5400 об/мин  
+- Жесткий диск 5400 об/мин  
   
--   Видеоадаптер с поддержкой DirectX 9 и разрешением экрана 1024x768 или выше  
+- Видеоадаптер с поддержкой DirectX 9 и разрешением экрана 1024x768 или выше  
   
 ## <a name="network-configuration"></a>Конфигурация сети  
  Удаленный компьютер и компьютер Visual Studio должны быть подключены по сети, объединены в рабочую или домашнюю группу либо соединены напрямую с помощью кабеля Ethernet. Отладка через Интернет не поддерживается.  
@@ -147,7 +147,7 @@ ms.locfileid: "59649450"
    > [!WARNING]
   >  Вы можете запускать инструменты удаленной отладки в режиме "без аутентификации", однако настоятельно рекомендуется не использовать этот режим. При работе в этом режиме сетевая безопасность не обеспечивается. Режим без аутентификации можно выбрать, только если вы уверены в отсутствии вредоносного или опасного трафика.
 
-##  <a name="bkmk_configureService"></a> (Необязательно) Настройка удаленного отладчика в качестве службы
+## <a name="bkmk_configureService"></a> (Необязательно) Настройка удаленного отладчика в качестве службы
  Для отладки в ASP.NET и других серверных средах, необходимо запустить удаленный отладчик с правами администратора или, при необходимости его всегда работает, запускать удаленный отладчик как службу.
   
  Если вы хотите настроить удаленный отладчик как службу, выполните следующие действия.  
@@ -282,16 +282,16 @@ ms.locfileid: "59649450"
   
  Дополнительные сведения см в справке по удаленной отладке (нажмите клавишу **F1** в окне удаленного отладчика, или щелкните **Справка / использования**). Также см. запись блога с описанием [изменений, связанных с удаленной загрузкой символов .NET в Visual Studio 2012 и 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
-##  <a name="bkmk_winstoreAzure"></a> Удаленная отладка в приложениях Windows Store и Azure  
+## <a name="bkmk_winstoreAzure"></a> Удаленная отладка в приложениях Windows Store и Azure  
  Сведения об удаленной отладке приложений Windows Store, см. в разделе [отладка и тестирование приложений Windows Store на удаленном устройстве из Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Сведения об отладке в Azure см. в одном из следующих разделов:  
   
--   [Отладка облачной службы или виртуальной машины в Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Отладка облачной службы или виртуальной машины в Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Отладка серверной части .NET в Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Отладка серверной части .NET в Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Введение в удаленную отладку на веб-сайты Azure ([часть 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [часть 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [часть 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Введение в удаленную отладку на веб-сайты Azure ([часть 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [часть 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [часть 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   

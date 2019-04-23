@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108975"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Практическое руководство. Программное перемещение элементов в Outlook
   В этом примере перемещает непрочитанные сообщения электронной почты из **папки "Входящие"** в папку с именем **теста**. В примере перемещается только сообщения, которые содержат слово **теста** в `Subject` поля.
@@ -30,9 +30,9 @@ ms.locfileid: "56641628"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Папка почты Outlook с именем **теста**.
+- Папка почты Outlook с именем **теста**.
 
--   Сообщение электронной почты с слово **теста** в `Subject` поля.
+- Сообщение электронной почты с слово **теста** в `Subject` поля.
 
 ## <a name="see-also"></a>См. также
 - [Работа с папками](../vsto/working-with-folders.md)

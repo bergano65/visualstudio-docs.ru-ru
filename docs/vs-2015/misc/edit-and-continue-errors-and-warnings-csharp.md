@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58990017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085094"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Ошибки и предупреждения режима "Изменить и продолжить" (C#)
 Были внесены изменения в раздел кода, изменение которого не допускается при использовании операции "Изменить и продолжить" языка Visual C#.  
@@ -79,11 +79,11 @@ ms.locfileid: "58990017"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1.  Выберите команду **Отменить** в меню **Отладка** для отмены изменений.  
+1. Выберите команду **Отменить** в меню **Отладка** для отмены изменений.  
   
-     - или -  
+     -или-  
   
-2.  Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
+2. Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
   
 ## <a name="see-also"></a>См. также  
  [Режим "Изменить и продолжить" (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

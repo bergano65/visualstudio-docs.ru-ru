@@ -27,35 +27,35 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b10bb975d03ee317c23831ad72e9f5ac0ee6659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114571"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Отладка веб-приложений: ошибки и устранение неполадок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При попытке отладки веб-приложений возможны следующие ошибки:  
   
--   [Устранение неполадок](../debugger/debugging-web-applications-troubleshooting.md)  
+- [Устранение неполадок](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Ошибка: веб-узел использует IP-адрес](../debugger/error-site-uses-ip-address.md)  
+- [Ошибка: веб-узел использует IP-адрес](../debugger/error-site-uses-ip-address.md)  
   
--   [Ошибка: проверка безопасности не прошла, так как не был получен ответ от службы администрирования IIS](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- [Ошибка: проверка безопасности не прошла, так как не был получен ответ от службы администрирования IIS](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
--   [Ошибка: не установлено средство ASP.NET](../debugger/error-aspnet-not-installed.md)  
+- [Ошибка: не установлено средство ASP.NET](../debugger/error-aspnet-not-installed.md)  
   
--   [Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- [Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [Ошибка: веб-сервер настроен неправильно](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [Ошибка: веб-сервер настроен неправильно](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
--   [Ошибка: веб-сервер заблокирован и блокирует команду DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [Ошибка: веб-сервер заблокирован и блокирует команду DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Ошибка: время ожидания при отладке веб-служб](../debugger/error-timeout-while-debugging-web-services.md)  
+- [Ошибка: время ожидания при отладке веб-служб](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Ошибка: не удается запустить отладку на веб-сервере](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- [Ошибка: не удается запустить отладку на веб-сервере](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   

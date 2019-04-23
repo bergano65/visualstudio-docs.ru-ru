@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112615"
 ---
 # <a name="how-to-implement-undo-management"></a>Практическое руководство. Реализуйте механизмы управления отменой
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58990702"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Для поддержки управления отменой для редактора одним представлением  
   
-1.  Вызовите `QueryInterface` на `IServiceProvider` интерфейса на фрейм окна для `IOleUndoManager`, из объекта представления документа, чтобы открыть диспетчер отмены (`IID_IOLEUndoManager`).  
+1. Вызовите `QueryInterface` на `IServiceProvider` интерфейса на фрейм окна для `IOleUndoManager`, из объекта представления документа, чтобы открыть диспетчер отмены (`IID_IOLEUndoManager`).  
   
-2.  При размещении представления в рамку окна, он получает указатель сайта, который он может использовать для вызова `QueryInterface` для `IServiceProvider`.  
+2. При размещении представления в рамку окна, он получает указатель сайта, который он может использовать для вызова `QueryInterface` для `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Случаи, когда редактор поддерживает несколько представлений  
  Если у вас есть Разделение документа и представления, то есть обычно один диспетчер отмены связан сам документ. Все блоки отмены помещаются на один диспетчер отмены связанный с объектом данных документа.  
@@ -48,17 +48,17 @@ ms.locfileid: "58990702"
   
 3. Ретрансляции вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> вызывает сохраненную `IOleCommandTarget` интерфейса для следующих команд StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Вызовите `QueryInterface` на `IOleUndoManager` для `IID_IVsChangeTrackingUndoManager`. Указатель на Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание многопроектных шаблонов | Документация Майкрософт
+title: Практическое руководство. Создание многопроектных шаблонов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096456"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,14 +49,14 @@ ms.locfileid: "54755343"
   
   Корневой VSTEMPLATE-файл многопроектного шаблона отличается от однопроектного шаблона следующим образом:  
   
-- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`. Например:  
+- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`. Пример:  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Например:  
+- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Пример:  
   
   ```  
   <TemplateContent>  
@@ -79,15 +79,15 @@ ms.locfileid: "54755343"
   
 ### <a name="to-create-a-multi-project-template"></a>Создание многопроектного шаблона  
   
-1.  Создайте проекты для включения в многопроектный шаблон.  
+1. Создайте проекты для включения в многопроектный шаблон.  
   
-2.  Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. в статье [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md).  
+2. Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. в разделе [Как Создание шаблонов проектов](../ide/how-to-create-project-templates.md).  
   
-3.  Создайте корневой VSTEMPLATE-файл, который будет содержать метаданные для многопроектного шаблона. Дополнительные сведения см. в первом примере в следующем разделе.  
+3. Создайте корневой VSTEMPLATE-файл, который будет содержать метаданные для многопроектного шаблона. Дополнительные сведения см. в первом примере в следующем разделе.  
   
-4.  Выберите включаемые в шаблон файлы и папки, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Файлы и папки сжимаются в ZIP-файл.  
+4. Выберите включаемые в шаблон файлы и папки, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Файлы и папки сжимаются в ZIP-файл.  
   
-5.  Поместите ZIP-файл шаблона в каталог шаблонов проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ProjectTemplates\\.  
+5. Поместите ZIP-файл шаблона в каталог шаблонов проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Пример  
  В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] назначает данному проекту. Если атрибут `ProjectName` не существует, имя VSTEMPLATE-файла используется в качестве имени проекта.  
@@ -149,7 +149,7 @@ ms.locfileid: "54755343"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)   

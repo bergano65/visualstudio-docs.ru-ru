@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baefb34bf098b9d5b712267a88303b25a2d5687d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102800"
 ---
 # <a name="adding-and-removing-property-pages"></a>Добавление и удаление страниц свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58991700"
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>Чтобы удалить страницу свойств в конструкторе проектов  
   
-1.  Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.  
+1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ ms.locfileid: "58991700"
     }  
     ```  
   
-2.  Удалить **события построения** страница из полученная `clsids` списка.  
+2. Удалить **события построения** страница из полученная `clsids` списка.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -111,7 +111,7 @@ ms.locfileid: "58991700"
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Чтобы добавить страницы свойств в конструкторе проектов  
   
-1.  Создание страницы свойств, которые вы хотите добавить.  
+1. Создание страницы свойств, которые вы хотите добавить.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ ms.locfileid: "58991700"
     }  
     ```  
   
-2.  Регистрация новой страницы свойств.  
+2. Регистрация новой страницы свойств.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ ms.locfileid: "58991700"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.  
+3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45ccabfbeceeeb64a07764cc4ed32d6dead00db8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104412"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Практическое руководство. Добавление свойства в пользовательский тип элемента проекта SharePoint
   При определении настраиваемого типа элемента проекта SharePoint, можно добавить свойство к элементу проекта. Свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**.
@@ -28,11 +28,11 @@ ms.locfileid: "56644488"
 
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Добавление свойства в определении типа элемента проекта
 
-1.  Определение класса с открытое свойство, которое представляет свойство, которое вы добавляете для пользовательского типа элемента проекта. Если вы хотите добавить несколько свойств для пользовательского типа элемента проекта, можно определить все свойства, в том же классе или в разных классах.
+1. Определение класса с открытое свойство, которое представляет свойство, которое вы добавляете для пользовательского типа элемента проекта. Если вы хотите добавить несколько свойств для пользовательского типа элемента проекта, можно определить все свойства, в том же классе или в разных классах.
 
-2.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *projectItemTypeDefinition* параметра.
+2. В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *projectItemTypeDefinition* параметра.
 
-3.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событий, добавьте экземпляр пользовательского класса свойств для <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.
+3. В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событий, добавьте экземпляр пользовательского класса свойств для <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.
 
 ## <a name="example"></a>Пример
  В следующем примере кода показано, как добавить свойство с именем **примером свойства** для пользовательского типа элемента проекта.
@@ -48,22 +48,22 @@ ms.locfileid: "56644488"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Указать поведение пользовательских свойств
  Можно определить, как выглядит и ведет себя как пользовательское свойство **свойства** окна, применяя различные атрибуты из <xref:System.ComponentModel> пространство имен для определения свойства. Следующие атрибуты полезны во многих сценариях:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Указывает имя свойства, которое отображается в **свойства** окна.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Указывает имя свойства, которое отображается в **свойства** окна.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Задает строку описания, который отображается в нижней части **свойства** окно при выборе свойства.
+- <xref:System.ComponentModel.DescriptionAttribute>: Задает строку описания, который отображается в нижней части **свойства** окно при выборе свойства.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение по умолчанию свойства.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение по умолчанию свойства.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Задает настраиваемое преобразование между строкой, отображаемой в **свойства** окно и значение свойства, не являющегося строкой.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Задает настраиваемое преобразование между строкой, отображаемой в **свойства** окно и значение свойства, не являющегося строкой.
 
--   <xref:System.ComponentModel.EditorAttribute>: Указывает пользовательский редактор для изменения свойства.
+- <xref:System.ComponentModel.EditorAttribute>: Указывает пользовательский редактор для изменения свойства.
 
 ## <a name="compile-the-code"></a>Компиляция кода
  Эти примеры кода требуется проект библиотеки классов с помощью ссылки на следующие сборки:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Развернуть элемент проекта
  Чтобы другие разработчики могли использовать созданный элемент проекта, создайте шаблон проекта или шаблона элемента проекта. Дополнительные сведения см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

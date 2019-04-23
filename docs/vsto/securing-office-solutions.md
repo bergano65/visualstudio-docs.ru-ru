@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107623"
 ---
 # <a name="secure-office-solutions"></a>Безопасные решения Office
   Модель безопасности для решений Office включает несколько технологий: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Центр управления безопасностью в Microsoft Office и зону ограниченных узлов браузера Internet Explorer. Работа различных возможностей безопасности описана в следующих разделах.
@@ -38,7 +38,7 @@ ms.locfileid: "54871186"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> Предоставление доверия решениям Office
+## <a name="GrantingTrustToSolutions"></a> Предоставление доверия решениям Office
  Присвоение уровня доверия решениям Office означает изменение политики безопасности для каждого конечного пользователя таким образом, что доверие решению Office предоставляется на основании следующего свидетельства.
 
 - Сертификат, используемый для подписания манифеста развертывания.
@@ -47,16 +47,16 @@ ms.locfileid: "54871186"
 
   Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md).
 
-##  <a name="GrantingTrustToDocuments"></a> Предоставить доверие к документам
+## <a name="GrantingTrustToDocuments"></a> Предоставить доверие к документам
  Настройка уровня документа требует, чтобы документ находился в каталоге, назначенном в качестве надежного расположения. Дополнительные сведения см. в разделе [предоставления доверия к документам](../vsto/granting-trust-to-documents.md).
 
-##  <a name="GrantingTrustWindowsInstaller"></a> Предоставление доверия при использовании установщика Windows
+## <a name="GrantingTrustWindowsInstaller"></a> Предоставление доверия при использовании установщика Windows
  Чтобы создать MSI-файл для установки решений Office в каталог Program Files, можно использовать установщик Windows. Для этого требуются права администратора. Для решений Office в каталог Program Files Visual Studio 2010 Tools для Office runtime считает эти решения Office доверенными и не выводит запрос о доверии ClickOnce.
 
-##  <a name="Security"></a> Рекомендации по обеспечению безопасности для решений Office
+## <a name="Security"></a> Рекомендации по обеспечению безопасности для решений Office
  Средства безопасности, предоставляемые [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] и Microsoft Office, помогают защитить решения Office от различных угроз безопасности. Дополнительные сведения см. в разделе [рекомендации по обеспечению безопасности для решений Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
-##  <a name="SecurityDuringDeployment"></a> Безопасность во время разработки
+## <a name="SecurityDuringDeployment"></a> Безопасность во время разработки
  Чтобы упростить процесс разработки, Visual Studio задает политику безопасности, требуемую для выполнения и отладки решения на компьютере, при каждой сборке проекта. В некоторых случаях могут потребоваться дополнительные меры обеспечения безопасности при разработке проекта.
 
 ### <a name="document-level-solutions"></a>Решения уровня документа
@@ -75,7 +75,7 @@ ms.locfileid: "54871186"
 
  Через некоторое время может накопиться большое количество временных сертификатов, поэтому их нужно периодически удалять.
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools для Office runtime
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools для Office runtime
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Содержит функции для проверки удостоверения издателя и разрешения, предоставленные для настройки. Он проверяет разрешения, выполняя последовательность проверок безопасности.
 
 ### <a name="security-during-customization-loading"></a>Безопасность во время загрузки настройки

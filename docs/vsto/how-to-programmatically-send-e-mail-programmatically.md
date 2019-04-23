@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110795"
 ---
 # <a name="how-to-programmatically-send-email"></a>Практическое руководство. Отправка сообщения электронной почты
   Этот пример отправляет сообщение электронной почты, контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.
@@ -33,7 +33,7 @@ ms.locfileid: "56646009"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.
+- Контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.
 
 ## <a name="robust-programming"></a>Отказоустойчивость
  Не удаляйте код фильтра, который ищет имя домена **example.com**. Решение будет отправлять сообщения электронной почты для всех контактов, если удалить фильтр.

@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086771"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Создание и запуск модульных тестов для приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ ms.locfileid: "54794496"
 >  Подразделы данного раздела описывают функциональность Visual Studio 2012 Express для Windows 8. Visual Studio Ultimate, VS Premium и VS Professional предоставляет дополнительные функции для модульного тестирования.
 >
 > - В VS Ultimate, VS Premium и VS Professional можно использовать любые сторонние среды модульного тестирования или среды с открытым кодом, для которых создан адаптер надстройки для обозревателя тестов корпорации Майкрософт. Кроме того, с помощью VS Ultimate и VS Premium можно анализировать и отображать данные о покрытии кода для тестов.
->   -   В VS Ultimate можно запускать тесты после каждой сборки. Вы также можете использовать Microsoft Fakes — платформу изоляции для управляемого кода, позволяющую сосредоточиться на тестировании разрабатываемого кода за счет замены кода системы и сторонних функций.
->   -   **JavaScript**. Модульное тестирование JavaScript недоступно из интерфейса IDE Visual Studio Express для Windows 8. В Visual Studio Professional, Premium и Ultimate платформы модульного тестирования JavaScript доступны в виде расширений в коллекции Visual Studio. Вы также можете тестировать код JavaScript с помощью одной из автономных сторонних платформ модульных тестов JavaScript или платформ с открытым исходным кодом.
+>   - В VS Ultimate можно запускать тесты после каждой сборки. Вы также можете использовать Microsoft Fakes — платформу изоляции для управляемого кода, позволяющую сосредоточиться на тестировании разрабатываемого кода за счет замены кода системы и сторонних функций.
+>   - **JavaScript**. Модульное тестирование JavaScript недоступно из интерфейса IDE Visual Studio Express для Windows 8. В Visual Studio Professional, Premium и Ultimate платформы модульного тестирования JavaScript доступны в виде расширений в коллекции Visual Studio. Вы также можете тестировать код JavaScript с помощью одной из автономных сторонних платформ модульных тестов JavaScript или платформ с открытым исходным кодом.
 >
 >   См. дополнительные сведения о [модульном тестировании кода](../test/unit-test-your-code.md) в библиотеке MSDN.
 

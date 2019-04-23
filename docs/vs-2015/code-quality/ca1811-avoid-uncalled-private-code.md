@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0f7272178edd1113d01644de9a5224e24907b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113525"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811. Избегайте невызываемого частного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "58990601"
 ## <a name="cause"></a>Причина
  Член закрытым или внутренним (на уровне сборки) не поддерживает вызывающих объектов в сборке, не вызывается средой CLR и не вызывается делегат. Это правило не проверяются следующие члены:
 
--   Явные члены интерфейса.
+- Явные члены интерфейса.
 
--   Статические конструкторы.
+- Статические конструкторы.
 
--   Конструкторы сериализации.
+- Конструкторы сериализации.
 
--   Методы, помеченные как <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Методы, помеченные как <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Члены, которые являются переопределениями.
+- Члены, которые являются переопределениями.
 
 ## <a name="rule-description"></a>Описание правила
  Это правило можно отчетов ложных положительных результатов, в случае точки входа, не распознаются в настоящее время логике правила. Кроме того компилятор может выдать noncallable кода в сборку.

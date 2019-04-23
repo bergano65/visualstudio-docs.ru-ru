@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101448"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio поможет вам расширить возможности Visual Studio или интегрировать новые возможности в Visual Studio. Вы можете предоставлять свои расширения другим пользователям, а также в Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -67,11 +67,11 @@ ms.locfileid: "57867356"
 
  Дополнительные сведения в [VSX Arcana блог](https://blogs.msdn.microsoft.com/vsx/) и ряд блогов, написанные специалистами MVP:
 
--   [Избранные расширения Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Избранные расширения Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
--   [Расширяемость Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Расширяемость Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
--   [Расширение Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Расширение Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>См. также
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)

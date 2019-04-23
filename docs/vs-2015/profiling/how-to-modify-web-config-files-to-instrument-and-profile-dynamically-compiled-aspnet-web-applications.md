@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099598"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ ms.locfileid: "54774997"
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Добавление сборки ASPNetHelper как элемента configuration/runtime/assemblyBinding/dependentAssembly  
   
-1.  При необходимости добавьте элемент **runtime** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **runtime** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **runtime** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **runtime**.  
   
-2.  При необходимости добавьте элемент **assemblyBinding** как дочерний элемент элемента **runtime**; в противном случае переходите к следующему шагу.  
+2. При необходимости добавьте элемент **assemblyBinding** как дочерний элемент элемента **runtime**; в противном случае переходите к следующему шагу.  
   
      Элемент **runtime** может иметь только один элемент **assemblyBinding**.  
   
-3.  Добавьте следующее имя и значение атрибута в элемент **assemblyBinding**:  
+3. Добавьте следующее имя и значение атрибута в элемент **assemblyBinding**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Добавьте элемент **dependentAssembly** как дочерний элемент элемента **assemblyBinding**.  
+4. Добавьте элемент **dependentAssembly** как дочерний элемент элемента **assemblyBinding**.  
   
      Элемент **dependentAssembly** не имеет атрибутов.  
   
-5.  Добавьте элемент **assemblyIdentity** как дочерний элемент элемента **dependentAssembly**.  
+5. Добавьте элемент **assemblyIdentity** как дочерний элемент элемента **dependentAssembly**.  
   
-6.  Добавьте следующие имена и значения атрибутов в элемент **assemblyIdentity**:  
+6. Добавьте следующие имена и значения атрибутов в элемент **assemblyIdentity**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ ms.locfileid: "54774997"
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Добавьте элемент **codeBase** как дочерний элемент элемента **dependentAssembly**.  
+7. Добавьте элемент **codeBase** как дочерний элемент элемента **dependentAssembly**.  
   
-8.  Добавьте следующие имена и значения атрибутов в элемент **codeBase**:  
+8. Добавьте следующие имена и значения атрибутов в элемент **codeBase**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ ms.locfileid: "54774997"
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Добавление шага пост-обработки профилировщика в элемент configuration/system.web/compilation  
   
-1.  При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **system.web** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **system.web**.  
   
-2.  При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.  
+2. При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.  
   
      Элемент **system.web** может иметь только один дочерний элемент **compilation**.  
   
-3.  Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:  
+3. Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ ms.locfileid: "54774997"
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Добавление параметров расположения профилировщика в элемент configuration/appSettings  
   
-1.  При необходимости добавьте элемент **appSettings** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **appSettings** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **appSettings** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **appSettings**.  
   
-2.  Добавьте элемент **add** как дочерний элемент элемента **appSettings**.  
+2. Добавьте элемент **add** как дочерний элемент элемента **appSettings**.  
   
-3.  Добавьте следующие имена и значения атрибутов в элемент **add**:  
+3. Добавьте следующие имена и значения атрибутов в элемент **add**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
+4. Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
   
-5.  Добавьте следующие имена и значения атрибутов в этот элемент **add**:  
+5. Добавьте следующие имена и значения атрибутов в этот элемент **add**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  

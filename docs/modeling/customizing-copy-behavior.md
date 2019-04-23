@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109833"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 Доменный язык (DSL) создана с пакет SDK моделирования и визуализации Visual Studio можно изменить, что происходит, когда пользователь копирует и вставляет элементы.
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Определите два метода в классе ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` вызывается для определения обратной связи, которая должна быть предоставлена пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.

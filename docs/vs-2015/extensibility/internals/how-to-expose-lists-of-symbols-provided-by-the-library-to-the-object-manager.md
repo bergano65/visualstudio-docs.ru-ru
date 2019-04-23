@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106778"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое руководство. Предоставление списка символов, переданных из библиотеки в диспетчер объектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58994207"
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Чтобы предоставить списки символы в диспетчер объектов  
   
-1.  Получить число элементов в список символов, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод. В следующем примере показано, каким образом диспетчер объектов получает информацию на количество элементов в списке.  
+1. Получить число элементов в список символов, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод. В следующем примере показано, каким образом диспетчер объектов получает информацию на количество элементов в списке.  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ ms.locfileid: "58994207"
   
     ```  
   
-2.  Получение сведений о категориях и атрибуты данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод. Категории элементов задаются в <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> перечисления. В следующем примере показано, каким образом диспетчер объектов получает атрибуты элементов для данной категории.  
+2. Получение сведений о категориях и атрибуты данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод. Категории элементов задаются в <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> перечисления. В следующем примере показано, каким образом диспетчер объектов получает атрибуты элементов для данной категории.  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ ms.locfileid: "58994207"
   
     ```  
   
-3.  Получить текстовое представление данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод. Следующий пример демонстрирует получить полное имя данного элемента.  
+3. Получить текстовое представление данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод. Следующий пример демонстрирует получить полное имя данного элемента.  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ ms.locfileid: "58994207"
   
     ```  
   
-4.  Получение данных о значок для данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод. Значок представляет тип (класс, метод и т. д.) и специальных возможностей (частного, общедоступного и т. д.) элемента списка. Приведенный ниже показано, как следует получить значок, исходя из атрибутов данного элемента.  
+4. Получение данных о значок для данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод. Значок представляет тип (класс, метод и т. д.) и специальных возможностей (частного, общедоступного и т. д.) элемента списка. Приведенный ниже показано, как следует получить значок, исходя из атрибутов данного элемента.  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ ms.locfileid: "58994207"
   
     ```  
   
-5.  Получить сведения о ли указанный элемент списка является расширяемым, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод. В следующем примере показано, как для получения сведений о ли заданный элемент можно развернуть.  
+5. Получить сведения о ли указанный элемент списка является расширяемым, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод. В следующем примере показано, как для получения сведений о ли заданный элемент можно развернуть.  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ ms.locfileid: "58994207"
   
     ```  
   
-6.  Получение списка дочерних символы в указанном объекте списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. В следующем примере демонстрируется получение дочерний список символов для данного элемента **вызвать** или **вызывающим объектам** диаграмм.  
+6. Получение списка дочерних символы в указанном объекте списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. В следующем примере демонстрируется получение дочерний список символов для данного элемента **вызвать** или **вызывающим объектам** диаграмм.  
   
     ```vb  
     ' Call graph list.  

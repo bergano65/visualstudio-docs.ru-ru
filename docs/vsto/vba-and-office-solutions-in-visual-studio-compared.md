@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97ff0b7e11bf79a8da6f3e034227c66ae1f9189
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110951"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Решения VBA и Office в Visual Studio по сравнению с
   В Microsoft Visual Basic для приложений (VBA) используется неуправляемый код, который тесно интегрирован с приложениями Office. Проекты Microsoft Office, созданные с помощью Visual Studio, позволяют воспользоваться преимуществами платформы .NET Framework и средств разработки Visual Studio.
@@ -38,9 +38,9 @@ ms.locfileid: "56618332"
 
  Некоторые задачи по-прежнему проще и быстрее выполнить с помощью VBA. В частности, VBA может быть необходимо использовать для:
 
--   настраиваемых функций для работы с листами.
+- настраиваемых функций для работы с листами.
 
--   записи макросов.
+- записи макросов.
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Объединение решений VBA и решений Office, созданных с помощью Visual Studio
  Код VBA можно вызывать из решений Office, созданных с помощью Visual Studio. Также можно вызывать код в решениях Office, созданных с помощью Visual Studio, из VBA. Конкретная методика зависит от того, является ли ваше решение Office надстройкой VSTO или настройкой на уровне документа. Дополнительные сведения см. в разделе [вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) и [объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md).

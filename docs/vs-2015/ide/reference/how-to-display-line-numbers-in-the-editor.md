@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be7091a9a960a62a0f60ad9bb0093a2f0d08236b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088266"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Практическое руководство. Отображение номеров строк в редакторе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "59650986"
   
 #### <a name="to-display-line-numbers-in-code"></a>Отображение номеров строк в коде  
   
-1.  В строке меню выберите **Сервис**, **Параметры**. Разверните узел **Текстовый редактор**, а затем выберите узел используемого языка или узел **Все языки**, чтобы включить номера строк во всех языках. Можно также ввести **номер строки** в окне **Быстрый запуск**.  
+1. В строке меню выберите **Сервис**, **Параметры**. Разверните узел **Текстовый редактор**, а затем выберите узел используемого языка или узел **Все языки**, чтобы включить номера строк во всех языках. Можно также ввести **номер строки** в окне **Быстрый запуск**.  
   
-2.  ![Параметры отображения номеров строк в редакторе](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
+2. ![Параметры отображения номеров строк в редакторе](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
 >  В зависимости от текущих языка и параметров, можно установить флажок **Показать все параметры** в диалоговом окне **Параметры**, чтобы отобразить подузел **Все языки**.  

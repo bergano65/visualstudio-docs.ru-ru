@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104880"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Практическое руководство. Использование диагностики графики с устройством ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "59002454"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Включение удаленной отладки на устройстве с архитектурой ARM  
   
-1.  Установка [политику комплектов ARM](http://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
+1. Установка [политику комплектов ARM](http://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
   
-2.  Установка [инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) на устройстве на основе ARM.  
+2. Установка [инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) на устройстве на основе ARM.  
   
 > [!IMPORTANT]
 >  В случае с устройствами Windows Phone 8.1 необходимо зарегистрировать телефон для разработки. Для этого вы должны быть зарегистрированным разработчиком. Дополнительные сведения см. в разделе [как развернуть и запустить приложение для Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
@@ -39,11 +39,11 @@ ms.locfileid: "59002454"
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Настройка и запуск диагностики графики на устройстве  
   
-1.  На **платформ решения** стрелку раскрывающегося списка выберите **ARM** таким образом, чтобы устройства на базе ARM будут доступны как цели удаленной отладки.  
+1. На **платформ решения** стрелку раскрывающегося списка выберите **ARM** таким образом, чтобы устройства на базе ARM будут доступны как цели удаленной отладки.  
   
-2.  На **целевой объект отладки** раскрывающемся списке выберите устройство ARM.  
+2. На **целевой объект отладки** раскрывающемся списке выберите устройство ARM.  
   
-3.  В меню, выберите **Отладка**, **графики**, **Начать диагностику**. (Клавиатура: ALT + F5)  
+3. В меню, выберите **Отладка**, **графики**, **Начать диагностику**. (Клавиатура: ALT + F5)  
   
 ## <a name="see-also"></a>См. также  
  [Запустите Windows Store apps на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)   

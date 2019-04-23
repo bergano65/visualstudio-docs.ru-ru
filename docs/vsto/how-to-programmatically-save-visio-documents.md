@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069443"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Практическое руководство. Программное сохранение документов Visio
   Существует несколько способов сохранения документов Microsoft Office Visio.
@@ -35,7 +35,7 @@ ms.locfileid: "56618605"
 
 ### <a name="to-save-a-document"></a>Сохранение документа
 
--   Вызовите метод `Microsoft.Office.Interop.Visio.Document.Save` класса `Microsoft.Office.Tools.Visio.Document` документа, который был ранее сохранен.
+- Вызовите метод `Microsoft.Office.Interop.Visio.Document.Save` класса `Microsoft.Office.Tools.Visio.Document` документа, который был ранее сохранен.
 
      Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618605"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Сохранение активного документа Visio с новым именем
 
--   Вызовите метод `Microsoft.Office.Interop.Visio.Document.SaveAs` документа `Microsoft.Office.Tools.Visio.Document`, который требуется сохранить, используя полный путь, включающий имя файла. Если файл с таким именем уже существует в этой папке, он будет перезаписан без запроса подтверждения.
+- Вызовите метод `Microsoft.Office.Interop.Visio.Document.SaveAs` документа `Microsoft.Office.Tools.Visio.Document`, который требуется сохранить, используя полный путь, включающий имя файла. Если файл с таким именем уже существует в этой папке, он будет перезаписан без запроса подтверждения.
 
      Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618605"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Сохранение документа с новым именем и заданными аргументами
 
--   Вызовите метод `Microsoft.Office.Interop.Visio.Document.SaveAsEx` документа `Microsoft.Office.Tools.Visio.Document`, который требуется сохранить, используя полный путь, включающий имя файла. Если файл с таким именем уже существует в этой папке, возникает исключение.
+- Вызовите метод `Microsoft.Office.Interop.Visio.Document.SaveAsEx` документа `Microsoft.Office.Tools.Visio.Document`, который требуется сохранить, используя полный путь, включающий имя файла. Если файл с таким именем уже существует в этой папке, возникает исключение.
 
      В следующем примере кода выполняется сохранение активного документа с новым именем, пометка его как доступного только для чтения и отображение этого документа в списке последних использовавшихся документов. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618605"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера кода требуется следующее.
 
--   Для сохранения документа с новым именем, каталог с именем `Test` должен быть расположен в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Для сохранения документа с новым именем, каталог с именем `Test` должен быть расположен в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
 
 ## <a name="see-also"></a>См. также
 - [Решения Visio](../vsto/visio-solutions.md)

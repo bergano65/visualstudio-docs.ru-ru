@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112342"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 Средство компилятор цветов расширений Visual Studio — консольное приложение, которое принимает XML-файл, представляющий цвета для существующих тем Visual Studio и преобразует его в .pkgdef файл, чтобы эти цвета можно использовать в Visual Studio. Так как это упрощает сравнение различий между XML-файлы, это средство используется для управления настраиваемых цветов в системе управления версиями. Его также можно связать сред построения, чтобы выходные данные сборки является допустимым pkgdef-файл.
@@ -111,7 +111,7 @@ ms.locfileid: "56605163"
 |-|-|
 |**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
 |Тип|[Обязательный параметр] Тип цвета. Он может принимать одно из следующих:<br /><br /> *CT_INVALID:* Цвет является недопустимым или не заданным.<br /><br /> *CT_RAW:* Необработанное значение ARGB.<br /><br /> *CT_COLORINDEX:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_SYSCOLOR:* Системный цвет Windows, от SysColor.<br /><br /> *CT_VSCOLOR:* Цвета Visual Studio из __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Автоматическое цвет.<br /><br /> *CT_TRACK_FOREGROUND:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_TRACK_BACKGROUND:* НЕ ИСПОЛЬЗУЙТЕ.|
-|Исходный код|[Обязательный параметр] Значение цвета, представлены в шестнадцатеричном формате|
+|Source|[Обязательный параметр] Значение цвета, представлены в шестнадцатеричном формате|
 
  Все значения, поддерживаемые в перечислении __VSCOLORTYPE поддерживаются со схемой в атрибуте типа. Тем не менее мы рекомендуем использовать только CT_RAW и CT_SYSCOLOR.
 
@@ -149,15 +149,15 @@ ms.locfileid: "56605163"
 
  **Примеры**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>Примечания
 
--   Это средство необходимо установить последнюю версию среды выполнения VC ++.
+- Это средство необходимо установить последнюю версию среды выполнения VC ++.
 
--   Поддерживаются только отдельные файлы. Массовое преобразование с помощью пути к папкам не поддерживается.
+- Поддерживаются только отдельные файлы. Массовое преобразование с помощью пути к папкам не поддерживается.
 
 ## <a name="sample-output"></a>Пример полученных результатов
  Файл pkgdef, созданные с помощью средства будет аналогичен ниже ключи:

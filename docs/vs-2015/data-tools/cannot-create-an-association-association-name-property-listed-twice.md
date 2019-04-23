@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091581"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Не удалось создать ассоциацию &lt;имя ассоциации&gt; — одно и то же свойство перечислено дважды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59660974"
   
 ### <a name="to-resolve-this-condition"></a>Чтобы устранить эту проблему,  
   
--   Проверьте сообщение и отметьте свойство, указанное в сообщении.  
+- Проверьте сообщение и отметьте свойство, указанное в сообщении.  
   
--   Нажмите кнопку **ОК**, чтобы закрыть окно сообщения.  
+- Нажмите кнопку **ОК**, чтобы закрыть окно сообщения.  
   
--   Проверьте **Свойства ассоциации** и удалите дублированные записи.  
+- Проверьте **Свойства ассоциации** и удалите дублированные записи.  
   
--   Нажмите кнопку **ОК**.  
+- Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

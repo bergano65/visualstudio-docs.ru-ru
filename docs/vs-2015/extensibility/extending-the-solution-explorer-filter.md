@@ -11,12 +11,12 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110574"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Расширение фильтра обозревателя решений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58993194"
   
 ### <a name="create-a-visual-studio-package-project"></a>Создайте проект пакета Visual Studio  
   
-1.  Создайте проект VSIX с именем `FileFilter`. Добавление пользовательской команды шаблона элемента с именем **FileFilter**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Создайте проект VSIX с именем `FileFilter`. Добавление пользовательской команды шаблона элемента с именем **FileFilter**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Добавьте ссылку на `System.ComponentModel.Composition` и `Microsoft.VisualStudio.Utilities`.  
+2. Добавьте ссылку на `System.ComponentModel.Composition` и `Microsoft.VisualStudio.Utilities`.  
   
-3.  Команда меню отображаются на **обозревателе решений** панели инструментов. Откройте файл FileFilterPackage.vsct.  
+3. Команда меню отображаются на **обозревателе решений** панели инструментов. Откройте файл FileFilterPackage.vsct.  
   
-4.  Изменение `<Button>` блок следующим:  
+4. Изменение `<Button>` блок следующим:  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -48,28 +48,28 @@ ms.locfileid: "58993194"
   
 ### <a name="update-the-manifest-file"></a>Обновление файла манифеста  
   
-1.  В файле source.extension.vsixmanifest добавьте ресурс-контейнер, — это компонент MEF.  
+1. В файле source.extension.vsixmanifest добавьте ресурс-контейнер, — это компонент MEF.  
   
-2.  На **активы** вкладке, выберите **New** кнопки.  
+2. На **активы** вкладке, выберите **New** кнопки.  
   
-3.  В **тип** переключатель **Microsoft.VisualStudio.MefComponent**.  
+3. В **тип** переключатель **Microsoft.VisualStudio.MefComponent**.  
   
-4.  В **источника** переключатель **проект в текущем решении**.  
+4. В **источника** переключатель **проект в текущем решении**.  
   
-5.  В **проекта** переключатель **FileFilter**, а затем выберите **ОК** кнопки.  
+5. В **проекта** переключатель **FileFilter**, а затем выберите **ОК** кнопки.  
   
 ### <a name="add-the-filter-code"></a>Добавьте код фильтра  
   
-1.  Добавьте в файл FileFilterPackageGuids.cs некоторые идентификаторы GUID:  
+1. Добавьте в файл FileFilterPackageGuids.cs некоторые идентификаторы GUID:  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Добавьте файл класса в проект FileFilter, с именем FileNameFilter.cs.  
+2. Добавьте файл класса в проект FileFilter, с именем FileNameFilter.cs.  
   
-3.  Замените пустое пространство имен и пустой класс приведенный ниже код.  
+3. Замените пустое пространство имен и пустой класс приведенный ниже код.  
   
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` Метод принимает коллекцию, содержащую корневой папке решения (`rootItems`) и возвращает коллекцию элементов, включаемых в фильтр.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "58993194"
   
     ```  
   
-4.  В FileFilter.cs удалите код размещения и обработки команды из конструктора FileFilter. Результат должен выглядеть следующим образом:  
+4. В FileFilter.cs удалите код размещения и обработки команды из конструктора FileFilter. Результат должен выглядеть следующим образом:  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -176,7 +176,7 @@ ms.locfileid: "58993194"
   
      Удалите метод ShowMessageBox().  
   
-5.  В FileFilterPackage cs, замените код в метод Initialize() следующим:  
+5. В FileFilterPackage cs, замените код в метод Initialize() следующим:  
   
     ```csharp  
     protected override void Initialize()  
@@ -188,10 +188,10 @@ ms.locfileid: "58993194"
   
 ### <a name="test-your-code"></a>Тестирование кода  
   
-1.  Постройте и запустите проект. Откроется второй экземпляр Visual Studio. Это называется экспериментальным.  
+1. Постройте и запустите проект. Откроется второй экземпляр Visual Studio. Это называется экспериментальным.  
   
-2.  В экспериментальном экземпляре Visual Studio откройте проект C#.  
+2. В экспериментальном экземпляре Visual Studio откройте проект C#.  
   
-3.  Найдите кнопку, которую вы добавили на панели инструментов обозревателя решений. Она должна быть Четвертая кнопка слева.  
+3. Найдите кнопку, которую вы добавили на панели инструментов обозревателя решений. Она должна быть Четвертая кнопка слева.  
   
-4.  При нажатии кнопки необходимо отфильтровать все файлы, и вы увидите «все элементы были отфильтрованы из представления.» в обозревателе решений.
+4. При нажатии кнопки необходимо отфильтровать все файлы, и вы увидите «все элементы были отфильтрованы из представления.» в обозревателе решений.

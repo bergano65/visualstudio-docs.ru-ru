@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104918"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58979617"
 ## <a name="providing-support-for-code-snippets"></a>Предоставление поддержки для фрагментов кода  
  Чтобы включить поддержку для фрагментов кода, необходимо предоставить или установить фрагменты кода, и необходимо предоставить средства для вставки этих фрагментов. Существует три шага для включения возможности поддержки для фрагментов кода:  
   
-1.  Установка файлы фрагментов кода.  
+1. Установка файлы фрагментов кода.  
   
-2.  Включение фрагментов кода для языковой службы.  
+2. Включение фрагментов кода для языковой службы.  
   
-3.  Вызов <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта.  
+3. Вызов <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта.  
   
 ### <a name="installing-the-snippet-files"></a>Установка файлы фрагментов кода  
  Все фрагменты кода для языка, хранятся как шаблоны в XML-файлов, обычно один шаблон фрагмента каждого файла. Дополнительные сведения о схеме XML, используемый для шаблоны фрагментов кода, см. в разделе [Справочник по схеме фрагментов кода](../../ide/code-snippets-schema-reference.md). Каждый шаблон фрагмента идентифицируется с идентификатором языка. Этот язык, идентификатор, указанный в реестре и помещается в `Language` атрибут \<кода > тега в шаблоне.  
@@ -117,9 +117,9 @@ ms.locfileid: "58979617"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Вставка фрагмента кода с помощью команды меню  
  Чтобы использовать команды меню для отображения обозревателя на фрагмент кода, добавьте команду меню, а затем вызвать <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> интерфейс в ответ для этой команды меню.  
   
-1.  Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.  
+2. Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -155,7 +155,7 @@ ms.locfileid: "58979617"
     }  
     ```  
   
-3.  Переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> метод в <xref:Microsoft.VisualStudio.Package.ViewFilter> для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> и вызовите <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод для этого объекта.  
+3. Переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> метод в <xref:Microsoft.VisualStudio.Package.ViewFilter> для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> и вызовите <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод для этого объекта.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -207,15 +207,15 @@ ms.locfileid: "58979617"
   
      Следующие методы в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса вызываются средой Visual Studio в указанном порядке во время вставки фрагмента кода:  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      После <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> вызывается метод, фрагмента и <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объект находится в режиме редактирования специальные, используемая для изменения фрагмент кода, который только что был вставлен.  
   

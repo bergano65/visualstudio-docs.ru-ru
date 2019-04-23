@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сериализация сведений о символах | Документы Майкрософт
+title: Практическое руководство. Сериализация сведений о символах | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103801"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Практическое руководство. Сериализация сведений о символах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "54769187"
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Автоматическая сериализация сведений о символах  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
      Откроется диалоговое окно **Параметры**.  
   
-2.  Щелкните **Средства производительности**.  
+2. Щелкните **Средства производительности**.  
   
-3.  В разделе **Общие параметры** выберите **Автоматическая сериализация символьной информации**.  
+3. В разделе **Общие параметры** выберите **Автоматическая сериализация символьной информации**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Практическое руководство. Сохранение файлов проанализированного отчета](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Практическое руководство. Сохранение проанализированных файлов отчета](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

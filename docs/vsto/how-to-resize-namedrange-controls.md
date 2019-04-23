@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099615"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Практическое руководство. Изменение размера элементов управления NamedRange
   Вы можете задать размер элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> при его добавлении в документ Microsoft Office Excel и при желании изменить его размер позже.
@@ -30,32 +30,32 @@ ms.locfileid: "56654039"
 
  В этом разделе описываются следующие задачи.
 
--   [Изменение размера элементов управления NamedRange во время разработки](#designtime)
+- [Изменение размера элементов управления NamedRange во время разработки](#designtime)
 
--   [Изменение размера элементов управления NamedRange во время выполнения в проекте уровня документа](#runtimedoclevel)
+- [Изменение размера элементов управления NamedRange во время выполнения в проекте уровня документа](#runtimedoclevel)
 
--   [Изменение размера элементов управления NamedRange во время выполнения в проекте надстройки VSTO](#runtimeaddin)
+- [Изменение размера элементов управления NamedRange во время выполнения в проекте надстройки VSTO](#runtimeaddin)
 
-##  <a name="designtime"></a> Изменение размера элементов управления NamedRange во время разработки
+## <a name="designtime"></a> Изменение размера элементов управления NamedRange во время разработки
  Вы можете изменить размер именованного диапазона, повторно задав размер в диалоговом окне **Присвоить имя** .
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Изменение размера именованного диапазона с помощью диалогового окна "Присвоить имя"
 
-1.  Щелкните элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> правой кнопкой мыши.
+1. Щелкните элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> правой кнопкой мыши.
 
-2.  В контекстном меню выберите команду **Управление именованными диапазонами** .
+2. В контекстном меню выберите команду **Управление именованными диапазонами** .
 
      Откроется диалоговое окно **Присвоить имя** .
 
-3.  Выберите именованный диапазон, который нужно изменить.
+3. Выберите именованный диапазон, который нужно изменить.
 
-4.  Снимите флажок **Ссылается на** .
+4. Снимите флажок **Ссылается на** .
 
-5.  Выберите ячейки, которые нужно использовать для определения размера именованного диапазона.
+5. Выберите ячейки, которые нужно использовать для определения размера именованного диапазона.
 
-6.  Нажмите кнопку **ОК**.
+6. Нажмите кнопку **ОК**.
 
-##  <a name="runtimedoclevel"></a> Изменение размера элементов управления NamedRange во время выполнения в проекте уровня документа
+## <a name="runtimedoclevel"></a> Изменение размера элементов управления NamedRange во время выполнения в проекте уровня документа
  Изменить размер именованного диапазона можно программным способом, используя свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654039"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Изменение размера именованного диапазона программными средствами
 
-1.  Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейке **A1** листа `Sheet1`.
+1. Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейке **A1** листа `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Измените размер именованного диапазона так, чтобы он включал ячейку **B1**.
+2. Измените размер именованного диапазона так, чтобы он включал ячейку **B1**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Изменение размера элементов управления NamedRange во время выполнения в проекте надстройки VSTO
+## <a name="runtimeaddin"></a> Изменение размера элементов управления NamedRange во время выполнения в проекте надстройки VSTO
  Вы можете изменить размер <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в любой открытый лист во время выполнения. Дополнительные сведения о добавлении <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления на лист с помощью надстройки VSTO, см. в разделе [как: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Изменение размера именованного диапазона программными средствами
 
-1.  Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейке **A1** листа `Sheet1`.
+1. Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейке **A1** листа `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Измените размер именованного диапазона так, чтобы он включал ячейку **B1**.
+2. Измените размер именованного диапазона так, чтобы он включал ячейку **B1**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54af4da8ccfff04ed51f19b9265659897281f26d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074613"
 ---
 # <a name="introduction-to-wpf"></a>Введение в WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ ms.locfileid: "59670463"
   
  Этот обзор предназначен для новичков: в нем рассматриваются ключевые возможности и понятия WPF.  
   
-##  <a name="Programming_with_WPF"></a> Программирование с помощью WPF  
+## <a name="Programming_with_WPF"></a> Программирование с помощью WPF  
  WPF существует в виде подмножества типов .NET Framework, которые по большей части находятся в пространстве имен <xref:System.Windows> . Если ранее вы создавали приложения с помощью .NET Framework, используя управляемые технологии, такие как ASP.NET и Windows Forms, основные принципы программирования с помощью WPF должны быть вам знакомы: вы создаете экземпляры классов, задаете свойства, вызываете методы и обрабатываете события — все это с использованием своего любимого языка программирования .NET, например C# или Visual Basic.  
   
  WPF включает в себя дополнительные конструкции программирования, которые расширяют возможности свойств и событий: [свойства зависимостей](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx) и [перенаправленные события](https://msdn.microsoft.com/library/ms742806\(v=vs.100\).aspx).  
   
-##  <a name="Markup_And_Codebehind"></a> Разметка и код программной части  
+## <a name="Markup_And_Codebehind"></a> Разметка и код программной части  
  WPF позволяет разрабатывать приложения, используя как *разметку* , так и *код программной части*, что привычно для разработчиков на ASP.NET. Разметка XAML обычно используется для определения внешнего вида приложения, а управляемые языки программирования (код программной части) — для реализации его поведения. Такое разделение внешнего вида и поведения имеет ряд преимуществ.  
   
 - Затраты на разработку и обслуживание снижаются, так как разметка, определяющая внешний вид, не связана тесно с кодом, обуславливающим поведение.  
@@ -143,7 +143,7 @@ End Namespace
   
  ![Окно сообщения](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a> Элементы управления  
+## <a name="Controls"></a> Элементы управления  
  Возможности взаимодействия с пользователем, обеспечиваемые моделью приложения, реализуются с помощью сконструированных элементов управления. В WPF «элемент управления» — это общий термин, который относится к категории классов WPF, размещаемых в окне или на странице, имеющих пользовательский интерфейс и реализующих некоторое поведение.  
   
  Более подробную информацию см. в разделе [Элементы управления](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
@@ -151,38 +151,38 @@ End Namespace
 ### <a name="wpf-controls-by-function"></a>Функциональная классификация элементов управления WPF  
  Ниже перечислены встроенные элементы управления WPF.  
   
--   **Кнопки**: <xref:System.Windows.Controls.Button> и <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+- **Кнопки**: <xref:System.Windows.Controls.Button> и <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
--   **Вывод данных**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>и <xref:System.Windows.Controls.TreeView>.  
+- **Вывод данных**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>и <xref:System.Windows.Controls.TreeView>.  
   
--   **Вывод и выбор дат**: <xref:System.Windows.Controls.Calendar> и <xref:System.Windows.Controls.DatePicker>.  
+- **Вывод и выбор дат**: <xref:System.Windows.Controls.Calendar> и <xref:System.Windows.Controls.DatePicker>.  
   
--   **Диалоговые окна**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>и <xref:Microsoft.Win32.SaveFileDialog>.  
+- **Диалоговые окна**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>и <xref:Microsoft.Win32.SaveFileDialog>.  
   
--   **Рукописный ввод**: <xref:System.Windows.Controls.InkCanvas> и <xref:System.Windows.Controls.InkPresenter>.  
+- **Рукописный ввод**: <xref:System.Windows.Controls.InkCanvas> и <xref:System.Windows.Controls.InkPresenter>.  
   
--   **Документы**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>и <xref:System.Windows.Controls.StickyNoteControl>.  
+- **Документы**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>и <xref:System.Windows.Controls.StickyNoteControl>.  
   
--   **Ввод**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>и <xref:System.Windows.Controls.PasswordBox>.  
+- **Ввод**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>и <xref:System.Windows.Controls.PasswordBox>.  
   
--   **Макет**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>и <xref:System.Windows.Controls.WrapPanel>.  
+- **Макет**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>и <xref:System.Windows.Controls.WrapPanel>.  
   
--   **Мультимедиа**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>и <xref:System.Windows.Controls.SoundPlayerAction>.  
+- **Мультимедиа**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>и <xref:System.Windows.Controls.SoundPlayerAction>.  
   
--   **Меню**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>и <xref:System.Windows.Controls.ToolBar>.  
+- **Меню**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>и <xref:System.Windows.Controls.ToolBar>.  
   
--   **Навигация**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>и <xref:System.Windows.Controls.TabControl>.  
+- **Навигация**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>и <xref:System.Windows.Controls.TabControl>.  
   
--   **Выбор**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>и <xref:System.Windows.Controls.Slider>.  
+- **Выбор**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>и <xref:System.Windows.Controls.Slider>.  
   
--   **Информирование пользователя**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>и <xref:System.Windows.Controls.ToolTip>.  
+- **Информирование пользователя**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>и <xref:System.Windows.Controls.ToolTip>.  
   
-##  <a name="Input_And_Commanding"></a> Ввод и команды  
+## <a name="Input_And_Commanding"></a> Ввод и команды  
  Элементы управления чаще всего используются для определения ввода данных пользователем и реагирования на него. [Система ввода WPF](https://msdn.microsoft.com/library/ms754010\(v=vs.100\).aspx) использует как прямые, так и перенаправленные события для поддержки ввода текста, управления фокусом и определения положения указателя мыши.  
   
  Приложения часто предъявляют сложные требования к вводу. WPF предоставляет [систему команд](https://msdn.microsoft.com/library/ms752308\(v=vs.100\).aspx) , которая отделяет действия по вводу данных пользователем от кода, реагирующего на эти действия.  
   
-##  <a name="Layout"></a> Макет  
+## <a name="Layout"></a> Макет  
  При создании пользовательского интерфейса вы компонуете элементы управления, настраивая их расположение и размер. Основным требованием любого макета является адаптация к изменениям размеров окна и параметров экрана. Платформа WPF избавляет вас от необходимости писать код для адаптации макета к таким условиям, предоставляя первоклассную расширяемую систему макета.  
   
  Ключевым элементом системы макета является относительное позиционирование, которое упрощает адаптацию к меняющимся характеристикам окна и экрана. Кроме того, система макета управляет взаимодействием между элементами управления для определения макета. Взаимодействие протекает в два этапа: сначала элемент управления сообщает родительскому объекту о требуемом расположении и размере, а затем родительский объект сообщает родительскому элементу, какое пространство он может занять.  
@@ -214,7 +214,7 @@ End Namespace
   
  ![Страница DockPanel](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a> Привязка данных  
+## <a name="Data_Binding"></a> Привязка данных  
  Большинство приложений предоставляют пользователям возможность просматривать и редактировать данные. Для приложений WPF задачи хранения данных и доступа к ним уже обеспечиваются такими технологиями, как SQL Server и ADO .NET. После получения доступа к данным и их загрузки в управляемые объекты приложения WPF начинается самое сложное. Фактически этот процесс состоит из двух этапов:  
   
 1. копирование данных из управляемых объектов в элементы управления для их отображения и редактирования;  
@@ -245,16 +245,16 @@ End Namespace
   
    Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
-##  <a name="Graphics"></a> Графика  
+## <a name="Graphics"></a> Графика  
  Платформа WPF предоставляет широкий, гибкий и масштабируемый набор графических функций, который обладает перечисленными ниже преимуществами.  
   
--   **Независимость графики от разрешения и устройства**. Основной единицей измерения в графической системе WPF является аппаратно-независимый пиксель, размер которого составляет 1/96 дюйма вне зависимости от разрешения экрана. Это создает основу для независимой от разрешения и аппаратной платформы отрисовки. Каждый аппаратно-независимый пиксель автоматически масштабируется в соответствии с заданным в системе количеством точек на дюйм (DPI).  
+- **Независимость графики от разрешения и устройства**. Основной единицей измерения в графической системе WPF является аппаратно-независимый пиксель, размер которого составляет 1/96 дюйма вне зависимости от разрешения экрана. Это создает основу для независимой от разрешения и аппаратной платформы отрисовки. Каждый аппаратно-независимый пиксель автоматически масштабируется в соответствии с заданным в системе количеством точек на дюйм (DPI).  
   
--   **Повышение точности**. Система координат WPF основана на числах двойной точности с плавающей запятой, а не числах одинарной точности. Значения преобразования и прозрачности также выражаются числами двойной точности. Платформа WPF также поддерживает широкую цветовую палитру (scRGB) и имеет встроенную поддержку управления входными данными из разных цветовых схем.  
+- **Повышение точности**. Система координат WPF основана на числах двойной точности с плавающей запятой, а не числах одинарной точности. Значения преобразования и прозрачности также выражаются числами двойной точности. Платформа WPF также поддерживает широкую цветовую палитру (scRGB) и имеет встроенную поддержку управления входными данными из разных цветовых схем.  
   
--   **Расширенная поддержка графики и анимации**. Платформа WPF упрощает программирование графики, автоматически управляя анимированными сценами. Вам не нужно беспокоиться об обработке сцен, циклах отрисовки и билинейной интерполяции. Кроме того, WPF обеспечивает поддержку проверки попадания и полную поддержку альфа-версии компоновки.  
+- **Расширенная поддержка графики и анимации**. Платформа WPF упрощает программирование графики, автоматически управляя анимированными сценами. Вам не нужно беспокоиться об обработке сцен, циклах отрисовки и билинейной интерполяции. Кроме того, WPF обеспечивает поддержку проверки попадания и полную поддержку альфа-версии компоновки.  
   
--   **Аппаратное ускорение**. Система графики WPF использует возможности графического оборудования, чтобы снизить нагрузку на ЦП.  
+- **Аппаратное ускорение**. Система графики WPF использует возможности графического оборудования, чтобы снизить нагрузку на ЦП.  
   
 ### <a name="2-d-shapes"></a>Двумерные фигуры  
  WPF предоставляет библиотеку стандартных векторных двумерных фигур, таких как прямоугольники и эллипсы, которые показаны на рисунке ниже.  
@@ -299,14 +299,14 @@ End Namespace
   
  Более подробную информацию см. в разделе [Обзор трехмерной графики](https://msdn.microsoft.com/library/ms747437\(v=vs.100\).aspx).  
   
-##  <a name="Animation"></a> Анимация  
+## <a name="Animation"></a> Анимация  
  Поддержка анимации в WPF позволяет применять к элементам управления такие эффекты, как увеличение, дрожание, вращение и исчезание, создавать интересные эффекты смены страниц и другие эффекты. Вы можете анимировать большинство классов WPF, даже настраиваемые классы. На рисунке ниже показана простая анимация в действии.  
   
  ![Изображения анимированного куба](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Более подробную информацию см. в разделе [Общие сведения об эффектах анимации](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx).  
   
-##  <a name="Media"></a> Мультимедиа  
+## <a name="Media"></a> Мультимедиа  
  Одни из способов передачи более информативного содержимого — использовать аудиовизуальные средства. WPF обеспечивает специальную поддержку изображений, видео и звука.  
   
 ### <a name="images"></a>Изображений  
@@ -327,7 +327,7 @@ End Namespace
   
  Более подробную информацию см. в разделе [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx).  
   
-##  <a name="Text_and_Typography"></a> Текст и типографическая разметка  
+## <a name="Text_and_Typography"></a> Текст и типографическая разметка  
  Чтобы упростить высококачественную отрисовку текста, платформа WPF предоставляет следующие возможности:  
   
 - поддержка шрифтов OpenType;  
@@ -346,7 +346,7 @@ End Namespace
   
   Более подробную информацию см. в разделе [Типографическая разметка в Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Customization"></a> Настройка приложений WPF  
+## <a name="WPF_Customization"></a> Настройка приложений WPF  
  До сих пор мы рассматривали основные строительные блоки WPF для разработки приложений. Для размещения и предоставления содержимого приложения, состоящего в основном из элементов управления, используется модель приложения. Для упрощения размещения элементов управления в пользовательском интерфейсе и сохранения их компоновки в случае изменения размера окна или параметров экрана используется система макета WPF. Так как большинство приложений позволяют пользователям взаимодействовать с данными, для сокращения объема работы, необходимой для интеграции пользовательского интерфейса с данными, используется привязка данных. Чтобы улучшить внешний вид приложения, используется широкий ряд средств графики, анимации и мультимедиа, предоставляемый платформой WPF.  
   
  Однако зачастую этих основных средств недостаточно для создания уникального и визуально привлекательного пользовательского интерфейса. Стандартные элементы управления WPF могут не сочетаться с требуемым оформлением вашего приложения. Данные могут отображаться не самым эффективным образом. Пользовательскому интерфейсу вашего приложения может в целом не подходить внешний вид тем Windows по умолчанию. Наряду с другими типами расширяемости, технологии представления во многих случаях требуется визуальная расширяемость.  
@@ -498,18 +498,18 @@ End Namespace
   
  Более подробную информацию о пользовательских элементах управления см. в разделе [Общие сведения о разработке управления](https://msdn.microsoft.com/library/ms745025\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Best_Practices"></a> Рекомендации по использованию WPF  
+## <a name="WPF_Best_Practices"></a> Рекомендации по использованию WPF  
  Как и любую другую платформу разработки, WPF можно использовать разными способами для получения нужного результата. Чтобы ваши приложения WPF обеспечивали требуемый уровень удобства и отвечали потребностям пользователей в целом, следует придерживаться рекомендаций в отношении специальных возможностей, глобализации, локализации и производительности. Более подробную информацию см. в следующих разделах:  
   
--   [Рекомендации по специальным возможностям](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)Рекомендации по специальным возможностям  
+- [Рекомендации по специальным возможностям](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)Рекомендации по специальным возможностям  
   
--   [Общие сведения о глобализации и локализации WPF](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- [Общие сведения о глобализации и локализации WPF](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   [Улучшение производительности приложений WPF](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- [Улучшение производительности приложений WPF](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
--   [Безопасность платформы Windows Presentation Foundation](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- [Безопасность платформы Windows Presentation Foundation](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
-##  <a name="Summary"></a> Сводка  
+## <a name="Summary"></a> Сводка  
  WPF — это комплексная технология представления для создания широкого разнообразия визуально привлекательных клиентских приложений. В этой вводной статье был дан обзор ключевых возможностей WPF.  
   
  Следующий шаг — создание собственного приложения WPF!  

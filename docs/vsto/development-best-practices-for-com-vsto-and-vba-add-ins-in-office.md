@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111185"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Рекомендации по разработке для COM, VSTO и VBA надстройки в Office
   Если вы разрабатываете надстройки COM, VSTO и VBA для Office, выполните рекомендации по разработке, описанные в этой статье.   Это поможет обеспечить:
 
--  Совместимость надстройки для различных версий и развертывание пакета Office.
--  Меньший уровень сложности развертывания надстройки для пользователей и администраторов ИТ.
--  Непредвиденные сбои время установки или из надстройки не возникают.
+- Совместимость надстройки для различных версий и развертывание пакета Office.
+- Меньший уровень сложности развертывания надстройки для пользователей и администраторов ИТ.
+- Непредвиденные сбои время установки или из надстройки не возникают.
 
 >Примечание. С помощью [моста для классических](/windows/uwp/porting/desktop-to-uwp-root) для подготовки вашей COM, VSTO и VBA надстройка для Windows Store не поддерживается. Надстройки COM, VSTO и VBA не может распространяться в Windows Store или Office Store.
 

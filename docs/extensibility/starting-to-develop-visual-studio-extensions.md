@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffee39765d28306509ebe3a2ba30e8fabb79cf80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08db2532cd5524dad5762bc244137ebb87939860
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107170"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 
@@ -47,23 +47,23 @@ ms.locfileid: "55042781"
 
 На практике мы обнаружили, что большинство людей, необходимые для расширения функции являются команды, меню и панелей инструментов, windows, IntelliSense и проекты. Ниже приведены ссылки на соответствующие разделы.
 
--   [Расширение меню и команд](../extensibility/extending-menus-and-commands.md): добавлять собственные элементы в меню Visual Studio и на панели инструментов. Их можно использовать для запуска новых функций Visual Studio или собственные внешние вспомогательные приложения. Можно также предоставить настраиваемые сочетания клавиш для элементов меню.
+- [Расширение меню и команд](../extensibility/extending-menus-and-commands.md): добавлять собственные элементы в меню Visual Studio и на панели инструментов. Их можно использовать для запуска новых функций Visual Studio или собственные внешние вспомогательные приложения. Можно также предоставить настраиваемые сочетания клавиш для элементов меню.
 
--   [Расширение и настройка Windows средство](../extensibility/extending-and-customizing-tool-windows.md): расширения существующих окон инструментов или создавать собственные окна инструментов. Например, можно добавить новые свойства для **свойства**, или можно создать новое окно инструментов для добавления дополнительных функций.
+- [Расширение и настройка Windows средство](../extensibility/extending-and-customizing-tool-windows.md): расширения существующих окон инструментов или создавать собственные окна инструментов. Например, можно добавить новые свойства для **свойства**, или можно создать новое окно инструментов для добавления дополнительных функций.
 
--   [Редактор и расширения службы языка](../extensibility/editor-and-language-service-extensions.md): Добавление собственных настроек данные IntelliSense для языков Visual Studio, или создайте Поддержка новых языков программирования. Можно создать новый завершение инструкций, предложения и новые отображение подсказок. Лампочки вы можете добавить рефакторинга предложения и средства исправления кода для поддержки новых языков программирования.
+- [Редактор и расширения службы языка](../extensibility/editor-and-language-service-extensions.md): Добавление собственных настроек данные IntelliSense для языков Visual Studio, или создайте Поддержка новых языков программирования. Можно создать новый завершение инструкций, предложения и новые отображение подсказок. Лампочки вы можете добавить рефакторинга предложения и средства исправления кода для поддержки новых языков программирования.
 
--   [Расширение проектов](../extensibility/extending-projects.md)
+- [Расширение проектов](../extensibility/extending-projects.md)
 
--   [Расширение параметров и настроек пользователя](../extensibility/extending-user-settings-and-options.md)
+- [Расширение параметров и настроек пользователя](../extensibility/extending-user-settings-and-options.md)
 
--   [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md)
+- [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md)
 
--   [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Изолированная оболочка Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Изолированная оболочка Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
-##  <a name="BKMK_ProjectTemplate"></a> Какие шаблоны проектов, предоставляемые VSSDK?
+## <a name="BKMK_ProjectTemplate"></a> Какие шаблоны проектов, предоставляемые VSSDK?
  Два основных типа расширения являются пакеты VSPackage и расширения MEF. В общем случае расширений VSPackage используются для расширения, которые применяют или расширяют команд, окон инструментов и проекты. Расширения MEF позволяют расширить и настроить в редакторе Visual Studio.
 
  Для расширения Visual C# и Visual Basic VSSDK предоставляет пустой шаблон проекта VSIX, который можно использовать вместе с шаблонами новых элементов, которые создают команды меню, окна инструментов и расширения редактора. Этот шаблон, шаблоны проектов пакетов, фрагменты кода и другие артефакты можно также использовать для распространения другим пользователям.
@@ -72,15 +72,15 @@ ms.locfileid: "55042781"
 
  Шаблон изолированной оболочки используется для упаковки расширения в версиях, которую можно Добавление фирменной символики и распространять как собственные оболочки Visual Studio. Следующие разделы показывают, как приступить к работе с каждого вида расширения:
 
--   Команды меню: [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Команды меню: [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Окна инструментов: [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Окна инструментов: [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Расширения редактора: [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Расширения редактора: [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   Основные пакеты VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- Основные пакеты VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Шаблон проекта VSIX: [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Шаблон проекта VSIX: [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Как получить расширение my, чтобы он выглядел Visual Studio?
  Полезные советы по проектированию пользовательского интерфейса для расширения в [по работе пользователей Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

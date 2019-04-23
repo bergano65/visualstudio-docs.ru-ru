@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5632d56af7b8b6ef2a07f0f0a4c7bf270875a643
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084301"
 ---
 # <a name="javascript-object-expected"></a>Ожидался объект JavaScript
 Была предпринята попытка передать отличный от[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект встроенную функцию, ожидающую [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта. Различные встроенные функции требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных внешний компонент как элемент управления или узла).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что объект, который вы передаете в как параметра имеет неправильный тип.  
+- Убедитесь, что объект, который вы передаете в как параметра имеет неправильный тип.  
   
 ## <a name="see-also"></a>См. также  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)   

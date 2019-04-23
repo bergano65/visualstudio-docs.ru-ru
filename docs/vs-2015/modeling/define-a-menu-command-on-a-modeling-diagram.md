@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978728"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670329"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ ms.locfileid: "58978728"
 
 2. Добавьте в проект указанные ниже ссылки.  
 
-
    |                                                                                                    Ссылка                                                                                                    |                                                                                                  Возможности                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Определение компонентов с помощью [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ ms.locfileid: "58978728"
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[версия]                                                                                  | Определение обработчиков событий модели.<br /><br /> Инкапсуляция серии изменений в модель. Дополнительные сведения см. в разделе [обновлений модели UML ссылку с помощью транзакций](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]<br /><br /> (требуется не всегда)                                                             |                                                                                   Доступ к дополнительным элементам схемы для обработчиков жестов.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Требуется только для команд на схемах слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md). |                                                                                             Определение команд на схеме слоев.                                                                                              |
-
 
 3. Добавьте файл класса в проект и вставьте в него указанный ниже код.  
 

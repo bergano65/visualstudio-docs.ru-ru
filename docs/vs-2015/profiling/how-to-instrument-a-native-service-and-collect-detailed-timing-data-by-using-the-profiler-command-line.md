@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2663049a818782e8af11f9c85454152e5e5d83db
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 51a7aed986eb031ab6493c9c38939d782d2864ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092881"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование собственной службы и Сбор подробных данных о времени с помощью командной строки Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "59649008"
 
 #### <a name="to-start-and-stop-data-collection"></a>Запуск и остановка сбора данных  
 
--   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
+- Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
     |Параметр|Описание|  
     |------------|-----------------|  
@@ -86,13 +86,13 @@ ms.locfileid: "59649008"
 
 #### <a name="to-end-a-profiling-session"></a>Завершение сеанса профилирования  
 
-1.  Остановите службу из диспетчера служб.  
+1. Остановите службу из диспетчера служб.  
 
-2.  Завершите работу профилировщика. Тип:  
+2. Завершите работу профилировщика. Тип:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Замените инструментированный модуль исходным. При необходимости измените тип запуска службы.  
+3. Замените инструментированный модуль исходным. При необходимости измените тип запуска службы.  
 
 ## <a name="see-also"></a>См. также  
  [Службы профилирования](../profiling/command-line-profiling-of-services.md)   

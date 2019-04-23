@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071230"
 ---
 # <a name="making-commands-available"></a>Как сделать команды доступными
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 При добавлении нескольких элементов VSPackage в Visual Studio, с помощью команд может стать overcrowded пользовательский интерфейс (UI). Вы можете программировать ваш пакет, чтобы помочь уменьшить эту проблему, следующим образом:  
   
--   Программы пакета, чтобы он загружается, только когда пользователь требует его.  
+- Программы пакета, чтобы он загружается, только когда пользователь требует его.  
   
--   Программный пакет, его команды отображаются только в том случае, если они могут потребоваться в контексте текущего состояния среды разработки (IDE).  
+- Программный пакет, его команды отображаются только в том случае, если они могут потребоваться в контексте текущего состояния среды разработки (IDE).  
   
 ## <a name="delayed-loading"></a>Отложенная загрузка  
  Типичный способ включения отложенной загрузки — для разработки VSPackage, чтобы ее команды отображаются в пользовательском Интерфейсе, но сам пакет не будет загружена, пока пользователь нажимает одну из команд. Для этого в vsct-файл, создайте команд, которые имеют не флаги команды.  
@@ -94,11 +94,11 @@ ms.locfileid: "58993395"
 ### <a name="custom-context-guids"></a>Идентификаторы GUID контекста пользовательского  
  Если контекст соответствующей команды, которые уже не определен идентификатор GUID, можно определить ее в VSPackage и затем запрограммировать его, чтобы быть активными или неактивными, чтобы управлять видимостью ваших команд. Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> службу:  
   
--   Зарегистрируйте идентификаторы GUID контекста (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> метод).  
+- Зарегистрируйте идентификаторы GUID контекста (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> метод).  
   
--   Получить состояние контекста `GUID` (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод).  
+- Получить состояние контекста `GUID` (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод).  
   
--   Включить контекст `GUID`s, включения и отключения (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> метод).  
+- Включить контекст `GUID`s, включения и отключения (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> метод).  
   
     > [!CAUTION]
     >  Убедитесь, что VSPackage не влияет на состояние любого существующего контекста GUID из-за других пакетов VSPackage может зависеть от них.  

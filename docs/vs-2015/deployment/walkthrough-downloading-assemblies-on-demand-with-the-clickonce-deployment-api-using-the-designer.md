@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c65ca67b54396935f52aaa8168d802f0179afd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4513a1fa35ab45cf36a8c86572eecd6043ee7415
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086849"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,32 +40,32 @@ ms.locfileid: "58978894"
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Создание проекта, использующего сборку по запросу с помощью Visual Studio  
   
-1.  Создайте проект Windows Forms в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В меню **Файл** выберите команду **Добавить**, а затем **Создать проект**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.  
+1. Создайте проект Windows Forms в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В меню **Файл** выберите команду **Добавить**, а затем **Создать проект**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.  
   
     > [!NOTE]
     >  В Visual Basic мы рекомендуем изменить свойства проекта, чтобы сменить корневое пространство имен для этого проекта на `Microsoft.Samples.ClickOnceOnDemand` или то, которое подходит вам. Для простоты два проекта в этом пошаговом руководстве находятся в одном пространстве имен.  
   
-2.  Определите класс `DynamicClass` с одним свойством `Message`.  
+2. Определите класс `DynamicClass` с одним свойством `Message`.  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-3.  Выберите проект Windows Forms в **обозревателе решений**. Добавьте ссылку на сборку <xref:System.Deployment.Application> и ссылку на проект `ClickOnceLibrary` .  
+3. Выберите проект Windows Forms в **обозревателе решений**. Добавьте ссылку на сборку <xref:System.Deployment.Application> и ссылку на проект `ClickOnceLibrary` .  
   
     > [!NOTE]
     >  В Visual Basic мы рекомендуем изменить свойства проекта, чтобы сменить корневое пространство имен для этого проекта на `Microsoft.Samples.ClickOnceOnDemand` или то, которое подходит вам. Для простоты два проекта в этом пошаговом руководстве находятся в одном пространстве имен.  
   
-4.  Щелкните форму правой кнопкой мыши, выберите **Просмотреть код** и добавьте следующие ссылки на форму.  
+4. Щелкните форму правой кнопкой мыши, выберите **Просмотреть код** и добавьте следующие ссылки на форму.  
   
      [!code-csharp[ClickOnceOnDemand#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#1)]
      [!code-vb[ClickOnceOnDemand#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#1)]  
   
-5.  Добавьте следующий код для скачивания этой сборки по запросу. Этот код показывает, как сопоставить набор сборок с именем группы с помощью универсального класса <xref:System.Collections.DictionaryBase.Dictionary%2A> . Поскольку в этом пошаговом руководстве мы скачиваем только одну сборку, в нашей группе присутствует только одна сборка. В реальном приложении рекомендуется скачать сразу все сборки, связанные с одной функцией в приложении. Таблица сопоставлений позволяет легко сделать это, связав все библиотеки DLL, относящиеся к некоторому компоненту, с именем группы скачивания.  
+5. Добавьте следующий код для скачивания этой сборки по запросу. Этот код показывает, как сопоставить набор сборок с именем группы с помощью универсального класса <xref:System.Collections.DictionaryBase.Dictionary%2A> . Поскольку в этом пошаговом руководстве мы скачиваем только одну сборку, в нашей группе присутствует только одна сборка. В реальном приложении рекомендуется скачать сразу все сборки, связанные с одной функцией в приложении. Таблица сопоставлений позволяет легко сделать это, связав все библиотеки DLL, относящиеся к некоторому компоненту, с именем группы скачивания.  
   
      [!code-csharp[ClickOnceOnDemand#2](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#2)]
      [!code-vb[ClickOnceOnDemand#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#2)]  
   
-6.  В меню **Вид** выберите пункт **Панель элементов**. Перетащите <xref:System.Windows.Forms.Button> с **панели элементов** в форму. Дважды нажмите кнопку и добавьте приведенный ниже код в обработчик событий <xref:System.Windows.Forms.Control.Click> .  
+6. В меню **Вид** выберите пункт **Панель элементов**. Перетащите <xref:System.Windows.Forms.Button> с **панели элементов** в форму. Дважды нажмите кнопку и добавьте приведенный ниже код в обработчик событий <xref:System.Windows.Forms.Control.Click> .  
   
      [!code-csharp[ClickOnceOnDemand#3](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#3)]
      [!code-vb[ClickOnceOnDemand#3](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#3)]  
@@ -74,31 +74,31 @@ ms.locfileid: "58978894"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Visual Studio  
   
-1.  Щелкните правой кнопкой мыши проект Windows Forms в **обозревателе решений** и выберите пункт **Свойства**. Перейдите на вкладку **Публикация** .  
+1. Щелкните правой кнопкой мыши проект Windows Forms в **обозревателе решений** и выберите пункт **Свойства**. Перейдите на вкладку **Публикация** .  
   
-2.  Нажмите кнопку **Файлы приложения** .  
+2. Нажмите кнопку **Файлы приложения** .  
   
-3.  Найдите описание для ClickOnceLibrary.dll. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.  
+3. Найдите описание для ClickOnceLibrary.dll. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.  
   
-4.  Разверните раскрывающийся список **Группа** и выберите **Создать**. Введите имя `ClickOnceLibrary` в качестве имени новой группы.  
+4. Разверните раскрывающийся список **Группа** и выберите **Создать**. Введите имя `ClickOnceLibrary` в качестве имени новой группы.  
   
-5.  Продолжите публиковать приложение, как описано в разделе [как: опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5. Продолжите публиковать приложение, как описано в разделе [как: опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Инструмента создания и изменения манифестов с графическим клиентом (MageUI.exe)  
   
-1.  Создание вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Создание вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Перед закрытием MageUI.exe выберите вкладку, содержащую манифест приложения развертывания и откройте на ней вкладку **Файлы** .  
+2. Перед закрытием MageUI.exe выберите вкладку, содержащую манифест приложения развертывания и откройте на ней вкладку **Файлы** .  
   
-3.  Найдите ClickOnceLibrary.dll в списке файлов приложения и задайте в столбце **Тип файла** значение **Нет**. Для столбца **Группа** введите значение `ClickOnceLibrary.dll`.  
+3. Найдите ClickOnceLibrary.dll в списке файлов приложения и задайте в столбце **Тип файла** значение **Нет**. Для столбца **Группа** введите значение `ClickOnceLibrary.dll`.  
   
 ## <a name="testing-the-new-assembly"></a>Тестирование новой сборки  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Тестирование сборки по запросу  
   
-1.  Запустите приложение, развернутое с использованием [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+1. Запустите приложение, развернутое с использованием [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
-2.  Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!"  
+2. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!"  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Deployment.Application.ApplicationDeployment>

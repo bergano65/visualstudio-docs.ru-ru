@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109527"
 ---
 # <a name="getting-started-with-the-debugger"></a>Начало работы с отладчиком
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Отладчик Visual Studio можно легко использовать на любом языке. Здесь будет показано, как выполнить отладку простой программы C#, но вы можете применить те же действия к коду на других языках, например к C++ и JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
  Давайте начнем с простого консольного приложения C# (**файл / создать / проект**, а затем выберите **Visual C#** , а затем выберите **консольное приложение**). Если вы никогда не работали с Visual Studio, см. в разделе [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Дополнительные сведения о точках останова см. в разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Проверка переменных  
+## <a name="BKMK_Inspect_Variables"></a> Проверка переменных  
  Отладка часто предусматривает поиск переменные, которые не содержат значения, которые предполагается, что в определенной точке. Мы продемонстрируем некоторые из способов, что вы можете проверять значения переменных.  
   
  Снова начните отладку. Выполнение остановится перед выполнением кода `Console.WriteLine`. Может вызвать выполнение, перейдя к следующему шагу (щелкните **Отладка | Шаг Over** или **F10**). В этом случае можно выбрать **шаг с заходом** (**F11**) и получить тот же результат; мы различия будут описаны позже. Строка с последней фигурной скобкой метода должна окраситься желтым цветом. Взгляните на окно консоли. Вы должны увидеть **10**.  

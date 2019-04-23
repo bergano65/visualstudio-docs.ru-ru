@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079854"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Выполнение модульных тестов для расширений UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ ms.locfileid: "58992753"
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="Host"></a> Настройка модульного теста для расширений VSIX  
+## <a name="Host"></a> Настройка модульного теста для расширений VSIX  
  Методы в расширении моделирования обычно работают с уже открытой схемой. Методы используют свойства импорта MEF, такие как **IDiagramContext** и **ILinkedUndoContext**. Этот контекст должен быть настроен в тестовой среде, прежде чем вы сможете выполнять тесты.  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Настройка модульного теста, который выполняется в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Создайте проект расширения UML и проект модульного теста.  
+1. Создайте проект расширения UML и проект модульного теста.  
   
-    1.  **Проект расширения UML.** Как правило, он создается с помощью команд, жестов или шаблонов проектов проверки. Например, см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+    1. **Проект расширения UML.** Как правило, он создается с помощью команд, жестов или шаблонов проектов проверки. Например, см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-    2.  **Проект модульного теста.** Дополнительные сведения см. в статье [Модульное тестирование кода](../test/unit-test-your-code.md).  
+    2. **Проект модульного теста.** Дополнительные сведения см. в статье [Модульное тестирование кода](../test/unit-test-your-code.md).  
   
-2.  Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которое содержит проект моделирования UML. Вы будете использовать это решение как исходное состояние тестов. Его необходимо отделить от решения, в котором создано расширение UML и его модульные тесты. Дополнительные сведения см. в разделе [UML Создание проектов и схем моделирования](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2. Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которое содержит проект моделирования UML. Вы будете использовать это решение как исходное состояние тестов. Его необходимо отделить от решения, в котором создано расширение UML и его модульные тесты. Дополнительные сведения см. в разделе [UML Создание проектов и схем моделирования](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
-3.  **В проекте расширения UML**внесите изменения в CSPROJ-файл в текстовом режиме и убедитесь, что в следующих строках отображается значение `true`:  
+3. **В проекте расширения UML**внесите изменения в CSPROJ-файл в текстовом режиме и убедитесь, что в следующих строках отображается значение `true`:  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ ms.locfileid: "58992753"
   
      Чтобы изменить CSPROJ-файл в текстовом режиме, в контекстном меню проекта в Обозревателе решений выберите пункт **Выгрузить проект** . Затем выберите **Изменить…CSPROJ**. После внесения изменений в текст выберите **Перезагрузить проект**.  
   
-4.  В проекте расширения UML добавьте в **Properties\AssemblyInfo.cs**следующую строку. Это позволит модульным тестам получать доступ к методам, которые необходимо протестировать:  
+4. В проекте расширения UML добавьте в **Properties\AssemblyInfo.cs**следующую строку. Это позволит модульным тестам получать доступ к методам, которые необходимо протестировать:  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **В проекте модульного теста**добавьте следующие ссылки на сборки:  
+5. **В проекте модульного теста**добавьте следующие ссылки на сборки:  
   
-    -   *Проект расширения UML*  
+    - *Проект расширения UML*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  Добавьте атрибут `[HostType("VS IDE")]` в качестве префикса во все методы теста, включая методы инициализации.  
+6. Добавьте атрибут `[HostType("VS IDE")]` в качестве префикса во все методы теста, включая методы инициализации.  
   
      Это позволит гарантировать, что тест будет выполняться в экспериментальном экземпляре Visual Studio.  
   
-##  <a name="DTE"></a> Доступ к DTE и хранилищу моделей  
+## <a name="DTE"></a> Доступ к DTE и хранилищу моделей  
  Создайте метод для открытия проекта моделирования в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Как правило, решение потребуется открывать только однократно в каждом тестовом запуске. Чтобы выполнять метод только один раз, добавьте в качестве префикса метода атрибут `[AssemblyInitialize]` . Не забывайте, что атрибут [HostType("VS IDE")] также должен быть добавлен в каждый метод теста.  Пример:  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  Если экземпляр <xref:EnvDTE.Project?displayProperty=fullName> представляет проект моделирования, можно привести его к и из <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject>.  
   
-##  <a name="Opening"></a> Открытие схемы модели  
+## <a name="Opening"></a> Открытие схемы модели  
  Тесты или классы тестов, как правило, должны работать с открытой схемой. В следующем примере используется атрибут `[ClassInitialize]` , который выполняет этот метод раньше других методов в этом классе теста. Не забывайте, что атрибут [HostType("VS IDE")] также должен быть добавлен в каждый метод теста:  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> Выполнение изменений модели в потоке пользовательского интерфейса  
+## <a name="UiThread"></a> Выполнение изменений модели в потоке пользовательского интерфейса  
  Если ваши тесты (или методы в тестах) вносят изменения в хранилище моделей, их необходимо выполнять в потоке пользовательского интерфейса. В противном случае может быть создано исключение `AccessViolationException`. Заключите код метода теста в вызове в метод Invoke:  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> Тестирование команд, жестов и других компонентов MEF  
+## <a name="MEF"></a> Тестирование команд, жестов и других компонентов MEF  
  Компоненты MEF используют объявления свойств с атрибутом `[Import]` и значениями, задаваемыми их узлами. Обычно такие свойства включают IDiagramContext, SVsServiceProvider и ILinkedUndoContext. При тестировании метода, который использует любое из этих свойств, потребуется задать их значения до выполнения тестируемого метода. Например, если вы написали расширение команды наподобие следующего:  
   
 ```  

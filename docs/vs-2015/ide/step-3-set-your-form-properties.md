@@ -1,5 +1,5 @@
 ---
-title: Шаг 3. Настройка свойств формы | Документы Майкрософт
+title: Шаг 3. Настройка свойств формы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067252"
 ---
 # <a name="step-3-set-your-form-properties"></a>Шаг 3. Настройка свойств формы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Далее окно **Свойства** используется для изменения внешнего вида формы.  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205199) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")видеоверсию этого раздела, см. в разделе [учебник 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [учебник 1: Create a Picture Viewer в C# — видео 1](http://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Настройка свойств формы  
   
@@ -64,14 +64,14 @@ ms.locfileid: "54782253"
   
 7. Перед переходом к следующему шагу, остановите программу, так как интегрированная среда разработки не позволяет изменять программу при ее выполнении. Помните, что можно использовать любой из следующих методов для остановки программы.  
   
-   -   На панели инструментов нажмите кнопку **Остановить отладку**.  
+   - На панели инструментов нажмите кнопку **Остановить отладку**.  
   
-   -   В строке меню выберите **Отладка**, **Остановить отладку**.  
+   - В строке меню выберите **Отладка**, **Остановить отладку**.  
   
-   -   Нажмите кнопку X в верхнем углу окна **Form1**.  
+   - Нажмите кнопку X в верхнем углу окна **Form1**.  
   
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   Следующий шаг руководства см. в разделе [Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Следующий раздел руководства: [Шаг 4. Создание макета формы с элементом управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Предыдущий шаг руководства см. в разделе [Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)
+- Предыдущий раздел руководства: [Шаг 2. Запуск программы](../ide/step-2-run-your-program.md).

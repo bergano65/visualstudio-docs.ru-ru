@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100362"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Руководство по тестированию подключаемых модулей системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,55 +57,55 @@ ms.locfileid: "58990723"
   
 ## <a name="test-areas-covered-in-this-section"></a>Тест, описываемые в этом разделе  
   
--   [Область тестирования 1. Добавление и открытие из системы управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Область тестирования 1. Добавление и открытие из системы управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case 1a. Добавить решение в систему управления версиями  
+    - Case 1a. Добавить решение в систему управления версиями  
   
-    -   Case 1b: Открытие решения из системы управления версиями  
+    - Case 1b: Открытие решения из системы управления версиями  
   
-    -   Вариант 1c: Добавьте решение из системы управления версиями  
+    - Вариант 1c: Добавьте решение из системы управления версиями  
   
--   [Область тестирования 2. Получить из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Область тестирования 2. Получить из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Область тестирования 3. Ознакомьтесь с / отменить извлечение](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Область тестирования 3. Ознакомьтесь с / отменить извлечение](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Вариант 3. Ознакомьтесь с / отменить извлечение  
+    - Вариант 3. Ознакомьтесь с / отменить извлечение  
   
-    -   Case 3a: Извлечение  
+    - Case 3a: Извлечение  
   
-    -   Case 3b. Отключенный извлечения  
+    - Case 3b. Отключенный извлечения  
   
-    -   Вариант 3c. Запрос редактирования/запроса сохранить (QEQS)  
+    - Вариант 3c. Запрос редактирования/запроса сохранить (QEQS)  
   
-    -   Case 3d: Автоматическая извлечения  
+    - Case 3d: Автоматическая извлечения  
   
-    -   Case 3Д. Отменить извлечение  
+    - Case 3Д. Отменить извлечение  
   
--   [Область тестирования 4. Зарегистрируйся](../../extensibility/internals/test-area-4-check-in.md)  
+- [Область тестирования 4. Зарегистрируйся](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Case 4а. Элементы, измененные  
+    - Case 4а. Элементы, измененные  
   
-    -   Case 4б. Добавление файлов  
+    - Case 4б. Добавление файлов  
   
-    -   Вариант 4c. Добавление проектов  
+    - Вариант 4c. Добавление проектов  
   
--   [Область тестирования 5. Смена системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Область тестирования 5. Смена системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case 5а. Привязка  
+    - Case 5а. Привязка  
   
-    -   Case 5б. отменить привязку  
+    - Case 5б. отменить привязку  
   
-    -   Вариант 5c. повторную привязку  
+    - Вариант 5c. повторную привязку  
   
--   [Область тестирования 6. Удаление](../../extensibility/internals/test-area-6-delete.md)  
+- [Область тестирования 6. Удаление](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Область тестирования 7. Предоставить общий доступ](../../extensibility/internals/test-area-7-share.md)  
+- [Область тестирования 7. Предоставить общий доступ](../../extensibility/internals/test-area-7-share.md)  
   
--   [Области тестирования 8. Переключение подключаемых модулей](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Области тестирования 8. Переключение подключаемых модулей](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case 8a: Автоматическое изменение  
+    - Case 8a: Автоматическое изменение  
   
-    -   Case 8b: Изменение на основе решений  
+    - Case 8b: Изменение на основе решений  
   
 ## <a name="see-also"></a>См. также  
  [Подключаемые модули системы управления версиями](../../extensibility/source-control-plug-ins.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104999"
 ---
 # <a name="how-to-implement-nested-projects"></a>Практическое руководство. Реализация вложенных проектов
 
@@ -24,18 +24,18 @@ ms.locfileid: "56335250"
 
 ## <a name="create-nested-projects"></a>Создание вложенных проектов
 
-1.  Интегрированной среде разработки (IDE) загружает сведения о файлах и запуска проекта в родительский проект путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейс. Родительский проект создается и добавляется в решение.
+1. Интегрированной среде разработки (IDE) загружает сведения о файлах и запуска проекта в родительский проект путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейс. Родительский проект создается и добавляется в решение.
 
     > [!NOTE]
     > На этом этапе является слишком ранним процесса для родительского проекта для создания вложенных проектов, так как перед созданием дочерние проекты должны создаваться в родительский проект. Следующую последовательность в родительский проект можно применить параметры в дочерние проекты, и дочерние проекты можно получить сведения из родительской проектов, при необходимости. Эта последовательность является, если он необходим для клиентов, таких как системы управления исходным кодом (SCC) и **обозревателе решений**.
 
      Родительский проект необходимо дождаться <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> метод вызывается в интегрированной среде разработки до ее можно создать его вложенные (дочерние), или проектов.
 
-2.  Интегрированная среда разработки вызовы `QueryInterface` на родительский проект для <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Если этот вызов выполняется успешно, вызовы IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> метод родительского элемента для открытия всех вложенных проектов для родительского проекта.
+2. Интегрированная среда разработки вызовы `QueryInterface` на родительский проект для <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Если этот вызов выполняется успешно, вызовы IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> метод родительского элемента для открытия всех вложенных проектов для родительского проекта.
 
-3.  Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> метод для уведомления прослушивателей, вложенные проекты должны создаваться. SCC, например, ожидает передачи данных на эти события, чтобы знать, если действия, описанные в процесс создания проектов и решений выполняются в порядке. Если шаги по порядку, решение может не зарегистрирована с контролем исходного кода.
+3. Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> метод для уведомления прослушивателей, вложенные проекты должны создаваться. SCC, например, ожидает передачи данных на эти события, чтобы знать, если действия, описанные в процесс создания проектов и решений выполняются в порядке. Если шаги по порядку, решение может не зарегистрирована с контролем исходного кода.
 
-4.  Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> метод на каждом из его дочерних проектов.
+4. Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> метод на каждом из его дочерних проектов.
 
      Вы передаете <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> для `AddVirtualProject` добавляемый метод, чтобы указать, что виртуальный проект (вложенная) должны быть добавлены в окно проекта, исключено из сборки, управления исходным кодом и т. д. `VSADDVPFLAGS` позволяет управлять видимостью вложенного проекта и указать, какие функциональные возможности, связанные с ним.
 
@@ -43,15 +43,15 @@ ms.locfileid: "56335250"
 
      Если есть идентификатор GUID не доступны, например при добавлении нового вложенного проекта, решение создает один для проекта во время он добавляется в родительский объект. Он отвечает родительского проекта для сохранения этого проекта GUID в файле проекта. При удалении вложенного проекта, можно также удалить идентификатор GUID для этого проекта.
 
-5.  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> метод для каждого дочернего проекта родительского проекта.
+5. Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> метод для каждого дочернего проекта родительского проекта.
 
      Родительский проект должен реализовывать `IVsParentProject` Если вы хотите вкладывать друг в друга проектов. Но родительский проект никогда не вызывает `QueryInterface` для `IVsParentProject` даже если он имеет родительские проекты под ним. Решение выполняет вызов `IVsParentProject` и, если оно реализовано, вызывает `OpenChildren` для создания вложенных проектов. `AddVirtualProjectEX` всегда вызывается из `OpenChildren`. Он никогда не должен вызываться с родительского проекта для сохранения события создания иерархии в порядке.
 
-6.  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> метод дочернему проекту.
+6. Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> метод дочернему проекту.
 
-7.  Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> метод для уведомления прослушивателей, что были созданы дочерние проекты для родительского элемента.
+7. Вызовы родительского проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> метод для уведомления прослушивателей, что были созданы дочерние проекты для родительского элемента.
 
-8.  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> метод на родительский проект после открытия всех дочерних проектов.
+8. Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> метод на родительский проект после открытия всех дочерних проектов.
 
      Если он еще не существует, в родительский проект создает идентификатор GUID для каждого вложенного проекта путем вызова `CoCreateGuid`.
 

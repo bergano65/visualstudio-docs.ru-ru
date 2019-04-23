@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096976"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Ошибка: Отладка&#39;t невозможна, поскольку в системе включен отладчик ядра
 При отладке управляемого кода может появиться следующее сообщение об ошибке:
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Отключение отладки на уровне ядра в текущем сеансе
 
--   В командной строке введите следующее:
+- В командной строке введите следующее:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Отключение отладки на уровне ядра для всех сеансов (Windows Vista и Windows 7)
 
-1.  В командной строке введите следующее:
+1. В командной строке введите следующее:
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  Перезагрузите компьютер.
+2. Перезагрузите компьютер.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Отключение отладки на уровне ядра для всех сеансов (другие операционные системы Windows)
 
-1.  Найдите файл boot.ini на системном диске (обычно C:\\). Файл boot.ini может быть скрыт и иметь атрибут "только для чтения". Поэтому для его отображения необходимо использовать следующую команду:
+1. Найдите файл boot.ini на системном диске (обычно C:\\). Файл boot.ini может быть скрыт и иметь атрибут "только для чтения". Поэтому для его отображения необходимо использовать следующую команду:
 
     ```cmd
     dir /ASH
     ```
 
-2.  Откройте файл boot.ini с помощью программы "Блокнот" и удалите следующие параметры:
+2. Откройте файл boot.ini с помощью программы "Блокнот" и удалите следующие параметры:
 
     ```cmd
     /debug
@@ -88,16 +88,16 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  Перезагрузите компьютер.
+3. Перезагрузите компьютер.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Выполнение отладки с помощью отладчика ядра
 
-1.  Если отладчик ядра подключен, появится сообщение с запросом, нужно ли продолжать отладку. Нажмите кнопку, чтобы продолжить.
+1. Если отладчик ядра подключен, появится сообщение с запросом, нужно ли продолжать отладку. Нажмите кнопку, чтобы продолжить.
 
-2.  Может появиться `User break exception(Int 3).` Если это произойдет, введите следующую команду отладчика ядра для продолжения отладки:
+2. Может появиться `User break exception(Int 3).` Если это произойдет, введите следующую команду отладчика ядра для продолжения отладки:
 
      `gn`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)

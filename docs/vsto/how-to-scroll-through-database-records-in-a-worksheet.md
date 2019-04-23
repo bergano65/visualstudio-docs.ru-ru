@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7facc5a70b603b016bbafd207650caaef05027fa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094714"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Практическое руководство. Прокрутить записи базы данных на листе
   Ниже показано, как использовать конструктор для отображения одно поле из таблицы базы данных в лист Microsoft Office Excel, с помощью элементов управления, которые позволяют пользователю просматривать все записи.
@@ -31,17 +31,17 @@ ms.locfileid: "56600250"
 
 ## <a name="to-scroll-through-database-records-in-a-worksheet"></a>Чтобы прокрутить записи базы данных на листе
 
-1.  Откройте проект приложения Excel в Visual Studio.
+1. Откройте проект приложения Excel в Visual Studio.
 
-2.  Откройте **источников данных** окно и создать источник данных из базы данных. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+2. Откройте **источников данных** окно и создать источник данных из базы данных. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
-3.  Разверните таблицу, которая содержит данные, которые требуется отобразить и выберите нужный столбец.
+3. Разверните таблицу, которая содержит данные, которые требуется отобразить и выберите нужный столбец.
 
-4.  Откройте список элементов управления и выберите **NamedRange**.
+4. Откройте список элементов управления и выберите **NamedRange**.
 
-5.  Перетащите <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления на ячейку, где должны отображаться данные.
+5. Перетащите <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления на ячейку, где должны отображаться данные.
 
-6.  Из **Windows Forms** вкладке **элементов**, добавьте <xref:System.Windows.Forms.BindingNavigator> управления на лист и настроить элементы управления, которые вы хотите использовать. Дополнительные сведения см. в разделе [Обзор элемента управления BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. Из **Windows Forms** вкладке **элементов**, добавьте <xref:System.Windows.Forms.BindingNavigator> управления на лист и настроить элементы управления, которые вы хотите использовать. Дополнительные сведения см. в разделе [Обзор элемента управления BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>См. также
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

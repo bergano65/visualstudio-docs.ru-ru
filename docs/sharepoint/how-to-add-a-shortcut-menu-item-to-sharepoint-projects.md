@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aaeb40e97309a06dfe0f4c0e14a7d032edd563ec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5b5db3fe3aaf8dc57c7df6a63810106ae9fb30fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115592"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Практическое руководство. Добавление пункта контекстного меню в проекты SharePoint
   Пункта контекстного меню можно добавить в любой проект SharePoint. Пункт меню отображается, когда пользователь щелкает правой кнопкой мыши узел проекта в **обозревателе решений**.
@@ -28,11 +28,11 @@ ms.locfileid: "56645255"
 
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Добавление пункта контекстного меню в проекты SharePoint
 
-1.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> событие *projectService* параметра.
+1. В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> событие *projectService* параметра.
 
-2.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> событий, добавьте новый <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> объект <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> или <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> коллекцию параметра аргументов события.
+2. В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> событий, добавьте новый <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> объект <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> или <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> коллекцию параметра аргументов события.
 
-3.  В <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> обработчик событий для нового <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> объекта, выполнять задачи, которую требуется выполнить при нажатии пункта контекстного меню.
+3. В <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> обработчик событий для нового <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> объекта, выполнять задачи, которую требуется выполнить при нажатии пункта контекстного меню.
 
 ## <a name="example"></a>Пример
  В следующем примере кода демонстрируется добавление пункта контекстного меню узел проекта SharePoint в **обозревателе решений**. Когда пользователь щелкает правой кнопкой мыши узел проекта и нажимает кнопку **написать сообщение в окно вывода** пункта меню, Visual Studio отображает сообщение в **вывода** окна. В этом примере используется служба проекта SharePoint для отображения сообщения. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
@@ -43,9 +43,9 @@ ms.locfileid: "56645255"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуется проект библиотеки классов с помощью ссылки на следующие сборки:
 
--   Microsoft.VisualStudio.SharePoint
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

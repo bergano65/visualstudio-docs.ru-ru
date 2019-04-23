@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073739"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Привязка данных к элементам управления в решениях Office
   Вы можете привязать элементы управления Windows Forms и *элементы управления ведущего приложения* в документе Microsoft Office Word или листе Microsoft Office Excel к источнику данных, чтобы эти элементы управления автоматически отображали данные. Можно привязывать данные к элементам управления в проектах уровня документа и уровня приложения.
@@ -73,22 +73,22 @@ ms.locfileid: "56605722"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Привязка данных в проектах уровня документа во время разработки
  В следующих разделах содержатся примеры привязки данных во время разработки.
 
--   [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Практическое руководство. Прокрутить записи базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Практическое руководство. Прокрутить записи базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Привязка данных в проектах надстройки VSTO
  В проектах надстройки VSTO можно добавить элементы управления только во время выполнения. Ниже приведены примеры привязки данных во время выполнения.
 
--   [Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Пошаговое руководство: Сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Пошаговое руководство: Сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Обновление данных, привязанный к элементы управления ведущего приложения
  Привязка данных между источником данных и элементом управления ведущего приложения подразумевает два способа обновления данных. В простой привязке данных изменения в источнике данных автоматически отражаются в элементе управления ведущего приложения, но при изменениях в элементе управления ведущего приложения необходимо явно вызывать обновление источника данных. Причина заключается в том, что в некоторых случаях изменения в одном поле с привязкой к данным не принимаются, пока не будут дополнены изменениями в другом поле с привязкой к данным. Например, у вас может быть два поля, одно для возраста, а другое для стажа. Стаж не может превышать возраст. Пользователь не может изменить возраст с 50 на 25, а затем изменить стаж с 30 на 10, если он делает эти изменения в одно и то же время. Для разрешения этой проблемы поля с простой привязкой данных не обновляются, пока обновления не будут явно отправлены в коде.

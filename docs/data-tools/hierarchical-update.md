@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089319"
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 
@@ -87,9 +87,9 @@ ms.locfileid: "55933254"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Обновление кода для фиксации изменений в связанных таблицах перед сохранением
 
-1.  Дважды нажмите кнопку **Сохранить** на <xref:System.Windows.Forms.BindingNavigator>, чтобы открыть **Form1** в редакторе кода.
+1. Дважды нажмите кнопку **Сохранить** на <xref:System.Windows.Forms.BindingNavigator>, чтобы открыть **Form1** в редакторе кода.
 
-2.  Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в событии нажатия кнопки **Сохранить** должен выглядеть примерно следующим образом:
+2. Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в событии нажатия кнопки **Сохранить** должен выглядеть примерно следующим образом:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ ms.locfileid: "55933254"
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Добавление кода для фиксации родительских записей в наборе данных перед добавлением новых дочерних записей
 
-1.  Создайте обработчик событий для события `OrdersBindingSource.AddingNew`.
+1. Создайте обработчик событий для события `OrdersBindingSource.AddingNew`.
 
-    -   Откройте **Form1** в режиме конструктора выберите **OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.
+    - Откройте **Form1** в режиме конструктора выберите **OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.
 
-2.  Добавьте строку кода в обработчик событий, который вызывает `CustomersBindingSource.EndEdit` метод. Код в обработчике событий `OrdersBindingSource_AddingNew` должен выглядеть примерно следующим образом:
+2. Добавьте строку кода в обработчик событий, который вызывает `CustomersBindingSource.EndEdit` метод. Код в обработчике событий `OrdersBindingSource_AddingNew` должен выглядеть примерно следующим образом:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
@@ -121,9 +121,9 @@ ms.locfileid: "55933254"
 |Член|Описание|
 |------------|-----------------|
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|
-|Свойство`BackUpDataSetBeforeUpdate` |Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
+|Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
 |*tableName* `TableAdapter` свойство|Представляет `TableAdapter`. Созданный `TableAdapterManager` содержит свойство для каждого `TableAdapter` он управляет. Например, набор данных с таблицей Customers и Orders создается с `TableAdapterManager` , содержащий `CustomersTableAdapter` и `OrdersTableAdapter` свойства.|
-|Свойство`UpdateOrder` |Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
+|Свойство `UpdateOrder`|Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
 
 ## <a name="see-also"></a>См. также
 

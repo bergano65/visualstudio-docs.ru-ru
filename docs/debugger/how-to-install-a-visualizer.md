@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Установка визуализатора | Документация Майкрософт'
+title: Практическое руководство. Установка визуализатора | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104490"
 ---
-# <a name="how-to-install-a-visualizer"></a>Практическое руководство. Установка визуализатора
+# <a name="how-to-install-a-visualizer"></a>Практическое руководство. установку визуализатора
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
 
 > [!NOTE]
@@ -32,18 +32,18 @@ ms.locfileid: "56691427"
 
 ### <a name="to-install-a-visualizer"></a>Установка визуализатора
 
-1.  Найдите библиотеку DLL, содержащую построенный визуализатор.
+1. Найдите библиотеку DLL, содержащую построенный визуализатор.
 
-2.  Скопируйте библиотеку DLL в одно из следующих мест:
+2. Скопируйте библиотеку DLL в одно из следующих мест:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Если нужно использовать визуализатор управляемого кода для удаленной отладки, скопируйте DLL по тому же пути на удаленном компьютере.
+3. Если нужно использовать визуализатор управляемого кода для удаленной отладки, скопируйте DLL по тому же пути на удаленном компьютере.
 
-4.  Перезапустите сеанс отладки.
+4. Перезапустите сеанс отладки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
 - [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)

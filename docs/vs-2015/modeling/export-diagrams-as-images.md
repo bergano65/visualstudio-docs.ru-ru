@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104126"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "58978523"
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее части в другое приложение  
   
-1.  Выделите на схеме некоторые или все фигуры.  
+1. Выделите на схеме некоторые или все фигуры.  
   
-2.  Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.  
+2. Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.  
   
-3.  Вставьте выделенные элементы в нужное приложение.  
+3. Вставьте выделенные элементы в нужное приложение.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>Экспорт изображения в рамках автоматического процесса  
   
--   См. в разделе [Экспорт UML-схемы в файлы изображений](../modeling/export-uml-diagrams-to-image-files.md).  
+- См. в разделе [Экспорт UML-схемы в файлы изображений](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде XPS-файла  
   
-1.  На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.  
+1. На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.  
   
-2.  В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.  
+2. В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.  
   
-3.  В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.  
+3. В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
   

@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5600f30df21e73fb4474839aee3bc6ab1eced761
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076604"
 ---
 # <a name="walkthrough-highlighting-text"></a>Пошаговое руководство. Выделение текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ ms.locfileid: "58978582"
   
 ## <a name="creating-a-mef-project"></a>Создание проекта MEF  
   
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `HighlightWordTest`.  
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `HighlightWordTest`.  
   
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Удалите файлы существующих классов.  
+3. Удалите файлы существующих классов.  
   
 ## <a name="defining-a-textmarkertag"></a>Определение TextMarkerTag  
  Первым шагом в выделение текста — в подкласс <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> и определения его внешнего вида.  
   
 #### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>Для определения TextMarkerTag и MarkerFormatDefinition  
   
-1.  Добавьте файл класса и назовите его **HighlightWordTag**.  
+1. Добавьте файл класса и назовите его **HighlightWordTag**.  
   
-2.  Добавьте следующие ссылки:  
+2. Добавьте следующие ссылки:  
   
-    1.  Microsoft.VisualStudio.CoreUtility  
+    1. Microsoft.VisualStudio.CoreUtility  
   
-    2.  Microsoft.VisualStudio.Text.Data  
+    2. Microsoft.VisualStudio.Text.Data  
   
-    3.  Microsoft.VisualStudio.Text.Logic  
+    3. Microsoft.VisualStudio.Text.Logic  
   
-    4.  Microsoft.VisualStudio.Text.UI  
+    4. Microsoft.VisualStudio.Text.UI  
   
-    5.  Microsoft.VisualStudio.Text.UI.Wpf  
+    5. Microsoft.VisualStudio.Text.UI.Wpf  
   
-    6.  System.ComponentModel.Composition  
+    6. System.ComponentModel.Composition  
   
-    7.  Presentation.Core  
+    7. Presentation.Core  
   
-    8.  Presentation.Framework  
+    8. Presentation.Framework  
   
-3.  Импортируйте следующие пространства имен.  
+3. Импортируйте следующие пространства имен.  
   
     ```csharp  
     using System;  
@@ -75,7 +75,7 @@ ms.locfileid: "58978582"
     using System.Windows.Media;  
     ```  
   
-4.  Создайте класс, наследуемый от <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> и назовите его `HighlightWordTag`.  
+4. Создайте класс, наследуемый от <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> и назовите его `HighlightWordTag`.  
   
     ```csharp  
     internal class HighlightWordTag : TextMarkerTag  
@@ -84,11 +84,11 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-5.  Создайте второй класс, наследуемый от <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>и назовите его HighlightWordFormatDefinition. Чтобы использовать это определение формата для тега, его необходимо экспортировать со следующими атрибутами:  
+5. Создайте второй класс, наследуемый от <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>и назовите его HighlightWordFormatDefinition. Чтобы использовать это определение формата для тега, его необходимо экспортировать со следующими атрибутами:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: тегов позволяет ссылаться на этот формат  
+    - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: тегов позволяет ссылаться на этот формат  
   
-    -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: это приводит к формат для отображения в пользовательском Интерфейсе  
+    - <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: это приводит к формат для отображения в пользовательском Интерфейсе  
   
     ```csharp  
   
@@ -101,7 +101,7 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-6.  В конструкторе для HighlightWordFormatDefinition определите его отображаемое имя и внешний вид. Свойство Background определяет цвет заливки, а свойства Foreground определяет цвет границы.  
+6. В конструкторе для HighlightWordFormatDefinition определите его отображаемое имя и внешний вид. Свойство Background определяет цвет заливки, а свойства Foreground определяет цвет границы.  
   
     ```csharp  
     public HighlightWordFormatDefinition()  
@@ -113,7 +113,7 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-7.  В конструкторе для HighlightWordTag передаете имя в определении формата, который вы только что создали.  
+7. В конструкторе для HighlightWordTag передаете имя в определении формата, который вы только что создали.  
   
     ```  
     public HighlightWordTag() : base("MarkerFormatDefinition/HighlightWordFormatDefinition") { }  
@@ -124,7 +124,7 @@ ms.locfileid: "58978582"
   
 #### <a name="to-implement-a-tagger"></a>Реализация разметчика  
   
-1.  Создайте класс, реализующий <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа `HighlightWordTag`и назовите его `HighlightWordTagger`.  
+1. Создайте класс, реализующий <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа `HighlightWordTag`и назовите его `HighlightWordTagger`.  
   
     ```csharp  
     internal class HighlightWordTagger : ITagger<HighlightWordTag>  
@@ -133,23 +133,23 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-2.  Добавьте в класс ниже закрытые поля и свойства:  
+2. Добавьте в класс ниже закрытые поля и свойства:  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, Который соответствует текущего текстового представления.  
+    - <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, Который соответствует текущего текстового представления.  
   
-    -   <xref:Microsoft.VisualStudio.Text.ITextBuffer>, Соответствующее в текстовый буфер, который является базовым представлением текста.  
+    - <xref:Microsoft.VisualStudio.Text.ITextBuffer>, Соответствующее в текстовый буфер, который является базовым представлением текста.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>, Который используется для поиска текста.  
+    - <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>, Который используется для поиска текста.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, Который содержит методы для навигации в текстовых диапазонов.  
+    - <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, Который содержит методы для навигации в текстовых диапазонов.  
   
-    -   Объект <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>, который содержит набор слов, чтобы выделить.  
+    - Объект <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>, который содержит набор слов, чтобы выделить.  
   
-    -   Объект <xref:Microsoft.VisualStudio.Text.SnapshotSpan>, который соответствует текущего слова.  
+    - Объект <xref:Microsoft.VisualStudio.Text.SnapshotSpan>, который соответствует текущего слова.  
   
-    -   Объект <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, который соответствует текущей позиции курсора.  
+    - Объект <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, который соответствует текущей позиции курсора.  
   
-    -   Объект блокировки.  
+    - Объект блокировки.  
   
     ```csharp  
     ITextView View { get; set; }  
@@ -163,7 +163,7 @@ ms.locfileid: "58978582"
   
     ```  
   
-3.  Добавьте конструктор, который инициализирует свойства, перечисленные ранее и добавляет <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> обработчики событий.  
+3. Добавьте конструктор, который инициализирует свойства, перечисленные ранее и добавляет <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> обработчики событий.  
   
     ```csharp  
     public HighlightWordTagger(ITextView view, ITextBuffer sourceBuffer, ITextSearchService textSearchService,  
@@ -181,7 +181,7 @@ ms.locfileid: "58978582"
   
     ```  
   
-4.  Обработчики событий, обе точки вызова `UpdateAtCaretPosition` метод.  
+4. Обработчики событий, обе точки вызова `UpdateAtCaretPosition` метод.  
   
     ```csharp  
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
@@ -199,12 +199,12 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-5.  Необходимо также добавить `TagsChanged` событий, который будет вызываться методом update.  
+5. Необходимо также добавить `TagsChanged` событий, который будет вызываться методом update.  
   
      [!code-csharp[VSSDKHighlightWordTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs#10)]
      [!code-vb[VSSDKHighlightWordTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb#10)]  
   
-6.  `UpdateAtCaretPosition()` Метод находит все слова в текстовом буфере, идентичный word, где находится курсор и создает список <xref:Microsoft.VisualStudio.Text.SnapshotSpan> объектов, которые соответствуют вхождения слова. Затем он вызывает `SynchronousUpdate`, который вызывает `TagsChanged` событий.  
+6. `UpdateAtCaretPosition()` Метод находит все слова в текстовом буфере, идентичный word, где находится курсор и создает список <xref:Microsoft.VisualStudio.Text.SnapshotSpan> объектов, которые соответствуют вхождения слова. Затем он вызывает `SynchronousUpdate`, который вызывает `TagsChanged` событий.  
   
     ```csharp  
     void UpdateAtCaretPosition(CaretPosition caretPosition)  
@@ -286,7 +286,7 @@ ms.locfileid: "58978582"
   
     ```  
   
-7.  `SynchronousUpdate` Выполняет синхронного обновления `WordSpans` и `CurrentWord` свойства и вызывает `TagsChanged` событий.  
+7. `SynchronousUpdate` Выполняет синхронного обновления `WordSpans` и `CurrentWord` свойства и вызывает `TagsChanged` событий.  
   
     ```vb  
     void SynchronousUpdate(SnapshotPoint currentRequest, NormalizedSnapshotSpanCollection newSpans, SnapshotSpan? newCurrentWord)  
@@ -306,7 +306,7 @@ ms.locfileid: "58978582"
     }  
     ```  
   
-8.  Необходимо реализовать <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> метод. Этот метод принимает коллекцию <xref:Microsoft.VisualStudio.Text.SnapshotSpan> объектов и возвращает перечисление диапазонов с тегами.  
+8. Необходимо реализовать <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> метод. Этот метод принимает коллекцию <xref:Microsoft.VisualStudio.Text.SnapshotSpan> объектов и возвращает перечисление диапазонов с тегами.  
   
      В C# этот метод реализуется итератором yield, позволяющий отложенное вычисление (то есть оценки набора только в том случае, когда происходит доступ к отдельным элементам) тегов. В Visual Basic добавление тегов в список и возвращения списка.  
   
@@ -357,7 +357,7 @@ ms.locfileid: "58978582"
   
 #### <a name="to-create-a-tagger-provider"></a>Для создания поставщика средство создания тегов  
   
-1.  Создайте класс с именем `HighlightWordTaggerProvider` , реализующий <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> из <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Создайте класс с именем `HighlightWordTaggerProvider` , реализующий <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> из <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
     ```csharp  
     [Export(typeof(IViewTaggerProvider))]  
@@ -367,7 +367,7 @@ ms.locfileid: "58978582"
     { }  
     ```  
   
-2.  Две службы редактора, необходимо импортировать <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> и <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, для создания экземпляра средство создания тегов.  
+2. Две службы редактора, необходимо импортировать <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> и <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, для создания экземпляра средство создания тегов.  
   
     ```csharp  
     [Import]  
@@ -378,7 +378,7 @@ ms.locfileid: "58978582"
   
     ```  
   
-3.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> метод для возврата экземпляра `HighlightWordTagger`.  
+3. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> метод для возврата экземпляра `HighlightWordTagger`.  
   
     ```csharp  
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag  
@@ -399,13 +399,13 @@ ms.locfileid: "58978582"
   
 #### <a name="to-build-and-test-the-highlightwordtest-solution"></a>Построение и тестирование решения HighlightWordTest  
   
-1.  Постройте решение.  
+1. Постройте решение.  
   
-2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
+2. При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
   
-3.  Создайте текстовый файл и введите текст, в котором слова повторяются, например, «hello hello hello».  
+3. Создайте текстовый файл и введите текст, в котором слова повторяются, например, «hello hello hello».  
   
-4.  Позиционирование курсора в одно из вхождений «hello». Каждое вхождение должны быть выделены синим цветом.  
+4. Позиционирование курсора в одно из вхождений «hello». Каждое вхождение должны быть выделены синим цветом.  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

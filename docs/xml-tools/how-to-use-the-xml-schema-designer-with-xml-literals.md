@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58070221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067616"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Практическое руководство. Использование конструктора схем XML с литералами XML
 
@@ -23,7 +23,7 @@ ms.locfileid: "58070221"
 
 ## <a name="create-a-new-visual-basic-project"></a>Создайте новый проект Visual Basic
 
-1.  Запустите Visual Studio.
+1. Запустите Visual Studio.
 
 2. Создать новый Visual Basic **консольное приложение** проект с именем **XMLLiterals**.
 
@@ -31,11 +31,11 @@ ms.locfileid: "58070221"
 
 ## <a name="add-an-existing-xsd-file"></a>Добавление существующего XSD-файла
 
-1.  Откройте новый текстовый файл в блокноте. Скопируйте образец кода XML-схемы из [схема заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
+1. Откройте новый текстовый файл в блокноте. Скопируйте образец кода XML-схемы из [схема заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
 
-2.  Сохраните файл в любом местоположении под именем *PurchaseOrderSchema.xsd*.
+2. Сохраните файл в любом местоположении под именем *PurchaseOrderSchema.xsd*.
 
-3.  В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент**. **Добавить существующий элемент** откроется диалоговое окно. Перейдите к *PurchaseOrderSchema.xsd* файл, выберите его и нажмите кнопку **добавить**.
+3. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент**. **Добавить существующий элемент** откроется диалоговое окно. Перейдите к *PurchaseOrderSchema.xsd* файл, выберите его и нажмите кнопку **добавить**.
 
      Проект XMLLiterals теперь содержит два файла: *Module1.vb* и *PurchaseOrderSchema.xsd*.
 

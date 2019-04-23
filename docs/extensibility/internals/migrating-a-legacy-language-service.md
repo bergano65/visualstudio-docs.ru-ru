@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df11ccfc2057da37094c632c10fc9c1a936cf43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc0797fe993a9a640c3fcc15f0c6dc364a55687d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110970"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
 Можно перенести языковой службы прежних версий до более поздней версии Visual Studio путем обновления проекта и добавление в проект файл source.extension.vsixmanifest. Сама служба языка будет продолжать работать по-прежнему, так как в редакторе Visual Studio адаптирует его.
@@ -37,9 +37,9 @@ ms.locfileid: "56612442"
 
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Для переноса языковой службы Visual Studio 2008 до более поздней версии
 
-1.  Установка более новых версиях Visual Studio и Visual Studio SDK. Дополнительные сведения о способах установки пакета SDK см. в разделе [установка Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).
+1. Установка более новых версиях Visual Studio и Visual Studio SDK. Дополнительные сведения о способах установки пакета SDK см. в разделе [установка Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).
 
-2.  Измените файл RegExLangServ.csproj (без загрузки его в Visual Studio.
+2. Измените файл RegExLangServ.csproj (без загрузки его в Visual Studio.
 
      В `Import` узел, который ссылается на файл Microsoft.VsSDK.targets, замените значение со следующим текстом.
 
@@ -47,29 +47,29 @@ ms.locfileid: "56612442"
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets
     ```
 
-3.  Сохраните файл и закройте его.
+3. Сохраните файл и закройте его.
 
-4.  Откройте решение RegExLangServ.sln.
+4. Откройте решение RegExLangServ.sln.
 
-5.  **Одностороннее обновление** появится окно. Нажмите кнопку **ОК**.
+5. **Одностороннее обновление** появится окно. Нажмите кнопку **ОК**.
 
-6.  Обновление свойств проекта. Откройте **свойства проекта** окно, выбрав узел проекта в **обозревателе решений**, щелкните правой кнопкой мыши и выбрав **свойства**.
+6. Обновление свойств проекта. Откройте **свойства проекта** окно, выбрав узел проекта в **обозревателе решений**, щелкните правой кнопкой мыши и выбрав **свойства**.
 
-    -   На **приложения** вкладке **требуемой версии .NET framework** для **4.6.1**.
+    - На **приложения** вкладке **требуемой версии .NET framework** для **4.6.1**.
 
-    -   На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.**.
+    - На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.**.
 
          В **аргументы командной строки** введите /**rootsuffix Exp**.
 
-7.  Обновите следующие ссылки:
+7. Обновите следующие ссылки:
 
-    -   Удалите ссылку на Microsoft.VisualStudio.Shell.9.0.dll, а затем добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.dll и Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
+    - Удалите ссылку на Microsoft.VisualStudio.Shell.9.0.dll, а затем добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.dll и Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
 
-    -   Удалите ссылку на Microsoft.VisualStudio.Package.LanguageService.9.0.dll, а затем добавьте ссылку на Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
+    - Удалите ссылку на Microsoft.VisualStudio.Package.LanguageService.9.0.dll, а затем добавьте ссылку на Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
 
-    -   Добавьте ссылку на Microsoft.VisualStudio.Shell.Interop.10.0.dll.
+    - Добавьте ссылку на Microsoft.VisualStudio.Shell.Interop.10.0.dll.
 
-8.  Откройте файл VsPkg.cs и измените значение свойства `DefaultRegistryRoot` для атрибута
+8. Откройте файл VsPkg.cs и измените значение свойства `DefaultRegistryRoot` для атрибута
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
@@ -83,25 +83,25 @@ ms.locfileid: "56612442"
 
 10. You must add a source.extension.vsixmanifest file.
 
-    -   Скопируйте этот файл из существующего расширения в каталог проекта. (Лучший способ получить этот файл является создание проекта VSIX (в разделе **файл**, нажмите кнопку **New**, затем нажмите кнопку **проекта**. В Visual Basic или C#, выберите **расширяемости**, а затем выберите **проект VSIX**.)
+    - Скопируйте этот файл из существующего расширения в каталог проекта. (Лучший способ получить этот файл является создание проекта VSIX (в разделе **файл**, нажмите кнопку **New**, затем нажмите кнопку **проекта**. В Visual Basic или C#, выберите **расширяемости**, а затем выберите **проект VSIX**.)
 
-    -   Добавьте файл в проект.
+    - Добавьте файл в проект.
 
-    -   В файле **свойства**, задайте **действие при построении** для **None**.
+    - В файле **свойства**, задайте **действие при построении** для **None**.
 
-    -   Откройте файл с **Редактор манифестов VSIX**.
+    - Откройте файл с **Редактор манифестов VSIX**.
 
-    -   Измените следующие поля:
+    - Измените следующие поля:
 
-    -   **ИДЕНТИФИКАТОР**: RegExLangServ
+    - **ИДЕНТИФИКАТОР**: RegExLangServ
 
-    -   **Название продукта**: RegExLangServ
+    - **Название продукта**: RegExLangServ
 
-    -   **Описание**: Служба языка регулярных выражений.
+    - **Описание**. Служба языка регулярных выражений.
 
-    -   В разделе **активы**, нажмите кнопку **New**выберите **тип** для **Microsoft.VisualStudio.VsPackage**, задайте **источника** для **проект в текущем решении**, а затем задайте **проекта** для **RegExLangServ**.
+    - В разделе **активы**, нажмите кнопку **New**выберите **тип** для **Microsoft.VisualStudio.VsPackage**, задайте **источника** для **проект в текущем решении**, а затем задайте **проекта** для **RegExLangServ**.
 
-    -   Сохраните и закройте файл.
+    - Сохраните и закройте файл.
 
 11. Постройте решение. Созданные файлы развертываются **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.
 

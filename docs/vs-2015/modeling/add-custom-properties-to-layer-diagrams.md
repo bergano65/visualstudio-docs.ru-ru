@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075211"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Добавление пользовательских свойств в схемы слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ ms.locfileid: "58991112"
 > [!IMPORTANT]
 >  Чтобы свойства отображались, нужно внести описанное ниже изменение на каждом компьютере, на котором свойства слоев должны быть видимыми.  
 > 
-> 1. Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте файл `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
->    2.  Внутри элемента `Content` добавьте следующую запись:  
+>  1. Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте файл `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
+>  
+>  2. Внутри элемента `Content` добавьте следующую запись:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
 > 
->    Введите следующие команды:  
+>     Введите следующие команды:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Перезапустите Visual Studio.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Перезапустите Visual Studio.  
   
  **Убедитесь, что ваш код в проекте VSIX**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Свойства можно определить для класса <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> или любого из его производных классов, которые включают следующие классы:  
   
--   `ILayerModel` — модель  
+- `ILayerModel` — модель  
   
--   `ILayer` — каждый слой  
+- `ILayer` — каждый слой  
   
--   `ILayerDependencyLink` — ссылки между слоями  
+- `ILayerDependencyLink` — ссылки между слоями  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже код представляет собой типичный дескриптор пользовательского свойства. Он определяет логическое свойство в модели слоев (`ILayerModel`), которое позволяет пользователю предоставлять значения для пользовательского метода проверки.  

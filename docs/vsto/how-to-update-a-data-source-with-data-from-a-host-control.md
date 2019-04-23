@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097496"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения
   Вы можете привязать элемент управления ведущего приложения к источнику данных и обновлять источник данных с помощью изменений, внесенных в данные в элементе управления. Этот процесс включает два основных этапа.
@@ -42,7 +42,7 @@ ms.locfileid: "56637598"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Для обновления источника данных в памяти во время выполнения
 
--   Вызовите метод <xref:System.Windows.Forms.Binding.WriteValue%2A> объекта <xref:System.Windows.Forms.Binding> , который привязывает элемент управления к источнику данных.
+- Вызовите метод <xref:System.Windows.Forms.Binding.WriteValue%2A> объекта <xref:System.Windows.Forms.Binding> , который привязывает элемент управления к источнику данных.
 
      В следующем примере выполняется сохранение изменений, внесенных в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в листе Excel, в источнике данных. В этом примере предполагается, что имеется элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `namedRange1` , свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> которого привязано к полю в источнике данных.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637598"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Установка автоматического обновления источника данных в памяти элементом управления с помощью конструктора
 
-1.  В Visual Studio откройте документ Word или книгу Excel в конструкторе.
+1. В Visual Studio откройте документ Word или книгу Excel в конструкторе.
 
-2.  Щелкните элемент управления, который вы хотите настроить для автоматического обновления источника данных.
+2. Щелкните элемент управления, который вы хотите настроить для автоматического обновления источника данных.
 
-3.  В окне **Свойства** разверните свойство **(DataBindings)** .
+3. В окне **Свойства** разверните свойство **(DataBindings)** .
 
-4.  Рядом с полем **(Дополнительно)** свойство, нажмите кнопку с многоточием (![экрана VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "экрана VisualStudioEllipsesButton")).
+4. Рядом с полем **(Дополнительно)** свойство, нажмите кнопку с многоточием (![экрана VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "экрана VisualStudioEllipsesButton")).
 
-5.  В диалоговом окне **Форматирование и дополнительная привязка** щелкните раскрывающийся список **Режим обновления источника данных** и выберите одно из следующих значений.
+5. В диалоговом окне **Форматирование и дополнительная привязка** щелкните раскрывающийся список **Режим обновления источника данных** и выберите одно из следующих значений.
 
-    -   Для обновления источника данных при проверке элемента управления выберите значение **OnValidation**.
+    - Для обновления источника данных при проверке элемента управления выберите значение **OnValidation**.
 
-    -   Для обновления источника данных при изменении значения свойства привязки к данным элемента управления выберите значение **OnPropertyChanged**.
+    - Для обновления источника данных при изменении значения свойства привязки к данным элемента управления выберите значение **OnPropertyChanged**.
 
         > [!NOTE]
         >  Вариант с **OnPropertyChanged** не применяется для элементов управления ведущего приложения Word, поскольку Word не предоставляет уведомления об изменении документа или изменении элемента управления. Однако этот вариант можно использовать для элементов управления Windows Forms в документах Word.
 
-6.  Закройте диалоговое окно **Форматирование и дополнительная привязка** .
+6. Закройте диалоговое окно **Форматирование и дополнительная привязка** .
 
 ## <a name="update-the-database"></a>Обновление базы данных
  Если источник данных в памяти связан с базой данных, необходимо обновить базу данных с использованием изменений в источнике данных. Дополнительные сведения об обновлении базы данных см. в разделе [сохранить данные в базе данных](../data-tools/save-data-back-to-the-database.md) и [обновления данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Обновление базы данных
 
-1.  Вызовите метод <xref:System.Windows.Forms.BindingSource.EndEdit%2A> объекта <xref:System.Windows.Forms.BindingSource> для элемента управления.
+1. Вызовите метод <xref:System.Windows.Forms.BindingSource.EndEdit%2A> объекта <xref:System.Windows.Forms.BindingSource> для элемента управления.
 
      Объект <xref:System.Windows.Forms.BindingSource> создается автоматически при добавлении элемента управления с привязкой к данным в документ или книгу во время разработки. Объект <xref:System.Windows.Forms.BindingSource> подключает элемент управления к типизированному набору данных. Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637598"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Вызовите `Update` класса TableAdapter, созданный в проекте.
+2. Вызовите `Update` класса TableAdapter, созданный в проекте.
 
      TableAdapter создается автоматически при добавлении элемента управления с привязкой данных в документ или книгу во время разработки. TableAdapter типизированного набора данных в проекте подключается к базе данных. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

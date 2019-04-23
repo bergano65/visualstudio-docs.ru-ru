@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт'
+title: Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096053"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.
 
 > [!NOTE]
@@ -31,27 +31,27 @@ ms.locfileid: "56633971"
 
  Этот процесс включает следующие шаги:
 
-1.  Создание манифестов приложения и развертывания.
+1. Создание манифестов приложения и развертывания.
 
-2.  Включение нескольких версий платформы .NET Framework в манифест развертывания.
+2. Включение нескольких версий платформы .NET Framework в манифест развертывания.
 
-3.  Изменение *app.config* файл, чтобы получить список совместимых версий среды выполнения .NET Framework.
+3. Изменение *app.config* файл, чтобы получить список совместимых версий среды выполнения .NET Framework.
 
-4.  Изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework.
+4. Изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework.
 
-5.  Подпишите манифест приложения.
+5. Подпишите манифест приложения.
 
-6.  Обновить и подписать манифест развертывания.
+6. Обновить и подписать манифест развертывания.
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания
 
--   Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
+- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework
 
-1.  В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания содержит *.application* расширение имени файла.
+1. В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания содержит *.application* расширение имени файла.
 
-2.  Замените XML-код между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для вашего приложения.
+2. Замените XML-код между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для вашего приложения.
 
      Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.
 
@@ -65,9 +65,9 @@ ms.locfileid: "56633971"
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework
 
-1.  В обозревателе решений откройте *app.config* файл с помощью редактора XML в Visual Studio.
+1. В обозревателе решений откройте *app.config* файл с помощью редактора XML в Visual Studio.
 
-2.  Замените (или добавьте) XML-код между `<startup>` и `</startup>` элементов при помощи XML со списком поддерживаемых сред выполнения .NET Framework, для вашего приложения.
+2. Замените (или добавьте) XML-код между `<startup>` и `</startup>` элементов при помощи XML со списком поддерживаемых сред выполнения .NET Framework, для вашего приложения.
 
      Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56633971"
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов
 
--   Обновление и повторное подписание манифестов приложения и развертывания. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

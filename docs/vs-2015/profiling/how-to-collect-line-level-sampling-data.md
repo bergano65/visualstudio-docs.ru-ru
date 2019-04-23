@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
+title: Практическое руководство. Выборка данных на уровне строк | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068110"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
+# <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Сбор данных выборка на уровне строк
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Выборка на уровне строк — это возможность профилировщика определить, где в коде функции, потребляющей большой объем ресурсов процессора (например, функции с высокой частотой исключающих выборок), тратится самый большой объем времени процессора.  
@@ -52,12 +52,12 @@ ms.locfileid: "54779028"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Отключение выборки на уровне строк для управляемого кода  
  По умолчанию выборка на уровне строк включена. Сбор данных на уровне строк для управляемого кода можно отключить, выполнив одно из следующих действий.  
   
--   Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.  
+- Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.  
   
      Или...  
   
--   При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.  
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

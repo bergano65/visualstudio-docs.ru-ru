@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096560"
 ---
 # <a name="visio-object-model-overview"></a>Обзор объектной модели Visio
   Для разработки решений Office для Microsoft Office Visio вы можете взаимодействовать с объектной моделью Visio. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Visio и определены в пространстве имен `Microsoft.Office.Interop.Visio`.
 
  В этом разделе приводится краткий обзор объектной модели Visio. Дополнительные сведения об использовании объектной модели Visio для выполнения задач в проектах Office см. в следующих разделах.
 
--   [Работа с документами Visio](../vsto/working-with-visio-documents.md)
+- [Работа с документами Visio](../vsto/working-with-visio-documents.md)
 
--   [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)
+- [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Понимание объектной модели Visio
  Visio предоставляет множество различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) . Он представляет текущий экземпляр Visio. `Microsoft.Office.Interop.Visio.Application` Объект содержит `Microsoft.Office.Interop.Visio.Document` и `Microsoft.Office.Interop.Visio.Page` объектов, а также `Microsoft.Office.Interop.Visio.Documents` и `Microsoft.Office.Interop.Visio.Pages` коллекций. Каждый из этих объектов и коллекций содержит много методов и свойств, к которым можно обращаться для работы и взаимодействия с ними.
@@ -40,11 +40,11 @@ ms.locfileid: "56636714"
 
  В следующих разделах кратко описываются объекты верхнего уровня и их взаимодействие друг с другом. К числу этих объектов относятся следующие:
 
--   объект приложения;
+- объект приложения;
 
--   объект документа;
+- объект документа;
 
--   Page - объект
+- Page - объект
 
 ### <a name="application-object"></a>Объект Application
  Объект Microsoft.Office.Interop.Visio.Application представляет приложение Visio и является родителем для всех других объектов. Обычно его элементы применяются к Visio как к единому целому. Можно использовать свойства и методы Microsoft.Office.Interop.Visio.Application и `Microsoft.Office.Interop.Visio.ApplicationSettings` объектов для управления средой Visio.

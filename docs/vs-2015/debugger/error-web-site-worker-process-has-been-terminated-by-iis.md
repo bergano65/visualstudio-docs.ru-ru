@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080245"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Ошибка: Рабочий процесс веб-узла был завершен службами IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58994146"
   
 1. Откройте окно **Администрирование**.  
   
-   1.  Нажмите кнопку **Пуск** и выберите пункт **Панель управления**.  
+   1. Нажмите кнопку **Пуск** и выберите пункт **Панель управления**.  
   
-   2.  В **панели управления** при необходимости выберите **Переключение к классическому виду**, а затем дважды щелкните пункт **Администрирование**.  
+   2. В **панели управления** при необходимости выберите **Переключение к классическому виду**, а затем дважды щелкните пункт **Администрирование**.  
   
 2. В окне **Администрирование** дважды щелкните **Диспетчер служб IIS**.  
   

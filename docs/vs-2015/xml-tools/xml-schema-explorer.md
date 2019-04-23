@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104931"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ ms.locfileid: "59670437"
   
  Для активации узла, дважды щелкните его, или нажмите клавишу **ввод** при выборе узла.  
   
--   Активация узла открывает файл, в котором определен данный узел (если файл еще не открыт), и выбирает узел из файла.  
+- Активация узла открывает файл, в котором определен данный узел (если файл еще не открыт), и выбирает узел из файла.  
   
--   Активация узла файла открывает выбранный файл (если файл еще не открыт) и выделяет узел `<schema>`.  
+- Активация узла файла открывает выбранный файл (если файл еще не открыт) и выделяет узел `<schema>`.  
   
--   Активация SchemaSet или узла пространства имен не выполняет никаких действий  
+- Активация SchemaSet или узла пространства имен не выполняет никаких действий  
   
 ## <a name="draging-and-dropping-nodes"></a>Перетаскивание узлов  
  Глобальные узлы, узлы файлов и узлы пространства имен можно перетаскивать в представление конструктора XSD. Если текущим представлением является [начальное представление](../xml-tools/start-view.md), перетаскивание узла представления будет открываться [представление графика](../xml-tools/graph-view.md). Если текущим представлением является [представления модели содержимого](../xml-tools/content-model-view.md) или представление графика, представление не изменится при удалении в него узел.  
@@ -82,13 +82,13 @@ ms.locfileid: "59670437"
   
 ## <a name="in-this-section"></a>В этом разделе  
   
--   [Поиск набора схем](../xml-tools/searching-the-schema-set.md)  
+- [Поиск набора схем](../xml-tools/searching-the-schema-set.md)  
   
--   [Сортировка, фильтрация и группирование данных](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Сортировка, фильтрация и группирование данных](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Контекстные меню](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Контекстные меню](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Интеграция XML-литералов с обозревателем XML-схем](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Интеграция XML-литералов с обозревателем XML-схем](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Добавление узлов в рабочую область из обозревателя схем XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

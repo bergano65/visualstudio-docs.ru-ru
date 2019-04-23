@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58981090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117906"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Реализация пользовательских категорий и отображаемые элементы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,11 +83,11 @@ VSPackage может предоставить контроль над шрифт
   
 - Методы реализуется через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> необходимо указать с помощью интегрированной среды разработки:  
   
-  -   Списки **отображаемые элементы** в **категории.**  
+  - Списки **отображаемые элементы** в **категории.**  
   
-  -   Локализуемые имена для **отображаемые элементы**.  
+  - Локализуемые имена для **отображаемые элементы**.  
   
-  -   Отображаемые сведения для каждого члена **категории**.  
+  - Отображаемые сведения для каждого члена **категории**.  
   
   > [!NOTE]
   >  Каждый **категории** должен содержать по крайней мере один **отображаемым элементом**.  
@@ -96,11 +96,11 @@ VSPackage может предоставить контроль над шрифт
   
    Его реализация предоставляет интегрированную среду разработки с помощью:  
   
-  -   Список **категории** , относятся к данной группе.  
+  - Список **категории** , относятся к данной группе.  
   
-  -   Доступ к экземплярам <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> поддержки каждого **категории** в пределах группы.  
+  - Доступ к экземплярам <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> поддержки каждого **категории** в пределах группы.  
   
-  -   Имена локализуемых групп.  
+  - Имена локализуемых групп.  
   
 - Обновление интегрированной среды разработки:  
   
@@ -111,13 +111,13 @@ VSPackage может предоставить контроль над шрифт
 ## <a name="to-handle-font-and-color-changes"></a>Для обработки шрифт и цвет изменяется.  
  Для правильной поддержки цветовое выделение текста, который отображает VSPackage, выделение цветом служба, поддерживающая VSPackage должен отвечать на инициированного пользователем изменения, внесенные через **шрифты и цвета** страница «свойства». VSPackage достигается путем:  
   
--   Обработка события, вызываемые IDE путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> интерфейс.  
+- Обработка события, вызываемые IDE путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> интерфейс.  
   
      Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения из **шрифты и цвета** страницы. Например, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> метод, если выбран новый шрифт.  
   
-     - или -  
+     -или-  
   
--   Опрос для изменения интегрированной среды разработки.  
+- Опрос для изменения интегрированной среды разработки.  
   
      Это можно сделать через реализовать систему <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс. Несмотря на то что в основном для поддержки сохраняемости, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> метод может быть использован для получения данные шрифта и цвета для **отображаемые элементы**. Дополнительные сведения см. в разделе [параметры доступа к хранятся шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md).  
   

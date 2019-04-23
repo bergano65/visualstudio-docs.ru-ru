@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0c170beb6bfd8a74d61e6de2398a7478567c893
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104568"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -296,6 +296,7 @@ namespace MockLanguageExtension
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. Щелкните правой кнопкой мыши на JSON-файл и выберите **свойства**. Изменение **построения** действие «Content» и «включить в VSIX "присваивается значение true.
 
 3. Реализовать ConfigurationSections и возвращения списка префиксов для параметров, определенных в JSON-файле (в Visual Studio Code, это будет указывать имя раздела конфигурации в файле package.json):
@@ -318,6 +319,7 @@ namespace MockLanguageExtension
     ```
 
     Пример:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

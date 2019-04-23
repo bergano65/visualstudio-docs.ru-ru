@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756667"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653597"
 ---
 # <a name="cl-task"></a>Задача CL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Параметры  
@@ -54,7 +53,7 @@ ms.locfileid: "54756667"
   
    Дополнительные сведения см. в разделе [Параметры компилятора](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
-- **AdditionalUsingDirectories** параметр необязательно String [].  
+- Необязательный параметр String[] **AdditionalUsingDirectories**.  
   
    Указывает каталог, в котором компилятор будет производить поиск для разрешения ссылок, переданных в директиву **#using**.  
   

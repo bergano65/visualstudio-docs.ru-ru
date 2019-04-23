@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102189"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Выбор стратегии развертывания ClickOnce
 Существует три разные стратегии развертывания приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Выбираемая стратегия зависит главным образом от типа развертываемого приложения. Ниже перечисляются следующие три стратегии развертывания:
 
--   установка из Интернета или общего сетевого ресурса;
+- установка из Интернета или общего сетевого ресурса;
 
--   установка с компакт-диска;
+- установка с компакт-диска;
 
--   запуск приложения из Интернета или общего сетевого ресурса.
+- запуск приложения из Интернета или общего сетевого ресурса.
 
     > [!NOTE]
     >  Помимо выбора стратегии развертывания потребуется также выбрать стратегию предоставления обновлений приложения. Дополнительные сведения см. в разделе [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
@@ -39,7 +39,7 @@ ms.locfileid: "56603983"
 
  Так как эта стратегия зависит от связности узлов в сети, она оптимальна для приложений, которые разворачиваются для пользователей, имеющих доступ к локальной сети или высокоскоростное подключение к Интернету.
 
- Если приложение развертывается из Интернета, можно передать аргументы в приложение при его активации с помощью URL-адреса. Дополнительные сведения см. в разделе [как: извлечение сведений строки запроса в интерактивном приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Аргументы невозможно передать в приложение, которое активируется с помощью любого другого метода, описанного в данном документе.
+ Если приложение развертывается из Интернета, можно передать аргументы в приложение при его активации с помощью URL-адреса. Дополнительные сведения см. в разделе [Как извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Аргументы невозможно передать в приложение, которое активируется с помощью любого другого метода, описанного в данном документе.
 
  Чтобы активировать эту стратегию развертывания в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], щелкните **Из Интернета** или **Из UNC-пути или общего файлового ресурса** на странице **Способ установки** мастера публикаций.
 
@@ -74,5 +74,5 @@ ms.locfileid: "56603983"
 ## <a name="see-also"></a>См. также
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Практическое: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

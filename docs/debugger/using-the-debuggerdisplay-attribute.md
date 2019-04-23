@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099897"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Указать отладчику, что нужно показывать использование атрибута DebuggerDisplay (C#, Visual Basic, F#, C++выполняет)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 «, Nq» суффикс ull вычислитель выражений для удаления кавычек, при отображении конечное значение (nq = без кавычек).
 
 ## <a name="example"></a>Пример
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

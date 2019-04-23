@@ -11,12 +11,12 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092049"
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58991045"
   
  Вот Общие сведения о том, как Visual Studio получает "Локальные" для метода от вычислитель выражений (EE):  
   
-1.  Visual Studio вызывает отладки ядра (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) для получения [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , представляющий все свойства кадра стека, включая локальные переменные.  
+1. Visual Studio вызывает отладки ядра (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) для получения [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , представляющий все свойства кадра стека, включая локальные переменные.  
   
-2.  `IDebugStackFrame2::GetDebugProperty` вызовы [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) получить объект, описывающий метод, в котором произошла точка останова. DE предоставляет поставщик символов ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), адреса ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) и привязку ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2. `IDebugStackFrame2::GetDebugProperty` вызовы [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) получить объект, описывающий метод, в котором произошла точка останова. DE предоставляет поставщик символов ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), адреса ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) и привязку ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty` вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) с заданным идентификатором `IDebugAddress` объекта [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) представляет метод, содержащий указанный адрес.  
+3. `IDebugExpressionEvaluator::GetMethodProperty` вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) с заданным идентификатором `IDebugAddress` объекта [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) представляет метод, содержащий указанный адрес.  
   
-4.  `IDebugContainerField` Запрашивается интерфейс [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) интерфейс. Это этот интерфейс, который предоставляет доступ к методу "Локальные".  
+4. `IDebugContainerField` Запрашивается интерфейс [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) интерфейс. Это этот интерфейс, который предоставляет доступ к методу "Локальные".  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty` Создает экземпляр класса (называется `CFieldProperty` в образце), реализующий `IDebugProperty2` интерфейс для представления метода "Локальные". `IDebugMethodField` Объект помещается в этом `CFieldProperty` вместе с `IDebugSymbolProvider`, `IDebugAddress` и `IDebugBinder` объектов.  
+5. `IDebugExpressionEvaluator::GetMethodProperty` Создает экземпляр класса (называется `CFieldProperty` в образце), реализующий `IDebugProperty2` интерфейс для представления метода "Локальные". `IDebugMethodField` Объект помещается в этом `CFieldProperty` вместе с `IDebugSymbolProvider`, `IDebugAddress` и `IDebugBinder` объектов.  
   
-6.  Когда `CFieldProperty` инициализации объекта [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) вызывается для `IDebugMethodField` объекта, чтобы получить [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структуру, содержащую все отображаемые сведения о сам метод .  
+6. Когда `CFieldProperty` инициализации объекта [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) вызывается для `IDebugMethodField` объекта, чтобы получить [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структуру, содержащую все отображаемые сведения о сам метод .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty` Возвращает `CFieldProperty` объекта в виде `IDebugProperty2` объекта.  
+7. `IDebugExpressionEvaluator::GetMethodProperty` Возвращает `CFieldProperty` объекта в виде `IDebugProperty2` объекта.  
   
-8.  Visual Studio вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) возвращенного `IDebugProperty2` объекта с фильтром `guidFilterLocalsPlusArgs`. Эта команда возвращает [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, содержащий метод "Локальные". Это перечисление заполняется при вызове [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) и [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
+8. Visual Studio вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) возвращенного `IDebugProperty2` объекта с фильтром `guidFilterLocalsPlusArgs`. Эта команда возвращает [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, содержащий метод "Локальные". Это перечисление заполняется при вызове [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) и [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   
 9. Visual Studio вызывает [Далее](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) для получения [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры для каждого локального. Эта структура содержит указатель на `IDebugProperty2` интерфейса для локального.  
   

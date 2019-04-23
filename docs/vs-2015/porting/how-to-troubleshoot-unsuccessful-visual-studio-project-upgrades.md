@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Устранение неполадок при обновлениях неудачных проекта | Документация Майкрософт
+title: Практическое руководство. Устранение неполадок при обновлениях неудачных проекта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,14 +18,14 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096339"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Как выполнить Устранение неполадок с неудачными обновлениями Visual Studio проекта
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Практическое руководство. Устранение неполадок с неудачными обновлениями Visual Studio проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Иногда Visual Studio не удается полностью преобразовать проект, созданный в более ранней версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если советы в следующих разделах не решат свою проблему, можно найти дополнительные сведения о TechNet [вики-сайте: Портал разработки](http://go.microsoft.com/fwlink/?LinkId=254808).
@@ -35,16 +35,16 @@ ms.locfileid: "54804267"
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Исправление неправильных путей
 
-1.  Откройте файл проекта в текстовом редакторе.
+1. Откройте файл проекта в текстовом редакторе.
 
-2.  Внимательно проверьте наличие неправильных путей к файлам, особенно тех, которые содержат номер версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+2. Внимательно проверьте наличие неправильных путей к файлам, особенно тех, которые содержат номер версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3.  Измените неправильные пути к файлам, чтобы они указывали на новые конечные объекты.
+3. Измените неправильные пути к файлам, чтобы они указывали на новые конечные объекты.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Построение проекта не запускается, поскольку ссылки недопустимы
  При обновлении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], возможно, также выполняется обновление версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Если проект содержит ссылки, не используемые в более новой версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], они могут не разрешаться правильно. Это особенно вероятно для ссылок, включающих номера версий, например `Microsoft.VisualStudio.Shell.Interop.8.0`.
 
- Если код содержит много недопустимых ссылок, простейшим решением может стать применение функции настройки для различных сред [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью настройки на более раннюю версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Если код содержит много недопустимых ссылок, простейшим решением может стать применение возможности настройки для различных сред [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью настройки на более раннюю версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 #### <a name="to-resolve-incorrect-references"></a>Разрешение неверных ссылок
 
@@ -56,5 +56,5 @@ ms.locfileid: "54804267"
 
    Если вы хотите, чтобы проект выполнялся в обновленной версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], необходимо обновить ссылки проекта, а также любые операторы `Imports` или `Using`, вызывающие эти ссылки. Если проект загружается в интегрированной среде разработки, можно обновить ссылки с помощью **Обозревателя решений** или **Диспетчера ссылок**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Или обновления (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [преобразование в ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

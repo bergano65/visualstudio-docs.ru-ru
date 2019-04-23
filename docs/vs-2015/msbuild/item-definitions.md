@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796678"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668504"
 ---
 # <a name="item-definitions"></a>Определения элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.  
   
  Элемент *ItemDefinitionGroup* располагается непосредственно за элементом [Project](../msbuild/project-element-msbuild.md) в файле проекта. Определения элементов предоставляют следующие функциональные возможности:  
@@ -175,7 +174,7 @@ ms.locfileid: "54796678"
 </ItemDefinitionGroup>  
 ```  
   
- В этом примере элемент «i» ссылается на элемент «test» в условии.  
+ В этом примере элемент "i" содержит ссылку на элемент "test" в условии Condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Переопределение и удаление метаданных  
  Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Например:  

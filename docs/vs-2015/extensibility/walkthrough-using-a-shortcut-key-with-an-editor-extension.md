@@ -10,12 +10,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085907"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Использование сочетаний клавиш в редакторе расширений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Определение фильтра команды  
  Фильтр команд представляет собой реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, который обрабатывает команду путем создания экземпляра оформления.  
   
-1.  Добавьте файл класса с именем `KeyBindingCommandFilter`.  
+1. Добавьте файл класса с именем `KeyBindingCommandFilter`.  
   
-2.  Добавьте следующие инструкции using.  
+2. Добавьте следующие инструкции using.  
   
     ```csharp  
     using System;  
@@ -63,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  Следует наследовать класс с именем KeyBindingCommandFilter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3. Следует наследовать класс с именем KeyBindingCommandFilter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Добавьте закрытые поля для представления текста, следующая команда в цепочке команды, а флаг, представляют ли фильтр команды уже был добавлен.  
+4. Добавьте закрытые поля для представления текста, следующая команда в цепочке команды, а флаг, представляют ли фильтр команды уже был добавлен.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -78,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Добавьте конструктор, который задает представления текста.  
+5. Добавьте конструктор, который задает представления текста.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -88,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Реализуйте `QueryStatus()` метод следующим образом.  
+6. Реализуйте `QueryStatus()` метод следующим образом.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -97,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Реализуйте `Exec()` он добавляет сиреневый поле в представление, если метод + символа.  
+7. Реализуйте `Exec()` он добавляет сиреневый поле в представление, если метод + символа.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -124,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>Добавление фильтра команды  
  Поставщик элемента оформления необходимо добавить фильтр команд к текстовому представлению. В этом примере реализован поставщик <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> для прослушивания события создания представления текста. Этот поставщик элемента оформления также экспортирует слое оформлений, который определяет Z-порядок элемента оформления.  
   
-1.  В файле KeyBindingTestTextViewCreationListener, добавьте следующие операторы using:  
+1. В файле KeyBindingTestTextViewCreationListener, добавьте следующие операторы using:  
   
     ```csharp  
     using System;  
@@ -139,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  В определении слой оформлений, измените имя AdornmentLayer из **KeyBindingTest** для **PurpleCornerBox**.  
+2. В определении слой оформлений, измените имя AdornmentLayer из **KeyBindingTest** для **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -148,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  Чтобы получить соответствующий адаптер представления текста, необходимо импортировать <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3. Чтобы получить соответствующий адаптер представления текста, необходимо импортировать <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Изменение <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метода, так что он добавляет `KeyBindingCommandFilter`.  
+4. Изменение <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метода, так что он добавляет `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter` Обработчик получает соответствующий адаптер представления текста и добавляет фильтр команд.  
+5. `AddCommandFilter` Обработчик получает соответствующий адаптер представления текста и добавляет фильтр команд.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -238,8 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>Сборка и тестирование кода  
   
-1.  Выполните сборку решения KeyBindingTest и запустите его в экспериментальном экземпляре.  
+1. Выполните сборку решения KeyBindingTest и запустите его в экспериментальном экземпляре.  
   
-2.  Создайте или откройте текстовый файл. Введите некоторые слова, содержащие символ «», а затем введите + в любом месте в представлении текста.  
+2. Создайте или откройте текстовый файл. Введите некоторые слова, содержащие символ «», а затем введите + в любом месте в представлении текста.  
   
      На каждый символ «» в файле появится фиолетовой квадрата.

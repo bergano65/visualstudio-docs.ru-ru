@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078867"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Практическое руководство. Программное определение и выделение диапазонов в документах
   Вы можете определить диапазон в документе Microsoft Office Word с помощью объекта <xref:Microsoft.Office.Interop.Word.Range>. Можно выбрать весь документ несколькими способами, например, с помощью <xref:Microsoft.Office.Interop.Word.Range.Select%2A> метод <xref:Microsoft.Office.Interop.Word.Range> объекта, или с помощью свойства Content <xref:Microsoft.Office.Tools.Word.Document> класса (в настройке уровня документа) или <xref:Microsoft.Office.Interop.Word.Document> класса (в VSTO Add-in).
@@ -33,14 +33,14 @@ ms.locfileid: "56599912"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>Определение диапазона в настройке на уровне документа
 
-1.  Добавьте диапазон в документ, передав начальный и последний символ в метод <xref:Microsoft.Office.Tools.Word.Document.Range%2A> класса <xref:Microsoft.Office.Tools.Word.Document>. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.
+1. Добавьте диапазон в документ, передав начальный и последний символ в метод <xref:Microsoft.Office.Tools.Word.Document.Range%2A> класса <xref:Microsoft.Office.Tools.Word.Document>. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>Определение диапазона с помощью надстройки VSTO
 
-1.  Добавьте диапазон в документ, передав начальный и последний символ в метод <xref:Microsoft.Office.Interop.Word._Document.Range%2A> класса <xref:Microsoft.Office.Interop.Word.Document>. Следующий пример кода добавляет диапазон в активный документ. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
+1. Добавьте диапазон в документ, передав начальный и последний символ в метод <xref:Microsoft.Office.Interop.Word._Document.Range%2A> класса <xref:Microsoft.Office.Interop.Word.Document>. Следующий пример кода добавляет диапазон в активный документ. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599912"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Выбор всего документа как диапазона с помощью метода Select
 
-1.  Используйте метод <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range>, который содержит весь документ. Чтобы использовать следующий пример кода, выполните его из класса `ThisDocument` в своем проекте.
+1. Используйте метод <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range>, который содержит весь документ. Чтобы использовать следующий пример кода, выполните его из класса `ThisDocument` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599912"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Выделение предложения вручную с помощью установки начального и конечного значений
 
-1.  Создайте переменную диапазона.
+1. Создайте переменную диапазона.
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
+2. Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599912"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Выбор всего документа как диапазона с помощью метода Select
 
-1.  Используйте метод <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range>, который содержит весь документ. Следующий пример кода выделяет содержимое активного документа. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
+1. Используйте метод <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range>, который содержит весь документ. Следующий пример кода выделяет содержимое активного документа. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599912"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Выделение предложения вручную с помощью установки начального и конечного значений
 
-1.  Создайте переменную диапазона.
+1. Создайте переменную диапазона.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
+2. Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

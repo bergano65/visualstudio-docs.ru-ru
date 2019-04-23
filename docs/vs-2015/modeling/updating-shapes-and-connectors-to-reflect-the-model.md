@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107870"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Установить свойства карты фигур, чтобы управлять видимостью декоратора  
  Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление между фигурой и доменный класс в определении DSL. Дополнительные сведения см. в следующих разделах:  
   
--   [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Предоставляют цвет и стиль фигуры в виде свойств  
  В определении DSL щелкните класс фигуры правой кнопкой мыши **добавить предоставленный**и выберите один из элементов, таких как **цвет заливки**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Этот метод может использоваться как для свойства домена и функции вне хранилища, такие как размер фигуры.  
   
-##  <a name="OnAssociatedProperty"></a> Используйте AssociateValueWith(), чтобы обновить некоторые свойства фигуры  
+## <a name="OnAssociatedProperty"></a> Используйте AssociateValueWith(), чтобы обновить некоторые свойства фигуры  
  Для некоторых функций фигуры, например имеет ли она тень или стиль стрелки соединительной линии отсутствует встроенный метод раскрытия компонента, как свойство домена.  Изменения в такие функции, не находятся под контролем системы транзакций. Таким образом, не подходит для их обновления с помощью правил, так как правила, не вызываются, когда пользователь выполняет команду отмены.  
   
  Вместо этого можно обновить с помощью таких функций <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. В следующем примере значение свойства домена в отношение, которое отображает соединитель управляется стиль стрелки соединительной линии:  

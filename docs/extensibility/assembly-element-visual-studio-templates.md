@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079348"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Элемент ASSEMBLY (шаблоны Visual Studio)
 Указывает сведения о сборке, в шаблоне используется для добавления в проекты ссылки сборки.
@@ -43,7 +43,7 @@ ms.locfileid: "56710985"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|
 
@@ -52,7 +52,7 @@ ms.locfileid: "56710985"
 
  Данный текст задает сборку, чтобы добавить в проект при создании экземпляра шаблона элемента. Имя сборки необходимо указать в одном из следующих способов:
 
--   Как полное имя сборки. Пример:
+- Как полное имя сборки. Пример:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "56710985"
     </Assembly>
     ```
 
--   Простой текст справки. Пример:
+- Простой текст справки. Пример:
 
     ```
     <Assembly> System </Assembly>

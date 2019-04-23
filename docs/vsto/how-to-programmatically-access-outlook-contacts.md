@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104230"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Практическое руководство. Программный доступ к контактам Outlook
   Этот пример находит все контакты, фамилии которых содержат строку поиска.
@@ -32,7 +32,7 @@ ms.locfileid: "56598210"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Контакты, фамилии которых содержат строку "**н/д»** (например, Tzipi Butnaru) в **контакты** папки.
+- Контакты, фамилии которых содержат строку "**н/д»** (например, Tzipi Butnaru) в **контакты** папки.
 
 ## <a name="see-also"></a>См. также
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)

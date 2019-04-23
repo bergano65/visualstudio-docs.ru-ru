@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084756"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Практическое руководство. Управление несколькими потоками в управляемом коде
 Если у вас есть управляемое расширение VSPackage, который вызывает асинхронные методы или имеет операции, которые выполняются в потоках, отличных от потока пользовательского интерфейса Visual Studio, необходимо следовать приведенным ниже рекомендациям. Поскольку она не требует ожидания для работы в другом потоке, чтобы завершить, можно хранить в потоке пользовательского интерфейса быстро реагирующих. Вы можете сделать свой код более эффективным, так как у вас нет дополнительных потоков, которые занимают пространство стека, и его можно сделать более надежным и простым для отладки, так как избежать взаимоблокировок и зависаний.
@@ -25,7 +25,7 @@ ms.locfileid: "56693104"
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Переключитесь в фоновом потоке из потока пользовательского интерфейса
 
-1.  Если вы находитесь в потоке пользовательского интерфейса, и вы хотите сделать асинхронной работы в фоновом потоке, используйте `Task.Run()`:
+1. Если вы находитесь в потоке пользовательского интерфейса, и вы хотите сделать асинхронной работы в фоновом потоке, используйте `Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ ms.locfileid: "56693104"
 
     ```
 
-2.  Если вы являетесь в потоке пользовательского интерфейса, и вы хотите заблокировать синхронно, во время работы в фоновом потоке, используйте <xref:System.Threading.Tasks.TaskScheduler> свойство `TaskScheduler.Default` внутри <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Если вы являетесь в потоке пользовательского интерфейса, и вы хотите заблокировать синхронно, во время работы в фоновом потоке, используйте <xref:System.Threading.Tasks.TaskScheduler> свойство `TaskScheduler.Default` внутри <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ ms.locfileid: "56693104"
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Переключиться из фонового потока в поток пользовательского интерфейса
 
-1.  Если вы в фоновом потоке, и вы хотите сделать что-нибудь в потоке пользовательского интерфейса, используйте <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Если вы в фоновом потоке, и вы хотите сделать что-нибудь в потоке пользовательского интерфейса, используйте <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

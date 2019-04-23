@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099394"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Для каждого монитора Awareness support для средств расширения Visual Studio
 Версий, предшествующих Visual Studio 2019 было контексте awareness точек на ДЮЙМ, установить система поддерживает функции, а не учитывать точек на ДЮЙМ (PMA) для каждого монитора. Выполнение в системе awareness привело к снижению visual возможности (например нечетким шрифты или значков) каждый раз, когда Visual Studio пришлось визуализации на мониторах с отличающимися масштабами факторов или удаленный компьютер в машин с помощью разных конфигурациях например (различных Windows масштабирование).
@@ -39,9 +39,9 @@ ms.locfileid: "59660701"
 
 ## <a name="enabling-pma"></a>Включение PMA
 Чтобы включить PMA в Visual Studio, следует соблюдать следующие требования:
-1)  Windows 10 апреля 2018 г. обновление (v1803 RS4) или более поздней версии
-2)  .NET framework 4.8 RTM или более поздней версии
-3)  Visual Studio 2019 с [«Оптимизация отрисовки для экранов с различным плотности»](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) параметр включен
+1) Windows 10 апреля 2018 г. обновление (v1803 RS4) или более поздней версии
+2) .NET framework 4.8 RTM или более поздней версии
+3) Visual Studio 2019 с [«Оптимизация отрисовки для экранов с различным плотности»](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) параметр включен
 
 Если эти требования выполняются, Visual Studio автоматически включает режим PMA всех этапах процесса.
 
@@ -203,6 +203,7 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 Если окно инструментов отличных от WPF переносится для полной поддержки PMA, его необходимо отказаться от CLMM. Чтобы сделать это, должен быть реализован новый интерфейс: IVsDpiAware.
 
 C#:
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++:
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 Устаревший пользовательский Интерфейс, который не обновляется для поддержки режима PMA, все равно могут потребоваться незначительных изменений для работы во время работы в режиме PMA Visual Studio. Одно исправление включает в себя убедившись, что в правом DpiAwarenessContext создается пользовательский Интерфейс. Можно принудительно пользовательского интерфейса в определенной DpiAwarenessContext, можно ввести область DPI следующим кодом:
 
 C#:
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++:
+
 ```cpp
 void MyClass::ShowDialog()
 {

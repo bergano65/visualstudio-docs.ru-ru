@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076790"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Открытие динамического окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58994126"
   
 ### <a name="to-open-a-dynamic-tool-window"></a>Открытие динамического окна инструментов  
   
-1.  Создайте проект VSIX с именем **DynamicToolWindow** и добавление шаблона элемента окна инструментов с именем **DynamicWindowPane.cs**. Дополнительные сведения см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Создайте проект VSIX с именем **DynamicToolWindow** и добавление шаблона элемента окна инструментов с именем **DynamicWindowPane.cs**. Дополнительные сведения см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  В файле DynamicWindowPanePackage.cs поиске DynamicWindowPanePackage объявления. Добавление <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> и T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute атрибуты для регистрации окна инструментов.  
+2. В файле DynamicWindowPanePackage.cs поиске DynamicWindowPanePackage объявления. Добавление <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> и T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute атрибуты для регистрации окна инструментов.  
   
     ```vb  
     [[ProvideToolWindow(typeof(DynamicWindowPane)]  
@@ -52,6 +52,6 @@ ms.locfileid: "58994126"
   
      При этом регистрируется с именем DynamicWindowPane как временные окна, которое не сохраняется при закрытии и повторном открытии Visual Studio окно инструментов. Открывается DynamicWindowPane всякий раз, когда <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> применяется и закрыт, в противном случае.  
   
-3.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр. Вы не увидите окна инструментов.  
+3. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр. Вы не увидите окна инструментов.  
   
-4.  Откройте проект в экспериментальном экземпляре. Появится окно инструментов.
+4. Откройте проект в экспериментальном экземпляре. Появится окно инструментов.

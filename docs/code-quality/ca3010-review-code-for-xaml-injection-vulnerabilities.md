@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103697"
 ---
 # <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010. Проверьте код на наличие уязвимостей к внедрению кода XAML
 

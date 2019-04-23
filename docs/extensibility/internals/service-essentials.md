@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070385"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Служба представляет собой контракт между двух пакетов VSPackage. Один пакет VSPackage предоставляет ряд интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.
@@ -68,15 +68,15 @@ ms.locfileid: "56335315"
 
 К счастью <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> правильно работает в большинстве случаев.
 
--   Если пакет VSPackage предоставляет службу, известного только другом пакете VSPackage, VSPackage, запрашивающего службу размещен перед VSPackage, предоставляющий, что загружены службы.
+- Если пакет VSPackage предоставляет службу, известного только другом пакете VSPackage, VSPackage, запрашивающего службу размещен перед VSPackage, предоставляющий, что загружены службы.
 
--   Если окно инструментов создается пакетом VSPackage, VSPackage задан до создания окна инструментов.
+- Если окно инструментов создается пакетом VSPackage, VSPackage задан до создания окна инструментов.
 
--   Если контейнер элемента управления размещается в окна инструментов, созданного пакетом VSPackage, VSPackage задан до создания контейнера элемента управления.
+- Если контейнер элемента управления размещается в окна инструментов, созданного пакетом VSPackage, VSPackage задан до создания контейнера элемента управления.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Чтобы получить службу в контейнере инструментов окна или элемента управления
 
--   Вставьте этот код в конструкторе, окно инструментов или контейнер элемента управления:
+- Вставьте этот код в конструкторе, окно инструментов или контейнер элемента управления:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

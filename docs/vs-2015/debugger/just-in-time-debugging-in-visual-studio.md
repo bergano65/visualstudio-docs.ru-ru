@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116177"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>JIT-отладка в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Just-In-Time – отладка автоматически запускает Vi
 
 - Необходимо иметь [установлена среда Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) для просмотра подробных сведений об ошибке и попробуйте отладить его. См. в разделе [с помощью JIT-компилятора](#BKMK_Using_JIT) подробные инструкции. Если не удается исправить ошибку и исправления приложения, обратитесь к владельцу приложения для устранения этой ошибки.
 
-##  <a name="BKMK_Enabling"></a> Включение или отключение Just-In-Time отладки
+## <a name="BKMK_Enabling"></a> Включение или отключение Just-In-Time отладки
  Можно включить или отключить Just-In-Time отладки из Visual Studio **Сервис / Параметры** диалоговое окно.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Включение или отключение JIT–отладки
@@ -73,36 +73,36 @@ Just-In-Time – отладка автоматически запускает Vi
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Отключение JIT-отладки путем редактирования реестра
 
-1.  На **запустить** меню, найдите и запустите `regedit.exe`
+1. На **запустить** меню, найдите и запустите `regedit.exe`
 
-2.  В **редактора реестра** окна, найдите и удалите следующие записи реестра:
+2. В **редактора реестра** окна, найдите и удалите следующие записи реестра:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  Если компьютер работает под управлением 64-разрядной операционной системе, также удалите следующие записи реестра:
+3. Если компьютер работает под управлением 64-разрядной операционной системе, также удалите следующие записи реестра:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  Будьте внимательны, чтобы случайно не удалить или не изменить какие-либо другие разделы реестра.
+4. Будьте внимательны, чтобы случайно не удалить или не изменить какие-либо другие разделы реестра.
 
-5.  Закрыть **редактора реестра** окна.
+5. Закрыть **редактора реестра** окна.
 
 > [!NOTE]
 >  Если вы пытаетесь отключить Just-In-Time отладки для приложения на стороне сервера, и эти шаги не решат проблему, отключите отладку на стороне сервера в параметрах приложения IIS и повторите попытку.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Включение JIT-отладки для приложений Windows Forms
 
-1.  По умолчанию для приложений Windows Forms имеется обработчик исключений верхнего уровня, позволяющий программе продолжать работу, если возможно восстановление после ошибки. Например если приложение Windows Forms вызывает необработанное исключение, вы увидите диалоговое окно следующим образом:
+1. По умолчанию для приложений Windows Forms имеется обработчик исключений верхнего уровня, позволяющий программе продолжать работу, если возможно восстановление после ошибки. Например если приложение Windows Forms вызывает необработанное исключение, вы увидите диалоговое окно следующим образом:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Для включения Just-In-Time отладки приложения Windows Forms, необходимо выполнить следующие дополнительные шаги:
 
-2.  Задайте `jitDebugging` значение `true` в `system.windows.form` раздел machine.config или  *\<имя_приложения >*. файл exe.config:
+2. Задайте `jitDebugging` значение `true` в `system.windows.form` раздел machine.config или  *\<имя_приложения >*. файл exe.config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Just-In-Time – отладка автоматически запускает Vi
     </configuration>
     ```
 
-3.  Для приложений Windows Form, написанных на языке C++, в файле CONFIG или в коде должен быть задан атрибут `DebuggableAttribute`. Если компиляция выполняется с атрибутом [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8), но без [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), компилятор автоматически задаст этот атрибут. Однако если требуется отладка неоптимизированного построения выпуска, этот атрибут необходимо задать самостоятельно. Для этого добавьте следующую строку в файл AssemblyInfo.cpp своего приложения:
+3. Для приложений Windows Form, написанных на языке C++, в файле CONFIG или в коде должен быть задан атрибут `DebuggableAttribute`. Если компиляция выполняется с атрибутом [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8), но без [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), компилятор автоматически задаст этот атрибут. Однако если требуется отладка неоптимизированного построения выпуска, этот атрибут необходимо задать самостоятельно. Для этого добавьте следующую строку в файл AssemblyInfo.cpp своего приложения:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Могут отображаться следующие сообщения об ошибках, связанные с JIT–отладкой.
 
--   **Не удалось подключиться к аварийному процессу. Указанная программа не является программой Windows или MS–DOS.**
+- **Не удалось подключиться к аварийному процессу. Указанная программа не является программой Windows или MS–DOS.**
 
      Эта ошибка возникает при попытке подключиться к процессу, запуск от имени другого пользователя.
 
      Чтобы решить эту проблему, запустите Visual Studio откройте **присоединение к процессу** диалоговое окно, в **Отладка** меню и найдите процесс, необходимо выполнить отладку в **доступные процессы**списка. Если вы не знаете имя процесса, просмотрите **JIT – отладчик Visual Studio** диалоговое окно и запишите идентификатор процесса. Выберите процесс в **доступные процессы** списке и нажмите кнопку **Attach**. В **JIT – отладчик Visual Studio** диалоговое окно, нажмите кнопку **нет** чтобы закрыть диалоговое окно.
 
--   **Не удалось запустить отладчик, так как пользователь не вошел в систему.**
+- **Не удалось запустить отладчик, так как пользователь не вошел в систему.**
 
      Данная ошибка возникает, когда JIT–отладка пытается запустить Visual Studio на компьютере, на котором нет пользователей, вошедших в консоль. Так как пользователи, выполнившие вход, отсутствуют, также отсутствует сеанс пользователя, в котором следовало бы отображать диалоговое окно JIT–отладки.
 
      Для решения этой проблемы необходимо войти в компьютер.
 
--   **Класс не зарегистрирован.**
+- **Класс не зарегистрирован.**
 
      Эта ошибка указывает, что отладчик пытался создать класс COM, который не зарегистрирован, вероятно, из–за проблем с установкой.
 

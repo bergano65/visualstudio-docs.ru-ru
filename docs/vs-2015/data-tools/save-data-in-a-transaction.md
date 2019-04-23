@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105023"
 ---
 # <a name="save-data-in-a-transaction"></a>Сохранение данных в транзакции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "59647679"
   
 #### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows  
   
-1.  В Visual Studio на **файл** меню, создайте новый **проекта**.  
+1. В Visual Studio на **файл** меню, создайте новый **проекта**.  
   
-2.  Назовите проект **SavingDataInATransactionWalkthrough**.  
+2. Назовите проект **SavingDataInATransactionWalkthrough**.  
   
-3.  Выберите **приложения Windows**, а затем выберите **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Выберите **приложения Windows**, а затем выберите **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Создается проект **SavingDataInATransactionWalkthrough**, который добавляется в **Обозреватель решений**.  
   
@@ -53,27 +53,27 @@ ms.locfileid: "59647679"
   
 #### <a name="to-create-the-data-source"></a>Создание источника данных  
   
-1.  На **данных** меню, выберите**Показать источники данных**.  
+1. На **данных** меню, выберите**Показать источники данных**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
   
-3.  На **Выбор типа источника данных**выберите **базы данных**, а затем выберите **Далее**.  
+3. На **Выбор типа источника данных**выберите **базы данных**, а затем выберите **Далее**.  
   
-4.  На **Выбор подключения базы данных**экрана выполните одно из следующих:  
+4. На **Выбор подключения базы данных**экрана выполните одно из следующих:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
          -или-  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение** и создайте подключение к базе данных "Борей".  
+    - Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение** и создайте подключение к базе данных "Борей".  
   
-5.  Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.  
+5. Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.  
   
-6.  На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.  
+6. На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.  
   
-7.  На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.  
+7. На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.  
   
-8.  Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.  
+8. Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.  
   
      Объект **NorthwindDataSet** добавляется в проект, и таблицы `Customers` и `Orders` отображаются в окне **Источники данных**.  
   
@@ -82,13 +82,13 @@ ms.locfileid: "59647679"
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Создание привязкой к данным элементы управления в форме Windows  
   
--   В **источников данных** окне разверните **клиентов** узла.  
+- В **источников данных** окне разверните **клиентов** узла.  
   
--   Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.  
+- Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.  
   
      На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Перетащите связанный **заказы** узла (не главный **заказы** узла, но ниже узла связанной дочерней таблицы **факсов** столбец) на форму под  **CustomersDataGridView**.  
+- Перетащите связанный **заказы** узла (не главный **заказы** узла, но ниже узла связанной дочерней таблицы **факсов** столбец) на форму под  **CustomersDataGridView**.  
   
      На форме появляется <xref:System.Windows.Forms.DataGridView>. OrdersTableAdapter и <xref:System.Windows.Forms.BindingSource> отображаются в области компонентов.  
   
@@ -97,9 +97,9 @@ ms.locfileid: "59647679"
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Порядок добавления ссылки на DLL-файл System.Transactions  
   
-1.  На **проекта** меню, выберите**добавить ссылку**.  
+1. На **проекта** меню, выберите**добавить ссылку**.  
   
-2.  Выберите **System.Transactions**(на **.NET** вкладку), а затем выберите **ОК**.  
+2. Выберите **System.Transactions**(на **.NET** вкладку), а затем выберите **ОК**.  
   
      Ссылка на **System.Transactions** добавляется в проект.  
   
@@ -117,38 +117,38 @@ ms.locfileid: "59647679"
   
    При согласовании изменений связанных данных применяется следующий порядок.  
   
--   Удалите дочерние записи. (В этом случае удалите записи из `Orders` таблицы.)  
+- Удалите дочерние записи. (В этом случае удалите записи из `Orders` таблицы.)  
   
--   Удалите родительские записи. (В этом случае удалите записи из `Customers` таблицы.)  
+- Удалите родительские записи. (В этом случае удалите записи из `Customers` таблицы.)  
   
--   Вставьте родительские записи. (В данном случае вставьте записи в `Customers` таблицы.)  
+- Вставьте родительские записи. (В данном случае вставьте записи в `Customers` таблицы.)  
   
--   Вставьте дочерние записи. (В данном случае вставьте записи в `Orders` таблицы.)  
+- Вставьте дочерние записи. (В данном случае вставьте записи в `Orders` таблицы.)  
   
 #### <a name="to-delete-existing-orders"></a>Удаление существующих заказов  
   
--   Добавьте следующий метод `DeleteOrders` в **Form1**:  
+- Добавьте следующий метод `DeleteOrders` в **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Удаление существующих клиентов  
   
--   Добавьте следующий метод `DeleteCustomers` в **Form1**:  
+- Добавьте следующий метод `DeleteCustomers` в **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Добавление новых клиентов  
   
--   Добавьте следующий метод `AddNewCustomers` в **Form1**:  
+- Добавьте следующий метод `AddNewCustomers` в **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Добавление новых заказов  
   
--   Добавьте следующий метод `AddNewOrders` в **Form1**:  
+- Добавьте следующий метод `AddNewOrders` в **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ ms.locfileid: "59647679"
   
 #### <a name="to-run-the-application"></a>Запуск приложения  
   
--   Выберите **F5** для запуска приложения.  
+- Выберите **F5** для запуска приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

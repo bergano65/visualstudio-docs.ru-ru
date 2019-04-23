@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098134"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Адаптация кода прежних версий для редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>Чтобы создать адаптер для IVsTextView  
   
-1.  Добавьте ссылку на Microsoft.VisualStudio.Editor.dll. Убедитесь, что `CopyLocal` присваивается `false`.  
+1. Добавьте ссылку на Microsoft.VisualStudio.Editor.dll. Убедитесь, что `CopyLocal` присваивается `false`.  
   
-2.  Создать экземпляр <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, как показано ниже.  
+2. Создать экземпляр <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, как показано ниже.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  Вызовите метод `CreateX()`.  
+3. Вызовите метод `CreateX()`.  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>Для получения IVxTextBuffer  
   
-1.  Определения интерфейсов IVx * находятся в файле VSEditor.h в... \VisualStudioIntegration\Common\Inc\ папка установки Visual Studio SDK.  
+1. Определения интерфейсов IVx * находятся в файле VSEditor.h в... \VisualStudioIntegration\Common\Inc\ папка установки Visual Studio SDK.  
   
-2.  Следующий код создает экземпляр текстового буфера, используя `IVsUserData->GetData()` метод. В следующем коде `pData` — это указатель на `IVsUserData` объект.  
+2. Следующий код создает экземпляр текстового буфера, используя `IVsUserData->GetData()` метод. В следующем коде `pData` — это указатель на `IVsUserData` объект.  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Для использования компонентов редактора Visual Studio из компонента не MEF  
   
-1.  Добавьте ссылку на сборку Microsoft.VisualStudio.ComponentModelHost.dll в... Папка установки Visual Studio \Common7\IDE\. Убедитесь, что `CopyLocal` присваивается `false`.  
+1. Добавьте ссылку на сборку Microsoft.VisualStudio.ComponentModelHost.dll в... Папка установки Visual Studio \Common7\IDE\. Убедитесь, что `CopyLocal` присваивается `false`.  
   
-2.  Добавьте закрытый `IComponentModel` член в класс, в котором вы хотите использовать службы редактора Visual Studio, как показано ниже.  
+2. Добавьте закрытый `IComponentModel` член в класс, в котором вы хотите использовать службы редактора Visual Studio, как показано ниже.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  Создайте экземпляр модели компонентов в методе инициализации компонента.  
+3. Создайте экземпляр модели компонентов в методе инициализации компонента.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  После этого любой из служб редактора Visual Studio можно получить, вызвав `IComponentModel.GetService<T>()` метод для службы.  
+4. После этого любой из служб редактора Visual Studio можно получить, вызвав `IComponentModel.GetService<T>()` метод для службы.  
   
     ```  
     textBufferFactoryService =  

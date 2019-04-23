@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095962"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "59660649"
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Перенос проекта Unity из UnityVS 1.8 в набор средств Visual Studio для Unity 1.9  
   
-1.  Удалите старые файлы решения и проекта из проекта Unity. В корневом каталоге проекта Unity найдите файлы SLN и PROJ (специфические для Visual Studio) и удалите их все.  
+1. Удалите старые файлы решения и проекта из проекта Unity. В корневом каталоге проекта Unity найдите файлы SLN и PROJ (специфические для Visual Studio) и удалите их все.  
   
-2.  Импортируйте пакет набора средств Visual Studio для Unity в свой пакет Unity. Дополнительные сведения о том, как импортировать пакет VSTU, см. в разделе "Настройка набора средств Visual Studio для Unity" на странице [Начало работы](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
+2. Импортируйте пакет набора средств Visual Studio для Unity в свой пакет Unity. Дополнительные сведения о том, как импортировать пакет VSTU, см. в разделе "Настройка набора средств Visual Studio для Unity" на странице [Начало работы](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
   
-3.  Создайте новые файлы решения и проекта. Если их нужно создать сейчас, в редакторе Unity в главном меню выберите **Средства Visual Studio**, **Создать файлы проекта**. В противном случае этот шаг можно пропустить. Набор средств Visual Studio для Unity автоматически создаст новые файлы при выборе **Средства Visual Studio**, **Открыть в Visual Studio**.  
+3. Создайте новые файлы решения и проекта. Если их нужно создать сейчас, в редакторе Unity в главном меню выберите **Средства Visual Studio**, **Создать файлы проекта**. В противном случае этот шаг можно пропустить. Набор средств Visual Studio для Unity автоматически создаст новые файлы при выборе **Средства Visual Studio**, **Открыть в Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio не будет загружать решение, созданное набором средств Visual Studio для Unity.  
  Дополнительные сведения см. в [ответе на этот вопрос на Stackoverflow](http://stackoverflow.com/a/24035907/36702).  
@@ -44,11 +44,11 @@ ms.locfileid: "59660649"
 ## <a name="known-issues"></a>Известные проблемы  
  Применительно к набору средств Visual Studio для Unity существуют известные проблемы, которые возникают вследствие взаимодействия отладчика со старой версией компилятора C# в Unity. Мы работаем над устранением этих проблем, но в то же время могут возникать другие проблемы.  
   
--   При отладке Unity иногда аварийно завершает работу.  
+- При отладке Unity иногда аварийно завершает работу.  
   
--   При отладке Unity иногда зависает.  
+- При отладке Unity иногда зависает.  
   
--   Пошаговая отладка с заходом и выходом из методов иногда ведет себя некорректно, особенно в итераторах или внутри инструкций switch.  
+- Пошаговая отладка с заходом и выходом из методов иногда ведет себя некорректно, особенно в итераторах или внутри инструкций switch.  
   
 ## <a name="reporting-errors"></a>Ведение отчетов об ошибках  
  Помогите нам улучшить качество набора средств Visual Studio для Unity: отправляйте нам отчеты об ошибках при аварийном выходе, зависании или в случае других ошибок. Эти сведения помогают нам определять причину и устранять проблемы в наборе средств Visual Studio для Unity. Спасибо!  

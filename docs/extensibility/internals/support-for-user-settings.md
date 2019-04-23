@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070744"
 ---
 # <a name="support-for-user-settings"></a>Поддержка параметров пользователя
 VSPackage может определять одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает **параметры импорта и экспорта** команды **средства** меню. Чтобы включить этот сохраняемость, используйте API параметров в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
  Запись реестра, который называется точки настраиваемых параметров и GUID определяет категорию параметров VSPackage. VSPackage может поддерживать несколько категорий параметров, каждый из которых определяется точки настраиваемых параметров.
 
--   Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+- Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
--   Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.
+- Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.
 
      Если один пакет VSPackage поддерживает несколько точках настраиваемых параметров, каждой точки настраиваемых параметров реализуется отдельный класс и каждый регистрируется с уникальный экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> класса. Следовательно параметры, реализация класса может поддерживать более чем одной категории параметров.
 

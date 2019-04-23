@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072641"
 ---
 # <a name="options-text-editor-cc-advanced"></a>"Параметры", "Текстовый редактор", C/C++, "Дополнительно"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ ms.locfileid: "59660779"
   
  Для задания фильтров используйте сумму следующих значений:  
   
--   0 - нет  
+- 0 - нет  
   
--   1 — общие  
+- 1 — общие  
   
--   2 — бездействие  
+- 2 — бездействие  
   
--   4 — рабочий элемент  
+- 4 — рабочий элемент  
   
--   8 — IntelliSense  
+- 8 — IntelliSense  
   
--   16 — ACPerf  
+- 16 — ACPerf  
   
--   32 — ClassView  
+- 32 — ClassView  
   
 ## <a name="fallback-location"></a>Расположение Fallback  
  Запасное расположение — это место, куда помещаются вспомогательные файлы SDF и IntelliSense (например, iPCH), если основное расположение (в каталоге решения) не используется. Такая ситуация может возникать, если у пользователя нет разрешений на запись в каталог решения или если каталог решения находится на медленно работающем устройстве. По умолчанию запасным расположением является временный каталог пользователя.  
