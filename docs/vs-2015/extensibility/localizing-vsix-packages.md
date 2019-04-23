@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046090"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ ms.locfileid: "58979681"
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Чтобы задать включают свойства Vsix  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши файл Extension.vsixlangpack и нажмите кнопку **свойства**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши файл Extension.vsixlangpack и нажмите кнопку **свойства**.  
   
-2.  В сетке свойств нажмите кнопку **включить в Vsix**и присвойте ему значение `true`.  
+2. В сетке свойств нажмите кнопку **включить в Vsix**и присвойте ему значение `true`.  
   
 ## <a name="example"></a>Пример  
   

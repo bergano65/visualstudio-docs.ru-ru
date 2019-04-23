@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051460"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. установку параметров отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58994007"
   
 ### <a name="to-set-debugger-options"></a>Чтобы задать параметры отладчика  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  В окне **Параметры** откройте папку **Отладка**.  
+2. В окне **Параметры** откройте папку **Отладка**.  
   
-3.  В папке **Отладка** выберите нужную категорию параметров.  
+3. В папке **Отладка** выберите нужную категорию параметров.  
   
      Самые распространенные параметры находятся в категории **Общие**. Для получения дополнительной информации см. [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Установите или снимите флажки нужных и ненужных параметров, соответственно. Для получения справки о параметрах нажмите клавишу F1  
+4. Установите или снимите флажки нужных и ненужных параметров, соответственно. Для получения справки о параметрах нажмите клавишу F1  
   
 ## <a name="see-also"></a>См. также  
  [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../debugger/general-debugging-options-dialog-box.md)   

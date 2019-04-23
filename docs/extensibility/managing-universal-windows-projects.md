@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047402"
 ---
 # <a name="manage-universal-windows-projects"></a>Управление проектами универсальной Windows
 
@@ -25,11 +25,11 @@ ms.locfileid: "56335547"
 
 ### <a name="navigate-the-shared-project"></a>Перейдите в общий проект
 
-1.  Создайте проект VSIX C# с именем **TestUniversalProject**. (**Файл** > **новый** > **проекта** и затем **C#**  >   **Расширяемость** > **пакет Visual Studio**). Добавить **настраиваемой команды** шаблона элемента проекта (на **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент** , а затем перейдите к **расширяемости**). Назовите файл **TestUniversalProject**.
+1. Создайте проект VSIX C# с именем **TestUniversalProject**. (**Файл** > **новый** > **проекта** и затем **C#**  >   **Расширяемость** > **пакет Visual Studio**). Добавить **настраиваемой команды** шаблона элемента проекта (на **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент** , а затем перейдите к **расширяемости**). Назовите файл **TestUniversalProject**.
 
-2.  Добавьте ссылку на *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* и *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (в **расширения** раздел).
+2. Добавьте ссылку на *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* и *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (в **расширения** раздел).
 
-3.  Откройте *TestUniversalProject.cs* и добавьте следующие `using` инструкции:
+3. Откройте *TestUniversalProject.cs* и добавьте следующие `using` инструкции:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ ms.locfileid: "56335547"
     using System.Windows.Forms;
     ```
 
-4.  В `TestUniversalProject` класса добавьте закрытое поле указывает на **вывода** окна.
+4. В `TestUniversalProject` класса добавьте закрытое поле указывает на **вывода** окна.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ ms.locfileid: "56335547"
     }
     ```
 
-5.  Задайте ссылку на область вывода внутри конструктора TestUniversalProject:
+5. Задайте ссылку на область вывода внутри конструктора TestUniversalProject:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ ms.locfileid: "56335547"
     }
     ```
 
-6.  Удалите существующий код из `ShowMessageBox` метод:
+6. Удалите существующий код из `ShowMessageBox` метод:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ ms.locfileid: "56335547"
     }
     ```
 
-7.  Получает объект DTE, который будет использоваться для нескольких различных целей в этом пошаговом руководстве. Кроме того убедитесь, что решение загружено при нажатии кнопки меню.
+7. Получает объект DTE, который будет использоваться для нескольких различных целей в этом пошаговом руководстве. Кроме того убедитесь, что решение загружено при нажатии кнопки меню.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ ms.locfileid: "56335547"
     }
     ```
 
-8.  Найти общий проект. Общий проект — это чисто контейнер; не создавать и создания выходных значений. Следующий метод находит первый общего проекта в решении, просматривая <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект, имеющий возможность общего проекта.
+8. Найти общий проект. Общий проект — это чисто контейнер; не создавать и создания выходных значений. Следующий метод находит первый общего проекта в решении, просматривая <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект, имеющий возможность общего проекта.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ ms.locfileid: "56335547"
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Управление общих элементов в проект платформы
 
-1.  Найти общие элементы в проект платформы. Элементы в общем проекте появляются в проекте платформы как общие элементы. Не удается увидеть их в **обозревателе решений**, но вы можете потренироваться иерархии проекта, чтобы найти их. Следующий метод проходит по иерархии и собирает все общие элементы. При необходимости он выводит заголовок каждого элемента. Общие элементы идентифицируются по новому свойству <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Найти общие элементы в проект платформы. Элементы в общем проекте появляются в проекте платформы как общие элементы. Не удается увидеть их в **обозревателе решений**, но вы можете потренироваться иерархии проекта, чтобы найти их. Следующий метод проходит по иерархии и собирает все общие элементы. При необходимости он выводит заголовок каждого элемента. Общие элементы идентифицируются по новому свойству <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ ms.locfileid: "56335547"
     }
     ```
 
-2.  В `ShowMessageBox` метод, добавьте следующий код для обхода элементов платформы проекта иерархии. Вставить его внутри `foreach` блока.
+2. В `ShowMessageBox` метод, добавьте следующий код для обхода элементов платформы проекта иерархии. Вставить его внутри `foreach` блока.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ ms.locfileid: "56335547"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Чтение общих элементов. Общие элементы отображаются в проекте платформы как скрытый связанные файлы, а вы найдете все свойства, как обычные связанные файлы. Следующий код считывает полный путь к первый общий элемент.
+3. Чтение общих элементов. Общие элементы отображаются в проекте платформы как скрытый связанные файлы, а вы найдете все свойства, как обычные связанные файлы. Следующий код считывает полный путь к первый общий элемент.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ ms.locfileid: "56335547"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Теперь попробуйте все в деле. Нажмите клавишу **F5** запустить экспериментальный экземпляр. Создание C# проект приложения универсальной концентратора в экспериментальном экземпляре (в **новый проект** диалоговом окне **Visual C#**   >  **Windows**  >  **Windows 8** > **универсальной** > **приложение центра**) перейдите к **средства** меню и нажмите кнопку  **Вызвать TestUniversalProject**, а затем проверить текст в **вывода** области. Вы должны увидеть примерно следующее:
+4. Теперь попробуйте все в деле. Нажмите клавишу **F5** запустить экспериментальный экземпляр. Создание C# проект приложения универсальной концентратора в экспериментальном экземпляре (в **новый проект** диалоговом окне **Visual C#**   >  **Windows**  >  **Windows 8** > **универсальной** > **приложение центра**) перейдите к **средства** меню и нажмите кнопку  **Вызвать TestUniversalProject**, а затем проверить текст в **вывода** области. Вы должны увидеть примерно следующее:
 
     ```
     Found shared project: HubApp.Shared

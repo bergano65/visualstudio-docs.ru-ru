@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053979"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ для разработки кроссплатформенных мобильных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "59665706"
   
  Использование Visual C++ для разработки кроссплатформенных мобильных приложений имеет несколько преимуществ.  
   
-1.  **Простая установка.** Установщик Visual Studio получает и устанавливает средства и пакеты SDK сторонних разработчиков, необходимые для создания приложений или библиотек для Android и iOS. Установка и настройка просты и в основном производятся автоматически.  
+1. **Простая установка.** Установщик Visual Studio получает и устанавливает средства и пакеты SDK сторонних разработчиков, необходимые для создания приложений или библиотек для Android и iOS. Установка и настройка просты и в основном производятся автоматически.  
   
-2.  **Эффективная и привычная среда сборки.** Шаблоны Visual Studio позволяют легко создавать общие кроссплатформенные решения и проекты. Управлять свойствами для всех проектов можно с помощью единого интерфейса. Редактируйте весь код в редакторе Visual Studio и используйте встроенную кроссплатформенную функцию IntelliSense для автозавершения и выделения ошибок.  
+2. **Эффективная и привычная среда сборки.** Шаблоны Visual Studio позволяют легко создавать общие кроссплатформенные решения и проекты. Управлять свойствами для всех проектов можно с помощью единого интерфейса. Редактируйте весь код в редакторе Visual Studio и используйте встроенную кроссплатформенную функцию IntelliSense для автозавершения и выделения ошибок.  
   
-3.  **Унифицированный процесс отладки.** Используйте первоклассные средства отладки в Visual Studio для отслеживания и пошагового прохождения кода C++ на всех платформах, включая устройства и эмуляторы Android, iOS, Windows и Windows Phone.  
+3. **Унифицированный процесс отладки.** Используйте первоклассные средства отладки в Visual Studio для отслеживания и пошагового прохождения кода C++ на всех платформах, включая устройства и эмуляторы Android, iOS, Windows и Windows Phone.  
   
 ## <a name="get-the-tools"></a>Получение инструментов  
  Visual C++ для разработки кроссплатформенных мобильных приложений — это устанавливаемый компонент, входящий в состав Visual Studio 2015. Сведения о необходимых компонентах и инструкции по установке см. в разделе [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для создания кода для iOS также требуются компьютер Mac и учетная запись разработчика Apple iOS. Для получения дополнительной информации см. [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
@@ -41,55 +41,55 @@ ms.locfileid: "59665706"
   
  Visual C++ для разработки кроссплатформенных мобильных приложений включает несколько шаблонов, которые помогут вам приступить к созданию приложений:  
   
--   Приложение OpenGLES 2 (Android, iOS, универсальная платформа Windows)  
+- Приложение OpenGLES 2 (Android, iOS, универсальная платформа Windows)  
   
      Создает решение с набором проектов для сборки приложения Android Native Activity, приложения iOS и универсального приложения для Windows вместе с библиотекой общего кода C++. Эти приложения используют библиотеки для конкретных платформ, созданные с помощью общего кода C++ OpenGL ES, с целью отрисовки одинакового вращающегося куба. Для использования этого шаблона при установке Visual Studio следует включить параметр "Средства разработки универсальных приложений Windows".  
   
--   Нативное приложение (Android)  
+- Нативное приложение (Android)  
   
      Создает полнофункциональное приложение C++ OpenGL в форме проекта Android Native Activity.  
   
--   Приложение OpenGLES (Android, iOS)  
+- Приложение OpenGLES (Android, iOS)  
   
      Создает решение с набором проектов для приложения Android Native Activity и приложения iOS. Эти приложения используют библиотеки для конкретных платформ, созданные с помощью общего кода C++ OpenGL ES, с целью отрисовки одинакового вращающегося куба.  
   
--   Общая библиотека (Android, iOS)  
+- Общая библиотека (Android, iOS)  
   
      Создает решение с проектами, предназначенными для создания файлов динамической библиотеки Android (SO) и статической библиотеки iOS (A) с помощью общего кода C++ в общем проекте.  
   
--   Простое приложение (Android, Ant)  
+- Простое приложение (Android, Ant)  
   
      Создает проект приложения Hello, World для Android, в котором используется только исходный код Java и система сборки Ant.  
   
--   Простое приложение (Android, Gradle)  
+- Простое приложение (Android, Gradle)  
   
      Создает проект приложения Hello, World для Android, в котором используется только исходный код Java и система сборки Gradle.  
   
--   Простая библиотека (Android, Ant)  
+- Простая библиотека (Android, Ant)  
   
      Создает проект библиотеки Hello, World для Android, в котором используется только исходный код Java и система сборки Ant.  
   
--   Простая библиотека (Android, Gradle)  
+- Простая библиотека (Android, Gradle)  
   
      Создает проект библиотеки Hello, World для Android, в котором используется только исходный код Java и система сборки Gradle.  
   
--   Динамическая общая библиотека (Android)  
+- Динамическая общая библиотека (Android)  
   
      Создает файл динамической библиотеки Android (SO) с помощью кода C++.  
   
--   Приложение OpenGLES 2 (iOS)  
+- Приложение OpenGLES 2 (iOS)  
   
      Создает решение с набором проектов для сборки приложения iOS OpenGL ES 2. Приложение использует библиотеку кода C++ OpenGL ES для рисования вращающегося куба в приложении iOS. Это приложение может стать хорошей отправной точкой для ознакомления с импортом библиотек C++ в приложение iOS.  
   
--   Статическая библиотека (Android)  
+- Статическая библиотека (Android)  
   
      Создает проект для сборки статической библиотеки для Android. Приложение Android может быть связано только с одной динамической библиотекой, но с любым количеством статических библиотек.  
   
--   Статичная библиотека (iOS)  
+- Статичная библиотека (iOS)  
   
      Создает проект для сборки статической библиотеки для iOS.  
   
--   Проект Makefile (Android)  
+- Проект Makefile (Android)  
   
      Создает оболочку проекта для ваших собственных проектов Android, использующих файл makefile.  
   
@@ -98,12 +98,12 @@ ms.locfileid: "59665706"
   
 ## <a name="in-this-section"></a>Содержание раздела  
   
-1.  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Создание приложения Android Native Activity](../cross-platform/create-an-android-native-activity-app.md)  
+3. [Создание приложения Android Native Activity](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

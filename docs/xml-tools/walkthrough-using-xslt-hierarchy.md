@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051639"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Пошаговое руководство. Использование XSLT иерархии
 
@@ -69,7 +69,7 @@ ms.locfileid: "57526312"
     </xsl:stylesheet>
     ```
 
-3.  Добавьте следующий *xslinclude.xsl* файла:
+3. Добавьте следующий *xslinclude.xsl* файла:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ ms.locfileid: "57526312"
     </xsl:stylesheet>
     ```
 
-4.  Добавьте точку останова в инструкцию `<xsl:include href="xslincludefile.xsl" />`.
+4. Добавьте точку останова в инструкцию `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Приступите к отладке.
+5. Приступите к отладке.
 
-6.  Когда отладчик останавливается в инструкцию `<xsl:include href="xslincludefile.xsl" />`, нажмите клавишу **шаг с заходом** кнопки. Отладка может быть продолжена в таблице стилей, на который указывает ссылка. Иерархия видима, а конструктор отображает верный путь.
+6. Когда отладчик останавливается в инструкцию `<xsl:include href="xslincludefile.xsl" />`, нажмите клавишу **шаг с заходом** кнопки. Отладка может быть продолжена в таблице стилей, на который указывает ссылка. Иерархия видима, а конструктор отображает верный путь.
 
 ## <a name="see-also"></a>См. также
 

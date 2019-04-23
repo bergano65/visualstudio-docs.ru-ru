@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050937"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Автоматизация Word с помощью расширенных объектов
   При разработке решений Word в Visual Studio можно использовать *ведущие элементы* и *элементы управления ведущего приложения*в ваших решениях. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Word (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Word), такие как объекты <xref:Microsoft.Office.Interop.Word.Document> и <xref:Microsoft.Office.Interop.Word.ContentControl> . Расширенные объекты ведут себя как объекты Word, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.
@@ -46,13 +46,13 @@ ms.locfileid: "56598275"
 
  Дополнительные сведения о ведущих элементах управления, которые можно использовать в проектах Word, см. в следующих разделах:
 
--   [Элементы управления содержимым](../vsto/content-controls.md)
+- [Элементы управления содержимым](../vsto/content-controls.md)
 
--   [Элемент управления Bookmark](../vsto/bookmark-control.md)
+- [Элемент управления Bookmark](../vsto/bookmark-control.md)
 
--   [Элемент управления XMLNode](../vsto/xmlnode-control.md)
+- [Элемент управления XMLNode](../vsto/xmlnode-control.md)
 
--   [Элемент управления XMLNodes](../vsto/xmlnodes-control.md)
+- [Элемент управления XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)

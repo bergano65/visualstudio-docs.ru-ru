@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052563"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59656458"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением CS или VB, кроме Form2  
   
--   Используйте один из следующих атрибутов `Include` и `Exclude`:  
+- Используйте один из следующих атрибутов `Include` и `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ ms.locfileid: "59656458"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением CS или VB, кроме Form2 и Form3  
   
--   Используйте один из следующих атрибутов `Include` и `Exclude`:  
+- Используйте один из следующих атрибутов `Include` и `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ ms.locfileid: "59656458"
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех JPG-файлов в подкаталогах каталога Images, кроме файлов из каталога Version2  
   
--   Используйте следующие атрибуты `Include` и `Exclude`:  
+- Используйте следующие атрибуты `Include` и `Exclude`:  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ ms.locfileid: "59656458"
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Включение файла Formula.vb только в сборки выпуска  
   
--   Используйте атрибута `Condition` по аналогии со следующей процедурой:  
+- Используйте атрибута `Condition` по аналогии со следующей процедурой:  
   
     ```  
     <Compile  

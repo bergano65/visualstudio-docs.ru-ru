@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043965"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Фрагмент кода, сам является шаблон на основе XML с помощью набора полей. Эти поля будут выделены после вставки фрагмента кода, а также может иметь разные значения в зависимости от контекста, в которой вставляется фрагмент кода. Сразу после вставки фрагмента, языковой службы можно форматировать фрагмента кода.
@@ -39,11 +39,11 @@ ms.locfileid: "56612105"
 ## <a name="providing-support-for-code-snippets"></a>Предоставление поддержки для фрагментов кода
  Чтобы включить поддержку для фрагментов кода, необходимо предоставить или установить фрагменты кода, и необходимо предоставить средства для вставки этих фрагментов. Существует три шага для включения возможности поддержки для фрагментов кода:
 
-1.  Установка файлы фрагментов кода.
+1. Установка файлы фрагментов кода.
 
-2.  Включение фрагментов кода для языковой службы.
+2. Включение фрагментов кода для языковой службы.
 
-3.  Вызов <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта.
+3. Вызов <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта.
 
 ### <a name="installing-the-snippet-files"></a>Установка файлы фрагментов кода
  Все фрагменты кода для языка, хранятся как шаблоны в XML-файлов, обычно один шаблон фрагмента каждого файла. Дополнительные сведения о схеме XML, используемый для шаблоны фрагментов кода, см. в разделе [Справочник по схеме фрагментов кода](../../ide/code-snippets-schema-reference.md). Каждый шаблон фрагмента идентифицируется с идентификатором языка. Этот язык, идентификатор, указанный в реестре и помещается в `Language` атрибут \<кода > тега в шаблоне.
@@ -83,7 +83,7 @@ ms.locfileid: "56612105"
 
  Следующие элементы подстановки может быть помещен в пути, сохраненному в \<DirPath > тег в файл индекса.
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |% LCID %|Идентификатор языка.|
 |% InstallRoot %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|
@@ -115,9 +115,9 @@ ms.locfileid: "56612105"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Вставка фрагмента кода с помощью команды меню
  Чтобы использовать команды меню для отображения обозревателя на фрагмент кода, добавьте команду меню, а затем вызвать <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> интерфейс в ответ для этой команды меню.
 
-1.  Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [создания расширения с помощью команды меню](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [создания расширения с помощью команды меню](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.
+2. Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "56612105"
     }
     ```
 
-3.  Переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> метод в <xref:Microsoft.VisualStudio.Package.ViewFilter> для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> и вызовите <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод для этого объекта.
+3. Переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> метод в <xref:Microsoft.VisualStudio.Package.ViewFilter> для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> и вызовите <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод для этого объекта.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ ms.locfileid: "56612105"
 
      Следующие методы в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса вызываются средой Visual Studio в указанном порядке во время вставки фрагмента кода:
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      После <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> вызывается метод, фрагмента и <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объект находится в режиме редактирования специальные, используемая для изменения фрагмент кода, который только что был вставлен.
 

@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054304"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ ms.locfileid: "59001900"
  [Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md) анализ и работы с потоками, которые выполняются на GPU во время отладки.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Использование точек останова](../debugger/using-breakpoints.md)
- -   Использование фильтров точек останова при необходимости установить точку останова в отдельном потоке.
+
+[Использование точек останова](../debugger/using-breakpoints.md)
+- Использование фильтров точек останова при необходимости установить точку останова в отдельном потоке.
 
 - точки трассировки дают возможность отслеживать выполнение программы без прерывания ее выполнения. Это может быть полезно для изучения неполадок, таких как взаимоблокировки.
 

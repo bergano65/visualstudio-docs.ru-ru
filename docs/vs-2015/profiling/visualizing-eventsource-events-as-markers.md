@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044926"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54801496"
   
 ### <a name="marker-type"></a>Тип маркера  
   
-1.  События с [кодом](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
+1. События с [кодом](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
   
-2.  Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
+2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
   
-3.  Во всех остальных случаях это событие обрабатывается как сообщение.  
+3. Во всех остальных случаях это событие обрабатывается как сообщение.  
   
 ### <a name="importance"></a>Важность  
  В приведенной ниже таблице определяется способ сопоставления уровня события и важности маркера.  
@@ -51,7 +51,7 @@ ms.locfileid: "54801496"
 ### <a name="category"></a>Категория  
  Если уровень — win:Critical или win:Error, то категория — Alert (–1). В противном случае категория имеет значение по умолчанию (0).  
   
-### <a name="text"></a>Text  
+### <a name="text"></a>Текста  
  Если для события определено сообщение форматированного текста (как для функции printf), то оно отображается в качестве описания маркера. В противном случае описанием будет имя события и значение каждого поля полезных данных.  
   
 ## <a name="customizing-visualization-of-eventsource-events"></a>Настройка визуализации событий EventSource  
@@ -87,7 +87,7 @@ ms.locfileid: "54801496"
 ### <a name="category"></a>Категория  
  Используйте поле `cvCategory` типа byte, чтобы управлять категорией, которую визуализатор параллелизма назначает событию EventSource.  
   
-### <a name="text"></a>Text  
+### <a name="text"></a>Текста  
  Используйте строковое поле `cvTextW`, чтобы управлять описанием, которое визуализатор параллелизма назначает событию EventSource.  
   
 ### <a name="spanid"></a>SpanID  
@@ -96,5 +96,5 @@ ms.locfileid: "54801496"
 > [!NOTE]
 >  Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)

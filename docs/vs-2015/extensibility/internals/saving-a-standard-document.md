@@ -12,12 +12,12 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 74f77112965e774bc2fcb278be08f6e9b61774d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052484"
 ---
 # <a name="saving-a-standard-document"></a>Сохранение стандартного документа
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "58989842"
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Чтобы изменить владельца файла для проекта прочих файлов  
   
-1.  Запроса службе <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> интерфейс.  
+1. Запроса службе <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> интерфейс.  
   
      Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> возвращается.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) метод, чтобы передать документ в новой иерархии. Этот метод вызывается в иерархии, выполнение команды «Сохранить как».  
+2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) метод, чтобы передать документ в новой иерархии. Этот метод вызывается в иерархии, выполнение команды «Сохранить как».  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

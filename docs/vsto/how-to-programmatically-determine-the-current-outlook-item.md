@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3608f516eb9206bc5b4c232c227d3e49c2414be7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052510"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Практическое руководство. Программное определение текущего элемента Outlook
   В этом примере используется `Explorer.SelectionChange` событий, чтобы отобразить имя текущей папки и некоторые сведения о выбранном элементе. Затем код отображает выбранный элемент.
@@ -34,7 +34,7 @@ ms.locfileid: "56599757"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Встречи, контакты и сообщения электронной почты в Microsoft Office Outlook.
+- Встречи, контакты и сообщения электронной почты в Microsoft Office Outlook.
 
 ## <a name="see-also"></a>См. также
 - [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)

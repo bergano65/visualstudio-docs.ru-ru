@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047389"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Сохранить свойство элемента проекта
 Вы можете сохранить свойства, добавляемого элемента проекта, такие как автор исходного файла. Это можно сделать путем сохранения свойства в файле проекта.
@@ -27,7 +27,7 @@ ms.locfileid: "54963987"
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Для получения иерархии проекта с помощью объекта DTE
 
-1.  Добавьте следующий код к VSPackage:
+1. Добавьте следующий код к VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ ms.locfileid: "54963987"
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Сохранить свойство элемента проекта с помощью объекта DTE
 
-1.  Добавьте приведенный ниже код в метод в предыдущей процедуре:
+1. Добавьте приведенный ниже код в метод в предыдущей процедуре:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "54963987"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Для получения иерархии проекта, с помощью IVsMonitorSelection
 
-1.  Добавьте следующий код к VSPackage:
+1. Добавьте следующий код к VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ ms.locfileid: "54963987"
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Для сохранения выбранного проекта свойство item, учитывая иерархии проекта.
 
-1.  Добавьте приведенный ниже код в метод в предыдущей процедуре:
+1. Добавьте приведенный ниже код в метод в предыдущей процедуре:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052172"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58991235"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Чтобы задать язык ресурсов нейтрального языка и региональных параметров
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
 
-2.  На панели навигации слева выберите **приложения**, а затем нажмите кнопку **сведения о сборке**.
+2. На панели навигации слева выберите **приложения**, а затем нажмите кнопку **сведения о сборке**.
 
-3.  В **сведения о сборке** диалоговом окне выберите язык из **нейтральный язык** стрелку раскрывающегося списка.
+3. В **сведения о сборке** диалоговом окне выберите язык из **нейтральный язык** стрелку раскрывающегося списка.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Допускается, чтобы подавить предупреждение из этого правила. Тем не менее может снизить производительность при запуске.

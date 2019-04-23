@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045633"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Практическое руководство. Создание данных для метрик кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58989394"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Для формирования результатов метрики кода для всего решения  
   
--   Нажмите кнопку **меню Analyze**, а затем нажмите кнопку **CalculateCode метрики для решения**.  
+- Нажмите кнопку **меню Analyze**, а затем нажмите кнопку **CalculateCode метрики для решения**.  
   
      \- или -  
   
--   В **обозревателе решений**, щелкните правой кнопкой мыши решение и нажмите кнопку **CalculateCode метрики**.  
+- В **обозревателе решений**, щелкните правой кнопкой мыши решение и нажмите кнопку **CalculateCode метрики**.  
   
      \- или -  
   
--   В **результатов метрики кода** окно, нажмите кнопку **CalculateCode метрики для решения** кнопки.  
+- В **результатов метрики кода** окно, нажмите кнопку **CalculateCode метрики для решения** кнопки.  
   
      Результаты создаются и **результатов метрики кода** откроется диалоговое окно.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58989394"
   
 ### <a name="to-view-the-results-details"></a>Чтобы просмотреть подробные результаты  
   
--   Разверните дерево в **иерархии** столбца.  
+- Разверните дерево в **иерархии** столбца.  
   
 ## <a name="see-also"></a>См. также  
  [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

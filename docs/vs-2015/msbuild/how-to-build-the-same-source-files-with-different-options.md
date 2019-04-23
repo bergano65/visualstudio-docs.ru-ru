@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045607"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663149"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Задание группы свойств на основе другого свойства  
   
--   Используйте атрибут `Condition` в элементе `PropertyGroup` по аналогии со следующей процедурой:  
+- Используйте атрибут `Condition` в элементе `PropertyGroup` по аналогии со следующей процедурой:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ ms.locfileid: "59663149"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Определение свойства на основе другого свойства  
   
--   Используйте атрибут `Condition` в элементе `Property` по аналогии со следующей процедурой:  
+- Используйте атрибут `Condition` в элементе `Property` по аналогии со следующей процедурой:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ ms.locfileid: "59663149"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
--   Используйте параметр **/property** с указанием свойства и его значения. Пример:  
+- Используйте параметр **/property** с указанием свойства и его значения. Пример:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
