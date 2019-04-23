@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100252"
 ---
 # <a name="localize-menu-commands"></a>Локализация команд меню
 Можно предоставить локализованный текст для команды меню и панели инструментов, создание локализованных *.vsct* файлы и локализованных *.resx* файлы для пакета VSPackage, а затем обновить файлы проекта для включения изменения.
@@ -76,19 +76,19 @@ ms.locfileid: "56679272"
 ## <a name="localize-other-text-resources"></a>Локализация ресурсов других текста
  Текстовые ресурсы, отличные от имен команд определяются в ресурсе (*.resx*) файлы.
 
-1.  Переименуйте *VSPackage.resx* для *VSPackage.en-US.resx*.
+1. Переименуйте *VSPackage.resx* для *VSPackage.en-US.resx*.
 
-2.  Создайте копию *VSPackage.en-US.resx* файл для каждого языка локализации.
+2. Создайте копию *VSPackage.en-US.resx* файл для каждого языка локализации.
 
      Имя каждой копии *VSPackage. {} Языковой стандарт} .resx*, где *{языковой стандарт}* — это имя определенного языка и региональных параметров.
 
-3.  Переименуйте *Resources.resx* для *именами Resources.en-US.resx*.
+3. Переименуйте *Resources.resx* для *именами Resources.en-US.resx*.
 
-4.  Создайте копию *именами Resources.en-US.resx* файл для каждого языка локализации.
+4. Создайте копию *именами Resources.en-US.resx* файл для каждого языка локализации.
 
      Имя каждой копии *ресурсы. {} Языковой стандарт} .resx*, где *{языковой стандарт}* — это имя определенного языка и региональных параметров.
 
-5.  Откройте каждый *.resx* файл для изменения строки значения соответствующим образом для определенного языка и региональных параметров. В следующем примере показано определение локализованный ресурс строки заголовка окна инструментов.
+5. Откройте каждый *.resx* файл для изменения строки значения соответствующим образом для определенного языка и региональных параметров. В следующем примере показано определение локализованный ресурс строки заголовка окна инструментов.
 
      [*Именами Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ ms.locfileid: "56679272"
 ## <a name="incorporate-localized-resources-into-the-project"></a>Включить локализованные ресурсы в проект
  Необходимо изменить *assemblyinfo.cs* файл и файл проекта для включения в локализованные ресурсы.
 
-1.  Из **свойства** узел в **обозревателе решений**откройте *assemblyinfo.cs* или *assemblyinfo.vb* в редакторе.
+1. Из **свойства** узел в **обозревателе решений**откройте *assemblyinfo.cs* или *assemblyinfo.vb* в редакторе.
 
-2.  Добавьте следующую запись.
+2. Добавьте следующую запись.
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ ms.locfileid: "56679272"
 
      Таким образом задается английского (США) по умолчанию.
 
-3.  Выгрузите проект.
+3. Выгрузите проект.
 
-4.  Откройте файл проекта в редакторе.
+4. Откройте файл проекта в редакторе.
 
-5.  Найдите `ItemGroup` элемент, содержащий `EmbeddedResource` элементов.
+5. Найдите `ItemGroup` элемент, содержащий `EmbeddedResource` элементов.
 
-6.  В `EmbeddedResource` элемент, который вызывает *VSPackage.en-US.resx*, замените `ManifestResourceName` элемент с `LogicalName` элемент, значение `VSPackage.en-US.Resources`, как показано ниже.
+6. В `EmbeddedResource` элемент, который вызывает *VSPackage.en-US.resx*, замените `ManifestResourceName` элемент с `LogicalName` элемент, значение `VSPackage.en-US.Resources`, как показано ниже.
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ ms.locfileid: "56679272"
     </EmbeddedResource>
     ```
 
-7.  Для каждого локализованного языка, скопируйте `EmbeddedResource` элемент для `VsPackage.en-US`и задайте **Include** атрибут и **LogicalName** Копировать в целевой языковой стандарт, как показано в следующем примере элемент Пример.
+7. Для каждого локализованного языка, скопируйте `EmbeddedResource` элемент для `VsPackage.en-US`и задайте **Include** атрибут и **LogicalName** Копировать в целевой языковой стандарт, как показано в следующем примере элемент Пример.
 
-8.  К каждому локализованные `VSCTCompile` элемента, добавьте `ResourceName` элемента, который указывает `Menus.ctmenu`, как показано в следующем примере.
+8. К каждому локализованные `VSCTCompile` элемента, добавьте `ResourceName` элемента, который указывает `Menus.ctmenu`, как показано в следующем примере.
 
     ```xml
     <ItemGroup>

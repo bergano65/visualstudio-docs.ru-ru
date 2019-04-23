@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1ff4080b7b658af5911a0372562954899628bb92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102683"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Практическое руководство. Изменение размера элементов управления ListObject
   Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> задается при добавлении его в книгу Microsoft Office Excel; однако позднее может потребоваться изменить его размер. Например, в список из двух столбцов может потребоваться добавить третий столбец.
@@ -39,47 +39,47 @@ ms.locfileid: "59669306"
 
   ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Добавление столбцов в объект списка с привязкой к данным во время выполнения? ](http://go.microsoft.com/fwlink/?LinkID=130318).
 
-##  <a name="designtime"></a> Изменение размера элемента управления ListObject во время разработки
+## <a name="designtime"></a> Изменение размера элемента управления ListObject во время разработки
  Чтобы изменить размер списка, можно щелкнуть и перетащить один из маркеров размера или переопределить его размер в диалоговом окне **изменения размеров списка** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Изменение размеров списка в диалоговом окне изменения размера списка
 
-1.  Щелкните в любом месте <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. **Средства таблиц** > **разработки** появится вкладка на ленте.
+1. Щелкните в любом месте <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. **Средства таблиц** > **разработки** появится вкладка на ленте.
 
-2.  В разделе "Свойства", щелкните **изменение размера таблицы**.
+2. В разделе "Свойства", щелкните **изменение размера таблицы**.
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 
-3.  Выберите новый диапазон данных для таблицы.
+3. Выберите новый диапазон данных для таблицы.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
-##  <a name="runtimedoclevel"></a> Изменение размеров элемента управления ListObject во время выполнения в проекте уровня документа
+## <a name="runtimedoclevel"></a> Изменение размеров элемента управления ListObject во время выполнения в проекте уровня документа
  Вы можете изменить размер <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления во время выполнения с помощью <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> метод. Этот метод нельзя использовать для перемещения элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> на новое место в листе. Заголовки должны оставаться в той же строке, а измененный элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> должен совмещаться с первоначальным объектом-списком. Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с измененным размером должен содержать строку заголовка и хотя бы одну строку данных.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Изменение размеров объекта-списка программными средствами
 
-1.  Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который охватывает ячейки от **A1** до **В3** в `Sheet1`.
+1. Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который охватывает ячейки от **A1** до **В3** в `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2.  Измените размер этого списка, чтобы он включал ячейки от **A1** до **C5**.
+2. Измените размер этого списка, чтобы он включал ячейки от **A1** до **C5**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-##  <a name="runtimeaddin"></a> Изменение размеров ListObject во время выполнения в проекте надстройки VSTO
+## <a name="runtimeaddin"></a> Изменение размеров ListObject во время выполнения в проекте надстройки VSTO
  Вы можете изменить размер <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления в любой открытый лист во время выполнения. Дополнительные сведения о добавлении <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления на лист с помощью надстройки VSTO, см. в разделе [как: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Изменение размеров объекта-списка программными средствами
 
-1.  Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который охватывает ячейки от **A1** до **В3** в `Sheet1`.
+1. Создайте элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который охватывает ячейки от **A1** до **В3** в `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2.  Измените размер этого списка, чтобы он включал ячейки от **A1** до **C5**.
+2. Измените размер этого списка, чтобы он включал ячейки от **A1** до **C5**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

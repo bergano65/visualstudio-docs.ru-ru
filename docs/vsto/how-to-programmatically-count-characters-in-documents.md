@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9e5dd79465301e5d2e6362daf70ef3e5b7c54ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102176"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Практическое руководство. Программным способом подсчета символов в документах
   Первый знак в документ находится в позиции 0, которая представляет точку вставки. Позиция последнего знака равна общему количеству знаков в документе. Число знаков в документе можно определить с помощью свойства <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> коллекции <xref:Microsoft.Office.Interop.Word.Characters> .
@@ -30,24 +30,24 @@ ms.locfileid: "56646321"
 
 ## <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>Отображение числа знаков в настройке уровня документа
 
-1.  Выделите весь документ.
+1. Выделите весь документ.
 
      [!code-vb[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#98)]
 
-2.  Отобразите количество знаков в документе в окне сообщения.
+2. Отобразите количество знаков в документе в окне сообщения.
 
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
 ## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Чтобы отобразить число знаков в надстройке VSTO
 
-1.  Выделите весь документ. В следующем примере кода выбирается активный документ.
+1. Выделите весь документ. В следующем примере кода выбирается активный документ.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#98)]
 
-2.  Отобразите количество знаков в документе в окне сообщения.
+2. Отобразите количество знаков в документе в окне сообщения.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]

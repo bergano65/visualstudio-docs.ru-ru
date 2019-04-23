@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfcec130897fc7014cb820e7efdcc4f3dcacb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102605"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +49,7 @@ mesg_type
 
 Тип сообщения. В следующей таблице перечислены поддерживаемые значения для этого параметра.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Сообщение считается сведения, предупреждение или ошибка.|
 |`SCC_MSG_STATUS`|Сообщение отображается состояние и могут отображаться в строке состояния.|
@@ -63,7 +63,7 @@ mesg_type
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|Строка была отображаться или операция выполнена успешно.|
 |SCC_MSG_RTN_CANCEL|Пользователю отменить операцию.|
@@ -73,7 +73,7 @@ mesg_type
 
 ## <a name="structures"></a>Структуры
 
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -83,7 +83,7 @@ typedef struct {
 
  Эта структура передается со `SCC_MSG_BACKGROUND_IS_CANCELLED` сообщения. Он используется для обмена данными идентификатор операции фона, который был отменен.
 
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -94,7 +94,7 @@ typedef struct {
 
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` сообщения. Он используется для связи, имя файла будет извлекаться и идентификатор, осуществляющей извлечение фоновой операции.
 
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -106,7 +106,7 @@ typedef struct {
 
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` сообщения. Он используется для обмена данными результат получения указанного файла, а также идентификатор фоновая операция, которую использовали для извлечения. См. в разделе возвращаемые значения для [SccGet](../extensibility/sccget-function.md) для что может быть задан в результате.
 
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {

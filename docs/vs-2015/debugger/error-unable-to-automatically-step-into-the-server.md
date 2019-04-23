@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102423"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Ошибка: не удалось автоматически перейти в режим пошагового выполнения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ ms.locfileid: "58992264"
   
  Возможные причины:  
   
--   Параметр отладки не установлен в "true" в файле web.config приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (см. раздел [Режим отладки в приложениях ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- Параметр отладки не установлен в "true" в файле web.config приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (см. раздел [Режим отладки в приложениях ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Версия [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] была установлена после установки Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] следует устанавливать до Visual Studio. Чтобы устранить эту неполадку, откройте **Панель управления**Windows и воспользуйтесь компонентом **Программы и компоненты** для исправления установки Visual Studio.  
+- Версия [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] была установлена после установки Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] следует устанавливать до Visual Studio. Чтобы устранить эту неполадку, откройте **Панель управления**Windows и воспользуйтесь компонентом **Программы и компоненты** для исправления установки Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)   

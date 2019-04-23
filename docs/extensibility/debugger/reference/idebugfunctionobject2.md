@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 06505798dcff86507cfc52c4209bf038776f7fac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100473"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,16 +35,16 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
  Методы этого интерфейса отложить те **IDebugFunctionObject** одним из следующих способов:
 
--   **IDebugEvaluate** метод принимает флаги.
+- **IDebugEvaluate** метод принимает флаги.
 
--   **CreateObject** метод принимает флаги и истечения времени ожидания.
+- **CreateObject** метод принимает флаги и истечения времени ожидания.
 
--   **CreateStringObjectWithLength** метод принимает длину.
+- **CreateStringObjectWithLength** метод принимает длину.
 
 ## <a name="methods"></a>Методы
  Этот интерфейс реализует следующие методы:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, который использует конструктор параметров флаг вычисления и значение времени ожидания.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает строковый объект, который имеет указанную длину.|

@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100453"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "57867904"
   
  **Требования**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  В версиях до Internet Explorer 10 можно было выполнять закодированные тесты пользовательского интерфейса на более высоком уровне привилегий, чем у процесса Internet Explorer. Во время выполнения закодированных тестов пользовательского интерфейса на Internet Explorer 10 эти тесты и процесс Internet Explorer должны быть на одинаковом уровне привилегий. Это вызвано более безопасными функции AppContainer в Internet Explorer 10.  
@@ -33,16 +33,16 @@ ms.locfileid: "57867904"
 ## <a name="supported-html5-controls"></a>Поддерживаемые элементы управления HTML5  
  Закодированный тест пользовательского интерфейса предоставляют поддержку для записи, воспроизведения и проверки следующих элементов управления HTML5:  
   
--   [Элемент управления звуком](#audio-control)  
+- [Элемент управления звуком](#audio-control)  
   
--   [Элемент управления видео](#video-control)  
+- [Элемент управления видео](#video-control)  
   
--   [Slider](#slider)  
+- [Slider](#slider)  
   
--   [ProgressBar](#progressbar)  
+- [ProgressBar](#progressbar)  
   
 ### <a name="audio-control"></a>Элемент управления звуком  
- Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.  
+ **Элемент управления звуком:** действия на элементе управления звуком HTML5 правильно записываются и воспроизводятся.  
   
  ![Элемент управления HTML5 Audio](../test/media/codedui-html5-audio.png)  
   
@@ -76,15 +76,15 @@ string Src
 string Volume  
 ```  
   
- **Свойства поиска:** Свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.  
+ **Свойства поиска:** свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.  
   
- **Свойства фильтра:** Свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition` и `TagInstance`.  
+ **Свойства фильтра:** свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition`, и `TagInstance`.  
   
 > [!NOTE]
 >  Период времени для перехода и приостановки может быть значительным. Во время воспроизведения закодированный тест пользовательского интерфейса ожидает время, указанное в `(TimeSpan)` перед приостановкой аудио. Если при каких-то особых обстоятельствах указанное время истечет до обращения к команде приостановки, будет создано исключение.  
   
 ### <a name="video-control"></a>Элемент управления видео  
- Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.  
+ **Элемент управления видео:** действия на элементе управления видео HTML5 правильно записываются и воспроизводятся.  
   
  ![Элемент управления HTML5 Video](../test/media/codedui-html5-video.png)  
   
@@ -106,15 +106,15 @@ string VideoWidth
   
 ```  
   
- **Свойства поиска:** Свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.  
+ **Свойства поиска:** свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.  
   
- **Свойства фильтра:** Свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.  
+ **Свойства фильтра:** свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.  
   
 > [!NOTE]
 >  Если необходимо перемотать видео вперед или назад, используя метки -30s или +30s, данные будут использоваться для перехода к соответствующему времени.  
   
 ### <a name="slider"></a>Slider  
- Действия **элемента управления Slider** на элементе управления Slider HTML5 правильно записываются и воспроизводятся.  
+ **Элемент управления "ползунок":** Действия в элементе управления "ползунок" HTML5 правильно записываются и воспроизводятся.  
   
  ![Элемент управления HTML5 Slider](../test/media/codedui-html5-slider.png)  
   
@@ -134,7 +134,7 @@ string ValueAsNumber
 ```  
   
 ### <a name="progressbar"></a>ProgressBar  
- **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
+ **Элемент управления ProgressBar:** с элементом управления ProgressBar невозможно взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
   
  ![Элемент управления HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png)  
   

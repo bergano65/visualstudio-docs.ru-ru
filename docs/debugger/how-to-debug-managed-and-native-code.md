@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476011"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856506"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Учебник. Отладка кода C# и C++ в рамках одного сеанса отладки
 
@@ -44,7 +44,7 @@ ms.locfileid: "58476011"
 - **Разработка классических приложений на C++**
 - **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core** в зависимости от того, приложение какого типа вы создаете.
 
-Если вы еще не установили среду Visual Studio, вы можете сделать это бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) .
+Если вы еще не установили среду Visual Studio, вы можете сделать это бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) .
 
 Если среда Visual Studio уже установлена без необходимых рабочих нагрузок, выберите **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект** Visual Studio. В Visual Studio Installer выберите нужную рабочую нагрузку и щелкните **Изменить**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "58476011"
 1. Откройте Visual Studio и создайте проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **пустой проект**, выберите **Шаблоны** и затем **Create new Empty Project project** (Создание пустого проекта). В появившемся диалоговом окне выберите **Создать**. Введите имя, например **Mixed_Mode_Debugging**, и нажмите кнопку **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **пустой проект**, выберите **Шаблоны** и затем **Create new Empty Project project** (Создание пустого проекта). В появившемся диалоговом окне выберите **Создать**. Введите имя, например **Mixed_Mode_Debugging**, и нажмите кнопку **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C++** выберите **Другой**, а затем в средней области выберите **Пустой проект**. Введите имя, например **Mixed_Mode_Debugging**, и нажмите кнопку **ОК**.
@@ -132,7 +132,7 @@ ms.locfileid: "58476011"
 1. Откройте Visual Studio и создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **консоль**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework) для C#. В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **консоль**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework) для C#. В появившемся диалоговом окне выберите **Создать**.
 
     Введите имя, например **Mixed_Mode_Calling_App**, и нажмите кнопку **Создать**.
     ::: moniker-end
@@ -193,7 +193,7 @@ ms.locfileid: "58476011"
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Настройка смешанного режима отладки для приложения .NET Core
 
-В большинстве версий Visual Studio 2017 для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Последние обновления пользовательского интерфейса для этой возможности см. в статье, посвященной этой [проблеме GitHub](https://github.com/dotnet/project-system/issues/1125).
+В большинстве версий Visual Studio, начиная с Visual Studio 2017, для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Последние обновления пользовательского интерфейса для этой возможности см. в статье, посвященной этой [проблеме GitHub](https://github.com/dotnet/project-system/issues/1125).
 
 1. В **обозревателе решений** разверните узел **Свойства** и откройте файл *launchSettings.json*.
 
