@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089607"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Присоединение и отсоединение к программе
 Подключение отладчика требуется отправить правильную последовательность методов и событий с верными атрибутами.
@@ -31,11 +31,11 @@ ms.locfileid: "56706019"
 
     Если `S_OK` возвращается, DE является должен быть загружен в тот же процесс, что SDM. SDM выполняет следующие задачи:
 
-   1.  Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.
+   1. Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.
 
-   2.  Совместно создает DE.
+   2. Совместно создает DE.
 
-   3.  Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. Отправляет DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) для SDM с `EVENT_SYNC` атрибута.
 

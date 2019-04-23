@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a15c666ace8a8bc3313d5f95e818c68693f15f28
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 17416a3b64d6cbb5f01192440a9df735f0b9fb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090333"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Фильтрация и сортировка данных в приложении Windows Forms
 
@@ -37,14 +37,14 @@ ms.locfileid: "55912551"
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Для фильтрации данных с помощью компонента BindingSource
 
--   Задайте <xref:System.Windows.Forms.BindingSource.Filter%2A> значение выражения, который необходимо вернуть. Например, следующий код возвращает клиентов с `CompanyName` , начинающегося с «B»:
+- Задайте <xref:System.Windows.Forms.BindingSource.Filter%2A> значение выражения, который необходимо вернуть. Например, следующий код возвращает клиентов с `CompanyName` , начинающегося с «B»:
 
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
 ## <a name="to-sort-data-by-using-a-bindingsource-component"></a>Для сортировки данных с помощью компонента BindingSource
 
--   Задать <xref:System.Windows.Forms.BindingSource.Sort%2A> свойства столбца, нужно выполнить сортировку. Например, следующий код сортирует клиентов по `CompanyName` столбец в порядке убывания:
+- Задать <xref:System.Windows.Forms.BindingSource.Sort%2A> свойства столбца, нужно выполнить сортировку. Например, следующий код сортирует клиентов по `CompanyName` столбец в порядке убывания:
 
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]
