@@ -10,49 +10,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a23a26bc0d0537d0d85784f8d1aea7b54e72ec4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 87ddc0e21a3945ed522014b86174a578c04faa2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095650"
 ---
-# <a name="supplying-undo-support-to-designers"></a>Предоставление поддержки команды отмены для конструкторов
+# <a name="supply-undo-support-to-designers"></a>Поддержка функции отмены поставок для конструкторов
+
 Конструкторы, таких как редакторы, обычно требуется для поддержки отмены операций, таким образом, пользователи могут отменить их последние изменения, при изменении элемента кода.
 
- Большинство конструкторов, реализованные в Visual Studio имеет возможность отмены изменений, автоматически предоставляемых средой.
+Большинство конструкторов, реализованные в Visual Studio имеют «отмены» автоматически предоставляемых средой поддержки.
 
- Реализации конструктора, которым требуется, чтобы обеспечить поддержку функции отмены:
+Реализации конструктора, которым требуется, чтобы обеспечить поддержку функции отмены:
 
 - Задать механизмы управления отменой, можно реализовать абстрактный базовый класс <xref:System.ComponentModel.Design.UndoEngine>
 
 - Укажите сохраняемость и CodeDOM поддержка путем реализации <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> и <xref:System.ComponentModel.Design.IComponentChangeService> классы.
 
-  Дополнительные сведения о создании дизайнеры, использующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], см. в разделе [расширение поддержки времени разработки](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).
+Дополнительные сведения о создании дизайнеры, использующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], см. в разделе [расширить поддержку времени разработки](/previous-versions/37899azc(v=vs.140)).
 
-  [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет инфраструктуру отмены по умолчанию путем:
+[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет инфраструктуру отмены по умолчанию путем:
 
 - Предоставляя отменить реализации управления посредством <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> и <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> классы.
 
 - Указав сохраняемости и поддержка CodeDOM через значение по умолчанию <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> и <xref:System.ComponentModel.Design.IComponentChangeService> реализаций.
 
-## <a name="obtaining-undo-support-automatically"></a>Получение поддержки отмены автоматически
- Любого конструктора, созданные в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеет возможность отмены изменений автоматического и полного if, конструкторе:
+## <a name="obtain-undo-support-automatically"></a>Автоматическое получение поддержка функции отмены
 
--   Использует <xref:System.Windows.Forms.Control> на основе класса для пользовательского интерфейса.
+Любого конструктора, созданных в Visual Studio имеет возможность отмены изменений автоматического и полного if, конструкторе:
 
--   Использует стандартный код на основе модели CodeDOM поколения и система анализа для создания кода и сохранения.
+- Использует <xref:System.Windows.Forms.Control> на основе класса для пользовательского интерфейса.
 
-     Дополнительные сведения о работе с поддержкой Visual Studio CodeDOM см. в разделе [динамического источника Создание и компиляция кода](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+- Использует стандартный код на основе модели CodeDOM поколения и система анализа для создания кода и сохранения.
+
+   Дополнительные сведения о работе с поддержкой Visual Studio CodeDOM см. в разделе [динамического кода Создание и компиляция исходного](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation).
 
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Когда следует использовать явные конструктора отмены поддержки
  Конструкторы необходимо указывать свои собственные механизмы управления отменой, если они используют графический пользовательский интерфейс, называется адаптер представления, отличной от предоставляемых <xref:System.Windows.Forms.Control>.
 
- Примером этого может созданию продукта с существует веб-графический интерфейс, а не [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] на основе графического интерфейса.
+ Примером этого может созданию продукта с существует веб-графический интерфейс, а не [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-на основе графического интерфейса.
 
- В таком случае необходимо зарегистрировать этот адаптер представления с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с помощью <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>и обеспечивает управление явного отката.
+ В таком случае необходимо зарегистрировать этот адаптер представления с помощью Visual Studio с помощью <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>и обеспечивает управление явного отката.
 
- Дизайнерам необходимо для предоставления CodeDOM и сохраняемости поддержки, если они не используют [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] модели создания кода в <xref:System.CodeDom> пространства имен.
+ Необходимо предоставить CodeDOM и сохраняемости поддержки, если они не используют модели создания кода Visual Studio, в конструкторы <xref:System.CodeDom> пространства имен.
 
 ## <a name="undo-support-features-of-the-designer"></a>Отменить функции поддержки конструктора
  Пакет SDK для среды предоставляет реализации по умолчанию интерфейсов, необходимых для обеспечения отмены поддержки, который может использоваться конструкторами неиспользование <xref:System.Windows.Forms.Control> основе классы для их пользовательские интерфейсы или стандартную модель CodeDOM и сохраняемость.
@@ -65,32 +67,29 @@ ms.locfileid: "56715272"
 
 - Дочерние единицы в конструкторе можно взаимодействовать с их родительские элементы путем реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> на <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.
 
-  Пакет SDK для среды обеспечивает поддержку CodeDOM и постоянного хранения, указав:
+Пакет SDK для среды обеспечивает поддержку CodeDOM и постоянного хранения, указав:
 
 - <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> как реализации <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-  Объект <xref:System.ComponentModel.Design.IComponentChangeService> предоставляемые [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' узла разработки.
+- Объект <xref:System.ComponentModel.Design.IComponentChangeService> предоставляется узлом разработки Visual Studio.
 
-## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Использование функций пакета SDK среды для предоставления поддержки отмены
- Чтобы получить возможность отмены изменений, объект, реализующий конструктор должен:
+## <a name="use-the-environment-sdk-features-to-supply-undo-support"></a>Используйте функции пакета SDK для окружения для предоставления поддержки отмены
 
-- Создайте и инициализируйте экземпляр <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> класса является допустимым <xref:System.IServiceProvider> реализации.
+Чтобы получить возможность отмены изменений, объект, реализующий конструктор необходимо создать и инициализировать экземпляр <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> класса является допустимым <xref:System.IServiceProvider> реализации. Это <xref:System.IServiceProvider> класс должен предоставлять следующие службы:
 
-- Это <xref:System.IServiceProvider> класс должен предоставлять следующие службы:
+- <xref:System.ComponentModel.Design.IDesignerHost>.
 
-  - <xref:System.ComponentModel.Design.IDesignerHost>.
+- <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
+   Дизайнеры, использующие сериализации Visual Studio CodeDOM можете использовать <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> в состав [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] его реализацию <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.
 
-     Дизайнеры, использующие [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сериализации CodeDOM, можно использовать <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> в состав [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] его реализацию <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.
+   В этом случае <xref:System.IServiceProvider> класс, предоставляемый для <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> конструктор должен возвращать этот объект как реализация <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> класса.
 
-     В этом случае <xref:System.IServiceProvider> класс, предоставляемый для <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> конструктор должен возвращать этот объект как реализация <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> класса.
+- <xref:System.ComponentModel.Design.IComponentChangeService>
 
-  - <xref:System.ComponentModel.Design.IComponentChangeService>
+   Конструкторы по умолчанию <xref:System.ComponentModel.Design.DesignSurface> предоставляемых структурой в Visual Studio узел всегда имеют реализацию по умолчанию <xref:System.ComponentModel.Design.IComponentChangeService> класса.
 
-     Конструкторы по умолчанию <xref:System.ComponentModel.Design.DesignSurface> предоставляемые [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основном приложении разработки гарантированно имеет реализацию по умолчанию <xref:System.ComponentModel.Design.IComponentChangeService> класса.
-
-  Реализация конструкторов <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> механизм отмены действий на основе автоматически отслеживает изменения, если:
+Реализация конструкторов <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> механизм отмены действий на основе автоматически отслеживает изменения, если:
 
 - Изменения свойств выполняются через <xref:System.ComponentModel.TypeDescriptor> объекта.
 
@@ -101,6 +100,7 @@ ms.locfileid: "56715272"
 - Конструктор выбирает для явного создания блоков отмены, с помощью стандартных отмены, предоставляемые реализацию <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> или Visual Studio реализация <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, который является производным от <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> , а также предоставляет реализация обоих <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.
 
 ## <a name="see-also"></a>См. также
+
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Расширения поддержки времени разработки](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Расширения поддержки времени разработки](/previous-versions/37899azc(v=vs.140))

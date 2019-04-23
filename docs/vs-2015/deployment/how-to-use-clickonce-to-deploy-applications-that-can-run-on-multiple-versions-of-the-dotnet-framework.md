@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095481"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ ms.locfileid: "58994440"
   
  Этот процесс включает следующие шаги:  
   
-1.  Создание манифестов приложения и развертывания.  
+1. Создание манифестов приложения и развертывания.  
   
-2.  Включение нескольких версий платформы .NET Framework в манифест развертывания.  
+2. Включение нескольких версий платформы .NET Framework в манифест развертывания.  
   
-3.  Измените файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework.  
+3. Измените файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework.  
   
-4.  Изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework.  
+4. Изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework.  
   
-5.  Подпишите манифест приложения.  
+5. Подпишите манифест приложения.  
   
-6.  Обновить и подписать манифест развертывания.  
+6. Обновить и подписать манифест развертывания.  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания  
   
--   Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
+- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework  
   
-1.  В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение имени файла приложения.  
+1. В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение имени файла приложения.  
   
-2.  Замените XML-код между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для вашего приложения.  
+2. Замените XML-код между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для вашего приложения.  
   
      Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
   
@@ -68,9 +68,9 @@ ms.locfileid: "58994440"
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework  
   
-1.  В обозревателе решений откройте файл App.config с помощью редактора XML в Visual Studio.  
+1. В обозревателе решений откройте файл App.config с помощью редактора XML в Visual Studio.  
   
-2.  Замените (или добавьте) XML-код между `<startup>` и `</startup>` элементов при помощи XML со списком поддерживаемых сред выполнения .NET Framework, для вашего приложения.  
+2. Замените (или добавьте) XML-код между `<startup>` и `</startup>` элементов при помощи XML со списком поддерживаемых сред выполнения .NET Framework, для вашего приложения.  
   
      Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
   
@@ -83,15 +83,15 @@ ms.locfileid: "58994440"
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Для изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework  
   
-1.  В каталоге публикации откройте манифест приложения с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение manifest.  
+1. В каталоге публикации откройте манифест приложения с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение manifest.  
   
-2.  Добавить `group="framework"` зависимость XML для отмеченных сборок (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, и `System.Data.Entity`). Например XML-код должен выглядеть следующим образом:  
+2. Добавить `group="framework"` зависимость XML для отмеченных сборок (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, и `System.Data.Entity`). Например XML-код должен выглядеть следующим образом:  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номеру версии для платформы .NET Framework, который является наименьшим общим знаменателем. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], номер версии используйте 2.0.50727.0 и XML должен выглядеть следующим образом:  
+3. Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номеру версии для платформы .NET Framework, который является наименьшим общим знаменателем. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], номер версии используйте 2.0.50727.0 и XML должен выглядеть следующим образом:  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ ms.locfileid: "58994440"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов  
   
--   Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
