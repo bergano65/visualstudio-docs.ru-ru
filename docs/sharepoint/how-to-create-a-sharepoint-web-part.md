@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3328c8900a202dd28eb2cab7c9651de8f45aa35e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041125"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Практическое руководство. Создание веб-части SharePoint
   Можно создать и настроить веб-часть, добавив **веб-часть** элемент в любой проект SharePoint, а затем изменив файл кода для веб-части, или с помощью конструктора. Дополнительные сведения см. в разделе [Как Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Для создания веб-части SharePoint
 
-1.  Создайте или откройте проект SharePoint.
+1. Создайте или откройте проект SharePoint.
 
      Дополнительные сведения см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Выберите узел проекта SharePoint в **обозревателе решений** и выберите **проекта** > **Добавление нового элемента**.
+2. Выберите узел проекта SharePoint в **обозревателе решений** и выберите **проекта** > **Добавление нового элемента**.
 
-3.  В **Добавление нового элемента** диалоговое окно последовательно раскройте элементы **SharePoint** узел, а затем выберите **2010** узел.
+3. В **Добавление нового элемента** диалоговое окно последовательно раскройте элементы **SharePoint** узел, а затем выберите **2010** узел.
 
-4.  В списке шаблонов SharePoint выберите **веб-часть**.
+4. В списке шаблонов SharePoint выберите **веб-часть**.
 
-5.  В **имя** , укажите имя для веб-части и затем выберите **добавить** кнопки.
+5. В **имя** , укажите имя для веб-части и затем выберите **добавить** кнопки.
 
      Веб-часть появляется в **обозревателе решений**. Дополнительные сведения о файлах, которые включает в себя веб-часть, см. в разделе [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6.  В **обозревателе решений**, откройте файл кода для веб-части, которую вы только что создали.
+6. В **обозревателе решений**, откройте файл кода для веб-части, которую вы только что создали.
 
      Например, если веб-часть называется *WebPart1*откройте *WebPart1.vb* (в Visual Basic) или *WebPart1.cs* (в C#).
 
-7.  В файле кода добавьте элементы управления в метод <xref:System.Web.UI.Control.CreateChildControls%2A>.
+7. В файле кода добавьте элементы управления в метод <xref:System.Web.UI.Control.CreateChildControls%2A>.
 
      Пример см. в разделе [Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 

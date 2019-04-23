@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040720"
 ---
 # <a name="ribbon-object-model-overview"></a>Обзор объектной модели ленты
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Предоставляет строго типизированную объектную модель, можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например можно динамически заполнения элементов управления меню, или отображать и скрывать элементы управления в зависимости от контекста. Можно также добавить вкладок, групп и элементов управления на ленту, но только до загрузки ленты в приложение Office. Сведения см. в разделе [задать свойства, которые становятся доступными только для чтения](#SettingReadOnlyProperties).
@@ -26,21 +26,21 @@ ms.locfileid: "56601040"
 
  Эта объектная модель ленты состоит главным образом из [класс ленты](#RibbonClass), [ленте события](#RibbonEvents), и [классы элементов управления ленты](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Класс ленты
+## <a name="RibbonClass"></a> Класс ленты
  При добавлении нового **Лента (визуальный конструктор)** элемента в проект Visual Studio добавляет **ленты** класс в проект. **Ленты** класс наследует от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> класса.
 
  Этот класс отображается как разделяемый класс, распределенный между файл кода ленты и файл кода конструктора лент.
 
-##  <a name="RibbonEvents"></a> События ленты
+## <a name="RibbonEvents"></a> События ленты
  **Ленты** класс содержит следующие три события:
 
-|событие|Описание:|
+|событие|Описание|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Вызывается, когда приложение Office загружает настройки ленты. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> Автоматически добавляется обработчик событий в файл кода ленты. Этот обработчик событий можно используйте для запуска пользовательского кода при загрузке ленты.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при загрузке ленты. Вы можете получить некоторого улучшения производительности при написании кода для кэширования изображений ленты в этом обработчике событий. Дополнительные сведения см. в разделе <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Возникает при закрытии экземпляра ленты.|
 
-##  <a name="RibbonControlClasses"></a> Элементы управления ленты
+## <a name="RibbonControlClasses"></a> Элементы управления ленты
  <xref:Microsoft.Office.Tools.Ribbon> Пространство имен содержит типы для каждого элемента управления, которое будет отображаться в **элементы управления ленты Office** группе **элементов**.
 
  В следующей таблице показаны тип для каждого `Ribbon` элемента управления. Описание каждого элемента управления, см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601040"
 |Получить список групп <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Используйте свойство <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Укажите число строк и столбцов, которые отображаются в <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Используйте <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> и <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> свойства.|
 
-##  <a name="SettingReadOnlyProperties"></a> Задать свойства, которые становятся доступными только для чтения
+## <a name="SettingReadOnlyProperties"></a> Задать свойства, которые становятся доступными только для чтения
  Некоторые свойства можно задать только в том случае, до загрузки ленты. Существуют три места для установки этих свойств:
 
 - В Visual Studio **свойства** окна.
@@ -126,13 +126,13 @@ ms.locfileid: "56601040"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Свойства, которые становятся доступными только для чтения
+### <a name="ReadOnlyProperties"></a> Свойства, которые становятся доступными только для чтения
  Ниже приведены свойства, которые могут устанавливаться только до загрузки ленты.
 
 > [!NOTE]
 >  Можно задать свойства элементов управления динамического меню в любое время. Эта таблица применяется в этом случае.
 
-|Свойство.|Класс элемента управления ленты|
+|Свойство|Класс элемента управления ленты|
 |--------------|--------------------------|
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
@@ -168,7 +168,7 @@ ms.locfileid: "56601040"
 ## <a name="ribbon-control-events"></a>События элементов управления ленты
  Каждый класс элемента управления содержит одно или несколько событий. В следующей таблице описаны эти события.
 
-|событие|Описание:|
+|событие|Описание|
 |-----------|-----------------|
 |Нажмите кнопку|Происходит при щелчке элемента управления.|
 |TextChanged|Происходит при изменении текста, поле или поле со списком.|

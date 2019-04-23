@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 313632661c3f73fdbd0f23616a068913c77508f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041955"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Параметры точки входа изолированной оболочки (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,17 +79,17 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
  Для логических параметров следующие строки представляют значение true; все другие строки представляют значение false. Эти строки не учитывается регистр.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   вкл.  
+- вкл.  
   
--   true  
+- true  
   
--   да  
+- да  
   
 ## <a name="example"></a>Пример  
  Чтобы отключить надстройки или изменение расположения проектов по умолчанию для вашего приложения, можно задать последний параметр «AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp».  

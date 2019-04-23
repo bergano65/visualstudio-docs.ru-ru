@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042045"
 ---
 # <a name="how-to-register-editor-file-types"></a>Практическое руководство. Регистрация типов файлов в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58994293"
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Чтобы зарегистрировать редактор типов файлов, используя классы MPF  
   
-1.  Укажите <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> класс с необходимыми параметрами для редактора в классе вашего VSPackage.  
+1. Укажите <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> класс с необходимыми параметрами для редактора в классе вашего VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ ms.locfileid: "58994293"
   
      `NameResourceID` определяется в файле Resources.h BasicEditorUI проекта и определяющее редактор редактором «My».  
   
-2.  Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
+2. Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      В реализации <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> мы вызываем метод <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> метод и передайте экземпляр фабрикой редактора, как показано ниже.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58994293"
   
      Этот шаг регистрирует фабрику редактора и файл расширения редактора.  
   
-3.  Отмена регистрации фабрики редакторов.  
+3. Отмена регистрации фабрики редакторов.  
   
      Фабрики редакторов отменяется автоматически, при удалении пакета VSPackage. Если объект фабрики редактора реализует <xref:System.IDisposable> интерфейс, его `Dispose` метод вызывается после фабрики были его регистрацию с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ ms.locfileid: "58994293"
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Чтобы зарегистрировать редактор типов файлов, с помощью скрипта реестра  
   
-1.  В скрипте реестра определить фабрику редактора и строка идентификатора GUID фабрики редактора как показано в `GUID_BscEditorFactory` части следующий скрипт реестра. Кроме того определите, расширение и приоритет расширения редактора.  
+1. В скрипте реестра определить фабрику редактора и строка идентификатора GUID фабрики редактора как показано в `GUID_BscEditorFactory` части следующий скрипт реестра. Кроме того определите, расширение и приоритет расширения редактора.  
   
     ```  
   
@@ -92,9 +92,9 @@ ms.locfileid: "58994293"
   
      Расширение редактора в этом примере определяется как «.rtf» и его приоритет равен «50». Строки GUID определяются в файле Resource.h BscEdit примера проекта.  
   
-2.  Регистрация пакета VSPackage.  
+2. Регистрация пакета VSPackage.  
   
-3.  Регистрация фабрики редактора.  
+3. Регистрация фабрики редактора.  
   
      Фабрика редакторов регистрируется в <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> реализации.  
   

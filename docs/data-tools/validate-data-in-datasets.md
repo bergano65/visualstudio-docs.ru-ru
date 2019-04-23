@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041595"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 Проверка данных представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме набора данных. Процесс проверки также подтверждает, что эти значения приведены ниже правила, которые были определены для вашего приложения. Рекомендуется проверить данные перед отправкой обновлений в основную базу данных. Это уменьшает ошибки, а также потенциальное количество циклов обработки между приложением и базе данных.
@@ -38,18 +38,18 @@ ms.locfileid: "55945811"
 ## <a name="validate-data"></a>Проверка данных
  Проверка в наборе данных выполняется следующим образом:
 
--   Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения. Дополнительные сведения см. в разделе [как: проверка данных в ходе изменения столбцов](validate-data-in-datasets.md).
+- Путем создания собственных проверок конкретного приложения, можно проверить значения в отдельных столбцах во время изменения. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения столбцов](validate-data-in-datasets.md).
 
--   Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [как: проверка данных в ходе изменения строк](validate-data-in-datasets.md).
+- Путем создания собственных проверок конкретного приложения, которые могут проверять данные значений при данных целиком изменении строки. Дополнительные сведения см. в разделе [Как Проверка данных в ходе изменения строк](validate-data-in-datasets.md).
 
--   Как часть определения действительной схемы набора данных, создав ключи, ограничения уникальности, и т. д.
+- Как часть определения действительной схемы набора данных, создав ключи, ограничения уникальности, и т. д.
 
--   Задав свойства <xref:System.Data.DataColumn> объекта, такие как <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, и <xref:System.Data.DataColumn.Unique%2A>.
+- Задав свойства <xref:System.Data.DataColumn> объекта, такие как <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, и <xref:System.Data.DataColumn.Unique%2A>.
 
 Несколько событий, вызываемых <xref:System.Data.DataTable> объекта при внесении изменений в записи:
 
--   <xref:System.Data.DataTable.ColumnChanging> И <xref:System.Data.DataTable.ColumnChanged> события вызываются во время и после каждого изменения отдельных столбцов. <xref:System.Data.DataTable.ColumnChanging> Событие полезно, если вы хотите проверить изменения в отдельных столбцах. Сведения о предлагаемом изменении передается как аргумент с событием.
--   <xref:System.Data.DataTable.RowChanging> И <xref:System.Data.DataTable.RowChanged> события вызываются во время и после любых изменений в строке. <xref:System.Data.DataTable.RowChanging> Событие является более общим. Он указывает, где происходит изменение в строке, что вы не знаете, какой столбец был изменен.
+- <xref:System.Data.DataTable.ColumnChanging> И <xref:System.Data.DataTable.ColumnChanged> события вызываются во время и после каждого изменения отдельных столбцов. <xref:System.Data.DataTable.ColumnChanging> Событие полезно, если вы хотите проверить изменения в отдельных столбцах. Сведения о предлагаемом изменении передается как аргумент с событием.
+- <xref:System.Data.DataTable.RowChanging> И <xref:System.Data.DataTable.RowChanged> события вызываются во время и после любых изменений в строке. <xref:System.Data.DataTable.RowChanging> Событие является более общим. Он указывает, где происходит изменение в строке, что вы не знаете, какой столбец был изменен.
 
 По умолчанию каждое изменение столбцом инициирует четыре события. Во-первых, <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> события для конкретного столбца, которое необходимо изменить. Далее идут <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> события. Если несколько изменения вносятся в строку, событий возникает для каждого изменения.
 
@@ -84,11 +84,11 @@ ms.locfileid: "55945811"
 
 Можно проверять данные при изменении значения в столбце данных, отвечая на <xref:System.Data.DataTable.ColumnChanging> событий. При возникновении это событие передает аргумент события (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), содержащий значение, предлагаемых для текущего столбца. На основе содержимого из `e.ProposedValue`, вы можете:
 
--   Примите предложенное значение, ничего делать не требуется.
+- Примите предложенное значение, ничего делать не требуется.
 
--   Отклонить предложенное значение, задав ошибку столбца (<xref:System.Data.DataRow.SetColumnError%2A>) из обработчика событий изменения столбца.
+- Отклонить предложенное значение, задав ошибку столбца (<xref:System.Data.DataRow.SetColumnError%2A>) из обработчика событий изменения столбца.
 
--   При необходимости использовать <xref:System.Windows.Forms.ErrorProvider> управления для отображения сообщения об ошибке для пользователя. Дополнительную информацию см. в разделе [Компонент ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+- При необходимости использовать <xref:System.Windows.Forms.ErrorProvider> управления для отображения сообщения об ошибке для пользователя. Дополнительную информацию см. в разделе [Компонент ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Также можно выполнить проверку во время <xref:System.Data.DataTable.RowChanging> событий.
 
@@ -97,9 +97,9 @@ ms.locfileid: "55945811"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Проверка данных при изменении строки изменяется (Visual Basic)
 
-1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.
+2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.
 
     > [!TIP]
     >  Дважды щелкните слева от имени таблицы, чтобы создать обработчик событий изменения строки. Если дважды щелкнуть имя таблицы, его можно изменить.
@@ -108,14 +108,14 @@ ms.locfileid: "55945811"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Проверка данных при изменении строки (C#)
 
-1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание набора данных в конструкторе наборов данных](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.
+2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.
 
     > [!NOTE]
     >  **Конструктор наборов данных** не создает автоматически обработчик событий для <xref:System.Data.DataTable.RowChanging> событий. Необходимо создать метод для обработки <xref:System.Data.DataTable.RowChanging> событие, а также выполнения код, чтобы подключить событие в методе инициализации таблицы.
 
-3.  Скопируйте следующий код в разделяемый класс:
+3. Скопируйте следующий код в разделяемый класс:
 
     ```csharp
     public override void EndInit()
@@ -149,7 +149,7 @@ ms.locfileid: "55945811"
 
 ### <a name="to-get-all-changed-records-from-a-dataset"></a>Чтобы получить все измененные записи из набора данных
 
--   Вызовите <xref:System.Data.DataSet.GetChanges%2A> метод набора данных.
+- Вызовите <xref:System.Data.DataSet.GetChanges%2A> метод набора данных.
 
      В следующем примере создается новый набор данных с именем `changedRecords` и заполняет все измененные записи из другой набор данных с именем `dataSet1`.
 
@@ -158,7 +158,7 @@ ms.locfileid: "55945811"
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>Чтобы получить все измененные записи из таблицы данных
 
--   Вызовите <xref:System.Data.DataTable.GetChanges%2A> метод объекта DataTable.
+- Вызовите <xref:System.Data.DataTable.GetChanges%2A> метод объекта DataTable.
 
      В следующем примере создается новая таблица данных с именем `changedRecordsTable` и заполняет все измененные записи из другой таблицы данных с именем `dataTable1`.
 
@@ -167,7 +167,7 @@ ms.locfileid: "55945811"
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Чтобы получить все записи, имеющие определенное состояние строки
 
--   Вызовите `GetChanges` метод из набора данных или таблицы данных и передайте <xref:System.Data.DataRowState> значение перечисления в качестве аргумента.
+- Вызовите `GetChanges` метод из набора данных или таблицы данных и передайте <xref:System.Data.DataRowState> значение перечисления в качестве аргумента.
 
      В следующем примере показано, как создать новый набор данных с именем `addedRecords` и заполнить ее только записи, которые были добавлены `dataSet1` набора данных.
 
@@ -189,7 +189,7 @@ ms.locfileid: "55945811"
 
 ### <a name="to-get-the-original-version-of-a-record"></a>Чтобы просмотреть его исходную версию записи
 
--   Доступ к значению столбца, передав <xref:System.Data.DataRowVersion> строки, который необходимо вернуть.
+- Доступ к значению столбца, передав <xref:System.Data.DataRowVersion> строки, который необходимо вернуть.
 
      В следующем примере показано, как использовать <xref:System.Data.DataRowVersion> значение, чтобы получить исходное значение `CompanyName` в <xref:System.Data.DataRow>:
 
@@ -200,7 +200,7 @@ ms.locfileid: "55945811"
 
 ### <a name="to-get-the-current-version-of-a-record"></a>Для получения текущей версии записи
 
--   Доступ к значению столбца, а затем добавьте параметр к индексу, который указывает, какая версия строки необходимо вернуть.
+- Доступ к значению столбца, а затем добавьте параметр к индексу, который указывает, какая версия строки необходимо вернуть.
 
      В следующем примере показано, как использовать <xref:System.Data.DataRowVersion> значение, чтобы получить текущее значение `CompanyName` в <xref:System.Data.DataRow>:
 
@@ -210,5 +210,5 @@ ms.locfileid: "55945811"
 ## <a name="see-also"></a>См. также
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Практическое руководство. Проверка данных элемента управления DataGridView в Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Практическое руководство. Отображение значков ошибок при проверке введенных в форму данных с помощью компонента ErrorProvider в Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Практическое руководство. Проверка данных в элементе управления Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Практическое руководство. Отображение значков ошибок для проверки формы с помощью компонента Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

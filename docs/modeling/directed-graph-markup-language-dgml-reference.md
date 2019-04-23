@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c18c9537358cd40d574bed47e9a7d357ee3dacb7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040231"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 
@@ -23,7 +23,7 @@ ms.locfileid: "55955210"
 > [!NOTE]
 > При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [цвета классе](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-##  <a name="DGML"></a> Синтаксис DGML
+## <a name="DGML"></a> Синтаксис DGML
 
 В следующей таблице описаны виды элементов, используемых в языке DGML.
 
@@ -37,7 +37,7 @@ ms.locfileid: "55955210"
 
    `BackgroundImage` — местоположение файла изображения, используемого в качестве фона карты.
 
-   `GraphDirection` — если для карты выбрана древовидная структура (`Sugiyama`), расположите узлы таким образом, чтобы большинство ссылок было упорядочены в определенном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight` или `RightToLeft`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` — если для карты выбрана древовидная структура (`Sugiyama`), расположите узлы таким образом, чтобы большинство ссылок было упорядочены в определенном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight` или `RightToLeft`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    `Layout` — организует карту в одну из следующих структур: `None`, `Sugiyama` (древовидная структура), `ForceDirected` (быстрые кластеры) или `DependencyMatrix`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
@@ -300,7 +300,7 @@ ms.locfileid: "55955210"
   </DirectedGraph>
   ```
 
-###  <a name="AddAlias"></a> Псевдонимы для часто используемых путей
+### <a name="AddAlias"></a> Псевдонимы для часто используемых путей
 
 Замена часто используемых путей псевдонимами уменьшает размер DGML-файла и время, требуемое на загрузку или сохранение файла. Для создания псевдонима добавьте раздел `<Paths></Paths>` в конце DGML-файла. В этом разделе добавьте элемент `<Path/>` для того, чтобы определить псевдоним для пути.
 
