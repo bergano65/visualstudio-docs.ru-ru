@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089377"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Обновление и перенос решений Office
   Если проект Microsoft Office был создан в более ранней версии Visual Studio, его необходимо обновить для использования в текущей версии Visual Studio. Чтобы обновить проект Microsoft Office, откройте его в версии Visual Studio, имеющей в своем составе инструменты разработчика Microsoft Office. Дополнительные сведения о версиях Visual Studio, которые включают установку средств разработчика Microsoft Office, см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635713"
 ## <a name="changes-to-upgraded-projects"></a>Изменения в обновленных проектах
  При обновлении проекта Microsoft Office среда Visual Studio вносит изменения в проект, чтобы обеспечить ориентацию на следующие элементы:
 
--   Visual Studio 2010 Tools для Office runtime. Дополнительные сведения см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Visual Studio 2010 Tools для Office runtime. Дополнительные сведения см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Ссылки текущей сборки.
+- Ссылки текущей сборки.
 
--   Версия платформы .NET Framework, поддерживаемая типом проекта (только при обновлении до Visual Studio 2013).
+- Версия платформы .NET Framework, поддерживаемая типом проекта (только при обновлении до Visual Studio 2013).
 
--   Версия Microsoft Office, поддерживаемая типом проекта (только при обновлении до Visual Studio 2013).
+- Версия Microsoft Office, поддерживаемая типом проекта (только при обновлении до Visual Studio 2013).
 
 ## <a name="assembly-references"></a>Ссылки на сборки
  Visual Studio обновляет следующие ссылки на сборки в проекте:
 
--   Основные сборки взаимодействия Microsoft Office (PIA).
+- Основные сборки взаимодействия Microsoft Office (PIA).
 
--   Сборки в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Дополнительные сведения об этих сборках см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Сборки в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Дополнительные сведения об этих сборках см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Новые или обновленные версии зависимых сборок.
+- Новые или обновленные версии зависимых сборок.
 
 ## <a name="targeted-net-framework"></a>Версия .NET Framework, на которую производится ориентация
  При обновлении проекта до Visual Studio 2013 среда Visual Studio вносит изменения в проект, чтобы ориентироваться на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] или [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Версия платформы .NET Framework, на которую производится ориентация проекта, зависит от того, какая версия Office установлена на компьютере. Если установлена [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , Visual Studio ориентирует проект на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. В противном случае Visual Studio ориентирует проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

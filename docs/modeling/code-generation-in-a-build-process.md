@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117100"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324329"
 
 Это означает, что вы не может получить доступ к таких вещей, как имена файлов проекта таким же образом при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).
 
-##  <a name="buildserver"></a> Настройка компьютеров
+## <a name="buildserver"></a> Настройка компьютеров
 
 Чтобы включить задачи сборки на компьютере разработчика, установите пакет SDK моделирования для Visual Studio.
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Передача данных контекста сборки в шаблоны
+## <a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать [построения](../msbuild/msbuild-properties.md) свойства и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` получает данные из `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры будут иметь значения по умолчанию.
 
-##  <a name="msbuild"></a> Использование свойств проекта в сборки и директивы #include
+## <a name="msbuild"></a> Использование свойств проекта в сборки и директивы #include
 
 Макросы Visual Studio, такие как **$(SolutionDir)** не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 

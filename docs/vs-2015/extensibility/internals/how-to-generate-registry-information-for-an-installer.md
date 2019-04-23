@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117737"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое руководство. Создание сведений реестра для установщика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59002659"
   
 ### <a name="to-create-a-registration-manifest"></a>Создание регистрации манифеста  
   
--   Запустите RegPkg с **/regfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.  
+- Запустите RegPkg с **/regfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.  
   
      Например в командной строке, вы бы ввести примерно следующим образом:  
   
@@ -39,7 +39,7 @@ ms.locfileid: "59002659"
   
 ### <a name="to-view-a-registration-manifest"></a>Чтобы просмотреть манифест регистрации  
   
--   Откройте манифест регистрации в любом текстовом редакторе.  
+- Откройте манифест регистрации в любом текстовом редакторе.  
   
      Следующий пример — манифест регистрации, RegPkg создает для службы языка IronPython:  
   
@@ -100,7 +100,7 @@ ms.locfileid: "59002659"
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Для создания Windows Installer XML Toolset включаемый файл  
   
--   Запустите RegPkg с **/wixfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.  
+- Запустите RegPkg с **/wixfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.  
   
      Например в командной строке, вы бы ввести примерно следующим образом:  
   
@@ -110,7 +110,7 @@ ms.locfileid: "59002659"
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Чтобы просмотреть Windows Installer XML Toolset включаемый файл  
   
--   Откройте Windows Installer XML Toolset включить файл в любом текстовом редакторе.  
+- Откройте Windows Installer XML Toolset включить файл в любом текстовом редакторе.  
   
      Следующий пример является включения файла, который создает RegPkg для службы языка IronPython:  
   

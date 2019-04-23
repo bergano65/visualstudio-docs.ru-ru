@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090033"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Варианты 0x/2x/4x MSAA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "58992439"
   
 - Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает целевой объект отрисовки, то есть:  
   
-  -   Для члена BindFlags установлен флаг D3D11_BIND_TARGET или D3D11_BIND_DEPTH_STENCIL.  
+  - Для члена BindFlags установлен флаг D3D11_BIND_TARGET или D3D11_BIND_DEPTH_STENCIL.  
   
-  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
+  - Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
   
-  -   Член CPUAccessFlags имеет значение 0.  
+  - Член CPUAccessFlags имеет значение 0.  
   
-  -   Член MipLevels имеет значение 1.  
+  - Член MipLevels имеет значение 1.  
   
 - Устройство поддерживает запрошенное число образцов (0, 2 или 4) и качество образцов (0) для запрошенного формата целевого объекта отрисовки (член D3D11_TEXTURE2D_DESC::Format), что определяется флагом `ID3D11Device::CheckMultisampleQualityLevels`.  
   

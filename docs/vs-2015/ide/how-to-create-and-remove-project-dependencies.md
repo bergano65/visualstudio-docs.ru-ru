@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117633"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Практическое руководство. Создание и удаление зависимостей проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ ms.locfileid: "54799776"
   
 ### <a name="to-remove-dependencies-from-projects"></a>Удаление зависимостей проектов  
   
-1.  Выберите проект в Обозревателе решений.  
+1. Выберите проект в Обозревателе решений.  
   
-2.  В меню **Проект** выберите пункт **Зависимости проектов**.  
+2. В меню **Проект** выберите пункт **Зависимости проектов**.  
   
      Открывается диалоговое окно **Зависимости проектов**.  
   
     > [!NOTE]
     >  Параметр **Зависимости проектов** доступен только в решении с несколькими проектами.  
   
-3.  На вкладке **Зависимости** выберите проект из раскрывающегося меню **Проект**.  
+3. На вкладке **Зависимости** выберите проект из раскрывающегося меню **Проект**.  
   
-4.  В поле **Зависит от** снимите флажки для тех проектов, которые более не являются зависимостями данного проекта.  
+4. В поле **Зависит от** снимите флажки для тех проектов, которые более не являются зависимостями данного проекта.  
   
 ## <a name="see-also"></a>См. также раздел  
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  

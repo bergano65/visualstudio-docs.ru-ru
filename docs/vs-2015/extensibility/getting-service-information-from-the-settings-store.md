@@ -8,12 +8,12 @@ ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f180642cf40c28bafcaf16eb68c36fc157914f11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfe754203ae9b4e951de5beef8cd829f9d7716bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116658"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Получение сведений о службе из хранилища параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "58989871"
   
 ### <a name="to-list-the-available-services"></a>Чтобы получить список доступных служб  
   
-1.  Создайте проект VSIX с именем FindServicesExtension, а затем добавьте пользовательскую команду с именем FindServicesCommand. Дополнительные сведения о том, как создать настраиваемую команду см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Создайте проект VSIX с именем FindServicesExtension, а затем добавьте пользовательскую команду с именем FindServicesCommand. Дополнительные сведения о том, как создать настраиваемую команду см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  В FindServicesCommand.cs, добавьте следующие операторы using:  
+2. В FindServicesCommand.cs, добавьте следующие операторы using:  
   
     ```vb  
     using System.Collections.Generic;  
@@ -33,7 +33,7 @@ ms.locfileid: "58989871"
     using System.Windows.Forms;  
     ```  
   
-3.  Получите хранилище параметров конфигурации, а затем найдите вложенную коллекцию, с именем службы. Эта коллекция содержит все доступные службы. В методе MenuItemCommand удалите существующий код и замените его следующим кодом:  
+3. Получите хранилище параметров конфигурации, а затем найдите вложенную коллекцию, с именем службы. Эта коллекция содержит все доступные службы. В методе MenuItemCommand удалите существующий код и замените его следующим кодом:  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -52,9 +52,9 @@ ms.locfileid: "58989871"
     }  
     ```  
   
-4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-5.  В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
+5. В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
   
      Вы должны увидеть окно сообщения со списком всех служб.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "58989871"
 ## <a name="finding-a-specific-service"></a>Поиск определенной службы  
  Можно также использовать <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> метод, чтобы определить, установлена ли определенная служба. Необходимо знать тип класса службы.  
   
-1.  В MenuItemCallback проекта, созданного в предыдущей процедуре, найдите в магазине параметры конфигурации `Services` коллекции, которая содержит вложенную коллекцию, с именем, идентификатор GUID службы. В этом случае мы будем искать службу справки.  
+1. В MenuItemCallback проекта, созданного в предыдущей процедуре, найдите в магазине параметры конфигурации `Services` коллекции, которая содержит вложенную коллекцию, с именем, идентификатор GUID службы. В этом случае мы будем искать службу справки.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -78,8 +78,8 @@ ms.locfileid: "58989871"
     }  
     ```  
   
-2.  Выполните сборку решения и запустите отладку.  
+2. Выполните сборку решения и запустите отладку.  
   
-3.  В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
+3. В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
   
      Вы увидите сообщение с текстом **помочь доступные службы:** следуют **True** или **False**. Чтобы проверить этот параметр, можно использовать редактор реестра, как показано в предыдущих шагах.

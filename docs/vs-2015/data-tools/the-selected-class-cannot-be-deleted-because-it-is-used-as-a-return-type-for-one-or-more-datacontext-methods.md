@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02454e308a97f043caa6e85e1c4308c2d2a2402e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8eb5f93ef3770b0d275d71d818e44d52a067f83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094688"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Выбранный класс невозможно удалить, потому что он используется как возвращаемый тип одного или нескольких методов DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "59649047"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1.  Определить <xref:System.Data.Linq.DataContext> методы, которые используются класс сущностей в качестве возвращаемого типа, выбрав <xref:System.Data.Linq.DataContext> метод в методах области, а также проверять **тип возвращаемого значения** свойство в **свойства** окно .  
+1. Определить <xref:System.Data.Linq.DataContext> методы, которые используются класс сущностей в качестве возвращаемого типа, выбрав <xref:System.Data.Linq.DataContext> метод в методах области, а также проверять **тип возвращаемого значения** свойство в **свойства** окно .  
   
-2.  Установите **Тип возврата<xref:System.Data.Linq.DataContext> на другой класс сущностей или удалите метод**  из области методов.  
+2. Установите **Тип возврата<xref:System.Data.Linq.DataContext> на другой класс сущностей или удалите метод**  из области методов.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

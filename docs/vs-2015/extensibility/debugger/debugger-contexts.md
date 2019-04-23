@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116242"
 ---
 # <a name="debugger-contexts"></a>Контексты отладчика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладки, отладчик (DE) работает одновременно в нескольких разных контекстах, следующим образом:  
   
--   Контекст кода, который описывает текущее расположение в потоке выполнения программы.  
+- Контекст кода, который описывает текущее расположение в потоке выполнения программы.  
   
--   Документация по контекста или позиции, описывающий текущую позицию внутри документа с исходным.  
+- Документация по контекста или позиции, описывающий текущую позицию внутри документа с исходным.  
   
--   Контекст вычисления выражения, который описывает контекст, в вычисление какого выражения вычислений будет иметь место.  
+- Контекст вычисления выражения, который описывает контекст, в вычисление какого выражения вычислений будет иметь место.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Контекст кода](../../extensibility/debugger/code-context.md)  

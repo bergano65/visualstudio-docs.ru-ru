@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание простейшего шейдера цвета | Документация Майкрософт
+title: Практическое руководство. Создание простейшего шейдера цвета | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117763"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Практическое руководство. Создание простейшего шейдера цвета
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54774118"
   
  В этом документе описаны следующие действия.  
   
--   Удаление узлов из графа  
+- Удаление узлов из графа  
   
--   Добавление узлов в граф  
+- Добавление узлов в граф  
   
--   Задание свойств узла  
+- Задание свойств узла  
   
--   Соединение узлов  
+- Соединение узлов  
   
 ## <a name="creating-a-flat-color-shader"></a>Создание шейдера с простым цветом  
  Шейдер с простым цветом можно реализовать, записав значение константы цвета RGB в окончательный выходной цвет.  
@@ -57,7 +57,7 @@ ms.locfileid: "54774118"
   
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
