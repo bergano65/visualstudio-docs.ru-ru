@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3ebe13e2ffff64998638d2af39d6959fa1f2f20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb1b6d865063486aec91c6e3393a942b7ad4a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109274"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Ошибка: Смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework 2.0 или выше
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58993740"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Обновите [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] до версии 2.0, 3.0, 3.5 или 4.  
+- Обновите [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] до версии 2.0, 3.0, 3.5 или 4.  
   
 ## <a name="see-also"></a>См. также  
  [Настройка инструментов удаленной отладки в устройстве](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

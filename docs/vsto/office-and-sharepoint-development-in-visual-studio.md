@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112394"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка решений Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.
 
  В этом разделе.
 
--   [Создание надстроек для Office и SharePoint](#Apps)
+- [Создание надстроек для Office и SharePoint](#Apps)
 
--   [Создание надстройки VSTO](#Add-ins)
+- [Создание надстройки VSTO](#Add-ins)
 
--   [Создание решения SharePoint](#Solutions)
+- [Создание решения SharePoint](#Solutions)
 
-##  <a name="Apps"></a> Создание надстроек для Office и SharePoint
+## <a name="Apps"></a> Создание надстроек для Office и SharePoint
  В Office 2013 и SharePoint 2013 появилась новая модель надстроек, которая помогает создавать, распространять и продавать надстройки, расширяющие возможности Office и SharePoint.  Эти надстройки могут выполняться в Office или SharePoint Online, и пользователи могут работать с ними на разных устройствах.
 
  Узнайте, как использовать новый [модель надстроек Office](/office/dev/add-ins/overview/office-add-ins) для расширения возможностей Office для пользователей.
@@ -81,7 +81,7 @@ ms.locfileid: "56607061"
 |Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстроек SharePoint и решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> Создание надстройки VSTO
+## <a name="Add-ins"></a> Создание надстройки VSTO
  Создание надстройки VSTO для Office 2007 или Office 2010, или для расширения Office 2013 и Office 2016, недоступные в надстройках Office. Надстройки VSTO выполняются только на настольных компьютерах. Пользователям нужно устанавливать надстройки VSTO, поэтому они обычно сложнее в развертывании и поддержке.  Однако надстройку VSTO можно теснее интегрировать с Office. Например, она может добавлять вкладки и элементы управления на ленту Office и выполнять расширенные задачи автоматизации, такие как слияние документов или изменение диаграмм. Вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами Office.
 
  Ниже приведен пример, какие надстройки VSTO можно сделать. Эта надстройка VSTO добавляет элементы управления ленты, настраиваемую область задач и диалоговое окно в PowerPoint.
@@ -95,7 +95,7 @@ ms.locfileid: "56607061"
 |Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Создание надстройки VSTO.|[Создание настройки VSTO с помощью Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> Создание решения SharePoint
+## <a name="Solutions"></a> Создание решения SharePoint
  Создайте решение SharePoint для работы с SharePoint Foundation 2010 и SharePoint Server 2010 или реализующее SharePoint 2013 и SharePoint 2016 в за рамки возможностей с помощью надстройки SharePoint.
 
  Для решений SharePoint требуется локальная ферма серверов SharePoint. Администраторы должны устанавливать их, а так как решения выполняются в SharePoint, они могут повлиять на производительность сервера. Однако решения обеспечивают более широкий доступ к объектам SharePoint. Кроме того, при создании решения SharePoint вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами SharePoint.

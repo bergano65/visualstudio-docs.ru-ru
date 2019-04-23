@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109534"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ ms.locfileid: "58980930"
       </system.web>
   
     ```
+
 1. Откройте **Диспетчер служб IIS** и перейдите к разделу **Сайты**.
 1. Щелкните правой кнопкой мыши узел **Веб-сайт по умолчанию** и выберите команду **Добавить приложение**.
 1. Задайте **псевдоним** поле **MyMVC** и поле пула приложения **ASP.NET v4.0** (ASP.NET 4.5 не допускаются для пула приложений). В поле **Физический путь** укажите значение **C:\Publish** (это каталог, в который вы скопировали каталог проекта ASP.NET).

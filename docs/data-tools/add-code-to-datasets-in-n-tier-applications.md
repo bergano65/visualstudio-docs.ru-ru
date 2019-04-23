@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111692"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 Можно расширить функциональные возможности набора данных путем создания файла разделяемого класса для набора данных и добавления к нему кода (вместо добавления кода к *DatasetName*. Файл Dataset.Designer). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ ms.locfileid: "55928781"
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n уровневых приложениях
 
-1.  Найдите проект, содержащий *.xsd* файл.
+1. Найдите проект, содержащий *.xsd* файл.
 
-2.  Выберите **.xsd** файл, чтобы открыть набор данных.
+2. Выберите **.xsd** файл, чтобы открыть набор данных.
 
-3.  Щелкните правой кнопкой мыши таблицу данных, к которому требуется добавить код (имя таблицы в строке заголовка), а затем выберите **Просмотр кода**.
+3. Щелкните правой кнопкой мыши таблицу данных, к которому требуется добавить код (имя таблицы в строке заголовка), а затем выберите **Просмотр кода**.
 
      Разделяемый класс создается и открывается в редакторе кода.
 
-4.  Добавьте код в объявление разделяемого класса.
+4. Добавьте код в объявление разделяемого класса.
 
      В следующем примере показано место добавления кода к CustomersDataTable в NorthwindDataSet:
 
@@ -53,6 +53,7 @@ ms.locfileid: "55928781"
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

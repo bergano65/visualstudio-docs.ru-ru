@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9de8ea0a42d80adca560655c5f70c5dba84e015d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 77fc67d50d448ef58714f4c6a8a137c86d7f9d66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112316"
 ---
 # <a name="drop-down-bar"></a>Раскрывающийся список
 В строке раскрывающегося списка предоставляется в верхней части окна кода и два раскрывающихся списков.
@@ -27,19 +27,19 @@ ms.locfileid: "56700046"
 
  При реализации раскрывающуюся панель, существует четыре интерфейса роль:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
 
      Реализация этого интерфейса позволяет вставить в него содержимое раскрывающейся панелью. Каждой комбинации раскрывающегося списка может содержать обычный текст или затейливого текста (полужирный шрифт, курсив или подчеркнутый), может иметь цвет шрифта текста окна или серым шрифта выделение цветом и при необходимости можно указать небольшое растровое изображение рядом с элементом раскрывающегося списка. Аналогичную <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> интерфейс, растровые изображения предоставляются в списках изображений. Каждое сочетание раскрывающегося списка может иметь другой образ из списка; Тем не менее каждый образ список должен содержать образы имеют одинаковую высоту. Кроме того, с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> метод, можно предоставить подсказки для каждого сочетания.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
 
      Вызовите этот интерфейс, чтобы создать или уничтожить раскрывающейся панелью для окна кода. Этот интерфейс может также использоваться для определения, раскрывающейся панелью уже добавлен ли в окне кода, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> метод. Вызовите <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
 
      Вызовите этот интерфейс для взаимодействия непосредственно с раскрывающейся панелью. Этот интерфейс можно использовать для принудительного обновления в раскрывающемся списке панели содержимого, или чтобы изменить выбор в одном из списков.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
 
      Если вы зарегистрировали `ShowDropdownBarOption` в свой ключ реестра службы языка, затем в диспетчер окон кода необходимо отслеживать это событие для синхронизации со предпочтениям пользователя относительно отображение раскрывающейся панелью. Если этот параметр не зарегистрирован в ваш ключ службы языка, то этот параметр для отображения или скрытия раскрывающейся панелью отключен на **параметры** меню.
 

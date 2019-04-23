@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f57b21117f5fd5a4ff7c0403afe9cdbd63ec342
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f771fec52024fb7d1e4c000d374f08929d453917
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112651"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
 
@@ -40,12 +40,12 @@ ms.locfileid: "55950452"
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Для вызова EndEdit для всех компонентов BindingSource в форме
 
-1.  Добавьте следующий код в форму, которая содержит <xref:System.Windows.Forms.BindingSource> компонентов.
+1. Добавьте следующий код в форму, которая содержит <xref:System.Windows.Forms.BindingSource> компонентов.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  Добавьте следующую строку кода непосредственно перед любыми вызовами, чтобы сохранить данные формы ( `TableAdapterManager.UpdateAll()` метод):
+2. Добавьте следующую строку кода непосредственно перед любыми вызовами, чтобы сохранить данные формы ( `TableAdapterManager.UpdateAll()` метод):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]

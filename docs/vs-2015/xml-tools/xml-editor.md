@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112179"
 ---
 # <a name="xml-editor"></a>XML-редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "59665588"
 ## <a name="express-editions"></a>Версии Express Edition  
  Следующие возможности редактора XML недоступны в версиях Visual Studio Express Edition.  
   
--   Создание XML-схемы из экземпляра XML-документа.  
+- Создание XML-схемы из экземпляра XML-документа.  
   
--   Просмотр вывода XSLT с помощью XML Editor.  
+- Просмотр вывода XSLT с помощью XML Editor.  
   
--   Автоматическая проверка правильности во время редактирования таблиц стилей XSLT.  
+- Автоматическая проверка правильности во время редактирования таблиц стилей XSLT.  
   
--   Обозреватель XML-схем.  
+- Обозреватель XML-схем.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Проверка XML-документа](../xml-tools/xml-document-validation.md)  

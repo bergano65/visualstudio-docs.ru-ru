@@ -8,18 +8,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83ab203b8d03202dd905e1472c747ccc6fc0027e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d431227d53c14f72dea9641948fdfc197e04b8bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110834"
 ---
 # <a name="image-service-tools"></a>Средства службы образов
 VS SDK включает в себя несколько средств для расширения построители использовать служба образов в Visual Studio.
 
--   [Манифест из ресурсов](../../extensibility/internals/manifest-from-resources.md) инструмент принимает список ресурсов изображений (PNG- или .xaml-файлы) и создает файл манифеста изображения.
+- [Манифест из ресурсов](../../extensibility/internals/manifest-from-resources.md) инструмент принимает список ресурсов изображений (PNG- или .xaml-файлы) и создает файл манифеста изображения.
 
--   [Манифест в код](../../extensibility/internals/manifest-to-code.md) инструмент принимает файл манифеста изображения и создает файл программы-оболочки для использования в файлах C++, C#, VB или .vsct.
+- [Манифест в код](../../extensibility/internals/manifest-to-code.md) инструмент принимает файл манифеста изображения и создает файл программы-оболочки для использования в файлах C++, C#, VB или .vsct.
 
--   [Средство просмотра библиотеки изображений](../../extensibility/internals/image-library-viewer.md) можно загружать, редактировать и поиска манифестов изображений.
+- [Средство просмотра библиотеки изображений](../../extensibility/internals/image-library-viewer.md) можно загружать, редактировать и поиска манифестов изображений.

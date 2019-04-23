@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109469"
 ---
 # <a name="source-control-configuration-details"></a>Сведения о конфигурации системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Чтобы реализовать систему управления версиями, необходимо правильно настроить систему проектов или редактор, выполнив следующие действия:  
   
--   Запрашивать разрешение на переход на измененное состояние  
+- Запрашивать разрешение на переход на измененное состояние  
   
--   Запрашивать разрешение на сохранение файла  
+- Запрашивать разрешение на сохранение файла  
   
--   Запрашивать разрешение на добавление, удаление или переименование файлов в проекте  
+- Запрашивать разрешение на добавление, удаление или переименование файлов в проекте  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Запрашивать разрешение на переход на измененное состояние  
  Проект или редактора необходимо запрашивать разрешение на переход на измененное состояние ("грязный"), вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Каждый редактор, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> и получать утверждения для изменения документа из среды перед возвратом `True` для `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Проект — это редактор, для файла проекта и таким образом, несет же ответственность за реализацию отслеживания изменения состояния для файла проекта, как в текстовом редакторе, так и для ее файлов. Эти задачи выполняет среда измененное состояние решения, но необходимо обрабатывать измененное состояние любого объекта, ссылается на решение, но не хранит, таких как файл проекта или его элементов. Как правило если проект или редактор отвечает за управление сохраняемости для элемента, затем он отвечает за реализацию отслеживания изменения состояния.  

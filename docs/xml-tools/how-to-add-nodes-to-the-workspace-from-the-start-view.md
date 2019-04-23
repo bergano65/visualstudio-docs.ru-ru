@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111666"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Практическое руководство. Добавление узлов в рабочую область из начального представления
 
@@ -21,14 +21,14 @@ ms.locfileid: "57526403"
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Добавление узлов в рабочую область из начального представления
 
-1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Щелкните правой кнопкой мыши в редакторе XML и выберите **конструктор представлений**.
+2. Щелкните правой кнопкой мыши в редакторе XML и выберите **конструктор представлений**.
 
      Откроется начальное представление.
 
      В **сведения о наборе схем** разделе, обратите внимание на то, что существует два (**2**) **глобальные сложные типы**.
 
-3.  Щелкните **добавить** ссылку справа от **глобальные сложные типы** заголовок.
+3. Щелкните **добавить** ссылку справа от **глобальные сложные типы** заголовок.
 
      Узел `USAddress` и узлы сложного типа `PurchaseOrderType` будут отображены в области конструктора в представлении графиков.
