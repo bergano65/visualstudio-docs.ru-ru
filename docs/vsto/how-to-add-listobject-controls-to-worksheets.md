@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bfbdb2605f4db86afe3f8f2195a004ab1eea775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084093"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления ListObject на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в проектах уровня документа.
@@ -37,51 +37,51 @@ ms.locfileid: "56597456"
 
   Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления, см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
-##  <a name="designtime"></a> Добавление элементов управления ListObject во время разработки
+## <a name="designtime"></a> Добавление элементов управления ListObject во время разработки
  Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки: Из Excel, из Visual Studio **элементов**и из **источников данных** окна.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-use-the-ribbon-in-excel"></a>Использование ленты в Excel
 
-1.  На вкладке **Вставка** в группе **Таблицы** щелкните элемент **Таблица**.
+1. На вкладке **Вставка** в группе **Таблицы** щелкните элемент **Таблица**.
 
-2.  Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.
+2. Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.
 
 #### <a name="to-use-the-toolbox"></a>Использование панели элементов
 
-1.  Из вкладки **Элементы управления Excel** на **панели элементов**перетащите <xref:Microsoft.Office.Tools.Excel.ListObject> в лист.
+1. Из вкладки **Элементы управления Excel** на **панели элементов**перетащите <xref:Microsoft.Office.Tools.Excel.ListObject> в лист.
 
      Откроется диалоговое окно **Добавление элемента управления ListObject** .
 
-2.  Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.
+2. Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.
 
      Если вы не хотите использовать имя по умолчанию, измените его в окне **Свойства** .
 
 #### <a name="to-use-the-data-sources-window"></a>Использование окна "Источники данных".
 
-1.  Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+1. Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
-2.  Перетащите таблицу из окна **Источники данных** в лист.
+2. Перетащите таблицу из окна **Источники данных** в лист.
 
      Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится на лист. Дополнительные сведения см. в разделе [привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-##  <a name="runtimedoclevel"></a> Добавление элементов управления ListObject во время выполнения в проекте уровня документа
+## <a name="runtimedoclevel"></a> Добавление элементов управления ListObject во время выполнения в проекте уровня документа
  Вы можете добавить <xref:Microsoft.Office.Tools.Excel.ListObject> управления динамически во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. При закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
 
-1.  В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1`вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.
+1. В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1`вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-##  <a name="runtimeaddin"></a> Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
+## <a name="runtimeaddin"></a> Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. При сохранении и закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
 
-1.  Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.
+1. Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]

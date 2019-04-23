@@ -10,35 +10,35 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085526"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Языковая служба и точки расширения редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редактор предоставляет точки расширения, которые можно использовать как части Managed Extensibility Framework (MEF) компонентов, включая большинство функций службы языка. Ниже приведены категории точки основным расширением.  
   
--   Типы содержимого  
+- Типы содержимого  
   
--   Классификация типов и форматов классификации  
+- Классификация типов и форматов классификации  
   
--   Поля и полосы прокрутки  
+- Поля и полосы прокрутки  
   
--   Теги  
+- Теги  
   
--   Элементы оформления  
+- Элементы оформления  
   
--   Мыши процессоров  
+- Мыши процессоров  
   
--   Обработчики перетаскивания  
+- Обработчики перетаскивания  
   
--   Параметры  
+- Параметры  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>Расширение типов содержимого  
  Типы содержимого являются определениями типов текста, обрабатываемых редактором, например, «text», «код» или «C#». Определение нового типа содержимого путем объявления переменной типа <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> и предоставляя новый тип содержимого, уникальное имя. Чтобы зарегистрировать тип содержимого с помощью редактора, его нужно экспортируйте вместе со следующими атрибутами:  
@@ -409,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: текстовый формат, для которого действителен этот обработчик перетаскивания. Следующие форматы обрабатываются в порядке приоритета от самого высокого до самого низкого:  
   
-  1.  Любого пользовательского формата  
+  1. Любого пользовательского формата  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  Dif  
+  6. Dif  
   
-  7.  Языковой стандарт  
+  7. Языковой стандарт  
   
-  8.  Палитра  
+  8. Палитра  
   
   9. PenData  
   
@@ -507,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Реализация источника IntelliSense  
  Чтобы настроить источник, необходимо реализовать один (или несколько) из следующих интерфейсов источника:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Кроме того необходимо реализовать поставщик того же типа:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Необходимо экспортировать поставщика, а также следующие атрибуты:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя источника.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя источника.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, «text» или «code»), к которому относится источник.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, «text» или «code»), к которому относится источник.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в которой должен отображаться источника (по отношению к другим источникам).  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в которой должен отображаться источника (по отношению к другим источникам).  
   
--   В следующем примере показано атрибутов экспорта в поставщике источника завершения.  
+- В следующем примере показано атрибутов экспорта в поставщике источника завершения.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  

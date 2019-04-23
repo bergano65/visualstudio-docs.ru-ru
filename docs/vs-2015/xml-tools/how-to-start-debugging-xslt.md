@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104100"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Практическое руководство. начать отладку XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ ms.locfileid: "58989768"
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Запуск отладки из таблицы стилей  
   
-1.  Откройте таблицу стиля в XML-редакторе.  
+1. Откройте таблицу стиля в XML-редакторе.  
   
-2.  Выберите **Отладка XSL** из **XML** меню.  
+2. Выберите **Отладка XSL** из **XML** меню.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Начало отладки с входного XML-документа  
   
-1.  Откройте XML-документ в XML-редакторе.  
+1. Откройте XML-документ в XML-редакторе.  
   
-2.  Выберите **Отладка XSL** из **XML** меню.  
+2. Выберите **Отладка XSL** из **XML** меню.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT из других языков  
  При отладке приложения можно сделать шаг с входом в код XSLT. Если нажать клавишу F11 при вызове <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, отладчик может войти в код XSLT.  
@@ -44,11 +44,11 @@ ms.locfileid: "58989768"
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Начало отладки приложения XSLT  
   
-1.  При создании объекта <xref:System.Xml.Xsl.XslCompiledTransform> устанавливайте в своем коде параметр `enableDebug` в значение `true`.  
+1. При создании объекта <xref:System.Xml.Xsl.XslCompiledTransform> устанавливайте в своем коде параметр `enableDebug` в значение `true`.  
   
      Это заставляет обработчик XSLT создавать отладочные данные при компиляции кода.  
   
-2.  Нажмите клавишу F11, чтобы войти в код XSLT.  
+2. Нажмите клавишу F11, чтобы войти в код XSLT.  
   
      Таблица стилей XSLT загружается в новое окно документа и запускается XSLT-отладчик.  
   

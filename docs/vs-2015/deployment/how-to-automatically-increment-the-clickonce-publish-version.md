@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d779e364f5cbe7bc4b90e0a77ab3fb825a7b6c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab2dc62add13db9af1186a8974ffe5694a98e62e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083510"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58992451"
   
 ### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Автоматическое отключение увеличения номера версии публикации  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Перейдите на вкладку **Публикация**.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  В **версия публикации** снимите **автоматически увеличивать номер редакции при каждой редакции** "флажок".  
+3. В **версия публикации** снимите **автоматически увеличивать номер редакции при каждой редакции** "флажок".  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Установка ClickOnce версии публикации](../deployment/how-to-set-the-clickonce-publish-version.md)   

@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084886"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Элемент ProjectType (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ ms.locfileid: "58980471"
   
  Это значение указывает тип проекта, шаблон будет создан и должен содержать один из следующих значений:  
   
--   `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../includes/csprcs-md.md)] проекта или элемента.  
+- `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../includes/csprcs-md.md)] проекта или элемента.  
   
--   `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекта или элемента.  
+- `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекта или элемента.  
   
--   `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` элемент может содержать это значение, определенный на языке проекта или элемента в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` элемент может содержать это значение, определенный на языке проекта или элемента в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Примечания  
  `ProjectType` — обязательный дочерний элемент элемента `TemplateData`.  

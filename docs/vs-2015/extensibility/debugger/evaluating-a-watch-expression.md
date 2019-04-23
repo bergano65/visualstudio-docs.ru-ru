@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104360"
 ---
 # <a name="evaluating-a-watch-expression"></a>Вычисление выражения контрольных значений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58989663"
   
  В этой реализации `IDebugParsedExpression::EvaluateSync`, выражение анализируется и оценивается в то же время. Эта реализация выполняет следующие задачи:  
   
-1.  Анализирует и вычисляет выражение для создания общий объект, содержащий значение и его тип. В C# это представляется как `object` хотя в C++ это представляется как `VARIANT`.  
+1. Анализирует и вычисляет выражение для создания общий объект, содержащий значение и его тип. В C# это представляется как `object` хотя в C++ это представляется как `VARIANT`.  
   
-2.  Создает экземпляр класса (называется `CValueProperty` в этом примере), реализующий `IDebugProperty2` интерфейса и сохраняет в классе возвращаемого значения.  
+2. Создает экземпляр класса (называется `CValueProperty` в этом примере), реализующий `IDebugProperty2` интерфейса и сохраняет в классе возвращаемого значения.  
   
-3.  Возвращает `IDebugProperty2` интерфейс из `CValueProperty` объекта.  
+3. Возвращает `IDebugProperty2` интерфейс из `CValueProperty` объекта.  
   
 ## <a name="managed-code"></a>Управляемый код  
  Это реализация `IDebugParsedExpression::EvaluateSync` в управляемом коде. Вспомогательный метод `Tokenize` выполняет синтаксический анализ выражения в дерево синтаксического анализа. Вспомогательная функция `EvalToken` преобразуется в значение маркера. Вспомогательная функция `FindTerm` рекурсивно обходит дерево синтаксического анализа, вызвав `EvalToken` для каждого узла, представляющий значение и применяя любые операции (сложение или умножение) в выражении.  

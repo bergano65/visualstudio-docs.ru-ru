@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085537"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Пример реализации изменяющихся значений
 > [!IMPORTANT]
@@ -29,13 +29,13 @@ ms.locfileid: "56680533"
 
  Реализация `IDebugProperty2::SetValueAsString` выполняет следующие задачи:
 
-1.  Вычисляет выражение для получения значения.
+1. Вычисляет выражение для получения значения.
 
-2.  Привязывает связанный [IDebugField](../../extensibility/debugger/reference/idebugfield.md) его расположение в памяти и создает объект [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.
+2. Привязывает связанный [IDebugField](../../extensibility/debugger/reference/idebugfield.md) его расположение в памяти и создает объект [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.
 
-3.  Преобразует значение в последовательность байтов.
+3. Преобразует значение в последовательность байтов.
 
-4.  Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) для хранения байтов в памяти.
+4. Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) для хранения байтов в памяти.
 
 ## <a name="managed-code"></a>Управляемый код
  Следующий код представляет собой реализацию `IDebugProperty2::SetValueAsString` в управляемом коде.

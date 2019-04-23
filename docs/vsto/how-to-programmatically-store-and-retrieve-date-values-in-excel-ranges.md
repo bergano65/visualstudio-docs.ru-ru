@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e46e6259009ab583f32deae79711d6b4d0c70528
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082910"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Практическое руководство. Программным способом хранения и извлечения значений дат в диапазонах Excel
   Можно сохранять и извлекать значения в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
@@ -38,23 +38,23 @@ ms.locfileid: "56617838"
 
 ## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange
 
--   Этот пример предназначен для настроек уровня документа. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.
+- Этот пример предназначен для настроек уровня документа. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.
 
 ### <a name="to-store-a-date-value-in-a-named-range"></a>Для хранения значения даты в именованный диапазон
 
-1.  Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в ячейке **A1**.
+1. Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в ячейке **A1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
 
-2.  Задайте сегодняшнюю дату в качестве значения для `NamedRange1`.
+2. Задайте сегодняшнюю дату в качестве значения для `NamedRange1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
 
 ### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Для получения значения даты из именованного диапазона
 
-1.  Получите значение даты из `NamedRange1`.
+1. Получите значение даты из `NamedRange1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
@@ -63,19 +63,19 @@ ms.locfileid: "56617838"
 
 ### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Для хранения значения даты в собственный объект диапазона Excel
 
-1.  Создание <xref:Microsoft.Office.Interop.Excel.Range> , представляющий ячейку **A1**.
+1. Создание <xref:Microsoft.Office.Interop.Excel.Range> , представляющий ячейку **A1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
 
-2.  Задайте сегодняшнюю дату в качестве значения для `rng`.
+2. Задайте сегодняшнюю дату в качестве значения для `rng`.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]
 
 ### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Для получения значения даты из собственный объект диапазона Excel
 
-1.  Получите значение даты из `rng`.
+1. Получите значение даты из `rng`.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]

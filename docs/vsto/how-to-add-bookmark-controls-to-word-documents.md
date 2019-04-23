@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07afb43ebe34e5bbaba045bf26e83dbf51ed4bc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104529"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Практическое руководство. Добавление элементов управления Bookmark в документы Word
   В проектах уровня документа, можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементы управления в документ в проекте во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения.
@@ -38,7 +38,7 @@ ms.locfileid: "56631280"
 
   Дополнительные сведения о <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления, см. в разделе [элемент управления Bookmark](../vsto/bookmark-control.md).
 
-##  <a name="designtime"></a> Добавление элементов управления Bookmark во время разработки
+## <a name="designtime"></a> Добавление элементов управления Bookmark во время разработки
  Вы можете добавить элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ Word в проекте на уровне документа во время разработки несколькими способами.
 
 - Из **панели элементов**Visual Studio.
@@ -57,27 +57,27 @@ ms.locfileid: "56631280"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Добавление элемента управления Bookmark в документ из панели элементов
 
-1.  Откройте **панель элементов** и щелкните вкладку **Элементы управления Word** .
+1. Откройте **панель элементов** и щелкните вкладку **Элементы управления Word** .
 
-2.  Перетащите элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ.
+2. Перетащите элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ.
 
      Отображается диалоговое окно **Добавление закладки** .
 
-3.  Выберите текст или другие элементы, которые необходимо включить в закладку.
+3. Выберите текст или другие элементы, которые необходимо включить в закладку.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
      Если вы не хотите использовать имя закладки по умолчанию, измените его в окне **Свойства** .
 
 #### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Добавление элемента управления Bookmark в документ из Word
 
-1.  В документе, который размещен в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , поместите курсор туда, куда необходимо добавить закладку, или выделите текст, который требуется добавить в закладку.
+1. В документе, который размещен в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , поместите курсор туда, куда необходимо добавить закладку, или выделите текст, который требуется добавить в закладку.
 
-2.  На вкладке **Вставка** ленты в группе **Ссылки** нажмите кнопку **Закладка** .
+2. На вкладке **Вставка** ленты в группе **Ссылки** нажмите кнопку **Закладка** .
 
-3.  В диалоговом окне **Закладка** введите имя новой закладки и нажмите кнопку **Добавить**.
+3. В диалоговом окне **Закладка** введите имя новой закладки и нажмите кнопку **Добавить**.
 
-##  <a name="runtimedoclevel"></a> Добавление элементов управления Bookmark во время выполнения в проекте уровня документа
+## <a name="runtimedoclevel"></a> Добавление элементов управления Bookmark во время выполнения в проекте уровня документа
  Вы можете добавить <xref:Microsoft.Office.Tools.Word.Bookmark> управляет программным способом в документ во время выполнения с помощью методов класса <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> свойство `ThisDocument` в своем проекте. Существуют две перегрузки метода, которые можно использовать для добавления элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> следующими способами:
 
 - добавление <xref:Microsoft.Office.Tools.Word.Bookmark> в указанный диапазон;
@@ -88,7 +88,7 @@ ms.locfileid: "56631280"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Добавление элемента управления Bookmark в документ программными средствами
 
-1.  Вставьте следующий код в обработчике событий `ThisDocument_Startup` в проекте, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в первый абзац документа.
+1. Вставьте следующий код в обработчике событий `ThisDocument_Startup` в проекте, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в первый абзац документа.
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
@@ -96,7 +96,7 @@ ms.locfileid: "56631280"
     > [!NOTE]
     >  Если необходимо создать элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> на основе существующего <xref:Microsoft.Office.Interop.Word.Bookmark>, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте его в существующий <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
-##  <a name="runtimeaddin"></a> Добавление элементов управления Bookmark во время выполнения в проекте надстройки VSTO
+## <a name="runtimeaddin"></a> Добавление элементов управления Bookmark во время выполнения в проекте надстройки VSTO
  Вы можете добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементы управления программным способом в любой открытый документ во время выполнения с помощью надстройки VSTO. Для этого следует создать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , основанный на открытом документе, а затем использовать методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> этого ведущего элемента. Существуют две перегрузки метода, которые можно использовать для добавления элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> следующими способами:
 
 - добавление <xref:Microsoft.Office.Tools.Word.Bookmark> в указанный диапазон;
@@ -109,7 +109,7 @@ ms.locfileid: "56631280"
 
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Добавление элемента управления Bookmark в указанный диапазон
 
-1.  Используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте ему объект <xref:Microsoft.Office.Interop.Word.Range> , в который вы хотите добавить <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте ему объект <xref:Microsoft.Office.Interop.Word.Range> , в который вы хотите добавить <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      Следующий пример кода добавляет новый <xref:Microsoft.Office.Tools.Word.Bookmark> в начало активного документа. Чтобы использовать этот пример, запустите его из обработчика событий `ThisAddIn_Startup` в проекте надстройки VSTO Word.
 
@@ -118,7 +118,7 @@ ms.locfileid: "56631280"
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Добавление элемента управления Bookmark, основанного на собственном элементе управления Bookmark
 
-1.  Используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте ему существующий объект <xref:Microsoft.Office.Interop.Word.Bookmark> , который будет использоваться в качестве основы для нового <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте ему существующий объект <xref:Microsoft.Office.Interop.Word.Bookmark> , который будет использоваться в качестве основы для нового <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      В следующем примере кода создается новый объект <xref:Microsoft.Office.Tools.Word.Bookmark> , основанный на первом объекте <xref:Microsoft.Office.Interop.Word.Bookmark> в активном документе. Чтобы использовать этот пример, запустите его из обработчика событий `ThisAddIn_Startup` в проекте надстройки VSTO Word.
 

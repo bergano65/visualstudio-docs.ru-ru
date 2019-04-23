@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085563"
 ---
 # <a name="breakpoint-related-methods"></a>Методы, связанные с точкой останова
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Отладчик (DE) должны поддерживать параметр точек останова. Отладка в Visual Studio поддерживает следующие типы точек останова:  
   
--   привязан  
+- привязан  
   
      Запрошенный с помощью пользовательского интерфейса и успешно привязанным к указанной кодовой точке  
   
--   Не завершен  
+- Не завершен  
   
      Запрошенный с помощью пользовательского интерфейса, но не привязана к фактическое инструкции  
   

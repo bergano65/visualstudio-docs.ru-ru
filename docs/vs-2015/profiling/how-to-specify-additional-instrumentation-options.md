@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Указание дополнительных параметров инструментирования | Документы Майкрософт
+title: Практическое руководство. Указание дополнительных параметров инструментирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efa493afa7257d4460fd106a0a9685930ca3e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2440f31b6a6ac345644e20e14b4a82972967fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104282"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Практическое руководство. Указание дополнительных параметров инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "54803047"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!IMPORTANT]
 >  Каждый вставленный зонд незначительно изменяет поведение исходной программы. Это изменение приводит к увеличению времени анализа. Несмотря на то, что приблизительное значение этих временных затрат вычитается, они оказывают небольшое влияние на многопоточные приложения. Параметры программы [VSInstr](../profiling/vsinstr.md) позволяют управлять сбором данных во время профилирования.  
   
 ### <a name="to-specify-additional-instrumentation-option"></a>Указание дополнительных параметров инструментирования  
   
-1.  В **обозревателе производительности** выберите **Сеанс производительности**, а затем щелкните его правой кнопкой мыши и выберите **Свойства**.  
+1. В **обозревателе производительности** выберите **Сеанс производительности**, а затем щелкните его правой кнопкой мыши и выберите **Свойства**.  
   
-2.  В окне **Страницы свойств** щелкните **дополнительные** свойства.  
+2. В окне **Страницы свойств** щелкните **дополнительные** свойства.  
   
-3.  Введите параметры в поле **Дополнительные параметры инструментирования**.  
+3. Введите параметры в поле **Дополнительные параметры инструментирования**.  
   
      Например, используйте параметр /CONTROL:THREAD для указания уровня профилирования. Полный список параметров см. в разделе [VSInstr](../profiling/vsinstr.md).  
   
-4.  Нажмите кнопку **ОК**.  
+4. Нажмите кнопку **ОК**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

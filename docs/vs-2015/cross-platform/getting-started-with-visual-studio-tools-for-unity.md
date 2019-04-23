@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105036"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,30 +27,30 @@ ms.locfileid: "59655179"
 ## <a name="prerequisites"></a>Предварительные требования  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
   
--   версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);  
+- версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);  
   
      [Скачать Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** 4.0.0 или более поздней версии; **Unity** 5.2.0 или более поздней версии для использования встроенной поддержки инструментов Visual Studio для Unity 2.1 или более поздней версии.  
+- **Unity** 4.0.0 или более поздней версии; **Unity** 5.2.0 или более поздней версии для использования встроенной поддержки инструментов Visual Studio для Unity 2.1 или более поздней версии.  
   
      [Скачать Unity](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Установка набора средств Visual Studio для Unity  
  Загрузите и установите набор средств Visual Studio для Unity из галереи Visual Studio. Необходимо установить нужный пакет для вашей версии Visual Studio. Для использования встроенной поддержки инструментов Visual Studio для Unity в Unity 5.2 или более поздней версии установите инструменты Visual Studio для Unity 2.1 или более поздней версии.  
   
--   Для Visual Studio 2015 Community, Visual Studio 2015 Professional или Visual Studio 2015 Enterprise  
+- Для Visual Studio 2015 Community, Visual Studio 2015 Professional или Visual Studio 2015 Enterprise  
   
      [Скачать инструменты Visual Studio 2015 для Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Для Visual Studio 2013 Community, Visual Studio 2013 Professional или Visual Studio 2013 Premium  
+- Для Visual Studio 2013 Community, Visual Studio 2013 Professional или Visual Studio 2013 Premium  
   
      [Скачать инструменты Visual Studio 2013 для Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Для Visual Studio 2012 Professional или Visual Studio 2012 Premium  
+- Для Visual Studio 2012 Professional или Visual Studio 2012 Premium  
   
      [Скачать инструменты Visual Studio 2012 для Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Для Visual Studio 2010 Professional или Visual Studio 2010 Premium  
+- Для Visual Studio 2010 Professional или Visual Studio 2010 Premium  
   
      [Скачать инструменты Visual Studio 2010 для Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   

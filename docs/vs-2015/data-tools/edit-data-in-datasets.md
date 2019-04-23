@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105010"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "59656613"
   
 #### <a name="to-delete-records-from-a-data-table"></a>Для удаления записей из таблицы данных  
   
--   Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.  
+- Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.  
   
      Этот метод не удаляет записи физически. Вместо этого он помечает записи для удаления.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "59656613"
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки  
   
--   Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.  
+- Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.  
   
      Приведенный ниже показано, как проверить значение, возвращаемое <xref:System.Data.DataSet.HasChanges%2A> метод для выявления измененных строк в наборе данных с именем `NorthwindDataset1`:  
   
@@ -95,7 +95,7 @@ ms.locfileid: "59656613"
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Чтобы определить тип изменений были внесены в строку  
   
--   Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.  
+- Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.  
   
      В следующем примере показано, как проверить набор данных с именем `NorthwindDataset1` для определения того, если к нему были добавлены все новые строки:  
   
@@ -105,9 +105,9 @@ ms.locfileid: "59656613"
 ## <a name="to-locate-rows-that-have-errors"></a>Чтобы найти строки, содержащие ошибки  
  При работе с отдельных столбцов и строк данных, могут возникнуть ошибки. Вы можете проверить `HasErrors` свойства, чтобы определить наличие ошибок <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, или <xref:System.Data.DataRow>.  
   
-1.  Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.  
+1. Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.  
   
-2.  Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.  
+2. Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

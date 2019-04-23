@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105094"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2015
 Пакет SDK для Visual Studio имеет следующие новые и обновленные функции для Visual Studio 2015, обновление Visual Studio 2015 и Visual Studio 2017.
@@ -23,9 +23,9 @@ ms.locfileid: "56692051"
 
  Эти разделы находятся под [служебные программы VSSDK](../extensibility/internals/vssdk-utilities.md) раздел:
 
--   [Цвета темы средства](../extensibility/internals/color-theming-tools.md) позволяют создавать и изменять собственные цвета для Visual Studio.
+- [Цвета темы средства](../extensibility/internals/color-theming-tools.md) позволяют создавать и изменять собственные цвета для Visual Studio.
 
--   [Изображения средства service](../extensibility/internals/image-service-tools.md) позволяют работать с файлами манифеста изображений Visual Studio.
+- [Изображения средства service](../extensibility/internals/image-service-tools.md) позволяют работать с файлами манифеста изображений Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Новый способ добавить пакет SDK для Visual Studio в Visual Studio
  Начиная с Visual Studio 2015, не нужно отдельно скачать пакет SDK для Visual Studio. Вместо этого его можно установить как часть процесса Обычная установка, или вы можете установить его позже. При открытии или создании решение VSIX, Visual Studio предложит установить средства расширения Visual Studio. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56692051"
 ### <a name="visual-c-and-visual-basic"></a>Visual C# и Visual Basic
  Для C# и Visual Basic имеется полный набор шаблонов элементов проекта, которые позволяют создавать пакеты VSPackage, команды меню, окна инструментов, редактор классификаторы, элементов оформления редактора и margin расширения редактора. Стандартный проект VSIX можно добавить любые или все из этих шаблонов. Дополнительные сведения:
 
--   [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      Мастер VSPackage больше не создает расширения в C# или Visual Basic.
 

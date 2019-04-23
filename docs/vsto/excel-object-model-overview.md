@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104555"
 ---
 # <a name="excel-object-model-overview"></a>Обзор объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:
@@ -85,7 +85,7 @@ ms.locfileid: "56628589"
 ### <a name="workbook-object"></a>Объект книги
  Объект <xref:Microsoft.Office.Interop.Excel.Workbook> представляет отдельную книгу в приложении Excel.
 
- Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Workbook> , предоставляя тип <xref:Microsoft.Office.Tools.Excel.Workbook> . Данный тип обеспечивает доступ ко всем возможностям объекта <xref:Microsoft.Office.Interop.Excel.Workbook>. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
+ Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Workbook> , предоставляя тип <xref:Microsoft.Office.Tools.Excel.Workbook> . Данный тип обеспечивает доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Excel.Workbook>. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
 
 ### <a name="worksheet-object"></a>Worksheet - объект
  Объект <xref:Microsoft.Office.Interop.Excel.Worksheet> является членом коллекции <xref:Microsoft.Office.Interop.Excel.Worksheets>. Многие свойства, методы и события объекта <xref:Microsoft.Office.Interop.Excel.Worksheet> идентичны или похожи на элементы, предоставляемые объектами <xref:Microsoft.Office.Interop.Excel.Application> или <xref:Microsoft.Office.Interop.Excel.Workbook>.
@@ -97,9 +97,9 @@ ms.locfileid: "56628589"
 ### <a name="range-object"></a>Range - объект
  Объект <xref:Microsoft.Office.Interop.Excel.Range> является объектом, который используется в приложениях Excel чаще всего. Для работы с какой-либо областью Excel ее необходимо указать в качестве объекта <xref:Microsoft.Office.Interop.Excel.Range>, а затем использовать методы и свойства этого диапазона. Объект <xref:Microsoft.Office.Interop.Excel.Range> может представлять ячейку, строку или столбец, выборку ячеек, содержащую один или несколько смежных или несмежных блоков ячеек, или даже группу ячеек, распределенную между разными листами.
 
- Visual Studio расширяет объект <xref:Microsoft.Office.Interop.Excel.Range>, предоставляя типы <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Эти типы обладают большинством возможностей объекта <xref:Microsoft.Office.Interop.Excel.Range>, а также новыми возможностями, такими как возможность привязки данных и новые события. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md) и [элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md).
+ Visual Studio расширяет объект <xref:Microsoft.Office.Interop.Excel.Range>, предоставляя типы <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Эти типы обладают большинством функций объекта <xref:Microsoft.Office.Interop.Excel.Range>, а также новыми функциями, такими как возможность привязки данных и новые события. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md) и [элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Использование документации по объектной модели Excel
+## <a name="ExcelOMDocumentation"></a> Использование документации по объектной модели Excel
  Полные сведения об объектной модели Excel см. в справочнике по основной сборке взаимодействия (PIA) Excel и в справочнике по объектной модели VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Справочник по основной сборке взаимодействия
@@ -114,7 +114,7 @@ ms.locfileid: "56628589"
 
 ### <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|
