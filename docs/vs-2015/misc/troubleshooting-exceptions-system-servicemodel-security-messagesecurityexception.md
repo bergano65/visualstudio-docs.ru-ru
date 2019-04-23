@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058880"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Устранение исключений: System.ServiceModel.Security.MessageSecurityException
 Объект <xref:System.ServiceModel.Security.MessageSecurityException> исключение создается, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение не защищено правильно или было изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:  
   
--   Для связи веб–узла или проекта веб–приложения со службой WCF (.svc) используется ссылка на службу WCF через удаленное подключение, такое как подключение к удаленному рабочему столу или службы терминалов.  
+- Для связи веб–узла или проекта веб–приложения со службой WCF (.svc) используется ссылка на службу WCF через удаленное подключение, такое как подключение к удаленному рабочему столу или службы терминалов.  
   
--   У вас нет прав администратора на удаленном веб–узле.  
+- У вас нет прав администратора на удаленном веб–узле.  
   
--   Запросы к localhost на удаленном веб–узле обрабатываются [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
+- Запросы к localhost на удаленном веб–узле обрабатываются [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
   
 ## <a name="associated-tips"></a>Полезные советы  
  **Устранение проблем с проверкой подлинности NTLM при использовании ASP.Net Development Server.**  
@@ -78,11 +78,11 @@ ms.locfileid: "58993253"
   
 #### <a name="to-turn-off-ntlm-security"></a>Чтобы отключить безопасность NTLM  
   
-1.  В **Обозревателе решений**щелкните правой кнопкой мыши имя веб–узла, затем **Страницы свойств**.  
+1. В **Обозревателе решений**щелкните правой кнопкой мыши имя веб–узла, затем **Страницы свойств**.  
   
-2.  Выберите пункт **Параметры запуска**, а затем снимите флажок **Проверка подлинности NTLM** .  
+2. Выберите пункт **Параметры запуска**, а затем снимите флажок **Проверка подлинности NTLM** .  
   
-3.  Нажмите кнопку **ОК**.  
+3. Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

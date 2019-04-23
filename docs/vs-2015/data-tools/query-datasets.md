@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054785"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59659629"
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Чтобы найти строку в типизированный набор данных со значением первичного ключа  
   
--   Чтобы найти строку, вызовите строго типизированный `FindBy` метод, который использует первичный ключ таблицы.  
+- Чтобы найти строку, вызовите строго типизированный `FindBy` метод, который использует первичный ключ таблицы.  
   
      В следующем примере `CustomerID` столбец является первичным ключом `Customers` таблицы. Это означает, что созданный `FindBy` метод `FindByCustomerID`. Примере показано, как присвоить определенный <xref:System.Data.DataRow> переменной с помощью созданного `FindBy` метод.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "59659629"
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Чтобы найти строку в нетипизированный набор данных со значением первичного ключа  
   
--   Вызовите <xref:System.Data.DataRowCollection.Find%2A> метод <xref:System.Data.DataRowCollection> коллекции, передавая первичный ключ в качестве параметра.  
+- Вызовите <xref:System.Data.DataRowCollection.Find%2A> метод <xref:System.Data.DataRowCollection> коллекции, передавая первичный ключ в качестве параметра.  
   
      В следующем примере показано, как объявить новую строку с именем `foundRow` и ей присваивается значение, возвращаемое <xref:System.Data.DataRowCollection.Find%2A> метод. Если первичный ключ найден, содержимое индекса столбца 1 отображаются в окне сообщения.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "59659629"
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Чтобы найти строки, на основе значений в любом столбце  
   
--   Данные таблицы создаются с помощью<xref:System.Data.DataTable.Select%2A> метод, возвращающий массив <xref:System.Data.DataRow>s, основанное на выражении, передаваемый <xref:System.Data.DataTable.Select%2A> метод. Дополнительные сведения о создании допустимых выражениях см. в разделе «Синтаксис выражений» страницы <xref:System.Data.DataColumn.Expression%2A> свойство.  
+- Данные таблицы создаются с помощью<xref:System.Data.DataTable.Select%2A> метод, возвращающий массив <xref:System.Data.DataRow>s, основанное на выражении, передаваемый <xref:System.Data.DataTable.Select%2A> метод. Дополнительные сведения о создании допустимых выражениях см. в разделе «Синтаксис выражений» страницы <xref:System.Data.DataColumn.Expression%2A> свойство.  
   
      В следующем примере показано, как использовать <xref:System.Data.DataTable.Select%2A> метод <xref:System.Data.DataTable> для поиска конкретных строк.  
   
@@ -82,14 +82,14 @@ ms.locfileid: "59659629"
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Чтобы вернуть дочерние записи, выбранной родительской записи  
   
--   Вызовите <xref:System.Data.DataRow.GetChildRows%2A> метод конкретного `Customers` данных строки, а возвращает только те строки из `Orders` таблицы:  
+- Вызовите <xref:System.Data.DataRow.GetChildRows%2A> метод конкретного `Customers` данных строки, а возвращает только те строки из `Orders` таблицы:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Для возврата родительской записи выбранной дочерней записи  
   
--   Вызовите <xref:System.Data.DataRow.GetParentRow%2A> метод конкретного `Orders` строку данных и возврат одной строки из `Customers` таблицы:  
+- Вызовите <xref:System.Data.DataRow.GetParentRow%2A> метод конкретного `Orders` строку данных и возврат одной строки из `Customers` таблицы:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

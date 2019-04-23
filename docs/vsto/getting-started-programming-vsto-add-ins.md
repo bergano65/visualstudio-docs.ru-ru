@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061998"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Приступить к программированию надстроек VSTO
   Надстройки VSTO можно использовать для автоматизации приложений Microsoft Office, расширения функциональных возможностей приложения и настройки пользовательского интерфейса приложения. Сведения о сравнении надстроек VSTO для других типах решений Office, которые можно создавать с помощью Visual Studio, см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618839"
 
  Дополнительные сведения об объектных моделях конкретных приложений Microsoft Office см. в следующих статьях:
 
--   [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)
+- [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)
 
--   [Обзор объектной модели Word](../vsto/word-object-model-overview.md)
+- [Обзор объектной модели Word](../vsto/word-object-model-overview.md)
 
--   [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)
+- [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)
 
--   [Решения InfoPath](../vsto/infopath-solutions.md)
+- [Решения InfoPath](../vsto/infopath-solutions.md)
 
--   [Решения PowerPoint](../vsto/powerpoint-solutions.md)
+- [Решения PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Решения проектов](../vsto/project-solutions.md)
+- [Решения проектов](../vsto/project-solutions.md)
 
--   [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
+- [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Настройка пользовательского интерфейса приложений
  Существует несколько способов настройки пользовательского интерфейса ведущего приложения с помощью надстройки VSTO:

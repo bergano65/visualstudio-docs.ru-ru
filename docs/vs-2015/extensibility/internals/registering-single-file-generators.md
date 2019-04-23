@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055422"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58994536"
   
 ### <a name="to-register-a-custom-tool"></a>Чтобы зарегистрировать пользовательский инструмент  
   
-1.  Либо зарегистрировать настраиваемый инструмент DLL в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] локальный реестр или в системном реестре, в разделе HKEY_CLASSES_ROOT.  
+1. Либо зарегистрировать настраиваемый инструмент DLL в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] локальный реестр или в системном реестре, в разделе HKEY_CLASSES_ROOT.  
   
      Например, вот регистрационные данные для управляемого MSDataSetGenerator пользовательский инструмент, который поставляется вместе с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ ms.locfileid: "58994536"
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:  
+2. Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:  
   
-    -   (Значение по умолчанию)  
+    - (Значение по умолчанию)  
   
          Необязательный параметр. Понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.  
   
-    -   CLSID  
+    - CLSID  
   
          Обязательный. Задает идентификатор для библиотеки классов из COM-компонент, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Обязательный. Указывает ли типы из файлов, созданных этим настраиваемым инструментом становятся доступными для визуальных конструкторов. Значение этого параметра должно быть (нуль) 0 для типов, не доступен для визуальных конструкторов или 1 (один) для типов, доступных для визуальных конструкторов.  
   

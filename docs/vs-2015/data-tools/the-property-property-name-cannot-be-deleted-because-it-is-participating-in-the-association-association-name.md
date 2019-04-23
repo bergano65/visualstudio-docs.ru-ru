@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053914"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Нельзя удалить свойство &lt;имя свойства&gt;, поскольку оно участвует в ассоциации &lt;имя ассоциации&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "59652926"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1.  В реляционном конструкторе объектов выберите линию ассоциацию, которая соединяет классы данных, указанные в сообщении об ошибке.  
+1. В реляционном конструкторе объектов выберите линию ассоциацию, которая соединяет классы данных, указанные в сообщении об ошибке.  
   
-2.  Дважды щелкните по линии связи, чтобы открыть диалоговое окно **Редактор ассоциаций**.  
+2. Дважды щелкните по линии связи, чтобы открыть диалоговое окно **Редактор ассоциаций**.  
   
-3.  Удалите свойство из **Свойств ассоциации**.  
+3. Удалите свойство из **Свойств ассоциации**.  
   
-4.  Попытайтесь снова удалить свойство.  
+4. Попытайтесь снова удалить свойство.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

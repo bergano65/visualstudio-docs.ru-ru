@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a272c01f76787e60e7796173b52b563f8e8718
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054018"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
 Редактор создается с помощью компонентов Managed Extensibility Framework (MEF). Можно создавать собственные компоненты MEF для расширения редактора, а ваш код может использовать редактор компонентов, а также.
@@ -82,25 +82,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Для использования функциональных от части компонентов MEF
 
-1.  Добавьте ссылки на *System.Composition.ComponentModel.dll*, в глобальный кэш сборок (GAC), и к сборкам редактора.
+1. Добавьте ссылки на *System.Composition.ComponentModel.dll*, в глобальный кэш сборок (GAC), и к сборкам редактора.
 
-2.  Добавьте соответствующую операторы using.
+2. Добавьте соответствующую операторы using.
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3.  Добавление `[Import]` атрибут интерфейсу службы, следующим образом.
+3. Добавление `[Import]` атрибут интерфейсу службы, следующим образом.
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4.  Когда вы получили службу, вы можете использовать один из его компонентов.
+4. Когда вы получили службу, вы можете использовать один из его компонентов.
 
-5.  При компиляции сборки, поместите его *... \Common7\IDE\Components\* папке установки Visual Studio.
+5. При компиляции сборки, поместите его *... \Common7\IDE\Components\* папке установки Visual Studio.
 
 ## <a name="see-also"></a>См. также
 - [Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)

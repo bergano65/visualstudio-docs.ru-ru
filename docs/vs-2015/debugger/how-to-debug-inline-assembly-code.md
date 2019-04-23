@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055110"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Практическое руководство. отладку встроенного кода ассемблера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ ms.locfileid: "58980989"
   
 #### <a name="to-debug-inline-assembly-code"></a>Отладка встроенного кода ассемблера  
   
-1.  Используйте окно **Дизассемблирование** для просмотра инструкций ассемблера.  
+1. Используйте окно **Дизассемблирование** для просмотра инструкций ассемблера.  
   
-2.  Используйте окно **Регистры** для отображения содержимого регистров.  
+2. Используйте окно **Регистры** для отображения содержимого регистров.  
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   

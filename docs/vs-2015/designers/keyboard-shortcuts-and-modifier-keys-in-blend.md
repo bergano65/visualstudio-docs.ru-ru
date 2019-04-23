@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059166"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Сочетания клавиш и клавиши-модификаторы в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ ms.locfileid: "54789237"
 ## <a name="modifier-keys"></a>Клавиши-модификаторы  
  Некоторые сочетания клавиш не имеют связанных с ними пунктов меню, то есть обнаружить их в пользовательском интерфейсе [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] нельзя. В следующих разделах перечислены сочетания клавиш, меняющие поведение инструментов или меняющие действие, например изменение размера объекта.  
   
--   [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)  
+- [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90a97097eed7b97ad96bfda1f5520d1a9b4f0203
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061311"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 Решения Visual Studio может содержать большое количество проектов. Visual Studio по умолчанию задается для загрузки всех проектов в решении во время открытия решения и не разрешает пользователю доступ к любой из проектов, пока все они завершения загрузки. Когда процесс загрузки проекта хватит на более чем за две минуты, отображается индикатор хода выполнения, в число проектов, загруженных и общее число проектов. Пользователь может выгрузить проекты при работе в решении с несколькими проектами, но эта процедура имеет определенные недостатки: выгруженные проекты не были собраны как часть команды Перестроить решение и закрытия IntelliSense описания типов и членов проекты не отображаются.
@@ -59,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>Обработка событий загрузки решения
  Чтобы подписаться на события при загрузке решения, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> после активации ваш диспетчер загрузки решения. Если вы реализуете <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, может отвечать на события, относящиеся к другому проекту при загрузке свойств.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Это событие вызывается перед открытием решения.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Это событие вызывается перед открытием решения.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Это событие вызывается после полной загрузки решения, но перед фоновой загрузка проектов начинается снова.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Это событие вызывается после полной загрузки решения, но перед фоновой загрузка проектов начинается снова.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Это событие создается после изначально полностью загружено решение, ли имеется диспетчер загрузки решения. Она также возникает после загрузки фона или запросу загрузки всякий раз, когда оно становится полностью загружен. В то же время <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> повторной активации.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Это событие создается после изначально полностью загружено решение, ли имеется диспетчер загрузки решения. Она также возникает после загрузки фона или запросу загрузки всякий раз, когда оно становится полностью загружен. В то же время <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> повторной активации.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Это событие возникает перед загрузкой проекта (или проектов). Чтобы убедиться, что другие фоновые процессы завершены перед загрузкой проектов, задайте `pfShouldDelayLoadToNextIdle` для **true**.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Это событие возникает перед загрузкой проекта (или проектов). Чтобы убедиться, что другие фоновые процессы завершены перед загрузкой проектов, задайте `pfShouldDelayLoadToNextIdle` для **true**.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Это событие возникает в том случае, когда данный пакет проекты будут загружены. Если `fIsBackgroundIdleBatch` имеет значение true, проекты должны быть загружены в фоновом режиме; Если `fIsBackgroundIdleBatch` имеет значение false, проекты должны быть загружены синхронно, в результате запроса пользователя, например при развертывании проекта в обозревателе решений. Можно обработать это событие для выполнения ресурсоемких работы, в противном случае будет необходимо выполнить <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Это событие возникает в том случае, когда данный пакет проекты будут загружены. Если `fIsBackgroundIdleBatch` имеет значение true, проекты должны быть загружены в фоновом режиме; Если `fIsBackgroundIdleBatch` имеет значение false, проекты должны быть загружены синхронно, в результате запроса пользователя, например при развертывании проекта в обозревателе решений. Можно обработать это событие для выполнения ресурсоемких работы, в противном случае будет необходимо выполнить <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Это событие вызывается после загрузки пакета проектов.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Это событие вызывается после загрузки пакета проектов.
 
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Обнаружение и управление ими решение и загрузкой проекта
  Чтобы обнаружить состояние загрузки проектов и решений, вызывается <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> со следующими значениями:

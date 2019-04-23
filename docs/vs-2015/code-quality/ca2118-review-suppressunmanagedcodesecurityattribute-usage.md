@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059179"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118. Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58989717"
 
  Политики безопасности по умолчанию не предоставляет разрешение неуправляемого кода к сборке, если он выполняется с локального компьютера, либо членом одной из следующих групп:
 
--   Моя группа кода зоны компьютера
+- Моя группа кода зоны компьютера
 
--   Группа кода Microsoft строгого имени
+- Группа кода Microsoft строгого имени
 
--   Группа кода ECMA строгого имени
+- Группа кода ECMA строгого имени
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Внимательно просмотрите код и убедиться, что этот атрибут является абсолютно необходимым. Если вы не знакомы с безопасности управляемого кода, или не понимаете последствия для системы безопасности с помощью этого атрибута, удалите его из кода. Если атрибут является обязательным, необходимо убедиться, что вызывающие объекты не может использовать код намеренно. Если код не имеет разрешения на выполнение неуправляемого кода, этот атрибут не влияет и должны быть удалены.

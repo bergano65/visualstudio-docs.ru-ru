@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: 0161b3e44b44567166a337d94101778074561e80
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58990013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054371"
 ---
 # <a name="how-to-use-getglobalservice"></a>Практическое руководство. Использование GetGlobalService
 Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления. Дополнительные сведения об этих и других сценариев см. в разделе [как: Устранение неполадок в службах](../extensibility/how-to-troubleshoot-services.md).  
@@ -25,15 +25,15 @@ ms.locfileid: "58990013"
   
  К счастью <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> правильно работает в большинстве случаев.  
   
--   Если пакет VSPackage предоставляет службу, известного только другом пакете VSPackage, VSPackage, запрашивающего службу размещен перед VSPackage, предоставляющий, что загружены службы.  
+- Если пакет VSPackage предоставляет службу, известного только другом пакете VSPackage, VSPackage, запрашивающего службу размещен перед VSPackage, предоставляющий, что загружены службы.  
   
--   Если окно инструментов создается пакетом VSPackage, VSPackage задан до создания окна инструментов.  
+- Если окно инструментов создается пакетом VSPackage, VSPackage задан до создания окна инструментов.  
   
--   Если контейнер элемента управления размещается в окна инструментов, созданного пакетом VSPackage, VSPackage задан до создания контейнера элемента управления.  
+- Если контейнер элемента управления размещается в окна инструментов, созданного пакетом VSPackage, VSPackage задан до создания контейнера элемента управления.  
   
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Чтобы получить службу в контейнере инструментов окна или элемента управления  
   
--   Вставьте этот код в конструкторе, окно инструментов или контейнер элемента управления:  
+- Вставьте этот код в конструкторе, окно инструментов или контейнер элемента управления:  
   
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  

@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059959"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Практическое руководство. Включение отладки для приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ ms.locfileid: "58979379"
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Включение отладки ASP.NET в свойствах проекта (Visual Basic/C#)  
   
-1.  В окне **Обозреватель решений**правой кнопкой мыши щелкните имя веб-проекта и выберите пункт **Свойства**.  
+1. В окне **Обозреватель решений**правой кнопкой мыши щелкните имя веб-проекта и выберите пункт **Свойства**.  
   
-2.  На странице свойств проекта перейдите на вкладку **Веб** .  
+2. На странице свойств проекта перейдите на вкладку **Веб** .  
   
-3.  В окне **Отладчики**установите флажок **ASP.NET** .  
+3. В окне **Отладчики**установите флажок **ASP.NET** .  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Включение отладки в файле web.config  
   
-1.  Откройте файл web.config с использованием любого стандартного текстового редактора или анализатора XML.  
+1. Откройте файл web.config с использованием любого стандартного текстового редактора или анализатора XML.  
   
     > [!NOTE]  
     > Удаленный доступ к этому файлу с помощью браузера невозможен. Из соображений безопасности настройка служб Microsoft IIS [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] осуществляется ASP.NET таким образом, чтобы предотвратить прямой доступ к файлам Web.config с помощью браузеров. При попытке доступа к файлу конфигурации с помощью браузера будет выдана ошибка доступа HTTP 403.  
   
-2.  Файл Web.config — это XML-файл, поэтому он содержит вложенные разделы, помеченные тегами. Найдите элемент `configuration/system.web/compilation` . Если элемент compilation не существует, создайте его.  
+2. Файл Web.config — это XML-файл, поэтому он содержит вложенные разделы, помеченные тегами. Найдите элемент `configuration/system.web/compilation` . Если элемент compilation не существует, создайте его.  
   
-3.  Если элемент `compilation` не содержит атрибут `debug` , добавьте этот атрибут к элементу.  
+3. Если элемент `compilation` не содержит атрибут `debug` , добавьте этот атрибут к элементу.  
   
-4.  Убедитесь в том, что значение атрибута `debug` равно `true`.  
+4. Убедитесь в том, что значение атрибута `debug` равно `true`.  
   
 Файл Web.config должен выглядеть, как следующий пример. Обратите внимание, что между элементами system.web и configuration могут быть другие разделы  
   
--   разделы элементов между элементами system.web и configuration  
+- разделы элементов между элементами system.web и configuration  
   
--   разделы элементов между элементами system.web и compilation  
+- разделы элементов между элементами system.web и compilation  
   
--   Элемент compilation может содержать другие элементы или атрибуты  
+- Элемент compilation может содержать другие элементы или атрибуты  
   
 ## <a name="example"></a>Пример  
   

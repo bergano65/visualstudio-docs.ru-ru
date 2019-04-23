@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054798"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233. В операциях не должно быть переполнений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,11 +107,11 @@ End Sub
 
  **Чтобы включить проверенное арифметические переполнения и потери точности в C#**
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
 
-2.  Перейдите на вкладку **Сборка** и нажмите кнопку **Дополнительно**.
+2. Перейдите на вкладку **Сборка** и нажмите кнопку **Дополнительно**.
 
-3.  Выберите **Проверять арифметические переполнения и потери точности** и нажмите кнопку **ОК**.
+3. Выберите **Проверять арифметические переполнения и потери точности** и нажмите кнопку **ОК**.
 
 ## <a name="see-also"></a>См. также
  <xref:System.OverflowException?displayProperty=fullName> [Операторы в C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked и Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

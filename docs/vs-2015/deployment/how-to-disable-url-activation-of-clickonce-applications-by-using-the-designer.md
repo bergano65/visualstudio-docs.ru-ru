@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043853"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. Отключение активации приложений ClickOnce по URL-адресу при помощи конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58978796"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Отключение активации приложения с помощью URL  
   
-1.  Щелкните правой кнопкой мыши имя проекта в **обозревателе решений**и нажмите кнопку **свойства**.  
+1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений**и нажмите кнопку **свойства**.  
   
-2.  На **свойства** щелкните **публикации** вкладки.  
+2. На **свойства** щелкните **публикации** вкладки.  
   
-3.  Щелкните **Параметры**.  
+3. Щелкните **Параметры**.  
   
-4.  Нажмите кнопку **манифесты**.  
+4. Нажмите кнопку **манифесты**.  
   
-5.  Выберите флажок **Блокировать активацию с помощью URL-адреса приложения с**.  
+5. Выберите флажок **Блокировать активацию с помощью URL-адреса приложения с**.  
   
-6.  Развертывание приложения.  
+6. Развертывание приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

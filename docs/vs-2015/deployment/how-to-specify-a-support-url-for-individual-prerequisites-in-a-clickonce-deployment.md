@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059140"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58990108"
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Указание URL-адрес поддержки для отдельного предварительного условия  
   
-1.  Откройте манифест приложения (файл с расширением MANIFEST) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
+1. Откройте манифест приложения (файл с расширением MANIFEST) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
   
-2.  В список обязательных компонентов операционной системы, добавьте `supportUrl` атрибут `dependentOS` элемента:  
+2. В список обязательных компонентов операционной системы, добавьте `supportUrl` атрибут `dependentOS` элемента:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ ms.locfileid: "58990108"
       </dependency>  
     ```  
   
-3.  Необходимым условием для определенной версии среды CLR, добавить `supportUrl` атрибут `dependentAssembly` запись, которая задает зависимость среды выполнения:  
+3. Необходимым условием для определенной версии среды CLR, добавить `supportUrl` атрибут `dependentAssembly` запись, которая задает зависимость среды выполнения:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ ms.locfileid: "58990108"
       </dependency>  
     ```  
   
-4.  Необходимым условием для сборки, должны быть предварительно установлены в глобальном кэше сборок, задайте `supportUrl` для `dependentAssembly` элемент, задающий нужную сборку:  
+4. Необходимым условием для сборки, должны быть предварительно установлены в глобальном кэше сборок, задайте `supportUrl` для `dependentAssembly` элемент, задающий нужную сборку:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ ms.locfileid: "58990108"
       </dependency>  
     ```  
   
-5.  Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application файл) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
+5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application файл) для вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения в текстовом редакторе.  
   
-6.  .NET Framework 4 перед началом добавления `supportUrl` атрибут `compatibleFrameworks` элемента:  
+6. .NET Framework 4 перед началом добавления `supportUrl` атрибут `compatibleFrameworks` элемента:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ ms.locfileid: "58990108"
     </compatibleFrameworks>  
     ```  
   
-7.  Как только вы вручную изменить манифест приложения, необходимо повторно подписать манифест приложения с помощью сертификата, а затем обновить и повторно подписать манифест развертывания. Необходимо использовать Mage.exe или MageUI.exe из набора SDK средств для выполнения этой задачи, как при создании этих файлов с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] стирает внесенные вручную. Дополнительные сведения об использовании Mage.exe для повторной подписи манифестов см. в разделе [как: Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Как только вы вручную изменить манифест приложения, необходимо повторно подписать манифест приложения с помощью сертификата, а затем обновить и повторно подписать манифест развертывания. Необходимо использовать Mage.exe или MageUI.exe из набора SDK средств для выполнения этой задачи, как при создании этих файлов с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] стирает внесенные вручную. Дополнительные сведения об использовании Mage.exe для повторной подписи манифестов см. в разделе [как: Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
  URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для запуска в режиме частичного доверия.  

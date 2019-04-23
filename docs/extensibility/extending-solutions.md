@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2b34803ac047c411f3e77652949841227caef38e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055396"
 ---
 # <a name="extend-solutions"></a>Расширение решений
 Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения.
@@ -21,6 +21,6 @@ ms.locfileid: "56703192"
 ## <a name="in-this-section"></a>Содержание раздела
  В следующем примере демонстрируются несколько способов, в которой можно расширять решения.
 
-1.  [Расширение фильтра обозревателя решений](../extensibility/extending-the-solution-explorer-filter.md) объясняет, как фильтровать обозреватель решений отображает.
+1. [Расширение фильтра обозревателя решений](../extensibility/extending-the-solution-explorer-filter.md) объясняет, как фильтровать обозреватель решений отображает.
 
-2.  [Управление загрузкой проекта в решении](../extensibility/managing-project-loading-in-a-solution.md) объясняет, как управлять загрузкой проекта для повышения производительности при загрузке решения.
+2. [Управление загрузкой проекта в решении](../extensibility/managing-project-loading-in-a-solution.md) объясняет, как управлять загрузкой проекта для повышения производительности при загрузке решения.

@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062039"
 ---
 # <a name="midl-task"></a>Задача MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59657432"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи **MIDL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Необязательный параметр типа **String[]**.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/I** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Необязательный параметр типа **String**.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в разделе "Справочник по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Необязательный параметр **Boolean** .  
   
@@ -66,7 +66,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/app_config** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Необязательный параметр типа **String**.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/cstub** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также описание параметра **ServerStubFile** в этой таблице.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Необязательный параметр типа **String**.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/cpp_opt** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Необязательный параметр типа **String**.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/char** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Необязательный параметр типа **String**.  
   
@@ -106,7 +106,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/dlldata** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Необязательный параметр типа **String**.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Необязательный параметр **Boolean** .  
   
@@ -130,7 +130,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error allocation** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Необязательный параметр **Boolean** .  
   
@@ -138,7 +138,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error bounds_check** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Необязательный параметр **Boolean** .  
   
@@ -146,7 +146,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error enum** в справке по командной строке (**/?**) для midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Необязательный параметр **Boolean** .  
   
@@ -154,7 +154,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error ref** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Необязательный параметр **Boolean** .  
   
@@ -162,7 +162,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/error stub_data** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Необязательный параметр типа **String**.  
   
@@ -177,7 +177,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/client** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Необязательный параметр типа **String**.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/server** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Необязательный параметр **Boolean** .  
   
@@ -200,7 +200,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/Oicf** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Необязательный параметр **Boolean** .  
   
@@ -208,7 +208,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/notlb** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Необязательный параметр типа **String**.  
   
@@ -216,7 +216,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/h** или **/header** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Необязательный параметр **Boolean** .  
   
@@ -224,7 +224,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/no_def_idir** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Необязательный параметр типа **String**.  
   
@@ -232,7 +232,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/iid** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Необязательный параметр типа **int**.  
   
@@ -240,7 +240,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/lcid** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также статью "Идентификаторы языковых стандартов, назначенные Майкрософт" на веб-сайте MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Необязательный параметр **Boolean** .  
   
@@ -248,7 +248,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/mktyplib203** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также статью "Синтаксис файла ODL" на веб-сайте MSDN.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Необязательный параметр типа **String**.  
   
@@ -256,7 +256,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/out** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Необязательный параметр типа **String[]**.  
   
@@ -264,7 +264,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/D** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также описание параметра **UndefinePreprocessorDefinitions** в этой таблице.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Необязательный параметр типа **String**.  
   
@@ -272,7 +272,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/proxy** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Необязательный параметр типа **String**.  
   
@@ -280,7 +280,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/o** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Необязательный параметр типа **String**.  
   
@@ -288,13 +288,13 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/sstub** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также описание параметра **ClientStubFile** в этой таблице.  
   
--   **Source**  
+- **Source**  
   
      Обязательный параметр `ITaskItem[]`.  
   
      Задает список исходных файлов, разделенных пробелами.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Необязательный параметр типа **String**.  
   
@@ -312,7 +312,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/Zp** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Параметр **/Zp** эквивалентен параметру **/pack** и более старому параметру **/align**.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Необязательный параметр **Boolean** .  
   
@@ -320,7 +320,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/no_warn** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Необязательный параметр `Boolean` .  
   
@@ -328,7 +328,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/nologo** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Необязательный параметр типа **String**.  
   
@@ -345,13 +345,13 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/env** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Необязательный параметр `String` .  
   
      Задает промежуточный каталог, в котором хранятся журналы отслеживания для этой задачи.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Необязательный параметр типа **String**.  
   
@@ -366,7 +366,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметров **/newtlb** и **/oldtlb** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Необязательный параметр типа **String**.  
   
@@ -374,7 +374,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/tlb** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Необязательный параметр типа **String[]**.  
   
@@ -382,7 +382,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/U** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также описание параметра **PreprocessorDefinitions** в этой таблице.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Необязательный параметр `Boolean` .  
   
@@ -390,7 +390,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметров **/robust** и **/no_robust** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Необязательный параметр `Boolean` .  
   
@@ -400,7 +400,7 @@ ms.locfileid: "59657432"
   
      Дополнительные сведения см. в описании параметра **/WX** в "Справочнике по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). См. также описание параметра **WarningLevel** в этой таблице.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Необязательный параметр типа **String**.  
   

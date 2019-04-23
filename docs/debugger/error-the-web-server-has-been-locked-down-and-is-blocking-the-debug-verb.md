@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b08e806db430a6e8a24f83016c27c70afd2abed3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 22a564da1de8a7f375209ff4c02236a3e2baca8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043098"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Ошибка: веб-сервер заблокирован и блокирует команду DEBUG
 Сбой пошаговой отладки веб-приложения или веб-службы XML возникает, если запущено средство блокировки IIS при установленном и работающем приложении URLScan. В этом случае для IIS блокируется получение команды DEBUG.
@@ -32,22 +32,22 @@ ms.locfileid: "56687384"
 
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Разрешение отладки на веб-сервере с установленным средством URLScan
 
-1.  Найдите файл Urlscan.ini. Как правило, этот файл находится в каталоге:
+1. Найдите файл Urlscan.ini. Как правило, этот файл находится в каталоге:
 
      C:\WINNT\System32\Inetsrv\urlscan
 
-2.  Создайте копию этого файла и присвойте этому файлу имя **Urlscan.old**.
+2. Создайте копию этого файла и присвойте этому файлу имя **Urlscan.old**.
 
-3.  Откройте исходную копию файла Urlscan.ini в блокноте или любом другом текстовом редакторе.
+3. Откройте исходную копию файла Urlscan.ini в блокноте или любом другом текстовом редакторе.
 
-4.  В файле Urlscan.ini найдите раздел [AllowVerbs]. Добавьте команду DEBUG в раздел [AllowVerbs]. Если в разделе [AllowVerbs] присутствует текст ";DEBUG", можно удалить точку с запятой, чтобы снять комментирование с этой команды.
+4. В файле Urlscan.ini найдите раздел [AllowVerbs]. Добавьте команду DEBUG в раздел [AllowVerbs]. Если в разделе [AllowVerbs] присутствует текст ";DEBUG", можно удалить точку с запятой, чтобы снять комментирование с этой команды.
 
-5.  Найдите раздел [DenyVerbs]. Если команда DEBUG присутствует в разделе [DenyVerbs], ее необходимо удалить.
+5. Найдите раздел [DenyVerbs]. Если команда DEBUG присутствует в разделе [DenyVerbs], ее необходимо удалить.
 
-6.  Сохраните файл.
+6. Сохраните файл.
 
-7.  Перезагрузите сервер или перезапустите IIS.
+7. Перезагрузите сервер или перезапустите IIS.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Ошибка. Запрашиваемый ресурс не найден](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- [Ошибка: запрашиваемый ресурс не найден](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

@@ -75,19 +75,19 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95add394f6f3e3e62a7441fe5bb0b4c415509527
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057460"
 ---
 # <a name="crt-debug-heap-details"></a>Сведения о куче отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе представлен подробный обзор отладочной кучи CRT.  
   
-##  <a name="BKMK_Contents"></a> Описание  
+## <a name="BKMK_Contents"></a> Описание  
  [Поиск переполнений буфера с помощью отладочной кучи](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [Типы блоков в отладочной куче](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +102,7 @@ ms.locfileid: "58979712"
   
  [Отслеживание запросов выделения кучи](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Поиск переполнений буфера с помощью отладочной кучи  
+## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Поиск переполнений буфера с помощью отладочной кучи  
  Две самые распространенные и трудноразрешимые проблемы, с которыми сталкиваются программисты, — это перезапись конца выделенного буфера и утечки памяти (невозможность освободить выделенную память, когда она уже не нужна). Отладочная куча предоставляет мощные средства для решения подобных проблем с памятью.  
   
  Отладочные версии функций кучи вызывают стандартные или базовые версии, используемые в окончательных построениях. Когда запрашивается блок памяти, диспетчер отладочной кучи выделяет из основной кучи блок памяти немного больше требуемого, и возвращает указатель на часть этого блока. Например, допустим, приложение содержит вызов: `malloc( 10 )`. В окончательном построении [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) вызовет выделения основной куче, которая запросит выделение 10 байтов. В сборке отладки, однако `malloc` вызовет [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), который затем следует вызвать выделение основной куче, которая запросит выделение 10 байтов и около 36 байтов дополнительную память. Все результирующие блоки памяти в отладочной куче подключаются к единому связанному списку, который упорядочивает их по времени выделения.  
@@ -149,7 +149,7 @@ typedef struct _CrtMemBlockHeader
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Типы блоков в отладочной куче  
+## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Типы блоков в отладочной куче  
  Каждому блоку памяти в отладочной куче присвоен один из пяти типов выделений памяти. Эти типы отслеживаются и по-разному фиксируются в отчетах в зависимости от целей: обнаружение утечки памяти или отчет о состоянии. Тип блока можно задать, выделив его с помощью непосредственного вызова одной из функций выделения отладочной кучи, например [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Пять типов блоков памяти в отладочной куче (задаются в **nBlockUse** — члене структуры **_CrtMemBlockHeader**):  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +183,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Проверка целостности кучи и утечек памяти  
+## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Проверка целостности кучи и утечек памяти  
  Из кода могут быть доступны многие возможности отладочной кучи. В следующих разделах описываются эти возможности и способы их использования.  
   
  `_CrtCheckMemory`  
@@ -204,7 +204,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> Настройка отладочной кучи  
+## <a name="BKMK_Configure_the_debug_heap"></a> Настройка отладочной кучи  
  Все функции кучи, такие как `malloc`, `free`, `calloc`, `realloc`, `new` и `delete`, разрешают своим отладочным эквивалентам действовать в отладочной куче. Когда освобождается блок памяти, отладочная куча автоматически проверяет целостность буферов по обеим сторонам выделенной области и выдает отчет об ошибке в случае их перезаписи.  
   
  **Использование отладочной кучи**  
@@ -239,7 +239,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete и _CLIENT_BLOCK в отладочной куче C++  
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete и _CLIENT_BLOCK в отладочной куче C++  
  Отладочные версии библиотеки времени выполнения C содержат отладочные версии операторов C++ `new` и `delete`. При использовании типа выделения `_CLIENT_BLOCK` необходимо либо непосредственно вызвать отладочную версию оператора `new`, либо создать макросы, заменяющие оператор `new` в режиме отладки, как показано в следующем примере.  
   
 ```  
@@ -277,7 +277,7 @@ int main( )   {
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Функции создания отчетов о состоянии кучи  
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Функции создания отчетов о состоянии кучи  
  **_CrtMemState**  
   
  Чтобы сохранить снимок состояния кучи на текущий момент, используется структура _CrtMemState, определенная в CRTDBG.H:  
@@ -314,7 +314,7 @@ typedef struct _CrtMemState
   
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Отслеживание запросов выделения кучи  
+## <a name="BKMK_Track_Heap_Allocation_Requests"></a> Отслеживание запросов выделения кучи  
  Хотя точное указание имени исходного файла и номера строки, на которой стоит утверждение или выполняется макрос, часто очень полезно для выявления причины проблемы, этого не всегда достаточно для функций выделения кучи. Поскольку макросы могут вставляться в разные места логического дерева приложения, выделение часто скрыто в специальной программе из библиотеки DLL, которая тоже может вызываться из разных мест и в разное время. И поэтому вопрос обычно не в том, какая строка кода осуществила некорректное выделение, а в том, которое из тысяч выделений, сделанных этой строкой, было некорректным и почему.  
   
  **Уникальные номера запросов выделения и _crtBreakAlloc**  
