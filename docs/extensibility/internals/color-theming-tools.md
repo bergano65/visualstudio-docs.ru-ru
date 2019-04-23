@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b78f2f7bec4858f3b76caa12cdcfe983814834ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5840662956a43a8bc1ad7232dae8fc86ea6fb068
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089548"
 ---
 # <a name="color-theme-tools"></a>Цвет темы средства
 Пакет SDK для Visual Studio предоставляет несколько средств для создания и управления ими цветовые темы.
 
--   [Редактор цветов VSIX](../../extensibility/internals/vsix-color-editor.md) средства можно создавать и изменять собственные цвета для Visual Studio.
+- [Редактор цветов VSIX](../../extensibility/internals/vsix-color-editor.md) средства можно создавать и изменять собственные цвета для Visual Studio.
 
--   [Компилятор цветов VSIX](../../extensibility/internals/vsix-color-compiler.md) средство преобразует существующую тему Visual Studio *.xml* файлы в *.pkgdef* файлов для конкретного модуля.
+- [Компилятор цветов VSIX](../../extensibility/internals/vsix-color-compiler.md) средство преобразует существующую тему Visual Studio *.xml* файлы в *.pkgdef* файлов для конкретного модуля.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090545"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Пример реализации вычисления выражений
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684979"
 
  `IDebugExpressionEvaluator::Parse` Выполняет следующие задачи:
 
-1.  [C++] Выполняет синтаксический анализ выражения для поиска ошибок.
+1. [C++ только] Выполняет синтаксический анализ выражения для поиска ошибок.
 
-2.  Создает экземпляр класса (называется `CParsedExpression` в этом примере), которое будет выполняться `IDebugParsedExpression` интерфейса и сохраняет в классе выражение для синтаксического анализа.
+2. Создает экземпляр класса (называется `CParsedExpression` в этом примере), которое будет выполняться `IDebugParsedExpression` интерфейса и сохраняет в классе выражение для синтаксического анализа.
 
-3.  Возвращает `IDebugParsedExpression` интерфейс из `CParsedExpression` объекта.
+3. Возвращает `IDebugParsedExpression` интерфейс из `CParsedExpression` объекта.
 
 > [!NOTE]
 >  В приведенных ниже примерах и в образце MyCEE средство оценки выражений не различал синтаксический анализ на основе оценки.
