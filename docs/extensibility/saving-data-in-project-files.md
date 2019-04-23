@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070342"
 ---
 # <a name="save-data-in-project-files"></a>Сохранить данные в файлах проектов
 Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:
@@ -32,7 +32,7 @@ ms.locfileid: "56843598"
 
 ### <a name="to-save-a-build-related-data-in-the-project-file"></a>Чтобы сохранить построения связанные данные в файле проекта
 
--   Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить полный путь файла проекта.
+- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить полный путь файла проекта.
 
     ```
     private SpecializedProject project;
@@ -47,7 +47,7 @@ ms.locfileid: "56843598"
 
 ### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Для получения сборки связанные данные из файла проекта
 
--   Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> метод для извлечения полный путь файла проекта.
+- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> метод для извлечения полный путь файла проекта.
 
     ```
     private SpecializedProject project;
@@ -64,7 +64,7 @@ ms.locfileid: "56843598"
 
 ### <a name="to-save-non-build-related-data-in-the-project-file"></a>Чтобы сохранить без построения связанные данные в файле проекта
 
-1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> метод, чтобы определить, изменился ли фрагмент XML с момента его последнего сохранения в свой текущий файл.
+1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> метод, чтобы определить, изменился ли фрагмент XML с момента его последнего сохранения в свой текущий файл.
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ ms.locfileid: "56843598"
     }
     ```
 
-2.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> метод, чтобы сохранить данные XML в файле проекта.
+2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> метод, чтобы сохранить данные XML в файле проекта.
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -145,7 +145,7 @@ ms.locfileid: "56843598"
 
 ### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Для получения взаимосвязанных данных без построения в файле проекта
 
-1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> метод для инициализации свойства расширения проекта и другие независимые от построения данные. Этот метод вызывается в том случае, если отсутствуют данные конфигурации XML в файле проекта.
+1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> метод для инициализации свойства расширения проекта и другие независимые от построения данные. Этот метод вызывается в том случае, если отсутствуют данные конфигурации XML в файле проекта.
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ ms.locfileid: "56843598"
         return VSConstants.S_OK;
     ```
 
-2.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> метод для загрузки XML-данные из файла проекта.
+2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> метод для загрузки XML-данные из файла проекта.
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)

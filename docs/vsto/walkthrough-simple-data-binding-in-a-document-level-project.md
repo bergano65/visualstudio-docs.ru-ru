@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066653"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы привязки данных в проекте уровня документа. Одного поля данных в базе данных SQL Server привязан к именованному диапазону в Microsoft Office Excel. Также показаны способы добавления элементов управления, которые позволяют прокручивать все записи в таблице.
@@ -41,13 +41,13 @@ ms.locfileid: "56640276"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Доступ к серверу с образцом базы данных "Борей" SQL Server.
+- Доступ к серверу с образцом базы данных "Борей" SQL Server.
 
--   Разрешения на чтение и запись к базе данных SQL Server.
+- Разрешения на чтение и запись к базе данных SQL Server.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
  На этом шаге вы создадите проект книги Excel.
@@ -88,21 +88,21 @@ ms.locfileid: "56640276"
 
 ### <a name="to-add-two-named-ranges"></a>Чтобы добавить два именованных диапазонов
 
-1.  Убедитесь, что *Мой простой Binding.xlsx данных* книга открыта в конструкторе Visual Studio с **Sheet1** отображается.
+1. Убедитесь, что *Мой простой Binding.xlsx данных* книга открыта в конструкторе Visual Studio с **Sheet1** отображается.
 
-2.  Откройте **источников данных** окне и разверните **клиентов** узла.
+2. Откройте **источников данных** окне и разверните **клиентов** узла.
 
-3.  Выберите **CompanyName** столбец, а затем щелкните стрелку раскрывающегося списка, который отображается.
+3. Выберите **CompanyName** столбец, а затем щелкните стрелку раскрывающегося списка, который отображается.
 
-4.  Выберите **NamedRange** в раскрывающемся списке, а затем перетащите **CompanyName** столбца в ячейку **A1**.
+4. Выберите **NamedRange** в раскрывающемся списке, а затем перетащите **CompanyName** столбца в ячейку **A1**.
 
      Объект <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `companyNameNamedRange` создается в ячейке **A1**. В то же время <xref:System.Windows.Forms.BindingSource> с именем `customersBindingSource`, адаптер таблицы и <xref:System.Data.DataSet> экземпляр добавляются в проект. Элемент управления привязан к <xref:System.Windows.Forms.BindingSource>, который, в свою очередь, привязан к <xref:System.Data.DataSet> экземпляра.
 
-5.  Выберите **CustomerID** столбца в **источников данных** окно и щелкните стрелку раскрывающегося списка, который отображается.
+5. Выберите **CustomerID** столбца в **источников данных** окно и щелкните стрелку раскрывающегося списка, который отображается.
 
-6.  Нажмите кнопку **NamedRange** в раскрывающемся списке, а затем перетащите **CustomerID** столбца в ячейку **B1**.
+6. Нажмите кнопку **NamedRange** в раскрывающемся списке, а затем перетащите **CustomerID** столбца в ячейку **B1**.
 
-7.  Другой <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `customerIDNamedRange` создается в ячейке **B1**и привязывается к <xref:System.Windows.Forms.BindingSource>.
+7. Другой <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `customerIDNamedRange` создается в ячейке **B1**и привязывается к <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Чтобы добавить четыре кнопки
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640276"
 
 ### <a name="to-move-to-the-first-record"></a>Чтобы перейти к первой записи
 
-1.  Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button1` и добавьте следующий код, чтобы перейти к первой записи:
+1. Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button1` и добавьте следующий код, чтобы перейти к первой записи:
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Для перемещения к предыдущей записи
 
-1.  Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button2` и добавьте следующий код, чтобы изменить положение обратно на единицу:
+1. Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button2` и добавьте следующий код, чтобы изменить положение обратно на единицу:
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Для перемещения к следующей записи
 
-1.  Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button3` и добавьте следующий код, чтобы переместить позицию на единицу:
+1. Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button3` и добавьте следующий код, чтобы переместить позицию на единицу:
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Чтобы перейти к последней записи
 
-1.  Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button4` и добавьте следующий код, чтобы перейти к последней записи:
+1. Добавьте обработчик событий для <xref:System.Windows.Forms.Control.Click> событие `Button4` и добавьте следующий код, чтобы перейти к последней записи:
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640276"
 
 ### <a name="to-test-your-workbook"></a>Проверка книги
 
-1.  Нажмите клавишу **F5** для запуска проекта.
+1. Нажмите клавишу **F5** для запуска проекта.
 
-2.  Убедитесь, что первая запись отображается в ячейках **A1** и **B1**.
+2. Убедитесь, что первая запись отображается в ячейках **A1** и **B1**.
 
-3.  Нажмите кнопку **>** (`Button3`) кнопку и убедитесь, что следующая запись отображается в ячейке **A1** и **B1**.
+3. Нажмите кнопку **>** (`Button3`) кнопку и убедитесь, что следующая запись отображается в ячейке **A1** и **B1**.
 
-4.  Щелкните другие кнопки прокрутки, чтобы убедиться, что запись изменяется должным образом.
+4. Щелкните другие кнопки прокрутки, чтобы убедиться, что запись изменяется должным образом.
 
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве описываются основные принципы привязки именованного диапазона к полю в базе данных. Ниже приводятся некоторые из возможных последующих задач.
 
--   Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [Как Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [Как Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Привязка ячеек к нескольким столбцам в таблице, а не с одним полем. Дополнительные сведения см. в разделе [Пошаговое руководство: Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Привязка ячеек к нескольким столбцам в таблице, а не с одним полем. Дополнительные сведения см. в разделе [Пошаговое руководство: Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Используйте <xref:System.Windows.Forms.BindingNavigator> для прокрутки записей. Дополнительные сведения см. в разделе [Как Навигация по набору данных с элементом управления Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Используйте <xref:System.Windows.Forms.BindingNavigator> для прокрутки записей. Дополнительные сведения см. в разделе [Как Навигация по набору данных с элементом управления Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>См. также
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

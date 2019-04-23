@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069774"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58978882"
   
 ### <a name="to-specify-verbose-log-files"></a>Чтобы указать файлы подробного журнала  
   
-1.  Откройте **Regedit.exe**.  
+1. Откройте **Regedit.exe**.  
   
-2.  Перейдите к узлу `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Перейдите к узлу `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  При необходимости создайте новый строковый параметр с именем `LogVerbosityLevel`.  
+3. При необходимости создайте новый строковый параметр с именем `LogVerbosityLevel`.  
   
-4.  Установите для `LogVerbosityLevel` значение `1`.  
+4. Установите для `LogVerbosityLevel` значение `1`.  
   
 ## <a name="see-also"></a>См. также  
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

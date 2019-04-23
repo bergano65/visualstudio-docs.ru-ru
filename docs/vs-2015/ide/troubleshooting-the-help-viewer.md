@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067044"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Устранение неполадок средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "54774605"
   
 #### <a name="to-activate-windows-search-service"></a>Включение службы Windows Search  
   
-1.  Запустите диспетчер сервера.  
+1. Запустите диспетчер сервера.  
   
-2.  В левой области навигации выберите **Роли**.  
+2. В левой области навигации выберите **Роли**.  
   
-3.  В области "Сводка по ролям" выберите **Добавить роль**.  
+3. В области "Сводка по ролям" выберите **Добавить роль**.  
   
-4.  Выберите роль файловых служб, а затем нажмите кнопку **Далее**.  
+4. Выберите роль файловых служб, а затем нажмите кнопку **Далее**.  
   
-5.  Выберите службу роли Windows Search.  
+5. Выберите службу роли Windows Search.  
   
 ## <a name="additional-resources"></a>Дополнительные ресурсы  
  Вы можете получить дополнительные сведения и предоставить отзыв об окне справки с помощью следующих ресурсов:  
@@ -49,5 +49,5 @@ ms.locfileid: "54774605"
   
 - Дополнительные сведения см. в разделе [Документация разработчика и справочная система](http://go.microsoft.com/fwlink/?LinkId=232741) форум и [помощник](http://go.microsoft.com/fwlink/?LinkId=232743) блога.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Руководство администратора Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

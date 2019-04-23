@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: сворачивание и разворачивание деревьев Spy ++ | Документация Майкрософт'
+title: Практическое руководство. Сворачивание и разворачивание деревьев Spy ++ | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071191"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Практическое руководство. Сворачивание и разворачивание деревьев Spy++
-Можно разворачивать и сворачивать представления Windows, процессами и потоками, двумя способами: щелкнув значки в окне или с помощью **дерева** меню. + И - значки дерева выступать как в окне проекта Visual C++.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Практическое руководство. сворачивание и разворачивание деревьев Spy++
+Можно разворачивать и сворачивать представления Windows, процессами и потоками, двумя способами: щелкнув значки в окне или с помощью **дерева** меню. + И - значки в дереве выступать как в визуальный элемент C++ окно проекта.
 
  **Дерева** меню содержит четыре команды:
 
@@ -34,11 +34,11 @@ ms.locfileid: "56687605"
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Развертывание и свертывание деревьев Spy ++
 
-1.  Выделите один из элементов в представлении Windows, процессов или потоков.
+1. Выделите один из элементов в представлении Windows, процессов или потоков.
 
-2.  Из **дерева** меню, нажмите кнопку разворачивания или сворачивания.
+2. Из **дерева** меню, нажмите кнопку разворачивания или сворачивания.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Использование Spy++](../debugger/using-spy-increment.md)
 - [Представления Spy++](../debugger/spy-increment-views.md)
 - [Справочник по Spy++](../debugger/spy-increment-reference.md)

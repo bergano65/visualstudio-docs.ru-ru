@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069462"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +41,21 @@ ms.locfileid: "59654013"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
--   [Привязка элементов управления Windows Forms к данным](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Привязка элементов управления Windows Forms к данным](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Создание таблиц подстановки в приложениях Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Создание таблиц подстановки в приложениях Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Создание формы Windows Forms для поиска данных](../data-tools/create-a-windows-form-to-search-data.md)
+- [Создание формы Windows Forms для поиска данных](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Передача данных между формами](../data-tools/pass-data-between-forms.md)
+- [Передача данных между формами](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource - компонент
  Компонент <xref:System.Windows.Forms.BindingSource> служит двум целям. Во-первых он обеспечивает уровень абстракции, при привязке к данным элементы управления в форме. Элементы управления в форме привязаны к <xref:System.Windows.Forms.BindingSource> компонент (вместо привязки к источнику данных).
@@ -64,11 +64,11 @@ ms.locfileid: "59654013"
 
  Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компонента, см. в разделе:
 
--   [Компонент BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [Компонент BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [Архитектура компонента BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [Архитектура компонента BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator - элемент управления
  Этот компонент предоставляет пользовательский интерфейс для перехода по данным, отображаемым в приложении Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

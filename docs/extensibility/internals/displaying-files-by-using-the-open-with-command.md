@@ -12,24 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b82be9d7f376c1fbc0bc5b24534298a917d07b2e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc3c335a8095f1c9cf44d49da45a4d1e94b32547
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624351"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070216"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Отображение файлов с помощью команды Открыть с помощью
 Проект можно попросить интегрированной среды разработки для отображения **открыть с помощью** диалоговое окно. Этот запрос предлагает пользователю открыть файл, который включает набор стандартных редакторов. Следующие шаги описывают этот процесс:
 
-1.  Вызовы проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, указав значение `OSE_UseOpenWithDialog` для `OSEOpenDocEditor` параметра.
+1. Вызовы проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, указав значение `OSE_UseOpenWithDialog` для `OSEOpenDocEditor` параметра.
 
-2.  Исходя из расширение имени файла документа, интегрированной среды разработки определяет, какие редакторы, перечисленных в реестре может открыть указанный документ и отображает эти сведения в **открыть с помощью** диалоговое окно.
+2. Исходя из расширение имени файла документа, интегрированной среды разработки определяет, какие редакторы, перечисленных в реестре может открыть указанный документ и отображает эти сведения в **открыть с помощью** диалоговое окно.
 
     > [!NOTE]
     >  Проекты, которые имеют встроенный редактор, который должен быть включен в **открыть с помощью** диалоговое окно необходимо зарегистрировать фабрику редактора для каждого такого редактора. Встроенные редакторы работают только вместе с определенного типа проекта, который применяется в реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод. В среде IDE существует фабрику встроенного редактора для базовый текстовый редактор и двоичный редактор. Интегрированной среды разработки также создает экземпляр фабрики редактора, от имени каждого зарегистрированного сопоставления файлов Windows. Пример такого файла — Microsoft Word.
 
-3.  Как только пользователь выбирает элемент из **открыть с помощью** диалоговом окне интегрированной среды разработки затем открывает документ, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод. Дополнительные сведения см. в разделе [Как Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md).
+3. Как только пользователь выбирает элемент из **открыть с помощью** диалоговом окне интегрированной среды разработки затем открывает документ, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод. Дополнительные сведения см. в разделе [Как Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>См. также
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)

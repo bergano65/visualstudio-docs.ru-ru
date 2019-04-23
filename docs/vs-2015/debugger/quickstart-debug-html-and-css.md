@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068162"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Краткое руководство. Отладка HTML и CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "59002667"
   
   Сведения о других возможностях отладки JavaScript, таких как использование окна консоли JavaScript и задание точек останова, см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Проверка динамической модели DOM  
+## <a name="InspectingDOM"></a> Проверка динамической модели DOM  
  Проводник DOM содержит представление отображаемой страницы. В проводнике можно менять значения и немедленно просматривать результаты. Это позволяет тестировать изменения без остановки и перезапуска отладчика. Исходный код в проекте не меняется, если разработчик выполняет какие-либо операции с этой страницей, используя данный метод, поэтому, найдя места для внесения исправлений в код, вы вносите исправления в исходный код.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ ms.locfileid: "59002667"
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Обновление приложения во время отладки  
   
-1.  Пока приложение выполняется, переключитесь на Visual Studio  
+1. Пока приложение выполняется, переключитесь на Visual Studio  
   
-2.  Откройте файл default.html и внесите исправления в исходный код, изменив высоту и ширину элемента DIV `"fView"` на 100 %.  
+2. Откройте файл default.html и внесите исправления в исходный код, изменив высоту и ширину элемента DIV `"fView"` на 100 %.  
   
-3.  Нажмите кнопку **Обновить приложение Windows** на панели инструментов "Отладка" (или нажмите F4). Кнопка выглядит следующим образом: ![Кнопка приложения Windows "Обновить"](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Нажмите кнопку **Обновить приложение Windows** на панели инструментов "Отладка" (или нажмите F4). Кнопка выглядит следующим образом: ![Кнопка приложения Windows "Обновить"](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Страницы приложения перезагружаются, имитатор или эмулятор телефона снова отображается на переднем плане.  
   
      Дополнительные сведения о функции обновления, см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  Во время отладки приложения элементы модели DOM можно выбирать тремя способами:  
   
 - нажатием элементов непосредственно в окне проводника DOM (или с помощью клавиш со стрелками);  
@@ -285,7 +285,7 @@ ms.locfileid: "59002667"
   
  Пример, демонстрирующий способ выбора элементов с помощью **элемент Select** "Кнопка", см. в разделе [стилей CSS, отладка с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
+## <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
  Инструменты Visual Studio для JavaScript, проводник DOM и окно консоли JavaScript поддерживаются в следующих платформах:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и приложения для Магазина Windows Phone с использованием JavaScript и HTML  

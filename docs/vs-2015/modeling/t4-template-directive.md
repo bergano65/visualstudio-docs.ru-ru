@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070840"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,8 @@ ms.locfileid: "58990877"
   
 ## <a name="debug-attribute"></a>атрибут debug  
  Пример  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific  
  Пример  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  Как правило, в качестве базового класса указывается другой предварительно обработанный шаблон. Базовый шаблон предоставляет общие блоки текста, которые могут чередоваться с текстом из производных шаблонов. Можно использовать блоки возможностей класса `<#+ ... #>`, чтобы определить методы, содержащие фрагменты текста. Например, можно поместить структуру выходного текста в базовый шаблон и предоставить виртуальные методы, которые могут переопределяться в производных шаблонах:  
   
  Текстовый шаблон времени выполнения (предварительно обработанный) BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Текстовый шаблон времени выполнения (предварительно обработанный) DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Код приложения для вызова DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Полученные выходные данные:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

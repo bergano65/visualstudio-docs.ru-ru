@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066420"
 ---
 # <a name="project-subtypes-design"></a>Разработка подтипов проекта
 
@@ -23,11 +23,11 @@ ms.locfileid: "56335653"
 
  Следующие разделы подробно описаны основные проектирование и реализацию подтипов проекта.
 
--   Структура подтип проекта.
+- Структура подтип проекта.
 
--   Многоуровневые статистической обработки.
+- Многоуровневые статистической обработки.
 
--   Поддержка интерфейсов.
+- Поддержка интерфейсов.
 
 ## <a name="project-subtype-design"></a>Проектирование подтип проекта
 
@@ -73,11 +73,11 @@ ms.locfileid: "56335653"
 
 Реализация подтип проекта, который заключает в оболочку подтипом нижнего уровня проекта должен быть создается совместно, чтобы позволить внутреннего подтипа проекта для правильной. Включает список программирования обязанности:
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Должны делегировать реализацию подтипа проекта, который является оболочкой внутренний подтип <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для обоих <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методы.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Должны делегировать реализацию подтипа проекта, который является оболочкой внутренний подтип <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для обоих <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методы.
 
--   <xref:EnvDTE80.IInternalExtenderProvider> Реализации оболочки подтипа проекта следует делегировать, его внутренний подтип проекта. В частности, реализации <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> необходимо получить строку имен из внутреннего подтипа проекта, а затем выполнит объединение строк, необходимо добавить в качестве расширения.
+- <xref:EnvDTE80.IInternalExtenderProvider> Реализации оболочки подтипа проекта следует делегировать, его внутренний подтип проекта. В частности, реализации <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> необходимо получить строку имен из внутреннего подтипа проекта, а затем выполнит объединение строк, необходимо добавить в качестве расширения.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Реализации оболочки подтипа проекта необходимо создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта его внутренний подтип проекта и удерживайте его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что оболочка существует объект конфигурации подтипа проекта. Внешним подтипом проекта можно сначала выберите интерфейсов конфигурации, оно может обработать напрямую, а затем делегирует rest для реализации внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Реализации оболочки подтипа проекта необходимо создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта его внутренний подтип проекта и удерживайте его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что оболочка существует объект конфигурации подтипа проекта. Внешним подтипом проекта можно сначала выберите интерфейсов конфигурации, оно может обработать напрямую, а затем делегирует rest для реализации внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Поддержка интерфейсов
 
