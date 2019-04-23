@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553b7a542bc49b3105462a5f53082917b1741916
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803672"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670424"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Создание пользовательского интерфейса с помощью Blend для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,6 @@ Blend для Visual Studio помогает разрабатывать клас�
 
  **Категории**. Развертывание и свертывание категорий свойств. Для отображения или скрытия сведений о категории щелкните **Развернуть** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") или **Свернуть** ![Свернуть](../designers/media/b5-collapse-button.png "b5_collapse_button").
 
-
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                 ![](../designers/media/b1-1.png "B1_1")                                 |                                                                              **Имя и тип**. Просмотр значка, имени и типа выбранного объекта.                                                                              |
@@ -123,5 +122,5 @@ Blend для Visual Studio помогает разрабатывать клас�
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [панель "Свойства"](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Вставка элементов управления и изменение их поведения](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [анимации объектов](../designers/animate-objects-in-xaml-designer.md) [Рисование фигур и контуров](../designers/draw-shapes-and-paths.md) [проектирование XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)

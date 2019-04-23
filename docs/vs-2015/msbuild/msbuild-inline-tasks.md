@@ -11,17 +11,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792178"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670307"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
   
  Начиная с версии 4 .NET Framework, вы можете создавать встроенные задачи в файле проекта. Для размещения задачи не нужно создавать отдельную сборку. Это упрощает как отслеживание исходного кода, так и развертывание задачи. Исходный код встроен в скрипт.  
@@ -192,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство. Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Пошаговое руководство: Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

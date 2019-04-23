@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980046"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670177"
 ---
 # <a name="add-new-data-sources"></a>Добавление новых источников данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В контексте .NET data tools в Visual Studio термин *источника данных* ссылается на объекты .NET, которые подключаются к хранилищу данных и предоставлять эти данные приложения .NET. Конструкторы Visual Studio можно использовать выходные данные источника данных для создания стандартный код, который привязывает данные формы, при перетаскивании объектов базы данных из **источников данных** окна. Этот тип источника данных может быть:  
   
 -   Класс в модели Entity Framework, которая связана с каким-либо базы данных.  

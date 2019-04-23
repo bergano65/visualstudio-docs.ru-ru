@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fcf169d901bff20b2b2b874cc8c57d9e3907f01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a86efc2e181a7f692e84244eecb2355783b188bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039375"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Практическое руководство. Возврат к функции, вызвавшей MFC, при прерывании работы в MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58993910"
   
 ### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>Переход к функции, из которой был вызван MFC  
   
--   Используйте окно **Стек вызовов**.  
+- Используйте окно **Стек вызовов**.  
   
 ## <a name="see-also"></a>См. также  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
