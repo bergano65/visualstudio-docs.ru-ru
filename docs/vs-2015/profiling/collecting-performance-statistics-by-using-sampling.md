@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a51487cd074229d3f2c5fc4074fd184b22170c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117477"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "54777109"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Метод выборки можно задать с помощью одной из приведенных ниже процедур.  
   
--   На первой странице мастера профилирования щелкните **Выборка циклов ЦП (рекомендуется)**.  
+- На первой странице мастера профилирования щелкните **Выборка циклов ЦП (рекомендуется)**.  
   
--   На панели инструментов **обозревателя производительности** в списке **Метод** щелкните пункт **Выборка**.  
+- На панели инструментов **обозревателя производительности** в списке **Метод** щелкните пункт **Выборка**.  
   
--   На странице **Общие** диалогового окна свойств сеанса анализа производительности выберите **Выборка**.  
+- На странице **Общие** диалогового окна свойств сеанса анализа производительности выберите **Выборка**.  
   
 ## <a name="common-tasks"></a>Общие задачи  
  Дополнительные параметры можно указать в диалоговом окне _Сеанс производительности_**страницы свойств** сеанса анализа производительности. Чтобы открыть это диалоговое окно, выполните указанные ниже действия.  

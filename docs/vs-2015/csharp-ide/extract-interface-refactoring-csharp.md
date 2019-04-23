@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116749"
 ---
 # <a name="extract-interface-refactoring-c"></a>Рефакторинг для извлечения интерфейса (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58990317"
   
 ### <a name="to-use-extract-interface"></a>Чтобы использовать извлечение интерфейса  
   
-1.  Создайте консольное приложение с именем `ExtractInterface`, а затем замените `Program` следующим кодом  
+1. Создайте консольное приложение с именем `ExtractInterface`, а затем замените `Program` следующим кодом  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ ms.locfileid: "58990317"
     }  
     ```  
   
-2.  Причем курсор будет расположен в `MethodB`и нажмите кнопку **извлечение интерфейса** на **рефакторинг** меню.  
+2. Причем курсор будет расположен в `MethodB`и нажмите кнопку **извлечение интерфейса** на **рефакторинг** меню.  
   
      **Извлечение интерфейса** откроется диалоговое окно.  
   
@@ -53,9 +53,9 @@ ms.locfileid: "58990317"
   
      Вы можете щелкнуть правой кнопкой мыши, выберите пункт **рефакторинг**и нажмите кнопку **извлечение интерфейса** для отображения **извлечение интерфейса** диалоговое окно.  
   
-3.  Нажмите кнопку **выбрать все**.  
+3. Нажмите кнопку **выбрать все**.  
   
-4.  Нажмите кнопку **ОК**.  
+4. Нажмите кнопку **ОК**.  
   
      Появится новый файл, IProtoA.cs и следующий код:  
   

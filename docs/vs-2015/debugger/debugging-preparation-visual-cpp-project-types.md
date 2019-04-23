@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116203"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Подготовка к отладке: Типы проектов Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58979859"
   
  Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Рекомендуемые значения свойств](#BKMK_Recommended_Property_Settings)  
   
  [Проекты Win32](#BKMK_Win32_Projects)  
@@ -45,7 +45,7 @@ ms.locfileid: "58979859"
   
   [Приложения Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a> Рекомендуемые значения свойств  
+## <a name="BKMK_Recommended_Property_Settings"></a> Рекомендуемые значения свойств  
  Некоторые свойства должны быть установлены одинаково для всех скриптов неуправляемой отладки. В следующих таблицах приводятся рекомендованные параметры свойств. Параметры, здесь не перечисленные, могут иметь различные значения для различных типов неуправляемых проектов. Дополнительные сведения см. в разделе [параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Свойства конфигурации &#124; C/C++ &#124; узел оптимизации  
@@ -62,22 +62,22 @@ ms.locfileid: "58979859"
   
  [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a> Проекты Win32  
+## <a name="BKMK_Win32_Projects"></a> Проекты Win32  
  Win32-приложения — это традиционные программы для Windows, написанные на C или C++. Отладка приложений такого типа в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не вызывает никаких затруднений.  
   
  Win32-приложения включают приложения MFC и ATL-проекты. В них используются Windows API и могут использоваться MFC или ATL, но они не используют среду CLR. Они могут, однако, вызывать управляемый код, использующий среду CLR.  
   
  В следующей процедуре описывается отладка проекта Win32 в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Еще одним способом отладки приложений Win32 является запуск приложения вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и подключение к этому приложению. Дополнительные сведения см. в разделе [подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Отладка приложения Win32 на C или C++  
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Отладка приложения Win32 на C или C++  
   
-1.  Откройте проект в Visual Studio.  
+1. Откройте проект в Visual Studio.  
   
-2.  В меню **Отладка** выберите команду **Пуск**.  
+2. В меню **Отладка** выберите команду **Пуск**.  
   
-3.  Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/debugger-basics.md).  
+3. Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Ручная установка конфигурации отладки  
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Ручная установка конфигурации отладки  
   
 1. В меню **Вид** выберите команду **Страницы свойств**.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "58979859"
   
    [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Приложения Windows Forms (.NET)  
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Приложения Windows Forms (.NET)  
  Шаблон **Приложение Windows Forms (.NET)** создает приложение Windows Forms [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Дополнительные сведения см. в разделе [Как создать проект приложения Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Отладка приложений такого типа в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] аналогична отладке управляемых приложений Windows Forms.  

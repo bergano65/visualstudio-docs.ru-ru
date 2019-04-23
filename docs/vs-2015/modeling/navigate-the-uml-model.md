@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116671"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "58990425"
   
  Все типы, кроме IElement, наследуют свойства от одного или нескольких супертипов.  
   
--   Краткое описание типов модели, см. в разделе [типы элементов модели UML](../modeling/uml-model-element-types.md).  
+- Краткое описание типов модели, см. в разделе [типы элементов модели UML](../modeling/uml-model-element-types.md).  
   
--   Полные сведения об API см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Полные сведения об API см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>Отношения  
  Свойства и связи, определенные в спецификации UML, реализуются в виде свойств .NET.  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам  
  Можно выполнить следующие действия:   
   
--   Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
+- Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. в разделе [Открытие модели UML с помощью Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. в разделе [Открытие модели UML с помощью Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   

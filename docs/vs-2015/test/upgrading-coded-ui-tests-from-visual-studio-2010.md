@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080700"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54803631"
 
  **Требования**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!NOTE]
 >  Visual Studio включает несколько типов тестового проекта. Если вы создадите новый закодированный тест пользовательского интерфейса, он будет создан в типе проекта закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
@@ -46,7 +46,7 @@ ms.locfileid: "54803631"
 |Новые интерфейсы API тестирования кода пользовательского интерфейса были добавлены в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Сборка завершится ошибкой**<br /><br /> Если вы создали закодированные тесты пользовательского интерфейса с помощью нового API тестирования пользовательского интерфейса в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], эти проекты не получится открыть в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Проекты с новым API должны управляться только в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |В [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] ссылки были добавлены в оператор "Choose" в CSPROJ-файле. В [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] мы используем файл целевых объектов обратной связи для включения ссылок на сборки закодированных тестов пользовательского интерфейса.|В [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], закодированный тест пользовательского интерфейса не получится добавить в тестовый проект, созданный в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (или SP1), который не содержит закодированный тест пользовательского интерфейса.<br /><br /> Процесс восстановления добавляет целевые файлы и оператор выбора. Если закодированного теста пользовательского интерфейса нет в тестовом проекте, проект помечается как восстановленный, и соответствующие ссылки не будут добавлены во время добавления закодированного теста пользовательского интерфейса в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Вам необходимо создать новый тестовый проект в том же решении с помощью [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и добавить в него новый закодированный тест пользовательского интерфейса. Кроме того, вы можете добавить закодированные тесты пользовательского интерфейса в тестовый проект в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 и открыть этот проект в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Обновление Visual Studio 2010 с пакетом обновления 1 (SP1)
+## <a name="UpgradingCodedUIFromVS2010_Update"></a> Обновление Visual Studio 2010 с пакетом обновления 1 (SP1)
  Обновление до [!INCLUDE[vs2010](../includes/vs2010-md.md)] с пакетом обновления 1 (SP1) с поддержкой совместимости для Visual Studio 2012 и Windows 8 доступно для загрузки в [Центре загрузки Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) , а также как обновление Visual Studio.
 
  После применения обновления улучшатся следующие функции средства закодированного теста пользовательского интерфейса [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 для Windows 8.
@@ -57,11 +57,11 @@ ms.locfileid: "54803631"
 
   Обновление также содержит исправления для следующих проблем:
 
-- **Покрытия кода:** неспособность открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **Объем протестированного кода**. Не удается открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] с пакетом обновления 1.
 
-- **Затруднительные артефакты теста:** в вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
+- **Артефакты жертв теста:** Вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 
-- **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).
+- **Тестирование нагрузки:** При запуске нагрузочного теста вместе с типом сети, отличных от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [обновление тестов из более ранних версиях Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [создания Закодированный тест пользовательского интерфейса из существующей записи действий](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

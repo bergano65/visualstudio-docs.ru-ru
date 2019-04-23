@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116170"
 ---
 # <a name="how-to-edit-a-register-value"></a>Практическое руководство. Изменение значения регистра
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58993872"
   
 ### <a name="to-change-the-value-of-a-register"></a>Чтобы изменить значение регистра  
   
-1.  В окне **Регистры** при помощи клавиши TAB или мыши переместите курсор на то значение, которое нужно изменить. Перед началом ввода курсор должен находиться впереди значения, которое требуется переписать.  
+1. В окне **Регистры** при помощи клавиши TAB или мыши переместите курсор на то значение, которое нужно изменить. Перед началом ввода курсор должен находиться впереди значения, которое требуется переписать.  
   
-2.  Введите новое значение.  
+2. Введите новое значение.  
   
     > [!CAUTION]
     >  Изменение значений регистров (в особенности регистров EIP и EBP) может повлиять на выполнение.  
