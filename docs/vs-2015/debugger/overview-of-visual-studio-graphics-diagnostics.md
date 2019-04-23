@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc0d040c899e137910449faeb14c8e241fad812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097192"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Обзор диагностики графики Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "58994157"
 
 ##### <a name="to-open-the-directx-control-panel"></a>Открытие панели управления DirectX
 
--   В строке меню выберите **Отладка**, **Графика**, **Панель управления DirectX**.
+- В строке меню выберите **Отладка**, **Графика**, **Панель управления DirectX**.
 
 ## <a name="graphics-analyzer"></a>Анализатор графики
  Анализатор графики Visual Studio представляет собой специальный интерфейс для анализа проблем отрисовки и производительности в уже захваченных кадрах. Внутри анализатора графики вы найдете несколько инструментов, помогающих изучать и анализировать поведение отрисовки в приложении. Каждый инструмент предоставляет различные виды информации о рассматриваемом кадре, и все эти инструменты предназначены для совместного использования, что позволяет на интуитивном уровне отслеживать источник проблемы отрисовки, начиная с его появления в буфере кадров.

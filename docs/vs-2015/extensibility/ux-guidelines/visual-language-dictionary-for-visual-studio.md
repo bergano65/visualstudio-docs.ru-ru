@@ -8,12 +8,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc64cd1d1a4fae8703f95aa4c2da9b2bb5b363cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ce4316c874183e920dd767bcef495b95fb73ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073713"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Словарь визуального языка для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Visual Studio использует общий язык visual, чтобы про
 
   **Перейти к разделу:**
 
-1.  [Основные понятия A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+1. [Основные понятия A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
 
-2.  [Продукты и операционные системы](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+2. [Продукты и операционные системы](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
 
-3.  [Основные понятия, используя кнопки со стрелками](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+3. [Основные понятия, используя кнопки со стрелками](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
 
-4.  [Индикаторы состояния](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+4. [Индикаторы состояния](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
 
-##  <a name="BKMK_VLDConcepts"></a> Основные понятия A – Z
+## <a name="BKMK_VLDConcepts"></a> Основные понятия A – Z
 
-###  <a name="BKMK_VLDConceptsA"></a> ОБЪЕКТ
+### <a name="BKMK_VLDConceptsA"></a> ОБЪЕКТ
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -56,7 +56,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Предупреждения**|![Значок оповещения](../../extensibility/ux-guidelines/media/vld-c-alert.png "VLD_C_Alert")||
 |**Альфа-канала**|![Значок альфа-канал](../../extensibility/ux-guidelines/media/vld-c-alphachannel.png "VLD_C_AlphaChannel")||
 |**Анимация**|![Значок анимации](../../extensibility/ux-guidelines/media/vld-c-animation.png "VLD_C_Animation")|![Значок ошибки анимации](../../extensibility/ux-guidelines/media/vld-c-animation-animationerror.png "VLD_C_Animation_AnimationError") ошибка анимации![значок следующей анимации](../../extensibility/ux-guidelines/media/vld-c-animation-nextanimation.png "VLD_C_Animation_NextAnimation") анимации|
-|**Приложение** проекта|![Значок приложения](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Значок ошибки роли приложения](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") ошибки роли приложения![C&#43; &#43; значок проекта MFC](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") проекта C++ MFC|
+|**Приложение** проекта|![Значок приложения](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Значок ошибки роли приложения](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") ошибки роли приложения![C&#43; &#43; значок проекта MFC](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") C++ проект MFC|
 |**Область**|![Значок в области](../../extensibility/ux-guidelines/media/vld-c-area.png "VLD_C_Area")|![Значок диаграммы с областями сплайна](../../extensibility/ux-guidelines/media/vld-c-area-splineareachart.png "VLD_C_Area_SplineAreaChart") сплайн-диаграмма с областями![значок рядов областями с накоплением](../../extensibility/ux-guidelines/media/vld-c-area-stackedareaseries.png "VLD_C_Area_StackedAreaSeries") с областями с накоплением серии|
 |**Упорядочить**|![Значок упорядочивания](../../extensibility/ux-guidelines/media/vld-c-arrange.png "VLD_C_Arrange")|![Упорядочить фигуры значок](../../extensibility/ux-guidelines/media/vld-c-arrange-arrangeshapes.png "VLD_C_Arrange_ArrangeShapes") упорядочить фигуры![автоматически&#45;упорядочить фигуры значок](../../extensibility/ux-guidelines/media/vld-c-arrange-autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes") Автоупорядочивание фигур|
 |**Assign**|![Назначение значка](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||
@@ -69,7 +69,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Запись звука**|![Значок звукозаписи](../../extensibility/ux-guidelines/media/vld-c-audiorecording.png "VLD_C_AudioRecording")|![Значок «запись» выключения звука](../../extensibility/ux-guidelines/media/vld-c-audiorecording-recordmute.png "VLD_C_AudioRecording_RecordMute") Выкл![значок «запись экрана и речи»](../../extensibility/ux-guidelines/media/vld-c-audiorecording-recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice") Запись экрана и речи|
 |**"Автосумма"**|![Значок автосуммирования](../../extensibility/ux-guidelines/media/vld-c-autosum.png "VLD_C_Autosum")||
 
-###  <a name="BKMK_VLDConceptsB"></a> B
+### <a name="BKMK_VLDConceptsB"></a> B
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -85,7 +85,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Бизнеса**|![Значок бизнеса](../../extensibility/ux-guidelines/media/vld-c-business.png "VLD_C_Business")|![Значок шаблона бизнес-модели](../../extensibility/ux-guidelines/media/vld-c-business-businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate") шаблон модели бизнеса![значок источника данных объекты бизнеса](../../extensibility/ux-guidelines/media/vld-c-business-businessobjectsdatasource.png "VLD_C_Business_ BusinessObjectsDataSource") источник бизнес-объекты данных![значок онлайн-бизнеса](../../extensibility/ux-guidelines/media/vld-c-business-onlinebusiness.png "VLD_C_Business_OnlineBusiness") онлайн-бизнеса|
 |**Button**|![Значок кнопки](../../extensibility/ux-guidelines/media/vld-c-button.png "VLD_C_Button")|![Значок добавления кнопки](../../extensibility/ux-guidelines/media/vld-c-button-addbutton.png "VLD_C_Button_AddButton")кнопка "Добавить"![значок изображения кнопки](../../extensibility/ux-guidelines/media/vld-c-button-imagebutton.png "VLD_C_Button_ImageButton") кнопка-изображение![связанные значок кнопки](../../extensibility/ux-guidelines/media/vld-c-button-linkedbutton.png "VLD_C_Button_LinkedButton") связанной кнопки|
 
-###  <a name="BKMK_VLDConceptsC"></a> C
+### <a name="BKMK_VLDConceptsC"></a> C
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -127,7 +127,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Пользовательское выражение** прогноза|![Значок специального выражения](../../extensibility/ux-guidelines/media/vld-c-customexpression.png "VLD_C_CustomExpression")|![Прогноз интеллектуального анализа данных](../../extensibility/ux-guidelines/media/vld-c-customexpression-dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction") Прогноз интеллектуального анализа данных|
 |**Вырезать**|![Значок «Вырезать»](../../extensibility/ux-guidelines/media/vld-c-cut.png "VLD_C_Cut")||
 
-###  <a name="BKMK_VLDConceptsD"></a> D
+### <a name="BKMK_VLDConceptsD"></a> D
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -149,21 +149,21 @@ Visual Studio использует общий язык visual, чтобы про
 |**динамические**|![Динамический значок](../../extensibility/ux-guidelines/media/vld-c-dynamic.png "VLD_C_Dynamic")|![Значок динамического элемента управления ASP.NET](../../extensibility/ux-guidelines/media/vld-c-dynamic-aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl") динамический элемент управления ASP.NET ![C&#35; значок веб-сайт динамических данных](../../extensibility/ux-guidelines/media/vld-c-dynamic-csdynamicdatawebsite.png "VLD_C_Dynamic_ CSDynamicDataWebsite") C# веб-сайт динамических данных ![значок динамического проверяющего элемента управления](../../extensibility/ux-guidelines/media/vld-c-dynamic-dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator") динамического проверяющего элемента управления|
 |**Динамическое значение**|![Значок динамического значения](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue.png "VLD_C_DynamicValue")|![Значок динамического значения копирования](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue-copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue") скопировать динамическое значение ![значок очистить динамическое значение](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue-emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue") Очистить динамическое значение|
 
-###  <a name="BKMK_VLDConceptsE"></a> E
+### <a name="BKMK_VLDConceptsE"></a> E
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Правка**|![Значок "Изменить"](../../extensibility/ux-guidelines/media/vld-c-edit.png "VLD_C_Edit")|![Значок редактора адреса](../../extensibility/ux-guidelines/media/vld-c-edit-addresseditor.png "VLD_C_Edit_AddressEditor") редактор адресов ![значок редактирования с запроса](../../extensibility/ux-guidelines/media/vld-c-edit-editquery.png "VLD_C_Edit_EditQuery") редактирование запроса ![изменение значок отношения](../../extensibility/ux-guidelines/media/vld-c-edit-editrelation.png "VLD_C_Edit_EditRelation") изменить отношение|
 |**Изменить** заметки сталкивается влево или вправо, в зависимости от того, как выглядит базовый значок. Выбор наилучшего Общая структура значок ориентации.|||
 |**Эффекты** совпадение с кодом «Function» и «Variable (используется глобально)»|![Значок эффекта](../../extensibility/ux-guidelines/media/vld-c-effects.png "VLD_C_Effects")||
-|**пустой**|![Значок «Очистить»](../../extensibility/ux-guidelines/media/vld-c-empty.png "VLD_C_Empty")|![Значок пустой страницы](../../extensibility/ux-guidelines/media/vld-c-empty-blankpage.png "VLD_C_Empty_BlankPage") пустую страницу ![C&#43; &#43; значок пустого проекта](../../extensibility/ux-guidelines/media/vld-c-empty-cppemptyproject.png "VLD_C_Empty_CPPEmptyProject") пустой C++ проект ![F&#35; значок пустой веб-сайт проекта](../../extensibility/ux-guidelines/media/vld-c-empty-fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject") F# пустой веб-сайт проекта|
+|**пустой**|![Значок «Очистить»](../../extensibility/ux-guidelines/media/vld-c-empty.png "VLD_C_Empty")|![Значок пустой страницы](../../extensibility/ux-guidelines/media/vld-c-empty-blankpage.png "VLD_C_Empty_BlankPage") пустую страницу ![C&#43; &#43; значок пустого проекта](../../extensibility/ux-guidelines/media/vld-c-empty-cppemptyproject.png "VLD_C_Empty_CPPEmptyProject") C++ пустой проект ![F&#35; значок пустой веб-сайт проекта](../../extensibility/ux-guidelines/media/vld-c-empty-fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject") F# пустой веб-сайт проекта|
 |**Перечислитель**|![Значок перечислителя](../../extensibility/ux-guidelines/media/vld-c-enumerator.png "VLD_C_Enumerator")|![Создать значок перечислителя](../../extensibility/ux-guidelines/media/vld-c-enumerator-createenumerator.png "VLD_C_Enumerator_CreateEnumerator") создать перечислитель|
 |**Среда**|![Значок среды](../../extensibility/ux-guidelines/media/vld-c-environment.png "VLD_C_Environment")|![Подключение к среде значок](../../extensibility/ux-guidelines/media/vld-c-environment-connecttoenvironment.png "VLD_C_Environment_ConnectToEnvironment") подключиться к среде ![значок среды библиотеки создать](../../extensibility/ux-guidelines/media/vld-c-environment-createlibraryenvironment.png "VLD_C_Environment_ CreateLibraryEnvironment") Создание библиотеки среды ![значок среды библиотеки](../../extensibility/ux-guidelines/media/vld-c-environment-libraryenvironment.png "VLD_C_Environment_LibraryEnvironment") среды библиотеки|
 |**Событие** триггера|![Значок события](../../extensibility/ux-guidelines/media/vld-c-event.png "VLD_C_Event")|![Значок добавления событий](../../extensibility/ux-guidelines/media/vld-c-event-addevent.png "VLD_C_Event_AddEvent") событии Add ![значок журнал событий](../../extensibility/ux-guidelines/media/vld-c-event-eventlog.png "VLD_C_Event_EventLog") журнала событий|
 |**Разверните узел**|![Значок "Развернуть"](../../extensibility/ux-guidelines/media/vld-c-expand.png "VLD_C_Expand")|![Значок развернутого возвращаемое значение](../../extensibility/ux-guidelines/media/vld-c-expand-returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded") вернуть расширенное значение|
 |**Экспорт** совпадение с кодом «Открыть»|![Значок экспорта](../../extensibility/ux-guidelines/media/vld-c-export.png "VLD_C_Export")|![Значок экспорта фильтра](../../extensibility/ux-guidelines/media/vld-c-export-exportfilter.png "VLD_C_Export_ExportFilter") фильтр экспорта ![значок данных экспорта отчета](../../extensibility/ux-guidelines/media/vld-c-export-exportreportdata.png "VLD_C_Export_ExportReportData") Экспорт данных отчета ![Значок экспорта фильтра](../../extensibility/ux-guidelines/media/vld-c-export-exportreportfilter.png "VLD_C_Export_ExportReportFilter") Экспорт фильтра отчетов|
 
-###  <a name="BKMK_VLDConceptsF"></a> F
+### <a name="BKMK_VLDConceptsF"></a> F
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -180,7 +180,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Friend**|![Значок друга](../../extensibility/ux-guidelines/media/vld-c-friend.png "VLD_C_Friend")||
 |**Функция** выражение аналогично «Эффекты» и «Variable (используется глобально)»|![Значок функции](../../extensibility/ux-guidelines/media/vld-c-function.png "VLD_C_Function")|![Значок предупреждения о функции](../../extensibility/ux-guidelines/media/vld-c-function-functionwarning.png "VLD_C_Function_FunctionWarning") предупреждение функция ![значок функции страницы WPF](../../extensibility/ux-guidelines/media/vld-c-function-wpfpagefunction.png "VLD_C_Function_WPFPageFunction") страницу WPF функция|
 
-###  <a name="BKMK_VLDConceptsG"></a> G
+### <a name="BKMK_VLDConceptsG"></a> G
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -192,7 +192,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Группирование**|![Значок «группирование»](../../extensibility/ux-guidelines/media/vld-c-grouping.png "VLD_C_Grouping")|![Значок группы диалогового окна](../../extensibility/ux-guidelines/media/vld-c-grouping-dialoggroup.png "VLD_C_Grouping_DialogGroup") диалоговое окно группы ![значок Team](../../extensibility/ux-guidelines/media/vld-c-grouping-team.png "VLD_C_Grouping_Team") Team ![значок виртуальной машины ](../../extensibility/ux-guidelines/media/vld-c-grouping-virtualmachines.png "VLD_C_Grouping_VirtualMachines") виртуальных машин|
 |Наложение несколько объектов друг над другом представляет понятие **группирования** или количество элементов.|||
 
-###  <a name="BKMK_VLDConceptsH"></a> H
+### <a name="BKMK_VLDConceptsH"></a> H
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -200,7 +200,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Журнал**|![Значок журнала](../../extensibility/ux-guidelines/media/vld-c-history.png "VLD_C_History")||
 |**Корневая папка**|![Значок](../../extensibility/ux-guidelines/media/vld-c-home.png "VLD_C_Home")|![Значок домашний экран LightSwitch](../../extensibility/ux-guidelines/media/vld-c-home-lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen") домашний экран LightSwitch|
 
-###  <a name="BKMK_VLDConceptsI"></a> Я
+### <a name="BKMK_VLDConceptsI"></a> Я
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -215,24 +215,24 @@ Visual Studio использует общий язык visual, чтобы про
 |**Interface**|![Значок «интерфейс»](../../extensibility/ux-guidelines/media/vld-c-interface.png "VLD_C_Interface")|![Реализуйте интерфейс значок](../../extensibility/ux-guidelines/media/vld-c-interface-implementinterface.png "VLD_C_Interface_ImplementInterface") реализовать интерфейс|
 |**Элемент**|![Значок элемента](../../extensibility/ux-guidelines/media/vld-c-item.png "VLD_C_Item")|![Значок элемента копирования](../../extensibility/ux-guidelines/media/vld-c-item-copyitem.png "VLD_C_Item_CopyItem") копию элемента ![значок элемента списка создать](../../extensibility/ux-guidelines/media/vld-c-item-createlistitem.png "VLD_C_Item_CreateListItem") Создание элемента списка ![возврата значок элемента](../../extensibility/ux-guidelines/media/vld-c-item-checkinitem.png "VLD_C_Item_CheckInItem") вернуть элемент|
 
-###  <a name="BKMK_VLDConceptsK"></a> K
+### <a name="BKMK_VLDConceptsK"></a> K
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Ключ** разрешение, идентификатор|![Значок ключа](../../extensibility/ux-guidelines/media/vld-c-key.png "VLD_C_Key")|![Значок нового ключа](../../extensibility/ux-guidelines/media/vld-c-key-newkey.png "VLD_C_Key_NewKey") новый ключ ![значок разрешения](../../extensibility/ux-guidelines/media/vld-c-key-permission.png "VLD_C_Key_Permission") разрешение ![значок идентификатор текущего элемента для Get](../../extensibility/ux-guidelines/media/vld-c-key-getcurrentitemid.png "VLD_C_Key_GetCurrentItemID") получить идентификатор текущего элемента|
 |**Ключевой показатель эффективности (KPI)**|![Значок ключевого показателя Эффективности](../../extensibility/ux-guidelines/media/vld-c-kpi.png "VLD_C_KPI")|![Удалить значок ключевого показателя Эффективности](../../extensibility/ux-guidelines/media/vld-c-kpi-deletekpi.png "VLD_C_KPI_DeleteKPI") удалить ключевой показатель Эффективности ![значок представление браузера ключевого показателя Эффективности](../../extensibility/ux-guidelines/media/vld-c-kpi-kpibrowserview.png "VLD_C_KPI_KPIBrowserView") представление браузера ключевого показателя Эффективности ![ключевой показатель Эффективности с значок ошибки](../../extensibility/ux-guidelines/media/vld-c-kpi-kpiwitherror.png "VLD_C_KPI_KPIWithError") ключевого показателя Эффективности с ошибкой|
 
-###  <a name="BKMK_VLDConceptsL"></a> L
+### <a name="BKMK_VLDConceptsL"></a> L
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
-|**Библиотека**|![Значок библиотеки](../../extensibility/ux-guidelines/media/vld-c-library.png "VLD_C_Library")|![C&#43; &#43; значок проекта библиотеки классов](../../extensibility/ux-guidelines/media/vld-c-library-cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject") проект библиотеки классов C++ ![значок экспорта библиотеки](../../extensibility/ux-guidelines/media/vld-c-library-exportslibrary.png "VLD_C_Library_ ExportsLibrary") экспорты библиотеки ![F&#35; значок библиотеки элемента управления Windows Forms](../../extensibility/ux-guidelines/media/vld-c-library-fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary") F# Windows Forms Библиотека элементов управления|
+|**Библиотека**|![Значок библиотеки](../../extensibility/ux-guidelines/media/vld-c-library.png "VLD_C_Library")|![C&#43; &#43; значок проекта библиотеки классов](../../extensibility/ux-guidelines/media/vld-c-library-cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject") C++ проект библиотеки классов ![значок экспорта библиотеки](../../extensibility/ux-guidelines/media/vld-c-library-exportslibrary.png "VLD_C_ Library_ExportsLibrary") экспорты библиотеки ![F&#35; значок библиотеки элемента управления Windows Forms](../../extensibility/ux-guidelines/media/vld-c-library-fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary") F# Windows Библиотека элементов управления формы|
 |**Ссылка**|![Link icon](../../extensibility/ux-guidelines/media/vld-c-link.png "VLD_C_Link")|![Преобразовать в гиперссылку значок](../../extensibility/ux-guidelines/media/vld-c-link-converttohyperlink.png "VLD_C_Link_ConvertToHyperlink") преобразовать в гиперссылку ![значок Создать связанную таблицу](../../extensibility/ux-guidelines/media/vld-c-link-createlinkedtable.png "VLD_C_Link_CreateLinkedTable") Создать связанную таблицу ![значок ссылки Edit](../../extensibility/ux-guidelines/media/vld-c-link-editlink.png "VLD_C_Link_EditLink") ссылку "Изменить"|
 |**Блокировка** закрытым, разрешение|![Значок блокировки](../../extensibility/ux-guidelines/media/vld-c-lock.png "VLD_C_Lock")|![Значок оси X блокировки](../../extensibility/ux-guidelines/media/vld-c-lock-lockxaxis.png "VLD_C_Lock_LockXAxis") заблокировать ось X ![значок разрешений ветви](../../extensibility/ux-guidelines/media/vld-c-lock-branchpermissions.png "VLD_C_Lock_BranchPermissions") ветви разрешения ![Значок частной очереди](../../extensibility/ux-guidelines/media/vld-c-lock-privatequeue.png "VLD_C_Lock_PrivateQueue") частной очереди|
 |**журнал**|![Значок журнала](../../extensibility/ux-guidelines/media/vld-c-log.png "VLD_C_Log")|![Значок свойств каталога](../../extensibility/ux-guidelines/media/vld-c-log-catalogproperties.png "VLD_C_Log_CatalogProperties") свойства каталога ![значок журнала действий](../../extensibility/ux-guidelines/media/vld-c-log-actionlog.png "VLD_C_Log_ActionLog") журнал действий ![Значок плана тестирования Connect](../../extensibility/ux-guidelines/media/vld-c-log-connecttestplan.png "VLD_C_Log_ConnectTestPlan") Connect плана тестирования|
 |**Loop**|![Значок цикла](../../extensibility/ux-guidelines/media/vld-c-loop.png "VLD_C_Loop")|![Добавить или Вставить значок условного цикла](../../extensibility/ux-guidelines/media/vld-c-loop-addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop") добавить или вставить условный цикл ![значок условного цикла](../../extensibility/ux-guidelines/media/vld-c-loop-conditionalloop.png "VLD_C_Loop_ConditionalLoop ") Условного цикла|
 
-###  <a name="BKMK_VLDConceptsM"></a> M
+### <a name="BKMK_VLDConceptsM"></a> M
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -256,7 +256,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Модуль**|![Значок модуля](../../extensibility/ux-guidelines/media/vld-c-module.png "VLD_C_Module")|![Значок проекта модуля слияния](../../extensibility/ux-guidelines/media/vld-c-module-mergemoduleproject.png "VLD_C_Module_MergeModuleProject") проекта модуля слияния ![значок добавления модуля](../../extensibility/ux-guidelines/media/vld-c-module-addmodule.png "VLD_C_Module_AddModule") добавить модуль ![ Значок исключения модуля слияния](../../extensibility/ux-guidelines/media/vld-c-module-mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude") исключения модуля слияния|
 |**Переместить**|![Значок «переместить»](../../extensibility/ux-guidelines/media/vld-c-move.png "VLD_C_Move")||
 
-###  <a name="BKMK_VLDConceptsN"></a> N
+### <a name="BKMK_VLDConceptsN"></a> N
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -267,14 +267,14 @@ Visual Studio использует общий язык visual, чтобы про
 |Пунктирная структуры объекта означает, что **скрытые или шаблонный**.|||
 |**Примечание**|![Значок заметки](../../extensibility/ux-guidelines/media/vld-c-note.png "VLD_C_Note")||
 
-###  <a name="BKMK_VLDConceptsO"></a> O
+### <a name="BKMK_VLDConceptsO"></a> O
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Откройте** совпадение с кодом «Экспорт»|![Значок открытия](../../extensibility/ux-guidelines/media/vld-c-open.png "VLD_C_Open")|![Значок открытия вложения](../../extensibility/ux-guidelines/media/vld-c-open-openattachment.png "VLD_C_Open_OpenAttachment") открыть вложение ![значок открытия результата сравнения](../../extensibility/ux-guidelines/media/vld-c-open-opencomparisonresult.png "VLD_C_Open_OpenComparisonResult") Open результат сравнения ![значок диалогового окна открытия файла](../../extensibility/ux-guidelines/media/vld-c-open-openfiledialog.png "VLD_C_Open_OpenFileDialog") диалогового окна открытия файла|
 |**Вывод**|![Значок вывода](../../extensibility/ux-guidelines/media/vld-c-output.png "VLD_C_Output")||
 
-###  <a name="BKMK_VLDConceptsP"></a> P
+### <a name="BKMK_VLDConceptsP"></a> P
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -294,13 +294,13 @@ Visual Studio использует общий язык visual, чтобы про
 |**Процедура** интерактивное окно|![Значок процедуры](../../extensibility/ux-guidelines/media/vld-c-procedure.png "VLD_C_Procedure")|![Значок интерактивного окна Python](../../extensibility/ux-guidelines/media/vld-c-procedure-pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow") интерактивное окно Python ![значок предупреждения о процедуре](../../extensibility/ux-guidelines/media/vld-c-procedure-procedurewarning.png "VLD_C_Procedure_ ProcedureWarning") предупреждение процедуры ![значок хранимой процедуры](../../extensibility/ux-guidelines/media/vld-c-procedure-storedprocedure.png "VLD_C_Procedure_StoredProcedure") хранимой процедуры|
 |**Свойство** параметры конфигурации|![Значок свойства](../../extensibility/ux-guidelines/media/vld-c-property.png "VLD_C_Property")|![Значок добавления свойства](../../extensibility/ux-guidelines/media/vld-c-property-addproperty.png "VLD_C_Property_AddProperty") добавить свойство ![значок предупреждения расширенного свойства](../../extensibility/ux-guidelines/media/vld-c-property-extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning") Расширенное свойство — предупреждение ![значок "Создать свойство"](../../extensibility/ux-guidelines/media/vld-c-property-newproperty.png "VLD_C_Property_NewProperty") новое свойство|
 
-###  <a name="BKMK_VLDConceptsQ"></a> ВОПРОС:
+### <a name="BKMK_VLDConceptsQ"></a> ВОПРОС:
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Запрос**|![Значок запроса](../../extensibility/ux-guidelines/media/vld-c-query.png "VLD_C_Query")|![Изменить значок запроса](../../extensibility/ux-guidelines/media/vld-c-query-editquery.png "VLD_C_Query_EditQuery") редактирование запроса ![значок расширителя запросов](../../extensibility/ux-guidelines/media/vld-c-query-queryextender.png "VLD_C_Query_QueryExtender") расширителя запросов ![быстрый значок запроса](../../extensibility/ux-guidelines/media/vld-c-query-quickquery.png "VLD_C_Query_QuickQuery") быстрый запрос|
 
-###  <a name="BKMK_VLDConceptsR"></a> R
+### <a name="BKMK_VLDConceptsR"></a> R
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -318,7 +318,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Правило**|![Значок правила](../../extensibility/ux-guidelines/media/vld-c-rule.png "VLD_C_Rule")|![Значок создания правила извлечения](../../extensibility/ux-guidelines/media/vld-c-rule-newextractionrule.png "VLD_C_Rule_NewExtractionRule") новое правило извлечения ![значок создания правила порога](../../extensibility/ux-guidelines/media/vld-c-rule-newthresholdrule.png "VLD_C_Rule_NewThresholdRule") New правило порогового значения ![значок создания правила проверки](../../extensibility/ux-guidelines/media/vld-c-rule-newvalidationrule.png "VLD_C_Rule_NewValidationRule") новое правило проверки|
 |**Линейка** измерения, руководство|![Значок линейки](../../extensibility/ux-guidelines/media/vld-c-ruler.png "VLD_C_Ruler")|![Режим измерения, на значке](../../extensibility/ux-guidelines/media/vld-c-ruler-measuremodeon.png "VLD_C_Ruler_MeasureModeOn")режим измерения включен ![значок единиц измерения](../../extensibility/ux-guidelines/media/vld-c-ruler-unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure") единицы измерения|
 
-###  <a name="BKMK_VLDConceptsS"></a> S
+### <a name="BKMK_VLDConceptsS"></a> S
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -339,7 +339,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Таблица стилей**|![Значок листа стиля](../../extensibility/ux-guidelines/media/vld-c-stylesheet.png "VLD_C_StyleSheet")|![Значок создания таблицы стилей](../../extensibility/ux-guidelines/media/vld-c-stylesheet-newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet") новую таблицу стилей ![значок листа стиля Attach](../../extensibility/ux-guidelines/media/vld-c-stylesheet-attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet") Attach Таблица стилей|
 |**Синхронизировать** обновления|![Значок синхронизации](../../extensibility/ux-guidelines/media/vld-c-synchronize.png "VLD_C_Synchronize")|![Значок JavaScript обновлено](../../extensibility/ux-guidelines/media/vld-c-synchronize-updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript") JavaScript обновлены ![база данных обновлена значок элементов](../../extensibility/ux-guidelines/media/vld-c-synchronize-databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems ") База данных обновлена элементы ![значок синхронизации](../../extensibility/ux-guidelines/media/vld-c-synchronize-sync.png "VLD_C_Synchronize_Sync") синхронизации|
 
-###  <a name="BKMK_VLDConceptsT"></a> T
+### <a name="BKMK_VLDConceptsT"></a> T
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -355,7 +355,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Переключатель**|![Значок переключения](../../extensibility/ux-guidelines/media/vld-c-toggle.png "VLD_C_Toggle")|![Переключить все точки останова значок](../../extensibility/ux-guidelines/media/vld-c-toggle-toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints") переключения всех точек останова ![переключателя значок](../../extensibility/ux-guidelines/media/vld-c-toggle-toggle.png "VLD_C_Toggle_Toggle") переключателя|
 |**Панель элементов**|![Значок панели элементов](../../extensibility/ux-guidelines/media/vld-c-toolbox.png "VLD_C_Toolbox")|![Значок элемента управления панели элементов WinForm](../../extensibility/ux-guidelines/media/vld-c-toolbox-winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl") элемента управления панели элементов Winform ![значок элемента управления панели элементов WPF](../../extensibility/ux-guidelines/media/vld-c-toolbox-wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl") Элемент управления панели элементов WPF|
 
-###  <a name="BKMK_VLDConceptsU"></a> U
+### <a name="BKMK_VLDConceptsU"></a> U
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -364,7 +364,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Пользователь** ролей, профиля|![Значок пользователя](../../extensibility/ux-guidelines/media/vld-c-user.png "VLD_C_User")|![Значок добавления пользователя](../../extensibility/ux-guidelines/media/vld-c-user-adduser.png "VLD_C_User_AddUser") добавить пользователя ![значок элемента управления пользователя Add web](../../extensibility/ux-guidelines/media/vld-c-user-addwebusercontrol.png "VLD_C_User_AddWebUserControl") добавьте пользовательский элемент управления web ![ Пользователь SQL&#45;определенные типы значок](../../extensibility/ux-guidelines/media/vld-c-user-sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType") определяемых пользователем типов SQL Server|
 |**Пользовательский интерфейс** пользовательского интерфейса|![Значок пользовательского интерфейса](../../extensibility/ux-guidelines/media/vld-c-userinterface.png "VLD_C_UserInterface")||
 
-###  <a name="BKMK_VLDConceptsV"></a> V
+### <a name="BKMK_VLDConceptsV"></a> V
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -375,7 +375,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Виртуальный** совпадение с кодом «Nonsubstantive (скрытый или шаблона)»|![Значок виртуального объекта](../../extensibility/ux-guidelines/media/vld-c-virtual.png "VLD_C_Virtual")|![Значок виртуальной среды](../../extensibility/ux-guidelines/media/vld-c-virtual-virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment") виртуальной среды|
 |Видимый|![Значок видимого объекта](../../extensibility/ux-guidelines/media/vld-c-visible.png "VLD_C_Visible")|![Замаскировать или скрыть значок](../../extensibility/ux-guidelines/media/vld-c-visible-cloakorhide.png "VLD_C_Visible_CloakOrHide") замаскировать или скрыть|
 
-###  <a name="BKMK_VLDConceptsW"></a> W
+### <a name="BKMK_VLDConceptsW"></a> W
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -384,19 +384,19 @@ Visual Studio использует общий язык visual, чтобы про
 |**Мастер**|![Значок мастера](../../extensibility/ux-guidelines/media/vld-c-wizard.png "VLD_C_Wizard")|![Значок мастера создания слоя карты](../../extensibility/ux-guidelines/media/vld-c-wizard-maplayerwizard.png "VLD_C_Wizard_MapLayerWizard") мастер слоев карт ![значок мастера классов MFC](../../extensibility/ux-guidelines/media/vld-c-wizard-mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard") мастер классов MFC ![Значок мастера создания карты](../../extensibility/ux-guidelines/media/vld-c-wizard-mapwizard.png "VLD_C_Wizard_MapWizard") мастера карт|
 |**Рабочий элемент**|![Значок рабочих элементов](../../extensibility/ux-guidelines/media/vld-c-workitem.png "VLD_C_WorkItem")|![Перейти к рабочему элементу значок](../../extensibility/ux-guidelines/media/vld-c-workitem-gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem") перейти к рабочему элементу ![значок запросов рабочих элементов](../../extensibility/ux-guidelines/media/vld-c-workitem-workitemquery.png "VLD_C_WorkItem_WorkItemQuery") запроса рабочего элемента|
 
-###  <a name="BKMK_VLDConceptsY"></a> Y
+### <a name="BKMK_VLDConceptsY"></a> Y
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Yield**|![Значок yield](../../extensibility/ux-guidelines/media/vld-c-yield.png "VLD_C_Yield")||
 
-###  <a name="BKMK_VLDConceptsZ"></a> Z
+### <a name="BKMK_VLDConceptsZ"></a> Z
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
 |**Масштаб**|![Значок масштаба](../../extensibility/ux-guidelines/media/vld-c-zoom.png "VLD_C_Zoom")|![Значок увеличения](../../extensibility/ux-guidelines/media/vld-c-zoom-zoomin.png "VLD_C_Zoom_ZoomIn") увеличение ![значок уменьшения](../../extensibility/ux-guidelines/media/vld-c-zoom-zoomout.png "VLD_C_Zoom_ZoomOut") уменьшить масштаб|
 
-##  <a name="BKMK_VLDProducts"></a> Продукты и операционные системы
+## <a name="BKMK_VLDProducts"></a> Продукты и операционные системы
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -408,7 +408,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**GitHub**|![Github icon](../../extensibility/ux-guidelines/media/vld-p-github.png "VLD_P_Github")||
 |**LightSwitch**|![Значок LightSwitch](../../extensibility/ux-guidelines/media/vld-p-lightswitch.png "VLD_P_LightSwitch")|![C&#35; значок библиотеки расширения LightSwitch](../../extensibility/ux-guidelines/media/vld-p-lightswitch-cslightswitchextensionlibrary.png "VLD_P_LightSwitch_CSLightSwitchExtensionLibrary") C# библиотеки расширений LightSwitch|
 |**Mercury**|![Значок Mercury](../../extensibility/ux-guidelines/media/vld-p-mercury.png "VLD_P_Mercury")||
-|**Microsoft Foundation Class (MFC)**|![MFC icon](../../extensibility/ux-guidelines/media/vld-p-mfc.png "VLD_P_MFC")|![Значок проекта элемента управления ActiveX в MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject") проекта элемента управления MFC ActiveX ![значок проекта приложения MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcapplicationproject.png "VLD_P_MFC_ MFCApplicationProject") проект приложения MFC ![C&#43; &#43; значок проекта библиотеки DLL MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject") проекта библиотеки DLL MFC C++|
+|**Microsoft Foundation Class (MFC)**|![MFC icon](../../extensibility/ux-guidelines/media/vld-p-mfc.png "VLD_P_MFC")|![Значок проекта элемента управления ActiveX в MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject") проекта элемента управления MFC ActiveX ![значок проекта приложения MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcapplicationproject.png "VLD_P_MFC_ MFCApplicationProject") проект приложения MFC ![C&#43; &#43; значок проекта библиотеки DLL MFC](../../extensibility/ux-guidelines/media/vld-p-mfc-cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject") C++ проекта библиотеки DLL MFC|
 |**Visual Studio**|![Visual Studio &#40;поле&#41; значок](../../extensibility/ux-guidelines/media/vld-p-visualstudio-box.png "VLD_P_VisualStudio_box")|![Значок средства обратной связи](../../extensibility/ux-guidelines/media/vld-p-visualstudio-box-feedbacktool.png "VLD_P_VisualStudio_box_FeedbackTool") средства обратной связи|
 |**Visual Studio (прозрачная эмблема)**|![Visual Studio &#40;прозрачная эмблема&#41; значок](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent.png "VLD_P_VisualStudio_transparent")|![Файл решения Visual Studio &#40;11&#41; значок](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosolutionfile-11.png "VLD_P_VisualStudio_transparent_VisualStudioSolutionFile_11") файл решения Visual Studio (11) ![файл решения Visual Studio &#40; 12&#41; значок](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosolutionfile-12.png "VLD_P_VisualStudio_transparent_VisualStudioSolutionFile_12") файл решения Visual Studio (12) ![значок "Параметры" Visual Studio](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosettings.png "VLD_P_VisualStudio_transparent_VisualStudioSettings") параметров Visual Studio|
 |**Blend для Visual Studio**|![Значок Blend Visual Studio](../../extensibility/ux-guidelines/media/vld-p-visualstudioblend.png "VLD_P_VisualStudioBlend")||
@@ -421,7 +421,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**WCF**|![WCF icon](../../extensibility/ux-guidelines/media/vld-p-wcf.png "VLD_P_WCF")|![Значок служб данных WCF](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfdataservices.png "VLD_P_WCF_WCFDataServices") службы WCF data services ![проекта WCF F&#35; значок](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfprojectfs.png "VLD_P_WCF_WCFProjectFS") проекта WCF F# ![Значок VB проекта WCF](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfprojectvb.png "VLD_P_WCF_WCFProjectVB") проекта WCF VB|
 |**WF**|![WF icon](../../extensibility/ux-guidelines/media/vld-p-wf.png "VLD_P_WF")|![Проект WF C&#35; значок](../../extensibility/ux-guidelines/media/vld-p-wf-wfprojectcs.png "VLD_P_WF_WFProjectCS") проекта WF C# ![значок VB проекта WF](../../extensibility/ux-guidelines/media/vld-p-wf-wfprojectvb.png "VLD_P_WF_WFProjectVB") WF проект VB|
 
-##  <a name="BKMK_VLDArrows"></a> Основные понятия, используя кнопки со стрелками
+## <a name="BKMK_VLDArrows"></a> Основные понятия, используя кнопки со стрелками
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|
@@ -463,7 +463,7 @@ Visual Studio использует общий язык visual, чтобы про
 |**Отменить** Revert, восстановление|![Undo icon](../../extensibility/ux-guidelines/media/vld-a-undo.png "VLD_A_Undo")|![Значок восстановления изображения](../../extensibility/ux-guidelines/media/vld-a-undo-imagerestore.png "VLD_A_Undo_ImageRestore") образ восстановления ![значок Uncomment](../../extensibility/ux-guidelines/media/vld-a-undo-uncomment.png "VLD_A_Undo_Uncomment") Uncomment|
 |**Копии** отправки|![Значок "вверх"](../../extensibility/ux-guidelines/media/vld-a-up.png "VLD_A_Up")|![Значок параметра передачи файла](../../extensibility/ux-guidelines/media/vld-a-up-fileuploadparameter.png "VLD_A_Up_FileUploadParameter") параметр передачи файла ![один уровень вверх значок](../../extensibility/ux-guidelines/media/vld-a-up-onelevelup.png "VLD_A_Up_OneLevelUp") один уровень вверх|
 
-##  <a name="BKMK_VLDStatus"></a> Индикаторы состояния
+## <a name="BKMK_VLDStatus"></a> Индикаторы состояния
 
 |Понятие|Главный значок|Другие примеры|
 |-------------|---------------|--------------------|

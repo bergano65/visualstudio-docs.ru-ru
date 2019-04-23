@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099745"
 ---
 # <a name="actions-pane-overview"></a>Общие сведения о панели действий
   Панель действий — это настраиваемая **действия с документами** область задач, который подключен к конкретному документу Microsoft Office Word или книгу Microsoft Office Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, таких как **источник XML** в Excel или **стили и форматирование** области задач в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.
@@ -61,17 +61,17 @@ ms.locfileid: "56608816"
 
  Существует несколько способов скрыть область задач в решении.
 
--   Word задайте <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> свойство <xref:Microsoft.Office.Interop.Word.TaskPane> , представляющий область действия с документами задач **false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
+- Word задайте <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> свойство <xref:Microsoft.Office.Interop.Word.TaskPane> , представляющий область действия с документами задач **false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Для Excel присвойте <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> свойство <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> объект **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
+- Для Excel присвойте <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> свойство <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> объект **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Для Word или Excel, можно также задать <xref:Microsoft.Office.Core.CommandBar.Visible%2A> свойства, представляющего область задач на панели команд **false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
+- Для Word или Excel, можно также задать <xref:Microsoft.Office.Core.CommandBar.Visible%2A> свойства, представляющего область задач на панели команд **false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608816"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Отображение панели действий с помощью пользовательского интерфейса Word или Excel
 
-1.  На ленте щелкните **представление** вкладки.
+1. На ленте щелкните **представление** вкладки.
 
-2.  В **Показать/скрыть** щелкните **действия с документами** кнопки-переключателя.
+2. В **Показать/скрыть** щелкните **действия с документами** кнопки-переключателя.
 
 ## <a name="program-actions-pane-events"></a>Событий панели действий программы
  Вы можете добавить несколько элементов управления на панель действий и затем написать код для реагирования на события в документе, отображая и скрывая пользовательские элементы управления. Если сопоставить элементы схемы XML с вашим документом, вы сможете показывать определенные пользовательские элементы управления в панели действий всякий раз, когда курсор находится внутри одного из XML-элементов. Дополнительные сведения см. в разделе [Как Сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) и [как: Сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).

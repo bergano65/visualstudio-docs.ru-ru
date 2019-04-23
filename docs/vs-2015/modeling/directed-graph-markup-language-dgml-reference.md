@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106024"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58979276"
 > [!NOTE]
 >  При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [цвета классе](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Синтаксис DGML  
+## <a name="DGML"></a> Синтаксис DGML  
  В следующей таблице описаны виды элементов, используемых в языке DGML.  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ ms.locfileid: "58979276"
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Псевдонимы для часто используемых путей  
+### <a name="AddAlias"></a> Псевдонимы для часто используемых путей  
  Замена часто используемых путей псевдонимами уменьшает размер DGML-файла и время, требуемое на загрузку или сохранение файла. Для создания псевдонима добавьте раздел `<Paths></Paths>` в конце DGML-файла. В этом разделе добавьте элемент `<Path/>` для того, чтобы определить псевдоним для пути.  
   
 ```xml  

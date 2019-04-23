@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107805"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Добавление контроллера меню на панель инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "58991331"
   
 ## <a name="implementing-the-menu-controller-commands"></a>Реализация команды меню контроллера  
   
-1.  В TWTestCommandPackageGuids.cs добавьте идентификаторы команд для трех меню элементов после существующей команды идентификаторы.  
+1. В TWTestCommandPackageGuids.cs добавьте идентификаторы команд для трех меню элементов после существующей команды идентификаторы.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ ms.locfileid: "58991331"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  В TWTestCommand.cs добавьте следующий код в верхней части класса TWTestCommand.  
+2. В TWTestCommand.cs добавьте следующий код в верхней части класса TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  В конструкторе TWTestCommand после последнего вызова `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
+3. В конструкторе TWTestCommand после последнего вызова `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ ms.locfileid: "58991331"
     }  
     ```  
   
-4.  Добавьте обработчик событий к классу TWTestCommand Пометить выбранные команды в виде checked.  
+4. Добавьте обработчик событий к классу TWTestCommand Пометить выбранные команды в виде checked.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ ms.locfileid: "58991331"
     }  
     ```  
   
-5.  Добавление обработчика событий, который отображает окно MessageBox, когда пользователь выбирает команду на контроллере меню:  
+5. Добавление обработчика событий, который отображает окно MessageBox, когда пользователь выбирает команду на контроллере меню:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ ms.locfileid: "58991331"
   
 ## <a name="testing-the-menu-controller"></a>Тестирование контроллера меню  
   
-1.  Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
+1. Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-2.  Откройте **окно инструментов тестирования** на **представления / Other Windows** меню.  
+2. Откройте **окно инструментов тестирования** на **представления / Other Windows** меню.  
   
      Контроллер меню отображается на панели инструментов в окне инструментов и отображает **MC элемент 1**.  
   
-3.  Слева от стрелки, нажмите кнопку меню контроллера.  
+3. Слева от стрелки, нажмите кнопку меню контроллера.  
   
      Вы должны увидеть три элемента, первая из которых установлен и имеет выделенный прямоугольник вокруг его значок. Нажмите кнопку **MC элемент 3**.  
   

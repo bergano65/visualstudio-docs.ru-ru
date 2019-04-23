@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070925"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.
@@ -29,9 +29,9 @@ ms.locfileid: "56644384"
 
  Последние сведения о разработке решений Office см. в следующих центрах разработки в сети MSDN:
 
--   [Разработка решений Office с порталом для разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) содержит ссылки на сведения о продукте, примеры кода, видеоролики и ресурсы сообщества, посвященные использованию Visual Studio для настройки приложений Office как часть решения .
+- [Разработка решений Office с порталом для разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) содержит ссылки на сведения о продукте, примеры кода, видеоролики и ресурсы сообщества, посвященные использованию Visual Studio для настройки приложений Office как часть решения .
 
--   [Центр разработчиков Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) содержит ссылки на технические статьи, примеры кода, файлы для загрузки, сведения сообщества, поддержки и другую документацию по настройке Office и бизнес-приложений Office (OBA ).
+- [Центр разработчиков Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) содержит ссылки на технические статьи, примеры кода, файлы для загрузки, сведения сообщества, поддержки и другую документацию по настройке Office и бизнес-приложений Office (OBA ).
 
 ## <a name="in-this-section"></a>Содержание раздела
 - [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

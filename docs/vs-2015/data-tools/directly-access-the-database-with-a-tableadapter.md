@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106635"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59654104"
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Для вставки новых записей непосредственно в базу данных  
   
--   Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы Northwind databaseas пример.  
+- Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы Northwind databaseas пример.  
   
     > [!NOTE]
     >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  
@@ -55,7 +55,7 @@ ms.locfileid: "59654104"
   
 #### <a name="to-update-records-directly-in-a-database"></a>Для обновления записей непосредственно в базе данных  
   
--   Вызов метода `Update` , передавая в новых и исходные значения для каждого столбца в качестве параметров.  
+- Вызов метода `Update` , передавая в новых и исходные значения для каждого столбца в качестве параметров.  
   
     > [!NOTE]
     >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  
@@ -65,7 +65,7 @@ ms.locfileid: "59654104"
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Для удаления записей непосредственно из базы данных  
   
--   Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы Northwind databaseas пример.  
+- Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы Northwind databaseas пример.  
   
     > [!NOTE]
     >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080960"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ ms.locfileid: "58992164"
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Добавление сертификата в хранилище надежных издателей в доверенной корневой области  
   
-1.  Получите цифровой сертификат в центре сертификации.  
+1. Получите цифровой сертификат в центре сертификации.  
   
-2.  Экспортируйте сертификат в формат Base64 X.509 (CER). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Экспортируйте сертификат в формат Base64 X.509 (CER). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  В командной строке на клиентских компьютерах выполните следующую команду:  
+3. В командной строке на клиентских компьютерах выполните следующую команду:  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Добавление сертификата в хранилище надежных издателей в другой корневой области  
   
-1.  Получите цифровой сертификат в центре сертификации.  
+1. Получите цифровой сертификат в центре сертификации.  
   
-2.  Экспортируйте сертификат в формат Base64 X.509 (CER). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Экспортируйте сертификат в формат Base64 X.509 (CER). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  В командной строке на клиентских компьютерах выполните следующую команду:  
+3. В командной строке на клиентских компьютерах выполните следующую команду:  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

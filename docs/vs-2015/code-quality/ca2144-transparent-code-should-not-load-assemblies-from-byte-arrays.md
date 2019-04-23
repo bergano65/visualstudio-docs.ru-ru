@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 87c786f39e4bd9b55e81ae17e6e92b15aa36039b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b54e74297ca44662f49b5842aae8e334a8f4045a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095884"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144. Прозрачный код не должен выполнять загрузку сборок из массивов байтов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58992211"
 ## <a name="cause"></a>Причина
  Прозрачный метод загружает сборку из массива байтов с помощью одного из следующих методов:
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>Описание правила
  Проверка безопасности для прозрачного кода не так тщательна, как проверка безопасности для критического кода, поскольку прозрачный код не может выполнять действия, требующие особых мер безопасности. Сборки, загруженные из массива байтов, могут остаться незамеченными в прозрачном коде, и этот массив байтов может содержать критичный или, что более важно, критичный в плане безопасности код, который подлежит аудиту. Таким образом прозрачный код не должен загружать сборки из массива байтов.

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099732"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Дополнительные сведения об ошибках SharePoint
   Вы можете получить помощь в устранении неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ошибки и предупреждения, в соответствующих разделах общедоступных форумов, средств SharePoint.
@@ -29,11 +29,11 @@ ms.locfileid: "56628914"
 ## <a name="troubleshoot-errors-and-issues"></a>Устранение неполадок и ошибок
  Для получения помощи некоторые распространенные ошибки и другие проблемы в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint см. в следующих разделах:
 
--   [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Другие источники
  В следующей таблице перечислены [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint, форумы и другие ресурсы.

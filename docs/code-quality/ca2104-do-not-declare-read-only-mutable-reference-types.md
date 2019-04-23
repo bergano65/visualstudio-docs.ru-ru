@@ -1,5 +1,5 @@
 ---
-title: CA2104. Не объявляйте изменяющиеся ссылочные типы только для чтения
+title: CA2104. Не следует объявлять только для чтения изменяемые ссылочные типы
 ms.date: 11/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077710"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104. Не объявляйте изменяющиеся ссылочные типы только для чтения
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945018"
 |Критическое изменение|Не критическое|
 
 > [!NOTE]
-> CA2104 правило является устаревшим и будет удален в будущих версиях Visual Studio.
+> CA2104 правило является устаревшим и будет удален в будущих версиях Visual Studio. Не следует реализовывать как [анализатор](roslyn-analyzers-overview.md) из-за сложного анализа, необходимые для определения фактического неизменность типа.
 
 ## <a name="cause"></a>Причина
 

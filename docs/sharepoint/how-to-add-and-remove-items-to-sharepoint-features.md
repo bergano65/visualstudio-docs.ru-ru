@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099381"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
   При создании решения SharePoint, Visual Studio добавляет элементы проекта SharePoint по умолчанию для компонента. Перед развертыванием можно добавлять и удалять элементы проекта SharePoint, чтобы изменить функцию SharePoint.
@@ -46,9 +46,9 @@ ms.locfileid: "56619229"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Удаление элементов SharePoint с помощью конструктора компонентов
 
-1.  Выберите один или несколько элементов в **элементы в компоненте** списка.
+1. Выберите один или несколько элементов в **элементы в компоненте** списка.
 
-2.  Выберите **удалить** кнопку (<) для удаления одного элемента за раз, или выберите **удалить все** кнопки (<<) для удаления всех элементов.
+2. Выберите **удалить** кнопку (<) для удаления одного элемента за раз, или выберите **удалить все** кнопки (<<) для удаления всех элементов.
 
      Элементы проекта SharePoint отображаются в **элементы в решении** списка.
 

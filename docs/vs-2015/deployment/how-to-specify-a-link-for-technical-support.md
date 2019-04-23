@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072374"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Практическое руководство. Задание ссылки на веб-страницу технической поддержки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58978883"
   
 ### <a name="to-specify-a-support-url"></a>Чтобы указать URL-адрес поддержки  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Перейдите на вкладку **Публикация**.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  Нажмите кнопку **параметры** кнопку, чтобы открыть **параметры публикации** диалоговое окно.  
+3. Нажмите кнопку **параметры** кнопку, чтобы открыть **параметры публикации** диалоговое окно.  
   
-4.  Нажмите кнопку **описание**.  
+4. Нажмите кнопку **описание**.  
   
-5.  В **URL-адрес поддержки** введите полный путь к веб-сайт, веб-страницы или UNC-папке.  
+5. В **URL-адрес поддержки** введите полный путь к веб-сайт, веб-страницы или UNC-папке.  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   

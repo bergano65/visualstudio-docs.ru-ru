@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077762"
 ---
 # <a name="program-document-level-customizations"></a>Программирование настроек уровня документа
   При расширении приложения Microsoft Office Word или Microsoft Office Excel с помощью настройки уровня документа вы можете выполнять следующие задачи.
@@ -62,13 +62,13 @@ ms.locfileid: "56624689"
 
 - Проекты уровня документа для Excel имеет несколько создаваемых классов: один для самой книги и по одному для каждого листа. По умолчанию эти классы имеют следующие имена:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   Созданный класс содержит обработчики событий, которые вызываются при открытии или закрытии документа. Для выполнения кода при открытии документа добавьте код в обработчик событий `Startup` . Для выполнения кода непосредственно перед закрытием документа добавьте код в обработчик событий `Shutdown` . Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
 

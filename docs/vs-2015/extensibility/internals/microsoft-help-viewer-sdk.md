@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099016"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Пакет SDK окна справки (Майкрософт)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Эта статья содержит следующие задачи для интеграторов окна справки Visual Studio:
 
--   Создание раздела (поддержка F1)
+- Создание раздела (поддержка F1)
 
--   Создание пакета фирменной символики содержимого средства просмотра справки
+- Создание пакета фирменной символики содержимого средства просмотра справки
 
--   Развертывание набора статей
+- Развертывание набора статей
 
--   Добавление справочных для оболочки Visual Studio (изолированная или интегрированная)
+- Добавление справочных для оболочки Visual Studio (изолированная или интегрированная)
 
--   Дополнительные ресурсы
+- Дополнительные ресурсы
 
 ### <a name="creating-a-topic-f1-support"></a>Создание раздела (поддержка F1)
  Этот раздел содержит обзор компонентов, представленных раздела, требования раздела, приводится краткое описание способов создания раздела (в том числе требования к поддержке F1) и наконец, пример раздела с его результат.
@@ -63,7 +63,7 @@ ms.locfileid: "58980418"
 
 - javascript
 
-- C# или C#
+- c# или c#
 
 - cplusplus или visualc ++ или c ++
 
@@ -132,17 +132,17 @@ ms.locfileid: "58980418"
 
  Текст (не включая верхний и нижний колонтитул) раздела будет содержать ссылки на страницы, раздел примечание, сворачиваемой области, фрагмент кода и раздел текста определенного языка.  Сведения об этих областях раздела, представленных в разделе фирменной символики.
 
-1.  Добавьте тег заголовка раздела:  `<div class="title">Contoso Topic 4</div>`
+1. Добавьте тег заголовка раздела:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Добавьте раздел Примечание: `<div class="alert"> add your table tag and text </div>`
+2. Добавьте раздел Примечание: `<div class="alert"> add your table tag and text </div>`
 
-3.  Добавьте сворачиваемой области:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Добавьте сворачиваемой области:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Добавьте фрагмент кода:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Добавьте фрагмент кода:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Добавьте код языка, определенный текст:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что devLangnu = можно ввести другие языки. Например, devLangnu = «Fortran» будет отображаться Fortran при фрагмента кода DisplayLanguage = Fortran
+5. Добавьте код языка, определенный текст:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что devLangnu = можно ввести другие языки. Например, devLangnu = «Fortran» будет отображаться Fortran при фрагмента кода DisplayLanguage = Fortran
 
-6.  Добавьте ссылки на страницы: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Добавьте ссылки на страницы: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Примечание: для неподдерживаемых new «Язык» (пример, F#, Кобол, ФОРТРАН) выделение кода цветом в фрагменте кода будет монохромная.
@@ -296,13 +296,13 @@ some F# code
 
 1. Задайте **VendorContent** значение раздела реестра справки 2.1:
 
-   -   Для 32-разрядных операционных системах:
+   - Для 32-разрядных операционных системах:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"=dword:00000001
 
-   -   Для 64-разрядных операционных системах:
+   - Для 64-разрядных операционных системах:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

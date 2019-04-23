@@ -14,12 +14,12 @@ ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8250709a6bc9477bb0fc154b8652e2b3e17aef01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b02db44cef8734f70f81847b224bc007fe1b4500
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114006"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ ms.locfileid: "58980737"
   
  Если ваш <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> вызывается класс, его методы вызываются в следующем порядке:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
   
      Возвращает положение и длину релевантных данных текущего буфера текста. Это указывает, что интегрированная среда разработки, чтобы не скрывать эти данные с помощью окна всплывающей подсказки.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
   
      Возвращает номер метода (отсчитываемый от нуля индекс), вы должны отображаться изначально. Например если возвращается ноль, затем первый перегруженный метод, изначально отображаемого.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
   
      Возвращает число перегруженных методов, которые можно использовать в текущем контексте. Если возвращается значение больше 1 для этого метода, затем представление текста отображает стрелки вверх и вниз для вас. Если щелкнуть стрелку вниз, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> метод. Если щелкнуть стрелку вверх, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> метод.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
   
      Текст подсказки о параметрах создается во время несколько вызовов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> методы.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
   
      Возвращает число параметров для отображения в методе.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
   
      Если возвращается метод число, соответствующее перегрузки, которые необходимо отобразить, этот метод вызывается, а затем с помощью вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> метод.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
   
      Сообщает службе языка для обновления редактора, когда отображается подсказка метода. В <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> метод, приведенный ниже код:  
   
@@ -77,6 +77,6 @@ ms.locfileid: "58980737"
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
     ```  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
   
      Вы получите вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод при закрытии окна подсказки метода.

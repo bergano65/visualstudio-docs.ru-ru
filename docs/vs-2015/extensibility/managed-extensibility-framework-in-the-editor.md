@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 589e392530238249eefb789170f4f986b24a8551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58981101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084032"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Для использования функциональных от части компонентов MEF  
   
-1.  Добавьте ссылки System.Composition.ComponentModel.dll, располагающийся в глобальный кэш сборок (GAC), и редактор сборок.  
+1. Добавьте ссылки System.Composition.ComponentModel.dll, располагающийся в глобальный кэш сборок (GAC), и редактор сборок.  
   
-2.  Добавьте соответствующую операторы using.  
+2. Добавьте соответствующую операторы using.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  Добавление `[Import]` атрибут интерфейсу службы, следующим образом.  
+3. Добавление `[Import]` атрибут интерфейсу службы, следующим образом.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Когда вы получили службу, вы можете использовать один из его компонентов.  
+4. Когда вы получили службу, вы можете использовать один из его компонентов.  
   
-5.  При компиляции сборки, поместите его... \Common7\IDE\Components\ папка установки Visual Studio.  
+5. При компиляции сборки, поместите его... \Common7\IDE\Components\ папка установки Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)

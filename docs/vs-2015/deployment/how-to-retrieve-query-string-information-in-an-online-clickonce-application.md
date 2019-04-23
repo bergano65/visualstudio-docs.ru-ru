@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069540"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "58993895"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Получение сведений о строке запроса из приложения ClickOnce  
   
-1.  Включите в проект приведенный ниже код. Чтобы этот код работал, потребуется иметь ссылку на System.Web и добавить операторы `using` или `Imports` для System.Web, System.Collections.Specialized и System.Deployment.Application.  
+1. Включите в проект приведенный ниже код. Чтобы этот код работал, потребуется иметь ссылку на System.Web и добавить операторы `using` или `Imports` для System.Web, System.Collections.Specialized и System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Вызовите определенную ранее функцию, чтобы получить <xref:System.Collections.DictionaryBase.Dictionary%2A> параметров строки запроса, индексированных по имени.  
+2. Вызовите определенную ранее функцию, чтобы получить <xref:System.Collections.DictionaryBase.Dictionary%2A> параметров строки запроса, индексированных по имени.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Включение передачи строки запроса в приложении ClickOnce с помощью MageUI.exe  
   
-1.  Откройте окно командной строки платформы .NET и введите:  
+1. Откройте окно командной строки платформы .NET и введите:  
   
     ```  
     MageUI  
     ```  
   
-2.  В меню **Файл** выберите пункт **Открыть**и откройте манифест развертывания для своего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это файл, заканчивающийся расширением `.application` .  
+2. В меню **Файл** выберите пункт **Открыть**и откройте манифест развертывания для своего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это файл, заканчивающийся расширением `.application` .  
   
-3.  Выберите панель **Параметры развертывания** в левом окне переходов и установите флажок **Разрешать передачу параметров URL-адресов в приложение** .  
+3. Выберите панель **Параметры развертывания** в левом окне переходов и установите флажок **Разрешать передачу параметров URL-адресов в приложение** .  
   
-4.  В меню **Файл** выберите команду **Сохранить**.  
+4. В меню **Файл** выберите команду **Сохранить**.  
   
 > [!NOTE]
 >  Кроме того, можно включить передачу строки запроса в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Установите флажок **Разрешать передачу параметров URL-адресов в приложение** , который можно найти, открыв **Свойства проекта**, выбрав вкладку **Публикация** , нажав кнопку **Параметры** , а затем выбрав **Манифесты**.  

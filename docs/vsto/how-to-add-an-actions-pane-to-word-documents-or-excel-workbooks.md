@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b33a3f7980031a84e381a317213de988280517c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085848"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Практическое руководство. Добавление области действий в документы Word или книги Excel
   Чтобы добавить панели действий в документ Microsoft Office Word или книге Microsoft Excel, необходимо сначала создайте пользовательский элемент управления Windows Forms. Затем добавьте пользовательский элемент управления <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поле (Word) или `ThisWorkbook.ActionsPane` поле (Excel) в проекте.
@@ -35,26 +35,26 @@ ms.locfileid: "56598243"
 
 #### <a name="to-create-the-user-control"></a>Создание пользовательского элемента управления
 
-1.  Откройте проект уровня документа Word или Excel в Visual Studio.
+1. Откройте проект уровня документа Word или Excel в Visual Studio.
 
-2.  В меню **Проект** выберите пункт **Добавить новый элемент**.
+2. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
-3.  В **Добавление нового элемента** выберите **элемента управления панели действий**, назовите его **HelloControl**и нажмите кнопку **добавить**.
+3. В **Добавление нового элемента** выберите **элемента управления панели действий**, назовите его **HelloControl**и нажмите кнопку **добавить**.
 
     > [!NOTE]
     >  Можно также добавить **пользовательский элемент управления** в проект. Классы, создаваемые **элемента управления панели действий** и **пользовательский элемент управления** элементов функционально эквивалентны.
 
-4.  Из **Windows Forms** вкладке **элементов** перетащите **кнопку** управления на элемент управления.
+4. Из **Windows Forms** вкладке **элементов** перетащите **кнопку** управления на элемент управления.
 
     > [!NOTE]
     >  Если элемент управления не отображается в конструкторе, дважды щелкните **HelloControl** в **обозревателе решений**.
 
-5.  Добавьте код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий кнопки. В следующем примере показан код для документа Microsoft Office Word.
+5. Добавьте код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий кнопки. В следующем примере показан код для документа Microsoft Office Word.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6.  В C# необходимо добавить обработчик событий для нажатия кнопки. Можно поместить этот код в `HelloControl` конструктора после вызова `InitializeComponent`.
+6. В C# необходимо добавить обработчик событий для нажатия кнопки. Можно поместить этот код в `HelloControl` конструктора после вызова `InitializeComponent`.
 
      Сведения о том, как создавать обработчики событий, см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
@@ -65,12 +65,12 @@ ms.locfileid: "56598243"
 
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>Чтобы добавить пользовательский элемент управления на панель действий
 
-1.  Добавьте следующий код, чтобы `ThisDocument` или `ThisWorkbook` класс как объявление уровня класса (не добавляйте этот код в метод).
+1. Добавьте следующий код, чтобы `ThisDocument` или `ThisWorkbook` класс как объявление уровня класса (не добавляйте этот код в метод).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2.  Добавьте следующий код, чтобы `ThisDocument_Startup` обработчик событий `ThisDocument` класса или `ThisWorkbook_Startup` обработчик событий `ThisWorkbook` класса.
+2. Добавьте следующий код, чтобы `ThisDocument_Startup` обработчик событий `ThisDocument` класса или `ThisWorkbook_Startup` обработчик событий `ThisWorkbook` класса.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]

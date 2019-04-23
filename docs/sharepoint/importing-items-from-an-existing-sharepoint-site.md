@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645151"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082585"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Импорт элементов из существующего сайта SharePoint
   Шаблон проекта "Импорт пакета решения SharePoint" позволяет многократно использовать элементы, такие как типы контента и поля, из существующих сайтов SharePoint в новом решении SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Хотя большинство импортированных решений можно запускать без изменений, существуют некоторые ограничения и вопросы, которые необходимо учитывать, особенно если вы изменяете какие-либо элементы после их импорта.
@@ -119,9 +119,9 @@ ms.locfileid: "56645151"
 
  При возникновении этой ошибки элемент не создается. Наиболее часто эта проблема возникает с импортированными модулями. Чтобы избежать этой проблемы, выполните следующие действия.
 
--   Используйте короткое имя проекта при вводе его в диалоговом окне **добавления нового проекта** .
+- Используйте короткое имя проекта при вводе его в диалоговом окне **добавления нового проекта** .
 
--   Создавайте проект в месте как можно ближе к корневой папке, чтобы сократить путь.
+- Создавайте проект в месте как можно ближе к корневой папке, чтобы сократить путь.
 
 ## <a name="the-sharepointproductversion-attribute"></a>Атрибут SharePointProductVersion
  При импорте решения, созданного в более ранней версии SharePoint, такой как [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] или [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], измените значение атрибута SharePointProductVersion в манифесте пакета на 12.0 или вставьте элемент управления диспетчера скриптов во все импортированные веб-страницы и оставьте для SharePointProductVersion значение 14.0. В противном случае импортированные веб-формы не будут отображаться в SharePoint.

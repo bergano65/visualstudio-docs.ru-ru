@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание сведений реестра для установщика | Документация Майкрософт
+title: Практическое руководство. Создание сведений реестра для установщика | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100785"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Как выполнить Создание сведений реестра для установщика
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое руководство. Создание сведений реестра для установщика
 
 *RegPkg.exe* служебная программа может использоваться для создания манифеста регистрации для управляемого пакета VSPackage. Манифест могут быть включены в установочный пакет установщика Windows. RegPkg также можно создать файл, которое может быть включено в исходном файле установки на основе [набора инструментов Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).
 
@@ -28,7 +28,7 @@ ms.locfileid: "54945987"
 
 ## <a name="to-create-a-registration-manifest"></a>Создание регистрации манифеста
 
--   Запустите RegPkg с **/regfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.
+- Запустите RegPkg с **/regfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.
 
      Например в командной строке, вы бы ввести примерно следующим образом:
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945987"
 
 ## <a name="to-view-a-registration-manifest"></a>Чтобы просмотреть манифест регистрации
 
--   Откройте манифест регистрации в любом текстовом редакторе.
+- Откройте манифест регистрации в любом текстовом редакторе.
 
      Следующий пример — манифест регистрации, RegPkg создает для службы языка IronPython:
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945987"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Для создания Windows Installer XML набор инструментов включаемый файл
 
--   Запустите RegPkg с **/wixfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.
+- Запустите RegPkg с **/wixfile** переключения. Укажите, какие-либо другие переключатели, имя выходного файла и путь пакета VSPackage.
 
      Например в командной строке, вы бы ввести примерно следующим образом:
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945987"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Чтобы просмотреть Windows Installer XML набор инструментов включаемый файл
 
--   Откройте Windows Installer XML Toolset включить файл в любом текстовом редакторе.
+- Откройте Windows Installer XML Toolset включить файл в любом текстовом редакторе.
 
      Следующий пример является включения файла, который создает RegPkg для службы языка IronPython:
 

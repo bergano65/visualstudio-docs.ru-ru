@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084367"
 ---
 # <a name="expose-project-objects"></a>Предоставление объектов проекта
 
@@ -28,7 +28,7 @@ ms.locfileid: "56609921"
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Для передачи объекта определенного VSPackage для проекта
 
-1.  Добавить соответствующие ключи *.pkgdef* файла вашего VSPackage.
+1. Добавить соответствующие ключи *.pkgdef* файла вашего VSPackage.
 
      Например, вот *.pkgdef* параметры для проекта на языке C++:
 
@@ -39,7 +39,7 @@ ms.locfileid: "56609921"
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  Реализация кода в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод, как показано в следующем примере.
+2. Реализация кода в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод, как показано в следующем примере.
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(

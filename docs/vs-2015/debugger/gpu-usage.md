@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066719"
 ---
 # <a name="gpu-usage"></a>Использование GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ ms.locfileid: "58989923"
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Чтобы отложить профилирование относительно запуска приложения, выполните следующие действия:  
   
-1.  В главном меню выберите **Отладка**, затем **Производительность и диагностика** (сочетание клавиш на клавиатуре: ALT+F2).  
+1. В главном меню выберите **Отладка**, затем **Производительность и диагностика** (сочетание клавиш на клавиатуре: ALT+F2).  
   
-2.  В концентраторе "Производительность и диагностика" выберите ссылку **параметры** рядом с элементом **Использование GPU**.  
+2. В концентраторе "Производительность и диагностика" выберите ссылку **параметры** рядом с элементом **Использование GPU**.  
   
-3.  В области **GPU Profiling Configuration** (Конфигурация профилирования GPU) страницы свойств **Общие** снимите флажок **Begin profiling at app start** (Начать профилирование с момента запуска приложения), чтобы отложить профилирование.  
+3. В области **GPU Profiling Configuration** (Конфигурация профилирования GPU) страницы свойств **Общие** снимите флажок **Begin profiling at app start** (Начать профилирование с момента запуска приложения), чтобы отложить профилирование.  
   
      ![Настройка времени запуска сбора данных об использовании GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ ms.locfileid: "58989923"
   
  Когда вы используете данный параметр, чтобы отложить сбор данных профилирования, в нижней части окна инструмента учета использования GPU становится доступной дополнительная ссылка при запуске приложения под управлением этого инструмента. Чтобы начать сбор данных профилирования, выберите ссылку **Start** (Запуск) в сообщении **Start collecting additional detailed GPU Usage Data** (Запуск сбора дополнительных подробных данных об использовании GPU).  
   
-##  <a name="hwsupport"></a> Поддержка оборудования и драйверов  
+## <a name="hwsupport"></a> Поддержка оборудования и драйверов  
  Поддерживаются следующие драйверы и оборудование GPU:  
   
 |Vendor|Описание GPU|Требуемая версия драйвера|  
@@ -143,10 +143,10 @@ ms.locfileid: "58989923"
   
 ## <a name="see-also"></a>См. также  
   
--   [Решения сложных проблем с графикой в игре с помощью инструментов DirectX (видео)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Решения сложных проблем с графикой в игре с помощью инструментов DirectX (видео)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Средство использования GPU в Visual Studio (видео)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Средство использования GPU в Visual Studio (видео)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Использование GPU для DirectX в Visual Studio (блог)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Использование GPU для DirectX в Visual Studio (блог)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

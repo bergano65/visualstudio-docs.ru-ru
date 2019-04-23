@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095494"
 ---
 # <a name="add-and-remove-property-pages"></a>Добавление и удаление страниц свойств
 
@@ -32,7 +32,7 @@ ms.locfileid: "54951161"
 
 ### <a name="remove-a-property-page"></a>Удаления страницы свойств
 
-1.  Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.
+1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "54951161"
     }
     ```
 
-2.  Удалить **события построения** страница из полученная `clsids` списка.
+2. Удалить **события построения** страница из полученная `clsids` списка.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "54951161"
 
 ### <a name="add-a-property-page"></a>Добавление страницы свойств
 
-1.  Создание страницы свойств, которые вы хотите добавить.
+1. Создание страницы свойств, которые вы хотите добавить.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "54951161"
     }
     ```
 
-2.  Регистрация новой страницы свойств.
+2. Регистрация новой страницы свойств.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "54951161"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.
+3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb327ad703c744f94970162f493cb61dffb8fac3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087570"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Ошибка: сбой проверки подлинности Kerberos
 В ходе удаленной отладки может возникнуть следующее сообщение об ошибке:
@@ -38,26 +38,26 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Служба Kerberos на контроллере домена была отключена.
 
-  Если аутентификация на основе Kerberos недоступна, следует сменить учетную запись, от имени которой выполняется монитор удаленной отладки Visual Studio. Для процедуры, см. в разделе [ошибка: службе удаленного отладчика Visual Studio на целевом компьютере не удается подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Если аутентификация на основе Kerberos недоступна, следует сменить учетную запись, от имени которой выполняется монитор удаленной отладки Visual Studio. Для процедуры, см. в разделе [ошибка: Служба удаленного отладчика Visual Studio на целевом компьютере не удается подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
 
   Если оба компьютера входят в один и тот же домен, но это сообщение возникает снова, проверьте, что служба DNS на целевом компьютере правильно определяет имя главного компьютера. Выполните описанные ниже действия.
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Для проверки того, что DNS на целевом компьютере правильно распознает имя главного компьютера:
 
-1.  На целевом компьютере войдите в меню **Пуск** и выберите в меню **Стандартные** пункт **Командная строка**.
+1. На целевом компьютере войдите в меню **Пуск** и выберите в меню **Стандартные** пункт **Командная строка**.
 
-2.  В окне **командной строки** введите:
+2. В окне **командной строки** введите:
 
     ```cmd
     ping <debugger_host_computer_name>
     ```
 
-3.  В первой строке ответа `ping` будет выведено полное имя компьютера и IP-адрес, возвращаемый службой DNS для указанного компьютера.
+3. В первой строке ответа `ping` будет выведено полное имя компьютера и IP-адрес, возвращаемый службой DNS для указанного компьютера.
 
-4.  На главном компьютере откройте приложение **Командная строка** и выполните команду `ipconfig`.
+4. На главном компьютере откройте приложение **Командная строка** и выполните команду `ipconfig`.
 
-5.  Сравните значения IP-адресов.
+5. Сравните значения IP-адресов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

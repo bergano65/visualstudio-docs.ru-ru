@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070151"
 ---
 # <a name="register-the-program"></a>Регистрация программы
 После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:
 
--   Процесс присоединения, который позволяет отладчику получить полное управление отладки запущенного приложения.
+- Процесс присоединения, который позволяет отладчику получить полное управление отладки запущенного приложения.
 
--   Just-in-time (JIT) отладки, позволяющий after фактов отладки программы, которая выполняется независимо от отладчика. При архитектура среды выполнения перехватывает ошибку, отладчик уведомляется перед операционной системы или среды выполнения освобождает память и ресурсы программу виновный.
+- Just-in-time (JIT) отладки, позволяющий after фактов отладки программы, которая выполняется независимо от отладчика. При архитектура среды выполнения перехватывает ошибку, отладчик уведомляется перед операционной системы или среды выполнения освобождает память и ресурсы программу виновный.
 
 ## <a name="registering-procedure"></a>Процедура регистрации
 
 ### <a name="to-register-your-program"></a>Для регистрации программы
 
-1.  Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализованный порт.
+1. Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализованный порт.
 
      `IDebugPortNotify2::AddProgramNode` требуется указатель на [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.
 

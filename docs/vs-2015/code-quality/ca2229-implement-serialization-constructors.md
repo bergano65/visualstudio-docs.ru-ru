@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073168"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229. Реализуйте конструкторы сериализации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58979123"
 ## <a name="cause"></a>Причина
  Тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, не делегате или интерфейсе, и одно из следующих условий верно:
 
--   Тип не имеет конструктор, принимающий <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> объекта и <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> объекта (сигнатура конструктора сериализации).
+- Тип не имеет конструктор, принимающий <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> объекта и <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> объекта (сигнатура конструктора сериализации).
 
--   Тип не запечатан и модификатор доступа для конструктора сериализации не является защищенным (семейство).
+- Тип не запечатан и модификатор доступа для конструктора сериализации не является защищенным (семейство).
 
--   Тип является запечатанным и модификатор доступа для конструктора сериализации не является закрытым.
+- Тип является запечатанным и модификатор доступа для конструктора сериализации не является закрытым.
 
 ## <a name="rule-description"></a>Описание правила
  Это правило относится к типы, поддерживающие пользовательской сериализации. Тип поддерживает пользовательской сериализации, если он реализует <xref:System.Runtime.Serialization.ISerializable> интерфейс. Конструктор сериализации необходим для десериализации или повторного создания объектов, которые были сериализованы с помощью <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метод.

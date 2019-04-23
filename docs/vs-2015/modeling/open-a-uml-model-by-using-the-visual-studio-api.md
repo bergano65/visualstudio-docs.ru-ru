@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083885"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Открытие модели UML с помощью API Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58980157"
   
  Если нужно только прочитать модель в программном коде, не показывая ее пользователю, можно воспользоваться указанными ниже методами.  
   
--   Шина модели Visual Studio позволяет получить доступ к моделям и элементам внутри них, а также предоставляет стандартный метод создания связей между моделями. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Шина модели Visual Studio позволяет получить доступ к моделям и элементам внутри них, а также предоставляет стандартный метод создания связей между моделями. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Модель можно открыть в режиме только для чтения. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
+- Модель можно открыть в режиме только для чтения. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Showing"></a> Открытие моделей и схем в Visual Studio  
+## <a name="Showing"></a> Открытие моделей и схем в Visual Studio  
  Чтобы открыть модель в пользовательском интерфейсе, воспользуйтесь стандартным API-интерфейсами Visual Studio `EnvDTE.DTE`. Существует два полезных приведения, которые можно применять к элементам проекта моделирования.  
   
 - `EnvDTE.Project` можно привести к `IModelingProject` и наоборот, если проект является проектом моделирования, а также если проект загружен в текущем домене приложения.  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111237"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "58990996"
   
 - Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
   
-  -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
+  - Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
   
-  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
+  - Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
   
-  -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
+  - Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
   
-  -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
+  - Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
   
 - Исходные данные передаются в вызов метода `CreateTexture2D`.  
   

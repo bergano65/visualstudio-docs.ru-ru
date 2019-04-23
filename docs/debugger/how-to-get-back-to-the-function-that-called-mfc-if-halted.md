@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430c1814e83dbd8410b0f172a15d879bb221cf3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114890"
 ---
-# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Как выполнить Возврат к функции, вызвавшей MFC, при прерывании работы в MFC
+# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Практическое руководство. Возврат к функции, вызвавшей MFC, при прерывании работы в MFC
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
@@ -42,7 +42,7 @@ ms.locfileid: "54956679"
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Перейдите к функции, из которого был вызван MFC
 
--   Используйте окно **Стек вызовов**.
+- Используйте окно **Стек вызовов**.
 
 ## <a name="see-also"></a>См. также
 

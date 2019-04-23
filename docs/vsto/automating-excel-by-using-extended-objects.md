@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070060"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Автоматизация Excel с помощью расширенных объектов
   При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения*. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Excel (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Excel), такие как объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.
@@ -37,11 +37,11 @@ ms.locfileid: "56600858"
 ## <a name="excel-host-items"></a>Ведущие элементы Excel
  Проекты Excel предоставляют доступ к нескольким ведущим элементам:
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент содержит и представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент содержит и представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Этот ведущий элемент представляет книгу в проекте и выступает в роли контейнера для компонентов, общих для всех листов в книге. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. Этот ведущий элемент представляет книгу в проекте и выступает в роли контейнера для компонентов, общих для всех листов в книге. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Этот ведущий элемент на листе Excel содержит только диаграмму и предоставляет события.
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Этот ведущий элемент на листе Excel содержит только диаграмму и предоставляет события.
 
      При добавлении листа диаграммы во время разработки в качестве нового листа в проект настройки уровня документа Microsoft Office Excel Visual Studio автоматически создает ведущий элемент <xref:Microsoft.Office.Tools.Excel.ChartSheet> .
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600858"
 
  Дополнительные сведения о ведущих элементах управления, которые можно использовать в проектах Excel, см. в следующих разделах:
 
--   [Элемент управления диаграммы](../vsto/chart-control.md)
+- [Элемент управления диаграммы](../vsto/chart-control.md)
 
--   [Элемент управления ListObject](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)
 
--   [Элемент управления NamedRange](../vsto/namedrange-control.md)
+- [Элемент управления NamedRange](../vsto/namedrange-control.md)
 
--   [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)
+- [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md)

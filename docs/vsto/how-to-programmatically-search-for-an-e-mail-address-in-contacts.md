@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115228"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Практическое руководство. Программный поиск адреса электронной почты в контактах
   В этом примере в папке контактов осуществляется поиск контактов, в адресах электронной почты которых содержится доменное имя **example.com** .
@@ -32,7 +32,7 @@ ms.locfileid: "56615498"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
--   Контакты, в адресах электронной почты которых содержится доменное имя **example.com** (например, `somebody@example.com`), а также имеющие имена и фамилии.
+- Контакты, в адресах электронной почты которых содержится доменное имя **example.com** (например, `somebody@example.com`), а также имеющие имена и фамилии.
 
 ## <a name="see-also"></a>См. также
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)

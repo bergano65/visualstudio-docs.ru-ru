@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10cd8b5e302809147f8f6e48210ca513534ce37e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094974"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Оценка выражения окна контрольных значений
 > [!IMPORTANT]
@@ -27,19 +27,19 @@ ms.locfileid: "56695171"
 
  Ниже приведен обзор порядок оценки выражения контрольных значений списка.
 
-1.  Visual Studio вызывает DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения контексте выражения, который может использоваться для оценки выражений.
+1. Visual Studio вызывает DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения контексте выражения, который может использоваться для оценки выражений.
 
-2.  Для каждого выражения в список наблюдения за Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) преобразуемый текст выражения в проанализированное выражение.
+2. Для каждого выражения в список наблюдения за Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) преобразуемый текст выражения в проанализированное выражение.
 
-3.  `IDebugExpressionContext2::ParseText` вызовы [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для выполняют фактическую работу синтаксического анализа текста и создают [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
+3. `IDebugExpressionContext2::ParseText` вызовы [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для выполняют фактическую работу синтаксического анализа текста и создают [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
 
-4.  `IDebugExpressionContext2::ParseText` Создает [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объект и помещает `IDebugParsedExpression` объекта в него. Это я`DebugExpression2` затем восстанавливается в Visual Studio.
+4. `IDebugExpressionContext2::ParseText` Создает [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объект и помещает `IDebugParsedExpression` объекта в него. Это я`DebugExpression2` затем восстанавливается в Visual Studio.
 
-5.  Visual Studio вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) для оценки проанализированное выражение.
+5. Visual Studio вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) для оценки проанализированное выражение.
 
-6.  `IDebugExpression2::EvaluateSync` вызов передается [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) фактические вычисления и создают [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, возвращаемый в Visual Studio.
+6. `IDebugExpression2::EvaluateSync` вызов передается [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) фактические вычисления и создают [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, возвращаемый в Visual Studio.
 
-7.  Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для получения значения выражения, которое отображается в списке отслеживания.
+7. Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для получения значения выражения, которое отображается в списке отслеживания.
 
 ## <a name="parse-then-evaluate"></a>Синтаксический анализ, а затем оценить
  Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два этапа: (1) синтаксический анализ выражения и 2) оценить проанализированное выражение. Таким образом, вычисление может выполняться много раз, но выражение необходимо выполнить синтаксический анализ только один раз. Промежуточные проанализированное выражение возвращается из EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь инкапсулированы и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объект откладывает все оценку для `IDebugParsedExpression` объекта.

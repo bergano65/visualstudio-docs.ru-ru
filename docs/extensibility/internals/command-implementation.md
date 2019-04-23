@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089757"
 ---
 # <a name="command-implementation"></a>Реализация команды
 Чтобы реализовать команду в VSPackage, необходимо выполнить следующие задачи:
 
-1.  В *.vsct* файл, настройте группу команд и добавьте к нему команду. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. В *.vsct* файл, настройте группу команд и добавьте к нему команду. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Регистрация команды с помощью Visual Studio.
+2. Регистрация команды с помощью Visual Studio.
 
-3.  Реализуйте команду.
+3. Реализуйте команду.
 
 Способ регистрации и реализовывать команды в следующих разделах.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Методы QueryStatus
  Если вы реализуете либо <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> метод, проверка идентификатора GUID набора команд, которому принадлежит команды и идентификатор команды. Соблюдайте следующие правила.
 
--   Если идентификатор GUID не распознан, реализации любого из этих методов должны возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Если идентификатор GUID не распознан, реализации любого из этих методов должны возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Если реализации любого из этих методов распознает идентификатор GUID, но команда не реализована, то этот метод должен возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Если реализации любого из этих методов распознает идентификатор GUID, но команда не реализована, то этот метод должен возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Если реализации любого из этих методов распознает как идентификатор GUID, так и команды, то метод должен настроить поле флаги команды каждой из команд (в `prgCmds` параметра) с помощью следующих <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> флаги:
+- Если реализации любого из этих методов распознает как идентификатор GUID, так и команды, то метод должен настроить поле флаги команды каждой из команд (в `prgCmds` параметра) с помощью следующих <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> флаги:
 
-    -   `OLECMDF_SUPPORTED`: Команда поддерживается.
+    - `OLECMDF_SUPPORTED`: Команда поддерживается.
 
-    -   `OLECMDF_INVISIBLE`: Команда не должны быть видимыми.
+    - `OLECMDF_INVISIBLE`: Команда не должны быть видимыми.
 
-    -   `OLECMDF_LATCHED`: Команда включена и появляется указатель были проверены.
+    - `OLECMDF_LATCHED`: Команда включена и появляется указатель были проверены.
 
-    -   `OLECMDF_ENABLED`: Команда включена.
+    - `OLECMDF_ENABLED`: Команда включена.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Команда должна быть скрыта, если он отображается в контекстном меню.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Команда должна быть скрыта, если он отображается в контекстном меню.
 
-    -   `OLECMDF_NINCHED`: Команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)
+    - `OLECMDF_NINCHED`: Команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)
 
--   Если команда было определено в *.vsct* файл с `TextChanges` флаг, задайте следующие параметры:
+- Если команда было определено в *.vsct* файл с `TextChanges` флаг, задайте следующие параметры:
 
-    -   Задайте `rgwz` элемент `pCmdText` параметр новый текст команды.
+    - Задайте `rgwz` элемент `pCmdText` параметр новый текст команды.
 
-    -   Задайте `cwActual` элемент `pCmdText` размер командной строки.
+    - Задайте `cwActual` элемент `pCmdText` размер командной строки.
 
 Кроме того убедитесь, что текущий контекст не функцию автоматизации, если команда специально предназначен для обработки функций автоматизации.
 

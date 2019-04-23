@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077424"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Вопросы и ответы Преобразование надстроек в расширения VSPackage
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.
@@ -37,7 +37,7 @@ ms.locfileid: "58789534"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Можно ли преобразовать проект надстройки в проект VSIX
  Проект надстройки нельзя преобразовать непосредственно в проект VSIX, так как механизмы, используемые в проектах VSIX не совпадают в таблице в проектах надстроек. Шаблон проекта VSIX, а также шаблоны элементов проекта правой много кода, что позволяет относительно легко создавать и запускать расширения VSIX.
 
-##  <a name="BKMK_StartDeveloping"></a> Как начать разработку расширений VSIX?
+## <a name="BKMK_StartDeveloping"></a> Как начать разработку расширений VSIX?
  Ниже приведен порядок выполнения VSIX с командой меню.
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Чтобы создать расширение VSIX, которое есть команда меню
@@ -52,7 +52,7 @@ ms.locfileid: "58789534"
 
    На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **мое имя команды**. При нажатии этой кнопки появляется сообщение: **В TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?
+## <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?
 
 Код надстройки можно запустить одним из двух способов.
 
@@ -158,24 +158,24 @@ ms.locfileid: "58789534"
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Вставка кода управления окнами из надстройки в VSPackage
 
-1.  Создайте VSPackage с командой меню, как показано на [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздел.
+1. Создайте VSPackage с командой меню, как показано на [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздел.
 
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)
+2. Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)
 
-3.  Добавьте следующие операторы `using`:
+3. Добавьте следующие операторы `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:
+4. Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Добавьте код из надстройки. Например, ниже приведен код, который добавляет новые задачи, **список задач**, перечисляет количество задач, а затем удаляет одну задачу.
+5. Добавьте код из надстройки. Например, ниже приведен код, который добавляет новые задачи, **список задач**, перечисляет количество задач, а затем удаляет одну задачу.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ ms.locfileid: "58789534"
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Как управлять проектами и решениями в VSPackage?
  Если надстройка управляет проектами и решениями, то код надстройки также должен работать в VSPackage. Например, в следующей процедуре показано, как добавить код для получения запускаемого проекта.
 
-1.  Создайте VSPackage с командой меню, как показано на [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздел.
+1. Создайте VSPackage с командой меню, как показано на [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздел.
 
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)
+2. Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)
 
-3.  Добавьте следующие операторы `using`:
+3. Добавьте следующие операторы `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:
+4. Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Добавьте код из надстройки. Например, следующий код позволяет получить имя запускаемого проекта в решении. (При запуске этого пакета должно быть открыто многопроектное решение.)
+5. Добавьте код из надстройки. Например, следующий код позволяет получить имя запускаемого проекта в решении. (При запуске этого пакета должно быть открыто многопроектное решение.)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

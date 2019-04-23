@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077476"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Практическое руководство. изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "59665653"
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Чтобы изменить тип возвращаемого значения метода DataContext от автоматически сгенерированного типа к классу сущностей  
   
-1.  Выберите метод <xref:System.Data.Linq.DataContext> в области методов.  
+1. Выберите метод <xref:System.Data.Linq.DataContext> в области методов.  
   
-2.  Выберите **Тип возвращаемого значения** в окне **Свойства** и потом доступный класс сущностей в списке **Типов возврата**. Если нужного класса сущностей не находится в списке, добавьте или создайте его в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , добавляемый в список.  
+2. Выберите **Тип возвращаемого значения** в окне **Свойства** и потом доступный класс сущностей в списке **Типов возврата**. Если нужного класса сущностей не находится в списке, добавьте или создайте его в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , добавляемый в список.  
   
-3.  Сохраните DBML-файл.  
+3. Сохраните DBML-файл.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Чтобы изменить тип возврата метода DataContext от класса сущностей обратно к автоматически созданному типу.  
   
-1.  Выберите метод <xref:System.Data.Linq.DataContext> в области методов и удалите его.  
+1. Выберите метод <xref:System.Data.Linq.DataContext> в области методов и удалите его.  
   
-2.  Перетащите объект базы данных из **обозревателя серверов**/**обозреватель баз данных** на пустую область реляционного конструктора.  
+2. Перетащите объект базы данных из **обозревателя серверов**/**обозреватель баз данных** на пустую область реляционного конструктора.  
   
-3.  Сохраните DBML-файл.  
+3. Сохраните DBML-файл.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105491"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для визуализации &amp; пакет SDK моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58994180"
 ## <a name="deployment-editions"></a>Развертывание выпусков
  [!INCLUDE[dsl](../includes/dsl-md.md)] поддерживает следующие конфигурации для развертывания доменных языков, которые вы создаете:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Распространяемый пакет распространяемого пакета Visual Studio Shell (интегрированный режим)
+- Распространяемый пакет распространяемого пакета Visual Studio Shell (интегрированный режим)
 
--   Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
+- Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
 
 > [!NOTE]
 >  Чтобы доменный язык может работать на продукте оболочки, необходимо задать **поддерживаемая версия VS** в манифесте расширения. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).

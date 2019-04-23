@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078100"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Доступ к хранимой шрифтов и цветов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58993177"
   
  Таким образом Чтобы инициировать сохраняемости, пакет VSPackage должен:  
   
--   Получить <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс путем вызова `QueryService` от глобальный поставщик служб.  
+- Получить <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс путем вызова `QueryService` от глобальный поставщик служб.  
   
      `QueryService` должен вызываться с помощью аргумент идентификатора службы `SID_SVsFontAndColorStorage` и аргумент идентификатор интерфейса `IID_IVsFontAndColorStorage`.  
   
--   Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> метод для открытия категории, которые необходимо сохранить, используя GUID категории в и флаг режима в качестве аргументов.  
+- Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> метод для открытия категории, которые необходимо сохранить, используя GUID категории в и флаг режима в качестве аргументов.  
   
      Режим, определяемое `fFlags` аргумент, создается на основе значений в <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> перечисления. Элементы управления в этом режиме.  
   
-    -   Параметры, которые можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
+    - Параметры, которые можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
   
-    -   Все параметры или только те пользователи изменять и который можно получить через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
+    - Все параметры или только те пользователи изменять и который можно получить через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
   
-    -   Способ добавления изменений в параметры пользователя.  
+    - Способ добавления изменений в параметры пользователя.  
   
-    -   Формат значений цвета, которые используются.  
+    - Формат значений цвета, которые используются.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Для сохранения состояния использования шрифтов и цветов  
  Сохранение шрифты и цвета состоит из:  

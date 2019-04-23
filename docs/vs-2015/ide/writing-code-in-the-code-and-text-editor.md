@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077827"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Создание кода в редакторе кода и текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ ms.locfileid: "59665754"
 
  Дополнительные сведения о параметрах редактора, зависящих от языка, см. в следующих разделах.  
 
--   [Параметры Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Параметры Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Использование среды разработки Visual Studio для C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Использование среды разработки Visual Studio для C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   ["Параметры", "Текстовый редактор", JavaScript, "Форматирование"](../ide/reference/options-text-editor-javascript-formatting.md)  
+- ["Параметры", "Текстовый редактор", JavaScript, "Форматирование"](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Содержание раздела  
 
--   [Поиск и замена текста](../ide/finding-and-replacing-text.md)  
+- [Поиск и замена текста](../ide/finding-and-replacing-text.md)  
 
--   [Кодировки и разрывы строк](../ide/encodings-and-line-breaks.md)  
+- [Кодировки и разрывы строк](../ide/encodings-and-line-breaks.md)  
 
--   [Структура](../ide/outlining.md)  
+- [Структура](../ide/outlining.md)  
 
--   [Рефакторинг](../ide/refactoring-in-visual-studio.md)  
+- [Рефакторинг](../ide/refactoring-in-visual-studio.md)  
 
--   [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)  
+- [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Использование технологии IntelliSense](../ide/using-intellisense.md)  
+- [Использование технологии IntelliSense](../ide/using-intellisense.md)  
 
--   [Настройка редактора](../ide/customizing-the-editor.md)  
+- [Настройка редактора](../ide/customizing-the-editor.md)  
 
--   [Практическое руководство. Отслеживание кода путем настройки полосы прокрутки](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Практическое руководство. Отслеживание кода путем настройки полосы прокрутки](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Выполнение быстрых действий с лампочками](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Выполнение быстрых действий с лампочками](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Фрагменты кода](../ide/code-snippets.md)  
+- [Фрагменты кода](../ide/code-snippets.md)  
 
--   [Использование панели элементов](../ide/using-the-toolbox.md)  
+- [Использование панели элементов](../ide/using-the-toolbox.md)  
 
--   [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)  
+- [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)  
 
--   [Установка закладок в коде](../ide/setting-bookmarks-in-code.md)  
+- [Установка закладок в коде](../ide/setting-bookmarks-in-code.md)  
 
--   [Использование списка задач](../ide/using-the-task-list.md)  
+- [Использование списка задач](../ide/using-the-task-list.md)  
 
--   [Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>См. также  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

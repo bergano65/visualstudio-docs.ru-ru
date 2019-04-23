@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
-ms.translationtype: MTE95
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067733"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Вас приветствует Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ ms.locfileid: "57567251"
 
  Выберите нужные инструменты с учетом требований ваших приложений и языка, который вы хотите использовать.
 
-1.  [Xamarin для Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): общая база кода C# для всех устройств
+1. [Xamarin для Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Общая база кода C# для всех устройств
 
-2.  [Apache Cordova с Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): общая база кода для HTML, CSS и JavaScript или Typescript
+2. [Apache Cordova с помощью Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Общая база кода для HTML, CSS и JavaScript или Typescript
 
-3.  [Средства Visual Studio Tools для Unity](./cross-platform/visual-studio-tools-for-unity.md): разработка двухмерных и трехмерных игр в C#.
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Разработка игр 2D/3D вC#
 
-4.  [C++ для кросс-платформенной разработки](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): общие библиотеки кода и приложения в C++
+4. [C++для кросс платформенной разработки](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Общий код библиотеки и приложения вC++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): эмулятор Visual Studio для Android — отладка и тестирование приложений Android независимо от интегрированной среды разработки
+5. [Visual Studio Emulator для Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator для Android: Отладка и тестирование приложений Android независимо от интегрированной среды разработки
 
 ## <a name="connect-your-apps-to-services"></a>Подключение приложений к службам
  Можно подключиться к этим службам без дополнительных настроек (при условии наличия учетной записи для каждой из служб).
 
--   [Мобильные службы Azure](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Мобильные службы Azure](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Хранилище Azure](http://azure.microsoft.com/documentation/services/storage/)
+- [Хранилище Azure](http://azure.microsoft.com/documentation/services/storage/)
 
--   Интеграция API-интерфейсов REST Office 365 в приложения для подключения к данным, хранящимся в облаке. Дополнительные сведения см. в [этих примерах](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Интеграция API-интерфейсов REST Office 365 в приложения для подключения к данным, хранящимся в облаке. Дополнительные сведения см. в [этих примерах](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Создание превосходных веб-приложений с ASP.NET
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) представляет собой существенное обновление для MVC, WebAPI и SignalR, которое работает на платформах Windows, Mac и Linux.  Платформа ASP.NET 5 была разработана с нуля для предоставления компактного, компонуемого стека .NET для создания современных облачных веб-приложений и служб.
@@ -79,7 +79,7 @@ ms.locfileid: "57567251"
 ## <a name="build-test-and-manage-your-code"></a>Создание, тестирование кода и управление им
 
 ### <a name="check-in-your-code"></a>Возврат кода
- При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Узнайте, какая система управления версиями подходит вам больше всего: [Использование системы управления версиями](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Дополнительные сведения об управлении какие версиями системы лучше всего подходит для ваших потребностей: [Использование системы управления версиями](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Построение приложения
  Можно [разработать приложение локально](./ide/compiling-and-building-in-visual-studio.md) и убедиться, что оно правильно работает. Затем воспользуйтесь [средствами отладки](./debugger/debugging-in-visual-studio.md) , чтобы исправить ошибки в приложении. Кроме того, можно создавать проекты на общих серверах сборки или в облаке. Автоматизируйте процедуру сборки, чтобы обеспечить создание кода, который разработчики вашей рабочей группы смогут вернуть в систему управления версиями. Например, можно создавать один или более проектов каждую ночь или всякий раз при возврате кода.
@@ -102,32 +102,32 @@ ms.locfileid: "57567251"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
--   [Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
+- [Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
--   [Установка Visual Studio 2015](./install/install-visual-studio-2015.md)
+- [Установка Visual Studio 2015](./install/install-visual-studio-2015.md)
 
--   [Перенос, миграция и обновление проектов Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Перенос, миграция и обновление проектов Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Интегрированная среда разработки Visual Studio](./ide/visual-studio-ide.md)
+- [Интегрированная среда разработки Visual Studio](./ide/visual-studio-ide.md)
 
--   [Расширяемость в Visual Studio](./extensibility/extensibility-in-visual-studio.md)
+- [Расширяемость в Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 
--   [Доступ к данным в Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
+- [Доступ к данным в Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
 
--   [Разработка кроссплатформенных мобильных приложений](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Разработка кроссплатформенных мобильных приложений](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [Общие принципы программирования на C# и Visual Basic](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [Общие принципы программирования на C# и Visual Basic](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps и управление жизненным циклом приложений](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps и управление жизненным циклом приложений](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [Обращайтесь к нам](./ide/talk-to-us.md)
+- [Обращайтесь к нам](./ide/talk-to-us.md)

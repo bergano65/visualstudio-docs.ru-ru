@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080609"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ ms.locfileid: "58994170"
   
 #### <a name="to-uninstall-the-extension"></a>Удаление расширения  
   
-1.  В Visual Studio на **средства** меню, щелкните **расширения и обновления**.  
+1. В Visual Studio на **средства** меню, щелкните **расширения и обновления**.  
   
-2.  Щелкните имя расширения и нажмите кнопку **удаления**.  
+2. Щелкните имя расширения и нажмите кнопку **удаления**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Установка расширения на сервере Team Foundation Build  
  Как правило, на серверах [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] не установлена среда Visual Studio, поэтому установить VSIX двойным щелчком мыши невозможно. Установка [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]  
   
-1.  Копировать **.vsix** файлы с компьютера разработки на [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] компьютера.  
+1. Копировать **.vsix** файлы с компьютера разработки на [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] компьютера.  
   
      Поместите VSIX-файл в одно из указанных ниже мест.  
   
-    -   Установка для всех пользователей и служб:  
+    - Установка для всех пользователей и служб:  
   
          %ProgramFiles%\Microsoft Visual Studio [версия]\Common7\IDE\Extensions\Microsoft  
   
-    -   Установка только для сетевой службы, в которой выполняется [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Установка только для сетевой службы, в которой выполняется [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Если сервер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:  
+    - Если сервер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % — *DriveName*: пользователи*UserName*AppDataLocal.  
   
-2.  Разверните каждый VSIX-файл в папке в том же местоположении.  
+2. Разверните каждый VSIX-файл в папке в том же местоположении.  
   
-    1.  Измените расширение имени файла с **.vsix** для **ZIP-файл**.  
+    1. Измените расширение имени файла с **.vsix** для **ZIP-файл**.  
   
-    2.  Извлеките содержимое ZIP-файла в папку.  
+    2. Извлеките содержимое ZIP-файла в папку.  
   
-    3.  Удалите ZIP-файл.  
+    3. Удалите ZIP-файл.  
   
-3.  Перезапустите [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+3. Перезапустите [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

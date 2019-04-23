@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: расширение процесса построения | Документация Майкрософт'
+title: Практическое руководство. Расширение процесса сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758669"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652167"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Практическое руководство. Расширение процесса построения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Процесс сборки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] определяется рядом TARGETS-файлов [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — Microsoft.Common.targets — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. Этот раздел описывает два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
@@ -127,4 +126,4 @@ ms.locfileid: "54758669"
 |`CompileDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские процессы до или после этапа компиляции.|
 
 ## <a name="see-also"></a>См. также раздел
- [Интеграция с Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [основные возможности MSBuild](../msbuild/msbuild-concepts.md) [. Файлы целевых объектов](../msbuild/msbuild-dot-targets-files.md)
+ [Интеграция Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Основные понятия MSBuild](../msbuild/msbuild-concepts.md) [Файлы TARGETS](../msbuild/msbuild-dot-targets-files.md)

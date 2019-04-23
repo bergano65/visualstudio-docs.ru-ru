@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100148"
 ---
 # <a name="document-position"></a>Позиция в документе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладки, **позиция документа**:  
   
--   Предоставляет абстракцию для положения в файле исходного кода, как оно известно в интегрированной среде разработки. Для большинства языков в настоящее время позиции документа может рассматриваться как позиция в исходном файле.  
+- Предоставляет абстракцию для положения в файле исходного кода, как оно известно в интегрированной среде разработки. Для большинства языков в настоящее время позиции документа может рассматриваться как позиция в исходном файле.  
   
--   Описание позиции в исходном документе к модуля отладки.  
+- Описание позиции в исходном документе к модуля отладки.  
   
--   Реализуется [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейс.  
+- Реализуется [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [Контекст кода](../../extensibility/debugger/code-context.md)   

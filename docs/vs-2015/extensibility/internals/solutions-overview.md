@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f44ab8e86a32fe4f1923b978bea7f6a7090921b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077619"
 ---
 # <a name="solutions-overview"></a>Обзор решений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58990901"
   
 3. Если VSPackage загружается, среда вызывает метод `QueryInterface` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> интерфейса для интерфейса, который требует VSPackage.  
   
-   1.  При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.  
+   1. При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.  
   
-   2.  При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.  
+   2. При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.  
   
    Определенные сведения, относящиеся к использованию этих файлов можно найти в [решение (. Файл SLN)](../../extensibility/internals/solution-dot-sln-file.md) и [пользовательских параметров решения (. SUO-) файл](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   

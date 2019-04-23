@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Заполнение листов данными из базы данных
+title: Практическое руководство. Заполнение листов данными из базы данных
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079152"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Как выполнить Заполнение листов данными из базы данных
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Практическое руководство. Заполнение листов данными из базы данных
 
 Доступа к данным в проектах Office уровня документа можно таким же образом, что доступ к данным в проектах Windows Forms. Вы используете те же средства и код для получения данных в ваше решение и даже можете отображать данные с помощью элементов управления Windows Forms. Кроме того можно воспользоваться преимуществами элементов управления ведущего приложения, которые являются собственными объектами в Microsoft Office Excel, дополненные событиями и функциями привязки данных. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
 
@@ -35,17 +35,17 @@ ms.locfileid: "54865623"
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Заполнение листов данными из базы данных
 
-1.  Откройте проект уровня документа Excel в Visual Studio откройте лист в конструкторе.
+1. Откройте проект уровня документа Excel в Visual Studio откройте лист в конструкторе.
 
-2.  Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+2. Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
-3.  Перетащите поле или таблицу, из **источников данных** окна на лист.
+3. Перетащите поле или таблицу, из **источников данных** окна на лист.
 
 Один из следующих элементов управления создается на листе.
 
--   При перетаскивании поля, <xref:Microsoft.Office.Tools.Excel.NamedRange> создается элемент управления на листе. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
+- При перетаскивании поля, <xref:Microsoft.Office.Tools.Excel.NamedRange> создается элемент управления на листе. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
 
--   При перетаскивании таблицы, <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления на листе. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
+- При перетаскивании таблицы, <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления на листе. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
 Вы можете добавить другой элемент управления, выбрав таблицу или поле в **источников данных** окна и затем выбрав другой элемент управления из раскрывающегося списка.
 
@@ -53,19 +53,19 @@ ms.locfileid: "54865623"
 
 Кроме элемента управления, в проект автоматически добавляются следующие объекты, связанные с данными.
 
--   Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных. Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных. Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   TableAdapter, который подключает типизированный набор данных в базу данных. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- TableAdapter, который подключает типизированный набор данных в базу данных. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   TableAdapterManager, который используется для координации адаптеров таблиц в наборе данных для реализации иерархических обновлений. Дополнительные сведения см. в разделе [иерархическое обновление](../data-tools/hierarchical-update.md) и [ссылку TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, который используется для координации адаптеров таблиц в наборе данных для реализации иерархических обновлений. Дополнительные сведения см. в разделе [иерархическое обновление](../data-tools/hierarchical-update.md) и [ссылку TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 При выполнении проекта элемент управления отображает первую запись в источнике данных. Вы можете использовать <xref:System.Windows.Forms.BindingSource>, чтобы позволить пользователям прокручивать записи.
 
 ### <a name="to-scroll-through-the-records"></a>Прокрутка записей
 
--   Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Сведения о том, как отправлять обновления типизированному набору данных и базе данных, см. в разделе [как: Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

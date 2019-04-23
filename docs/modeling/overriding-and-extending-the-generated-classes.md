@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085633"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Переопределение и расширение созданных классов
 
@@ -54,9 +54,9 @@ public partial class Book
 
 Например, в образце Library.dsl `CirculationBook` имеет доменный класс `Generates``Double Derived` свойство значение `true`. Созданный код для этого класса домена содержит два класса:
 
--   `CirculationBookBase`, который является абстрактным, и который содержит все методы и свойства.
+- `CirculationBookBase`, который является абстрактным, и который содержит все методы и свойства.
 
--   `CirculationBook`, который является производным от `CirculationBookBase`. Он пуст, за исключением конструкторов.
+- `CirculationBook`, который является производным от `CirculationBookBase`. Он пуст, за исключением конструкторов.
 
 Чтобы переопределить любой метод, создайте частичное определение производного класса например `CirculationBook`. Вы можете переопределить созданные методы и методы, унаследованные от платформа моделирования.
 

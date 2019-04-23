@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101008"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
 
@@ -29,17 +29,17 @@ ms.locfileid: "56335302"
 
 Процесс расширения **свойство проекта** описывается диалоговое окно ниже:
 
--   Базовый проект получает расширителей из подтипа проекта путем реализации <xref:EnvDTE80.IInternalExtenderProvider> интерфейс. Обзор автоматизации проектов и объектов обзора конфигурации проекта базового проекта все реализация этого интерфейса.
+- Базовый проект получает расширителей из подтипа проекта путем реализации <xref:EnvDTE80.IInternalExtenderProvider> интерфейс. Обзор автоматизации проектов и объектов обзора конфигурации проекта базового проекта все реализация этого интерфейса.
 
--   Реализация <xref:EnvDTE80.IInternalExtenderProvider> для объекта Просмотр проекта и объект автоматизации project делегировать <xref:EnvDTE80.IInternalExtenderProvider> реализации агрегатора подтип проекта (то есть они `QueryInterface` для <xref:EnvDTE80.IInternalExtenderProvider> на <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект проекта).
+- Реализация <xref:EnvDTE80.IInternalExtenderProvider> для объекта Просмотр проекта и объект автоматизации project делегировать <xref:EnvDTE80.IInternalExtenderProvider> реализации агрегатора подтип проекта (то есть они `QueryInterface` для <xref:EnvDTE80.IInternalExtenderProvider> на <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект проекта).
 
--   Объект обзора конфигурации базового проекта также реализует <xref:EnvDTE80.IInternalExtenderProvider> для подключения непосредственно в автоматизированного расширителя из объект конфигурации подтипа проекта. Его реализация делегирует <xref:EnvDTE80.IInternalExtenderProvider> интерфейс, реализованный на статистическую функцию подтип проекта.
+- Объект обзора конфигурации базового проекта также реализует <xref:EnvDTE80.IInternalExtenderProvider> для подключения непосредственно в автоматизированного расширителя из объект конфигурации подтипа проекта. Его реализация делегирует <xref:EnvDTE80.IInternalExtenderProvider> интерфейс, реализованный на статистическую функцию подтип проекта.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, реализованный объект обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, реализованный объект обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, тоже реализован объект обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> объекта.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, тоже реализован объект обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> объекта.
 
--   Подтип проекта можно определить соответствующие идентификаторы CATID для различных объектов являются расширяемыми базового проекта во время выполнения путем извлечения следующие <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> значения:
+- Подтип проекта можно определить соответствующие идентификаторы CATID для различных объектов являются расширяемыми базового проекта во время выполнения путем извлечения следующие <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> значения:
 
     - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
@@ -49,9 +49,9 @@ ms.locfileid: "56335302"
 
 Чтобы определить CATID для проекта области, подтипа проекта извлекает выше свойства [VSITEMID. Корневой](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) из `VSITEMID typedef`. Подтип проекта также может потребоваться указать, какие **страницы свойств** страницах диалогового окна отображаются для проекта, зависящие от конфигурации и конфигурации независимо. Некоторые подтипов проекта может потребоваться удалить встроенные страницы и добавить определенные страницы подтип проекта. Для этого проекта управляемый клиент вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод для следующих свойств:
 
--   `VSHPROPID_PropertyPagesCLSIDList` — Список разделенных точкой с запятой значений CLSID страниц свойств, независимых от конфигурации.
+- `VSHPROPID_PropertyPagesCLSIDList` — Список разделенных точкой с запятой значений CLSID страниц свойств, независимых от конфигурации.
 
--   `VSHPROPID_CfgPropertyPagesCLSIDList —` Список разделенных точкой с запятой значений CLSID страниц свойств, зависимых от конфигурации.
+- `VSHPROPID_CfgPropertyPagesCLSIDList —` Список разделенных точкой с запятой значений CLSID страниц свойств, зависимых от конфигурации.
 
 Так как статистические выражения подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта, его можно переопределить эти свойства контроля, позволяющий определить **страницы свойств** диалоговое окно. Подтип проекта можно получить из внутреннего базового проекта эти свойства и затем добавить или удалить CLSID при необходимости.
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075835"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Манифест, чтобы средство кода — это консольное приложение, которое принимает файл .imagemanifest службы образов в Visual Studio и создает файлы для ссылок на значения манифеста изображения в C++ или оболочки C#, VB или .vsct файлы для Visual Studio расширения. Это средство создает файлы программы-оболочки, которые могут использоваться для запрашивающего изображений из службы Visual Studio изображение непосредственно или для передачи значения манифеста через API-интерфейсы, если код не обработать какие-либо собственным пользовательским Интерфейсом и подготовки к просмотру.
@@ -40,17 +40,17 @@ ms.locfileid: "56609559"
 
  **Примеры**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
 
--   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен
+- / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Примечания
 
--   Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.
+- Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.
 
--   Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.
+- Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.
 
 ## <a name="sample-output"></a>Пример полученных результатов
  **Оболочки C#**

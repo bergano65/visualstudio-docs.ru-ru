@@ -10,12 +10,12 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073622"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Нового или измененного поведения с помощью редактора адаптеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,29 +85,29 @@ ms.locfileid: "58979507"
   
  Методы, которые затронуты следующие (список не является исчерпывающим):  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>Структуризация  
  Клиенты <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> будут видеть только те области структуры, которые были добавлены с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Он не увидит нерегламентированных регионов, так как они не добавляются с помощью редактора адаптеров. Аналогичным образом эти клиенты не увидят добавленные языки, (включая C# и C++), при использовании нового редактора кода, а не адаптеров редактора областей структуры.  
@@ -120,7 +120,7 @@ ms.locfileid: "58979507"
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Метод завершится с ошибкой при передаче в классе, который не реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Всплывающие окна настраиваемых Win32 рисуемый владельцем, больше не поддерживаются.  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Метод завершится с ошибкой при передаче в классе, который не реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Всплывающие окна настраиваемых Win32 рисуемый владельцем, больше не поддерживаются.  
   
 #### <a name="smarttags"></a>Смарт-тегов  
  Отсутствует поддержка адаптера для смарт-тегов, созданных с помощью, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> интерфейсов.  

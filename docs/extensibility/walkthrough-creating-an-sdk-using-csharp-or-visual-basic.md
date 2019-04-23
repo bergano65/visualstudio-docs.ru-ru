@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086641"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математической библиотеки с помощью Visual C# и затем пакета SDK в Visual Studio Extension (VSIX). Вы выполните следующие процедуры:
 
--   [Для создания компонента среды выполнения Windows SimpleMath](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [Для создания компонента среды выполнения Windows SimpleMath](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [Создание проекта расширения SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [Чтобы создать приложение-пример, использующий библиотеку классов](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [Создание проекта расширения SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [Чтобы создать приложение-пример, использующий библиотеку классов](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Для создания компонента среды выполнения Windows SimpleMath
+## <a name="createClassLibrary"></a> Для создания компонента среды выполнения Windows SimpleMath
 
 1. В строке меню выберите **файл** > **New** > **новый проект**.
 
@@ -54,25 +54,25 @@ ms.locfileid: "56954012"
 
 9. В **обозревателе решений**, откройте контекстное меню для **SimpleMath** узел проекта, а затем выберите **построения**.
 
-##  <a name="createVSIX"></a> Создание проекта расширения SimpleMathVSIX
+## <a name="createVSIX"></a> Создание проекта расширения SimpleMathVSIX
 
-1.  В контекстном меню для **решение «SimpleMath»** узел, выберите **добавить** > **новый проект**.
+1. В контекстном меню для **решение «SimpleMath»** узел, выберите **добавить** > **новый проект**.
 
-2.  В списке шаблонов разверните **Visual C#** или **Visual Basic**, выберите **расширяемости** узел, а затем выберите **проект VSIX** шаблон.
+2. В списке шаблонов разверните **Visual C#** или **Visual Basic**, выберите **расширяемости** узел, а затем выберите **проект VSIX** шаблон.
 
-3.  В **имя** укажите **SimpleMathVSIX**, а затем выберите **ОК** кнопки.
+3. В **имя** укажите **SimpleMathVSIX**, а затем выберите **ОК** кнопки.
 
-4.  В **обозревателе решений**, выберите **source.extension.vsixmanifest** элемента.
+4. В **обозревателе решений**, выберите **source.extension.vsixmanifest** элемента.
 
-5.  В строке меню выберите **Вид** > **Код**.
+5. В строке меню выберите **Вид** > **Код**.
 
-6.  Замените существующий XML-код следующим кодом XML:
+6. Замените существующий XML-код следующим кодом XML:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  В **обозревателе решений**, выберите **SimpleMathVSIX** проекта.
+7. В **обозревателе решений**, выберите **SimpleMathVSIX** проекта.
 
-8.  В строке меню выберите **Проект** > **Добавить новый элемент**.
+8. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 9. В списке **общих элементов**, разверните **данных**, а затем выберите **XML-файл**.
 
@@ -83,6 +83,7 @@ ms.locfileid: "56954012"
 12. Замените содержимое файла следующим XML-кодом.
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ ms.locfileid: "56954012"
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ ms.locfileid: "56954012"
 
 30. Выберите **установить** кнопку и дождитесь завершения установки перезапустите Visual Studio.
 
-##  <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов
+## <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов
 
 1. В строке меню выберите **файл** > **New** > **новый проект**.
 
@@ -176,6 +178,7 @@ ms.locfileid: "56954012"
 10. В **обозревателе решений**откройте **MainPage.xaml**и замените его содержимое на следующий XAML:
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ ms.locfileid: "56954012"
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

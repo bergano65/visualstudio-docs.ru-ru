@@ -14,25 +14,25 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a465345ad7cb70fc21d1a253816162daf939a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086082"
 ---
 # <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
 Созданные идентификатор с помощью символа (или символы) не является допустимым значением, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используйте следующие правила:  
   
--   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
+- Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
   
--   Последующие символы могут быть ASCII буквы, цифры и символы подчеркивания.  
+- Последующие символы могут быть ASCII буквы, цифры и символы подчеркивания.  
   
--   Имя идентификатора не может быть зарезервированным словом.  
+- Имя идентификатора не может быть зарезервированным словом.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определение языка.  
+- Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определение языка.  
   
 ## <a name="see-also"></a>См. также  
  [Переменные](../../javascript/variables-javascript.md)   

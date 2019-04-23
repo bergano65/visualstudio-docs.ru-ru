@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070907"
 ---
 # <a name="search-the-schema-set"></a>Поиск набора схем
 
 **Обозреватель XML-схем** позволяет искать набор схем в следующих способов:
 
--   Поиск по ключевому слову.
+- Поиск по ключевому слову.
 
--   Поиск определенной схемы.
+- Поиск определенной схемы.
 
 ## <a name="keyword-search"></a>Поиск по ключевому слову
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930861"
 
  **Обозреватель XML-схем** выполняет поиск набора схем по следующие атрибуты:
 
--   Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Элементы, атрибуты, типы и т. д., можно найти по имени.
+- Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Элементы, атрибуты, типы и т. д., можно найти по имени.
 
--   Атрибуты `schemaLocation` инструкций включения.
+- Атрибуты `schemaLocation` инструкций включения.
 
--   Атрибуты `namespace` инструкций импорта.
+- Атрибуты `namespace` инструкций импорта.
 
 ## <a name="schema-specific-search"></a>Поиск определенной схемы
 

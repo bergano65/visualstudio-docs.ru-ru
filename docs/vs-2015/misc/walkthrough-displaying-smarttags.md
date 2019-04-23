@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110444"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Пошаговое руководство. Отображение смарт-тегов
 Смарт-теги устарели и были заменены меню лампочки. См. [Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -35,57 +35,57 @@ ms.locfileid: "58991672"
   
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF  
   
-1.  Создайте проект классификатора редактора. Назовите решение `SmartTagTest`.  
+1. Создайте проект классификатора редактора. Назовите решение `SmartTagTest`.  
   
-2.  Откройте файл source.extension.vsixmanifest в редакторе манифестов VSIX.  
+2. Откройте файл source.extension.vsixmanifest в редакторе манифестов VSIX.  
   
-3.  Убедитесь в том, что в разделе **Активы** содержится тип `Microsoft.VisualStudio.MefComponent` , в поле **Источник** задано значение `A project in current solution`, а в поле **Проект** задано значение SmartTagTest.dll.  
+3. Убедитесь в том, что в разделе **Активы** содержится тип `Microsoft.VisualStudio.MefComponent` , в поле **Источник** задано значение `A project in current solution`, а в поле **Проект** задано значение SmartTagTest.dll.  
   
-4.  Сохраните и закройте файл source.extension.vsixmanifest.  
+4. Сохраните и закройте файл source.extension.vsixmanifest.  
   
-5.  Добавьте в проект следующую ссылку и задайте для свойства **CopyLocal** значение `false`:  
+5. Добавьте в проект следующую ссылку и задайте для свойства **CopyLocal** значение `false`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  Удалите файлы существующих классов.  
+6. Удалите файлы существующих классов.  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>Реализация разметчика для смарт-тегов  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>Реализация разметчика для смарт-тегов  
   
-1.  Добавьте файл класса с именем `TestSmartTag`.  
+1. Добавьте файл класса с именем `TestSmartTag`.  
   
-2.  Добавьте следующие импортируемые пространства имен:  
+2. Добавьте следующие импортируемые пространства имен:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Добавьте класс с именем `TestSmartTag`, производный от <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+3. Добавьте класс с именем `TestSmartTag`, производный от <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Добавьте конструктор для этого класса, который вызывает базовый конструктор со значением <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, равным <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, что вызывает подчеркивание первого символа в слове синей линией. (Если использовать значение <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, последний символ в слове будет подчеркиваться красной линией.)  
+4. Добавьте конструктор для этого класса, который вызывает базовый конструктор со значением <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, равным <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, что вызывает подчеркивание первого символа в слове синей линией. (Если использовать значение <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, последний символ в слове будет подчеркиваться красной линией.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Добавьте класс с именем `TestSmartTagger`, который наследуется от <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа `TestSmartTag` и реализует <xref:System.IDisposable>.  
+5. Добавьте класс с именем `TestSmartTagger`, который наследуется от <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа `TestSmartTag` и реализует <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  Добавьте в класс разметчика указанные ниже закрытые поля.  
+6. Добавьте в класс разметчика указанные ниже закрытые поля.  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Добавьте конструктор, который задает закрытые поля и подписывается на событие <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
+7. Добавьте конструктор, который задает закрытые поля и подписывается на событие <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> для создания тега для текущего слова. (Этот метод также вызывает закрытый метод `GetSmartTagActions` , о котором рассказывается ниже.)  
+8. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> для создания тега для текущего слова. (Этот метод также вызывает закрытый метод `GetSmartTagActions` , о котором рассказывается ниже.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ ms.locfileid: "58991672"
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Реализация поставщика разметчика смарт-тегов  
   
-1.  Добавьте класс с именем `TestSmartTagTaggerProvider`, производный от <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Экспортируйте его с атрибутом <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> со значением text, атрибутом <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> со значением Before="default" и атрибутом <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> со значением <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Добавьте класс с именем `TestSmartTagTaggerProvider`, производный от <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Экспортируйте его с атрибутом <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> со значением text, атрибутом <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> со значением Before="default" и атрибутом <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> со значением <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Импортируйте <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> как свойство.  
+2. Импортируйте <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> как свойство.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  Выполните метод <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>.  
+3. Выполните метод <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>.  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ ms.locfileid: "58991672"
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>Сборка и тестирование решения SmartTagTest  
   
-1.  Постройте решение.  
+1. Постройте решение.  
   
-2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
+2. При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
   
-3.  Создайте текстовый файл и введите любой текст.  
+3. Создайте текстовый файл и введите любой текст.  
   
      Первая буква в первом слове текста должна быть подчеркнута синей линией.  
   
-4.  Наведите указатель на синюю линию.  
+4. Наведите указатель на синюю линию.  
   
      Рядом с указателем должна появиться кнопка.  
   
-5.  При нажатии кнопки должно отображаться два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**. Если выбрать первое действие, все символы текущего слова должны преобразоваться в верхний регистр. Если выбрать второе действие, все символы должны преобразоваться в нижний регистр.  
+5. При нажатии кнопки должно отображаться два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**. Если выбрать первое действие, все символы текущего слова должны преобразоваться в верхний регистр. Если выбрать второе действие, все символы должны преобразоваться в нижний регистр.  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

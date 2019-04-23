@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112381"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Вариант формата однобуферной прорисовки 16 бит/пкс
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58991203"
 ## <a name="remarks"></a>Примечания  
  Формат целевого объекта отрисовки DXGI_FORMAT_B5G6R5_UNORM устанавливается при каждом вызове метода `ID3D11Device::CreateTexture2D`, который создает целевой объект отрисовки. В частности, формат переопределяется, когда объект D3D11_TEXTURE2D_DESC, передаваемый в параметре pDesc, описывает целевой объект отрисовки, то есть:  
   
--   Для члена BindFlags установлен флаг D3D11_BIND_REDNER_TARGET.  
+- Для члена BindFlags установлен флаг D3D11_BIND_REDNER_TARGET.  
   
--   Для члена BindFlags снят флаг D3D11_BIND_DEPTH_STENCIL.  
+- Для члена BindFlags снят флаг D3D11_BIND_DEPTH_STENCIL.  
   
--   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
+- Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Ограничения  
  Так как формат B5G6R5 не имеет альфа-канала, альфа-содержимое не сохраняется при использовании этого варианта. Если приложение требует наличия альфа-канала в целевом объекте отрисовки, можно переключиться на формат B5G6R5.  

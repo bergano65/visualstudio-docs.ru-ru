@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30ea6f9e3c5bfb907b1dc75b28edf7a56a0e86d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084405"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Практическое руководство. Выполнения кода при развертывания или отзыва проекта SharePoint
   Если вы хотите выполнить дополнительные задачи после развертывания или отзыва проекта SharePoint, можно обрабатывать события, вызываемые с Visual Studio. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -26,11 +26,11 @@ ms.locfileid: "56639873"
 
 1. Создание расширения элемента проекта, расширение проекта или определение нового типа элемента проекта. Дополнительные сведения см. в следующих разделах:
 
-   -   [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+   - [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-   -   [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+   - [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-   -   [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+   - [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
 2. В расширении, доступ к <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Дополнительные сведения см. в разделе [Как Службе project SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
 
@@ -46,9 +46,9 @@ ms.locfileid: "56639873"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуются ссылки на следующие сборки:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

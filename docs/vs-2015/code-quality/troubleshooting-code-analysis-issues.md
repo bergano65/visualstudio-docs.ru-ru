@@ -9,28 +9,28 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54e478fe9b932b2b50271e52f0bcaab78ca02eab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 047866f958ebfe6de20d5f7760b72eaab4135ef1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075318"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Устранение проблем, связанных с анализом кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе приводятся сведения об устранении указанных ниже неполадок, связанных с анализом кода в Visual Studio.  
   
--   [Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+- [Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio  
+## <a name="ChildRuleSetChangesInPreviousVersions"></a> Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio  
  При создании в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] набора правил, содержащего дочерний набор правил, изменения, внесенные в дочерний набор правил, могут не применяться при анализе кода на компьютерах, на которых используется предыдущая версия Visual Studio. Для устранения этой проблемы необходимо принудительно перезаписать родительский набор правил, то есть набор правил, содержащий дочерний набор.  
   
-1.  Откройте родительский набор правил в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
+1. Откройте родительский набор правил в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
   
-2.  Внесите изменение, например добавьте или удалите правило, а затем сохраните набор правил.  
+2. Внесите изменение, например добавьте или удалите правило, а затем сохраните набор правил.  
   
-3.  Повторно откройте набор правил, отмените изменение, а затем сохраните набор правил повторно.  
+3. Повторно откройте набор правил, отмените изменение, а затем сохраните набор правил повторно.  
   
 ## <a name="see-also"></a>См. также  
  [Анализ качества приложения](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

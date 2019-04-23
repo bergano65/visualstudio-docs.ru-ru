@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087382"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 
@@ -34,16 +34,16 @@ ms.locfileid: "55932200"
 
 Чтобы прочитать схему зависимостей, минимальный набор необходимых файлов выглядит следующим образом:
 
--   Два файла схемы, который вы хотите прочитать, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.
+- Два файла схемы, который вы хотите прочитать, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Для схем зависимостей, вам также потребуется файл с именем _Моя_схема_**. layerdiagram.suppressions**.
 
--   Файл проекта моделирования (**MyModel.modelproj**)
+- Файл проекта моделирования (**MyModel.modelproj**)
 
--   Файл корневой модели (**ModelDefinition\MyModel.uml**)
+- Файл корневой модели (**ModelDefinition\MyModel.uml**)
 
--   Файлы пакета для любого пакета, на который ссылается на диаграмме (**ModelDefinition\MyPackage.uml**)
+- Файлы пакета для любого пакета, на который ссылается на диаграмме (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Изменения, которые можно внести в режиме только для чтения
 
@@ -57,5 +57,5 @@ ms.locfileid: "55932200"
 
 ## <a name="see-also"></a>См. также
 
-- [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
+- [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

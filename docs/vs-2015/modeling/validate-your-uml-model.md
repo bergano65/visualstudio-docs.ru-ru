@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113317"
 ---
 # <a name="validate-your-uml-model"></a>Проверка модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ ms.locfileid: "58991510"
   
 #### <a name="to-install-a-visual-studio-extension"></a>Установка расширения Visual Studio  
   
-1.  Дважды щелкните **.vsix** файл в проводнике Windows (или проводника).  
+1. Дважды щелкните **.vsix** файл в проводнике Windows (или проводника).  
   
-2.  Перезапустите уже запущенный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Перезапустите уже запущенный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Отключение и удаление ограничений проверки  
  Для работы с моделью, к которой ограничения не применяются , можно временно отключить расширение, в котором они содержатся.  Таким образом, включая и отключая различные ограничения, можно в разное время работать разными видами моделей.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Отключение и удаление расширения Visual Studio  
   
-1.  На [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **средства** меню, щелкните **расширения и обновления**.  
+1. На [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **средства** меню, щелкните **расширения и обновления**.  
   
-2.  Вместе с расширением, нажмите кнопку **отключить** временно отключить расширения. Вы можете повторно включить ее позже, вернувшись к **расширения и обновления** окна.  
+2. Вместе с расширением, нажмите кнопку **отключить** временно отключить расширения. Вы можете повторно включить ее позже, вернувшись к **расширения и обновления** окна.  
   
      \- или -  
   
      Нажмите кнопку **удаления** удалить расширение.  
   
-3.  Перезапустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Перезапустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)   

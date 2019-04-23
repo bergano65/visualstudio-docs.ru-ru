@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106206"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к возможностям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.
@@ -102,7 +102,7 @@ ms.locfileid: "57526712"
 
  В следующей таблице перечислены изменения, которые можно выполнять в настраиваемой области задач с помощью свойств <xref:Microsoft.Office.Tools.CustomTaskPane>.
 
-|Задача|Свойство.|
+|Задача|Свойство|
 |----------|--------------|
 |Изменение размера области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |Изменение расположения области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -126,7 +126,7 @@ ms.locfileid: "57526712"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> методы в `ThisAddIn_Shutdown` обработчик событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о `ThisAddIn_Shutdown`, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Управлять настраиваемыми областями задач в нескольких окнах приложений
+## <a name="Managing"></a> Управлять настраиваемыми областями задач в нескольких окнах приложений
  При создании настраиваемой области задач в приложении, которое использует несколько окон для отображения документов и других элементов, необходимо выполнить дополнительные шаги, чтобы гарантировать, что область задач отображается в нужное для пользователя время.
 
  Настраиваемые области задач во всех приложениях связаны с окном фрейма документа, в котором пользователю отображается представление документа или элемента. Область задач отображается только в том случае, когда отображается соответствующее окно. Однако приложения используют окна фрейма документа по-разному.
@@ -137,7 +137,7 @@ ms.locfileid: "57526712"
 
 - [Word, InfoPath и PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  При создании настраиваемой области задач для Outlook для данной области устанавливается связь с конкретным окном проводника или инспектора. Проводники — это окна, в которых отображается содержимое папки, а инспекторы — окна, отображающие элемент, например сообщение электронной почты или задача.
 
  Если необходимо отобразить настраиваемую область задач с несколькими окнами проводника или инспектора, то при открытии окна проводника или инспектора нужно создать новый экземпляр данной области. Для этого обработайте событие, возникающее при создании окна проводника или инспектора, а затем создайте область задач в обработчике событий. Также можно обрабатывать события проводника или инспектора, чтобы скрывать или отображать области задач в зависимости от того, какое окно является видимым.
@@ -167,7 +167,7 @@ ms.locfileid: "57526712"
 
  Если настраиваемая область задач не будет удалена явным образом, в окнах Outlook могут отображаться несколько экземпляров данной области. Outlook иногда перезапускает окна. А такие окна сохраняют ссылки на все присоединенные к ним настраиваемые области задач.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath и PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath и PowerPoint
  Word, InfoPath и PowerPoint отображают каждый документ в отдельном окне фрейма документа. При создании настраиваемой области задач для этих приложений данная область связывается только с конкретным документом. Если пользователь открывает другой документ, настраиваемая область задач будет скрыта до тех пор, пока более ранний документ не станет снова видимым.
 
  Если необходимо отобразить настраиваемую область задач с несколькими документами, создайте новый экземпляр этой области, когда пользователь создает новый документ или открывает существующий документ. Для этого обработайте события, возникающие при создании или открытии документа, а затем создайте область задач в обработчиках событий. Также можно обрабатывать события документа для скрытия или отображения областей задач, в зависимости от документа, который является видимым.
@@ -177,43 +177,43 @@ ms.locfileid: "57526712"
 ### <a name="word-events"></a>События Word
  Для отслеживания состояния окон документов в Word можно обрабатывать следующие события.
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>События InfoPath
  Для отслеживания состояния окон документов в InfoPath можно обрабатывать следующие события.
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>События PowerPoint
  Для отслеживания состояния окон документов в PowerPoint можно обрабатывать следующие события.
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

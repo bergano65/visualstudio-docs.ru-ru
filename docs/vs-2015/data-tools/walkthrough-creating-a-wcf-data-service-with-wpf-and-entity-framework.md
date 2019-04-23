@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107051"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ ms.locfileid: "59653090"
   
  В этом пошаговом руководстве:  
   
--   Создайте веб-приложение, размещаемое в [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Создайте веб-приложение, размещаемое в [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Будет создана [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], представляющая таблицу Customers в базе данных Northwind.  
+- Будет создана [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], представляющая таблицу Customers в базе данных Northwind.  
   
--   Создайте таблицу [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Создайте таблицу [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Будет включена привязка данных к службе и создан пользовательский интерфейс.  
+- Будет включена привязка данных к службе и создан пользовательский интерфейс.  
   
--   При необходимости в приложение будут добавлены возможности фильтрации.  
+- При необходимости в приложение будут добавлены возможности фильтрации.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Наличие учебной базы данных Northwind.  
+- Наличие учебной базы данных Northwind.  
   
      Если база данных не установлена на компьютере разработчика, загрузите ее с веб-узла [Центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=98088). Инструкции см. в разделе [Загрузка примеров баз данных](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ ms.locfileid: "59653090"
   
 5. На странице **Выбор подключения к базе данных** выполните одно из следующих действий:  
   
-   -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+   - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
         -или-  
   
-   -   Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
+   - Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
   
 6. Если база данных требует пароль, нажмите кнопку **Да, включить конфиденциальные данные в строку подключения**, а затем нажмите кнопку **Далее**.  
   
@@ -236,11 +236,11 @@ ms.locfileid: "59653090"
   
 #### <a name="to-add-filtering-by-city"></a>Добавление фильтрации по городу  
   
-1.  В **обозревателе решений** откройте контекстное меню узла **Form1.vb** или **Form1.cs** и выберите команду **Открыть**.  
+1. В **обозревателе решений** откройте контекстное меню узла **Form1.vb** или **Form1.cs** и выберите команду **Открыть**.  
   
-2.  Добавьте в форму элементы управления <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> с **панели элементов**.  
+2. Добавьте в форму элементы управления <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> с **панели элементов**.  
   
-3.  Откройте контекстное меню для <xref:System.Windows.Forms.Button> управлять и **Просмотр кода**, а затем добавьте следующий код в `Button1_Click` обработчик событий:  
+3. Откройте контекстное меню для <xref:System.Windows.Forms.Button> управлять и **Просмотр кода**, а затем добавьте следующий код в `Button1_Click` обработчик событий:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ ms.locfileid: "59653090"
     }  
     ```  
   
-4.  В коде выше замените `http://localhost:53161/NorthwindCustomers.svc` URL-адресом из обработчика событий `Form1_Load`.  
+4. В коде выше замените `http://localhost:53161/NorthwindCustomers.svc` URL-адресом из обработчика событий `Form1_Load`.  
   
-5.  В строке меню выберите **Отладка**, **начать отладку** для запуска приложения.  
+5. В строке меню выберите **Отладка**, **начать отладку** для запуска приложения.  
   
-6.  В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.  
+6. В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.  
   
 ## <a name="see-also"></a>См. также  
  [Службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

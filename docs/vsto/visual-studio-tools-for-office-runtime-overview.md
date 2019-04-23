@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086330"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools для среды
   Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, Visual Studio 2010 Tools для Office runtime должны устанавливаться на компьютерах конечных пользователей. Дополнительные сведения см. в разделе [Как Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools для Office runtime состоит из двух основных компонентов:
@@ -42,7 +42,7 @@ ms.locfileid: "56642994"
 
   Эта среда выполнения может быть установлена несколькими различными способами. В зависимости от конфигурации компьютера при установке среды выполнения устанавливаются различные ее компоненты. Дополнительные сведения см. в разделе [Visual Studio Tools for сценарии установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-##  <a name="officeextensions"></a> Общие сведения о расширениях Office для .NET Framework
+## <a name="officeextensions"></a> Общие сведения о расширениях Office для .NET Framework
  Visual Studio 2010 Tools для среды выполнения Office содержит расширения Office для платформы .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий. Решения, нацеленные на каждую из версий .NET Framework, используют расширения, соответствующие этой версии.
 
  Эти расширения состоят из сборок, используемых решениями для автоматизации и расширения приложений Office. При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки, используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. Дополнительные сведения о сборках в расширениях Office см. в разделе [сборок в Visual Studio Tools для Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
@@ -74,7 +74,7 @@ ms.locfileid: "56642994"
 
   После внесения этого изменения сведения о типе для всех типов среды выполнения, используемых проектом, внедряются в сборку решения при построении проекта. Эти сведения о внедренных типах, а не сведения о типах в ссылочных сборках, используются решением во время выполнения.
 
-##  <a name="UnmanagedLoader"></a> Понять загрузчике решений Office
+## <a name="UnmanagedLoader"></a> Понять загрузчике решений Office
  Среда выполнения Visual Studio Tools for Office включает несколько неуправляемых библиотек DLL, которые используются приложениями Office для загрузки среды выполнения и решений Office. Хотя работать напрямую с данными библиотеками DLL не следует, необходимо знать их назначение, чтобы лучше понимать архитектуру решений Office.
 
  Сведения об использовании этих компонентов в процессе загрузки см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md) и [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).

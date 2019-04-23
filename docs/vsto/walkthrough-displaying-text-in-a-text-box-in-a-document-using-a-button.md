@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071763"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Пошаговое руководство. Отображаемый текст в текстовом поле документа с помощью кнопки
   В этом пошаговом руководстве демонстрируется использование кнопок и текстовых полей в настройке уровня документа для Microsoft Office Word.
@@ -35,16 +35,16 @@ ms.locfileid: "56600988"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Создание проекта
  Первым шагом является создание документа Word.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект документа Word с именем **Моя кнопка Word**. В мастере выберите **создания документа**.
+1. Создайте проект документа Word с именем **Моя кнопка Word**. В мастере выберите **создания документа**.
 
      Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -68,7 +68,7 @@ ms.locfileid: "56600988"
 
 5. Перетащите **кнопку** управления в документ и измените следующие свойства.
 
-   |Свойство.|Значение|
+   |Свойство|Значение|
    |--------------|-----------|
    |**Name**|**insertText**|
    |**Text**|**Вставить текст**|
@@ -80,14 +80,14 @@ ms.locfileid: "56600988"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Запись в текстовое поле при нажатии кнопки
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **ThisDocument**, а затем нажмите кнопку **просмотреть код** в контекстном меню.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **ThisDocument**, а затем нажмите кнопку **просмотреть код** в контекстном меню.
 
-2.  Добавьте следующий код в обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки.
+2. Добавьте следующий код в обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  В C# необходимо добавить обработчик события кнопки в событие <xref:Microsoft.Office.Tools.Word.Document.Startup>. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. В C# необходимо добавить обработчик события кнопки в событие <xref:Microsoft.Office.Tools.Word.Document.Startup>. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600988"
 
 ### <a name="to-test-your-document"></a>Проверка документа
 
-1.  Нажмите клавишу **F5** для запуска проекта.
+1. Нажмите клавишу **F5** для запуска проекта.
 
-2.  Нажмите кнопку.
+2. Нажмите кнопку.
 
-3.  Убедитесь, что **Hello World!** отображается в текстовом поле.
+3. Убедитесь, что **Hello World!** отображается в текстовом поле.
 
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей в документах Word. Ниже приводятся некоторые из возможных последующих задач.
 
--   Использование поля со списком для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Использование поля со списком для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>См. также
 - [Элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

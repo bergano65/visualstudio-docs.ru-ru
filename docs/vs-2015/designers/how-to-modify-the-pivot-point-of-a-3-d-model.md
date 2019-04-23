@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Изменение центра вращения трехмерной модели | Документация Майкрософт
+title: Практическое руководство. Изменение центра вращения трехмерной модели | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,21 +9,21 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071789"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Как выполнить Изменение центра вращения трехмерной модели
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Практическое руководство. Изменение центра вращения трехмерной модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе демонстрируется использование редактора моделей для изменения *центра вращения* трехмерной модели. Центр вращения является точкой в пространство, которая определяет математический центр для вращения и масштабирования объекта.  
   
  В этом документе описана следующая операция:  
   
--   Изменение центра вращения объекта  
+- Изменение центра вращения объекта  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>Изменение центра вращения трехмерной модели  
  Переопределить центр координат трехмерной модели можно, изменив ее центр вращения.  
@@ -49,6 +49,6 @@ ms.locfileid: "54774105"
   
    ![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md)   
  [Редактор моделей](../designers/model-editor.md)

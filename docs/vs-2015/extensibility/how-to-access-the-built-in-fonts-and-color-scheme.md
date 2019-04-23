@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091529"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "58978776"
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Чтобы зарегистрировать категории, с помощью встроенных шрифты и цвета  
   
-1.  Создайте специальный тип записи реестра категории в следующем расположении:  
+1. Создайте специальный тип записи реестра категории в следующем расположении:  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\*\<категории >*]  
   
      *\<Категория >* нелокализованное имя категории.  
   
-2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:  
+2. Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:  
   
     |name|Тип|Данные|Описание|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ ms.locfileid: "58978776"
     |NameID|REG_DWORD|ID|Идентификатор ресурса имени категории локализуемых в VSPackage.|  
     |ToolWindowPackage|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage, реализующего <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Для начала работы для системных шрифтов и цветов  
   

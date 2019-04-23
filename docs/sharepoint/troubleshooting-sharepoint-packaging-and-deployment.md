@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087603"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Устранение неполадок SharePoint упаковки и развертывания
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
@@ -47,7 +47,7 @@ ms.locfileid: "54868044"
 
  В следующей таблице показаны параметры для **Устранение конфликта развертывания** свойство.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |Автоматический|Обнаруживает и разрешает конфликты автоматически.|
 |Запрашивать|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|
@@ -73,9 +73,9 @@ ms.locfileid: "54868044"
 ### <a name="resolution"></a>Решение
  Чтобы решить эту проблему, выполните следующие действия:
 
-1.  Установите обновление кв967535, как описано в статье службы поддержки Майкрософт [ИСПРАВЛЕНИЯ: Доступно исправление для решения двух проблем ASP.NET в IIS 7.0 для Windows Vista и Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Установите обновление кв967535, как описано в статье службы поддержки Майкрософт [ИСПРАВЛЕНИЯ: Доступно исправление для решения двух проблем ASP.NET в IIS 7.0 для Windows Vista и Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Добавьте следующую строку в файл Web.config:
+2. Добавьте следующую строку в файл Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

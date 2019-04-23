@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105413"
 ---
 # <a name="extending-the-output-window"></a>Расширение окна вывода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ ms.locfileid: "58990288"
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Создание расширения, которое использует область вывода  
  Можно создать расширение, которое выполняет различные аспекты области вывода.  
   
-1.  Создайте проект VSIX с именем `TestOutput` с помощью команды меню с именем **TestOutput**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Создайте проект VSIX с именем `TestOutput` с помощью команды меню с именем **TestOutput**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Добавьте следующие ссылки:  
+2. Добавьте следующие ссылки:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  В TestOutput.cs, добавьте следующий оператор using:  
+3. В TestOutput.cs, добавьте следующий оператор using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  В TestOutput.cs удалите метод ShowMessageBox. Добавьте следующие заглушку метода:  
+4. В TestOutput.cs удалите метод ShowMessageBox. Добавьте следующие заглушку метода:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ ms.locfileid: "58990288"
     }  
     ```  
   
-5.  В конструкторе TestOutput измените обработчик команд для OutputCommandHandler. Вот часть, которая добавляет команды:  
+5. В конструкторе TestOutput измените обработчик команд для OutputCommandHandler. Вот часть, которая добавляет команды:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ ms.locfileid: "58990288"
     }  
     ```  
   
-6.  В следующих разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Можно вызвать эти методы в тело метода OutputCommandHandler(). Например следующий код добавляет метод CreatePane(), приведенными в следующем разделе.  
+6. В следующих разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Можно вызвать эти методы в тело метода OutputCommandHandler(). Например следующий код добавляет метод CreatePane(), приведенными в следующем разделе.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

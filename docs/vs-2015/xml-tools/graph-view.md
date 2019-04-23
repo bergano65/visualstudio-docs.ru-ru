@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110548"
 ---
 # <a name="graph-view"></a>Представление диаграммы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ ms.locfileid: "59658608"
 ## <a name="undoredo"></a>Отменить/Повторить  
  Функция отменить/повторить включена в представлении графика для следующих действий:  
   
--   Добавление одного узла посредством перетаскивания.  
+- Добавление одного узла посредством перетаскивания.  
   
--   Добавление нескольких узлов из окна результатов поиска в обозревателе схемы или запросов начального представления.  
+- Добавление нескольких узлов из окна результатов поиска в обозревателе схемы или запросов начального представления.  
   
--   Удаление одного или нескольких узлов.  
+- Удаление одного или нескольких узлов.  
   
 ## <a name="zoom"></a>Масштаб  
  Масштабирование доступно в нижнем правом углу представления графика.  

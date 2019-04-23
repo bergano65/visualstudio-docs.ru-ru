@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073557"
 ---
 # <a name="start"></a>Запуск
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  Должен иметь в качестве значения одно из следующих ключевых слов:  
   
--   **TRACE** — задает метод инструментирования;  
+- **TRACE** — задает метод инструментирования;  
   
--   **SAMPLE** — задает метод выборки;  
+- **SAMPLE** — задает метод выборки;  
   
--   **COVERAGE** — задает объем протестированного кода;  
+- **COVERAGE** — задает объем протестированного кода;  
   
--   **CONCURRENCY** — задает метод состязания за ресурсы.  
+- **CONCURRENCY** — задает метод состязания за ресурсы.  
   
 ## <a name="required-options"></a>Обязательные параметры  
  Если в командной строке задан параметр **Start**, необходимо указать параметр **Output**.  

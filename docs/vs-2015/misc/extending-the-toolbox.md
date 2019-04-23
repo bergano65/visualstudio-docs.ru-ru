@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088708"
 ---
 # <a name="extending-the-toolbox"></a>Расширение панели элементов
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Панель элементов** представляет коллекцию объектов, которые предоставляют функциональные возможности в редакторах и конструкторах через механизм перетаскивания IDE.  
   
  Существует два основных способа, которыми VSPackage работает с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **панелью элементов**.  
   
--   VSPackage может добавлять в **панель элементов**новые элементы данных и элементы управления.  
+- VSPackage может добавлять в **панель элементов**новые элементы данных и элементы управления.  
   
--   VSPackage может быть целевым объектом или потребителем существующих функциональных возможностей **панели элементов** с поддержкой операций перетаскивания и настройки внешнего вида **панели элементов**.  
+- VSPackage может быть целевым объектом или потребителем существующих функциональных возможностей **панели элементов** с поддержкой операций перетаскивания и настройки внешнего вида **панели элементов**.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

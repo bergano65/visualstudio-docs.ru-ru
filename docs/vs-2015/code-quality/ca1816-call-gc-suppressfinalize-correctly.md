@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094792"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58993415"
 
 ## <a name="cause"></a>Причина
 
--   Метод, который представляет собой реализацию <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> не вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Метод, который представляет собой реализацию <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> не вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Метод, который не является реализацией <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызовы <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Метод, который не является реализацией <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызовы <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Вызывает метод <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> и передает что-то другое (Me в Visual Basic).
+- Вызывает метод <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> и передает что-то другое (Me в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Метод позволяет освободить ресурсы в любое время, прежде чем объект становится доступным для сборки мусора. Если <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызывается метод, он освобождает ресурсы объекта. Это исключает необходимость в завершении. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> следует вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , сборщик мусора вызывает финализатор объекта.
 
- Чтобы предотвратить необходимость повторной реализации [System.IDisposable] производным типам, используя методы завершения (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) и назовем ее, рекомендуется вызывать незапечатанных типов без использования методов завершения <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Чтобы предотвратить производные типы с финализаторами от необходимости повторно реализовать [System.IDisposable])<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) и назовем ее, рекомендуется вызывать незапечатанных типов без использования методов завершения <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила:

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090147"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
   В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.
@@ -41,16 +41,16 @@ ms.locfileid: "59653896"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Создание проекта
  Первым шагом является создание документа Word.
 
 ### <a name="create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект документа Word с именем **форматирование Word**. В мастере выберите **создания документа**.
+1. Создайте проект документа Word с именем **форматирование Word**. В мастере выберите **создания документа**.
 
      Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,29 +61,29 @@ ms.locfileid: "59653896"
 
 ### <a name="add-three-check-boxes"></a>Добавьте три флажка
 
-1.  Убедитесь, что документ открыт в конструкторе Visual Studio.
+1. Убедитесь, что документ открыт в конструкторе Visual Studio.
 
-2.  Из **стандартные элементы управления** вкладке **элементов**, перетащите первый <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> в документ элемент управления.
+2. Из **стандартные элементы управления** вкладке **элементов**, перетащите первый <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> в документ элемент управления.
 
-3.  В окне **Свойства** измените следующие свойства.
+3. В окне **Свойства** измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**Text**|**Полужирный**|
 
-4.  Нажмите клавишу **ввод** переместить точку вставки под первый установленный флажок.
+4. Нажмите клавишу **ввод** переместить точку вставки под первый установленный флажок.
 
-5.  Добавьте второй флажок в приведенном ниже документе `ApplyBoldFont` и измените следующие свойства.
+5. Добавьте второй флажок в приведенном ниже документе `ApplyBoldFont` и измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**Text**|**Курсив**|
 
-6.  Нажмите клавишу **ввод** переместить точку вставки под второй флажок.
+6. Нажмите клавишу **ввод** переместить точку вставки под второй флажок.
 
-7.  Добавьте третий флажок в приведенном ниже документе `ApplyItalicFont` и измените следующие свойства.
+7. Добавьте третий флажок в приведенном ниже документе `ApplyItalicFont` и измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
@@ -113,28 +113,28 @@ ms.locfileid: "59653896"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Изменение форматирования при выборе типа "флажок"
 
-1.  Щелкните правой кнопкой мыши `ThisDocument` в **обозревателе решений**, а затем нажмите кнопку **просмотреть код** в контекстном меню.
+1. Щелкните правой кнопкой мыши `ThisDocument` в **обозревателе решений**, а затем нажмите кнопку **просмотреть код** в контекстном меню.
 
-2.  Для C# только, добавьте следующие константы в **ThisDocument** класса.
+2. Для C# только, добавьте следующие константы в **ThisDocument** класса.
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]
 
-3.  Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyBoldFont` "флажок".
+3. Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyBoldFont` "флажок".
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]
 
-4.  Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyItalicFont` "флажок".
+4. Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyItalicFont` "флажок".
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]
 
-5.  Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyUnderlineFont` "флажок".
+5. Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий `applyUnderlineFont` "флажок".
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]
 
-6.  В C#, необходимо добавить обработчики событий для текстовых полей для <xref:Microsoft.Office.Tools.Word.Document.Startup> событий. Сведения о том, как создавать обработчики событий, см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+6. В C#, необходимо добавить обработчики событий для текстовых полей для <xref:Microsoft.Office.Tools.Word.Document.Startup> событий. Сведения о том, как создавать обработчики событий, см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
@@ -143,18 +143,18 @@ ms.locfileid: "59653896"
 
 ### <a name="test-your-document"></a>Проверить документ
 
-1.  Нажмите клавишу **F5** для запуска проекта.
+1. Нажмите клавишу **F5** для запуска проекта.
 
-2.  Установите или снимите флажок.
+2. Установите или снимите флажок.
 
-3.  Убедитесь, что текст имеет правильный формат.
+3. Убедитесь, что текст имеет правильный формат.
 
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве описываются основные принципы использования флажков и программным способом изменения форматирования текста в документах Word. Ниже приводятся некоторые из возможных последующих задач.
 
--   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
--   Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)

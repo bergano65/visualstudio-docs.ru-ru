@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e23a3b7f4c1979132cf9ec6285c2f60c89341540
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100395"
 ---
 # <a name="return-statement-outside-of-function"></a>Оператор return за пределами функции
 Вы использовали `return` оператор в глобальной области кода. `return` Оператор должен отображаться только в теле функции.  
@@ -39,7 +39,7 @@ return [ expression ];
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Удалить `return` инструкции от основной части кода (глобальная область).  
+- Удалить `return` инструкции от основной части кода (глобальная область).  
   
 ## <a name="see-also"></a>См. также  
  [Оператор return](../../javascript/reference/return-statement-javascript.md)   

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082026"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ограничения на отладку WCF
 Существуют три способа, позволяющих начать отладку службы WCF:
@@ -37,13 +37,13 @@ ms.locfileid: "56721489"
 ## <a name="limitations-on-stepping-into-a-service"></a>Ограничения на выполнение шага с заходом в службу
  Чтобы выполнить шаг с заходом в службу из отлаживаемого клиентского приложения, необходимо соблюдать следующие условия.
 
--   Для вызова службы клиент должен использовать синхронный клиентский объект.
+- Для вызова службы клиент должен использовать синхронный клиентский объект.
 
--   Операция контракта не может быть односторонней.
+- Операция контракта не может быть односторонней.
 
--   Если сервер асинхронный, то при выполнении кода внутри службы невозможно просмотреть полный стек вызовов.
+- Если сервер асинхронный, то при выполнении кода внутри службы невозможно просмотреть полный стек вызовов.
 
--   В файле app.config или Web.config должна быть включена отладка с помощью показанного ниже кода.
+- В файле app.config или Web.config должна быть включена отладка с помощью показанного ниже кода.
 
     ```xml
     <system.web>
@@ -74,11 +74,11 @@ ms.locfileid: "56721489"
   ```
 
 ## <a name="self-hosting"></a>Резидентное размещение
- *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Сведения об отладке резидентной службы см. в разделе [как: отладка резидентной службы](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Сведения об отладке резидентной службы см. в разделе [как: Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Резидентное размещение
  Чтобы включить отладку приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, следует установить [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5 до установки [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Если [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установлен до установки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, при попытке отладки приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5 возникает ошибка. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, используйте Windows **панели управления** > **программы и компоненты** для восстановления вашей [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка служб WCF](../debugger/debugging-wcf-services.md)
 - [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

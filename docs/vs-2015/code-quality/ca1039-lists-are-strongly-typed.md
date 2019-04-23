@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097119"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039. Списки имеют строгие типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58990313"
 ## <a name="cause"></a>Причина
  Открытый или защищенный тип реализует <xref:System.Collections.IList?displayProperty=fullName> , но не предоставляет строго типизированный метод для одного или нескольких из следующих:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Описание правила
  Это правило требует <xref:System.Collections.IList> реализации предоставляли строго типизированные элементы, чтобы пользователям не придется приводить аргументы к <xref:System.Object?displayProperty=fullName> введите при использовании функциональных возможностей интерфейса. <xref:System.Collections.IList> Интерфейс реализуется классом коллекции объектов, доступных по индексу. В этом правиле предполагается, что тип, реализующий <xref:System.Collections.IList> делает это для управления коллекцией экземпляров типа, которое строже, чем <xref:System.Object>.

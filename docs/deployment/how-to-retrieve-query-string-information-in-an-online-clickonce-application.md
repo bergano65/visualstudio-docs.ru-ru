@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт'
+title: Практическое руководство. Извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095866"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. извлечение сведений строки запроса в интернет-приложении ClickOnce
 *Строка запроса* — это часть URL-адреса, начинающаяся с вопросительного знака (?) и содержащая произвольные сведения в форме *имя=значение*. Предположим, что имеется приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с именем `WindowsApp1` , размещенное в `servername`, и вы хотите передать значение для переменной `username` при запуске приложения. URL-адрес может выглядеть следующим образом:
 
  `http://servername/WindowsApp1.application?username=joeuser`
@@ -39,19 +39,19 @@ ms.locfileid: "56599198"
 > [!NOTE]
 >  Прежде чем принять решение о включении этой функции, ознакомьтесь с подразделом "Безопасность" ниже.
 
- Сведения о создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью *Mage.exe* или *MageUI.exe*, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Сведения о создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью *Mage.exe* или *MageUI.exe*, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 >  Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), аргументы командной строки можно передать автономному приложению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Если требуется передать аргументы в приложение, можно передать параметры в файл ярлыка с помощью расширения .APPREF-MS.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Получение сведений о строке запроса из приложения ClickOnce
 
-1.  Включите в проект приведенный ниже код. Чтобы этот код работал, потребуется иметь ссылку на System.Web и добавить операторы `using` или `Imports` для System.Web, System.Collections.Specialized и System.Deployment.Application.
+1. Включите в проект приведенный ниже код. Чтобы этот код работал, потребуется иметь ссылку на System.Web и добавить операторы `using` или `Imports` для System.Web, System.Collections.Specialized и System.Deployment.Application.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  Вызовите определенную ранее функцию, чтобы получить <xref:System.Collections.DictionaryBase.Dictionary%2A> параметров строки запроса, индексированных по имени.
+2. Вызовите определенную ранее функцию, чтобы получить <xref:System.Collections.DictionaryBase.Dictionary%2A> параметров строки запроса, индексированных по имени.
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Включение передачи строки запроса в приложении ClickOnce с помощью MageUI.exe
 

@@ -12,12 +12,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1b45a903e9982ec4bbc6c567601e43d6156397d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117464"
 ---
 # <a name="error-handling-and-return-values"></a>Обработка ошибок и возвращаемые значения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,24 +36,24 @@ ms.locfileid: "58980286"
 ## <a name="general-guidelines"></a>Общие рекомендации  
  Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> методы задания и сообщать об ошибках, которые являются внутренними для вашей реализации VSPackage. Тем не менее как правило, придерживайтесь следующих рекомендаций для обработки сообщений об ошибках в VSPackage.  
   
--   Реализуйте `ISupportErrorInfo` в объектах VSPackage COM.  
+- Реализуйте `ISupportErrorInfo` в объектах VSPackage COM.  
   
--   Создать механизм, который вызывает для отчетов об ошибках <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод в объекты, реализующие <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+- Создать механизм, который вызывает для отчетов об ошибках <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод в объекты, реализующие <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
--   Разрешить отображение ошибок, пользователей с помощью интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> метод.  
+- Разрешить отображение ошибок, пользователей с помощью интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> метод.  
   
 ## <a name="error-information-in-the-ide"></a>Сведения об ошибке в интегрированной среде разработки  
  Следующие правила определяют способ обработки сведений об ошибках в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки:  
   
--   Как стратегии безопасности, чтобы гарантировать, что устаревшим ошибка сведения не входят в отчет для пользователей, функции, вызывающие <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> необходимо сначала вызвать метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод. Передайте `null` снимите кэшированный ошибки сообщения, прежде чем что-либо вызове, задать новые сведения об ошибке.  
+- Как стратегии безопасности, чтобы гарантировать, что устаревшим ошибка сведения не входят в отчет для пользователей, функции, вызывающие <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> необходимо сначала вызвать метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод. Передайте `null` снимите кэшированный ошибки сообщения, прежде чем что-либо вызове, задать новые сведения об ошибке.  
   
--   Разрешены только функции, которые непосредственно не передают сообщения об ошибках для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, если они возвращают ошибку `HRESULT`. Можно очистить `ErrorInfo` запись на функцию или при возврате <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Единственное исключение для этого правила — если вызов возвращает ошибку `HRESULT` из которой получающая сторона можно явно восстановить или игнорировать.  
+- Разрешены только функции, которые непосредственно не передают сообщения об ошибках для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, если они возвращают ошибку `HRESULT`. Можно очистить `ErrorInfo` запись на функцию или при возврате <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Единственное исключение для этого правила — если вызов возвращает ошибку `HRESULT` из которой получающая сторона можно явно восстановить или игнорировать.  
   
--   Любая сторона, которая явно не обрабатывает ошибку `HRESULT` необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод с <xref:Microsoft.VisualStudio.VSConstants.S_OK>. В противном случае `ErrorInfo` объект может быть случайно использовано, когда другой стороной приводит к ошибке, не предоставляя собственные `ErrorInfo`.  
+- Любая сторона, которая явно не обрабатывает ошибку `HRESULT` необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод с <xref:Microsoft.VisualStudio.VSConstants.S_OK>. В противном случае `ErrorInfo` объект может быть случайно использовано, когда другой стороной приводит к ошибке, не предоставляя собственные `ErrorInfo`.  
   
--   Все методы, которые происходят ошибки `HRESULT` рекомендуется вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, чтобы предоставить сведения об ошибке. Если возвращенный `HRESULT` является специальной `FACILITY_ITF` error, то метод должен предоставить подходящий `ErrorInfo`объекта. Если стандартная системная ошибка возвращена следующая ошибка (например, <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>, <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>, <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>и т. д.) это допустимо для возврата кода ошибки без явного вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод. Как защитного кодирования стратегия, при ошибка `HRESULT` (включая системные ошибки), следует всегда вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, с помощью `ErrorInfo` описывающих сбой более подробно, или `null`.  
+- Все методы, которые происходят ошибки `HRESULT` рекомендуется вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, чтобы предоставить сведения об ошибке. Если возвращенный `HRESULT` является специальной `FACILITY_ITF` error, то метод должен предоставить подходящий `ErrorInfo`объекта. Если стандартная системная ошибка возвращена следующая ошибка (например, <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>, <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>, <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>и т. д.) это допустимо для возврата кода ошибки без явного вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод. Как защитного кодирования стратегия, при ошибка `HRESULT` (включая системные ошибки), следует всегда вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> метод, с помощью `ErrorInfo` описывающих сбой более подробно, или `null`.  
   
--   Все функции, возвращающие ошибку, исходящих от другого вызова необходимо передать на сведения, которые были получены от отказавшего вызывают из `HRESULT` без изменения `ErrorInfo` объекта.  
+- Все функции, возвращающие ошибку, исходящих от другого вызова необходимо передать на сведения, которые были получены от отказавшего вызывают из `HRESULT` без изменения `ErrorInfo` объекта.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

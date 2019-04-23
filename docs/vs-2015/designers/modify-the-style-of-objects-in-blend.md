@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088461"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "57869306"
   
  **Содержание раздела**  
   
--   [Кисти: изменение внешнего вида объекта](#Brushes)  
+- [Кисти: Изменение внешнего вида объекта](#Brushes)  
   
--   [Стили и шаблоны: создание согласованного внешнего вида и поведения элемента управления](#Styles)  
+- [Стили и шаблоны: Создание согласованного внешнего вида и поведения элемента управления](#Styles)  
   
--   [Визуальные состояния: изменение внешнего вида элемента управления в зависимости от его состояния](#Visual)  
+- [Визуальные состояния: Изменение внешнего вида элемента управления в зависимости от его состояния](#Visual)  
   
--   [Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование](#Resources)  
+- [Ресурсы: Создание цветов, стилей и шаблонов и их последующее повторное использование](#Resources)  
   
-##  <a name="Brushes"></a>Кисти: изменение внешнего вида объекта  
+## <a name="Brushes"></a> Кисти: Изменение внешнего вида объекта  
  Примените кисть к объекту, если вы хотите изменить его внешний вид.  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Нанесение повторяющегося изображения или рисунка на объект  
  Нанесите повторяющееся изображение или шаблон на объект с помощью *мозаичной кисти*.  
@@ -55,9 +55,9 @@ ms.locfileid: "57869306"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a>Стили и шаблоны: создание согласованного внешнего вида и поведения элемента управления  
+## <a name="Styles"></a> Стили и шаблоны: Создание согласованного внешнего вида и поведения элементов управления  
  Можно всего один раз разработать внешний вид и поведение элемента управления и затем применить эти параметры к другим элементам управления, чтобы вам не нужно было поддерживать их по отдельности.  
   
  **В каком случае следует использовать стиль?** Если вы хотите задать свойства по умолчанию (такие как цвет кнопки), используйте *стиль*. Элемент управления можно изменить даже в том случае, если вы уже применили к нему стиль.  
@@ -92,7 +92,7 @@ ms.locfileid: "57869306"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание стиля](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [создать стиль](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления  
  Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.  
@@ -102,19 +102,19 @@ ms.locfileid: "57869306"
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию  
  Выберите элемент управления и на панели [Свойства](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) найдите свойство **Стиль** или **Шаблон**. Затем нажмите кнопку **Дополнительные параметры** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") и выберите в контекстном меню пункт **Сброс**.  
   
-##  <a name="Visual"></a>Визуальные состояния: изменение внешнего вида элемента управления в зависимости от его состояния  
+## <a name="Visual"></a> Визуальные состояния: Изменение внешнего вида элемента управления в зависимости от его состояния  
  Элементы управления могут иметь различное визуальное представление в зависимости от действий пользователя. Например, можно сделать, чтобы кнопка становилась зеленой при нажатии пользователя, или запустить анимацию. Уменьшить или увеличить интервал времени между визуальными состояниями можно с помощью переходов.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование  
+## <a name="Resources"></a> Ресурсы: Создание цветов, стилей и шаблонов и их последующее повторное использование  
  Практически любой элемент проекта можно преобразовать в ресурс. Ресурс представляет собой объект, который можно многократно использовать в разных местах в приложении . Например, можно создать один раз цвет, преобразовать его в ресурс, а затем использовать этот ресурс для ряда объектов Чтобы изменить цвет всех этих объектов, достаточно изменить ресурс цвета.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

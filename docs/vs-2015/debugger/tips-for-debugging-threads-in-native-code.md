@@ -17,23 +17,23 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a0a72f9846add13f2f57581a0b836a9f57f8150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c4bed2506fef0c4f066e58e158b062c2a6b39aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074181"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Советы по отладке потоков в машинном коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ниже приведены некоторые советы по отладке потоков в машинном коде.  
   
--   Можно просмотреть содержимое блока информации потока, введя `@TIB` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
+- Можно просмотреть содержимое блока информации потока, введя `@TIB` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
   
--   Можно просмотреть код последней ошибки текущего потока, введя `@Err` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
+- Можно просмотреть код последней ошибки текущего потока, введя `@Err` в окно **Контрольные значения** или диалоговое окно **Быстрая проверка**.  
   
--   Для отладки многопоточного приложения можно использовать функции библиотеки времени выполнения C (CRT). Дополнительные сведения см. в разделе [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb).  
+- Для отладки многопоточного приложения можно использовать функции библиотеки времени выполнения C (CRT). Дополнительные сведения см. в разделе [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

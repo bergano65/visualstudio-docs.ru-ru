@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077606"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ ms.locfileid: "59002451"
 
 Это означает, что доступ к таким параметрам, как имена файлов проекта, не может производиться таким же образом, как при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).
 
-##  <a name="buildserver"></a> Настройка компьютеров
+## <a name="buildserver"></a> Настройка компьютеров
 
 Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Если [сервер сборки](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) работает на компьютере, на котором не установлена Visual Studio, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените символ "*" номером последней версии.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Изменение файла проекта
 
@@ -90,7 +90,7 @@ ms.locfileid: "59002451"
 
 Предусмотрено несколько свойств, которые можно вставлять в файл проекта для управления задачей преобразования.
 
--   Выполнять задачу преобразования в начале каждой сборки:
+- Выполнять задачу преобразования в начале каждой сборки:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ ms.locfileid: "59002451"
     </PropertyGroup>
     ```
 
--   Перезаписывать файлы, доступные только для чтения (например, потому что они не извлечены):
+- Перезаписывать файлы, доступные только для чтения (например, потому что они не извлечены):
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ ms.locfileid: "59002451"
     </PropertyGroup>
     ```
 
--   Каждый раз преобразовывать все шаблоны:
+- Каждый раз преобразовывать все шаблоны:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Передача данных контекста сборки в шаблоны
+## <a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать свойства построения и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include
+## <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include
 
 Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -271,13 +271,13 @@ The project folder is: <#= ProjectFolder #>
 
 **Какие другие варианты есть для преобразования текстовых шаблонов?**
 
--   [Служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в командных сценариев. В большинстве случаев удобнее использовать MSBuild.
+- [Служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в командных сценариев. В большинстве случаев удобнее использовать MSBuild.
 
--   [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
+- [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
 
--   [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.
+- [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.
 
 ## <a name="read-more"></a>Дополнительные сведения
 

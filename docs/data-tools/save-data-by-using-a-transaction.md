@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080999"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Практическое руководство. Сохранение данных с помощью транзакции
 
@@ -37,15 +37,15 @@ ms.locfileid: "55924374"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Чтобы добавить ссылку на файл System.Transactions.dll
 
-1.  На **проекта** меню, выберите **добавить ссылку**.
+1. На **проекта** меню, выберите **добавить ссылку**.
 
-2.  На **.NET** вкладке (**SQL Server** вкладку для проектов SQL Server), выберите **System.Transactions**, а затем выберите **ОК**.
+2. На **.NET** вкладке (**SQL Server** вкладку для проектов SQL Server), выберите **System.Transactions**, а затем выберите **ОК**.
 
      Ссылку на *System.Transactions.dll* добавляется в проект.
 
 ## <a name="to-save-data-in-a-transaction"></a>Чтобы сохранить данные в транзакции
 
--   Добавьте код для сохранения данных с помощью инструкции, содержащей транзакции. Ниже показано, как создать и создание экземпляра <xref:System.Transactions.TransactionScope> объекта в с помощью инструкции:
+- Добавьте код для сохранения данных с помощью инструкции, содержащей транзакции. Ниже показано, как создать и создание экземпляра <xref:System.Transactions.TransactionScope> объекта в с помощью инструкции:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ ms.locfileid: "55924374"
 ## <a name="see-also"></a>См. также
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
-- [Пошаговое руководство. Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)
+- [Пошаговое руководство: сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)

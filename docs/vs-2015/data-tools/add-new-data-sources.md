@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102762"
 ---
 # <a name="add-new-data-sources"></a>Добавление новых источников данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В контексте .NET data tools в Visual Studio термин *источника данных* ссылается на объекты .NET, которые подключаются к хранилищу данных и предоставлять эти данные приложения .NET. Конструкторы Visual Studio можно использовать выходные данные источника данных для создания стандартный код, который привязывает данные формы, при перетаскивании объектов базы данных из **источников данных** окна. Этот тип источника данных может быть:  
   
--   Класс в модели Entity Framework, которая связана с каким-либо базы данных.  
+- Класс в модели Entity Framework, которая связана с каким-либо базы данных.  
   
--   Набор данных, который связан с каким-либо базы данных.  
+- Набор данных, который связан с каким-либо базы данных.  
   
--   Класс, который представляет сетевой службы, такие как службы Windows Communication Foundation (WCF) данных или к службе REST.  
+- Класс, который представляет сетевой службы, такие как службы Windows Communication Foundation (WCF) данных или к службе REST.  
   
--   Класс, представляющий службу SharePoint.  
+- Класс, представляющий службу SharePoint.  
   
--   Класс или коллекции в решении.  
+- Класс или коллекции в решении.  
   
 > [!NOTE]
 >  Если вы не используете функции привязки данных, наборы данных, Entity Framework, LINQ to SQL, WCF или SharePoint, понятие «data source» не применяется. Просто подключиться непосредственно к базе данных с помощью объектов SQLCommand и взаимодействовать непосредственно с базой данных.  
@@ -77,11 +77,11 @@ ms.locfileid: "59670177"
   
  Можно создать источник данных из следующих типов служб:  
   
--   Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Службы данных WCF. Дополнительные сведения см. в разделе [службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Службы данных WCF. Дополнительные сведения см. в разделе [службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Веб-службы.  
+- Веб-службы.  
   
     > [!NOTE]
     >  Элементы, отображаемые в **источников данных** окне зависят от данных, возвращаемый службой. Некоторые службы могут предоставлять недостаточный объем информации для того, чтобы **Мастер настройки источника данных** создал объекты с возможностью привязки. Например, если служба возвращает нетипизированный набор данных, элементы не будут отображаться в **источников данных** окно, когда вы завершите работу мастера. Это потому, что нетипизированные наборы данных не предусматривают схемы, и поэтому мастер не имеет достаточно сведений для создания источника данных.  

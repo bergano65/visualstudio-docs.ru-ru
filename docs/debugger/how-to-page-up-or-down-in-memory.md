@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Перемещение вверх или вниз по содержимому памяти | Документация Майкрософт'
+title: Практическое руководство. Перемещение вверх или вниз по содержимому памяти | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072752"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. Перемещение вверх или вниз по содержимому памяти
+# <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. перемещение вверх или вниз по содержимому памяти
 
 При просмотре содержимого памяти в окне **Память** или **Дизассемблированный код** для перемещения вверх и вниз по области памяти можно использовать вертикальную полосу прокрутки.
 
@@ -44,9 +44,9 @@ ms.locfileid: "56715366"
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Перемещение вверх или вниз на одну инструкцию
 
--   Щелкните стрелку, расположенную над или под вертикальной полосой прокрутки.
+- Щелкните стрелку, расположенную над или под вертикальной полосой прокрутки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Окно памяти](../debugger/memory-windows.md)
 - [Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)
 - [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

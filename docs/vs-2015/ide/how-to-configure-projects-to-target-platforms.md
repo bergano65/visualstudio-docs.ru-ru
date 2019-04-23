@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084925"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. Настройка проекта для конкретной платформы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791414"
   
 2. В списке **Активная платформа решения** выберите 64-разрядную платформу для нацеливания решения, а затем нажмите кнопку **Закрыть**.  
   
-   1.  Если нужная платформа не отображается в списке **Активная платформа решения**, выберите **Создать**.  
+   1. Если нужная платформа не отображается в списке **Активная платформа решения**, выберите **Создать**.  
   
         Откроется диалоговое окно **Создание платформы решения**.  
   
-   2.  В списке **Введите или выберите новую платформу** выберите **x64**.  
+   2. В списке **Введите или выберите новую платформу** выберите **x64**.  
   
        > [!NOTE]
        >  Если вы присваиваете конфигурации новое имя, может потребоваться изменить параметры в **конструкторе проектов** для нацеливания на соответствующую платформу.  
   
-   3.  Если требуется скопировать параметры из текущий конфигурации платформы, выберите ее и нажмите кнопку **ОК**.  
+   3. Если требуется скопировать параметры из текущий конфигурации платформы, выберите ее и нажмите кнопку **ОК**.  
   
    Обновляются свойства для всех проектов, нацеленных на 64-разрядную платформу, и следующая сборка проекта будет оптимизирована под 64-разрядные платформы.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791414"
   
  Способ выполнения этой задачи зависит от используемого языка программирования. Дополнительные сведения см. на следующих страницах:  
   
--   Для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] см. раздел [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] см. раздел [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Для проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)] см. раздел [Страница "Сборка", конструктор проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- Для проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)] см. раздел [Страница "Сборка", конструктор проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Для проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] см. раздел [/clr (компиляция CLR)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Для проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] см. раздел [/clr (компиляция CLR)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>См. также раздел  
  [Общие сведения о платформах построения](../ide/understanding-build-platforms.md)   

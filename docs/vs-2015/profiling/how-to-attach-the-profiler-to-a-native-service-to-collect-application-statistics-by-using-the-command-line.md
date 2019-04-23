@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078607"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к собственной службе для сбора статистики приложения с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "59666381"
 
 #### <a name="to-start-and-stop-data-collection"></a>Запуск и остановка сбора данных  
 
--   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
+- Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
     |Параметр|Описание|  
     |------------|-----------------|  
@@ -94,15 +94,15 @@ ms.locfileid: "59666381"
 
 #### <a name="to-end-a-profiling-session"></a>Завершение сеанса профилирования  
 
-1.  Чтобы отключить профилировщик от целевого приложения, выполните одно из указанных ниже действий.  
+1. Чтобы отключить профилировщик от целевого приложения, выполните одно из указанных ниже действий.  
 
-    -   Остановите службу.  
+    - Остановите службу.  
 
          -или-  
 
-    -   Введите команду **VSPerfCmd /detach**.  
+    - Введите команду **VSPerfCmd /detach**.  
 
-2.  Завершите работу профилировщика. Тип:  
+2. Завершите работу профилировщика. Тип:  
 
      **VSPerfCmd /shutdown**  
 

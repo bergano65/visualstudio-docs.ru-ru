@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110931"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools для .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Visual Studio и .NET Framework вместе предоставляют обши
   
 ## <a name="in-this-section"></a>Содержание раздела  
   
--   [Создание простого приложения для работы с данными с помощью ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [Создание простого приложения для работы с данными с помощью ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Добавление новых подключений](../data-tools/add-new-connections.md)  
+- [Добавление новых подключений](../data-tools/add-new-connections.md)  
   
--   [Добавление новых источников данных](../data-tools/add-new-data-sources.md)  
+- [Добавление новых источников данных](../data-tools/add-new-data-sources.md)  
   
--   [Средства работы с моделью EDM в Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Средства работы с моделью EDM в Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Создание баз данных и приложений уровня данных, а также управление ими в Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Создание баз данных и приложений уровня данных, а также управление ими в Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>См. также  
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

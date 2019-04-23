@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105433"
 ---
 # <a name="cores-view-zoom-tool"></a>Средство масштабирования представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "54801457"
   
 ## <a name="other-ways-to-zoom"></a>Другие способы масштабирования  
   
--   Увеличение: перетащите, чтобы выбрать область в представлении временной шкалы. Когда кнопка мыши будет отпущена, представление временной шкалы увеличится по выбранному диапазону.  
+- Увеличение: перетащите, чтобы выбрать область в представлении временной шкалы. Когда кнопка мыши будет отпущена, представление временной шкалы увеличится по выбранному диапазону.  
   
--   Увеличение и уменьшение: наведите указатель мыши на временную шкалу и, нажав и удерживая клавишу CTRL, перемещайте колесико мыши.  
+- Увеличение и уменьшение: Наведите указатель мыши на временной шкале и нажмите клавишу CTRL при перемещении колесика мыши.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Ядра"](../profiling/cores-view.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101201"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Практическое руководство. Программное отображение строки в ячейке листа
   В этом примере показано, как для отображения текста в ячейке программными средствами. Для отображения текста в ячейке, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "56629447"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>Для отображения текста в элементе управления NamedRange
 
-1.  Установите для параметра <xref:Microsoft.Office.Tools.Excel.NamedRange> управления **Hello World**.
+1. Установите для параметра <xref:Microsoft.Office.Tools.Excel.NamedRange> управления **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -40,7 +40,7 @@ ms.locfileid: "56629447"
 
 ### <a name="to-display-text-in-an-excel-range"></a>Для отображения текста в диапазон Excel
 
-1.  Получить диапазон в ячейку **A1** на `Sheet1` и задайте значение **Hello World**.
+1. Получить диапазон в ячейку **A1** на `Sheet1` и задайте значение **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101188"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>Создание свойств во время выполнения  
  Значения свойствам, находящимся за пределами элементов `Target`, присваиваются на этапе оценки сборки. На следующем этапе выполнения свойства могут быть созданы и их значения могут быть изменены следующим образом.  
   
--   Свойство может создано любой задачей. Для создания свойства элемент [Задача](../msbuild/task-element-msbuild.md) должен иметь дочерний элемент [Выходные данные](../msbuild/output-element-msbuild.md) с атрибутом `PropertyName`.  
+- Свойство может создано любой задачей. Для создания свойства элемент [Задача](../msbuild/task-element-msbuild.md) должен иметь дочерний элемент [Выходные данные](../msbuild/output-element-msbuild.md) с атрибутом `PropertyName`.  
   
--   Свойство может создано задачей [CreateProperty](../msbuild/createproperty-task.md). Этот способ не рекомендуется использовать.  
+- Свойство может создано задачей [CreateProperty](../msbuild/createproperty-task.md). Этот способ не рекомендуется использовать.  
   
--   Начиная с версии .NET Framework 3.5, элементы `Target` могут содержать элементы `PropertyGroup`, которые могут содержать объявления свойств.  
+- Начиная с версии .NET Framework 3.5, элементы `Target` могут содержать элементы `PropertyGroup`, которые могут содержать объявления свойств.  
   
 ## <a name="storing-xml-in-properties"></a>Сохранение XML-кода в свойствах  
  Свойства могут содержать произвольный XML-код, предназначенный для передачи значений задачам или отображения сведений из журналов. В следующем примере показано свойство `ConfigTemplate`, которое имеет значение, содержащее XML-код и ссылки на другие свойства. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] заменяет ссылки на свойства соответствующими значениями свойств. Значения свойств присваиваются в том порядке, в каком они появляются. Таким образом, в этом примере `$(MySupportedVersion)`, `$(MyRequiredVersion)` и `$(MySafeMode)` должны быть уже определены.  

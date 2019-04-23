@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099277"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Создание элементов и отношений в моделях UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Создание ассоциации  
   
-1.  Получите владельца ассоциации. Как правило, это пакет или модель, которые содержат исходное окончание отношения.  
+1. Получите владельца ассоциации. Как правило, это пакет или модель, которые содержат исходное окончание отношения.  
   
-2.  Вызовите для владельца требуемый метод создания.  
+2. Вызовите для владельца требуемый метод создания.  
   
-3.  Задайте свойства отношения, такие как имя.  
+3. Задайте свойства отношения, такие как имя.  
   
      Пример:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Пример:  
+4. Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Пример:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  При удалении элемента из модели происходит следующее:  
   
--   Удаляется каждое связанное с ним отношение.  
+- Удаляется каждое связанное с ним отношение.  
   
--   Удаляется каждая фигура, которая представляет его на схеме.  
+- Удаляется каждая фигура, которая представляет его на схеме.  
   
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d85803e478931022e5872ddde2746b5b90feacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078087"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Практическое руководство. Программное применение цвета к диапазонам Excel
   Чтобы применить цвет для текста в диапазон ячеек, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
@@ -31,12 +31,12 @@ ms.locfileid: "56614133"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>Чтобы применить цвет к элементу управления NamedRange
 
-1.  Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> управления ячейку A1.
+1. Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> управления ячейку A1.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2.  Задайте цвет текста в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления.
+2. Задайте цвет текста в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
@@ -45,7 +45,7 @@ ms.locfileid: "56614133"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>Чтобы применить цвет к собственный объект диапазона Excel
 
-1.  Создайте диапазон в ячейку A1, а затем задайте цвет текста.
+1. Создайте диапазон в ячейку A1, а затем задайте цвет текста.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

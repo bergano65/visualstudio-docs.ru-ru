@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea8cc58e5afa6f98bbe07e2b75323449e637f25
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475946"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856424"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
@@ -29,7 +29,7 @@ ms.locfileid: "58475946"
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
 ::: moniker-end
 ::: moniker range="vs-2019"
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
@@ -46,7 +46,7 @@ ms.locfileid: "58475946"
    ![Шаблон проекта "Универсальное приложение Windows" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Если шаблон проекта **Пустое приложение (универсальное приложение Windows)** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**.<br><br>![Щелкните ссылку "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
+   > Если шаблон проекта **Пустое приложение (универсальное приложение Windows)** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**.<br><br>![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
 
 1. Подтвердите значения по умолчанию для параметров **Целевая версия** и **Минимальная версия** в диалоговом окне **Новый проект приложения для универсальной платформы Windows**.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076423"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59654884"
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Задание нескольких начальных целевых объектов  
   
--   Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
+- Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -55,7 +55,7 @@ ms.locfileid: "59654884"
   
 #### <a name="to-specify-more-than-one-default-target"></a>Задание нескольких целевых объектов по умолчанию  
   
--   Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
+- Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -64,13 +64,13 @@ ms.locfileid: "59654884"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь  
   
--   Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Пример:  
+- Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Пример:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь  
   
--   Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Пример:  
+- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Пример:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

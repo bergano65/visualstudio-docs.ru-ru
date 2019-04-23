@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088318"
 ---
 # <a name="how-to-debug-com-servers"></a>Практическое руководство. отладку серверов COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "58992106"
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Отладка приложения сервера при отсутствии сведений о контейнере  
   
-1.  Начните отладку сервера как обычного приложения.  
+1. Начните отладку сервера как обычного приложения.  
   
-2.  Задайте необходимые точки останова.  
+2. Задайте необходимые точки останова.  
   
-3.  Запустите приложение контейнера.  
+3. Запустите приложение контейнера.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   

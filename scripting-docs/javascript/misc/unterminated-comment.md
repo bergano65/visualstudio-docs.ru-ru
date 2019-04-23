@@ -14,12 +14,12 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b21c585bb48b55929a78554d686477e0fa5649
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101280"
 ---
 # <a name="unterminated-comment"></a>Комментарий без признака завершения
 Вы начали блок многострочного комментария, но не был завершен его должным образом. Многострочные комментарии начинаются с «/ *» комбинации и заканчиваться обратной "\*/» сочетания. Ниже представлен пример такого кода.  
@@ -31,7 +31,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что завершение многострочных комментариев с «* /».  
+- Убедитесь, что завершение многострочных комментариев с «* /».  
   
 ## <a name="see-also"></a>См. также  
  [Операторы комментария](../../javascript/reference/comment-statements-javascript.md)

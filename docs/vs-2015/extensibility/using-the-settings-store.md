@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094829"
 ---
 # <a name="using-the-settings-store"></a>Использование хранилища параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "58980458"
 ## <a name="creating-the-example-project"></a>Создание примера проекта  
  В этом разделе показано, как создать проект простое расширение с помощью команды меню для демонстрации.  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `SettingsStoreExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
+1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `SettingsStoreExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
   
-2.  Теперь Добавление пользовательской команды шаблона элемента с именем **SettingsStoreCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для **SettingsStoreCommand.cs**. Дополнительные сведения о том, как создать настраиваемую команду см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Теперь Добавление пользовательской команды шаблона элемента с именем **SettingsStoreCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для **SettingsStoreCommand.cs**. Дополнительные сведения о том, как создать настраиваемую команду см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>С помощью Store параметры конфигурации  
  В этом разделе показано, как обнаружить и отображать параметры конфигурации.  
@@ -79,11 +79,11 @@ ms.locfileid: "58980458"
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Использование редактора реестра для проверки параметров конфигурации  
   
-1.  Откройте Regedit.exe.  
+1. Откройте Regedit.exe.  
   
-2.  Перейдите к HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Перейдите к HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
     >  Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp_Config\ и не \14.0_Config\\. Когда вы запускаете экспериментальном экземпляре Visual Studio, параметры конфигурации — в кусте реестра «14.0Exp_Config».  
   
-3.  Разверните узел \Installed Products\. Если сообщение на предыдущих шагах **установки по средств разработчика Microsoft Windows Phone: Значение true,**, \Installed Products\ должен содержать узел средства для разработчиков Windows Phone. Если сообщение является **разработчиков Microsoft Windows Phone средства установлены: False**, \Installed Products\ не должен содержать узел средства для разработчиков Windows Phone.
+3. Разверните узел \Installed Products\. Если сообщение на предыдущих шагах **установки по средств разработчика Microsoft Windows Phone: Значение true,**, \Installed Products\ должен содержать узел средства для разработчиков Windows Phone. Если сообщение является **разработчиков Microsoft Windows Phone средства установлены: False**, \Installed Products\ не должен содержать узел средства для разработчиков Windows Phone.

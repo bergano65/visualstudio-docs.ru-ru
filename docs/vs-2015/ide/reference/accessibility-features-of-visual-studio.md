@@ -1,5 +1,5 @@
 ---
-title: Специальные возможности | Документация Майкрософт
+title: Специальные возможности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,16 +12,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eebaaf8887358e1eb527a69e6e26d100dfc230a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660961"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Помимо специальных возможностей и служебных программ Windows, следующие возможности повышают удобство работы с Visual Studio 2013 для людей с ограниченными возможностями:
 

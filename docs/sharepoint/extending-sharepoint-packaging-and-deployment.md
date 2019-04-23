@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097002"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Расширение SharePoint упаковки и развертывания
   Вы можете расширить процесс упаковки и развертывания для проектов SharePoint.
@@ -35,9 +35,9 @@ ms.locfileid: "56628394"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Выполнения кода при развертывании или отзыве решения SharePoint
  Для выполнения дополнительных задач при развертывании или отзыве решения SharePoint можно настроить обработку событий. Visual Studio создает события, которые можно обрабатывать, в следующих сценариях.
 
--   До и после выполнения каждого шага развертывания для элемента проекта SharePoint. Дополнительные сведения см. в разделе [Как Выполнения кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- До и после выполнения каждого шага развертывания для элемента проекта SharePoint. Дополнительные сведения см. в разделе [Как Выполнения кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   До и после развертывания или отзыва проекта SharePoint. Дополнительные сведения см. в разделе [Как Выполнения кода при развертывания или отзыва проекта SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- До и после развертывания или отзыва проекта SharePoint. Дополнительные сведения см. в разделе [Как Выполнения кода при развертывания или отзыва проекта SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Обработка конфликтов развертывания
  Некоторые типы элементов проекта SharePoint, включая модули, веб-части, экземпляры списков и типы содержимого, предоставляют встроенную функцию разрешения конфликтов развертывания. При развертывании решения, содержащего один из таких элементов проекта, Visual Studio сначала проверяет, существует ли на сайте SharePoint файл с тем же именем, URL-адресом или идентификатором, что и файл в развертываемом элементе. В случае обнаружения конфликта Visual Studio может автоматически разрешить его или запросить у пользователя, следует ли Visual Studio разрешить конфликт или отменить развертывание. Для получения дополнительной информации см. [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

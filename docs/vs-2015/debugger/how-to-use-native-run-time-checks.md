@@ -41,12 +41,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101682"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,11 +77,11 @@ ms.locfileid: "58993321"
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Включение проверок в машинных кодах во время выполнения в отладочном построении  
   
--   Используйте опцию **/RTC** и компоновку с отладочной версией библиотеки времени выполнения языка С (например, /MDd).  
+- Используйте опцию **/RTC** и компоновку с отладочной версией библиотеки времени выполнения языка С (например, /MDd).  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>Изменение порядка проверки в машинных кодах во время выполнения  
   
--   Используйте директиву `runtime_checks` .  
+- Используйте директиву `runtime_checks` .  
   
 ## <a name="see-also"></a>См. также  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   

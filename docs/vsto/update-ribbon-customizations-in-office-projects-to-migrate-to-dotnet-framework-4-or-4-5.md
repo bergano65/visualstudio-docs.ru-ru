@@ -12,32 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096547"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если проект содержит настройку ленты, который был создан с помощью **Лента (визуальный конструктор)** элемента проекта, необходимо внести следующие изменения в код проекта, при изменении требуемой версии .NET framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или позже.
 
--   Измените созданный код ленты.
+- Измените созданный код ленты.
 
--   Также необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты.
+- Также необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты.
 
 ## <a name="update-the-generated-ribbon-code"></a>Обновление созданного кода ленты
  Если требуемая версия .NET Framework для проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо изменить созданный код для элемента ленты, выполнив следующие действия. Файлы кода, которые следует обновить, зависят от языка программирования и способа создания проекта.
 
--   В проектах Visual Basic или в проектах Visual C#, созданные в любой [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] выполнять все действия в файле кода ленты (*YourRibbonItem*. Designer.cs или *YourRibbonItem*. Designer.vb). Чтобы просмотреть файл с выделенным кодом в проектах Visual Basic, щелкните **Показать все файлы** кнопку **обозревателе решений**.
+- В проектах Visual Basic или в проектах Visual C#, созданные в любой [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] выполнять все действия в файле кода ленты (*YourRibbonItem*. Designer.cs или *YourRibbonItem*. Designer.vb). Чтобы просмотреть файл с выделенным кодом в проектах Visual Basic, щелкните **Показать все файлы** кнопку **обозревателе решений**.
 
--   В проектах Visual C#, созданные в Visual Studio 2008 и затем обновить до [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], выполните первые два действия в файле кода ленты (*YourRibbonItem*.cs или *YourRibbonItem*.vb), и Выполните оставшиеся действия в файле кода ленты.
+- В проектах Visual C#, созданные в Visual Studio 2008 и затем обновить до [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], выполните первые два действия в файле кода ленты (*YourRibbonItem*.cs или *YourRibbonItem*.vb), и Выполните оставшиеся действия в файле кода ленты.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Изменение созданного кода ленты
 
-1.  Измените объявление класса ленты так, чтобы он был производным от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase>, а не от `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
+1. Измените объявление класса ленты так, чтобы он был производным от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase>, а не от `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
 
-2.  Измените конструктор класса ленты, как показано ниже. Если в конструктор был добавлен собственный код, не изменяйте его. В проектах Visual Basic измените только конструктор без параметров. Игнорируйте другой конструктор.
+2. Измените конструктор класса ленты, как показано ниже. Если в конструктор был добавлен собственный код, не изменяйте его. В проектах Visual Basic измените только конструктор без параметров. Игнорируйте другой конструктор.
 
      В следующем примере кода показан конструктор по умолчанию для класса ленты в проекте, ориентированном на .NET Framework 3.5.
 
@@ -72,7 +72,7 @@ ms.locfileid: "58324686"
     }
     ```
 
-3.  В методе `InitializeComponent` измените код, который создает элемент управления ленты, чтобы код использовал один из вспомогательных методов объекта <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
+3. В методе `InitializeComponent` измените код, который создает элемент управления ленты, чтобы код использовал один из вспомогательных методов объекта <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
     >  В проектах Visual C# необходимо расширить область `Component Designer generated code` так, чтобы она включала метод `InitializeComponent`.
@@ -99,7 +99,7 @@ ms.locfileid: "58324686"
 
      Полный список вспомогательных методов для элементов управления ленты, см. в разделе [элементы управления ленты, создать экземпляр](#ribboncontrols).
 
-4.  В проектах Visual C# измените любую строку кода в методе `InitializeComponent`, использующем делегат <xref:System.EventHandler%601>, так, чтобы применялся определенный делегат ленты.
+4. В проектах Visual C# измените любую строку кода в методе `InitializeComponent`, использующем делегат <xref:System.EventHandler%601>, так, чтобы применялся определенный делегат ленты.
 
      Например, предположим, что файл содержит следующую строку кода, которая обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> в проекте, ориентированном на .NET Framework 3.5.
 
@@ -107,9 +107,9 @@ ms.locfileid: "58324686"
 
     \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> полный список делегатов ленты см. в разделе [события обработки ленты](#ribbonevents).
 
-5.  В проектах Visual Basic найдите класс `ThisRibbonCollection` в конце файла. Измените объявление этого класса так, чтобы он больше не наследовал от `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
+5. В проектах Visual Basic найдите класс `ThisRibbonCollection` в конце файла. Измените объявление этого класса так, чтобы он больше не наследовал от `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-##  <a name="ribboncontrols"></a> Создать элементы управления ленты
+## <a name="ribboncontrols"></a> Создать элементы управления ленты
  Вам необходимо изменить любой код, который динамически создает элементы управления ленты. В проектах, ориентированных на .NET Framework 3.5, элементы управления ленты — это классы, экземпляры которых можно создавать напрямую в определенных сценариях. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, эти элементы управления представляют интерфейсы, которые не могут создаваться напрямую. Необходимо создать элементы управления с помощью методов, предоставляемых объектом <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
  Существует два способа доступа к объекту <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:
@@ -142,7 +142,7 @@ ms.locfileid: "58324686"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-##  <a name="ribbonevents"></a> Обработка событий ленты
+## <a name="ribbonevents"></a> Обработка событий ленты
  Необходимо изменить любой код, который обрабатывает события элементов управления ленты. В проектах, ориентированных на .NET Framework 3.5, эти события обрабатываются универсальным делегатом <xref:System.EventHandler%601>. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, эти события обрабатываются другими делегатами.
 
  В следующей таблице перечислены события ленты и делегаты, связанные с ними в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.

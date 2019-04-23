@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077171"
 ---
 # <a name="customizing-text-and-image-fields"></a>Настройка полей с текстом и изображениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Чтобы создать подкласс ImageField  
   
-1.  Задайте **создает двойную производную** свойства родительского класса фигуры в определении DSL.  
+1. Задайте **создает двойную производную** свойства родительского класса фигуры в определении DSL.  
   
-2.  Переопределить `InitializeShapeFields` метод класса фигуры.  
+2. Переопределить `InitializeShapeFields` метод класса фигуры.  
   
-    -   Создайте новый файл кода в проекте DSL и написать определение разделяемого класса для класса shape. Переопределите метод существует.  
+    - Создайте новый файл кода в проекте DSL и написать определение разделяемого класса для класса shape. Переопределите метод существует.  
   
-3.  Проверьте код элемента `InitializeShapeFields` в DSL\GeneratedCode\Shapes.cs.  
+3. Проверьте код элемента `InitializeShapeFields` в DSL\GeneratedCode\Shapes.cs.  
   
      В методе переопределения вызвать базовый метод и затем создать экземпляр собственного класса поля изображения. Используется для поменяйте местами поля стандартным в `shapeFields` списка.  
   

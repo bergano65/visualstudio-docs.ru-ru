@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108507"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58992625"
   
 ### <a name="to-specify-an-installation-url"></a>Чтобы указать URL-адрес установки  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Перейдите на вкладку **Публикация**.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате http://www.microsoft.com/ApplicationName, или UNC-путь в формате \\\Server\ApplicationName.  
+3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате http://www.microsoft.com/ApplicationName, или UNC-путь в формате \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Укажите, где Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

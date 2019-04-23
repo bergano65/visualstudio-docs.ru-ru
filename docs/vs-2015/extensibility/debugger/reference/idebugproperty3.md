@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100577"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Этот интерфейс обеспечивает поддержку:  
   
--   Извлечение произвольной длины строки, связанный со свойством.  
+- Извлечение произвольной длины строки, связанный со свойством.  
   
--   Уникальный идентификатор сопоставление со свойством.  
+- Уникальный идентификатор сопоставление со свойством.  
   
--   Получение списка пользовательских средств просмотра для свойства.  
+- Получение списка пользовательских средств просмотра для свойства.  
   
--   Значение свойства с возможностью отчетов все возникающие ошибки  
+- Значение свойства с возможностью отчетов все возникающие ошибки  
   
 ## <a name="syntax"></a>Синтаксис  
   

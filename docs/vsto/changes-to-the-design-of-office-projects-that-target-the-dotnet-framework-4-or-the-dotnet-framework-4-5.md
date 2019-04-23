@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093661"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.
@@ -30,11 +30,11 @@ ms.locfileid: "57870335"
 
  Для любых типов, экземпляры которых можно было создать непосредственно в предыдущих версиях [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], экземпляры этих типов теперь можно получить с помощью методов объекта `Globals.Factory`. Например, чтобы получить объект, реализующий интерфейс <xref:Microsoft.Office.Tools.Excel.SmartTag>, используйте метод `Globals.Factory.CreateSmartTag`. Дополнительные сведения см. в следующих разделах:
 
--   [Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
--   [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
+- [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
 
--   [Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
 ### <a name="new-base-classes-in-office-projects"></a>Новые базовые классы в проектах Office
  Visual Studio 2010 Tools для Office runtime Новая структура, основанная на интерфейсах, влияет на созданные классы в проектах Office, например `ThisDocument`, `ThisWorkbook`, и `ThisAddIn`. В проектах Office, ориентированных на .NET Framework 3.5 и предыдущие версии платформы, эти созданные классы являются производными от классов в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], например, `Microsoft.Office.Tools.Word.Document`, `Microsoft.Office.Tools.Excel.Worksheet` и `Microsoft.Office.Tools.AddIn`. В проектах, ориентированных на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, теперь эти классы [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] являются интерфейсами. Таким образом, созданные классы в проектах Office больше не могут наследовать от них свою реализацию. Вместо этого, созданные классы наследуют от новых базовых классов, например, <xref:Microsoft.Office.Tools.Word.DocumentBase>, <xref:Microsoft.Office.Tools.Excel.WorksheetBase>и <xref:Microsoft.Office.Tools.AddInBase>. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md) и [программирование настроек уровня документа](../vsto/programming-document-level-customizations.md).

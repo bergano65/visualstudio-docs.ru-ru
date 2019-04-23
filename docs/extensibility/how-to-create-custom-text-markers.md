@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d03c7b96a6329775db426f7306dcf4cf60ca0e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103410"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Практическое руководство. Создание настраиваемых текстовых маркеров
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:
@@ -45,45 +45,45 @@ ms.locfileid: "56712038"
 
 2. Создайте четыре значения в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**
 
-   -   (Значение по умолчанию)
+   - (Значение по умолчанию)
 
-   -   Служба
+   - Служба
 
-   -   DisplayName
+   - DisplayName
 
-   -   Пакет
+   - Пакет
 
-   -   `Default` является необязательным элементом типа REG_SZ. Если задано, значение параметра является строка, содержащая некоторые полезные идентификационные данные, например «Custom текстового маркера».
+   - `Default` является необязательным элементом типа REG_SZ. Если задано, значение параметра является строка, содержащая некоторые полезные идентификационные данные, например «Custom текстового маркера».
 
-   -   `Service` — запись типа REG_SZ, содержащий строку идентификатора GUID службы, которая предоставляет настраиваемые текстового маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+   - `Service` — запись типа REG_SZ, содержащий строку идентификатора GUID службы, которая предоставляет настраиваемые текстового маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
 
-   -   `DisplayName` запись типа REG_SZ, содержащая идентификатор ресурса имени пользовательского текстового маркера. Формат — #YYYY.
+   - `DisplayName` запись типа REG_SZ, содержащая идентификатор ресурса имени пользовательского текстового маркера. Формат — #YYYY.
 
-   -   `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющий службы отображается в узле службы. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+   - `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющий службы отображается в узле службы. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
 
 ## <a name="to-create-a-custom-text-marker"></a>Для создания маркера пользовательского текста
 
-1.  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.
+1. Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.
 
      Реализации этого интерфейса определяет поведение и внешний вид вашего пользовательского типа маркера.
 
      Этот интерфейс вызывается, когда
 
-    1.  Пользователь запускает интегрированной среды разработки в первый раз.
+    1. Пользователь запускает интегрированной среды разработки в первый раз.
 
-    2.  Пользователь выбирает **сбросить значение по умолчанию —** под кнопкой **шрифты и цвета** страницы свойств в **среды** папка на левой панели  **Параметры** получен диалоговое окно **средства** меню интегрированной среды разработки.
+    2. Пользователь выбирает **сбросить значение по умолчанию —** под кнопкой **шрифты и цвета** страницы свойств в **среды** папка на левой панели  **Параметры** получен диалоговое окно **средства** меню интегрированной среды разработки.
 
-2.  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> метод, указывая, что `IVsPackageDefinedTextMarkerType` реализации должны быть возвращаются в зависимости от типа маркера идентификатор GUID, указанный в вызове метода.
+2. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> метод, указывая, что `IVsPackageDefinedTextMarkerType` реализации должны быть возвращаются в зависимости от типа маркера идентификатор GUID, указанный в вызове метода.
 
      Среда вызывает этот метод первый раз создается вашего пользовательского типа маркера, а также указывает идентификатор GUID, указывающий тип пользовательского маркера.
 
 ## <a name="to-proffer-your-marker-type-as-a-service"></a>Предложить ваш тип маркера как услуга
 
-1.  Вызовите <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.
+1. Вызовите <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.
 
      Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> возвращается.
 
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> метод, указывая идентификатор GUID службы тип пользовательского маркера идентификации и передачи указателя на вашу реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс. Ваш <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> реализация должна возвращать указатель на вашу реализацию <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> интерфейс.
+2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> метод, указывая идентификатор GUID службы тип пользовательского маркера идентификации и передачи указателя на вашу реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс. Ваш <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> реализация должна возвращать указатель на вашу реализацию <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> интерфейс.
 
      Уникальный файл cookie, определяющий, что службы возвращается. Позже можно использовать этот файл cookie отозвать службу пользовательские маркеры типа путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> интерфейса, задав это значение файла cookie.
 

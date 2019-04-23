@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3650c06b38ab139c6c4bcc26033922c284dd1184
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090584"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes - элемент управления
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.
@@ -41,21 +41,21 @@ ms.locfileid: "56604149"
 ## <a name="events"></a>События
  События, доступные для <xref:Microsoft.Office.Tools.Word.XMLNodes> управления:
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
 
 ## <a name="compare-events"></a>Сравнения событий
  Можно записать событие, когда пользователь перемещает курсор внутри контекста определенного <xref:Microsoft.Office.Tools.Word.XMLNodes> элемента управления. Например, возможно, <xref:Microsoft.Office.Tools.Word.XMLNodes> управления с именем `Customer` с дочерним <xref:Microsoft.Office.Tools.Word.XMLNodes> управления с именем `Company`, и `Company` имеет два дочерних <xref:Microsoft.Office.Tools.Word.XMLNodes> элементов управления с именем `CompanyName` и `CompanyRegion` следующим образом:

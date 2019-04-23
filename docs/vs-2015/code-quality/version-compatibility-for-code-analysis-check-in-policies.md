@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a63ead03baffaa0ce8047220ff1ce8a33c88be8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082234"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Совместимость версий для политик возврата анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,20 +26,20 @@ ms.locfileid: "58979158"
   
 ## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Совместимость версий для оценки политик возврата  
   
--   При вычислении политик возврата с анализом кода в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], все правила, которые существовали в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] , но не существуют в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] игнорируются.  
+- При вычислении политик возврата с анализом кода в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], все правила, которые существовали в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] , но не существуют в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] игнорируются.  
   
--   При вычислении политик возврата с анализом кода в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], все новые правила, предназначенные исключительно для [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] игнорируются.  
+- При вычислении политик возврата с анализом кода в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], все новые правила, предназначенные исключительно для [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] игнорируются.  
   
--   Если политика возврата указывает сборки правил [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] пропускаются все правила, определяемые сборками, что он не распознает.  
+- Если политика возврата указывает сборки правил [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] пропускаются все правила, определяемые сборками, что он не распознает.  
   
--   Если политика возврата указывает сборки правил, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] не распознает, отображается сообщение.  
+- Если политика возврата указывает сборки правил, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] не распознает, отображается сообщение.  
   
 ## <a name="version-compatibility-for-authoring-check-in-policies"></a>Совместимость версий для создания политик возврата  
   
--   Если вы создали политику возврата с анализом кода с помощью [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] версии [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], нельзя использовать [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] версии [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] изменить его. Кроме того [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] невозможно вычислить политики.  
+- Если вы создали политику возврата с анализом кода с помощью [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] версии [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], нельзя использовать [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] версии [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] изменить его. Кроме того [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] невозможно вычислить политики.  
   
--   Если вы создали политику возврата с анализом кода с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], можно использовать [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] изменить его, а также политики также можно оценить по [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. После внесения изменений в политику с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], больше не можете править политику с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] может вычислить политики без проблем с рассогласованными строгими именами.  
+- Если вы создали политику возврата с анализом кода с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], можно использовать [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] изменить его, а также политики также можно оценить по [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. После внесения изменений в политику с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], больше не можете править политику с помощью [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] может вычислить политики без проблем с рассогласованными строгими именами.  
   
--   Чтобы создать политику возврата с анализом кода с параметрами правил, которые применяются для обоих [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] и [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], необходимо создать политику в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], внести все необходимые изменения и сохранить политику. Если изменения правил существуют только в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], изменить и сохранить политику в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
+- Чтобы создать политику возврата с анализом кода с параметрами правил, которые применяются для обоих [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] и [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], необходимо создать политику в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], внести все необходимые изменения и сохранить политику. Если изменения правил существуют только в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], изменить и сохранить политику в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
   
      После сохранения политики в [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], больше не можно изменить параметры для правил, которые существуют в [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] только.

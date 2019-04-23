@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 671a243f65c68660c98c3730ca90568882a824d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080648"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Практическое руководство. Вложение представлений в данные документа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,19 +24,19 @@ ms.locfileid: "58979058"
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Чтобы определить представления можно присоединить к существующему объекту данных документа  
   
-1.  Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
+1. Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
   
-2.  В реализации `IVsEditorFactory::CreateEditorInstance`, вызовите `QueryInterface` на существующий объект данных документа при вызове интегрированной среды разработки вашей `CreateEditorInstance` реализации.  
+2. В реализации `IVsEditorFactory::CreateEditorInstance`, вызовите `QueryInterface` на существующий объект данных документа при вызове интегрированной среды разработки вашей `CreateEditorInstance` реализации.  
   
      Вызов `QueryInterface` можно проверять существующий объект данных документа, который указан в параметре `punkDocDataExisting` параметра.  
   
      Точное интерфейсы, которые необходимо запросить, тем не менее, зависит от редактора, который открывает документ, как описано на шаге 4.  
   
-3.  Если соответствующие интерфейсы на существующий объект данных документа не найден, возвращается код ошибки для редактора, указывающее на то, что объект данных документа несовместим с помощью редактора.  
+3. Если соответствующие интерфейсы на существующий объект данных документа не найден, возвращается код ошибки для редактора, указывающее на то, что объект данных документа несовместим с помощью редактора.  
   
      В реализации IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, появится сообщение уведомляет, что документ открыт в другом редакторе и запрашивает, следует ли закрыть его.  
   
-4.  Если закрыть этот документ, Visual Studio вызывает фабрикой редактора во второй раз. На этот вызов `DocDataExisting` параметр равен NULL. Реализации фабрики редактора можно затем откройте объект данных документа в ваш собственный редактор.  
+4. Если закрыть этот документ, Visual Studio вызывает фабрикой редактора во второй раз. На этот вызов `DocDataExisting` параметр равен NULL. Реализации фабрики редактора можно затем откройте объект данных документа в ваш собственный редактор.  
   
     > [!NOTE]
     >  Чтобы определить, можно ли работать с существующим объектом данных документа, можно использовать закрытого набора знаний в реализации интерфейса путем приведения указатель на фактический [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] закрытая реализация класса. Например, реализовать все стандартные редакторы `IVsPersistFileFormat`, который наследует от <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Таким образом, можно вызвать `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, и если идентификатор класса на существующий объект данных документа соответствует вашей реализации код класса, а затем можно работать с объектом данных документа.  

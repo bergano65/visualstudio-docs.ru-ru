@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072823"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Изменения, необходимые для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET framework проекта Office изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии из более ранней версии платформы .NET Framework, необходимо выполнить следующие задачи, чтобы убедиться, что решение может выполняться на компьютере разработчика, так и на компьютерах конечных пользователей:
@@ -39,14 +39,14 @@ ms.locfileid: "56625703"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Удаление атрибута SecurityTransparentAttribute
 
-1.  Откройте проект в Visual Studio, а затем откройте **Обозреватель решений**.
+1. Откройте проект в Visual Studio, а затем откройте **Обозреватель решений**.
 
-2.  В узле **Свойства** (для C#) или **Мой проект** (для Visual Basic) дважды щелкните файл кода AssemblyInfo, чтобы открыть его в редакторе кода.
+2. В узле **Свойства** (для C#) или **Мой проект** (для Visual Basic) дважды щелкните файл кода AssemblyInfo, чтобы открыть его в редакторе кода.
 
     > [!NOTE]
     >  В проектах Visual Basic для просмотра файла с кодом AssemblyInfo необходимо нажать кнопку **Показать все файлы** в **обозревателе решений** .
 
-3.  Найдите <xref:System.Security.SecurityTransparentAttribute> и удалите его из файла или закомментируйте его.
+3. Найдите <xref:System.Security.SecurityTransparentAttribute> и удалите его из файла или закомментируйте его.
 
     ```vb
     <Assembly: SecurityTransparent()>

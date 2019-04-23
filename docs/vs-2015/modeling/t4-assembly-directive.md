@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074220"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "58993131"
   
 - Сборка, содержащая DSL.  
   
-##  <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio  
+## <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio  
  Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.  
   
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073336"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Выпуски Visual Studio, поддерживаемые пакетом SDK визуализации и моделирования
 
@@ -37,13 +37,13 @@ ms.locfileid: "55907520"
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] поддерживает следующие конфигурации для развертывания доменных языков, которые вы создаете:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Распространяемый пакет распространяемого пакета Visual Studio Shell (интегрированный режим)
+- Распространяемый пакет распространяемого пакета Visual Studio Shell (интегрированный режим)
 
--   Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
+- Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
 
 > [!NOTE]
 > Чтобы доменный язык может работать на продукте оболочки, необходимо задать **поддерживаемая версия VS** в манифесте расширения. Дополнительные сведения см. в разделе [развертывание решений предметно-ориентированного языка](../modeling/deploying-domain-specific-language-solutions.md).

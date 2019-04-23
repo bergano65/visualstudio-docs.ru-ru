@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069657"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Этот интерфейс обеспечивает поддержку:
 
--   Извлечение произвольной длины строки, связанный со свойством.
+- Извлечение произвольной длины строки, связанный со свойством.
 
--   Уникальный идентификатор сопоставление со свойством.
+- Уникальный идентификатор сопоставление со свойством.
 
--   Получение списка пользовательских средств просмотра для свойства.
+- Получение списка пользовательских средств просмотра для свойства.
 
--   Значение свойства с возможностью отчетов все возникающие ошибки
+- Значение свойства с возможностью отчетов все возникающие ошибки
 
 ## <a name="syntax"></a>Синтаксис
 

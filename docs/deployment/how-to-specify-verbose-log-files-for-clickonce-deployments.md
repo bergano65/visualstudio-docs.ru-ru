@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Указание подробных файлов журнала для развертываний ClickOnce | Документация Майкрософт'
+title: Практическое руководство. Указание подробных файлов журнала для развертываний ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111536"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертываний ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся подробные сведения, относящиеся к установке, инициализации, обновление и удаление [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Для более подробной информации, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] операции записи в файлы журнала, используйте редактор реестра (*regedit.exe*) для указания уровня детализации.
 
 > [!CAUTION]
@@ -32,13 +32,13 @@ ms.locfileid: "56619502"
 
 ### <a name="to-specify-verbose-log-files"></a>Чтобы указать файлы подробного журнала
 
-1.  Откройте *Regedit.exe*.
+1. Откройте *Regedit.exe*.
 
-2.  Перейдите к узлу **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
+2. Перейдите к узлу **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
-3.  При необходимости создайте новый строковый параметр с именем `LogVerbosityLevel`.
+3. При необходимости создайте новый строковый параметр с именем `LogVerbosityLevel`.
 
-4.  Установите для `LogVerbosityLevel` значение `1`.
+4. Установите для `LogVerbosityLevel` значение `1`.
 
 ## <a name="see-also"></a>См. также
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
