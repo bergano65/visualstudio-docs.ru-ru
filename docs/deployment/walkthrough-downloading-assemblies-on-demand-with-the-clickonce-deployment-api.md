@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт'
+title: Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063885"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce
 По умолчанию все сборки включены в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения загружаются при первом запуске приложения. Тем не менее возможно, частей приложения, которые используются с небольшого набора пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.
 
 > [!NOTE]
@@ -32,9 +32,9 @@ ms.locfileid: "56603903"
 ## <a name="prerequisites"></a>Предварительные требования
  Требуется один из следующих компонентов для выполнения этого пошагового руководства:
 
--   Windows SDK. Пакет Windows SDK можно загрузить из центра загрузки Майкрософт.
+- Windows SDK. Пакет Windows SDK можно загрузить из центра загрузки Майкрософт.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-the-projects"></a>Создание проектов
 
@@ -100,17 +100,17 @@ ms.locfileid: "56603903"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью MageUI.exe
 
-1.  С помощью *MageUI.exe*, создайте манифест приложения, как описано в [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:
+1. С помощью *MageUI.exe*, создайте манифест приложения, как описано в [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:
 
-    -   Имя манифеста приложения `ClickOnceOnDemand`.
+    - Имя манифеста приложения `ClickOnceOnDemand`.
 
-    -   На **файлы** странице *ClickOnceLibrary.dll* строки, задайте **тип файла** столбец **None**.
+    - На **файлы** странице *ClickOnceLibrary.dll* строки, задайте **тип файла** столбец **None**.
 
-    -   На **файлы** странице *ClickOnceLibrary.dll* введите `ClickOnceLibrary.dll` в **группы** столбца.
+    - На **файлы** странице *ClickOnceLibrary.dll* введите `ClickOnceLibrary.dll` в **группы** столбца.
 
-2.  С помощью *MageUI.exe*, создайте манифест развертывания, как описано в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Для манифеста развертывания используйте следующие параметры:
+2. С помощью *MageUI.exe*, создайте манифест развертывания, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Для манифеста развертывания используйте следующие параметры:
 
-    -   Имя манифеста развертывания `ClickOnceOnDemand`.
+    - Имя манифеста развертывания `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Тестирование новой сборки
 

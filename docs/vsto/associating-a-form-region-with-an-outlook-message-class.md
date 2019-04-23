@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063547"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook
   Вы можете указать, какие элементы Microsoft Office Outlook отображать область формы путем связывания области формы с классом сообщений каждого элемента. Например, если вы хотите добавить в конец почтового элемента области формы, можно связать области формы с `IPM.Note` класс message.
@@ -50,9 +50,9 @@ ms.locfileid: "56625534"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook
  Связывание области формы с классом сообщений двумя способами:
 
--   Используйте **новая область формы Outlook** мастера.
+- Используйте **новая область формы Outlook** мастера.
 
--   Применение атрибутов классов.
+- Применение атрибутов классов.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Используйте мастер создания области формы Outlook
  На последней странице **новая область формы Outlook** мастера, можно выбрать стандартные классы сообщений и ввести имена пользовательских классов сообщений, которые вы хотите связать с областью формы.

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062234"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Свойства типов на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58994416"
 > [!NOTE]
 >  В этом разделе описываются свойства типов на схемах классов UML. Дополнительные сведения см. в следующих разделах:  
   
--   [Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)  
+- [Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)  
   
--   [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)  
+- [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Свойства атрибутов на схемах классов UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Свойства атрибутов на схемах классов UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Свойства операций на схемах классов UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Свойства операций на схемах классов UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Свойства  
  Это свойства класса, интерфейса или перечисления.  

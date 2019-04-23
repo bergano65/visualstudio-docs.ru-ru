@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160541"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856934"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Параллельная установка версий Visual Studio
 
@@ -38,7 +38,7 @@ Visual Studio можно установить на компьютер, на ко
 
 * При использовании Visual Studio 2019 для открытия решения, которое было создано в Visual Studio 2017, можно впоследствии снова открыть и изменить решение в более ранней версии, если в нем не реализованы никакие функции, относящиеся только к Visual Studio 2019.
 
-* При попытке открыть решение, которое было создано в Visual Studio 2017 или более ранней версии, с помощью Visual Studio 2019 может потребоваться изменить проекты и файлы, чтобы они стали совместимы с Visual Studio 2019. Дополнительные сведения см. в разделе [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md).
+* При попытке открыть решение, которое было создано в Visual Studio 2017 или более ранней версии, с помощью Visual Studio 2019 может потребоваться изменить проекты и файлы, чтобы они стали совместимы с Visual Studio 2019. Дополнительные сведения см. в разделе [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ::: moniker-end
 
@@ -58,10 +58,10 @@ Visual Studio можно установить на компьютер, на ко
 
 | Язык | Раздел |
 |--------------|-----------|
-| Visual Basic | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Разработка в Visual Studio с использованием Visual F#](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Практическое руководство. Изменение требуемой версии платформы и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -77,17 +77,17 @@ Visual Studio можно установить на компьютер, на ко
 
 | Язык | Раздел |
 |--------------|-----------|
-| Visual Basic | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [Разработка в Visual Studio с использованием Visual F#](../ide/fsharp-visual-studio.md?view=vs-2019) |
-| C++ | [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [Разработка в Visual Studio с использованием Visual F#](../ide/fsharp-visual-studio.md) |
+| C++ | [Практическое руководство. Изменение требуемой версии платформы и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio](install-visual-studio.md?view=vs-2019)
-* [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [Установка Visual Studio](install-visual-studio.md)
+* [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Создание изолированных приложений и параллельных сборок C/C++](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

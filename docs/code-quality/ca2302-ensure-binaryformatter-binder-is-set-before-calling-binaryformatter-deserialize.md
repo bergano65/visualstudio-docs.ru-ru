@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047128"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302. Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize
 
@@ -34,25 +34,24 @@ ms.locfileid: "59367292"
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Это правило находит <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> десериализации вызовы методов или ссылки, когда <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> при его <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> может иметь значение null. Если вы хотите запретить какой-либо десериализации с <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> вне зависимости от <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> свойство, отключите это правило и [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)и включить правило [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Это правило находит <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> метод десериализации вызывает или ссылается на, когда <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> может иметь значение null. Если вы хотите запретить какой-либо десериализации с <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> вне зависимости от <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> свойство, отключите это правило и [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)и включить правило [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
 - По возможности вместо этого используйте безопасный сериализатор и **не позволяет злоумышленнику указать произвольный тип для десериализации**. Некоторые более безопасным сериализаторах включают:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Никогда не используйте <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Если необходимо использовать Сопоставитель типов, необходимо ограничить десериализованные типы на ожидаемый список.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Никогда не используйте <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Если необходимо использовать Сопоставитель типов, ограничьте список ожидаемый десериализованные типы.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET — используйте TypeNameHandling.None. Если необходимо использовать другое значение для TypeNameHandling, необходимо ограничить десериализованные типы на ожидаемый список.
+  - NewtonSoft Json.NET — используйте TypeNameHandling.None. Если необходимо использовать другое значение для TypeNameHandling, ограничиваются ожидаемого списка с помощью пользовательских ISerializationBinder десериализованные типы.
   - Буферы протокола
-- Сделайте незаконного сериализованные данные. После сериализации криптографически подписать сериализованные данные. Перед десериализацией, проверки криптографической подписи. Вы должны защищать криптографические ключи от огласку и вести разработку сменой ключей.
+- Сделайте несанкционированного сериализованные данные. После сериализации криптографически подписать сериализованные данные. Перед десериализацией проверки криптографической подписи. Предотвратить раскрытие криптографический ключ и создать для смены ключей.
 - Ограничьте десериализованные типы. Создание пользовательского <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Перед десериализацией с <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, задайте <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> свойство для экземпляра пользовательского <xref:System.Runtime.Serialization.SerializationBinder>. В переопределенном <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> метод, если обнаруживается неожиданный тип затем выдал исключение.
   - Убедитесь, что все ветви кода <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> набор свойств.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
-- Его можно безопасно подавить предупреждение из этого правила, если вы знаете, что входное значение является доверенным. Рассмотрим, что со временем может меняться потоки границ и данных доверия приложения.
-- Это безопасно отключить это предупреждение, если вы являетесь одним из выше меры предосторожности.
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Примеры псевдокода
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>Решение
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

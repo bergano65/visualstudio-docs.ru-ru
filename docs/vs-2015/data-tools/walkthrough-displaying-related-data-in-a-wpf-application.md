@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065393"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Пошаговое руководство. Отображение связанных данных в приложении WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ ms.locfileid: "58980257"
   
 #### <a name="to-create-a-new-wpf-project"></a>Создание нового проекта WPF  
   
-1.  Запустите Visual Studio.  
+1. Запустите Visual Studio.  
   
-2.  В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
+2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
   
-3.  Разверните **Visual C#** или **Visual Basic**, а затем выберите **Windows**.  
+3. Разверните **Visual C#** или **Visual Basic**, а затем выберите **Windows**.  
   
-4.  Убедитесь, что **.NET Framework 4** выбран в поле со списком в верхней части диалогового окна. <xref:System.Windows.Controls.DataGrid> Элемент управления, который используется в этом пошаговом руководстве можно использовать только в .NET Framework 4.  
+4. Убедитесь, что **.NET Framework 4** выбран в поле со списком в верхней части диалогового окна. <xref:System.Windows.Controls.DataGrid> Элемент управления, который используется в этом пошаговом руководстве можно использовать только в .NET Framework 4.  
   
-5.  Выберите шаблон проекта **Приложение WPF**.  
+5. Выберите шаблон проекта **Приложение WPF**.  
   
-6.  В поле **Имя файла** введите `AdventureWorksOrdersViewer`.  
+6. В поле **Имя файла** введите `AdventureWorksOrdersViewer`.  
   
-7.  Нажмите кнопку **ОК**.  
+7. Нажмите кнопку **ОК**.  
   
      Visual Studio создает `AdventureWorksOrdersViewer` проекта.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "58980257"
   
    - Если подключение к учебной базе данных AdventureWorksLT доступно в раскрывающемся списке, то выберите его.  
   
-      - или -  
+      -или-  
   
    - Нажмите кнопку **новое подключение** и создайте подключение к базе данных AdventureWorksLT.  
   
@@ -102,9 +102,9 @@ ms.locfileid: "58980257"
   
 6. На **Choose Your Database Objects** странице, разверните узел **таблиц**, а затем выберите следующие таблицы:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Нажмите кнопку **Готово**.  
   
@@ -192,15 +192,15 @@ ms.locfileid: "58980257"
   
 #### <a name="to-test-the-application"></a>Тестирование приложения  
   
-1.  Нажмите клавишу **F5**.  
+1. Нажмите клавишу **F5**.  
   
      Выполняется сборка и запуск приложения. Проверьте следующее.  
   
-    -   **Идентификатор заказа на продажу** отображает поле со списком **71774**. Это первый идентификатор заказа в сущности.  
+    - **Идентификатор заказа на продажу** отображает поле со списком **71774**. Это первый идентификатор заказа в сущности.  
   
-    -   Для каждого заказа, выберите в **идентификатор заказа на продажу** поле со списком отображаются подробные сведения в <xref:System.Windows.Controls.DataGrid>.  
+    - Для каждого заказа, выберите в **идентификатор заказа на продажу** поле со списком отображаются подробные сведения в <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Закройте приложение.  
+2. Закройте приложение.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  После выполнения данного пошагового руководства, сведения об использовании **источников данных** окно в Visual Studio для привязки WPF элементы управления в другие типы источников данных. Дополнительные сведения см. в разделе [элементы управления WPF, привязка к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) и [элементы управления WPF, привязка к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).  

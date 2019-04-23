@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204337"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856451"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)**:
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Удаление Visual Studio 2019 для Mac (предварительная версия)
+
+Предварительная версия Visual Studio 2019 для Mac была запущена как отдельная предварительная версия, поэтому вы можете параллельно продолжать работу с Visual Studio 2017 для Mac.
+
+Теперь, когда была выпущена Visual Studio 2019 для Mac, можно безопасно удалить предварительную версию Visual Studio 2019 для Mac.
+
+Чтобы удалить пакет предварительной версии, выберите **Visual Studio (предварительная версия)** в папке **Приложения** и нажмите **Переместить в корзину**, как показано на следующем изображении:
+
+![Выбор варианта "Переместить в корзину" в поисковике](media/uninstall-remove-vspreview.png)
+
+Можно также удалить файл plist предварительной версии, выполнив следующую команду:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>См. также

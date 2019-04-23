@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045464"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Практическое руководство. Обновление настраиваемой начальной страницы Visual Studio
 Вы можете обновить настраиваемую начальную страницу Visual Studio 2010 или Visual Studio 2012 до версии Visual Studio 2015, выполнив описанные ниже действия.
@@ -22,19 +22,19 @@ ms.locfileid: "59002419"
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Обновление настраиваемой начальной страницы до версии Visual Studio 2015
 
-1.  Убедитесь в том, что установлены среда Visual Studio 2015 и пакет SDK для Visual Studio 2015. Пакет SDK для Visual Studio можно скачать на странице [Пакет SDK для Microsoft Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1436).
+1. Убедитесь в том, что установлены среда Visual Studio 2015 и пакет SDK для Visual Studio 2015. Пакет SDK для Visual Studio можно скачать на странице [Пакет SDK для Microsoft Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1436).
 
-2.  Откройте проект настраиваемого шаблона. Вы увидите сообщение с уведомлением о том, что проект необходимо обновить. Нажмите кнопку **ОК** и дождитесь завершения обновления.
+2. Откройте проект настраиваемого шаблона. Вы увидите сообщение с уведомлением о том, что проект необходимо обновить. Нажмите кнопку **ОК** и дождитесь завершения обновления.
 
-3.  В свойствах проекта начальной страницы и проекта элемента управления убедитесь в том, что целевой платформой является по крайней мере .NET Framework 4.5.
+3. В свойствах проекта начальной страницы и проекта элемента управления убедитесь в том, что целевой платформой является по крайней мере .NET Framework 4.5.
 
-4.  В категории "Отладка" свойств проекта начальной страницы задайте путь к версии Visual Studio 2015 программы devenv.exe.
+4. В категории "Отладка" свойств проекта начальной страницы задайте путь к версии Visual Studio 2015 программы devenv.exe.
 
-5.  В ссылках для обоих проектов удалите ссылки на Microsoft.VisualStudio.Shell.11.0 и добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.
+5. В ссылках для обоих проектов удалите ссылки на Microsoft.VisualStudio.Shell.11.0 и добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.
 
-6.  Откройте файл StartPage.xaml в редакторе XML и внесите указанные ниже изменения.
+6. Откройте файл StartPage.xaml в редакторе XML и внесите указанные ниже изменения.
 
-    1.  Обновите пространства имен. Измените следующие строки:
+    1. Обновите пространства имен. Измените следующие строки:
 
         ```
 
@@ -52,4 +52,4 @@ ms.locfileid: "59002419"
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7.  Откройте файл MyControl.xaml и измените ссылку на пространство имен `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` на `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Откройте файл MyControl.xaml и измените ссылку на пространство имен `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` на `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .

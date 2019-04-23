@@ -10,12 +10,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065822"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Пошаговое руководство. Доступ к объекту DTE из расширения редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "58990727"
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Чтобы получить объект DTE из ServiceProvider  
   
-1.  Создайте проект VSIX C# с именем `DTETest`. Добавьте шаблон элемента классификатора редактора и назовите его `DTETest`. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1. Создайте проект VSIX C# с именем `DTETest`. Добавьте шаблон элемента классификатора редактора и назовите его `DTETest`. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-2.  Добавьте следующие ссылки на сборки в проект:  
+2. Добавьте следующие ссылки на сборки в проект:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.Shell.Immutable.10.0  
+    - Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  Перейдите к файлу DTETest.cs и добавьте следующие `using` директивы:  
+3. Перейдите к файлу DTETest.cs и добавьте следующие `using` директивы:  
   
     ```csharp  
     using EnvDTE;  
@@ -48,7 +48,7 @@ ms.locfileid: "58990727"
   
     ```  
   
-4.  В `GetDTEProvider` класса, импортируйте <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
+4. В `GetDTEProvider` класса, импортируйте <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
     ```csharp  
     [Import]  
@@ -56,14 +56,14 @@ ms.locfileid: "58990727"
   
     ```  
   
-5.  Добавьте в метод `GetClassifier()` следующий код:  
+5. Добавьте в метод `GetClassifier()` следующий код:  
   
     ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  Если необходимо использовать <xref:EnvDTE80.DTE2> интерфейс, можно привести объект DTE к нему.  
+6. Если необходимо использовать <xref:EnvDTE80.DTE2> интерфейс, можно привести объект DTE к нему.  
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)

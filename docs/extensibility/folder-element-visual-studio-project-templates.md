@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057255"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
 Указывает папку, которая будет добавлена в проект.
@@ -62,7 +62,7 @@ ms.locfileid: "56692664"
 
  Для упорядочения элементов проекта в папках в шаблоне можно использовать любой из следующих методов:
 
--   Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл, указав путь к файлу в `ProjectItem` элементы, не имеющий `Folder` элементов. Это рекомендуемый метод. Пример:
+- Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл, указав путь к файлу в `ProjectItem` элементы, не имеющий `Folder` элементов. Это рекомендуемый метод. Пример:
 
      `...`
 
@@ -72,7 +72,7 @@ ms.locfileid: "56692664"
 
      `...`
 
--   Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл с `Folder` элементов. Пример:
+- Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл с `Folder` элементов. Пример:
 
      `...`
 
@@ -86,7 +86,7 @@ ms.locfileid: "56692664"
 
      `...`
 
--   Не используйте папки в шаблоне *ZIP-файл* файл, но Добавление папок с помощью `TargetFileName` атрибут `ProjectItem` элемента. Пример:
+- Не используйте папки в шаблоне *ZIP-файл* файл, но Добавление папок с помощью `TargetFileName` атрибут `ProjectItem` элемента. Пример:
 
      `...`
 

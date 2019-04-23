@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db95754fd27820e0686f65a22393f51510467fb6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049192"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Практическое руководство. Выполнение команды SharePoint
   Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. После определения команды и развернуть его с помощью расширения средств SharePoint, расширение можно выполнить команду для вызова объектной модели SharePoint server. Чтобы выполнить команду, используйте один из методов ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.
@@ -26,21 +26,21 @@ ms.locfileid: "56631189"
 
 ### <a name="to-execute-a-sharepoint-command"></a>Для выполнения команды SharePoint
 
-1.  В расширения средств SharePoint, получают <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта. Способ получения <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объект зависит от типа расширения, вы создаете:
+1. В расширения средств SharePoint, получают <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта. Способ получения <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объект зависит от типа расширения, вы создаете:
 
-    -   В расширении системы проектов SharePoint, использовать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> свойство.
+    - В расширении системы проектов SharePoint, использовать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> свойство.
 
          Дополнительные сведения о расширениях системы проектов, см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    -   В расширении **подключения SharePoint** узел в **обозревателя серверов**, используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> свойство. Чтобы получить <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> , используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> свойство.
+    - В расширении **подключения SharePoint** узел в **обозревателя серверов**, используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> свойство. Чтобы получить <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> , используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> свойство.
 
          Дополнительные сведения о **обозревателя серверов** расширения, см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-    -   В коде, который не является частью расширения средств SharePoint, такие как мастер шаблонов проектов, используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> свойство.
+    - В коде, который не является частью расширения средств SharePoint, такие как мастер шаблонов проектов, используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> свойство.
 
          Дополнительные сведения о получении службы проекта см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
-2.  Вызовите один из методов ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта. Передайте имя команды, которые вы хотите выполнить, чтобы первый аргумент метода ExecuteCommand. Если у команды есть настраиваемый параметр, передайте этот параметр, чтобы второй аргумент метода ExecuteCommand.
+2. Вызовите один из методов ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта. Передайте имя команды, которые вы хотите выполнить, чтобы первый аргумент метода ExecuteCommand. Если у команды есть настраиваемый параметр, передайте этот параметр, чтобы второй аргумент метода ExecuteCommand.
 
      Нет другую перегрузку ExecuteCommand для каждой поддерживаемой команды подписи. Ниже перечислены поддерживаемые сигнатуры и какая перегруженная версия будет использовать для каждой подписи.
 
@@ -61,11 +61,11 @@ ms.locfileid: "56631189"
 
  Обратите внимание на следующее о вызове <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> метод:
 
--   Первый параметр определяет команду, необходимо вызвать. Эта строка соответствует значению, передаваемый <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> при определении команды.
+- Первый параметр определяет команду, необходимо вызвать. Эта строка соответствует значению, передаваемый <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> при определении команды.
 
--   Второй параметр имеет значение, которое вы хотите передать для настраиваемого параметра команды. В данном случае это полный путь к *.wsp* файла, которое обновляется на сайте SharePoint.
+- Второй параметр имеет значение, которое вы хотите передать для настраиваемого параметра команды. В данном случае это полный путь к *.wsp* файла, которое обновляется на сайте SharePoint.
 
--   Код, не выполняет неявное <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> команду параметр. Этот параметр передается в команду автоматически при вызове команды из расширения системы проектов SharePoint или расширением **подключения SharePoint** узел в **обозревателя серверов**. В других типах решений, например мастер шаблонов проектов, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс, этот параметр является **null**.
+- Код, не выполняет неявное <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> команду параметр. Этот параметр передается в команду автоматически при вызове команды из расширения системы проектов SharePoint или расширением **подключения SharePoint** узел в **обозревателя серверов**. В других типах решений, например мастер шаблонов проектов, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс, этот параметр является **null**.
 
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуется ссылка на сборку Microsoft.VisualStudio.SharePoint.

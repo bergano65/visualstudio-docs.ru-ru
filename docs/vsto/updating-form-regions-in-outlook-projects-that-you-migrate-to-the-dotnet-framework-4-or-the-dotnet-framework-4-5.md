@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27850b7531af4d0883f2cbf250987562a56b8f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048273"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET Framework для проекта надстройки VSTO для Outlook с областью формы изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо внести некоторые изменения в создаваемый код области формы и в любой код, который создает экземпляры определенных классов области формы во время выполнения.
@@ -27,11 +27,11 @@ ms.locfileid: "56597651"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Обновление созданного кода для области формы, разработанной в Visual Studio
 
-1.  Откройте файл кода программной части области формы в редакторе кода. Этот файл называется *Область_формы*.Designer.cs или *Область_формы*.Designer.vb. Для просмотра файла в проектах Visual Basic нажмите кнопку **Показать все файлы** в **обозревателе решений**.
+1. Откройте файл кода программной части области формы в редакторе кода. Этот файл называется *Область_формы*.Designer.cs или *Область_формы*.Designer.vb. Для просмотра файла в проектах Visual Basic нажмите кнопку **Показать все файлы** в **обозревателе решений**.
 
-2.  Измените объявление класса области формы так, чтобы он был производным от <xref:Microsoft.Office.Tools.Outlook.FormRegionBase>, а не от `Microsoft.Office.Tools.Outlook.FormRegionControl`.
+2. Измените объявление класса области формы так, чтобы он был производным от <xref:Microsoft.Office.Tools.Outlook.FormRegionBase>, а не от `Microsoft.Office.Tools.Outlook.FormRegionControl`.
 
-3.  Измените конструктор класса области формы, как показано в следующем примере кода.
+3. Измените конструктор класса области формы, как показано в следующем примере кода.
 
      В следующем примере кода показан конструктор для класса области формы в проекте, ориентированном на .NET Framework 3.5.
 
@@ -67,7 +67,7 @@ ms.locfileid: "56597651"
     }
     ```
 
-4.  Измените сигнатуру метода `InitializeManifest` , как показано ниже. Не изменяйте код этого метода. Этот код представляет параметры области формы, которые были применены в конструкторе. В проектах Visual C# необходимо расширить область `Form Region Designer generated code` так, чтобы она включала этот метод.
+4. Измените сигнатуру метода `InitializeManifest` , как показано ниже. Не изменяйте код этого метода. Этот код представляет параметры области формы, которые были применены в конструкторе. В проектах Visual C# необходимо расширить область `Form Region Designer generated code` так, чтобы она включала этот метод.
 
      В следующем примере кода показана сигнатура метода `InitializeManifest` в проекте, ориентированном на .NET Framework 3.5.
 
@@ -103,21 +103,21 @@ ms.locfileid: "56597651"
     }
     ```
 
-5.  Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
+5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
 
-6.  Удалите новую область формы, добавленную в проект.
+6. Удалите новую область формы, добавленную в проект.
 
-7.  В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
+7. В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
 
-8.  В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
+8. В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Обновление созданного кода для области формы, импортированной из Outlook
 
-1.  Откройте файл кода программной части области формы в редакторе кода. Этот файл называется *Область_формы*.Designer.cs или *Область_формы*.Designer.vb. Для просмотра файла в проектах Visual Basic нажмите кнопку **Показать все файлы** в **обозревателе решений**.
+1. Откройте файл кода программной части области формы в редакторе кода. Этот файл называется *Область_формы*.Designer.cs или *Область_формы*.Designer.vb. Для просмотра файла в проектах Visual Basic нажмите кнопку **Показать все файлы** в **обозревателе решений**.
 
-2.  Измените объявление класса области формы так, чтобы он был производным от <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase>, а не от `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
+2. Измените объявление класса области формы так, чтобы он был производным от <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase>, а не от `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
 
-3.  Измените конструктор класса области формы, как показано в следующем примере кода.
+3. Измените конструктор класса области формы, как показано в следующем примере кода.
 
      В следующем примере кода показан конструктор для класса области формы в проекте, ориентированном на .NET Framework 3.5.
 
@@ -153,7 +153,7 @@ ms.locfileid: "56597651"
     }
     ```
 
-4.  Для каждой строки кода в методе `InitializeControls` , который инициализирует элемент управления в классе области формы, измените код, как показано ниже.
+4. Для каждой строки кода в методе `InitializeControls` , который инициализирует элемент управления в классе области формы, измените код, как показано ниже.
 
      В следующем примере кода показано, как инициализировать элемент управления в проекте, ориентированном на .NET Framework 3.5. В этом коде метод `GetFormRegionControl` содержит параметр типа, который определяет тип возвращаемого элемента управления.
 
@@ -175,13 +175,13 @@ ms.locfileid: "56597651"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5.  Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
+5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
 
-6.  Удалите новую область формы, добавленную в проект.
+6. Удалите новую область формы, добавленную в проект.
 
-7.  В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
+7. В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
 
-8.  В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
+8. В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
 
 ## <a name="instantiate-form-region-classes"></a>Создавать экземпляры классов области формы
  Вам необходимо изменить любой код, который динамически создает экземпляры классов области формы. В проектах, предназначенных для .NET Framework 3.5, можно создавать экземпляры классов области формы, такие как `Microsoft.Office.Tools.Outlook.FormRegionManifest`, напрямую. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, эти классы представляют интерфейсы, которые не могут создаваться напрямую.

@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049312"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Предоставление поддержки команды отмены для конструкторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "58979023"
 ## <a name="obtaining-undo-support-automatically"></a>Получение поддержки отмены автоматически  
  Любого конструктора, созданные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] имеет возможность отмены изменений автоматического и полного if, конструкторе:  
   
--   Использует <xref:System.Windows.Forms.Control> на основе класса для пользовательского интерфейса.  
+- Использует <xref:System.Windows.Forms.Control> на основе класса для пользовательского интерфейса.  
   
--   Использует стандартный код на основе модели CodeDOM поколения и система анализа для создания кода и сохранения.  
+- Использует стандартный код на основе модели CodeDOM поколения и система анализа для создания кода и сохранения.  
   
      Дополнительные сведения о работе с поддержкой Visual Studio CodeDOM см. в разделе [динамического источника Создание и компиляция кода](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ ms.locfileid: "58979023"
   
 - Это <xref:System.IServiceProvider> класс должен предоставлять следующие службы:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Дизайнеры, использующие [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] сериализации CodeDOM, можно использовать <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> в состав [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] его реализацию <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        В этом случае <xref:System.IServiceProvider> класс, предоставляемый для <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> конструктор должен возвращать этот объект как реализация <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> класса.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Конструкторы по умолчанию <xref:System.ComponentModel.Design.DesignSurface> предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] основном приложении разработки гарантированно имеет реализацию по умолчанию <xref:System.ComponentModel.Design.IComponentChangeService> класса.  
   

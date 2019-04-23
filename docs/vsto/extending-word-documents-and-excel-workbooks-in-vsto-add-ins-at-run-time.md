@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049474"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Расширение документов Word и книг Excel в надстройках VSTO во время выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.
@@ -54,21 +54,21 @@ ms.locfileid: "56643825"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>Создание ведущего элемента для документа Word
 
--   В следующем примере кода показано, как создать ведущий элемент для активного документа.
+- В следующем примере кода показано, как создать ведущий элемент для активного документа.
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Создание ведущего элемента для книги Excel
 
--   В следующем примере кода показано, как создать ведущий элемент для активной книги.
+- В следующем примере кода показано, как создать ведущий элемент для активной книги.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Создание ведущего элемента для листа Excel
 
--   В следующем примере кода показано, как создать ведущий элемент для активного листа проекта.
+- В следующем примере кода показано, как создать ведущий элемент для активного листа проекта.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,12 +78,12 @@ ms.locfileid: "56643825"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Создание элемента управления ведущего приложения для ListObject
 
--   В следующем примере кода показано, как создать объект <xref:Microsoft.Office.Tools.Excel.ListObject> для первого объекта <xref:Microsoft.Office.Interop.Excel.ListObject> в активном листе проекта.
+- В следующем примере кода показано, как создать объект <xref:Microsoft.Office.Tools.Excel.ListObject> для первого объекта <xref:Microsoft.Office.Interop.Excel.ListObject> в активном листе проекта.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> Добавление управляемых элементов управления в документы и листы
+### <a name="AddControls"></a> Добавление управляемых элементов управления в документы и листы
  После создания объекта <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>в документ или на лист можно добавить элементы управления, которым соответствуют эти расширенные объекты. Чтобы добавить элементы управления, используйте `Controls` свойство <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  Добавлять можно элементы управления Windows Forms или *элементы управления ведущего приложения*. Элемент управления ведущего приложения — это элемент управления, предоставляемый средой выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , которая упаковывает соответствующий элемент управления в основную сборку взаимодействия Word или Excel. Элемент управления ведущего приложения предоставляет все поведение базовый собственный объект Office. Он также создает события и может быть привязан к данным с помощью модели привязки данных Windows Forms. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
@@ -113,7 +113,7 @@ ms.locfileid: "56643825"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> Определить, ли расширения объекта Office
+## <a name="HasVstoObject"></a> Определить, ли расширения объекта Office
  Чтобы определить, создан ли уже расширенный объект для определенного собственного объекта Office, воспользуйтесь методом `HasVstoObject`. Этот метод возвращает **true** Если расширенный объект уже создан.
 
  Воспользуйтесь методом `Globals.Factory.HasVstoMethod`. Передайте собственный объект Word или Excel (например, <xref:Microsoft.Office.Interop.Word.Document> или <xref:Microsoft.Office.Interop.Excel.Worksheet>), который необходимо протестировать для расширенного объекта.

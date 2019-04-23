@@ -9,33 +9,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0c71005d7c41fa8d2071b9d04f1df064d94238f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066147"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Практическое руководство. Обработка конфликтов развертывания
   Можно предоставить собственный код для обработки конфликтов развертывания для элемента проекта SharePoint. Например может определить, уже существует в месте развертывания все файлы в текущем элементе проекта и затем удалить существующие файлы перед развертыванием элемента текущего проекта. Дополнительные сведения о конфликтах развертывания см. в разделе [расширение SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-handle-a-deployment-conflict"></a>Для обработки конфликтов развертывания
 
-1.  Создание расширения элемента проекта, расширение проекта или определение нового типа элемента проекта. Дополнительные сведения см. в следующих разделах:
+1. Создание расширения элемента проекта, расширение проекта или определение нового типа элемента проекта. Дополнительные сведения см. в следующих разделах:
 
-    -   [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    -   [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    -   [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2.  В расширении, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объекта (в расширение элемента проекта или расширения проекта) или <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> объект (в определение нового типа элемента проекта).
+2. В расширении, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объекта (в расширение элемента проекта или расширения проекта) или <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> объект (в определение нового типа элемента проекта).
 
-3.  В обработчике событий определите, существует ли конфликт между элемент проекта, который развертывается и развернутого решения на сайте SharePoint, на основе критериев, которые применяются к вашему сценарию. Можно использовать <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> параметра аргументы события для анализа, который развертывается элемент проекта, а также можно анализировать файлы в расположении развертывания путем вызова команды SharePoint, вы определяете для этой цели.
+3. В обработчике событий определите, существует ли конфликт между элемент проекта, который развертывается и развернутого решения на сайте SharePoint, на основе критериев, которые применяются к вашему сценарию. Можно использовать <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> параметра аргументы события для анализа, который развертывается элемент проекта, а также можно анализировать файлы в расположении развертывания путем вызова команды SharePoint, вы определяете для этой цели.
 
      Для многих типов конфликтов сначала можно определить, какой шаг развертывания выполняется. Это можно сделать с помощью <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> свойства параметра аргументов события. Несмотря на то, что обычно имеет смысл для обнаружения конфликтов во время встроенного <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> шаг развертывания, вы можете проверить наличие конфликтов во время выполнения любого шага развертывания.
 
-4.  Если существует конфликт, используйте <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> метод <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> свойство аргументов события для создания нового <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> объекта. Этот объект представляет конфликт развертывания. При вызове <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> метода, также укажите метод, вызываемый для разрешения конфликта.
+4. Если существует конфликт, используйте <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> метод <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> свойство аргументов события для создания нового <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> объекта. Этот объект представляет конфликт развертывания. При вызове <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> метода, также укажите метод, вызываемый для разрешения конфликта.
 
 ## <a name="example"></a>Пример
  В следующем примере кода демонстрируется базовый процесс для обработки конфликтов развертывания в расширение элемента проекта для элементов проекта определения списка. Для обработки конфликтов развертывания для другого типа элемента проекта, передайте другую строку для <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Дополнительные сведения см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).
@@ -48,9 +48,9 @@ ms.locfileid: "56629304"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуются ссылки на следующие сборки:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

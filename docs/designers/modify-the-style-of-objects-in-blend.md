@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955314"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647457"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 
@@ -78,13 +78,13 @@ ms.locfileid: "55955314"
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления
 
-Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.
+Щелкните правой кнопкой мыши объект в окне [Объекты и временная шкала](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.
 
 ![Меню "Применить ресурс"](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию
 
-Выберите элемент управления и на панели [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры**, а затем выберите в контекстном меню пункт **Сброс**.
+Выберите элемент управления и в окне [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры**, а затем выберите в контекстном меню пункт **Сброс**.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Визуальные состояния. Изменение внешнего вида элемента управления в зависимости от его состояния
 

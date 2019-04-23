@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066121"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 Можно расширить функциональные возможности адаптера таблицы, создав файл разделяемого класса для TableAdapter и добавления к нему кода (вместо добавления кода к *DatasetName.DataSet.Designer* файла). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -38,17 +38,17 @@ ms.locfileid: "55927000"
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Добавление пользовательского кода адаптера таблицы в n уровневого приложения
 
-1.  Найдите проект, содержащий *.xsd* файл.
+1. Найдите проект, содержащий *.xsd* файл.
 
-2.  Дважды щелкните *.xsd* файл, чтобы открыть **конструктор наборов данных**.
+2. Дважды щелкните *.xsd* файл, чтобы открыть **конструктор наборов данных**.
 
-3.  Щелкните правой кнопкой мыши TableAdapter, который требуется добавить код, а затем выберите **Просмотр кода**.
+3. Щелкните правой кнопкой мыши TableAdapter, который требуется добавить код, а затем выберите **Просмотр кода**.
 
      Разделяемый класс создается и открывается в редакторе кода.
 
-4.  Добавьте код в объявление разделяемого класса.
+4. Добавьте код в объявление разделяемого класса.
 
-5.  В следующем примере показано место добавления кода к `CustomersTableAdapter` в `NorthwindDataSet`:
+5. В следующем примере показано место добавления кода к `CustomersTableAdapter` в `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

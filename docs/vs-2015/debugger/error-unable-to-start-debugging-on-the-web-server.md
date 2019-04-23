@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048766"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка: не удается запустить отладку на веб-сервере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59652063"
   
 Во многих случаях эта ошибка возникает, поскольку IIS не настроен правильно.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Проверьте конфигурацию IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Проверьте конфигурацию IIS
 
 После выполнения действия, чтобы устранить неполадки, описанные здесь и перед повторной попыткой для отладки, может потребоваться сброс IIS. Это можно сделать, открыв командную строку администратора и введя `iisreset`, или это можно сделать в диспетчере служб IIS. 
 

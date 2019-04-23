@@ -2,7 +2,7 @@
 title: Использование Visual Studio на виртуальной машине Azure
 titleSuffix: ''
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476024"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866722"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -32,12 +32,12 @@ ms.locfileid: "58476024"
 
 ## <a name="what-configurations-and-versions-are-available"></a>Доступные конфигурации и версии
 
-Образы большинства последних основных версий (Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace.  Недавно мы добавили поддержку предварительной версии для новой основной версии Visual Studio 2019.  Для каждой выпущенной основной версии доступна исходная версия (RTW) и последние обновленные версии.  Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community.  Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows.  Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
+Образы большинства последних основных версий (Visual Studio 2019, Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace.  Для каждой выпущенной основной версии доступна исходная версия "выпущено для веб" (RTW) и последние обновленные версии.  Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community.  Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows.  Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Предварительная версия (версия-кандидат 3)                      |           Предприятие         |    Версия 16.0.0, версия-кандидат 3    |
-| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.9      |
+|       Visual Studio 2019: RTW                                |    Enterprise, Community     |      Версия 16.0.0      |
+| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.22     |
 |   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
@@ -122,4 +122,4 @@ Azure предлагает разные размеры виртуальных м
 Теперь, когда вы знаете о предварительно настроенных образах Visual Studio, вы можете создать виртуальную машину:
 
 * [Создание виртуальной машины Windows с помощью портала Azure](/azure/virtual-machines/windows/quick-create-portal)
-* [Обзор виртуальных машин Windows в Azure](/azure/virtual-machines/windows/overview)
+* [Обзор виртуальных машин Windows](/azure/virtual-machines/windows/overview)

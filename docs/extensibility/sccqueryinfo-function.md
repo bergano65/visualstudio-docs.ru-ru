@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061219"
 ---
 # <a name="sccqueryinfo-function"></a>Функция SccQueryInfo
 Эта функция получает сведения о состоянии для набора выбранных файлов в системе управления версиями.
@@ -53,7 +53,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Запрос выполнен успешно.|
 |SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, причиной проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  При использовании этой функции для извлечения файлов, обратите внимание на следующие `MSSCCI` состояние требований:
 
--   `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.
+- `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.
 
--   `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.
+- `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.
 
--   `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.
+- `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.
 
--   Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.
+- Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.
 
 ## <a name="see-also"></a>См. также
 - [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)

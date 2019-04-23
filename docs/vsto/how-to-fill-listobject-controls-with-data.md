@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdc2a15db53c8cddb815342a7b6d291c503cdd7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050105"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Практическое руководство. Заполнение элементов управления ListObject с данными
   Вы можете использовать привязку данных как способ быстрого добавления данных в документ. После привязки данных к объекту-списку можно отключить этот объект-список, чтобы он отображал данные, но не был привязан к источнику данных.
@@ -33,24 +33,24 @@ ms.locfileid: "56620347"
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Привязка данных к элементу управления ListObject
 
-1.  Создайте <xref:System.Data.DataTable> на уровне класса.
+1. Создайте <xref:System.Data.DataTable> на уровне класса.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2.  Добавьте примеры столбцов и данных в обработчик событий `Startup` класса `Sheet1` (в проекте уровня документа) или класса `ThisAddIn` (в проекте уровня приложения).
+2. Добавьте примеры столбцов и данных в обработчик событий `Startup` класса `Sheet1` (в проекте уровня документа) или класса `ThisAddIn` (в проекте уровня приложения).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3.  Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> и передайте в него имена столбцов в порядке их отображения. Порядок столбцов в объекте-списке может отличаться от порядка, в котором они появляются в <xref:System.Data.DataTable>.
+3. Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> и передайте в него имена столбцов в порядке их отображения. Порядок столбцов в объекте-списке может отличаться от порядка, в котором они появляются в <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
 
 ### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Отключение элемента управления ListObject от источника данных
 
-1.  Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> типа `List1`.
+1. Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> типа `List1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]

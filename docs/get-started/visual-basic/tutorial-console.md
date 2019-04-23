@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416174"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857597"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "58416174"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ ms.locfileid: "58416174"
 
 1. В поле **Имя проекта** окна **Настроить новый проект** введите *WhatIsYourName*. Затем нажмите **Создать**.
 
-   ![В окне "Настроить новый проект" назовите проект "WhatIsYourName"](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![В окне "Настроить новый проект" назовите проект "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Новый проект открывается в Visual Studio.
 
@@ -262,7 +262,7 @@ Visual Studio — это интегрированный набор средст
 Поздравляем с завершением этого учебника! Для получения дополнительных сведений перейдите к следующему руководству.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки .NET Standard с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Создание библиотеки с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>См. также
 

@@ -11,21 +11,21 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0a5b008df683694a20cce360fbd5e779e408d8
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58980013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058660"
 ---
 # <a name="security-of-text-templates"></a>Безопасность текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Текстовые шаблоны имеют следующие рекомендации по безопасности:  
   
--   Текстовые шаблоны уязвимы для произвольного кода.  
+- Текстовые шаблоны уязвимы для произвольного кода.  
   
--   Если механизм, используемый узлом для поиска процессор директив не является безопасным, может быть запущен вредоносный процессор директив.  
+- Если механизм, используемый узлом для поиска процессор директив не является безопасным, может быть запущен вредоносный процессор директив.  
   
 ## <a name="arbitrary-code"></a>Произвольный код  
  При написании шаблона, можно поместить код в пределах \<## > теги. Это позволяет произвольный код, выполняемый из текстового шаблона.  

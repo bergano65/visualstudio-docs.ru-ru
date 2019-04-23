@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049065"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Отладка во время разработки в Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -33,7 +33,7 @@ ms.locfileid: "56696705"
 
 Можно использовать Visual Studio **Интерпретация** окне, чтобы выполнить функцию или подпрограмму, не запуская приложение. Если в функции или подпрограмме есть точка останова, Visual Studio остановится в точке останова. При этом можно использовать окна отладчика для просмотра состояния программы. Эта возможность называется *отладкой времени разработки*.
 
-Ниже приведен в Visual Basic. Можно также использовать **Интерпретация** окна во время разработки в C#, F#и в приложениях C++.
+Ниже приведен в Visual Basic. Можно также использовать **Интерпретация** окна во время разработки в C#, F#, и C++ приложений.
 
 1. Вставьте следующий код в пустое консольное приложение Visual Basic:
 
@@ -102,6 +102,7 @@ ms.locfileid: "56696705"
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    При загрузке страницы, достижении точки останова.
 
 ## <a name="see-also"></a>См. также

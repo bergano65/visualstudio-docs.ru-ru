@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416374"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647418"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -78,7 +78,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Создание проектов модульных тестов и методов теста
 
-Как правило, создавать проект модульного теста и заглушки модульных тестов проще и быстрее из кода. Кроме того, можно создать проект модульных тестов и тесты вручную в зависимости от потребностей.
+Как правило, создавать проект модульного теста и заглушки модульных тестов проще и быстрее из кода. Кроме того, можно создать проект модульных тестов и тесты вручную в зависимости от потребностей. Если вы хотите создавать модульные тесты на сторонней платформе, вам потребуется установить одно из этих расширений: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) или [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Создание проекта модульного теста и заглушек модульных тестов
 
@@ -88,7 +88,7 @@ public void Withdraw(double amount)
 
 2. Нажмите кнопку **ОК**, чтобы принять значения по умолчанию для создания модульных тестов, или измените значения, которые использовались для создания и назначения имени проекта модульного теста и модульных тестов. Можно выбрать код, который добавляется по умолчанию в методы модульных тестов.
 
-    ![Щелкните правой кнопкой мыши в редакторе и выберите пункт "Создать модульные тесты"](../test/media/createunittestsdialog.png)
+    ![Диалоговое окно "Создать модульные тесты" в Visual Studio](../test/media/create-unit-tests.png)
 
 3. Заглушки модульных тестов создаются в новом проекте модульного теста для всех методов в классе.
 

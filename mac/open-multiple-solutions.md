@@ -1,17 +1,17 @@
 ---
-title: Как выполнить  Открытие нескольких решений в Visual Studio для Mac
+title: Практическое руководство. Открытие нескольких решений в Visual Studio для Mac
 description: Узнайте, как открыть несколько решений в Visual Studio для Mac и несколько экземпляров приложения.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768266"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856348"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Открытие нескольких решений или экземпляров Visual Studio для Mac
 
@@ -21,11 +21,9 @@ ms.locfileid: "55768266"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Открытие еще одного экземпляра Visual Studio для Mac
 
-Чтобы открыть еще один экземпляр интегрированной среды разработки (IDE), откройте приложение **Терминал** и введите следующую строку:
+Чтобы открыть второй экземпляр интегрированной среде разработки (IDE), щелкните правой кнопкой мыши значок Visual Studio в закрепленном элементе или папке **Приложения** и выберите **Новый экземпляр**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Снимок экрана: пункт меню "Новый экземпляр" при щелчке правой кнопкой мыши на значке Visual Studio](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Открытие еще одного решения в одном экземпляре
 

@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 725566a4bc09a7c787c5ffa96b9422d15fd197b1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867972"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790957"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Анализ использования памяти JavaScript в приложениях UPW
 Анализатор памяти JavaScript доступен в Visual Studio и помогает получать информацию об использовании памяти и находить утечки памяти в приложениях универсальной платформы Windows, разработанных для Windows с использованием JavaScript. К поддерживаемым приложениям относятся приложения для универсальных приложений Windows.
@@ -102,7 +103,7 @@ ms.locfileid: "57867972"
 
 1. Откройте приложение в Visual Studio.
 
-2. Запустите анализатор памяти JavaScript. Дополнительные сведения см. в разделе [Запуск анализатора памяти JavaScript](#run-the-JavaScript-memory-analyzer).
+2. Запустите анализатор памяти JavaScript (см. предыдущие шаги).
 
 3. Запустите приложение через сценарий, который необходимо протестировать. Например, сценарий может включать в себя большое изменение модели DOM при загрузке определенной страницы или при запуске приложения.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066082"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ ms.locfileid: "59002251"
   
  Более подробную информацию о схемах слоев см. в следующих разделах:  
   
--   [Схемы слоев: справочник](../modeling/layer-diagrams-reference.md)  
+- [Схемы слоев: справочник](../modeling/layer-diagrams-reference.md)  
   
--   [Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)  
+- [Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)  
   
--   [Создание схем слоев на основе кода](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Создание схем слоев на основе кода](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)  
+- [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Требования  
+## <a name="prereqs"></a> Требования  
  На компьютере, где планируется разрабатывать расширения слоев, должны быть установлены следующие компоненты:  
   
 - Visual Studio  

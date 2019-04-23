@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047429"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простого приложения для работы с данными с помощью ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "59664220"
   
  **Содержание раздела**  
   
--   [Настройка образца базы данных](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Настройка образца базы данных](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Создание форм и добавление элементов управления](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Создание форм и добавление элементов управления](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store строку подключения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Store строку подключения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Получить строку подключения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Получить строку подключения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Написание кода для формы](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Написание кода для формы](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Тестирование приложения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Тестирование приложения](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для создания приложения вам потребуются следующие компоненты.  
@@ -58,10 +58,10 @@ ms.locfileid: "59664220"
   
   В рамках этого раздела предполагается, что вы уже знакомы с основными функциями интегрированной среды разработки Visual Studio и можете создать приложение Windows Forms, добавить формы в проект, добавить кнопки и другие элементы управления в формы, задать свойства для этих элементов управления и создать код для простых событий. Если вам неудобно решать эти задачи, мы рекомендуем выполнить [Приступая к работе с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) перед началом в этом разделе.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Настройка образца базы данных  
+## <a name="BKMK_setupthesampledatabase"></a> Настройка образца базы данных  
  Пример базы данных для этого пошагового руководства состоит из таблиц клиентов и заказов. Изначально таблицы не содержат данные, однако вы добавите данные при выполнении созданного приложения. База данных также имеет пять простых хранимых процедур. [Создание базы данных SQL с помощью скрипта](../data-tools/create-a-sql-database-by-using-a-script.md) содержит скрипт Transact-SQL, который создает таблицы, первичные и внешние ключи, ограничения и хранимые процедуры.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Создание форм и добавление элементов управления  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Создание форм и добавление элементов управления  
   
 1. Создание проекта для приложения Windows Forms и назовите его SimpleDataApp.  
   
@@ -69,11 +69,11 @@ ms.locfileid: "59664220"
   
 2. Добавьте две формы Windows Forms в проект, чтобы он включал три формы, и назначьте им следующие имена:  
   
-   -   Навигация  
+   - Навигация  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Для каждой формы добавьте текстовые поля, кнопки и другие элементы управления, которые отображаются на рисунках ниже. Для каждого элемента управления задайте свойства, указанные в таблицах.  
   
@@ -119,33 +119,33 @@ ms.locfileid: "59664220"
 |Кнопка|Name = btnFillOrder|  
 |Кнопка|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store строку подключения  
+## <a name="BKMK_storetheconnectionstring"></a> Store строку подключения  
  Когда приложение пытается открыть подключение к базе данных, оно должно иметь доступ к строке подключения. Чтобы избежать ручного ввода строки в каждой форме, сохраните строку в файле конфигурации приложения в проекте и создать метод, который возвращает строку, при вызове метода из любой формы в приложении.  
   
  Можно найти строку подключения в **обозреватель объектов SQL Server** , щелкнув правой кнопкой мыши базу данных и выбрав пункт **свойства**, а затем поиск свойства ConnectionString. Используйте сочетание клавиш Ctrl + A, чтобы выбрать строку.  
   
-1.  В **обозревателе решений**выберите **свойства** в узле проекта, а затем выберите **Settings.settings**.  
+1. В **обозревателе решений**выберите **свойства** в узле проекта, а затем выберите **Settings.settings**.  
   
-2.  В **имя** столбца, введите `connString`.  
+2. В **имя** столбца, введите `connString`.  
   
-3.  В **тип** выберите **(строка подключения)**.  
+3. В **тип** выберите **(строка подключения)**.  
   
-4.  В **область** выберите **приложения**.  
+4. В **область** выберите **приложения**.  
   
-5.  В **значение** столбца, введите строку подключения (без каких-либо за пределами кавычки), а затем сохраните изменения.  
+5. В **значение** столбца, введите строку подключения (без каких-либо за пределами кавычки), а затем сохраните изменения.  
   
 > [!NOTE]
 >  В реальном приложении, следует хранить строку подключения безопасно, как описано в разделе [строки подключения и файлы конфигурации](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Получить строку подключения  
+## <a name="BKMK_retrievetheconnectionstring"></a> Получить строку подключения  
   
-1.  В строке меню выберите **проекта** > **добавить ссылку на**, а затем добавьте ссылку на файл System.Configuration.dll.  
+1. В строке меню выберите **проекта** > **добавить ссылку на**, а затем добавьте ссылку на файл System.Configuration.dll.  
   
-2.  В строке меню выберите **проекта** > **Добавление класса** добавьте файл класса в проект и назовите файл `Utility`.  
+2. В строке меню выберите **проекта** > **Добавление класса** добавьте файл класса в проект и назовите файл `Utility`.  
   
      Visual Studio создает файл и отображает его в **обозревателе решений**.  
   
-3.  В файле Utility замените код-заполнитель следующим кодом. Обратите внимание на нумерованные комментарии (с префиксом Util-), которые указывают разделы кода. В таблице под примером кода описаны ключевые моменты.  
+3. В файле Utility замените код-заполнитель следующим кодом. Обратите внимание на нумерованные комментарии (с префиксом Util-), которые указывают разделы кода. В таблице под примером кода описаны ключевые моменты.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ ms.locfileid: "59664220"
     |Util-2|Определение переменной `returnValue` и ее инициализация значением `null` (C#) или `Nothing` (Visual Basic).|  
     |Util-3|Несмотря на то, что вы ввели `connString` как имя строки подключения в **свойства** окно, необходимо указать `"SimpleDataApp.Properties.Settings.connString"` (C#) или `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) в коде.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Написание кода для формы  
+## <a name="BKMK_writethecodefortheforms"></a> Написание кода для формы  
  Этот раздел содержит краткий обзор функций каждой формы и примеры кода для создания форм. Нумерованные комментарии указывают разделы кода.  
   
 ### <a name="navigation-form"></a>Форма навигации  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Добавление кода в обработчик события нажатия кнопки `btnFillOrder`. Этот код выполняет хранимую процедуру `Sales.uspFillOrder`.|  
 |FC-9|Создайте метод, чтобы убедиться, что `OrderID` готов для отправки в качестве параметра `SqlCommand` объекта.<br /><br /> -Убедитесь в том, что идентификатор был введен в `txtOrderID`.<br />— Используйте `Regex.IsMatch` для определения простой проверки нецелочисленных символов.<br />-Вы объявили `parsedOrderID` переменной FC-2.<br />— Если ввод был допустимым, преобразования текста в целое число и сохраните значение в `parsedOrderID` переменной.<br />-Wrap `isOrderID` метод вокруг `btnFindByOrderID`, `btnCancelOrder`, и `btnFillOrder` обработчики события нажатия.|  
   
-##  <a name="BKMK_testyourapplication"></a> Тестирование приложения  
+## <a name="BKMK_testyourapplication"></a> Тестирование приложения  
  Выберите клавишу F5, чтобы создавать и тестировать приложения после кода каждый обработчик событий нажатия, а затем, после его написания.

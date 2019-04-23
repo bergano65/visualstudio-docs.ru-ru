@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044464"
 ---
 # <a name="getting-local-values"></a>Получение локальных значений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "58991999"
   
  Эта реализация `IDebugProperty2::GetPropertyInfo` выполняет следующие задачи:  
   
-1.  Получает имя локальной переменной, свойства и атрибуты из [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структура заполнена, если класс был создан и инициализирован.  
+1. Получает имя локальной переменной, свойства и атрибуты из [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структура заполнена, если класс был создан и инициализирован.  
   
-2.  Получает тип локальной переменной из [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта.  
+2. Получает тип локальной переменной из [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
-3.  Получает значение локальной переменной из `IDebugField` объекта. Это поле привязано к расположении в памяти локального с помощью [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект и значение получается из результирующего [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
+3. Получает значение локальной переменной из `IDebugField` объекта. Это поле привязано к расположении в памяти локального с помощью [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект и значение получается из результирующего [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
   
-4.  Возвращает все запрошенные свойства в [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры.  
+4. Возвращает все запрошенные свойства в [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры.  
   
 ## <a name="managed-code"></a>Управляемый код  
  В этом примере показана реализация `IDebugProperty2::GetPropertyInfo` для локальной в управляемом коде метод. Он также показывает вспомогательную функцию, `Field.GetType`, который позволяет получить тип поля. `Field.GetValue` отображается в [оценки "Локальные"](../../extensibility/debugger/evaluating-locals.md). Вспомогательная функция `Field.MapModifiersToAttributes` (не показано) просто преобразует поля [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) флаги для [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) значения.  

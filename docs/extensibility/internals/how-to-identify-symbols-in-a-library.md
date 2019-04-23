@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060362"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Практическое руководство. Определение символов в библиотеке
 Средства просмотра символов отображения иерархических представлений символов. Символы представляют пространств имен, объекты, классы, члены класса и остальных элементов языка.
@@ -52,7 +52,7 @@ N1
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Для получения канонические и презентации forms сведения
 
-1.  Выполните метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.
+1. Выполните метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.
 
      Диспетчер объектов вызывает этот метод для получения списка узлов, содержащихся по каноническому пути символа.
 
@@ -75,7 +75,7 @@ N1
 
     ```
 
-2.  Выполните метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.
+2. Выполните метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.
 
      Диспетчер объектов вызывает этот метод для получения списка узлов, содержащихся по презентационному пути символа.
 

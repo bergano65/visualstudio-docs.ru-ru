@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документы Майкрософт
+title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd9c728b2b682582d63fde551b73e6604e283991
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048382"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Практическое руководство. Перемещение инструментированных двоичных файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ ms.locfileid: "54757128"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-relocate-instrumented-binary"></a>Перемещение инструментированного двоичного файла  
   
-1.  В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
+1. В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
   
-2.  На **страницах свойств**щелкните пункт **Двоичный файл** .  
+2. На **страницах свойств**щелкните пункт **Двоичный файл** .  
   
-3.  Установите флажок **Переместить инструментированные двоичные файлы** .  
+3. Установите флажок **Переместить инструментированные двоичные файлы** .  
   
-4.  Укажите расположение для инструментированного двоичного файла.  
+4. Укажите расположение для инструментированного двоичного файла.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

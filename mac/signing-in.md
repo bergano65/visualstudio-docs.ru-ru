@@ -3,14 +3,14 @@ title: Вход в Visual Studio для Mac
 description: Вход в Visual Studio для Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953879"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857467"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
@@ -24,7 +24,7 @@ ms.locfileid: "56953879"
 
 Чтобы войти в Visual Studio для Mac, выполните следующие действия:
 
-1. Щелкните ссылку **Войти** на странице приветствия, чтобы отобразить диалоговое окно учетных записей, и нажмите кнопку **Войти**.
+1. Нажмите кнопку **Войдите с помощью учетной записи Майкрософт** в окне входа в систему:
 
     ![Диалоговое окно учетных записей в Visual Studio для Mac](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "56953879"
 
     Для входа в Visual Studio для Mac вы не можете использовать учетные данные Xamarin.
 
-3. После входа вы увидите свой тип лицензии. В этом диалоговом окне можно добавить дополнительные учетные записи Майкрософт, которые требуется использовать:
+3. После входа вы увидите окно запуска Visual Studio 2019 для Mac. Здесь можно открыть или создать проект:
 
     ![Вход успешно выполнен](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ ms.locfileid: "56953879"
 
 Visual Studio для Mac поддерживает добавление нескольких учетных записей для вашей персонализированной учетной записи. Эти дополнительные учетные записи предоставляют доступ к ресурсам, например Azure.
 
-Чтобы добавить их, выполните действия, описанные в разделе [Вход в Visual Studio для Mac](#how-to-sign-in-to-visual-studio-for-mac).
+Чтобы добавить дополнительные учетные записи пользователей, выберите меню **Visual Studio > Учетная запись...**  в Visual Studio для Mac. Нажмите кнопку **Добавить...**, чтобы ввести дополнительные учетные данные.
+
+![Управление учетными записями](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>См. также
 

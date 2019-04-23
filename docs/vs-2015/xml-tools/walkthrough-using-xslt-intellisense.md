@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7f6f2fb35e4f0500e97cf762152955a3f4e5c10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063105"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Пошаговое руководство. Использование XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59655041"
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Использование IntelliSense в атрибуте name элементов xsl:with-param и xsl:call-template  
   
-1.  Создайте текстовый XSLT файл и скопируйте в него следующий код:  
+1. Создайте текстовый XSLT файл и скопируйте в него следующий код:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -47,7 +47,7 @@ ms.locfileid: "59655041"
     </xsl:stylesheet>  
     ```  
   
-2.  Вставьте курсор после `<xsl:template name="msg23" match="msg23">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:call-template`:  
+2. Вставьте курсор после `<xsl:template name="msg23" match="msg23">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:call-template`:  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -56,7 +56,7 @@ ms.locfileid: "59655041"
   
      При вводе в атрибуте `name=""` элемента `xsl:call-template` появится список имен шаблонов.  
   
-3.  Вставьте курсор после `<xsl:call-template name="localized-message">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:with-param`:  
+3. Вставьте курсор после `<xsl:call-template name="localized-message">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:with-param`:  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -66,7 +66,7 @@ ms.locfileid: "59655041"
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Использование IntelliSense в атрибуте mode элемента xsl:apply-templates  
   
-1.  Создайте текстовый XSLT файл и скопируйте в него следующий код:  
+1. Создайте текстовый XSLT файл и скопируйте в него следующий код:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -113,7 +113,7 @@ ms.locfileid: "59655041"
     </xsl:stylesheet>  
     ```  
   
-2.  Вставьте курсор после `<xsl:apply-templates select="phone" />` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl: apply-templates`:  
+2. Вставьте курсор после `<xsl:apply-templates select="phone" />` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl: apply-templates`:  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -123,7 +123,7 @@ ms.locfileid: "59655041"
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Использование IntelliSense в атрибутах stylesheet-prefix и result-prefix элемента xsl:namespace-alias  
   
-1.  Создайте текстовый XSLT файл и скопируйте в него следующий код:  
+1. Создайте текстовый XSLT файл и скопируйте в него следующий код:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -154,7 +154,7 @@ ms.locfileid: "59655041"
     </xsl:stylesheet>  
     ```  
   
-2.  Вставьте курсор после `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:namespace-alias`:  
+2. Вставьте курсор после `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` и нажмите клавишу ВВОД. Затем введите следующий элемент `xsl:namespace-alias`:  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

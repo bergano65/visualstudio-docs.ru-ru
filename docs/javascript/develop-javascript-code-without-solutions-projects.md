@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796768"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857844"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
-Visual Studio 2017 представляет возможность [разрабатывать код без проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Вы можете открыть папку кода и сразу же приступить к работе в полнофункциональном редакторе, используя IntelliSense, поиск, рефакторинг, отладку и многое другое. Помимо этих функций, в инструменты Node.js для Visual Studio добавлена поддержка сборки файлов TypeScript, управления пакетами npm и выполнения сценариев npm.
+Начиная с Visual Studio 2017 вы можете [разрабатывать код без проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Вы можете открыть папку кода и сразу же приступить к работе в полнофункциональном редакторе, используя IntelliSense, поиск, рефакторинг, отладку и многое другое. Помимо этих функций, в инструменты Node.js для Visual Studio добавлена поддержка сборки файлов TypeScript, управления пакетами npm и выполнения сценариев npm.
 
 Чтобы приступить к работе, выберите **Файл** > **Открыть** > **Папку** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
 
 > [!IMPORTANT]
-> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8.
+> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней.
 
 ## <a name="npm-integration"></a>Интеграция npm
 

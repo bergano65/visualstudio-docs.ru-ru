@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064964"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58980973"
   
 ### <a name="to-enable-rpc-debugging"></a>Включение отладки RPC  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  В диалоговом окне **Параметры** щелкните папку **Отладка**.  
+2. В диалоговом окне **Параметры** щелкните папку **Отладка**.  
   
-3.  Щелкните страницу **Машинный код**.  
+3. Щелкните страницу **Машинный код**.  
   
-4.  Установите флажок **Отладка RPC**.  
+4. Установите флажок **Отладка RPC**.  
   
     > [!NOTE]
     >  Для отладки вызовов RPC необходимо иметь привилегии администратора или опытного пользователя.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050511"
 ---
 # <a name="detect-system-requirements"></a>Определить требования к системе
 Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.
@@ -24,11 +24,11 @@ ms.locfileid: "56643591"
 ## <a name="detect-visual-studio-editions"></a>Обнаружить выпуски Visual Studio
  Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение **установить** реестра *(REG_DWORD) 1* в соответствующую папку, перечисленных в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:
 
-1.  Предприятие
+1. Предприятие
 
-2.  Professional
+2. Professional
 
-3.  Сообщество
+3. Сообщество
 
 При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.
 

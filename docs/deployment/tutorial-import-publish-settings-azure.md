@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983927"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567884"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в Службу приложений Azure посредством импорта параметров публикации в Visual Studio
 
@@ -55,9 +55,9 @@ ms.locfileid: "57983927"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создание проекта ASP.NET в Visual Studio
 
-1. На компьютере, где выполняется Visual Studio, последовательно выберите **Файл** > **Создать проект**.
+1. На компьютере, где выполняется Visual Studio, создайте новый проект.
 
-1. В разделе **Visual C#** или **Visual Basic** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
+    Выберите подходящий шаблон. В этом примере выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
     Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Установите рабочую нагрузку **ASP.NET и веб-разработка**.
 

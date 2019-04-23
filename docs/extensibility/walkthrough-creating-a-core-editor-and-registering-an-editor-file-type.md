@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048209"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство. Создание базового редактора и регистрации файла тип редактора
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора при создании файла с *.myext* загружается расширение имени файла.
@@ -26,11 +26,11 @@ ms.locfileid: "56721802"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Расположения для шаблона проекта пакета Visual Studio
  Шаблон проекта пакета Visual Studio можно найти в трех разных местах диалогового окна **Создание проекта** .
 
-1.  В разделе **расширения Visual Basic**. Язык проекта по умолчанию — Visual Basic.
+1. В разделе **расширения Visual Basic**. Язык проекта по умолчанию — Visual Basic.
 
-2.  В разделе **расширения Visual C#**. Язык проекта по умолчанию — C#.
+2. В разделе **расширения Visual C#**. Язык проекта по умолчанию — C#.
 
-3.  В разделе **расширения других типов проектов**. Язык проекта по умолчанию — C++.
+3. В разделе **расширения других типов проектов**. Язык проекта по умолчанию — C++.
 
 ### <a name="to-create-the-vspackage"></a>Чтобы создать VSPackage
 

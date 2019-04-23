@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051340"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Отладка приложения, который не является частью решения Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -58,7 +58,7 @@ ms.locfileid: "56690205"
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Чтобы импортировать приложение в существующее решение Visual Studio
 
-1.  С помощью C++ C#, или выберите решение Visual Basic в Visual Studio **файл** > **добавить** > **существующий проект**.
+1. С помощью C++, C#, или выберите решение Visual Basic в Visual Studio **файл** > **добавить** > **существующий проект**.
 
 1. В **Открытие проекта** выберите **все файлы проекта**, если еще не выбран, в раскрывающемся списке рядом с полем **имя файла**.
 

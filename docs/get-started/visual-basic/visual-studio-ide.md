@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324085"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790684"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
@@ -102,22 +102,24 @@ ms.locfileid: "58324085"
 
    ::: moniker-end
 
-- [Быстрый запуск](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Поле поиска
 
-   Среда Visual Studio может показаться сложной, ведь там столько разных меню, параметров и свойств. Поле поиска **быстрого запуска** позволяет быстро найти нужное содержимое в Visual Studio. Когда вы начнете вводить в поле то, что вы ищете, Visual Studio представит результаты, один из которых точно вам подойдет. Если вам нужно добавить функциональные возможности в Visual Studio, например добавить поддержку дополнительных языков программирования, **быстрый запуск** предоставляет результаты, которые открывают Visual Studio Installer для установки рабочей нагрузки или отдельного компонента.
+   Среда Visual Studio может показаться сложной, ведь там столько разных меню, параметров и свойств. Поле поиска позволяет быстро найти нужное содержимое в Visual Studio. Когда вы начнете вводить в поле то, что вы ищете, Visual Studio представит результаты, один из которых точно вам подойдет. Если вам нужно добавить функциональные возможности в Visual Studio, например поддержку дополнительных языков программирования, поле поиска предоставляет результаты, которые открывают Visual Studio Installer для установки рабочей нагрузки или отдельного компонента.
 
    > [!TIP]
-   > Нажмите клавиши **CTRL**+**Q**, чтобы открыть поле поиска **Быстрый запуск**.
+   > Нажмите клавиши **CTRL**+**Q**, чтобы открыть поле поиска.
 
    ::: moniker range="vs-2017"
 
    ![Поле поиска "Быстрый запуск" в Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Дополнительные сведения см. в разделе [Быстрый запуск](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Поле поиска "Быстрый запуск" в Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Поле поиска в Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

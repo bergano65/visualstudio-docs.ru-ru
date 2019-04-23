@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09301d9ebb85d12edf9c8df3d1879aad49ef8d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598068"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056319"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления диаграммой на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в настройках уровня документа. Можно также добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления во время выполнения в надстройках VSTO.
@@ -35,7 +35,7 @@ ms.locfileid: "56598068"
 
   Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления, см. в разделе [диаграммы управления](../vsto/chart-control.md).
 
-##  <a name="designtime"></a> Добавить элементы управления диаграммы во время разработки
+## <a name="designtime"></a> Добавить элементы управления диаграммы во время разработки
  Для добавления элемента управления <xref:Microsoft.Office.Tools.Excel.Chart> на лист можно использовать ту же процедуру, что и для добавления диаграммы в приложении.
 
 > [!NOTE]
@@ -43,36 +43,36 @@ ms.locfileid: "56598068"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Добавление элемента управления ведущего приложения «Диаграмма» на лист в Excel
 
-1.  На **вставить** на вкладке **диаграммы** щелкните **столбец**, затем категорию диаграммы и выберите тип диаграммы.
+1. На **вставить** на вкладке **диаграммы** щелкните **столбец**, затем категорию диаграммы и выберите тип диаграммы.
 
-2.  В **вставить диаграмму** диалоговом окне щелкните **ОК**.
+2. В **вставить диаграмму** диалоговом окне щелкните **ОК**.
 
-3.  На **разработки** на вкладке **данных** щелкните **Выбор данных**.
+3. На **разработки** на вкладке **данных** щелкните **Выбор данных**.
 
-4.  В **Выбор источника данных** диалоговое окно, щелкните в **диаграммы** **диапазон данных** и снимите все выборы по умолчанию.
+4. В **Выбор источника данных** диалоговое окно, щелкните в **диаграммы** **диапазон данных** и снимите все выборы по умолчанию.
 
-5.  В **данные для диаграммы** листа, выделите диапазон ячеек, содержащий данные для диаграммы (ячейки **A5** через **D8**).
+5. В **данные для диаграммы** листа, выделите диапазон ячеек, содержащий данные для диаграммы (ячейки **A5** через **D8**).
 
-6.  В **Выбор источника данных** диалоговом окне щелкните **ОК**.
+6. В **Выбор источника данных** диалоговом окне щелкните **ОК**.
 
-##  <a name="runtimedoclevel"></a> Добавить элементы управления диаграммы во время выполнения в проекте уровня документа
+## <a name="runtimedoclevel"></a> Добавить элементы управления диаграммы во время выполнения в проекте уровня документа
  Вы можете добавить <xref:Microsoft.Office.Tools.Excel.Chart> управления динамически во время выполнения. При закрытии документа динамически созданные диаграммы не сохраняются в документе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Добавление элемента управления «Диаграмма» на лист программным образом
 
-1.  В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1` вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1` вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-##  <a name="runtimeaddin"></a> Добавить элементы управления диаграммы во время выполнения в проекте надстройки VSTO
+## <a name="runtimeaddin"></a> Добавить элементы управления диаграммы во время выполнения в проекте надстройки VSTO
  Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  При закрытии листа динамически созданные элементы управления «Диаграмма» не сохраняются в листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [Add Controls to Office документов во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Добавление элемента управления «Диаграмма» на лист программным образом
 
-1.  Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
@@ -80,7 +80,7 @@ ms.locfileid: "56598068"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере необходимо соблюдать следующие требования.
 
--   Данные для диаграммы хранятся в диапазоне с A5 по D8 на листе.
+- Данные для диаграммы хранятся в диапазоне с A5 по D8 на листе.
 
 ## <a name="see-also"></a>См. также
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

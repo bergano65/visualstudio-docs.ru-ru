@@ -1,6 +1,6 @@
 ---
 title: Публикация в службу приложений Azure
-ms.date: 01/17/2019
+ms.date: 04/02/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844273"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856305"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Публикация веб-приложения в службу приложений Azure с помощью Visual Studio для Mac
 
@@ -25,9 +25,9 @@ ms.locfileid: "56844273"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
- - [Visual Studio 2017 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017), установленный с поддержкой ASP.NET Core.
+ - [Visual Studio 2019 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019), установленный с поддержкой ASP.NET Core.
  - Подписка Azure. Если у вас еще нет подписки, [подпишитесь на бесплатную версию](https://azure.microsoft.com/free/dotnet/), которая включает кредит в размере 200 USD на 30 дней и 12 месяцев доступа к популярным бесплатным службам.
- - Проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+ - Проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 

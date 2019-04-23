@@ -8,70 +8,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049078"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Пошаговое руководство. Создайте пакет SDK, с помощью C++
 В этом пошаговом руководстве показано, как создать собственной математические библиотеки C++ SDK, пакет SDK в Visual Studio Extension (VSIX) и затем использовать его для создания приложения. Пошаговое руководство содержит следующие действия.
 
--   [Чтобы создать машинный код и библиотеки среды выполнения Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [Чтобы создать машинный код и библиотеки среды выполнения Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
--   [Создание проекта расширения NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [Создание проекта расширения NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
--   [Чтобы создать приложение-пример, использующий библиотеку классов](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
+- [Чтобы создать приложение-пример, использующий библиотеку классов](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Чтобы создать машинный код и библиотеки среды выполнения Windows
+## <a name="createClassLibrary"></a> Чтобы создать машинный код и библиотеки среды выполнения Windows
 
-1.  В строке меню выберите **Файл** > **Создать** > **Проект**.
+1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
-2.  В списке шаблонов разверните **Visual C++** > **универсальной Windows**, а затем выберите **DLL (приложения для универсальной Windows)** шаблона. В **имя** укажите `NativeMath`, а затем выберите **ОК** кнопки.
+2. В списке шаблонов разверните **Visual C++** > **универсальной Windows**, а затем выберите **DLL (приложения для универсальной Windows)** шаблона. В **имя** укажите `NativeMath`, а затем выберите **ОК** кнопки.
 
-3.  Обновление *NativeMath.h* в соответствии с следующий код.
+3. Обновление *NativeMath.h* в соответствии с следующий код.
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4.  Обновление *NativeMath.cpp* в соответствии с этот код:
+4. Обновление *NativeMath.cpp* в соответствии с этот код:
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5.  В **обозревателе решений**, откройте контекстное меню для **решение «NativeMath»**, а затем выберите **добавить** > **новый проект**.
+5. В **обозревателе решений**, откройте контекстное меню для **решение «NativeMath»**, а затем выберите **добавить** > **новый проект**.
 
-6.  В списке шаблонов разверните **Visual C++**, а затем выберите **компонента среды выполнения Windows** шаблона. В **имя** укажите `NativeMathWRT`, а затем выберите **ОК** кнопки.
+6. В списке шаблонов разверните **Visual C++**, а затем выберите **компонента среды выполнения Windows** шаблона. В **имя** укажите `NativeMathWRT`, а затем выберите **ОК** кнопки.
 
-7.  Обновление *Class1.h* в соответствии с этот код:
+7. Обновление *Class1.h* в соответствии с этот код:
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8.  Обновление *Class1.cpp* в соответствии с этот код:
+8. Обновление *Class1.cpp* в соответствии с этот код:
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
 9. В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
 
-##  <a name="createVSIX"></a> Создание проекта расширения NativeMathVSIX
+## <a name="createVSIX"></a> Создание проекта расширения NativeMathVSIX
 
-1.  В **обозревателе решений**, откройте контекстное меню для **решение «NativeMath»**, а затем выберите **добавить** > **новый проект**.
+1. В **обозревателе решений**, откройте контекстное меню для **решение «NativeMath»**, а затем выберите **добавить** > **новый проект**.
 
-2.  В списке шаблонов разверните **Visual C#** > **расширяемости**, а затем выберите **проект VSIX**. В **имя** укажите **NativeMathVSIX**, а затем выберите **ОК** кнопки.
+2. В списке шаблонов разверните **Visual C#** > **расширяемости**, а затем выберите **проект VSIX**. В **имя** укажите **NativeMathVSIX**, а затем выберите **ОК** кнопки.
 
-3.  В **обозревателе решений**, откройте контекстное меню для **source.extension.vsixmanifest**, а затем выберите **Просмотр кода**.
+3. В **обозревателе решений**, откройте контекстное меню для **source.extension.vsixmanifest**, а затем выберите **Просмотр кода**.
 
-4.  Используйте следующий код XML для замены существующих XML.
+4. Используйте следующий код XML для замены существующих XML.
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5.  В **обозревателе решений**, откройте контекстное меню для **NativeMathVSIX** проекта, а затем выберите **добавить** > **новый элемент**.
+5. В **обозревателе решений**, откройте контекстное меню для **NativeMathVSIX** проекта, а затем выберите **добавить** > **новый элемент**.
 
-6.  В списке **элементы Visual C#**, разверните **данных**, а затем выберите **XML-файл**. В **имя** укажите `SDKManifest.xml`, а затем выберите **ОК** кнопки.
+6. В списке **элементы Visual C#**, разверните **данных**, а затем выберите **XML-файл**. В **имя** укажите `SDKManifest.xml`, а затем выберите **ОК** кнопки.
 
-7.  Используйте этот код XML, замените содержимое файла:
+7. Используйте этот код XML, замените содержимое файла:
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
@@ -137,7 +137,7 @@ ms.locfileid: "58325072"
 
 18. Выберите **установить** кнопку, дождитесь завершения процесса установки и затем откройте Visual Studio.
 
-##  <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов
+## <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 

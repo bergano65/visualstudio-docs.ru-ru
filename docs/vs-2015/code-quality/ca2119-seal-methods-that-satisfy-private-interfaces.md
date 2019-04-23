@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061506"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119. Запечатайте методы, соответствующие частным интерфейсам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58978967"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, предотвратить метода переопределение за пределы данной сборки с помощью одного из следующих:
 
--   Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).
+- Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).
 
--   Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).
+- Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).
 
--   Удалите все открытые конструкторы из объявляющего типа.
+- Удалите все открытые конструкторы из объявляющего типа.
 
--   Реализуйте метод без использования `virtual` модификатор.
+- Реализуйте метод без использования `virtual` модификатор.
 
--   Реализуйте метод явным образом.
+- Реализуйте метод явным образом.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Его можно безопасно подавить предупреждение из этого правила, если после тщательной проверки безопасности проблемы отсутствуют, могли бы быть использованы в том случае, если переопределен метод за пределы данной сборки.

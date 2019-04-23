@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc250666c5f60064016b90121f7238f9e6e19ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1112ec72e8aca764f749a6d8f1925302f569b17e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044788"
 ---
-# <a name="error-unable-to-initiate-dcom-communication"></a>Ошибка: не удалось инициировать подключение DCOM
+# <a name="error-unable-to-initiate-dcom-communication"></a>Ошибка: Не удалось инициировать подключение DCOM
 При попытке локального компьютера связаться с удаленным компьютером возникла ошибка DCOM. Она вызвана либо брандмауэром на удаленном сервере, либо ошибкой проверки подлинности Windows на удаленном компьютере.
 
 ### <a name="to-correct-this-error"></a>Исправление ошибки
 
--   Если удаленный компьютер включен брандмауэр Windows, см. в разделе [удаленной отладки](../debugger/remote-debugging.md) инструкции о том, как настроить брандмауэр для локальной отладки.
+- Если удаленный компьютер включен брандмауэр Windows, см. в разделе [удаленной отладки](../debugger/remote-debugging.md) инструкции о том, как настроить брандмауэр для локальной отладки.
 
--   Чтобы восстановить работоспособность проверки подлинности Windows, попробуйте перезагрузить оба компьютера. Изучите журналы событий на локальном и удаленном компьютерах на наличие ошибок Kerberos и узнайте у администратора домена о возможных нерешенных проблемах.
+- Чтобы восстановить работоспособность проверки подлинности Windows, попробуйте перезагрузить оба компьютера. Изучите журналы событий на локальном и удаленном компьютерах на наличие ошибок Kerberos и узнайте у администратора домена о возможных нерешенных проблемах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Remote Debugging](../debugger/remote-debugging.md)

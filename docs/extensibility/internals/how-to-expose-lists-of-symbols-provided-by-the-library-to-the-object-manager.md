@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061324"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов
 Средства просмотра символов, **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, передавать запросы для новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки отвечает, предоставляя запрошенные данные для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов вызывает методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения или обновите представления из средств просмотра символов.
@@ -33,7 +33,7 @@ ms.locfileid: "59666589"
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Чтобы предоставить списки символы в диспетчер объектов
 
-1.  Получить число элементов в список символов, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод. В следующем примере показано, каким образом диспетчер объектов получает информацию на количество элементов в списке.
+1. Получить число элементов в список символов, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод. В следующем примере показано, каким образом диспетчер объектов получает информацию на количество элементов в списке.
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -55,7 +55,7 @@ ms.locfileid: "59666589"
 
     ```
 
-2.  Получение сведений о категориях и атрибуты данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод. Категории элементов задаются в <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> перечисления. В следующем примере показано, каким образом диспетчер объектов получает атрибуты элементов для данной категории.
+2. Получение сведений о категориях и атрибуты данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод. Категории элементов задаются в <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> перечисления. В следующем примере показано, каким образом диспетчер объектов получает атрибуты элементов для данной категории.
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -150,7 +150,7 @@ ms.locfileid: "59666589"
 
     ```
 
-3.  Получить текстовое представление данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод. Следующий пример демонстрирует получить полное имя данного элемента.
+3. Получить текстовое представление данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод. Следующий пример демонстрирует получить полное имя данного элемента.
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -168,7 +168,7 @@ ms.locfileid: "59666589"
 
     ```
 
-4.  Получение данных о значок для данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод. Значок представляет тип (класс, метод и т. д.) и специальных возможностей (частного, общедоступного и т. д.) элемента списка. Приведенный ниже показано, как следует получить значок, исходя из атрибутов данного элемента.
+4. Получение данных о значок для данного элемента списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод. Значок представляет тип (класс, метод и т. д.) и специальных возможностей (частного, общедоступного и т. д.) элемента списка. Приведенный ниже показано, как следует получить значок, исходя из атрибутов данного элемента.
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -250,7 +250,7 @@ ms.locfileid: "59666589"
 
     ```
 
-5.  Получить сведения о ли указанный элемент списка является расширяемым, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод. В следующем примере показано, как для получения сведений о ли заданный элемент можно развернуть.
+5. Получить сведения о ли указанный элемент списка является расширяемым, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод. В следующем примере показано, как для получения сведений о ли заданный элемент можно развернуть.
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -277,7 +277,7 @@ ms.locfileid: "59666589"
 
     ```
 
-6.  Получение списка дочерних символы в указанном объекте списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. В следующем примере демонстрируется получение дочерний список символов для данного элемента **вызвать** или **вызывающим объектам** диаграмм.
+6. Получение списка дочерних символы в указанном объекте списка путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. В следующем примере демонстрируется получение дочерний список символов для данного элемента **вызвать** или **вызывающим объектам** диаграмм.
 
     ```vb
     ' Call graph list.

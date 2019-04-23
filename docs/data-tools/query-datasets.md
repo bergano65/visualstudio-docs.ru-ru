@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050677"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 Для поиска определенных записей в наборе данных, используйте `FindBy` метод в объект DataTable, написать собственный оператор foreach для перебора коллекции строк таблицы или использовать [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -33,7 +33,7 @@ ms.locfileid: "55927715"
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Чтобы найти строку в типизированный набор данных со значением первичного ключа
 
--   Чтобы найти строку, вызовите строго типизированный `FindBy` метод, который использует первичный ключ таблицы.
+- Чтобы найти строку, вызовите строго типизированный `FindBy` метод, который использует первичный ключ таблицы.
 
      В следующем примере `CustomerID` столбец является первичным ключом `Customers` таблицы. Это означает, что созданный `FindBy` метод `FindByCustomerID`. Примере показано, как присвоить определенный <xref:System.Data.DataRow> переменной с помощью созданного `FindBy` метод.
 
@@ -42,7 +42,7 @@ ms.locfileid: "55927715"
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Чтобы найти строку в нетипизированный набор данных со значением первичного ключа
 
--   Вызовите <xref:System.Data.DataRowCollection.Find%2A> метод <xref:System.Data.DataRowCollection> коллекции, передавая первичный ключ в качестве параметра.
+- Вызовите <xref:System.Data.DataRowCollection.Find%2A> метод <xref:System.Data.DataRowCollection> коллекции, передавая первичный ключ в качестве параметра.
 
      В следующем примере показано, как объявить новую строку с именем `foundRow` и ей присваивается значение, возвращаемое <xref:System.Data.DataRowCollection.Find%2A> метод. Если первичный ключ найден, содержимое индекса столбца 1 отображаются в окне сообщения.
 
@@ -53,7 +53,7 @@ ms.locfileid: "55927715"
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Чтобы найти строки, на основе значений в любом столбце
 
--   Данные таблицы создаются с помощью <xref:System.Data.DataTable.Select%2A> метод, возвращающий массив <xref:System.Data.DataRow>s, основанное на выражении, передаваемый <xref:System.Data.DataTable.Select%2A> метод. Дополнительные сведения о создании допустимых выражениях см. в разделе «Синтаксис выражений» страницы <xref:System.Data.DataColumn.Expression%2A> свойство.
+- Данные таблицы создаются с помощью <xref:System.Data.DataTable.Select%2A> метод, возвращающий массив <xref:System.Data.DataRow>s, основанное на выражении, передаваемый <xref:System.Data.DataTable.Select%2A> метод. Дополнительные сведения о создании допустимых выражениях см. в разделе «Синтаксис выражений» страницы <xref:System.Data.DataColumn.Expression%2A> свойство.
 
      В следующем примере показано, как использовать <xref:System.Data.DataTable.Select%2A> метод <xref:System.Data.DataTable> для поиска конкретных строк.
 
@@ -72,24 +72,24 @@ ms.locfileid: "55927715"
 
 В следующих примерах кода показано, как для перемещения вверх и вниз по связи в типизированных наборах данных. Использование примеров кода типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданный FindBy*PrimaryKey* (`FindByCustomerID`) методы для поиска нужной строки и возврата связанных записей. Примеры компилируются и работают только в том случае, если у вас есть:
 
--   Экземпляр набора данных с именем `NorthwindDataSet` с `Customers` таблицы.
+- Экземпляр набора данных с именем `NorthwindDataSet` с `Customers` таблицы.
 
--   `Orders` Таблицы.
+- `Orders` Таблицы.
 
--   Отношение с именем `FK_Orders_Customers`связанные двух таблиц.
+- Отношение с именем `FK_Orders_Customers`связанные двух таблиц.
 
 Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Чтобы вернуть дочерние записи, выбранной родительской записи
 
--   Вызовите <xref:System.Data.DataRow.GetChildRows%2A> метод конкретного `Customers` данных строки, а возвращает только те строки из `Orders` таблицы:
+- Вызовите <xref:System.Data.DataRow.GetChildRows%2A> метод конкретного `Customers` данных строки, а возвращает только те строки из `Orders` таблицы:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Для возврата родительской записи выбранной дочерней записи
 
--   Вызовите <xref:System.Data.DataRow.GetParentRow%2A> метод конкретного `Orders` строку данных и возврат одной строки из `Customers` таблицы:
+- Вызовите <xref:System.Data.DataRow.GetParentRow%2A> метод конкретного `Orders` строку данных и возврат одной строки из `Customers` таблицы:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
