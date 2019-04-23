@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040163"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Добавление команд Visual Studio для начальной страницы
 
@@ -73,15 +73,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
 ### <a name="to-call-a-command-from-an-assembly"></a>Для вызова команды из сборки
 
-1.  В решении добавьте ссылку на сборку.
+1. В решении добавьте ссылку на сборку.
 
-2.  В верхней части *StartPage.xaml* файл, добавьте директиву пространства имен для сборки, как показано в следующем примере.
+2. В верхней части *StartPage.xaml* файл, добавьте директиву пространства имен для сборки, как показано в следующем примере.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  Вызвать команду, задав `Command` свойства объекта XAML, как показано в следующем примере.
+3. Вызвать команду, задав `Command` свойства объекта XAML, как показано в следующем примере.
 
      XAML
 

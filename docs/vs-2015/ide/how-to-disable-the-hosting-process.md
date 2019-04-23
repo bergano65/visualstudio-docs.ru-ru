@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040019"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "54785885"
   
    Как правило, отключение ведущего процесса приводит к следующему:  
   
--   Увеличивается время, необходимое для начала отладки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+- Увеличивается время, необходимое для начала отладки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
--   Недоступно вычисление выражений во время разработки.  
+- Недоступно вычисление выражений во время разработки.  
   
--   Недоступна отладка с частичным доверием.  
+- Недоступна отладка с частичным доверием.  
   
 ## <a name="see-also"></a>См. также раздел  
  [Отладка и процесс размещения](../debugger/debugging-and-the-hosting-process.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039548"
 ---
 # <a name="how-to-debug-web-applications"></a>Практическое руководство. Отладка веб-приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "58994552"
   
  Чтобы выполнить отладку приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Необходимо иметь требуемые разрешения. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+- Необходимо иметь требуемые разрешения. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] отладка должна быть включена в **свойства проекта**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] отладка должна быть включена в **свойства проекта**.  
   
--   В файле конфигурации данного приложения (Web.config) необходимо установить режим отладки. В режиме отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] генерирует символы для динамически сгенерированных файлов и включает присоединение отладчика к приложению [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] устанавливает это автоматически при запуске отладки, если проект создан на основе шаблона веб-проектов.  
+- В файле конфигурации данного приложения (Web.config) необходимо установить режим отладки. В режиме отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] генерирует символы для динамически сгенерированных файлов и включает присоединение отладчика к приложению [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] устанавливает это автоматически при запуске отладки, если проект создан на основе шаблона веб-проектов.  
   
--   Дополнительные сведения см. в разделе [Как Включение отладки для приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Дополнительные сведения см. в разделе [Как Включение отладки для приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Отладка веб-приложения во время разработки  
   
-1.  На **Отладка** меню, щелкните **запустить** чтобы начать отладку веб-приложения.  
+1. На **Отладка** меню, щелкните **запустить** чтобы начать отладку веб-приложения.  
   
      С помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выполняется построение проекта веб-приложения, развертывание (если необходимо), запуск сервера разработки ASP.NET при локальной отладке и присоединение к рабочему процессу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-2.  Используйте отладчик, чтобы создавать и снимать точки останова, переходить и выполнять другие операции отладки, как и для любого другого приложения.  
+2. Используйте отладчик, чтобы создавать и снимать точки останова, переходить и выполнять другие операции отладки, как и для любого другого приложения.  
   
      Дополнительные сведения см. в разделе [Общие сведения об отладчике](../debugger/debugger-basics.md).  
   
-3.  На **Отладка** меню, щелкните **остановить отладку** Чтобы остановить сеанс отладки, или на **файл** меню в Internet Explorer, нажмите кнопку **закрыть**.  
+3. На **Отладка** меню, щелкните **остановить отладку** Чтобы остановить сеанс отладки, или на **файл** меню в Internet Explorer, нажмите кнопку **закрыть**.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)   

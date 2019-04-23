@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041839"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Новые возможности Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ ms.locfileid: "58195168"
 ## <a name="cross-platform-debugging-support"></a>Поддержка отладки кросс-платформенных приложений
  Visual Studio можно использовать для создания и отладки встроенных мобильных приложений, выполняемых на устройствах Windows, iOS и Android. Используйте [эмулятор Visual Studio для Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)или подключите устройство и выполните отладку кода непосредственно в Visual Studio.
 
--   **JavaScript / Cordova**. Используйте [средства Visual Studio для Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android с использованием JavaScript.
+- **JavaScript / Cordova**. Используйте [средства Visual Studio для Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android с использованием JavaScript.
 
      [Отладка приложения](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) в библиотеке MSDN — подробный обзор Visual Studio, поддержку отладки для Cordova.
 
--   **C# / Xamarin**. Воспользуйтесь [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android в Visual Studio с помощью C#.
+- **C# / Xamarin**. Воспользуйтесь [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android в Visual Studio с помощью C#.
 
      В разделах[Отладка](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) и [Отладка на устройстве](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/)  [руководств для разработчиков Xamarin](http://developer.xamarin.com/guides) описываются практические принципы отладки.
 
--   **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
+- **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
 
 ## <a name="debugging-and-diagnostics"></a>Отладка и диагностика
 
@@ -140,7 +140,7 @@ ms.locfileid: "58195168"
 Ниже перечислены новые и улучшенные инструменты, выполняющие различные виды диагностики и анализа кода:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Описание начала работы см. в записи блога [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).
+ PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Чтобы приступить к работе, см. в разделе [PerfTips: Информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Список ошибок
  В списке ошибок теперь можно выполнять фильтрацию в любом столбце. Он также обеспечивает динамическое представление ошибок, предупреждений и анализа кода в рамках всего решения C# или Visual Basic прямо при вводе кода, даже когда при изменении кода поступают тысячи предупреждений. Новый список ошибок обратно совместим с существующими списками. Для получения дополнительной информации см. [Error List Window](./ide/reference/error-list-window.md).
@@ -179,18 +179,18 @@ ms.locfileid: "58195168"
 ### <a name="notification-hub"></a>Концентратор уведомлений
  Интерфейс концентратора уведомлений оптимизирован для упрощения быстрой проверки. Добавлены дополнительные типы уведомлений, включая проблемы производительности, проблемы отрисовки и сбои. Кроме того, теперь можно запретить Visual Studio отображать уведомления. Дополнительные сведения см. в статье [Visual Studio Notifications](./ide/visual-studio-notifications.md) (Уведомления Visual Studio).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: узнайте, что произошло с кодом (только для выпусков Enterprise и Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens. Узнайте, что произошло в код (только выпуски Enterprise и Professional)
  Сконцентрируйтесь на работе и одновременно находите информацию о своем коде, не выходя из редактора. Можно просмотреть изменения и другие выполненные в прошлом действия с рабочими элементами, ошибками, проверками кода и так далее для кода, который хранится в Visual Studio Team Services (VSTS) или в Team Foundation Server (TFS).
 
  В выпусках Visual Studio Enterprise и Visual Studio Professional теперь можно решать следующие задачи.
 
 - Просмотреть журнал для всего файла кода в редакторе Visual Studio.
 
-   ![CodeLens: получение сведений о файле кода](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Получение сведений о файле кода](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Просмотреть схему с указанием пользователей, вносивших изменения. Это поможет обнаружить закономерности во вносимых рабочей группой изменениях и оценить их влияние.
 
-   ![CodeLens: просмотр журнала изменений кода в виде графа](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Просмотр журнала изменений кода в виде графа](./ide/media/codelens.png "CodeLens")
 
 - Легко найти дату последнего изменения кода.
 
@@ -264,7 +264,7 @@ ms.locfileid: "58195168"
 
  Сначала отправьте нахмуренный смайлик, как описано выше. В появившемся диалоговом окне можно отметить отзыв с помощью одного из тегов по умолчанию или создать собственный тег. Теги помогают определить, какой группе следует передать ваш отзыв. В раскрывающемся списке **Выберите категорию** , щелкните параметр, соответствующий вашей проблеме, а затем выполните шаги по воспроизведению проблемы. Также доступны подробные инструкции по отправке отзывов в Visual Studio. Дополнительные сведения см. в разделе [Visual Studio отправки одобрения инструкций](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Создание кроссплатформенных приложений с помощью Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Создание приложений с собственным пользовательским интерфейсом с использованием Xamarin в Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

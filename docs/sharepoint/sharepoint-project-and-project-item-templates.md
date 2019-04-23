@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040342"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Проектов и шаблоны элементов проектов SharePoint
   В следующих разделах описываются доступные проекты SharePoint и шаблоны элементов проекта, а также способы их использования.
@@ -41,17 +41,17 @@ ms.locfileid: "57867878"
 ### <a name="sharepoint-2010-project"></a>Проект SharePoint 2010
  Содержание *проект SharePoint 2010* включаются в каждый шаблон проекта SharePoint. Проект SharePoint 2010 содержит следующие элементы.
 
--   Файл проекта.
+- Файл проекта.
 
--   Страница свойств проекта.
+- Страница свойств проекта.
 
--   Объект **ссылки** папку, где перечислены все ссылки на сборки в проекте.
+- Объект **ссылки** папку, где перечислены все ссылки на сборки в проекте.
 
--   Объект **функции** папку, содержащую *.feature* файл конфигурации, используемый для развертывания компонентов на сервере SharePoint.
+- Объект **функции** папку, содержащую *.feature* файл конфигурации, используемый для развертывания компонентов на сервере SharePoint.
 
--   Объект **пакета** папку, содержащую *Package.package* файл, используемый для развертывания решения в SharePoint.
+- Объект **пакета** папку, содержащую *Package.package* файл, используемый для развертывания решения в SharePoint.
 
--   Файл key.snk (ключ строгого имени) для подписания сборки строгим именем, используется для расширенной безопасности.
+- Файл key.snk (ключ строгого имени) для подписания сборки строгим именем, используется для расширенной безопасности.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Веб-часть SharePoint 2010 Silverlight
  *Веб-часть SharePoint 2010 Silverlight* проектов позволяют создать веб-частей для SharePoint, отображающие приложения Silverlight. При создании такого проекта можно указать, следует ли добавить к нему новое приложение Silverlight или ссылку на существующее. Дополнительные сведения см. в разделе [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) и [Пошаговое руководство: Создание веб-части Silverlight, отображающей данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

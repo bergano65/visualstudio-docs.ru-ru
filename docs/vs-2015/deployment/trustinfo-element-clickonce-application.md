@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039133"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; элемент (приложение ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ ms.locfileid: "58989662"
 ## <a name="permissionset"></a>PermissionSet  
  Обязательный. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит элемент `IPermission` . Этот элемент содержит следующие атрибуты.  
   
--   `ID`  
+- `ID`  
   
      Обязательный. Обозначает набор разрешений. Этот атрибут может быть любым значением. На идентификатор указывается ссылка в атрибутах `defaultAssemblyRequest` и `assemblyRequest` .  
   
--   `version`  
+- `version`  
   
      Обязательный. Обозначает версию разрешения. Обычное значение — `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  Необязательный параметр. Этот элемент является дочерним по отношению к элементу `PermissionSet` . Элемент `IPermission` полностью обозначает класс разрешений в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Элемент `IPermission` содержит следующие атрибуты, но может иметь и атрибуты дополнительные, соответствующие свойствам в классе разрешений. Чтобы узнать синтаксис конкретного разрешения, см. примеры, перечисленные в файле Security.config.  
   
--   `class`  
+- `class`  
   
      Обязательный. Обозначает класс разрешений по строгому имени. Например, следующий код обозначает тип `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Обязательный. Обозначает версию разрешения. Обычное значение — `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Обязательный. Определяет, требуется ли приложению неограниченная версия конкретного разрешения. Если значение равно `true`, неограниченная версия разрешения строго обязательна. Если значение равно `false`или этот атрибут не определен, на него распространяются ограничения в соответствии с атрибутами конкретного разрешения, заданными в теге `IPermission` . Примите следующие разрешения:  
   
@@ -122,18 +122,18 @@ ms.locfileid: "58989662"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Необязательный параметр. Обозначает набор разрешений, предоставленных всем сборкам. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит следующий атрибут.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Обязательный. Определяет идентификатор набора разрешений, который является разрешением по умолчанию. Набор разрешений объявляется в элементе `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Необязательный параметр. Обозначает разрешения для конкретной сборки. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит следующие атрибуты.  
   
--   `Name`  
+- `Name`  
   
      Обязательный. Обозначает имя сборки.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Обязательный. Определяет идентификатор набора разрешений, требующийся для этой сборки. Набор разрешений объявляется в элементе `PermissionSet` .  
   
@@ -143,7 +143,7 @@ ms.locfileid: "58989662"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Необязательный параметр. Определяет уровень безопасности, в рамках которого приложение запрашивает выполнение. Этот элемент не содержит дочерние элементы и содержит следующие атрибуты.  
   
--   `Level`  
+- `Level`  
   
      Обязательный. Указывает уровень безопасности, запрошенный приложением. Доступны следующие значения:  
   
@@ -155,7 +155,7 @@ ms.locfileid: "58989662"
   
      Приложения[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] могут устанавливаться только при указании значения `asInvoker`. Установка с другим значением завершится сбоем.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Необязательный параметр. Указывает, требуется ли приложению доступ к защищенным элементам пользовательского интерфейса. Доступные значения: `true` или `false`; значение по умолчанию — false. Только для подписанных приложений требуется значение true.  
   

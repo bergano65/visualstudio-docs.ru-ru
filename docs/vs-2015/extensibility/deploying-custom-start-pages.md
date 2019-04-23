@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039146"
 ---
 # <a name="deploying-custom-start-pages"></a>Развертывание настраиваемой начальной страницы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "59002435"
   
 ##### <a name="to-create-an-all-users-deployment"></a>Для создания развертывания все пользователи  
   
-1.  Откройте файл extension.vsixmanifest в представлении кода.  
+1. Откройте файл extension.vsixmanifest в представлении кода.  
   
-2.  В `Identifier` манифеста vsix, добавить `AllUsers` элемент, имеющий значение `true`.  
+2. В `Identifier` манифеста vsix, добавить `AllUsers` элемент, имеющий значение `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ ms.locfileid: "59002435"
   
      В этом случае установщик vsix, чтобы запрашивать разрешения администратора, а затем установить файлы \Common7\IDE\Extensions.  
   
-3.  Откройте файл pkgdef.  
+3. Откройте файл pkgdef.  
   
-4.  Изменить .pkgdef для задания начальной страницы по умолчанию в разделе HKLM, добавив следующую команду, где *MyStartPage.xaml* имя XAML-файл, содержащий к начальной странице.  
+4. Изменить .pkgdef для задания начальной страницы по умолчанию в разделе HKLM, добавив следующую команду, где *MyStartPage.xaml* имя XAML-файл, содержащий к начальной странице.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ ms.locfileid: "59002435"
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Чтобы вручную установить настраиваемой начальной страницы  
   
-1.  Скопируйте XAML-файл, содержащий разметку начальной страницы, а также все вспомогательные файлы, отличные от сборки и вставьте их в папки \StartPages\.  
+1. Скопируйте XAML-файл, содержащий разметку начальной страницы, а также все вспомогательные файлы, отличные от сборки и вставьте их в папки \StartPages\.  
   
-2.  Если начальная страница требует сборок, скопируйте их и вставьте их в... \\ *Папка установки visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Если начальная страница требует сборок, скопируйте их и вставьте их в... \\ *Папка установки visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  В **настроить начальную страницу** списке **запуска** параметры выберите Новая начальная страница. Дополнительные сведения см. в разделе [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. В **настроить начальную страницу** списке **запуска** параметры выберите Новая начальная страница. Дополнительные сведения см. в разделе [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   

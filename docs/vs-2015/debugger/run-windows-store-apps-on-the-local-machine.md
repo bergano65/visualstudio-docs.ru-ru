@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038623"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Запуск приложений для Магазина Windows на локальном компьютере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "58978793"
   
  Чтобы провести отладку, тестирование или анализ производительности для приложения Магазина Windows, вы можете запустить это приложение на том же компьютере, где размещается Visual Studio. Если экран устройства поддерживает сенсорное управление, вам становятся доступны все функции приложения, в противном случае вы сможете использовать только жесты, выполняемые с помощью мыши и клавиатуры.  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  В разделе содержится следующая информация:  
   
  [Как запустить на локальном компьютере](#BKMK_How_to_run_on_a_local_machine)  
   
  [Как переключаться между приложения Windows Store и Visual Studio на одном мониторе](#BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor)  
   
-##  <a name="BKMK_How_to_run_on_a_local_machine"></a> Как запустить на локальном компьютере  
+## <a name="BKMK_How_to_run_on_a_local_machine"></a> Как запустить на локальном компьютере  
  Чтобы запустить приложение на локальном компьютере, выберите **локального компьютера** из раскрывающегося списка рядом с кнопкой "Начать отладку" в отладчике **стандартный** панели инструментов.  
   
  ![Запуск на локальном компьютере](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")  
@@ -46,15 +46,15 @@ ms.locfileid: "58978793"
   
  Целевой объект запуска также можно задать напрямую в файле свойств проекта. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **свойства**. Выполните одно из следующих действий.  
   
--   В проектах C# и Visual Basic щелкните **Отладка** , а затем выберите **локального компьютера** из **целевое устройство** стрелку раскрывающегося списка.  
+- В проектах C# и Visual Basic щелкните **Отладка** , а затем выберите **локального компьютера** из **целевое устройство** стрелку раскрывающегося списка.  
   
      ![C&#35; и страницу свойств проекта Visual Basic](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   
--   В проектах C++ и JavaScript разверните **свойства конфигурации** узла, нажмите кнопку **Отладка**, а затем выберите **локальный отладчик** из **отладчика Чтобы запустить** списка.  
+- В проектах C++ и JavaScript разверните **свойства конфигурации** узла, нажмите кнопку **Отладка**, а затем выберите **локальный отладчик** из **отладчика Чтобы запустить** списка.  
   
      ![C&#43; &#43; и страницы свойств проекта JavaScript](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
   
-##  <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Как переключаться между приложения Windows Store и Visual Studio на одном мониторе  
+## <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Как переключаться между приложения Windows Store и Visual Studio на одном мониторе  
  **Для переключения из работающего экземпляра приложения Windows Store в Visual Studio**  
   
  Если вы запускаете приложение Магазина Windows на локальном компьютере и используете один монитор, вам может потребоваться вернуться в Visual Studio, оставив приложение выполняющимся. Например, приложение может находиться в состоянии, которого нельзя добиться с помощью точки останова, например, ожидать события или выполняться в длительном или бесконечном цикле. Чтобы вернуться в Visual Studio, нажмите ALT+TAB.

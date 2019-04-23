@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58989934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039203"
 ---
 # <a name="enumerating-locals"></a>Перечисление локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58989934"
   
  Эта реализация `IDebugProperty2::EnumChildren` выполняет следующие задачи:  
   
-1.  Гарантирует, что это представляет метод.  
+1. Гарантирует, что это представляет метод.  
   
-2.  Использует `guidFilter` аргумент, чтобы определить, какой метод следует вызывать для [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) объекта. Если `guidFilter` равно:  
+2. Использует `guidFilter` аргумент, чтобы определить, какой метод следует вызывать для [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) объекта. Если `guidFilter` равно:  
   
-    1.  `guidFilterLocals`, вызовите [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) для получения [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) объекта.  
+    1. `guidFilterLocals`, вызовите [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) для получения [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) объекта.  
   
-    2.  `guidFilterArgs`, вызовите [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) для получения `IEnumDebugFields` объекта.  
+    2. `guidFilterArgs`, вызовите [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) для получения `IEnumDebugFields` объекта.  
   
-    3.  `guidFilterLocalsPlusArgs`, перечисление, которое объединяет результаты из синтезировать `IDebugMethodField::EnumLocals` и `IDebugMethodField::EnumArguments`. Этот синтеза представляется классом `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, перечисление, которое объединяет результаты из синтезировать `IDebugMethodField::EnumLocals` и `IDebugMethodField::EnumArguments`. Этот синтеза представляется классом `CEnumMethodField`.  
   
-3.  Создает экземпляр класса (называется `CEnumPropertyInfo` в этом примере), реализующий `IEnumDebugPropertyInfo2` интерфейс, а также содержит `IEnumDebugFields` объекта.  
+3. Создает экземпляр класса (называется `CEnumPropertyInfo` в этом примере), реализующий `IEnumDebugPropertyInfo2` интерфейс, а также содержит `IEnumDebugFields` объекта.  
   
-4.  Возвращает `IEnumDebugProperty2Info2` интерфейс из `CEnumPropertyInfo` объекта.  
+4. Возвращает `IEnumDebugProperty2Info2` интерфейс из `CEnumPropertyInfo` объекта.  
   
 ## <a name="managed-code"></a>Управляемый код  
  В этом примере показана реализация `IDebugProperty2::EnumChildren` в управляемом коде.  

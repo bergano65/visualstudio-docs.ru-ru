@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042411"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Получить данные шрифта и цвета для цветовое выделение текста
 Процесс, который выполняет визуализацию или отображает цветом текста в элементы пользовательского интерфейса (UI) зависит от типа проекта, технологий и разработчиков предпочтений. **Шрифты и цвета** страницу свойств сохраняет параметры.
@@ -31,11 +31,11 @@ ms.locfileid: "54924088"
 
 Для выделения цветом, VSPackage должен получить текущий **шрифты и цвета** параметры. Пакет VSPackage можно получить текущие параметры следующими способами, в зависимости от его потребностей.
 
--   Используйте механизм сохраняемости шрифта и цвета для получения хранимой или в текущем состоянии. Дополнительные сведения см. в разделе [доступа хранятся параметры шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md).
+- Используйте механизм сохраняемости шрифта и цвета для получения хранимой или в текущем состоянии. Дополнительные сведения см. в разделе [доступа хранятся параметры шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс службы, который предоставляет данные шрифта и цвета для получения экземпляра <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, если пакет VSPackage не также поставщика шрифта или цвета.
+- Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс службы, который предоставляет данные шрифта и цвета для получения экземпляра <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, если пакет VSPackage не также поставщика шрифта или цвета.
 
--   Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
+- Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
 Чтобы убедиться, что результаты, полученные путем опроса, актуальные, часто бывает полезно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить, требуется ли обновление до вызова методов извлечения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.
 

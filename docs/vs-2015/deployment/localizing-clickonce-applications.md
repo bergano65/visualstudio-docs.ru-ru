@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039868"
 ---
 # <a name="localizing-clickonce-applications"></a>Локализация приложений ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58979038"
   
  В этом разделе описываются три способа развертывания приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] для других языков и региональных параметров.  
   
--   Включение всех вспомогательных сборок в одно развертывание.  
+- Включение всех вспомогательных сборок в одно развертывание.  
   
--   Создание одного развертывания для каждого языка и региональных параметров, содержащего одну вспомогательную сборку.  
+- Создание одного развертывания для каждого языка и региональных параметров, содержащего одну вспомогательную сборку.  
   
--   Загрузка вспомогательных сборок по требованию  
+- Загрузка вспомогательных сборок по требованию  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Включение всех вспомогательных сборок в развертывание  
  Вместо публикации нескольких развертываний [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] можно опубликовать одно развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], содержащее все вспомогательные сборки.  
@@ -77,9 +77,9 @@ ms.locfileid: "58979038"
   
  Существует три варианта тестирования локализованных развертываний до предоставления приложения пользователям.  
   
--   Можно запустить приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] в соответствующих локализованных версиях Windows.  
+- Можно запустить приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] в соответствующих локализованных версиях Windows.  
   
--   Можно задать свойство <xref:System.Threading.Thread.CurrentUICulture%2A> в своем приложении программным образом. (Это свойство нужно задать до вызова метода <xref:System.Windows.Forms.Application.Run%2A>).  
+- Можно задать свойство <xref:System.Threading.Thread.CurrentUICulture%2A> в своем приложении программным образом. (Это свойство нужно задать до вызова метода <xref:System.Windows.Forms.Application.Run%2A>).  
   
 ## <a name="see-also"></a>См. также  
  [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)   

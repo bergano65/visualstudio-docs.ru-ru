@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994395"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670437"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Обозреватель XML-схем интегрирован с Microsoft Visual Studio, а редактор XML позволяет работать со схемами языка определения схемы XML (XSD). При открытии файла схемы XML **набора схем** узел отображается в обозревателе XML-схем. Все включенные, импортированные или переопределенные схемы для конечного файла, а также любые файлы, которые указаны через инструкцию `include` или `import`, также появляются в обозревателе XML-схемы.  
   
  Обозреватель XML-схем позволяет:  

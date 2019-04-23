@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: публикация приложения WPF с включенными визуальными стилями | Документация Майкрософт'
+title: Практическое руководство. Публикация приложения WPF с включенными визуальными стилями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038131"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 
@@ -31,7 +31,7 @@ ms.locfileid: "56953921"
 
   Затем можно переместить опубликованные файлы в расположение, из которого требуется конечным пользователям для установки приложения.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Опубликуйте решение без включенными визуальными стилями
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Опубликуйте решение без включенными визуальными стилями
 
 1. Убедитесь, что проект не имеет включенными визуальными стилями. Во-первых проверьте следующий код XML файла манифеста для проекта. Если имеется XML, заключен в тег комментария XML.
 
@@ -57,7 +57,7 @@ ms.locfileid: "56953921"
 
          Файл app.manifest открывается в **редактор кода**.
 
-    **Чтобы открыть файл манифеста в C# проекта**
+    **Чтобы открыть файл манифеста в проекте C#**
 
     1. В строке меню выберите **проекта**, *имя_проекта* **свойства**, где *имя_проекта* имя проекта WPF.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56953921"
 
          Эта кнопка показывает все элементы проекта, включая те, которые были исключены и те, которые обычно скрыты. Файл манифеста отображается как элемент проекта.
 
-2. Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Создайте и опубликуйте решение. Дополнительные сведения о том, как опубликовать решение, см. в разделе [как: опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Создать файл манифеста
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041962"
 ---
 # <a name="word-object-model-overview"></a>Обзор объектной модели Word
   При разработке решений Word в Visual Studio выполняется взаимодействие с объектной моделью Word. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Word и определены в пространстве имен <xref:Microsoft.Office.Interop.Word> .
@@ -33,13 +33,13 @@ ms.locfileid: "56635973"
 
  Дополнительные сведения об использовании объектной модели Word для выполнения конкретных задач см. в следующих разделах.
 
--   [Работа с документами](../vsto/working-with-documents.md)
+- [Работа с документами](../vsto/working-with-documents.md)
 
--   [Работа с текстом в документах](../vsto/working-with-text-in-documents.md)
+- [Работа с текстом в документах](../vsto/working-with-text-in-documents.md)
 
--   [Работа с таблицами](../vsto/working-with-tables.md)
+- [Работа с таблицами](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> Понимание объектной модели Word
+## <a name="understanding"></a> Понимание объектной модели Word
  Word предоставляет сотни различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект <xref:Microsoft.Office.Interop.Word.Application> . Этот объект представляет текущий экземпляр Word. Объект <xref:Microsoft.Office.Interop.Word.Application> содержит объекты <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>и <xref:Microsoft.Office.Interop.Word.Range> . Каждый из этих объектов содержит множество методов и свойств, к которым можно обращаться для работы с объектом и взаимодействия с ним.
 
  На следующем рисунке показано одно представление этих объектов в иерархии объектной модели Word.
@@ -115,7 +115,7 @@ ms.locfileid: "56635973"
 
   Visual Studio расширяет объект <xref:Microsoft.Office.Interop.Word.Bookmark> , предоставляя элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark> . Поведение элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark> аналогично поведению собственного элемента <xref:Microsoft.Office.Interop.Word.Bookmark>, однако он имеет дополнительные события и возможности привязки данных. Для привязки данных к элементу управления закладками в документе можно использовать тот же способ, что и для привязки данных к элементу управления текстовым полем в форме Windows Forms. Дополнительные сведения см. в разделе [элемент управления Bookmark](../vsto/bookmark-control.md).
 
-##  <a name="WordOMDocumentation"></a> Использование документации по объектной модели Word
+## <a name="WordOMDocumentation"></a> Использование документации по объектной модели Word
  Полные сведения об объектной модели Word см. в справочнике по основной сборке взаимодействия (PIA) Word, а также в справочнике по объектной модели Visual Basic для приложений (VBA).
 
 ### <a name="primary-interop-assembly-reference"></a>Справочник по основной сборке взаимодействия
