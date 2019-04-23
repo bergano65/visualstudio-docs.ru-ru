@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980629"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661585"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Создание базы данных SQL с помощью конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Можно изучить основные задачи, например добавление таблиц и указания столбцов, с помощью Visual Studio для создания и обновления файла локальной базы данных в SQL Server Express LocalDB. Изучив данное пошаговое руководство, вы можете ознакомиться с расширенными функциональными возможностями, используя свою локальную базу данных в качестве отправной точки для работы с другими пошаговыми руководствами, требующими использование базы данных.  
   
  Можно также создать базу данных с помощью SQL Server Management Studio (отдельного) или инструкции Transact-SQL в **обозреватель объектов SQL Server** окно инструментов в Visual Studio.  

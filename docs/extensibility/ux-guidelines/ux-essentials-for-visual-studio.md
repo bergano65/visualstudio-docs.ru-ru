@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723504"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667459"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 ## <a name="best-practices"></a>Рекомендации
@@ -102,7 +102,6 @@ ms.locfileid: "56723504"
 
 #### <a name="example-video-links-in-team-explorer"></a>Пример: ссылки на видео в Team Explorer
 Принудительная пользователю считывать пояснительный текст перед закрытием пользовательского интерфейса — антишаблоном в Visual Studio. Правильно спроектированное, видео ссылки должны отображаться подсказка с дополнительной информацией в при наведении указателя мыши, а затем щелкнув "&times;" следует закрыть сообщение без каких-либо взаимодействия с пользователем.
-
 
  ![Пояснительный текст anti&#45;шаблон &#45; неправильный](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Шаблон неправильную ссылку на видео
 

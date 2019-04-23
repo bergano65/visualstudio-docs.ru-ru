@@ -22,17 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980374"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661507"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом разделе описываются параметры обновление файла базы данных (.mdf), после установки более новой версии Visual Studio. Он включает инструкции для выполнения следующих задач:  
   
 - Обновить файл базы данных, чтобы использовать новую версию SQL Server Express LocalDB  

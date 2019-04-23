@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Инкрементное построение | Документация Майкрософт
+title: Практическое руководство. Инкрементная сборка | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803914"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662261"
 ---
-# <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементное построение
+# <a name="how-to-build-incrementally"></a>Практическое руководство. Последовательная сборка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При сборке большого проекта важно, чтобы созданные ранее компоненты, которые все еще актуальны, не перестраивались. Если каждый раз создаются все целевые объекты, каждая сборка будет занимать много времени. Для выполнения инкрементных построений (сборки, в которых перестраиваются только те целевые объекты, которые не были построены ранее, или устаревшие целевые объекты) [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. Однако должно быть однозначное сопоставление между входными и выходными данными. Чтобы целевые объекты могли идентифицировать это прямое сопоставление, можно использовать преобразования. Дополнительные сведения о преобразованиях см. в статье [Преобразования](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Указание входных и выходных данных  
@@ -31,7 +30,7 @@ ms.locfileid: "54803914"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Указание входных и выходных данных для целевого объекта  
   
-- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Например:  
+- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Пример:  
   
   ```  
   <Target Name="Build"  
@@ -62,9 +61,9 @@ ms.locfileid: "54803914"
 ## <a name="example"></a>Пример  
  В следующем примере используется проект, который создает файлы справки для гипотетической справочной системы. В проекте выполняется преобразование исходных TXT-файлов в промежуточные CONTENT-файлы, которые затем объединяются с XML-файлами метаданных для получения итогового HELP-файла, используемого в справке. В проекте используются следующие гипотетические задачи.  
   
-- `GenerateContentFiles`: преобразует TXT-файлы в CONTENT-файлы.  
+- `GenerateContentFiles`: Преобразует TXT-файлы в Content-файлы.  
   
-- `BuildHelp`: объединяет CONTENT-файлы и XML-файлы метаданных для построения итогового HELP-файла.  
+- `BuildHelp`: Объединяет CONTENT-файлы и файлы метаданных XML для построения итогового HELP-файла.  
   
   В проекте используются преобразования для создания взаимно однозначного сопоставления между входными и выходными данными в задаче `GenerateContentFiles`. Дополнительные сведения см. в статье [Преобразования](../msbuild/msbuild-transforms.md). Кроме того, элемент `Output` настроен на автоматическое использование выходных данных задачи `GenerateContentFiles` в качестве входных данных для задачи `BuildHelp`.  
   
@@ -105,7 +104,7 @@ ms.locfileid: "54803914"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Целевые объекты](../msbuild/msbuild-targets.md)   
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Преобразования](../msbuild/msbuild-transforms.md)   

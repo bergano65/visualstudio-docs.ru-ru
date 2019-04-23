@@ -29,23 +29,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526094"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665679"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Создание визуальной карты стека вызовов при отладке (C#, Visual Basic, C++, JavaScript)
 
 Для визуального отслеживания стека вызовов при отладке можно создать карту кода. Вы можете вести заметки на карте, чтобы следить за деятельностью кода и сосредоточиться на поиске ошибок.
 
-Пошаговое руководство просмотрите это видео: Видео: [Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Пошаговое руководство просмотрите это видео: [Видео. Визуальная отладка с интеграцией отладчика сопоставления кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Сведения о командах и действия, которые можно использовать с помощью карт кода, см. в разделе [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Можно создать только в карты кода [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
+>Можно создать только в карты кода [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Ниже приведен краткий обзор карту кода.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57526094"
 
 ##  <a name="MapStack"></a> Сопоставление стека вызова
 
-1. В Visual Studio Enterprise C#, Visual Basic, C++ или JavaScript проекта, начать отладку, выбрав **Отладка** > **начать отладку** или нажав клавиши **F5**.
+1. В Visual Studio Enterprise C#, Visual Basic, C++, или JavaScript проекта, начать отладку, выбрав **Отладка** > **начать отладку** или нажав клавиши **F5** .
 
 1. Когда ваше приложение переходит в режим приостановки выполнения или при входе в функцию, выберите **отладки** > **карта кода**, или нажмите клавишу **Ctrl**+**Shift** +**`**.
 

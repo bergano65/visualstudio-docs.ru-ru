@@ -13,17 +13,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81532137b98b415a598a2770b19c3df8ce14f135
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794414"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666472"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>"Параметры", "Текстовый редактор", JavaScript, "Форматирование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте страницу **Форматирование** диалогового окна **Параметры** для задания параметров форматирования для кода в редакторе кода. Чтобы открыть эту страницу, выберите в меню **Сервис** пункт **Параметры**, а затем разверните узел **Текстовый редактор**, **JavaScript** и **Форматирование**.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  

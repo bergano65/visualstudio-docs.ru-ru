@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Присоединение Profiler к службе .NET для сбора статистики приложения с помощью командной строки | Документация Майкрософт
+title: Практическое руководство. Присоединение Profiler к службе .NET для сбора статистики приложения с помощью командной строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760182"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668422"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора статистики приложения с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к службе .NET для сбора статистики приложения с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описано, как с помощью программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] подключить профилировщик к службе .NET Framework и собрать статистику производительности с помощью метода выборки.  
@@ -73,7 +73,6 @@ ms.locfileid: "54760182"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                         Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.                                                                          |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                            Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл.                                                                            |
 
-
 7. При необходимости запустите службу.  
 
 8. Подключите профилировщик к службе. Тип:  
@@ -117,7 +116,7 @@ ms.locfileid: "54760182"
 
     -   Остановите службу.  
 
-         - или -  
+         -или-  
 
     -   Введите команду **VSPerfCmd /detach**.  
 
@@ -131,6 +130,6 @@ ms.locfileid: "54760182"
 
 4.  Перезагрузите компьютер.  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Службы профилирования](../profiling/command-line-profiling-of-services.md)   
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)

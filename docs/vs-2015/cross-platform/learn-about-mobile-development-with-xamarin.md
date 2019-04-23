@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781702"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662079"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Подробности о разработке мобильных приложений с использованием Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этой статье представлены материалы общего характера, которые помогут понять основы разработки кроссплатформенных мобильных приложений с помощью Xamarin. Если вы еще не установили Visual Studio и Xamarin, сначала запустите процесс [Setup and install](../cross-platform/setup-and-install.md) , затем вернитесь сюда, чтобы изучить представленные ниже материалы во время выполнения программы установки.  
   
 > [!NOTE]
@@ -24,14 +23,14 @@ ms.locfileid: "54781702"
 >   
 >  Также вы можете просмотреть статьи "Основы" и вернуться к статьям "Подробное рассмотрение" позже.  
   
-## <a name="essentials-introduction-to-xamarin"></a>Основы: введение в Xamarin  
+## <a name="essentials-introduction-to-xamarin"></a>Основы: Введение в Xamarin  
  *10–20 минут*  
   
 1.  [Мобильные приложения в Visual Studio с Xamarin](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) предоставляют очень краткое сводное описание основных характеристик Xamarin.  
   
 2.  [Создание кроссплатформенных мобильных приложений с помощью C# и Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15 мин. 16 сек.) с пропагандистом Xamarin, Джеймсом Монтеманьо (James Montemagno). Первые три минуты посвящены обзору Xamarin, затем следуют демонстрации кода.  
   
-## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Основы: обзор окружений Visual Studio и Xamarin  
+## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Основы: Общие сведения о Visual Studio и окружении Xamarin  
  *5–15 минут*  
   
 - Основная часть работы выполняется на компьютерах Windows с Visual Studio и Xamarin. На таких компьютерах напрямую создаются приложения для Windows и Android, а также выполняются их запуск и отладка на устройстве или эмуляторе. Вы также можете удаленно создавать, запускать и отлаживать приложения iOS на компьютере Mac. В Visual Studio на компьютере Windows можно также подключиться к конструктору раскадровки iOS и симулятору iOS.  
@@ -42,7 +41,7 @@ ms.locfileid: "54781702"
   
   ![Связь между компьютерами для разработки ПО Windows и Mac в среде Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "Изучение CrossPlat Xamarin 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Основные компоненты Как структурированы проекты  
+## <a name="essentials-how-projects-are-structured"></a>Основы: Как структурированы проекты  
  *10–30 минут*  
   
 1.  [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Рекомендуется использовать переносимые библиотеки классов, так как они наилучшим образом обеспечивают использование только тех интерфейсов API .NET, которые поддерживаются всеми целевыми платформами. Большая часть кода бизнес-логики будет находиться в PCL, включая доступ к базам данных, вызовы интерфейсов API REST и вызовы портативных компонентов Xamarin (см. в разделе [подробное рассмотрение: Компоненты Xamarin](#components) в конце этого раздела). Общий код пользовательского интерфейса, написанный с помощью Xamarin.Forms, может также находиться в PCL.  
@@ -52,7 +51,7 @@ ms.locfileid: "54781702"
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Основы: встроенные слои и слои пользовательского интерфейса Xamarin.Forms  
  *10–40 минут*  
   
- Xamarin предоставляет два способа для создания отличных нативных приложений. Xamarin Native и Xamarin.Forms.  
+ Xamarin предоставляет два способа для создания отличных нативных приложений: Xamarin Native и Xamarin.Forms.  
   
  В Xamarin Native можно написать отдельный код пользовательского интерфейса для каждой целевой платформы: iOS, Android и Windows.  Такой подход дает прямой доступ к интерфейсам API платформы, позволяя настраивать пользовательский интерфейс для каждой платформы.  Также имеется полный доступ к нативному конструктору и элементам управления для каждой платформы, чтобы помочь в создании соответствующего пользовательского интерфейса.  
   
@@ -93,7 +92,7 @@ ms.locfileid: "54781702"
   
 2.  **Симулятор iOS Apple.** Дополнительные сведения см. в статье [Начало работы с симулятором iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
 ##  <a name="components"></a> Подробное рассмотрение: Компоненты Xamarin  
  *10 минут*  

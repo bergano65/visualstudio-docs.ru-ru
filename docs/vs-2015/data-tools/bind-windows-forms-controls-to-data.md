@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991679"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668994"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Привязка элементов управления Windows Forms к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Источники данных можно привязать к элементам управления путем перетаскивания объектов из **источников данных** окна на форму Windows или на существующий элемент управления в форме. Прежде чем перетащить элементы, можно задать тип элемента управления, который вы хотите привязать к. В зависимости от того, самостоятельно, или отдельного столбца выбраны таблицы отображаются разные значения.  Можно также задать пользовательские значения. Для таблицы «Подробности» означает, что каждый столбец привязан к отдельным элементом управления.  
   
  ![Привязка источника данных к DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata привязки источника данных DataGridView")  

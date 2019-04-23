@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990052"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668357"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Практическое руководство. Добавление проверки в классы сущностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 *Проверка* классов сущностей представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме объекта, а также правилам, установленным для приложения. Проверка данных перед отправкой обновлений в основную базы данных рекомендуется, это уменьшает количество ошибок. Это также уменьшает потенциальное количество циклов передачи между приложением и базой данных.  
   
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет разделяемые методы, которые позволяют пользователям расширять сгенерированный проектировщиком код, который выполняется во время операций вставки, обновления и удаления из завершенных сущностей, а также во время и после отдельного столбца изменения.  

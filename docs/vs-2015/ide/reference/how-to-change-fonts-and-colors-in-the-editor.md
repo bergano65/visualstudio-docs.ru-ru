@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Изменение шрифтов и цветов в редакторе | Документация Майкрософт
+title: Практическое руководство. Изменение шрифтов и цветов в редакторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799112"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661871"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Практическое руководство. Изменение шрифтов и цветов в редакторе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Вы можете изменить начертание, размер шрифта, а также цвет его переднего плана и фона для текстовых **отображаемых элементов** в редакторе кода. При изменении параметров шрифта учитывайте следующее:  
   
 -   Значения для параметров **Шрифт** и **Размер** применяются глобально для всех текстовых элементов во всех редакторах [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -54,8 +53,8 @@ ms.locfileid: "54799112"
   
 5.  Нажмите кнопку **ОК**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка редактора](../../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Практическое руководство. изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

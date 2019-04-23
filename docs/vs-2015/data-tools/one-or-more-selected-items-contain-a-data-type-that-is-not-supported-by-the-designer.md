@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35b45a407b5c07bc5c6ab6db87e972b3787890ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994269"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668825"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Один или несколько выбранных элементов содержат тип данных, не поддерживаемый конструктором
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Один или несколько элементов, перетащить из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] содержит тип данных, который не поддерживается [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (например, [Определяемых пользователем типов CLR](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  

@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769227"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668123"
 ---
 # <a name="generatebootstrapper-task"></a>Задача GenerateBootstrapper
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов. Она служит единым установщиком, объединяющим отдельные установщики для всех компонентов, образующих приложение.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
@@ -98,7 +97,7 @@ ms.locfileid: "54769227"
   
   - `HomeSite`: указывает, что необходимый компонент размещается у поставщика компонентов.  
   
-  - `Relative`: указывает, что необходимый компонент располагается в том же месте, что и приложение.  
+  - `Relative`: Указывает, что необходимый компонент располагается в одном месте приложения.  
   
   - `Absolute`: указывает, что все компоненты располагаются по единому URL-адресу. Это значение следует использовать в связке со входным параметром `ComponentsUrl`.  
   
@@ -179,6 +178,6 @@ ms.locfileid: "54769227"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

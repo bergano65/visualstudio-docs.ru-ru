@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990451"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662274"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Практическое руководство. Настройка наследования с использованием реляционного конструктора объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. При однотабличном наследовании имеется единственная таблица базы данных, которая содержит поля как для родительских данных, так и для дочерних. Для реляционных данных столбец дискриминатора содержит значение, которое определяет, какому классу принадлежит каждая запись.  
   
  Например, рассмотрим таблицу Persons, которая содержит данные всех сотрудников компании. Некоторые лица являются служащими, а некоторые - менеджерами. Таблица Persons содержит столбец с именем `EmployeeType`, который имеет значение 1 для менеджеров и значение 2 для служащих; это - столбец дискриминатора. В этом случае можно создать подкласс служащих и заполнить класс только записями, которые имеют в столбце `EmployeeType` значение 2. Кроме того, можно удалить из каждого класса неприменимые столбцы.  

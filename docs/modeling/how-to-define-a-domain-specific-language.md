@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f97c86bd274d8fe6a75e8731165c5189e27cf08f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664492"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 Для определения доменного языка (DSL), создается решение Visual Studio на основе шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
@@ -608,7 +608,6 @@ ms.locfileid: "58416426"
 
 ## <a name="trouble"></a> Устранение неполадок
  В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. Дополнительные советы можно найти в [форуме по расширению инструментов визуализации](http://go.microsoft.com/fwlink/?LinkId=186074).
-
 
 | Проблема | Предложение |
 |-|-|

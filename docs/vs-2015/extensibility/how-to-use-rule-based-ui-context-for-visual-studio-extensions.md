@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979620"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664324"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Практическое руководство. Использование контекста пользовательского интерфейса на основе правил для расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
 |ActiveProjectCapability:\<выражение >|Термин имеет значение true, если возможности активного проекта соответствует указанного выражения. Выражение может быть нечто вроде VB &#124; CSharp|
 |SolutionHasProjectCapability:\<выражение >|Аналогично выше, но условие равно true, если решение содержит любой загруженный проект, который соответствует выражению.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Термин будет иметь значение true, каждый раз, когда решение содержит проект, который является flavored (Сводное) и у flavor, идентификатор GUID типа проекта для данного сопоставления.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Совместимость с разными версиями расширения
  Правило на основе контекстов пользовательского интерфейса — это новая функция в Visual Studio 2015 и не может быть перенесена в более ранних версий. Это создает проблему с помощью расширения или пакетов, предназначенных для нескольких версий Visual Studio, которая может автоматически загружаются в Visual Studio 2013 и более ранних версий, но может принести из контекстов пользовательского интерфейса на основе правил для предотвращения автоматически загружаются в Visual Studio 2015.

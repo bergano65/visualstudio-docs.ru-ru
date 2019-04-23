@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645931"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666459"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; элемент (установщик)
 `InstallChecks` Элемент поддерживает запуск тестов на локальном компьютере, чтобы убедиться в том, что все соответствующие предварительные требования для приложения были установлены.
@@ -97,7 +97,6 @@ ms.locfileid: "56645931"
 
  `FileCheck` не содержит элементов и имеет следующие атрибуты.
 
-
 | Атрибут | Описание |
 |-----------------| - |
 | `Property` | Обязательный. Имя свойства для хранения результата. Это свойство может ссылаться на тест `InstallConditions` элемент, который является дочерним элемента `Command` элемент. Дополнительные сведения см. в разделе [ \<команды > элемент](../deployment/commands-element-bootstrapper.md). |
@@ -165,7 +164,7 @@ ms.locfileid: "56645931"
 ## <a name="predefined-properties"></a>Стандартные свойства
  В следующей таблице перечислены `BypassIf` и `FailIf` элементы:
 
-|Свойство.|Примечания|Возможные значения|
+|Свойство|Примечания|Возможные значения|
 |--------------|-----------|---------------------|
 |`Version9X`|Номер версии операционной системы Windows 9 X.|4.10 = Windows 98|
 |`VersionNT`|Номер версии операционной системы на базе Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|

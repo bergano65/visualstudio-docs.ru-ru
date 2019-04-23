@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993358"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669176"
 ---
 # <a name="xml-schema-designer"></a>Конструктор схемы XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Конструктор XML-схем (конструктор XSD) является графическим инструментом, позволяющим визуализировать набор схем на разных уровнях абстракции. Конструктор XSD состоит из следующих основных компонентов:    
   
 -   [Обозреватель XML-схем](../xml-tools/xml-schema-explorer.md) позволяет просматривать и перемещаться по дереву XML-схемы и выполнять поиск.  

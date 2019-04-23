@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58990073"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664220"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простого приложения для работы с данными с помощью ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При создании приложения, которое работает с данными в базе данных, необходимо выполнить такие основные задачи, как определение строк подключения, вставка данных и выполнение хранимых процедур. Перечисленные в этом разделе, вы можете узнать, как взаимодействовать с базой данных из простого приложения Windows Forms «формы поверх данных» с помощью Visual C# или Visual Basic и ADO.NET.  Все технологии данных .NET, включая наборы данных, LINQ to SQL и Entity Framework — в конечном счете выполните действия, которые очень похожи тем, что показано в этой статье.  
   
  В этой статье демонстрируется простой способ получить данные из базы данных в виде очень быстро. Если приложению для изменения данных без того нетривиальные способами и обновления базы данных, можно с помощью Entity Framework и привязка данных к автоматически синхронизировать элементы управления пользовательского интерфейса для изменения базовых данных.  

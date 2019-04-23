@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796910"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668409"
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Преобразовывает файлы формата TXT и RESX (файлы ресурсов на основе XML) и двоичные RESOURCES-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата TXT и RESX в RESOURCES-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Параметры  
@@ -48,7 +47,7 @@ ms.locfileid: "54796910"
 |`PublicClass`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, создает класс ресурса со строгой типизацией как открытый класс.|  
 |`References`|Необязательный параметр `String[]` .<br /><br /> Ссылки для загрузки типов в RESX-файлы. Элементы данных RESX-файла могут содержать тип .NET. Этот параметр должен быть разрешен при считывании RESX-файла. Как правило, он разрешается с использованием стандартных правил загрузки типов. Если предоставить сборки в `References`, они будут иметь приоритет.<br /><br /> Для строго типизированных ресурсов этот параметр не требуется.|  
 |`SdkToolsPath`|Необязательный параметр `String` .<br /><br /> Указывает путь к средствам пакета SDK, например resgen.exe.|  
-|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает элементы, которые нужно преобразовать. Элементы, передаваемые этому параметру, должны содержать одно из следующих расширений файлов:<br /><br /> -   `.txt`: указывает расширение текстового файла, который нужно преобразовать. Текстовые файлы могут содержать только строковые ресурсы.<br />-   `.resx`: указывает расширение файла ресурсов на основе XML, который нужно преобразовать.<br />-   `.restext`: задает тот же формат, что и TXT. Это уникальное расширение полезно в том случае, если требуется отделить исходные файлы, содержащие ресурсы, от других исходных файлов в процессе сборки.<br />-   `.resources`: указывает расширение для файла ресурсов, который нужно преобразовать.|  
+|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает элементы, которые нужно преобразовать. Элементы, передаваемые этому параметру, должны содержать одно из следующих расширений файлов:<br /><br /> -   `.txt`: указывает расширение текстового файла, который нужно преобразовать. Текстовые файлы могут содержать только строковые ресурсы.<br />-   `.resx`: указывает расширение файла ресурсов на основе XML, который нужно преобразовать.<br />-   `.restext`: Задает тот же формат, что и txt. Это уникальное расширение полезно в том случае, если требуется отделить исходные файлы, содержащие ресурсы, от других исходных файлов в процессе сборки.<br />-   `.resources`: указывает расширение для файла ресурсов, который нужно преобразовать.|  
 |`StateFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает путь к необязательному файлу кэша, используемому для ускорения проверки зависимости ссылок во входных RESX-файлах.|  
 |`StronglyTypedClassName`|Необязательный параметр `String` .<br /><br /> Указывает имя класса для строго типизированного класса ресурсов. Если этот параметр не указан, используется базовое имя файла ресурсов.|  
 |`StronglyTypedFilename`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает имя файла исходного кода. Если этот параметр не указан, используется имя класса в качестве базового имени файла с расширением, зависящим от языка. Например, `MyClass.cs`.|  
@@ -57,11 +56,11 @@ ms.locfileid: "54796910"
 |`StronglyTypedNamespace`|Необязательный параметр `String` .<br /><br /> Указывает пространство имен, используемое в создаваемом источнике класса для строго типизированного ресурса. Если этот параметр не указан, все строго типизированные ресурсы находятся в глобальном пространстве имен.|  
 |`TLogReadFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания чтения.|  
 |`TLogWriteFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания записи.|  
-|`ToolArchitecture`|Необязательный параметр типа [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
-|`TrackerFrameworkPath`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению .NET Framework, содержащему FileTracker.dll.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла FileTracker.dll соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии .NET Framework.|  
-|`TrackerLogDirectory`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает промежуточный каталог, в котором будут размещены журналы отслеживания для выполнения этой задачи.|  
-|`TrackerSdkPath`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению Windows SDK, содержащему Tracker.exe.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла Tracker.exe соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии Windows SDK.|  
-|`TrackFileAccess`|Необязательный [логический] параметр (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
+|`ToolArchitecture`|(Необязательно [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению .NET Framework, содержащему FileTracker.dll.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла FileTracker.dll соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии .NET Framework.|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает промежуточный каталог, в котором будут размещены журналы отслеживания для выполнения этой задачи.|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению Windows SDK, содержащему Tracker.exe.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла Tracker.exe соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии Windows SDK.|  
+|`TrackFileAccess`|Необязательно () [логическое]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
 |`UseSourcePath`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задается каталог входного файла, который должен использоваться для разрешения относительных путей к файлам.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -94,6 +93,6 @@ ms.locfileid: "54796910"
   
  Без метаданных \<LogicalName> ресурс будет называться myAssembly.myResource.resources.  Этот пример применяется только к процессу сборки Visual Basic и Visual C#.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

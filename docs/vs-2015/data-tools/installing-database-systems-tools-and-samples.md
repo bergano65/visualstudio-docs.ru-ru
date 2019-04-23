@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002891"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664791"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Установка систем баз данных, средства и примеры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Сама среда Visual Studio не включает все базы данных системы, отличные от те, которые он использует для внутренних целей. Для разработки приложений, подключенных к данных, в Visual Studio, обычно установка системы базы данных на локальном компьютере разработки и затем развернуть приложение и база данных в рабочей среде, когда они будут готовы. Системы баз данных могут быть недоступны в приложениях .NET и должен отображаться в Visual Studio данные средства windows ей нужен поставщик данных ADO.NET. Поставщик должен поддерживать Entity Framework в частности в том случае, если вы планируете использовать модели EDM в приложении .NET.     Многие поставщики, предлагается через диспетчер пакетов NuGet или с помощью коллекции Visual Studio.  
   
  Для разработки SQL убедитесь, что у вас есть SQL Server Data Tools, установленной в Visual Studio. Нажмите кнопку **представление** меню. Если вы не видите обозреватель объектов SQL Server, откройте панель управления и измените Visual Studio. В установщике выберите **Microsoft SQL Server Data Tools**.  

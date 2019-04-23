@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: e05d00bc01620f71b0fb6d97a3a7b4e78732f365
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "59002403"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666156"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций служб
 
@@ -30,7 +30,6 @@ ms.locfileid: "59002403"
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 Сведения о базовых схемах для файлов определения службы и конфигурации службы см. в статьях о [схеме XML (CSDEF-файл)](/azure/cloud-services/schema-csdef-file) и [схеме XML (CSCFG-файл)](/azure/cloud-services/schema-cscfg-file). Дополнительные сведения о конфигурации службы см. в статье [Настройка облачных служб](/azure/cloud-services/cloud-services-how-to-configure-portal).
-
 
 ## <a name="configuration-page"></a>Страница «Конфигурация»
 

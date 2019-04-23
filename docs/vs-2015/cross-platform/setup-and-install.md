@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781713"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663863"
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Для создания нативных приложений iOS, Android и Windows из общей базы кода C# и .NET с помощью Xamarin необходимо следующее:  
   
 - Для работы с приложениями Windows и Android требуется компьютер Windows, на котором ведется разработка, с установленными Visual Studio 2015 и Xamarin 4 (см. примечание ниже). (Можно также использовать Visual Studio 2013, следуя указаниям для [прямой установки Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   
@@ -73,7 +72,7 @@ ms.locfileid: "54781713"
   
         ![Выбор параметра "Xamarin" в разделе разработки кросс&#45;платформенных мобильных приложений](../cross-platform/media/cross-plat-xamarin-setup-2.png "Кросс-платформенная установка Xamarin 2")  
   
-   2.  Для Windows: **Кросс платформенной мобильной разработки > Microsoft Visual Studio Emulator для Android**. Примечание. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, убедитесь, что этот флажок *снят*. После шага 5 см. примечание об эмуляторах на компьютерах Windows. Вы также можете оставить этот флажок снятым, если собираетесь выполнять отладку только на физических устройствах Android.  
+   2.  Для Windows 8 +: **Кросс платформенной мобильной разработки > Microsoft Visual Studio Emulator для Android**. Примечание. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, убедитесь, что этот флажок *снят*. После шага 5 см. примечание об эмуляторах на компьютерах Windows. Вы также можете оставить этот флажок снятым, если собираетесь выполнять отладку только на физических устройствах Android.  
   
    3.  (Необязательно.) При разработке ПО для устройств Windows также установите флажок **"Разработка приложений для Windows и веб-приложений" > "Средства разработки универсальных приложений Windows"** и (или) **Средства Windows 8.1 и Windows Phone 8.0/8.1**. При этом будут установлены образы эмуляторов, из-за чего потребуется больше времени для скачивания данных; в установщик Visual Studio всегда можно вернуться, чтобы добавить их позже.  
   

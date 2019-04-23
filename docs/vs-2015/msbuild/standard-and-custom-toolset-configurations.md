@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801678"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668334"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Набор инструментов MSBuild содержит ссылки на задачи, целевые объекты и средства, которые можно использовать для создания проекта приложения. В состав MSBuild входит стандартный набор инструментов, но вы также можете создавать пользовательские наборы. Сведения об указании набора инструментов см. в разделе [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 ## <a name="standard-toolset-configurations"></a>Стандартные конфигурации набора инструментов  
  В MSBuild 12.0 входят следующие стандартные наборы инструментов:  
-
 
 | ToolsVersion | Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|
@@ -103,5 +101,5 @@ ms.locfileid: "54801678"
 
   Вы можете также добавить в файл конфигурации пользовательские и зависящие от ToolsVersion свойства, используя тот же самый синтаксис, который применяется для добавления свойства MSBuildToolsPath. Такие пользовательские свойства будут доступны для файла проекта, если используется имя, совпадающее со значением, указанным в файле конфигурации. В файле конфигурации можно определять наборы инструментов, но не вложенные наборы инструментов.  
 
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

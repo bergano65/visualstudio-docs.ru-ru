@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416215"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669957"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Можно создать правило магазина для распространения изменений от одного элемента к другому в визуализации и пакет SDK для моделирования (VMSDK). При внесении изменений к любому элементу в Store, правила планируются для выполнения, обычно в том случае, когда фиксируется в самой внешней транзакции. Существуют различные типы правил для различных видов событий, таких как добавление элемента, или удалить его. Правила можно присоединить к определенным типам элементов, фигур или схем. Многие встроенные функции определяются правилами сбора данных: например, правила гарантируют, что схема обновляется при изменении модели. Доменный язык можно настроить путем добавления собственных правил.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Наследуйте класс правило из одного из следующих базовых классов:
 
-
   | Базовый класс | Триггер |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Добавляется элемент, ссылку или фигуры.<br /><br /> Позволяет обнаруживать новые связи, а также новые элементы. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Выполняется при создании транзакции. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Запускаются, когда транзакция будет зафиксирована. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Выполняется при транзакции является откат. |
-
 
 - Каждый класс имеет метод, который можно переопределить. Тип `override` в классе для его обнаружения. Параметр этого метода определяет элемент, которого необходимо изменить.
 

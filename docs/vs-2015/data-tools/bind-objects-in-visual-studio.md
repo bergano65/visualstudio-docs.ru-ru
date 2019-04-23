@@ -19,16 +19,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990798"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667187"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Связывание объектов в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio предоставляет средства разработки для работы с пользовательскими объектами в качестве источника данных в приложении. Если вы хотите сохранять данные из базы данных в объект, который можно привязать к элементам управления пользовательского интерфейса, рекомендуется использовать Entity Framework для создания класса или классов. Сущность Frameworkautogenerates весь отслеживания изменений код шаблона, это означает, что любые изменения локальных объектов автоматически сохраняются в базу данных при вызове AcceptChanges DbSet объекта.    Дополнительные сведения см. в разделе [документация по Entity Framework](https://ef.readthedocs.org/en/latest/).
 

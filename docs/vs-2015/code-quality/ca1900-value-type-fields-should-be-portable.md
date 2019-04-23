@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 35bdef10d63f79c3d1ff649a486a708c34b28078
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003075"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665758"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900. Поля типов значений должны быть переносимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1900: Поля типа значения должны быть переносимыми](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1900: Поля типа значения должны быть переносимыми](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
   
 |||  
 |-|-|  

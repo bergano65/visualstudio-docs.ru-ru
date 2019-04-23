@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769374"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665471"
 ---
 # <a name="item-metadata-in-target-batching"></a>Метаданные элементов в пакетной обработке целевых объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может анализировать зависимости для входных и выходных данных целевого объекта сборки. Если определено, что входные или выходные данные целевого объекта актуальны, он пропускается, а сборка продолжается. Элементы `Target` используют атрибуты `Inputs` и `Outputs`, чтобы задать элементы, обрабатываемые во время анализа зависимостей.  
   
  Если целевой объект содержит задачу, которая использует пакетные элементы в качестве входных и выходных данных, элемент `Target` целевого объекта должен использовать пакетную обработку в своих атрибутах `Inputs` или `Outputs`, чтобы позволить [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] пропускать уже актуальные пакеты элементов.  
@@ -69,8 +68,8 @@ ms.locfileid: "54769374"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md)   
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md)   
  [Пакетная обработка](../msbuild/msbuild-batching.md)   
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Метаданные элементов в пакетной обработке задач](../msbuild/item-metadata-in-task-batching.md)

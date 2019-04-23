@@ -27,17 +27,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868134"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667201"
 ---
 # <a name="general-environment-options-dialog-box"></a>Страница "Общие", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте эту страницу для изменения цветовых тем, параметров строки состояния, сопоставлений расширений файлов и т. д. для интегрированной среды разработки (IDE). Чтобы открыть диалоговое окно **Параметры**, щелкните меню **Сервис**, выберите **Параметры**, откройте папку **Среда** и выберите страницу **Общие**. Если этой страницы нет в списке, установите флажок **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]
@@ -82,6 +81,6 @@ ms.locfileid: "57868134"
   
  Этот параметр может быть полезен, если на одном компьютере установлены две версии Visual Studio, одна из которых позднее удаляется. После удаления значки файлов Visual Studio больше не отображаются в проводнике. Кроме того, Windows больше не распознает Visual Studio как приложение по умолчанию для открытия этих файлов. Этот параметр позволяет восстановить данные сопоставления.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)   
  [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)

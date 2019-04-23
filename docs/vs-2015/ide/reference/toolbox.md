@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799802"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661351"
 ---
 # <a name="toolbox"></a>Панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 На **панели элементов** отображаются значки для элементов управления и других элементов, которые можно добавить проекты [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Чтобы открыть **панель элементов**, в меню **Вид** выберите пункт **Панель элементов**. Можно закрепить **панель элементов**, а также зафиксировать ее в открытом состоянии или использовать для нее функцию **Автоматическое скрытие**.  
   
  Значки **панели элементов** можно перетащить в конструктор или вставить в редактор кода. В любом случае добавляется базовый код для создания экземпляра элемента **панели элементов** в файле активного проекта.  

@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003078"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664116"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726. Используйте предпочтительные термины
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1726: Используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1726: Используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -41,30 +41,30 @@ ms.locfileid: "59003078"
   
 |Устаревшее название|Предпочтительный термин|  
 |-------------------|--------------------|  
-|не|Не|  
-|Отменено|Отменено|  
-|Не удается|Не удается|  
-|ComPlus|EnterpriseServices|  
-|Тестовых|Невозможно|  
-|Didnt|DidNot|  
-|Doesnt|Не|  
-|Запрет|Не подключать|  
-|Flag или Flags|Есть слово для замены. Не используется.|  
-|не|HadNot|  
-|Не|HasNot|  
-|еще не|HaveNot|  
-|Индексы|Индексы|  
-|не|IsNot|  
-|Имя входа|Вход в систему|  
-|Выход из системы|Выход из системы|  
-|Shouldnt|ShouldNot|  
-|Единого входа|Для входа|  
-|Утверждения|Выход|  
-|Wasnt|WasNot|  
-|не были|WereNot|  
-|Не|WillNot|  
-|Wouldnt|WouldNot|  
-|Для записи|Для записи|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` или `Flags`|Есть слово для замены. Не используется.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение этого правила, замените термин предпочтительный термин для альтернативных.  

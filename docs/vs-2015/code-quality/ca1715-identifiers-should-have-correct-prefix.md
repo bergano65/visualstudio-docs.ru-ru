@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667330"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715. Идентификаторы должны иметь правильные префиксы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1715: Идентификаторы должны иметь правильные префиксы](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1715: Идентификаторы должны иметь правильные префиксы](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).  
   
 |||  
 |-|-|  
@@ -37,7 +37,7 @@ ms.locfileid: "59003067"
 ## <a name="cause"></a>Причина  
  Имя видимого интерфейса не начинается с прописные «I».  
   
- - или -  
+ -или-  
   
  Имя параметра универсального типа в видимый извне тип или методе не начинается с заглавной 'T'.  
   
