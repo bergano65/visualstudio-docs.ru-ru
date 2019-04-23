@@ -11,12 +11,12 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 324e74c78f01da47c544b5f640ad0bd9052a1bb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107649"
 ---
 # <a name="subscribing-to-an-event"></a>Подписка на событие
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58989045"
   
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Создание расширения с окном инструментов  
   
-1.  Создайте проект с именем **RDTExplorer** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **RDTExplorerWindow**.  
+1. Создайте проект с именем **RDTExplorer** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **RDTExplorerWindow**.  
   
      Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 #### <a name="to-subscribe-to-rdt-events"></a>Подписаться на события RDT  
   
-1.  Откройте файл RDTExplorerWindowControl.xaml и удаление кнопки с именем `button1`. Добавление <xref:System.Windows.Forms.ListBox> управления и примите имя по умолчанию. Элемент Grid должен выглядеть следующим образом:  
+1. Откройте файл RDTExplorerWindowControl.xaml и удаление кнопки с именем `button1`. Добавление <xref:System.Windows.Forms.ListBox> управления и примите имя по умолчанию. Элемент Grid должен выглядеть следующим образом:  
   
     ```xml  
     <Grid>  
@@ -47,7 +47,7 @@ ms.locfileid: "58989045"
     </Grid>  
     ```  
   
-2.  Откройте файл RDTExplorerWindow.cs в представлении кода. Добавьте следующие операторы using в начало файла.  
+2. Откройте файл RDTExplorerWindow.cs в представлении кода. Добавьте следующие операторы using в начало файла.  
   
     ```csharp  
     using Microsoft.VisualStudio;  
@@ -55,24 +55,24 @@ ms.locfileid: "58989045"
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Изменить `RDTExplorerWindow` класса, который, помимо наследования от <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> класс, он реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> интерфейс.  
+3. Изменить `RDTExplorerWindow` класса, который, помимо наследования от <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> класс, он реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> интерфейс.  
   
     ```csharp  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
+4. Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
   
-    -   Реализуйте интерфейс. Поместите курсор на имя IVsRunningDocTableEvents. Вы должны увидеть лампочки в левом поле. Щелкните стрелку вниз справа от лампочки и выберите **реализовать интерфейс**.  
+    - Реализуйте интерфейс. Поместите курсор на имя IVsRunningDocTableEvents. Вы должны увидеть лампочки в левом поле. Щелкните стрелку вниз справа от лампочки и выберите **реализовать интерфейс**.  
   
-5.  В каждом методе в интерфейсе, замените строку `throw new NotImplementedException();` с этим:  
+5. В каждом методе в интерфейсе, замените строку `throw new NotImplementedException();` с этим:  
   
     ```csharp  
     return VSConstants.S_OK;  
     ```  
   
-6.  Добавьте в класс RDTExplorerWindow поле файла cookie.  
+6. Добавьте в класс RDTExplorerWindow поле файла cookie.  
   
     ```csharp  
     private uint rdtCookie;   
@@ -80,7 +80,7 @@ ms.locfileid: "58989045"
   
      Содержит файл cookie, который возвращается методом <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> метод.  
   
-7.  Переопределите метод Initialize() RDTExplorerWindow для регистрации событий RDT. Службы всегда должна появиться в метод Initialize() ToolWindowPane, а не в конструкторе.  
+7. Переопределите метод Initialize() RDTExplorerWindow для регистрации событий RDT. Службы всегда должна появиться в метод Initialize() ToolWindowPane, а не в конструкторе.  
   
     ```csharp  
     protected override void Initialize()  
@@ -93,7 +93,7 @@ ms.locfileid: "58989045"
   
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Служба вызывается для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Метод подключается событий RDT для объекта, реализующего <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, в этом случае объект RDTExplorer.  
   
-8.  Обновите метод Dispose() RDTExplorerWindow.  
+8. Обновите метод Dispose() RDTExplorerWindow.  
   
     ```csharp  
     protected override void Dispose(bool disposing)  

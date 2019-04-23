@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099056"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
 
@@ -32,9 +32,9 @@ ms.locfileid: "55932278"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
 
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. В установщике Visual Studio, SQL Server Express LocalDB можно установить как часть **разработка классических приложений .NET** рабочей нагрузки, или в качестве отдельного компонента.
+1. Если у вас нет SQL Server Express LocalDB, установите его из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. В установщике Visual Studio, SQL Server Express LocalDB можно установить как часть **разработка классических приложений .NET** рабочей нагрузки, или в качестве отдельного компонента.
 
-2.  Установка образца базы данных "Борей", выполнив следующие действия:
+2. Установка образца базы данных "Борей", выполнив следующие действия:
 
     1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранение и обработка данных** рабочей нагрузки в установщике Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на локальном экземпляре LocalDB и выберите **новый запрос**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "55932278"
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -64,27 +64,27 @@ ms.locfileid: "55932278"
 
 Этот шаг использует **мастер настройки источника данных** для создания источника данных на основе `Customers` и `Orders` таблиц в базе данных Northwind.
 
-1.  Чтобы открыть **источников данных** окна на **данных** меню, выберите **Показать источники данных**.
+1. Чтобы открыть **источников данных** окна на **данных** меню, выберите **Показать источники данных**.
 
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
 
-3.  На **Выбор типа источника данных** выберите **базы данных**, а затем выберите **Далее**.
+3. На **Выбор типа источника данных** выберите **базы данных**, а затем выберите **Далее**.
 
-4.  На **Выбор подключения базы данных** экрана выполните одно из следующих:
+4. На **Выбор подключения базы данных** экрана выполните одно из следующих:
 
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
+    - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         - или -
+         -или-
 
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение** и создайте подключение к базе данных "Борей".
+    - Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение** и создайте подключение к базе данных "Борей".
 
-5.  Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.
+5. Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.
 
-6.  На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.
+6. На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.
 
-7.  На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.
+7. На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.
 
-8.  Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.
+8. Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.
 
      Объект **NorthwindDataSet** добавляется в проект, и таблицы `Customers` и `Orders` отображаются в окне **Источники данных**.
 
@@ -108,9 +108,9 @@ ms.locfileid: "55932278"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Порядок добавления ссылки на DLL-файл System.Transactions
 
-1.  На **проекта** меню, выберите **добавить ссылку**.
+1. На **проекта** меню, выберите **добавить ссылку**.
 
-2.  Выберите **System.Transactions** (на **.NET** вкладку), а затем выберите **ОК**.
+2. Выберите **System.Transactions** (на **.NET** вкладку), а затем выберите **ОК**.
 
      Ссылка на **System.Transactions** добавляется в проект.
 
@@ -120,47 +120,47 @@ ms.locfileid: "55932278"
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Изменение автоматически сформированного кода сохранения
 
-1.  Выберите **Сохранить** кнопку **CustomersBindingNavigator** (кнопка со значком гибкого диска).
+1. Выберите **Сохранить** кнопку **CustomersBindingNavigator** (кнопка со значком гибкого диска).
 
-2.  Замените метод `CustomersBindingNavigatorSaveItem_Click` следующим кодом:
+2. Замените метод `CustomersBindingNavigatorSaveItem_Click` следующим кодом:
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
 
 При согласовании изменений связанных данных применяется следующий порядок.
 
--   Удалите дочерние записи. (В этом случае удалите записи из `Orders` таблицы.)
+- Удалите дочерние записи. (В этом случае удалите записи из `Orders` таблицы.)
 
--   Удалите родительские записи. (В этом случае удалите записи из `Customers` таблицы.)
+- Удалите родительские записи. (В этом случае удалите записи из `Customers` таблицы.)
 
--   Вставьте родительские записи. (В данном случае вставьте записи в `Customers` таблицы.)
+- Вставьте родительские записи. (В данном случае вставьте записи в `Customers` таблицы.)
 
--   Вставьте дочерние записи. (В данном случае вставьте записи в `Orders` таблицы.)
+- Вставьте дочерние записи. (В данном случае вставьте записи в `Orders` таблицы.)
 
 ### <a name="to-delete-existing-orders"></a>Удаление существующих заказов
 
--   Добавьте следующий метод `DeleteOrders` в **Form1**:
+- Добавьте следующий метод `DeleteOrders` в **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Удаление существующих клиентов
 
--   Добавьте следующий метод `DeleteCustomers` в **Form1**:
+- Добавьте следующий метод `DeleteCustomers` в **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Добавление новых клиентов
 
--   Добавьте следующий метод `AddNewCustomers` в **Form1**:
+- Добавьте следующий метод `AddNewCustomers` в **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Добавление новых заказов
 
--   Добавьте следующий метод `AddNewOrders` в **Form1**:
+- Добавьте следующий метод `AddNewOrders` в **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

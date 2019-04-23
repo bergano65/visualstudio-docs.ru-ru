@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106362"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Практическое руководство. Отображение и скрытие групп регистров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58980258"
   
 ### <a name="to-display-or-hide-register-groups"></a>Чтобы показать или скрыть группы регистров  
   
-1.  Щелкните правой кнопкой мыши окно **Регистры**.  
+1. Щелкните правой кнопкой мыши окно **Регистры**.  
   
-2.  Выберите в контекстном меню группы регистров, которые нужно показать или скрыть.  
+2. Выберите в контекстном меню группы регистров, которые нужно показать или скрыть.  
   
      Группы регистров, не поддерживаемые оборудованием, на котором выполняется отладка, недоступны в контекстном меню, поэтому они не могут быть выбраны.  
   

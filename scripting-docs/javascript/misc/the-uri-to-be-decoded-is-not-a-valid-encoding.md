@@ -14,12 +14,12 @@ ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108429"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Декодируемый URI закодирован неправильно
 Предпринята попытка декодировать неправильно сформированное универсальный код (ресурса URI). Коды URI имеют специальный синтаксис; Большинство неалфавитных символов должны быть закодированы, прежде чем они могут использоваться в URI. Можно использовать `encodeURI` и `encodeURIComponent` методы для создания URI из обычной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строка.  
@@ -34,7 +34,7 @@ ms.locfileid: "56844299"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что вы пытаетесь расшифровать только допустимые URI. Не удается декодировать обычный [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строк, они могут содержать недопустимые символы.  
+- Убедитесь, что вы пытаетесь расшифровать только допустимые URI. Не удается декодировать обычный [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строк, они могут содержать недопустимые символы.  
   
 ## <a name="see-also"></a>См. также  
  [Функция decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   

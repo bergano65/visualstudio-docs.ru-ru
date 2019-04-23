@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096989"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 Изменение данных в таблицах данных, примерно так же, что изменения данных в таблице в любой базе данных. Процесс может включать Вставка, обновление и удаление записей в таблице. В форме привязкой к данным можно указать, какие поля являются изменяемых пользователем. В этом случае инфраструктура привязки данных обрабатывает все отслеживания изменений, чтобы изменения могли быть отправлены в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным способом внесения изменений в данных, необходимо использовать объекты и методы, выполняющие отслеживание изменений для вас.
@@ -53,7 +53,7 @@ ms.locfileid: "55928677"
 
 #### <a name="to-delete-records-from-a-data-table"></a>Для удаления записей из таблицы данных
 
--   Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.
+- Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.
 
      Этот метод не удаляет записи физически. Вместо этого он помечает записи для удаления.
 
@@ -70,15 +70,15 @@ ms.locfileid: "55928677"
 
 Изменения отслеживаемых двумя способами в каждой строке данных.
 
--   Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, или <xref:System.Data.DataRowState.Unchanged>).
+- Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, или <xref:System.Data.DataRowState.Unchanged>).
 
--   Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен.
+- Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен.
 
 <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки
 
--   Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.
+- Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.
 
 Приведенный ниже показано, как проверить значение, возвращаемое <xref:System.Data.DataSet.HasChanges%2A> метод для выявления измененных строк в наборе данных с именем `NorthwindDataset1`:
 
@@ -90,7 +90,7 @@ ms.locfileid: "55928677"
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Чтобы определить тип изменений были внесены в строку
 
--   Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.
+- Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.
 
 В следующем примере показано, как проверить набор данных с именем `NorthwindDataset1` для определения того, если к нему были добавлены все новые строки:
 
@@ -100,9 +100,9 @@ ms.locfileid: "55928677"
 ## <a name="to-locate-rows-that-have-errors"></a>Чтобы найти строки, содержащие ошибки
 При работе с отдельных столбцов и строк данных, могут возникнуть ошибки. Вы можете проверить `HasErrors` свойства, чтобы определить наличие ошибок <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, или <xref:System.Data.DataRow>.
 
-1.  Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.
+1. Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.
 
-2.  Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.
+2. Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

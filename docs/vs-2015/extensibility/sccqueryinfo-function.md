@@ -12,12 +12,12 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23b0d9d77eae2052f2b9da3c236e231cc17a7e65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108442"
 ---
 # <a name="sccqueryinfo-function"></a>Функция SccQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ SCCRTN SccQueryInfo(
   
  При использовании этой функции для извлечения файлов, обратите внимание на следующие `MSSCCI` состояние требований:  
   
--   `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.  
+- `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.  
   
--   `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.  
+- `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.  
   
--   `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.  
+- `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.  
   
--   Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
+- Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   

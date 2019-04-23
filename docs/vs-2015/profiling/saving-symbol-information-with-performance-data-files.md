@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098897"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ ms.locfileid: "54780893"
   
 - Убедитесь в том, что задан путь к кэшу символов Windows. Чтобы задать путь к кэшу символов, выполните одно из указанных ниже действий.  
   
-  -   Установите в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в качестве значения параметра "Отладчик->Символы" правильный путь.  
+  - Установите в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в качестве значения параметра "Отладчик->Символы" правильный путь.  
   
-  -   Добавьте параметр -symbolpath программы командной строки VSPerfReport, чтобы включить символьную информацию.  
+  - Добавьте параметр -symbolpath программы командной строки VSPerfReport, чтобы включить символьную информацию.  
   
 - Если символы не отображаются в [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], убедитесь в том, что сервер символов правильно настроен для сервера ASP.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "54780893"
   
  VsPerfReport -packsymbols -summary:all имя_файла.vsp  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

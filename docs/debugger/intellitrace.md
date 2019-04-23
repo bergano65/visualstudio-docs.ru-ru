@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098653"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace для Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 > [!NOTE]
 > Если вы хотите отладки процесса, который уже выполняется, вы можете собирать только события IntelliTrace (нет сведений о вызовах). Можно присоединить к процессу на локальном компьютере только 32-разрядная или 64-разрядной. События, произошедшие до присоединения к процессу не собираются.
 
-##  <a name="IntelliTraceVSTraditional"></a> Зачем выполнять отладку с помощью IntelliTrace?
+## <a name="IntelliTraceVSTraditional"></a> Зачем выполнять отладку с помощью IntelliTrace?
 
 Традиционная отладка или отладка *в реальном времени* отображает только текущее состояние приложения с ограниченными данными о прошлых событиях. Необходимо либо сделать вывод об этих событиях на основании текущего состояния приложения, либо создать заново эти события, повторно запустив приложение.
 
@@ -97,7 +97,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
      Этот метод полезен при диагностике проблем с приложениями в развертывании. См. в разделе [использовать автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Какие данные собирает IntelliTrace?
+## <a name="WhatData"></a> Какие данные собирает IntelliTrace?
 
 **Сбор сведений о событиях**
 

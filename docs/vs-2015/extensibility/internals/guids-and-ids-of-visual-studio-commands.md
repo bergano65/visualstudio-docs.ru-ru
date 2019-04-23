@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107753"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы команд Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "58993889"
 ### <a name="special-cases"></a>Особые случаи
  В следующих случаях текст меню или текст подсказки может не совпадать в определение команды.
 
--   Пункты меню, которые включают это подчеркнутый символ, такие как **печати** на **файл** меню, в котором подчеркивается P.
+- Пункты меню, которые включают это подчеркнутый символ, такие как **печати** на **файл** меню, в котором подчеркивается P.
 
      Символы, которым предшествует символ «&» в именах элементов меню отображаются как подчеркнутый. Тем не менее, vsct-файлы создаются на языке XML, который использует символ «&» для указания специальных символов и требует, что знак амперсанда, который должен отображаться необходимо уточнять как&amp;". Таким образом, в vsct-файл **печати** команда появляется как "&amp;Печать".
 
--   Команды, имеющие динамический текст, такие как **Сохранить** *текущее имя файла*и динамически созданные элементы меню, например элементы на **последние файлы** списка.
+- Команды, имеющие динамический текст, такие как **Сохранить** *текущее имя файла*и динамически созданные элементы меню, например элементы на **последние файлы** списка.
 
      Нет надежного способа для поиска на динамический текст. Вместо этого найдите группу, на котором размещена нужную команду по журналу [идентификаторы GUID и идентификаторы из меню в Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) или [идентификаторы GUID и идентификаторы из Visual Studio панелей инструментов](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)и выполните поиск по Идентификатору этой группы. Если определение команды не ту группу, что его [родительского элемента](../../extensibility/parent-element.md), SharedCmdPlace.vsct и ShellCmdPlace.vsct (или VsDbgCmdPlace.vsct для команд отладчика) поиск `<CommandPlacement>` элемент, который задает родительский команда. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct ShellCmdPlace.vsct, находятся в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ папки.
 

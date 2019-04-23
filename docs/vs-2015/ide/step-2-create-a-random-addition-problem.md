@@ -9,30 +9,30 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099504"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Шаг 2. Создание задачи на сложение случайных чисел
+# <a name="step-2-create-a-random-addition-problem"></a>Шаг 2. Создание задачи на сложение случайных чисел
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Во второй части этого урока вам предстоит реализовать логику головоломки, добавив арифметические задачи на основе случайных чисел. Также необходимо будет создать метод с именем `StartTheQuiz()`, который проставляет числа для задач и запускает таймер обратного отсчета. Далее в этом уроке вы добавите задачи на вычитание, умножение и деление.  
   
 > [!NOTE]
->  Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор учебника см. в статье [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).  
+>  Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание математической викторины](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Создание задачи на сложение случайных чисел  
   
-1.  В конструкторе форм выберите форму (Form1).  
+1. В конструкторе форм выберите форму (Form1).  
   
-2.  В строке меню выберите **Вид**, **Код**.  
+2. В строке меню выберите **Вид**, **Код**.  
   
      Откроется файл Form1.cs или Form1.vb (в зависимости от того, на каком языке вы программируете), позволяя вам увидеть код, стоящий за формой.  
   
-3.  Создайте объект `Random`, добавив оператор `new` в начале кода следующим образом.  
+3. Создайте объект `Random`, добавив оператор `new` в начале кода следующим образом.  
   
      [!code-csharp[VbExpressTutorial3Step2#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial3Step2#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#1)]  
@@ -43,7 +43,7 @@ ms.locfileid: "54804660"
   
      Вскоре вам предстоит создать метод для проверки ответов, поэтому в головоломке необходимо предусмотреть переменные для хранения случайных чисел, генерируемых для каждой задачи. См. статьи о [переменных](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) или [типах](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Для правильного использования переменных их необходимо объявить, т. е. указать их имена и типы данных.  
   
-4.  Добавьте в форму две целочисленные переменные и назовите их **addend1** и **addend2**.  
+4. Добавьте в форму две целочисленные переменные и назовите их **addend1** и **addend2**.  
   
     > [!NOTE]
     >  Целочисленная переменная в C# называется int, а в Visual Basic — Integer. В переменных этого типа можно хранить положительные и отрицательные числа в диапазоне от -2147483648 до 2147483647, причем это могут быть только целые числа, без десятичных знаков.  
@@ -53,7 +53,7 @@ ms.locfileid: "54804660"
      [!code-csharp[VbExpressTutorial3Step2#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial3Step2#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#2)]  
   
-5.  Добавьте метод с именем `StartTheQuiz()`, который использует метод `Random` объекта `Next()` для отображения случайных чисел в метках. В конечном итоге метод `StartTheQuiz()` подставит числа для всех задач и затем запустит таймер, поэтому добавьте комментарий. Функция должна выглядеть следующим образом.  
+5. Добавьте метод с именем `StartTheQuiz()`, который использует метод `Random` объекта `Next()` для отображения случайных чисел в метках. В конечном итоге метод `StartTheQuiz()` подставит числа для всех задач и затем запустит таймер, поэтому добавьте комментарий. Функция должна выглядеть следующим образом.  
   
      [!code-csharp[VbExpressTutorial3Step2#3](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#3)]
      [!code-vb[VbExpressTutorial3Step2#3](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#3)]  
@@ -75,18 +75,18 @@ ms.locfileid: "54804660"
   
      Операторы задают свойства **Text** двух меток — **plusLeftLabel** и **plusRightLabel** — так, чтобы они отображали два случайных числа. Для преобразования чисел в текст необходимо использовать метод `ToString()` целого числа. (В программировании под "строкой" понимается текст. Элементы управления Label могут отображать только текст, но не числа.  
   
-6.  В окне разработки либо двойным щелчком нажмите кнопку **Запуск**, либо выберите ее и нажмите клавишу ВВОД.  
+6. В окне разработки либо двойным щелчком нажмите кнопку **Запуск**, либо выберите ее и нажмите клавишу ВВОД.  
   
      Когда игрок нажимает эту кнопку, головоломка должна запуститься; вы только что добавили обработчик событий Click для реализации этого поведения.  
   
-7.  Добавьте следующие два оператора.  
+7. Добавьте следующие два оператора.  
   
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]  
   
      Первый оператор вызывает новый метод `StartTheQuiz()`. Второй оператор устанавливает свойству **Enabled** элемента управления **startButton** значение **False**, чтобы игрок не мог нажать кнопку в процессе работы головоломки.  
   
-8.  Сохраните код, запустите его и нажмите кнопку **Запуск**.  
+8. Сохраните код, запустите его и нажмите кнопку **Запуск**.  
   
      Появляется задача на сложение случайных чисел, как показано на рисунке ниже.  
   
@@ -97,6 +97,6 @@ ms.locfileid: "54804660"
   
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   Следующий шаг руководства см. в разделе [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md) (Шаг 3. Добавление таймера с обратным отсчетом).  
+- Следующий раздел руководства: [Шаг 3. Добавление таймера с обратным отсчетом](../ide/step-3-add-a-countdown-timer.md).  
   
--   Предыдущий шаг руководства см. в разделе [Step 1: Create a Project and Add Labels to Your Form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md) (Шаг 1. Создание проекта и добавление в форму элементов управления Label).
+- Предыдущий раздел руководства: [Шаг 1. Создание проекта и добавление меток в форму](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
