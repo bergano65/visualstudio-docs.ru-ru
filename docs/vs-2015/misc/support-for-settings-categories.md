@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054486"
 ---
 # <a name="support-for-settings-categories"></a>Поддержка категорий параметров
 Категория параметров состоит из группы параметров, предназначенных для настройки интегрированной среды разработки (IDE). Например, параметры позволяют управлять макетом окон [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и содержимым меню. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ ms.locfileid: "58980890"
   
  Платформа Managed Package Framework (MPF) поддерживает создание категорий параметров с минимальным объемом дополнительного кода.  
   
--   Для получения пакета VSPackage, используемого в качестве контейнера для категории, можно создать подкласс класса <xref:Microsoft.VisualStudio.Shell.Package>.  
+- Для получения пакета VSPackage, используемого в качестве контейнера для категории, можно создать подкласс класса <xref:Microsoft.VisualStudio.Shell.Package>.  
   
--   Вы создаете саму категорию, сделав ее производной от класса <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+- Вы создаете саму категорию, сделав ее производной от класса <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
--   Для соединения этих двух компонентов используется <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Для соединения этих двух компонентов используется <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Поддержка категорий параметров  
  Класс <xref:Microsoft.VisualStudio.Shell.Package> обеспечивает поддержку для создания категорий. Класс <xref:Microsoft.VisualStudio.Shell.DialogPage> реализует категорию. Реализация по умолчанию <xref:Microsoft.VisualStudio.Shell.DialogPage> предлагает пользователю свои общие свойства в виде категории. Для получения дополнительной информации см. [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

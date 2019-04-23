@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061428"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243. Синтаксический разбор строковых литералов должен осуществляться правильно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "58989737"
 
  Запускается следующее правило:
 
--   Параметры, которые содержат «version» и не может быть приведено к System.Version.
+- Параметры, которые содержат «version» и не может быть приведено к System.Version.
 
--   Параметры, которые содержат «guid» и не может быть приведено к System.Guid.
+- Параметры, которые содержат «guid» и не может быть приведено к System.Guid.
 
--   Параметры, которые содержат «uri», «urn» или «url» и не поддается на System.Uri.
+- Параметры, которые содержат «uri», «urn» или «url» и не поддается на System.Uri.
 
 ## <a name="see-also"></a>См. также
  [CA1054: Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

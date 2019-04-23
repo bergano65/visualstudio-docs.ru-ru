@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документы Майкрософт
+title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9916a46089e1d3381f1bc1f41dd5b7c0178c964
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054005"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Практическое руководство. Приостановка и возобновление сбора данных о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "54790889"
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Чтобы приостановить, возобновить или остановить профилирование  
   
--   На странице сеанса профилирования:  
+- На странице сеанса профилирования:  
   
-    -   Выберите **Приостановить сбор** для приостановки сбора данных.  
+    - Выберите **Приостановить сбор** для приостановки сбора данных.  
   
-    -   Выберите **Возобновить сбор**, чтобы перезапустить сбор данных после того, как он был приостановлен.  
+    - Выберите **Возобновить сбор**, чтобы перезапустить сбор данных после того, как он был приостановлен.  
   
-    -   Выберите **Остановить профилирование** для завершения сеанса профилирования и создания отчетов.  
+    - Выберите **Остановить профилирование** для завершения сеанса профилирования и создания отчетов.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
- [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)

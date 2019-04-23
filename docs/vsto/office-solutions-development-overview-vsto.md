@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061961"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Общие сведения о разработке решений Office (VSTO)
   Благодаря применению Microsoft Office в качестве внешнего интерфейса для решений, можно эффективно использовать привычные пользовательские интерфейсы и инструменты Microsoft Office, например, функции обработки текста в Word, функции анализа данных в Excel и функции управления электронной почтой в Outlook. В Visual Studio можно разрабатывать решения для настройки приложений Office и добавления конкретных функций, необходимых для бизнес-процессов. Например, можно включить Word в генератор контрактов, собирающий контракты на основе уже существующих частей, которые можно сделать редактируемыми или нередактируемыми. С помощью Excel можно создать лист автоматической разработки бюджета, настраиваемый для различных проектов. Пользователи также могут применять решения Office в автономном режиме, что делает сложные решения более удобными, чем решения, построенные на основе веб-архитектуры.
@@ -43,11 +43,11 @@ ms.locfileid: "56628784"
 
  Дополнительные сведения о настройках см. в следующих статьях:
 
--   [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
+- [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>Надстройки VSTO
  Надстройки VSTO состоят из сборки, которая связана с приложением Microsoft Office. Как правило, надстройка VSTO начинает работать при запуске связанного приложения, хотя пользователи также могут загружать надстройки VSTO после запуска приложения. Создаваемые функции в надстройках VSTO доступны самому приложению, независимо от того, какие документы открыты.
@@ -56,9 +56,9 @@ ms.locfileid: "56628784"
 
  Дополнительные сведения о надстройках VSTO см. в следующих статьях.
 
--   [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Автоматизация приложений Office с помощью основных сборок взаимодействия
  Вы можете программным образом включить функции приложения Office в решение путем написания кода, который обращается к объектной модели приложения. Объектные модели — это схема расположения классов, которые предоставляют функциональные возможности с помощью различных свойств и методов. Объектные модели для приложений Office отличаются друг от друга.
@@ -69,9 +69,9 @@ ms.locfileid: "56628784"
 
  Дополнительные сведения об использовании основных сборок взаимодействия в решениях VSTO для Office см. в следующих статьях:
 
--   [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
+- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
 
--   [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Запуска решений VSTO для Microsoft Office на компьютерах конечных пользователей
  При создании решения VSTO для Office следует учитывать, как требования к развертыванию могут повлиять на выбор метода развертывания.

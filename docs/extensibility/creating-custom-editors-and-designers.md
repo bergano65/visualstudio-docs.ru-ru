@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057437"
 ---
 # <a name="create-custom-editors-and-designers"></a>Создание специализированных редакторов и конструкторов
+
 В среде разработки Visual Studio (IDE) можно размещать различные виды редактора:
 
 - Основной редактор Visual Studio
@@ -29,10 +30,11 @@ ms.locfileid: "56721073"
 
 - Конструкторы
 
-  Приведенные ниже сведения помогут вам выбрать тип редактора, что нужно.
+Приведенные ниже сведения помогут вам выбрать тип редактора, что нужно.
 
 ## <a name="types-of-editor"></a>Типы редактора
- Сведения о базовом редакторе Visual Studio, см. в разделе [расширить редактор и языковой службы](../extensibility/extending-the-editor-and-language-services.md).
+
+Сведения о базовом редакторе Visual Studio, см. в разделе [расширить редактор и языковой службы](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Пользовательские редакторы
  Специализированный редактор — это приложения, разработанные для работы в ситуациях. Например можно создать редактор, функция которого является для чтения и записи данных в определенных репозиториях, например Microsoft Exchange server. Выберите пользовательский редактор, если хотите, чтобы редактор, который работает с типом проекта, только или если требуется, чтобы редактор, имеющей только несколько конкретных команд. Обратите внимание, что пользователи не смогут использовать пользовательский редактор для редактирования стандартных [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проектов.
@@ -70,24 +72,36 @@ ms.locfileid: "56721073"
    Если может быть внедрен, следует создать главное окно для внешнего редактора и затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и набор <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> значение перечисления для `DP_External`. Если редактор не может быть внедрен, интегрированной среды разработки автоматически создаст в отдельном окне для него.
 
 ## <a name="in-this-section"></a>В этом разделе
-- [Пошаговое руководство: Создать пользовательский редактор](../extensibility/walkthrough-creating-a-custom-editor.md) объясняется, как создать пользовательский редактор.
 
-- [Пошаговое руководство: Добавление компонентов в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) объясняется, как добавить компоненты в специализированный редактор.
+[Пошаговое руководство: Создание пользовательского редактора](../extensibility/walkthrough-creating-a-custom-editor.md)\
+В этой статье описывается создание пользовательского редактора.
 
-- [Инициализация и метаданные конфигурации для конструктора](../extensibility/designer-initialization-and-metadata-configuration.md) объясняется, как инициализировать конструктор.
+[Пошаговое руководство: Добавление компонентов в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+В этой статье описывается добавление компонентов в специализированный редактор.
 
-- [Предоставить возможность отмены изменений для конструкторов](../extensibility/supplying-undo-support-to-designers.md) объясняется, как для обеспечения поддержки отмены для конструкторов.
+[Инициализация и метаданные конфигурации для конструктора](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Описание способов инициализации конструктора.
 
-- [Цветовая маркировка синтаксиса в специализированных редакторах](../extensibility/syntax-coloring-in-custom-editors.md) объясняются различия между раскраску синтаксических конструкций в редакторе и в специализированных редакторах.
+[Поддержка функции отмены поставок для конструкторов](../extensibility/supplying-undo-support-to-designers.md)\
+Описание поддержки отмены для конструкторов.
 
-- [Представление данных и документа в специализированных редакторах документа](../extensibility/document-data-and-document-view-in-custom-editors.md) приведены сведения о реализации данных документа и представления документа в специализированных редакторах.
+[Цветовая маркировка синтаксиса в специализированных редакторах](../extensibility/syntax-coloring-in-custom-editors.md)\
+Объясняет разницу между раскраску синтаксических конструкций в редакторе и в специализированных редакторах.
+
+[Данные документа и представление документа в специализированных редакторах](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Объясняется, как реализовать данные документа и представления документа в специализированных редакторах.
 
 ## <a name="related-sections"></a>Связанные разделы
-- [Устаревшие интерфейсы в редакторе](../extensibility/legacy-interfaces-in-the-editor.md) объясняется, как получить доступ к базовым редактором с старый API.
 
-- [Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md) объясняется, как реализовать службу языка.
+[Устаревшие интерфейсы в редакторе](../extensibility/legacy-interfaces-in-the-editor.md)\
+Объясняется, как получить доступ к базовым редактором с старый API.
 
-- [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) объясняется, как создать элементы пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)\
+Объясняется, как реализовать службу языка.
+
+[Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Объясняется, как создать элементы пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>См. также
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a060444ec5ec8085b56810862e87e523c56fddb6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059036"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Расширение функциональных возможностей адаптера таблицы TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "59656067"
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Для создания разделяемого класса для адаптера таблицы  
   
-1.  Добавить новый класс в проект, выбрав **проекта** меню и выбрав**Добавление класса**.  
+1. Добавить новый класс в проект, выбрав **проекта** меню и выбрав**Добавление класса**.  
   
-2.  Присвойте классу имя `CustomersTableAdapterExtended`.  
+2. Присвойте классу имя `CustomersTableAdapterExtended`.  
   
-3.  Нажмите **Добавить**.  
+3. Нажмите **Добавить**.  
   
-4.  Замените код с правильно заданным пространством имен и именем разделяемого класса для вашего проекта следующим образом:  
+4. Замените код с правильно заданным пространством имен и именем разделяемого класса для вашего проекта следующим образом:  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

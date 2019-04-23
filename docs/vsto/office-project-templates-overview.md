@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054577"
 ---
 # <a name="office-project-templates-overview"></a>Общие сведения о шаблонах проектов Office
   Средства разработки для Microsoft Office в Visual Studio включают в себя шаблоны проектов, предназначенные для создания указанных ниже типов решений Office.
@@ -53,7 +53,7 @@ ms.locfileid: "56614692"
 > [!NOTE]
 > Средства разработки для Office входят в некоторые выпуски Visual Studio. Дополнительные сведения см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Настройки уровня документа
+## <a name="DocLevel"></a> Настройки уровня документа
  В узле **Office** диалогового окна **Создать проект** имеются указанные ниже шаблоны проектов, позволяющие приступить к работе над созданием настроек на уровне документа для приложений Word и Excel.
 
 - **Документ VSTO для Word 2013 и 2016**
@@ -81,17 +81,17 @@ ms.locfileid: "56614692"
 
  Сведения о том, как приступить к работе над проектами этих типов, см. в указанных ниже разделах.
 
--   [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
 
--   [Решения Word](../vsto/word-solutions.md)
+- [Решения Word](../vsto/word-solutions.md)
 
--   [Решения Excel](../vsto/excel-solutions.md)
+- [Решения Excel](../vsto/excel-solutions.md)
 
--   [Пошаговое руководство: Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Пошаговое руководство: Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Надстройки VSTO
+## <a name="AppLevel"></a> Надстройки VSTO
  В узле **Office/SharePoint** в диалоговом окне **Создание проекта** имеются указанные ниже шаблоны проектов, позволяющие приступить к работе по созданию надстроек VSTO.
 
 - **Надстройка VSTO для Excel 2013 и 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614692"
 |Пользователи могут открывать и редактировать документ, если только для него не установлен атрибут "только для чтения". Любые сохраненные изменения сохраняются в исходном документе.|Пользователи могут открывать шаблон, чтобы создать локальную копию в виде нового документа. Они не могут редактировать исходный документ, если у них нет специальных разрешений.|
 |При открытии документа возникает событие <xref:Microsoft.Office.Tools.Word.Document.Open> .|При открытии шаблона возникает событие <xref:Microsoft.Office.Tools.Word.Document.New> .|
 
-##  <a name="Limitations"></a> Ограничения глобальных шаблонов и надстроек Excel (XLA-файлов)
+## <a name="Limitations"></a> Ограничения глобальных шаблонов и надстроек Excel (XLA-файлов)
  Документы, книги и шаблоны могут работать неправильно в качестве глобальных шаблонов или надстроек VSTO для Excel (XLA-файлов).
 
 ## <a name="word-templates"></a>Шаблоны Word

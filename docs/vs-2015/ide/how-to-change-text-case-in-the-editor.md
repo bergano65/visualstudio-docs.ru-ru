@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Изменение регистра текста в редакторе | Документация Майкрософт
+title: Практическое руководство. Изменение регистра текста в редакторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060323"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. Изменение регистра текста в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54799747"
   
 #### <a name="to-switch-text-to-upper-case"></a>Переключение текста в верхний регистр  
   
-1.  Выделите текст, который требуется преобразовать.  
+1. Выделите текст, который требуется преобразовать.  
   
-2.  В меню **Правка** выберите **Дополнительно**.  
+2. В меню **Правка** выберите **Дополнительно**.  
   
-3.  Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.  
+3. Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.  
   
      Или...  
   
@@ -44,7 +44,7 @@ ms.locfileid: "54799747"
     > [!TIP]
     >  Чтобы вернуться к форматированию, предшествовавшему изменению, выберите **Отменить** в меню **Правка**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка редактора](../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)

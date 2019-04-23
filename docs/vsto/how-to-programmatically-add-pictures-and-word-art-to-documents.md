@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e1d181c67628db52aa8e4f135109f1446a34816
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043798"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Практическое руководство. Программное добавление рисунков и объекта Word Art в документы
   Вы можете добавлять изображения и графические объекты в документы во время разработки или во время выполнения. WordArt позволяет добавлять декоративный текст в документы Microsoft Office Word. Эти специальные текстовые эффекты представляют собой графические объекты, которые можно настроить и вставить в документ.
@@ -33,13 +33,13 @@ ms.locfileid: "56617916"
 
 ### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>Добавление рисунка в документ Word во время разработки
 
-1.  Поместите курсор в место вставки изображения в документе.
+1. Поместите курсор в место вставки изображения в документе.
 
-2.  Нажмите кнопку **вставить** вкладке ленты.
+2. Нажмите кнопку **вставить** вкладке ленты.
 
-3.  В **иллюстрации** щелкните **рисунок**.
+3. В **иллюстрации** щелкните **рисунок**.
 
-4.  В **Вставка рисунка** диалоговом окне перейдите к рисунку, который требуется вставить и нажмите кнопку **вставить**.
+4. В **Вставка рисунка** диалоговом окне перейдите к рисунку, который требуется вставить и нажмите кнопку **вставить**.
 
      Рисунок добавляется в документ в текущем положении курсора.
 
@@ -48,7 +48,7 @@ ms.locfileid: "56617916"
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Добавление рисунка в позиции курсора
 
-1.  Вызовите метод <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> коллекции <xref:Microsoft.Office.Interop.Word.InlineShapes> и передайте имя файла.
+1. Вызовите метод <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> коллекции <xref:Microsoft.Office.Interop.Word.InlineShapes> и передайте имя файла.
 
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
@@ -58,13 +58,13 @@ ms.locfileid: "56617916"
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Добавление объекта WordArt в документ Word во время разработки
 
-1.  Поместите курсор в место вставки объекта WordArt в документе.
+1. Поместите курсор в место вставки объекта WordArt в документе.
 
-2.  Нажмите кнопку **вставить** вкладке ленты.
+2. Нажмите кнопку **вставить** вкладке ленты.
 
-3.  В **текст** щелкните **WordArt**, а затем выберите стиль WordArt.
+3. В **текст** щелкните **WordArt**, а затем выберите стиль WordArt.
 
-4.  Введите текст, который будет отображаться в документе, чтобы **изменение текста WordArt** диалоговое окно и нажмите кнопку **ОК**.
+4. Введите текст, который будет отображаться в документе, чтобы **изменение текста WordArt** диалоговое окно и нажмите кнопку **ОК**.
 
      Текст добавляется к документу с выбранным стилем WordArt.
 
@@ -73,31 +73,31 @@ ms.locfileid: "56617916"
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Добавление объекта WordArt в положении курсора в настройке уровня документа
 
-1.  Получите левую и верхнюю позицию текущего положения курсора.
+1. Получите левую и верхнюю позицию текущего положения курсора.
 
      [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
 
-2.  Вызовите метод <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> объекта <xref:Microsoft.Office.Interop.Word.Shapes> в документе.
+2. Вызовите метод <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> объекта <xref:Microsoft.Office.Interop.Word.Shapes> в документе.
 
      [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>Добавление объекта WordArt в положении курсора в надстройке VSTO
 
-1.  Получите левую и верхнюю позицию текущего положения курсора.
+1. Получите левую и верхнюю позицию текущего положения курсора.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
 
-2.  Вызовите метод <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> объекта <xref:Microsoft.Office.Interop.Word.Shapes> активного документа (или другого указанного документа).
+2. Вызовите метод <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> объекта <xref:Microsoft.Office.Interop.Word.Shapes> активного документа (или другого указанного документа).
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
--   Рисунок с именем *SamplePicture.jpg* должен существовать на диске C.
+- Рисунок с именем *SamplePicture.jpg* должен существовать на диске C.
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)

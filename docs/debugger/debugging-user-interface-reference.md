@@ -18,31 +18,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671c2bde9effcdbde74cdcde7b293dc7d19db316
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d459e1c6611fa1b20e05ba2d5bd24e23750109d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055188"
 ---
 # <a name="debugging-user-interface-reference"></a>Справочник по пользовательскому отладочному интерфейсу
 Во время выполнения отладки приложения могут отобразиться следующие диалоговые окна.
 
  С помощью модели расширения среды Visual Studio можно автоматизировать многие возможности отладчика. Дополнительные сведения см. в разделе "Пакет SDK для отладки Visual Studio".
 
--   [Диалоговое окно "Выбор точек останова"](../debugger/choose-breakpoints-dialog-box.md)
+- [Диалоговое окно "Выбор точек останова"](../debugger/choose-breakpoints-dialog-box.md)
 
--   [Страница "Исходные файлы отладки", вкладка "Общие свойства", диалоговое окно "Страницы свойств решения"](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Страница "Исходные файлы отладки", вкладка "Общие свойства", диалоговое окно "Страницы свойств решения"](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 
--   [Папка "Отладка", диалоговое окно "Параметры"](../debugger/debugging-options-dialog-box.md)
+- [Папка "Отладка", диалоговое окно "Параметры"](../debugger/debugging-options-dialog-box.md)
 
--   [Диалоговое окно "Изменить и продолжить"](../debugger/edit-and-continue-dialog-box.md)
+- [Диалоговое окно "Изменить и продолжить"](../debugger/edit-and-continue-dialog-box.md)
 
--   [Диалоговое окно "Остановить отладку"](../debugger/stop-debugging-in-progress-dialog-box.md)
+- [Диалоговое окно "Остановить отладку"](../debugger/stop-debugging-in-progress-dialog-box.md)
 
--   [Диалоговые окна ошибок и предупреждений отладки](../debugger/debugging-errors-and-warning-dialog-boxes.md)
+- [Диалоговые окна ошибок и предупреждений отладки](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Командное окно](../ide/reference/command-window.md)

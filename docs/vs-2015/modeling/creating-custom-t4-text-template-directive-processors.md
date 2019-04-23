@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058614"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58990663"
   
  Некоторые примеры процессоры пользовательской директивы может быть:  
   
--   Процессор директив, чтобы вернуть данные из базы данных, который принимает в качестве параметров имя пользователя и пароль.  
+- Процессор директив, чтобы вернуть данные из базы данных, который принимает в качестве параметров имя пользователя и пароль.  
   
--   Процессор директив, чтобы открыть и прочитать файл, который принимает имя файла в качестве параметра.  
+- Процессор директив, чтобы открыть и прочитать файл, который принимает имя файла в качестве параметра.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Обязательные части пользовательского процессора директив  
  Для создания пользовательского процессора директив, необходимо создать класс, наследующий <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> или <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

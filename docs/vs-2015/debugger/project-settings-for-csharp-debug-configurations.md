@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056683"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Параметры проекта для конфигураций отладки C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58979334"
 > [!WARNING]
 >  Этот раздел не распространяется на приложения для Магазина Windows. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Вкладки отладчика  
+## <a name="BKMK_Debug_tab"></a> Вкладки отладчика  
   
 |**Параметр**|**Описание**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "58979334"
 |**Разрешить отладку неуправляемого кода**|Разрешает отлаживать вызовы машинного (неуправляемого) кода Win32 из управляемого приложения.|  
 |**Разрешить отладку SQL Server**|Разрешает отладку объектов базы данных SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Вкладка "сборка"  
+## <a name="BKMK_Build_tab"></a> Вкладка "сборка"  
   
 |Параметр|Описание|  
 |-------------|-----------------|  

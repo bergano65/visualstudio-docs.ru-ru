@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055201"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Элемент AppliesTo (шаблоны Visual Studio)
 
@@ -50,7 +50,7 @@ ms.locfileid: "56335198"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Относит шаблон к определенной категории.|
 
@@ -60,19 +60,19 @@ ms.locfileid: "56335198"
 
 Синтаксис допустимого выражения определяется следующим образом:
 
--   Выражение возможности, такие как "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)».
+- Выражение возможности, такие как "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)».
 
--   "&#124;" — Оператор OR.
+- "&#124;" — Оператор OR.
 
--   Символы "&" и "+" являются операторами AND.
+- «&» И «+» символы являются операторами.
 
--   "!" — оператор NOT.
+- "!" — оператор NOT.
 
--   Скобки определяют порядок вычисления выражения.
+- Скобки определяют порядок вычисления выражения.
 
--   Значение NULL или пустое выражение считается совпадением.
+- Значение NULL или пустое выражение считается совпадением.
 
--   Возможности проекта могут содержать любой символ, кроме следующих зарезервированных символов: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Возможности проекта могут содержать любой символ, кроме следующих зарезервированных символов: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Пример
 

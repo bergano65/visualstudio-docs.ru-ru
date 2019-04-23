@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2fa3e57660b6ac68fdc792f3837a9766b497a78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053863"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Практическое руководство. Запуск анализа кода вручную для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,6 +25,6 @@ ms.locfileid: "58992313"
   
 ### <a name="to-run-code-analysis-manually"></a>Чтобы запустить анализ кода вручную  
   
-1.  В **обозревателе решений**, щелкните проект.  
+1. В **обозревателе решений**, щелкните проект.  
   
-2.  На **анализ** меню, щелкните **выполнить анализ кода в** *имя_проекта*.
+2. На **анализ** меню, щелкните **выполнить анализ кода в** *имя_проекта*.

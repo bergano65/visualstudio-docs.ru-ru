@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12391f16e2797941cf83177aa1c83ed0dd2c0045
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053422"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Практическое руководство. Программная Защита книг Excel
   Можно защитить книгу Microsoft Office Excel, чтобы пользователи не могут быть Добавление или удаление листов и также снять защиту с книги программными средствами. При необходимости можно указать пароль, указывают ли защиты (чтобы пользователи не могли перемещать листы) структуры и укажите, хотите ли вы защиты окон книги.
@@ -37,14 +37,14 @@ ms.locfileid: "56644605"
 
 ### <a name="to-protect-a-workbook"></a>Чтобы защитить книгу
 
-1.  Вызовите <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> метод книги и включите пароль. Чтобы использовать в следующем примере кода, запустите его `ThisWorkbook` класса, а не в классе листа.
+1. Вызовите <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> метод книги и включите пароль. Чтобы использовать в следующем примере кода, запустите его `ThisWorkbook` класса, а не в классе листа.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
      [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
 
 ### <a name="to-unprotect-a-workbook"></a>Чтобы снять защиту с книги
 
-1.  Вызовите <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> метод, передав пароль, если это необходимо. Чтобы использовать в следующем примере кода, запустите его `ThisWorkbook` класса, а не в классе листа.
+1. Вызовите <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> метод, передав пароль, если это необходимо. Чтобы использовать в следующем примере кода, запустите его `ThisWorkbook` класса, а не в классе листа.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
@@ -53,14 +53,14 @@ ms.locfileid: "56644605"
 
 ### <a name="to-protect-a-workbook"></a>Чтобы защитить книгу
 
-1.  Вызовите <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> метод книги и включите пароль. Данный пример кода использует активную книгу. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
+1. Вызовите <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> метод книги и включите пароль. Данный пример кода использует активную книгу. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
 
 ### <a name="to-unprotect-a-workbook"></a>Чтобы снять защиту с книги
 
-1.  Вызовите <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> метод активной книги, передав пароль, если это необходимо. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
+1. Вызовите <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> метод активной книги, передав пароль, если это необходимо. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]

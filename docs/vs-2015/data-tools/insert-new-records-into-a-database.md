@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043140"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59653766"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.INSERT-метод  
   
--   Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров.  
+- Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров.  
   
     > [!NOTE]
     >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  
@@ -77,7 +77,7 @@ ms.locfileid: "59653766"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Для вставки новых записей в базу данных с помощью командных объектов  
   
--   Создать новый командный объект и задайте его `Connection`, `CommandType`, и `CommandText` свойства.  
+- Создать новый командный объект и задайте его `Connection`, `CommandType`, и `CommandText` свойства.  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

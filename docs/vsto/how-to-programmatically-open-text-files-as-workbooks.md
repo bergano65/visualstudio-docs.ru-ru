@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060142"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Практическое руководство. Программное открытие текстовых файлов как книг Excel
   Текстовый файл можно открыть как книгу. Необходимо передать имя текстовый файл, который требуется открыть. Можно указать несколько необязательных параметров, например, номер строки для синтаксического анализа и формат столбцов данных в файле.
@@ -33,9 +33,9 @@ ms.locfileid: "56633919"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере требуются следующие компоненты:
 
--   Файл с разделителями-запятыми, с именем `Test.txt` , содержащий по крайней мере три строки текста.
+- Файл с разделителями-запятыми, с именем `Test.txt` , содержащий по крайней мере три строки текста.
 
--   Текстовый файл `Test.txt` сохраняются на диске C.
+- Текстовый файл `Test.txt` сохраняются на диске C.
 
 ## <a name="see-also"></a>См. также
 - [Работа с книгами](../vsto/working-with-workbooks.md)
