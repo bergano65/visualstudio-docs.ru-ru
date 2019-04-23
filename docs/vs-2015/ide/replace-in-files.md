@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082598"
 ---
 # <a name="replace-in-files"></a>Заменить в файлах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54779246"
   
 ### <a name="to-display-replace-in-files"></a>Отображение окна "Заменить в файлах"  
   
-1.  В меню **Правка** разверните узел **Поиск и замена**.  
+1. В меню **Правка** разверните узел **Поиск и замена**.  
   
-2.  Выберите **Заменить в файлах**.  
+2. Выберите **Заменить в файлах**.  
   
      Или...  
   
@@ -90,7 +90,7 @@ ms.locfileid: "54779246"
 > [!CAUTION]
 >  Команду **отката** можно использовать только для файлов, которые остаются открытыми для редактирования. Если этот параметр не выбран, файлы, которые не были открыты для редактирования, останутся закрытыми, и для этих файлов не будет доступна команда **Отменить**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Поиск и замена текста](../ide/finding-and-replacing-text.md)   
  [Поиск в файлах](../ide/find-in-files.md)   
  [Команды Visual Studio](../ide/reference/visual-studio-commands.md)

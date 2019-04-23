@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082006"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812. Избегайте неиспользуемых внутренних классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ ms.locfileid: "58980168"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только статические методы, добавьте один из следующих к типу, чтобы запретить компилятору выполнять выпуска конструктор открытого экземпляра по умолчанию:
 
--   Закрытый конструктор для типов, предназначенных [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] версий 1.0 и 1.1.
+- Закрытый конструктор для типов, предназначенных [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] версий 1.0 и 1.1.
 
--   `static` (`Shared` В Visual Basic) модификатор для типов, предназначенных [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- `static` (`Shared` В Visual Basic) модификатор для типов, предназначенных [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Его можно безопасно подавить предупреждение из этого правила. Мы рекомендуем отключить предупреждение в следующих ситуациях:

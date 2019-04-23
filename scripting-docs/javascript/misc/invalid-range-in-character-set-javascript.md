@@ -14,12 +14,12 @@ ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b1e404a9df368f639530d533b8cf4bf063f8ad6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079595"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Недопустимый диапазон в наборе символов (JavaScript)
 Предпринята попытка создать регулярное выражение с диапазоном набора недопустимый символ. Наборов символов должно находиться в диапазоне от одного символа, например, a – z или 0-9; Классы символов, таких как \w нельзя включить в набор символов. Первый символ в диапазоне, также должны следовать после второго знака в диапазоне. Пример:  
@@ -31,7 +31,7 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Используйте только одиночные символы для составления ваш набор символов регулярного выражения и убедитесь, что они находятся в правильном порядке.  
+- Используйте только одиночные символы для составления ваш набор символов регулярного выражения и убедитесь, что они находятся в правильном порядке.  
   
 ## <a name="see-also"></a>См. также  
  [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   

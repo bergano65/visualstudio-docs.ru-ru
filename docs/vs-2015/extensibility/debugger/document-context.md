@@ -10,23 +10,23 @@ ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96d5e3e34a6827e7871b053501c61e9c4c98ae26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3034c9ca02fca8e91eb1aa5e4d0eb5a2fe1f773f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080037"
 ---
 # <a name="document-context"></a>Контекст документа
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладки, **контекст документа**:  
   
--   Представляет позицию в исходном файле. Для языков, где исходный файл может отсутствовать контекст документа определяет позицию, в документе, обычно создается средой выполнения. Например обработчик скриптов может создать документ из скрипта. Дополнительные сведения см. в разделе [позиции документа](../../extensibility/debugger/document-position.md).  
+- Представляет позицию в исходном файле. Для языков, где исходный файл может отсутствовать контекст документа определяет позицию, в документе, обычно создается средой выполнения. Например обработчик скриптов может создать документ из скрипта. Дополнительные сведения см. в разделе [позиции документа](../../extensibility/debugger/document-position.md).  
   
--   Описание позиции в исходном документе, соответствующий контекст кода. Обработчик символов сопоставляется контекста документации, используя данные, созданные компилятором или интерпретатором контекст кода.  
+- Описание позиции в исходном документе, соответствующий контекст кода. Обработчик символов сопоставляется контекста документации, используя данные, созданные компилятором или интерпретатором контекст кода.  
   
--   Реализуется [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс.  
+- Реализуется [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [Контекст кода](../../extensibility/debugger/code-context.md)   

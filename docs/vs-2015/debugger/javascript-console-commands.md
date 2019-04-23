@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081428"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Просмотр объектов в окне консоли JavaScript  
  При использовании окна консоли JavaScript можно взаимодействовать с любым объектом, находящимся в области. Чтобы проверить в окне консоли объект вне области, используйте `console.log` , `console.dir`и прочие команды в коде. Кроме того, для взаимодействия в окне консоли с объектом, находящимся в области, можно установить в коде точку останова (**Точка останова** > **Insert Точка останова**).  
   
-##  <a name="ConsoleLog"></a> Форматирование вывода команды console.log  
+## <a name="ConsoleLog"></a> Форматирование вывода команды console.log  
  При передаче множественных аргументов команде `console.log`, консолью обрабатывает их как массив и объединяет вывод.  
   
 ```javascript  

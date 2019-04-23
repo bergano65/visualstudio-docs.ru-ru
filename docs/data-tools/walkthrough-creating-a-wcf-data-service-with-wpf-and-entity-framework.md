@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081389"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой службы [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и последующий доступ к ней из приложения Windows Forms.
@@ -90,11 +90,11 @@ ms.locfileid: "57223173"
 
 5. На странице **Выбор подключения к базе данных** выполните одно из следующих действий:
 
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
+    - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         - или -
+         -или-
 
-    -   Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+    - Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
 6. Если база данных требует пароль, нажмите кнопку **Да, включить конфиденциальные данные в строку подключения**, а затем нажмите кнопку **Далее**.
 
@@ -154,7 +154,7 @@ ms.locfileid: "57223173"
 
 1. В строке меню выберите файл, **добавить** > **новый проект**.
 
-2. В **новый проект** диалогового окна разверните узел **Visual Basic** или **Visual C#**  узел, выберите **Windows** узел и нажмите кнопку **Windows Forms Application**.
+2. В **новый проект** диалоговое окно последовательно раскройте элементы **Visual Basic** или **Visual C#** узел, выберите **Windows** узел, а затем выберите  **Windows Forms Application**.
 
 3. В текстовом поле **Имя** введите `NorthwindClient` и нажмите кнопку **ОК**.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082438"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "59664022"
   
 ### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.  
+2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.  
   
 ## <a name="build-customization-search-path"></a>Путь поиска настройки сборки  
  Задает список каталогов, содержащих файлы с расширением Rules, которые определяют правила сборки проектов.  

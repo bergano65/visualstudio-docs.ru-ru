@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080921"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Расширение других частей Visual Studio
 
@@ -29,9 +29,9 @@ ms.locfileid: "56683053"
 
 Узнайте, как добавить новые элементы управления и других элементов на панель элементов и использование функций элементов:
 
--   [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Создание элемента управления панели элементов Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Создание элемента управления панели элементов Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Расширение строки состояния
 
