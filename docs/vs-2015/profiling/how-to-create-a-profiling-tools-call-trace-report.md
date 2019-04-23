@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документы Майкрософт
+title: Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117828"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Практическое руководство. Создание отчета трассировки вызовов для средств профилирования
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Практическое руководство. Создание отчета трассировки вызовов профилирования средств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Отчет о трассировке вызовов* для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] содержит сведения о времени для каждой точки входа и выхода в функциях приложения, а также для каждого вызова других функций вашей функцией. Отчеты о трассировке вызовов доступны для данных профилирования, только если они были собраны с помощью метода инструментирования.  
@@ -29,9 +29,9 @@ ms.locfileid: "54774905"
   
 ### <a name="to-create-a-call-trace-report"></a>Создание отчета от трассировке вызовов  
   
-1.  Откройте окно **командной строки**.  
+1. Откройте окно **командной строки**.  
   
-2.  В командной строке введите следующую команду:  
+2. В командной строке введите следующую команду:  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
@@ -41,6 +41,6 @@ ms.locfileid: "54774905"
     |*VSPFile*|Файл данных профилирования (VSP или VSPS). Допускаются полные или частичные пути.|  
     |Xml|Создает отчет в формате XML.|  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Сбор трассировки событий для Windows (ETW) данных](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)

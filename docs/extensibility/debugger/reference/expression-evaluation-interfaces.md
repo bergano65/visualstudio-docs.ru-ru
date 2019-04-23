@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113135"
 ---
 # <a name="expression-evaluation-interfaces"></a>Интерфейсы вычисления выражений
 > [!IMPORTANT]
@@ -28,13 +28,13 @@ ms.locfileid: "56720059"
 
  Каждый интерфейс в таблице показан компонент, который можно реализовать из следующего списка:
 
--   Отладка ядра (DE)
+- Отладка ядра (DE)
 
--   Средство оценки выражений (EE)
+- Средство оценки выражений (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
-|Интерфейс|Реализуется|Описание:|
+|Интерфейс|Реализуется|Описание|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Представляет числовые псевдоним для переменной.|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Представляет числовые псевдоним для переменной и обеспечивает вычислитель выражений (EE), чтобы получить домен приложения для псевдонима.|

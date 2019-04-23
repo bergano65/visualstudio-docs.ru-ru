@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114241"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Приступить к программированию настроек на уровне документа для Excel
   Если вы начальном этапе создания настроек уровня документа для Microsoft Office Excel с помощью Visual Studio, вот что вам необходимо знать.
@@ -44,11 +44,11 @@ ms.locfileid: "56603798"
 
  Дополнительные сведения см. в следующих разделах:
 
--   [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
 
--   [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
+- [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Настройка пользовательского интерфейса Excel
  Большинство решений для Microsoft Office изменить пользовательский интерфейс (UI) приложения Office для какой-нибудь способ пользователям взаимодействовать с решением. Существует много способов, в которых пользовательского интерфейса Excel можно изменить с помощью настройки уровня документа. Например можно добавить элементы управления на ленту, или можно отобразить панель действий. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).

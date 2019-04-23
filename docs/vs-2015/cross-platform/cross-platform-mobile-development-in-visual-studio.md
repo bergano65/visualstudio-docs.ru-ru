@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d82776b72b1634e3645749c8a1fb8eaecbedf17c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114318"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "59657302"
 
  **В этой статье:**
 
--   [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
+- [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
 
-    -   [Целевые устройства Android, iOS и Windows из единой базы кода](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+    - [Целевые устройства Android, iOS и Windows из единой базы кода](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    -   [Целевые устройства Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+    - [Целевые устройства Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
--   [Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)](#HTML)
+- [Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)](#HTML)
 
--   [Сборка приложений для устройств Android и Windows (C++)](#CPP)
+- [Сборка приложений для устройств Android и Windows (C++)](#CPP)
 
--   [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
+- [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
 
-##  <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
+## <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
  ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
 
  С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
@@ -53,7 +53,7 @@ ms.locfileid: "59657302"
 |[Сведения о сходстве между Swift и C#](https://aka.ms/scposter) (download.microsoft.com)|
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-###  <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
+### <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
  Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Чтобы начать работу, установите Visual Studio 2015, выбрав вариант **Пользовательские параметры** в установщике и установив флажок **Кроссплатформенная разработка для мобильных устройств > C#/.NET (Xamarin)**. Вы также можете начать работу с [установщика Xamarin](https://www.xamarin.com/download), который необходим, чтобы установить Xamarin для Visual Studio 2013.
 
  Если у вас уже установлен Visual Studio 2015, запустите программу установки из меню **Панель управления > Программы и компоненты**, выбрав тот же вариант **Пользовательские параметры**, который использовался выше для установки Xamarin.
@@ -67,7 +67,7 @@ ms.locfileid: "59657302"
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Создание одного набора страниц, отображаемого на всех устройствах, с помощью Xamarin.Forms
  В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 
-####  <a name="ShareHTML"></a> Совместное использование кода между приложениями Android, iOS и Windows
+#### <a name="ShareHTML"></a> Совместное использование кода между приложениями Android, iOS и Windows
  Если вы не используете Xamarin.Forms и предпочитаете разрабатывать приложения для каждой платформы отдельно, вы можете совместно использовать большую часть кода, не относящегося к пользовательскому интерфейсу, в проектах для разных платформ (Android, iOS и Windows). К нему относятся любая бизнес-логика, интеграция в облаке, доступ к базе данных или любой другой код, предназначенный для платформы .NET Framework. Единственным кодом, который нельзя совместно использовать, является код, предназначенный для конкретной платформы.
 
  ![Совместное использование кода между пользовательскими интерфейсами в приложениях Android, iOS и Windows](../cross-platform/media/sharecode.png "ShareCode")
@@ -78,7 +78,7 @@ ms.locfileid: "59657302"
 |--------------------|
 |Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
 
-###  <a name="WindowsHTML"></a> Целевые устройства Windows 10
+### <a name="WindowsHTML"></a> Целевые устройства Windows 10
  ![Устройства Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Если вы хотите создать одно приложение, предназначенное для полного спектра устройств Windows 10, создайте универсальное приложение Windows. Разработка приложения будет осуществляться с помощью одного проекта, а страницы будут отображаться должным образом независимо от того, какое устройство используется для их просмотра.
@@ -94,7 +94,7 @@ ms.locfileid: "59657302"
 |[Разработка приложений для универсальной платформы Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Перенос приложений на универсальную платформу Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
-##  <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
+## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
  ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
 
  Если вы разработчик веб-решений и знакомы с HTML и JavaScript, то вы можете создавать приложения для целевых платформ Windows, Android и iOS с помощью средств Visual Studio для Apache Cordova. Такие приложения могут быть ориентированы на все три платформы, и при их создании вы можете полагаться на привычные навыки и процедуры.
@@ -119,7 +119,7 @@ ms.locfileid: "59657302"
 |[Начало работы с Инструментами Visual Studio для Apache Cordova](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-##  <a name="CPP"></a> Сборка приложений для устройств Android и Windows (C++)
+## <a name="CPP"></a> Сборка приложений для устройств Android и Windows (C++)
  ![Использование C++ сборки приложений для Android, iOS и Windows](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  Сначала установите Visual Studio 2015 и инструменты Visual C++ для разработки кроссплатформенных мобильных приложений. Затем вы сможете создать приложение native-activity для Android или Windows. Шаблоны C++, предназначенные для устройств iOS, сейчас недоступны. Одно и то же решение можно ориентировать на устройства Android и Windows, а затем наладить совместное использование кода между ними с помощью общей кроссплатформенной статической или динамической библиотеки.
@@ -151,7 +151,7 @@ ms.locfileid: "59657302"
 |[Примеры разработки кроссплатформенных мобильных приложений для C++](https://msdn.microsoft.com/library/dn707596.aspx) (Библиотека MSDN)|
 |[Дополнительные примеры разработки кроссплатформенных мобильных приложений для C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
-##  <a name="Unity"></a> Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity
+## <a name="Unity"></a> Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity
  Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое интегрирует мощные функции редактирования кода, повышения продуктивности и средства отладки в составе Visual Studio с *Unity*, популярной кроссплатформенной системой и средой разработки для игр и мощных графических приложений на платформах Windows, iOS, Android и на других платформах, включая веб-приложения.
 
  ![Среда разработки VSTU](../cross-platform/media/vstu-overview.png "VSTU_Overview")

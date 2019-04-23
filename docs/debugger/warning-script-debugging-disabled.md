@@ -15,33 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2543ad00b2065f7659a89e165c2d4df990403667
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114656"
 ---
-# <a name="warning-script-debugging-disabled"></a>Предупреждение. Отладка скриптов отключена
+# <a name="warning-script-debugging-disabled"></a>Предупреждение: Отладка скриптов отключена
 Отладка скриптов в Internet Explorer в настоящий момент отключена
 
  Это предупреждение появляется при попытке отладки скрипта при выключенной отладке скриптов в Internet Explorer. По соображениям безопасности отладка скриптов в Internet Explorer отключена по умолчанию.
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Включение отладки скриптов в Internet Explorer
 
-1.  В меню Internet Explorer **Сервис** выберите **Свойства обозревателя**.
+1. В меню Internet Explorer **Сервис** выберите **Свойства обозревателя**.
 
-2.  В диалоговом окне **Свойства обозревателя** перейдите на вкладку **Дополнительно** .
+2. В диалоговом окне **Свойства обозревателя** перейдите на вкладку **Дополнительно** .
 
-3.  На вкладке **Дополнительно** найдите в поле **Параметры** категорию **Обзор**.
+3. На вкладке **Дополнительно** найдите в поле **Параметры** категорию **Обзор**.
 
-4.  Снимите флажок **Отключить отладку скриптов (Internet Explorer)**.
+4. Снимите флажок **Отключить отладку скриптов (Internet Explorer)**.
 
-5.  Нажмите кнопку **ОК**.
+5. Нажмите кнопку **ОК**.
 
-6.  Выйдите и повторно запустите Internet Explorer.
+6. Выйдите и повторно запустите Internet Explorer.
 
      Теперь новые параметры вступят в силу.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Практическое руководство. Присоединение к скрипту](../debugger/how-to-attach-to-script.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117568"
 ---
 # <a name="load-vspackages"></a>Загрузка пакетов VSPackage
 Пакеты VSPackage загружаются в Visual Studio только в том случае, если необходима их функциональность. Например пакет VSPackage загружается при Visual Studio использует фабрику проекта или служба, которая реализует VSPackage. Эта возможность называется отложенной загрузки, которая используется по возможности для повышения производительности.
@@ -28,7 +28,7 @@ ms.locfileid: "56702061"
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>Автозагрузка VSPackage в определенном контексте
 
--   Добавление `ProvideAutoLoad` атрибута к VSPackage атрибуты:
+- Добавление `ProvideAutoLoad` атрибута к VSPackage атрибуты:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ ms.locfileid: "56702061"
 
      См. в разделе перечисления полей <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> список контекстов пользовательского интерфейса и их значения GUID.
 
--   Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.
+- Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.
 
--   Создание пакета VSPackage и начните отладку.
+- Создание пакета VSPackage и начните отладку.
 
--   Загрузите решение или создайте его.
+- Загрузите решение или создайте его.
 
      Пакет VSPackage, загружает и останавливается в точке останова.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56702061"
 
  Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> способ принудительного VSPackage для загрузки.
 
--   Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе VSPackage, которое заставляет другом пакете VSPackage для загрузки:
+- Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе VSPackage, которое заставляет другом пакете VSPackage для загрузки:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114968"
 ---
 # <a name="xsd-task"></a>Задача XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "59655339"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описываются параметры задачи **XSD**.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Необязательный параметр типа **String**.  
   
      Список параметров, как указано в командной строке. Например, "*/параметр1 /параметр2 /параметр#*". Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      Необязательный параметр типа **String**.  
   
@@ -50,11 +50,11 @@ ms.locfileid: "59655339"
   
      Укажите одно из следующих значений, каждое из которых соответствует параметру XSD.  
   
-    -   **classes** - **/classes**  
+    - **classes** - **/classes**  
   
-    -   **dataset** - **/dataset**  
+    - **dataset** - **/dataset**  
   
--   **Язык**  
+- **Язык**  
   
      Необязательный параметр типа **String**.  
   
@@ -62,25 +62,25 @@ ms.locfileid: "59655339"
   
      Доступные варианты: **CS** (C#, по умолчанию), **VB** (Visual Basic) или **JS** (JScript). Также можно указать полное имя класса, реализующего `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
--   **Namespace**  
+- **Namespace**  
   
      Необязательный параметр типа **String**.  
   
      Определяет пространство имен среды выполнения для создаваемых типов.  
   
--   **Sources**  
+- **Sources**  
   
      Обязательный параметр `ITaskItem[]` .  
   
      Определяет массив элементов исходного файла MSBuild, который может использоваться и создаваться задачами.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Необязательный параметр **Boolean** .  
   
      Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Необязательный параметр типа **String**.  
   

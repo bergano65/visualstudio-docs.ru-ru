@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115358"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 
@@ -21,29 +21,29 @@ ms.locfileid: "57525122"
 
  Этот пункт можно использовать в следующих случаях.
 
--   Чтобы понять, как использовать различные конструкции в данной схеме.
+- Чтобы понять, как использовать различные конструкции в данной схеме.
 
--   Чтобы убедиться в том, что схема функционирует должным образом.
+- Чтобы убедиться в том, что схема функционирует должным образом.
 
 **Создание образца XML** компонент доступен только для глобальных элементов и требует допустимый набор схем XML.
 
 С помощью этой функции обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.
 
--   Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.
+- Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.
 
--   Аспекты `xs:pattern`.
+- Аспекты `xs:pattern`.
 
--   Перечисления типа `xs:QName`.
+- Перечисления типа `xs:QName`.
 
--   Типы `xs:ENTITY`, `xs:ENTITIES` и `xs:NOTATION`.
+- Типы `xs:ENTITY`, `xs:ENTITIES` и `xs:NOTATION`.
 
 Также заметьте, что содержимое `xs:base64Binary` будет создано, только если в схеме есть перечисления для этого типа.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Создание экземпляра XML-документа на основе XSD-файла.
 
-1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.
+2. В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.
 
      Если выбран этот параметр, PurchaseOrder. *xml* файл со следующим содержимым XML пример будет сгенерирован и открыт в редакторе XML:
 

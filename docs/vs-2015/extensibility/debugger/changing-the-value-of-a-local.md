@@ -11,12 +11,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29a2145199629b9a1a02928b5a4a888a5824c339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b955d27089d86035f96711c2f8442fec5b34bceb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113486"
 ---
 # <a name="changing-the-value-of-a-local"></a>Изменение значения локальной переменной
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "58989017"
   
 2. Метод `IDebugProperty2::SetValueAsString` выполняет указанные ниже задачи.  
   
-   1.  Оценивает строку для получения значения.  
+   1. Оценивает строку для получения значения.  
   
-   2.  Привязывает связанный [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта, чтобы получить [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
+   2. Привязывает связанный [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта, чтобы получить [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
   
-   3.  Преобразует значение в последовательность байтов.  
+   3. Преобразует значение в последовательность байтов.  
   
-   4.  Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) расшифровка значения байтов памяти, поэтому отлаживаемой программы можно получить доступ к их.  
+   4. Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) расшифровка значения байтов памяти, поэтому отлаживаемой программы можно получить доступ к их.  
   
 3. Visual Studio обновляет **"Локальные"** отображения (см. в разделе [отображение "Локальные"](../../extensibility/debugger/displaying-locals.md) сведения).  
   

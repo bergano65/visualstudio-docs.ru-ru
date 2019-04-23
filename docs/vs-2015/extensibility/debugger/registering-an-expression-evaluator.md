@@ -11,12 +11,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa412b37ae735ffd53acba9d7e9730f4a51ce416
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113902"
 ---
 # <a name="registering-an-expression-evaluator"></a>Регистрация вычислителя выражений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>Процесс сервера библиотеки DLL  
  При регистрации EE, сервер библиотеки DLL:  
   
-1.  Регистрирует своей фабрики класса `CLSID` согласно обычной соглашениями COM.  
+1. Регистрирует своей фабрики класса `CLSID` согласно обычной соглашениями COM.  
   
-2.  Вызывается вспомогательная функция `SetEEMetric` для регистрации с помощью Visual Studio EE метрик, отображаемых в таблице ниже. Функция `SetEEMetric` . они входят в состав библиотеки dbgmetric.lib метрик, указанных ниже. См. в разделе [вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) подробные сведения.  
+2. Вызывается вспомогательная функция `SetEEMetric` для регистрации с помощью Visual Studio EE метрик, отображаемых в таблице ниже. Функция `SetEEMetric` . они входят в состав библиотеки dbgmetric.lib метрик, указанных ниже. См. в разделе [вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) подробные сведения.  
   
     |Метрика|Описание|  
     |------------|-----------------|  
@@ -123,7 +123,7 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID` Определяет язык, имя, но он является `guidLang` аргумент `SetEEMetric` , который выбирает язык. Когда компилятор формирует файла отладочной информации, он должен записывать соответствующий `guidLang` таким образом, чтобы DE знает, какие EE для использования. DE обычно запрашивают поставщик символов для данного языка `GUID`, который хранится в файле сведения отладки.  
   
-3.  Регистрирует с помощью Visual Studio, создав ключи в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, где *X.Y* — это версия Visual Studio для регистрации.  
+3. Регистрирует с помощью Visual Studio, создав ключи в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, где *X.Y* — это версия Visual Studio для регистрации.  
   
 ### <a name="example"></a>Пример  
  Эта функция показывает, каким образом неуправляемого кода (C++) EE регистрирует и отменяет свою регистрацию с помощью Visual Studio.  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117933"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML-схемы и данные в настройках уровня документа
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.
@@ -40,16 +40,16 @@ ms.locfileid: "54875462"
 
  Существует два основных объекта:
 
--   Схемы XML (XSD-файл). Для каждой схемы в книге Visual Studio добавляет в проект схемы. Он отображается как элемент проекта с расширением XSD в **обозревателе решений**.
+- Схемы XML (XSD-файл). Для каждой схемы в книге Visual Studio добавляет в проект схемы. Он отображается как элемент проекта с расширением XSD в **обозревателе решений**.
 
--   Типизированный класс <xref:System.Data.DataSet>. Этот класс создается на основе схемы. Этот класс набора данных отображается в **представление классов**.
+- Типизированный класс <xref:System.Data.DataSet>. Этот класс создается на основе схемы. Этот класс набора данных отображается в **представление классов**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Объекты, созданные при сопоставлении элементов схемы с листов Excel
  При сопоставлении элемент схемы из **источник XML** области задач на лист Visual Studio автоматически создает несколько объектов и добавляет их в проект:
 
--   Элементы управления. Для каждого сопоставляемого объекта в книге <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управления (для неповторяющихся элементов схемы) или <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления (для повторяющихся элементов схем) создается в модели программирования. <xref:Microsoft.Office.Tools.Excel.ListObject> Управления можно удалить, только удалив сопоставления и сопоставленными объектами из книги. Дополнительные сведения об элементах управления см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
+- Элементы управления. Для каждого сопоставляемого объекта в книге <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управления (для неповторяющихся элементов схемы) или <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления (для повторяющихся элементов схем) создается в модели программирования. <xref:Microsoft.Office.Tools.Excel.ListObject> Управления можно удалить, только удалив сопоставления и сопоставленными объектами из книги. Дополнительные сведения об элементах управления см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. При создании <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> путем сопоставления неповторяющегося элемента схемы в лист, <xref:System.Windows.Forms.BindingSource> создается и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> привязан элемент управления <xref:System.Windows.Forms.BindingSource>. Необходимо привязать <xref:System.Windows.Forms.BindingSource> для экземпляра источника данных, которые соответствуют схеме сопоставляются с документа, например: экземпляр типизированного <xref:System.Data.DataSet> класс, который был создан. Создать привязку, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойства, которые представлены на **свойства** окна.
+- BindingSource. При создании <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> путем сопоставления неповторяющегося элемента схемы в лист, <xref:System.Windows.Forms.BindingSource> создается и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> привязан элемент управления <xref:System.Windows.Forms.BindingSource>. Необходимо привязать <xref:System.Windows.Forms.BindingSource> для экземпляра источника данных, которые соответствуют схеме сопоставляются с документа, например: экземпляр типизированного <xref:System.Data.DataSet> класс, который был создан. Создать привязку, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойства, которые представлены на **свойства** окна.
 
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource> Не создается для <xref:Microsoft.Office.Tools.Excel.ListObject> объектов. Необходимо вручную связать <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойств в **свойства** окна.
