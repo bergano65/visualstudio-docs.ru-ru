@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e155b33c501326be3d3dcc89fb6b73d501556be
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 2e4331b59c532e681c7e10ab8e43b953e9f72b18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059699"
 ---
 # <a name="save-a-dataset-as-xml"></a>Сохранение набора данных в формате XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ XML-данные в наборе данных может осуществлят�
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Чтобы сохранять данные в наборе данных в виде XML в переменную  
   
--   <xref:System.Data.DataSet.GetXml%2A> Возвращает метод <xref:System.String>. Это означает, что вы объявляете переменную типа <xref:System.String> и назначьте его результаты <xref:System.Data.DataSet.GetXml%2A> метод.  
+- <xref:System.Data.DataSet.GetXml%2A> Возвращает метод <xref:System.String>. Это означает, что вы объявляете переменную типа <xref:System.String> и назначьте его результаты <xref:System.Data.DataSet.GetXml%2A> метод.  
   
      [!code-csharp[VbRaddataSaving#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#12)]
      [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]  
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Чтобы сохранить данные в наборе данных в виде XML в файл  
   
--   <xref:System.Data.DataSet.WriteXml%2A> Метод имеет несколько перегрузок. Следующий код демонстрирует способы сохранения данных в файл. Объявите переменную и назначьте его допустимый путь для сохранения файла.  
+- <xref:System.Data.DataSet.WriteXml%2A> Метод имеет несколько перегрузок. Следующий код демонстрирует способы сохранения данных в файл. Объявите переменную и назначьте его допустимый путь для сохранения файла.  
   
      [!code-csharp[VbRaddataSaving#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#13)]
      [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]  

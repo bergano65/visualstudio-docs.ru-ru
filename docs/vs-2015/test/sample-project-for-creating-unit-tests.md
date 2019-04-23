@@ -11,23 +11,23 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048779"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Пример проекта для создания модульных тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Этот пример кода предназначен для использования в указанных ниже пошаговых руководствах.  
   
--   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  
+- [Пошаговое руководство: Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  
   
--   [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
+- [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
   
--   [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
+- [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
   
 ## <a name="sample-code"></a>Пример кода  
  Единственная умышленно допущенная в этом примере ошибка заключается в том, что у метода Debit в m_balance += amount вместо знака плюс перед знаком равно должен стоять минус.  
@@ -129,9 +129,9 @@ namespace BankAccountNS
  /* Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными.  Любые совпадения с реальными именами и названиями случайны. \*/  
   
 ## <a name="working-with-the-code"></a>Работа с кодом  
- Для работы с этим кодом необходимо сначала создать для него проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Выполните действия, описанные в разделе «Подготовка пошагового руководства» [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
+ Для работы с этим кодом необходимо сначала создать для него проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Выполните действия, описанные в разделе «Подготовка пошагового руководства» [Пошаговое руководство: Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
   
-## <a name="see-also"></a>См. также раздел  
- [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода)  
+## <a name="see-also"></a>См. также  
+ [Пошаговое руководство: Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
  [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

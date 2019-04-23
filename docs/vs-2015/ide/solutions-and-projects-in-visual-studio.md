@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045333"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ ms.locfileid: "54795256"
 
 ## <a name="in-this-section"></a>В этом разделе
 
--   [Создание решений и проектов](../ide/creating-solutions-and-projects.md)
+- [Создание решений и проектов](../ide/creating-solutions-and-projects.md)
 
--   [Добавление и удаление элементов проекта](../ide/adding-and-removing-project-items.md)
+- [Добавление и удаление элементов проекта](../ide/adding-and-removing-project-items.md)
 
--   [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
+- [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
 
--   [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
+- [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
 
--   [Свойства приложения](../ide/application-properties.md)
+- [Свойства приложения](../ide/application-properties.md)
 
--   [Управление сборками и подписывание манифестов](../ide/managing-assembly-and-manifest-signing.md)
+- [Управление сборками и подписывание манифестов](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>См. также раздел
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

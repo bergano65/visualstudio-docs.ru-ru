@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377660b32f8edbb26e8a062d55ee152132f7f587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052120"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Пошаговое руководство. Реализация фрагментов кода
 Можно создавать фрагменты кода и включать их в расширении редактора, чтобы пользователи расширения их можно добавить в свой собственный код.
@@ -109,33 +109,33 @@ ms.locfileid: "56707085"
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Чтобы зарегистрировать фрагменты кода для определенного идентификатора GUID
 
-1.  Откройте **CompletionTest** проекта. Сведения о создании этого проекта, см. в разделе [Пошаговое руководство: Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).
+1. Откройте **CompletionTest** проекта. Сведения о создании этого проекта, см. в разделе [Пошаговое руководство: Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).
 
-2.  В проекте добавьте ссылки на следующие сборки:
+2. В проекте добавьте ссылки на следующие сборки:
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft.VisualStudio.TextManager.Interop.8.0
 
-    -   microsoft.msxml
+    - microsoft.msxml
 
-3.  В проекте, откройте **source.extension.vsixmanifest** файл.
+3. В проекте, откройте **source.extension.vsixmanifest** файл.
 
-4.  Убедитесь, что **активы** вкладка содержит **VsPackage** содержимого типа и что **проекта** присваивается имя проекта.
+4. Убедитесь, что **активы** вкладка содержит **VsPackage** содержимого типа и что **проекта** присваивается имя проекта.
 
-5.  Выберите проект CompletionTest и в окне свойств задайте **создавать файл Pkgdef** для **true**. Сохраните проект.
+5. Выберите проект CompletionTest и в окне свойств задайте **создавать файл Pkgdef** для **true**. Сохраните проект.
 
-6.  Добавить статический `SnippetUtilities` класс в проект.
+6. Добавить статический `SnippetUtilities` класс в проект.
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7.  В классе SnippetUtilities, определите GUID и присвойте ему значение, выбранное на *SnippetsIndex.xml* файла.
+7. В классе SnippetUtilities, определите GUID и присвойте ему значение, выбранное на *SnippetsIndex.xml* файла.
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8.  Добавить <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> для `TestCompletionHandler` класса. Этот атрибут можно добавить для любого общедоступного или внутреннего класса (не статического) в проекте. (Может потребоваться добавить `using` оператор для пространства имен Microsoft.VisualStudio.Shell.)
+8. Добавить <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> для `TestCompletionHandler` класса. Этот атрибут можно добавить для любого общедоступного или внутреннего класса (не статического) в проекте. (Может потребоваться добавить `using` оператор для пространства имен Microsoft.VisualStudio.Shell.)
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
@@ -147,14 +147,14 @@ ms.locfileid: "56707085"
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Чтобы добавить команду Вставить фрагмент в контекстное меню
 
-1.  Откройте `TestCompletionCommandHandler` файл класса.
+1. Откройте `TestCompletionCommandHandler` файл класса.
 
      Поскольку этот класс реализует <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, вы можете активировать **вставить фрагмент** в команду <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод. Прежде чем включить команду, проверьте, что этот метод не вызывается внутри функции автоматизации так как при **вставить фрагмент** выборе команды, он отображает пользовательский интерфейс (UI) средство выбора фрагмента.
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2.  Постройте и запустите проект. В экспериментальном экземпляре откройте файл, содержащий *.zzz* расширение имени файла и затем щелкните правой кнопкой мыши в нем. **Вставить фрагмент** команда должна отображаться в контекстном меню.
+2. Постройте и запустите проект. В экспериментальном экземпляре откройте файл, содержащий *.zzz* расширение имени файла и затем щелкните правой кнопкой мыши в нем. **Вставить фрагмент** команда должна отображаться в контекстном меню.
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Реализуйте расширение фрагмента кода в пользовательском Интерфейсе средства выбора фрагмента
  В этом разделе показано, как реализовать расширение фрагмента кода, таким образом, чтобы средство выбора фрагментов пользовательского интерфейса, которые отображаются после **вставить фрагмент** нажатии в контекстном меню. Фрагмент кода также расширяется, когда пользователь вводит ярлык фрагмента кода и затем нажимает клавишу **вкладке**.
@@ -165,42 +165,42 @@ ms.locfileid: "56707085"
 
 #### <a name="to-implement-snippet-expansion"></a>Чтобы реализовать расширение фрагмента кода
 
-1.  Для файла, содержащего `TestCompletionCommandHandler` класса, добавьте следующий `using` инструкций.
+1. Для файла, содержащего `TestCompletionCommandHandler` класса, добавьте следующий `using` инструкций.
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2.  Сделать `TestCompletionCommandHandler` Реализуйте класс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> интерфейс.
+2. Сделать `TestCompletionCommandHandler` Реализуйте класс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> интерфейс.
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3.  В `TestCompletionCommandHandlerProvider` класса, импортируйте <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
+3. В `TestCompletionCommandHandlerProvider` класса, импортируйте <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4.  Добавьте несколько закрытых полей для интерфейсов расширения кода и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+4. Добавьте несколько закрытых полей для интерфейсов расширения кода и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5.  В конструкторе класса `TestCompletionCommandHandler` класса, заполните следующие поля.
+5. В конструкторе класса `TestCompletionCommandHandler` класса, заполните следующие поля.
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6.  Чтобы отобразить средство выбора фрагмента, когда пользователь щелкает **вставить фрагмент** команды, добавьте следующий код, чтобы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод. (Чтобы сделать более удобочитаемым, в этом разделе `Exec()`не показан код, который используется для завершения операторов; вместо этого блоки кода добавляются к существующему методу.) Добавьте следующий блок кода после кода, который проверяет наличие символа.
+6. Чтобы отобразить средство выбора фрагмента, когда пользователь щелкает **вставить фрагмент** команды, добавьте следующий код, чтобы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод. (Чтобы сделать более удобочитаемым, в этом разделе `Exec()`не показан код, который используется для завершения операторов; вместо этого блоки кода добавляются к существующему методу.) Добавьте следующий блок кода после кода, который проверяет наличие символа.
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7.  Если фрагмент кода содержит поля, можно переходить, сеанс расширения сохраняется открытым, пока не будет явно принимается расширения; Если фрагмент не содержит полей, сеанс закрывается и возвращается в виде `null` по <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> метод. В <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метода, после выбора фрагментов кода пользовательского интерфейса, добавленного на предыдущем шаге, добавьте следующий код для обработки переходов фрагмента (когда пользователь нажимает **вкладке** или **Shift** + **Вкладке** после вставки фрагмента).
+7. Если фрагмент кода содержит поля, можно переходить, сеанс расширения сохраняется открытым, пока не будет явно принимается расширения; Если фрагмент не содержит полей, сеанс закрывается и возвращается в виде `null` по <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> метод. В <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метода, после выбора фрагментов кода пользовательского интерфейса, добавленного на предыдущем шаге, добавьте следующий код для обработки переходов фрагмента (когда пользователь нажимает **вкладке** или **Shift** + **Вкладке** после вставки фрагмента).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8.  Чтобы вставить фрагмент кода, когда пользователь вводит соответствующий ярлык и затем нажимает клавишу **вкладке**, добавьте код для <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод. Закрытый метод, который вставляет фрагмент будет отображаться на более позднем этапе. Добавьте следующий код после перемещения кода, добавленного на предыдущем шаге.
+8. Чтобы вставить фрагмент кода, когда пользователь вводит соответствующий ярлык и затем нажимает клавишу **вкладке**, добавьте код для <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод. Закрытый метод, который вставляет фрагмент будет отображаться на более позднем этапе. Добавьте следующий код после перемещения кода, добавленного на предыдущем шаге.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -223,13 +223,13 @@ ms.locfileid: "56707085"
 ## <a name="build-and-test-code-snippet-expansion"></a>Сборка и тестирование расширения фрагмента кода
  Вы можете протестировать работает расширение фрагмента кода в проекте.
 
-1.  Постройте решение. При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
+1. Постройте решение. При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
 
-2.  Откройте текстовый файл и введите любой текст.
+2. Откройте текстовый файл и введите любой текст.
 
-3.  Щелкните правой кнопкой мыши где-нибудь в тексте и нажмите кнопку **вставить фрагмент**.
+3. Щелкните правой кнопкой мыши где-нибудь в тексте и нажмите кнопку **вставить фрагмент**.
 
-4.  Средство выбора фрагментов, пользовательский Интерфейс будет выглядеть с всплывающее окно, говорящее **замены поля тестов**. Дважды щелкните всплывающее окно.
+4. Средство выбора фрагментов, пользовательский Интерфейс будет выглядеть с всплывающее окно, говорящее **замены поля тестов**. Дважды щелкните всплывающее окно.
 
      Следующий фрагмент кода должен быть вставлен.
 
@@ -240,10 +240,10 @@ ms.locfileid: "56707085"
 
      Не нажимайте **ввод** или **Esc**.
 
-5.  Нажмите клавишу **вкладке** и **Shift**+**вкладке** для переключения между «первый» и «секунду».
+5. Нажмите клавишу **вкладке** и **Shift**+**вкладке** для переключения между «первый» и «секунду».
 
-6.  Принимать вставки, можно нажать клавишу **ввод** или **Esc**.
+6. Принимать вставки, можно нажать клавишу **ввод** или **Esc**.
 
-7.  В другой части текста, введите «test» и нажмите клавишу **вкладке**. Так как «test» ярлык фрагмента кода, следует снова вставить фрагмент кода.
+7. В другой части текста, введите «test» и нажмите клавишу **вкладке**. Так как «test» ярлык фрагмента кода, следует снова вставить фрагмент кода.
 
 ## <a name="next-steps"></a>Следующие шаги

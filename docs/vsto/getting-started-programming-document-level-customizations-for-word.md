@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056332"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Приступить к программированию настроек на уровне документа для Word
   Если вы начальном этапе создания настроек уровня документа для Microsoft Office Word с помощью Visual Studio, вот что вам необходимо знать.
@@ -44,11 +44,11 @@ ms.locfileid: "56631501"
 
  Дополнительные сведения см. в следующих разделах:
 
--   [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
 
--   [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
+- [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Настройка пользовательского интерфейса Word
  Большинство решений для Microsoft Office изменить пользовательский интерфейс (UI) приложения Office для какой-нибудь способ пользователям взаимодействовать с решением. Существует много способов, в которых пользовательского интерфейса Word можно изменить с помощью настройки уровня документа. Например можно добавить элементы управления на ленту, и можно отобразить панель действий. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).

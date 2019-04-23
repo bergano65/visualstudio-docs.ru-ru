@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052783"
 ---
 # <a name="custom-xml-parts-overview"></a>Общие сведения о настраиваемых частях XML
   Для некоторых приложений Microsoft Office в документах можно внедрять XML-данные. При внедрении в документ XML-данных, называются *пользовательской XML-части*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616226"
 
  Дополнительные сведения о структуре Open XML и пользовательских XML-частей см. в следующих статьях.
 
--   [Знакомство с форматами файлов Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Знакомство с форматами файлов Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Практическое руководство. Управлять документами в форматах Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Практическое руководство. Управлять документами в форматах Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Пошаговое руководство: Формат Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Пошаговое руководство: Формат Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Построение документов Word 2007 с помощью форматов Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Построение документов Word 2007 с помощью форматов Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Excel, Word и PowerPoint также позволяют использовать пользовательские XML-части в документах, которые были сохранены в форматах двоичных файлов. Однако, если документ сохранен в двоичном формате, для добавления или изменения пользовательских XML-частей необходимо запустить приложение Microsoft Office.
@@ -66,9 +66,9 @@ ms.locfileid: "56616226"
 
  Для создания пользовательской XML-части с помощью Visual Studio добавьте новую <xref:Microsoft.Office.Core.CustomXMLPart> в коллекцию <xref:Microsoft.Office.Core.CustomXMLParts> в документе. Дополнительные сведения см. в следующих разделах:
 
--   [Практическое руководство. Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Практическое руководство. Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Практическое руководство. Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Практическое руководство. Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Изменения XML-частей без запуска приложения Office
  Пользовательские XML-части можно добавлять или изменять без запуска Excel, PowerPoint или Word. Это удобно в том случае, если вам нужно работать с XML-данными в документе на компьютере, на котором приложения Microsoft Office не установлены, например на сервере.

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063144"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Практическое руководство. Добавление нового элемента в проект рабочего процесса (для прежних версий)
 После создания проекта рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)], который ориентируется на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], в проект можно добавлять элементы [!INCLUDE[wf](../includes/wf-md.md)] и другие знакомые элементы [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -37,15 +37,15 @@ ms.locfileid: "58978568"
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Добавление нового элемента в проект рабочего процесса  
   
-1.  На **проекта** меню, щелкните **добавить новый элемент**.  
+1. На **проекта** меню, щелкните **добавить новый элемент**.  
   
      **Добавить новый элемент** откроется диалоговое окно.  
   
-2.  Выберите элемент.  
+2. Выберите элемент.  
   
      В предыдущей таблице перечислены доступные наборы Windows Workflow Foundation.  
   
-3.  Нажмите кнопку **добавить** следует добавить элемент в проект рабочего процесса.  
+3. Нажмите кнопку **добавить** следует добавить элемент в проект рабочего процесса.  
   
 ## <a name="see-also"></a>См. также  
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)

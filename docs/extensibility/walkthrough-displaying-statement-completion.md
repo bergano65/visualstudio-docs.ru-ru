@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e30c48e0d7c4c7c98b533555e1b4dac8888af7c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061025"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 Завершение операторов на основе языка можно реализовать путем определения идентификаторов, для которых вы хотите предоставить завершения и затем активировать сеанс завершения. Можно определить завершение операторов в контексте языковой службы, определите расширение имени файла и тип содержимого и затем отобразить завершение только этого типа. Или вы можете активировать завершение существующий тип контента, например, «обычный текст». В этом пошаговом руководстве показано, как требуется активировать завершение операторов для типа содержимого «обычный текст», который является типом содержимого текстовых файлов. Тип содержимого «text» является предком всех других типов содержимого, включая код и XML-файлы.
@@ -31,13 +31,13 @@ ms.locfileid: "56710400"
 
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF
 
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `CompletionTest`.
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `CompletionTest`.
 
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Удалите файлы существующих классов.
+3. Удалите файлы существующих классов.
 
-4.  Добавьте следующие ссылки в проект и убедитесь, что **CopyLocal** присваивается `false`:
+4. Добавьте следующие ссылки в проект и убедитесь, что **CopyLocal** присваивается `false`:
 
      Microsoft.VisualStudio.Editor
 
@@ -56,39 +56,39 @@ ms.locfileid: "56710400"
 
 ### <a name="to-implement-the-completion-source"></a>Для реализации источник завершения
 
-1.  Добавьте файл класса с именем `TestCompletionSource`.
+1. Добавьте файл класса с именем `TestCompletionSource`.
 
-2.  Добавьте эти объекты импорта:
+2. Добавьте эти объекты импорта:
 
      [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
      [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]
 
-3.  Измените объявление класса для `TestCompletionSource` таким образом, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
+3. Измените объявление класса для `TestCompletionSource` таким образом, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
 
      [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
      [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]
 
-4.  Добавьте закрытые поля для поставщика источника, текстовый буфер и список <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> объектов (соответствующие идентификаторы, которые будут участвовать в сеанс завершения):
+4. Добавьте закрытые поля для поставщика источника, текстовый буфер и список <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> объектов (соответствующие идентификаторы, которые будут участвовать в сеанс завершения):
 
      [!code-csharp[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]
      [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]
 
-5.  Добавьте конструктор, который задает поставщик источника и буфера. `TestCompletionSourceProvider` Класс определен в следующих шагах:
+5. Добавьте конструктор, который задает поставщик источника и буфера. `TestCompletionSourceProvider` Класс определен в следующих шагах:
 
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод путем добавления набора завершений, который содержит завершения требуется предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В проектах Visual Basic, имеют имена вкладкам окна завершения **распространенных** и **все**.) Метод `FindTokenSpanAtPosition` определяется на следующем шаге.
+6. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод путем добавления набора завершений, который содержит завершения требуется предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В проектах Visual Basic, имеют имена вкладкам окна завершения **распространенных** и **все**.) Метод `FindTokenSpanAtPosition` определяется на следующем шаге.
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
 
-7.  Следующий метод используется для поиска текущего слова начиная с позиции курсора:
+7. Следующий метод используется для поиска текущего слова начиная с позиции курсора:
 
      [!code-csharp[VSSDKCompletionTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_6.cs)]
      [!code-vb[VSSDKCompletionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_6.vb)]
 
-8.  Реализуйте `Dispose()` метод:
+8. Реализуйте `Dispose()` метод:
 
      [!code-csharp[VSSDKCompletionTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_7.cs)]
      [!code-vb[VSSDKCompletionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_7.vb)]
@@ -98,17 +98,17 @@ ms.locfileid: "56710400"
 
 ### <a name="to-implement-the-completion-source-provider"></a>Реализация поставщика источника завершения
 
-1.  Добавьте класс с именем `TestCompletionSourceProvider` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «завершения теста».
+1. Добавьте класс с именем `TestCompletionSourceProvider` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «завершения теста».
 
      [!code-csharp[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]
      [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]
 
-2.  Импорт <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, которое выполняет поиск текущего слова в источник завершения.
+2. Импорт <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, которое выполняет поиск текущего слова в источник завершения.
 
      [!code-csharp[VSSDKCompletionTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_9.cs)]
      [!code-vb[VSSDKCompletionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_9.vb)]
 
-3.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> метод для создания экземпляра источника завершения.
+3. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> метод для создания экземпляра источника завершения.
 
      [!code-csharp[VSSDKCompletionTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_10.cs)]
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
@@ -118,24 +118,24 @@ ms.locfileid: "56710400"
 
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Реализация поставщика обработчик завершения команды
 
-1.  Добавьте в файл с именем `TestCompletionCommandHandler`.
+1. Добавьте в файл с именем `TestCompletionCommandHandler`.
 
-2.  Добавьте следующие операторы using:
+2. Добавьте следующие операторы using:
 
      [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
      [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]
 
-3.  Добавьте класс с именем `TestCompletionHandlerProvider` , реализующий <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «обработчика маркера завершения», <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
+3. Добавьте класс с именем `TestCompletionHandlerProvider` , реализующий <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «обработчика маркера завершения», <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
 
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4.  Импорт <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, который включает преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , разрешающий доступ к стандартным службам Visual Studio.
+4. Импорт <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, который включает преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , разрешающий доступ к стандартным службам Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
 
-5.  Реализуйте <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метод для создания экземпляра обработчика команды.
+5. Реализуйте <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метод для создания экземпляра обработчика команды.
 
      [!code-csharp[VSSDKCompletionTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_14.cs)]
      [!code-vb[VSSDKCompletionTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_14.vb)]
@@ -193,13 +193,13 @@ ms.locfileid: "56710400"
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Построение и тестирование решения CompletionTest
 
-1.  Постройте решение.
+1. Постройте решение.
 
-2.  При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
+2. При запуске этого проекта в отладчике, запускается второй экземпляр Visual Studio.
 
-3.  Создайте текстовый файл и введите текст, который включает слово «добавить».
+3. Создайте текстовый файл и введите текст, который включает слово «добавить».
 
-4.  При вводе сначала «a» и затем «d», появится список, содержащий «сложение» и «адаптации». Обратите внимание на то, что выбран сложения. При вводе другой «d», этот список должен содержать только «дополнение», который теперь можно выбрать. Вы можете фиксировать «дополнение», нажав клавишу **пробел**, **вкладке**, или **ввод** ключа, либо закрыть список, введя Esc или любую другую клавишу.
+4. При вводе сначала «a» и затем «d», появится список, содержащий «сложение» и «адаптации». Обратите внимание на то, что выбран сложения. При вводе другой «d», этот список должен содержать только «дополнение», который теперь можно выбрать. Вы можете фиксировать «дополнение», нажав клавишу **пробел**, **вкладке**, или **ввод** ключа, либо закрыть список, введя Esc или любую другую клавишу.
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052068"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Пошаговое руководство. Настройка и использование набора настраиваемых правил
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58991283"
   
  В этом пошаговом руководстве приводится пошаговое описание следующих процессов:  
   
--   Создайте библиотеку классов.  
+- Создайте библиотеку классов.  
   
--   Выберите **базовые правила и рекомендации по разработке Microsoft** набора правил анализа кода.  
+- Выберите **базовые правила и рекомендации по разработке Microsoft** набора правил анализа кода.  
   
--   Добавьте собственный код в класс.  
+- Добавьте собственный код в класс.  
   
--   Запустите анализ кода.  
+- Запустите анализ кода.  
   
--   Настройка набора правил.  
+- Настройка набора правил.  
   
--   Запустить анализ кода и см. в разделе поведения настроек набора правил.  
+- Запустить анализ кода и см. в разделе поведения настроек набора правил.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]или [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]или [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Использование наборов правил для анализа кода  
  Во-первых можно создайте простую библиотеку классов.  
@@ -148,9 +148,9 @@ ms.locfileid: "58991283"
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Запустить анализ кода для проекта Пример_набора_правил во второй раз  
   
-1.  На **анализ** меню, щелкните **запустить анализ кода на Пример_набора_правил**.  
+1. На **анализ** меню, щелкните **запустить анализ кода на Пример_набора_правил**.  
   
-2.  В окне списка ошибок, обратите внимание, что при нажатии кнопки **предупреждения**, больше нет нарушений предупреждения CA1704 для правила «Идентификаторы должны иметь правильное правописание».  
+2. В окне списка ошибок, обратите внимание, что при нажатии кнопки **предупреждения**, больше нет нарушений предупреждения CA1704 для правила «Идентификаторы должны иметь правильное правописание».  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

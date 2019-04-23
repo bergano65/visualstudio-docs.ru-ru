@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e89f74d940182cd92fd15f726676f0979d21186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047232"
 ---
 # <a name="deploy-project-types"></a>Развертывание типов проектов
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] устанавливает новые средства инвентаризации программного обеспечения типа проекта (*ProjectAggregator2.dll*) и также пакет установщика Windows для распространения (*ProjectAggregator2.msi*). Необходимо использовать новые средства инвентаризации программного обеспечения для типов проектов управляемого кода. ProjectAggregator2 предназначена для обхода ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проект средства инвентаризации программного обеспечения, которое препятствует правильной работе типы проектов управляемого кода. Далее описано изменение VSPackage для использования нового средства инвентаризации программного обеспечения.
 
-1.  Удалите NativeHierarchyWrapper проект из решения.
+1. Удалите NativeHierarchyWrapper проект из решения.
 
-2.  Удалите NativeHierarchyWrapper двоичные файлы из пакета установки.
+2. Удалите NativeHierarchyWrapper двоичные файлы из пакета установки.
 
-3.  Добавить *ProjectAggregator2.msi* на настройки.
+3. Добавить *ProjectAggregator2.msi* на настройки.

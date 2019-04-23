@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047193"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 Чтобы сделать доступным в пользовательский инструмент [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо зарегистрировать его таким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно создать его экземпляр, который связывается с определенным типом проекта.
@@ -38,15 +38,15 @@ ms.locfileid: "56603658"
 
 2. Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:
 
-   -   (Значение по умолчанию)
+   - (Значение по умолчанию)
 
         Необязательный параметр. Понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.
 
-   -   CLSID
+   - CLSID
 
         Обязательный. Задает идентификатор для библиотеки классов из COM-компонент, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Обязательный. Указывает ли типы из файлов, созданных этим настраиваемым инструментом становятся доступными для визуальных конструкторов. Значение этого параметра должно быть (нуль) 0 для типов, не доступен для визуальных конструкторов или 1 (один) для типов, доступных для визуальных конструкторов.
 

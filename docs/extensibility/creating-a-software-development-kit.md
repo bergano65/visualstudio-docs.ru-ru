@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052081"
 ---
 # <a name="create-a-software-development-kit"></a>Создание пакета средств разработки программного обеспечения
 Пакет средств разработки программного обеспечения (SDK) — это коллекция интерфейсов API, который можно ссылаться как одного элемента в Visual Studio. **Диспетчер ссылок** диалоговом окне приводится список всех пакетов SDK, относящихся к проекту. При добавлении пакета SDK в проект, интерфейсы API доступны в Visual Studio.
@@ -30,7 +30,7 @@ ms.locfileid: "59661224"
 
 - [Пакеты SDK расширений](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> Пакеты SDK для платформы
+## <a name="PlatformSDKs"></a> Пакеты SDK для платформы
  Пакеты SDK для платформы необходимы для разработки приложений для платформы. Например [!INCLUDE[win81](../debugger/includes/win81_md.md)] требуется пакет SDK для разработки приложений для [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Установка
@@ -58,7 +58,7 @@ ms.locfileid: "59661224"
 | *Архитектура* папки | Любых поддерживаемых *архитектура* может существовать папка. Visual Studio поддерживает следующие варианты архитектуры: x86, x64, ARM и neutral. Примечание. Win32 сопоставляется x86, а AnyCPU для нейтрального.<br /><br /> MSBuild ищет только при выполнении *\CommonConfiguration\neutral* для пакетов SDK платформы. |
 | *SDKManifest.xml* | Этот файл описывает, как Visual Studio следует использовать пакет SDK. Просмотрите манифест, пакет SDK для [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Отображаемое имя:** Значение, в обозревателе объектов отображаются в списке просмотра.<br /><br /> **PlatformIdentity:** Наличие этого атрибута сообщает Visual Studio и MSBuild, что пакет SDK платформы SDK и что ссылки, добавленные из его не следует скопировать локально.<br /><br /> **TargetFramework:** Этот атрибут используется в Visual Studio, чтобы убедиться, что только проекты, предназначенные же платформы, как указано в значении этого атрибута можно использовать пакет SDK.<br /><br /> **MinVSVersion:** Этот атрибут используется в Visual Studio для использования только пакеты SDK, которые применяются к нему.<br /><br /> **Справочные материалы.** Этот атрибут должен быть указано для только эти ссылки, которые содержат элементы управления. Сведения о том, как указать, содержит ли ссылка элементы управления см. в разделе ниже. |
 
-##  <a name="ExtensionSDKs"></a> Пакеты SDK расширений
+## <a name="ExtensionSDKs"></a> Пакеты SDK расширений
  В следующих разделах, что необходимо сделать, чтобы развернуть пакет SDK расширения.
 
 ### <a name="installation"></a>Установка
@@ -72,13 +72,13 @@ ms.locfileid: "59661224"
 
  Если вы хотите использовать другое расположение, необходимо выполнить одно из следующих действий:
 
-1.  Укажите его в раздел реестра:
+1. Укажите его в раздел реестра:
 
      **Пакеты SDK HKLM\Software\Microsoft\Microsoft\<целевую платформу > \v < номер версии платформы\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      и добавьте раздел (по умолчанию), который имеет значение `<path to SDK><SDKName><SDKVersion>`.
 
-2.  Добавить свойство MSBuild `SDKReferenceDirectoryRoot` в файл проекта. Разделенные точкой с запятой список каталогов, в которых находятся пакеты SDK расширений, создать ссылку на значение этого свойства.
+2. Добавить свойство MSBuild `SDKReferenceDirectoryRoot` в файл проекта. Разделенные точкой с запятой список каталогов, в которых находятся пакеты SDK расширений, создать ссылку на значение этого свойства.
 
 ### <a name="installation-layout"></a>Макета установки
  Пакеты SDK расширений имеет следующую компоновку установки:
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Ссылка на файл: Указанный для только те ссылки, которые содержат элементы управления или превышают собственных winmd-файлов. Сведения о том, как указать, содержит ли ссылка элементы управления, см. в разделе [укажите расположение элементов панели инструментов](#ToolboxItems) ниже.
 
-##  <a name="ToolboxItems"></a> Укажите расположение элементов панели инструментов
+## <a name="ToolboxItems"></a> Укажите расположение элементов панели инструментов
  Элемент ToolBoxItems *SDKManifest.xml* схема задает категории и расположению элементов панели инструментов в пакетах SDK для платформы и расширения. В следующих примерах для указания других мест. Это применимо к ссылки WinMD и DLL.
 
-1.  Разместите элементы управления в категории панели элементов по умолчанию.
+1. Разместите элементы управления в категории панели элементов по умолчанию.
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Разместите элементы управления в группе имя определенной категории.
+2. Разместите элементы управления в группе имя определенной категории.
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Разместите элементы управления в области определенной категории.
+3. Разместите элементы управления в области определенной категории.
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Поместите имена различных категорий элементов управления в Blend и Visual Studio.
+4. Поместите имена различных категорий элементов управления в Blend и Visual Studio.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Перечислить определенные элементы управления по-разному в Blend и Visual Studio.
+5. Перечислить определенные элементы управления по-разному в Blend и Visual Studio.
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Перечислить определенные элементы управления и поместить их в Visual Studio общий путь, или только в группы "все элементы управления".
+6. Перечислить определенные элементы управления и поместить их в Visual Studio общий путь, или только в группы "все элементы управления".
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Перечислить определенные элементы управления и Показать только определенной группе в ChooseItems без них, в области элементов.
+7. Перечислить определенные элементы управления и Показать только определенной группе в ChooseItems без них, в области элементов.
 
     ```
     <File Reference = "sample.winmd">

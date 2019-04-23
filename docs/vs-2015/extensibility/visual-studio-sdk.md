@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0c338648ebb69874781906c0eabff670e5158be8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050911"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ ms.locfileid: "59002638"
   
  Можно найти дополнительные сведения в [VSX Arcana блог](http://blogs.msdn.com/b/vsx/) и номер блогов, написанные специалистами MVP:  
   
--   [Расширения избранные Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
+- [Расширения избранные Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   
--   [Расширяемость Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)  
+- [Расширяемость Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)  
   
--   [Расширение Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
+- [Расширение Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>См. также  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
