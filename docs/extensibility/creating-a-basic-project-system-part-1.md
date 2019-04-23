@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060310"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.
@@ -39,21 +39,21 @@ ms.locfileid: "56843965"
 
  В этом пошаговом руководстве объясняется, как выполнять эти задачи:
 
--   Создание типа базового проекта.
+- Создание типа базового проекта.
 
--   Создайте шаблон базовый проект.
+- Создайте шаблон базовый проект.
 
--   Зарегистрируйте шаблон проекта в Visual Studio.
+- Зарегистрируйте шаблон проекта в Visual Studio.
 
--   Создайте экземпляр проекта, открыв **новый проект** диалоговое окно, а затем с помощью шаблона.
+- Создайте экземпляр проекта, открыв **новый проект** диалоговое окно, а затем с помощью шаблона.
 
--   Создайте фабрику проекта для вашей системы проекта.
+- Создайте фабрику проекта для вашей системы проекта.
 
--   Создайте узел проекта для вашей системы проекта.
+- Создайте узел проекта для вашей системы проекта.
 
--   Добавление пользовательских значков для системы проектов.
+- Добавление пользовательских значков для системы проектов.
 
--   Реализуйте замена параметров базового шаблона.
+- Реализуйте замена параметров базового шаблона.
 
 ## <a name="prerequisites"></a>Предварительные требования
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -240,11 +240,11 @@ Templates
 ## <a name="add-the-managed-package-framework-code"></a>Добавьте код, Managed Package Framework
  Реализуйте соединение между пакет проекта и фабрики проектов.
 
--   Импортируйте файлы исходного кода для Managed Package Framework.
+- Импортируйте файлы исходного кода для Managed Package Framework.
 
-    1.  Выгрузить проект SimpleProject (в **обозревателе решений**, выберите узел проекта и в контекстном меню щелкните **выгрузить проект**.) и откройте файл проекта в редакторе XML.
+    1. Выгрузить проект SimpleProject (в **обозревателе решений**, выберите узел проекта и в контекстном меню щелкните **выгрузить проект**.) и откройте файл проекта в редакторе XML.
 
-    2.  Добавьте следующие блоки в файл проекта (непосредственно над \<импорта > блоков). Задайте `ProjectBasePath` к расположению *ProjectBase.files* файл в только что загруженном коде Managed Package Framework. Может потребоваться добавить обратную косую черту в путь. Если этого не сделать, проект может не найти исходный код Managed Package Framework.
+    2. Добавьте следующие блоки в файл проекта (непосредственно над \<импорта > блоков). Задайте `ProjectBasePath` к расположению *ProjectBase.files* файл в только что загруженном коде Managed Package Framework. Может потребоваться добавить обратную косую черту в путь. Если этого не сделать, проект может не найти исходный код Managed Package Framework.
 
         ```
         <PropertyGroup>
@@ -257,38 +257,38 @@ Templates
         > [!IMPORTANT]
         >  Не забывайте обратную косую черту в конце пути.
 
-    3.  Перезагрузите проект.
+    3. Перезагрузите проект.
 
-    4.  Добавьте ссылки на следующие сборки:
+    4. Добавьте ссылки на следующие сборки:
 
-        -   `Microsoft.VisualStudio.Designer.Interfaces` (в  *\<VSSDK install > \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces` (в  *\<VSSDK install > \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
-        -   `WindowsBase`
+        - `WindowsBase`
 
-        -   `Microsoft.Build.Tasks.v4.0`
+        - `Microsoft.Build.Tasks.v4.0`
 
 ### <a name="to-initialize-the-project-factory"></a>Для инициализации фабрики проектов
 
-1.  В *SimpleProjectPackage.cs* добавьте следующие `using` инструкции.
+1. В *SimpleProjectPackage.cs* добавьте следующие `using` инструкции.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-2.  Производные `SimpleProjectPackage` класса из `Microsoft.VisualStudio.Package.ProjectPackage`.
+2. Производные `SimpleProjectPackage` класса из `Microsoft.VisualStudio.Package.ProjectPackage`.
 
     ```csharp
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-3.  Регистрирует фабрику проекта. Добавьте следующую строку к `SimpleProjectPackage.Initialize` метод, сразу после `base.Initialize`.
+3. Регистрирует фабрику проекта. Добавьте следующую строку к `SimpleProjectPackage.Initialize` метод, сразу после `base.Initialize`.
 
     ```csharp
     base.Initialize();
     this.RegisterProjectFactory(new SimpleProjectFactory(this));
     ```
 
-4.  Реализация абстрактного свойства `ProductUserContext`:
+4. Реализация абстрактного свойства `ProductUserContext`:
 
     ```csharp
     public override string ProductUserContext
@@ -297,19 +297,19 @@ Templates
     }
     ```
 
-5.  В *SimpleProjectFactory.cs*, добавьте следующий `using` инструкции после существующего `using` инструкций.
+5. В *SimpleProjectFactory.cs*, добавьте следующий `using` инструкции после существующего `using` инструкций.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-6.  Производные `SimpleProjectFactory` класса из `ProjectFactory`.
+6. Производные `SimpleProjectFactory` класса из `ProjectFactory`.
 
     ```csharp
     class SimpleProjectFactory : ProjectFactory
     ```
 
-7.  Добавьте следующий метод фиктивный `SimpleProjectFactory` класса. Этот метод реализуется в одном из следующих разделов.
+7. Добавьте следующий метод фиктивный `SimpleProjectFactory` класса. Этот метод реализуется в одном из следующих разделов.
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -318,7 +318,7 @@ Templates
     }
     ```
 
-8.  Добавьте следующие поля и конструктор для `SimpleProjectFactory` класса. Это `SimpleProjectPackage` ссылку кэшируется в скрытом поле, чтобы его можно использовать при установке сайта поставщика услуг.
+8. Добавьте следующие поля и конструктор для `SimpleProjectFactory` класса. Это `SimpleProjectPackage` ссылку кэшируется в скрытом поле, чтобы его можно использовать при установке сайта поставщика услуг.
 
     ```csharp
     private SimpleProjectPackage package;
@@ -337,17 +337,17 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>Для проверки реализации фабрики проектов
 
-1.  В *SimpleProjectFactory.cs* файл, установите точку останова на следующую строку в `SimpleProjectFactory` конструктор.
+1. В *SimpleProjectFactory.cs* файл, установите точку останова на следующую строку в `SimpleProjectFactory` конструктор.
 
     ```csharp
     this.package = package;
     ```
 
-2.  Нажмите клавишу **F5** запустить экспериментальный экземпляр Visual Studio.
+2. Нажмите клавишу **F5** запустить экспериментальный экземпляр Visual Studio.
 
-3.  В экспериментальном экземпляре приступить к созданию нового проекта. В **новый проект** выберите **SimpleProject** тип проекта, а затем нажмите кнопку **ОК**. Выполнение прекратится в точке останова.
+3. В экспериментальном экземпляре приступить к созданию нового проекта. В **новый проект** выберите **SimpleProject** тип проекта, а затем нажмите кнопку **ОК**. Выполнение прекратится в точке останова.
 
-4.  Удалите точку останова и остановить отладку. Так как мы еще не создали узел проекта, код создания проекта по-прежнему создает исключения.
+4. Удалите точку останова и остановить отладку. Так как мы еще не создали узел проекта, код создания проекта по-прежнему создает исключения.
 
 ## <a name="extend-the-projectnode-class"></a>Расширение класса ProjectNode
  Теперь вы можете реализовать `SimpleProjectNode` класс, который является производным от `ProjectNode` класса. `ProjectNode` Базовый класс обрабатывает следующие задачи создания проекта:
@@ -416,13 +416,13 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Для подключения класс фабрики проекта и класс узла
 
-1.  В *SimpleProjectFactory.cs* добавьте следующие `using` инструкции:
+1. В *SimpleProjectFactory.cs* добавьте следующие `using` инструкции:
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
     ```
 
-2.  Замените `SimpleProjectFactory.CreateProject` метода, используя следующий код.
+2. Замените `SimpleProjectFactory.CreateProject` метода, используя следующий код.
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -434,18 +434,18 @@ Templates
     }
     ```
 
-3.  Перестройте решение и убедитесь, что сборка выполняется без ошибок.
+3. Перестройте решение и убедитесь, что сборка выполняется без ошибок.
 
 ## <a name="test-the-projectnode-class"></a>Класс ProjectNode теста
  Протестируйте свою фабрику проекта, чтобы понять, каким он иерархии проекта.
 
 ### <a name="to-test-the-projectnode-class"></a>Чтобы протестировать класс ProjectNode
 
-1.  Нажмите клавишу **F5** , чтобы начать отладку. В экспериментальном экземпляре создайте новый SimpleProject.
+1. Нажмите клавишу **F5** , чтобы начать отладку. В экспериментальном экземпляре создайте новый SimpleProject.
 
-2.  Visual Studio следует вызывать фабрикой проекта для создания проекта.
+2. Visual Studio следует вызывать фабрикой проекта для создания проекта.
 
-3.  Закройте экспериментальный экземпляр Visual Studio.
+3. Закройте экспериментальный экземпляр Visual Studio.
 
 ## <a name="add-a-custom-project-node-icon"></a>Добавить значок узла пользовательского проекта
  Значок узла проекта в одном из предыдущих разделов — значок по умолчанию. Его можно изменить для пользовательского значка.
@@ -527,13 +527,13 @@ Templates
 
 ### <a name="to-test-the-custom-project-node-icon"></a>Для тестирования значок узла пользовательского проекта
 
-1.  Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.
+1. Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.
 
-2.  Обратите внимание, что в проекте только что созданный *SimpleProjectNode.bmp* используется в качестве значка узла проекта.
+2. Обратите внимание, что в проекте только что созданный *SimpleProjectNode.bmp* используется в качестве значка узла проекта.
 
      ![Простой проект новый узел проекта](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3.  Откройте *Program.cs* в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.
+3. Откройте *Program.cs* в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.
 
     ```csharp
     using System;
@@ -601,9 +601,9 @@ Templates
 
 3. Проверить значения для `nameSpace` и `className` параметров.
 
-   -   `nameSpace` Получает значение \<RootNamespace > элемент в *\Templates\Projects\SimpleProject\SimpleProject.myproj* файл шаблона проекта. В этом случае используется значение `MyRootNamespace`.
+   - `nameSpace` Получает значение \<RootNamespace > элемент в *\Templates\Projects\SimpleProject\SimpleProject.myproj* файл шаблона проекта. В этом случае используется значение `MyRootNamespace`.
 
-   -   `className` Получает значение имени класса источника файла без расширения имени файла. В этом случае первый файл копируются в папку назначения является *AssemblyInfo.cs*; таким образом, значение className `AssemblyInfo`.
+   - `className` Получает значение имени класса источника файла без расширения имени файла. В этом случае первый файл копируются в папку назначения является *AssemblyInfo.cs*; таким образом, значение className `AssemblyInfo`.
 
 4. Удалите точку останова и нажмите клавишу **F5** следует продолжить выполнение.
 

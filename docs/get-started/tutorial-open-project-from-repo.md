@@ -2,7 +2,7 @@
 title: Учебник. Открытие проекта из репозитория
 description: Сведения об открытии проекта из репозитория Git или Azure DevOps с помощью Visual Studio.
 ms.custom: get-started
-ms.date: 03/13/2019
+ms.date: 03/30/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f017e0ef3d7b76ba4d5de18ecab614f030b07501
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070078"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857571"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Учебник. Открытие проекта из репозитория
 
@@ -33,15 +33,17 @@ ms.locfileid: "58070078"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 
 ::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>Открытие проекта из репозитория GitHub
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-1. В строке меню вверху выберите **Файл** > **Открыть** > **Открыть из системы управления версиями**.
+1. В верхней строке меню выберите **Файл** > **Открыть** > **Открыть из системы управления версиями**.
 
    Откроется **панель подключения к Team Explorer**.
 
@@ -69,11 +71,37 @@ ms.locfileid: "58070078"
 
    ![Анимация открытия проекта из репозитория GitHub с помощью Visual Studio](./media/open-project-from-github.gif)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Запустите Visual Studio 2019.
+
+1. В начальном окне выберите **Клонировать или извлечь без кода**.
+
+   ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Введите или укажите расположение репозитория и выберите **Клонировать**.
+
+   ![Просмотр окна "Клонирование или извлечение кода"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Visual Studio откроет проект из репозитория.
+
+1. Если у вас есть файл решения, он будет отображаться в раскрывающемся меню "Решения и папки". Выберите его, и Visual Studio откроет нужное решение.
+
+   ![Выбор элемента для отображения из раскрывающегося списка в обозревателе решений](./media/open-proj-repo-github-solutions-folders-picker.png)
+
+   Если в используемом репозитории нет файла решения (SLN-файла), раскрывающееся меню будет содержать текст No Solutions Found (Решение не найдено). Но вы можете дважды щелкнуть любой файл в меню папок, чтобы открыть этот файл в редакторе кода Visual Studio.
+
+::: moniker-end
+
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Открытие проекта из репозитория Azure DevOps
+
+::: moniker range="vs-2017"
 
 1. Откройте Visual Studio 2017.
 
-1. В строке меню вверху выберите **Файл** > **Открыть** > **Открыть из системы управления версиями**.
+1. В верхней строке меню выберите **Файл** > **Открыть** > **Открыть из системы управления версиями**.
 
    Откроется **панель подключения к Team Explorer**.
 
@@ -103,7 +131,48 @@ ms.locfileid: "58070078"
    Файл решения (SLN-файл) будет отображаться в раскрывающемся меню "Решения и папки". Выберите его, и Visual Studio откроет нужное решение.
 
    Если в используемом репозитории нет файла решения, раскрывающееся меню будет содержать текст No Solutions Found (Решение не найдено). Но вы можете дважды щелкнуть любой файл в меню папок, чтобы открыть этот файл в редакторе кода Visual Studio.
-  
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Запустите Visual Studio 2019.
+
+1. В начальном окне выберите **Клонировать или извлечь без кода**.
+
+   ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. В разделе **Обзор репозитория** выберите **Azure DevOps**.
+
+   ![Просмотр окна "Клонирование или извлечение кода"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Если появится окно входа, войдите в свою учетную запись.
+
+1. В диалоговом окне **Подключение к проекту** выберите репозиторий, к которому вы хотите подключиться, а затем щелкните **Клонировать**.
+
+      ![Диалоговое окно "Подключение к проекту", созданное в Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+
+    > [!NOTE]
+    > Содержимое этого списка зависит от того, какие репозитории Azure DevOps вам доступны.
+
+   Visual Studio открывает **Team Explorer**, и после завершения клонирования появится уведомление.
+
+     ![Окно Team Explorer в Visual Studio после завершения клонирования](./media/vs-2019/clone-complete-azure-devops.png)
+
+1. Чтобы просмотреть папки и файлы, нажмите на ссылку **Показать представление папки**.
+
+     ![Раздел "Решения" в окне Team Explorer в Visual Studio после завершения клонирования](./media/vs-2019/show-folder-view-azure-devops.png)
+
+     Visual Studio откроет **обозреватель решений**.
+
+1. Нажмите на ссылку **Решения и папки**, чтобы найти файл решения (SLN-файл), который нужно открыть.
+
+      ![Уведомление "Решения и папки" от Team Explorer в Visual Studio](./media/open-proj-repo-solutions-folders.png)
+
+   Если в используемом репозитории нет файла решения, появится сообщение "Решение не найдено". Но вы можете дважды щелкнуть любой файл в меню папок, чтобы открыть этот файл в редакторе кода Visual Studio.
+
+::: moniker-end
+
 ## <a name="next-steps"></a>Следующие шаги
 
 Если вы готовы создавать код в Visual Studio, переходите к любому из следующих учебников по конкретным языкам:
@@ -112,9 +181,9 @@ ms.locfileid: "58070078"
 - [Учебники по Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Учебники по Visual Studio | **C++**](/cpp/get-started/)
 - [Учебники по Visual Studio | **Python**](/visualstudio/python/)
-- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
+- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>См. также
 
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services. Начало работы с Azure Repos и Visual Studio)
+- [Azure DevOps Services. Начало работы с Azure Repos и Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn. Начало работы с Azure DevOps](/learn/modules/get-started-with-devops/)

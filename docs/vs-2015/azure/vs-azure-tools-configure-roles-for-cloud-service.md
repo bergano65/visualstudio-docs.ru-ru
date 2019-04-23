@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059448"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Настройка ролей для облачной службы Azure в Visual Studio
 Облачной службе Azure можно назначить одну или несколько рабочих ролей или веб-ролей. Для каждой роли нужно определить способ настройки, а также настроить способ выполнения. Дополнительные сведения о ролях в облачных службах см. в видео [Введение в облачные службы Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ ms.locfileid: "59002323"
 
 Чтобы просмотреть файл, созданный с помощью кода из предыдущего раздела, выполните следующие действия:
 
-1.  В области уведомлений Windows щелкните правой кнопкой мыши значок Azure и в контекстном меню выберите пункт **Show Compute Emulator UI** (Показать пользовательский интерфейс эмулятора вычислений).
+1. В области уведомлений Windows щелкните правой кнопкой мыши значок Azure и в контекстном меню выберите пункт **Show Compute Emulator UI** (Показать пользовательский интерфейс эмулятора вычислений).
 
     ![Показать пользовательский интерфейс эмулятора вычислений](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

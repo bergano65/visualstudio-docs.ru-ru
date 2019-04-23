@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044828"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Практическое руководство. Включение и отключение полного анализа решения для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58979119"
   
 #### <a name="to-toggle-full-solution-analysis"></a>Чтобы включить полный анализ решения  
   
-1.  В главном меню в Visual Studio, выберите **средства** &#124; **параметры** для просмотра **параметры** диалоговое окно.  
+1. В главном меню в Visual Studio, выберите **средства** &#124; **параметры** для просмотра **параметры** диалоговое окно.  
   
-2.  В **параметры** диалоговое окно, выберите **текстовый редактор** &#124; **C#** или **основные** &#124; **Дополнительно**.  
+2. В **параметры** диалоговое окно, выберите **текстовый редактор** &#124; **C#** или **основные** &#124; **Дополнительно**.  
   
-3.  Выберите **включить полный анализ решения** флажок, чтобы включить полный анализ решения или снимите флажок, чтобы отключить его. Выберите **ОК** кнопки, когда все будет готово.  
+3. Выберите **включить полный анализ решения** флажок, чтобы включить полный анализ решения или снимите флажок, чтобы отключить его. Выберите **ОК** кнопки, когда все будет готово.  
   
      ![Установите флажок analysis полное решение. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

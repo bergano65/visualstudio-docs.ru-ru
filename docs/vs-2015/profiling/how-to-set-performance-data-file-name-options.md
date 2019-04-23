@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документы Майкрософт
+title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057840"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными о производительности
+# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Параметры имени файла данных производительности набора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 По умолчанию файл данных профилирования (VSP) сохраняется со следующим синтаксисом:  
@@ -27,7 +27,7 @@ ms.locfileid: "54760418"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ ms.locfileid: "54760418"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Изменение синтаксиса именования файлов данных профилирования сеанса анализа производительности  
   
-1.  В **обозревателе производительности** щелкните правой кнопкой мыши имя сеанса производительности, а затем выберите **Свойства**.  
+1. В **обозревателе производительности** щелкните правой кнопкой мыши имя сеанса производительности, а затем выберите **Свойства**.  
   
-2.  Щелкните **Общие**.  
+2. Щелкните **Общие**.  
   
-3.  В разделе **Отчет** настройте любые из указанных ниже параметров.  
+3. В разделе **Отчет** настройте любые из указанных ниже параметров.  
   
     |||  
     |-|-|  

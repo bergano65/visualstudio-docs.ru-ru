@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043978"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Практическое руководство. Добавление узлов в рабочую область в обозревателе схем XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ ms.locfileid: "59651505"
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Добавление узла посредством контекстного меню обозревателя XML  
   
-1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  В обозревателе XSD щелкните правой кнопкой мыши узел `PurchaseOrderType`. Выберите **Показать в представлении графика**.  
+2. В обозревателе XSD щелкните правой кнопкой мыши узел `PurchaseOrderType`. Выберите **Показать в представлении графика**.  
   
      Узел `purchaseOrderType` будет отображен в области конструктора в представлении графиков.  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Перетаскивание узла на представление  
   
-1.  В представлении графика щелкните правой кнопкой мыши узел `PurchaseOrderType`. Выберите **Показать в обозревателе XML-схем**.  
+1. В представлении графика щелкните правой кнопкой мыши узел `PurchaseOrderType`. Выберите **Показать в обозревателе XML-схем**.  
   
      Узел будет выделен в обозревателе XML-схем.  
   
-2.  Щелкните правой кнопкой мыши `PurchaseOrderType` узел в обозревателе XML-схем и выберите **Показать все ссылки**.  
+2. Щелкните правой кнопкой мыши `PurchaseOrderType` узел в обозревателе XML-схем и выберите **Показать все ссылки**.  
   
      Узел `purchaseOrder` выделен.  
   
-3.  Перетащите узел `purchaseOrder` в представление графика.  
+3. Перетащите узел `purchaseOrder` в представление графика.  
   
      Узел `purchaseOrder` и узел `PurchaseOrderType` будут отображены рядом друг с другом в области конструктора в представлении графиков. Поскольку два узла связаны друг с другом (элемент `purchaseOrder` является типом `PurchaseOrderType`), между ними появится стрелочка.  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>Добавление узлов с использованием возможностей поиска обозревателя схем  
   
-1.  В текстовом поле поиска введите «purchaseOrder» [обозреватель XML](../xml-tools/xml-schema-explorer.md) панель инструментов и нажмите кнопку поиска.  
+1. В текстовом поле поиска введите «purchaseOrder» [обозреватель XML](../xml-tools/xml-schema-explorer.md) панель инструментов и нажмите кнопку поиска.  
   
      ![Поиск по ключевому слову обозреватель схемы XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Результаты поиска также выделяются в обозревателе XML-схем и отмечаются галочками на вертикальной полосе прокрутки.  
   
-2.  Добавить результаты поиска в рабочую область, щелкнув **Добавить выделенные узлы в рабочую область** кнопку на панели сводных результатов.  
+2. Добавить результаты поиска в рабочую область, щелкнув **Добавить выделенные узлы в рабочую область** кнопку на панели сводных результатов.  
   
      ![Результаты поиска в обозревателе схемы XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

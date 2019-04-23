@@ -1,7 +1,7 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323848"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857532"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -102,7 +102,7 @@ ms.locfileid: "58323848"
 | Сведения о репозитории GitHub | api.github.com | https | 443 | Требуется для получения дополнительных сведений о пакетах Bower |
 | Веб-анализаторы кода | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Создание проекта<br>шаблонов обозревателя<br>обнаружение <br><br>Создание проекта <br>в обозревателе<br> Cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Используется для обнаружения шаблонов в Интернете из рекомендуемого нами веб-канала и репозиториев GitHub <br><br>Используется для создания проекта из шаблона Cookiecutter, для которого требуется один раз по требованию установить пакет Python для Cookiecutter из индекса пакета Python (PyPI) |
-| Управление <br>обнаружение<br><br>Управление <br>управление<br><br>Python <br>Создание проекта <br>шаблоны | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Позволяет выполнять поиск пакетов PIP<br><br>Используется для автоматической установки пакета PIP, если он отсутствует <br><br> Используется для создания <br><br>Используется для разрешения следующих шаблонов проектов Python в URL-адреса шаблонов Cookiecutter в диалоговом окне создания проекта:<br> — проект классификатора;<br>— проект кластеризации; <br> — проект регрессии; <br> — PyGame с использованием PyKinect; <br> — проект Pyvot. |
+| Управление <br>обнаружение<br><br>Управление <br>управление<br><br>Новый <br>Python <br> проект <br>шаблоны | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Позволяет выполнять поиск пакетов PIP<br><br>Используется для автоматической установки пакета PIP, если он отсутствует <br><br>Используется для разрешения следующих новых шаблонов проектов Python в URL-адреса шаблонов Cookiecutter:<br> — проект классификатора;<br>— проект кластеризации; <br> — проект регрессии; <br> — PyGame с использованием PyKinect; <br> — проект Pyvot. |
 | Служба <br>надстройка <br> манифеста <br>Проверка <br>Служба | verificationservice.osi.office.net | https | 443 | Используется для проверки манифестов веб-надстроек Office |
 | Веб-надстройки для SharePoint и <br>Office Add-ins | sharepoint.com | https | 443 | Используется для публикации и тестирования надстроек SharePoint и Office в SharePoint Online |
 | Узел службы <br>тестирования<br> Узел | | http | 12292 | Правило брандмауэра, которое создается автоматически для тестирования надстроек SharePoint с помощью рабочих процессов |
@@ -141,7 +141,8 @@ ms.locfileid: "58323848"
 
 ## <a name="see-also"></a>См. также
 
+* [Требования к подключению для Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Создание сетевой установки Visual Studio](create-a-network-installation-of-visual-studio.md)
-* [Исправление ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Исправление ошибок сети в Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Установка в среде, защищенной брандмауэром или прокси-сервером (Visual Studio для Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155673"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789683"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Установка окна справки (Майкрософт)
 
@@ -31,11 +31,11 @@ ms.locfileid: "56155673"
 
 1. Нажмите кнопку **Изменить**, чтобы начать установку окна справки (Майкрософт).
 
-Окно справки (Майкрософт) можно также легко установить с помощью поля **Быстрый запуск**.
+Окно справки (Майкрософт) можно также легко установить с помощью поля поиска:
 
-1. В поле **Быстрый запуск** в заголовке окна Visual Studio введите **окно справки**.
+1. Нажмите клавиши **CTRL**+**Q** и введите **средство просмотра справки** в поле поиска.
 
-   ![Поле "Быстрый запуск"](media/installation/quick-launch.png)
+   ![Поле поиска](media/installation/quick-launch.png)
 
 1. Выберите результат **Окно справки (отдельный компонент)**.
 

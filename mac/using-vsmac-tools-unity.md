@@ -3,14 +3,14 @@ title: Применение инструментов Visual Studio для Mac д
 description: В этом руководстве описывается использование инструментов Visual Studio для Mac для Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027306"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857012"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Применение инструментов Visual Studio для Mac для Unity
 
@@ -103,6 +103,13 @@ ms.locfileid: "53027306"
 
 3. Когда игра запущена в редакторе Unity при подключении к Visual Studio, все проходимые точки останова будут приостанавливать выполнение игры и выводить соответствующую строку кода в Visual Studio для Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Запуск отладки за один шаг
+
+Начать отладку и воспроизведение в редакторе Unity можно за один шаг, непосредственно из Visual Studio для Mac, выбрав конфигурацию **Подключение к Unity и воспроизведение**.
+
+![Выбор "Подключение к Unity и воспроизведение"](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Остановка отладки
 
 Чтобы остановить отладку, сделайте следующее:
@@ -110,5 +117,8 @@ ms.locfileid: "53027306"
 1. Нажмите кнопку **Остановить** в Visual Studio для Mac или клавиши **SHIFT+COMMAND+ВВОД**.
 
    ![Нажатие кнопки "Остановить" в Visual Studio](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Если вы запустили отладку с помощью конфигурации **Подключение к Unity и воспроизведение**, кнопка **Остановить** также останавливает Unity.
 
 Дополнительные сведения об отладке в Visual Studio для Mac см. в разделе [Использование отладчика](debugging.md).

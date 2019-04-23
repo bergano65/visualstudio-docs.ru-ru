@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045986"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58992713"
 
  В случае нехватки памяти происходит следующее:
 
--   Полный анализ решения для Visual C# и Visual Basic будет отключен.
+- Полный анализ решения для Visual C# и Visual Basic будет отключен.
 
--   [Сборка мусора](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) режиме с малым временем задержки (GC) для Visual C# и Visual Basic будут отключены.
+- [Сборка мусора](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) режиме с малым временем задержки (GC) для Visual C# и Visual Basic будут отключены.
 
--   Visual Studio кэшей будут сброшены.
+- Visual Studio кэшей будут сброшены.
 
 ## <a name="improve-visual-studio-performance"></a>Повышения производительности Visual Studio
  Советы и рекомендации по повышению производительности Visual Studio при работе с большими решениями или условия нехватки памяти, см. в разделе [особенности производительности для крупных решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ ms.locfileid: "58992713"
 
 Все кэши Visual Studio очищаются немедленно, но начинает повторно заполнить, если вы по-прежнему текущего сеанса, разработки или перезапустите Visual Studio. Кэши записаны на диск включить кэшей для следующих компонентов.
 
--   Найти все ссылки
+- Найти все ссылки
 
--   Функция "Перейти к"
+- Функция "Перейти к"
 
--   Добавление директивы Using
+- Добавление директивы Using
 
 Кроме того кэш, используемый для внутренних операций Visual Studio, также будут удалены.
 

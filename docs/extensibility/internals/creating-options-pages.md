@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044509"
 ---
 # <a name="create-options-pages"></a>Создание страниц параметров
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформа managed package framework, классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, добавив **параметры** страницы в разделе **средства** меню.
@@ -25,9 +25,9 @@ ms.locfileid: "56633087"
 
  Поскольку среды создает экземпляр объекта, реализующего определенный **Сервис-Параметры** странице при отображении соответствующих страниц с помощью IDE:
 
--   Объект **Сервис, параметры** страницы должен быть реализован на свой собственный объект, а не на объект, реализующий VSPackage.
+- Объект **Сервис, параметры** страницы должен быть реализован на свой собственный объект, а не на объект, реализующий VSPackage.
 
--   Объект не может реализовывать несколько **Сервис-Параметры** страниц.
+- Объект не может реализовывать несколько **Сервис-Параметры** страниц.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Регистрируется как поставщик страницы параметров средств
  Конфигурацию VSPackage вспомогательные пользователя через **Сервис-Параметры** страниц показывает объекты, дает **Сервис-Параметры** страниц, применяя экземпляров <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> применяется к <xref:Microsoft.VisualStudio.Shell.Package>реализации.
@@ -59,21 +59,21 @@ ms.locfileid: "56633087"
 ## <a name="example"></a>Пример
  Ниже приведен реализацию простых «Hello world» страницы параметров. Добавив следующий код в проект по умолчанию создан с помощью шаблона пакета Visual Studio с **команды меню** выбран параметр будет адекватно продемонстрировать функциональные возможности параметра страницы.
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Следующий класс определяет страницу Параметры минимальной «Hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.
 
 ### <a name="code"></a>Код
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Применение следующий атрибут к классу пакета доступны параметры, на странице при загрузке пакета. Числа являются произвольные идентификаторы ресурсов для категории и страницы, и логическое значение в конце указывает, поддерживает ли страница службы автоматизации.
 
 ### <a name="code"></a>Код
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Следующий обработчик событий возвращает результат в зависимости от значения свойства, заданного на странице параметров. Она использует <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> метод с результатом явным образом привести к типу страницы настраиваемый параметр для доступа к свойствам на странице.
 
  В случае проектов, созданных с помощью шаблона пакета, вызовите эту функцию из `MenuItemCallback` добавлена функция, чтобы присоединить его к команды по умолчанию для **средства** меню.

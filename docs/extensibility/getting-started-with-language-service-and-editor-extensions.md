@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049026"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и служба языка
 Для добавления функций языка, таких как структурирование, парные фигурные скобки, IntelliSense и лампочки, чтобы выбранном языке программирования или к любому типу содержимого можно использовать расширения редактора. Вы также можете настроить внешний вид и поведение редактора в Visual Studio, например текст конструкций, поля, элементы оформления и других визуальных элементов. Также можно определить свой собственный тип содержимого и затем указать внешний вид и поведение представления текста, в которых отображается содержимое.
@@ -82,9 +82,9 @@ ms.locfileid: "56712025"
 
  Также можно создать редактор компонентов MEF из расширения пакета Visual Studio. См Дополнительные сведения:
 
--   [Пошаговое руководство: Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Пошаговое руководство: Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Пошаговое руководство: Использование сочетаний клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Пошаговое руководство: Использование сочетаний клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>См. также
 - [Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)

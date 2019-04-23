@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047311"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58991442"
 
  Чтобы использовать удаленный компьютер воспроизведения под управлением Windows 10 с компьютера разработки под управлением Windows 8.1, необходимо установить пакет SDK для Windows 10 на компьютере разработки и необязательный компонент графических инструментов на компьютере воспроизведения.
 
-##  <a name="InstallGraphicsTools"></a> Установка графических инструментов для Windows 10
+## <a name="InstallGraphicsTools"></a> Установка графических инструментов для Windows 10
  В Windows 10 инфраструктура диагностики графики предоставляется дополнительным компонентом Windows, который называется *Графические инструменты*. Данный компонент необходим для записи и воспроизведения графической информации в Windows 10 независимо от того, производится ли запись для приложения, настроенного на предыдущую версию Windows, и какую версию Direct3D оно использует. Вы можете установить компонент графических инструментов заранее; в противном случае он будет установлен по требованию при первом запуске сеанса диагностики графики из Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Установка графических инструментов для Windows 10
@@ -87,7 +87,7 @@ ms.locfileid: "58991442"
 
 ##### <a name="to-capture-single-frames"></a>Запись отдельных кадров
 
--   В Visual Studio на панели инструментов графики или в окне сеанса диагностики нажмите кнопку **Записать кадр**. Или, если ваше приложение имеет фокус, просто нажмите клавиши **Print Screen**.
+- В Visual Studio на панели инструментов графики или в окне сеанса диагностики нажмите кнопку **Записать кадр**. Или, если ваше приложение имеет фокус, просто нажмите клавиши **Print Screen**.
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>Запись последовательности кадров
 

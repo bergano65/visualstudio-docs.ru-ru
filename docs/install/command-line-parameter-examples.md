@@ -1,7 +1,7 @@
 ---
 title: Примеры параметров командной строки для установки
 description: Настройте эти примеры, чтобы произвести собственную установку Visual Studio из командной строки.
-ms.date: 01/16/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6f7fe4a26da2c2b8d37215cd71e39eacf92eaa37
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324270"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789966"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Примеры параметров командной строки для установки Visual Studio
 
@@ -38,17 +38,17 @@ ms.locfileid: "58324270"
 * Установите минимальный экземпляр Visual Studio без интерактивных запросов с отображением хода выполнения процесса:
 
   ```cmd
-  vs_enterprise.exe --installPath C:\minVS ^
+   vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
   ```
 
 * Обновите экземпляр Visual Studio с помощью командной строки без интерактивных запросов но с отображением хода выполнения процесса:
 
-  ```cmd
-  vs_enterprise.exe --update --quiet --wait
-  vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
-  ```
+   ```cmd
+   vs_enterprise.exe --update --quiet --wait
+   vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+   ```
 
   > [!NOTE]
   > Обе команды являются обязательными. Первая команда обновляет Visual Studio Installer. Первая команда обновляет экземпляр Visual Studio. Чтобы избежать появления диалогового окна "Контроль учетных записей", запустите командную строку с правами администратора.
@@ -56,7 +56,7 @@ ms.locfileid: "58324270"
 * Выполните автоматическую установку экземпляра Visual Studio для настольных ПК с французским языковым пакетом. Управление должно возвращаться только после завершения установки продукта.
 
   ```cmd
-  vs_enterprise.exe --installPath C:\desktopVS ^
+   vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
@@ -64,20 +64,20 @@ ms.locfileid: "58324270"
 
 ## <a name="using---wait"></a>Использование параметра --wait
 
-* Этот параметр используется в пакетных файлах или скриптах для указания того, что нужно дождаться завершения работы установщика Visual Studio, прежде чем выполнять следующую команду. При использовании пакетных файлов переменная окружения `%ERRORLEVEL%` будет содержать значение, возвращаемое командой, как описано в статье [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Некоторые программы командной строки требуют указания дополнительных параметров для ожидания завершения работы и получения возвращаемого значения установщика. Ниже приведен пример дополнительных параметров, используемых в команде скрипта PowerShell Start-Process:
+* Этот параметр используется в пакетных файлах или скриптах для указания того, что нужно дождаться завершения работы установщика Visual Studio, прежде чем выполнять следующую команду. При использовании пакетных файлов переменная среды `%ERRORLEVEL%` будет содержать значение, возвращаемое командой, как описано в статье [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Некоторые программы командной строки требуют указания дополнительных параметров для ожидания завершения работы и получения возвращаемого значения установщика. Ниже приведен пример дополнительных параметров, используемых в команде скрипта PowerShell Start-Process:
 
-  ```cmd
-  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
-  ```
-  
+   ```cmd
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   ```
+
 * Первый параметр, --wait, используется Visual Studio Installer, а второй, -Wait, — скриптом Start-Process для ожидания завершения работы. Параметр -PassThru используется скриптом Start-Process для получения возвращаемого значения с помощью кода выхода установщика.
-  
+
 ## <a name="using---layout"></a>Использование параметра --layout
 
 * Загрузите базовый редактор Visual Studio (минимальная конфигурация Visual Studio). Включите только английский языковой пакет:
 
   ```cmd
-  vs_community.exe --layout C:\VS2017
+   vs_community.exe --layout C:\VS
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
   ```
@@ -85,7 +85,7 @@ ms.locfileid: "58324270"
 * Скачайте среду .NET для настольного ПК и рабочие нагрузки .NET, а также все рекомендуемые компоненты и расширение GitHub. Включите только английский языковой пакет:
 
   ```cmd
-  vs_community.exe --layout C:\VS2017 ^
+   vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
@@ -95,35 +95,56 @@ ms.locfileid: "58324270"
 
 ## <a name="using---all"></a>Использование параметра --all
 
-* Запустите интерактивную установку всех рабочих нагрузок и компонентов, доступных для выпуска Visual Studio 2017 Enterprise:
+* Запустите интерактивную установку всех рабочих нагрузок и компонентов, доступных для выпуска Visual Studio Enterprise:
 
-  ```cmd
-  vs_enterprise.exe --all
-  ```
+   ```cmd
+   vs_enterprise.exe --all
+   ```
 
 ## <a name="using---includerecommended"></a>Использование параметра --includeRecommended
 
-* Установите второй именованный экземпляр Visual Studio Professional 2017 на компьютер с уже установленным выпуском Visual Studio Community 2017 с поддержкой разработки Node.js:
+* Установите второй именованный экземпляр Visual Studio Professional на компьютер с уже установленным выпуском Visual Studio Community с поддержкой разработки на Node.js:
 
-  ```cmd
-  vs_professional.exe --installPath C:\VSforNode ^
+   ```cmd
+   vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
 
 ## <a name="using---remove"></a>Использование параметра --remove
 
+::: moniker range="vs-2017"
+
 * Удалите компонент средств профилирования из установленного по умолчанию экземпляра Visual Studio:
 
   ```cmd
-  vs_enterprise.exe modify ^
+   vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
   ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* Удалите компонент средств профилирования из установленного по умолчанию экземпляра Visual Studio:
+
+  ```cmd
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
+
+::: moniker-end
+
 ## <a name="using---path"></a>Использование параметра --path
 
+::: moniker range="vs-2017"
+
 Эти параметры командной строки **впервые добавлены в версии 15.7**. Дополнительные сведения об их использовании см. в статье [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Указание пути для файлов установки, кэша и общих файлов:
 
@@ -143,36 +164,43 @@ ms.locfileid: "58324270"
 
 ## <a name="using-export"></a>Использование export
 
+::: moniker range="vs-2017"
+
 Эта команда командной строки **появилась в 15.9**. Дополнительные сведения см. в статье [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Использование export для сохранения выбранного компонента из установки:
 
-```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
-```
+  ```cmd
+  "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
+  ```
 
 * Использование export для сохранения пользовательского выбранного компонента с нуля:
 
-```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
-```
+  ```cmd
+  "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+  ```
 
 ## <a name="using---config"></a>Использование --config
 
+::: moniker range="vs-2017"
+
 Этот параметр командной строки **появился в 15.9**. Дополнительные сведения см. в статье [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Использование --config для установки рабочих нагрузок и компонентов из ранее сохраненного файла конфигурации установки:
 
-```cmd
-vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
-```
+  ```cmd
+  vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+  ```
 
 * Использование --config для добавления рабочих нагрузок и компонентов а существующую установку:
 
-```cmd
-vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
-```
-
+  ```cmd
+  vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+  ```
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

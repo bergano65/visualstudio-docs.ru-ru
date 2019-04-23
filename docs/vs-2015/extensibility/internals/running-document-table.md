@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044610"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ ms.locfileid: "58993974"
   
  Интегрированная среда разработки также использует RDT для resurface (переместить на передний план) открытого документа, если пользователь запрашивает этого документа. Дополнительные сведения см. в разделе [отображение файлов с помощью команды откройте файл](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Чтобы определить, открыт ли файл в RDT, выполните одно из следующих.  
   
--   Запрос моникер документа (то есть полный путь к документу) узнать, открыт ли элемент.  
+- Запрос моникер документа (то есть полный путь к документу) узнать, открыт ли элемент.  
   
--   Используйте идентификатор иерархия или элемент для попросите система проектов путь полный документ, а затем найдите элемент в RDT.  
+- Используйте идентификатор иерархия или элемент для попросите система проектов путь полный документ, а затем найдите элемент в RDT.  
   
 ## <a name="see-also"></a>См. также  
  [Использование RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   

@@ -7,14 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
-ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
+ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443797"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856681"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Установка Visual Studio 2017 для Mac
+
+> [!NOTE]
+> [Выпущена версия](installation.md?view=vsmac-2019) Visual Studio 2019 для Mac.
 
 ## <a name="requirements"></a>Требования
 
@@ -23,11 +26,8 @@ ms.locfileid: "54443797"
 Для работы с iOS в Visual Studio необходимы следующие компоненты:
 
 - Компьютер Mac с macOS Sierra 10.12 или более поздней версии
-- Xcode 8.3 или более поздней версии. Обычно рекомендуется использовать последнюю стабильную версию.
+- Xcode 9.3 или более поздней версии. Обычно рекомендуется использовать последнюю стабильную версию.
 - Идентификатор Apple ID. Если у вас нет идентификатора Apple ID, его можно создать на сайте https://appleid.apple.com. Он необходим для установки приложения Xcode и входа в него.
-
-> [!NOTE]
-> Visual Studio 2019 для Mac (предварительная версия) [теперь доступна](installation.md?view=vsmac-2019) для установки тестирования.
 
 ## <a name="install"></a>Установка
 

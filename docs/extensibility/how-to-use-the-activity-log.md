@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053134"
 ---
 # <a name="how-to-use-the-activity-log"></a>Практическое руководство. Использование журнала действий
 Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.
@@ -26,7 +26,7 @@ ms.locfileid: "57324017"
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Для записи в журнал действий
 
-1.  Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метода или в любой другой метод, кроме VSPackage конструктора:
+1. Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метода или в любой другой метод, кроме VSPackage конструктора:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,7 +40,7 @@ ms.locfileid: "57324017"
 
      Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службы и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Записывает информационную запись в журнал действий с использованием текущего контекста культуры.
 
-2.  После загрузки VSPackage (как правило, при вызове команды или открытии окна) текст записывается в журнал действий.
+2. После загрузки VSPackage (как правило, при вызове команды или открытии окна) текст записывается в журнал действий.
 
 ## <a name="to-examine-the-activity-log"></a>Для просмотра журнала действий
 

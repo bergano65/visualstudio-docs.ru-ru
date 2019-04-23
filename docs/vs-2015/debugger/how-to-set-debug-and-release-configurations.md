@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048196"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Практическое руководство. Настройка отладки и выпуска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "58979281"
   
 ### <a name="to-change-the-build-configuration"></a>Изменение конфигурации сборки  
   
-1.  В меню Построение: щелкните **сборки / Configuration Manager**, а затем выберите **Отладка** или **выпуска**.  
+1. В меню Построение: щелкните **сборки / Configuration Manager**, а затем выберите **Отладка** или **выпуска**.  
   
-2.  На панели инструментов выберите либо **Отладка** или **выпуска** из **конфигураций решения** поле со списком.  
+2. На панели инструментов выберите либо **Отладка** или **выпуска** из **конфигураций решения** поле со списком.  
   
      ![Конфигурация построения панели инструментов](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

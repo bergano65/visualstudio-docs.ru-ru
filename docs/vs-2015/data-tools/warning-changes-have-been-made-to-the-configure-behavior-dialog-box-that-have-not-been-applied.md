@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053901"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Предупреждение. В диалоговом окне «Настройка режима» внесены изменения, которые еще не применены
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "59651764"
   
 ### <a name="to-apply-the-change-and-continue"></a>Чтобы применить изменение и продолжить  
   
--   Нажмите кнопку **Да**, чтобы применить изменение к выбранному **Классу** и **Поведению**.  
+- Нажмите кнопку **Да**, чтобы применить изменение к выбранному **Классу** и **Поведению**.  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>Чтобы отменить предыдущее изменение и продолжить  
   
--   Нажмите кнопку **Нет**, чтобы отменить изменение выбранного **Класса** и **Поведения**.  
+- Нажмите кнопку **Нет**, чтобы отменить изменение выбранного **Класса** и **Поведения**.  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

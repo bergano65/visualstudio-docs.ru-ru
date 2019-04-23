@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049871"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Настройка IntelliSense для RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "54770329"
   
  Рассматриваются следующие задачи:  
   
--   настройка RequireJS в проектах ASP.NET;  
+- настройка RequireJS в проектах ASP.NET;  
   
--   настройка RequireJS в проектах JSProj, которые используются для сборки приложений Apache Cordova, приложений для Магазина Windows и HTML-приложений LightSwitch.  
+- настройка RequireJS в проектах JSProj, которые используются для сборки приложений Apache Cordova, приложений для Магазина Windows и HTML-приложений LightSwitch.  
   
-## <a name="customize-requirejs-in-aspnet-projects"></a>Настройка RequireJS в проектах ASP.NET  
+## <a name="customize-requirejs-in-aspnet-projects"></a>настройка RequireJS в проектах ASP.NET;  
  Поддержка RequireJS включается автоматически, когда в текущем файле JavaScript встречается ссылка на файл с именем require.js (подробнее см. в подразделе "Определение контекста IntelliSense" раздела [JavaScript IntelliSense](../ide/javascript-intellisense.md)). В проектах ASP.NET ссылка на файл require.js обычно осуществляется с помощью директивы /// \<reference/> в файле _references.js.  
   
 ### <a name="configure-the-data-main-attribute-in-an-aspnet-project"></a>Настройка атрибута data-main в проекте ASP.NET  
@@ -59,5 +59,5 @@ ms.locfileid: "54770329"
   
  Действия по настройке, которые требуются для проектов ASP.NET, в случае с файлом проекта JSProj не нужны. То есть файлы скриптов, используемые атрибутом `data-main` в теге script, который ссылается на файл require.js, загружаются автоматически для настройки require.js. HTML-файл, ссылающийся на require.js, также используется в качестве начальной страницы приложения.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [IntelliSense для JavaScript](../ide/javascript-intellisense.md)

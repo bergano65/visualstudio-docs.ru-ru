@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045491"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Управление документами на сервере с помощью класса ServerDocument
   Можно использовать `ServerDocument` в класс [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для управления несколькими аспектами настроек уровня документа, даже если не установлен Microsoft Office Word и Microsoft Office Excel. Можно выполнять следующие задачи:
@@ -40,7 +40,7 @@ ms.locfileid: "56630084"
 > [!NOTE]
 >  Если у вас есть на устаревшие приложения, использующего `ServerDocument` в класс `Visual Studio Tools for Office` системы (версии 3.0 среды выполнения), `Visual Studio Tools for Office` система (среда выполнения версии 3.0) должна быть установлена на компьютерах под управлением приложения. `Visual Studio 2010 Tools for Office runtime` Не может запускать эти приложения.
 
-##  <a name="CachedData"></a> Работа с кэшированными данными в документе
+## <a name="CachedData"></a> Работа с кэшированными данными в документе
  `ServerDocument` Класс предоставляет члены, которые можно использовать для работы с кэшем данных в настроенных документах. Дополнительные сведения о кэшированных данных, см. в разделе [кэшировать данные](../vsto/caching-data.md) и [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).
 
  Ниже перечислены элементы, которые можно использовать для работы с кэшированными данными.
@@ -50,7 +50,7 @@ ms.locfileid: "56630084"
 |Чтобы определить, является ли документ имеет кэш данных.|метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> ;|
 |Для доступа к кэшированным данным в документе.<br /><br /> Дополнительные сведения см. в разделе [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).|Свойство <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>.|
 
-##  <a name="CustomizationInfo"></a> Управление настройки документа
+## <a name="CustomizationInfo"></a> Управление настройки документа
  Можно использовать члены `ServerDocument` класса для управления сборкой настройки, связанной с документом. Например можно программным способом удалить настройку из документа, чтобы документ больше не является частью настройки.
 
  Ниже перечислены элементы, которые можно использовать для управления сборки настройки.

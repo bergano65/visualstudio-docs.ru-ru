@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872068"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790437"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 
@@ -64,6 +64,7 @@ ms.locfileid: "57872068"
 
 Ознакомьтесь с примером кода Windows SDK [LoggingSession Sample](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
+::: moniker range="vs-2017"
 **Добавление делений в код JavaScript**
 
 Для добавления пользовательских делений добавьте следующий код в тех местах кода, которые необходимо отметить:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* — строка, содержащая сообщение, которое будет отображаться в подсказке пользовательского деления.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Настройка среды для профилирования
  Для получения точных оценок необходимо профилировать расход энергии приложением на устройстве с низким энергопотреблением, которое работает на своих аккумуляторах. Поскольку Visual Studio не работает на большинстве таких устройств, к устройству потребуется подключить компьютер Visual Studio с помощью инструментов удаленной отладки Visual Studio. Для подключения к удаленному устройству необходимо настроить как проект Visual Studio, так и удаленное устройство. См. дополнительные сведения о [запуске приложений универсальной платформы Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Другие источники
 
-- В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) и [JavaScript и HTML](/previous-versions/windows/apps/hh452983(v=win.10)) описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.
+- В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.
 
    Имитатор Visual Studio для приложений универсальной платформы Windows позволяет имитировать свойства подключений для передачи данных интерфейсов API, предоставляющих информацию о сети. См. раздел [Запуск приложений универсальной платформы Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).
 
-- Инструменты **Время выполнения функций JavaScript** и **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. Дополнительные сведения см. в статье об [анализе использования ЦП](../profiling/beginners-guide-to-performance-profiling.md).
+- Инструменты **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. Дополнительные сведения см. в статье об [анализе использования ЦП](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>См. также
 

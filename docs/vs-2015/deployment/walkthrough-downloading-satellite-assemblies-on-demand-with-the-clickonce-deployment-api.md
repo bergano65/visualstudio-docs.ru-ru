@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58979968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050690"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ ms.locfileid: "58979968"
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Загрузка вспомогательных сборок по требованию  
   
-1.  Добавьте следующий код в приложение, чтобы включить загрузку вспомогательных сборок по требованию.  
+1. Добавьте следующий код в приложение, чтобы включить загрузку вспомогательных сборок по требованию.  
   
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2.  Создайте вспомогательные сборки для приложения с помощью [Resgen.exe (генератор файлов ресурсов)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Создайте вспомогательные сборки для приложения с помощью [Resgen.exe (генератор файлов ресурсов)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Создайте манифест приложения или откройте существующий манифест приложения с помощью MageUI.exe. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Создайте манифест приложения или откройте существующий манифест приложения с помощью MageUI.exe. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-4.  Щелкните вкладку **Файлы** .  
+4. Щелкните вкладку **Файлы** .  
   
-5.  Щелкните кнопку **многоточие** (**...**) и выберите каталог, содержащий все сборки и файлы вашего приложения, включая вспомогательные сборки, созданные с помощью инструмента Resgen.exe. (Вспомогательная сборка будет иметь имя в формате *isoCode*\ApplicationName.Resources.dll, где *isoCode* — это идентификатор языка в формате RFC 1766.)  
+5. Щелкните кнопку **многоточие** (**...**) и выберите каталог, содержащий все сборки и файлы вашего приложения, включая вспомогательные сборки, созданные с помощью инструмента Resgen.exe. (Вспомогательная сборка будет иметь имя в формате *isoCode*\ApplicationName.Resources.dll, где *isoCode* — это идентификатор языка в формате RFC 1766.)  
   
-6.  Щелкните **Заполнить** , чтобы добавить файлы в ваше развертывание.  
+6. Щелкните **Заполнить** , чтобы добавить файлы в ваше развертывание.  
   
-7.  Установите флажок **Необязательно** для каждой вспомогательной сборки.  
+7. Установите флажок **Необязательно** для каждой вспомогательной сборки.  
   
-8.  Установите в поле группировки для каждой вспомогательной сборки соответствующий идентификатор языка по ISO. Например, для японской вспомогательной сборки нужно указать имя группы загрузки `ja-JP`. В результате код, добавленный вами в шаге 1, сможет загружать соответствующую вспомогательную сборку в зависимости от настройки свойства <xref:System.Threading.Thread.CurrentUICulture%2A> у пользователя.  
+8. Установите в поле группировки для каждой вспомогательной сборки соответствующий идентификатор языка по ISO. Например, для японской вспомогательной сборки нужно указать имя группы загрузки `ja-JP`. В результате код, добавленный вами в шаге 1, сможет загружать соответствующую вспомогательную сборку в зависимости от настройки свойства <xref:System.Threading.Thread.CurrentUICulture%2A> у пользователя.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  В продуктивной среде, скорее всего, потребуется удалить строку в примере кода, задающую определенное значение для свойства <xref:System.Threading.Thread.CurrentUICulture%2A> , потому что на клиентских компьютерах правильное значение будет задаваться по умолчанию. Если приложение выполняется на клиентском компьютере с японским языком, например, свойство <xref:System.Threading.Thread.CurrentUICulture%2A> будет по умолчанию равно `ja-JP` . Программная установка этого значения — хороший способ проверить вспомогательные сборки перед развертыванием приложения.  

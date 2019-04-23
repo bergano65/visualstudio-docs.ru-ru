@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b6b0c4f870de455238c02f5dbecbc0c5d56dfbc9
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983914"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567832"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
@@ -56,9 +56,9 @@ ms.locfileid: "57983914"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создание проекта ASP.NET в Visual Studio
 
-1. На компьютере, где выполняется Visual Studio, последовательно выберите **Файл** > **Создать проект**.
+1. На компьютере, где выполняется Visual Studio, создайте новый проект.
 
-1. В разделе **Visual C#** или **Visual Basic** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
+    Выберите подходящий шаблон. В этом примере выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
     Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Установите рабочую нагрузку **ASP.NET и веб-разработка**.
 

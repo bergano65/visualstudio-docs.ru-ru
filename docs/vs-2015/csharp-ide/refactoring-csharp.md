@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046322"
 ---
 # <a name="refactoring-c"></a>Рефакторинг (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "58992064"
   
  Visual C# предоставляет следующие команды на **Refactoring** меню:  
   
--   [Рефакторинг для извлечения метода (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Рефакторинг для извлечения метода (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Переименование рефакторинга (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Переименование рефакторинга (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Рефакторинг для инкапсуляции поля (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Рефакторинг для инкапсуляции поля (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Рефакторинг для извлечения интерфейса (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Рефакторинг для извлечения интерфейса (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Рефакторинг для удаления параметров (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Рефакторинг для удаления параметров (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Рефакторинг для изменения порядка параметров (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Рефакторинг для изменения порядка параметров (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Рефакторинг для нескольких проектов  
  Visual Studio поддерживает многопроектная оптимизация для проектов, которые находятся в одном решении. Все операции рефакторинга, исправляющие ссылки между файлами исправление ссылок во все проекты, на том же языке. Это подходит для любой ссылки проекта на проект. Например, если у вас есть консольное приложение, которое ссылается на библиотеку классов, при переименовании типа в библиотеке классов (с помощью `Rename` операция рефакторинга), также обновляются ссылки на тип в библиотеке классов в консольном приложении.  

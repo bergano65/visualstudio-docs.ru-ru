@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Задание значка приложения (Visual Basic, C#) | Документация Майкрософт
+title: Практическое руководство. Задание значка приложения (Visual Basic, C#) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045783"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Практическое руководство. Задание значка приложения (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "54788169"
   
 ### <a name="to-specify-an-application-icon"></a>Указание значка приложения  
   
-1.  В **обозревателе решений** выберите узел проекта (не узел **Решение**).  
+1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).  
   
-2.  В строке меню выберите **Проект**, **Свойства**.  
+2. В строке меню выберите **Проект**, **Свойства**.  
   
-3.  Когда откроется **Конструктор проектов**, выберите вкладку **Приложение**.  
+3. Когда откроется **Конструктор проектов**, выберите вкладку **Приложение**.  
   
-4.  **(Visual Basic)** В списке **Значок** выберите файл значка (ICO).  
+4. **(Visual Basic)** В списке **Значок** выберите файл значка (ICO).  
   
      **C#** Рядом со списком **Значок** нажмите кнопку **\<Обзор... >**, а затем перейдите в расположение файла значка.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Управление свойствами приложения](../ide/application-properties.md)  

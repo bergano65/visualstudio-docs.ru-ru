@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047141"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ ms.locfileid: "59661325"
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Проверка данных при изменении строки изменяется (Visual Basic)  
   
-1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.  
+2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.  
   
     > [!TIP]
     >  Дважды щелкните слева от имени таблицы, чтобы создать обработчик событий изменения строки. Если дважды щелкнуть имя таблицы, его можно изменить.  
@@ -114,14 +114,14 @@ ms.locfileid: "59661325"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Проверка данных при изменении строки (C#)  
   
-1.  Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Откройте свой набор данных в **Конструкторе наборов данных**. Дополнительные сведения см. в разделе [Как Откройте набор данных в конструкторе наборов данных](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.  
+2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  **Конструктор наборов данных** не создает автоматически обработчик событий для <xref:System.Data.DataTable.RowChanging> событий. Необходимо создать метод для обработки <xref:System.Data.DataTable.RowChanging> событие, а также выполнения код, чтобы подключить событие в методе инициализации таблицы.  
   
-3.  Скопируйте следующий код в разделяемый класс:  
+3. Скопируйте следующий код в разделяемый класс:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ ms.locfileid: "59661325"
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Чтобы получить все измененные записи из набора данных  
   
--   Вызовите <xref:System.Data.DataSet.GetChanges%2A> метод набора данных.  
+- Вызовите <xref:System.Data.DataSet.GetChanges%2A> метод набора данных.  
   
      В следующем примере создается новый набор данных с именем `changedRecords` и заполняет все измененные записи из другой набор данных с именем `dataSet1`.  
   
@@ -164,7 +164,7 @@ ms.locfileid: "59661325"
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Чтобы получить все измененные записи из таблицы данных  
   
--   Вызовите <xref:System.Data.DataTable.GetChanges%2A> метод объекта DataTable.  
+- Вызовите <xref:System.Data.DataTable.GetChanges%2A> метод объекта DataTable.  
   
      В следующем примере создается новая таблица данных с именем `changedRecordsTable` и заполняет все измененные записи из другой таблицы данных с именем `dataTable1`.  
   
@@ -173,14 +173,14 @@ ms.locfileid: "59661325"
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Чтобы получить все записи, имеющие определенное состояние строки  
   
--   Вызовите `GetChanges` метод из набора данных или таблицы данных и передайте <xref:System.Data.DataRowState> значение перечисления в качестве аргумента.  
+- Вызовите `GetChanges` метод из набора данных или таблицы данных и передайте <xref:System.Data.DataRowState> значение перечисления в качестве аргумента.  
   
      В следующем примере показано, как создать новый набор данных с именем `addedRecords` и заполнить ее только записи, которые были добавлены `dataSet1` набора данных.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   В следующем примере показано, как вернуть все записи, которые были недавно добавлены в `Customers` таблицы:  
+- В следующем примере показано, как вернуть все записи, которые были недавно добавлены в `Customers` таблицы:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ ms.locfileid: "59661325"
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Чтобы просмотреть его исходную версию записи  
   
--   Доступ к значению столбца, передав <xref:System.Data.DataRowVersion> строки, который необходимо вернуть.  
+- Доступ к значению столбца, передав <xref:System.Data.DataRowVersion> строки, который необходимо вернуть.  
   
      В следующем примере показано, как использовать <xref:System.Data.DataRowVersion> значение, чтобы получить исходное значение `CompanyName` в <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ ms.locfileid: "59661325"
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Для получения текущей версии записи  
   
--   Доступ к значению столбца, а затем добавьте параметр к индексу, который указывает, какая версия строки необходимо вернуть.  
+- Доступ к значению столбца, а затем добавьте параметр к индексу, который указывает, какая версия строки необходимо вернуть.  
   
      В следующем примере показано, как использовать <xref:System.Data.DataRowVersion> значение, чтобы получить текущее значение `CompanyName` в <xref:System.Data.DataRow>:  
   

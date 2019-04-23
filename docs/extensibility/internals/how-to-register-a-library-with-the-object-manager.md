@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb764b453caa0a6230929fdc5fd002eb56550d67
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051990"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Практическое руководство. Зарегистрировать библиотеку с диспетчером объектов
 Просмотр символы средства, такие как **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, позволяют просматривать символы в проекте или на внешние компоненты. Символы включают пространства имен, классы, интерфейсы, методы и другие элементы языка. Библиотеки отслеживать эти символы и представлять их в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов, которое заполняет средства с данными.
@@ -38,7 +38,7 @@ ms.locfileid: "56609105"
 
 ### <a name="to-register-a-library-with-the-object-manager"></a>Чтобы зарегистрировать библиотеку с диспетчером объектов
 
-1.  Создание библиотеки.
+1. Создание библиотеки.
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ ms.locfileid: "56609105"
 
     ```
 
-2.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.
+2. Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.
 
     ```vb
     Private Sub RegisterLibrary()
@@ -111,7 +111,7 @@ ms.locfileid: "56609105"
 
 ### <a name="to-unregister-a-library-with-the-object-manager"></a>Чтобы отменить регистрацию библиотеки с диспетчером объектов
 
-1.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.
+1. Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.
 
     ```vb
     Private Sub UnregisterLibrary()

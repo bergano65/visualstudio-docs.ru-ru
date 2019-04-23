@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048740"
 ---
 # <a name="debugging-legacy-workflows"></a>Отладка рабочих процессов прежних версий
 При использовании средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий в среде [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] для сборки приложений [!INCLUDE[wf](../includes/wf-md.md)], предназначенных для платформы .NET Framework 3.0 или 3.5, можно выполнять отладку рабочих процессов так же, как других программ, путем установки точек останова, присоединения к процессам, оценки потоков и стека вызова. Кроме того, существует возможность удаленной отладки.  
@@ -27,7 +27,7 @@ ms.locfileid: "58980785"
 >  Если на компьютере было установлено и удалено несколько версий Visual Studio, отладка WF3 может завершиться ошибкой по одной из следующих причин.  
 > 
 > - Не достигаются точки останова.  
->   -   Отображается следующее сообщение:  
+>   - Отображается следующее сообщение:  
 > 
 >   **Не удается запустить отладку на веб-сервере. Отладчик не установлен должным образом.  Не удается отладить запрошенный тип кода.  Запустите программу установки для установки или восстановления отладчика.**  
 > 
