@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576978"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 
@@ -143,7 +143,7 @@ ms.locfileid: "55926779"
 
 **Ввод (скрытое поле)**
 
-![Скрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif)
+![Сокрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif)
 
 Вставляет элемент `input` объекта `type="hidden"`. По умолчанию `id="Hidden1"` вставляется для первого скрытого поля, `id="Hidden2"` для второго и т. д.
 
@@ -194,7 +194,7 @@ ms.locfileid: "55926779"
 
 **Выбрать**
 
-![Открывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
+![Раскрывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
 
 Вставляет элемент `select` раскрывающегося списка (без атрибута `size`). По умолчанию `id="select1"` вставляется для первого списка, `id="select2"` для второго и т. д.
 

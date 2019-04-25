@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430267"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Создание закодированного теста пользовательского интерфейса для тестирования приложения UWP
 
@@ -136,6 +136,7 @@ ms.locfileid: "58416127"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. Затем нам нужно получить **AutomationId** из тестируемого [приложения](#create-a-uwp-app-to-test) UWP. Откройте меню **Пуск** Windows, чтобы увидеть плитку приложения. Затем перетащите перекрестье ![Целевой значок](media/target-icon.png) из диалогового окна **Построитель кодированных тестов ИП** в плитку для приложения. Когда вокруг плитки появится голубая рамка, отпустите кнопку мыши.
 
    ![Инструмент "Перекрестие"](media/cross-hair-tool.png)

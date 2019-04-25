@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Сборка с использованием нескольких конфигураций
+title: Как выполнить Сборка с использованием нескольких конфигураций
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac8d27397c6e4748546e21baf84abd7578ce8762
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547805"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Как выполнить  Сборка с использованием нескольких конфигураций
+# <a name="how-to-build-multiple-configurations-simultaneously"></a>Как выполнить Сборка с использованием нескольких конфигураций
 
 Большинство типов проектов можно создать с использованием нескольких или даже всех конфигураций сборки одновременно с помощью диалогового окна **Пакетная сборка**. Однако вы не можете одновременно выполнять сборку следующих типов проектов в нескольких конфигурациях сборок:
 

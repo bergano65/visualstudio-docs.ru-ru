@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429715"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Выбор окружения Python для проекта
 
@@ -169,11 +169,11 @@ ms.locfileid: "59366189"
 Обратите внимание, что сейчас Visual Studio не позволяет использовать `conda` для установки пакетов в окружении Conda. Вместо этого используйте `conda` из командной строки.
 
 > [!Tip]
-> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается сообщение об ошибке: **Ошибка: не удалось найти vcvarsall.bat**. `easy_install` как правило, может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
+> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается сообщение об ошибке: **Ошибка: не удалось найти vcvarsall.bat**. Как правило, диспетчер `easy_install` может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
 
 ## <a name="see-also"></a>См. также
 
 - [Управление окружениями Python в Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
 - [Пути поиска](search-paths.md)
-- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)

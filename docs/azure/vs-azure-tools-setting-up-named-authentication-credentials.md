@@ -4,17 +4,19 @@ description: Узнайте, как указать учетные данные, 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572201"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Настройка учетных данных для проверки подлинности
 
@@ -38,6 +40,6 @@ ms.locfileid: "55920656"
 ## <a name="next-steps"></a>Следующие шаги
 
 - [Документация по веб-приложениям](https://docs.microsoft.com/azure/app-service/)
-- [Развертывание приложения в службе приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
+- [Развертывание приложения в службе приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
 - [Развертывание веб-заданий с помощью Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Создание и развертывание облачной службы](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

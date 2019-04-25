@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426535"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C\#
 
 При изучении этого руководства вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для разработки приложений в Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и выполнить отладку, одновременно приобретая навыки работы в интегрированной среде разработки ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
@@ -84,7 +84,6 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 1. На начальном экране выберите **Создать проект**.
 
    ![Просмотр окна "Создание проекта"](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. На экране **Создание проекта** выполните поиск по строке "WPF", выберите в результатах **приложение WPF (.NET Framework)** и щелкните **Далее**.
 
@@ -267,7 +266,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>Добавление точек останова
 
-1. Откройте файл *Greetings.xaml.cs* и выделите следующую строку: `MessageBox.Show("Hello.")`
+1. Откройте файл *Greetings.xaml.cs* и выделите строку `MessageBox.Show("Hello.")`.
 
 2. Добавьте точку останова, выбрав меню **Отладка**, затем — **Точка останова**.
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986834"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -48,12 +48,14 @@ ms.locfileid: "58568606"
     ```bash
     cd /location/of/file
     ```
+
 3. Сделайте скрипт исполняемым и запустите его с помощью **sudo**:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Наконец, удалите этот скрипт удаления.
 
 ### <a name="net-core-script"></a>Скрипт .NET Core
@@ -68,12 +70,14 @@ ms.locfileid: "58568606"
     ```bash
     cd /location/of/file
     ```
+
 3. Сделайте скрипт исполняемым и запустите его с помощью **sudo**:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Наконец, удалите скрипт удаления .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
@@ -103,7 +107,6 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Удаление Mono SDK (MDK)
 

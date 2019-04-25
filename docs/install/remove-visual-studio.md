@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810394"
 ---
 # <a name="remove-visual-studio"></a>Удаление Visual Studio
 
@@ -45,6 +45,7 @@ ms.locfileid: "58790125"
    * Введите **cmd** в поле "Введите текст для поиска".
    * Щелкните правой кнопкой мыши пункт **Командная строка**и выберите команду **Запуск от имени администратора**.
 3. Введите полный путь к служебной программе `InstallCleanup.exe` и передайте в командной строке требуемые параметры. По умолчанию эта программа расположена по следующему адресу:
+
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```

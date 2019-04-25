@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791673"
 ---
 # <a name="build-page-project-designer-c"></a>Страница "Построение" в конструкторе проектов (C#)
 Страница **Сборка** в **конструкторе проектов** позволяет задать свойства конфигурации сборки. Эта страница применяется только к проектам [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -56,12 +56,11 @@ ms.locfileid: "55922151"
 
 Этот флажок доступен, только если верны все следующие условия:
 
--   На странице **Сборка** в списке **Целевая платформа** установлено значение **Любой ЦП**.
+- На странице **Сборка** в списке **Целевая платформа** установлено значение **Любой ЦП**.
 
--   На странице **Приложение** в списке **Тип вывода** указано, что проект является приложением.
+- На странице **Приложение** в списке **Тип вывода** указано, что проект является приложением.
 
--   На странице **Приложение** в списке **Целевая рабочая среда** указана .NET Framework 4.5.
-
+- На странице **Приложение** в списке **Целевая рабочая среда** указана .NET Framework 4.5.
 
 **Разрешить небезопасный код** Разрешает компилировать код, в котором используется ключевое слово [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Дополнительные сведения см. в разделе [/unsafe (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

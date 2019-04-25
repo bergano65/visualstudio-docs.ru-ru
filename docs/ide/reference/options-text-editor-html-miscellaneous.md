@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778434"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Параметры, текстовый редактор, HTML (веб-формы), "Прочее"
 
 Используйте страницу параметров **Прочее** для настройки того, как редактор HTML будет обрабатывать элементы, вставленные в страницу. Чтобы открыть эту страницу, выберите в строке меню **Инструменты** > **Параметры**, затем добавьте **Текстовый редактор** > **HTML (веб-формы)** > **Прочее**.
 
-## <a name="miscellaneous-html-options"></a>Прочие параметры HTML-кода
+## <a name="miscellaneous-html-options"></a>Разные параметры HTML
 
 - **Форматировать HTML при вставке**
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a838a511c5f37a00ed2331d2376b395f399e65d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777324"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Представление "Дерево вызовов" — данные инструментирования
 Значения функций в представлении "Дерево вызовов" указывают время для экземпляров функций, вызванных родительской функцией в дереве вызовов. Процентные значения вычисляются путем сравнения значения экземпляров функции с общим затраченным инклюзивным временем всех функций в сеансе профилирования.
@@ -85,5 +85,5 @@ ms.locfileid: "56638105"
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)
 - [Представление "Дерево вызовов"](../profiling/call-tree-view-sampling-data.md)
-- [Представление "Дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Представление "Дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

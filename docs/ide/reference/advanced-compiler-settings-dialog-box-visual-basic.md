@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792235"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 
@@ -25,13 +25,13 @@ ms.locfileid: "55918329"
 
 ## <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
 
-1.  В **обозревателе решений** выберите узел проекта (не узел **Решение**).
+1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).
 
-2.  В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
+2. В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
 
-3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Щелкните **Дополнительные параметры компиляции**.
+4. Щелкните **Дополнительные параметры компиляции**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

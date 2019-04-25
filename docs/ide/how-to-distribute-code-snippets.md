@@ -13,13 +13,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429551"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
+# <a name="how-to-distribute-code-snippets"></a>Как выполнить Распространение фрагментов кода
 
 Фрагменты кода можно передать другим пользователям для установки на других компьютерах с помощью **диспетчера фрагментов кода**. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio. Пользователи Visual Studio могут установить это расширение, чтобы получить фрагменты кода.
 

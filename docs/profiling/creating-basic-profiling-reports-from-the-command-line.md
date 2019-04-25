@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552867"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
 В этой статье описываются основные команды VSPerfReport, которые создают отчеты со значениями, разделенными запятыми (*CSV*), из файла данных профилирования с расширением *VSP* или *VSPS*. Описание всех параметров отчета см. в разделе [VSPerfReport](../profiling/vsperfreport.md).

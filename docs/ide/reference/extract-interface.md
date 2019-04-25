@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791257"
 ---
 # <a name="extract-an-interface-refactoring"></a>Рефакторинг для извлечения интерфейса
 
@@ -58,13 +58,11 @@ ms.locfileid: "57983209"
 
    ![Извлечение интерфейса](media/extractinterface-dialog-same-file.png)
 
-
    | Поле | Описание |
    | - | - |
    | **Имя нового интерфейса** | Имя создаваемого интерфейса. Имя по умолчанию — I*имя_класса*, где *имя_класса* — имя класса, выбранного выше. |
    | **Имя нового файла** | Имя созданного файла, который будет содержать интерфейс. Как и в случае с именем интерфейса, по умолчанию это будет I*имя_класса*, где *имя_класса* — имя класса, выбранного выше. Можно также выбрать возможность **Добавить в текущий файл**. |
    | **Выбрать открытые элементы для создания интерфейса** | Элемент, который нужно извлечь в интерфейс. Можно выбрать столько элементов, сколько требуется. |
-
 
 4. Нажмите кнопку **ОК**.
 
@@ -73,15 +71,13 @@ ms.locfileid: "57983209"
    - C#:
 
       ![Итоговый класс — C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Итоговый интерфейс — C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Итоговый класс — Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Итоговый интерфейс — Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>См. также

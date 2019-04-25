@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431254"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -27,7 +27,7 @@ ms.locfileid: "56796573"
 
 **Требования**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Поддерживаемые конфигурации
 
@@ -40,7 +40,6 @@ ms.locfileid: "56796573"
 
 > [!NOTE]
 > *Синхронизация пользовательского интерфейса* — это функция проверки воспроизведения в очереди сообщений каждого элемента управления. Если элемент управления не отвечает на отправленное ему событие, это событие отправляется еще раз.
-
 
 ## <a name="platform-support"></a>Поддержка платформ
 

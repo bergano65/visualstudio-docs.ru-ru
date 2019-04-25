@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815590"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 
@@ -124,7 +124,7 @@ ms.locfileid: "58897703"
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Создание отчета о зависании Visual Studio во время отладки с помощью набора средств Visual Studio для Unity
 
-*В Windows выполните следующие действия.*
+*В Windows:*
 
 1. Откройте новый экземпляр Visual Studio.
 
@@ -142,7 +142,7 @@ ms.locfileid: "58897703"
 
     Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.
 
-*На Mac выполните следующие действия.*
+*На Mac:*
 
 1. Откройте терминал и получите идентификатор процесса Visual Studio для Mac:
 

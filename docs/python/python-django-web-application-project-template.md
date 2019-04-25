@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784889"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
@@ -65,5 +65,5 @@ Visual Studio предоставляет полную поддержку тех�
 
 ## <a name="see-also"></a>См. также
 
-- [Учебник. Начало работы с веб-платформой Django в Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [Руководство по изучению Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
 - [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430072"
 ---
 # <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
 
@@ -93,7 +93,7 @@ ms.locfileid: "59366436"
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 
-- [Изменение кода](editing-python-code-in-visual-studio.md)
-- [Код формата](formatting-python-code.md)
+- [Изменить код](editing-python-code-in-visual-studio.md)
+- [Форматирование кода](formatting-python-code.md)
 - [Рефакторинг кода](refactoring-python-code.md)
 - [Использование PyLint](linting-python-code.md)

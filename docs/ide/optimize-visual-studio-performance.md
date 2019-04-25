@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569853"
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
 
@@ -25,11 +25,11 @@ ms.locfileid: "57223777"
 
 ## <a name="upgrade-visual-studio"></a>Обновление Visual Studio
 
-Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) или [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. Решения загружаются в два-три раза быстрее, чем в Visual Studio 2015. Помимо этого, оптимизирована производительность и в других областях. Visual Studio 2017 и Visual Studio 2019 совместимы с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
+Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) или [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. Решения загружаются в два-три раза быстрее, чем в Visual Studio 2015. Помимо этого, оптимизирована производительность и в других областях. Visual Studio 2017 и Visual Studio 2019 совместимы с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
 
 ::: moniker range="vs-2017"
 
-Если вы уже используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+Если вы уже используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 

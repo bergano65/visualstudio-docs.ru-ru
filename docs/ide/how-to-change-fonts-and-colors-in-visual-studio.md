@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f06007294f0743ebdbbcc0c750ffd09307e17ad1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824208"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Как выполнить  Изменение шрифтов и цветов в Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Как выполнить Изменение шрифтов и цветов в Visual Studio
 
 Настройку цвета фреймов и окон инструментов интегрированной среды разработки в Visual Studio можно несколькими способами.
 

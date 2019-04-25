@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809561"
 ---
 # <a name="remote-r-service-for-linux"></a>Удаленная служба R для Linux
 
@@ -166,5 +166,6 @@ ms.locfileid: "55945824"
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. Используйте команду `az container list`, чтобы проверить состояние. Вам нужно найти `provisioningState`: `Succeeded`.
 1. Если подготовка выполнена, вы сможете подключиться к контейнеру. Найдите общедоступный IP-адрес в поле `ipAddress` и используйте его с учетными данными в файле Docker, чтобы подключиться к контейнеру из RTVS.

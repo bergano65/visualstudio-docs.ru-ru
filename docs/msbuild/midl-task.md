@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817575"
 ---
 # <a name="midl-task"></a>MIDL - задача
 Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -39,7 +39,7 @@ ms.locfileid: "56618163"
 ## <a name="parameters"></a>Параметры
  Ниже приводятся параметры задачи **MIDL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      Необязательный параметр типа **String[]**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/I** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Необязательный параметр типа **String**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      Необязательный параметр **Boolean** .
 
@@ -63,7 +63,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/app_config** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      Необязательный параметр типа **String**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/cstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ServerStubFile** в этой таблице.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      Необязательный параметр типа **String**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/cpp_opt** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      Необязательный параметр типа **String**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/char** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      Необязательный параметр типа **String**.
 
@@ -103,7 +103,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/dlldata** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      Необязательный параметр типа **String**.
 
@@ -119,7 +119,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      Необязательный параметр **Boolean** .
 
@@ -127,7 +127,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error allocation** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      Необязательный параметр **Boolean** .
 
@@ -135,7 +135,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error bounds_check** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      Необязательный параметр **Boolean** .
 
@@ -143,7 +143,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error enum** в справке по командной строке (**/?**) для *midl.exe*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      Необязательный параметр **Boolean** .
 
@@ -151,7 +151,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error ref** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      Необязательный параметр **Boolean** .
 
@@ -159,7 +159,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/error stub_data** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      Необязательный параметр типа **String**.
 
@@ -174,7 +174,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/client** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      Необязательный параметр типа **String**.
 
@@ -189,7 +189,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/server** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      Необязательный параметр **Boolean** .
 
@@ -197,7 +197,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/Oicf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      Необязательный параметр **Boolean** .
 
@@ -205,7 +205,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/notlbf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      Необязательный параметр типа **String**.
 
@@ -213,7 +213,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/h** или **/header** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      Необязательный параметр **Boolean** .
 
@@ -221,7 +221,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/no_def_idir** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      Необязательный параметр типа **String**.
 
@@ -229,7 +229,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/iid** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **LocaleID**
+- **LocaleID**
 
      Необязательный параметр типа **int**.
 
@@ -237,7 +237,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/lcid** [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Также см. раздел [Идентификаторы языкового стандарта](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      Необязательный параметр **Boolean** .
 
@@ -245,7 +245,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/mktyplib203** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также статью [Синтаксис файла ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) на веб-сайте MSDN.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      Необязательный параметр типа **String**.
 
@@ -253,7 +253,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/out** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      Необязательный параметр типа **String[]**.
 
@@ -261,7 +261,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/D** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **UndefinePreprocessorDefinitions** в этой таблице.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      Необязательный параметр типа **String**.
 
@@ -269,7 +269,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/proxy** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      Необязательный параметр типа **String**.
 
@@ -277,7 +277,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/o** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      Необязательный параметр типа **String**.
 
@@ -285,13 +285,13 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/sstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ClientStubFile** в этой таблице.
 
--   **Source**
+- **Source**
 
      Обязательный параметр `ITaskItem[]`.
 
      Задает список исходных файлов, разделенных пробелами.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      Необязательный параметр типа **String**.
 
@@ -309,7 +309,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/Zp** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Параметр **/Zp** эквивалентен параметру **/pack** и более старому параметру **/align**.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      Необязательный параметр **Boolean** .
 
@@ -317,7 +317,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/no_warn** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Необязательный параметр `Boolean` .
 
@@ -325,7 +325,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/nologo** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      Необязательный параметр типа **String**.
 
@@ -342,13 +342,13 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/env** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Необязательный параметр `String` .
 
      Задает промежуточный каталог, в котором хранятся журналы отслеживания для этой задачи.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      Необязательный параметр типа **String**.
 
@@ -363,7 +363,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/newtlb** и **/oldtlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      Необязательный параметр типа **String**.
 
@@ -371,7 +371,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/tlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      Необязательный параметр типа **String[]**.
 
@@ -379,7 +379,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/U** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **PreprocessorDefinitions** в этой таблице.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      Необязательный параметр `Boolean` .
 
@@ -387,7 +387,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметров **/robust** и **/no_robust** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **WarnAsError**
+- **WarnAsError**
 
      Необязательный параметр `Boolean` .
 
@@ -397,7 +397,7 @@ ms.locfileid: "56618163"
 
      Дополнительные сведения см. в описании параметра **/WX** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarningLevel** в этой таблице.
 
--   **WarningLevel**
+- **WarningLevel**
 
      Необязательный параметр типа **String**.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539375"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Как выполнить Профилирование кода JavaScript в веб-страницах
 

@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789331"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 В этом диалоговом окне можно определять параметры проекта и сборки [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], связанные с файлами журналов, производительности и другими вспомогательными файлами.
 
 ### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
 
-1.  В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите пункт **Параметры**.
 
-2.  Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.
+2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.
 
 ## <a name="build-logging"></a>Журнал сборки
  **Да**
