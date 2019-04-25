@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059257"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Настройка анализа покрытия кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "54768039"
 >  Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать удаленные PDB-файлы в то же локальное расположение, в котором находятся двоичные файлы (DLL и EXE).  
   
 ### <a name="excluding-and-including"></a>Исключение и включение  
- Можно исключить указанные сборки из анализа покрытия кода. Например:  
+ Можно исключить указанные сборки из анализа покрытия кода. Пример:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +115,7 @@ ms.locfileid: "54768039"
   
    Все соответствия не учитывают регистр.  
   
-   Например:  
+   Пример:  
   
 ```xml  
 <ModulePaths>  
@@ -183,11 +183,11 @@ ms.locfileid: "54768039"
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Настройка параметров запуска в тесте командной строки  
  Для выполнения тестов из командной строки используйте vstest.console.exe. Файл параметров является параметром этой служебной программы. Дополнительные сведения см. в статье [Использование VSTest.console из командной строки](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Запустите командную строку разработчика Visual Studio.  
+1. Запустите командную строку разработчика Visual Studio.  
   
      В меню **Пуск** последовательно выберите **Все программы**, **Microsoft Visual Studio**, **Инструменты Visual Studio**, **Командная строка разработчика**.  
   
-2.  Выполните следующий файл.  
+2. Выполните следующий файл.  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -208,7 +208,7 @@ ms.locfileid: "54768039"
   
    Результаты отображаются в сводном разделе отчета о сборке.  
   
-##  <a name="sample"></a> Пример RUNSETTINGS-файла  
+## <a name="sample"></a> Пример RUNSETTINGS-файла  
  Скопируйте этот код и измените его в соответствии с собственными требованиями. Это RUNSETTINGS-файл по умолчанию.  
   
  (Другие варианты применения RUNSETTINGS-файла см. в разделе [Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
@@ -325,6 +325,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Модульное тестирование кода](../test/unit-test-your-code.md)
