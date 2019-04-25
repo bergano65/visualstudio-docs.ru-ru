@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057827"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54758246"
 
  [Сборка окончательной версии приложения](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> Вход в Visual Studio
+## <a name="BKMK_Configure"></a> Вход в Visual Studio
  При первом запуске Visual Studio предоставляется возможность выполнить вход с использованием учетной записи Майкрософт, например Live или Outlook. Вход позволяет обеспечить синхронизацию пользовательских параметров на всех устройствах. Дополнительные сведения см. в разделе [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md).
 
  Рисунок 1. Интегрированная среда разработки Visual Studio
@@ -42,7 +42,7 @@ ms.locfileid: "54758246"
 
  После открытия Visual Studio можно увидеть три основные части интегрированной среды разработки: окна инструментов, меню с панелями инструментов и область главного окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в его верхней части. В центре окна приложения находится **Начальная страница**. При открытии решения или проекта редакторы и конструкторы отображаются в этом пространстве. При разработке приложения чаще всего используется именно эта область.
 
-##  <a name="BKMK_CreateApp"></a> Создание простого приложения
+## <a name="BKMK_CreateApp"></a> Создание простого приложения
  При создании приложения в Visual Studio необходимо сначала создать проект и решение. В этом примере создается консольное приложение Windows.
 
 #### <a name="to-create-a-console-app"></a>Создание консольного приложения
@@ -65,12 +65,12 @@ ms.locfileid: "54758246"
 
    ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 
-##  <a name="BKMK_AddCode"></a> Добавление кода в приложение
+## <a name="BKMK_AddCode"></a> Добавление кода в приложение
  Далее необходимо добавить код для отображения слова "Hello" в окне консоли.
 
 #### <a name="to-display-hello-in-the-console-window"></a>Отображение "Hello" в окне консоли
 
-1.  В файле GreetingsConsoleApp.cpp введите пустую строку перед строкой `return 0;` , а затем введите в нее следующий код:
+1. В файле GreetingsConsoleApp.cpp введите пустую строку перед строкой `return 0;` , а затем введите в нее следующий код:
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ ms.locfileid: "54758246"
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) включается в файл заголовка \<iostream\>.
 
-2.  Для включения заголовка iostream введите следующий код после `#include "stdafx.h"`:
+2. Для включения заголовка iostream введите следующий код после `#include "stdafx.h"`:
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ ms.locfileid: "54758246"
 
      Красная волнистая линия под `cout` исчезнет после исправления ошибки.
 
-3.  Сохраните изменения в файле.
+3. Сохраните изменения в файле.
 
      ![Код, исправляющий ошибку cout](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
 
-##  <a name="BKMK_DebugTest"></a> Отладка и тестирование приложения
+## <a name="BKMK_DebugTest"></a> Отладка и тестирование приложения
  С помощью отладки GreetingsConsoleApp можно посмотреть, отображается ли слово Hello в окне консоли.
 
 #### <a name="to-debug-the-application"></a>Отладка приложения
 
--   Запустите отладчик.
+- Запустите отладчик.
 
      ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
@@ -128,7 +128,7 @@ ms.locfileid: "54758246"
 
    Дополнительные сведения см. в статье [Консольные проекты](../debugger/debugging-preparation-console-projects.md).
 
-##  <a name="BKMK_BuildRelease"></a> Сборка окончательной версии приложения
+## <a name="BKMK_BuildRelease"></a> Сборка окончательной версии приложения
  Теперь, когда вы проверили, что все работает, можно подготовить окончательную сборку приложения.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Очистка файлов решения и сборка окончательной версии
@@ -148,4 +148,4 @@ ms.locfileid: "54758246"
    Поздравляем с завершением этого пошагового руководства! Чтобы изучить больше примеров, см. раздел [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>См. также раздел
- [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md) [примеры Visual Studio](../ide/visual-studio-samples.md) [начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+ [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md) [Примеры Visual Studio](../ide/visual-studio-samples.md) [Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)

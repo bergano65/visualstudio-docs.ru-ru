@@ -1,5 +1,5 @@
 ---
-title: Разрешения пользователя | Документация Майкрософт
+title: Разрешения пользователей | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101890"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "54775876"
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] и [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1.  На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.
+1. На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.
 
-2.  Выберите версию Visual Studio, которую нужно запустить, а затем откройте контекстное меню (оно появится внизу экрана). Выберите **Запуск от имени администратора**.
+2. Выберите версию Visual Studio, которую нужно запустить, а затем откройте контекстное меню (оно появится внизу экрана). Выберите **Запуск от имени администратора**.
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../includes/win7-md.md)] и [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  Нажмите кнопку **Пуск** и выберите **Все программы**.
+1. Нажмите кнопку **Пуск** и выберите **Все программы**.
 
-2.  В папке **Microsoft Visual Studio** *версия* выберите **Visual Studio** *версия*, откройте контекстное меню, а затем выберите пункт **Запуск от имени администратора**.
+2. В папке **Microsoft Visual Studio** *версия* выберите **Visual Studio** *версия*, откройте контекстное меню, а затем выберите пункт **Запуск от имени администратора**.
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
 ## <a name="see-also"></a>См. также раздел
- [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [установке Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Установка Visual Studio 2015](../install/install-visual-studio-2015.md)
