@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569684"
 ---
 # <a name="compare-properties-and-items"></a>Сравнение свойств и элементов
 Свойства и элементы MSBuild применяются для передачи данных задачам, проверки условий и хранения значений, которые будут использоваться в файле проекта.
@@ -86,7 +86,6 @@ MSBuild по мере необходимости осуществляет пре
 - Определения элементов задаются и изменяются в порядке их расположения.
 
 - Элементы определяются и изменяются в порядке их расположения.
-
 
 На этапе выполнения сборки свойства и элементы, определенные в рамках целевых объектов, оцениваются в отношении друг друга за один этап в порядке их расположения.
 

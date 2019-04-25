@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824221"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Как выполнить  изменение регистра текста в редакторе
+# <a name="how-to-change-text-case-in-the-editor"></a>Как выполнить изменение регистра текста в редакторе
 
 Для переключения регистра выбранного текста можно использовать команды меню или сочетания клавиш.
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907455"
 
 ## <a name="to-switch-text-to-upper-case"></a>Переключение текста в верхний регистр
 
-1.  Выделите текст, который требуется преобразовать.
+1. Выделите текст, который требуется преобразовать.
 
-2.  В меню **Правка** выберите **Дополнительно**.
+2. В меню **Правка** выберите **Дополнительно**.
 
-3.  Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.
+3. Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.
 
     Или...
 

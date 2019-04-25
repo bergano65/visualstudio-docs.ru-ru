@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778581"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Чтобы открыть страницу **IntelliSense**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **IntelliSense.**
@@ -59,7 +59,6 @@ ms.locfileid: "55938700"
 > [!CAUTION]
 > Если определен объект определен безусловно в двух или более неявных ссылках, для определения объекта будет использоваться последняя ссылка в этом списке.
 
-
 **Добавить ссылку на текущую группу**
 
 Этот параметр обеспечивает способ добавления дополнительных JS-файлов IntelliSense путем просмотра соответствующих файлов.
@@ -70,8 +69,6 @@ ms.locfileid: "55938700"
 
 > [!NOTE]
 > Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.
-
-
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582609"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
 Иногда может понадобиться вручную настроить проект C++ для правильной работы функции IntelliSense. Для проектов MSBuild (на основе файлов с расширением .vcxproj) можно настроить параметры в свойствах проекта. Для других типов проектов нужно настроить параметры в файле CppProperties.json, находящемся в корневом каталоге проекта. Иногда требуется создать файл указаний, чтобы помочь IntelliSense понять определения макросов. Интегрированная среда разработки Visual Studio помогает найти и исправить проблемы с функцией IntelliSense.
-
-
 
 ## <a name="single-file-intellisense"></a>IntelliSense для одного файла
 

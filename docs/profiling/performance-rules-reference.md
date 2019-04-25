@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad4cdb96a8d342e191e5c6e92e2916f49fd6406d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798345"
 ---
 # <a name="performance-rules-reference"></a>Справочник по правилам производительности
 Правила производительности средств профилирования предоставляют дополнительные предупреждения и сведения о производительности приложения. Правила производительности используются для анализа данных в сеансе профилирования, собранных из таких источников, как Windows и счетчики производительности процессора. Сообщения правил отображаются в окне вывода ошибок интегрированной среды разработки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Сообщения указываются с одним из следующих уровней правила.

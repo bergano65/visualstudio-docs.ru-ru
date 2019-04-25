@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548449"
 ---
 # <a name="installation"></a>Установка
 
@@ -87,6 +87,7 @@ Python является основным языком программирова
 Затем необходимо проверить, правильно ли установлен Python 3.5, и обновить систему pip до последней версии, выполнив в терминале следующие команды:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Python является основным языком программирова
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ pip3.5 install -U numpy scipy
 Чтобы установить MXNet, выполните в терминале следующую команду:
 
 - С GPU:
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Без GPU:
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

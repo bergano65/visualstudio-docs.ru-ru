@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777812"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Измерение производительности приложения посредством анализа использования ЦП
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -169,4 +169,4 @@ ms.locfileid: "59232675"
 В этом руководстве вы узнали, как собирать и анализировать данные об использовании ЦП. Если вы уже ознакомились с [общими сведениями о средствах профилирования](../profiling/profiling-feature-tour.md), можно перейти к анализу данных об использовании памяти в приложениях.
 
 > [!div class="nextstepaction"]
-> [Профилирование использования памяти в Visual Studio](../profiling/memory-usage.md)
+> [Использование памяти профиля в Visual Studio](../profiling/memory-usage.md)

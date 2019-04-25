@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581277"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Программа командной строки VSPerfReport используется для создания отчетов с помощью файлов данных профилирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. *CSV*файл — формат отчета по умолчанию.

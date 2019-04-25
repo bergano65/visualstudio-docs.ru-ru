@@ -9,13 +9,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821147"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Как выполнить  Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Как выполнить Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно изменять свойства сценариев в соответствии с требованиями и целями тестирования, используя **редактор тестовой нагрузки**. Полный список свойств сценария тестовой нагрузки и их описание см. в разделе [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md).
 

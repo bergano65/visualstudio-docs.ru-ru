@@ -1,15 +1,9 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924218"
 documentType: LandingData
 title: Инструменты Visual Studio для сценариев ИИ
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
-  title: Visual Studio Tools for AI | Документация Майкрософт
+  title: "Visual\_Studio Tools for\_AI\_| Документация Майкрософт"
   ms.prod: visual-studio-windows
   ms.technology: vs-ai-tools
   author: lisawong19
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: Visual Studio Tools for AI — это интегрированная среда разработки для создания, тестирования и развертывания решений глубинного обучения. Научитесь использовать AI Tools с помощью наших кратких руководств, учебников и примеров.
+  description: "Visual\_Studio Tools for\_AI\_— это интегрированная среда разработки для создания, тестирования и развертывания решений глубинного обучения. Научитесь использовать AI\_Tools с помощью наших кратких руководств, учебников и примеров."
 sections:
-- title: Пятиминутные краткие руководства
-  items:
-  - type: paragraph
-    text: 'Вы узнаете, как запускать решение глубинного обучения с помощью:'
-  - type: list
-    style: icon48
+  - title: Пятиминутные краткие руководства
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow и Python
-      href: tensorflow-local.md
-- title: Пошаговые руководства
-  items:
-  - type: paragraph
-    text: 'Сведения о создании решения глубинного обучения:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Вы узнаете, как запускать решение глубинного обучения с помощью:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow и Python
+            href: tensorflow-local.md
+  - title: Пошаговые руководства
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Обучение модели TensorFlow в облаке</a>
-- title: Примеры
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Сведения о создании решения глубинного обучения:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Обучение модели TensorFlow в облаке</a>
+  - title: Примеры
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Репозиторий примеров</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Коллекция моделей машинного обучения</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Репозиторий примеров</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Коллекция моделей машинного обучения</a>'

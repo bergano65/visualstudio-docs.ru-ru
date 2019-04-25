@@ -4,17 +4,19 @@ description: Общие сведения о просмотре и создани
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: e4f8f72dcc19ebe721e79c7b5268fd73d2cc469e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427036"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Доступ к виртуальным машинам Azure из обозревателя сервера
 
@@ -33,7 +35,7 @@ ms.locfileid: "55930835"
    | Status |Возможные значения: "Запуск", "Запущено", "Остановка", "Остановлено" и "Получение состояния". Если отображается значение "Получение состояния", текущее состояние неизвестно. Значения этого свойства отличаются от значений, используемых на [портале Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | SubscriptionID |Идентификатор подписки вашей учетной записи Azure. Эти сведения можно узнать на [портале Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040), просмотрев свойства подписки. |
 2. Выберите узел конечной точки, а затем просмотрите окно **Свойства** .
-3. В следующей таблице описаны доступные свойства конечных точек, но они доступны только для чтения. Чтобы добавить или изменить конечные точки для виртуальной машины, используйте [портал Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040).
+3. В следующей таблице описаны доступные свойства конечных точек, но они доступны только для чтения. Чтобы добавить или изменить конечные точки для виртуальной машины, используйте [портал Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
    | Свойство. | Описание |
    | --- | --- |

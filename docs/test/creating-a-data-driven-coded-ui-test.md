@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785450"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 
@@ -98,11 +98,11 @@ ms.locfileid: "56796664"
 
 ### <a name="step-2---create-a-data-set"></a>Шаг 2. Создание набора данных
 
-1.  Добавьте текстовый файл в проект dataDrivenSample с именем *data.csv*.
+1. Добавьте текстовый файл в проект dataDrivenSample с именем *data.csv*.
 
      ![Добавление в проект файла с разделителями-запятыми](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Заполните *CSV*-файл следующими данными:
+2. Заполните *CSV*-файл следующими данными:
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ ms.locfileid: "56796664"
 
      ![Заполнение CSV-файла данными](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Важно сохранить этот *CSV*-файл в правильной кодировке. В меню **File** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
+3. Важно сохранить этот *CSV*-файл в правильной кодировке. В меню **File** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
 
-4.  Этот *CSV*-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна **Свойства**.
+4. Этот *CSV*-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна **Свойства**.
 
      ![Развертывание CSV-файла](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "56796664"
 
 ### <a name="step-3---add-data-source-binding"></a>Шаг 3. Добавление привязки источника данных
 
-1.  Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.
+1. Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ ms.locfileid: "56796664"
     > [!TIP]
     > Примеры использования других типов источников данных, таких как XML, SQL Express и Excel, см. в разделе [Примеры атрибутов источников данных](#CreateDataDrivenCUIT_QA_DataSourceAttributes).
 
-2.  Запустите тест.
+2. Запустите тест.
 
      Обратите внимание, что тест выполняется в три итерации. Это происходит потому, что привязанный источник данных содержит три строки данных. Однако можно также заметить, что тест по-прежнему использует константные значения параметров и каждый раз складывает 1 и 2, получая сумму 3.
 
@@ -179,19 +179,19 @@ ms.locfileid: "56796664"
 
      Чтобы понять, в какие свойства поиска следует кодировать данные, используйте редактор закодированных тестов пользовательского интерфейса.
 
-    -   Откройте файл *UIMap.uitest*.
+    - Откройте файл *UIMap.uitest*.
 
          ![Открытие редактора закодированного тестирования пользовательского интерфейса](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Использование редактора закодированного тестирования пользовательского интерфейса для поддержки при кодировании](../test/media/cuit_datadriven_testeditor.png)
 
-    -   В окне **свойств** откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
+    - В окне **свойств** откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
 
          ![Использование свойств поиска для поддержки при кодировании](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Сохраните решение.
+3. Сохраните решение.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Шаг 5. Запуск управляемого данными теста
 
@@ -207,23 +207,23 @@ ms.locfileid: "56796664"
 
 **Типы и атрибуты источников данных**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Тестовый случай в Team Foundation Server
+- Тестовый случай в Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

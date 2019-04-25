@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840619"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -130,4 +130,4 @@ ms.locfileid: "58897599"
 
 - Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
 - Пройдите [учебник по Node.js и React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
-- [Развертывание приложения в Службу приложений Linux](../javascript/publish-nodejs-app-azure.md)
+- [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)
