@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096573"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этом разделе сочетания клавиш. Дополнительные сведения см. в разделе [сочетания клавиш в Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
+Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этом разделе сочетания клавиш. См. подробнее о [сочетаниях клавиш в Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
 
--   [Управление окнами](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Управление окнами](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Сочетания клавиш окна](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Сочетания клавиш окна](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Поиск в Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Поиск в Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Поиск в редакторе](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Поиск в редакторе](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Редактор кода](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Редактор кода](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Панели инструментов](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Панели инструментов](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Отладка](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Отладка](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Управление жизненным циклом приложения](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Управление жизненным циклом приложения](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Управление окнами
+## <a name="BKMK_WindowMgmt"></a> Управление окнами
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ ms.locfileid: "54771183"
 |Показать список открытых файлов|CTRL+ALT+СТРЕЛКА ВНИЗ|
 |Показать все плавающие окна|CTRL+SHIFT+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Сочетания клавиш окна
+## <a name="BKMK_WindowShortcuts"></a> Сочетания клавиш окна
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "54771183"
 |Запустить новый экземпляр|WIN+SHIFT+N|
 |Переключиться между окнами|WIN+N|
 
-##  <a name="BKMK_Search"></a> Поиск в Visual Studio
+## <a name="BKMK_Search"></a> Поиск в Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "54771183"
 |Быстрый запуск — задание области результатов|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|
 |Искать в "Инструменты" > "Параметры"|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> Поиск в редакторе
+## <a name="BKMK_EditorFind"></a> Поиск в редакторе
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "54771183"
 |Поиск в файлах|Ctrl+Shift+F|
 |Заменить в файлах|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> Редактор кода
+## <a name="BKMK_CodeEditor"></a> Редактор кода
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "54771183"
 |Перемещение между несколькими результатами "Показать"|F8 и SHIFT+F8|
 |Переключение между окном редактора кода и окном "Показать определение"|SHIFT+ESC|
 
-##  <a name="BKMK_Toolbars"></a> Панели инструментов
+## <a name="BKMK_Toolbars"></a> Панели инструментов
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ ms.locfileid: "54771183"
 |Режим команд поля поиска|Ввести ">"|
 |Создать новый псевдоним|Команда >alias новый_псевдоним|
 
-##  <a name="BKMK_Debugging"></a> Отладка
+## <a name="BKMK_Debugging"></a> Отладка
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ ms.locfileid: "54771183"
 |Очистить буфер окна интерпретации|>cls|
 |Значение печати окна интерпретации|?varname|
 
-##  <a name="BKMK_ALM"></a>Управление жизненным циклом приложения
+## <a name="BKMK_ALM"></a>Управление жизненным циклом приложения
 
 См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).
 

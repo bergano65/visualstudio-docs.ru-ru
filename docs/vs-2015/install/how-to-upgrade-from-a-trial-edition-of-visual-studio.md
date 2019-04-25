@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: обновление с пробного выпуска | Документация Майкрософт'
+title: Практическое руководство. Обновление с пробной версии | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6740755567c24ceb9b70d0e63e159e5d74b7955b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069904"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Практическое руководство. Переход с ознакомительного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54785968"
 
  Вы можете ознакомиться с готовой версией выпусков Visual Studio Professional и Enterprise в течение 30 дней, начиная со дня установки продукта. [После входа в Visual Studio с учетной записью](../ide/signing-in-to-visual-studio.md) бесплатный пробный период продлевается на 60 дней и составляет 90 дней. Если не зарегистрировать пробный выпуск Visual Studio в течение 30 дней, пробный период истечет через 30 дней после установки.
 
- Например, если вы загрузили и использовали выпуск [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] в течение 10 дней, а затем зарегистрировали его, вы сможете пользоваться им еще 80 дней. Чтобы продолжить пользоваться продуктом по истечении 90 дней, необходимо указать действительный ключ продукта или выполнить вход в Visual Studio с учетной записью Майкрософт или учетной записью вашей организации, связанной с подпиской MSDN либо подпиской Visual Studio Online. Сведения о том, как найти или получить ключ продукта, см. в разделе [как: найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [купить Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
+ Например, если вы загрузили и использовали выпуск [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] в течение 10 дней, а затем зарегистрировали его, вы сможете пользоваться им еще 80 дней. Чтобы продолжить пользоваться продуктом по истечении 90 дней, необходимо указать действительный ключ продукта или выполнить вход в Visual Studio с учетной записью Майкрософт или учетной записью вашей организации, связанной с подпиской MSDN либо подпиской Visual Studio Online. См. подробнее о [поиске ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [приобретении Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
 
 > [!IMPORTANT]
 >  Пробный период для готовых версий выпусков Visual Studio Express также составляет 30 дней. Чтобы продлить пробный период выпусков Visual Studio Express на неопределенный срок, войдите в Visual Studio или зарегистрируйте продукт.
@@ -32,16 +32,16 @@ ms.locfileid: "54785968"
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Обновление с пробной версии Visual Studio Professional или Enterprise
 
-1.  Запустите Visual Studio в режиме **Запуск от имени администратора**.
+1. Запустите Visual Studio в режиме **Запуск от имени администратора**.
 
-2.  В меню **Справка**выберите команду **Зарегистрировать продукт**.
+2. В меню **Справка**выберите команду **Зарегистрировать продукт**.
 
-3.  Выберите ссылку **Изменить мою лицензию на продукт**.
+3. Выберите ссылку **Изменить мою лицензию на продукт**.
 
-4.  Введите действительный ключ продукта, а затем нажмите кнопку **Применить**.
+4. Введите действительный ключ продукта, а затем нажмите кнопку **Применить**.
 
     > [!NOTE]
     >  Для регистрации и разблокировки любого из выпусков Visual Studio требуется подключение к Интернету. После регистрации Visual Studio наличие подключение к Интернету является необязательным.
 
 ## <a name="see-also"></a>См. также раздел
- [Установка Visual Studio](../install/install-visual-studio-2015.md) [вход в Visual Studio](../ide/signing-in-to-visual-studio.md) [как: поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [поиск или изменение ключа продукта для Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Установка Visual Studio](../install/install-visual-studio-2015.md) [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md) [Практическое руководство. Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Поиск или изменение ключа продукта для Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

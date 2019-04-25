@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: e9f1d2434d17697c2d0989364f874044dae485a3
+ms.openlocfilehash: 3c4601928a7d0db4982903f8d4c982cf5edafef3
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850947"
+ms.locfileid: "63004606"
 ---
-Windows 7
+Visual Studio 2015
