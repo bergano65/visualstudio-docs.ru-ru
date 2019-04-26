@@ -25,12 +25,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430891"
 ---
 # <a name="mt-task"></a>Задача MT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59667915"
  В представленной ниже таблице приводятся параметры задачи **MT**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.  
   
 > [!NOTE]
->  В документации mt.exe в качестве префикса для параметров командной строки используется дефис (**-**), но в этом разделе используется косая черта (**/**). Допустим любой префикс.  
+> В документации mt.exe в качестве префикса для параметров командной строки используется дефис (**-**), но в этом разделе используется косая черта (**/**). Допустим любой префикс.  
   
 |Параметр|Описание|  
 |---------------|-----------------|  

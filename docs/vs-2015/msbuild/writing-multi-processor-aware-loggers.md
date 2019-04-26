@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425883"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  В параметре `/dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).  
+> В параметре `/dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).  
   
  ConfigurableForwardingLogger используется точно так же, как и любое другое средство ведения журнала (см. описание в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)), с той лишь разницей, что вместо обычного средства ведения журнала [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] подключается средство ведения журнала ConfigurableForwardingLogger и в качестве параметров указываются события, которые ConfigurableForwardingLogger будет передавать в центральный узел.  
   

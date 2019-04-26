@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403450"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60045144"
      Если при открытии графического элемента поля противоположное поле не задано, ему будет присвоено корректное значение в соответствии с расположением элемента в области рисования. Для противоположных полей, например полей **Слева** и **Справа**, всегда будет задано хотя бы одно значение.  
   
     > [!IMPORTANT]
-    >  Элементы, помещенные в некоторые контейнеры макета, например <xref:Windows.UI.Xaml.Controls.Canvas>, лишены графических элементов полей. У элементов, помещенных в <xref:Windows.UI.Xaml.Controls.StackPanel>, имеются графические элементы левого и правого или верхнего и нижнего полей, в зависимости от ориентации `StackPanel`.  
+    > Элементы, помещенные в некоторые контейнеры макета, например <xref:Windows.UI.Xaml.Controls.Canvas>, лишены графических элементов полей. У элементов, помещенных в <xref:Windows.UI.Xaml.Controls.StackPanel>, имеются графические элементы левого и правого или верхнего и нижнего полей, в зависимости от ориентации `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Группировка или разгруппировка элементов  
  Группировка нескольких элементов в конструкторе XAML создает новый контейнер макета и помещает эти элементы внутрь него. Размещение нескольких элементов в контейнере макета позволяет легко выбирать, перемещать и преобразовывать группу, как если бы элементы в этой группе были одним элементом. Группировка также полезна для определения элементов, которые чем-то связаны друг с другом, таких как различные кнопки, составляющих элемент навигации. при разгруппировке элементов просто удаляется контейнер макета, содержащий эти элементы.  
@@ -106,7 +106,7 @@ ms.locfileid: "60045144"
 2. Щелкните выделенные элементы правой кнопкой, наведите указатель на команду **Сгруппировать в**, а затем выберите тип контейнера макета, в котором будет размещена группа.  
   
     > [!TIP]
-    >  Если выбрать <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, или <xref:Windows.UI.Xaml.Controls.ScrollViewer> для группировки элементов, они размещаются в новой панели <xref:Windows.UI.Xaml.Controls.Grid> в <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Если необходимо разгруппировать элементы в одном из этих контейнеров макета, удаляются только контейнеры <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>, а панель <xref:Windows.UI.Xaml.Controls.Grid> остается. Для удаления панели `Grid` нужно разгруппировать элементы еще раз.  
+    > Если выбрать <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, или <xref:Windows.UI.Xaml.Controls.ScrollViewer> для группировки элементов, они размещаются в новой панели <xref:Windows.UI.Xaml.Controls.Grid> в <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Если необходимо разгруппировать элементы в одном из этих контейнеров макета, удаляются только контейнеры <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>, а панель <xref:Windows.UI.Xaml.Controls.Grid> остается. Для удаления панели `Grid` нужно разгруппировать элементы еще раз.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Разгруппировка элементов и удаление макета  
   
