@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831448"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
 Выбор программ командной строки и параметров средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] зависит от таких факторов, как тип профилируемого приложения, метод профилирования, который нужно использовать, а также от того, какой код (машинный или [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) использовался для написания приложения.
@@ -37,17 +37,17 @@ ms.locfileid: "56624494"
 
  **Тип целевого приложения**
 
--   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Автономные компоненты в машинном коде](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Автономные компоненты в машинном коде](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [Службы .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Службы .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Службы в машинном коде](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Службы в машинном коде](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Применение методов анализа использования памяти .NET для сбора сведений о выделении памяти и времени существования объектов
  Метод анализа использования памяти средств профилирования .NET позволяет собирать сведения о выделении памяти [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], а также сведения о времени существования объектов в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

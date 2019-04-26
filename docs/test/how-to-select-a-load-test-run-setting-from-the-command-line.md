@@ -9,14 +9,14 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949907"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Как выполнить  выбор параметров запуска нагрузочного теста из командной строки
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Как выполнить выбор параметров запуска нагрузочного теста из командной строки
 
 Нагрузочный тест может содержать *параметры запуска*, которые представляют собой свойства, определяющие способ выполнения нагрузочного теста. Параметры запуска организованы по категориям в окне **Свойства**. При запуске нагрузочного теста используются те параметры запуска, которые указаны как активные.
 
@@ -26,11 +26,11 @@ ms.locfileid: "55936165"
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Изменение параметров запуска из командной строки
 
-1.  Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующую команду:
+1. Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующую команду:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Запуск нагрузочного теста с помощью программы mstest:
+2. Запуск нагрузочного теста с помощью программы mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

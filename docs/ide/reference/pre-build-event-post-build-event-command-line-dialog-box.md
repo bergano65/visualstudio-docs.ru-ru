@@ -33,19 +33,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969063"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.
 
 > [!NOTE]
 > События перед сборкой не выполняются, если проект актуален и сборка не запускается.
-
 
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса
  **Поле ввода командной строки**
@@ -54,7 +53,6 @@ ms.locfileid: "55939818"
 
 > [!NOTE]
 > Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Макросы**
 

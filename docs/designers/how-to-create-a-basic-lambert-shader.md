@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание простейшего шейдера с моделью освещения Ламберта
+title: Как выполнить Создание простейшего шейдера с моделью освещения Ламберта
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893966"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Как выполнить  Создание простейшего шейдера с моделью освещения Ламберта
+# <a name="how-to-create-a-basic-lambert-shader"></a>Как выполнить Создание простейшего шейдера с моделью освещения Ламберта
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера, реализующего классическую модель освещения Ламберта.
 

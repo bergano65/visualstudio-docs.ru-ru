@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994967"
 ---
 # <a name="profile-aspnet-load-tests"></a>Профилирование нагрузочных тестов ASP.NET
 Данные профилирования можно собирать из автоматических веб-тестов [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], выполняемых для проектов веб-сайтов ASP.NET. Собирать можно данные выборки и данные об уровневом взаимодействии. Дополнительные сведения см. в следующих разделах:

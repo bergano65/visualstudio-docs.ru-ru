@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415998"
 ---
 # <a name="windows-script-engines"></a>Обработчики скриптов Windows
 Для реализации обработчика скриптов Microsoft Windows создайте OLE COM-объект, который поддерживает следующие интерфейсы.  
@@ -31,7 +31,7 @@ ms.locfileid: "58157767"
 |IPersist*|Обеспечивает поддержку сохраняемости. Реализация по меньшей мере одного из следующих интерфейсов является обязательной, если интерфейс [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) не реализован.<br /><br /> IPersistStorage: обеспечивает поддержку атрибута DATA={url} в теге OBJECT.<br /><br /> IPersistStreamInit: обеспечивает поддержку тех же возможностей, что и `IPersistStorage`, а также поддержку атрибута DATA="string-encoded byte stream" в теге OBJECT.<br /><br /> IPersistPropertyBag: обеспечивает поддержку атрибута PARAM= в теге OBJECT.|  
   
 > [!NOTE]
->  Возможно, что обработчик скриптов никогда не будет вызван для сохранения или восстановления состояния скрипта через `IPersist*`. Вместо этого используется [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) путем вызова [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) для создания пустого скрипта, затем скрипты добавляются и подключаются к событиям с помощью [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md), а общий код добавляется с помощью [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Тем не менее обработчик скриптов должен полностью реализовать по меньшей мере один интерфейс `IPersist*` (предпочтительно `IPersistStreamInit`), так как другие ведущие приложения могут попытаться их использовать.  
+> Возможно, что обработчик скриптов никогда не будет вызван для сохранения или восстановления состояния скрипта через `IPersist*`. Вместо этого используется [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) путем вызова [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) для создания пустого скрипта, затем скрипты добавляются и подключаются к событиям с помощью [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md), а общий код добавляется с помощью [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Тем не менее обработчик скриптов должен полностью реализовать по меньшей мере один интерфейс `IPersist*` (предпочтительно `IPersistStreamInit`), так как другие ведущие приложения могут попытаться их использовать.  
   
  В следующих разделах реализация обработчика скриптов Windows описывается более подробно.  
   

@@ -1,12 +1,6 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b9b709c14cf0f22d12054322635c852e09214316
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323192"
 documentType: LandingData
-title: Руководства по Visual Studio | Visual Basic
+title: "Руководства по Visual Studio\_| Visual Basic"
 metadata:
   title: Разработка на Visual Basic с помощью Visual Studio | Документация Майкрософт
   description: Руководства и материалы по разработке приложений Visual Basic в Visual Studio.
@@ -21,86 +15,86 @@ metadata:
 abstract:
   description: На этой странице содержатся ссылки на руководства по Visual Studio для начинающих пользователей Visual Basic. Полную документацию по Visual Studio см. в разделе <a href="/visualstudio/ide/">Visual Studio</a>. Документацию по языку Visual Basic см. в разделе <a href=/dotnet/visual-basic>Руководство по Visual Basic</a>.
 sections:
-- title: Начало работы
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Начало работы
     items:
-    - href: ../../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Установка Visual Studio
-    - href: visual-studio-ide.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Начать интерактивный обзор
-- title: Руководства по Visual Basic
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Установка Visual Studio
+          - href: visual-studio-ide.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: Начать интерактивный обзор
+  - title: Руководства по Visual Basic
     items:
-    - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_pull-request.svg
-      title: Открытие кода из репозитория
-    - href: tutorial-console.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      title: Создание первой программы на Visual Basic
-    - href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Windows.svg
-      title: Создание универсального приложения Windows
-    - href: tutorial-wpf.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Windows.svg
-      title: Создание классического приложения Windows
-    - href: /dotnet/visual-basic/developing-apps/programming/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      title: Дополнительные сведения о Visual Basic
-- title: Знакомство с Visual Studio
-  items:
-  - type: paragraph
-    text: Узнайте, как использовать Visual Studio для задач разработки.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: Открытие кода из репозитория
+          - href: tutorial-console.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            title: Создание первой программы на Visual Basic
+          - href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
+            title: Создание универсального приложения Windows
+          - href: tutorial-wpf.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
+            title: Создание классического приложения Windows
+          - href: /dotnet/visual-basic/developing-apps/programming/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            title: Дополнительные сведения о Visual Basic
+  - title: Знакомство с Visual Studio
     items:
-    - href: tutorial-editor.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: Создание и редактирование кода
-    - href: ../../ide/compiling-and-building-in-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Компиляция и сборка
-    - href: ../visual-basic/tutorial-debugger.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: Отладка кода
-    - href: ../../test/getting-started-with-unit-testing.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_test.svg
-      title: Тестирование кода
-    - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
-      title: Доступ к данным
+      - type: paragraph
+        text: 'Узнайте, как использовать Visual Studio для задач разработки.'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: tutorial-editor.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: Создание и редактирование кода
+          - href: ../../ide/compiling-and-building-in-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Компиляция и сборка
+          - href: ../visual-basic/tutorial-debugger.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: Отладка кода
+          - href: ../../test/getting-started-with-unit-testing.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_test.svg'
+            title: Тестирование кода
+          - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+            title: Доступ к данным

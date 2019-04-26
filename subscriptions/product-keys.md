@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Сведения о том, как получить ключи продукта в подписках Visual Studio и управлять ими.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977734"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Использование ключей продукта в подписках Visual Studio
 
@@ -53,7 +53,6 @@ ms.locfileid: "56953905"
 
 В зависимости от продукта доступны различные типы ключей.
 
-
 ### <a name="product-key-types"></a>Типы ключей продукта
 
 |    Тип ключа           |    Описание                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ ms.locfileid: "56953905"
 
 ### <a name="claiming-product-keys"></a>Запрос ключей продукта
 Скачивать продукты и запрашивать их ключи могут только пользователи с активными подписками.  Вы можете экспортировать запрошенные ключи со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys), когда ваша подписка активна.
-
 
 Запрос ключа продукта:
 1. Войдите в свою подписку Visual Studio.  Вы должны войти в систему, чтобы скачать или запросить ключи продуктов.

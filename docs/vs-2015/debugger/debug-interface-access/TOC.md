@@ -1,6 +1,6 @@
 # [SDK для доступа к интерфейсу отладки](debug-interface-access-sdk.md)
 ## [Начало работы](getting-started-debug-interface-access-sdk.md)
-### [Обзор набора средств Visual Studio для Unity](overview-debug-interface-access-sdk.md)
+### [Обзор](overview-debug-interface-access-sdk.md)
 ### [Запрос PDB-файла](querying-the-dot-pdb-file.md)
 ## [Символы и теги символов](symbols-and-symbol-tags.md)
 ### [Местоположения символов](symbol-locations.md)

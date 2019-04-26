@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430886"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
 
@@ -24,11 +24,11 @@ ms.locfileid: "55940611"
 
  Конкретные сведения об используемом языке программирования см. в следующих разделах.
 
--   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ — [Указание событий сборки](/cpp/ide/specifying-build-events).
+- Visual C++ — [Указание событий сборки](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,7 +53,7 @@ ms.locfileid: "55940611"
    Пример: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
   > [!NOTE]
-  >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
+  > Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
 ## <a name="see-also"></a>См. также
 
