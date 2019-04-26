@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428096"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Сохранение и экспорт данных средств производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60073791"
  Одно или несколько представлений отчета, созданных с использованием VSP- или VSPS-файлов, можно сохранить в файл с разделителями-запятыми или XML-файл. Перед экспортом можно выполнить фильтрацию данных в окне представления отчета, также можно выполнить экспорт представлений отчета для всего файла данных из окна **Обозреватель производительности** .  
   
 > [!NOTE]
->  Также можно скопировать выделенные строки из окна представления отчета и вставить их в формате значений с разделителями табуляцией.  
+> Также можно скопировать выделенные строки из окна представления отчета и вставить их в формате значений с разделителями табуляцией.  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Экспорт отчетов о производительности из окна обозревателя производительности  
   

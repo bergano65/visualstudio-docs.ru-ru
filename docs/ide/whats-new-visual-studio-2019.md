@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432020"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -84,7 +84,7 @@ ms.locfileid: "59477545"
 
 Новый индикатор работоспособности документа дополнен новой командой очистки кода. Эту новую команду можно использовать для определения и устранения предупреждений и предложений одним нажатием кнопки.
 
-Функция очистки выполнит форматирование кода и применит исправления согласно [текущим параметрам](code-styles-and-quick-actions.md), [файлам editorconfig](create-portable-custom-editor-options.md) или [анализаторам Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Функция очистки выполнит форматирование кода и применит исправления согласно [текущим параметрам](code-styles-and-quick-actions.md) и [файлам editorconfig](create-portable-custom-editor-options.md).
 
    ![Снимок экрана: новое средство очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
@@ -168,6 +168,12 @@ ms.locfileid: "59477545"
 
 Дополнительные сведения см. в статье [Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) и записи блога [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Представление отладки перехода по времени для Visual Studio Enterprise 2019).
 
+## <a name="whats-next"></a>Дальнейшие действия
+
+Мы часто добавляем в Visual Studio 2019 новые функции, облегчающие разработку. Узнать подробнее о последних новшествах можно из [блога о Visual Studio](https://devblogs.microsoft.com/visualstudio/). Ретроспективный список нововведений, появившихся в предварительных версиях, можно посмотреть в разделе [Заметки о предварительных выпусках](/visualstudio/releases/2019/release-notes-preview/).
+
+Сведения о находящихся в разработке функциях Visual Studio 2019 см. в документе [Стратегия развития Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+
 ## <a name="give-us-feedback"></a>Обратная связь
 
 Зачем отправлять отзыв группе Visual Studio? Потому что мы серьезно относимся к отзывам клиентов. Они влияют на многие наши действия.
@@ -178,8 +184,8 @@ ms.locfileid: "59477545"
 
 ## <a name="see-also"></a>См. также
 
-* [Объявление о выпуске Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
+* [Объявление о выходе Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Выпущена версия Visual Studio 2019 для Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Объявление о выходе Visual Studio 2019 для Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)
