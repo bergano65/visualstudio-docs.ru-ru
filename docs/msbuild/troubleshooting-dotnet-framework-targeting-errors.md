@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 041a04827ee904f309b62b8fb875198cc8991b34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434157"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework
 В этом разделе описаны ошибки MSBuild, которые могут возникнуть из-за проблем со ссылками, и методы устранения этих ошибок.
@@ -51,7 +51,7 @@ ms.locfileid: "56620295"
 ```
 
 > [!NOTE]
->  После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.
+> После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Определение целевой версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)

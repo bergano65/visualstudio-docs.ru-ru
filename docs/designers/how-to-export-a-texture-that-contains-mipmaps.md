@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Экспорт текстуры, содержащей MIP-карты
+title: Как выполнить Экспорт текстуры, содержащей MIP-карты
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5226903112d06d5efa362c61db938124eed8e68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897322"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Как выполнить  Экспорт текстуры, содержащей MIP-карты
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Как выполнить Экспорт текстуры, содержащей MIP-карты
 
 Конвейер содержимого изображения может создавать MIP-карты из исходного изображения как часть этапа сборки вашего проекта. Для достижения некоторых эффектов иногда требуется задавать содержимое изображения каждого уровня MIP вручную. Если делать этого не нужно, создание MIP-карты во время сборки гарантирует, что содержимое MIP-карты будет всегда синхронизировано. Это также позволяет избежать снижения производительности из-за создания MIP-карты во время выполнения.
 

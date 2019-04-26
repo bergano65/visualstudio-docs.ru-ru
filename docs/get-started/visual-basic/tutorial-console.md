@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972529"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857597"
 
 ::: moniker range="vs-2017"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -262,7 +262,7 @@ Visual Studio — это интегрированный набор средст
 Поздравляем с завершением этого учебника! Для получения дополнительных сведений перейдите к следующему руководству.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Создание библиотеки .NET Standard с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>См. также
 

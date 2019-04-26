@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969762"
 ---
 # <a name="function-details-view"></a>Представление сведений о функции
 В окне **Function Details View** (Представление сведений о функции) отображаются следующие сведения:

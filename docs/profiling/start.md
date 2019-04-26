@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979683"
 ---
 # <a name="start"></a>Запуск
 **Start** — это параметр программы *VSPerfCmd.exe*, который инициализирует профилировщик для использования указанного метода профилирования.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Параметры
  `Method` Должен иметь в качестве значения одно из следующих ключевых слов:
 
--   **TRACE** — задает метод инструментирования;
+- **TRACE** — задает метод инструментирования;
 
--   **SAMPLE** — задает метод выборки;
+- **SAMPLE** — задает метод выборки;
 
--   **COVERAGE** — задает объем протестированного кода;
+- **COVERAGE** — задает объем протестированного кода;
 
--   **CONCURRENCY** — задает метод состязания за ресурсы.
+- **CONCURRENCY** — задает метод состязания за ресурсы.
 
 ## <a name="required-options"></a>Обязательные параметры
  Если в командной строке задан параметр **Start**, необходимо указать параметр **Output**.

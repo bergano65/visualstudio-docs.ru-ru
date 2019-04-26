@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979839"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Указание пути к программам командной строки средств профилирования
 
@@ -34,21 +34,21 @@ ms.locfileid: "57868954"
 На 64-разрядных компьютерах укажите путь в соответствии с целевой платформой профилируемого приложения.
 
 ::: moniker range=">=vs-2019"
--   Для 32-разрядных приложений каталог средств профилирования по умолчанию:
+- Для 32-разрядных приложений каталог средств профилирования по умолчанию:
 
      (машинный код) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Для 64-разрядных приложений каталог средств профилирования по умолчанию:
+- Для 64-разрядных приложений каталог средств профилирования по умолчанию:
 
      (машинный код) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   Для 32-разрядных приложений каталог средств профилирования по умолчанию:
+- Для 32-разрядных приложений каталог средств профилирования по умолчанию:
 
      (машинный код) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Для 64-разрядных приложений каталог средств профилирования по умолчанию:
+- Для 64-разрядных приложений каталог средств профилирования по умолчанию:
 
      (машинный код) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

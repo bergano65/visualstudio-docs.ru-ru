@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809116"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -49,14 +49,13 @@ ms.locfileid: "56841022"
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Вопрос:  Какова разница между чатом с Помощником по Azure и Помощником по Azure?
--  Ответ.  Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
+- Ответ.  Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

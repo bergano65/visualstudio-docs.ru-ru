@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание ассоциаций между типами (конструктор классов)
+title: Как выполнить Создание ассоциаций между типами (конструктор классов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975389"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Как выполнить  Создание ассоциаций между типами (конструктор классов)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Как выполнить Создание ассоциаций между типами (конструктор классов)
 
 Линии связи в **конструкторе классов** показывают отношения между классами на диаграмме. Линия связи представляет класс, который является типом "свойство" или "поле" другого класса в проекте. Линии связи обычно используются для иллюстрации наиболее важных отношений между классами в проекте.
 

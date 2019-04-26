@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996635"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
 В шестой части этого учебника вам предстоит добавить задачу на вычитание и научиться выполнять следующие задачи:
 
--   Хранение значений, которые участвуют в операции вычитания.
+- Хранение значений, которые участвуют в операции вычитания.
 
--   Создание случайных чисел для задачи (а также гарантия, что ответ лежит в диапазоне от 0 до 100).
+- Создание случайных чисел для задачи (а также гарантия, что ответ лежит в диапазоне от 0 до 100).
 
--   Обновление метода, который проверяет ответы, таким образом, чтобы он также проверял новую задачу на вычитание.
+- Обновление метода, который проверяет ответы, таким образом, чтобы он также проверял новую задачу на вычитание.
 
--   Обновление обработчика событий таймера <xref:System.Windows.Forms.Timer.Tick> так, чтобы этот обработчик событий заполнял корректный ответ после истечения времени.
+- Обновление обработчика событий таймера <xref:System.Windows.Forms.Timer.Tick> так, чтобы этот обработчик событий заполнял корректный ответ после истечения времени.
 
 ## <a name="to-add-a-subtraction-problem"></a>Добавление задачи на вычитание
 
-1.  Добавьте в форму две целочисленные переменные для задачи на вычитание — между целочисленными переменными для задачи на сложение и для таймера. Код должен выглядеть следующим образом.
+1. Добавьте в форму две целочисленные переменные для задачи на вычитание — между целочисленными переменными для задачи на сложение и для таймера. Код должен выглядеть следующим образом.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ ms.locfileid: "55917393"
 
      Затем необходимо изменить метод `StartTheQuiz()`, чтобы получить случайные значения для задачи на вычитание.
 
-2.  Добавьте после комментария "Fill in the subtraction problem" (Заполнение задачи на вычитание) следующий код.
+2. Добавьте после комментария "Fill in the subtraction problem" (Заполнение задачи на вычитание) следующий код.
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ ms.locfileid: "55917393"
 
      В данном случае необходимо выбрать последнюю перегрузку, чтобы можно было задать минимальное и максимальное значения.
 
-3.  Для проверки правильного ответа для задачи на вычитание, измените метод `CheckTheAnswer()`.
+3. Для проверки правильного ответа для задачи на вычитание, измените метод `CheckTheAnswer()`.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      В Visual C# `&&` — это оператор `logical and` . Эквивалентный оператор в языке Visual Basic — `AndAlso`. Эти операторы означают, что "Если addend1 плюс addend2 равно значению NumericUpDown с именем sum и если minuend минус subtrahend равно значению NumericUpDown с именем difference". Метод `CheckTheAnswer()` возвращает значение `true`, только если игрок дал правильные ответы и на задачу на сложение, и на задачу на вычитание.
 
-4.  Замените последнюю часть обработчика событий таймера Tick следующим кодом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.
+4. Замените последнюю часть обработчика событий таймера Tick следующим кодом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Сохраните и выполните код.
+5. Сохраните и выполните код.
 
      Теперь программа включает в себя задачу на вычитание, как показано на следующем рисунке.
 
@@ -79,6 +79,6 @@ ms.locfileid: "55917393"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Следующий раздел руководства: [Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md).
+- Следующий раздел руководства: [Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Предыдущий раздел руководства: [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Предыдущий раздел руководства: [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
