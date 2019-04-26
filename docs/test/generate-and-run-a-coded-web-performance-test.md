@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002559"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
 
@@ -29,13 +29,13 @@ ms.locfileid: "57869280"
 
 ## <a name="generate-a-coded-web-performance-test"></a>Создание закодированного веб-теста производительности
 
-1.  Если веб-тест производительности еще не создан, см. раздел [Запись веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Если веб-тест производительности еще не создан, см. раздел [Запись веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Создайте закодированный тест.
+2. Создайте закодированный тест.
 
      ![Создание закодированного веб-теста производительности](../test/media/web_test_coded_generate.png)
 
-3.  Назовите тест.
+3. Назовите тест.
 
      ![Ввод имени для закодированного веб-тест производительности](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "57869280"
 
      В коде можно увидеть, что метод GetRequestEnumerator() в C# или метод Run() в Visual Basic содержит все правила проверки и веб-запрос, сделанный в тесте с измененным кодом.
 
-4.  Чтобы продемонстрировать добавление простого кода, прокрутите до конца метода и после кода последнего веб-запроса добавьте следующий код:
+4. Чтобы продемонстрировать добавление простого кода, прокрутите до конца метода и после кода последнего веб-запроса добавьте следующий код:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ ms.locfileid: "57869280"
     End If
     ```
 
-5.  Соберите решение, чтобы убедиться, что пользовательский код компилируется.
+5. Соберите решение, чтобы убедиться, что пользовательский код компилируется.
 
-6.  Запустите тест.
+6. Запустите тест.
 
      ![Запуск закодированного веб-теста производительности](../test/media/web_test_coded_generate_run.png)
 
