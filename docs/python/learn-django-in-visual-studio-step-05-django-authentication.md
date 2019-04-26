@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957889"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
 
-**Предыдущий шаг. [Tutorial step 4: Use the full Django Web Project template](learn-django-in-visual-studio-step-04-full-django-project-template.md) (Руководство (шаг 4). Использование полного шаблона веб-проекта Django)**
+**Предыдущий шаг. [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Так как аутентификация является распространенным требованием для веб-приложений, в шаблоне "Веб-проект Django" предусмотрен базовый поток проверки подлинности. (В шаблоне "Веб-проект опроса Django", который описан в шаге 6 этого руководства, также реализован такой поток.) При использовании любого из шаблонов проектов Django в Visual Studio в файл *settings.py* проекта Django включаются все модули, необходимые для проверки подлинности.
 

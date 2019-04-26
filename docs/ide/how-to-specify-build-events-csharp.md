@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Указание событий сборки (C#)
+title: Как выполнить Указание событий сборки (C#)
 ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946912"
 ---
-# <a name="how-to-specify-build-events-c"></a>Практическое руководство. Указание событий сборки (C#)
+# <a name="how-to-specify-build-events-c"></a>Как выполнить Указание событий сборки (C#)
 
 Используйте события сборки для указания команд, которые выполняются до начала сборки или после ее завершения. События сборки запускаются, только если сборка успешно достигает этих точек в процессе сборки.
 

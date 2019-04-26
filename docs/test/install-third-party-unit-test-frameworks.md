@@ -8,11 +8,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978679"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
 

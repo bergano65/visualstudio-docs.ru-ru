@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946886"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить  Замена параметров в шаблоне
+# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить Замена параметров в шаблоне
 
 Параметры шаблонов позволяют заменять идентификаторы, такие как имена классов и пространства имен, при создании файла на основе шаблона. Параметры шаблона можно добавлять в существующие шаблоны или использовать для создания собственных шаблонов.
 

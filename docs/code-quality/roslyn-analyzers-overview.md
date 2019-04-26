@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825481"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Обзор анализаторов на платформе .NET Compiler Platform
 
@@ -92,4 +92,4 @@ ms.locfileid: "59232571"
 
 - [Часто задаваемые вопросы по анализаторам](analyzers-faq.md)
 - [Написание собственного анализатора Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [Пакет SDK для .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
+- [Пакет SDK для .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)

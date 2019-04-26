@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997437"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio
 
@@ -62,7 +62,7 @@ ms.locfileid: "58857389"
 
 1. Закройте установщик Visual Studio.
 2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
 4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
@@ -84,7 +84,7 @@ ms.locfileid: "58857389"
 
 1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#how-to-get-visual-studio-installation-logs).
 2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
-![Чтобы открыть средство обратной связи, можно перейти к кнопке "Отправить отзыв" с помощью клавиши табуляции](media/report-a-problem.png)
+![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/report-a-problem.png)
 3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
 4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.
 
@@ -94,7 +94,7 @@ ms.locfileid: "58857389"
 
 1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#how-to-get-visual-studio-installation-logs).
 2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
-![Чтобы открыть средство обратной связи, можно перейти к кнопке "Отправить отзыв" с помощью клавиши табуляции](media/vs-2019/vs-installer-report-problem.png)
+![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/vs-2019/vs-installer-report-problem.png)
 3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
 4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.
 

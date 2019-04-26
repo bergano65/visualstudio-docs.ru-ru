@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973023"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
@@ -24,13 +24,13 @@ ms.locfileid: "57983040"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Что поддерживается во всех браузерах?
 
--   [Добавление пользовательского кода для управления компонентами](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
+- [Добавление пользовательского кода для управления компонентами](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
 
--   Всплывающие окна и диалоговые окна
+- Всплывающие окна и диалоговые окна
 
--   [Выполнение базового JavaScript без возвращаемого типа](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Выполнение базового JavaScript без возвращаемого типа](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Зачем нужно использовать закодированные тесты пользовательского интерфейса в нескольких типах веб-браузеров?
 
@@ -78,17 +78,17 @@ ms.locfileid: "57983040"
 
 Чтобы включить отладку веб-приложения, необходимо указать следующие параметры конфигурации.
 
-1.  Включить только мой код:
+1. Включить только мой код:
 
-    1.  В меню **Сервис** выберите **Параметры** и затем **Отладка**.
+    1. В меню **Сервис** выберите **Параметры** и затем **Отладка**.
 
-    2.  Выберите **Включить только мой код**.
+    2. Выберите **Включить только мой код**.
 
-2.  Отключить исключения CLR:
+2. Отключить исключения CLR:
 
-    1.  В меню **Отладка** выберите **Исключения**.
+    1. В меню **Отладка** выберите **Исключения**.
 
-    2.  В поле **Исключения среды CLR** снимите флажок **Не обработанное пользовательским кодом**.
+    2. В поле **Исключения среды CLR** снимите флажок **Не обработанное пользовательским кодом**.
 
 Если в закодированном тесте пользовательского интерфейса отсутствует параметр для изменения `BrowserWindow.CurrentBrowser`, возможно, ваша версия Visual Studio не поддерживает закодированные тесты пользовательского интерфейса с использованием различных веб-браузеров. Чтобы использовать такие закодированные тесты пользовательского интерфейса, необходимо использовать выпуск Visual Studio Enterprise.
 

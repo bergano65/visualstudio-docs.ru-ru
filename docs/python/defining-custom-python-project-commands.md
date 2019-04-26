@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957708"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Определение пользовательских команд для проектов Python
 
@@ -306,7 +306,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
 
 ### <a name="generate-windows-installer"></a>Создание установщика Windows
 
@@ -325,7 +325,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
 
 ### <a name="generate-wheel-package"></a>Создание пакета wheel
 
@@ -345,7 +345,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 </Target>
 ```
 
-*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешением.*
+*Из файла [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), используемого с разрешениями.*
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 

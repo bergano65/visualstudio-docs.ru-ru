@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962805"
 ---
 # <a name="debug-python-and-c-together"></a>Совместная отладка Python и C++
 
@@ -87,7 +87,7 @@ Visual Studio 2017 (версии 15.5 и более поздних) поддер
 ## <a name="mixed-mode-specific-features"></a>Функции, характерные для смешанного режима
 
 - [Объединенный стек вызовов](#combined-call-stack)
-- [переход между кодом Python и машинным кодом;](#step-between-python-and-native-code)
+- [Переход между кодом Python и машинным кодом](#step-between-python-and-native-code)
 - [Представление значений PyObject в машинном коде](#pyobject-values-view-in-native-code)
 - [Представление значений машинного кода в коде Python](#native-values-view-in-python-code)
 

@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946899"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Как выполнить  Создание веб-шаблонов вручную
+# <a name="how-to-manually-create-web-templates"></a>Как выполнить Создание веб-шаблонов вручную
 
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл *VSTEMPLATE* должен указывать, что это веб-шаблон, а также задавать язык программирования.
 

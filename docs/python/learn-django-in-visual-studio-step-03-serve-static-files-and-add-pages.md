@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958259"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
-**Предыдущий шаг. [Tutorial step 2: Create a Django app with views and page templates](learn-django-in-visual-studio-step-02-create-an-app.md) (Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц)**
+**Предыдущий шаг. [Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 В предыдущих шагах этого руководства рассматривалось создание минимального приложения Django с одной страницей автономного HTML. Современные веб-приложения обычно состоят из многих страниц и используют общие ресурсы, такие как файлы CSS и JavaScript, для обеспечения согласованного стиля и реакции на события.
 
@@ -275,7 +275,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Tutorial step 4: Use the full Django Web Project template](learn-django-in-visual-studio-step-04-full-django-project-template.md) (Руководство (шаг 4). Использование полного шаблона веб-проекта Django)
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 

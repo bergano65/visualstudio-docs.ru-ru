@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966055"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Применение инструментов Visual Studio для Mac для Unity
 
@@ -102,7 +102,6 @@ ms.locfileid: "58857012"
    ![Нажатие кнопки "Воспроизвести" в Unity](media/using-vsmac-tools-unity-image6.png)
 
 3. Когда игра запущена в редакторе Unity при подключении к Visual Studio, все проходимые точки останова будут приостанавливать выполнение игры и выводить соответствующую строку кода в Visual Studio для Mac.
-
 
 ### <a name="start-debugging-in-a-single-step"></a>Запуск отладки за один шаг
 

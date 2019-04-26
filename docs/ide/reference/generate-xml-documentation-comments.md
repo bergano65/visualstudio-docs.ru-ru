@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790127"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Как выполнить  вставку XML-комментариев для создания документации
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Как выполнить вставку XML-комментариев для создания документации
 
 Visual Studio может помочь вам документировать элементы кода, такие как классы и методы, автоматически формируя стандартную структуру комментариев для XML-документации. Во время компиляции можно создать XML-файл, содержащий комментарии для документации.
 

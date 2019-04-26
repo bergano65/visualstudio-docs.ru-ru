@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993191"
 ---
 # <a name="special-characters-to-escape"></a>Знаки, требующие отключения их специального значения
 Специальные знаки необходимо экранировать только в том случае, если они имеют особое значение в контексте, в котором используются. Например, звездочка (*) является специальным символом только в атрибутах "Включить" и "Исключить" определения элемента или при вызове <xref:Microsoft.Build.Tasks.CreateItem>. Во всех остальных случаях звездочка считается символом звездочки. Если не требуется экранировать звездочки в файлах проекта, использование их в таком виде не приносит никакого вреда.

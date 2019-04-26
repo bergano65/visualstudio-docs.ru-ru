@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794353"
 ---
 # <a name="object-lifetime-view"></a>Представление "Время существования объектов"
 Представление "Время жизни объекта" доступно, только если на страницах свойств **Сеанс производительности** установлен флажок **Also collect .NET object lifetime data** (Также собирать данные о времени жизни объектов .NET).

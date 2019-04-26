@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c7a67d4763337af4b3d75217ce6278951c07bc48
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950310"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Представление "Дерево вызовов" — данные инструментирования памяти .NET
 В представлении "Дерево вызовов" данных профилирования выделения памяти .NET, собранных методом инструментирования, отображаются пути выполнения функций, которые просматривались в профилируемом приложении. Корнем дерева является точка входа в приложение или компонент. В каждом узле функции указаны все вызванные им функции, а также данные о выделении памяти и времени .NET для соответствующей функции.

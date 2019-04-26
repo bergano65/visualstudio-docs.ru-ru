@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988392"
 ---
 # <a name="accessibility"></a>Специальные возможности
 
@@ -44,7 +44,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Включив специальные возможности, перезапустите Visual Studio.
 
-## <a name="how-to-use-keyboard-navigation"></a>Практическое руководство. Навигация с помощью клавиатуры
+## <a name="how-to-use-keyboard-navigation"></a>Как выполнить Навигация с помощью клавиатуры
 
 Навигацию с помощью клавиатуры можно включить, выбрав **System Preferences > Keyboard > Shortcuts** (Системные настройки > Клавиатура > Ярлыки) и установив для параметра Full Keyboard Access (Полный доступ с клавиатуры) значение **All Controls** (Все элементы управления):
 
@@ -58,7 +58,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Нажатие клавиши ПРОБЕЛ активирует элемент управления с наведенным фокусом.
 
-## <a name="how-to-enable-and-use-voice-over"></a>Практическое руководство. Включение и использование функции VoiceOver
+## <a name="how-to-enable-and-use-voice-over"></a>Как выполнить Включение и использование функции VoiceOver
 
 Чтобы включить или отключить функцию VoiceOver, нажмите клавиши **CMD+F5**.
 

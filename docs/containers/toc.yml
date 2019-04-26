@@ -1,37 +1,30 @@
-items:
-- name: Средства Visual Studio для контейнеров
+- name: "Средства Visual\_Studio для контейнеров"
   href: index.yml
-  items:
-  - name: Обзор
-    href: overview.md
-  - name: Краткое руководство
-    items:
-    - name: Средства для контейнеров в Visual Studio
-      href: container-tools.md
-    expanded: true
-  - name: Учебники
-    items:
-    - name: Руководство. Использование многоконтейнерного приложения с Docker Compose
-      href: tutorial-multicontainer.md
-    - name: Руководство. Kubernetes в Visual Studio
-      href: tutorial-kubernetes-tools.md
-    expanded: true
-  - name: Практическое руководство
-    items:
-    - name: Отладка приложения в локальном контейнере Docker
-      href: edit-and-refresh.md
-    - name: Развертывание в реестр контейнеров
-      href: hosting-web-apps-in-docker.md
-    - name: Развертывание в службе приложений Azure
-      href: deploy-app-service.md
-    - name: Настройка инструментов для контейнеров
-      href: container-tools-configure.md
-  - name: Устранение неполадок
-    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537693"
+  items:
+    - name: Обзор
+      href: overview.md
+    - name: Краткое руководство
+      expanded: true
+      items:
+        - name: Средства для контейнеров в Visual Studio
+          href: container-tools.md
+    - name: Учебники
+      expanded: true
+      items:
+        - name: Руководство. Использование многоконтейнерного приложения с Docker Compose
+          href: tutorial-multicontainer.md
+        - name: Руководство. Kubernetes в Visual Studio
+          href: tutorial-kubernetes-tools.md
+    - name: Практическое руководство
+      items:
+        - name: "Отладка приложения в локальном контейнере\_Docker"
+          href: edit-and-refresh.md
+        - name: Развертывание в реестр контейнеров
+          href: hosting-web-apps-in-docker.md
+        - name: Развертывание в службе приложений Azure
+          href: deploy-app-service.md
+        - name: Настройка инструментов для контейнеров
+          href: container-tools-configure.md
+    - name: Устранение неполадок
+      href: troubleshooting-docker-errors.md

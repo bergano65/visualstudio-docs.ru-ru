@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965937"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857409"
 
 ::: moniker range="vs-2017"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 
 ### <a name="add-a-textblock-control"></a>Добавление элемента управления TextBlock
 
-1.  Нажмите **CTRL**+**Q** для активации поля поиска и введите **Панель элементов**. Выберите в списке результатов **Представление > Панель элементов**.
+1. Нажмите **CTRL**+**Q** для активации поля поиска и введите **Панель элементов**. Выберите в списке результатов **Представление > Панель элементов**.
 
 2. В окне **Панель элементов** разверните узел **Типовые элементы управления WPF**, чтобы увидеть элемент управления TextBlock.
 
@@ -256,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>Добавление точек останова
 
-1. Откройте файл *Greetings.xaml.vb* и выделите следующую строку: `MessageBox.Show("Hello.")`
+1. Откройте файл *Greetings.xaml.vb* и выделите строку `MessageBox.Show("Hello.")`.
 
 2. Добавьте точку останова, нажав клавишу **F9** или выбрав меню **Отладка**, а затем — **Точка останова**.
 
@@ -302,5 +302,5 @@ IsChecked="True"
 
 ## <a name="see-also"></a>См. также
 
-- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Советы по повышению производительности](../../ide/productivity-tips-for-visual-studio.md)

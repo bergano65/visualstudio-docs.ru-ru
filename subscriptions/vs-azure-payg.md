@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Сведения о настройке учетной записи Azure с оплатой по мере использования.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948281"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Настройка подписки Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.
@@ -31,11 +31,9 @@ ms.locfileid: "56843913"
    > [!div class="mx-imgBorder"]
    > ![Регистрация Azure PAYG](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. После этого укажите сведения о выставлении счетов для своей учетной записи и нажмите кнопку **Далее**.  (С этой кредитной карты будет списываться плата за все ваши покупки в Azure.)
    > [!div class="mx-imgBorder"]
    > ![Оплата Azure PAYG](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. В разделе "Соглашение" установите флажок, чтобы принять соглашение о подписке, условия предложения и заявление о конфиденциальности, а затем нажмите кнопку **Приобрести**.
 

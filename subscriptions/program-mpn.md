@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945405"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -43,7 +43,6 @@ ms.locfileid: "56843172"
 | Максимальное преимущество для партнеров с компетенциями только уровня Silver                   | Максимальное преимущество для партнеров хотя бы с одной компетенцией уровня Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 подписок на Visual Studio Enterprise в стране; 75 во всем мире          | 50 подписок на Visual Studio Enterprise в стране; 150 во всем мире         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Подписки для партнеров, купивших Action Pack
 Партнеры с компетенцией не могут приобрести Action Pack. Партнер может приобрести только один Action Pack.

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980892"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 
@@ -172,7 +172,7 @@ CodeLens позволяет вам получать дополнительные
 
 Значок в столбце **Ветвь** показывает связь с ветвью, в которой вы работаете.
 
-|**Значок**|**Откуда пришли изменения**|
+|**Значок**|**Откуда пришли изменения:**|
 |--------------| - |
 |![CodeLens. Значок "Изменение из текущей ветви"](../ide/media/codelensbranchcurrenticon.png)|Текущее подразделение|
 |![CodeLens. Значок "Изменение из родительской ветви"](../ide/media/codelensbranchparenticon.png)|Родительское подразделение|

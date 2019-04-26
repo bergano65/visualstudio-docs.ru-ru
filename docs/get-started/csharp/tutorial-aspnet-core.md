@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972099"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "58856571"
 
 ::: moniker range="vs-2017"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -222,6 +222,7 @@ ms.locfileid: "58856571"
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Обратите внимание, что **Environment** (Среда) и **String** (Строка) подчеркнуты волнистой линией. Подчеркивание волнистой линией появилось, потому что эти типы находятся за пределами области.
 
    ![Ошибки, подчеркнутые волнистой линией, в методе OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)

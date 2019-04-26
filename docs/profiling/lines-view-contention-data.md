@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000615"
 ---
 # <a name="lines-view---contention-data"></a>Представление "Строки" — данные о состязаниях
 В представлении данных о конфликтах "Строки" перечисляются данные о производительности при выполнении инструкций во время сбора выборок в сеансе профилирования. В исходном файле инструкция может занимать несколько строк, а одна строка может включать несколько инструкций.

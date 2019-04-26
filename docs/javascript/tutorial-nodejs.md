@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995010"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 
-В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали это.
+В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. 
+
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 В этом руководстве вы узнаете, как:
 > [!div class="checklist"]
@@ -186,7 +198,7 @@ IntelliSense — это средство Visual Studio, которое помо�
 
 1. Исправьте код, добавив запятую (`,`) перед элементом `"data"`.
 
-    Исправленная строка кода должна выглядеть следующим образом. `res.render('index', { title: 'Express', "data": getData() });`
+    Исправленная строка кода должна выглядеть следующим образом: `res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>Установка точки останова
 
@@ -256,4 +268,4 @@ IntelliSense — это средство Visual Studio, которое помо�
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Развертывание приложения в Службу приложений Linux](../javascript/publish-nodejs-app-azure.md)
+> [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)

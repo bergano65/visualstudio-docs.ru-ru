@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943991"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Учебник. Открытие проекта из репозитория
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857571"
 
 ::: moniker range="vs-2017"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -181,9 +181,9 @@ ms.locfileid: "58857571"
 - [Учебники по Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Учебники по Visual Studio | **C++**](/cpp/get-started/)
 - [Учебники по Visual Studio | **Python**](/visualstudio/python/)
-- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
+- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>См. также
 
-- [Azure DevOps Services. Начало работы с Azure Repos и Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services. Начало работы с Azure Repos и Visual Studio)
 - [Microsoft Learn. Начало работы с Azure DevOps](/learn/modules/get-started-with-devops/)

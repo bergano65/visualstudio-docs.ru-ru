@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975663"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 
@@ -70,7 +70,7 @@ Visual Studio предоставляет языковую поддержку в 
 
 Добавьте новые грамматики TextMate для Visual Studio в следующую папку:
 
-*% userprofile %\\. vs\Extensions*
+*%userprofile%\\.vs\Extensions*
 
 По этому базовому пути добавьте следующие папки, если они применимы в вашем случае.
 
@@ -89,5 +89,5 @@ Visual Studio предоставляет языковую поддержку в 
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
-- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Пошаговое руководство: создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
+- [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
