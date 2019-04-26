@@ -18,11 +18,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838974"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Учебник. Создайте первое приложение ASP.NET Core с помощью Entity Framework в Visual Studio 2019
 
@@ -31,14 +31,14 @@ ms.locfileid: "59018120"
 - [Шаг 1. Установка Visual Studio 2019.](#step-1-install-visual-studio-2019)
 - [Шаг 2. Создание первого веб-приложения ASP.NET Core.](tutorial-aspnet-core-ef-step-02.md)
 - [Шаг 3. Работа с данными с использованием Entity Framework.](tutorial-aspnet-core-ef-step-03.md)
-- [Шаг 4. Предоставление веб-API приложения ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Шаг 4. Предоставление веб-API приложения ASP.NET Core.](tutorial-aspnet-core-ef-step-04.md)
 - [Шаг 5. Развертывание приложения ASP.NET в Azure.](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>Шаг 1. Установка Visual Studio 2019
 
 В этом видеоучебнике и пошаговых инструкциях приведены сведения об установке Visual Studio 2019. Если вы уже установили Visual Studio, перейдите к статье [Step 2: Create your first ASP.NET Core web app](tutorial-aspnet-core-ef-step-02.md) (Шаг 2. Создание первого веб-приложения ASP.NET CoreVisual Studio).
 
-_Посмотрев видео и выполнив приведенные в нем инструкции, вы сможете установить Visual Studio и создать первое приложение ASP.NET Core._
+_Выполните инструкции из этого видео, чтобы установить Visual Studio и создать первое приложение ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 

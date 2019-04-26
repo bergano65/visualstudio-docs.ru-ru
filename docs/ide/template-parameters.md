@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950345"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -52,12 +52,12 @@ ms.locfileid: "58355676"
 |clrversion|Текущая версия среды CLR.|
 |ext_*|Добавьте префикс `ext_` к любому параметру, чтобы сослаться на переменные родительского шаблона. Например, `ext_safeprojectname`.|
 |guid[1–10]|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1`).|
-|itemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**.|
+|itemname|Имя файла, в котором используется параметр.|
 |machinename|Имя текущего компьютера (например, Computer01).|
 |projectname|Имя, указанное пользователем при создании проекта.|
 |registeredorganization|Значение раздела реестра из HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Корневое пространство имен для текущего проекта. Этот параметр применяется только к шаблонам элементов.|
-|safeitemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**, с удаленными небезопасными символами и пробелами.|
+|safeitemname|Аналогично параметру `itemname`, но с удалением всех небезопасных символов и пробелов.|
 |safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
 |SpecificSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `SpecificSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `SpecificSolutionName` пусто.|
