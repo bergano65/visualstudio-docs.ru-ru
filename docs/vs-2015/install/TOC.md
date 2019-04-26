@@ -10,5 +10,5 @@
 ## [Установка нескольких языковых версий Visual Studio](install-multiple-language-versions-of-visual-studio.md)
 ### [Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio](microsoft-language-interface-packs-lips-and-visual-studio.md)
 ## [Практическое руководство. Переход с ознакомительного выпуска Visual Studio](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
-## [Практическое руководство. Как найти ключ продукта для Visual Studio](how-to-locate-the-visual-studio-product-key.md)
+## [Практическое руководство. Поиск ключа продукта Visual Studio](how-to-locate-the-visual-studio-product-key.md)
 ## [Исключения политики жизненного цикла Visual Studio](visual-studio-lifecycle-policy-exceptions.md)
