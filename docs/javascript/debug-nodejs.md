@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438007"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -62,8 +62,10 @@ Visual Studio поддерживает отладку только для бра
     Эта команда запускает Chrome в режиме отладки.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Можно также задать флаг `--remote-debugging-port` при запуске браузера, выбрав **Просмотреть с помощью...**  > из панели инструментов **Отладка**, затем **Добавить**, а затем установив соответствующий флаг в поле **Аргументы**. Используйте другое понятное для браузера имя, например **Chrome с отладкой**. Подробности см. в [заметках о выпуске](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Переключитесь в Visual Studio и установите точку останова в исходном коде. (Выберите для точки останова такую строку кода, в которой допустимы точки останова, например в инструкции `return` или объявлении `var`).
