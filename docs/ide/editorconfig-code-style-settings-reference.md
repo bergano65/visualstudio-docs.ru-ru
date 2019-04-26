@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557220"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -45,7 +45,7 @@ ms.locfileid: "59232805"
 
    Правила, описывающие макет и структуру кода для повышения его читаемости. Например, вы можете указать правила для стиля скобок Олмана или назначения приоритета пробелам в блоках управления.
 
-- [Соглашения об именах](../ide/editorconfig-naming-conventions.md)
+- [Соглашения об именовании](../ide/editorconfig-naming-conventions.md)
 
    Правила, описывающие именование элементов кода. Например, можно указать, что методы `async` должны оканчиваться на "Async".
 
@@ -62,7 +62,7 @@ ms.locfileid: "59232805"
 Серьезность | Действие
 :------- | ------
 `none` | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле. Правила с уровнем серьезности `none` никогда не появляются в меню **Быстрые действия и операции рефакторинга**. В большинстве случаев это воспринимается как "отключено" или "игнорируется".
-`silent` (также `refactoring` в Visual Studio 2017 версии 15.8) | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле. Правила с уровнем серьезности `silent` участвуют в очистке, а также появляются в меню **Быстрые действия и операции рефакторинга**.
+`silent` (также `refactoring` в Visual Studio 2017 версии 15.8) | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле. Правила с уровнем серьезности `silent` участвуют в очистке, а также появляются в меню **Быстрые действия и операции рефакторинга**.
 `suggestion` | При несоблюдении этого правила стиля пользователю выводится предложение. Предложения отображаются в виде трех серых точек под первыми двумя символами.
 `warning` | При несоблюдении этого правила стиля выводится предупреждение компилятора.
 `error` | При несоблюдении этого правила стиля выводится ошибка компилятора.
@@ -70,7 +70,7 @@ ms.locfileid: "59232805"
 В следующем списке приведены допустимые правила стилей кода языка:
 
 - Параметры стиля кода .NET
-    - ["This." и "Me."](#this_and_me)
+    - [Квалификаторы "This." и "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -78,7 +78,7 @@ ms.locfileid: "59232805"
     - [Ключевые слова языка вместо имен типов .NET Framework для ссылок на типы](#language_keywords)
         - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
         - dotnet\_style\_predefined\_type\_for\_member_access
-    - [Предпочтения относительно модификаторов](#normalize_modifiers)
+    - [Предпочтения для модификаторов](#normalize_modifiers)
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
@@ -88,7 +88,7 @@ ms.locfileid: "59232805"
         - dotnet\_style\_parentheses\_in\_other\_binary\_operators
         - dotnet\_style\_parentheses\_in\_other\_operators
         - dotnet\_style\_parentheses\_in\_relational\_binary\_operators
-    - [Предпочтения уровня выражений](#expression_level)
+    - [Настройки уровня выражений](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
@@ -98,7 +98,7 @@ ms.locfileid: "59232805"
         - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
         - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
         - dotnet\_style\_prefer\_conditional\_expression\_over\_return
-    - [Предпочтения проверки Null](#null_checking)
+    - [Настройки проверки Null](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Параметры стиля кода C#
@@ -113,19 +113,19 @@ ms.locfileid: "59232805"
         - csharp\_style\_expression\_bodied_properties
         - csharp\_style\_expression\_bodied_indexers
         - csharp\_style\_expression\_bodied_accessors
-    - [Регулярные выражения](#pattern_matching)
+    - [Сопоставление шаблонов](#pattern_matching)
         - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
         - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [Встроенные объявления переменных](#inlined_variable_declarations)
         - csharp\_style\_inlined\_variable_declaration
-    - [Предпочтения уровня выражений](#expression_level_csharp)
+    - [Настройки уровня выражений](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [Предпочтения проверки Null](#null_checking_csharp)
+    - [Настройки проверки Null](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
-    - [Предпочтения блока кода](#code_block)
+    - [Настройки блока кода](#code_block)
         - csharp\_prefer_braces
 
 ### <a name="net-code-style-settings"></a>Параметры стиля кода .NET
@@ -329,13 +329,14 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:
+Это правило принимает значение из следующей таблицы:
 
 | Значение | Описание |
 | ----- |:----------- |
 | always | Сделать предпочтительным указание модификаторов доступа |
-| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. Это аналогично **always** и добавлено для будущих проверок, если C# в добавятся методы интерфейса по умолчанию. |
+| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. (Аналогично значению **always** и будет использоваться при наличии методов интерфейса C# по умолчанию.) |
 | never | Предпочитать не указывать модификаторы доступа |
+| omit_if_default | Сделать предпочтительным указание модификаторов доступа, если только они не являются модификаторами по умолчанию. |
 
 Примеры кода:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -2360,5 +2359,5 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 - [Быстрые действия](../ide/quick-actions.md)
 - [Соглашения об именовании в среде .NET для EditorConfig](../ide/editorconfig-naming-conventions.md)
-- [Создание портативных настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)
-- [Файл EDITORCONFIG для .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Создание переносимых, настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)
+- [Файл EDITORCONFIG для платформы компиляторов .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig).
