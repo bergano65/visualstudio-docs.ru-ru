@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972827"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Подключение к системе управления версиями Team Foundation
 
@@ -58,7 +58,7 @@ Visual Studio для Mac обеспечивает полную поддержк�
 
 1. Запустите приложение Терминала macOS.
 1. Установите Homebrew с помощью Терминала и инструкции на [главной странице Homebrew](https://brew.sh/).
-1. После этого выполните следующую команду из Терминала. `brew install tee-clc`
+1. После этого выполните следующую команду из Терминала: `brew install tee-clc`
 
 Чтобы **настроить TEE-CLC вручную** выполните следующее.
 
@@ -273,4 +273,4 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 ### <a name="see-also"></a>См. также
 
-- [Develop and share your code in TFVC using Visual Studio (Разработка и совместное использование кода в TFVC с использованием Visual Studio)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Разработка и совместное использование кода в TFVC с использованием Visual Studio (в Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819533"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Настройка файлов проекта, созданных в VSTU
 Набор средств Visual Studio для Unity обеспечивает обратный вызов в стиле Unity во время создания файла проекта. Выполните регистрацию с помощью события `VisualStudioIntegration.ProjectFileGeneration`, чтобы изменять файл проекта при каждом его повторном создании.
@@ -70,4 +70,4 @@ public class ProjectFileHook
 ```
 
 ## <a name="see-also"></a>См. также
- [Пример. Обратный вызов журнала](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Пример: Обратный вызов журнала](../cross-platform/share-the-unity-log-callback-with-vstu.md).

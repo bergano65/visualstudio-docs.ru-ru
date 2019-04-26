@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425888"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Практическое руководство. Обновление проектов Visual C++ до Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60095754"
     - Проект можно обновить, разрешив [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] внести изменения, описанные далее в этом разделе. Если в решении имеется более одного проекта Visual C++, необходимо обновить все проекты.
 
         > [!NOTE]
-        >  Если отклонить обновление при получении первой подсказки, можно обновить проект позднее, выбрав **Обновить проект VC++** в меню **Проект** . Если команда не отображается, то обновление не требуется.
+        > Если отклонить обновление при получении первой подсказки, можно обновить проект позднее, выбрав **Обновить проект VC++** в меню **Проект** . Если команда не отображается, то обновление не требуется.
 
 ## <a name="upgrading-a-visual-c-project"></a>Обновление проекта Visual C++
  Если разрешить [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] автоматически обновлять проект, вносятся следующие изменения:
