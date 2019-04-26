@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974986"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -320,9 +320,6 @@ $selected$ is a great color. I love $selected$.
 
 Задает импортируемые пространства имен, используемые фрагментом кода IntelliSense.
 
-> [!NOTE]
-> Элемент `Import` поддерживается только в проектах Visual Basic.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ $selected$ is a great color. I love $selected$.
 ## <a name="imports-element"></a>Элемент Imports
 
 Группирует отдельные элементы `Import`.
-
-> [!NOTE]
-> Элемент `Imports` поддерживается только в проектах Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ $selected$ is a great color. I love $selected$.
 
 ## <a name="namespace-element"></a>Элемент Namespace
 
-Задает пространство имен, которое требуется импортировать для компиляции и запуска фрагмента кода. Пространство имен, заданное в элементе `Namespace`, автоматически добавляется в оператор `Imports` в начале кода в том случае, если оно еще не существует.
-
-> [!NOTE]
-> Элемент `Namespace` поддерживается только в проектах Visual Basic.
+Задает пространство имен, которое требуется импортировать для компиляции и запуска фрагмента кода. Пространство имен, заданное в элементе `Namespace`, автоматически добавляется в директиву `using` или в инструкцию `Imports` в начале кода в том случае, если оно еще не существует.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ $selected$ is a great color. I love $selected$.
 
 Текстовое значение должно принадлежать к следующему списку:
 
--   `SurroundsWith`позволяет расположить фрагмент кода вокруг выбранного отрывка кода.
+- `SurroundsWith`позволяет расположить фрагмент кода вокруг выбранного отрывка кода.
 
--   `Expansion` позволяет вставить фрагмент кода в то место, где находится курсор.
+- `Expansion` позволяет вставить фрагмент кода в то место, где находится курсор.
 
--   `Refactoring` указывает, что фрагмент кода используется во время рефакторинга C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.
+- `Refactoring` указывает, что фрагмент кода используется во время рефакторинга C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.
 
 ## <a name="snippettypes-element"></a>Элемент SnippetTypes
 
