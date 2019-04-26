@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446339"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и React в Visual Studio
 
@@ -376,8 +376,10 @@ webpack объединяет файлы JavaScript, чтобы их можно �
     Chrome будет запущен в режиме отладки.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Можно также задать флаг `--remote-debugging-port` при запуске браузера, выбрав **Просмотреть с помощью...**  > из панели инструментов **Отладка**, затем выбрав **Добавить**, а затем установив соответствующий флаг в поле **Аргументы**. Используйте другое понятное для браузера имя, например **Chrome с отладкой**. Подробности см. в [заметках о выпуске](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Перейдите в Visual Studio и установите точку останова в коде файла *app-bundle.js* в функции `render()`, как показано на рисунке ниже.
@@ -421,4 +423,4 @@ webpack объединяет файлы JavaScript, чтобы их можно �
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Развертывание приложения в Службу приложений Linux](../javascript/publish-nodejs-app-azure.md)
+> [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)
