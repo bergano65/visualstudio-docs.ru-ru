@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437855"
 ---
 # <a name="msbuild-task"></a>MSBuild - задача
 Выполняет сборку проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] на основе другого проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="parameters"></a>Параметры
  В следующей таблице приводятся параметры задачи `MSBuild` .
-
 
 | Параметр | Описание |
 |-----------------------------------| - |
@@ -66,7 +65,7 @@ ms.locfileid: "56627328"
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 предоставляет два новых зарезервированных элемента метаданных, Properties и AdditionalProperties, позволяющие легко передавать разные свойства в разные проекты, сборка которых выполнена с помощью [задачи MSBuild](../msbuild/msbuild-task.md).
 
 > [!NOTE]
->  Эти новые элементы метаданных применимы только к элементам, переданным с помощью атрибута Projects [задачи MSBuild](../msbuild/msbuild-task.md).
+> Эти новые элементы метаданных применимы только к элементам, переданным с помощью атрибута Projects [задачи MSBuild](../msbuild/msbuild-task.md).
 
 ## <a name="multi-processor-build-benefits"></a>Преимущества сборки в системах с несколькими процессорами
  Одно из основных преимуществ использования новых метаданных проявляется при выполнении сборок проектов в параллельном режиме в системах с несколькими процессорами. Метаданные позволяют объединить все проекты в один вызов [задачи MSBuild](../msbuild/msbuild-task.md), вместо того чтобы выполнять пакетную обработку или задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] с разными условиями. При вызове единой [задачи MSBuild](../msbuild/msbuild-task.md) сборка всех проектов, перечисленных в атрибуте Projects, будет выполняться параллельно. (Конечно, в том случае, если атрибут `BuildInParallel=true` определен для задачи [MSBuild](../msbuild/msbuild-task.md).) Дополнительные сведения см. в статье [Параллельное построение нескольких проектов с помощью MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
@@ -75,7 +74,7 @@ ms.locfileid: "56627328"
  Чаще всего сборка нескольких файлов решения осуществляется с помощью [задачи MSBuild](../msbuild/msbuild-task.md), выполняемой с использованием разных конфигураций сборки. Например, вам нужно выполнить сборку решения a1 с помощью конфигурации отладки, а решения a2 — с помощью конфигурации выпуска. В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 такой файл проекта выглядел следующим образом:
 
 > [!NOTE]
->  В следующем примере знаком "..." обозначены дополнительные файлы решения.
+> В следующем примере знаком "..." обозначены дополнительные файлы решения.
 
 ### <a name="aproj"></a>a.proj
 

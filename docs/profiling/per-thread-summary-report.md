@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794330"
 ---
 # <a name="per-thread-summary-report"></a>Сводный отчет по каждому потоку
 На этой гистограмме показана доля времени, которую тратит каждый нескрытый поток в каждой категории в течение видимого в данный момент диапазона времени. "Выполнение" означает, что поток выполняется; все остальные категории означают, что поток находится в состоянии ожидания какого-либо события.

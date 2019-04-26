@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793161"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318593"
 
 Помимо специальных возможностей и служебных программ Windows, следующие функции повышают удобство работы с Visual Studio для людей с ограниченными возможностями:
 
--   увеличение кнопок на панели инструментов и текста;
+- увеличение кнопок на панели инструментов и текста;
 
--   настройка размера текста в редакторах;
+- настройка размера текста в редакторах;
 
--   настройка цвета в редакторах;
+- настройка цвета в редакторах;
 
--   настройка сочетаний клавиш;
+- настройка сочетаний клавиш;
 
--   автозавершение методов и параметров.
+- автозавершение методов и параметров.
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Специальные возможности в Visual Studio для Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ ms.locfileid: "56318593"
 
 Дополнительные сведения см. в следующих разделах:
 
--   [Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Практическое руководство. Работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Практическое руководство. Работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>См. также
 

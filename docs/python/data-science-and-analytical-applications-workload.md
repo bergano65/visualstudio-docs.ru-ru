@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958391"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Установка поддержки для обработки и анализа данных в Visual Studio
 
@@ -98,7 +98,7 @@ SQL Server поддерживает использование Python для у�
 
 ::: moniker range="vs-2017"
 - [Работа с SQL Server и R](../rtvs/integrating-sql-server-with-r.md)
-- [Углубленная аналитика в базе данных с R в SQL Server 2016 (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [Углубленная аналитика в базе данных с R в SQL Server 2016 (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 ::: moniker-end
 - [Python в SQL Server 2017: расширенное машинное обучение в базе данных (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -111,4 +111,4 @@ SQL Server поддерживает использование Python для у�
 Azure Notebooks (сейчас находится на этапе предварительной версии) предоставляет свободный доступ по сети к записным книжкам Jupyter, работающими в облаке на платформе Microsoft Azure. Эта служба содержит примеры записных книжек на языках Python, R и F#, с которых можно начать работу. Посетите [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Снимки экрана: записные книжки Microsoft Azure с вводным примером R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![Снимки экрана Azure Notebooks с вводным образцом R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

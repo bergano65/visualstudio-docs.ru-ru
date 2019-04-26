@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386178"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Как выполнить Выбор файлов для сборки
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.
@@ -42,7 +42,7 @@ ms.locfileid: "56610545"
 
 #### <a name="to-declare-multiple-items"></a>Объявление нескольких элементов
 
--   Используйте атрибуты `Include`, аналогичные следующим.
+- Используйте атрибуты `Include`, аналогичные следующим.
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ ms.locfileid: "56610545"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Чтобы указать входные данные для сборки, нужно использовать подстановочные знаки в элементах; невозможно указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.
+> Чтобы указать входные данные для сборки, нужно использовать подстановочные знаки в элементах; невозможно указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

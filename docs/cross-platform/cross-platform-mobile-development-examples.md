@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819423"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Примеры разработки кроссплатформенных мобильных приложений
 Несколько шаблонов, устанавливаемых компонентом Visual C++ для разработки кроссплатформенных мобильных приложений, создают полноценные примеры, которые можно использовать для обучения. Кроме того, в Центре разработки для Windows есть несколько примеров приложений, которые можно скачать и испытать в Visual Studio.

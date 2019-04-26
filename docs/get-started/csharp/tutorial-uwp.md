@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435059"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
 В рамках этого краткого руководства по возможностям интегрированной среды разработки (IDE) Visual Studio вы создадите простое приложение "Hello World" для выполнения на устройстве с Windows 10. Для этого потребуется использование шаблона проекта универсальной платформы Windows (UWP), расширяемого языка разметки приложений (XAML) и языка программирования C#.
 
 ::: moniker range="vs-2017"
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 ::: moniker-end
 ::: moniker range="vs-2019"
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
@@ -46,7 +46,7 @@ ms.locfileid: "58856424"
    ![Шаблон проекта "Универсальное приложение Windows" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Если шаблон проекта **Пустое приложение (универсальное приложение Windows)** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**.<br><br>![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
+   > Если шаблон проекта **Пустое приложение (универсальное приложение Windows)** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**.<br><br>![Щелкните ссылку "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
 
 1. Подтвердите значения по умолчанию для параметров **Целевая версия** и **Минимальная версия** в диалоговом окне **Новый проект приложения для универсальной платформы Windows**.
 
@@ -70,7 +70,7 @@ ms.locfileid: "58856424"
 
    > [!NOTE]
    > При первом использовании Visual Studio для создания приложения UWP появится диалоговое окно **Параметры**. Выберите **Режим разработчика**, затем нажмите **Да**.<br><br>
-   ![Включение режима разработчика в диалоговом окне параметров UWP](media/enable-developer-mode.png)<br><br>Visual Studio установит дополнительный пакет режима разработчика. После завершения установки пакета закройте диалоговое окно **Параметры**.
+   > ![Включение режима разработчика в диалоговом окне параметров UWP](media/enable-developer-mode.png)<br><br>Visual Studio установит дополнительный пакет режима разработчика. После завершения установки пакета закройте диалоговое окно **Параметры**.
 
 ## <a name="create-the-application"></a>Создание приложения
 

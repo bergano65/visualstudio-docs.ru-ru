@@ -8,12 +8,13 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+monikerRange: vs-2017
+ms.openlocfilehash: 4b505b1a8669c0eff14e7afcdb88275cd1502f95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581251"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -29,7 +30,7 @@ ms.locfileid: "57873653"
 
 ## <a name="supported-versions-of-visual-studio"></a>Поддерживаемые версии Visual Studio
 
-Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
+Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
 
 Инструменты RTVS в настоящее время не поддерживаются в Visual Studio для Mac.
 

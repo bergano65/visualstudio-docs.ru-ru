@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425465"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017. Высокая скорость подкачки активной памяти на диск
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620490"
 ## <a name="rule-description"></a>Описание правила
 
 > [!NOTE]
->  Это информационное правило применяется, когда подкачка активной памяти достигает значительного уровня. При возникновении очень высокого уровня подкачки вместо него срабатывает правило предупреждения [DA0014. Исключительно высокая скорость подкачки активной памяти на диск](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
+> Это информационное правило применяется, когда подкачка активной памяти достигает значительного уровня. При возникновении очень высокого уровня подкачки вместо него срабатывает правило предупреждения [DA0014. Исключительно высокая скорость подкачки активной памяти на диск](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
 
  Чрезмерная частота подкачки на диск может быть вызвана нехваткой физической памяти. Если операции подкачки начинают преобладать на физическом диске, где находится файл подкачки, они могут замедлить другие операции приложений на том же диске.
 

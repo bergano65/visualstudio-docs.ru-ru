@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953420"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
 
 В этом кратком (на 5 –10 минут) учебнике мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Настройка цветовой темы
 

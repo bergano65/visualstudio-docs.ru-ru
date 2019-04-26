@@ -7,12 +7,12 @@ ms.date: 04/10/2018
 ms.topic: conceptual
 description: Как добавить альтернативный идентификатор для подписки Visual Studio, который будет использоваться для Azure DevOps и Azure
 searchscope: vs subscription
-ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428107"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 
@@ -33,9 +33,7 @@ ms.locfileid: "56842134"
 
 Для всех подписок можно добавить рабочую или учебную учетную запись, чтобы использовать ее с преимуществами, для которых требуется вход (IDE Visual Studio, Azure DevOps и Azure).
 
-
 ### <a name="add-the-alternate-account"></a>Добавление альтернативной учетной записи
-
 
 1. Войдите на портал подписчика Visual Studio с помощью учетной записи Майкрософт (https://my.visualstudio.com).
 

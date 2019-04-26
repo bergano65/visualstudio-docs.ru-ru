@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003639"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest - задача
 Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.

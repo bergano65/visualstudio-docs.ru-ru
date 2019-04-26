@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962260"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Учебник. Начало работы с веб-платформой Django в Visual Studio
 
@@ -205,7 +205,7 @@ ms.locfileid: "59366423"
 На данный момент основной проект Django не содержит приложений. Вы создаете приложение на следующем шаге. Так как вы обычно больше работаете с приложениями Django, чем с проектом Django, нет необходимости подробнее изучать стереотипные файлы.
 
 > [!div class="nextstepaction"]
-> [Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)
+> [Tutorial step 2: Create a Django app with views and page templates](learn-django-in-visual-studio-step-02-create-an-app.md) (Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц)
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 

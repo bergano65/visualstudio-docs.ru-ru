@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428132"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 
@@ -39,8 +39,6 @@ ms.locfileid: "57868218"
 
  Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Profiler>.
 
-
-
 ## <a name="prerequisites"></a>Предварительные требования
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Создание кода для профилирования
 
-1.  Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.
+1. Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.
 
     > [!NOTE]
-    >  При сборке должна использоваться библиотека *Microsoft.VisualStudio.Profiler.dll*, расположенная в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
+    > При сборке должна использоваться библиотека *Microsoft.VisualStudio.Profiler.dll*, расположенная в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
-2.  Скопируйте и вставьте в проект следующий код:
+2. Скопируйте и вставьте в проект следующий код:
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Сбор и просмотр данных из командной строки
 
-1.  Скомпилируйте отладочную версию примера кода, созданного ранее в процедуре "Создание кода для профилирования" этого пошагового руководства.
+1. Скомпилируйте отладочную версию примера кода, созданного ранее в процедуре "Создание кода для профилирования" этого пошагового руководства.
 
-2.  В случае профилирования управляемого приложения установите соответствующие переменные среды с помощью следующей команды:
+2. В случае профилирования управляемого приложения установите соответствующие переменные среды с помощью следующей команды:
 
      **VsPerfCLREnv /traceon**.
 
-3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**
+3. Введите следующую команду: **VSInstr \<имя_файла>.exe**
 
-4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**
+4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**
 
-5.  Введите следующую команду: **VSPerfCmd /globaloff**
+5. Введите следующую команду: **VSPerfCmd /globaloff**
 
-6.  Выполните программу.
+6. Выполните программу.
 
-7.  Введите следующую команду: **VSPerfCmd /shutdown**
+7. Введите следующую команду: **VSPerfCmd /shutdown**
 
-8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**
+8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**
 
      В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.
 

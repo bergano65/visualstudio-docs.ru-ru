@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430934"
 ---
 # <a name="markprofile"></a>MarkProfile
 Метод `MarkProfile` вставляет метку профилирования в *VSP*-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию `MarkProfile`.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Для потока, содержащего функцию метки профиля, должно быть включено состояние профилирования, чтобы вставить метку и комментарий с помощью команды Mark или функций API (CommentMarkAtProfile, CommentMarkProfile или MarkProfile).
 
 > [!IMPORTANT]
->  Метод MarkProfile следует использовать только при профилировании методом инструментирования.
+> Метод MarkProfile следует использовать только при профилировании методом инструментирования.
 
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

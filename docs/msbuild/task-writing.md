@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439995"
 ---
 # <a name="task-writing"></a>Написание задач
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], см. в статье [Справочные сведения о задачах MSBuild](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ ms.locfileid: "56629928"
 
  Существуют два подхода к реализации задачи:
 
--   Прямая реализация интерфейса <xref:Microsoft.Build.Framework.ITask>.
+- Прямая реализация интерфейса <xref:Microsoft.Build.Framework.ITask>.
 
--   Произведите класс от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, который определен в сборке *Microsoft.Build.Utilities.dll*. Задача реализует интерфейс ITask и обеспечивает реализации по умолчанию некоторых элементов ITask. Кроме того, упрощается ведение журнала.
+- Произведите класс от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, который определен в сборке *Microsoft.Build.Utilities.dll*. Задача реализует интерфейс ITask и обеспечивает реализации по умолчанию некоторых элементов ITask. Кроме того, упрощается ведение журнала.
 
 В обоих случаях необходимо добавить в свой класс метод `Execute`, то есть метод, который вызывается при выполнении задачи. Этот метод не принимает параметров и возвращает значение типа `Boolean`: `true`, если задача успешно выполнена, или `false`, если задачу выполнить не удалось. В приведенном ниже примере показана задача, не выполняющая никакого действия и возвращающая значение `true`.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  Файл [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в `UsingTask`Microsoft.Common.Tasks[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это файл проекта, который содержит список элементов *, регистрирующих все задачи, предоставленные в* . Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в *Microsoft.Common.Tasks*, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.
 
 > [!TIP]
->  Чтобы увидеть список задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], просмотрите содержимое файла *Microsoft.Common.Tasks*.
+> Чтобы увидеть список задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], просмотрите содержимое файла *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Создание событий из задачи
  Если задача является производной от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, вы можете использовать любой из следующих вспомогательных методов класса <xref:Microsoft.Build.Utilities.Task> для создания событий, которые будут перехватываться и отображаться зарегистрированными средствами ведения журнала:

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34cf1d58250568da1ed64ad0f296f1f8efe43e2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777309"
 ---
 # <a name="analyze-performance-tools-data"></a>Анализ данных из средств оценки производительности
 Отчеты о производительности средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют просматривать и анализировать проблемы производительности приложения. В данном разделе представлены общие сведения о представлениях и отчетах производительности, которые можно использовать для изучения данных о производительности.

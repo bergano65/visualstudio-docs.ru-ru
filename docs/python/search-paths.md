@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428449"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Как пути поиска Python используются в Visual Studio
 
@@ -51,4 +51,4 @@ ms.locfileid: "59365344"
 - [Управление окружениями Python в Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
-- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403618"
 ---
 # <a name="nameprofile"></a>NameProfile
 Функция `NameProfile` назначает строку указанному процессу или потоку.
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Если вы указываете процесс или поток, отличный от текущего, убедитесь, что он инициализирован и запущен, прежде чем задавать для него имя. В противном случае метод NameProfile завершается с ошибкой.
 
 > [!IMPORTANT]
->  Функции API CreateThread() API и CreateProcess() могут возвращать данные до инициализации потока или процесса.
+> Функции API CreateThread() API и CreateProcess() могут возвращать данные до инициализации потока или процесса.
 
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

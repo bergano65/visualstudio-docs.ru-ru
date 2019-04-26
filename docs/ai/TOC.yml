@@ -1,52 +1,45 @@
-items:
 - name: Инструменты Visual Studio для сценариев ИИ
   href: index.yml
   items:
-  - name: Обзор
-    items:
-    - name: Обзор Инструментов Visual Studio для сценариев ИИ
-      href: about-ai-tools.md
-  - name: Установка
-    href: installation.md
-  - name: Краткие руководства
-    items:
-    - name: Tensorflow + Python
-      href: tensorflow-local.md
-  - name: Учебники
-    items:
-    - name: TensorFlow + виртуальная машина Azure для глубинного обучения
-      href: tensorflow-vm.md
-  - name: Практические руководства
-    items:
-    - name: Создание проекта
+    - name: Обзор
       items:
-      - name: Создание проекта на основе примера из коллекции
-        href: create-project-gallery.md
-      - name: Создание проекта на основе имеющегося кода
-        href: create-project-existing.md
-      - name: Создание проекта на основе шаблона
-        href: create-project.md
-      - name: Создание проекта из репозитория GitHub
-        href: create-project-repo.md
-    - name: Обучение модели
-      href: train-model.md
-    - name: Просмотр сведений о задании
-      href: job-details.md
-    - name: Мониторинг использования GPU
-      href: monitor-gpu.md
-    - name: Мониторинг с использованием TensorBoard
-      href: monitor-tensorboard.md
-    - name: Управление хранилищем
-      href: manage-storage.md
-  - name: Примеры
-    items:
-    - name: GitHub
-      href: https://github.com/Microsoft/samples-for-ai
-    - name: Коллекция моделей машинного обучения
-      href: https://gallery.cortanaintelligence.com/projects
-ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624390"
+        - name: Обзор Инструментов Visual Studio для сценариев ИИ
+          href: about-ai-tools.md
+    - name: Установка
+      href: installation.md
+    - name: Краткие руководства
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Учебники
+      items:
+        - name: TensorFlow + виртуальная машина Azure для глубинного обучения
+          href: tensorflow-vm.md
+    - name: Практические руководства
+      items:
+        - name: Создание проекта
+          items:
+            - name: Создание проекта на основе примера из коллекции
+              href: create-project-gallery.md
+            - name: Создание проекта на основе имеющегося кода
+              href: create-project-existing.md
+            - name: Создание проекта на основе шаблона
+              href: create-project.md
+            - name: Создание проекта из репозитория GitHub
+              href: create-project-repo.md
+        - name: Обучение модели
+          href: train-model.md
+        - name: Просмотр сведений о задании
+          href: job-details.md
+        - name: Мониторинг использования GPU
+          href: monitor-gpu.md
+        - name: Мониторинг с использованием TensorBoard
+          href: monitor-tensorboard.md
+        - name: Управление хранилищем
+          href: manage-storage.md
+    - name: Примеры
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Коллекция моделей машинного обучения
+          href: 'https://gallery.cortanaintelligence.com/projects'

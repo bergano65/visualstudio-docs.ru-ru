@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948132"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -48,7 +48,6 @@ ms.locfileid: "57428639"
    > [!div class="mx-imgBorder"]
    > ![Набор навыков обработки и анализа данных в DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. В зависимости от выбранной схемы и параметров вы увидите ряд карьерных путей.  Нажмите кнопку **Регистрация** для выбранного пути.
    > [!div class="mx-imgBorder"]
    > ![Карьерный путь в DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,22 +74,17 @@ ms.locfileid: "57428639"
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
-
-
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
-
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
+- Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
     - [Сообщество DataCamp](https://www.datacamp.com/community/tutorials), форумы и руководства.
     - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.
     - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792222"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 
@@ -75,7 +75,7 @@ ms.locfileid: "55930471"
 
    Разрешает отладку исходного кода при запуске программы в отладчике, но при этом ассемблерный код отображается только при подключении исполняемой программы к отладчику.
 
--  **portable**
+- **portable**
 
    Создает не зависящий от платформы PDB-файл, который предоставляет другим инструментам, особенно отладчикам, сведения о том, что содержится в основном исполняемом файле и как он был создан. Дополнительные сведения см. в статье [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 

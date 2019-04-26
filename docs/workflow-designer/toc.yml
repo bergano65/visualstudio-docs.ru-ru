@@ -173,7 +173,7 @@
           href: initialize-correlation-dialog-box.md
         - name: 'Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»'
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: Возможности оболочки конструктора рабочих процессов
+        - name: Функции оболочки конструктора рабочих процессов
           href: workflow-designer-shell-features.md
         - name: Сочетания клавиш
           href: keyboard-shortcuts-in-the-workflow-designer.md

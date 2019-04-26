@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Дополнительные сведения об управлении подписками
 searchscope: VS Subscription
 ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427498"
 ---
 # <a name="learn-about-subscription-management"></a>Сведения об управлении подписками
 

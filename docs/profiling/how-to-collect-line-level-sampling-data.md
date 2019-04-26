@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834592"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Как выполнить Выборка данных на уровне строк
 Выборка на уровне строк — это возможность профилировщика определить, где в коде функции, потребляющей большой объем ресурсов процессора (например, функции с высокой частотой исключающих выборок), тратится самый большой объем времени процессора.
@@ -49,11 +49,11 @@ ms.locfileid: "56624286"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Отключение выборки на уровне строк для управляемого кода
  По умолчанию выборка на уровне строк включена. Сбор данных на уровне строк для управляемого кода можно отключить с помощью одной из следующих команд:
 
--   Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.
+- Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.
 
      Или...
 
--   При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.
 
 ## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

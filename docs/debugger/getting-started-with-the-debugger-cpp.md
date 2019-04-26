@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c6258259ac48a8f549b3af00ed09ff691efdd7c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b71e4bc01ede7a77aced77a5e5527910457174f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399492"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Учебник. Сведения об отладке кода C++ с помощью Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "58790944"
 
 ::: moniker-end
 
-Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) , если вы еще не сделали этого.
 
 Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
 

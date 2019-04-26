@@ -11,18 +11,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953346"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F\# с помощью Visual Studio
 
 В этом кратком руководстве по F# в Visual Studio рассматривается создание веб-приложения ASP.NET Core на F#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
 

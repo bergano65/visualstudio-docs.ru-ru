@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b98dc1baa94b9df4039718695ebe26ebf59da46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b346047ff52c994e76a322a5afa0494259277163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438470"
 ---
 # <a name="summary-view---sampling-data"></a>Представление "Сводка" — данные выборки
 В представлении "Сводка" приводится информация о создающих наибольшую нагрузку функциях в ходе сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).
 
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="timeline-graph"></a>Временная шкала
  Временная шкала представления "Сводка" показывает загрузку ЦП профилируемым приложением за время профилирования. Временная шкала позволяет фильтровать представление в соответствии с заданным интервалом времени. Дополнительные сведения см. в разделе [Как Фильтрация представлений отчетов на сводной временной шкале](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).

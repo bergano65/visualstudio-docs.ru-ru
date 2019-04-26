@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998647"
 ---
 # <a name="create-r-markdown-documents"></a>Создание документов R Markdown
 
@@ -33,6 +33,7 @@ ms.locfileid: "55941404"
     install.packages("rmarkdown")
 
     ```
+
 1. Создайте файл R Markdown, последовательно выбрав команды **Файл** > **Создать** > **Файл**, а затем выбрав **R** > **R Markdown** в списке. Находясь в контексте проекта, щелкните проект правой кнопкой мыши в обозревателе решений и выберите **Добавить разметку R Markdown** (или **Добавить** > **Новый элемент**, а затем выберите **R Markdown** в списке).
 
 1. Содержимое по умолчанию в новом файле выглядит следующим образом.

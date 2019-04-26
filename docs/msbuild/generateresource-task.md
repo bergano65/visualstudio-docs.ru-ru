@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007097"
 ---
 # <a name="generateresource-task"></a>GenerateResource - задача
 Преобразовывает файлы формата *TXT* и *RESX* (файлы ресурсов на основе XML) и двоичные *RESOURCES*-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата *TXT* и *RESX* в *RESOURCES*-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).

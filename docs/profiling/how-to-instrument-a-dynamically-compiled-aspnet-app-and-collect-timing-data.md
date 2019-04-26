@@ -7,19 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ae33644c72288f79d6be9fcc1aec476939980a5c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 581c72ba7a43e3a7b31fa45e10067e33e15f4e35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386514"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Как выполнить Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки
 
 В этой статье описывается, как с помощью программ командной строки для Средств профилирования Visual Studio собрать подробные сведения о времени для динамически скомпилированного приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], используя метод профилирования с инструментированием.
 
 > [!NOTE]
->  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
+> Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 
 Чтобы собрать данные о производительности из веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], следует изменить файл *web.config* для этого приложения, разрешив использование средства [VSInstr.exe](../profiling/vsinstr.md) для инструментирования динамически компилируемых файлов приложения. После этого с помощью средства [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) нужно задать соответствующие переменные среды на веб-сервере, которые включат профилирование, и перезагрузить компьютер.
 
@@ -65,7 +65,6 @@ ms.locfileid: "56646165"
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
      | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный *ETL*-файл. |
-
 
 3. Запустите веб-приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] обычным образом.
 

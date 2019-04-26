@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946847"
 ---
 # <a name="log-command-window-output-command"></a>Команда Log Command Window Output
 Копирует все входные и выходные данные из окна **Команда** в файл.
@@ -36,7 +36,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
 > [!TIP]
 > Чтобы изменить расположение для сохранения файла журнала, введите полный путь. Если этот путь содержит пробелы, заключите его в кавычки.
-
 
 ## <a name="switches"></a>Переключатели
  /on

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006808"
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
 Содержит определяемый пользователем элемент и его метаданные. Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.
@@ -107,6 +107,7 @@ ms.locfileid: "56643773"
     </CSFile>
 </ItemGroup>
 ```
+
 В следующем примере кода показано, как использовать атрибут `Update` для изменения метаданных в файле с именем *somefile.cs*, включенном с помощью glob. (Доступен только для проектов .NET Core в Visual Studio 2017 или более поздних версиях.)
 
 ```xml

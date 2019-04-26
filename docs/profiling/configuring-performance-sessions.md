@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405787"
 ---
 # <a name="configure-performance-sessions"></a>Настройка сеансов анализа производительности
 Средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют собирать большой объем данных о производительности для приложений различных типов. В данном разделе описывается, как использовать мастер производительности и свойства сеанса анализа производительности и целевого двоичного файла для настройки средств профилирования для сбора интересующих вас данных. Свойства конфигурации средств профилирования могут также использоваться для управления объемом данных, собираемых в ходе сеанса профилирования. Дополнительные сведения см. в статье [Управление сбором данных](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
->  Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Профилирование производительности приложений в Visual Studio](../profiling/beginners-guide-to-performance-profiling.md) и [Приступая к работе со средствами оценки производительности](../profiling/getting-started-with-performance-tools.md).
+> Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Профилирование производительности приложений в Visual Studio](../profiling/beginners-guide-to-performance-profiling.md) и [Приступая к работе со средствами оценки производительности](../profiling/getting-started-with-performance-tools.md).
 
 ## <a name="common-tasks"></a>Типичные задачи
 

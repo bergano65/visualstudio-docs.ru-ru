@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422927"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -21,7 +21,7 @@ ms.locfileid: "56616694"
  В этом разделе описывается внесение изменений в файл конфигурации *web.config* для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 > [!NOTE]
->  При использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] изменять файл *web.config* не требуется.
+> При использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] изменять файл *web.config* не требуется.
 
  Корень файла *web.config* — элемент **configuration**. Для инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] необходимо добавить или изменить следующие элементы:
 
@@ -45,11 +45,9 @@ ms.locfileid: "56616694"
 
 3. Добавьте следующее имя и значение атрибута в элемент **assemblyBinding**:
 
-
    | Имя атрибута | Значение атрибута |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Добавьте элемент **dependentAssembly** как дочерний элемент элемента **assemblyBinding**.
 
@@ -59,13 +57,11 @@ ms.locfileid: "56616694"
 
 6. Добавьте следующие имена и значения атрибутов в элемент **assemblyIdentity**:
 
-
    | Имя атрибута | Значение атрибута |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. Добавьте элемент **codeBase** как дочерний элемент элемента **dependentAssembly**.
 
@@ -100,15 +96,15 @@ ms.locfileid: "56616694"
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Добавление шага пост-обработки профилировщика в элемент configuration/system.web/compilation
 
-1.  При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.
+1. При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.
 
      У элемента **system.web** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **system.web**.
 
-2.  При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.
+2. При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.
 
      Элемент **system.web** может иметь только один дочерний элемент **compilation**.
 
-3.  Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:
+3. Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:
 
     |Имя атрибута|Значение атрибута|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ ms.locfileid: "56616694"
 
 3. Добавьте следующие имена и значения атрибутов в элемент **add**:
 
-
    | Имя атрибута | Значение атрибута |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.
 
@@ -157,7 +151,6 @@ ms.locfileid: "56616694"
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` — это путь к исполняемым файлам профилировщика. Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Зарегистрируйтесь, чтобы получить подписку MSDN Magazine, входящую в состав вашей подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947374"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Преимущество MSDN Magazine в подписках Visual Studio
 
 Исчерпывающая информация о технологиях Майкрософт для практического решения реальных проблем.  В зависимости от подписки вы получаете право на печатную версию журнала или ранний доступ к его электронной версии.
-
 
 ## <a name="activation-steps"></a>Процедура активации
 Процедура активации преимущества зависит от выбранного выпуска.
@@ -25,15 +24,14 @@ ms.locfileid: "56843121"
 ### <a name="digital-edition"></a>Цифровой выпуск
 Цифровой выпуск доступен членам Visual Studio Dev Essentials.
 
-1.  Чтобы получить доступ к цифровому выпуску MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Получить доступ**.
+1. Чтобы получить доступ к цифровому выпуску MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Получить доступ**.
 
 ### <a name="printed-edition"></a>Печатный выпуск
 1. Чтобы получить подписку на MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Подписаться** на плитке. (Щелкните "!" в правом нижнем углу плитки для получения доступа к цифровому выпуску.)
    > [!div class="mx-imgBorder"]
    > ![Плитка преимущества MSDN Magazine](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. На странице MSDN Magazine выберите предпочитаемый тип подписки.  Вы можете выбрать цифровой выпуск совершенно бесплатно, где бы вы ни проживали.  Печатная версия доступна бесплатно жителям США.  За пересылку печатной версий за пределы США взимается плата.
    > [!div class="mx-imgBorder"]
@@ -65,9 +63,8 @@ ms.locfileid: "56843121"
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

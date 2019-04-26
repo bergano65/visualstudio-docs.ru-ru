@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411007"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 Сопоставляет задачу, на которую указана ссылка в элементе [Задача](../msbuild/task-element-msbuild.md), со сборкой, содержащей реализацию этой задачи.
@@ -69,7 +69,7 @@ ms.locfileid: "56645749"
  На переменные среды, свойства командной строки, свойства и элементы уровня проекта можно ссылаться в элементах `UsingTask`, включенных в файл проекта либо напрямую, либо через импортированный файл проекта. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
->  Свойства и элементы уровня проекта не имеют смысла, если элемент `UsingTask` получен из одного из файлов *TASKS*, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.
+> Свойства и элементы уровня проекта не имеют смысла, если элемент `UsingTask` получен из одного из файлов *TASKS*, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.
 
  В MSBuild 4.0 задачи можно загрузить из файлов *OVERRIDETASK*.
 

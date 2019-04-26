@@ -12,14 +12,14 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d1fd2a1adcc339cb3b1d6f0aabc7db5a86973ab
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 71686e160fd808b2df3d399b50206bed2a6869e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979270"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Практическое руководство. Создание подключаемого модуля нагрузочных тестов
+# <a name="how-to-create-a-load-test-plug-in"></a>Как выполнить Создание подключаемого модуля нагрузочных тестов
 
 Существует возможность создания подключаемого модуля нагрузочных тестов для запуска кода в различное время в процессе выполнения нагрузочного теста. Подключаемый модуль создается для расширения или изменения встроенных возможностей нагрузочного теста. Например, можно составить код подключаемого модуля для нагрузочного теста, позволяющий настраивать или изменять шаблон нагрузочного теста во время выполнения нагрузочного теста. Для этого необходимо создать класс, наследующий интерфейс <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. В этом классе должен быть реализован метод <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> данного интерфейса. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
@@ -28,7 +28,9 @@ ms.locfileid: "58415854"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="to-create-a-load-test-plug-in-in-c"></a>Создание подключаемого модуля нагрузочных тестов в C#
+<!-- markdownlint-enable MD003 MD020 -->
 
 1. Откройте проект веб-тестов производительности и нагрузочных тестов, содержащий веб-тест производительности.
 
@@ -94,7 +96,6 @@ ms.locfileid: "58415854"
 > [!NOTE]
 > В следующем фрагменте кода необходимо добавить ссылку на System.Windows.Forms.
 
-
 ```csharp
 using System;
 using Microsoft.VisualStudio.TestTools.LoadTesting;
@@ -140,21 +141,21 @@ namespace LoadTestPluginTest
 
 С нагрузочным тестом связано восемь событий, которые могут обрабатываться в подключаемом модуле нагрузочных тестов для запуска пользовательского кода. Ниже приведен список событий, обеспечивающих доступ к различным этапам запуска нагрузочного теста.
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
 ## <a name="see-also"></a>См. также
 

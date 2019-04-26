@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6b43e738e9bcb6337d829bc9769c5986c38842
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406014"
 ---
 # <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении.
 
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  Корнем дерева является точка входа в приложение или компонент. В каждом узле функции перечислены все вызванные в нем функции и содержатся данные о производительности, связанные с этими вызовами функций.
 

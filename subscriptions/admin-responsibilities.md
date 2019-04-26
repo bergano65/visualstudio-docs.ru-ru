@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Сведения об обязанностях администраторов подписок.
 searchscope: VS Subscription
 ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945840"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Общие сведения об обязанностях администратора
 Администраторы могут управлять подписками своей организации.  В обязанности администратора также входит контроль за тем, что подписки управляются в соответствии с условиями лицензии. В этой статье описаны обязанности, преимущества и ограничения роли администратора.

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Часто задаваемые вопросы по переносу администрирования центра поддержки корпоративных лицензий
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427979"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Перенос администрирования подписками Visual Studio
 
@@ -54,7 +54,7 @@ ms.locfileid: "58897664"
 
     Г. Затем ему будет предложено ввести номер PCN.
 
-2. **Настройка администраторов.**
+2. **Настройка администраторов:**
 
     После ввода PCN контактное лицо перенаправляется на страницу, где он может добавить суперадминистраторов и администраторов (которые раньше назывались диспетчерами подписок). В идеале этот процесс должен быть завершен до даты переноса организации, чтобы избежать прерываний в работе по управлению подписками.
 

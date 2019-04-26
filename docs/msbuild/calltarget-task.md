@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b7aac5078f5fec4da59538543a9d6123f4473c03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823271"
 ---
 # <a name="calltarget-task"></a>CallTarget - задача
 Вызывает указанные целевые объекты в файле проекта.
 
 ## <a name="task-parameters"></a>Параметры задачи
  В следующей таблице приводятся параметры задачи `CallTarget` .
-
 
 | Параметр | Описание |
 |---------------------------| - |

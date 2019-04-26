@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948287"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с категорией **Текстовый редактор** — `DTE.Properties("TextEditor", <Property Page>)`. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции `Properties`, а таблицы содержат списки свойств в коллекции.
