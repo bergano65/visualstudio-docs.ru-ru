@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960164"
 ---
 # <a name="zoom-control-threads-view"></a>Элемент управления масштабом (представление "Потоки")
 Элемент управления "Масштаб" — это ползунок, помогающий увеличивать и уменьшать временную шкалу, фокусируясь на интересующих участках. Так как этот элемент управления выполняет масштабирование по центру представления временной шкалы, перед масштабированием следует расположить интересующую область в центре.

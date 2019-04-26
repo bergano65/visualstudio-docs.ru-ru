@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938472"
 ---
 # <a name="set-up-a-git-repository"></a>Настройка репозитория Git
 
@@ -44,7 +44,7 @@ Git — это распределенная система управления
 
 Если у вас есть проект, который еще _не_ зарегистрирован в системе управления версиями, выполните указанные ниже действия. чтобы настроить его в Git.
 
-1.  Выберите имя решения на панели решения в Visual Studio для Mac.
+1. Выберите имя решения на панели решения в Visual Studio для Mac.
 
 2. В строке меню выберите **Управление версиями > Опубликовать в системе управления версиями**, чтобы отобразить диалоговое окно **Выбрать репозиторий**:
 

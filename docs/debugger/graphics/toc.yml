@@ -48,7 +48,7 @@
 - name: Примеры диагностики графики
   href: graphics-diagnostics-examples.md
   items:
-    - name: Пошаговое руководство. Запись графических сведений
+    - name: Пошаговое руководство. Захват графической информации
       href: walkthrough-capturing-graphics-information.md
     - name: Пошаговое руководство. Запись графических сведений программными средствами
       href: walkthrough-capturing-graphics-information-programmatically.md
@@ -62,7 +62,7 @@
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
     - name: Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: Практическое руководство. Изменение машины воспроизведения диагностики графики
+    - name: Как выполнить изменение компьютера воспроизведения диагностики графики
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Справочник (программный захват)
   href: reference-programmatic-capture.md

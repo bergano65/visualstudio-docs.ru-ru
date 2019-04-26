@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f0a63cfca8e06d999c585793fabdce627d4896d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968045"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 Параметр **Sys** программы *VSPerfCmd.exe* задает событие профилирования, которое дискретизируется в соответствии с событиями системных вызовов (вызовы функций из профилируемого приложения в операционную систему), и при необходимости изменяет число системных вызовов в интервале выборки (по умолчанию используется значение 10).

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Настройка диаграмм классов (конструктор классов)
+title: Как выполнить Настройка диаграмм классов (конструктор классов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975220"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Как выполнить  Настройка диаграмм классов
+# <a name="how-to-customize-class-diagrams"></a>Как выполнить Настройка диаграмм классов
 
 Способ отображения информации схемой классов можно изменить. В рабочей области конструирования можно настроить всю схему или отдельные типы.
 

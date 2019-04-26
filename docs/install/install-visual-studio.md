@@ -2,7 +2,7 @@
 title: Установка Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974946"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -105,14 +105,14 @@ ms.locfileid: "58857545"
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Скачивание Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Скачивание Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -182,7 +182,6 @@ ms.locfileid: "58857545"
   ![Visual Studio 2019 — установка отдельных компонентов](media/vs-2019/vs-installer-individual-components.png "Установка отдельных компонентов Visual Studio")
 
 ::: moniker-end
-
 
 ## <a name="step-6---install-language-packs-optional"></a>Шаг 6. Установка языковых пакетов (необязательно)
 

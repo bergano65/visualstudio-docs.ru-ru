@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956457"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Страница "Ссылки" в конструкторе проектов (Visual Basic)
 
@@ -82,11 +82,11 @@ ms.locfileid: "56335134"
 
  Выберите определяемое пользователем пространство имен в списке пространств имен, введите имя, которым вы хотите его заменить, в поле **Импортированные пространства имен**, а затем нажмите эту кнопку, чтобы изменить новое пространство имен. Кнопка активна, только если выбранное пространство имен было добавлено в список с помощью кнопки **Добавить пользовательский импорт**. Вы можете добавить:
 
--   классы и пространства имен, такие как <xref:System.Math?displayProperty=fullName>;
+- классы и пространства имен, такие как <xref:System.Math?displayProperty=fullName>;
 
--   импортированные пространства имен с псевдонимами, такие как `VB=Microsoft.VisualBasic`;
+- импортированные пространства имен с псевдонимами, такие как `VB=Microsoft.VisualBasic`;
 
--   пространства имен XML, такие как `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- пространства имен XML, такие как `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>См. также раздел
 

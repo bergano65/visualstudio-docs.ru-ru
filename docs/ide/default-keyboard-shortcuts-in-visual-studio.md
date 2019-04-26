@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962045"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -40,22 +40,22 @@ ms.locfileid: "56607412"
 |[Контекстные меню отладчика](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Другие контекстные меню](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Контекстные меню Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Концентратор диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Глобальные
+## <a name="bkmk_global"></a> Глобальные
 
-###  <a name="bkmk_analyze"></a> Анализ
+### <a name="bkmk_analyze"></a> Анализ
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Analyze.NavigateBackward|**SHIFT+ALT+3**|
 |Analyze.NavigateForward|**SHIFT+ALT+4**|
 
-###  <a name="bkmk_architecture"></a> Архитектура
+### <a name="bkmk_architecture"></a> Архитектура
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Architecture.NewDiagram|**CTRL+\\, CTRL+N**|
 
-###  <a name="bkmk_build"></a> Сборка
+### <a name="bkmk_build"></a> Сборка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -64,13 +64,13 @@ ms.locfileid: "56607412"
 |Build.Compile|**CTRL+F7**|
 |Build.RunCodeAnalysisonSolution|**ALT+F11**|
 
-###  <a name="bkmk_classview"></a> Контекстные меню представления классов
+### <a name="bkmk_classview"></a> Контекстные меню представления классов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+ВВОД**|
 
-###  <a name="bkmk_debug"></a> Отладка
+### <a name="bkmk_debug"></a> Отладка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -138,7 +138,7 @@ ms.locfileid: "56607412"
 |Debug.Watch3|**CTRL+ALT+W, 3**|
 |Debug.Watch4|**CTRL+ALT+W, 4**|
 
-###  <a name="bkmk_debugger"></a> Контекстные меню отладчика
+### <a name="bkmk_debugger"></a> Контекстные меню отладчика
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -146,13 +146,13 @@ ms.locfileid: "56607412"
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Концентратор диагностики
+### <a name="bkmk_diagnostics"></a> Концентратор диагностики
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|
 
-###  <a name="bkmk_edit"></a> Правка
+### <a name="bkmk_edit"></a> Правка
 
 |Команды|Сочетания клавиш|
 |--------------|-|
@@ -211,7 +211,7 @@ ms.locfileid: "56607412"
 |Edit.SurroundWith|**CTRL+K, CTRL+S**|
 |Edit.Undo|**CTRL+Z**<br /><br /> или<br /><br /> **ALT+BACKSPACE**|
 
-###  <a name="bkmk_editorContext"></a> Контекстные меню редактора
+### <a name="bkmk_editorContext"></a> Контекстные меню редактора
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -222,7 +222,7 @@ ms.locfileid: "56607412"
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (латинская буква O)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> или<br /><br /> **CTRL+K, T**|
 
-###  <a name="bkmk_file"></a> Файл
+### <a name="bkmk_file"></a> Файл
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -238,7 +238,7 @@ ms.locfileid: "56607412"
 |File.SaveSelectedItems|**CTRL+S**|
 |File.ViewinBrowser|**CTRL+SHIFT+W**|
 
-###  <a name="bkmk_help"></a> Справка
+### <a name="bkmk_help"></a> Справка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -247,19 +247,19 @@ ms.locfileid: "56607412"
 |Help.ViewHelp|**CTRL+F1**|
 |Help.WindowHelp|**SHIFT+F1**|
 
-###  <a name="bkmk_loadtest"></a> Нагрузочное тестирование
+### <a name="bkmk_loadtest"></a> Нагрузочное тестирование
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL+R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Другие контекстные меню
+### <a name="bkmk_otherContext"></a> Другие контекстные меню
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Вставить**|
 
-###  <a name="bkmk_project"></a> Проект
+### <a name="bkmk_project"></a> Проект
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -271,14 +271,14 @@ ms.locfileid: "56607412"
 |Project.Publishselectedfiles|**ALT+;** затем **ALT+P**|
 |Project.Replaceselectedfilesfromserver|**ALT+;** затем **ALT+R**|
 
-###  <a name="bkmk_projectContext"></a> Контекстные меню проекта и решения
+### <a name="bkmk_projectContext"></a> Контекстные меню проекта и решения
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+СТРЕЛКА ВНИЗ**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+СТРЕЛКА ВВЕРХ**|
 
-###  <a name="bkmk_refactor"></a> Рефакторинг
+### <a name="bkmk_refactor"></a> Рефакторинг
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -289,7 +289,7 @@ ms.locfileid: "56607412"
 |Refactor.Rename|**CTRL+R, CTRL+R**|
 |Refactor.ReorderParameters|**CTRL+R, CTRL+O** (латинская буква O)|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Обозреватель решений
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Обозреватель решений
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -297,7 +297,7 @@ ms.locfileid: "56607412"
 |SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> или<br /><br /> **CTRL+[**, **CTRL+P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> или<br /><br /> **CTRL+[**, **CTRL+S**|
 
-###  <a name="bkmk_team"></a> Команда
+### <a name="bkmk_team"></a> Команда
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -306,7 +306,7 @@ ms.locfileid: "56607412"
 |Team.Git.GoToGitCommits|**CTRL+0** (ноль), **CTRL+O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+0, O**|
 |Team.TeamExplorerSearch|**CTRL+'**|
 
-###  <a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
+### <a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -321,14 +321,14 @@ ms.locfileid: "56607412"
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (ноль), **CTRL+A**<br /><br /> или<br /><br /> **CTRL+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (ноль), **CTRL+W**<br /><br /> или<br /><br /> **CTRL+0, W**|
 
-###  <a name="bkmk_test"></a> Тест
+### <a name="bkmk_test"></a> Тест
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL+\\, CTRL+C**|
 |Test.UseExistingActionRecording|**CTRL+\\, CTRL+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Обозреватель тестов
+### <a name="bkmk_testexplorerGLOBAL"></a> Обозреватель тестов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -338,7 +338,7 @@ ms.locfileid: "56607412"
 |TestExplorer.RunAllTests|**CTRL+R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL+R, T**|
 
-###  <a name="bkmk_tools"></a> Инструменты
+### <a name="bkmk_tools"></a> Инструменты
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -347,7 +347,7 @@ ms.locfileid: "56607412"
 |Tools.ForceGC|**CTRL+SHIFT+ALT+F12, CTRL+SHIFT+ALT+F12**|
 |Tools.GoToCommandLine|**CTRL+/**|
 
-###  <a name="bkmk_view"></a> Вид
+### <a name="bkmk_view"></a> Вид
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -396,7 +396,7 @@ ms.locfileid: "56607412"
 |View.ZoomIn|**CTRL+SHIFT+.**|
 |View.ZoomOut|**CTRL+SHIFT+,**|
 
-###  <a name="bkmk_window"></a> Окно
+### <a name="bkmk_window"></a> Окно
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -427,14 +427,14 @@ ms.locfileid: "56607412"
 |Window.SolutionExplorerSearch|**CTRL+;**|
 |Window.WindowSearch|**ALT+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM \*, CTRL+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM \*, CTRL+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>Конструктор моделей EDM ADO.NET
+## <a name="adonet-entity-data-model-designer"></a>Конструктор моделей EDM ADO.NET
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -449,7 +449,7 @@ ms.locfileid: "56607412"
 |View.EntityDataModelBrowser|**CTRL+1**|
 |View.EntityDataModelMappingDetails|**CTRL+2**|
 
-##  <a name="class-diagram"></a>Схема классов
+## <a name="class-diagram"></a>Схема классов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -461,7 +461,7 @@ ms.locfileid: "56607412"
 |Edit.RemovefromDiagram|**Удалить**|
 |View.ViewCode|**ВВОД**|
 
-##  <a name="coded-ui-test-editor"></a>Редактор закодированных тестов пользовательского интерфейса
+## <a name="coded-ui-test-editor"></a>Редактор закодированных тестов пользовательского интерфейса
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -472,14 +472,14 @@ ms.locfileid: "56607412"
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**CTRL+ALT+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**CTRL+SHIFT+T**|
 
-##  <a name="dataset-editor"></a>Редактор наборов данных
+## <a name="dataset-editor"></a>Редактор наборов данных
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Вставить**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|
 
-##  <a name="difference-viewer"></a>Средство просмотра различий
+## <a name="difference-viewer"></a>Средство просмотра различий
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -495,7 +495,7 @@ ms.locfileid: "56607412"
 |EditorContextMenus.CodeWindow.AddComment|**CTRL+SHIFT+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**CTRL+SHIFT+P**|
 
-##  <a name="dom-explorer"></a>Обозреватель DOM
+## <a name="dom-explorer"></a>Обозреватель DOM
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -503,13 +503,13 @@ ms.locfileid: "56607412"
 |DOMExplorer.SelectElement|**CTRL+B**|
 |DOMExplorer.ShowLayout|**CTRL+SHIFT+I**|
 
-##  <a name="f-interactive"></a>F# interactive
+## <a name="f-interactive"></a>F# interactive
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+BREAK**|
 
-##  <a name="graph-document-editor"></a>Редактор документов диаграмм
+## <a name="graph-document-editor"></a>Редактор документов диаграмм
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -521,7 +521,7 @@ ms.locfileid: "56607412"
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Удалить**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Диагностика графики
+## <a name="graphics-diagnostics"></a>Диагностика графики
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -535,13 +535,13 @@ ms.locfileid: "56607412"
 |Graphics.ZoomIn|**SHIFT+ALT+=**|
 |Graphics.ZoomOut|**SHIFT+ALT+-**|
 
-##  <a name="html-editor"></a>Редактор HTML
+## <a name="html-editor"></a>Редактор HTML
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
 
-##  <a name="html-editor-design-view"></a>Представления конструирования HTML-редактора
+## <a name="html-editor-design-view"></a>Представления конструирования HTML-редактора
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -564,7 +564,7 @@ ms.locfileid: "56607412"
 |View.ViewMarkup|**SHIFT+F7**|
 |Window.PreviousTab|**CTRL+PGUP**|
 
-##  <a name="html-editor-source-view"></a>Представление кода HTML-редактора
+## <a name="html-editor-source-view"></a>Представление кода HTML-редактора
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -574,13 +574,13 @@ ms.locfileid: "56607412"
 |View.ViewDesigner|**SHIFT+F7**|
 |Window.PreviousTab|**CTRL+PGUP**|
 
-##  <a name="layer-diagram"></a>Схема слоев
+## <a name="layer-diagram"></a>Схема слоев
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.Delete|**SHIFT+DELETE**|
 
-##  <a name="managed-resources-editor"></a>Редактор управляемых ресурсов
+## <a name="managed-resources-editor"></a>Редактор управляемых ресурсов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -595,7 +595,7 @@ ms.locfileid: "56607412"
 |Resources.Other|**CTRL+6**|
 |Resources.Strings|**CTRL+1**|
 
-##  <a name="merge-editor-window"></a>Окно редактора слияния
+## <a name="merge-editor-window"></a>Окно редактора слияния
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -603,7 +603,7 @@ ms.locfileid: "56607412"
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Средства работы с данными Microsoft SQL Server, сравнение схем
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Средства работы с данными Microsoft SQL Server, сравнение схем
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -614,7 +614,7 @@ ms.locfileid: "56607412"
 |SQL.SSDTSchemaCompareStop|**ALT+BREAK**|
 |SQL.SSDTSchemaCompareWriteUpdates|**SHIFT+ALT+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Средства работы с данными Microsoft SQL Server, конструктор таблиц
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Средства работы с данными Microsoft SQL Server, конструктор таблиц
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -625,7 +625,7 @@ ms.locfileid: "56607412"
 |SQL.Rename|**F2**<br /><br /> или<br /><br /> **CTRL+R, R**<br /><br /> или<br /><br /> **CTRL+R, CTRL+R**|
 |ViewFileInScriptPanel|**SHIFT+ALT+PGDN**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -646,7 +646,7 @@ ms.locfileid: "56607412"
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**SHIFT+ALT+PGDN**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL PDW
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -661,13 +661,13 @@ ms.locfileid: "56607412"
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**SHIFT+ALT+PGDN**|
 
-##  <a name="page-inspector"></a>Инспектор страниц
+## <a name="page-inspector"></a>Инспектор страниц
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Конструктор запросов
+## <a name="query-designer"></a>Конструктор запросов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -680,7 +680,7 @@ ms.locfileid: "56607412"
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-##  <a name="query-results"></a>Результаты запроса
+## <a name="query-results"></a>Результаты запроса
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -688,7 +688,7 @@ ms.locfileid: "56607412"
 |SQL.QueryResultsRefresh|**SHIFT+ALT+R**|
 |SQL.QueryResultsStop|**ALT+BREAK**|
 
-##  <a name="report-designer"></a>Конструктор отчетов
+## <a name="report-designer"></a>Конструктор отчетов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -714,14 +714,14 @@ ms.locfileid: "56607412"
 |Edit.TabLeft|**SHIFT+TAB**|
 |View.ReportData|**CTRL+ALT+D**|
 
-##  <a name="sequence-diagram"></a>Схема последовательностей
+## <a name="sequence-diagram"></a>Схема последовательностей
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**SHIFT+DEL**|
 
-##  <a name="settings-designer"></a>Конструктор параметров
+## <a name="settings-designer"></a>Конструктор параметров
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -730,13 +730,13 @@ ms.locfileid: "56607412"
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>обозреватель решений
+## <a name="solution-explorer"></a>обозреватель решений
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|
 
-##  <a name="team-explorer"></a>Командный обозреватель
+## <a name="team-explorer"></a>Командный обозреватель
 
 |Команда|Сочетание клавиш|
 |-------------| - |
@@ -761,13 +761,13 @@ ms.locfileid: "56607412"
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**SHIFT+ALT+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Обозреватель тестов
+## <a name="test-explorer"></a>Обозреватель тестов
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Текстовый редактор
+## <a name="text-editor"></a>Текстовый редактор
 
 | Команды | Сочетания клавиш |
 | - | - |
@@ -884,38 +884,38 @@ ms.locfileid: "56607412"
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+PGDN** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+PGUP** |
 
-##  <a name="uml-activity-diagram"></a>Схема активности UML
+## <a name="uml-activity-diagram"></a>Схема активности UML
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.Delete|**SHIFT+DEL**|
 
-##  <a name="uml-class-diagram"></a>UML-схема классов
+## <a name="uml-class-diagram"></a>UML-схема классов
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.DeleteFromModel|**SHIFT+DEL**|
 
-##  <a name="uml-component-diagram"></a>Схема компонентов UML
+## <a name="uml-component-diagram"></a>Схема компонентов UML
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.DeleteFromModel|**SHIFT+DEL**|
 
-##  <a name="uml-use-case-diagram"></a>Схема вариантов использования UML
+## <a name="uml-use-case-diagram"></a>Схема вариантов использования UML
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.DeleteFromModel|**SHIFT+DEL**|
 
-##  <a name="vc-accelerator-editor"></a>Редактор сочетаний клавиш VC
+## <a name="vc-accelerator-editor"></a>Редактор сочетаний клавиш VC
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Edit.NewAccelerator|**Вставить**|
 |Edit.NextKeyTyped|**CTRL+W**|
 
-##  <a name="vc-dialog-editor"></a>Редактор диалоговых окон VC
+## <a name="vc-dialog-editor"></a>Редактор диалоговых окон VC
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -949,7 +949,7 @@ ms.locfileid: "56607412"
 |Format.TestDialog|**CTRL+T**|
 |Format.ToggleGuides|**CTRL+G**|
 
-##  <a name="vc-image-editor"></a>Редактор изображений VC
+## <a name="vc-image-editor"></a>Редактор изображений VC
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -991,13 +991,13 @@ ms.locfileid: "56607412"
 |Image.ZoomIn|**CTRL+SHIFT+.**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВВЕРХ**|
 |Image.ZoomOut|**CTRL+SHIFT+,**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВНИЗ**|
 
-##  <a name="vc-string-editor"></a>Редактор строк VC
+## <a name="vc-string-editor"></a>Редактор строк VC
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |Edit.NewString|**Вставить**|
 
-##  <a name="view-designer"></a>Конструктор представлений
+## <a name="view-designer"></a>Конструктор представлений
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1010,13 +1010,13 @@ ms.locfileid: "56607412"
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|
 
-##  <a name="windows-forms-designer"></a>Конструктор Windows Forms
+## <a name="windows-forms-designer"></a>Конструктор Windows Forms
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1045,7 +1045,7 @@ ms.locfileid: "56607412"
 |Edit.SizeControlUp|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|
 |Edit.TabLeft|**SHIFT+TAB**|
 
-##  <a name="work-item-editor"></a>Редактор рабочих элементов
+## <a name="work-item-editor"></a>Редактор рабочих элементов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1053,7 +1053,7 @@ ms.locfileid: "56607412"
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**SHIFT+ALT+L**|
 
-##  <a name="work-item-query-view"></a>Представление запросов рабочих элементов
+## <a name="work-item-query-view"></a>Представление запросов рабочих элементов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1064,7 +1064,7 @@ ms.locfileid: "56607412"
 |Team.Refresh|**F5**|
 |Window.Toggle|**SHIFT+ALT+V**|
 
-##  <a name="work-item-results-view"></a>Представление результатов рабочих элементов
+## <a name="work-item-results-view"></a>Представление результатов рабочих элементов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1077,7 +1077,7 @@ ms.locfileid: "56607412"
 |Team.Refresh|**F5**|
 |Window.Toggle|**SHIFT+ALT+V**|
 
-##  <a name="workflow-designer"></a>Конструктор рабочих процессов
+## <a name="workflow-designer"></a>Конструктор рабочих процессов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1105,7 +1105,7 @@ ms.locfileid: "56607412"
 |WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
 |WorkflowDesigner.ZoomOut|**CTRL+NUM -**|
 
-##  <a name="xaml-ui-designer"></a>Конструктор XAML
+## <a name="xaml-ui-designer"></a>Конструктор XAML
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -1127,14 +1127,14 @@ ms.locfileid: "56607412"
 |View.EdgeRightMoveRight|**CTRL+SHIFT+ALT+.**|
 |View.ShowPropertyMarkerMenu|**CTRL+ПРОБЕЛ**|
 
-##  <a name="xml-text-editor"></a>XML-редактор (текстовый)
+## <a name="xml-text-editor"></a>XML-редактор (текстовый)
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**CTRL+ALT+F5**|
 
-##  <a name="xml-schema-designer"></a>Конструктор схемы XML
+## <a name="xml-schema-designer"></a>Конструктор схемы XML
 
 |Команды|Сочетания клавиш|
 |--------------| - |

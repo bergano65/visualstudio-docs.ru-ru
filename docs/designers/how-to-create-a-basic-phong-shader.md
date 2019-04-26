@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Создание простейшего шейдера цвета с моделью освещения Фонга
+title: Как выполнить Создание простейшего шейдера цвета с моделью освещения Фонга
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897789"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Как выполнить  Создание простейшего шейдера цвета с моделью освещения Фонга
+# <a name="how-to-create-a-basic-phong-shader"></a>Как выполнить Создание простейшего шейдера цвета с моделью освещения Фонга
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера, реализующего классическую модель освещения по методу Фонга.
 

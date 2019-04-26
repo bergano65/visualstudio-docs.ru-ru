@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937169"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Как выполнить Назначение нескольких запускаемых проектов
 
@@ -20,7 +20,7 @@ ms.locfileid: "58152919"
 
 ## <a name="to-set-multiple-startup-projects"></a>Назначение нескольких запускаемых проектов
 
-1.  На **панели решений** выберите решение (верхний узел).
+1. На **панели решений** выберите решение (верхний узел).
 
 2. Выберите контекстное меню узла решения (вызываемое щелчком правой кнопки мыши), а затем пункт **Назначить запускаемые проекты...**.
 

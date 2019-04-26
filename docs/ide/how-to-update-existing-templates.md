@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974700"
 ---
-# <a name="how-to-update-existing-templates"></a>Практическое руководство. Обновление существующих шаблонов
+# <a name="how-to-update-existing-templates"></a>Как выполнить Обновление существующих шаблонов
 
 После создания шаблона и сжатия файлов в *ZIP*-файл может потребоваться изменить шаблон. Это можно сделать путем изменения файлов шаблона вручную или путем экспорта нового шаблона из проекта, основанного на шаблоне.
 

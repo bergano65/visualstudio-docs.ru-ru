@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978903"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
-
 
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
 
@@ -65,12 +64,12 @@ ms.locfileid: "56953425"
 
 ## <a name="manage-subscriptions"></a>Отмена продления приобретенных облачных подписок
 
-*   Чтобы изменить число приобретенных подписок, сделайте следующее:
+* Чтобы изменить число приобретенных подписок, сделайте следующее:
 
 > [!div class="mx-imgBorder"]
 > ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Чтобы отменить подписки, измените их число на ноль (0). Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
+* Чтобы отменить подписки, измените их число на ноль (0). Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Купить облачные подписки прямо сейчас
 

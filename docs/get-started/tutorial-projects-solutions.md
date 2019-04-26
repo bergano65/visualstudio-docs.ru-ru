@@ -9,18 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a87080f2c6bc92bc37cc98a08bfc6643e3d12c4
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 498f52a85f52206bf5c12a2d591ce169eb0775fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943687"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Сведения о проектах и решениях
 
 В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта различные *шаблоны*, доступные в Visual Studio.
 

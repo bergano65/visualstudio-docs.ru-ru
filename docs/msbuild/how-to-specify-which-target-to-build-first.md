@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997361"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Как выполнить Выбор цели для первой сборки
 Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets` или `InitialTargets` либо целевой объект не указан в командной строке с помощью параметра **-target**.
@@ -35,7 +35,7 @@ ms.locfileid: "56603434"
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Задание нескольких начальных целевых объектов
 
--   Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:
+- Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,23 +52,22 @@ ms.locfileid: "56603434"
 
 #### <a name="to-specify-more-than-one-default-target"></a>Задание нескольких целевых объектов по умолчанию
 
--   Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:
+- Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:
 
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Использование параметра -target
  Если целевой объект по умолчанию не определен в файле проекта или вы не хотите использовать его, можно использовать параметр командной строки **-target**, чтобы указать другой целевой объект. Целевые объекты, заданные с помощью параметра **-target**, выполняются вместо целевых объектов, заданных в атрибуте `DefaultTargets`. Целевые объекты, заданные в атрибуте `InitialTargets`, всегда выполняются первыми.
 
-
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь
 
--   Укажите целевой объект в качестве первого с помощью параметра командной строки **-target**. Например:
+- Укажите целевой объект в качестве первого с помощью параметра командной строки **-target**. Например:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь
 
--   Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **-target**. Например:
+- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **-target**. Например:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

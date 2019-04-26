@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933131"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
 
 * `UseKestrel`: указывает, что приложением будет использоваться сервер Kestrel.
@@ -104,8 +105,8 @@ public class Startup
 
 Этот класс Startup всегда должен соответствовать следующим правилам:
 
- - Он всегда должен быть открытым.
- - Он должен содержать два открытых метода: `ConfigureServices` и `Configure`.
+- Он всегда должен быть открытым.
+- Он должен содержать два открытых метода: `ConfigureServices` и `Configure`.
 
 Метод `ConfigureServices` определяет службы, которые будут использоваться приложением.
 
@@ -218,7 +219,6 @@ public class Startup
 9. Если перейти по адресу `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (заменив `xxxx` на правильный порт), вы должны увидеть следующее:
 
     ![Выполнение приложения в браузере с аргументами](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
