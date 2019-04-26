@@ -14,12 +14,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434333"
 ---
 # <a name="configuring-performance-sessions"></a>Настройка сеансов анализа производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774700"
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяют собирать большой объем данных о производительности для приложений различных типов. В данном разделе описывается, как использовать мастер производительности и свойства сеанса анализа производительности и целевого двоичного файла для настройки средств профилирования для сбора интересующих вас данных. Свойства конфигурации средств профилирования могут также использоваться для управления объемом данных, собираемых в ходе сеанса профилирования. Дополнительные сведения см. в статье [Controlling Data Collection](../profiling/controlling-data-collection.md) (Управление сбором данных).  
   
 > [!NOTE]
->  Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Руководство по профилированию производительности для начинающих) и [Начало работы](../profiling/getting-started-with-performance-tools.md).  
+> Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Руководство по профилированию производительности для начинающих) и [Начало работы](../profiling/getting-started-with-performance-tools.md).  
   
 ## <a name="common-tasks"></a>Общие задачи  
   

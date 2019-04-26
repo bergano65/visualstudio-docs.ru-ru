@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419761"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "59663733"
   
 ## <a name="tasks"></a>Задачи  
   
--   [Практическое руководство. Управление окном панели элементов](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [Практическое руководство. Управление окном панели элементов](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Практическое руководство. Управление вкладками панели элементов](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [Практическое руководство. Управление вкладками панели элементов](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Элементы пользовательского интерфейса  
  По умолчанию на вкладке HTML доступны указанные ниже средства.  
@@ -96,7 +96,7 @@ ms.locfileid: "59663733"
  Дополнительные сведения см. в статьях [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного веб-элемента управления HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [TextBox Web Server Control Overview](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) (Обзор элемента управления веб-сервера TextBox), <xref:System.Web.UI.HtmlControls.HtmlInputText> и <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Ввод (файл)**  
  ![Поле файла страницы HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ ms.locfileid: "59663733"
  Дополнительные сведения см. в статьях [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного веб-элемента управления HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) и <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Ввод (пароль)**  
  ![Поле пароля Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ ms.locfileid: "59663733"
  Дополнительные сведения см. в разделе [Элементы управления ввода HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Декларативный синтаксис серверного элемента управления HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Практическое руководство. Установка серверного веб-элемента управления для ввода пароля](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) и [Практическое руководство. Проверка пользовательского ввода на странице веб-форм](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Ввод (флажок)**  
  ![Параметр Checkbox панели элементов веб-страницы HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ ms.locfileid: "59663733"
  Дополнительные сведения см. в статьях [Декларативный синтаксис серверного веб-элемента управления HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> и <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Таблица**  
  ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

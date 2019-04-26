@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433082"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Практическое руководство. Установка конкретного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60054473"
 |Visual Studio Enterprise (исходный RTM без обновлений)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступной на момент выпуска RTM|
 
 > [!IMPORTANT]
->  В зависимости от языка, который вы хотите использовать, необходимо заменить "enu" (для английского языка) одним из следующих значений.
+> В зависимости от языка, который вы хотите использовать, необходимо заменить "enu" (для английского языка) одним из следующих значений.
 >
 > - chs (для китайского языка [упрощенное письмо])
 >   - cht (для китайского языка [традиционное письмо])

@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419795"
 ---
 # <a name="toolbox-data-tab"></a>Панель элементов, вкладка "Данные"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663919"
 Отображение объектов данных, которые можно добавлять в формы и компоненты. Вкладка **Данные** **панели элементов** появляется при создании проекта, для которого есть связанный конструктор. **Панель элементов** по умолчанию отображается в интегрированной среде разработки Visual Studio; чтобы открыть **панель элементов**, выберите в меню **Вид** пункт **Панель элементов**.  
   
 > [!TIP]
->  Запуск мастера настройки источников данных позволяет автоматически создать и настроить большинство элементов данных. Дополнительные сведения см. в статье [Creating Data Applications with Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293) (Создание приложений данных с помощью Visual Studio).  
+> Запуск мастера настройки источников данных позволяет автоматически создать и настроить большинство элементов данных. Дополнительные сведения см. в статье [Creating Data Applications with Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293) (Создание приложений данных с помощью Visual Studio).  
   
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса  
  Чтобы перейти непосредственно на страницу справочника по .NET Framework для конкретного компонента, нажмите клавишу **F1** для элемента на **панели элементов** или для элемента компонента в области конструктора.  

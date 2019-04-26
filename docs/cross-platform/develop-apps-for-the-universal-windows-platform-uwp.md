@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819576"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 
@@ -38,11 +38,25 @@ ms.locfileid: "58152594"
 
 Ниже приведен список необходимого программного обеспечения.
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/productinfo/vs2017-compatibility-vs) и [Системные требования](/visualstudio/productinfo/vs2017-system-requirements-vs) для Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
 
      ![Рабочая нагрузка UWP](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/releases/2019/compatibility/) и [Системные требования](/visualstudio/releases/2019/system-requirements/) для Visual Studio.
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
+
+     ![Рабочая нагрузка UWP](media/uwp_workload.png)
+
+::: moniker-end
 
 После установки программного обеспечения нужно разрешить разработку на устройстве Windows 10. См. раздел [Разрешение разработки на устройстве](/windows/uwp/get-started/enable-your-device-for-development). (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821592"
 ---
 # <a name="use-the-task-list"></a>Использование списка задач
 
@@ -83,6 +83,9 @@ ms.locfileid: "55954713"
 4. В раскрывающемся списке **Приоритет** выберите приоритет по умолчанию для нового токена.
 
 5. Выберите **Добавить**.
+
+> [!TIP]
+> Кнопка **Добавить** станет активной после того, как вы введете имя. Введите имя, прежде чем нажимать кнопку **Добавить**.
 
 ### <a name="c-todo-comments"></a>Комментарии TODO C++
 

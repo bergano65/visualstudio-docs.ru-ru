@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443740"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Управление сборками и подписывание манифестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "54755468"
  Укажите файл ключа. Если вы решили создать файл ключа, обратите внимание, что новые файлы ключей всегда имеют формат PFX. Вам нужно ввести имя пользователя и пароль для нового файла.  
   
 > [!WARNING]
->  При этом следует защитить файл ключа паролем, чтобы предотвратить его использование другим пользователем. Ключи также можно защитить с помощью поставщиков или хранилищ сертификатов.  
+> При этом следует защитить файл ключа паролем, чтобы предотвратить его использование другим пользователем. Ключи также можно защитить с помощью поставщиков или хранилищ сертификатов.  
   
  Кроме того, можно указать уже созданный ключ. Дополнительные сведения о создании пары ключей смотрите в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   

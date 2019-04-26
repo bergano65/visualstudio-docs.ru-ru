@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405915"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60051587"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. на странице [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Элементы управления панели элементов  
  Элемент управления на панели элементов можно добавить в форму или конструктор с помощью клавиатуры.  

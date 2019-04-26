@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426114"
 ---
 # <a name="msbuild-task"></a>Задача MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59656743"
  В версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 зарезервированы два новых элемента метаданных, Properties и AdditionalProperties, позволяющие легко передавать разные свойства в разные проекты, сборка которых выполнена с помощью [задачи MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Эти новые элементы метаданных применимы только к элементам, переданным с помощью атрибута Projects [задачи MSBuild](../msbuild/msbuild-task.md).  
+> Эти новые элементы метаданных применимы только к элементам, переданным с помощью атрибута Projects [задачи MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Преимущества сборок в системах с несколькими процессорами  
  Одно из основных преимуществ использования новых метаданных проявляется при выполнении сборок проектов в параллельном режиме в системах с несколькими процессорами. Метаданные позволяют объединить все проекты в один вызов [задачи MSBuild](../msbuild/msbuild-task.md) вместо того, чтобы выполнять пакетную обработку или задачи [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] с разными условиями. При вызове единой [задачи MSBuild](../msbuild/msbuild-task.md) сборка всех проектов, перечисленных в атрибуте Projects, будет выполняться параллельно. (Конечно, в том случае, если атрибут `BuildInParallel=true` определен для [задачи MSBuild](../msbuild/msbuild-task.md).) Дополнительные сведения см. в разделе [Параллельное построение нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
@@ -77,7 +77,7 @@ ms.locfileid: "59656743"
  Чаще всего сборка нескольких файлов прикладного решения осуществляется с помощью [задачи MSBuild](../msbuild/msbuild-task.md), выполняемой с использованием разных конфигураций сборки. Например, вам нужно выполнить сборку решения a1 с помощью конфигурации отладки, а решения a2 — с помощью конфигурации выпуска. В версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 такой файл проекта выглядел следующим образом:  
   
 > [!NOTE]
->  В следующем примере знаком "..." обозначены дополнительные файлы решения.  
+> В следующем примере знаком "..." обозначены дополнительные файлы решения.  
   
 ### <a name="aproj"></a>a.proj  
   

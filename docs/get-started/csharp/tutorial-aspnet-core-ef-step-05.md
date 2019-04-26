@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970950"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Шаг 5. Развертывание приложения ASP.NET в Azure
 
@@ -81,7 +81,7 @@ Azure по умолчанию ожидает подключения нового
 
 Узнайте больше о том, как разработать приложения ASP.NET Core с помощью следующих бесплатных ресурсов.
 
-[ASP.NET Core Application Architecture (Архитектура приложений ASP.NET Core)](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
+[Архитектура приложений ASP.NET Core](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
 ## <a name="see-also"></a>См. также
 

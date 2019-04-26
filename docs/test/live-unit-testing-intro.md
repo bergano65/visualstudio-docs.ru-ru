@@ -10,16 +10,18 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786085"
 ---
-# <a name="introducing-live-unit-testing"></a>Знакомство с Live Unit Testing
+# <a name="live-unit-testing-introduction"></a>Знакомство с Live Unit Testing
 
-Live Unit Testing — это технология, которая была введена в Visual Studio 2017. Она выполняет модульные тесты автоматически в режиме реального времени по мере внесения изменений в код. Динамическое модульное тестирование
+Live Unit Testing — это технология, которая была введена в Visual Studio 2017. Она выполняет модульные тесты автоматически в режиме реального времени по мере внесения изменений в код.
+
+Динамическое модульное тестирование
 
 - Позволяет более уверенно выполнять рефакторинг и изменять код. Live Unit Testing автоматически выполняет все соответствующие тесты в процессе редактирования кода для проверки того, не приведут ли изменения к ошибкам.
 
@@ -27,13 +29,16 @@ Live Unit Testing — это технология, которая была вв
 
 Если имеется решение, включающее в себя один или несколько проектов модульных тестов, вы можете включить Live Unit Testing, выбрав в меню Visual Studio верхнего уровня пункты **Тест** > **Live Unit Testing** > **Запуск**.
 
+> [!NOTE]
+> Функция Live Unit Testing доступна только в Visual Studio Enterprise Edition.
+
 Дополнительные сведения о Live Unit Testing:
 
-- Ознакомьтесь с вводным учебником [Начало работы с Live Unit Testing в Visual Studio](live-unit-testing-start.md).
+- См. подробнее о [начале работы с Live Unit Testing в Visual Studio](live-unit-testing-start.md).
 
 - Прочитайте подробную документацию [Использование Live Unit Testing в Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Ознакомьтесь с [вопросами и ответами о Live Unit Testing](live-unit-testing-faq.md), чтобы получить сведения о новых возможностях в Live Unit Testing, а также советы и приемы по использованию Live Unit Testing.
+- Ознакомьтесь с [вопросами и ответами о Live Unit Testing](live-unit-testing-faq.md), чтобы узнать о новых возможностях Live Unit Testing, а также получить советы и рекомендации по работе.
 
 - Просмотрите видео на канале Channel 9 с обзором функции Live Unit Testing и ее возможностей. </p>
 

@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 911d80c0116664d93eebe431719a3e834eea6d8e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3b296ae403658f4d39558c28e11a425adee7650a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431120"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54774832"
 API-интерфейсы профилировщика Visual Studio позволяют программно управлять объемом собираемых данных и вставлять метки времени и метки профилей во время профилирования. Чтобы использовать собственный API, включите файл заголовка VSPerf.h и добавьте файл VSPerf.lib в свой проект.  
   
 > [!NOTE]
->  По умолчанию файлы VSPerf.h и VSPerf.lib расположены в папке \< <диск>:\Program Files\Microsoft Visual Studio 9\Team Tools\Performance Tools\PerfSDK.  
+> По умолчанию файлы VSPerf.h и VSPerf.lib расположены в папке \< <диск>:\Program Files\Microsoft Visual Studio 9\Team Tools\Performance Tools\PerfSDK.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

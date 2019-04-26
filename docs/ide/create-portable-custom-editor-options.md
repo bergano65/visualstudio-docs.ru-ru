@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794139"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -25,7 +25,7 @@ ms.locfileid: "57223776"
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [EditorConfig в Visual Studio для Mac](/visualstudio/mac/editorconfig).
 
-## <a name="coding-consistency"></a>Согласованность при кодировании
+## <a name="code-consistency"></a>Согласованность кода
 
 Параметры в файлах EditorConfig позволяют поддерживать согласованность стилей и параметров написания кода для базы кода, например стиль отступа, интервал табуляции, символ конца строки, кодирование и т. д., независимо от используемого редактора или интегрированной среды разработки. Например, при программировании на языке C#, если в базе кода существует соглашение о том, что отступы всегда состоят из пяти символов пробела, для документов используется кодировка UTF-8 и каждая строка всегда заканчивается CR/LF, а файл *EDITORCONFIG* можно настроить для выполнения этих условий.
 
@@ -51,7 +51,7 @@ ms.locfileid: "57223776"
 
 Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
 
-## <a name="adding-and-removing-editorconfig-files"></a>Добавление и удаление файлов EditorConfig
+## <a name="add-and-remove-editorconfig-files"></a>Добавление и удаление файлов EditorConfig
 
 Добавление файла EditorConfig в проект или базу кода не приводит к преобразованию существующих стилей в новые. Например, если в качестве отступов в файле используются символы табуляции, при добавлении файла EditorConfig, в котором отступы задаются пробелами, символы отступа не преобразовываются в пробелы автоматически. Тем не менее все новые строки кода форматируются в соответствии с файлом EditorConfig. Кроме того, при форматировании документа (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **Ctrl**+**K**, **Ctrl**+**D**) параметры, заданные в файле EditorConfig, применяются к имеющимся строкам кода.
 
@@ -94,7 +94,7 @@ ms.locfileid: "57223776"
 
 - Попробуйте [расширение IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Это экспериментальное расширение определяет стили существующего кода, а затем создает непустой файл *.editorconfig* с помощью параметров определенного стиля.
 
-## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
+## <a name="file-hierarchy-and-precedence"></a>Иерархия и приоритет файлов
 
 При добавлении файла *EDITORCONFIG* в папку в иерархии файлов его параметры применяются ко всем соответствующим файлам на этом уровне и ниже. Можно также переопределить параметры EditorConfig для конкретного проекта, базы кода или части кода так, чтобы использовать другие соглашения, чем в остальных частях базы кода. Это может быть полезно при включении кода из-каких либо еще мест без изменения его соглашений.
 
@@ -109,9 +109,9 @@ ms.locfileid: "57223776"
 root = true
 ```
 
-Файлы EditorConfig считываются сверху вниз. В последнюю очередь считываются ближайшие файлы EditorConfig. Соглашения из соответствующих разделов EditorConfig применяются в том порядке, в котором они были считаны, поэтому приоритет имеют соглашения в ближайших файлах.
+Файлы EditorConfig считываются сверху вниз. При наличии множества свойств с одним именем приоритет будет иметь последнее обнаруженное свойство с таким именем.
 
-## <a name="editing-editorconfig-files"></a>Редактирование файлов EditorConfig
+## <a name="edit-editorconfig-files"></a>Изменение файлов EditorConfig
 
 Visual Studio позволяет редактировать файлы *EDITORCONFIG*, предоставляя списки завершения IntelliSense.
 
@@ -148,7 +148,7 @@ indent_style = tab
 
 ![Клавиша TAB добавляет символ табуляции](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>Устранение неполадок параметров EditorConfig
+## <a name="troubleshoot-editorconfig-settings"></a>Устранение неполадок параметров EditorConfig
 
 Если в структуре каталогов в папке проекта или выше есть файл EditorConfig, среда Visual Studio применяет параметры редактора из этого файла. В этом случае в строке состояния может появиться следующее сообщение:
 

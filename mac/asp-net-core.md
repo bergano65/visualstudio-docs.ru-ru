@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985612"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -31,10 +31,10 @@ ms.locfileid: "58856798"
 
 Существует несколько проектов с готовым шаблоном для создания приложения ASP.NET Core. Эти особые значения приведены ниже.
 
-- **.NET Core > Пусто**
-- **.NET Core > API**
-- **.NET Core > Веб-приложение**
-- **.NET Core > Веб-приложение (модель — представление — контроллер)**
+- **.NET Core > Пусто**
+- **.NET Core > API**
+- **.NET Core > Веб-приложение**
+- **.NET Core > Веб-приложение (модель — представление — контроллер)**
 
 ![Параметры проекта ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
@@ -63,6 +63,7 @@ ms.locfileid: "58856798"
                 .UseStartup<Startup>();
     }
 ```
+
 Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
 
 * `.UseStartup<Startup>()`: указывает класс Startup.
@@ -106,8 +107,8 @@ ms.locfileid: "58856798"
 
 Этот класс Startup всегда должен соответствовать следующим правилам:
 
- - Он всегда должен быть открытым.
- - Он должен содержать два открытых метода: `ConfigureServices` и `Configure`
+- Он всегда должен быть открытым.
+- Он должен содержать два открытых метода: `ConfigureServices` и `Configure`.
 
 Метод `ConfigureServices` определяет службы, которые будут использоваться приложением.
 
@@ -220,7 +221,6 @@ ms.locfileid: "58856798"
 9. Если перейти по адресу `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (заменив `xxxx` на правильный порт), вы должны увидеть следующее:
 
     ![Выполнение приложения в браузере с аргументами](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428272"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Синхронизированные параметры в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60109014"
  Параметры можно синхронизировать во всех выпусках Visual Studio 2015, включая выпуски Express и Community. Параметры также синхронизируются между семействами продуктов Visual Studio, такими как Blend. Тем не менее, в каждом из этих семейств продуктов могут иметься собственные параметры, которые не являются общими с Visual Studio. Например, параметры, используемые только в Blend, на компьютере A будут синхронизироваться с параметрами Blend на компьютере B, но не с параметрами Visual Studio на компьютере A или B.
 
 > [!WARNING]
->  Параметры не синхронизируются между Visual Studio 2013 и Visual Studio 2015. При первом открытии Visual Studio 2015 параметры переносятся из Visual Studio 2013, но после этого их нельзя будет перенести обратно в Visual Studio 2013.
+> Параметры не синхронизируются между Visual Studio 2013 и Visual Studio 2015. При первом открытии Visual Studio 2015 параметры переносятся из Visual Studio 2013, но после этого их нельзя будет перенести обратно в Visual Studio 2013.
 
 ## <a name="see-also"></a>См. также раздел
  [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)
