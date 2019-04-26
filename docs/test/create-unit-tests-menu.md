@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965485"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
@@ -52,5 +52,5 @@ ms.locfileid: "58857728"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")
 - [Записи блога о функции модульного тестирования](https://devblogs.microsoft.com/devops/?s=unit+testing)
