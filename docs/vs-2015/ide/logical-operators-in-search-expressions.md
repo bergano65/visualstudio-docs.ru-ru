@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412269"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Логические операторы в выражениях поиска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760074"
 С помощью логических операторов можно уточнить поиск содержимого путем создания более сложных выражений на основе простых. Как показано в следующей таблице, логические операторы показывают, как следует объединять несколько условий в запросе поиска.  
   
 > [!IMPORTANT]
->  Логические операторы необходимо вводить прописными буквами, чтобы поисковая система могла их распознать.  
+> Логические операторы необходимо вводить прописными буквами, чтобы поисковая система могла их распознать.  
   
 |Условие, которое требуется найти|Использовать|Пример|Результат|  
 |-------------------|---------|-------------|------------|  

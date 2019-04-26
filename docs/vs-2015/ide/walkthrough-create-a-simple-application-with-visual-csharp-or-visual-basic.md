@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436828"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60040563"
  [Отладка и тестирование приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](http://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](http://www.asp.net/get-started)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](http://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](http://www.asp.net/get-started)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Настройка интегрированной среды разработки (IDE)  
  При первом запуске Visual Studio будет предложено войти в это приложение с использованием учетной записи Майкрософт: [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Вход в Visual Studio). Необязательно входить сразу, можно сделать это позже.  
@@ -109,7 +109,7 @@ ms.locfileid: "60040563"
     **Обозреватель решений** показывает, что файл теперь называется Greetings.xaml, и если развернуть узел MainWindow.xaml (переместив курсор на узел и нажав клавишу стрелки вправо), то видно, что файл MainWindow.xaml.vb (или MainWindow.xaml.cs) теперь называется Greetings.xaml.vb (или Greetings.xaml.cs). Этот файл с текстом программы вложен в узел файла .xaml, что означает их тесную связь.  
   
    > [!WARNING]
-   >  Это изменение вызовет ошибку; сведения по ее отладке и исправлению будут предоставлены позднее.  
+   > Это изменение вызовет ошибку; сведения по ее отладке и исправлению будут предоставлены позднее.  
   
 2. В **Обозревателе решений**откройте файл Greetings.xaml в представлении конструктора (путем нажатия клавиши ВВОД при выбранном узле) и выберите заголовок окна с помощью мыши.  
   

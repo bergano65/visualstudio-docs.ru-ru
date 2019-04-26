@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445388"
 ---
 # <a name="task-writing"></a>Написание задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  Файл Microsoft.Common.Tasks в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи, предоставленные вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в файле Microsoft.Common.Tasks, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.  
   
 > [!TIP]
->  Чтобы увидеть список задач, предоставленных вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], просмотрите содержимое файла Microsoft.Common.Tasks.  
+> Чтобы увидеть список задач, предоставленных вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], просмотрите содержимое файла Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Создание событий из задачи  
  Если задача является производной от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, вы можете использовать любой из следующих вспомогательных методов класса <xref:Microsoft.Build.Utilities.Task> для создания событий, которые будут перехватываться и отображаться зарегистрированными средствами ведения журнала:  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432330"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60053575"
      Дополнительные сведения см. в разделах [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) и <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  Вам нужно перестроить проект, чтобы изменения в окне **Вывод** (все проекты) и *файле ProjectName*.txt (только проекты C++) вступили в силу.  
+    > Вам нужно перестроить проект, чтобы изменения в окне **Вывод** (все проекты) и *файле ProjectName*.txt (только проекты C++) вступили в силу.  
   
 ## <a name="see-also"></a>См. также раздел  
  [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   

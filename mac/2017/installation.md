@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998072"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Установка Visual Studio 2017 для Mac
 
 > [!NOTE]
-> [Выпущена версия](installation.md?view=vsmac-2019) Visual Studio 2019 для Mac.
+> [Выпущена версия](installation.md?view=vsmac-2019) Visual Studio 2019 для Mac. Если вы используете более старые версии Visual Studio для Mac, см. [страницу загрузки](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) Visual Studio.
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Хотите перейти с Visual Studio 2019 для Mac на более раннюю версию?
+
+Для оптимальной работы перед переходом на использование более ранней версии обязательно [удалите](uninstall.md) Visual Studio 2019 для Mac. При возникновении проблем со скачиванием [сообщите нам о них](report-a-problem.md).
+ 
 ## <a name="requirements"></a>Требования
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений, нужно установить и настроить несколько компонентов при скачивании Visual Studio для Mac.
@@ -31,7 +35,7 @@ ms.locfileid: "58856681"
 
 ## <a name="install"></a>Установка
 
-1. Скачайте Visual Studio для Mac на сайте [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/).
+1. Скачайте Visual Studio для Mac с сайта [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac).
 
 2. После скачивания пакета установщика щелкните файл **VisualStudioForMacInstaller.dmg**, чтобы подключить установщик, а затем запустите его, дважды щелкнув логотип, как показано на следующем рисунке:
 

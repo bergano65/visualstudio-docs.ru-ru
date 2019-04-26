@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446685"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  Параметр выбирается на основе используемого метода профилирования: выборки, инструментирования или глобального. Отдельный параметр необходим для включения данных уровневого взаимодействия в данные профилирования. Синтаксис каждого параметра описывается в приведенных ниже таблицах.  
   
 > [!NOTE]
->  После завершения профилирования запустите **VSPerfCLREnv** с параметром **/off** или **/globaloff**, чтобы удалить переменные среды, необходимые для профилирования. Дополнительные сведения см в разделе "Параметры средства VSPerfCLREnv для удаления переменных среды" ниже.  
+> После завершения профилирования запустите **VSPerfCLREnv** с параметром **/off** или **/globaloff**, чтобы удалить переменные среды, необходимые для профилирования. Дополнительные сведения см в разделе "Параметры средства VSPerfCLREnv для удаления переменных среды" ниже.  
   
  **Параметры VSPerfCLREnv для включения данных уровневого взаимодействия**  
   
 > [!WARNING]
->  Профилирование уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Профилирование уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  Профилирование уровневого взаимодействия предоставляет дополнительные сведения о запросах ADO.NET в многоуровневых приложениях. Данные собираются только для синхронных вызовов функций. Данные взаимодействия можно добавлять в любой сеанс профилирования с помощью любого из методов профилирования.  
   

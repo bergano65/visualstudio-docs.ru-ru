@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d4895da5247cbfba2263b3b298850086ed16c9b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442469"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54761447"
 Параметр **PF** программы VSPerfCmd.exe задает событие профилирования, выборка которого осуществляется по ошибкам страниц, и при необходимости может изменить заданное по умолчанию число ошибок страницы в интервале выборки, равное 10.  
   
 > [!NOTE]
->  Параметр PF нельзя использовать в 64-разрядных системах.  
+> Параметр PF нельзя использовать в 64-разрядных системах.  
   
  Параметр **PF** не поддерживается на 64-разрядных компьютерах. **PF** можно использовать в командной строке только вместе с параметром **Launch** или **Attach**.  
   
