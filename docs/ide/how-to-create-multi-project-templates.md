@@ -1,6 +1,6 @@
 ---
 title: Создание многопроектных шаблонов
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430501"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
+# <a name="how-to-create-multi-project-templates"></a>Как выполнить Создание многопроектных шаблонов
 
 Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. При создании проекта на основе многопроектного шаблона каждый проект в шаблоне добавляется в решение.
 
@@ -67,6 +67,19 @@ ms.locfileid: "59232636"
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Если вам нужно, чтобы в диалоговом окне создания проекта отображался только многопроектный шаблон, а не его отдельные проекты, пометьте внутренние шаблоны как [скрытые](../extensibility/hidden-element-visual-studio-templates.md). Например:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Создание многопроектного шаблона из существующего решения
 
@@ -176,7 +189,7 @@ ms.locfileid: "59232636"
 ## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
