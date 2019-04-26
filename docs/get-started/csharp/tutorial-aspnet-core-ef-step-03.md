@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553945"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
 
@@ -127,4 +127,4 @@ public static void Main(string[] args)
 ## <a name="see-also"></a>См. также
 
 - [Razor Pages с Entity Framework Core в ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Серия учебников по работе с Razor Pages в ASP.NET Core и EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages с EF Core в ASP.NET Core](/aspnet/core/data/?view=aspnetcore-2.1)
